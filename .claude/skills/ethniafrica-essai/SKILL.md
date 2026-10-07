@@ -45,7 +45,8 @@ qu'elle **doit montrer**.
    jamais pour accuser — et sa direction est la guérison, pas la culpabilité.
    Un essai qui verse d'un côté ou de l'autre n'est pas fini : redis-le à
    l'opérateur plutôt que de l'enregistrer tel quel.
-4. **Recalcule l'index.** `docs/editorial/essais/README.md` liste chaque
+4. **Recalcule l'index** (crée-le s'il n'existe pas encore).
+   `docs/editorial/essais/README.md` liste chaque
    essai (date, série concernée, une phrase de synthèse) — une ligne par
    fichier, jamais son contenu recopié.
 

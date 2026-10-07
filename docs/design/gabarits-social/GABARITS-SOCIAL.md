@@ -163,9 +163,7 @@ carte d'ouverture, donc la miniature, **et** le titre du post sur chaque réseau
 de variante, pas de chute inventée : « Trois versions disent qui a nommé le Ghana »
 n'est pas un titre de reel.
 
-La loi vient de l'essai du 2026-09-17
-(`docs/editorial/essais/dou-viennent-les-noms-2026-09-17.md`, « le format social se
-réduit à un seul »), elle est écrite dans `ethniafrica-idee`, et l'opérateur l'a
+La loi vient de l'essai du 2026-09-17 (« le format social se réduit à un seul »), elle est écrite dans `ethniafrica-idee`, et l'opérateur l'a
 rappelée le 2026-09-21. Elle n'était pas écrite ici, et `structure` lit cette
 section : c'est pour cela qu'un lot a été titré autrement. Elle satisfait les quatre
 règles ci-dessus — cinq mots, le dernier, le nom, porte l'accent. La miniature ne

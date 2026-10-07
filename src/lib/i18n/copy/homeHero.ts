@@ -30,7 +30,7 @@ export interface HomeHeroCopy {
  *
  * It asked about the continent until 2026-09-18 — an opening that invited any
  * question, of a site that answers one kind. The reorientation onto where names
- * come from (docs/editorial/essais/dou-viennent-les-noms-2026-09-17.md) makes it
+ * come from (docs/editorial/refonte-plan-2026-09-18.md) makes it
  * the same sentence the account's card, its reel and the single social format
  * ask, so the surfaces pose one question rather than four.
  *

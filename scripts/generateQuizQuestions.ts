@@ -57,11 +57,6 @@ import {
 } from "./lib/quizGeneration";
 import { parseLocaleArgument } from "./lib/quizLocale";
 import {
-  localizeCountryRows,
-  localizePeopleRows,
-  type QuizTranslationRow,
-} from "./lib/quizTranslationCorpus";
-import {
   chunkForUrl,
   fetchAllPages,
   type PageResult,
@@ -241,24 +236,10 @@ async function buildFicheEntries(
       )
   );
 
-  const translationRows =
-    locale === "fr"
-      ? []
-      : await fetchAllPages<QuizTranslationRow>((from, to) =>
-          supabase
-            .from("afrik_translations")
-            .select(
-              "entity_type, entity_id, lang, content, translation_kind, translated_at, reviewed_by, model, source_hash, field_hashes, review_required"
-            )
-            .eq("lang", locale)
-            .in("entity_type", [PEOPLE_ENTITY_TYPE, COUNTRY_ENTITY_TYPE])
-            .range(from, to)
-        );
-  const peopleRows = localizePeopleRows(
-    authoredPeopleRows,
-    translationRows,
-    locale
-  );
+  // The corpus is written in French and carries no translated counterpart:
+  // another locale's bank gets no corpus-derived question rather than a
+  // French one.
+  const peopleRows = locale === "fr" ? authoredPeopleRows : [];
 
   const peopleProvenance = await fetchProvenance(
     supabase,
@@ -294,11 +275,7 @@ async function buildFicheEntries(
       )
       .range(from, to)
   );
-  const countryFicheRows = localizeCountryRows(
-    authoredCountryFicheRows,
-    translationRows,
-    locale
-  );
+  const countryFicheRows = locale === "fr" ? authoredCountryFicheRows : [];
 
   const countryProvenance = await fetchProvenance(
     supabase,

@@ -1,8 +1,8 @@
 /**
  * Strict parser for per-name PAT_* fiches.
  *
- * This is deliberately separate from PPL_* ethnonym dossiers (`noms/`) and
- * ONS_* naming-system dossiers (`systemes_onomastiques/`). Its discriminant
+ * This is deliberately separate from PPL_* ethnonym dossiers (`noms/`). Its
+ * discriminant
  * mirrors migration 053 and the public patronyme API exactly.
  */
 

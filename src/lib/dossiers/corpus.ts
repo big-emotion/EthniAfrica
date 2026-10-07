@@ -1,6 +1,3 @@
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
-import type { Language } from "@/types/shared";
-import { applyDossierTranslation } from "./translation";
 /**
  * Reading the dossier corpus off disk — no database, no admin client.
  *
@@ -14,7 +11,7 @@ import { applyDossierTranslation } from "./translation";
  * CC BY-SA corpus. The site itself reads the source of truth, so a dossier is
  * never dark on a deploy that landed before its migration did.
  */
-import { existsSync, readdirSync, readFileSync } from "fs";
+import { readdirSync, readFileSync } from "fs";
 import { join } from "path";
 
 import { parseDossierFile } from "@/lib/afrik/parsers/dossierParser";
@@ -72,34 +69,9 @@ export function readDossierCorpus(): DossierCorpus {
 }
 
 // @req REQ-114
-export function getDossierBySlug(
-  slug: string,
-  language: Language = "fr"
-): Dossier | null {
-  if (language === "en") return getDossierTranslation(slug)?.dossier ?? null;
+export function getDossierBySlug(slug: string): Dossier | null {
   return (
     readDossierCorpus().dossiers.find((dossier) => dossier.slug === slug) ??
     null
   );
-}
-
-// @req REQ-143
-export function getDossierTranslation(
-  slug: string
-): { dossier: Dossier; kind: TranslationKind } | null {
-  const source = getDossierBySlug(slug);
-  if (!source) return null;
-  const path = join(
-    process.cwd(),
-    "dataset/translations/en/dossiers",
-    `${source.id}.json`
-  );
-  if (!existsSync(path)) return null;
-  try {
-    const raw = JSON.parse(readFileSync(path, "utf8"));
-    const dossier = applyDossierTranslation(source, raw);
-    return dossier ? { dossier, kind: raw._translation.kind } : null;
-  } catch {
-    return null;
-  }
 }

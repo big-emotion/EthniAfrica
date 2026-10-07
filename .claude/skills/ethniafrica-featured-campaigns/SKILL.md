@@ -19,8 +19,7 @@ la campagne ouverte jusqu'à ce qu'une autre la remplace (la campagne Fulbe,
 ouverte le 2026-09-23 sans date de fin). Ajouter ces dates et merger reste un
 geste de l'opérateur, jamais de ce skill.
 
-Distinct d'`afrik-curator` : celui-ci enrichit les fiches du corpus ; ce
-skill ne touche à aucune fiche — il lit `dataset/source/afrik/` en lecture
+Ce skill n'enrichit pas les fiches du corpus et n'en touche aucune — il lit `dataset/source/afrik/` en lecture
 seule et écrit uniquement dans `featuredCampaigns.ts`/`.en.ts`.
 
 ## Le pipeline — trois étapes, jamais raccourcies
@@ -121,7 +120,7 @@ en tâche de fond travaille toujours dans son propre worktree). Présente :
   d'une date — ce sont des outils de découverte, jamais des preuves.
 - Inventer une date pour un peuple qui n'en a pas de vérifiable : dire
   « aucune date sourcée trouvée » plutôt que forcer une campagne.
-- Toucher une fiche du corpus — ça, c'est `/afrik-curator`.
+- Toucher une fiche du corpus — c'est un travail éditorial à part.
 
 ## Pour finir
 

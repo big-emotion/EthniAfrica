@@ -1,5 +1,5 @@
 import { inflationEn, millionsKm2En, ratioEn } from "@/lib/games/format.en";
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 
 /**
  * The English wording of « De combien vous êtes-vous trompé ? » — the sidecar

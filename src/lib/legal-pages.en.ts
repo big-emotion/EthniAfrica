@@ -18,7 +18,7 @@
  */
 
 import type { LegalDocumentContent } from "@/components/layout/LegalDocument";
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 import type { legalPages } from "./legal-pages";
 
 export interface MachineTranslatedLegalDocument extends LegalDocumentContent {

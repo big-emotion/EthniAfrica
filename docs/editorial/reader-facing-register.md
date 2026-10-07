@@ -115,45 +115,18 @@ be named cannot support that broader claim.
 
 ## The gate
 
-`checkEditorialRules.ts` enforces this as the `reader-facing-register` rule, at
-`error` severity, on every fiche in `dataset/source/afrik/` and every English
-sidecar in `dataset/translations/en/`. It walks the fiche and reads every
-`sources[]` array wherever it sits — `sources[]`, `names[].sources[]`,
-`content.sources[]`, `content.historicalAffiliation.sources[]` — rather than a
-list of locations, which missed a new one each time a chapter gained sources.
-`_`-prefixed keys are skipped. It reads a French fiche against the English list
-as well, because a French fiche's source notes are often English. It runs in CI
-through
-`.github/workflows/editorial-rules.yml`:
-
-```bash
-npx tsx scripts/ci/checkEditorialRules.ts
-```
-
-Since the audit of 2026-09-30 (finding C23) the rule also reads the narrative
-fields a fiche renders, not only those three. For a people, country, family,
-language or surname fiche, a leaf is narrative when the translation-class table
-(`src/lib/i18n/translationClasses.ts`) marks it `translatable` or
-`review_required` — the table is the field list, so no second list can drift.
-Names, labels and citation titles are not vetted for vocabulary, but a raw corpus
-identifier **inside** one (« Yoruba (PPL_YORUBA) - Nigeria ») is refused; a value
-that _is_ an identifier (`languageFamilyId`, `linguisticFamily`) is what its field
-is for. A numbered wave followed by its own period (« Vague 1 (3000-2000 av.
-J.-C.) ») is chronology, not a research batch. Leaks in these extended fields are
-warnings held by `UNGUARDED_PROSE_CEILING` in `checkEditorialRules.ts`, a ratchet
-that fails in both directions: each correction lowers it in the same change, and at
-zero the findings become errors like the original three. Fiche classes without a
-model in that table, and the English sidecars, still get only the three original
-fields — a stated limit, not a claim of coverage.
+The corpus-wide `reader-facing-register` gate (`checkEditorialRules.ts`) was
+retired on 2026-10-08, with its ratchet on the extended narrative fields. The
+doctrine above still holds; what remains enforced in code is narrower:
+`scripts/validateAfrikData.ts` refuses the internal register in the search
+answers it validates. The banned vocabulary lives in two exported constants in
+`src/lib/editorial/readerRegister.ts` — `INTERNAL_REGISTER_PATTERNS` (French)
+and `INTERNAL_REGISTER_PATTERNS_EN` (English) — so this document and the code
+cannot drift apart.
 
 `_`-prefixed files under the corpus — `_candidates-by-country.json`,
 `_coverage-findings.json`, `_manifest.json` — are the curator's own worksheets.
-Nothing loads them and no surface renders them, so the rule leaves them alone.
-
-The banned vocabulary lives in two exported constants in
-`src/lib/editorial/readerRegister.ts` — `INTERNAL_REGISTER_PATTERNS` (French)
-and `INTERNAL_REGISTER_PATTERNS_EN` (English) — so this document and the gate
-cannot drift apart.
+Nothing loads them and no surface renders them.
 
 ## Working method
 
@@ -184,9 +157,8 @@ working brief, and no new mandatory schema is added.
 8. **State what remains uncertain and invite a next step** — a source to check, a
    related account, a way to correct us.
 
-The research behind steps 3–4 is in
-[the dated research record](remediation-2026-09-30/research-african-methods.md).
-It was desk research on a handful of mostly West African and general-purpose
+The research behind steps 3–4 was a dated desk-research record (retired from the
+repository on 2026-10-08). It was desk research on a handful of mostly West African and general-purpose
 sources; no community was consulted, and it is not a survey of African practice.
 Adopt from it only what it supports, and read its open questions before treating
 any rule below as settled for a specific community.
@@ -399,7 +371,8 @@ reader who has never seen the repository:
 Keep your working notes — they are valuable — in `_meta.directives` or in the
 `_`-prefixed worksheets, which no surface renders.
 
-Before you finish, run `npx tsx scripts/ci/checkEditorialRules.ts` and fix every
-`reader-facing-register` finding. It is a blocking CI gate.
+Before you finish, reread every `gaps[].reason`, `sources[].title` and
+`sources[].notes` you wrote against the vocabulary above: no gate checks them any
+more.
 
 ---

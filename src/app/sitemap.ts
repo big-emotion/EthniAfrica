@@ -15,12 +15,11 @@ import {
   getPeopleLinksRoute,
   getPeopleRoute,
 } from "@/lib/routing";
-import type { FicheKind } from "@/lib/seo/ficheCanonical";
 import {
+  CORPUS_LOCALE,
   surfaceForPath,
   surfaceIndexedLocales,
 } from "@/lib/seo/localeIndexing";
-import { ficheIdsWithTranslation } from "@/lib/seo/translationParity";
 import { getSiteTreePaths } from "@/lib/siteTree";
 import { getSitemapEntityIds } from "@/lib/supabase/queries/afrik/sitemapEntries";
 import type { Language } from "@/types/shared";
@@ -35,10 +34,9 @@ import type { Language } from "@/types/shared";
  * would publish 890 unreachable URLs.
  *
  * It lists a URL under a locale only when the page is indexed there
- * (REQ-141): a rubric when its surface is at parity, a fiche when a
- * translation record exists for it. The English half therefore holds only
- * parity-ready rubrics and fiches backed by ETNI-1826 translation records —
- * a sitemap that listed a `noindex` page would contradict the page.
+ * (REQ-141): a rubric when its surface is at parity, a fiche only in French,
+ * the language the corpus is written in. A sitemap that listed a `noindex`
+ * page would contradict the page.
  *
  * And this is a Next special file, not a route segment: it sits outside the
  * root layout's tree, so the `await connection()` that makes every page
@@ -78,32 +76,23 @@ function indexedRubrics(locale: Language): string[] {
   });
 }
 
-/** The identifiers of one fiche kind that are indexed in a locale. */
-async function indexedIds(
-  kind: FicheKind,
-  ids: string[],
-  locale: Language
-): Promise<string[]> {
-  try {
-    return await ficheIdsWithTranslation(kind, ids, locale);
-  } catch {
-    // A parity read may withhold translated URLs, never the authored corpus.
-    return locale === "fr" ? ids : [];
-  }
+/**
+ * Fiches are written in French and carry no translated counterpart, so only
+ * the corpus locale lists them.
+ */
+function indexedIds(ids: string[], locale: Language): string[] {
+  return locale === CORPUS_LOCALE ? ids : [];
 }
 
-async function fichePaths(
+function fichePaths(
   locale: Language,
   corpus: Awaited<ReturnType<typeof getSitemapEntityIds>>
-): Promise<string[]> {
-  const [families, peoples, countries, languages, patronymes] =
-    await Promise.all([
-      indexedIds("family", corpus.families, locale),
-      indexedIds("people", corpus.peoples, locale),
-      indexedIds("country", corpus.countries, locale),
-      indexedIds("language", corpus.languages, locale),
-      indexedIds("name", corpus.patronymes, locale),
-    ]);
+): string[] {
+  const families = indexedIds(corpus.families, locale);
+  const peoples = indexedIds(corpus.peoples, locale);
+  const countries = indexedIds(corpus.countries, locale);
+  const languages = indexedIds(corpus.languages, locale);
+  const patronymes = indexedIds(corpus.patronymes, locale);
 
   return [
     ...families.map((id) => getFamilyRoute(locale, id)),
@@ -129,7 +118,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         entry(path, RUBRIC_CHANGE_FREQUENCY, path === `/${locale}` ? 1 : 0.8)
       );
     }
-    for (const path of await fichePaths(locale, corpus)) {
+    for (const path of fichePaths(locale, corpus)) {
       entries.push(entry(path, FICHE_CHANGE_FREQUENCY, 0.6));
     }
     // The same publication predicate as the listing and the menu; French only

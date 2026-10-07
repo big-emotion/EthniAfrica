@@ -3,7 +3,6 @@ import { describe, expect, it } from "vitest";
 import { CHAPITRE_LA_LANGUE } from "@/lib/dossiers/nommer/chapters/laLangue";
 import { CHAPITRE_LA_LANGUE_EN } from "@/lib/dossiers/nommer/chapters/laLangue.en";
 import { GLOSSARY_ENTRIES } from "@/lib/glossaire/entries";
-import { GLOSSARY_DEFINITIONS_EN } from "@/lib/glossaire/entries.en";
 import { DID_YOU_KNOW_FACTS } from "@/lib/home/didYouKnowFacts";
 import { DID_YOU_KNOW_FACTS_EN } from "@/lib/home/didYouKnowFacts.en";
 
@@ -17,7 +16,6 @@ const bantuCopy = {
   "fr chapter": JSON.stringify(CHAPITRE_LA_LANGUE),
   "en chapter": JSON.stringify(CHAPITRE_LA_LANGUE_EN),
   "fr glossary": JSON.stringify(GLOSSARY_ENTRIES),
-  "en glossary": JSON.stringify(GLOSSARY_DEFINITIONS_EN),
   "fr did-you-know": JSON.stringify(
     DID_YOU_KNOW_FACTS.find((f) => f.id === "bantou")
   ),

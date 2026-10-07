@@ -11,7 +11,7 @@ import {
   publishedArticleSummaries,
   readArticleCorpus,
 } from "@/lib/articles/corpus";
-import { getDossierBySlug, getDossierTranslation } from "@/lib/dossiers/corpus";
+import { getDossierBySlug } from "@/lib/dossiers/corpus";
 import { isDossierSlugPublished } from "@/lib/dossiers/publication";
 import { getPublishedLocales, isLocale } from "@/lib/locale";
 import { articleJsonLd, serializeJsonLd } from "@/lib/articles/jsonLd";
@@ -81,13 +81,11 @@ export async function generateMetadata({
     };
   }
   if (!isDossierSlugPublished(slug)) return {};
-  const source = getDossierBySlug(slug);
-  const translated = getDossierTranslation(slug);
-  const dossier = lang === "en" ? (translated?.dossier ?? source) : source;
+  const dossier = getDossierBySlug(slug);
 
   if (!dossier) return {};
 
-  const sourcePath = `${getLocalizedRoute("fr", "dossiersHub")}/${source?.slug ?? slug}`;
+  const sourcePath = `${getLocalizedRoute("fr", "dossiersHub")}/${dossier.slug}`;
 
   return {
     title: dossier.title,
@@ -95,7 +93,7 @@ export async function generateMetadata({
     ...localeHead(
       lang,
       (language) => translatePath("fr", language, sourcePath),
-      translated ? getPublishedLocales() : ["fr"],
+      ["fr"],
       { title: dossier.title, description: dossier.standfirst }
     ),
   };
@@ -129,8 +127,7 @@ export default async function DossierRoute({ params }: DossierRouteProps) {
     );
   }
   if (!isDossierSlugPublished(slug)) notFound();
-  const translated = lang === "en" ? getDossierTranslation(slug) : null;
-  const dossier = translated?.dossier ?? getDossierBySlug(slug);
+  const dossier = getDossierBySlug(slug);
 
   if (!dossier) notFound();
 
@@ -138,9 +135,7 @@ export default async function DossierRoute({ params }: DossierRouteProps) {
     <DossierPage
       dossier={dossier}
       language={lang as Language}
-      translationState={
-        lang === "en" ? (translated ? translated.kind : "missing") : undefined
-      }
+      translationState={lang === "en" ? "missing" : undefined}
     />
   );
 }

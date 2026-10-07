@@ -9,7 +9,6 @@ import {
   type CountryPatronymes,
 } from "@/api/v2/services/patronymeFicheLinks";
 import { createApiResponse, type ApiEnvelope } from "@/api/v2/utils/response";
-import type { TranslationLocale } from "@/lib/i18n/translationLocale";
 import type { Country } from "@/types/afrik";
 
 /**
@@ -40,15 +39,12 @@ export async function listCountriesHandler(
  */
 // @req REQ-084
 // @req REQ-133
-// @req REQ-142
 export async function getCountryHandler(
-  id: string,
-  lang: TranslationLocale = "fr"
+  id: string
 ): Promise<ApiEnvelope<CountryWithPatronymes> | null> {
-  const country = await getCountryById(id, lang);
+  const country = await getCountryById(id);
   if (!country) return null;
 
-  const { translation, ...entity } = country;
   const patronymes = await getCountryPatronymes(id);
-  return createApiResponse({ ...entity, patronymes }, { translation });
+  return createApiResponse({ ...country, patronymes });
 }

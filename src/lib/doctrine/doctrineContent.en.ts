@@ -1,4 +1,4 @@
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 import type { ClassificationStatus } from "@/types/afrik";
 
 /**

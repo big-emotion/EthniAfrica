@@ -16,7 +16,7 @@ import {
   buildFlagResolutionEmailEn,
   buildFlagVerificationEmailEn,
 } from "../flagNotification.en";
-import { frenchResidue, glossaryBreaches } from "@/test/englishBankParity";
+import { frenchResidue } from "@/test/englishBankParity";
 
 /**
  * The French templates are private to the module that sends them, so the
@@ -113,7 +113,6 @@ describe("the English flag e-mails", () => {
       expect(english.text).toContain("/en/");
       expect(frenchResidue(english.subject)).toBeNull();
       expect(frenchResidue(english.text)).toBeNull();
-      expect(glossaryBreaches(english.text)).toEqual([]);
       expect(expected.provenance).toBe("machine");
     }
   );
@@ -158,7 +157,6 @@ describe("the English flag e-mails", () => {
     expect(sent.text).toContain("/en/");
     expect(frenchResidue(sent.subject)).toBeNull();
     expect(frenchResidue(sent.text)).toBeNull();
-    expect(glossaryBreaches(sent.text)).toEqual([]);
     expect(expected.provenance).toBe("machine");
   });
 });

@@ -44,7 +44,6 @@ import {
 export interface SourceTierRulingOptions {
   datasetRoot: string;
   ledgerPath: string;
-  translationsRoot: string;
   write: boolean;
   /** The committed ratchet; defaults to NEEDS_REVIEW_RATCHET. */
   ratchet?: number;
@@ -55,8 +54,6 @@ export interface SourceTierRulingReport {
   changedFiches: string[];
   /** Fiches a ruling names that prettier would reformat; edit them by hand. */
   unformattable: string[];
-  /** One `translate:record --drift` command per English sidecar a change drifts. */
-  sidecarsToRedrift: string[];
   untieredBefore: number;
   untieredAfter: number;
   ratchetLine: string | null;
@@ -65,12 +62,6 @@ export interface SourceTierRulingReport {
 interface FicheOutcome {
   citationsChanged: number;
   untieredCleared: number;
-  /**
-   * Only a removal: it shifts the `sources[]` indices a sidecar was hashed
-   * against. The translation hash leaves tiers and source urls out on purpose
-   * (src/lib/afrik/translations/hashing.ts), so a tier or a repair drifts nothing.
-   */
-  fieldSetChanged: boolean;
 }
 
 function applyRulings(
@@ -81,7 +72,6 @@ function applyRulings(
   const outcome: FicheOutcome = {
     citationsChanged: 0,
     untieredCleared: 0,
-    fieldSetChanged: false,
   };
 
   for (const ruling of rulings) {
@@ -98,7 +88,6 @@ function applyRulings(
         const wasUntiered = !carriesTier(source.tier);
         if (ruling.decision === "remove") {
           sources.splice(index, 1);
-          outcome.fieldSetChanged = true;
         } else if (ruling.decision === "repair") {
           source.url = ruling.repairedUrl;
           source.tier = ruling.tier;
@@ -131,7 +120,6 @@ export async function runSourceTierRulings(
     errors: validateRulings(rulings),
     changedFiches: [],
     unformattable: [],
-    sidecarsToRedrift: [],
     untieredBefore: 0,
     untieredAfter: 0,
     ratchetLine: null,
@@ -157,13 +145,6 @@ export async function runSourceTierRulings(
     if (options.write) {
       fs.writeFileSync(file, await formatLikeCorpus(file, fiche.json), "utf8");
     }
-
-    const sidecar = path.join(options.translationsRoot, "en", fiche.path);
-    if (outcome.fieldSetChanged && fs.existsSync(sidecar)) {
-      report.sidecarsToRedrift.push(
-        `npm run translate:record -- --id ${path.basename(fiche.path, ".json")} --lang en --drift`
-      );
-    }
   }
 
   report.untieredAfter = report.untieredBefore - cleared;
@@ -178,7 +159,6 @@ async function main(): Promise<void> {
   const report = await runSourceTierRulings({
     datasetRoot: "dataset/source/afrik",
     ledgerPath: SOURCE_TIER_RULINGS_LEDGER,
-    translationsRoot: "dataset/translations",
     write,
   });
 
@@ -199,11 +179,6 @@ async function main(): Promise<void> {
       "Not patched — prettier would reformat these fiches; apply the ruling by hand:"
     );
     for (const fiche of report.unformattable) console.log(`  ${fiche}`);
-  }
-
-  if (report.sidecarsToRedrift.length > 0) {
-    console.log("English sidecars drifted by a removal:");
-    for (const command of report.sidecarsToRedrift) console.log(`  ${command}`);
   }
 
   console.log(

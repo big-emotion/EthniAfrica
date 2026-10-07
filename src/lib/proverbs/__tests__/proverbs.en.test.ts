@@ -6,11 +6,7 @@ import {
   localizeProverb,
   type ProverbTranslation,
 } from "@/lib/proverbs/proverbs.en";
-import {
-  frenchResidue,
-  glossaryBreaches,
-  readsAsUntranslated,
-} from "@/test/englishBankParity";
+import { frenchResidue, readsAsUntranslated } from "@/test/englishBankParity";
 
 const frenchById = new Map(PROVERBS.map((entry) => [entry.id, entry]));
 
@@ -136,7 +132,7 @@ describe("the English proverb bank — provenance and register", () => {
   });
 
   // @req REQ-144
-  it("respects the glossary and writes British English without contractions", () => {
+  it("writes British English without contractions", () => {
     const contraction =
       /\b(?:don|doesn|isn|aren|wasn|weren|can|won|didn|hasn|haven|couldn|wouldn|shouldn)'t\b|\b(?:it|that|there|what|who)'s\b|\b(?:they|we|you)'re\b/i;
     const offenders: string[] = [];
@@ -145,9 +141,6 @@ describe("the English proverb bank — provenance and register", () => {
       for (const text of translatedProse(entry)) {
         const hit = text.match(contraction);
         if (hit) offenders.push(`${id}: ${hit[0]}`);
-        for (const breach of glossaryBreaches(text)) {
-          offenders.push(`${id}: ${breach}`);
-        }
       }
     }
 

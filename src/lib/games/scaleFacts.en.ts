@@ -8,7 +8,7 @@ import {
 import { LANDMARK_PROVENANCE_PATH } from "@/lib/games/landmarks";
 import { MERCATOR_PROVENANCE_PATH } from "@/lib/games/rounds/mercatorRound";
 import { measureScaleFigures } from "@/lib/games/scaleFacts";
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 
 /**
  * The scale facts in English — the sidecar of `scaleFacts.ts`, keyed by the

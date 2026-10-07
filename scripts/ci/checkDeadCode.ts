@@ -175,10 +175,10 @@ export const PRODUCTION_DEAD_CODE_CEILINGS: Readonly<
   // publishing, the person query and service, the rights lifecycle and
   // protected-asset access, the source model with the oral-narrative and
   // source parsers, name variants, the Mercator contrast and its English
-  // labels, and the equal-area projection. The three that remain are English
-  // sidecars staged for the bilingual rollout — the games bank, its landmarks
-  // and the glossary entries — kept by operator decision until it lands.
-  files: 3,
+  // labels, and the equal-area projection. 3 -> 1 when corpus translation was
+  // retired and the three English sidecars staged for it (the games bank, its
+  // landmarks and the glossary entries) went with it.
+  files: 1,
   // `tailwindcss-animate` is imported by tailwind.config.ts, which knip's
   // production mode does not follow even when the config is marked as a
   // production entry. It is a real build dependency, so `knip.json` lists it

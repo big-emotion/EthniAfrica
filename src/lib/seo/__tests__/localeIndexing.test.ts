@@ -1,13 +1,4 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-
-const { ficheHasTranslationMock } = vi.hoisted(() => ({
-  ficheHasTranslationMock: vi.fn(),
-}));
-
-vi.mock("@/lib/seo/translationParity", async (importOriginal) => ({
-  ...(await importOriginal<object>()),
-  ficheHasTranslation: (...args: unknown[]) => ficheHasTranslationMock(...args),
-}));
+import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { LOCALES } from "@/lib/locale";
 import {
@@ -30,13 +21,6 @@ import {
  * the page — but a crawler is told not to index it and the sitemap does not
  * list it.
  */
-
-beforeEach(() => {
-  vi.clearAllMocks();
-  ficheHasTranslationMock.mockImplementation(
-    async (_kind: string, _id: string, lang: string) => lang === "fr"
-  );
-});
 
 afterEach(() => {
   vi.unstubAllEnvs();
@@ -97,48 +81,10 @@ describe("robotsForLocale", () => {
 
 describe("ficheIndexedLocales", () => {
   // @req REQ-141
-  it("indexes a fiche wherever a translation record exists for it", async () => {
+  it("indexes a fiche in French only, even when English is published", () => {
     vi.stubEnv("SITE_LOCALE_MODE", "bilingual-fr-default");
-    ficheHasTranslationMock.mockResolvedValue(true);
 
-    expect(await ficheIndexedLocales("people", "PPL_YORUBA")).toEqual([
-      ...LOCALES,
-    ]);
-    expect(ficheHasTranslationMock).toHaveBeenCalledWith(
-      "people",
-      "PPL_YORUBA",
-      "en"
-    );
-  });
-
-  // Translation records may be prepared in recette and production before
-  // launch. The publication gate, not record presence, decides visibility.
-  // @req REQ-140
-  // @req REQ-141
-  it("keeps a translated fiche French-only while English is unpublished", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "fr-only");
-    ficheHasTranslationMock.mockResolvedValue(true);
-
-    expect(await ficheIndexedLocales("people", "PPL_YORUBA")).toEqual(["fr"]);
-    expect(ficheHasTranslationMock).not.toHaveBeenCalledWith(
-      "people",
-      "PPL_YORUBA",
-      "en"
-    );
-  });
-
-  // @req REQ-141
-  it("indexes a fiche with no English record in French only", async () => {
-    expect(await ficheIndexedLocales("country", "BEN")).toEqual(["fr"]);
-  });
-
-  // A parity read that fails must not de-list the French fiche, which is
-  // the one the corpus is written in.
-  // @req REQ-141
-  it("falls back to French only when the parity read fails", async () => {
-    ficheHasTranslationMock.mockRejectedValue(new Error("timeout"));
-
-    expect(await ficheIndexedLocales("family", "FLG_BANTU")).toEqual(["fr"]);
+    expect(ficheIndexedLocales()).toEqual(["fr"]);
   });
 });
 

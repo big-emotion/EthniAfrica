@@ -50,7 +50,7 @@ it makes the other four spellings wrong, which is the point.
 
 **The qualifier was replaced on 17 September 2026: `D'où viennent les noms des
 peuples d'Afrique`.** The reorientation onto onomastics
-(`docs/editorial/essais/dou-viennent-les-noms-2026-09-17.md`) makes the site
+(`docs/editorial/refonte-plan-2026-09-18.md`) makes the site
 answer a question rather than announce a category, and the qualifier is where a
 reader meets that question first. `Atlas des Peuples d'Afrique` named what the
 product _is_; the new one names what it _does_, which is the only thing a
@@ -1046,8 +1046,6 @@ audience.
 - **Anything a surface charter already governs.** Where this file and a surface
   charter disagree, the surface charter is more specific and wins — and the
   disagreement is a bug in one of them, to be closed rather than lived with.
-- **Translation classes and review.** Which field is invariant, translatable,
-  review-required or generated is DEC-047's, declared in
-  `src/lib/i18n/translationClasses.ts` and held by the `afrik-translator`
-  skill and the parity gate. §3 settles how the English reads, not what may be
-  translated.
+- **Translation classes and review.** Corpus translation, with its class
+  table and its parity gate, was retired on 2026-10-08. §3 settles how the
+  English interface reads, not what may be translated.

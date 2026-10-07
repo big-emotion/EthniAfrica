@@ -1,5 +1,3 @@
-import { canonicalize } from "@/lib/afrik/translations/hashing";
-
 export interface AfrikContentRecord {
   id: string;
   content: unknown;
@@ -21,6 +19,18 @@ export interface AfrikDriftReport {
   peoples: AfrikEntityDrift;
   countries: AfrikEntityDrift;
   hasDrift: boolean;
+}
+
+// Key order is not content: jsonb hands keys back in its own order.
+function canonicalize(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(canonicalize);
+  if (!value || typeof value !== "object") return value;
+  const record = value as Record<string, unknown>;
+  return Object.fromEntries(
+    Object.keys(record)
+      .sort()
+      .map((key) => [key, canonicalize(record[key])])
+  );
 }
 
 function hasSameContent(left: unknown, right: unknown): boolean {

@@ -36,44 +36,12 @@ interface CountryFiche {
   };
 }
 
-interface CountryTracker {
-  workstreams: Array<{
-    id: string;
-    status: string;
-    findings: string[];
-    remaining: string[];
-  }>;
-}
-
-interface HistoryReview {
-  status: string;
-  application?: {
-    sourceJsonAppliedAt?: string;
-    databaseSync?: string;
-  };
-}
-
 const country = JSON.parse(
   readFileSync(
     resolve(process.cwd(), "dataset/source/afrik/pays/COD.json"),
     "utf8"
   )
 ) as CountryFiche;
-const tracker = JSON.parse(
-  readFileSync(
-    resolve(process.cwd(), "docs/editorial/country-enrichment/COD.json"),
-    "utf8"
-  )
-) as CountryTracker;
-const historyReview = JSON.parse(
-  readFileSync(
-    resolve(
-      process.cwd(),
-      "docs/editorial/country-enrichment/COD-history.json"
-    ),
-    "utf8"
-  )
-) as HistoryReview;
 
 describe("DRC country history application", () => {
   // @req REQ-148
@@ -162,29 +130,5 @@ describe("DRC country history application", () => {
           ["official", "referenced", "unverified"].includes(source.tier)
       )
     ).toBe(true);
-  });
-
-  // @req REQ-148
-  it("records source JSON application without claiming database synchronization or exhaustive coverage", () => {
-    const historyWorkstream = tracker.workstreams.find(
-      (workstream) => workstream.id === "COD-HISTORY"
-    );
-
-    expect(historyReview).toMatchObject({
-      status: "approved_and_applied_to_source_json",
-      application: {
-        sourceJsonAppliedAt: "2026-09-07",
-        databaseSync: "not_performed",
-      },
-    });
-    expect(historyWorkstream?.status).toBe(
-      "source_json_first_wave_applied_additional_research_pending"
-    );
-    expect(historyWorkstream?.findings).toContain(
-      "The reviewed first-wave history was applied to the country source JSON on 2026-09-07 without claiming exhaustive national coverage or database synchronization."
-    );
-    expect(historyWorkstream?.remaining).not.toContain(
-      "Approve or amend the taxonomy, geographic-fit decisions, and first-wave entries in COD-history.json before modifying production country data."
-    );
   });
 });

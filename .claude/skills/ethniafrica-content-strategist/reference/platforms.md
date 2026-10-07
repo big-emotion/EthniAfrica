@@ -169,7 +169,7 @@ channel by a reach metric, is how a working channel gets killed.
 - **This is the only channel with real public argument in the comments.** The
   Dioula carousel is contested on its central claim by at least two
   commenters offering competing etymologies — read it before reusing the
-  claim (`/afrik-curator`). An Amazigh-carousel comment misreads the post as
+  claim. An Amazigh-carousel comment misreads the post as
   claiming one group owns Algeria — the misreading is itself a signal that
   the framing needs a clearer disclaimer next time this subject repeats.
 - **Known constraint**: automated video upload does not work on this platform in

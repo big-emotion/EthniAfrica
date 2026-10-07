@@ -68,7 +68,6 @@ export const GET = corpusDetailRoute({
   param: "id",
   isValidId: (id) => dossierIdParamSchema.safeParse(id).success,
   invalidIdMessage: "Invalid dossier ID format",
-  servesLang: false,
   cacheControl: CORPUS_CACHE_CONTROL,
   rejectedLog: "Dossier request rejected",
   resolve: (id) => getDossierHandler(id),

@@ -22,7 +22,7 @@
  */
 
 import type { TranslationLocale } from "@/lib/i18n/translationLocale";
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 import type { NommerChapterKey } from "@/lib/routing";
 import type { SourceTier, StructuredSourceKind } from "@/types/sources";
 

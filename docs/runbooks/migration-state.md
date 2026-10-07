@@ -297,7 +297,8 @@ two databases the 2026-08-31 readings of `001` → `049` reached.
 > from the sidecars under `dataset/translations/<lang>/` by the `translations` stage of
 > `scripts/migrateAfrikToDatabase.ts`, which skips with a warning naming this migration when the
 > table is absent — the recette sync fires on the same push as `migrate-recette.yml` and can race
-> it. `recompute_confidence()` is deliberately untouched: translation provenance is a third axis
+> it. Corpus translation was retired on 2026-10-08: the sidecars and that stage are gone, and the
+> table stays in place, no longer written. `recompute_confidence()` is deliberately untouched: translation provenance is a third axis
 > beside `tier` and `source_kind`. Verify on recette after merge: the table exists and the anon
 > key answers a `SELECT` on it; then `?lang=en` on `/api/v2/peoples/{id}` carries
 > `meta.translation`.

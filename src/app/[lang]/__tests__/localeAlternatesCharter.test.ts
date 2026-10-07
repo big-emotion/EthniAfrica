@@ -89,11 +89,6 @@ vi.mock("@/api/v2/services/sources", async (importOriginal) => ({
   getSourceById: async () => null,
 }));
 
-vi.mock("@/lib/supabase/queries/afrik/translations", () => ({
-  getAfrikTranslation: async () => null,
-  getAfrikTranslationIds: async () => [],
-}));
-
 vi.mock("@/api/v2/handlers/compare", () => ({
   assembleComparison: async () => ({ ok: true, entities: [] }),
 }));

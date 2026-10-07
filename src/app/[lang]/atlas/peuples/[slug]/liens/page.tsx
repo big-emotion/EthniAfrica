@@ -85,7 +85,7 @@ export async function generateMetadata({
   // failure itself.
   let people: Awaited<ReturnType<typeof loadPeopleFiche>> = null;
   try {
-    people = await loadPeopleFiche(slug, language);
+    people = await loadPeopleFiche(slug);
   } catch (error) {
     logger.error(`Links metadata read failed for ${slug}`, error);
     return { ...head, title: copy.fallbackTitle };
@@ -128,7 +128,7 @@ export default async function PeopleLinksPage({
     redirect(getPeopleLinksRoute(language, successorId));
   }
 
-  const peoplePromise = loadPeopleFiche(slug, language);
+  const peoplePromise = loadPeopleFiche(slug);
   const egoNetworkPromise = getCachedEgoNetwork(slug);
   const people = await peoplePromise;
 

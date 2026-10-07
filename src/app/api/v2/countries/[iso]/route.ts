@@ -21,18 +21,6 @@
  *           pattern: '^[A-Z]{3}$'
  *         description: Code ISO 3166-1 alpha-3 du pays
  *         example: "ZWE"
- *       - in: query
- *         name: lang
- *         required: false
- *         schema:
- *           type: string
- *           enum: [fr, en]
- *           default: fr
- *         description: >
- *           Locale du contenu servi. `fr` est la langue d'auteur ; `en`
- *           superpose l'enregistrement de traduction quand il existe et
- *           déclare sa provenance dans `meta.translation` (REQ-142).
- *         example: en
  *     responses:
  *       200:
  *         description: Détails du pays
@@ -71,10 +59,9 @@ export const GET = corpusDetailRoute({
   param: "iso",
   isValidId: validateCountryId,
   invalidIdMessage: "Invalid country ISO code format",
-  servesLang: true,
   rejectedLog: "Country not found",
-  resolve: async (iso, lang) =>
-    orNotFound(await getCountryHandler(iso, lang), "Country not found"),
+  resolve: async (iso) =>
+    orNotFound(await getCountryHandler(iso), "Country not found"),
 });
 
 // @req REQ-084

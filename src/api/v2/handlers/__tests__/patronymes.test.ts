@@ -36,13 +36,6 @@ const KEITA = {
   ],
 };
 
-const MACHINE_PROVENANCE = {
-  kind: "machine" as const,
-  translatedAt: "2026-09-05T10:00:00.000Z",
-  reviewedBy: null,
-  stale: false,
-};
-
 describe("Patronyme Handler", () => {
   beforeEach(() => {
     vi.clearAllMocks();
@@ -54,7 +47,7 @@ describe("Patronyme Handler", () => {
 
     const result = await getPatronymeHandler("PAT_KEITA");
 
-    expect(getPatronymeById).toHaveBeenCalledWith("PAT_KEITA", "fr");
+    expect(getPatronymeById).toHaveBeenCalledWith("PAT_KEITA");
     expect(result).toEqual({
       ok: true,
       envelope: {
@@ -80,23 +73,6 @@ describe("Patronyme Handler", () => {
         errors: [],
       },
     });
-  });
-
-  // @req REQ-142
-  it("forwards the locale and carries the provenance on meta, outside the validated body", async () => {
-    vi.mocked(getPatronymeById).mockResolvedValue({
-      ...KEITA,
-      translation: MACHINE_PROVENANCE,
-    });
-
-    const result = await getPatronymeHandler("PAT_KEITA", "en");
-
-    expect(getPatronymeById).toHaveBeenCalledWith("PAT_KEITA", "en");
-    expect(result.ok).toBe(true);
-    if (result.ok) {
-      expect(result.envelope.meta.translation).toEqual(MACHINE_PROVENANCE);
-      expect(result.envelope.data).not.toHaveProperty("translation");
-    }
   });
 
   // @req REQ-133

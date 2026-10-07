@@ -33,33 +33,6 @@ interface LanguageDossier {
   };
 }
 
-interface LanguageReconciliation {
-  summary: {
-    localLanguageDossiers: number;
-    referenceEntriesWithExactDossier: number;
-    referenceEntriesWithAnyLocalSignal: number;
-  };
-  localLanguageDossiers: Array<{
-    id: string;
-    matchStatus: string;
-    matchedReferenceGlottocodes: string[];
-  }>;
-}
-
-interface CountryTracker {
-  workstreams: Array<{
-    id: string;
-    status: string;
-    findings: string[];
-    remaining: string[];
-    surfaceProposal?: Array<{
-      iso639P3Code: string;
-      dossierStatus: string;
-      dossierId?: string;
-    }>;
-  }>;
-}
-
 const projectRoot = process.cwd();
 const dossierIds = ["ktu", "swc", "lua"] as const;
 const expected = {
@@ -85,12 +58,6 @@ const expected = {
 
 function dossierPath(id: string): string {
   return resolve(projectRoot, `dataset/source/afrik/langues/${id}.json`);
-}
-
-function readJson<T>(relativePath: string): T {
-  return JSON.parse(
-    readFileSync(resolve(projectRoot, relativePath), "utf8")
-  ) as T;
 }
 
 function readDossier(id: string): LanguageDossier | null {
@@ -158,59 +125,4 @@ describe("DRC national-language dossier wave", () => {
       );
     }
   );
-
-  // @req REQ-032
-  it("regenerates the DRC reconciliation from the three new exact dossiers", () => {
-    const reconciliation = readJson<LanguageReconciliation>(
-      "docs/editorial/country-enrichment/COD-languages.json"
-    );
-
-    expect(reconciliation.summary.localLanguageDossiers).toBeGreaterThanOrEqual(
-      28
-    );
-    expect(
-      reconciliation.summary.referenceEntriesWithExactDossier
-    ).toBeGreaterThanOrEqual(4);
-    expect(
-      reconciliation.summary.referenceEntriesWithAnyLocalSignal
-    ).toBeGreaterThanOrEqual(37);
-    for (const id of dossierIds) {
-      expect(
-        reconciliation.localLanguageDossiers.find((entry) => entry.id === id)
-      ).toMatchObject({
-        matchStatus: "exact_reference",
-        matchedReferenceGlottocodes: [expected[id].glottocode],
-      });
-    }
-  });
-
-  // @req REQ-032
-  it("updates the country tracker without claiming that the language surface is approved", () => {
-    const tracker = readJson<CountryTracker>(
-      "docs/editorial/country-enrichment/COD.json"
-    );
-    const workstream = tracker.workstreams.find(
-      (entry) => entry.id === "COD-LANGUAGES"
-    );
-
-    expect(workstream?.status).toContain("surface_approval");
-    expect(workstream?.status).toContain("french");
-    expect(workstream?.remaining.join(" ")).not.toContain(
-      "Create missing French, Kituba (ktu), Congo Swahili (swc), and Tshiluba (lua)"
-    );
-    expect(workstream?.remaining.join(" ")).toContain(
-      "Create the missing French language dossier"
-    );
-    expect(workstream?.findings.join(" ")).toContain(
-      "45 unique ISO 639-3 codes: 34 match a CD reference entry and 11 do not"
-    );
-    expect(workstream?.findings.join(" ")).not.toContain(
-      "The unmatched codes are bfl, bqk, gba, gbp, iyx, kon, liy, lli, swa, teg, tet, and tyi"
-    );
-    for (const id of dossierIds) {
-      expect(
-        workstream?.surfaceProposal?.find((entry) => entry.iso639P3Code === id)
-      ).toMatchObject({ dossierStatus: "existing", dossierId: id });
-    }
-  });
 });

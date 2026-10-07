@@ -25,53 +25,14 @@ interface CountryFiche {
   };
 }
 
-interface CountryTracker {
-  workstreams: Array<{
-    id: string;
-    status: string;
-    findings: string[];
-    remaining: string[];
-  }>;
-}
-
-interface CultureReview {
-  status: string;
-  application?: {
-    sourceJsonAppliedAt?: string;
-    databaseSync?: string;
-  };
-}
-
 const country = JSON.parse(
   readFileSync(
     resolve(process.cwd(), "dataset/source/afrik/pays/COD.json"),
     "utf8"
   )
 ) as CountryFiche;
-const tracker = JSON.parse(
-  readFileSync(
-    resolve(process.cwd(), "docs/editorial/country-enrichment/COD.json"),
-    "utf8"
-  )
-) as CountryTracker;
-const cultureReview = JSON.parse(
-  readFileSync(
-    resolve(
-      process.cwd(),
-      "docs/editorial/country-enrichment/COD-culture-review.json"
-    ),
-    "utf8"
-  )
-) as CultureReview;
 
 describe("DRC country culture application", () => {
-  // @req REQ-145
-  it("records why English translation waits for the French country pass to stabilise", () => {
-    expect(country._translation?.deferred?.en).toBe(
-      "The DRC country fiche is still undergoing country-by-country editorial enrichment; translate the complete record after the French source has stabilised."
-    );
-  });
-
   // @req REQ-032
   it("publishes only scoped cultural examples at country level", () => {
     expect(country.content.culture.culturalTraditions).toContain(
@@ -140,32 +101,5 @@ describe("DRC country culture application", () => {
         ["official", "referenced", "unverified"].includes(source.tier)
       )
     ).toBe(true);
-  });
-
-  // @req REQ-032
-  it("records source JSON application without claiming database synchronization or cultural completeness", () => {
-    const cultureWorkstream = tracker.workstreams.find(
-      (workstream) => workstream.id === "COD-CULTURE"
-    );
-
-    expect(cultureReview).toMatchObject({
-      status: "approved_and_applied_to_source_json",
-      application: {
-        sourceJsonAppliedAt: "2026-09-07",
-        databaseSync: "not_performed",
-      },
-    });
-    expect(cultureWorkstream?.status).toBe(
-      "source_json_scoped_replacements_applied_additional_research_pending"
-    );
-    expect(cultureWorkstream?.findings).toContain(
-      "The reviewed scoped culture replacements were applied to the country source JSON on 2026-09-07 without claiming national cultural completeness or database synchronization."
-    );
-    expect(cultureWorkstream?.remaining).not.toContain(
-      "Approve the proposed field actions in COD-culture-review.json."
-    );
-    expect(cultureWorkstream?.remaining).not.toContain(
-      "Apply approved changes to the country source file only after explicit editorial approval."
-    );
   });
 });

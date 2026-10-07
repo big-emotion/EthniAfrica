@@ -111,8 +111,7 @@ jobs:
   `check:action-pins -- --resolve`, `check:workflow-shell`, `check:env-example`, `check:local-paths`,
   `check:infra-disclosure`, `check:orphan-docs`, `check:asset-weight`, `check:skill-parity`,
   `check:pagination-contract`, `test:social-tools`, `check:dead`; then
-  `check:translation-parity` (a report — `continue-on-error`, it cannot fail the job) and
-  `check:glossary` (which does fail it); then `check:migration-files`, `check:rls-coverage`,
+  `check:migration-files`, `check:rls-coverage`,
   `check:production-ledger`; then `typecheck`, `format:check`, `test:coverage`,
   `test:charter-contracts`, `npm run build`, and a last step that fails if any gate left the
   tree dirty.
@@ -125,8 +124,7 @@ is right.
 
 Other workflows carry the heavier domain gates, most of them also on every pull request:
 `a11y.yml`, `lighthouse.yml`, `e2e.yml`, `data-integrity.yml` (also nightly, and the reader of
-`check:afrik-loader` and the nightly `check:migration-state`), `editorial-rules.yml`,
-`openapi-diff.yml`, and `migrations-replay.yml` (only when `supabase/migrations/**` or
+the nightly `check:migration-state`), `openapi-diff.yml`, and `migrations-replay.yml` (only when `supabase/migrations/**` or
 `supabase/config.toml` changes: it replays every migration on an empty local stack).
 `approve-agent-ci.yml` releases CI runs held back by GitHub's bot-PR approval gate.
 
@@ -372,7 +370,6 @@ Validate before loading anything:
 
 ```bash
 npx tsx scripts/validateAfrikData.ts        # AFRIK data integrity
-npx tsx scripts/ci/checkEditorialRules.ts   # decolonial editorial rules
 ```
 
 Then preview, then apply:

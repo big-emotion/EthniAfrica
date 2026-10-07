@@ -249,7 +249,7 @@ the disclosure checks above.
 ## Out of scope
 
 - Product features, UI and editorial content — see `afrik-art-director`,
-  `afrik-curator`, `ethniafrica-ticket`.
+  `ethniafrica-ticket`.
 - Publishing a GitHub Release — that is the production deploy, and it belongs to
   `ethniafrica-release` and the operator.
 - Buying, upgrading or cancelling a paid service, or any destructive host action,

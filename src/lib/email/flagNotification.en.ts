@@ -1,6 +1,6 @@
 import { emailSignature } from "@/lib/email/signature";
 import type { FlagResolutionStatus } from "@/lib/email/flagNotification";
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 
 /**
  * The reporter's e-mails in English — the sidecar of `flagNotification.ts`

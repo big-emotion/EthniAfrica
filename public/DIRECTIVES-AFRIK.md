@@ -118,8 +118,7 @@ Tableau d'objets, jamais de chaînes. Chaque objet porte `title`, `url`, `tier`
 (`official`, `referenced` ou `unverified`) et `notes` ; les fiches de noms ajoutent
 `author` et `year`, les patronymes `sourceKey` et `source_kind`. La forme exacte de
 chaque classe est fixée par le modèle strict `public/modele-*.json` et son
-analyseur : en cas de désaccord avec ce paragraphe, le modèle prévaut. La doctrine
-des paliers est dans le skill `afrik-curator` (`reference/source-tiers.md`).
+analyseur : en cas de désaccord avec ce paragraphe, le modèle prévaut.
 
 ```json
 ✅  "sources": [
