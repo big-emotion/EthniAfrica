@@ -1,5 +1,3 @@
-import { recordLeaves, valueAt } from "@/lib/i18n/modelLeafPaths";
-import { classOf } from "@/lib/i18n/translationClasses";
 import { getSiteTreePaths } from "@/lib/siteTree";
 import { describe, expect, it } from "vitest";
 import { readDossierCorpus, getDossierBySlug } from "../corpus";
@@ -32,32 +30,6 @@ describe("Congo history dossiers", () => {
           true
         );
       }
-    }
-  });
-  // @req REQ-140 @req REQ-143
-  it("reads English prose while preserving stable keys and original source titles", () => {
-    for (const slug of slugs) {
-      const fr = getDossierBySlug(slug);
-      const en = getDossierBySlug(slug, "en");
-      expect(en, slug).not.toBeNull();
-      expect(en!.title).not.toBe(fr!.title);
-      expect(en!.id).toBe(fr!.id);
-      for (const leaf of recordLeaves(fr)) {
-        if (
-          classOf("modele-dossier.json", leaf.modelPath) === "translatable" &&
-          typeof leaf.value === "string"
-        ) {
-          expect(valueAt(en, leaf.segments), leaf.modelPath).not.toBe(
-            leaf.value
-          );
-        }
-      }
-      expect(en!.sources.map((source) => source.title)).toEqual(
-        fr!.sources.map((source) => source.title)
-      );
-      expect(en!.thesis.figures.map((figure) => figure.value)).toEqual(
-        fr!.thesis.figures.map((figure) => figure.value)
-      );
     }
   });
   // @req REQ-114

@@ -11,25 +11,18 @@ describe("feed lenses", () => {
   // @req REQ-178
   it("offers « Tout » alone when nothing else has content", () => {
     expect(
-      buildFeedLenses(
-        { shorts: 0, stories: 0, images: 0, quiz: 0, fiches: 0 },
-        labels
-      )
+      buildFeedLenses({ shorts: 0, stories: 0, quiz: 0, fiches: 0 }, labels)
     ).toEqual([{ id: "all", label: "Tout" }]);
   });
 
   // @req REQ-178
   it("lists the lenses that have content, in the validated order, each with its count", () => {
     expect(
-      buildFeedLenses(
-        { shorts: 5, stories: 3, images: 6, quiz: 1, fiches: 98 },
-        labels
-      )
+      buildFeedLenses({ shorts: 5, stories: 3, quiz: 1, fiches: 98 }, labels)
     ).toEqual([
       { id: "all", label: "Tout" },
       { id: "shorts", label: "Shorts", count: 5 },
       { id: "stories", label: "Récits", count: 3 },
-      { id: "images", label: "Images", count: 6 },
       { id: "quiz", label: "Jeux", count: 1 },
       { id: "fiches", label: "Fiches", count: 98 },
     ]);
@@ -38,7 +31,7 @@ describe("feed lenses", () => {
   // @req REQ-178
   it("never carries a zero or a missing count onto a tab", () => {
     const lenses = buildFeedLenses(
-      { shorts: 0, stories: 2, images: 0, quiz: 0, fiches: 7 },
+      { shorts: 0, stories: 2, quiz: 0, fiches: 7 },
       labels
     );
 

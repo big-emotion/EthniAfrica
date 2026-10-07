@@ -1,4 +1,4 @@
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 
 /**
  * How a reveal names where its claim was read, in English — the sidecar of

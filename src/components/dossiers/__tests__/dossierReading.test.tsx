@@ -27,7 +27,7 @@ describe("shared narrative reader", () => {
   it("links citations to declared sources and localises the reader labels", () => {
     const { container } = render(
       <DossierPage
-        dossier={getDossierBySlug("royaume-kongo", "en")!}
+        dossier={getDossierBySlug("royaume-kongo")!}
         language="en"
         translationState="machine"
       />

@@ -123,7 +123,6 @@ All three are applied by a human, never auto-applied. Their current state per pr
 
    ```bash
    npx tsx scripts/validateAfrikData.ts
-   npx tsx scripts/ci/checkEditorialRules.ts
    ```
 
    > `validateAfrikData.ts`'s printed `RÉSUMÉ` block undercounts — it reports only the legacy

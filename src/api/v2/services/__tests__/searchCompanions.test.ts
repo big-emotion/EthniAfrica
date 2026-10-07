@@ -21,7 +21,6 @@ vi.mock("@/lib/search/companionCatalogs", async (importOriginal) => {
   return {
     ...original,
     anecdotesForTargets: vi.fn(),
-    imagesForTargets: vi.fn(),
     proverbsForTargets: vi.fn(),
     quizForTargets: vi.fn(),
     shortsForTargets: vi.fn(),
@@ -31,7 +30,6 @@ vi.mock("@/lib/search/companionCatalogs", async (importOriginal) => {
 
 import {
   anecdotesForTargets,
-  imagesForTargets,
   proverbsForTargets,
   quizForTargets,
   shortsForTargets,
@@ -50,7 +48,6 @@ describe("search companions service", () => {
     vi.mocked(shortsForWord).mockReturnValue(emptySelection);
     vi.mocked(anecdotesForTargets).mockReturnValue(emptySelection);
     vi.mocked(proverbsForTargets).mockReturnValue(emptySelection);
-    vi.mocked(imagesForTargets).mockReturnValue(emptySelection);
     vi.mocked(quizForTargets).mockReturnValue(emptySelection);
     vi.mocked(loadSearchCompanionQuizCandidates).mockResolvedValue([]);
   });
@@ -105,7 +102,6 @@ describe("search companions service", () => {
     expect(shortsForTargets).toHaveBeenCalledWith(targets);
     expect(anecdotesForTargets).toHaveBeenCalledWith(targets);
     expect(proverbsForTargets).toHaveBeenCalledWith(targets);
-    expect(imagesForTargets).toHaveBeenCalledWith(targets);
     expect(quizForTargets).toHaveBeenCalledWith(targets, []);
     expect(result).toMatchObject({
       subjects: [{ type: "people", id: "PPL_EKPEYE" }],
@@ -113,7 +109,6 @@ describe("search companions service", () => {
       shorts: shortSelection,
       anecdotes: anecdoteSelection,
       proverbs: emptySelection,
-      images: emptySelection,
       quiz: emptySelection,
     });
   });
@@ -184,7 +179,6 @@ describe("search companions service", () => {
       shorts: emptySelection,
       anecdotes: emptySelection,
       proverbs: emptySelection,
-      images: emptySelection,
       quiz: emptySelection,
     });
   });
@@ -202,7 +196,6 @@ describe("search companions service", () => {
     expect(shortsForTargets).toHaveBeenCalledWith([]);
     expect(anecdotesForTargets).toHaveBeenCalledWith([]);
     expect(proverbsForTargets).toHaveBeenCalledWith([]);
-    expect(imagesForTargets).toHaveBeenCalledWith([]);
   });
 
   // @req REQ-180

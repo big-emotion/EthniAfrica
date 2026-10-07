@@ -1,5 +1,5 @@
 import type { GameId } from "@/lib/games/gameRegistry";
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 
 /**
  * English name and standing question for every registered game — the

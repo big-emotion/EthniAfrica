@@ -3,7 +3,6 @@ import { describe, expect, it } from "vitest";
 import {
   eligiblePublications,
   publicationsForSubjects,
-  type DiscoveryPublication,
 } from "@/lib/discoveries/catalog";
 import type { DidYouKnowFact } from "@/lib/home/didYouKnowFacts";
 import type { DidYouKnowIllustration } from "@/lib/home/didYouKnowIllustrations";
@@ -13,7 +12,6 @@ import {
   anecdotesForTargets,
   eligibleSearchShorts,
   formatProductionNameQuestion,
-  imagesForTargets,
   proverbsForTargets,
   quizForTargets,
   searchShortPosterAlt,
@@ -108,49 +106,6 @@ function short(id: string, overrides: Partial<SearchShort> = {}): SearchShort {
       },
     ],
     ...overrides,
-  };
-}
-
-function image(id: string, complete = true): DiscoveryPublication {
-  return {
-    id,
-    kind: "image",
-    status: "published",
-    slug: { fr: `${id}-fr`, en: `${id}-en` },
-    title: { fr: "Image", en: "Image" },
-    description: { fr: "Description", en: "Description" },
-    source: {
-      title: "Source",
-      url: "https://example.org/source",
-      tier: "referenced",
-    },
-    detail: {
-      body: { fr: ["Texte"], en: ["Text"] },
-      entities: [
-        {
-          kind: "people",
-          id: "PPL_TEST",
-          label: { fr: "Test", en: "Test" },
-        },
-      ],
-      sources: [],
-    },
-    image: {
-      src: "/images/generated/test.jpg",
-      credit: "EthniAfrica, CC BY-SA 4.0",
-      licence: "cc-by-sa",
-      alt: { fr: "Image", en: "Image" },
-    },
-    caption: { fr: "Légende", en: "Caption" },
-    generation: complete
-      ? {
-          tool: "Higgsfield",
-          model: "model",
-          jobId: "job",
-          generatedOn: "2026-09-01",
-          sourceKind: "ai_generated",
-        }
-      : undefined,
   };
 }
 
@@ -254,17 +209,6 @@ describe("search companion catalogs", () => {
     });
 
     expect(selection.items).toEqual([]);
-  });
-
-  // @req REQ-180
-  it("passes generated images through the publication eligibility gate", () => {
-    const selection = imagesForTargets(exactPeople, [
-      image("image-ready"),
-      image("image-incomplete", false),
-    ]);
-
-    expect(selection.count).toBe(1);
-    expect(selection.items[0]?.item.publication.id).toBe("image-ready");
   });
 
   // @req REQ-180

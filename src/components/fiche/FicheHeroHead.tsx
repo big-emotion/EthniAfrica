@@ -3,8 +3,6 @@ import type { ReactNode } from "react";
 import { ACCENT_CLASS_BY_ENTITY } from "@/components/fiche/ficheAccent";
 import { FicheMapToggle } from "@/components/fiche/FicheMapToggle";
 import type { Language } from "@/types/shared";
-import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
-import type { TranslationProvenance } from "@/lib/afrik/translations/types";
 import type { FicheEntityType } from "@/types/fiche";
 
 /**
@@ -27,12 +25,10 @@ import type { FicheEntityType } from "@/types/fiche";
 // @req REQ-115
 export function FicheHeroHead({
   entityType,
-  translation = null,
   mapToggleLanguage,
   children,
 }: {
   entityType: FicheEntityType;
-  translation?: Pick<TranslationProvenance, "kind" | "stale"> | null;
   /** Set on fiches that carry a globe band: shows the button that opens it. */
   mapToggleLanguage?: Language;
   children: ReactNode;
@@ -46,7 +42,6 @@ export function FicheHeroHead({
       {mapToggleLanguage ? (
         <FicheMapToggle language={mapToggleLanguage} />
       ) : null}
-      <TranslationProvenanceMarker translation={translation} className="mt-3" />
     </div>
   );
 }

@@ -274,9 +274,9 @@ describe("listCanonicalSkills", () => {
   it("covers every skill the repository actually ships", () => {
     expect(listCanonicalSkills(projectRoot)).toEqual(
       expect.arrayContaining([
-        "afrik-curator",
-        "ethniafrica-idee",
-        "ethniafrica-production",
+        "afrik-art-director",
+        "ethniafrica-spec",
+        "ethniafrica-release",
       ])
     );
   });
@@ -465,41 +465,31 @@ describe("reconcileMirrorSkill", () => {
   });
 });
 
-describe("the afrik-curator skill in this repository", () => {
+describe("the afrik-art-director skill in this repository", () => {
   // @req REQ-032
   it("exposes a canonical entry point whose every referenced resource exists", () => {
     const manifest = readSkillManifest(
       projectRoot,
       CANONICAL_SKILLS_DIR,
-      "afrik-curator"
+      "afrik-art-director"
     );
 
     expect(manifest.exists).toBe(true);
-    expect(manifest.name).toBe("afrik-curator");
+    expect(manifest.name).toBe("afrik-art-director");
     expect(manifest.missingResources).toEqual([]);
   });
 
   // @req REQ-032
   it("keeps the Codex entry point identical to the canonical one", () => {
     const issues = compareSkillManifests(
-      readSkillManifest(projectRoot, CANONICAL_SKILLS_DIR, "afrik-curator"),
-      readSkillManifest(projectRoot, MIRROR_SKILLS_DIR, "afrik-curator")
+      readSkillManifest(
+        projectRoot,
+        CANONICAL_SKILLS_DIR,
+        "afrik-art-director"
+      ),
+      readSkillManifest(projectRoot, MIRROR_SKILLS_DIR, "afrik-art-director")
     );
 
     expect(issues).toEqual([]);
-  });
-
-  // @req REQ-032
-  it("documents the country-enrichment mode in the canonical skill", () => {
-    const manifest = readSkillManifest(
-      projectRoot,
-      CANONICAL_SKILLS_DIR,
-      "afrik-curator"
-    );
-
-    expect(Object.keys(manifest.files)).toContain(
-      "reference/country-enrichment.md"
-    );
-    expect(manifest.files["SKILL.md"]).toContain("country-enrichment");
   });
 });

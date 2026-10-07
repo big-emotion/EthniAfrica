@@ -91,6 +91,6 @@ describe("the dossier corpus as menu entries (REQ-120)", () => {
     expect(slugOf(french?.href)).toBe("royaume-kongo");
     expect(slugOf(english?.href)).toBe("kongo-kingdom");
     expect(english?.href.startsWith("/en/")).toBe(true);
-    expect(english?.title).toBe("The Kongo kingdom");
+    expect(english?.title).toBe(french?.title);
   });
 });

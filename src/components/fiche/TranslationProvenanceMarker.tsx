@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import type { TranslationKind } from "@/lib/afrik/translations/types";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 
 export interface TranslationProvenanceLabels {
   human: string;

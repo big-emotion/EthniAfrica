@@ -148,7 +148,6 @@ describe("search companions schema", () => {
       },
       anecdotes: { count: 0, items: [] },
       proverbs: { count: 0, items: [] },
-      images: { count: 0, items: [] },
       quiz: { count: 0, item: null },
     });
 
@@ -179,7 +178,6 @@ describe("search companions schema", () => {
       shorts: { count: 0, items: [] },
       anecdotes: { count: 0, items: [] },
       proverbs: { count: 0, items: [] },
-      images: { count: 0, items: [] },
       quiz: { count: 0, item: null },
     };
     const short = {
@@ -254,7 +252,6 @@ describe("search companions schema", () => {
       shorts: { count: 0, items: [] },
       anecdotes: { count: 0, items: [] },
       proverbs: { count: 0, items: [] },
-      images: { count: 0, items: [] },
       quiz: { count: 1, item: quiz },
     };
 

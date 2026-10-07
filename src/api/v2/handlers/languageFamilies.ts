@@ -8,7 +8,6 @@ import {
   getLanguageFamilyById,
 } from "@/api/v2/services/languageFamilyService";
 import { createApiResponse, type ApiEnvelope } from "@/api/v2/utils/response";
-import type { TranslationLocale } from "@/lib/i18n/translationLocale";
 import type { LanguageFamily } from "@/types/afrik";
 
 /**
@@ -35,14 +34,11 @@ export async function listLanguageFamiliesHandler(
  * Get a single language family by FLG_ ID
  */
 // @req REQ-084
-// @req REQ-142
 export async function getLanguageFamilyHandler(
-  id: string,
-  lang: TranslationLocale = "fr"
+  id: string
 ): Promise<ApiEnvelope<LanguageFamily> | null> {
-  const family = await getLanguageFamilyById(id, lang);
+  const family = await getLanguageFamilyById(id);
   if (!family) return null;
 
-  const { translation, ...entity } = family;
-  return createApiResponse(entity, { translation });
+  return createApiResponse(family);
 }

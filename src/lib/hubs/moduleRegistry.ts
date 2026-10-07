@@ -611,25 +611,6 @@ export const MODULE_DEFINITIONS: HubModuleDefinition[] = [
     availability: "static",
     editorialReadiness: "ready",
   },
-  // The generated images of Découvertes, shelved by collection (REQ-167). A
-  // view over the feed's own catalogue rather than a bank of its own, filed
-  // under names because two of its three collections are autonyms and the
-  // people behind them. Appended last for the accent walk, like `proverbes`.
-  //
-  // `ready` since the first twelve images were entered, each with a verified
-  // subject source and its derived files committed. It was `draft` until
-  // then, because an open gallery listing nothing promises what it does not
-  // hold; the route came off the withdrawn lists in `frozenRoutes`, the
-  // locale-alternates charter and `dossiersFreezeReach` in the same change.
-  {
-    id: "galerie",
-    group: "dossiers-noms",
-    name: "Galerie",
-    accessMode: "dossiers",
-    page: "gallery",
-    availability: "static",
-    editorialReadiness: "ready",
-  },
 ];
 
 // @req REQ-114

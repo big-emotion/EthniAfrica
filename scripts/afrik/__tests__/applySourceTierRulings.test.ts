@@ -16,7 +16,6 @@ import type { SourceTierRuling } from "../sourceTierRulings";
 
 let workspace: string;
 let datasetRoot: string;
-let translationsRoot: string;
 let ledgerPath: string;
 
 async function writeFiche(relativePath: string, fiche: unknown) {
@@ -70,7 +69,6 @@ const WPP = {
 beforeEach(() => {
   workspace = fs.mkdtempSync(path.join(os.tmpdir(), "tier-rulings-"));
   datasetRoot = path.join(workspace, "afrik");
-  translationsRoot = path.join(workspace, "translations");
   ledgerPath = path.join(workspace, "rulings.json");
   fs.mkdirSync(datasetRoot, { recursive: true });
 });
@@ -98,7 +96,6 @@ describe("runSourceTierRulings", () => {
     const report = await runSourceTierRulings({
       datasetRoot,
       ledgerPath,
-      translationsRoot,
       write: true,
     });
 
@@ -121,7 +118,6 @@ describe("runSourceTierRulings", () => {
     const report = await runSourceTierRulings({
       datasetRoot,
       ledgerPath,
-      translationsRoot,
       write: true,
     });
 
@@ -144,7 +140,6 @@ describe("runSourceTierRulings", () => {
     const report = await runSourceTierRulings({
       datasetRoot,
       ledgerPath,
-      translationsRoot,
       write: true,
     });
 
@@ -152,12 +147,8 @@ describe("runSourceTierRulings", () => {
     expect(readFiche("pays/TCD.json")).toBe(untouched);
   });
 
-  // A removal shifts the indices of `sources[]` the English sidecar was hashed
-  // against. A tier or a repaired url does not: the translation hash leaves
-  // tiers and source urls out on purpose (src/lib/afrik/translations/hashing.ts).
   // @req REQ-092
-  it("lists the English sidecars a removal drifts, and none for a repair or a tier", async () => {
-    await writeFiche("pays/BEN.json", country("BEN", [WPP]));
+  it("repairs a dead url and removes a citation the ruling withdraws", async () => {
     await writeFiche(
       "pays/SEN.json",
       country("SEN", [
@@ -172,17 +163,7 @@ describe("runSourceTierRulings", () => {
       "pays/NER.json",
       country("NER", [{ title: "Blog", url: null, tier: "needs_review" }])
     );
-    for (const id of ["BEN", "SEN", "NER"]) {
-      fs.mkdirSync(path.join(translationsRoot, "en", "pays"), {
-        recursive: true,
-      });
-      fs.writeFileSync(
-        path.join(translationsRoot, "en", "pays", `${id}.json`),
-        "{}"
-      );
-    }
     writeLedger([
-      ruling(),
       ruling({
         id: "STR-0002",
         match: { title: "Site mort", url: "http://dead.example" },
@@ -198,18 +179,9 @@ describe("runSourceTierRulings", () => {
       }),
     ]);
 
-    const report = await runSourceTierRulings({
-      datasetRoot,
-      ledgerPath,
-      translationsRoot,
-      write: true,
-    });
+    await runSourceTierRulings({ datasetRoot, ledgerPath, write: true });
 
-    expect(report.sidecarsToRedrift).toEqual([
-      "npm run translate:record -- --id NER --lang en --drift",
-    ]);
-    const senegal = JSON.parse(readFiche("pays/SEN.json"));
-    expect(senegal.content.sources).toEqual([
+    expect(JSON.parse(readFiche("pays/SEN.json")).content.sources).toEqual([
       {
         title: "Site mort",
         url: "https://web.archive.org/web/2025/http://dead.example",
@@ -229,7 +201,6 @@ describe("runSourceTierRulings", () => {
     await runSourceTierRulings({
       datasetRoot,
       ledgerPath,
-      translationsRoot,
       write: true,
     });
 
@@ -250,7 +221,6 @@ describe("runSourceTierRulings", () => {
     const report = await runSourceTierRulings({
       datasetRoot,
       ledgerPath,
-      translationsRoot,
       write: false,
     });
 
@@ -269,7 +239,6 @@ describe("runSourceTierRulings", () => {
     const report = await runSourceTierRulings({
       datasetRoot,
       ledgerPath,
-      translationsRoot,
       write: true,
       ratchet: 2,
     });
@@ -294,7 +263,6 @@ describe("runSourceTierRulings", () => {
     const report = await runSourceTierRulings({
       datasetRoot,
       ledgerPath,
-      translationsRoot,
       write: true,
     });
 
@@ -311,7 +279,6 @@ describe("runSourceTierRulings", () => {
     const report = await runSourceTierRulings({
       datasetRoot,
       ledgerPath,
-      translationsRoot,
       write: true,
     });
 

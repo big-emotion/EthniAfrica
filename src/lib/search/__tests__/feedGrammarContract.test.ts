@@ -29,7 +29,6 @@ describe("search-result feed grammar", () => {
       "shorts",
       "plates",
       "quiz",
-      "images",
       "fiches",
       "owed",
       "further",

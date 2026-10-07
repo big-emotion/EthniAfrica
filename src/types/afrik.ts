@@ -73,7 +73,7 @@ export interface Country {
   nameFr: string;
   /**
    * English name of ordinary use in the state's own English form ("Chad",
-   * "Côte d'Ivoire", "The Gambia") — docs/editorial/translation-classes.md.
+   * "Côte d'Ivoire", "The Gambia").
    * Optional only because the column is empty until the corpus is reloaded.
    */
   nameEn?: string;

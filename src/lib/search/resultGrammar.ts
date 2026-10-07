@@ -23,9 +23,9 @@ export type AnswerBlockId = (typeof ANSWER_BLOCKS)[number];
  * Canonical top-level order. « Tout » draws the filters, the six answer blocks
  * per subject, the fiche button and the invitation; `verdict` and
  * `appellations` open the pages that have no answer to give (unknown name,
- * misspelling, a relation browse). `shorts`, `plates`, `quiz`, `images` and
- * `fiches` are what the filters show — they left « Tout » when the answer
- * became the page.
+ * misspelling, a relation browse). `shorts`, `plates`, `quiz` and `fiches`
+ * are what the filters show — they left « Tout » when the answer became the
+ * page.
  */
 // @req REQ-180
 export const FEED_BLOCKS = [
@@ -37,7 +37,6 @@ export const FEED_BLOCKS = [
   "shorts",
   "plates",
   "quiz",
-  "images",
   "fiches",
   "owed",
   "further",

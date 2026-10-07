@@ -4,7 +4,6 @@ import { isModulePublished } from "@/lib/hubs/moduleOffer";
 import { getDossierThemeHref } from "@/lib/dossiers/themes";
 import { GAME_DEFINITIONS } from "@/lib/games/gameRegistry";
 import { GAME_DEFINITIONS_EN } from "@/lib/games/gameRegistry.en";
-import { galleryCopy } from "@/lib/i18n/copy/gallery";
 import { siteTreeCopy } from "@/lib/i18n/copy/siteTree";
 import {
   getLocalizedRoute,
@@ -204,15 +203,6 @@ export function getSiteTree(language: Language): SiteTreeSection[] {
           label: dossier.title,
           note: dossier.summary,
         })),
-        ...(isModulePublished("galerie")
-          ? [
-              {
-                href: route("gallery"),
-                label: galleryCopy[language].pageTitle,
-                note: galleryCopy[language].pageSubtitle,
-              },
-            ]
-          : []),
         ...(isModulePublished("frise")
           ? [
               {

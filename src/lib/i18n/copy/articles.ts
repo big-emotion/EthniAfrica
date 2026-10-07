@@ -18,10 +18,9 @@ const en = {
     collections: {
       anecdotes: "Anecdotes",
       proverbs: "Proverbs",
-      gallery: "Gallery",
     },
     empty:
-      "No article is published yet. The anecdotes, the proverbs and the gallery are already open.",
+      "No article is published yet. The anecdotes and the proverbs are already open.",
     failed:
       "The articles could not be loaded. This does not mean there are none: please try again in a moment.",
     retry: "Try again",
@@ -88,10 +87,9 @@ const fr: ArticlesCopy = {
     collections: {
       anecdotes: "Anecdotes",
       proverbs: "Proverbes",
-      gallery: "Galerie",
     },
     empty:
-      "Aucun article n'est encore publié. Les anecdotes, les proverbes et la galerie sont déjà ouverts.",
+      "Aucun article n'est encore publié. Les anecdotes et les proverbes sont déjà ouverts.",
     failed:
       "Les articles n'ont pas pu être chargés. Cela ne veut pas dire qu'il n'y en a pas : réessayez dans un instant.",
     retry: "Réessayer",

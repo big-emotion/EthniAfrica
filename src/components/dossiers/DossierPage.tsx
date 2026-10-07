@@ -1,4 +1,4 @@
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 import { DossierCitations } from "./DossierCitations";
 import { DossierChapterBlock } from "@/components/dossiers/DossierChapterBlock";
 import { PageLayout } from "@/components/layout/PageLayout";

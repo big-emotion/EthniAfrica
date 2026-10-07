@@ -4,7 +4,6 @@ import type { Decorator, Meta, StoryObj } from "@storybook/react";
 import { AppellationsBlock } from "@/components/search/feed/AppellationsBlock";
 import { FichesBlock } from "@/components/search/feed/FichesBlock";
 import { FurtherBlock } from "@/components/search/feed/FurtherBlock";
-import { ImageBlock } from "@/components/search/feed/ImageBlock";
 import { LensesBlock } from "@/components/search/feed/LensesBlock";
 import { OwedBlock } from "@/components/search/feed/OwedBlock";
 import {
@@ -48,9 +47,8 @@ const inconnu = fixture("inconnu");
 
 // The fixtures point at board mock-up files that Storybook does not serve;
 // these are real files under `public/`, so the blocks show an image.
-const POSTER_SRC = "/images/discoveries/generated/mansa-musa/9x16.jpg";
+const POSTER_SRC = "/images/discoveries/videos/mande-nest-pas-un-peuple.jpg";
 const ILLUSTRATION_SRC = "/images/anecdotes/bambara-refus.jpg";
-const GENERATED_IMAGE_SRC = "/images/discoveries/generated/mansa-musa/4x5.jpg";
 
 const mandeCompanions = mande.production.companions;
 const mandePresentation = mande.board.presentation;
@@ -79,14 +77,6 @@ const plateItems: FeedPlateItem[] =
     );
     return proverb ? [{ type: "proverb" as const, ...proverb }] : [];
   });
-
-const imageItem = {
-  ...mandeCompanions.images.items[0],
-  image: {
-    ...mandeCompanions.images.items[0].image,
-    src: GENERATED_IMAGE_SRC,
-  },
-};
 
 const contributionTarget = {
   type: "languageFamily",
@@ -190,7 +180,6 @@ function LensesDemo() {
         { id: "all", label: "Tout" },
         { id: "shorts", label: "Shorts", count: 6 },
         { id: "stories", label: "Récits", count: 3 },
-        { id: "images", label: "Images", count: 1 },
         { id: "quiz", label: "Jeux", count: 1 },
         { id: "fiches", label: "Fiches", count: 4 },
       ]}
@@ -295,16 +284,6 @@ export const Quiz: Story = {
 
 // @req REQ-180
 export const QuizNight: Story = atNight(Quiz);
-
-// @req REQ-180
-export const GeneratedImage: Story = {
-  render: () => (
-    <ImageBlock reviewed item={imageItem} {...mandePresentation.images} />
-  ),
-};
-
-// @req REQ-180
-export const GeneratedImageNight: Story = atNight(GeneratedImage);
 
 // @req REQ-180
 export const Fiches: Story = {

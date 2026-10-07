@@ -80,12 +80,7 @@ export async function ficheCanonical(
   const parsed = parseVersionedSlug(decodeURIComponent(slug));
   if (!parsed) return {};
 
-  // Parity is the live fiche's, whatever revision the slug pins. The links
-  // sub-route shares its people's record: it is a chapter of that fiche.
-  const indexed = await ficheIndexedLocales(
-    kind === "peopleLinks" ? "people" : kind,
-    parsed.slug
-  );
+  const indexed = ficheIndexedLocales();
   const id = encodeURIComponent(parsed.slug);
   const head = localeHead(
     language,

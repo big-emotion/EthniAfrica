@@ -6,6 +6,12 @@ the 54, breadth first and depth in waves.
 This file is written to be **pasted from**. Each wave carries a self-contained
 prompt: open a fresh session, paste the prompt, and it has everything it needs.
 
+The scripts waves 0 and 1 wrote and ran — `buildAnthroponymCandidates.mjs`,
+`generatePatronymeFichesFromCandidates.mjs`, `enrichPatronymeFiches.mjs` and
+their data tables under `scripts/afrik/` — were retired on 2026-10-08, once both
+waves had closed. Their prompts below are kept as the record of what was done,
+not as instructions to rerun.
+
 ## The target
 
 Every country represented, with more names where more people live. A flat ten
@@ -42,12 +48,10 @@ peoples and assert nothing else. 207 still do — they cite one source, the queu
 at `unverified` × `ai_generated`, which is 0.2. Coverage is not knowledge, and
 waves 2+ are where that changes.
 
-Two counts move, so neither is written here by hand. The generator prints the
-per-country deficit — the progress meter for wave 0, not an error — and the
-depth report prints how far past wave 1 each family has come:
+The depth count moves, so it is not written here by hand. The depth report
+prints how far past wave 1 each family has come:
 
 ```bash
-node scripts/afrik/buildAnthroponymCandidates.mjs
 npx tsx scripts/afrik/anthroponymDepthStatus.ts
 ```
 

@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { act, fireEvent, render, within } from "@testing-library/react";
+import { act, fireEvent, render } from "@testing-library/react";
 import { setFicheMapOpen } from "@/components/fiche/FicheMapBand";
 import React from "react";
 
@@ -292,7 +292,7 @@ describe("/[lang]/familles/[slug] page", () => {
       const { getByTestId, queryByTestId } =
         await renderFamillesPage("FLG_BANTU");
 
-      expect(mockGetLanguageFamilyById).toHaveBeenCalledWith("FLG_BANTU", "fr");
+      expect(mockGetLanguageFamilyById).toHaveBeenCalledWith("FLG_BANTU");
       expect(getByTestId("family-record-view")).toHaveAttribute(
         "data-family-id",
         "FLG_BANTU"

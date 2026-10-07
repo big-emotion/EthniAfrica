@@ -21,18 +21,6 @@
  *           pattern: '^PPL_[A-Z_]+$'
  *         description: Identifiant du peuple (format PPL_*)
  *         example: "PPL_SHONA"
- *       - in: query
- *         name: lang
- *         required: false
- *         schema:
- *           type: string
- *           enum: [fr, en]
- *           default: fr
- *         description: >
- *           Locale du contenu servi. `fr` est la langue d'auteur ; `en`
- *           superpose l'enregistrement de traduction quand il existe et
- *           déclare sa provenance dans `meta.translation` (REQ-142).
- *         example: en
  *     responses:
  *       200:
  *         description: Détails du peuple
@@ -71,10 +59,9 @@ export const GET = corpusDetailRoute({
   param: "id",
   isValidId: validatePeopleId,
   invalidIdMessage: "Invalid people ID format",
-  servesLang: true,
   rejectedLog: "People not found",
-  resolve: async (id, lang) =>
-    orNotFound(await getPeopleHandler(id, lang), "People not found"),
+  resolve: async (id) =>
+    orNotFound(await getPeopleHandler(id), "People not found"),
 });
 
 // @req REQ-084

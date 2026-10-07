@@ -68,11 +68,11 @@ describe("moduleGroups — the shelf a module sits on (REQ-120)", () => {
    * landing in the wrong rubric is the failure a count cannot see.
    */
   /**
-   * The six surfaces of the dossiers axis, filed by domain.
+   * The five surfaces of the dossiers axis, filed by domain.
    *
-   * Six, not thirteen: the seven Réalités dossiers left the registry for the
-   * corpus, so what remains here is a pillar, two banks, a gallery over the
-   * Découvertes catalogue, a map and a static page.
+   * Five, not thirteen: the seven Réalités dossiers left the registry for the
+   * corpus, and the generated-image gallery was withdrawn, so what remains
+   * here is a pillar, two banks, a map and a static page.
    * The corpus half of the same filing is pinned in `dossiers/__tests__/menu`.
    */
   // @req REQ-120
@@ -85,10 +85,7 @@ describe("moduleGroups — the shelf a module sits on (REQ-120)", () => {
       // This reads the whole registry, drafts included: the withdrawn ones
       // stay filed under their rubrics even though the menu no longer shows
       // them.
-      [
-        "dossiers-noms",
-        ["articles", "nommer", "anecdotes", "proverbes", "galerie"],
-      ],
+      ["dossiers-noms", ["articles", "nommer", "anecdotes", "proverbes"]],
       ["dossiers-organisation", ["regards-colonisation"]],
       ["dossiers-populations", ["frise"]],
     ]);

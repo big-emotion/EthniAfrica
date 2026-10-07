@@ -20,46 +20,8 @@ interface PeopleFiche {
   };
 }
 
-interface LanguageReconciliation {
-  summary: {
-    reviewedPeopleIsoCodesMatchedToReference: number;
-    reviewedPeopleIsoCodesUnmatchedToReference: number;
-  };
-  reviewedPeopleIsoCodes: Array<{
-    iso639P3Code: string;
-    matchedReferenceEntries: Array<{
-      glottocode: string;
-      name: string;
-    }>;
-  }>;
-}
-
-interface PeopleLedger {
-  entries: Array<{
-    id: string;
-    review: { notes: string | null };
-  }>;
-}
-
-interface CountryTracker {
-  workstreams: Array<{
-    id: string;
-    findings: string[];
-    remaining: string[];
-  }>;
-}
-
 const tetela = readJson<PeopleFiche>(
   "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_TETELA.json"
-);
-const reconciliation = readJson<LanguageReconciliation>(
-  "docs/editorial/country-enrichment/COD-languages.json"
-);
-const peopleLedger = readJson<PeopleLedger>(
-  "docs/editorial/country-enrichment/COD-peoples.json"
-);
-const tracker = readJson<CountryTracker>(
-  "docs/editorial/country-enrichment/COD.json"
 );
 
 describe("DRC Tetela language identifier", () => {
@@ -78,52 +40,6 @@ describe("DRC Tetela language identifier", () => {
           tier: "official",
         }),
       ])
-    );
-  });
-
-  // @req REQ-032
-  it("reconciles tll against the pinned DRC language inventory", () => {
-    const code = reconciliation.reviewedPeopleIsoCodes.find(
-      (entry) => entry.iso639P3Code === "tll"
-    );
-
-    expect(code?.matchedReferenceEntries).toEqual([
-      expect.objectContaining({
-        glottocode: "tete1250",
-        name: "Tetela",
-      }),
-    ]);
-    expect(
-      reconciliation.reviewedPeopleIsoCodes.some(
-        (entry) => entry.iso639P3Code === "tet"
-      )
-    ).toBe(false);
-    expect(reconciliation.summary).toMatchObject({
-      reviewedPeopleIsoCodesMatchedToReference: 34,
-      reviewedPeopleIsoCodesUnmatchedToReference: 11,
-    });
-  });
-
-  // @req REQ-032
-  it("records the applied correction without leaving a stale action item", () => {
-    const tetelaReview = peopleLedger.entries.find(
-      (entry) => entry.id === "PPL_TETELA"
-    )?.review;
-    const languageWorkstream = tracker.workstreams.find(
-      (workstream) => workstream.id === "COD-LANGUAGES"
-    );
-
-    expect(tetelaReview?.notes).toContain(
-      "The language identifier was corrected to tll"
-    );
-    expect(tetelaReview?.notes).not.toContain(
-      "Replace the code before publication."
-    );
-    expect(languageWorkstream?.remaining.join(" ")).not.toContain(
-      "replace Tetela tet with tll"
-    );
-    expect(languageWorkstream?.findings.join(" ")).toContain(
-      "corrected from tet to tll"
     );
   });
 });

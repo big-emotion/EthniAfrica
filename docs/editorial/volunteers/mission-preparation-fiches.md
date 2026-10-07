@@ -63,8 +63,8 @@ vous le remplissez et vous le remettez. C'est la façon la plus simple, et elle
 suffit.
 
 **Avec Claude et git** : le fondateur du projet vous montre comment récupérer le dépôt
-public et lancer la compétence `afrik-curator`, qui transforme vos informations
-en une proposition de fiche au format du projet. Une séance de prise en main est
+public et transformer vos informations en une proposition de fiche au format du
+projet. Une séance de prise en main est
 prévue pour la tâche git précise dont vous aurez besoin.
 
 ## Ce que vous n'avez pas à faire

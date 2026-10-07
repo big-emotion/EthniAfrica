@@ -9,7 +9,7 @@ import {
   DOCTRINE_PAGE_EN,
 } from "@/lib/doctrine/doctrineContent.en";
 import { CLASSIFICATION_LABELS } from "@/lib/glossaire/vocabularies";
-import { frenchResidue, glossaryBreaches } from "@/test/englishBankParity";
+import { frenchResidue } from "@/test/englishBankParity";
 
 /**
  * The French MDX rows are a database seed, not a module, so their key set
@@ -59,7 +59,6 @@ describe("the English classification definitions", () => {
         label.toLowerCase().replace(/ /g, "-")
       );
       expect(frenchResidue(definition.description)).toBeNull();
-      expect(glossaryBreaches(definition.description)).toEqual([]);
       expect(definition.provenance).toBe("machine");
     }
   });
@@ -68,7 +67,6 @@ describe("the English classification definitions", () => {
   it("carries the page's own heading and standfirst", () => {
     expect(frenchResidue(DOCTRINE_PAGE_EN.heading)).toBeNull();
     expect(frenchResidue(DOCTRINE_PAGE_EN.intro)).toBeNull();
-    expect(glossaryBreaches(DOCTRINE_PAGE_EN.intro)).toEqual([]);
     expect(DOCTRINE_PAGE_EN.provenance).toBe("machine");
   });
 });
@@ -99,12 +97,11 @@ describe("the English doctrine entries", () => {
   });
 
   // @req REQ-145
-  it("translates the title and the body, under the glossary's rulings", () => {
+  it("translates the title and the body", () => {
     for (const [slug, entry] of Object.entries(DOCTRINE_ENTRIES_EN)) {
       expect(entry.title.trim(), slug).not.toBe("");
       expect(frenchResidue(entry.title), slug).toBeNull();
       expect(frenchResidue(entry.mdxSource), slug).toBeNull();
-      expect(glossaryBreaches(entry.mdxSource), slug).toEqual([]);
       expect(entry.mdxSource).toContain(`# ${entry.title}`);
       expect(entry.provenance).toBe("machine");
     }

@@ -143,13 +143,10 @@ const dossierSchema = z
   .object({
     _meta: dossierMetaSchema,
     /**
-     * Authoring metadata for the translation gate, not part of the fiche.
-     *
-     * `checkTranslationParity` reads `_translation.deferred.<lang>` and accepts
-     * a non-empty reason in place of a missing counterpart. The corpus's other
-     * models already carry it (see `dataset/source/afrik/langues/*.json`); this
-     * schema is `.strict()`, so a dossier could not state a deferral at all —
-     * which meant a dossier with no English sidecar had no way to say why.
+     * Authoring metadata left by the retired corpus-translation workflow, not
+     * part of the fiche. Dossiers still carry `_translation.deferred.<lang>`,
+     * and this schema is `.strict()`, so it stays admitted rather than
+     * refusing every dossier that declares one.
      */
     _translation: z
       .object({ deferred: z.record(z.string(), z.string()) })

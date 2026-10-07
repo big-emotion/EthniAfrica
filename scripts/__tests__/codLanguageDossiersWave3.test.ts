@@ -20,28 +20,6 @@ type LanguageDossier = {
   _translation?: { deferred?: { en?: string } };
 };
 
-type Reconciliation = {
-  summary: {
-    localLanguageDossiers: number;
-    referenceEntriesWithExactDossier: number;
-    referenceEntriesWithAnyLocalSignal: number;
-  };
-  localLanguageDossiers: Array<{
-    id: string;
-    matchStatus: string;
-    matchedReferenceGlottocodes: string[];
-  }>;
-};
-
-type Tracker = {
-  workstreams: Array<{
-    id: string;
-    status: string;
-    findings: string[];
-    remaining: string[];
-  }>;
-};
-
 const projectRoot = process.cwd();
 const deferralReason =
   "English translation is deferred until the French DRC country enrichment pass is stable.";
@@ -71,12 +49,6 @@ const expected = {
     people: { name: "Nande", peopleId: "PPL_NANDE" },
   },
 } as const;
-
-function readJson<T>(relativePath: string): T {
-  return JSON.parse(
-    readFileSync(resolve(projectRoot, relativePath), "utf8")
-  ) as T;
-}
 
 function readDossier(id: keyof typeof expected): LanguageDossier | null {
   const file = resolve(projectRoot, `dataset/source/afrik/langues/${id}.json`);
@@ -136,48 +108,4 @@ describe("DRC evidence-prioritized language dossier wave 3", () => {
       expect(readDossier(id)?._translation?.deferred?.en).toBe(deferralReason);
     }
   );
-
-  // @req REQ-032
-  it("regenerates ten exact dossiers without changing the any-signal count", () => {
-    const reconciliation = readJson<Reconciliation>(
-      "docs/editorial/country-enrichment/COD-languages.json"
-    );
-
-    expect(reconciliation.summary).toMatchObject({
-      localLanguageDossiers: 34,
-      referenceEntriesWithExactDossier: 10,
-      referenceEntriesWithAnyLocalSignal: 37,
-    });
-    for (const [id, record] of Object.entries(expected)) {
-      expect(
-        reconciliation.localLanguageDossiers.find((entry) => entry.id === id)
-      ).toMatchObject({
-        matchStatus: "exact_reference",
-        matchedReferenceGlottocodes: [record.glottocode],
-      });
-    }
-  });
-
-  // @req REQ-032
-  it("tracks the third wave without clearing the French or surface blockers", () => {
-    const tracker = readJson<Tracker>(
-      "docs/editorial/country-enrichment/COD.json"
-    );
-    const workstream = tracker.workstreams.find(
-      (entry) => entry.id === "COD-LANGUAGES"
-    );
-    const findings = workstream?.findings.join(" ") ?? "";
-    const remaining = workstream?.remaining.join(" ") ?? "";
-
-    expect(workstream?.status).toBe(
-      "third_language_dossier_wave_created_surface_approval_and_french_taxonomy_pending"
-    );
-    expect(findings).toContain("Havu (hav), Hunde (hke), and Nande (nnb)");
-    expect(findings).toContain(
-      "ten exact local dossiers while the any-local-signal count remains 37"
-    );
-    expect(remaining).toContain("215 Glottolog entries");
-    expect(remaining).toContain("missing French language dossier");
-    expect(remaining).toContain("country surface proposal");
-  });
 });

@@ -19,8 +19,7 @@
  * What it does not refuse: a missing publication URL (recorded as
  * unpublished, not an error — the private ledger already tracks "publié,
  * URL non enregistrée" and losing that fact loses the publication), a missing
- * English `question`/`myth` (that is `check:translation-parity`'s report, not
- * this gate), and a subject with an empty `publications[]` (not yet posted).
+ * English `question`/`myth` (French-only publication owes no counterpart), and a subject with an empty `publications[]` (not yet posted).
  */
 import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";

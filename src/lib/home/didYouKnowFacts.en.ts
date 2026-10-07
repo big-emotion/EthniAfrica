@@ -19,7 +19,7 @@
  * mounts it. Until then the module is read by its tests alone.
  */
 
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 
 import type { DidYouKnowFact } from "./didYouKnowFacts";
 

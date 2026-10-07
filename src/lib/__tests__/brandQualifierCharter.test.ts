@@ -134,7 +134,7 @@ describe("the product's qualifier, spelled in one place", () => {
   it("is the qualifier the render engine draws under the wordmark", () => {
     const kit = JSON.parse(
       fs.readFileSync(
-        path.join(process.cwd(), "social/harness/brand-kit.json"),
+        path.join(process.cwd(), "social/brand/brand-kit.json"),
         "utf8"
       )
     ) as { tagline?: string };

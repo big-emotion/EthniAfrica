@@ -64,7 +64,6 @@ export const GET = corpusDetailRoute({
   param: "id",
   isValidId: (id) => languageFamilyTreeParamSchema.safeParse({ id }).success,
   invalidIdMessage: "Invalid language family ID format",
-  servesLang: false,
   cacheControl: FAMILY_TREE_CACHE_CONTROL,
   rejectedLog: "Language family tree request rejected",
   resolve: (id) => getLanguageFamilyTreeHandler(id),

@@ -1,7 +1,6 @@
 import type { SearchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 
-export type FeedLensId =
-  "all" | "shorts" | "stories" | "images" | "quiz" | "fiches";
+export type FeedLensId = "all" | "shorts" | "stories" | "quiz" | "fiches";
 
 export interface FeedLens {
   id: FeedLensId;
@@ -11,7 +10,7 @@ export interface FeedLens {
 
 export type FeedLensCounts = Record<Exclude<FeedLensId, "all">, number>;
 
-const LENS_ORDER = ["shorts", "stories", "images", "quiz", "fiches"] as const;
+const LENS_ORDER = ["shorts", "stories", "quiz", "fiches"] as const;
 
 /**
  * The filters under the search field. « Tout » is the answer and is always

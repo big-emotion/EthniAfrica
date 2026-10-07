@@ -3,10 +3,6 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 vi.mock("@/lib/supabase/queries/afrik/sitemapEntries", () => ({
   getSitemapEntityIds: vi.fn(),
 }));
-vi.mock("@/lib/supabase/queries/afrik/translations", () => ({
-  getAfrikTranslation: vi.fn(),
-  getAfrikTranslationIds: vi.fn(),
-}));
 // The bank on disk is empty on this branch; the sitemap's composition is what
 // is under test, so the corpus read is the one thing replaced.
 vi.mock("@/lib/articles/corpus", async (importOriginal) => ({
@@ -26,7 +22,6 @@ import {
   videoArticle,
 } from "@/lib/articles/__tests__/fixtures";
 import { getSitemapEntityIds } from "@/lib/supabase/queries/afrik/sitemapEntries";
-import { getAfrikTranslationIds } from "@/lib/supabase/queries/afrik/translations";
 
 const record = (raw: { id: string }) => ({ filename: `${raw.id}.json`, raw });
 
@@ -41,7 +36,6 @@ describe("sitemap.xml — articles", () => {
       languages: [],
       patronymes: [],
     });
-    (getAfrikTranslationIds as ReturnType<typeof vi.fn>).mockResolvedValue([]);
   });
   afterEach(() => vi.unstubAllEnvs());
 

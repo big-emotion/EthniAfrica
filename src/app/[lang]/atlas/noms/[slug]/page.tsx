@@ -103,10 +103,7 @@ export default async function AppellationsSlugPage({
 }) {
   const { lang, slug } = await params;
 
-  const patronyme = await loadPatronymeFiche(
-    decodeURIComponent(slug),
-    lang as Language
-  );
+  const patronyme = await loadPatronymeFiche(decodeURIComponent(slug));
   if (!patronyme) {
     notFound();
   }
@@ -114,8 +111,7 @@ export default async function AppellationsSlugPage({
   /**
    * Names filed under the same onomastic system.
    *
-   * The system itself is not a fiche — `systemes_onomastiques/` holds a
-   * template and nothing else — so the kinship is expressed by the names it
+   * The system itself is not a fiche, so the kinship is expressed by the names it
    * gathers rather than by a link to the system. Three are read for two slots:
    * this fiche is one of them and `buildOnwardLinks` drops it, so asking for
    * exactly two would sometimes deliver one.
@@ -135,7 +131,7 @@ export default async function AppellationsSlugPage({
       flushTop
       trailLabel={patronyme.nameMain}
       heroHead={
-        <FicheHeroHead entityType="name" translation={patronyme.translation}>
+        <FicheHeroHead entityType="name">
           <PatronymeFicheTitle
             patronyme={patronyme}
             language={lang as Language}

@@ -6,7 +6,6 @@ import { revealProvenanceEn } from "@/lib/games/revealProvenance.en";
 import {
   figuresIn,
   frenchResidue,
-  glossaryBreaches,
   readsAsUntranslated,
 } from "@/test/englishBankParity";
 
@@ -34,8 +33,6 @@ describe("the English scale facts", () => {
       expect(readsAsUntranslated(fact.bodyFr, counterpart.bodyEn)).toBe(false);
       expect(frenchResidue(counterpart.headlineEn, PROPER_NAMES)).toBeNull();
       expect(frenchResidue(counterpart.bodyEn, PROPER_NAMES)).toBeNull();
-      expect(glossaryBreaches(counterpart.headlineEn)).toEqual([]);
-      expect(glossaryBreaches(counterpart.bodyEn)).toEqual([]);
     }
   });
 

@@ -22,28 +22,6 @@ type LanguageDossier = {
   _translation?: { deferred?: { en?: string } };
 };
 
-type LanguageReconciliation = {
-  summary: {
-    localLanguageDossiers: number;
-    referenceEntriesWithExactDossier: number;
-    referenceEntriesWithAnyLocalSignal: number;
-  };
-  localLanguageDossiers: Array<{
-    id: string;
-    matchStatus: string;
-    matchedReferenceGlottocodes: string[];
-  }>;
-};
-
-type CountryTracker = {
-  workstreams: Array<{
-    id: string;
-    status: string;
-    findings: string[];
-    remaining: string[];
-  }>;
-};
-
 const projectRoot = process.cwd();
 const deferralReason =
   "English translation is deferred until the French DRC country enrichment pass is stable.";
@@ -82,12 +60,6 @@ const expected = {
     peopleLinks: [{ name: "Alur", peopleId: "PPL_ALUR" }],
   },
 } as const;
-
-function readJson<T>(relativePath: string): T {
-  return JSON.parse(
-    readFileSync(resolve(projectRoot, relativePath), "utf8")
-  ) as T;
-}
 
 function readDossier(id: keyof typeof expected): LanguageDossier | null {
   const path = resolve(projectRoot, `dataset/source/afrik/langues/${id}.json`);
@@ -150,53 +122,4 @@ describe("DRC evidence-prioritized language dossier wave 2", () => {
       expect(readDossier(id)?._translation?.deferred?.en).toBe(deferralReason);
     }
   );
-
-  // @req REQ-032
-  it("regenerates the DRC reconciliation without inflating the any-signal count", () => {
-    const reconciliation = readJson<LanguageReconciliation>(
-      "docs/editorial/country-enrichment/COD-languages.json"
-    );
-
-    expect(reconciliation.summary.localLanguageDossiers).toBeGreaterThanOrEqual(
-      31
-    );
-    expect(
-      reconciliation.summary.referenceEntriesWithExactDossier
-    ).toBeGreaterThanOrEqual(7);
-    expect(
-      reconciliation.summary.referenceEntriesWithAnyLocalSignal
-    ).toBeGreaterThanOrEqual(37);
-    for (const [id, record] of Object.entries(expected)) {
-      expect(
-        reconciliation.localLanguageDossiers.find((entry) => entry.id === id)
-      ).toMatchObject({
-        matchStatus: "exact_reference",
-        matchedReferenceGlottocodes: [record.glottocode],
-      });
-    }
-  });
-
-  // @req REQ-032
-  it("tracks the second wave while preserving the French and surface blockers", () => {
-    const tracker = readJson<CountryTracker>(
-      "docs/editorial/country-enrichment/COD.json"
-    );
-    const workstream = tracker.workstreams.find(
-      (entry) => entry.id === "COD-LANGUAGES"
-    );
-    const findings = workstream?.findings.join(" ") ?? "";
-    const remaining = workstream?.remaining.join(" ") ?? "";
-
-    expect(workstream?.status).toContain("surface_approval");
-    expect(workstream?.status).toContain("french_taxonomy");
-    expect(findings).toContain(
-      "Luba-Katanga (lub), Tetela (tll), and Alur (alz)"
-    );
-    expect(findings).toContain(
-      "seven exact local dossiers while the any-local-signal count remains 37"
-    );
-    expect(remaining).toContain("215 Glottolog entries");
-    expect(remaining).toContain("missing French language dossier");
-    expect(remaining).toContain("country surface proposal");
-  });
 });

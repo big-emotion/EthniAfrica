@@ -127,7 +127,7 @@ Both strict models — `public/modele-peuple.json` and
 `public/modele-linguistique.json` — declare the field, because the curator
 workflow rejects fields a model does not carry.
 
-**A gate was checking nothing.** `scripts/ci/checkEditorialRules.ts` enforces
+**A gate was checking nothing.** `scripts/ci/checkEditorialRules.ts` (retired 2026-10-08) enforced
 that a fiche classified `contested` or `colonial-legacy` carries at least two
 sources. It read `fiche.classification_status`, snake_case, which no PPL or FLG
 fiche has ever used. Had the corpus been filled without noticing, the rule would

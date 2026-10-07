@@ -20,7 +20,7 @@ const options: swaggerJsdoc.Options = {
         "## Response envelope\n\n" +
         "Every `/api/v2/*` response uses the Module #0 envelope: `{ data, meta: { license, attribution, pagination?, confidence?, pinned_url?, translation? }, errors }`. License and attribution are always present (AR8); `errors` is empty on success and populated on non-2xx responses. List endpoints place their pagination values under `meta.pagination`.\n\n" +
         "## 2.3.0 — translated records (additive)\n\n" +
-        "The five single-entity endpoints accept `?lang=fr|en`. `fr` is the authored language and the default; `en` overlays the translation record when one exists and declares how it was produced in `meta.translation` — `human`, `machine_reviewed` or `machine` — with `stale: true` when the French moved on a field the reader is shown since it was translated. Fields whose subject is a word are withheld at `machine` provenance and served in French until a human has reviewed them (REQ-142, REQ-143). Lists, facets and search stay authored-French.\n\n" +
+        "The five single-entity endpoints accept `?lang=fr|en`. `fr` is the authored language and the default; `en` overlays the translation record when one exists and declares how it was produced in `meta.translation` — `human`, `machine_reviewed` or `machine` — with `stale: true` when the French moved on a field the reader is shown since it was translated. Fields whose subject is a word are withheld at `machine` provenance and served in French until a human has reviewed them (REQ-142, REQ-143). Lists, facets and search stay authored-French. Retired since: the corpus is no longer translated, `?lang` is ignored and every record is served as authored.\n\n" +
         "## 2.1.0 — one source-tier vocabulary (breaking)\n\n" +
         'Source authority is now one three-value scale — `official` | `referenced` | `unverified` — spoken identically by the database, the payloads and the UI. Provenance stays on the separate `source_kind` axis, so AI-generated text is `tier: "unverified"` + `source_kind: "ai_generated"` rather than a tier of its own.\n\n' +
         "Removed, all superseded by `tier`:\n\n" +
@@ -1570,56 +1570,6 @@ const options: swaggerJsdoc.Options = {
             "match",
           ],
         },
-        SearchCompanionImage: {
-          type: "object",
-          properties: {
-            id: { type: "string", minLength: 1 },
-            href: { type: "string", minLength: 1 },
-            slug: { type: "string", minLength: 1 },
-            title: { type: "string", minLength: 1 },
-            description: { type: "string", minLength: 1 },
-            caption: { type: "string", minLength: 1 },
-            image: {
-              type: "object",
-              properties: {
-                src: { type: "string", minLength: 1 },
-                alt: { type: "string", minLength: 1 },
-                credit: { type: "string", minLength: 1 },
-                licence: {
-                  type: "string",
-                  enum: ["public-domain", "cc0", "cc-by", "cc-by-sa"],
-                },
-                licenceUrl: { type: "string", format: "uri" },
-                filePage: { type: "string", format: "uri" },
-              },
-              required: ["src", "alt", "credit", "licence"],
-            },
-            generation: {
-              type: "object",
-              properties: {
-                tool: { type: "string", minLength: 1 },
-                model: { type: "string", minLength: 1 },
-                generatedOn: { type: "string", minLength: 1 },
-                sourceKind: { type: "string", enum: ["ai_generated"] },
-              },
-              required: ["tool", "model", "generatedOn", "sourceKind"],
-            },
-            source: { $ref: "#/components/schemas/SearchCompanionSource" },
-            match: { $ref: "#/components/schemas/SearchCompanionMatch" },
-          },
-          required: [
-            "id",
-            "href",
-            "slug",
-            "title",
-            "description",
-            "caption",
-            "image",
-            "generation",
-            "source",
-            "match",
-          ],
-        },
         SearchCompanionQuizOption: {
           oneOf: [
             { type: "string" },
@@ -1749,23 +1699,6 @@ const options: swaggerJsdoc.Options = {
           },
           required: ["count", "items"],
         },
-        SearchCompanionImageSelection: {
-          type: "object",
-          properties: {
-            count: {
-              type: "integer",
-              minimum: 0,
-              description:
-                "Total matching items before the response limit is applied.",
-            },
-            items: {
-              type: "array",
-              maxItems: 1,
-              items: { $ref: "#/components/schemas/SearchCompanionImage" },
-            },
-          },
-          required: ["count", "items"],
-        },
         SearchCompanionQuizSelection: {
           type: "object",
           properties: {
@@ -1801,21 +1734,11 @@ const options: swaggerJsdoc.Options = {
             proverbs: {
               $ref: "#/components/schemas/SearchCompanionProverbSelection",
             },
-            images: {
-              $ref: "#/components/schemas/SearchCompanionImageSelection",
-            },
             quiz: {
               $ref: "#/components/schemas/SearchCompanionQuizSelection",
             },
           },
-          required: [
-            "subjects",
-            "shorts",
-            "anecdotes",
-            "proverbs",
-            "images",
-            "quiz",
-          ],
+          required: ["subjects", "shorts", "anecdotes", "proverbs", "quiz"],
         },
         SearchCompanionsResponse: {
           type: "object",
@@ -2579,7 +2502,7 @@ const options: swaggerJsdoc.Options = {
                 { type: "null" },
               ],
               description:
-                "Present once a locale other than the authored one was asked for; null when that locale has no record and the authored text is served.",
+                "No longer emitted: corpus translation was retired and every record is served as authored, in French. Kept declared so existing clients are not broken.",
             },
           },
           required: ["license", "attribution"],

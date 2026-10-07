@@ -71,6 +71,6 @@ describe("loadPatronymeFiche", () => {
     getPatronymeByIdMock.mockResolvedValue(patronyme);
 
     await expect(loadPatronymeFiche("PAT_KEITA")).resolves.toBe(patronyme);
-    expect(getPatronymeByIdMock).toHaveBeenCalledWith("PAT_KEITA", "fr");
+    expect(getPatronymeByIdMock).toHaveBeenCalledWith("PAT_KEITA");
   });
 });

@@ -218,8 +218,7 @@
   text-shadow: 0 0.125rem 0.75rem var(--afh-night-ground);
 }
 
-.description,
-.caption {
+.description {
   margin: 0;
   font: 400 var(--afh-text-small) / 1.45 var(--afh-font-body);
   text-shadow: 0 0.125rem 0.75rem var(--afh-night-ground);

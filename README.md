@@ -62,8 +62,7 @@ project's service-role key:
 npx tsx scripts/seedAdminAllowlist.ts moderation@example.org "Editorial moderation lead"
 ```
 
-`scripts/seedAdmin.ts` writes the legacy `user_roles` table, which opens no door in the console —
-see [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md#first-moderator).
+The legacy `user_roles` table opens no door in the console — see [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md#first-moderator).
 
 ---
 
@@ -89,13 +88,12 @@ dataset/source/afrik/
 ```
 
 Each fiche's shape is fixed by one of the strict models in `public/modele-*.json` — the
-directory is the list: dossier, peuple, pays, linguistique, langue, media, relation, source,
-migration, recit-oral, frontiere-coloniale, and the six name models (nom, nom-jamu, nom-nisba,
-nom-patronyme, nom-patronymique, nom-totemique). Never skip, rename or invent a section.
+directory is the list: dossier, peuple, pays, linguistique, langue, lieu, relation, source,
+migration, and the two name models (nom, nom-patronyme). Never skip, rename or invent a
+section.
 
-Every `sources` entry carries a tier, and `scripts/validateAfrikData.ts` enforces it. Editorial
-work on fiches has its own guidance in `.claude/skills/afrik-curator/`; the rules the validator
-and `scripts/ci/checkEditorialRules.ts` apply are documented in
+Every `sources` entry carries a tier, and `scripts/validateAfrikData.ts` enforces it. The rules
+the validator applies are documented in
 [`CLAUDE.md`](CLAUDE.md#source-tier-policy-enforced-by-validateafrikdatats).
 
 ---
@@ -152,19 +150,17 @@ npm run e2e       # Playwright — deliberately outside `make check`
 Beyond `make check`, CI runs gates specific to this repository. Run the ones your change
 touches before pushing:
 
-| Command                                     | What it protects                                                                                                      |
-| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `npm run lint:req`                          | `@req` traceability — every test needs a `// @req REQ-NNN`, validated against `docs/confluence-spec/req-catalog.json` |
-| `npm run check:env-example`                 | `.env.example` matches the variables the code reads                                                                   |
-| `npm run check:action-pins`                 | every third-party GitHub Action is SHA-pinned                                                                         |
-| `npm run check:jira-template`               | the ticket template still exists and matches                                                                          |
-| `npm run test:charter-contracts`            | the design-charter contract suite                                                                                     |
-| `npm run check:translation-parity`          | French and English content carry each other, or an explicit deferral                                                  |
-| `npm run check:local-paths`                 | no workstation path in this public repository                                                                         |
-| `npm run check:dead`                        | unreferenced files, exports and dependencies, against ratcheted ceilings                                              |
-| `npm run check:migration-files`             | no duplicate or missing number in `supabase/migrations/`                                                              |
-| `npx tsx scripts/validateAfrikData.ts`      | AFRIK corpus integrity                                                                                                |
-| `npx tsx scripts/ci/checkEditorialRules.ts` | decolonial editorial rules on fiches                                                                                  |
+| Command                                | What it protects                                                                                                      |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `npm run lint:req`                     | `@req` traceability — every test needs a `// @req REQ-NNN`, validated against `docs/confluence-spec/req-catalog.json` |
+| `npm run check:env-example`            | `.env.example` matches the variables the code reads                                                                   |
+| `npm run check:action-pins`            | every third-party GitHub Action is SHA-pinned                                                                         |
+| `npm run check:jira-template`          | the ticket template still exists and matches                                                                          |
+| `npm run test:charter-contracts`       | the design-charter contract suite                                                                                     |
+| `npm run check:local-paths`            | no workstation path in this public repository                                                                         |
+| `npm run check:dead`                   | unreferenced files, exports and dependencies, against ratcheted ceilings                                              |
+| `npm run check:migration-files`        | no duplicate or missing number in `supabase/migrations/`                                                              |
+| `npx tsx scripts/validateAfrikData.ts` | AFRIK corpus integrity                                                                                                |
 
 Two things about that list are easy to get wrong:
 

@@ -197,9 +197,6 @@ Publish fewer pieces if the evidence is not ready; no catch-up burst is required
 
 The active sequence starts with the project-intention essay, then **Mali →
 Manden/Mandé/mandingue → Dioula → Traoré → Keïta/Coulibaly → Macina/Diina**.
-The [dated strategy roadmap](../editorial/strategy/roadmap-2026-q4.md) supplies
-planning slots and reviews; the [evidence note](../editorial/strategy/evidence-2026-09-22.md)
-records the measurements and limitations behind them.
 
 This decision **supersedes the September 20 ramp**, whose target was five
 subjects per publication day and whose recorded stage remained bootstrap 0.

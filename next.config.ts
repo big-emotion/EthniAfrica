@@ -18,10 +18,7 @@ const nextConfig: NextConfig = {
   output: process.env.VERCEL ? undefined : "standalone",
   // Runtime filesystem reads must survive both standalone and preview packaging.
   outputFileTracingIncludes: {
-    "/*/dossiers/*": [
-      "./dataset/source/afrik/dossiers/*.json",
-      "./dataset/translations/en/dossiers/*.json",
-    ],
+    "/*/dossiers/*": ["./dataset/source/afrik/dossiers/*.json"],
     // The source review queue is built from the fiches in git: a ruling has to
     // name the citation the corpus actually carries, not the database's copy.
     "/*/admin/sources": [

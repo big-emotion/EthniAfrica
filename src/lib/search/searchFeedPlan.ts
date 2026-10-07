@@ -99,7 +99,6 @@ function companionRelations(data: SearchCompanionsData): string[] {
     ...data.shorts.items.map(({ match }) => match.relation),
     ...data.anecdotes.items.map(({ match }) => match.relation),
     ...data.proverbs.items.map(({ match }) => match.relation),
-    ...data.images.items.map(({ match }) => match.relation),
     ...(data.quiz.item ? [data.quiz.item.match.relation] : []),
   ];
 }

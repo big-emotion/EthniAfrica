@@ -12,7 +12,7 @@
  * the French one wherever the source is English.
  */
 
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 import type { Language } from "@/types/shared";
 
 import { type Proverb } from "./proverbs";

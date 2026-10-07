@@ -71,7 +71,7 @@ describe("GET /api/v2/patronymes/[id]", () => {
     expect(await response.json()).toEqual(validEnvelope);
     expect(response.headers.get("Cache-Control")).toBe("s-maxage=3600");
     expect(getPatronymeHandler).toHaveBeenCalledOnce();
-    expect(getPatronymeHandler).toHaveBeenCalledWith("PAT_KEITA", "fr");
+    expect(getPatronymeHandler).toHaveBeenCalledWith("PAT_KEITA");
   });
 
   // @req REQ-133
@@ -166,38 +166,5 @@ describe("GET /api/v2/patronymes/[id]", () => {
 
     expect(response.status).toBe(204);
     expect(response.headers.get("Access-Control-Allow-Origin")).toBe("*");
-  });
-
-  describe("?lang (REQ-142)", () => {
-    // @req REQ-142
-    it("forwards a supported locale to the handler", async () => {
-      vi.mocked(getPatronymeHandler).mockResolvedValue({
-        ok: true,
-        envelope: validEnvelope,
-      });
-
-      const response = await GET(
-        new NextRequest("http://localhost/api/v2/patronymes/PAT_KEITA?lang=en"),
-        { params: Promise.resolve({ id: "PAT_KEITA" }) }
-      );
-
-      expect(response.status).toBe(200);
-      expect(getPatronymeHandler).toHaveBeenCalledWith("PAT_KEITA", "en");
-    });
-
-    // @req REQ-142
-    it("refuses an unsupported locale with a 400 naming the field", async () => {
-      const response = await GET(
-        new NextRequest("http://localhost/api/v2/patronymes/PAT_KEITA?lang=de"),
-        { params: Promise.resolve({ id: "PAT_KEITA" }) }
-      );
-
-      expect(response.status).toBe(400);
-      expect(await response.json()).toMatchObject({
-        data: null,
-        errors: [{ code: "VALIDATION_ERROR", field: "lang" }],
-      });
-      expect(getPatronymeHandler).not.toHaveBeenCalled();
-    });
   });
 });

@@ -13,7 +13,7 @@
  * bilingual foundation PR mounts it.
  */
 
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 
 // @req REQ-145
 export type DidYouKnowIllustrationTranslation = {

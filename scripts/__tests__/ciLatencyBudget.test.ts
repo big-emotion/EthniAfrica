@@ -46,7 +46,6 @@ const PRE_MERGE_GATES = [
   "ci.yml",
   "a11y.yml",
   "data-integrity.yml",
-  "editorial-rules.yml",
   "openapi-diff.yml",
   "e2e.yml",
   "lighthouse.yml",
@@ -144,11 +143,6 @@ describe("CI latency budget", () => {
   // @req REQ-032
   it("does not re-run the required a11y gate on push after merge", () => {
     expect(triggersOf("a11y.yml")).not.toMatch(/push:/);
-  });
-
-  // @req REQ-032
-  it("does not re-run the editorial gate on push after merge", () => {
-    expect(triggersOf("editorial-rules.yml")).not.toMatch(/push:/);
   });
 
   // The required gate rebuilt Next.js from cold on every run (42-58 s) while

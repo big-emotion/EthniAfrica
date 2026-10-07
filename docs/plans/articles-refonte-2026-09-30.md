@@ -71,13 +71,10 @@ Read these sources before editing, in this order:
 5. [Brand](../design/brand-charter.md), [typography](../design/typography-charter.md) and
    [actions](../design/actions-charter.md) charters; invoke the project art-direction skill
    before changing visible compositions.
-6. [Social editorial contract](../design/gabarits-social/EDITORIAL-CONTRACT.md),
-   [production ledger scope](../productions/README.md),
+6. [Production ledger scope](../productions/README.md),
    [media decision](embedded-media-decision.md), and
-   [production-history plan](production-history-plan.md). Their dated observations are not
+   production-history plan (since removed). Their dated observations are not
    substitutes for the current code or the operator's newer direction.
-7. [Audience measurement](../audience/editorial-measurement.md) and the
-   [September 30 evidence](../audience/audit-2026-09-30.md).
 
 The editorial unification plan is now merged into `recette` through PR #1426, merge commit
 `c3fe51d9e`. Earlier chat links to its archived worktree are no longer the handoff location.

@@ -13,8 +13,7 @@
  * `translations.ts`, which points at these records rather than restating
  * them.
  *
- * No React, no lucide, no Next: `scripts/ci/checkGlossary.ts` imports this
- * file under plain `tsx`.
+ * No React, no lucide, no Next, so a plain `tsx` script can import it.
  */
 
 import type { ColonialEventType } from "@/lib/afrik/migrationEventTypes";
@@ -24,7 +23,6 @@ import type {
   PatronymeNisbaDossier,
   PatronymeOriginClaim,
 } from "@/lib/afrik/parsers/patronymeTypes";
-import { ACCESS_MODE_LABELS, type AccessMode } from "@/lib/hubs/moduleRegistry";
 import type { RelationBadgeType } from "@/lib/relationsDataTransformer";
 import type { ClassificationStatus } from "@/types/afrik";
 import type { NameRecordType } from "@/types/names";
@@ -310,24 +308,5 @@ export const COLONIAL_EVENT_TYPE_LABELS: Labels<ColonialEventType> = {
     displacement: "forced displacement",
     imposed_name: "imposed name",
     resistance: "resistance",
-  },
-};
-
-// ───── Access modes ───────────────────────────────────────────────────────
-
-/**
- * `ACCESS_MODE_LABELS` keeps its home and its exact shape — ninety-nine
- * references and an exact-shape test hang off it — so the French side is
- * read from `moduleRegistry` rather than restated, and only the English
- * sibling is new. Navigation copy rather than a domain term; it sits in the
- * glossary so that the axis is named one way across the whole English site.
- */
-// @req REQ-114
-export const ACCESS_MODE_LABELS_BY_LOCALE: Labels<AccessMode> = {
-  fr: ACCESS_MODE_LABELS,
-  en: {
-    atlas: "Browse",
-    dossiers: "Articles",
-    jeux: "Play",
   },
 };

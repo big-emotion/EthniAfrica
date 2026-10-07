@@ -9,9 +9,8 @@
  * whoever revises this constant without touching §1 bis has broken the rule
  * that the table lives in one place.
  *
- * The data is `socialFormatMatrix.json`, read as-is by the Node production
- * tools (`social/tools/production/destinations.mjs`), which run on plain Node
- * and cannot import TypeScript. It also carries the platform limits that were
+ * The data is `socialFormatMatrix.json`, kept as JSON so plain Node can read
+ * it without a TypeScript loader. It also carries the platform limits that were
  * verified against an official page, each with its URL and the day it was read.
  */
 import matrix from "./socialFormatMatrix.json";

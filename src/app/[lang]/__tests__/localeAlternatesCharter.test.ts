@@ -89,11 +89,6 @@ vi.mock("@/api/v2/services/sources", async (importOriginal) => ({
   getSourceById: async () => null,
 }));
 
-vi.mock("@/lib/supabase/queries/afrik/translations", () => ({
-  getAfrikTranslation: async () => null,
-  getAfrikTranslationIds: async () => [],
-}));
-
 vi.mock("@/api/v2/handlers/compare", () => ({
   assembleComparison: async () => ({ ok: true, entities: [] }),
 }));
@@ -226,7 +221,6 @@ const FIXTURES: Record<string, RouteFixture> = {
   },
   "dossiers/anecdotes": { expectation: { surface: "anecdotes" } },
   "dossiers/proverbes": { expectation: { surface: "proverbs" } },
-  "dossiers/galerie": { expectation: { surface: "gallery" } },
   "dossiers/migrations": { expectation: { surface: "migrations" } },
   "dossiers/nommer": { expectation: { surface: "nommer" } },
   "dossiers/nommer/la-chose": { expectation: { surface: "nommer" } },

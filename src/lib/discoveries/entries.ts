@@ -9,7 +9,6 @@ import { localizeProverb } from "@/lib/proverbs/proverbs.en";
 import type { Language } from "@/types/shared";
 
 import type { DiscoveryPublication } from "./catalog";
-import { generatedImagePublications } from "./generatedImages";
 import { DISCOVERY_SLUGS } from "./slugs";
 import { videoPublications } from "./videos";
 import { loadProductionLedger } from "@/lib/productions/ledger";
@@ -209,7 +208,6 @@ export function getDiscoveryPublications(): DiscoveryPublication[] {
   return [
     ...anecdotePublications(),
     ...proverbPublications(),
-    ...generatedImagePublications(),
     ...videoPublications().filter(
       (publication) => publication.status === "published"
     ),

@@ -1,9 +1,7 @@
 # Editorial personas
 
 Version 1 — 2026-09-30. Operator intent and evidence are separate inputs.
-Use with the [reader-facing register](reader-facing-register.md), the
-[audience audit](../audience/audit-2026-09-30.md) and the
-[measurement protocol](../audience/editorial-measurement.md).
+Use with the [reader-facing register](reader-facing-register.md).
 
 These are **provisional needs-based personas**, not a demographic segmentation.
 One person can occupy several of them. No fictional name, age, job, income,

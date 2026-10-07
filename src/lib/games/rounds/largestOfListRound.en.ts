@@ -1,5 +1,5 @@
 import { englishNumber, inflationEn } from "@/lib/games/format.en";
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
+import type { TranslationKind } from "@/lib/i18n/translationKind";
 
 /**
  * The English wording of the four-way comparison — the sidecar of

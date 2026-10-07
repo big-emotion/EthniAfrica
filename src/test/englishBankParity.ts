@@ -1,13 +1,10 @@
-import { GLOSSARY_TERMS } from "@/lib/glossaire/terms";
-
 /**
  * What every English content bank owes its French twin (REQ-143, REQ-145),
  * as predicates the parity suites share.
  *
- * Three checks, each narrow on purpose. `readsAsUntranslated` catches the
+ * Two checks, each narrow on purpose. `readsAsUntranslated` catches the
  * hole a sidecar leaves when an entry is copied rather than translated;
- * `frenchResidue` catches a sentence the translator never reached; the
- * glossary check catches a rendering the atlas has ruled out. None of them
+ * `frenchResidue` catches a sentence the translator never reached. Neither
  * judges the translation itself — that is a reader's job — so a bank that
  * passes here is one with no *mechanical* fault, not a good one.
  */
@@ -81,40 +78,4 @@ export function figuresIn(text: string, locale: "en" | "fr"): string[] {
   }
   const matches = text.match(/\d+(?:,\d{3})*(?:\.\d+)?/g) ?? [];
   return matches.map((figure) => figure.replace(/,/g, ""));
-}
-
-function escapeRegExp(phrase: string): string {
-  return phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
-
-function wholeWord(phrase: string): RegExp {
-  return new RegExp(
-    `(?<![\\p{L}\\p{N}])${escapeRegExp(phrase)}(?![\\p{L}\\p{N}])`,
-    "iu"
-  );
-}
-
-/**
- * The glossary's rulings on one English string (REQ-144): a `forbiddenEn`
- * word standing for a term, or a term's French form left in place. Mirrors
- * the two rules of `scripts/ci/checkGlossary.ts`, which walks translated
- * records and dictionaries and cannot see a TypeScript bank; a test that
- * imported the script would drag its file-system walk and its exit path
- * into every suite.
- */
-// @req REQ-144
-export function glossaryBreaches(en: string): string[] {
-  const breaches: string[] = [];
-  for (const term of GLOSSARY_TERMS) {
-    for (const word of term.forbiddenEn ?? []) {
-      if (wholeWord(word).test(en)) breaches.push(`${term.key}: "${word}"`);
-    }
-    if (
-      term.fr.toLowerCase() !== term.en.toLowerCase() &&
-      wholeWord(term.fr).test(en)
-    ) {
-      breaches.push(`${term.key}: untranslated "${term.fr}"`);
-    }
-  }
-  return breaches;
 }

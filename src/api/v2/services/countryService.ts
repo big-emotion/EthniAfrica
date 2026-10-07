@@ -13,9 +13,7 @@ import {
   compactCountryAtlasLanguages,
   deriveCountrySynthesis,
 } from "@/lib/home/countrySynthesis";
-import type { TranslationLocale } from "@/lib/i18n/translationLocale";
 import type { Country } from "@/types/afrik";
-import { attachTranslation, type TranslatedEntity } from "./translations";
 
 export interface PaginatedResult<T> {
   data: T[];
@@ -91,15 +89,8 @@ export async function getCountryAtlasIndex(): Promise<
 /**
  * Get a single country by ISO code
  * Note: Individual items use direct query for now (less critical than lists)
- *
- * `lang` other than the authored `fr` overlays the translation record and
- * carries its provenance on the entity (REQ-142).
  */
 // @req REQ-019
-// @req REQ-142
-export async function getCountryById(
-  id: string,
-  lang: TranslationLocale = "fr"
-): Promise<TranslatedEntity<Country> | null> {
-  return attachTranslation("country", id, lang, await getAfrikCountryById(id));
+export async function getCountryById(id: string): Promise<Country | null> {
+  return getAfrikCountryById(id);
 }

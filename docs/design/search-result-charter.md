@@ -1,7 +1,7 @@
 # The search-result charter — what a name page owes its reader
 
 Settled 2026-09-18, on the reorientation recorded in
-`docs/editorial/essais/dou-viennent-les-noms-2026-09-17.md`.
+`docs/editorial/refonte-plan-2026-09-18.md`.
 
 Updated 2026-09-19 by REQ-180 and DEC-058 after the result was recomposed as a
 feed.
@@ -440,7 +440,7 @@ Two blockers measured 2026-09-17, both visible as an empty band on every artboar
   class, and the mockups — which draw four peoples and a disambiguation — drew
   the four classes that cannot fill it.
 - ~~**No gate guards the competing appellations.**~~ **Closed 2026-09-18.**
-  `competing-appellations` in `checkEditorialRules.ts` now asks every
+  `competing-appellations` in `checkEditorialRules.ts` (retired 2026-10-08) asked every
   ethnographic fiche to have _decided_ about the names it is known by besides
   its own — reading `exonyms` on a people and `historicalAppellations` on a
   family, and asking for the origin wherever forms exist.

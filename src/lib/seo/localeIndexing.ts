@@ -9,11 +9,6 @@ import {
   type PageType,
   type StaticPageKey,
 } from "@/lib/routing";
-import type { FicheKind } from "@/lib/seo/ficheCanonical";
-import {
-  CORPUS_LOCALE,
-  ficheHasTranslation,
-} from "@/lib/seo/translationParity";
 import type { Language } from "@/types/shared";
 
 /**
@@ -31,9 +26,13 @@ import type { Language } from "@/types/shared";
  *
  * Two kinds of surface, two rules. A rubric page is at parity by membership
  * in `SURFACES_AT_PARITY`, lifted by hand as each translation wave lands. A
- * fiche is at parity when a translation record exists for the entity, read
- * through `ficheHasTranslation`. Doctrine: `docs/editorial/locale-indexing.md`.
+ * fiche is indexed in the corpus locale only: the corpus is written in French
+ * and carries no translated counterpart.
  */
+
+/** The locale the corpus is written in. */
+// @req REQ-141
+export const CORPUS_LOCALE: Language = "fr";
 
 /**
  * The pages the indexing rule addresses. A page type or a static page key
@@ -58,8 +57,6 @@ export type IndexedSurface =
  *     names peoples are called by, which are proper nouns in either locale.
  *   · the dossiers directory and themes — their copy comes from the bilingual
  *     catalog.
- *   · Kongo, Luba, Lunda and Kongo spiritualities — each has an English
- *     dossier sidecar read by the route.
  *
  * Every other surface stays outside the list while its body carries French
  * prose under `/en`. A dictionary existing for a page is not parity while its
@@ -70,10 +67,6 @@ export const SURFACES_AT_PARITY: readonly IndexedSurface[] = [
   "names",
   "dossiersHub",
   "dossierThemes",
-  "dossierKongo",
-  "dossierLuba",
-  "dossierLunda",
-  "dossierSpiritualitesKongo",
 ];
 
 // @req REQ-141
@@ -82,26 +75,9 @@ export const surfaceIndexedLocales = (surface: IndexedSurface): Language[] =>
     ? [...getPublishedLocales()]
     : [CORPUS_LOCALE];
 
-/**
- * The locales a fiche is indexed in: the corpus locale, plus each locale a
- * translation record exists for. A read that fails costs the locale it was
- * asked about, never the French fiche.
- */
+/** The locales a fiche is indexed in: the corpus locale alone. */
 // @req REQ-141
-export async function ficheIndexedLocales(
-  kind: FicheKind,
-  id: string
-): Promise<Language[]> {
-  const publishedLocales = getPublishedLocales();
-  const verdicts = await Promise.all(
-    publishedLocales.map((locale) =>
-      ficheHasTranslation(kind, id, locale).catch(
-        () => locale === CORPUS_LOCALE
-      )
-    )
-  );
-  return publishedLocales.filter((_, index) => verdicts[index]);
-}
+export const ficheIndexedLocales = (): Language[] => [CORPUS_LOCALE];
 
 /**
  * The robots directive a page owes the locale it was served in: nothing

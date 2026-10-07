@@ -67,7 +67,6 @@ export const GET = corpusDetailRoute({
   isValidId: (id) => migrationDetailParamSchema.safeParse({ id }).success,
   invalidIdMessage: "Invalid migration ID format",
   invalidIdStatus: 422,
-  servesLang: false,
   cacheControl: CORPUS_CACHE_CONTROL,
   rejectedLog: "Migration detail request rejected",
   resolve: (id) => getMigrationDetailHandler(id),

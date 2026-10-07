@@ -1,7 +1,4 @@
-import {
-  getDossierTranslation,
-  readDossierCorpus,
-} from "@/lib/dossiers/corpus";
+import { readDossierCorpus } from "@/lib/dossiers/corpus";
 import { getLocalizedRoute, translatePath } from "@/lib/routing";
 import type { DossierRubric } from "@/lib/afrik/parsers/dossierTypes";
 import type { Language } from "@/types/shared";
@@ -43,8 +40,6 @@ export function getDossierMenuEntries(
 
   return dossiers
     .map((dossier) => {
-      const translated =
-        language === "en" ? getDossierTranslation(dossier.slug) : null;
       const frenchPath = `${getLocalizedRoute("fr", "dossiersHub")}/${dossier.slug}`;
 
       return {
@@ -52,7 +47,7 @@ export function getDossierMenuEntries(
         // Built from the French path rather than concatenated per locale: the
         // English slug lives in the routing table, which `translatePath` owns.
         href: translatePath("fr", language, frenchPath),
-        title: translated?.dossier.title ?? dossier.title,
+        title: dossier.title,
         rubric: dossier.rubric,
         offered: dossier.readiness === "ready",
         publishedOn: dossier.publishedOn,

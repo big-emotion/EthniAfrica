@@ -71,7 +71,6 @@ IMG = {
     "fulbe": "../../../../public/images/anecdotes/fulbe-quatre-noms.jpg",
     "fang": "../../../../public/images/anecdotes/fang-reputation.jpg",
     "bassange": "../../../../public/images/anecdotes/bassa-nge-distinction.jpg",
-    "mansa": "../../../../public/images/discoveries/generated/mansa-musa/4x5.jpg",
     "nigeria": "../../../../public/images/anecdotes/nigeria-flora-shaw.jpg",
     "lingala": "../../../../public/images/anecdotes/lingala.jpg",
 }
@@ -340,19 +339,6 @@ def quiz(c, d):
             f'<div style="display: flex; justify-content: space-between; gap: 12px; {t("caption", d)} color: {SOFT};"><span>{q["count"]}</span>{link("Toutes les questions →", d)}</div></div>')
 
 
-def gen_image(c, d):
-    g = c["image"]
-    w = 300
-    h = round(w * 5 / 4)
-    return (h2("Les images", d, "Des interprétations, jamais des portraits.")
-            + f'<div style="margin-top: 12px; width: {w}px; box-sizing: border-box; background: {SURFACE}; border: 1px solid {LINE}; {R} overflow: hidden;">'
-            f'<div style="padding: 8px 12px; {t("caption", d, 700)} color: {OCRE_FG}; background: {OCRE_TINT};">Image générée — une interprétation</div>'
-            f'<img src="{IMG[g["img"]]}" alt="{g["alt"]}" style="width: {w}px; height: {h}px; object-fit: cover; display: block;">'
-            f'<div style="padding: 12px 16px 16px 16px; display: flex; flex-direction: column; gap: 8px;">{card_title(g["caption"], d)}'
-            f'<div style="display: flex; gap: 8px; align-items: center;">{badge(g["tier"])}<span style="{t("caption", d)} color: {SOFT};">{g["source"]}</span></div>'
-            f'<div style="{t("caption", d)} color: {SOFT};">{g["licence"]}</div></div></div>')
-
-
 def prose(p, d):
     paras = "".join(f'<p style="margin: {0 if i == 0 else 12}px 0 0 0; {t("small", d)} color: {TEXT};">{x}</p>' for i, x in enumerate(p["paras"]))
     foot = f'<div style="margin-top: 12px; display: flex; gap: 8px; align-items: center;">{badge(p["tier"])}{link("Voir la source", d)}</div>' if p.get("tier") else ""
@@ -418,7 +404,6 @@ def present_feed_keys(c):
         "tiles": "tiles",
         "plates": "plates",
         "quiz": "quiz",
-        "images": "image",
         "atlas-holds": "facts",
         "problem": "prose",
         "shared-name": "prose",
@@ -435,7 +420,6 @@ def feed_blocks(c, d):
         "tiles": lambda: tiles(c["tiles"], d) if c.get("tiles") else "",
         "plates": lambda: plates(c, d) if c.get("plates") else "",
         "quiz": lambda: quiz(c, d) if c.get("quiz") else "",
-        "images": lambda: gen_image(c, d) if c.get("image") else "",
         "atlas-holds": lambda: facts(c["facts"], d) if c.get("facts") else "",
         "problem": lambda: prose(c["prose"], d) if c.get("prose") else "",
         "shared-name": lambda: prose(c["prose"], d) if c.get("prose") else "",

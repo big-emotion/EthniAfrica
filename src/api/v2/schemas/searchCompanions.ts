@@ -188,30 +188,6 @@ const proverbSchema = z.object({
   sources: z.array(sourceSchema).min(1),
   match: companionMatchSchema,
 });
-const imageSchema = z.object({
-  id: z.string().min(1),
-  href: z.string().min(1),
-  slug: z.string().min(1),
-  title: z.string().min(1),
-  description: z.string().min(1),
-  caption: z.string().min(1),
-  image: z.object({
-    src: z.string().min(1),
-    alt: z.string().min(1),
-    credit: z.string().min(1),
-    licence: z.enum(["public-domain", "cc0", "cc-by", "cc-by-sa"]),
-    licenceUrl: z.string().url().optional(),
-    filePage: z.string().url().optional(),
-  }),
-  generation: z.object({
-    tool: z.string().min(1),
-    model: z.string().min(1),
-    generatedOn: z.string().min(1),
-    sourceKind: z.literal("ai_generated"),
-  }),
-  source: sourceSchema,
-  match: companionMatchSchema,
-});
 const quizSchema = z
   .object({
     id: z.string().min(1),
@@ -250,7 +226,6 @@ export const searchCompanionsDataSchema = z.object({
   shorts: selectionSchema(shortSchema, 6),
   anecdotes: selectionSchema(anecdoteSchema, 3),
   proverbs: selectionSchema(proverbSchema, 2),
-  images: selectionSchema(imageSchema, 1),
   quiz: z.object({
     count: z.number().int().min(0),
     item: quizSchema.nullable(),

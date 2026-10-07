@@ -27,9 +27,7 @@ import { familyCopy } from "@/lib/i18n/copy/family";
 import { ficheCopy } from "@/lib/i18n/copy/fiche";
 import { ficheNameStoryCopy } from "@/lib/i18n/copy/ficheNameStory";
 import { footerCopy } from "@/lib/i18n/copy/footer";
-import { galleryCopy } from "@/lib/i18n/copy/gallery";
 import { gamesCopy } from "@/lib/i18n/copy/games";
-import { generatedImagesCopy } from "@/lib/i18n/copy/generatedImages";
 import { hubsCopy } from "@/lib/i18n/copy/hubs";
 import { languagesCopy } from "@/lib/i18n/copy/languages";
 import { languageFicheCopy } from "@/lib/i18n/copy/languageFiche";
@@ -66,8 +64,6 @@ export const COPY_MODULES = {
   anecdotes: anecdotesCopy,
   articles: articlesCopy,
   proverbs: proverbsCopy,
-  gallery: galleryCopy,
-  generatedImages: generatedImagesCopy,
   atlas: atlasCopy,
   common: commonCopy,
   chrome: chromeCopy,

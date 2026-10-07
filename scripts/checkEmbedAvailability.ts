@@ -7,7 +7,7 @@
  * inside the site's card. The one way to find out is to ask the platform from
  * outside, on a schedule, and to say what needs a hand edit.
  *
- * It reports and never blocks, like `check:translation-parity`: a round trip to
+ * It reports and never blocks: a round trip to
  * a third party is not something a pull request should be able to fail on. Only
  * a crash of the script itself exits non-zero, since a watcher that dies
  * silently is a watcher nobody notices is gone.
