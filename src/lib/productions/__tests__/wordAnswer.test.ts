@@ -124,7 +124,11 @@ describe("findWordAnswer", () => {
     ]);
     expect(answer.names.every((name) => name.selfGiven === null)).toBe(true);
     expect(answer.publications).toEqual([
-      { network: "tiktok", url: "https://www.tiktok.com/@x/photo/1" },
+      expect.objectContaining({
+        network: "tiktok",
+        url: "https://www.tiktok.com/@x/photo/1",
+        format: expect.any(String),
+      }),
     ]);
   });
 

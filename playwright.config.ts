@@ -78,11 +78,7 @@ const moderatorDesktop = {
   viewport: { width: 1280, height: 900 },
 };
 
-// This spec measures a fixture harness, not the app this config boots: the
-// responsive geometry runs against `search-feed-dev-server.mjs` and has its
-// own config (`e2e:search-feed-responsive`). Picked up here it fails on the
-// real app's aborted RSC prefetches, which says nothing about the search page.
-const NOT_RUN_HERE = [/\.setup\.ts$/, /search-feed-responsive\.spec\.ts$/];
+const NOT_RUN_HERE = [/\.setup\.ts$/];
 
 export default defineConfig({
   testDir: "./e2e",

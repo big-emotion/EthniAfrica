@@ -1,5 +1,14 @@
 # The result-page feed mockups — forty boards
 
+> **Replaced (2026-10-07).** The page these boards describe stacked a dozen
+> blocks under the answer; the answer page of
+> [`../search-answer/`](../search-answer/README.md) replaced it (lots B and G of
+> `docs/design/search-answer-plan.md`). The boards, their generator and their
+> manifest stay as history and as the data shapes of the pages with no answer;
+> they no longer govern the page. The responsive harness that measured them
+> (`e2e/search-feed-responsive.spec.ts`, its config and dev server) was retired
+> in the same change: `e2e/search-answer.spec.ts` measures the new page.
+
 The reviewed rendering of the search-result page recomposed as a feed: visual
 shelves in the first screen, the approved name answer threaded through them.
 The implementation plan is

@@ -607,6 +607,14 @@ left-aligned whole, declared once in `mobile-text.css` beside the other
 exemptions, never per component. The record's head above the globe is not in
 the parchment and keeps the centred composition.
 
+**The answer page is exempt as a block** (operator ruling, 2026-10-07). The
+validated mockup of the search answer page is left-aligned, and its six blocks
+already anchor on a left edge; the body default would centre their headings
+above ragged-left prose, the same two edges as the parchment case. So
+`.afh-answer-page` is left-aligned whole, declared once in `mobile-text.css`
+beside `.afh-parchment`, carried by the page root (`SearchFeedLayout`) and never
+re-declared per component. No other surface is recentred by this.
+
 ### 8.2 A band's height is earned by what is in it
 
 `.home-hero` sets `min-height: min(100svh, 760px)`, centres its content, and

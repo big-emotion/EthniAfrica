@@ -1182,6 +1182,8 @@ const options: swaggerJsdoc.Options = {
                 properties: {
                   network: { type: "string" },
                   url: { type: "string" },
+                  format: { type: "string" },
+                  publishedAt: { type: "string" },
                 },
                 required: ["network", "url"],
               },

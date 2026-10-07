@@ -42,10 +42,13 @@ const tidy = (text: string) => text.replace(/[  ]/g, " ").replace(/\s+/g, " "
 const firstSentence = (text: string) =>
   tidy(text).match(/^.*?[.!?](?=\s|$)/)?.[0] ?? tidy(text);
 
-function expectedBlocks(answer: SearchAnswer): string[] {
+function expectedBlocks(
+  answer: SearchAnswer,
+  originShownAbove = false
+): string[] {
   return [
     "answer-what",
-    ...(answer.origin ? ["answer-origin"] : []),
+    ...(answer.origin && !originShownAbove ? ["answer-origin"] : []),
     ...(answer.names.length > 0 || answer.path ? ["answer-names"] : []),
     ...(answer.where ? ["answer-where"] : []),
     ...(answer.next ? ["answer-next"] : []),
@@ -55,6 +58,29 @@ function expectedBlocks(answer: SearchAnswer): string[] {
 
 function answersOf(fixture: AnswerFixture): SearchAnswer[] {
   return [...fixture.answers, ...(fixture.wordAnswers ?? [])];
+}
+
+/**
+ * Two subjects that tell the very same origin (the two Congos) say it once,
+ * before their own blocks, instead of twice in a row.
+ */
+function sharesOneOrigin(answers: SearchAnswer[]): boolean {
+  const texts = (answer: SearchAnswer) =>
+    JSON.stringify(answer.origin?.accounts.map(({ text }) => text) ?? null);
+  return (
+    answers.length > 1 &&
+    answers.every(
+      (answer) => answer.origin && texts(answer) === texts(answers[0])
+    )
+  );
+}
+
+function expectedPage(answers: SearchAnswer[]): string[] {
+  const shared = sharesOneOrigin(answers);
+  return [
+    ...(shared ? ["answer-origin"] : []),
+    ...answers.flatMap((answer) => expectedBlocks(answer, shared)),
+  ];
 }
 
 async function openAnswer(page: Page, fixture: AnswerFixture): Promise<void> {
@@ -87,7 +113,7 @@ async function expectBlocksInOrder(
     .evaluateAll((blocks) =>
       blocks.map((block) => block.getAttribute("data-feed-block"))
     );
-  expect(rendered).toEqual(answersOf(fixture).flatMap(expectedBlocks));
+  expect(rendered).toEqual(expectedPage(answersOf(fixture)));
 }
 
 async function expectTabsNeverEmpty(page: Page): Promise<void> {

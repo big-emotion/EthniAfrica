@@ -3,7 +3,6 @@
 import { useState } from "react";
 
 import {
-  ANSWER_ACCENT_CLASS,
   ANSWER_BLOCK,
   ANSWER_HEADING,
   ANSWER_TEXT_BUTTON,
@@ -232,12 +231,10 @@ export function NamesBlock({
 
   return (
     <section
-      className={cn(
-        ANSWER_BLOCK,
-        ANSWER_ACCENT_CLASS[kind],
-        "flex flex-col gap-afh-lg"
-      )}
+      className={cn(ANSWER_BLOCK, "flex flex-col gap-afh-lg")}
       data-answer-block="names"
+      data-feed-block="answer-names"
+      data-feed-zone="primary"
     >
       <h2 className={ANSWER_HEADING}>{copy.names.title[kind]}</h2>
       {hasPath ? (

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 2,
+  "entries": [
+    {
+      "case": "peul",
+      "file": "Peul.dc.html",
+      "query": "peul",
+      "lens": "all",
+      "blocks": [
+        "lenses",
+        "answer-what",
+        "answer-origin",
+        "answer-names",
+        "answer-where",
+        "answer-next",
+        "answer-sources",
+        "fiche-link",
+        "owed"
+      ]
+    },
+    {
+      "case": "peul-shorts",
+      "file": "Peul-Shorts.dc.html",
+      "query": "peul",
+      "lens": "shorts",
+      "blocks": [
+        "lenses",
+        "shorts"
+      ]
+    },
+    {
+      "case": "lingala",
+      "file": "Lingala.dc.html",
+      "query": "lingala",
+      "lens": "all",
+      "blocks": [
+        "lenses",
+        "answer-what",
+        "answer-origin",
+        "answer-names",
+        "answer-where",
+        "answer-next",
+        "answer-sources",
+        "fiche-link",
+        "owed"
+      ]
+    },
+    {
+      "case": "bantou",
+      "file": "Bantou.dc.html",
+      "query": "bantou",
+      "lens": "all",
+      "blocks": [
+        "lenses",
+        "answer-what",
+        "answer-origin",
+        "answer-names",
+        "answer-where",
+        "answer-next",
+        "answer-sources",
+        "owed"
+      ]
+    },
+    {
+      "case": "congo",
+      "file": "Congo.dc.html",
+      "query": "congo",
+      "lens": "all",
+      "blocks": [
+        "lenses",
+        "answer-what",
+        "answer-origin",
+        "answer-names",
+        "answer-where",
+        "answer-next",
+        "answer-sources",
+        "fiche-link",
+        "owed"
+      ]
+    },
+    {
+      "case": "camara",
+      "file": "Camara.dc.html",
+      "query": "camara",
+      "lens": "all",
+      "blocks": [
+        "lenses",
+        "answer-what",
+        "answer-origin",
+        "answer-names",
+        "answer-where",
+        "answer-next",
+        "answer-sources",
+        "fiche-link",
+        "owed"
+      ]
+    },
+    {
+      "case": "pharaon",
+      "file": "Pharaon.dc.html",
+      "query": "pharaon",
+      "lens": "all",
+      "blocks": [
+        "lenses",
+        "answer-what",
+        "answer-origin",
+        "answer-names",
+        "answer-sources",
+        "owed"
+      ]
+    }
+  ]
+}

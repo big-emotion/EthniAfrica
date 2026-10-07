@@ -3,16 +3,12 @@ import type { Language } from "@/types/shared";
 export interface SearchFeedCopy {
   answer: {
     exact: string;
-    widened: string;
     relatedOnly: string;
     /** Said when no name answers: the nearest names follow as explicit choices. */
     typo: string;
     typoSummary: (query: string) => string;
     /** Heading of the suggestions: they are not forms of the searched name. */
     typoChoices: string;
-    shared: (count: number) => string;
-    /** A cross-type clash (a people and a language filed under the same name) — `shared` reads as people-specific. */
-    sharedGeneric: (count: number) => string;
     exactSummary: string;
     widenedSummary: string;
     /** A relation-scoped browse (a family or country chip), never a name search. */
@@ -28,11 +24,6 @@ export interface SearchFeedCopy {
     quiz: string;
     images: string;
     fiches: string;
-    peoples: string;
-    /** A cross-type clash — `peoples` names only one of the kinds listed. */
-    sharedEntries: string;
-    sharedName: string;
-    nearName: string;
   };
   relation: {
     exact: string;
@@ -46,7 +37,6 @@ export interface SearchFeedCopy {
     body: string;
     action: string;
   };
-  wideningNote: string;
   seeAll: string;
   labels: {
     anecdote: string;
@@ -66,22 +56,31 @@ export interface SearchFeedCopy {
     label: string;
     all: string;
     shorts: string;
+    stories: string;
     images: string;
     quiz: string;
     fiches: string;
   };
+  /** What a filter shows once the reader has chosen it. */
+  lens: {
+    /** The page's one heading while a filter is on, named for the searched name. */
+    title: {
+      shorts: (name: string) => string;
+      stories: (name: string) => string;
+      images: (name: string) => string;
+      quiz: (name: string) => string;
+      fiches: (name: string) => string;
+    };
+    onName: (count: number) => string;
+    around: (count: number) => string;
+    aroundNote: string;
+    back: string;
+  };
   blocks: {
-    sharedNameBody: string;
-    /** A cross-type clash — "kinship between peoples" does not apply to a people and a language. */
-    sharedNameBodyGeneric: string;
-    nearNameBody: (name: string) => string;
-    problematicBody: string;
-    relatedPeoplesTitle: string;
-    atlasHoldsSummary: string;
+    /** The button below the answer; the name tells two same-named subjects apart. */
+    ficheLink: (name: string) => string;
     ficheMeta: string;
     groupMeta: (count: number) => string;
-    peopleMeta: string;
-    peopleDescription: string;
     questionCount: string;
   };
   status: {
@@ -95,16 +94,12 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
   en: {
     answer: {
       exact: "We document this name.",
-      widened:
-        "We document this name, but the context below is related rather than identical.",
       relatedOnly:
         "We found related entries without establishing that they answer to this name.",
       typo: "Were you looking for…?",
       typoChoices: "The closest names",
       typoSummary: (query) =>
         `No name matches “${query}” exactly. These are the closest ones — choose one to search it.`,
-      shared: (count) => `${count} peoples carry this name.`,
-      sharedGeneric: (count) => `${count} entries carry this name.`,
       exactSummary: "The forms and sources below state what we can establish.",
       widenedSummary:
         "Every widened item says how it is related to the searched name.",
@@ -122,10 +117,6 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       quiz: "Test what you have read",
       images: "In pictures",
       fiches: "Discover",
-      peoples: "The peoples who share this name",
-      sharedEntries: "The entries that share this name",
-      sharedName: "Why the same name?",
-      nearName: "A similar name, elsewhere",
     },
     relation: {
       exact: "About this name",
@@ -139,7 +130,6 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       body: "We have not made a video on this name yet.",
       action: "Suggest a source",
     },
-    wideningNote: "Around this name — related context, not the same name",
     seeAll: "See all",
     labels: {
       anecdote: "Story",
@@ -159,26 +149,28 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       label: "Filter this result feed",
       all: "All",
       shorts: "Shorts",
+      stories: "Stories",
       images: "Images",
       quiz: "Games",
       fiches: "Entries",
     },
+    lens: {
+      title: {
+        shorts: (name) => `Videos about ${name}`,
+        stories: (name) => `Stories and proverbs about ${name}`,
+        images: (name) => `Images of ${name}`,
+        quiz: (name) => `Games about ${name}`,
+        fiches: (name) => `Entries about ${name}`,
+      },
+      onName: (count) => `On this name · ${count}`,
+      around: (count) => `Around this name · ${count}`,
+      aroundNote: "Related context, not the same name.",
+      back: "Back to the answer",
+    },
     blocks: {
-      sharedNameBody:
-        "A shared spelling does not establish kinship between peoples.",
-      sharedNameBodyGeneric:
-        "A name shared across different kinds of entries does not link them.",
-      nearNameBody: (name) =>
-        `${name} has a similar spelling and belongs to a different entry.`,
-      problematicBody:
-        "The corpus records a problem or disagreement about at least one form of this name.",
-      relatedPeoplesTitle: "Peoples linked to this name",
-      atlasHoldsSummary:
-        "We state the facts we hold and leave the missing origin undeclared.",
+      ficheLink: (name) => `Read the full entry · ${name}`,
       ficheMeta: "EthniAfrica entry",
       groupMeta: (count) => `${count} records`,
-      peopleMeta: "Documented people",
-      peopleDescription: "Open the entry to read its complete sourced account.",
       questionCount: "One question from this page",
     },
     status: {
@@ -189,16 +181,12 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
   fr: {
     answer: {
       exact: "Nous documentons ce nom.",
-      widened:
-        "Nous documentons ce nom, mais le contexte ci-dessous est lié plutôt qu’identique.",
       relatedOnly:
         "Nous avons trouvé des fiches liées sans établir qu’elles répondent à ce nom.",
       typo: "Cherchiez-vous… ?",
       typoChoices: "Les noms les plus proches",
       typoSummary: (query) =>
         `Aucun nom ne correspond exactement à « ${query} ». Voici les plus proches : choisissez-en un pour le chercher.`,
-      shared: (count) => `${count} peuples portent ce nom.`,
-      sharedGeneric: (count) => `${count} entrées portent ce nom.`,
       exactSummary:
         "Les formes et les sources ci-dessous disent ce que nous pouvons établir.",
       widenedSummary:
@@ -217,10 +205,6 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       quiz: "Vérifier ce que vous avez lu",
       images: "En images",
       fiches: "Découvrir",
-      peoples: "Les peuples qui partagent ce nom",
-      sharedEntries: "Les entrées qui partagent ce nom",
-      sharedName: "Pourquoi le même nom ?",
-      nearName: "Un nom proche, ailleurs",
     },
     relation: {
       exact: "Sur ce nom",
@@ -234,7 +218,6 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       body: "Nous n’avons pas encore fait de vidéo sur ce nom.",
       action: "Proposer une source",
     },
-    wideningNote: "Autour de ce nom — un contexte lié, pas le même nom",
     seeAll: "Tout voir",
     labels: {
       anecdote: "Anecdote",
@@ -255,27 +238,28 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       label: "Filtrer ce fil de résultats",
       all: "Tout",
       shorts: "Shorts",
+      stories: "Récits",
       images: "Images",
       quiz: "Jeux",
       fiches: "Fiches",
     },
+    lens: {
+      title: {
+        shorts: (name) => `Vidéos sur ${name}`,
+        stories: (name) => `Récits et proverbes sur ${name}`,
+        images: (name) => `Images de ${name}`,
+        quiz: (name) => `Jeux sur ${name}`,
+        fiches: (name) => `Fiches sur ${name}`,
+      },
+      onName: (count) => `Sur ce nom · ${count}`,
+      around: (count) => `Autour de ce nom · ${count}`,
+      aroundNote: "Un contexte lié, pas le même nom.",
+      back: "Revenir à la réponse",
+    },
     blocks: {
-      sharedNameBody:
-        "Une orthographe partagée ne suffit pas à établir une parenté entre des peuples.",
-      sharedNameBodyGeneric:
-        "Un même nom porté par des entrées de nature différente ne les relie pas entre elles.",
-      nearNameBody: (name) =>
-        `${name} a une graphie proche et correspond à une autre fiche.`,
-      problematicBody:
-        "Le corpus signale un problème ou un désaccord autour d’au moins une forme de ce nom.",
-      relatedPeoplesTitle: "Les peuples liés à ce nom",
-      atlasHoldsSummary:
-        "Nous énonçons les faits que nous tenons et laissons l’origine manquante déclarée.",
+      ficheLink: (name) => `Voir la fiche complète · ${name}`,
       ficheMeta: "Fiche EthniAfrica",
       groupMeta: (count) => `${count} fiches`,
-      peopleMeta: "Peuple documenté",
-      peopleDescription:
-        "Ouvrir la fiche pour lire son récit complet et sourcé.",
       questionCount: "Une question tirée de cette page",
     },
     status: {

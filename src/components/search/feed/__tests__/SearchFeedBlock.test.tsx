@@ -8,13 +8,13 @@ describe("SearchFeedBlock", () => {
   // @req REQ-180
   it("exposes the manifest identity and zone on a semantic section", () => {
     const { container } = render(
-      <SearchFeedBlock id="origins" zone="primary" className="pt-afh-5xl">
+      <SearchFeedBlock id="answer-origin" zone="primary" className="pt-afh-5xl">
         <p>Origin</p>
       </SearchFeedBlock>
     );
 
     const block = container.querySelector("section");
-    expect(block).toHaveAttribute("data-feed-block", "origins");
+    expect(block).toHaveAttribute("data-feed-block", "answer-origin");
     expect(block).toHaveAttribute("data-feed-zone", "primary");
     expect(block).toHaveClass("pt-afh-5xl");
   });

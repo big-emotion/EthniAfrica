@@ -10,11 +10,7 @@ import {
   formatProductionPosterAlt,
 } from "@/lib/editorial/productionNameQuestion";
 import {
-  FEED_BLOCKS,
-  FEED_ZONES,
   OWED_PARTS,
-  type FeedBlockId,
-  type FeedZone,
   type OwedPartId,
   type SearchResultState,
 } from "@/lib/search/resultGrammar";
@@ -29,6 +25,41 @@ import type {
 } from "@/types/afrik-frontend";
 
 import boardAuthoring from "./feedBoardCases.json";
+
+/**
+ * The vocabulary of the retired `search-feed` boards, frozen. The live grammar
+ * (`FEED_BLOCKS`) moved on when the answer became the page; these boards
+ * still describe the data shapes of the pages that have no answer (unknown
+ * name, misspelling, relation browse), so they keep the ids they were drawn
+ * with instead of following the grammar.
+ */
+const RETIRED_BOARD_BLOCKS = [
+  "verdict",
+  "appellations",
+  "lenses",
+  "shorts",
+  "origins",
+  "peoples",
+  "shared-name",
+  "tiles",
+  "atlas-holds",
+  "plates",
+  "quiz",
+  "images",
+  "problem",
+  "near-name",
+  "fiches",
+  "owed",
+  "further",
+] as const;
+const RETIRED_BOARD_ZONES = [
+  "first",
+  "primary",
+  "secondary",
+  "closing",
+] as const;
+type FeedBlockId = (typeof RETIRED_BOARD_BLOCKS)[number];
+type FeedZone = (typeof RETIRED_BOARD_ZONES)[number];
 
 // @req REQ-180
 export const FEED_CASE_IDS = [
@@ -222,7 +253,7 @@ const feedBoardAuthoringSchema = z
           .strict()
           .optional(),
         further: z.array(z.string().min(1)).optional(),
-        order: z.array(z.enum(FEED_BLOCKS)),
+        order: z.array(z.enum(RETIRED_BOARD_BLOCKS)),
       })
       .passthrough()
   )
@@ -250,8 +281,8 @@ const assetRouteSchema = z
   .strict();
 const blockSchema = z
   .object({
-    id: z.enum(FEED_BLOCKS),
-    zone: z.enum(FEED_ZONES),
+    id: z.enum(RETIRED_BOARD_BLOCKS),
+    zone: z.enum(RETIRED_BOARD_ZONES),
   })
   .strict();
 const searchResultSchema = z

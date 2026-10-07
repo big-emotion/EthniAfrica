@@ -107,6 +107,68 @@ describe("WhereBars", () => {
     expect(screen.getByText("COD")).toBeInTheDocument();
   });
 
+  // The sentence about the share not yet split names the peoples the fiche
+  // lists but gives no figure for; it takes them from the page and prints
+  // nothing it was not given.
+  // @req REQ-178
+  it("names the peoples without a share next to the unsplit sentence", () => {
+    renderWhere("congo", { unsplitPeopleNames: ["Teke", "Mbochi"] });
+    expect(
+      screen.getByText(
+        "60 % de la population n'est pas encore répartie par peuple (Teke, Mbochi…)."
+      )
+    ).toBeInTheDocument();
+  });
+
+  // @req REQ-178
+  it("keeps the plain unsplit sentence when no people is left to name", () => {
+    renderWhere("congo");
+    expect(
+      screen.getByText(
+        "60 % de la population n'est pas encore répartie par peuple."
+      )
+    ).toBeInTheDocument();
+  });
+
+  // A long name used to squeeze the label column and wrap on three lines.
+  // @req REQ-178
+  it("puts a long country name on its own line above its bar", () => {
+    const { container } = renderWhere("lingala", {
+      labels: {
+        COD: "République démocratique du Congo",
+        COG: "Congo",
+        CAF: "République centrafricaine",
+        AGO: "Angola",
+      },
+    });
+
+    const stacked = [...container.querySelectorAll("[data-label-stacked]")];
+    expect(stacked.map((label) => label.textContent)).toEqual([
+      "République démocratique du Congo",
+      "République centrafricaine",
+    ]);
+    for (const label of stacked) expect(label).toHaveClass("col-span-3");
+  });
+
+  // @req REQ-178
+  it("keeps a short name in the label column", () => {
+    const { container } = renderWhere("lingala");
+
+    expect(container.querySelectorAll("[data-label-stacked]")).toHaveLength(0);
+  });
+
+  // The entity's accent colours the bars; the sentences and counts around
+  // them stay in the page's ocre.
+  // @req REQ-178
+  it("scopes the entity accent to the bars", () => {
+    const { container } = renderWhere("lingala");
+
+    expect(container.querySelector("section")).not.toHaveClass(
+      "afh-accent-perv"
+    );
+    expect(container.querySelector("ul")).toHaveClass("afh-accent-perv");
+  });
+
   // @req REQ-178
   it("renders nothing without rows", () => {
     const { container } = render(

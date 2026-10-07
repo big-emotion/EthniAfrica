@@ -1,5 +1,6 @@
 import type { Page, Route } from "@playwright/test";
 
+import type { SearchCompanionsData } from "../../src/api/v2/schemas/searchCompanions";
 import {
   FEED_CASES,
   type FeedCaseFixture,
@@ -17,6 +18,7 @@ import {
   type AnswerFixture,
 } from "../../src/lib/search/__fixtures__/answerFixtures";
 import type { SearchAnswer } from "../../src/lib/search/answer";
+import { ANSWER_LABELS } from "../../src/lib/search/__fixtures__/answerLabels";
 import { routeCommittedSearchFeedAssets } from "./search-feed-browser";
 
 const API_SEARCH_PATH = "/api/v2/search";
@@ -227,7 +229,7 @@ export function searchFeedUrl(fixture: FeedCaseFixture): string {
 }
 
 /** Every lens empty: the answer fixtures exercise the answer, not the shelves. */
-const EMPTY_COMPANIONS = {
+const EMPTY_COMPANIONS: SearchCompanionsData = {
   subjects: [],
   shorts: { count: 0, items: [] },
   anecdotes: { count: 0, items: [] },
@@ -236,10 +238,46 @@ const EMPTY_COMPANIONS = {
   quiz: { count: 0, item: null },
 };
 
-function answerRow(answer: SearchAnswer, index: number) {
+/**
+ * The naming the API sends with a row. The page decides which entities answer
+ * to a typed name from the forms a row records, so a row that only carried
+ * `answer` would never be a subject: « peul » reaches « Fulɓe » through its
+ * forms. The typed query is among them because the case is defined by it.
+ */
+function namingFor(answer: SearchAnswer, query: string) {
+  const forms = [query, ...answer.names.map(({ form }) => form)].map(
+    (form) => ({ form })
+  );
+  return {
+    forms,
+    eras: [],
+    presentation: { forms: [], eras: [], disagreements: [], evidence: [] },
+  };
+}
+
+/**
+ * The pieces behind a case. The published word has its own production, found
+ * by the very word typed (relation `word`); every other case has none, so its
+ * page offers only « Tout » and the fiches.
+ */
+function companionsForAnswer(
+  fixture: AnswerFixture | undefined
+): SearchCompanionsData {
+  if (!fixture?.wordAnswers) return EMPTY_COMPANIONS;
+  const [template] = FEED_CASES[0].production.companions.shorts.items;
+  const piece = {
+    ...template,
+    name: fixture.wordAnswers[0].title,
+    match: { relation: "word" as const, word: fixture.query },
+  };
+  return { ...EMPTY_COMPANIONS, shorts: { count: 1, items: [piece] } };
+}
+
+function answerRow(answer: SearchAnswer, index: number, query: string) {
   const common = {
     id: `fixture-answer-${answer.kind}-${index}`,
     answer,
+    naming: namingFor(answer, query),
     relevance: 1,
     exactMatch: true,
     snippet: null,
@@ -248,7 +286,25 @@ function answerRow(answer: SearchAnswer, index: number) {
     case "country":
       return {
         bucket: "countries",
-        row: { ...common, nameFr: answer.title, nameEn: answer.title },
+        row: {
+          ...common,
+          nameFr: answer.title,
+          nameEn: answer.title,
+          // The fiche's own list of peoples, by name: the page names a
+          // country's shares from it and never prints an identifier.
+          content: {
+            majorPeoples: (answer.where?.rows ?? []).flatMap((row) =>
+              "peopleId" in row && ANSWER_LABELS[row.peopleId]
+                ? [
+                    {
+                      peopleId: row.peopleId,
+                      name: ANSWER_LABELS[row.peopleId],
+                    },
+                  ]
+                : []
+            ),
+          },
+        },
       };
     case "language":
       return {
@@ -292,7 +348,7 @@ export function searchEnvelopeForAnswerFixture(fixture: AnswerFixture) {
     languages: [],
   };
   fixture.answers.forEach((answer, index) => {
-    const { bucket, row } = answerRow(answer, index);
+    const { bucket, row } = answerRow(answer, index, fixture.query);
     grouped[bucket].push(row);
   });
   return {
@@ -317,10 +373,14 @@ export function searchEnvelopeForAnswerFixture(fixture: AnswerFixture) {
 
 // @req REQ-178
 export async function routeSearchAnswerFixtures(page: Page): Promise<void> {
+  let activeFixture: AnswerFixture | undefined;
   await page.route("**/api/v2/search**", async (route) => {
     const url = new URL(route.request().url());
     if (url.pathname === `${API_SEARCH_PATH}/companions`) {
-      await route.fulfill({ status: 200, json: { data: EMPTY_COMPANIONS } });
+      await route.fulfill({
+        status: 200,
+        json: { data: companionsForAnswer(activeFixture) },
+      });
       return;
     }
     if (url.pathname !== API_SEARCH_PATH) {
@@ -335,6 +395,7 @@ export async function routeSearchAnswerFixtures(page: Page): Promise<void> {
       await route.fulfill({ status: 404, json: { error: "Unknown fixture" } });
       return;
     }
+    activeFixture = fixture;
     await route.fulfill({
       status: 200,
       json: searchEnvelopeForAnswerFixture(fixture),

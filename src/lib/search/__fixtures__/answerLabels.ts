@@ -28,4 +28,9 @@ export const ANSWER_LABELS: Record<string, string> = {
   PPL_TETELA: "Tetela",
   PPL_NANDE: "Nande",
   PPL_KONGO_BRAZZA: "Kongo",
+  PPL_AKAN: "Akan",
+  PPL_SENUFO: "Sénoufo",
+  PPL_MALINKE: "Malinké",
+  PPL_KROU_MACRO: "Krou",
+  PPL_MANDE_DU_SUD: "Mandé du Sud",
 };

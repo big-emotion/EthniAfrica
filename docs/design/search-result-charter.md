@@ -6,15 +6,15 @@ Settled 2026-09-18, on the reorientation recorded in
 Updated 2026-09-19 by REQ-180 and DEC-058 after the result was recomposed as a
 feed.
 
-**The reviewed rendering is local and executable.** The forty approved boards
-live in `docs/design/mockups/search-feed/`: ten cases, mobile and desktop, day
-and night. The external canvas is provenance for the review, not an
-implementation dependency.
-
-**The answer-first recomposition (2026-10-06) is planned in
-`docs/design/search-answer-plan.md`**, with its reference rendering frozen in
-`docs/design/mockups/search-answer/` (version 11). Until its integration lot
-lands, the forty boards and §3 ter below remain the contract that tests hold.
+**The answer-first recomposition (2026-10-06, integrated by lots B and G) is
+planned in `docs/design/search-answer-plan.md`.** Its reviewed rendering is the
+frozen mockup in `docs/design/mockups/search-answer/` (version 11), made
+executable by a generated manifest (`generate_manifest.py`). The forty boards of
+`docs/design/mockups/search-feed/` described the page that stacked a dozen
+blocks; they are **replaced** and kept only as history. Sections 2 to 3 bis and
+4 to 5 below are written for that page: where they speak of the forty boards,
+of `origins`, `peoples`, `tiles`, `atlas-holds`, `problem` or `near-name`, §3
+ter now rules.
 
 Three authorities govern different concerns and never substitute for one
 another:
@@ -207,59 +207,71 @@ to the 900 px the rich boards use.
 
 ## 3 ter. The executable feed grammar
 
-The top-level block vocabulary, in canonical mobile order, is:
+The top-level block vocabulary, in canonical order, is
+(`src/lib/search/resultGrammar.ts`):
 
 ```text
-verdict · appellations · lenses · shorts · origins · peoples · shared-name ·
-tiles · atlas-holds · plates · quiz · images · problem · near-name · fiches ·
+lenses · verdict · appellations ·
+answer-what · answer-origin · answer-names · answer-where · answer-next ·
+answer-sources · fiche-link · shorts · plates · quiz · images · fiches ·
 owed · further
 ```
 
-The filters (`lenses`) follow the answer and the forms (operator direction,
-2026-09-29). A filter refines the exploration stream below it; placed above the
-answer it made the first thing a reader met a control instead of the reply, and
-it suggested that a filter could change the answer. The `verdict` block carries
-the reviewed answer when one exists (`nameAnswers` in the search response):
-ordinary prose on the page ground, one entry per subject answering the name, a
-link to that subject's fiche and its source access after each entry, never
-clamped — the last sentence of an answer often carries its uncertainty. A shared
-name keeps the searched term as its single `h1`, never the first-ranked
-subject's name.
+**« Tout » is the answer.** When a subject carries an answer, the page is the
+filters, then for each subject the six `answer-*` blocks in that order, then the
+`fiche-link` button, then `owed` (conviction and invitation to correct). A block
+with no data is absent; none is drawn to say it is empty. Where the fiche
+declares no sourced speakers (a language, almost always a family), there is no
+`answer-where`. A reviewed answer (`nameAnswers`) takes the place of the
+automatic origin and carries its own sources; the sources of the page are one
+line (`answer-sources`), never a badge after each sentence.
 
-`owed` is one top-level block because it is one visual and rhetorical closing.
-Its independently testable parts are, in order:
+**Several subjects, one name.** The searched term stays the single `h1`; each
+subject then answers with its own six blocks (an `h2` for its own name) and its
+own fiche button. No subject is promoted over another.
+
+**What left « Tout ».** `shorts`, `plates`, `quiz`, `images` and `fiches` are
+what the filters show. `origins`, `peoples`, `shared-name`, `tiles`,
+`atlas-holds`, `problem` and `near-name` no longer exist: their job is done by
+the answer blocks and by several answers side by side. `verdict`,
+`appellations` and `further` remain only for the pages with no answer to give.
+
+**The filters are dynamic.** « Tout » is always there; Shorts, Récits, Images,
+Jeux and Fiches appear only when they have content, each with its count, never
+with a zero. A filter replaces the answer by its shelf under one heading about
+the name, with a way back. The shorts shelf separates « Sur ce nom » (a piece
+made on the searched name or word: relation `exact` or `word`) from « Autour de
+ce nom » (context).
+
+`owed` is one top-level block because it is one rhetorical closing; its parts
+are, in order:
 
 ```text
 silences · conviction · invitation
 ```
 
-The page and the boards expose these identities through `data-feed-block` and
-`data-feed-part`. Bassa uses `shared-name`; `problem` is reserved for a recorded
-naming problem or disagreement.
+The page and the screens expose these identities through `data-feed-block` and
+`data-feed-part`. The page is one reading column (880 px at most from 1200 px)
+and is left-aligned as a block, like an atlas record's parchment (brand charter
+§8.1).
 
 The exceptional states are explicit:
 
-- an exact or widened subject closes with `owed`, including `silences` only
-  when a concrete silence can be derived;
-- a typo with useful leads closes with `further` only;
-- a genuinely unknown query closes with `owed` containing `conviction` and
-  `invitation`, then `further`;
-- `lenses` appears after an answered query when at least one filterable content
-  group exists;
-- `shorts` appears for every answered query, and an empty source slot is
-  content rather than an empty block.
+- a published word with no fiche is answered by its record: the same blocks
+  without `fiche-link`, under the filters, never the confession;
+- a typo with useful leads opens on the verdict and the choices and closes with
+  `further` only;
+- a genuinely unknown query opens on the verdict and closes with `owed`
+  (`conviction` and `invitation`), then `further`;
+- related results with no entity answering the name (and a family or country
+  browse) open on the verdict and list the fiches; they close without `owed`.
 
-Below 1200 px, intermediate blocks occupy the `primary` zone in canonical
-order. At 1200 px and above, rich boards may split them between `primary` and
-`secondary`; order is asserted within each zone, never by flattening the two
-columns. Desktop-thin boards remain one centred `primary` column. `verdict` and
-the opening blocks occupy `first`; `owed` and `further` occupy `closing` after
-all intermediate zones.
-
-The checked-in generated manifest records the case, variant, query, result
-state, ordered block identities and zones, `owed` parts, board dimensions and
-the first-poster rectangle. The case source and generator author it; the JSON
-is generated output and is never edited by hand.
+The checked-in manifest (`docs/design/mockups/search-answer/manifest.json`)
+records, for each of the seven validated screens, the ordered block identities;
+it is generated from the screens' `data-feed-block` attributes and is never
+edited by hand. `resultGrammarCharter.test.ts` holds it to the grammar, and
+`e2e/search-answer.spec.ts` holds the real page to the screens at 320, 430, 768
+and 1280 px.
 
 ### A word we hold a piece on, 2026-09-25
 
