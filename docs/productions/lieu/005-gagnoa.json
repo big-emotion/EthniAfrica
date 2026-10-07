@@ -1,0 +1,20 @@
+{
+  "campaign": "gagnoa-nom",
+  "typologie": "lieu",
+  "episode": 5,
+  "question": {
+    "fr": "D'où vient le nom Gagnoa ?"
+  },
+  "myth": {
+    "fr": "Gagnoa tiendrait-il son nom du fromager ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "CIV",
+      "label": { "fr": "Gagnoa (Côte d'Ivoire)" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/CIV",
+  "publications": []
+}
