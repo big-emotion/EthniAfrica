@@ -55,4 +55,18 @@ describe("WhatBlock", () => {
     render(<WhatBlock answer={answerOf("lingala")} language="en" />);
     expect(screen.getByText("A language")).toBeInTheDocument();
   });
+
+  // @req REQ-178
+  it("can rank a title h1 without drawing it at hero size", () => {
+    render(
+      <WhatBlock
+        answer={answerOf("lingala")}
+        headingLevel="h1"
+        titleScale="section"
+      />
+    );
+    const title = screen.getByRole("heading", { level: 1 });
+    expect(title).not.toHaveClass("text-afh-hero");
+    expect(title).toHaveClass("text-afh-h1");
+  });
 });

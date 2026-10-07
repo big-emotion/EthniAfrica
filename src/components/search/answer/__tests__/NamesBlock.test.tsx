@@ -93,4 +93,41 @@ describe("NamesBlock", () => {
     );
     expect(container).toBeEmptyDOMElement();
   });
+  // @req REQ-178
+  it("groups the dated names of several countries under one heading", () => {
+    const republic = answerOf("congo", 0);
+    const democratic = answerOf("congo", 1);
+    const { container } = render(
+      <NamesBlock
+        answer={republic}
+        groups={[
+          { label: "Congo", names: republic.names },
+          { label: "RD Congo", names: democratic.names },
+        ]}
+      />
+    );
+    expect(container.querySelectorAll("h2")).toHaveLength(1);
+    expect(
+      Array.from(container.querySelectorAll("h3")).map((h) => h.textContent)
+    ).toEqual(["Congo", "RD Congo"]);
+    expect(screen.getByText("Zaïre")).toBeInTheDocument();
+    expect(screen.getByText("Congo français")).toBeInTheDocument();
+  });
+
+  // @req REQ-178
+  it("draws a sentence filed as a name as plain text, not as a box", () => {
+    const long =
+      "Aucun nom propre : « bantou » est un mot forgé par un linguiste à partir de aba-ntu";
+    render(
+      <NamesBlock
+        answer={{
+          ...answerOf("peul"),
+          kind: "languageFamily",
+          names: [{ form: long, selfGiven: null }],
+        }}
+      />
+    );
+    const item = screen.getByText(long).closest("li");
+    expect(item?.className).not.toMatch(/border|rounded|bg-/);
+  });
 });

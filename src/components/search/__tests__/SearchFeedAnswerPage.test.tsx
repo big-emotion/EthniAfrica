@@ -5,6 +5,7 @@ import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { SearchFeed } from "@/components/search/SearchFeed";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
+import { ANSWER_LABELS } from "@/lib/search/__fixtures__/answerLabels";
 import { ANSWER_FIXTURES } from "@/lib/search/__fixtures__/answerFixtures";
 import { FEED_CASES } from "@/lib/search/__fixtures__/feedCases";
 import type { SearchAnswer } from "@/lib/search/answer";
@@ -201,9 +202,15 @@ describe("several subjects answering one name", () => {
   const congo = ANSWER_FIXTURES.congo;
 
   // @req REQ-178
-  it("keeps one h1, the name searched, and gives each subject its own six blocks and its own fiche", () => {
+  it("tells two countries bearing the name as one answer, with a fiche for each", () => {
     const subjects = congo.answers.map((answer, index) =>
-      subjectOf(answer, { id: index === 0 ? "COG" : "COD" })
+      subjectOf(answer, {
+        id: index === 0 ? "COG" : "COD",
+        associatedPeoples: Object.entries(ANSWER_LABELS).map(([id, name]) => ({
+          id,
+          name,
+        })),
+      })
     );
     const { container } = renderAnswer("Congo", subjects);
 
@@ -212,14 +219,138 @@ describe("several subjects answering one name", () => {
       "Congo"
     );
     expect(
-      blockIds(container).filter((id) => id === "answer-what")
-    ).toHaveLength(2);
+      blockIds(container).filter((id) => id.startsWith("answer-"))
+    ).toEqual([
+      "answer-what",
+      "answer-origin",
+      "answer-names",
+      "answer-where",
+      "answer-next",
+      "answer-sources",
+    ]);
     expect(
       blockIds(container).filter((id) => id === "fiche-link")
     ).toHaveLength(1);
     expect(
       screen.getAllByRole("link", { name: /Voir la fiche complète/ })
     ).toHaveLength(2);
+  });
+});
+
+// « congo » is two countries and a family name. Each subject gets one title,
+// the eyebrow above it, and the second is parted from the first by a rule: the
+// page must not read as two pages stacked, nor repeat the name three times.
+// @req REQ-178
+describe("a name shared by countries and a family name", () => {
+  const congo = ANSWER_FIXTURES.congo.answers.map((answer, index) =>
+    subjectOf(answer, { id: index === 0 ? "COG" : "COD", name: "Congo" })
+  );
+  const familyName = subjectOf(
+    { ...ANSWER_FIXTURES.camara.answers[0], title: "Congo" },
+    { id: "PAT_CONGO", name: "Congo" }
+  );
+
+  // @req REQ-178
+  it("draws one title per subject block, all at the same size, one of them the h1", () => {
+    const { container } = renderAnswer("Congo", [...congo, familyName]);
+
+    expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
+    for (const block of container.querySelectorAll(
+      '[data-feed-block="answer-what"]'
+    )) {
+      expect(block.querySelectorAll("h1, h2")).toHaveLength(1);
+      expect(block.querySelector("h1, h2")).not.toHaveClass("text-afh-hero");
+    }
+    expect(
+      container.querySelectorAll('[data-feed-block="answer-what"]')
+    ).toHaveLength(2);
+    // The searched name is not also set above the blocks as a third title.
+    expect(
+      screen
+        .getAllByRole("heading", { name: "Congo" })
+        .filter((heading) => /^H[12]$/.test(heading.tagName))
+    ).toHaveLength(2);
+  });
+
+  // @req REQ-178
+  it("parts the second subject from the first with a rule", () => {
+    const { container } = renderAnswer("Congo", [...congo, familyName]);
+
+    const dividers = container.querySelectorAll("[data-subject-divider]");
+    expect(dividers).toHaveLength(1);
+    expect(
+      dividers[0].querySelector('[data-feed-block="answer-what"]')
+    ).not.toBeNull();
+  });
+
+  // @req REQ-178
+  it("keeps a page-level title when the subjects are not all named alike", () => {
+    renderAnswer("Bassa", [
+      subjectOf(peul, { id: "PPL_A", name: "Bassa" }),
+      subjectOf(lingala, { id: "lin", name: "Bassa" }),
+    ]);
+    expect(screen.getByRole("heading", { level: 1 })).toHaveClass(
+      "text-afh-hero"
+    );
+  });
+
+  // @req REQ-178
+  it("offers no solid fiche button when several fiches answer", () => {
+    const { container } = renderAnswer("Congo", [...congo, familyName]);
+    const solid = Array.from(
+      container.querySelectorAll('[data-feed-block="fiche-link"] a')
+    ).filter((link) => link.className.includes("bg-[color:var(--accent)]"));
+    expect(solid).toHaveLength(0);
+  });
+});
+
+// « bantou » is a family of languages and a people filed under it. The family
+// answers; the peoples are a way in, counted from the data.
+// @req REQ-178
+describe("a family and the peoples filed under its name", () => {
+  const bantou = ANSWER_FIXTURES.bantou.answers[0];
+  const family = subjectOf(bantou, { id: "FLG_BANTU", name: "Bantou" });
+  const people = subjectOf(peul, {
+    id: "PPL_BANTU",
+    name: "Bantou",
+    languageFamilyId: "FLG_BANTU",
+  } as Partial<SearchResult>);
+
+  // @req REQ-178
+  it("asks what the reader is after, then answers for the family only", () => {
+    const { container } = renderAnswer("bantou", [family, people]);
+
+    expect(
+      screen.getByRole("heading", { level: 2, name: "Que cherchez-vous ?" })
+    ).toBeVisible();
+    expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
+    expect(
+      blockIds(container).filter((id) => id === "answer-what")
+    ).toHaveLength(1);
+    expect(screen.queryByText("Un peuple")).toBeNull();
+    expect(
+      screen.getAllByRole("link", { name: /Voir la fiche complète/ })
+    ).toHaveLength(1);
+  });
+
+  // @req REQ-178
+  it("counts the peoples from the data and leads to them", () => {
+    renderAnswer("bantou", [family, people]);
+
+    const link = screen.getByRole("link", {
+      name: `Voir les ${bantou.what.facts.peopleCount} peuples`,
+    });
+    expect(link).toHaveAttribute(
+      "href",
+      expect.stringContaining("family=FLG_BANTU")
+    );
+  });
+
+  // @req REQ-178
+  it("asks nothing when only the family answers", () => {
+    renderAnswer("bantou", [family]);
+
+    expect(screen.queryByText("Que cherchez-vous ?")).toBeNull();
   });
 });
 
@@ -445,28 +576,22 @@ describe("the closing of the answer page", () => {
     );
     const { container } = renderAnswer("Congo", subjects);
 
-    const ids = blockIds(container);
-    expect(ids.filter((id) => id === "answer-origin")).toHaveLength(1);
-    expect(ids.indexOf("answer-origin")).toBeLessThan(
-      ids.indexOf("answer-what")
-    );
+    expect(
+      blockIds(container).filter((id) => id === "answer-origin")
+    ).toHaveLength(1);
   });
 
-  // The second « Congo » is a section of the page, not its title.
+  // The second subject of a shared name is a section of the page, not its title.
   // @req REQ-178
   it("ranks the second subject's name below the page title", () => {
-    const subjects = ANSWER_FIXTURES.congo.answers.map((answer, index) =>
-      subjectOf(answer, { id: index === 0 ? "COG" : "COD" })
-    );
-    renderAnswer("Congo", subjects);
+    const people = subjectOf(peul, { id: "PPL_YORUBA", name: "Yoruba" });
+    const language = subjectOf(lingala, { id: "yor", name: "Yoruba" });
+    renderAnswer("Yoruba", [people, language]);
 
     const [title] = screen.getAllByRole("heading", { level: 1 });
-    const [section] = screen.getAllByRole("heading", {
-      level: 2,
-      name: "Congo",
-    });
+    const sections = screen.getAllByRole("heading", { level: 2 });
     expect(title).toHaveClass("text-afh-hero");
-    expect(section).not.toHaveClass("text-afh-hero");
+    expect(sections[0]).not.toHaveClass("text-afh-hero");
   });
 
   // @req REQ-178

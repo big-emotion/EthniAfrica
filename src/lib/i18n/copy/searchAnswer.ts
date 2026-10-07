@@ -31,6 +31,15 @@ export interface SearchAnswerCopy {
     language: (speakers: string, countryCount: number) => string;
     languageFamily: (speakers: string, countryCount: number) => string;
     patronyme: (countryCount: number) => string;
+    /** The sentence above one story told for several States bearing the name. */
+    /** `names` is the already-joined list (« A et B »), formed by the caller. */
+    sharedCountryName: (count: number, names: string) => string;
+  };
+  /** « What are you looking for? »: the ways in when one name is two things. */
+  choices: {
+    title: string;
+    family: string;
+    peoples: { eyebrow: string; label: string };
   };
   origin: {
     title: Record<"name" | "word", string>;
@@ -62,6 +71,7 @@ export interface SearchAnswerCopy {
     unsplit: (percent: string, peopleNames?: string) => string;
     presenceHeadline: (countryCount: number) => string;
     presenceMissingFigures: string;
+    seePeoples: (count: number) => string;
   };
   next: {
     eyebrow: string;
@@ -129,6 +139,13 @@ export const searchAnswerCopy: Record<Language, SearchAnswerCopy> = {
         `A family of languages spoken by about <strong>${speakers}</strong> persons, in <strong>${countryCount}</strong> countries.`,
       patronyme: (countryCount) =>
         `A family name carried in <strong>${countryCount}</strong> countries.`,
+      sharedCountryName: (count, names) =>
+        `${capitalise(EN_NUMBER_WORDS[count] || String(count))} states bear this name: ${names}.`,
+    },
+    choices: {
+      title: "What are you looking for?",
+      family: "Language family",
+      peoples: { eyebrow: "Peoples", label: "The peoples who speak them" },
     },
     origin: {
       title: {
@@ -184,6 +201,8 @@ export const searchAnswerCopy: Record<Language, SearchAnswerCopy> = {
         `Carried in <strong>${countryCount}</strong> ${countryCount === 1 ? "country" : "countries"}:`,
       presenceMissingFigures:
         "We do not yet know how many people carry this name in each country: the chart will appear once we have the figures.",
+      seePeoples: (count) =>
+        `See the ${count} ${count === 1 ? "people" : "peoples"}`,
     },
     next: {
       eyebrow: "And now",
@@ -269,6 +288,13 @@ export const searchAnswerCopy: Record<Language, SearchAnswerCopy> = {
         `Une famille de langues parlée par environ <strong>${speakers}</strong> de personnes, dans <strong>${countryCount}</strong> pays.`,
       patronyme: (countryCount) =>
         `Un nom de famille porté dans <strong>${countryCount}</strong> pays.`,
+      sharedCountryName: (count, names) =>
+        `${capitalise(FR_NUMBER_WORDS[count] || String(count))} États portent ce nom : ${names}.`,
+    },
+    choices: {
+      title: "Que cherchez-vous ?",
+      family: "Famille de langues",
+      peoples: { eyebrow: "Peuples", label: "Les peuples qui les parlent" },
     },
     origin: {
       title: { name: "D'où vient le nom", word: "D'où vient le mot" },
@@ -321,6 +347,8 @@ export const searchAnswerCopy: Record<Language, SearchAnswerCopy> = {
         `Porté dans <strong>${countryCount}</strong> pays :`,
       presenceMissingFigures:
         "Nous ne savons pas encore combien de personnes portent ce nom dans chaque pays : le graphe apparaîtra quand nous aurons les chiffres.",
+      seePeoples: (count) =>
+        `Voir ${count === 1 ? "le peuple" : `les ${count} peuples`}`,
     },
     next: {
       eyebrow: "Et maintenant",

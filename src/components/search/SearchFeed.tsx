@@ -25,6 +25,7 @@ import { QuizBlock } from "@/components/search/feed/QuizBlock";
 import { SearchFeedLayout } from "@/components/search/feed/SearchFeedLayout";
 import { ShortsBlock } from "@/components/search/feed/ShortsBlock";
 import { OriginBlock } from "@/components/search/answer/OriginBlock";
+import { CountriesAnswer } from "@/components/search/feed/CountriesAnswer";
 import { SubjectAnswer } from "@/components/search/feed/SubjectAnswer";
 import { VerdictBlock } from "@/components/search/feed/VerdictBlock";
 import { WordAnswerPage } from "@/components/search/feed/WordAnswerPage";
@@ -37,6 +38,8 @@ import { ANSWER_BLOCKS, type FeedBlockId } from "@/lib/search/resultGrammar";
 import type { AnswerKind, WordAnswer } from "@/lib/search/answer";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
 import type { NamingPresentationForm } from "@/lib/search/naming";
+import { planAnswerSubjects } from "@/lib/search/answerSubjectPlan";
+import { buildRelationSearchHref } from "@/lib/search/relationSearch";
 import { resolveNameOpening } from "@/lib/search/resolveNameOpening";
 import { getLocalizedRoute } from "@/lib/routing";
 import { groupPeopleResults } from "@/lib/search/groupPeopleResults";
@@ -450,52 +453,160 @@ export function SearchFeed({
         covered.includes(subject) && covered[0] !== subject
     );
 
-  // Two subjects that tell the same origin (the two Congos) say it once,
-  // before their own blocks, rather than twice in a row.
+  // Two countries bearing the name are one block, and the peoples filed under
+  // a family's name are a way in rather than a second answer.
+  const answerPlan = planAnswerSubjects(answered, language);
+  const singleBlocks = answerPlan.flatMap((block) =>
+    block.kind === "subject" ? [block] : []
+  );
+  const foldedPeoples = new Set(
+    singleBlocks.flatMap((block) => block.peoplesOfFamily ?? [])
+  );
+  const ficheSubjects = subjects.filter(
+    (subject) => !foldedPeoples.has(subject)
+  );
+
+  // Two subjects that tell the same origin say it once, before their own
+  // blocks, rather than twice in a row.
   const originTexts = (subject: SearchResult) =>
     JSON.stringify(
       subject.answer?.origin?.accounts.map(({ text }) => text) ?? null
     );
+  const singles = singleBlocks.map((block) => block.subject);
   const sharedOrigin =
-    answered.length > 1 &&
+    singles.length > 1 &&
     opening.entries.length === 0 &&
-    answered[0].answer?.origin &&
-    answered.every(
-      (subject) => originTexts(subject) === originTexts(answered[0])
-    )
-      ? answered[0].answer.origin
+    singles[0].answer?.origin &&
+    singles.every((subject) => originTexts(subject) === originTexts(singles[0]))
+      ? singles[0].answer.origin
       : undefined;
+
+  const choicesFor = (
+    family: SearchResult,
+    peoples: readonly SearchResult[]
+  ) =>
+    peoples.length === 0
+      ? []
+      : [
+          {
+            kind: "languageFamily" as const,
+            eyebrow: searchAnswerCopy[language].choices.family,
+            label: family.answer!.title,
+            href: ficheHrefFor(family, language),
+          },
+          {
+            kind: "people" as const,
+            eyebrow: searchAnswerCopy[language].choices.peoples.eyebrow,
+            label: searchAnswerCopy[language].choices.peoples.label,
+            href: buildRelationSearchHref(language, {
+              kind: "family",
+              id: family.id,
+            }),
+          },
+        ];
+  const peopleLinkFor = (subject: SearchResult) => {
+    const count = subject.answer?.what.facts.peopleCount;
+    return subject.type === "languageFamily" && count
+      ? {
+          count,
+          href: buildRelationSearchHref(language, {
+            kind: "family",
+            id: subject.id,
+          }),
+        }
+      : undefined;
+  };
+
+  const pageName =
+    displayName.charAt(0).toLocaleUpperCase(language) + displayName.slice(1);
+  const blockTitle = (block: (typeof answerPlan)[number]) =>
+    block.kind === "countries" ? pageName : block.subject.answer!.title;
+  // Subjects all named like the search (the two Congos and the family name
+  // « Congo ») each carry that name as their title, the eyebrow above it. A
+  // page title above them would be the same word a third time, and bigger
+  // than the others it names: so there is none, and the first block holds the
+  // h1 at the size of its siblings.
+  const sharedTitle =
+    answerPlan.length > 1 &&
+    answerPlan.every(
+      (block) =>
+        normalizeString(blockTitle(block)) === normalizeString(pageName)
+    );
 
   const renderAnswers = (): ReactNode => (
     <>
-      {answered.length > 1 ? (
+      {answerPlan.length > 1 && !sharedTitle ? (
         <h1 className="font-afh-display text-afh-hero font-black leading-[var(--afh-leading-hero)] text-afh-text [overflow-wrap:anywhere]">
-          {displayName.charAt(0).toLocaleUpperCase(language) +
-            displayName.slice(1)}
+          {pageName}
         </h1>
       ) : null}
       {sharedOrigin ? (
         <OriginBlock
           origin={sharedOrigin}
-          kind={answered[0].answer!.kind}
+          kind={singles[0].answer!.kind}
           title={displayName}
           language={language}
         />
       ) : null}
-      {answered.map((subject) => (
-        <SubjectAnswer
-          key={`${subject.type}:${subject.id}`}
-          answer={subject.answer!}
-          listedPeoples={subject.associatedPeoples}
-          searchedForm={query}
-          reviewed={reviewedFor(subject)}
-          originCoveredElsewhere={
-            coveredByAnother(subject) || Boolean(sharedOrigin)
-          }
-          headingLevel={answered.length > 1 ? "h2" : "h1"}
-          language={language}
-        />
-      ))}
+      {answerPlan.map((block, index) => {
+        const headingLevel =
+          answerPlan.length > 1 && !(sharedTitle && index === 0) ? "h2" : "h1";
+        const titleScale = sharedTitle ? "section" : undefined;
+        const { subject, peoplesOfFamily = [] } =
+          block.kind === "subject"
+            ? block
+            : { subject: undefined, peoplesOfFamily: [] };
+        const body =
+          block.kind === "countries" ? (
+            <CountriesAnswer
+              key={`countries:${block.subjects.map(({ id }) => id).join("+")}`}
+              entries={block.subjects.map((entry) => ({
+                answer: entry.answer!,
+                listedPeoples: entry.associatedPeoples,
+              }))}
+              title={pageName}
+              reviewed={block.subjects
+                .map(reviewedFor)
+                .find((entry) => entry !== undefined)}
+              originCoveredElsewhere={
+                !block.subjects.map(reviewedFor).some(Boolean) &&
+                (block.subjects.some(coveredByAnother) || Boolean(sharedOrigin))
+              }
+              headingLevel={headingLevel}
+              titleScale={titleScale}
+              language={language}
+            />
+          ) : (
+            <SubjectAnswer
+              key={`${subject!.type}:${subject!.id}`}
+              answer={subject!.answer!}
+              listedPeoples={subject!.associatedPeoples}
+              searchedForm={query}
+              reviewed={reviewedFor(subject!)}
+              originCoveredElsewhere={
+                coveredByAnother(subject!) || Boolean(sharedOrigin)
+              }
+              headingLevel={headingLevel}
+              titleScale={titleScale}
+              choices={choicesFor(subject!, peoplesOfFamily)}
+              peopleLink={peopleLinkFor(subject!)}
+              language={language}
+            />
+          );
+        // A second subject is parted from the first by a rule, so the page
+        // does not read as two pages stacked.
+        return index === 0 ? (
+          body
+        ) : (
+          <div
+            key={`divider:${index}`}
+            data-subject-divider=""
+            className="mt-[var(--afh-section-gap)] flex flex-col gap-[var(--afh-section-gap)] border-t border-afh-border pt-[var(--afh-section-gap)]"
+          >
+            {body}
+          </div>
+        );
+      })}
     </>
   );
 
@@ -561,7 +672,7 @@ export function SearchFeed({
       case "fiche-link":
         return (
           <FicheLinkBlock
-            subjects={subjects}
+            subjects={ficheSubjects}
             language={language}
             onNavigate={(subject) =>
               onResultNavigate?.(subject.type, subjects.indexOf(subject) + 1)

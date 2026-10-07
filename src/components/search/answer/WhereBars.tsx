@@ -3,6 +3,7 @@ import {
   ANSWER_BLOCK,
   ANSWER_HEADING,
 } from "@/components/search/answer/answerStyle";
+import { PeopleLink } from "@/components/search/answer/PeopleLink";
 import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import type {
@@ -29,7 +30,18 @@ export interface WhereBarsProps {
   heading?: string;
   /** Peoples the fiche lists without a share, named beside the unsplit part. */
   unsplitPeopleNames?: string[];
+  /** The peoples behind the figures, counted from the data, one click away. */
+  peopleLink?: { count: number; href: string };
   language?: Language;
+}
+
+/** One country's share of a page that tells several (the two Congos). */
+export interface WhereGroup {
+  heading: string;
+  where: AnswerWhere;
+  labels?: Record<string, string>;
+  facts?: SearchAnswer["what"]["facts"];
+  unsplitPeopleNames?: string[];
 }
 
 /** Five rows read at a glance; the remainder is counted, not drawn. */
@@ -55,6 +67,7 @@ export function WhereBars({
   facts = {},
   heading,
   unsplitPeopleNames,
+  peopleLink,
   language = "fr",
 }: WhereBarsProps) {
   const copy = searchAnswerCopy[language];
@@ -90,6 +103,62 @@ export function WhereBars({
           language={language}
         />
       )}
+      {peopleLink ? (
+        <PeopleLink
+          count={peopleLink.count}
+          href={peopleLink.href}
+          kind={kind}
+          language={language}
+        />
+      ) : null}
+    </section>
+  );
+}
+
+/**
+ * Several States under one « who lives there »: one heading, then each
+ * country's own bars under its name. Telling the two Congos in two blocks made
+ * the reader hold one while reading the other.
+ * @req REQ-178
+ */
+export function WhereGroups({
+  groups,
+  kind,
+  language = "fr",
+}: {
+  groups: readonly WhereGroup[];
+  kind: AnswerKind;
+  language?: Language;
+}) {
+  const copy = searchAnswerCopy[language];
+  const drawn = groups.filter(({ where }) => where.rows.length > 0);
+  if (drawn.length === 0) return null;
+  const accent = ANSWER_ACCENT_CLASS[kind];
+
+  return (
+    <section
+      className={cn(ANSWER_BLOCK, "flex flex-col gap-afh-xl")}
+      data-answer-block="where"
+      data-feed-block="answer-where"
+      data-feed-zone="primary"
+    >
+      <h2 className={ANSWER_HEADING}>{copy.where.title.country}</h2>
+      {drawn.map((group) => {
+        const labels = group.labels ?? {};
+        return (
+          <div key={group.heading} className="flex flex-col gap-afh-lg">
+            <Bars
+              where={group.where}
+              label={(row) => labels[rowId(row)] ?? rowId(row)}
+              facts={group.facts ?? {}}
+              heading={group.heading}
+              unsplitPeopleNames={group.unsplitPeopleNames}
+              accent={accent}
+              language={language}
+            />
+          </div>
+        );
+      })}
     </section>
   );
 }

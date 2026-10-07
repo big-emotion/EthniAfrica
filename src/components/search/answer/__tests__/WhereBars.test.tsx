@@ -1,7 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
-import { WhereBars } from "@/components/search/answer/WhereBars";
+import { buildRelationSearchHref } from "@/lib/search/relationSearch";
+import { WhereBars, WhereGroups } from "@/components/search/answer/WhereBars";
 import {
   ANSWER_LABELS,
   answerOf,
@@ -23,6 +24,11 @@ function renderWhere(
     />
   );
 }
+
+const familyPeoplesHref = buildRelationSearchHref("fr", {
+  kind: "family",
+  id: "FLG_BANTU",
+});
 
 // @req REQ-178
 describe("WhereBars", () => {
@@ -178,5 +184,51 @@ describe("WhereBars", () => {
       />
     );
     expect(container).toBeEmptyDOMElement();
+  });
+  // @req REQ-178
+  it("offers the peoples of the family behind the figures, counted from the data", () => {
+    renderWhere("bantou", {
+      peopleLink: { count: 169, href: familyPeoplesHref },
+    });
+    const link = screen.getByRole("link", { name: "Voir les 169 peuples" });
+    expect(link).toHaveAttribute("href", familyPeoplesHref);
+    // A text link on its own line is a touch target: 44 px at least.
+    expect(link.className).toContain("min-h-11");
+  });
+
+  // @req REQ-178
+  it("draws no peoples link when none was given", () => {
+    renderWhere("bantou");
+    expect(screen.queryByRole("link")).toBeNull();
+  });
+});
+
+// @req REQ-178
+describe("WhereGroups", () => {
+  const republic = answerOf("congo", 0);
+  const democratic = answerOf("congo", 1);
+  const group = (answer: typeof republic, heading: string) => ({
+    heading,
+    where: answer.where!,
+    facts: answer.what.facts,
+    labels: ANSWER_LABELS,
+  });
+
+  // @req REQ-178
+  it("tells two countries under one heading, each with its own bars", () => {
+    const { container } = render(
+      <WhereGroups
+        kind="country"
+        groups={[group(republic, "Congo"), group(democratic, "RD Congo")]}
+      />
+    );
+    expect(container.querySelectorAll("h2")).toHaveLength(1);
+    expect(
+      container.querySelectorAll('[data-feed-block="answer-where"]')
+    ).toHaveLength(1);
+    const headings = Array.from(container.querySelectorAll("h3")).map(
+      (heading) => heading.textContent
+    );
+    expect(headings).toEqual(["Congo", "RD Congo"]);
   });
 });

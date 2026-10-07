@@ -1,3 +1,9 @@
+import {
+  NameChoices,
+  type NameChoice,
+} from "@/components/search/answer/NameChoices";
+import { ANSWER_BLOCK } from "@/components/search/answer/answerStyle";
+import { PeopleLink } from "@/components/search/answer/PeopleLink";
 import { NamesBlock } from "@/components/search/answer/NamesBlock";
 import { NextQuestion } from "@/components/search/answer/NextQuestion";
 import { OriginBlock } from "@/components/search/answer/OriginBlock";
@@ -5,6 +11,7 @@ import { SourcesLine } from "@/components/search/answer/SourcesLine";
 import { WhatBlock } from "@/components/search/answer/WhatBlock";
 import { WhereBars } from "@/components/search/answer/WhereBars";
 import { ReviewedOrigin } from "@/components/search/feed/NameAnswerEntries";
+import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import type { SearchAnswer } from "@/lib/search/answer";
 import {
   presentAnswerWhere,
@@ -25,6 +32,11 @@ export interface SubjectAnswerProps {
   originCoveredElsewhere?: boolean;
   /** One page, one h1: the second subject of a shared name asks for an h2. */
   headingLevel?: "h1" | "h2";
+  titleScale?: "hero" | "section";
+  /** Ways in when the name is two things (a family and its peoples). */
+  choices?: readonly NameChoice[];
+  /** The peoples behind the speaker figures, counted from the data. */
+  peopleLink?: { count: number; href: string };
   language: Language;
 }
 
@@ -42,6 +54,9 @@ export function SubjectAnswer({
   reviewed,
   originCoveredElsewhere = false,
   headingLevel = "h1",
+  titleScale,
+  choices = [],
+  peopleLink,
   language,
 }: SubjectAnswerProps) {
   const where = presentAnswerWhere(answer.where, listedPeoples, language);
@@ -58,6 +73,11 @@ export function SubjectAnswer({
         answer={answer}
         language={language}
         headingLevel={headingLevel}
+        titleScale={titleScale}
+      />
+      <NameChoices
+        title={searchAnswerCopy[language].choices.title}
+        choices={choices}
       />
       {reviewed ? (
         <ReviewedOrigin
@@ -87,8 +107,20 @@ export function SubjectAnswer({
           labels={where.labels}
           facts={answer.what.facts}
           unsplitPeopleNames={where.unsplitPeopleNames}
+          peopleLink={peopleLink}
           language={language}
         />
+      ) : peopleLink ? (
+        // No speaker figures to hang it on: the peoples are still one click
+        // away, counted from the data.
+        <div className={ANSWER_BLOCK}>
+          <PeopleLink
+            count={peopleLink.count}
+            href={peopleLink.href}
+            kind={answer.kind}
+            language={language}
+          />
+        </div>
       ) : null}
       {answer.next ? (
         <NextQuestion

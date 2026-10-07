@@ -45,6 +45,17 @@ export interface AnswerFixture {
   /** Sentence above several answers to one name (Congo's two states). */
   pageLead?: string;
   answers: SearchAnswer[];
+  /**
+   * Peoples the search also returns, filed under the family that answers (the
+   * aggregate people « Bantou »). The page offers them as a way in; it never
+   * draws them as a second answer.
+   */
+  peoplesOfFamily?: SearchAnswer[];
+  /**
+   * Other subjects answering to the same name, told after the main answers
+   * (the family name « Congo » beside the two States).
+   */
+  andAlso?: SearchAnswer[];
   /** What the envelope carries for a published word, with no fiche behind it. */
   wordAnswers?: WordAnswer[];
 }
@@ -449,6 +460,32 @@ const congoDemocratic: SearchAnswer = (() => {
   };
 })();
 
+const congoFamilyName: SearchAnswer = (() => {
+  const accounts: AnswerAccount[] = [
+    {
+      text: "Le nom de famille Congo est porté à l'ouest du Burkina Faso, où il s'écrit aussi Kongo.",
+      attribution: "written",
+      evidence: [
+        evidence(
+          "Congo, nom de famille porté au Burkina Faso.",
+          source("fixture-congo-name-1", "Source de test : répertoire de noms")
+        ),
+      ],
+    },
+  ];
+  return {
+    kind: "patronyme",
+    title: "Congo",
+    what: { facts: { countryCount: 1 } },
+    origin: { accounts, debated: false },
+    names: names(
+      { form: "Congo", selfGiven: null },
+      { form: "Kongo", selfGiven: null }
+    ),
+    sources: { count: distinctSourceCount(accounts) },
+  };
+})();
+
 const camara: SearchAnswer = (() => {
   const accounts: AnswerAccount[] = [
     {
@@ -583,13 +620,26 @@ export const ANSWER_FIXTURES: Record<AnswerFixtureCase, AnswerFixture> = {
   nzebi: { query: "nzebi", answers: [nzebi] },
   bassa: { query: "bassa", answers: [bassa] },
   lingala: { query: "lingala", answers: [lingala] },
-  bantou: { query: "bantou", answers: [bantou] },
+  bantou: {
+    query: "bantou",
+    answers: [bantou],
+    peoplesOfFamily: [
+      {
+        kind: "people",
+        title: "Bantou",
+        what: { facts: {} },
+        names: [],
+        sources: { count: 0 },
+      },
+    ],
+  },
   civ: { query: "côte d'ivoire", answers: [civ] },
   congo: {
     query: "congo",
     pageLead:
       "Deux États portent ce nom, de part et d'autre du même fleuve : la République du Congo, capitale Brazzaville, et la République démocratique du Congo, capitale Kinshasa.",
     answers: [congoRepublic, congoDemocratic],
+    andAlso: [congoFamilyName],
   },
   camara: { query: "camara", answers: [camara] },
   pharaon: { query: "pharaon", answers: [], wordAnswers: [pharaon] },
