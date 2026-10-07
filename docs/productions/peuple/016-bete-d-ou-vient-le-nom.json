@@ -1,0 +1,20 @@
+{
+  "campaign": "bete-d-ou-vient-le-nom",
+  "typologie": "peuple",
+  "episode": 16,
+  "question": {
+    "fr": "D'où vient le nom Bété ?"
+  },
+  "myth": {
+    "fr": "« Bété » veut-il dire « ceux qui ne se soumettent pas » ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_BETE",
+      "label": { "fr": "Bété" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_BETE",
+  "publications": []
+}
