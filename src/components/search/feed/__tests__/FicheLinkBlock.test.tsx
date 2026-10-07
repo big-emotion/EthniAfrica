@@ -39,4 +39,38 @@ describe("FicheLinkBlock", () => {
     expect(labels[0]).toContain("Pays");
     expect(labels[1]).toContain("Nom");
   });
+
+  // The page has one solid primary action. Several fiches are equal ways on,
+  // so none of them is the solid one: choosing which would promote a subject.
+  // @req REQ-178
+  it("draws one solid button for one fiche and none for several", () => {
+    const solid = (links: HTMLElement[]) =>
+      links.filter((link) =>
+        link.className.includes("bg-[color:var(--accent)]")
+      );
+
+    const single = render(
+      <FicheLinkBlock
+        subjects={[subject("people", "PPL_FULA", "Fula")]}
+        language="fr"
+      />
+    );
+    expect(solid(screen.getAllByRole("link"))).toHaveLength(1);
+    single.unmount();
+
+    render(
+      <FicheLinkBlock
+        subjects={[
+          subject("country", "COG", "Congo"),
+          subject("country", "COD", "RD Congo"),
+          subject("patronyme", "PAT_CONGO", "Congo"),
+        ]}
+        language="fr"
+      />
+    );
+    const links = screen.getAllByRole("link");
+    expect(links).toHaveLength(3);
+    expect(solid(links)).toHaveLength(0);
+    for (const link of links) expect(link.className).toContain("min-h-11");
+  });
 });

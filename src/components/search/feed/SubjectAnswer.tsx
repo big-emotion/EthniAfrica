@@ -32,6 +32,7 @@ export interface SubjectAnswerProps {
   originCoveredElsewhere?: boolean;
   /** One page, one h1: the second subject of a shared name asks for an h2. */
   headingLevel?: "h1" | "h2";
+  titleScale?: "hero" | "section";
   /** Ways in when the name is two things (a family and its peoples). */
   choices?: readonly NameChoice[];
   /** The peoples behind the speaker figures, counted from the data. */
@@ -53,6 +54,7 @@ export function SubjectAnswer({
   reviewed,
   originCoveredElsewhere = false,
   headingLevel = "h1",
+  titleScale,
   choices = [],
   peopleLink,
   language,
@@ -71,6 +73,7 @@ export function SubjectAnswer({
         answer={answer}
         language={language}
         headingLevel={headingLevel}
+        titleScale={titleScale}
       />
       <NameChoices
         title={searchAnswerCopy[language].choices.title}

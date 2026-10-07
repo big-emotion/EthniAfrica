@@ -115,7 +115,7 @@ describe("NamesBlock", () => {
   });
 
   // @req REQ-178
-  it("keeps a long sentence out of a pill-shaped box", () => {
+  it("draws a sentence filed as a name as plain text, not as a box", () => {
     const long =
       "Aucun nom propre : « bantou » est un mot forgé par un linguiste à partir de aba-ntu";
     render(
@@ -127,7 +127,7 @@ describe("NamesBlock", () => {
         }}
       />
     );
-    const pill = screen.getByText(long).closest("li");
-    expect(pill?.className).not.toContain("rounded-afh-full");
+    const item = screen.getByText(long).closest("li");
+    expect(item?.className).not.toMatch(/border|rounded|bg-/);
   });
 });

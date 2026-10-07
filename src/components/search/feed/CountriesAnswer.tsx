@@ -32,6 +32,7 @@ export interface CountriesAnswerProps {
   originCoveredElsewhere?: boolean;
   /** One page, one h1: beside another subject the block asks for an h2. */
   headingLevel?: "h1" | "h2";
+  titleScale?: "hero" | "section";
   language?: Language;
 }
 
@@ -79,6 +80,7 @@ export function CountriesAnswer({
   reviewed,
   originCoveredElsewhere = false,
   headingLevel = "h1",
+  titleScale,
   language = "fr",
 }: CountriesAnswerProps) {
   const copy = searchAnswerCopy[language];
@@ -144,6 +146,7 @@ export function CountriesAnswer({
         answer={{ ...first.answer, title }}
         subjectCount={entries.length}
         headingLevel={headingLevel}
+        titleScale={titleScale}
         lead={copy.whatFallback.sharedCountryName(
           entries.length,
           new Intl.ListFormat(language, {

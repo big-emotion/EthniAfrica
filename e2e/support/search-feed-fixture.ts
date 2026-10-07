@@ -351,6 +351,14 @@ export function searchEnvelopeForAnswerFixture(fixture: AnswerFixture) {
     const { bucket, row } = answerRow(answer, index, fixture.query);
     grouped[bucket].push(row);
   });
+  (fixture.andAlso ?? []).forEach((answer, index) => {
+    const { bucket, row } = answerRow(
+      answer,
+      fixture.answers.length + index,
+      fixture.query
+    );
+    grouped[bucket].push(row);
+  });
   // The people the family's name is also filed under points at the family by
   // the row's own `languageFamilyId`, as the API's people rows do.
   const familyRowId = grouped.families[0]?.id;
@@ -375,7 +383,7 @@ export function searchEnvelopeForAnswerFixture(fixture: AnswerFixture) {
       patronymesTotal: grouped.patronymes.length,
       quizzesTotal: 0,
       languagesTotal: grouped.languages.length,
-      total: fixture.answers.length,
+      total: fixture.answers.length + (fixture.andAlso?.length ?? 0),
       leads: [],
       nearNames: [],
     },

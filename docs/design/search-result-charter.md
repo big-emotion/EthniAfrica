@@ -254,6 +254,34 @@ failure measured on the real page on 2026-10-07:
   data — nothing in the copy is a number. A people that merely resembles the
   name is never folded.
 
+Three rules govern how several subjects sit on one page, each a refusal of a
+defect the art-director review found on the rendered « congo » page on
+2026-10-07 (the two States, then the family name « Congo »):
+
+- **One title per subject block, the eyebrow above it.** When every block of
+  the page is titled like the search (the countries and the family name are all
+  « Congo »), a page title above them would be that word a third time, and
+  bigger than the titles it names. So there is none: the first block carries the
+  `h1`, drawn at the size of its siblings (`titleScale: "section"`), the others
+  an `h2`, so none is the page's title more than another. When the blocks are
+  named differently (Bassa), the page title stays and each block is an `h2`.
+  `e2e/search-answer.spec.ts` counts one `h1` per page and one `h1`/`h2` per
+  `answer-what` block, at 320, 430, 768 and 1280.
+- **A second subject is parted from the first by a rule** (`data-subject-divider`:
+  a top border and the section gap above and below). A family name that arrives
+  with its own title, eyebrow and bars reads as a second page stacked under the
+  first unless the page says where one ends. It stays visible — folding it
+  behind a control would hide a subject, and no subject is promoted or hidden
+  (§3) — and it is parted, not demoted.
+- **The page has one solid primary action, and several fiches are not it.** One
+  fiche is the solid ocre button. Two or more are equal ways on, so none is the
+  solid one: they are quiet outlined buttons in the one mobile-first column,
+  44 px high at least, with the entity label when two share a name (« Congo
+  (Pays) », « Congo (Nom) »). Three full-width ocre bars broke the hierarchy and
+  the one-accent rule (brand charter §5.2); choosing which of three to paint
+  would have promoted a subject. The e2e spec asserts at most one solid fiche
+  button per page and none when several answer.
+
 **What left « Tout ».** `shorts`, `plates`, `quiz`, `images` and `fiches` are
 what the filters show. `origins`, `peoples`, `shared-name`, `tiles`,
 `atlas-holds`, `problem` and `near-name` no longer exist: their job is done by

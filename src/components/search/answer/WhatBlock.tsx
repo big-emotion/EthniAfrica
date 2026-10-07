@@ -18,6 +18,12 @@ export interface WhatBlockProps {
   lead?: string;
   /** One page, one h1: a second answer on the page asks for an h2. */
   headingLevel?: "h1" | "h2";
+  /**
+   * Size of the title, which follows its rank unless told otherwise. A page
+   * whose subjects are all named alike has an h1 that is no bigger than the
+   * titles under it: none of them is the page's title more than another.
+   */
+  titleScale?: "hero" | "section";
 }
 
 function fallbackLead(
@@ -68,6 +74,7 @@ export function WhatBlock({
   subjectCount = 1,
   lead,
   headingLevel = "h1",
+  titleScale = headingLevel === "h1" ? "hero" : "section",
 }: WhatBlockProps) {
   const copy = searchAnswerCopy[language];
   const eyebrow =
@@ -96,7 +103,7 @@ export function WhatBlock({
         className={cn(
           "font-afh-display font-black text-afh-text [overflow-wrap:anywhere]",
           // A second subject on the page is a section of it, not its title.
-          headingLevel === "h1"
+          titleScale === "hero"
             ? "text-afh-hero leading-[var(--afh-leading-hero)]"
             : "text-afh-h1 leading-[var(--afh-leading-h1)]"
         )}

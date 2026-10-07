@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { cn } from "@/lib/utils";
 import { ANSWER_BLOCK } from "@/components/search/answer/answerStyle";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
@@ -40,6 +41,11 @@ export function FicheLinkBlock({
       ? `${nameOf(subject)} (${getSearchEntityLabel(subject.type, language)})`
       : nameOf(subject);
 
+  // One fiche is the page's one solid primary. Several are equal ways on and
+  // none is the solid one — choosing which would promote a subject — so they
+  // are quiet outlined buttons in the one mobile-first column.
+  const several = subjects.length > 1;
+
   return (
     <SearchFeedBlock id="fiche-link" zone="primary" className="grid gap-afh-md">
       {subjects.map((subject) => (
@@ -47,7 +53,12 @@ export function FicheLinkBlock({
           <Link
             href={ficheHrefFor(subject, language)}
             onClick={() => onNavigate?.(subject)}
-            className="afh-accent-ocre inline-flex min-h-[52px] w-full items-center justify-center rounded-afh-xl bg-[color:var(--accent)] px-afh-2xl py-afh-md text-center text-afh-body font-bold text-[color:var(--accent-foreground)] no-underline focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
+            className={cn(
+              "afh-accent-ocre inline-flex w-full items-center justify-center rounded-afh-xl px-afh-2xl py-afh-md text-center text-afh-body font-bold no-underline focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]",
+              several
+                ? "min-h-11 border border-[color:var(--accent)] bg-afh-surface text-afh-text"
+                : "min-h-[52px] bg-[color:var(--accent)] text-[color:var(--accent-foreground)]"
+            )}
           >
             {copy.ficheLink(labelOf(subject))}
           </Link>

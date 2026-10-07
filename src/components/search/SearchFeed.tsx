@@ -517,12 +517,27 @@ export function SearchFeed({
       : undefined;
   };
 
+  const pageName =
+    displayName.charAt(0).toLocaleUpperCase(language) + displayName.slice(1);
+  const blockTitle = (block: (typeof answerPlan)[number]) =>
+    block.kind === "countries" ? pageName : block.subject.answer!.title;
+  // Subjects all named like the search (the two Congos and the family name
+  // « Congo ») each carry that name as their title, the eyebrow above it. A
+  // page title above them would be the same word a third time, and bigger
+  // than the others it names: so there is none, and the first block holds the
+  // h1 at the size of its siblings.
+  const sharedTitle =
+    answerPlan.length > 1 &&
+    answerPlan.every(
+      (block) =>
+        normalizeString(blockTitle(block)) === normalizeString(pageName)
+    );
+
   const renderAnswers = (): ReactNode => (
     <>
-      {answerPlan.length > 1 ? (
+      {answerPlan.length > 1 && !sharedTitle ? (
         <h1 className="font-afh-display text-afh-hero font-black leading-[var(--afh-leading-hero)] text-afh-text [overflow-wrap:anywhere]">
-          {displayName.charAt(0).toLocaleUpperCase(language) +
-            displayName.slice(1)}
+          {pageName}
         </h1>
       ) : null}
       {sharedOrigin ? (
@@ -533,49 +548,63 @@ export function SearchFeed({
           language={language}
         />
       ) : null}
-      {answerPlan.map((block) => {
-        const headingLevel = answerPlan.length > 1 ? "h2" : "h1";
-        if (block.kind === "countries") {
-          const reviewed = block.subjects
-            .map(reviewedFor)
-            .find((entry) => entry !== undefined);
-          return (
+      {answerPlan.map((block, index) => {
+        const headingLevel =
+          answerPlan.length > 1 && !(sharedTitle && index === 0) ? "h2" : "h1";
+        const titleScale = sharedTitle ? "section" : undefined;
+        const { subject, peoplesOfFamily = [] } =
+          block.kind === "subject"
+            ? block
+            : { subject: undefined, peoplesOfFamily: [] };
+        const body =
+          block.kind === "countries" ? (
             <CountriesAnswer
               key={`countries:${block.subjects.map(({ id }) => id).join("+")}`}
-              entries={block.subjects.map((subject) => ({
-                answer: subject.answer!,
-                listedPeoples: subject.associatedPeoples,
+              entries={block.subjects.map((entry) => ({
+                answer: entry.answer!,
+                listedPeoples: entry.associatedPeoples,
               }))}
-              title={
-                displayName.charAt(0).toLocaleUpperCase(language) +
-                displayName.slice(1)
-              }
-              reviewed={reviewed}
+              title={pageName}
+              reviewed={block.subjects
+                .map(reviewedFor)
+                .find((entry) => entry !== undefined)}
               originCoveredElsewhere={
-                !reviewed &&
+                !block.subjects.map(reviewedFor).some(Boolean) &&
                 (block.subjects.some(coveredByAnother) || Boolean(sharedOrigin))
               }
               headingLevel={headingLevel}
+              titleScale={titleScale}
+              language={language}
+            />
+          ) : (
+            <SubjectAnswer
+              key={`${subject!.type}:${subject!.id}`}
+              answer={subject!.answer!}
+              listedPeoples={subject!.associatedPeoples}
+              searchedForm={query}
+              reviewed={reviewedFor(subject!)}
+              originCoveredElsewhere={
+                coveredByAnother(subject!) || Boolean(sharedOrigin)
+              }
+              headingLevel={headingLevel}
+              titleScale={titleScale}
+              choices={choicesFor(subject!, peoplesOfFamily)}
+              peopleLink={peopleLinkFor(subject!)}
               language={language}
             />
           );
-        }
-        const { subject, peoplesOfFamily = [] } = block;
-        return (
-          <SubjectAnswer
-            key={`${subject.type}:${subject.id}`}
-            answer={subject.answer!}
-            listedPeoples={subject.associatedPeoples}
-            searchedForm={query}
-            reviewed={reviewedFor(subject)}
-            originCoveredElsewhere={
-              coveredByAnother(subject) || Boolean(sharedOrigin)
-            }
-            headingLevel={headingLevel}
-            choices={choicesFor(subject, peoplesOfFamily)}
-            peopleLink={peopleLinkFor(subject)}
-            language={language}
-          />
+        // A second subject is parted from the first by a rule, so the page
+        // does not read as two pages stacked.
+        return index === 0 ? (
+          body
+        ) : (
+          <div
+            key={`divider:${index}`}
+            data-subject-divider=""
+            className="mt-[var(--afh-section-gap)] flex flex-col gap-[var(--afh-section-gap)] border-t border-afh-border pt-[var(--afh-section-gap)]"
+          >
+            {body}
+          </div>
         );
       })}
     </>

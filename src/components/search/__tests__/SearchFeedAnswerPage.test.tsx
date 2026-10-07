@@ -237,6 +237,73 @@ describe("several subjects answering one name", () => {
   });
 });
 
+// « congo » is two countries and a family name. Each subject gets one title,
+// the eyebrow above it, and the second is parted from the first by a rule: the
+// page must not read as two pages stacked, nor repeat the name three times.
+// @req REQ-178
+describe("a name shared by countries and a family name", () => {
+  const congo = ANSWER_FIXTURES.congo.answers.map((answer, index) =>
+    subjectOf(answer, { id: index === 0 ? "COG" : "COD", name: "Congo" })
+  );
+  const familyName = subjectOf(
+    { ...ANSWER_FIXTURES.camara.answers[0], title: "Congo" },
+    { id: "PAT_CONGO", name: "Congo" }
+  );
+
+  // @req REQ-178
+  it("draws one title per subject block, all at the same size, one of them the h1", () => {
+    const { container } = renderAnswer("Congo", [...congo, familyName]);
+
+    expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
+    for (const block of container.querySelectorAll(
+      '[data-feed-block="answer-what"]'
+    )) {
+      expect(block.querySelectorAll("h1, h2")).toHaveLength(1);
+      expect(block.querySelector("h1, h2")).not.toHaveClass("text-afh-hero");
+    }
+    expect(
+      container.querySelectorAll('[data-feed-block="answer-what"]')
+    ).toHaveLength(2);
+    // The searched name is not also set above the blocks as a third title.
+    expect(
+      screen
+        .getAllByRole("heading", { name: "Congo" })
+        .filter((heading) => /^H[12]$/.test(heading.tagName))
+    ).toHaveLength(2);
+  });
+
+  // @req REQ-178
+  it("parts the second subject from the first with a rule", () => {
+    const { container } = renderAnswer("Congo", [...congo, familyName]);
+
+    const dividers = container.querySelectorAll("[data-subject-divider]");
+    expect(dividers).toHaveLength(1);
+    expect(
+      dividers[0].querySelector('[data-feed-block="answer-what"]')
+    ).not.toBeNull();
+  });
+
+  // @req REQ-178
+  it("keeps a page-level title when the subjects are not all named alike", () => {
+    renderAnswer("Bassa", [
+      subjectOf(peul, { id: "PPL_A", name: "Bassa" }),
+      subjectOf(lingala, { id: "lin", name: "Bassa" }),
+    ]);
+    expect(screen.getByRole("heading", { level: 1 })).toHaveClass(
+      "text-afh-hero"
+    );
+  });
+
+  // @req REQ-178
+  it("offers no solid fiche button when several fiches answer", () => {
+    const { container } = renderAnswer("Congo", [...congo, familyName]);
+    const solid = Array.from(
+      container.querySelectorAll('[data-feed-block="fiche-link"] a')
+    ).filter((link) => link.className.includes("bg-[color:var(--accent)]"));
+    expect(solid).toHaveLength(0);
+  });
+});
+
 // « bantou » is a family of languages and a people filed under it. The family
 // answers; the peoples are a way in, counted from the data.
 // @req REQ-178

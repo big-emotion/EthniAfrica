@@ -60,7 +60,11 @@ function expectedBlocks(
 }
 
 function answersOf(fixture: AnswerFixture): SearchAnswer[] {
-  return [...fixture.answers, ...(fixture.wordAnswers ?? [])];
+  return [
+    ...fixture.answers,
+    ...(fixture.andAlso ?? []),
+    ...(fixture.wordAnswers ?? []),
+  ];
 }
 
 /**
@@ -348,6 +352,56 @@ test.describe("search answer page", () => {
       expect(perLine.length).toBeGreaterThan(0);
       for (const count of perLine) {
         expect(count).toBeLessThanOrEqual(READING_CHARS_MAX);
+      }
+    });
+  }
+
+  for (const id of ["peul", "bantou", "congo", "lingala", "camara"] as const) {
+    // @req REQ-178
+    test(`${id} draws one title per subject block and one page h1`, async ({
+      page,
+    }) => {
+      await openAnswer(page, ANSWER_FIXTURES[id]);
+      for (const width of [320, 430, 768, 1280]) {
+        await page.setViewportSize({ width, height: 800 });
+        await expect(page.locator("h1")).toHaveCount(1);
+        const perBlock = await page
+          .locator('[data-feed-block="answer-what"]')
+          .evaluateAll((blocks) =>
+            blocks.map((block) => block.querySelectorAll("h1, h2").length)
+          );
+        expect(perBlock.length).toBeGreaterThan(0);
+        expect(perBlock, `${id} at ${width}px`).toEqual(perBlock.map(() => 1));
+      }
+    });
+  }
+
+  for (const id of ["peul", "bantou", "congo", "lingala", "camara"] as const) {
+    // @req REQ-178
+    test(`${id} has at most one solid primary button among its fiche links`, async ({
+      page,
+    }) => {
+      await openAnswer(page, ANSWER_FIXTURES[id]);
+      for (const width of [320, 430, 768, 1280]) {
+        await page.setViewportSize({ width, height: 800 });
+        const links = page.locator('[data-feed-block="fiche-link"] a');
+        const solid = await links.evaluateAll(
+          (anchors) =>
+            anchors.filter((anchor) => {
+              const [red, green, blue, alpha = "1"] =
+                getComputedStyle(anchor).backgroundColor.match(/[\d.]+/g) ?? [];
+              // An ocre fill is saturated; the white surface of a quiet
+              // button is not.
+              return (
+                Number(alpha) > 0 &&
+                Math.max(+red, +green, +blue) - Math.min(+red, +green, +blue) >
+                  40
+              );
+            }).length
+        );
+        expect(solid, `${id} at ${width}px`).toBeLessThanOrEqual(1);
+        // Several fiches are equal ways on: none of them is the solid one.
+        if ((await links.count()) > 1) expect(solid).toBe(0);
       }
     });
   }

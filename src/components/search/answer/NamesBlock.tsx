@@ -135,15 +135,23 @@ function PillNames({
       {names.map((name) => {
         const searched = matchesSearch(name.form, searchedForm);
         const qualifier = pillQualifier(name.shortLine);
+        // A sentence the fiche filed as a name is read, not boxed: a box
+        // around a paragraph is a card, and a name is not a card.
+        if (name.form.length > PILL_FORM_MAX) {
+          return (
+            <li
+              key={name.form}
+              className="w-full text-afh-small leading-[var(--afh-leading-small)] text-afh-text"
+            >
+              {name.form}
+            </li>
+          );
+        }
         return (
           <li
             key={name.form}
             className={cn(
-              // A fully rounded box around a sentence reads as a blob.
-              name.form.length > PILL_FORM_MAX
-                ? "rounded-afh-xl"
-                : "rounded-afh-full",
-              "border bg-afh-surface px-afh-xl py-afh-md text-afh-small text-afh-text",
+              "rounded-afh-full border bg-afh-surface px-afh-xl py-afh-md text-afh-small text-afh-text",
               searched ? "border-[color:var(--accent)]" : "border-afh-border"
             )}
           >
