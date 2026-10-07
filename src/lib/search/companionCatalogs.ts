@@ -2,7 +2,6 @@ import {
   eligiblePublications,
   type DiscoveryPublication,
 } from "@/lib/discoveries/catalog";
-import { generatedImagePublications } from "@/lib/discoveries/generatedImages";
 import {
   DISCOVERY_VIDEOS,
   videoPublications,
@@ -49,10 +48,6 @@ export interface CompanionAnecdote extends CompanionCatalogItem {
 
 export interface CompanionProverb extends CompanionCatalogItem {
   proverb: Proverb;
-}
-
-export interface CompanionImage extends CompanionCatalogItem {
-  publication: DiscoveryPublication;
 }
 
 export type SearchShort = DiscoveryVideoRecord;
@@ -170,28 +165,6 @@ export function proverbsForTargets(
   );
 
   return select(items, targets, options.limit ?? 2);
-}
-
-// @req REQ-180
-export function imagesForTargets(
-  targets: readonly CompanionMatch[],
-  publications: readonly DiscoveryPublication[] = generatedImagePublications(),
-  limit = 1
-): CompanionSelection<CompanionImage> {
-  const items = eligiblePublications(publications).flatMap<CompanionImage>(
-    (publication) => {
-      if (publication.kind !== "image" || !publication.detail) return [];
-      return [
-        {
-          id: publication.id,
-          publication,
-          subjects: publication.detail.entities.map(subjectForEntity),
-        },
-      ];
-    }
-  );
-
-  return select(items, targets, limit);
 }
 
 // @req REQ-180

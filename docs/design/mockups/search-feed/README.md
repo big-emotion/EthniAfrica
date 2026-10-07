@@ -73,7 +73,6 @@ the markup, and the plan turns it into an assertion.
 | Every sentence of the five approved cases                       | Short titles, durations, and the order of shorts   |
 | Nigeria, Lingala and Traoré copy (fiches on `recette`)          | Lens counts                                        |
 | Anecdotes, proverbs, their images and credit lines              | Quiz questions (written from the page's own facts) |
-| The generated image of Mansa Musa and its source                |                                                    |
 
 ## Version 2 — the boards are the design system
 
@@ -116,7 +115,7 @@ paths, semantic attributes and index metadata all participate in it.
 - `gen.py` — the tokens as values (`role`, colours, `NIGHT`), one function per
   tile (`search`, `lenses`, `answer`, `appellations`, `chip`, `shorts`, `poster`,
   `empty_poster`, `origins`, `origin_card`, `tiles`, `people_cards`, `plates`,
-  `plate`, `quiz`, `gen_image`, `prose`, `facts`, `fiches`, `band`, `further`),
+  `plate`, `quiz`, `prose`, `facts`, `fiches`, `band`, `further`),
   and the page (`first_screen`, `feed` with its main column and rail, `owed`,
   `body` with the measured frame).
 - `cases.py` — the ten cases as data.
@@ -140,6 +139,5 @@ The generator writes repository paths directly — posters to
 | `5a77ed543ceb048b285f3259fe99c1db`  | `public/images/anecdotes/fulbe-quatre-noms.jpg`         |
 | `3c1d396b8b16d2bc65ab4d0c22d063ce`  | `public/images/anecdotes/fang-reputation.jpg`           |
 | `f3e4ac4721ddfdfa9716210e7fef7f63`  | `public/images/anecdotes/bassa-nge-distinction.jpg`     |
-| `3b268f4fac6547d55364008d6fcc024a`  | `public/images/discoveries/generated/mansa-musa/4x5.jpg` |
 | `bdbd5a6e59d7db22d83a95cd119296d8`  | `public/images/anecdotes/nigeria-flora-shaw.jpg`        |
 | `f4b9a88f7a15933ab03f48ee41f9e180`  | `public/images/anecdotes/lingala.jpg`                   |

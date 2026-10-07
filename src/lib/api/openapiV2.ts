@@ -1570,56 +1570,6 @@ const options: swaggerJsdoc.Options = {
             "match",
           ],
         },
-        SearchCompanionImage: {
-          type: "object",
-          properties: {
-            id: { type: "string", minLength: 1 },
-            href: { type: "string", minLength: 1 },
-            slug: { type: "string", minLength: 1 },
-            title: { type: "string", minLength: 1 },
-            description: { type: "string", minLength: 1 },
-            caption: { type: "string", minLength: 1 },
-            image: {
-              type: "object",
-              properties: {
-                src: { type: "string", minLength: 1 },
-                alt: { type: "string", minLength: 1 },
-                credit: { type: "string", minLength: 1 },
-                licence: {
-                  type: "string",
-                  enum: ["public-domain", "cc0", "cc-by", "cc-by-sa"],
-                },
-                licenceUrl: { type: "string", format: "uri" },
-                filePage: { type: "string", format: "uri" },
-              },
-              required: ["src", "alt", "credit", "licence"],
-            },
-            generation: {
-              type: "object",
-              properties: {
-                tool: { type: "string", minLength: 1 },
-                model: { type: "string", minLength: 1 },
-                generatedOn: { type: "string", minLength: 1 },
-                sourceKind: { type: "string", enum: ["ai_generated"] },
-              },
-              required: ["tool", "model", "generatedOn", "sourceKind"],
-            },
-            source: { $ref: "#/components/schemas/SearchCompanionSource" },
-            match: { $ref: "#/components/schemas/SearchCompanionMatch" },
-          },
-          required: [
-            "id",
-            "href",
-            "slug",
-            "title",
-            "description",
-            "caption",
-            "image",
-            "generation",
-            "source",
-            "match",
-          ],
-        },
         SearchCompanionQuizOption: {
           oneOf: [
             { type: "string" },
@@ -1749,23 +1699,6 @@ const options: swaggerJsdoc.Options = {
           },
           required: ["count", "items"],
         },
-        SearchCompanionImageSelection: {
-          type: "object",
-          properties: {
-            count: {
-              type: "integer",
-              minimum: 0,
-              description:
-                "Total matching items before the response limit is applied.",
-            },
-            items: {
-              type: "array",
-              maxItems: 1,
-              items: { $ref: "#/components/schemas/SearchCompanionImage" },
-            },
-          },
-          required: ["count", "items"],
-        },
         SearchCompanionQuizSelection: {
           type: "object",
           properties: {
@@ -1801,21 +1734,11 @@ const options: swaggerJsdoc.Options = {
             proverbs: {
               $ref: "#/components/schemas/SearchCompanionProverbSelection",
             },
-            images: {
-              $ref: "#/components/schemas/SearchCompanionImageSelection",
-            },
             quiz: {
               $ref: "#/components/schemas/SearchCompanionQuizSelection",
             },
           },
-          required: [
-            "subjects",
-            "shorts",
-            "anecdotes",
-            "proverbs",
-            "images",
-            "quiz",
-          ],
+          required: ["subjects", "shorts", "anecdotes", "proverbs", "quiz"],
         },
         SearchCompanionsResponse: {
           type: "object",

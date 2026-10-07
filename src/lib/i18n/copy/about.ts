@@ -96,7 +96,7 @@ export const aboutCopy: Record<Language, AboutCopy> = {
           id: "dossiers",
           label: "Articles",
           description:
-            "Articles that develop the subjects of our videos and carousels, with their references, plus anecdotes, proverbs and a gallery.",
+            "Articles that develop the subjects of our videos and carousels, with their references, plus anecdotes and proverbs.",
           accentClass: ACCENT_CLASS.dossiers,
         },
         {
@@ -178,7 +178,7 @@ export const aboutCopy: Record<Language, AboutCopy> = {
           id: "dossiers",
           label: "Articles",
           description:
-            "Des articles qui développent les sujets de nos vidéos et de nos carrousels, avec leurs références, puis des anecdotes, des proverbes et une galerie.",
+            "Des articles qui développent les sujets de nos vidéos et de nos carrousels, avec leurs références, puis des anecdotes et des proverbes.",
           accentClass: ACCENT_CLASS.dossiers,
         },
         {

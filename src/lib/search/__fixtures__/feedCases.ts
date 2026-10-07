@@ -45,7 +45,6 @@ const RETIRED_BOARD_BLOCKS = [
   "atlas-holds",
   "plates",
   "quiz",
-  "images",
   "problem",
   "near-name",
   "fiches",
@@ -153,7 +152,6 @@ const feedBoardAuthoringSchema = z
         lens: z.array(
           z.union([
             z.tuple([z.literal("Shorts"), z.number().int().nonnegative()]),
-            z.tuple([z.literal("Images"), z.number().int().nonnegative()]),
             z.tuple([z.literal("Jeux"), z.boolean()]),
             z.tuple([z.literal("Fiches"), z.number().int().nonnegative()]),
           ])
@@ -223,17 +221,6 @@ const feedBoardAuthoringSchema = z
             q: z.string().min(1),
             options: z.array(z.string().min(1)).min(2),
             count: z.string().min(1),
-          })
-          .strict()
-          .optional(),
-        image: z
-          .object({
-            img: z.string().min(1),
-            caption: z.string().min(1),
-            tier: boardStandingSchema,
-            source: z.string().min(1),
-            licence: z.string().min(1),
-            alt: z.string().min(1),
           })
           .strict()
           .optional(),
@@ -355,7 +342,6 @@ export const feedCaseFixturesSchema = z
             lenses: z
               .object({
                 shorts: z.number().int().nonnegative(),
-                images: z.number().int().nonnegative().optional(),
                 quiz: z.boolean().optional(),
                 fiches: z.number().int().nonnegative().optional(),
               })
@@ -429,7 +415,6 @@ export interface FeedCaseFixture {
     owedParts: OwedPartId[];
     lenses: {
       shorts: number;
-      images?: number;
       quiz?: boolean;
       fiches?: number;
     };
@@ -707,15 +692,6 @@ function presentationFor(
     ...(authoring.quiz
       ? { quiz: { questionCountLabel: authoring.quiz.count } }
       : {}),
-    ...(authoring.image
-      ? {
-          images: {
-            title: "Les images",
-            subtitle: "Des interprétations, jamais des portraits.",
-            licenceText: authoring.image.licence,
-          },
-        }
-      : {}),
     ...(authoring.fiches
       ? {
           fiches: {
@@ -847,38 +823,6 @@ function companions(
       },
     ];
   });
-  const images = authoring.image
-    ? [
-        {
-          id: `fixture-image-${authoring.id}`,
-          href: `#image-${authoring.id}`,
-          slug: authoring.image.img,
-          title: authoring.image.caption,
-          description: authoring.image.caption,
-          caption: authoring.image.caption,
-          image: {
-            src:
-              board.editorialImages.at(-1)?.requestPath ??
-              "/images/ethniafrica-logo.png",
-            alt: authoring.image.alt,
-            credit: authoring.image.source,
-            licence: "cc-by-sa" as const,
-          },
-          generation: {
-            tool: "fixture",
-            model: "reviewed-board",
-            generatedOn: "2026-09-01",
-            sourceKind: "ai_generated" as const,
-          },
-          source: {
-            title: authoring.image.source,
-            url: null,
-            tier: authoring.image.tier,
-          },
-          match: matchValue,
-        },
-      ]
-    : [];
   const quiz = authoring.quiz
     ? {
         count: 1,
@@ -924,7 +868,6 @@ function companions(
     },
     anecdotes: { count: anecdotes.length, items: anecdotes },
     proverbs: { count: proverbs.length, items: proverbs },
-    images: { count: images.length, items: images },
     quiz,
   };
 }
@@ -974,7 +917,6 @@ function caseFixture(
     ...fixture.board,
     lenses: {
       shorts: lens.Shorts,
-      ...(typeof lens.Images === "number" ? { images: lens.Images } : {}),
       ...(typeof lens.Jeux === "boolean" ? { quiz: lens.Jeux } : {}),
       ...(typeof lens.Fiches === "number" ? { fiches: lens.Fiches } : {}),
     },
@@ -1066,16 +1008,15 @@ const FEED_CASE_VALUES: FeedCaseFixture[] = [
     matches: [match(mandeSubject), match(mandeSubject, "linked-people")],
     board: {
       blocks: standardBlocks(
-        ["origins", "tiles", "plates", "quiz", "images", "fiches"],
+        ["origins", "tiles", "plates", "quiz", "fiches"],
         ["origins", "plates", "fiches"],
-        ["tiles", "quiz", "images"]
+        ["tiles", "quiz"]
       ),
       owedParts: ["silences", "conviction", "invitation"],
       editorialImages: [
         editorial("anecdotes/malinke-manden.jpg"),
         editorial("anecdotes/bambara-refus.jpg"),
         editorial("anecdotes/dioula-metier.jpg"),
-        editorial("discoveries/generated/mansa-musa/4x5.jpg"),
       ],
     },
   }),

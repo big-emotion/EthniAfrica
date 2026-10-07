@@ -1,5 +1,12 @@
 # Generated imagery — the three launch collections
 
+> **Withdrawn from the site on 2026-10-08 (operator decision).** The twelve
+> generated images, their Découvertes entries, the gallery dossier, the search
+> image shelf and the per-format downloads were removed, with their files under
+> `public/`. What follows survives only as the style rules social cards still
+> follow (`docs/design/gabarits-social/GABARITS-SOCIAL.md`); every statement
+> below about the site's feed, gallery or catalog is history.
+
 The style bible for the stylised, text-free images the Découvertes feed and its
 gallery dossier will carry. It records what was decided, what each collection
 locks, and what the proof series taught — so the next image is generated from a

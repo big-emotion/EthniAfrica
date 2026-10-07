@@ -66,7 +66,7 @@ test.describe("Dossiers while the readings are withdrawn @cross-viewport", () =>
     const tray = page.getByRole("dialog");
     await tray.getByRole("button", { name: /Articles/ }).click();
 
-    for (const id of ["articles", "anecdotes", "proverbes", "galerie"]) {
+    for (const id of ["articles", "anecdotes", "proverbes"]) {
       const entry = tray.getByTestId(`site-nav-module-${id}`);
       await expect(entry).not.toContainText("Bientôt");
       await expect(entry).toHaveAttribute("href", /.+/);

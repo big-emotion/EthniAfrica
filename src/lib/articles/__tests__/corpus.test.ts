@@ -113,7 +113,6 @@ describe("article corpus", () => {
   it.each([
     "anecdotes",
     "proverbes",
-    "galerie",
     "themes",
     "nommer",
     "migrations",

@@ -14,7 +14,6 @@ import {
 } from "@/components/search/feed/FichesBlock";
 import { FicheLinkBlock } from "@/components/search/feed/FicheLinkBlock";
 import { FurtherBlock } from "@/components/search/feed/FurtherBlock";
-import { ImageBlock } from "@/components/search/feed/ImageBlock";
 import { LensesBlock } from "@/components/search/feed/LensesBlock";
 import { OwedBlock } from "@/components/search/feed/OwedBlock";
 import {
@@ -234,7 +233,6 @@ export function SearchFeed({
         shorts: { count: wordShorts.length, items: wordShorts },
         anecdotes: { count: 0, items: [] },
         proverbs: { count: 0, items: [] },
-        images: { count: 0, items: [] },
         quiz: { count: 0, item: null },
       }
     : loadedCompanions;
@@ -400,7 +398,6 @@ export function SearchFeed({
     {
       shorts: companions.shorts.items.length,
       stories: plates.length,
-      images: companions.images.items.length,
       quiz: companions.quiz.item ? 1 : 0,
       fiches: ficheRows.length > 0 ? (resultCount ?? ficheRows.length) : 0,
     },
@@ -750,17 +747,6 @@ export function SearchFeed({
             }
           />
         ) : null;
-      case "images":
-        return companions.images.items[0] ? (
-          <ImageBlock
-            item={companions.images.items[0]}
-            reviewed={Boolean(presentation)}
-            title={presentation?.images?.title}
-            subtitle={presentation?.images?.subtitle ?? undefined}
-            licenceText={presentation?.images?.licenceText}
-            language={language}
-          />
-        ) : null;
       case "fiches":
         return (
           <FichesBlock
@@ -850,7 +836,6 @@ export function SearchFeed({
         />
       ),
       stories: renderBlock("plates"),
-      images: renderBlock("images"),
       quiz: renderBlock("quiz"),
       fiches: renderBlock("fiches"),
     };

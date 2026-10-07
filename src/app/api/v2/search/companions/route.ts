@@ -4,9 +4,9 @@
  *   get:
  *     summary: Resolve sourced companion content for search subjects
  *     description: >
- *       Returns shorts, anecdotes, attested proverbs, generated images and one
- *       playable quiz question for up to twenty typed subjects and their
- *       direct corpus neighbours. Ordering is stable: requested subjects first,
+ *       Returns shorts, anecdotes, attested proverbs and one playable quiz
+ *       question for up to twenty typed subjects and their direct corpus
+ *       neighbours. Ordering is stable: requested subjects first,
  *       then linked family, people and country targets; duplicate items are
  *       removed after their strongest match is chosen. With no subjects, only
  *       the recent-short fallback may be populated. Well-formed unknown ids are
@@ -84,7 +84,6 @@
  *                           match: { relation: exact, entityType: country, entityId: NGA }
  *                     anecdotes: { count: 0, items: [] }
  *                     proverbs: { count: 0, items: [] }
- *                     images: { count: 0, items: [] }
  *                     quiz: { count: 0, item: null }
  *                   meta: { license: CC-BY-SA-4.0, attribution: EthniAfrica — ethniafrica.com }
  *                   errors: []
@@ -106,7 +105,6 @@
  *                           illustration: { src: /images/nigeria.jpg, alt: Carte du Nigeria., credit: Domaine public }
  *                           match: { relation: linked-country, entityType: country, entityId: NGA }
  *                     proverbs: { count: 0, items: [] }
- *                     images: { count: 0, items: [] }
  *                     quiz: { count: 0, item: null }
  *                   meta: { license: CC-BY-SA-4.0, attribution: EthniAfrica — ethniafrica.com }
  *                   errors: []
@@ -118,7 +116,6 @@
  *                     shorts: { count: 0, items: [] }
  *                     anecdotes: { count: 0, items: [] }
  *                     proverbs: { count: 0, items: [] }
- *                     images: { count: 0, items: [] }
  *                     quiz: { count: 0, item: null }
  *                   meta: { license: CC-BY-SA-4.0, attribution: EthniAfrica — ethniafrica.com }
  *                   errors: []
@@ -130,7 +127,6 @@
  *                     shorts: { count: 0, items: [] }
  *                     anecdotes: { count: 0, items: [] }
  *                     proverbs: { count: 0, items: [] }
- *                     images: { count: 0, items: [] }
  *                     quiz: { count: 0, item: null }
  *                   meta: { license: CC-BY-SA-4.0, attribution: EthniAfrica — ethniafrica.com }
  *                   errors: []

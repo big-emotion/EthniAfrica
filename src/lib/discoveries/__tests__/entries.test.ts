@@ -59,4 +59,19 @@ describe("Découvertes source-bank adapter", () => {
       expect(entry.image?.licence, entry.id).toBe(picture.licence);
     }
   });
+
+  // The operator withdrew the generated illustrations: every picture the
+  // reader meets is a photograph or a render of our own, never an AI image.
+  // @req REQ-164
+  it("offers no generated illustration", () => {
+    const publications = getDiscoveryPublications();
+    const kinds = new Set<string>(publications.map((entry) => entry.kind));
+
+    expect(kinds.has("image")).toBe(false);
+    expect(
+      publications.filter((entry) =>
+        entry.image?.src.startsWith("/images/discoveries/generated/")
+      )
+    ).toEqual([]);
+  });
 });

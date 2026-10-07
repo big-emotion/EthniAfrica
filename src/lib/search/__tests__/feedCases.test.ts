@@ -128,14 +128,11 @@ describe("search-feed case fixtures", () => {
       expect(presentation.quiz?.questionCountLabel, fixture.id).toBe(
         authoring.quiz?.count
       );
-      expect(presentation.images?.licenceText, fixture.id).toBe(
-        authoring.image?.licence
-      );
     }
   });
 
   // @req REQ-180
-  it("projects exact board plates, quizzes and generated images as companions", () => {
+  it("projects exact board plates and quizzes as companions", () => {
     for (const fixture of FEED_CASES) {
       const authoring = FEED_BOARD_AUTHORING.find(
         ({ id }) => id === fixture.id
@@ -153,12 +150,6 @@ describe("search-feed case fixtures", () => {
       expect(companions.quiz.item?.prompt, fixture.id).toBe(authoring.quiz?.q);
       expect(companions.quiz.item?.options, fixture.id).toEqual(
         authoring.quiz?.options
-      );
-      expect(companions.images.items[0]?.caption, fixture.id).toBe(
-        authoring.image?.caption
-      );
-      expect(companions.images.items[0]?.source.title, fixture.id).toBe(
-        authoring.image?.source
       );
       expect(
         companions.shorts.items.map(({ label }) => label ?? null),
@@ -215,7 +206,6 @@ describe("search-feed case fixtures", () => {
       const lens = Object.fromEntries(authoring.lens);
       expect(fixture.board.lenses, fixture.id).toEqual({
         shorts: lens.Shorts,
-        ...(typeof lens.Images === "number" ? { images: lens.Images } : {}),
         ...(typeof lens.Jeux === "boolean" ? { quiz: lens.Jeux } : {}),
         ...(typeof lens.Fiches === "number" ? { fiches: lens.Fiches } : {}),
       });

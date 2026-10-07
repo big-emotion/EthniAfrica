@@ -1,7 +1,6 @@
 import type { SearchCompanionsQuery } from "@/api/v2/schemas/searchCompanions";
 import {
   anecdotesForTargets,
-  imagesForTargets,
   proverbsForTargets,
   quizForTargets,
   shortsForTargets,
@@ -73,7 +72,6 @@ export async function getSearchCompanionSelections(
     ),
     anecdotes: anecdotesForTargets(targets),
     proverbs: proverbsForTargets(targets),
-    images: imagesForTargets(targets),
     quiz: quizForTargets(targets, quizCandidates),
   };
 }

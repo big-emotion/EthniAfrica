@@ -16,12 +16,11 @@ describe("the Articles axis", () => {
   });
 
   // @req REQ-114
-  it("offers exactly four destinations, the listing first", () => {
+  it("offers exactly three destinations, the listing first", () => {
     expect(getNavModules("dossiers").map((m) => m.id)).toEqual([
       "articles",
       "anecdotes",
       "proverbes",
-      "galerie",
     ]);
   });
 

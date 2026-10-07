@@ -234,7 +234,6 @@ const EMPTY_COMPANIONS: SearchCompanionsData = {
   shorts: { count: 0, items: [] },
   anecdotes: { count: 0, items: [] },
   proverbs: { count: 0, items: [] },
-  images: { count: 0, items: [] },
   quiz: { count: 0, item: null },
 };
 

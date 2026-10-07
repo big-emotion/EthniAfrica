@@ -31,7 +31,6 @@ describe("getSiteTree — the Articles section", () => {
     }
     expect(list).toContain(getLocalizedRoute("fr", "proverbs"));
     expect(list).toContain(getLocalizedRoute("fr", "anecdotes"));
-    expect(list).toContain(getLocalizedRoute("fr", "gallery"));
   });
 
   // @req REQ-110

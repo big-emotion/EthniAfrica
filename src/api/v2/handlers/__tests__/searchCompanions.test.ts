@@ -7,7 +7,6 @@ vi.mock("@/api/v2/services/searchCompanions", () => ({
 import { getSearchCompanionSelections } from "@/api/v2/services/searchCompanions";
 import { searchCompanionsDataSchema } from "@/api/v2/schemas/searchCompanions";
 import { getSearchCompanionsHandler } from "@/api/v2/handlers/searchCompanions";
-import { generatedImagePublications } from "@/lib/discoveries/generatedImages";
 import { DID_YOU_KNOW_FACTS } from "@/lib/home/didYouKnowFacts";
 import { illustrationFor } from "@/lib/home/didYouKnowIllustrations";
 import { PROVERBS } from "@/lib/proverbs/proverbs";
@@ -29,7 +28,6 @@ describe("search companions handler", () => {
     const fact = DID_YOU_KNOW_FACTS.find(({ id }) => id === "afrique")!;
     const illustration = illustrationFor(fact.id)!;
     const proverb = PROVERBS[0];
-    const publication = generatedImagePublications()[0];
 
     vi.mocked(getSearchCompanionSelections).mockResolvedValue({
       subjects: [{ type: "country", id: "NGA" }],
@@ -86,15 +84,6 @@ describe("search companions handler", () => {
       proverbs: {
         count: 1,
         items: [{ item: { id: proverb.id, proverb, subjects: [] }, match }],
-      },
-      images: {
-        count: 1,
-        items: [
-          {
-            item: { id: publication.id, publication, subjects: [] },
-            match,
-          },
-        ],
       },
       quiz: {
         count: 1,
@@ -161,12 +150,13 @@ describe("search companions handler", () => {
       count: 1,
       item: { prompt: "Which name?", match },
     });
+    // The generated illustrations were withdrawn; no image shelf is offered.
+    expect(envelope.data).not.toHaveProperty("images");
 
     const payload = JSON.stringify(envelope);
     expect(payload).not.toContain("relationLabel");
     expect(payload).not.toContain('"status":"published"');
     expect(payload).not.toContain('"subjects":[{"kind"');
-    expect(payload).not.toContain("jobId");
   });
 
   // The shelf navigates and Découvertes plays: the poster must lead to the
@@ -212,7 +202,6 @@ describe("search companions handler", () => {
         },
         anecdotes: { count: 0, items: [] },
         proverbs: { count: 0, items: [] },
-        images: { count: 0, items: [] },
         quiz: { count: 0, items: [] },
       } as never);
 
@@ -273,7 +262,6 @@ describe("search companions handler", () => {
       },
       anecdotes: { count: 0, items: [] },
       proverbs: { count: 0, items: [] },
-      images: { count: 0, items: [] },
       quiz: { count: 0, items: [] },
     } as never);
 
@@ -300,7 +288,6 @@ describe("search companions handler", () => {
       shorts: { count: 0, items: [] },
       anecdotes: { count: 0, items: [] },
       proverbs: { count: 0, items: [] },
-      images: { count: 0, items: [] },
       quiz: { count: 0, items: [] },
     });
 
@@ -314,7 +301,6 @@ describe("search companions handler", () => {
       shorts: { count: 0, items: [] },
       anecdotes: { count: 0, items: [] },
       proverbs: { count: 0, items: [] },
-      images: { count: 0, items: [] },
       quiz: { count: 0, item: null },
     });
     expect(envelope.errors).toEqual([]);

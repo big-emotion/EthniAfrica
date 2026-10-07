@@ -2,7 +2,6 @@ import { describe, expect, it } from "vitest";
 
 import {
   discoveryPath,
-  downloadChoices,
   eligiblePublications,
   orderedDeck,
   publicationsForSubjects,
@@ -250,128 +249,6 @@ describe("Découvertes publication contracts", () => {
     });
   });
 
-  // DEC-053: a generated image is declared fiction. Its subject rests on the
-  // linked fiche's own source; its generation record is provenance, never a
-  // source, so it cannot vouch for the subject.
-  describe("generated images", () => {
-    const generated: DiscoveryPublication = item("image:hausa-autonym", {
-      kind: "image",
-      collection: "autonymes",
-      slug: { fr: "hausa-autonyme", en: "hausa-autonym" },
-      detail: {
-        body: { fr: ["Texte"], en: ["Text"] },
-        entities: [
-          {
-            kind: "people",
-            id: "PPL_HAUSA",
-            label: { fr: "Haoussa", en: "Hausa" },
-          },
-        ],
-        sources: [],
-      },
-      image: {
-        src: "/images/discoveries/hausa-autonym.webp",
-        credit: "EthniAfrica, CC BY-SA 4.0",
-        licence: "cc-by-sa",
-        alt: { fr: "Illustration stylisée", en: "Stylised illustration" },
-      },
-      caption: { fr: "Légende", en: "Caption" },
-      generation: {
-        tool: "Higgsfield",
-        model: "nano_banana_2",
-        jobId: "job-123",
-        generatedOn: "2026-09-12",
-        sourceKind: "ai_generated",
-      },
-    });
-
-    function eligibleIds(records: DiscoveryPublication[]): string[] {
-      return eligiblePublications(records).map((entry) => entry.id);
-    }
-
-    // @req REQ-164
-    it("admits a complete generated image and resolves its localized permalink", () => {
-      const records = [generated];
-      expect(eligibleIds(records)).toEqual(["image:hausa-autonym"]);
-      const resolved = resolvePublication(records, "en", "hausa-autonym");
-      expect(resolved?.id).toBe("image:hausa-autonym");
-      expect(discoveryPath("fr", resolved)).toBe(
-        "/fr/decouvertes/hausa-autonyme"
-      );
-    });
-
-    // @req REQ-164
-    it("excludes a generated image missing its generation model and keeps the anecdotes", () => {
-      const records = [
-        item("anecdote"),
-        { ...generated, generation: { ...generated.generation, model: "" } },
-      ];
-      expect(eligibleIds(records)).toEqual(["anecdote"]);
-    });
-
-    // @req REQ-164
-    it("never lets the image's own provenance stand in for its subject source", () => {
-      expect(eligibleIds([{ ...generated, source: undefined }])).toEqual([]);
-    });
-
-    // @req REQ-164
-    it("admits a caption beyond the corpus only when it cites its own source", () => {
-      const exceeding = { ...generated, captionExceedsCorpus: true };
-      expect(eligibleIds([exceeding])).toEqual([]);
-      expect(
-        eligibleIds([
-          {
-            ...exceeding,
-            captionSource: {
-              title: "Caption source",
-              url: "https://example.org/caption",
-            },
-          },
-        ])
-      ).toEqual(["image:hausa-autonym"]);
-    });
-
-    const rendered = {
-      "9:16": "/images/discoveries/generated/hausa-autonym/9x16.jpg",
-      "4:5": "/images/discoveries/generated/hausa-autonym/4x5.jpg",
-      "1:1": "/images/discoveries/generated/hausa-autonym/1x1.jpg",
-    };
-
-    // @req REQ-166
-    it("offers the three pre-rendered formats in a fixed order at their exact dimensions", () => {
-      expect(downloadChoices({ ...generated, downloads: rendered })).toEqual([
-        { format: "9:16", src: rendered["9:16"], width: 1080, height: 1920 },
-        { format: "4:5", src: rendered["4:5"], width: 1080, height: 1350 },
-        { format: "1:1", src: rendered["1:1"], width: 1080, height: 1080 },
-      ]);
-    });
-
-    // @req REQ-166
-    it("never offers a format whose file is not declared", () => {
-      const withoutAvatar = {
-        ...generated,
-        downloads: {
-          "1:1": "",
-          "4:5": rendered["4:5"],
-          "9:16": rendered["9:16"],
-        },
-      };
-      expect(
-        downloadChoices(withoutAvatar).map((choice) => choice.format)
-      ).toEqual(["9:16", "4:5"]);
-      expect(downloadChoices(generated)).toEqual([]);
-    });
-
-    // A download carries the generated-image disclosure in its file; a
-    // photographed anecdote has no such file to hand out.
-    // @req REQ-166
-    it("offers no download for a publication that is not a generated image", () => {
-      expect(
-        downloadChoices(item("anecdote", { downloads: rendered }))
-      ).toEqual([]);
-    });
-  });
-
   // @req REQ-158
   it("rejects ambiguous or unsafe publication slugs before exposing a deck", () => {
     const entries = [
@@ -425,8 +302,7 @@ describe("Découvertes carousels", () => {
     ]);
   });
 
-  // A single frame renders a track with nowhere to go. It is an `image`
-  // publication that filed itself under the wrong kind, and publishing it
+  // A single frame renders a track with nowhere to go, and publishing it
   // would promise the reader a series the publication does not have.
   // @req REQ-157
   it("withholds a carousel of one frame", () => {

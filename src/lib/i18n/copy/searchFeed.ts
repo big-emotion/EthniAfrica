@@ -22,7 +22,6 @@ export interface SearchFeedCopy {
     shorts: string;
     plates: string;
     quiz: string;
-    images: string;
     fiches: string;
   };
   relation: {
@@ -42,8 +41,6 @@ export interface SearchFeedCopy {
     anecdote: string;
     proverb: string;
     photoCredit: string;
-    generatedImage: string;
-    generatedWith: string;
     source: string;
     discoveries: string;
     noShortYet: string;
@@ -57,7 +54,6 @@ export interface SearchFeedCopy {
     all: string;
     shorts: string;
     stories: string;
-    images: string;
     quiz: string;
     fiches: string;
   };
@@ -67,7 +63,6 @@ export interface SearchFeedCopy {
     title: {
       shorts: (name: string) => string;
       stories: (name: string) => string;
-      images: (name: string) => string;
       quiz: (name: string) => string;
       fiches: (name: string) => string;
     };
@@ -115,7 +110,6 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       shorts: "Videos",
       plates: "Stories and proverbs",
       quiz: "Test what you have read",
-      images: "In pictures",
       fiches: "Discover",
     },
     relation: {
@@ -135,8 +129,6 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       anecdote: "Story",
       proverb: "Proverb",
       photoCredit: "Image",
-      generatedImage: "Generated image — an interpretation",
-      generatedWith: "Generated with",
       source: "Source",
       discoveries: "Discoveries",
       noShortYet: "No short yet",
@@ -150,7 +142,6 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       all: "All",
       shorts: "Shorts",
       stories: "Stories",
-      images: "Images",
       quiz: "Games",
       fiches: "Entries",
     },
@@ -158,7 +149,6 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       title: {
         shorts: (name) => `Videos about ${name}`,
         stories: (name) => `Stories and proverbs about ${name}`,
-        images: (name) => `Images of ${name}`,
         quiz: (name) => `Games about ${name}`,
         fiches: (name) => `Entries about ${name}`,
       },
@@ -203,7 +193,6 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       shorts: "Les vidéos",
       plates: "Récits et proverbes",
       quiz: "Vérifier ce que vous avez lu",
-      images: "En images",
       fiches: "Découvrir",
     },
     relation: {
@@ -223,8 +212,6 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       anecdote: "Anecdote",
       proverb: "Proverbe",
       photoCredit: "Image",
-      generatedImage: "Image générée — une interprétation",
-      generatedWith: "Générée avec",
       source: "Source",
       discoveries: "Découvertes",
       noShortYet: "Pas encore de short",
@@ -239,7 +226,6 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       all: "Tout",
       shorts: "Shorts",
       stories: "Récits",
-      images: "Images",
       quiz: "Jeux",
       fiches: "Fiches",
     },
@@ -247,7 +233,6 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       title: {
         shorts: (name) => `Vidéos sur ${name}`,
         stories: (name) => `Récits et proverbes sur ${name}`,
-        images: (name) => `Images de ${name}`,
         quiz: (name) => `Jeux sur ${name}`,
         fiches: (name) => `Fiches sur ${name}`,
       },

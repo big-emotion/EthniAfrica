@@ -918,8 +918,10 @@ The fallback above licenses that, and it is still a gap. Closing it means an
 image field per fiche and eight hundred cleared images: a corpus feature, with
 its own decision about sourcing and rights.
 
-**A third register: declared fiction** (DEC-053). A generated image may be
-published, but only as its own publication and only as what it is — an
+**A third register: declared fiction** (DEC-053) — **withdrawn from the site
+on 2026-10-08 by operator decision**: no generated image is published here any
+more, and the paragraph below is kept as the rule social cards still follow. A
+generated image may be published, but only as its own publication and only as what it is — an
 interpretation shown as one, never a document and never an illustration slot
 beside a text. It is stylised, never photorealistic when it shows people. It is
 about one or two atlas entities, and **its subject and its picture are sourced

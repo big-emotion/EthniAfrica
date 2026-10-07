@@ -74,20 +74,6 @@ were referenced by nothing at all, two of them written that same week.
 - [Mission bénévole — Recherche pour les publications](editorial/volunteers/mission-recherche-publications.md)
 - [Modèle de fiche à remplir](editorial/volunteers/modele-fiche-a-remplir.md)
 
-## Audience — the dated reports the publishing chain reads
-
-- [Audience audit — 2026-09-30](audience/audit-2026-09-30.md)
-- [Audience audit — 2026-10-03](audience/audit-2026-10-03.md)
-- [Audience audit — 2026-10-07](audience/audit-2026-10-07.md)
-- [Measuring whether the editorial voice helps readers](audience/editorial-measurement.md)
-- [Carousel or reel? What our first three weeks of publications show](audience/format-audit-2026-09-26/README.md)
-- [Adaptation shortlist](audience/format-audit-2026-09-26/adaptation-shortlist.md)
-- [Carousel versus reel: decision matrix](audience/format-audit-2026-09-26/decision-matrix.md)
-- [Measurement protocol for future observations](audience/format-audit-2026-09-26/measurement-protocol.md)
-- [Reconciliation candidates](audience/format-audit-2026-09-26/reconciliation-candidates.md)
-- [Exploratory comparison plan](audience/format-audit-2026-09-26/validation-plan.md)
-- [Page observations — 2026-09-30](audience/pages-2026-09-30.md)
-
 ## Runbooks — procedures, and records of ones already run
 
 - [Runbook — AFRIK corpus synchronization](runbooks/afrik-data-sync.md)

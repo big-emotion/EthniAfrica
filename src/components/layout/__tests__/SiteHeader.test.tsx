@@ -55,7 +55,7 @@ const t = getTranslation("fr");
  * The real corpus, not a fixture.
  *
  * The dossiers reach the header through a provider the `[lang]` layout fills
- * from disk, so a header rendered without one shows the axis's four surfaces
+ * from disk, so a header rendered without one shows the axis's three surfaces
  * and no dossier â€” which is a legitimate state (Storybook sits in it) but not
  * the one the panel assertions are about. Reading the corpus keeps these tests
  * describing what a reader meets rather than what a fixture invented.
@@ -552,13 +552,13 @@ describe("SiteHeader â€” reachable and mature are two questions (atlas charter Â
   };
 
   /**
-   * The Articles axis lists four destinations and promises nothing else: the
-   * listing, then the three retained collections, every one of them a link.
+   * The Articles axis lists three destinations and promises nothing else: the
+   * listing, then the two retained collections, every one of them a link.
    * The old dossier surfaces are withdrawn from the menu, so no row reads
    * BientÃ´t here.
    */
   // @req REQ-106
-  it("lists the four Articles destinations as links, none of them inert", () => {
+  it("lists the three Articles destinations as links, none of them inert", () => {
     renderHeader();
 
     fireEvent.click(screen.getByTestId(BURGER));
@@ -574,7 +574,6 @@ describe("SiteHeader â€” reachable and mature are two questions (atlas charter Â
       "site-nav-module-articles",
       "site-nav-module-anecdotes",
       "site-nav-module-proverbes",
-      "site-nav-module-galerie",
     ]);
     for (const entry of entries) {
       expect(entry.tagName).toBe("A");
@@ -583,26 +582,6 @@ describe("SiteHeader â€” reachable and mature are two questions (atlas charter Â
     expect(
       within(tray).getByTestId("site-nav-module-articles")
     ).toHaveAttribute("href", getLocalizedRoute("fr", "dossiersHub"));
-  });
-
-  // The gallery is filed beside the anecdotes and the proverbs, and opens like
-  // them now that its images are entered: a link, with no BientÃ´t chip.
-  // @req REQ-167
-  it("lists the gallery as a dossier entry", () => {
-    renderHeader();
-
-    fireEvent.click(screen.getByTestId(BURGER));
-    const tray = screen.getByRole("dialog");
-    fireEvent.click(
-      within(tray).getByRole("button", {
-        name: new RegExp(ACCESS_MODE_LABELS.dossiers),
-      })
-    );
-
-    const gallery = within(tray).getByTestId("site-nav-module-galerie");
-    expect(gallery).toHaveTextContent(t.hubs.moduleNames.galerie);
-    expect(gallery.tagName).toBe("A");
-    expect(gallery).not.toHaveTextContent(t.hubs.unavailableLabel);
   });
 
   // The panel's own title is the way to the hub, whatever the rubrics below
@@ -617,22 +596,22 @@ describe("SiteHeader â€” reachable and mature are two questions (atlas charter Â
     ).toHaveAttribute("href", getLocalizedRoute("fr", "dossiersHub"));
   });
 
-  // The panel is flat like its neighbours: four cards, no rubric headings.
+  // The panel is flat like its neighbours: three cards, no rubric headings.
   // @req REQ-114
-  it("draws the Articles panel flat, with the four destinations and no rubric headings", () => {
+  it("draws the Articles panel flat, with the three destinations and no rubric headings", () => {
     renderHeader();
     fireEvent.click(trigger(ACCESS_MODE_LABELS.dossiers));
 
     expect(
       within(panel()).queryAllByRole("heading", { level: 3 })
     ).toHaveLength(0);
-    expect(within(panel()).getAllByTestId(/^site-nav-module-/)).toHaveLength(4);
+    expect(within(panel()).getAllByTestId(/^site-nav-module-/)).toHaveLength(3);
     expect(panel()).not.toHaveTextContent(t.hubs.unavailableLabel);
   });
 
-  // The tray badge counts the four destinations the fold opens onto.
+  // The tray badge counts the three destinations the fold opens onto.
   // @req REQ-114
-  it("counts the four destinations in the tray badge", () => {
+  it("counts the three destinations in the tray badge", () => {
     renderHeader();
     fireEvent.click(screen.getByTestId(BURGER));
     const tray = screen.getByRole("dialog");
@@ -641,8 +620,8 @@ describe("SiteHeader â€” reachable and mature are two questions (atlas charter Â
     });
     fireEvent.click(fold);
 
-    expect(fold).toHaveTextContent("4");
-    expect(within(tray).getAllByTestId(/^site-nav-module-/)).toHaveLength(4);
+    expect(fold).toHaveTextContent("3");
+    expect(within(tray).getAllByTestId(/^site-nav-module-/)).toHaveLength(3);
   });
 
   // Jouer and the atlas are untouched: both declare no rubric filing, so the

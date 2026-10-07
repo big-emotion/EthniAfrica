@@ -142,18 +142,6 @@ describe("OpenAPI v2 search companions contract", () => {
         "sources",
         "match",
       ],
-      SearchCompanionImage: [
-        "id",
-        "href",
-        "slug",
-        "title",
-        "description",
-        "caption",
-        "image",
-        "generation",
-        "source",
-        "match",
-      ],
       SearchCompanionQuiz: [
         "id",
         "templateId",
@@ -211,7 +199,6 @@ describe("OpenAPI v2 search companions contract", () => {
       SearchCompanionShortSelection: [6, "SearchCompanionShort"],
       SearchCompanionAnecdoteSelection: [3, "SearchCompanionAnecdote"],
       SearchCompanionProverbSelection: [2, "SearchCompanionProverb"],
-      SearchCompanionImageSelection: [1, "SearchCompanionImage"],
     };
 
     for (const [name, [maximum, item]] of Object.entries(maximums)) {
@@ -248,14 +235,7 @@ describe("OpenAPI v2 search companions contract", () => {
   it("documents the bounded companion data and Module #0 success envelope", () => {
     expect(schemas.SearchCompanionsData).toMatchObject({
       type: "object",
-      required: [
-        "subjects",
-        "shorts",
-        "anecdotes",
-        "proverbs",
-        "images",
-        "quiz",
-      ],
+      required: ["subjects", "shorts", "anecdotes", "proverbs", "quiz"],
       properties: {
         subjects: { type: "array", maxItems: 20 },
         shorts: {
@@ -266,9 +246,6 @@ describe("OpenAPI v2 search companions contract", () => {
         },
         proverbs: {
           $ref: "#/components/schemas/SearchCompanionProverbSelection",
-        },
-        images: {
-          $ref: "#/components/schemas/SearchCompanionImageSelection",
         },
         quiz: {
           $ref: "#/components/schemas/SearchCompanionQuizSelection",

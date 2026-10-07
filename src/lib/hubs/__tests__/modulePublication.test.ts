@@ -37,18 +37,13 @@ describe("module publication", () => {
   // The freeze itself, stated as a number rather than a list, so adding a
   // dossier back is a deliberate edit to this line.
   // @req REQ-114
-  it("leaves the two banks rendered from code and the gallery as the only published dossiers", () => {
+  it("leaves the two banks rendered from code as the only published dossiers", () => {
     const published = getModulesForAccessMode("dossiers")
       .filter((module) => isModulePublished(module.id))
       .map((module) => module.id);
 
     // The article listing is published with them: it is the axis's own entry.
-    expect(published).toEqual([
-      "articles",
-      "anecdotes",
-      "proverbes",
-      "galerie",
-    ]);
+    expect(published).toEqual(["articles", "anecdotes", "proverbes"]);
   });
 
   // The freeze is confined to the dossiers: withdrawing the atlas or the

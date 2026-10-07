@@ -13,7 +13,6 @@ export type PageType =
   | "sources"
   | "anecdotes"
   | "proverbs"
-  | "gallery"
   | "discoveries"
   | "names"
   | "patronymes"
@@ -76,9 +75,6 @@ const SLUGS: Record<Language, Record<PageType, string>> = {
     sources: "sources",
     anecdotes: "dossiers/anecdotes",
     proverbs: "dossiers/proverbs",
-    // Provisional, like the French word: the name is art direction's to fix
-    // before the module opens, and a published slug is a 308 forever.
-    gallery: "dossiers/gallery",
     discoveries: "discoveries",
     // The two "name" objects again (DEC-038, see the French table): the
     // PageType named `names` is the ethnonym index, so its English slug is
@@ -121,7 +117,6 @@ const SLUGS: Record<Language, Record<PageType, string>> = {
     sources: "sources",
     anecdotes: "dossiers/anecdotes",
     proverbs: "dossiers/proverbes",
-    gallery: "dossiers/galerie",
     discoveries: "decouvertes",
     names: "atlas/appellations",
     // DEC-038 separates the two objects the corpus calls "name": an

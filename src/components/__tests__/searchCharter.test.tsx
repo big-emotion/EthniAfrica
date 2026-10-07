@@ -45,7 +45,6 @@ const IN_SCOPE_FILES = [
   "components/search/feed/FicheLinkBlock.tsx",
   "components/search/feed/FichesBlock.tsx",
   "components/search/feed/FurtherBlock.tsx",
-  "components/search/feed/ImageBlock.tsx",
   "components/search/feed/LensesBlock.tsx",
   "components/search/feed/OwedBlock.tsx",
   "components/search/feed/PlatesBlock.tsx",
