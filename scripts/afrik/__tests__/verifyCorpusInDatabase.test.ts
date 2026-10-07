@@ -150,6 +150,32 @@ describe("buildCorpusExpectations", () => {
     });
   });
 
+  // @req REQ-136
+  it("expects a language's content exactly as the loader persists it, fields the fiche declares included", () => {
+    const grebo = {
+      id: "grb",
+      name: "Grebo",
+      nameProvenance: "sourced",
+      whyProblematic: "Name given by outsiders.",
+      originDebated: true,
+      searchAnswer: { lead: "l" },
+      speakers: { byCountry: [{ country: "LBR" }] },
+      sources: [{ title: "not persisted in content" }],
+    };
+    const [row] = expectationFor("afrik_languages", {
+      ...corpus(),
+      languages: [grebo],
+    } as unknown as CorpusSnapshot).rows;
+
+    expect(row.content).toEqual({
+      nameProvenance: "sourced",
+      whyProblematic: "Name given by outsiders.",
+      originDebated: true,
+      searchAnswer: { lead: "l" },
+      speakers: { byCountry: [{ country: "LBR" }] },
+    });
+  });
+
   // @req REQ-032
   it("expects only the relation rows the loader can write: unique, non-empty, pointing at a loaded row", () => {
     expect(expectationFor("afrik_people_countries").rows).toEqual([
