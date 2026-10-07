@@ -21,11 +21,14 @@
   "publications": [
     {
       "network": "tiktok",
-      "format": "carrousel"
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7693877912294165762",
+      "publishedAt": "2026-10-07"
     },
     {
       "network": "instagram",
-      "format": "carrousel"
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DeMMi4QCNpA/"
     },
     {
       "network": "facebook",
