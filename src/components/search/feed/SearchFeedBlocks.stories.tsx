@@ -2,31 +2,24 @@ import { useState } from "react";
 import type { Decorator, Meta, StoryObj } from "@storybook/react";
 
 import { AppellationsBlock } from "@/components/search/feed/AppellationsBlock";
-import { FactsBlock } from "@/components/search/feed/FactsBlock";
 import { FichesBlock } from "@/components/search/feed/FichesBlock";
 import { FurtherBlock } from "@/components/search/feed/FurtherBlock";
 import { ImageBlock } from "@/components/search/feed/ImageBlock";
-import {
-  LensesBlock,
-  type FeedLensId,
-} from "@/components/search/feed/LensesBlock";
-import { OriginsBlock } from "@/components/search/feed/OriginsBlock";
+import { LensesBlock } from "@/components/search/feed/LensesBlock";
 import { OwedBlock } from "@/components/search/feed/OwedBlock";
-import { PeopleBlock } from "@/components/search/feed/PeopleBlock";
 import {
   PlatesBlock,
   type FeedPlateItem,
 } from "@/components/search/feed/PlatesBlock";
-import { ProseBlock } from "@/components/search/feed/ProseBlock";
 import { QuizBlock } from "@/components/search/feed/QuizBlock";
 import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSectionHeading";
 import { ShortsBlock } from "@/components/search/feed/ShortsBlock";
-import { TilesBlock } from "@/components/search/feed/TilesBlock";
 import { VerdictBlock } from "@/components/search/feed/VerdictBlock";
 import {
   FEED_CASES,
   type FeedCaseId,
 } from "@/lib/search/__fixtures__/feedCases";
+import type { FeedLensId } from "@/lib/search/searchLenses";
 import { cn } from "@/lib/utils";
 
 /**
@@ -197,8 +190,9 @@ function LensesDemo() {
       lenses={[
         { id: "all", label: "Tout" },
         { id: "shorts", label: "Shorts", count: 6 },
+        { id: "stories", label: "Récits", count: 3 },
         { id: "images", label: "Images", count: 1 },
-        { id: "quiz", label: "Quiz", count: 1 },
+        { id: "quiz", label: "Jeux", count: 1 },
         { id: "fiches", label: "Fiches", count: 4 },
       ]}
     />
@@ -268,46 +262,6 @@ export const ShortsEmptySlot: Story = {
 };
 
 // @req REQ-180
-export const Origins: Story = {
-  render: () => <OriginsBlock reviewed {...mandePresentation.origins} />,
-};
-
-// @req REQ-180
-export const OriginsDesktop: Story = atDesktop(Origins);
-
-// @req REQ-180
-export const OriginsNight: Story = atNight(Origins);
-
-// @req REQ-180
-export const Tiles: Story = {
-  render: () => <TilesBlock reviewed {...mandePresentation.tiles} />,
-};
-
-// @req REQ-180
-export const TilesNight: Story = atNight(Tiles);
-
-/** Ekpeye — the few facts the atlas holds, shown as a labelled grid. */
-// @req REQ-180
-export const Facts: Story = {
-  render: () => <FactsBlock {...ekpeye.board.presentation.facts} />,
-};
-
-// @req REQ-180
-export const FactsNight: Story = atNight(Facts);
-
-/** Bassa — one name, three peoples, no link between them. */
-// @req REQ-180
-export const People: Story = {
-  render: () => <PeopleBlock {...bassa.board.presentation.peoples} />,
-};
-
-// @req REQ-180
-export const PeopleDesktop: Story = atDesktop(People);
-
-// @req REQ-180
-export const PeopleNight: Story = atNight(People);
-
-// @req REQ-180
 export const Plates: Story = {
   render: () => (
     <PlatesBlock
@@ -352,25 +306,6 @@ export const GeneratedImage: Story = {
 
 // @req REQ-180
 export const GeneratedImageNight: Story = atNight(GeneratedImage);
-
-/** Bassa — the first prose block, with the standing of its source. */
-// @req REQ-180
-export const Prose: Story = {
-  render: () => {
-    const [block] = bassa.board.presentation.prose;
-    return (
-      <ProseBlock
-        blockId={block.id}
-        title={block.title}
-        paragraphs={block.paragraphs}
-        standing={block.standing}
-      />
-    );
-  },
-};
-
-// @req REQ-180
-export const ProseNight: Story = atNight(Prose);
 
 // @req REQ-180
 export const Fiches: Story = {

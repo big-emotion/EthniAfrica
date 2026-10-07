@@ -1,11 +1,8 @@
-import type { FlagFormTarget } from "@/components/flags/FlagForm";
 import { NamesBlock } from "@/components/search/answer/NamesBlock";
 import { NextQuestion } from "@/components/search/answer/NextQuestion";
 import { OriginBlock } from "@/components/search/answer/OriginBlock";
 import { SourcesLine } from "@/components/search/answer/SourcesLine";
 import { WhatBlock } from "@/components/search/answer/WhatBlock";
-import { OwedBlock } from "@/components/search/feed/OwedBlock";
-import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { wordAnswerCopy } from "@/lib/i18n/copy/wordAnswer";
 import type { WordAnswer } from "@/lib/search/answer";
 import type { Language } from "@/types/shared";
@@ -13,7 +10,6 @@ import type { Language } from "@/types/shared";
 export interface WordAnswerPageProps {
   answer: WordAnswer;
   language?: Language;
-  contributionTarget: FlagFormTarget;
 }
 
 /**
@@ -32,17 +28,12 @@ export interface WordAnswerPageProps {
 export function WordAnswerPage({
   answer,
   language = "fr",
-  contributionTarget,
 }: WordAnswerPageProps) {
   const copy = wordAnswerCopy[language];
-  const owed = nameAnswerCopy[language];
-  const hasForms = answer.names.length > 1 || Boolean(answer.path?.length);
+  const hasForms = answer.names.length > 0 || Boolean(answer.path?.length);
 
   return (
-    <div
-      data-word-answer=""
-      className="grid min-w-0 gap-afh-5xl pt-afh-2xl text-afh-text min-[1200px]:pt-afh-5xl"
-    >
+    <div data-word-answer="" className="contents">
       <div className="grid gap-afh-lg">
         <WhatBlock answer={answer} language={language} />
         <p className="max-w-[var(--afh-measure-prose)] text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
@@ -88,16 +79,6 @@ export function WordAnswerPage({
           </ul>
         </section>
       ) : null}
-      <OwedBlock
-        language={language}
-        conviction={{ title: owed.conviction, body: owed.convictionBody }}
-        invitation={{
-          title: owed.invitation,
-          body: owed.invitationBody,
-          action: owed.invitationAction,
-        }}
-        contributionTarget={contributionTarget}
-      />
     </div>
   );
 }

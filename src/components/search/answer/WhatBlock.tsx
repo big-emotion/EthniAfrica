@@ -85,6 +85,8 @@ export function WhatBlock({
         "flex flex-col gap-afh-base"
       )}
       data-answer-block="what"
+      data-feed-block="answer-what"
+      data-feed-zone="primary"
     >
       <span className="text-afh-eyebrow font-bold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[0.12em] text-[color:var(--accent-ink)]">
         {eyebrow}

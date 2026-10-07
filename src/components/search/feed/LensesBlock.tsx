@@ -4,15 +4,8 @@ import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { cn } from "@/lib/utils";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
+import type { FeedLens, FeedLensId } from "@/lib/search/searchLenses";
 import type { Language } from "@/types/shared";
-
-export type FeedLensId = "all" | "shorts" | "images" | "quiz" | "fiches";
-
-export interface FeedLens {
-  id: FeedLensId;
-  label: string;
-  count?: number;
-}
 
 export interface LensesBlockProps {
   language?: Language;

@@ -27,6 +27,8 @@ export interface WhereBarsProps {
   facts?: SearchAnswer["what"]["facts"];
   /** Names the country when two answers share the page. */
   heading?: string;
+  /** Peoples the fiche lists without a share, named beside the unsplit part. */
+  unsplitPeopleNames?: string[];
   language?: Language;
 }
 
@@ -49,6 +51,7 @@ export function WhereBars({
   labels = {},
   facts = {},
   heading,
+  unsplitPeopleNames,
   language = "fr",
 }: WhereBarsProps) {
   const copy = searchAnswerCopy[language];
@@ -65,6 +68,8 @@ export function WhereBars({
         "flex flex-col gap-afh-lg"
       )}
       data-answer-block="where"
+      data-feed-block="answer-where"
+      data-feed-zone="primary"
     >
       <h2 className={ANSWER_HEADING}>{title}</h2>
       {where.unit === "presence" ? (
@@ -75,6 +80,7 @@ export function WhereBars({
           label={label}
           facts={facts}
           heading={heading}
+          unsplitPeopleNames={unsplitPeopleNames}
           language={language}
         />
       )}
@@ -119,12 +125,14 @@ function Bars({
   label,
   facts,
   heading,
+  unsplitPeopleNames,
   language,
 }: {
   where: AnswerWhere;
   label: (row: AnswerWhereRow) => string;
   facts: SearchAnswer["what"]["facts"];
   heading?: string;
+  unsplitPeopleNames?: string[];
   language: Language;
 }) {
   const copy = searchAnswerCopy[language].where;
@@ -211,7 +219,10 @@ function Bars({
       ) : null}
       {isPercent && where.unsplitPercent ? (
         <p className="m-0 text-afh-caption leading-[var(--afh-leading-small)] text-afh-fg-muted">
-          {copy.unsplit(formatPercent(where.unsplitPercent, language))}
+          {copy.unsplit(
+            formatPercent(where.unsplitPercent, language),
+            unsplitPeopleNames?.join(", ")
+          )}
         </p>
       ) : null}
       {where.estimate && where.unit !== "percent" ? (

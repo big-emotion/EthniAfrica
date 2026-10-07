@@ -58,7 +58,8 @@ export interface SearchAnswerCopy {
     estimateSpeakers: string;
     estimatePopulation: string;
     peoplePresented: (count: number) => string;
-    unsplit: (percent: string) => string;
+    /** `peopleNames` is the comma-joined list of peoples the fiche lists without a share. */
+    unsplit: (percent: string, peopleNames?: string) => string;
     presenceHeadline: (countryCount: number) => string;
     presenceMissingFigures: string;
   };
@@ -168,8 +169,8 @@ export const searchAnswerCopy: Record<Language, SearchAnswerCopy> = {
       estimatePopulation: "Estimates, to be read as orders of magnitude.",
       peoplePresented: (count) =>
         `${count} ${count === 1 ? "people" : "peoples"} presented`,
-      unsplit: (percent) =>
-        `${percent} of the population is not yet split by people.`,
+      unsplit: (percent, peopleNames) =>
+        `${percent} of the population is not yet split by people${peopleNames ? ` (${peopleNames}…)` : ""}.`,
       presenceHeadline: (countryCount) =>
         `Carried in <strong>${countryCount}</strong> ${countryCount === 1 ? "country" : "countries"}:`,
       presenceMissingFigures:
@@ -273,8 +274,8 @@ export const searchAnswerCopy: Record<Language, SearchAnswerCopy> = {
       estimatePopulation: "Estimations, à lire comme des ordres de grandeur.",
       peoplePresented: (count) =>
         `${count} ${count === 1 ? "peuple présenté" : "peuples présentés"}`,
-      unsplit: (percent) =>
-        `${percent} de la population n'est pas encore répartie par peuple.`,
+      unsplit: (percent, peopleNames) =>
+        `${percent} de la population n'est pas encore répartie par peuple${peopleNames ? ` (${peopleNames}…)` : ""}.`,
       presenceHeadline: (countryCount) =>
         `Porté dans <strong>${countryCount}</strong> pays :`,
       presenceMissingFigures:

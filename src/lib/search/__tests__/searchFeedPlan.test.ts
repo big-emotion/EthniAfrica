@@ -1,195 +1,76 @@
-import path from "node:path";
-import { createElement } from "react";
-import { cleanup, render, waitFor } from "@testing-library/react";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { describe, expect, it } from "vitest";
 
-import { RecherchePageContent } from "@/components/pages/RecherchePageContent";
 import { FEED_CASES } from "@/lib/search/__fixtures__/feedCases";
+import { ANSWER_BLOCKS } from "@/lib/search/resultGrammar";
 import {
   buildSearchFeedPlan,
   classifySearchFeed,
   companionSubjectsForSearch,
   isSearchFeedSubject,
 } from "@/lib/search/searchFeedPlan";
-import {
-  loadSearchFeedManifest,
-  type SearchFeedManifestEntry,
-} from "../../../../e2e/support/search-feed-visual";
-
-const navigation = vi.hoisted(() => ({
-  query: "",
-  replace: vi.fn(),
-}));
-const loader = vi.hoisted(() => ({
-  search: vi.fn(),
-  searchWithLeads: vi.fn(),
-  loadSearchCompanions: vi.fn(),
-}));
-
-vi.mock("next/navigation", () => ({
-  useSearchParams: () => new URLSearchParams(navigation.query),
-  useRouter: () => ({
-    replace: navigation.replace,
-    push: vi.fn(),
-    back: vi.fn(),
-    forward: vi.fn(),
-    refresh: vi.fn(),
-    prefetch: vi.fn(),
-  }),
-}));
-
-vi.mock("@/hooks/use-language", () => ({
-  useLanguage: () => ({ language: "fr", setLanguage: vi.fn() }),
-}));
-
-vi.mock("@/lib/afrikLoader", async (importOriginal) => ({
-  ...(await importOriginal<typeof import("@/lib/afrikLoader")>()),
-  search: loader.search,
-  searchWithLeads: loader.searchWithLeads,
-  loadSearchCompanions: loader.loadSearchCompanions,
-}));
-
-vi.mock("@/components/layout/PageLayout", async () => {
-  const react = await import("react");
-  return {
-    PageLayout: ({ children }: { children?: import("react").ReactNode }) =>
-      react.createElement("div", { "data-testid": "page-layout" }, children),
-  };
-});
-
-const manifest = loadSearchFeedManifest(
-  path.join(process.cwd(), "docs/design/mockups/search-feed/manifest.json")
-);
-
-function setDesktop(matches: boolean) {
-  vi.stubGlobal("innerWidth", matches ? 1280 : 430);
-  vi.stubGlobal(
-    "matchMedia",
-    vi.fn().mockImplementation((media: string) => ({
-      matches,
-      media,
-      onchange: null,
-      addEventListener: vi.fn(),
-      removeEventListener: vi.fn(),
-      addListener: vi.fn(),
-      removeListener: vi.fn(),
-      dispatchEvent: vi.fn(),
-    }))
-  );
-}
-
-afterEach(() => {
-  cleanup();
-  vi.clearAllMocks();
-  vi.unstubAllGlobals();
-  navigation.query = "";
-});
-
-function manifestEntry(
-  caseId: string,
-  viewport: "mobile" | "desktop"
-): SearchFeedManifestEntry {
-  const entry = manifest.entries.find(
-    (candidate) =>
-      candidate.case === caseId && candidate.variant === `${viewport}-day`
-  );
-  if (!entry) throw new Error(`Missing manifest entry: ${caseId}/${viewport}`);
-  return entry;
-}
-
-function renderedBlocks(container: HTMLElement) {
-  return Array.from(
-    container.querySelectorAll<HTMLElement>("[data-feed-block]"),
-    (element) => ({
-      id: element.getAttribute("data-feed-block"),
-      zone: element.getAttribute("data-feed-zone"),
-    })
-  );
-}
-
-function renderedOwedParts(container: HTMLElement) {
-  return Array.from(
-    container.querySelectorAll<HTMLElement>(
-      '[data-feed-block="owed"] [data-feed-part]'
-    ),
-    (element) => element.getAttribute("data-feed-part")
-  );
-}
-
-function visibleReviewedCopy(value: string): string {
-  return value.replace(/<[^>]+>/g, "");
-}
 
 // @req REQ-180
 describe("search-feed plan", () => {
-  // @req REQ-180
-  it.each(
-    FEED_CASES.flatMap((fixture) =>
-      (["mobile", "desktop"] as const).map((viewport) => ({
-        fixture,
-        viewport,
-      }))
-    )
-  )(
-    "renders the approved $viewport page order from production projections for $fixture.id",
-    async ({ fixture, viewport }) => {
-      setDesktop(viewport === "desktop");
-      navigation.query = new URLSearchParams({ q: fixture.query }).toString();
-      loader.search.mockResolvedValue([]);
-      loader.searchWithLeads.mockResolvedValue({
-        ...fixture.production.search,
-        counts: {
-          ...fixture.production.search.counts,
-          all:
-            fixture.board.lenses.fiches ?? fixture.production.search.counts.all,
-        },
-        presentation: fixture.board.presentation,
-      });
-      loader.loadSearchCompanions.mockResolvedValue(
-        fixture.production.companions
-      );
-      const expected = manifestEntry(fixture.id, viewport);
+  // The answer is the page: the filters, the six blocks of each subject, the
+  // button to the fiche, then what the reader is owed. Nothing else stacks
+  // under it, whatever the companions hold.
+  // @req REQ-178
+  it("composes « Tout » as the answer when a subject carries one", () => {
+    const plan = buildSearchFeedPlan("exact", { answers: true, fiches: true });
 
-      const { container } = render(createElement(RecherchePageContent));
+    expect(plan.first).toEqual(["lenses"]);
+    expect(plan.primary).toEqual([...ANSWER_BLOCKS, "fiche-link"]);
+    expect(plan.closing).toEqual(["owed"]);
+  });
 
-      await waitFor(() => {
-        expect(container.querySelector("[data-feed-root]")).not.toBeNull();
-        expect(renderedBlocks(container)).toEqual(expected.blocks);
-      });
+  // A search that only widened still answers the name it found: the answer
+  // does not change because the companions around it are related, not exact.
+  // @req REQ-178
+  it("answers a widened search the same way as an exact one", () => {
+    expect(buildSearchFeedPlan("widened", { answers: true })).toEqual(
+      buildSearchFeedPlan("exact", { answers: true })
+    );
+  });
 
-      expect(renderedOwedParts(container)).toEqual(expected.owedParts);
-      expect(container).toHaveTextContent(
-        visibleReviewedCopy(fixture.board.copy.verdict)
-      );
-      expect(container).toHaveTextContent(
-        visibleReviewedCopy(fixture.board.copy.summary)
-      );
-      expect(loader.searchWithLeads).toHaveBeenCalledTimes(1);
-      expect(loader.searchWithLeads).toHaveBeenCalledWith(
-        fixture.query,
-        expect.objectContaining({
-          limit: 20,
-          lang: "fr",
-          signal: expect.any(AbortSignal),
-        })
-      );
-      expect(loader.loadSearchCompanions).toHaveBeenCalledTimes(1);
-      expect(loader.loadSearchCompanions).toHaveBeenCalledWith(
-        fixture.production.companions.subjects,
-        "fr",
-        expect.any(AbortSignal),
-        // The word rides along so a production about it can answer even when
-        // no entity does.
-        fixture.query
-      );
-    }
-  );
+  // A published word has no fiche to link to.
+  // @req REQ-184
+  it("drops the fiche button on the page of a published word", () => {
+    const plan = buildSearchFeedPlan("unknown", {}, { wordPage: true });
+
+    expect(plan.first).toEqual(["lenses"]);
+    expect(plan.primary).toEqual([...ANSWER_BLOCKS]);
+    expect(plan.closing).toEqual(["owed"]);
+  });
+
+  // @req REQ-178
+  it("opens with the verdict and the choices when no answer can be given", () => {
+    const plan = buildSearchFeedPlan("typo", {
+      appellations: true,
+      fiches: true,
+    });
+
+    expect(plan.first).toEqual(["verdict", "appellations", "lenses", "shorts"]);
+    expect(plan.primary).toEqual(["fiches"]);
+    expect(plan.closing).toEqual(["further"]);
+  });
+
+  // @req REQ-178
+  it("keeps the unknown-name closing: what is owed, then a way out", () => {
+    expect(buildSearchFeedPlan("unknown", {}).closing).toEqual([
+      "owed",
+      "further",
+    ]);
+  });
 
   // @req REQ-178
   it("does not add an owed closing for related-only results", () => {
     expect(
-      buildSearchFeedPlan("widened", {}, { relatedOnly: true }).mobile
-    ).toEqual(["verdict", "lenses", "shorts"]);
+      buildSearchFeedPlan("widened", { fiches: true }, { relatedOnly: true })
+    ).toEqual({
+      first: ["verdict", "lenses", "shorts"],
+      primary: ["fiches"],
+      closing: [],
+    });
   });
 
   // @req REQ-180

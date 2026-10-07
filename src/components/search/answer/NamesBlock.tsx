@@ -238,6 +238,8 @@ export function NamesBlock({
         "flex flex-col gap-afh-lg"
       )}
       data-answer-block="names"
+      data-feed-block="answer-names"
+      data-feed-zone="primary"
     >
       <h2 className={ANSWER_HEADING}>{copy.names.title[kind]}</h2>
       {hasPath ? (

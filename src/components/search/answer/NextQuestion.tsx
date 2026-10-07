@@ -111,11 +111,18 @@ export function NextQuestion({
         "focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
       )}
       data-answer-block="next"
+      data-feed-block="answer-next"
+      data-feed-zone="primary"
     >
       {body}
     </a>
   ) : (
-    <div className={cardClass} data-answer-block="next">
+    <div
+      className={cardClass}
+      data-answer-block="next"
+      data-feed-block="answer-next"
+      data-feed-zone="primary"
+    >
       {body}
     </div>
   );

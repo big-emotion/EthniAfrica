@@ -8,28 +8,17 @@ function block(name: string) {
 }
 
 describe("SearchFeedLayout", () => {
-  // @req REQ-180
-  it("preserves one canonical stream in mobile composition", () => {
+  // @req REQ-178
+  it("keeps every block in one stream, in the order it was given", () => {
     const { container } = render(
       <SearchFeedLayout
-        composition={{
-          mode: "mobile",
-          blocks: [
-            block("origins"),
-            block("tiles"),
-            block("plates"),
-            block("quiz"),
-            block("images"),
-            block("fiches"),
-          ],
-        }}
-        first={block("first")}
+        first={block("lenses")}
+        blocks={[block("answer-what"), block("answer-origin"), block("fiche")]}
         closing={[block("owed")]}
       />
     );
 
     const movement = screen.getByTestId("feed-movement");
-    expect(movement).toHaveAttribute("data-feed-composition", "mobile");
     expect(movement).toHaveClass(
       "flex",
       "flex-col",
@@ -39,108 +28,33 @@ describe("SearchFeedLayout", () => {
       Array.from(movement.querySelectorAll("[data-block]"), (node) =>
         node.getAttribute("data-block")
       )
-    ).toEqual(["origins", "tiles", "plates", "quiz", "images", "fiches"]);
-    expect(container.querySelectorAll('[data-block="quiz"]')).toHaveLength(1);
+    ).toEqual(["answer-what", "answer-origin", "fiche"]);
     expect(
       container.querySelector("[data-feed-stream='secondary']")
     ).toBeNull();
   });
 
-  // @req REQ-180
-  it("renders independent 8/4 desktop streams with the approved gutter", () => {
-    const { container } = render(
-      <SearchFeedLayout
-        composition={{
-          mode: "desktop-rich",
-          primary: [block("origins"), block("plates"), block("fiches")],
-          secondary: [block("tiles"), block("quiz"), block("images")],
-        }}
-        first={block("first")}
-        closing={[block("owed")]}
-      />
-    );
-
-    const movement = screen.getByTestId("feed-movement");
-    expect(movement).toHaveAttribute("data-feed-composition", "desktop-rich");
-    expect(movement).toHaveClass(
-      "min-[1200px]:grid",
-      "min-[1200px]:grid-cols-12",
-      "min-[1200px]:gap-afh-6xl"
-    );
-
-    const primary = container.querySelector('[data-feed-stream="primary"]');
-    const secondary = container.querySelector('[data-feed-stream="secondary"]');
-    expect(primary).toHaveClass(
-      "gap-[var(--afh-section-gap)]",
-      "min-[1200px]:col-span-8"
-    );
-    expect(secondary).toHaveClass(
-      "gap-[var(--afh-section-gap)]",
-      "min-[1200px]:col-span-4"
-    );
-    expect(
-      Array.from(primary!.children, (node) => node.getAttribute("data-block"))
-    ).toEqual(["origins", "plates", "fiches"]);
-    expect(
-      Array.from(secondary!.children, (node) => node.getAttribute("data-block"))
-    ).toEqual(["tiles", "quiz", "images"]);
-    expect(container.querySelectorAll('[data-block="quiz"]')).toHaveLength(1);
-  });
-
-  // @req REQ-180
-  it("keeps a desktop-thin feed in one centred 880 px stream", () => {
-    const { container } = render(
-      <SearchFeedLayout
-        composition={{
-          mode: "desktop-thin",
-          primary: [block("atlas-holds"), block("plates"), block("quiz")],
-        }}
-        first={block("first")}
-        closing={[block("owed"), block("further")]}
-      />
-    );
+  // The answer is prose: it never stretches past a reading measure, and it
+  // never splits into columns however wide the screen.
+  // @req REQ-178
+  it("centres a single 880 px column from 1200 px up", () => {
+    render(<SearchFeedLayout first={block("lenses")} blocks={[block("a")]} />);
 
     const layout = screen.getByTestId("feed-layout");
-    const movement = screen.getByTestId("feed-movement");
-    expect(movement).toHaveAttribute("data-feed-composition", "desktop-thin");
+    expect(layout).toHaveAttribute("data-feed-layout", "column");
     expect(layout).toHaveClass(
       "min-[1200px]:mx-auto",
-      "min-[1200px]:w-[880px]"
+      "min-[1200px]:w-[880px]",
+      "min-[1200px]:max-w-full"
     );
-    expect(
-      container.querySelector("[data-feed-stream='secondary']")
-    ).toBeNull();
-
-    const closing = container.querySelector('[data-feed-stream="closing"]');
-    expect(closing).toHaveClass("gap-[var(--afh-section-gap)]");
-    expect(
-      Array.from(closing!.children, (node) => node.getAttribute("data-block"))
-    ).toEqual(["owed", "further"]);
+    expect(layout.innerHTML).not.toMatch(/grid-cols/);
   });
 
-  // @req REQ-180
-  it("renders no hidden duplicate responsive tree", () => {
+  // @req REQ-178
+  it("inserts no empty movement between the opening and its closing", () => {
     const { container } = render(
       <SearchFeedLayout
-        composition={{
-          mode: "desktop-rich",
-          primary: [block("quiz")],
-          secondary: [],
-        }}
-        first={block("first")}
-      />
-    );
-
-    expect(container.querySelectorAll('[data-block="quiz"]')).toHaveLength(1);
-    expect(container.innerHTML).not.toMatch(/(?:hidden|min-\[1200px\]:hidden)/);
-  });
-
-  // @req REQ-180
-  it("does not insert an empty movement between an unknown answer and its closing", () => {
-    const { container } = render(
-      <SearchFeedLayout
-        composition={{ mode: "mobile", blocks: [] }}
-        first={block("first")}
+        first={block("verdict")}
         closing={[block("owed"), block("further")]}
       />
     );

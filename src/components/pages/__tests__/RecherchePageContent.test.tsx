@@ -1139,7 +1139,7 @@ describe("RecherchePageContent", () => {
   // The rail is gone rather than moved: pushing it below would have kept the
   // hierarchy it asserts and only changed where the assertion sits.
   // @req REQ-178
-  it("mounts exactly one viewport-specific feed tree", async () => {
+  it("mounts exactly one feed tree", async () => {
     mockFetch.mockResolvedValue(okJson(searchApiResponse));
     render(<RecherchePageContent />);
 
@@ -1153,7 +1153,7 @@ describe("RecherchePageContent", () => {
 
     const layout = await screen.findByTestId("feed-layout");
     expect(screen.getAllByTestId("feed-layout")).toHaveLength(1);
-    expect(layout).toHaveAttribute("data-feed-layout", "mobile");
+    expect(layout).toHaveAttribute("data-feed-layout", "column");
   });
 
   it("input uses autocomplete=off to prevent browser search history", () => {
@@ -1238,9 +1238,10 @@ describe("RecherchePageContent", () => {
       expect(screen.getByTestId("feed-block-lenses")).toBeInTheDocument();
     });
     expect(screen.getByRole("button", { name: "Tout" })).toBeInTheDocument();
+    // A filter with nothing behind it is not offered, not even with a zero.
     expect(
-      screen.getByRole("button", { name: "Shorts 0" })
-    ).toBeInTheDocument();
+      screen.queryByRole("button", { name: /^Shorts\b/ })
+    ).not.toBeInTheDocument();
     expect(
       screen.getByRole("button", { name: "Fiches 1" })
     ).toBeInTheDocument();

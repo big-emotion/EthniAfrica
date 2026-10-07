@@ -107,6 +107,29 @@ describe("WhereBars", () => {
     expect(screen.getByText("COD")).toBeInTheDocument();
   });
 
+  // The sentence about the share not yet split names the peoples the fiche
+  // lists but gives no figure for; it takes them from the page and prints
+  // nothing it was not given.
+  // @req REQ-178
+  it("names the peoples without a share next to the unsplit sentence", () => {
+    renderWhere("congo", { unsplitPeopleNames: ["Teke", "Mbochi"] });
+    expect(
+      screen.getByText(
+        "60 % de la population n'est pas encore répartie par peuple (Teke, Mbochi…)."
+      )
+    ).toBeInTheDocument();
+  });
+
+  // @req REQ-178
+  it("keeps the plain unsplit sentence when no people is left to name", () => {
+    renderWhere("congo");
+    expect(
+      screen.getByText(
+        "60 % de la population n'est pas encore répartie par peuple."
+      )
+    ).toBeInTheDocument();
+  });
+
   // @req REQ-178
   it("renders nothing without rows", () => {
     const { container } = render(

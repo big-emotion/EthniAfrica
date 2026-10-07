@@ -79,6 +79,8 @@ export function SourcesLine({
         "flex flex-wrap items-center justify-between gap-x-afh-lg border-y border-afh-border py-afh-md"
       )}
       data-answer-block="sources"
+      data-feed-block="answer-sources"
+      data-feed-zone="primary"
     >
       <span className="text-afh-small text-afh-text">
         <InlineMarkup text={copy.sources.summary(count)} />

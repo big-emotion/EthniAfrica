@@ -4,7 +4,7 @@ import type {
 } from "@/api/v2/schemas/searchCompanions";
 import type { SearchWithLeads } from "@/lib/afrikLoader";
 import {
-  FEED_BLOCKS,
+  ANSWER_BLOCKS,
   type FeedBlockId,
   type SearchResultState,
 } from "@/lib/search/resultGrammar";
@@ -16,91 +16,59 @@ export type SearchFeedAnswerState = Extract<
 >;
 
 export interface SearchFeedAvailability {
+  /** At least one matched subject carries the six-block answer. */
+  answers?: boolean;
+  /** The misspelling choices, or the forms of a related-only page. */
   appellations?: boolean;
-  origins?: boolean;
-  peoples?: boolean;
-  sharedName?: boolean;
-  tiles?: boolean;
-  atlasHolds?: boolean;
-  plates?: boolean;
-  quiz?: boolean;
-  images?: boolean;
-  problem?: boolean;
-  nearName?: boolean;
   fiches?: boolean;
 }
 
+/** The blocks « Tout » draws, by the zone of the page they belong to. */
 export interface SearchFeedPlan {
-  thin: boolean;
-  mobile: FeedBlockId[];
-  desktop: {
-    first: FeedBlockId[];
-    primary: FeedBlockId[];
-    secondary: FeedBlockId[];
-    closing: FeedBlockId[];
-  };
+  first: FeedBlockId[];
+  primary: FeedBlockId[];
+  closing: FeedBlockId[];
 }
 
 export interface SearchFeedPlanOptions {
   /** Related search hits exist, but no supported entity answers to the name. */
   relatedOnly?: boolean;
+  /** A published word answers the query; it has an answer and no fiche. */
+  wordPage?: boolean;
 }
 
-const AVAILABILITY_KEY: Partial<
-  Record<FeedBlockId, keyof SearchFeedAvailability>
-> = {
-  appellations: "appellations",
-  origins: "origins",
-  peoples: "peoples",
-  "shared-name": "sharedName",
-  tiles: "tiles",
-  "atlas-holds": "atlasHolds",
-  plates: "plates",
-  quiz: "quiz",
-  images: "images",
-  problem: "problem",
-  "near-name": "nearName",
-  fiches: "fiches",
-};
-
-const PRIMARY_BLOCKS = new Set<FeedBlockId>([
-  "origins",
-  "peoples",
-  "plates",
-  "fiches",
-]);
-
-function isAvailable(
-  id: FeedBlockId,
-  availability: SearchFeedAvailability
-): boolean {
-  const key = AVAILABILITY_KEY[id];
-  return key ? availability[key] === true : false;
-}
-
-// @req REQ-180
+/**
+ * What « Tout » holds. When something can answer the name, the answer is the
+ * page and nothing stacks under it: the shelves (shorts, stories, images,
+ * games, fiches) are reached through their filters. When nothing can — an
+ * unknown name, a misspelling, a relation browse — the page opens with a
+ * verdict, because those are the pages whose job is to say so.
+ */
+// @req REQ-178
 export function buildSearchFeedPlan(
   state: SearchFeedAnswerState,
   availability: SearchFeedAvailability,
   options: SearchFeedPlanOptions = {}
 ): SearchFeedPlan {
-  // The answer and the forms come before the filters: a filter refines the
-  // exploration stream below, never the answer to the searched name.
+  if (options.wordPage) {
+    return {
+      first: ["lenses"],
+      primary: [...ANSWER_BLOCKS],
+      closing: ["owed"],
+    };
+  }
+  if (availability.answers) {
+    return {
+      first: ["lenses"],
+      primary: [...ANSWER_BLOCKS, "fiche-link"],
+      closing: ["owed"],
+    };
+  }
+
   const first: FeedBlockId[] = ["verdict"];
   if (availability.appellations) first.push("appellations");
   first.push("lenses", "shorts");
 
-  const movement = FEED_BLOCKS.filter(
-    (id) =>
-      ![
-        "lenses",
-        "verdict",
-        "appellations",
-        "shorts",
-        "owed",
-        "further",
-      ].includes(id) && isAvailable(id, availability)
-  );
   const closing: FeedBlockId[] = [];
   if (
     !options.relatedOnly &&
@@ -110,18 +78,10 @@ export function buildSearchFeedPlan(
   }
   if (state === "typo" || state === "unknown") closing.push("further");
 
-  const thin = state !== "exact";
-  const primary = thin
-    ? movement
-    : movement.filter((id) => PRIMARY_BLOCKS.has(id));
-  const secondary = thin
-    ? []
-    : movement.filter((id) => !PRIMARY_BLOCKS.has(id));
-
   return {
-    thin,
-    mobile: [...first, ...movement, ...closing],
-    desktop: { first, primary, secondary, closing },
+    first,
+    primary: availability.fiches ? ["fiches"] : [],
+    closing,
   };
 }
 
