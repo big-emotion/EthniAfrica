@@ -1,0 +1,26 @@
+{
+  "campaign": "baoule-d-ou-vient-le-nom",
+  "typologie": "peuple",
+  "episode": 17,
+  "question": {
+    "fr": "D'où vient le nom Baoulé ?"
+  },
+  "myth": {
+    "fr": "Baoulé veut-il vraiment dire « l'enfant est mort » ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_BAOULE",
+      "label": { "fr": "Baoulé" }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_BAOULE",
+  "publications": [
+    { "network": "tiktok", "format": "carrousel" },
+    { "network": "instagram", "format": "carrousel" },
+    { "network": "facebook", "format": "carrousel" },
+    { "network": "youtube", "format": "carrousel" },
+    { "network": "linkedin", "format": "carrousel" }
+  ]
+}
