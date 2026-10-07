@@ -23,14 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une explication relie Zinsou aux jumeaux : le nom est traditionnellement donné à des jumeaux de sexe masculin, tenus pour des êtres exceptionnels et, chez les Fon et les Yoruba, traités avec un respect proche du culte. La page qui le dit parle d'un artiste béninois connu sous le nom de Zinsou ; elle ne cite aucune source pour ce sens et ne dit pas comment il est devenu un nom de famille.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["pigozzi-zinsou"]
-      }
-    ],
-    "historicalSyntheses": []
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -66,20 +59,12 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Page Forebears propre à Zinsou, consultée directement. La base agrégée atteste la graphie et sa distribution dans BEN, mais ne donne aucun sens ; elle précise qu'une distribution géographique ne permet pas d'inférer une appartenance ethnique. Ces données sont donc conservées au niveau « unverified » et ne soutiennent aucune étymologie."
-    },
-    {
-      "sourceKey": "pigozzi-zinsou",
-      "title": "Zinsou (artiste), notice de la collection Jean Pigozzi d'art africain contemporain",
-      "url": "https://www.caacart.com/artiste/zinsou/",
-      "tier": "unverified",
-      "source_kind": "community",
-      "notes": "Lu en ligne, sans date : la notice dit que « le nom zinsou est traditionnellement donné aux jumeaux de sexe masculin ». Page de collectionneur consacrée à un artiste, non travail d'onomastique ; elle ne cite aucune source pour ce point."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Le sens ci-dessus repose sur une seule page en ligne, qui parle d'un artiste ; aucun travail d'anthroponymie fon lu ne le confirme ni ne dit comment il est devenu un nom de famille. La distribution observée n'est pas interprétée comme une origine."
+      "reason": "Les recherches bibliographiques et web « Zinsou fon anthroponymie étymologie », « Zinsou onomastique » et « Zinsou surname meaning », ainsi que la page Forebears propre au nom, n'ont livré aucune étymologie ni histoire de formation vérifiable. La distribution observée n'est pas interprétée comme une origine."
     },
     {
       "fieldPath": "peoples",
@@ -109,10 +94,5 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les sources consultées ne permettent pas de déterminer si Zinsou désigne historiquement un lignage, un clan ou une autre unité sociale."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

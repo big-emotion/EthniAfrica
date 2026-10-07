@@ -23,14 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dossou est un prénom fon donné à un garçon né juste après des jumeaux. Une explication relie donc le nom à cette place dans la naissance. Les deux pages consultées le disent du prénom ; elles ne disent pas comment il est devenu un nom de famille.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["wiktionnaire-prenoms-beninois", "ultimes-griots-dossou"]
-      }
-    ],
-    "historicalSyntheses": []
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -66,28 +59,12 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Page Forebears propre à Dossou, consultée directement. La base agrégée atteste la graphie et sa distribution dans BEN, mais ne donne aucun sens ; elle précise qu'une distribution géographique ne permet pas d'inférer une appartenance ethnique. Ces données sont donc conservées au niveau « unverified » et ne soutiennent aucune étymologie."
-    },
-    {
-      "sourceKey": "wiktionnaire-prenoms-beninois",
-      "title": "Annexe : Signification des prénoms endogènes béninois (Wiktionnaire)",
-      "url": "https://fr.wiktionary.org/wiki/Annexe:Signification_des_pr%C3%A9noms_endog%C3%A8nes_b%C3%A9ninois",
-      "tier": "unverified",
-      "source_kind": "community",
-      "notes": "Lu en ligne : l'entrée Dossou donne « garçon né après la naissance de jumeaux » et renvoie à un article intitulé « Disparition progressive des prénoms endogènes », que nous n'avons pas pu lire. La liste porte sur des prénoms, pas sur des noms de famille."
-    },
-    {
-      "sourceKey": "ultimes-griots-dossou",
-      "title": "Dossou : sens et origine (Ultimes Griots)",
-      "url": "https://www.ultimesgriots.com/en_US/prenoms-africains/dossou/",
-      "tier": "unverified",
-      "source_kind": "community",
-      "notes": "Lu en ligne : la page donne Dossou comme prénom de garçon d'origine fon, utilisé au Bénin, qui signifie un garçon né après des jumeaux (la page est en anglais). Elle ne cite aucune source et parle du prénom, non du nom de famille."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Le sens ci-dessus repose sur deux pages en ligne qui parlent du prénom ; aucun travail d'anthroponymie fon lu ne le confirme ni ne dit comment il est devenu un nom de famille. La distribution observée n'est pas interprétée comme une origine."
+      "reason": "Les recherches bibliographiques et web « Dossou fon anthroponymie étymologie », « Dossou onomastique » et « Dossou surname meaning », ainsi que la page Forebears propre au nom, n'ont livré aucune étymologie ni histoire de formation vérifiable. La distribution observée n'est pas interprétée comme une origine."
     },
     {
       "fieldPath": "peoples",
@@ -117,10 +94,5 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les sources consultées ne permettent pas de déterminer si Dossou désigne historiquement un lignage, un clan ou une autre unité sociale."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

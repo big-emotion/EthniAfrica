@@ -23,14 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [],
-    "historicalSyntheses": [
-      {
-        "claim": "Une explication relie ce nom à un séjour en Angleterre. À Petit-Popo (Aného), Akouété Zankli, fils de Laté Awoukou, aurait été envoyé en Angleterre pour y apprendre à lire, à écrire et à compter ; revenu au début du XIXe siècle, totalement anglicisé, il aurait porté le nom de George Lawson et il est tenu pour l'ancêtre fondateur de la famille Lawson. Le texte lu ne dit pas d'où vient le mot Lawson lui-même ni qui le lui a donné ; il décrit le nom d'un homme, non celui de tous les porteurs actuels.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["wikipedia-fr-famille-lawson"]
-      }
-    ]
+    "linguisticReconstructions": []
   },
   "peoples": [],
   "countries": [
@@ -52,20 +45,12 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
-    },
-    {
-      "sourceKey": "wikipedia-fr-famille-lawson",
-      "title": "Famille Lawson (Wikipédia en français), section Origines",
-      "url": "https://fr.wikipedia.org/wiki/Famille_Lawson",
-      "tier": "unverified",
-      "source_kind": "community",
-      "notes": "Lu en ligne : « Laté Awoukou aurait envoyé l'un de ses fils, Akouété Zankli, en Angleterre pour qu'il y apprenne à lire, à écrire et à compter. Revenu à Petit-Popo au début du XIXe siècle, ce dernier en serait revenu totalement anglicisé. Arborant désormais le nom de George Lawson, il est connu comme l'ancêtre fondateur de la famille Lawson. » L'article s'appuie sur Adam Jones et Peter Sebald, Le grand livre des Lawson (L'Harmattan, 2018, pp. 14-15 et 34), édition française de An African Family Archive: The Lawsons of Little Popo/Aneho (Togo) 1841-1938 (Oxford University Press, 2005), que nous n'avons pas lu en entier ; il dit aussi que la famille reconnaît cet homme sous le nom de George Akouété Lawson Ier. Un extrait en ligne de ce livre appelle ce même homme « Lawson (alias Akwete Zankli) » sans expliquer le nom."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous n'avons lu qu'un article de Wikipédia sur la famille Lawson d'Aného ; le livre qu'il cite n'a pas été lu et aucune source sur d'autres porteurs du nom n'a été trouvée."
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
       "fieldPath": "alliances",
@@ -91,10 +76,5 @@
       "fieldPath": "peoples",
       "reason": "« Lawson » a été cherchée dans nos fiches peuple — appellations, ethnicités, organisation clanique, prose historique et sources — pour une seule occurrence, écartée : l'unique occurrence est le nom d'un auteur dans le titre d'une source de la fiche Ogbia, non une attestation onomastique. Aucun des 25 peuples du corpus présents dans le pays de la fiche (Togo) ne rattache ce nom à un groupe, et aucune source dédiée n'a encore été consultée pour ce nom."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }
