@@ -32,13 +32,27 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Une explication relie le nom au mot fang obam, qui désigne l'épervier (Melierax). La liste des noms de personnes fang et makina du chercheur donne ce sens en face de Obame.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["agyune-ndone-anthroponymie-makina-fang"]
+      },
+      {
+        "claim": "Pour les porteurs makina, le chercheur juge « probable » que Obame soit une forme adaptée au fang du nom shiwe Bame, qui veut dire « cicatrice » ; ce jugement porte sur une liste de noms dont Obame fait partie. Pour les porteurs fang, l'article ne dit rien de la manière dont le nom a été choisi.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["agyune-ndone-anthroponymie-makina-fang"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_FANG",
-      "status": "supposed",
-      "sourceRefs": ["forebears-obame"]
+      "status": "attested",
+      "sourceRefs": [
+        "forebears-obame",
+        "agyune-ndone-anthroponymie-makina-fang"
+      ]
     }
   ],
   "countries": [
@@ -60,12 +74,20 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement. Elle atteste Obame principalement au Gabon, mais n'en donne pas la signification et précise que la géographie ne suffit pas à attribuer une appartenance ethnique."
+    },
+    {
+      "sourceKey": "agyune-ndone-anthroponymie-makina-fang",
+      "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+      "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Fabrice Agyune Ndone, alors doctorant en anthropologie (Université Omar Bongo et Lyon 2), article diffusé en texte intégral par le laboratoire Dynamique du langage ; la date de publication n'est pas indiquée dans le fichier. Il compare les noms de personnes relevés auprès d'une centaine d'informateurs fang, de soixante makina et de soixante saké. Pages du fichier PDF : la liste des noms fang (p. 5), le récit des informateurs shiwe sur Ndong (p. 7), le tableau des sens et la discussion qui suit (p. 11 et suivantes). La numérotation imprimée n'apparaît pas dans le fichier. L'article traite des noms propres makina et fang dans leur ensemble ; il ne consacre pas de section à chaque nom, et c'est son tableau qui donne le sens."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Obame », « Obamé », « Fang », « Gabon », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », les travaux sur les noms propres gabonais, ainsi que la page Forebears dédiée n'ont livré aucune tradition attribuée, chronique ou étude linguistique propre à ce nom qui en établirait l'origine ; les rapprochements fondés sur la seule ressemblance ou la seule géographie ont été écartés."
+      "reason": "Nous n'avons trouvé qu'une seule étude qui donne un sens à ce nom, écrite par un chercheur dont l'article ne dit pas s'il appartient à ces familles : aucun récit de famille, aucune chronique ni aucune autre étude sur Obame n'a été trouvé. Le sens de l'épervier est donné sans que l'article dise comment le nom a été choisi, et le rapprochement avec le nom shiwe Bame (« cicatrice ») ne vaut que pour les Makina. Nous n'avons pas pu consulter le dictionnaire des noms propres gabonais de Raponda Walker (1993), que l'article cite."
     },
     {
       "fieldPath": "nameSystem",
@@ -91,5 +113,10 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Obame », « Obamé », « Fang », « Gabon », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », les travaux sur les noms propres gabonais, ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
+    }
+  }
 }
