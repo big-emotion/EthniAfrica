@@ -10,15 +10,16 @@ series within EthniAfrica, limited to TikTok and Instagram. Its six-card
 reference records the Sunday cadence and opening subjects. These two social
 accounts may cover more than the website; the site's remit remains unchanged.
 
-| Document                                                                 | Role                                                                                                                                |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| [Product brief, Oct–Dec 2026](product-brief-2026-10.md)                  | Project-wide vision and next-phase scope: reference first, the social-to-site bridge, a validating team before end of November      |
-| [Original report](report-2026-09-22.md)                                  | Preserve the report the operator endorsed, with its original limits                                                                 |
-| [Current evidence](evidence-2026-09-22.md)                               | Dated six-network collection, comparables, corrections and gaps                                                                     |
-| [Thirteen-week roadmap](roadmap-2026-q4.md)                              | Sequence, dated slots, research briefs, audience reviews and continental horizon                                                    |
-| [Alignment plan](alignment-plan-2026-09-22.md)                           | Ordered work, owners, acceptance checks, dependencies and completion status                                                         |
-| [Mali/Dioula/Traoré research](research-mali-dioula-traore-2026-09-22.md) | S1/S3/S4 research readiness: sourced findings, what can be said now, what still needs an episode, and a fiche-by-fiche corpus check |
-| [Social profiles](profiles-2026-09-22.md)                                | Proposed bios for the six accounts, with character counts; nothing applied                                                          |
+| Document                                                                 | Role                                                                                                                                 |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| [Product brief, Oct–Dec 2026](product-brief-2026-10.md)                  | Project-wide vision and next-phase scope: reference first, the social-to-site bridge, a validating team before end of November       |
+| [Original report](report-2026-09-22.md)                                  | Preserve the report the operator endorsed, with its original limits                                                                  |
+| [Current evidence](evidence-2026-09-22.md)                               | Dated six-network collection, comparables, corrections and gaps                                                                      |
+| [Thirteen-week roadmap](roadmap-2026-q4.md)                              | Sequence, dated slots, research briefs, audience reviews and continental horizon                                                     |
+| [Alignment plan](alignment-plan-2026-09-22.md)                           | Ordered work, owners, acceptance checks, dependencies and completion status                                                          |
+| [Mali/Dioula/Traoré research](research-mali-dioula-traore-2026-09-22.md) | S1/S3/S4 research readiness: sourced findings, what can be said now, what still needs an episode, and a fiche-by-fiche corpus check  |
+| [Social profiles](profiles-2026-09-22.md)                                | Proposed bios for the six accounts, with character counts; nothing applied                                                           |
+| [Publishing plan, week of 2026-10-07](plan-2026-10-07.md)                | Volume back to the envelope, clips off TikTok, a weekly reader-question piece, direct URLs on Facebook, next pieces with comparables |
 
 The [production ledger](../../productions/README.md) owns cadence and actual
 publication records. [GABARITS-SOCIAL](../../design/gabarits-social/GABARITS-SOCIAL.md)
