@@ -28,7 +28,7 @@
     "Zhu'oasi",
     "Žhu|hõasi"
   ],
-  "whyProblematic": null,
+  "whyProblematic": "Ju|'hoan repose sur le mot ju, « gens » (article de Wikipédia). La traduction « vrais gens » est rapportée pour Ju|'hoansi (Lee). Ju|'hoansi est le nom que le peuple se donne, et la langue le suit. D'après l'article de Wikipédia sur les langues ǃKung, les locuteurs de presque tous les parlers voisins se disent ǃKung ; on emploie ǃKung quand on les voit comme une seule langue et Ju quand on y voit une petite famille de langues. Xun et Zhu sont d'autres façons d'écrire ces noms. D'où vient le mot ǃKung n'est pas établi dans les sources lues.",
   "spellingAliases": [],
   "familyId": "FLG_KXA",
   "peoples": [],
@@ -42,7 +42,30 @@
         "url": "https://glottolog.org/resource/languoid/id/juho1239",
         "tier": "official",
         "notes": "Glottolog name: South-Eastern Ju; Ju|'hoan is an attested name and the classification includes Kxa. Les dialectes listés sont les sous-languoids que Glottolog rattache à juho1239, hors languoids portant leur propre code ISO 639-3."
+      },
+      {
+        "title": "Lee, Richard B., The Dobe Ju/'Hoansi, 4e éd., Cengage Learning, 2012",
+        "url": "https://cclib.ucsd.edu/library/details.aspx?ID=3255",
+        "tier": "referenced",
+        "notes": "Seule la page de présentation de l'ouvrage a été lue : elle traduit Ju/'hoansi par « real people ». Le livre n'a pas été lu."
+      },
+      {
+        "title": "Wikipédia (anglais) — Juǀʼhoan language",
+        "url": "https://en.wikipedia.org/wiki/Ju%C7%80%CA%BChoan_language",
+        "tier": "unverified",
+        "notes": "Section sur le nom, lue en ligne : ju, « gens ». Le passage ne cite pas de publication."
+      },
+      {
+        "title": "Wikipédia (anglais) — ǃKung languages",
+        "url": "https://en.wikipedia.org/wiki/%C7%83Kung_languages",
+        "tier": "unverified",
+        "notes": "Section sur le nom, lue en ligne : emploi de ǃKung et de Ju, et variantes d'écriture. Le passage ne cite pas de publication."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the language fiches carrying a name-origin text are translated together."
+    }
   }
 }

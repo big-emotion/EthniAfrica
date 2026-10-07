@@ -49,8 +49,17 @@
           "url": "https://glottolog.org/resource/languoid/id/yoru1245",
           "tier": "official",
           "notes": ""
+        },
+        {
+          "title": "Histoire générale de l'Afrique, VI, ch. 26 : Dahomey, pays yoruba, Borgu (Borgou) et Bénin au XIXe siècle",
+          "author": "A. I. Asiwaju",
+          "year": 1996,
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+          "tier": "official",
+          "notes": "UNESCO, volume dirigé par Jacob F. Ade Ajayi. Page 745 : « L'aire culturelle yoruba (nago dans la littérature ethnographique française) »."
         }
-      ]
+      ],
+      "shortLine": "Le nom que la littérature ethnographique française donne aux Yoruba."
     }
   ]
 }

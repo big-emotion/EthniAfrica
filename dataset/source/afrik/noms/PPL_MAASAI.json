@@ -35,7 +35,8 @@
           "tier": "referenced",
           "notes": "Attestation de l'étymologie « one who speaks the Maa language »."
         }
-      ]
+      ],
+      "shortLine": "Ceux qui parlent le maa, leur langue."
     },
     {
       "nameText": "Masai",
@@ -57,7 +58,8 @@
           "tier": "referenced",
           "notes": "« Maasai is also known as Masai or Maa. »"
         }
-      ]
+      ],
+      "shortLine": "Autre graphie de Maasai, sans le double a."
     }
   ]
 }
