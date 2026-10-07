@@ -286,7 +286,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "patronyme-fiches",
     label: "fiches de nom",
-    value: 613,
+    value: 617,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +
@@ -298,7 +298,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "patronyme-non-hereditary",
     label: "systèmes documentés où le nom ne se transmet pas",
-    value: 171,
+    value: 175,
     method:
       "fiches de nom recherchées dont transmissionMode vaut non_hereditary, au " +
       "même périmètre que le compte ci-dessus",
