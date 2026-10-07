@@ -137,6 +137,29 @@ describe("checkSearchAnswerFields", () => {
   });
 
   // @req REQ-178
+  it.each([true, false])("accepts originDebated: %s on a language", (flag) => {
+    languageWith({ originDebated: flag });
+    expect(checkSearchAnswerFields(root).ok).toBe(true);
+  });
+
+  // @req REQ-178
+  it("rejects an originDebated that is not a boolean", () => {
+    languageWith({ originDebated: "yes" });
+    const { ok, errors } = checkSearchAnswerFields(root);
+    expect(ok).toBe(false);
+    expect(errors.join("\n")).toMatch(/originDebated must be a boolean/);
+  });
+
+  // @req REQ-178
+  it("rejects originDebated on a class whose names are read elsewhere", () => {
+    writeFiche("peuples/FLG_X/PPL_FULA.json", {
+      id: "PPL_FULA",
+      content: { originDebated: true },
+    });
+    expect(checkSearchAnswerFields(root).ok).toBe(false);
+  });
+
+  // @req REQ-178
   it("accepts a declared speaker estimate with a tagged source", () => {
     languageWith({
       speakers: {

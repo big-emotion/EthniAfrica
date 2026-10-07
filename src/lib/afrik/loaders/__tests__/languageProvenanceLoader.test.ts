@@ -184,6 +184,21 @@ describe("loadLanguages", () => {
     });
   });
 
+  // The answer page reads this flag from `content`; a loader that drops it
+  // leaves a debated language name presented as settled.
+  // @req REQ-178
+  it("persists the declared originDebated flag, false included", async () => {
+    const double = createSupabaseDouble();
+
+    await loadLanguages(asClient(double), [
+      sourced({ id: "lin", originDebated: true }),
+      sourced({ id: "yor", originDebated: false }),
+    ]);
+
+    expect(double.languages[0].content).toMatchObject({ originDebated: true });
+    expect(double.languages[1].content).toMatchObject({ originDebated: false });
+  });
+
   // Without this the answer page never sees what the fiche declares for it:
   // the search RPC returns `content` whole, and a language's content is
   // whitelisted field by field.
