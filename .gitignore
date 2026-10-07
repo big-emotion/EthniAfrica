@@ -158,12 +158,9 @@ dataset/source/afrik/logs/
 # source. The approved media library lives outside the repository.
 output/
 
-# The social render engine is Python. Its bytecode caches and its virtualenv are
-# build products of a machine, not source; `social/harness/requirements.txt` is
-# what actually pins the dependencies.
+# Python bytecode (the mockup generators).
 __pycache__/
 *.pyc
-social/harness/venv/
 Claude outputs/
 skills-lock.json
 .env*

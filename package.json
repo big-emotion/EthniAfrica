@@ -67,8 +67,6 @@
     "test:a11y": "npx playwright install chromium && tsx scripts/a11y-test.ts",
     "test:charter-contracts": "tsx scripts/runCharterContracts.ts",
     "test:coverage": "vitest run --coverage",
-    "test:social-engine": "python3 social/harness/run-tests.py",
-    "test:social-tools": "cd social/tools && node --test",
     "test:ui": "vitest --ui",
     "test:watch": "vitest",
     "translate:record": "tsx scripts/translateRecord.ts",

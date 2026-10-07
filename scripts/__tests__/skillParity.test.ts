@@ -275,8 +275,8 @@ describe("listCanonicalSkills", () => {
     expect(listCanonicalSkills(projectRoot)).toEqual(
       expect.arrayContaining([
         "afrik-curator",
-        "ethniafrica-idee",
-        "ethniafrica-production",
+        "ethniafrica-spec",
+        "ethniafrica-release",
       ])
     );
   });

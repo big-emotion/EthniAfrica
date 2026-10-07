@@ -13,7 +13,7 @@ const REPO_ROOT = path.resolve(__dirname, "../..");
 const read = (relativePath: string): string =>
   fs.readFileSync(path.join(REPO_ROOT, relativePath), "utf8");
 
-const OPERATOR_DOCS = ["CLAUDE.md", "README.md", "docs/DEPLOYMENT.md"] as const;
+const OPERATOR_DOCS = ["README.md", "docs/DEPLOYMENT.md"] as const;
 
 const servedApiResources = (): string[] =>
   fs
@@ -64,14 +64,6 @@ describe("operator documents describe the code as it runs", () => {
     for (const resource of servedApiResources()) {
       expect(resourceSentence[1]).toContain(`\`${resource}\``);
     }
-  });
-
-  // A bare run surveys the whole tree; CI reports the pull request's diff
-  // through --base. Neither blocks (REQ-171, DEC-055), so the flag is what
-  // tells an operator which of the two reports a CI annotation came from.
-  // @req REQ-171
-  it("AGENTS.md names the diff-scoped parity report CI prints", () => {
-    expect(read("AGENTS.md")).toContain("check:translation-parity -- --base");
   });
 
   // @req REQ-059

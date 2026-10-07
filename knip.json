@@ -12,7 +12,6 @@
     "eslint/**/*.js",
 
     "scripts/**/*.{ts,mjs,cjs}!",
-    "social/tools/**/*.mjs!",
     "e2e/**/*.ts",
     "src/test/server-only-stub.ts",
     "src/test/resolveAsyncServerComponents.tsx",
@@ -26,9 +25,9 @@
   "project": [
     "src/**/*.{ts,tsx}!",
     "!src/components/fiche/ficheStoryViewports.ts!",
+    "!src/test/**!",
     "{next,tailwind}.config.ts!",
     "scripts/**/*.{ts,mjs}!",
-    "social/tools/**/*.mjs!",
     "e2e/**/*.ts"
   ],
   "tailwind": { "entry": ["tailwind.config.ts!"] },

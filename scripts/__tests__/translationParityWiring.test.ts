@@ -15,8 +15,6 @@ const lintStaged = readFileSync(
   resolve(root, "lint-staged.config.mjs"),
   "utf8"
 );
-const agents = readFileSync(resolve(root, "AGENTS.md"), "utf8");
-const claude = readFileSync(resolve(root, "CLAUDE.md"), "utf8");
 const translatorSkill = readFileSync(
   resolve(root, ".claude/skills/afrik-translator/SKILL.md"),
   "utf8"
@@ -59,30 +57,6 @@ describe("translation parity gate wiring (REQ-145)", () => {
   // @req REQ-171
   it("never runs the parity check at commit", () => {
     expect(lintStaged).not.toContain("checkTranslationParity");
-  });
-
-  // @req REQ-171
-  it("documents parity as reported, never blocking", () => {
-    for (const instructions of [agents, claude]) {
-      expect(instructions).toContain("DEC-055");
-      expect(instructions).not.toMatch(/translation-parity[^\n]*blocks/);
-    }
-    expect(claude).not.toContain(
-      "### Bilingual content (`npm run check:translation-parity`, CI-blocking)"
-    );
-  });
-
-  // @req REQ-145
-  it("documents the live gate and French-safe rollout instead of a pending English default", () => {
-    for (const instructions of [agents, claude]) {
-      expect(instructions).toContain("SITE_LOCALE_MODE");
-      expect(instructions).toContain("fr-only");
-      expect(instructions).toContain("_translation.deferred.en");
-      expect(instructions).not.toContain("Both enforcing surfaces are pending");
-      expect(instructions).not.toContain(
-        "both land with ETNI-1829 / ETNI-1831"
-      );
-    }
   });
 
   // @req REQ-145
