@@ -3,7 +3,6 @@
 import { useId, useState } from "react";
 
 import {
-  ANSWER_ACCENT_CLASS,
   ANSWER_BLOCK,
   ANSWER_HEADING,
   ANSWER_TEXT_BUTTON,
@@ -67,11 +66,7 @@ export function OriginBlock({
 
   return (
     <section
-      className={cn(
-        ANSWER_BLOCK,
-        ANSWER_ACCENT_CLASS[kind],
-        "flex flex-col gap-afh-lg"
-      )}
+      className={cn(ANSWER_BLOCK, "flex flex-col gap-afh-lg")}
       data-answer-block="origin"
       data-feed-block="answer-origin"
       data-feed-zone="primary"

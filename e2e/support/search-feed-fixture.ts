@@ -1,5 +1,6 @@
 import type { Page, Route } from "@playwright/test";
 
+import type { SearchCompanionsData } from "../../src/api/v2/schemas/searchCompanions";
 import {
   FEED_CASES,
   type FeedCaseFixture,
@@ -228,7 +229,7 @@ export function searchFeedUrl(fixture: FeedCaseFixture): string {
 }
 
 /** Every lens empty: the answer fixtures exercise the answer, not the shelves. */
-const EMPTY_COMPANIONS = {
+const EMPTY_COMPANIONS: SearchCompanionsData = {
   subjects: [],
   shorts: { count: 0, items: [] },
   anecdotes: { count: 0, items: [] },
@@ -252,6 +253,24 @@ function namingFor(answer: SearchAnswer, query: string) {
     eras: [],
     presentation: { forms: [], eras: [], disagreements: [], evidence: [] },
   };
+}
+
+/**
+ * The pieces behind a case. The published word has its own production, found
+ * by the very word typed (relation `word`); every other case has none, so its
+ * page offers only « Tout » and the fiches.
+ */
+function companionsForAnswer(
+  fixture: AnswerFixture | undefined
+): SearchCompanionsData {
+  if (!fixture?.wordAnswers) return EMPTY_COMPANIONS;
+  const [template] = FEED_CASES[0].production.companions.shorts.items;
+  const piece = {
+    ...template,
+    name: fixture.wordAnswers[0].title,
+    match: { relation: "word" as const, word: fixture.query },
+  };
+  return { ...EMPTY_COMPANIONS, shorts: { count: 1, items: [piece] } };
 }
 
 function answerRow(answer: SearchAnswer, index: number, query: string) {
@@ -354,10 +373,14 @@ export function searchEnvelopeForAnswerFixture(fixture: AnswerFixture) {
 
 // @req REQ-178
 export async function routeSearchAnswerFixtures(page: Page): Promise<void> {
+  let activeFixture: AnswerFixture | undefined;
   await page.route("**/api/v2/search**", async (route) => {
     const url = new URL(route.request().url());
     if (url.pathname === `${API_SEARCH_PATH}/companions`) {
-      await route.fulfill({ status: 200, json: { data: EMPTY_COMPANIONS } });
+      await route.fulfill({
+        status: 200,
+        json: { data: companionsForAnswer(activeFixture) },
+      });
       return;
     }
     if (url.pathname !== API_SEARCH_PATH) {
@@ -372,6 +395,7 @@ export async function routeSearchAnswerFixtures(page: Page): Promise<void> {
       await route.fulfill({ status: 404, json: { error: "Unknown fixture" } });
       return;
     }
+    activeFixture = fixture;
     await route.fulfill({
       status: 200,
       json: searchEnvelopeForAnswerFixture(fixture),

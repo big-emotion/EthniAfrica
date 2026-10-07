@@ -42,7 +42,6 @@ function fixture(id: FeedCaseId) {
 
 const mande = fixture("mande");
 const peul = fixture("peul");
-const bassa = fixture("bassa");
 const ekpeye = fixture("ekpeye");
 const introuvable = fixture("introuvable");
 const inconnu = fixture("inconnu");

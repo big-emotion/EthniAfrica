@@ -17,6 +17,7 @@ export interface FurtherBlockProps {
 
 // @req REQ-180
 export function FurtherBlock({ links, language = "fr" }: FurtherBlockProps) {
+  if (links.length === 0) return null;
   return (
     <SearchFeedBlock id="further" zone="closing">
       <p className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[0.14em] text-afh-text-soft">

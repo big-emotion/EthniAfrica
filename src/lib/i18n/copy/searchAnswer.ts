@@ -77,6 +77,15 @@ export interface SearchAnswerCopy {
     sheetStatement: (title: string) => string;
     accountPosition: (index: number) => string;
   };
+  /**
+   * The closing invitation, one per kind of subject: it asks for what only a
+   * reader of that kind can bring (a family's story, a speaker's account) and
+   * claims nothing about the subject itself.
+   */
+  invitation: Record<
+    AnswerKind,
+    { title: string; body: string; action: string }
+  >;
 }
 
 const FR_NUMBER_WORDS = ["", "un", "deux", "trois", "quatre", "cinq"];
@@ -194,6 +203,38 @@ export const searchAnswerCopy: Record<Language, SearchAnswerCopy> = {
       sheetStatement: (title) => `Sources for the answer on ${title}`,
       accountPosition: (index) => `Account ${index}`,
     },
+    invitation: {
+      people: {
+        title: "Do you know another explanation?",
+        body: "A story handed down in your family, a written source: we will read it.",
+        action: "Suggest a source",
+      },
+      country: {
+        title: "Do you know another explanation?",
+        body: "A story handed down, a written source: we will read it.",
+        action: "Suggest a source",
+      },
+      language: {
+        title: "Do you speak this language?",
+        body: "What you were told about the name of your language interests us.",
+        action: "Suggest a source",
+      },
+      languageFamily: {
+        title: "Did you learn it differently?",
+        body: "Tell us what you were told about this name, with its source if you have one.",
+        action: "Suggest a source",
+      },
+      patronyme: {
+        title: "Do you carry this name?",
+        body: "What your family says about its origin interests us.",
+        action: "Share a story",
+      },
+      word: {
+        title: "Do you know another source?",
+        body: "A reading, a document: we will read it.",
+        action: "Suggest a source",
+      },
+    },
   },
   fr: {
     eyebrow: {
@@ -298,6 +339,38 @@ export const searchAnswerCopy: Record<Language, SearchAnswerCopy> = {
       open: "Voir les sources",
       sheetStatement: (title) => `Sources de la réponse sur ${title}`,
       accountPosition: (index) => `Récit ${index}`,
+    },
+    invitation: {
+      people: {
+        title: "Vous connaissez une autre explication ?",
+        body: "Un récit transmis dans votre famille, une source écrite : nous la lirons.",
+        action: "Proposer une source",
+      },
+      country: {
+        title: "Vous connaissez une autre explication ?",
+        body: "Un récit transmis, une source écrite : nous la lirons.",
+        action: "Proposer une source",
+      },
+      language: {
+        title: "Vous parlez cette langue ?",
+        body: "Ce qu'on vous a transmis sur le nom de votre langue nous intéresse.",
+        action: "Proposer une source",
+      },
+      languageFamily: {
+        title: "Vous l'avez appris autrement ?",
+        body: "Dites-nous ce qu'on vous a transmis sur ce nom, avec sa source si vous l'avez.",
+        action: "Proposer une source",
+      },
+      patronyme: {
+        title: "Vous portez ce nom ?",
+        body: "Ce que votre famille raconte sur son origine nous intéresse.",
+        action: "Partager un récit",
+      },
+      word: {
+        title: "Vous connaissez une autre source ?",
+        body: "Une lecture, un document : nous la lirons.",
+        action: "Proposer une source",
+      },
     },
   },
 };

@@ -1,15 +1,10 @@
 import Link from "next/link";
 
-import {
-  ANSWER_ACCENT_CLASS,
-  ANSWER_BLOCK,
-} from "@/components/search/answer/answerStyle";
+import { ANSWER_BLOCK } from "@/components/search/answer/answerStyle";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
-import { answerKindOfSubject } from "@/components/search/feed/NameAnswerEntries";
 import { ficheHrefFor } from "@/components/search/SearchResultCard";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
-import { cn } from "@/lib/utils";
 import type { SearchResult } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
 
@@ -20,9 +15,10 @@ export interface FicheLinkBlockProps {
 }
 
 /**
- * The way from the answer to the full fiche, one button per subject. The
- * answer is the page; the fiche is where a reader who wants every source and
- * every field goes next, so it follows the answer and never competes with it.
+ * The way from the answer to the full fiche, one button per subject. It is the
+ * page's one solid primary action, in the brand ocre whatever the subject is:
+ * the entity accent colours the eyebrow and the bars, never the buttons.
+ * `--accent-foreground` is the ink the charter pairs with the ocre fill.
  */
 // @req REQ-178
 export function FicheLinkBlock({
@@ -36,17 +32,11 @@ export function FicheLinkBlock({
   return (
     <SearchFeedBlock id="fiche-link" zone="primary" className="grid gap-afh-md">
       {subjects.map((subject) => (
-        <div
-          key={`${subject.type}:${subject.id}`}
-          className={cn(
-            ANSWER_BLOCK,
-            ANSWER_ACCENT_CLASS[answerKindOfSubject(subject.type)]
-          )}
-        >
+        <div key={`${subject.type}:${subject.id}`} className={ANSWER_BLOCK}>
           <Link
             href={ficheHrefFor(subject, language)}
             onClick={() => onNavigate?.(subject)}
-            className="inline-flex min-h-11 w-full items-center justify-center rounded-afh-full border border-[color:var(--accent)] bg-[color:var(--accent-tint)] px-afh-2xl py-afh-md text-center text-afh-small font-bold text-[color:var(--accent-ink)] no-underline focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
+            className="afh-accent-ocre inline-flex min-h-[52px] w-full items-center justify-center rounded-afh-xl bg-[color:var(--accent)] px-afh-2xl py-afh-md text-center text-afh-body font-bold text-[color:var(--accent-foreground)] no-underline focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
           >
             {copy.ficheLink(getLocalizedSearchResultName(subject, language))}
           </Link>

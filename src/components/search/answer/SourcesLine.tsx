@@ -3,7 +3,6 @@
 import { useId, useMemo, useState } from "react";
 
 import {
-  ANSWER_ACCENT_CLASS,
   ANSWER_BLOCK,
   ANSWER_TEXT_BUTTON,
 } from "@/components/search/answer/answerStyle";
@@ -44,7 +43,6 @@ function distinctSources(account: AnswerAccount): Source[] {
 export function SourcesLine({
   count,
   accounts = [],
-  kind,
   title,
   language = "fr",
 }: SourcesLineProps) {
@@ -75,7 +73,6 @@ export function SourcesLine({
     <div
       className={cn(
         ANSWER_BLOCK,
-        ANSWER_ACCENT_CLASS[kind],
         "flex flex-wrap items-center justify-between gap-x-afh-lg border-y border-afh-border py-afh-md"
       )}
       data-answer-block="sources"

@@ -307,12 +307,17 @@ describe("a country's shares", () => {
 // @req REQ-184
 describe("the page of a published word", () => {
   const pharaon = ANSWER_FIXTURES.pharaon.wordAnswers![0];
+  const wordShort = {
+    ...richCompanions.shorts.items[0],
+    match: { relation: "word" as const, word: "pharaon" },
+  };
+  const withShort: SearchCompanionsData = {
+    ...noCompanions,
+    shorts: { count: 1, items: [wordShort] },
+  };
 
-  // The page keeps the filters of every other page, and still says no more
-  // than the record does.
-  // @req REQ-184
-  it("is answered by its record, under the filters, with no confession", () => {
-    const { container } = render(
+  function renderWord(companions: SearchCompanionsData) {
+    return render(
       <SearchFeed
         query="pharaon"
         language="fr"
@@ -320,10 +325,17 @@ describe("the page of a published word", () => {
         results={[]}
         subjects={[]}
         leads={[]}
-        companions={noCompanions}
+        companions={companions}
         wordAnswers={[pharaon]}
       />
     );
+  }
+
+  // The page keeps the filters of every other page when there is a choice,
+  // and still says no more than the record does.
+  // @req REQ-184
+  it("is answered by its record, under the filters, with no confession", () => {
+    const { container } = renderWord(withShort);
 
     expect(
       screen.getByRole("navigation", { name: searchFeedCopy.fr.filters.label })
@@ -334,6 +346,136 @@ describe("the page of a published word", () => {
       "answer-what",
       "answer-origin",
     ]);
+  });
+
+  // A lone « Tout » is a filter with nothing to choose from.
+  // @req REQ-178
+  it("draws no filters when « Tout » is the only one", () => {
+    const { container } = renderWord(noCompanions);
+
+    expect(blockIds(container)).not.toContain("lenses");
+    expect(blockIds(container)[0]).toBe("answer-what");
+  });
+
+  // The publication is a card, not two bare links: what it is, when, and a
+  // button of at least 44 px per network.
+  // @req REQ-184
+  it("shows the publication as a card with a button per network", () => {
+    const { container } = renderWord(noCompanions);
+
+    const card = container.querySelector('[data-word-part="publications"]')!;
+    expect(
+      within(card as HTMLElement).getByRole("heading", {
+        name: "Notre publication",
+      })
+    ).toBeVisible();
+    expect(card).toHaveTextContent("Carrousel · 3 octobre 2026");
+    const buttons = within(card as HTMLElement).getAllByRole("link");
+    expect(buttons.map((link) => link.textContent)).toEqual([
+      "Voir sur TikTok",
+      "Voir sur Instagram",
+    ]);
+    for (const button of buttons) expect(button).toHaveClass("min-h-11");
+  });
+
+  // @req REQ-184
+  it("closes on the invitation of a word, and claims nothing about names", () => {
+    renderWord(noCompanions);
+
+    expect(
+      screen.getByText("Vous connaissez une autre source ?")
+    ).toBeVisible();
+    expect(screen.queryByText(/Plusieurs noms peuvent coexister/)).toBeNull();
+  });
+});
+
+// The closing asks for what only a reader of this kind can bring, and says
+// nothing a language, a country or a word cannot honour.
+// @req REQ-178
+describe("the closing of the answer page", () => {
+  const cases = [
+    [
+      "people",
+      ANSWER_FIXTURES.peul.answers[0],
+      "Vous connaissez une autre explication ?",
+      "Proposer une source",
+    ],
+    [
+      "language",
+      ANSWER_FIXTURES.lingala.answers[0],
+      "Vous parlez cette langue ?",
+      "Proposer une source",
+    ],
+    [
+      "country",
+      ANSWER_FIXTURES.congo.answers[0],
+      "Vous connaissez une autre explication ?",
+      "Proposer une source",
+    ],
+    [
+      "languageFamily",
+      ANSWER_FIXTURES.bantou.answers[0],
+      "Vous l'avez appris autrement ?",
+      "Proposer une source",
+    ],
+    [
+      "patronyme",
+      ANSWER_FIXTURES.camara.answers[0],
+      "Vous portez ce nom ?",
+      "Partager un récit",
+    ],
+  ] as const;
+
+  // @req REQ-178
+  it.each(cases)(
+    "asks a reader of a %s the right question, with no conviction box",
+    (_kind, answer, title, action) => {
+      renderAnswer("x", [subjectOf(answer)]);
+
+      expect(screen.getByText(title)).toBeVisible();
+      expect(screen.getByRole("button", { name: action })).toBeVisible();
+      expect(screen.queryByText(/Plusieurs noms peuvent coexister/)).toBeNull();
+    }
+  );
+
+  // @req REQ-178
+  it("states the origin once when two subjects tell the same one", () => {
+    const subjects = ANSWER_FIXTURES.congo.answers.map((answer, index) =>
+      subjectOf(answer, { id: index === 0 ? "COG" : "COD" })
+    );
+    const { container } = renderAnswer("Congo", subjects);
+
+    const ids = blockIds(container);
+    expect(ids.filter((id) => id === "answer-origin")).toHaveLength(1);
+    expect(ids.indexOf("answer-origin")).toBeLessThan(
+      ids.indexOf("answer-what")
+    );
+  });
+
+  // The second « Congo » is a section of the page, not its title.
+  // @req REQ-178
+  it("ranks the second subject's name below the page title", () => {
+    const subjects = ANSWER_FIXTURES.congo.answers.map((answer, index) =>
+      subjectOf(answer, { id: index === 0 ? "COG" : "COD" })
+    );
+    renderAnswer("Congo", subjects);
+
+    const [title] = screen.getAllByRole("heading", { level: 1 });
+    const [section] = screen.getAllByRole("heading", {
+      level: 2,
+      name: "Congo",
+    });
+    expect(title).toHaveClass("text-afh-hero");
+    expect(section).not.toHaveClass("text-afh-hero");
+  });
+
+  // @req REQ-178
+  it("makes the fiche button the one solid ocre primary, whatever the subject", () => {
+    renderAnswer("lingala", [subjectOf(ANSWER_FIXTURES.lingala.answers[0])]);
+
+    const button = screen.getByRole("link", { name: /Voir la fiche complète/ });
+    expect(button).toHaveClass("afh-accent-ocre", "bg-[color:var(--accent)]");
+    expect(button).toHaveClass("min-h-[52px]");
   });
 });
 

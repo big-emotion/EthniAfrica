@@ -98,7 +98,14 @@ export interface SearchAnswer {
   next?: AnswerNext;
   /** Distinct sources across every account's evidence. */
   sources: { count: number };
-  publications?: Array<{ network: string; url: string }>;
+  publications?: Array<{
+    network: string;
+    url: string;
+    /** The production's format (carrousel, video): the card says what it links to. */
+    format?: string;
+    /** ISO date of the occurrence on that network. */
+    publishedAt?: string;
+  }>;
   path?: Array<{ form: string; language: string; period?: string }>;
 }
 

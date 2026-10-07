@@ -563,10 +563,14 @@ const pharaon: WordAnswer = (() => {
       {
         network: "tiktok",
         url: "https://www.tiktok.com/@ethniafrica/photo/7692366804777274646",
+        format: "carrousel",
+        publishedAt: "2026-10-03",
       },
       {
         network: "instagram",
         url: "https://www.instagram.com/p/DeBtgAUiOYp/",
+        format: "carrousel",
+        publishedAt: "2026-10-03",
       },
     ],
     sources: { count: distinctSourceCount(accounts) },

@@ -1,9 +1,6 @@
 import type { ReactNode } from "react";
 
-import {
-  ANSWER_ACCENT_CLASS,
-  ANSWER_BLOCK,
-} from "@/components/search/answer/answerStyle";
+import { ANSWER_BLOCK } from "@/components/search/answer/answerStyle";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import type { AnswerKind, AnswerNext } from "@/lib/search/answer";
 import { cn } from "@/lib/utils";
@@ -60,7 +57,6 @@ function templateQuestion(
  */
 export function NextQuestion({
   next,
-  kind,
   href,
   language = "fr",
 }: NextQuestionProps) {
@@ -99,7 +95,6 @@ export function NextQuestion({
   );
   const cardClass = cn(
     ANSWER_BLOCK,
-    ANSWER_ACCENT_CLASS[kind],
     "flex min-h-11 items-center justify-between gap-afh-lg rounded-afh-xl bg-afh-bg-warm px-afh-2xl py-afh-3xl no-underline"
   );
 

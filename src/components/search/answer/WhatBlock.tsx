@@ -79,19 +79,28 @@ export function WhatBlock({
 
   return (
     <section
-      className={cn(
-        ANSWER_BLOCK,
-        ANSWER_ACCENT_CLASS[answer.kind],
-        "flex flex-col gap-afh-base"
-      )}
+      className={cn(ANSWER_BLOCK, "flex flex-col gap-afh-base")}
       data-answer-block="what"
       data-feed-block="answer-what"
       data-feed-zone="primary"
     >
-      <span className="text-afh-eyebrow font-bold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[0.12em] text-[color:var(--accent-ink)]">
+      <span
+        className={cn(
+          ANSWER_ACCENT_CLASS[answer.kind],
+          "text-afh-eyebrow font-bold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[0.12em] text-[color:var(--accent-ink)]"
+        )}
+      >
         {eyebrow}
       </span>
-      <Heading className="font-afh-display text-afh-hero font-black leading-[var(--afh-leading-hero)] text-afh-text [overflow-wrap:anywhere]">
+      <Heading
+        className={cn(
+          "font-afh-display font-black text-afh-text [overflow-wrap:anywhere]",
+          // A second subject on the page is a section of it, not its title.
+          headingLevel === "h1"
+            ? "text-afh-hero leading-[var(--afh-leading-hero)]"
+            : "text-afh-h1 leading-[var(--afh-leading-h1)]"
+        )}
+      >
         {answer.title}
       </Heading>
       {sentence ? (

@@ -1,5 +1,4 @@
 import {
-  ANSWER_ACCENT_CLASS,
   ANSWER_BLOCK,
   ANSWER_HEADING,
 } from "@/components/search/answer/answerStyle";
@@ -73,7 +72,7 @@ export function NameAnswerEntries({
 
   return (
     <div className="mt-afh-lg flex flex-col gap-afh-5xl">
-      {entries.map(({ answer, subjects }, entryIndex) => {
+      {entries.map(({ answer, subjects }) => {
         const single = subjects.length === 1;
         const entryKey = subjects
           .map(({ type, id }) => `${type}:${id}`)
@@ -173,7 +172,6 @@ function SourcesBelow({
 // @req REQ-178
 export function ReviewedOrigin({
   answer,
-  kind,
   language,
 }: {
   answer: NameAnswer;
@@ -182,11 +180,7 @@ export function ReviewedOrigin({
 }) {
   return (
     <section
-      className={cn(
-        ANSWER_BLOCK,
-        ANSWER_ACCENT_CLASS[kind],
-        "flex flex-col gap-afh-lg"
-      )}
+      className={cn(ANSWER_BLOCK, "flex flex-col gap-afh-lg")}
       data-answer-block="origin"
       data-feed-block="answer-origin"
       data-feed-zone="primary"

@@ -33,6 +33,9 @@ export interface WhereBarsProps {
 }
 
 /** Five rows read at a glance; the remainder is counted, not drawn. */
+
+/** What fits the 6.5 rem label column on one line at the page's type size. */
+const LABEL_COLUMN_CHARS = 14;
 const MAX_ROWS = 5;
 
 const rowId = (row: AnswerWhereRow): string =>
@@ -59,21 +62,23 @@ export function WhereBars({
 
   const label = (row: AnswerWhereRow) => labels[rowId(row)] ?? rowId(row);
   const title = copy.where.title[kind === "country" ? "country" : "default"];
+  const accent = ANSWER_ACCENT_CLASS[kind];
 
   return (
     <section
-      className={cn(
-        ANSWER_BLOCK,
-        ANSWER_ACCENT_CLASS[kind],
-        "flex flex-col gap-afh-lg"
-      )}
+      className={cn(ANSWER_BLOCK, "flex flex-col gap-afh-lg")}
       data-answer-block="where"
       data-feed-block="answer-where"
       data-feed-zone="primary"
     >
       <h2 className={ANSWER_HEADING}>{title}</h2>
       {where.unit === "presence" ? (
-        <Presence where={where} label={label} language={language} />
+        <Presence
+          where={where}
+          label={label}
+          accent={accent}
+          language={language}
+        />
       ) : (
         <Bars
           where={where}
@@ -81,6 +86,7 @@ export function WhereBars({
           facts={facts}
           heading={heading}
           unsplitPeopleNames={unsplitPeopleNames}
+          accent={accent}
           language={language}
         />
       )}
@@ -91,10 +97,12 @@ export function WhereBars({
 function Presence({
   where,
   label,
+  accent,
   language,
 }: {
   where: AnswerWhere;
   label: (row: AnswerWhereRow) => string;
+  accent: string;
   language: Language;
 }) {
   const copy = searchAnswerCopy[language].where;
@@ -103,7 +111,7 @@ function Presence({
       <p className="m-0 text-afh-body leading-[var(--afh-leading-small)] text-afh-text">
         <InlineMarkup text={copy.presenceHeadline(where.rows.length)} />
       </p>
-      <ul className="m-0 flex list-none flex-wrap gap-afh-md p-0">
+      <ul className={cn(accent, "m-0 flex list-none flex-wrap gap-afh-md p-0")}>
         {where.rows.map((row) => (
           <li
             key={rowId(row)}
@@ -126,6 +134,7 @@ function Bars({
   facts,
   heading,
   unsplitPeopleNames,
+  accent,
   language,
 }: {
   where: AnswerWhere;
@@ -133,6 +142,7 @@ function Bars({
   facts: SearchAnswer["what"]["facts"];
   heading?: string;
   unsplitPeopleNames?: string[];
+  accent: string;
   language: Language;
 }) {
   const copy = searchAnswerCopy[language].where;
@@ -186,31 +196,47 @@ function Bars({
           <InlineMarkup text={headline} />
         </p>
       ) : null}
-      <ul className="m-0 flex list-none flex-col gap-afh-base p-0">
-        {shown.map((row) => (
-          <li
-            key={rowId(row)}
-            className="grid grid-cols-[6.5rem_minmax(0,1fr)_3.75rem] items-center gap-x-afh-base text-afh-small"
-          >
-            <span className="min-w-0 [overflow-wrap:anywhere]">
-              {label(row)}
-            </span>
-            <span
-              aria-hidden="true"
-              className="block h-[10px] overflow-hidden rounded-afh-full bg-[color:var(--accent-tint)]"
+      <ul
+        className={cn(accent, "m-0 flex list-none flex-col gap-afh-base p-0")}
+      >
+        {shown.map((row) => {
+          // A long name would squeeze the label column and wrap on three
+          // lines; it takes its own line above the bar instead.
+          const stacked = label(row).length > LABEL_COLUMN_CHARS;
+          return (
+            <li
+              key={rowId(row)}
+              className="grid grid-cols-[6.5rem_minmax(0,1fr)_3.75rem] items-center gap-x-afh-base gap-y-afh-xs text-afh-small"
             >
               <span
-                className="block h-full rounded-afh-full bg-[color:var(--accent)]"
-                style={{
-                  width: `${Math.max(2, ((row.value ?? 0) / largest) * 100)}%`,
-                }}
-              />
-            </span>
-            <span className="whitespace-nowrap text-right tabular-nums">
-              {formatValue(row.value ?? 0)}
-            </span>
-          </li>
-        ))}
+                className={cn(
+                  "min-w-0 [overflow-wrap:anywhere]",
+                  stacked && "col-span-3"
+                )}
+                data-label-stacked={stacked ? "" : undefined}
+              >
+                {label(row)}
+              </span>
+              <span
+                aria-hidden="true"
+                className={cn(
+                  "block h-[10px] overflow-hidden rounded-afh-full bg-[color:var(--accent-tint)]",
+                  stacked && "col-span-2"
+                )}
+              >
+                <span
+                  className="block h-full rounded-afh-full bg-[color:var(--accent)]"
+                  style={{
+                    width: `${Math.max(2, ((row.value ?? 0) / largest) * 100)}%`,
+                  }}
+                />
+              </span>
+              <span className="whitespace-nowrap text-right tabular-nums">
+                {formatValue(row.value ?? 0)}
+              </span>
+            </li>
+          );
+        })}
       </ul>
       {moreCountries > 0 ? (
         <p className="m-0 text-afh-small font-bold text-[color:var(--accent-ink)]">

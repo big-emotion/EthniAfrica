@@ -24,15 +24,17 @@ import {
 import { QuizBlock } from "@/components/search/feed/QuizBlock";
 import { SearchFeedLayout } from "@/components/search/feed/SearchFeedLayout";
 import { ShortsBlock } from "@/components/search/feed/ShortsBlock";
+import { OriginBlock } from "@/components/search/answer/OriginBlock";
 import { SubjectAnswer } from "@/components/search/feed/SubjectAnswer";
 import { VerdictBlock } from "@/components/search/feed/VerdictBlock";
 import { WordAnswerPage } from "@/components/search/feed/WordAnswerPage";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
+import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { formatProductionNameQuestion } from "@/lib/editorial/productionNameQuestion";
 import { normalizeString } from "@/lib/normalize";
 import { ANSWER_BLOCKS, type FeedBlockId } from "@/lib/search/resultGrammar";
-import type { WordAnswer } from "@/lib/search/answer";
+import type { AnswerKind, WordAnswer } from "@/lib/search/answer";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
 import type { NamingPresentationForm } from "@/lib/search/naming";
 import { resolveNameOpening } from "@/lib/search/resolveNameOpening";
@@ -401,6 +403,15 @@ export function SearchFeed({
     },
     copy.filters
   );
+  // The closing asks for what only a reader of this kind can bring. Several
+  // subjects of different kinds share one neutral invitation.
+  const hasAnswer = wordPage || answered.length > 0;
+  const answeredKinds = new Set(answered.map(({ answer }) => answer!.kind));
+  const closingKind: AnswerKind = wordPage
+    ? "word"
+    : answeredKinds.size === 1
+      ? [...answeredKinds][0]
+      : "people";
   const plan = buildSearchFeedPlan(
     state,
     {
@@ -439,6 +450,22 @@ export function SearchFeed({
         covered.includes(subject) && covered[0] !== subject
     );
 
+  // Two subjects that tell the same origin (the two Congos) say it once,
+  // before their own blocks, rather than twice in a row.
+  const originTexts = (subject: SearchResult) =>
+    JSON.stringify(
+      subject.answer?.origin?.accounts.map(({ text }) => text) ?? null
+    );
+  const sharedOrigin =
+    answered.length > 1 &&
+    opening.entries.length === 0 &&
+    answered[0].answer?.origin &&
+    answered.every(
+      (subject) => originTexts(subject) === originTexts(answered[0])
+    )
+      ? answered[0].answer.origin
+      : undefined;
+
   const renderAnswers = (): ReactNode => (
     <>
       {answered.length > 1 ? (
@@ -447,6 +474,14 @@ export function SearchFeed({
             displayName.slice(1)}
         </h1>
       ) : null}
+      {sharedOrigin ? (
+        <OriginBlock
+          origin={sharedOrigin}
+          kind={answered[0].answer!.kind}
+          title={displayName}
+          language={language}
+        />
+      ) : null}
       {answered.map((subject) => (
         <SubjectAnswer
           key={`${subject.type}:${subject.id}`}
@@ -454,7 +489,9 @@ export function SearchFeed({
           listedPeoples={subject.associatedPeoples}
           searchedForm={query}
           reviewed={reviewedFor(subject)}
-          originCoveredElsewhere={coveredByAnother(subject)}
+          originCoveredElsewhere={
+            coveredByAnother(subject) || Boolean(sharedOrigin)
+          }
           headingLevel={answered.length > 1 ? "h2" : "h1"}
           language={language}
         />
@@ -465,6 +502,8 @@ export function SearchFeed({
   const renderBlock = (id: FeedBlockId): ReactNode => {
     switch (id) {
       case "lenses":
+        // A lone « Tout » is a filter with nothing to choose.
+        if (lenses.length < 2) return null;
         return (
           <LensesBlock
             language={language}
@@ -629,17 +668,22 @@ export function SearchFeed({
             thin
             silences={presentation?.owed?.silences ?? []}
             conviction={
-              presentation?.owed?.conviction ?? {
-                title: answerCopy.conviction,
-                body: answerCopy.convictionBody,
-              }
+              hasAnswer
+                ? undefined
+                : (presentation?.owed?.conviction ?? {
+                    title: answerCopy.conviction,
+                    body: answerCopy.convictionBody,
+                  })
             }
             invitation={
-              presentation?.owed?.invitation ?? {
-                title: answerCopy.invitation,
-                body: answerCopy.invitationBody,
-                action: answerCopy.invitationAction,
-              }
+              presentation?.owed?.invitation ??
+              (hasAnswer
+                ? searchAnswerCopy[language].invitation[closingKind]
+                : {
+                    title: answerCopy.invitation,
+                    body: answerCopy.invitationBody,
+                    action: answerCopy.invitationAction,
+                  })
             }
             contributionTarget={contributionTarget}
           />

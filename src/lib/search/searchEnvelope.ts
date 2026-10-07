@@ -603,7 +603,14 @@ const wordAnswerSchema = z.object({
   next: z.object({ question: z.string().min(1) }).optional(),
   sources: z.object({ count: z.number() }),
   publications: z
-    .array(z.object({ network: z.string(), url: z.string() }))
+    .array(
+      z.object({
+        network: z.string(),
+        url: z.string(),
+        format: z.string().optional(),
+        publishedAt: z.string().optional(),
+      })
+    )
     .optional(),
   path: z
     .array(

@@ -30,7 +30,7 @@ export function LensesBlock({
       id="lenses"
       zone="first"
       ariaLabel={searchFeedCopy[language].filters.label}
-      className="mt-afh-lg flex snap-x snap-mandatory scroll-px-afh-lg flex-nowrap gap-afh-md overflow-x-auto overflow-y-hidden [scrollbar-width:none] min-[1200px]:mx-auto min-[1200px]:w-full min-[1200px]:max-w-[640px] [&::-webkit-scrollbar]:hidden"
+      className="mt-afh-lg flex snap-x snap-mandatory scroll-px-afh-lg flex-nowrap gap-afh-md overflow-x-auto overflow-y-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
     >
       {lenses.map((lens) => {
         const selected = lens.id === active;

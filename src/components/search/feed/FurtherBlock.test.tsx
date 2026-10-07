@@ -28,4 +28,12 @@ describe("FurtherBlock", () => {
     );
     expect(screen.getByText("Going further")).toBeInTheDocument();
   });
+
+  // A heading over no way out is an empty promise.
+  // @req REQ-178
+  it("draws nothing when it has nothing to propose", () => {
+    const { container } = render(<FurtherBlock links={[]} />);
+
+    expect(container).toBeEmptyDOMElement();
+  });
 });
