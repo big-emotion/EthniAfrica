@@ -11,7 +11,13 @@
     {
       "spelling": "Bukuru",
       "attestations": [
-        { "countryId": "BDI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "BDI",
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "simbananiye-2005-noms-burundi"
+          ]
+        }
       ]
     }
   ],
@@ -20,20 +26,38 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Au Burundi, la naissance de jumeaux impose les noms Bukuru et Butoyi, qui signifient « le majeur » et « le mineur ». L'enfant né après des jumeaux reçoit l'un des noms Nkurikiye (« celui qui vient après les jumeaux »), Ciza (« le beau ») ou Congera (« celui qui s'ajoute »).",
+        "claimStatus": "claimed",
+        "sourceRefs": ["simbananiye-2005-noms-burundi"]
+      },
+      {
+        "claim": "Une explication de cette règle : les jumeaux seraient vus comme un signe de malheur qui frappe la famille, un phénomène étrange pour lequel un rite d'intégration doit être organisé. L'article donne cette conception sans nommer qui la tient.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["simbananiye-2005-noms-burundi"]
+      }
+    ],
+    "historicalSyntheses": [
+      {
+        "claim": "Le système traditionnel de nomination, où chacun porte un nom différent de celui de son père, coexiste aujourd'hui au Burundi avec un système patronymique introduit par la colonisation et le christianisme. Ce dernier montre ses limites : un nom de rang, par exemple, ne peut passer du père aux enfants sans perdre son sens.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["simbananiye-2005-noms-burundi"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_RUNDI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "simbananiye-2005-noms-burundi"]
     }
   ],
   "countries": [
     {
       "countryId": "BDI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "simbananiye-2005-noms-burundi"]
     }
   ],
   "alliances": [],
@@ -48,12 +72,20 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "simbananiye-2005-noms-burundi",
+      "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",
+      "url": "https://doi.org/10.7202/011745ar",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Article lu en entier. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Pages imprimées : les noms de jumeaux Bukuru et Butoyi, « le majeur » et « le mineur », les noms de l'enfant né après des jumeaux, et l'explication par le malheur attaché aux jumeaux (p. 172) ; le système traditionnel de nomination coexiste avec le système patronymique introduit par la colonisation et le christianisme et montre ses limites (p. 171). L'article ne dit pas lequel des deux jumeaux reçoit lequel des deux noms. L'article parle des Burundais et ne nomme pas de peuple ni de langue ; il ne dit pas non plus que ce nom serve uniquement aux jumeaux."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les explications ci-dessus portent sur le sens du nom et sur la règle qui le donne à la naissance de jumeaux au Burundi. Nous n'avons trouvé aucune source sur l'histoire de familles précises qui le portent, ni sur d'autres raisons de le donner."
     },
     {
       "fieldPath": "alliances",
@@ -71,5 +103,10 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
+    }
+  }
 }

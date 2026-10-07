@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche générée depuis la file d'attente des candidats (vague 1 du plan de couverture anthroponymique). Elle ne porte aucune recherche : ne pas étendre ses affirmations sans appliquer le protocole docs/runbooks/anthroponym-fiche-research.md."
+    "directives": "Fiche recherchée pour l'origine du nom (2026-10-07). Chaque explication est attribuée à qui la porte et citée à la page dans les notes de sa source ; aucune n'est retenue comme la bonne. Ne pas étendre sans source dédiée."
   },
   "id": "PAT_KOUROUMA",
   "nameMain": "Kourouma",
@@ -11,7 +11,28 @@
     {
       "spelling": "Kourouma",
       "attestations": [
-        { "countryId": "GIN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
+    },
+    {
+      "spelling": "Koroma",
+      "attestations": [
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["hga-iv-niane"]
+        }
+      ]
+    },
+    {
+      "spelling": "Kuruma",
+      "attestations": [
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["hga-iv-person"]
+        }
       ]
     }
   ],
@@ -20,20 +41,32 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Une explication fait du clan Koroma (ou Kuruma) l'un des descendants de Fakoli Koroma, un des généraux de Soundiata Keita, avec les clans Sisoko et Doumbouya. À Norasoba, village des Koroma en Guinée, se trouveraient des objets rituels et des vêtements de guerre ayant appartenu à Fakoli. La source écrit Koroma et Kuruma, pas Kourouma : nous les tenons pour la même forme du nom, ce que la source ne dit pas.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iv-niane"]
+      },
+      {
+        "claim": "Les clans maninka des Kuruma et des Konaté comptent parmi les grands lignages nobles qui se sont partagé le pouvoir au Toron, de Kankan à Odienné, au plus tard au XVe siècle. La source ne dit pas d'où vient le nom.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iv-person"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_MALINKE",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "hga-iv-person"]
     }
   ],
   "countries": [
     {
       "countryId": "GIN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "hga-iv-niane"]
     }
   ],
   "alliances": [],
@@ -48,12 +81,28 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "hga-iv-niane",
+      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 6, Le Mali et la deuxième expansion manden",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre de D. T. Niane. Page imprimée 157 : « les traditions orales ont retenu les noms de Tiramaghan Traore et de Fakoli Koroma (ou Kuruma) » et, en note 42, « Ses descendants sont les clans sisoko, dumbuya et koroma » ; la même note place à Norasoba, village des Koroma en République de Guinée, des objets rituels et des vêtements de guerre qui auraient appartenu à Fakoli. Le chapitre ne donne aucun sens au nom et n'emploie pas la graphie Kourouma."
+    },
+    {
+      "sourceKey": "hga-iv-person",
+      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 12, Les peuples côtiers, premiers contacts avec les Portugais, de la Casamance aux lagunes ivoiriennes",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre d'Y. Person. Page imprimée 341 : « les clans maninka des Kuruma et Konate du Toron, de Kankan à Odienné, au plus tard au XVe siècle », cités parmi les grands lignages nobles qui se partagent le pouvoir. Le chapitre ne donne aucun sens au nom et n'emploie pas la graphie Kourouma."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Aucune explication du sens du mot n'a été trouvée. Les deux explications ci-dessus portent sur la descendance du clan et sur son poids politique, pas sur ce que le nom veut dire ; elles viennent de synthèses publiées par l'UNESCO, et nous n'avons trouvé aucun récit propre aux Kourouma eux-mêmes ni étude consacrée au nom."
     },
     {
       "fieldPath": "alliances",
@@ -75,5 +124,10 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
+    }
+  }
 }
