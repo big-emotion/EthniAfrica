@@ -17,8 +17,17 @@
   ],
   "sitePath": "/fr/atlas/peuples/PPL_BAOULE",
   "publications": [
-    { "network": "tiktok", "format": "carrousel" },
-    { "network": "instagram", "format": "carrousel" },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7693885587824102678",
+      "publishedAt": "2026-10-07"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DeMP6VPCHMf/"
+    },
     { "network": "facebook", "format": "carrousel" },
     { "network": "youtube", "format": "carrousel" },
     { "network": "linkedin", "format": "carrousel" }
