@@ -62,8 +62,7 @@ project's service-role key:
 npx tsx scripts/seedAdminAllowlist.ts moderation@example.org "Editorial moderation lead"
 ```
 
-`scripts/seedAdmin.ts` writes the legacy `user_roles` table, which opens no door in the console —
-see [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md#first-moderator).
+The legacy `user_roles` table opens no door in the console — see [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md#first-moderator).
 
 ---
 

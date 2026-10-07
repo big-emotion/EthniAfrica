@@ -793,7 +793,7 @@ neither sentence claimed otherwise.
 
 ### 6.2 What a signed-out reader actually sees
 
-Screenshots, per the brief, in `docs/plans/embedded-media-captures/`.
+The screenshots taken for this section are no longer kept in the repository.
 
 - **YouTube** (`youtube-after.png`) — the project's own short plays, signed
   out, no wall, filling a 360 × 640 box edge to edge. §1's arithmetic holds in

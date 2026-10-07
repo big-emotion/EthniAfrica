@@ -290,7 +290,7 @@ Always open the report with explicit answers:
    - `.env.example` → `.env.local`: is every required key documented?
    - `supabase/migrations/` apply cleanly, in order, on a fresh Supabase project?
    - `supabase start` (or `supabase db reset`) builds the schema on a contributor's machine, and `npx tsx --conditions=react-server scripts/migrateAfrikToDatabase.ts --target=local` loads the corpus into it (`docs/runbooks/afrik-data-sync.md`, "Local bootstrap") — `local` is the contributor-safe target. `recette` and `production` are self-hosted stacks a contributor has no credentials for and must not write to; reason about their loaders, never run them against a real database. `README.md` and `docs/DEPLOYMENT.md` must point a newcomer at that local path.
-   - A first moderator can be seeded: `scripts/seedAdminAllowlist.ts` writes `admin_allowlist` (`docs/runbooks/moderation-access.md`; against the local stack with its own service-role key). `scripts/seedAdmin.ts` and `user_roles` are **legacy** and are not the path — if the allowlist seeder is gone, that is the finding.
+   - A first moderator can be seeded: `scripts/seedAdminAllowlist.ts` writes `admin_allowlist` (`docs/runbooks/moderation-access.md`; against the local stack with its own service-role key). `user_roles` is **legacy** and are not the path — if the allowlist seeder is gone, that is the finding.
    - `npm run dev` boots with no runtime error.
    - `GET /api/v2/countries`, `/api/v2/peoples`, `/api/v2/language-families`, `/api/v2/search?q=wolof` all return 200 with non-empty data.
    - `/docs/api` renders the OpenAPI UI.

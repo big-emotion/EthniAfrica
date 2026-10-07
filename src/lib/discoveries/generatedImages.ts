@@ -186,16 +186,6 @@ const RECORDS: readonly GeneratedImageRecord[] = [
   },
 ];
 
-/** What the derivation script reads: which master becomes which files. */
-// @req REQ-164
-export const GENERATED_IMAGE_MANIFEST: readonly GeneratedImageMaster[] =
-  RECORDS.map(({ slug, collection, master, master9x16 }) => ({
-    slug,
-    collection,
-    master,
-    ...(master9x16 ? { master9x16 } : {}),
-  }));
-
 const ALL_FORMATS: readonly DownloadFormat[] = ["9:16", "4:5", "1:1"];
 
 /**

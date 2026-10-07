@@ -37,6 +37,5 @@
     "@storybook/blocks",
     "tailwindcss-animate"
   ],
-  "ignoreBinaries": ["python3"],
   "ignoreExportsUsedInFile": true
 }

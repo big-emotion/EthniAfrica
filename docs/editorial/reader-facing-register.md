@@ -101,8 +101,8 @@ the workshop has not filled it yet.**
 
 A note that only explained the tier is removed, not replaced: an empty or
 absent `notes` renders nothing, which is the silence the reader is owed.
-`scripts/afrik/stripTierProvenanceNotes.ts` removes the generated sentences and
-keeps whatever a curator wrote around them.
+A one-off pass removed the generated sentences and kept whatever a curator
+wrote around them.
 
 That last row is its own lesson. DEC-040 lets a fiche name only public figures,
 the deceased, or the self-identified, so a curator searching for eligible bearers

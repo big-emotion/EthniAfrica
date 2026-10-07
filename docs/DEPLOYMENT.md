@@ -437,20 +437,8 @@ values `reader`, `contributor`, `moderator`, `admin`, `advisor`. They gated the 
 `081`), and they open no door in the moderation console — access there is membership of
 `admin_allowlist`. The table's one remaining reader in the code is
 `src/lib/rights/protected-asset-access.ts` (protected-asset signed URLs), which no route calls
-today. `scripts/seedAdmin.ts` is kept for that path, not for bootstrapping a moderator:
-
-1. The person signs in once at the published sign-in page (`/fr/admin/connexion` in
-   `fr-only`; `/en/admin/connexion` is also available in a bilingual mode) so their auth
-   account exists.
-2. Grant the role:
-
-   ```bash
-   ADMIN_EMAIL=admin@example.com npx tsx scripts/seedAdmin.ts
-   # or
-   npx tsx scripts/seedAdmin.ts admin@example.com
-   ```
-
-3. Confirm the `user_roles` row shows `role = 'admin'`.
+today. No script writes it any more; if that path is ever wired, a role is granted in SQL
+against the target project.
 
 ---
 

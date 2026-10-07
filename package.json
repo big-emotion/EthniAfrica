@@ -35,7 +35,6 @@
     "check:production-ledger": "tsx scripts/ci/checkProductionLedger.ts --selftest && tsx scripts/ci/checkProductionLedger.ts",
     "check:rls-coverage": "tsx scripts/ci/checkRlsCoverage.ts",
     "check:skill-parity": "tsx scripts/ci/checkSkillParity.ts",
-    "check:skill-drift": "tsx scripts/ci/checkSkillDrift.ts",
     "check:translation-parity": "tsx scripts/ci/checkTranslationParity.ts",
     "report:search-answer-coverage": "tsx scripts/ci/reportSearchAnswerCoverage.ts",
     "check:workflow-shell": "tsx scripts/checkWorkflowShellSyntax.ts",

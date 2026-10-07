@@ -89,8 +89,7 @@ Ouagadougou view the anecdote already publishes. Open it over HTTP — browsers
 block the Lucide script under `file://`.
 
 It was the reference the first implementation did **not** follow: that one was
-built from an earlier "photo-mobile" handoff (see
-`docs/tasks/discoveries-implementation.md`), which is why recette looked like
+built from an earlier "photo-mobile" handoff, which is why recette looked like
 neither. What the rebuild takes from it, and what it deliberately does not:
 
 - **Taken — the grammar of the reading.** A top bar of back, title and one

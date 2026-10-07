@@ -101,8 +101,7 @@ npx tsx scripts/checkSourceUrls.ts          # source URLs resolve
 patronymes, the FR-numbered demography and coverage checks for peoples and countries. Only
 `FR52-coverage` is advisory; everything else fails the build.
 
-Other scripts that exist and are occasionally useful: `recomputeConfidence.ts`,
-`checkMigration.ts`, `convertAfrikToJson.ts`.
+Another script that is occasionally useful: `recomputeConfidence.ts`.
 
 ## Loading into a database
 
