@@ -10,7 +10,7 @@
   "nameFr": "Copte",
   "nameEn": "Coptic",
   "alternateNames": ["Égyptien copte"],
-  "whyProblematic": null,
+  "whyProblematic": "En copte, la langue se dit timetremǹkhēmi, « l'égyptien ». Le mot « copte » vient de l'arabe qubṭ ou qibṭ, formé d'après le mot copte aiguption (bohaïrique, « égyptien ») ou kuptaion (sahidique), lui-même venu du grec Aigúptios, « égyptien ». Selon l'article de Wikipédia, il a d'abord désigné tous les Égyptiens, puis les chrétiens d'Égypte seulement, après la conquête musulmane (639-646). L'article rapporte aussi un rapprochement avec Coptos, ville de Haute-Égypte, sans dire qui l'a proposé.",
   "spellingAliases": [],
   "familyId": "FLG_AFROASIATIQUE",
   "peoples": [
@@ -29,7 +29,24 @@
         "url": "https://glottolog.org/resource/languoid/id/copt1239",
         "tier": "official",
         "notes": "Glottolog direct official languoid record ; source du nom et du glottocode. Le copte est le dernier état de l'égyptien ancien (egy, glottocode egyp1246), écrit dans un alphabet dérivé du grec."
+      },
+      {
+        "title": "Wikipédia anglophone, Coptic language",
+        "url": "https://en.wikipedia.org/wiki/Coptic_language",
+        "tier": "unverified",
+        "notes": "Article lu pour le nom de la langue en copte et le chemin grec, arabe puis langues d'Europe du mot « copte »."
+      },
+      {
+        "title": "Wikipédia anglophone, Copts",
+        "url": "https://en.wikipedia.org/wiki/Copts",
+        "tier": "unverified",
+        "notes": "Article lu pour l'origine du mot « copte » (arabe qubṭ ou qibṭ, d'après le copte aiguption ou kuptaion, du grec Aiguptios), pour le changement de sens après la conquête musulmane de 639-646 et pour le rapprochement avec la ville de Coptos, que l'article rapporte sans dire qui l'a proposé."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred: the English sidecar for this language record has not been produced yet."
+    }
   }
 }
