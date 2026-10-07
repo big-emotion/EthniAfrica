@@ -165,7 +165,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // merged into PPL_BISSA.
     // 120 -> 121 on 2026-10-07: PPL_BAOULE now says the old forms Bahooree and
     // Baouré were written by Europeans, which its sources state.
-    value: 121,
+    // 121 -> 122 on 2026-10-07: PPL_BETE now reports that Magwé's author says the
+    // French took « bété » from the English.
+    value: 122,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -174,7 +176,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     figureKey: "probe-neighbours",
     label: "fiches attribuant un exonyme à des voisins",
     // 113 -> 112 on 2026-10-07: PPL_HADZA no longer attributes Kindiga/Tindiga to neighbours, which no source read says.
-    value: 112,
+    // 112 -> 113 on 2026-10-07: PPL_BETE now says the Gouro called their southern neighbours Tshien (Dozon 1985, p. 45).
+    value: 113,
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },

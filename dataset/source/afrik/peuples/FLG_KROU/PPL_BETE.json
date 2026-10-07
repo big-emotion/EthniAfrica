@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Bété",
-      "selfAppellation": "Magwé / Bété",
+      "selfAppellation": "Bété",
       "exonyms": [
         "Magwe",
         "Tsien",
@@ -18,8 +18,8 @@
         "Betegnan"
       ],
       "spellingAliases": ["Bt", "Bete"],
-      "originOfExonyms": "Le terme Bété est d'origine locale, sans connotation coloniale négative avérée. Il aurait émergé comme désignation générique des populations travaillant sur les plantations du sud-est de la Côte d'Ivoire à l'époque coloniale. L'appellation Magwé est l'ethnonyme traditionnel le plus ancien, commun avec les peuples Wé dont les Bété partagent un ancêtre mythique nommé Gadi.",
-      "whyProblematic": "La notion d'ethnie Bété est en partie une construction coloniale française, qui a regroupé sous une même étiquette administrative quelque 93 sous-groupes distincts, sans unité politique précoloniale. Des stéréotypes négatifs ont été associés à ce groupe depuis l'ère coloniale. Le nom ne doit pas être confondu avec Mbété (ou Mbede), un peuple bantou du Gabon et du Congo dont la langue relève d'une autre famille : les Bété de Côte d'Ivoire parlent des langues krou.",
+      "originOfExonyms": "Le mot « bété » est récent dans la région de Gagnoa : les personnes interrogées par l'ethnologue Jean-Pierre Dozon disent ne pas l'avoir connu avant la conquête française (1905-1913), et les groupes se désignaient alors par leurs noms de tribus, comme Koukouezo, Gbassi, Paccolo, Niabré ou Zabia. Le mot figure par écrit dans des textes de 1901 et 1904 de Georges Thomann et de Maurice Delafosse, administrateurs coloniaux, alors que la région leur restait méconnue ; Dozon relève que Thomann l'écrit « beré », forme proche de l'expression « beteo ». La carte de la mission Thomann, publiée en 1903, porte « Bêtés » en lettres espacées sur une vaste zone de forêt, de Sokolo à l'est de Soubré. Deux explications sont rapportées par les personnes interrogées à Gagnoa, que Dozon dit non exclusives : le mot viendrait de l'expression « bete o bete o », « paix » ou « pardon », dite à chaque soumission et prise par les Français pour un nom ; ou il serait venu de l'ouest, des premiers postes coloniaux, jusqu'à Gagnoa. Vers 1930, le mot s'étend à un ensemble défini par la langue. Un ouvrage publié en 1939 note que, dans des villages du groupe niaboua de la subdivision d'Issia, les habitants se disent « indifféremment Bété ou Niaboua ». Louhoy Téty Gauze propose le nom Magwé, en 1969 puis en 1982, pour un groupe d'où descendraient les Bété et d'autres peuples du sud-ouest ; Dozon y lit une alternative à un nom jugé trop lié à l'histoire coloniale, et note que cet auteur attribue aussi le mot « bété » aux Européens, les Français l'ayant plus ou moins repris aux Anglais, ce que nous n'avons pas pu vérifier. Aucune personne interrogée par Dozon à Gagnoa n'a cité Magwé, et il n'y voit pas un démenti catégorique. Tshien est, semble-t-il, le nom que les Gouro donnaient à leurs voisins du sud : les rapports militaires français l'emploient quelque temps pour la région de Gagnoa, puis il tombe en désuétude avec l'économie de plantation.",
+      "whyProblematic": "La notion d'ethnie Bété est en partie une construction coloniale française, qui a regroupé sous une même étiquette administrative quelque 93 sous-groupes distincts, sans unité politique précoloniale. Après la conquête, des jeunes qui fuient le travail forcé partent travailler vers la Basse-Côte ; les rapports coloniaux de l'époque parlent de « jeunes Bété au tempérament turbulent et instable » qui ne se fixeraient dans aucun emploi, et Dozon y voit les rudiments d'un stéréotype qui s'est attaché au nom. Le nom ne doit pas être confondu avec Mbété (ou Mbede), un peuple bantou du Gabon et du Congo dont la langue relève d'une autre famille : les Bété de Côte d'Ivoire parlent des langues krou.",
       "contemporaryUsage": "Le terme Bété est universellement accepté et utilisé en Côte d'Ivoire, dans les médias et l'administration. Les locuteurs utilisent aussi les dénominations spécifiques à leur sous-groupe ou région.",
       "linguisticFamily": "FLG_KROU",
       "ethnoLinguisticGroup": "Krou occidental",
@@ -41,7 +41,7 @@
       "93 sous-groupes distincts selon la tradition orale et les études ethnographiques"
     ],
     "origins": {
-      "ancientOrigins": "Les Bété font partie du groupe ethnique Krou, dont l'origine ancienne se situe dans les franges sud du Sahara, avec des migrations progressives vers les forêts guinéo-ivoiriennes entre le 13e et le 15e siècle. Selon la tradition orale, les Bété portent l'ethnonyme Magwé et partagent un ancêtre commun avec les peuples Wé, figure mythique nommée Gadi. Des recherches archéologiques et ethnohistoriques (Téty Antoine Gauze, Jean-Noël Loucou) situent leurs premiers établissements au nord-ouest de leur habitat actuel, entre les fleuves Bandama et Sassandra, vers la fin du Néolithique.",
+      "ancientOrigins": "Les Bété font partie du groupe ethnique Krou, dont l'origine ancienne se situe dans les franges sud du Sahara, avec des migrations progressives vers les forêts guinéo-ivoiriennes entre le 13e et le 15e siècle. Louhoy Téty Gauze fait des Bété (1969) les descendants d'un groupe nommé Magwé, qu'il présente en 1982 comme la première vague d'un ensemble nommé Gadi, venu de l'est et installé très tôt dans le sud-ouest ; aucune personne interrogée par Jean-Pierre Dozon à Gagnoa ne l'a citée. Des recherches archéologiques et ethnohistoriques (Téty Antoine Gauze, Jean-Noël Loucou) situent leurs premiers établissements au nord-ouest de leur habitat actuel, entre les fleuves Bandama et Sassandra, vers la fin du Néolithique.",
       "formationPeriod": "L'identité bété distincte s'est consolidée au cours du 17e siècle, sous la pression de conflits avec d'autres groupes de la savane ouest-soudanienne. Ces tensions les ont poussés à migrer vers les forêts du centre-ouest de la Côte d'Ivoire. La catégorie Bété au sens actuel est en partie une construction de l'administration coloniale française du 19e-20e siècle.",
       "migrationRoutes": [
         "Depuis le Sahel et la savane ouest-soudanienne vers le sud, via les vallées des fleuves Bandama et Sassandra",
@@ -87,7 +87,7 @@
     },
     "historicalRole": {
       "kingdomsOrChiefdoms": "Les Bété n'ont pas constitué de royaumes ou chefferies centralisées. Leur organisation en 93 clans autonomes correspond à une forme de démocratie villageoise segmentaire. Des figures de résistance comme Zokou Gbéouli (Zokou Gbeuly, 1835-1912 selon la notice IdRef, résistance anticoloniale) ont acquis une stature historique sans fonder d'institution politique durable.",
-      "relationsWithNeighbors": "Relations complexes avec les Wé (Guéré), dont ils partagent l'institution du masque ; avec les Dida (ancêtres communs Magwé) ; avec les Nyabwa, Godiés, Néyo et Bakwé. Relations commerciales et parfois conflictuelles avec les peuples Akan à l'est (Baoulé) et les Mandingues (Dioula) au nord. Sous Houphouët-Boigny, des migrations de Baoulé et Voltaïques dans les terres bété ont généré des tensions durables.",
+      "relationsWithNeighbors": "Relations complexes avec les Wé (Guéré), dont ils partagent l'institution du masque ; avec les Dida (une thèse leur prête une origine commune, Magwé) ; avec les Nyabwa, Godiés, Néyo et Bakwé. Relations commerciales et parfois conflictuelles avec les peuples Akan à l'est (Baoulé) et les Mandingues (Dioula) au nord. Sous Houphouët-Boigny, des migrations de Baoulé et Voltaïques dans les terres bété ont généré des tensions durables.",
       "conflictsOrAlliances": "Résistance farouche à la colonisation française (1906-1936). Le chef de guerre Zokou Gbeuly (1835-1912 selon la notice IdRef), que l'éditeur de l'ouvrage collectif qui lui est consacré présente comme fondateur de la cité de Daloa, mobilise selon la presse ivoirienne environ mille combattants de trois villages voisins (Sabwa, Galebha, Labéa) et brûle le poste colonial de Daloa en 1906 ; arrêté en 1911 puis déporté à Zuénoula, il y meurt en 1912. Mouvement politique de défense des intérêts bété depuis les années 1930. Tentative de sécession (État d'Éburnie, 1970) réprimée par le gouvernement avec de nombreux morts. Soutien massif au Front Populaire Ivoirien (FPI) de Laurent Gbagbo dès 1982. Implication dans les tensions ethniques des crises ivoiriennes de 2002-2011.",
       "diaspora": "Forte migration des Bété vers Abidjan et les grandes villes ivoiriennes depuis l'époque coloniale. Diaspora en France et dans les pays occidentaux (communauté moins documentée que d'autres groupes ivoiriens). L'identité bété urbaine est distincte de celle rurale et varie selon les sous-groupes."
     },
@@ -144,7 +144,7 @@
         "title": "Dozon, Jean-Pierre — La société Bété : histoires d'une ethnie de Côte d'Ivoire. Paris : Karthala ; ORSTOM, 1985",
         "url": "https://www.documentation.ird.fr/hor/fdi:17296",
         "tier": "referenced",
-        "notes": "IRD-hosted academic monograph; supports the colonial construction of the Bété category and the Bété-Dida boundary note around Gagnoa."
+        "notes": "Pages 16, 43-45, 262-263, 267-270 et 353-354, lues sur le texte intégral publié par l'IRD. À Gagnoa, les personnes interrogées disent que le mot « bété » est contemporain de la conquête française (1905-1913). L'auteur rapporte l'expression « beteo » (paix, pardon) et l'idée d'un nom venu de l'ouest, suit l'usage du mot dans les écrits de Thomann (1901, 1903), puis son extension vers 1930, rapporte la fuite de jeunes devant le travail forcé, et la thèse Magwé de Téty Gauze, qu'aucun informateur n'a citée."
       },
       {
         "title": "Pulse.ci — « 5 résistants ivoiriens à la colonisation », 5 septembre 2024",
@@ -168,6 +168,30 @@
         "url": "https://www.idref.fr/265567963",
         "tier": "official",
         "notes": "Notice d'autorité du Sudoc (ABES). Elle donne 1835 et 1912 comme dates de naissance et de mort et cite l'ouvrage collectif « Zokou Gbeuly : un héros de la résistance en Côte d'Ivoire », sous la direction de Zacharie Séry Bailly."
+      },
+      {
+        "title": "Dozon, Jean-Pierre — Les Bété : une création coloniale, dans Amselle et M'Bokolo (dir.), Au cœur de l'ethnie, Paris, La Découverte, 1985, p. 59-60 et note 7",
+        "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/b_fdi_18-19/25531.pdf",
+        "tier": "referenced",
+        "notes": "« Tout d'abord, l'ethnonyme est sujet à caution » : les personnes interrogées chez les Bété de Gagnoa ignoraient ce mot avant la période coloniale, et disent qu'il vient de l'expression « bete o bete o », « paix » ou « pardon », maintes fois dite pendant la pacification. Note 7 : le mot figure chez Thomann et Delafosse dans des écrits de 1901 et 1904, alors que le pays bété restait largement méconnu. Même texte repris dans Une anthropologie en mouvement, Quæ, 2008."
+      },
+      {
+        "title": "Dunglas, E. — Dans la forêt de la Côte d'Ivoire. Coutumes et mœurs des Bété, Paris, Larose, 1939, « Préliminaires »",
+        "url": "https://excerpts.numilog.com/books/9782402188975.pdf",
+        "tier": "referenced",
+        "notes": "Extrait de l'éditeur, qui ne date pas l'observation (le livre paraît en 1939). Dans la subdivision d'Issia, les habitants de villages du groupe niaboua « se disent indifféremment Bété ou Niaboua »."
+      },
+      {
+        "title": "Journal des voyages, n° 340, 7 juin 1903, p. 21 — carte de la mission Thomann",
+        "url": "https://commons.wikimedia.org/wiki/File:Itin%C3%A9raire_Mission_Thomann_1902_de_Sassandra_%C3%A0_S%C3%A9gu%C3%A9la,_C%C3%B4te_d%27Ivoire.jpg",
+        "tier": "referenced",
+        "notes": "Carte imprimée, lue sur sa numérisation : elle porte le nom « Bêtés » en lettres espacées sur une vaste zone de forêt, de Sokolo à l'est de Soubré. La date et la page viennent de la description de la numérisation. Elle montre que le mot circule par écrit en 1903."
+      },
+      {
+        "title": "Téty Gauze, Louhoy — article des Annales de l'Université d'Abidjan, série F, t. 1, 1969 ; Histoire des Magwe, Godo-Godo, numéro spécial, 1982 (références données par Dozon)",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Textes non consultés : la thèse Magwé et le groupe Gadi sont connus par le compte rendu de Jean-Pierre Dozon (La société bété, 1985, p. 43 et 353-354). Gadi est détaillé dans le texte de 1982."
       }
     ]
   },
