@@ -1,12 +1,12 @@
 {
   "id": "PPL_SWAHILI_YEMEN",
-  "nameMain": "Swahili (Yemen)",
+  "nameMain": "Swahili (Yémen)",
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["YEM"],
   "classificationStatus": "contested",
   "content": {
     "appellations": {
-      "mainName": "Communautes d'ascendance swahili au Yemen (Akhdam / Al-Muwalladeen)",
+      "mainName": "Communautés d'ascendance swahili au Yémen (Akhdam / Al-Muwalladeen)",
       "selfAppellation": "Akhdam (Al-Akhdame) / Al-Muwalladeen",
       "exonyms": [
         "Akhdam (serviteurs)",

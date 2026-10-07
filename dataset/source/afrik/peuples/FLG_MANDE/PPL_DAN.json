@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Dan",
-      "selfAppellation": "Dan (le nom que le peuple se donne a lui-meme ; signifie les gens dans la langue dan)",
+      "selfAppellation": "Dan",
       "exonyms": [
         "Yacouba ou Yakuba (appellation francophone utilisee en Cote d'Ivoire, surtout dans la region de Man)",
         "Gio (terme utilise au Liberia, derive du bassa signifiant esclave, considere comme pejoratif)",
@@ -16,7 +16,7 @@
         "Gyo"
       ],
       "spellingAliases": ["Yacuba", "Yakuba", "Yakouba"],
-      "originOfExonyms": "Yacouba est une adaptation francophone du terme mandingue Jakuba. Le terme Gio est un exonyme bassa utilise au Liberia pour designer les Dan ; le sens de esclave le rend devalorisant aux yeux des Dan eux-memes. Dan est la forme preferee par le peuple.",
+      "originOfExonyms": "Yacouba est une adaptation francophone du terme mandingue Jakuba. Le terme Gio est un exonyme bassa utilise au Liberia pour designer les Dan ; le sens de esclave le rend devalorisant aux yeux des Dan eux-memes. Dan est la forme preferee par le peuple. Dan signifie « les gens » dans la langue dan.",
       "whyProblematic": "Gio est pejoratif car etymologiquement lie au terme esclave en bassa. Son usage perdure dans les documents officiels liberiens et dans certaines sources academiques anglophones malgre la preference des Dan pour leur propre ethnonyme.",
       "contemporaryUsage": "Dan est l'appellation academique internationale standard et celle preferee par le peuple. Yacouba reste tres utilise en Cote d'Ivoire dans la vie quotidienne et dans les medias. Gio est encore courant au Liberia dans les documents officiels et la presse.",
       "linguisticFamily": "FLG_MANDE",
