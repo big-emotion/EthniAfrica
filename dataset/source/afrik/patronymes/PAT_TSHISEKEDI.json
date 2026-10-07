@@ -23,13 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une explication relie ce nom au sens « endroit où l'on rit, où l'on se moque » en tshiluba. Le site l'écrit aussi Cisekedi. Elle vient d'un site culturel luba qui cite en fin de page, sans les relier à chaque nom ni donner de pages, un dictionnaire tshiluba-français et un ouvrage sur les coutumes baluba ; aucune autre source consultée ne donne de sens à Tshisekedi.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["lubanation-noms-luba"]
-      }
-    ]
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -57,20 +51,12 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement : elle atteste Tshisekedi très majoritairement en RDC et indique qu'aucune signification n'est répertoriée. Les biographies politiques ne sont pas transformées en étymologie luba."
-    },
-    {
-      "sourceKey": "lubanation-noms-luba",
-      "title": "Noms et surnoms Lubas — LUBANATION.COM",
-      "url": "https://lubanation.com/2014/03/21/culture-luba-names/",
-      "tier": "unverified",
-      "source_kind": "community",
-      "notes": "Page d'un site culturel luba, signée Clarisse, mise en ligne le 21 mars 2014 et relue en octobre 2026. Elle donne une liste de noms luba du Kasaï avec leur sens, rangée par ordre alphabétique, et cite pour sources « Coutumes et traditions Baluba » et « Dictionnaire Tshiluba-Français », sans auteur, sans année et sans page. Nous n'avons lu ni l'un ni l'autre : le sens de chaque nom est donné ici tel que le site l'écrit. La page invite ses lecteurs à y ajouter le sens d'autres noms en commentaire. Elle dit aussi que, chez les Luba, il n'y avait traditionnellement pas de nom de famille et que les enfants sont nommés selon les circonstances de la naissance, un événement de la famille ou du clan, un ancêtre ou un animal."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Une seule source donne un sens à ce nom : un site culturel luba, qui cite sans pages un dictionnaire que nous n'avons pas lu. Le même site dit que les Luba n'avaient traditionnellement pas de nom de famille : ces sens sont ceux de noms de personnes. Aucun récit recueilli, aucune chronique ni aucune étude ne dit qui a porté ce nom en premier ni depuis quand."
+      "reason": "la recherche web et bibliographique combinant « Tshisekedi », « Luba », « Tshiluba », « surname », « clan », « etymology », « transmission » et « obituary », ainsi que la consultation directe de « Tshisekedi Surname Origin, Meaning & Last Name History » n'ont livré aucune tradition attribuée, chronique ou étude linguistique établissant l'origine de Tshisekedi. Les rapprochements fondés uniquement sur la géographie, une biographie ou une contribution non référencée ont été écartés."
     },
     {
       "fieldPath": "nameSystem",
@@ -96,10 +82,5 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Tshisekedi », « Luba », « Tshiluba », « surname », « clan », « etymology », « transmission » et « obituary », ainsi que la consultation directe de « Tshisekedi Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Tshisekedi permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "Publication is French-only; the English sidecar is produced in the English launch pass for all patronymic records."
-    }
-  }
+  ]
 }

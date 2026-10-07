@@ -23,13 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une explication relie ce nom au mot kikongo mputu, « Europe ». Une liste de noms luba, qui les présente comme des noms de personnes donnés selon les circonstances, donne le même sens, « Europe, Portugal ». Aucune source consultée ne dit comment ni quand ce mot est devenu un nom de personne, ni auprès de quel peuple.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["lubanation-noms-luba", "wikipedia-en-mputu"]
-      }
-    ]
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -57,28 +51,12 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement pour attester l'emploi moderne de Mputu comme nom de famille et sa présence dans les pays indiqués. La géographie ne prouve ni une appartenance ethnique exclusive ni une étymologie ; les définitions contributives éventuelles ne sont pas élevées au rang de faits."
-    },
-    {
-      "sourceKey": "lubanation-noms-luba",
-      "title": "Noms et surnoms Lubas — LUBANATION.COM",
-      "url": "https://lubanation.com/2014/03/21/culture-luba-names/",
-      "tier": "unverified",
-      "source_kind": "community",
-      "notes": "Page d'un site culturel luba, signée Clarisse, mise en ligne le 21 mars 2014 et relue en octobre 2026. Elle donne une liste de noms luba du Kasaï avec leur sens, rangée par ordre alphabétique, et cite pour sources « Coutumes et traditions Baluba » et « Dictionnaire Tshiluba-Français », sans auteur, sans année et sans page. Nous n'avons lu ni l'un ni l'autre : le sens de chaque nom est donné ici tel que le site l'écrit. La page invite ses lecteurs à y ajouter le sens d'autres noms en commentaire. Elle dit aussi que, chez les Luba, il n'y avait traditionnellement pas de nom de famille et que les enfants sont nommés selon les circonstances de la naissance, un événement de la famille ou du clan, un ancêtre ou un animal."
-    },
-    {
-      "sourceKey": "wikipedia-en-mputu",
-      "title": "Mputu — Wikipédia (version anglaise)",
-      "url": "https://en.wikipedia.org/wiki/Mputu",
-      "tier": "unverified",
-      "source_kind": "community",
-      "notes": "Page de nom de famille consultée en octobre 2026. Elle présente Mputu comme un nom de famille d'origine congolaise, « littéralement Europe en kikongo », et liste quatre porteurs ; la phrase sur le sens n'y porte aucune note. Elle ne dit rien de l'histoire du nom."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Deux sources seulement donnent un sens à ce nom, l'une sans note, l'autre sans pages. Aucun récit recueilli, aucune chronique ni aucune étude ne dit qui a porté ce nom en premier ni depuis quand."
+      "reason": "la recherche web et bibliographique combinant « Mputu », « KONGO », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont livré aucune tradition attribuée, chronique datée ou étude linguistique établissant l'origine de Mputu. Les explications anonymes, les simples rapprochements lexicaux et la seule géographie ont été écartés."
     },
     {
       "fieldPath": "nameSystem",
@@ -104,10 +82,5 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mputu », « KONGO », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont établi aucune règle propre à l'ensemble des emplois de Mputu permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "Publication is French-only; the English sidecar is produced in the English launch pass for all patronymic records."
-    }
-  }
+  ]
 }

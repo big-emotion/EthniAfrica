@@ -23,16 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une explication relie ce nom à la place de l'enfant parmi ses frères et sœurs : un enseignant retraité de Kasese rapporte que, chez les Konzo d'Ouganda, le premier garçon qui suit une fille, ou la première fille qui suit un garçon, devient Muhindo, et que Muhindo, Kahindo ou Mbindule supposent un changement de sexe par rapport à l'enfant précédent. Une page sur la langue nande range Muhindo et Kahindo parmi les noms de l'enfant né après un enfant de l'autre sexe, sans note. Un journal ougandais dit que les Konzo d'Ouganda partagent plusieurs traits culturels avec les Nande du Congo et que les noms des deux peuples se remarquent, sans dire que la règle est la même.",
-        "claimStatus": "claimed",
-        "sourceRefs": [
-          "observer-2022-bakonzo-names",
-          "wikipedia-en-nande-language"
-        ]
-      }
-    ]
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -60,28 +51,12 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement pour attester l'emploi moderne de Muhindo comme nom de famille et sa présence dans les pays indiqués. La géographie ne prouve ni une appartenance ethnique exclusive ni une étymologie ; les définitions contributives éventuelles ne sont pas élevées au rang de faits."
-    },
-    {
-      "sourceKey": "observer-2022-bakonzo-names",
-      "title": "Why every Mukonzo family seems to have a Baluku, Bwambale or Kule",
-      "url": "https://observer.ug/lifestyle-entertainment/why-every-mukonzo-family-seems-to-have-a-baluku-bwambale-or-kule/",
-      "tier": "referenced",
-      "source_kind": "unknown",
-      "notes": "Frank Kisakye, The Observer (Ouganda), 21 janvier 2022 ; article lu en entier. Il rapporte les propos d'Augustine Baluku Sibendire, enseignant retraité de Kasese : « Le premier garçon qui suit une fille, ou la première fille qui suit un garçon, devient Muhindo ». L'article porte sur les Konzo d'Ouganda ; il ne cite les Nande du Congo que pour dire que les deux peuples ont des ressemblances culturelles et des noms qui se remarquent. Pas de pagination : article en ligne."
-    },
-    {
-      "sourceKey": "wikipedia-en-nande-language",
-      "title": "Nande language — Wikipédia (version anglaise)",
-      "url": "https://en.wikipedia.org/wiki/Nande_language",
-      "tier": "unverified",
-      "source_kind": "community",
-      "notes": "Article consulté en octobre 2026. Sa liste de noms donnés selon la naissance dit : « Le garçon qui naît après une fille ou l'inverse : MUHINDO, KAHINDO. » La phrase ne porte aucune note."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Aucune étude sur les Nande eux-mêmes n'a été trouvée pour cette règle : elle repose sur un article de presse consacré aux Konzo d'Ouganda et sur une page sans note. Nous ne savons pas depuis quand le nom est porté comme nom de famille au Congo."
+      "reason": "la recherche web et bibliographique combinant « Muhindo », « NANDE », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont livré aucune tradition attribuée, chronique datée ou étude linguistique établissant l'origine de Muhindo. Les explications anonymes, les simples rapprochements lexicaux et la seule géographie ont été écartés."
     },
     {
       "fieldPath": "nameSystem",
@@ -103,10 +78,5 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Muhindo », « NANDE », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont pas établi de lignée homonyme d'origine distincte documentable ; la diffusion dans plusieurs pays et les ressemblances graphiques ne suffisent pas à créer un homonyme."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "Publication is French-only; the English sidecar is produced in the English launch pass for all patronymic records."
-    }
-  }
+  ]
 }

@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche revue selon le protocole de recherche anthroponymique. Chaque affirmation est limitée à ce que dit sa source ; les champs non établis restent des lacunes explicites."
+    "directives": "Fiche générée depuis la file d'attente des candidats (vague 1 du plan de couverture anthroponymique). Elle ne porte aucune recherche : ne pas étendre ses affirmations sans appliquer le protocole docs/runbooks/anthroponym-fiche-research.md."
   },
   "id": "PAT_TSHIBANGU",
   "nameMain": "Tshibangu",
@@ -11,10 +11,7 @@
     {
       "spelling": "Tshibangu",
       "attestations": [
-        {
-          "countryId": "COD",
-          "sourceRefs": ["afrik-candidate-queue"]
-        }
+        { "countryId": "COD", "sourceRefs": ["afrik-candidate-queue"] }
       ]
     }
   ],
@@ -23,13 +20,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une explication relie ce nom au sens « la cicatrice » en tshiluba. Le site l'écrit aussi Cibangu. Elle vient d'un site culturel luba qui cite en fin de page, sans les relier à chaque nom ni donner de pages, un dictionnaire tshiluba-français et un ouvrage sur les coutumes baluba ; aucune autre source consultée ne donne de sens à Tshibangu.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["lubanation-noms-luba"]
-      }
-    ]
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -57,20 +48,12 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
-    },
-    {
-      "sourceKey": "lubanation-noms-luba",
-      "title": "Noms et surnoms Lubas — LUBANATION.COM",
-      "url": "https://lubanation.com/2014/03/21/culture-luba-names/",
-      "tier": "unverified",
-      "source_kind": "community",
-      "notes": "Page d'un site culturel luba, signée Clarisse, mise en ligne le 21 mars 2014 et relue en octobre 2026. Elle donne une liste de noms luba du Kasaï avec leur sens, rangée par ordre alphabétique, et cite pour sources « Coutumes et traditions Baluba » et « Dictionnaire Tshiluba-Français », sans auteur, sans année et sans page. Nous n'avons lu ni l'un ni l'autre : le sens de chaque nom est donné ici tel que le site l'écrit. La page invite ses lecteurs à y ajouter le sens d'autres noms en commentaire. Elle dit aussi que, chez les Luba, il n'y avait traditionnellement pas de nom de famille et que les enfants sont nommés selon les circonstances de la naissance, un événement de la famille ou du clan, un ancêtre ou un animal."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Une seule source donne un sens à ce nom : un site culturel luba, qui cite sans pages un dictionnaire que nous n'avons pas lu. Le même site dit que les Luba n'avaient traditionnellement pas de nom de famille : ces sens sont ceux de noms de personnes. Aucun récit recueilli, aucune chronique ni aucune étude ne dit qui a porté ce nom en premier ni depuis quand."
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
       "fieldPath": "alliances",
@@ -92,10 +75,5 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "Publication is French-only; the English sidecar is produced in the English launch pass for all patronymic records."
-    }
-  }
+  ]
 }
