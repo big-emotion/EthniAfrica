@@ -124,7 +124,6 @@
         "sna",
         "nya",
         "lug",
-        "lin",
         "kon",
         "kik",
         "bem",
@@ -166,7 +165,7 @@
     "demography": {
       "totalPopulation": 420000000,
       "referenceYear": 2025,
-      "source": "Estimation basee sur Wikipedia EN (environ 350 millions au milieu des annees 2010, 310 millions en 2023 selon Institut Pasteur), uvelaphi.africa (360 millions locuteurs en 2015), Nature 2023 (350 millions BSP), avec projection de croissance demographique africaine jusqu en 2025. Le total inclut les locuteurs bantouphones de tous les pays d Afrique subsaharienne.",
+      "source": "Estimation basee sur Wikipedia EN (environ 350 millions au milieu des annees 2010, 310 millions en 2023 selon Institut Pasteur), uvelaphi.africa (360 millions locuteurs en 2015), Nature 2023 (350 millions BSP), avec projection de croissance demographique africaine jusqu en 2025. Le total inclut les locuteurs bantouphones de tous les pays d Afrique subsaharienne. Le chiffre de 420 millions est un calcul de notre part (projection de la croissance), qu'aucune de ces sources ne donne ; les chiffres par pays ci-dessous sont aussi des estimations de notre compilation, sans source relevée.",
       "distributionByCountry": [
         {
           "country": "COD",
@@ -181,7 +180,7 @@
         {
           "country": "ZAF",
           "population": 46000000,
-          "note": "Environ 80% bantous (Nguni, Sotho, Venda, Tsonga)"
+          "note": "Environ 80% bantous (Nguni, Sotho, Venda, Tsonga) ; estimation de notre part, sans source relevée"
         },
         {
           "country": "KEN",
@@ -274,6 +273,9 @@
           "note": "Environ 99% (Comoriens, culture bantou-arabe)"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le mot « bantou » désigne des langues apparentées, pas un peuple : chaque groupe qui les parle se dit par son propre nom."
     },
     "sources": [
       {
