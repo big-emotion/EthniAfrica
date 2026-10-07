@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { ANSWER_BLOCK } from "@/components/search/answer/answerStyle";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
+import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
 import { ficheHrefFor } from "@/components/search/SearchResultCard";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
@@ -29,6 +30,16 @@ export function FicheLinkBlock({
   const copy = searchFeedCopy[language].blocks;
   if (subjects.length === 0) return null;
 
+  const nameOf = (subject: SearchResult) =>
+    getLocalizedSearchResultName(subject, language);
+  const names = subjects.map(nameOf);
+  // Two buttons of one name (the country and the family name « Congo ») say
+  // what each leads to; a lone one needs no qualifier.
+  const labelOf = (subject: SearchResult) =>
+    names.filter((name) => name === nameOf(subject)).length > 1
+      ? `${nameOf(subject)} (${getSearchEntityLabel(subject.type, language)})`
+      : nameOf(subject);
+
   return (
     <SearchFeedBlock id="fiche-link" zone="primary" className="grid gap-afh-md">
       {subjects.map((subject) => (
@@ -38,7 +49,7 @@ export function FicheLinkBlock({
             onClick={() => onNavigate?.(subject)}
             className="afh-accent-ocre inline-flex min-h-[52px] w-full items-center justify-center rounded-afh-xl bg-[color:var(--accent)] px-afh-2xl py-afh-md text-center text-afh-body font-bold text-[color:var(--accent-foreground)] no-underline focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
           >
-            {copy.ficheLink(getLocalizedSearchResultName(subject, language))}
+            {copy.ficheLink(labelOf(subject))}
           </Link>
         </div>
       ))}

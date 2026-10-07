@@ -19,10 +19,15 @@ export interface NamesBlockProps {
   language?: Language;
   /** Names a group when several answers share the page (the two Congos). */
   groupLabel?: string;
+  /** Several countries' dated names under one heading; replaces `names`. */
+  groups?: ReadonlyArray<{ label: string; names: AnswerName[] }>;
 }
 
 /** A list of four reads at a glance; the rest waits behind one control. */
 const LIST_PREVIEW = 4;
+
+/** Past this a « form » is a sentence the fiche filed as a name. */
+const PILL_FORM_MAX = 40;
 
 const fold = (text: string): string =>
   text.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().trim();
@@ -134,7 +139,11 @@ function PillNames({
           <li
             key={name.form}
             className={cn(
-              "rounded-afh-full border bg-afh-surface px-afh-xl py-afh-md text-afh-small text-afh-text",
+              // A fully rounded box around a sentence reads as a blob.
+              name.form.length > PILL_FORM_MAX
+                ? "rounded-afh-xl"
+                : "rounded-afh-full",
+              "border bg-afh-surface px-afh-xl py-afh-md text-afh-small text-afh-text",
               searched ? "border-[color:var(--accent)]" : "border-afh-border"
             )}
           >
@@ -217,9 +226,11 @@ export function NamesBlock({
   searchedForm,
   language = "fr",
   groupLabel,
+  groups,
 }: NamesBlockProps) {
   const copy = searchAnswerCopy[language];
-  const { kind, names, path } = answer;
+  const { kind, path } = answer;
+  const names = groups ? groups.flatMap((group) => group.names) : answer.names;
 
   const hasPath = kind === "word" && path && path.length > 0;
   if (names.length === 0 && !hasPath) return null;
@@ -237,7 +248,20 @@ export function NamesBlock({
       data-feed-zone="primary"
     >
       <h2 className={ANSWER_HEADING}>{copy.names.title[kind]}</h2>
-      {hasPath ? (
+      {groups ? (
+        <div className="flex flex-col gap-afh-2xl">
+          {groups
+            .filter((group) => group.names.length > 0)
+            .map((group) => (
+              <Timeline
+                key={group.label}
+                names={group.names}
+                groupLabel={group.label}
+                language={language}
+              />
+            ))}
+        </div>
+      ) : hasPath ? (
         <PathTable path={path} />
       ) : dated ? (
         <Timeline names={names} groupLabel={groupLabel} language={language} />

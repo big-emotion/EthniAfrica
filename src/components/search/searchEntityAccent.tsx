@@ -32,10 +32,13 @@ export const SEARCH_ENTITY_ACCENT: Record<
     markClassName: "bg-[var(--afh-cat-perv)]",
     accentScopeClassName: "afh-accent-perv",
   },
+  // A language reads under its family's pervenche, as on its fiche and in the
+  // reviewed answer (search-result charter §6); the label says which of the two
+  // it is, since colour alone never does.
   language: {
     label: "Langue",
-    markClassName: "bg-[var(--afh-cat-terre)]",
-    accentScopeClassName: "afh-accent-terre",
+    markClassName: "bg-[var(--afh-cat-perv)]",
+    accentScopeClassName: "afh-accent-perv",
   },
   // REQ-126: a person is not a fifth corpus entity kind, so it does not take
   // a fifth --afh-cat-* hue — see the .afh-accent-neutral comment in
@@ -46,13 +49,33 @@ export const SEARCH_ENTITY_ACCENT: Record<
     accentScopeClassName: "afh-accent-neutral",
   },
   // ETNI-1463: a name (patronyme) is not a fifth corpus entity kind either —
-  // it reuses person's neutral treatment for the same reason (see above).
+  // it reuses person's neutral treatment for the same reason (see above). The
+  // answer page is the one place a name takes a hue: SEARCH_ANSWER_ACCENT.
   patronyme: {
     label: "Nom",
     markClassName: "bg-afh-text-muted",
     accentScopeClassName: "afh-accent-neutral",
   },
 };
+
+/**
+ * The accent of an answer page, one per kind of subject (search-result charter
+ * §6). It reads this table for every kind a card also carries, so a people,
+ * a country, a language or a family never wears two colours. Two honest
+ * differences: a family name takes terre on its own page — a page needs an
+ * accent and the reviewed rendering paints it terre, where a card keeps the
+ * neutral mark of ETNI-1463 — and a word, which is no corpus entity, takes the
+ * brand's ocre.
+ */
+// @req REQ-178
+export const SEARCH_ANSWER_ACCENT = {
+  people: SEARCH_ENTITY_ACCENT.people.accentScopeClassName,
+  country: SEARCH_ENTITY_ACCENT.country.accentScopeClassName,
+  language: SEARCH_ENTITY_ACCENT.language.accentScopeClassName,
+  languageFamily: SEARCH_ENTITY_ACCENT.languageFamily.accentScopeClassName,
+  patronyme: "afh-accent-terre",
+  word: "afh-accent-ocre",
+} as const;
 
 const SEARCH_ENTITY_LABELS_EN: Record<SearchEntityType, string> = {
   people: "People",

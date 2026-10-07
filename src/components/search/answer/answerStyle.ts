@@ -1,20 +1,19 @@
+import { SEARCH_ANSWER_ACCENT } from "@/components/search/searchEntityAccent";
 import type { AnswerKind } from "@/lib/search/answer";
 
 /**
- * One accent per answer, chosen by what the subject is. The assignment follows
- * the validated mockup (v11), where a language reads periwinkle and a family
- * ocre; it is held here, and nowhere in a component, so a ruling that moves a
- * kind moves one line.
+ * One accent per answer, chosen by what the subject is. The assignment lives
+ * in `SEARCH_ANSWER_ACCENT`, next to the table the result cards read, and is
+ * ruled by search-result charter §6.
  */
 // @req REQ-178
-export const ANSWER_ACCENT_CLASS: Record<AnswerKind, string> = {
-  people: "afh-accent-ocre",
-  country: "afh-accent-teal",
-  language: "afh-accent-perv",
-  languageFamily: "afh-accent-ocre",
-  patronyme: "afh-accent-terre",
-  word: "afh-accent-ocre",
-};
+export const ANSWER_ACCENT_CLASS: Record<AnswerKind, string> =
+  SEARCH_ANSWER_ACCENT;
+
+/** The question above a set of ways in: smaller than a block's own heading. */
+// @req REQ-178
+export const ANSWER_SUBHEADING =
+  "m-0 text-afh-body font-bold leading-[var(--afh-leading-small)] text-afh-text";
 
 /** Reading measure shared by every block, so prose never stretches at 1280 px. */
 // @req REQ-178

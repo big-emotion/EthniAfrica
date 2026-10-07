@@ -45,6 +45,12 @@ export interface AnswerFixture {
   /** Sentence above several answers to one name (Congo's two states). */
   pageLead?: string;
   answers: SearchAnswer[];
+  /**
+   * Peoples the search also returns, filed under the family that answers (the
+   * aggregate people « Bantou »). The page offers them as a way in; it never
+   * draws them as a second answer.
+   */
+  peoplesOfFamily?: SearchAnswer[];
   /** What the envelope carries for a published word, with no fiche behind it. */
   wordAnswers?: WordAnswer[];
 }
@@ -583,7 +589,19 @@ export const ANSWER_FIXTURES: Record<AnswerFixtureCase, AnswerFixture> = {
   nzebi: { query: "nzebi", answers: [nzebi] },
   bassa: { query: "bassa", answers: [bassa] },
   lingala: { query: "lingala", answers: [lingala] },
-  bantou: { query: "bantou", answers: [bantou] },
+  bantou: {
+    query: "bantou",
+    answers: [bantou],
+    peoplesOfFamily: [
+      {
+        kind: "people",
+        title: "Bantou",
+        what: { facts: {} },
+        names: [],
+        sources: { count: 0 },
+      },
+    ],
+  },
   civ: { query: "côte d'ivoire", answers: [civ] },
   congo: {
     query: "congo",

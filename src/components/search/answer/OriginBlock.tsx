@@ -18,6 +18,12 @@ export interface OriginBlockProps {
   kind: AnswerKind;
   /** Named in the sentence that introduces several readings. */
   title: string;
+  /**
+   * One label per account when each account is a different country's own
+   * telling of the name (the two Congos). Those readings do not compete, so
+   * the block says whose each one is instead of announcing a dispute.
+   */
+  accountLabels?: readonly string[];
   language?: Language;
 }
 
@@ -37,6 +43,7 @@ export function OriginBlock({
   origin,
   kind,
   title,
+  accountLabels,
   language = "fr",
 }: OriginBlockProps) {
   const copy = searchAnswerCopy[language];
@@ -77,11 +84,13 @@ export function OriginBlock({
 
       {side ? (
         <>
-          <p className="text-afh-body leading-[var(--afh-leading-body)] text-afh-text">
-            {accounts.length === 2
-              ? copy.origin.debatedIntroTwo(title)
-              : copy.origin.debatedIntroMany}
-          </p>
+          {accountLabels ? null : (
+            <p className="text-afh-body leading-[var(--afh-leading-body)] text-afh-text">
+              {accounts.length === 2
+                ? copy.origin.debatedIntroTwo(title)
+                : copy.origin.debatedIntroMany}
+            </p>
+          )}
           <ul
             id={detailId}
             className="m-0 flex list-none flex-col gap-afh-base p-0"
@@ -92,7 +101,11 @@ export function OriginBlock({
                 className="flex flex-col gap-afh-xs rounded-afh-xl border border-afh-border bg-afh-surface px-afh-2xl py-afh-xl text-afh-small leading-[var(--afh-leading-small)] text-afh-text"
                 data-account
               >
-                {account.attribution && accounts.length > 1 ? (
+                {accountLabels?.[index] ? (
+                  <span className="text-afh-caption font-bold text-[color:var(--accent-ink)]">
+                    {accountLabels[index]}
+                  </span>
+                ) : account.attribution && accounts.length > 1 ? (
                   <span className="text-afh-caption font-bold text-[color:var(--accent-ink)]">
                     {copy.origin.attribution[account.attribution]}
                   </span>
