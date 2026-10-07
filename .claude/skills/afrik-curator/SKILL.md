@@ -52,6 +52,7 @@ current as of 2026-09-02.
 | Ethnonym dossier  | `PPL_*`            | `noms/`                 | `modele-nom.json`           | 11    |
 | Relation          | `REL_*`            | `relations/`            | `modele-relation.json`      | 12    |
 | Migration         | `MGR_*`            | `migrations/`           | `modele-migration.json`     | 6     |
+| Place             | `LOC_*`            | `lieux/`                | `modele-lieu.json`          | 1     |
 
 Hierarchy: **linguistic family → language → people → country.**
 

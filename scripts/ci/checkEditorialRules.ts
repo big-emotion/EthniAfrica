@@ -559,8 +559,8 @@ export interface ProseField {
 }
 
 /** A value that *is* an identifier is what an identifier field is for. */
-const WHOLE_IDENTIFIER = /^\s*(?:(?:PPL|FLG|PAT)_[A-Z0-9_]+\s*[,;]?\s*)+$/;
-const EMBEDDED_IDENTIFIER = /\b(?:PPL|FLG|PAT)_[A-Z0-9_]+\b/;
+const WHOLE_IDENTIFIER = /^\s*(?:(?:PPL|FLG|PAT|LOC)_[A-Z0-9_]+\s*[,;]?\s*)+$/;
+const EMBEDDED_IDENTIFIER = /\b(?:PPL|FLG|PAT|LOC)_[A-Z0-9_]+\b/;
 /** Keys whose job is to carry an identifier or a locator. */
 const IDENTIFIER_KEY =
   /(?:^id$|Id$|Ids$|^sourceKey$|^sourceRefs$|^fieldPath$|^url$)/;
@@ -578,6 +578,7 @@ const MODEL_BY_DIRECTORY: Readonly<Record<string, StrictModelFile>> = {
   famille_linguistique: "modele-linguistique.json",
   langues: "modele-langue.json",
   patronymes: "modele-nom-patronyme.json",
+  lieux: "modele-lieu.json",
 };
 
 export function modelForFile(relPath: string): StrictModelFile | undefined {
