@@ -1,0 +1,22 @@
+{
+  "campaign": "bouake-d-ou-vient-le-nom",
+  "typologie": "lieu",
+  "episode": 3,
+  "question": {
+    "fr": "D'où vient le nom Bouaké ?"
+  },
+  "myth": {
+    "fr": "Bouaké veut-il dire « mouton sec » ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "CIV",
+      "label": {
+        "fr": "Bouaké (Côte d'Ivoire)"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/CIV",
+  "publications": []
+}
