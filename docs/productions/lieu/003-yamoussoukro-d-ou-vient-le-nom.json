@@ -1,0 +1,20 @@
+{
+  "campaign": "yamoussoukro-d-ou-vient-le-nom",
+  "typologie": "lieu",
+  "episode": 3,
+  "question": {
+    "fr": "D'où vient le nom Yamoussoukro ?"
+  },
+  "myth": {
+    "fr": "Yamoussoukro a-t-il toujours porté ce nom ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "CIV",
+      "label": { "fr": "Yamoussoukro (Côte d'Ivoire)" }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/CIV",
+  "publications": []
+}
