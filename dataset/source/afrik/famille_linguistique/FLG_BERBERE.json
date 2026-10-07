@@ -7,6 +7,100 @@
       "lead": "Les langues des Imazighen, de l'Afrique du Nord au Sahel. Amazigh est le nom que se donnent aujourd'hui ces peuples ; Berbère vient du nom arabe Barbar, d'où le mot français.",
       "followUp": "Amazigh veut-il vraiment dire « homme libre » ?"
     },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "MAR",
+          "speakers": 13800000,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Maroc (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2022, fondée sur des chiffres de 2016-2017, rapportée par Wikipédia. Les originaux (Ethnologue, Brenzinger) n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia. Il est nettement plus élevé que la part de 24,8 % de la population qui utilise l'amazigh d'après le recensement marocain de 2024, qui est un taux d'usage et non un nombre de locuteurs (9,1 millions selon Wikipédia, sans que nous sachions si ce total est calculé). La fiche contient aussi 9 444 131 pour le Maroc, calculé à partir du taux de 24,8 % : ces trois chiffres ne se recoupent pas, et la date et la définition qui expliqueraient l'écart ne sont pas connues."
+          }
+        },
+        {
+          "country": "DZA",
+          "speakers": 4500000,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Brenzinger, Language Diversity Endangered",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation de Brenzinger (2015 dans le tableau de Wikipédia) : environ 2,5 à 3 millions pour le kabyle et 1,4 million pour le chaoui. L'estimation d'ensemble reste incertaine, et la somme de ces deux parties (3,9 à 4,4 millions) ne donne pas exactement 4 500 000. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
+          }
+        },
+        {
+          "country": "MLI",
+          "speakers": 798000,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Mali (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2014-2018, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
+          }
+        },
+        {
+          "country": "NER",
+          "speakers": 720000,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Niger (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 1998, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
+          }
+        },
+        {
+          "country": "LBY",
+          "speakers": 285890,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Libye (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2020, rapportée par Wikipédia et non vérifiée dans le volume imprimé. Le tableau récapitulatif de Wikipédia donne 247 000 pour le seul nafusi. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
+          }
+        },
+        {
+          "country": "BFA",
+          "speakers": 122000,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Burkina Faso (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2009, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
+          }
+        },
+        {
+          "country": "MRT",
+          "speakers": 117200,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Mauritanie (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2017-2018, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
+          }
+        },
+        {
+          "country": "TUN",
+          "speakers": 53100,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Tunisie (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2004, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
+          }
+        },
+        {
+          "country": "EGY",
+          "speakers": 20000,
+          "source": {
+            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Égypte (2022)",
+            "url": "https://en.wikipedia.org/wiki/Berber_languages",
+            "tier": "unverified",
+            "notes": "Estimation d'Ethnologue pour 2013, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
+          }
+        }
+      ]
+    },
     "decolonialHeader": {
       "selfAppellation": "Tamazight",
       "contemporaryUsage": "Terme \"Amazigh/Imazighen\" officialisé dans les constitutions marocaine (2011, article 5) et algérienne (2016, article 4). Au Maroc, le recensement de 2024 compte environ une personne sur quatre (24,8 % de la population) qui utilise l'une des formes de l'amazigh (tachelhit, tamazight, tarifit et autres), plus souvent à la campagne (33,3 %) qu'en ville (19,9 %). C'est une part de la population, pas un nombre de locuteurs.",
@@ -97,7 +191,7 @@
         "title": "Haut-Commissariat au Plan du Maroc (2024) – Recensement Général de la Population et de l'Habitat 2024, Principaux résultats, Rabat, 17 décembre 2024, p. 19",
         "url": "https://www.hcp.ma/file/242665/",
         "tier": "official",
-        "notes": "Page « Expressions linguistiques utilisées par la population (%) » : « Le quart utilise les différentes expressions linguistiques de l'Amazigh (24,8%) avec une proportion plus élevée en milieu rural (33,3%) qu'en milieu urbain (19,9%) ». La légende précise « Amazigh (Tachelhit, Tamazight, Tarifit et autres) ». C'est une part de la population, pas un nombre de locuteurs ; la page ne précise ni la tranche d'âge ni le sens exact de « utilisées »."
+        "notes": "Page « Expressions linguistiques utilisées par la population (%) » : « Le quart utilise les différentes expressions linguistiques de l'Amazigh (24,8%) avec une proportion plus élevée en milieu rural (33,3%) qu'en milieu urbain (19,9%) ». La légende précise « Amazigh (Tachelhit, Tamazight, Tarifit et autres) ». C'est une part de la population, pas un nombre de locuteurs ; la page ne précise ni la tranche d'âge ni le sens exact de « utilisées ». Dans cette fiche, le chiffre de 9 444 131 pour le Maroc est calculé à partir de ce taux d'usage (24,8 %) et de la population nationale (38 081 173 en 2024, chiffre de la Banque mondiale repris par la fiche et non relu ici) : c'est un ordre de grandeur, pas un nombre de locuteurs. Le total de 35 000 000 pour la famille n'a pas de source lue ; il ne correspond pas à la somme des chiffres par pays donnés plus haut (environ 20,4 millions)."
       },
       {
         "title": "Cohen, Marcel (1947) — Essai comparatif sur le vocabulaire et la phonétique du chamito-sémitique. Paris : Champion",
