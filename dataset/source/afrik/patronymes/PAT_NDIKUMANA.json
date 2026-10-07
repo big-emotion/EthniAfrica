@@ -11,7 +11,13 @@
     {
       "spelling": "Ndikumana",
       "attestations": [
-        { "countryId": "BDI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "BDI",
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "duchaj-ntihirageza-2009-noms-burundais"
+          ]
+        }
       ]
     }
   ],
@@ -20,20 +26,44 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "En kirundi, Ndikumana se comprend « Je suis vivant grâce à Dieu » (« I am alive thanks to God » dans la liste consultée). La liste traduit le nom sans l'analyser.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["duchaj-ntihirageza-2009-noms-burundais"]
+      }
+    ],
+    "historicalSyntheses": [
+      {
+        "claim": "Le système traditionnel de nomination, où chacun porte un nom différent de celui de son père, coexiste aujourd'hui au Burundi avec un système patronymique introduit par la colonisation et le christianisme. Ce dernier montre ses limites : un nom de rang, par exemple, ne peut passer du père aux enfants sans perdre son sens.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["simbananiye-2005-noms-burundi"]
+      },
+      {
+        "claim": "Au baptême, un nom chrétien s'ajoute au nom donné à la naissance, et ce dernier devient le nom de famille.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["duchaj-ntihirageza-2009-noms-burundais"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_RUNDI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "duchaj-ntihirageza-2009-noms-burundais"
+      ]
     }
   ],
   "countries": [
     {
       "countryId": "BDI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "duchaj-ntihirageza-2009-noms-burundais"
+      ]
     }
   ],
   "alliances": [],
@@ -48,12 +78,28 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "duchaj-ntihirageza-2009-noms-burundais",
+      "title": "Survival by Loss of Identity: The Power of Names among Burundian Refugees in Tanzania (Karen A. Duchaj et Jeanine Ntihirageza, 2009, p. 337-345)",
+      "url": "https://yorkspace.library.yorku.ca/items/9b20b57a-99b6-45b0-a212-95dfe823c88c",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Article lu en entier. Pages imprimées : tableau de réfugiés burundais originaires du camp de Kinasi et vivant désormais hors du camp, avec Ndikumana donné comme nom kirundi et glosé « I am alive thanks to God » (p. 339) ; la légende du tableau cite une page de l'UNICEF comme source de l'échantillon de noms ; quand un nom chrétien s'ajoute au baptême, le nom donné à la naissance devient le nom de famille (p. 338). L'article ne commente pas ce nom, et son relevé a été fait auprès de réfugiés en Tanzanie, non dans un registre burundais."
+    },
+    {
+      "sourceKey": "simbananiye-2005-noms-burundi",
+      "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",
+      "url": "https://doi.org/10.7202/011745ar",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Article lu en entier. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page imprimée citée ici : le système traditionnel de nomination coexiste avec le système patronymique introduit par la colonisation et le christianisme et montre ses limites (p. 171). L'article ne cite pas le nom Ndikumana."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "L'explication ci-dessus porte sur le sens du nom en kirundi, d'après une seule traduction. Nous n'avons trouvé aucune source sur l'histoire de familles précises qui le portent."
     },
     {
       "fieldPath": "alliances",
@@ -71,5 +117,10 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
+    }
+  }
 }

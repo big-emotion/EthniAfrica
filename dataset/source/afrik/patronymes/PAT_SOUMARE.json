@@ -26,19 +26,25 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "En soninké, le nom Soumaré signifie « fait du bien pour ton prochain ». Cette glose est donnée en passant, sans analyse du mot, et sans dire d'où elle vient ni si elle vaut pour tous les Soumaré.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["kante-2019-rasp-soumare"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_SONINKE",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["kante-2019-rasp-soumare", "afrik-candidate-queue"]
     }
   ],
   "countries": [
     {
       "countryId": "MRT",
-      "status": "attested",
+      "status": "supposed",
       "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
@@ -54,12 +60,20 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "kante-2019-rasp-soumare",
+      "title": "Nianguiry Kanté, « Diadiè Soumaré, le Président serviteur de l'Association pour la Promotion de la Langue et de la Culture Soninké xeenu ! n'est plus », Revue africaine des sciences sociales et de la santé publique, vol. 1, n° 2, 2019",
+      "url": "https://revue-rasp.org/rasp/article/download/14/269/3504",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Hommage publié par un chercheur soninké à un responsable associatif. Le texte intégral a été lu ; la phrase sur le sens du nom se trouve à la page imprimée 92 du volume. Le texte donne le sens en une incise et ne cite aucune source pour lui ; il ne dit rien de l'origine historique du nom ni de sa présence en Mauritanie."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous n'avons trouvé qu'une glose du sens du nom, sans source propre : aucun récit oral ni aucune chronique écrite sur l'origine historique du nom Soumaré n'a été lu à ce jour, et ni la fondation du nom ni sa présence en Mauritanie ne sont documentées ici."
     },
     {
       "fieldPath": "alliances",
@@ -81,5 +95,10 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
+    }
+  }
 }
