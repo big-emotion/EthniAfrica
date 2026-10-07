@@ -113,6 +113,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Audience audit — 2026-09-23](audience/audit-2026-09-23.md)
 - [Audience audit — 2026-09-30](audience/audit-2026-09-30.md)
 - [Audience audit — 2026-10-03](audience/audit-2026-10-03.md)
+- [Audience audit — 2026-10-07](audience/audit-2026-10-07.md)
 - [Measuring whether the editorial voice helps readers](audience/editorial-measurement.md)
 - [Carousel or reel? What our first three weeks of publications show](audience/format-audit-2026-09-26/README.md)
 - [Adaptation shortlist](audience/format-audit-2026-09-26/adaptation-shortlist.md)
