@@ -4,6 +4,10 @@
   "nameEn": "Cushitic",
   "classificationStatus": "colonial-legacy",
   "content": {
+    "searchAnswer": {
+      "lead": "Des langues de la Corne de l'Afrique, comme l'oromo, le somali et l'afar. Le nom vient de Koush, un personnage de la Bible, repris par des savants européens du XIXe siècle.",
+      "followUp": "Pourquoi a-t-on rattaché des langues africaines à un petit-fils de Noé ?"
+    },
     "decolonialHeader": {
       "whyProblematic": " - Le mot « couchitique » est hérité d'une grille de lecture biblique/coloniale qui attribuait des origines « extra-africaines » à certains peuples pour les distinguer des Africains « noirs » dans une logique raciale. Cette théorie a été utilisée pour justifier des hiérarchies raciales et des politiques coloniales.",
       "selfAppellation": null,
