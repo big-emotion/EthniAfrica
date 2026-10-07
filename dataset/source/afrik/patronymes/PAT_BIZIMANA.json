@@ -20,7 +20,13 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Une explication donne à Bizimana le sens d'une phrase : « c'est Imana qui le sait », Imana étant le nom de Dieu en kirundi. Le nom y est rangé parmi ceux qui disent ce que l'on reconnaît à Imana, ici sa connaissance de toute chose. Cette explication est avancée par un auteur burundais dans une étude sur les noms au Burundi, à propos du kirundi et non du kinyarwanda ; elle ne dit pas ce que les familles rwandaises qui portent ce nom en disent elles-mêmes.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["simbananiye-2005-noms-burundi"]
+      }
+    ]
   },
   "peoples": [
     {
@@ -48,12 +54,20 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "simbananiye-2005-noms-burundi",
+      "title": "Les noms de personnes au Burundi : un support du lien social",
+      "url": "https://www.anthropologie-societes.ant.ulaval.ca/sites/anthropologie-societes.ant.ulaval.ca/files/articles/fichiers/A&S_29-1_167-181.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Léandre Simbananiye, Anthropologie et Sociétés, vol. 29, n° 1, 2005, p. 167-181 ; texte intégral lu. Entretiens menés en 1999 au Burundi et noms relevés dans des registres paroissiaux, des écoles et l'état civil communal. La phrase « Bizimana : c'est Imana qui le sait » figure p. 174, parmi les noms qui disent les attributs d'Imana (sa connaissance de toute chose). L'article porte sur le Burundi et sur le kirundi : il ne dit rien du nom tel qu'il est donné au Rwanda."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "L'explication ci-dessus vient du Burundi, pas du Rwanda : nous n'avons pas trouvé de source qui traite de ce nom tel que le donnent les familles rwandaises, ni d'explication venue d'elles."
     },
     {
       "fieldPath": "alliances",
@@ -71,5 +85,10 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
+    }
+  }
 }
