@@ -134,7 +134,6 @@ grep -rlniE "atlas des peuples d.afrique|dictionnaire des ethnies|encyclop[ée]d
 | `docs/design/mockups/pages/*.html`                                 | Reviewed renderings carrying the old lockup. They are references for their own surfaces; re-render rather than edit                                                                                   |
 | `DominantAnswerPanel` and its six files                            | **Belongs to C**, because it is a data-shape change                                                                                                                                                   |
 | ~~Two skills~~                                                     | **False positives, checked.** Both say "tertiary encyclopedias", a source-tier category with nothing to do with the product's positioning. Left in the table because a loose grep surfaces them again |
-| `CLAUDE.md`                                                        | Its own decision, below                                                                                                                                                                               |
 
 **What this pass does not catch**, and why a second one is needed: the search
 above finds the old _qualifier_. It does not find a page that still reads as an
@@ -175,15 +174,6 @@ the front of them. `hubTranslations.test.ts` no longer pins the opening with
 (« without pinning the prose »). It refuses the filing word instead, which is
 the rule rather than one spelling of it.
 
-**`CLAUDE.md`.** The operator has asked to rewrite it from zero. It is not in
-this chantier, on purpose: it is the file every agent reads first, and rewriting
-it while the shape of the work is still moving means rewriting it twice. It is
-the **last** thing that changes, once B, C and D are done and there is something
-stable to describe. A reset inventory was taken on 2026-09-17 and later deleted
-as stale (it is in git history under `docs/reset-inventory-2026-09-17.md`); its
-lesson stands: a rule whose cost was measured by failing must be rediscovered
-by failing again, not re-derived from memory.
-
 ### E — The gate on competing appellations
 
 The charter's own §5 names it: **`checkEditorialRules.ts` requires the self-given
@@ -206,7 +196,6 @@ A  plan
 └─ B  artefact: 5 deltas, then 9 boards
    └─ C  data shape: analysis, then envelope
       └─ D2 reading pass over reader-facing copy
-         └─ CLAUDE.md rewritten, last
 
 D1 live assertions (the two e-mails, the stale comments)  — no dependency, do it now
 E  appellations gate                                      — no dependency, runs beside
@@ -297,7 +286,7 @@ read, and a doc whose basename appears nowhere but in itself is an orphan.
 
 **An orphan is a candidate, never a verdict.** The twenty split three ways:
 
-- **Ledger entries** — the dated `gabarits-social/notes/_*.md`, the audience
+- **Ledger entries** — the dated notes and the audience
   audits. They are a record; they are linked from their directory's README or
   left alone, never deleted.
 - **Newly written and not yet linked** — `search-result-charter.md`

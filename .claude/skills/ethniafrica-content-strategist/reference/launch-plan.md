@@ -36,7 +36,7 @@ the subject sequence and research depth decide how many new subjects fit. Four
 to six distinct pieces is a working envelope, not a quota to fill. This replaces
 the September 20 numbered ramp toward five subjects per day. The dates and
 rituals above are historical planning context, not proof of current capacity.
-Read `docs/editorial/strategy/roadmap-2026-q4.md` for the ordered current plan.
+The dated current plan lives under `docs/editorial/strategy/`.
 
 ## The channel sequence
 

@@ -147,10 +147,5 @@
         "notes": "SIL Ethnologue, 19e éd. (2016), page consultée via version archivée (Internet Archive, 25 juin et 8 mai 2016) – \"Tedaga [tuq]\": 28 500 locuteurs au Tchad (recensement 1993), 10 000 au Niger (1998), 2 000 au Nigeria (Blench & Zeitlyn 1990). \"Dazaga [dzg]\": 487 000 au Tchad (2013 J. Leclerc), 50 000 au Niger (2007). https://www.ethnologue.com/language/tuq ; https://www.ethnologue.com/language/dzg"
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: none of the 24 linguistic family records has an English sidecar, so translating this one alone would make it the atlas's only English family record. This is a sequencing choice, not a pipeline refusal. It follows the family corpus's first translation pass."
-    }
   }
 }

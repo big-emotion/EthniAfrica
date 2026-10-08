@@ -34,7 +34,7 @@ export interface ModelEntity {
 }
 
 const DATASET = join(process.cwd(), "dataset/source/afrik");
-const NOT_PROSE = new Set(["_meta", "_translation", "sources"]);
+const NOT_PROSE = new Set(["_meta", "sources"]);
 
 const withoutQualifier = (form: string) =>
   form.replace(/\s*\([^)]*\)\s*$/, "").trim();

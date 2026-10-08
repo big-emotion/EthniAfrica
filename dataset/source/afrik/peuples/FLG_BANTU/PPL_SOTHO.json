@@ -145,10 +145,5 @@
         "notes": "Article de Gosiame Goitsemodimo (National Museum, Bloemfontein), revue Indago, 2026, DOI 10.5281/zenodo.19458019 ; il décrit la couverture comme partie de l'identité culturelle et nationale basotho depuis plus de 160 ans."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: translate:record refuses this record on content.appellations.ethnoLinguisticGroup, which modele-peuple.json does not declare and translationClasses.ts does not classify, so the pipeline carries its French verbatim and the glossary check rejects \"peuples\". Measured 2026-09-10: 743 of the 776 people records carry that field and none of the 776 has an English sidecar, so no people record can be translated until the declaration covers it. Both sonnet and opus refused twice."
-    }
   }
 }

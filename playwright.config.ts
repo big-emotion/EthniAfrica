@@ -122,7 +122,7 @@ export default defineConfig({
       name: "setup",
       testMatch: /\.setup\.ts$/,
     },
-    // Mobile-first non-negotiable per CLAUDE.md.
+    // Mobile-first is non-negotiable.
     // Most persona E2E run here; this is the source-of-truth viewport.
     {
       name: "mobile-430",

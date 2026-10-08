@@ -2698,8 +2698,7 @@ export async function checkSourceUrls(
  * its own (no invented data). Issue #129 owns ZAF.
  *
  * Per issue #130 KISS option 2, the `population` field is the optional one:
- * when both are present and drift > 2 pp, delete `population`. See
- * `scripts/checkPopulationPercentageDrift.ts`.
+ * when both are present and drift > 2 pp, delete `population`.
  */
 const FR32_DRIFT_PP = 2;
 const FR32_ZAF_SOFT = new Set(["ZAF"]); // owned by issue #129
@@ -2790,7 +2789,7 @@ export function checkPopulationPercentageDrift(
       const implied = (entry.population / total) * 100;
       const drift = Math.abs(implied - entry.percentageInCountry);
       if (drift > FR32_DRIFT_PP) {
-        const msg = `FR32 ${id}/${entry.name ?? "(unnamed)"}: population ${entry.population} implies ${implied.toFixed(2)}% of the ${year} total but percentageInCountry is ${entry.percentageInCountry}% (drift ${drift.toFixed(2)} pp > ${FR32_DRIFT_PP} pp threshold) — date the headcount with referenceYear, or drop it (see scripts/checkPopulationPercentageDrift.ts)`;
+        const msg = `FR32 ${id}/${entry.name ?? "(unnamed)"}: population ${entry.population} implies ${implied.toFixed(2)}% of the ${year} total but percentageInCountry is ${entry.percentageInCountry}% (drift ${drift.toFixed(2)} pp > ${FR32_DRIFT_PP} pp threshold) — date the headcount with referenceYear, or drop it`;
         if (FR32_ZAF_SOFT.has(id)) {
           warnings.push(msg + " [soft: owned by issue #129]");
         } else {
@@ -2805,8 +2804,7 @@ export function checkPopulationPercentageDrift(
 
 /**
  * FR33 — `nameFr` must hold the country's name of ordinary use, not a
- * duplicate of `nameOfficial` (the protocol name). See
- * docs/adr/0008-country-namefr-common-name.md.
+ * duplicate of `nameOfficial` (the protocol name).
  *
  * Hard gate: `nameFr` must be a non-empty string, and when `nameOfficial`
  * is also present, the two must differ.
@@ -4004,7 +4002,7 @@ function unauthoritativeStanding(
  *
  * `dataset/source/afrik/noms/` mixes the retired numeric axis (wave 1,
  * `PPL_YORUBA.json`, tier 1/2) with the current official/referenced/
- * unverified vocabulary the rest of the corpus uses (see CLAUDE.md's Source
+ * unverified vocabulary the rest of the corpus uses (see the Source
  * Tier Policy) — `ficheSourceTierSchema` already accepts both when parsing,
  * so this validator has to recognise both too instead of only the numeric
  * one. Returns null for anything that is neither (missing, malformed).
@@ -4381,9 +4379,7 @@ export function checkLanguageStrictSchema(
     }
 
     const ficheTopKeys = new Set(
-      Object.keys(data).filter(
-        (key) => key !== "_meta" && key !== "_translation"
-      )
+      Object.keys(data).filter((key) => key !== "_meta")
     );
     const missingTop = [...modelTopKeys].filter((k) => !ficheTopKeys.has(k));
     const extraTop = [...ficheTopKeys].filter((k) => !modelTopKeys.has(k));
@@ -4485,10 +4481,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   pays: 9,
 };
 
-// Authoring blocks no model declares: `_meta` is curator metadata and
-// `_translation` is a translation deferral fiches still carry from the retired
-// corpus-translation workflow, exempt exactly as in the language check.
-const AUTHORING_KEYS = new Set(["_meta", "_translation"]);
+// Authoring blocks no model declares: `_meta` is curator metadata, exempt
+// exactly as in the language check.
+const AUTHORING_KEYS = new Set(["_meta"]);
 
 // Keys a model documents under `content` that a fiche may leave out without
 // drifting: the page has a fallback for each, so absence is not a defect and

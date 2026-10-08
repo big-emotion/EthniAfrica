@@ -120,29 +120,6 @@ const DEFAULT_LANGUAGES_PAGE = 1;
 const DEFAULT_LANGUAGES_PER_PAGE = 48;
 
 /**
- * Count every AFRIK language in the corpus.
- *
- * Mirrors `countAfrikLanguageFamilies`: a `head: true` count rather than a
- * ranged fetch, because the home needs the corpus-wide total and never the
- * rows. It throws rather than returning 0 on error — zero is a valid total,
- * so the caller has to be able to tell an empty corpus from an unreadable one.
- */
-// @req REQ-113
-export async function countAfrikLanguages(): Promise<number> {
-  const supabase = createServerClient();
-  const { count, error } = await supabase
-    .from("afrik_languages")
-    .select("*", { count: "exact", head: true });
-
-  if (error) {
-    logger.error("Error counting AFRIK languages", error);
-    throw error;
-  }
-
-  return count ?? 0;
-}
-
-/**
  * Get all AFRIK languages belonging to a language family, ordered by name.
  * Returns [] for an unknown/empty family id (no throw).
  */

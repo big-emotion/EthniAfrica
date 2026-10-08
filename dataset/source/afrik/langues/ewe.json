@@ -58,10 +58,5 @@
         "notes": "Classification Glottolog : Atlantic-Congo > Volta-Congo > Kwa Volta-Congo > Gbe > Western Gbe > Eweic. Les dialectes listés sont les sous-languoids que Glottolog rattache à ewee1241, consultés le 2026-09-14."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: this language record was added as the first fiche of a new family, and none of that family's records has an English sidecar yet. It follows the family's first translation pass."
-    }
   }
 }

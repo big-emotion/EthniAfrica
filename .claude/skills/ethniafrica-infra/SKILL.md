@@ -210,8 +210,8 @@ or question (explain a mechanism). An incident skips to Step 5.
 ### Step 2 — Load what the repository knows
 
 Read the relevant runbooks, the workflows involved, `docker-compose.yml`,
-`Dockerfile`, the migration directory, and the "Supabase" and "Deploying"
-sections of `CLAUDE.md`. Read host specifics from the operator's private memory,
+`Dockerfile`, the migration directory, and
+`docs/DEPLOYMENT.md`. Read host specifics from the operator's private memory,
 never from assumptions.
 
 ### Step 3 — Measure

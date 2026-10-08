@@ -91,8 +91,7 @@ migration, and the two name models (nom, nom-patronyme). Never skip, rename or i
 section.
 
 Every `sources` entry carries a tier, and `scripts/validateAfrikData.ts` enforces it. The rules
-the validator applies are documented in
-[`CLAUDE.md`](CLAUDE.md#source-tier-policy-enforced-by-validateafrikdatats).
+the validator applies live in that script.
 
 ---
 
@@ -203,14 +202,13 @@ tablet `md` 720px · desktop `xl` 800px.
 
 ## Documentation
 
-|                                                                        |                                                                                           |
-| ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| [`CLAUDE.md`](CLAUDE.md)                                               | architecture, conventions, and the non-obvious rules — read this before changing anything |
-| [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md)                             | how a change reaches users, and what an operator does by hand                             |
-| [`docs/runbooks/migration-state.md`](docs/runbooks/migration-state.md) | which Supabase migrations are live on which project, and the two-step rollout rule        |
-| [`docs/runbooks/`](docs/runbooks/)                                     | restore, corpus sync, DBA overrides                                                       |
-| [`docs/adr/README.md`](docs/adr/README.md)                             | where architecture decisions live now                                                     |
-| [`CHANGELOG.md`](CHANGELOG.md)                                         | release history                                                                           |
+|                                                                        |                                                                                    |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md)                             | how a change reaches users, and what an operator does by hand                      |
+| [`docs/runbooks/migration-state.md`](docs/runbooks/migration-state.md) | which Supabase migrations are live on which project, and the two-step rollout rule |
+| [`docs/runbooks/`](docs/runbooks/)                                     | restore, corpus sync, DBA overrides                                                |
+| [`docs/adr/README.md`](docs/adr/README.md)                             | where architecture decisions live now                                              |
+| [`CHANGELOG.md`](CHANGELOG.md)                                         | release history                                                                    |
 
 **Operators, read this first:** a hosted Supabase project labels its only environment
 "production" — the label describes the project, not the application it serves. Since ETNI-1958

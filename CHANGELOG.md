@@ -1185,7 +1185,7 @@ trusting a hand-kept ledger. No change to the corpus.
 - Both corpus syncs upload the loader's per-fiche error report as an artifact when
   they fail. The loader logs only a path, and a path on a runner is unreadable — that
   is how an apply-phase failure stayed undiagnosed behind a clean preview (#826).
-- `CLAUDE.md` records that production migrations stopped being manual, and separates
+- The docs record that production migrations stopped being manual, and separate
   the two credentials the schema work needs: the PostgREST endpoint reads the ledger,
   only DDL needs the direct Postgres connection (#828).
 - **The end-to-end suite now describes the page a reader actually gets.** Consent is

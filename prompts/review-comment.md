@@ -42,7 +42,7 @@ The agent loads it at runtime and must follow this structure exactly.
 - /api/health route returning { status, version, commit }
 - Husky + commitlint commit hooks
 - pnpm lint:tokens gate preventing raw hex literals in source
-- Project metadata files (README, CHANGELOG, CONTRIBUTING, AGENTS.md)
+- Project metadata files (README, CHANGELOG, CONTRIBUTING)
 
 **What the diff delivers**
 - `src/app/[locale]/layout.tsx` — next-intl LocaleLayout with `<html lang={locale}>`, WOFF2 preload `<link>` tags for all three typefaces, and NextIntlClientProvider

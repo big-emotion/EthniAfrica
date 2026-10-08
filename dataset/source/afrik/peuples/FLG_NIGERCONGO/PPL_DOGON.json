@@ -131,10 +131,5 @@
         "notes": "Publication d'un musee. Donne Habe ou Habbe (singulier Kado) comme le nom sous lequel les Dogon etaient connus jusqu'aux annees 1930, emprunte par l'administration coloniale aux Peuls islamises, et rappelle que des specialistes discutent l'usage de Dogon comme categorie unificatrice. Renvoie a Jacky Bouju, « Qu'est-ce que l'ethnie dogon ? », Cahiers des Sciences Humaines, 31-2, 1995. Consulte le 25 septembre 2026."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: translate:record refuses this record on content.appellations.ethnoLinguisticGroup, which modele-peuple.json does not declare and translationClasses.ts does not classify, so the pipeline carries its French verbatim and the glossary check rejects \"peuples\". Measured 2026-09-10: 743 of the 776 people records carry that field and none of the 776 has an English sidecar, so no people record can be translated until the declaration covers it. Both sonnet and opus refused twice."
-    }
   }
 }

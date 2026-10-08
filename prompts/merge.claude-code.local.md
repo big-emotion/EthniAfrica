@@ -60,7 +60,7 @@ state,mergedAt`), skip to the Done transition (if still pending) and the audit
 **The only files you may modify** are those required to resolve a conflict or fix a
 failing required check. No refactors. Do not touch `prompts/`, `.github/`, `.ferry/`,
 or lockfiles unless a CI fix genuinely requires it. Never use `--no-verify` or any
-flag that bypasses hooks. Follow `CLAUDE.md` / `AGENTS.md`: npm only, TypeScript
+flag that bypasses hooks. Follow the project rules: npm only, TypeScript
 `strict: false`, AFRIK source-tier policy, English docs and comments.
 
 ### Required: self-assessment score

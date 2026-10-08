@@ -96,10 +96,5 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nzuzi », « Kongo », « Congo », « twin name », « surname », « personal names », « onomastics », « etymology », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que la page Forebears dédiée ; l'étude déjà utilisée pour Nsimba a été écartée afin de ne pas partager une source entre fiches n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "Publication is French-only; the English sidecar is produced in the English launch pass for all patronymic records."
-    }
-  }
+  ]
 }

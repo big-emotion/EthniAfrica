@@ -116,10 +116,5 @@
       "fieldPath": "nameSystem",
       "reason": "La notice UONGOZI rattache Edward Moringe Sokoine à la communauté maasaï, mais ni cette notice, ni l’article de Sane, ni les recherches « Sokoine Maa clan/name » n’établissent si Sokoine est un nom de clan, un nom personnel ou une forme héritée. Faute de meilleure preuve, le classement comme nom de clan reste provisoire."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

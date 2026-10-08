@@ -142,15 +142,6 @@ const dossierGapSchema = z
 const dossierSchema = z
   .object({
     _meta: dossierMetaSchema,
-    /**
-     * Authoring metadata left by the retired corpus-translation workflow, not
-     * part of the fiche. Dossiers still carry `_translation.deferred.<lang>`,
-     * and this schema is `.strict()`, so it stays admitted rather than
-     * refusing every dossier that declares one.
-     */
-    _translation: z
-      .object({ deferred: z.record(z.string(), z.string()) })
-      .optional(),
     id: z.string().regex(/^DOS_[A-Z0-9_]+$/, {
       message: "id must match DOS_[A-Z0-9_]+",
     }),

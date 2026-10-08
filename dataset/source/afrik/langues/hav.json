@@ -30,10 +30,5 @@
         "notes": "Notice directe pour le code ISO 639-3 hav et le glottocode havu1238. Elle situe la langue en République démocratique du Congo, atteste les variantes Haavu et Kihavu et publie le statut EGIDS 6a en 2025. Aucun rôle véhiculaire régional n'est inféré de cette notice."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the French DRC country enrichment pass is stable."
-    }
   }
 }

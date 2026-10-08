@@ -83,10 +83,9 @@ describe("validateAfrikData – structural gates on people, family and country f
 
   describe("checkStrictModelKeys", () => {
     // @req REQ-136
-    it("passes a conforming people fiche at a zero ceiling, ignoring _meta and _translation", () => {
+    it("passes a conforming people fiche at a zero ceiling, ignoring _meta", () => {
       writeJson(datasetRoot, "peuples/FLG_BANTU/PPL_ZULU.json", {
         ...conformingPeople("PPL_ZULU"),
-        _translation: { deferred: { en: "later" } },
       });
 
       expect(

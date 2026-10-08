@@ -98,5 +98,4 @@ V1 residue in the data and should be deleted or archived deliberately rather tha
 rediscovered.
 
 `src/lib/api/openapi.ts` — the V1 OpenAPI spec, flagged for deletion in the original follow-up
-list — is still present in the tree. Whether it is still reachable is worth a look before
-removing it.
+list — has since been deleted.

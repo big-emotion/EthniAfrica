@@ -114,10 +114,5 @@
       "fieldPath": "homonyms",
       "reason": "Le lexique yakoma, les catalogues et les recherches exactes sur la graphie n'ont livré aucun homonyme doté d'une origine distincte."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

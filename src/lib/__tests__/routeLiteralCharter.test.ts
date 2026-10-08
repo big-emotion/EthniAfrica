@@ -130,14 +130,6 @@ function code(line: string): string {
   return line.replace(/\/\/.*$/, "").replace(/\/\*.*?\*\//g, "");
 }
 
-/**
- * Translation sidecars are repository paths, not public URLs. Remove only
- * their locale prefix so another URL on the same line remains visible.
- */
-function routeCode(line: string): string {
-  return code(line).replace(/dataset\/translations\/(?:en|fr)\//g, "");
-}
-
 function sourceFiles(): string[] {
   return (
     execFileSync("git", ["ls-files", "--", "src", "scripts", "e2e"], {
@@ -182,7 +174,7 @@ describe("module URLs are composed, never written out", () => {
     for (const file of sourceFiles()) {
       const lines = readFileSync(resolve(ROOT, file), "utf8").split("\n");
       lines.forEach((line, index) => {
-        if (LITERAL.test(routeCode(line))) {
+        if (LITERAL.test(code(line))) {
           offenders.push(`${file}:${index + 1}  ${line.trim()}`);
         }
       });
@@ -248,24 +240,6 @@ describe("module URLs are composed, never written out", () => {
   it("does not mistake a longer word for a module segment", () => {
     expect(LITERAL.test('"/fr/paysages"')).toBe(false);
     expect(LITERAL.test('"/fr/explorer-le-corpus"')).toBe(false);
-  });
-
-  // @req REQ-091
-  it("does not mistake translation sidecar paths for public URLs", () => {
-    expect(
-      LITERAL.test(
-        routeCode(
-          'file: "dataset/translations/en/peuples/FLG_KWA/PPL_YORUBA.json"'
-        )
-      )
-    ).toBe(false);
-    expect(
-      LITERAL.test(
-        routeCode(
-          'const file = "dataset/translations/en/peuples/PPL_X.json"; const href = "/en/atlas/peoples/PPL_X";'
-        )
-      )
-    ).toBe(true);
   });
 
   // A file list that silently emptied would make the sweep above vacuous.

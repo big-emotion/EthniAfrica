@@ -68,8 +68,7 @@ describe.each(PILOT_IDS)("written article %s", (id) => {
   });
 
   // @req REQ-114
-  it("defers English with a stated reason and carries no English text", () => {
+  it("carries no English text", () => {
     expect(article.en).toBeUndefined();
-    expect(article._translation?.deferred?.en?.trim()).toBeTruthy();
   });
 });

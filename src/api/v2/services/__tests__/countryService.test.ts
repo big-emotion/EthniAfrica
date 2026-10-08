@@ -1,6 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import {
-  countCountries,
   getCountries,
   getCountryAtlasIndex,
   getCountryById,
@@ -8,14 +7,12 @@ import {
 } from "../countryService";
 
 vi.mock("@/lib/supabase/queries/afrik/countries", () => ({
-  countAfrikCountries: vi.fn(),
   getAllAfrikCountries: vi.fn(),
   getAfrikCountryById: vi.fn(),
   getAfrikCountryIndexRows: vi.fn(),
 }));
 
 import {
-  countAfrikCountries,
   getAllAfrikCountries,
   getAfrikCountryById,
   getAfrikCountryIndexRows,
@@ -76,16 +73,6 @@ describe("Country Service", () => {
       const result = await getCountries(1, 1000);
 
       expect(result.data.length).toBe(result.total);
-    });
-  });
-
-  describe("countCountries", () => {
-    // @req REQ-113
-    it("answers the total without reading a single fiche", async () => {
-      vi.mocked(countAfrikCountries).mockResolvedValue(54);
-
-      await expect(countCountries()).resolves.toBe(54);
-      expect(getAllAfrikCountries).not.toHaveBeenCalled();
     });
   });
 

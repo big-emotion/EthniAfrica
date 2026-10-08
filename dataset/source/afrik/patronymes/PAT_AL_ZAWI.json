@@ -111,10 +111,5 @@
       "fieldPath": "countries",
       "reason": "La source propre au nom ne confirme pas le ou les pays LBY hérités de la file d’attente. Les recherches exactes « Al-Zawi surname » avec ces pays n’ont pas livré de registre officiel exploitable ; l’association reste non vérifiée."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

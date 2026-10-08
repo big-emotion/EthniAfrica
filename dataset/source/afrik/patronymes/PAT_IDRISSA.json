@@ -123,10 +123,5 @@
       "fieldPath": "homonyms",
       "reason": "Les formes Idrissa, Idrissou et Idris ont été distinguées dans les recherches onomastiques ; aucune origine indépendante de la forme ouest-africaine d'Idris n'a été établie pour constituer un homonyme."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

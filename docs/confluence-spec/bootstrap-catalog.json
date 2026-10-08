@@ -136,7 +136,7 @@
       "title": "Separate admission status, evidence tier, and source kind",
       "context": "The repository currently mixes an Approved four-value display tier, a Tier 1/2 editorial rule, a broader curator list, and hard-coded form/API values.",
       "decision": "- Maintain one executable catalogue with separate admission (preferred, allowed, discovery_only, review_required, or prohibited), evidenceTier (1 or 2 for publishable factual evidence), and sourceKind fields.\n- Seed preferred and allowed official sources with UN DESA/WPP, UNSD, UNFPA, UNESCO, UNICEF/MICS, World Bank, African Union, ACALAN, national statistical institutes, censuses, ministries, official gazettes, legislation, national archives, CIA World Factbook, Glottolog, SIL Ethnologue, WALS, IWGIA, DHS Program, and IPUMS.\n- Allow peer-reviewed journals, academic monographs, university presses, recognized theses and dissertations, and attributable community- or Indigenous-organization publications with a clearly bounded point of view.\n- Allow underlying works hosted by AJOL, HAL, Persée, OpenEdition, theses.fr (http://theses.fr), eHRAF, ELAR, Pangloss, Gallica/BnF, British Library EAP, and recognized institutional repositories or archival collections; cite the work rather than merely the hosting platform.\n- Treat Wikipedia language versions, WorldCat, Sudoc, library catalogues, search indexes, and book-preview services as discovery tools rather than evidence.\n- Treat AI-generated content, unattributed aggregators, forums, ordinary social posts, and unsourced blogs as prohibited factual evidence.",
-      "alternatives": "Keep separate lists in AGENTS.md (http://AGENTS.md), curator instructions, validators, and forms; or accept any source that supplies a URL.",
+      "alternatives": "Keep separate lists in agent instructions, curator instructions, validators, and forms; or accept any source that supplies a URL.",
       "tradeoffs": "A maintained catalogue requires governance, but removes contradictory classifications and prevents drift.",
       "requirementsSatisfied": ["REQ-092", "REQ-093", "REQ-022"],
       "source": "User-approved structured reference and oral-narrative specification (2026-07-29).",
@@ -511,7 +511,7 @@
       "sourceFiles": [
         "src/app/[lang]",
         "src/lib/routing.ts",
-        "src/middleware.ts",
+        "src/proxy.ts",
         "package.json"
       ],
       "tests": [
@@ -564,7 +564,7 @@
       "title": "Isolated Supabase clients and RLS boundaries",
       "summary": "Browser, server, and service-role clients remain isolated; frontend reads use approved loaders or queries, and privileged writes are protected by server-only clients plus RLS.",
       "sourceFiles": [
-        "src/lib/supabase/client.ts",
+        "src/lib/supabase/auth-client.ts",
         "src/lib/supabase/server.ts",
         "src/lib/supabase/admin.ts",
         "supabase/migrations"
@@ -622,17 +622,11 @@
       "summary": "Supabase Auth establishes contributor identity, user_roles controls moderation privileges, and contribution, correction, and moderation mutations are audited at server boundaries.",
       "sourceFiles": [
         "src/lib/auth",
-        "src/app/api/contributions",
         "src/app/api/admin",
-        "src/middleware.ts",
+        "src/proxy.ts",
         "supabase/migrations"
       ],
-      "tests": [
-        "src/lib/auth/__tests__/supabase-auth.test.ts",
-        "src/app/api/contributions/__tests__/email-gate.test.ts",
-        "src/app/api/admin/contributions/[id]/__tests__/route.test.ts",
-        "src/lib/supabase/__tests__/moderator.test.ts"
-      ],
+      "tests": ["src/lib/supabase/__tests__/moderator.test.ts"],
       "source": "retired planning artifact: architecture.md#authentication--security",
       "status": "Pending"
     },
@@ -702,14 +696,11 @@
       "sourceFiles": [
         "config/sources/authorized-source-catalog.json",
         "public/modele-source.json",
-        "public/modele-recit-oral.json",
         "dataset/source/afrik/sources/",
-        ".agents/skills/afrik-curator/",
         "src/lib/sources/",
         "src/api/v2/{schemas,services,handlers}/",
         "src/app/api/v2/",
         "src/components/ContributionForm*.tsx",
-        "scripts/migrateLegacySources.ts",
         "scripts/validateAfrikData.ts",
         "supabase/migrations/"
       ],
@@ -830,7 +821,7 @@
         "scripts/projectPrismicToDatabase.ts — upsert into afrik_* and rewrite the git archive",
         "src/app/api/prismic/revalidate/route.ts — publication webhook; the secret arrives in the JSON body, not an Authorization header",
         "src/app/api/preview/route.ts, src/app/api/exit-preview/route.ts — Draft Mode",
-        "src/middleware.ts — CSP extended for images.prismic.io, the repository CDN host, static.cdn.prismic.io and the Page Builder as a frame ancestor"
+        "src/proxy.ts — CSP extended for images.prismic.io, the repository CDN host, static.cdn.prismic.io and the Page Builder as a frame ancestor"
       ],
       "tests": [
         "src/lib/cms/__tests__/roundTrip.test.ts — a serialized document equals its canonical AFRIK JSON, field for field, for each of the three entity types",
@@ -848,7 +839,7 @@
       "title": "Unified search layer",
       "summary": "One indexing pipeline and one public calling surface for search over the whole corpus. Every entity nature is wired by replicating the weighting and ranking pattern already proven in migration 044 — weighted ts_rank, an accent-insensitive exact-match bonus, ts_headline snippets — rather than by inventing a second mechanism. Prefix matching uses to_tsquery with the :* operator, which the existing GIN index already serves; pg_trgm is installed alongside it for approximate matching. Language families gain a generated search_vector and stop being matched by an in-memory ILIKE. The three dead paths are removed, the three competing family matchings collapse into one, and the two independent HTTP clients are deduplicated into a single caller. Result ranking across heterogeneous natures is normalised in SQL so peoples, countries, families, persons and quiz questions can be ordered together.",
       "sourceFiles": [
-        "supabase/migrations/ (prefix and unaccent, family vector, people prose vector, country prose vector, alias column, quiz vector), src/lib/supabase/queries/afrik/search.ts, src/lib/supabase/queries/afrik/languageFamilies.ts, src/api/v2/services/searchService.ts, src/api/v2/handlers/search.ts, src/app/api/v2/search/route.ts, src/lib/search/searchEnvelope.ts, src/lib/search/pivot.ts, src/lib/afrikLoader.ts. Removed: searchAfrikAll, searchAfrikPeoples, searchAfrikCountries."
+        "supabase/migrations/ (prefix and unaccent, family vector, people prose vector, country prose vector, alias column, quiz vector), src/lib/supabase/queries/afrik/search.ts, src/lib/supabase/queries/afrik/languageFamilies.ts, src/api/v2/services/searchService.ts, src/api/v2/handlers/search.ts, src/app/api/v2/search/route.ts, src/lib/search/searchEnvelope.ts, src/lib/afrikLoader.ts. Removed: searchAfrikAll, searchAfrikPeoples, searchAfrikCountries."
       ],
       "tests": [
         "a partial input returns entities of every nature and not only language families; \"bamba\" returns Bambara; a declared spelling variant resolves to its entity; a query matching nothing returns the near misses rather than an empty envelope; the ranking of a name outranks a prose occurrence of the same term; no module outside the unified service issues its own text query against the corpus."

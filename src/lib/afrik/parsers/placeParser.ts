@@ -76,7 +76,6 @@ const placeSchema = z.object({
     z.object({ field: z.string().min(1), reason: z.string().min(1) })
   ),
   sources: z.array(sourceSchema),
-  _translation: z.unknown().optional(),
 });
 
 type PlaceRecord = z.infer<typeof placeSchema>;
@@ -98,7 +97,7 @@ export function parsePlaceFile(raw: unknown): ParsedPlaceFile {
       ),
     };
   }
-  // strictNullChecks is off project-wide (CLAUDE.md), which widens zod's
+  // strictNullChecks is off project-wide (tsconfig), which widens zod's
   // inferred output; the cast is safe once safeParse has succeeded.
   return { success: true, data: result.data as PlaceRecord, errors: [] };
 }

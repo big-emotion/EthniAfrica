@@ -2,7 +2,7 @@
  * Codemod — legacy string `sources` entries become structured, explicitly
  * tiered entries.
  *
- * Doctrine (CLAUDE.md, Source Tier Policy): nothing is forbidden, everything is
+ * Doctrine (Source Tier Policy): nothing is forbidden, everything is
  * labelled. The codemod therefore never drops a citation and never guesses a
  * tier. A source whose authority cannot be established from the authorized
  * source catalogue, the domain rulings, or an unambiguous published-citation

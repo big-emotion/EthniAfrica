@@ -14,7 +14,7 @@ tell a considered decision from a guess.
 492 fiches acquired a classification in a single pass. An enum applied at that
 scale without a stated rule is unfalsifiable a month later: nobody can say
 whether `contested` on a given fiche was reasoned or reflexive. The Source Tier
-policy is written down in `CLAUDE.md` for the same reason, and this is the same
+policy is written down for the same reason, and this is the same
 kind of judgement — one that has to survive the person who made it.
 
 ## The rule the pass followed

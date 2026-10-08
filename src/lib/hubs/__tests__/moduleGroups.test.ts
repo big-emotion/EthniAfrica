@@ -123,9 +123,8 @@ describe("moduleGroups — the shelf a module sits on (REQ-120)", () => {
     ]);
   });
 
-  // Asserted in both locales, which the French-only label on the registry
-  // could not do: a rubric heading is reader-facing copy, and an English
-  // reader met a French heading over English dossier titles.
+  // A rubric heading is reader-facing copy, so every published locale must
+  // name every shelf.
   // @req REQ-120 @req REQ-145
   it("names every shelf for the reader, in every published locale", () => {
     for (const language of LOCALES) {

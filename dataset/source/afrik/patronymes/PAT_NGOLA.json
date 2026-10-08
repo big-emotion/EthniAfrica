@@ -127,10 +127,5 @@
       "fieldPath": "transmissionMode",
       "reason": "Aucune source consultée ne dit comment ce nom se transmet."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
-    }
-  }
+  ]
 }

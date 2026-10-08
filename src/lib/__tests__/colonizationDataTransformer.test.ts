@@ -236,7 +236,7 @@ describe("transformColonizationModuleData timeline (Epic 13, Story 13.12, ETNI-5
   });
 
   // @req REQ-101 FR87
-  it("prefers a Tier 1 source over Tier 2 as the primary source", () => {
+  it("prefers an official source over a referenced one as the primary source", () => {
     const result = transformColonizationModuleData({
       fragmentations: [],
       timelineEvents: [resistanceEvent],

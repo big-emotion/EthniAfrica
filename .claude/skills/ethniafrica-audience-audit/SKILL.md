@@ -147,18 +147,15 @@ whether the message was understood.
 **Record each post's publication date next to its figures.** Posts of different
 ages never compare as equals; a one-day-old post at 9 views is not a failure.
 
-Join each post to its `post.md` through the campaign slug in its tagged links.
-`node social/tools/etat-pipeline/bilan-sujets.mjs <sujet>` lists a subject's
-posts, formats and networks.
+Join each post to its subject through the campaign slug in its tagged links.
 
-This step measures. Whether a production carries the message is scored by
-`/ethniafrica-message`; put the two side by side in the report, never merge
+This step measures what the audience did. Whether a production carries the
+message is a separate judgement; keep the two apart in the report, never merge
 them into one number.
 
 ## Editorial audience evidence (2026-09-30)
 
-Read `docs/audience/editorial-measurement.md` when measurement informs voice or
-personas. Separate intended audience, observed behaviour, hypotheses and unknowns.
+When measurement informs voice or personas, separate intended audience, observed behaviour, hypotheses and unknowns.
 Record follower versus viewer denominators for demographics; country does not
 establish diaspora membership, ancestry, profession or expertise. Review mobile,
 then tablet, then desktop. A device gap is a prompt to investigate, not proof of

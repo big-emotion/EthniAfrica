@@ -41,7 +41,7 @@ describe("isQuizEligible", () => {
     });
 
     // @req REQ-103
-    it("accepts a Tier 2 (secondary) resolvable source", () => {
+    it("accepts a referenced resolvable source", () => {
       expect(
         isQuizEligible({
           ...eligibleInput,
@@ -173,7 +173,7 @@ describe("isQuizEligible", () => {
     });
 
     // @req REQ-103
-    it("rejects a resolvable Tier 3 ('ai') source", () => {
+    it("rejects a resolvable unverified source", () => {
       expect(
         isQuizEligible({
           ...eligibleInput,

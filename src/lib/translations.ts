@@ -6,21 +6,15 @@ import { articlesCopy } from "@/lib/i18n/copy/articles";
 import { colonizationCopy } from "@/lib/i18n/copy/colonization";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { chromeCopy } from "@/lib/i18n/copy/chrome";
-import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
-import { homeCorpusCountsCopy } from "@/lib/i18n/copy/homeCorpusCounts";
-import { homePurposeCopy } from "@/lib/i18n/copy/homePurpose";
-import { homeStoriesCopy } from "@/lib/i18n/copy/homeStories";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import { wordAnswerCopy } from "@/lib/i18n/copy/wordAnswer";
-import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { commonCopy } from "@/lib/i18n/copy/common";
 import { consentCopy } from "@/lib/i18n/copy/consent";
 import { compareCopy } from "@/lib/i18n/copy/compare";
 import { contactCopy } from "@/lib/i18n/copy/contact";
 import { aboutCopy } from "@/lib/i18n/copy/about";
 import { contributeCopy } from "@/lib/i18n/copy/contribute";
-import { countryCopy } from "@/lib/i18n/copy/country";
 import { facetsCopy } from "@/lib/i18n/copy/facets";
 import { fieldProvenanceCopy } from "@/lib/i18n/copy/fieldProvenance";
 import { familyCopy } from "@/lib/i18n/copy/family";
@@ -29,10 +23,7 @@ import { footerCopy } from "@/lib/i18n/copy/footer";
 import { gamesCopy } from "@/lib/i18n/copy/games";
 import { hubsCopy } from "@/lib/i18n/copy/hubs";
 import { languagesCopy } from "@/lib/i18n/copy/languages";
-import { ficheNameStoryCopy } from "@/lib/i18n/copy/ficheNameStory";
-import { languageFicheCopy } from "@/lib/i18n/copy/languageFiche";
 import { migrationsCopy } from "@/lib/i18n/copy/migrations";
-import { moderationConsoleCopy } from "@/lib/i18n/copy/moderationConsole";
 import { namesCopy } from "@/lib/i18n/copy/names";
 import { patronymesCopy } from "@/lib/i18n/copy/patronymes";
 import { peopleCopy } from "@/lib/i18n/copy/people";
@@ -42,7 +33,6 @@ import { quizCopy } from "@/lib/i18n/copy/quiz";
 import { reportsCopy } from "@/lib/i18n/copy/reports";
 import { serverCopy } from "@/lib/i18n/copy/server";
 import { provenanceCopy } from "@/lib/i18n/copy/provenance";
-import { sourceTransparencyCopy } from "@/lib/i18n/copy/sourceTransparency";
 import { sitemapPageCopy } from "@/lib/i18n/copy/sitemapPage";
 import { systemCopy } from "@/lib/i18n/copy/system";
 import { trailCopy } from "@/lib/i18n/copy/trail";
@@ -68,19 +58,13 @@ const fr = {
   atlas: atlasCopy.fr,
   ...commonCopy.fr,
   chrome: chromeCopy.fr,
-  homeHero: homeHeroCopy.fr,
-  homeStories: homeStoriesCopy.fr,
-  homePurpose: homePurposeCopy.fr,
-  homeCorpusCounts: homeCorpusCountsCopy.fr,
   nameAnswer: nameAnswerCopy.fr,
   searchAnswer: searchAnswerCopy.fr,
   wordAnswer: wordAnswerCopy.fr,
-  searchFeed: searchFeedCopy.fr,
   consent: consentCopy.fr,
   compare: compareCopy.fr,
   contact: contactCopy.fr,
   contribute: contributeCopy.fr,
-  countryFiche: countryCopy.fr,
   facets: facetsCopy.fr,
   footer: footerCopy.fr,
   about: aboutCopy.fr,
@@ -92,18 +76,14 @@ const fr = {
   languages: languagesCopy.fr,
   patronymes: patronymesCopy.fr,
   migrations: migrationsCopy.fr,
-  moderationConsole: moderationConsoleCopy.fr,
   colonization: colonizationCopy.fr,
   discoveries: discoveriesCopy.fr,
   quiz: quizCopy.fr,
   reports: reportsCopy.fr,
-  sourceTransparency: sourceTransparencyCopy.fr,
   provenance: provenanceCopy.fr,
   fieldProvenance: fieldProvenanceCopy.fr,
   family: familyCopy.fr,
   fiche: ficheCopy.fr,
-  ficheNameStory: ficheNameStoryCopy.fr,
-  languageFiche: languageFicheCopy.fr,
   peopleFiche: peopleCopy.fr,
   hubs: hubsCopy.fr,
   trail: trailCopy.fr,

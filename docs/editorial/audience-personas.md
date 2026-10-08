@@ -160,8 +160,7 @@ may be considered, but do not write four competing versions of every piece.
 
 Every piece remains intelligible to P3; prioritising P1 never excludes P2.
 P4 determines the usefulness of the references, not an academic tone for everyone.
-Use the same evidential care in French and English without changing publication
-locale settings.
+Apply the same evidential care to every sentence, whoever it is written for.
 
 For reading comfort start with mobile 320–430 px, then tablet 768–1199 px, then
 desktop at 1200 px and above. Site mobile visitors are 83.0% of the measured sample;

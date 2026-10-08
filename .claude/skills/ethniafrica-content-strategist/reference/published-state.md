@@ -1,7 +1,7 @@
 # What exists, what shipped, and what it did
 
 The state of the publication record, carried here so the skill knows rather than
-points. **Rewritten 2026-09-14**, from `bilan-sujets.mjs` and the same-day
+points. **Rewritten 2026-09-14**, from the pipeline state and the same-day
 audience audit. Refresh the numbers each session; the structure is what does
 not change.
 
@@ -9,16 +9,14 @@ not change.
 
 It is split, and the split is the point.
 
-**The engine is here**, versioned: `social/harness/` renders — `ethni_montage.py`
-for video, `ethni_carrousel2.py` for carousels, both composed by
-`ethni_compose.py` with `ethni_brand.py` for the mark — and
-`docs/design/gabarits-social/` is the spec they read.
+**The record is here**, versioned: `docs/productions/` holds one ledger per
+subject — where it was published, in which format — and `social/brand/` holds
+the brand assets. The render engine and its specs left the repository with the
+production chain (#1571).
 
 **The productions are not**, and never will be. They live in the production
-library, outside version control, at whatever path
-`ETHNIAFRICA_SOCIAL_PROJECTS` points to on this machine. So do the publication
-index, the dated editorial guides and the pipeline state. Read it with
-`node social/tools/etat-pipeline/bilan-sujets.mjs`.
+library, outside version control, on the operator's machine. So do the
+publication index, the dated editorial guides and the pipeline state.
 
 ## What has shipped
 
@@ -65,7 +63,7 @@ carousel — never published as video). None should ship as-is.
 
 ## The link problem — mostly still open, one exception found
 
-`social/tools/link-builder/`'s UTM scheme is in every caption, and it still
+The UTM scheme is in every caption, and it still
 produced almost nothing: the only scheme-tagged visit ever recorded is
 `traore-diop`, one visitor, from 2026-09-09. **No post published on 09-11,
 09-12 or 09-13 produced a tagged visit**, despite all of them carrying scheme

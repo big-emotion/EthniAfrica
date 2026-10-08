@@ -739,7 +739,7 @@ Use for the corpus: the best single UNESCO source for MDG and COM peopling and n
 
 Scope: the same volume as 158431fre.pdf, in English, with the same chapters, authors and Part V "The African Continent". Differences are limited to pagination. The English contents list is printed at PDF pp. 2–16 with the book's own page numbers: Part V "The African Continent" 1116; ch. 32 "West Africa" 1122; ch. 33 "Nubia and the Nilotic Sudan" 1156; ch. 34 "Ethiopia" 1176; ch. 35 "The East Coast and the Indian Ocean Islands" 1195; 35.4 "Mixed Cultures of Madagascar and the Other Islands" 1210; ch. 36 "Central and Southern Africa" 1225; ch. 20 "North and North-East Africa" 770; ch. 17 "Expansion of Islam and Aspects of Diversity in Asia, Africa and Europe" 644, with "The Sudan and Countries South of the Sahara" at 685. The PDF is a chapter-split file whose page index is not a constant offset from those numbers: ch. 32 opens at PDF 1188, ch. 33 at PDF 1222, ch. 34 at PDF 1243, ch. 35 at PDF 1262, 35.4 at PDF 1277 and ch. 36 at PDF 1292. The same entities as in the French table apply.
 
-Use for the corpus: citing in English for the `en` locale (English spellings and diacritics of names); otherwise use the French pagination above.
+Use for the corpus: the French pagination above; this edition only where an English spelling or diacritic of a name is the point.
 
 ### `HUM-05-fr` — Histoire de l'humanité V: 1492-1789 (2008, 1299 p.)
 

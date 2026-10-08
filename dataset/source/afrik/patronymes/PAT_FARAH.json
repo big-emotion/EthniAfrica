@@ -97,10 +97,5 @@
       "fieldPath": "homonyms",
       "reason": "Farah et Faarax ont été recherchés comme anthroponymes, lexèmes et toponymes ; aucune entité homonyme distincte satisfaisant le modèle du corpus n'a été établie."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

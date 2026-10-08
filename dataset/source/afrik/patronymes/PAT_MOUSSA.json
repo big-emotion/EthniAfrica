@@ -110,10 +110,5 @@
       "fieldPath": "homonyms",
       "reason": "Les formes Moussa et Musa ont été comparées dans les recherches onomastiques ; aucune origine distincte susceptible de constituer un homonyme n'a été établie."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

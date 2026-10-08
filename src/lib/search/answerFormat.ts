@@ -51,11 +51,6 @@ export function sentences(text: string): string[] {
     .filter(Boolean);
 }
 
-/** @req REQ-178 */
-export function firstSentence(text: string): string {
-  return sentences(text)[0] ?? "";
-}
-
 /**
  * What stays visible before « Lire la suite », and what the disclosure holds.
  * @req REQ-178

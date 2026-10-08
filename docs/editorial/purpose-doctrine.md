@@ -16,8 +16,7 @@ out — is published in the purpose chapter of the About page
 (`src/lib/i18n/copy/about.ts`, `purposeChapter`).
 
 **Why it is recorded in the repository.** The statement already governed the
-social templates (`docs/design/gabarits-social/GABARITS-SOCIAL.md`, the
-"agent reversal" table) and a single sentence of it opened the About page. The
+social templates (their "agent reversal" table) and a single sentence of it opened the About page. The
 full reasoning lived only in a chat transcript and in a private series guide.
 A doctrine nobody can read is re-derived, and re-derived differently.
 
@@ -271,7 +270,7 @@ peoples name themselves. The operator's instruction, kept close to verbatim:
 people, the name it gives itself comes first — in the running prose, not only
 in a card's dedicated `paires` block. A `paires` pair stays the visible,
 labelled demonstration of the mechanism for one or two featured peoples per
-card (§3 bis of `GABARITS-SOCIAL.md` still bounds it at two to four entries);
+card (two to four entries);
 every other people named in the same sentence or the same card's body still
 opens on its own name before any exonym follows, even in a plain list — never
 the exonym alone, with the self-name omitted because there was no room for a
@@ -282,7 +281,7 @@ Bambara, Soninké, Susu…" The corpus fiches already carry this distinction on
 peoples; a production names it from there rather than defaulting to the
 `mainName` a French reader already recognises.
 
-**Where this rule already lived, and what changes.** `ethniafrica-message`'s
+**Where this rule already lived, and what changes.** The message review's
 own vocabulary table already preferred « le nom qu'il se donne » wording and
 its criterion 2 already required a `paires` pair visible early — but scoped to
 the one people carrying that pair, not to every people a production names in
@@ -334,8 +333,7 @@ above still explain _why_ Berlin cannot be the sole origin point (it set rules,
 drew almost no line itself); this addendum removes it as a citation entirely,
 in favour of the already-published formula, "la plupart des frontières ont
 moins de cent quarante ans," which carries the same claim without naming a
-single conference. `docs/design/gabarits-social/GABARITS-SOCIAL.md` §7 ter and
-`.claude/skills/ethniafrica-message/SKILL.md` are updated to match. Productions
+single conference. Productions
 already published (the Dioula closing card among them, per the 09-13 audit)
 still carry the retired citation and are not re-rendered for this alone.
 
@@ -346,16 +344,14 @@ survives the division is what actually connects every people to every other —
 not a story about who drew a line, but one of continuity and of connection
 across difference. This is a doctrine statement, not yet a formalised
 closing-line spec for every content type; folding it into this file's
-structure, GABARITS-SOCIAL §7 ter's type-by-type closing table, and the About
-page's `purposeChapter` is `/ethniafrica-message`'s work, not done by this
-edit.
+structure and the About page's `purposeChapter` was not done by this edit.
 
 ---
 
 ## 5. A second doctrine session — the unity vision (14 September 2026)
 
 **Where this session picks up.** The addendum above widened the closing
-doctrine the same day and deferred its formalisation to `/ethniafrica-message`.
+doctrine the same day and deferred its formalisation.
 This is that session.
 
 **What this session is.** The blocked `ethniafrica-pourquoi-les-peuples` idea
@@ -461,7 +457,7 @@ correction — the same role the 191-peoples count plays for §1's opening line
 **The doctrine, as this session settles it.**
 
 1. **The factual nuance**, generalised, to sit alongside the existing
-   corrections in §1 / §7 ter of GABARITS-SOCIAL:
+   corrections in §1:
 
    > Des parentés de langue et de culture ont parfois traversé des ruptures
    > plus anciennes que la carte coloniale elle-même — une scission, une
@@ -482,12 +478,11 @@ correction — the same role the 191-peoples count plays for §1's opening line
    measurement the atlas produces.
 
 **Not yet done, before this session.** Neither line had been carried into
-`about.ts`'s `purposeChapter`, `aboutPage`, or GABARITS-SOCIAL §7 ter — those
+`about.ts`'s `purposeChapter` or `aboutPage` — those
 are published surfaces, and confirming the wording came first. Both are now
 published: the fourth refusal and the `unityClaim`/`unityClaimStatus` pair sit
 in `about.ts`, rendered as a block in `AboutPageContent.tsx` separate from the
-constant ligne de vision, and GABARITS-SOCIAL §7 ter carries the corresponding
-table row and subsection.
+constant ligne de vision.
 
 ---
 
@@ -517,7 +512,7 @@ together:**
    retired framing ranked sources by closeness to a people's self-designation
    — « personne n'est mieux placé que lui pour raconter son histoire ». That
    is itself a form of the ranking the Source Tier Policy refuses elsewhere
-   (CLAUDE.md, "Whose account gets told"): tier measures who is speaking, not
+   ("Whose account gets told"): tier measures who is speaking, not
    which account deserves to be heard. The title changes with the sentence it
    headlines, since keeping the old title over the new sentence would leave a
    title contradicting its own paragraph.

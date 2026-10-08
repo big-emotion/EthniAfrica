@@ -271,7 +271,7 @@ function createSupabaseDouble(options: SupabaseDoubleOptions = {}) {
           ) {
             return {
               error: {
-                message: `name_records row rejected: assertion ${row.assertion_id} cites zero Tier 1/2 sources (source or drop, FR57).`,
+                message: `name_records row rejected: assertion ${row.assertion_id} cites no qualifying source for entity_type ${row.entity_type}.`,
               },
             };
           }

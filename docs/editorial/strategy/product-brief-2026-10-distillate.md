@@ -40,8 +40,8 @@ each bullet stands alone.
 
 ## Requirements hints (for mission sheets, template, site)
 
-- Volunteer mission 1, publication research: deliver the idea stage of
-  `ethniafrica-idee` (subject, angle, narrative outline) plus images. Images are
+- Volunteer mission 1, publication research: deliver a subject report
+  (subject, angle, narrative outline) plus images. Images are
   the slowest step for the operator; rights and licence must travel with each
   image. Operator keeps structure and render.
 - Volunteer mission 2, fiche preparation: a fill-in template simpler than the

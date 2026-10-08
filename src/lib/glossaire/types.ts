@@ -29,10 +29,10 @@ export interface GlossaryEntry {
   /**
    * The English term.
    *
-   * Carried from the first line even though only the French column renders,
-   * because REQ-144 asks for one *bilingual* glossary rather than a French
-   * one with a translation bolted on later. It is also where the requirement's
-   * own rule is enforceable: `peuple` renders as `people`, never as `tribe`.
+   * Carried even though only the French column renders, because REQ-144 asks
+   * for the English term to live beside the French one rather than be bolted
+   * on later. It is also where the requirement's own rule is enforceable:
+   * `peuple` renders as `people`, never as `tribe`.
    */
   en: string;
   family: GlossaryFamily;

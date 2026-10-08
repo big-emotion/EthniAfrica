@@ -100,10 +100,5 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur la graphie exacte « Chuol » dans les index onomastiques et les tableaux Naath/Nuer de Wikinames, la grammaire nuer d’Indiana, l’article de Markó et les recherches bibliographiques par graphie exacte n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

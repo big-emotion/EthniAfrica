@@ -28,8 +28,8 @@ not, until the files are on the host. So:
 
 ## Copying the files
 
-The derivatives are produced by `social/tools/articles-import/` into its `--out` directory
-(private, never committed), under `derivatives/`. Copy that tree, keeping its relative
+The derivatives are produced outside this repository (private, never committed), under a
+`derivatives/` directory. Copy that tree, keeping its relative
 structure, into the host directory:
 
 ```bash

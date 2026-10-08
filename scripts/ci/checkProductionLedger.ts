@@ -5,16 +5,15 @@
  *   npx tsx scripts/ci/checkProductionLedger.ts               every ledger file
  *
  * One JSON file per subject, at `docs/productions/<typologie>/<NNN>-<slug>.json`.
- * The schema and the reasoning behind it are in
- * `docs/plans/production-history-plan.md` §2–3. This gate enforces what a
- * skill filling the file correctly can always get right the first time — it
- * is not a ratchet, unlike `check:dead` or `chronology-symmetry`: there is no
- * backlog to lower, only entries authored from now on.
+ * This gate enforces what an author filling the file correctly can always
+ * get right the first time — it is not a ratchet, unlike `check:dead` or
+ * `chronology-symmetry`: there is no backlog to lower, only entries authored
+ * from now on.
  *
  * What it refuses: a schema violation, a duplicate or non-contiguous episode
  * number within a typology, a duplicate campaign, a subject id the corpus
  * does not hold, a `sitePath` that names no known route for that subject, and
- * a network × format pairing GABARITS §1 bis does not allow.
+ * a network × format pairing `socialFormatMatrix` does not allow.
  *
  * What it does not refuse: a missing publication URL (recorded as
  * unpublished, not an error — the private ledger already tracks "publié,
@@ -330,7 +329,7 @@ export function validateEntry(
         !deps.networkAcceptsFormat(network, format)
       ) {
         errors.push(
-          `publications[${index}] — ${network} does not receive ${format} (GABARITS §1 bis)`
+          `publications[${index}] — ${network} does not receive ${format} (socialFormatMatrix)`
         );
       }
       if (
@@ -777,7 +776,7 @@ const FIXTURES: Fixture[] = [
     },
     true,
   ],
-  // The 2026-09-21 revision of §1 bis: both formats go to every network, and
+  // The 2026-09-21 revision of the format matrix: both formats go to every network, and
   // X alone refuses the carrousel because the platform has none.
   [
     "carousel sent to Facebook",

@@ -61,9 +61,8 @@ texte ou un tableur, en suivant les cinq points ci-dessus, et vous le remettez
 avec les images.
 
 **Avec Claude et git**, si vous les utilisez déjà ou voulez apprendre :
-le fondateur du projet vous montre comment récupérer le dépôt public du projet et lancer
-la compétence `ethniafrica-idee`, qui produit le rapport de sujet dans le format
-attendu. Vous remettez ce rapport et les images. Une séance de prise en main est
+le fondateur du projet vous montre comment récupérer le dépôt public du projet et préparer
+avec Claude le rapport de sujet dans le format attendu. Vous remettez ce rapport et les images. Une séance de prise en main est
 prévue.
 
 Les deux façons sont aussi utiles l'une que l'autre. Ne pas utiliser Claude

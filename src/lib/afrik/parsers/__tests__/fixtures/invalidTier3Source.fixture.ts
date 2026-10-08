@@ -1,5 +1,6 @@
 // (illustrative, not data) — shape-only fixture for relationParser tests. Never loaded into Supabase.
-// Invalid: tier:3 is forbidden — sources must be Tier 1 or Tier 2 only.
+// Invalid: a numeric tier 3 is outside the vocabulary the parser accepts.
+// @req REQ-032
 export const invalidTier3Source = {
   id: "REL_TEST_INVALID_03",
   relationType: "religious",

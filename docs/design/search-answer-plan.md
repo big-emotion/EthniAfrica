@@ -8,7 +8,7 @@ EthniAfrica répond à une question : **d'où vient ce nom ?** La page de résul
 
 - Filtres en onglets **sous le champ de recherche** : « Tout » = la réponse ; Shorts / Récits / Images / Jeux / Fiches **dynamiques** (affichés seulement s'il y a du contenu, avec leur nombre, jamais 0).
 - « Tout » = six blocs dans l'ordre : **Ce que c'est · D'où vient le nom · Ses noms · Où (graphe) · Et maintenant · Sources (une ligne)**, puis bouton fiche, puis invitation à corriger.
-- **Rien en dur** : chaque information vient de sa source (fiche via l'API, registre des productions, endpoint companions) ; tout texte d'interface vient des dictionnaires de copy FR+EN.
+- **Rien en dur** : chaque information vient de sa source (fiche via l'API, registre des productions, endpoint companions) ; tout texte d'interface vient des dictionnaires de copy FR+EN (FR only since #1575).
 - Un bloc sans donnée ne s'affiche pas ; seule exception, un manque utile dit en une ligne (patronyme sans chiffres).
 - Origine affichée automatiquement (coupée à 2–3 phrases + « Lire la suite »), **sauf quand l'origine est débattue** (voir règle ci-dessous). Une réponse relue (`nameAnswers`) prime toujours sur l'affichage automatique. Bantou traité en mythe à défaire, ton léger.
 - Accueil : sous-titre « Votre nom de famille, celui d'un peuple, d'une langue ou d'un pays : d'où il vient, comment on l'appelle ailleurs, et où il vit aujourd'hui. »
@@ -113,7 +113,7 @@ Forme cherchée, surtitre au pluriel et lien fiche : calculés côté client (lo
 
 **Lot E — Accueil, chartes, Plausible** (indépendant, fusionnable ce soir).
 
-- `src/lib/i18n/copy/homeHero.ts` (description FR+EN).
+- `src/lib/i18n/copy/homeHero.ts` (description FR+EN; FR only since #1575).
 - `docs/design/brand-charter.md` §8.3 : texte aligné sur la page (contribuer en dernier).
 - `src/components/pages/RecherchePageContent.tsx:249` : émettre `search:submit` après `selectNameSubject` (`:270`) avec `type` ∈ people/country/language/languageFamily/patronyme/word/multiple/none.
 - Tests : `homeOrientation.test.tsx`, `e2e/home-search-first.spec.ts`, test `trackEvent` (@req REQ-113, REQ-145, REQ-046). Puis déclarer `type` dans Plausible › Custom properties.
@@ -123,7 +123,7 @@ Forme cherchée, surtitre au pluriel et lien fiche : calculés côté client (lo
 - `src/lib/search/answer.ts` (`readAnswer`) ; `src/lib/search/naming.ts` : lire les 4 collections `origin.*` des patronymes (aujourd'hui `:236-243` n'en lit que 2 → 155 au lieu de 397) et `shortLine` dans `SearchNameRecord`.
 - `src/lib/supabase/queries/afrik/searchNaming.ts:174` (+ `short_line`) ; nouvelle `src/lib/supabase/queries/afrik/searchAnswer.ts` (répartition par famille et par langue via les peuples, nb peuples par pays via `afrik_people_countries`).
 - `searchService.ts`, `searchEnvelope.ts`, `src/types/afrik-frontend.ts` (`SearchResult.answer`), `src/lib/api/openapiV2.ts` (`SearchAnswerV2` près de `SearchNamingPresentationV2:697`).
-- **Champs fiche (option b)** : `content.searchAnswer { lead?, followUp? }` ajouté aux modèles stricts (`public/modele-peuple.json`, `modele-pays.json`, `modele-langue.json`, `modele-linguistique.json`, `modele-nom-patronyme.json`) et à `scripts/validateAfrikData.ts` (longueurs, « ? » final, registre lecteur via `INTERNAL_REGISTER_PATTERNS`, pas d'identifiant `PPL_`/`FLG_`) ; classe de traduction déclarée (`docs/editorial/translation-classes.md`, skill `afrik-translator`) ; `readAnswer` lit le champ, sinon renvoie le gabarit. Même ajout `speakers.byCountry[]` ({country, speakers, source}) sur langue et famille.
+- **Champs fiche (option b)** : `content.searchAnswer { lead?, followUp? }` ajouté aux modèles stricts (`public/modele-peuple.json`, `modele-pays.json`, `modele-langue.json`, `modele-linguistique.json`, `modele-nom-patronyme.json`) et à `scripts/validateAfrikData.ts` (longueurs, « ? » final, registre lecteur via `INTERNAL_REGISTER_PATTERNS`, pas d'identifiant `PPL_`/`FLG_`) ; classe de traduction déclarée (`docs/editorial/translation-classes.md` and skill `afrik-translator`, both removed in #1571) ; `readAnswer` lit le champ, sinon renvoie le gabarit. Même ajout `speakers.byCountry[]` ({country, speakers, source}) sur langue et famille.
 - Tests additionnels : un cas avec `lead`/`followUp` remplis, un cas sans (repli sur modèle), un refus du validateur (question sans « ? », trop longue, jargon interne).
 - Tests : `answer.test.ts` par type (@req REQ-044, REQ-180, REQ-170), compléments `naming`, `searchEnvelope`, `openapiV2`, test de route `src/app/api/v2/__tests__`.
 - Acceptation : PPL_FULA → `where.rows` = `distributionByCountry`, `origin.accounts[0]` = `originOfExonyms` ; AGO → `unsplitPercent` 63 ; patronyme n'ayant que `historicalSyntheses` → ≥1 récit, aucun couronné ; bloc sans donnée → clé absente ; **chaque `AnswerAccount` porte ses `evidence` (affirmation ↔ sources), réutilisant le chargement existant de `evidence.ts`** ; **langue `lin` → `where.unit = "speakers"`, `estimate = true`, lignes lues dans `speakers.byCountry` de la fiche langue ; sans ce champ, pas de clé `where` ; aucune somme de populations de peuples** ; lingala → `origin.debated = true`.
@@ -133,7 +133,7 @@ Forme cherchée, surtitre au pluriel et lien fiche : calculés côté client (lo
 - `src/components/search/answer/{WhatBlock,OriginBlock,NamesBlock,WhereBars,NextQuestion,SourcesLine}.tsx` + `*.stories.tsx` **à 320, 430, 768 et 1280 px**.
 - `OriginBlock` applique la règle de coupe : récit unique non débattu → 2–3 phrases + « Lire la suite » ; `debated` ou plusieurs récits → la première phrase de **chaque** récit, côte à côte, avant « Lire la suite ». `WhereBars` rend `speakers` en millions avec la mention « estimations » (copy), et `presence` en pastilles de pays sans chiffres (patronymes).
 - Acceptation responsive : à 320 px, aucun défilement horizontal de page, cibles ≥ 44 px, barres lisibles (libellé pays sur sa ligne si besoin) ; à 768 et 1280 px, une mesure de lecture bornée, pas d'étirement.
-- `src/lib/i18n/copy/searchAnswer.ts` (surtitres par type avec pluriel, modèles de phrase et de question, « Lire la suite », ligne sources, manque patronyme) + entrée dans `src/lib/i18n/copy/index.ts`.
+- `src/lib/i18n/copy/searchAnswer.ts` (surtitres par type avec pluriel, modèles de phrase et de question, « Lire la suite », ligne sources, manque patronyme) + entrée dans `src/lib/i18n/copy/index.ts` (removed in #1575).
 - Tests par composant sur les fixtures (@req REQ-178, REQ-180, REQ-170) ; `copyParity` vert ; `check:copy-literals --staged` vert. Couleurs uniquement via tokens (`--afh-*`, accents par type).
 
 **Lot D — Page « mot »** (après A).
@@ -154,7 +154,7 @@ Forme cherchée, surtitre au pluriel et lien fiche : calculés côté client (lo
 
 **Lot F — e2e responsive** (écrit d'abord, en échec). `e2e/search-answer.spec.ts`, 9 cas × **320, 430, 768, 1280 px**, sur `e2e/support/search-feed-fixture.ts` enrichi des réponses `answer` et `wordAnswers` (@req REQ-178). Assertions : ordre des six blocs dans « Tout », onglets jamais à 0, aucun défilement horizontal, lingala montre les deux lectures avant « Lire la suite », pharaoh rend la page « mot ». **Ces scénarios sont les critères d'acceptation de la PR B+G : ils doivent y passer au vert avant sa fusion** (F n'est pas un lot fusionné après coup).
 
-**Lot H — Données des 7 cas de la maquette** (éditorial, en parallèle du code, après A pour les nouveaux champs ; `/afrik-curator` + agent contradicteur, sources citées, registre lecteur).
+**Lot H — Données des 7 cas de la maquette** (éditorial, en parallèle du code, après A pour les nouveaux champs ; `/afrik-curator` (removed in #1571) + agent contradicteur, sources citées, registre lecteur).
 
 - `content.searchAnswer.lead` et `followUp` pour PPL_FULA, PPL_NZEBI, FLG_BANTU (et décision PPL_BANTU), `COG`/`COD`, `lin`, PAT_CAMARA — en reprenant et vérifiant le texte de la maquette (l'encadré Bantou « Autrement dit… » devient le `lead` ou une phrase de l'origine).
 - `speakers.byCountry` : `lin` (depuis PPL_LINGALA : COD 34 M, COG 4,5 M, CAF 0,8 M, AGO 0,3 M) et FLG_BANTU (depuis PPL_BANTU), sources reprises.
@@ -162,7 +162,7 @@ Forme cherchée, surtitre au pluriel et lien fiche : calculés côté client (lo
 - `answer` de pharaon dans `docs/productions/mot/018-pharaon-d-ou-vient-le-nom.json` (origine, chemin des langues, requête « pharaoh »), texte du carrousel validé.
 - Lignes courtes PPL_FULA : déjà faites ; Camara : récits déjà sourcés (#1484).
 
-**Lot I — Mise à jour du corpus (fond, en parallèle de la forme)**. Indépendant du code : ne touche que `dataset/source/afrik/**`, `dataset/translations/**` et `docs/productions/**`. Démarre **tout de suite** pour les champs existants, et **dès le lot 0 fusionné** pour les nouveaux champs. Travail découpé en **tranches de fiches disjointes** (une tranche = une session = un worktree = une PR ≤ 10 fiches), ordonnées par l'écran `/fr/admin/recherches` (zéro résultat et plus fréquentes d'abord). Chaque fiche : `/afrik-curator` → agent contradicteur → `npx tsx scripts/validateAfrikData.ts` + `scripts/ci/checkEditorialRules.ts` verts. Recherche de sources possible avec Perplexity/Grok, jamais d'écriture depuis ces outils ; aucune affirmation de mémoire (Wikipédia en premier passage, source citée à son niveau).
+**Lot I — Mise à jour du corpus (fond, en parallèle de la forme)**. Indépendant du code : ne touche que `dataset/source/afrik/**`, `dataset/translations/**` (removed in #1571) et `docs/productions/**`. Démarre **tout de suite** pour les champs existants, et **dès le lot 0 fusionné** pour les nouveaux champs. Travail découpé en **tranches de fiches disjointes** (une tranche = une session = un worktree = une PR ≤ 10 fiches), ordonnées par l'écran `/fr/admin/recherches` (zéro résultat et plus fréquentes d'abord). Chaque fiche : `/afrik-curator` → agent contradicteur → `npx tsx scripts/validateAfrikData.ts` + `scripts/ci/checkEditorialRules.ts` verts (the skill and the editorial-rules gate were removed in #1571). Recherche de sources possible avec Perplexity/Grok, jamais d'écriture depuis ces outils ; aucune affirmation de mémoire (Wikipédia en premier passage, source citée à son niveau).
 
 - I-1 Peuples les plus cherchés : `shortLine` par forme (`dataset/source/afrik/noms/`), `searchAnswer.lead/followUp`.
 - I-2 Patronymes cherchés sans origine (≈ 408) : `origin.*` récits attribués, aucun couronné (modèle PAT_CAMARA #1484).

@@ -181,7 +181,7 @@ describe.each(RENDERING_JOBS)(
     it.each([
       [["docs/runbooks/a.md"]],
       [["docs/audience/2026-09-14.md", ".claude/skills/x/SKILL.md"]],
-      [["README.md", "CLAUDE.md"]],
+      [["README.md", "CONTRIBUTING.md"]],
     ])("skips when every changed file is documentation: %j", (changedFiles) => {
       const { render, stdout } = runScope(script, { changedFiles });
 
