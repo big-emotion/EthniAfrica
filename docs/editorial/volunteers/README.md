@@ -1,6 +1,7 @@
 # Volunteer missions
 
-Drafts written 2026-10-03 from the [product brief](../strategy/product-brief-2026-10.md),
+Drafts written 2026-10-03 from the October product brief, now folded into
+[the doctrine](../doctrine.md),
 which makes a validating team the condition for the project to keep running
 after the operator's time drops at the end of November 2026. Nothing here is
 published on the site yet; the operator reviews these before they are shared

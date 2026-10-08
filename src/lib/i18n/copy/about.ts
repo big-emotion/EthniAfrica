@@ -42,7 +42,8 @@ const ACCENT_CLASS: Record<AccessMode, string> = {
  *
  * What left, and where it went:
  * - the border-age comparison, the dated counts and the three scales are
- *   kept verbatim, marked superseded, in docs/editorial/purpose-doctrine.md —
+ *   kept verbatim in docs/editorial/purpose-doctrine.md, which
+ *   docs/editorial/doctrine.md replaced on 2026-10-08 (git history keeps it) —
  *   a count printed on a page that describes the project drifts as the
  *   corpus moves, and nothing re-measured it;
  * - the four refused sentences moved to the method page (`doctrine.ts`),

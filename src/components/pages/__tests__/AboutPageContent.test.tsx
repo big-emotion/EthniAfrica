@@ -127,7 +127,8 @@ describe("AboutPageContent (REQ-132)", () => {
   /**
    * The border-age comparison, the dated counts and the three scales left
    * this page on 22 September 2026; they are kept verbatim, marked
-   * superseded, in docs/editorial/purpose-doctrine.md. The refusals moved to
+   * superseded, in docs/editorial/purpose-doctrine.md (replaced by
+   * docs/editorial/doctrine.md on 2026-10-08; see git history). The refusals moved to
    * the method page. The six subject cards went too: listing what the project
    * holds is the retired register.
    */
