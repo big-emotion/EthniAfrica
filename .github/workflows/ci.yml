@@ -333,6 +333,11 @@ jobs:
         with:
           name: vitest-blob-${{ matrix.shard }}
           path: .vitest-reports/
+          # The directory starts with a dot, which upload-artifact skips by
+          # default; with a warning only, the shards looked green and the merge
+          # found nothing to merge.
+          include-hidden-files: true
+          if-no-files-found: error
           retention-days: 1
 
   tests-coverage:
