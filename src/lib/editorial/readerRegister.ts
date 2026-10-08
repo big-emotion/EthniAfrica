@@ -12,12 +12,11 @@
  * The reader is owed the silence itself ("nous ne documentons pas encore ce
  * point"), never the reason the workshop has not filled it yet.
  *
- * This lives under `src/` rather than beside the gate that enforces it because
- * it now has two callers with opposite timing. `scripts/ci/checkEditorialRules`
- * reads it at build time to refuse a fiche; `lib/seo/ficheMetadata` reads it at
- * request time to refuse a title. A second copy of the vocabulary would let the
- * two disagree about what the reader may see, which is the one thing a single
- * exported constant exists to prevent.
+ * This lives under `src/` because its callers have opposite timing:
+ * `scripts/validateAfrikData` reads it at build time to refuse a source note;
+ * `lib/seo/ficheMetadata` reads it at request time to refuse a title. A second
+ * copy of the vocabulary would let them disagree about what the reader may
+ * see, which is the one thing a single exported constant exists to prevent.
  */
 export interface RegisterPattern {
   label: string;

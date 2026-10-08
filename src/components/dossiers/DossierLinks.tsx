@@ -13,7 +13,7 @@ export function DossierLinks({
   language = "fr",
   ...context
 }: FicheDossierContext & { language?: Language }) {
-  const label = language === "en" ? "Explore further" : "Pour approfondir";
+  const label = "Pour approfondir";
   const dossiers = getFicheDossiers(context, useModuleAvailability(), language);
   if (dossiers.length === 0) return null;
   return (

@@ -1,11 +1,8 @@
 import { describe, expect, it } from "vitest";
 
 import { CHAPITRE_LA_LANGUE } from "@/lib/dossiers/nommer/chapters/laLangue";
-import { CHAPITRE_LA_LANGUE_EN } from "@/lib/dossiers/nommer/chapters/laLangue.en";
 import { GLOSSARY_ENTRIES } from "@/lib/glossaire/entries";
-import { GLOSSARY_DEFINITIONS_EN } from "@/lib/glossaire/entries.en";
 import { DID_YOU_KNOW_FACTS } from "@/lib/home/didYouKnowFacts";
-import { DID_YOU_KNOW_FACTS_EN } from "@/lib/home/didYouKnowFacts.en";
 
 // Bleek wrote « aBa-ntu » in a 1857 manuscript and first printed it in 1858;
 // the 1862 Comparative Grammar spread it. A sentence that gives 1862 as the
@@ -15,13 +12,10 @@ const FLAT_1862_CLAIM =
 
 const bantuCopy = {
   "fr chapter": JSON.stringify(CHAPITRE_LA_LANGUE),
-  "en chapter": JSON.stringify(CHAPITRE_LA_LANGUE_EN),
   "fr glossary": JSON.stringify(GLOSSARY_ENTRIES),
-  "en glossary": JSON.stringify(GLOSSARY_DEFINITIONS_EN),
   "fr did-you-know": JSON.stringify(
     DID_YOU_KNOW_FACTS.find((f) => f.id === "bantou")
   ),
-  "en did-you-know": JSON.stringify(DID_YOU_KNOW_FACTS_EN["bantou"]),
 };
 
 describe("dating of the word « Bantu »", () => {
@@ -34,12 +28,7 @@ describe("dating of the word « Bantu »", () => {
 
   // @req REQ-113
   it("the reader-facing Bantu explanations name the earlier 1857/1858 use", () => {
-    for (const surface of [
-      "fr chapter",
-      "en chapter",
-      "fr did-you-know",
-      "en did-you-know",
-    ] as const) {
+    for (const surface of ["fr chapter", "fr did-you-know"] as const) {
       expect(bantuCopy[surface]).toMatch(/1857/);
       expect(bantuCopy[surface]).toMatch(/1858/);
     }

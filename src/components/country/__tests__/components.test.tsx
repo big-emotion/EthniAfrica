@@ -2,49 +2,12 @@ import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { PeoplesSection } from "../PeoplesSection";
 
-import type {
-  HeroData,
-  PeoplesData,
-  KingdomsData,
-} from "@/lib/countryDataTransformer";
+import type { PeoplesData } from "@/lib/countryDataTransformer";
 // ==========================================
 // PeoplesSection
 // ==========================================
 
 describe("PeoplesSection", () => {
-  // @req REQ-145
-  it("renders demographic chrome in English", () => {
-    const data: PeoplesData = {
-      totalPopulation: 100,
-      totalPopulationFormatted: "100",
-      everyPeopleDeclaresPopulation: true,
-      peopleCount: 2,
-      rows: [
-        {
-          name: "A",
-          percentage: 40,
-          population: 40,
-          populationFormatted: "40",
-          colorIndex: 1,
-        },
-        {
-          name: "B",
-          percentage: 40,
-          population: 40,
-          populationFormatted: "40",
-          colorIndex: 2,
-        },
-      ],
-    };
-    render(<PeoplesSection language="en" data={data} />);
-
-    expect(screen.getByText("inhabitants")).toBeVisible();
-    expect(screen.getByText("2 peoples")).toBeVisible();
-    expect(
-      screen.getByText(/represent 80% of the country's population/)
-    ).toBeVisible();
-  });
-
   it("returns null when rows list is empty", () => {
     const data: PeoplesData = {
       totalPopulation: 0,
@@ -288,22 +251,6 @@ describe("PeoplesSection — what the bar admits (FR28)", () => {
     expect(label?.textContent).toBe("Répartition estimée ou incomplète");
   });
 
-  // Over 100 % there is no remainder to describe, but the shares are still not
-  // a breakdown the reader can add up.
-  // @req REQ-170
-  it("labels a breakdown that exceeds 100 %, without claiming a remainder", () => {
-    const { container } = render(
-      <PeoplesSection language="en" data={peoples([60, 44]) as never} />
-    );
-
-    expect(container.querySelector("[data-demo-estimated]")?.textContent).toBe(
-      "Estimated or incomplete breakdown"
-    );
-    expect(
-      container.querySelector("[data-demo-coverage-note]")?.textContent
-    ).not.toContain("remainder");
-  });
-
   // @req REQ-170
   it("carries no such label when the shares sum to 100 %", () => {
     const { container } = render(
@@ -312,5 +259,19 @@ describe("PeoplesSection — what the bar admits (FR28)", () => {
 
     expect(container.querySelector("[data-demo-estimated]")).toBeNull();
     expect(container.textContent).not.toContain("estimée ou incomplète");
+  });
+
+  // @req REQ-170
+  it("labels a breakdown that exceeds 100 %, without claiming a remainder", () => {
+    const { container } = render(
+      <PeoplesSection language="fr" data={peoples([60, 44]) as never} />
+    );
+
+    expect(container.querySelector("[data-demo-estimated]")?.textContent).toBe(
+      "Répartition estimée ou incomplète"
+    );
+    expect(
+      container.querySelector("[data-demo-coverage-note]")?.textContent ?? ""
+    ).not.toContain("Le reste");
   });
 });

@@ -10,6 +10,7 @@
 import type { SourceTierState } from "@/types/sources";
 import type { PersonId, PersonPeopleLink } from "@/types/persons";
 import type { TranslationLocale } from "@/lib/i18n/translationLocale";
+import type { SearchAnswer } from "@/lib/search/answer";
 import type { NamingProjection } from "@/lib/search/naming";
 
 // ==========================================
@@ -72,7 +73,7 @@ export interface Country {
   nameFr: string;
   /**
    * English name of ordinary use in the state's own English form ("Chad",
-   * "Côte d'Ivoire", "The Gambia") — docs/editorial/translation-classes.md.
+   * "Côte d'Ivoire", "The Gambia").
    * Optional only because the column is empty until the corpus is reloaded.
    */
   nameEn?: string;
@@ -687,6 +688,7 @@ export interface FtsSearchParams {
  */
 export interface RankedPeople extends People {
   naming?: NamingProjection;
+  answer?: SearchAnswer;
   languageFamilyName: string | null;
   /**
    * The family's English name (migration 084), so a card served in English
@@ -704,6 +706,7 @@ export interface RankedPeople extends People {
 
 export interface RankedCountry extends Country {
   naming?: NamingProjection;
+  answer?: SearchAnswer;
   relevance: number;
   exactMatch: boolean;
   normalizedScore: number;
@@ -712,6 +715,7 @@ export interface RankedCountry extends Country {
 
 export interface RankedLanguageFamily extends LanguageFamily {
   naming?: NamingProjection;
+  answer?: SearchAnswer;
   relevance: number;
   exactMatch: boolean;
   normalizedScore: number;
@@ -748,6 +752,7 @@ export interface RankedPatronyme {
   casteOrSocialFunction: string | null;
   content: Record<string, unknown>;
   naming?: NamingProjection;
+  answer?: SearchAnswer;
   /**
    * The peoples of `content.peoples[]` whose fiche exists, resolved to their
    * main name in one batched lookup after ranking (ETNI-1859). Absent when
@@ -820,6 +825,7 @@ export interface RankedLanguage {
   familyNameEn: string | null;
   content: LanguageContent;
   naming?: NamingProjection;
+  answer?: SearchAnswer;
   relevance: number;
   exactMatch: boolean;
   snippet: string | null;

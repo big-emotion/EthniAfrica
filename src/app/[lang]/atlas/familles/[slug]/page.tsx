@@ -102,10 +102,7 @@ async function FamilyLiveContent({
     ),
   });
   const copy = familyCopy[language];
-  const atlasFamilyName =
-    language === "en"
-      ? familyDetail.nameEn || familyDetail.nameFr
-      : familyDetail.nameFr;
+  const atlasFamilyName = familyDetail.nameFr;
 
   return (
     <>
@@ -181,7 +178,7 @@ export async function generateMetadata({
   if (
     parsedForExistence?.mode === "live" &&
     (await isFicheKnownAbsent(
-      (id) => loadLanguageFamilyFiche(id, lang as Language),
+      (id) => loadLanguageFamilyFiche(id),
       parsedForExistence.slug
     ))
   ) {
@@ -251,7 +248,7 @@ export default async function FamillesSlugPage({
     );
   }
 
-  const family = await loadLanguageFamilyFiche(parsed.slug, lang as Language);
+  const family = await loadLanguageFamilyFiche(parsed.slug);
   if (!family) {
     notFound();
   }
@@ -266,7 +263,7 @@ export default async function FamillesSlugPage({
       heroHead={
         <FicheHeroHead
           entityType="language-family"
-          translation={family.translation}
+
           mapToggleLanguage={lang as Language}
         >
           <FamilyFicheTitle family={family} language={lang as Language} />

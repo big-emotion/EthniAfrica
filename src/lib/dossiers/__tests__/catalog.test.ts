@@ -1,4 +1,3 @@
-import { getLocalizedRoute } from "@/lib/routing";
 import { describe, expect, it } from "vitest";
 import { DOSSIER_THEMES } from "@/lib/dossiers/themes";
 import {
@@ -30,12 +29,6 @@ describe("shared dossier catalog", () => {
     expect(
       getDossiers({ format: "anecdote" }).map((dossier) => dossier.id)
     ).toEqual(["anecdotes"]);
-  });
-
-  // @req REQ-140
-  it("keeps English readers on English routes", () => {
-    const entry = getDossiers({ format: "anecdote", language: "en" })[0];
-    expect(entry.href).toBe(getLocalizedRoute("en", "anecdotes"));
   });
 
   // @req REQ-114

@@ -40,7 +40,7 @@ describe("minimal home", () => {
     );
   });
   // @req REQ-115
-  it.each(["fr", "en"] as const)(
+  it.each(["fr"] as const)(
     "offers search, project and contribution in %s without loading retired sections",
     async (language) => {
       render(await Home({ params: routeParams(language) }));
@@ -102,27 +102,5 @@ describe("minimal home", () => {
     expect(metadata.openGraph?.title).toBe(OG_TITLE);
     expect(metadata.openGraph?.description).toBe(OG_DESCRIPTION);
     expect(metadata.openGraph?.url).toBe(`https://${CANONICAL_DOMAIN}/fr`);
-  });
-
-  // An English home declaring `/fr` canonical would tell every crawler the
-  // page is a duplicate of the French one.
-  // @req REQ-140
-  it("points the canonical at the locale the route was served in", async () => {
-    const metadata = await generateMetadata({ params: routeParams("en") });
-
-    expect(metadata.alternates?.canonical).toBe(
-      `https://${CANONICAL_DOMAIN}/en`
-    );
-    expect(metadata.openGraph?.url).toBe(`https://${CANONICAL_DOMAIN}/en`);
-  });
-
-  // @req REQ-140
-  it("hands the shell the route's locale rather than a fixed one", async () => {
-    render(await Home({ params: routeParams("en") }));
-
-    expect(screen.getByTestId("page-layout")).toHaveAttribute(
-      "data-language",
-      "en"
-    );
   });
 });

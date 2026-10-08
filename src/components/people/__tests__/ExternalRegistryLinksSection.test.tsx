@@ -50,18 +50,3 @@ describe("ExternalRegistryLinksSection", () => {
     expect(container).toBeEmptyDOMElement();
   });
 });
-// @req REQ-145
-it("renders its explanatory frame in English", () => {
-  render(
-    <ExternalRegistryLinksSection
-      language="en"
-      identifiers={{ wikidataId: "Q34266" }}
-    />
-  );
-  expect(
-    screen.getByRole("heading", { name: "External identifiers" })
-  ).toBeVisible();
-  expect(
-    screen.getByText(/corresponding records in the external registries/i)
-  ).toBeVisible();
-});

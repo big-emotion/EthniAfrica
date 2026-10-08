@@ -3,7 +3,6 @@ import { describe, expect, it } from "vitest";
 import {
   eligiblePublications,
   publicationsForSubjects,
-  type DiscoveryPublication,
 } from "@/lib/discoveries/catalog";
 import type { DidYouKnowFact } from "@/lib/home/didYouKnowFacts";
 import type { DidYouKnowIllustration } from "@/lib/home/didYouKnowIllustrations";
@@ -13,7 +12,6 @@ import {
   anecdotesForTargets,
   eligibleSearchShorts,
   formatProductionNameQuestion,
-  imagesForTargets,
   proverbsForTargets,
   quizForTargets,
   searchShortPosterAlt,
@@ -84,10 +82,10 @@ function short(id: string, overrides: Partial<SearchShort> = {}): SearchShort {
   return {
     id,
     status: "published",
-    slug: { fr: `${id}-fr`, en: `${id}-en` },
+    slug: { fr: `${id}-fr` },
     publishedAt: "2026-09-01T00:00:00.000Z",
-    name: { fr: `Nom ${id}`, en: `Name ${id}` },
-    description: { fr: `Description ${id}`, en: `Description ${id}` },
+    name: { fr: `Nom ${id}` },
+    description: { fr: `Description ${id}` },
     durationSeconds: 38,
     poster: {
       src: `/images/shorts/${id}.jpg`,
@@ -104,53 +102,10 @@ function short(id: string, overrides: Partial<SearchShort> = {}): SearchShort {
       {
         kind: "people",
         id: "PPL_TEST",
-        label: { fr: "Test", en: "Test" },
+        label: { fr: "Test" },
       },
     ],
     ...overrides,
-  };
-}
-
-function image(id: string, complete = true): DiscoveryPublication {
-  return {
-    id,
-    kind: "image",
-    status: "published",
-    slug: { fr: `${id}-fr`, en: `${id}-en` },
-    title: { fr: "Image", en: "Image" },
-    description: { fr: "Description", en: "Description" },
-    source: {
-      title: "Source",
-      url: "https://example.org/source",
-      tier: "referenced",
-    },
-    detail: {
-      body: { fr: ["Texte"], en: ["Text"] },
-      entities: [
-        {
-          kind: "people",
-          id: "PPL_TEST",
-          label: { fr: "Test", en: "Test" },
-        },
-      ],
-      sources: [],
-    },
-    image: {
-      src: "/images/generated/test.jpg",
-      credit: "EthniAfrica, CC BY-SA 4.0",
-      licence: "cc-by-sa",
-      alt: { fr: "Image", en: "Image" },
-    },
-    caption: { fr: "Légende", en: "Caption" },
-    generation: complete
-      ? {
-          tool: "Higgsfield",
-          model: "model",
-          jobId: "job",
-          generatedOn: "2026-09-01",
-          sourceKind: "ai_generated",
-        }
-      : undefined,
   };
 }
 
@@ -159,9 +114,6 @@ describe("search companion catalogs", () => {
   it("uses the canonical name question for every production", () => {
     expect(formatProductionNameQuestion("Nigeria", "fr")).toBe(
       "D’où vient le nom « Nigeria » ?"
-    );
-    expect(formatProductionNameQuestion("Nigeria", "en")).toBe(
-      "Where does the name “Nigeria” come from?"
     );
     expect(searchShortPosterAlt(short("nigeria"), "fr")).toBe(
       "Couverture : D’où vient le nom « Nom nigeria » ?"
@@ -257,24 +209,13 @@ describe("search companion catalogs", () => {
   });
 
   // @req REQ-180
-  it("passes generated images through the publication eligibility gate", () => {
-    const selection = imagesForTargets(exactPeople, [
-      image("image-ready"),
-      image("image-incomplete", false),
-    ]);
-
-    expect(selection.count).toBe(1);
-    expect(selection.items[0]?.item.publication.id).toBe("image-ready");
-  });
-
-  // @req REQ-180
   it("rejects incomplete shorts, reports pre-limit count and keeps exact order", () => {
     const selection = shortsForTargets(
       exactPeople,
       [
         short("first"),
         short("second"),
-        short("no-english", { name: { fr: "Nom", en: "" } }),
+        short("no-name", { name: { fr: "" } }),
         short("unverified", {
           source: {
             title: "Claim",

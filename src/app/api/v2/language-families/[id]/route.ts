@@ -17,18 +17,6 @@
  *           pattern: '^FLG_[A-Z_]+$'
  *         description: Identifiant de la famille linguistique (format FLG_*)
  *         example: "FLG_BANTU"
- *       - in: query
- *         name: lang
- *         required: false
- *         schema:
- *           type: string
- *           enum: [fr, en]
- *           default: fr
- *         description: >
- *           Locale du contenu servi. `fr` est la langue d'auteur ; `en`
- *           superpose l'enregistrement de traduction quand il existe et
- *           déclare sa provenance dans `meta.translation` (REQ-142).
- *         example: en
  *     responses:
  *       200:
  *         description: Détails de la famille linguistique
@@ -67,13 +55,9 @@ export const GET = corpusDetailRoute({
   param: "id",
   isValidId: validateLanguageFamilyId,
   invalidIdMessage: "Invalid language family ID format",
-  servesLang: true,
   rejectedLog: "Language family not found",
-  resolve: async (id, lang) =>
-    orNotFound(
-      await getLanguageFamilyHandler(id, lang),
-      "Language family not found"
-    ),
+  resolve: async (id) =>
+    orNotFound(await getLanguageFamilyHandler(id), "Language family not found"),
 });
 
 // @req REQ-084

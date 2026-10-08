@@ -61,15 +61,6 @@ describe("the frozen dossiers serve nothing", () => {
         Page({ params: Promise.resolve({ lang: "fr" }) })
       ).rejects.toThrow("NEXT_NOT_FOUND");
     });
-
-    // A freeze that covered one locale would serve the same withdrawn text
-    // one URL over.
-    // @req REQ-140
-    it(`answers 404 on /en/${route}`, async () => {
-      await expect(
-        Page({ params: Promise.resolve({ lang: "en" }) })
-      ).rejects.toThrow("NEXT_NOT_FOUND");
-    });
   }
 
   // @req REQ-113

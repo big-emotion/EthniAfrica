@@ -212,7 +212,7 @@ function validateHomonymReference(
 
 // @req REQ-133
 // @req REQ-134
-export function preflightPatronymeBatch(
+function preflightPatronymeBatch(
   dossiers: PatronymeDossier[],
   references: PatronymeReferenceIds
 ): string[] {

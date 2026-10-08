@@ -1,36 +1,6 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  navLabel: "Migrations",
-  pageTitle: "Timeline of migrations",
-  pageSubtitle:
-    "The chronological account of every migration, settlement and trade route documented here.",
-  tabs: {
-    map: "Map",
-    narrative: "Narrative",
-  },
-  mapPlaceholder: "The interactive map of migrations arrives with Story 12.9.",
-  debateLabel: "Historiographical debate",
-  peoplesLabel: "Peoples concerned",
-  sourcesCountSingular: "source",
-  sourcesCountPlural: "sources",
-  filterChip: {
-    label: "Filtered on",
-    clear: "Remove the filter",
-  },
-  emptyState: "No migration matches this filter.",
-  states: {
-    failure:
-      "The migrations could not be loaded. The problem is on our side, not a filter.",
-    failureRetry: "Try again",
-    emptyUnpublished: "No migration is published yet.",
-    filteredEmpty: "No migration matches this filter",
-  },
-};
-
-type MigrationsCopy = typeof en;
-
-const fr: MigrationsCopy = {
+const fr = {
   navLabel: "Migrations",
   pageTitle: "Frise des migrations",
   pageSubtitle:
@@ -59,5 +29,7 @@ const fr: MigrationsCopy = {
   },
 };
 
+type MigrationsCopy = typeof fr;
+
 // @req REQ-145
-export const migrationsCopy: Record<Language, MigrationsCopy> = { en, fr };
+export const migrationsCopy: Record<Language, MigrationsCopy> = { fr };

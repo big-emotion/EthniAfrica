@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ChapterHeading } from "@/components/pages/ChapterHeading";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { getStaticPageRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import { getSiteTree } from "@/lib/siteTree";
 import { getTranslation } from "@/lib/translations";
 import type { Language } from "@/types/shared";
@@ -36,12 +36,10 @@ export async function generateMetadata({
   return {
     title: copy.title,
     description: copy.introduction,
-    ...surfaceHead(
-      lang as Language,
-      "sitemap",
-      (locale) => getStaticPageRoute(locale, "sitemap"),
-      { title: copy.title, description: copy.introduction }
-    ),
+    ...pageHead(getStaticPageRoute("fr", "sitemap"), {
+      title: copy.title,
+      description: copy.introduction,
+    }),
   };
 }
 
@@ -73,9 +71,7 @@ export default async function SitemapPage({ params }: SitemapPageProps) {
           {sections.map((section, index) => (
             <section key={section.id} className="py-9 md:py-12">
               <ChapterHeading
-                stepLabel={`${String(index + 1).padStart(2, "0")} · ${
-                  language === "en" ? "Section" : "Rubrique"
-                }`}
+                stepLabel={`${String(index + 1).padStart(2, "0")} · ${"Rubrique"}`}
                 heading={section.title}
               />
               <div className="mt-5">

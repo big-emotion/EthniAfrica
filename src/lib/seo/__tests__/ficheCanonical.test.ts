@@ -1,13 +1,4 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-
-const { ficheHasTranslationMock } = vi.hoisted(() => ({
-  ficheHasTranslationMock: vi.fn(),
-}));
-
-vi.mock("@/lib/seo/translationParity", async (importOriginal) => ({
-  ...(await importOriginal<object>()),
-  ficheHasTranslation: (...args: unknown[]) => ficheHasTranslationMock(...args),
-}));
+import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import {
@@ -37,13 +28,6 @@ const ROUTES: Record<FicheKind, [id: string, route: typeof getPeopleRoute]> = {
   name: ["PAT_KEITA", getPatronymeRoute],
   peopleLinks: ["PPL_YORUBA", getPeopleLinksRoute],
 };
-
-beforeEach(() => {
-  vi.clearAllMocks();
-  ficheHasTranslationMock.mockImplementation(
-    async (_kind: string, _id: string, lang: string) => lang === "fr"
-  );
-});
 
 afterEach(() => {
   vi.unstubAllEnvs();
@@ -88,52 +72,6 @@ describe("ficheCanonical", () => {
 
     expect(metadata.alternates?.canonical).toBe(
       `${BASE}${getPatronymeRoute("fr", "PAT%20KEITA")}`
-    );
-  });
-
-  // @req REQ-141
-  it("clusters only the French address while the fiche has no English record", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "fr-only");
-    const french = await ficheCanonical("people", "fr", "PPL_YORUBA");
-    const english = await ficheCanonical("people", "en", "PPL_YORUBA");
-
-    expect(french.alternates?.languages).toEqual({
-      fr: `${BASE}${getPeopleRoute("fr", "PPL_YORUBA")}`,
-      "x-default": `${BASE}${getPeopleRoute("fr", "PPL_YORUBA")}`,
-    });
-    expect(french).not.toHaveProperty("robots");
-    expect(english.alternates?.canonical).toBe(
-      `${BASE}${getPeopleRoute("en", "PPL_YORUBA")}`
-    );
-    expect(english.robots).toEqual({ index: false, follow: true });
-  });
-
-  // @req REQ-141
-  it("clusters both locales, x-default on English, once a record exists", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "bilingual-en-default");
-    ficheHasTranslationMock.mockResolvedValue(true);
-
-    const metadata = await ficheCanonical("country", "en", "BEN");
-
-    expect(metadata.alternates?.languages).toEqual({
-      en: `${BASE}${getCountryRoute("en", "BEN")}`,
-      fr: `${BASE}${getCountryRoute("fr", "BEN")}`,
-      "x-default": `${BASE}${getCountryRoute("en", "BEN")}`,
-    });
-    expect(metadata).not.toHaveProperty("robots");
-  });
-
-  // The parity read is keyed by the live identifier, never by the versioned
-  // slug: a pinned revision has the translation its live fiche has.
-  // @req REQ-141
-  it("reads the parity of the live fiche, whatever the slug's version", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "bilingual-fr-default");
-    await ficheCanonical("family", "en", "FLG_BANTU@v2");
-
-    expect(ficheHasTranslationMock).toHaveBeenCalledWith(
-      "family",
-      "FLG_BANTU",
-      "en"
     );
   });
 

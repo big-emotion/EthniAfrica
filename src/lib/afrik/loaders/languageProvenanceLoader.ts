@@ -44,7 +44,15 @@ function errorMessage(error: unknown): string {
   return "unknown error";
 }
 
-function persistedContent(language: LanguageRecord): Record<string, unknown> {
+/**
+ * Exported so the post-sync verifier compares against this very projection:
+ * a hand-kept copy drifted when a fiche field was added (grb, 2026-10-07).
+ *
+ * @req REQ-136
+ */
+export function persistedContent(
+  language: LanguageRecord
+): Record<string, unknown> {
   return {
     nameProvenance: language.nameProvenance,
     ...(language.glottocode === undefined
@@ -61,6 +69,13 @@ function persistedContent(language: LanguageRecord): Record<string, unknown> {
     ...(language.vehicularRole === undefined
       ? {}
       : { vehicularRole: language.vehicularRole }),
+    ...(language.originDebated === undefined
+      ? {}
+      : { originDebated: language.originDebated }),
+    ...(language.searchAnswer === undefined
+      ? {}
+      : { searchAnswer: language.searchAnswer }),
+    ...(language.speakers === undefined ? {} : { speakers: language.speakers }),
     ...(language.dialects === undefined ? {} : { dialects: language.dialects }),
     ...(language.vitalityStatus === undefined
       ? {}

@@ -130,7 +130,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-colonial",
     label: "fiches employant le radical « colonial »",
-    value: 243,
+    // 243 -> 242 on 2026-10-07: PPL_HADZA no longer calls Kangeju colonial, which no source read says.
+    value: 242,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -162,7 +163,11 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 119 -> 120 on 2026-09-25: the same Dogon sentence (« Europeens »).
     // 121 -> 120 on 2026-10-03: PPL_BUSANSI, which named the first Europeans, was
     // merged into PPL_BISSA.
-    value: 120,
+    // 120 -> 121 on 2026-10-07: PPL_BAOULE now says the old forms Bahooree and
+    // Baouré were written by Europeans, which its sources state.
+    // 121 -> 122 on 2026-10-07: PPL_BETE now reports that Magwé's author says the
+    // French took « bété » from the English.
+    value: 122,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -170,6 +175,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-neighbours",
     label: "fiches attribuant un exonyme à des voisins",
+    // 113 -> 112 on 2026-10-07: PPL_HADZA no longer attributes Kindiga/Tindiga to neighbours, which no source read says.
+    // 112 -> 113 on 2026-10-07: PPL_BETE now says the Gouro called their southern neighbours Tshien (Dozon 1985, p. 45).
     value: 113,
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
@@ -284,7 +291,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "patronyme-fiches",
     label: "fiches de nom",
-    value: 605,
+    value: 621,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +
@@ -296,7 +303,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "patronyme-non-hereditary",
     label: "systèmes documentés où le nom ne se transmet pas",
-    value: 171,
+    value: 176,
     method:
       "fiches de nom recherchées dont transmissionMode vaut non_hereditary, au " +
       "même périmètre que le compte ci-dessus",

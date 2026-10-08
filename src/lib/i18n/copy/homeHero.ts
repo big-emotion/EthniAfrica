@@ -30,7 +30,7 @@ export interface HomeHeroCopy {
  *
  * It asked about the continent until 2026-09-18 — an opening that invited any
  * question, of a site that answers one kind. The reorientation onto where names
- * come from (docs/editorial/essais/dou-viennent-les-noms-2026-09-17.md) makes it
+ * come from (docs/editorial/refonte-plan-2026-09-18.md) makes it
  * the same sentence the account's card, its reel and the single social format
  * ask, so the surfaces pose one question rather than four.
  *
@@ -39,28 +39,15 @@ export interface HomeHeroCopy {
  * French rule.
  *
  * It lives here rather than inside the component because a French sentence a
- * reader sees belongs in a dictionary — the rule `check:copy-literals` holds,
- * and the rule that gives this key its English counterpart for free.
+ * reader sees belongs in a dictionary — the rule `check:copy-literals` holds.
  */
 // @req REQ-044
 // @req REQ-145
 export const homeHeroCopy: Record<Language, HomeHeroCopy> = {
-  en: {
-    question: "Where does this name come from?",
-    searchPlaceholder: "E.g. Keïta, Lingala, Fulbe, Benin",
-    description:
-      "A family name, a people, a language or a place: discover the stories and the sources around it.",
-    searchLabel: "Which name are you looking for?",
-    seedsIntro: "Try",
-    seeds: ["Keïta", "Lingala", "Fulbe", "Benin"],
-    refreshSeeds: "More examples",
-    searchUnavailable: "Search is temporarily unavailable.",
-    searchRetry: "Try again",
-  },
   fr: {
     searchPlaceholder: "Ex. : Keïta, Lingala, Fulbe, Bénin",
     description:
-      "Un nom de famille, de peuple, de langue ou de lieu : découvrez les histoires et les sources qui l’entourent.",
+      "Votre nom de famille, celui d’un peuple, d’une langue ou d’un pays : d’où il vient, comment on l’appelle ailleurs, et où il vit aujourd’hui.",
     question: "D’où vient ce nom ?",
     searchLabel: "Quel nom cherchez-vous ?",
     seedsIntro: "Essayez avec",

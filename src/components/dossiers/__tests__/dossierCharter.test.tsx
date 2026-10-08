@@ -14,7 +14,6 @@ import { describe, expect, it, vi } from "vitest";
 import { DossierPage } from "@/components/dossiers/DossierPage";
 import { parseDossierFile } from "@/lib/afrik/parsers/dossierParser";
 import type { Dossier } from "@/lib/afrik/parsers/dossierTypes";
-import { getLocalizedRoute, translatePath } from "@/lib/routing";
 
 vi.mock("next/navigation", () => ({
   usePathname: () => "/fr",
@@ -172,32 +171,6 @@ describe("the dossier template — charter contract", () => {
           caption?.querySelector(`a[href="${illustration.licenceUrl}"]`)
         ).not.toBeNull();
       }
-    }
-  });
-
-  /**
-   * The one thing about a dossier still declared outside the corpus.
-   *
-   * A dossier used to be a registry module, and this test kept the registry
-   * and the fiche agreeing about its address. The module is gone; what remains
-   * is the fr/en slug pair in `routing.ts`, which cannot move into the corpus
-   * because `middleware.ts` runs on the edge and cannot read the corpus off
-   * disk to translate an address.
-   *
-   * So the coupling is asserted as a round trip: a French address that does
-   * not survive being translated to English and back is a dossier whose
-   * routing entry is missing, misspelled, or was never added when the fiche
-   * was — and the reader meets it as a 404 on `/en`.
-   */
-  // @req REQ-141
-  it("round-trips every dossier address through the English slug table", () => {
-    expect(dossiers.length).toBeGreaterThan(0);
-
-    for (const dossier of dossiers) {
-      const french = `${getLocalizedRoute("fr", "dossiersHub")}/${dossier.slug}`;
-      const english = translatePath("fr", "en", french);
-
-      expect(translatePath("en", "fr", english)).toBe(french);
     }
   });
 

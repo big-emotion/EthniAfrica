@@ -5,18 +5,11 @@ import type {
 import { searchCompanionsDataSchema } from "@/api/v2/schemas/searchCompanions";
 import { getSearchCompanionSelections } from "@/api/v2/services/searchCompanions";
 import { createApiResponse, type ApiEnvelope } from "@/api/v2/utils/response";
-import {
-  discoveryPath,
-  type DiscoveryPublication,
-} from "@/lib/discoveries/catalog";
+import { discoveryPath } from "@/lib/discoveries/catalog";
 import {
   searchShortDiscoveryPublication,
   searchShortPosterAlt,
 } from "@/lib/search/companionCatalogs";
-import { localizeDidYouKnowFact } from "@/lib/home/didYouKnowLocalization";
-import { localizeDidYouKnowIllustration } from "@/lib/home/didYouKnowLocalization";
-import { localizeProverb } from "@/lib/proverbs/proverbs.en";
-import type { Language } from "@/types/shared";
 
 function source(source: {
   title: string;
@@ -29,54 +22,6 @@ function source(source: {
     url: source.url ?? null,
     tier: source.tier,
     ...(source.notes ? { notes: source.notes } : {}),
-  };
-}
-
-function contentLanguage(
-  requested: Language,
-  translationKind: unknown
-): Language {
-  return requested === "en" && translationKind ? "en" : "fr";
-}
-
-function imageItem(
-  publication: DiscoveryPublication,
-  language: Language,
-  match: SearchCompanionsData["images"]["items"][number]["match"]
-) {
-  return {
-    id: publication.id,
-    href: discoveryPath(language, publication),
-    slug: publication.slug[language],
-    title: publication.title[language],
-    description: publication.description[language],
-    caption: publication.caption?.[language] ?? "",
-    image: {
-      src: publication.image?.src ?? "",
-      alt: publication.image?.alt?.[language] ?? "",
-      credit: publication.image?.credit ?? "",
-      licence: publication.image?.licence ?? "unknown",
-      ...(publication.image?.licenceUrl
-        ? { licenceUrl: publication.image.licenceUrl }
-        : {}),
-      ...(publication.image?.filePage
-        ? { filePage: publication.image.filePage }
-        : {}),
-    },
-    generation: {
-      tool: publication.generation?.tool ?? "",
-      model: publication.generation?.model ?? "",
-      generatedOn: publication.generation?.generatedOn ?? "",
-      sourceKind: publication.generation?.sourceKind ?? "ai_generated",
-    },
-    source: source(
-      publication.source ?? {
-        title: "",
-        url: null,
-        tier: "unverified",
-      }
-    ),
-    match,
   };
 }
 
@@ -114,15 +59,10 @@ export async function getSearchCompanionsHandler(
     anecdotes: {
       count: selections.anecdotes.count,
       items: selections.anecdotes.items.map(({ item, match }) => {
-        const fact = localizeDidYouKnowFact(item.fact, query.lang);
-        const illustration = localizeDidYouKnowIllustration(
-          item.id,
-          item.illustration,
-          query.lang
-        )!;
+        const { fact, illustration } = item;
         return {
           id: item.id,
-          contentLanguage: contentLanguage(query.lang, fact.translationKind),
+          contentLanguage: "fr",
           headline: fact.headline,
           body: fact.body,
           tier: fact.tier,
@@ -135,10 +75,10 @@ export async function getSearchCompanionsHandler(
     proverbs: {
       count: selections.proverbs.count,
       items: selections.proverbs.items.map(({ item, match }) => {
-        const proverb = localizeProverb(item.proverb, query.lang);
+        const { proverb } = item;
         return {
           id: item.id,
-          contentLanguage: contentLanguage(query.lang, proverb.translationKind),
+          contentLanguage: "fr",
           text: proverb.text,
           meaning: proverb.meaning,
           original: proverb.original ?? null,
@@ -147,12 +87,6 @@ export async function getSearchCompanionsHandler(
           match,
         };
       }),
-    },
-    images: {
-      count: selections.images.count,
-      items: selections.images.items.map(({ item, match }) =>
-        imageItem(item.publication, query.lang, match)
-      ),
     },
     quiz: {
       count: selections.quiz.count,

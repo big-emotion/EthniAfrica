@@ -183,22 +183,18 @@ describe("ISO codes the admin-0 asset keys differently (REQ-116)", () => {
 
 describe("getAdmin0Name (REQ-143 class 4)", () => {
   // @req REQ-143
-  it("reads the asset's English name, never a translation of the French one", () => {
-    expect(getAdmin0Name("CIV", "en")).toBe(AFRICA_ADMIN0.CIV.name);
-    expect(getAdmin0Name("CIV", "en")).toBe("Ivory Coast");
+  it("reads the asset's French name", () => {
     expect(getAdmin0Name("CIV", "fr")).toBe("Côte d'Ivoire");
   });
 
   // @req REQ-143
-  it("resolves the ISO alias for both locales, so a name and a ring never disagree", () => {
+  it("resolves the ISO alias, so a name and a ring never disagree", () => {
     expect(getAdmin0Name("SSD", "fr")).toBe("Soudan du Sud");
-    expect(getAdmin0Name("SSD", "en")).toBe("South Sudan");
     expect(getAdmin0NameFr("SSD")).toBe("Soudan du Sud");
   });
 
   // @req REQ-143
   it("is undefined for a country the asset does not hold", () => {
-    expect(getAdmin0Name("XYZ", "en")).toBeUndefined();
     expect(getAdmin0Name("XYZ", "fr")).toBeUndefined();
   });
 });

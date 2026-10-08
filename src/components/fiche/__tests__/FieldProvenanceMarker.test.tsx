@@ -67,14 +67,4 @@ describe("FieldProvenanceMarker (REQ-119)", () => {
 
     expect(container).toBeEmptyDOMElement();
   });
-
-  // The marker is the one wording for an absent field across every fiche,
-  // so it is the first place an English page would betray a French default.
-  // @req REQ-140
-  it("words the missing marker in the locale it is given", () => {
-    render(<FieldProvenanceMarker state="missing" language="en" />);
-
-    expect(screen.getByText("Missing data")).toBeInTheDocument();
-    expect(screen.queryByText("Donnée manquante")).not.toBeInTheDocument();
-  });
 });

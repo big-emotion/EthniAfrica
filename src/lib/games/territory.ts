@@ -34,7 +34,6 @@ import {
 export interface ComparedTerritory {
   id: string;
   nameFr: string;
-  nameEn?: string;
 }
 
 /** Where a territory sits and what the flat map does to it. */
@@ -70,7 +69,7 @@ export interface TerritoryFootprint {
 export const NON_AFRICAN_SILHOUETTES: ComparedTerritory[] = [
   ...Object.entries(WORLD_COMPARE),
   ...Object.entries(WORLD_ADMIN0),
-].map(([id, shape]) => ({ id, nameFr: shape.nameFr, nameEn: shape.name }));
+].map(([id, shape]) => ({ id, nameFr: shape.nameFr }));
 
 const NON_AFRICAN_IDS = new Set(NON_AFRICAN_SILHOUETTES.map(({ id }) => id));
 

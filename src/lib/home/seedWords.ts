@@ -6,7 +6,7 @@ export type SeedWords = Record<
 >;
 
 // These fallback spellings are checked against the source corpus, including
-// the people's own appellations. Names keep their diacritics in both locales.
+// the people's own appellations. Names keep their diacritics.
 // @req REQ-002
 export const FALLBACK_SEED_WORDS: Record<Language, SeedWords> = {
   fr: {
@@ -14,12 +14,6 @@ export const FALLBACK_SEED_WORDS: Record<Language, SeedWords> = {
     language: ["Lingala", "Swahili", "Ewe", "Alur"],
     people: ["Fulbe", "Iteso", "Suri", "Murle"],
     country: ["Bénin", "Togo", "Namibie", "Rwanda"],
-  },
-  en: {
-    patronyme: ["Keïta", "Konaté", "Kouassi", "Katende"],
-    language: ["Lingala", "Swahili", "Ewe", "Alur"],
-    people: ["Fulbe", "Iteso", "Suri", "Murle"],
-    country: ["Benin", "Togo", "Namibia", "Rwanda"],
   },
 };
 

@@ -13,7 +13,7 @@ import {
 } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
 import { isLocale } from "@/lib/locale";
-import { localeHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 
 interface DiscoveriesPageProps {
   params: Promise<{ lang: string; publication?: string[] }>;
@@ -53,12 +53,7 @@ export async function generateMetadata({
   const { language, selected } = requestedEntry(lang, publication);
   const title = selected.title[language];
   const description = selected.description[language];
-  const head = localeHead(
-    language,
-    (locale) => discoveryPath(locale, selected),
-    ["fr"],
-    { title, description }
-  );
+  const head = pageHead(discoveryPath("fr", selected), { title, description });
   // A publication without a photo leaves the images out, which lets the
   // site's own share image stand rather than pointing a crawler at nothing.
   const image = selected.image

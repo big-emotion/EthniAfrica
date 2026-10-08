@@ -114,14 +114,9 @@ Three of them decide whether the site works at all:
   row, then revoke it). Too low and visitors are attributed to a proxy and share one quota;
   too high and a client can choose its own address.
 
-One controls which language is public:
-
-- `SITE_LOCALE_MODE=fr-only` keeps the bilingual work silent and preserves the current French
-  product. This is also the fail-closed behaviour when the key is missing or invalid. Later,
-  `bilingual-fr-default` can publish English without moving the homepage away from French;
-  `bilingual-en-default` is the final English-default state. Treat a mode change as a release:
-  rebuild the image rather than restarting an image built under another mode. The deploy smoke
-  gate checks the root, both locale roots, and a remembered English choice before succeeding.
+No key controls the language: the site publishes French alone. A `SITE_LOCALE_MODE` left in
+the host's `.env` is read by nothing. The deploy smoke gate checks that `/` lands on `/fr` and
+that `/en` is moved permanently to `/fr` before succeeding.
 
 One is a legal obligation, and the only place the host's identity is written down:
 

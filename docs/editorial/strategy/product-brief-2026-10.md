@@ -164,7 +164,7 @@ running on this split:
 | Search engine and site | yes                         | Runs without daily attention.                                                                                                                     |
 
 Each mission works at two levels. With Claude and git, a volunteer runs the
-project's own skills (`ethniafrica-idee`, `afrik-curator`) and hands over an
+project's own skills (`ethniafrica-idee`) and hands over an
 advanced draft; the operator trains people on the precise git task. Without
 them, a volunteer who simply brings sourced information through the template is
 already a contribution. Claude is welcome, never a barrier.

@@ -18,14 +18,6 @@ export interface FicheNameStoryCopy {
 
 // @req REQ-151
 export const ficheNameStoryCopy: Record<Language, FicheNameStoryCopy> = {
-  en: {
-    eyebrow: "The story of the names",
-    askSeveral: "Where do these names come from?",
-    askOne: "Where does this name come from?",
-    readMore: "Read more",
-    moreForms: (count) => `+${count} more`,
-    imposedBy: "Given by",
-  },
   fr: {
     eyebrow: "L’histoire des noms",
     askSeveral: "D’où viennent ces noms ?",

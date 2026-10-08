@@ -46,14 +46,6 @@ describe("PatronymeFicheTitle (REQ-133)", () => {
 
     expect(screen.getByText(/Patronyme non héréditaire/)).toBeInTheDocument();
   });
-
-  // @req REQ-140
-  it("states the eyebrow and the naming system in the locale it is given", () => {
-    render(<PatronymeFicheTitle patronyme={patronyme} language="en" />);
-
-    expect(screen.getByText("Name")).toBeInTheDocument();
-    expect(screen.getByText(/Clan name/)).toBeInTheDocument();
-  });
 });
 
 /**

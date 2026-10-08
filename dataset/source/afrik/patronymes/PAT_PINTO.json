@@ -22,8 +22,25 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "writtenChronicles": [
+      {
+        "claim": "Le plus ancien acte que cite l'article consulté date d'avril 1156 : un acte du monastère de Grijó nomme Paio Soares Pinto, écrit aussi « Pelagio Suariz, cognomento Pinto ». Une généalogie des nobles fait descendre la lignée des Pinto de cet homme.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["wikipedia-en-pinto"]
+      },
+      {
+        "claim": "Un manuscrit du XVIIe siècle raconte que le roi Afonso Henriques, voyant arriver un chevalier couvert de sang après la bataille d'Ourique contre les Maures, lui dit « Pinto » (taché, peint) : le nom viendrait de là. D'autres auteurs disent que le surnom vient d'un chevalier rentré d'une bataille avec son armure éclaboussée de gouttes de sang.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["wikipedia-en-pinto"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "Une explication relie Pinto au latin tardif pinctus, lui-même venu du latin classique pictus, « peint, coloré ». Dans certains cas, le nom viendrait du même mot au sens de « personne vive ou agitée ».",
+        "claimStatus": "claimed",
+        "sourceRefs": ["wikipedia-en-pinto"]
+      }
+    ]
   },
   "peoples": [],
   "countries": [
@@ -45,13 +62,17 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "wikipedia-en-pinto",
+      "title": "Pinto (surname) — Wikipédia (version anglaise)",
+      "url": "https://en.wikipedia.org/wiki/Pinto_(surname)",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Article consulté en octobre 2026 dans sa version anglaise (l'adresse « Pinto (surname) » y renvoie). L'acte de 1156 y est rapporté d'après Sousa, 2001, p. 203-204, et le sens « vif » d'après Dauzat, 1951 ; l'histoire du manuscrit du XVIIe siècle (Armaria, Bibliothèque nationale du Portugal) et celle du chevalier éclaboussé de sang (Verbo, vol. 15, p. 126) y figurent à la rubrique des armoiries. Nous n'avons consulté aucun de ces textes, ni l'acte de Grijó. L'article ne dit rien de São Tomé-et-Príncipe : la présence du nom dans ce pays reste non expliquée ici."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -76,5 +97,10 @@
       "fieldPath": "peoples",
       "reason": "« Pinto » a été cherchée dans nos fiches peuple — appellations, ethnicités, organisation clanique, prose historique et sources — pour 3 occurrences, toutes écartées : les occurrences rattachent ce nom portugais aux créoles de Guinée-Bissau, ou désignent des auteurs cités en source ; aucune ne concerne São Tomé-et-Príncipe. Aucun des 4 peuples du corpus présents dans le pays de la fiche (Sao Tomé-et-Principe) ne rattache ce nom à un groupe, et aucune source dédiée n'a encore été consultée pour ce nom. Des quatre peuples du corpus présents à São Tomé-et-Príncipe, seule la fiche Forros documente des patronymes d'origine portugaise, et il n'en nomme que trois — Trovoada, Espírito Santo, Vera Cruz — parmi lesquels ce nom ne figure pas. Le rattacher aux Forros au seul motif qu'il est portugais étendrait une attestation de classe à un nom qu'elle ne porte pas."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
+    }
+  }
 }

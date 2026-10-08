@@ -24,7 +24,6 @@ const emptyEnvelope = {
     shorts: { count: 0, items: [] },
     anecdotes: { count: 0, items: [] },
     proverbs: { count: 0, items: [] },
-    images: { count: 0, items: [] },
     quiz: { count: 0, item: null },
   },
   meta: {
@@ -44,14 +43,14 @@ describe("GET /api/v2/search/companions", () => {
   it("parses typed subjects and caches a successful response for one hour", async () => {
     const response = await GET(
       new NextRequest(
-        "http://localhost/api/v2/search/companions?subjects=people:PPL_BASSA,country:CMR&lang=en"
+        "http://localhost/api/v2/search/companions?subjects=people:PPL_BASSA,country:CMR&lang=fr"
       )
     );
 
     expect(response.status).toBe(200);
     expect(response.headers.get("Cache-Control")).toBe(CORPUS_CACHE_CONTROL);
     expect(getSearchCompanionsHandler).toHaveBeenCalledWith({
-      lang: "en",
+      lang: "fr",
       subjects: [
         { type: "people", id: "PPL_BASSA" },
         { type: "country", id: "CMR" },

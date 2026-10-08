@@ -76,24 +76,10 @@ A fiche with `namingSystem: "undetermined"`:
 - is accepted by the validator and reads as `undetermined`, never coerced to
   `totemic_clan` or any other subtype.
 
-## Model files
+## Model files and corpus directory — retired
 
-One file per subtype under `public/`, mirroring `public/modele-nom.json`'s
-`_meta` block and directive pointer:
-
-- `public/modele-nom-totemique.json`
-- `public/modele-nom-patronymique.json`
-- `public/modele-nom-nisba.json`
-- `public/modele-nom-jamu.json`
-
-There is no `modele-nom-indetermine.json` — `undetermined` is a value of
-`namingSystem`, validated against the shared-field set directly, not a fifth
-model file.
-
-## Corpus directory
-
-`dataset/source/afrik/systemes_onomastiques/` — distinct from
-`dataset/source/afrik/noms/`, which holds ethnonym dossiers (ETNI-1520). One
-illustrative template fiche (`_meta.illustrative: true`) demonstrates the
-shared fields plus one subtype's optional fields, mirroring the convention in
-`dataset/source/afrik/noms/PPL_YORUBA.json`.
+Retired on 2026-10-08: the four subtype models (`modele-nom-totemique`,
+`modele-nom-patronymique`, `modele-nom-nisba`, `modele-nom-jamu`) and the
+`systemes_onomastiques/` template directory were deleted, with the validator
+check that read them. The subtype fields a name dossier's `gaps[]` still cites
+are declared in `src/lib/fieldProvenance.ts`.

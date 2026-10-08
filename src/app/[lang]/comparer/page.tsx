@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { PageLayout } from "@/components/layout/PageLayout";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 import ComparerPickerPageClient from "@/app/[lang]/comparer/ComparerPickerPageClient";
 import { compareCopy } from "@/lib/i18n/copy/compare";
@@ -25,12 +25,7 @@ export async function generateMetadata({
   const title = compareCopy[language].title;
   return {
     title,
-    ...surfaceHead(
-      language,
-      "compare",
-      (locale) => getLocalizedRoute(locale, "compare"),
-      { title }
-    ),
+    ...pageHead(getLocalizedRoute("fr", "compare"), { title }),
   };
 }
 

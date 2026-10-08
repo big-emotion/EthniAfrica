@@ -31,17 +31,6 @@ function countryWith(peoples: { name: string }[] | undefined): CountryDetail {
 }
 
 describe("country target facts", () => {
-  // @req REQ-145
-  it("renders country panel copy in English", () => {
-    const facts = buildCountryTargetFacts(
-      "en",
-      countryWith([{ name: "Yoruba" }])
-    );
-    render(<>{facts.NGA?.body}</>);
-    expect(screen.getByText("Peoples declared by the page")).toBeVisible();
-    expect(screen.getByText("First entries")).toBeVisible();
-  });
-
   // The label says whose count it is. Two surfaces counted this country
   // differently - the page's declared list and the corpus join table - and an
   // unqualified "à l’atlas" made them read as one number contradicting itself.

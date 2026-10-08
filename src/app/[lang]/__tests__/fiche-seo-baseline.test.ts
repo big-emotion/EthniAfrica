@@ -10,8 +10,8 @@
  *
  * So the assertions have flipped for `generateMetadata` and stayed put for
  * everything else. Each route declares what `ficheCanonical` composes: the
- * canonical, and since REQ-141 the hreflang cluster, the robots directive and
- * the Open Graph card that follow the locales the fiche is indexed in.
+ * canonical and the Open Graph card; there is no hreflang cluster, since the
+ * site publishes French alone.
  *
  * The per-entity title and the structured data this file used to hold open as
  * "later work" arrived on 2026-09-07, and rewrote the two assertions that were
@@ -155,25 +155,15 @@ describe("fiche routes — the crawler-facing surface", () => {
         );
       });
 
-      // In the fail-closed publication mode, the cluster holds the French
-      // address as both `fr` and `x-default`; English is withheld regardless
-      // of any translation records already prepared (REQ-140, REQ-141).
+      // One language, so no hreflang cluster: the canonical says it all.
       // @req REQ-141
-      it("clusters French alone and withholds its English address from the index", async () => {
+      it("is indexed and declares no hreflang cluster", async () => {
         const french = await routeModule.generateMetadata({
           params: Promise.resolve({ lang: "fr", slug }),
         });
-        const english = await routeModule.generateMetadata({
-          params: Promise.resolve({ lang: "en", slug }),
-        });
 
-        expect(Object.keys(french.alternates?.languages ?? {})).toEqual([
-          "fr",
-          "x-default",
-        ]);
+        expect(french.alternates?.languages).toBeUndefined();
         expect(french.robots).toBeUndefined();
-        expect(english.robots).toEqual({ index: false, follow: true });
-        expect(english.alternates?.languages).not.toHaveProperty("en");
       });
 
       // The head is still composed per request, never declared statically: a
@@ -228,25 +218,6 @@ describe("fiche routes — the crawler-facing surface", () => {
       });
     });
   }
-});
-
-describe("family fiche request cache", () => {
-  // @req REQ-019
-  it("uses the page locale for the early existence read", () => {
-    const routeSource = readFileSync(
-      resolve(process.cwd(), "src/app/[lang]/atlas/familles/[slug]/page.tsx"),
-      "utf8"
-    );
-    const headSource = readFileSync(
-      resolve(process.cwd(), "src/lib/seo/ficheHead.ts"),
-      "utf8"
-    );
-
-    expect(routeSource).toContain(
-      "(id) => loadLanguageFamilyFiche(id, lang as Language)"
-    );
-    expect(headSource).toContain("loadLanguageFamilyFiche(id, lang)");
-  });
 });
 
 describe("root layout metadata — the only <head> the fiche routes get", () => {

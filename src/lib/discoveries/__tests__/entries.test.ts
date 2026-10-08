@@ -20,9 +20,22 @@ describe("Découvertes source-bank adapter", () => {
     expect(
       entries.every((entry) => entry.image?.filePage.startsWith("https://"))
     ).toBe(true);
-    expect(entries.every((entry) => entry.title.fr && entry.title.en)).toBe(
-      true
+    expect(entries.every((entry) => entry.title.fr)).toBe(true);
+  });
+
+  // @req REQ-157
+  it("carries each proverb's photograph, credit and alt into its publication", () => {
+    const proverbs = getDiscoveryPublications().filter(
+      (entry) => entry.kind === "proverb"
     );
+
+    for (const entry of proverbs) {
+      const picture = PROVERB_IMAGES[entry.id.replace("proverb:", "")];
+      expect(entry.image?.src, entry.id).toBe(picture.src);
+      expect(entry.image?.filePage, entry.id).toBe(picture.filePage);
+      expect(entry.image?.alt?.fr, entry.id).toBe(picture.alt.fr);
+      expect(entry.image?.licence, entry.id).toBe(picture.licence);
+    }
   });
 
   // The reader is a place a visitor lands on without context, so it only
@@ -44,19 +57,18 @@ describe("Découvertes source-bank adapter", () => {
     }
   });
 
-  // @req REQ-157
-  it("carries each proverb's photograph, credit and both alts into its publication", () => {
-    const proverbs = getDiscoveryPublications().filter(
-      (entry) => entry.kind === "proverb"
-    );
+  // The operator withdrew the generated illustrations: every picture the
+  // reader meets is a photograph or a render of our own, never an AI image.
+  // @req REQ-164
+  it("offers no generated illustration", () => {
+    const publications = getDiscoveryPublications();
+    const kinds = new Set<string>(publications.map((entry) => entry.kind));
 
-    for (const entry of proverbs) {
-      const picture = PROVERB_IMAGES[entry.id.replace("proverb:", "")];
-      expect(entry.image?.src, entry.id).toBe(picture.src);
-      expect(entry.image?.filePage, entry.id).toBe(picture.filePage);
-      expect(entry.image?.alt?.fr, entry.id).toBe(picture.alt.fr);
-      expect(entry.image?.alt?.en, entry.id).toBe(picture.alt.en);
-      expect(entry.image?.licence, entry.id).toBe(picture.licence);
-    }
+    expect(kinds.has("image")).toBe(false);
+    expect(
+      publications.filter((entry) =>
+        entry.image?.src.startsWith("/images/discoveries/generated/")
+      )
+    ).toEqual([]);
   });
 });

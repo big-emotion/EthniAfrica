@@ -11,50 +11,10 @@ import type { Language } from "@/types/shared";
  * compiler refusing an incomplete record is what turns that into a build
  * error instead of a missing crumb.
  *
- * Exported for the hubs dictionary, whose English titles are these labels.
+ * Exported so the page-type labels have one home.
  */
 // @req REQ-145
 export const TRAIL_PAGE_LABELS: Record<Language, Record<PageType, string>> = {
-  en: {
-    countries: "Countries",
-    families: "Families",
-    peoples: "Peoples",
-    languages: "Languages",
-    search: "Search",
-    doctrine: "Doctrine",
-    about: "About",
-    sources: "Sources",
-    anecdotes: "Anecdotes",
-    proverbs: "Proverbs",
-    gallery: "Gallery",
-    discoveries: "Discoveries",
-    // The ethnonym index. "Names" is taken by the patronyme, the way « Noms »
-    // is in French (DEC-038), so this crumb says what the page holds.
-    names: "Ethnonyms",
-    patronymes: "Names",
-    compare: "Compare",
-    migrations: "Migrations",
-    quiz: "Quiz",
-    // British spelling, and the same one the URL carries.
-    colonization: "Colonisation & resistances",
-    nommer: "Naming",
-    dossierProportions: "True proportions",
-    dossierPopulations: "Real weight",
-    dossierRessources: "Resources",
-    dossierKongo: "The Kongo kingdom",
-    dossierLuba: "Luba: power and memory",
-    dossierLunda: "Lunda: alliances and connections",
-    dossierSpiritualitesKongo: "Kongo spiritualities: objects and change",
-    glossary: "Glossary",
-    wallpapers: "Wallpapers",
-    // The English hub labels live in the dictionary rather than on
-    // `ACCESS_MODE_LABELS`, which is French and read by ninety-odd callers
-    // that take one shape from it; changing its shape would move all of
-    // them for three words.
-    atlasHub: "Browse",
-    dossiersHub: "Articles",
-    jeuxHub: "Play",
-  },
   fr: {
     countries: "Pays",
     families: "Familles",
@@ -66,7 +26,6 @@ export const TRAIL_PAGE_LABELS: Record<Language, Record<PageType, string>> = {
     sources: "Sources",
     anecdotes: "Anecdotes",
     proverbs: "Proverbes",
-    gallery: "Galerie",
     discoveries: "Découvertes",
     names: "Appellations",
     // The public word DEC-038 gives the patronyme, which is why the trail
@@ -97,41 +56,7 @@ export const TRAIL_PAGE_LABELS: Record<Language, Record<PageType, string>> = {
   },
 };
 
-const en = {
-  pages: TRAIL_PAGE_LABELS.en,
-  home: "Home",
-  // Keyed by the English URL tails (DEC-049): `deriveTrail` looks a
-  // segment up by the word in the address, so an English trail can only
-  // name what this map spells the English way. The French map below is
-  // keyed by the French tails, and the two key sets differ on purpose.
-  segments: {
-    links: "Links",
-    score: "Score",
-    accessibility: "Accessibility",
-    admin: "Administration",
-    connexion: "Sign in",
-    contact: "Contact",
-    contribute: "Contribute",
-    "legal-notice": "Legal notice",
-    sitemap: "Sitemap",
-    "data-policy": "Data policy",
-    "report-error": "Report an error",
-    reports: "Reports",
-    peoples: "Peoples",
-    countries: "Countries",
-    families: "Families",
-    "the-people": "The people",
-    "the-country": "The country",
-    "the-person": "The person",
-    "the-language": "The language",
-    "the-thing": "The thing",
-  } as Record<string, string>,
-  backTo: "Back to",
-};
-
-type TrailCopy = typeof en;
-
-const fr: TrailCopy = {
+const fr = {
   pages: TRAIL_PAGE_LABELS.fr,
   /** The root every trail opens on. Not a PageType: `/fr` addresses no module. */
   home: "Accueil",
@@ -188,5 +113,7 @@ const fr: TrailCopy = {
   backTo: "Retour à",
 };
 
+type TrailCopy = typeof fr;
+
 // @req REQ-145
-export const trailCopy: Record<Language, TrailCopy> = { en, fr };
+export const trailCopy: Record<Language, TrailCopy> = { fr };

@@ -5,14 +5,11 @@ import { describe, expect, it } from "vitest";
 
 import { RETIRED_PEOPLE_IDS } from "../../src/lib/afrik/retiredPeopleIds";
 
-const CORPUS_ROOTS = ["dataset/source/afrik", "dataset/translations"];
+const CORPUS_ROOTS = ["dataset/source/afrik"];
 // The redirect registry is the one file that must keep naming a retired id.
 const REDIRECT_REGISTRY = "_retired-identifiers.json";
 const RETIRED_IDS = ["PPL_BUSSA", "PPL_BUSANSI"];
-const HOME_FACT_FILES = [
-  "src/lib/home/didYouKnowFacts.ts",
-  "src/lib/home/didYouKnowFacts.en.ts",
-];
+const HOME_FACT_FILES = ["src/lib/home/didYouKnowFacts.ts"];
 
 function corpusFiles(directory: string): string[] {
   return readdirSync(directory).flatMap((entry) => {

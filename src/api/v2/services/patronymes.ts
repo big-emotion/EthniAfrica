@@ -25,7 +25,6 @@ import { logger } from "@/lib/api/logger";
 import { walkRanges } from "@/lib/supabase/queries/walkRanges";
 import { readAlliances } from "@/lib/patronymes/content";
 import { createServerClient } from "@/lib/supabase/server";
-import type { TranslationLocale } from "@/lib/i18n/translationLocale";
 import {
   isPublishableBearerStatus,
   PUBLISHABLE_BEARER_STATUSES,
@@ -36,7 +35,6 @@ import {
   type PatronymeNameSystem,
   type PatronymePeopleSummary,
 } from "@/api/v2/schemas/patronymes";
-import { withTranslation, type TranslatedEntity } from "./translations";
 
 export interface PatronymeAggregate {
   id: string;
@@ -602,11 +600,9 @@ async function getAlliances(
 }
 
 // @req REQ-133
-// @req REQ-142
 export async function getPatronymeById(
-  id: string,
-  lang: TranslationLocale = "fr"
-): Promise<TranslatedEntity<PatronymeAggregate> | null> {
+  id: string
+): Promise<PatronymeAggregate | null> {
   const supabase = createServerClient();
 
   const { data: patronymeRow, error: patronymeError } = await supabase
@@ -628,14 +624,7 @@ export async function getPatronymeById(
     caste_or_social_function: string | null;
     content: Record<string, unknown> | null;
   };
-  // `content` is the dossier itself, so the overlay reads the fiche's own
-  // paths; the columns pulled to the top level stay as the corpus wrote them.
-  const { record: content, translation } = await withTranslation(
-    "patronyme",
-    id,
-    lang,
-    row.content ?? {}
-  );
+  const content = row.content ?? {};
 
   const [
     associatedPeoples,
@@ -664,5 +653,5 @@ export async function getPatronymeById(
     alliances,
   };
 
-  return lang === "fr" ? aggregate : { ...aggregate, translation };
+  return aggregate;
 }

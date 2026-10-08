@@ -27,19 +27,22 @@ describe("search companions schema", () => {
   });
 
   // @req REQ-180
-  it("accepts the two published locales and rejects an unknown locale", () => {
+  it("accepts French and rejects any other locale, English included", () => {
     expect(
       searchCompanionsQuerySchema.parse({
         subjects: "country:NGA",
-        lang: "en",
+        lang: "fr",
       }).lang
-    ).toBe("en");
-    expect(
-      searchCompanionsQuerySchema.safeParse({
-        subjects: "country:NGA",
-        lang: "es",
-      }).success
-    ).toBe(false);
+    ).toBe("fr");
+    for (const lang of ["en", "es"]) {
+      expect(
+        searchCompanionsQuerySchema.safeParse({
+          subjects: "country:NGA",
+          lang,
+        }).success,
+        lang
+      ).toBe(false);
+    }
   });
 
   // The word is what the reader typed. It is kept as typed and trimmed: the
@@ -148,7 +151,6 @@ describe("search companions schema", () => {
       },
       anecdotes: { count: 0, items: [] },
       proverbs: { count: 0, items: [] },
-      images: { count: 0, items: [] },
       quiz: { count: 0, item: null },
     });
 
@@ -179,7 +181,6 @@ describe("search companions schema", () => {
       shorts: { count: 0, items: [] },
       anecdotes: { count: 0, items: [] },
       proverbs: { count: 0, items: [] },
-      images: { count: 0, items: [] },
       quiz: { count: 0, item: null },
     };
     const short = {
@@ -254,7 +255,6 @@ describe("search companions schema", () => {
       shorts: { count: 0, items: [] },
       anecdotes: { count: 0, items: [] },
       proverbs: { count: 0, items: [] },
-      images: { count: 0, items: [] },
       quiz: { count: 1, item: quiz },
     };
 

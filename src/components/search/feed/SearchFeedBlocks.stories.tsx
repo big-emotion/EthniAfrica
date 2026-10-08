@@ -2,31 +2,23 @@ import { useState } from "react";
 import type { Decorator, Meta, StoryObj } from "@storybook/react";
 
 import { AppellationsBlock } from "@/components/search/feed/AppellationsBlock";
-import { FactsBlock } from "@/components/search/feed/FactsBlock";
 import { FichesBlock } from "@/components/search/feed/FichesBlock";
 import { FurtherBlock } from "@/components/search/feed/FurtherBlock";
-import { ImageBlock } from "@/components/search/feed/ImageBlock";
-import {
-  LensesBlock,
-  type FeedLensId,
-} from "@/components/search/feed/LensesBlock";
-import { OriginsBlock } from "@/components/search/feed/OriginsBlock";
+import { LensesBlock } from "@/components/search/feed/LensesBlock";
 import { OwedBlock } from "@/components/search/feed/OwedBlock";
-import { PeopleBlock } from "@/components/search/feed/PeopleBlock";
 import {
   PlatesBlock,
   type FeedPlateItem,
 } from "@/components/search/feed/PlatesBlock";
-import { ProseBlock } from "@/components/search/feed/ProseBlock";
 import { QuizBlock } from "@/components/search/feed/QuizBlock";
 import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSectionHeading";
 import { ShortsBlock } from "@/components/search/feed/ShortsBlock";
-import { TilesBlock } from "@/components/search/feed/TilesBlock";
 import { VerdictBlock } from "@/components/search/feed/VerdictBlock";
 import {
   FEED_CASES,
   type FeedCaseId,
 } from "@/lib/search/__fixtures__/feedCases";
+import type { FeedLensId } from "@/lib/search/searchLenses";
 import { cn } from "@/lib/utils";
 
 /**
@@ -49,16 +41,14 @@ function fixture(id: FeedCaseId) {
 
 const mande = fixture("mande");
 const peul = fixture("peul");
-const bassa = fixture("bassa");
 const ekpeye = fixture("ekpeye");
 const introuvable = fixture("introuvable");
 const inconnu = fixture("inconnu");
 
 // The fixtures point at board mock-up files that Storybook does not serve;
 // these are real files under `public/`, so the blocks show an image.
-const POSTER_SRC = "/images/discoveries/generated/mansa-musa/9x16.jpg";
+const POSTER_SRC = "/images/discoveries/videos/mande-nest-pas-un-peuple.jpg";
 const ILLUSTRATION_SRC = "/images/anecdotes/bambara-refus.jpg";
-const GENERATED_IMAGE_SRC = "/images/discoveries/generated/mansa-musa/4x5.jpg";
 
 const mandeCompanions = mande.production.companions;
 const mandePresentation = mande.board.presentation;
@@ -87,14 +77,6 @@ const plateItems: FeedPlateItem[] =
     );
     return proverb ? [{ type: "proverb" as const, ...proverb }] : [];
   });
-
-const imageItem = {
-  ...mandeCompanions.images.items[0],
-  image: {
-    ...mandeCompanions.images.items[0].image,
-    src: GENERATED_IMAGE_SRC,
-  },
-};
 
 const contributionTarget = {
   type: "languageFamily",
@@ -197,8 +179,8 @@ function LensesDemo() {
       lenses={[
         { id: "all", label: "Tout" },
         { id: "shorts", label: "Shorts", count: 6 },
-        { id: "images", label: "Images", count: 1 },
-        { id: "quiz", label: "Quiz", count: 1 },
+        { id: "stories", label: "Récits", count: 3 },
+        { id: "quiz", label: "Jeux", count: 1 },
         { id: "fiches", label: "Fiches", count: 4 },
       ]}
     />
@@ -268,46 +250,6 @@ export const ShortsEmptySlot: Story = {
 };
 
 // @req REQ-180
-export const Origins: Story = {
-  render: () => <OriginsBlock reviewed {...mandePresentation.origins} />,
-};
-
-// @req REQ-180
-export const OriginsDesktop: Story = atDesktop(Origins);
-
-// @req REQ-180
-export const OriginsNight: Story = atNight(Origins);
-
-// @req REQ-180
-export const Tiles: Story = {
-  render: () => <TilesBlock reviewed {...mandePresentation.tiles} />,
-};
-
-// @req REQ-180
-export const TilesNight: Story = atNight(Tiles);
-
-/** Ekpeye — the few facts the atlas holds, shown as a labelled grid. */
-// @req REQ-180
-export const Facts: Story = {
-  render: () => <FactsBlock {...ekpeye.board.presentation.facts} />,
-};
-
-// @req REQ-180
-export const FactsNight: Story = atNight(Facts);
-
-/** Bassa — one name, three peoples, no link between them. */
-// @req REQ-180
-export const People: Story = {
-  render: () => <PeopleBlock {...bassa.board.presentation.peoples} />,
-};
-
-// @req REQ-180
-export const PeopleDesktop: Story = atDesktop(People);
-
-// @req REQ-180
-export const PeopleNight: Story = atNight(People);
-
-// @req REQ-180
 export const Plates: Story = {
   render: () => (
     <PlatesBlock
@@ -342,35 +284,6 @@ export const Quiz: Story = {
 
 // @req REQ-180
 export const QuizNight: Story = atNight(Quiz);
-
-// @req REQ-180
-export const GeneratedImage: Story = {
-  render: () => (
-    <ImageBlock reviewed item={imageItem} {...mandePresentation.images} />
-  ),
-};
-
-// @req REQ-180
-export const GeneratedImageNight: Story = atNight(GeneratedImage);
-
-/** Bassa — the first prose block, with the standing of its source. */
-// @req REQ-180
-export const Prose: Story = {
-  render: () => {
-    const [block] = bassa.board.presentation.prose;
-    return (
-      <ProseBlock
-        blockId={block.id}
-        title={block.title}
-        paragraphs={block.paragraphs}
-        standing={block.standing}
-      />
-    );
-  },
-};
-
-// @req REQ-180
-export const ProseNight: Story = atNight(Prose);
 
 // @req REQ-180
 export const Fiches: Story = {

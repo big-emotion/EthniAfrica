@@ -23,18 +23,7 @@ describe("describeLegalHost", () => {
     expect(describeLegalHost("fr")).toBe(
       "par Exemple Hébergement SAS, 1 rue de l’Exemple, 00000 Ville, Pays"
     );
-    expect(describeLegalHost("en")).toBe(
-      "by Exemple Hébergement SAS, 1 rue de l’Exemple, 00000 Ville, Pays"
-    );
     expect(logError).not.toHaveBeenCalled();
-  });
-
-  // @req REQ-088
-  it("names the host alone when no address is configured", () => {
-    vi.stubEnv("LEGAL_HOST_NAME", "Exemple Hébergement SAS");
-    vi.stubEnv("LEGAL_HOST_ADDRESS", "");
-
-    expect(describeLegalHost("fr")).toBe("par Exemple Hébergement SAS");
   });
 
   // @req REQ-088
@@ -45,9 +34,14 @@ describe("describeLegalHost", () => {
     expect(describeLegalHost("fr")).toBe(
       "sur un serveur dédié exploité pour le compte de l’éditeur"
     );
-    expect(describeLegalHost("en")).toBe(
-      "on a dedicated server operated on the publisher’s behalf"
-    );
+  });
+
+  // @req REQ-088
+  it("names the host alone when no address is configured", () => {
+    vi.stubEnv("LEGAL_HOST_NAME", "Exemple Hébergement SAS");
+    vi.stubEnv("LEGAL_HOST_ADDRESS", "");
+
+    expect(describeLegalHost("fr")).toBe("par Exemple Hébergement SAS");
   });
 
   // @req REQ-088

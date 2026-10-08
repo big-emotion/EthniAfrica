@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  Fragment,
-  useState,
-  useSyncExternalStore,
-  type ReactNode,
-} from "react";
+import { Fragment, useState, type ReactNode } from "react";
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
@@ -13,50 +8,46 @@ import { inCountry } from "@/lib/atlas/countryPreposition";
 import { getCountryCommonName } from "@/lib/countryNames";
 import { ficheHrefFor } from "@/components/search/SearchResultCard";
 import { AppellationsBlock } from "@/components/search/feed/AppellationsBlock";
-import { FactsBlock } from "@/components/search/feed/FactsBlock";
 import {
   FichesBlock,
   type FeedFicheItem,
 } from "@/components/search/feed/FichesBlock";
+import { FicheLinkBlock } from "@/components/search/feed/FicheLinkBlock";
 import { FurtherBlock } from "@/components/search/feed/FurtherBlock";
-import { ImageBlock } from "@/components/search/feed/ImageBlock";
-import {
-  LensesBlock,
-  type FeedLensId,
-} from "@/components/search/feed/LensesBlock";
-import { OriginsBlock } from "@/components/search/feed/OriginsBlock";
+import { LensesBlock } from "@/components/search/feed/LensesBlock";
 import { OwedBlock } from "@/components/search/feed/OwedBlock";
-import { PeopleBlock } from "@/components/search/feed/PeopleBlock";
 import {
   PlatesBlock,
   type FeedPlateItem,
 } from "@/components/search/feed/PlatesBlock";
-import { ProseBlock } from "@/components/search/feed/ProseBlock";
 import { QuizBlock } from "@/components/search/feed/QuizBlock";
 import { SearchFeedLayout } from "@/components/search/feed/SearchFeedLayout";
 import { ShortsBlock } from "@/components/search/feed/ShortsBlock";
-import { TilesBlock } from "@/components/search/feed/TilesBlock";
+import { OriginBlock } from "@/components/search/answer/OriginBlock";
+import { CountriesAnswer } from "@/components/search/feed/CountriesAnswer";
+import { SubjectAnswer } from "@/components/search/feed/SubjectAnswer";
 import { VerdictBlock } from "@/components/search/feed/VerdictBlock";
-import type { FeedMovementZone } from "@/components/search/feed/feedBlockTypes";
+import { WordAnswerPage } from "@/components/search/feed/WordAnswerPage";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
+import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { formatProductionNameQuestion } from "@/lib/editorial/productionNameQuestion";
 import { normalizeString } from "@/lib/normalize";
-import type { SearchEvidence } from "@/lib/search/evidence";
+import { ANSWER_BLOCKS, type FeedBlockId } from "@/lib/search/resultGrammar";
+import type { AnswerKind, WordAnswer } from "@/lib/search/answer";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
 import type { NamingPresentationForm } from "@/lib/search/naming";
+import { planAnswerSubjects } from "@/lib/search/answerSubjectPlan";
+import { buildRelationSearchHref } from "@/lib/search/relationSearch";
 import { resolveNameOpening } from "@/lib/search/resolveNameOpening";
 import { getLocalizedRoute } from "@/lib/routing";
 import { groupPeopleResults } from "@/lib/search/groupPeopleResults";
-import { parseHighlightedSnippet } from "@/lib/search/highlight";
 import {
   buildSearchFeedPlan,
   type SearchFeedAnswerState,
-  type SearchFeedAvailability,
 } from "@/lib/search/searchFeedPlan";
+import { buildFeedLenses, type FeedLensId } from "@/lib/search/searchLenses";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
-import { cn } from "@/lib/utils";
-import type { FeedBlockId } from "@/lib/search/resultGrammar";
 import type { SearchFeedPresentation } from "@/lib/search/searchFeedPresentation";
 import type {
   SearchLead,
@@ -64,26 +55,6 @@ import type {
   SearchResult,
 } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
-
-const DESKTOP_QUERY = "(min-width: 1200px)";
-
-function subscribeDesktop(listener: () => void): () => void {
-  if (typeof window === "undefined" || !window.matchMedia) return () => {};
-  const media = window.matchMedia(DESKTOP_QUERY);
-  media.addEventListener("change", listener);
-  return () => media.removeEventListener("change", listener);
-}
-
-function desktopSnapshot(): boolean {
-  return (
-    typeof window !== "undefined" &&
-    Boolean(window.matchMedia?.(DESKTOP_QUERY).matches)
-  );
-}
-
-function useDesktopFeed(): boolean {
-  return useSyncExternalStore(subscribeDesktop, desktopSnapshot, () => false);
-}
 
 /**
  * A family or country chip's browse — "the peoples of the Krou family" —
@@ -106,9 +77,15 @@ export interface SearchFeedProps {
   results: readonly SearchResult[];
   subjects: readonly SearchResult[];
   leads: readonly SearchLead[];
+  /** Kept for the callers that pass it; the answer no longer draws it. */
   nearNames?: readonly SearchNearName[];
   /** Reviewed answers for the searched term, from the search response. */
   nameAnswers?: readonly NameAnswer[];
+  /**
+   * The answer to a published word, carried by the envelope because the word
+   * may match no fiche. It takes the page when no fiche answers to the query.
+   */
+  wordAnswers?: readonly WordAnswer[];
   /** Reviewed terms a near spelling may have meant; offered as choices, never applied. */
   nameSuggestions?: readonly string[];
   companions: SearchCompanionsData;
@@ -122,7 +99,7 @@ function normalizedQueryId(query: string): string {
   return (
     query
       .normalize("NFKD")
-      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[̀-ͯ]/g, "")
       .toLocaleLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "") || "unknown"
@@ -194,7 +171,9 @@ function resultForms(
  */
 function formDetail(
   form: NamingPresentationForm
-): { text: string; evidence?: SearchEvidence } | undefined {
+):
+  | { text: string; evidence?: NamingPresentationForm["evidence"][number] }
+  | undefined {
   if (!form.origin) return undefined;
   const text = [
     form.origin.meaning,
@@ -217,53 +196,7 @@ function selfGivenFirst<T extends { selfGiven?: boolean | null }>(
   ];
 }
 
-function feedAvailability(
-  state: SearchFeedAnswerState,
-  subjects: readonly SearchResult[],
-  results: readonly SearchResult[],
-  leads: readonly SearchLead[],
-  companions: SearchCompanionsData,
-  formCount: number,
-  originCount: number,
-  tileCount: number,
-  problemCount: number,
-  hasNameDisambiguation: boolean,
-  nearNameCount: number
-): SearchFeedAvailability {
-  return {
-    appellations: formCount > 0,
-    origins: originCount > 0,
-    peoples: hasNameDisambiguation,
-    sharedName: hasNameDisambiguation,
-    tiles: tileCount > 0,
-    atlasHolds: state === "widened",
-    plates:
-      companions.anecdotes.items.length + companions.proverbs.items.length > 0,
-    quiz: companions.quiz.item !== null,
-    images: companions.images.items.length > 0,
-    problem: problemCount > 0,
-    nearName: nearNameCount > 0,
-    fiches: results.length + leads.length > 0,
-  };
-}
-
-function lensAllows(active: FeedLensId, id: FeedBlockId): boolean {
-  if (active === "all") return true;
-  if (["lenses", "verdict", "appellations"].includes(id)) return true;
-  if (active === "shorts") return id === "shorts";
-  if (active === "images") return id === "plates" || id === "images";
-  if (active === "quiz") return id === "quiz";
-  return id === "fiches";
-}
-
-function plainSnippet(snippet: string | undefined): string | undefined {
-  return snippet
-    ? parseHighlightedSnippet(snippet)
-        .map(({ text }) => text)
-        .join("")
-    : undefined;
-}
-
+// @req REQ-178
 // @req REQ-180
 export function SearchFeed({
   query,
@@ -272,8 +205,8 @@ export function SearchFeed({
   results,
   subjects,
   leads,
-  nearNames = [],
   nameAnswers = [],
+  wordAnswers = [],
   nameSuggestions = [],
   companions: loadedCompanions,
   resultCount,
@@ -284,7 +217,6 @@ export function SearchFeed({
   const [activeLens, setActiveLens] = useState<FeedLensId>("all");
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [validatedOption, setValidatedOption] = useState<number | null>(null);
-  const desktop = useDesktopFeed();
   const copy = searchFeedCopy[language];
   const answerCopy = nameAnswerCopy[language];
   const relatedOnly =
@@ -301,7 +233,6 @@ export function SearchFeed({
         shorts: { count: wordShorts.length, items: wordShorts },
         anecdotes: { count: 0, items: [] },
         proverbs: { count: 0, items: [] },
-        images: { count: 0, items: [] },
         quiz: { count: 0, item: null },
       }
     : loadedCompanions;
@@ -314,100 +245,7 @@ export function SearchFeed({
     language
   );
   const forms = presentation?.appellations?.forms ?? derivedForms;
-  const presentations = subjects.flatMap((subject) =>
-    subject.naming ? [subject.naming.presentation] : []
-  );
-  const derivedOriginItems = subjects.flatMap((subject) =>
-    (subject.naming?.presentation.forms ?? []).flatMap((form) =>
-      form.origin
-        ? [
-            {
-              name: form.form,
-              qualifier: form.qualifier,
-              description: [
-                form.origin.meaning,
-                form.origin.languageCode,
-                form.origin.imposedBy,
-                form.origin.period,
-              ]
-                .filter(Boolean)
-                .join(" · "),
-              evidence: form.evidence[0],
-            },
-          ]
-        : []
-    )
-  );
-  const originItems = presentation?.origins?.items ?? derivedOriginItems;
-  const derivedTileRows = subjects.flatMap((subject) =>
-    (subject.associatedPeoples ?? []).map((people) => ({
-      title: people.name,
-      meta: getSearchEntityLabel("people", language),
-      href: ficheHrefFor(
-        { type: "people", id: people.id, name: people.name },
-        language
-      ),
-    }))
-  );
-  const tileRows = presentation?.tiles?.items ?? derivedTileRows;
-  const disagreementStatements = presentations.flatMap((presentation) =>
-    presentation.disagreements.flatMap(({ positions }) =>
-      positions.flatMap(({ statement }) => (statement ? [statement] : []))
-    )
-  );
-  const hasRecordedProblem = presentations.some(
-    (presentation) =>
-      presentation.problematic || presentation.disagreements.length > 0
-  );
-  const prosePresentation = (id: "shared-name" | "problem" | "near-name") =>
-    presentation?.prose?.find((item) => item.id === id);
-  const presentedProblem = prosePresentation("problem");
-  const problemParagraphs =
-    presentedProblem?.paragraphs ??
-    (disagreementStatements.length > 0
-      ? disagreementStatements
-      : hasRecordedProblem
-        ? [copy.blocks.problematicBody]
-        : []);
-  const subjectIdentities = new Set(
-    subjects.map((subject) => subject.peopleGroupId ?? subject.id)
-  );
-  const subjectTypes = new Set(subjects.map((subject) => subject.type));
-  // « Yoruba » files both a people and a language: selectNameSubject puts no
-  // type restriction on an exact match, so subjects can already mix types.
-  // The two disambiguation shapes read differently — same-type asks whether
-  // the entries are related, cross-type only has to say they are different
-  // things that happen to share a spelling — so they stay two flags rather
-  // than one, even though both open the same two blocks.
-  const hasPeopleDisambiguation =
-    subjects.length >= 2 &&
-    subjectTypes.size === 1 &&
-    subjectTypes.has("people") &&
-    subjectIdentities.size >= 2;
-  const hasCrossTypeDisambiguation =
-    subjects.length >= 2 &&
-    subjectTypes.size >= 2 &&
-    subjectIdentities.size >= 2;
-  const hasNameDisambiguation =
-    hasPeopleDisambiguation || hasCrossTypeDisambiguation;
-  // Only silences a reviewer declared are shown. A missing structured field
-  // describes what was projected onto this page, not what is known: the same
-  // rule that keeps a missing video from reading as a missing source.
-  const subjectSilences = presentation?.owed?.silences ?? [];
-  const availability = feedAvailability(
-    state,
-    subjects,
-    results,
-    leads,
-    companions,
-    forms.length,
-    originItems.length,
-    tileRows.length,
-    problemParagraphs.length,
-    hasNameDisambiguation,
-    nearNames.length
-  );
-  const plan = buildSearchFeedPlan(state, availability, { relatedOnly });
+
   const combinedPlates: FeedPlateItem[] = [
     ...companions.anecdotes.items.map((item) => ({
       ...item,
@@ -434,7 +272,7 @@ export function SearchFeed({
   const derivedFicheRows = ficheEntries.map((entry, index): FeedFicheItem =>
     entry.type === "peopleGroup"
       ? {
-          kind: getSearchEntityLabel("people", language),
+          kind: getSearchEntityLabel("people"),
           name: entry.peopleGroupLabel,
           meta: copy.blocks.groupMeta(entry.members.length),
           links: entry.members.map((member) => ({
@@ -444,7 +282,7 @@ export function SearchFeed({
           })),
         }
       : {
-          kind: getSearchEntityLabel(entry.type, language),
+          kind: getSearchEntityLabel(entry.type),
           name: getLocalizedSearchResultName(entry, language),
           meta: copy.blocks.ficheMeta,
           href: ficheHrefFor(entry as SearchResult, language),
@@ -452,6 +290,7 @@ export function SearchFeed({
         }
   );
   const ficheRows = presentation?.fiches?.items ?? derivedFicheRows;
+
   // A relation browse ("the peoples of the Krou family") only replaces the
   // name-search movement when there is no subject to answer — a query that
   // also matches a subject (a country filter alongside a name search that
@@ -460,22 +299,29 @@ export function SearchFeed({
   const isRelationBrowse = Boolean(relation) && subjects.length === 0;
   const relationLabel =
     isRelationBrowse && relation?.kind === "family"
-      ? ((language === "en"
-          ? results[0]?.languageFamilyNameEn
-          : results[0]?.languageFamilyName) ?? results[0]?.languageFamilyName)
+      ? (results[0]?.languageFamilyName ?? results[0]?.languageFamilyName)
       : isRelationBrowse && relation?.kind === "country"
         ? getCountryCommonName(language, relation.id, relation.id)
         : undefined;
   const opening = resolveNameOpening({ query, subjects, nameAnswers });
+  const answered = subjects.filter((subject) => subject.answer);
+  // A published word is answered by its record. This precedes the confession
+  // on purpose: « pharaon » reaches no fiche, and « Nous ne connaissons pas ce
+  // nom » would deny the piece we made on it. A fiche that does answer keeps
+  // the page: the word is then only one more thing the name can mean.
+  const wordPage = wordAnswers.length > 0 && subjects.length === 0 && !relation;
   const displayName =
     presentation?.answer?.name ??
     relationLabel ??
     opening.title ??
     (state === "typo"
       ? query.trim()
-      : subjects[0]
-        ? getLocalizedSearchResultName(subjects[0], language)
-        : query);
+      : answered.length === 1
+        ? answered[0].answer!.title
+        : subjects[0]
+          ? getLocalizedSearchResultName(subjects[0], language)
+          : query);
+
   // A piece found by the reader's word answers it: the confession would deny
   // what the shelf below is showing.
   const hasWordPiece = companions.shorts.items.some(
@@ -503,21 +349,15 @@ export function SearchFeed({
           ? answerCopy.unknownName
           : state === "typo"
             ? copy.answer.typo
-            : hasPeopleDisambiguation
-              ? copy.answer.shared(subjects.length)
-              : hasCrossTypeDisambiguation
-                ? copy.answer.sharedGeneric(subjects.length)
-                : state === "widened"
-                  ? subjects.length > 0
-                    ? copy.answer.widened
-                    : relation?.kind === "family" && relationLabel
-                      ? copy.answer.relationFamilyVerdict(relationLabel)
-                      : relation?.kind === "country"
-                        ? copy.answer.relationCountryVerdict(
-                            inCountry(relation.id, displayName, language)
-                          )
-                        : copy.answer.relatedOnly
-                  : copy.answer.exact);
+            : state === "widened"
+              ? relation?.kind === "family" && relationLabel
+                ? copy.answer.relationFamilyVerdict(relationLabel)
+                : relation?.kind === "country"
+                  ? copy.answer.relationCountryVerdict(
+                      inCountry(relation.id, displayName, language)
+                    )
+                  : copy.answer.relatedOnly
+              : copy.answer.exact);
   const summary =
     presentation?.answer?.summary ??
     (answeredByReview
@@ -551,6 +391,35 @@ export function SearchFeed({
         fieldPath: "search-feed",
         fieldLabel: answerCopy.invitation,
       };
+
+  const lenses = buildFeedLenses(
+    {
+      shorts: companions.shorts.items.length,
+      stories: plates.length,
+      quiz: companions.quiz.item ? 1 : 0,
+      fiches: ficheRows.length > 0 ? (resultCount ?? ficheRows.length) : 0,
+    },
+    copy.filters
+  );
+  // The closing asks for what only a reader of this kind can bring. Several
+  // subjects of different kinds share one neutral invitation.
+  const hasAnswer = wordPage || answered.length > 0;
+  const answeredKinds = new Set(answered.map(({ answer }) => answer!.kind));
+  const closingKind: AnswerKind = wordPage
+    ? "word"
+    : answeredKinds.size === 1
+      ? [...answeredKinds][0]
+      : "people";
+  const plan = buildSearchFeedPlan(
+    state,
+    {
+      answers: answered.length > 0,
+      appellations: forms.length > 0,
+      fiches: ficheRows.length > 0,
+    },
+    { relatedOnly, wordPage }
+  );
+
   const exactSubjectIds = new Set(
     companions.shorts.items.flatMap(({ match }) =>
       match.relation === "exact"
@@ -567,58 +436,180 @@ export function SearchFeed({
         ({ entityType, entityId }) =>
           !exactSubjectIds.has(`${entityType}:${entityId}`)
       ));
-  const lenses = [
-    { id: "all" as const, label: copy.filters.all },
-    {
-      id: "shorts" as const,
-      label: copy.filters.shorts,
-      count: companions.shorts.count,
-    },
-    ...(plates.length + companions.images.count > 0
-      ? [
-          {
-            id: "images" as const,
-            label: copy.filters.images,
-            count: plates.length + companions.images.count,
-          },
-        ]
-      : []),
-    ...(companions.quiz.item
-      ? [{ id: "quiz" as const, label: copy.filters.quiz }]
-      : []),
-    ...(ficheRows.length > 0
-      ? [
-          {
-            id: "fiches" as const,
-            label: copy.filters.fiches,
-            count: resultCount ?? ficheRows.length,
-          },
-        ]
-      : []),
-  ];
-  const appellationsSubtitle = presentation?.appellations
-    ? Object.prototype.hasOwnProperty.call(
-        presentation.appellations,
-        "subtitle"
-      )
-      ? (presentation.appellations.subtitle ?? undefined)
-      : answerCopy.appellationsLead
-    : undefined;
-  const reviewedWideningNote = presentation
-    ? presentation.shorts?.wideningNote
-    : companions.shorts.items.some(
-          ({ match }) => match.relation !== "exact" && match.relation !== "word"
-        )
-      ? copy.wideningNote
+
+  // The reviewed answer of a subject takes the place of its automatic origin;
+  // when one answer covers several subjects it is shown once, under the first.
+  const reviewedFor = (subject: SearchResult) =>
+    opening.entries.find(({ subjects: covered }) => covered[0] === subject)
+      ?.answer;
+  const coveredByAnother = (subject: SearchResult) =>
+    opening.entries.some(
+      ({ subjects: covered }) =>
+        covered.includes(subject) && covered[0] !== subject
+    );
+
+  // Two countries bearing the name are one block, and the peoples filed under
+  // a family's name are a way in rather than a second answer.
+  const answerPlan = planAnswerSubjects(answered, language);
+  const singleBlocks = answerPlan.flatMap((block) =>
+    block.kind === "subject" ? [block] : []
+  );
+  const foldedPeoples = new Set(
+    singleBlocks.flatMap((block) => block.peoplesOfFamily ?? [])
+  );
+  const ficheSubjects = subjects.filter(
+    (subject) => !foldedPeoples.has(subject)
+  );
+
+  // Two subjects that tell the same origin say it once, before their own
+  // blocks, rather than twice in a row.
+  const originTexts = (subject: SearchResult) =>
+    JSON.stringify(
+      subject.answer?.origin?.accounts.map(({ text }) => text) ?? null
+    );
+  const singles = singleBlocks.map((block) => block.subject);
+  const sharedOrigin =
+    singles.length > 1 &&
+    opening.entries.length === 0 &&
+    singles[0].answer?.origin &&
+    singles.every((subject) => originTexts(subject) === originTexts(singles[0]))
+      ? singles[0].answer.origin
       : undefined;
 
-  const renderBlock = (
-    id: FeedBlockId,
-    zone: FeedMovementZone = "primary"
-  ): ReactNode => {
-    if (!lensAllows(activeLens, id)) return null;
+  const choicesFor = (
+    family: SearchResult,
+    peoples: readonly SearchResult[]
+  ) =>
+    peoples.length === 0
+      ? []
+      : [
+          {
+            kind: "languageFamily" as const,
+            eyebrow: searchAnswerCopy[language].choices.family,
+            label: family.answer!.title,
+            href: ficheHrefFor(family, language),
+          },
+          {
+            kind: "people" as const,
+            eyebrow: searchAnswerCopy[language].choices.peoples.eyebrow,
+            label: searchAnswerCopy[language].choices.peoples.label,
+            href: buildRelationSearchHref(language, {
+              kind: "family",
+              id: family.id,
+            }),
+          },
+        ];
+  const peopleLinkFor = (subject: SearchResult) => {
+    const count = subject.answer?.what.facts.peopleCount;
+    return subject.type === "languageFamily" && count
+      ? {
+          count,
+          href: buildRelationSearchHref(language, {
+            kind: "family",
+            id: subject.id,
+          }),
+        }
+      : undefined;
+  };
+
+  const pageName =
+    displayName.charAt(0).toLocaleUpperCase(language) + displayName.slice(1);
+  const blockTitle = (block: (typeof answerPlan)[number]) =>
+    block.kind === "countries" ? pageName : block.subject.answer!.title;
+  // Subjects all named like the search (the two Congos and the family name
+  // « Congo ») each carry that name as their title, the eyebrow above it. A
+  // page title above them would be the same word a third time, and bigger
+  // than the others it names: so there is none, and the first block holds the
+  // h1 at the size of its siblings.
+  const sharedTitle =
+    answerPlan.length > 1 &&
+    answerPlan.every(
+      (block) =>
+        normalizeString(blockTitle(block)) === normalizeString(pageName)
+    );
+
+  const renderAnswers = (): ReactNode => (
+    <>
+      {answerPlan.length > 1 && !sharedTitle ? (
+        <h1 className="font-afh-display text-afh-hero font-black leading-[var(--afh-leading-hero)] text-afh-text [overflow-wrap:anywhere]">
+          {pageName}
+        </h1>
+      ) : null}
+      {sharedOrigin ? (
+        <OriginBlock
+          origin={sharedOrigin}
+          kind={singles[0].answer!.kind}
+          title={displayName}
+          language={language}
+        />
+      ) : null}
+      {answerPlan.map((block, index) => {
+        const headingLevel =
+          answerPlan.length > 1 && !(sharedTitle && index === 0) ? "h2" : "h1";
+        const titleScale = sharedTitle ? "section" : undefined;
+        const { subject, peoplesOfFamily = [] } =
+          block.kind === "subject"
+            ? block
+            : { subject: undefined, peoplesOfFamily: [] };
+        const body =
+          block.kind === "countries" ? (
+            <CountriesAnswer
+              key={`countries:${block.subjects.map(({ id }) => id).join("+")}`}
+              entries={block.subjects.map((entry) => ({
+                answer: entry.answer!,
+                listedPeoples: entry.associatedPeoples,
+              }))}
+              title={pageName}
+              reviewed={block.subjects
+                .map(reviewedFor)
+                .find((entry) => entry !== undefined)}
+              originCoveredElsewhere={
+                !block.subjects.map(reviewedFor).some(Boolean) &&
+                (block.subjects.some(coveredByAnother) || Boolean(sharedOrigin))
+              }
+              headingLevel={headingLevel}
+              titleScale={titleScale}
+              language={language}
+            />
+          ) : (
+            <SubjectAnswer
+              key={`${subject!.type}:${subject!.id}`}
+              answer={subject!.answer!}
+              listedPeoples={subject!.associatedPeoples}
+              searchedForm={query}
+              reviewed={reviewedFor(subject!)}
+              originCoveredElsewhere={
+                coveredByAnother(subject!) || Boolean(sharedOrigin)
+              }
+              headingLevel={headingLevel}
+              titleScale={titleScale}
+              choices={choicesFor(subject!, peoplesOfFamily)}
+              peopleLink={peopleLinkFor(subject!)}
+              language={language}
+            />
+          );
+        // A second subject is parted from the first by a rule, so the page
+        // does not read as two pages stacked.
+        return index === 0 ? (
+          body
+        ) : (
+          <div
+            key={`divider:${index}`}
+            data-subject-divider=""
+            className="mt-[var(--afh-section-gap)] flex flex-col gap-[var(--afh-section-gap)] border-t border-afh-border pt-[var(--afh-section-gap)]"
+          >
+            {body}
+          </div>
+        );
+      })}
+    </>
+  );
+
+  const renderBlock = (id: FeedBlockId): ReactNode => {
     switch (id) {
       case "lenses":
+        // A lone « Tout » is a filter with nothing to choose.
+        if (lenses.length < 2) return null;
         return (
           <LensesBlock
             language={language}
@@ -643,11 +634,6 @@ export function SearchFeed({
               presentation?.answer?.tone ??
               (state === "typo" || state === "unknown" ? "plain" : "answer")
             }
-            className={
-              state === "unknown" && presentation
-                ? "min-[1200px]:col-span-7 min-[1200px]:pt-afh-5xl"
-                : "min-[1200px]:col-span-7"
-            }
           />
         );
       case "appellations":
@@ -658,16 +644,34 @@ export function SearchFeed({
             groupLabels={Object.fromEntries(
               subjects.map((subject) => [
                 `${subject.type}:${subject.id}`,
-                `${getLocalizedSearchResultName(subject, language)} · ${getSearchEntityLabel(subject.type, language)}`,
+                `${getLocalizedSearchResultName(subject, language)} · ${getSearchEntityLabel(subject.type)}`,
               ])
             )}
             title={
               presentation?.appellations?.title ??
               (state === "typo" ? copy.answer.typoChoices : undefined)
             }
-            subtitle={appellationsSubtitle}
+            subtitle={
+              presentation?.appellations
+                ? Object.prototype.hasOwnProperty.call(
+                    presentation.appellations,
+                    "subtitle"
+                  )
+                  ? (presentation.appellations.subtitle ?? undefined)
+                  : answerCopy.appellationsLead
+                : undefined
+            }
             language={language}
-            className="min-[1200px]:col-span-5"
+          />
+        );
+      case "fiche-link":
+        return (
+          <FicheLinkBlock
+            subjects={ficheSubjects}
+            language={language}
+            onNavigate={(subject) =>
+              onResultNavigate?.(subject.type, subjects.indexOf(subject) + 1)
+            }
           />
         );
       case "shorts":
@@ -679,7 +683,6 @@ export function SearchFeed({
             subtitle={presentation?.shorts?.subtitle ?? undefined}
             language={language}
             allHref={getLocalizedRoute(language, "discoveries")}
-            wideningNote={reviewedWideningNote}
             emptySlot={
               presentation?.shorts?.emptySlot ?? {
                 name: displayName,
@@ -698,93 +701,6 @@ export function SearchFeed({
             subtitle={presentation?.shorts?.subtitle ?? undefined}
             language={language}
             allHref={getLocalizedRoute(language, "discoveries")}
-            wideningNote={reviewedWideningNote}
-          />
-        );
-      case "origins": {
-        return (
-          <OriginsBlock
-            title={presentation?.origins?.title ?? answerCopy.origins}
-            subtitle={presentation?.origins?.subtitle ?? undefined}
-            lede={presentation?.origins?.lede}
-            items={originItems}
-            reviewed={Boolean(presentation)}
-            language={language}
-            zone={zone}
-          />
-        );
-      }
-      case "peoples":
-        return (
-          <PeopleBlock
-            title={
-              presentation?.peoples?.title ??
-              (hasPeopleDisambiguation
-                ? copy.shelves.peoples
-                : copy.shelves.sharedEntries)
-            }
-            subtitle={presentation?.peoples?.subtitle ?? undefined}
-            zone={zone}
-            items={
-              presentation?.peoples?.items ??
-              subjects.map((subject) => ({
-                name: getLocalizedSearchResultName(subject, language),
-                meta:
-                  subject.type === "people"
-                    ? copy.blocks.peopleMeta
-                    : getSearchEntityLabel(subject.type, language),
-                description:
-                  plainSnippet(subject.snippet) ??
-                  copy.blocks.peopleDescription,
-                href: ficheHrefFor(subject, language),
-              }))
-            }
-          />
-        );
-      case "shared-name":
-        const sharedName = prosePresentation("shared-name");
-        return (
-          <ProseBlock
-            blockId="shared-name"
-            title={sharedName?.title ?? copy.shelves.sharedName}
-            paragraphs={
-              sharedName?.paragraphs ?? [
-                hasPeopleDisambiguation
-                  ? copy.blocks.sharedNameBody
-                  : copy.blocks.sharedNameBodyGeneric,
-              ]
-            }
-            standing={sharedName?.standing}
-            language={language}
-            zone={zone}
-          />
-        );
-      case "tiles":
-        return (
-          <TilesBlock
-            title={
-              presentation?.tiles?.title ?? copy.blocks.relatedPeoplesTitle
-            }
-            subtitle={presentation?.tiles?.subtitle ?? undefined}
-            zone={zone}
-            items={tileRows}
-            actionHref={presentation?.tiles?.actionHref}
-            actionLabel={presentation?.tiles?.actionLabel}
-            reviewed={Boolean(presentation)}
-          />
-        );
-      case "atlas-holds":
-        return (
-          <FactsBlock
-            title={presentation?.facts?.title ?? answerCopy.atlasHolds}
-            subtitle={presentation?.facts?.subtitle}
-            zone={zone}
-            items={
-              presentation?.facts?.items ?? [
-                { label: answerCopy.appellations, value: String(forms.length) },
-                { label: copy.shelves.fiches, value: String(ficheRows.length) },
-              ]
-            }
           />
         );
       case "plates":
@@ -795,7 +711,6 @@ export function SearchFeed({
             title={presentation?.plates?.title}
             subtitle={presentation?.plates?.subtitle ?? undefined}
             language={language}
-            zone={zone}
             allHref={getLocalizedRoute(language, "discoveries")}
           />
         );
@@ -815,7 +730,6 @@ export function SearchFeed({
               copy.blocks.questionCount
             }
             allHref={getLocalizedRoute(language, "quiz")}
-            zone={zone}
             result={
               validatedOption === null
                 ? undefined
@@ -831,44 +745,6 @@ export function SearchFeed({
             }
           />
         ) : null;
-      case "images":
-        return companions.images.items[0] ? (
-          <ImageBlock
-            item={companions.images.items[0]}
-            reviewed={Boolean(presentation)}
-            title={presentation?.images?.title}
-            subtitle={presentation?.images?.subtitle ?? undefined}
-            licenceText={presentation?.images?.licenceText}
-            language={language}
-            zone={zone}
-          />
-        ) : null;
-      case "problem":
-        return (
-          <ProseBlock
-            blockId="problem"
-            title={presentedProblem?.title ?? answerCopy.problem}
-            paragraphs={problemParagraphs}
-            standing={presentedProblem?.standing}
-            language={language}
-            zone={zone}
-          />
-        );
-      case "near-name":
-        const nearName = prosePresentation("near-name");
-        return (
-          <ProseBlock
-            blockId="near-name"
-            title={nearName?.title ?? copy.shelves.nearName}
-            paragraphs={
-              nearName?.paragraphs ??
-              nearNames.map((result) => copy.blocks.nearNameBody(result.name))
-            }
-            standing={nearName?.standing}
-            language={language}
-            zone={zone}
-          />
-        );
       case "fiches":
         return (
           <FichesBlock
@@ -877,7 +753,6 @@ export function SearchFeed({
             title={presentation?.fiches?.title}
             subtitle={presentation?.fiches?.subtitle ?? undefined}
             language={language}
-            zone={zone}
           />
         );
       case "owed":
@@ -885,20 +760,25 @@ export function SearchFeed({
           <OwedBlock
             language={language}
             reviewed={Boolean(presentation)}
-            thin={plan.thin}
-            silences={subjectSilences}
+            thin
+            silences={presentation?.owed?.silences ?? []}
             conviction={
-              presentation?.owed?.conviction ?? {
-                title: answerCopy.conviction,
-                body: answerCopy.convictionBody,
-              }
+              hasAnswer
+                ? undefined
+                : (presentation?.owed?.conviction ?? {
+                    title: answerCopy.conviction,
+                    body: answerCopy.convictionBody,
+                  })
             }
             invitation={
-              presentation?.owed?.invitation ?? {
-                title: answerCopy.invitation,
-                body: answerCopy.invitationBody,
-                action: answerCopy.invitationAction,
-              }
+              presentation?.owed?.invitation ??
+              (hasAnswer
+                ? searchAnswerCopy[language].invitation[closingKind]
+                : {
+                    title: answerCopy.invitation,
+                    body: answerCopy.invitationBody,
+                    action: answerCopy.invitationAction,
+                  })
             }
             contributionTarget={contributionTarget}
           />
@@ -926,70 +806,60 @@ export function SearchFeed({
     }
   };
 
-  const firstIds = plan.desktop.first.filter((id) =>
-    lensAllows(activeLens, id)
-  );
-  const hasAppellations = firstIds.includes("appellations");
-  // The unknown-name board pads the verdict block itself; every other board
-  // pads the grid that holds it.
-  const opensWithPaddedVerdict = state === "unknown" && Boolean(presentation);
-  const first = (
-    <>
-      <div
-        data-feed-opening="answer"
-        className={cn(
-          "min-w-0 min-[1200px]:grid min-[1200px]:grid-cols-12 min-[1200px]:items-start min-[1200px]:gap-afh-6xl",
-          !opensWithPaddedVerdict && "min-[1200px]:pt-afh-5xl"
-        )}
-      >
-        {firstIds.includes("verdict") ? (
-          hasAppellations ? (
-            renderBlock("verdict")
-          ) : (
-            <div className="min-[1200px]:col-span-12">
-              {renderBlock("verdict")}
-            </div>
-          )
-        ) : null}
-        {hasAppellations ? renderBlock("appellations") : null}
-      </div>
-      {firstIds.includes("lenses") ? renderBlock("lenses") : null}
-      {firstIds.includes("shorts") ? (
-        <div
-          data-feed-opening="shorts"
-          className={
-            presentation ? "mt-0" : "mt-afh-lg min-[1200px]:mt-afh-5xl"
-          }
-        >
-          {renderBlock("shorts")}
-        </div>
-      ) : null}
-    </>
-  );
-  const closingIds = plan.desktop.closing.filter((id) =>
-    lensAllows(activeLens, id)
-  );
-  const closing = closingIds.map((id) => (
-    <Fragment key={id}>{renderBlock(id)}</Fragment>
+  const wordBlocks = wordAnswers.map((wordAnswer) => (
+    <WordAnswerPage
+      key={wordAnswer.title}
+      answer={wordAnswer}
+      language={language}
+    />
   ));
+  const renderPrimary = (id: FeedBlockId): ReactNode => {
+    // The six answer blocks are drawn together, once per subject: the plan
+    // names them in order, the answer component keeps them together.
+    if (id === "answer-what") return wordPage ? wordBlocks : renderAnswers();
+    if ((ANSWER_BLOCKS as readonly string[]).includes(id)) return null;
+    return renderBlock(id);
+  };
 
-  if (!desktop) {
-    const movement = plan.mobile.filter(
-      (id) =>
-        !plan.desktop.first.includes(id) && !plan.desktop.closing.includes(id)
-    );
+  // A filter replaces the answer: the page is then about what the reader
+  // asked to see, under a heading that says so, with a way back.
+  if (activeLens !== "all") {
+    const lensBlock: Record<Exclude<FeedLensId, "all">, ReactNode> = {
+      shorts: (
+        <ShortsBlock
+          grouped
+          items={companions.shorts.items}
+          reviewed={Boolean(presentation)}
+          language={language}
+        />
+      ),
+      stories: renderBlock("plates"),
+      quiz: renderBlock("quiz"),
+      fiches: renderBlock("fiches"),
+    };
     return (
       <SearchFeedLayout
         className="text-afh-text"
         reviewed={Boolean(presentation)}
-        first={first}
-        composition={{
-          mode: "mobile",
-          blocks: movement.map((id) => (
-            <Fragment key={id}>{renderBlock(id, "primary")}</Fragment>
-          )),
-        }}
-        closing={closing}
+        first={renderBlock("lenses")}
+        blocks={[
+          <h1
+            key="lens-title"
+            className="font-afh-display text-afh-h1 font-black leading-[var(--afh-leading-h1)] text-afh-text [overflow-wrap:anywhere]"
+          >
+            {copy.lens.title[activeLens](displayName)}
+          </h1>,
+          <Fragment key="lens-content">{lensBlock[activeLens]}</Fragment>,
+          <div key="lens-back">
+            <button
+              type="button"
+              onClick={() => setActiveLens("all")}
+              className="inline-flex min-h-11 items-center font-bold text-[color:var(--accent-ink)] underline underline-offset-4 focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
+            >
+              {copy.lens.back}
+            </button>
+          </div>,
+        ]}
       />
     );
   }
@@ -998,26 +868,19 @@ export function SearchFeed({
     <SearchFeedLayout
       className="text-afh-text"
       reviewed={Boolean(presentation)}
-      first={first}
-      composition={
-        plan.thin
-          ? {
-              mode: "desktop-thin",
-              primary: plan.desktop.primary.map((id) => (
-                <Fragment key={id}>{renderBlock(id, "primary")}</Fragment>
-              )),
-            }
-          : {
-              mode: "desktop-rich",
-              primary: plan.desktop.primary.map((id) => (
-                <Fragment key={id}>{renderBlock(id, "primary")}</Fragment>
-              )),
-              secondary: plan.desktop.secondary.map((id) => (
-                <Fragment key={id}>{renderBlock(id, "secondary")}</Fragment>
-              )),
-            }
+      first={
+        <>
+          {plan.first.map((id) => (
+            <Fragment key={id}>{renderBlock(id)}</Fragment>
+          ))}
+        </>
       }
-      closing={closing}
+      blocks={plan.primary.map((id) => (
+        <Fragment key={id}>{renderPrimary(id)}</Fragment>
+      ))}
+      closing={plan.closing.map((id) => (
+        <Fragment key={id}>{renderBlock(id)}</Fragment>
+      ))}
     />
   );
 }

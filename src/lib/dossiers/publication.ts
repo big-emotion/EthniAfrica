@@ -8,10 +8,7 @@ import { getDossierBySlug } from "@/lib/dossiers/corpus";
  * and withdrawing a reading meant editing a TypeScript file that describes
  * menus. Readiness is a property of the dossier, so the dossier carries it.
  *
- * The slug reaching this function is always the French one, in both locales:
- * an English address is rewritten onto the French route in `middleware.ts`
- * (`toRouteFilePath`), so `/en/dossiers/kongo-kingdom` arrives here as
- * `royaume-kongo`. A slug the corpus does not know is withheld rather than
+ * A slug the corpus does not know is withheld rather than
  * served — that is either a reader guessing at a URL or a dossier removed
  * from the corpus, and neither is a page to publish.
  */

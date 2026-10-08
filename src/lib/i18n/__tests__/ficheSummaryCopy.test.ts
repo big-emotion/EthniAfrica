@@ -5,30 +5,18 @@ import { peopleCopy } from "@/lib/i18n/copy/people";
 
 describe("counted fiche summary copy (REQ-151)", () => {
   // @req REQ-155
-  it("keeps the new people chapter labels in both locale dictionaries", () => {
+  it("keeps the new people chapter labels in the dictionary", () => {
     expect(peopleCopy.fr.chapterDetails).toMatchObject({
       historyChronology: "Chronologie historique",
       historyUndated: "Non daté",
       historyRole: "Rôle historique",
       cultureRitesAndSymbols: "Rites & symboles",
     });
-    expect(peopleCopy.en.chapterDetails).toMatchObject({
-      historyChronology: "Historical chronology",
-      historyUndated: "Undated",
-      historyRole: "Historical role",
-      cultureRitesAndSymbols: "Rites and symbols",
-    });
     expect(peopleCopy.fr.chapterDetails.associatedGroups(2)).toBe(
       "2 groupes associés"
     );
     expect(peopleCopy.fr.chapterDetails.documentedRelations(1)).toBe(
       "1 relation documentée"
-    );
-    expect(peopleCopy.en.chapterDetails.associatedGroups(2)).toBe(
-      "2 associated groups"
-    );
-    expect(peopleCopy.en.chapterDetails.documentedRelations(1)).toBe(
-      "1 documented relation"
     );
   });
 
@@ -64,31 +52,7 @@ describe("counted fiche summary copy (REQ-151)", () => {
         absent: "aucun nom référencé ici",
       },
     });
-    expect(countryCopy.en.summary.figures).toMatchObject({
-      population: { label: "inhabitants", absent: "population not recorded" },
-      peoples: {
-        label: "peoples",
-        scope: "documented here",
-        absent: "no people documented here",
-      },
-      languages: {
-        label: "languages",
-        scope: "documented here",
-        absent: "no language documented here",
-      },
-      families: {
-        label: "language families",
-        scope: "documented here",
-        absent: "no language family documented here",
-      },
-      names: {
-        label: "names",
-        scope: "referenced here",
-        absent: "no name referenced here",
-      },
-    });
     expect(countryCopy.fr.summary.title).toBe("En bref");
-    expect(countryCopy.en.summary.title).toBe("In brief");
   });
 
   // @req REQ-151
@@ -100,15 +64,7 @@ describe("counted fiche summary copy (REQ-151)", () => {
       linguisticFamily: "Famille linguistique",
       namesReferencedHere: "Noms rattachés",
     });
-    expect(peopleCopy.en.summary).toMatchObject({
-      persons: "People recorded",
-      countriesOfPresence: "Countries of presence",
-      mainLanguage: "Main language",
-      linguisticFamily: "Language family",
-      namesReferencedHere: "Linked names",
-    });
     expect(peopleCopy.fr.summary.title).toBe("En bref");
-    expect(peopleCopy.en.summary.title).toBe("In brief");
   });
 
   // @req REQ-151
@@ -116,41 +72,25 @@ describe("counted fiche summary copy (REQ-151)", () => {
     expect(countryCopy.fr.summary.referenceYear(2025)).toBe(
       "Année de référence : 2025"
     );
-    expect(countryCopy.en.summary.referenceYear(2025)).toBe(
-      "Reference year: 2025"
-    );
     expect(peopleCopy.fr.summary.referenceYear(2025)).toBe(
       "Année de référence : 2025"
-    );
-    expect(peopleCopy.en.summary.referenceYear(2025)).toBe(
-      "Reference year: 2025"
     );
 
     // The people record still states its silence as one sentence for all five
     // slots. The country record now says it once per count, in words that fit
     // the count, which is why only one of the two keeps this key.
     expect(peopleCopy.fr.summary.missingData).toBe("Non renseigné");
-    expect(peopleCopy.en.summary.missingData).toBe("Not recorded");
-
-    for (const summary of [peopleCopy.fr.summary, peopleCopy.en.summary]) {
-      expect(summary.missingData).toBeTruthy();
-      expect(summary.missingData).not.toMatch(/\b(?:0|undefined|unknown)\b/i);
-    }
+    expect(peopleCopy.fr.summary.missingData).not.toMatch(
+      /\b(?:0|undefined|unknown)\b/i
+    );
 
     // Whatever a count's silence is called, it never reads as a measurement.
-    for (const locale of [countryCopy.fr, countryCopy.en]) {
-      for (const figure of Object.values(locale.summary.figures)) {
-        expect(figure.absent).toBeTruthy();
-        expect(figure.absent).not.toMatch(/\b(?:0|undefined|unknown)\b/i);
-      }
+    for (const figure of Object.values(countryCopy.fr.summary.figures)) {
+      expect(figure.absent).toBeTruthy();
+      expect(figure.absent).not.toMatch(/\b(?:0|undefined|unknown)\b/i);
     }
 
-    for (const summary of [
-      countryCopy.fr.summary,
-      countryCopy.en.summary,
-      peopleCopy.fr.summary,
-      peopleCopy.en.summary,
-    ]) {
+    for (const summary of [countryCopy.fr.summary, peopleCopy.fr.summary]) {
       expect(summary.factTier).toBeTruthy();
     }
   });

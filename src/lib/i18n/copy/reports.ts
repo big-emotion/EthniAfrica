@@ -1,127 +1,6 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  page: {
-    metadataTitle: "Report an error",
-    title: "Report an error",
-    accuracyTitle: "Help improve the accuracy of the data",
-    accuracyIntroduction:
-      "The information on this site comes from different public and collaborative sources. Although we make every effort to verify and consolidate the data, some information may be incomplete, approximate or incorrect.",
-    formIntroduction:
-      "Describe what is wrong below. No account is required, and both a suggested correction and a source are optional: we prefer an incomplete report to one you decide not to send.",
-    ficheGuidanceBefore: "If the error is on a specific page, the",
-    reportButton: "Report",
-    ficheGuidanceAfter:
-      "button in that page's reading bar targets the relevant chapter directly — it is faster for you and more precise for moderation.",
-    openAtlas: "Open the atlas of peoples",
-    followUpTitle: "What happens to reports",
-    followUp:
-      "All reports are public, from submission to decision. You can see those under review and those that have been decided, together with the reason given for each decision.",
-    viewRegister: "View the report register",
-  },
-  form: {
-    targetTitle: "Reported item",
-    targetLabels: {
-      people: "People",
-      country: "Country",
-      language: "Language",
-      language_family: "Language family",
-      fiche_section: "Page section",
-      assertion: "Assertion",
-      source: "Source",
-      general: "General report",
-    } as Record<string, string>,
-    reason: "What is wrong?",
-    correctionDisclosure: "Do you know the correct answer?",
-    proposedRewrite: "Suggested correction",
-    decisionDisclosure: "Would you like to know the decision?",
-    reporterEmail: "Your email address",
-    emailHelp:
-      "We will send you a link to confirm this address, followed by the moderation decision. It is never displayed publicly or used for any other purpose.",
-    sourceDisclosure: "Do you have a source?",
-    sourcesLegend: "Supporting sources",
-    sourceHelp: "Add a link or citation if you have one.",
-    sourceRequired: "Add at least one link or citation.",
-    counterSourceUrl: "Counter-source link",
-    counterSourceCitation: "Counter-source citation",
-    cancel: "Cancel",
-    send: "Send",
-    sending: "Sending…",
-    honeypot: "Leave this field blank",
-    verification: "Anti-bot verification",
-    verificationPlaceholder: "The anti-bot verification will load here.",
-    verificationIncomplete:
-      "The anti-bot verification is not complete. Wait a moment.",
-    verificationFailed:
-      "The anti-bot verification failed. Reload the page to try again.",
-    submissionFailed: "The report could not be sent. Try again.",
-    invalidUrl: "Enter a valid HTTP or HTTPS address.",
-    citationTooLong: "The citation cannot exceed 2,000 characters.",
-    invalidReason:
-      "The description must contain between 10 and 2,000 characters.",
-    invalidEmail: "Enter a valid email address, or leave the field blank.",
-    successTitle: "Report submitted",
-    successWithEmail:
-      "Thank you — confirm your address using the message we have just sent, and you will receive the moderation decision.",
-    successAnonymous:
-      "Thank you — your report is available below, where its status will be updated.",
-    viewReport: "View the report",
-  },
-  dialog: {
-    trigger: "Report",
-    title: "Report a problem",
-    description: "Report form for this item.",
-    saved: "report submitted",
-  },
-  detail: {
-    metadataDescription: "View an editorial report on the platform.",
-    report: "Report",
-    sectionName: "Reports",
-    targetTitle: "Reported item",
-    type: "Type",
-    identifier: "Identifier",
-    field: "Field",
-    detailsTitle: "Report details",
-    kind: {
-      inaccurate: "Inaccurate information",
-      missingSource: "Missing source",
-      brokenUrl: "Broken URL",
-      offensive: "Offensive content",
-      correctionProposal: "Correction proposal",
-      other: "Other",
-    },
-    counterSource: "Contradictory source",
-    proposedRewrite: "Suggested rewrite",
-    reportedOn: "Reported on",
-    resolvedOn: "Resolved on",
-    by: "By",
-  },
-  verification: {
-    metadataTitle: "Confirm your email address",
-    verified: {
-      title: "Email address confirmed",
-      body: "You will receive a message as soon as moderation has decided on your report.",
-    },
-    alreadyVerified: {
-      title: "Email address already confirmed",
-      body: "This link has already been used. There is nothing else to do: your email address is registered.",
-    },
-    expired: {
-      title: "Expired link",
-      body: "This confirmation link was valid for 24 hours. Your report is still registered and publicly available — only the email notification can no longer be sent.",
-    },
-    unknown: {
-      title: "Unknown link",
-      body: "This link does not match a pending confirmation. If you submitted a report, it is registered and available in the public register.",
-    },
-    viewReport: "View your report",
-    viewRegister: "View the report register",
-  },
-};
-
-type ReportsCopy = typeof en;
-
-const fr: ReportsCopy = {
+const fr = {
   page: {
     metadataTitle: "Signalez une erreur",
     title: "Signalez une erreur",
@@ -242,5 +121,7 @@ const fr: ReportsCopy = {
   },
 };
 
+type ReportsCopy = typeof fr;
+
 // @req REQ-145
-export const reportsCopy: Record<Language, ReportsCopy> = { en, fr };
+export const reportsCopy: Record<Language, ReportsCopy> = { fr };

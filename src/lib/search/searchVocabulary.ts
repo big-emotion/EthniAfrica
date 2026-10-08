@@ -69,30 +69,28 @@ export const SEARCH_RESULT_GROUPS: {
   { type: "patronyme", heading: "Noms" },
 ];
 
-const SEARCH_LABEL_EN =
-  "Search for a people, language, country, language family or surname";
-const SEARCH_PLACEHOLDER_EN = "E.g. Bafut, Fulfulde, Namibia, Keita";
-const SEARCH_RESULT_GROUPS_EN: typeof SEARCH_RESULT_GROUPS = [
-  { type: "people", heading: "Peoples" },
-  { type: "language", heading: "Languages" },
-  { type: "country", heading: "Countries" },
-  { type: "languageFamily", heading: "Language families" },
-  { type: "patronyme", heading: "Surnames" },
-];
+const SEARCH_LABELS: Record<Language, string> = { fr: SEARCH_LABEL };
+const SEARCH_PLACEHOLDERS: Record<Language, string> = {
+  fr: SEARCH_PLACEHOLDER,
+};
+const SEARCH_RESULT_GROUPS_BY_LANGUAGE: Record<
+  Language,
+  typeof SEARCH_RESULT_GROUPS
+> = { fr: SEARCH_RESULT_GROUPS };
 
 // @req REQ-140
 export function getSearchLabel(language: Language): string {
-  return language === "en" ? SEARCH_LABEL_EN : SEARCH_LABEL;
+  return SEARCH_LABELS[language];
 }
 
 // @req REQ-140
 export function getSearchPlaceholder(language: Language): string {
-  return language === "en" ? SEARCH_PLACEHOLDER_EN : SEARCH_PLACEHOLDER;
+  return SEARCH_PLACEHOLDERS[language];
 }
 
 // @req REQ-140
 export function getSearchResultGroups(
   language: Language
 ): typeof SEARCH_RESULT_GROUPS {
-  return language === "en" ? SEARCH_RESULT_GROUPS_EN : SEARCH_RESULT_GROUPS;
+  return SEARCH_RESULT_GROUPS_BY_LANGUAGE[language];
 }

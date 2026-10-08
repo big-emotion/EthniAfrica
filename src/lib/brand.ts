@@ -23,12 +23,9 @@
  * A default copied into a doc table is a second source of truth in the file
  * whose whole point is being the only one.
  *
- * There is no site-locale variable. `NEXT_PUBLIC_SITE_LOCALE` used to name a
- * single locale for the whole site — the model the bilingual site ends
- * (ARCH-021) — and was read by nothing but its own test. The locales the site
- * publishes, and the default, come from `getPublishedLocales()` and
- * `getDefaultLocale()` in `src/lib/locale.ts`; the Open Graph form of each is
- * `OG_LOCALE_BY_LANGUAGE` in `src/lib/seo/localeAlternates.ts`.
+ * There is no site-locale variable: the site publishes French alone
+ * (`src/lib/locale.ts`), and its Open Graph form is `OG_LOCALE` in
+ * `src/lib/seo/pageHead.ts`.
  *
  * All environment variables use the `NEXT_PUBLIC_` prefix to ensure they are
  * available in both server and client contexts in Next.js.

@@ -20,7 +20,7 @@ import { PAGE_SIZE_PARAM, resolvePageSize } from "@/lib/hubs/pagination";
 import { getLocalizedRoute, getPatronymeRoute } from "@/lib/routing";
 import { getTranslation } from "@/lib/translations";
 import type { CountryId } from "@/types/afrik";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import { formatNumber } from "@/lib/languageTag";
 import { facetDirectoriesCopy } from "@/lib/i18n/copy/facetDirectories";
 import type { Language } from "@/types/shared";
@@ -73,12 +73,7 @@ export async function generateMetadata({
   const copy = { title: t.index.pageTitle, description: t.index.pageSubtitle };
   return {
     ...copy,
-    ...surfaceHead(
-      lang as Language,
-      "patronymes",
-      (locale) => getLocalizedRoute(locale, "patronymes"),
-      copy
-    ),
+    ...pageHead(getLocalizedRoute("fr", "patronymes"), copy),
   };
 }
 

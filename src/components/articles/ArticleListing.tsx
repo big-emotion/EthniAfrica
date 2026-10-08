@@ -25,7 +25,7 @@ interface ArticleListingProps {
   failed: boolean;
 }
 
-const COLLECTIONS = ["anecdotes", "proverbs", "gallery"] as const;
+const COLLECTIONS = ["anecdotes", "proverbs"] as const;
 
 /**
  * The Articles section's landing: the retained collections, then the

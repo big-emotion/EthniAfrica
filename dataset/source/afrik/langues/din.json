@@ -10,7 +10,7 @@
   "nameFr": "Dinka",
   "nameEn": "Dinka",
   "alternateNames": [],
-  "whyProblematic": null,
+  "whyProblematic": "Les Dinka se nomment eux-mêmes Jieng ou Muonjang. Le mot « Dinka » vient de l'extérieur, et personne ne sait d'où il vient : aucune explication de son origine n'est établie, et nous n'en retenons aucune. Seule une minorité instruite parmi les Dinka sait que d'autres les appellent ainsi (Jok, 2018).",
   "spellingAliases": [],
   "familyId": "FLG_NILOTIQUE",
   "peoples": [],
@@ -56,7 +56,18 @@
         "url": "https://glottolog.org/resource/languoid/id/dink1262",
         "tier": "official",
         "notes": "Glottolog name: Dinka; classification includes Nilotic. Les dialectes listés sont les sous-languoids que Glottolog rattache à dink1262, hors languoids portant leur propre code ISO 639-3."
+      },
+      {
+        "title": "Jok Madut Jok, Dinka, Encyclopedia of World Cultures Supplement, Gale, mise à jour de 2018",
+        "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/dinka",
+        "tier": "referenced",
+        "notes": "Notice consultée sur encyclopedia.com : le mot « Dinka » a été inventé par des étrangers et l'on n'en connaît pas l'origine ; les Dinka se disent Muonjang ou Jieng."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred: the English sidecar for this language record has not been produced yet."
+    }
   }
 }

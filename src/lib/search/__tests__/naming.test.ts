@@ -426,4 +426,50 @@ describe("the naming projection", () => {
     expect(projections[3].presentation.forms[0]).not.toHaveProperty("origin");
     expect(projections[4].presentation.forms[0].attestations).toEqual(["MLI"]);
   });
+
+  // @req REQ-178
+  it("reads a patronyme's origin from all four claim collections", () => {
+    const claim = (text: string) => [{ claim: text, claimStatus: "claimed" }];
+    const projection = readNaming(
+      "patronyme",
+      {},
+      {
+        nameMain: "Camara",
+        origin: {
+          oralTraditions: claim("Oral."),
+          writtenChronicles: claim("Écrit."),
+          historicalSyntheses: claim("Synthèse."),
+          linguisticReconstructions: claim("Reconstruction."),
+        },
+      }
+    );
+
+    expect(projection.origin).toBe("Oral. Écrit. Synthèse. Reconstruction.");
+  });
+
+  // @req REQ-178
+  it("carries a name record's short line onto its form", () => {
+    const projection = readNaming(
+      "people",
+      { appellations: { exonyms: ["Peul"] } },
+      {},
+      [
+        {
+          id: "n1",
+          entityType: "people",
+          entityId: "PPL_FULA",
+          form: "Peul",
+          kind: "exonym",
+          shortLine: "La forme française.",
+          problematic: false,
+          usedToday: false,
+          evidence: [],
+        },
+      ]
+    );
+
+    expect(projection.presentation.forms[0].shortLine).toBe(
+      "La forme française."
+    );
+  });
 });

@@ -43,25 +43,20 @@ describe("bcp47LanguageTag", () => {
 
 describe("locale formatters (REQ-140)", () => {
   // @req REQ-140
-  it("maps each locale to its regional tag", () => {
-    expect(localeTag("en")).toBe("en-GB");
+  it("maps the locale to its regional tag", () => {
     expect(localeTag("fr")).toBe("fr-FR");
   });
 
   // @req REQ-140
-  it("formats numbers in the reader's locale", () => {
+  it("formats numbers the French way", () => {
     expect(formatNumber("fr", 1234567)).toBe("1 234 567");
-    expect(formatNumber("en", 1234567)).toBe("1,234,567");
     const oneDecimal = { minimumFractionDigits: 1, maximumFractionDigits: 1 };
     expect(formatNumber("fr", 2.5, oneDecimal)).toBe("2,5");
-    expect(formatNumber("en", 2.5, oneDecimal)).toBe("2.5");
   });
 
   // @req REQ-140
-  it("formats long dates in the reader's locale", () => {
-    const date = new Date(2025, 8, 21);
-    expect(formatDate("fr", date)).toBe("21 septembre 2025");
-    expect(formatDate("en", date)).toBe("21 September 2025");
+  it("formats long dates the French way", () => {
+    expect(formatDate("fr", new Date(2025, 8, 21))).toBe("21 septembre 2025");
   });
 
   // @req REQ-140
@@ -74,21 +69,17 @@ describe("locale formatters (REQ-140)", () => {
       timeZone: "UTC",
     } as const;
     expect(formatDate("fr", date, options)).toBe("10 avril 2026");
-    expect(formatDate("en", date, options)).toBe("10 April 2026");
   });
 
   // @req REQ-140
-  it("names countries in the reader's locale", () => {
+  it("names countries in French", () => {
     expect(displayCountryName("fr", "ZA")).toBe("Afrique du Sud");
-    expect(displayCountryName("en", "ZA")).toBe("South Africa");
     expect(displayCountryName("fr", "SD")).toBe("Soudan");
-    expect(displayCountryName("en", "SD")).toBe("Sudan");
-    expect(displayCountryName("en", "BF")).toBe("Burkina Faso");
   });
 
   // @req REQ-140
   it("answers nothing for an invalid region code", () => {
-    expect(displayCountryName("en", "not a code")).toBeUndefined();
+    expect(displayCountryName("fr", "not a code")).toBeUndefined();
     expect(displayCountryName("fr", "")).toBeUndefined();
   });
 });

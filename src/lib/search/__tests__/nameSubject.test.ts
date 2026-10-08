@@ -266,3 +266,53 @@ describe("the subject of a name search", () => {
     });
   });
 });
+
+describe("two countries carrying one name", () => {
+  const country = (id: string, name: string): SearchResult => ({
+    type: "country",
+    id,
+    name,
+  });
+
+  // « congo » is filed twice: as « Congo » and inside « République
+  // démocratique du Congo ». Both States carry the name, and the page tells
+  // them together.
+  // @req REQ-178
+  it("includes a country that holds the searched name as a whole word", () => {
+    const subjects = selectNameSubject(
+      [
+        country("COG", "Congo"),
+        country("COD", "République démocratique du Congo"),
+      ],
+      "congo"
+    );
+    expect(subjects.map((entity) => entity.id)).toEqual(["COG", "COD"]);
+  });
+
+  // @req REQ-178
+  it("does not take a longer word, or another kind, for the same name", () => {
+    expect(
+      selectNameSubject(
+        [country("CGO", "Congo"), country("X", "Congolaise")],
+        "congo"
+      ).map((entity) => entity.id)
+    ).toEqual(["CGO"]);
+    expect(
+      selectNameSubject(
+        [people("PPL_KONGO", "Kongo"), country("COD", "Ancien du Kongo")],
+        "kongo"
+      ).map((entity) => entity.id)
+    ).toEqual(["PPL_KONGO"]);
+  });
+
+  // No exact country, no subject: a country is never found by a word alone.
+  // @req REQ-178
+  it("needs an exact country match to start from", () => {
+    expect(
+      selectNameSubject(
+        [country("COD", "République démocratique du Congo")],
+        "congo"
+      )
+    ).toEqual([]);
+  });
+});

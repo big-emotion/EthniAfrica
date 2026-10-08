@@ -20,9 +20,8 @@ import {
   proverbEntities,
   type ProverbFilters,
 } from "@/lib/proverbs/proverbs";
-import { localizeProverb } from "@/lib/proverbs/proverbs.en";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
 type ProverbSearchParams = Record<string, string | string[] | undefined>;
@@ -70,12 +69,7 @@ export async function generateMetadata({
   };
   return {
     ...copy,
-    ...surfaceHead(
-      language,
-      "proverbs",
-      (locale) => getLocalizedRoute(locale, "proverbs"),
-      copy
-    ),
+    ...pageHead(getLocalizedRoute("fr", "proverbs"), copy),
   };
 }
 
@@ -112,7 +106,7 @@ export default async function ProverbsPage({
   const query = (await searchParams) ?? {};
   const copy = proverbsCopy[language];
 
-  const bank = PROVERBS.map((proverb) => localizeProverb(proverb, language));
+  const bank = PROVERBS;
   const entities = proverbEntities(bank, language);
 
   /**

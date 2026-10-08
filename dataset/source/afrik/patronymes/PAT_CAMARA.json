@@ -26,18 +26,14 @@
       "attestations": [
         {
           "countryId": "MLI",
-          "sourceRefs": ["hga-iv-niane", "jansen-1995-lansine-diabate"]
+          "sourceRefs": ["bogacheva-2017-jamu"]
         },
         {
           "countryId": "GIN",
-          "sourceRefs": ["hga-iv-person", "arcin-1907-guinee"]
+          "sourceRefs": ["arcin-1907-guinee"]
         },
         {
           "countryId": "LBR",
-          "sourceRefs": ["hga-iv-person"]
-        },
-        {
-          "countryId": "SLE",
           "sourceRefs": ["hga-iv-person"]
         }
       ]
@@ -126,12 +122,12 @@
         "sourceRefs": ["bogacheva-2017-jamu"]
       },
       {
-        "claim": "Des clans maninka partis du haut Niger auraient gagné la mer : une partie d'entre eux, conduite par Kamala le Jeune, Fangoloma et Kiatamba, aurait atteint la côte vers le lac Pisu, dans l'actuel Liberia. L'installation est datée d'avant les années 1460, peut-être du siècle précédent, et d'autres historiens la placent plusieurs siècles plus tôt.",
-        "claimStatus": "contested",
+        "claim": "Les clans maninka qui ont atteint la mer vers le lac Pisu (Robertsport) et y ont organisé le peuple vai auraient été dirigés, selon la tradition, par Kamala le Jeune, Fangoloma et Kiatamba ; la même tradition confirmerait que les clans conduits par les Kamara étaient apparentés à ceux du Konyan. Les chefs sont nommés Kamala, non Kamara. Le reste du voyage, sa date et son déroulement relèvent de la synthèse historique de cette fiche.",
+        "claimStatus": "claimed",
         "collection": "mediated",
-        "collector": "Yves Person, qui rapporte la tradition des Vai",
-        "context": "Synthèses historiques publiées par l'UNESCO en 1985 et 1990",
-        "sourceRefs": ["hga-iv-person", "hga-iii-andah"]
+        "collector": "Yves Person, qui rapporte la tradition sans en nommer les porteurs",
+        "context": "Synthèse historique publiée par l'UNESCO en 1985",
+        "sourceRefs": ["hga-iv-person"]
       }
     ],
     "writtenChronicles": [
@@ -143,7 +139,7 @@
     ],
     "historicalSyntheses": [
       {
-        "claim": "Des synthèses historiques font conduire par le clan des Camara un mouvement de clans mandingues venus du haut Niger vers la côte, à l'origine des Kono et des Vai de la Sierra Leone et du Liberia, et établissent des Malinké du clan Camara au Liberia et dans l'ouest de la Côte d'Ivoire au XVIe siècle, les Diomandé étant dits frères des Camara. La date de ce mouvement est disputée : avant les années 1460 pour un auteur, entre 1500 et 1550 pour un autre, plusieurs siècles plus tôt pour un troisième, qui doute aussi qu'un seul clan ait conduit une seule migration.",
+        "claim": "Des synthèses historiques font conduire par le clan des Camara un mouvement de clans mandingues venus du haut Niger vers la côte, à l'origine des Kono et des Vai de la Sierra Leone et du Liberia, et établissent des Malinké du clan Camara au Liberia et dans l'ouest de la Côte d'Ivoire au XVIe siècle, les Diomandé étant dits frères des Camara. La date du mouvement des Kono et des Vai est disputée : avant les années 1460, et peut-être dès le siècle précédent, pour un auteur, qui s'appuie notamment sur la proximité des langues kono et vai avec le maninka ; entre 1500 et 1550 pour un autre ; possiblement plusieurs siècles plus tôt pour un troisième, qui juge peu convaincante l'image d'une incursion rapide menée par un seul chef. Pour ce mouvement, le premier écrit Kamara et le deuxième Camara.",
         "claimStatus": "contested",
         "sourceRefs": ["hga-iv-person", "hga-v-wondji", "hga-iii-andah"]
       }
@@ -170,7 +166,7 @@
         "sourceRefs": ["arcin-1907-guinee"]
       },
       {
-        "claim": "Un historien cité dans une synthèse de l'UNESCO propose d'étudier à part le rôle des Kamara dans le peuplement de la côte de la Sierra Leone et du Liberia, et, plus largement, de mesurer jusqu'où des groupes non mandingues portent des noms mandingues. C'est une question ouverte.",
+        "claim": "Un historien cité dans une synthèse de l'UNESCO met à part le « facteur kamara » dans l'origine des Vai, comme méritant des recherches plus approfondies, et juge utile de savoir jusqu'où des groupes non mandingues portent des noms mandingues. C'est une question ouverte.",
         "claimStatus": "claimed",
         "sourceRefs": ["hga-iii-andah"]
       }
@@ -206,12 +202,12 @@
     {
       "countryId": "MLI",
       "status": "attested",
-      "sourceRefs": ["hga-iv-niane", "jansen-1995-lansine-diabate"]
+      "sourceRefs": ["bogacheva-2017-jamu"]
     },
     {
       "countryId": "GIN",
       "status": "attested",
-      "sourceRefs": ["hga-iv-person", "bogacheva-2017-jamu"]
+      "sourceRefs": ["arcin-1907-guinee"]
     },
     {
       "countryId": "LBR",
@@ -220,7 +216,7 @@
     },
     {
       "countryId": "SLE",
-      "status": "attested",
+      "status": "supposed",
       "sourceRefs": ["hga-v-wondji", "hga-iv-person"]
     },
     {
@@ -282,6 +278,10 @@
     }
   ],
   "homonyms": [],
+  "searchAnswer": {
+    "lead": "Un nom de clan mandingue, attesté notamment au Mali, en Guinée, au Liberia et en Côte d'Ivoire.",
+    "followUp": "Que disent les sources de la présence du nom Camara sur la côte, au Liberia et en Sierra Leone ?"
+  },
   "sources": [
     {
       "sourceKey": "corpus-ppl-vai-organisation",
@@ -345,7 +345,7 @@
       "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
       "tier": "official",
       "source_kind": "intergovernmental",
-      "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre de D. T. Niane. Pages imprimées : les Kamara tenant Sibi et Tabon et conquérant la rive droite du Niger (p. 153), appelés avec les Keita, Konaté et Traoré par Mamadi Kani (p. 154), Tabon Wana et son cousin Kamajan Kamara de Sibi (p. 155), Niani en pays kamara et le premier Niani fondé par les Kamara de Sibi, d'après une communication de Y. Cissé au colloque de la Fondation SCOA de 1975 (p. 160, note 47). Le chapitre ne donne aucun sens au nom et ne cite pas les Kamara parmi les clans de l'assemblée de Kurukanfuga."
+      "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre de D. T. Niane. Pages imprimées : les Kamara tenant Sibi et Tabon et conquérant la rive droite du Niger (p. 153), appelés avec les Keita, Konaté et Traoré par Mamadi Kani (p. 154), Tabon Wana et son cousin Kamajan Kamara de Sibi (p. 155), Niani en pays kamara et le premier Niani fondé par les Kamara de Sibi, d'après une communication de Y. Cissé au colloque de la Fondation SCOA de 1975 (p. 160, note 47). Le chapitre ne donne aucun sens au nom et ne cite pas les Kamara parmi les clans de l'assemblée de Kurukanfuga. Il ne nomme aucun pays : Sibi y est situé « entre Siguiri et Kangaba » (p. 155) et le premier Niani « entre Bamako et Kangaba » (p. 160, note 47), et il n'est donc pas cité ici comme attestation du nom dans un pays."
     },
     {
       "sourceKey": "hga-iv-person",
@@ -353,7 +353,7 @@
       "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
       "tier": "official",
       "source_kind": "intergovernmental",
-      "notes": "UNESCO, 1985 ; chapitre d'Yves Person. Pages imprimées : les Kamara du Konyan à l'origine de l'invasion qui atteint la côte du Liberia et de la Sierra Leone en 1540-1550, avancé comme presque certain (p. 341) ; le Konyan sous l'hégémonie des clans kamara et dyomande, dont l'ancêtre légendaire est Feren-Kaman (p. 345) ; des clans maninka dirigés par les Kamara gagnant la mer depuis le haut Niger, et apparentés, « comme le confirme la tradition », aux clans du Konyan, établis avant les années 1460 et peut-être dès le siècle précédent ; les Vai conduits, « selon la tradition », par Kamala le Jeune, Fangoloma et Kiatamba (p. 346)."
+      "notes": "UNESCO, 1985 ; chapitre d'Yves Person. Pages imprimées : les Kamara du Konyan à l'origine de l'invasion qui atteint la côte du Liberia et de la Sierra Leone en 1540-1550, avancé comme presque certain (p. 341) ; le Konyan sous l'hégémonie des clans kamara et dyomande, dont l'ancêtre légendaire est Feren-Kaman (p. 345) ; des clans maninka dirigés par les Kamara gagnant la mer depuis le haut Niger, et apparentés, « comme le confirme la tradition », aux clans du Konyan, établis avant les années 1460 et peut-être dès le siècle précédent, cette date étant donnée par l'auteur comme sa propre synthèse ; les Vai conduits, « selon la tradition », par Kamala le Jeune, Fangoloma et Kiatamba (p. 346). Seuls deux éléments sont donnés comme tradition : les noms des chefs, qui sont écrits Kamala et non Kamara, et la parenté avec les clans du Konyan ; le reste du récit, dont la date, est la synthèse de l'auteur. Le chapitre ne place pas le Konyan en Guinée (p. 345 : « Konyan et Mau (à Touba, en République de Côte d'Ivoire) ») et ne cite donc pas les Kamara dans ce pays. Pour le mouvement des Kono et des Vai, il écrit Kamara là où le chapitre de Wondji (Histoire générale de l'Afrique, V) écrit Camara. Il situe la côte vers le lac Pisu, à la frontière du Liberia et de la Sierra Leone ; il ne dit pas que le nom est porté en Sierra Leone, qui reste supposée ici."
     },
     {
       "sourceKey": "hga-v-wondji",
@@ -361,7 +361,7 @@
       "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
       "tier": "official",
       "source_kind": "intergovernmental",
-      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de C. Wondji. Pages imprimées : les Kono-Vai venus du haut Niger au tournant des XVe et XVIe siècles sous la direction du clan des Camara, par Bopolou puis les rivières Mano et Moa, entre 1500 et 1550 d'après Holsoe et ses coauteurs (p. 419) ; les Malinké du clan Camara établis au XVIe siècle au Liberia et dans l'ouest de la Côte d'Ivoire, et les Diomandé dits frères des Camara (p. 421). Le même chapitre place au XVIIe siècle un mouvement des Malinké du Konyan sans nommer les Camara (p. 423)."
+      "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de C. Wondji. Pages imprimées : les Kono-Vai venus du haut Niger au tournant des XVe et XVIe siècles sous la direction du clan des Camara, par Bopolou puis les rivières Mano et Moa, entre 1500 et 1550 d'après Holsoe et ses coauteurs (p. 419) ; les Malinké du clan Camara établis au XVIe siècle au Liberia et dans l'ouest de la Côte d'Ivoire, et les Diomandé dits frères des Camara (p. 421). Le même chapitre place au XVIIe siècle un mouvement des Malinké du Konyan sans nommer les Camara (p. 423). Il écrit Camara là où le chapitre de Person (Histoire générale de l'Afrique, IV) écrit Kamara."
     },
     {
       "sourceKey": "hga-iii-andah",
@@ -369,7 +369,7 @@
       "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
       "tier": "official",
       "source_kind": "intergovernmental",
-      "notes": "UNESCO, dir. M. El Fasi et I. Hrbek, 1990 ; chapitre de B. W. Andah. Pages imprimées : une arrivée des Vai en Sierra Leone possible plusieurs siècles avant la date avancée par Person, et le modèle d'une incursion rapide conduite par un seul chef jugé peu convaincant (p. 590) ; d'après A. Jones, le rôle des Kamara mérite des recherches à part, et il faudrait mesurer l'usage de noms mandingues par des groupes non mandingues (p. 591)."
+      "notes": "UNESCO, dir. M. El Fasi et I. Hrbek, 1990 ; chapitre de B. W. Andah. Pages imprimées, relues : une arrivée des Vai en Sierra Leone possible plusieurs siècles avant la date de 1455 avancée par Person, et le modèle d'une incursion rapide conduite par un seul chef jugé peu convaincant (p. 590) ; d'après A. Jones, le « facteur kamara » mérite des recherches plus approfondies, et il faudrait mesurer l'usage de noms mandingues par des groupes non mandingues (p. 591)."
     },
     {
       "sourceKey": "niane-1960",
@@ -377,7 +377,7 @@
       "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri) ; c'est une mise par écrit d'une tradition orale. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre : le griot dit savoir pourquoi tel s'appelle Kamara sans le dire (p. 9) ; Tabon habitée par les Kamara forgerons (p. 62) ; Kamandjan roi des Kamara dit Dalikimbon et Tabon Wana roi des forgerons Kamara dit Sinikimbon (p. 101) ; les Kamara de Kita alliés de Soundiata (p. 129) ; l'alliance des Kamara de Sibi et des Keita du Manding (p. 140) ; les Kamara restés maîtres de la terre (p. 142) ; Kangaba fondation des Kamara de Sibi et des Traoré selon la tradition locale (p. 143, note)."
+      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri) ; c'est une mise par écrit d'une tradition orale. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre : le griot dit savoir pourquoi tel s'appelle Kamara sans le dire (p. 9) ; Tabon, dans le pays qu'on appelle aujourd'hui Fouta Djallon, habitée par les Kamara forgerons et les Djallonkés (p. 62) ; Kamandjan roi des Kamara dit Dalikimbon et Tabon Wana roi des forgerons Kamara dit Sinikimbon (p. 101) ; les Kamara de Kita alliés de Soundiata (p. 129) ; l'alliance des Kamara de Sibi et des Keita du Manding (p. 140) ; les Kamara restés maîtres de la terre (p. 142) ; Kangaba fondation des Kamara de Sibi et des Traoré selon la tradition locale (p. 143, note). Les pages 9 à 143 citées ici ont été relues sur cet exemplaire."
     },
     {
       "sourceKey": "jansen-1995-lansine-diabate",
@@ -385,7 +385,7 @@
       "url": "https://hdl.handle.net/1887/2761",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Jansen, Jan, Duintjer, Esger, et Tamboura, Boubacar, CNWS, Leyde, 1995 ; récit du chef de la parole Lansine Diabaté de Kela, en maninka avec traduction. La devise des Kamara de Sibi, Tabon et Nyengenba (p. 118, vers 344) ; le rocher de Sibi fendu, porte de Kamajan (p. 183, vers 606-607) ; note des éditeurs sur les Traoré et les Kamara fondateurs légendaires de Kangaba (p. 208, note 199)."
+      "notes": "Jansen, Jan, Duintjer, Esger, et Tamboura, Boubacar, CNWS, Leyde, 1995 ; récit du chef de la parole Lansine Diabaté de Kela, en maninka avec traduction. La devise des Kamara de Sibi, Tabon et Nyengenba (p. 118, vers 344) ; le rocher de Sibi fendu, porte de Kamajan (p. 183, vers 606-607) ; note des éditeurs sur les Traoré et les Kamara fondateurs légendaires de Kangaba (p. 208, note 199). Ces pages n'ont pas pu être rouvertes lors de la dernière vérification (texte non accessible) : elles sont reprises telles quelles et restent à relire ; cette source n'est donc retenue pour aucun pays."
     },
     {
       "sourceKey": "bogacheva-2017-jamu",
@@ -393,7 +393,7 @@
       "url": "https://hdl.handle.net/11701/10975",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Bogacheva, E. A., mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Notice Kàmara, p. 73-76 : l'hypothèse d'une première apparition du nom chez les ancêtres des Soninké, d'après N'Diaye 1970 (p. 74) ; le récit de descendance rapporté par Molinie en 1959 (p. 74) ; l'origine racontée dans l'ouvrage en n'ko de Souleymane Kanté sur les noms et les jamu du Manden, et les six branches du nom (p. 75) ; le récit du griot Babou Condé de Fadama, recueilli en 2017 (p. 76). Le texte original en n'ko de Kanté n'a pas été lu ; seule sa traduction russe l'a été. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet."
+      "notes": "Bogacheva, E. A., mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Notice Kàmara, p. 73-76, relue sur l'exemplaire déposé par l'université : les écritures françaises Camara et Kamara, données pour le même nom de clan (p. 73) ; Sibi dans le cercle de Bamako, d'après Molinie, sans que la page nomme de pays (p. 74) ; l'hypothèse d'une première apparition du nom chez les ancêtres des Soninké, d'après N'Diaye 1970 (p. 74) ; le récit de descendance rapporté par Molinie en 1959 (p. 74) ; l'origine racontée dans l'ouvrage en n'ko de Souleymane Kanté sur les noms et les jamu du Manden, et les six branches du nom (p. 75) ; le récit du griot Babou Condé de Fadama, recueilli en 2017 (p. 76). L'auteur situe ces entretiens à Fadama, dans le cercle de Kouroussa, lors d'une expédition en Guinée (p. 11) : cela place le récit en Guinée, non le clan. Le texte original en n'ko de Kanté n'a pas été lu ; seule sa traduction russe l'a été. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet."
     },
     {
       "sourceKey": "delafosse-1899-vai",
@@ -409,7 +409,7 @@
       "url": "https://archive.org/details/laguinefrana00arci",
       "tier": "referenced",
       "source_kind": "archive",
-      "notes": "Arcin, André, Challamel, 1907, annexe II, p. 635-636. Administrateur colonial. La question sur les « hommes rouges du Nord » (p. 635) précède une comparaison du mandé avec le berbère (p. 636) ; elle est citée comme un exemple d'explication venue de l'extérieur, non comme une étymologie."
+      "notes": "Arcin, André, Challamel, 1907, annexe II, p. 635-636. Administrateur colonial. La question sur les « hommes rouges du Nord » (p. 635) précède une comparaison du mandé avec le berbère (p. 636) ; elle est citée comme un exemple d'explication venue de l'extérieur, non comme une étymologie. Pour la présence du nom en Guinée : « les Kamara de Beyla (Konianka) et des hautes régions du Libéria (Manianka) », que l'auteur dit sembler proches parents des Diomandé (p. 310, relevé sur le texte numérisé d'archive.org d'après les en-têtes de page)."
     },
     {
       "sourceKey": "konate-2015-jamu-griot",
@@ -423,7 +423,7 @@
   "gaps": [
     {
       "fieldPath": "homonyms",
-      "reason": "Camara est la transcription en français de Kamara ; le dictionnaire des noms de clan mandingues y ajoute Kámala et donne comme équivalents, tenus pour le même clan sous d'autres noms, Koiwogi chez les Loma, ainsi que Dansogo, Fofana et Magasa. Ce sont des graphies et des correspondances, pas des lignées distinctes. Nous n'avons trouvé aucune source qui distingue du nom mandingue le nom portugais ou espagnol Câmara, porté ailleurs pour d'autres raisons."
+      "reason": "Un mémoire de 2017 sur les noms de clan du Manden donne Camara et Kamara comme deux écritures françaises du même nom de clan, Kàmara ; c'est la seule source lue qui les relie, et elle ne dit pas laquelle des deux est la première. Le dictionnaire des noms de clan mandingues, comme le mémoire, ajoute Kámala et donne comme équivalents, tenus pour le même clan sous d'autres noms, Koiwogi chez les Loma, ainsi que Dansogo (écrit Dansoko dans le mémoire), Fofana et Magasa ; le mémoire y ajoute Mara et Sekonho chez les Sénoufo. Les sources lues les présentent comme des écritures et des équivalences, non comme des lignées distinctes. Nous n'avons trouvé aucune source qui distingue du nom mandingue le nom portugais ou espagnol Câmara, porté ailleurs pour d'autres raisons."
     }
   ]
 }

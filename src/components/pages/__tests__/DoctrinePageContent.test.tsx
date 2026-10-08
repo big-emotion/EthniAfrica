@@ -52,19 +52,4 @@ describe("DoctrinePageContent — the refused sentences", () => {
       ).toBeTruthy();
     }
   });
-
-  // @req REQ-145
-  it("carries the refused sentences in English too", () => {
-    render(<DoctrinePageContent language="en" />);
-
-    expect(
-      screen.getByRole("heading", {
-        level: 2,
-        name: "Four sentences we do not write",
-      })
-    ).toBeInTheDocument();
-    const refusals = screen.getByTestId("doctrine-refusals");
-    expect(within(refusals).getAllByRole("listitem")).toHaveLength(4);
-    expect(refusals).toHaveTextContent(/The borders are arbitrary/);
-  });
 });

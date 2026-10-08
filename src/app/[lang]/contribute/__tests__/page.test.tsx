@@ -1,9 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
-import ContributePage, { generateMetadata } from "../page";
+import ContributePage from "../page";
 import { legalPages } from "@/lib/legal-pages";
-import { legalPagesEn } from "@/lib/legal-pages.en";
 import { getNavModules } from "@/lib/hubs/moduleRegistry";
 import { modulesNamedIn } from "@/test/axisModuleVocabulary";
 
@@ -11,10 +10,8 @@ vi.mock("next/navigation", () => ({
   useParams: () => ({ lang: "fr" }),
 }));
 
-const { locale } = vi.hoisted(() => ({ locale: { current: "fr" } }));
-
 vi.mock("@/hooks/use-language", () => ({
-  useLanguage: () => ({ language: locale.current, setLanguage: vi.fn() }),
+  useLanguage: () => ({ language: "fr" }),
 }));
 
 vi.mock("@/components/layout/PageLayout", () => ({
@@ -38,9 +35,6 @@ const corpusClassCount = getNavModules("atlas").filter(
 ).length;
 
 describe("the contribute page", () => {
-  beforeEach(() => {
-    locale.current = "fr";
-  });
   // The page described the corpus, and the API over it, as three entities —
   // peoples, language families, countries — while the atlas had six. The rule
   // asserted here is not a list, which is the thing that went stale; it is
@@ -73,33 +67,6 @@ describe("the contribute page", () => {
     expect(
       screen.getByRole("link", { name: /documentation api/i })
     ).toHaveAttribute("href", "/docs/api");
-  });
-
-  // @req REQ-141
-  it("renders the contribution choices and routes in English", () => {
-    locale.current = "en";
-    render(<ContributePage />);
-
-    expect(
-      screen.getByRole("heading", { level: 1, name: "Contribute" })
-    ).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /About/ })).toHaveAttribute(
-      "href",
-      "/en/about"
-    );
-    expect(screen.getByText("Download the data")).toBeInTheDocument();
-    expect(
-      screen.queryByText("Télécharger les données")
-    ).not.toBeInTheDocument();
-  });
-
-  // @req REQ-141
-  it("localises the English metadata", async () => {
-    const metadata = await generateMetadata({
-      params: Promise.resolve({ lang: "en" }),
-    });
-
-    expect(metadata.title).toBe("Contribute");
   });
 
   // The five Google Forms drafted in
@@ -138,7 +105,7 @@ describe("the contribute page", () => {
       .map((link) => new URL(link.getAttribute("href") ?? "").host);
     expect(new Set(hosts)).toEqual(new Set(["docs.google.com"]));
 
-    for (const policy of [legalPages.dataPolicy, legalPagesEn.dataPolicy]) {
+    for (const policy of [legalPages.dataPolicy]) {
       const text = policy.sections
         .flatMap((section) => section.paragraphs)
         .join(" ");

@@ -17,10 +17,7 @@ import {
   getLocalizedRoute,
   type CompareEntityKey,
 } from "@/lib/routing";
-import {
-  OG_LOCALE_BY_LANGUAGE,
-  pageAlternates,
-} from "@/lib/seo/localeAlternates";
+import { OG_LOCALE, pageHead } from "@/lib/seo/pageHead";
 import type { CompareEntityPayload } from "@/types/compare";
 import type { Language } from "@/types/shared";
 import type { CompareEntityTypeParam } from "@/api/v2/schemas/compare";
@@ -106,16 +103,11 @@ export async function generateMetadata({
   const labels = data.columns.map((column) => column.label);
   const title = copy.metadataTitle(labels.join(" · "));
   const description = copy.metadataDescription(labels.join(", "));
-  // The route folder is French under either locale; the address a crawler
-  // is told about is composed in the locale's own vocabulary. Combinatorial
-  // and indexed nowhere, so the head carries a canonical and no cluster.
-  const alternates = pageAlternates(
-    language,
-    (locale) =>
-      `${getLocalizedRoute(locale, "compare")}/${
-        COMPARE_ENTITY_SEGMENTS[locale][COMPARE_KEY_BY_SLUG[entityType]]
-      }/${ids.join("/")}`,
-    []
+  // Combinatorial and indexed nowhere, so the head carries a canonical alone.
+  const { alternates } = pageHead(
+    `${getLocalizedRoute(language, "compare")}/${
+      COMPARE_ENTITY_SEGMENTS[language][COMPARE_KEY_BY_SLUG[entityType]]
+    }/${ids.join("/")}`
   );
   const imageSearchParams = new URLSearchParams();
   ids.forEach((id) => imageSearchParams.append("id", id));
@@ -130,7 +122,7 @@ export async function generateMetadata({
       title,
       description,
       url: String(alternates.canonical),
-      locale: OG_LOCALE_BY_LANGUAGE[lang as Language],
+      locale: OG_LOCALE,
       type: "website",
       images: [
         {

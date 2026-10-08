@@ -22,6 +22,7 @@
       "scale": "<EGIDS (Ethnologue) | UNESCO>",
       "asOf": 0
     },
+    "originDebated": false,
     "sources": [
       {
         "title": "<Titre de la source, tel que cité>",
@@ -29,6 +30,24 @@
         "tier": "official | referenced | unverified",
         "notes": "<Faits de provenance publiés tels quels au lecteur : éditeur, édition, institution, ce qui a été lu ou recoupé — jamais la raison pour laquelle le tier a été attribué>"
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "<Facultatif. Une phrase écrite pour la page de réponse, 220 caractères au plus : ce qu'est l'entrée, dite simplement. Absente, la page utilise un modèle de phrase.>",
+      "followUp": "<Facultatif. Une question de rebond, 120 caractères au plus, qui se termine par « ? ». Absente, la page utilise un modèle de question.>"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "<ISO 3166-1 alpha-3, ex: COD>",
+          "speakers": 0,
+          "source": {
+            "title": "<Titre de la source, tel que cité>",
+            "url": "<URL résolvable, ou null>",
+            "tier": "official | referenced | unverified",
+            "notes": "<Faits de provenance publiés tels quels au lecteur>"
+          }
+        }
+      ]
+    }
   }
 }

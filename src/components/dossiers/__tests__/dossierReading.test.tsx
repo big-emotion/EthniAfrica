@@ -23,17 +23,13 @@ describe("shared narrative reader", () => {
     expect(container.querySelector(".afh-dossier-readings")).toBeNull();
     expect(screen.getByText(dossier.chapters[0].title)).toBeVisible();
   });
-  // @req REQ-140 @req REQ-114
-  it("links citations to declared sources and localises the reader labels", () => {
+
+  // @req REQ-114
+  it("links citations to declared sources and numbers its chapters", () => {
     const { container } = render(
-      <DossierPage
-        dossier={getDossierBySlug("royaume-kongo", "en")!}
-        language="en"
-        translationState="machine"
-      />
+      <DossierPage dossier={getDossierBySlug("royaume-kongo")!} language="fr" />
     );
-    expect(screen.getByText("Machine translation from French")).toBeVisible();
-    expect(screen.getByText("Chapter 01")).toBeVisible();
+    expect(screen.getByText("Chapitre 01")).toBeVisible();
     const citations = container.querySelectorAll("a[data-dossier-citation]");
     expect(citations.length).toBeGreaterThan(5);
     citations.forEach((link) =>

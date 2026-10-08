@@ -22,7 +22,6 @@ export const ARTICLES_ROOT = join(process.cwd(), "content/articles");
 const RESERVED_SLUGS = [
   "anecdotes",
   "proverbes",
-  "galerie",
   "themes",
   "nommer",
   "migrations",

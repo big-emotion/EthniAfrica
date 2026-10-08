@@ -15,10 +15,6 @@
         6
       ],
       [
-        "Images",
-        5
-      ],
-      [
         "Jeux",
         true
       ],
@@ -199,14 +195,6 @@
       ],
       "count": "Une question tirée de cette page"
     },
-    "image": {
-      "img": "mansa",
-      "caption": "Mansa Musa, le pèlerinage de 1324",
-      "tier": "referenced",
-      "source": "Northwestern University Library",
-      "licence": "CC BY-SA 4.0 pour la part humaine : sélection, composition, légende",
-      "alt": "Illustration générée : Mansa Musa en pèlerinage, 1324"
-    },
     "fiches": [
       [
         "Famille",
@@ -246,7 +234,6 @@
       "tiles",
       "plates",
       "quiz",
-      "images",
       "fiches"
     ]
   },
@@ -264,10 +251,6 @@
       [
         "Shorts",
         4
-      ],
-      [
-        "Images",
-        3
       ],
       [
         "Jeux",
@@ -477,10 +460,6 @@
         4
       ],
       [
-        "Images",
-        1
-      ],
-      [
         "Jeux",
         true
       ],
@@ -677,10 +656,6 @@
         2
       ],
       [
-        "Images",
-        1
-      ],
-      [
         "Jeux",
         true
       ],
@@ -847,10 +822,6 @@
         2
       ],
       [
-        "Images",
-        1
-      ],
-      [
         "Jeux",
         true
       ],
@@ -985,10 +956,6 @@
       [
         "Shorts",
         5
-      ],
-      [
-        "Images",
-        1
       ],
       [
         "Jeux",
@@ -1217,10 +1184,6 @@
         4
       ],
       [
-        "Images",
-        1
-      ],
-      [
         "Jeux",
         true
       ],
@@ -1397,10 +1360,6 @@
       [
         "Shorts",
         4
-      ],
-      [
-        "Images",
-        2
       ],
       [
         "Jeux",
@@ -1609,10 +1568,6 @@
       [
         "Shorts",
         3
-      ],
-      [
-        "Images",
-        1
       ],
       [
         "Fiches",

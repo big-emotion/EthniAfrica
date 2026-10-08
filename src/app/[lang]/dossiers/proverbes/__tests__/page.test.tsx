@@ -9,7 +9,6 @@ import {
   proverbEntities,
   type Proverb,
 } from "@/lib/proverbs/proverbs";
-import { PROVERBS_EN } from "@/lib/proverbs/proverbs.en";
 import { getLocalizedRoute } from "@/lib/routing";
 
 vi.mock("@/components/layout/PageLayout", () => ({
@@ -26,10 +25,10 @@ const ROUTE = getLocalizedRoute("fr", "proverbs");
  * tree: `getByRole` over a page of cards timed out under the full suite while
  * asserting nothing a selector does not.
  */
-async function renderPage(query: Record<string, string> = {}, lang = "fr") {
+async function renderPage(query: Record<string, string> = {}) {
   render(
     await ProverbsPage({
-      params: Promise.resolve({ lang }),
+      params: Promise.resolve({ lang: "fr" }),
       searchParams: Promise.resolve(query),
     })
   );
@@ -212,15 +211,5 @@ describe("The proverbs dossier — filters (REQ-113)", () => {
         JSON.stringify(query)
       ).toBeNull();
     }
-  });
-
-  // @req REQ-145
-  it("prints the English bank on /en", async () => {
-    await renderPage({}, "en");
-
-    const first = PROVERBS[0];
-    expect(
-      document.querySelector(`article[id="${first.id}"] h2`)
-    ).toHaveTextContent(PROVERBS_EN[first.id].text);
   });
 });

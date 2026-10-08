@@ -17,6 +17,7 @@ import {
   type SearchCompanionSubject,
   type SearchCompanionsData,
 } from "@/api/v2/schemas/searchCompanions";
+import type { WordAnswer } from "@/lib/search/answer";
 import type { Language } from "@/types/shared";
 
 import {
@@ -31,6 +32,7 @@ import {
   mapSearchEnvelope,
   mapSearchLeads,
   mapSearchNearNames,
+  mapWordAnswers,
   type SearchLensCounts,
   type SearchQueryOptions,
 } from "@/lib/search/searchEnvelope";
@@ -158,6 +160,8 @@ export interface SearchWithLeads {
   nearNames: SearchNearName[];
   /** Reviewed answers for the searched term; empty when none was reviewed. */
   nameAnswers?: NameAnswer[];
+  /** The answer to a published word (REQ-184); it needs no fiche, so it may arrive with no result. */
+  wordAnswers?: WordAnswer[];
   /** Reviewed terms a near spelling may have meant, offered to the reader as choices. */
   nameSuggestions?: string[];
   /** Per-type match counts (REQ-124) for the named-lens chips. */
@@ -222,6 +226,7 @@ export async function searchWithLeads(
       leads,
       nearNames,
       nameAnswers: mapNameAnswers(envelope),
+      wordAnswers: mapWordAnswers(envelope),
       nameSuggestions: mapNameSuggestions(envelope),
       counts,
       presentation,

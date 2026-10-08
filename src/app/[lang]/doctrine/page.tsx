@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
+import type { Language } from "@/types/shared";
 
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
-import type { Language } from "@/types/shared";
+import { pageHead } from "@/lib/seo/pageHead";
 import DoctrinePageClient from "@/app/[lang]/doctrine/DoctrinePageClient";
 
 /**
@@ -21,15 +21,10 @@ export async function generateMetadata({
   params,
 }: DoctrinePageProps): Promise<Metadata> {
   const { lang } = await params;
-  const title = lang === "en" ? "How we work" : "Comment nous travaillons";
+  const title = "Comment nous travaillons";
   return {
     title,
-    ...surfaceHead(
-      lang as Language,
-      "doctrine",
-      (locale) => getLocalizedRoute(locale, "doctrine"),
-      { title }
-    ),
+    ...pageHead(getLocalizedRoute(lang as Language, "doctrine"), { title }),
   };
 }
 

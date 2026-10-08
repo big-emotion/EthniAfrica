@@ -16,7 +16,7 @@ export interface DiscoverySubjectReference {
 
 export interface DiscoveryPublication {
   id: string;
-  kind: "anecdote" | "proverb" | "carousel" | "image" | "video";
+  kind: "anecdote" | "proverb" | "carousel" | "video";
   status: "draft" | "published";
   slug: Record<Language, string>;
   title: Record<Language, string>;
@@ -50,10 +50,7 @@ export interface DiscoveryPublication {
    */
   image?: {
     src: string;
-    /**
-     * Required for every kind but `image`: a generated picture has no
-     * original elsewhere, so the publication's own permalink is its file page.
-     */
+    /** Required for an anecdote and a proverb; a series is its own file page. */
     filePage?: string;
     credit: string;
     shortCredit?: Record<Language, string>;
@@ -89,26 +86,6 @@ export interface DiscoveryPublication {
       licenceUrl?: string;
     };
   };
-  // The fields below belong to `image` publications only (DEC-053).
-  collection?: "autonymes" | "traversees" | "figures-et-moments";
-  /**
-   * How the picture was made. This is provenance, never a source: it cannot
-   * vouch for the subject, which rests on `source` alone.
-   */
-  generation?: {
-    tool: string;
-    model: string;
-    jobId: string;
-    generatedOn: string;
-    sourceKind: "ai_generated";
-  };
-  caption?: Record<Language, string>;
-  /**
-   * An editorial declaration that the caption states a place, date or pairing
-   * no linked fiche states. Such a caption must then cite `captionSource`.
-   */
-  captionExceedsCorpus?: boolean;
-  captionSource?: { title: string; url: string };
   /** Runtime metadata for a short; its title and poster alt are derived. */
   video?: {
     name: Record<Language, string>;
@@ -130,12 +107,6 @@ export interface DiscoveryPublication {
     };
     transcript?: Partial<Record<Language, string>>;
   };
-  /**
-   * Pre-rendered derived files under `public/`, by format. A format is
-   * declared only once its file ships; `scripts/__tests__/generatedImageDownloads`
-   * holds each declared file to its dimensions and its IPTC disclosure.
-   */
-  downloads?: Partial<Record<DownloadFormat, string>>;
 }
 
 /**
@@ -149,8 +120,6 @@ export interface DiscoveryVideoCredit {
   licenceUrl: string;
 }
 
-export type DownloadFormat = "9:16" | "4:5" | "1:1";
-
 function hasText(value: string | undefined): boolean {
   return Boolean(value?.trim());
 }
@@ -163,31 +132,8 @@ function hasClearedPicture(entry: DiscoveryPublication): boolean {
   );
 }
 
-// @req REQ-164
-function isDeclaredFiction(entry: DiscoveryPublication): boolean {
-  const { generation, caption, captionSource } = entry;
-  const entityCount = entry.detail?.entities?.length ?? 0;
-  return (
-    entityCount >= 1 &&
-    entityCount <= 2 &&
-    hasClearedPicture(entry) &&
-    hasText(entry.image?.alt?.fr) &&
-    hasText(entry.image?.alt?.en) &&
-    hasText(caption?.fr) &&
-    hasText(caption?.en) &&
-    hasText(generation?.tool) &&
-    hasText(generation?.model) &&
-    hasText(generation?.jobId) &&
-    hasText(generation?.generatedOn) &&
-    generation?.sourceKind === "ai_generated" &&
-    (!entry.captionExceedsCorpus ||
-      (hasText(captionSource?.title) && hasText(captionSource?.url)))
-  );
-}
-
-// Two frames is the floor rather than one: a track with nowhere to go is an
-// `image` publication filed under the wrong kind, and it promises the reader a
-// series the publication does not have.
+// Two frames is the floor rather than one: a track with nowhere to go
+// promises the reader a series the publication does not have.
 function hasBrowsableSeries(entry: DiscoveryPublication): boolean {
   const frames = entry.carousel?.frames ?? [];
   return (
@@ -197,8 +143,7 @@ function hasBrowsableSeries(entry: DiscoveryPublication): boolean {
         hasText(frame.src) &&
         frame.width > 0 &&
         frame.height > 0 &&
-        hasText(frame.alt?.fr) &&
-        hasText(frame.alt?.en)
+        hasText(frame.alt?.fr)
     )
   );
 }
@@ -211,22 +156,18 @@ function hasPublishableVisual(entry: DiscoveryPublication): boolean {
       (hasClearedPicture(entry) && hasText(entry.image.filePage))
     );
   }
-  if (entry.kind === "image") return isDeclaredFiction(entry);
   if (entry.kind === "video") {
     const { video } = entry;
     return Boolean(
       video &&
       (entry.detail?.entities.length || entry.detail?.word?.queries.length) &&
       hasText(video.name.fr) &&
-      hasText(video.name.en) &&
       entry.title.fr === formatProductionNameQuestion(video.name.fr, "fr") &&
-      entry.title.en === formatProductionNameQuestion(video.name.en, "en") &&
       !Number.isNaN(Date.parse(video.publishedAt)) &&
       Number.isFinite(video.durationSeconds) &&
       video.durationSeconds > 0 &&
       hasText(video.poster.src) &&
       video.poster.alt.fr === formatProductionPosterAlt(video.name.fr, "fr") &&
-      video.poster.alt.en === formatProductionPosterAlt(video.name.en, "en") &&
       video.poster.width > 0 &&
       video.poster.height > 0 &&
       isHttpsUrl(video.watchUrl)
@@ -249,23 +190,20 @@ function isHttpsUrl(value: string): boolean {
 }
 
 // @req REQ-157
-// @req REQ-164
 export function eligiblePublications(
   records: readonly DiscoveryPublication[]
 ): DiscoveryPublication[] {
   const seenIds = new Set<string>();
   const seenPaths = new Set<string>();
   return records.filter((entry) => {
-    const paths = [entry.slug.fr, entry.slug.en];
+    const paths = [entry.slug.fr];
     const ready =
       entry.status === "published" &&
       hasText(entry.id) &&
       paths.every(hasText) &&
       paths.every((path) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(path)) &&
       hasText(entry.title.fr) &&
-      hasText(entry.title.en) &&
       hasText(entry.description.fr) &&
-      hasText(entry.description.en) &&
       hasText(entry.source?.title) &&
       hasText(entry.source?.url) &&
       entry.source?.tier !== "unverified" &&
@@ -342,26 +280,4 @@ export function orderedDeck(
     if (index > 0) [ids[0], ids[index]] = [ids[index], ids[0]];
   }
   return ids;
-}
-
-const DOWNLOAD_FORMATS = [
-  { format: "9:16", width: 1080, height: 1920 },
-  { format: "4:5", width: 1080, height: 1350 },
-  { format: "1:1", width: 1080, height: 1080 },
-] as const;
-
-// Only a generated image ships derived files carrying its disclosure; a
-// photographed anecdote's picture belongs to its author and is linked instead.
-// @req REQ-166
-export function downloadChoices(entry: DiscoveryPublication): Array<{
-  format: DownloadFormat;
-  src: string;
-  width: number;
-  height: number;
-}> {
-  if (entry.kind !== "image") return [];
-  return DOWNLOAD_FORMATS.flatMap(({ format, width, height }) => {
-    const src = entry.downloads?.[format];
-    return hasText(src) ? [{ format, src, width, height }] : [];
-  });
 }

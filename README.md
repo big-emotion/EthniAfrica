@@ -33,9 +33,7 @@ whole schema on your machine and `--target=local` loads the corpus into it — s
 [Local bootstrap](docs/runbooks/afrik-data-sync.md#local-bootstrap). That is the contributor-safe
 path; recette and production are self-hosted stacks you cannot, and should not, write to.
 
-The app fails closed to French-only publication. `SITE_LOCALE_MODE` can explicitly publish both
-languages with either French or English as the default; a remembered `ethni-locale` choice is
-honoured only when that locale is published. Without Supabase credentials the pages render but
+The site publishes in French only. Without Supabase credentials the pages render but
 data-backed routes fail — the modules validate their configuration at import time and throw when
 it is missing.
 
@@ -62,8 +60,7 @@ project's service-role key:
 npx tsx scripts/seedAdminAllowlist.ts moderation@example.org "Editorial moderation lead"
 ```
 
-`scripts/seedAdmin.ts` writes the legacy `user_roles` table, which opens no door in the console —
-see [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md#first-moderator).
+The legacy `user_roles` table opens no door in the console — see [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md#first-moderator).
 
 ---
 
@@ -89,13 +86,12 @@ dataset/source/afrik/
 ```
 
 Each fiche's shape is fixed by one of the strict models in `public/modele-*.json` — the
-directory is the list: dossier, peuple, pays, linguistique, langue, media, relation, source,
-migration, recit-oral, frontiere-coloniale, and the six name models (nom, nom-jamu, nom-nisba,
-nom-patronyme, nom-patronymique, nom-totemique). Never skip, rename or invent a section.
+directory is the list: dossier, peuple, pays, linguistique, langue, lieu, relation, source,
+migration, and the two name models (nom, nom-patronyme). Never skip, rename or invent a
+section.
 
-Every `sources` entry carries a tier, and `scripts/validateAfrikData.ts` enforces it. Editorial
-work on fiches has its own guidance in `.claude/skills/afrik-curator/`; the rules the validator
-and `scripts/ci/checkEditorialRules.ts` apply are documented in
+Every `sources` entry carries a tier, and `scripts/validateAfrikData.ts` enforces it. The rules
+the validator applies are documented in
 [`CLAUDE.md`](CLAUDE.md#source-tier-policy-enforced-by-validateafrikdatats).
 
 ---
@@ -129,13 +125,10 @@ unknown, revoked or expired is refused with 401 rather than served anonymously. 
 says it came from (`Origin`, `Referer`) authorises nothing, so the frontend embeds no key and is
 metered like any other reader. Bulk exports: `/api/download?format=csv` or `format=excel`.
 
-The codebase supports **English and French**, while `SITE_LOCALE_MODE` controls what a deployment
-publishes. Its safe default, `fr-only`, keeps English URLs and controls silent;
-`bilingual-fr-default` publishes both without moving `/` away from French, and
-`bilingual-en-default` completes the planned English-default launch. English URLs carry English
-slugs that `src/proxy.ts` rewrites onto the French route folders, and `es` / `pt` stay
-closed. Content added in either language must carry its counterpart in the other, or an explicit
-deferral — see `CLAUDE.md`, section "Bilingual content".
+The site is **French only**; no English launch is planned. Every page lives under `/fr/...`.
+The English addresses published during the bilingual period answer with a permanent redirect to
+their French page (`src/lib/legacyEnglishPaths.ts`, applied by `src/proxy.ts`), and any other
+two-letter segment (`/es`, `/pt`) is redirected to `/fr`.
 
 ---
 
@@ -152,19 +145,17 @@ npm run e2e       # Playwright — deliberately outside `make check`
 Beyond `make check`, CI runs gates specific to this repository. Run the ones your change
 touches before pushing:
 
-| Command                                     | What it protects                                                                                                      |
-| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `npm run lint:req`                          | `@req` traceability — every test needs a `// @req REQ-NNN`, validated against `docs/confluence-spec/req-catalog.json` |
-| `npm run check:env-example`                 | `.env.example` matches the variables the code reads                                                                   |
-| `npm run check:action-pins`                 | every third-party GitHub Action is SHA-pinned                                                                         |
-| `npm run check:jira-template`               | the ticket template still exists and matches                                                                          |
-| `npm run test:charter-contracts`            | the design-charter contract suite                                                                                     |
-| `npm run check:translation-parity`          | French and English content carry each other, or an explicit deferral                                                  |
-| `npm run check:local-paths`                 | no workstation path in this public repository                                                                         |
-| `npm run check:dead`                        | unreferenced files, exports and dependencies, against ratcheted ceilings                                              |
-| `npm run check:migration-files`             | no duplicate or missing number in `supabase/migrations/`                                                              |
-| `npx tsx scripts/validateAfrikData.ts`      | AFRIK corpus integrity                                                                                                |
-| `npx tsx scripts/ci/checkEditorialRules.ts` | decolonial editorial rules on fiches                                                                                  |
+| Command                                | What it protects                                                                                                      |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `npm run lint:req`                     | `@req` traceability — every test needs a `// @req REQ-NNN`, validated against `docs/confluence-spec/req-catalog.json` |
+| `npm run check:env-example`            | `.env.example` matches the variables the code reads                                                                   |
+| `npm run check:action-pins`            | every third-party GitHub Action is SHA-pinned                                                                         |
+| `npm run check:jira-template`          | the ticket template still exists and matches                                                                          |
+| `npm run test:charter-contracts`       | the design-charter contract suite                                                                                     |
+| `npm run check:local-paths`            | no workstation path in this public repository                                                                         |
+| `npm run check:dead`                   | unreferenced files, exports and dependencies, against ratcheted ceilings                                              |
+| `npm run check:migration-files`        | no duplicate or missing number in `supabase/migrations/`                                                              |
+| `npx tsx scripts/validateAfrikData.ts` | AFRIK corpus integrity                                                                                                |
 
 Two things about that list are easy to get wrong:
 
@@ -194,8 +185,7 @@ Requirements, decisions and architecture live on **Confluence**, not in this rep
 
 Data corrections are welcome as pull requests against the fiches in `dataset/source/afrik/`, or
 through the published site: `/fr/contribute` to propose a change and `/fr/report-error` to flag
-one. Their `/en` counterparts become reachable when a bilingual `SITE_LOCALE_MODE` is explicitly
-enabled.
+one.
 
 ---
 

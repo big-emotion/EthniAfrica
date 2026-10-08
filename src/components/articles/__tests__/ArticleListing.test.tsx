@@ -102,7 +102,7 @@ describe("ArticleListing", () => {
   });
 
   // @req REQ-114
-  it("keeps the three retained collections one tap away", () => {
+  it("keeps the retained collections one tap away", () => {
     render(
       <ArticleListing language="fr" summaries={[]} page={1} failed={false} />
     );
@@ -110,7 +110,6 @@ describe("ArticleListing", () => {
     for (const [name, page] of [
       ["Anecdotes", "anecdotes"],
       ["Proverbes", "proverbs"],
-      ["Galerie", "gallery"],
     ] as const) {
       expect(screen.getByRole("link", { name })).toHaveAttribute(
         "href",

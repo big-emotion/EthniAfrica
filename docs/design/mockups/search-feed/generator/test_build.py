@@ -27,7 +27,6 @@ FEED_BLOCKS = [
     "atlas-holds",
     "plates",
     "quiz",
-    "images",
     "problem",
     "near-name",
     "fiches",

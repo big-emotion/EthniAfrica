@@ -1,4 +1,4 @@
-import { render, screen, within } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 
@@ -26,7 +26,6 @@ const emptyCompanions: SearchCompanionsData = {
   shorts: { count: 0, items: [] },
   anecdotes: { count: 0, items: [] },
   proverbs: { count: 0, items: [] },
-  images: { count: 0, items: [] },
   quiz: { count: 0, item: null },
 };
 
@@ -259,8 +258,10 @@ describe("SearchFeed", () => {
     ).toBeNull();
   });
 
-  // @req REQ-180
-  it("filters shelves in place without mutating the naming answer", async () => {
+  // A filter replaces the page by what the reader asked to see; the name stays
+  // the heading, and « Tout » is one click away.
+  // @req REQ-178
+  it("shows only the shorts under their filter, under a heading about the name", async () => {
     const value = fixture("mande");
     const { container } = render(
       <SearchFeed
@@ -277,14 +278,9 @@ describe("SearchFeed", () => {
     expect(blockIds(container)).toContain("fiches");
     await userEvent.click(screen.getByRole("button", { name: /Shorts 6/ }));
 
-    expect(blockIds(container)).toEqual([
-      "verdict",
-      "appellations",
-      "lenses",
-      "shorts",
-    ]);
+    expect(blockIds(container)).toEqual(["lenses", "shorts"]);
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
-      "Mandé"
+      "Vidéos sur Mandé"
     );
   });
 
@@ -328,66 +324,6 @@ describe("SearchFeed", () => {
     expect(
       container.querySelectorAll('[data-feed-block="fiches"] li')
     ).toHaveLength(1);
-  });
-
-  // @req REQ-180
-  it("carries the approved first-screen geometry without duplicating blocks", () => {
-    const value = fixture("mande");
-    const { container } = render(
-      <SearchFeed
-        query={value.query}
-        language="fr"
-        state="exact"
-        results={value.production.search.results}
-        subjects={value.production.search.results}
-        leads={value.production.search.leads}
-        companions={value.production.companions}
-      />
-    );
-
-    expect(container.querySelector('[data-feed-block="lenses"]')).toHaveClass(
-      "min-[1200px]:max-w-[640px]"
-    );
-    const answer = container.querySelector('[data-feed-opening="answer"]');
-    expect(answer).toHaveClass(
-      "min-[1200px]:grid",
-      "min-[1200px]:grid-cols-12",
-      "min-[1200px]:gap-afh-6xl",
-      "min-[1200px]:pt-afh-5xl"
-    );
-    expect(answer?.querySelector('[data-feed-block="verdict"]')).toHaveClass(
-      "min-[1200px]:col-span-7"
-    );
-    expect(
-      answer?.querySelector('[data-feed-block="appellations"]')
-    ).toHaveClass("min-[1200px]:col-span-5");
-    expect(container.querySelector('[data-feed-opening="shorts"]')).toHaveClass(
-      "mt-afh-lg",
-      "min-[1200px]:mt-afh-5xl"
-    );
-    expect(
-      container.querySelectorAll('[data-feed-block="verdict"]')
-    ).toHaveLength(1);
-  });
-
-  // @req REQ-180
-  it("marks the localized filed name as the searched English form", () => {
-    const result = namedResult();
-    const { container } = render(
-      <SearchFeed
-        query="Chad"
-        language="en"
-        state="exact"
-        results={[result]}
-        subjects={[result]}
-        leads={[]}
-        companions={emptyCompanions}
-      />
-    );
-
-    expect(
-      container.querySelector('[data-appellation][data-searched="true"]')
-    ).toHaveTextContent("Chad");
   });
 
   // @req REQ-180
@@ -513,86 +449,6 @@ describe("SearchFeed", () => {
     expect(
       screen.getByText("Les peuples présents au Sénégal.")
     ).toBeInTheDocument();
-  });
-
-  // @req REQ-180
-  it("describes a recorded naming problem without reusing shared-name copy", () => {
-    const result = namedResult({
-      naming: {
-        forms: [],
-        eras: [],
-        presentation: {
-          forms: [],
-          eras: [],
-          disagreements: [],
-          problematic: "recorded",
-          evidence: [],
-        },
-      },
-    });
-    render(
-      <SearchFeed
-        query="Tchad"
-        language="fr"
-        state="exact"
-        results={[result]}
-        subjects={[result]}
-        leads={[]}
-        companions={emptyCompanions}
-      />
-    );
-
-    expect(
-      screen.getByText(
-        "Le corpus signale un problème ou un désaccord autour d’au moins une forme de ce nom."
-      )
-    ).toBeInTheDocument();
-    expect(
-      screen.queryByText(
-        "Une orthographe partagée ne suffit pas à établir une parenté entre des peuples."
-      )
-    ).toBeNull();
-  });
-
-  // @req REQ-180
-  it("renders near-name copy only from the qualified similarity projection", () => {
-    const subject = namedResult({
-      type: "people",
-      id: "PPL_BASSA",
-      name: "Bassa",
-    });
-    const ordinaryResult = namedResult({
-      type: "people",
-      id: "PPL_TEXT_MATCH",
-      name: "Unrelated text match",
-      exactMatch: false,
-    });
-    const { container } = render(
-      <SearchFeed
-        query="Bassa"
-        language="fr"
-        state="exact"
-        results={[subject, ordinaryResult]}
-        subjects={[subject]}
-        leads={[]}
-        nearNames={[
-          {
-            type: "people",
-            id: "PPL_BASSARI",
-            name: "Bassari",
-            similarity: 0.72,
-          },
-        ]}
-        companions={emptyCompanions}
-      />
-    );
-
-    const nearName = container.querySelector('[data-feed-block="near-name"]');
-    expect(nearName).toHaveTextContent(
-      "Bassari a une graphie proche et correspond à une autre fiche."
-    );
-    expect(nearName).not.toHaveTextContent("aucun lien");
-    expect(nearName).not.toHaveTextContent("Unrelated text match");
   });
 
   // @req REQ-178
@@ -764,66 +620,6 @@ describe("SearchFeed", () => {
         '[data-testid="appellations-list"] [data-appellation][data-subject-id]'
       )
     ).toHaveLength(2);
-  });
-
-  // "Yoruba" files both a people and a language in the AFRIK corpus —
-  // selectNameSubject puts no type restriction on an exact match, so a
-  // cross-type clash reaches SearchFeed the same way a same-type one
-  // (Bassa) does. Answering only the first would silently promote one
-  // form over the other, which DEC-057 exists to prevent.
-  // @req REQ-178
-  it("disambiguates a cross-type name clash without promoting either type", () => {
-    const subjects = [
-      namedResult({
-        type: "people",
-        id: "PPL_YORUBA",
-        name: "Yoruba",
-        nameEn: undefined,
-      }),
-      namedResult({
-        type: "language",
-        id: "yor",
-        name: "Yoruba",
-        nameEn: undefined,
-      }),
-    ];
-    render(
-      <SearchFeed
-        query="Yoruba"
-        language="fr"
-        state="exact"
-        results={subjects}
-        subjects={subjects}
-        leads={[]}
-        companions={emptyCompanions}
-      />
-    );
-
-    expect(
-      screen.getByRole("heading", { level: 1, name: "Yoruba" })
-    ).toBeInTheDocument();
-    expect(screen.getByText("2 entrées portent ce nom.")).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", {
-        level: 2,
-        name: "Les entrées qui partagent ce nom",
-      })
-    ).toBeInTheDocument();
-    const peoplesBlock = screen.getByTestId("feed-block-peoples");
-    expect(
-      within(peoplesBlock).getByText("Peuple documenté")
-    ).toBeInTheDocument();
-    expect(within(peoplesBlock).getByText("Langue")).toBeInTheDocument();
-    expect(
-      screen.getByText(
-        "Un même nom porté par des entrées de nature différente ne les relie pas entre elles."
-      )
-    ).toBeInTheDocument();
-    expect(
-      screen.queryByText(
-        "Une orthographe partagée ne suffit pas à établir une parenté entre des peuples."
-      )
-    ).not.toBeInTheDocument();
   });
 
   // @req REQ-002

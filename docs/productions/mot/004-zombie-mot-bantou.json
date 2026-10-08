@@ -12,7 +12,44 @@
   "sitePath": "/fr/about",
   "word": {
     "label": { "fr": "zombie", "en": "zombie" },
-    "queries": ["zombie", "zombi", "nzumbi"]
+    "queries": ["zombie", "zombi", "nzumbi", "zombies", "zonbi"]
+  },
+  "answer": {
+    "lead": {
+      "fr": "Une explication relie « zombie » à nzumbi, un mot kimbundu d'Afrique centrale qui désigne l'âme ou l'esprit d'une personne morte.",
+      "en": "One explanation links « zombie » to nzumbi, a Kimbundu word from Central Africa that names the soul or spirit of a dead person."
+    },
+    "origin": [
+      {
+        "text": {
+          "fr": "Le dictionnaire kimbundu-portugais de 1893 traduit nzumbi par « spectre, fantôme, âme, esprit ». Il cite un autre auteur : l'âme d'un mort qui vient persécuter les vivants se dit ndele, et nzumbi désigne la même chose, mais sans persécuter : elle vient en paix.",
+          "en": "The 1893 Kimbundu-Portuguese dictionary gives nzumbi as « spectre, ghost, soul, spirit ». It quotes another author: the soul of a dead person who comes to torment the living is called ndele, and nzumbi means the same thing, but without tormenting: it comes in peace."
+        },
+        "attribution": "written"
+      },
+      {
+        "text": {
+          "fr": "Une explication relie ce mot au zombie d'Haïti. En 1929, William Seabrook décrit les zombies d'Haïti dans The Magic Island.",
+          "en": "One explanation links this word to the zombie of Haiti. In 1929, William Seabrook describes the zombies of Haiti in The Magic Island."
+        },
+        "attribution": "written"
+      }
+    ],
+    "path": [
+      {
+        "form": "nzumbi",
+        "language": "kimbundu",
+        "period": "dictionnaire de 1893"
+      },
+      {
+        "form": "zombie",
+        "language": "haïtien, décrit en 1929"
+      }
+    ],
+    "followUp": {
+      "fr": "Pourquoi un esprit venu en paix est-il devenu un mort-vivant ?",
+      "en": "Why did a spirit that came in peace become a living dead?"
+    }
   },
   "publications": [
     {

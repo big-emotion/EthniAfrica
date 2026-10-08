@@ -95,7 +95,7 @@ describe("Country Loader", () => {
       }
     });
 
-    // The convention (docs/editorial/translation-classes.md): the state's own
+    // The convention: the state's own
     // English usage, not the Natural Earth wording the atlas asset carries.
     // @req REQ-143
     it("should follow the state's own English usage where it differs from the cartographic asset", async () => {

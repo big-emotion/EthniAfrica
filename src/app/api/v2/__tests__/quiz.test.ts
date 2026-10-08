@@ -94,22 +94,16 @@ describe("GET /api/v2/quiz/scopes (route)", () => {
   });
 
   // @req REQ-145
-  it("selects the requested scopes bank and rejects unknown locales", async () => {
-    (getQuizScopesHandler as ReturnType<typeof vi.fn>).mockResolvedValue(
-      scopesEnvelope
-    );
+  it("rejects every locale but French, English included", async () => {
+    for (const lang of ["en", "de"]) {
+      const invalid = await scopesGET(
+        new NextRequest(`http://localhost/api/v2/quiz/scopes?lang=${lang}`)
+      );
 
-    const english = await scopesGET(
-      new NextRequest("http://localhost/api/v2/quiz/scopes?lang=en")
-    );
-    const invalid = await scopesGET(
-      new NextRequest("http://localhost/api/v2/quiz/scopes?lang=de")
-    );
-
-    expect(english.status).toBe(200);
-    expect(getQuizScopesHandler).toHaveBeenCalledWith("en");
-    expect(invalid.status).toBe(400);
-    expect((await invalid.json()).errors[0].field).toBe("lang");
+      expect(invalid.status, lang).toBe(400);
+      expect((await invalid.json()).errors[0].field, lang).toBe("lang");
+    }
+    expect(getQuizScopesHandler).not.toHaveBeenCalled();
   });
 
   // @req REQ-103
@@ -216,19 +210,19 @@ describe("GET /api/v2/quiz/session (route)", () => {
   });
 
   // @req REQ-145
-  it("passes the requested question-bank locale to the handler", async () => {
+  it("passes the French question-bank locale to the handler", async () => {
     (composeQuizSessionHandler as ReturnType<typeof vi.fn>).mockResolvedValue({
       ok: true,
       envelope: sessionEnvelope,
     });
 
     const res = await sessionGET(
-      new NextRequest("http://localhost/api/v2/quiz/session?lang=en")
+      new NextRequest("http://localhost/api/v2/quiz/session?lang=fr")
     );
 
     expect(res.status).toBe(200);
     expect(composeQuizSessionHandler).toHaveBeenCalledWith(
-      expect.objectContaining({ lang: "en" })
+      expect.objectContaining({ lang: "fr" })
     );
   });
 

@@ -67,42 +67,6 @@ const fragmentation: PeopleFragmentation = {
 describe("PeopleDetailViewV2", () => {
   afterEach(cleanup);
 
-  // @req REQ-145
-  it("renders the fiche's authored chrome in English", () => {
-    render(
-      <PeopleDetailViewV2
-        language="en"
-        people={ewe}
-        fragmentation={fragmentation}
-      />
-    );
-
-    expect(
-      screen.getByRole("heading", { name: "Where does the name come from?" })
-    ).toBeVisible();
-    expect(
-      screen.getByRole("heading", { name: "The other names" })
-    ).toBeVisible();
-    // REQ-155 merged the origins and the historical role into one chapter,
-    // "History". Both former chapter titles survived inside it as
-    // sub-headings, so the reader still met the old structure one level down;
-    // retiring them is the point of the merge, and this assertion moves to
-    // the chapter the merge produced.
-    expect(screen.getByRole("heading", { name: "History" })).toBeVisible();
-    expect(
-      screen.getByRole("heading", { name: "Culture and society" })
-    ).toBeVisible();
-    expect(
-      screen.getByRole("heading", { name: "Where this people lives" })
-    ).toBeVisible();
-    expect(screen.getAllByText("Their own name").length).toBeGreaterThan(0);
-    // The origins keep a station of their own on the merged spine, under a
-    // name that is no longer a retired chapter title.
-    expect(screen.getByText("Formation and origins")).toBeVisible();
-    expect(screen.getAllByText("Main language").length).toBeGreaterThan(0);
-    expect(screen.getByText(/Migrations depuis Notsé/)).toBeVisible();
-  });
-
   // Lighthouse scored the fiche 0.98 on accessibility for exactly one reason:
   // the parchment went from h1 straight to the h3 inside the naming block,
   // because a section's label was a <div>. It had been invisible while the

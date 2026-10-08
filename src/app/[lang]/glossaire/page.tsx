@@ -4,7 +4,7 @@ import { GlossaryPage } from "@/components/glossaire/GlossaryPage";
 import { GLOSSARY_ENTRIES } from "@/lib/glossaire/entries";
 import { glossaryPageCopy } from "@/lib/i18n/copy/glossaryPage";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
 interface PageProps {
@@ -25,12 +25,7 @@ export async function generateMetadata({
   };
   return {
     ...copy,
-    ...surfaceHead(
-      lang as Language,
-      "glossary",
-      (locale) => getLocalizedRoute(locale, "glossary"),
-      copy
-    ),
+    ...pageHead(getLocalizedRoute("fr", "glossary"), copy),
   };
 }
 

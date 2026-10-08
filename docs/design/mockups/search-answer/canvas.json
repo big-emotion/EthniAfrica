@@ -1,0 +1,92 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Bantou.dc.html": {
+      "h": 2150,
+      "title": "Réponse « bantou » — un mot à démêler",
+      "w": 430,
+      "x": 1020,
+      "y": 0
+    },
+    "Congo.dc.html": {
+      "h": 2250,
+      "title": "Réponse « congo » — deux pays",
+      "w": 430,
+      "x": 1530,
+      "y": 0
+    },
+    "Lingala.dc.html": {
+      "h": 1950,
+      "title": "Réponse « lingala » — une langue",
+      "w": 430,
+      "x": 2040,
+      "y": 0
+    },
+    "Camara.dc.html": {
+      "h": 2050,
+      "title": "Réponse « camara » — un nom de famille",
+      "w": 430,
+      "x": 2550,
+      "y": 0
+    },
+    "Pharaon.dc.html": {
+      "h": 1800,
+      "title": "Réponse « pharaon » — un mot venu d'une publication",
+      "w": 430,
+      "x": 3060,
+      "y": 0
+    },
+    "Main.dc.html": {
+      "h": 932,
+      "title": "Accueil — nouveau sous-titre",
+      "w": 430,
+      "x": 0,
+      "y": 0
+    },
+    "Peul.dc.html": {
+      "h": 2050,
+      "title": "Réponse « peul » — un peuple",
+      "w": 430,
+      "x": 510,
+      "y": 0
+    },
+    "Peul-Shorts.dc.html": {
+      "x": 510,
+      "y": 2290,
+      "w": 430,
+      "h": 1300,
+      "title": "« peul » — filtre Shorts actif"
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-06T10:30:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "titre": {
+      "kind": "title1",
+      "maxW": 3490,
+      "text": "Une recherche, trois questions : d'où vient le nom · ses noms · où",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Peul.dc.html",
+    "Bantou.dc.html",
+    "Congo.dc.html",
+    "Lingala.dc.html",
+    "Camara.dc.html",
+    "Pharaon.dc.html",
+    "Peul-Shorts.dc.html"
+  ],
+  "pages": [],
+  "title": "Page de réponse EthniAfrica — refonte"
+}

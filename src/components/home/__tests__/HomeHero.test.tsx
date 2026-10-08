@@ -63,8 +63,9 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
     expect(h1.querySelector("em")).toBeNull();
   });
 
-  // One sentence under the question, naming what can be typed and what is
-  // found — stories and sources — and never calling the project an atlas.
+  // One sentence under the question, naming what can be typed and the three
+  // things the answer gives — where the name comes from, what it is called
+  // elsewhere, where it lives today — and never calling the project an atlas.
   // @req REQ-044
   it("describes in one sentence what the field accepts and what it finds", () => {
     render(<HomeHero language="fr" />);
@@ -76,8 +77,9 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
       .textContent!.split(/(?<=\.)\s+/)
       .filter((part) => part.trim().length > 0);
     expect(sentences).toHaveLength(1);
-    expect(description).toHaveTextContent(/histoires/i);
-    expect(description).toHaveTextContent(/sources/i);
+    expect(description).toHaveTextContent(/d’où il vient/i);
+    expect(description).toHaveTextContent(/comment on l’appelle ailleurs/i);
+    expect(description).toHaveTextContent(/où il vit aujourd’hui/i);
     expect(description.textContent).not.toMatch(/\batlas\b/i);
   });
 
@@ -92,18 +94,6 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
     );
     expect(screen.getByRole("combobox")).toHaveAccessibleName(
       homeHeroCopy.fr.searchLabel
-    );
-  });
-
-  // @req REQ-145
-  it("speaks English on the English home", () => {
-    render(<HomeHero language="en" />);
-
-    expect(
-      screen.getByRole("heading", { level: 1, name: homeHeroCopy.en.question })
-    ).toBeInTheDocument();
-    expect(screen.getByRole("combobox")).toHaveAccessibleDescription(
-      homeHeroCopy.en.description
     );
   });
 

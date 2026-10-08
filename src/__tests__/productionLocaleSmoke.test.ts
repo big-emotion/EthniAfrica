@@ -9,23 +9,23 @@ const workflow = fs.readFileSync(
 );
 
 describe("production locale smoke gate", () => {
-  // A /fr-only health probe stayed green while the root silently became
-  // English. The release gate must inspect all three publication boundaries.
+  // A /fr-only health probe would stay green while the root or a retired
+  // English address answered something else. The release gate inspects all
+  // three, without following redirects.
   // @req REQ-140
-  it.each(["/", "/fr", "/en"])(
-    "probes %s without following redirects",
-    (path) => {
-      expect(workflow).toContain(`path: "${path}"`);
-      expect(workflow).toContain('redirect: "manual"');
-    }
-  );
+  it.each([
+    '{ path: "/", status: 307, location: "/fr" }',
+    '{ path: "/fr", status: 200 }',
+    '{ path: "/en", status: 308, location: "/fr" }',
+  ])("probes %s", (check) => {
+    expect(workflow).toContain(check);
+    expect(workflow).toContain('redirect: "manual"');
+  });
 
+  // There is no publication mode left to validate.
   // @req REQ-140
-  it("validates SITE_LOCALE_MODE before declaring the container healthy", () => {
-    expect(workflow).toContain("SITE_LOCALE_MODE");
-    expect(workflow).toContain("bilingual-fr-default");
-    expect(workflow).toContain("bilingual-en-default");
-    expect(workflow).toContain("fr-only");
+  it("no longer reads SITE_LOCALE_MODE", () => {
+    expect(workflow).not.toContain("SITE_LOCALE_MODE");
   });
 
   // The smoke script uses top-level await and must be parsed as an ES module.
@@ -34,14 +34,5 @@ describe("production locale smoke gate", () => {
     expect(workflow).toContain(
       "docker compose exec -T ethniafrica node --input-type=module"
     );
-  });
-
-  // A remembered English choice is ignored only while English is unpublished.
-  // @req REQ-140
-  it("expects the English cookie to work in either bilingual mode", () => {
-    expect(workflow).toContain(
-      'const rememberedEnglishPath = bilingual ? "/en" : "/fr";'
-    );
-    expect(workflow).toContain("location: rememberedEnglishPath");
   });
 });

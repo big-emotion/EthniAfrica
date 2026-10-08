@@ -75,48 +75,6 @@ export interface NameAnswerCopy {
 
 // @req REQ-178
 export const nameAnswerCopy: Record<Language, NameAnswerCopy> = {
-  en: {
-    eyebrow: "Where this name comes from",
-    answerFiche: (kind) => `Read the entry · ${kind}`,
-    showMoreNames: (count) =>
-      `Show ${count} more ${count === 1 ? "name" : "names"}`,
-    showFewerNames: "Show fewer",
-    disambiguation: "Which one are you looking for?",
-    appellations: "The names",
-    appellationsLead:
-      "The name each people gives itself first, then the others. None of them is “the right one”.",
-    origins: "Where they come from",
-    selfGiven: "What the peoples call themselves",
-    problem: "What these names raise",
-    usageToday: "Who says what today",
-    throughTime: "Through time",
-    atlasHolds: "What we know",
-    silences: "What we do not know yet",
-    silencesLead: "A declared silence, not an oversight.",
-    invitation: "Have we got it wrong?",
-    invitationBody:
-      "If you know a source on any of these names, it will be read.",
-    invitationAction: "Suggest a source",
-    further: "Going further",
-    yourSearch: "your search",
-    selfGivenMark: "the name they give themselves",
-    problematicMark: "contested form",
-    unknownName: "We do not know this name.",
-    unknownNameBody:
-      "That is not an answer: it is a confession. If this name is yours, or one of a people, a language or a place you know, tell us. That is how our project grows.",
-    wordName:
-      "We have no page for this name, but we have a video on where it comes from.",
-    wordNameBody:
-      "It is below. If you know a source on this word, tell us. That is how our project grows.",
-    noExactMatch: "No exact result for",
-    searchUnavailable:
-      "Search is temporarily unavailable. Try again in a moment.",
-    browsePeoples: "Browse the peoples",
-    browseFamilies: "The language families",
-    conviction: "Several names can coexist.",
-    convictionBody:
-      "We state their usages, their contexts and any disputes: the one a people gives itself, the ones its neighbours give it, the one an administration wrote down one day.",
-  },
   fr: {
     eyebrow: "D'où vient ce nom",
     answerFiche: (kind) => `Voir la fiche · ${kind}`,

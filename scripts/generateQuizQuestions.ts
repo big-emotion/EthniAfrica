@@ -57,11 +57,6 @@ import {
 } from "./lib/quizGeneration";
 import { parseLocaleArgument } from "./lib/quizLocale";
 import {
-  localizeCountryRows,
-  localizePeopleRows,
-  type QuizTranslationRow,
-} from "./lib/quizTranslationCorpus";
-import {
   chunkForUrl,
   fetchAllPages,
   type PageResult,
@@ -192,8 +187,7 @@ async function fetchProvenance(
 
 /** Loads every people fiche + its FR65-eligible assertion bindings, and the candidate pools templates draw distractors from. */
 async function buildFicheEntries(
-  supabase: SupabaseClient,
-  locale: TranslationLocale
+  supabase: SupabaseClient
 ): Promise<BuiltCorpus> {
   const authoredPeopleRows = await fetchAllPages<PeopleRow>((from, to) =>
     supabase
@@ -204,23 +198,17 @@ async function buildFicheEntries(
 
   const { data: familyRows, error: familyErr } = await supabase
     .from("afrik_language_families")
-    .select("id, name_fr, name_en");
+    .select("id, name_fr");
   if (familyErr) throw familyErr;
 
   const { data: countryRows, error: countryErr } = await supabase
     .from("afrik_countries")
-    .select("id, name_fr, name_en");
+    .select("id, name_fr");
   if (countryErr) throw countryErr;
 
   const familyNameById = new Map(
     (familyRows || [])
-      .map(
-        (row) =>
-          [
-            row.id as string,
-            (locale === "fr" ? row.name_fr : row.name_en) as string | null,
-          ] as const
-      )
+      .map((row) => [row.id as string, row.name_fr as string | null] as const)
       .filter(
         (entry): entry is readonly [string, string] =>
           typeof entry[1] === "string" && entry[1].trim().length > 0
@@ -228,37 +216,14 @@ async function buildFicheEntries(
   );
   const countryNameById = new Map(
     (countryRows || [])
-      .map(
-        (row) =>
-          [
-            row.id as string,
-            (locale === "fr" ? row.name_fr : row.name_en) as string | null,
-          ] as const
-      )
+      .map((row) => [row.id as string, row.name_fr as string | null] as const)
       .filter(
         (entry): entry is readonly [string, string] =>
           typeof entry[1] === "string" && entry[1].trim().length > 0
       )
   );
 
-  const translationRows =
-    locale === "fr"
-      ? []
-      : await fetchAllPages<QuizTranslationRow>((from, to) =>
-          supabase
-            .from("afrik_translations")
-            .select(
-              "entity_type, entity_id, lang, content, translation_kind, translated_at, reviewed_by, model, source_hash, field_hashes, review_required"
-            )
-            .eq("lang", locale)
-            .in("entity_type", [PEOPLE_ENTITY_TYPE, COUNTRY_ENTITY_TYPE])
-            .range(from, to)
-        );
-  const peopleRows = localizePeopleRows(
-    authoredPeopleRows,
-    translationRows,
-    locale
-  );
+  const peopleRows = authoredPeopleRows;
 
   const peopleProvenance = await fetchProvenance(
     supabase,
@@ -284,8 +249,8 @@ async function buildFicheEntries(
   }
 
   // The country corpus is read a second time, with its own columns. The first
-  // read above takes names only, to resolve a people's countries by locale;
-  // the templates need the fiche body as well.
+  // read above takes names only, to resolve a people's countries; the
+  // templates need the fiche body as well.
   const authoredCountryFicheRows = await fetchAllPages<CountryRow>((from, to) =>
     supabase
       .from("afrik_countries")
@@ -294,11 +259,7 @@ async function buildFicheEntries(
       )
       .range(from, to)
   );
-  const countryFicheRows = localizeCountryRows(
-    authoredCountryFicheRows,
-    translationRows,
-    locale
-  );
+  const countryFicheRows = authoredCountryFicheRows;
 
   const countryProvenance = await fetchProvenance(
     supabase,
@@ -494,10 +455,7 @@ async function runGenerationSweep(
   rebuildAll: boolean,
   locale: TranslationLocale
 ): Promise<void> {
-  const { entries, countryEntries, pools } = await buildFicheEntries(
-    supabase,
-    locale
-  );
+  const { entries, countryEntries, pools } = await buildFicheEntries(supabase);
   const activeQuestions = await fetchActiveQuestions(supabase, locale);
 
   const plan = computeSweepPlan({
@@ -548,7 +506,7 @@ async function runCheckMode(
   supabase: SupabaseClient,
   locale: TranslationLocale
 ): Promise<void> {
-  const { entries, countryEntries } = await buildFicheEntries(supabase, locale);
+  const { entries, countryEntries } = await buildFicheEntries(supabase);
   const activeQuestions = await fetchActiveQuestionsForAudit(supabase, locale);
   const knownGenerationRunIds = await fetchGenerationRunIds(supabase);
 

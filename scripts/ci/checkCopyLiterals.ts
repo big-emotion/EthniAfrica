@@ -35,7 +35,16 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import ts from "typescript";
 
-import { escapeWorkflowCommand } from "./checkEditorialRules";
+// GitHub parses `%`, newlines, `:` and `,` inside a workflow command, so a
+// literal carrying one would cut its own annotation short.
+function escapeWorkflowCommand(s: string): string {
+  return s
+    .replace(/%/g, "%25")
+    .replace(/\r/g, "%0D")
+    .replace(/\n/g, "%0A")
+    .replace(/:/g, "%3A")
+    .replace(/,/g, "%2C");
+}
 
 export interface CopyLiteralFinding {
   path: string;

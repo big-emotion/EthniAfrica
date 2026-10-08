@@ -6,7 +6,6 @@ export default function AboutLoading() {
   return (
     <PageLoadingScreen
       label={{
-        en: systemStatesCopy.en.loading.about,
         fr: systemStatesCopy.fr.loading.about,
       }}
     />

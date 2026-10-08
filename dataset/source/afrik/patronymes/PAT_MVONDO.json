@@ -21,7 +21,16 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "Le nom Mvondo est celui de Mvondo Menye, ancêtre fondateur du clan eton Mvog Mvondo. La tradition le rattache à Onandoa, qui aurait franchi la Sanaga sur le dos d'un serpent mythique, puis à Onandjana, l'un des fils d'Onandoa, qui aurait eu Mvondo Menye parmi ses enfants. Mvondo Menye serait né dans la région de Sa'a. Pour le second terme, Menye, une explication veut qu'il soit le nom de sa mère, les enfants prenant alors le nom de leur mère ; l'auteure le déduit.",
+        "claimStatus": "claimed",
+        "collection": "mediated",
+        "collector": "Théorine Emmanuelle Onana, par des entretiens de terrain dont les personnes sont citées en note, sans dire laquelle a donné quel élément",
+        "context": "Récit rapporté en français dans un mémoire d'histoire soutenu en 2015 à Yaoundé, à propos des Eton",
+        "sourceRefs": ["onana-2015-mvog-mvondo"]
+      }
+    ],
     "writtenChronicles": [],
     "linguisticReconstructions": []
   },
@@ -36,7 +45,7 @@
     {
       "countryId": "CMR",
       "status": "attested",
-      "sourceRefs": ["forebears-mvondo"]
+      "sourceRefs": ["forebears-mvondo", "onana-2015-mvog-mvondo"]
     }
   ],
   "alliances": [],
@@ -51,12 +60,20 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement. Elle atteste l’orthographe Mvondo et sa présence dans le Cameroun, mais la distribution ne démontre ni l’appartenance Ewondo, ni une origine unique, ni un mode de transmission."
+    },
+    {
+      "sourceKey": "onana-2015-mvog-mvondo",
+      "title": "Monographie historique des Mvog Mvondo des origines à 2014",
+      "url": "https://dicames.online/jspui/bitstream/20.500.12177/5229/1/ENS_20_0540.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Théorine Emmanuelle Onana, mémoire de DIPES II, département d'histoire, École normale supérieure de Yaoundé I, année 2014-2015, sous la direction d'Eugène Désiré Eloundou ; travail universitaire non publié, lu dans la version numérisée du dépôt de l'université. Pages imprimées : l'ancêtre Onandoa qui franchit la Sanaga sur le dos du serpent mythique, ses fils Onandjana et Onamney, puis Mvondo Menye donné comme « patriarche fondateur des Mvog Mvondo », et le passage où l'auteure déduit que la mère de Mvondo Menye s'appelait Menye (p. 23) ; Mvondo Menye né dans la région de Sa'a (p. 24). Le travail raconte l'histoire d'un clan eton et ne dit pas ce que le mot Mvondo signifie. Il traite les Eton et les Ewondo comme deux groupes distincts et ne donne aucun porteur ewondo du nom."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Mvondo », « Ewondo », « le Cameroun », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a livré aucune tradition attribuée, chronique ou étude linguistique établissant l’origine de Mvondo. Les homonymes d’autres langues et les déductions tirées de la seule distribution ont été écartés."
+      "reason": "Nous ne documentons pas encore le sens du mot Mvondo : le seul travail lu rattache le nom à un ancêtre fondateur et ne l'explique pas. Il concerne le clan eton Mvog Mvondo ; nous n'avons trouvé aucune source sur d'autres porteurs du nom, notamment chez les Ewondo."
     },
     {
       "fieldPath": "nameSystem",
@@ -82,5 +99,10 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mvondo », « Ewondo », « le Cameroun », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Mvondo permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
+    }
+  }
 }

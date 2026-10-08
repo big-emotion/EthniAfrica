@@ -95,6 +95,10 @@ const ALWAYS_DEFINED = new Set([
   // Documenting it in `.env.example` would invite somebody to set it by hand and
   // point the burn-in step at the wrong scripts.
   "HF_WORKFLOWS",
+  // Set by ci.yml on each test shard so vitest.config.ts skips the coverage
+  // thresholds a slice of the suite cannot meet. Nothing a deployment or a
+  // developer should set: a stray value locally would silence the gate.
+  "VITEST_SHARD",
 ]);
 
 /**

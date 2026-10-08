@@ -86,15 +86,12 @@ async function PeopleLiveContent({
     getFieldNotes("people", peopleDetail.id).catch(() => []),
     getPatronymesBorneByPeople(peopleDetail.id).catch(() => null),
     getPeopleNameIndex(),
-    getLanguageFamilyById(peopleDetail.languageFamilyId, language)
+    getLanguageFamilyById(peopleDetail.languageFamilyId)
       .then((family) =>
         family
           ? {
               id: family.id,
-              name:
-                language === "en"
-                  ? (family.nameEn ?? family.nameFr)
-                  : family.nameFr,
+              name: family.nameFr,
             }
           : null
       )
@@ -143,11 +140,7 @@ async function PeopleLiveContent({
                 peopleId: peopleDetail.id,
                 demography: peopleDetail.demography,
               })}
-              fallbackNote={peopleFallbackNote(
-                displayName,
-                peopleFieldOverlay,
-                language
-              )}
+              fallbackNote={peopleFallbackNote(displayName, peopleFieldOverlay)}
               targetPicker="list"
               wholeAreaLabel={copy.atlas.wholeArea}
               areaNoun={copy.atlas.areaNoun}
@@ -306,7 +299,7 @@ export default async function PeoplesSlugPage({
     );
   }
 
-  const people = await loadPeopleFiche(parsed.slug, lang as Language);
+  const people = await loadPeopleFiche(parsed.slug);
   if (!people) {
     notFound();
   }
@@ -331,7 +324,7 @@ export default async function PeoplesSlugPage({
       heroHead={
         <FicheHeroHead
           entityType="people"
-          translation={people.translation}
+
           mapToggleLanguage={lang as Language}
         >
           <PeopleFicheTitle language={lang as Language} people={peopleDetail} />

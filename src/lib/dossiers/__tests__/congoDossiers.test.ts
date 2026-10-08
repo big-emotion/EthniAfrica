@@ -1,5 +1,3 @@
-import { recordLeaves, valueAt } from "@/lib/i18n/modelLeafPaths";
-import { classOf } from "@/lib/i18n/translationClasses";
 import { getSiteTreePaths } from "@/lib/siteTree";
 import { describe, expect, it } from "vitest";
 import { readDossierCorpus, getDossierBySlug } from "../corpus";
@@ -34,32 +32,6 @@ describe("Congo history dossiers", () => {
       }
     }
   });
-  // @req REQ-140 @req REQ-143
-  it("reads English prose while preserving stable keys and original source titles", () => {
-    for (const slug of slugs) {
-      const fr = getDossierBySlug(slug);
-      const en = getDossierBySlug(slug, "en");
-      expect(en, slug).not.toBeNull();
-      expect(en!.title).not.toBe(fr!.title);
-      expect(en!.id).toBe(fr!.id);
-      for (const leaf of recordLeaves(fr)) {
-        if (
-          classOf("modele-dossier.json", leaf.modelPath) === "translatable" &&
-          typeof leaf.value === "string"
-        ) {
-          expect(valueAt(en, leaf.segments), leaf.modelPath).not.toBe(
-            leaf.value
-          );
-        }
-      }
-      expect(en!.sources.map((source) => source.title)).toEqual(
-        fr!.sources.map((source) => source.title)
-      );
-      expect(en!.thesis.figures.map((figure) => figure.value)).toEqual(
-        fr!.thesis.figures.map((figure) => figure.value)
-      );
-    }
-  });
   // @req REQ-114
   /**
    * The four histories are written, sourced and illustrated — the tests above
@@ -90,19 +62,17 @@ describe("Congo history dossiers", () => {
    * single address, and a green that asserts nothing is the one failure a
    * suite cannot report.
    */
-  // @req REQ-114 @req REQ-140
-  it("advertises no withdrawn dossier in either locale's sitemap", () => {
+  // @req REQ-114
+  it("advertises no withdrawn dossier in the sitemap", () => {
     const withdrawn = readDossierCorpus().dossiers.map(
       (dossier) => dossier.slug
     );
     expect(withdrawn.length).toBeGreaterThan(0);
 
-    for (const language of ["fr", "en"] as const) {
-      const paths = getSiteTreePaths(language);
-      const hub = getLocalizedRoute(language, "dossiersHub");
-      for (const slug of withdrawn) {
-        expect(paths, `${language}/${slug}`).not.toContain(`${hub}/${slug}`);
-      }
+    const paths = getSiteTreePaths("fr");
+    const hub = getLocalizedRoute("fr", "dossiersHub");
+    for (const slug of withdrawn) {
+      expect(paths, slug).not.toContain(`${hub}/${slug}`);
     }
   });
 });

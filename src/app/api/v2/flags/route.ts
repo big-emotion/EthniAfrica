@@ -137,7 +137,7 @@
  *             counter_source_url: https://example.org/census/2024
  *             counter_source_citation: National Statistics Office, 2024 census, table 12.
  *             proposed_rewrite: Update the population figure using the 2024 census.
- *             language: en
+ *             language: fr
  *             antibot:
  *               salt: 9f2c1ab4d7e60358
  *               nonce: "418209"

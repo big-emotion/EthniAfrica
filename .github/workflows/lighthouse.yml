@@ -39,8 +39,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
-      # Test-only publication: production remains fail-closed to fr-only.
-      SITE_LOCALE_MODE: bilingual-fr-default
       NEXT_TELEMETRY_DISABLED: 1
       NEXT_PUBLIC_FEATURE_QUIZ: "true"
       # A test deployment: without Upstash credentials a production one
@@ -148,8 +146,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      # Test-only publication: production remains fail-closed to fr-only.
-      SITE_LOCALE_MODE: bilingual-fr-default
       # A test deployment — see the gate job above.
       VERCEL_ENV: preview
 

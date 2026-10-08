@@ -42,8 +42,6 @@ import {
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { discoveriesCopy } from "@/lib/i18n/copy/discoveries";
 import { EmbedFacade } from "@/components/media/EmbedFacade";
-import { GeneratedImageBadge } from "@/components/discoveries/GeneratedImageBadge";
-import { GeneratedImageDetail } from "@/components/discoveries/GeneratedImageDetail";
 import {
   FacebookGlyph,
   InstagramGlyph,
@@ -56,7 +54,6 @@ import type { Language } from "@/types/shared";
 
 import { CarouselAudioControl } from "@/components/discoveries/CarouselAudioControl";
 import { DiscoveryDestinations } from "@/components/discoveries/DiscoveryDestinations";
-import { DiscoveryDownloads } from "./DiscoveryDownloads";
 import styles from "./DiscoveryReader.module.css";
 
 interface DiscoveryReaderProps {
@@ -111,19 +108,6 @@ function syncPublicationHead(language: Language, entry: DiscoveryPublication) {
   document.head
     .querySelector('link[rel="canonical"]')
     ?.setAttribute("href", url);
-  for (const alternate of document.head.querySelectorAll<HTMLLinkElement>(
-    'link[rel="alternate"][hreflang]'
-  )) {
-    const locale =
-      alternate.hreflang === "x-default"
-        ? new URL(alternate.href).pathname.startsWith("/en/")
-          ? "en"
-          : "fr"
-        : alternate.hreflang;
-    if (locale === "fr" || locale === "en") {
-      alternate.href = `https://${CANONICAL_DOMAIN}${discoveryPath(locale, entry)}`;
-    }
-  }
 }
 
 function ShareNetworkIcon({
@@ -546,17 +530,13 @@ export function DiscoveryReader({
                   </>
                 ) : null}
                 <p className={styles.kind}>
-                  {entry.kind === "image" ? (
-                    <GeneratedImageBadge entry={entry} language={language} />
-                  ) : entry.kind === "proverb" ? (
-                    words.proverb
-                  ) : entry.kind === "carousel" ? (
-                    words.carousel
-                  ) : entry.kind === "video" ? (
-                    words.video
-                  ) : (
-                    words.fact
-                  )}
+                  {entry.kind === "proverb"
+                    ? words.proverb
+                    : entry.kind === "carousel"
+                      ? words.carousel
+                      : entry.kind === "video"
+                        ? words.video
+                        : words.fact}
                 </p>
                 {entry.original ? (
                   <p className={styles.original} lang={entry.original.lang}>
@@ -568,16 +548,9 @@ export function DiscoveryReader({
                 ) : (
                   <h2>{entry.title[language]}</h2>
                 )}
-                {/* A generated image's caption is its opening line; every
-                    other publication opens on its description, held to two
-                    lines — the rest is one tap away in the details sheet. */}
-                {entry.caption ? (
-                  <p className={styles.caption}>{entry.caption[language]}</p>
-                ) : (
-                  <p className={styles.description}>
-                    {entry.description[language]}
-                  </p>
-                )}
+                <p className={styles.description}>
+                  {entry.description[language]}
+                </p>
                 <p className={styles.source}>
                   {entry.source?.tier === "official"
                     ? words.official
@@ -604,10 +577,7 @@ export function DiscoveryReader({
                     </a>
                   </p>
                 ) : null}
-                {/* A generated image is not a photo and has no original file
-                    to credit; its provenance lives in the detail sheet. */}
-                {!entry.image ||
-                entry.kind === "image" ? null : failedImageIds.has(entry.id) ? (
+                {!entry.image ? null : failedImageIds.has(entry.id) ? (
                   <p className={styles.credit} role="status">
                     {words.imageUnavailable}
                   </p>
@@ -733,13 +703,7 @@ export function DiscoveryReader({
                   ))}
                 </ul>
               </section>
-              {active.kind === "image" ? (
-                <GeneratedImageDetail
-                  entry={active}
-                  language={language}
-                  className={styles.detailSection}
-                />
-              ) : active.image ? (
+              {active.image ? (
                 <section className={styles.detailSection}>
                   <p>{active.image.credit}</p>
                   <a
@@ -936,12 +900,6 @@ export function DiscoveryReader({
                   );
                 })}
               </div>
-              <DiscoveryDownloads
-                language={language}
-                publication={publications.find(
-                  (entry) => entry.id === sharePayload.id
-                )}
-              />
               {shareFeedback ? (
                 <p role="status" className={styles.shareFeedback}>
                   {shareFeedback}

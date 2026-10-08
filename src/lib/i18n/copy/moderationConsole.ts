@@ -72,68 +72,6 @@ export interface ModerationConsoleCopy {
   };
 }
 
-const en: ModerationConsoleCopy = {
-  caseFile: {
-    expand: "Open the case file",
-    collapse: "Close the case file",
-    targetHeading: "What is contested",
-    entityType: "Type",
-    entityId: "Identifier",
-    fieldPath: "Field",
-    noTarget:
-      "This report names no entity — it proposes one we do not hold yet.",
-    openFiche: "Open the contested fiche",
-    counterSourceHeading: "Counter-source supplied by the reader",
-    noCounterSource: "The reader supplied no counter-source.",
-    noteHeading: "Moderation note",
-    notePublished:
-      "The note recorded with a decision is published on the public register, word for word.",
-  },
-  trail: {
-    heading: "Audit trail",
-    timeZoneNote: "Times are UTC.",
-    rolesNotPeople:
-      "The register names the role that acted and the level it was authorised at, never the person.",
-    loading: "Reading the register…",
-    unreadable:
-      "The register could not be read. Nothing here says no decision was taken.",
-    pending: "Has not occurred yet",
-    events: {
-      received: "Report received",
-      under_review: "Under review",
-      accepted: "Accepted",
-      rejected: "Rejected",
-      duplicate: "Filed as a duplicate",
-      withdrawn: "Withdrawn by its author",
-      revision_linked: "Revision linked",
-      publication: "Publication to production",
-    },
-    roles: {
-      reader: "reader",
-      moderator: "moderator",
-    },
-    level: (level: string) => `authorisation ${level}`,
-  },
-  remediation: {
-    heading: "Remediation",
-    readOnlyMarker: "Read-only",
-    readOnlyReason:
-      "The console reads this state and cannot write it. A moderator may link a revision — an intention — but only the publication of the corpus closes a remediation, so a tick-box here would announce a correction that has not happened.",
-    stateHeading: "State",
-    states: {
-      not_started: "Not started",
-      in_progress: "Revision under way",
-      published: "Published to production",
-      not_applicable: "No corpus change required",
-    },
-    untracked: "Not yet tracked for this report.",
-    publishedAt: "Published on",
-    summaryHeading: "What changed",
-    linkedRevision: "Linked revision",
-    noLinkedRevision: "No revision is linked to this report.",
-  },
-};
-
 const fr: ModerationConsoleCopy = {
   caseFile: {
     expand: "Ouvrir le dossier de cas",
@@ -198,6 +136,5 @@ const fr: ModerationConsoleCopy = {
 
 // @req REQ-145
 export const moderationConsoleCopy: Record<Language, ModerationConsoleCopy> = {
-  en,
   fr,
 };

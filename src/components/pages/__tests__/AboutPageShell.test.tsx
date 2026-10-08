@@ -72,25 +72,4 @@ describe("AboutPageShell (REQ-091)", () => {
     expect(screen.getByTestId("server-rendered-about-content")).toBeVisible();
     expect(screen.queryByTestId("legacy-about-page-content")).toBeNull();
   });
-
-  // Landing on a locale is not choosing it: the hook already reads the route,
-  // and `setLanguage` is the switcher's act — it writes the remembered
-  // choice. The shell must never call it on the reader's behalf.
-  // @req REQ-140
-  it("never records the route's locale as an explicit choice", () => {
-    mocks.language = "en";
-    mocks.routeLanguage = "fr";
-
-    render(
-      <AboutPageShell>
-        <div />
-      </AboutPageShell>
-    );
-
-    expect(mocks.setLanguage).not.toHaveBeenCalled();
-    expect(screen.getByTestId("about-page-layout")).toHaveAttribute(
-      "data-language",
-      "en"
-    );
-  });
 });

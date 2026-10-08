@@ -51,9 +51,29 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "Le nom viendrait d'un pèlerinage. À Faragouaran, village du Wasulu peuplé de Baghayogho, de forgerons (noumou) et de nobles (horon), on rapporte que leurs ancêtres, pèlerins de La Mecque, auraient rendu visite au calife à Bagdad et pris à cette occasion le nom de Bagadaji, ou Baga-yoro, « le lieu de Bagdad ». Un manuscrit local sur l'installation des Baghayogho au Wasulu donne le nom comme « Bagadaji, gens de Bagdad » et les fait descendre d'Arabes.",
+        "claimStatus": "claimed",
+        "carrier": "Chefs et anciens de Faragouaran, canton de N'tentou, Wasulu (Mali)",
+        "collection": "direct",
+        "collector": "Andreas W. Massing, lors d'un entretien",
+        "context": "Entretien du 17 août 1997 à Faragouaran, avec des témoins nommés dans la source",
+        "sourceRefs": ["massing-2004-baghayogho"]
+      },
+      {
+        "claim": "Les Baghayogho seraient des Soninké. À Tombouctou, Hasseye Mahmoud Baghayogho se dit dernier descendant des Wangara et des Baghayogho, et dit que ses ancêtres étaient des Soninké venus du Ghana et installés à Kong. Cette tradition porte sur l'origine de la famille, non sur le sens du nom.",
+        "claimStatus": "claimed",
+        "carrier": "Hasseye Mahmoud Baghayogho, de Tombouctou",
+        "collection": "direct",
+        "collector": "Andreas W. Massing, lors d'un entretien",
+        "context": "Entretien à Tombouctou, début 1997",
+        "sourceRefs": ["massing-2004-baghayogho"]
+      }
+    ],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [],
+    "historicalSyntheses": []
   },
   "peoples": [
     {
@@ -123,12 +143,20 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Agrégateur généalogique mondial, consulté le 29 septembre 2026. Incidence mondiale d'environ 101 645 porteurs ; Côte d'Ivoire 95 088, Mali 2 517, Guinée 1 912, France 814, Burkina Faso 317. La page ne donne aucune signification du nom. Les effectifs hors d'Afrique ne sont pas repris dans les attestations de cette fiche. Bakayoko est la graphie la plus portée ; le dictionnaire des jamuw donne Bagayoko et Bagayogo pour la même entrée."
+    },
+    {
+      "sourceKey": "massing-2004-baghayogho",
+      "title": "Baghayogho : A Soninke Muslim Diaspora in the Mande World",
+      "url": "https://journals.openedition.org/etudesafricaines/4850",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Massing, Andreas W., Cahiers d'études africaines, numéro 176, 2004, p. 887-922 ; lu en ligne (OpenEdition), où le texte est numéroté par paragraphes et non par pages imprimées : les pages exactes des passages cités n'ont pas été relevées. Le paragraphe 35 et sa note 53 rapportent l'entretien du 17 août 1997 à Faragouaran (canton de N'tentou, Wasulu, Mali) avec des chefs et des anciens : les anciens donnent l'explication du nom par Bagdad, et un manuscrit local intitulé « Les Baghayogho, origine et histoire de leur installation dans le Wasulu » donne le nom comme « Bagadaji, gens de Bagdad ». Le paragraphe 34, dans la section « In Search of Origins », rapporte les propos de Hasseye Mahmoud Baghayogho, rencontré à Tombouctou début 1997, qui se dit dernier descendant des Wangara et des Baghayogho et dont les ancêtres auraient été des Soninké venus du Ghana et installés à Kong. L'auteur écrit le nom Baghayogho ; nous le rapprochons de Bagayoko, comme le fait le dictionnaire des noms claniques cité sur cette fiche. L'article traite aussi d'un récit de fondation de Koro par un Moussa Bagayogo : il concerne une personne et n'est pas repris ici."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Aucun sens du nom Bagayoko n'est établi dans les sources que nous avons consultées : les deux récits ci-dessus sont des pistes attribuées, rapportées par un chercheur extérieur, et aucune n'est retenue comme la bonne. L'une explique le nom par Bagdad, l'autre parle de l'origine de la famille sans dire ce que le mot signifie."
     },
     {
       "fieldPath": "casteOrSocialFunction",

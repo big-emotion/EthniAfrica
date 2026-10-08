@@ -2,7 +2,6 @@ import { fireEvent, render, screen, within } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 import { HomeHeroSeeds } from "../HomeHeroSeeds";
-import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 
 describe("HomeHeroSeeds — four renewable example queries", () => {
   // The same three words as the placeholder, introduced rather than floating:
@@ -27,15 +26,6 @@ describe("HomeHeroSeeds — four renewable example queries", () => {
     fireEvent.click(screen.getByRole("button", { name: "Lingala" }));
 
     expect(onPick).toHaveBeenCalledWith("Lingala");
-  });
-
-  // @req REQ-145
-  it("introduces the English chips in English", () => {
-    render(<HomeHeroSeeds language="en" onPick={vi.fn()} />);
-
-    const list = screen.getByRole("list", { name: "Try" });
-    expect(within(list).getAllByRole("button")).toHaveLength(4);
-    expect(homeHeroCopy.en.seeds).toHaveLength(4);
   });
 
   // The reels are gone: no hidden track, no second word waiting to roll in,

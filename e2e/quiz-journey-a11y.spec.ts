@@ -4,15 +4,6 @@ import { test, expect } from "./support/fixtures";
 import { getLocalizedRoute } from "@/lib/routing";
 import { LOCALE } from "./support/locale";
 
-// English UI copy lands per translation wave (REQ-142 to REQ-146). Until it
-// does, the labels this spec reads are French, so the English matrix leg
-// skips it rather than fail on copy it was never asked to check — and the
-// leg's report says so, instead of counting the journey as covered.
-test.skip(
-  LOCALE !== "fr",
-  "English copy lands per wave — this spec reads French UI copy"
-);
-
 // ETNI-500 (10.11) AC1 — axe-core zero serious/critical across the quiz
 // session states that the static quiz-route audit cannot reach (picker is
 // covered by scripts/a11y-test.ts; the segment-picked question/reveal and

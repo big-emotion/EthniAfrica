@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { formatDistanceToNowStrict } from "date-fns";
-import { enGB, fr } from "date-fns/locale";
+import { fr } from "date-fns/locale";
 import { ChevronDown, RotateCcw } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -266,7 +266,7 @@ function PublicFlagRow({
               >
                 {formatDistanceToNowStrict(new Date(item.createdAt), {
                   addSuffix: true,
-                  locale: language === "en" ? enGB : fr,
+                  locale: fr,
                 })}
               </time>
             </div>

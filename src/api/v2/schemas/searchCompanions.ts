@@ -93,7 +93,7 @@ function parseSubjects(
 export const searchCompanionsQuerySchema = z
   .object({
     subjects: z.string().optional().default(""),
-    lang: z.enum(["en", "fr"]).default("fr"),
+    lang: z.enum(["fr"]).default("fr"),
     word: z.string().trim().max(MAX_SEARCH_COMPANION_WORD_LENGTH).optional(),
   })
   .transform(({ subjects, lang, word }, context) => ({
@@ -160,7 +160,7 @@ const shortSchema = z.object({
 });
 const anecdoteSchema = z.object({
   id: z.string().min(1),
-  contentLanguage: z.enum(["en", "fr"]),
+  contentLanguage: z.enum(["fr"]),
   headline: z.string().min(1),
   about: z.string().min(1).optional(),
   body: z.array(z.string().min(1)).min(1).max(2),
@@ -171,7 +171,7 @@ const anecdoteSchema = z.object({
 });
 const proverbSchema = z.object({
   id: z.string().min(1),
-  contentLanguage: z.enum(["en", "fr"]),
+  contentLanguage: z.enum(["fr"]),
   text: z.string().min(1),
   meaning: z.string().min(1),
   original: z
@@ -188,35 +188,11 @@ const proverbSchema = z.object({
   sources: z.array(sourceSchema).min(1),
   match: companionMatchSchema,
 });
-const imageSchema = z.object({
-  id: z.string().min(1),
-  href: z.string().min(1),
-  slug: z.string().min(1),
-  title: z.string().min(1),
-  description: z.string().min(1),
-  caption: z.string().min(1),
-  image: z.object({
-    src: z.string().min(1),
-    alt: z.string().min(1),
-    credit: z.string().min(1),
-    licence: z.enum(["public-domain", "cc0", "cc-by", "cc-by-sa"]),
-    licenceUrl: z.string().url().optional(),
-    filePage: z.string().url().optional(),
-  }),
-  generation: z.object({
-    tool: z.string().min(1),
-    model: z.string().min(1),
-    generatedOn: z.string().min(1),
-    sourceKind: z.literal("ai_generated"),
-  }),
-  source: sourceSchema,
-  match: companionMatchSchema,
-});
 const quizSchema = z
   .object({
     id: z.string().min(1),
     templateId: quizSessionQuestionSchema.shape.templateId,
-    contentLanguage: z.enum(["en", "fr"]),
+    contentLanguage: z.enum(["fr"]),
     prompt: z.string().min(1),
     stimulus: z.string().nullable(),
     options: z.array(quizOptionValueSchema).min(2),
@@ -250,7 +226,6 @@ export const searchCompanionsDataSchema = z.object({
   shorts: selectionSchema(shortSchema, 6),
   anecdotes: selectionSchema(anecdoteSchema, 3),
   proverbs: selectionSchema(proverbSchema, 2),
-  images: selectionSchema(imageSchema, 1),
   quiz: z.object({
     count: z.number().int().min(0),
     item: quizSchema.nullable(),

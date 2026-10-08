@@ -12,125 +12,7 @@ import type { Language } from "@/types/shared";
  * of the five naming systems, which is onomastic vocabulary and not a label
  * for the axis.
  */
-const en = {
-  eyebrow: "Name",
-  nameSystemSectionTitle: "The name",
-  nameSystemStatementPrefix: "Naming system:",
-  nameSystemLabels: PATRONYME_VOCABULARY.en.nameSystem,
-  // What the fiche rests on, said in the head rather than left to the
-  // reader to count at the bottom of the dossier. The tier word itself is
-  // never written here: it comes from the shared glossary, so the three
-  // labels the atlas publishes cannot fork per surface.
-  //
-  // The machine-written share is its own clause because provenance is not
-  // authority (Source Tier Policy): a fiche can cite four works, three of
-  // them machine-written, and still rest on a referenced one.
-  sourceStanding: {
-    countOne: "1 source cited",
-    countMany: "{count} sources cited",
-    aiShareOne: ", one of them written by an artificial intelligence",
-    aiShareMany: ", {count} of them written by an artificial intelligence",
-    // Says what the atlas has not established, never why the workshop has
-    // not established it yet.
-    assembling:
-      "This page is still being assembled: what it states remains to be confirmed.",
-  },
-  casteOrSocialFunctionLabel: "Caste or social function",
-  attestedFormsTitle: "Attested spellings",
-  spellingAttestedInPrefix: "attested in",
-  transmissionModeLabel: "Mode of transmission",
-  transmissionModeLabels: PATRONYME_VOCABULARY.en.transmissionMode,
-  designatedSocialUnitLabel: "Designated social unit",
-  designatedSocialUnitLabels: PATRONYME_VOCABULARY.en.designatedSocialUnit,
-  totemicFoodProhibitionLabel: "Totemic food prohibition",
-  permittedGivenNamesLabel: "Permitted given names",
-  nisbaSubtypeLabel: "Nisba type",
-  nisbaSubtypeLabels: PATRONYME_VOCABULARY.en.nisbaSubtype,
-  originTitle: "Origin",
-  originOralTraditionsLabel: "Oral tradition",
-  originWrittenChroniclesLabel: "Written chronicle",
-  originHistoricalSynthesesLabel: "Historical synthesis",
-  originLinguisticReconstructionsLabel: "Linguistic reconstruction",
-  originClaimStatusLabels: PATRONYME_VOCABULARY.en.originClaimStatus,
-  oralOriginNote:
-    "This origin is transmitted orally. It is presented as its carrier gave it, with its source and, where documented, who transmitted it and how it was collected.",
-  oralAttributionPrefix: "Transmitted by",
-  oralCollectedByPrefix: "Collected by",
-  oralCollectedByIntermediary: "Collected through an intermediary.",
-  oralCollectedDirectly: "Collected directly from the carrier.",
-  oralCarrierNotStated: "Carrier not stated.",
-  sourcesTitle: "Sources",
-  alliancesTitle: "Alliances",
-  alliancesNote:
-    "Pacts linking this name to other names: a joking relationship in which the bearers of both names owe one another ritual mockery and assistance, and which forbids conflict between them. Each pact keeps the term used by its sources.",
-  allianceTermGlosses: {
-    sanankuya: "Mande joking relationship",
-  },
-  allianceTypeFallback: "Documented alliance",
-  homonymsTitle: "Homonyms",
-  homonymsNote:
-    "What the same sequence of letters designates elsewhere — a people, a place or another name — without a demonstrated link to this one. The list prevents a resemblance in form from being read as descent.",
-  associationsTitle: "Peoples and countries concerned",
-  associatedPeoplesLabel: "Peoples",
-  associatedCountriesLabel: "Countries",
-  nonHereditaryGuidance:
-    "This patronym is not transmitted by heredity: it does not read as a family name in the European sense. Its reach varies by region — the peoples and countries below indicate where this mode of naming is documented.",
-  bearersTitle: "Bearers",
-  bearersEditorialNote:
-    "Only public or historical figures appear here, along with persons who have recognised themselves in this name. The list documents the name: it allows no inference about the ethnic origin of anyone who bears it.",
-  roleCategoryFallback: "Role not recorded",
-  onFiche: {
-    /**
-     * Titled for what the list holds. "Names borne" said neither whose names
-     * nor what kind; "patronymics" is true of a list only when every entry is
-     * one, so the wider "personal names" is the default.
-     */
-    namesTitle: {
-      people: {
-        personal: "Personal names linked to this people",
-        patronymic: "Patronymics linked to this people",
-      },
-      country: {
-        personal: "Personal names linked to this country",
-        patronymic: "Patronymics linked to this country",
-      },
-    },
-    nameCount: (count: number) => `${count} ${count === 1 ? "name" : "names"}`,
-
-    peopleEmpty:
-      "We do not yet attach any name to this people. The names dimension has just opened and covers only a small part of our project.",
-    peopleUnavailable:
-      "The names borne could not be loaded. The problem is on our side, not an absence of names.",
-    countryAlphabeticalIndexLabel: "Alphabetical index",
-    attestedLabel: "Attested in the country",
-    reachLabel: "Borne by the country's peoples, with no attestation here",
-    reachViaPrefix: "via",
-    countryEmpty:
-      "We do not yet attest any name in this country, and none of the peoples who live there bears a documented one.",
-    countryUnavailable:
-      "The names could not be loaded. The problem is on our side, not an absence of names.",
-  },
-  index: {
-    pageTitle: "Names",
-    pageSubtitle:
-      "The naming systems of persons documented here — clan names, non-hereditary patronymics, nisba and praise names.",
-    unavailable:
-      "The names could not be loaded. The problem is on our side, not an absence of names.",
-    countSingular: "name",
-    countPlural: "names",
-    emptyState: "No name is documented yet.",
-    pagination: {
-      label: "Names pagination",
-      previous: "Previous",
-      next: "Next",
-      page: "Page",
-    },
-  },
-};
-
-type PatronymesCopy = typeof en;
-
-const fr: PatronymesCopy = {
+const fr = {
   eyebrow: "Nom",
   nameSystemSectionTitle: "Le nom",
   nameSystemStatementPrefix: "Système de nommage :",
@@ -224,7 +106,7 @@ const fr: PatronymesCopy = {
         patronymic: "Patronymes rattachés à ce pays",
       },
     },
-    nameCount: (count) => `${count} ${count === 1 ? "nom" : "noms"}`,
+    nameCount: (count: number) => `${count} ${count === 1 ? "nom" : "noms"}`,
 
     peopleEmpty:
       "Nous ne rattachons encore aucun nom à ce peuple. La dimension des noms vient d'ouvrir et ne couvre qu'une petite part de notre projet.",
@@ -266,5 +148,7 @@ const fr: PatronymesCopy = {
   },
 };
 
+type PatronymesCopy = typeof fr;
+
 // @req REQ-145
-export const patronymesCopy: Record<Language, PatronymesCopy> = { en, fr };
+export const patronymesCopy: Record<Language, PatronymesCopy> = { fr };

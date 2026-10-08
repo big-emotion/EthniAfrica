@@ -188,6 +188,6 @@ export async function getVerifiedReporterContact(
   if (!data?.verified_at) return null;
   return {
     email: data.email as string,
-    language: data.locale === "en" ? "en" : "fr",
+    language: "fr",
   };
 }

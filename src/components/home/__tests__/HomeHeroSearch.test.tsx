@@ -28,7 +28,7 @@ import {
 import { homeHeroCopy } from "@/lib/i18n/copy/homeHero";
 import { getFamilyRoute, getLocalizedRoute } from "@/lib/routing";
 import type { SearchLead, SearchResult } from "@/types/afrik-frontend";
-import { search as searchCorpus, searchWithLeads } from "@/lib/afrikLoader";
+import { search as searchCorpus } from "@/lib/afrikLoader";
 
 const push = vi.fn();
 
@@ -108,39 +108,6 @@ describe("HomeHeroSearch", () => {
     expect(searchCorpus).toHaveBeenCalledWith("Yoruba", { lang: "fr" });
   });
 
-  // @req REQ-140
-  it("uses the reader's locale for default result and near-miss requests", async () => {
-    vi.mocked(searchCorpus).mockResolvedValueOnce([]);
-    vi.mocked(searchWithLeads).mockResolvedValueOnce({
-      results: [],
-      leads: [],
-      nearNames: [],
-      answered: true,
-      counts: {
-        all: 0,
-        people: 0,
-        country: 0,
-        languageFamily: 0,
-        language: 0,
-        patronyme: 0,
-        person: 0,
-      },
-    });
-    render(<HomeHeroSearch language="en" />);
-
-    await act(async () => {
-      fireEvent.change(screen.getByRole("combobox"), {
-        target: { value: "Shona" },
-      });
-      await new Promise((r) => setTimeout(r, DEBOUNCE_MS + 50));
-    });
-
-    expect(searchCorpus).toHaveBeenCalledWith("Shona", { lang: "en" });
-    await waitFor(() =>
-      expect(searchWithLeads).toHaveBeenCalledWith("Shona", { lang: "en" })
-    );
-  });
-
   // The accessible name has to survive a placeholder that the design may
   // animate later: a rotating placeholder would otherwise rename the control
   // under a screen-reader user mid-sentence. The home asks its own question;
@@ -170,38 +137,6 @@ describe("HomeHeroSearch", () => {
     expect(field()).toHaveAccessibleDescription(homeHeroCopy.fr.description);
   });
 
-  // @req REQ-140
-  it("renders English vocabulary, group headings and result names", async () => {
-    render(
-      <HomeHeroSearch
-        language="en"
-        fetchResults={async () => [
-          {
-            type: "country",
-            id: "TCD",
-            name: "Tchad",
-            nameEn: "Chad",
-            relevance: 1,
-          },
-        ]}
-      />
-    );
-
-    expect(field()).toHaveAccessibleName("Which name are you looking for?");
-    expect(field()).toHaveAttribute(
-      "placeholder",
-      "E.g. Keïta, Lingala, Fulbe, Benin"
-    );
-
-    await type("chad");
-
-    const group = await screen.findByRole("group", { name: "Countries" });
-    expect(within(group).getByRole("option", { name: /Chad/ })).toHaveAttribute(
-      "href",
-      `${getLocalizedRoute("en", "search")}?q=Chad`
-    );
-  });
-
   // The label used to be sr-only, so a sighted reader had only the
   // placeholder — which empties at the moment of focus, exactly when the
   // scope would be worth reading.
@@ -216,7 +151,7 @@ describe("HomeHeroSearch", () => {
 
   // The contract the shared label held on the home now rests on the home's
   // description: it may name a kind only if the panel below can group it.
-  // It speaks in the reader's words — « nom de famille », « lieu » — so each
+  // It speaks in the reader's words — « nom de famille », « pays » — so each
   // is mapped to the group it promises. It names four of the five groups;
   // language families are left to the panel, which is allowed (naming fewer
   // promises less). Naming a sixth would promise an empty answer.
@@ -227,18 +162,12 @@ describe("HomeHeroSearch", () => {
         "nom de famille": "patronyme",
         peuple: "people",
         langue: "language",
-        lieu: "country",
-      },
-      en: {
-        "family name": "patronyme",
-        people: "people",
-        language: "language",
-        place: "country",
+        pays: "country",
       },
     } as const;
     const grouped = SEARCH_RESULT_GROUPS.map((group) => group.type) as string[];
 
-    for (const language of ["fr", "en"] as const) {
+    for (const language of ["fr"] as const) {
       const description = homeHeroCopy[language].description.toLowerCase();
       for (const [words, type] of Object.entries(promised[language])) {
         expect(description, `${language}: ${words}`).toContain(words);
@@ -524,32 +453,6 @@ describe("HomeHeroSearch", () => {
           selector: "p",
         })
       ).not.toBeInTheDocument();
-    });
-
-    // The retry sits inside the GET form's anchor; a button with no type
-    // there would submit the query to the search page instead.
-    // @req REQ-002
-    it("retries without submitting the form, in the reader's language", async () => {
-      render(
-        <HomeHeroSearch
-          language="en"
-          fetchResults={async () => {
-            throw new Error("network down");
-          }}
-        />
-      );
-
-      await type("fula");
-
-      expect(
-        await screen.findByText("Search is temporarily unavailable.", {
-          selector: "p",
-        })
-      ).toBeInTheDocument();
-      expect(screen.getByRole("button", { name: "Try again" })).toHaveAttribute(
-        "type",
-        "button"
-      );
     });
   });
 

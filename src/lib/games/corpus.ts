@@ -80,7 +80,6 @@ export interface GameHistoricalNames {
 export interface GameCountryFixture {
   id: CountryId;
   nameFr: string;
-  nameEn?: string;
   /** Top-level column `etymology` — NOT `content.etymology`, which does not exist. */
   etymology: string | null;
   /** Top-level column `name_origin_actor`; set on all 54 country fiches. */
@@ -131,17 +130,3 @@ export interface GameCorpus {
   relations: GameRelationFixture[];
   migrations: GameMigrationFixture[];
 }
-
-/**
- * Human-readable French label for each stored relation type.
- *
- * @public The French anchor of the dormant English sidecar in `corpus.en.ts`
- * (REQ-145); its parity test reads it, and the wiring PR decides whether a
- * label with no renderer stays in either language.
- */
-// @req REQ-120
-export const RELATION_TYPE_LABEL_FR: Record<RelationType, string> = {
-  migratory: "migratoire",
-  commercial: "commercial",
-  religious: "religieux",
-};

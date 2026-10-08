@@ -26,7 +26,19 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Les Sylla comptent parmi les plus anciens clans de la société songhay, avec les Ture, Tunkara, Sise, Jakite, Drame et Jawara, tous d'origine soninke ; quelques clans seulement, comme les Maiga, sont songhay. Le même texte donne Ture et Sise comme noms de clans ici, et comme titres religieux à propos de l'askia Mohammed : il ne concilie pas les deux emplois.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iv-cissoko"]
+      },
+      {
+        "claim": "Le premier askia de l'empire songhay, Mohammed, est donné par les chroniques sous les deux noms de Ture (« Touré ») et de Sylla, et le chapitre l'intitule « le Syllanke », c'est-à-dire de la famille des Sylla. Une explication relie les deux noms : à l'époque, Ture aurait été un titre religieux, comme Sise (« Cissé »), puis les conquérants marocains l'auraient adopté ; l'askia serait donc probablement du clan Sylla. C'est l'inférence de l'auteur du chapitre. Ce passage concerne les Sylla de l'empire songhay, pas ceux de Guinée.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iv-cissoko"]
+      }
+    ]
   },
   "peoples": [
     {
@@ -54,12 +66,20 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "hga-iv-cissoko",
+      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 8, Les Songhay du XIIe au XVIe siècle",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre de Sékéné Mody Cissoko. Pages imprimées : Askia Mohammed, d'origine soninke, du clan des Ture ou Sylla, et la note disant que les deux noms sont donnés par les chroniques, que l'askia était probablement du clan sylla et que Ture était alors un titre religieux comme Sise (p. 219) ; les plus anciens clans de la société songhay, d'origine soninke (p. 230). Le chapitre ne donne aucun sens au mot Sylla et ne parle pas des Sylla de Guinée."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne documentons pas encore le sens du nom : aucune source dédiée à sa signification n'a été consultée. Les deux explications ci-dessus portent sur l'ancienneté du clan et sur le lien avec le nom Ture, pas sur ce que le mot veut dire. Elles viennent de la société songhay ; aucune explication propre aux Sylla de Guinée n'a été trouvée."
     },
     {
       "fieldPath": "alliances",
@@ -81,5 +101,10 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
+    }
+  }
 }

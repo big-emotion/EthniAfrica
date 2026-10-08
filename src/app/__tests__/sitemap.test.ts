@@ -1,21 +1,13 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("@/lib/supabase/queries/afrik/sitemapEntries", () => ({
   getSitemapEntityIds: vi.fn(),
 }));
 
-vi.mock("@/lib/supabase/queries/afrik/translations", () => ({
-  getAfrikTranslation: vi.fn(),
-  getAfrikTranslationIds: vi.fn(),
-}));
-
 import robots from "../robots";
 import sitemap, { revalidate } from "../sitemap";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
-import { LOCALES } from "@/lib/locale";
-import { SURFACES_AT_PARITY } from "@/lib/seo/localeIndexing";
 import { getSitemapEntityIds } from "@/lib/supabase/queries/afrik/sitemapEntries";
-import { getAfrikTranslationIds } from "@/lib/supabase/queries/afrik/translations";
 import {
   getCountryRoute,
   getFamilyRoute,
@@ -28,9 +20,6 @@ import {
 } from "@/lib/routing";
 
 const mockedEntityIds = getSitemapEntityIds as unknown as ReturnType<
-  typeof vi.fn
->;
-const mockedTranslationIds = getAfrikTranslationIds as unknown as ReturnType<
   typeof vi.fn
 >;
 
@@ -50,13 +39,7 @@ async function urls() {
 describe("sitemap.xml", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    vi.stubEnv("SITE_LOCALE_MODE", "fr-only");
     mockedEntityIds.mockResolvedValue(CORPUS);
-    mockedTranslationIds.mockResolvedValue([]);
-  });
-
-  afterEach(() => {
-    vi.unstubAllEnvs();
   });
 
   // A curator adding a first readable citation must move the name into the
@@ -197,56 +180,6 @@ describe("sitemap.xml", () => {
     expect(all.some((url) => url.includes("/atlas/noms/"))).toBe(false);
   });
 
-  // Both locales resolve (REQ-140), so both are listed — but only what is
-  // indexed in each. The English rubric of a surface at parity is a page a
-  // crawler is invited to; the English rubric of one still carrying French
-  // prose declares `noindex`, and a sitemap that listed it would contradict
-  // the page.
-  // @req REQ-141
-  it("lists the English rubric of every surface at parity, and no other", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "bilingual-fr-default");
-    const all = await urls();
-    const base = `https://${CANONICAL_DOMAIN}`;
-
-    expect(SURFACES_AT_PARITY).toContain("names");
-    expect(all).toContain(`${base}${getLocalizedRoute("en", "names")}`);
-    expect(all).toContain(`${base}${getLocalizedRoute("fr", "names")}`);
-
-    expect(SURFACES_AT_PARITY).not.toContain("home");
-    expect(all).not.toContain(`${base}/en`);
-    expect(all).not.toContain(`${base}${getStaticPageRoute("en", "sitemap")}`);
-  });
-
-  // With no translation record, the English half holds rubrics alone.
-  // @req REQ-141
-  it("lists no fiche under /en while no fiche has a translation record", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "bilingual-fr-default");
-    const all = await urls();
-    const base = `https://${CANONICAL_DOMAIN}`;
-
-    expect(all).toContain(`${base}${getPeopleRoute("fr", "PPL_WOLOF")}`);
-    expect(all).not.toContain(`${base}${getPeopleRoute("en", "PPL_WOLOF")}`);
-    expect(all.filter((url) => url.startsWith(`${base}/en/`))).not.toEqual([]);
-  });
-
-  // @req REQ-141
-  // @req REQ-142
-  it("lists an English fiche once its translation record exists", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "bilingual-fr-default");
-    mockedTranslationIds.mockImplementation(async (kind: string) =>
-      kind === "people" ? ["PPL_WOLOF"] : []
-    );
-
-    const all = await urls();
-    const base = `https://${CANONICAL_DOMAIN}`;
-    expect(all).toContain(`${base}${getPeopleRoute("en", "PPL_WOLOF")}`);
-    expect(all).toContain(`${base}${getPeopleLinksRoute("en", "PPL_WOLOF")}`);
-    expect(mockedTranslationIds).toHaveBeenCalledTimes(5);
-  });
-
-  // The static pages used to be composed from the French folder names under
-  // every locale, which would have listed `/en/plan-du-site` — an address
-  // the middleware sends elsewhere.
   // @req REQ-141
   it("composes every French rubric in the French vocabulary", async () => {
     const all = await urls();
@@ -263,12 +196,8 @@ describe("sitemap.xml", () => {
     expect(new Set(all).size).toBe(all.length);
   });
 
-  // English content may exist in the repository without being announced to
-  // crawlers before the editorial launch gate is opened.
   // @req REQ-110
-  it("emits no English URL while the site is French-only", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "fr-only");
-
+  it("emits no English URL", async () => {
     expect((await urls()).some((url) => url.includes("/en"))).toBe(false);
   });
 
@@ -289,10 +218,6 @@ describe("sitemap.xml", () => {
 });
 
 describe("robots.txt", () => {
-  afterEach(() => {
-    vi.unstubAllEnvs();
-  });
-
   // public/robots.txt carried no Sitemap line, and a hard-coded one would have
   // been the first thing to go stale on a domain change.
   // @req REQ-110
@@ -307,35 +232,23 @@ describe("robots.txt", () => {
   // disallow list shrank back to what authentication alone hides.
   // @req REQ-110
   it("bans the authenticated surfaces", () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "bilingual-fr-default");
     const rule = robots().rules;
     const disallow = Array.isArray(rule) ? rule[0].disallow : rule.disallow;
 
-    for (const locale of LOCALES) {
-      expect(disallow).toContain(`/${locale}/admin/`);
-    }
+    expect(disallow).toEqual(["/fr/admin/"]);
     expect(disallow).not.toContain("/fr/politique-confidentialite");
     expect(disallow).not.toContain("/fr/confidentialite");
   });
 
+  // The retired English addresses answer with a 308 to their French page;
+  // a crawler banned from them could never read the redirect and carry the
+  // old URL's standing over.
   // @req REQ-110
-  it("keeps every English route out of crawlers while English is unpublished", () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "fr-only");
-    const rule = robots().rules;
-    const disallow = Array.isArray(rule) ? rule[0].disallow : rule.disallow;
-
-    expect(disallow).toContain("/en/");
-  });
-
-  // @req REQ-110
-  it("allows public English routes but not either admin tree in bilingual mode", () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "bilingual-fr-default");
+  it("lets crawlers follow the retired English addresses", () => {
     const rule = robots().rules;
     const disallow = Array.isArray(rule) ? rule[0].disallow : rule.disallow;
 
     expect(disallow).not.toContain("/en/");
-    expect(disallow).toContain("/en/admin/");
-    expect(disallow).toContain("/fr/admin/");
   });
 
   // Named routes are what a rewrite would drop; this holds the whole rule to

@@ -47,11 +47,4 @@ describe("QuizProgressDots (Epic 10, Story 10.9, ETNI-1135, FR67)", () => {
       Array.from(dots.querySelectorAll("[data-active='true']"))
     ).toHaveLength(4);
   });
-
-  // @req REQ-140
-  it("counts the questions in the locale it is given", () => {
-    render(<QuizProgressDots current={2} total={5} language="en" />);
-
-    expect(screen.getByText("question 2 of 5")).toBeInTheDocument();
-  });
 });

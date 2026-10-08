@@ -1,8 +1,8 @@
 /**
  * Strict parser for per-name PAT_* fiches.
  *
- * This is deliberately separate from PPL_* ethnonym dossiers (`noms/`) and
- * ONS_* naming-system dossiers (`systemes_onomastiques/`). Its discriminant
+ * This is deliberately separate from PPL_* ethnonym dossiers (`noms/`). Its
+ * discriminant
  * mirrors migration 053 and the public patronyme API exactly.
  */
 
@@ -228,6 +228,12 @@ const commonShape = {
     "other",
   ]),
   origin: patronymeOriginSchema,
+  // Length, question mark and register are held by checkSearchAnswerFields; the
+  // parser only fixes which keys may exist.
+  searchAnswer: z
+    .object({ lead: z.string().optional(), followUp: z.string().optional() })
+    .strict()
+    .optional(),
   peoples: z.array(patronymePeopleAssociationSchema),
   countries: z.array(patronymeCountryAssociationSchema),
   alliances: z.array(patronymeAllianceSchema),

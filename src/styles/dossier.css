@@ -394,11 +394,6 @@
 .afh-dossier-source {
   scroll-margin-top: 10rem;
 }
-.afh-dossier-translation {
-  text-align: left;
-  color: var(--afh-fg-muted);
-  font-size: var(--afh-text-caption);
-}
 .afh-dossier-chapter-head.is-text-only {
   display: block;
 }

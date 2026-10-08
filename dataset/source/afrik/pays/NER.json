@@ -286,6 +286,12 @@
         "url": null,
         "tier": "referenced",
         "notes": "Étude de référence sur Jean-Léon l'Africain, retenue ici pour la transmission de son texte : ce qui subsiste est le manuscrit italien de 1526, imprimé par Ramusio en 1550. L'ouvrage est vérifié au catalogue ; l'argument sur la transmission n'y a pas été lu directement."
+      },
+      {
+        "title": "CIA World Factbook, Niger, rubrique Ethnic groups (estimation de 2006), copie datée du 15 janvier 2026",
+        "url": "https://web.archive.org/web/20260115233241/https://www.cia.gov/the-world-factbook/countries/niger",
+        "tier": "official",
+        "notes": "Estimation, pas un recensement : « Hausa 53,1 %, Zarma/Songhai 21,2 %, Touareg 11 %, Peul 6,5 %, Kanuri 5,9 %, Gurma 0,8 %, Arabes 0,4 %, Toubou 0,4 %, autres ou inconnus 0,9 % ». Les Zarma et les Songhai sont comptés ensemble ; la part est portée sur les Zarma. Gurma, Arabes et autres restent dans « Autres peuples » : 1,9 % est le complément des parts listées, car les chiffres du Factbook totalisent 100,2 %. Le Factbook a cessé de paraître le 4 février 2026 ; copie lue le 6 octobre 2026."
       }
     ],
     "demographics": {
@@ -301,8 +307,43 @@
           "languageFamily": "FLG_TCHADIQUE"
         },
         {
+          "name": "Zarma",
+          "percentageInCountry": 21.2,
+          "peopleId": "PPL_ZARMA",
+          "region": "Ouest du Niger (fleuve Niger)",
+          "languageFamily": "FLG_SONGHAY"
+        },
+        {
+          "name": "Touareg",
+          "percentageInCountry": 11,
+          "peopleId": "PPL_TUAREG",
+          "region": "Nord du Niger (Sahara)",
+          "languageFamily": "FLG_BERBERE"
+        },
+        {
+          "name": "Peul",
+          "percentageInCountry": 6.5,
+          "peopleId": "PPL_FULA",
+          "region": "Toutes les régions du Niger",
+          "languageFamily": "FLG_ATLANTIQUE"
+        },
+        {
+          "name": "Kanuri",
+          "percentageInCountry": 5.9,
+          "peopleId": "PPL_KANURI",
+          "region": "Sud-est du Niger",
+          "languageFamily": "FLG_SAHARIEN"
+        },
+        {
+          "name": "Toubou",
+          "percentageInCountry": 0.4,
+          "peopleId": "PPL_TOUBOU",
+          "region": "Nord-est du Niger (Sahara)",
+          "languageFamily": "FLG_SAHARIEN"
+        },
+        {
           "name": "Autres peuples",
-          "percentageInCountry": 46.5
+          "percentageInCountry": 1.9
         }
       ]
     }

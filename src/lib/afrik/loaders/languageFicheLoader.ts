@@ -28,6 +28,9 @@ interface LanguageFiche {
   peoples?: Array<{ name: string; peopleId?: string }>;
   content?: {
     vehicularRole?: string | null;
+    originDebated?: boolean;
+    searchAnswer?: { lead?: string; followUp?: string };
+    speakers?: { byCountry: unknown[] };
     dialects?: string[];
     vitalityStatus?: {
       status: string;
@@ -52,6 +55,15 @@ function toLanguageRecord(fiche: LanguageFiche): LanguageRecord {
     whyProblematic: fiche.whyProblematic,
     peoples: fiche.peoples ?? [],
     vehicularRole: fiche.content?.vehicularRole,
+    // Absent stays absent: a fiche that does not declare the flag has not
+    // said its name is settled either.
+    ...(typeof fiche.content?.originDebated === "boolean"
+      ? { originDebated: fiche.content.originDebated }
+      : {}),
+    ...(fiche.content?.searchAnswer
+      ? { searchAnswer: fiche.content.searchAnswer }
+      : {}),
+    ...(fiche.content?.speakers ? { speakers: fiche.content.speakers } : {}),
     dialects: fiche.content?.dialects ?? [],
     vitalityStatus: fiche.content?.vitalityStatus,
     sources: fiche.content?.sources ?? [],

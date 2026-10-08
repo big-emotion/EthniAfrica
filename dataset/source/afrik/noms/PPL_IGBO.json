@@ -48,8 +48,17 @@
           "url": "https://www.ethnologue.com/language/ibo/",
           "tier": "official",
           "notes": "Le code ISO 639-3 « ibo » atteste la reconnaissance de cette graphie historique comme identifiant technique de la langue, distinct de l'endonyme « Igbo »."
+        },
+        {
+          "title": "Igbo — Omniglot",
+          "author": "Omniglot",
+          "year": 2026,
+          "url": "https://www.omniglot.com/writing/igbo.htm",
+          "tier": "referenced",
+          "notes": "Page consultée en ligne : « Igbo is also known as Ibo, Ebo or Unege »."
         }
-      ]
+      ],
+      "shortLine": "Autre graphie de « Igbo »."
     },
     {
       "nameText": "Union Ibo",
@@ -65,13 +74,14 @@
       "sources": [
         {
           "title": "Creating 'Union Ibo': Missionaries and the Igbo language",
-          "author": "D. van den Bersselaar (Africa, vol. 70, Cambridge University Press)",
+          "author": "D. van den Bersselaar (Africa, vol. 67, n° 2, Cambridge University Press)",
           "year": 1997,
           "url": "https://www.cambridge.org/core/journals/africa/article/abs/creating-union-ibo-missionaries-and-the-igbo-language/73FE8764A3E6453222212093A75CD600",
           "tier": "referenced",
           "notes": "Résumé consulté en ligne (texte intégral sous péage) ; corrobore le processus missionnaire et sa contestation partielle par une partie de la population igbo."
         }
-      ]
+      ],
+      "shortLine": "Nom d'une langue écrite mêlant plusieurs parlers igbo, créée par des missionnaires pour traduire la Bible."
     }
   ]
 }

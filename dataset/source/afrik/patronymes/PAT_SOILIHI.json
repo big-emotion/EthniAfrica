@@ -23,7 +23,20 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Soilih, qui se prononce Swalihi à Mayotte, et Saleh sont deux formes d'un même nom. L'article range cette paire parmi les cas où le nom écrit sur les papiers officiels n'est pas celui qu'on dit sur place : pour Muhammadi, dit Mmadi ou Madi au village, la forme officielle est souvent Mohamed, que l'administration a dû reprendre de l'usage des documents coloniaux sur l'Afrique du Nord. Il écrit Soilih, sans i final.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["gueunier-1999-noms-mahorais"]
+      }
+    ],
+    "historicalSyntheses": [
+      {
+        "claim": "À Mayotte, et d'après les mêmes auteurs aux Comores en général, le nom complet d'une personne est son nom personnel suivi de celui de son père, que le mahorais appelle sheredzo. Ce second nom ne se transmet pas au-delà de deux générations, à la différence d'un nom de famille français ; le nom du grand-père n'apparaît qu'en troisième position, pour distinguer deux personnes. L'état civil des Comores est tardif : des textes de 1904 n'ont pas été appliqués, puis un arrêté de 1926 et des textes de 1950 et de 1961 l'ont organisé, inégalement appliqués. À Mayotte, les rubriques « Nom » et « Prénom » des pièces d'identité étaient remplies au gré des employés, tantôt avec le nom du père, tantôt avec le nom personnel. Un arrêté préfectoral de septembre 1996 a institué à Mayotte une commission sur les noms patronymiques, qui a proposé de fixer le nom du père comme nom de famille transmis à perpétuité, ou de laisser chacun choisir un nom. En 1999, la préfecture n'avait pas suivi ces propositions et s'en tenait à des instructions sur les rubriques « Nom » et « Prénom » ; ce qui s'est passé depuis n'est pas dans l'article. L'article ne dit ni depuis quand ni dans quelles familles Soilihi sert de nom de famille.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["gueunier-1999-noms-mahorais"]
+      }
+    ]
   },
   "peoples": [
     {
@@ -51,12 +64,20 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement : elle atteste Soilihi principalement aux Comores et ne fournit aucune signification. Les résultats biographiques et politiques ont été écartés pour l'origine."
+    },
+    {
+      "sourceKey": "gueunier-1999-noms-mahorais",
+      "title": "« Nom, Prénom » : une étape vers l'uniformisation culturelle ? Identité et statut juridique à Mayotte (Océan Indien Occidental)",
+      "url": "https://www.migrantsoutremer.org/IMG/pdf/rss-france-est_1999_noms-mahorais.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Mohamed M'Trengouéni, Soilihi Mouhktar et Noël J. Gueunier, Revue des Sciences Sociales de la France de l'Est, 26, 1999, p. 45-53. Lu en entier dans la version déposée par les auteurs, qui compte 15 pages et dont la pagination ne se superpose pas à celle de la revue ; les pages données ici sont celles de cette version. Nom complet fait du nom personnel puis du nom du père, ou sheredzo (p. 3) ; ce second nom ne passe pas à la génération suivante (p. 5-6) ; état civil des Comores, textes de 1904 non appliqués, arrêté de 1926, textes de 1950 et de 1961 (p. 8) ; formes écrites et dites d'un même nom, dont Muhammadi et Mohamed, puis « Soilih (prononcer Swalihi) et Saleh » (p. 9) ; pièces d'identité remplies au gré des employés (p. 10) ; commission instituée par arrêté préfectoral de septembre 1996 sur les noms patronymiques (p. 11), dont les propositions n'étaient pas suivies (p. 13). Deux des trois auteurs sont mahorais. Le texte écrit Soilih, sans i final, hors de la signature d'un auteur, Soilihi Mouhktar ; il ne dit rien du nom Soilihi hors de cette paire, ni de la date à laquelle des familles l'ont porté comme nom de famille. Il traite de Mayotte, île des Comores rattachée à la France, et parle des noms comoriens en général d'après un juriste, Paul Guy (1954)."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Soilihi », « Comoros », « Comorian », « surname », « onomastics », « etymology » et « transmission », ainsi que la consultation directe de « Soilihi Surname Origin, Meaning & Last Name History » n'ont livré aucune tradition attribuée, chronique ou étude linguistique établissant l'origine de Soilihi. Les rapprochements fondés uniquement sur la géographie, une biographie ou une contribution non référencée ont été écartés."
+      "reason": "Nous n'avons trouvé aucune tradition attribuée ni aucune étude qui dise d'où vient le nom Soilihi, ni quand il est devenu un nom de famille pour une famille précise. Seul un article sur les noms de Mayotte le cite, comme variante écrite de Saleh. Les rapprochements fondés uniquement sur la géographie, une biographie ou une contribution non référencée ont été écartés."
     },
     {
       "fieldPath": "nameSystem",
@@ -82,5 +103,10 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Soilihi », « Comoros », « Comorian », « surname », « onomastics », « etymology » et « transmission », ainsi que la consultation directe de « Soilihi Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Soilihi permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "_translation": {
+    "deferred": {
+      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
+    }
+  }
 }

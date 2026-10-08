@@ -30,15 +30,6 @@ const countries: PeopleCountriesData = {
 };
 
 describe("PeopleFicheHead (REQ-115)", () => {
-  // @req REQ-145
-  it("renders population and presence labels in English", () => {
-    render(<PeopleFicheHead language="en" hero={hero} countries={countries} />);
-
-    expect(screen.getByText(/people/)).toBeInTheDocument();
-    expect(screen.getByText(/2 countries of presence/)).toBeInTheDocument();
-    expect(screen.getByText(/ref\. 2025/)).toBeInTheDocument();
-  });
-
   // The overline opened on the corpus keys, PPL_YORUBA · FLG_BENOUECONGO. A
   // reader who can see the name has no use for its key, and the approved
   // preview reads "Peuple · Bantou (zone R)" (operator ruling, 2026-09-12).

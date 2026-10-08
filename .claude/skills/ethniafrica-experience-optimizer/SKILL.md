@@ -123,6 +123,6 @@ Four measured behaviours that look like design problems and are not:
 - Game mechanics and quiz items → `/afrik-game-designer`. This skill may say the
   Mercator game is a dead end; it may not redesign the game.
 - What to publish next → `content-strategist`.
-- Fiche content and sourcing → `/afrik-curator`.
+- Fiche content and sourcing — editorial work on the corpus.
 
 This skill proposes. It does not implement, and it does not merge.

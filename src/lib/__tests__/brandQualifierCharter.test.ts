@@ -123,7 +123,6 @@ describe("the product's qualifier, spelled in one place", () => {
   // @req REQ-019
   it("keeps the masthead short enough for a phone bar", () => {
     expect(chromeCopy.fr.headerTagline.length).toBeLessThanOrEqual(28);
-    expect(chromeCopy.en.headerTagline.length).toBeLessThanOrEqual(28);
   });
 
   // Python cannot import brand.ts, so the render engine keeps a copy of the
@@ -134,7 +133,7 @@ describe("the product's qualifier, spelled in one place", () => {
   it("is the qualifier the render engine draws under the wordmark", () => {
     const kit = JSON.parse(
       fs.readFileSync(
-        path.join(process.cwd(), "social/harness/brand-kit.json"),
+        path.join(process.cwd(), "social/brand/brand-kit.json"),
         "utf8"
       )
     ) as { tagline?: string };

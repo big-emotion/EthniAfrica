@@ -12,7 +12,7 @@ import { ACCENT_BY_ACCESS_MODE } from "@/lib/hubs/moduleRegistry";
 import { articlesCopy } from "@/lib/i18n/copy/articles";
 import { isLocale } from "@/lib/locale";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 
 interface ArticlesListingProps {
   params: Promise<{ lang: string }>;
@@ -42,12 +42,7 @@ export async function generateMetadata({
   const head = { title: copy.pageTitle, description: copy.pageSubtitle };
   return {
     ...head,
-    ...surfaceHead(
-      lang,
-      "dossiersHub",
-      (language) => getLocalizedRoute(language, "dossiersHub"),
-      head
-    ),
+    ...pageHead(getLocalizedRoute("fr", "dossiersHub"), head),
   };
 }
 

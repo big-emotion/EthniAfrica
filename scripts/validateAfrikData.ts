@@ -19,29 +19,20 @@ import { evaluateSourceUrl } from "@/lib/sources/authorized-source-catalog";
 import { parseKingdomPeriod } from "./afrik/parseKingdomPeriod";
 import { parseRelationFile } from "../src/lib/afrik/parsers/relationParser";
 import { parseDossierFile } from "../src/lib/afrik/parsers/dossierParser";
-import { applyDossierTranslation } from "../src/lib/dossiers/translation";
+import { parsePlaceFile } from "../src/lib/afrik/parsers/placeParser";
 import { parseNameRecordFile } from "../src/lib/afrik/parsers/nameRecordParser";
 import { parsePatronymeFile } from "../src/lib/afrik/parsers/patronymeParser";
 import type { SourceTier } from "../src/types/sources";
 // The same resolver the globe uses, so this gate and the rendering can never
 // disagree about which countries are drawable.
 import { getAdmin0Rings } from "../src/lib/atlas/overlays";
-// The same declaration the translation command reads, so the gate and the
-// classes cannot drift apart.
 import {
-  coverageGaps,
-  STRICT_MODEL_FILES,
-  type StrictModelFile,
-} from "../src/lib/i18n/translationClasses";
-import { translationViolations } from "../src/lib/afrik/translations/sidecarIntegrity";
-import { formatSegments, recordLeaves } from "../src/lib/i18n/modelLeafPaths";
-import {
-  ENTITY_TYPE_BY_CORPUS_DIRECTORY,
-  modelForEntity,
-  stripTranslationBlock,
-  translationBlockSchema,
-} from "../src/lib/afrik/translations/types";
-import { listTranslationSidecars } from "../src/lib/afrik/translations/sidecarPaths";
+  SEARCH_ANSWER_FOLLOW_UP_MAX_LENGTH,
+  SEARCH_ANSWER_LEAD_MAX_LENGTH,
+  searchAnswerSentenceProblems,
+  type SearchAnswerSentenceProblem,
+} from "../src/lib/search/answer";
+import { violatesReaderRegister } from "../src/lib/editorial/readerRegister";
 
 // ─── Exported ValidationResult (FR26-FR31) ───────────────────────────────────
 
@@ -941,8 +932,8 @@ export function checkPplDuplicates(datasetRoot: string): ValidationResult {
  * It sits at the corpus root, not under `peuples/`: every walker of that
  * directory — `collectPplFiles`, the people loader, the classification-status
  * contract suite — reads whatever `.json` it finds there and would parse the
- * ledger as a fiche. The `_` prefix keeps it out of the editorial-rules gate
- * the way the other curator worksheets are.
+ * ledger as a fiche. The `_` prefix marks it as a curator worksheet, the way
+ * the others are.
  */
 export const RETIRED_IDENTIFIERS_LEDGER = "_retired-identifiers.json";
 
@@ -1104,18 +1095,6 @@ function collectPeopleReferences(datasetRoot: string): PeopleReference[] {
 
   readClass("patronymes", (data, file) => {
     pushEach(file, "peoples", data.peoples, "peopleId");
-  });
-
-  readClass("systemes_onomastiques", (data, file) => {
-    const list = data.associatedPeoples;
-    if (!Array.isArray(list)) return;
-    list.forEach((item, index) => {
-      const value =
-        item && typeof item === "object"
-          ? (item as Record<string, unknown>).peopleId
-          : item;
-      push(file, `associatedPeoples[${index}]`, value);
-    });
   });
 
   return references;
@@ -2502,10 +2481,9 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
  * The CIA sunset The World Factbook on 2026-02-04 and its country URLs now
  * redirect to the farewell page, so each of these citations points a reader at
  * nothing. The edition stays an official, dated publication; only the locator
- * died (prior art: AUDIT-CIA-FACTBOOK-RETIREMENT-2026 in
- * docs/editorial/country-enrichment/COD-source-review.json).
+ * died.
  *
- * A ratchet with two edges, like `UNDATED_POLITY_CEILING`: above it, a new live
+ * A ratchet with two edges: above it, a new live
  * Factbook URL was cited; below it, repairs landed and the constant must follow
  * in the same change. A repair swaps the locator for a Wayback Machine
  * snapshot taken before 2026-02-04, or re-sources the claim. At 0, delete the
@@ -2871,236 +2849,6 @@ export function checkCountryNameFrDistinctFromOfficial(
       errors.push(
         `FR33 ${countryId}: nameFr duplicates nameOfficial ("${data.nameFr}") — nameFr must hold the name of ordinary use, not the protocol name`
       );
-    }
-  }
-
-  return { ok: errors.length === 0, errors, warnings };
-}
-
-/** Collect all colonial-border layer metadata JSON files under geo/colonial_borders/ */
-function collectColonialBorderLayers(
-  datasetRoot: string
-): Array<{ file: string; fullPath: string; dir: string }> {
-  const layersDir = path.join(datasetRoot, "geo", "colonial_borders");
-  if (!fs.existsSync(layersDir)) return [];
-
-  return fs
-    .readdirSync(layersDir)
-    .filter((f) => f.endsWith(".json"))
-    .map((file) => ({
-      file,
-      fullPath: path.join(layersDir, file),
-      dir: layersDir,
-    }));
-}
-
-interface ColonialBorderSource {
-  reference?: unknown;
-  tier?: unknown;
-  notes?: unknown;
-}
-
-interface ColonialBorderLayer {
-  id?: string;
-  colonial_powers?: unknown[];
-  geometry_file?: string;
-  sources?: ColonialBorderSource[];
-}
-
-/** Check whether a GeoJSON geometry's rings (Polygon/MultiPolygon) are closed. */
-function ringIsClosed(ring: unknown): boolean {
-  if (!Array.isArray(ring) || ring.length < 2) return false;
-  const first = ring[0];
-  const last = ring[ring.length - 1];
-  return JSON.stringify(first) === JSON.stringify(last);
-}
-
-const GEOJSON_GEOMETRY_TYPES = new Set([
-  "Point",
-  "MultiPoint",
-  "LineString",
-  "MultiLineString",
-  "Polygon",
-  "MultiPolygon",
-]);
-
-/** Validate a parsed GeoJSON document is a FeatureCollection with well-formed geometries. */
-function validateGeoJson(data: unknown): string[] {
-  const errors: string[] = [];
-  const doc = data as { type?: unknown; features?: unknown };
-
-  if (doc?.type !== "FeatureCollection" || !Array.isArray(doc.features)) {
-    errors.push("not a GeoJSON FeatureCollection with a features[] array");
-    return errors;
-  }
-
-  for (const feature of doc.features as unknown[]) {
-    const geometry = (
-      feature as { geometry?: { type?: unknown; coordinates?: unknown } }
-    )?.geometry;
-    const geomType = geometry?.type;
-
-    if (typeof geomType !== "string" || !GEOJSON_GEOMETRY_TYPES.has(geomType)) {
-      errors.push(`feature has invalid or missing geometry type "${geomType}"`);
-      continue;
-    }
-
-    if (geomType === "Polygon") {
-      const rings = (geometry?.coordinates ?? []) as unknown[];
-      for (const ring of rings) {
-        if (!ringIsClosed(ring)) {
-          errors.push(
-            "Polygon ring is not closed (first and last coordinate differ)"
-          );
-        }
-      }
-    } else if (geomType === "MultiPolygon") {
-      const polygons = (geometry?.coordinates ?? []) as unknown[];
-      for (const rings of polygons) {
-        for (const ring of rings as unknown[]) {
-          if (!ringIsClosed(ring)) {
-            errors.push(
-              "MultiPolygon ring is not closed (first and last coordinate differ)"
-            );
-          }
-        }
-      }
-    }
-  }
-
-  return errors;
-}
-
-/**
- * CR1 – Every colonial-border layer cites at least one source, each with a
- * valid tier, and its geometry parses as valid GeoJSON (FeatureCollection,
- * closed rings). A layer resting only on `unverified` sources, or citing
- * Wikipedia directly, is reported and published labelled (DEC-055, REQ-169).
- */
-export function checkColonialBorderCr1(datasetRoot: string): ValidationResult {
-  const errors: string[] = [];
-  const warnings: string[] = [];
-
-  for (const { file, fullPath, dir } of collectColonialBorderLayers(
-    datasetRoot
-  )) {
-    let data: ColonialBorderLayer;
-    try {
-      data = JSON.parse(fs.readFileSync(fullPath, "utf-8"));
-    } catch {
-      warnings.push(`${file}: could not parse JSON`);
-      continue;
-    }
-
-    const layerId = data.id ?? file;
-    const sources = data.sources ?? [];
-
-    if (sources.length === 0) {
-      errors.push(
-        `CR1: ${layerId}: missing sources[] — a colonial border needs at least one source, at any standing`
-      );
-    }
-
-    sources.forEach((source, i) => {
-      const reference =
-        typeof source.reference === "string" ? source.reference : "";
-
-      if (/wikipedia\.org/i.test(reference)) {
-        warnings.push(
-          `CR1: ${layerId}: sources[${i}] cites Wikipedia directly — cite the primary source it points to, at its own standing: "${reference}"`
-        );
-      }
-
-      if (declaredStanding(source.tier) === null) {
-        errors.push(
-          `CR1: ${layerId}: sources[${i}] declares standing "${String(source.tier)}" — a tier is required, one of ${[...SOURCE_STANDINGS].join(", ")}`
-        );
-      }
-    });
-
-    const standing = unauthoritativeStanding(sources);
-    if (standing) warnings.push(`CR1: ${layerId}: ${standing}`);
-
-    if (!data.geometry_file) {
-      errors.push(`CR1: ${layerId}: missing geometry_file`);
-      continue;
-    }
-
-    const geometryPath = path.join(dir, data.geometry_file);
-    if (!fs.existsSync(geometryPath)) {
-      errors.push(
-        `CR1: ${layerId}: geometry_file "${data.geometry_file}" not found`
-      );
-      continue;
-    }
-
-    let geometry: unknown;
-    try {
-      geometry = JSON.parse(fs.readFileSync(geometryPath, "utf-8"));
-    } catch {
-      errors.push(
-        `CR1: ${layerId}: geometry_file "${data.geometry_file}" is not valid JSON`
-      );
-      continue;
-    }
-
-    const geoJsonErrors = validateGeoJson(geometry);
-    for (const geoJsonError of geoJsonErrors) {
-      errors.push(`CR1: ${layerId}: invalid GeoJSON — ${geoJsonError}`);
-    }
-  }
-
-  return { ok: errors.length === 0, errors, warnings };
-}
-
-/**
- * CR2 – Every ISO 3166-1 alpha-3 code referenced in a colonial-border layer's
- * `colonial_powers` must be a known country id (present in
- * `public/pays_demographie.csv`, the `afrik_countries` source of truth).
- */
-export function checkColonialBorderCr2(
-  datasetRoot: string,
-  paysCsvPath: string
-): ValidationResult {
-  const errors: string[] = [];
-  const warnings: string[] = [];
-
-  const layers = collectColonialBorderLayers(datasetRoot);
-  if (layers.length === 0) {
-    return { ok: true, errors, warnings };
-  }
-
-  const iso3166Regex = /^[A-Z]{3}$/;
-  const knownCountryIds = new Set(
-    loadCSV(paysCsvPath)
-      .map((row) => row.id_pays)
-      .filter(Boolean)
-  );
-
-  for (const { file, fullPath } of layers) {
-    let data: ColonialBorderLayer;
-    try {
-      data = JSON.parse(fs.readFileSync(fullPath, "utf-8"));
-    } catch {
-      warnings.push(`${file}: could not parse JSON`);
-      continue;
-    }
-
-    const layerId = data.id ?? file;
-    const colonialPowers = data.colonial_powers ?? [];
-
-    for (const code of colonialPowers) {
-      if (typeof code !== "string" || !iso3166Regex.test(code)) {
-        errors.push(
-          `CR2: ${layerId}: invalid ISO 3166-1 α-3 country code "${code}" (expected 3 uppercase letters)`
-        );
-        continue;
-      }
-      if (!knownCountryIds.has(code)) {
-        errors.push(
-          `CR2: ${layerId}: unknown ISO 3166-1 α-3 country code "${code}" — not found in afrik_countries`
-        );
-      }
     }
   }
 
@@ -4141,6 +3889,77 @@ export function checkDossierFicheModel(datasetRoot: string): ValidationResult {
 }
 
 /**
+ * LOC_* place fiches (REQ-193, DEC-069) — strict shape, identifier equal to
+ * the filename, and links that resolve. A place points outward to its country
+ * and peoples; nothing points back, so an unresolved link here is the only
+ * place the corpus can notice it. A form resting on no `official` or
+ * `referenced` source is reported, never refused (DEC-055).
+ */
+export function checkPlaceFicheModel(datasetRoot: string): ValidationResult {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+  const placeDir = path.join(datasetRoot, "lieux");
+
+  if (!fs.existsSync(placeDir)) return { ok: true, errors, warnings };
+
+  const pplIds = loadPplIds(datasetRoot);
+
+  for (const file of fs
+    .readdirSync(placeDir)
+    .filter((f) => f.endsWith(".json"))) {
+    let raw: unknown;
+    try {
+      raw = JSON.parse(fs.readFileSync(path.join(placeDir, file), "utf-8"));
+    } catch {
+      errors.push(`REQ-193: ${file}: could not parse JSON`);
+      continue;
+    }
+
+    const parsed = parsePlaceFile(raw);
+    if (!parsed.success || !parsed.data) {
+      for (const message of parsed.errors) {
+        errors.push(`REQ-193: ${file}: ${message}`);
+      }
+      continue;
+    }
+
+    const place = parsed.data;
+
+    if (file !== `${place.id}.json`) {
+      errors.push(`REQ-193: ${file}: file should be named ${place.id}.json`);
+    }
+
+    if (
+      !fs.existsSync(path.join(datasetRoot, "pays", `${place.countryId}.json`))
+    ) {
+      errors.push(
+        `REQ-193: ${file}: countryId "${place.countryId}" does not resolve to an existing country fiche`
+      );
+    }
+
+    for (const { peopleId } of place.associatedPeoples) {
+      if (!pplIds.has(peopleId)) {
+        errors.push(
+          `REQ-193: ${file}: peopleId "${peopleId}" does not resolve to an existing PPL fiche`
+        );
+      }
+    }
+
+    for (const name of place.names) {
+      const standing = unauthoritativeStanding([
+        ...name.sources,
+        ...name.accounts.flatMap((account) => account.sources),
+      ]);
+      if (standing) {
+        warnings.push(`REQ-193: ${file}: form "${name.nameText}" ${standing}`);
+      }
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings };
+}
+
+/**
  * True when a source is `official` or `referenced`. `unverified` and the
  * unadjudicated `needs_review` are legal standings that publish; they only
  * decide whether a record is reported as resting on neither.
@@ -4442,167 +4261,6 @@ export function checkPatronymeFicheModel(
   return { ok: errors.length === 0, errors, warnings };
 }
 
-/**
- * ETNI-1460 – Naming-system model validator (docs/design/naming-subtype-taxonomy.md).
- *
- * Validates dataset/source/afrik/systemes_onomastiques/*.json fiches against
- * one strict model per subtype (public/modele-nom-<subtype>.json): the
- * shared fields are read off the intersection of every subtype model so the
- * set is declared once, in the model files, rather than duplicated here; the
- * subtype-only fields are whatever a given model adds on top of that
- * intersection. A fiche may only carry the subtype-only fields of its own
- * declared namingSystem — a field belonging to another system is refused.
- * "undetermined" requires the shared fields and forbids every subtype-only
- * field, so it can never read as (or be mistaken for) the clan model.
- */
-
-const NAMING_SYSTEM_SUBTYPE_MODELS: Record<string, string> = {
-  totemic_clan: "modele-nom-totemique.json",
-  patronymic_chain: "modele-nom-patronymique.json",
-  nisba: "modele-nom-nisba.json",
-  jamu: "modele-nom-jamu.json",
-};
-
-const NAMING_SYSTEM_TIERS = new Set(["official", "referenced", "unverified"]);
-
-/** List every dataset/source/afrik/systemes_onomastiques/*.json file path. Empty when the dir is absent. */
-function collectNamingSystemFiles(
-  datasetRoot: string
-): Array<{ file: string; fullPath: string }> {
-  const dir = path.join(datasetRoot, "systemes_onomastiques");
-  if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
-    .filter((f) => f.endsWith(".json"))
-    .map((file) => ({ file, fullPath: path.join(dir, file) }));
-}
-
-/** Top-level keys of a subtype model, excluding _meta. */
-function loadNamingSystemSubtypeKeys(
-  publicRoot: string
-): Record<string, Set<string>> {
-  const keysBySubtype: Record<string, Set<string>> = {};
-  for (const [subtype, fileName] of Object.entries(
-    NAMING_SYSTEM_SUBTYPE_MODELS
-  )) {
-    const modelPath = path.join(publicRoot, fileName);
-    const model = JSON.parse(fs.readFileSync(modelPath, "utf-8"));
-    keysBySubtype[subtype] = new Set(
-      Object.keys(model).filter((k) => k !== "_meta")
-    );
-  }
-  return keysBySubtype;
-}
-
-function namingSystemSourceTierErrors(
-  file: string,
-  fieldPath: string,
-  sources: unknown
-): string[] {
-  const errors: string[] = [];
-  const list = Array.isArray(sources) ? sources : [];
-  list.forEach((source, i) => {
-    const tier = source?.tier;
-    if (!NAMING_SYSTEM_TIERS.has(tier)) {
-      errors.push(
-        `ONS-tier: ${file}: ${fieldPath}[${i}] carries no valid tier ("official" | "referenced" | "unverified") — every source must be explicitly tiered`
-      );
-    }
-  });
-  return errors;
-}
-
-export function checkNamingSystemModel(datasetRoot: string): ValidationResult {
-  const errors: string[] = [];
-  const warnings: string[] = [];
-
-  const files = collectNamingSystemFiles(datasetRoot);
-  if (files.length === 0) return { ok: true, errors, warnings };
-
-  const keysBySubtype = loadNamingSystemSubtypeKeys(PUBLIC_ROOT);
-  const subtypeNames = Object.keys(keysBySubtype);
-
-  const sharedKeys = subtypeNames.reduce(
-    (shared, subtype) => {
-      if (!shared) return new Set(keysBySubtype[subtype]);
-      return new Set([...shared].filter((k) => keysBySubtype[subtype].has(k)));
-    },
-    null as Set<string> | null
-  ) as Set<string>;
-
-  const subtypeOnlyKeys: Record<string, Set<string>> = {};
-  const allSubtypeOnlyKeys = new Set<string>();
-  for (const subtype of subtypeNames) {
-    const onlyKeys = new Set(
-      [...keysBySubtype[subtype]].filter((k) => !sharedKeys.has(k))
-    );
-    subtypeOnlyKeys[subtype] = onlyKeys;
-    onlyKeys.forEach((k) => allSubtypeOnlyKeys.add(k));
-  }
-
-  for (const { file, fullPath } of files) {
-    let data: Record<string, unknown>;
-    try {
-      data = JSON.parse(fs.readFileSync(fullPath, "utf-8"));
-    } catch {
-      errors.push(`${file}: could not parse JSON`);
-      continue;
-    }
-
-    const namingSystem = data.namingSystem;
-    const isKnownSubtype =
-      typeof namingSystem === "string" && namingSystem in keysBySubtype;
-    const isUndetermined = namingSystem === "undetermined";
-
-    if (!isKnownSubtype && !isUndetermined) {
-      errors.push(
-        `ONS-namingSystem: ${file}: namingSystem "${namingSystem}" is not a recognized subtype and is not "undetermined"`
-      );
-      continue;
-    }
-
-    for (const key of sharedKeys) {
-      if (!(key in data) || data[key] === null || data[key] === undefined) {
-        errors.push(
-          `ONS-shared: ${file}: missing required shared field "${key}"`
-        );
-      }
-    }
-
-    const allowedSubtypeOnlyKeys = isUndetermined
-      ? new Set<string>()
-      : subtypeOnlyKeys[namingSystem as string];
-
-    for (const key of allSubtypeOnlyKeys) {
-      if (!(key in data)) continue;
-      if (allowedSubtypeOnlyKeys.has(key)) continue;
-      errors.push(
-        `ONS-subtype: ${file}: field "${key}" belongs to another naming system and is refused for namingSystem "${String(namingSystem)}"`
-      );
-    }
-
-    const attestedForms = Array.isArray(data.attestedForms)
-      ? data.attestedForms
-      : [];
-    attestedForms.forEach((entry, i) => {
-      errors.push(
-        ...namingSystemSourceTierErrors(
-          file,
-          `attestedForms[${i}].attestation`,
-          [entry?.attestation]
-        )
-      );
-    });
-
-    const origin = data.origin as { sources?: unknown } | undefined;
-    errors.push(
-      ...namingSystemSourceTierErrors(file, "origin.sources", origin?.sources)
-    );
-  }
-
-  return { ok: errors.length === 0, errors, warnings };
-}
-
 // ─── Language model (ETNI-1503) ───────────────────────────────────────────────
 
 const LANGUAGE_SOURCE_TIERS = new Set(["official", "referenced", "unverified"]);
@@ -4742,7 +4400,7 @@ export function checkLanguageStrictSchema(
         Object.keys(data.content as Record<string, unknown>)
       );
       const missingContent = [...modelContentKeys].filter(
-        (k) => !ficheContentKeys.has(k)
+        (k) => !ficheContentKeys.has(k) && !OPTIONAL_CONTENT_KEYS.has(k)
       );
       const extraContent = [...ficheContentKeys].filter(
         (k) => !modelContentKeys.has(k)
@@ -4812,7 +4470,11 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // every fiche that omits them.
   // 7041 -> 7025 on 2026-09-29: spelling aliases and missing appellation keys
   // filled on the most-searched peoples, each one a key the model declares.
-  peuple: 7006,
+  // 7006 -> 7005 on 2026-10-07: PPL_TIV gained `spellingAliases` when the
+  // spelling note was moved out of its self-appellation.
+  // 7005 -> 7004 on 2026-10-07: PPL_BAOULE gained `spellingAliases` for the
+  // 19th-century spellings its sources attest.
+  peuple: 7004,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
@@ -4824,8 +4486,18 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
 };
 
 // Authoring blocks no model declares: `_meta` is curator metadata and
-// `_translation` is the parity gate's deferral, exactly as the language check.
+// `_translation` is a translation deferral fiches still carry from the retired
+// corpus-translation workflow, exempt exactly as in the language check.
 const AUTHORING_KEYS = new Set(["_meta", "_translation"]);
+
+// Keys a model documents under `content` that a fiche may leave out without
+// drifting: the page has a fallback for each, so absence is not a defect and
+// must not be counted against the strict-model ceilings.
+const OPTIONAL_CONTENT_KEYS: ReadonlySet<string> = new Set([
+  "searchAnswer",
+  "speakers",
+  "originDebated",
+]);
 
 function declaredKeys(value: unknown): Set<string> {
   if (typeof value !== "object" || value === null || Array.isArray(value)) {
@@ -4892,7 +4564,11 @@ export function checkStrictModelKeys(
     const ficheKeys = declaredKeys(fichePart);
     const findings = [
       ...[...modelKeys]
-        .filter((key) => !ficheKeys.has(key))
+        .filter(
+          (key) =>
+            !ficheKeys.has(key) &&
+            !(section === "content" && OPTIONAL_CONTENT_KEYS.has(key))
+        )
         .map((key) => `${section}: missing key "${key}"`),
       ...[...ficheKeys]
         .filter((key) => !modelKeys.has(key))
@@ -4956,6 +4632,240 @@ export function checkStrictModelKeys(
   };
 }
 
+// ─── Search answer fields ────────────────────────────────────────────────────
+
+const SEARCH_ANSWER_KEYS: ReadonlySet<string> = new Set(["lead", "followUp"]);
+
+function searchAnswerSentenceErrors(
+  where: string,
+  field: "lead" | "followUp",
+  value: unknown
+): string[] {
+  const label = `${where}.searchAnswer.${field}`;
+  if (typeof value !== "string" || value.trim() === "") {
+    return [`REQ-178: ${label} must be a non-empty string (empty)`];
+  }
+  const maxLength =
+    field === "lead"
+      ? SEARCH_ANSWER_LEAD_MAX_LENGTH
+      : SEARCH_ANSWER_FOLLOW_UP_MAX_LENGTH;
+  const messages: Record<SearchAnswerSentenceProblem, string> = {
+    "too-long": `is over ${maxLength} characters`,
+    "not-a-question": `must be a question ending with "?"`,
+    register:
+      "breaks the reader-facing register (internal identifier, path or curation vocabulary)",
+    "scholarly-word": "uses a scholarly word the result page never shows",
+  };
+  return searchAnswerSentenceProblems(field, value).map(
+    (problem) => `REQ-178: ${label} ${messages[problem]}`
+  );
+}
+
+function speakerEstimateErrors(where: string, block: unknown): string[] {
+  const rows = (block as { byCountry?: unknown } | null)?.byCountry;
+  if (!Array.isArray(rows) || rows.length === 0) {
+    return [`REQ-178: ${where}.speakers.byCountry must be a non-empty array`];
+  }
+  const errors: string[] = [];
+  const seen = new Set<string>();
+  rows.forEach((raw, index) => {
+    const row = (raw ?? {}) as Record<string, unknown>;
+    const at = `${where}.speakers.byCountry[${index}]`;
+    const country = row.country;
+    if (
+      typeof country !== "string" ||
+      !(
+        AFRICAN_REFERENCE_COUNTRY_CODES.has(country) ||
+        OFF_MAP_COUNTRIES.has(country)
+      )
+    ) {
+      errors.push(
+        `REQ-178: ${at}.country "${String(country)}" is not a known ISO 3166-1 alpha-3 code`
+      );
+    } else if (seen.has(country)) {
+      errors.push(`REQ-178: ${at}.country "${country}" is declared twice`);
+    } else {
+      seen.add(country);
+    }
+    if (
+      typeof row.speakers !== "number" ||
+      !Number.isFinite(row.speakers) ||
+      row.speakers <= 0
+    ) {
+      errors.push(
+        `REQ-178: ${at}.speakers must be a positive number of people`
+      );
+    }
+    const source = (row.source ?? {}) as Record<string, unknown>;
+    if (typeof source.title !== "string" || source.title.trim() === "") {
+      errors.push(`REQ-178: ${at}.source.title is required`);
+    }
+    if (!SOURCE_STANDINGS.has(String(source.tier))) {
+      errors.push(
+        `REQ-178: ${at}.source.tier must be official, referenced, unverified or needs_review`
+      );
+    }
+    // Title and notes reach the reader verbatim, like any other source.
+    for (const field of ["title", "notes"] as const) {
+      const text = source[field];
+      if (typeof text === "string" && violatesReaderRegister(text)) {
+        errors.push(
+          `REQ-178: ${at}.source.${field} breaks the reader-facing register`
+        );
+      }
+    }
+  });
+  return errors;
+}
+
+function listJsonFiles(
+  datasetRoot: string,
+  directory: string
+): Array<{ file: string; fullPath: string }> {
+  const dir = path.join(datasetRoot, directory);
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((name) => name.endsWith(".json") && !name.startsWith("_"))
+    .sort()
+    .map((name) => ({
+      file: `${directory}/${name}`,
+      fullPath: path.join(dir, name),
+    }));
+}
+
+/**
+ * REQ-178 – The two optional sentences a fiche may write for the result page
+ * (`searchAnswer.lead`, `searchAnswer.followUp`) and the declared speaker
+ * estimates of languages and families (`speakers.byCountry`), plus the
+ * boolean a language sets when the origin of its name is debated.
+ *
+ * Both are published to the reader as written, so they obey the register that
+ * `gaps[].reason` and `sources[].notes` obey. Absent fields pass: the page
+ * falls back to a sentence template, and a fiche is never required to write
+ * one. Patronymes carry no `content` block, so theirs sits at the top level.
+ */
+export function checkSearchAnswerFields(datasetRoot: string): ValidationResult {
+  const errors: string[] = [];
+
+  const sections: Array<{
+    files: Array<{ file: string; fullPath: string }>;
+    carriesSpeakers: boolean;
+    carriesOriginDebated: boolean;
+    inContent: boolean;
+  }> = [
+    {
+      files: collectPplFiles(datasetRoot).map(
+        ({ flgFolder, file, fullPath }) => ({
+          file: `peuples/${flgFolder}/${file}`,
+          fullPath,
+        })
+      ),
+      carriesSpeakers: false,
+      carriesOriginDebated: false,
+      inContent: true,
+    },
+    {
+      files: listJsonFiles(datasetRoot, "pays"),
+      carriesSpeakers: false,
+      carriesOriginDebated: false,
+      inContent: true,
+    },
+    {
+      files: collectLanguageFiles(datasetRoot).map(({ file, fullPath }) => ({
+        file: `langues/${file}`,
+        fullPath,
+      })),
+      carriesSpeakers: true,
+      carriesOriginDebated: true,
+      inContent: true,
+    },
+    {
+      files: collectFlgFiles(datasetRoot).map(({ file, fullPath }) => ({
+        file: `famille_linguistique/${file}`,
+        fullPath,
+      })),
+      carriesSpeakers: true,
+      carriesOriginDebated: false,
+      inContent: true,
+    },
+    {
+      files: listJsonFiles(datasetRoot, "patronymes"),
+      carriesSpeakers: false,
+      carriesOriginDebated: false,
+      inContent: false,
+    },
+  ];
+
+  for (const {
+    files,
+    carriesSpeakers,
+    carriesOriginDebated,
+    inContent,
+  } of sections) {
+    for (const { file, fullPath } of files) {
+      const fiche = readFiche(fullPath);
+      if (!fiche) continue;
+      const holder = (inContent ? (fiche.content ?? {}) : fiche) as Record<
+        string,
+        unknown
+      >;
+      const where = `${file}: ${inContent ? "content" : "root"}`;
+
+      const block = holder.searchAnswer;
+      if (block !== undefined) {
+        if (
+          typeof block !== "object" ||
+          block === null ||
+          Array.isArray(block)
+        ) {
+          errors.push(`REQ-178: ${where}.searchAnswer must be an object`);
+        } else {
+          for (const key of Object.keys(block)) {
+            if (!SEARCH_ANSWER_KEYS.has(key)) {
+              errors.push(
+                `REQ-178: ${where}.searchAnswer has unexpected key "${key}"`
+              );
+            }
+          }
+          for (const field of ["lead", "followUp"] as const) {
+            if (field in block) {
+              errors.push(
+                ...searchAnswerSentenceErrors(
+                  where,
+                  field,
+                  (block as Record<string, unknown>)[field]
+                )
+              );
+            }
+          }
+        }
+      }
+
+      if (holder.originDebated !== undefined) {
+        if (!carriesOriginDebated) {
+          errors.push(
+            `REQ-178: ${where}.originDebated is not allowed: only languages declare it here (name records carry their own)`
+          );
+        } else if (typeof holder.originDebated !== "boolean") {
+          errors.push(`REQ-178: ${where}.originDebated must be a boolean`);
+        }
+      }
+
+      if (holder.speakers !== undefined) {
+        errors.push(
+          ...(carriesSpeakers
+            ? speakerEstimateErrors(where, holder.speakers)
+            : [
+                `REQ-178: ${where}.speakers is not allowed: only languages and language families carry speaker estimates`,
+              ])
+        );
+      }
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings: [] };
+}
 // Both lists a country fiche uses to name its peoples carry the same
 // `peopleId` and `languageFamily` pair.
 const COUNTRY_PEOPLE_LISTS: ReadonlyArray<{
@@ -5083,202 +4993,6 @@ export function checkCountryPeopleMembership(
     ],
     warnings: [],
   };
-}
-
-/**
- * REQ-143 — every leaf of every strict model carries a translation class.
- *
- * The class table is code, so a field added to a model with no class would
- * otherwise be translated by whatever the command defaults to — and the
- * default for a field nobody thought about is exactly what turned an
- * exonym's gloss into a false statement. The gate walks the models on disk
- * against the declaration both ways: an undeclared leaf fails, and so does a
- * declaration for a leaf the model no longer has.
- */
-// @req REQ-143
-export function checkTranslationClassCoverage(
-  publicRoot: string
-): ValidationResult {
-  const errors: string[] = [];
-  const declared = new Set<string>(STRICT_MODEL_FILES);
-  const onDisk = fs.existsSync(publicRoot)
-    ? fs
-        .readdirSync(publicRoot)
-        .filter((name) => /^modele-.*\.json$/.test(name))
-    : [];
-
-  for (const model of STRICT_MODEL_FILES) {
-    const modelPath = path.join(publicRoot, model);
-    if (!fs.existsSync(modelPath)) {
-      errors.push(`REQ-143: ${model} is declared but missing from public/`);
-      continue;
-    }
-    let modelJson: unknown;
-    try {
-      modelJson = JSON.parse(fs.readFileSync(modelPath, "utf-8"));
-    } catch {
-      errors.push(`REQ-143: ${model}: could not parse JSON`);
-      continue;
-    }
-    const gaps = coverageGaps(model as StrictModelFile, modelJson);
-    for (const leaf of gaps.undeclared) {
-      errors.push(
-        `REQ-143: ${model}: leaf ${leaf} has no translation class (declare it in src/lib/i18n/translationClasses.ts)`
-      );
-    }
-    for (const leaf of gaps.dead) {
-      errors.push(
-        `REQ-143: ${model}: declared leaf ${leaf} is not in the model (dead declaration)`
-      );
-    }
-  }
-
-  for (const name of onDisk.sort()) {
-    if (declared.has(name)) continue;
-    errors.push(
-      `REQ-143: ${name} has no translation class declaration (add it to STRICT_MODEL_FILES)`
-    );
-  }
-
-  return { ok: errors.length === 0, errors, warnings: [] };
-}
-
-/**
- * TR-1 — every translated record is a faithful sidecar of a fiche that exists
- * (REQ-142 AC3, REQ-143 AC1).
- *
- * A sidecar lives outside the source tree, so no other check sees it. This
- * one asks five things of each file under dataset/translations/<lang>/: a
- * source fiche at the mirrored path, a `_translation` block whose kind is one
- * of the three, the source's key set and leaf paths (the translation adds
- * and drops nothing), class-1 leaves equal to the source's, and the name of
- * a glossed invariant kept before its translated gloss.
- *
- * The class rules are the ones the translation command verifies before it
- * writes (`translationViolations`), so a record the command produced is a
- * record this gate accepts; a review-required leaf stored at machine
- * provenance is deliberately not a finding in either.
- */
-// @req REQ-142
-// @req REQ-143
-export function checkTranslationSidecars(
-  datasetRoot: string,
-  translationsRoot: string = path.join(datasetRoot, "..", "..", "translations")
-): ValidationResult {
-  const errors: string[] = [];
-  const locales = fs.existsSync(translationsRoot)
-    ? fs
-        .readdirSync(translationsRoot, { withFileTypes: true })
-        .filter((entry) => entry.isDirectory() && entry.name === "en")
-        .map((entry) => entry.name as "en")
-    : [];
-
-  for (const lang of locales) {
-    for (const relativePath of listTranslationSidecars(
-      translationsRoot,
-      lang
-    )) {
-      const label = `${lang}/${relativePath}`;
-      const [directory] = relativePath.split("/");
-      const entityType = ENTITY_TYPE_BY_CORPUS_DIRECTORY[directory];
-      if (!entityType && directory !== "dossiers") {
-        errors.push(`TR-1: ${label}: not under a corpus directory`);
-        continue;
-      }
-
-      const sourceFile = path.join(datasetRoot, relativePath);
-      if (!fs.existsSync(sourceFile)) {
-        errors.push(`TR-1: ${label}: no source fiche at ${relativePath}`);
-        continue;
-      }
-
-      let source: Record<string, unknown>;
-      let sidecar: Record<string, unknown>;
-      try {
-        source = JSON.parse(fs.readFileSync(sourceFile, "utf-8"));
-        sidecar = JSON.parse(
-          fs.readFileSync(
-            path.join(translationsRoot, lang, relativePath),
-            "utf-8"
-          )
-        );
-      } catch (error) {
-        errors.push(
-          `TR-1: ${label}: could not parse JSON (${error instanceof Error ? error.message : String(error)})`
-        );
-        continue;
-      }
-
-      // Dossiers were already shipped as sparse, file-served overlays before
-      // afrik_translations existed. Their reader owns that contract; asking
-      // the full-record store validator to reinterpret it would reject valid
-      // translations and make the recette loader try to persist partial rows.
-      if (directory === "dossiers") {
-        const parsedSource = parseDossierFile(source);
-        if (
-          !parsedSource.success ||
-          !parsedSource.data ||
-          !applyDossierTranslation(parsedSource.data, sidecar)
-        ) {
-          errors.push(`TR-1: ${label}: invalid dossier translation overlay`);
-        }
-        continue;
-      }
-
-      // The unsupported-directory branch above continued already. This guard
-      // keeps the narrowing explicit for TypeScript and future directories.
-      if (!entityType) continue;
-
-      const { block, content } = stripTranslationBlock(sidecar);
-      const parsedBlock = translationBlockSchema.safeParse(block);
-      if (!parsedBlock.success) {
-        const detail = parsedBlock.error.issues
-          .map(
-            (issue) =>
-              `${issue.path.join(".") || "_translation"}: ${issue.message}`
-          )
-          .join("; ");
-        errors.push(
-          `TR-1: ${label}: declares no valid translation kind — ${detail}`
-        );
-        continue;
-      }
-
-      const sourceKeys = Object.keys(source).join(",");
-      const sidecarKeys = Object.keys(content).join(",");
-      if (sourceKeys !== sidecarKeys) {
-        errors.push(
-          `TR-1: ${label}: top-level keys differ from the source (source: ${sourceKeys}; sidecar: ${sidecarKeys})`
-        );
-        continue;
-      }
-      const sourcePaths = new Set(
-        recordLeaves(source).map((leaf) => formatSegments(leaf.segments))
-      );
-      const sidecarPaths = new Set(
-        recordLeaves(content).map((leaf) => formatSegments(leaf.segments))
-      );
-      const missing = [...sourcePaths].filter((p) => !sidecarPaths.has(p));
-      const added = [...sidecarPaths].filter((p) => !sourcePaths.has(p));
-      if (missing.length > 0 || added.length > 0) {
-        errors.push(
-          `TR-1: ${label}: leaf paths differ from the source (missing: ${missing.slice(0, 5).join(", ") || "none"}; added: ${added.slice(0, 5).join(", ") || "none"})`
-        );
-        continue;
-      }
-
-      const model = modelForEntity(entityType, source);
-      for (const violation of translationViolations({
-        model,
-        source,
-        sidecar: content,
-      })) {
-        errors.push(`TR-1: ${label}: ${violation.path} — ${violation.message}`);
-      }
-    }
-  }
-
-  return { ok: errors.length === 0, errors, warnings: [] };
 }
 
 // ─── Run summary ─────────────────────────────────────────────────────────────
@@ -5468,6 +5182,12 @@ async function main() {
     result: checkPeopleReferencesResolve(datasetRoot),
   });
 
+  console.log("REQ-178 – Search answer fields...");
+  newChecks.push({
+    name: "REQ-178 Search answer fields",
+    result: checkSearchAnswerFields(datasetRoot),
+  });
+
   console.log("REQ-148 – Kingdom time ranges...");
   newChecks.push({
     name: "REQ-148 Kingdom time ranges",
@@ -5584,21 +5304,6 @@ async function main() {
     ),
   });
 
-  console.log("CR1 – Colonial-border source tier + GeoJSON validity...");
-  newChecks.push({
-    name: "CR1 Colonial-border source tier + GeoJSON validity",
-    result: checkColonialBorderCr1(datasetRoot),
-  });
-
-  console.log("CR2 – Colonial-border ISO validity...");
-  newChecks.push({
-    name: "CR2 Colonial-border ISO validity",
-    result: checkColonialBorderCr2(
-      datasetRoot,
-      path.join(PUBLIC_ROOT, "pays_demographie.csv")
-    ),
-  });
-
   console.log("CR3 – Colonial-event imposed_name → Epic 8 name record...");
   newChecks.push({
     name: "CR3 Colonial-event imposed_name reference",
@@ -5695,12 +5400,10 @@ async function main() {
     result: checkDossierFicheModel(datasetRoot),
   });
 
-  console.log(
-    "ETNI-1460 – Naming-system model (subtype fields + undetermined)..."
-  );
+  console.log("REQ-193 - Place fiche model (strict shape + links resolve)...");
   newChecks.push({
-    name: "ETNI-1460 Naming-system model",
-    result: checkNamingSystemModel(datasetRoot),
+    name: "REQ-193 Place fiche model",
+    result: checkPlaceFicheModel(datasetRoot),
   });
 
   console.log(
@@ -5750,22 +5453,6 @@ async function main() {
   newChecks.push({
     name: "FR111 Historical-affiliation model",
     result: checkHistoricalAffiliationModel(datasetRoot),
-  });
-
-  console.log(
-    "REQ-143 – Translation class coverage (every strict-model leaf classed)..."
-  );
-  newChecks.push({
-    name: "REQ-143 Translation class coverage",
-    result: checkTranslationClassCoverage(PUBLIC_ROOT),
-  });
-
-  console.log(
-    "TR-1 – Translation sidecars (source counterpart, declared kind, invariants kept)..."
-  );
-  newChecks.push({
-    name: "TR-1 Translation sidecars",
-    result: checkTranslationSidecars(datasetRoot),
   });
 
   if (process.env.CHECK_SOURCE_URLS === "true") {

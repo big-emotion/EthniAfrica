@@ -1,10 +1,9 @@
 import { notFound } from "next/navigation";
 import { ModuleAvailabilityProvider } from "@/components/hubs/ModuleAvailabilityProvider";
 import { DossierMenuProvider } from "@/components/dossiers/DossierMenuProvider";
-import { LocalePublicationProvider } from "@/components/layout/LocalePublicationProvider";
 import { getModuleAvailabilityMap } from "@/lib/hubs/moduleAvailability";
 import { getDossierMenuEntries } from "@/lib/dossiers/menu";
-import { getLocalePublicationMode, isPublishedLocale } from "@/lib/locale";
+import { isLocale } from "@/lib/locale";
 import type { Language } from "@/types/shared";
 
 /**
@@ -13,7 +12,7 @@ import type { Language } from "@/types/shared";
  * to `lang = "quiz"` and served the home page with a 200 instead of a 404.
  *
  * The middleware's locale resolution does not cover this — it only sees
- * two-letter segments, and sends the unpublished ones to the default.
+ * two-letter segments, and sends the ones that are not French to French.
  * Anything longer reached the page untouched, and reached it outside the
  * locale tree, which also costs the relaxed style CSP the fiche components
  * need: the home rendered unstyled. The same allow-list decides here, so the
@@ -36,18 +35,15 @@ export default async function LangLayout({
   children: React.ReactNode;
 }) {
   const { lang } = await params;
-  const localeMode = getLocalePublicationMode();
-  if (!isPublishedLocale(lang, localeMode)) {
+  if (!isLocale(lang)) {
     notFound();
   }
 
   return (
-    <LocalePublicationProvider value={localeMode}>
-      <ModuleAvailabilityProvider value={await getModuleAvailabilityMap()}>
-        <DossierMenuProvider value={getDossierMenuEntries(lang as Language)}>
-          {children}
-        </DossierMenuProvider>
-      </ModuleAvailabilityProvider>
-    </LocalePublicationProvider>
+    <ModuleAvailabilityProvider value={await getModuleAvailabilityMap()}>
+      <DossierMenuProvider value={getDossierMenuEntries(lang as Language)}>
+        {children}
+      </DossierMenuProvider>
+    </ModuleAvailabilityProvider>
   );
 }

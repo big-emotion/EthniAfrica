@@ -17,10 +17,10 @@ import DoctrinePageContent from "@/components/pages/DoctrinePageContent";
  */
 // @req REQ-091
 export default function DoctrinePageClient() {
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
 
   return (
-    <PageLayout language={language} onLanguageChange={setLanguage} hideHeader>
+    <PageLayout language={language} hideHeader>
       <DoctrinePageContent language={language} />
     </PageLayout>
   );

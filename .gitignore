@@ -14,6 +14,7 @@ node_modules
 
 # Testing
 coverage
+.vitest-reports
 *.lcov
 .nyc_output
 
@@ -67,36 +68,20 @@ build
 !.claude/skills/
 .claude/skills/*
 !.claude/skills/afrik-art-director/
-!.claude/skills/afrik-curator/
 !.claude/skills/afrik-game-designer/
-!.claude/skills/afrik-translator/
 !.claude/skills/ethniafrica-audience-audit/
 !.claude/skills/ethniafrica-audit/
 !.claude/skills/ethniafrica-bootstrap-confluence/
 !.claude/skills/ethniafrica-content-strategist/
 !.claude/skills/ethniafrica-essai/
-!.claude/skills/ethniafrica-idee/
 !.claude/skills/ethniafrica-infra/
-!.claude/skills/ethniafrica-message/
-!.claude/skills/ethniafrica-mythe/
-!.claude/skills/ethniafrica-onomastique/
-!.claude/skills/ethniafrica-produire/
-!.claude/skills/ethniafrica-production/
 !.claude/agents/
 .claude/agents/*
-!.claude/agents/ethniafrica-production.md
-!.claude/agents/ethniafrica-video-planner.md
-!.claude/agents/ethniafrica-video-executor.md
-!.claude/agents/name-record-contradictor.md
-!.claude/skills/ethniafrica-reseaux-help/
-!.claude/skills/ethniafrica-structure/
 !.claude/skills/ethniafrica-experience-optimizer/
 !.claude/skills/ethniafrica-release/
 !.claude/skills/ethniafrica-spec/
 !.claude/skills/ethniafrica-ticket/
 !.claude/skills/ethniafrica-featured-campaigns/
-!.claude/skills/ethniafrica-clip-reel/
-!.claude/skills/ethniafrica-koulechov/
 .entire/
 
 # Editor directories and files
@@ -130,9 +115,6 @@ Thumbs.db
 dataset/*
 !dataset/source/
 !dataset/source/**/*
-# Translated records mirror the source tree per locale (REQ-146)
-!dataset/translations/
-!dataset/translations/**/*
 # Ignorer les fichiers système dans dataset
 dataset/**/.DS_Store
 dataset/**/*.DS_Store
@@ -150,20 +132,13 @@ dataset/source/afrik/logs/
 .codex/*
 !.codex/agents/
 .codex/agents/*
-!.codex/agents/ethniafrica-production.toml
-!.codex/agents/ethniafrica-video-planner.toml
-!.codex/agents/ethniafrica-video-executor.toml
-!.codex/agents/name-record-contradictor.toml
 # Media renders and agent scratch produced in the checkout, never project
 # source. The approved media library lives outside the repository.
 output/
 
-# The social render engine is Python. Its bytecode caches and its virtualenv are
-# build products of a machine, not source; `social/harness/requirements.txt` is
-# what actually pins the dependencies.
+# Python bytecode (the mockup generators).
 __pycache__/
 *.pyc
-social/harness/venv/
 Claude outputs/
 skills-lock.json
 .env*

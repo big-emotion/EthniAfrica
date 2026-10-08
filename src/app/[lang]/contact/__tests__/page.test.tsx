@@ -1,10 +1,9 @@
 import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
-import ContactPage, { generateMetadata } from "../page";
-import { CANONICAL_DOMAIN, CONTACT_EMAIL } from "@/lib/brand";
+import ContactPage from "../page";
+import { CONTACT_EMAIL } from "@/lib/brand";
 import { DID_YOU_KNOW_FACTS } from "@/lib/home/didYouKnowFacts";
-import { getStaticPageRoute } from "@/lib/routing";
 
 vi.mock("@/components/layout/PageLayout", () => ({
   PageLayout: ({
@@ -94,38 +93,5 @@ describe("the contact page", () => {
     expect(band.textContent).toMatch(
       /Source (officielle|référencée|non vérifiée)/i
     );
-  });
-
-  // @req REQ-140
-  it("declares its canonical in the locale the route was served in", async () => {
-    const metadata = await generateMetadata({ params: routeParams("en") });
-
-    expect(metadata.alternates?.canonical).toBe(
-      `https://${CANONICAL_DOMAIN}${getStaticPageRoute("en", "contact")}`
-    );
-  });
-
-  // @req REQ-140
-  it("hands the shell the route's locale", async () => {
-    await renderPage("en");
-
-    expect(screen.getByTestId("page-layout")).toHaveAttribute(
-      "data-language",
-      "en"
-    );
-  });
-
-  // @req REQ-145
-  it("renders the English contact surface without French fallback copy", async () => {
-    await renderPage("en");
-
-    expect(
-      screen.getByRole("heading", { level: 1, name: "Contact us" })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { level: 2, name: "Send a message" })
-    ).toBeInTheDocument();
-    expect(screen.getByText("Did you know?")).toBeInTheDocument();
-    expect(screen.queryByText("Contactez-nous")).not.toBeInTheDocument();
   });
 });

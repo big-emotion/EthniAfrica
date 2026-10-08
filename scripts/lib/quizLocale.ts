@@ -3,7 +3,10 @@ import {
   type TranslationLocale,
 } from "@/lib/i18n/translationLocale";
 
-/** Parses `--lang en` and `--lang=en`; existing invocations remain French. */
+/**
+ * Parses `--lang fr` and `--lang=fr`. The bank is French only; any other
+ * value, `en` included, is refused rather than silently built in French.
+ */
 // @req REQ-145
 export function parseLocaleArgument(args: string[]): TranslationLocale {
   const inline = args.find((arg) => arg.startsWith("--lang="));
@@ -15,7 +18,7 @@ export function parseLocaleArgument(args: string[]): TranslationLocale {
 
   if (!isTranslationLocale(value)) {
     throw new Error(
-      `generateQuizQuestions --lang must be en or fr; received ${JSON.stringify(value)}`
+      `generateQuizQuestions --lang must be fr; received ${JSON.stringify(value)}`
     );
   }
   return value;

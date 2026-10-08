@@ -6,10 +6,11 @@ import { getLocalizedRoute } from "@/lib/routing";
 
 // @req REQ-180
 describe("FurtherBlock", () => {
+  // @req REQ-178
   it("renders every onward path as a labelled 44 px action", () => {
     render(
       <FurtherBlock
-        language="en"
+        language="fr"
         links={[
           {
             href: getLocalizedRoute("fr", "atlasHub"),
@@ -26,6 +27,14 @@ describe("FurtherBlock", () => {
     expect(screen.getByRole("link", { name: "Parcourir" })).toHaveClass(
       "min-h-11"
     );
-    expect(screen.getByText("Going further")).toBeInTheDocument();
+    expect(screen.getByText("Aller plus loin")).toBeInTheDocument();
+  });
+
+  // A heading over no way out is an empty promise.
+  // @req REQ-178
+  it("draws nothing when it has nothing to propose", () => {
+    const { container } = render(<FurtherBlock links={[]} />);
+
+    expect(container).toBeEmptyDOMElement();
   });
 });

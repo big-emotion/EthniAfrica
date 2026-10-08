@@ -126,8 +126,7 @@ Useful generative angles, all inside the domain:
 - Do not write implementation code unless the user asks. The deliverable is a
   design brief.
 - Do not propose a mechanic requiring a corpus field that does not exist. Say
-  what would have to be curated first, and note that `afrik-curator` is the
-  skill that would do it.
+  what would have to be curated first, as editorial work on the corpus.
 - Do not add a game to a hub that already has too many. Ask what it replaces.
 - Do not soften a verdict to be agreeable. "This does not work, here is why" is
   the useful answer.
@@ -137,5 +136,4 @@ Useful generative angles, all inside the domain:
 - `docs/design/games-charter.md` — the contract
 - `docs/design/atlas-charter.md` — the cartographic surface a game borrows
 - `src/lib/games/` — registry, kinds, round generators, corpus fixtures
-- `.claude/skills/afrik-curator/` — for the editorial work a new mechanic needs
 - `/ethniafrica-spec` — once a design is settled, to file the REQ and the tickets

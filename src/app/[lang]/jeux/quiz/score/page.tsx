@@ -20,10 +20,7 @@ import {
 } from "@/lib/quiz/scoreCardParams";
 import { describeScope } from "@/api/v2/handlers/quiz";
 import { getLocalizedRoute } from "@/lib/routing";
-import {
-  OG_LOCALE_BY_LANGUAGE,
-  pageAlternates,
-} from "@/lib/seo/localeAlternates";
+import { OG_LOCALE, pageHead } from "@/lib/seo/pageHead";
 import { getTranslation } from "@/lib/translations";
 import type { Language } from "@/types/shared";
 import { QuizScoreSharePage } from "./QuizScoreSharePage";
@@ -66,16 +63,14 @@ export async function generateMetadata({
   const description = `${params.correct} ${t.scoreCardExactAnswersSeparator} ${params.total} — ${scope.labelFr}`;
   const imageUrl = buildOgImageUrl(params);
   // Each card is its own shareable address, indexed nowhere: a canonical
-  // that keeps the query, and no hreflang cluster.
+  // that keeps the query.
   const cardSearch = scoreCardSearchParams(
     scoreCardScope(params),
     params.correct,
     params.total
   ).toString();
-  const alternates = pageAlternates(
-    lang as Language,
-    (locale) => `${getLocalizedRoute(locale, "quiz")}/score?${cardSearch}`,
-    []
+  const { alternates } = pageHead(
+    `${getLocalizedRoute(lang as Language, "quiz")}/score?${cardSearch}`
   );
 
   return {
@@ -88,7 +83,7 @@ export async function generateMetadata({
       description,
       type: "website",
       url: String(alternates.canonical),
-      locale: OG_LOCALE_BY_LANGUAGE[lang as Language],
+      locale: OG_LOCALE,
       images: [{ url: imageUrl, width: 1200, height: 630, alt: title }],
     },
     twitter: {

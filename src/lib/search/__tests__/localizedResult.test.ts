@@ -16,30 +16,11 @@ const result: SearchResult = {
 };
 
 describe("localized search result names", () => {
+  // The corpus also carries English names; a French page never shows them.
   // @req REQ-140
-  it("uses French names in French and English names in English", () => {
+  it("uses the French names", () => {
     expect(getLocalizedSearchResultName(result, "fr")).toBe("Arabe standard");
-    expect(getLocalizedSearchResultName(result, "en")).toBe("Standard Arabic");
     expect(getLocalizedSearchResultFamilyName(result, "fr")).toBe(
-      "Afro-asiatique"
-    );
-    expect(getLocalizedSearchResultFamilyName(result, "en")).toBe(
-      "Afroasiatic"
-    );
-  });
-
-  // @req REQ-140
-  it("falls back to French when an English name is missing or blank", () => {
-    const frenchOnly: SearchResult = {
-      ...result,
-      nameEn: "  ",
-      languageFamilyNameEn: undefined,
-    };
-
-    expect(getLocalizedSearchResultName(frenchOnly, "en")).toBe(
-      "Arabe standard"
-    );
-    expect(getLocalizedSearchResultFamilyName(frenchOnly, "en")).toBe(
       "Afro-asiatique"
     );
   });

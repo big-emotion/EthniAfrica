@@ -147,14 +147,11 @@ describe("formatPeoplePopulation", () => {
 
   // French readers used to see "3.5M", then "3,5M": first the separator was
   // wrong, then the unit was glued on with no space and a capital K that
-  // French does not use. The locale now carries both, so the shape is
-  // asserted rather than one exact space character —
-  // beside a correctly-spaced "10 500 000" produced elsewhere by
-  // Intl.NumberFormat. The decimal separator must follow the given locale.
+  // French does not use. The shape is asserted rather than one exact space
+  // character.
   // @req REQ-155
-  it("formats fractional millions with the locale's own decimal separator", () => {
+  it("formats fractional millions with a decimal comma", () => {
     expect(formatPeoplePopulation(3500000, "fr")).toMatch(/^3,5\s?M$/);
-    expect(formatPeoplePopulation(3500000, "en")).toBe("3.5M");
   });
 });
 
@@ -471,19 +468,6 @@ describe("transformPeopleCountries", () => {
     expect(result.totalPopulationFormatted).toMatch(/^3,5\s?M$/);
     expect(result.distributions[0].populationFormatted).toMatch(/^3,5\s?M$/);
   });
-
-  // @req REQ-155
-  it("formats populations against the given language", () => {
-    const result = transformPeopleCountries(
-      {
-        totalPopulation: 3500000,
-        distributionByCountry: [{ country: "COD", population: 3500000 }],
-      },
-      "en"
-    );
-    expect(result.totalPopulationFormatted).toBe("3.5M");
-    expect(result.distributions[0].populationFormatted).toBe("3.5M");
-  });
 });
 
 // ==========================================
@@ -707,18 +691,5 @@ describe("transformPeopleData", () => {
     const result = transformPeopleData(yorubaPeople, dinkaNamesDossier);
     expect(result.names).not.toBeNull();
     expect(result.names!.endonyms).toHaveLength(1);
-  });
-
-  // @req REQ-155
-  it("threads the language argument into the countries chapter's population formatting", () => {
-    const fractionalMillions: PeopleDetail = {
-      ...minimalPeople,
-      demography: {
-        totalPopulation: 3500000,
-        distributionByCountry: [{ country: "COD", population: 3500000 }],
-      },
-    };
-    const result = transformPeopleData(fractionalMillions, undefined, "en");
-    expect(result.countries.totalPopulationFormatted).toBe("3.5M");
   });
 });

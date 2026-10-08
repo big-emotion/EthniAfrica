@@ -2,7 +2,6 @@ import { beforeEach, describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import NotFound from "@/app/[lang]/not-found";
 import { CONTACT_EMAIL } from "@/lib/brand";
-import { getLocalizedRoute } from "@/lib/routing";
 
 const mockUsePathname = vi.fn(() => "/fr/introuvable");
 vi.mock("next/navigation", () => ({
@@ -68,21 +67,6 @@ describe("NotFound ([lang]/not-found)", () => {
       .getAttribute("href");
 
     expect(href?.split("?")[0]).toBe(`mailto:${CONTACT_EMAIL}`);
-  });
-
-  // @req REQ-145
-  it("renders the English recovery path below /en", () => {
-    mockUsePathname.mockReturnValue("/en/missing");
-
-    render(<NotFound />);
-
-    expect(
-      screen.getByRole("heading", { name: "Page not found" })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("link", { name: "Search for a page" })
-    ).toHaveAttribute("href", getLocalizedRoute("en", "search"));
-    expect(screen.queryByText(/pas encore publiée/i)).not.toBeInTheDocument();
   });
 
   it("renders no emoji in the page", () => {

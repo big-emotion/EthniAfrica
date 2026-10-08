@@ -2,7 +2,6 @@ import type {
   PeopleFieldMissingOverlay,
   PeopleFieldOverlay,
 } from "@/lib/atlas/overlays";
-import type { Language } from "@/types/shared";
 
 /**
  * What the flat map is showing, for readers without WebGL.
@@ -16,27 +15,12 @@ import type { Language } from "@/types/shared";
 // @req REQ-116
 export function peopleFallbackNote(
   peopleName: string,
-  overlay: PeopleFieldOverlay | PeopleFieldMissingOverlay,
-  language: Language = "fr"
+  overlay: PeopleFieldOverlay | PeopleFieldMissingOverlay
 ): string {
   if (overlay.kind !== "people-field") return "";
 
   const drawn = overlay.areas.length;
   const offMap = overlay.undrawn.length;
-  if (language === "en") {
-    const countryLabel = drawn === 1 ? "country" : "countries";
-    const offMapNote =
-      offMap > 0
-        ? ` ${offMap} declared ${offMap === 1 ? "presence is" : "presences are"} outside the map.`
-        : "";
-
-    return (
-      `${drawn} ${countryLabel} where ${peopleName} is present, without 3D rendering. ` +
-      "No boundary is drawn: these are densities, not a territory." +
-      offMapNote
-    );
-  }
-
   const offMapNote =
     offMap > 0
       ? ` ${offMap} présence${offMap > 1 ? "s" : ""} déclarée${

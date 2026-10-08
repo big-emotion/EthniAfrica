@@ -131,11 +131,4 @@ describe("the provenance banner", () => {
 
     expect(container).toBeEmptyDOMElement();
   });
-
-  // @req REQ-019
-  it("speaks English when the reader does", () => {
-    render(<ProvenanceBanner language="en" census={census()} />);
-
-    expect(screen.getByText(/15 recorded assertions/)).toBeInTheDocument();
-  });
 });

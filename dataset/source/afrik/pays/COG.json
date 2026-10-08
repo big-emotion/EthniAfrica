@@ -3,15 +3,15 @@
   "nameFr": "Congo",
   "nameEn": "Republic of the Congo",
   "nameOfficial": "République du Congo (République du Congo)",
-  "summary": "La République du Congo partage son nom avec le royaume Kongo et avec le fleuve qui en porte la trace. Son territoire fut celui du royaume Tio et des chefferies mbochi avant de devenir colonie française. Le kikongo et le lingala y accompagnent le français, et la rumba congolaise y a trouvé l'un de ses foyers.",
-  "etymology": "Le nom \"Congo\" vient du royaume Kongo (Kongo en kikongo), un royaume précolonial puissant. \"Congo\" est la forme portugaise de \"Kongo\". Le fleuve Congo a été nommé d'après ce royaume. Le pays est aussi appelé \"Congo-Brazzaville\" pour le distinguer de la République démocratique du Congo (Congo-Kinshasa).",
-  "nameOriginActor": "Le nom vient du royaume Kongo historique. Les Portugais ont popularisé le terme \"Congo\" au XVe siècle. Le nom \"Congo-Brazzaville\" a été utilisé pour distinguer ce pays de la République démocratique du Congo (Congo-Kinshasa) après l'indépendance des deux pays en 1960.",
+  "summary": "La République du Congo porte le même nom que le fleuve Congo, que l'on relie à celui de l'ancien royaume Kongo. Son territoire fut celui du royaume Tio et des chefferies mbochi avant de devenir colonie française. Le kikongo et le lingala y accompagnent le français, et la rumba congolaise y a trouvé l'un de ses foyers.",
+  "etymology": "La République du Congo porte le même nom que le fleuve Congo, et que son voisin, la République démocratique du Congo. Une explication relie le nom du fleuve à celui de l'ancien royaume Kongo (Bentley, 1886, p. vii). Bentley rapporte que les riverains appellent le fleuve Nzadi, ou un terme voisin, qu'il traduit par « le Grand Fleuve », et que les Européens en ont fait Zaïre (même page). D'où vient le mot Kongo lui-même n'est pas établi : Bentley ne se prononce pas avec certitude ; il cite seulement, sans les relier au nom, les mots kikongo konga, nkongo et kinkongo. Nous n'avons lu qu'une seule explication de l'ordre entre le royaume et le fleuve, celle d'un missionnaire étranger ; nous n'en avons pas lu de la part de Kongo eux-mêmes. Le pays est aussi appelé « Congo-Brazzaville » pour le distinguer de la République démocratique du Congo (Congo-Kinshasa).",
+  "nameOriginActor": "Le texte que nous avons lu ne dit pas qui a donné son nom au fleuve, ni quand. L'explication qui le relie au royaume Kongo décrit celui-ci comme un État ancien et puissant ; le même texte rapporte que le navigateur portugais Diogo Cam atteignit l'embouchure du fleuve en 1484 et qu'une expédition atteignit la capitale du royaume en 1491, dates qui ne disent pas quand le nom a été donné. Le nom « Congo-Brazzaville » a été utilisé pour distinguer ce pays de la République démocratique du Congo (Congo-Kinshasa) après l'indépendance des deux pays en 1960.",
   "content": {
     "historicalNames": {
       "formerNames": ["Congo français (1880-1960)", "Congo-Brazzaville"],
       "antiquity": "Le territoire actuel de la République du Congo était peuplé de diverses sociétés bantoues sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
       "middleAges": "Développement des royaumes et chefferies bantoues (Royaume Kongo, chefferies Teke) sans nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de royaumes et chefferies indépendants : Royaume Kongo (partie ouest), royaume Tio (Teke), chefferies Mbochi, et autres peuples bantous. Les Portugais utilisaient le terme \"Congo\" pour désigner la région du royaume Kongo.",
+      "precolonial": "Mosaïque de royaumes et chefferies indépendants : Royaume Kongo (partie ouest), royaume Tio (Teke), chefferies Mbochi, et autres peuples bantous.",
       "colonization": "1880-1960 : Colonie française du Congo (partie de l'Afrique-Équatoriale française, AEF). Les Français ont créé la colonie du Congo français en 1880. Le territoire était administré comme une colonie française jusqu'à l'indépendance en 1960. Brazzaville était la capitale de l'AEF.",
       "contemporary": "1960 : Indépendance du Congo (15 août 1960), proclamation de la République du Congo. Le nom \"République du Congo\" est officialisé. Le pays est aussi appelé \"Congo-Brazzaville\" pour le distinguer de la République démocratique du Congo (Congo-Kinshasa). \"Congo\" est son nom court, \"République du Congo\" son titre officiel."
     },
@@ -154,6 +154,10 @@
       "independenceStruggle": "Mouvements nationalistes dans les années 1950. Indépendance en 1960 (15 août) sous la présidence de Fulbert Youlou.",
       "postIndependence": "Première République (1960-1969) : régime de Fulbert Youlou. République populaire du Congo (1969-1991) : période socialiste sous Marien Ngouabi puis Denis Sassou-Nguesso. Transition démocratique (1991) : multipartisme. Guerres civiles (1993-1999, 2016-2017) : conflits politiques et ethniques. République du Congo depuis 1991 : développement économique basé sur le pétrole, défis de démocratisation et de réconciliation."
     },
+    "searchAnswer": {
+      "lead": "La République du Congo, capitale Brazzaville. On dit parfois Congo-Brazzaville pour la distinguer de sa voisine, la République démocratique du Congo.",
+      "followUp": "Pourquoi deux pays portent-ils le nom de Congo ?"
+    },
     "sources": [
       {
         "title": "CIA World Factbook – Republic of the Congo",
@@ -205,6 +209,12 @@
         "url": "https://assets.publishing.service.gov.uk/media/671267969cd657734653d7f5/Congo_Toponymic_Factfile.pdf",
         "tier": "official",
         "notes": "Fiche officielle britannique de toponymie, édition 2024 : nom court Congo, titre de l'État République du Congo, capitale Brazzaville ; nomme les formes courantes Congo-Brazzaville et Congo-Kinshasa qui distinguent les deux États ; le français seule langue officielle, le kituba et le lingala langues nationales (Constitution de 2015) ; précise que le gentilé congolais est aussi employé pour la République démocratique du Congo."
+      },
+      {
+        "title": "Bentley, W. Holman, Dictionary and Grammar of the Kongo Language, Baptist Missionary Society et Trübner, Londres, 1886",
+        "url": "https://tile.loc.gov/storage-services/service/gdc/gdclccn/44/01/76/16/44017616/44017616.pdf",
+        "tier": "referenced",
+        "notes": "Préface, p. vii. L'auteur, missionnaire baptiste installé à San Salvador, écrit que le nom du fleuve Kongo vient de Kongo ou Ekongo, nom d'un ancien royaume puissant, et qu'on ne peut pas parler avec certitude de l'origine du nom lui-même. Il cite les mots kikongo konga (cueillir de gros fruits), nkongo (chasseur) et kinkongo (adresse à la chasse) sans dire qu'ils expliquent le nom. Il donne aussi Nzadi comme nom du fleuve chez ses habitants. Texte d'un seul observateur étranger, non recoupé ici ; p. viii pour la découverte de l'embouchure en 1484 et l'expédition de 1491."
       }
     ],
     "demographics": {

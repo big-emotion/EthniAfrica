@@ -170,7 +170,6 @@ function expectSharedLayout(result: Measured, label: string, width: number) {
 }
 
 test.describe("fiche parity — route matrix", () => {
-  test.skip(LOCALE !== "fr", "The matrix reads French routes and copy.");
   test.describe.configure({ mode: "parallel" });
 
   for (const width of [430, 1440]) {
@@ -223,7 +222,6 @@ test.describe("fiche parity — route matrix", () => {
 });
 
 test.describe("fiche parity — known mobile height debt", () => {
-  test.skip(LOCALE !== "fr", "The matrix reads French routes and copy.");
   test.describe.configure({ mode: "parallel" });
 
   for (const path of HEIGHT_DEBT) {
@@ -249,7 +247,6 @@ test.describe("fiche parity — known mobile height debt", () => {
 });
 
 test.describe("fiche parity — every country, sampled peoples", () => {
-  test.skip(LOCALE !== "fr", "The sweep reads French routes.");
   test.describe.configure({ mode: "parallel" });
 
   for (const path of SWEEP) {

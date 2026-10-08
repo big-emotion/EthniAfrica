@@ -17,7 +17,7 @@ import { drawDidYouKnowMotif } from "@/lib/home/didYouKnowMotifs";
 import { drawAnecdoteImageSide } from "@/lib/home/didYouKnowPresentation";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
 interface AnecdotesPageProps {
@@ -39,12 +39,7 @@ export async function generateMetadata({
   };
   return {
     ...copy,
-    ...surfaceHead(
-      lang as Language,
-      "anecdotes",
-      (locale) => getLocalizedRoute(locale, "anecdotes"),
-      copy
-    ),
+    ...pageHead(getLocalizedRoute("fr", "anecdotes"), copy),
   };
 }
 

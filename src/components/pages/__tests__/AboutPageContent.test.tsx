@@ -175,58 +175,12 @@ describe("AboutPageContent (REQ-132)", () => {
     }
   });
 
-  /**
-   * "Fiche", "corpus", "autonyme", "exonyme" are workshop words, and the
-   * project is never "the atlas" to a reader (operator ruling, 2026-09-22).
-   * Asserted rather than trusted, because one careless sentence puts them
-   * back.
-   */
-  // @req REQ-132
-  // @req REQ-145
-  it("says nothing to the reader in the workshop's own vocabulary", () => {
-    for (const language of ["fr", "en"] as const) {
-      const { container, unmount } = render(
-        <AboutPageContent language={language} />
-      );
-
-      expect(container.textContent).not.toMatch(/fiches?\b/i);
-      expect(container.textContent).not.toMatch(/corpus/i);
-      expect(container.textContent).not.toMatch(/autonyme?s?\b|exonyme?s?\b/i);
-      expect(container.textContent).not.toMatch(/atlas/i);
-
-      unmount();
-    }
-  });
-
   // @req REQ-132
   it("opens each section on a rule and a heading, with no image", () => {
     const { container } = renderAbout();
 
     expect(container.querySelectorAll("figure")).toHaveLength(0);
     expect(container.querySelectorAll("img")).toHaveLength(0);
-  });
-
-  // @req REQ-145
-  it("renders the same outline in English", () => {
-    render(<AboutPageContent language="en" />);
-
-    expect(
-      screen.getByRole("heading", { level: 1, name: "About EthniAfrica" })
-    ).toBeInTheDocument();
-    expect(screen.getByTestId("about-overview")).toHaveTextContent(
-      "EthniAfrica tells Africa through its names."
-    );
-    expect(sectionHeadings()).toHaveLength(6);
-    expect(
-      screen.getByRole("heading", { level: 2, name: "Why start from names?" })
-    ).toHaveAttribute("id", "about-purpose-title");
-    expect(screen.getByRole("link", { name: "How we work" })).toHaveAttribute(
-      "href",
-      getLocalizedRoute("en", "doctrine")
-    );
-    expect(
-      screen.getByRole("link", { name: "Report an error" })
-    ).toHaveAttribute("href", getStaticPageRoute("en", "reportError"));
   });
 
   // @req REQ-132
@@ -245,5 +199,15 @@ describe("AboutPageContent (REQ-132)", () => {
     const accessModes = screen.getByTestId("about-access-mode-list");
     expect(accessModes.className).toMatch(/grid-cols-1/);
     expect(accessModes.className).toMatch(/min-\[720px\]:grid-cols-3/);
+  });
+
+  // @req REQ-132
+  it("says nothing to the reader in the workshop's own vocabulary", () => {
+    const { container } = render(<AboutPageContent language="fr" />);
+
+    expect(container.textContent).not.toMatch(/fiches?\b/i);
+    expect(container.textContent).not.toMatch(/corpus/i);
+    expect(container.textContent).not.toMatch(/autonyme?s?\b|exonyme?s?\b/i);
+    expect(container.textContent).not.toMatch(/atlas/i);
   });
 });

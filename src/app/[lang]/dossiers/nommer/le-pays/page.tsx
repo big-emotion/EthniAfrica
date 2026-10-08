@@ -6,7 +6,7 @@ import { isModulePublished } from "@/lib/hubs/moduleOffer";
 import { getNommerChapter } from "@/lib/dossiers/nommer/chapters";
 import { localizeNommerChapter } from "@/lib/dossiers/nommer/localizeChapter";
 import { getNommerChapterRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
 const CHAPTER = getNommerChapter("le-pays");
@@ -26,12 +26,7 @@ export async function generateMetadata({
   const copy = { title: chapter.title, description: chapter.standfirst.text };
   return {
     ...copy,
-    ...surfaceHead(
-      lang as Language,
-      "nommer",
-      (locale) => getNommerChapterRoute(locale, "le-pays"),
-      copy
-    ),
+    ...pageHead(getNommerChapterRoute("fr", "le-pays"), copy),
   };
 }
 

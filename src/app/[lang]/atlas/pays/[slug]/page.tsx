@@ -289,7 +289,7 @@ export default async function PaysSlugPage({
     );
   }
 
-  const country = await loadCountryFiche(parsed.slug, lang as Language);
+  const country = await loadCountryFiche(parsed.slug);
   if (!country) {
     notFound();
   }
@@ -306,7 +306,7 @@ export default async function PaysSlugPage({
       heroHead={
         <FicheHeroHead
           entityType="country"
-          translation={country.translation}
+
           mapToggleLanguage={lang as Language}
         >
           <CountryFicheTitle

@@ -15,9 +15,6 @@ import modelePeuple from "../../public/modele-peuple.json";
 import modelePays from "../../public/modele-pays.json";
 import modeleLangue from "../../public/modele-langue.json";
 import modeleNomPatronyme from "../../public/modele-nom-patronyme.json";
-import modeleNomNisba from "../../public/modele-nom-nisba.json";
-import modeleNomPatronymique from "../../public/modele-nom-patronymique.json";
-import modeleNomTotemique from "../../public/modele-nom-totemique.json";
 
 export type ProvenanceState = "declared" | "derived" | "missing";
 
@@ -71,8 +68,6 @@ export function classifyFieldProvenance(
   return { state: "missing" };
 }
 
-type ContentBagLike = Record<string, unknown>;
-
 export type AfrikEntityKind =
   "language-family" | "people" | "country" | "language" | "name";
 
@@ -91,30 +86,22 @@ export type AfrikEntityKind =
  * sound contract to read chapters off, not an approximation of one.
  */
 /**
- * The name class declares a base model plus one per naming system, and only
- * the base one describes what the corpus writes: all 30 dossiers match
- * `modele-nom-patronyme.json` key for key, while the four subtype models
- * still describe the retired vocabulary the fiche was reading — `namingSystem`
- * for `nameSystem`, `attestedForms` for `spellings`. Merging all five would
- * re-admit exactly the drift this resolver exists to catch.
- *
- * So the base model is the contract, extended with the subtype fields that a
- * dossier's `gaps[]` actually cites — otherwise those gaps would be dismissed
- * as fields that do not exist, and the editor's wording would stay unread for
- * a second reason after the first is fixed.
+ * The name class reads `modele-nom-patronyme.json`, which matches all 30
+ * dossiers key for key, extended with the naming-system fields a dossier's
+ * `gaps[]` actually cites — otherwise those gaps would be dismissed as fields
+ * that do not exist. The per-system models that once declared them were
+ * retired, so the four fields are declared here; only their presence matters
+ * to the structural check, never their value.
  *
  * The extension is deliberately not narrowed per `nameSystem`: the view only
  * asks about a subtype field on a fiche of that subtype, so keeping one root
  * avoids threading the discriminant through a purely structural check.
  */
 const NAME_SUBTYPE_FIELDS = {
-  totemicFoodProhibition: (modeleNomTotemique as ContentBagLike)
-    .totemicFoodProhibition,
-  permittedGivenNames: (modeleNomTotemique as ContentBagLike)
-    .permittedGivenNames,
-  nisbaSubtype: (modeleNomNisba as ContentBagLike).nisbaSubtype,
-  patronymicChainDepth: (modeleNomPatronymique as ContentBagLike)
-    .patronymicChainDepth,
+  totemicFoodProhibition: "",
+  permittedGivenNames: [],
+  nisbaSubtype: "",
+  patronymicChainDepth: 0,
 };
 
 const NAME_MODEL_FIELD_ROOT = {

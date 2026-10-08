@@ -928,9 +928,7 @@ function globeLegendSentence(
 ): string {
   const copy = atlasCopy[language];
   const gesture = turns ? copy.gesture.rotate : copy.gesture.move;
-  const offer = marksCountries
-    ? `${language === "fr" ? " ; " : "; "}${copy.openCountry}`
-    : ".";
+  const offer = marksCountries ? ` ; ${copy.openCountry}` : ".";
   return `${copy.legendStart} ${gesture}${offer}`;
 }
 

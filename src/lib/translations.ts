@@ -11,6 +11,8 @@ import { homeCorpusCountsCopy } from "@/lib/i18n/copy/homeCorpusCounts";
 import { homePurposeCopy } from "@/lib/i18n/copy/homePurpose";
 import { homeStoriesCopy } from "@/lib/i18n/copy/homeStories";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
+import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
+import { wordAnswerCopy } from "@/lib/i18n/copy/wordAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { commonCopy } from "@/lib/i18n/copy/common";
 import { consentCopy } from "@/lib/i18n/copy/consent";
@@ -24,9 +26,7 @@ import { fieldProvenanceCopy } from "@/lib/i18n/copy/fieldProvenance";
 import { familyCopy } from "@/lib/i18n/copy/family";
 import { ficheCopy } from "@/lib/i18n/copy/fiche";
 import { footerCopy } from "@/lib/i18n/copy/footer";
-import { galleryCopy } from "@/lib/i18n/copy/gallery";
 import { gamesCopy } from "@/lib/i18n/copy/games";
-import { generatedImagesCopy } from "@/lib/i18n/copy/generatedImages";
 import { hubsCopy } from "@/lib/i18n/copy/hubs";
 import { languagesCopy } from "@/lib/i18n/copy/languages";
 import { ficheNameStoryCopy } from "@/lib/i18n/copy/ficheNameStory";
@@ -57,75 +57,14 @@ import type { Language } from "@/types/shared";
  * shape changed, so the shape stays and the strings live one file per
  * surface. A client island that is budgeted — the quiz — imports its own
  * module instead, and this file is what keeps that split from costing the
- * server side anything. Each locale is composed separately so a module
- * wired to the wrong locale is the parity suite's to catch
- * (`copyParity.test.ts`), not the compiler's to miss.
+ * server side anything.
  */
-const en = {
-  admin: adminCopy.en,
-  server: serverCopy.en,
-  anecdotes: anecdotesCopy.en,
-  articles: articlesCopy.en,
-  proverbs: proverbsCopy.en,
-  gallery: galleryCopy.en,
-  generatedImages: generatedImagesCopy.en,
-  atlas: atlasCopy.en,
-  ...commonCopy.en,
-  chrome: chromeCopy.en,
-  homeHero: homeHeroCopy.en,
-  homeStories: homeStoriesCopy.en,
-  homePurpose: homePurposeCopy.en,
-  homeCorpusCounts: homeCorpusCountsCopy.en,
-  nameAnswer: nameAnswerCopy.en,
-  searchFeed: searchFeedCopy.en,
-  consent: consentCopy.en,
-  compare: compareCopy.en,
-  contact: contactCopy.en,
-  contribute: contributeCopy.en,
-  countryFiche: countryCopy.en,
-  facets: facetsCopy.en,
-  footer: footerCopy.en,
-  about: aboutCopy.en,
-  games: gamesCopy.en,
-  sitemapPage: sitemapPageCopy.en,
-  publicFlags: publicFlagsCopy.en,
-  classification: classificationCopy.en,
-  names: namesCopy.en,
-  languages: languagesCopy.en,
-  patronymes: patronymesCopy.en,
-  migrations: migrationsCopy.en,
-  moderationConsole: moderationConsoleCopy.en,
-  colonization: colonizationCopy.en,
-  discoveries: discoveriesCopy.en,
-  quiz: quizCopy.en,
-  reports: reportsCopy.en,
-  sourceTransparency: sourceTransparencyCopy.en,
-  provenance: provenanceCopy.en,
-  fieldProvenance: fieldProvenanceCopy.en,
-  family: familyCopy.en,
-  fiche: ficheCopy.en,
-  ficheNameStory: ficheNameStoryCopy.en,
-  languageFiche: languageFicheCopy.en,
-  peopleFiche: peopleCopy.en,
-  hubs: hubsCopy.en,
-  trail: trailCopy.en,
-  system: systemCopy.en,
-};
-
-/**
- * The shape both locales share. Not exported: consumers take it from
- * `getTranslation`, and the parity is enforced here by the `fr` declaration.
- */
-type UiDictionary = typeof en;
-
-const fr: UiDictionary = {
+const fr = {
   admin: adminCopy.fr,
   server: serverCopy.fr,
   anecdotes: anecdotesCopy.fr,
   articles: articlesCopy.fr,
   proverbs: proverbsCopy.fr,
-  gallery: galleryCopy.fr,
-  generatedImages: generatedImagesCopy.fr,
   atlas: atlasCopy.fr,
   ...commonCopy.fr,
   chrome: chromeCopy.fr,
@@ -134,6 +73,8 @@ const fr: UiDictionary = {
   homePurpose: homePurposeCopy.fr,
   homeCorpusCounts: homeCorpusCountsCopy.fr,
   nameAnswer: nameAnswerCopy.fr,
+  searchAnswer: searchAnswerCopy.fr,
+  wordAnswer: wordAnswerCopy.fr,
   searchFeed: searchFeedCopy.fr,
   consent: consentCopy.fr,
   compare: compareCopy.fr,
@@ -169,13 +110,14 @@ const fr: UiDictionary = {
   system: systemCopy.fr,
 };
 
+type UiDictionary = typeof fr;
+
 /**
  * Typed `Record<Language, …>` on purpose: with `noImplicitAny: false`, an
- * untyped literal let `translations["en"]` compile and return `undefined`,
- * which is how the header would have thrown on `/en` under a green build.
+ * untyped literal let an unknown locale key compile and return `undefined`.
  */
 // @req REQ-014
-export const translations: Record<Language, UiDictionary> = { en, fr };
+export const translations: Record<Language, UiDictionary> = { fr };
 
 // @req REQ-014
 export const getTranslation = (lang: Language): UiDictionary =>

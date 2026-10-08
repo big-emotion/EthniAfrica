@@ -20,7 +20,6 @@ on:
     branches: [recette]
     paths:
       - "dataset/source/afrik/**"
-      - "dataset/translations/**"
       - "scripts/migrateAfrikToDatabase.ts"
       - "src/lib/afrik/loaders/**"
       - ".github/workflows/recette-data-sync.yml"
@@ -127,8 +126,7 @@ jobs:
       # Idempotent: `computeSweepPlan` skips any (fiche, template) pair that already
       # has an active question, so it can only add and revoke, never replace. A
       # change to how questions are *built* still needs the manual `--rebuild` in
-      # docs/runbooks/quiz-bank-regeneration.md. The omitted --lang deliberately
-      # defaults to French; English remains a separate explicit corpus gate.
+      # docs/runbooks/quiz-bank-regeneration.md. The bank is French only.
       - name: Generate the recette quiz question bank
         run: npx tsx --conditions=react-server scripts/generateQuizQuestions.ts
 

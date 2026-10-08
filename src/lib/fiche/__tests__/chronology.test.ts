@@ -100,16 +100,6 @@ describe("peopleChronology", () => {
     expect(stationText(origin)).toContain("entre le XIVe et le XVIIe siècle");
   });
 
-  // Relations with neighbours read as society rather than chronology, and the
-  // culture chapter carries them beside the country's own "Relations" tile.
-  // @req REQ-155
-  it("leaves relations with neighbours to the culture chapter", () => {
-    const text = peopleStations(peopleRecord("PPL_OVAMBO"))
-      .map(stationText)
-      .join("\n");
-    expect(text).not.toContain("Relations historiques avec les Herero au sud");
-  });
-
   // @req REQ-155
   it("produces no station for a rubric the record leaves empty", () => {
     expect(
@@ -119,13 +109,16 @@ describe("peopleChronology", () => {
         "fr"
       )
     ).toEqual([]);
-    expect(
-      peopleChronology(
-        { migrationRoutes: [], historicalSettlementZones: [] },
-        { diaspora: "Communautés au Brésil." },
-        "en"
-      ).map((station) => [station.regime, station.period, station.title])
-    ).toEqual([["modern", "Contemporary", "Diaspora"]]);
+  });
+
+  // Relations with neighbours read as society rather than chronology, and the
+  // culture chapter carries them beside the country's own "Relations" tile.
+  // @req REQ-155
+  it("leaves relations with neighbours to the culture chapter", () => {
+    const text = peopleStations(peopleRecord("PPL_OVAMBO"))
+      .map(stationText)
+      .join("\n");
+    expect(text).not.toContain("Relations historiques avec les Herero au sud");
   });
 });
 
@@ -240,17 +233,6 @@ describe("countryChronology", () => {
         country.historicalFacts.postIndependence.trim()
       );
     }
-  });
-
-  // @req REQ-148
-  it("speaks English where the record is read in English", () => {
-    const { stations, etymology } = countryChronology(
-      countryRecord("NAM"),
-      "en"
-    );
-    expect(stations[1].title).toBe("3 political entities");
-    expect(stations[4].period).toBe("Since 1990");
-    expect(etymology).toBeDefined();
   });
 });
 

@@ -37,7 +37,6 @@ export interface MercatorSurfaceProps {
    * island's bundle.
    */
   trueSizeClaimFr: string;
-  trueSizeClaimEn?: string;
   /**
    * Documented peoples per country, for the continent the stage draws.
    * Resolved by the page; absent, the globe names what is missing.
@@ -88,12 +87,10 @@ export const MercatorSurface = ({
   facts,
   corpusLimited,
   trueSizeClaimFr,
-  trueSizeClaimEn,
   peopleCountsByCountry,
 }: MercatorSurfaceProps) => {
   const copy = gamesCopy[language];
-  const trueSizeClaim =
-    language === "en" ? (trueSizeClaimEn ?? trueSizeClaimFr) : trueSizeClaimFr;
+  const trueSizeClaim = trueSizeClaimFr;
 
   /**
    * The countries the standing round asks about, marked on the globe beside it

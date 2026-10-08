@@ -10,9 +10,6 @@ export default {
     // (REQ-145). Staged-scoped and grandfathered, so it blocks only the
     // literals this commit adds.
     "tsx scripts/ci/checkCopyLiterals.ts --staged",
-    // Translation parity is deliberately absent: it is reported, never a
-    // reason to refuse a commit (REQ-171, DEC-055). Run
-    // `npm run check:translation-parity -- --staged` to read the report.
   ],
   "*.{css,md,mjs}": ["prettier --write"],
   "*.json": ["prettier --write"],

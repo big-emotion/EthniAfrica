@@ -65,20 +65,6 @@ describe("data integrity workflow", () => {
     expect(validateActionPins(readWorkflow(), workflowPath)).toEqual([]);
   });
 
-  // The per-fiche validator passed on all five corpus contradictions that kept
-  // the name dimension seventeen waves behind the database.
-  // @req REQ-133
-  it("runs the loader preflight on every pull request, alongside the validator", () => {
-    const [preflightStep, ...extras] = getSteps(readWorkflow()).filter((step) =>
-      step.includes("check:afrik-loader")
-    );
-
-    expect(extras).toEqual([]);
-    expect(preflightStep).toContain("run: npm run check:afrik-loader");
-    expect(preflightStep).not.toContain("continue-on-error");
-    expect(preflightStep).not.toContain("if:");
-  });
-
   // @req REQ-080 (ETNI-494)
   it("runs the quiz bank integrity check job only on the nightly schedule", () => {
     const workflow = readWorkflow();

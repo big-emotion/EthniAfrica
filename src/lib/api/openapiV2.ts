@@ -19,8 +19,10 @@ const options: swaggerJsdoc.Options = {
         "Metered responses carry `X-RateLimit-Limit`, `X-RateLimit-Remaining` and `X-RateLimit-Reset`; an exhausted quota answers `429` with `Retry-After`. The figures above are the deployment defaults. The `/api/v2/keys` self-service endpoints are the exception to all of this: they authenticate a signed-in contributor's session instead.\n\n" +
         "## Response envelope\n\n" +
         "Every `/api/v2/*` response uses the Module #0 envelope: `{ data, meta: { license, attribution, pagination?, confidence?, pinned_url?, translation? }, errors }`. License and attribution are always present (AR8); `errors` is empty on success and populated on non-2xx responses. List endpoints place their pagination values under `meta.pagination`.\n\n" +
+        "## French only (breaking)\n\n" +
+        "The site publishes French alone, so the locale parameters that selected English are narrowed to `fr`: `lang` on `GET /api/v2/search` and `GET /api/v2/search/companions`, and `language` in the `POST /api/v2/flags` body. `lang=en` is now refused with 400 on the two searches; an unknown flag `language` still fails closed to French. Search no longer matches English names; the `nameEn` / `languageFamilyNameEn` fields keep their shape and still carry the corpus value. `contentLanguage` in companion payloads is always `fr`.\n\n" +
         "## 2.3.0 — translated records (additive)\n\n" +
-        "The five single-entity endpoints accept `?lang=fr|en`. `fr` is the authored language and the default; `en` overlays the translation record when one exists and declares how it was produced in `meta.translation` — `human`, `machine_reviewed` or `machine` — with `stale: true` when the French moved on a field the reader is shown since it was translated. Fields whose subject is a word are withheld at `machine` provenance and served in French until a human has reviewed them (REQ-142, REQ-143). Lists, facets and search stay authored-French.\n\n" +
+        "The five single-entity endpoints accept `?lang=fr|en`. `fr` is the authored language and the default; `en` overlays the translation record when one exists and declares how it was produced in `meta.translation` — `human`, `machine_reviewed` or `machine` — with `stale: true` when the French moved on a field the reader is shown since it was translated. Fields whose subject is a word are withheld at `machine` provenance and served in French until a human has reviewed them (REQ-142, REQ-143). Lists, facets and search stay authored-French. Retired since: the corpus is no longer translated, `?lang` is ignored and every record is served as authored.\n\n" +
         "## 2.1.0 — one source-tier vocabulary (breaking)\n\n" +
         'Source authority is now one three-value scale — `official` | `referenced` | `unverified` — spoken identically by the database, the payloads and the UI. Provenance stays on the separate `source_kind` axis, so AI-generated text is `tier: "unverified"` + `source_kind: "ai_generated"` rather than a tier of its own.\n\n' +
         "Removed, all superseded by `tier`:\n\n" +
@@ -752,6 +754,152 @@ const options: swaggerJsdoc.Options = {
           },
           required: ["forms", "eras", "presentation"],
         },
+        SearchAnswerV2: {
+          type: "object",
+          description:
+            "The six-block answer for one search row. An optional block whose source the fiche leaves empty is omitted, never returned empty. Text comes from the fiche (`lead`, `question`, accounts); where the fiche writes none, the client composes the sentence from `next.template` and its params. Absent on rows from servers that predate it.",
+          properties: {
+            kind: {
+              type: "string",
+              enum: [
+                "people",
+                "country",
+                "language",
+                "languageFamily",
+                "patronyme",
+                "word",
+              ],
+            },
+            title: { type: "string" },
+            what: {
+              type: "object",
+              properties: {
+                lead: {
+                  type: "string",
+                  description:
+                    "Written by the fiche (`content.searchAnswer.lead`, 220 characters at most). Absent: the client uses its sentence template.",
+                },
+                facts: {
+                  type: "object",
+                  properties: {
+                    population: { type: "integer" },
+                    countryCount: { type: "integer" },
+                    familyId: { type: "string" },
+                    peopleCount: { type: "integer" },
+                  },
+                },
+              },
+              required: ["facts"],
+            },
+            origin: {
+              type: "object",
+              description:
+                "Where the name comes from, one account per claim with its own evidence. `debated` is true when accounts are contested or the fiche declares the origin debated; the page then shows every account's first sentence side by side.",
+              properties: {
+                accounts: {
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      text: { type: "string" },
+                      attribution: {
+                        type: "string",
+                        enum: ["oral", "written", "linguistic", "synthesis"],
+                      },
+                      claimStatus: {
+                        type: "string",
+                        enum: ["established", "claimed", "contested"],
+                      },
+                      evidence: {
+                        type: "array",
+                        items: {
+                          $ref: "#/components/schemas/SearchNamingEvidenceV2",
+                        },
+                      },
+                    },
+                    required: ["text", "evidence"],
+                  },
+                },
+                debated: { type: "boolean" },
+              },
+              required: ["accounts", "debated"],
+            },
+            names: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  form: { type: "string" },
+                  selfGiven: {
+                    type: ["boolean", "null"],
+                    description:
+                      "Null when the fiche does not classify the form.",
+                  },
+                  shortLine: { type: "string" },
+                  period: { type: "string" },
+                  attestedIn: { type: "array", items: { type: "string" } },
+                },
+                required: ["form", "selfGiven"],
+              },
+            },
+            where: {
+              type: "object",
+              description:
+                "`percent` rows are keyed by people (`peopleId`); every other unit by country (`countryId`). `speakers` is an estimate the fiche declares, in persons, never a sum of peoples' populations. `presence` (patronymes) has a null value.",
+              properties: {
+                unit: {
+                  type: "string",
+                  enum: ["population", "speakers", "percent", "presence"],
+                },
+                estimate: { type: "boolean" },
+                rows: {
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      countryId: { type: "string" },
+                      peopleId: { type: "string" },
+                      value: { type: ["number", "null"] },
+                    },
+                  },
+                },
+                unsplitPercent: { type: "number" },
+                documentedPeopleCount: { type: "integer" },
+              },
+              required: ["unit", "estimate", "rows"],
+            },
+            next: {
+              type: "object",
+              description:
+                "Either the fiche's own question, or the name of a template and its parameters.",
+              properties: {
+                question: { type: "string" },
+                template: {
+                  type: "string",
+                  enum: ["migration", "formerName", "distributionGap"],
+                },
+                params: {
+                  type: "object",
+                  additionalProperties: {
+                    oneOf: [{ type: "string" }, { type: "number" }],
+                  },
+                },
+              },
+            },
+            sources: {
+              type: "object",
+              properties: {
+                count: {
+                  type: "integer",
+                  description:
+                    "Distinct sources across every account's evidence.",
+                },
+              },
+              required: ["count"],
+            },
+          },
+          required: ["kind", "title", "what", "names", "sources"],
+        },
         SearchResponseData: {
           type: "object",
           description:
@@ -767,13 +915,13 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/CountryV2" },
               description:
-                "Matching countries, ranked by ts_rank with name_fr outranking etymology; with `lang=en` the accent-folded English name also matches (exact 1.0 > prefix 0.6 > substring 0.3, migration 084). Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore and a snippet. Empty when the request carries only a relation scope.",
+                "Matching countries, ranked by ts_rank with name_fr outranking etymology. Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore and a snippet. Empty when the request carries only a relation scope.",
             },
             families: {
               type: "array",
               items: { $ref: "#/components/schemas/LanguageFamilyV2" },
               description:
-                "Matching language families, ranked by afrik_search_language_families (migration 069): accent-insensitive exact (1.0) > prefix (0.6) > substring (0.3) on the locale's name — name_fr, or name_en with `lang=en` (migration 084) — then a prose tier (0.1) through search_vector for a term that appears only in the decolonial text (DEC-028). Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore and a snippet.",
+                "Matching language families, ranked by afrik_search_language_families (migration 069): accent-insensitive exact (1.0) > prefix (0.6) > substring (0.3) on name_fr — then a prose tier (0.1) through search_vector for a term that appears only in the decolonial text (DEC-028). Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore and a snippet.",
             },
             persons: {
               type: "array",
@@ -797,13 +945,13 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/SearchHitV2" },
               description:
-                "Canonical page for the selected mode, ordered on normalizedScore descending, ties broken on the name collated in the served locale (`lang`, French when absent) then on the id. Without `lens`, it merges the main stream and excludes quiz questions; with `lens=quiz`, it contains only quiz questions.",
+                "Canonical page for the selected mode, ordered on normalizedScore descending, ties broken on the name collated in French then on the id. Without `lens`, it merges the main stream and excludes quiz questions; with `lens=quiz`, it contains only quiz questions.",
             },
             languages: {
               type: "array",
               items: { $ref: "#/components/schemas/LanguageSearchResultV2" },
               description:
-                "Matching languages (REQ-136), ranked by afrik_search_languages (migration 068): exact match on the ISO 639-3 id or the name, then a prefix/accent-insensitive lexical match; with `lang=en` the fiche's English name also matches (migration 084). Each carries nameEn, familyName, familyNameEn, relevance, exactMatch and a snippet.",
+                "Matching languages (REQ-136), ranked by afrik_search_languages (migration 068): exact match on the ISO 639-3 id or the name, then a prefix/accent-insensitive lexical match. Each carries nameEn, familyName, familyNameEn, relevance, exactMatch and a snippet.",
             },
             peoplesTotal: {
               type: "integer",
@@ -866,6 +1014,12 @@ const options: swaggerJsdoc.Options = {
               description:
                 "Reviewed, sourced answers to « where does this name come from? » for the searched term (REQ-178), matched on the whole term with accents and case ignored and localized by `lang`. Resolved from the term alone, so a search with no hit can still carry one. Empty for a name nobody has reviewed and for quiz-lens searches.",
             },
+            wordAnswers: {
+              type: "array",
+              items: { $ref: "#/components/schemas/WordAnswerV2" },
+              description:
+                "The answer to a published word (REQ-184), read from the production registry and matched on the whole term with accents and case ignored. Carried by the envelope and not by a row, because a word answers to no fiche and may come back with no result at all. Empty for a word nobody published and for quiz-lens searches.",
+            },
             nameSuggestions: {
               type: "array",
               items: { type: "string" },
@@ -893,6 +1047,7 @@ const options: swaggerJsdoc.Options = {
             "leads",
             "nearNames",
             "nameAnswers",
+            "wordAnswers",
             "nameSuggestions",
           ],
         },
@@ -943,6 +1098,105 @@ const options: swaggerJsdoc.Options = {
             },
           },
           required: ["term", "subjects", "paragraphs", "sources"],
+        },
+        WordAnswerV2: {
+          type: "object",
+          description:
+            "The answer to a published word (REQ-184), built from its record in the production registry. It follows the answer contract of the result page (`kind` is always `word`) and lists the queries that find it. A block with no data is an absent key.",
+          properties: {
+            kind: { type: "string", enum: ["word"] },
+            title: { type: "string", example: "pharaon" },
+            queries: {
+              type: "array",
+              description:
+                "The accent-free, lowercase queries the registry files for this word.",
+              items: { type: "string" },
+            },
+            what: {
+              type: "object",
+              properties: {
+                lead: {
+                  type: "string",
+                  description:
+                    "Written in the registry's `answer.lead`; absent when none was written.",
+                },
+                facts: { type: "object" },
+              },
+              required: ["facts"],
+            },
+            origin: {
+              type: "object",
+              properties: {
+                accounts: {
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      text: { type: "string" },
+                      attribution: {
+                        type: "string",
+                        enum: ["oral", "written", "linguistic", "synthesis"],
+                      },
+                      evidence: { type: "array", items: { type: "object" } },
+                    },
+                    required: ["text", "evidence"],
+                  },
+                },
+                debated: { type: "boolean" },
+              },
+              required: ["accounts", "debated"],
+            },
+            names: {
+              type: "array",
+              description:
+                "The word's forms, none marked as the one a people gives itself.",
+              items: {
+                type: "object",
+                properties: {
+                  form: { type: "string" },
+                  selfGiven: { type: ["boolean", "null"] },
+                },
+                required: ["form", "selfGiven"],
+              },
+            },
+            next: {
+              type: "object",
+              properties: { question: { type: "string" } },
+            },
+            path: {
+              type: "array",
+              description:
+                "The form of the word in each language it passed through.",
+              items: {
+                type: "object",
+                properties: {
+                  form: { type: "string" },
+                  language: { type: "string" },
+                  period: { type: "string" },
+                },
+                required: ["form", "language"],
+              },
+            },
+            publications: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  network: { type: "string" },
+                  url: { type: "string" },
+                  format: { type: "string" },
+                  publishedAt: { type: "string" },
+                },
+                required: ["network", "url"],
+              },
+            },
+            sources: {
+              type: "object",
+              properties: { count: { type: "integer" } },
+              required: ["count"],
+            },
+          },
+          required: ["kind", "title", "queries", "what", "names", "sources"],
         },
         SearchLeadV2: {
           type: "object",
@@ -1235,7 +1489,7 @@ const options: swaggerJsdoc.Options = {
           type: "object",
           properties: {
             id: { type: "string", minLength: 1 },
-            contentLanguage: { type: "string", enum: ["en", "fr"] },
+            contentLanguage: { type: "string", enum: ["fr"] },
             headline: { type: "string", minLength: 1 },
             body: {
               type: "array",
@@ -1281,7 +1535,7 @@ const options: swaggerJsdoc.Options = {
           type: "object",
           properties: {
             id: { type: "string", minLength: 1 },
-            contentLanguage: { type: "string", enum: ["en", "fr"] },
+            contentLanguage: { type: "string", enum: ["fr"] },
             text: { type: "string", minLength: 1 },
             meaning: { type: "string", minLength: 1 },
             original: {
@@ -1315,56 +1569,6 @@ const options: swaggerJsdoc.Options = {
             "original",
             "origin",
             "sources",
-            "match",
-          ],
-        },
-        SearchCompanionImage: {
-          type: "object",
-          properties: {
-            id: { type: "string", minLength: 1 },
-            href: { type: "string", minLength: 1 },
-            slug: { type: "string", minLength: 1 },
-            title: { type: "string", minLength: 1 },
-            description: { type: "string", minLength: 1 },
-            caption: { type: "string", minLength: 1 },
-            image: {
-              type: "object",
-              properties: {
-                src: { type: "string", minLength: 1 },
-                alt: { type: "string", minLength: 1 },
-                credit: { type: "string", minLength: 1 },
-                licence: {
-                  type: "string",
-                  enum: ["public-domain", "cc0", "cc-by", "cc-by-sa"],
-                },
-                licenceUrl: { type: "string", format: "uri" },
-                filePage: { type: "string", format: "uri" },
-              },
-              required: ["src", "alt", "credit", "licence"],
-            },
-            generation: {
-              type: "object",
-              properties: {
-                tool: { type: "string", minLength: 1 },
-                model: { type: "string", minLength: 1 },
-                generatedOn: { type: "string", minLength: 1 },
-                sourceKind: { type: "string", enum: ["ai_generated"] },
-              },
-              required: ["tool", "model", "generatedOn", "sourceKind"],
-            },
-            source: { $ref: "#/components/schemas/SearchCompanionSource" },
-            match: { $ref: "#/components/schemas/SearchCompanionMatch" },
-          },
-          required: [
-            "id",
-            "href",
-            "slug",
-            "title",
-            "description",
-            "caption",
-            "image",
-            "generation",
-            "source",
             "match",
           ],
         },
@@ -1407,7 +1611,7 @@ const options: swaggerJsdoc.Options = {
                 "T18",
               ],
             },
-            contentLanguage: { type: "string", enum: ["en", "fr"] },
+            contentLanguage: { type: "string", enum: ["fr"] },
             prompt: { type: "string", minLength: 1 },
             stimulus: { type: ["string", "null"] },
             options: {
@@ -1497,23 +1701,6 @@ const options: swaggerJsdoc.Options = {
           },
           required: ["count", "items"],
         },
-        SearchCompanionImageSelection: {
-          type: "object",
-          properties: {
-            count: {
-              type: "integer",
-              minimum: 0,
-              description:
-                "Total matching items before the response limit is applied.",
-            },
-            items: {
-              type: "array",
-              maxItems: 1,
-              items: { $ref: "#/components/schemas/SearchCompanionImage" },
-            },
-          },
-          required: ["count", "items"],
-        },
         SearchCompanionQuizSelection: {
           type: "object",
           properties: {
@@ -1549,21 +1736,11 @@ const options: swaggerJsdoc.Options = {
             proverbs: {
               $ref: "#/components/schemas/SearchCompanionProverbSelection",
             },
-            images: {
-              $ref: "#/components/schemas/SearchCompanionImageSelection",
-            },
             quiz: {
               $ref: "#/components/schemas/SearchCompanionQuizSelection",
             },
           },
-          required: [
-            "subjects",
-            "shorts",
-            "anecdotes",
-            "proverbs",
-            "images",
-            "quiz",
-          ],
+          required: ["subjects", "shorts", "anecdotes", "proverbs", "quiz"],
         },
         SearchCompanionsResponse: {
           type: "object",
@@ -1752,6 +1929,9 @@ const options: swaggerJsdoc.Options = {
             naming: {
               $ref: "#/components/schemas/SearchNamingProjectionV2",
             },
+            answer: {
+              $ref: "#/components/schemas/SearchAnswerV2",
+            },
           },
         },
         PeopleV2: {
@@ -1784,6 +1964,9 @@ const options: swaggerJsdoc.Options = {
             },
             naming: {
               $ref: "#/components/schemas/SearchNamingProjectionV2",
+            },
+            answer: {
+              $ref: "#/components/schemas/SearchAnswerV2",
             },
           },
         },
@@ -1891,6 +2074,9 @@ const options: swaggerJsdoc.Options = {
             naming: {
               $ref: "#/components/schemas/SearchNamingProjectionV2",
             },
+            answer: {
+              $ref: "#/components/schemas/SearchAnswerV2",
+            },
             associatedPeoples: {
               type: "array",
               description:
@@ -1955,7 +2141,7 @@ const options: swaggerJsdoc.Options = {
             nameEn: {
               type: ["string", "null"],
               description:
-                "The fiche's English name (content.nameEn), matched under `lang=en` (migration 084); null when the fiche carries none.",
+                "The fiche's English name (content.nameEn), carried as corpus data and not searched; null when the fiche carries none.",
               example: "Swahili",
             },
             familyId: {
@@ -1977,6 +2163,9 @@ const options: swaggerJsdoc.Options = {
             },
             naming: {
               $ref: "#/components/schemas/SearchNamingProjectionV2",
+            },
+            answer: {
+              $ref: "#/components/schemas/SearchAnswerV2",
             },
             relevance: {
               type: "number",
@@ -2055,6 +2244,9 @@ const options: swaggerJsdoc.Options = {
             },
             naming: {
               $ref: "#/components/schemas/SearchNamingProjectionV2",
+            },
+            answer: {
+              $ref: "#/components/schemas/SearchAnswerV2",
             },
           },
         },
@@ -2312,7 +2504,7 @@ const options: swaggerJsdoc.Options = {
                 { type: "null" },
               ],
               description:
-                "Present once a locale other than the authored one was asked for; null when that locale has no record and the authored text is served.",
+                "No longer emitted: corpus translation was retired and every record is served as authored, in French. Kept declared so existing clients are not broken.",
             },
           },
           required: ["license", "attribution"],
@@ -4500,10 +4692,10 @@ const options: swaggerJsdoc.Options = {
             },
             language: {
               type: "string",
-              enum: ["en", "fr"],
+              enum: ["fr"],
               default: "fr",
               description:
-                "Locale used for reporter verification and moderation-decision e-mails. Missing or invalid values fail closed to French.",
+                "Locale used for reporter verification and moderation-decision e-mails. French is the only one published; missing or other values fail closed to French.",
             },
             counter_source_url: {
               type: "string",
@@ -4560,7 +4752,7 @@ const options: swaggerJsdoc.Options = {
               "National Statistics Office, 2024 census, table 12.",
             proposed_rewrite:
               "Update the population figure using the 2024 census.",
-            language: "en",
+            language: "fr",
             antibot: {
               salt: "9f2c1ab4d7e60358",
               nonce: "418209",

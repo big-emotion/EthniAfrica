@@ -15,7 +15,7 @@ vi.mock("@/hooks/use-consent", () => ({
 
 // The banner is mounted above the `[lang]` segment, so it reads the locale
 // off the route params rather than off a prop. Mutable so a case can put the
-// banner on an English page or outside the locale tree.
+// banner outside the locale tree.
 const routeParams = vi.hoisted(() => ({ current: { lang: "fr" } as object }));
 
 vi.mock("next/navigation", () => ({
@@ -206,19 +206,6 @@ describe("ConsentBanner", () => {
     );
   });
 
-  // A global banner that always sent the reader to the French policy would
-  // cross locales from every English page.
-  // @req REQ-141
-  it("links the policy in the locale of the page it is shown on", () => {
-    routeParams.current = { lang: "en" };
-    render(<ConsentBanner />);
-
-    expect(screen.getByRole("link", { name: /data policy/i })).toHaveAttribute(
-      "href",
-      getStaticPageRoute("en", "dataPolicy")
-    );
-  });
-
   // @req REQ-140
   it("falls back to the default locale outside the locale tree", () => {
     routeParams.current = {};
@@ -300,29 +287,5 @@ describe("ConsentBanner", () => {
       functional: false,
       embeds: false,
     });
-  });
-
-  // @req REQ-145
-  it("renders the complete consent surface in English on an English route", async () => {
-    routeParams.current = { lang: "en" };
-    const user = userEvent.setup();
-    render(<ConsentBanner />);
-
-    expect(screen.getByText("Cookie settings")).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "Data policy" })).toHaveAttribute(
-      "href",
-      getStaticPageRoute("en", "dataPolicy")
-    );
-    expect(screen.getByRole("button", { name: "Accept all" })).toBeVisible();
-    expect(screen.getByRole("button", { name: "Reject" })).toBeVisible();
-
-    await user.click(screen.getByRole("button", { name: "Customise" }));
-    expect(screen.getByText("Essential cookies")).toBeVisible();
-    expect(screen.getByText("Analytics cookies")).toBeVisible();
-    expect(screen.queryByText("Functional cookies")).not.toBeInTheDocument();
-    expect(screen.getByText("Third-party video playback")).toBeVisible();
-    expect(
-      screen.getByRole("button", { name: "Save preferences" })
-    ).toBeVisible();
   });
 });

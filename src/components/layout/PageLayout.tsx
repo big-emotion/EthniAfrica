@@ -31,11 +31,6 @@ const KeyboardShortcutsModal = dynamic(
 interface PageLayoutProps {
   children: ReactNode;
   language: Language;
-  /**
-   * Vestigial since the site became French-only: kept so the fifteen-odd
-   * callers still passing it keep compiling, read by nothing.
-   */
-  onLanguageChange?: (lang: Language) => void;
   title?: string;
   /**
    * The line that qualifies the title, inside the hero plate and above the

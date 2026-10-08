@@ -13,7 +13,7 @@ import {
 import { join, relative, sep } from "node:path";
 
 /**
- * The afrik-curator skill has one canonical copy, versioned under `.claude/`,
+ * Every skill has one canonical copy, versioned under `.claude/`,
  * and one mirror entry point under `.agents/` for Codex. `.agents/` is ignored
  * by git as a runtime mirror, so the canonical side has to be the versioned one
  * — a tracked symlink pointing into an ignored directory would resolve to

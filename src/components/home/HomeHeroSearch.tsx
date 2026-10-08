@@ -316,9 +316,7 @@ export function HomeHeroSearch({
             {query && (
               <button
                 type="button"
-                aria-label={
-                  language === "en" ? "Clear search" : "Effacer la recherche"
-                }
+                aria-label={"Effacer la recherche"}
                 className="home-hero-search-clear"
                 onClick={clearQuery}
               >
@@ -332,7 +330,7 @@ export function HomeHeroSearch({
             variant="accent"
             className="home-hero-search-submit"
           >
-            {language === "en" ? "Search" : "Rechercher"}
+            {"Rechercher"}
           </Button>
         </form>
 
@@ -378,17 +376,14 @@ export function HomeHeroSearch({
         {open && flat.length === 0 && (
           <div className="home-hero-search-panel home-hero-search-empty">
             <p data-testid="state-copy">
-              {language === "en" ? "No record for" : "Aucune fiche pour"}{" "}
-              «&nbsp;{trimmed}&nbsp;».
+              {"Aucune fiche pour"} «&nbsp;{trimmed}&nbsp;».
             </p>
             <NoResultsLeads leads={leads} language={language} />
             <Link
               href={getLocalizedRoute(language, "families")}
               onClick={dismissPanel}
             >
-              {language === "en"
-                ? "Browse language families"
-                : SEARCH_EMPTY_LINK_LABEL}
+              {SEARCH_EMPTY_LINK_LABEL}
             </Link>
           </div>
         )}
@@ -417,21 +412,13 @@ export function HomeHeroSearch({
           what came back, or that nothing could come back. */}
       <div role="status" aria-live="polite" className="sr-only">
         {showPending
-          ? language === "en"
-            ? "Searching…"
-            : "Recherche en cours…"
+          ? "Recherche en cours…"
           : failed
             ? copy.searchUnavailable
             : open
               ? flat.length > 0
-                ? `${formatNumber(language, flat.length)} ${
-                    language === "en"
-                      ? `suggestion${flat.length > 1 ? "s" : ""}`
-                      : `suggestion${flat.length > 1 ? "s" : ""}`
-                  }`
-                : language === "en"
-                  ? "No suggestions"
-                  : "Aucune suggestion"
+                ? `${formatNumber(language, flat.length)} ${`suggestion${flat.length > 1 ? "s" : ""}`}`
+                : "Aucune suggestion"
               : ""}
       </div>
 

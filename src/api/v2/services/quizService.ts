@@ -361,10 +361,7 @@ export async function getQuizScopeCatalogue(
   const byCountry = new Map<string, number>();
   const themesByCountry = new Map<string, ThemeTally>();
   const countryNameById = new Map(
-    countryRows.map((row) => [
-      row.id,
-      language === "en" ? (row.name_en ?? row.name_fr) : row.name_fr,
-    ])
+    countryRows.map((row) => [row.id, row.name_fr])
   );
   for (const row of membershipRows) {
     const held = questionsBySubject.get(row.people_id) ?? 0;
@@ -430,7 +427,7 @@ export async function getQuizScopeCatalogue(
       .map((row) =>
         optionFor(
           row.id,
-          language === "en" ? (row.name_en ?? row.name_fr) : row.name_fr,
+          row.name_fr,
           byCountry.get(row.id),
           themesByCountry.get(row.id)
         )
@@ -440,7 +437,7 @@ export async function getQuizScopeCatalogue(
       .map((row) =>
         optionFor(
           row.id,
-          language === "en" ? (row.name_en ?? row.name_fr) : row.name_fr,
+          row.name_fr,
           byFamily.get(row.id),
           themesByFamily.get(row.id)
         )
@@ -469,8 +466,7 @@ export async function getQuizScopeCatalogue(
  */
 // @req REQ-103
 export async function getQuizScopeLabel(
-  scope: QuizScope,
-  language: Language = "fr"
+  scope: QuizScope
 ): Promise<string | null> {
   if (scope.kind === "mixed" || scope.kind === "random") return null;
   if (!scope.entityId) return null;
@@ -481,7 +477,7 @@ export async function getQuizScopeLabel(
 
   const { data, error } = await supabase
     .from(table)
-    .select("name_fr, name_en")
+    .select("name_fr")
     .eq("id", scope.entityId)
     .maybeSingle();
 
@@ -489,11 +485,8 @@ export async function getQuizScopeLabel(
     logger.error("quizService.getQuizScopeLabel failed", error);
     return null;
   }
-  const row = data as
-    { name_fr?: string; name_en?: string | null } | null | undefined;
-  return language === "en"
-    ? (row?.name_en ?? row?.name_fr ?? null)
-    : (row?.name_fr ?? null);
+  const row = data as { name_fr?: string } | null | undefined;
+  return row?.name_fr ?? null;
 }
 
 /**
@@ -744,9 +737,7 @@ export async function composeQuizSession(
 
   const [candidates, countryNameFr] = await Promise.all([
     fetchCandidates(supabase, subjectIds, language),
-    scope.kind === "country"
-      ? getQuizScopeLabel(scope, language)
-      : Promise.resolve(null),
+    scope.kind === "country" ? getQuizScopeLabel(scope) : Promise.resolve(null),
   ]);
 
   const playable = shuffle(

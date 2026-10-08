@@ -1,15 +1,20 @@
 # The search-result charter — what a name page owes its reader
 
 Settled 2026-09-18, on the reorientation recorded in
-`docs/editorial/essais/dou-viennent-les-noms-2026-09-17.md`.
+`docs/editorial/refonte-plan-2026-09-18.md`.
 
 Updated 2026-09-19 by REQ-180 and DEC-058 after the result was recomposed as a
 feed.
 
-**The reviewed rendering is local and executable.** The forty approved boards
-live in `docs/design/mockups/search-feed/`: ten cases, mobile and desktop, day
-and night. The external canvas is provenance for the review, not an
-implementation dependency.
+**The answer-first recomposition (2026-10-06, integrated by lots B and G) is
+planned in `docs/design/search-answer-plan.md`.** Its reviewed rendering is the
+frozen mockup in `docs/design/mockups/search-answer/` (version 11), made
+executable by a generated manifest (`generate_manifest.py`). The forty boards of
+`docs/design/mockups/search-feed/` described the page that stacked a dozen
+blocks; they are **replaced** and kept only as history. Sections 2 to 3 bis and
+4 to 5 below are written for that page: where they speak of the forty boards,
+of `origins`, `peoples`, `tiles`, `atlas-holds`, `problem` or `near-name`, §3
+ter now rules.
 
 Three authorities govern different concerns and never substitute for one
 another:
@@ -202,59 +207,123 @@ to the 900 px the rich boards use.
 
 ## 3 ter. The executable feed grammar
 
-The top-level block vocabulary, in canonical mobile order, is:
+The top-level block vocabulary, in canonical order, is
+(`src/lib/search/resultGrammar.ts`):
 
 ```text
-verdict · appellations · lenses · shorts · origins · peoples · shared-name ·
-tiles · atlas-holds · plates · quiz · images · problem · near-name · fiches ·
+lenses · verdict · appellations ·
+answer-what · answer-origin · answer-names · answer-where · answer-next ·
+answer-sources · fiche-link · shorts · plates · quiz · images · fiches ·
 owed · further
 ```
 
-The filters (`lenses`) follow the answer and the forms (operator direction,
-2026-09-29). A filter refines the exploration stream below it; placed above the
-answer it made the first thing a reader met a control instead of the reply, and
-it suggested that a filter could change the answer. The `verdict` block carries
-the reviewed answer when one exists (`nameAnswers` in the search response):
-ordinary prose on the page ground, one entry per subject answering the name, a
-link to that subject's fiche and its source access after each entry, never
-clamped — the last sentence of an answer often carries its uncertainty. A shared
-name keeps the searched term as its single `h1`, never the first-ranked
-subject's name.
+**« Tout » is the answer.** When a subject carries an answer, the page is the
+filters, then for each subject the six `answer-*` blocks in that order, then the
+`fiche-link` button, then `owed` (conviction and invitation to correct). A block
+with no data is absent; none is drawn to say it is empty. Where the fiche
+declares no sourced speakers (a language, almost always a family), there is no
+`answer-where`. A reviewed answer (`nameAnswers`) takes the place of the
+automatic origin and carries its own sources; the sources of the page are one
+line (`answer-sources`), never a badge after each sentence.
 
-`owed` is one top-level block because it is one visual and rhetorical closing.
-Its independently testable parts are, in order:
+**Several subjects, one name.** The searched term stays the single `h1`; each
+subject then answers with its own six blocks (an `h2` for its own name) and its
+own fiche button. No subject is promoted over another. Two cases are told
+differently (`src/lib/search/answerSubjectPlan.ts`), and each is a refusal of a
+failure measured on the real page on 2026-10-07:
+
+- **Two countries carrying the name are one answer** (`CountriesAnswer`, the
+  mockup's `Congo`). « congo » reaches « Congo » and « République démocratique
+  du Congo »; two full answers made the reader hold one while reading the other.
+  The six blocks are drawn once: the eyebrow says how many States bear the name,
+  the origin is said once when both fiches tell it (otherwise each reading is
+  labelled with the country that tells it, never announced as a dispute between
+  them), the names through time and the shares of the population sit under each
+  country's own name, and the follow-up is the one a fiche wrote — a template
+  (a former name, a migration) is about one country and cannot speak for two. A
+  country is a subject of the name when its filed name holds the searched word
+  as a whole word, and only after an exact country match
+  (`selectNameSubject`).
+- **A family and the peoples filed under its name are one answer and a choice**
+  (the mockup's `Bantou`). The people whose own `languageFamilyId` is the
+  family's, or that is filed under exactly the family's name (PPL_BANTU names
+  the parent family, so the name is all the corpus offers), is not drawn as a
+  second answer: « Que cherchez-vous ? » offers the
+  family and its peoples as two cards at the same weight, and the speakers block
+  ends on « Voir les N peuples », N being the family's people count from the
+  data — nothing in the copy is a number. A people that merely resembles the
+  name is never folded.
+
+Three rules govern how several subjects sit on one page, each a refusal of a
+defect the art-director review found on the rendered « congo » page on
+2026-10-07 (the two States, then the family name « Congo »):
+
+- **One title per subject block, the eyebrow above it.** When every block of
+  the page is titled like the search (the countries and the family name are all
+  « Congo »), a page title above them would be that word a third time, and
+  bigger than the titles it names. So there is none: the first block carries the
+  `h1`, drawn at the size of its siblings (`titleScale: "section"`), the others
+  an `h2`, so none is the page's title more than another. When the blocks are
+  named differently (Bassa), the page title stays and each block is an `h2`.
+  `e2e/search-answer.spec.ts` counts one `h1` per page and one `h1`/`h2` per
+  `answer-what` block, at 320, 430, 768 and 1280.
+- **A second subject is parted from the first by a rule** (`data-subject-divider`:
+  a top border and the section gap above and below). A family name that arrives
+  with its own title, eyebrow and bars reads as a second page stacked under the
+  first unless the page says where one ends. It stays visible — folding it
+  behind a control would hide a subject, and no subject is promoted or hidden
+  (§3) — and it is parted, not demoted.
+- **The page has one solid primary action, and several fiches are not it.** One
+  fiche is the solid ocre button. Two or more are equal ways on, so none is the
+  solid one: they are quiet outlined buttons in the one mobile-first column,
+  44 px high at least, with the entity label when two share a name (« Congo
+  (Pays) », « Congo (Nom) »). Three full-width ocre bars broke the hierarchy and
+  the one-accent rule (brand charter §5.2); choosing which of three to paint
+  would have promoted a subject. The e2e spec asserts at most one solid fiche
+  button per page and none when several answer.
+
+**What left « Tout ».** `shorts`, `plates`, `quiz`, `images` and `fiches` are
+what the filters show. `origins`, `peoples`, `shared-name`, `tiles`,
+`atlas-holds`, `problem` and `near-name` no longer exist: their job is done by
+the answer blocks and by several answers side by side. `verdict`,
+`appellations` and `further` remain only for the pages with no answer to give.
+
+**The filters are dynamic.** « Tout » is always there; Shorts, Récits, Images,
+Jeux and Fiches appear only when they have content, each with its count, never
+with a zero. A filter replaces the answer by its shelf under one heading about
+the name, with a way back. The shorts shelf separates « Sur ce nom » (a piece
+made on the searched name or word: relation `exact` or `word`) from « Autour de
+ce nom » (context).
+
+`owed` is one top-level block because it is one rhetorical closing; its parts
+are, in order:
 
 ```text
 silences · conviction · invitation
 ```
 
-The page and the boards expose these identities through `data-feed-block` and
-`data-feed-part`. Bassa uses `shared-name`; `problem` is reserved for a recorded
-naming problem or disagreement.
+The page and the screens expose these identities through `data-feed-block` and
+`data-feed-part`. The page is one reading column (880 px at most from 1200 px)
+and is left-aligned as a block, like an atlas record's parchment (brand charter
+§8.1).
 
 The exceptional states are explicit:
 
-- an exact or widened subject closes with `owed`, including `silences` only
-  when a concrete silence can be derived;
-- a typo with useful leads closes with `further` only;
-- a genuinely unknown query closes with `owed` containing `conviction` and
-  `invitation`, then `further`;
-- `lenses` appears after an answered query when at least one filterable content
-  group exists;
-- `shorts` appears for every answered query, and an empty source slot is
-  content rather than an empty block.
+- a published word with no fiche is answered by its record: the same blocks
+  without `fiche-link`, under the filters, never the confession;
+- a typo with useful leads opens on the verdict and the choices and closes with
+  `further` only;
+- a genuinely unknown query opens on the verdict and closes with `owed`
+  (`conviction` and `invitation`), then `further`;
+- related results with no entity answering the name (and a family or country
+  browse) open on the verdict and list the fiches; they close without `owed`.
 
-Below 1200 px, intermediate blocks occupy the `primary` zone in canonical
-order. At 1200 px and above, rich boards may split them between `primary` and
-`secondary`; order is asserted within each zone, never by flattening the two
-columns. Desktop-thin boards remain one centred `primary` column. `verdict` and
-the opening blocks occupy `first`; `owed` and `further` occupy `closing` after
-all intermediate zones.
-
-The checked-in generated manifest records the case, variant, query, result
-state, ordered block identities and zones, `owed` parts, board dimensions and
-the first-poster rectangle. The case source and generator author it; the JSON
-is generated output and is never edited by hand.
+The checked-in manifest (`docs/design/mockups/search-answer/manifest.json`)
+records, for each of the seven validated screens, the ordered block identities;
+it is generated from the screens' `data-feed-block` attributes and is never
+edited by hand. `resultGrammarCharter.test.ts` holds it to the grammar, and
+`e2e/search-answer.spec.ts` holds the real page to the screens at 320, 430, 768
+and 1280 px.
 
 ### A word we hold a piece on, 2026-09-25
 
@@ -371,7 +440,7 @@ Two blockers measured 2026-09-17, both visible as an empty band on every artboar
   class, and the mockups — which draw four peoples and a disambiguation — drew
   the four classes that cannot fill it.
 - ~~**No gate guards the competing appellations.**~~ **Closed 2026-09-18.**
-  `competing-appellations` in `checkEditorialRules.ts` now asks every
+  `competing-appellations` in `checkEditorialRules.ts` (retired 2026-10-08) asked every
   ethnographic fiche to have _decided_ about the names it is known by besides
   its own — reading `exonyms` on a people and `historicalAppellations` on a
   family, and asking for the origin wherever forms exist.
@@ -391,3 +460,65 @@ Two blockers measured 2026-09-17, both visible as an empty band on every artboar
   name mis-encoded as a people known by two.
 
 The first says where the work starts. The second no longer does.
+
+## 6. The accent of each kind of answer
+
+Ruled 2026-10-07. The answer page and the result cards both colour a subject by
+what it is, and until now they did it from two tables that disagreed: a language
+was terre on a card and periwinkle on the page, a family periwinkle on a card
+and ocre on the page. **A kind that wears two colours teaches nothing**, so the
+assignment is one: `SEARCH_ENTITY_ACCENT` for the kinds a card carries,
+`SEARCH_ANSWER_ACCENT` (same file, read by the answer blocks through
+`ANSWER_ACCENT_CLASS`) for the page. Both name a `.afh-accent-*` scope class
+from `src/styles/tokens/color.css`, never a colour; the blocks read
+`var(--accent)` and `var(--accent-ink)` (brand charter §5.2).
+
+| Kind             | Page accent        | Why                                                                                   |
+| ---------------- | ------------------ | ------------------------------------------------------------------------------------- |
+| `people`         | `afh-accent-ocre`  | The brand's own hue, as on the people fiche                                           |
+| `country`        | `afh-accent-teal`  | The cartographic entity, as on the country fiche and the mockup's `Congo`             |
+| `language`       | `afh-accent-perv`  | Under its family, as on its fiche; the eyebrow says which of the two it is            |
+| `languageFamily` | `afh-accent-perv`  | The mockup paints the family card of `Bantou` periwinkle                              |
+| `patronyme`      | `afh-accent-terre` | The mockup paints `Camara` terre; a name must not read as a people, country, language |
+| `word`           | `afh-accent-ocre`  | A word is no corpus entity: it takes the brand's ocre                                 |
+
+Two differences from the cards are declared, not accidental. A language card
+moves from terre to periwinkle to agree with the page and the fiche. A family
+name stays neutral on a card (ETNI-1463: a name is not a fifth entity kind and a
+list of results should not paint it) and takes terre on its own page, because a
+page needs one accent and the reviewed rendering gives it terre. **One accent per
+page** holds: the six blocks of an answer share the subject's scope, and the
+only nested scope is a card that leads to an object of another kind and says so
+(`Que cherchez-vous ?`: the family card periwinkle, the peoples card ocre).
+`searchAnswerAccentCharter.test.ts` holds the table.
+
+## 7. The reading measure
+
+Ruled 2026-10-07. The mockup is a 430 px board, so it settles nothing past
+430 px; the rule is the page's own. **Every answer block holds
+`--afh-measure-prose` (65ch) and sits left-aligned in the page's 880 px
+column**, as one reading column, from 768 px up. Measured on the real page for
+`peul`, `bantou`, `congo`, `lingala`, `camara` and `pharaon`, a wrapped
+paragraph averages **46 to 75 characters a line at 768 px and 53 to 74 at
+1280 px** (the line ends ragged, so the mean sits under the cap) — the
+about-70 the rule asks for, without ever stretching with the viewport. Below
+768 px the line is the screen minus its 16 px gutters (22 to 46 characters at
+320 and 430 px), which is a smaller measure, not a failure of this rule.
+
+What this prevents: a prose block that follows the width of the page, which at
+1280 px is a line of 110 characters that the eye loses on the way back. What it
+does not do: widen a thin page to fill the viewport (§4), or centre the column
+— the block is left-aligned like a record's parchment (brand charter §8.1).
+`e2e/search-answer.spec.ts` fails a wrapped paragraph that averages past 80
+characters a line at 768 and 1280 px.
+
+## 8. Touch targets
+
+A control is 44 px high and wide at least, at 320 and 430 px: the filter tabs,
+the « Lire la suite » and « Voir les N peuples » links, the choice cards, the
+fiche buttons, the sources button. A text link on its own line grows to 44 px
+through `ANSWER_TEXT_BUTTON` without changing its look; a link inside a sentence
+is exempt, as WCAG 2.5.5 allows. Measured on the real page on 2026-10-07 at 320,
+430, 768 and 1280 px for the six cases above, no control was under 44 px;
+the rule exists so the next block cannot be the first, and the e2e spec asserts
+it on every case at 320 and 430 px.

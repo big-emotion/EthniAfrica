@@ -10,10 +10,6 @@ import {
 } from "@/lib/games/territory";
 import { getAxisHubRoute } from "@/lib/hubs/axisRoutes";
 import { getCountryRoute } from "@/lib/routing";
-import {
-  LARGEST_OF_LIST_ROUND_EN,
-  largestOfListRevealEn,
-} from "@/lib/games/rounds/largestOfListRound.en";
 
 /**
  * « Lequel de ces pays couvre la plus grande surface ? », asked of four
@@ -126,7 +122,6 @@ function slotFor(subjectId: string): number {
 
 const optionOf = (territory: ComparedTerritory): GameOption => ({
   labelFr: territory.nameFr,
-  labelEn: territory.nameEn ?? territory.nameFr,
 });
 
 /**
@@ -175,7 +170,6 @@ export function buildLargestOfListRound(
     subjectId: answer.id,
     comparedIds: ordered.map((territory) => territory.id),
     promptFr: LIST_PROMPT_FR,
-    promptEn: LARGEST_OF_LIST_ROUND_EN.prompt,
     options: ordered.map(optionOf),
     correctIndex,
     reveal: {
@@ -184,13 +178,6 @@ export function buildLargestOfListRound(
           areaSentence(territory, footprintOf.get(territory.id))
         )
         .join(" "),
-      textEn: largestOfListRevealEn(
-        ordered.map((territory) => ({
-          nameEn: territory.nameEn ?? territory.nameFr,
-          trueAreaKm2: footprintOf.get(territory.id).trueAreaKm2,
-          inflation: footprintOf.get(territory.id).inflation,
-        }))
-      ),
       fieldPath: LARGEST_OF_LIST_PROVENANCE_PATH,
       // Measured off the committed outlines, never read from a fiche — the
       // corpus holds no area column. Same reasoning as the pair round.
@@ -199,9 +186,6 @@ export function buildLargestOfListRound(
       ficheHref: leadsTo
         ? getCountryRoute("fr", leadsTo.id)
         : getAxisHubRoute("fr", "atlas"),
-      ficheHrefEn: leadsTo
-        ? getCountryRoute("en", leadsTo.id)
-        : getAxisHubRoute("en", "atlas"),
     },
   };
 }

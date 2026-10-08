@@ -38,10 +38,8 @@ export interface ScaleFact {
   id: string;
   /** The claim, as one sentence the reader can carry away. */
   headlineFr: string;
-  headlineEn?: string;
   /** What the projection did to their intuition, in two or three sentences. */
   bodyFr: string;
-  bodyEn?: string;
   /** Where the figures were measured — worded for the reader by `revealProvenance`. */
   fieldPath: string;
 }
@@ -89,9 +87,8 @@ export interface ScaleFigures {
 }
 
 /**
- * The measurements, taken once and worded twice: `scaleFacts.en.ts` states
- * the same facts in English, and two banks each measuring their own figures
- * could drift apart on a rounding without either test noticing.
+ * The measurements, taken once so the worded facts and any other reader of
+ * the figures cannot drift apart on a rounding.
  */
 // @req REQ-120
 export function measureScaleFigures(): ScaleFigures {

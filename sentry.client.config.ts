@@ -7,7 +7,11 @@
  */
 import * as Sentry from "@sentry/nextjs";
 
-import { assertEuDsn, beforeSend } from "@/lib/sentry/pii-scrubber";
+import {
+  assertEuDsn,
+  beforeSend,
+  NO_DEFAULT_PII_COLLECTION,
+} from "@/lib/sentry/pii-scrubber";
 import { traceSampleRateUnderConsent } from "@/lib/sentry/consentedTracing";
 
 const dsn = process.env.NEXT_PUBLIC_SENTRY_DSN;
@@ -32,9 +36,7 @@ Sentry.init({
   // Debug mode for development
   debug: process.env.NODE_ENV === "development",
 
-  // Stated rather than inherited: the SDK default has changed between majors,
-  // and an upgrade must not start attaching IPs, cookies and bodies.
-  sendDefaultPii: false,
+  dataCollection: NO_DEFAULT_PII_COLLECTION,
 
   // PII scrubbing via beforeSend hook
   beforeSend: beforeSend as Parameters<typeof Sentry.init>[0]["beforeSend"],

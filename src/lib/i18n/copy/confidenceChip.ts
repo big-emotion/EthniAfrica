@@ -15,14 +15,6 @@ interface ConfidenceChipCopy {
 
 // @req REQ-019
 export const confidenceChipCopy: Record<Language, ConfidenceChipCopy> = {
-  en: {
-    references: (count) =>
-      `${count} ${count === 1 ? "reference" : "references"}`,
-    pill: (references, isoDate) => `${references} · reviewed ${isoDate}`,
-    openSources: (references, longDate) =>
-      `open the source chain for this assertion (${references}, last reviewed on ${longDate})`,
-    viewSources: "view sources",
-  },
   fr: {
     references: (count) =>
       `${count} ${count === 1 ? "référence" : "références"}`,

@@ -23,7 +23,7 @@ export function articleListingHref(language: Language, page: number): string {
   return page > 1 ? `${hub}?page=${page}` : hub;
 }
 
-const DATE_LOCALES: Record<Language, string> = { fr: "fr-FR", en: "en-GB" };
+const DATE_LOCALES: Record<Language, string> = { fr: "fr-FR" };
 
 /**
  * `YYYY-MM-DD` as a reader writes it. Read in UTC: the stored value is a

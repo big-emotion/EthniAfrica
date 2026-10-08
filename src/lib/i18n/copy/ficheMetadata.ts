@@ -38,37 +38,6 @@ export interface FicheMetadataCopy {
   listSeparator: string;
 }
 
-const en: FicheMetadataCopy = {
-  title: {
-    people: (name, context) =>
-      context ? `${name} — people (${context})` : `${name} — African people`,
-    peopleLinks: (name) => `${name} — ties and kinship`,
-    country: (name) => `${name} — peoples and languages`,
-    family: (name) => `${name} — language family`,
-    language: (name, context) =>
-      context
-        ? `${name} — language (${context})`
-        : `${name} — African language`,
-    name: (name) => `${name} — origin and history of the name`,
-  },
-  lead: {
-    people: "African people",
-    peopleLinks: "Ties, kinship and neighbours",
-    country: "Peoples, languages and names",
-    family: "African language family",
-    language: "African language",
-    name: "Origin, bearers and history of the name",
-  },
-  clause: {
-    family: (familyName) => `language family: ${familyName}`,
-    presence: (countryNames) => `present in ${countryNames}`,
-    peopleCount: (count) => `${count} documented peoples`,
-    speakers: (peopleNames) => `carried by the ${peopleNames}`,
-  },
-  trailer: "Every claim cites its source.",
-  listSeparator: ", ",
-};
-
 const fr: FicheMetadataCopy = {
   title: {
     people: (name, context) =>
@@ -100,6 +69,5 @@ const fr: FicheMetadataCopy = {
 
 // @req REQ-091
 export const ficheMetadataCopy: Record<Language, FicheMetadataCopy> = {
-  en,
   fr,
 };

@@ -1,93 +1,6 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  title: "Discoveries",
-  browse: "Browse",
-  actions: "Discovery actions",
-  context: "Sources and context",
-  next: "Next discovery",
-  previous: "Previous discovery",
-  details: "Learn more",
-  of: "of",
-  image: "Photo:",
-  imageUnavailable: "Photo unavailable. The discovery text remains accessible.",
-  fact: "Did you know?",
-  proverb: "Proverb",
-  production: {
-    nameQuestion: (name: string) => `Where does the name “${name}” come from?`,
-    posterAlt: (name: string) =>
-      `Cover: Where does the name “${name}” come from?`,
-  },
-  carousel: "Series",
-  video: "Video",
-  videoLicences: {
-    "public-domain": "Public domain",
-    cc0: "CC0",
-    "cc-by": "CC BY 4.0",
-    "cc-by-sa": "CC BY-SA 4.0",
-  },
-  carouselLabel: "Images in this discovery",
-  frame: "Image",
-  playSound: "Play the original soundtrack",
-  muteSound: "Stop the soundtrack",
-  soundUnavailable: "No soundtrack available for this discovery.",
-  close: "Close",
-  sources: "Sources",
-  atlas: "Our entries",
-  readArticle: "Read the article",
-  original: "Original photo",
-  licence: "Photo licence",
-  keep: "Keep",
-  kept: "Kept",
-  saved: "My discoveries",
-  empty: "No discoveries kept on this device.",
-  temporary: "Kept only during this visit: device storage is unavailable.",
-  share: "Share",
-  copy: "Copy link",
-  copied: "Link copied",
-  copyFailed: "Copy failed. Select the link below.",
-  shareFailed: "Sharing is unavailable here. You can copy the link.",
-  videoUnavailable:
-    "No cleared compatible video is available for this publication. Its link can still be shared.",
-  mediaUnavailable:
-    "No approved media export is available for this publication. Its link can still be shared.",
-  linkAvailable: "Share the link",
-  systemAvailable: "Share with a compatible app, if available",
-  linkBadge: "Link",
-  videoBadge: "Video unavailable",
-  mediaBadge: "Media unavailable",
-  systemBadge: "Device dependent",
-  systemChoice: "Other apps",
-  home: "Home",
-  referenced: "Referenced source",
-  official: "Official source",
-  generated: {
-    label: "Generated image",
-    interpretation:
-      "This image is an interpretation made with an image generator, not a document. What the publication states rests on its sources and our entries.",
-    tool: "Tool",
-    model: "Model",
-    date: "Generated on",
-    licence:
-      "CC BY-SA 4.0 — covers the selection, composition, retouching and caption; the generated image itself may carry no copyright.",
-    licenceLink: "Read the licence",
-    captionSource: "Caption source:",
-  },
-  downloads: {
-    title: "Download the image",
-    story: "9:16 · Story and Reel",
-    post: "4:5 · Post",
-    avatar: "1:1 · Profile picture",
-  },
-  credits: {
-    burkina: "Ouagadougou, 1930–1931 · W. Mittelholzer · Public domain",
-    guere: "Wè mask · Mickey Mystique · CC BY-SA 4.0",
-  },
-};
-
-type DiscoveriesCopy = typeof en;
-
-const fr: DiscoveriesCopy = {
+const fr = {
   title: "Découvertes",
   browse: "Parcourir",
   actions: "Actions de la découverte",
@@ -102,8 +15,8 @@ const fr: DiscoveriesCopy = {
   fact: "Saviez-vous que ?",
   proverb: "Proverbe",
   production: {
-    nameQuestion: (name) => `D’où vient le nom « ${name} » ?`,
-    posterAlt: (name) => `Couverture : D’où vient le nom « ${name} » ?`,
+    nameQuestion: (name: string) => `D’où vient le nom « ${name} » ?`,
+    posterAlt: (name: string) => `Couverture : D’où vient le nom « ${name} » ?`,
   },
   carousel: "Série",
   video: "Vidéo",
@@ -149,29 +62,13 @@ const fr: DiscoveriesCopy = {
   home: "Accueil",
   referenced: "Source référencée",
   official: "Source officielle",
-  generated: {
-    label: "Image générée",
-    interpretation:
-      "Cette image est une interprétation produite avec un générateur d’images, pas un document. Ce que la publication affirme repose sur ses sources et nos fiches.",
-    tool: "Outil",
-    model: "Modèle",
-    date: "Générée le",
-    licence:
-      "CC BY-SA 4.0 — couvre la sélection, la composition, la retouche et la légende ; l’image générée elle-même peut ne porter aucun droit d’auteur.",
-    licenceLink: "Lire la licence",
-    captionSource: "Source de la légende :",
-  },
-  downloads: {
-    title: "Télécharger l’image",
-    story: "9:16 · Story et Reel",
-    post: "4:5 · Publication",
-    avatar: "1:1 · Photo de profil",
-  },
   credits: {
     burkina: "Ouagadougou, 1930–1931 · W. Mittelholzer · Domaine public",
     guere: "Masque wè · Mickey Mystique · CC BY-SA 4.0",
   },
 };
 
+type DiscoveriesCopy = typeof fr;
+
 // @req REQ-145
-export const discoveriesCopy: Record<Language, DiscoveriesCopy> = { en, fr };
+export const discoveriesCopy: Record<Language, DiscoveriesCopy> = { fr };

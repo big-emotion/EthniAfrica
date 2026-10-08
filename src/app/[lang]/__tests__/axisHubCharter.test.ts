@@ -11,9 +11,7 @@ const fromRoot = (relativePath: string) => resolve(process.cwd(), relativePath);
 /**
  * The route folder each axis's hub is served from.
  *
- * The French segment, because `[lang]` holds the French route tree and the
- * English slugs are rewritten onto it by `src/middleware.ts` (DEC-049) — so a
- * folder named after the English slug would be a folder nothing reaches.
+ * The French segment, because `[lang]` holds the French route tree.
  */
 const HUB_ROUTE_DIR: Record<string, string> = Object.fromEntries(
   ACCESS_MODES.map((axis) => [

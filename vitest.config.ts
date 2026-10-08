@@ -50,12 +50,17 @@ export default defineConfig({
         "src/test/",
         "src/stories/",
       ],
-      thresholds: {
-        statements: 70,
-        branches: 60,
-        functions: 70,
-        lines: 70,
-      },
+      // A CI shard only sees a slice of the suite, so a global threshold would
+      // fail it on numbers that mean nothing; the thresholds are applied once,
+      // to the merged report (ci.yml, `tests-coverage` job).
+      thresholds: process.env.VITEST_SHARD
+        ? undefined
+        : {
+            statements: 70,
+            branches: 60,
+            functions: 70,
+            lines: 70,
+          },
     },
   },
   resolve: {

@@ -84,7 +84,7 @@ export async function ficheSubjectFor(
       return { name: country.nameFr, summary: country.summary };
     }
     case "family": {
-      const family = await loadLanguageFamilyFiche(id, lang);
+      const family = await loadLanguageFamilyFiche(id);
       if (!family) return null;
       return { name: family.nameFr, peopleCount: family.peopleCount };
     }

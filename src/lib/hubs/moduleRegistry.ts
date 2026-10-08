@@ -110,7 +110,7 @@ export type ModuleGroupId =
  * A shelf carries no label here. It used to, and the labels were French
  * literals in a file `check:copy-literals` does not exempt — tolerated only
  * because they predate the gate. Rubric names are reader-facing copy, so they
- * live where reader-facing copy lives, `i18n/copy/hubs.ts`, in both locales.
+ * live where reader-facing copy lives, `i18n/copy/hubs.ts`.
  * Modules keep a registry `name` *and* a dictionary entry because theirs
  * predates the i18n move; a rubric is new, so it starts with one home and
  * cannot drift between two.
@@ -608,25 +608,6 @@ export const MODULE_DEFINITIONS: HubModuleDefinition[] = [
     name: "Proverbes",
     accessMode: "dossiers",
     page: "proverbs",
-    availability: "static",
-    editorialReadiness: "ready",
-  },
-  // The generated images of Découvertes, shelved by collection (REQ-167). A
-  // view over the feed's own catalogue rather than a bank of its own, filed
-  // under names because two of its three collections are autonyms and the
-  // people behind them. Appended last for the accent walk, like `proverbes`.
-  //
-  // `ready` since the first twelve images were entered, each with a verified
-  // subject source and its derived files committed. It was `draft` until
-  // then, because an open gallery listing nothing promises what it does not
-  // hold; the route came off the withdrawn lists in `frozenRoutes`, the
-  // locale-alternates charter and `dossiersFreezeReach` in the same change.
-  {
-    id: "galerie",
-    group: "dossiers-noms",
-    name: "Galerie",
-    accessMode: "dossiers",
-    page: "gallery",
     availability: "static",
     editorialReadiness: "ready",
   },

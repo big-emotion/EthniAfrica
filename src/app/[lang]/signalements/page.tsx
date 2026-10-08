@@ -6,7 +6,7 @@ import { PUBLIC_FLAGS_REVALIDATE_SECONDS } from "@/api/v2/services/corpusCache";
 import { PublicFlagsQueue } from "@/components/flags/PublicFlagsQueue";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { getStaticPageRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import { getPublicFlagsPage } from "@/lib/supabase/queries/flags/getPublicFlagsPage";
 import { getTranslation } from "@/lib/translations";
 import type { Language } from "@/types/shared";
@@ -26,12 +26,10 @@ export async function generateMetadata({
   return {
     title: copy.metadataTitle,
     description: copy.metadataDescription,
-    ...surfaceHead(
-      lang as Language,
-      "reports",
-      (locale) => getStaticPageRoute(locale, "reports"),
-      { title: copy.metadataTitle, description: copy.metadataDescription }
-    ),
+    ...pageHead(getStaticPageRoute("fr", "reports"), {
+      title: copy.metadataTitle,
+      description: copy.metadataDescription,
+    }),
   };
 }
 

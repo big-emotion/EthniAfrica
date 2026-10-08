@@ -10,6 +10,20 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+### Removed
+
+- The English site. EthniAfrica publishes in French only: `SITE_LOCALE_MODE`, the
+  language switcher, the `ethni-locale` cookie, hreflang alternates and every English
+  copy bank are gone. Retired `/en/...` addresses answer with a permanent 308 to their
+  French page, and `robots.txt` lets crawlers follow them.
+
+### Changed
+
+- API (breaking): `lang` on `GET /api/v2/search`, `GET /api/v2/search/companions`,
+  `GET /api/v2/quiz/scopes` and `GET /api/v2/quiz/session` accepts only `fr`; `lang=en`
+  is refused with 400. `language` in the `POST /api/v2/flags` body is documented as `fr`
+  only (other values still fall back to French). Search no longer matches English names.
+
 ## [4.23.0] - 2026-10-06
 
 ### Added

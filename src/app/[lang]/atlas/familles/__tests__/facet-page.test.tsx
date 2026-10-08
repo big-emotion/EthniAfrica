@@ -183,17 +183,6 @@ describe("the families facet", () => {
     expect(screen.getByText(/16 familles/)).toBeInTheDocument();
   });
 
-  // @req REQ-141
-  it("renders its reading and controls in English", async () => {
-    render(await renderRoute({}, "en"));
-
-    expect(screen.getByText(/16 families documented/)).toBeInTheDocument();
-    expect(
-      screen.getByRole("searchbox", { name: "Search language families" })
-    ).toHaveAttribute("placeholder", "Family name or identifier");
-    expect(screen.getByText(/320 documented peoples/)).toBeInTheDocument();
-  });
-
   // @req REQ-117
   it("tells the shared map which families it documents in each country", async () => {
     render(await renderRoute({}));

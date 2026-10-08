@@ -6,7 +6,7 @@ import type { DiscoveryPublication } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
 import { ConsentProvider } from "@/hooks/use-consent";
 import { DISCOVERY_VIDEOS, videoPublications } from "@/lib/discoveries/videos";
-import { getCountryRoute, getPeopleRoute } from "@/lib/routing";
+import { getCountryRoute } from "@/lib/routing";
 
 // The photo, browsing and sharing suites below walk the two photographed
 // anecdotes in a known order; the proverbs have their own suite at the end.
@@ -18,9 +18,9 @@ const proverbPublication: DiscoveryPublication = {
   id: "proverb:test",
   kind: "proverb",
   status: "published",
-  slug: { fr: "proverbe-test", en: "proverb-test" },
-  title: { fr: "Texte du proverbe.", en: "Proverb text." },
-  description: { fr: "Ce que dit le proverbe.", en: "What it says." },
+  slug: { fr: "proverbe-test" },
+  title: { fr: "Texte du proverbe." },
+  description: { fr: "Ce que dit le proverbe." },
   original: { text: "Ọ̀rọ̀ àtijọ́", lang: "yor" },
   source: {
     title: "Recueil publié",
@@ -28,36 +28,10 @@ const proverbPublication: DiscoveryPublication = {
     tier: "referenced",
   },
   detail: {
-    body: { fr: ["Ce que dit le proverbe."], en: ["What it says."] },
+    body: { fr: ["Ce que dit le proverbe."] },
     entities: [],
     sources: [{ title: "Recueil publié", url: "https://example.org/recueil" }],
   },
-};
-
-const generatedFiles = {
-  "9:16": "/images/discoveries/generated/hausa-autonym/9x16.jpg",
-  "4:5": "/images/discoveries/generated/hausa-autonym/4x5.jpg",
-  "1:1": "/images/discoveries/generated/hausa-autonym/1x1.jpg",
-};
-
-const generatedPublication: DiscoveryPublication = {
-  id: "image:hausa-autonym",
-  kind: "image",
-  status: "published",
-  slug: { fr: "hausa-autonyme", en: "hausa-autonym" },
-  title: { fr: "Hausa, le nom qu’ils se donnent", en: "Hausa, their own name" },
-  description: { fr: "Une image générée.", en: "A generated image." },
-  source: {
-    title: "Fiche Haoussa",
-    url: "https://example.org/hausa",
-    tier: "referenced",
-  },
-  image: {
-    src: "/images/discoveries/generated/hausa-autonym/4x5.jpg",
-    credit: "EthniAfrica, CC BY-SA 4.0",
-    licence: "cc-by-sa",
-  },
-  downloads: generatedFiles,
 };
 
 afterEach(() => {
@@ -238,8 +212,6 @@ describe("Découvertes browsing", () => {
     document.head.innerHTML = `<title>Burkina</title>
       <meta name="description" content="Burkina">
       <link rel="canonical" href="https://ethniafrica.com/fr/decouvertes/burkina-faso-trois-langues">
-      <link rel="alternate" hreflang="fr" href="https://ethniafrica.com/fr/decouvertes/burkina-faso-trois-langues">
-      <link rel="alternate" hreflang="x-default" href="https://ethniafrica.com/fr/decouvertes/burkina-faso-trois-langues">
       <meta property="og:title" content="Burkina">
       <meta property="og:description" content="Burkina">
       <meta property="og:url" content="https://ethniafrica.com/fr/decouvertes/burkina-faso-trois-langues">
@@ -263,18 +235,6 @@ describe("Découvertes browsing", () => {
     )!;
     expect(document.title).toBe(guere.title.fr);
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
-      "href",
-      "https://ethniafrica.com/fr/decouvertes/guere-krahn-we"
-    );
-    expect(
-      document.querySelector('link[rel="alternate"][hreflang="fr"]')
-    ).toHaveAttribute(
-      "href",
-      "https://ethniafrica.com/fr/decouvertes/guere-krahn-we"
-    );
-    expect(
-      document.querySelector('link[rel="alternate"][hreflang="x-default"]')
-    ).toHaveAttribute(
       "href",
       "https://ethniafrica.com/fr/decouvertes/guere-krahn-we"
     );
@@ -443,97 +403,6 @@ describe("Découvertes sharing", () => {
   });
 });
 
-describe("Découvertes generated image downloads", () => {
-  // @req REQ-166
-  it("offers each pre-rendered format by name beside the ten link choices, for the publication being shared", () => {
-    HTMLElement.prototype.scrollIntoView = vi.fn();
-    render(
-      <DiscoveryReader
-        language="fr"
-        publications={[generatedPublication, proverbPublication]}
-        initialId="image:hausa-autonym"
-      />
-    );
-    fireEvent.click(screen.getByRole("button", { name: "Partager" }));
-    const dialog = screen.getByRole("dialog");
-
-    const expected = [
-      [/^9:16 · Story et Reel\s*1080 × 1920/, generatedFiles["9:16"]],
-      [/^4:5 · Publication\s*1080 × 1350/, generatedFiles["4:5"]],
-      [/^1:1 · Photo de profil\s*1080 × 1080/, generatedFiles["1:1"]],
-    ] as const;
-    const downloads = within(dialog).getByRole("region", {
-      name: "Télécharger l’image",
-    });
-    expect(within(downloads).getAllByRole("link")).toHaveLength(3);
-    for (const [name, href] of expected) {
-      const link = within(downloads).getByRole("link", { name });
-      expect(link).toHaveAttribute("href", href);
-      expect(link).toHaveAttribute("download");
-    }
-    expect(within(dialog).getAllByTestId(/^share-choice-/)).toHaveLength(10);
-
-    fireEvent.keyDown(
-      screen.getByLabelText("Découvertes", { selector: "div" }),
-      {
-        key: "ArrowDown",
-      }
-    );
-    expect(
-      within(dialog).getByRole("link", { name: /^1:1 · Photo de profil/ })
-    ).toHaveAttribute("href", generatedFiles["1:1"]);
-  });
-
-  // @req REQ-166
-  it("leaves out a format whose file is absent without announcing anything", () => {
-    render(
-      <DiscoveryReader
-        language="fr"
-        publications={[
-          {
-            ...generatedPublication,
-            downloads: {
-              "9:16": generatedFiles["9:16"],
-              "4:5": generatedFiles["4:5"],
-            },
-          },
-        ]}
-        initialId="image:hausa-autonym"
-      />
-    );
-    fireEvent.click(screen.getByRole("button", { name: "Partager" }));
-    const dialog = screen.getByRole("dialog");
-
-    const downloads = within(dialog).getByRole("region", {
-      name: "Télécharger l’image",
-    });
-    expect(
-      within(downloads)
-        .getAllByRole("link")
-        .map((link) => link.getAttribute("href"))
-    ).toEqual([generatedFiles["9:16"], generatedFiles["4:5"]]);
-    expect(within(dialog).queryByText(/1:1/)).not.toBeInTheDocument();
-    expect(within(dialog).queryByRole("status")).not.toBeInTheDocument();
-  });
-
-  // @req REQ-166
-  it("offers no download for a photographed anecdote", () => {
-    render(
-      <DiscoveryReader
-        language="fr"
-        publications={publications}
-        initialId="anecdote:burkina-faso"
-      />
-    );
-    fireEvent.click(screen.getByRole("button", { name: "Partager" }));
-    expect(
-      within(screen.getByRole("dialog")).queryByRole("region", {
-        name: "Télécharger l’image",
-      })
-    ).not.toBeInTheDocument();
-  });
-});
-
 describe("Découvertes proverb frame", () => {
   // Filed under its own kicker — « Saviez-vous que ? » over a proverb would
   // call a people's saying a fact — and declared in its own language.
@@ -572,9 +441,8 @@ describe("Découvertes proverb frame", () => {
               credit: "Auteur Test, CC BY-SA 4.0",
               shortCredit: {
                 fr: "Auteur Test, CC BY-SA",
-                en: "Author Test, CC BY-SA",
               },
-              alt: { fr: "Un marché au crépuscule.", en: "A market at dusk." },
+              alt: { fr: "Un marché au crépuscule." },
               licence: "cc-by-sa",
             },
           },
@@ -620,193 +488,14 @@ describe("Découvertes proverb frame", () => {
   });
 });
 
-const imagePublication: DiscoveryPublication = {
-  id: "image:test",
-  kind: "image",
-  status: "published",
-  collection: "autonymes",
-  slug: { fr: "image-test", en: "image-test-en" },
-  title: { fr: "Les Kikuyu disent Agĩkũyũ", en: "The Kikuyu say Agĩkũyũ" },
-  description: { fr: "Un autonyme.", en: "An autonym." },
-  source: {
-    title: "Grammaire kikuyu publiée",
-    url: "https://example.org/grammaire",
-    tier: "referenced",
-  },
-  image: {
-    src: "/images/discoveries/image-test.png",
-    credit: "EthniAfrica",
-    alt: { fr: "Un marché au crépuscule.", en: "A market at dusk." },
-    licence: "cc-by-sa",
-  },
-  generation: {
-    tool: "Outil de test",
-    model: "modele-test-2",
-    jobId: "job-123",
-    generatedOn: "2026-09-12",
-    sourceKind: "ai_generated",
-  },
-  caption: {
-    fr: "Une interprétation d’un marché kikuyu.",
-    en: "An interpretation of a Kikuyu market.",
-  },
-  captionExceedsCorpus: true,
-  captionSource: {
-    title: "Étude du marché publiée",
-    url: "https://example.org/marche",
-  },
-  detail: {
-    body: { fr: ["Ce que dit l’autonyme."], en: ["What the autonym says."] },
-    entities: [
-      {
-        kind: "people",
-        id: "PPL_KIKUYU",
-        label: { fr: "Kikuyu", en: "Kikuyu" },
-      },
-    ],
-    sources: [
-      {
-        title: "Grammaire kikuyu publiée",
-        url: "https://example.org/grammaire",
-      },
-    ],
-  },
-};
-
-describe("Découvertes generated image", () => {
-  // The label sits where the kind eyebrow sits, so the reader learns the
-  // picture is generated before reading anything the picture seems to claim.
-  // @req REQ-165
-  it("labels a generated image on its card without opening the detail sheet", () => {
-    render(
-      <DiscoveryReader
-        language="fr"
-        publications={[imagePublication]}
-        initialId="image:test"
-      />
-    );
-
-    const card = screen.getByRole("article");
-    expect(within(card).getByText("Image générée")).toBeVisible();
-    expect(
-      within(card).queryByText("Saviez-vous que ?")
-    ).not.toBeInTheDocument();
-    expect(
-      within(card).getByText("Une interprétation d’un marché kikuyu.")
-    ).toBeInTheDocument();
-    expect(within(card).queryByText(/Photo/)).not.toBeInTheDocument();
-    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
-  });
-
-  // @req REQ-165
-  it("states what a generated image rests on in its detail sheet", () => {
-    render(
-      <DiscoveryReader
-        language="fr"
-        publications={[imagePublication]}
-        initialId="image:test"
-      />
-    );
-    fireEvent.click(screen.getByRole("button", { name: "En savoir plus" }));
-
-    const dialog = screen.getByRole("dialog");
-    expect(within(dialog).getByText(/interprétation/i)).toBeInTheDocument();
-    expect(within(dialog).getByText("Outil de test")).toBeInTheDocument();
-    expect(within(dialog).getByText("modele-test-2")).toBeInTheDocument();
-    expect(within(dialog).getByText("12 septembre 2026")).toBeInTheDocument();
-    expect(within(dialog).getByText(/CC BY-SA 4\.0/)).toBeInTheDocument();
-    expect(
-      within(dialog).getByRole("link", { name: "Kikuyu" })
-    ).toHaveAttribute("href", getPeopleRoute("fr", "PPL_KIKUYU"));
-    expect(
-      within(dialog).getByRole("link", { name: "Grammaire kikuyu publiée" })
-    ).toHaveAttribute("href", "https://example.org/grammaire");
-    expect(
-      within(dialog).getByRole("link", { name: "Étude du marché publiée" })
-    ).toHaveAttribute("href", "https://example.org/marche");
-    expect(
-      within(dialog).queryByRole("link", { name: "Photo originale" })
-    ).not.toBeInTheDocument();
-  });
-
-  // A licence is published, not named (brand charter §9): the sheet links the
-  // licence's URI, the publication's own when it records one.
-  // @req REQ-165
-  it("publishes the licence URI of a generated image in its detail sheet", () => {
-    const { unmount } = render(
-      <DiscoveryReader
-        language="fr"
-        publications={[imagePublication]}
-        initialId="image:test"
-      />
-    );
-    fireEvent.click(screen.getByRole("button", { name: "En savoir plus" }));
-    expect(
-      within(screen.getByRole("dialog")).getByRole("link", {
-        name: "Lire la licence",
-      })
-    ).toHaveAttribute(
-      "href",
-      "https://creativecommons.org/licenses/by-sa/4.0/"
-    );
-    unmount();
-
-    render(
-      <DiscoveryReader
-        language="en"
-        publications={[
-          {
-            ...imagePublication,
-            image: {
-              ...imagePublication.image,
-              licenceUrl: "https://example.org/licence",
-            },
-          },
-        ]}
-        initialId="image:test"
-      />
-    );
-    fireEvent.click(screen.getByRole("button", { name: "Learn more" }));
-    expect(
-      within(screen.getByRole("dialog")).getByRole("link", {
-        name: "Read the licence",
-      })
-    ).toHaveAttribute("href", "https://example.org/licence");
-  });
-
-  // @req REQ-165
-  it("renders the generated-image label and provenance in English from the English dictionary", () => {
-    render(
-      <DiscoveryReader
-        language="en"
-        publications={[{ ...imagePublication, captionExceedsCorpus: false }]}
-        initialId="image:test"
-      />
-    );
-
-    const card = screen.getByRole("article");
-    expect(within(card).getByText("Generated image")).toBeVisible();
-    fireEvent.click(screen.getByRole("button", { name: "Learn more" }));
-
-    const dialog = screen.getByRole("dialog");
-    expect(within(dialog).getByText("September 12, 2026")).toBeInTheDocument();
-    expect(within(dialog).getByText(/CC BY-SA 4\.0/)).toBeInTheDocument();
-    expect(within(dialog).queryByText("Image générée")).not.toBeInTheDocument();
-    expect(
-      within(dialog).queryByRole("link", { name: "Étude du marché publiée" })
-    ).not.toBeInTheDocument();
-  });
-});
-
 const carouselPublication: DiscoveryPublication = {
   id: "carousel:guinee",
   kind: "carousel",
   status: "published",
-  slug: { fr: "guinee-trois-recits", en: "guinea-three-accounts" },
-  title: { fr: "Guinée, trois récits", en: "Guinea, three accounts" },
+  slug: { fr: "guinee-trois-recits" },
+  title: { fr: "Guinée, trois récits" },
   description: {
     fr: "Ce que le nom raconte.",
-    en: "What the name tells.",
   },
   source: {
     title: "Fiche Guinée",
@@ -824,19 +513,19 @@ const carouselPublication: DiscoveryPublication = {
         src: "/images/discoveries/carousel/guinee/1.jpg",
         width: 1080,
         height: 1350,
-        alt: { fr: "Première carte", en: "First card" },
+        alt: { fr: "Première carte" },
       },
       {
         src: "/images/discoveries/carousel/guinee/2.jpg",
         width: 1080,
         height: 1350,
-        alt: { fr: "Deuxième carte", en: "Second card" },
+        alt: { fr: "Deuxième carte" },
       },
       {
         src: "/images/discoveries/carousel/guinee/3.jpg",
         width: 1080,
         height: 1350,
-        alt: { fr: "Troisième carte", en: "Third card" },
+        alt: { fr: "Troisième carte" },
       },
     ],
   },
@@ -968,15 +657,15 @@ describe("Découvertes video", () => {
   const withoutEmbed: DiscoveryPublication = {
     ...video,
     id: "video:no-embed",
-    slug: { fr: "sans-lecteur", en: "no-player" },
+    slug: { fr: "sans-lecteur" },
     video: { ...video.video!, embed: undefined },
   };
 
-  const renderVideo = (publication: DiscoveryPublication, language = "fr") =>
+  const renderVideo = (publication: DiscoveryPublication) =>
     render(
       <ConsentProvider>
         <DiscoveryReader
-          language={language as "fr" | "en"}
+          language="fr"
           publications={[publication]}
           initialId={publication.id}
         />
@@ -1084,15 +773,5 @@ describe("Découvertes video", () => {
       "href",
       "https://creativecommons.org/licenses/by-sa/4.0/"
     );
-  });
-
-  // @req REQ-181
-  it("speaks English on an English route", () => {
-    renderVideo(video, "en");
-
-    expect(screen.getByText("Video")).toBeInTheDocument();
-    expect(
-      screen.getByRole("button", { name: /loads YouTube's player/i })
-    ).toBeInTheDocument();
   });
 });

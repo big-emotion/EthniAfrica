@@ -4,10 +4,9 @@ import { ContactAside } from "@/components/contact/ContactAside";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { pickDidYouKnowFact } from "@/lib/home/didYouKnowFacts";
-import { DID_YOU_KNOW_FACTS_EN } from "@/lib/home/didYouKnowFacts.en";
 import { contactCopy } from "@/lib/i18n/copy/contact";
 import { getStaticPageRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
 /**
@@ -42,12 +41,7 @@ export async function generateMetadata({
   };
   return {
     ...copy,
-    ...surfaceHead(
-      language,
-      "contact",
-      (locale) => getStaticPageRoute(locale, "contact"),
-      copy
-    ),
+    ...pageHead(getStaticPageRoute("fr", "contact"), copy),
   };
 }
 
@@ -56,11 +50,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
   const { lang } = await params;
   const language = lang as Language;
   const copy = contactCopy[language];
-  const selectedFact = pickDidYouKnowFact();
-  const fact =
-    language === "en" && selectedFact
-      ? { id: selectedFact.id, ...DID_YOU_KNOW_FACTS_EN[selectedFact.id] }
-      : selectedFact;
+  const fact = pickDidYouKnowFact();
 
   return (
     <PageLayout language={language} hideHeader>

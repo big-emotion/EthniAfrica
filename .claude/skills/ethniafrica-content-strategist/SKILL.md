@@ -187,8 +187,8 @@ Per proposed piece, state: the pillar and the slot it fills; the single claim it
 makes and its identifiable sources (a corpus record when applicable); the hook, written out; the channels and
 what changes between them; and the comparable that justifies it, with numbers.
 
-A claim needs verified provenance before scripting. Research a missing claim first;
-use `/afrik-curator` when a fiche needs work. A sourced social-only piece does not
+A claim needs verified provenance before scripting. Research a missing claim first,
+and correct the fiche when it needs work. A sourced social-only piece does not
 require creating a fiche merely to fit the production chain.
 
 ## Step 4 — Decide the site plan
@@ -241,7 +241,7 @@ two are manual regardless.
 - Navigation, IA, mobile ergonomics, converting a dead end → `/ethniafrica-experience-optimizer`.
 - Brand, visual composition, typography, tokens → `/afrik-art-director`.
 - Game mechanics and quiz items → `/afrik-game-designer`.
-- Writing or sourcing fiche claims → `/afrik-curator`.
+- Writing or sourcing fiche claims — editorial work on the corpus.
 - Filing the work as tickets → `/ethniafrica-spec`.
 
 This skill chooses subjects and channels. It does not write fiches, design pages,

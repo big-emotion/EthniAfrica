@@ -24,6 +24,16 @@ export interface LedgerEntry {
   sitePath: string;
   /** A piece about a word that is not a corpus entity; see the gate's own type. */
   word?: { label: { fr: string; en?: string }; queries: string[] };
+  /** What the answer page says about a published word; see the gate's type. */
+  answer?: {
+    lead?: { fr: string; en?: string };
+    origin: Array<{
+      text: { fr: string; en?: string };
+      attribution?: "oral" | "written" | "linguistic" | "synthesis";
+    }>;
+    path?: Array<{ form: string; language: string; period?: string }>;
+    followUp?: { fr: string; en?: string };
+  };
   publications: Array<{
     network: string;
     format: string;

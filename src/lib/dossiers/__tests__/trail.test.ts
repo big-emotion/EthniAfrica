@@ -27,16 +27,6 @@ describe("dossier theme trails", () => {
     expect(trail.some((crumb) => crumb.href?.includes("/themes/"))).toBe(false);
   });
 
-  // @req REQ-140
-  it("keeps the English trail on English dossier routes", () => {
-    const trail = deriveTrail(getLocalizedRoute("en", "anecdotes"));
-
-    expect(
-      trail.every((crumb) => !crumb.href || crumb.href.startsWith("/en"))
-    ).toBe(true);
-    expect(trail.some((crumb) => crumb.href?.includes("/themes/"))).toBe(false);
-  });
-
   // A theme page still labels itself from its own path — it is the crumb's
   // *link* the freeze withdraws, not the vocabulary.
   // @req REQ-091

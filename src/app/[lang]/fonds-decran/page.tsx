@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { WallpaperLibraryPage } from "@/components/pages/WallpaperLibraryPage";
 import { scaleLadder, wallpaperLibrary } from "@/lib/i18n/copy/scaleLadder";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
 interface PageProps {
@@ -25,12 +25,7 @@ export async function generateMetadata({
 
   return {
     ...copy,
-    ...surfaceHead(
-      lang as Language,
-      "wallpapers",
-      (locale) => getLocalizedRoute(locale, "wallpapers"),
-      copy
-    ),
+    ...pageHead(getLocalizedRoute("fr", "wallpapers"), copy),
   };
 }
 

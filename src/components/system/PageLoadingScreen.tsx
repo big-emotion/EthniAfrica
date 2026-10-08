@@ -1,9 +1,7 @@
-import { headers } from "next/headers";
-
 import { PageLayout } from "@/components/layout/PageLayout";
 import { DidYouKnowLoader } from "@/components/system/DidYouKnowLoader";
 import { pickDidYouKnowFact } from "@/lib/home/didYouKnowFacts";
-import { LOCALE_HEADER, resolveLocale } from "@/lib/locale";
+import { FALLBACK_LOCALE } from "@/lib/locale";
 import type { Language } from "@/types/shared";
 
 export interface PageLoadingScreenProps {
@@ -47,17 +45,13 @@ export interface PageLoadingScreenProps {
  * page that resolves quickly therefore shows no indicator at all, which is
  * the point: an indicator inside that window is a flash, not information.
  *
- * A `loading.tsx` receives no params, so the shell's locale comes off the
- * `x-locale` request header the middleware sets — the same one the root
- * layout reads for `<html lang>`. Absent, the default locale.
+ * A `loading.tsx` receives no params; the shell is French, the one locale
+ * published.
  */
 // @req REQ-098
 // @req REQ-104
-export async function PageLoadingScreen({ label }: PageLoadingScreenProps) {
-  const requestHeaders = await headers();
-  const language = resolveLocale(
-    requestHeaders.get(LOCALE_HEADER) ?? undefined
-  );
+export function PageLoadingScreen({ label }: PageLoadingScreenProps) {
+  const language = FALLBACK_LOCALE;
   const localizedLabel = typeof label === "string" ? label : label[language];
 
   return (

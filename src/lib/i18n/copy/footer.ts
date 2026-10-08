@@ -1,41 +1,7 @@
 import { ATTRIBUTION_STRING, PRODUCT_NAME } from "@/lib/brand";
 import type { Language } from "@/types/shared";
 
-const en = {
-  attribution: ATTRIBUTION_STRING,
-  partnerLogoAlt: "BIG EMOTION",
-  copyright: `${PRODUCT_NAME} — content published under the CC BY-SA 4.0 licence.`,
-  about: "About",
-  api: "API",
-  legalNavigationLabel: "Legal information",
-  legalNotice: "Legal notice",
-  dataPolicy: "Data policy",
-  cookieSettings: "Cookie settings",
-  accessibility: "Accessibility",
-  sitemap: "Sitemap",
-  directory: {
-    explorerHeading: "Explore",
-    axes: {
-      atlas: "Browse",
-      dossiers: "Articles",
-      jeux: "Play",
-    },
-    participateHeading: "Take part",
-    contribute: "Contribute",
-    reportError: "Report an error",
-    projectHeading: "The project",
-    about: "About",
-    sources: "Sources",
-    glossary: "Glossary",
-    contact: "Contact",
-    followHeading: "Follow us",
-    followPending: "account to come",
-  },
-};
-
-type FooterCopy = typeof en;
-
-const fr: FooterCopy = {
+const fr = {
   attribution: ATTRIBUTION_STRING,
   partnerLogoAlt: "BIG EMOTION",
   // Not "tous droits réservés": the API meta and every citation this site
@@ -92,5 +58,7 @@ const fr: FooterCopy = {
   },
 };
 
+type FooterCopy = typeof fr;
+
 // @req REQ-145
-export const footerCopy: Record<Language, FooterCopy> = { en, fr };
+export const footerCopy: Record<Language, FooterCopy> = { fr };

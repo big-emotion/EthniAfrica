@@ -158,14 +158,6 @@ export const searchFeedPresentationSchema = z
       .object({ questionCountLabel: z.string().min(1) })
       .strict()
       .optional(),
-    images: z
-      .object({
-        title: z.string().min(1).optional(),
-        subtitle: z.string().min(1).nullable().optional(),
-        licenceText: z.string().min(1).optional(),
-      })
-      .strict()
-      .optional(),
     fiches: z
       .object({
         title: z.string().min(1).optional(),

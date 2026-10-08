@@ -312,7 +312,7 @@ where they bounce nearly four times as often as on desktop.
 
 - Visual, brand, typography and token questions → `/afrik-art-director`.
 - Game design questions → `/afrik-game-designer`.
-- Writing or sourcing fiche content → `/afrik-curator`.
+- Writing or sourcing fiche content — editorial work on the corpus.
 
 This skill measures and classifies. It does not fix, and it does not decide what
 to publish.

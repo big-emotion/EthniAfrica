@@ -10,12 +10,11 @@ describe("LensesBlock", () => {
     const { container } = render(
       <LensesBlock
         language="fr"
-        active="images"
+        active="fiches"
         onChange={onChange}
         lenses={[
           { id: "all", label: "Tout" },
           { id: "shorts", label: "Shorts", count: 4 },
-          { id: "images", label: "Images", count: 1 },
           { id: "quiz", label: "Jeux" },
           { id: "fiches", label: "Fiches", count: 5 },
         ]}
@@ -37,8 +36,10 @@ describe("LensesBlock", () => {
       "[&::-webkit-scrollbar]:hidden"
     );
     expect(navigation).not.toHaveClass("overflow-hidden", "flex-wrap");
+    // The row starts on the content column's edge, not on a centred box.
+    expect(navigation.className).not.toMatch(/min-\[1200px\]:mx-auto/);
 
-    const active = screen.getByRole("button", { name: "Images 1" });
+    const active = screen.getByRole("button", { name: "Fiches 5" });
     expect(active).toHaveAttribute("aria-pressed", "true");
     for (const button of screen.getAllByRole("button")) {
       expect(button).toHaveClass("min-h-11", "shrink-0", "snap-start");

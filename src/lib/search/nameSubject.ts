@@ -75,10 +75,15 @@ export function selectNameSubject(
       !exact.includes(result) &&
       kinds.has(result.type) &&
       !(result.peopleGroupId && groups.has(result.peopleGroupId)) &&
-      carriesAsFirstWord(
+      (carriesAsFirstWord(
         normalizeString(getLocalizedSearchResultName(result, language)),
         wanted
-      )
+      ) ||
+        (result.type === "country" &&
+          carriesAsWord(
+            normalizeString(getLocalizedSearchResultName(result, language)),
+            wanted
+          )))
   );
 
   return [...exact, ...widened];
@@ -92,6 +97,16 @@ export function selectNameSubject(
 function carriesAsFirstWord(name: string, word: string): boolean {
   if (!name.startsWith(`${word} `)) return false;
   return !name.slice(word.length).trimStart().startsWith("(");
+}
+
+/**
+ * « république démocratique du congo » holds « congo » as a whole word, which
+ * « congolaise » does not. Only countries take this reading: a State is named
+ * by a phrase around its name, a people never is, and « Ancien du Kongo » is
+ * not another people called Kongo.
+ */
+function carriesAsWord(name: string, word: string): boolean {
+  return ` ${name} `.includes(` ${word} `);
 }
 
 /**

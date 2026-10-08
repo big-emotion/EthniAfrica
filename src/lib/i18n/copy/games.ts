@@ -1,44 +1,6 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  estimateCommit: "Confirm my estimate",
-  estimateHint: "Drag, then confirm.",
-  correctVerdict: "Correct",
-  incorrectVerdict: "Not quite",
-  provenanceLabel: "According to",
-  openFiche: "Read the page",
-  openAtlas: "Browse",
-  confidenceAriaSuffix: "for the subject of this round",
-  yourEstimate: "Your estimate:",
-  nextRound: "Next round",
-  seeScore: "See the score",
-  scoreHeading: "Game complete",
-  scoreSeparator: "of",
-  scoreCaption: "correct answers",
-  playAgain: "Play again",
-  factsHeading: "Everything the map concealed",
-  factEyebrow: "What the map concealed",
-  corpusLimited:
-    "This game was shorter than expected: the outlines do not yet provide enough misleading comparisons for eight rounds.",
-  emptyCorpus:
-    "We do not yet have enough pages to compose a round of this game.",
-  emptyCorpusHint:
-    "This game will open when the corresponding pages have been published.",
-  trueSizeHeading: "Africa's true size",
-  unResolution:
-    "On 4 September 2026, the United Nations General Assembly adopted by 164 votes to one, at Togo's initiative on behalf of the African Group and with the African Union's support, a resolution calling for this ‘symbolic minimisation’ of the continent to be corrected and for area-respecting projections such as Equal Earth to be preferred.",
-  unSourceLabel: "UN News in French, 4 September 2026",
-  continentGlobe: {
-    missing: "We do not yet record any people by country.",
-    fallback: "Flat map of Africa: this browser cannot display the globe.",
-    wholeArea: "The whole continent",
-    areaNoun: "the continent",
-  },
-};
-
-type GamesCopy = typeof en;
-
-const fr: GamesCopy = {
+const fr = {
   estimateCommit: "Valider mon estimation",
   estimateHint: "Faites glisser, puis validez.",
   correctVerdict: "Bonne réponse",
@@ -75,5 +37,7 @@ const fr: GamesCopy = {
   },
 };
 
+type GamesCopy = typeof fr;
+
 // @req REQ-145
-export const gamesCopy: Record<Language, GamesCopy> = { en, fr };
+export const gamesCopy: Record<Language, GamesCopy> = { fr };

@@ -17,18 +17,6 @@
  *           pattern: '^[a-z]{3}$'
  *         description: Lowercase ISO 639-3 language identifier
  *         example: "yor"
- *       - in: query
- *         name: lang
- *         required: false
- *         schema:
- *           type: string
- *           enum: [fr, en]
- *           default: fr
- *         description: >
- *           Locale of the served content. `fr` is the authored language; `en`
- *           overlays the translation record when one exists and declares its
- *           provenance in `meta.translation` (REQ-142).
- *         example: en
  *     responses:
  *       200:
  *         description: Language detail envelope
@@ -76,10 +64,9 @@ export const GET = corpusDetailRoute({
   param: "id",
   isValidId: (id) => languageIdParamSchema.safeParse({ id }).success,
   invalidIdMessage: "Invalid language ID format",
-  servesLang: true,
   cacheControl: CORPUS_CACHE_CONTROL,
   rejectedLog: "Language request rejected",
-  resolve: (id, lang) => getLanguageHandler(id, lang),
+  resolve: (id) => getLanguageHandler(id),
 });
 
 // @req REQ-136

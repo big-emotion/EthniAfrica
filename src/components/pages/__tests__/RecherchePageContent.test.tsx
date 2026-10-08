@@ -105,7 +105,6 @@ const emptyCompanionsApiResponse = {
     shorts: { count: 0, items: [] },
     anecdotes: { count: 0, items: [] },
     proverbs: { count: 0, items: [] },
-    images: { count: 0, items: [] },
     quiz: { count: 0, item: null },
   },
 };
@@ -136,23 +135,7 @@ const searchApiResponse = {
     total: 1,
   },
 };
-const englishChadApiResponse = {
-  data: {
-    peoples: [],
-    countries: [
-      {
-        id: "TCD",
-        nameFr: "Tchad",
-        nameEn: "Chad",
-        relevance: 1,
-        exactMatch: true,
-        content: {},
-      },
-    ],
-    families: [],
-    total: 1,
-  },
-};
+
 const desktopPivotApiResponse = {
   data: {
     peoples: [
@@ -326,42 +309,6 @@ describe("RecherchePageContent", () => {
     render(<RecherchePageContent />);
     expect(
       screen.getByRole("button", { name: /rechercher/i })
-    ).toBeInTheDocument();
-  });
-
-  // @req REQ-140
-  it("renders the idle search surface in English", () => {
-    locale.language = "en";
-    render(<RecherchePageContent />);
-
-    expect(screen.getByRole("heading", { name: "Search" })).toBeInTheDocument();
-    expect(
-      screen.getByRole("search", { name: "Search form" })
-    ).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: "Search" })).toBeInTheDocument();
-    expect(screen.getByRole("combobox")).toHaveAccessibleName(
-      "Search for a people, language, country, language family or surname"
-    );
-  });
-
-  // @req REQ-140
-  it("renders an exact English country name in the feed verdict", async () => {
-    locale.language = "en";
-    vi.mocked(nextNavigation.useSearchParams).mockReturnValue(
-      new URLSearchParams("q=Chad") as ReturnType<
-        typeof nextNavigation.useSearchParams
-      >
-    );
-    mockFetch.mockResolvedValue(okJson(englishChadApiResponse));
-
-    await act(async () => {
-      render(<RecherchePageContent />);
-      await new Promise((resolve) => setTimeout(resolve, 100));
-    });
-
-    expect(await screen.findByTestId("feed-block-verdict")).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { level: 1, name: "Chad" })
     ).toBeInTheDocument();
   });
 
@@ -554,44 +501,6 @@ describe("RecherchePageContent", () => {
 
     expect(mockFetch).toHaveBeenCalledWith(
       expect.stringMatching(/\/api\/v2\/search\?.*limit=6/)
-    );
-  });
-
-  // @req REQ-140
-  it("sends the page locale with English suggestions", async () => {
-    locale.language = "en";
-    mockFetch.mockResolvedValue(okJson(suggestApiResponse));
-    render(<RecherchePageContent />);
-
-    await act(async () => {
-      fireEvent.change(screen.getByRole("combobox"), {
-        target: { value: "Yo" },
-      });
-      await new Promise((resolve) => setTimeout(resolve, 350));
-    });
-
-    expect(mockFetch).toHaveBeenCalledWith(
-      expect.stringMatching(/\/api\/v2\/search\?.*lang=en/)
-    );
-  });
-
-  // @req REQ-140
-  it("sends the page locale with an English committed search", async () => {
-    locale.language = "en";
-    mockFetch.mockResolvedValue(okJson(emptyApiResponse));
-    render(<RecherchePageContent />);
-
-    await act(async () => {
-      fireEvent.change(screen.getByRole("combobox"), {
-        target: { value: "Chad" },
-      });
-      fireEvent.click(screen.getByRole("button", { name: /^search$/i }));
-      await new Promise((resolve) => setTimeout(resolve, 100));
-    });
-
-    expect(mockFetch).toHaveBeenCalledWith(
-      expect.stringMatching(/\/api\/v2\/search\?.*limit=20.*lang=en/),
-      expect.objectContaining({ signal: expect.any(AbortSignal) })
     );
   });
 
@@ -1139,7 +1048,7 @@ describe("RecherchePageContent", () => {
   // The rail is gone rather than moved: pushing it below would have kept the
   // hierarchy it asserts and only changed where the assertion sits.
   // @req REQ-178
-  it("mounts exactly one viewport-specific feed tree", async () => {
+  it("mounts exactly one feed tree", async () => {
     mockFetch.mockResolvedValue(okJson(searchApiResponse));
     render(<RecherchePageContent />);
 
@@ -1153,7 +1062,7 @@ describe("RecherchePageContent", () => {
 
     const layout = await screen.findByTestId("feed-layout");
     expect(screen.getAllByTestId("feed-layout")).toHaveLength(1);
-    expect(layout).toHaveAttribute("data-feed-layout", "mobile");
+    expect(layout).toHaveAttribute("data-feed-layout", "column");
   });
 
   it("input uses autocomplete=off to prevent browser search history", () => {
@@ -1238,9 +1147,10 @@ describe("RecherchePageContent", () => {
       expect(screen.getByTestId("feed-block-lenses")).toBeInTheDocument();
     });
     expect(screen.getByRole("button", { name: "Tout" })).toBeInTheDocument();
+    // A filter with nothing behind it is not offered, not even with a zero.
     expect(
-      screen.getByRole("button", { name: "Shorts 0" })
-    ).toBeInTheDocument();
+      screen.queryByRole("button", { name: /^Shorts\b/ })
+    ).not.toBeInTheDocument();
     expect(
       screen.getByRole("button", { name: "Fiches 1" })
     ).toBeInTheDocument();
@@ -1752,6 +1662,62 @@ describe("what the SERP reports about a search", () => {
 
     await waitFor(() => expect(submissions()).toHaveLength(1));
     expect(submissions()[0][1].props).toMatchObject({ results: 0 });
+  });
+
+  // The class searched tells the dashboard which kind of name readers come
+  // for; one entry answering is that entry's class.
+  // @req REQ-046
+  it("types the search by the one entry that answered", async () => {
+    mockFetch.mockResolvedValue(okJson(searchApiResponse));
+
+    await submit("Zulu");
+
+    await waitFor(() => expect(submissions()).toHaveLength(1));
+    expect(submissions()[0][1].props).toMatchObject({ type: "people" });
+  });
+
+  // @req REQ-046
+  it("types a search no entry answers to as none", async () => {
+    await submit("qqqqqq");
+
+    await waitFor(() => expect(submissions()).toHaveLength(1));
+    expect(submissions()[0][1].props).toMatchObject({ type: "none" });
+  });
+
+  // Several entities answering is a disambiguation, not a class: filing it
+  // under the first would crown one of them in the dashboard.
+  // @req REQ-046
+  it("types a search several entries answer to as multiple", async () => {
+    mockFetch.mockResolvedValue(
+      okJson({
+        data: {
+          peoples: [
+            {
+              id: "PPL_BASSA_A",
+              nameMain: "Bassa",
+              languageFamilyId: "FLG_NIGER_CONGO",
+              currentCountries: ["CMR"],
+              content: {},
+            },
+            {
+              id: "PPL_BASSA_B",
+              nameMain: "Bassa",
+              languageFamilyId: "FLG_NIGER_CONGO",
+              currentCountries: ["LBR"],
+              content: {},
+            },
+          ],
+          countries: [],
+          families: [],
+          total: 2,
+        },
+      })
+    );
+
+    await submit("Bassa");
+
+    await waitFor(() => expect(submissions()).toHaveLength(1));
+    expect(submissions()[0][1].props).toMatchObject({ type: "multiple" });
   });
 
   // A fetch that threw is not a search that found nothing. Folding the two

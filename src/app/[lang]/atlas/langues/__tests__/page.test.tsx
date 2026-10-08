@@ -112,7 +112,7 @@ describe("/[lang]/atlas/langues/[slug] page", () => {
     const { render, screen } = await import("@testing-library/react");
     render(ui as React.ReactElement);
 
-    expect(mockGetLanguageById).toHaveBeenCalledWith("yor", "fr");
+    expect(mockGetLanguageById).toHaveBeenCalledWith("yor");
     const record = screen.getByTestId("language-detail-live");
     expect(record).toHaveAttribute("data-language-id", "yor");
     expect(record).toHaveAttribute("data-language-name", "Yoruba");
@@ -147,24 +147,6 @@ describe("/[lang]/atlas/langues/[slug] page", () => {
     expect(
       container.querySelector('[data-testid="language-detail-live"]')
     ).toHaveAttribute("data-assertion-count", "7");
-  });
-
-  // @req REQ-142
-  it("renders the translated record and its provenance for English", async () => {
-    mockGetLanguageById.mockResolvedValue({
-      ...YORUBA,
-      vehicularRole: "A vehicular language in southwestern Nigeria",
-      translation: { kind: "machine", stale: false },
-    });
-
-    const ui = await callPage("yor", "en");
-    const { render, screen } = await import("@testing-library/react");
-    render(ui as React.ReactElement);
-
-    expect(mockGetLanguageById).toHaveBeenCalledWith("yor", "en");
-    expect(screen.getByRole("status")).toHaveTextContent(
-      "Machine translation, not yet reviewed"
-    );
   });
 
   // @req REQ-136

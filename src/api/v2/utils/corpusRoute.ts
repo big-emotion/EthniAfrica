@@ -1,8 +1,8 @@
 /**
  * The shape shared by the v2 routes that serve one corpus record by id.
  *
- * Eight route files carried the same thirty lines — id-format refusal, `?lang`
- * refusal, 404 envelope, 500 envelope, timing logs — and diverged only where
+ * Eight route files carried the same thirty lines — id-format refusal, 404
+ * envelope, 500 envelope, timing logs — and diverged only where
  * the parameters below say. The route file keeps its OpenAPI block, its
  * validator and its handler; the handler and the service below it are
  * untouched, so the route → handler → service split stays where it was.
@@ -11,7 +11,6 @@ import { NextRequest } from "next/server";
 
 import { CORPUS_AGGREGATE_REVALIDATE_SECONDS } from "@/api/v2/services/corpusCache";
 import { createApiError } from "@/api/v2/utils/response";
-import { validateLang } from "@/api/v2/utils/validation";
 import { jsonWithCors } from "@/lib/api/cors";
 import { logger } from "@/lib/api/logger";
 
@@ -28,7 +27,6 @@ import { logger } from "@/lib/api/logger";
 // @req REQ-084
 export const CORPUS_CACHE_CONTROL = `s-maxage=${CORPUS_AGGREGATE_REVALIDATE_SECONDS}`;
 
-type Locale = NonNullable<ReturnType<typeof validateLang>>;
 type ErrorCode = Exclude<
   Parameters<typeof createApiError>[0],
   readonly unknown[]
@@ -54,12 +52,10 @@ export interface CorpusDetailRoute<Param extends string> {
   invalidIdMessage: string;
   /** The migrations detail route has always answered a malformed id with 422. */
   invalidIdStatus?: 400 | 422;
-  /** A route that does not serve `?lang` never validates it. */
-  servesLang: boolean;
   /** Left unset, the response carries no Cache-Control at all, as before. */
   cacheControl?: string;
   rejectedLog: string;
-  resolve: (id: string, lang: Locale) => Promise<DetailOutcome>;
+  resolve: (id: string) => Promise<DetailOutcome>;
 }
 
 // @req REQ-084
@@ -89,28 +85,7 @@ export function corpusDetailRoute<Param extends string>(
         );
       }
 
-      let lang: Locale = "fr";
-      if (route.servesLang) {
-        const requested = request.nextUrl.searchParams.get("lang");
-        const validated = validateLang(requested);
-        if (validated === null) {
-          logger.warn("Unsupported lang requested", {
-            ...logContext,
-            lang: requested,
-          });
-          return jsonWithCors(
-            createApiError({
-              code: "VALIDATION_ERROR",
-              message: "Unsupported lang: expected fr or en",
-              field: "lang",
-            }),
-            { status: 400 }
-          );
-        }
-        lang = validated;
-      }
-
-      const outcome = await route.resolve(id, lang);
+      const outcome = await route.resolve(id);
 
       if (outcome.ok === false) {
         logger.warn(route.rejectedLog, { ...logContext, code: outcome.code });

@@ -310,6 +310,12 @@
         "url": "https://op.gov.na/president",
 
         "tier": "official"
+      },
+      {
+        "title": "Agence namibienne de statistique, Namibia 2023 Population and Housing Census, Main Report, octobre 2024, tableau 3.6 et annexe IV « Population distribution by ethnic groups and sex »",
+        "url": "https://nsa.org.na/wp-content/uploads/2024/10/2023-Population-and-Housing-Census-Main-Report-28-Oct-2024.pdf",
+        "tier": "official",
+        "notes": "Le recensement a demandé à chaque personne son groupe. Parts calculées sur 3 022 401 personnes : Ovambo 50,4 % (somme des neuf lignes Aakolonkadhi, Aakwaluudhi, Aakwambi, Aakwanyama, Aambalantu, Aambadja, Aandonga, Aangandjera et Aawambo non classés ailleurs), Kavango 11,6 % (somme des lignes Hambukushu, Vambunza, Vagciriku, Vasambyu, Vakwangali et Vakavango non classés ailleurs). Herero 5,9 % (ligne Ovaherero), Damara 5,6 % (ligne « Damara, non classés ailleurs ») et Nama 3,1 % (ligne « Nama, non classés ailleurs ») : les sous-groupes Damara et Nama listés à part ne sont pas ajoutés, ces deux parts sont donc des minimums. Les Himba, les San et les Blancs restent dans « Autres ». Rapport lu le 6 octobre 2026."
       }
     ],
     "demographics": {
@@ -319,16 +325,38 @@
       "peoples": [
         {
           "name": "Ovambo",
-          "percentageInCountry": 50,
+          "percentageInCountry": 50.4,
           "peopleId": "PPL_OVAMBO",
           "region": "Nord de la Namibie"
+        },
+        {
+          "name": "Kavango",
+          "percentageInCountry": 11.6,
+          "peopleId": "PPL_KAVANGO",
+          "region": "Nord-est de la Namibie"
+        },
+        {
+          "name": "Herero",
+          "percentageInCountry": 5.9,
+          "peopleId": "PPL_HERERO",
+          "region": "Centre de la Namibie"
+        },
+        {
+          "name": "Damara",
+          "percentageInCountry": 5.6,
+          "peopleId": "PPL_DAMARA"
+        },
+        {
+          "name": "Nama",
+          "percentageInCountry": 3.1,
+          "peopleId": "PPL_NAMA"
         },
         {
           "name": "Autres groupes ethniques",
           "peopleId": null,
           "region": "Divers",
           "languageFamily": null,
-          "percentageInCountry": 50
+          "percentageInCountry": 23.4
         }
       ]
     }

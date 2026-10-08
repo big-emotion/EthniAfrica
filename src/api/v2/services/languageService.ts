@@ -7,9 +7,7 @@ import {
   getAfrikSpeakingPeoples,
 } from "@/lib/supabase/queries/afrik/languages";
 import { getSourcesMap } from "@/lib/supabase/queries/afrik/module-zero-batch";
-import type { TranslationLocale } from "@/lib/i18n/translationLocale";
 import { toSourceTier, type SourceTier } from "@/types/sources";
-import { withTranslation, type TranslatedEntity } from "./translations";
 
 // @req REQ-136
 export interface LanguageDetail {
@@ -83,23 +81,12 @@ function getVitalityStatus(value: unknown): LanguageDetail["vitalityStatus"] {
  * dependent relation or source lookup is attempted.
  */
 // @req REQ-136
-// @req REQ-142
 export async function getLanguageById(
-  id: string,
-  lang: TranslationLocale = "fr"
-): Promise<TranslatedEntity<LanguageDetail> | null> {
-  const authored = await getAfrikLanguageById(id);
+  id: string
+): Promise<LanguageDetail | null> {
+  const language = await getAfrikLanguageById(id);
 
-  if (!authored) return null;
-
-  // The overlay applies to the row, whose `content` keeps the fiche's paths;
-  // the aggregate below flattens them and the class table would not know it.
-  const { record: language, translation } = await withTranslation(
-    "language",
-    id,
-    lang,
-    authored
-  );
+  if (!language) return null;
 
   const [speakingPeoples, sourcesMap] = await Promise.all([
     getAfrikSpeakingPeoples(id),
@@ -131,5 +118,5 @@ export async function getLanguageById(
     })),
   };
 
-  return lang === "fr" ? detail : { ...detail, translation };
+  return detail;
 }

@@ -2,11 +2,9 @@
 
 import type { ListRound } from "@/lib/games/gameKinds";
 import { cn } from "@/lib/utils";
-import type { Language } from "@/types/shared";
 
 export interface ListChoiceProps {
   round: ListRound;
-  language?: Language;
   onAnswer: (index: number) => void;
   disabled?: boolean;
   className?: string;
@@ -32,13 +30,11 @@ export interface ListChoiceProps {
 // @req REQ-120
 export const ListChoice = ({
   round,
-  language = "fr",
   onAnswer,
   disabled = false,
   className,
 }: ListChoiceProps) => {
-  const prompt =
-    language === "en" ? (round.promptEn ?? round.promptFr) : round.promptFr;
+  const prompt = round.promptFr;
 
   return (
     <section
@@ -65,9 +61,7 @@ export const ListChoice = ({
               backgroundColor: "var(--accent-tint)",
             }}
           >
-            {language === "en"
-              ? (option.labelEn ?? option.labelFr)
-              : option.labelFr}
+            {option.labelFr}
           </button>
         ))}
       </div>

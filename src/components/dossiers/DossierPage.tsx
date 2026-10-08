@@ -1,4 +1,3 @@
-import type { TranslationKind } from "@/lib/i18n/translationSidecarRules";
 import { DossierCitations } from "./DossierCitations";
 import { DossierChapterBlock } from "@/components/dossiers/DossierChapterBlock";
 import { PageLayout } from "@/components/layout/PageLayout";
@@ -11,22 +10,15 @@ import type { Language } from "@/types/shared";
 export interface DossierPageProps {
   dossier: Dossier;
   language: Language;
-  translationState?: TranslationKind | "missing";
 }
 
 // @req REQ-113
-export function DossierPage({
-  dossier,
-  language,
-  translationState,
-}: DossierPageProps) {
-  const contentLanguage = translationState === "missing" ? "fr" : language;
-  const en = contentLanguage === "en";
+export function DossierPage({ dossier, language }: DossierPageProps) {
   return (
     <PageLayout
       language={language}
       heroHead={
-        <div lang={contentLanguage}>
+        <div>
           <h1 className="afh-hero-title">{dossier.title}</h1>
           <p className="afh-hero-subtitle">{dossier.standfirst}</p>
         </div>
@@ -35,18 +27,7 @@ export function DossierPage({
       title={dossier.title}
       trailLabel={dossier.title}
     >
-      <div className="afh-accent-teal afh-dossier" lang={contentLanguage}>
-        {translationState === "machine" ? (
-          <p className="afh-dossier-translation" lang="en">
-            Machine translation from French
-          </p>
-        ) : null}
-        {translationState === "missing" ? (
-          <p className="afh-dossier-translation" lang="en">
-            English translation is not available. The original French dossier
-            follows.
-          </p>
-        ) : null}
+      <div className="afh-accent-teal afh-dossier">
         {dossier.thesis.figures.length > 0 ? (
           <section aria-labelledby={`${dossier.slug}-these`}>
             <ChapterHeading
@@ -84,13 +65,12 @@ export function DossierPage({
           <ChapterHeading
             heading={dossier.question}
             id={`${dossier.slug}-dossier`}
-            stepLabel={en ? "The dossier" : "Le dossier"}
+            stepLabel="Le dossier"
           />
           <div className="afh-dossier-chapters">
             {dossier.chapters.map((chapter, index) => (
               <DossierChapterBlock
                 chapter={chapter}
-                language={contentLanguage}
                 sources={dossier.sources}
                 sourcePrefix={dossier.slug}
                 index={index}
@@ -103,13 +83,9 @@ export function DossierPage({
         {dossier.gaps.length > 0 ? (
           <section aria-labelledby={`${dossier.slug}-limites`}>
             <ChapterHeading
-              heading={
-                en
-                  ? "What this dossier cannot establish"
-                  : "Ce que ce dossier ne peut pas dire"
-              }
+              heading="Ce que ce dossier ne peut pas dire"
               id={`${dossier.slug}-limites`}
-              stepLabel={en ? "The limits" : "Les limites"}
+              stepLabel="Les limites"
             />
             <div className="afh-dossier-prose">
               {dossier.gaps.map((gap) => (
@@ -121,13 +97,9 @@ export function DossierPage({
 
         <section aria-labelledby={`${dossier.slug}-sources`}>
           <ChapterHeading
-            heading={
-              en
-                ? `${dossier.sources.length} sources, each with its own standing`
-                : `${dossier.sources.length} sources, chacune à son niveau`
-            }
+            heading={`${dossier.sources.length} sources, chacune à son niveau`}
             id={`${dossier.slug}-sources`}
-            stepLabel={en ? "Sources" : "Les sources"}
+            stepLabel="Les sources"
           />
           <ul className="afh-dossier-sources">
             {dossier.sources.map((source, index) => (
@@ -147,7 +119,7 @@ export function DossierPage({
                 </p>
                 <p className="afh-dossier-source-notes">
                   {[
-                    SOURCE_TIER_LABELS[contentLanguage][source.tier],
+                    SOURCE_TIER_LABELS[language][source.tier],
                     source.publicationYear
                       ? String(source.publicationYear)
                       : null,

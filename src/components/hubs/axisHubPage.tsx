@@ -9,7 +9,7 @@ import { getHubModules } from "@/lib/hubs/moduleAvailability";
 import type { AccessMode } from "@/lib/hubs/moduleRegistry";
 import { isLocale } from "@/lib/locale";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import { getTranslation } from "@/lib/translations";
 
 /**
@@ -46,12 +46,10 @@ export async function axisHubMetadata(
   return {
     title: hub.pageTitle,
     description: hub.blurb,
-    ...surfaceHead(
-      lang,
-      page,
-      (language) => getLocalizedRoute(language, page),
-      { title: hub.pageTitle, description: hub.blurb }
-    ),
+    ...pageHead(getLocalizedRoute("fr", page), {
+      title: hub.pageTitle,
+      description: hub.blurb,
+    }),
   };
 }
 

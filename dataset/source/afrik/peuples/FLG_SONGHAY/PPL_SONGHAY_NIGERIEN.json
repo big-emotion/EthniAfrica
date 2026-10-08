@@ -1,12 +1,12 @@
 {
   "id": "PPL_SONGHAY_NIGERIEN",
-  "nameMain": "Songhay Nigerien",
+  "nameMain": "Songhay Nigérien",
   "languageFamilyId": "FLG_SONGHAY",
   "currentCountries": ["NER"],
   "classificationStatus": "contested",
   "content": {
     "appellations": {
-      "mainName": "Songhay Nigerien",
+      "mainName": "Songhay Nigérien",
       "selfAppellation": "Songhaiborai / Ayneha",
       "exonyms": [
         "Songhay de Gao du Niger",

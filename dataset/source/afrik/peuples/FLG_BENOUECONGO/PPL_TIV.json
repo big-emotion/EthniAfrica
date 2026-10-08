@@ -7,10 +7,11 @@
   "content": {
     "appellations": {
       "mainName": "Tiv",
-      "selfAppellation": "Tiv (also written Tiiv)",
+      "selfAppellation": "Tiv",
       "exonyms": [
         "Munchi / Munshi (Hausa-Fulani derogatory term, rejected by Tiv people)"
       ],
+      "spellingAliases": ["Tiiv"],
       "originOfExonyms": "The name Munchi or Munshi was used by Hausa-Fulani groups and adopted by British colonial administrators. The first European linguistic reference to the Tiv language appears in Sigismund Koelle's Polyglotta Africana (1854), based on accounts from freed slaves in Sierra Leone.",
       "whyProblematic": "Munchi / Munshi is considered derogatory by the Tiv and is no longer used in formal contexts.",
       "contemporaryUsage": "Tiv is the universally accepted self-designation and the standard term in Nigerian official contexts. The traditional paramount ruler bears the title Tor Tiv.",

@@ -19,12 +19,10 @@ export function bcp47LanguageTag(code?: string | null): string | undefined {
   }
 }
 
-/** British English is the product convention for the English locale. */
-export type LocaleTag = "en-GB" | "fr-FR";
+const LOCALE_TAG: Record<Language, string> = { fr: "fr-FR" };
 
 // @req REQ-140
-export const localeTag = (lang: Language): LocaleTag =>
-  lang === "fr" ? "fr-FR" : "en-GB";
+export const localeTag = (lang: Language): string => LOCALE_TAG[lang];
 
 const numberFormatters = new Map<string, Intl.NumberFormat>();
 const dateFormatters = new Map<string, Intl.DateTimeFormat>();

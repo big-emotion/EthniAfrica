@@ -11,12 +11,12 @@
   "content": {
     "appellations": {
       "mainName": "Quilombolas",
-      "selfAppellation": "Quilombola (autodesignation fondee sur l'autoattribution, au sens du decret federal 4.887/2003)",
+      "selfAppellation": "Quilombola",
       "exonyms": ["Remanescentes de quilombo", "Comunidade quilombola"],
       "spellingAliases": [],
       "originOfExonyms": "Le terme quilombola derive de quilombo, lui-meme issu du kimbundu kilombo (« campement de guerre »), parle en Angola. Chez les Imbangala d'Angola, le kilombo designait a la fois un campement fortifie et une institution militaire initiatique reunissant des combattants de lignages divers ; le terme fut repris au Bresil colonial pour designer les etablissements de personnes africaines et afro-descendantes en fuite de l'esclavage.",
       "whyProblematic": null,
-      "contemporaryUsage": "Quilombola est le terme juridique et politique en usage au Bresil, employe par l'Etat (IBGE, Fundacao Cultural Palmares) comme par les communautes elles-memes selon un critere d'autoattribution. Il coexiste avec des autodesignations locales plus anciennes comme terras de preto, comunidade negra rural ou mocambo, que certaines communautes continuent de revendiquer meme apres leur certification officielle comme quilombolas.",
+      "contemporaryUsage": "Quilombola est le terme juridique et politique en usage au Bresil, employe par l'Etat (IBGE, Fundacao Cultural Palmares) comme par les communautes elles-memes selon un critere d'autoattribution. Il coexiste avec des autodesignations locales plus anciennes comme terras de preto, comunidade negra rural ou mocambo, que certaines communautes continuent de revendiquer meme apres leur certification officielle comme quilombolas. Ce critère d'autoattribution est celui du décret fédéral 4.887/2003.",
       "peopleGroupId": null,
       "peopleGroupLabel": null
     },

@@ -105,26 +105,15 @@ export const FOOTPRINT_WORDING: Record<
   },
 };
 
-const EN_FOOTPRINT_WORDING: typeof FOOTPRINT_WORDING = {
-  "member-peoples": {
-    legend: ["Reconstructed footprint", "from peoples, not declared."],
-    sectionNote:
-      "Union of the current countries of peoples attached to the family",
-    origin: "peoples attached to the family",
-  },
-  "declared-associated-peoples": {
-    legend: ["Reconstructed footprint", "from the peoples named by the fiche."],
-    sectionNote: "Union of the current countries of peoples named by the fiche",
-    origin: "peoples named by the fiche itself",
-  },
-};
+const FOOTPRINT_WORDING_BY_LANGUAGE: Record<
+  Language,
+  typeof FOOTPRINT_WORDING
+> = { fr: FOOTPRINT_WORDING };
 
 // @req REQ-145
 export function footprintWording(
   provenance: FamilyFootprintProvenance,
   language: Language
 ): FootprintWording {
-  return language === "en"
-    ? EN_FOOTPRINT_WORDING[provenance]
-    : FOOTPRINT_WORDING[provenance];
+  return FOOTPRINT_WORDING_BY_LANGUAGE[language][provenance];
 }

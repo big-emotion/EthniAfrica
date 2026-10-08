@@ -50,7 +50,7 @@ it makes the other four spellings wrong, which is the point.
 
 **The qualifier was replaced on 17 September 2026: `D'où viennent les noms des
 peuples d'Afrique`.** The reorientation onto onomastics
-(`docs/editorial/essais/dou-viennent-les-noms-2026-09-17.md`) makes the site
+(`docs/editorial/refonte-plan-2026-09-18.md`) makes the site
 answer a question rather than announce a category, and the qualifier is where a
 reader meets that question first. `Atlas des Peuples d'Afrique` named what the
 product _is_; the new one names what it _does_, which is the only thing a
@@ -607,6 +607,14 @@ left-aligned whole, declared once in `mobile-text.css` beside the other
 exemptions, never per component. The record's head above the globe is not in
 the parchment and keeps the centred composition.
 
+**The answer page is exempt as a block** (operator ruling, 2026-10-07). The
+validated mockup of the search answer page is left-aligned, and its six blocks
+already anchor on a left edge; the body default would centre their headings
+above ragged-left prose, the same two edges as the parchment case. So
+`.afh-answer-page` is left-aligned whole, declared once in `mobile-text.css`
+beside `.afh-parchment`, carried by the page root (`SearchFeedLayout`) and never
+re-declared per component. No other surface is recentred by this.
+
 ### 8.2 A band's height is earned by what is in it
 
 `.home-hero` sets `min-height: min(100svh, 760px)`, centres its content, and
@@ -647,6 +655,15 @@ The home is a compact entry into a question, not a tour of the corpus
 (operator ruling, 2026-09-23). Its reading order is search, a short invitation
 to contribute, then the project's purpose and source policy. Featured answers,
 stories, maps and counters no longer occupy this page.
+
+The sentence under the question promises what the answer page delivers, in
+three clauses and nothing more: « Votre nom de famille, celui d’un peuple,
+d’une langue ou d’un pays : d’où il vient, comment on l’appelle ailleurs, et où
+il vit aujourd’hui. » (2026-10-06). It names the four things a reader arrives
+with, then the three movements of the answer — origin, other names, where it
+lives — so it never lists what the corpus holds and never says « sources » or
+« histoires », which the answer shows rather than promises. It lives in
+`src/lib/i18n/copy/homeHero.ts`, French and English together.
 
 Four examples introduce surnames, languages, peoples and countries. They are
 drawn per visit and renewed on request. People examples use attested self-given
@@ -901,8 +918,10 @@ The fallback above licenses that, and it is still a gap. Closing it means an
 image field per fiche and eight hundred cleared images: a corpus feature, with
 its own decision about sourcing and rights.
 
-**A third register: declared fiction** (DEC-053). A generated image may be
-published, but only as its own publication and only as what it is — an
+**A third register: declared fiction** (DEC-053) — **withdrawn from the site
+on 2026-10-08 by operator decision**: no generated image is published here any
+more, and the paragraph below is kept as the rule social cards still follow. A
+generated image may be published, but only as its own publication and only as what it is — an
 interpretation shown as one, never a document and never an illustration slot
 beside a text. It is stylised, never photorealistic when it shows people. It is
 about one or two atlas entities, and **its subject and its picture are sourced
@@ -1027,8 +1046,6 @@ audience.
 - **Anything a surface charter already governs.** Where this file and a surface
   charter disagree, the surface charter is more specific and wins — and the
   disagreement is a bug in one of them, to be closed rather than lived with.
-- **Translation classes and review.** Which field is invariant, translatable,
-  review-required or generated is DEC-047's, declared in
-  `src/lib/i18n/translationClasses.ts` and held by the `afrik-translator`
-  skill and the parity gate. §3 settles how the English reads, not what may be
-  translated.
+- **Translation classes and review.** Corpus translation, with its class
+  table and its parity gate, was retired on 2026-10-08. §3 settles how the
+  English interface reads, not what may be translated.

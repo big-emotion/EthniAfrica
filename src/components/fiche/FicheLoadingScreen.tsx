@@ -1,25 +1,16 @@
-import { headers } from "next/headers";
-
 import { PageLayout } from "@/components/layout/PageLayout";
 import { ACCENT_CLASS_BY_ENTITY } from "@/components/fiche/ficheAccent";
 import type { FicheEntityType } from "@/types/fiche";
 import type { Language } from "@/types/shared";
 import { DidYouKnowLoader } from "@/components/system/DidYouKnowLoader";
 import { pickDidYouKnowFact } from "@/lib/home/didYouKnowFacts";
-import { LOCALE_HEADER, resolveLocale } from "@/lib/locale";
+import { FALLBACK_LOCALE } from "@/lib/locale";
 
 /**
  * What a reader is told the wait is for. A screen reader gets this sentence
  * and nothing else, so it names the fiche rather than the act of loading.
  */
 const WAIT_LABEL: Record<Language, Record<FicheEntityType, string>> = {
-  en: {
-    country: "Loading the country fiche",
-    people: "Loading the people fiche",
-    "language-family": "Loading the family fiche",
-    language: "Loading the language fiche",
-    name: "Loading the ethnonym fiche",
-  },
   fr: {
     country: "Chargement de la fiche pays",
     people: "Chargement de la fiche peuple",
@@ -74,13 +65,8 @@ export interface FicheLoadingScreenProps {
  */
 // @req REQ-098
 // @req REQ-104
-export async function FicheLoadingScreen({
-  entityType,
-}: FicheLoadingScreenProps) {
-  const requestHeaders = await headers();
-  const language = resolveLocale(
-    requestHeaders.get(LOCALE_HEADER) ?? undefined
-  );
+export function FicheLoadingScreen({ entityType }: FicheLoadingScreenProps) {
+  const language = FALLBACK_LOCALE;
 
   return (
     <PageLayout language={language} hideHeader hideTrail>

@@ -44,10 +44,6 @@
           "zone": "primary"
         },
         {
-          "id": "images",
-          "zone": "primary"
-        },
-        {
           "id": "fiches",
           "zone": "primary"
         },
@@ -646,10 +642,6 @@
         },
         {
           "id": "quiz",
-          "zone": "primary"
-        },
-        {
-          "id": "images",
           "zone": "primary"
         },
         {
@@ -1258,10 +1250,6 @@
           "zone": "secondary"
         },
         {
-          "id": "images",
-          "zone": "secondary"
-        },
-        {
           "id": "owed",
           "zone": "closing"
         }
@@ -1860,10 +1848,6 @@
         },
         {
           "id": "quiz",
-          "zone": "secondary"
-        },
-        {
-          "id": "images",
           "zone": "secondary"
         },
         {

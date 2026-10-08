@@ -1,13 +1,12 @@
 import { render, screen } from "@testing-library/react";
 import type { ReactElement } from "react";
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import {
   PageLoadingScreen,
   type PageLoadingScreenProps,
 } from "@/components/system/PageLoadingScreen";
 import { ConsentProvider } from "@/hooks/use-consent";
-import { LOCALE_HEADER } from "@/lib/locale";
 import { getLocalizedRoute } from "@/lib/routing";
 
 /**
@@ -26,29 +25,8 @@ vi.mock("next/navigation", () => ({
   useSearchParams: () => new URLSearchParams(),
 }));
 
-// A `loading.tsx` receives no params, so the screen reads the locale the
-// middleware stamped on the request.
-const requestHeaders = vi.hoisted(() => new Map<string, string>());
-
-vi.mock("next/headers", () => ({
-  headers: vi.fn(async () => ({
-    get: (name: string) => requestHeaders.get(name) ?? null,
-  })),
-}));
-
-// The screen is an async server component now, so it is awaited like one.
 const loadingScreen = async (props: PageLoadingScreenProps) =>
   renderInShell(await PageLoadingScreen(props));
-
-beforeEach(() => {
-  requestHeaders.clear();
-  requestHeaders.set(LOCALE_HEADER, "fr");
-  vi.stubEnv("SITE_LOCALE_MODE", "fr-only");
-});
-
-afterEach(() => {
-  vi.unstubAllEnvs();
-});
 
 describe("PageLoadingScreen", () => {
   /**
@@ -129,43 +107,25 @@ describe("PageLoadingScreen", () => {
   });
 });
 
-/**
- * The shell was hardwired to French, so every English page waited under a
- * French masthead. The screen has no params; the request header the
- * middleware sets is the only locale it can see.
- */
-describe("PageLoadingScreen — the wait is in the page's locale (REQ-140)", () => {
+describe("PageLoadingScreen — the wait is in French (REQ-140)", () => {
   // @req REQ-140
-  it("dresses the shell in the request's locale", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "bilingual-en-default");
-    requestHeaders.set(LOCALE_HEADER, "en");
-    await loadingScreen({ label: "Loading" });
+  it("dresses the shell in French", async () => {
+    await loadingScreen({ label: "Chargement" });
 
-    expect(screen.getByTestId("site-brand")).toHaveAttribute("href", "/en");
+    expect(screen.getByTestId("site-brand")).toHaveAttribute("href", "/fr");
   });
 
   // @req REQ-140
   // @req REQ-145
-  it("selects a localized loading label from the request locale", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "bilingual-fr-default");
-    requestHeaders.set(LOCALE_HEADER, "en");
+  it("selects the French loading label", async () => {
     await loadingScreen({
       label: {
-        en: "Loading the presentation",
         fr: "Chargement de la présentation",
       },
     });
 
     expect(screen.getAllByRole("status")[0]).toHaveTextContent(
-      "Loading the presentation"
+      "Chargement de la présentation"
     );
-  });
-
-  // @req REQ-140
-  it("falls back to the default locale when the header is absent", async () => {
-    requestHeaders.clear();
-    await loadingScreen({ label: "Chargement" });
-
-    expect(screen.getByTestId("site-brand")).toHaveAttribute("href", "/fr");
   });
 });

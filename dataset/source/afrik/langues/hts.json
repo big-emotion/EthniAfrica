@@ -18,7 +18,7 @@
     "Tindiga",
     "Wakindiga"
   ],
-  "whyProblematic": null,
+  "whyProblematic": "D'après les articles de Wikipédia sur la langue et sur le peuple hadza, Hadza serait la forme du pluriel féminin de haza, « être humain ». Les Hadza se disent hazabee, « les gens », et leur langue hazane : l'article sur le peuple traduit « comme les gens », celui sur la langue « des Hadza ». D'autres noms viennent des voisins. Selon l'article sur la langue, Tindiga viendrait du swahili watindiga, « les gens de l'herbe des marais », d'après la grande source de Mangola, et Kindiga en serait une forme dans une langue bantoue locale, sans doute l'isanzu ; Kangeju est un ancien nom allemand d'origine incertaine. Ces explications y sont données sans renvoi à une publication.",
   "spellingAliases": [],
   "familyId": "FLG_KHOISAN",
   "peoples": [],
@@ -32,7 +32,24 @@
         "url": "https://glottolog.org/resource/languoid/id/hadz1240",
         "tier": "official",
         "notes": "Glottolog direct official languoid record; source of the name and glottocode."
+      },
+      {
+        "title": "Wikipédia (anglais) — Hadza language",
+        "url": "https://en.wikipedia.org/wiki/Hadza_language",
+        "tier": "unverified",
+        "notes": "Section sur le nom, lue en ligne : haza, hazane, Tindiga, Kindiga, Kangeju. Ces explications y sont données sans renvoi à une publication."
+      },
+      {
+        "title": "Wikipédia (anglais) — Hadza people",
+        "url": "https://en.wikipedia.org/wiki/Hadza_people",
+        "tier": "unverified",
+        "notes": "Section sur le nom, lue en ligne : haza, hazabee, hazane, Hadzapi, Tindiga ; elle cite Marlowe (2010) pour l'usage actuel de Hadza en anglais."
       }
     ]
+  },
+  "_translation": {
+    "deferred": {
+      "en": "English translation is deferred until the language fiches carrying a name-origin text are translated together."
+    }
   }
 }

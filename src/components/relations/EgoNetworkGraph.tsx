@@ -413,9 +413,7 @@ export function EgoNetworkGraph({
                     isActive && "fill-afh-gold"
                   )}
                 >
-                  {language === "en"
-                    ? `+${overflowCount} more`
-                    : `+${overflowCount} autres`}
+                  {`+${overflowCount} autres`}
                 </text>
               </g>
             );

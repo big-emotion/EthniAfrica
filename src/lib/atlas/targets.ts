@@ -156,11 +156,7 @@ export function continentTargetFacts(
   return {
     title: getCountryCommonName(language, target.countryId, target.nameFr),
     description:
-      language === "en"
-        ? `${count} documented ${count === 1 ? "people" : "peoples"}`
-        : count === 1
-          ? "1 peuple documenté"
-          : `${count} peuples documentés`,
+      count === 1 ? "1 peuple documenté" : `${count} peuples documentés`,
   };
 }
 

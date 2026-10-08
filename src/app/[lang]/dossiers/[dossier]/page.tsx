@@ -1,4 +1,4 @@
-import { getLocalizedRoute, translatePath } from "@/lib/routing";
+import { getLocalizedRoute } from "@/lib/routing";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -11,11 +11,11 @@ import {
   publishedArticleSummaries,
   readArticleCorpus,
 } from "@/lib/articles/corpus";
-import { getDossierBySlug, getDossierTranslation } from "@/lib/dossiers/corpus";
+import { getDossierBySlug } from "@/lib/dossiers/corpus";
 import { isDossierSlugPublished } from "@/lib/dossiers/publication";
-import { getPublishedLocales, isLocale } from "@/lib/locale";
+import { isLocale } from "@/lib/locale";
 import { articleJsonLd, serializeJsonLd } from "@/lib/articles/jsonLd";
-import { localeHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
 interface DossierRouteProps {
@@ -68,36 +68,27 @@ export async function generateMetadata({
   const found = publishedArticleAt(slug);
   if (found) {
     const { article } = found;
-    const body = (lang === "en" && article.en) || article.fr;
+    const body = article.fr;
     const head = { title: body.title, description: body.excerpt };
     return {
       ...head,
-      ...localeHead(
-        lang,
-        (language) => articleHref(language, article.fr.slug),
-        article.en ? getPublishedLocales() : ["fr"],
-        head
-      ),
+      ...pageHead(articleHref("fr", article.fr.slug), head),
     };
   }
   if (!isDossierSlugPublished(slug)) return {};
-  const source = getDossierBySlug(slug);
-  const translated = getDossierTranslation(slug);
-  const dossier = lang === "en" ? (translated?.dossier ?? source) : source;
+  const dossier = getDossierBySlug(slug);
 
   if (!dossier) return {};
 
-  const sourcePath = `${getLocalizedRoute("fr", "dossiersHub")}/${source?.slug ?? slug}`;
+  const sourcePath = `${getLocalizedRoute("fr", "dossiersHub")}/${dossier.slug}`;
 
   return {
     title: dossier.title,
     description: dossier.standfirst,
-    ...localeHead(
-      lang,
-      (language) => translatePath("fr", language, sourcePath),
-      translated ? getPublishedLocales() : ["fr"],
-      { title: dossier.title, description: dossier.standfirst }
-    ),
+    ...pageHead(sourcePath, {
+      title: dossier.title,
+      description: dossier.standfirst,
+    }),
   };
 }
 
@@ -107,7 +98,7 @@ export default async function DossierRoute({ params }: DossierRouteProps) {
   const found = isLocale(lang) ? publishedArticleAt(slug) : null;
   if (found) {
     const language = lang as Language;
-    const body = (language === "en" && found.article.en) || found.article.fr;
+    const body = found.article.fr;
     return (
       // No band: an article names a subject, not a part of the site, so its
       // title takes the ink rather than the brand gradient (brand charter
@@ -129,18 +120,9 @@ export default async function DossierRoute({ params }: DossierRouteProps) {
     );
   }
   if (!isDossierSlugPublished(slug)) notFound();
-  const translated = lang === "en" ? getDossierTranslation(slug) : null;
-  const dossier = translated?.dossier ?? getDossierBySlug(slug);
+  const dossier = getDossierBySlug(slug);
 
   if (!dossier) notFound();
 
-  return (
-    <DossierPage
-      dossier={dossier}
-      language={lang as Language}
-      translationState={
-        lang === "en" ? (translated ? translated.kind : "missing") : undefined
-      }
-    />
-  );
+  return <DossierPage dossier={dossier} language={lang as Language} />;
 }
