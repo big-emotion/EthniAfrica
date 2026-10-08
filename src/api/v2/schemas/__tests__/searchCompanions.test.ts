@@ -27,19 +27,22 @@ describe("search companions schema", () => {
   });
 
   // @req REQ-180
-  it("accepts the two published locales and rejects an unknown locale", () => {
+  it("accepts French and rejects any other locale, English included", () => {
     expect(
       searchCompanionsQuerySchema.parse({
         subjects: "country:NGA",
-        lang: "en",
+        lang: "fr",
       }).lang
-    ).toBe("en");
-    expect(
-      searchCompanionsQuerySchema.safeParse({
-        subjects: "country:NGA",
-        lang: "es",
-      }).success
-    ).toBe(false);
+    ).toBe("fr");
+    for (const lang of ["en", "es"]) {
+      expect(
+        searchCompanionsQuerySchema.safeParse({
+          subjects: "country:NGA",
+          lang,
+        }).success,
+        lang
+      ).toBe(false);
+    }
   });
 
   // The word is what the reader typed. It is kept as typed and trimmed: the

@@ -64,20 +64,18 @@ export function SearchPeopleGroupCard({
         <span className="flex items-center gap-1.5">
           <SearchEntityMark type="people" />
           <Badge variant="secondary" className="text-afh-caption">
-            {getSearchEntityLabel("people", language)}
+            {getSearchEntityLabel("people")}
           </Badge>
         </span>
         <span className="text-afh-caption text-afh-fg-muted">
           {formatNumber(language, group.members.length)}{" "}
-          {language === "en"
-            ? `record${group.members.length === 1 ? "" : "s"}`
-            : `fiche${group.members.length === 1 ? "" : "s"}`}
+          {`fiche${group.members.length === 1 ? "" : "s"}`}
         </span>
       </div>
 
       <ul
         className="mt-2 flex flex-wrap items-center gap-2"
-        aria-label={language === "en" ? "Group records" : "Fiches du groupe"}
+        aria-label={"Fiches du groupe"}
       >
         {group.members.map((member) => (
           <li key={member.id}>

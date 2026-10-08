@@ -1,4 +1,3 @@
-import type { Language } from "@/types/shared";
 import type { DossierSource } from "@/lib/afrik/parsers/dossierTypes";
 import { DossierCitations } from "./DossierCitations";
 import type { DossierReading } from "@/lib/afrik/parsers/dossierTypes";
@@ -13,7 +12,6 @@ const STANCE_ORDER: DossierReading["stance"][] = ["official", "counter"];
 export interface DossierReadingsProps {
   readings: DossierReading[];
   chapterKey: string;
-  language: Language;
   sources: DossierSource[];
   sourcePrefix: string;
 }
@@ -22,7 +20,6 @@ export interface DossierReadingsProps {
 export function DossierReadings({
   readings,
   chapterKey,
-  language,
   sources,
   sourcePrefix,
 }: DossierReadingsProps) {
@@ -46,11 +43,7 @@ export function DossierReadings({
           data-stance={reading.stance}
         >
           <p className="afh-dossier-reading-stance">
-            {language === "en"
-              ? reading.stance === "official"
-                ? "The authoritative reading"
-                : "The counter-reading"
-              : STANCE_LABELS[reading.stance]}
+            {STANCE_LABELS[reading.stance]}
           </p>
           {/* h3, not h2: a reading is an item of the chapter above it, and an
               h2 here would let twelve of them outrank the six chapter titles

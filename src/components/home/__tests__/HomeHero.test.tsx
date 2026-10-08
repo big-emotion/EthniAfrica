@@ -97,18 +97,6 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
     );
   });
 
-  // @req REQ-145
-  it("speaks English on the English home", () => {
-    render(<HomeHero language="en" />);
-
-    expect(
-      screen.getByRole("heading", { level: 1, name: homeHeroCopy.en.question })
-    ).toBeInTheDocument();
-    expect(screen.getByRole("combobox")).toHaveAccessibleDescription(
-      homeHeroCopy.en.description
-    );
-  });
-
   // The band holds exactly one paragraph of prose. A second is how the lede,
   // the standfirst and the purpose statement grew back — so this asserts the
   // exact list rather than a count. The purpose statement, the visual and the

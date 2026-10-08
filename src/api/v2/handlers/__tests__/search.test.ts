@@ -206,17 +206,6 @@ describe("ftsSearchHandler — unified results", () => {
     );
   });
 
-  // @req REQ-141
-  it("forwards the locale untouched to the service", async () => {
-    vi.mocked(ftsSearch).mockResolvedValue(serviceResponse());
-
-    await ftsSearchHandler({ ...QUERY, lang: "en" });
-
-    expect(ftsSearch).toHaveBeenCalledWith(
-      expect.objectContaining({ q: "yoruba", lang: "en" })
-    );
-  });
-
   // @req REQ-121
   it("removes an over-broad quiz response from the default stream", async () => {
     vi.mocked(ftsSearch).mockResolvedValue(

@@ -1,6 +1,5 @@
 import type { ScaleFact } from "@/lib/games/scaleFacts";
 import { revealProvenanceFr } from "@/lib/games/revealProvenance";
-import { revealProvenanceEn } from "@/lib/games/revealProvenance.en";
 import { cn } from "@/lib/utils";
 import { gamesCopy } from "@/lib/i18n/copy/games";
 import type { Language } from "@/types/shared";
@@ -32,13 +31,9 @@ export const ScaleFactCard = ({
   className,
 }: ScaleFactCardProps) => {
   const copy = gamesCopy[language];
-  const provenance =
-    language === "en"
-      ? revealProvenanceEn(fact.fieldPath)
-      : revealProvenanceFr(fact.fieldPath);
-  const headline =
-    language === "en" ? (fact.headlineEn ?? fact.headlineFr) : fact.headlineFr;
-  const body = language === "en" ? (fact.bodyEn ?? fact.bodyFr) : fact.bodyFr;
+  const provenance = revealProvenanceFr(fact.fieldPath);
+  const headline = fact.headlineFr;
+  const body = fact.bodyFr;
 
   return (
     <aside

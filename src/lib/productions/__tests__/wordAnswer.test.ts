@@ -80,13 +80,7 @@ describe("findWordAnswer", () => {
   });
 
   // @req REQ-184
-  it("never matches on a part of a query", () => {
-    expect(findWordAnswer("pharaon egypte", "fr", [pharaoh])).toEqual([]);
-    expect(findWordAnswer("", "fr", [pharaoh])).toEqual([]);
-  });
-
-  // @req REQ-184
-  it("projects the record into the answer contract, in the reader's language", () => {
+  it("projects the record into the answer contract", () => {
     const [fr] = findWordAnswer("pharaon", "fr", [pharaoh]);
     expect(fr).toMatchObject({
       kind: "word",
@@ -105,14 +99,12 @@ describe("findWordAnswer", () => {
       text: "De l'égyptien per-aa, « la grande maison ».",
       attribution: "linguistic",
     });
+  });
 
-    const [en] = findWordAnswer("pharaoh", "en", [pharaoh]);
-    expect(en.title).toBe("pharaoh");
-    expect(en.what.lead).toBe("At first, “pharaoh” meant the palace.");
-    // No English follow-up was written: the French one is the fallback.
-    expect(en.next).toEqual({
-      question: "Comment le palais est-il devenu le roi ?",
-    });
+  // @req REQ-184
+  it("never matches on a part of a query", () => {
+    expect(findWordAnswer("pharaon egypte", "fr", [pharaoh])).toEqual([]);
+    expect(findWordAnswer("", "fr", [pharaoh])).toEqual([]);
   });
 
   // @req REQ-184

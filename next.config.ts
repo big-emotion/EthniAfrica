@@ -58,10 +58,10 @@ const nextConfig: NextConfig = {
   // routes did not). Permanent, because the old path was the canonical URL
   // `ficheCanonical` emitted, so it is what a crawler holds.
   //
-  // One entry per locale rather than a `:lang` wildcard: the destination is
-  // each locale's own patronyme slug (DEC-049), and a wildcard sent `/en/…`
-  // to the French word. The destinations are written out because this file
-  // is loaded by Next before the `@/` alias exists; `nextConfigRedirects.test.ts`
+  // The retired English addresses land on the French fiche directly: these
+  // redirects run before the proxy, which would otherwise spend a second 308
+  // translating them. The destinations are written out because this file is
+  // loaded by Next before the `@/` alias exists; `nextConfigRedirects.test.ts`
   // holds them to `getPatronymeRoute`, so the slug table cannot drift away
   // from them unnoticed.
   async redirects() {
@@ -73,7 +73,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/en/atlas/appellations/:slug",
-        destination: "/en/atlas/names/:slug",
+        destination: "/fr/atlas/noms/:slug",
         permanent: true,
       },
       // PAT_KAMARA was an empty duplicate folded into PAT_CAMARA.
@@ -84,7 +84,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/en/atlas/names/PAT_KAMARA",
-        destination: "/en/atlas/names/PAT_CAMARA",
+        destination: "/fr/atlas/noms/PAT_CAMARA",
         permanent: true,
       },
     ];

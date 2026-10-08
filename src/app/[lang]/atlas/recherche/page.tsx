@@ -4,7 +4,7 @@ import { RecherchePageContent } from "@/components/pages/RecherchePageContent";
 import { DidYouKnowLoader } from "@/components/system/DidYouKnowLoader";
 import { pickDidYouKnowFact } from "@/lib/home/didYouKnowFacts";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import { getTranslation } from "@/lib/translations";
 import type { Language } from "@/types/shared";
 
@@ -24,12 +24,7 @@ export async function generateMetadata({
   const title = getTranslation(lang as Language).trail.pages.search;
   return {
     title,
-    ...surfaceHead(
-      lang as Language,
-      "search",
-      (locale) => getLocalizedRoute(locale, "search"),
-      { title }
-    ),
+    ...pageHead(getLocalizedRoute("fr", "search"), { title }),
   };
 }
 

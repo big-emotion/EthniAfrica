@@ -64,10 +64,7 @@ describe("the three database-reading PR gates use the ephemeral database", () =>
 
   // @req REQ-176
   it("e2e.yml's full matrix job keeps its own TEST_SUPABASE_*/RECETTE_SUPABASE_* fallback untouched", () => {
-    const section = jobSection(
-      readWorkflow("e2e.yml"),
-      "name: Playwright (${{ matrix.locale }})"
-    );
+    const section = jobSection(readWorkflow("e2e.yml"), "name: Playwright\n");
     expect(section).toContain("secrets.TEST_SUPABASE_URL");
     expect(section).toContain("secrets.RECETTE_SUPABASE_URL");
   });

@@ -82,10 +82,9 @@ describe("footer destination pages", () => {
   });
 
   // @req REQ-088
-  it("declares every processor the site contacts about a reader, in both languages", async () => {
+  it("declares every processor the site contacts about a reader", async () => {
     for (const [lang, heading, upstashRegion] of [
       ["fr", "Services et sous-traitants", /Upstash, Inc\.[^.]*Francfort/],
-      ["en", "Services and processors", /Upstash, Inc\.[^.]*Frankfurt/],
     ] as const) {
       const { unmount } = render(
         await DataPolicyPage({ params: routeParams(lang) })
@@ -112,17 +111,11 @@ describe("footer destination pages", () => {
         "fr",
         /conservés au repos par Microsoft[^.]*Union européenne[^.]*à ce jour, en France/,
       ],
-      [
-        "en",
-        /held at rest by Microsoft[^.]*European Union[^.]*today, in France/,
-      ],
     ] as const) {
       const { unmount } = render(
         await DataPolicyPage({ params: routeParams(lang) })
       );
-      const processors = sectionText(
-        lang === "fr" ? "Services et sous-traitants" : "Services and processors"
-      );
+      const processors = sectionText("Services et sous-traitants");
       expect(processors, lang).toMatch(held);
       unmount();
     }
@@ -133,7 +126,7 @@ describe("footer destination pages", () => {
   // stops being true the day ENABLED_EMBED_PROVIDERS is emptied, and the two
   // paragraphs must leave in the same commit.
   // @req REQ-182
-  it("declares the YouTube player, and the consent it rests on, in both languages", async () => {
+  it("declares the YouTube player, and the consent it rests on", async () => {
     for (const [lang, processorsHeading, basesHeading, google, consent] of [
       [
         "fr",
@@ -141,13 +134,6 @@ describe("footer destination pages", () => {
         "Finalités et bases légales",
         /Google Ireland Limited/,
         /repose sur votre consentement/,
-      ],
-      [
-        "en",
-        "Services and processors",
-        "Purposes and legal bases",
-        /Google Ireland Limited/,
-        /rests on your consent/,
       ],
     ] as const) {
       const { unmount } = render(
@@ -157,9 +143,7 @@ describe("footer destination pages", () => {
       expect(processors, lang).toMatch(google);
       expect(processors, lang).toMatch(/youtube-nocookie\.com/);
       expect(processors, lang).toMatch(
-        lang === "fr"
-          ? /aucune requête n’est adressée à Google/
-          : /no request is made to Google/
+        /aucune requête n’est adressée à Google/
       );
       expect(sectionText(basesHeading), lang).toMatch(consent);
       unmount();
@@ -174,7 +158,6 @@ describe("footer destination pages", () => {
   it("names the two cookies the YouTube player tries to write, and that their fate is the browser's", async () => {
     for (const [lang, processorsHeading, browserDecides] of [
       ["fr", "Services et sous-traitants", /refusés d’office ou enregistrés/],
-      ["en", "Services and processors", /refused outright or stored/],
     ] as const) {
       const { unmount } = render(
         await DataPolicyPage({ params: routeParams(lang) })
@@ -200,19 +183,11 @@ describe("footer destination pages", () => {
   // the banner, the footer and this page each did differently.
   // @req REQ-088
   it("has a cookies section that says where the choice is kept", async () => {
-    for (const [lang, heading, storage] of [
-      ["fr", "Cookies et stockage local", /stockage local/],
-      ["en", "Cookies and local storage", /local storage/],
-    ] as const) {
-      const { unmount } = render(
-        await DataPolicyPage({ params: routeParams(lang) })
-      );
-      const cookies = sectionText(heading);
-      expect(cookies, lang).toMatch(storage);
-      expect(cookies, lang).toMatch(/ethni-consent/);
-      expect(cookies, lang).toMatch(/ethni-locale/);
-      unmount();
-    }
+    render(await DataPolicyPage({ params: routeParams("fr") }));
+
+    const cookies = sectionText("Cookies et stockage local");
+    expect(cookies).toMatch(/stockage local/);
+    expect(cookies).toMatch(/ethni-consent/);
   });
 
   // @req REQ-088
@@ -230,13 +205,10 @@ describe("footer destination pages", () => {
   // processor the site never contacts.
   // @req REQ-088
   it("names no processor that is not active", async () => {
-    for (const lang of ["fr", "en"] as const) {
-      const { container, unmount } = render(
-        await DataPolicyPage({ params: routeParams(lang) })
-      );
-      expect(container.textContent, lang).not.toMatch(/Sentry/i);
-      unmount();
-    }
+    const { container } = render(
+      await DataPolicyPage({ params: routeParams("fr") })
+    );
+    expect(container.textContent).not.toMatch(/Sentry/i);
   });
 
   // @req REQ-090
@@ -250,21 +222,5 @@ describe("footer destination pages", () => {
       screen.getByText(/n’a pas encore fait l’objet d’un audit/i)
     ).toBeInTheDocument();
     expect(screen.getByText(/contact@ethniafrica\.com/i)).toBeInTheDocument();
-  });
-
-  // The legal copy is French either way; the chrome around it must follow
-  // the route, or an English reader gets a French header on `/en/legal-notice`.
-  // @req REQ-140
-  it("hand the shell the locale of the route each was served under", async () => {
-    for (const Page of [LegalNoticePage, DataPolicyPage, AccessibilityPage]) {
-      const { container, unmount } = render(
-        await Page({ params: routeParams("en") })
-      );
-      expect(container.firstElementChild).toHaveAttribute(
-        "data-language",
-        "en"
-      );
-      unmount();
-    }
   });
 });

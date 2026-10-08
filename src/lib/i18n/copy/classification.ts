@@ -3,18 +3,15 @@ import type { Language } from "@/types/shared";
 
 /**
  * The `classification_status` labels are glossary vocabulary, not surface
- * copy: the bilingual glossary owns them so the three labels the atlas
- * publishes cannot fork per surface. This module only lends them the shape
- * every other dictionary has, so the parity suite walks them too.
+ * copy: the glossary owns them so the three labels the site publishes
+ * cannot fork per surface. This module only lends them the shape every other
+ * dictionary has.
  */
-const en = CLASSIFICATION_LABELS.en;
+const fr = CLASSIFICATION_LABELS.fr;
 
-type ClassificationCopy = typeof en;
-
-const fr: ClassificationCopy = CLASSIFICATION_LABELS.fr;
+type ClassificationCopy = typeof fr;
 
 // @req REQ-145
 export const classificationCopy: Record<Language, ClassificationCopy> = {
-  en,
   fr,
 };

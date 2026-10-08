@@ -21,10 +21,6 @@ export interface WordAnswerCopy {
   ) => string;
 }
 
-const FORMATS_EN: Record<string, string> = {
-  carrousel: "Carousel",
-  video: "Video",
-};
 const FORMATS_FR: Record<string, string> = {
   carrousel: "Carrousel",
   video: "Vidéo",
@@ -51,14 +47,6 @@ function metaOf(
 
 // @req REQ-184
 export const wordAnswerCopy: Record<Language, WordAnswerCopy> = {
-  en: {
-    noFicheNote:
-      "This word has no entry of its own. Here is what we know of it.",
-    publicationsTitle: "Our publication",
-    publicationLink: (network) => `See it on ${network}`,
-    publicationMeta: (format, date) =>
-      metaOf(FORMATS_EN, "en-GB", format, date),
-  },
   fr: {
     noFicheNote: "Ce mot n'a pas de fiche à lui. Voici ce que nous en savons.",
     publicationsTitle: "Notre publication",

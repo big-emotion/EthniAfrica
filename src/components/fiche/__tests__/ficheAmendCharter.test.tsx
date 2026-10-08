@@ -101,19 +101,6 @@ describe("fiche amend charter", () => {
     });
   }
 
-  // @req REQ-145
-  it("words the band in English on an English record", () => {
-    render(RECORDS[0].draw("en"));
-    const band = screen.getByTestId("fiche-amend-band");
-
-    expect(band).toHaveTextContent(
-      "Know a name, a date or a source this page is missing? It is made to be completed."
-    );
-    expect(
-      within(band).getByRole("link", { name: "Complete this page" })
-    ).toHaveAttribute("href", getStaticPageRoute("en", "contribute"));
-  });
-
   /**
    * The action is the actions charter's form C primary, drawn by the one
    * primitive that owns it rather than rebuilt in the stylesheet: the band

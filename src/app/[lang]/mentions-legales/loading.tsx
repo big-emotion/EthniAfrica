@@ -6,7 +6,6 @@ export default function MentionsLegalesLoading() {
   return (
     <PageLoadingScreen
       label={{
-        en: systemStatesCopy.en.loading.legalNotice,
         fr: systemStatesCopy.fr.loading.legalNotice,
       }}
     />

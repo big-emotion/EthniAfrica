@@ -20,9 +20,9 @@ import {
 const RECORD: DiscoveryVideoRecord = {
   id: "video-test",
   status: "published",
-  slug: { fr: "mande-video", en: "mande-video" },
-  name: { fr: "Mandé", en: "Mandé" },
-  description: { fr: "Description.", en: "Description." },
+  slug: { fr: "mande-video" },
+  name: { fr: "Mandé" },
+  description: { fr: "Description." },
   publishedAt: "2026-09-16",
   durationSeconds: 121,
   poster: { src: "/images/x.jpg", width: 540, height: 960 },
@@ -42,7 +42,7 @@ const RECORD: DiscoveryVideoRecord = {
     {
       kind: "family",
       id: "FLG_MANDE",
-      label: { fr: "Mandé", en: "Mandé" },
+      label: { fr: "Mandé" },
     },
   ],
 };
@@ -134,10 +134,7 @@ describe("the published video catalog", () => {
   // @req REQ-181
   it("is in the Découvertes deck and addressed by the slug table", () => {
     const deck = getDiscoveryPublications();
-    const slugs = DISCOVERY_SLUGS as Record<
-      string,
-      Record<"fr" | "en", string>
-    >;
+    const slugs = DISCOVERY_SLUGS as Record<string, Record<"fr", string>>;
 
     for (const record of DISCOVERY_VIDEOS.filter(
       (candidate) => candidate.status === "published"
@@ -164,26 +161,23 @@ describe("the published video catalog", () => {
 // page answered not found.
 describe("the shorts shelf destinations", () => {
   // @req REQ-181
-  it.each(["fr", "en"] as const)(
-    "resolve to an entry of the Découvertes deck in %s",
-    (language) => {
-      const reachable = new Set(
-        getDiscoveryPublications().map((publication) =>
-          discoveryPath(language, publication)
-        )
-      );
+  it("resolve to an entry of the Découvertes deck", () => {
+    const reachable = new Set(
+      getDiscoveryPublications().map((publication) =>
+        discoveryPath("fr", publication)
+      )
+    );
 
-      for (const short of SEARCH_SHORTS.filter(
-        (candidate) => candidate.status === "published"
-      )) {
-        const destination = discoveryPath(
-          language,
-          searchShortDiscoveryPublication(short)
-        );
-        expect(reachable.has(destination), destination).toBe(true);
-      }
+    for (const short of SEARCH_SHORTS.filter(
+      (candidate) => candidate.status === "published"
+    )) {
+      const destination = discoveryPath(
+        "fr",
+        searchShortDiscoveryPublication(short)
+      );
+      expect(reachable.has(destination), destination).toBe(true);
     }
-  );
+  });
 });
 
 // The catalogue is built at import time, so the origin it prints is fixed by

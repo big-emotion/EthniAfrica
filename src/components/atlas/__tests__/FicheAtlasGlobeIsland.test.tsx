@@ -33,19 +33,4 @@ describe("FicheAtlasGlobeIsland", () => {
     expect(screen.queryByTestId("fiche-atlas-globe-placeholder")).toBeNull();
     expect(screen.getByTestId("interactive-atlas-globe")).toBeVisible();
   });
-
-  // @req REQ-112
-  test("offers the same explicit activation in English", () => {
-    render(
-      <FicheAtlasGlobeIsland
-        language="en"
-        overlay={null}
-        missingMessage="Unavailable"
-      />
-    );
-
-    expect(
-      screen.getByRole("button", { name: "Activate the interactive map" })
-    ).toBeVisible();
-  });
 });

@@ -35,8 +35,8 @@ const picture: ProverbPicture = {
   src: "/images/proverbs/test.jpg",
   filePage: "https://commons.wikimedia.org/wiki/File:Test.jpg",
   credit: "Auteur Test, CC BY-SA 4.0",
-  shortCredit: { fr: "Auteur Test, CC BY-SA", en: "Author Test, CC BY-SA" },
-  alt: { fr: "Un marché au crépuscule.", en: "A market at dusk." },
+  shortCredit: { fr: "Auteur Test, CC BY-SA" },
+  alt: { fr: "Un marché au crépuscule." },
   licence: "cc-by-sa",
   licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
 };
@@ -152,25 +152,5 @@ describe("ProverbCard", () => {
     expect(screen.getByRole("heading", { level: 2 })).toHaveTextContent(
       "La main qui donne"
     );
-  });
-
-  // @req REQ-145
-  it("credits the photograph in English on /en", () => {
-    render(<ProverbCard language="en" proverb={attested} picture={picture} />);
-
-    expect(screen.getByRole("img")).toHaveAttribute("alt", "A market at dusk.");
-    expect(
-      screen.getByRole("link", { name: /Author Test, CC BY-SA/ })
-    ).toBeInTheDocument();
-  });
-
-  // @req REQ-145
-  it("speaks English on /en", () => {
-    render(<ProverbCard language="en" proverb={attested} />);
-
-    expect(screen.getByText("Proverb")).toBeInTheDocument();
-    expect(
-      screen.getByRole("link", { name: /People\s*Yoruba/ })
-    ).toHaveAttribute("href", getPeopleRoute("en", "PPL_YORUBA"));
   });
 });

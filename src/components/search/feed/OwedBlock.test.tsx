@@ -55,39 +55,6 @@ describe("OwedBlock", () => {
   });
 
   // @req REQ-180
-  it("keeps a thin closing in one column and localises its fixed heading", () => {
-    render(
-      <OwedBlock
-        language="en"
-        thin
-        silences={[{ title: "The date", detail: "No dated attestation." }]}
-        conviction={{
-          title: "A name does not sum up a people.",
-          body: "It opens an inquiry.",
-        }}
-        invitation={{
-          title: "Is a source missing?",
-          body: "It will be read.",
-          action: "Suggest a source",
-        }}
-        contributionTarget={contributionTarget}
-      />
-    );
-
-    const layout = screen.getByTestId("feed-block-owed").firstElementChild;
-    expect(layout).not.toHaveClass("min-[1200px]:grid-cols-2");
-    expect(
-      screen.getByRole("heading", { name: "What we do not know yet" })
-    ).toBeVisible();
-    expect(
-      screen.getByText("A declared silence, not an oversight.")
-    ).toBeVisible();
-    expect(
-      screen.getByRole("button", { name: "Suggest a source" })
-    ).toBeEnabled();
-  });
-
-  // @req REQ-180
   it("renders the inline markup a silence detail carries", () => {
     render(
       <OwedBlock
@@ -144,5 +111,36 @@ describe("OwedBlock", () => {
       "data-flag-kind",
       "contribution"
     );
+  });
+
+  // @req REQ-178
+  it("keeps a thin closing in one column under its fixed heading", () => {
+    render(
+      <OwedBlock
+        language="fr"
+        thin
+        silences={[{ title: "La date", detail: "Aucune attestation datée." }]}
+        conviction={{
+          title: "Un nom ne résume pas un peuple.",
+          body: "Il ouvre une enquête.",
+        }}
+        invitation={{
+          title: "Une source manque ?",
+          body: "Elle sera lue.",
+          action: "Proposer une source",
+        }}
+        contributionTarget={contributionTarget}
+      />
+    );
+
+    const layout = screen.getByTestId("feed-block-owed").firstElementChild;
+    expect(layout).not.toHaveClass("min-[1200px]:grid-cols-2");
+    expect(
+      screen.getByRole("heading", { name: "Ce que nous ne savons pas encore" })
+    ).toBeVisible();
+    expect(screen.getByText("Un silence déclaré, pas un oubli.")).toBeVisible();
+    expect(
+      screen.getByRole("button", { name: "Proposer une source" })
+    ).toBeEnabled();
   });
 });

@@ -133,26 +133,6 @@ describe("fiche names charter", () => {
     ).toHaveAttribute("href", getPatronymeRoute("fr", "PAT_MAGHRAWA"));
   });
 
-  // @req REQ-154
-  it("renames the country chapter in English without moving its anchor", () => {
-    render(
-      <FicheNamesChapter
-        scope="country"
-        patronymes={{
-          attested: [clan("PAT_KEITA", "Keïta")],
-          borneByPeoples: [],
-        }}
-        language="en"
-      />
-    );
-    expect(
-      screen.getByRole("region", {
-        name: "Personal names linked to this country",
-      })
-    ).toHaveAttribute("id", "chapitre-attested-names");
-    expect(document.querySelector('[data-names-register="reach"]')).toBeNull();
-  });
-
   // @req REQ-119 REQ-133
   it("states the gap when neither register reaches a name, and a failed read apart", () => {
     const copy = getTranslation("fr").patronymes.onFiche;

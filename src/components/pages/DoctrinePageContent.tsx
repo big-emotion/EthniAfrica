@@ -1,11 +1,6 @@
 import Link from "next/link";
 
 import { ChapterHeading } from "@/components/pages/ChapterHeading";
-import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
-import {
-  CLASSIFICATION_DEFINITIONS_EN,
-  DOCTRINE_PAGE_EN,
-} from "@/lib/doctrine/doctrineContent.en";
 import { CLASSIFICATION_LABELS } from "@/lib/glossaire/vocabularies";
 import { doctrineCopy } from "@/lib/i18n/copy/doctrine";
 import { getLocalizedRoute, getStaticPageRoute } from "@/lib/routing";
@@ -16,10 +11,7 @@ import type { Language } from "@/types/shared";
  *
  * Reoriented from a bare classification glossary into the public method page
  * (editorial-and-experience-plan.md §6). The method sections (M1-M11) are
- * new, directly-authored bilingual prose, unrelated to DEC-048's machine
- * translation pipeline — only `CLASSIFICATION_DEFINITIONS_EN` still comes
- * from that pipeline, so the "machine, not yet reviewed" marker now sits next
- * to the classification block it actually describes, not at the page header.
+ * directly-authored prose.
  * The four refused sentences sit after M8 as their own numbered section
  * (moved from the About page, 22 September 2026), so M9-M11 render one step
  * later than the plan's numbering.
@@ -100,13 +92,6 @@ export default function DoctrinePageContent({
           heading={copy.classificationSection.heading}
         />
         <p className="leading-relaxed">{copy.classificationSection.intro}</p>
-        <TranslationProvenanceMarker
-          translation={
-            language === "en"
-              ? { kind: DOCTRINE_PAGE_EN.provenance, stale: false }
-              : null
-          }
-        />
       </section>
 
       {SECTIONS.map((section, index) => {
@@ -124,11 +109,7 @@ export default function DoctrinePageContent({
             <p className="text-afh-small italic text-muted-foreground">
               {labels.tooltip}
             </p>
-            <p className="leading-relaxed">
-              {language === "en"
-                ? CLASSIFICATION_DEFINITIONS_EN[section.id].description
-                : copy.descriptions[section.id]}
-            </p>
+            <p className="leading-relaxed">{copy.descriptions[section.id]}</p>
           </section>
         );
       })}

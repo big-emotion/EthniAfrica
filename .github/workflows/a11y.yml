@@ -10,8 +10,7 @@ on:
     branches: [recette, main]
 
 # Superseded runs of the same branch are cancelled. Without this a branch pushed
-# three times kept three generations of a ~15 min audit (both locales, since
-# ETNI-1858) competing for runners,
+# three times kept three generations of a ~15 min audit competing for runners,
 # which is what turned a busy afternoon of parallel pull requests into a queue.
 concurrency:
   group: a11y-${{ github.ref }}
@@ -28,8 +27,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      # Test-only publication: production remains fail-closed to fr-only.
-      SITE_LOCALE_MODE: bilingual-fr-default
       # `npm run start` serves in production mode, and a production server with
       # no public site URL refuses to render (src/lib/siteUrl.ts). This one
       # really is on localhost; e2e and Lighthouse get the same fallback from

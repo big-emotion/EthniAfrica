@@ -90,7 +90,6 @@ import { notFound, redirect } from "next/navigation";
 import PeopleLinksPage, { generateMetadata } from "../page";
 import { resolveAsyncServerComponents } from "@/test/resolveAsyncServerComponents";
 import { RELATIONS } from "@/components/fiche/__tests__/ficheContextFixtures";
-import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { getPeopleLinksRoute } from "@/lib/routing";
 
 async function renderPage(slug: string, lang = "fr") {
@@ -145,16 +144,6 @@ describe("/[lang]/peuples/[slug]/liens page", () => {
     });
 
     expect(mockGetEgoNetwork).toHaveBeenCalledWith("PPL_YORUBA");
-  });
-
-  // @req REQ-140
-  it("hands the shell the locale of the route", async () => {
-    await renderPage("PPL_YORUBA", "en");
-
-    expect(pageLayoutProps.current.language).toBe("en");
-    expect(
-      screen.getByRole("heading", { level: 1, name: "Links for Yoruba" })
-    ).toBeInTheDocument();
   });
 
   // @req REQ-097 FR72
@@ -225,34 +214,6 @@ describe("/[lang]/peuples/[slug]/liens page", () => {
     });
     expect(metadata.title).toContain("Yoruba");
     expect(typeof metadata.description).toBe("string");
-  });
-
-  // @req REQ-145
-  it("builds English metadata for the people's links page", async () => {
-    const metadata = await generateMetadata({
-      params: Promise.resolve({ lang: "en", slug: "PPL_YORUBA" }),
-    });
-
-    expect(metadata.title).toBe("Links for Yoruba — EthniAfrica");
-    expect(metadata.description).toMatch(
-      /documented migratory, commercial and religious links/i
-    );
-  });
-
-  // The sitemap published every links page while the page itself declared
-  // no canonical — the one address the atlas offered without saying which
-  // address it was.
-  // @req REQ-141
-  it("declares its canonical absolute, in the locale it was served in", async () => {
-    const metadata = await generateMetadata({
-      params: Promise.resolve({ lang: "en", slug: "PPL_YORUBA" }),
-    });
-
-    expect(metadata.alternates?.canonical).toBe(
-      `https://${CANONICAL_DOMAIN}${getPeopleLinksRoute("en", "PPL_YORUBA")}`
-    );
-    // No English translation record yet: withheld from the English index.
-    expect(metadata.robots).toEqual({ index: false, follow: true });
   });
 
   // @req REQ-097 FR72

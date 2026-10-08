@@ -184,17 +184,9 @@ export const GamePlayIsland = ({
                 onAnswer={session.answer}
               />
             ) : isListRound(currentRound) ? (
-              <ListChoice
-                language={language}
-                round={currentRound}
-                onAnswer={session.answer}
-              />
+              <ListChoice round={currentRound} onAnswer={session.answer} />
             ) : (
-              <BinaryChoice
-                language={language}
-                round={currentRound}
-                onAnswer={session.answer}
-              />
+              <BinaryChoice round={currentRound} onAnswer={session.answer} />
             )
           ) : (
             <>

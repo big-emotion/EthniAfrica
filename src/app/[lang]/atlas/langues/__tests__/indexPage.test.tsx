@@ -186,30 +186,4 @@ describe("the language facet page", () => {
       `https://${CANONICAL_DOMAIN}${getLocalizedRoute("fr", "languages")}`
     );
   });
-
-  // @req REQ-140
-  it("composes the canonical and the fiche links in the route's locale", async () => {
-    const metadata = await generateMetadata({
-      params: Promise.resolve({ lang: "en" }),
-    });
-    expect(metadata.alternates?.canonical).toBe(
-      `https://${CANONICAL_DOMAIN}${getLocalizedRoute("en", "languages")}`
-    );
-
-    render(
-      await LanguesHubPage({
-        params: Promise.resolve({ lang: "en" }),
-        searchParams: Promise.resolve({}),
-      })
-    );
-    const links = screen.getAllByRole("link", { name: /Fulfulde/ });
-    expect(links[0]).toHaveAttribute("href", getLanguageRoute("en", "fuf"));
-    expect(
-      screen.getByText(/2 languages in this selection/)
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("searchbox", { name: "Search languages" })
-    ).toHaveAttribute("placeholder", "Language name or ISO 639-3 code");
-    expect(screen.getByRole("list", { name: "Languages" })).toBeInTheDocument();
-  });
 });

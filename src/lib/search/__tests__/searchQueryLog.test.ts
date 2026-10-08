@@ -56,16 +56,6 @@ describe("searchQueryLog.write", () => {
     expect(row).toEqual({ query: "yoruba", result_count: 3, lang: "fr" });
   });
 
-  // ETNI-1857: a failed English search is a different gap from a failed
-  // French one — the aliases it asks for live in another locale's names.
-  // @req REQ-141
-  it("records the locale the search was served in", async () => {
-    await searchQueryLog.write({ query: "chad", resultCount: 0, lang: "en" });
-
-    const row = insertMock.mock.calls[0][0];
-    expect(row.lang).toBe("en");
-  });
-
   // @req REQ-002
   it("carries no reader identifier, IP or user-agent field", async () => {
     await searchQueryLog.write({ query: "bété", resultCount: 0, lang: "fr" });

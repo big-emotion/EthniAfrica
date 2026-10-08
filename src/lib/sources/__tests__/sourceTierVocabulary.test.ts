@@ -157,21 +157,14 @@ describe("source tier vocabulary contract", () => {
   });
 
   // @req REQ-092
-  it("gives every tier a label in both locales", () => {
-    for (const locale of ["fr", "en"] as const) {
-      expect(Object.keys(SOURCE_TIER_LABELS[locale]).sort(), locale).toEqual(
-        [...SOURCE_TIERS].sort()
-      );
-    }
+  it("gives every tier a label", () => {
+    expect(Object.keys(SOURCE_TIER_LABELS.fr).sort()).toEqual(
+      [...SOURCE_TIERS].sort()
+    );
     expect(SOURCE_TIER_LABELS.fr).toEqual({
       official: "Officielle",
       referenced: "Référencée",
       unverified: "Non vérifiée",
-    });
-    expect(SOURCE_TIER_LABELS.en).toEqual({
-      official: "Official",
-      referenced: "Referenced",
-      unverified: "Unverified",
     });
   });
 
@@ -366,19 +359,16 @@ describe("sourceStandingLabel", () => {
   // needs_review into "Non vérifiée" states a verdict no one reached, which
   // is the distinction the tier policy exists to keep visible.
   // @req REQ-092
-  it("gives a source awaiting review a label of its own, in both locales", () => {
+  it("gives a source awaiting review a label of its own", () => {
     expect(sourceStandingLabel("needs_review", "fr")).toBe(
       "En attente d'examen"
     );
-    expect(sourceStandingLabel("needs_review", "en")).toBe("Awaiting review");
-    for (const locale of ["fr", "en"] as const) {
-      expect(sourceStandingLabel("needs_review", locale)).toBe(
-        SOURCE_PENDING_REVIEW_LABEL[locale]
-      );
-      expect(sourceStandingLabel("needs_review", locale)).not.toBe(
-        sourceStandingLabel("unverified", locale)
-      );
-    }
+    expect(sourceStandingLabel("needs_review", "fr")).toBe(
+      SOURCE_PENDING_REVIEW_LABEL.fr
+    );
+    expect(sourceStandingLabel("needs_review", "fr")).not.toBe(
+      sourceStandingLabel("unverified", "fr")
+    );
   });
 
   // @req REQ-092
@@ -386,9 +376,6 @@ describe("sourceStandingLabel", () => {
     expect(sourceStandingLabel("official", "fr")).toBe("Officielle");
     expect(sourceStandingLabel("referenced", "fr")).toBe("Référencée");
     expect(sourceStandingLabel("unverified", "fr")).toBe("Non vérifiée");
-    expect(sourceStandingLabel("official", "en")).toBe("Official");
-    expect(sourceStandingLabel("referenced", "en")).toBe("Referenced");
-    expect(sourceStandingLabel("unverified", "en")).toBe("Unverified");
   });
 
   // strictNullChecks is off here, so an uncovered value resolves to undefined
@@ -401,9 +388,6 @@ describe("sourceStandingLabel", () => {
     );
     expect(sourceStandingLabel(undefined as never, "fr")).toBe(
       "En attente d'examen"
-    );
-    expect(sourceStandingLabel(undefined as never, "en")).toBe(
-      "Awaiting review"
     );
   });
 });

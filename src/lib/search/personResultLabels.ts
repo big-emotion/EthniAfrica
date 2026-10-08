@@ -31,18 +31,8 @@ const PERSON_ROLE_LABELS_FR: Record<string, string> = {
   journalist: "Journaliste",
 };
 
-const PERSON_ROLE_LABELS_EN: Record<string, string> = {
-  ethnographer: "Ethnographer",
-  historian: "Historian",
-  missionary: "Missionary",
-  explorer: "Explorer",
-  colonial_administrator: "Colonial administrator",
-  head_of_state: "Head of state",
-  author: "Author",
-  translator: "Translator",
-  informant: "Informant",
-  linguist: "Linguist",
-  journalist: "Journalist",
+const PERSON_ROLE_LABELS: Record<Language, Record<string, string>> = {
+  fr: PERSON_ROLE_LABELS_FR,
 };
 
 // @req REQ-126
@@ -50,9 +40,7 @@ export function getPersonRoleLabel(
   roleCategory: string,
   language: Language = "fr"
 ): string {
-  const labels =
-    language === "en" ? PERSON_ROLE_LABELS_EN : PERSON_ROLE_LABELS_FR;
-  return labels[roleCategory] ?? roleCategory;
+  return PERSON_ROLE_LABELS[language][roleCategory] ?? roleCategory;
 }
 
 const PERSON_RELATION_LABELS_FR: Record<PersonPeopleRelationLabel, string> = {
@@ -60,17 +48,15 @@ const PERSON_RELATION_LABELS_FR: Record<PersonPeopleRelationLabel, string> = {
   observation: "Observe / documente",
 };
 
-const PERSON_RELATION_LABELS_EN: Record<PersonPeopleRelationLabel, string> = {
-  membership: "Member of",
-  observation: "Observes / documents",
-};
+const PERSON_RELATION_LABELS: Record<
+  Language,
+  Record<PersonPeopleRelationLabel, string>
+> = { fr: PERSON_RELATION_LABELS_FR };
 
 // @req REQ-126
 export function getPersonRelationLabel(
   relationLabel: PersonPeopleRelationLabel,
   language: Language = "fr"
 ): string {
-  const labels =
-    language === "en" ? PERSON_RELATION_LABELS_EN : PERSON_RELATION_LABELS_FR;
-  return labels[relationLabel];
+  return PERSON_RELATION_LABELS[language][relationLabel];
 }

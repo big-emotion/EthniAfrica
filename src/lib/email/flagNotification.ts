@@ -6,10 +6,6 @@ import type { Language } from "@/types/shared";
 import { getCountryRoute, getFamilyRoute, getPeopleRoute } from "@/lib/routing";
 import { getStaticPageRoute } from "@/lib/routing";
 import { resolveSiteUrl } from "@/lib/siteUrl";
-import {
-  buildFlagResolutionEmailEn,
-  buildFlagVerificationEmailEn,
-} from "@/lib/email/flagNotification.en";
 
 const FR: Language = "fr";
 
@@ -153,17 +149,7 @@ export async function sendFlagResolutionEmail(
       return;
     }
 
-    const language = recipient.language ?? FR;
-    const content =
-      language === "en"
-        ? buildFlagResolutionEmailEn({
-            publicSlug: flag.public_slug,
-            status: flag.status,
-            moderatorNotes: flag.moderator_notes,
-            flagLink: flagPageUrl(flag.public_slug, language),
-            ficheLink: ficheUrl(flag.target_type, flag.target_id, language),
-          })
-        : buildEmailContent(flag);
+    const content = buildEmailContent(flag);
     const sent = await sendNotification(recipient.email, content);
     if (sent) {
       logger.info("Flag resolution email sent", {
@@ -217,14 +203,6 @@ export async function sendFlagVerificationEmail({
   const reportsRoute = getStaticPageRoute(language, "reports");
   const verificationLink = `${resolveSiteUrl()}${reportsRoute}/verifier?token=${encodeURIComponent(token)}`;
 
-  if (language === "en") {
-    const content = buildFlagVerificationEmailEn({
-      flagLink: flagPageUrl(publicSlug, language),
-      verificationLink,
-    });
-    return sendNotification(email, content);
-  }
-
   return sendNotification(email, {
     subject: "Confirmez votre adresse pour suivre votre signalement",
     text: [
@@ -233,7 +211,7 @@ export async function sendFlagVerificationEmail({
       "Pour recevoir la décision de la modération par e-mail, confirmez cette adresse :",
       verificationLink,
       "Ce lien est valable 24 heures et ne fonctionne qu'une fois. Si vous n'avez rien signalé, ignorez ce message : sans confirmation, cette adresse ne sera plus utilisée.",
-      emailSignature("fr"),
+      emailSignature(),
     ].join("\n\n"),
   });
 }

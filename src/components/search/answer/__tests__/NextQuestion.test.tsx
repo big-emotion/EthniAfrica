@@ -62,19 +62,4 @@ describe("NextQuestion", () => {
     );
     expect(container).toBeEmptyDOMElement();
   });
-
-  // @req REQ-178
-  it("speaks English", () => {
-    render(
-      <NextQuestion
-        kind="people"
-        language="en"
-        next={{ template: "distributionGap", params: { countryCount: 7 } }}
-      />
-    );
-    expect(screen.getByText("And now")).toBeInTheDocument();
-    expect(
-      screen.getByText("Why is this name found in 7 countries?")
-    ).toBeInTheDocument();
-  });
 });

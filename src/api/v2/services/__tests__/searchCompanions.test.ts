@@ -171,7 +171,7 @@ describe("search companions service", () => {
 
     await expect(
       getSearchCompanionSelections({
-        lang: "en",
+        lang: "fr",
         subjects: [{ type: "country", id: "NGA" }],
       })
     ).resolves.toMatchObject({

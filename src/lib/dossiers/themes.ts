@@ -59,49 +59,12 @@ export function getDossierThemeHref(
   return `${getLocalizedRoute(language, "dossiersHub")}/themes/${encodeURIComponent(theme)}`;
 }
 
-const ENGLISH_THEMES: Record<
-  DossierThemeId,
-  { label: string; description: string }
-> = {
-  pouvoirs: {
-    label: "Power and territories",
-    description: "Kingdoms, chiefdoms, institutions, borders and resistance.",
-  },
-  migrations: {
-    label: "Migrations and diasporas",
-    description: "Movements, settlements and histories of diasporas.",
-  },
-  spiritualites: {
-    label: "Spiritualities and beliefs",
-    description: "Divinities, spirits, rites and changing beliefs.",
-  },
-  parentes: {
-    label: "Kinship and societies",
-    description: "Clans, lineages, alliances and social institutions.",
-  },
-  langues: {
-    label: "Languages and transmission",
-    description:
-      "Languages, scripts, oral traditions and transmission between generations.",
-  },
-  noms: {
-    label: "Names and identities",
-    description: "Appellations, personal names and histories of naming.",
-  },
-  arts: {
-    label: "Arts and knowledge",
-    description: "Objects, textiles, music and inherited skills.",
-  },
-  economies: {
-    label: "Economies and exchange",
-    description: "Livelihoods, markets and trading networks.",
-  },
-};
-
+// The themes are labelled in French, the one locale published; `language`
+// is accepted for the callers that still pass one.
 // @req REQ-140
-export function getDossierThemes(language: Language = "fr") {
-  return DOSSIER_THEMES.map((theme) => ({
-    ...theme,
-    ...(language === "en" ? ENGLISH_THEMES[theme.id] : {}),
-  }));
+export function getDossierThemes(
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  language: Language = "fr"
+) {
+  return DOSSIER_THEMES;
 }

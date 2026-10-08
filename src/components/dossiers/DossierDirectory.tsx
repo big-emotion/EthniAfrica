@@ -45,7 +45,7 @@ export function DossierDirectory({
   /** Every dossier of the corpus, newest first. Empty in a bare render. */
   corpus?: DossierIndexEntry[];
 }) {
-  const english = language === "en";
+  const english = false;
   const id = useId();
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);

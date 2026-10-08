@@ -76,23 +76,6 @@ describe("ficheCanonical", () => {
   });
 
   // @req REQ-141
-  it("clusters only the French address while the fiche has no English record", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "fr-only");
-    const french = await ficheCanonical("people", "fr", "PPL_YORUBA");
-    const english = await ficheCanonical("people", "en", "PPL_YORUBA");
-
-    expect(french.alternates?.languages).toEqual({
-      fr: `${BASE}${getPeopleRoute("fr", "PPL_YORUBA")}`,
-      "x-default": `${BASE}${getPeopleRoute("fr", "PPL_YORUBA")}`,
-    });
-    expect(french).not.toHaveProperty("robots");
-    expect(english.alternates?.canonical).toBe(
-      `${BASE}${getPeopleRoute("en", "PPL_YORUBA")}`
-    );
-    expect(english.robots).toEqual({ index: false, follow: true });
-  });
-
-  // @req REQ-141
   it("carries an Open Graph card in the locale the fiche was served in", async () => {
     const metadata = await ficheCanonical("language", "fr", "yor");
 

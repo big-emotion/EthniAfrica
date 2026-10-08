@@ -1,26 +1,9 @@
-// Two locales, one budget each way.
-//
-// The root URL is measured through the middleware's redirect, so its budget
-// is the configured default locale's home under REQ-140. It stays in the
-// list because it is the address a reader types; the locale it lands on is
-// controlled by `SITE_LOCALE_MODE`, and this file does not repeat that choice.
-//
-// French is measured in full: every route family, every fiche type, the
-// tighter comparator budgets. English is measured on a
-// representative subset at the end of the list — the home, the three fiches,
-// one facet, the quiz, the migrations atlas, the doctrine index, the
-// comparator picker and the glossary. Bundles are locale-independent, so a
-// full twin would double a ~16 min nightly job to measure budgets that cannot
-// differ; what can differ is the a11y category (labels, `lang`, hreflang), and
-// the axe gate audits the English surface in full for that
-// (scripts/a11yRoutes.ts). The subset sits last because `collect` aborts the
-// whole run on the first URL that fails to load, and an unserved English
-// address must not cost the French measurements after it.
-// The workflow opts its test server into `bilingual-fr-default`; production
-// stays fail-closed to `fr-only` until an explicit launch configuration.
+// The site publishes French alone (REQ-140). The root URL is measured
+// through the middleware's redirect, so its budget is the French home's; it
+// stays in the list because it is the address a reader types.
 //
 // This file cannot import the slug table (CommonJS, loaded by the lhci CLI),
-// so every English address below is spelled out and
+// so every address below is spelled out and
 // scripts/__tests__/qualityGateRoutes.test.ts checks each one against the
 // helper that composes it.
 //
@@ -28,15 +11,15 @@
 // which borrows this file's collection settings and audits four routes.
 
 // An assembled country, people or family fiche — the routes that open on the
-// WebGL globe — in either locale. A sub-page such as `/liens` is not one.
+// WebGL globe. A sub-page such as `/liens` is not one.
 const FICHE_PATTERN =
-  "http://localhost:3000/(?:fr/atlas/(?:pays|peuples|familles)|en/atlas/(?:countries|peoples|families))/[^/]+";
+  "http://localhost:3000/fr/atlas/(?:pays|peuples|familles)/[^/]+";
 
 // The people links chapter streams its corpus-derived relation list after the
 // page shell. Keep it separate from both ordinary routes and assembled fiches
 // so its measured server-streaming cost has one explicit regression ratchet.
 const PEOPLE_LINKS_PATTERN =
-  "http://localhost:3000/(?:fr/atlas/peuples/[^/]+/liens|en/atlas/peoples/[^/]+/links)";
+  "http://localhost:3000/fr/atlas/peuples/[^/]+/liens";
 
 module.exports = {
   ci: {
@@ -122,22 +105,8 @@ module.exports = {
         "http://localhost:3000/fr/doctrine",
         "http://localhost:3000/fr/doctrine/classifications-contestees",
         // The glossary is the one page the footer's "Le projet" rubric leads
-        // to that nothing measured: it joins the list so the English subset
-        // below is a subset of the French measurement, not a superset.
+        // to that nothing else measured.
         "http://localhost:3000/fr/glossaire",
-        // The English subset (see the header). Same identifiers as the French
-        // routes above, so a difference between the two measurements is the
-        // locale and nothing else.
-        "http://localhost:3000/en",
-        "http://localhost:3000/en/atlas/countries/SEN",
-        "http://localhost:3000/en/atlas/peoples/PPL_WOLOF",
-        "http://localhost:3000/en/atlas/families/FLG_BANTU",
-        "http://localhost:3000/en/atlas/peoples",
-        "http://localhost:3000/en/games/quiz",
-        "http://localhost:3000/en/dossiers/anecdotes",
-        "http://localhost:3000/en/doctrine",
-        "http://localhost:3000/en/compare",
-        "http://localhost:3000/en/glossary",
       ],
       numberOfRuns: 3,
       // Audit returning-user performance with essential-only consent. The
@@ -193,9 +162,9 @@ module.exports = {
         // people links chapter. Its 0.73 floor
         // is the accepted lab budget recorded in docs/design/brand-charter.md
         // §10, beside the 0.85 target it falls short of; change the two
-        // together. The lowest three-run median measured was 0.75 (the
-        // English home); two points
-        // under it absorb runner noise without licensing a slide. The cost
+        // together. The lowest three-run median measured was 0.75 (the home,
+        // then also served in English); two points under it absorb runner
+        // noise without licensing a slide. The cost
         // these routes share is the common chunk, not their own code, so the
         // floor moves up when that chunk shrinks — not route by route.
         {
@@ -221,7 +190,7 @@ module.exports = {
             "total-blocking-time": ["error", { maxNumericValue: 300 }],
           },
         },
-        // The three assembled fiches, both locales. Their opening animation
+        // The three assembled fiches. Their opening animation
         // is a WebGL globe, and a GitHub runner has no GPU: Chromium falls
         // back to software rasterisation on the CPU, which Lighthouse then
         // multiplies by the 4x CPU throttle. The 2.5-3.5 s of blocking time is
@@ -246,11 +215,9 @@ module.exports = {
         // responsiveness ceiling is 250 ms because the unchanged 368,378-byte
         // React runtime task measured from 131 to 239 ms across adjacent CI
         // runs; 250 ms preserves a narrow regression ratchet while the global
-        // 300 ms TBT budget still guards total main-thread work. Both locales'
-        // slugs are scoped, or the English comparator would go unmeasured.
+        // 300 ms TBT budget still guards total main-thread work.
         {
-          matchingUrlPattern:
-            "^http://localhost:3000/(fr/comparer|en/compare)(/.*)?$",
+          matchingUrlPattern: "^http://localhost:3000/fr/comparer(/.*)?$",
           assertions: {
             "largest-contentful-paint": ["error", { maxNumericValue: 5500 }],
             "cumulative-layout-shift": ["error", { maxNumericValue: 0.1 }],

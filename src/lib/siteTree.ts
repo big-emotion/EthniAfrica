@@ -3,7 +3,6 @@ import { getDossiers, getPublishedThemes } from "@/lib/dossiers/catalog";
 import { isModulePublished } from "@/lib/hubs/moduleOffer";
 import { getDossierThemeHref } from "@/lib/dossiers/themes";
 import { GAME_DEFINITIONS } from "@/lib/games/gameRegistry";
-import { GAME_DEFINITIONS_EN } from "@/lib/games/gameRegistry.en";
 import { siteTreeCopy } from "@/lib/i18n/copy/siteTree";
 import {
   getLocalizedRoute,
@@ -241,14 +240,8 @@ export function getSiteTree(language: Language): SiteTreeSection[] {
         },
         ...GAME_DEFINITIONS.map((game) => ({
           href: `${route("jeuxHub")}/${game.slug}`,
-          label:
-            language === "en"
-              ? GAME_DEFINITIONS_EN[game.id].nameEn
-              : game.nameFr,
-          note:
-            language === "en"
-              ? GAME_DEFINITIONS_EN[game.id].promptEn
-              : game.promptFr,
+          label: game.nameFr,
+          note: game.promptFr,
         })),
       ],
     },

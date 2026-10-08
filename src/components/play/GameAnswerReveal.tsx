@@ -11,7 +11,6 @@ import { sourceStandingLabel } from "@/lib/glossaire/vocabularies";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { gamesCopy } from "@/lib/i18n/copy/games";
-import { revealProvenanceEn } from "@/lib/games/revealProvenance.en";
 import { formatNumber } from "@/lib/languageTag";
 import type { Language } from "@/types/shared";
 
@@ -69,14 +68,8 @@ export const GameAnswerReveal = ({
   // runtime crash the compiler will not catch — and a crash here blanks the
   // whole game rather than one line. Same reason `ficheSourceLabel` exists.
   const sources = round.reveal.sources ?? [];
-  const provenance =
-    language === "en"
-      ? revealProvenanceEn(round.reveal.fieldPath ?? "")
-      : revealProvenanceFr(round.reveal.fieldPath ?? "");
-  const revealText =
-    language === "en"
-      ? (round.reveal.textEn ?? round.reveal.textFr)
-      : round.reveal.textFr;
+  const provenance = revealProvenanceFr(round.reveal.fieldPath ?? "");
+  const revealText = round.reveal.textFr;
 
   return (
     <div
@@ -112,8 +105,7 @@ export const GameAnswerReveal = ({
             data-testid="game-reveal-estimate"
             className="mt-3 text-afh-body text-afh-text-soft"
           >
-            {copy.yourEstimate} {formatNumber(language, answer)}{" "}
-            {language === "en" ? (round.unitEn ?? round.unitFr) : round.unitFr}.
+            {copy.yourEstimate} {formatNumber(language, answer)} {round.unitFr}.
           </p>
         ) : null}
 
@@ -170,11 +162,7 @@ export const GameAnswerReveal = ({
 
         <a
           data-testid="game-reveal-fiche-link"
-          href={
-            language === "en"
-              ? (round.reveal.ficheHrefEn ?? round.reveal.ficheHref)
-              : round.reveal.ficheHref
-          }
+          href={round.reveal.ficheHref}
           className="self-start font-medium underline underline-offset-2"
         >
           {isEstimateRound(round) ? copy.openAtlas : copy.openFiche}

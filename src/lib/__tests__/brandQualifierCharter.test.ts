@@ -123,7 +123,6 @@ describe("the product's qualifier, spelled in one place", () => {
   // @req REQ-019
   it("keeps the masthead short enough for a phone bar", () => {
     expect(chromeCopy.fr.headerTagline.length).toBeLessThanOrEqual(28);
-    expect(chromeCopy.en.headerTagline.length).toBeLessThanOrEqual(28);
   });
 
   // Python cannot import brand.ts, so the render engine keeps a copy of the

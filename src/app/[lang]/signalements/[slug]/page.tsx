@@ -9,7 +9,7 @@ import {
 } from "@/lib/supabase/queries/flags/getFlagBySlug";
 import { PRODUCT_NAME } from "@/lib/brand";
 import { getStaticPageRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import { formatDate } from "@/lib/languageTag";
 import { reportsCopy } from "@/lib/i18n/copy/reports";
 import type { Language } from "@/types/shared";
@@ -47,12 +47,7 @@ export async function generateMetadata({
   };
   return {
     title: metadataCopy.title,
-    ...surfaceHead(
-      lang as Language,
-      "reports",
-      (locale) => `${getStaticPageRoute(locale, "reports")}/${slug}`,
-      metadataCopy
-    ),
+    ...pageHead(`${getStaticPageRoute("fr", "reports")}/${slug}`, metadataCopy),
   };
 }
 

@@ -82,10 +82,10 @@ function short(id: string, overrides: Partial<SearchShort> = {}): SearchShort {
   return {
     id,
     status: "published",
-    slug: { fr: `${id}-fr`, en: `${id}-en` },
+    slug: { fr: `${id}-fr` },
     publishedAt: "2026-09-01T00:00:00.000Z",
-    name: { fr: `Nom ${id}`, en: `Name ${id}` },
-    description: { fr: `Description ${id}`, en: `Description ${id}` },
+    name: { fr: `Nom ${id}` },
+    description: { fr: `Description ${id}` },
     durationSeconds: 38,
     poster: {
       src: `/images/shorts/${id}.jpg`,
@@ -102,7 +102,7 @@ function short(id: string, overrides: Partial<SearchShort> = {}): SearchShort {
       {
         kind: "people",
         id: "PPL_TEST",
-        label: { fr: "Test", en: "Test" },
+        label: { fr: "Test" },
       },
     ],
     ...overrides,
@@ -114,9 +114,6 @@ describe("search companion catalogs", () => {
   it("uses the canonical name question for every production", () => {
     expect(formatProductionNameQuestion("Nigeria", "fr")).toBe(
       "D’où vient le nom « Nigeria » ?"
-    );
-    expect(formatProductionNameQuestion("Nigeria", "en")).toBe(
-      "Where does the name “Nigeria” come from?"
     );
     expect(searchShortPosterAlt(short("nigeria"), "fr")).toBe(
       "Couverture : D’où vient le nom « Nom nigeria » ?"
@@ -218,7 +215,7 @@ describe("search companion catalogs", () => {
       [
         short("first"),
         short("second"),
-        short("no-english", { name: { fr: "Nom", en: "" } }),
+        short("no-name", { name: { fr: "" } }),
         short("unverified", {
           source: {
             title: "Claim",

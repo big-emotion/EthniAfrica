@@ -118,7 +118,7 @@ export const legalPages = {
       {
         title: "Cookies et stockage local",
         paragraphs: [
-          "Le site ne dépose aucun cookie publicitaire ni de suivi. Deux cookies peuvent être écrits, chacun nécessaire à une fonction que vous demandez et donc exempté de consentement : « ethni-locale », qui retient pendant un an la langue choisie avec le sélecteur de langue et n’est écrit que lorsque vous l’utilisez, et un cookie de session d’authentification, propre aux contributeurs connectés.",
+          "Le site ne dépose aucun cookie publicitaire ni de suivi. Un seul cookie peut être écrit, nécessaire à une fonction que vous demandez et donc exempté de consentement : un cookie de session d’authentification, propre aux contributeurs connectés.",
           "Vos choix de consentement sont enregistrés dans le stockage local de votre navigateur sous le nom « ethni-consent », et non dans un cookie, pendant douze mois au plus. Le site y conserve aussi, sur votre appareil seulement, les publications gardées dans Découvertes et l’état de quelques repères de lecture, comme un bandeau refermé. Rien de cela n’est envoyé à l’éditeur.",
           "La mesure d’audience ne dépose aucun cookie. Vous pouvez effacer ces données à tout moment dans les réglages de votre navigateur, ou modifier vos choix depuis « Gestion des cookies » dans le pied de page.",
         ],

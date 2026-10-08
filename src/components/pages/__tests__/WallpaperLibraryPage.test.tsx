@@ -131,34 +131,11 @@ describe("WallpaperLibraryPage", () => {
     );
   });
 
-  /**
-   * The same rule the About page now obeys: "fiche" and "corpus" are words
-   * the workshop uses to itself, and a visitor knows neither.
-   */
   // @req REQ-132
-  // @req REQ-145
   it("says nothing to the reader in the workshop's own vocabulary", () => {
-    for (const language of ["fr", "en"] as const) {
-      const { container, unmount } = render(
-        <WallpaperLibraryPage language={language} />
-      );
+    const { container } = render(<WallpaperLibraryPage language="fr" />);
 
-      expect(container.textContent).not.toMatch(/fiches?\b/i);
-      expect(container.textContent).not.toMatch(/corpus/i);
-
-      unmount();
-    }
-  });
-
-  // @req REQ-145
-  it("renders the library in English", () => {
-    render(<WallpaperLibraryPage language="en" />);
-
-    expect(screen.getByTestId("ladder-rung-kemet")).toHaveTextContent(
-      "Ancient Egypt"
-    );
-    expect(screen.getByTestId("ladder-provenance-sapiens")).toHaveTextContent(
-      "Outside our scope"
-    );
+    expect(container.textContent).not.toMatch(/fiches?\b/i);
+    expect(container.textContent).not.toMatch(/corpus/i);
   });
 });

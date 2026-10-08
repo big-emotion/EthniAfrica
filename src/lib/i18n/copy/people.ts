@@ -1,203 +1,17 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  summary: {
-    title: "In brief",
-    persons: "People recorded",
-    referenceYear: (year: number) => `Reference year: ${year}`,
-    countriesOfPresence: "Countries of presence",
-    mainLanguage: "Main language",
-    linguisticFamily: "Language family",
-    namesReferencedHere: "Linked names",
-    missingData: "Not recorded",
-    factTier: "Source tier",
-    populationDisagreement: (declared: string, summed: string) =>
-      `The declared total is ${declared} people, while the populations listed by country add up to ${summed}. These figures do not agree.`,
-  },
-  sections: {
-    naming: "The name and its designations",
-    mapGrammar: "Why the map draws no boundary",
-    mapDerivation: "Derived from the distribution by country",
-    origins: "Origins and formation",
-    language: "Language",
-    historicalAffiliation: "Historical affiliation",
-    historicalRole: "History",
-    culture: "Culture and society",
-    neighbours: "Neighbouring peoples and organisation",
-    relatedPeoples: "Related peoples",
-    answer: "Where does the name come from?",
-    otherNames: "The other names",
-    distribution: "Where this people lives",
-    referenceYear: "Reference year: 2025",
-    fragmentation: "Colonial fragmentation",
-    fragmentationNote:
-      "Derived from the people's presence in several countries",
-    fragmentationCount: (count: number) => `${count} countries of presence`,
-    sources: "Sources",
-  },
-  chapterDetails: {
-    historyChronology: "Historical chronology",
-    historyUndated: "Undated",
-    historyRole: "Historical role",
-    /** REQ-155: the merged Histoire chapter's origin station — distinct
-     * wording from the retired "Origins and formation" chapter title, so the
-     * merge does not resurface it one level down. */
-    historyOriginStation: "Formation and origins",
-    cultureRitesAndSymbols: "Rites and symbols",
-    associatedGroups: (count: number) =>
-      `${count} associated ${count === 1 ? "group" : "groups"}`,
-    documentedRelations: (count: number) =>
-      `${count} documented ${count === 1 ? "relation" : "relations"}`,
-  },
-  reportSection: "Report this section",
-  naming: {
-    selfDesignation: "Self-designation",
-    exonyms: "Exonyms",
-    origin: "Where these names come from.",
-    problematic: "Why these names are problematic.",
-    contemporary: "Usage today.",
-    sectionTitle: "Names and designations",
-    pronunciation: (ipa: string) => `Phonetic pronunciation: ${ipa}`,
-    collapse: "Show less",
-    more: (count: number) => `+${count} more`,
-    exonymCount: (count: number) => `${count} names recorded`,
-    currentUsageAndCritique: "Usage and context",
-  },
-  field: {
-    explanation: (count: number) =>
-      `On a country page, the line closes because an administrative boundary is published and dated. Nothing comparable exists here: no source we cite states where this people's presence ends. What we declare is ${count} populations by country. The map follows exactly that — one halo per country, whose area follows the population and whose border is zero. A closed outline would assert an inside and an outside that nobody can source.`,
-    legend: "Decreasing density, no border",
-    offMapOne:
-      "One declared presence is outside the map, as our project covers only Africa:",
-    offMapMany: (count: number) =>
-      `${count} declared presences are outside the map, as our project covers only Africa:`,
-  },
-  originFields: {
-    ancientOrigins: "Ancient origins",
-    formationPeriod: "Formation period",
-    migrationRoutes: "Migration routes",
-    settlementZones: "Settlement areas",
-    unifications: "Unifications and divisions",
-    externalInfluences: "External influences",
-    majorEvents: "Major events",
-  },
-  languageFields: {
-    family: "Language family",
-    main: "Main language",
-    iso: "ISO codes",
-    dialects: "Dialects",
-    vehicularRole: "Vehicular role",
-  },
-  historyFields: {
-    kingdoms: "Kingdoms and chiefdoms",
-    neighbours: "Relations with neighbours",
-    conflicts: "Conflicts and alliances",
-    diaspora: "Diaspora",
-  },
-  cultureFields: {
-    majorRites: "Major rites",
-    symbols: "Symbols",
-    artsAndMusic: "Arts and music",
-    spiritualities: "Spiritualities",
-  },
-  relatedFields: {
-    links: "Links",
-    seeAll: "See all links",
-    associatedGroups: "Associated groups",
-    politicalSystem: "Traditional political system",
-    clanOrganisation: "Clan organisation",
-    ageGrades: "Age grades",
-    lineages: "Role of lineages",
-    religiousAuthority: "Religious authority",
-  },
-  external: {
-    title: "External identifiers",
-    description:
-      "The corresponding records in the external registries referenced by this page.",
-  },
-  countries: {
-    offMap: "outside the map",
-    derivedShare: "country populations listed here",
-    source: "Source",
-    sourceMissing: "Source not recorded",
-    reference: "ref.",
-  },
-  oral: {
-    title: "Voices and accounts",
-    description:
-      "Attributed accounts, presented without confusing them with established historical facts.",
-    attributed: (name: string) => `Account attributed to ${name}.`,
-    anonymous: "Account attributed to a person who chose to remain anonymous.",
-    linkedVariant: "Linked variant",
-    notYetReviewed: "Not yet reviewed",
-  },
-  media: {
-    title: "Media credits",
-    description:
-      "Author, licence and source page for each image or video attached to this page.",
-    unknownAuthor: "Unknown author",
-    licence: "Licence",
-    sourcePage: "Source page",
-  },
-  ficheHead: {
-    /** What the record is: the first word of the head's overline. */
-    kind: "People",
-    people: "people",
-    reference: "ref.",
-    presenceCountries: (count: number) =>
-      `${count} ${count === 1 ? "country" : "countries"} of presence`,
-    sourceAria: (name: string) => `for the ${name} page`,
-  },
-  presenceFacts: {
-    description: (id: string) =>
-      `${id} · declared presence, with no boundary line`,
-    declaredPopulation: "Declared population",
-    share: "Share of the whole people",
-    haloTitle: "What the halo means",
-    haloBody:
-      "The radius follows the square root of the population, so the area follows the population. The border is zero: there is no boundary to read.",
-    reference: "Ref.",
-    readFull: "Read the full page",
-  },
-  atlas: {
-    missingDistribution: (name: string) =>
-      `Country distribution is not recorded for ${name}`,
-    wholeArea: "Whole area",
-    areaNoun: "this people's presence",
-    noBoundary: "No boundary here.",
-    presenceAndDensity: "A presence, and its density.",
-  },
-  nameAnswer: {
-    pronounced: "Said",
-    listen: (name: string) => `Listen to how ${name} is said`,
-    meaningLeads: "The leads on its meaning",
-    writtenTraces: "Where it was written",
-    whatTheyRaise: "What these names raise",
-    givenBy: (namer: string) => `Given by ${namer}.`,
-    badges: {
-      own: "Their own name",
-      outside: "Given from outside",
-      imposed: "Imposed",
-      debated: "Origin debated",
-      usage: (language: string) => `In ${language}`,
-    },
-  },
-};
-
-type PeopleCopy = typeof en;
-
-const fr: PeopleCopy = {
+const fr = {
   summary: {
     title: "En bref",
     persons: "Personnes recensées",
-    referenceYear: (year) => `Année de référence : ${year}`,
+    referenceYear: (year: number) => `Année de référence : ${year}`,
     countriesOfPresence: "Pays de présence",
     mainLanguage: "Langue principale",
     linguisticFamily: "Famille linguistique",
     namesReferencedHere: "Noms rattachés",
     missingData: "Non renseigné",
     factTier: "Niveau de source",
-    populationDisagreement: (declared, summed) =>
+    populationDisagreement: (declared: string, summed: string) =>
       `Le total déclaré est de ${declared} personnes, tandis que les populations indiquées par pays totalisent ${summed}. Ces chiffres ne concordent pas.`,
   },
   sections: {
@@ -217,7 +31,7 @@ const fr: PeopleCopy = {
     referenceYear: "Année de référence : 2025",
     fragmentation: "Fragmentation coloniale",
     fragmentationNote: "Dérivé de la présence du peuple dans plusieurs pays",
-    fragmentationCount: (count) => `${count} pays de présence`,
+    fragmentationCount: (count: number) => `${count} pays de présence`,
     sources: "Sources",
   },
   chapterDetails: {
@@ -226,9 +40,9 @@ const fr: PeopleCopy = {
     historyRole: "Rôle historique",
     historyOriginStation: "Formation et origines",
     cultureRitesAndSymbols: "Rites & symboles",
-    associatedGroups: (count) =>
+    associatedGroups: (count: number) =>
       `${count} ${count === 1 ? "groupe associé" : "groupes associés"}`,
-    documentedRelations: (count) =>
+    documentedRelations: (count: number) =>
       `${count} ${count === 1 ? "relation documentée" : "relations documentées"}`,
   },
   reportSection: "Signaler cette section",
@@ -239,19 +53,19 @@ const fr: PeopleCopy = {
     problematic: "Pourquoi ces noms posent problème.",
     contemporary: "L'usage aujourd'hui.",
     sectionTitle: "Noms & appellations",
-    pronunciation: (ipa) => `Prononciation phonétique : ${ipa}`,
+    pronunciation: (ipa: string) => `Prononciation phonétique : ${ipa}`,
     collapse: "Réduire",
-    more: (count) => `+${count} autres`,
-    exonymCount: (count) => `${count} noms relevés`,
+    more: (count: number) => `+${count} autres`,
+    exonymCount: (count: number) => `${count} noms relevés`,
     currentUsageAndCritique: "Usage et contexte",
   },
   field: {
-    explanation: (count) =>
+    explanation: (count: number) =>
       `Sur la page d'un pays, le trait se referme parce qu'une frontière administrative est publiée et datée. Ici, rien de tel n'existe : aucune source que nous citons ne dit où la présence de ce peuple s'arrête. Ce que nous déclarons, ce sont ${count} populations par pays. La carte s'en tient exactement à cela — un halo par pays, dont l'aire suit la population et dont le bord vaut zéro. Un tracé fermé aurait affirmé un dedans et un dehors que personne ne peut sourcer.`,
     legend: "Densité décroissante, bord nul",
     offMapOne:
       "Une présence déclarée est hors carte, notre projet ne couvrant que l'Afrique :",
-    offMapMany: (count) =>
+    offMapMany: (count: number) =>
       `${count} présences déclarées sont hors carte, notre projet ne couvrant que l'Afrique :`,
   },
   originFields: {
@@ -308,7 +122,7 @@ const fr: PeopleCopy = {
     title: "Voix & récits",
     description:
       "Des récits attribués, présentés sans les confondre avec des faits historiques établis.",
-    attributed: (name) => `Récit attribué à ${name}.`,
+    attributed: (name: string) => `Récit attribué à ${name}.`,
     anonymous: "Récit attribué à une personne ayant choisi de rester anonyme.",
     linkedVariant: "Variante liée",
     notYetReviewed: "Pas encore relu",
@@ -325,11 +139,12 @@ const fr: PeopleCopy = {
     kind: "Peuple",
     people: "personnes",
     reference: "réf.",
-    presenceCountries: (count) => `${count} pays de présence`,
-    sourceAria: (name) => `pour la page ${name}`,
+    presenceCountries: (count: number) => `${count} pays de présence`,
+    sourceAria: (name: string) => `pour la page ${name}`,
   },
   presenceFacts: {
-    description: (id) => `${id} · présence déclarée, sans tracé de limite`,
+    description: (id: string) =>
+      `${id} · présence déclarée, sans tracé de limite`,
     declaredPopulation: "Population déclarée",
     share: "Part de l'ensemble du peuple",
     haloTitle: "Ce que le halo dit",
@@ -339,7 +154,7 @@ const fr: PeopleCopy = {
     readFull: "Lire la page complète",
   },
   atlas: {
-    missingDistribution: (name) =>
+    missingDistribution: (name: string) =>
       `Répartition par pays non renseignée pour ${name}`,
     wholeArea: "Toute l'aire",
     areaNoun: "présence",
@@ -348,20 +163,22 @@ const fr: PeopleCopy = {
   },
   nameAnswer: {
     pronounced: "Se dit",
-    listen: (name) => `Écouter la prononciation de ${name}`,
+    listen: (name: string) => `Écouter la prononciation de ${name}`,
     meaningLeads: "Les pistes sur le sens",
     writtenTraces: "Où il a été écrit",
     whatTheyRaise: "Ce que ces noms soulèvent",
-    givenBy: (namer) => `Donné par ${namer}.`,
+    givenBy: (namer: string) => `Donné par ${namer}.`,
     badges: {
       own: "Leur nom",
       outside: "Donné de l'extérieur",
       imposed: "Imposé",
       debated: "Origine débattue",
-      usage: (language) => `En ${language}`,
+      usage: (language: string) => `En ${language}`,
     },
   },
 };
 
+type PeopleCopy = typeof fr;
+
 // @req REQ-145
-export const peopleCopy: Record<Language, PeopleCopy> = { en, fr };
+export const peopleCopy: Record<Language, PeopleCopy> = { fr };

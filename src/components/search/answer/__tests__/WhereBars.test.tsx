@@ -71,17 +71,6 @@ describe("WhereBars", () => {
   });
 
   // @req REQ-178
-  it("writes millions with a decimal point in English", () => {
-    renderWhere("lingala", { language: "en" });
-    expect(screen.getByText("4.5 M")).toBeInTheDocument();
-    expect(
-      screen.getByText(
-        "Estimates of the number of speakers, to be read as orders of magnitude."
-      )
-    ).toBeInTheDocument();
-  });
-
-  // @req REQ-178
   it("shows a country's shares in percent and declares what is not yet split", () => {
     renderWhere("congo", { heading: "RD Congo" }, 1);
     expect(

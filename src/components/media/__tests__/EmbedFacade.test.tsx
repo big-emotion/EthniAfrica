@@ -311,20 +311,6 @@ describe("EmbedFacade", () => {
     ).toHaveAttribute("href", WATCH_URL);
   });
 
-  // @req REQ-181
-  it("speaks English on an English route", () => {
-    renderFacade({ language: "en" });
-
-    expect(
-      screen.getByRole("button", {
-        name: `Watch here: ${NAME} — loads YouTube's player`,
-      })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("link", { name: /watch on youtube/i })
-    ).toBeInTheDocument();
-  });
-
   // The swap is instant by design: a transition is what would make a
   // reduced-motion branch necessary.
   // @req REQ-181

@@ -1,151 +1,6 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  editorialCommonNames: {
-    COD: "Democratic Republic of the Congo",
-  } as Record<string, string>,
-  title: {
-    ficheCountry: "country page",
-    reference: "ref.",
-  },
-  summary: {
-    title: "In brief",
-    /** The country's summary prose, folded behind its first sentence. */
-    portrait: "Portrait",
-    referenceYear: (year: number) => `Reference year: ${year}`,
-    /**
-     * Each count is a name, the reach of what is counted, and what to say
-     * when nothing is counted. Folded into one label the way it used to be
-     * — "Peoples documented here" over the number 3 — the reach read as a
-     * heading and the silence had nowhere to go but the figure's own slot.
-     */
-    figures: {
-      population: { label: "inhabitants", absent: "population not recorded" },
-      peoples: {
-        label: "peoples",
-        scope: "documented here",
-        absent: "no people documented here",
-      },
-      languages: {
-        label: "languages",
-        scope: "documented here",
-        absent: "no language documented here",
-      },
-      families: {
-        label: "language families",
-        scope: "documented here",
-        absent: "no language family documented here",
-      },
-      names: {
-        label: "names",
-        scope: "referenced here",
-        absent: "no name referenced here",
-      },
-    },
-    factTier: "Source tier",
-  },
-  sections: {
-    nameAndHistory: "The name and its history",
-    history: "History",
-    etymology: "Etymology of the name",
-    peoples: "Peoples of the country",
-    kingdoms: "Kingdoms and political formations",
-    namesHistory: "Names through history",
-    historicalFacts: "Major historical facts",
-    languages: "Languages",
-    culture: "Culture and society",
-    sources: "Sources",
-  },
-  historyDateMissing: "Date not recorded",
-  languagesDerivedNote: "Derived from the people pages documented here.",
-  languagesUnavailable: "Language relations are temporarily unavailable.",
-  peoples: {
-    inhabitants: "inhabitants",
-    documentedInhabitants: "documented inhabitants",
-    count: (count: number) => `${count} ${count === 1 ? "people" : "peoples"}`,
-    groupedCount: (count: number) => `${count} peoples`,
-    coverage: (share: number) =>
-      `The peoples documented here represent ${share}% of the country's population. The remainder is not yet distributed here.`,
-    estimatedBreakdown: "Estimated or incomplete breakdown",
-    diversity: "Ethnolinguistic diversity",
-    notDetailed: "not individually detailed",
-    otherLanguages: (count: number) => `+ ${count} other languages`,
-  },
-  reportSection: "Report this section",
-  /**
-   * What the apparatus amounts to, counted by standing. A census, never a
-   * verdict: the list still shows each source's own standing, and the point
-   * of counting them is that a reader can see a page resting on seven
-   * unexamined sources without reading all seven first.
-   */
-  sourcesTally: {
-    total: (count: number) => `${count} source${count > 1 ? "s" : ""}`,
-    standing: (label: string, count: number) => `${label}: ${count}`,
-  },
-  targetFacts: {
-    written: "Page authored",
-    derived: "Presence derived from people pages",
-    population: "Population",
-    reference: "ref.",
-    languages: "Main languages",
-    boundary: (id: string) => `${id} · published boundary, drawn on appearance`,
-    declaredPeoples: "Peoples declared by the page",
-    firstEntries: "First entries",
-    none: "No people is attached to this country yet.",
-    readFull: "Read the full page",
-    documentedOne: "1 documented people",
-    documentedMany: (count: string) => `${count} documented peoples`,
-  },
-  atlas: {
-    areaNoun: "the continent",
-    returnTo: (name: string) => `Return to ${name}`,
-    missingOutline: (name: string) => `Outline unavailable for ${name}`,
-    /**
-     * Atlas charter §1 asks for the reason to be stated once, next to the
-     * mark. The two institutions are named separately and left to disagree:
-     * reconciling them into one neutral sentence would be the atlas settling
-     * the question again, quietly, which is the defect this whole encoding
-     * exists to undo.
-     *
-     * `encoding` is not decoration. Without it an outline with nothing inside
-     * reads as a rendering fault rather than as a statement.
-     */
-    disputedStatus: {
-      label: "Contested status",
-      body: "This territory's extent is dated and citable: the 1912 Franco-Spanish convention sets its northern limit at the 27°40′N parallel. Its sovereignty is not. The United Nations has listed it among the non-self-governing territories since 1963 and records no administering power there since Spain withdrew in 1976; the African Union seats a member state for it, the Sahrawi Arab Democratic Republic.",
-      encoding:
-        "So we trace what we can cite and leave unfilled what we cannot: the outline closes, the inside stays empty.",
-    },
-  },
-  generated: {
-    eras: {
-      middleAges: "Middle Ages",
-      precolonial: "Precolonial era",
-      colonization: "Colonization",
-      contemporary: "Contemporary era",
-    },
-    kingdomTitles: {
-      generic: "Historical political entities",
-      kingdoms: "Kingdoms & Civilisations",
-      sultanates: "Sultanates & Chiefdoms",
-      chiefdoms: "Chiefdoms & Entities",
-    },
-    historicalPeriods: {
-      ancientPeriods: "Ancient periods",
-      middleAges: "Middle Ages",
-      precolonial: "Precolonial era",
-      colonization: "Colonization",
-      independenceStruggle: "Struggle for independence",
-      postIndependence: "Post-independence era",
-    },
-    each: "each",
-    centers: "Centres",
-  },
-};
-
-type CountryCopy = typeof en;
-
-const fr: CountryCopy = {
+const fr = {
   editorialCommonNames: {
     COD: "République démocratique du Congo",
   },
@@ -153,7 +8,7 @@ const fr: CountryCopy = {
   summary: {
     title: "En bref",
     portrait: "Portrait",
-    referenceYear: (year) => `Année de référence : ${year}`,
+    referenceYear: (year: number) => `Année de référence : ${year}`,
     figures: {
       population: {
         label: "habitants",
@@ -201,19 +56,19 @@ const fr: CountryCopy = {
   peoples: {
     inhabitants: "habitants",
     documentedInhabitants: "habitants documentés",
-    count: (count) => `${count} peuple${count > 1 ? "s" : ""}`,
-    groupedCount: (count) => `${count} peuples`,
-    coverage: (share) =>
+    count: (count: number) => `${count} peuple${count > 1 ? "s" : ""}`,
+    groupedCount: (count: number) => `${count} peuples`,
+    coverage: (share: number) =>
       `Les peuples documentés ici représentent ${share}\u00a0% de la population du pays. Le reste n'est pas encore réparti ici.`,
     estimatedBreakdown: "Répartition estimée ou incomplète",
     diversity: "Diversité ethnolinguistique",
     notDetailed: "non détaillée individuellement",
-    otherLanguages: (count) => `+ ${count} autres langues`,
+    otherLanguages: (count: number) => `+ ${count} autres langues`,
   },
   reportSection: "Signaler cette section",
   sourcesTally: {
-    total: (count) => `${count} source${count > 1 ? "s" : ""}`,
-    standing: (label, count) => `${label} : ${count}`,
+    total: (count: number) => `${count} source${count > 1 ? "s" : ""}`,
+    standing: (label: string, count: number) => `${label} : ${count}`,
   },
   targetFacts: {
     written: "Page rédigée",
@@ -221,18 +76,19 @@ const fr: CountryCopy = {
     population: "Population",
     reference: "réf.",
     languages: "Langues principales",
-    boundary: (id) => `${id} · frontière publiée, tracée à l'apparition`,
+    boundary: (id: string) =>
+      `${id} · frontière publiée, tracée à l'apparition`,
     declaredPeoples: "Peuples déclarés par la page",
     firstEntries: "Premières entrées",
     none: "Aucun peuple rattaché à ce pays pour l’instant.",
     readFull: "Lire la page complète",
     documentedOne: "1 peuple documenté",
-    documentedMany: (count) => `${count} peuples documentés`,
+    documentedMany: (count: string) => `${count} peuples documentés`,
   },
   atlas: {
     areaNoun: "le continent",
-    returnTo: (name) => `Revenir à ${name}`,
-    missingOutline: (name) => `Contour non disponible pour ${name}`,
+    returnTo: (name: string) => `Revenir à ${name}`,
+    missingOutline: (name: string) => `Contour non disponible pour ${name}`,
     disputedStatus: {
       label: "Statut contesté",
       body: "L'étendue de ce territoire est datée et citable : la convention franco-espagnole de 1912 en fixe la limite nord au parallèle 27°40′N. Sa souveraineté ne l'est pas. L'ONU l'inscrit depuis 1963 parmi les territoires non autonomes et n'y enregistre aucune puissance administrante depuis le retrait espagnol de 1976 ; l'Union africaine y siège un État membre, la République arabe sahraouie démocratique.",
@@ -266,5 +122,7 @@ const fr: CountryCopy = {
   },
 };
 
+type CountryCopy = typeof fr;
+
 // @req REQ-145
-export const countryCopy: Record<Language, CountryCopy> = { en, fr };
+export const countryCopy: Record<Language, CountryCopy> = { fr };

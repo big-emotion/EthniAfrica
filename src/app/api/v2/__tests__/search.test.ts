@@ -148,38 +148,41 @@ describe("GET /api/v2/search (route)", () => {
     });
   });
 
-  // ── locale (ETNI-1857 / REQ-141) ────────────────────────────────────────
+  // ── locale: French only ─────────────────────────────────────────────────
   describe("lang", () => {
     // @req REQ-141
-    it("forwards the locale to the handler", async () => {
+    it("forwards the French locale to the handler", async () => {
       (ftsSearchHandler as ReturnType<typeof vi.fn>).mockResolvedValue(
         mockEnvelope
       );
 
       const res = await GET(
-        new NextRequest("http://localhost/api/v2/search?q=Chad&lang=en")
+        new NextRequest("http://localhost/api/v2/search?q=Chad&lang=fr")
       );
 
       expect(res.status).toBe(200);
       expect(ftsSearchHandler).toHaveBeenCalledWith(
-        expect.objectContaining({ q: "Chad", lang: "en" })
+        expect.objectContaining({ q: "Chad", lang: "fr" })
       );
     });
 
     // @req REQ-141
-    it("rejects a locale the atlas does not publish without calling the handler", async () => {
-      const res = await GET(
-        new NextRequest("http://localhost/api/v2/search?q=Chad&lang=de")
-      );
-      const body = await res.json();
+    it.each(["en", "de"])(
+      "rejects lang=%s without calling the handler",
+      async (lang) => {
+        const res = await GET(
+          new NextRequest(`http://localhost/api/v2/search?q=Chad&lang=${lang}`)
+        );
+        const body = await res.json();
 
-      expect(res.status).toBe(400);
-      expect(body.errors[0]).toMatchObject({
-        code: "VALIDATION_ERROR",
-        field: "lang",
-      });
-      expect(ftsSearchHandler).not.toHaveBeenCalled();
-    });
+        expect(res.status).toBe(400);
+        expect(body.errors[0]).toMatchObject({
+          code: "VALIDATION_ERROR",
+          field: "lang",
+        });
+        expect(ftsSearchHandler).not.toHaveBeenCalled();
+      }
+    );
 
     // @req REQ-141
     it("omits the lang key when the query parameter is absent", async () => {
@@ -201,11 +204,11 @@ describe("GET /api/v2/search (route)", () => {
       );
 
       await GET(
-        new NextRequest("http://localhost/api/v2/search?q=Chad&lang=en")
+        new NextRequest("http://localhost/api/v2/search?q=Chad&lang=fr")
       );
 
       expect(searchQueryLog.write).toHaveBeenCalledWith(
-        expect.objectContaining({ lang: "en" })
+        expect.objectContaining({ lang: "fr" })
       );
     });
   });

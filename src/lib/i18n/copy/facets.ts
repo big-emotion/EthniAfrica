@@ -1,76 +1,6 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  navigation: "Facets",
-  filters: "Filters",
-  filter: "Filter",
-  removeFilter: "Remove filter",
-  firstLetter: "First letter",
-  allLetters: "All",
-  previousPage: "Previous page",
-  nextPage: "Next page",
-  page: "Page",
-  pagination: "Pagination for",
-  topOfList: "at the top of the list",
-  bottomOfList: "at the bottom of the list",
-  to: "to",
-  of: "of",
-  perPage: "Per page",
-  resultsPerPage: "Results per page",
-  selectionEmptyCountry: "This selection documents nothing in this country.",
-  alreadyNarrowed: "The list is already narrowed to this country.",
-  narrowToCountry: "Narrow the list to this country",
-  missingCountryData: "We do not yet document any people by country.",
-  showMap: "Show map",
-  hideMap: "Hide map",
-  areaNoun: "our entries",
-  definitions: {
-    families: {
-      label: "Families",
-      sectionName: "Language families",
-      eyebrow: "Browse · language families",
-      title: "Language families",
-      filterHint:
-        "This list contains language families. Filters narrow it without changing its nature: filtering by country shows the families found in that country, not the country itself.",
-    },
-    languages: {
-      label: "Languages",
-      sectionName: "Languages",
-      eyebrow: "Browse · languages of Africa",
-      title: "The languages of Africa",
-      filterHint:
-        "This list contains languages. Filters narrow it without changing its nature: filtering by country shows the languages spoken there, not the country itself.",
-    },
-    peoples: {
-      label: "Peoples",
-      sectionName: "Peoples",
-      eyebrow: "Browse · peoples of Africa",
-      title: "The peoples of Africa",
-      filterHint:
-        "This list contains peoples. Filters narrow it without changing its nature: filtering by country shows the peoples documented for that country, not the country itself.",
-    },
-    countries: {
-      label: "Countries",
-      sectionName: "Countries",
-      eyebrow: "Browse · countries of Africa",
-      title: "The countries of Africa",
-      filterHint:
-        "This list contains countries. Filters narrow it without changing its nature: filtering by language family shows the countries where that family is found, not the family itself.",
-    },
-    patronymes: {
-      label: "Names",
-      sectionName: "Names",
-      eyebrow: "Browse · names of Africa",
-      title: "The names of Africa",
-      filterHint:
-        "This list contains names. Filters narrow it without changing its nature: filtering by people shows the names carried by that people, not the people itself.",
-    },
-  },
-};
-
-type FacetsCopy = typeof en;
-
-const fr: FacetsCopy = {
+const fr = {
   navigation: "Facettes",
   filters: "Filtres",
   filter: "Filtrer",
@@ -138,5 +68,7 @@ const fr: FacetsCopy = {
   },
 };
 
+type FacetsCopy = typeof fr;
+
 // @req REQ-145
-export const facetsCopy: Record<Language, FacetsCopy> = { en, fr };
+export const facetsCopy: Record<Language, FacetsCopy> = { fr };

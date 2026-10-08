@@ -1,11 +1,10 @@
 # Interface copy
 
-The code supports two locales while publication fails closed to `fr-only`
-(REQ-140). Every string a
-reader sees in the chrome — a label, a hint, an empty state, a pager — exists
-in both, and one gate holds the two sides together. This page says where the
-copy lives, what the gate checks, and how a directory of inline French moves
-across.
+The site publishes French alone (REQ-140); the English locale was retired in
+October 2026 and no English launch is planned. Every string a reader sees in
+the chrome — a label, a hint, an empty state, a pager — lives in one place
+per surface rather than inline in a component. This page says where the copy
+lives, what guards it, and how a directory of inline French moves across.
 
 ## Where copy lives
 
@@ -14,16 +13,14 @@ One file per surface under `src/lib/i18n/copy/`: `footer.ts`, `quiz.ts`,
 way:
 
 ```ts
-const en = { pageTitle: "Names", … };
-type NamesCopy = typeof en;
-const fr: NamesCopy = { pageTitle: "Noms", … };
-export const namesCopy: Record<Language, NamesCopy> = { en, fr };
+const fr = { pageTitle: "Noms", … };
+type NamesCopy = typeof fr;
+export const namesCopy: Record<Language, NamesCopy> = { fr };
 ```
 
-English first, because the type is read off it: a key present in `en` and
-missing from `fr` fails to compile, and so does a key `fr` invents. No
-`as const`, so the two sides may differ in every value while matching in
-every key.
+The `Record<Language, …>` shape is kept on purpose: `Language` is the
+one-member union `"fr"`, every caller already reads `<surface>Copy[language]`,
+and an unknown key fails to compile instead of returning `undefined`.
 
 `src/lib/translations.ts` is a façade that composes the modules into the
 `getTranslation(lang)` shape the older importers read. A budgeted client
@@ -31,27 +28,11 @@ island — the quiz play island, held under 15 KB gzipped — imports its own
 module (`quizCopy`) instead of the façade, so its bundle carries one surface
 and not fourteen.
 
-Every module is listed once in `COPY_MODULES` (`src/lib/i18n/copy/index.ts`).
-That list is what the parity suite walks; a module that is not on it is not
-checked.
-
 Locale-dependent formatting is not copy and has its own helpers in
 `src/lib/languageTag.ts`: `localeTag`, `formatNumber`, `formatDate`,
 `displayCountryName`. A component never spells `"fr-FR"` itself. It formats
 in the locale it was handed (`language` prop, route params) or, deep in a
-tree where no caller has it, in the route's locale through
-`useRouteLanguage()`.
-
-## The parity suite
-
-`src/lib/i18n/__tests__/copyParity.test.ts` (REQ-145) asserts, for every
-registered module:
-
-- identical nested key sets across locales;
-- no empty string on either side;
-- no French value above three words byte-identical to the English one,
-  unless the path is on the allow-list in the test (brand strings);
-- and that the façade hands each module to each locale unchanged.
+tree where no caller has it, through `useRouteLanguage()`.
 
 ## The copy-literal guard
 
@@ -74,11 +55,10 @@ tests, stories, fixtures, `src/test/`, the code-authored prose banks
 ## Migrating one directory
 
 Each wave takes one directory of `src/components` or `src/app/[lang]`, and
-nothing outside it but the registry line.
+nothing outside it but the dictionary.
 
-1. Add `src/lib/i18n/copy/<surface>.ts` with the directory's strings on the
-   `fr` side and their British-English counterparts on `en`; register it in
-   `COPY_MODULES`, and in the façade if older importers should reach it.
+1. Add `src/lib/i18n/copy/<surface>.ts` with the directory's strings, and
+   wire it into the façade if older importers should reach it.
 2. Replace each inline literal with a read from the module. A server
    component reads `<surface>Copy[language]` from the `language` it already
    receives; a client component takes `language` as a prop where a caller has

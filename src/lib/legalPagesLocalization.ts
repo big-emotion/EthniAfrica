@@ -1,5 +1,4 @@
 import type { LegalDocumentContent } from "@/components/layout/LegalDocument";
-import { legalPagesEn } from "@/lib/legal-pages.en";
 import { legalPages } from "@/lib/legal-pages";
 import { describeLegalHost } from "@/lib/legalHost";
 import type { Language } from "@/types/shared";
@@ -35,6 +34,5 @@ export function getLegalPage(
   language: Language,
   page: LegalPageKey
 ): LegalDocumentContent {
-  const document = language === "en" ? legalPagesEn[page] : legalPages[page];
-  return withHost(document, language);
+  return withHost(legalPages[page], language);
 }

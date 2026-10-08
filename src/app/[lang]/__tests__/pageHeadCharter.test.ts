@@ -1,20 +1,15 @@
 /**
- * Every public page declares its locale alternates (REQ-141).
+ * Every public page declares its head (REQ-141).
  *
  * The contract walks every `page.tsx` under `src/app/[lang]` — except the
  * authenticated console and the one-shot verification page, which are
- * nobody's to index — renders each page's `generateMetadata` in both
- * locales, and holds the result to the indexing doctrine in
- * `src/lib/seo/localeIndexing.ts`:
+ * nobody's to index — renders each page's `generateMetadata`, and holds it
+ * to what a French-only site owes a crawler:
  *
- *   · an absolute canonical on the canonical domain, in the locale served;
- *   · for a surface at parity, both locales in the cluster and `x-default`
- *     on the English URL;
- *   · for a surface not yet at parity, and for every fiche until a
- *     translation record exists, French alone in the cluster and `noindex`
- *     under `/en`;
- *   · for a page indexed nowhere, a canonical and no cluster at all;
- *   · an Open Graph locale matching the page's.
+ *   · an absolute canonical on the canonical domain, under `/fr`;
+ *   · no hreflang cluster — there is no other language to point at;
+ *   · `noindex` only on the pages indexed nowhere;
+ *   · a French Open Graph locale.
  *
  * A page this file does not know is a failure, on purpose: a new route
  * registers itself here or ships without a head.
@@ -26,17 +21,8 @@ import type { Metadata } from "next";
 import { beforeAll, describe, expect, it, vi } from "vitest";
 
 import { CANONICAL_DOMAIN } from "@/lib/brand";
-import { LOCALES } from "@/lib/locale";
-import { OG_LOCALE_BY_LANGUAGE } from "@/lib/seo/localeAlternates";
-import {
-  surfaceIndexedLocales,
-  type IndexedSurface,
-} from "@/lib/seo/localeIndexing";
+import { OG_LOCALE } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
-
-// Exercise the final two-locale launch state. Silent fr-only behaviour is
-// covered independently in localeAlternates, localeIndexing and sitemap.
-vi.stubEnv("SITE_LOCALE_MODE", "bilingual-en-default");
 
 // Each fiche's `generateMetadata` also decides whether the entity exists,
 // which is a database read. The stubs answer it so the walk never touches
@@ -138,14 +124,9 @@ const WITHDRAWN = [
   "dossiers/themes/[theme]",
 ];
 
-type Expectation =
-  | { surface: IndexedSurface }
-  // Indexed once a translation record exists for the entity — none today.
-  | { surface: "fiche" }
-  // A localized publication whose English editorial review is pending.
-  | { surface: "fr-only" }
-  // Indexed in no locale: canonical only.
-  | { surface: "unindexed" };
+// The surface a route belongs to, or "unindexed" for a page indexed
+// nowhere: canonical only, and `noindex`.
+type Expectation = { surface: string };
 
 interface RouteFixture {
   params?: Record<string, string | string[]>;
@@ -203,7 +184,6 @@ const FIXTURES: Record<string, RouteFixture> = {
   "decouvertes/[[...publication]]": {
     paramsByLanguage: {
       fr: { publication: ["burkina-faso-trois-langues"] },
-      en: { publication: ["burkina-faso-three-languages"] },
     },
     expectation: { surface: "fr-only" },
   },
@@ -233,7 +213,7 @@ const FIXTURES: Record<string, RouteFixture> = {
   },
   "dossiers/themes/[theme]": {
     params: { theme: "pouvoirs" },
-    expectation: { surface: "dossierThemes" as IndexedSurface },
+    expectation: { surface: "dossierThemes" },
   },
   "fonds-decran": { expectation: { surface: "wallpapers" } },
   glossaire: { expectation: { surface: "glossary" } },
@@ -322,15 +302,10 @@ async function headOf(route: string, lang: Language) {
   });
 }
 
-/** The locales the expectation says the page is indexed in. */
-function indexedLocalesOf(expectation: Expectation): Language[] {
-  if (expectation.surface === "unindexed") return [];
-  if (expectation.surface === "fiche" || expectation.surface === "fr-only")
-    return ["fr"];
-  return surfaceIndexedLocales(expectation.surface);
-}
+const isIndexed = (expectation: Expectation) =>
+  expectation.surface !== "unindexed";
 
-describe("locale alternates — every public page", () => {
+describe("page head — every public page", () => {
   // Measured over every route, withdrawn ones included: their fixtures stay
   // in the map on purpose, recording the head each one owes on the day it is
   // restored. Dropping them would make the restore a rediscovery.
@@ -360,86 +335,49 @@ describe("locale alternates — every public page", () => {
   // @req REQ-141
   it("gives a withdrawn route no head at all", async () => {
     for (const route of WITHDRAWN) {
-      for (const lang of LOCALES) {
-        const head = await headOf(route, lang).catch(() => null);
-        if (head === null) continue;
-        expect(head.alternates?.canonical, `${route} @${lang}`).toBeUndefined();
-        expect(head.alternates?.languages, `${route} @${lang}`).toBeUndefined();
-      }
+      const head = await headOf(route, "fr").catch(() => null);
+      if (head === null) continue;
+      expect(head.alternates?.canonical, route).toBeUndefined();
+      expect(head.alternates?.languages, route).toBeUndefined();
     }
   }, 15_000);
 
-  // Translation artifacts can be deployed before launch, but none of the 46
-  // public routes may announce an English alternate while the gate is closed.
-  // @req REQ-140
+  // A one-language site has no other version to point at.
   // @req REQ-141
-  it("announces no English alternate anywhere in fr-only mode", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "fr-only");
-    try {
-      for (const route of ROUTES) {
-        for (const lang of LOCALES) {
-          const languages = (await headOf(route, lang)).alternates?.languages;
-          expect(languages?.en, route).toBeUndefined();
-          if (languages?.fr) {
-            expect(languages["x-default"], route).toBe(languages.fr);
-          } else {
-            expect(languages?.["x-default"], route).toBeUndefined();
-          }
-        }
-      }
-    } finally {
-      vi.stubEnv("SITE_LOCALE_MODE", "bilingual-en-default");
+  it("declares no hreflang cluster anywhere", async () => {
+    for (const route of ROUTES) {
+      const head = await headOf(route, "fr");
+      expect(head.alternates?.languages, route).toBeUndefined();
     }
   }, 15_000);
 
   for (const route of ROUTES) {
     const fixture = FIXTURES[route];
     if (!fixture) continue;
-    const indexed = indexedLocalesOf(fixture.expectation);
+    const indexed = isIndexed(fixture.expectation);
 
     describe(`/[lang]/${route}`, () => {
-      for (const lang of LOCALES) {
-        // @req REQ-141
-        it(`declares an absolute canonical in ${lang}`, async () => {
-          const head = await headOf(route, lang);
-          const canonical = String(head.alternates?.canonical);
+      // @req REQ-141
+      it("declares an absolute canonical under /fr", async () => {
+        const head = await headOf(route, "fr");
+        const canonical = String(head.alternates?.canonical);
 
-          expect(canonical.startsWith(`${BASE}/${lang}`)).toBe(true);
-          expect(
-            canonical === `${BASE}/${lang}` ||
-              canonical.startsWith(`${BASE}/${lang}/`)
-          ).toBe(true);
-          expect(head.openGraph?.locale).toBe(OG_LOCALE_BY_LANGUAGE[lang]);
-        });
+        expect(
+          canonical === `${BASE}/fr` || canonical.startsWith(`${BASE}/fr/`)
+        ).toBe(true);
+        expect(head.openGraph?.locale).toBe(OG_LOCALE);
+      });
 
-        // @req REQ-141
-        it(`clusters exactly the indexed locales when served in ${lang}`, async () => {
-          const head = await headOf(route, lang);
-          const languages = head.alternates?.languages ?? {};
+      // @req REQ-141
+      it(indexed ? "is indexed" : "declares noindex", async () => {
+        const head = await headOf(route, "fr");
 
-          for (const locale of LOCALES) {
-            expect(locale in languages, `${locale} in cluster`).toBe(
-              indexed.includes(locale)
-            );
-          }
-          if (indexed.includes("en")) {
-            expect(languages["x-default"]).toBe(languages.en);
-          } else {
-            expect(languages).not.toHaveProperty("x-default");
-          }
-        });
-
-        // @req REQ-141
-        it(`${indexed.includes(lang) ? "is indexed" : "declares noindex"} in ${lang}`, async () => {
-          const head = await headOf(route, lang);
-
-          if (indexed.includes(lang)) {
-            expect(head.robots ?? undefined).toBeUndefined();
-          } else {
-            expect(head.robots).toEqual({ index: false, follow: true });
-          }
-        });
-      }
+        if (indexed) {
+          expect(head.robots ?? undefined).toBeUndefined();
+        } else {
+          expect(head.robots).toEqual({ index: false, follow: true });
+        }
+      });
     });
   }
 });

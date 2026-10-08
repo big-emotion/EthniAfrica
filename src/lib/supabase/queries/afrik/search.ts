@@ -88,8 +88,7 @@ async function rankAttempt(
   // near-miss functions take `p_lang` since migration 084, with a default, so a call
   // without it is served identically by the old and the new definition —
   // whereas a named parameter the old definition does not know answers
-  // PGRST202. A French request therefore survives the rollout window in
-  // either order; only an English one needs the migration live first.
+  // PGRST202, so a request survives the rollout window in either order.
   const locale = lang !== undefined ? { p_lang: lang } : {};
 
   const [
@@ -716,20 +715,10 @@ function mergeIntoOneRanking(
       toSearchHit("people", hit.id, hit.nameMain, hit)
     ),
     ...groups.countries.map((hit) =>
-      toSearchHit(
-        "country",
-        hit.id,
-        collation === "en" && hit.nameEn?.trim() ? hit.nameEn : hit.nameFr,
-        hit
-      )
+      toSearchHit("country", hit.id, hit.nameFr, hit)
     ),
     ...groups.families.map((hit) =>
-      toSearchHit(
-        "languageFamily",
-        hit.id,
-        collation === "en" && hit.nameEn?.trim() ? hit.nameEn : hit.nameFr,
-        hit
-      )
+      toSearchHit("languageFamily", hit.id, hit.nameFr, hit)
     ),
     ...groups.persons.map((hit) =>
       toSearchHit("person", hit.id, hit.fullName, hit)

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
+import type { Language } from "@/types/shared";
 
 import { getStaticPageRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
-import type { Language } from "@/types/shared";
+import { pageHead } from "@/lib/seo/pageHead";
 import ContributePageClient from "@/app/[lang]/contribute/ContributePageClient";
 
 /**
@@ -20,15 +20,12 @@ export async function generateMetadata({
   params,
 }: ContributePageProps): Promise<Metadata> {
   const { lang } = await params;
-  const title = lang === "en" ? "Contribute" : "Contribuer";
+  const title = "Contribuer";
   return {
     title,
-    ...surfaceHead(
-      lang as Language,
-      "contribute",
-      (locale) => getStaticPageRoute(locale, "contribute"),
-      { title }
-    ),
+    ...pageHead(getStaticPageRoute(lang as Language, "contribute"), {
+      title,
+    }),
   };
 }
 

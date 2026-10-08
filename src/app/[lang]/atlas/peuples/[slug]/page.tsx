@@ -91,10 +91,7 @@ async function PeopleLiveContent({
         family
           ? {
               id: family.id,
-              name:
-                language === "en"
-                  ? (family.nameEn ?? family.nameFr)
-                  : family.nameFr,
+              name: family.nameFr,
             }
           : null
       )
@@ -143,11 +140,7 @@ async function PeopleLiveContent({
                 peopleId: peopleDetail.id,
                 demography: peopleDetail.demography,
               })}
-              fallbackNote={peopleFallbackNote(
-                displayName,
-                peopleFieldOverlay,
-                language
-              )}
+              fallbackNote={peopleFallbackNote(displayName, peopleFieldOverlay)}
               targetPicker="list"
               wholeAreaLabel={copy.atlas.wholeArea}
               areaNoun={copy.atlas.areaNoun}

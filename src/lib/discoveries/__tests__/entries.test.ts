@@ -20,9 +20,22 @@ describe("Découvertes source-bank adapter", () => {
     expect(
       entries.every((entry) => entry.image?.filePage.startsWith("https://"))
     ).toBe(true);
-    expect(entries.every((entry) => entry.title.fr && entry.title.en)).toBe(
-      true
+    expect(entries.every((entry) => entry.title.fr)).toBe(true);
+  });
+
+  // @req REQ-157
+  it("carries each proverb's photograph, credit and alt into its publication", () => {
+    const proverbs = getDiscoveryPublications().filter(
+      (entry) => entry.kind === "proverb"
     );
+
+    for (const entry of proverbs) {
+      const picture = PROVERB_IMAGES[entry.id.replace("proverb:", "")];
+      expect(entry.image?.src, entry.id).toBe(picture.src);
+      expect(entry.image?.filePage, entry.id).toBe(picture.filePage);
+      expect(entry.image?.alt?.fr, entry.id).toBe(picture.alt.fr);
+      expect(entry.image?.licence, entry.id).toBe(picture.licence);
+    }
   });
 
   // The reader is a place a visitor lands on without context, so it only
@@ -41,22 +54,6 @@ describe("Découvertes source-bank adapter", () => {
     expect(eligiblePublications(proverbs)).toHaveLength(proverbs.length);
     for (const id of DISCOVERY_PROVERB_IDS) {
       expect(findProverb(id)?.origin.status, id).toBe("attested");
-    }
-  });
-
-  // @req REQ-157
-  it("carries each proverb's photograph, credit and both alts into its publication", () => {
-    const proverbs = getDiscoveryPublications().filter(
-      (entry) => entry.kind === "proverb"
-    );
-
-    for (const entry of proverbs) {
-      const picture = PROVERB_IMAGES[entry.id.replace("proverb:", "")];
-      expect(entry.image?.src, entry.id).toBe(picture.src);
-      expect(entry.image?.filePage, entry.id).toBe(picture.filePage);
-      expect(entry.image?.alt?.fr, entry.id).toBe(picture.alt.fr);
-      expect(entry.image?.alt?.en, entry.id).toBe(picture.alt.en);
-      expect(entry.image?.licence, entry.id).toBe(picture.licence);
     }
   });
 

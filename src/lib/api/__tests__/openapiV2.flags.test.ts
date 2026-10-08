@@ -167,7 +167,7 @@ describe("OpenAPI v2 flags contract", () => {
       target_type: "people",
       target_id: "PPL_YORUBA",
       flag_kind: "inaccurate",
-      language: "en",
+      language: "fr",
       antibot: expect.objectContaining({ salt: expect.any(String) }),
     });
   });

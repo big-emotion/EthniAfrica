@@ -41,7 +41,6 @@ const CORPUS_SCOPE_LABELS: Record<
   Language,
   Record<"mixed" | "random", string>
 > = {
-  en: { mixed: "Whole continent", random: "Random" },
   fr: { mixed: "Tout le continent", random: "Au hasard" },
 };
 
@@ -294,7 +293,7 @@ export async function describeScope(
     };
   }
 
-  const labelFr = await getQuizScopeLabel(scope, language);
+  const labelFr = await getQuizScopeLabel(scope);
   if (!labelFr) return null;
 
   return { kind: scope.kind, entityId: scope.entityId ?? null, labelFr };

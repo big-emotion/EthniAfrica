@@ -80,13 +80,13 @@ describe("useQuizSession (Epic 10, Story 10.9, ETNI-1132, FR67)", () => {
       () =>
         useQuizSession({
           scope: { kind: "mixed" },
-          language: "en",
+          language: "fr",
         }),
       { wrapper: createWrapper() }
     );
 
     await waitFor(() => expect(fetchMock).toHaveBeenCalled());
-    expect(fetchMock.mock.calls[0][0]).toContain("lang=en");
+    expect(fetchMock.mock.calls[0][0]).toContain("lang=fr");
   });
 
   // @req REQ-103 FR67

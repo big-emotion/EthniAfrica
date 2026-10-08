@@ -47,7 +47,7 @@ describe("buildSearchParams", () => {
   // names one — the route reads an absent parameter as French.
   // @req REQ-141
   it("carries the locale as lang and omits it when none is given", () => {
-    expect(buildSearchParams("chad", { lang: "en" }).get("lang")).toBe("en");
+    expect(buildSearchParams("chad", { lang: "fr" }).get("lang")).toBe("fr");
     expect(buildSearchParams("chad").get("lang")).toBeNull();
   });
 });

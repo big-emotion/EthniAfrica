@@ -8,82 +8,7 @@ import type {
 } from "@/lib/home/didYouKnowFacts";
 import type { Language } from "@/types/shared";
 
-const en = {
-  metadataTitle: "Contact us",
-  metadataDescription:
-    "Write to us: report an error, suggest a source or discuss reusing the data.",
-  eyebrow: "Write to us",
-  title: "Contact us",
-  introduction:
-    "An error in a page, a source to add to our project, or a use of the data to discuss: write to us. Every message reaches the same inbox, and your chosen subject sorts it.",
-  formTitle: "Send a message",
-  requiredFields: "Fields marked with an asterisk are required.",
-  civility: "Title",
-  selectCivility: "Select…",
-  civilities: {
-    madame: "Ms",
-    monsieur: "Mr",
-    "sans-mention": "Prefer not to say",
-  } satisfies Record<ContactCivility, string>,
-  firstName: "First name *",
-  lastName: "Last name *",
-  email: "Email address *",
-  subject: "Subject *",
-  selectSubject: "Select a subject",
-  subjects: {
-    correction: "Report an error or inaccuracy",
-    source: "Suggest a source",
-    contribution: "Suggest a contribution",
-    reutilisation: "Reuse the data",
-    presse: "Press, research and partnerships",
-    "donnees-personnelles": "Personal data",
-    autre: "Another request",
-  } satisfies Record<ContactSubject, string>,
-  message: "Message *",
-  messagePlaceholder: "Describe your request…",
-  honeypot: "Leave this field blank",
-  sending: "Sending…",
-  send: "Send message",
-  sent: "Your message has been sent. We will reply to the address you provided.",
-  sendFailed: (email: string) =>
-    `Your message could not be sent. Write to us directly at ${email}.`,
-  server: {
-    invalidJson: "The request could not be read.",
-    validationFailed: "The form contains fields that need correcting.",
-    transportUnavailable: (email: string) =>
-      `Sending is temporarily unavailable. Write to us directly at ${email}.`,
-    sendFailed: (email: string) =>
-      `Your message could not be sent. Write to us directly at ${email}.`,
-    rateLimited: (email: string) =>
-      `Too many messages have been sent from this connection. Try again later, or write to us directly at ${email}.`,
-    fieldErrors: {
-      civility: "Select a valid title.",
-      firstName: "Enter your first name.",
-      lastName: "Enter your last name.",
-      email: "Enter a valid email address.",
-      subject: "Select a valid subject.",
-      message: "Describe your request in a few words.",
-    },
-  },
-  emailEyebrow: "Email address",
-  emailHelp:
-    "The form writes to this address. We reply to the address you provide.",
-  didYouKnow: "Did you know?",
-  entityLabels: {
-    people: "People",
-    country: "Country",
-    family: "Language family",
-  } satisfies Record<DidYouKnowEntityKind, string>,
-  tierLabels: {
-    official: "Official source",
-    referenced: "Referenced source",
-    unverified: "Unverified source",
-  } satisfies Record<DidYouKnowTier, string>,
-};
-
-type ContactCopy = typeof en;
-
-const fr: ContactCopy = {
+const fr = {
   metadataTitle: "Contactez-nous",
   metadataDescription:
     "Nous écrire : signaler une erreur, proposer une source, demander une réutilisation des données.",
@@ -99,7 +24,7 @@ const fr: ContactCopy = {
     madame: "Madame",
     monsieur: "Monsieur",
     "sans-mention": "Sans mention",
-  },
+  } satisfies Record<ContactCivility, string>,
   firstName: "Prénom *",
   lastName: "Nom *",
   email: "Adresse électronique *",
@@ -113,23 +38,23 @@ const fr: ContactCopy = {
     presse: "Presse, recherche et partenariats",
     "donnees-personnelles": "Données personnelles",
     autre: "Autre demande",
-  },
+  } satisfies Record<ContactSubject, string>,
   message: "Message *",
   messagePlaceholder: "Décrivez votre demande…",
   honeypot: "Ne remplissez pas ce champ",
   sending: "Envoi en cours…",
   send: "Envoyer le message",
   sent: "Votre message est bien parti. Nous vous répondons à l'adresse que vous avez indiquée.",
-  sendFailed: (email) =>
+  sendFailed: (email: string) =>
     `Votre message n'a pas pu être envoyé. Écrivez-nous directement à ${email}.`,
   server: {
     invalidJson: "Requête illisible.",
     validationFailed: "Le formulaire comporte des champs à corriger.",
-    transportUnavailable: (email) =>
+    transportUnavailable: (email: string) =>
       `L'envoi est momentanément indisponible. Écrivez-nous directement à ${email}.`,
-    sendFailed: (email) =>
+    sendFailed: (email: string) =>
       `Votre message n'a pas pu être envoyé. Écrivez-nous directement à ${email}.`,
-    rateLimited: (email) =>
+    rateLimited: (email: string) =>
       `Trop de messages ont été envoyés depuis cette connexion. Réessayez plus tard ou écrivez-nous directement à ${email}.`,
     fieldErrors: {
       civility: "Sélectionnez une civilité valide.",
@@ -148,13 +73,15 @@ const fr: ContactCopy = {
     people: "Peuple",
     country: "Pays",
     family: "Famille linguistique",
-  },
+  } satisfies Record<DidYouKnowEntityKind, string>,
   tierLabels: {
     official: "Source officielle",
     referenced: "Source référencée",
     unverified: "Source non vérifiée",
-  },
+  } satisfies Record<DidYouKnowTier, string>,
 };
 
+type ContactCopy = typeof fr;
+
 // @req REQ-145
-export const contactCopy: Record<Language, ContactCopy> = { en, fr };
+export const contactCopy: Record<Language, ContactCopy> = { fr };

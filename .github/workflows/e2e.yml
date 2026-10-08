@@ -9,8 +9,7 @@ on:
   # recette database being reachable, which is the price of asserting against
   # the real corpus rather than an empty one.
   #
-  # `e2e` is the full matrix — every viewport project, both locales, the
-  # journeys. It stayed off the pre-merge path because it was red 27 runs out
+  # `e2e` is the full matrix — every viewport project, the journeys. It stayed off the pre-merge path because it was red 27 runs out
   # of 33 and cost ~8 minutes a pull request; it runs nightly against the
   # integration branch, on the promotion into `main`, and on demand.
   pull_request:
@@ -42,8 +41,6 @@ jobs:
       # the ephemeral-supabase step below), seeded with just the entities
       # the smoke set's four routes render.
       CI: "true"
-      # Test-only publication: production remains fail-closed to fr-only.
-      SITE_LOCALE_MODE: bilingual-fr-default
       NEXT_PUBLIC_FEATURE_QUIZ: "true"
       # `next start` runs with NODE_ENV=production, and without Upstash
       # credentials the rate limiter fails closed on a production deployment:
@@ -52,7 +49,6 @@ jobs:
       # deployment, and `VERCEL_ENV` is the one signal `isProductionDeployment`
       # reads for that.
       VERCEL_ENV: preview
-      E2E_LOCALE: fr
 
     steps:
       - name: Checkout
@@ -174,19 +170,10 @@ jobs:
   # Persona thresholds (Amina 10 s, Ngozi 30 s) are SLOs — they assume the
   # CPU + network throttle encoded in playwright.config.ts.
   e2e:
-    name: Playwright (${{ matrix.locale }})
+    name: Playwright
     if: github.event_name != 'pull_request' || github.base_ref == 'main'
     runs-on: ubuntu-latest
     timeout-minutes: 25
-
-    # One leg per published locale (REQ-141). The English leg is thinner than
-    # it looks: the specs that read UI copy skip themselves until that copy is
-    # translated (see e2e/support/locale.ts), so it exercises the route, CSP
-    # and axe specs and reports the rest as skipped, not as covered.
-    strategy:
-      fail-fast: false
-      matrix:
-        locale: [fr, en]
 
     env:
       # NEVER production credentials.
@@ -206,8 +193,6 @@ jobs:
       SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.TEST_SUPABASE_SERVICE_ROLE_KEY || secrets.RECETTE_SUPABASE_SERVICE_ROLE_KEY }}
       NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.TEST_SUPABASE_ANON_KEY || secrets.RECETTE_SUPABASE_ANON_KEY }}
       CI: "true"
-      # Test-only publication: production remains fail-closed to fr-only.
-      SITE_LOCALE_MODE: bilingual-fr-default
       # Epic 10, Story 10.11 (ETNI-500) — the quiz route 404s
       # (isQuizFeatureEnabled) unless this is set, which would silently skip
       # the quiz e2e specs.
@@ -215,7 +200,6 @@ jobs:
       # A test deployment, not production — see the smoke job above for the
       # /api/v2 500s this prevents.
       VERCEL_ENV: preview
-      E2E_LOCALE: ${{ matrix.locale }}
 
     steps:
       - name: Checkout
@@ -299,6 +283,6 @@ jobs:
         if: always() && steps.secrets.outputs.present == 'true'
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: playwright-report-${{ matrix.locale }}
+          name: playwright-report
           path: playwright-report/
           retention-days: 7

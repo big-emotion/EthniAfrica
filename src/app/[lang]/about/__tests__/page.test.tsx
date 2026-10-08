@@ -42,14 +42,4 @@ describe("AboutPage server boundary (REQ-091)", () => {
       "fr"
     );
   });
-
-  // @req REQ-140
-  it("renders the content in the locale of the route", async () => {
-    render(await AboutPage({ params: Promise.resolve({ lang: "en" }) }));
-
-    expect(screen.getByTestId("about-page-content")).toHaveAttribute(
-      "data-language",
-      "en"
-    );
-  });
 });

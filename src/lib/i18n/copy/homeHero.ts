@@ -39,24 +39,11 @@ export interface HomeHeroCopy {
  * French rule.
  *
  * It lives here rather than inside the component because a French sentence a
- * reader sees belongs in a dictionary — the rule `check:copy-literals` holds,
- * and the rule that gives this key its English counterpart for free.
+ * reader sees belongs in a dictionary — the rule `check:copy-literals` holds.
  */
 // @req REQ-044
 // @req REQ-145
 export const homeHeroCopy: Record<Language, HomeHeroCopy> = {
-  en: {
-    question: "Where does this name come from?",
-    searchPlaceholder: "E.g. Keïta, Lingala, Fulbe, Benin",
-    description:
-      "Your family name, or that of a people, a language or a country: where it comes from, what it is called elsewhere, and where it lives today.",
-    searchLabel: "Which name are you looking for?",
-    seedsIntro: "Try",
-    seeds: ["Keïta", "Lingala", "Fulbe", "Benin"],
-    refreshSeeds: "More examples",
-    searchUnavailable: "Search is temporarily unavailable.",
-    searchRetry: "Try again",
-  },
   fr: {
     searchPlaceholder: "Ex. : Keïta, Lingala, Fulbe, Bénin",
     description:

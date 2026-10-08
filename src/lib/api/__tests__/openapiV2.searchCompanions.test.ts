@@ -295,7 +295,7 @@ describe("OpenAPI v2 search companions contract", () => {
     expect(subjects?.example).toBeDefined();
     expect(lang).toMatchObject({
       required: false,
-      schema: { type: "string", enum: ["en", "fr"], default: "fr" },
+      schema: { type: "string", enum: ["fr"], default: "fr" },
     });
     expect(
       operation.responses?.["200"]?.content?.["application/json"]?.schema

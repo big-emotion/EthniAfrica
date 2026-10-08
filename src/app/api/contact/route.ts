@@ -81,16 +81,7 @@ export async function POST(request: NextRequest) {
 
   const parsed = contactMessageSchema.safeParse(body);
   if (!parsed.success) {
-    const { fieldErrors: schemaFieldErrors } = parsed.error.flatten();
-    const fieldErrors =
-      language === "fr"
-        ? schemaFieldErrors
-        : Object.fromEntries(
-            Object.keys(schemaFieldErrors).map((field) => [
-              field,
-              [copy.fieldErrors[field as keyof typeof copy.fieldErrors]],
-            ])
-          );
+    const { fieldErrors } = parsed.error.flatten();
     return jsonWithCors(
       {
         error: "VALIDATION_ERROR",

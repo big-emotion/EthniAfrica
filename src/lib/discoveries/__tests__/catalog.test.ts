@@ -24,9 +24,9 @@ function item(
     id,
     kind: "anecdote",
     status: "published",
-    slug: { fr: `${id}-fr`, en: `${id}-en` },
-    title: { fr: `Titre ${id}`, en: `Title ${id}` },
-    description: { fr: `Résumé ${id}`, en: `Summary ${id}` },
+    slug: { fr: `${id}-fr` },
+    title: { fr: `Titre ${id}` },
+    description: { fr: `Résumé ${id}` },
     source: {
       title: "Source",
       url: "https://example.org/source",
@@ -39,28 +39,22 @@ function item(
 
 describe("Découvertes publication contracts", () => {
   // @req REQ-158
-  it("keeps immutable identities and localized exact paths separate", () => {
+  it("keeps immutable identities and exact paths separate", () => {
     const publication = item("anecdote:burkina-faso", {
-      slug: {
-        fr: "burkina-faso-trois-langues",
-        en: "burkina-faso-three-languages",
-      },
+      slug: { fr: "burkina-faso-trois-langues" },
     });
     expect(discoveryPath("fr", publication)).toBe(
       "/fr/decouvertes/burkina-faso-trois-langues"
     );
-    expect(discoveryPath("en", publication)).toBe(
-      "/en/discoveries/burkina-faso-three-languages"
-    );
   });
 
   // @req REQ-157
-  it("excludes draft, unpaired, unsourced and uncleared items independently", () => {
+  it("excludes draft, untitled, unsourced and uncleared items independently", () => {
     const ready = item("ready");
     const records = [
       ready,
       item("draft", { status: "draft" }),
-      item("unpaired", { title: { fr: "Titre", en: "" } }),
+      item("untitled", { title: { fr: "" } }),
       item("unsourced", { source: undefined }),
       item("no-original", {
         image: { ...photo, filePage: "" },
@@ -87,6 +81,13 @@ describe("Découvertes publication contracts", () => {
     ]);
   });
 
+  // @req REQ-158
+  it("resolves only a known slug and never substitutes an unknown item", () => {
+    const records = [item("one"), item("two")];
+    expect(resolvePublication(records, "fr", "one-fr")?.id).toBe("one");
+    expect(resolvePublication(records, "fr", "missing")).toBeNull();
+  });
+
   // @req REQ-157
   it("refuses a proverb whose photo has no cleared licence or no file page", () => {
     const records = [
@@ -105,14 +106,6 @@ describe("Découvertes publication contracts", () => {
     ]);
   });
 
-  // @req REQ-158
-  it("resolves only the requested locale and never substitutes an unknown item", () => {
-    const records = [item("one"), item("two")];
-    expect(resolvePublication(records, "en", "one-en")?.id).toBe("one");
-    expect(resolvePublication(records, "fr", "one-en")).toBeNull();
-    expect(resolvePublication(records, "fr", "missing")).toBeNull();
-  });
-
   // @req REQ-156
   it("draws every eligible ID once and pins a direct-entry item first", () => {
     const records = [item("a"), item("b"), item("c")];
@@ -126,12 +119,12 @@ describe("Découvertes publication contracts", () => {
     const records = [
       item("country", {
         detail: {
-          body: { fr: ["Texte"], en: ["Text"] },
+          body: { fr: ["Texte"] },
           entities: [
             {
               kind: "country",
               id: "NGA",
-              label: { fr: "Nigeria", en: "Nigeria" },
+              label: { fr: "Nigeria" },
             },
           ],
           sources: [],
@@ -139,17 +132,17 @@ describe("Découvertes publication contracts", () => {
       }),
       item("family", {
         detail: {
-          body: { fr: ["Texte"], en: ["Text"] },
+          body: { fr: ["Texte"] },
           entities: [
             {
               kind: "family",
               id: "FLG_MANDE",
-              label: { fr: "Mandé", en: "Mande" },
+              label: { fr: "Mandé" },
             },
             {
               kind: "people",
               id: "PPL_BAMBARA",
-              label: { fr: "Bambara", en: "Bambara" },
+              label: { fr: "Bambara" },
             },
           ],
           sources: [],
@@ -157,12 +150,12 @@ describe("Découvertes publication contracts", () => {
       }),
       item("people", {
         detail: {
-          body: { fr: ["Texte"], en: ["Text"] },
+          body: { fr: ["Texte"] },
           entities: [
             {
               kind: "people",
               id: "PPL_HAUSA",
-              label: { fr: "Haoussa", en: "Hausa" },
+              label: { fr: "Haoussa" },
             },
           ],
           sources: [],
@@ -170,12 +163,12 @@ describe("Découvertes publication contracts", () => {
       }),
       item("language", {
         detail: {
-          body: { fr: ["Texte"], en: ["Text"] },
+          body: { fr: ["Texte"] },
           entities: [
             {
               kind: "language",
               id: "lin",
-              label: { fr: "Lingala", en: "Lingala" },
+              label: { fr: "Lingala" },
             },
           ],
           sources: [],
@@ -183,12 +176,12 @@ describe("Découvertes publication contracts", () => {
       }),
       item("patronyme", {
         detail: {
-          body: { fr: ["Texte"], en: ["Text"] },
+          body: { fr: ["Texte"] },
           entities: [
             {
               kind: "patronyme",
               id: "PAT_TRAORE",
-              label: { fr: "Traoré", en: "Traore" },
+              label: { fr: "Traoré" },
             },
           ],
           sources: [],
@@ -197,12 +190,12 @@ describe("Découvertes publication contracts", () => {
       item("draft-country", {
         status: "draft",
         detail: {
-          body: { fr: ["Texte"], en: ["Text"] },
+          body: { fr: ["Texte"] },
           entities: [
             {
               kind: "country",
               id: "NGA",
-              label: { fr: "Nigeria", en: "Nigeria" },
+              label: { fr: "Nigeria" },
             },
           ],
           sources: [],
@@ -253,9 +246,9 @@ describe("Découvertes publication contracts", () => {
   it("rejects ambiguous or unsafe publication slugs before exposing a deck", () => {
     const entries = [
       item("safe"),
-      item("duplicate", { slug: { fr: "safe-fr", en: "duplicate-en" } }),
-      item("nested", { slug: { fr: "nested/path", en: "nested-en" } }),
-      item("reserved", { slug: { fr: "..", en: "reserved-en" } }),
+      item("duplicate", { slug: { fr: "safe-fr" } }),
+      item("nested", { slug: { fr: "nested/path" } }),
+      item("reserved", { slug: { fr: ".." } }),
     ];
     expect(eligiblePublications(entries).map((entry) => entry.id)).toEqual([
       "safe",
@@ -292,7 +285,7 @@ describe("Découvertes carousels", () => {
   it("publishes a carousel on its own frames, without the file page an outside photo owes", () => {
     const entry = item("carousel:exemple", {
       kind: "carousel",
-      slug: { fr: "serie-exemple-fr", en: "serie-exemple-en" },
+      slug: { fr: "serie-exemple-fr" },
       image: cover,
       carousel: { frames },
     });
@@ -308,7 +301,7 @@ describe("Découvertes carousels", () => {
   it("withholds a carousel of one frame", () => {
     const entry = item("carousel:seule", {
       kind: "carousel",
-      slug: { fr: "serie-seule-fr", en: "serie-seule-en" },
+      slug: { fr: "serie-seule-fr" },
       image: cover,
       carousel: { frames: [frames[0]] },
     });
@@ -317,13 +310,13 @@ describe("Découvertes carousels", () => {
   });
 
   // @req REQ-157
-  it("withholds a carousel whose frames are not described in both languages", () => {
+  it("withholds a carousel whose frames are not all described", () => {
     const entry = item("carousel:muet", {
       kind: "carousel",
-      slug: { fr: "serie-muet-fr", en: "serie-muet-en" },
+      slug: { fr: "serie-muet-fr" },
       image: cover,
       carousel: {
-        frames: [frames[0], { ...frames[1], alt: { fr: "Deuxième", en: "" } }],
+        frames: [frames[0], { ...frames[1], alt: { fr: "" } }],
       },
     });
 
@@ -334,7 +327,7 @@ describe("Découvertes carousels", () => {
   it("withholds a carousel that declares the kind and carries no frames at all", () => {
     const entry = item("carousel:vide", {
       kind: "carousel",
-      slug: { fr: "serie-vide-fr", en: "serie-vide-en" },
+      slug: { fr: "serie-vide-fr" },
       image: cover,
     });
 

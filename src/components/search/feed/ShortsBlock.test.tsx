@@ -256,7 +256,7 @@ describe("ShortsBlock", () => {
   // the shelf title must never claim a duration bound a real video can
   // violate. Each item's own caption already states its real duration.
   // @req REQ-180
-  it.each(["fr", "en"] as const)(
+  it.each(["fr"] as const)(
     "never claims a duration bound in the default shelf heading (%s)",
     (language) => {
       render(

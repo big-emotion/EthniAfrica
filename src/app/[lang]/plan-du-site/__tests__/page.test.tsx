@@ -1,9 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
-import SitemapPage, { generateMetadata } from "../page";
-import { CANONICAL_DOMAIN } from "@/lib/brand";
-import { getStaticPageRoute } from "@/lib/routing";
+import SitemapPage from "../page";
 import { getTranslation } from "@/lib/translations";
 
 vi.mock("@/components/layout/PageLayout", () => ({
@@ -33,32 +31,5 @@ describe("the site plan", () => {
         name: getTranslation("fr").sitemapPage.title,
       })
     ).toBeInTheDocument();
-  });
-
-  // @req REQ-140
-  it("declares its canonical in the locale the route was served in", async () => {
-    const metadata = await generateMetadata({ params: routeParams("en") });
-
-    expect(metadata.alternates?.canonical).toBe(
-      `https://${CANONICAL_DOMAIN}${getStaticPageRoute("en", "sitemap")}`
-    );
-  });
-
-  // @req REQ-140
-  it("hands the shell the route's locale", async () => {
-    render(await SitemapPage({ params: routeParams("en") }));
-
-    expect(screen.getByTestId("page-layout")).toHaveAttribute(
-      "data-language",
-      "en"
-    );
-  });
-
-  // @req REQ-145
-  it("labels each English section in English", async () => {
-    render(await SitemapPage({ params: routeParams("en") }));
-
-    expect(screen.getByText("01 · Section")).toBeInTheDocument();
-    expect(screen.queryByText(/Rubrique/)).not.toBeInTheDocument();
   });
 });

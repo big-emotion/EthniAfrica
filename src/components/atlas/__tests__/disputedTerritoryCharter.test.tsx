@@ -145,21 +145,10 @@ describe("atlas charter §1 — the reason is stated once, next to the mark", ()
   });
 
   // @req REQ-116
-  it("names both institutions in English, without reconciling them", () => {
-    const { body } = countryCopy.en.atlas.disputedStatus;
-    expect(body).toContain("United Nations");
-    expect(body).toContain("African Union");
-    expect(body).toContain("1963");
-    expect(body).toContain("1976");
-  });
-
-  // @req REQ-116
   it("explains the empty fill, so a reader does not read it as a rendering fault", () => {
-    for (const locale of ["fr", "en"] as const) {
-      expect(
-        countryCopy[locale].atlas.disputedStatus.encoding.length
-      ).toBeGreaterThan(0);
-    }
+    expect(countryCopy.fr.atlas.disputedStatus.encoding.length).toBeGreaterThan(
+      0
+    );
   });
 });
 

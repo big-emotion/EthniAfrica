@@ -10,10 +10,6 @@ import {
   searchShortDiscoveryPublication,
   searchShortPosterAlt,
 } from "@/lib/search/companionCatalogs";
-import { localizeDidYouKnowFact } from "@/lib/home/didYouKnowLocalization";
-import { localizeDidYouKnowIllustration } from "@/lib/home/didYouKnowLocalization";
-import { localizeProverb } from "@/lib/proverbs/proverbs.en";
-import type { Language } from "@/types/shared";
 
 function source(source: {
   title: string;
@@ -27,13 +23,6 @@ function source(source: {
     tier: source.tier,
     ...(source.notes ? { notes: source.notes } : {}),
   };
-}
-
-function contentLanguage(
-  requested: Language,
-  translationKind: unknown
-): Language {
-  return requested === "en" && translationKind ? "en" : "fr";
 }
 
 // @req REQ-180
@@ -70,15 +59,10 @@ export async function getSearchCompanionsHandler(
     anecdotes: {
       count: selections.anecdotes.count,
       items: selections.anecdotes.items.map(({ item, match }) => {
-        const fact = localizeDidYouKnowFact(item.fact, query.lang);
-        const illustration = localizeDidYouKnowIllustration(
-          item.id,
-          item.illustration,
-          query.lang
-        )!;
+        const { fact, illustration } = item;
         return {
           id: item.id,
-          contentLanguage: contentLanguage(query.lang, fact.translationKind),
+          contentLanguage: "fr",
           headline: fact.headline,
           body: fact.body,
           tier: fact.tier,
@@ -91,10 +75,10 @@ export async function getSearchCompanionsHandler(
     proverbs: {
       count: selections.proverbs.count,
       items: selections.proverbs.items.map(({ item, match }) => {
-        const proverb = localizeProverb(item.proverb, query.lang);
+        const { proverb } = item;
         return {
           id: item.id,
-          contentLanguage: contentLanguage(query.lang, proverb.translationKind),
+          contentLanguage: "fr",
           text: proverb.text,
           meaning: proverb.meaning,
           original: proverb.original ?? null,

@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
 import type { DidYouKnowIllustration } from "@/lib/home/didYouKnowIllustrations";
 import type { LocalizedDidYouKnowFact } from "@/lib/home/didYouKnowLocalization";
 import {
@@ -131,14 +130,6 @@ export function AnecdoteCard({
 
         <div className="anecdote-text">
           <h2 className="anecdote-headline">{fact.headline}</h2>
-
-          <TranslationProvenanceMarker
-            translation={
-              fact.translationKind
-                ? { kind: fact.translationKind, stale: false }
-                : null
-            }
-          />
 
           {fact.body.map((paragraph, index) => (
             <p

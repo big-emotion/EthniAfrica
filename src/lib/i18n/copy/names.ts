@@ -5,61 +5,7 @@ import type { Language } from "@/types/shared";
  * The ethnonym index — how a *people* is called. Distinct from
  * `patronymes.ts`, which covers the naming system a *person* is named under.
  */
-const en = {
-  pageTitle: "Ethnonyms",
-  pageSubtitle:
-    "The names under which each people of Africa is designated: those it gives itself, and those it has been given.",
-  purpose:
-    "A people rarely bears a single name. It has one it uses itself, others its neighbours give it, others still that a colonial administration fixed in writing — and some are pejorative. This page lists them all, so that a name heard somewhere leads to the people it designates, without deciding which one is right.",
-  genealogyNote:
-    "This page documents the names of peoples (ethnonyms) — endonyms, exonyms and imposed names. Looking for the origin of a family name? That is the Name dimension, which documents the naming systems of persons.",
-  searchLabel: "Search a name",
-  searchPlaceholder: "Search a name (endonym, exonym, historical spelling...)",
-  searchSubmit: "Search",
-  filtersLabel: "Filter by name type",
-  filtersLegend:
-    "An endonym is the name a people gives itself; an exonym, the one others give it; a historical spelling, a form fixed in writing at a given time; an imposed name, a designation assigned from outside.",
-  filters: {
-    all: "all",
-    endonym: NAME_TYPE_LABELS.en.endonym,
-    exonym: NAME_TYPE_LABELS.en.exonym,
-    historical_spelling: NAME_TYPE_LABELS.en.historical_spelling,
-    surname: NAME_TYPE_LABELS.en.surname,
-    imposed: "imposed names",
-  },
-  activeFiltersLabel: "Active filters",
-  clearFilter: "Remove the filter",
-  resultCountSingular: "result",
-  resultCountPlural: "results",
-  range: {
-    none: "No form",
-    of: "of",
-    formsSingular: "form",
-    formsPlural: "forms",
-  },
-  alsoWritten: "Also written:",
-  bornBy: "Borne by",
-  bornByOne: "Borne by one people",
-  peoplesPlural: "peoples",
-  problematicLabel: "Why this name is problematic:",
-  pagination: {
-    label: "Nomenclature pagination",
-    previous: "Previous",
-    next: "Next",
-    page: "Page",
-  },
-  emptyState: {
-    spellingGuidance:
-      "Check the spelling: the same name can vary with its historical spelling or its language of origin.",
-    browseByTypeLabel: "Browse by name type:",
-    clearFilters: "Remove the filters",
-    reportMissing: "Report missing data",
-  },
-};
-
-type NamesCopy = typeof en;
-
-const fr: NamesCopy = {
+const fr = {
   pageTitle: "Appellations",
   // The deck says what the page is; `purpose` below says why it exists.
   // They used to be one sentence printed twice — once in the head band and
@@ -136,5 +82,7 @@ const fr: NamesCopy = {
   },
 };
 
+type NamesCopy = typeof fr;
+
 // @req REQ-145
-export const namesCopy: Record<Language, NamesCopy> = { en, fr };
+export const namesCopy: Record<Language, NamesCopy> = { fr };

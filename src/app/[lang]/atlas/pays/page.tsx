@@ -16,7 +16,7 @@ import {
   getLocalizedRoute,
   resolveCountryDeepLink,
 } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import { getTranslation } from "@/lib/translations";
 import { facetDirectoriesCopy } from "@/lib/i18n/copy/facetDirectories";
 import type { CountryId } from "@/types/afrik";
@@ -67,12 +67,7 @@ export async function generateMetadata({
   const title = getTranslation(lang as Language).countries;
   return {
     title,
-    ...surfaceHead(
-      lang as Language,
-      "countries",
-      (locale) => getLocalizedRoute(locale, "countries"),
-      { title }
-    ),
+    ...pageHead(getLocalizedRoute("fr", "countries"), { title }),
   };
 }
 

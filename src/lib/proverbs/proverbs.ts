@@ -2946,7 +2946,7 @@ const KIND_ORDER: Record<DidYouKnowEntityKind, number> = {
   family: 2,
 };
 
-// Sorted in the reader's locale: the English bank's labels are English words.
+// Sorted in the reader's locale, so accented labels collate where a reader expects.
 // @req REQ-113
 export function proverbEntities(
   bank: readonly Proverb[] = PROVERBS,

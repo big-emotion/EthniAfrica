@@ -44,13 +44,8 @@
  *       families — a trigram similarity scan (migration 069) below the main
  *       search's own fuzzy floor, so the reader sees what the engine almost
  *       understood instead of a bare empty result; `leads` is always empty
- *       when `total` is greater than 0. With `lang=en` (migration 084,
- *       REQ-141) countries, language families and languages also match on
- *       their English name — exact, then prefix, then substring, folded the
- *       same way — and rows carry `nameEn` / `languageFamilyNameEn` beside
- *       the French name; a people's name is invariant and ranks the same in
- *       both locales. Without `lang` the search is served in French, exactly
- *       as before. Rate-limited per AR11 (IP: 60 RPM, public key: 600 RPM,
+ *       when `total` is greater than 0. The search is served in French.
+ *       Rate-limited per AR11 (IP: 60 RPM, public key: 600 RPM,
  *       partner key: 6 000 RPM).
  *     tags: [API v2 - Search]
  *     security:
@@ -86,15 +81,13 @@
  *         required: false
  *         schema:
  *           type: string
- *           enum: [en, fr]
+ *           enum: [fr]
  *         description: >
- *           Locale the search is served in (ETNI-1857, REQ-141). With `en`,
- *           countries, language families and languages also match on their
- *           English name and every result carries it beside the French one;
- *           the cross-kind tie-break collates in English. Absent means
- *           French, the surface's behaviour before it had a second locale.
- *           Any other value is rejected with 400 rather than defaulted.
- *         example: "en"
+ *           Locale the search is served in. French is the only one published:
+ *           absent or `fr` serves French, and any other value — `en` included,
+ *           since the English site was retired — is rejected with 400 rather
+ *           than defaulted.
+ *         example: "fr"
  *       - in: query
  *         name: familyId
  *         schema:
@@ -240,15 +233,14 @@ function parseParams(
     lens = lensRaw;
   }
 
-  // lang — optional, one of the two published locales. An unknown value is
-  // refused rather than read as French: a caller that says `de` is asking
-  // for something the atlas does not publish, and silently answering in
-  // another language would hide that from it.
+  // lang — optional, French only. Any other value is refused rather than
+  // read as French: a caller that says `en` is asking for something the site
+  // no longer publishes, and silently answering in French would hide that.
   const langRaw = searchParams.get("lang");
   let lang: FtsSearchParams["lang"];
   if (langRaw !== null) {
     if (!isTranslationLocale(langRaw)) {
-      return { error: "lang must be en or fr", field: "lang" };
+      return { error: "lang must be fr", field: "lang" };
     }
     lang = langRaw;
   }

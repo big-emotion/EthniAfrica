@@ -7,10 +7,10 @@ import { FicheSequence } from "@/components/fiche/FicheSequence";
 
 // The toggle lives in the hero plate and the band in the sequence: two
 // subtrees with no shared client ancestor, which is what these tests render.
-function renderSplit(language: "fr" | "en" = "fr") {
+function renderSplit() {
   return render(
     <>
-      <FicheMapToggle language={language} />
+      <FicheMapToggle language="fr" />
       <FicheMapBand>
         <div data-testid="map-content" />
       </FicheMapBand>
@@ -44,15 +44,6 @@ describe("FicheMapToggle and FicheMapBand", () => {
 
     fireEvent.click(open);
     expect(screen.queryByTestId("map-content")).toBeNull();
-  });
-
-  // @req REQ-112
-  it("speaks English when asked to", () => {
-    renderSplit("en");
-    fireEvent.click(screen.getByRole("button", { name: "Show the map" }));
-    expect(
-      screen.getByRole("button", { name: "Hide the map" })
-    ).toBeInTheDocument();
   });
 
   // @req REQ-112

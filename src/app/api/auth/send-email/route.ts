@@ -3,7 +3,6 @@ import { createHmac, timingSafeEqual } from "node:crypto";
 import { logger } from "@/lib/api/logger";
 import { graphConfigured, sendViaGraph } from "@/lib/email/graph";
 import { buildSignInLinkEmail } from "@/lib/email/signInLink";
-import type { Language } from "@/types/shared";
 
 /**
  * POST /api/auth/send-email — Supabase Auth's send-email hook.
@@ -76,17 +75,6 @@ function isSignedByAuth(request: Request, body: string): boolean {
   });
 }
 
-// The hook carries no locale, but the callback it returns to names the
-// console the sign-in was asked from.
-function consoleLanguage(redirectTo: string): Language {
-  try {
-    const destination = new URL(redirectTo).searchParams.get("redirect") ?? "";
-    return destination.startsWith("/en/") ? "en" : "fr";
-  } catch {
-    return "fr";
-  }
-}
-
 // The link Auth would have written: its own verify endpoint, which redeems the
 // token and sends the browser on to `redirect_to` with the PKCE code.
 function verificationLink(
@@ -141,7 +129,6 @@ export async function POST(request: Request) {
   }
 
   const content = buildSignInLinkEmail(
-    consoleLanguage(redirect_to),
     verificationLink(token_hash, email_action_type, redirect_to)
   );
   const sent = await sendViaGraph({

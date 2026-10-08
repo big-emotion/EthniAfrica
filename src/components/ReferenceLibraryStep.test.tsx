@@ -63,20 +63,6 @@ describe("ReferenceLibraryStep", () => {
     ).not.toBeInTheDocument();
   });
 
-  // @req REQ-145
-  it("says the same in English", async () => {
-    mockHasAccess.mockResolvedValue(false);
-    renderStep("en");
-
-    expect(
-      await screen.findByRole("heading", { name: "Reference library" })
-    ).toBeInTheDocument();
-    expect(screen.getByText(/reserved for moderators/)).toBeInTheDocument();
-    expect(
-      screen.queryByText("Bibliothèque de références")
-    ).not.toBeInTheDocument();
-  });
-
   // @req REQ-042
   it("shows neither the tool nor the notice before the answer arrives", () => {
     mockHasAccess.mockReturnValue(new Promise(() => {}));

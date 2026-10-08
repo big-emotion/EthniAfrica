@@ -124,7 +124,7 @@ function isAbortError(error: unknown): boolean {
 
 // @req REQ-002
 export function RecherchePageContent() {
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
   const router = useRouter();
   const searchParams = useSearchParams();
   const inputRef = useRef<HTMLInputElement>(null);
@@ -482,8 +482,8 @@ export function RecherchePageContent() {
   const relationLabel = !relation
     ? ""
     : relation.kind === "country"
-      ? `${language === "en" ? "Peoples in" : "Peuples du pays"} ${getCountryCommonName(language, relation.id, relation.id)}`
-      : `${language === "en" ? "Peoples in the family" : "Peuples de la famille"} ${
+      ? `${"Peuples du pays"} ${getCountryCommonName(language, relation.id, relation.id)}`
+      : `${"Peuples de la famille"} ${
           getLocalizedSearchResultFamilyName(
             results.find((r) => r.languageFamilyId === relation.id) ?? {
               type: "languageFamily",
@@ -494,14 +494,9 @@ export function RecherchePageContent() {
           ) ?? relation.id
         }`;
 
-  const resultCountLabel =
-    language === "en"
-      ? `${formatNumber(language, sortedResults.length)} result${
-          sortedResults.length === 1 ? "" : "s"
-        }${committedQuery ? ` for “${committedQuery}”` : ""}`
-      : `${formatNumber(language, sortedResults.length)} résultat${
-          sortedResults.length > 1 ? "s" : ""
-        }${committedQuery ? ` pour « ${committedQuery} »` : ""}`;
+  const resultCountLabel = `${formatNumber(language, sortedResults.length)} résultat${
+    sortedResults.length > 1 ? "s" : ""
+  }${committedQuery ? ` pour « ${committedQuery} »` : ""}`;
 
   // Only once the fetch has resolved does the page know what it is answering
   // with — showing a head ahead of that paints a stale one for a frame.
@@ -536,9 +531,7 @@ export function RecherchePageContent() {
     <ul
       data-testid="search-results-list"
       className="grid grid-cols-1 gap-afh-lg min-[760px]:grid-cols-2"
-      aria-label={
-        language === "en" ? "Search results" : "Résultats de recherche"
-      }
+      aria-label={"Résultats de recherche"}
     >
       {groupPeopleResults(listResults).map((entry, i) =>
         entry.type === "peopleGroup" ? (
@@ -573,7 +566,7 @@ export function RecherchePageContent() {
           onChange={setActiveLens}
         />
       )}
-      {showNoNameFicheNote && <NoNameFicheNote language={language} />}
+      {showNoNameFicheNote && <NoNameFicheNote />}
     </>
   );
 
@@ -587,9 +580,7 @@ export function RecherchePageContent() {
           <form
             onSubmit={handleSubmit}
             role="search"
-            aria-label={
-              language === "en" ? "Search form" : "Formulaire de recherche"
-            }
+            aria-label={"Formulaire de recherche"}
             className="relative mx-auto w-full max-w-[640px]"
           >
             <Search
@@ -612,7 +603,7 @@ export function RecherchePageContent() {
             <button
               type="button"
               onClick={handleClear}
-              aria-label={language === "en" ? "Clear" : "Effacer"}
+              aria-label={"Effacer"}
               className={cn(
                 "absolute right-1 top-1/2 inline-flex min-h-11 min-w-11 -translate-y-1/2 items-center justify-center rounded-afh-full text-afh-text-soft",
                 CHARTER_FOCUS_RING
@@ -621,17 +612,13 @@ export function RecherchePageContent() {
               <X className="h-4 w-4" aria-hidden="true" />
             </button>
             <button type="submit" className="sr-only">
-              {language === "en" ? "Search" : "Rechercher"}
+              {"Rechercher"}
             </button>
             {suggest.isOpen && (
               <ul
                 id={suggest.listboxId}
                 role="listbox"
-                aria-label={
-                  language === "en"
-                    ? "Search suggestions"
-                    : "Suggestions de recherche"
-                }
+                aria-label={"Suggestions de recherche"}
                 className="absolute left-0 top-full z-50 mt-afh-xs w-full overflow-hidden rounded-afh-lg border border-afh-border bg-afh-surface shadow-afh-2"
               >
                 {suggest.options.map((hit, index) => (
@@ -656,9 +643,7 @@ export function RecherchePageContent() {
               data-testid="filter-chip-row"
               role="group"
               className="mt-afh-md flex flex-wrap items-center gap-afh-md"
-              aria-label={
-                language === "en" ? "Active filters" : "Filtres actifs"
-              }
+              aria-label={"Filtres actifs"}
             >
               <Badge
                 variant="secondary"
@@ -667,7 +652,7 @@ export function RecherchePageContent() {
                 {relationLabel}
                 <button
                   type="button"
-                  aria-label={`${language === "en" ? "Remove filter" : "Supprimer le filtre"} ${relationLabel}`}
+                  aria-label={`${"Supprimer le filtre"} ${relationLabel}`}
                   onClick={() => setRelation(null)}
                   className={cn("ml-afh-xs rounded-full", CHARTER_FOCUS_RING)}
                 >
@@ -680,7 +665,7 @@ export function RecherchePageContent() {
                   onClick={() => setRelation(null)}
                   className="ml-auto text-afh-small text-afh-fg-muted underline underline-offset-2 hover:text-afh-text"
                 >
-                  {language === "en" ? "Clear all" : "Tout effacer"}
+                  {"Tout effacer"}
                 </button>
               )}
             </div>
@@ -765,10 +750,7 @@ export function RecherchePageContent() {
   return (
     <PageLayout
       language={language}
-      onLanguageChange={setLanguage}
-      title={
-        showQueryHead ? undefined : language === "en" ? "Search" : "Recherche"
-      }
+      title={showQueryHead ? undefined : "Recherche"}
       subtitle={showQueryHead ? undefined : getSearchLabel(language)}
       heroHead={heroHead}
     >
@@ -782,9 +764,7 @@ export function RecherchePageContent() {
         <form
           onSubmit={handleSubmit}
           role="search"
-          aria-label={
-            language === "en" ? "Search form" : "Formulaire de recherche"
-          }
+          aria-label={"Formulaire de recherche"}
           className="relative flex flex-col md:flex-row gap-afh-md"
         >
           <div className="relative flex-1">
@@ -810,7 +790,7 @@ export function RecherchePageContent() {
             />
           </div>
           <Button type="submit" className="h-12 px-6 shrink-0">
-            {language === "en" ? "Search" : "Rechercher"}
+            {"Rechercher"}
           </Button>
           {/* Hung from the form rather than the input: below md the form
               stacks, and a panel under the input alone covered the submit
@@ -819,11 +799,7 @@ export function RecherchePageContent() {
             <ul
               id={suggest.listboxId}
               role="listbox"
-              aria-label={
-                language === "en"
-                  ? "Search suggestions"
-                  : "Suggestions de recherche"
-              }
+              aria-label={"Suggestions de recherche"}
               className="absolute left-0 top-full z-50 w-full bg-afh-surface border border-afh-border rounded-afh-lg shadow-afh-2 mt-afh-xs overflow-hidden"
             >
               {suggest.options.map((hit, index) => (
@@ -848,7 +824,7 @@ export function RecherchePageContent() {
           data-testid="filter-chip-row"
           role="group"
           className="flex flex-wrap items-center gap-afh-md min-h-[2rem]"
-          aria-label={language === "en" ? "Active filters" : "Filtres actifs"}
+          aria-label={"Filtres actifs"}
         >
           {relation && (
             <Badge
@@ -858,7 +834,7 @@ export function RecherchePageContent() {
               {relationLabel}
               <button
                 type="button"
-                aria-label={`${language === "en" ? "Remove filter" : "Supprimer le filtre"} ${relationLabel}`}
+                aria-label={`${"Supprimer le filtre"} ${relationLabel}`}
                 onClick={() => setRelation(null)}
                 className={cn("ml-afh-xs rounded-full", CHARTER_FOCUS_RING)}
               >
@@ -872,7 +848,7 @@ export function RecherchePageContent() {
               onClick={() => setRelation(null)}
               className="text-afh-small text-afh-fg-muted hover:text-afh-text underline underline-offset-2 ml-auto"
             >
-              {language === "en" ? "Clear all" : "Tout effacer"}
+              {"Tout effacer"}
             </button>
           )}
         </div>
@@ -886,9 +862,7 @@ export function RecherchePageContent() {
           >
             <Loader2
               className="h-6 w-6 animate-spin text-afh-text-muted"
-              aria-label={
-                language === "en" ? "Loading search" : "Chargement en cours"
-              }
+              aria-label={"Chargement en cours"}
             />
           </div>
         )}
@@ -913,10 +887,7 @@ export function RecherchePageContent() {
         {(status === "idle" || (status === "loaded" && results.length > 0)) && (
           <div data-testid="search-results-layout" className="space-y-afh-5xl">
             {nameSubjects.length === 1 ? (
-              <SourcedHighlightBlock
-                result={nameSubjects[0]}
-                language={language}
-              />
+              <SourcedHighlightBlock result={nameSubjects[0]} />
             ) : null}
             {refinements}
             {resultsList}

@@ -4,7 +4,7 @@ import { LegalDocument } from "@/components/layout/LegalDocument";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { getLegalPage } from "@/lib/legalPagesLocalization";
 import { getStaticPageRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
 interface DataPolicyPageProps {
@@ -20,12 +20,7 @@ export async function generateMetadata({
   const title = getLegalPage(language, "dataPolicy").title;
   return {
     title,
-    ...surfaceHead(
-      language,
-      "dataPolicy",
-      (locale) => getStaticPageRoute(locale, "dataPolicy"),
-      { title }
-    ),
+    ...pageHead(getStaticPageRoute("fr", "dataPolicy"), { title }),
   };
 }
 

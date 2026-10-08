@@ -22,40 +22,6 @@ describe("SourcesPageContent (REQ-091)", () => {
     expect(screen.getByText(/Bibliographie complète/i)).toBeInTheDocument();
   });
 
-  // @req REQ-141
-  it("renders the bibliography structure and editorial note in English", () => {
-    render(<SourcesPageContent language="en" />);
-
-    expect(
-      screen.getByRole("heading", {
-        level: 2,
-        name: "Sources by region (official African institutes)",
-      })
-    ).toBeInTheDocument();
-    expect(screen.getByText("North Africa")).toBeInTheDocument();
-    expect(screen.getByText(/Wikipedia is read first/)).toBeInTheDocument();
-    expect(screen.queryByText(/is not a source/)).not.toBeInTheDocument();
-    expect(screen.queryByText("Afrique du Nord")).not.toBeInTheDocument();
-  });
-
-  // The source annotations carry editorial claims and cannot silently use an
-  // unreviewed machine translation. Until their English review is complete,
-  // the English route must identify the French originals honestly.
-  // @req REQ-143
-  // @req REQ-145
-  it("labels the reviewed-language fallback for dossier source notes", () => {
-    const { container } = render(<SourcesPageContent language="en" />);
-
-    expect(
-      screen.getByRole("status", {
-        name: "Editorial notes for these works are awaiting English review. The French originals follow.",
-      })
-    ).toBeInTheDocument();
-    expect(
-      container.querySelector('[data-dossier-source-note][lang="fr"]')
-    ).toBeInTheDocument();
-  });
-
   // @req REQ-091
   it("keeps the source bibliography available through accessible links", () => {
     render(<SourcesPageContent />);
@@ -149,16 +115,6 @@ describe("SourcesPageContent — the editorial bibliographies", () => {
     );
     expect(note.textContent).toMatch(/récit transmis oralement/);
     expect(note.textContent).toMatch(/fiche concernée/);
-  });
-
-  // @req REQ-141
-  it("says the same in English", () => {
-    render(<SourcesPageContent language="en" />);
-
-    const note = screen.getByText(/Wikipedia is read first/);
-    expect(note.textContent).toMatch(/count of references is not proof/);
-    expect(note.textContent).toMatch(/passed on orally/);
-    expect(note.textContent).toMatch(/entry concerned/);
   });
 
   // Deriving rather than restating is what keeps the page from drifting from

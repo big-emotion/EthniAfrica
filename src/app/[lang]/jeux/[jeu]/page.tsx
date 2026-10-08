@@ -15,13 +15,8 @@ import { requestSeed } from "@/lib/games/session";
 import { getAxisHubRoute } from "@/lib/hubs/axisRoutes";
 import { ACCENT_BY_ACCESS_MODE } from "@/lib/hubs/moduleRegistry";
 import { OG_TITLE } from "@/lib/brand";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
-import { GAME_DEFINITIONS_EN } from "@/lib/games/gameRegistry.en";
-import {
-  buildScaleFactsEn,
-  buildTrueSizeClaimEn,
-} from "@/lib/games/scaleFacts.en";
 
 interface GamePageProps {
   params: Promise<{ lang: string; jeu: string }>;
@@ -43,13 +38,11 @@ interface GamePageProps {
 export async function generateMetadata({
   params,
 }: GamePageProps): Promise<Metadata> {
-  const { lang, jeu } = await params;
+  const { jeu } = await params;
   const game = getGameBySlug(jeu);
   if (!game) return {};
-  const language = lang as Language;
-  const gameWording = GAME_DEFINITIONS_EN[game.id];
-  const name = language === "en" ? gameWording.nameEn : game.nameFr;
-  const prompt = language === "en" ? gameWording.promptEn : game.promptFr;
+  const name = game.nameFr;
+  const prompt = game.promptFr;
 
   const copy = {
     title: `${name} — ${OG_TITLE}`,
@@ -57,12 +50,7 @@ export async function generateMetadata({
   };
   return {
     ...copy,
-    ...surfaceHead(
-      language,
-      "games",
-      (locale) => `${getAxisHubRoute(locale, "jeux")}/${game.slug}`,
-      copy
-    ),
+    ...pageHead(`${getAxisHubRoute("fr", "jeux")}/${game.slug}`, copy),
   };
 }
 
@@ -72,9 +60,8 @@ export default async function GamePage({ params }: GamePageProps) {
   const game = getGameBySlug(jeu);
   if (!game) notFound();
   const language = lang as Language;
-  const gameWording = GAME_DEFINITIONS_EN[game.id];
-  const gameName = language === "en" ? gameWording.nameEn : game.nameFr;
-  const gamePrompt = language === "en" ? gameWording.promptEn : game.promptFr;
+  const gameName = game.nameFr;
+  const gamePrompt = game.promptFr;
 
   // The rounds are built here, in the server component, and handed to the
   // island as props — there is no public games endpoint to fetch from.
@@ -99,12 +86,7 @@ export default async function GamePage({ params }: GamePageProps) {
   // there is no reason to spend them in the reader's browser. The whole bank
   // travels — the session states one fact every other reveal, and the score
   // card lays out all of them.
-  const englishFacts = buildScaleFactsEn();
-  const facts = pickScaleFacts(buildScaleFacts().length, seed).map((fact) => ({
-    ...fact,
-    headlineEn: englishFacts[fact.id]?.headlineEn,
-    bodyEn: englishFacts[fact.id]?.bodyEn,
-  }));
+  const facts = pickScaleFacts(buildScaleFacts().length, seed);
 
   return (
     <PageLayout
@@ -131,7 +113,7 @@ export default async function GamePage({ params }: GamePageProps) {
           black-or-nothing rather than pervenche (atlas-charter §2). */}
       <div className={ACCENT_BY_ACCESS_MODE.jeux}>
         <MercatorSurface
-          language={lang as Language}
+          language={language}
           game={game}
           rounds={envelope.data.rounds}
           facts={facts}
@@ -139,7 +121,6 @@ export default async function GamePage({ params }: GamePageProps) {
           /* Measured here rather than in the island: the sweep reads the world
              comparison outlines, which have no business in a browser bundle. */
           trueSizeClaimFr={buildTrueSizeClaim()}
-          trueSizeClaimEn={buildTrueSizeClaimEn()}
           peopleCountsByCountry={peopleCountsByCountry}
         />
       </div>

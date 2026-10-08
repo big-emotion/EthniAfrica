@@ -218,7 +218,7 @@ export function RelationsList({
                   <p
                     className="text-afh-caption text-afh-text-soft"
                     data-relation-prose
-                    lang={language === "en" ? "fr" : undefined}
+                    lang={undefined}
                   >
                     {item.period.label}
                   </p>
@@ -227,7 +227,7 @@ export function RelationsList({
                   <p
                     className="text-afh-small text-afh-text"
                     data-relation-prose
-                    lang={language === "en" ? "fr" : undefined}
+                    lang={undefined}
                   >
                     {item.description}
                   </p>

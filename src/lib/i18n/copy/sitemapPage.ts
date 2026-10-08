@@ -1,20 +1,13 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  eyebrow: "Find your way",
-  title: "Sitemap",
-  introduction:
-    "The site's sections and the paths that lead to them. The pages themselves are not listed here: they are reached through Browse or through the search. This page follows the order of our project — language family, then language, people and country — rather than the order of the menu.",
-};
-
-type SitemapPageCopy = typeof en;
-
-const fr: SitemapPageCopy = {
+const fr = {
   eyebrow: "Se repérer",
   title: "Plan du site",
   introduction:
     "Les rubriques du site et les chemins qui y mènent. Les pages elles-mêmes ne sont pas listées ici : on y arrive par Parcourir ou par la recherche. Cette page suit l'ordre de notre projet — famille linguistique, puis langue, peuple et pays — plutôt que l'ordre du menu.",
 };
 
+type SitemapPageCopy = typeof fr;
+
 // @req REQ-145
-export const sitemapPageCopy: Record<Language, SitemapPageCopy> = { en, fr };
+export const sitemapPageCopy: Record<Language, SitemapPageCopy> = { fr };

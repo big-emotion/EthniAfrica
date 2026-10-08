@@ -79,16 +79,12 @@ export const SearchModalV2 = ({
   const getNoResultsText = () => {
     const trimmed = suggest.query.trim();
     if (!trimmed) {
-      return language === "en"
-        ? "Start typing to search..."
-        : "Commencez à taper pour rechercher...";
+      return "Commencez à taper pour rechercher...";
     }
     if (suggest.query.length < 2) {
-      return language === "en"
-        ? "Type at least 2 characters..."
-        : "Tapez au moins 2 caractères...";
+      return "Tapez au moins 2 caractères...";
     }
-    return language === "en" ? "No results found" : "Aucun résultat trouvé";
+    return "Aucun résultat trouvé";
   };
 
   const hasResults = suggest.options.length > 0;
@@ -117,9 +113,7 @@ export const SearchModalV2 = ({
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent className="max-w-2xl h-[80vh] p-0 flex flex-col">
         <DialogHeader className="px-6 pt-6 pb-4 border-b border-afh-border">
-          <DialogTitle>
-            {language === "en" ? "Search" : "Recherche"}
-          </DialogTitle>
+          <DialogTitle>{"Recherche"}</DialogTitle>
         </DialogHeader>
 
         <form onSubmit={handleSubmit} className="px-6 pt-4 pb-2">
@@ -132,11 +126,7 @@ export const SearchModalV2 = ({
               type="text"
               {...suggest.comboboxProps}
               aria-label={getSearchLabel(language)}
-              placeholder={
-                language === "en"
-                  ? "Search for a people, family or country..."
-                  : "Rechercher une famille, un peuple ou un pays..."
-              }
+              placeholder={"Rechercher une famille, un peuple ou un pays..."}
               value={suggest.query}
               onChange={(e) => suggest.setQuery(e.target.value)}
               onKeyDown={suggest.handleKeyDown}
@@ -151,20 +141,14 @@ export const SearchModalV2 = ({
             <div className="flex items-center justify-center h-64">
               <Loader2
                 className="h-6 w-6 animate-spin text-afh-text-muted"
-                aria-label={
-                  language === "en" ? "Loading search" : "Chargement en cours"
-                }
+                aria-label={"Chargement en cours"}
               />
             </div>
           ) : hasResults ? (
             <ul
               id={suggest.listboxId}
               role="listbox"
-              aria-label={
-                language === "en"
-                  ? "Search suggestions"
-                  : "Suggestions de recherche"
-              }
+              aria-label={"Suggestions de recherche"}
               className="space-y-1"
               data-testid="search-suggestions-list"
             >
@@ -190,7 +174,7 @@ export const SearchModalV2 = ({
                     aria-hidden="true"
                     className="shrink-0 text-afh-caption text-afh-text-soft"
                   >
-                    {getSearchEntityLabel(result.type, language)}
+                    {getSearchEntityLabel(result.type)}
                   </span>
                 </li>
               ))}

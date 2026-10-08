@@ -28,15 +28,11 @@ const sourceAnchor = (id: string) => `source-${id}`;
  * One article, in the order the operator set for every one of them: title
  * and byline, the publication it grew from, the text that develops it, then
  * the sources and what to read next.
- *
- * The English body is used where the record carries one; otherwise the
- * French stands, since publication is French-first and the page must never
- * render a half-translated article.
  */
 // @req REQ-114
 export function ArticleView({ language, article, related }: ArticleViewProps) {
   const copy = articlesCopy[language].article;
-  const body = (language === "en" && article.en) || article.fr;
+  const body = article.fr;
   const position = new Map(
     article.sources.map((source, index) => [source.id, index + 1])
   );
@@ -44,10 +40,7 @@ export function ArticleView({ language, article, related }: ArticleViewProps) {
   const hasMedia = article.media.formats.length > 0;
 
   return (
-    <article
-      className={`${styles.article} ${ACCENT_BY_ACCESS_MODE.dossiers}`}
-      lang={body === article.fr ? "fr" : "en"}
-    >
+    <article className={`${styles.article} ${ACCENT_BY_ACCESS_MODE.dossiers}`}>
       <header className={styles.head}>
         <h1 className={styles.title}>{body.title}</h1>
         <p className={styles.byline}>

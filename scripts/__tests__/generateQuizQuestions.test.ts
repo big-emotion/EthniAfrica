@@ -26,13 +26,15 @@ const generatorSource = readFileSync(
 
 describe("generateQuizQuestions locale contract", () => {
   // @req REQ-145
-  it("accepts both locale flag forms and defaults to French", () => {
+  it("accepts both flag forms for French and refuses any other locale", () => {
     expect(parseLocaleArgument([])).toBe("fr");
-    expect(parseLocaleArgument(["--lang", "en"])).toBe("en");
+    expect(parseLocaleArgument(["--lang", "fr"])).toBe("fr");
     expect(parseLocaleArgument(["--lang=fr"])).toBe("fr");
-    expect(() => parseLocaleArgument(["--lang", "de"])).toThrow(
-      "--lang must be en or fr"
-    );
+    for (const other of ["en", "de"]) {
+      expect(() => parseLocaleArgument(["--lang", other])).toThrow(
+        "--lang must be fr"
+      );
+    }
   });
 
   // @req REQ-145

@@ -379,43 +379,20 @@ jobs:
             exit 1
           fi
 
-          # Root liveness says nothing about which language the root publishes.
-          # Probe the three boundaries without following redirects, using the same
-          # environment the application reads. A typo is safe in code but still a
-          # deployment error: silent fallback must not hide operator intent.
+          # Root liveness says nothing about where the root lands. The site
+          # publishes French alone: probe the three boundaries without following
+          # redirects — the root to the French home, French served, and a retired
+          # English address moved permanently to French.
           docker compose exec -T ethniafrica node --input-type=module <<'NODE'
-          const configured = process.env.SITE_LOCALE_MODE;
-          const allowedModes = new Set([
-            "fr-only",
-            "bilingual-fr-default",
-            "bilingual-en-default",
-          ]);
-          if (configured && !allowedModes.has(configured)) {
-            throw new Error(`invalid SITE_LOCALE_MODE: ${configured}`);
-          }
-
-          const mode = configured || "fr-only";
-          const bilingual = mode !== "fr-only";
-          const defaultPath = mode === "bilingual-en-default" ? "/en" : "/fr";
-          const rememberedEnglishPath = bilingual ? "/en" : "/fr";
           const checks = [
-            { path: "/", status: 307, location: defaultPath },
-            {
-              path: "/",
-              status: 307,
-              location: rememberedEnglishPath,
-              cookie: "ethni-locale=en",
-            },
+            { path: "/", status: 307, location: "/fr" },
             { path: "/fr", status: 200 },
-            bilingual
-              ? { path: "/en", status: 200 }
-              : { path: "/en", status: 307, location: "/fr" },
+            { path: "/en", status: 308, location: "/fr" },
           ];
 
           for (const check of checks) {
             const response = await fetch(`http://127.0.0.1:3000${check.path}`, {
               redirect: "manual",
-              headers: check.cookie ? { cookie: check.cookie } : undefined,
             });
             const actualLocation = response.headers.get("location");
             const actualPath = actualLocation
@@ -430,7 +407,7 @@ jobs:
               );
             }
           }
-          console.log(`locale publication smoke passed in ${mode}`);
+          console.log("French-only locale smoke passed");
           NODE
           REMOTE
 

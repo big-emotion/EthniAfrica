@@ -22,7 +22,7 @@ import { definedFilter, getFacetRoute } from "@/lib/hubs/facets";
 import { PAGE_SIZE_PARAM, resolvePageSize } from "@/lib/hubs/pagination";
 import { getPeopleRoute, resolvePeopleDeepLink } from "@/lib/routing";
 import type { CountryId, People } from "@/types/afrik";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import { getTranslation } from "@/lib/translations";
 import { formatNumber } from "@/lib/languageTag";
 import { facetDirectoriesCopy } from "@/lib/i18n/copy/facetDirectories";
@@ -112,12 +112,7 @@ export async function generateMetadata({
   const title = getTranslation(lang as Language).peoples;
   return {
     title,
-    ...surfaceHead(
-      lang as Language,
-      "peoples",
-      (locale) => getFacetRoute(locale, "peoples"),
-      { title }
-    ),
+    ...pageHead(getFacetRoute("fr", "peoples"), { title }),
   };
 }
 

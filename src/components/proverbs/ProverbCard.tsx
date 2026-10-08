@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
 import {
   DID_YOU_KNOW_ENTITY_ACCENT,
   didYouKnowEntityHref,
@@ -9,12 +8,12 @@ import {
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import { proverbsCopy } from "@/lib/i18n/copy/proverbs";
 import type { ProverbPicture } from "@/lib/proverbs/proverbImages";
-import type { LocalizedProverb } from "@/lib/proverbs/proverbs.en";
+import type { Proverb } from "@/lib/proverbs/proverbs";
 import type { Language } from "@/types/shared";
 
 export interface ProverbCardProps {
   language: Language;
-  proverb: LocalizedProverb;
+  proverb: Proverb;
   /** Absent while no photograph is sourced: the card stays typographic. */
   picture?: ProverbPicture;
 }
@@ -76,14 +75,6 @@ export function ProverbCard({ language, proverb, picture }: ProverbCardProps) {
       ) : null}
 
       <h2 className="proverb-text">{proverb.text}</h2>
-
-      <TranslationProvenanceMarker
-        translation={
-          proverb.translationKind
-            ? { kind: proverb.translationKind, stale: false }
-            : null
-        }
-      />
 
       <p className="proverb-meaning">
         <span className="proverb-label">{copy.meaning}</span> {proverb.meaning}
@@ -210,9 +201,6 @@ export function ProverbCard({ language, proverb, picture }: ProverbCardProps) {
         }
         .proverb-text:lang(fr) {
           quotes: "«\\00a0" "\\00a0»";
-        }
-        .proverb-text:lang(en) {
-          quotes: "\\201C" "\\201D";
         }
         .proverb-card .proverb-meaning,
         .proverb-card .proverb-origin {

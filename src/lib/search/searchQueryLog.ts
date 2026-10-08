@@ -5,8 +5,7 @@
  * text, its result count, the locale it was served in (migration `084`) and
  * a timestamp (default `NOW()`). Failed searches are the spec for the
  * aliases "Alternate spellings are not found" (REQ-002) needs to close, but
- * only if they are recorded — and a miss in English asks for an alias in
- * another locale's names than a miss in French does. No reader identifier,
+ * only if they are recorded. No reader identifier,
  * IP or user agent is accepted or stored.
  *
  * Failures are swallowed by design, mirroring `@/lib/audit/log`: a logging

@@ -177,8 +177,9 @@ export const PRODUCTION_DEAD_CODE_CEILINGS: Readonly<
   // source parsers, name variants, the Mercator contrast and its English
   // labels, and the equal-area projection. 3 -> 1 when corpus translation was
   // retired and the three English sidecars staged for it (the games bank, its
-  // landmarks and the glossary entries) went with it.
-  files: 1,
+  // landmarks and the glossary entries) went with it. 1 -> 0 when the site
+  // became French-only and the English banks were deleted.
+  files: 0,
   // `tailwindcss-animate` is imported by tailwind.config.ts, which knip's
   // production mode does not follow even when the config is marked as a
   // production entry. It is a real build dependency, so `knip.json` lists it

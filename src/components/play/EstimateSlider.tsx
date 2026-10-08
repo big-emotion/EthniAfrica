@@ -41,10 +41,8 @@ export const EstimateSlider = ({
 }: EstimateSliderProps) => {
   const [estimate, setEstimate] = useState(round.min);
   const copy = gamesCopy[language];
-  const prompt =
-    language === "en" ? (round.promptEn ?? round.promptFr) : round.promptFr;
-  const unit =
-    language === "en" ? (round.unitEn ?? round.unitFr) : round.unitFr;
+  const prompt = round.promptFr;
+  const unit = round.unitFr;
 
   const value = `${formatNumber(language, estimate)} ${unit}`;
   const trackId = `estimate-track-${round.subjectId}`;

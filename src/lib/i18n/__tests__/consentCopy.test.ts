@@ -10,21 +10,16 @@ describe("consent copy", () => {
   // @req REQ-145
   it("says the choice is kept in the browser's local storage, not in a cookie", () => {
     expect(consentCopy.fr.description).toMatch(/stockage local/);
-    expect(consentCopy.en.description).toMatch(/local storage/);
     expect(consentCopy.fr.description).not.toMatch(/utilisons des cookies/i);
-    expect(consentCopy.en.description).not.toMatch(/use cookies/i);
   });
 
   // @req REQ-145
   it("says audience measurement sets no cookie", () => {
     expect(consentCopy.fr.analyticsDescription).toMatch(/sans cookie/);
-    expect(consentCopy.en.analyticsDescription).toMatch(/no cookie/);
   });
 
   // @req REQ-145
   it("offers no choice about a service that is not running", () => {
-    for (const copy of [consentCopy.fr, consentCopy.en]) {
-      expect(JSON.stringify(copy)).not.toMatch(/Sentry/);
-    }
+    expect(JSON.stringify(consentCopy.fr)).not.toMatch(/Sentry/);
   });
 });

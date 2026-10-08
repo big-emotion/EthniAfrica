@@ -119,15 +119,6 @@ describe("/[lang]/signalements page", () => {
     ).toBeInTheDocument();
   });
 
-  // @req REQ-140
-  it("hands the shell the locale of the route", async () => {
-    render(await SignalementsPage({ params: routeParams("en") }));
-
-    expect(pageLayoutProps).toHaveBeenCalledWith(
-      expect.objectContaining({ language: "en" })
-    );
-  });
-
   // @req REQ-014
   it("exports the public index metadata and caches its data for one minute", async () => {
     const metadata = await generateMetadata({ params: routeParams("fr") });

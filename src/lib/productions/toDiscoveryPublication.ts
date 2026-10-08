@@ -58,10 +58,7 @@ export function toDiscoveryPublication(
           {
             kind: candidate.kind,
             id: candidate.id,
-            label: {
-              fr: candidate.label.fr,
-              en: candidate.label.en ?? candidate.label.fr,
-            },
+            label: { fr: candidate.label.fr },
           },
         ]
       : []
@@ -79,7 +76,6 @@ export function toDiscoveryPublication(
   const titled = subject ? subject.label : word!.label;
   const name: Record<Language, string> = {
     fr: titled.fr,
-    en: titled.en ?? titled.fr,
   };
 
   return [
@@ -87,14 +83,12 @@ export function toDiscoveryPublication(
       id: `video:${entry.campaign}`,
       kind: "video",
       status: "published",
-      slug: { fr: entry.campaign, en: entry.campaign },
+      slug: { fr: entry.campaign },
       title: {
         fr: formatProductionNameQuestion(name.fr, "fr"),
-        en: formatProductionNameQuestion(name.en, "en"),
       },
       description: {
         fr: entry.myth?.fr ?? entry.question.fr,
-        en: entry.myth?.en ?? entry.question.en ?? entry.question.fr,
       },
       source:
         entry.sources && entry.sources.length > 0
@@ -108,7 +102,6 @@ export function toDiscoveryPublication(
       detail: {
         body: {
           fr: [entry.myth?.fr ?? entry.question.fr],
-          en: [entry.myth?.en ?? entry.question.en ?? entry.question.fr],
         },
         entities,
         sources: (entry.sources ?? []).map(({ title, url }) => ({
@@ -131,7 +124,6 @@ export function toDiscoveryPublication(
           height: entry.poster?.height ?? 0,
           alt: {
             fr: formatProductionPosterAlt(name.fr, "fr"),
-            en: formatProductionPosterAlt(name.en, "en"),
           },
         },
       },

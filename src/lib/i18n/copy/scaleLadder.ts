@@ -62,67 +62,6 @@ export interface ScaleLadderCopy {
 // @req REQ-132
 // @req REQ-145
 export const scaleLadder: Record<Language, ScaleLadderCopy> = {
-  en: {
-    stepLabel: "01 · The scale",
-    title: "Six images, and the border is the youngest",
-    intro: "Six wallpapers for your phone. Each one carries a date.",
-    instruction: "Scroll down. The further you go, the older it gets.",
-    rungs: [
-      {
-        id: "border",
-        magnitude: "Under 140 years",
-        subject: "The border",
-        anchor:
-          "Most of today's borders were drawn later than people assume: 1919, 1993, 2011.",
-        provenance: "Established historical dates.",
-        inAtlas: false,
-      },
-      {
-        id: "kongo",
-        magnitude: "700 years",
-        subject: "The Kongo kingdom",
-        anchor: "Founded around 1350. Two countries still carry its name.",
-        provenance: "Angola, Congo, Democratic Republic of the Congo.",
-        inAtlas: true,
-      },
-      {
-        id: "mali",
-        magnitude: "800 years",
-        subject: "The Mali empire",
-        anchor:
-          "From the thirteenth century to the sixteenth. Five countries keep its trace.",
-        provenance: "Mali, Guinea, Guinea-Bissau, Gambia, Côte d’Ivoire.",
-        inAtlas: true,
-      },
-      {
-        id: "sanghana",
-        magnitude: "1,000 years",
-        subject: "A written name",
-        anchor:
-          "Al-Bakri writes the name Sanghana in the eleventh century. Five hundred years before the first European maps.",
-        provenance: "Senegal, and four peoples.",
-        inAtlas: true,
-      },
-      {
-        id: "kemet",
-        magnitude: "4,700 years",
-        subject: "Ancient Egypt",
-        anchor: "The Old Kingdom begins in 2686 before our era.",
-        provenance: "Egypt.",
-        inAtlas: true,
-      },
-      {
-        id: "sapiens",
-        magnitude: "300,000 years",
-        subject: "Homo sapiens",
-        anchor:
-          "The oldest bones of our species were found at Jebel Irhoud, in Morocco. Published in Nature in 2017.",
-        provenance: "Published, peer-reviewed research.",
-        inAtlas: false,
-      },
-    ],
-    reframe: "On this scale, the border is the most recent thing there is.",
-  },
   fr: {
     stepLabel: "01 · L’échelle",
     title: "Six images, et la frontière est la plus jeune",
@@ -204,16 +143,6 @@ export interface WallpaperLibraryCopy {
 // @req REQ-132
 // @req REQ-145
 export const wallpaperLibrary: Record<Language, WallpaperLibraryCopy> = {
-  en: {
-    eyebrow: "The project",
-    pageTitle: "Wallpapers",
-    outsideAtlas: "Outside our scope",
-    inAtlas: "Within our scope",
-    download: "Download",
-    downloadLabel: (subject) => `Download the wallpaper for ${subject}`,
-    imageAlt: (subject) =>
-      `A cut through earth for ${subject}: pale fresh paper above, older and darker layers below.`,
-  },
   fr: {
     eyebrow: "Le projet",
     pageTitle: "Fonds d’écran",

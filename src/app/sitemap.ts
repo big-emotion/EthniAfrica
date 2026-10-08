@@ -6,7 +6,6 @@ import {
 } from "@/lib/articles/corpus";
 import { articleHref } from "@/components/articles/articlePaths";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
-import { getPublishedLocales } from "@/lib/locale";
 import {
   getCountryRoute,
   getFamilyRoute,
@@ -15,28 +14,17 @@ import {
   getPeopleLinksRoute,
   getPeopleRoute,
 } from "@/lib/routing";
-import {
-  CORPUS_LOCALE,
-  surfaceForPath,
-  surfaceIndexedLocales,
-} from "@/lib/seo/localeIndexing";
 import { getSiteTreePaths } from "@/lib/siteTree";
 import { getSitemapEntityIds } from "@/lib/supabase/queries/afrik/sitemapEntries";
-import type { Language } from "@/types/shared";
 
 /**
  * `sitemap.xml`.
  *
- * Three things about this file that are not obvious:
+ * Two things about this file that are not obvious:
  *
  * The base URL comes from `CANONICAL_DOMAIN`, never from the root layout's
  * `metadataBase` — that one falls back to `localhost:3000`, which in a sitemap
  * would publish 890 unreachable URLs.
- *
- * It lists a URL under a locale only when the page is indexed there
- * (REQ-141): a rubric when its surface is at parity, a fiche only in French,
- * the language the corpus is written in. A sitemap that listed a `noindex`
- * page would contradict the page.
  *
  * And this is a Next special file, not a route segment: it sits outside the
  * root layout's tree, so the `await connection()` that makes every page
@@ -68,41 +56,18 @@ function entry(
   return { url: `${BASE_URL}${path}`, changeFrequency, priority };
 }
 
-/** The rubric paths of a locale the locale's index is invited to. */
-function indexedRubrics(locale: Language): string[] {
-  return getSiteTreePaths(locale).filter((path) => {
-    const surface = surfaceForPath(locale, path);
-    return surface !== null && surfaceIndexedLocales(surface).includes(locale);
-  });
-}
-
-/**
- * Fiches are written in French and carry no translated counterpart, so only
- * the corpus locale lists them.
- */
-function indexedIds(ids: string[], locale: Language): string[] {
-  return locale === CORPUS_LOCALE ? ids : [];
-}
-
 function fichePaths(
-  locale: Language,
   corpus: Awaited<ReturnType<typeof getSitemapEntityIds>>
 ): string[] {
-  const families = indexedIds(corpus.families, locale);
-  const peoples = indexedIds(corpus.peoples, locale);
-  const countries = indexedIds(corpus.countries, locale);
-  const languages = indexedIds(corpus.languages, locale);
-  const patronymes = indexedIds(corpus.patronymes, locale);
-
   return [
-    ...families.map((id) => getFamilyRoute(locale, id)),
-    ...peoples.flatMap((id) => [
-      getPeopleRoute(locale, id),
-      getPeopleLinksRoute(locale, id),
+    ...corpus.families.map((id) => getFamilyRoute("fr", id)),
+    ...corpus.peoples.flatMap((id) => [
+      getPeopleRoute("fr", id),
+      getPeopleLinksRoute("fr", id),
     ]),
-    ...countries.map((id) => getCountryRoute(locale, id)),
-    ...languages.map((id) => getLanguageRoute(locale, id)),
-    ...patronymes.map((id) => getPatronymeRoute(locale, id)),
+    ...corpus.countries.map((id) => getCountryRoute("fr", id)),
+    ...corpus.languages.map((id) => getLanguageRoute("fr", id)),
+    ...corpus.patronymes.map((id) => getPatronymeRoute("fr", id)),
   ];
 }
 
@@ -112,26 +77,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const corpus = await getSitemapEntityIds();
 
   const entries: MetadataRoute.Sitemap = [];
-  for (const locale of getPublishedLocales()) {
-    for (const path of indexedRubrics(locale)) {
-      entries.push(
-        entry(path, RUBRIC_CHANGE_FREQUENCY, path === `/${locale}` ? 1 : 0.8)
-      );
-    }
-    for (const path of fichePaths(locale, corpus)) {
-      entries.push(entry(path, FICHE_CHANGE_FREQUENCY, 0.6));
-    }
-    // The same publication predicate as the listing and the menu; French only
-    // because an article has no English text yet.
-    if (locale === "fr") {
-      for (const summary of publishedArticleSummaries(
-        readArticleCorpus().articles
-      )) {
-        entries.push(
-          entry(articleHref("fr", summary.slug), FICHE_CHANGE_FREQUENCY, 0.7)
-        );
-      }
-    }
+  for (const path of getSiteTreePaths("fr")) {
+    entries.push(
+      entry(path, RUBRIC_CHANGE_FREQUENCY, path === "/fr" ? 1 : 0.8)
+    );
+  }
+  for (const path of fichePaths(corpus)) {
+    entries.push(entry(path, FICHE_CHANGE_FREQUENCY, 0.6));
+  }
+  // The same publication predicate as the listing and the menu.
+  for (const summary of publishedArticleSummaries(
+    readArticleCorpus().articles
+  )) {
+    entries.push(
+      entry(articleHref("fr", summary.slug), FICHE_CHANGE_FREQUENCY, 0.7)
+    );
   }
   return entries;
 }

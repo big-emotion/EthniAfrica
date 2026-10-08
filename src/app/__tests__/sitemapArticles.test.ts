@@ -1,4 +1,4 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("@/lib/supabase/queries/afrik/sitemapEntries", () => ({
   getSitemapEntityIds: vi.fn(),
@@ -28,7 +28,6 @@ const record = (raw: { id: string }) => ({ filename: `${raw.id}.json`, raw });
 describe("sitemap.xml — articles", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    vi.stubEnv("SITE_LOCALE_MODE", "fr-only");
     (getSitemapEntityIds as ReturnType<typeof vi.fn>).mockResolvedValue({
       peoples: [],
       countries: [],
@@ -37,7 +36,6 @@ describe("sitemap.xml — articles", () => {
       patronymes: [],
     });
   });
-  afterEach(() => vi.unstubAllEnvs());
 
   // @req REQ-110
   it("lists every published article once, and never a draft", async () => {
@@ -60,17 +58,5 @@ describe("sitemap.xml — articles", () => {
       urls.filter((u) => u.endsWith(articleHref("fr", "live-one")))
     ).toHaveLength(1);
     expect(urls.some((u) => u.includes("/wip"))).toBe(false);
-  });
-
-  // @req REQ-110
-  it("does not list an English article URL while articles have no English text", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "bilingual-fr-default");
-    (readArticleCorpus as ReturnType<typeof vi.fn>).mockReturnValue(
-      assembleArticleCorpus([record(videoArticle({ id: "live-one" }))])
-    );
-
-    const urls = (await sitemap()).map((entry) => entry.url);
-
-    expect(urls.some((u) => /\/en\/dossiers\/live-one$/.test(u))).toBe(false);
   });
 });

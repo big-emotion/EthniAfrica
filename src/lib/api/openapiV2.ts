@@ -19,6 +19,8 @@ const options: swaggerJsdoc.Options = {
         "Metered responses carry `X-RateLimit-Limit`, `X-RateLimit-Remaining` and `X-RateLimit-Reset`; an exhausted quota answers `429` with `Retry-After`. The figures above are the deployment defaults. The `/api/v2/keys` self-service endpoints are the exception to all of this: they authenticate a signed-in contributor's session instead.\n\n" +
         "## Response envelope\n\n" +
         "Every `/api/v2/*` response uses the Module #0 envelope: `{ data, meta: { license, attribution, pagination?, confidence?, pinned_url?, translation? }, errors }`. License and attribution are always present (AR8); `errors` is empty on success and populated on non-2xx responses. List endpoints place their pagination values under `meta.pagination`.\n\n" +
+        "## French only (breaking)\n\n" +
+        "The site publishes French alone, so the locale parameters that selected English are narrowed to `fr`: `lang` on `GET /api/v2/search` and `GET /api/v2/search/companions`, and `language` in the `POST /api/v2/flags` body. `lang=en` is now refused with 400 on the two searches; an unknown flag `language` still fails closed to French. Search no longer matches English names; the `nameEn` / `languageFamilyNameEn` fields keep their shape and still carry the corpus value. `contentLanguage` in companion payloads is always `fr`.\n\n" +
         "## 2.3.0 — translated records (additive)\n\n" +
         "The five single-entity endpoints accept `?lang=fr|en`. `fr` is the authored language and the default; `en` overlays the translation record when one exists and declares how it was produced in `meta.translation` — `human`, `machine_reviewed` or `machine` — with `stale: true` when the French moved on a field the reader is shown since it was translated. Fields whose subject is a word are withheld at `machine` provenance and served in French until a human has reviewed them (REQ-142, REQ-143). Lists, facets and search stay authored-French. Retired since: the corpus is no longer translated, `?lang` is ignored and every record is served as authored.\n\n" +
         "## 2.1.0 — one source-tier vocabulary (breaking)\n\n" +
@@ -913,13 +915,13 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/CountryV2" },
               description:
-                "Matching countries, ranked by ts_rank with name_fr outranking etymology; with `lang=en` the accent-folded English name also matches (exact 1.0 > prefix 0.6 > substring 0.3, migration 084). Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore and a snippet. Empty when the request carries only a relation scope.",
+                "Matching countries, ranked by ts_rank with name_fr outranking etymology. Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore and a snippet. Empty when the request carries only a relation scope.",
             },
             families: {
               type: "array",
               items: { $ref: "#/components/schemas/LanguageFamilyV2" },
               description:
-                "Matching language families, ranked by afrik_search_language_families (migration 069): accent-insensitive exact (1.0) > prefix (0.6) > substring (0.3) on the locale's name — name_fr, or name_en with `lang=en` (migration 084) — then a prose tier (0.1) through search_vector for a term that appears only in the decolonial text (DEC-028). Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore and a snippet.",
+                "Matching language families, ranked by afrik_search_language_families (migration 069): accent-insensitive exact (1.0) > prefix (0.6) > substring (0.3) on name_fr — then a prose tier (0.1) through search_vector for a term that appears only in the decolonial text (DEC-028). Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore and a snippet.",
             },
             persons: {
               type: "array",
@@ -943,13 +945,13 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/SearchHitV2" },
               description:
-                "Canonical page for the selected mode, ordered on normalizedScore descending, ties broken on the name collated in the served locale (`lang`, French when absent) then on the id. Without `lens`, it merges the main stream and excludes quiz questions; with `lens=quiz`, it contains only quiz questions.",
+                "Canonical page for the selected mode, ordered on normalizedScore descending, ties broken on the name collated in French then on the id. Without `lens`, it merges the main stream and excludes quiz questions; with `lens=quiz`, it contains only quiz questions.",
             },
             languages: {
               type: "array",
               items: { $ref: "#/components/schemas/LanguageSearchResultV2" },
               description:
-                "Matching languages (REQ-136), ranked by afrik_search_languages (migration 068): exact match on the ISO 639-3 id or the name, then a prefix/accent-insensitive lexical match; with `lang=en` the fiche's English name also matches (migration 084). Each carries nameEn, familyName, familyNameEn, relevance, exactMatch and a snippet.",
+                "Matching languages (REQ-136), ranked by afrik_search_languages (migration 068): exact match on the ISO 639-3 id or the name, then a prefix/accent-insensitive lexical match. Each carries nameEn, familyName, familyNameEn, relevance, exactMatch and a snippet.",
             },
             peoplesTotal: {
               type: "integer",
@@ -1487,7 +1489,7 @@ const options: swaggerJsdoc.Options = {
           type: "object",
           properties: {
             id: { type: "string", minLength: 1 },
-            contentLanguage: { type: "string", enum: ["en", "fr"] },
+            contentLanguage: { type: "string", enum: ["fr"] },
             headline: { type: "string", minLength: 1 },
             body: {
               type: "array",
@@ -1533,7 +1535,7 @@ const options: swaggerJsdoc.Options = {
           type: "object",
           properties: {
             id: { type: "string", minLength: 1 },
-            contentLanguage: { type: "string", enum: ["en", "fr"] },
+            contentLanguage: { type: "string", enum: ["fr"] },
             text: { type: "string", minLength: 1 },
             meaning: { type: "string", minLength: 1 },
             original: {
@@ -1609,7 +1611,7 @@ const options: swaggerJsdoc.Options = {
                 "T18",
               ],
             },
-            contentLanguage: { type: "string", enum: ["en", "fr"] },
+            contentLanguage: { type: "string", enum: ["fr"] },
             prompt: { type: "string", minLength: 1 },
             stimulus: { type: ["string", "null"] },
             options: {
@@ -2139,7 +2141,7 @@ const options: swaggerJsdoc.Options = {
             nameEn: {
               type: ["string", "null"],
               description:
-                "The fiche's English name (content.nameEn), matched under `lang=en` (migration 084); null when the fiche carries none.",
+                "The fiche's English name (content.nameEn), carried as corpus data and not searched; null when the fiche carries none.",
               example: "Swahili",
             },
             familyId: {
@@ -4690,10 +4692,10 @@ const options: swaggerJsdoc.Options = {
             },
             language: {
               type: "string",
-              enum: ["en", "fr"],
+              enum: ["fr"],
               default: "fr",
               description:
-                "Locale used for reporter verification and moderation-decision e-mails. Missing or invalid values fail closed to French.",
+                "Locale used for reporter verification and moderation-decision e-mails. French is the only one published; missing or other values fail closed to French.",
             },
             counter_source_url: {
               type: "string",
@@ -4750,7 +4752,7 @@ const options: swaggerJsdoc.Options = {
               "National Statistics Office, 2024 census, table 12.",
             proposed_rewrite:
               "Update the population figure using the 2024 census.",
-            language: "en",
+            language: "fr",
             antibot: {
               salt: "9f2c1ab4d7e60358",
               nonce: "418209",

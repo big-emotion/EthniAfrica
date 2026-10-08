@@ -13,10 +13,10 @@ import type { Language } from "@/types/shared";
 
 import { loadProductionLedger, type LedgerEntry } from "./ledger";
 
+// The ledger may also carry an English wording; the page reads the French.
 type Localized = { fr: string; en?: string };
 
-const localize = (text: Localized, language: Language): string =>
-  (language === "en" ? text.en : text.fr) ?? text.fr;
+const localize = (text: Localized): string => text.fr;
 
 function sourcesOf(entry: LedgerEntry): SearchEvidenceSource[] {
   return (entry.sources ?? []).map((source, index) => ({
@@ -27,11 +27,11 @@ function sourcesOf(entry: LedgerEntry): SearchEvidenceSource[] {
   }));
 }
 
-function accountsOf(entry: LedgerEntry, language: Language): AnswerAccount[] {
+function accountsOf(entry: LedgerEntry): AnswerAccount[] {
   const origin = entry.answer?.origin ?? [];
   const sources = sourcesOf(entry);
   return origin.map((account): AnswerAccount => {
-    const text = localize(account.text, language);
+    const text = localize(account.text);
     // The ledger lists a piece's sources once, not per account. With one
     // account they can only be its sources; with several, assigning them would
     // invent which source backs which reading, so the accounts carry none and
@@ -58,16 +58,17 @@ function accountsOf(entry: LedgerEntry, language: Language): AnswerAccount[] {
   });
 }
 
-function formsOf(entry: LedgerEntry, language: Language): AnswerName[] {
+// The English label is a form the word takes, not a translation of the page.
+function formsOf(entry: LedgerEntry): AnswerName[] {
   const label = entry.word!.label;
-  const ordered =
-    language === "en" ? [label.en, label.fr] : [label.fr, label.en];
-  const forms = [...new Set(ordered.filter((form): form is string => !!form))];
+  const forms = [
+    ...new Set([label.fr, label.en].filter((form): form is string => !!form)),
+  ];
   // A word has no people to say which form is its own: none is marked.
   return forms.map((form) => ({ form, selfGiven: null }));
 }
 
-function project(entry: LedgerEntry, language: Language): WordAnswer {
+function project(entry: LedgerEntry): WordAnswer {
   const answer = entry.answer!;
   const publications = entry.publications.flatMap(
     ({ network, url, format, publishedAt }) =>
@@ -77,19 +78,19 @@ function project(entry: LedgerEntry, language: Language): WordAnswer {
   );
   return {
     kind: "word",
-    title: localize(entry.word!.label, language),
+    title: localize(entry.word!.label),
     queries: entry.word!.queries,
     what: {
-      ...(answer.lead ? { lead: localize(answer.lead, language) } : {}),
+      ...(answer.lead ? { lead: localize(answer.lead) } : {}),
       facts: {},
     },
     origin: {
-      accounts: accountsOf(entry, language),
+      accounts: accountsOf(entry),
       debated: answer.origin.length > 1,
     },
-    names: formsOf(entry, language),
+    names: formsOf(entry),
     ...(answer.followUp
-      ? { next: { question: localize(answer.followUp, language) } }
+      ? { next: { question: localize(answer.followUp) } }
       : {}),
     sources: { count: entry.sources?.length ?? 0 },
     ...(publications.length > 0 ? { publications } : {}),
@@ -115,6 +116,7 @@ function termsOf(entry: LedgerEntry): string[] {
  */
 export function findWordAnswer(
   query: string | undefined,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars -- kept for the callers that still pass the route locale
   language: Language = "fr",
   ledger: readonly LedgerEntry[] = loadProductionLedger()
 ): WordAnswer[] {
@@ -125,5 +127,5 @@ export function findWordAnswer(
   return ledger
     .filter((entry) => entry.word && entry.answer)
     .filter((entry) => termsOf(entry).some((term) => wanted.includes(term)))
-    .map((entry) => project(entry, language));
+    .map((entry) => project(entry));
 }

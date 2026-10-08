@@ -6,8 +6,6 @@ import { inCountry, locativePreposition } from "../countryPreposition";
 
 const fr = (countryId: string) =>
   inCountry(countryId, getAdmin0Name(countryId, "fr")!, "fr");
-const en = (countryId: string) =>
-  inCountry(countryId, getAdmin0Name(countryId, "en")!, "en");
 
 describe("inCountry — French (REQ-117)", () => {
   // @req REQ-117
@@ -33,33 +31,5 @@ describe("inCountry — French (REQ-117)", () => {
   it("is the locale the module defaults to, so the existing caller reads unchanged", () => {
     expect(inCountry("TGO", "Togo")).toBe("au Togo");
     expect(locativePreposition("TGO", "Togo")).toBe("au");
-  });
-});
-
-describe("inCountry — English (REQ-143 class 4)", () => {
-  // @req REQ-143
-  it("takes a bare « in » for almost every country", () => {
-    expect(en("ETH")).toBe("in Ethiopia");
-    expect(en("CIV")).toBe("in Ivory Coast");
-    expect(en("MDG")).toBe("in Madagascar");
-    expect(en("ESH")).toBe("in Western Sahara");
-  });
-
-  // @req REQ-143
-  it("takes « in the » for the names English gives a definite article", () => {
-    expect(en("GMB")).toBe("in the Gambia");
-    expect(en("COM")).toBe("in the Comoros");
-    expect(en("SYC")).toBe("in the Seychelles");
-    expect(en("COD")).toBe("in the Democratic Republic of the Congo");
-    expect(en("COG")).toBe("in the Republic of the Congo");
-    expect(en("CAF")).toBe("in the Central African Republic");
-    expect(en("TZA")).toBe("in the United Republic of Tanzania");
-  });
-
-  // @req REQ-143
-  it("is keyed by ISO code, so the asset's wording cannot move a country between sets", () => {
-    expect(locativePreposition("GMB", "Gambia", "en")).toBe("in the");
-    expect(locativePreposition("GMB", "The Gambia", "en")).toBe("in the");
-    expect(locativePreposition("SEN", "Senegal", "en")).toBe("in");
   });
 });

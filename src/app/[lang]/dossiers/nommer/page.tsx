@@ -5,7 +5,7 @@ import { NommerPillarPage } from "@/components/dossiers/nommer/NommerPillarPage"
 import { isModulePublished } from "@/lib/hubs/moduleOffer";
 import { nommerCopy } from "@/lib/i18n/copy/nommer";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
 interface PageProps {
@@ -24,12 +24,7 @@ export async function generateMetadata({
   const copy = { title: pageCopy.title, description: pageCopy.subtitle };
   return {
     ...copy,
-    ...surfaceHead(
-      lang as Language,
-      "nommer",
-      (locale) => getLocalizedRoute(locale, "nommer"),
-      copy
-    ),
+    ...pageHead(getLocalizedRoute("fr", "nommer"), copy),
   };
 }
 

@@ -73,7 +73,6 @@ export interface GameRevealConfidence {
 
 export interface GameReveal {
   textFr: string;
-  textEn?: string;
   fieldPath: string;
   /**
    * The standing of what the claim rests on, in fiche order. A round sourced
@@ -84,7 +83,6 @@ export interface GameReveal {
   confidence: GameRevealConfidence | null;
   /** The subject's fiche. A wrong answer is an opening, so it leads somewhere. */
   ficheHref: string;
-  ficheHrefEn?: string;
 }
 
 /**
@@ -94,7 +92,6 @@ export interface GameReveal {
  */
 export interface GameOption {
   labelFr: string;
-  labelEn?: string;
   name?: AutonymExonymName;
 }
 
@@ -138,7 +135,6 @@ interface GameRoundBase {
    */
   comparedIds?: string[];
   promptFr: string;
-  promptEn?: string;
   /**
    * Assigned by the handler, not by the generator: a band is a subject's rank
    * within the pool it was drawn from, and a generator sees one subject.
@@ -180,10 +176,8 @@ export interface EstimateRound extends GameRoundBase {
   kind: "estimate";
   /** What the reader is estimating, named — the slider is meaningless without it. */
   subjectFr: string;
-  subjectEn?: string;
   /** The unit the track is read in, e.g. « fois ». */
   unitFr: string;
-  unitEn?: string;
   min: number;
   max: number;
   step: number;

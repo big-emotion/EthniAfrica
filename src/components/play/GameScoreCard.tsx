@@ -6,7 +6,6 @@ import type { ScaleFact } from "@/lib/games/scaleFacts";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { gamesCopy } from "@/lib/i18n/copy/games";
-import { GAME_DEFINITIONS_EN } from "@/lib/games/gameRegistry.en";
 import type { Language } from "@/types/shared";
 
 export interface GameScoreCardProps {
@@ -56,10 +55,7 @@ export const GameScoreCard = ({
 }: GameScoreCardProps) => {
   const hasRounds = total > 0;
   const copy = gamesCopy[language];
-  const gameName =
-    language === "en"
-      ? (GAME_DEFINITIONS_EN[game.id]?.nameEn ?? game.nameFr)
-      : game.nameFr;
+  const gameName = game.nameFr;
 
   return (
     <div

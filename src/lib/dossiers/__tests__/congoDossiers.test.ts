@@ -62,19 +62,17 @@ describe("Congo history dossiers", () => {
    * single address, and a green that asserts nothing is the one failure a
    * suite cannot report.
    */
-  // @req REQ-114 @req REQ-140
-  it("advertises no withdrawn dossier in either locale's sitemap", () => {
+  // @req REQ-114
+  it("advertises no withdrawn dossier in the sitemap", () => {
     const withdrawn = readDossierCorpus().dossiers.map(
       (dossier) => dossier.slug
     );
     expect(withdrawn.length).toBeGreaterThan(0);
 
-    for (const language of ["fr", "en"] as const) {
-      const paths = getSiteTreePaths(language);
-      const hub = getLocalizedRoute(language, "dossiersHub");
-      for (const slug of withdrawn) {
-        expect(paths, `${language}/${slug}`).not.toContain(`${hub}/${slug}`);
-      }
+    const paths = getSiteTreePaths("fr");
+    const hub = getLocalizedRoute("fr", "dossiersHub");
+    for (const slug of withdrawn) {
+      expect(paths, slug).not.toContain(`${hub}/${slug}`);
     }
   });
 });

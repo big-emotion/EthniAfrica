@@ -17,9 +17,7 @@ function entry(overrides: Partial<LedgerEntry> = {}): LedgerEntry {
       en: "Where does Test come from?",
     },
     myth: { fr: "Un mythe.", en: "A myth." },
-    subjects: [
-      { kind: "language", id: "tst", label: { fr: "Test", en: "Test" } },
-    ],
+    subjects: [{ kind: "language", id: "tst", label: { fr: "Test" } }],
     sitePath: getLanguageRoute("fr", "tst"),
     publications: [],
     ...overrides,
@@ -31,7 +29,7 @@ describe("toDiscoveryPublication", () => {
   it("carries the subject's identity bridge into detail.entities", () => {
     const [publication] = toDiscoveryPublication(entry());
     expect(publication.detail?.entities).toEqual([
-      { kind: "language", id: "tst", label: { fr: "Test", en: "Test" } },
+      { kind: "language", id: "tst", label: { fr: "Test" } },
     ]);
   });
 
@@ -40,9 +38,6 @@ describe("toDiscoveryPublication", () => {
     const [publication] = toDiscoveryPublication(entry());
     expect(publication.title.fr).toBe(
       formatProductionNameQuestion("Test", "fr")
-    );
-    expect(publication.title.en).toBe(
-      formatProductionNameQuestion("Test", "en")
     );
   });
 

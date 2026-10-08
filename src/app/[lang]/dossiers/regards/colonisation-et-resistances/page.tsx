@@ -33,7 +33,7 @@ import { COLONIAL_EVENT_TYPES } from "@/lib/afrik/migrationEventTypes";
 import { isModulePublished } from "@/lib/hubs/moduleOffer";
 import { getTranslation } from "@/lib/translations";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
 const TIMELINE_LIST_LIMIT = 200;
@@ -52,12 +52,7 @@ export async function generateMetadata({
   const copy = { title: t.pageTitle, description: t.pageSubtitle };
   return {
     ...copy,
-    ...surfaceHead(
-      lang as Language,
-      "colonization",
-      (locale) => getLocalizedRoute(locale, "colonization"),
-      copy
-    ),
+    ...pageHead(getLocalizedRoute("fr", "colonization"), copy),
   };
 }
 

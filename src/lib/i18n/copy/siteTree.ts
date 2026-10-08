@@ -1,96 +1,6 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  home: {
-    title: "Home",
-    blurb:
-      "EthniAfrica opens with intent, not a table of contents: search, understand or play unfolds its modules on the home page itself, and the next click opens the module.",
-    label: "Home",
-    note: "The globe and the three paths.",
-  },
-  corpus: {
-    title: "Browse, in AFRIK order",
-    // The rubric's own hub. Named for the axis rather than described, because
-    // the rubric's blurb above already says what the axis holds.
-    hub: ["Browse", "The axis and its six ways in."],
-    blurb:
-      "Language family → language → people → country. This is our project's own hierarchy, and each page can be read from the level above. Designations and personal names cross it: they name, they do not locate.",
-    families: [
-      "Language families",
-      "The first level: 25 families, each with its languages.",
-    ],
-    languages: [
-      "Languages",
-      "748 languages, each attached to its language family.",
-    ],
-    peoples: ["Peoples", "789 pages, attached to their family and countries."],
-    countries: [
-      "Countries",
-      "54 pages, each listing the peoples who live there.",
-    ],
-    names: [
-      "Personal names",
-      "30 personal naming systems, distinct from the designations of a people.",
-    ],
-    search: [
-      "Free search",
-      "When you know what you are looking for, but not where to find it.",
-    ],
-    compare: ["Compare", "Place two entities of the same type side by side."],
-  },
-  dossiers: {
-    title: "Articles",
-    blurb:
-      "The subjects of our videos and carousels, developed in writing, with their references.",
-    all: "All articles",
-    nommerTitle: "Who gave this name?",
-    nommerNote: "The founding dossier and its five chapters.",
-    names: [
-      "Designations",
-      "Autonyms, exonyms, and what the gap between them tells us.",
-    ],
-    migrations: [
-      "First migration landmarks",
-      "Six sourced events, not a timeline spanning three millennia.",
-    ],
-    colonization: "Perspectives: colonisation and resistance",
-    doctrine: [
-      "How we work",
-      "The three questions we ask of a name, and how we handle sources, disagreement and correction.",
-    ],
-  },
-  play: {
-    title: "Play",
-    hub: ["Play", "The axis and its rounds."],
-    blurb:
-      "Every round is drawn from our entries: winning means having learnt something, never having guessed.",
-    quiz: "The quiz",
-  },
-  contribute: {
-    title: "Contribute",
-    blurb:
-      "Our project is open and incomplete, and says so. These are the two ways to correct it.",
-    contribution: ["Contribute", "Propose a page, a source or a correction."],
-    reports: ["Reports", "Reported errors and their public resolution."],
-  },
-  site: {
-    title: "The site",
-    blurb: "Who publishes it, under which rules, and how to read the data.",
-    about: "About",
-    glossary: ["Glossary", "The words we use to name, defined once."],
-    sources: ["Sources", "The bibliography documenting our project."],
-    api: ["Public API v2", "Our content as JSON, under an open licence."],
-    contact: ["Contact", "Write to the team publishing EthniAfrica."],
-    accessibility: "Accessibility",
-    legal: "Legal notice",
-    data: "Data policy",
-    sitemap: "Sitemap",
-  },
-};
-
-type SiteTreeCopy = typeof en;
-
-const fr: SiteTreeCopy = {
+const fr = {
   home: {
     title: "L'accueil",
     blurb:
@@ -185,5 +95,7 @@ const fr: SiteTreeCopy = {
   },
 };
 
+type SiteTreeCopy = typeof fr;
+
 // @req REQ-145
-export const siteTreeCopy: Record<Language, SiteTreeCopy> = { en, fr };
+export const siteTreeCopy: Record<Language, SiteTreeCopy> = { fr };

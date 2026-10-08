@@ -179,20 +179,6 @@ beforeEach(() => {
 });
 
 describe("getQuizScopeCatalogue", () => {
-  // @req REQ-145
-  it("counts only the requested locale's bank", async () => {
-    tableRows.set("quiz_questions", [
-      questionRow("q-fr", "PPL_A"),
-      questionRow("q-en", "PPL_A", { locale: "en" }),
-    ]);
-
-    const catalogue = await getQuizScopeCatalogue("en");
-
-    expect(catalogue.totalActiveQuestionCount).toBe(1);
-    expect(catalogue.families[0].labelFr).toBe("Niger-Congo");
-    expect(catalogue.themes[0].labelFr).toBe("Names and appellations");
-  });
-
   // @req REQ-103
   it("counts a country's questions through the join, not the question rows alone", async () => {
     tableRows.set("quiz_questions", [
@@ -374,17 +360,6 @@ describe("getQuizScopeLabel", () => {
     ).resolves.toBe("Ghana");
   });
 
-  // @req REQ-145
-  it("reads the locale's scope label", async () => {
-    tableRows.set("afrik_countries", [
-      { id: "CIV", name_fr: "Côte d’Ivoire", name_en: "Côte d'Ivoire" },
-    ]);
-
-    await expect(
-      getQuizScopeLabel({ kind: "country", entityId: "CIV" }, "en")
-    ).resolves.toBe("Côte d'Ivoire");
-  });
-
   // @req REQ-103
   it("returns null for an id the corpus does not hold", async () => {
     await expect(
@@ -394,25 +369,6 @@ describe("getQuizScopeLabel", () => {
 });
 
 describe("composeQuizSession", () => {
-  // @req REQ-145
-  it("serves only questions authored for the requested locale", async () => {
-    tableRows.set("quiz_questions", [
-      questionRow("q-fr", "PPL_A"),
-      questionRow("q-en", "PPL_A", {
-        locale: "en",
-        prompt_fr: "English question",
-      }),
-    ]);
-
-    const { questions } = await composeQuizSession({
-      scope: { kind: "mixed" },
-      count: 8,
-      language: "en",
-    });
-
-    expect(questions.map((question) => question.id)).toEqual(["q-en"]);
-  });
-
   /**
    * The pool is what the corpus held for the scope, after the theme filter and
    * the self-answering drop and before the ladder. The handler needs it to tell

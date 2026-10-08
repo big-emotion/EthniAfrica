@@ -108,23 +108,4 @@ describe("requestAdminSignInLink", () => {
       "moderation@example.org"
     );
   });
-
-  // @req REQ-140
-  it("keeps the sign-in response and callback in the route locale", async () => {
-    mocks.isEmailAllowlisted.mockResolvedValue(true);
-
-    await expect(submit("moderation@example.org", "en")).resolves.toEqual({
-      status: "sent",
-      message:
-        "If this address can access moderation, a sign-in link has just been sent to it.",
-    });
-    expect(mocks.signInWithOtp).toHaveBeenCalledWith(
-      expect.objectContaining({
-        options: expect.objectContaining({
-          emailRedirectTo:
-            "https://recette.africatlas.com/api/auth/callback?redirect=%2Fen%2Fadmin",
-        }),
-      })
-    );
-  });
 });

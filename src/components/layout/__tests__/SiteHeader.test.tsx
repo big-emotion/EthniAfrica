@@ -11,7 +11,6 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { ThemeProvider } from "next-themes";
 
 import { SiteHeader } from "@/components/layout/SiteHeader";
-import { LocalePublicationProvider } from "@/components/layout/LocalePublicationProvider";
 import { HEADER_RETRACTED_ATTRIBUTE } from "@/hooks/use-header-reveal";
 import { ModuleAvailabilityProvider } from "@/components/hubs/ModuleAvailabilityProvider";
 import { DossierMenuProvider } from "@/components/dossiers/DossierMenuProvider";
@@ -29,8 +28,7 @@ import {
   type ModuleAvailabilityMap,
 } from "@/lib/hubs/moduleOffer";
 import { getModuleHref } from "@/lib/hubs/moduleHref";
-import { getLocalizedRoute, getPeopleRoute } from "@/lib/routing";
-import type { LocalePublicationMode } from "@/lib/locale";
+import { getLocalizedRoute } from "@/lib/routing";
 
 let mockPathname = "/fr";
 
@@ -64,18 +62,15 @@ const dossierMenu = getDossierMenuEntries("fr");
 
 const renderHeader = (
   props: Partial<React.ComponentProps<typeof SiteHeader>> = {},
-  availability: ModuleAvailabilityMap | null = null,
-  localeMode: LocalePublicationMode = "bilingual-en-default"
+  availability: ModuleAvailabilityMap | null = null
 ) =>
   render(
     <ThemeProvider attribute="class">
-      <LocalePublicationProvider value={localeMode}>
-        <ModuleAvailabilityProvider value={availability}>
-          <DossierMenuProvider value={dossierMenu}>
-            <SiteHeader language="fr" {...props} />
-          </DossierMenuProvider>
-        </ModuleAvailabilityProvider>
-      </LocalePublicationProvider>
+      <ModuleAvailabilityProvider value={availability}>
+        <DossierMenuProvider value={dossierMenu}>
+          <SiteHeader language="fr" {...props} />
+        </DossierMenuProvider>
+      </ModuleAvailabilityProvider>
     </ThemeProvider>
   );
 
@@ -685,26 +680,6 @@ describe("SiteHeader — reachable and mature are two questions (atlas charter �
 });
 
 describe("SiteHeader — the controls that stay in the bar", () => {
-  // @req REQ-145
-  it("renders the complete chrome vocabulary in English", () => {
-    mockPathname = "/en";
-    renderHeader({ language: "en" });
-
-    expect(
-      screen.getByRole("navigation", { name: "Main navigation" })
-    ).toBeVisible();
-    expect(screen.getByRole("group", { name: "Entry points" })).toBeVisible();
-    expect(screen.getByRole("button", { name: "Search" })).toBeVisible();
-    expect(screen.getByTestId(BURGER)).toHaveAttribute(
-      "aria-label",
-      "Open menu"
-    );
-    expect(screen.getByText("Africa through its names")).toBeVisible();
-    for (const label of ["Browse", "Articles", "Play"]) {
-      expect(screen.getByRole("button", { name: label })).toBeVisible();
-    }
-  });
-
   // @req REQ-114
   it("opens the search from the bar", () => {
     const onSearchClick = vi.fn();
@@ -755,29 +730,17 @@ describe("SiteHeader — the controls that stay in the bar", () => {
     for (const label of [...Object.values(ACCESS_MODE_LABELS), "Rechercher"]) {
       expect(trigger(label)).toHaveClass("min-h-11");
     }
-    expect(screen.getByRole("link", { name: "English" })).toHaveClass(
-      "min-h-11"
-    );
   });
 });
 
 /**
- * The fourth control. Measured at 430px against the bar's own stylesheet:
- * 406px of content after the page padding, 16px of gap, 53px for the mark
- * and its gap, and 44px per control at 2px apart. Three controls leave the
- * lockup 201px. The header carries the site's own tagline, « L’Afrique à
- * travers ses noms » (28 characters, editorial-and-experience-plan.md C1) — a
- * fourth control would leave 155px and cut it on every phone page. So the bar
- * carries the switch only above the breakpoint, and below it the tray does —
- * as its first row, above the three axes, where the phone's navigation
- * already is.
+ * The site publishes French alone, so the header carries no language control
+ * — neither in the bar nor in the tray.
  */
-describe("SiteHeader — the language switch (REQ-140)", () => {
-  // Mobile is the first containment boundary: the row must not survive in the
-  // tray merely because the wider bar control disappeared.
+describe("SiteHeader — no language switch (REQ-140)", () => {
   // @req REQ-140
-  it("offers no language control at any viewport while English is unpublished", () => {
-    renderHeader({}, null, "fr-only");
+  it("offers no language control at any viewport", () => {
+    renderHeader();
 
     expect(screen.queryByRole("link", { name: "English" })).toBeNull();
     fireEvent.click(screen.getByTestId(BURGER));
@@ -786,61 +749,6 @@ describe("SiteHeader — the language switch (REQ-140)", () => {
         name: "English",
       })
     ).toBeNull();
-  });
-
-  // @req REQ-140
-  it("offers the other locale from the bar, composed for the same page", () => {
-    mockPathname = getPeopleRoute("fr", "PPL_YORUBA");
-    renderHeader();
-
-    const switcher = screen.getByRole("link", { name: "English" });
-    expect(switcher).toHaveAttribute(
-      "href",
-      getPeopleRoute("en", "PPL_YORUBA")
-    );
-    expect(switcher).toHaveAttribute("lang", "en");
-  });
-
-  // @req REQ-140
-  it("withdraws the bar switch below the breakpoint and paints it above", () => {
-    renderHeader();
-
-    expect(declarationsFor("\\.sh-lang")).toMatch(/display:\s*none/);
-    expect(declarationsFor("\\.sh-lang")).toMatch(/display:\s*inline-grid/);
-  });
-
-  // @req REQ-140
-  it("offers the switch as the first row of the tray", () => {
-    renderHeader();
-
-    fireEvent.click(screen.getByTestId(BURGER));
-    const tray = screen.getByRole("dialog");
-
-    const switcher = within(tray).getByRole("link", { name: "English" });
-    expect(switcher).toHaveClass("min-h-11");
-    expect(switcher).toHaveTextContent("English");
-    // Above the axes, not below them: the reader meets it before the first
-    // fold.
-    const firstFold = within(tray).getByRole("button", {
-      name: new RegExp(ACCESS_MODE_LABELS.atlas),
-    });
-    expect(
-      switcher.compareDocumentPosition(firstFold) &
-        Node.DOCUMENT_POSITION_FOLLOWING
-    ).toBeTruthy();
-  });
-
-  // The switch is chrome, like the search and the surface toggle beside it,
-  // and takes their ink — never the page's accent (brand charter §5.2).
-  // @req REQ-140
-  it("draws the bar switch as the third disc, in the chrome's ink", () => {
-    renderHeader();
-
-    const switcher = screen.getByRole("link", { name: "English" });
-    expect(switcher).toHaveClass("sh-icon");
-    expect(switcher.querySelector(".sh-icon-circle")).toHaveTextContent("EN");
-    expect(declarationsFor("\\.sh-lang-code")).not.toMatch(/#[0-9a-f]{3,8}/i);
-    expect(declarationsFor("\\.sh-lang-code")).not.toMatch(/--accent/);
   });
 });
 

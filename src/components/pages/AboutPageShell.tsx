@@ -11,17 +11,13 @@ interface AboutPageShellProps {
 
 /**
  * Client-only shell kept outside the server route.
- *
- * It no longer syncs the route's locale into the hook: `useLanguage` reads
- * the route itself, and `setLanguage` is the switcher's act — it records an
- * explicit choice in the cookie (REQ-140), which landing on a page is not.
  */
 // @req REQ-091
 export default function AboutPageShell({ children }: AboutPageShellProps) {
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
 
   return (
-    <PageLayout language={language} onLanguageChange={setLanguage} hideHeader>
+    <PageLayout language={language} hideHeader>
       {children}
     </PageLayout>
   );

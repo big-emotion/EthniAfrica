@@ -1,24 +1,6 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  loadingRequestedPage: "Loading the requested page",
-  didYouKnow: "Did you know?",
-  year: "Year",
-  didYouKnowEntity: {
-    people: "People",
-    country: "Country",
-    family: "Language family",
-  },
-  sourceTier: {
-    official: "Official source",
-    referenced: "Referenced source",
-    unverified: "Unverified source",
-  },
-};
-
-type SystemCopy = typeof en;
-
-const fr: SystemCopy = {
+const fr = {
   loadingRequestedPage: "Chargement de la page demandée",
   didYouKnow: "Saviez-vous que",
   year: "Année",
@@ -34,5 +16,7 @@ const fr: SystemCopy = {
   },
 };
 
+type SystemCopy = typeof fr;
+
 // @req REQ-145
-export const systemCopy: Record<Language, SystemCopy> = { en, fr };
+export const systemCopy: Record<Language, SystemCopy> = { fr };

@@ -1,16 +1,14 @@
 import { vi } from "vitest";
 
-import { getDefaultLocale, isLocale } from "@/lib/locale";
+import { FALLBACK_LOCALE, isLocale } from "@/lib/locale";
 import type { Language } from "@/types/shared";
 
 /**
- * A `next/navigation` stand-in that puts a component on a route of one
- * locale, for the suites that assert French — or English — copy.
+ * A `next/navigation` stand-in that puts a component on a route, for the
+ * suites that assert the copy a page renders.
  *
  * Outside the App Router, the real `usePathname()` and `useParams()` answer
- * `null`, and the route-reading hooks then fall back to the default locale,
- * which follows the publication configuration (REQ-140). A test should still
- * state which locale it stands on so it remains valid when the gate changes.
+ * `null`, and the route-reading hooks then fall back to French (REQ-140).
  *
  * ```ts
  * const navigation = await vi.hoisted(async () => {
@@ -28,7 +26,7 @@ import type { Language } from "@/types/shared";
  * this object: `vi.mock("next/navigation", () => ({ ...navigation, notFound }))`.
  *
  * `useParams` is derived from the pathname rather than set separately, so a
- * test cannot stand on `/fr/...` while its params say `en`.
+ * test cannot stand on one route while its params say another.
  */
 export interface RouteLanguageMock {
   route: { pathname: string | null };
@@ -70,7 +68,7 @@ export function mockRouteLanguage(
     useParams: () => {
       if (route.pathname === null) return null;
       const [head] = route.pathname.split("/").filter(Boolean);
-      return { lang: isLocale(head) ? head : getDefaultLocale() };
+      return { lang: isLocale(head) ? head : FALLBACK_LOCALE };
     },
     useSearchParams: () => new URLSearchParams(),
     useRouter: () => router,

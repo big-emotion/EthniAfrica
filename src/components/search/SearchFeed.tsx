@@ -272,7 +272,7 @@ export function SearchFeed({
   const derivedFicheRows = ficheEntries.map((entry, index): FeedFicheItem =>
     entry.type === "peopleGroup"
       ? {
-          kind: getSearchEntityLabel("people", language),
+          kind: getSearchEntityLabel("people"),
           name: entry.peopleGroupLabel,
           meta: copy.blocks.groupMeta(entry.members.length),
           links: entry.members.map((member) => ({
@@ -282,7 +282,7 @@ export function SearchFeed({
           })),
         }
       : {
-          kind: getSearchEntityLabel(entry.type, language),
+          kind: getSearchEntityLabel(entry.type),
           name: getLocalizedSearchResultName(entry, language),
           meta: copy.blocks.ficheMeta,
           href: ficheHrefFor(entry as SearchResult, language),
@@ -299,9 +299,7 @@ export function SearchFeed({
   const isRelationBrowse = Boolean(relation) && subjects.length === 0;
   const relationLabel =
     isRelationBrowse && relation?.kind === "family"
-      ? ((language === "en"
-          ? results[0]?.languageFamilyNameEn
-          : results[0]?.languageFamilyName) ?? results[0]?.languageFamilyName)
+      ? (results[0]?.languageFamilyName ?? results[0]?.languageFamilyName)
       : isRelationBrowse && relation?.kind === "country"
         ? getCountryCommonName(language, relation.id, relation.id)
         : undefined;
@@ -646,7 +644,7 @@ export function SearchFeed({
             groupLabels={Object.fromEntries(
               subjects.map((subject) => [
                 `${subject.type}:${subject.id}`,
-                `${getLocalizedSearchResultName(subject, language)} · ${getSearchEntityLabel(subject.type, language)}`,
+                `${getLocalizedSearchResultName(subject, language)} · ${getSearchEntityLabel(subject.type)}`,
               ])
             )}
             title={

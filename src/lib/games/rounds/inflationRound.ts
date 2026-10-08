@@ -10,10 +10,6 @@ import {
 } from "@/lib/games/territory";
 import { getAxisHubRoute } from "@/lib/hubs/axisRoutes";
 import { getCountryRoute } from "@/lib/routing";
-import {
-  INFLATION_ROUND_EN,
-  inflationRevealEn,
-} from "@/lib/games/rounds/inflationRound.en";
 
 /**
  * « Lequel des deux Mercator agrandit-il le plus ? » — the mechanism, asked
@@ -112,29 +108,13 @@ export function buildInflationRound(
     subjectId: a.id,
     comparedIds: [a.id, b.id],
     promptFr: INFLATION_PROMPT_FR,
-    promptEn: INFLATION_ROUND_EN.prompt,
-    options: [
-      { labelFr: a.nameFr, labelEn: a.nameEn ?? a.nameFr },
-      { labelFr: b.nameFr, labelEn: b.nameEn ?? b.nameFr },
-    ],
+    options: [{ labelFr: a.nameFr }, { labelFr: b.nameFr }],
     correctIndex,
     reveal: {
       // The rule closes every reveal of this round, and is meant to: a reader
       // who answered wrong has to leave with the mechanism, not with two
       // numbers and the impression that the map is arbitrary.
       textFr: `${factorSentence(a, footprintA)} ${factorSentence(b, footprintB)} Ce n'est pas une question de taille mais de latitude : sur une carte de Mercator, plus un pays est loin de l'équateur, plus il est gonflé.`,
-      textEn: inflationRevealEn(
-        {
-          nameEn: a.nameEn ?? a.nameFr,
-          inflation: footprintA.inflation,
-          latitude: footprintA.latitude,
-        },
-        {
-          nameEn: b.nameEn ?? b.nameFr,
-          inflation: footprintB.inflation,
-          latitude: footprintB.latitude,
-        }
-      ),
       // Measured off the committed outlines, like every round on this page.
       // No fiche is credited because none was read.
       fieldPath: MERCATOR_PROVENANCE_PATH,
@@ -150,9 +130,6 @@ export function buildInflationRound(
       ficheHref: leadsTo
         ? getCountryRoute("fr", leadsTo.id)
         : getAxisHubRoute("fr", "atlas"),
-      ficheHrefEn: leadsTo
-        ? getCountryRoute("en", leadsTo.id)
-        : getAxisHubRoute("en", "atlas"),
     },
   };
 }

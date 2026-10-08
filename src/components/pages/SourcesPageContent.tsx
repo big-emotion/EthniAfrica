@@ -1,11 +1,7 @@
 import { ChapterHeading } from "@/components/pages/ChapterHeading";
 import { SourceCitation } from "@/components/sources/SourceCitation";
 import { NOMMER_BIBLIOGRAPHY } from "@/lib/dossiers/nommer/bibliography";
-import {
-  englishCountryNames,
-  englishCountrySourceNotes,
-  sourcesBibliographyNote,
-} from "@/lib/i18n/copy/sourcesBibliography";
+import { sourcesBibliographyNote } from "@/lib/i18n/copy/sourcesBibliography";
 import type { Language } from "@/types/shared";
 
 /**
@@ -555,41 +551,6 @@ const pageCopy = {
     dossierTitle: "Qui a donné ce nom ?",
     dossierNotesFallback: "",
   },
-  en: {
-    intro: "Complete bibliography — African Peoples and Populations",
-    steps: {
-      international: "01 · International sources",
-      regional: "02 · Sources by region",
-      academic: "03 · Academic sources",
-      complementary: "04 · Additional sources",
-      dossiers: "05 · Editorial dossiers",
-    },
-    headings: {
-      international: "Main international sources",
-      regional: "Sources by region (official African institutes)",
-      academic: "Academic and linguistic sources",
-      complementary: "Additional sources (demography and geopolitics)",
-      dossiers: "Dossier sources",
-    },
-    regions: [
-      "North Africa",
-      "West Africa",
-      "Central Africa",
-      "East Africa",
-      "Southern Africa",
-    ],
-    ciaDescription:
-      "A central source for the distribution of peoples by country, where available.",
-    ciaExample: "(Example: South Africa)",
-    worldBank: "World Bank",
-    unescoStatistics: "UNESCO Institute for Statistics",
-    ethnologueDescription: "For correspondences between peoples and languages",
-    joshuaDescription:
-      "For ethnolinguistic diversity; use with care because of its religious orientation",
-    dossierTitle: "Who gave this name?",
-    dossierNotesFallback:
-      "Editorial notes for these works are awaiting English review. The French originals follow.",
-  },
 } as const satisfies Record<Language, object>;
 
 // Helper function to render source link
@@ -629,26 +590,16 @@ function renderCountrySources(
       name: string;
       item: { name: string; url?: string; description?: string };
     }
-  >,
-  language: Language
+  >
 ) {
   return Object.entries(countries).map(([key, country]) => (
     <div key={key} className="mb-3">
-      <strong className="font-semibold">
-        {language === "en"
-          ? (englishCountryNames[key] ?? country.name)
-          : country.name}
-      </strong>
+      <strong className="font-semibold">{country.name}</strong>
       <ul className="list-disc mt-1">
         {renderSourceLink(
-          language === "en"
-            ? (englishCountrySourceNotes[key]?.name ?? country.item.name)
-            : country.item.name,
+          country.item.name,
           country.item.url,
-          language === "en"
-            ? (englishCountrySourceNotes[key]?.description ??
-                country.item.description)
-            : country.item.description
+          country.item.description
         )}
       </ul>
     </div>
@@ -756,27 +707,27 @@ export default function SourcesPageContent({
 
         <div className="ml-4 space-y-3">
           <p className="text-afh-h3 font-semibold">{copy.regions[0]}</p>
-          {renderCountrySources(t.regional.northAfrica.countries, language)}
+          {renderCountrySources(t.regional.northAfrica.countries)}
         </div>
 
         <div className="ml-4 space-y-3">
           <p className="text-afh-h3 font-semibold">{copy.regions[1]}</p>
-          {renderCountrySources(t.regional.westAfrica.countries, language)}
+          {renderCountrySources(t.regional.westAfrica.countries)}
         </div>
 
         <div className="ml-4 space-y-3">
           <p className="text-afh-h3 font-semibold">{copy.regions[2]}</p>
-          {renderCountrySources(t.regional.centralAfrica.countries, language)}
+          {renderCountrySources(t.regional.centralAfrica.countries)}
         </div>
 
         <div className="ml-4 space-y-3">
           <p className="text-afh-h3 font-semibold">{copy.regions[3]}</p>
-          {renderCountrySources(t.regional.eastAfrica.countries, language)}
+          {renderCountrySources(t.regional.eastAfrica.countries)}
         </div>
 
         <div className="ml-4 space-y-3">
           <p className="text-afh-h3 font-semibold">{copy.regions[4]}</p>
-          {renderCountrySources(t.regional.southernAfrica.countries, language)}
+          {renderCountrySources(t.regional.southernAfrica.countries)}
         </div>
       </section>
 
@@ -882,7 +833,7 @@ export default function SourcesPageContent({
                   <span
                     className="block text-afh-caption text-afh-text-soft"
                     data-dossier-source-note
-                    lang={language === "en" ? "fr" : undefined}
+                    lang={undefined}
                   >
                     {source.notes}
                   </span>

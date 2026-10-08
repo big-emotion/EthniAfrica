@@ -1,3 +1,6 @@
+import { localeTag } from "@/lib/languageTag";
+import type { Language } from "@/types/shared";
+
 /**
  * Formats the doctrine version label as:
  *   "v{n} · publiée le {long French date}"
@@ -12,17 +15,11 @@ export function formatVersionLabel(
   language: Language = "fr"
 ): string {
   const date = new Date(publishedAt);
-  const longDate = date.toLocaleDateString(
-    language === "en" ? "en-GB" : "fr-FR",
-    {
-      day: "numeric",
-      month: "long",
-      year: "numeric",
-      timeZone: "UTC",
-    }
-  );
-  return language === "en"
-    ? `v${version} · published ${longDate}`
-    : `v${version} · publiée le ${longDate}`;
+  const longDate = date.toLocaleDateString(localeTag(language), {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+  return `v${version} · publiée le ${longDate}`;
 }
-import type { Language } from "@/types/shared";

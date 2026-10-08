@@ -158,28 +158,6 @@ describe("FicheNameStory", () => {
   });
 
   // @req REQ-151
-  it("wraps itself in a titled chapter when it stands alone", () => {
-    const { container } = render(
-      <FicheNameStory naming={fula()} language="en" chapter />
-    );
-
-    const chapter = container.querySelector("[data-fiche-section]");
-    expect(chapter).toHaveAttribute(
-      "data-fiche-section",
-      "The story of the names"
-    );
-    expect(screen.getAllByText("The story of the names")).toHaveLength(1);
-  });
-
-  // @req REQ-151
-  it("speaks English when asked to", () => {
-    render(<FicheNameStory naming={fula()} language="en" />);
-    expect(
-      screen.getByRole("heading", { name: "Where do these names come from?" })
-    ).toBeVisible();
-  });
-
-  // @req REQ-151
   it("draws a caution note only when one is given, lead first, rest behind a disclosure", () => {
     const caution =
       "Sous l'apartheid, ce terme servait de catégorie raciale légale. Des intellectuels africains ont critiqué ce vocabulaire.";
@@ -208,5 +186,19 @@ describe("FicheNameStory", () => {
     expect(note.querySelector("details")).toHaveTextContent(
       "fin sans terminaison"
     );
+  });
+
+  // @req REQ-178
+  it("wraps itself in a titled chapter when it stands alone", () => {
+    const { container } = render(
+      <FicheNameStory naming={fula()} language="fr" chapter />
+    );
+
+    const chapter = container.querySelector("[data-fiche-section]");
+    expect(chapter).toHaveAttribute(
+      "data-fiche-section",
+      "L’histoire des noms"
+    );
+    expect(screen.getAllByText("L’histoire des noms")).toHaveLength(1);
   });
 });

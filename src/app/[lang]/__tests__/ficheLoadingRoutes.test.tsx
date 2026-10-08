@@ -1,13 +1,12 @@
 import { render, screen } from "@testing-library/react";
 import type { ReactElement } from "react";
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import { ConsentProvider } from "@/hooks/use-consent";
 
 import CountryFicheLoading from "@/app/[lang]/atlas/pays/[slug]/loading";
 import PeopleFicheLoading from "@/app/[lang]/atlas/peuples/[slug]/loading";
 import FamilyFicheLoading from "@/app/[lang]/atlas/familles/[slug]/loading";
-import { LOCALE_HEADER } from "@/lib/locale";
 import { getCountryRoute } from "@/lib/routing";
 
 vi.mock("next/navigation", () => ({
@@ -16,24 +15,14 @@ vi.mock("next/navigation", () => ({
   useSearchParams: () => new URLSearchParams(),
 }));
 
-// A `loading.tsx` receives no params, so the screen it mounts reads the
-// locale the middleware stamped on the request.
-const requestHeaders = vi.hoisted(() => new Map<string, string>());
-
-vi.mock("next/headers", () => ({
-  headers: vi.fn(async () => ({
-    get: (name: string) => requestHeaders.get(name) ?? null,
-  })),
-}));
-
 /** The shell these files render carries a footer that reads the consent context. */
 const renderInShell = (ui: ReactElement) =>
   render(<ConsentProvider>{ui}</ConsentProvider>);
 
 /**
- * A loading file hands back the shared screen unrendered, and that screen is
- * an async server component: it is resolved here the way the server would,
- * so the test still reads what each route mounts rather than the screen alone.
+ * A loading file hands back the shared screen unrendered: it is resolved
+ * here the way the server would, so the test still reads what each route
+ * mounts rather than the screen alone.
  */
 const renderLoadingRoute = async (Loading: () => ReactElement) => {
   const mounted = Loading();
@@ -42,11 +31,6 @@ const renderLoadingRoute = async (Loading: () => ReactElement) => {
   ) => Promise<ReactElement> | ReactElement;
   return renderInShell(await resolve(mounted.props));
 };
-
-beforeEach(() => {
-  requestHeaders.clear();
-  requestHeaders.set(LOCALE_HEADER, "fr");
-});
 
 /**
  * The three fiche segments are the slow ones — they each fan out to several

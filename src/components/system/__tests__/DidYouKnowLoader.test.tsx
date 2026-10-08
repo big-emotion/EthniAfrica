@@ -25,15 +25,6 @@ const styleSheetOf = (container: HTMLElement) =>
     .join("\n");
 
 describe("DidYouKnowLoader (REQ-104 — the wait is spent reading)", () => {
-  // @req REQ-145
-  it("localizes the loading chrome in English", () => {
-    render(<DidYouKnowLoader language="en" fact={FACT} label="Loading" />);
-
-    expect(screen.getByText("Did you know?")).toBeVisible();
-    expect(screen.getByText("Country")).toBeVisible();
-    expect(screen.getByText("Referenced source")).toBeVisible();
-  });
-
   // @req REQ-104
   it("announces the wait to assistive technology with the label it was given", () => {
     render(<DidYouKnowLoader fact={FACT} label="Chargement" />);

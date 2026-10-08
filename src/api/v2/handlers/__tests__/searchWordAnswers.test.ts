@@ -68,7 +68,7 @@ type Data = {
   results: unknown[];
 };
 
-async function search(q: string, lang?: "fr" | "en", lens?: "quiz") {
+async function search(q: string, lang?: "fr", lens?: "quiz") {
   const { data } = (await ftsSearchHandler({
     q,
     limit: 20,
@@ -94,12 +94,6 @@ describe("search response word answers", () => {
       kind: "word",
       title: "pharaon",
     });
-  });
-
-  // @req REQ-184
-  it("localizes the answer by lang", async () => {
-    const data = await search("pharaon", "en");
-    expect(data.wordAnswers?.[0].title).toBe("pharaoh");
   });
 
   // @req REQ-184

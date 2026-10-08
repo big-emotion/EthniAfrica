@@ -8,13 +8,10 @@ import type {
 } from "@/lib/supabase/queries/flags/publicFlagsPageQuery";
 
 import { PublicFlagsQueue } from "../PublicFlagsQueue";
-import { getStaticPageRoute } from "@/lib/routing";
 
 const replaceMock = vi.fn();
 const loadPublicFlagsPageMock = vi.fn();
 
-// Mutable so one case can put the queue on its English address: the row
-// permalinks follow the locale the queue is read in.
 const navigation = vi.hoisted(() => ({ pathname: "/fr/signalements" }));
 
 vi.mock("next/navigation", () => ({
@@ -241,40 +238,5 @@ describe("PublicFlagsQueue", () => {
     const reason = screen.getByTestId("flag-reason").textContent ?? "";
     expect(Array.from(reason)).toHaveLength(120);
     expect(reason).toBe(`${"a".repeat(118)}😀…`);
-  });
-
-  // The row used to link every report under the French queue whatever page
-  // the ledger was read on, so an English reader crossed locales on the
-  // first click.
-  // @req REQ-141
-  it("links each report under the queue's own locale", () => {
-    navigation.pathname = getStaticPageRoute("en", "reports");
-    window.history.replaceState({}, "", navigation.pathname);
-    renderQueue();
-
-    expect(
-      within(screen.getByRole("article")).getByRole("link", { name: /Beti/i })
-    ).toHaveAttribute(
-      "href",
-      `${getStaticPageRoute("en", "reports")}/sig-2026-0001`
-    );
-  });
-
-  // @req REQ-145
-  it("renders filters, rows and relative dates in English on the English route", () => {
-    navigation.pathname = getStaticPageRoute("en", "reports");
-    window.history.replaceState({}, "", navigation.pathname);
-    renderQueue();
-
-    expect(
-      screen.getByRole("button", { name: "Statuses" })
-    ).toBeInTheDocument();
-    expect(screen.getByText("People")).toBeInTheDocument();
-    expect(screen.getByText("Missing source")).toBeInTheDocument();
-    expect(screen.getByText("anonymous")).toBeInTheDocument();
-    expect(screen.getByText("2 days ago")).toBeInTheDocument();
-    expect(
-      screen.getByText("in progress — editorial review")
-    ).toBeInTheDocument();
   });
 });

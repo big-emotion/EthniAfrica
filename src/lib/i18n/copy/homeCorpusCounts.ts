@@ -22,16 +22,6 @@ export interface HomeCorpusCountsCopy {
 // @req REQ-113
 // @req REQ-145
 export const homeCorpusCountsCopy: Record<Language, HomeCorpusCountsCopy> = {
-  en: {
-    title: "EthniAfrica at a glance",
-    ariaLabel: "What we document",
-    unavailable: "Unavailable for now",
-    tileLabels: {
-      peoples: "peoples documented",
-      languages: "languages documented",
-      patronymes: "names documented",
-    },
-  },
   fr: {
     title: "EthniAfrica en quelques repères",
     ariaLabel: "Ce que nous documentons",

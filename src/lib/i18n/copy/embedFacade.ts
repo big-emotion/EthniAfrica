@@ -9,18 +9,7 @@ import type { Language } from "@/types/shared";
  * and `{settings}` are filled by the component; the settings label is the
  * consent panel's own title, never retyped here.
  */
-const en = {
-  play: "Watch here",
-  playLabel: "Watch here: {name} — loads YouTube's player",
-  notice:
-    "Playing loads YouTube’s player, which writes trackers to your device and receives your IP address. Your choice is kept and can be withdrawn in “{settings}”.",
-  watchOnPlatform: "Watch on YouTube",
-  close: "Close the player",
-};
-
-type EmbedFacadeCopy = typeof en;
-
-const fr: EmbedFacadeCopy = {
+const fr = {
   play: "Regarder sur place",
   playLabel: "Regarder sur place : {name} — charge le lecteur de YouTube",
   notice:
@@ -29,5 +18,7 @@ const fr: EmbedFacadeCopy = {
   close: "Fermer le lecteur",
 };
 
+type EmbedFacadeCopy = typeof fr;
+
 // @req REQ-181
-export const embedFacadeCopy: Record<Language, EmbedFacadeCopy> = { en, fr };
+export const embedFacadeCopy: Record<Language, EmbedFacadeCopy> = { fr };

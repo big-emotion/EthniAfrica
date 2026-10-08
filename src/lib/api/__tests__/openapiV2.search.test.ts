@@ -82,10 +82,10 @@ describe("OpenAPI v2 unified search contract", () => {
     expect(lens?.description).toMatch(/main search stream/i);
   });
 
-  // ETNI-1857: the locale is an additive optional parameter — no existing
-  // caller changes, and an unknown value is refused rather than defaulted.
+  // The English site was retired: the parameter stays optional and accepts
+  // French alone, and any other value is refused rather than defaulted.
   // @req REQ-141
-  it("documents the optional lang parameter as the two published locales", () => {
+  it("documents the optional lang parameter as French only", () => {
     const operation = spec.paths["/api/v2/search"]?.get;
     const lang = operation?.parameters?.find(
       (parameter) => parameter.in === "query" && parameter.name === "lang"
@@ -93,17 +93,16 @@ describe("OpenAPI v2 unified search contract", () => {
 
     expect(lang).toBeDefined();
     expect(lang?.required ?? false).toBe(false);
-    expect(lang?.schema?.enum).toEqual(["en", "fr"]);
-    expect(lang?.description).toMatch(/English name/i);
+    expect(lang?.schema?.enum).toEqual(["fr"]);
     expect(lang?.description).toMatch(/French/i);
+    expect(lang?.description).toMatch(/400/);
   });
 
   // @req REQ-141
-  it("no longer describes the cross-kind tie-break as French-only", () => {
+  it("describes the cross-kind tie-break as collated in French", () => {
     const results = schemas.SearchResponseData.properties?.results;
 
-    expect(results?.description).not.toMatch(/French collation/);
-    expect(results?.description).toMatch(/locale/i);
+    expect(results?.description).toMatch(/collated in French/);
   });
 
   // @req REQ-121

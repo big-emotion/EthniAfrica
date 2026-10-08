@@ -89,18 +89,6 @@ describe("search response name suggestions", () => {
   });
 
   // @req REQ-125
-  it("suggests it in English for an English search", async () => {
-    const { data } = (await ftsSearchHandler({
-      q: "pigmy",
-      limit: 20,
-      offset: 0,
-      lang: "en",
-    })) as unknown as Suggested;
-
-    expect(data.nameSuggestions).toEqual(["Pygmy"]);
-  });
-
-  // @req REQ-125
   it("suggests nothing once the search has found something", async () => {
     vi.mocked(ftsSearch).mockResolvedValue({
       ...emptyResponse(),
