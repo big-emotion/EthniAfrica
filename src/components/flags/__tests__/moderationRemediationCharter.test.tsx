@@ -182,19 +182,4 @@ describe("the remediation axis is a record, not an opinion", () => {
 
     expect(screen.queryByTestId("flag-remediation-record")).toBeNull();
   });
-
-  // @req REQ-042
-  it("names both axes in English too", () => {
-    render(
-      <FlagRemediationRecord
-        state="not_started"
-        decidedAt="2026-09-16T08:02:00.000Z"
-        language="en"
-      />
-    );
-
-    const record = screen.getByTestId("flag-remediation-record");
-    expect(record).toHaveTextContent("Corpus state");
-    expect(record).toHaveTextContent("Correction not yet published");
-  });
 });

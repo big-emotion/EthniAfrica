@@ -143,8 +143,7 @@ function hasBrowsableSeries(entry: DiscoveryPublication): boolean {
         hasText(frame.src) &&
         frame.width > 0 &&
         frame.height > 0 &&
-        hasText(frame.alt?.fr) &&
-        hasText(frame.alt?.en)
+        hasText(frame.alt?.fr)
     )
   );
 }
@@ -163,15 +162,12 @@ function hasPublishableVisual(entry: DiscoveryPublication): boolean {
       video &&
       (entry.detail?.entities.length || entry.detail?.word?.queries.length) &&
       hasText(video.name.fr) &&
-      hasText(video.name.en) &&
       entry.title.fr === formatProductionNameQuestion(video.name.fr, "fr") &&
-      entry.title.en === formatProductionNameQuestion(video.name.en, "en") &&
       !Number.isNaN(Date.parse(video.publishedAt)) &&
       Number.isFinite(video.durationSeconds) &&
       video.durationSeconds > 0 &&
       hasText(video.poster.src) &&
       video.poster.alt.fr === formatProductionPosterAlt(video.name.fr, "fr") &&
-      video.poster.alt.en === formatProductionPosterAlt(video.name.en, "en") &&
       video.poster.width > 0 &&
       video.poster.height > 0 &&
       isHttpsUrl(video.watchUrl)
@@ -200,16 +196,14 @@ export function eligiblePublications(
   const seenIds = new Set<string>();
   const seenPaths = new Set<string>();
   return records.filter((entry) => {
-    const paths = [entry.slug.fr, entry.slug.en];
+    const paths = [entry.slug.fr];
     const ready =
       entry.status === "published" &&
       hasText(entry.id) &&
       paths.every(hasText) &&
       paths.every((path) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(path)) &&
       hasText(entry.title.fr) &&
-      hasText(entry.title.en) &&
       hasText(entry.description.fr) &&
-      hasText(entry.description.en) &&
       hasText(entry.source?.title) &&
       hasText(entry.source?.url) &&
       entry.source?.tier !== "unverified" &&

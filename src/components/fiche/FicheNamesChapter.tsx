@@ -140,7 +140,7 @@ export function FicheNamesChapter(props: FicheNamesChapterProps) {
     return (
       <FicheSection
         title={namesChapterTitle("people", names, language)}
-        id={language === "fr" ? "chapitre-noms-portes" : "chapitre-names-borne"}
+        id={"chapitre-noms-portes"}
       >
         {names === null || names.length === 0 ? (
           <FieldProvenanceMarker
@@ -195,9 +195,7 @@ export function FicheNamesChapter(props: FicheNamesChapterProps) {
         patronymes ? [...attested, ...carried] : null,
         language
       )}
-      id={
-        language === "fr" ? "chapitre-noms-attestes" : "chapitre-attested-names"
-      }
+      id={"chapitre-noms-attestes"}
     >
       {patronymes === null ||
       (attested.length === 0 && carried.length === 0) ? (

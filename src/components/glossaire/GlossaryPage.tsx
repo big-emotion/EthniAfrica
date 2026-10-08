@@ -84,17 +84,17 @@ export const GlossaryPage = ({ language }: { language: Language }) => {
                     className="flex flex-col gap-afh-xs text-left"
                   >
                     <h3 className="font-afh-display text-afh-body font-semibold text-afh-text">
-                      {language === "en" ? entry.en : entry.fr}
+                      {entry.fr}
                     </h3>
                     <p
                       className="text-afh-small text-afh-text-soft"
-                      lang={language === "en" ? "fr" : undefined}
+                      lang={undefined}
                     >
                       {entry.definition}
                     </p>
                     <p
                       className="text-afh-caption text-afh-text-soft"
-                      lang={language === "en" ? "fr" : undefined}
+                      lang={undefined}
                     >
                       {entry.corpusPresence === "instantiated"
                         ? entry.corpusExample

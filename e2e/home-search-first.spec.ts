@@ -1,9 +1,8 @@
 import { expect, test } from "@playwright/test";
 import { LOCALE } from "./support/locale";
 
-const french = LOCALE === "fr";
-const intro = french ? "Essayez avec" : "Try";
-const renew = french ? "Autres exemples" : "More examples";
+const intro = "Essayez avec";
+const renew = "Autres exemples";
 
 for (const width of [320, 390, 430, 768, 1199, 1440]) {
   // @req REQ-112
@@ -57,7 +56,7 @@ test("contribution invitation opens the contribution page", async ({
   const contribution = page.getByTestId("home-contribute");
   await contribution
     .getByRole("link", {
-      name: french ? "Contribuer" : "Contribute",
+      name: "Contribuer",
       exact: true,
     })
     .click();

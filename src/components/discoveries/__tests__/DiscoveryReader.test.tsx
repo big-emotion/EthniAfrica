@@ -6,7 +6,7 @@ import type { DiscoveryPublication } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
 import { ConsentProvider } from "@/hooks/use-consent";
 import { DISCOVERY_VIDEOS, videoPublications } from "@/lib/discoveries/videos";
-import { getCountryRoute, getPeopleRoute } from "@/lib/routing";
+import { getCountryRoute } from "@/lib/routing";
 
 // The photo, browsing and sharing suites below walk the two photographed
 // anecdotes in a known order; the proverbs have their own suite at the end.
@@ -18,9 +18,9 @@ const proverbPublication: DiscoveryPublication = {
   id: "proverb:test",
   kind: "proverb",
   status: "published",
-  slug: { fr: "proverbe-test", en: "proverb-test" },
-  title: { fr: "Texte du proverbe.", en: "Proverb text." },
-  description: { fr: "Ce que dit le proverbe.", en: "What it says." },
+  slug: { fr: "proverbe-test" },
+  title: { fr: "Texte du proverbe." },
+  description: { fr: "Ce que dit le proverbe." },
   original: { text: "Ọ̀rọ̀ àtijọ́", lang: "yor" },
   source: {
     title: "Recueil publié",
@@ -28,7 +28,7 @@ const proverbPublication: DiscoveryPublication = {
     tier: "referenced",
   },
   detail: {
-    body: { fr: ["Ce que dit le proverbe."], en: ["What it says."] },
+    body: { fr: ["Ce que dit le proverbe."] },
     entities: [],
     sources: [{ title: "Recueil publié", url: "https://example.org/recueil" }],
   },
@@ -212,8 +212,6 @@ describe("Découvertes browsing", () => {
     document.head.innerHTML = `<title>Burkina</title>
       <meta name="description" content="Burkina">
       <link rel="canonical" href="https://ethniafrica.com/fr/decouvertes/burkina-faso-trois-langues">
-      <link rel="alternate" hreflang="fr" href="https://ethniafrica.com/fr/decouvertes/burkina-faso-trois-langues">
-      <link rel="alternate" hreflang="x-default" href="https://ethniafrica.com/fr/decouvertes/burkina-faso-trois-langues">
       <meta property="og:title" content="Burkina">
       <meta property="og:description" content="Burkina">
       <meta property="og:url" content="https://ethniafrica.com/fr/decouvertes/burkina-faso-trois-langues">
@@ -237,18 +235,6 @@ describe("Découvertes browsing", () => {
     )!;
     expect(document.title).toBe(guere.title.fr);
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
-      "href",
-      "https://ethniafrica.com/fr/decouvertes/guere-krahn-we"
-    );
-    expect(
-      document.querySelector('link[rel="alternate"][hreflang="fr"]')
-    ).toHaveAttribute(
-      "href",
-      "https://ethniafrica.com/fr/decouvertes/guere-krahn-we"
-    );
-    expect(
-      document.querySelector('link[rel="alternate"][hreflang="x-default"]')
-    ).toHaveAttribute(
       "href",
       "https://ethniafrica.com/fr/decouvertes/guere-krahn-we"
     );
@@ -455,9 +441,8 @@ describe("Découvertes proverb frame", () => {
               credit: "Auteur Test, CC BY-SA 4.0",
               shortCredit: {
                 fr: "Auteur Test, CC BY-SA",
-                en: "Author Test, CC BY-SA",
               },
-              alt: { fr: "Un marché au crépuscule.", en: "A market at dusk." },
+              alt: { fr: "Un marché au crépuscule." },
               licence: "cc-by-sa",
             },
           },
@@ -507,11 +492,10 @@ const carouselPublication: DiscoveryPublication = {
   id: "carousel:guinee",
   kind: "carousel",
   status: "published",
-  slug: { fr: "guinee-trois-recits", en: "guinea-three-accounts" },
-  title: { fr: "Guinée, trois récits", en: "Guinea, three accounts" },
+  slug: { fr: "guinee-trois-recits" },
+  title: { fr: "Guinée, trois récits" },
   description: {
     fr: "Ce que le nom raconte.",
-    en: "What the name tells.",
   },
   source: {
     title: "Fiche Guinée",
@@ -529,19 +513,19 @@ const carouselPublication: DiscoveryPublication = {
         src: "/images/discoveries/carousel/guinee/1.jpg",
         width: 1080,
         height: 1350,
-        alt: { fr: "Première carte", en: "First card" },
+        alt: { fr: "Première carte" },
       },
       {
         src: "/images/discoveries/carousel/guinee/2.jpg",
         width: 1080,
         height: 1350,
-        alt: { fr: "Deuxième carte", en: "Second card" },
+        alt: { fr: "Deuxième carte" },
       },
       {
         src: "/images/discoveries/carousel/guinee/3.jpg",
         width: 1080,
         height: 1350,
-        alt: { fr: "Troisième carte", en: "Third card" },
+        alt: { fr: "Troisième carte" },
       },
     ],
   },
@@ -673,15 +657,15 @@ describe("Découvertes video", () => {
   const withoutEmbed: DiscoveryPublication = {
     ...video,
     id: "video:no-embed",
-    slug: { fr: "sans-lecteur", en: "no-player" },
+    slug: { fr: "sans-lecteur" },
     video: { ...video.video!, embed: undefined },
   };
 
-  const renderVideo = (publication: DiscoveryPublication, language = "fr") =>
+  const renderVideo = (publication: DiscoveryPublication) =>
     render(
       <ConsentProvider>
         <DiscoveryReader
-          language={language as "fr" | "en"}
+          language="fr"
           publications={[publication]}
           initialId={publication.id}
         />
@@ -789,15 +773,5 @@ describe("Découvertes video", () => {
       "href",
       "https://creativecommons.org/licenses/by-sa/4.0/"
     );
-  });
-
-  // @req REQ-181
-  it("speaks English on an English route", () => {
-    renderVideo(video, "en");
-
-    expect(screen.getByText("Video")).toBeInTheDocument();
-    expect(
-      screen.getByRole("button", { name: /loads YouTube's player/i })
-    ).toBeInTheDocument();
   });
 });

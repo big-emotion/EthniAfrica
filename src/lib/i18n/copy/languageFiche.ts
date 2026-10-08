@@ -1,21 +1,6 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  identifiers: "Identifiers",
-  otherAttestedNames: "Other attested names",
-  languageFamily: "Language family",
-  speakers: "Speakers",
-  dialects: "Dialects",
-  vehicularRole: "Vehicular role",
-  vitality: "Vitality",
-  sources: "Sources",
-  eyebrow: "Language",
-  majorityVote: "majority vote of the sources",
-};
-
-type LanguageFicheCopy = typeof en;
-
-const fr: LanguageFicheCopy = {
+const fr = {
   identifiers: "Identifiants",
   otherAttestedNames: "Autres noms attestés",
   languageFamily: "Famille linguistique",
@@ -28,8 +13,9 @@ const fr: LanguageFicheCopy = {
   majorityVote: "vote majoritaire des sources",
 };
 
+type LanguageFicheCopy = typeof fr;
+
 // @req REQ-145
 export const languageFicheCopy: Record<Language, LanguageFicheCopy> = {
-  en,
   fr,
 };

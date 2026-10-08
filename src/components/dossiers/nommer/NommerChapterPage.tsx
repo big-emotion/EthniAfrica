@@ -3,10 +3,8 @@ import { NamePairGrid } from "@/components/dossiers/nommer/NamePairGrid";
 import { SourcedTable } from "@/components/dossiers/nommer/SourcedTable";
 import { FicheChapterBar } from "@/components/fiche/FicheChapterBar";
 import { FicheSection } from "@/components/fiche/FicheSection";
-import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { ActionLink } from "@/components/ui/ActionLink";
-import { NOMMER_CHAPTERS_EN } from "@/lib/dossiers/nommer/chapters/index.en";
 import {
   getLocalizedNommerChapters,
   localizeNommerChapter,
@@ -64,17 +62,6 @@ export const NommerChapterPage = ({
       <div className="afh-accent-teal flex flex-col gap-afh-6xl">
         <FicheChapterBar />
 
-        <TranslationProvenanceMarker
-          translation={
-            language === "en"
-              ? {
-                  kind: NOMMER_CHAPTERS_EN[chapter.key].provenance,
-                  stale: false,
-                }
-              : null
-          }
-        />
-
         <article className="afh-parchment">
           {renderedChapter.sections.map((section) => (
             <FicheSection
@@ -87,9 +74,7 @@ export const NommerChapterPage = ({
                 <p key={block.text.slice(0, 48)}>{block.text}</p>
               ))}
               {section.table ? <SourcedTable table={section.table} /> : null}
-              {section.pairs ? (
-                <NamePairGrid pairs={section.pairs} language={language} />
-              ) : null}
+              {section.pairs ? <NamePairGrid pairs={section.pairs} /> : null}
             </FicheSection>
           ))}
         </article>

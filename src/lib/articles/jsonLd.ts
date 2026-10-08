@@ -13,7 +13,7 @@ import type { Article } from "./schema";
  */
 // @req REQ-114
 export function articleJsonLd(article: Article, language: Language) {
-  const body = (language === "en" && article.en) || article.fr;
+  const body = article.fr;
   const first = article.media.formats[0];
   const imagePath =
     first.kind === "video" ? first.poster.src : first.slides[0].src;
@@ -27,7 +27,7 @@ export function articleJsonLd(article: Article, language: Language) {
     "@type": "Article" as const,
     headline: body.title,
     description: body.excerpt,
-    inLanguage: body === article.fr ? "fr" : "en",
+    inLanguage: language,
     datePublished: article.publishedAt,
     ...(article.modifiedAt ? { dateModified: article.modifiedAt } : {}),
     author: { "@type": "Organization", name: article.author.name },

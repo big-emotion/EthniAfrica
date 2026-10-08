@@ -83,7 +83,7 @@ export async function ftsSearchHandler(
 /** Keep the public main and quiz streams isolated even if an upstream layer regresses. */
 function shapeSearchData(
   result: FtsSearchResponse,
-  { lens, q, lang }: Pick<FtsSearchParams, "lens" | "q" | "lang">
+  { lens, q }: Pick<FtsSearchParams, "lens" | "q">
 ): FtsSearchData {
   const quizzesTotal = result.quizzesTotal ?? 0;
 
@@ -126,7 +126,7 @@ function shapeSearchData(
     personsTotal +
     patronymesTotal +
     languagesTotal;
-  const language = lang === "en" ? "en" : "fr";
+  const language = "fr";
 
   return {
     peoples: (result.peoples ?? []) as object[],

@@ -8,18 +8,7 @@ import type { Language } from "@/types/shared";
  * repeated it flat would publish a contested claim as settled. It carries no
  * figure either: the short says sixty languages and the fiche seventy-five.
  */
-const en = {
-  mande: {
-    name: "Mandé",
-    description:
-      "“Mandé” is the name of a family of languages in West Africa. It was the German linguist Sigismund Wilhelm Koelle who made it the name of a classification, in 1854; the Manden region itself is attested long before, in Mandinka tradition.",
-    sourceTitle: "Mandé — language family",
-  },
-};
-
-type DiscoveryVideosCopy = typeof en;
-
-const fr: DiscoveryVideosCopy = {
+const fr = {
   mande: {
     name: "Mandé",
     description:
@@ -28,8 +17,9 @@ const fr: DiscoveryVideosCopy = {
   },
 };
 
+type DiscoveryVideosCopy = typeof fr;
+
 // @req REQ-181
 export const discoveryVideosCopy: Record<Language, DiscoveryVideosCopy> = {
-  en,
   fr,
 };

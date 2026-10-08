@@ -2,12 +2,9 @@ import { createServerClient } from "../../server";
 import { logger } from "@/lib/api/logger";
 import { walkRanges } from "@/lib/supabase/queries/walkRanges";
 import type { SeedWords } from "@/lib/home/seedWords";
-import type { Language } from "@/types/shared";
 
 // @req REQ-002
-export async function getSeedNameCandidates(
-  language: Language
-): Promise<SeedWords> {
+export async function getSeedNameCandidates(): Promise<SeedWords> {
   const empty: SeedWords = {
     patronyme: [],
     language: [],
@@ -18,13 +15,9 @@ export async function getSeedNameCandidates(
     const client = createServerClient();
     const tables = [
       ["patronyme", "afrik_patronymes", "name_main"],
-      [
-        "language",
-        "afrik_languages",
-        language === "en" ? "content->>nameEn" : "name",
-      ],
+      ["language", "afrik_languages", "name"],
       ["people", "afrik_peoples", "content->appellations->>selfAppellation"],
-      ["country", "afrik_countries", language === "en" ? "name_en" : "name_fr"],
+      ["country", "afrik_countries", "name_fr"],
     ] as const;
     const entries = await Promise.all(
       tables.map(async ([kind, table, column]) => {

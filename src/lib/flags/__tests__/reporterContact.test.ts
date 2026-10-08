@@ -129,9 +129,9 @@ describe("createReporterContact", () => {
   it("records the route locale beside the private address", async () => {
     const { inserted } = database({});
 
-    await createReporterContact(FLAG_ID, "reader@example.org", "en");
+    await createReporterContact(FLAG_ID, "reader@example.org", "fr");
 
-    expect(inserted[0].locale).toBe("en");
+    expect(inserted[0].locale).toBe("fr");
   });
 });
 
@@ -214,8 +214,10 @@ describe("verifyReporterContact", () => {
 describe("getVerifiedReporterContact", () => {
   beforeEach(() => vi.clearAllMocks());
 
+  // A contact recorded while English was published is still written to in
+  // French: the site no longer has another language to answer in.
   // @req REQ-042
-  it("returns the address once it has been proven", async () => {
+  it("returns the address once it has been proven, to be written to in French", async () => {
     database({
       flag_reporter_contacts: {
         email: "lectrice@example.org",
@@ -226,7 +228,7 @@ describe("getVerifiedReporterContact", () => {
 
     await expect(getVerifiedReporterContact(FLAG_ID)).resolves.toEqual({
       email: "lectrice@example.org",
-      language: "en",
+      language: "fr",
     });
   });
 

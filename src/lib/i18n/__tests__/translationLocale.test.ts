@@ -4,13 +4,12 @@ import { isTranslationLocale } from "../translationLocale";
 
 describe("isTranslationLocale", () => {
   // The route reads a request value and must refuse, not default, anything
-  // the atlas does not publish — including the locales the middleware
-  // redirects and a case variant a browser might send.
-  // @req REQ-141
-  it("accepts exactly the two published locales", () => {
-    expect(isTranslationLocale("en")).toBe(true);
+  // the site does not publish — English included now that it is retired, and
+  // a case variant a browser might send.
+  // @req REQ-140
+  it("accepts French and nothing else", () => {
     expect(isTranslationLocale("fr")).toBe(true);
-    for (const rejected of ["de", "es", "pt", "EN", "fr-FR", "", "en "]) {
+    for (const rejected of ["en", "de", "es", "pt", "FR", "fr-FR", "", "fr "]) {
       expect(isTranslationLocale(rejected), rejected).toBe(false);
     }
   });

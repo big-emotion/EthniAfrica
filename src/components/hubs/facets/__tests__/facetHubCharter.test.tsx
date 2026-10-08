@@ -139,16 +139,6 @@ describe("facet band — a fixed band, never an aspect ratio", () => {
 });
 
 describe("facet switcher — plain anchors, not a widget", () => {
-  // @req REQ-145
-  it("names every facet and its landmark in English", () => {
-    render(<FacetSwitcher language="en" active="peoples" />);
-
-    expect(screen.getByRole("navigation", { name: "Facets" })).toBeVisible();
-    expect(
-      screen.getAllByRole("link").map((link) => link.textContent?.trim())
-    ).toEqual(["Families", "Languages", "Peoples", "Countries", "Names"]);
-  });
-
   /**
    * The switcher and the hub's module list are two renderings of one running
    * order, and a reader crossing from one to the other reads them as the same

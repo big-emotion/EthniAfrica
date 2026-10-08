@@ -6,7 +6,6 @@ export default function AccessibiliteLoading() {
   return (
     <PageLoadingScreen
       label={{
-        en: systemStatesCopy.en.loading.accessibility,
         fr: systemStatesCopy.fr.loading.accessibility,
       }}
     />

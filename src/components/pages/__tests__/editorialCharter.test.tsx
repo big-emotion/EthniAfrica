@@ -265,27 +265,6 @@ describe("DoctrinePageContent", () => {
     expect(container.querySelector("#colonial-legacy")).not.toBeNull();
     expect(container.querySelector("#reconstructive")).not.toBeNull();
   });
-
-  // @req REQ-141
-  it("explains every classification status in English", () => {
-    render(<DoctrinePageContent language="en" />);
-
-    expect(
-      screen.getByRole("heading", { level: 1, name: "How we work" })
-    ).toBeInTheDocument();
-    expect(screen.getAllByText(/Editorial status$/)).toHaveLength(4);
-    expect(
-      screen.getByText(/A classification is .*consensual when/)
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("status", {
-        name: "Machine translation, not yet reviewed",
-      })
-    ).toBeInTheDocument();
-    expect(
-      screen.queryByText("Comment nous travaillons")
-    ).not.toBeInTheDocument();
-  });
 });
 
 // ---------------------------------------------------------------------------

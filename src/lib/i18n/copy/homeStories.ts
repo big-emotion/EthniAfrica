@@ -10,11 +10,6 @@ export interface HomeStoriesCopy {
 // @req REQ-115
 // @req REQ-145
 export const homeStoriesCopy: Record<Language, HomeStoriesCopy> = {
-  en: {
-    title: "Stories to discover",
-    intro: "A familiar word can open onto an unexpected story.",
-    linkLabel: "Read the story",
-  },
   fr: {
     title: "Des histoires à découvrir",
     intro: "Un mot familier peut ouvrir sur une histoire inattendue.",

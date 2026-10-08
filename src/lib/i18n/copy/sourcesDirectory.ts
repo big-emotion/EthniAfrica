@@ -1,39 +1,6 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  description:
-    "Our bibliography: every source on which the pages rely, with its standing and the material that cites it.",
-  sorts: {
-    titre: "Title",
-    annee: "Year, newest first",
-    ajout: "Date added, newest first",
-  },
-  labels: {
-    search: "Search sources",
-    searchPlaceholder: "Title or author",
-    standing: "Standing",
-    anyStanding: "All standings",
-    provenance: "Provenance",
-    anyProvenance: "All provenance types",
-    decade: "Decade",
-    anyDecade: "All decades",
-    sort: "Sort by",
-    activeSort: "Sort",
-  },
-  selection: (total: string, singular: boolean) =>
-    `${total} ${singular ? "source" : "sources"} in this selection. ` +
-    `Each states its standing and the reason for that standing.`,
-  provenanceNote: (withKind: string, total: string) =>
-    `Provenance is recorded for only ${withKind} sources out of ${total}. ` +
-    `Filtering by it shows what has already been classified, not the state of the whole project.`,
-  empty: "No source matches this selection.",
-  reset: "Return to all sources",
-  referenceBibliography: "The project's reference bibliography",
-};
-
-type SourcesDirectoryCopy = typeof en;
-
-const fr: SourcesDirectoryCopy = {
+const fr = {
   description:
     "Notre bibliographie : chaque source sur laquelle reposent les pages, avec son degré d'autorité et ce qui la cite.",
   sorts: {
@@ -64,8 +31,9 @@ const fr: SourcesDirectoryCopy = {
   referenceBibliography: "La bibliographie de référence du projet",
 };
 
+type SourcesDirectoryCopy = typeof fr;
+
 // @req REQ-141
 export const sourcesDirectoryCopy: Record<Language, SourcesDirectoryCopy> = {
-  en,
   fr,
 };

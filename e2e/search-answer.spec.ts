@@ -27,7 +27,6 @@ import type { SearchAnswer } from "../src/lib/search/answer";
 import { nameAnswerCopy } from "../src/lib/i18n/copy/nameAnswer";
 import { searchFeedCopy } from "../src/lib/i18n/copy/searchFeed";
 
-import { LOCALE } from "./support/locale";
 import {
   routeSearchAnswerFixtures,
   searchAnswerUrl,
@@ -220,8 +219,6 @@ async function expectSpeakersInMillions(
 
 // @req REQ-178
 test.describe("search answer page", () => {
-  test.skip(LOCALE !== "fr", "The approved answer copy is French");
-
   for (const [id, fixture] of Object.entries(ANSWER_FIXTURES) as Array<
     [AnswerFixtureCase, AnswerFixture]
   >) {

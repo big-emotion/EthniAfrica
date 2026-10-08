@@ -20,10 +20,6 @@ import { LOCALE } from "./support/locale";
  * French only and 430px only, like the rest of the suite's source of truth.
  * The routes are composed through the slug table, never written out.
  */
-test.skip(
-  LOCALE !== "fr",
-  "The smoke set is the French, 430px source of truth"
-);
 
 const SMOKE_ROUTES = [
   { name: "home", path: `/${LOCALE}` },

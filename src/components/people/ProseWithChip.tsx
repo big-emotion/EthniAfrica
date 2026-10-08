@@ -40,13 +40,7 @@ export interface ParagraphChipData {
 // Internal helpers
 // ---------------------------------------------------------------------------
 
-function FallbackLink({
-  onOpen,
-  language,
-}: {
-  onOpen: () => void;
-  language: Language;
-}) {
+function FallbackLink({ onOpen }: { onOpen: () => void }) {
   return (
     <span className="inline-flex items-center p-1">
       <a
@@ -57,7 +51,7 @@ function FallbackLink({
         }}
         className="text-afh-small underline underline-offset-2 text-[color:var(--afh-text-soft,var(--country-text-soft,#7A6B5D))] hover:text-[color:var(--afh-text,var(--country-text,#2C2018))] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[color:var(--afh-focus,var(--country-text,#2C2018))]"
       >
-        {language === "en" ? "view sources" : "voir les sources"}
+        voir les sources
       </a>
     </span>
   );
@@ -218,12 +212,7 @@ export function ProseWithChip({
         paragraphClassName={paraClass}
         trailing={
           <Suspense
-            fallback={
-              <FallbackLink
-                onOpen={() => setSheetOpen(true)}
-                language={language}
-              />
-            }
+            fallback={<FallbackLink onOpen={() => setSheetOpen(true)} />}
           >
             <LazyConfidenceChip
               id={anchorId}

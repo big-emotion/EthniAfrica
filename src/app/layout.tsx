@@ -10,7 +10,6 @@ import {
   OG_DESCRIPTION,
   SOCIAL_HANDLE,
 } from "@/lib/brand";
-import { LOCALE_HEADER, resolveLocale } from "@/lib/locale";
 import { resolveSiteUrl } from "@/lib/siteUrl";
 import PlausibleScript from "@/components/PlausibleScript";
 
@@ -86,15 +85,9 @@ export default async function RootLayout({
   // next-themes, whose inline bootstrap script script-src would otherwise
   // reject.
   const nonce = requestHeaders.get("x-nonce") ?? undefined;
-  // Also the middleware's: this layout sits above `[lang]` and cannot read
-  // the segment. Absent — a page outside the locale tree — the document is
-  // declared in the default locale. Resolved, not read raw, so a header the
-  // middleware did not set cannot name a language the site does not publish.
-  const lang = resolveLocale(requestHeaders.get(LOCALE_HEADER) ?? undefined);
-
   return (
     <html
-      lang={lang}
+      lang="fr"
       className={`${fraunces.variable} ${nunitoSans.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >

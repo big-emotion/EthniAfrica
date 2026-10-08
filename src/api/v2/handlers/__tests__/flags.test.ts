@@ -124,30 +124,6 @@ describe("flag handlers", () => {
     });
 
     // @req REQ-012
-    it("sends a verification link when the reader leaves an address", async () => {
-      const dependencies = makeDependencies();
-
-      const result = await handleFlagCreate(
-        { ...validInput(), reporter_email: "  lectrice@example.org " },
-        { accessToken: null, language: "en" },
-        dependencies
-      );
-
-      expect(result.status).toBe(201);
-      expect(dependencies.createReporterContact).toHaveBeenCalledWith(
-        createdFlag.id,
-        "lectrice@example.org",
-        "en"
-      );
-      expect(dependencies.sendFlagVerificationEmail).toHaveBeenCalledWith({
-        email: "lectrice@example.org",
-        token: "verification-token",
-        publicSlug: createdFlag.public_slug,
-        language: "en",
-      });
-    });
-
-    // @req REQ-012
     it("rejects a malformed address rather than silently dropping it", async () => {
       const dependencies = makeDependencies();
 
@@ -412,25 +388,6 @@ describe("flag handlers", () => {
           expect((await submitAfter(1_000)).result.status, bad).toBe(403);
         }
       });
-    });
-
-    // @req REQ-140
-    it("localizes anti-bot failures from the submitted route locale", async () => {
-      const dependencies = makeDependencies();
-      dependencies.verifyAntibotProof.mockResolvedValue("rejected");
-
-      const result = await handleFlagCreate(
-        validInput(),
-        { accessToken: null, language: "en" },
-        dependencies
-      );
-
-      expect(result.body.errors).toEqual([
-        {
-          code: "UNAUTHORIZED",
-          message: "Anti-bot verification failed",
-        },
-      ]);
     });
 
     // @req REQ-012

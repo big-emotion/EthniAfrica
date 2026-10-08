@@ -46,11 +46,4 @@ describe("SourceStandingBadge", () => {
       "unverified"
     );
   });
-
-  // @req REQ-141
-  it("names the standing in English when requested", () => {
-    render(<SourceStandingBadge standing="needs_review" language="en" />);
-
-    expect(screen.getByText("Awaiting review")).toBeInTheDocument();
-  });
 });

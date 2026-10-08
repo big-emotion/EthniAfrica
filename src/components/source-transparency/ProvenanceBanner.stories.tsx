@@ -101,20 +101,6 @@ export const NeverReviewed: Story = {
   },
 };
 
-// @req REQ-019
-export const English: Story = {
-  name: "Loud — English",
-  args: {
-    language: "en",
-    census: census({
-      official: 4,
-      referenced: 11,
-      unverified: 4,
-      needs_review: 2,
-    }),
-  },
-};
-
 /** No assertion recorded: the component renders nothing at all. */
 // @req REQ-019
 export const NothingRecorded: Story = {

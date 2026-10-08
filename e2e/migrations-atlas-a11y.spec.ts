@@ -4,15 +4,6 @@ import { getLocalizedRoute } from "@/lib/routing";
 import { isModulePublished } from "@/lib/hubs/moduleOffer";
 import { LOCALE } from "./support/locale";
 
-// English UI copy lands per translation wave (REQ-142 to REQ-146). Until it
-// does, the labels this spec reads are French, so the English matrix leg
-// skips it rather than fail on copy it was never asked to check — and the
-// leg's report says so, instead of counting the journey as covered.
-test.skip(
-  LOCALE !== "fr",
-  "English copy lands per wave — this spec reads French UI copy"
-);
-
 // The route calls `notFound()` while the registry declares `frise` a draft,
 // so there is no atlas to drive. Asked of the same declaration the route
 // reads: publishing the module re-arms this spec with no edit here.

@@ -2,11 +2,9 @@
 
 import type { BinaryRound } from "@/lib/games/gameKinds";
 import { cn } from "@/lib/utils";
-import type { Language } from "@/types/shared";
 
 export interface BinaryChoiceProps {
   round: BinaryRound;
-  language?: Language;
   onAnswer: (index: 0 | 1) => void;
   disabled?: boolean;
   className?: string;
@@ -24,13 +22,11 @@ export interface BinaryChoiceProps {
 // @req REQ-120
 export const BinaryChoice = ({
   round,
-  language = "fr",
   onAnswer,
   disabled = false,
   className,
 }: BinaryChoiceProps) => {
-  const prompt =
-    language === "en" ? (round.promptEn ?? round.promptFr) : round.promptFr;
+  const prompt = round.promptFr;
   return (
     <section
       data-testid="binary-choice"
@@ -63,9 +59,7 @@ export const BinaryChoice = ({
               backgroundColor: "var(--accent-tint)",
             }}
           >
-            {language === "en"
-              ? (option.labelEn ?? option.labelFr)
-              : option.labelFr}
+            {option.labelFr}
             {option.name?.exonym ? (
               <span className="ml-1 font-normal text-afh-text-soft">
                 ({option.name.exonym})

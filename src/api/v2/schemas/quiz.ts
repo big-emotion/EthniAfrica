@@ -55,8 +55,10 @@ const blankAsUndefined = z
     return trimmed ? trimmed : undefined;
   });
 
+// The bank is authored in French only; `en` is refused rather than answered
+// in French, so a client that asks for English learns it does not exist.
 // @req REQ-145
-export const quizLanguageSchema = z.enum(["en", "fr"]).default("fr");
+export const quizLanguageSchema = z.enum(["fr"]).default("fr");
 
 // @req REQ-103
 export const quizSessionQuerySchema = z.object({

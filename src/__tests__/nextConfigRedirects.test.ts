@@ -1,6 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { LOCALES } from "@/lib/locale";
 import { getPatronymeRoute } from "@/lib/routing";
 
 // `next.config.ts` is wrapped by withSentryConfig, and @sentry/nextjs breaks
@@ -17,49 +16,54 @@ async function loadRedirects(): Promise<Redirect[]> {
   return (await nextConfig.redirects()) as Redirect[];
 }
 
-describe("the appellations → noms redirect, per locale (DEC-049)", () => {
-  // A `:lang` wildcard sent `/en/atlas/appellations/X` to the French word
-  // `noms` under `/en` — one entry per locale carries each locale's word.
-  // @req REQ-141
-  it("sends a retired patronyme address to that locale's patronyme slug", async () => {
-    const redirects = await loadRedirects();
+const destinationOf = (redirects: Redirect[], source: string) =>
+  redirects.find((redirect) => redirect.source === source);
 
-    for (const locale of LOCALES) {
-      const entry = redirects.find(
-        (redirect) => redirect.source === `/${locale}/atlas/appellations/:slug`
-      );
-      expect(entry, locale).toBeDefined();
-      expect(entry.destination).toBe(getPatronymeRoute(locale, ":slug"));
-      expect(entry.permanent).toBe(true);
-    }
+describe("the appellations → noms redirect", () => {
+  // @req REQ-141
+  it("sends a retired patronyme address to the patronyme slug", async () => {
+    const entry = destinationOf(
+      await loadRedirects(),
+      "/fr/atlas/appellations/:slug"
+    );
+
+    expect(entry?.destination).toBe(getPatronymeRoute("fr", ":slug"));
+    expect(entry?.permanent).toBe(true);
+  });
+
+  // `redirects` runs before the proxy, so an English destination would cost
+  // a second 308 there; the retired English address lands in French at once.
+  // @req REQ-140
+  it("sends the retired English address straight to the French slug", async () => {
+    const entry = destinationOf(
+      await loadRedirects(),
+      "/en/atlas/appellations/:slug"
+    );
+
+    expect(entry?.destination).toBe(getPatronymeRoute("fr", ":slug"));
+    expect(entry?.permanent).toBe(true);
   });
 
   // @req REQ-141
-  it("keeps no locale-agnostic wildcard that would cross the vocabularies", async () => {
-    const redirects = await loadRedirects();
-
-    for (const redirect of redirects) {
+  it("keeps no locale wildcard", async () => {
+    for (const redirect of await loadRedirects()) {
       expect(redirect.source).not.toContain(":lang");
       expect(redirect.destination).not.toContain(":lang");
     }
   });
 });
 
-describe("the folded PAT_KAMARA address, per locale", () => {
+describe("the folded PAT_KAMARA address", () => {
   // PAT_KAMARA was an empty duplicate folded into PAT_CAMARA; its published
-  // address would otherwise answer 404 to anyone who held it.
+  // addresses would otherwise answer 404 to anyone who held them.
   // @req REQ-141
-  it("sends the retired PAT_KAMARA fiche to PAT_CAMARA in each locale", async () => {
-    const redirects = await loadRedirects();
+  it.each([
+    getPatronymeRoute("fr", "PAT_KAMARA"),
+    "/en/atlas/names/PAT_KAMARA",
+  ])("sends %s to the French PAT_CAMARA fiche", async (source) => {
+    const entry = destinationOf(await loadRedirects(), source);
 
-    for (const locale of LOCALES) {
-      const entry = redirects.find(
-        (redirect) =>
-          redirect.source === getPatronymeRoute(locale, "PAT_KAMARA")
-      );
-      expect(entry, locale).toBeDefined();
-      expect(entry.destination).toBe(getPatronymeRoute(locale, "PAT_CAMARA"));
-      expect(entry.permanent).toBe(true);
-    }
+    expect(entry?.destination).toBe(getPatronymeRoute("fr", "PAT_CAMARA"));
+    expect(entry?.permanent).toBe(true);
   });
 });

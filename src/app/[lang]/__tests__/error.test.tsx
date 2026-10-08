@@ -76,24 +76,4 @@ describe("ErrorPage ([lang]/error)", () => {
 
     expect(defaultCopy).not.toContain("!");
   });
-
-  // @req REQ-145
-  it("renders English recovery copy and an English anecdote below /en", () => {
-    mockUsePathname.mockReturnValue("/en");
-    const random = vi.spyOn(Math, "random").mockReturnValue(0);
-
-    render(<ErrorPage error={mockError} reset={() => {}} />);
-
-    expect(
-      screen.getByRole("heading", { name: "An error occurred" })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("button", { name: "Try again" })
-    ).toBeInTheDocument();
-    expect(screen.getByTestId("error-anecdote")).toHaveTextContent(
-      "Did you know?"
-    );
-
-    random.mockRestore();
-  });
 });

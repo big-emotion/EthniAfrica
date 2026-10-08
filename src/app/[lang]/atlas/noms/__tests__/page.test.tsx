@@ -270,30 +270,4 @@ describe("the name facet page", () => {
       `https://${CANONICAL_DOMAIN}${getLocalizedRoute("fr", "patronymes")}`
     );
   });
-
-  // @req REQ-140
-  it("composes the canonical and the fiche links in the route's locale", async () => {
-    const metadata = await generateMetadata({
-      params: Promise.resolve({ lang: "en" }),
-    });
-    expect(metadata.alternates?.canonical).toBe(
-      `https://${CANONICAL_DOMAIN}${getLocalizedRoute("en", "patronymes")}`
-    );
-
-    render(
-      await NomsHubPage({
-        params: Promise.resolve({ lang: "en" }),
-        searchParams: Promise.resolve({}),
-      })
-    );
-    expect(screen.getByRole("link", { name: /^Keïta\s/ })).toHaveAttribute(
-      "href",
-      getPatronymeRoute("en", "PAT_KEITA")
-    );
-    expect(screen.getByText(/1 name in this selection/)).toBeInTheDocument();
-    expect(
-      screen.getByRole("searchbox", { name: "Search names" })
-    ).toHaveAttribute("placeholder", "Name or attested spelling");
-    expect(screen.getByRole("list", { name: "Names" })).toBeInTheDocument();
-  });
 });

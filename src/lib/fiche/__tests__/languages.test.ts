@@ -111,18 +111,6 @@ describe("countryLanguageTiles", () => {
     );
   });
 
-  // @req REQ-145
-  it("speaks English where the record is read in English", () => {
-    const tiles = countryLanguageTiles(
-      countryRecord("NAM").culture?.mainLanguages ?? [],
-      "en"
-    );
-    expect(tiles.map((tile) => tile.label)).toEqual([
-      "Official language",
-      "Other languages of the country",
-    ]);
-  });
-
   // @req REQ-091
   it("lists every language under one tile when none is marked official", () => {
     const tiles = countryLanguageTiles(

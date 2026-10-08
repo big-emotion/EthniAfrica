@@ -4,47 +4,7 @@ import type {
 } from "@/lib/home/didYouKnowFacts";
 import type { Language } from "@/types/shared";
 
-const en = {
-  homeEyebrow: "Did you know",
-  homeMore: "Read more anecdotes",
-  pageTitle: "Anecdotes",
-  pageSubtitle:
-    "African names, one by one: who gave them, when, and what they covered.",
-  pageKicker: "Every name was given by someone",
-  empty: "No anecdotes are published at the moment.",
-  savedCount: (count: number) =>
-    `${count} anecdote${count === 1 ? "" : "s"} saved on this device`,
-  entityLabels: {
-    people: "People",
-    country: "Country",
-    family: "Language family",
-  } satisfies Record<DidYouKnowEntityKind, string>,
-  tierLabels: {
-    official: "Official source",
-    referenced: "Referenced source",
-    unverified: "Unverified source",
-  } satisfies Record<DidYouKnowTier, string>,
-  file: "file",
-  licence: "licence",
-  factReliability: "Fact reliability",
-  missingProvenance:
-    "Provenance to document — this fact predates the sources field.",
-  nextAnnouncement: (headline: string) => `Next anecdote: ${headline}`,
-  previousAnnouncement: (headline: string) => `Previous anecdote: ${headline}`,
-  next: "Next anecdote",
-  previous: "Previous anecdote",
-  sourceLead: "Source:",
-  marked: "Anecdote saved",
-  mark: "This anecdote is interesting",
-  share: "Share",
-  dispute: "I dispute this anecdote",
-  linkCopied: "Link copied",
-  copyLink: "Copy link",
-};
-
-type AnecdotesCopy = typeof en;
-
-const fr: AnecdotesCopy = {
+const fr = {
   homeEyebrow: "Saviez-vous que",
   homeMore: "Lire d'autres anecdotes",
   pageTitle: "Anecdotes",
@@ -52,25 +12,26 @@ const fr: AnecdotesCopy = {
     "Des noms d'Afrique pris un par un : qui les a donnés, quand, et ce qu'ils recouvraient.",
   pageKicker: "Chaque nom a été donné par quelqu'un",
   empty: "Aucune anecdote n'est publiée pour le moment.",
-  savedCount: (count) =>
+  savedCount: (count: number) =>
     `${count} anecdote${count > 1 ? "s" : ""} retenue${count > 1 ? "s" : ""} sur cet appareil`,
   entityLabels: {
     people: "Peuple",
     country: "Pays",
     family: "Famille linguistique",
-  },
+  } satisfies Record<DidYouKnowEntityKind, string>,
   tierLabels: {
     official: "Source officielle",
     referenced: "Source référencée",
     unverified: "Source non vérifiée",
-  },
+  } satisfies Record<DidYouKnowTier, string>,
   file: "fichier",
   licence: "licence",
   factReliability: "Fiabilité du fait",
   missingProvenance:
     "Provenance à documenter — ce fait est antérieur au champ de sources.",
-  nextAnnouncement: (headline) => `Anecdote suivante : ${headline}`,
-  previousAnnouncement: (headline) => `Anecdote précédente : ${headline}`,
+  nextAnnouncement: (headline: string) => `Anecdote suivante : ${headline}`,
+  previousAnnouncement: (headline: string) =>
+    `Anecdote précédente : ${headline}`,
   next: "Anecdote suivante",
   previous: "Anecdote précédente",
   sourceLead: "Source\u00a0:",
@@ -82,5 +43,7 @@ const fr: AnecdotesCopy = {
   copyLink: "Copier le lien",
 };
 
+type AnecdotesCopy = typeof fr;
+
 // @req REQ-145
-export const anecdotesCopy: Record<Language, AnecdotesCopy> = { en, fr };
+export const anecdotesCopy: Record<Language, AnecdotesCopy> = { fr };

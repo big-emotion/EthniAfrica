@@ -69,10 +69,10 @@ function chapter(title: string, id: string) {
 }
 
 /** A fiche as FicheSequence renders one: the rail, then the chapters. */
-function renderFiche(chapters: string[], language: "fr" | "en" = "fr") {
+function renderFiche(chapters: string[]) {
   return render(
     <div data-fiche-sequence="">
-      <FicheChapterBar language={language} />
+      <FicheChapterBar language="fr" />
       <div
         data-testid="parchment"
         dangerouslySetInnerHTML={{ __html: chapters.join("") }}
@@ -92,19 +92,6 @@ function openSummary() {
 }
 
 describe("FicheChapterBar", () => {
-  // @req REQ-145
-  it("localises its navigation chrome in English", () => {
-    renderFiche(THREE_CHAPTERS, "en");
-    expect(
-      screen.getByRole("navigation", { name: "Page chapters" })
-    ).toBeVisible();
-    expect(
-      screen.getByRole("button", { name: /Page contents — Le nom porté/ })
-    ).toBeVisible();
-    expect(screen.getByText("Contents")).toBeVisible();
-    expect(screen.getByText("Contribute")).toBeVisible();
-  });
-
   /**
    * Reporting is what a reader reaches for when the page is wrong.
    * Contributing is what they reach for when it is merely thin, which on an

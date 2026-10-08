@@ -18,7 +18,7 @@ import { SourceRow } from "@/components/sources/SourceRow";
 import { definedFilter } from "@/lib/hubs/facets";
 import { PAGE_SIZE_PARAM, resolvePageSize } from "@/lib/hubs/pagination";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import { formatNumber } from "@/lib/languageTag";
 import { sourceStandingLabel } from "@/lib/glossaire/vocabularies";
 import { sourcesDirectoryCopy } from "@/lib/i18n/copy/sourcesDirectory";
@@ -79,12 +79,7 @@ export async function generateMetadata({
   };
   return {
     ...metadata,
-    ...surfaceHead(
-      language,
-      "sources",
-      (locale) => getLocalizedRoute(locale, "sources"),
-      metadata
-    ),
+    ...pageHead(getLocalizedRoute("fr", "sources"), metadata),
   };
 }
 

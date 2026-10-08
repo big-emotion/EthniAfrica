@@ -19,16 +19,15 @@ function strings(value: unknown): string[] {
 
 // @req REQ-178
 describe("the answer page's own words", () => {
-  for (const language of ["fr", "en"] as const) {
-    it(`uses ordinary words only (${language})`, () => {
-      const all = strings(searchAnswerCopy[language]);
-      expect(all.length).toBeGreaterThan(40);
-      for (const text of all) {
-        expect(text, text).not.toMatch(SCHOLARLY);
-        expect(
-          searchAnswerSentenceProblems("lead", text.replace(/<\/?strong>/g, ""))
-        ).not.toContain("register");
-      }
-    });
-  }
+  // @req REQ-178
+  it("uses ordinary words only", () => {
+    const all = strings(searchAnswerCopy.fr);
+    expect(all.length).toBeGreaterThan(40);
+    for (const text of all) {
+      expect(text, text).not.toMatch(SCHOLARLY);
+      expect(
+        searchAnswerSentenceProblems("lead", text.replace(/<\/?strong>/g, ""))
+      ).not.toContain("register");
+    }
+  });
 });

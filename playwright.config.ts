@@ -1,13 +1,10 @@
 import { defineConfig, devices } from "@playwright/test";
 import { CONSENT_STORAGE_KEY, DEFAULT_PREFERENCES } from "./src/lib/consent";
-import { LOCALE } from "./e2e/support/locale";
 
 const isCI = Boolean(process.env.CI);
 
-// The browser's Accept-Language follows the locale under test, so a request
-// for `/en/...` never arrives announcing French. British English: the
-// product owner's register for the English surface (ETNI-1823).
-const BROWSER_LOCALE = LOCALE === "fr" ? "fr-FR" : "en-GB";
+// The browser announces French, the one locale the site publishes.
+const BROWSER_LOCALE = "fr-FR";
 const baseURL = process.env.BASE_URL ?? "http://localhost:3000";
 const serverPort = new URL(baseURL).port || "3000";
 

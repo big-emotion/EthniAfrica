@@ -48,13 +48,11 @@ export function NoResultsLeads({
       className={cn("flex flex-col gap-afh-md", className)}
     >
       <p className="text-afh-small text-afh-text-soft">
-        {language === "en" ? "Did you mean:" : "Vouliez-vous dire :"}
+        {"Vouliez-vous dire :"}
       </p>
       <ul
         className="flex flex-wrap items-center justify-center gap-2"
-        aria-label={
-          language === "en" ? "Nearby suggestions" : "Suggestions proches"
-        }
+        aria-label={"Suggestions proches"}
       >
         {leads.map((lead) => (
           <li key={`${lead.type}-${lead.id}`} onClick={onNavigate}>
@@ -73,7 +71,7 @@ export function NoResultsLeads({
                 <SearchEntityMark type={lead.type} />
                 {lead.name}
                 <span className="text-afh-text-muted">
-                  {getSearchEntityLabel(lead.type, language)}
+                  {getSearchEntityLabel(lead.type)}
                 </span>
               </Badge>
             </Link>

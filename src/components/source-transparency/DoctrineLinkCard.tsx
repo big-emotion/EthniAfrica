@@ -40,25 +40,13 @@ const FR_DOCTRINE_COPY: Record<DoctrineSlug, string> = {
     "Ce sujet est sensible. Notre doctrine éditoriale encadre la rédaction. Voir la doctrine.",
 };
 
-const EN_DOCTRINE_COPY: Record<DoctrineSlug, string> = {
-  "endonymes-vs-exonymes":
-    "This fiche uses endonyms (self-designations) and exonyms (names given by others). Read the doctrine to understand our choices.",
-  "classifications-contestees":
-    "This classification is subject to academic debate and editorial positions. See the doctrine.",
-  "heritage-colonial":
-    "This term comes from the colonial legacy. We retain it with an explanation. See the doctrine.",
-  "topics-sensibles":
-    "This is a sensitive subject. Our editorial doctrine guides its treatment. See the doctrine.",
-};
-
 // @req REQ-019
 export function DoctrineLinkCard({
   slug,
   version,
   language = FALLBACK_LOCALE,
 }: DoctrineLinkCardProps) {
-  const copy =
-    language === "en" ? EN_DOCTRINE_COPY[slug] : FR_DOCTRINE_COPY[slug];
+  const copy = FR_DOCTRINE_COPY[slug];
   const href =
     version !== undefined
       ? `${getLocalizedRoute(language, "doctrine")}/${slug}@v${version}`
@@ -78,7 +66,7 @@ export function DoctrineLinkCard({
         className="inline-block font-semibold underline underline-offset-2 hover:no-underline"
         style={{ color: "var(--country-earth, currentColor)" }}
       >
-        {language === "en" ? "Read the doctrine" : "Lire la doctrine"}
+        {"Lire la doctrine"}
       </Link>
     </aside>
   );

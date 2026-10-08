@@ -20,24 +20,6 @@ describe("ConfidenceChip", () => {
     document.getElementById("afh-chip-keyframes")?.remove();
   });
 
-  // @req REQ-145
-  it("renders its source wording in English when requested", () => {
-    render(
-      <ConfidenceChip
-        language="en"
-        confidenceScore={87}
-        sourceCount={4}
-        lastHumanAuditAt="2025-09-21"
-      />
-    );
-    expect(
-      screen.getByText(/4 references · reviewed 2025-09-21/)
-    ).toBeVisible();
-    expect(
-      screen.getByRole("button", { name: /open the source chain/ })
-    ).toBeVisible();
-  });
-
   // A percentage read as a probability of truth, and « verified » read as a
   // guarantee, were what the old wording promised (audit findings T04, T02).
   // The chip says how many references there are and when a person last reviewed

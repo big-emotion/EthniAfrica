@@ -102,10 +102,7 @@ async function FamilyLiveContent({
     ),
   });
   const copy = familyCopy[language];
-  const atlasFamilyName =
-    language === "en"
-      ? familyDetail.nameEn || familyDetail.nameFr
-      : familyDetail.nameFr;
+  const atlasFamilyName = familyDetail.nameFr;
 
   return (
     <>

@@ -10,7 +10,7 @@ import type { Language } from "@/types/shared";
 // not replace the examples. Each failed table keeps its own fallback pool.
 // @req REQ-002
 export async function loadSeedWords(language: Language): Promise<SeedWords> {
-  const candidates = await getSeedNameCandidates(language);
+  const candidates = await getSeedNameCandidates();
   return Object.fromEntries(
     Object.entries(FALLBACK_SEED_WORDS[language]).map(([kind, fallback]) => [
       kind,

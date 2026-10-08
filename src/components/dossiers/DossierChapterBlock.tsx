@@ -1,4 +1,3 @@
-import type { Language } from "@/types/shared";
 import type { DossierSource } from "@/lib/afrik/parsers/dossierTypes";
 import { DossierCitations } from "./DossierCitations";
 import Image from "next/image";
@@ -29,10 +28,8 @@ import type {
  */
 function IllustrationCredit({
   illustration,
-  language,
 }: {
   illustration: DossierIllustration;
-  language: Language;
 }) {
   return (
     <figcaption>
@@ -54,7 +51,7 @@ function IllustrationCredit({
         <>
           {" · "}
           <a href={illustration.filePage} rel="noreferrer" target="_blank">
-            {language === "en" ? "Original file" : "Fichier d’origine"}
+            Fichier d’origine
           </a>
         </>
       ) : null}
@@ -65,7 +62,6 @@ function IllustrationCredit({
 export interface DossierChapterBlockProps {
   chapter: DossierChapter;
   index: number;
-  language: Language;
   sources: DossierSource[];
   sourcePrefix: string;
 }
@@ -74,7 +70,6 @@ export interface DossierChapterBlockProps {
 export function DossierChapterBlock({
   chapter,
   index,
-  language,
   sources,
   sourcePrefix,
 }: DossierChapterBlockProps) {
@@ -98,17 +93,14 @@ export function DossierChapterBlock({
               src={chapter.illustration.src}
               width={900}
             />
-            <IllustrationCredit
-              illustration={chapter.illustration}
-              language={language}
-            />
+            <IllustrationCredit illustration={chapter.illustration} />
           </figure>
         ) : null}
 
         <div className="afh-dossier-chapter-body">
           <p className="afh-dossier-chapter-kicker">
             <span aria-hidden="true" className="afh-dossier-chapter-dot" />
-            {`${language === "en" ? "Chapter" : "Chapitre"} ${String(chapter.ordinal).padStart(2, "0")}`}
+            {`Chapitre ${String(chapter.ordinal).padStart(2, "0")}`}
           </p>
           <h2>{chapter.title}</h2>
           <p className="afh-dossier-standfirst">{chapter.standfirst}</p>
@@ -155,7 +147,6 @@ export function DossierChapterBlock({
       <DossierReadings
         chapterKey={chapter.chapterKey}
         readings={chapter.readings}
-        language={language}
         sources={sources}
         sourcePrefix={sourcePrefix}
       />

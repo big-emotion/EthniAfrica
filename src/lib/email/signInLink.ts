@@ -1,6 +1,4 @@
 import { emailSignature } from "@/lib/email/signature";
-import { buildSignInLinkEmailEn } from "@/lib/email/signInLink.en";
-import type { Language } from "@/types/shared";
 
 export interface SignInLinkEmail {
   subject: string;
@@ -21,12 +19,7 @@ export interface SignInLinkEmail {
  * that follows explains why.
  */
 // @req REQ-042
-export function buildSignInLinkEmail(
-  language: Language,
-  link: string
-): SignInLinkEmail {
-  if (language === "en") return buildSignInLinkEmailEn(link);
-
+export function buildSignInLinkEmail(link: string): SignInLinkEmail {
   return {
     subject: "Votre lien de connexion à la modération EthniAfrica",
     text: [
@@ -34,7 +27,7 @@ export function buildSignInLinkEmail(
       link,
       "Il ne sert qu'une fois et n'est valable que peu de temps. Ouvrez-le dans le navigateur où vous avez demandé la connexion.",
       "Si vous n'avez rien demandé, ignorez ce message : sans ce lien, personne ne peut se connecter avec votre adresse.",
-      emailSignature("fr"),
+      emailSignature(),
     ].join("\n\n"),
   };
 }

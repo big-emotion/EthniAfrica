@@ -33,22 +33,6 @@ export interface HomePurposeCopy {
 // @req REQ-115
 // @req REQ-145
 export const homePurposeCopy: Record<Language, HomePurposeCopy> = {
-  en: {
-    contribute: {
-      title: "Let us grow EthniAfrica together",
-      linkLabel: "Contribute",
-    },
-    why: {
-      title: "Why EthniAfrica?",
-      body: "We want knowledge about Africa’s peoples to be easier to find and to share. We start from names to connect the stories, the uses and the sources.",
-      linkLabel: "Discover the project",
-    },
-    sources: {
-      title: "Sources to understand",
-      body: "We show the sources, the disagreements and what we do not know yet.",
-      linkLabel: "How we work",
-    },
-  },
   fr: {
     contribute: {
       title: "Faisons grandir EthniAfrica ensemble",

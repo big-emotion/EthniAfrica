@@ -4,7 +4,7 @@ import { LegalDocument } from "@/components/layout/LegalDocument";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { getLegalPage } from "@/lib/legalPagesLocalization";
 import { getStaticPageRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
 interface AccessibilityPageProps {
@@ -20,12 +20,7 @@ export async function generateMetadata({
   const title = getLegalPage(language, "accessibility").title;
   return {
     title,
-    ...surfaceHead(
-      language,
-      "accessibility",
-      (locale) => getStaticPageRoute(locale, "accessibility"),
-      { title }
-    ),
+    ...pageHead(getStaticPageRoute("fr", "accessibility"), { title }),
   };
 }
 

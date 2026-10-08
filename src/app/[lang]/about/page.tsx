@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import AboutPageShell from "@/components/pages/AboutPageShell";
 import AboutPageContent from "@/components/pages/AboutPageContent";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import { getTranslation } from "@/lib/translations";
 import type { Language } from "@/types/shared";
 
@@ -19,12 +19,7 @@ export async function generateMetadata({
   const title = getTranslation(lang as Language).footer.about;
   return {
     title,
-    ...surfaceHead(
-      lang as Language,
-      "about",
-      (locale) => getLocalizedRoute(locale, "about"),
-      { title }
-    ),
+    ...pageHead(getLocalizedRoute("fr", "about"), { title }),
   };
 }
 

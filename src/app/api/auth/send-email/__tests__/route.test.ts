@@ -113,8 +113,10 @@ describe("POST /api/auth/send-email", () => {
     expect(sentMessage().text).toContain("&type=signup&");
   });
 
+  // A moderator signing in from a bookmarked English console still gets the
+  // French mail: the console only exists in French now.
   // @req REQ-042
-  it("writes in English when the sign-in was asked for from the English console", async () => {
+  it("writes in French whatever console the sign-in was asked from", async () => {
     await POST(signedHookRequest(hookPayload()));
     const french = sentMessage();
     mocks.sendViaGraph.mockClear();
@@ -122,10 +124,8 @@ describe("POST /api/auth/send-email", () => {
     await POST(
       signedHookRequest(hookPayload({ redirect_to: ENGLISH_CALLBACK }))
     );
-    const english = sentMessage();
 
-    expect(english.subject).not.toBe(french.subject);
-    expect(english.text).toContain("redirect%3D%252Fen%252Fadmin");
+    expect(sentMessage().subject).toBe(french.subject);
   });
 
   // @req REQ-042

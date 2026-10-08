@@ -52,15 +52,11 @@ const GENERAL_TARGET = {
 export default function ReportErrorPageClient() {
   // The route's locale, read by the hook itself; nothing here writes it back,
   // because only the switcher may remember a choice (REQ-140).
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
   const copy = reportsCopy[language].page;
 
   return (
-    <PageLayout
-      language={language}
-      onLanguageChange={setLanguage}
-      hideHeader={true}
-    >
+    <PageLayout language={language} hideHeader={true}>
       <div className="max-w-3xl mx-auto space-y-8">
         <h1 className="text-afh-h1 font-display font-bold">{copy.title}</h1>
 

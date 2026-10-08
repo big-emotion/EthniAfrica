@@ -66,11 +66,9 @@ export const DISCOVERY_VIDEOS: readonly DiscoveryVideoRecord[] = [
     slug: DISCOVERY_SLUGS["video:origine-du-nom-mande"],
     name: {
       fr: discoveryVideosCopy.fr.mande.name,
-      en: discoveryVideosCopy.en.mande.name,
     },
     description: {
       fr: discoveryVideosCopy.fr.mande.description,
-      en: discoveryVideosCopy.en.mande.description,
     },
     publishedAt: "2026-09-16",
     durationSeconds: 121,
@@ -97,7 +95,6 @@ export const DISCOVERY_VIDEOS: readonly DiscoveryVideoRecord[] = [
         id: "FLG_MANDE",
         label: {
           fr: discoveryVideosCopy.fr.mande.name,
-          en: discoveryVideosCopy.en.mande.name,
         },
       },
     ],
@@ -113,17 +110,11 @@ export function videoPublications(
     kind: "video",
     status: record.status,
     slug: record.slug,
-    title: {
-      fr: formatProductionNameQuestion(record.name.fr, "fr"),
-      en: formatProductionNameQuestion(record.name.en, "en"),
-    },
+    title: { fr: formatProductionNameQuestion(record.name.fr, "fr") },
     description: record.description,
     source: record.source,
     detail: {
-      body: {
-        fr: [record.description.fr],
-        en: [record.description.en],
-      },
+      body: { fr: [record.description.fr] },
       entities: record.subjects.map((subject) => ({ ...subject })),
       sources: [{ title: record.source.title, url: record.source.url }],
       ...(record.word ? { word: record.word } : {}),
@@ -137,10 +128,7 @@ export function videoPublications(
       credit: record.credit,
       poster: {
         ...record.poster,
-        alt: {
-          fr: formatProductionPosterAlt(record.name.fr, "fr"),
-          en: formatProductionPosterAlt(record.name.en, "en"),
-        },
+        alt: { fr: formatProductionPosterAlt(record.name.fr, "fr") },
       },
       transcript: record.transcript,
     },

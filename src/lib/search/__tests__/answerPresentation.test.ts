@@ -11,7 +11,7 @@ const people = (id: string, name: string) => ({ id, name });
 
 describe("presentAnswerWhere", () => {
   // @req REQ-178
-  it("names the countries of a language from the reader's locale", () => {
+  it("names the countries of a language in French", () => {
     const where: AnswerWhere = {
       unit: "speakers",
       estimate: true,
@@ -27,11 +27,6 @@ describe("presentAnswerWhere", () => {
       COG: "Congo-Brazzaville",
     });
     expect(fr?.where).toBe(where);
-
-    expect(presentAnswerWhere(where, [], "en")?.labels).toEqual({
-      COD: "Democratic Republic of the Congo",
-      COG: "Congo - Brazzaville",
-    });
   });
 
   // An identifier on screen is a defect, and so is a row quietly renamed to

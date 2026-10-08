@@ -110,7 +110,7 @@ export type ModuleGroupId =
  * A shelf carries no label here. It used to, and the labels were French
  * literals in a file `check:copy-literals` does not exempt — tolerated only
  * because they predate the gate. Rubric names are reader-facing copy, so they
- * live where reader-facing copy lives, `i18n/copy/hubs.ts`, in both locales.
+ * live where reader-facing copy lives, `i18n/copy/hubs.ts`.
  * Modules keep a registry `name` *and* a dictionary entry because theirs
  * predates the i18n move; a rubric is new, so it starts with one home and
  * cannot drift between two.

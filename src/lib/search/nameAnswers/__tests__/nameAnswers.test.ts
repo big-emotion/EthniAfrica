@@ -26,22 +26,17 @@ const TERMS = ["Lingala", "Bambara", "Mali", "Pygmée"];
 
 describe("reviewed name answers", () => {
   // @req REQ-178
-  it.each(TERMS)(
-    "%s resolves, in both locales, on accents and case",
-    (term) => {
-      for (const language of ["fr", "en"] as const) {
-        const answers = findNameAnswers(` ${term.toUpperCase()} `, language);
-        expect(answers.length).toBeGreaterThan(0);
-        for (const answer of answers) {
-          expect(answer.paragraphs.length).toBeLessThanOrEqual(2);
-          expect(answer.sources.length).toBeGreaterThan(0);
-        }
-      }
-      expect(
-        findNameAnswers(term.normalize("NFD").replace(/\p{M}/gu, ""))
-      ).not.toEqual([]);
+  it.each(TERMS)("%s resolves on accents and case", (term) => {
+    const answers = findNameAnswers(` ${term.toUpperCase()} `, "fr");
+    expect(answers.length).toBeGreaterThan(0);
+    for (const answer of answers) {
+      expect(answer.paragraphs.length).toBeLessThanOrEqual(2);
+      expect(answer.sources.length).toBeGreaterThan(0);
     }
-  );
+    expect(
+      findNameAnswers(term.normalize("NFD").replace(/\p{M}/gu, ""))
+    ).not.toEqual([]);
+  });
 
   // @req REQ-178
   it("keeps the Bambara people and language as two answers", () => {
@@ -84,11 +79,6 @@ describe("reviewed name answers", () => {
       expect(suggestNameTerms(query)).toEqual([]);
     }
   );
-
-  // @req REQ-125
-  it("localizes the suggested term", () => {
-    expect(suggestNameTerms("pigmy", "en")).toEqual(["Pygmy"]);
-  });
 
   // @req REQ-178
   it("never matches on part of a name", () => {

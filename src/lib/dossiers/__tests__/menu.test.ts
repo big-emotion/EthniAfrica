@@ -71,26 +71,4 @@ describe("the dossier corpus as menu entries (REQ-120)", () => {
 
     expect(offeredInMenu.sort()).toEqual(readyInCorpus.sort());
   });
-
-  // An English address carries the English slug, which lives in the routing
-  // table because middleware runs on the edge and cannot read the corpus.
-  // @req REQ-141
-  it("gives an English reader the English address of the same dossier", () => {
-    const french = getDossierMenuEntries("fr").find(
-      (entry) => entry.id === "DOS_KONGO"
-    );
-    const english = getDossierMenuEntries("en").find(
-      (entry) => entry.id === "DOS_KONGO"
-    );
-
-    // The last segment only: `routeLiteralCharter` forbids writing a module
-    // path out, and a test that composed the whole address from the same slug
-    // table it is checking would assert nothing anyway.
-    const slugOf = (href?: string) => href?.split("/").pop();
-
-    expect(slugOf(french?.href)).toBe("royaume-kongo");
-    expect(slugOf(english?.href)).toBe("kongo-kingdom");
-    expect(english?.href.startsWith("/en/")).toBe(true);
-    expect(english?.title).toBe(french?.title);
-  });
 });

@@ -79,23 +79,4 @@ describe("RemediationPanel", () => {
     ).toBeInTheDocument();
     expect(screen.getByText(/7b1d2a8e/)).toBeInTheDocument();
   });
-
-  // @req REQ-140
-  // @req REQ-145
-  it("renders the panel in English", () => {
-    render(
-      <RemediationPanel
-        language="en"
-        remediation={readRemediation({ remediationState: "not_started" })}
-      />
-    );
-
-    expect(screen.getByText("Read-only")).toBeInTheDocument();
-    expect(screen.getByText("Not started")).toBeInTheDocument();
-    expect(
-      screen.getByText(
-        /only the publication of the corpus closes a remediation/i
-      )
-    ).toBeInTheDocument();
-  });
 });

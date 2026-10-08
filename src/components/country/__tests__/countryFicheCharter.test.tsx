@@ -97,26 +97,6 @@ describe("country fiche charter", () => {
     expect(contribute).toHaveAttribute("href", "/fr/contribute");
   });
 
-  // @req REQ-145
-  it("renders country fiche chrome in English while preserving corpus values", () => {
-    const country = countryFixture();
-    const { rerender } = render(
-      <CountryFicheTitle language="en" country={country} />
-    );
-    expect(screen.getByText(/country page/)).toBeVisible();
-    expect(screen.getByRole("heading", { name: "Nigéria" })).toBeVisible();
-
-    rerender(<CountryRecordView language="en" country={country} />);
-    // The name's history now opens the History chapter as its first tile.
-    expect(screen.getByText("Where the name comes from")).toBeVisible();
-    expect(screen.getByRole("heading", { name: "History" })).toBeVisible();
-    expect(
-      screen.getByRole("heading", { name: "Culture and society" })
-    ).toBeVisible();
-    // The name story repeats the etymology's lead above the figures.
-    expect(screen.getAllByText(/Du fleuve Niger/).length).toBeGreaterThan(0);
-  });
-
   // A missing people breakdown does not erase the independently sourced
   // national population. Madagascar is the atlas case for this distinction.
   // @req REQ-115

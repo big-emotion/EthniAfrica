@@ -46,9 +46,11 @@
  *         required: false
  *         schema:
  *           type: string
- *           enum: [en, fr]
+ *           enum: [fr]
  *           default: fr
- *         description: Content locale. Unknown values are rejected.
+ *         description: >
+ *           Content locale. French is the only one published; any other value,
+ *           `en` included, is rejected with 400.
  *         example: fr
  *     responses:
  *       200:

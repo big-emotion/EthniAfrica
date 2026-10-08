@@ -38,7 +38,6 @@ describe("middleware", () => {
   beforeEach(() => {
     vi.clearAllMocks();
     embedSwitch.enabled = ["youtube"];
-    vi.stubEnv("SITE_LOCALE_MODE", "bilingual-en-default");
 
     mockEq.mockResolvedValue({ data: [], error: null });
     mockSelect.mockReturnValue({ eq: mockEq });
@@ -97,30 +96,6 @@ describe("middleware", () => {
         "http://localhost:3000/fr/admin/connexion"
       );
       const response = await middleware(request);
-
-      expect(response.status).toBe(200);
-      expect(response.headers.get("location")).toBeNull();
-    });
-
-    // The console is reachable in both locales, and a moderator sent to sign
-    // in must land on the sign-in of the locale they were reading.
-    // @req REQ-140
-    it("guards the English console and sends the visitor to the English sign-in", async () => {
-      const response = await middleware(
-        new NextRequest("http://localhost:3000/en/admin/dashboard")
-      );
-
-      expect(response.status).toBe(307);
-      expect(response.headers.get("location")).toBe(
-        "http://localhost:3000/en/admin/connexion?redirect=%2Fen%2Fadmin%2Fdashboard"
-      );
-    });
-
-    // @req REQ-140
-    it("allows access to /en/admin/connexion without authentication", async () => {
-      const response = await middleware(
-        new NextRequest("http://localhost:3000/en/admin/connexion")
-      );
 
       expect(response.status).toBe(200);
       expect(response.headers.get("location")).toBeNull();
@@ -258,153 +233,33 @@ describe("middleware", () => {
   });
 
   /**
-   * Two locales, English by default, and an explicit choice remembered in a
-   * cookie the middleware can read before any client code runs (REQ-140).
-   * Anything else in the locale slot is not a locale the site publishes and
-   * goes to the default, permanently — a stale `/es/` link is a moved page,
-   * not a preference.
+   * French is the only published locale. Every retired English address and
+   * any other two-letter segment is a page that moved for good, so it is
+   * answered with a 308 to the French page — translated word for word where
+   * the old English slug is known — in the same single hop as any relocation
+   * it composes with.
    */
   describe("locale resolution (REQ-140)", () => {
-    // Through the cookie jar rather than a `cookie` header: the test
-    // environment's fetch primitives are a browser's, and a browser refuses
-    // to let a script set that header.
-    const withCookie = (url: string, value: string) => {
-      const request = new NextRequest(url);
-      request.cookies.set("ethni-locale", value);
-      return request;
-    };
-
-    describe("French-only containment", () => {
-      beforeEach(() => {
-        vi.stubEnv("SITE_LOCALE_MODE", "fr-only");
-      });
-
-      // @req REQ-140
-      it.each([undefined, "en", "fr"])(
-        "sends the root to French when the cookie is %s",
-        async (cookie) => {
-          const request = cookie
-            ? withCookie("http://localhost:3000/?from=release", cookie)
-            : new NextRequest("http://localhost:3000/?from=release");
-          const response = await middleware(request);
-
-          expect(response.status).toBe(307);
-          expect(response.headers.get("location")).toBe(
-            "http://localhost:3000/fr?from=release"
-          );
-        }
-      );
-
-      // The redirect is temporary because English is deliberately coming
-      // later; browsers must not cache the containment as the final address.
-      // @req REQ-140
-      it.each([
-        ["/en", "/fr"],
-        ["/en/atlas/countries/BEN?tab=noms", "/fr/atlas/pays/BEN?tab=noms"],
-        ["/en/peuples?people=PPL_YORUBA", "/fr/atlas/peuples/PPL_YORUBA"],
-        ["/en/admin/dashboard", "/fr/admin/dashboard"],
-      ])("temporarily contains %s at %s in one hop", async (source, target) => {
-        const response = await middleware(
-          new NextRequest(`http://localhost:3000${source}`)
-        );
-
-        expect(response.status).toBe(307);
-        expect(response.headers.get("location")).toBe(
-          `http://localhost:3000${target}`
-        );
-      });
-
-      // @req REQ-140
-      it("leaves French routes available", async () => {
-        const response = await middleware(
-          withCookie("http://localhost:3000/fr/atlas/peuples", "en")
-        );
-
-        expect(response.status).toBe(200);
-        expect(response.headers.get("location")).toBeNull();
-      });
-    });
-
     // @req REQ-140
-    it("keeps English available while French remains the bilingual default", async () => {
-      vi.stubEnv("SITE_LOCALE_MODE", "bilingual-fr-default");
-
-      const root = await middleware(new NextRequest("http://localhost:3000/"));
-      const rememberedEnglish = await middleware(
-        withCookie("http://localhost:3000/", "en")
-      );
-      const englishPage = await middleware(
-        new NextRequest("http://localhost:3000/en")
-      );
-
-      expect(root.headers.get("location")).toBe("http://localhost:3000/fr");
-      expect(rememberedEnglish.headers.get("location")).toBe(
-        "http://localhost:3000/en"
-      );
-      expect(englishPage.status).toBe(200);
-    });
-
-    // @req REQ-140
-    it("answers the root with a 307 to the English default when nothing was chosen", async () => {
-      const response = await middleware(
-        new NextRequest("http://localhost:3000/")
-      );
-
-      expect(response.status).toBe(307);
-      expect(response.headers.get("location")).toBe("http://localhost:3000/en");
-    });
-
-    // The answer depends on a cookie, so it must not be cached as permanent:
-    // a 308 pinned in the browser would keep sending a reader who later chose
-    // French to English, and `Vary: Cookie` tells every shared cache the same.
-    // @req REQ-140
-    it("varies the root answer on the cookie rather than caching it as permanent", async () => {
-      const response = await middleware(
-        new NextRequest("http://localhost:3000/")
-      );
-
-      expect(response.status).not.toBe(308);
-      expect(response.headers.get("vary")).toBe("Cookie");
-    });
-
-    // @req REQ-140
-    it("answers the root with the remembered French choice", async () => {
-      const response = await middleware(
-        withCookie("http://localhost:3000/", "fr")
-      );
-
-      expect(response.status).toBe(307);
-      expect(response.headers.get("location")).toBe("http://localhost:3000/fr");
-    });
-
-    // @req REQ-140
-    it("treats a cookie naming no published locale as no choice at all", async () => {
-      const response = await middleware(
-        withCookie("http://localhost:3000/", "es")
-      );
-
-      expect(response.status).toBe(307);
-      expect(response.headers.get("location")).toBe("http://localhost:3000/en");
-    });
-
-    // @req REQ-140
-    it("keeps the query string across the root redirect", async () => {
+    it("sends the root to the French home, keeping the query string", async () => {
       const response = await middleware(
         new NextRequest("http://localhost:3000/?from=newsletter")
       );
 
+      expect(response.status).toBe(307);
       expect(response.headers.get("location")).toBe(
-        "http://localhost:3000/en?from=newsletter"
+        "http://localhost:3000/fr?from=newsletter"
       );
+      expect(response.headers.get("vary")).toBeNull();
     });
 
     // @req REQ-140
-    it("never redirects a French address, whatever the cookie says", async () => {
+    it("serves French addresses without redirecting or rewriting them", async () => {
       for (const url of [
         "http://localhost:3000/fr",
         "http://localhost:3000/fr/atlas/peuples",
       ]) {
-        const response = await middleware(withCookie(url, "en"));
+        const response = await middleware(new NextRequest(url));
 
         expect(response.status, url).toBe(200);
         expect(response.headers.get("location"), url).toBeNull();
@@ -413,133 +268,68 @@ describe("middleware", () => {
     });
 
     // @req REQ-140
-    it("serves the English home without a redirect", async () => {
+    it.each([
+      ["/en", "/fr"],
+      ["/en/", "/fr"],
+      ["/en/atlas/peoples/x", "/fr/atlas/peuples/x"],
+      ["/en/atlas/countries/BEN?tab=noms", "/fr/atlas/pays/BEN?tab=noms"],
+      [
+        "/en/atlas/peoples/PPL_YORUBA/links",
+        "/fr/atlas/peuples/PPL_YORUBA/liens",
+      ],
+      ["/en/dossiers/naming/the-people", "/fr/dossiers/nommer/le-peuple"],
+      ["/en/games/mercator", "/fr/jeux/mercator"],
+      ["/en/legal-notice", "/fr/mentions-legales"],
+      ["/en/atlas/persons/PER_X", "/fr/atlas/personnes/PER_X"],
+      ["/en/compare/peoples/PPL_A/PPL_B", "/fr/comparer/peuples/PPL_A/PPL_B"],
+      ["/en/about", "/fr/about"],
+      ["/en/admin/dashboard", "/fr/admin/dashboard"],
+    ])("redirects %s to %s permanently, in one hop", async (source, target) => {
       const response = await middleware(
-        new NextRequest("http://localhost:3000/en")
+        new NextRequest(`http://localhost:3000${source}`)
       );
 
-      expect(response.status).toBe(200);
-      expect(response.headers.get("location")).toBeNull();
-    });
-
-    // The route folders under `src/app/[lang]` are French. An English address
-    // is served by rewriting it onto the French folder, locale prefix kept,
-    // so the page reads `lang = "en"` from a French path.
-    // @req REQ-141
-    it("serves an English address by rewriting it onto the French folder", async () => {
-      const response = await middleware(
-        new NextRequest("http://localhost:3000/en/atlas/peoples")
-      );
-
-      expect(response.status).toBe(200);
-      expect(response.headers.get("location")).toBeNull();
-      expect(response.headers.get("x-middleware-rewrite")).toBe(
-        "http://localhost:3000/en/atlas/peuples"
-      );
-    });
-
-    // @req REQ-141
-    it("carries the query string and the nonce onto the rewritten request", async () => {
-      const response = await middleware(
-        new NextRequest("http://localhost:3000/en/atlas/countries/BEN?tab=noms")
-      );
-
-      expect(response.headers.get("x-middleware-rewrite")).toBe(
-        "http://localhost:3000/en/atlas/pays/BEN?tab=noms"
-      );
-      expect(response.headers.get("x-middleware-request-x-nonce")).toBeTruthy();
-      expect(response.headers.get("Content-Security-Policy")).toContain(
-        "style-src-attr 'unsafe-inline'"
+      expect(response.status).toBe(308);
+      expect(response.headers.get("location")).toBe(
+        `http://localhost:3000${target}`
       );
     });
 
-    // @req REQ-141
-    it("rewrites a chapter, the links tail and a game slug onto their French folders", async () => {
-      const cases: [string, string][] = [
-        ["/en/dossiers/naming/the-people", "/en/dossiers/nommer/le-peuple"],
-        [
-          "/en/atlas/peoples/PPL_YORUBA/links",
-          "/en/atlas/peuples/PPL_YORUBA/liens",
-        ],
-        ["/en/games/mercator", "/en/jeux/mercator"],
-        ["/en/legal-notice", "/en/mentions-legales"],
-      ];
-      for (const [publicPath, folderPath] of cases) {
+    // @req REQ-140
+    it.each([
+      ["/es", "/fr"],
+      ["/es/", "/fr"],
+      ["/es/atlas/peuples", "/fr/atlas/peuples"],
+      ["/pt/about", "/fr/about"],
+    ])(
+      "sends the unpublished locale %s to %s permanently",
+      async (legacy, current) => {
         const response = await middleware(
-          new NextRequest(`http://localhost:3000${publicPath}`)
+          new NextRequest(`http://localhost:3000${legacy}`)
         );
 
-        expect(response.status, publicPath).toBe(200);
-        expect(response.headers.get("x-middleware-rewrite"), publicPath).toBe(
-          `http://localhost:3000${folderPath}`
-        );
-      }
-    });
-
-    // @req REQ-140
-    it("sets the resolved locale on the forwarded request for both locales", async () => {
-      for (const [url, locale] of [
-        ["http://localhost:3000/en/atlas/peoples", "en"],
-        ["http://localhost:3000/fr/atlas/peuples", "fr"],
-        ["http://localhost:3000/en", "en"],
-      ]) {
-        const response = await middleware(new NextRequest(url));
-
-        expect(response.headers.get("x-middleware-request-x-locale"), url).toBe(
-          locale
-        );
-      }
-    });
-
-    // The header is the middleware's word, not the client's: a value sent by
-    // the browser on a path outside the locale tree must not reach the root
-    // layout as if it had been resolved.
-    // @req REQ-140
-    it("does not forward a client-sent x-locale on a path outside the locale tree", async () => {
-      const response = await middleware(
-        new NextRequest("http://localhost:3000/docs/api", {
-          headers: { "x-locale": "fr" },
-        })
-      );
-
-      expect(response.headers.get("x-middleware-request-x-locale")).toBeNull();
-    });
-
-    // @req REQ-140
-    it("sends an unpublished locale to the English default, permanently", async () => {
-      const cases: [string, string][] = [
-        ["/es", "/en"],
-        ["/es/", "/en"],
-        ["/es/atlas/peuples", "/en/atlas/peoples"],
-        ["/pt/about", "/en/about"],
-      ];
-      for (const [legacy, current] of cases) {
-        const response = await middleware(
-          withCookie(`http://localhost:3000${legacy}`, "fr")
-        );
-
-        expect(response.status, legacy).toBe(308);
-        expect(response.headers.get("location"), legacy).toBe(
+        expect(response.status).toBe(308);
+        expect(response.headers.get("location")).toBe(
           `http://localhost:3000${current}`
         );
       }
-    });
+    );
 
     // @req REQ-091
-    it("relocates a retired segment within the requested locale, in one hop", async () => {
+    it("relocates a retired segment to its French page, in one hop", async () => {
       const cases: [string, string][] = [
-        ["/en/peuples", "/en/atlas/peoples"],
         ["/fr/peuples", "/fr/atlas/peuples"],
-        ["/en/pays/zaf", "/en/atlas/countries/zaf"],
-        ["/es/pays/zaf", "/en/atlas/countries/zaf"],
-        ["/en/explorer/peuples/PPL_YORUBA", "/en/atlas/peoples/PPL_YORUBA"],
-        ["/en/jouer/quiz", "/en/games/quiz"],
-        ["/en/peuples-hub", "/en/atlas/peoples"],
-        ["/en/dossiers/noms/PPL_YORUBA", "/en/atlas/ethnonyms/PPL_YORUBA"],
-        ["/en/compte/inscription", "/en/admin/connexion"],
+        ["/en/peuples", "/fr/atlas/peuples"],
+        ["/en/pays/zaf", "/fr/atlas/pays/zaf"],
+        ["/es/pays/zaf", "/fr/atlas/pays/zaf"],
+        ["/en/explorer/peuples/PPL_YORUBA", "/fr/atlas/peuples/PPL_YORUBA"],
+        ["/en/jouer/quiz", "/fr/jeux/quiz"],
+        ["/en/peuples-hub", "/fr/atlas/peuples"],
+        ["/en/dossiers/noms/PPL_YORUBA", "/fr/atlas/appellations/PPL_YORUBA"],
+        ["/en/compte/inscription", "/fr/admin/connexion"],
         [
           "/en/regards/colonisation-et-resistances",
-          "/en/dossiers/perspectives/colonisation-and-resistances",
+          "/fr/dossiers/regards/colonisation-et-resistances",
         ],
       ];
       for (const [legacy, current] of cases) {
@@ -555,19 +345,15 @@ describe("middleware", () => {
     });
 
     // @req REQ-091
-    it("preserves the query string across a relocation in either locale", async () => {
-      for (const locale of ["en", "fr"]) {
-        const response = await middleware(
-          new NextRequest(
-            `http://localhost:3000/${locale}/peuples?tri=population`
-          )
-        );
+    it("preserves the query string across a relocation", async () => {
+      const response = await middleware(
+        new NextRequest("http://localhost:3000/fr/peuples?tri=population")
+      );
 
-        expect(response.status, locale).toBe(308);
-        expect(response.headers.get("location"), locale).toBe(
-          `http://localhost:3000/${locale}/atlas/${locale === "en" ? "peoples" : "peuples"}?tri=population`
-        );
-      }
+      expect(response.status).toBe(308);
+      expect(response.headers.get("location")).toBe(
+        "http://localhost:3000/fr/atlas/peuples?tri=population"
+      );
     });
 
     // A query naming a fiche is spent by the redirect rather than forwarded:
@@ -575,11 +361,11 @@ describe("middleware", () => {
     // identifier it would act on, which is the second hop this composition
     // exists to remove.
     // @req REQ-091
-    it("spends a deep-link query rather than forwarding it, in either locale", async () => {
+    it("spends a deep-link query rather than forwarding it", async () => {
       const cases: [string, string][] = [
-        ["/en/peuples?people=PPL_YORUBA", "/en/atlas/peoples/PPL_YORUBA"],
         ["/fr/peuples?people=PPL_YORUBA", "/fr/atlas/peuples/PPL_YORUBA"],
-        ["/en/atlas/countries?country=BEN", "/en/atlas/countries/BEN"],
+        ["/en/peuples?people=PPL_YORUBA", "/fr/atlas/peuples/PPL_YORUBA"],
+        ["/en/atlas/countries?country=BEN", "/fr/atlas/pays/BEN"],
       ];
       for (const [legacy, current] of cases) {
         const response = await middleware(
@@ -628,55 +414,6 @@ describe("middleware", () => {
 
       expect(response.headers.get("location")).toBe(
         "http://localhost:3000/fr/atlas/peuples/PPL_YORUBA"
-      );
-    });
-
-    /**
-     * DEC-049: one document, one address per locale. With the folders French,
-     * `/en/atlas/pays` would otherwise be served as a second English address
-     * for the countries directory, so a path written in the other locale's
-     * vocabulary is sent to its own — symmetrically, and in the same single
-     * 308 as any relocation it composes with.
-     */
-    // @req REQ-141
-    it("sends a path written in the other locale's vocabulary to its own, in one hop", async () => {
-      const cases: [string, string][] = [
-        ["/en/atlas/pays", "/en/atlas/countries"],
-        [
-          "/en/atlas/peuples/PPL_YORUBA/liens",
-          "/en/atlas/peoples/PPL_YORUBA/links",
-        ],
-        ["/fr/atlas/countries", "/fr/atlas/pays"],
-        ["/en/dossiers/nommer/le-peuple", "/en/dossiers/naming/the-people"],
-        ["/en/jeux/quiz", "/en/games/quiz"],
-        ["/en/mentions-legales", "/en/legal-notice"],
-        ["/en/peuples/PPL_YORUBA/liens", "/en/atlas/peoples/PPL_YORUBA/links"],
-      ];
-      for (const [foreign, own] of cases) {
-        const response = await middleware(
-          new NextRequest(`http://localhost:3000${foreign}`)
-        );
-
-        expect(response.status, foreign).toBe(308);
-        expect(response.headers.get("location"), foreign).toBe(
-          `http://localhost:3000${own}`
-        );
-      }
-    });
-
-    // The cross-vocabulary step runs before the deep-link one, and the
-    // deep-link table is keyed per locale: a French directory address under
-    // /en carrying `?country=` reaches the English fiche in one 308, not a
-    // 308 to the English directory and a second one from there.
-    // @req REQ-141
-    it("resolves a foreign-vocabulary deep link to the fiche in one hop", async () => {
-      const response = await middleware(
-        new NextRequest("http://localhost:3000/en/atlas/pays?country=BEN")
-      );
-
-      expect(response.status).toBe(308);
-      expect(response.headers.get("location")).toBe(
-        "http://localhost:3000/en/atlas/countries/BEN"
       );
     });
 
@@ -889,8 +626,6 @@ describe("middleware", () => {
         "/fr",
         "/fr/atlas/pays/SEN",
         "/fr/atlas/familles/FLG_BANTU",
-        "/en",
-        "/en/atlas/countries/SEN",
       ]) {
         const response = await middleware(
           new NextRequest(`http://localhost:3000${pathname}`)

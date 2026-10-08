@@ -6,7 +6,6 @@ export default function PolitiqueDeDonneesLoading() {
   return (
     <PageLoadingScreen
       label={{
-        en: systemStatesCopy.en.loading.dataPolicy,
         fr: systemStatesCopy.fr.loading.dataPolicy,
       }}
     />

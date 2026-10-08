@@ -8,50 +8,7 @@ import type { Language } from "@/types/shared";
  * importing the whole site dictionary for thirty labels once broke that
  * budget on +0.58 KB of unrelated copy. The island reads this module only.
  */
-const en = {
-  navLabel: "Quiz",
-  pageTitle: "What do you want to play on?",
-  pageSubtitle:
-    "A country, a family of languages, a topic — or the whole continent. Eight questions each time.",
-  scopeThemeHeading: "A topic",
-  scopeCountryHeading: "A country",
-  scopeFamilyHeading: "A family of languages",
-  scopeCountryHint: "Tap a country: the topics it can fill unfold.",
-  scopeThemePanelHint: "Choose a topic, or play the whole country.",
-  scopeThemePanelNoTheme: "Play without a theme",
-  scopeMixedHint:
-    "Eight questions drawn from all our entries, from the best-known peoples to the least documented.",
-  scopeRandomHint: "Eight questions at random, in no order of difficulty.",
-  leaveSession: "Leave the quiz",
-  seeScoreCard: "See the score card",
-  comingSoon:
-    "the questions for this selection are on their way — the corresponding pages are being verified",
-  validate: "Confirm",
-  questionProgressPrefix: "question",
-  questionProgressSeparator: "of",
-  correctVerdict: "Correct!",
-  incorrectVerdict: "Not quite",
-  correctAnswerLabel: "Answer: ",
-  openSourceChain: "Open the chain of sources",
-  nextQuestion: "Next question",
-  seeScore: "See the score",
-  loadingSession: "Loading the session…",
-  emptySession: "No question is available on this topic — try again later.",
-  backToPicker: "Choose something else",
-  sessionError: "This session could not be loaded — try again in a moment.",
-  scoreHeading: "Score",
-  scoreFractionSeparator: "correct answers out of",
-  playAgain: "Play again",
-  scoreCardExactAnswersSeparator: "exact answers out of",
-  fichesEncounteredLabel: "Pages encountered",
-  shareScoreLabel: "Share the score",
-  copiedFeedback: "copied",
-  ogSourcedLine: "every answer is sourced",
-};
-
-type QuizCopy = typeof en;
-
-const fr: QuizCopy = {
+const fr = {
   navLabel: "Quiz",
   pageTitle: "Sur quoi veux-tu jouer ?",
   pageSubtitle:
@@ -94,5 +51,7 @@ const fr: QuizCopy = {
   ogSourcedLine: "chaque réponse est sourcée",
 };
 
+type QuizCopy = typeof fr;
+
 // @req REQ-145
-export const quizCopy: Record<Language, QuizCopy> = { en, fr };
+export const quizCopy: Record<Language, QuizCopy> = { fr };

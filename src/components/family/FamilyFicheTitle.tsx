@@ -56,11 +56,8 @@ export function FamilyFicheTitle({
         <h1>
           {rebuildsItsArea ? (
             <>
-              {language === "en" ? (nameEn ?? hero.nameFr) : hero.nameFr},{" "}
-              <em>{copy.reconstructedArea}</em>
+              {hero.nameFr}, <em>{copy.reconstructedArea}</em>
             </>
-          ) : language === "en" ? (
-            (nameEn ?? hero.nameFr)
           ) : (
             hero.nameFr
           )}

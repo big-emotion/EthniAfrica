@@ -9,7 +9,6 @@ import {
   getPeopleLinksRoute,
   getPeopleRoute,
   getStaticPageRoute,
-  PUBLISHED_LOCALES,
 } from "@/lib/routing";
 import { isModulePublished } from "@/lib/hubs/moduleOffer";
 
@@ -27,13 +26,6 @@ import { isModulePublished } from "@/lib/hubs/moduleOffer";
  * address the site stopped serving reports a clean run against a 404, and Lot
  * 3 moved every module route named below.
  *
- * One list per published locale, the same nineteen addresses in each. axe is
- * the one browser gate that reads copy — labels, `lang` attributes, the
- * hreflang links — so the English surface is audited in full rather than
- * sampled the way Lighthouse samples it (bundles do not change with the
- * locale; labels do). Nineteen routes on four lanes is the wall clock of the
- * one required check; the second locale doubles it.
- *
  * The three fiche routes are one representative assembled fiche per AFRIK
  * entity type (FR102). All three are needed because the panel-kind ×
  * entity-type matrix (panelRegistry.tsx) gives each type a different chapter
@@ -44,15 +36,12 @@ import { isModulePublished } from "@/lib/hubs/moduleOffer";
  * route-family rolled out in 16.4–16.9 (ETNI-807 · FR110). The sign-in page
  * stands in for the moderation surface: the admin console itself redirects
  * unauthenticated visitors on mount, so auditing it unauthenticated would
- * measure the redirect, not the admin/moderation charter chrome. It is the
- * one admin address served in both locales, and the segment after `admin`
- * has no slug-table entry, so it is written out.
+ * measure the redirect, not the admin/moderation charter chrome. The
+ * segment after `admin` has no slug-table entry, so it is written out.
  *
  * The comparator journey (Epic 9, ETNI-485 · FR44) contributes its picker
  * shell and one seeded comparison, reusing FLG ids already known good above
- * so the route does not depend on unverified seed ids. The entity segment is
- * the locale's own: written in the other locale's word it would be an
- * address the middleware redirects, and the audit would measure the hop.
+ * so the route does not depend on unverified seed ids.
  *
  * The links page (Epic 11, Story 11.11 · AR20) mounts the EgoNetworkGraph
  * lazily (next/dynamic ssr:false); this gate keeps the graph's keyboard/ARIA
@@ -132,4 +121,4 @@ const liveRoutesFor = (locale: Language): string[] => [
 ];
 
 // @req REQ-141
-export const LIVE_ROUTES = PUBLISHED_LOCALES.flatMap(liveRoutesFor);
+export const LIVE_ROUTES = liveRoutesFor("fr");

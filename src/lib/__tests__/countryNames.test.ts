@@ -42,22 +42,16 @@ describe("getFrenchCountryCommonName", () => {
 
 describe("getCountryCommonName", () => {
   // @req REQ-140
-  it("names the country in the requested locale", () => {
-    expect(getCountryCommonName("en", "ZAF", "Republic of South Africa")).toBe(
-      "South Africa"
-    );
+  it("names the country in French", () => {
     expect(getCountryCommonName("fr", "ZAF", "Republic of South Africa")).toBe(
       "Afrique du Sud"
-    );
-    expect(getCountryCommonName("en", "SDN", "Republic of the Sudan")).toBe(
-      "Sudan"
     );
   });
 
   // @req REQ-140
   it("keeps the declared name when the atlas does not map the code", () => {
-    expect(getCountryCommonName("en", "XXX", "Republic of Test")).toBe(
-      "Republic of Test"
+    expect(getCountryCommonName("fr", "XXX", "République de Test")).toBe(
+      "République de Test"
     );
   });
 
@@ -65,9 +59,6 @@ describe("getCountryCommonName", () => {
   it("prefers the editorial name over CLDR's city disambiguation", () => {
     expect(getCountryCommonName("fr", "COD", "RDC")).toBe(
       "République démocratique du Congo"
-    );
-    expect(getCountryCommonName("en", "COD", "DRC")).toBe(
-      "Democratic Republic of the Congo"
     );
   });
 
@@ -80,9 +71,7 @@ describe("getCountryCommonName", () => {
     const flaggedButUnnamed = Object.keys(ALPHA3_TO_ALPHA2).filter(
       (isoAlpha3) =>
         flagFromISO3(isoAlpha3) !== NEUTRAL_FLAG &&
-        (["fr", "en"] as const).some(
-          (lang) => getCountryCommonName(lang, isoAlpha3, declared) === declared
-        )
+        getCountryCommonName("fr", isoAlpha3, declared) === declared
     );
     expect(flaggedButUnnamed).toEqual([]);
   });

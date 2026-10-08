@@ -85,20 +85,4 @@ describe("AuditTimeline", () => {
     );
     expect(screen.queryAllByRole("listitem")).toHaveLength(0);
   });
-
-  // @req REQ-140
-  // @req REQ-145
-  it("renders the trail in English", () => {
-    render(
-      <AuditTimeline
-        language="en"
-        entries={[received, accepted]}
-        pendingEvent="publication"
-      />
-    );
-
-    expect(screen.getByText("Report received")).toBeInTheDocument();
-    expect(screen.getByText(/authorisation admin/)).toBeInTheDocument();
-    expect(screen.getByText(/Has not occurred yet/)).toBeInTheDocument();
-  });
 });

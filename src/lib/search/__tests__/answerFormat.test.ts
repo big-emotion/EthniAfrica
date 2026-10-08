@@ -20,22 +20,19 @@ describe("formatMillions", () => {
   });
 
   // @req REQ-178
-  it("uses a decimal point in English and a comma in French", () => {
-    expect(formatMillions(4_500_000, "en")).toBe("4.5 M");
+  it("uses a decimal comma", () => {
     expect(formatMillions(3_500_000, "fr")).toBe("3,5 M");
   });
 
   // @req REQ-178
   it("does not print a false zero for a very small estimate", () => {
     expect(formatMillions(20_000, "fr")).toBe("< 0,1 M");
-    expect(formatMillions(20_000, "en")).toBe("< 0.1 M");
   });
 
   // @req REQ-178
   it("words a headline figure with the plural the language needs", () => {
     expect(formatMillionsInWords(40_000_000, "fr")).toBe("40 millions");
     expect(formatMillionsInWords(1_000_000, "fr")).toBe("1 million");
-    expect(formatMillionsInWords(39_600_000, "en")).toBe("40 million");
   });
 });
 
@@ -45,7 +42,6 @@ describe("formatPercent", () => {
   it("keeps one decimal when the share has one", () => {
     expect(formatPercent(2.5, "fr")).toBe("2,5 %");
     expect(formatPercent(18, "fr")).toBe("18 %");
-    expect(formatPercent(2.5, "en")).toBe("2.5%");
   });
 });
 

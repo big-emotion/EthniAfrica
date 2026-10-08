@@ -327,26 +327,6 @@ describe("SearchFeed", () => {
   });
 
   // @req REQ-180
-  it("marks the localized filed name as the searched English form", () => {
-    const result = namedResult();
-    const { container } = render(
-      <SearchFeed
-        query="Chad"
-        language="en"
-        state="exact"
-        results={[result]}
-        subjects={[result]}
-        leads={[]}
-        companions={emptyCompanions}
-      />
-    );
-
-    expect(
-      container.querySelector('[data-appellation][data-searched="true"]')
-    ).toHaveTextContent("Chad");
-  });
-
-  // @req REQ-180
   it("does not draw an empty origins block from a marker without origin facts", () => {
     const result = namedResult({
       naming: {

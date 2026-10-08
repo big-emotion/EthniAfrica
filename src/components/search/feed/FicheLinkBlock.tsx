@@ -38,7 +38,7 @@ export function FicheLinkBlock({
   // what each leads to; a lone one needs no qualifier.
   const labelOf = (subject: SearchResult) =>
     names.filter((name) => name === nameOf(subject)).length > 1
-      ? `${nameOf(subject)} (${getSearchEntityLabel(subject.type, language)})`
+      ? `${nameOf(subject)} (${getSearchEntityLabel(subject.type)})`
       : nameOf(subject);
 
   // One fiche is the page's one solid primary. Several are equal ways on and

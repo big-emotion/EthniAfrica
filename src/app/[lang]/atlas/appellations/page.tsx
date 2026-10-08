@@ -14,7 +14,7 @@ import {
 } from "@/api/v2/schemas/names";
 import { getTranslation } from "@/lib/translations";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
 const PER_PAGE = 48;
@@ -78,12 +78,7 @@ export async function generateMetadata({
   const copy = { title: t.pageTitle, description: t.pageSubtitle };
   return {
     ...copy,
-    ...surfaceHead(
-      lang as Language,
-      "names",
-      (locale) => getLocalizedRoute(locale, "names"),
-      copy
-    ),
+    ...pageHead(getLocalizedRoute("fr", "names"), copy),
   };
 }
 
@@ -135,7 +130,7 @@ export default async function AppellationsPage({
           fallback={
             <div
               aria-busy="true"
-              aria-label={language === "fr" ? "Chargement" : "Loading"}
+              aria-label={"Chargement"}
               className="min-h-48"
             />
           }

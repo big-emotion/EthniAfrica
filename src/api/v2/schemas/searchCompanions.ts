@@ -93,7 +93,7 @@ function parseSubjects(
 export const searchCompanionsQuerySchema = z
   .object({
     subjects: z.string().optional().default(""),
-    lang: z.enum(["en", "fr"]).default("fr"),
+    lang: z.enum(["fr"]).default("fr"),
     word: z.string().trim().max(MAX_SEARCH_COMPANION_WORD_LENGTH).optional(),
   })
   .transform(({ subjects, lang, word }, context) => ({
@@ -160,7 +160,7 @@ const shortSchema = z.object({
 });
 const anecdoteSchema = z.object({
   id: z.string().min(1),
-  contentLanguage: z.enum(["en", "fr"]),
+  contentLanguage: z.enum(["fr"]),
   headline: z.string().min(1),
   about: z.string().min(1).optional(),
   body: z.array(z.string().min(1)).min(1).max(2),
@@ -171,7 +171,7 @@ const anecdoteSchema = z.object({
 });
 const proverbSchema = z.object({
   id: z.string().min(1),
-  contentLanguage: z.enum(["en", "fr"]),
+  contentLanguage: z.enum(["fr"]),
   text: z.string().min(1),
   meaning: z.string().min(1),
   original: z
@@ -192,7 +192,7 @@ const quizSchema = z
   .object({
     id: z.string().min(1),
     templateId: quizSessionQuestionSchema.shape.templateId,
-    contentLanguage: z.enum(["en", "fr"]),
+    contentLanguage: z.enum(["fr"]),
     prompt: z.string().min(1),
     stimulus: z.string().nullable(),
     options: z.array(quizOptionValueSchema).min(2),

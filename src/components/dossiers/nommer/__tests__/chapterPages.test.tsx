@@ -9,7 +9,6 @@ import {
   NOMMER_CHAPTERS,
   getNommerChapter,
 } from "@/lib/dossiers/nommer/chapters";
-import { NOMMER_CHAPTERS_EN } from "@/lib/dossiers/nommer/chapters/index.en";
 import { NOMMER_CHAPTER_KEYS, NOMMER_CHAPTER_SLUGS } from "@/lib/routing";
 
 vi.mock("@/components/layout/PageLayout", () => ({
@@ -128,33 +127,5 @@ describe("the Nommer chapter routes", () => {
       expect(others).toHaveTextContent(chapter.title);
     }
     expect(others).not.toHaveTextContent("La langue");
-  });
-
-  // @req REQ-145
-  it("renders the English sidecar throughout an English chapter", () => {
-    const translation = NOMMER_CHAPTERS_EN["le-peuple"];
-    render(
-      <NommerChapterPage
-        chapter={getNommerChapter("le-peuple")}
-        language="en"
-      />
-    );
-
-    expect(
-      screen.getByRole("heading", { level: 1, name: translation.title })
-    ).toBeInTheDocument();
-    expect(screen.getByText(translation.standfirst)).toBeInTheDocument();
-    expect(
-      screen.getByRole("navigation", { name: "Other chapters" })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("status", {
-        name: "Machine translation, not yet reviewed",
-      })
-    ).toBeInTheDocument();
-    expect(screen.queryByText(/exonyme dépréciatif attesté/)).toBeNull();
-    expect(screen.getAllByText(/attested derogatory exonym/)).not.toHaveLength(
-      0
-    );
   });
 });

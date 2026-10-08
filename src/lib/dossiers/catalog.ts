@@ -110,61 +110,6 @@ const CLASSIFICATIONS: Classification[] = [
   },
 ];
 
-const ENGLISH_COPY: Record<string, { title: string; summary: string }> = {
-  "dossier-kongo": {
-    title: "The Kongo kingdom",
-    summary: "A capital, political networks and historical change.",
-  },
-  "dossier-luba": {
-    title: "Luba: power and memory",
-    summary:
-      "Institutions, alliances and the transmission of political memory.",
-  },
-  "dossier-lunda": {
-    title: "Lunda: alliances and connections",
-    summary: "Origin narratives, alliances and changing networks of power.",
-  },
-  "dossier-spiritualites-kongo": {
-    title: "Kongo spiritualities: objects and change",
-    summary: "Minkisi, Kongo Christianities and changing practices.",
-  },
-
-  nommer: {
-    title: "Who gave this name?",
-    summary:
-      "Naming a people, a country, a person, a language or a thing: who gives the name, and what it tells us.",
-  },
-  anecdotes: {
-    title: "Anecdotes",
-    summary: "Short, sourced stories about names in Africa.",
-  },
-  proverbes: {
-    title: "Proverbs",
-    summary:
-      "Proverbs from Africa and the people who say them, where a source names them.",
-  },
-  frise: {
-    title: "First migration landmarks",
-    summary: "Sourced events for understanding the movements of peoples.",
-  },
-  "regards-colonisation": {
-    title: "Colonisation and resistance",
-    summary: "Borders, imposed names and resistance to colonisation.",
-  },
-  "dossier-proportions": {
-    title: "The true proportions",
-    summary: "Maps, areas and representations of African territories.",
-  },
-  "dossier-populations": {
-    title: "The real weight",
-    summary: "Populations, demographic change and African societies.",
-  },
-  "dossier-ressources": {
-    title: "A geological scandal",
-    summary: "Natural resources, extraction and economic exchange.",
-  },
-};
-
 const normalize = (value: string) =>
   value
     .normalize("NFD")
@@ -196,10 +141,7 @@ export function getDossiers(
       !entry.secondaryThemes.some((theme) => theme === filters.theme)
     )
       return [];
-    const copy =
-      filters.language === "en"
-        ? ENGLISH_COPY[entry.id]
-        : { title: definition.name, summary: entry.summary };
+    const copy = { title: definition.name, summary: entry.summary };
     if (query && !normalize(`${copy.title} ${copy.summary}`).includes(query))
       return [];
     return [{ ...entry, ...copy, href }];

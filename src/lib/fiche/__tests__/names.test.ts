@@ -32,9 +32,6 @@ describe("namesChapterTitle", () => {
     expect(namesChapterTitle("people", namesForPeople("PPL_HAUSA"), "fr")).toBe(
       "Patronymes rattachés à ce peuple"
     );
-    expect(
-      namesChapterTitle("country", namesForPeople("PPL_HAUSA"), "en")
-    ).toBe("Patronymics linked to this country");
   });
 
   // Somali mixes sixteen patronymics with four clan names.
@@ -45,9 +42,6 @@ describe("namesChapterTitle", () => {
     ).toBe("Noms de personnes rattachés à ce peuple");
     expect(namesChapterTitle("country", [], "fr")).toBe(
       "Noms de personnes rattachés à ce pays"
-    );
-    expect(namesChapterTitle("country", null, "en")).toBe(
-      "Personal names linked to this country"
     );
   });
 });

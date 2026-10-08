@@ -30,9 +30,11 @@
  *         required: false
  *         schema:
  *           type: string
- *           enum: [en, fr]
+ *           enum: [fr]
  *           default: fr
- *         description: Authored question-bank locale
+ *         description: >
+ *           Authored question-bank locale. French is the only one published;
+ *           any other value is rejected with 400.
  *       - in: query
  *         name: pays
  *         required: false

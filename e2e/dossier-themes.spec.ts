@@ -12,28 +12,11 @@ import { LOCALE } from "./support/locale";
  * reading still offered, and the addresses that serve nothing.
  */
 test.describe("Dossiers while the readings are withdrawn @cross-viewport", () => {
-  // @req REQ-140
-  test("names the hub Articles in English, and leads to the anecdotes", async ({
-    page,
-  }) => {
-    test.skip(LOCALE !== "en", "English copy assertion");
-    await page.setViewportSize({ width: 430, height: 900 });
-    await page.goto(getLocalizedRoute(LOCALE, "dossiersHub"));
-
-    await expect(
-      page.getByRole("heading", { name: "Articles", exact: true })
-    ).toBeVisible();
-    await expect(
-      page.getByRole("link", { name: "Anecdotes", exact: true })
-    ).toHaveAttribute("href", getLocalizedRoute(LOCALE, "anecdotes"));
-  });
-
   for (const width of [320, 375, 430, 768, 1199, 1200, 1440]) {
     // @req REQ-114
     test(`keeps the hub readable and unscrollable sideways at ${width}px`, async ({
       page,
     }) => {
-      test.skip(LOCALE !== "fr", "French copy assertion");
       await page.setViewportSize({ width, height: 900 });
       await page.goto(getLocalizedRoute(LOCALE, "dossiersHub"));
 
@@ -58,7 +41,6 @@ test.describe("Dossiers while the readings are withdrawn @cross-viewport", () =>
   test("lists four Articles destinations as links, and serves none of the withdrawn readings", async ({
     page,
   }) => {
-    test.skip(LOCALE !== "fr", "French copy assertion");
     await page.setViewportSize({ width: 430, height: 900 });
     await page.goto(getLocalizedRoute(LOCALE, "dossiersHub"));
 
@@ -88,7 +70,6 @@ test.describe("Dossiers while the readings are withdrawn @cross-viewport", () =>
   // The one deep link the freeze must not break.
   // @req REQ-114
   test("keeps the anecdote deep link reachable", async ({ page }) => {
-    test.skip(LOCALE !== "fr", "French copy assertion");
     const response = await page.goto(
       `${getLocalizedRoute(LOCALE, "anecdotes")}?a=monrovia`
     );

@@ -39,10 +39,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
     filePage: "https://commons.wikimedia.org/wiki/File:Kabylievillage.jpg",
     credit:
       "Paysage de Kabylie, Algérie — diebmx, Wikimedia Commons, CC BY 2.0",
-    shortCredit: { fr: "diebmx, CC BY 2.0", en: "diebmx, CC BY 2.0" },
+    shortCredit: { fr: "diebmx, CC BY 2.0" },
     alt: {
       fr: "Un village de Kabylie sur son versant de colline, en Algérie : le lieu du peuple kabyle.",
-      en: "A Kabylie village on its hillside in Algeria: the Kabyle people's own place.",
     },
     focus: "50% 60%",
     licence: "cc-by",
@@ -56,11 +55,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Panier d'œufs, Jimma, Éthiopie — Rod Waddington, Wikimedia Commons, CC BY-SA 2.0",
     shortCredit: {
       fr: "Rod Waddington, CC BY-SA 2.0",
-      en: "Rod Waddington, CC BY-SA 2.0",
     },
     alt: {
       fr: "Un panier d'œufs de poule en Éthiopie : ce dont parle le proverbe.",
-      en: "A basket of hen eggs in Ethiopia: what the proverb speaks of.",
     },
     focus: "50% 50%",
     licence: "cc-by-sa",
@@ -74,11 +71,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Pirogues à Saint-Louis, Sénégal — Ji-Elle, Wikimedia Commons, public domain",
     shortCredit: {
       fr: "Ji-Elle, domaine public",
-      en: "Ji-Elle, public domain",
     },
     alt: {
       fr: "Des pirogues serrées les unes contre les autres dans le port de Saint-Louis, au Sénégal : le pays du proverbe wolof.",
-      en: "Pirogues moored side by side in the harbour of Saint-Louis, Senegal: the country of the Wolof proverb.",
     },
     focus: "50% 40%",
     licence: "public-domain",
@@ -90,11 +85,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Boutre à Lamu, Kenya — Karl Ragnar Gjertsen, Wikimedia Commons, CC BY-SA 3.0",
     shortCredit: {
       fr: "Karl Ragnar Gjertsen, CC BY-SA 3.0",
-      en: "Karl Ragnar Gjertsen, CC BY-SA 3.0",
     },
     alt: {
       fr: "Un boutre à voile au large de Lamu, sur la côte swahilie du Kenya.",
-      en: "A sailing dhow off Lamu, on Kenya's Swahili coast.",
     },
     focus: "45% 50%",
     licence: "cc-by-sa",
@@ -108,11 +101,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Rainette de Christy, Walikale, République démocratique du Congo — Mahomed Desai, Wikimedia Commons, CC BY 4.0",
     shortCredit: {
       fr: "Mahomed Desai, CC BY 4.0",
-      en: "Mahomed Desai, CC BY 4.0",
     },
     alt: {
       fr: "Une rainette sur une feuille, de nuit, en République démocratique du Congo : la grenouille dont parle le proverbe.",
-      en: "A tree frog on a leaf at night in the Democratic Republic of the Congo: the frog the proverb speaks of.",
     },
     focus: "45% 50%",
     licence: "cc-by",
@@ -125,11 +116,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Village karanga dans la vallée du Grand Zimbabwe — Thomas Wozniak, Wikimedia Commons, CC BY 3.0",
     shortCredit: {
       fr: "Thomas Wozniak, CC BY 3.0",
-      en: "Thomas Wozniak, CC BY 3.0",
     },
     alt: {
       fr: "Un village karanga, groupe shona, dans la vallée du Grand Zimbabwe : un lieu bâti à plusieurs.",
-      en: "A Karanga (Shona) village in the valley of Great Zimbabwe: a place built by many hands.",
     },
     focus: "50% 55%",
     licence: "cc-by",
@@ -143,11 +132,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Ciel et plan d'eau dans le nord du Ghana — Sheihu Salawatia, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Sheihu Salawatia, CC BY-SA 4.0",
-      en: "Sheihu Salawatia, CC BY-SA 4.0",
     },
     alt: {
       fr: "Un ciel bleu chargé de nuages au-dessus d'un plan d'eau, dans le nord du Ghana : le ciel dont parle le proverbe.",
-      en: "A blue sky full of clouds above a stretch of water in northern Ghana: the sky the proverb speaks of.",
     },
     focus: "50% 30%",
     licence: "cc-by-sa",
@@ -161,11 +148,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Petit léopard dans un arbre, Botswana — Malcolm Macgregor, Wikimedia Commons, CC BY 2.0",
     shortCredit: {
       fr: "Malcolm Macgregor, CC BY 2.0",
-      en: "Malcolm Macgregor, CC BY 2.0",
     },
     alt: {
       fr: "Un petit léopard installé dans un arbre, au Botswana : le petit dont parle le proverbe.",
-      en: "A leopard cub settled in a tree in Botswana: the cub the proverb speaks of.",
     },
     focus: "40% 40%",
     licence: "cc-by",
@@ -178,11 +163,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Étoffe adinkra de deuil rapportée de Kumasi par Thomas Edward Bowdich en 1817 — reproduction ancienne, Wikimedia Commons, public domain",
     shortCredit: {
       fr: "Bowdich, 1817, domaine public",
-      en: "Bowdich, 1817, public domain",
     },
     alt: {
       fr: "Une étoffe adinkra de deuil rapportée de Kumasi en 1817, couverte de motifs imprimés : la culture matérielle du peuple asante.",
-      en: "An adinkra mourning cloth brought back from Kumasi in 1817, covered in stamped patterns: the Asante people's material culture.",
     },
     focus: "50% 50%",
     licence: "public-domain",
@@ -193,10 +176,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "https://commons.wikimedia.org/wiki/File:Isolated_Hill_and_Waterbody_near_Sabon_Kaura,_Bauchi.jpg",
     credit:
       "Colline et point d'eau près de Sabon Kaura, État de Bauchi, Nigeria — Martemmedia, Wikimedia Commons, CC BY 4.0",
-    shortCredit: { fr: "Martemmedia, CC BY 4.0", en: "Martemmedia, CC BY 4.0" },
+    shortCredit: { fr: "Martemmedia, CC BY 4.0" },
     alt: {
       fr: "Une colline rocheuse au-dessus de la savane sèche et d'un point d'eau, dans l'État de Bauchi, au Nigeria : le pays du proverbe haoussa.",
-      en: "A rocky hill above the dry savanna and a waterhole in Bauchi State, Nigeria: the country of the Hausa proverb.",
     },
     focus: "40% 50%",
     licence: "cc-by",
@@ -208,10 +190,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "https://commons.wikimedia.org/wiki/File:Cotton_plant,_Ware_County,_GA,_US.jpg",
     credit:
       "Cotonnier, comté de Ware, Géorgie (États-Unis) — Bubba73 (Jud McCranie), Wikimedia Commons, CC BY-SA 4.0",
-    shortCredit: { fr: "Bubba73, CC BY-SA 4.0", en: "Bubba73, CC BY-SA 4.0" },
+    shortCredit: { fr: "Bubba73, CC BY-SA 4.0" },
     alt: {
       fr: "Un cotonnier aux capsules ouvertes, photographié aux États-Unis : ce dont parle le proverbe.",
-      en: "A cotton plant with open bolls, photographed in the United States: what the proverb speaks of.",
     },
     focus: "40% 55%",
     licence: "cc-by-sa",
@@ -224,11 +205,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Le fleuve Niger et ses bancs de sable, région de Lokoja, Nigeria — Ebere Jude Ekemezie, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Ebere Jude Ekemezie, CC BY-SA 4.0",
-      en: "Ebere Jude Ekemezie, CC BY-SA 4.0",
     },
     alt: {
       fr: "Le fleuve Niger, ses bancs de sable et une île boisée près de Lokoja, au Nigeria : le fleuve dont parle le proverbe.",
-      en: "The River Niger, its sandbanks and a wooded island near Lokoja, Nigeria: the river the proverb speaks of.",
     },
     focus: "60% 60%",
     licence: "cc-by-sa",
@@ -241,11 +220,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Ruisseau en saison des pluies, Godogodo, État de Kaduna, Nigeria — Valtino44, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Valtino44, CC BY-SA 4.0",
-      en: "Valtino44, CC BY-SA 4.0",
     },
     alt: {
       fr: "Un ruisseau gonflé en pleine saison des pluies, bordé d'herbe et de forêt, à Godogodo, au Nigeria : ce dont parle le proverbe.",
-      en: "A stream swollen in the middle of the rainy season, bordered by grass and forest, at Godogodo, Nigeria: what the proverb speaks of.",
     },
     focus: "50% 45%",
     licence: "cc-by-sa",
@@ -257,10 +234,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "https://commons.wikimedia.org/wiki/File:Grass_at_a_lawn_with_morning_dew_03.jpg",
     credit:
       "Rosée du matin sur l'herbe — Leonhard Lenz, Wikimedia Commons, CC0",
-    shortCredit: { fr: "Leonhard Lenz, CC0", en: "Leonhard Lenz, CC0" },
+    shortCredit: { fr: "Leonhard Lenz, CC0" },
     alt: {
       fr: "Des gouttes de rosée au bout des brins d'herbe, au matin : la rosée dont parle le proverbe.",
-      en: "Dewdrops on the tips of grass blades in the morning: the dew the proverb speaks of.",
     },
     focus: "50% 60%",
     licence: "cc0",
@@ -272,10 +248,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "https://commons.wikimedia.org/wiki/File:Macrophthalmus_crab_at_the_shores_of_winnieba_2.jpg",
     credit:
       "Crabe sur le rivage, Winneba, Ghana — Treysam, Wikimedia Commons, CC BY-SA 4.0",
-    shortCredit: { fr: "Treysam, CC BY-SA 4.0", en: "Treysam, CC BY-SA 4.0" },
+    shortCredit: { fr: "Treysam, CC BY-SA 4.0" },
     alt: {
       fr: "Un crabe aux yeux sur pédoncules, immobile sur le sable d'un rivage à Winneba, au Ghana : le crabe dont parle le proverbe.",
-      en: "A stalk-eyed crab standing still on the sand of a shore at Winneba, Ghana: the crab the proverb speaks of.",
     },
     focus: "50% 45%",
     licence: "cc-by-sa",
@@ -289,11 +264,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Maison en terre du pays yoruba, Nigeria — Tadekwiki, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Tadekwiki, CC BY-SA 4.0",
-      en: "Tadekwiki, CC BY-SA 4.0",
     },
     alt: {
       fr: "Une maison en terre au toit de tôle, dans une cour du pays yoruba, au Nigeria : le lieu du peuple yoruba.",
-      en: "A mud house with a sheet-metal roof in a courtyard in Yorubaland, Nigeria: the Yoruba people's own place.",
     },
     focus: "50% 55%",
     licence: "cc-by-sa",
@@ -305,10 +278,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "https://commons.wikimedia.org/wiki/File:Palm_oil_in_a_white_bowl.jpg",
     credit:
       "Huile de palme rouge dans un bol blanc — Zmu'az4Z, Wikimedia Commons, CC BY 4.0",
-    shortCredit: { fr: "Zmu'az4Z, CC BY 4.0", en: "Zmu'az4Z, CC BY 4.0" },
+    shortCredit: { fr: "Zmu'az4Z, CC BY 4.0" },
     alt: {
       fr: "De l'huile de palme rouge dans un bol blanc : l'huile dont parle le proverbe.",
-      en: "Red palm oil in a white bowl: the oil the proverb speaks of.",
     },
     focus: "50% 50%",
     licence: "cc-by",
@@ -321,11 +293,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Milan noir en vol, Ghana — Kradolferp, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Kradolferp, CC BY-SA 4.0",
-      en: "Kradolferp, CC BY-SA 4.0",
     },
     alt: {
       fr: "Un milan noir qui plane, ailes ouvertes, dans un ciel pâle au Ghana : l'oiseau dont parle le proverbe.",
-      en: "A black kite gliding with wings spread in a pale sky in Ghana: the bird the proverb speaks of.",
     },
     focus: "45% 50%",
     licence: "cc-by-sa",
@@ -339,11 +309,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Grains en vrac sur un étal, Zanzibar, Tanzanie — Kennedy Bundi, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Kennedy Bundi, CC BY-SA 4.0",
-      en: "Kennedy Bundi, CC BY-SA 4.0",
     },
     alt: {
       fr: "Des grains de riz, de pois et de maïs dans des bols, sur un étal de marché à Zanzibar, en Tanzanie : ce qui se mesure et se remplit peu à peu.",
-      en: "Rice, peas and maize in bowls on a market stall in Zanzibar, Tanzania: what is measured and filled little by little.",
     },
     focus: "50% 85%",
     licence: "cc-by-sa",
@@ -354,10 +322,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
     filePage: "https://commons.wikimedia.org/wiki/File:Shimoni_fishermen.JPG",
     credit:
       "Pêcheurs près de Shimoni, Kenya — FredD, Wikimedia Commons, CC BY-SA 3.0",
-    shortCredit: { fr: "FredD, CC BY-SA 3.0", en: "FredD, CC BY-SA 3.0" },
+    shortCredit: { fr: "FredD, CC BY-SA 3.0" },
     alt: {
       fr: "Des pêcheurs ensemble sur une pirogue à balancier près de Shimoni, sur la côte swahilie du Kenya : le lieu du peuple swahili.",
-      en: "Fishermen together on an outrigger canoe near Shimoni, on Kenya's Swahili coast: the Swahili people's own place.",
     },
     focus: "45% 60%",
     licence: "cc-by-sa",
@@ -371,11 +338,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Le port de Stone Town, Zanzibar, Tanzanie — Ondřej Havelka, Wikimedia Commons, CC BY 4.0",
     shortCredit: {
       fr: "Ondřej Havelka, CC BY 4.0",
-      en: "Ondřej Havelka, CC BY 4.0",
     },
     alt: {
       fr: "Le port de Stone Town, à Zanzibar, en Tanzanie : le lieu du peuple swahili, ouvert sur le monde.",
-      en: "The harbour of Stone Town, Zanzibar, Tanzania: the Swahili people's own place, open to the world.",
     },
     focus: "50% 60%",
     licence: "cc-by",
@@ -387,10 +352,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "https://commons.wikimedia.org/wiki/File:Rocks_in_lake_Victoria,_Musoma_Municipal_Council,_Mara_Region.jpg",
     credit:
       "Rochers dans le lac Victoria, Musoma, Tanzanie — Mnazini, Wikimedia Commons, CC BY 4.0",
-    shortCredit: { fr: "Mnazini, CC BY 4.0", en: "Mnazini, CC BY 4.0" },
+    shortCredit: { fr: "Mnazini, CC BY 4.0" },
     alt: {
       fr: "Des rochers et des îlots sur le lac Victoria, à Musoma, en Tanzanie : le pays du proverbe jita.",
-      en: "Rocks and islets on Lake Victoria at Musoma, Tanzania: the country of the Jita proverb.",
     },
     focus: "50% 50%",
     licence: "cc-by",
@@ -404,11 +368,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Zorille commune (Ictonyx striatus) — Henry de Lange, Wikimedia Commons, CC BY 4.0",
     shortCredit: {
       fr: "Henry de Lange, CC BY 4.0",
-      en: "Henry de Lange, CC BY 4.0",
     },
     alt: {
       fr: "Une zorille, ou putois d'Afrique, de nuit, la queue dressée : l'animal dont parle le proverbe.",
-      en: "A zorilla, or African polecat, at night with its tail raised: the animal the proverb speaks of.",
     },
     focus: "50% 70%",
     licence: "cc-by",
@@ -420,10 +382,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "https://commons.wikimedia.org/wiki/File:Amphitheatre_Drakensberg_View.jpg",
     credit:
       "L'amphithéâtre du Drakensberg, KwaZulu-Natal, Afrique du Sud — PhilippN, Wikimedia Commons, CC BY-SA 3.0",
-    shortCredit: { fr: "PhilippN, CC BY-SA 3.0", en: "PhilippN, CC BY-SA 3.0" },
+    shortCredit: { fr: "PhilippN, CC BY-SA 3.0" },
     alt: {
       fr: "Les falaises de l'amphithéâtre du Drakensberg, dans le KwaZulu-Natal, en Afrique du Sud : des hauteurs, dans le pays du proverbe zoulou.",
-      en: "The cliffs of the Drakensberg amphitheatre in KwaZulu-Natal, South Africa: great heights, in the country of the Zulu proverb.",
     },
     focus: "50% 40%",
     licence: "cc-by-sa",
@@ -436,11 +397,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Les chutes de Howick, sur l'uMngeni, KwaZulu-Natal, Afrique du Sud — Nicolette de Lange, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Nicolette de Lange, CC BY-SA 4.0",
-      en: "Nicolette de Lange, CC BY-SA 4.0",
     },
     alt: {
       fr: "Une rivière qui se jette dans le vide, aux chutes de Howick, dans le KwaZulu-Natal, en Afrique du Sud : le pays du proverbe zoulou.",
-      en: "A river falling over the edge at Howick Falls in KwaZulu-Natal, South Africa: the country of the Zulu proverb.",
     },
     focus: "60% 50%",
     licence: "cc-by-sa",
@@ -454,11 +413,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Huttes d'un kraal à Colenso, Natal, Afrique du Sud, 1905 — Wellcome Collection (photographie de Geoffrey L. Parsons), Wikimedia Commons, CC BY 4.0",
     shortCredit: {
       fr: "Wellcome Collection, CC BY 4.0",
-      en: "Wellcome Collection, CC BY 4.0",
     },
     alt: {
       fr: "Des huttes en dôme d'un kraal à Colenso, dans le Natal, en Afrique du Sud, sur une photographie de 1905 : l'habitat du pays zoulou.",
-      en: "Dome-shaped huts of a kraal at Colenso, Natal, South Africa, in a 1905 photograph: the homes of Zulu country.",
     },
     focus: "50% 50%",
     licence: "cc-by",
@@ -472,11 +429,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Grenier dans un village macharanga, près d'Umtali, Rhodésie — E. Sidney Hartland, Folk-Lore, vol. 17, 1906, Wikimedia Commons, public domain",
     shortCredit: {
       fr: "E. Sidney Hartland, 1906, domaine public",
-      en: "E. Sidney Hartland, 1906, public domain",
     },
     alt: {
       fr: "Un grenier sur pilotis dans un village macharanga (karanga, groupe shona), près d'Umtali, en 1906 : là où l'on garde le grain que les rats convoitent.",
-      en: "A granary on stilts in a Macharanga (Karanga, Shona) village near Umtali, in 1906: where the grain is kept that rats covet.",
     },
     focus: "50% 50%",
     licence: "public-domain",
@@ -489,11 +444,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Feu de branchages, de nuit — Marc-Lautenbacher, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Marc-Lautenbacher, CC BY-SA 4.0",
-      en: "Marc-Lautenbacher, CC BY-SA 4.0",
     },
     alt: {
       fr: "Un feu de petites branches sèches, de nuit : le feu dont parle le proverbe.",
-      en: "A fire of small dry branches at night: the fire the proverb speaks of.",
     },
     focus: "50% 50%",
     licence: "cc-by-sa",
@@ -507,11 +460,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Troupeau d'éléphants de savane, Luangwa, Zambie — Timothy A. Gonsalves, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Timothy A. Gonsalves, CC BY-SA 4.0",
-      en: "Timothy A. Gonsalves, CC BY-SA 4.0",
     },
     alt: {
       fr: "Un troupeau d'éléphants de savane traverse une clairière herbeuse, dans la vallée de la Luangwa, en Zambie : l'animal dont parle le proverbe.",
-      en: "A herd of African bush elephants crossing a grassy clearing in the Luangwa valley, Zambia: the animal the proverb speaks of.",
     },
     focus: "50% 70%",
     licence: "cc-by-sa",
@@ -525,11 +476,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Crocodile du Nil regagnant l'eau, parc Kruger, Afrique du Sud — Bernard Dupont, Wikimedia Commons, CC BY-SA 2.0",
     shortCredit: {
       fr: "Bernard Dupont, CC BY-SA 2.0",
-      en: "Bernard Dupont, CC BY-SA 2.0",
     },
     alt: {
       fr: "Un crocodile du Nil qui regagne l'eau, dans le parc Kruger, en Afrique du Sud : l'animal dont parle le proverbe.",
-      en: "A Nile crocodile sliding back into the water in Kruger National Park, South Africa: the animal the proverb speaks of.",
     },
     focus: "50% 45%",
     licence: "cc-by-sa",
@@ -543,11 +492,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Filet de pêche séchant au bord du lac Tanganyika — H.W. (Henk) van Rinsum, Tropenmuseum, Wikimedia Commons, CC BY-SA 3.0",
     shortCredit: {
       fr: "H.W. van Rinsum, Tropenmuseum, CC BY-SA 3.0",
-      en: "H.W. van Rinsum, Tropenmuseum, CC BY-SA 3.0",
     },
     alt: {
       fr: "Un grand filet de pêche tendu sur son cadre pour sécher, au bord du lac Tanganyika : ce dont parle le proverbe.",
-      en: "A large fishing net stretched on its frame to dry on the shore of Lake Tanganyika: what the proverb speaks of.",
     },
     focus: "50% 50%",
     licence: "cc-by-sa",
@@ -558,10 +505,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
     filePage: "https://commons.wikimedia.org/wiki/File:Nsima_Relishes.JPG",
     credit:
       "Nshima et ses accompagnements — Jpatokal, Wikimedia Commons, CC BY-SA 2.5",
-    shortCredit: { fr: "Jpatokal, CC BY-SA 2.5", en: "Jpatokal, CC BY-SA 2.5" },
+    shortCredit: { fr: "Jpatokal, CC BY-SA 2.5" },
     alt: {
       fr: "Un repas de nshima, la pâte de maïs blanche, avec trois plats d'accompagnement : la nourriture partagée dont parle le proverbe.",
-      en: "A meal of nshima, the white maize porridge, with three relishes: the shared food the proverb speaks of.",
     },
     focus: "50% 50%",
     licence: "cc-by-sa",
@@ -573,10 +519,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "https://commons.wikimedia.org/wiki/File:Kangas_drying_in_Zanzibar.jpg",
     credit:
       "Kangas séchant sur un fil, Zanzibar, Tanzanie — Lall (Flickr), Wikimedia Commons, CC BY 2.0",
-    shortCredit: { fr: "Lall, CC BY 2.0", en: "Lall, CC BY 2.0" },
+    shortCredit: { fr: "Lall, CC BY 2.0" },
     alt: {
       fr: "Deux kangas, des étoffes de coton imprimées, qui sèchent sur un fil à Zanzibar : l'étoffe dont sont faits les habits du proverbe.",
-      en: "Two kangas, printed cotton cloths, drying on a line in Zanzibar: the cloth the proverb's garments are made of.",
     },
     focus: "50% 45%",
     licence: "cc-by",
@@ -590,11 +535,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Cases du village peul bande d'Ibel, sud-est du Sénégal, vers 1981 — John Atherton, Wikimedia Commons, CC BY-SA 2.0",
     shortCredit: {
       fr: "John Atherton, CC BY-SA 2.0",
-      en: "John Atherton, CC BY-SA 2.0",
     },
     alt: {
       fr: "Des cases au toit de chaume dans un village peul du sud-est du Sénégal : un lieu du peuple peul.",
-      en: "Thatched huts in a Fula village in south-eastern Senegal: a place of the Fula people.",
     },
     focus: "50% 60%",
     licence: "cc-by-sa",
@@ -607,11 +550,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Coucher de soleil sur le Niger à Ségou, Mali — Robin Taylor, Wikimedia Commons, CC BY 2.0",
     shortCredit: {
       fr: "Robin Taylor, CC BY 2.0",
-      en: "Robin Taylor, CC BY 2.0",
     },
     alt: {
       fr: "Le fleuve Niger au coucher du soleil à Ségou, au Mali, avec deux pirogues : le pays du proverbe bambara.",
-      en: "The Niger River at sunset in Ségou, Mali, with two pirogues: the country of the Bambara proverb.",
     },
     focus: "50% 55%",
     licence: "cc-by",
@@ -625,11 +566,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Champ de mil fauché, Mali — Lusi Lindwurm, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Lusi Lindwurm, CC BY-SA 4.0",
-      en: "Lusi Lindwurm, CC BY-SA 4.0",
     },
     alt: {
       fr: "Du mil fauché, grains et tiges mêlés, dans un champ du Mali : la graine dont parle le proverbe bambara.",
-      en: "Scythed millet, grain and stalks together, in a field in Mali: the seed the Bambara proverb speaks of.",
     },
     focus: "50% 50%",
     licence: "cc-by-sa",
@@ -643,11 +582,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Village traditionnel du plateau mossi, Burkina Faso, 1982 — Fred van der Kraaij, ASC Leiden, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Fred van der Kraaij, ASC Leiden, CC BY-SA 4.0",
-      en: "Fred van der Kraaij, ASC Leiden, CC BY-SA 4.0",
     },
     alt: {
       fr: "Un village du plateau mossi, au Burkina Faso, avec ses cases rondes au toit de chaume derrière un champ : le lieu du peuple mossi.",
-      en: "A village on the Mossi plateau in Burkina Faso, its round thatched huts behind a field: the Mossi people's own place.",
     },
     focus: "50% 45%",
     licence: "cc-by-sa",
@@ -659,10 +596,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "https://commons.wikimedia.org/wiki/File:Termiti%C3%A8re_vu_%C3%A0_Bocabo_1.jpg",
     credit:
       "Termitière à Bocabo, Côte d'Ivoire — Kod B, Wikimedia Commons, CC0",
-    shortCredit: { fr: "Kod B, CC0", en: "Kod B, CC0" },
+    shortCredit: { fr: "Kod B, CC0" },
     alt: {
       fr: "Une termitière dressée parmi la végétation, en Côte d'Ivoire : ce que bâtissent les termites du proverbe.",
-      en: "A termite mound rising among the vegetation in Côte d'Ivoire: what the proverb's termites build.",
     },
     focus: "50% 40%",
     licence: "cc0",
@@ -675,11 +611,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Buffle d'Afrique, parc national du lac Nakuru, Kenya — Diego Delso, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Diego Delso, CC BY-SA 4.0",
-      en: "Diego Delso, CC BY-SA 4.0",
     },
     alt: {
       fr: "Un buffle d'Afrique broutant dans l'herbe haute, au Kenya : l'animal dont parle le proverbe.",
-      en: "An African buffalo grazing in tall grass in Kenya: the animal the proverb speaks of.",
     },
     focus: "40% 50%",
     licence: "cc-by-sa",
@@ -693,11 +627,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Amedzofe, région de la Volta, Ghana — Williams Penuku, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Williams Penuku, CC BY-SA 4.0",
-      en: "Williams Penuku, CC BY-SA 4.0",
     },
     alt: {
       fr: "Le village d'Amedzofe dans les collines brumeuses de la région de la Volta, au Ghana, où l'on parle ewe : le pays du proverbe ewe.",
-      en: "The village of Amedzofe in the misty hills of Ghana's Volta Region, where Ewe is spoken: the country of the Ewe proverb.",
     },
     focus: "50% 45%",
     licence: "cc-by-sa",
@@ -711,11 +643,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Chikwangue cuite et ses feuilles d'emballage — T.K. Naliaka, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "T.K. Naliaka, CC BY-SA 4.0",
-      en: "T.K. Naliaka, CC BY-SA 4.0",
     },
     alt: {
       fr: "Une chikwangue, pain de manioc cuit, posée sur de larges feuilles d'emballage : ce dont parle le proverbe.",
-      en: "A chikwangue, a cooked cassava loaf, lying on broad wrapping leaves: what the proverb speaks of.",
     },
     focus: "50% 50%",
     licence: "cc-by-sa",
@@ -729,11 +659,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Massif du Djurdjura, Kabylie, Algérie — Ghiles Allali, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Ghiles Allali, CC BY-SA 4.0",
-      en: "Ghiles Allali, CC BY-SA 4.0",
     },
     alt: {
       fr: "Le massif du Djurdjura au-dessus des collines d'oliviers de Kabylie, en Algérie : le lieu du peuple kabyle.",
-      en: "The Djurdjura massif above the olive-covered hills of Kabylie, Algeria: the Kabyle people's own place.",
     },
     focus: "50% 40%",
     licence: "cc-by-sa",
@@ -747,11 +675,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Paysage du Tigré, Éthiopie — Rod Waddington, Wikimedia Commons, CC BY-SA 2.0",
     shortCredit: {
       fr: "Rod Waddington, CC BY-SA 2.0",
-      en: "Rod Waddington, CC BY-SA 2.0",
     },
     alt: {
       fr: "Des montagnes noyées de brume au crépuscule dans le Tigré, en Éthiopie : le lieu du peuple tigray.",
-      en: "Mountains wrapped in mist at dusk in Tigray, Ethiopia: the Tigray people's own place.",
     },
     focus: "50% 50%",
     licence: "cc-by-sa",
@@ -765,11 +691,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Falaise et terrasses cultivées, Tigré, Éthiopie — Rod Waddington, Wikimedia Commons, CC BY-SA 2.0",
     shortCredit: {
       fr: "Rod Waddington, CC BY-SA 2.0",
-      en: "Rod Waddington, CC BY-SA 2.0",
     },
     alt: {
       fr: "Une falaise rouge dominant des champs en terrasses dans le Tigré, en Éthiopie : le lieu du peuple tigray.",
-      en: "A red escarpment above terraced fields in Tigray, Ethiopia: the Tigray people's own place.",
     },
     focus: "55% 50%",
     licence: "cc-by-sa",
@@ -781,10 +705,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "https://commons.wikimedia.org/wiki/File:Male_lion_on_savanna.jpg",
     credit:
       "Lion mâle dans la savane — eismcsquare, Wikimedia Commons, CC BY 2.0",
-    shortCredit: { fr: "eismcsquare, CC BY 2.0", en: "eismcsquare, CC BY 2.0" },
+    shortCredit: { fr: "eismcsquare, CC BY 2.0" },
     alt: {
       fr: "Un lion mâle dans l'herbe haute de la savane : le lion dont parle le proverbe.",
-      en: "A male lion in the tall savanna grass: the lion the proverb speaks of.",
     },
     focus: "80% 60%",
     licence: "cc-by",
@@ -797,11 +720,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Deux fourmis vertes portant une sauterelle morte — BrunoPleno, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "BrunoPleno, CC BY-SA 4.0",
-      en: "BrunoPleno, CC BY-SA 4.0",
     },
     alt: {
       fr: "Deux fourmis vertes tirent une sauterelle morte sur un rocher : ce dont parle le proverbe.",
-      en: "Two green ants haul a dead grasshopper across a rock: what the proverb speaks of.",
     },
     focus: "50% 45%",
     licence: "cc-by-sa",
@@ -814,11 +735,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Zèbres des plaines dans la savane — Colormebadd2025, Wikimedia Commons, CC BY 4.0",
     shortCredit: {
       fr: "Colormebadd2025, CC BY 4.0",
-      en: "Colormebadd2025, CC BY 4.0",
     },
     alt: {
       fr: "Des zèbres avancent en file dans l'herbe de la savane, sous un ciel d'orage : les zèbres dont parle le proverbe.",
-      en: "Zebras walking in file through savanna grass under a stormy sky: the zebras the proverb speaks of.",
     },
     focus: "50% 75%",
     licence: "cc-by",
@@ -829,10 +748,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
     filePage: "https://commons.wikimedia.org/wiki/File:Texture_paille.JPG",
     credit:
       "Texture de paille tressée — Jamou, Wikimedia Commons, CC BY-SA 4.0",
-    shortCredit: { fr: "Jamou, CC BY-SA 4.0", en: "Jamou, CC BY-SA 4.0" },
+    shortCredit: { fr: "Jamou, CC BY-SA 4.0" },
     alt: {
       fr: "Le détail d'une natte de paille tressée : ce dont parle le proverbe.",
-      en: "Close detail of a plaited straw mat: what the proverb speaks of.",
     },
     focus: "50% 50%",
     licence: "cc-by-sa",
@@ -843,10 +761,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
     filePage:
       "https://commons.wikimedia.org/wiki/File:Footsteps_Through_The_Sand_(Unsplash).jpg",
     credit: "Traces de pas dans le sable — chuttersnap, Wikimedia Commons, CC0",
-    shortCredit: { fr: "chuttersnap, CC0", en: "chuttersnap, CC0" },
+    shortCredit: { fr: "chuttersnap, CC0" },
     alt: {
       fr: "Des traces de pas qui s'entremêlent dans le sable : ce qu'un chemin parcouru laisse derrière lui.",
-      en: "Footprints crossing one another in the sand: what a path walked leaves behind.",
     },
     focus: "50% 60%",
     licence: "cc0",
@@ -858,10 +775,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "https://commons.wikimedia.org/wiki/File:Dirt_Track_(121663313).jpeg",
     credit:
       "Piste sur une lande, Islande — Laimis B, Wikimedia Commons, CC BY 3.0",
-    shortCredit: { fr: "Laimis B, CC BY 3.0", en: "Laimis B, CC BY 3.0" },
+    shortCredit: { fr: "Laimis B, CC BY 3.0" },
     alt: {
       fr: "Une piste boueuse qui file vers l'horizon sous un grand ciel : le chemin dont parle la phrase.",
-      en: "A muddy track running toward the horizon under a wide sky: the road the saying speaks of.",
     },
     focus: "50% 65%",
     licence: "cc-by",
@@ -875,11 +791,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Village de montagne, Himachal Pradesh, Inde — Timothy Gonsalves, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Timothy Gonsalves, CC BY-SA 4.0",
-      en: "Timothy Gonsalves, CC BY-SA 4.0",
     },
     alt: {
       fr: "Un village de montagne serré sur son versant boisé : le village dont parle la phrase.",
-      en: "A mountain village clustered on its wooded slope: the village the saying speaks of.",
     },
     focus: "50% 65%",
     licence: "cc-by-sa",
@@ -893,11 +807,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Anciens ouvrages sur des rayonnages en bois — Bibliothek Wissenschaftspark Albert Einstein, Wikimedia Commons, CC BY-SA 4.0",
     shortCredit: {
       fr: "Bibliothek Wissenschaftspark Albert Einstein, CC BY-SA 4.0",
-      en: "Bibliothek Wissenschaftspark Albert Einstein, CC BY-SA 4.0",
     },
     alt: {
       fr: "Des rayonnages de bibliothèque garnis de vieux livres reliés : la bibliothèque dont parle la formule.",
-      en: "Library shelves filled with old bound books: the library the saying speaks of.",
     },
     focus: "50% 50%",
     licence: "cc-by-sa",
@@ -911,11 +823,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Feu de camp et braises — 4028mdk09, Wikimedia Commons, CC BY-SA 3.0",
     shortCredit: {
       fr: "4028mdk09, CC BY-SA 3.0",
-      en: "4028mdk09, CC BY-SA 3.0",
     },
     alt: {
       fr: "Un feu de bois et ses braises rouges au milieu de pierres : le feu dont parle la phrase.",
-      en: "A wood fire and its red embers ringed with stones: the fire the saying speaks of.",
     },
     focus: "50% 50%",
     licence: "cc-by-sa",
@@ -928,11 +838,9 @@ export const PROVERB_IMAGES: Record<string, ProverbPicture> = {
       "Moustique en gros plan — Balaram Mahalder, Wikimedia Commons, CC BY-SA 3.0",
     shortCredit: {
       fr: "Balaram Mahalder, CC BY-SA 3.0",
-      en: "Balaram Mahalder, CC BY-SA 3.0",
     },
     alt: {
       fr: "Un moustique en gros plan sur un fond bleu pâle : le moustique dont parle la phrase.",
-      en: "A mosquito in close-up on a pale blue ground: the mosquito the saying speaks of.",
     },
     focus: "40% 50%",
     licence: "cc-by-sa",

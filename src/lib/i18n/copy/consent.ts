@@ -1,26 +1,6 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  title: "Cookie settings",
-  description:
-    "Your choices are kept in your browser’s local storage, not in a cookie. Essential functions are always on; audience measurement starts only if you agree.",
-  dataPolicy: "Data policy",
-  essential: "Essential cookies",
-  essentialDescription: "Required — necessary for the site to work",
-  analytics: "Analytics cookies",
-  analyticsDescription: "Plausible — anonymous visit statistics, no cookie",
-  embeds: "Third-party video playback",
-  embedsDescription:
-    "YouTube — the player loads, and YouTube receives your IP address, only when you start a video",
-  save: "Save preferences",
-  acceptAll: "Accept all",
-  reject: "Reject",
-  customise: "Customise",
-};
-
-type ConsentCopy = typeof en;
-
-const fr: ConsentCopy = {
+const fr = {
   title: "Gestion des cookies",
   description:
     "Vos choix sont conservés dans le stockage local de votre navigateur, et non dans un cookie. Les fonctions essentielles sont toujours actives ; la mesure d’audience ne démarre que si vous l’acceptez.",
@@ -39,5 +19,7 @@ const fr: ConsentCopy = {
   customise: "Personnaliser",
 };
 
+type ConsentCopy = typeof fr;
+
 // @req REQ-145
-export const consentCopy: Record<Language, ConsentCopy> = { en, fr };
+export const consentCopy: Record<Language, ConsentCopy> = { fr };

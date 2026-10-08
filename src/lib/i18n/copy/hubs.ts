@@ -1,104 +1,5 @@
-import {
-  ACCESS_MODE_LABELS,
-  type ModuleGroupId,
-} from "@/lib/hubs/moduleRegistry";
-import { TRAIL_PAGE_LABELS } from "@/lib/i18n/copy/trail";
+import { ACCESS_MODE_LABELS } from "@/lib/hubs/moduleRegistry";
 import type { Language } from "@/types/shared";
-
-const en = {
-  atlas: {
-    title: TRAIL_PAGE_LABELS.en.atlasHub,
-    pageTitle: "Explore the peoples of Africa",
-    blurb:
-      "One page per family of languages, per language, per people, per country and per name.",
-    menuBlurb:
-      "The pages of language families, languages, peoples, countries and names, plus the search.",
-    hubEntryName: "The exploration hub",
-  },
-  dossiers: {
-    title: TRAIL_PAGE_LABELS.en.dossiersHub,
-    pageTitle: "Understand the peoples of Africa",
-    blurb:
-      "Where a name comes from, where the peoples passed, and which sources we rest on.",
-    menuBlurb: "The subjects of our videos and carousels, read in full.",
-    hubEntryName: "The reading hub",
-    // The hub shows one page of readings at a time; these are its controls.
-    pager: {
-      label: "Pages of dossiers",
-      previous: "Previous",
-      next: "Next",
-      position: (page: number, count: number) => `Page ${page} of ${count}`,
-    },
-  },
-  jeux: {
-    title: TRAIL_PAGE_LABELS.en.jeuxHub,
-    pageTitle: "Play with the peoples of Africa",
-    blurb:
-      "Games and quizzes drawn from the pages, each answer leading back to its own.",
-    menuBlurb:
-      "A quiz drawn from the pages, and the Mercator projection cut down to size.",
-    hubEntryName: "The games hub",
-  },
-  unavailableLabel: "Coming soon",
-  // What the second link of a hub plate's caption says. Brand charter §9 asks
-  // for the licence's URI rather than its initials, so the caption needs a
-  // word to hang the address on — the initials stay in the credit line beside
-  // it, where they name the terms this links to.
-  plateLicenceLabel: "Licence",
-  menuLabel: "Three paths",
-  facetsLabel: "Its facets",
-  moduleNames: {
-    pays: "The countries of Africa",
-    peuples: "The peoples of Africa",
-    familles: "The language families",
-    langues: "The languages of Africa",
-    // Unlisted, not retired — the header no longer renders it. Kept so the
-    // label stays a decision rather than a fallback to the registry's.
-    noms: "Ethnonyms",
-    patronymes: "The names of Africa",
-    recherche: "Free search",
-    articles: "All articles",
-    nommer: "Who gave this name?",
-    anecdotes: "Anecdotes",
-    proverbes: "Proverbs",
-    frise: "First migration landmarks",
-    "regards-colonisation": "Colonial gaze: colonisation and resistance",
-    quiz: "The quiz",
-    mercator: "The Mercator projection",
-  } as Record<string, string>,
-  // What the reader reads over a rubric of dossiers. One domain noun each,
-  // taken from the vocabulary the country page already teaches — `country.ts`
-  // renders Religions · Economy · Organisation · Relations over its culture
-  // block — so a reader who has read one page has met these words before.
-  //
-  // Phrases were tried first and rejected in review: « Ce qu'on mesure » and
-  // « Pouvoirs et territoires » read as sentences where the surface needs a
-  // label, and a heading that is a sentence competes with the dossier titles
-  // under it instead of filing them.
-  moduleGroupNames: {
-    "dossiers-noms": "Names",
-    "dossiers-organisation": "Organisation",
-    "dossiers-religions": "Religions",
-    "dossiers-territoires": "Territories",
-    "dossiers-populations": "Populations",
-    "dossiers-economie": "Economy",
-    "jeux-pays": "Countries",
-    "jeux-quiz": "The quiz",
-  } satisfies Record<ModuleGroupId, string>,
-  // Closes a rubric that holds more readings than the menu lists. It counts
-  // what is *not* shown rather than the whole rubric: "+ 96 more" beside four
-  // cards is a promise of ninety-six unseen readings, where "100 dossiers"
-  // beside them would have the reader wondering which four of the hundred
-  // these are.
-  moreInRubric: (count: number) =>
-    count === 1 ? "+ 1 more" : `+ ${count} more`,
-  // The panel's way out of a rubric, where the count would be noise: a rubric
-  // there shows one reading, so the only question left is whether there are
-  // others, and the hub is the surface that answers it.
-  seeMoreInRubric: "See more",
-};
-
-type HubsCopy = typeof en;
 
 // `blurb` opens the hub page — it says what the axis holds, in the
 // register of the page it opens. `menuBlurb` opens the header panel,
@@ -128,7 +29,7 @@ type HubsCopy = typeof en;
 // recorded just above against « le corpus » and « une entité ». The
 // sentences now start on the contents, which is what was left once the
 // filing word came off the front of them.
-const fr: HubsCopy = {
+const fr = {
   atlas: {
     title: ACCESS_MODE_LABELS.atlas,
     // `title` keeps the short reader-facing label available to legacy
@@ -222,5 +123,7 @@ const fr: HubsCopy = {
   seeMoreInRubric: "Voir plus",
 };
 
+type HubsCopy = typeof fr;
+
 // @req REQ-145
-export const hubsCopy: Record<Language, HubsCopy> = { en, fr };
+export const hubsCopy: Record<Language, HubsCopy> = { fr };

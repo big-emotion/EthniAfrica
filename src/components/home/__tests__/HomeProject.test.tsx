@@ -51,17 +51,4 @@ describe("HomeProject — why the project exists and how it treats a claim", () 
     expect(container.querySelector("details")).toBeNull();
     expect(container.textContent).not.toMatch(/frontières/i);
   });
-
-  // @req REQ-145
-  it("speaks English on the English home", () => {
-    render(<HomeProject language="en" />);
-
-    expect(
-      screen.getByRole("heading", { level: 2, name: "Why EthniAfrica?" })
-    ).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "How we work" })).toHaveAttribute(
-      "href",
-      getLocalizedRoute("en", "doctrine")
-    );
-  });
 });

@@ -8,8 +8,6 @@ import {
   getNommerChapterRoute,
 } from "@/lib/routing";
 import { getSiteTree, getSiteTreePaths } from "@/lib/siteTree";
-import { NOMMER_CHAPTERS_EN } from "@/lib/dossiers/nommer/chapters/index.en";
-import { GAME_DEFINITIONS_EN } from "@/lib/games/gameRegistry.en";
 
 describe("getSiteTree — access modes are sections and destinations", () => {
   /**
@@ -41,31 +39,6 @@ describe("getSiteTree — access modes are sections and destinations", () => {
     expect(tree.find((section) => section.id === "jeux")?.title).toBe(
       ACCESS_MODE_LABELS.jeux
     );
-  });
-});
-
-describe("getSiteTree — English reader copy", () => {
-  // @req REQ-145
-  it("renders English sections, notes and editorial titles on /en", () => {
-    const tree = getSiteTree("en");
-    const text = JSON.stringify(tree);
-
-    expect(tree.find((section) => section.id === "accueil")?.title).toBe(
-      "Home"
-    );
-    expect(tree.find((section) => section.id === "corpus")?.title).toBe(
-      "Browse, in AFRIK order"
-    );
-    // Only while the dossier is published: the freeze takes the chapters out
-    // of the plan entirely, in both locales.
-    if (isModulePublished("nommer")) {
-      for (const chapter of Object.values(NOMMER_CHAPTERS_EN)) {
-        expect(text).toContain(chapter.title);
-      }
-    }
-    expect(text).toContain(GAME_DEFINITIONS_EN.mercator.nameEn);
-    expect(text).not.toContain("Qui a donné ce nom ?");
-    expect(text).not.toContain("Le globe et les trois axes.");
   });
 });
 

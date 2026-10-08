@@ -40,8 +40,8 @@ interface QuestionTemplateCopy {
  *
  * The database columns retain their historical `*_fr` names, but migration
  * 087 made each row locale-scoped. This registry is therefore the language
- * boundary: the generator selects one complete locale and never mixes static
- * French stems with an English translated corpus.
+ * boundary: the generator selects one complete locale and never mixes stems
+ * from one locale with a corpus in another.
  */
 // @req REQ-145
 export const QUESTION_TEMPLATE_COPY: Record<
@@ -137,94 +137,6 @@ export const QUESTION_TEMPLATE_COPY: Record<
         `Ce paysage religieux est celui de ${name} aujourd'hui.`,
     },
   },
-  en: {
-    T1: {
-      prompt: (name) =>
-        `Which language family do the ${name} people belong to?`,
-      explanation: (name, answer) =>
-        `The ${name} people belong to the ${answer} language family.`,
-    },
-    T2: {
-      prompt: (name) =>
-        `What autonym do the ${name} people use for themselves?`,
-      explanation: (name, answer) =>
-        `The ${name} people call themselves “${answer}”.`,
-    },
-    T3: {
-      prompt: (name) => `In which country are the ${name} people mainly found?`,
-      explanation: (name, answer) =>
-        `The ${name} people are mainly found in ${answer}.`,
-    },
-    T4: {
-      prompt: (name) => `What is the main language of the ${name} people?`,
-      explanation: (name, answer) =>
-        `The main language of the ${name} people is ${answer}.`,
-    },
-    T6: {
-      prompt: () => "Which people practise these rites?",
-      explanation: (name) =>
-        `This passage describes the rites of the ${name} people.`,
-    },
-    T7: {
-      prompt: () => "Which people hold these beliefs?",
-      explanation: (name) =>
-        `This passage describes the beliefs of the ${name} people.`,
-    },
-    T8: {
-      prompt: () => "Which people identify with these symbols?",
-      explanation: (name) =>
-        `This passage describes the symbols of the ${name} people.`,
-    },
-    T9: {
-      prompt: () => "Which people lived this political history?",
-      explanation: (name) =>
-        `This passage describes the political history of the ${name} people.`,
-    },
-    T10: {
-      prompt: () => "Which people have this traditional organisation?",
-      explanation: (name) =>
-        `This passage describes the traditional organisation of the ${name} people.`,
-    },
-    T11: {
-      prompt: () => "Which people followed this migration path?",
-      explanation: (name) =>
-        `This passage describes the migrations of the ${name} people.`,
-    },
-    T12: {
-      prompt: (name) =>
-        `Which of these names given to the ${name} people is considered inaccurate or offensive?`,
-      explanation: (_name, answer) => answer,
-    },
-    T13: {
-      prompt: () => "Which country's name has this origin?",
-      explanation: (name) => `This is the etymology of the name “${name}”.`,
-    },
-    T14: {
-      prompt: () => "Which country was named by the actors described here?",
-      explanation: (name) => `They named what is known today as ${name}.`,
-    },
-    T15: {
-      prompt: () => "Which country bore this name under colonial rule?",
-      explanation: (name) =>
-        `This name was used by the territory that became ${name}.`,
-    },
-    T16: {
-      prompt: (name) =>
-        `Which kingdom or sultanate developed in the territory of ${name}?`,
-      explanation: (name, answer) =>
-        `The ${answer} developed in the territory of ${name}.`,
-    },
-    T17: {
-      prompt: () => "In which territory did this history unfold?",
-      explanation: (name) =>
-        `This is the history of the territory that became ${name}.`,
-    },
-    T18: {
-      prompt: () => "Which country has this religious landscape today?",
-      explanation: (name) =>
-        `This is the religious landscape of ${name} today.`,
-    },
-  },
 };
 
 function copyFor(locale: TranslationLocale, templateId: QuizTemplateId) {
@@ -247,7 +159,6 @@ const ORAL_TRADITION_CLAUSE: Record<
   (community: string) => string
 > = {
   fr: (community) => `selon la tradition orale ${frenchOf(community)}`,
-  en: (community) => `according to the oral tradition of ${community}`,
 };
 
 /**

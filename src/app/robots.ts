@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 
 import { CANONICAL_DOMAIN } from "@/lib/brand";
-import { getLocalePublicationMode } from "@/lib/locale";
 
 /**
  * `robots.txt`, generated rather than static.
@@ -20,13 +19,7 @@ import { getLocalePublicationMode } from "@/lib/locale";
  */
 
 // @req REQ-110
-// @req REQ-141
 export default function robots(): MetadataRoute.Robots {
-  const localeMode = getLocalePublicationMode();
-  const disallow = ["/fr/admin/"];
-  if (localeMode === "fr-only") disallow.push("/en/");
-  else disallow.push("/en/admin/");
-
   return {
     rules: [
       {
@@ -35,8 +28,9 @@ export default function robots(): MetadataRoute.Robots {
         // Authenticated surfaces only. Two orphan privacy pages used to be
         // listed beside them; they were deleted rather than hidden, which is
         // the stronger guarantee — a crawler can ignore a disallow line, it
-        // cannot index a route that is gone.
-        disallow,
+        // cannot index a route that is gone. The retired `/en/` addresses are
+        // left crawlable so their 308s can pass their standing on.
+        disallow: ["/fr/admin/"],
       },
     ],
     sitemap: `https://${CANONICAL_DOMAIN}/sitemap.xml`,

@@ -108,19 +108,6 @@ function syncPublicationHead(language: Language, entry: DiscoveryPublication) {
   document.head
     .querySelector('link[rel="canonical"]')
     ?.setAttribute("href", url);
-  for (const alternate of document.head.querySelectorAll<HTMLLinkElement>(
-    'link[rel="alternate"][hreflang]'
-  )) {
-    const locale =
-      alternate.hreflang === "x-default"
-        ? new URL(alternate.href).pathname.startsWith("/en/")
-          ? "en"
-          : "fr"
-        : alternate.hreflang;
-    if (locale === "fr" || locale === "en") {
-      alternate.href = `https://${CANONICAL_DOMAIN}${discoveryPath(locale, entry)}`;
-    }
-  }
 }
 
 function ShareNetworkIcon({

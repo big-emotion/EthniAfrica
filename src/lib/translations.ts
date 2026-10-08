@@ -57,68 +57,9 @@ import type { Language } from "@/types/shared";
  * shape changed, so the shape stays and the strings live one file per
  * surface. A client island that is budgeted — the quiz — imports its own
  * module instead, and this file is what keeps that split from costing the
- * server side anything. Each locale is composed separately so a module
- * wired to the wrong locale is the parity suite's to catch
- * (`copyParity.test.ts`), not the compiler's to miss.
+ * server side anything.
  */
-const en = {
-  admin: adminCopy.en,
-  server: serverCopy.en,
-  anecdotes: anecdotesCopy.en,
-  articles: articlesCopy.en,
-  proverbs: proverbsCopy.en,
-  atlas: atlasCopy.en,
-  ...commonCopy.en,
-  chrome: chromeCopy.en,
-  homeHero: homeHeroCopy.en,
-  homeStories: homeStoriesCopy.en,
-  homePurpose: homePurposeCopy.en,
-  homeCorpusCounts: homeCorpusCountsCopy.en,
-  nameAnswer: nameAnswerCopy.en,
-  searchAnswer: searchAnswerCopy.en,
-  wordAnswer: wordAnswerCopy.en,
-  searchFeed: searchFeedCopy.en,
-  consent: consentCopy.en,
-  compare: compareCopy.en,
-  contact: contactCopy.en,
-  contribute: contributeCopy.en,
-  countryFiche: countryCopy.en,
-  facets: facetsCopy.en,
-  footer: footerCopy.en,
-  about: aboutCopy.en,
-  games: gamesCopy.en,
-  sitemapPage: sitemapPageCopy.en,
-  publicFlags: publicFlagsCopy.en,
-  classification: classificationCopy.en,
-  names: namesCopy.en,
-  languages: languagesCopy.en,
-  patronymes: patronymesCopy.en,
-  migrations: migrationsCopy.en,
-  moderationConsole: moderationConsoleCopy.en,
-  colonization: colonizationCopy.en,
-  discoveries: discoveriesCopy.en,
-  quiz: quizCopy.en,
-  reports: reportsCopy.en,
-  sourceTransparency: sourceTransparencyCopy.en,
-  provenance: provenanceCopy.en,
-  fieldProvenance: fieldProvenanceCopy.en,
-  family: familyCopy.en,
-  fiche: ficheCopy.en,
-  ficheNameStory: ficheNameStoryCopy.en,
-  languageFiche: languageFicheCopy.en,
-  peopleFiche: peopleCopy.en,
-  hubs: hubsCopy.en,
-  trail: trailCopy.en,
-  system: systemCopy.en,
-};
-
-/**
- * The shape both locales share. Not exported: consumers take it from
- * `getTranslation`, and the parity is enforced here by the `fr` declaration.
- */
-type UiDictionary = typeof en;
-
-const fr: UiDictionary = {
+const fr = {
   admin: adminCopy.fr,
   server: serverCopy.fr,
   anecdotes: anecdotesCopy.fr,
@@ -169,13 +110,14 @@ const fr: UiDictionary = {
   system: systemCopy.fr,
 };
 
+type UiDictionary = typeof fr;
+
 /**
  * Typed `Record<Language, …>` on purpose: with `noImplicitAny: false`, an
- * untyped literal let `translations["en"]` compile and return `undefined`,
- * which is how the header would have thrown on `/en` under a green build.
+ * untyped literal let an unknown locale key compile and return `undefined`.
  */
 // @req REQ-014
-export const translations: Record<Language, UiDictionary> = { en, fr };
+export const translations: Record<Language, UiDictionary> = { fr };
 
 // @req REQ-014
 export const getTranslation = (lang: Language): UiDictionary =>

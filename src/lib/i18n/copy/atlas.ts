@@ -1,55 +1,6 @@
 import type { Language } from "@/types/shared";
 
-const en = {
-  surface: {
-    autoRotating:
-      "EthniAfrica globe. Interact with the globe to stop the rotation.",
-    globe: "EthniAfrica globe. Drag or use the arrow keys to rotate.",
-    flatMap: "EthniAfrica map. Drag or use the arrow keys to move.",
-  },
-  projectionNames: {
-    globe: "Globe",
-    flatMap: "Flat map",
-    intermediate: "Intermediate projection",
-  },
-  projectionReadout: {
-    globe:
-      "Globe — each indicatrix returns to its true area. Africa covers 30.4 million km².",
-    flatMap:
-      "Flat map — Mercator inflates areas by sec²(latitude): ×4 at 60°, ×9 at 70°.",
-    intermediate:
-      "Folding in progress — watch the indicatrices return to the same size.",
-  },
-  gesture: {
-    rotate: "Drag to rotate",
-    move: "Drag to move",
-    autoRotating: "Interact with the globe to stop the rotation.",
-    rotateShort: "Drag to rotate.",
-    moveShort: "Drag to move.",
-  },
-  legendStart: "Africa at its true area.",
-  openCountry: "press a point to open the country.",
-  flatMap: "Flat map",
-  globe: "Globe",
-  morphLabel: "Morph from flat map to globe",
-  returnToGlobe: "Return to the globe",
-  showFlatMap: "What the flat map does to it",
-  indicatrices: "Indicatrices",
-  zoomOut: "Zoom out",
-  zoomIn: "Zoom in",
-  recentreAfrica: "Recentre on Africa",
-  recentre: "Recentre",
-  activateInteractiveMap: "Activate the interactive map",
-  wholeArea: "The whole footprint",
-  areaNoun: "the footprint",
-  close: "Close",
-  chooseCountry: (areaNoun: string) => `Choose a country in ${areaNoun}`,
-  countries: (areaNoun: string) => `Countries in ${areaNoun}`,
-};
-
-type AtlasCopy = typeof en;
-
-const fr: AtlasCopy = {
+const fr = {
   surface: {
     autoRotating:
       "Globe EthniAfrica. Interagissez avec le globe pour arrêter la rotation.",
@@ -97,5 +48,7 @@ const fr: AtlasCopy = {
   countries: (areaNoun: string) => `Pays de ${areaNoun}`,
 };
 
+type AtlasCopy = typeof fr;
+
 // @req REQ-145
-export const atlasCopy: Record<Language, AtlasCopy> = { en, fr };
+export const atlasCopy: Record<Language, AtlasCopy> = { fr };

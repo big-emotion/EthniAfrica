@@ -61,12 +61,11 @@ describe("searchResultDisplayNames", () => {
   } as SearchResult;
 
   // @req REQ-178
-  it("puts a people's autonym before its localized filed name", () => {
+  it("puts a people's autonym before its filed name", () => {
     expect(searchResultDisplayNames(fula, "fr")).toEqual({
       primary: "Fulbe (pluriel), Pullo (singulier)",
       secondary: "Fula (Fulbe / Peul)",
     });
-    expect(searchResultDisplayNames(fula, "en").secondary).toBe("Fula");
     expect(searchResultDisplayLabel(fula, "fr")).toBe(
       "Fulbe (pluriel), Pullo (singulier) — Fula (Fulbe / Peul)"
     );

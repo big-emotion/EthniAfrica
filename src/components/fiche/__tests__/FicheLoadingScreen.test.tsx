@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import type { ReactElement } from "react";
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import {
   FicheLoadingScreen,
@@ -8,7 +8,6 @@ import {
 } from "@/components/fiche/FicheLoadingScreen";
 import { ACCENT_CLASS_BY_ENTITY } from "@/components/fiche/FicheSequence";
 import { ConsentProvider } from "@/hooks/use-consent";
-import { LOCALE_HEADER } from "@/lib/locale";
 import { getPeopleRoute } from "@/lib/routing";
 
 /**
@@ -29,27 +28,8 @@ vi.mock("next/navigation", () => ({
 // A `loading.tsx` receives no params, so the screen reads the locale the
 // middleware stamped on the request. Mutable per case; absent by default,
 // which is what a request outside the locale tree looks like.
-const requestHeaders = vi.hoisted(() => new Map<string, string>());
-
-vi.mock("next/headers", () => ({
-  headers: vi.fn(async () => ({
-    get: (name: string) => requestHeaders.get(name) ?? null,
-  })),
-}));
-
-// The screen is an async server component now, so it is awaited like one.
 const loadingScreen = async (props: FicheLoadingScreenProps) =>
   renderInShell(await FicheLoadingScreen(props));
-
-beforeEach(() => {
-  requestHeaders.clear();
-  requestHeaders.set(LOCALE_HEADER, "fr");
-  vi.stubEnv("SITE_LOCALE_MODE", "fr-only");
-});
-
-afterEach(() => {
-  vi.unstubAllEnvs();
-});
 
 describe("FicheLoadingScreen (REQ-104 — what a fiche shows while it is being fetched)", () => {
   // @req REQ-098
@@ -116,26 +96,9 @@ describe("FicheLoadingScreen (REQ-104 — what a fiche shows while it is being f
   });
 });
 
-/**
- * The shell was hardwired to French, so an English fiche waited under a
- * French masthead and a French announcement. The screen has no params to
- * read; the request header the middleware sets is the only locale it can see.
- */
-describe("FicheLoadingScreen — the wait is in the page's locale (REQ-140)", () => {
+describe("FicheLoadingScreen — the wait is in French (REQ-140)", () => {
   // @req REQ-140
-  it("dresses the shell and the announcement in the request's locale", async () => {
-    vi.stubEnv("SITE_LOCALE_MODE", "bilingual-en-default");
-    requestHeaders.set(LOCALE_HEADER, "en");
-    await loadingScreen({ entityType: "country" });
-
-    expect(screen.getByRole("status")).toHaveTextContent(/country fiche/i);
-    expect(screen.getByRole("status")).not.toHaveTextContent(/fiche pays/i);
-    expect(screen.getByTestId("site-brand")).toHaveAttribute("href", "/en");
-  });
-
-  // @req REQ-140
-  it("falls back to the default locale when the header is absent", async () => {
-    requestHeaders.clear();
+  it("dresses the shell in French", async () => {
     await loadingScreen({ entityType: "people" });
 
     expect(screen.getByTestId("site-brand")).toHaveAttribute("href", "/fr");

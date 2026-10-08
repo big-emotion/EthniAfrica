@@ -12,12 +12,6 @@ describe("getPersonRoleLabel", () => {
     expect(getPersonRoleLabel("head_of_state")).toBe("Chef·fe d'État");
   });
 
-  // @req REQ-140
-  it("translates a known role category to English", () => {
-    expect(getPersonRoleLabel("ethnographer", "en")).toBe("Ethnographer");
-    expect(getPersonRoleLabel("head_of_state", "en")).toBe("Head of state");
-  });
-
   // @req REQ-126
   it("falls back to the raw slug for an unmapped role, rather than hiding it", () => {
     expect(getPersonRoleLabel("cartographer")).toBe("cartographer");
@@ -29,13 +23,5 @@ describe("getPersonRelationLabel", () => {
   it("words membership and observation so they cannot be mistaken for one another", () => {
     expect(getPersonRelationLabel("membership")).toBe("Membre de");
     expect(getPersonRelationLabel("observation")).toBe("Observe / documente");
-  });
-
-  // @req REQ-140
-  it("distinguishes membership from observation in English", () => {
-    expect(getPersonRelationLabel("membership", "en")).toBe("Member of");
-    expect(getPersonRelationLabel("observation", "en")).toBe(
-      "Observes / documents"
-    );
   });
 });

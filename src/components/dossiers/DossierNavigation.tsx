@@ -24,13 +24,10 @@ export function DossierNavigation({
   const id = useId();
   const themes = getPublishedThemes(useModuleAvailability(), language);
   return (
-    <nav
-      aria-label={language === "en" ? "Dossier themes" : "Thèmes des dossiers"}
-      className={styles.navigation}
-    >
+    <nav aria-label={"Thèmes des dossiers"} className={styles.navigation}>
       <div className={styles.compactThemes}>
         <label htmlFor={id} className="sr-only">
-          {language === "en" ? "Choose a theme" : "Choisir un thème"}
+          {"Choisir un thème"}
         </label>
         <select
           id={id}
@@ -45,9 +42,7 @@ export function DossierNavigation({
             onNavigate?.();
           }}
         >
-          <option value="">
-            {language === "en" ? "All themes" : "Tous les thèmes"}
-          </option>
+          <option value="">{"Tous les thèmes"}</option>
           {themes.map((theme) => (
             <option key={theme.id} value={theme.id}>
               {theme.label}

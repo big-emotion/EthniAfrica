@@ -59,7 +59,6 @@ vi.mock("@/components/quiz/QuizPlayHost", () => ({
 
 import { notFound } from "next/navigation";
 import { ACCENT_BY_ACCESS_MODE } from "@/lib/hubs/moduleRegistry";
-import { getLocalizedRoute } from "@/lib/routing";
 import QuizPage from "../page";
 
 const FR = Promise.resolve({ lang: "fr" });
@@ -105,20 +104,6 @@ function scopesEnvelope() {
 describe("/[lang]/quiz page (Epic 10, Story 10.8, ETNI-497, AR39)", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-  });
-
-  // @req REQ-145
-  it("loads the picker from the page locale's question bank", async () => {
-    mockGetQuizScopesHandler.mockResolvedValue(scopesEnvelope());
-
-    render(
-      await QuizPage({
-        params: Promise.resolve({ lang: "en" }),
-        searchParams: Promise.resolve({}),
-      })
-    );
-
-    expect(mockGetQuizScopesHandler).toHaveBeenCalledWith("en");
   });
 
   // The page used to answer notFound() unless NEXT_PUBLIC_FEATURE_QUIZ was
@@ -261,29 +246,6 @@ describe("/[lang]/quiz page (Epic 10, Story 10.8, ETNI-497, AR39)", () => {
     expect(screen.getByTestId("quiz-play-host")).toHaveAttribute(
       "data-label",
       "Croyances"
-    );
-  });
-
-  // The way out of a session is the quiz page of the locale the reader is
-  // in; a fixed French exit would drop an English reader onto `/fr`.
-  // @req REQ-140
-  it("composes the session's exit in the route's locale", async () => {
-    mockDescribeScope.mockResolvedValue({
-      kind: "country",
-      entityId: "GHA",
-      labelFr: "Ghana",
-    });
-
-    render(
-      await QuizPage({
-        params: Promise.resolve({ lang: "en" }),
-        searchParams: Promise.resolve({ pays: "GHA" }),
-      })
-    );
-
-    expect(screen.getByTestId("quiz-play-host")).toHaveAttribute(
-      "data-exit",
-      getLocalizedRoute("en", "quiz")
     );
   });
 

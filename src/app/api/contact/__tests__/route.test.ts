@@ -148,8 +148,10 @@ describe("POST /api/contact", () => {
     expect(global.fetch).not.toHaveBeenCalled();
   });
 
+  // A form posted from a retired English page still gets its answer in
+  // French: the one locale published.
   // @req REQ-140
-  it("localizes reader-facing validation messages from the submitted locale", async () => {
+  it("answers validation errors in French whatever locale the form claims", async () => {
     const response = await POST(
       postRequest({ ...validBody, language: "en", email: "nope" })
     );
@@ -157,9 +159,9 @@ describe("POST /api/contact", () => {
     expect(response.status).toBe(400);
     await expect(response.json()).resolves.toMatchObject({
       error: "VALIDATION_ERROR",
-      message: "The form contains fields that need correcting.",
+      message: "Le formulaire comporte des champs à corriger.",
       fieldErrors: {
-        email: ["Enter a valid email address."],
+        email: ["Cette adresse électronique n'est pas valide."],
       },
     });
   });
@@ -265,22 +267,6 @@ describe("POST /api/contact — per-sender quota", () => {
     expect(body.message).toContain("Réessayez plus tard");
     expect(checkContactRateLimit).toHaveBeenCalledWith("203.0.113.9");
     expect(graphSendCall()).toBeUndefined();
-  });
-
-  // @req REQ-145
-  it("says so in English to an English sender", async () => {
-    vi.mocked(checkContactRateLimit).mockResolvedValueOnce({
-      allowed: false,
-      retryAfter: 60,
-    });
-
-    const response = await POST(
-      requestFrom("203.0.113.9", { ...validBody, language: "en" })
-    );
-    const body = await response.json();
-
-    expect(response.status).toBe(429);
-    expect(body.message).toContain("Try again later");
   });
 
   // @req REQ-045

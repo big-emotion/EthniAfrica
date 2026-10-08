@@ -60,7 +60,6 @@ function expectSecurityHeaders(response: Response) {
 describe("middleware security headers", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    vi.stubEnv("SITE_LOCALE_MODE", "fr-only");
     vi.mocked(evaluateRateLimit).mockResolvedValue({
       rejection: null,
       headers: {},

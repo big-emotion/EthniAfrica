@@ -12,19 +12,11 @@ import {
 } from "@/proxy";
 import { LOCALES } from "@/lib/locale";
 import {
-  NOMMER_CHAPTER_KEYS,
   PAGE_TYPES,
-  STATIC_PAGE_SLUGS,
   getCountryRoute,
   getFamilyRoute,
   getLocalizedRoute,
-  getNommerChapterRoute,
-  getPeopleLinksRoute,
   getPeopleRoute,
-  getPersonRoute,
-  getStaticPageRoute,
-  localeSlugMismatch,
-  toRouteFilePath,
 } from "@/lib/routing";
 import type { Language } from "@/types/shared";
 
@@ -46,11 +38,7 @@ import type { Language } from "@/types/shared";
  *     so an identifier forwarded raw turns a redirect into an open one.
  *
  * The suite walks the tables rather than sampling them, so an entry added
- * later inherits the assertions instead of needing its own. Since DEC-049
- * the tables carry one side per locale, derived from the French one, and
- * every walk runs under both: a retired address requested under `/en` must
- * land on the English successor, in the same one hop, and never cross into
- * `/fr` on the way.
+ * later inherits the assertions instead of needing its own.
  */
 
 const path = (target: string) =>
@@ -61,22 +49,9 @@ const firstSegment = (target: string) => target.split("/").filter(Boolean)[1];
 const under = (language: Language, segment: string) =>
   "/" + language + "/" + segment;
 
-/**
- * The route file behind a public destination. English destinations are served
- * off the French folders through the middleware rewrite, so the question
- * "does anything answer at the other end" has to be asked of the folder the
- * rewrite lands on, not of the English words.
- */
-const routeFile = (language: Language, destination: string) => {
-  const publicPath = under(language, destination);
-  const folderPath = toRouteFilePath(publicPath) ?? publicPath;
-  return resolve(
-    __dirname,
-    "../app/[lang]",
-    folderPath.slice(`/${language}/`.length),
-    "page.tsx"
-  );
-};
+/** The route file behind a public destination. */
+const routeFile = (destination: string) =>
+  resolve(__dirname, "../app/[lang]", destination, "page.tsx");
 
 describe("the relocation table lands in one hop", () => {
   // @req REQ-091
@@ -92,25 +67,6 @@ describe("the relocation table lands in one hop", () => {
           path(once!.path),
           `${language}/${segment} redirects twice`
         ).toBeNull();
-      }
-    }
-  });
-
-  // A retired address under one locale resolves within that locale. Crossing
-  // over would hand an English reader a French page, and the middleware would
-  // then owe a second redirect to bring them back.
-  // @req REQ-141
-  it("never crosses locales", () => {
-    for (const language of LOCALES) {
-      for (const segment of Object.keys(RELOCATED_SEGMENTS[language])) {
-        expect(path(under(language, segment))!.path).toMatch(
-          new RegExp(`^/${language}/`)
-        );
-      }
-      for (const oldPath of Object.keys(RENAMED_MODULE_PATHS[language])) {
-        expect(resolveRenamedModulePath(under(language, oldPath))).toMatch(
-          new RegExp(`^/${language}/`)
-        );
       }
     }
   });
@@ -147,9 +103,7 @@ describe("the relocation table lands in one hop", () => {
   // ETNI-1615 (REQ-138): every currently-published address under the retired
   // verb prefix — hub, facet or fiche, at any depth — has to keep resolving,
   // in one hop, to its noun-prefixed successor. One row per axis carries all
-  // of it; this asserts the row actually does. The tail is carried verbatim
-  // in both locales — the French word under `/en` is the cross-vocabulary
-  // step's to translate, inside the same 308 (middleware.test.ts).
+  // of it; this asserts the row actually does.
   // @req REQ-091
   it("carries every depth of the retired axis prefix to its successor", () => {
     for (const language of LOCALES) {
@@ -255,7 +209,7 @@ describe("the module-rename table lands in one hop (ETNI-1458)", () => {
     for (const language of LOCALES) {
       for (const destination of Object.values(RENAMED_MODULE_PATHS[language])) {
         expect(
-          existsSync(routeFile(language, destination)),
+          existsSync(routeFile(destination)),
           `${language}/${destination} has no page.tsx`
         ).toBe(true);
       }
@@ -327,7 +281,7 @@ describe("no target re-enters either table", () => {
         Object.values(RENAMED_HUB_SEGMENTS[language])
       )) {
         expect(
-          existsSync(routeFile(language, destination)),
+          existsSync(routeFile(destination)),
           `${language}/${destination} has no page.tsx`
         ).toBe(true);
       }
@@ -348,30 +302,6 @@ describe("no target re-enters either table", () => {
         const route = getLocalizedRoute(language, page);
         expect(path(route), route).toBeNull();
         expect(resolveRenamedModulePath(route), route).toBeNull();
-        // Its own vocabulary, so the cross-vocabulary step has nothing to say.
-        expect(localeSlugMismatch(route), route).toBeNull();
-      }
-    }
-  });
-
-  // The cross-vocabulary answer is itself final: sending it back through the
-  // step must change nothing, or `/en/atlas/pays` would bounce between the
-  // two vocabularies.
-  // @req REQ-141
-  it("settles a foreign-vocabulary path in one step", () => {
-    for (const language of LOCALES) {
-      for (const other of LOCALES) {
-        if (other === language) continue;
-        for (const page of PAGE_TYPES) {
-          const foreign = under(
-            language,
-            getLocalizedRoute(other, page).slice(`/${other}/`.length)
-          );
-          const own = localeSlugMismatch(foreign);
-          if (own === null) continue;
-          expect(own, foreign).toBe(getLocalizedRoute(language, page));
-          expect(localeSlugMismatch(own), foreign).toBeNull();
-        }
       }
     }
   });
@@ -414,7 +344,7 @@ describe("every target is a route the app actually serves", () => {
         if (containers.has(destination)) continue;
 
         expect(
-          existsSync(routeFile(language, destination)),
+          existsSync(routeFile(destination)),
           `${language}/${destination} has no page.tsx`
         ).toBe(true);
       }
@@ -427,7 +357,6 @@ describe("every target is a route the app actually serves", () => {
       expect(
         existsSync(
           routeFile(
-            language,
             getLocalizedRoute(language, "colonization").slice(
               `/${language}/`.length
             )
@@ -435,62 +364,6 @@ describe("every target is a route the app actually serves", () => {
         )
       ).toBe(true);
     }
-  });
-
-  /**
-   * The rewrite is what makes an English address answer at all, so its
-   * coverage is a filesystem question: every path the English vocabulary can
-   * compose has to land on a folder Next actually has. A slug added to the
-   * English table with no French folder behind it is a 404 that no redirect
-   * test would ever see.
-   *
-   * `atlas/persons` is exempt by name: no person page exists in either locale
-   * today (REQ-126 composes the route ahead of the page), which predates the
-   * English vocabulary and is not its failure.
-   */
-  // @req REQ-141
-  it("rewrites every English path onto a folder that exists", () => {
-    const dossierPaths = new Set([
-      getLocalizedRoute("en", "dossierProportions"),
-      getLocalizedRoute("en", "dossierPopulations"),
-      getLocalizedRoute("en", "dossierRessources"),
-      getLocalizedRoute("en", "dossierKongo"),
-      getLocalizedRoute("en", "dossierLuba"),
-      getLocalizedRoute("en", "dossierLunda"),
-      getLocalizedRoute("en", "dossierSpiritualitesKongo"),
-    ]);
-    const folder = (publicPath: string) => {
-      if (dossierPaths.has(publicPath)) {
-        return resolve(__dirname, "../app/[lang]/dossiers/[dossier]");
-      }
-
-      return resolve(
-        __dirname,
-        "../app/[lang]",
-        (toRouteFilePath(publicPath) ?? publicPath).slice("/en/".length)
-      );
-    };
-
-    const englishPaths = [
-      ...PAGE_TYPES.map((page) => getLocalizedRoute("en", page)),
-      ...NOMMER_CHAPTER_KEYS.map((chapter) =>
-        getNommerChapterRoute("en", chapter)
-      ),
-      ...(
-        Object.keys(
-          STATIC_PAGE_SLUGS.en
-        ) as (keyof typeof STATIC_PAGE_SLUGS.en)[]
-      ).map((key) => getStaticPageRoute("en", key)),
-      // The dynamic segment is named as the folder names it, so the
-      // rewritten path is the folder path itself.
-      getPeopleLinksRoute("en", "[slug]"),
-    ];
-
-    for (const publicPath of englishPaths) {
-      expect(existsSync(folder(publicPath)), publicPath).toBe(true);
-    }
-
-    expect(existsSync(folder(getPersonRoute("en", "[slug]")))).toBe(false);
   });
 });
 

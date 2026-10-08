@@ -3,7 +3,6 @@ import { describe, expect, it, vi } from "vitest";
 
 import { NOMMER_CHAPTERS } from "@/lib/dossiers/nommer/chapters";
 import { NOMMER_FIGURES } from "@/lib/dossiers/nommer/figures";
-import { NOMMER_CHAPTERS_EN } from "@/lib/dossiers/nommer/chapters/index.en";
 import { getNommerChapterRoute } from "@/lib/routing";
 
 import { NommerPillarPage } from "@/components/dossiers/nommer/NommerPillarPage";
@@ -105,20 +104,5 @@ describe("the Nommer pillar", () => {
       1
     );
     expect(container.querySelector(".afh-accent-teal")).not.toBeNull();
-  });
-
-  // @req REQ-145
-  it("renders the English pillar and English chapter doorways on /en", () => {
-    render(<NommerPillarPage language="en" />);
-
-    expect(
-      screen.getByRole("heading", { level: 1, name: "Who gave this name?" })
-    ).toBeInTheDocument();
-    for (const translation of Object.values(NOMMER_CHAPTERS_EN)) {
-      expect(
-        screen.getByRole("link", { name: translation.title })
-      ).toHaveAttribute("href", getNommerChapterRoute("en", translation.key));
-    }
-    expect(screen.queryByText("Qui a donné ce nom ?")).not.toBeInTheDocument();
   });
 });

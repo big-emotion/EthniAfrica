@@ -108,18 +108,16 @@ export function getAdmin0Rings(countryId: CountryId): Ring[] | undefined {
  * undefined. One resolver for both is the only arrangement where they cannot
  * disagree again.
  *
- * The English name is a class-4 string (REQ-143): Natural Earth ships it for
- * all 58 entries and 35 of them differ from the French — Ivory Coast,
- * Cameroon, Egypt — so it is read from the asset, never translated from
- * `nameFr`.
+ * `locale` is accepted for callers that still pass one; the French name is
+ * the only one published.
  */
 // @req REQ-143
 export function getAdmin0Name(
   countryId: CountryId,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   locale: TranslationLocale
 ): string | undefined {
-  const country = admin0Entry(countryId);
-  return locale === "fr" ? country?.nameFr : country?.name;
+  return admin0Entry(countryId)?.nameFr;
 }
 
 /** The French name, for the consumers that have no locale to hand yet. */

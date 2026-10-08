@@ -1,6 +1,6 @@
 import type { Language } from "@/types/shared";
 
-const LOCALE: Record<Language, string> = { fr: "fr-FR", en: "en-GB" };
+const LOCALE: Record<Language, string> = { fr: "fr-FR" };
 
 function decimal(value: number, language: Language, digits: number): string {
   return new Intl.NumberFormat(LOCALE[language], {
@@ -28,14 +28,14 @@ export function formatMillionsInWords(
   language: Language
 ): string {
   const rounded = Math.round(persons / 1_000_000);
-  const word = language === "fr" && rounded > 1 ? "millions" : "million";
+  const word = rounded > 1 ? "millions" : "million";
   return `${decimal(rounded, language, 0)} ${word}`;
 }
 
 /** @req REQ-178 */
 export function formatPercent(value: number, language: Language): string {
   const figure = decimal(value, language, 1);
-  return language === "fr" ? `${figure} %` : `${figure}%`;
+  return `${figure} %`;
 }
 
 // A sentence ends at . ! ? or … followed by a space and a capital or an

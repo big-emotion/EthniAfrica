@@ -1,68 +1,22 @@
 import { COLONIAL_EVENT_TYPE_LABELS } from "@/lib/glossaire/vocabularies";
 import type { Language } from "@/types/shared";
 
-const en = {
-  navLabel: "Colonisation & resistances",
-  pageTitle: "Colonisation & resistances",
-  pageSubtitle:
-    "Fragmentations, inherited borders, imposed names, displacements and resistances, documented people by people.",
-  fragmentation: {
-    title: "Peoples fragmented by colonial borders",
-    countryCount: (count: number) => `${count} countries`,
-    caption: (name: string) =>
-      `Distribution of ${name} by country, with confidence level`,
-    country: "Country",
-    populationShare: "Population share",
-    confidence: "Confidence",
-    colonialBorder: "colonial partition border",
-    shareAria: (country: string) => `for the population share in ${country}`,
-    shareStatement: (country: string, share: string) =>
-      `Population share in ${country}: ${share}`,
-  },
-  sources: {
-    title: "Sources",
-    linkLabel: "see the sources",
-  },
-  timeline: {
-    title: "Chronology",
-    eventTypeLabels: COLONIAL_EVENT_TYPE_LABELS.en,
-    filterLegend: "Filter by event type",
-    openEventSuffix: "Enter to open",
-    closeEventCard: "Close",
-    peoplesJoiner: "and",
-    table: {
-      caption: "Chronology of colonial events",
-      date: "Date",
-      type: "Type",
-      people: "People",
-      place: "Place",
-      source: "Source",
-      placeUndocumented: "Undocumented",
-      sourceUndocumented: "No source cited",
-    },
-    emptyState:
-      "No colonisation or resistance event is documented for the moment.",
-  },
-};
-
-type ColonizationCopy = typeof en;
-
-const fr: ColonizationCopy = {
+const fr = {
   navLabel: "Colonisation & résistances",
   pageTitle: "Colonisation & résistances",
   pageSubtitle:
     "Fragmentations, frontières héritées, noms imposés, déplacements et résistances documentés peuple par peuple.",
   fragmentation: {
     title: "Peuples fragmentés par les frontières coloniales",
-    countryCount: (count) => `${count} pays`,
-    caption: (name) =>
+    countryCount: (count: number) => `${count} pays`,
+    caption: (name: string) =>
       `Répartition de ${name} par pays, avec niveau de confiance`,
     country: "Pays",
     populationShare: "Part de la population",
     confidence: "Confiance",
     colonialBorder: "frontière issue du partage colonial",
-    shareAria: (country) => `pour la part de population en ${country}`,
-    shareStatement: (country, share) =>
+    shareAria: (country: string) => `pour la part de population en ${country}`,
+    shareStatement: (country: string, share: string) =>
       `Part de la population en ${country} : ${share}`,
   },
   sources: {
@@ -91,5 +45,7 @@ const fr: ColonizationCopy = {
   },
 };
 
+type ColonizationCopy = typeof fr;
+
 // @req REQ-145
-export const colonizationCopy: Record<Language, ColonizationCopy> = { en, fr };
+export const colonizationCopy: Record<Language, ColonizationCopy> = { fr };

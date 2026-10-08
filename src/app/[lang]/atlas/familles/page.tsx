@@ -17,7 +17,7 @@ import { PAGE_SIZE_PARAM, resolvePageSize } from "@/lib/hubs/pagination";
 import { normalizeString } from "@/lib/normalize";
 import { getFamilyRoute, resolveFamilyDeepLink } from "@/lib/routing";
 import type { CountryId } from "@/types/afrik";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import { getTranslation } from "@/lib/translations";
 import { formatNumber } from "@/lib/languageTag";
 import { facetDirectoriesCopy } from "@/lib/i18n/copy/facetDirectories";
@@ -83,12 +83,7 @@ export async function generateMetadata({
   const title = getTranslation(lang as Language).languageFamilies;
   return {
     title,
-    ...surfaceHead(
-      lang as Language,
-      "families",
-      (locale) => getFacetRoute(locale, "families"),
-      { title }
-    ),
+    ...pageHead(getFacetRoute("fr", "families"), { title }),
   };
 }
 

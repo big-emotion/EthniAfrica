@@ -227,24 +227,10 @@ export const QUIZ_THEME_LABELS_FR: Record<QuizThemeId, string> = {
 };
 
 // @req REQ-145
-export const QUIZ_THEME_LABELS_EN: Record<QuizThemeId, string> = {
-  "parente-linguistique": "Language relationships",
-  noms: "Names and appellations",
-  langues: "Languages",
-  territoire: "Territory",
-  "rites-et-culture": "Rites and culture",
-  croyances: "Beliefs",
-  "royaumes-et-histoire": "Kingdoms and history",
-  organisation: "Social organization",
-  migrations: "Migrations",
-};
-
-// @req REQ-145
 export const QUIZ_THEME_LABELS: Record<
   Language,
   Record<QuizThemeId, string>
 > = {
-  en: QUIZ_THEME_LABELS_EN,
   fr: QUIZ_THEME_LABELS_FR,
 };
 
@@ -289,24 +275,10 @@ export const QUIZ_THEME_SPECIMENS_FR: Record<QuizThemeId, string> = {
 };
 
 // @req REQ-145
-export const QUIZ_THEME_SPECIMENS_EN: Record<QuizThemeId, string> = {
-  noms: "What name does this people use for itself?",
-  langues: "What is this people's main language?",
-  "parente-linguistique": "Which language family does this people belong to?",
-  territoire: "In which country is this people mainly present?",
-  "rites-et-culture": "Which people practices these rites?",
-  croyances: "Which people holds these beliefs?",
-  "royaumes-et-histoire": "Which people lived through this history?",
-  organisation: "Which people is organized in this way?",
-  migrations: "Which people followed this path?",
-};
-
-// @req REQ-145
 export const QUIZ_THEME_SPECIMENS: Record<
   Language,
   Record<QuizThemeId, string>
 > = {
-  en: QUIZ_THEME_SPECIMENS_EN,
   fr: QUIZ_THEME_SPECIMENS_FR,
 };
 

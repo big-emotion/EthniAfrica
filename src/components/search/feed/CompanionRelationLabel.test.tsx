@@ -11,19 +11,6 @@ describe("CompanionRelationLabel", () => {
     entityId: "PPL_MANDE",
   };
 
-  // @req REQ-180
-  it("keeps exact matches quiet unless explicitly requested", () => {
-    const { rerender } = render(<CompanionRelationLabel match={exact} />);
-
-    expect(screen.queryByText("Sur ce nom")).not.toBeInTheDocument();
-
-    rerender(<CompanionRelationLabel match={exact} language="en" showExact />);
-    expect(screen.getByText("About this name")).toHaveAttribute(
-      "data-companion-relation",
-      "exact"
-    );
-  });
-
   // A production found by the word is the answer to it, exactly as an exact
   // entity match is, so it is just as quiet.
   // @req REQ-180
@@ -37,6 +24,19 @@ describe("CompanionRelationLabel", () => {
     expect(screen.getByText("Sur ce mot")).toHaveAttribute(
       "data-companion-relation",
       "word"
+    );
+  });
+
+  // @req REQ-180
+  it("keeps exact matches quiet unless explicitly requested", () => {
+    const { rerender } = render(<CompanionRelationLabel match={exact} />);
+
+    expect(screen.queryByText("Sur ce nom")).not.toBeInTheDocument();
+
+    rerender(<CompanionRelationLabel match={exact} showExact />);
+    expect(screen.getByText("Sur ce nom")).toHaveAttribute(
+      "data-companion-relation",
+      "exact"
     );
   });
 });

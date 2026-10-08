@@ -51,12 +51,6 @@ describe("WhatBlock", () => {
   });
 
   // @req REQ-178
-  it("speaks English when asked", () => {
-    render(<WhatBlock answer={answerOf("lingala")} language="en" />);
-    expect(screen.getByText("A language")).toBeInTheDocument();
-  });
-
-  // @req REQ-178
   it("can rank a title h1 without drawing it at hero size", () => {
     render(
       <WhatBlock

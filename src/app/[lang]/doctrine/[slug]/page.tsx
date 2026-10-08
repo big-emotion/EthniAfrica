@@ -17,13 +17,11 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import rehypeSanitize from "rehype-sanitize";
 import { PageLayout } from "@/components/layout/PageLayout";
-import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
-import { DOCTRINE_ENTRIES_EN } from "@/lib/doctrine/doctrineContent.en";
 import { fetchDoctrineEntry } from "@/lib/doctrine/fetchDoctrineEntry";
 import { formatVersionLabel } from "@/lib/doctrine/formatVersionLabel";
 import { doctrineCopy } from "@/lib/i18n/copy/doctrine";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import { parseVersionedSlug } from "@/lib/versioned-slug";
 import type { Language } from "@/types/shared";
 
@@ -55,7 +53,7 @@ export async function generateMetadata({
 }: {
   params: Promise<PageParams>;
 }): Promise<Metadata> {
-  const { lang, slug } = await params;
+  const { slug } = await params;
   const parsed = parseVersionedSlug(decodeURIComponent(slug));
   // A 404 that claims a canonical is a 404 asking to be indexed.
   if (!parsed || parsed.mode === "latest") return {};
@@ -63,11 +61,7 @@ export async function generateMetadata({
   // A pinned revision is an archived copy of the same article: its canonical
   // is the live article, as it is for a fiche.
   const article = encodeURIComponent(parsed.slug);
-  return surfaceHead(
-    lang as Language,
-    "doctrine",
-    (locale) => `${getLocalizedRoute(locale, "doctrine")}/${article}`
-  );
+  return pageHead(`${getLocalizedRoute("fr", "doctrine")}/${article}`);
 }
 
 // @req REQ-091
@@ -95,12 +89,6 @@ export default async function DoctrineSlugPage({
 
   const language = lang as Language;
   const copy = doctrineCopy[language].article;
-  const englishEntry =
-    language === "en" && parsed.mode === "live"
-      ? DOCTRINE_ENTRIES_EN[entry.slug]
-      : undefined;
-  const renderedEntry = englishEntry ?? entry;
-  const frenchFallback = language === "en" && !englishEntry;
   const versionLabel = formatVersionLabel(
     entry.version,
     entry.publishedAt,
@@ -110,31 +98,15 @@ export default async function DoctrineSlugPage({
   return (
     <PageLayout
       language={language}
-      title={renderedEntry.title}
+      title={entry.title}
       sectionName={copy.sectionName}
       hideHeader
-      trailLabel={renderedEntry.title}
+      trailLabel={entry.title}
     >
       <div className="container mx-auto space-y-6 px-4 py-8">
-        {frenchFallback ? (
-          <p role="status" aria-label={copy.fallback}>
-            {copy.fallback}
-          </p>
-        ) : (
-          <TranslationProvenanceMarker
-            translation={
-              englishEntry
-                ? { kind: englishEntry.provenance, stale: false }
-                : null
-            }
-          />
-        )}
         <article>
-          <header
-            className="space-y-3 border-b pb-4"
-            lang={frenchFallback ? "fr" : undefined}
-          >
-            <h1 className="text-afh-h1 font-bold">{renderedEntry.title}</h1>
+          <header className="space-y-3 border-b pb-4">
+            <h1 className="text-afh-h1 font-bold">{entry.title}</h1>
             <div className="flex flex-wrap items-center gap-3 text-afh-small text-muted-foreground">
               <span data-testid="version-label">{versionLabel}</span>
               <span aria-hidden="true">·</span>
@@ -153,10 +125,9 @@ export default async function DoctrineSlugPage({
           <div
             className="prose prose-neutral max-w-none mt-6"
             data-testid="doctrine-mdx"
-            lang={frenchFallback ? "fr" : undefined}
           >
             <MDXRemote
-              source={renderedEntry.mdxSource}
+              source={entry.mdxSource}
               components={MDX_COMPONENTS}
               options={{
                 mdxOptions: {

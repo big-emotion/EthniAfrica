@@ -62,34 +62,6 @@ describe("FicheSummaryBrief", () => {
     ).toBeVisible();
   });
 
-  // @req REQ-151
-  it("renders the people figures and English labels without implying census completeness", () => {
-    render(
-      <FicheSummaryBrief
-        kind="people"
-        entityId="PPL_NOT_IN_BANK"
-        name="Test people"
-        language="en"
-        figures={{
-          persons: { value: 1_250_000, referenceYear: 2025 },
-          countries: 3,
-          mainLanguage: "Test language",
-          family: "Test family",
-          names: 5,
-        }}
-      />
-    );
-
-    expect(screen.getByText("People recorded")).toBeVisible();
-    expect(screen.getByText("Reference year: 2025")).toBeVisible();
-    expect(screen.getByText("Countries of presence")).toBeVisible();
-    expect(screen.getByText("Main language")).toBeVisible();
-    expect(screen.getByText("Test language")).toBeVisible();
-    expect(screen.getByText("Language family")).toBeVisible();
-    expect(screen.getByText("Test family")).toBeVisible();
-    expect(screen.getByText("Linked names")).toBeVisible();
-  });
-
   /**
    * The panel used to write "Non renseigné dans l'atlas" into the slot where
    * the number goes, five times over, and a reader scanning it met the same
@@ -167,24 +139,6 @@ describe("FicheSummaryBrief", () => {
     expect(within(fact).getByText(/Source référencée/)).toBeVisible();
     expect(within(fact).getByRole("link", { name: /Holsoe/ })).toBeVisible();
     expect(screen.getAllByTestId("fiche-summary-fact")).toHaveLength(1);
-  });
-
-  // @req REQ-145
-  it("uses the English sidecar for a matched fact", () => {
-    render(
-      <FicheSummaryBrief
-        kind="country"
-        entityId="LBR"
-        name="Liberia"
-        language="en"
-        figures={{}}
-      />
-    );
-
-    expect(
-      screen.getByText(/One and the same people is called Guéré/)
-    ).toBeVisible();
-    expect(screen.getByText(/Referenced source/)).toBeVisible();
   });
 
   // @req REQ-151

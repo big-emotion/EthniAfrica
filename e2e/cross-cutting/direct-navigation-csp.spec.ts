@@ -7,15 +7,6 @@ import {
 import { FACETS } from "@/lib/hubs/facets";
 import { LOCALE } from "../support/locale";
 
-// English UI copy lands per translation wave (REQ-142 to REQ-146). Until it
-// does, the labels this spec reads are French, so the English matrix leg
-// skips it rather than fail on copy it was never asked to check — and the
-// leg's report says so, instead of counting the journey as covered.
-test.skip(
-  LOCALE !== "fr",
-  "English copy lands per wave — this spec reads French UI copy"
-);
-
 // The admin console's sub-pages have no slug-table entry: `admin` is the one
 // static page, and what follows it is the same word in both locales.
 const ADMIN_ROUTE = getStaticPageRoute(LOCALE, "admin");

@@ -2,14 +2,6 @@ import { expect, test } from "@playwright/test";
 import { getFamilyRoute } from "@/lib/routing";
 import { LOCALE } from "./support/locale";
 
-// The reference renders were captured in French. Under another locale the
-// diff measures the translation, not the layout, so the English matrix leg
-// skips this spec until it has references of its own.
-test.skip(
-  LOCALE !== "fr",
-  "English copy lands per wave — the reference renders are French"
-);
-
 /**
  * Parity of the family fiche against the committed mockup
  * (docs/design/mockups/pages/famille.html).

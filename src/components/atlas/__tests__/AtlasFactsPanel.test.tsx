@@ -60,13 +60,6 @@ describe("AtlasFactsPanel", () => {
     vi.restoreAllMocks();
   });
 
-  // @req REQ-145
-  it("localizes the close control", () => {
-    renderPanel({ language: "en" });
-
-    expect(screen.getByRole("button", { name: "Close" })).toBeInTheDocument();
-  });
-
   // @req REQ-117
   it("renders nothing until the globe stage ref has resolved", () => {
     render(

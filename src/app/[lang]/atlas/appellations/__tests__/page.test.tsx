@@ -43,10 +43,8 @@ vi.mock("@/components/names/NameNomenclature", () => ({
 }));
 
 import { NamesSchemaUnavailableError } from "@/api/v2/services/names";
-import { CANONICAL_DOMAIN } from "@/lib/brand";
-import { getLocalizedRoute } from "@/lib/routing";
 import { resolveAsyncServerComponents } from "@/test/resolveAsyncServerComponents";
-import AppellationsPage, { generateMetadata } from "../page";
+import AppellationsPage from "../page";
 
 const FR = Promise.resolve({ lang: "fr" });
 
@@ -171,20 +169,6 @@ describe("the Appellations nomenclature page", () => {
     expect(
       screen.queryByText(/Les noms sous lesquels chaque peuple/)
     ).toBeNull();
-  });
-
-  // DEC-038 separates the two objects the corpus calls "name". A visitor
-  // looking for the origin of a family name must be sent to the Nom
-  // dimension, which now exists, rather than told it does not.
-  // @req REQ-140
-  it("declares its canonical in the locale the route was served in", async () => {
-    const metadata = await generateMetadata({
-      params: Promise.resolve({ lang: "en" }),
-    });
-
-    expect(metadata.alternates?.canonical).toBe(
-      `https://${CANONICAL_DOMAIN}${getLocalizedRoute("en", "names")}`
-    );
   });
 
   // @req REQ-092

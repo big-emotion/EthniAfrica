@@ -99,11 +99,7 @@ export function FichesBlock({
                   {content}
                   <ul
                     className="mt-afh-sm flex list-none flex-wrap gap-afh-sm"
-                    aria-label={
-                      language === "en"
-                        ? `Records for ${item.name}`
-                        : `Fiches de ${item.name}`
-                    }
+                    aria-label={`Fiches de ${item.name}`}
                   >
                     {item.links?.map((link) => (
                       <li key={link.href}>

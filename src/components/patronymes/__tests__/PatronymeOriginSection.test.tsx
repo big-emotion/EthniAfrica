@@ -147,23 +147,6 @@ describe("PatronymeOriginSection (REQ-133)", () => {
     expect(screen.getByText(/Migration vers la côte/)).toBeInTheDocument();
   });
 
-  // @req REQ-133
-  it("names the historical-synthesis strand in English", () => {
-    render(
-      <PatronymeOriginSection
-        language="en"
-        patronyme={{
-          ...base,
-          content: {
-            origin: { historicalSyntheses: [{ claim: "A migration." }] },
-          },
-        }}
-      />
-    );
-
-    expect(screen.getByText("Historical synthesis")).toBeInTheDocument();
-  });
-
   // An account is shown with the carrier and collection it was recorded with,
   // and no word the record did not use (audit finding C10).
   // @req REQ-133
@@ -216,27 +199,6 @@ describe("PatronymeOriginSection (REQ-133)", () => {
     );
 
     expect(screen.getByText(/Transmetteur non précisé/)).toBeInTheDocument();
-  });
-
-  // @req REQ-133
-  it("names the strand an oral tradition in English, not a griot tradition", () => {
-    render(
-      <PatronymeOriginSection
-        language="en"
-        patronyme={{
-          ...base,
-          content: {
-            origin: {
-              oralTraditions: [{ claim: "An account.", carrier: "An elder" }],
-            },
-          },
-        }}
-      />
-    );
-
-    expect(screen.getByText("Oral tradition")).toBeInTheDocument();
-    expect(screen.getByText(/Transmitted by\s+An elder/)).toBeInTheDocument();
-    expect(screen.queryByText(/griot/i)).not.toBeInTheDocument();
   });
 
   // @req REQ-133

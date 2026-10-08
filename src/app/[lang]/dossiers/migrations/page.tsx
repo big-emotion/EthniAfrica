@@ -34,7 +34,7 @@ import { isModulePublished } from "@/lib/hubs/moduleOffer";
 import { logger } from "@/lib/api/logger";
 import { getTranslation } from "@/lib/translations";
 import { getLocalizedRoute } from "@/lib/routing";
-import { surfaceHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
 interface MigrationsPageProps {
@@ -53,12 +53,10 @@ export async function generateMetadata({
   return {
     title: t.pageTitle,
     description: t.pageSubtitle,
-    ...surfaceHead(
-      lang as Language,
-      "migrations",
-      (locale) => getLocalizedRoute(locale, "migrations"),
-      { title: t.pageTitle, description: t.pageSubtitle }
-    ),
+    ...pageHead(getLocalizedRoute("fr", "migrations"), {
+      title: t.pageTitle,
+      description: t.pageSubtitle,
+    }),
   };
 }
 

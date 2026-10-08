@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { StateMedallion } from "@/components/ui/StateMedallion";
-import { TranslationProvenanceMarker } from "@/components/fiche/TranslationProvenanceMarker";
 import type { LocalizedDidYouKnowFact } from "@/lib/home/didYouKnowLocalization";
 import { systemStatesCopy } from "@/lib/i18n/copy/systemStates";
 import type { Language } from "@/types/shared";
@@ -87,14 +86,6 @@ export function ErrorState({
                 {anecdote.body[0]}
               </p>
             ) : null}
-            <TranslationProvenanceMarker
-              translation={
-                anecdote.translationKind
-                  ? { kind: anecdote.translationKind, stale: false }
-                  : null
-              }
-              className="mt-3"
-            />
           </aside>
         ) : null}
       </div>

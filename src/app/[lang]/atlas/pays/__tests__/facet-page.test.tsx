@@ -206,20 +206,6 @@ describe("the countries facet", () => {
     expect(publishedIndex().SSD).toHaveLength(1);
     expect(listedCountries()).toHaveLength(1);
   });
-
-  // @req REQ-141
-  it("renders its reading and controls in English", async () => {
-    render(await renderRoute({}, "en"));
-
-    expect(screen.getByText(/54 documented countries/)).toBeInTheDocument();
-    expect(
-      screen.getByRole("searchbox", { name: "Search countries" })
-    ).toHaveAttribute("placeholder", "Country name or identifier");
-    expect(
-      screen.getByRole("combobox", { name: "Language family" })
-    ).toBeInTheDocument();
-    expect(screen.queryByText(/54 pays au atlas/)).not.toBeInTheDocument();
-  });
 });
 
 describe("the countries facet's list", () => {

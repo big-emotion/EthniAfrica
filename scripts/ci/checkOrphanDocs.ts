@@ -32,10 +32,12 @@ function isEntryPoint(file: string): boolean {
   return path.basename(file) === "README.md";
 }
 
+// A deletion not yet staged is still listed by `git ls-files`; the index must
+// not try to read a heading out of a file the worktree no longer holds.
 function tracked(): string[] {
   return execFileSync("git", ["ls-files"], { encoding: "utf8" })
     .split("\n")
-    .filter(Boolean);
+    .filter((file) => file && fs.existsSync(file));
 }
 
 const BINARY = /\.(png|jpe?g|webp|gif|ico|pdf|ttf|otf|woff2?|mp4|mp3|zip)$/i;

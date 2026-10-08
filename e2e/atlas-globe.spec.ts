@@ -4,15 +4,6 @@ import { getFamilyRoute } from "@/lib/routing";
 import { activateFicheGlobe } from "./support/atlas";
 import { LOCALE } from "./support/locale";
 
-// English UI copy lands per translation wave (REQ-142 to REQ-146). Until it
-// does, the labels this spec reads are French, so the English matrix leg
-// skips it rather than fail on copy it was never asked to check — and the
-// leg's report says so, instead of counting the journey as covered.
-test.skip(
-  LOCALE !== "fr",
-  "English copy lands per wave — this spec reads French UI copy"
-);
-
 // ETNI-1285 (REQ-117) — the contract anchor ARCH-015 names for the fiche
 // globe: choosing a target flies the camera to it AND opens the facts panel
 // WITHOUT the panel covering the subject.

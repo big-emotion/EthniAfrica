@@ -114,7 +114,7 @@ describe("afrikLoader", () => {
 
       await search("shona", {
         limit: 20,
-        lang: "en",
+        lang: "fr",
         classificationStatus: "consensual",
         minConfidence: "0.7",
         familyId: "FLG_BANTU",
@@ -124,7 +124,7 @@ describe("afrikLoader", () => {
       expect(searchParamsOf(mockFetch)).toEqual({
         q: "shona",
         limit: "20",
-        lang: "en",
+        lang: "fr",
         classificationStatus: "consensual",
         minConfidence: "0.7",
         familyId: "FLG_BANTU",
@@ -502,7 +502,7 @@ describe("afrikLoader", () => {
         json: () => Promise.resolve({ error: { message: "Unavailable" } }),
       });
 
-      await expect(loadSearchCompanions([], "en")).rejects.toMatchObject({
+      await expect(loadSearchCompanions([], "fr")).rejects.toMatchObject({
         code: "HTTP_503",
       });
     });

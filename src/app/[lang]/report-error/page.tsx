@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import { getStaticPageRoute } from "@/lib/routing";
-import { localeHead } from "@/lib/seo/localeAlternates";
+import { pageHead } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 import ReportErrorPageClient from "@/app/[lang]/report-error/ReportErrorPageClient";
 import { reportsCopy } from "@/lib/i18n/copy/reports";
@@ -24,15 +24,11 @@ export async function generateMetadata({
   const language = lang as Language;
   const title = reportsCopy[language].page.metadataTitle;
   // The far end of a flow, meaningless entered cold from a search result
-  // (named on `getSiteTree`): indexed in no locale, canonical declared all the same.
+  // (named on `getSiteTree`): indexed nowhere, canonical declared all the same.
   return {
     title,
-    ...localeHead(
-      language,
-      (locale) => getStaticPageRoute(locale, "reportError"),
-      [],
-      { title }
-    ),
+    robots: { index: false, follow: true },
+    ...pageHead(getStaticPageRoute(language, "reportError"), { title }),
   };
 }
 

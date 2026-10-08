@@ -8,7 +8,7 @@ import { getSeedNameCandidates } from "../seedNames";
 describe("home example names", () => {
   beforeEach(() => vi.clearAllMocks());
   // @req REQ-002
-  it("projects self-given people names and locale-specific countries and languages", async () => {
+  it("projects self-given people names and French country and language names", async () => {
     const selects: string[] = [];
     from.mockImplementation((table) => ({
       select: (columns: string) => {
@@ -26,11 +26,10 @@ describe("home example names", () => {
         };
       },
     }));
-    const result = await getSeedNameCandidates("en");
+    const result = await getSeedNameCandidates();
     expect(result.people).toEqual(["Iteso"]);
     expect(selects).toContain("name:content->appellations->>selfAppellation");
-    expect(selects).toContain("name:name_en");
-    expect(selects).toContain("name:content->>nameEn");
+    expect(selects).toContain("name:name_fr");
     expect(Object.keys(result)).toEqual([
       "patronyme",
       "language",
@@ -50,7 +49,7 @@ describe("home example names", () => {
         }),
       }),
     }));
-    const result = await getSeedNameCandidates("fr");
+    const result = await getSeedNameCandidates();
     expect(result.people).toEqual([]);
     expect(result.country).toEqual(["Available"]);
   });

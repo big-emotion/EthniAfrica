@@ -41,15 +41,6 @@ describe("the dossiers hub while the axis is frozen", () => {
     ).toHaveAttribute("href", getLocalizedRoute("fr", "anecdotes"));
   });
 
-  // @req REQ-140
-  it("keeps the anecdotes as the way out in English", () => {
-    render(<DossierDirectory language="en" />);
-
-    expect(
-      screen.getByRole("link", { name: "Read the anecdotes" })
-    ).toHaveAttribute("href", getLocalizedRoute("en", "anecdotes"));
-  });
-
   // @req REQ-106
   it("does not expose unavailable dossier links from a fiche", () => {
     const { container } = render(
@@ -108,15 +99,6 @@ describe("the dossiers hub offers the proverbs", () => {
     expect(
       within(proverbs).getByRole("link", { name: "Lire les proverbes" })
     ).toHaveAttribute("href", getLocalizedRoute("fr", "proverbs"));
-  });
-
-  // @req REQ-140
-  it("links to the proverbs in English", () => {
-    render(<DossierDirectory language="en" />);
-
-    expect(
-      screen.getByRole("link", { name: "Read the proverbs" })
-    ).toHaveAttribute("href", getLocalizedRoute("en", "proverbs"));
   });
 
   // A theme view shows the proverbs under their primary and secondary themes

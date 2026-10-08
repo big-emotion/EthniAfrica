@@ -61,9 +61,9 @@ function corpusNames(): Set<string> {
 
 describe("home hero seed chips", () => {
   // @req REQ-002
-  it("names only entries the corpus actually holds, in both languages", () => {
+  it("names only entries the corpus actually holds, in French", () => {
     const names = corpusNames();
-    const missing = (["fr", "en"] as const).flatMap((language) =>
+    const missing = (["fr"] as const).flatMap((language) =>
       Object.values(FALLBACK_SEED_WORDS[language])
         .flat()
         .filter((word) => !names.has(word))
@@ -77,11 +77,9 @@ describe("home hero seed chips", () => {
   // reads one and taps the other meets one set.
   // @req REQ-002
   it("offers the placeholder's own examples", () => {
-    for (const language of ["fr", "en"] as const) {
-      const copy = homeHeroCopy[language];
-      for (const word of copy.seeds) {
-        expect(copy.searchPlaceholder).toContain(word);
-      }
+    const copy = homeHeroCopy.fr;
+    for (const word of copy.seeds) {
+      expect(copy.searchPlaceholder).toContain(word);
     }
   });
 });

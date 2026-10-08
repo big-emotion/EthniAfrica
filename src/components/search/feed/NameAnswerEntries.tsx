@@ -35,7 +35,7 @@ export function UnansweredFicheLinks({
   return (
     <div className="mt-afh-md flex flex-wrap items-center gap-x-afh-2xl">
       {subjects.map((subject) => {
-        const kind = getSearchEntityLabel(subject.type, language);
+        const kind = getSearchEntityLabel(subject.type);
         return (
           <ActionLink
             key={`${subject.type}:${subject.id}`}
@@ -85,7 +85,7 @@ export function NameAnswerEntries({
           >
             {single ? (
               <p className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[var(--afh-eyebrow-tracking)] text-afh-text-soft">
-                {getSearchEntityLabel(subjects[0].type, language)}
+                {getSearchEntityLabel(subjects[0].type)}
               </p>
             ) : null}
             <div className="mt-afh-xs max-w-[65ch] space-y-afh-md text-afh-body leading-[var(--afh-leading-body)]">
@@ -96,7 +96,7 @@ export function NameAnswerEntries({
             </div>
             <div className="mt-afh-md flex flex-wrap items-center gap-x-afh-2xl">
               {subjects.map((subject) => {
-                const kindLabel = getSearchEntityLabel(subject.type, language);
+                const kindLabel = getSearchEntityLabel(subject.type);
                 return (
                   <ActionLink
                     key={`${subject.type}:${subject.id}`}

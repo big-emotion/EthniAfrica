@@ -84,24 +84,14 @@ export function SearchResultCard({
   const countries = result.countryIds ?? [];
   const name = searchResultDisplayLabel(result, language);
   const familyName = getLocalizedSearchResultFamilyName(result, language);
-  const copy =
-    language === "en"
-      ? {
-          familyAria: (value: string) =>
-            `Peoples in the linguistic family ${value}`,
-          peopleList: "Referenced peoples",
-          countryList: "Countries of presence",
-          countryAria: (value: string) => `Peoples in ${value}`,
-          population: "Population:",
-        }
-      : {
-          familyAria: (value: string) =>
-            `Peuples de la famille linguistique ${value}`,
-          peopleList: "Peuples cités",
-          countryList: "Pays de présence",
-          countryAria: (value: string) => `Peuples du pays ${value}`,
-          population: "Population :",
-        };
+  const copy = {
+    familyAria: (value: string) =>
+      `Peuples de la famille linguistique ${value}`,
+    peopleList: "Peuples cités",
+    countryList: "Pays de présence",
+    countryAria: (value: string) => `Peuples du pays ${value}`,
+    population: "Population :",
+  };
   const shownCountries = countries.slice(0, MAX_COUNTRY_CHIPS);
   const hiddenCountryCount = countries.length - shownCountries.length;
 
@@ -136,7 +126,7 @@ export function SearchResultCard({
         <span className="flex items-center gap-1.5">
           <SearchEntityMark type={type} />
           <Badge variant="secondary" className="text-afh-caption">
-            {getSearchEntityLabel(type, language)}
+            {getSearchEntityLabel(type)}
           </Badge>
         </span>
 
