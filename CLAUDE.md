@@ -7,6 +7,11 @@ peoples, languages, linguistic families and countries, in French only. `README.m
 contributor reference (env vars, data model, API, deploy); this file covers what you need to
 work in the code without re-deriving it.
 
+**Read `docs/editorial/doctrine.md` before any work on content, publications or the search
+result page.** It is the one statement of what the site is for: a reader searches a name, and
+the result page shows its origin, its different names and the history of each — who named whom,
+when, and why.
+
 ## Commands
 
 ```bash

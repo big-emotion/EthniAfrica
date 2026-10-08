@@ -1,6 +1,6 @@
 ---
 name: ethniafrica-essai
-description: Capture un essai politique, philosophique ou sociologique — la base idéologique d'une série ou du projet, discutée avec l'opérateur — dans un fichier daté, verbatim d'abord, synthèse ensuite. Distinct de purpose-doctrine.md (la thèse centrale du site) : un essai porte la raison d'être d'un angle éditorial précis (une série, un type de contenu), pas la doctrine publiée au lecteur. Utiliser pour « enregistre cette idée », « c'est la base idéologique », « garde ça en mémoire », « essai politique/philosophique/sociologique », ou /essai.
+description: Capture un essai politique, philosophique ou sociologique — la base idéologique d'une série ou du projet, discutée avec l'opérateur — dans un fichier daté, verbatim d'abord, synthèse ensuite. Distinct de docs/editorial/doctrine.md (la doctrine du site) : un essai porte la raison d'être d'un angle éditorial précis (une série, un type de contenu), pas la doctrine publiée au lecteur. Utiliser pour « enregistre cette idée », « c'est la base idéologique », « garde ça en mémoire », « essai politique/philosophique/sociologique », ou /essai.
 ---
 
 # essai — la base idéologique, écrite pour durer
@@ -26,7 +26,8 @@ qu'elle **doit montrer**.
    au départ dérive à chaque relecture future. N'écris pas avant confirmation
    si un doute existe.
 2. **Écris un fichier daté** sous `docs/editorial/essais/{slug}-AAAA-MM-JJ.md`,
-   sur le modèle de `docs/editorial/purpose-doctrine.md` :
+   sur le modèle de l'ancien `docs/editorial/purpose-doctrine.md` (historique git,
+   remplacé par `docs/editorial/doctrine.md` le 2026-10-08) :
    - L'échange **verbatim**, en français, dans les mots de l'opérateur —
      pas une paraphrase. C'est la source ; une synthèse qui s'en éloigne est
      ce qui dérive.
