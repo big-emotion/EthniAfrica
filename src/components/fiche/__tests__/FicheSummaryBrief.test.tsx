@@ -121,7 +121,8 @@ describe("FicheSummaryBrief", () => {
   });
 
   // @req REQ-151
-  it("shows one existing fact matched on both entity kind and id, with its tier", () => {
+  // @req REQ-092
+  it("shows one existing fact matched on both entity kind and id, and never its tier", () => {
     render(
       <FicheSummaryBrief
         kind="country"
@@ -136,8 +137,11 @@ describe("FicheSummaryBrief", () => {
     expect(
       within(fact).getByText(/Un même peuple s'appelle Guéré/)
     ).toBeVisible();
-    expect(within(fact).getByText(/Source référencée/)).toBeVisible();
     expect(within(fact).getByRole("link", { name: /Holsoe/ })).toBeVisible();
+    // Doctrine §1.1: the reader sees the source, never its tier.
+    expect(fact.textContent).not.toMatch(
+      /Officielle|Référencée|Non vérifiée|Niveau de source|Source référencée|Source officielle/i
+    );
     expect(screen.getAllByTestId("fiche-summary-fact")).toHaveLength(1);
   });
 

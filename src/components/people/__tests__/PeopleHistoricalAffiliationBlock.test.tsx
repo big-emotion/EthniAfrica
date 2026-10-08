@@ -7,8 +7,9 @@ describe("PeopleHistoricalAffiliationBlock", () => {
   afterEach(cleanup);
 
   // @req REQ-127
-  it("prints the description and each source with the tier it carries", () => {
-    render(
+  // @req REQ-092
+  it("prints the description and each source, never the source's tier", () => {
+    const { container } = render(
       <PeopleHistoricalAffiliationBlock
         data={{
           description:
@@ -32,7 +33,9 @@ describe("PeopleHistoricalAffiliationBlock", () => {
     expect(
       screen.getByText("UNESCO — Mémoire du monde, route des esclaves")
     ).toBeInTheDocument();
-    expect(screen.getByText("Officielle")).toBeInTheDocument();
+    expect(container.textContent).not.toMatch(
+      /Officielle|Référencée|Non vérifiée|En attente d.examen|palier/i
+    );
   });
 
   // @req REQ-127

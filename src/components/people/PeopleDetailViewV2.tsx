@@ -46,7 +46,6 @@ import type { PeopleFicheNotes } from "@/components/people/peopleFicheNotes";
 import type { FicheSourceEntry } from "@/lib/afrik/ficheSourceLabel";
 import type { Language } from "@/types/shared";
 import { peopleCopy } from "@/lib/i18n/copy/people";
-import { ficheCopy } from "@/lib/i18n/copy/fiche";
 
 export interface PeopleDetailViewV2Props {
   people: PeopleDetail;
@@ -438,12 +437,7 @@ export function PeopleDetailViewV2({
       {/* Deep links across the app point at #sources; until now the only such
           anchor in the tree belonged to the family fiche, so every citation
           chip on a people fiche resolved to nothing. */}
-      <FicheSection
-        title={copy.sections.sources}
-        note={ficheCopy[language].sourceTierNote}
-        as="footer"
-        id="sources"
-      >
+      <FicheSection title={copy.sections.sources} as="footer" id="sources">
         <MediaCreditSection
           peopleId={data.hero.peopleId}
           language={language}

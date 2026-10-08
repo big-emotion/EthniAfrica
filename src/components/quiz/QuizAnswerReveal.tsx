@@ -13,7 +13,6 @@ import type {
 } from "@/api/v2/schemas/quiz";
 import { Button } from "@/components/ui/button";
 import type { Language } from "@/types/shared";
-import { SourceStandingBadge } from "@/components/sources/SourceStandingBadge";
 
 // @req REQ-103
 export const QUIZ_REVEAL_MIN_HEIGHT_CLASS = "min-h-[22rem]";
@@ -128,7 +127,6 @@ export const QuizAnswerReveal = ({
       <div className="flex items-center gap-2 border-t border-afh-border pt-3 text-afh-small text-afh-text-soft">
         <span>{question.source.title}</span>
         {question.source.year ? <span>· {question.source.year}</span> : null}
-        <SourceStandingBadge standing={tier} language={language} />
       </div>
 
       <button

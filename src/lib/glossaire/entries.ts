@@ -365,18 +365,6 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     sourceRefs: ["trc-leiden-vlisco"],
   },
   {
-    id: "palier-de-source",
-    fr: "Palier de source",
-    en: "Source tier",
-    family: "effet",
-    definition:
-      "Le degré d'autorité attaché à une citation : Officielle, Référencée, Non vérifiée — plus « En attente d'examen » quand personne n'a encore tranché. Rien n'est écarté ; tout est étiqueté.",
-    corpusExample:
-      "Chaque source de ce dossier porte le sien, y compris celles qui attendent encore leur source primaire.",
-    corpusPresence: "instantiated",
-    seeAlso: ["asymetrie-documentaire"],
-  },
-  {
     id: "reification-ethnique",
     fr: "Réification ethnique",
     en: "Ethnic reification",
@@ -451,5 +439,17 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
       "Le terme est défini pour être écarté. Il n'instancie rien dans le corpus, et c'est le but.",
     seeAlso: ["ethnonyme", "reification-ethnique"],
     chapterRef: "le-peuple",
+  },
+  {
+    id: "type-de-source",
+    fr: "Type de source",
+    en: "Source type",
+    family: "effet",
+    definition:
+      "Ce qu'est une source, dit au lecteur à la place d'un classement : tradition orale, publication académique, archive, statistiques publiques, synthèse… Une source est présentée par son type, jamais rangée au-dessus d'une autre — un griot n'est pas cité en dessous d'un linguiste.",
+    corpusExample:
+      "Une source de ce dossier s'affiche avec son type, « Tradition orale » comme « Publication académique ».",
+    corpusPresence: "instantiated",
+    seeAlso: ["asymetrie-documentaire"],
   },
 ];

@@ -1,5 +1,4 @@
 import type { PublicPatronyme } from "@/api/v2/schemas/patronymes";
-import { sourceStandingLabel } from "@/lib/glossaire/vocabularies";
 import { readNameStanding, type NameStanding } from "@/lib/patronymes/content";
 import { isAuthoritativeSourceTier } from "@/types/sources";
 import { getTranslation } from "@/lib/translations";
@@ -38,10 +37,10 @@ function standingSentence(standing: NameStanding, t: PatronymeCopy): string {
  *
  * The standing carries no percentage and no `ConfidenceChip`: DEC-050 rules
  * that a name has neither a confidence row nor a human-audit date, so a figure
- * here would be arithmetic on two terms that are zero by construction. The
- * tier word is only ever written when a citation claims it — a dossier citing
- * nothing readable says it is being assembled and stops there, because
- * defaulting to "Non vérifiée" would state a judgement nobody has made.
+ * here would be arithmetic on two terms that are zero by construction. Nor
+ * does it name the sources' tier (doctrine §1.1): the reader is told how many
+ * sources back the fiche and how many a machine wrote. A dossier with no
+ * authoritative citation says it is being assembled and stops there.
  */
 // @req REQ-133
 // @req REQ-147
@@ -65,14 +64,7 @@ export function PatronymeFicheTitle({
         {t.nameSystemStatementPrefix} {t.nameSystemLabels[patronyme.nameSystem]}
       </p>
       {standing !== null && (
-        <p className="afh-parchment-note">
-          <span className="afh-chip" data-tier={standing.tier}>
-            {sourceStandingLabel(standing.tier, language)}
-          </span>
-          {/* SWC drops JSX whitespace across a line break — without this the
-              chip and the sentence run together. */}
-          {" " + standingSentence(standing, t)}
-        </p>
+        <p className="afh-parchment-note">{standingSentence(standing, t)}</p>
       )}
       {isAssembling && (
         <p className="afh-parchment-note">{t.sourceStanding.assembling}</p>

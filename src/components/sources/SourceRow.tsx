@@ -1,9 +1,8 @@
 import Link from "next/link";
 
 import type { Source } from "@/api/v2/schemas/sources";
-import { SourceStandingBadge } from "@/components/sources/SourceStandingBadge";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { getSourceRoute } from "@/lib/routing";
-import { isSourceTier } from "@/types/sources";
 import type { Language } from "@/types/shared";
 
 interface SourceRowProps {
@@ -35,7 +34,6 @@ function attributionOf(source: Source): string | null {
 // @req REQ-092
 export function SourceRow({ source, language = "fr" }: SourceRowProps) {
   const attribution = attributionOf(source);
-  const standing = isSourceTier(source.tier) ? source.tier : "needs_review";
 
   return (
     <Link
@@ -44,7 +42,9 @@ export function SourceRow({ source, language = "fr" }: SourceRowProps) {
       className="block border-b border-afh-border px-1 py-4 focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
     >
       <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-        <SourceStandingBadge standing={standing} language={language} />
+        {source.sourceKind && (
+          <SourceKindBadge kind={source.sourceKind} language={language} />
+        )}
         <span className="font-afh text-afh-body text-afh-text">
           {source.title}
         </span>

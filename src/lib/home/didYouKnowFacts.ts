@@ -451,7 +451,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.worldhistory.org/Timbuktu/",
         tier: "referenced",
         notes:
-          "Le fait publié est le désaccord lui-même. Les étymologies concurrentes relèvent de la tradition orale et d'hypothèses d'auteurs : aucune n'est attestée, d'où le tier « non vérifiée » de la fiche.",
+          "Le fait publié est le désaccord lui-même. Les étymologies concurrentes relèvent de la tradition orale et d'hypothèses d'auteurs : aucune n'est attestée.",
       },
     ],
   },

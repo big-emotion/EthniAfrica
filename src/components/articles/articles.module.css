@@ -437,16 +437,6 @@
   overflow-wrap: anywhere;
 }
 
-.tier {
-  display: inline-block;
-  margin-left: var(--afh-space-md);
-  padding: 0 var(--afh-space-xs);
-  border: 1px solid var(--afh-border);
-  border-radius: var(--afh-radius-0);
-  font-size: var(--afh-text-caption);
-  color: var(--afh-text-soft);
-}
-
 .related {
   display: grid;
   gap: var(--afh-space-md);

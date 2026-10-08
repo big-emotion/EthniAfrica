@@ -170,12 +170,17 @@ describe("PeopleDetailViewV2", () => {
     ).not.toBeInTheDocument();
   });
 
+  // Doctrine §1.1 (operator ruling, 2026-10-08): the reader never sees a
+  // source's tier, on the bibliography or anywhere else on the fiche.
   // @req REQ-092
-  it("shows each source with the tier it carries", () => {
-    render(<PeopleDetailViewV2 language="fr" people={ewe} />);
+  it("renders no tier word anywhere on the fiche", () => {
+    const { container } = render(
+      <PeopleDetailViewV2 language="fr" people={ewe} />
+    );
 
-    expect(screen.getByText("Officielle")).toBeInTheDocument();
-    expect(screen.getByText("En attente d'examen")).toBeInTheDocument();
+    expect(container.textContent).not.toMatch(
+      /Officielle|Référencée|Non vérifiée|En attente d.examen|palier|Niveau de source/i
+    );
   });
 
   // @req REQ-091

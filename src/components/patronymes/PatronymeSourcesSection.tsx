@@ -15,8 +15,8 @@ import type { Language } from "@/types/shared";
  * which is the target every confidence chip and citation link in the app
  * points at. The anchor is as much the point of this section as the list is.
  *
- * The id and the tier note match the other four fiches deliberately: one
- * rendering of the Source Tier Policy across the whole atlas, not a fifth.
+ * The id matches the other four fiches deliberately: one `#sources` anchor
+ * across the whole atlas, not a fifth.
  */
 // @req REQ-133
 export function PatronymeSourcesSection({
@@ -27,7 +27,6 @@ export function PatronymeSourcesSection({
   language: Language;
 }) {
   const t = getTranslation(language).patronymes;
-  const ficheCopy = getTranslation(language).fiche;
   const sources = readPatronymeSources(patronyme.content);
   const chapter = resolveChapter(
     "name",
@@ -37,17 +36,12 @@ export function PatronymeSourcesSection({
   );
 
   return (
-    <FicheSection
-      title={t.sourcesTitle}
-      note={ficheCopy.sourceTierNote}
-      as="footer"
-      id="sources"
-    >
+    <FicheSection title={t.sourcesTitle} as="footer" id="sources">
       {sources.length > 0 ? (
         <ul className="afh-sources">
           {sources.map((source) => (
             <li key={source.title} className="afh-source-row">
-              {/* The shared citation carries a title, a URL and a standing, and
+              {/* The shared citation carries a title, a URL and a type, and
                   deliberately not the corpus's per-source `notes` — those are a
                   patronyme-fiche field, not part of a citation. So the note
                   stays here, inside the row's own cell. */}

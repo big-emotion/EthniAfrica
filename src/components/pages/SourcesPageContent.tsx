@@ -789,11 +789,10 @@ export default function SourcesPageContent({
 
       {/*
         The fifth section diverges from the four above it, and deliberately.
-        Those list *providers* — the UN, the World Bank — and carry no tier,
+        Those list *providers* — the UN, the World Bank — and carry no type,
         because an institution is not a work. This one lists works cited in
-        support of dated claims, so each has to show its standing: otherwise
-        the site's own bibliography would be the single place where a source
-        appears without visible provenance.
+        support of dated claims, so each names what kind of work it is, and
+        never its tier (doctrine §1.1).
 
         It derives from `NOMMER_BIBLIOGRAPHY` rather than restating it. A
         hand-kept copy would have drifted from the dossier the week after it
@@ -827,7 +826,7 @@ export default function SourcesPageContent({
                     source={{
                       title: source.title,
                       url: source.url,
-                      standing: source.standing,
+                      kind: source.sourceKind,
                     }}
                   />
                   <span

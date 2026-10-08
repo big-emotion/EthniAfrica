@@ -96,7 +96,7 @@ const fr = {
   updateLanguageFamily: "Modifier une famille linguistique",
   requiredFields: "Veuillez remplir tous les champs obligatoires",
   sourceUnverified:
-    "Cette source sera publiée avec la mention « Non vérifiée » : la contribution est acceptée, mais l'indice de confiance affiché sur la page en tiendra compte et sera plus bas.",
+    "Votre contribution est acceptée. Cette source sera publiée avec son type et relue par l'équipe.",
   summaries: {
     new_people: "Proposition d'un nouveau peuple",
     update_people: "Proposition de correction sur un peuple",

@@ -223,3 +223,23 @@ describe("findDidYouKnowFact — the fact a shared link names", () => {
     expect(findDidYouKnowFact(undefined, bank)).toBeNull();
   });
 });
+
+describe("the bank's reader prose (doctrine §1.1)", () => {
+  // A note may say what a source supports, never what tier the fact holds.
+  // @req REQ-092
+  it("never names a source tier in what the reader reads", () => {
+    const tierWord =
+      /« ?(non vérifiée|référencée|officielle) ?»|(?<!\p{L})tier(?!\p{L})/iu;
+    const offenders = DID_YOU_KNOW_FACTS.filter((entry) =>
+      [
+        entry.headline,
+        ...entry.body,
+        ...(entry.sources ?? []).map((source) => source.notes),
+      ]
+        .filter(Boolean)
+        .some((text) => tierWord.test(text))
+    ).map((entry) => entry.id);
+
+    expect(offenders).toEqual([]);
+  });
+});

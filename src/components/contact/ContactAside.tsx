@@ -93,13 +93,6 @@ export function ContactAside({ fact, language = "fr" }: ContactAsideProps) {
               ))}
             </ul>
           )}
-
-          {/* The tier travels with the claim wherever the claim goes — the
-              same rule the fiches obey, and the reason this column may quote
-              the bank at all. */}
-          <p className="mt-4 border-t border-afh-border pt-3 text-afh-eyebrow uppercase tracking-[0.06em] text-afh-fg-muted">
-            {copy.tierLabels[fact.tier]}
-          </p>
         </section>
       )}
     </aside>

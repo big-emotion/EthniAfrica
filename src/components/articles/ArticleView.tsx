@@ -1,10 +1,6 @@
 import { ActionLink } from "@/components/ui/ActionLink";
 import type { ArticleSummary } from "@/lib/articles/corpus";
 import type { Article } from "@/lib/articles/schema";
-import {
-  SOURCE_PENDING_REVIEW_LABEL,
-  SOURCE_TIER_LABELS,
-} from "@/lib/glossaire/vocabularies";
 import { ACCENT_BY_ACCESS_MODE } from "@/lib/hubs/moduleRegistry";
 import { articlesCopy } from "@/lib/i18n/copy/articles";
 import { getStaticPageRoute } from "@/lib/routing";
@@ -129,11 +125,6 @@ export function ArticleView({ language, article, related }: ArticleViewProps) {
                   source.title
                 )}
                 {source.locator ? `, ${source.locator}` : null}
-                <span className={styles.tier}>
-                  {source.tier === "needs_review"
-                    ? SOURCE_PENDING_REVIEW_LABEL[language]
-                    : SOURCE_TIER_LABELS[language][source.tier]}
-                </span>
                 {source.notes ? <p>{source.notes}</p> : null}
               </li>
             ))}

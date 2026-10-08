@@ -43,7 +43,7 @@ describe("SourceRow", () => {
   });
 
   // @req REQ-092
-  it("shows why the source carries the standing it carries", () => {
+  it("shows the note the record carries about the source", () => {
     render(<SourceRow source={source} />);
 
     expect(
@@ -51,10 +51,29 @@ describe("SourceRow", () => {
     ).toBeInTheDocument();
   });
 
+  /** Doctrine §1.1: the reader is told who speaks, never how much to trust them. */
   // @req REQ-092
-  it("states the standing beside the title", () => {
-    render(<SourceRow source={source} />);
-    expect(screen.getByText("Officielle")).toBeInTheDocument();
+  it("never states the source's tier", () => {
+    for (const tier of [
+      "official",
+      "referenced",
+      "unverified",
+      null,
+    ] as const) {
+      const { container, unmount } = render(
+        <SourceRow source={{ ...source, tier }} />
+      );
+      expect(container.textContent).not.toMatch(
+        /Officielle|Référencée|Non vérifiée|En attente d'examen/
+      );
+      unmount();
+    }
+  });
+
+  // @req REQ-161
+  it("states the source's type beside the title when the record carries it", () => {
+    render(<SourceRow source={{ ...source, sourceKind: "oral_tradition" }} />);
+    expect(screen.getByText("Tradition orale")).toBeInTheDocument();
   });
 
   /**

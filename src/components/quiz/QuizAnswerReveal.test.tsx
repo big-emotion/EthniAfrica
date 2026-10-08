@@ -51,6 +51,25 @@ describe("QuizAnswerReveal (Epic 10, Story 10.9, ETNI-1134, FR68/FR71)", () => {
     ).toBeInTheDocument();
   });
 
+  // The tier is an audit field; the reveal line names the source and stops
+  // there (doctrine §1.1).
+  // @req REQ-092
+  it("never labels the source with a tier", () => {
+    render(
+      <QuizAnswerReveal
+        language="fr"
+        question={QUESTION}
+        isCorrect
+        isLastQuestion={false}
+        onNext={vi.fn()}
+      />
+    );
+
+    expect(screen.getByTestId("quiz-answer-reveal")).not.toHaveTextContent(
+      /Officielle|Référencée|Non vérifiée|Source officielle/
+    );
+  });
+
   // @req REQ-103 FR68
   it("uses --afh-terracotta and never --afh-error for an incorrect verdict", () => {
     render(

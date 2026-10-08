@@ -295,8 +295,8 @@ export const Sources_Mobile: Story = {
   parameters: { viewport: { defaultViewport: "mobile430" } },
   render: () => (
     <div style={{ padding: "12px" }}>
-      {/* One source per tier the corpus actually uses, so the story shows
-          what a low-confidence fiche looks like next to a well-sourced one. */}
+      {/* Sources of every standing the corpus uses: the list prints none of
+          them (doctrine §1.1), so they must all read alike. */}
       <FicheSources
         sources={[
           {

@@ -7,7 +7,6 @@ import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip"
 import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
 import { isEstimateRound, type GameRound } from "@/lib/games/gameKinds";
 import { revealProvenanceFr } from "@/lib/games/revealProvenance";
-import { sourceStandingLabel } from "@/lib/glossaire/vocabularies";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { gamesCopy } from "@/lib/i18n/copy/games";
@@ -128,9 +127,8 @@ export const GameAnswerReveal = ({
         ) : null}
 
         {/*
-          Nothing is withheld for a weak source; the standing is stated. A
-          round resting only on « Non vérifiée » is played and marked, exactly
-          as a fiche is.
+          The source is named, its tier is not (doctrine §1.1): ranking what
+          a claim rests on is moderation's job, not the reader's.
         */}
         {sources.length > 0 ? (
           <ul className="flex flex-col gap-1">
@@ -140,9 +138,6 @@ export const GameAnswerReveal = ({
                 className="flex flex-wrap items-center gap-2"
               >
                 <span>{source.label}</span>
-                <span className="rounded-full bg-afh-bg-warm px-2 py-0.5 text-afh-caption font-medium">
-                  {sourceStandingLabel(source.standing, language)}
-                </span>
               </li>
             ))}
           </ul>

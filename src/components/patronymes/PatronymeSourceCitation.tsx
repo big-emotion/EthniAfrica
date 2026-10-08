@@ -6,8 +6,8 @@ import type { PatronymeSource } from "@/lib/patronymes/content";
  *
  * It keeps its own name and its own `@req` because the fiche's sections read
  * a `<source>` out of the opaque `content` bag and this is where that shape
- * is adapted — `tier` there, `standing` in the shared component, one policy
- * either way.
+ * is adapted. The record's `tier` is deliberately not passed: the reader sees
+ * the source's type, never its tier (doctrine §1.1).
  */
 // @req REQ-133
 export function PatronymeSourceCitation({
@@ -20,7 +20,7 @@ export function PatronymeSourceCitation({
       source={{
         title: source.title,
         url: source.url ?? null,
-        standing: source.tier,
+        kind: source.sourceKind,
       }}
     />
   );

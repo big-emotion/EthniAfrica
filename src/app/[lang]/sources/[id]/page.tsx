@@ -6,12 +6,11 @@ import { sourceIdParamSchema } from "@/api/v2/schemas/sources";
 import { getSourceCitations } from "@/api/v2/services/sourceCitations";
 import { getSourceById } from "@/api/v2/services/sources";
 import { PageLayout } from "@/components/layout/PageLayout";
-import { SourceStandingBadge } from "@/components/sources/SourceStandingBadge";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { getLocalizedRoute, getSourceRoute } from "@/lib/routing";
 import { pageHead } from "@/lib/seo/pageHead";
 import { formatNumber } from "@/lib/languageTag";
 import type { Language } from "@/types/shared";
-import { isSourceTier } from "@/types/sources";
 
 /**
  * One source of the corpus, and what rests on it.
@@ -100,7 +99,6 @@ export default async function SourcePage({
   if (!source) notFound();
 
   const citations = await getSourceCitations(source.id, undefined, language);
-  const standing = isSourceTier(source.tier) ? source.tier : "needs_review";
   const attribution = [source.author, source.year ? String(source.year) : null]
     .filter(Boolean)
     .join(" · ");
@@ -109,7 +107,9 @@ export default async function SourcePage({
     <PageLayout language={language} title={source.title}>
       <div className="mx-auto w-full max-w-3xl">
         <div className="flex flex-wrap items-baseline gap-2">
-          <SourceStandingBadge standing={standing} language={language} />
+          {source.sourceKind && (
+            <SourceKindBadge kind={source.sourceKind} language={language} />
+          )}
           {attribution && (
             <span className="text-afh-small text-afh-text-soft">
               {attribution}

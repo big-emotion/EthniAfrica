@@ -15,7 +15,7 @@ const read = (path: string) =>
   readFileSync(resolve(process.cwd(), path), "utf8");
 
 const PAGE = "src/app/[lang]/sources/page.tsx";
-const BADGE = "src/components/sources/SourceStandingBadge.tsx";
+const BADGE = "src/components/sources/SourceKindBadge.tsx";
 const ROW = "src/components/sources/SourceRow.tsx";
 
 describe("sources directory charter", () => {
@@ -69,7 +69,19 @@ describe("sources directory charter", () => {
    * actions-charter §6: radius 0 is the source apparatus — citations, tier
    * marks, version banners — because the sharp corner says this is a document
    * rather than an application. A pill would read as a removable filter chip.
+   * The kind badge inherits the rule the tier badge set on this surface.
    */
+  /**
+   * Doctrine §1.1: the directory tells the reader what kind of source each
+   * one is, never its tier. Reaching for the tier label is the regression.
+   */
+  // @req REQ-092
+  it("names no tier on the directory or its rows", () => {
+    for (const path of [PAGE, ROW]) {
+      expect(read(path)).not.toMatch(/sourceStandingLabel|SourceStandingBadge/);
+    }
+  });
+
   // @req REQ-092
   it("gives the apparatus the square corner and the rows the flat list", () => {
     expect(read(BADGE)).toContain("rounded-none");

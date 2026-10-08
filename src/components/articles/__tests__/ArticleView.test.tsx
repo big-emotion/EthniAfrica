@@ -146,8 +146,19 @@ describe("ArticleView", () => {
     const entry = document.getElementById("source-src-1") as HTMLElement;
     expect(entry).toHaveTextContent("A published work about the name");
     expect(entry).toHaveTextContent("chap. 2");
-    expect(entry).toHaveTextContent("Référencée");
     expect(follows(text(), entry)).toBe(true);
+  });
+
+  // The reader is told what a source is, never how far to trust it
+  // (doctrine §1.1): no tier word sits beside a reference.
+  // @req REQ-092
+  it("lists a reference without its tier", () => {
+    renderView(videoArticle());
+
+    const entry = document.getElementById("source-src-1") as HTMLElement;
+    expect(entry).not.toHaveTextContent(
+      /Référencée|Officielle|Non vérifiée|En attente d'examen/
+    );
   });
 
   // @req REQ-114

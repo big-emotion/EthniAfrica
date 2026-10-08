@@ -23,8 +23,6 @@ const fr = {
       } sur cette assertion.`,
     sources: "Sources",
     reviewedNarratives: "Récits oraux relus",
-    unconfirmedIntro:
-      "Ces sources ne sont pas encore confirmées. Notre travail est de faire remonter celles qui se rapprochent le plus de ce que les peuples ont vécu.",
     viewInBibliography: "Voir dans la bibliographie",
     brokenLink: (date: string) => `lien non résolu — signalé le ${date}`,
     reportSource: "Signaler cette source",

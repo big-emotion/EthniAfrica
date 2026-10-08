@@ -2,7 +2,7 @@ import type { Language } from "@/types/shared";
 
 const fr = {
   description:
-    "Notre bibliographie : chaque source sur laquelle reposent les pages, avec son degré d'autorité et ce qui la cite.",
+    "Notre bibliographie : chaque source sur laquelle reposent les pages, son type et ce qui la cite.",
   sorts: {
     titre: "Titre",
     annee: "Année, la plus récente d'abord",
@@ -11,10 +11,8 @@ const fr = {
   labels: {
     search: "Rechercher une source",
     searchPlaceholder: "Titre ou auteur",
-    standing: "Autorité",
-    anyStanding: "Toutes les autorités",
-    provenance: "Provenance",
-    anyProvenance: "Toutes les provenances",
+    provenance: "Type de source",
+    anyProvenance: "Tous les types",
     decade: "Décennie",
     anyDecade: "Toutes les décennies",
     sort: "Trier par",
@@ -22,9 +20,9 @@ const fr = {
   },
   selection: (total: string, singular: boolean) =>
     `${total} ${singular ? "source" : "sources"} dans cette sélection. ` +
-    `Chacune porte son degré d'autorité, et la raison de ce degré.`,
+    `Chacune mène à sa page, qui dit ce qui la cite.`,
   provenanceNote: (withKind: string, total: string) =>
-    `La provenance n'est renseignée que pour ${withKind} sources sur ${total} : ` +
+    `Le type n'est renseigné que pour ${withKind} sources sur ${total} : ` +
     `filtrer dessus ne montre pas l'état de notre projet, seulement ce qui a déjà été qualifié.`,
   empty: "Aucune source ne répond à cette sélection.",
   reset: "Revenir à toutes les sources",

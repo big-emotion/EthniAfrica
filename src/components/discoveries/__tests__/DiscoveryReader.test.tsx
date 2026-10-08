@@ -67,6 +67,22 @@ describe("Découvertes photo frame", () => {
     ).toBeInTheDocument();
   });
 
+  // The caption names the source, never its tier (doctrine §1.1).
+  // @req REQ-156 REQ-092
+  it("credits each publication's source without a tier", () => {
+    const { container } = render(
+      <DiscoveryReader
+        language="fr"
+        publications={publications}
+        initialId="anecdote:burkina-faso"
+      />
+    );
+
+    expect(container).not.toHaveTextContent(
+      /Source (officielle|référencée|non vérifiée)/
+    );
+  });
+
   // @req REQ-156
   it("keeps an offscreen photo credit out of keyboard tab order", () => {
     HTMLElement.prototype.scrollIntoView = vi.fn();

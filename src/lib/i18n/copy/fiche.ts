@@ -1,8 +1,6 @@
 import type { Language } from "@/types/shared";
 
 const fr = {
-  sourceTierNote:
-    "Chaque source porte son palier — l'autorité qu'on peut lui accorder.",
   contribute: "Contribuer",
   showMap: "Voir la carte",
   hideMap: "Masquer la carte",

@@ -647,12 +647,8 @@
   color: var(--accent-ink, var(--accent));
 }
 
-/* `SourceCitation` emits these two, and until now no stylesheet defined
-   either: the tier arrived as parenthesised body text on the name fiche, and
-   the shared component carried the omission to the bibliography and the
-   dossier when it was extracted. Defining them here rather than changing the
-   component's markup keeps one citation across the three surfaces and gives
-   the standing the weight the Source Tier Policy asks for. */
+/* `SourceCitation` emits these two, shared by the name fiche, the
+   bibliography and the dossier, so one citation reads the same on all three. */
 .afh-source-citation {
   min-width: 0;
   overflow-wrap: anywhere;
@@ -661,42 +657,13 @@
 /* `--afh-text-soft`, not `--afh-text-muted`: the muted ink fails AA at this
    size on every parchment ground, which `ficheParchmentContrast` holds the
    whole stylesheet to. */
-.afh-source-tier-label {
+.afh-source-kind-label {
   white-space: nowrap;
   font-size: var(--afh-text-caption);
   color: var(--afh-text-soft);
 }
 
-/* The standing is read from the source's own record, never chosen by the
-   surface — same rule the tier chips above follow. */
-.afh-source-citation[data-source-tier="official"] .afh-source-tier-label {
-  color: var(--afh-color-verified, var(--afh-text-soft));
-}
-
-.afh-source-citation[data-source-tier="needs_review"] .afh-source-tier-label {
-  color: var(--afh-color-colonial, var(--afh-text-soft));
-}
-
-/* Tier colours come from the tier, so a source cannot be shown at a
-   confidence its own record does not claim. */
-.afh-chip[data-tier="official"] {
-  border-color: var(--afh-color-verified, var(--afh-border));
-  color: var(--afh-text);
-}
-
-/* Unlike the missing-field chip below it, this one keeps the surface's own
-   background — so its tone has to follow the theme rather than ride on a
-   tint it paints itself. It read at 2.2:1 on night before the ink existed. */
-.afh-chip[data-tier="unverified"] {
-  border-color: var(--afh-colonial-ink);
-  color: var(--afh-colonial-ink);
-}
-
-/* ── Source census ─────────────────────────────────────────────────
-   The tally drawn: one segment per standing, as wide as its share of the
-   list. A standing takes the confidence scale's colour, so a record resting
-   on official sources reads that way before a title is read. Awaiting review
-   is not a tier, so it wears a hatch rather than a fill. */
+/* ── Source list ─────────────────────────────────────────────────── */
 
 .afh-fiche-sources {
   display: flex;
@@ -705,44 +672,6 @@
   min-width: 0;
   font-size: var(--afh-text-caption);
   line-height: 1.6;
-  color: var(--afh-text-soft);
-}
-
-.afh-census {
-  display: flex;
-  height: 10px;
-  overflow: hidden;
-  border: 1px solid var(--afh-border);
-}
-
-.afh-census > span {
-  display: block;
-  height: 100%;
-}
-
-.afh-census > [data-census-standing="official"] {
-  background: var(--afh-conf-high);
-}
-
-.afh-census > [data-census-standing="referenced"] {
-  background: var(--afh-gold);
-}
-
-.afh-census > [data-census-standing="unverified"] {
-  background: var(--afh-conf-low);
-}
-
-.afh-census > [data-census-standing="needs_review"] {
-  background: repeating-linear-gradient(
-    135deg,
-    var(--afh-text-muted) 0 4px,
-    transparent 4px 8px
-  );
-}
-
-.afh-census-legend {
-  margin: 0;
-  font-family: var(--afh-font-mono);
   color: var(--afh-text-soft);
 }
 
@@ -762,29 +691,13 @@
   overflow-wrap: anywhere;
 }
 
-.afh-fiche-source-standing {
-  flex: none;
-  padding: 2px 8px;
-  border-radius: var(--afh-radius-full);
-  background: var(--afh-surface);
-  font-size: var(--afh-text-eyebrow);
-  font-weight: 500;
-  color: var(--afh-text-soft);
-}
-
-/* Awaiting review is not a tier, so it does not wear a tier's filled chip. */
-.afh-fiche-source-standing[data-source-standing="needs_review"] {
-  border: 1px solid var(--afh-border);
-  background: transparent;
-}
-
 .afh-fiche-source-note {
   flex-basis: 100%;
   font-size: var(--afh-text-eyebrow);
 }
 
 /* The share of a country no people accounts for, drawn rather than left as
-   empty track: the same hatch the source census gives what awaits review. */
+   empty track. */
 [data-demo-unassigned] {
   background: repeating-linear-gradient(
     135deg,
@@ -1401,14 +1314,6 @@
 .fiche-summary-brief__fact p {
   margin: 0 0 8px;
   line-height: 1.5;
-}
-
-.fiche-summary-brief__tier {
-  display: inline-block;
-  padding: 4px 8px;
-  border: 1px solid var(--afh-border);
-  font-size: var(--afh-text-small);
-  color: var(--afh-text-soft);
 }
 
 .fiche-summary-brief__source {

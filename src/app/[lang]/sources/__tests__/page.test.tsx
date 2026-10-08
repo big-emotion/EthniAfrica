@@ -95,8 +95,10 @@ describe("sources directory", () => {
       totalPages: 1,
     });
     getSourcesFacetChoicesMock.mockReset().mockResolvedValue({
-      standings: [{ id: "official", label: "Officielle", count: 1037 }],
-      sourceKinds: [],
+      standings: [{ id: "official", count: 1037 }],
+      sourceKinds: [
+        { id: "oral_tradition", label: "Tradition orale", count: 12 },
+      ],
       decades: [],
       total: 4395,
       withSourceKind: 20,
@@ -105,13 +107,63 @@ describe("sources directory", () => {
 
   // @req REQ-114
   it("narrows at the database rather than in the render", async () => {
-    render(await renderRoute({ q: "ethnologue", autorite: "official" }));
+    render(
+      await renderRoute({ q: "ethnologue", provenance: "oral_tradition" })
+    );
 
     expect(getSourcesFacetPageMock).toHaveBeenCalledWith(
       1,
-      expect.objectContaining({ search: "ethnologue", standing: "official" }),
+      expect.objectContaining({
+        search: "ethnologue",
+        sourceKind: "oral_tradition",
+      }),
       20
     );
+  });
+
+  /**
+   * The tier filter is gone (doctrine §1.1). Addresses already in circulation
+   * still carry `?autorite=`; they must read as the unfiltered directory, not
+   * as an error nor as a hidden narrowing the reader can no longer see.
+   */
+  // @req REQ-092
+  it("ignores the retired authority parameter of old addresses", async () => {
+    render(await renderRoute({ autorite: "official" }));
+
+    expect(getSourcesFacetPageMock).toHaveBeenCalledWith(
+      1,
+      expect.objectContaining({ standing: null }),
+      20
+    );
+  });
+
+  // @req REQ-092
+  it("renders no tier word anywhere on the directory", async () => {
+    getSourcesFacetPageMock.mockResolvedValue({
+      sources: [
+        makeSource(),
+        makeSource({ id: "22222222-2222-2222-2222-222222222222", tier: null }),
+      ],
+      page: 1,
+      total: 2,
+      totalPages: 1,
+    });
+
+    const { container } = render(await renderRoute({ autorite: "official" }));
+
+    expect(container.textContent).not.toMatch(
+      /Officielle|Référencée|Non vérifiée|Autorité/
+    );
+  });
+
+  /** The type is named in words wherever the reader meets it, never by its id. */
+  // @req REQ-161
+  it("offers the source types by name", async () => {
+    render(await renderRoute());
+
+    expect(
+      screen.getByRole("option", { name: /Tradition orale/ })
+    ).toHaveAttribute("value", "oral_tradition");
   });
 
   /**
@@ -121,11 +173,11 @@ describe("sources directory", () => {
    */
   // @req REQ-114
   it("reads an empty select as no filter at all", async () => {
-    render(await renderRoute({ autorite: "", q: "   " }));
+    render(await renderRoute({ provenance: "", q: "   " }));
 
     expect(getSourcesFacetPageMock).toHaveBeenCalledWith(
       1,
-      expect.objectContaining({ standing: null, search: null }),
+      expect.objectContaining({ sourceKind: null, search: null }),
       20
     );
   });
@@ -168,21 +220,6 @@ describe("sources directory", () => {
       "href",
       "/fr/sources/11111111-1111-1111-1111-111111111111"
     );
-  });
-
-  // @req REQ-092
-  it("shows an unclassified source as awaiting review, never as unverified", async () => {
-    getSourcesFacetPageMock.mockResolvedValue({
-      sources: [makeSource({ tier: null })],
-      page: 1,
-      total: 1,
-      totalPages: 1,
-    });
-
-    render(await renderRoute());
-
-    expect(screen.getByText("En attente d'examen")).toBeInTheDocument();
-    expect(screen.queryByText("Non vérifiée")).not.toBeInTheDocument();
   });
 
   // @req REQ-114

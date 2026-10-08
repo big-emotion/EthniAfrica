@@ -17,6 +17,9 @@ const patronyme: PublicPatronyme = {
   alliances: [],
 };
 
+const TIER_WORDS =
+  /Officielle|Référencée|Non vérifiée|En attente d.examen|palier/i;
+
 describe("PatronymeFicheTitle (REQ-133)", () => {
   // @req REQ-133
   it("opens on the eyebrow and the name", () => {
@@ -61,8 +64,9 @@ describe("PatronymeFicheTitle standing (REQ-147)", () => {
   });
 
   // @req REQ-147
-  it("states the best tier cited and how many sources back the fiche", () => {
-    render(
+  // @req REQ-092
+  it("states how many sources back the fiche, and never their tier", () => {
+    const { container } = render(
       <PatronymeFicheTitle
         language="fr"
         patronyme={citing([
@@ -76,10 +80,8 @@ describe("PatronymeFicheTitle standing (REQ-147)", () => {
       />
     );
 
-    expect(screen.getByText("Officielle")).toHaveAttribute(
-      "data-tier",
-      "official"
-    );
+    expect(container.textContent).not.toMatch(TIER_WORDS);
+    expect(container.querySelector("[data-tier]")).toBeNull();
     expect(screen.getByText(/6 sources citées/)).toBeInTheDocument();
     expect(screen.queryByText(/intelligence artificielle/)).toBeNull();
     expect(screen.queryByText(/en cours de constitution/)).toBeNull();
@@ -87,7 +89,7 @@ describe("PatronymeFicheTitle standing (REQ-147)", () => {
 
   // @req REQ-147
   it("marks a lone machine-written source and says the fiche is being assembled", () => {
-    render(
+    const { container } = render(
       <PatronymeFicheTitle
         language="fr"
         patronyme={citing([
@@ -100,10 +102,7 @@ describe("PatronymeFicheTitle standing (REQ-147)", () => {
       />
     );
 
-    expect(screen.getByText("Non vérifiée")).toHaveAttribute(
-      "data-tier",
-      "unverified"
-    );
+    expect(container.textContent).not.toMatch(TIER_WORDS);
     expect(
       screen.getByText(
         /1 source citée, dont une rédigée par une intelligence artificielle/
@@ -113,8 +112,8 @@ describe("PatronymeFicheTitle standing (REQ-147)", () => {
   });
 
   // @req REQ-147
-  it("counts the machine-written share without lowering the tier", () => {
-    render(
+  it("counts the machine-written share", () => {
+    const { container } = render(
       <PatronymeFicheTitle
         language="fr"
         patronyme={citing([
@@ -126,7 +125,7 @@ describe("PatronymeFicheTitle standing (REQ-147)", () => {
       />
     );
 
-    expect(screen.getByText("Référencée")).toBeInTheDocument();
+    expect(container.textContent).not.toMatch(TIER_WORDS);
     expect(
       screen.getByText(
         /4 sources citées, dont 3 rédigées par une intelligence artificielle/
@@ -136,11 +135,11 @@ describe("PatronymeFicheTitle standing (REQ-147)", () => {
 
   // @req REQ-147
   it("asserts no tier when the dossier cites nothing readable", () => {
-    render(<PatronymeFicheTitle patronyme={patronyme} language="fr" />);
+    const { container } = render(
+      <PatronymeFicheTitle patronyme={patronyme} language="fr" />
+    );
 
     expect(screen.getByText(/en cours de constitution/)).toBeInTheDocument();
-    expect(screen.queryByText("Officielle")).toBeNull();
-    expect(screen.queryByText("Référencée")).toBeNull();
-    expect(screen.queryByText("Non vérifiée")).toBeNull();
+    expect(container.textContent).not.toMatch(TIER_WORDS);
   });
 });

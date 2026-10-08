@@ -195,19 +195,17 @@ describe("country fiche charter", () => {
   });
 
   /**
-   * A page resting on seven unexamined sources out of nine is a fact about
-   * the page, and reading nine entries was the only way to learn it. The
-   * line counts each standing separately — a census, never the single
-   * verdict `FicheSources` refuses, which would make the strongest source
-   * and the weakest read alike.
+   * Doctrine §1.1 (operator ruling, 2026-10-08): the reader never sees a
+   * source's tier — no per-standing count, no tier word, no tier note.
    */
   // @req REQ-092
-  it("says what the source apparatus amounts to, by standing", () => {
+  it("never tells the reader a source's tier", () => {
     const { container } = renderParchment(countryFixture());
 
-    const tally = container.querySelector('[data-testid="sources-tally"]');
-    expect(tally?.textContent).toMatch(/^\d+ sources? · /);
-    expect(tally?.textContent).toMatch(/ : \d+/);
+    expect(container.querySelector('[data-testid="sources-tally"]')).toBeNull();
+    expect(container.textContent).not.toMatch(
+      /Officielle|Référencée|Non vérifiée|En attente d.examen|palier|Niveau de source/i
+    );
   });
 
   // @req REQ-154
@@ -508,10 +506,9 @@ describe("country fiche charter", () => {
   });
 
   // @req REQ-092
-  it("gives each source its own standing, and never the retired Tier scale", () => {
+  it("never prints the retired Tier scale", () => {
     const { container } = renderParchment(countryFixture());
 
-    expect(screen.getByText("Officielle")).toBeInTheDocument();
     expect(container.textContent).not.toMatch(/Tier\s*1/);
   });
 
@@ -600,7 +597,7 @@ describe("country fiche parchment — head and closing", () => {
  * fiche". Both spellings annotate the fiche for whoever builds it.
  *
  * A note survives only where it states something the title does not — the
- * reference year of a figure, a derivation, what the tier badge means.
+ * reference year of a figure, a derivation.
  */
 describe("country fiche — a note only where it adds something", () => {
   // A dotted lowerCamelCase path: "content.culture", "generalInfo.branches".
@@ -617,7 +614,6 @@ describe("country fiche — a note only where it adds something", () => {
       container.querySelectorAll(".afh-parchment-note")
     ).map((node) => node.textContent ?? "");
 
-    expect(notes.length).toBeGreaterThan(0);
     for (const note of notes) {
       expect(note).not.toMatch(FIELD_PATH);
       expect(note).not.toMatch(MODEL_RUBRIC);
@@ -635,9 +631,8 @@ describe("country fiche — a note only where it adds something", () => {
 
     expect(noteFor("Peuples du pays")).toBeNull();
     expect(noteFor("Histoire")).toBeNull();
-
-    // Sources keeps one: the tier badge on each row is not self-explanatory.
-    expect(noteFor("Sources")?.textContent).toMatch(/palier/i);
+    // The sources note explained a tier badge the reader no longer sees.
+    expect(noteFor("Sources")).toBeNull();
   });
 });
 

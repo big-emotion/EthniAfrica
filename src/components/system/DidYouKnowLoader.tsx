@@ -49,7 +49,7 @@ export interface DidYouKnowLoaderProps {
  * (REQ-104, REQ-113).
  *
  * A wait is dead time only if there is nothing in it. The bank the home band
- * draws from is already written, already sourced and already tiered, so the
+ * draws from is already written and already sourced, so the
  * loading surface shows a fact from it rather than an indicator that says
  * nothing but "wait". The reader who navigates a lot ends up having read the
  * bank, which is the outcome the atlas wants anyway.
@@ -177,10 +177,6 @@ export function DidYouKnowLoader({
                 ))}
               </ul>
             )}
-
-            <p className={cn("afh-dykl-tier", "afh-dykl-rise", nextStep())}>
-              {copy.sourceTier[fact.tier]}
-            </p>
           </div>
         </div>
       ) : null}
@@ -307,19 +303,6 @@ export function DidYouKnowLoader({
           letter-spacing: 0.07em;
           text-transform: uppercase;
           opacity: 0.72;
-        }
-        .afh-dykl-tier {
-          margin: 22px auto 0;
-          padding-top: 14px;
-          max-width: 34ch;
-          border-top: 1px solid var(--afh-border);
-          font-family: var(--font-mono, ui-monospace, monospace);
-          font-size: var(--afh-text-eyebrow);
-          letter-spacing: 0.06em;
-          text-transform: uppercase;
-          /* The tier again, this time on the waiting screen. A reader who
-             only ever sees the fact here still has to see what backs it. */
-          color: var(--afh-fg-muted);
         }
 
         /* The unveiling. "both" holds each line at zero opacity through its

@@ -10,7 +10,6 @@ const fr = {
     linguisticFamily: "Famille linguistique",
     namesReferencedHere: "Noms rattachés",
     missingData: "Non renseigné",
-    factTier: "Niveau de source",
     populationDisagreement: (declared: string, summed: string) =>
       `Le total déclaré est de ${declared} personnes, tandis que les populations indiquées par pays totalisent ${summed}. Ces chiffres ne concordent pas.`,
   },
