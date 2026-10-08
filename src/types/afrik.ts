@@ -7,7 +7,7 @@
  * - New sections can be added to TXT files without schema migration
  */
 
-import type { SourceTierState } from "@/types/sources";
+import type { SourceKind, SourceTierState } from "@/types/sources";
 import type { PersonId, PersonPeopleLink } from "@/types/persons";
 import type { TranslationLocale } from "@/lib/i18n/translationLocale";
 import type { SearchAnswer } from "@/lib/search/answer";
@@ -198,6 +198,8 @@ export interface FicheSource {
   url: string | null;
   tier: SourceTierState;
   notes?: string;
+  /** What kind of work it is. Few fiches declare it yet; the reader sees it when present. */
+  source_kind?: SourceKind;
 }
 
 /**

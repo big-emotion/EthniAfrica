@@ -22,6 +22,29 @@ export function SourceKindBadge({
   className?: string;
 }) {
   return (
+    <SourceTypeTag
+      kind={kind}
+      label={sourceKindLabel(kind, language)}
+      className={className}
+    />
+  );
+}
+
+/**
+ * The same square tag for a source vocabulary other than the corpus one —
+ * an article's sources say "book" or "press", not "academic".
+ */
+// @req REQ-161
+export function SourceTypeTag({
+  kind,
+  label,
+  className,
+}: {
+  kind: string;
+  label: string;
+  className?: string;
+}) {
+  return (
     <span
       data-source-kind={kind}
       className={cn(
@@ -29,7 +52,7 @@ export function SourceKindBadge({
         className
       )}
     >
-      {sourceKindLabel(kind, language)}
+      {label}
     </span>
   );
 }

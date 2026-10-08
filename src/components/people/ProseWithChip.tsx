@@ -123,6 +123,7 @@ function ProseWithNote({
             // folded onto "unverified", which would state a judgement no
             // editor made.
             tier: source.tier ?? "needs_review",
+            ...(source.sourceKind ? { sourceKind: source.sourceKind } : {}),
             bibliographyNumber: note.numberBySourceId[source.id],
           }))}
           anchorId={anchorId}

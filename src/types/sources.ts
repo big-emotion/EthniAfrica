@@ -110,6 +110,19 @@ export function isAuthoritativeSourceTier(tier: unknown): boolean {
 // Confidence weights live in `recompute_confidence()` (SQL) alone: a TS copy
 // was read by no production code and only had to be kept in sync by hand.
 
+/**
+ * A `source_kind` read from the database or a fiche, or null. A value outside
+ * the vocabulary reads as null rather than reaching a label lookup: a reader
+ * list prints nothing for a source with no recorded kind, and the label map
+ * would otherwise turn a typo into "Type non précisé".
+ */
+// @req REQ-161
+export function toSourceKindOrNull(value: unknown): SourceKind | null {
+  return typeof value === "string" && SOURCE_KINDS.includes(value as SourceKind)
+    ? (value as SourceKind)
+    : null;
+}
+
 // @req REQ-092
 export function isSourceTier(value: unknown): value is SourceTier {
   return (

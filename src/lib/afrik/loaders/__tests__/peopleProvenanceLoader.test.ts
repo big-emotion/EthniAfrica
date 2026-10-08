@@ -354,6 +354,36 @@ describe("loadPeopleProvenance", () => {
     expect(double.sources[0].tier).toBeNull();
   });
 
+  /**
+   * A declared kind reaches the table so the reader can be shown it; an
+   * undeclared one sends no column at all, because an upsert would otherwise
+   * erase a kind another loader recorded for the same title.
+   */
+  // @req REQ-161
+  it("stores a declared source kind and leaves an undeclared one untouched", async () => {
+    const double = createSupabaseDouble();
+
+    await loadPeopleProvenance(asClient(double), [
+      fiche({
+        content: {
+          ...fiche().content,
+          sources: [
+            {
+              title: "Ethnologue — Yoruba",
+              url: null,
+              tier: "referenced",
+              source_kind: "linguistic_reference",
+            },
+            { title: "Sans type", url: null, tier: "referenced" },
+          ],
+        },
+      }),
+    ]);
+
+    expect(double.sources[0].source_kind).toBe("linguistic_reference");
+    expect(double.sources[1]).not.toHaveProperty("source_kind");
+  });
+
   // @req REQ-092
   it("updates rather than duplicates when the corpus is loaded twice", async () => {
     const double = createSupabaseDouble();

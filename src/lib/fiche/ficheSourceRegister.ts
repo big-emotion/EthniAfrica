@@ -1,5 +1,9 @@
 import type { FicheSourceEntry } from "@/lib/afrik/ficheSourceLabel";
-import { isSourceTier, type SourceTier } from "@/types/sources";
+import {
+  isSourceTier,
+  type SourceKind,
+  type SourceTier,
+} from "@/types/sources";
 
 /**
  * A fiche's bibliography, numbered.
@@ -31,6 +35,7 @@ export interface CitedSource {
   url?: string | null;
   tier?: SourceTier | null;
   notes?: string | null;
+  sourceKind?: SourceKind | null;
 }
 
 export interface RegisteredSource {
@@ -40,6 +45,7 @@ export interface RegisteredSource {
   url: string | null;
   standing: SourceTier | "needs_review";
   notes?: string;
+  kind?: SourceKind;
   /** Present when the table knows this source, which is what a note cites. */
   sourceId?: string;
 }
@@ -82,6 +88,7 @@ export function buildFicheSourceRegister(
       url: entry.url,
       standing: entry.standing,
       ...(entry.notes === undefined ? {} : { notes: entry.notes }),
+      ...(entry.kind ? { kind: entry.kind } : {}),
     };
     entries.push(registered);
     byTitle.set(key, registered);
@@ -101,6 +108,7 @@ export function buildFicheSourceRegister(
       if (matched.notes === undefined && source.notes) {
         matched.notes = source.notes;
       }
+      if (!matched.kind && source.sourceKind) matched.kind = source.sourceKind;
       numberBySourceId[source.id] = matched.number;
       continue;
     }
@@ -111,6 +119,7 @@ export function buildFicheSourceRegister(
       url: source.url ?? null,
       standing: isSourceTier(source.tier) ? source.tier : "needs_review",
       ...(source.notes ? { notes: source.notes } : {}),
+      ...(source.sourceKind ? { kind: source.sourceKind } : {}),
       sourceId: source.id,
     };
     entries.push(added);

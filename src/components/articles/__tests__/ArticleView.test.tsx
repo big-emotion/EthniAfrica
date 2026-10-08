@@ -198,4 +198,41 @@ describe("ArticleView", () => {
       articleHref("fr", "other")
     );
   });
+
+  /**
+   * Doctrine §1.1: every source a reader sees says what kind of thing it is.
+   * An article's sources have their own vocabulary (book, press, oral…);
+   * a source that declares none prints no type rather than a guess.
+   */
+  // @req REQ-161
+  it("names each source's kind in the references, and nothing when undeclared", () => {
+    const record = videoArticle();
+    record.sources = [
+      {
+        id: "src-1",
+        title: "A published work",
+        tier: "referenced",
+        kind: "book",
+      },
+      { id: "src-2", title: "A broadcast", tier: "referenced", kind: "press" },
+      {
+        id: "src-3",
+        title: "An elder's account",
+        tier: "referenced",
+        kind: "oral",
+      },
+      { id: "src-4", title: "No kind given", tier: "referenced" },
+    ];
+    record.fr.sections[0].sourceRefs = ["src-1"];
+    renderView(record);
+
+    const references = screen
+      .getByRole("heading", { name: "Sources consultées" })
+      .closest("section") as HTMLElement;
+    const items = within(references).getAllByRole("listitem");
+    expect(items[0]).toHaveTextContent("Livre");
+    expect(items[1]).toHaveTextContent("Article de presse");
+    expect(items[2]).toHaveTextContent("Tradition orale");
+    expect(items[3].querySelector("[data-source-kind]")).toBeNull();
+  });
 });

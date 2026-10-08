@@ -8,6 +8,8 @@ import {
 import { getCountryRoute, getPeopleRoute } from "@/lib/routing";
 import { classifyFieldProvenance } from "@/lib/fieldProvenance";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
+import { toSourceKindOrNull } from "@/types/sources";
 import { FicheSection as Section } from "@/components/fiche/FicheSection";
 import { FicheNameStory } from "@/components/fiche/FicheNameStory";
 import { FicheStatCard } from "@/components/fiche/FicheStatCard";
@@ -417,9 +419,14 @@ export function FamilyParchment({
             {data.sources.map((source, index) => {
               const label = ficheSourceLabel(source);
               if (!label) return null;
+              const kind =
+                typeof source === "string"
+                  ? null
+                  : toSourceKindOrNull(source.source_kind);
               return (
                 <li key={`${label}-${index}`} className="afh-source-row">
                   <span>{renderSourceText(label)}</span>
+                  {kind && <SourceKindBadge kind={kind} language={language} />}
                 </li>
               );
             })}

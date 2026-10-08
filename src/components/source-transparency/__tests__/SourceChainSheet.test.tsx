@@ -399,6 +399,24 @@ describe("SourceChainSheet — no tier shown, no source hidden", () => {
     }
   );
 
+  // @req REQ-161
+  it("names each source's kind, and nothing for a source without one", () => {
+    setViewportWidth(430);
+    renderSheet({
+      sources: [
+        { ...baseSource, id: "k1", sourceKind: "archive" },
+        { ...baseSource, id: "k2" },
+      ],
+    });
+
+    expect(screen.getByTestId("source-item-k1").textContent).toContain(
+      "Archive"
+    );
+    expect(
+      screen.getByTestId("source-item-k2").querySelector("[data-source-kind]")
+    ).toBeNull();
+  });
+
   // @req REQ-092
   it("prints no tier word inside a contested assertion's positions", () => {
     setViewportWidth(430);

@@ -4,6 +4,7 @@ import swaggerJsdoc from "swagger-jsdoc";
 import { OPENAPI_V2_TAGS } from "@/lib/api/openapiV2Tags";
 import { PRODUCT_NAME } from "@/lib/brand";
 import { resolveSiteUrl } from "@/lib/siteUrl";
+import { SOURCE_KINDS } from "@/types/sources";
 
 const options: swaggerJsdoc.Options = {
   definition: {
@@ -3818,6 +3819,12 @@ const options: swaggerJsdoc.Options = {
               type: ["string", "null"],
               enum: ["official", "referenced", "unverified", null],
             },
+            sourceKind: {
+              type: ["string", "null"],
+              enum: [...SOURCE_KINDS, null],
+              description:
+                "What kind of work the source is (provenance, orthogonal to tier). Null or absent when none is recorded.",
+            },
           },
           required: ["id", "title", "url", "tier"],
         },
@@ -3936,6 +3943,12 @@ const options: swaggerJsdoc.Options = {
             tier: {
               type: ["string", "null"],
               enum: ["official", "referenced", "unverified", null],
+            },
+            sourceKind: {
+              type: ["string", "null"],
+              enum: [...SOURCE_KINDS, null],
+              description:
+                "What kind of work the source is (provenance, orthogonal to tier). Null or absent when none is recorded.",
             },
           },
           required: ["id", "title", "url", "tier"],

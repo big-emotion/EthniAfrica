@@ -157,6 +157,42 @@ describe("module-zero-batch helpers", () => {
       expect(result.get("PPL_A")?.[0].tier).toBe("referenced");
     });
 
+    // @req REQ-161
+    it("carries each source's kind, dropping a value outside the vocabulary", async () => {
+      buildSupabaseMock([
+        {
+          data: [{ entity_id: "PPL_A", source_ids: ["src-1", "src-2"] }],
+          error: null,
+        },
+        {
+          data: [
+            {
+              id: "src-1",
+              title: "Source 1",
+              url: null,
+              tier: "referenced",
+              source_kind: "academic",
+            },
+            {
+              id: "src-2",
+              title: "Source 2",
+              url: null,
+              tier: null,
+              source_kind: "blog",
+            },
+          ],
+          error: null,
+        },
+      ]);
+
+      const result = await getSourcesMap(["PPL_A"]);
+
+      expect(result.get("PPL_A")?.map((source) => source.sourceKind)).toEqual([
+        "academic",
+        null,
+      ]);
+    });
+
     it("skips assertions with empty/null source_ids", async () => {
       buildSupabaseMock([
         {

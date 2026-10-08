@@ -308,6 +308,9 @@ export async function writeFicheProvenance(
       url: source.url,
       tier: isSourceTier(source.standing) ? source.standing : null,
       notes: source.notes ?? null,
+      // Sent only when declared: the upsert would otherwise null out a kind
+      // another loader recorded for the same title.
+      ...(source.kind ? { source_kind: source.kind } : {}),
     });
     if ("error" in result) {
       report.errors.push(

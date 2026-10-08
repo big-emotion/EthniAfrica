@@ -287,6 +287,11 @@ describe("batched search naming data", () => {
       author: "A. Writer",
       page: "12",
       reviewedNarrative: true,
+      // REQ-161: the sheet names the kind of each source.
+      sourceKind: "oral_tradition",
+    });
+    expect(fang?.records[0].evidence[0].sources[1]).toMatchObject({
+      sourceKind: "archive",
     });
     const country = result.get(searchNamingKey("country", "NGA"));
     expect(country?.evidence.map(({ assertion }) => assertion.id)).toEqual([

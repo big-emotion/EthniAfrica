@@ -1,3 +1,4 @@
+import { SourceTypeTag } from "@/components/sources/SourceKindBadge";
 import { ActionLink } from "@/components/ui/ActionLink";
 import type { ArticleSummary } from "@/lib/articles/corpus";
 import type { Article } from "@/lib/articles/schema";
@@ -125,6 +126,15 @@ export function ArticleView({ language, article, related }: ArticleViewProps) {
                   source.title
                 )}
                 {source.locator ? `, ${source.locator}` : null}
+                {source.kind ? (
+                  <>
+                    {" "}
+                    <SourceTypeTag
+                      kind={source.kind}
+                      label={copy.sourceKinds[source.kind]}
+                    />
+                  </>
+                ) : null}
                 {source.notes ? <p>{source.notes}</p> : null}
               </li>
             ))}

@@ -58,6 +58,16 @@ const fr = {
     citedBy: "Sources de cette partie",
     sourceMarker: (position: number) => `Source ${position}`,
     referencesTitle: "Sources consultées",
+    /** The reader-facing name of each article source kind (doctrine §1.1). */
+    sourceKinds: {
+      book: "Livre",
+      article: "Article",
+      press: "Article de presse",
+      oral: "Tradition orale",
+      archive: "Archive",
+      web: "Page web",
+      other: "Autre source",
+    },
     relatedTitle: "À lire aussi",
     contribute: "Corriger ou compléter cet article",
     backToArticles: "Tous les articles",

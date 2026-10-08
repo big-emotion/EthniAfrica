@@ -1,4 +1,5 @@
 import { FicheTile } from "@/components/fiche/FicheTile";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { SourceVerifyBadge } from "@/components/ui/source-verify-badge";
 import {
   readerFacingNote,
@@ -21,7 +22,8 @@ const PREVIEW_TITLES = 3;
 /**
  * The bibliography every record ends on, folded into a tile when long.
  *
- * It prints the work — title, link, note — and never the source's tier
+ * It prints the work — title, link, its kind when one is recorded, note — and
+ * never the source's tier
  * (doctrine §1.1): the standing is editorial bookkeeping that stays in the
  * data, and printing it beside each title asked the reader to rank the
  * sources a people's history rests on by a scale the atlas built for itself.
@@ -81,6 +83,9 @@ export function FicheSources({
               </a>
             ) : (
               <span>{source.label}</span>
+            )}
+            {source.kind && (
+              <SourceKindBadge kind={source.kind} language={language} />
             )}
             {/* What the editor wrote about the source, less whatever the
                 pipeline wrote there about itself. */}
