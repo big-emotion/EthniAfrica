@@ -23,6 +23,56 @@ a date or a distinction necessary to understand the subject.
 The research notes record how the project was made. Published prose explains the
 subject, what supports it and what remains unsettled. Keep those registers apart.
 
+## Plain language is the default for every surface
+
+Operator decision, 2026-10-08. Use the DITP's plain-language methods as the main
+reference. See [references and automated checks](plain-language-checks.md).
+Selected FALC recommendations help with familiar words and readable presentation;
+this project does not claim FALC certification or ISO conformity. FALC means
+“facile à lire et à comprendre” and includes participation by its intended readers.
+A checklist alone does not establish that a text is FALC.
+
+This charter applies to site copy, public database fields, search answers, buttons,
+errors, accessibility labels, game explanations, captions, cards, scripts and
+subtitles. Its audience does not need scientific training. A specialist reader
+is no reason to make a sentence harder.
+
+- Explain one point at a time, using familiar words and concrete verbs. Prefer
+  complete sentences connected naturally. Read paragraphs aloud before delivery.
+- Avoid strings of noun fragments, artificial slogans and dramatic contrasts.
+  “Un nom. Des peuples. Une histoire.” is not the default voice. Short labels,
+  headings, proper names and source references need not become full sentences.
+- Use “les sources”, “les fiches” or “les textes étudiés” according to what is
+  actually meant, instead of the internal term “corpus”. Never replace words
+  mechanically without checking their meaning.
+- Explain a necessary term on first use: “le nom qu'ils se donnent” before
+  “autonyme”, “un nom donné par leurs voisins” before “exonyme”. Keep African
+  names, spelling, letters such as ɓ and ɗ, and distinctions between languages.
+- State what each explanation proposes and who reports it. Use “viendrait de”,
+  “selon l'explication rapportée par…” or “cet auteur propose…” for an origin
+  hypothesis. Attribution can sit naturally at the end of the sentence.
+- Name a real uncertainty: “Le document ne précise pas la date.” Avoid the
+  repeated formulas “nous ne tranchons pas”, “fait non établi” and “nous n'en
+  retenons aucune”. Do not invent agreement, disagreement or certainty to avoid
+  those phrases. A documented usage and a proposed origin have different status.
+- Keep actual quotations and bibliographic titles exact, clearly marked and
+  attributed. Explain difficult source language in our own words beside it.
+  Author-written source notes are public prose and follow this charter.
+- Shorten a sentence when it mixes several ideas; length is a review cue, not
+  a target score. Do not split a clear sentence into meaningless fragments to
+  satisfy a number. No readability score proves that a reader understands.
+
+### Three tones, one language standard
+
+| Use                   | Tone                      | Pattern                                                                  |
+| --------------------- | ------------------------- | ------------------------------------------------------------------------ |
+| Site and fiches       | Explanatory, calm         | Answer the question, then explain the useful detail and its source.      |
+| Social discussion     | Conversational, welcoming | Give a sourced explanation and ask a concrete, optional question.        |
+| Stories and narration | Narrative, concrete       | Connect steps in a story without inventing scenes, voices or chronology. |
+
+The [Peul examples](examples/peul-tones.md) apply all three tones to the same
+record. Tone changes neither the source nor the status of a hypothesis.
+
 ## The three fields published verbatim
 
 | Field             | Rendered by                                              |
@@ -88,13 +138,13 @@ the workshop has not filled it yet.**
 
 | Curator register                                                                                                                                                                    | Reader register                                                                                                                    |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Fiche générée depuis la file d'attente des candidats : le champ n'a pas été renseigné faute de recherche, et attend le protocole de recherche par fiche.                            | Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour.                            |
-| Le système « clan_name » ne détermine pas à lui seul le mode de transmission : …                                                                                                    | Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom.                |
+| Fiche générée depuis la file d'attente des candidats : le champ n'a pas été renseigné faute de recherche, et attend le protocole de recherche par fiche.                            | Nous n'avons pas encore étudié ce point pour ce nom.                                                                               |
+| Le système « clan_name » ne détermine pas à lui seul le mode de transmission : …                                                                                                    | Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne savons pas encore comment il se transmet dans ce cas. |
 | Corpus AFRIK — PPL_DIOULA, organisation clanique                                                                                                                                    | EthniAfrica — fiche du peuple Dioula, organisation clanique                                                                        |
 | Passage source : dataset/…/PPL_DIOULA.json#content.organization.clanOrganization. Le tier hérité n'est pas résolu ; la revue claim-level reste requise.                             | Reprise du chapitre « Organisation clanique » de la fiche du peuple Dioula.                                                        |
-| Aucun porteur décédé n'a été rattaché au jamu par les sources de cette passe.                                                                                                       | Nous ne présentons pas encore de porteur de ce jamu : les sources consultées n'en rattachent aucun que nous puissions nommer.      |
-| Les recherches exactes n'ont pas fourni, dans cette passe, un porteur décédé rattaché au patronyme.                                                                                 | Nous ne présentons pas encore de porteur de ce patronyme : les recherches exactes n'en ont fourni aucun que nous puissions nommer. |
-| Personne vivante, donc exclue par le protocole.                                                                                                                                     | Nous ne présentons pas encore de porteur de ce nom : les sources consultées n'en rattachent aucun que nous puissions nommer.       |
+| Aucun porteur décédé n'a été rattaché au jamu par les sources de cette passe.                                                                                                       | Nous n'avons pas encore d'exemple à présenter pour ce jamu.                                                                        |
+| Les recherches exactes n'ont pas fourni, dans cette passe, un porteur décédé rattaché au patronyme.                                                                                 | Nous n'avons pas encore d'exemple à présenter pour ce nom.                                                                         |
+| Personne vivante, donc exclue par le protocole.                                                                                                                                     | Nous n'avons pas encore d'exemple à présenter pour ce nom.                                                                         |
 | Tier resolved from the domain ruling for jstor.org.                                                                                                                                 | _(no note — the source's type says it)_                                                                                            |
 | No URL and no recognisable citation shape; the tier awaits editorial review.                                                                                                        | _(no note — the tier is internal; the source's type says what it is)_                                                              |
 | Tier resolved from the domain ruling for unesco.org (sous-domaine ich.unesco.org). Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité. | Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité.                                   |
@@ -115,18 +165,18 @@ be named cannot support that broader claim.
 
 ## The gate
 
-The corpus-wide `reader-facing-register` gate (`checkEditorialRules.ts`) was
-retired on 2026-10-08, with its ratchet on the extended narrative fields. The
-doctrine above still holds; what remains enforced in code is narrower:
-`scripts/validateAfrikData.ts` refuses the internal register in the search
-answers it validates. The banned vocabulary lives in two exported constants in
-`src/lib/editorial/readerRegister.ts` — `INTERNAL_REGISTER_PATTERNS` (French)
-and `INTERNAL_REGISTER_PATTERNS_EN` (English) — so this document and the code
-cannot drift apart.
+The former `checkEditorialRules.ts` gate was retired on 2026-10-08. The new
+`npm run check:editorial` uses local Vale rules to check public prose across
+fiches, interface code and publication records. It supplements the existing
+internal-register checks in `scripts/validateAfrikData.ts`.
 
-`_`-prefixed files under the corpus — `_candidates-by-country.json`,
-`_coverage-findings.json`, `_manifest.json` — are the curator's own worksheets.
-Nothing loads them and no surface renders them.
+Run `npm run check:publication -- <final-text-files>` before delivering a new or
+rewritten publication. It checks the actual final files without legacy allowances.
+The [operating guide](plain-language-checks.md) lists coverage, exclusions and
+remaining manual checks. A passing command is not approval of the meaning.
+
+`_`-prefixed files and metadata remain internal research material. Do not move
+public prose there merely to bypass a check.
 
 ## Working method
 
@@ -311,8 +361,8 @@ English counterparts; documentation itself remains in English.
 | One disputed origin                         | “According to author X, this name comes from Y.”                    | « Une explication relie ce nom à [Y]. Son origine reste discutée. »                                                 | “One explanation links this name to [Y]. Its origin remains disputed.”                                                     | Author, work, date and locator; other documented explanations if available                                      |
 | Malinké example: an external interpretation | « Selon le livre de Delafosse, les Malinkés sont… »                 | « Une explication du nom « Malinké » propose [interprétation vérifiée]. Elle ne suffit pas à établir son origine. » | “One explanation of the name ‘Malinké’ proposes [verified interpretation]. It does not settle its origin.”                 | The exact consulted passage; do not attribute the theory to a people without evidence                           |
 | A book's year mistaken for an event date    | “A book from 1912 describes this usage, so people used it in 1912.” | « Cet usage est rapporté dans [lieu documenté]. Nous ne savons pas quand il a commencé. »                           | “This usage is reported in [documented place]. We do not know when it began.”                                              | Publication year stays in the reference; use only if the source supports that locality and report               |
-| A transmitted account                       | “This oral story has no scientific proof, so we cannot use it.”     | « Ce récit transmis à [lieu] relie le nom à [explication]. Nous n'avons pas établi la date de cet épisode. »        | “This account transmitted in [place] links the name to [explanation]. We have not established when that episode happened.” | Carrier or agreed description, collection context and permission; specify indirect transmission when applicable |
-| Two explanations                            | “The accepted origin is A.”                                         | « Deux explications sont documentées : [A] et [B]. Les sources consultées ne permettent pas de trancher. »          | “Two explanations are documented: [A] and [B]. The sources consulted do not settle the question.”                          | Separate references for A and B; do not invent equal support or consensus                                       |
+| A transmitted account                       | “This oral story has no scientific proof, so we cannot use it.”     | « Ce récit transmis à [lieu] relie le nom à [explication]. Le récit ne précise pas la date de cet épisode. »        | “This account transmitted in [place] links the name to [explanation]. We have not established when that episode happened.” | Carrier or agreed description, collection context and permission; specify indirect transmission when applicable |
+| Two explanations                            | “The accepted origin is A.”                                         | « Deux explications sont proposées : [A], selon [source A], et [B], selon [source B]. »                             | “Two explanations are documented: [A] and [B]. The sources consulted do not settle the question.”                          | Separate references for A and B; do not invent equal support or consensus                                       |
 | Invitation to research                      | “Research is needed.”                                               | « Quel récit avez-vous entendu autour de ce nom ? Vous pouvez nous en indiquer la provenance. »                     | “What account have you heard about this name? You can tell us where it comes from.”                                        | Link to the project's contribution route when available; no demand to disclose private family details           |
 
 ### Review before handing over copy
@@ -363,8 +413,7 @@ In those three fields you must never write:
 Write instead what the project knows or does not know, in French, addressed to a
 reader who has never seen the repository:
 
-- a gap: « Nous ne documentons pas encore ce point pour ce nom : aucune source
-  dédiée n'a été consultée à ce jour. »
+- a gap: « Nous n'avons pas encore étudié ce point pour ce nom. »
 - a source drawn from another fiche: title « EthniAfrica — fiche du peuple
   Dioula, organisation clanique », notes « Reprise du chapitre « Organisation
   clanique » de la fiche du peuple Dioula. »
@@ -372,8 +421,9 @@ reader who has never seen the repository:
 Keep your working notes — they are valuable — in `_meta.directives` or in the
 `_`-prefixed worksheets, which no surface renders.
 
-Before you finish, reread every `gaps[].reason`, `sources[].title` and
-`sources[].notes` you wrote against the vocabulary above: no gate checks them any
-more.
+Before finishing, review every public field against this charter and run the
+plain-language checks. Keep original source titles exact. Use the existing BMAD
+prose review with this file as `style_guide`, and structure review with
+`reader_type=humans` when restructuring a longer piece.
 
 ---

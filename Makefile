@@ -1,4 +1,4 @@
-.PHONY: unit-tests integration-tests api-tests all-tests test format format-check lint type-check check e2e e2e-ui e2e-install
+.PHONY: unit-tests integration-tests api-tests all-tests test format format-check lint type-check check e2e e2e-ui e2e-install editorial-check
 
 # Test commands as specified in TDD plan
 unit-tests:
@@ -43,7 +43,10 @@ format-check:
 # Run all checks (lint + type-check + format + tests).
 # IMPORTANT: `check` must stay under 5 min wall-clock per NFR (maintainability).
 # E2E is intentionally NOT part of `check` — see `make e2e` (ASR-12).
-check: lint type-check format-check all-tests
+editorial-check:
+	npm run check:editorial
+
+check: lint type-check format-check editorial-check all-tests
 	@echo "✅ All checks passed!"
 
 # Playwright E2E suite (separate from `check` to protect developer feedback loop).

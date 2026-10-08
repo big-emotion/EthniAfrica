@@ -45,6 +45,7 @@ import {
 import { classificationLabels } from "@/lib/translations";
 import { AFRIK_RECETTE_SUPABASE_URL } from "../lib/afrikSyncTarget";
 import { migrateAfrikToDatabase } from "../migrateAfrikToDatabase";
+import { assertCorpusLanguage } from "../ci/checkPlainLanguage";
 import type { LanguageFamily, People } from "@/types/afrik";
 import type { LanguageRecord } from "@/lib/afrik/loaders/languageCsvLoader";
 import type { LanguageLoadReport } from "@/lib/afrik/loaders/languageProvenanceLoader";
@@ -64,6 +65,7 @@ vi.mock("@/lib/afrik/loaders/personJsonLoader");
 vi.mock("@/lib/afrik/loaders/relationJsonLoader");
 vi.mock("@/lib/afrik/loaders/migrationJsonLoader");
 vi.mock("@/lib/supabase/admin");
+vi.mock("../ci/checkPlainLanguage", () => ({ assertCorpusLanguage: vi.fn() }));
 // Mocked at a real seam rather than faked: `writeFicheProvenance` owns the
 // sources → fiche_revisions → assertions fabric and carries its own tests for
 // the idempotence rules. What belongs to this file is the decision of *when* a
@@ -233,6 +235,7 @@ function useSupabaseDouble(options: SupabaseDoubleOptions = {}) {
 describe("migrateAfrikToDatabase", () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.mocked(assertCorpusLanguage).mockImplementation(() => {});
     vi.mocked(loadAllLanguageFamilies).mockResolvedValue([familyFixture]);
     vi.mocked(loadAllLanguages).mockReturnValue(
       (peopleFixture.content.languages?.isoCodes ?? []).map((id) => ({
@@ -314,6 +317,22 @@ describe("migrateAfrikToDatabase", () => {
       alliances: 0,
       errors: [],
     });
+  });
+
+  // @req REQ-178
+  it("refuses a failed editorial check before constructing the database client", async () => {
+    vi.mocked(assertCorpusLanguage).mockImplementation(() => {
+      throw new Error("Plain-language check refused the import");
+    });
+    await expect(
+      migrateAfrikToDatabase({
+        dryRun: false,
+        target: recetteTarget,
+        writeErrorReport: false,
+      })
+    ).rejects.toThrow("Plain-language check refused");
+    expect(createAdminClient).not.toHaveBeenCalled();
+    expect(loadAllPeoples).not.toHaveBeenCalled();
   });
 
   // @req REQ-032

@@ -12,6 +12,21 @@ result page.** It is the one statement of what the site is for: a reader searche
 the result page shows its origin, its different names and the history of each — who named whom,
 when, and why.
 
+## Plain-language editorial requirement
+
+Read `docs/editorial/reader-facing-register.md` before writing any public text,
+including UI labels, database prose and social assets. That is the shared DITP-based
+charter for all agents and skills. Write connected, everyday French; preserve
+hypotheses, attribution, quotations and African spellings. A specialist audience
+never overrides the plain-language requirement.
+
+Before delivery, review the final text for meaning and natural sentences, then run
+`npm run check:editorial`. For new or rewritten final publication files, also run
+`npm run check:publication -- <files>`; rerun after edits. Supply the charter as
+`style_guide` to the existing BMAD prose review and choose `reader_type=humans`
+for structure review. The operational scope and remaining manual checks are in
+`docs/editorial/plain-language-checks.md`. Never report a skipped check as passed.
+
 ## Commands
 
 ```bash

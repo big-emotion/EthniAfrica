@@ -55,8 +55,11 @@ describe("PPL_FULA — where the names come from", () => {
   it("says the sense of Fulbe is not settled and crowns no reading", () => {
     const origin = readerNaming().origin ?? "";
 
-    expect(origin).toMatch(/n'a pas de sens établi/);
-    expect(origin).toMatch(/Aucune de ces lectures n'est établie/);
+    expect(origin).toMatch(/plusieurs explications/);
+    expect(origin).toMatch(/hypothèses/);
+    expect(origin).not.toMatch(
+      /n'a pas de sens établi|aucune de ces lectures n'est établie|nous n'en retenons aucune/i
+    );
     expect(origin).not.toMatch(/vient du verbe|signifie « /);
   });
 

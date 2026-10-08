@@ -1,0 +1,12 @@
+extends: existence
+message: "Explain the subject in everyday French instead of '%s'. See docs/editorial/reader-facing-register.md."
+level: error
+scope: text
+ignorecase: true
+tokens:
+  - "corpus"
+  - "nous ne tranchons pas"
+  - "nous n[’']en retenons aucune"
+  - "(?:fait|sens|origine) (?:n[’']est pas|non) [ée]tabli(?:e)?"
+  - "n[’']a pas de sens [ée]tabli"
+  - "aucune de ces lectures n[’']est [ée]tablie"

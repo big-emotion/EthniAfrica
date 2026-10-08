@@ -64,8 +64,10 @@ Settled by the operator on 2026-10-08
   name a people gives itself does. When the two differ, the page leads,
   visibly, to the self-name: « Vous avez cherché Peul. Ce peuple se nomme
   lui-même Fulɓe. »
-- **Every sentence about a name starts with the name.** « Le lingala est… »,
-  « Le nom lingala est fixé… », never a subjectless fragment.
+- **Introduce the name before explaining it.** « Le lingala est… ». Continue
+  with natural pronouns and connected sentences; do not repeat the name at the
+  start of every sentence or use subjectless fragments. Follow the shared
+  [plain-language charter](reader-facing-register.md).
 - **"Meanwhile, elsewhere".** Outside events are time anchors for a reader
   schooled in French or Belgian history, never the subject: the African name
   is always the subject of the sentence.
