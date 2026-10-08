@@ -618,7 +618,6 @@ phase while an exit gate from an earlier phase is open.
 - `make check`
 - `npm run lint:req`
 - `npm run check:dead`
-- `npm run check:translation-parity -- --base origin/recette`
 - the dedicated search-feed E2E and parity projects
 - documentation index/orphan check
 - secret scan and pre-commit checks
@@ -672,8 +671,8 @@ The corrected initial plan is fully implemented only when:
   layout breakpoint;
 - all source and contribution actions open with the correct context;
 - every widened companion states its actual relationship;
-- French and English copy contracts are complete while publication remains
-  governed by `SITE_LOCALE_MODE`;
+- French copy contracts are complete (English and `SITE_LOCALE_MODE` were
+  removed in #1575);
 - all forty approved reference comparisons pass;
 - the original route's relation mode has no regression;
 - the old search-result implementation is removed rather than left dormant;

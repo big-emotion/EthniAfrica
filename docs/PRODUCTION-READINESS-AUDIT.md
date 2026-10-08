@@ -3,6 +3,7 @@
 **Audit date:** 2026-10-03 (second run of the day, after #1494)<br>
 **Audited checkout:** `origin/recette` at `373142628` (`chore(audit): close the 2026-10-03 audit's code-level findings (#1494)`); five Releases shipped since 2026-09-22, v4.18.0 → v4.22.0<br>
 **Overall score:** **7.2 / 10** (was 7.1 earlier today, 7.6 on 2026-09-22, 6.4 on 2026-09-21)<br>
+**Since this run:** #1571 removed the editorial-rules gate (`checkEditorialRules.ts`, `editorial-rules.yml`), `check:afrik-loader` and `check:glossary`; #1575 made the site French-only and removed `SITE_LOCALE_MODE` and the English banks; the knip P1 functions below were deleted on 2026-10-08. Rows about them are annotated, not re-measured.<br>
 **Release verdict:** **CONDITIONAL GO.** The code, the gates and the release path are as green as the earlier run found them, and #1494 closed its code-level findings. Three operational blockers stand: no scheduled backup of either self-hosted database, recette still serving two peoples git deleted (its data sync red five runs in a row), and a client-IP trust setting never checked against the live proxy. The rollback project's leaked key is recorded as disabled since 2026-09-01, which lowers it from a P1 to a note.
 
 ## 1. Scope and method
@@ -30,11 +31,11 @@ Full audit (no `--quick`, no `--no-build`), read-only, run in an isolated worktr
 | `check:action-pins` / shell | PASS    | Every third-party `uses:` SHA-pinned; every `run:` block parses                                                            |
 | RLS coverage                | PASS    | `check:rls-coverage` and an independent replay of 97 migrations: 47 of 47 surviving tables behind RLS                      |
 | AFRIK validator             | PASS    | 57/57 checks, 0 errors; FR28, FR28-strict, FR28-declared all 0 warnings                                                    |
-| Editorial rules             | PASS    | 0 errors, 95 warnings, all `chronology-symmetry` (`UNDATED_POLITY_CEILING` = 95)                                           |
+| Editorial rules             | PASS    | 0 errors, 95 warnings, all `chronology-symmetry` (`UNDATED_POLITY_CEILING` = 95) (gate removed in #1571)                   |
 | Source Tier coverage        | PASS    | `needs_review` 913/913 ratchet, exact                                                                                      |
-| `check:afrik-loader`        | PASS    | Patronyme corpus loads cleanly                                                                                             |
-| `check:glossary`            | PASS    | 0 divergences, 85 terms                                                                                                    |
-| Per-PR gates                | PASS    | Last runs of CI, data-integrity, editorial-rules, a11y, Lighthouse, E2E, openapi-diff all `success`                        |
+| `check:afrik-loader`        | PASS    | Patronyme corpus loads cleanly (script removed in #1571)                                                                   |
+| `check:glossary`            | PASS    | 0 divergences, 85 terms (script removed in #1571)                                                                          |
+| Per-PR gates                | PASS    | Last runs of CI, data-integrity, editorial-rules (since removed), a11y, Lighthouse, E2E, openapi-diff all `success`        |
 | Production deploy           | PASS    | v4.22.0 run 36827759480: `migrate` applied 094, 095 → applied 95 · pending 0 · orphaned 0 · drifted 0                      |
 | Recette migrations          | PASS    | `migrate-recette.yml` run 37115838551: applied 97 · pending 0 · orphaned 0 · drifted 0                                     |
 | `confidence-recompute`      | PASS    | FAIL → PASS: 6 of 6 scheduled runs green since the fix reached `main`                                                      |
@@ -216,7 +217,7 @@ Ten domains, equal weight: **72 / 100 = 7.2 / 10**. No P0. Domain 8 has two fail
 
 - **P1, new: recette serves `PPL_BUSANSI` and `PPL_BUSSA`, deleted from git by #1481 (the Bissa merge).** `verifyCorpusInDatabase.ts --target=recette` reports `afrik_peoples` 772 vs 770, `afrik_people_languages` 1,175 vs 1,173, and `afrik_people_countries` 1,460 vs 1,454. Every other table matches. The recette sync never prunes (`recette-data-sync.yml:113`), so only an operator `--prune` run removes them (`docs/runbooks/afrik-data-sync.md`). Production parity is `N/A` this run.
 - **Unchanged, improving:** strict-model drift is held by `STRICT_MODEL_DRIFT_CEILINGS` (`validateAfrikData.ts:4781-4803`): peuple 7,006, famille 104, pays 9. 308 of 770 peoples and 4 families (`FLG_BERBERE`, `FLG_MANDE`, `FLG_OMOTIQUE`, `FLG_SONGHAY`) lack `classificationStatus`.
-- **P2, new:** `dossiers/`, `noms/` and `relations/` are not in `MODEL_BY_DIRECTORY` (`checkEditorialRules.ts:575-581`), so the 13 dossier `claim` fields sit outside the register rule. They are clean today. A `claim` hit in patronymes is a warning, not an error (`:762`).
+- **P2, new:** `dossiers/`, `noms/` and `relations/` are not in `MODEL_BY_DIRECTORY` (`checkEditorialRules.ts:575-581`, removed in #1571), so the 13 dossier `claim` fields sat outside the register rule. They are clean today. A `claim` hit in patronymes is a warning, not an error (`:762`).
 - **P2, new:** two stale comments in `validateAfrikData.ts:5264-5284` describe FR27-references as advisory and FR28-declared as a hard error. The code does neither.
 - **Debt:** `needs_review` 913 (ratchet 913). The source catalogue reports 4,271 citations from uncatalogued domains and 1,686 without a URL, as warnings.
 
@@ -252,7 +253,7 @@ Ten domains, equal weight: **72 / 100 = 7.2 / 10**. No P0. Domain 8 has two fail
 
 `check:dead` passes at every ceiling. `knip --production` finds 11 items: 3 files, 7 exports, 1 type, 0 dependencies. No surviving V1 import. 0 P0.
 
-**P1**
+**P1** — all four resolved: the functions and the English banks have since been deleted.
 
 - `src/lib/home/corpusCounts.ts:57` — `getCorpusCounts`, reached only by tests.
 - `src/lib/home/didYouKnowFacts.ts:1871` — `pickDidYouKnowFacts`, reached only by its test.
@@ -280,20 +281,20 @@ Ten domains, equal weight: **72 / 100 = 7.2 / 10**. No P0. Domain 8 has two fail
 
 ## 8. Security posture
 
-| Control                | Verdict | Evidence                                                                                                       |
-| ---------------------- | :-----: | -------------------------------------------------------------------------------------------------------------- |
-| CSP / headers          |  PASS   | Per-request nonce (`src/proxy.ts:611`), HSTS, nosniff, strict referrer, `frame-ancestors 'self'`               |
-| Locale fail-closed     |  PASS   | `locale.ts:38-40` returns `fr-only` on missing/invalid `SITE_LOCALE_MODE`                                      |
-| API keys               |  PASS   | PBKDF2-SHA256 600,000 iterations, 16-byte salt, constant-time compare; invalid key → 401                       |
-| Rate limiting          |  PASS   | Upstash per tier, fail-closed without credentials in production, no in-memory fallback                         |
-| Client-IP trust        |  WARN   | Single `clientIp()` function; not checked against the live proxy                                               |
-| CORS                   |  PASS   | Single configured origin, no `*` fallback, no credentials                                                      |
-| Service-role isolation |  PASS   | No `admin` import outside `api/`/`admin/`; `createBrowserClient` only in `auth-client.ts`, auth calls only     |
-| Sentry                 |  PASS   | `assertEuDsn` in all three configs, `sendDefaultPii: false`, PII scrubber on events and transactions           |
-| RLS                    |  PASS   | 47/47 net of drops; five deny-all tables, each with its comment                                                |
-| Secrets                |  WARN   | Rollback-project key in history, recorded dead (P2); CI scan `--no-git`; Postgres password rotation unverified |
-| Supply chain           |  WARN   | Actions SHA-pinned; `gitleaks` required; 8 high advisories, all dev-time; Supabase CLI and Ferry source float  |
-| Branch protection      |  PASS   | Nine required contexts on both branches; `main` strict, `recette` not; zero approvals                          |
+| Control                | Verdict | Evidence                                                                                                                                             |
+| ---------------------- | :-----: | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CSP / headers          |  PASS   | Per-request nonce (`src/proxy.ts:611`), HSTS, nosniff, strict referrer, `frame-ancestors 'self'`                                                     |
+| Locale fail-closed     |  PASS   | `locale.ts:38-40` returns `fr-only` on missing/invalid `SITE_LOCALE_MODE` — superseded: `SITE_LOCALE_MODE` removed in #1575, the site is French-only |
+| API keys               |  PASS   | PBKDF2-SHA256 600,000 iterations, 16-byte salt, constant-time compare; invalid key → 401                                                             |
+| Rate limiting          |  PASS   | Upstash per tier, fail-closed without credentials in production, no in-memory fallback                                                               |
+| Client-IP trust        |  WARN   | Single `clientIp()` function; not checked against the live proxy                                                                                     |
+| CORS                   |  PASS   | Single configured origin, no `*` fallback, no credentials                                                                                            |
+| Service-role isolation |  PASS   | No `admin` import outside `api/`/`admin/`; `createBrowserClient` only in `auth-client.ts`, auth calls only                                           |
+| Sentry                 |  PASS   | `assertEuDsn` in all three configs, `sendDefaultPii: false`, PII scrubber on events and transactions                                                 |
+| RLS                    |  PASS   | 47/47 net of drops; five deny-all tables, each with its comment                                                                                      |
+| Secrets                |  WARN   | Rollback-project key in history, recorded dead (P2); CI scan `--no-git`; Postgres password rotation unverified                                       |
+| Supply chain           |  WARN   | Actions SHA-pinned; `gitleaks` required; 8 high advisories, all dev-time; Supabase CLI and Ferry source float                                        |
+| Branch protection      |  PASS   | Nine required contexts on both branches; `main` strict, `recette` not; zero approvals                                                                |
 
 **RLS coverage, net of drops** (97 migrations; no table, policy or RLS change since 093):
 
@@ -337,13 +338,13 @@ No `RLS = No` row; no RLS-enabled table without either a policy or a deny-all co
 
 ## 9. Performance and accessibility posture
 
-| Control                    | Verdict | Evidence                                                                                                 |
-| -------------------------- | :-----: | -------------------------------------------------------------------------------------------------------- |
-| Lighthouse PR gate         |  PASS   | Required context "Lighthouse gate", last run green; `.lighthouserc.gate.js` a11y/BP errors               |
-| Lighthouse nightly budgets |  WARN   | a11y = 1 and BP ≥ 0.95 enforced; performance enforced at 0.73, the 0.85 target only warns                |
-| axe-core                   |  PASS   | Required context "axe-core (Storybook)"; `a11y.yml` 6 of 6 green, no `continue-on-error`                 |
-| E2E                        |  PASS   | Required "Playwright smoke (fr, 430px)" green; full `e2e.yml` green on its last six runs, not required   |
-| Locale posture             |  PASS   | Lighthouse measures `/fr` in full and an `/en` subset under `bilingual-fr-default`; production `fr-only` |
+| Control                    | Verdict | Evidence                                                                                                                                     |
+| -------------------------- | :-----: | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Lighthouse PR gate         |  PASS   | Required context "Lighthouse gate", last run green; `.lighthouserc.gate.js` a11y/BP errors                                                   |
+| Lighthouse nightly budgets |  WARN   | a11y = 1 and BP ≥ 0.95 enforced; performance enforced at 0.73, the 0.85 target only warns                                                    |
+| axe-core                   |  PASS   | Required context "axe-core (Storybook)"; `a11y.yml` 6 of 6 green, no `continue-on-error`                                                     |
+| E2E                        |  PASS   | Required "Playwright smoke (fr, 430px)" green; full `e2e.yml` green on its last six runs, not required                                       |
+| Locale posture             |  PASS   | Lighthouse measures `/fr` in full and an `/en` subset under `bilingual-fr-default`; production `fr-only` — superseded by #1575 (French-only) |
 
 ## 10. AFRIK data integrity and Source Tier compliance
 
@@ -354,7 +355,7 @@ No `RLS = No` row; no RLS-enabled table without either a policy or a deny-all co
 |   3 | Referential integrity   |  PASS   |     –     | Folder/parent, ID/filename and ISO format all pass (0 mismatches over 770 peoples). 16 codes (21 references) have no `pays` file, mostly diaspora; GLP, MYT, REU are territory codes, an editorial call  |
 |   4 | Source Tier compliance  |  PASS   |     –     | 7,458 entries: official 1,759 · referenced 2,206 · unverified 2,580 · `needs_review` 913 · missing 0 · other 0. 0 P0. 497 `ai_generated`. 6 direct Wikipedia URLs (reported). CIA Factbook 132 = ceiling |
 |   5 | Database vs source JSON |  FAIL   | PASS→FAIL | Recette: peoples 772 vs 770, people↔language 1,175 vs 1,173, people↔country 1,460 vs 1,454 (`PPL_BUSANSI`, `PPL_BUSSA`); other tables equal. Production N/A                                              |
-|   6 | CI enforcement          |  PASS   |     –     | `data-integrity.yml` and `editorial-rules.yml` on every PR into `main`/`recette`, no `continue-on-error`, last PR runs green, `validate` required                                                        |
+|   6 | CI enforcement          |  PASS   |     –     | `data-integrity.yml` and `editorial-rules.yml` (since removed in #1571) on every PR into `main`/`recette`, no `continue-on-error`, last PR runs green, `validate` required                               |
 |   7 | Reader-facing register  |  PASS   |     –     | Gate 0 errors; full sweep of `gaps[].reason`, `sources[].title`, `sources[].notes` and 595 `claim` fields: 0 hits. `PAT_DIALLO` fixed                                                                    |
 |   8 | Known-issue carry-over  |  PASS   |     –     | `UNDATED_POLITY_CEILING` 95 = measured 95. The carry-over note itself is stale (§6, Domain 10)                                                                                                           |
 

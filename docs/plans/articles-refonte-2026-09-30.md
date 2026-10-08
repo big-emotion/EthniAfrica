@@ -62,23 +62,19 @@ the concrete replacement and its consequences rather than silently introducing a
 Read these sources before editing, in this order:
 
 1. This plan: accepted product direction and bounded delivery scope.
-2. [Reader-facing register](../editorial/reader-facing-register.md),
-   [personas](../editorial/audience-personas.md), and
-   [editorial unification plan](../editorial/remediation-plan-2026-09-30.md).
-3. [Contradictions audit](../editorial/contradictions-2026-09-30/README.md), especially findings
-   affecting templates, source attribution, local accounts and public prose.
-4. [Brand](../design/brand-charter.md), [typography](../design/typography-charter.md) and
+2. [Reader-facing register](../editorial/reader-facing-register.md) and
+   [personas](../editorial/audience-personas.md). The editorial unification plan and the
+   contradictions audit this step also named were removed in #1571.
+3. [Brand](../design/brand-charter.md), [typography](../design/typography-charter.md) and
    [actions](../design/actions-charter.md) charters; invoke the project art-direction skill
    before changing visible compositions.
-5. [Production ledger scope](../productions/README.md),
+4. [Production ledger scope](../productions/README.md),
    [media decision](embedded-media-decision.md), and
    production-history plan (since removed). Their dated observations are not
    substitutes for the current code or the operator's newer direction.
 
-The editorial unification plan is now merged into `recette` through PR #1426, merge commit
-`c3fe51d9e`. Earlier chat links to its archived worktree are no longer the handoff location.
-The guide/personas and audit are integrated; the existence of the plan does **not** mean its
-33 findings have all been corrected. Check its implementation ledger and current branch state.
+The editorial unification plan was merged into `recette` through PR #1426, merge commit
+`c3fe51d9e`, and removed with its audit in #1571.
 
 Settled editorial principles apply immediately: popular education rather than borrowed
 professional authority; subject before reference; uncertainty beside the claim; oral and
@@ -404,7 +400,7 @@ media fallback, and focus restoration. Capture expectations at 320, 390/430, 768
 1200/1440 px before adjusting layout. Keep the article body readable when media fails.
 
 **Implement:** one listing and shared template; reuse/extract only the media functionality
-needed from existing readers. Supply bilingual UI copy. Add optional format switch and contents
+needed from existing readers. Supply UI copy (bilingual at the time; French-only since #1575). Add optional format switch and contents
 navigation only where real content requires them. Update the scoped charter rule and tests.
 
 **Exit evidence:** inspect the rendered pages and all media states, not only snapshots or unit
@@ -471,7 +467,8 @@ updated edition and explain the correction instead of silently rewriting the his
 Review Mali, Lingala and Mandé first against the shared guide and existing project review
 workflow. Then apply the same template to all eligible candidates in disjoint ID batches.
 Prepare English counterparts or record an explicit non-empty deferred marker through the
-agreed article translation contract; UI copy remains bilingual. Do not change `SITE_LOCALE_MODE`.
+agreed article translation contract. (Superseded: #1575 made the site French-only and removed
+`SITE_LOCALE_MODE`.)
 
 **Exit evidence:** every eligible article is written and reviewed, not only the three pilots.
 Every retained claim has usable support; references resolve to the intended work/account;
@@ -557,7 +554,7 @@ work; line numbers are deliberately not frozen into this handoff.
 | Article bank and loader   | Proposed `content/articles/`, `src/lib/articles/` and colocated tests                                                                               | Coordinator for contract; content workers for assigned IDs |
 | Article UI                | Proposed `src/components/articles/`; reusable pieces from `src/components/dossiers/`                                                                | UI worker                                                  |
 | Existing media            | `src/components/media/EmbedFacade.tsx`, `src/lib/embeds/providers.ts`, `src/components/discoveries/DiscoveryReader.tsx`, `CarouselAudioControl.tsx` | UI worker; coordinate shared edits                         |
-| Recovery                  | Proposed importer in the existing `social/tools/` tooling; reuse `paths.mjs` and library path resolution                                            | Recovery worker                                            |
+| Recovery                  | Proposed importer in the then-existing `social/tools/` tooling (removed in #1571)                                                                   | Recovery worker                                            |
 | Production/discovery data | `docs/productions/`, `src/lib/productions/ledger.ts`, `toDiscoveryPublication.ts`, `src/lib/discoveries/{entries,catalog,videos,slugs}.ts`          | Coordinator; workers submit reconciliation evidence        |
 | Discovery routes          | `src/app/[lang]/decouvertes/[[...publication]]/page.tsx`, reader's related destinations                                                             | Coordinator                                                |
 | Search companions         | `src/lib/search/companionCatalogs.ts`, `src/components/search/feed/ShortsBlock.tsx`                                                                 | Coordinator; only relevant destinations                    |
@@ -578,7 +575,6 @@ At the appropriate scope, the final implementation must pass:
 make check
 npm run lint:req
 npm run check:dead
-npm run check:translation-parity -- --base origin/recette
 npm run check:production-ledger
 npm run check:asset-weight
 npm run check:orphan-docs
@@ -588,9 +584,7 @@ npm run test:charter-contracts
 ```
 
 Use meaningful targeted tests before each implementation change, then broaden once at
-integration. Include `npm run test:social-tools` when importer/tooling changes; the Python engine
-suite is needed only if engine code changes. Translation parity is a report, never proof of an
-English launch. Do not lower gates or use force publication to conceal failures.
+integration. Do not lower gates or use force publication to conceal failures.
 
 Run relevant Playwright journeys and existing accessibility/performance gates with the new
 article and listing routes covered. Use responsive boundary widths, keyboard navigation,

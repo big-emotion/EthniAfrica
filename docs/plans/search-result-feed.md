@@ -578,7 +578,7 @@ add `factsForEntities(ids)` (Phase 3).
 
 ### 6.4 Generated images
 
-`generatedImagePublications()` (`src/lib/discoveries/generatedImages.ts`, 12,
+`generatedImagePublications()` (`src/lib/discoveries/generatedImages.ts`, removed in #1571, 12,
 entities people/country), sources in `generatedImageSources.json`, copy in
 `generatedImagesCopy`, permalink `discoveryPath(lang, entry)`.
 
@@ -606,6 +606,7 @@ Array<{ kind: "people"|"country"|"family"|"language"|"patronyme", id, label? }>`
   (listed in the former social-library inventory, since deleted) get a manifest record each, with
   subjects. `cards.json` (GABARITS-SOCIAL §10) gains `sujets: ["PPL_…"]` so the
   production chain writes subjects from now on (`/ethniafrica-structure`).
+  The chain, that skill and GABARITS-SOCIAL were removed in #1571.
 
 ### 6.6 Quiz
 
@@ -641,12 +642,13 @@ The page calls it once the subjects are known (after `searchWithLeads`).
 ## 7. Copy
 
 All new strings go to a new module `src/lib/i18n/copy/searchFeed.ts`
-(`searchFeedCopy`, registered in `src/lib/i18n/copy/index.ts`), `fr` and `en`.
+(`searchFeedCopy`, registered in `src/lib/i18n/copy/index.ts`, since removed), `fr` and `en`
+(French only since #1575).
 French strings are the boards' verbatim (typographic apostrophes `’` as in
 `nameAnswerCopy`; the boards use `'` — normalise when comparing, §10.1). Existing
-keys in `nameAnswerCopy` are reused, not duplicated. English copy is written in
-the same change (`copyParity.test.ts` fails otherwise); publication stays
-French-only by `SITE_LOCALE_MODE`.
+keys in `nameAnswerCopy` are reused, not duplicated. English copy was written in
+the same change (`copyParity.test.ts` failed otherwise); #1575 later removed the
+English copy and `SITE_LOCALE_MODE`.
 
 ## 8. Phases
 

@@ -5,6 +5,9 @@ Date: 2026-09-20. Continues
 which sequences the work in thirteen phases (0 through 12) and whose phases 0 to
 10 shipped in PR #1188 (`codex/search-feed-implementation`, draft).
 
+The `e2e:search-feed-parity` and `e2e:search-feed-responsive` scripts and the
+`check:translation-parity` gate this plan runs have since been removed.
+
 This file exists because the implementing session stopped inside phase 11 when
 its credits ran out, and because the remaining distance was never measured. It
 is measured here, so the work left is a list rather than an estimate.
@@ -206,7 +209,7 @@ out to gate on a single decision the plan hadn't flagged.
 
 - **`check:dead` is red for reasons mostly unrelated to search.** Of the four
   files over the three-file ceiling, three (`src/lib/games/corpus.en.ts`,
-  `landmarks.en.ts`, `src/lib/glossaire/entries.en.ts`) are orphaned
+  `landmarks.en.ts`, `src/lib/glossaire/entries.en.ts`, all deleted in #1575) are orphaned
   English-locale content in an unrelated subsystem, pre-dating this plan
   entirely. The fourth, `src/lib/search/__fixtures__/feedCases.ts`, is not
   actually dead — it's the fixture every test this session has run against —
@@ -711,10 +714,7 @@ make check
 npm run lint:req
 npm run check:dead
 npm run check:copy-literals -- --base origin/recette
-npm run check:translation-parity -- --base origin/recette
 npm run check:orphan-docs
-npm run e2e:search-feed-responsive
-npm run e2e:search-feed-parity
 ```
 
 plus the repository's own pre-commit and secret scan.
@@ -740,4 +740,4 @@ The shorts shelf ships with an **empty production catalog**
 de short » slot. Filling it, and whether a short plays in place or links out, is
 not parity work: it is the subject of
 [`embedded-media-brief.md`](embedded-media-brief.md) and
-[`production-history-brief.md`](production-history-brief.md).
+`production-history-brief.md` (removed in #1571).
