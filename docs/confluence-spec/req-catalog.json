@@ -188,7 +188,12 @@
     "REQ-189",
     "REQ-190",
     "REQ-191",
-    "REQ-193"
+    "REQ-193",
+    "REQ-194",
+    "REQ-195",
+    "REQ-196",
+    "REQ-197",
+    "REQ-198"
   ],
   "sourceMap": {
     "REQ-001": "FR1",
@@ -372,6 +377,11 @@
     "REQ-186": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/206995458",
     "REQ-187": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/207060993",
     "REQ-188": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/207519745",
-    "REQ-193": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/210829313"
+    "REQ-193": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/210829313",
+    "REQ-194": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/211484673",
+    "REQ-195": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/211517441",
+    "REQ-196": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/211550209",
+    "REQ-197": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/211582977",
+    "REQ-198": "https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/211615745"
   }
 }
