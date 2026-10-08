@@ -8,8 +8,8 @@ const BASE = `https://${CANONICAL_DOMAIN}`;
 describe("pageHead", () => {
   // @req REQ-141
   it("declares an absolute canonical on the canonical domain", () => {
-    expect(pageHead("/fr/atlas/peuples").alternates).toEqual({
-      canonical: `${BASE}/fr/atlas/peuples`,
+    expect(pageHead("/fr/glossaire").alternates).toEqual({
+      canonical: `${BASE}/fr/glossaire`,
     });
   });
 

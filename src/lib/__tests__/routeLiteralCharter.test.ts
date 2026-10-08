@@ -105,6 +105,9 @@ const EXEMPT = new Set([
   // composes `/fr/ethnies` any more, which is exactly why it needs a redirect.
   "src/__tests__/redirectCharter.test.ts",
   "src/__tests__/nextConfigRedirects.test.ts",
+  // The retired English addresses and the French page each one now answers
+  // with: both sides are frozen strings by design, like the redirect suites.
+  "src/lib/__tests__/legacyEnglishPaths.test.ts",
   "src/lib/__tests__/routeLiteralCharter.test.ts",
 ]);
 
