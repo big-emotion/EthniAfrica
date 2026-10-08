@@ -4,16 +4,14 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import { CANONICAL_DOMAIN, OG_DESCRIPTION, OG_TITLE } from "@/lib/brand";
 import { FALLBACK_SEED_WORDS } from "@/lib/home/seedWords";
 import { homePurposeCopy } from "@/lib/i18n/copy/homePurpose";
-const { loadSeeds, counts, globe } = vi.hoisted(() => ({
+const { loadSeeds, globe } = vi.hoisted(() => ({
   loadSeeds: vi.fn(),
-  counts: vi.fn(),
   globe: vi.fn(),
 }));
 vi.mock("next/navigation", () => ({
   useRouter: () => ({ push: vi.fn(), replace: vi.fn() }),
 }));
 vi.mock("@/lib/home/loadSeedWords", () => ({ loadSeedWords: loadSeeds }));
-vi.mock("@/lib/home/corpusCounts", () => ({ getCorpusCounts: counts }));
 vi.mock("@/api/v2/services/continentPeopleCounts", () => ({
   getContinentPeopleCounts: globe,
 }));
@@ -68,7 +66,6 @@ describe("minimal home", () => {
       expect(contribution).toHaveTextContent(
         homePurposeCopy[language].contribute.linkLabel
       );
-      expect(counts).not.toHaveBeenCalled();
       expect(globe).not.toHaveBeenCalled();
       expect(loadSeeds).toHaveBeenCalledWith(language);
     }

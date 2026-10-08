@@ -7,9 +7,7 @@ import {
   DID_YOU_KNOW_FACTS,
   findDidYouKnowFact,
   pickDidYouKnowFact,
-  pickDidYouKnowFacts,
   pickNextDidYouKnowFact,
-  shuffleDidYouKnowDeck,
   type DidYouKnowFact,
 } from "@/lib/home/didYouKnowFacts";
 
@@ -205,82 +203,6 @@ describe("pickDidYouKnowFact — the home band's draw", () => {
     expect(
       pickDidYouKnowFact(() => 0, [factWithoutOfficialSource("a")])
     ).toBeNull();
-  });
-});
-
-describe("pickDidYouKnowFacts — the home section's two-card draw", () => {
-  // @req REQ-113
-  it("draws two distinct facts backed by official sources", () => {
-    const bank = [
-      factWithoutOfficialSource("a"),
-      fact("b"),
-      fact("c"),
-      fact("d"),
-    ];
-
-    const drawn = pickDidYouKnowFacts(2, () => 0, bank);
-
-    expect(drawn).toHaveLength(2);
-    expect(new Set(drawn.map((entry) => entry.id)).size).toBe(2);
-    expect(drawn.map((entry) => entry.id)).not.toContain("a");
-  });
-
-  // @req REQ-113
-  it("returns every eligible fact when fewer than two can support the claim", () => {
-    const drawn = pickDidYouKnowFacts(2, () => 0, [
-      factWithoutOfficialSource("a"),
-      fact("b"),
-    ]);
-
-    expect(drawn.map((entry) => entry.id)).toEqual(["b"]);
-  });
-});
-
-describe("shuffleDidYouKnowDeck — the order the anecdotes page reads in", () => {
-  const bank = [fact("a"), fact("b"), fact("c"), fact("d")];
-
-  // The whole reason the page shuffles a deck instead of rolling a die: a
-  // reader pressing « Suivant » must reach the last fact of the bank before
-  // meeting the first one again.
-  // @req REQ-113
-  it("serves every fact once before serving any of them twice", () => {
-    const drawn = shuffleDidYouKnowDeck(() => 0.42, bank);
-
-    expect(drawn).toHaveLength(bank.length);
-    expect(drawn.map((f) => f.id).sort()).toEqual(["a", "b", "c", "d"]);
-  });
-
-  // @req REQ-113
-  it("draws the order the random it was given dictates", () => {
-    expect(
-      shuffleDidYouKnowDeck(() => 0, [fact("a"), fact("b"), fact("c")]).map(
-        (f) => f.id
-      )
-    ).toEqual(["b", "c", "a"]);
-  });
-
-  // The seam between two permutations is the one repeat a reader is certain
-  // to notice, because it lands on consecutive presses.
-  // @req REQ-113
-  it("never opens on the fact the reader has just been shown", () => {
-    const reshuffled = shuffleDidYouKnowDeck(() => 0, bank, "c");
-
-    expect(reshuffled[0].id).not.toBe("c");
-    expect(reshuffled.map((f) => f.id).sort()).toEqual(["a", "b", "c", "d"]);
-  });
-
-  // @req REQ-113
-  it("hands back the only fact it has rather than nothing to avoid a repeat", () => {
-    const single = [fact("a")];
-
-    expect(
-      shuffleDidYouKnowDeck(() => 0, single, "a").map((f) => f.id)
-    ).toEqual(["a"]);
-  });
-
-  // @req REQ-113
-  it("shuffles an empty bank into an empty deck", () => {
-    expect(shuffleDidYouKnowDeck(() => 0, [])).toEqual([]);
   });
 });
 

@@ -234,12 +234,6 @@ export interface HubModuleDefinition {
    * nouns were written out by hand on every surface that describes the
    * product, and each copy fell behind the corpus at its own pace: the site's
    * own meta description still named four of them.
-   *
-   * Not to be confused with `CORPUS_CLASSES` (corpusClasses.ts), which is
-   * deliberately five. That list prints *figures*, and a figure claims
-   * exhaustiveness — "30 patronymes" beside "3 134 appellations" understates
-   * the product and misstates its coverage. Naming a class costs no such
-   * claim, so prose names all six and the census counts five.
    */
   corpusNoun?: string;
   /**

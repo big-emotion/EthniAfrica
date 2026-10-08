@@ -43,13 +43,12 @@ export interface HubSpread {
  * and credited (brand charter §9), so a hub costs no new asset and inherits
  * the imagery doctrine rather than restating it.
  *
- * The globe is deliberately not in the draw. The home offers it half the time
- * because the home is about the continent; a hub is about its own tiles, and a
- * WebGL stage beside seven of them would be the loudest object on the page
+ * The globe is deliberately not in the draw: a hub is about its own tiles, and
+ * a WebGL stage beside seven of them would be the loudest object on the page
  * arguing for a module none of them is.
  *
  * The random source is injectable so a contract test can assert a layout
- * rather than sample one, which is the same device `drawHomeHeroVisual` uses.
+ * rather than sample one.
  */
 // @req REQ-114
 export function drawHubSpread(random: () => number = Math.random): HubSpread {

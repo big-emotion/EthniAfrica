@@ -789,8 +789,8 @@ Four clauses, each closing one of the ways the retired hubs went wrong.
   the same account of what the axis holds.
 - **The title names the axis, so it takes the gradient** (§5.3) and the page
   takes that axis's accent, once, at its root (§5.2).
-- **Which side the text takes is drawn, per request, 50/50** — the same device
-  and the same injectable random as the home's visual (`drawHomeHeroVisual`).
+- **Which side the text takes is drawn, per request, 50/50** — with an
+  injectable random (`drawHubSpread`).
   What is drawn is the **painting order only**: the DOM is text then plate at
   every width and in both draws, so a reader on a keyboard meets the tiles
   first whatever the die said. A reading order that changes with a coin toss is

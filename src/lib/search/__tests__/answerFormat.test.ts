@@ -1,7 +1,6 @@
 import { describe, expect, it } from "vitest";
 
 import {
-  firstSentence,
   formatMillions,
   formatMillionsInWords,
   formatPercent,
@@ -60,8 +59,7 @@ describe("sentence splitting", () => {
   });
 
   // @req REQ-178
-  it("returns the first sentence and the first n sentences", () => {
-    expect(firstSentence(text)).toMatch(/^Le terme .* 1858\.$/);
+  it("returns the first n sentences", () => {
     expect(leadingSentences(text, 3).rest).toBe("Et une quatrième phrase.");
   });
 
