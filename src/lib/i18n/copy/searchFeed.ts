@@ -82,6 +82,17 @@ export interface SearchFeedCopy {
     loading: string;
     retry: string;
   };
+  /**
+   * Under the heading, when the reader searched another name than the one the
+   * subject gives itself (doctrine §1.1). A kind left out gets no lead: a
+   * country or a patronyme records no self-given name.
+   */
+  searchedLead: {
+    searched: (name: string) => string;
+    self: Partial<
+      Record<"people" | "language" | "languageFamily", (self: string) => string>
+    >;
+  };
 }
 
 // @req REQ-180
@@ -168,6 +179,15 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
     status: {
       loading: "Chargement en cours",
       retry: "Réessayer",
+    },
+    searchedLead: {
+      searched: (name) => `Vous avez cherché ${name}.`,
+      self: {
+        people: (self) => `Ce peuple se nomme lui-même ${self}.`,
+        language: (self) => `Le nom que ses locuteurs lui donnent : ${self}.`,
+        languageFamily: (self) =>
+          `Le nom que ses locuteurs lui donnent : ${self}.`,
+      },
     },
   },
 };

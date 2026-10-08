@@ -121,7 +121,11 @@ export interface NamingPresentation {
 export interface NamingProjection {
   /** The name the thing gives itself, where the corpus records one. */
   selfGiven?: string;
-  /** Every other form, in the order the fiche lists them. Never reordered. */
+  /**
+   * Every other form, in the order the fiche lists them. The projection never
+   * reorders them; the search answer alone puts the searched form first
+   * (`orderForSearch`, doctrine §1.1).
+   */
   forms: NamingForm[];
   /** Where the forms come from, as the curator wrote it. */
   origin?: string;
@@ -291,6 +295,8 @@ function basePresentationForms(
   const forms: NamingPresentationForm[] = [];
   const seen = new Set<string>();
 
+  // Self-given first is the order every surface without a query shows. Where
+  // the reader searched, `orderForSearch` puts the searched form before it.
   if (legacy.selfGiven && type !== "patronyme") {
     seen.add(formKey(legacy.selfGiven));
     forms.push({

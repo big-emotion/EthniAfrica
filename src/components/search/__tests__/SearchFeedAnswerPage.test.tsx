@@ -132,10 +132,75 @@ describe("the answer page", () => {
   });
 
   // @req REQ-178
-  it("marks the searched form among the names without promoting it", () => {
-    renderAnswer("peul", [subjectOf(peul)]);
+  it("marks the searched form and puts it first among the names", () => {
+    const { container } = renderAnswer("peul", [subjectOf(peul)]);
 
     expect(screen.getByText("votre recherche")).toBeVisible();
+    const names = container.querySelector('[data-answer-block="names"]');
+    expect(
+      within(names as HTMLElement).getAllByRole("listitem")[0]
+    ).toHaveTextContent("Peul");
+  });
+});
+
+// Operator decision 2026-10-08 (doctrine §1.1): a reader who typed an exonym
+// and lands on a page headed by the self-name thinks they are on the wrong
+// page. Right under the heading, the page says what was searched and leads to
+// the name the people gives itself.
+// @req REQ-178
+describe("the lead from the searched name to the self-name", () => {
+  const lead = (container: HTMLElement) =>
+    container.querySelector<HTMLElement>("[data-searched-lead]");
+
+  // @req REQ-178
+  it("says what was searched and links to the people's own name, under the heading", () => {
+    const { container } = renderAnswer("Peul", [
+      subjectOf(peul, { id: "PPL_FULA" }),
+    ]);
+
+    const element = lead(container);
+    expect(element).not.toBeNull();
+    expect(element).toHaveTextContent(
+      searchFeedCopy.fr.searchedLead.searched("Peul")
+    );
+    const link = within(element).getByRole("link", {
+      name: searchFeedCopy.fr.searchedLead.self.people("Fulɓe · Pullo"),
+    });
+    expect(link).toHaveAttribute("href", expect.stringContaining("PPL_FULA"));
+    // In the subject heading's block, right after the heading.
+    const what = container.querySelector('[data-answer-block="what"]');
+    expect(what?.contains(element)).toBe(true);
+    expect(what?.querySelector("h1")?.nextElementSibling).toBe(element);
+  });
+
+  // @req REQ-178
+  it("shows nothing when the reader searched the self-name", () => {
+    const { container } = renderAnswer("Pullo", [subjectOf(peul)]);
+
+    expect(lead(container)).toBeNull();
+  });
+
+  // @req REQ-178
+  it("shows nothing for a subject that records no self-given name", () => {
+    const { container } = renderAnswer("ngala", [subjectOf(lingala)]);
+
+    expect(lead(container)).toBeNull();
+  });
+
+  // @req REQ-178
+  it("names a language's self-given form with the speakers' wording", () => {
+    const named = {
+      ...lingala,
+      names: [
+        { form: "Ngala", selfGiven: null },
+        { form: "Lingála", selfGiven: true },
+      ],
+    };
+    const { container } = renderAnswer("ngala", [subjectOf(named)]);
+
+    expect(lead(container)).toHaveTextContent(
+      searchFeedCopy.fr.searchedLead.self.language("Lingála")
+    );
   });
 });
 

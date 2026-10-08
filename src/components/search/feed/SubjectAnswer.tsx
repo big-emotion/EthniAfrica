@@ -11,21 +11,26 @@ import { SourcesLine } from "@/components/search/answer/SourcesLine";
 import { WhatBlock } from "@/components/search/answer/WhatBlock";
 import { WhereBars } from "@/components/search/answer/WhereBars";
 import { ReviewedOrigin } from "@/components/search/feed/NameAnswerEntries";
+import { ActionLink } from "@/components/ui/ActionLink";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
+import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import type { SearchAnswer } from "@/lib/search/answer";
 import {
   presentAnswerWhere,
   reviewedAnswerSources,
 } from "@/lib/search/answerPresentation";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
+import { selfNameLead } from "@/lib/search/searchedName";
 import type { Language } from "@/types/shared";
 
 export interface SubjectAnswerProps {
   answer: SearchAnswer;
   /** The peoples the fiche lists, by id and name, to name a country's shares. */
   listedPeoples?: ReadonlyArray<{ id: string; name: string }>;
-  /** The form the reader typed: marked in the names, never promoted. */
+  /** The form the reader typed: marked and listed first in the names. */
   searchedForm?: string;
+  /** Where the self-given name leads: the subject's fiche, headed by it. */
+  selfNameHref?: string;
   /** An editor's answer for this subject; it takes the origin and its sources. */
   reviewed?: NameAnswer;
   /** The origin is already told by a reviewed answer shown for another subject. */
@@ -51,6 +56,7 @@ export function SubjectAnswer({
   answer,
   listedPeoples = [],
   searchedForm,
+  selfNameHref,
   reviewed,
   originCoveredElsewhere = false,
   headingLevel = "h1",
@@ -74,7 +80,14 @@ export function SubjectAnswer({
         language={language}
         headingLevel={headingLevel}
         titleScale={titleScale}
-      />
+      >
+        <SearchedNameLead
+          answer={answer}
+          searchedForm={searchedForm}
+          href={selfNameHref}
+          language={language}
+        />
+      </WhatBlock>
       <NameChoices
         title={searchAnswerCopy[language].choices.title}
         choices={choices}
@@ -137,5 +150,39 @@ export function SubjectAnswer({
         language={language}
       />
     </>
+  );
+}
+
+/**
+ * « Vous avez cherché Peul. Ce peuple se nomme lui-même Fulɓe. » A reader who
+ * typed an exonym otherwise meets the self-name in the heading and thinks they
+ * landed on the wrong page (doctrine §1.1, 2026-10-08). The link goes to the
+ * fiche, whose heading leads with the self-name; a search for the self-name
+ * would not do, since a self-appellation is often prose (« Fulbe (pluriel),
+ * Pullo (singulier) ») that no search answers to.
+ */
+function SearchedNameLead({
+  answer,
+  searchedForm,
+  href,
+  language,
+}: {
+  answer: SearchAnswer;
+  searchedForm?: string;
+  href?: string;
+  language: Language;
+}) {
+  const copy = searchFeedCopy[language].searchedLead;
+  const selfLine = copy.self[answer.kind as keyof typeof copy.self];
+  const lead = selfNameLead(answer.names, searchedForm);
+  if (!lead || !selfLine || !href) return null;
+  return (
+    <p
+      data-searched-lead=""
+      className="m-0 flex flex-col items-start text-afh-body leading-[var(--afh-leading-body)] text-afh-text [overflow-wrap:anywhere]"
+    >
+      <span>{copy.searched(lead.searched)}</span>
+      <ActionLink href={href}>{selfLine(lead.self)}</ActionLink>
+    </p>
   );
 }
