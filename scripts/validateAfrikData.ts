@@ -2698,8 +2698,7 @@ export async function checkSourceUrls(
  * its own (no invented data). Issue #129 owns ZAF.
  *
  * Per issue #130 KISS option 2, the `population` field is the optional one:
- * when both are present and drift > 2 pp, delete `population`. See
- * `scripts/checkPopulationPercentageDrift.ts`.
+ * when both are present and drift > 2 pp, delete `population`.
  */
 const FR32_DRIFT_PP = 2;
 const FR32_ZAF_SOFT = new Set(["ZAF"]); // owned by issue #129
@@ -2790,7 +2789,7 @@ export function checkPopulationPercentageDrift(
       const implied = (entry.population / total) * 100;
       const drift = Math.abs(implied - entry.percentageInCountry);
       if (drift > FR32_DRIFT_PP) {
-        const msg = `FR32 ${id}/${entry.name ?? "(unnamed)"}: population ${entry.population} implies ${implied.toFixed(2)}% of the ${year} total but percentageInCountry is ${entry.percentageInCountry}% (drift ${drift.toFixed(2)} pp > ${FR32_DRIFT_PP} pp threshold) — date the headcount with referenceYear, or drop it (see scripts/checkPopulationPercentageDrift.ts)`;
+        const msg = `FR32 ${id}/${entry.name ?? "(unnamed)"}: population ${entry.population} implies ${implied.toFixed(2)}% of the ${year} total but percentageInCountry is ${entry.percentageInCountry}% (drift ${drift.toFixed(2)} pp > ${FR32_DRIFT_PP} pp threshold) — date the headcount with referenceYear, or drop it`;
         if (FR32_ZAF_SOFT.has(id)) {
           warnings.push(msg + " [soft: owned by issue #129]");
         } else {
@@ -2805,8 +2804,7 @@ export function checkPopulationPercentageDrift(
 
 /**
  * FR33 — `nameFr` must hold the country's name of ordinary use, not a
- * duplicate of `nameOfficial` (the protocol name). See
- * docs/adr/0008-country-namefr-common-name.md.
+ * duplicate of `nameOfficial` (the protocol name).
  *
  * Hard gate: `nameFr` must be a non-empty string, and when `nameOfficial`
  * is also present, the two must differ.

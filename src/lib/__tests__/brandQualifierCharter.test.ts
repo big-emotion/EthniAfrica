@@ -18,7 +18,7 @@ import { chromeCopy } from "@/lib/i18n/copy/chrome";
  * qualifier changed on 2026-09-17 the browser tab kept its own spelling, so a
  * reader opening the tab and a reader seeing the shared link were told the
  * product was two different things. And **four e-mails kept theirs** — the flag
- * notification and the moderation sign-in link, each in both locales — which is
+ * notification and the moderation sign-in link, each in two locales — which is
  * worse, because a mail outlives the page it came from and sits in somebody's
  * inbox for years.
  */
@@ -125,12 +125,11 @@ describe("the product's qualifier, spelled in one place", () => {
     expect(chromeCopy.fr.headerTagline.length).toBeLessThanOrEqual(28);
   });
 
-  // Python cannot import brand.ts, so the render engine keeps a copy of the
-  // qualifier — now in brand-kit.json, the one file ethni_brand.py reads it from.
-  // A card and the page it points to must not introduce the product in two
-  // wordings.
+  // The social brand kit is plain JSON for tooling that cannot import
+  // brand.ts, so it keeps a copy of the qualifier. A card and the page it
+  // points to must not introduce the product in two wordings.
   // @req REQ-019
-  it("is the qualifier the render engine draws under the wordmark", () => {
+  it("is the qualifier the social brand kit declares", () => {
     const kit = JSON.parse(
       fs.readFileSync(
         path.join(process.cwd(), "social/brand/brand-kit.json"),

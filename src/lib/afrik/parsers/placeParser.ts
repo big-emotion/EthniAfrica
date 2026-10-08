@@ -76,7 +76,6 @@ const placeSchema = z.object({
     z.object({ field: z.string().min(1), reason: z.string().min(1) })
   ),
   sources: z.array(sourceSchema),
-  _translation: z.unknown().optional(),
 });
 
 type PlaceRecord = z.infer<typeof placeSchema>;

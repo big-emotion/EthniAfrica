@@ -1,9 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import {
-  eligiblePublications,
-  publicationsForSubjects,
-} from "@/lib/discoveries/catalog";
+import { eligiblePublications } from "@/lib/discoveries/catalog";
 import type { DidYouKnowFact } from "@/lib/home/didYouKnowFacts";
 import type { DidYouKnowIllustration } from "@/lib/home/didYouKnowIllustrations";
 import type { Proverb } from "@/lib/proverbs/proverbs";
@@ -246,18 +243,6 @@ describe("search companion catalogs", () => {
       ).toEqual([]);
     }
   );
-
-  // @req REQ-180
-  it("includes eligible videos in a typed scoped Discovery catalog", () => {
-    const publication = searchShortDiscoveryPublication(short("scoped"));
-
-    expect(
-      publicationsForSubjects(
-        [publication],
-        [{ kind: "people", id: "PPL_TEST" }]
-      ).map((entry) => entry.id)
-    ).toEqual(["scoped"]);
-  });
 
   // @req REQ-180
   it.each([

@@ -104,7 +104,7 @@ export function isAuthoritativeSourceTier(tier: unknown): boolean {
 }
 
 // The reader-facing labels of the tiers, and of `needs_review` beside them,
-// are locale-keyed in `src/lib/glossaire/vocabularies.ts` — the bilingual
+// are locale-keyed in `src/lib/glossaire/vocabularies.ts` — the
 // glossary's one owner file — and read through `sourceStandingLabel()`.
 
 // Confidence weights live in `recompute_confidence()` (SQL) alone: a TS copy

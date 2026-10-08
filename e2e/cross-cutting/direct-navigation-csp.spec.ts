@@ -8,7 +8,7 @@ import { FACETS } from "@/lib/hubs/facets";
 import { LOCALE } from "../support/locale";
 
 // The admin console's sub-pages have no slug-table entry: `admin` is the one
-// static page, and what follows it is the same word in both locales.
+// static page, and what follows it is a fixed word.
 const ADMIN_ROUTE = getStaticPageRoute(LOCALE, "admin");
 
 type RuntimeFailures = {

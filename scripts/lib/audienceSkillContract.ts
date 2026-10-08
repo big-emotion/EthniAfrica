@@ -24,8 +24,7 @@ export const AUDIENCE_REPORT_DIR = "docs/audience";
  * repository carries no production skills, and came back on 2026-09-11 when that
  * rule was reversed: an engine and a chain nobody can read the history of are an
  * engine and a chain nobody can repair. What did *not* come back is the output —
- * renders, per-subject cards and sources stay in the library, addressed by
- * `ETHNIAFRICA_SOCIAL_PROJECTS`.
+ * renders, per-subject cards and sources stay in the private library.
  *
  * So the contract can check the whole handoff again, producer included, rather
  * than half of it.

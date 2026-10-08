@@ -25,8 +25,7 @@ function isKnownKind(kind: string): kind is DiscoverySubjectKind {
 }
 
 /**
- * Projects one ledger subject into its `video` `DiscoveryPublication`, per
- * `docs/plans/production-history-plan.md` §6.
+ * Projects one ledger subject into its `video` `DiscoveryPublication`.
  *
  * A production the ledger has not yet finished data-entry for is still
  * projected — never skipped — carrying whatever fields the ledger has and
@@ -40,9 +39,7 @@ function isKnownKind(kind: string): kind is DiscoverySubjectKind {
  * The carousel branch is deliberately absent: no ledger subject yet carries
  * the rendered local frames DEC-059 requires for a self-hosted carousel
  * (that is asset-export work, not this function's job), so projecting one
- * today would either be empty or invented. `docs/plans/production-history-
- * plan.md` §6 accepts exactly this: "produced by the same function but not
- * wired into any reader yet."
+ * today would either be empty or invented.
  */
 // @req REQ-184
 export function toDiscoveryPublication(

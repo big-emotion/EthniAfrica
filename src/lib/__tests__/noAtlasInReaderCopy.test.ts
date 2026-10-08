@@ -27,7 +27,6 @@ const SCANNED = [
   "src/lib/games",
   "src/lib/seo",
   "src/lib/legal-pages.ts",
-  "src/lib/legal-pages.en.ts",
   "src/lib/brand.ts",
   "src/lib/api/openapiV2.ts",
   "src/app",
