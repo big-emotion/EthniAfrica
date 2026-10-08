@@ -28,13 +28,17 @@ const FORBIDDEN_TEXT =
 
 const MATRIX = Object.keys(baseline.heights);
 
-// This live-corpus route exceeds the historic v4.8.0 document-height budget
-// while still passing every structural parity assertion. Keep its original 75%
+// These live-corpus routes exceed the historic v4.8.0 document-height budget
+// while still passing every structural parity assertion. Keep their original 75%
 // threshold as explicit expected debt: an unexpected pass turns the suite red
 // and tells us to remove the quarantine. PPL_OVAMBO left it on 2026-10-06, once
-// the answer-card fiche (#1486) brought it under budget.
+// the answer-card fiche (#1486) brought it under budget. NAM joined on
+// 2026-10-08 at 8310 px against an 8261 px budget: #1523 added the 2023 census
+// source and a Kavango row to its peoples table, sourced content rather than
+// a layout regression.
 const HEIGHT_DEBT: readonly string[] = [
   getCountryRoute(LOCALE, "EGY"),
+  getCountryRoute(LOCALE, "NAM"),
 ] as const;
 
 function corpusIds(directory: string, pattern: RegExp): string[] {
