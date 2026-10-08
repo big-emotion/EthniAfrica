@@ -223,10 +223,5 @@
       "fieldPath": "bearers",
       "reason": "Aucun porteur décédé n'est cité faute de source suffisante, et nous ne listons pas de personnes vivantes : le sujet est le nom, pas une famille."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

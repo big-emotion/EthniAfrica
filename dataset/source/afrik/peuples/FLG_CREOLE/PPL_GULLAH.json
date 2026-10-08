@@ -124,10 +124,5 @@
         "notes": "Publication d'une organisation patrimoniale identifiable (World Monuments Fund, avec Leeds Museums & Galleries), contributeurs identifiés."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: none of the 776 people records has an English sidecar, so translating this one alone would make it the atlas's only English people record. It follows the people corpus's first translation pass."
-    }
   }
 }

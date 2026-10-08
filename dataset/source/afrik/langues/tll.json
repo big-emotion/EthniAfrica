@@ -30,10 +30,5 @@
         "notes": "Notice directe pour le code ISO 639-3 tll et le glottocode tete1250. Elle situe la langue en République démocratique du Congo, atteste notamment les variantes Otetela et Sungu et publie le statut EGIDS 6a en 2025. Kitetela est conservé comme variante déjà déclarée par la fiche peuple réconciliée."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the French DRC country enrichment pass is stable."
-    }
   }
 }

@@ -145,10 +145,5 @@
         "notes": "Seconde lecture de la même étude, qui situe elle aussi la fondation du royaume au début du XVIIe siècle."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: none of the 776 people records has an English sidecar, so translating this one alone would make it the atlas's only English people record. It follows the people corpus's first translation pass."
-    }
   }
 }

@@ -132,10 +132,5 @@
         "notes": "Luba et Lunda comme réseaux politico-culturels : p. 643. Limite de 1700 pour la chronologie orale et insignes du XIIIe siècle : p. 644. Kongolo et royaume d'assez petite taille jusqu'à la fin du XVIIe siècle : p. 647."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: translate:record refuses this record on content.appellations.ethnoLinguisticGroup, which modele-peuple.json does not declare and translationClasses.ts does not classify, so the pipeline carries its French verbatim and the glossary check rejects \"peuples\". Measured 2026-09-10: 743 of the 776 people records carry that field and none of the 776 has an English sidecar, so no people record can be translated until the declaration covers it. Both sonnet and opus refused twice."
-    }
   }
 }

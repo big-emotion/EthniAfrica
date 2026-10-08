@@ -127,10 +127,5 @@
       "fieldPath": "peoples",
       "reason": "Aucune source consultée ne dit que Nzinga est un nom de clan ou de famille ; l'explication trouvée concerne le nom d'une personne, la reine Njinga. Aucune page consultée ne rattache ce nom au peuple Ambundu : ce lien vient de notre relevé et reste supposé."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
-    }
-  }
+  ]
 }

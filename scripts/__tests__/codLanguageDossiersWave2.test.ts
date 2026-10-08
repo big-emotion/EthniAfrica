@@ -19,12 +19,9 @@ type LanguageDossier = {
     vitalityStatus: { status: string; scale: string; asOf: number };
     sources: Array<{ url: string | null; tier: string }>;
   };
-  _translation?: { deferred?: { en?: string } };
 };
 
 const projectRoot = process.cwd();
-const deferralReason =
-  "English translation is deferred until the French DRC country enrichment pass is stable.";
 const expected = {
   lub: {
     glottocode: "luba1250",
@@ -112,14 +109,6 @@ describe("DRC evidence-prioritized language dossier wave 2", () => {
           }),
         ])
       );
-    }
-  );
-
-  // @req REQ-145
-  it.each(Object.keys(expected) as Array<keyof typeof expected>)(
-    "records the temporary English translation deferral for %s",
-    (id) => {
-      expect(readDossier(id)?._translation?.deferred?.en).toBe(deferralReason);
     }
   );
 });

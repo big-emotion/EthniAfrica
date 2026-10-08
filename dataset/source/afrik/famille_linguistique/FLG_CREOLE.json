@@ -163,10 +163,5 @@
         "notes": "Article de revue universitaire à comité de lecture consacré aux racines bantoues du mot. Accès fermé : la référence est vérifiée, son contenu ne l'est pas."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: none of the 24 linguistic family records has an English sidecar, so translating this one alone would make it the atlas's only English family record. translate:record accepts this record (30 leaves, 3 review-required), so this is a sequencing choice, not a pipeline refusal. It follows the family corpus's first translation pass."
-    }
   }
 }

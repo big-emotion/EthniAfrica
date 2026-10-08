@@ -65,10 +65,5 @@
         "notes": "Compilation en ligne dérivée des dictionnaires de Bailleul, Dumestre et Vydrin. Donne jula pour le commerçant et julakan pour la langue."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: the English sidecar for this language record has not been produced yet."
-    }
   }
 }

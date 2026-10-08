@@ -315,10 +315,5 @@
         "notes": "Chapitre d'un ouvrage universitaire publié. Date le premier emploi du terme par Bleek de 1857 ou 1858 et sa popularisation de la Comparative Grammar de 1862. Consulté le 25 septembre 2026."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: translate:record refuses this record on content.appellations.ethnoLinguisticGroup, which modele-peuple.json does not declare and translationClasses.ts does not classify, so the pipeline carries its French verbatim and the glossary check rejects \"peuples\". Measured 2026-09-10: 743 of the 776 people records carry that field and none of the 776 has an English sidecar, so no people record can be translated until the declaration covers it. Both sonnet and opus refused twice."
-    }
   }
 }

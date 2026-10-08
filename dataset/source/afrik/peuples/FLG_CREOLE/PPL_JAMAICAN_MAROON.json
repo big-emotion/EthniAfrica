@@ -140,10 +140,5 @@
         "notes": "Page éducative sans auteur identifié ni source citée ; utilisée uniquement pour l'ordre de grandeur de la population totale (5 000 à 10 000 personnes), croisée avec les estimations par ville tirées de sources « referenced »."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: none of the 776 people records has an English sidecar, so translating this one alone would make it the atlas's only English people record. It follows the people corpus's first translation pass."
-    }
   }
 }

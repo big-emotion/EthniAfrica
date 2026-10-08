@@ -183,10 +183,5 @@
         "notes": "Article en accès ouvert. Place à Kong un dirigeant animiste, Lasiri Gombele (1660-1710), avant Seku Watara, auprès duquel l'imam Baro est daté d'environ 1697 à 1745 ; rapporte, d'après Delafosse, une fondation de Kong attribuée aux Nafana, et des dates d'attaques asante que les auteurs fixent différemment (1701 ; 1722-1723)."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: translate:record refuses this record on content.appellations.ethnoLinguisticGroup, which modele-peuple.json does not declare and translationClasses.ts does not classify, so the pipeline carries its French verbatim and the glossary check rejects \"peuples\". Measured 2026-09-10: 743 of the 776 people records carry that field and none of the 776 has an English sidecar, so no people record can be translated until the declaration covers it. Both sonnet and opus refused twice."
-    }
   }
 }

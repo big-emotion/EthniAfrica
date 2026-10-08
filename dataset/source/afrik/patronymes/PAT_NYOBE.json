@@ -107,10 +107,5 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nyobe », « Nyobé », « Bassa », « Cameroun », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste » et « homonyme », ainsi que la thèse de Sharp consacrée à l'UPC et à Ruben Um Nyobé n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

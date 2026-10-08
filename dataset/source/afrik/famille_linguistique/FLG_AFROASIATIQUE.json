@@ -143,10 +143,5 @@
         "notes": "Haut-Commissariat au Plan du Maroc – Recensement Général de la Population et de l'Habitat (RGPH) 2024, note \"Les expressions linguistiques de la langue Amazighe utilisées par la population\" (23 décembre 2024) : 24,8 % de la population utilise l'amazigh (berbère) au quotidien. https://www.hcp.ma/file/244434/ ; taux appliqué à la population totale du Maroc (38 081 173 en 2024, World Bank – SP.POP.TOTL) pour estimer ~9,44 millions de locuteurs. https://data.worldbank.org/indicator/SP.POP.TOTL?locations=MA"
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: none of the 24 linguistic family records has an English sidecar, so translating this one alone would make it the atlas's only English family record. This is a sequencing choice, not a pipeline refusal. It follows the family corpus's first translation pass."
-    }
   }
 }

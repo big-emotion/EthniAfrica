@@ -107,10 +107,5 @@
       "fieldPath": "transmissionMode",
       "reason": "La recherche web combinant « Amadhila », « patronyme », « origine », « clan », « alliance », « caste », « obituary » et « homonyme », complétée par les mots-clés « transmission » et « inheritance », puis la lecture de « The Anglicisation of Oshiwambo Names », n'a pas établi de règle de transmission propre à ce nom ; la valeur « other » est donc conservée plutôt qu'une règle familiale supposée."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

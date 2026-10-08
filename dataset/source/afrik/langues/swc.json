@@ -30,10 +30,5 @@
         "notes": "Notice directe pour le code ISO 639-3 swc et le glottocode cong1236. Elle distingue cette langue du swahili standardisé, documente le statut EGIDS 3 en 2025, son rôle de langue véhiculaire et son statut légal de langue d'identité nationale en RDC."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the French DRC country enrichment pass is stable."
-    }
   }
 }

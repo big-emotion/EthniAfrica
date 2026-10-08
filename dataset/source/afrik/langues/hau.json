@@ -61,10 +61,5 @@
         "notes": "Seuls l'extrait de début d'article et le résumé en ligne ont été lus, pas l'article entier."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the language fiches carrying a name-origin text are translated together."
-    }
   }
 }

@@ -194,10 +194,5 @@
         "notes": "Entrée lue en ligne. Donne le préfixe pluriel ba-, « personnes », et le radical -ntu, « personne », comme éléments sur lesquels Bleek a formé le mot ; une première citation du dictionnaire vers 1862, tirée de Zulu-Land de L. Grout ; et marque l'emploi désignant des personnes noires africaines comme offensant depuis l'apartheid."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: none of the 24 linguistic family records has an English sidecar, so translating this one alone would make it the atlas's only English family record. This is a sequencing choice, not a pipeline refusal. It follows the family corpus's first translation pass."
-    }
   }
 }

@@ -113,10 +113,5 @@
   "nisbaSubtype": {
     "value": "geographic",
     "sourceRefs": ["siwi-mpi", "el-siwi-forebears"]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
   }
 }

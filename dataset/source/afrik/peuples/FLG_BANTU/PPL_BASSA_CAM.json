@@ -178,10 +178,5 @@
         "notes": "Entrée d'encyclopédie de référence, lue le 10 septembre 2026 dans l'exemplaire numérisé par Internet Archive. Elle donne les autodésignations Bon ba Ngock « Children of the Rock » et Bon ba Mbog Liaa « Children of the Tradition of the Rock », ainsi que Hilolombi et les confréries du Mbog. Elle traite en revanche sous une entrée unique les Bassa du Cameroun, du Liberia, du Nigeria, du Togo, du Congo et du Sénégal comme un seul peuple d'origine égyptienne, ce qu'aucune classification linguistique ne soutient."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: translate:record refuses this record on content.appellations.ethnoLinguisticGroup, which modele-peuple.json does not declare and translationClasses.ts does not classify, so the pipeline carries its French verbatim and the glossary check rejects \"peuples\". Measured 2026-09-10: 743 of the 776 people records carry that field and none of the 776 has an English sidecar, so no people record can be translated until the declaration covers it. Both sonnet and opus refused twice."
-    }
   }
 }
