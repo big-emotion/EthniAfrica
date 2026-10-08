@@ -37,11 +37,35 @@ jobs:
           zricethezav/gitleaks@sha256:0e99e8821643ea5b235718642b93bb32486af9c8162c8b8731f7cbdc951a7f46
           detect --source . --no-git --config .gitleaks.toml --redact --no-banner
 
-  build:
-    # The universal required gate: lint, typecheck, format, test, build on
-    # every PR. Heavy gates (e2e, Lighthouse, a11y, data-integrity) stay in
-    # their own workflows — they are optional extensions, not part of this job.
+  scope:
+    # How much of the gate this PR needs, from the paths it touches
+    # (scripts/ci/classifyChanges.ts). Node strips the types itself, so this job
+    # needs no `npm ci` and answers in seconds. An unknown path or an unreadable
+    # diff classifies as `code`: a mistake costs minutes, never a gate.
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      scope: ${{ steps.scope.outputs.scope }}
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+
+      - name: Scope the checks to what this PR changes
+        id: scope
+        run: node --experimental-strip-types scripts/ci/classifyChanges.ts "origin/${{ github.base_ref }}" | tee -a "$GITHUB_OUTPUT"
+
+  gates:
+    # Every cheap gate, on every PR whatever it touches: traceability, public-
+    # repository hygiene, the migration and ledger checks, formatting.
+    runs-on: ubuntu-latest
+    needs: scope
     permissions:
       contents: read
 
@@ -58,16 +82,6 @@ jobs:
           cache: "npm"
 
       - run: npm ci
-
-      # How much of the gate this PR needs, from the paths it touches
-      # (scripts/ci/classifyChanges.ts). The job always starts, because
-      # `CI / build` is a required check and a check that never runs blocks the
-      # PR forever; only its heavy steps are skipped. An unknown path or an
-      # unreadable diff classifies as `code`, so a mistake costs minutes and
-      # never a gate.
-      - name: Scope the checks to what this PR changes
-        id: scope
-        run: npx tsx scripts/ci/classifyChanges.ts "origin/${{ github.base_ref }}" | tee -a "$GITHUB_OUTPUT"
 
       # Restore the ESLint + Prettier caches so `npm run lint` and
       # `npm run format:check` only re-check files whose *content* changed since
@@ -88,9 +102,6 @@ jobs:
           key: linters-${{ hashFiles('package-lock.json', 'eslint.config.mjs', '.prettierrc.json', '.prettierignore') }}-${{ github.sha }}
           restore-keys: |
             linters-${{ hashFiles('package-lock.json', 'eslint.config.mjs', '.prettierrc.json', '.prettierignore') }}-
-
-      - run: npm run lint
-        if: steps.scope.outputs.scope == 'code'
 
       # Diff-scoped, like the pre-commit hook but against the PR base instead of
       # HEAD. A bare run only surveys (the tree still holds ~1245 tests that
@@ -177,15 +188,6 @@ jobs:
       - run: npm run check:skill-parity
       - run: npm run check:pagination-contract
 
-      # The one question none of the gates above asks: does anything still
-      # import this? Ten checks watched traceability, action pins, the env
-      # example, the migration sequence and the charters, and none of them
-      # noticed thirty-two unreferenced files or thirteen unused dependencies
-      # accumulating. The ceilings live in scripts/ci/checkDeadCode.ts and can
-      # only go down.
-      - run: npm run check:dead
-        if: steps.scope.outputs.scope == 'code'
-
       # Pre-merge, only what is knowable without a database: no two files
       # claiming the same version or name, no hole in the sequence. Whether a
       # migration is *applied* is meaningless here — the one this PR adds is
@@ -205,31 +207,183 @@ jobs:
       # loader and GABARITS §1 bis's network/format table available to it.
       - run: npm run check:production-ledger
 
-      - run: npm run typecheck
-        if: steps.scope.outputs.scope == 'code'
-
       - run: npm run format:check
 
-      - run: npm run test:coverage
-        if: steps.scope.outputs.scope == 'code'
+  docs-tests:
+    # A docs or corpus PR cannot move coverage, but ~100 tests read `docs/`
+    # and `dataset/` straight off the disk (no import for `--changed` to
+    # follow), so those run by name. The list comes from grep, never from a
+    # hand-kept table that would drift as tests are added.
+    runs-on: ubuntu-latest
+    needs: scope
+    if: needs.scope.outputs.scope != 'code'
+    permissions:
+      contents: read
 
-      # A docs or corpus PR cannot move coverage, but ~100 tests read `docs/`
-      # and `dataset/` straight off the disk (no import for `--changed` to
-      # follow), so those run by name. The list comes from grep, never from a
-      # hand-kept table that would drift as tests are added.
-      - name: Tests that read the docs and the corpus
-        if: steps.scope.outputs.scope != 'code'
-        run: >
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - run: npm ci
+
+      - run: >
           npx vitest run
           $(grep -rlE "dataset/|docs/" --include='*.test.ts' --include='*.test.tsx' src scripts eslint)
 
-      # Aggregated charter-v2 contract suite (ETNI-982 · FR110): already
-      # covered by test:coverage above, but a dedicated named step attributes
-      # a charter regression to "charter contract suite failed" instead of
-      # burying it in the generic test run's output.
-      - name: Charter contract suite
-        run: npm run test:charter-contracts
-        if: steps.scope.outputs.scope == 'code'
+  lint:
+    runs-on: ubuntu-latest
+    needs: scope
+    if: needs.scope.outputs.scope == 'code'
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - run: npm ci
+
+      # Restore the ESLint + Prettier caches so `npm run lint` and
+      # `npm run format:check` only re-check files whose *content* changed since
+      # a prior run. Both scripts must use `--cache-strategy content` (not the
+      # default `metadata`): CI does fresh checkouts, so every file gets a new
+      # mtime and `metadata` would never hit. Keyed on the lockfile + both
+      # linter configs because ESLint's / Prettier's own caches invalidate on
+      # file-content changes but NOT on a plugin/version or rule-config bump;
+      # the `github.sha` suffix makes every run save a fresh (non-stale) entry
+      # and the restore-keys prefix falls back to the most recent cache for the
+      # same config.
+      - name: Restore linter caches
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            node_modules/.cache/eslint
+            node_modules/.cache/prettier
+          key: linters-${{ hashFiles('package-lock.json', 'eslint.config.mjs', '.prettierrc.json', '.prettierignore') }}-${{ github.sha }}
+          restore-keys: |
+            linters-${{ hashFiles('package-lock.json', 'eslint.config.mjs', '.prettierrc.json', '.prettierignore') }}-
+
+      - run: npm run lint
+
+  typecheck:
+    runs-on: ubuntu-latest
+    needs: scope
+    if: needs.scope.outputs.scope == 'code'
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - run: npm ci
+
+      - run: npm run typecheck
+
+      # The one question none of the gates above asks: does anything still
+      # import this? Ten checks watched traceability, action pins, the env
+      # example, the migration sequence and the charters, and none of them
+      # noticed thirty-two unreferenced files or thirteen unused dependencies
+      # accumulating. The ceilings live in scripts/ci/checkDeadCode.ts and can
+      # only go down.
+      - run: npm run check:dead
+
+  tests:
+    # The suite is 1,095 files and took 5-8 minutes on one machine. Four shards
+    # run it side by side; each writes a blob (results + raw coverage) and skips
+    # the coverage thresholds, which mean nothing on a slice. `tests-coverage`
+    # merges the blobs and applies the thresholds once.
+    runs-on: ubuntu-latest
+    needs: scope
+    if: needs.scope.outputs.scope == 'code'
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4]
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - run: npm ci
+
+      - run: npx vitest run --coverage --shard=${{ matrix.shard }}/4 --reporter=blob --coverage.reporter=json
+        env:
+          VITEST_SHARD: "1"
+
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: vitest-blob-${{ matrix.shard }}
+          path: .vitest-reports/
+          # The directory starts with a dot, which upload-artifact skips by
+          # default; with a warning only, the shards looked green and the merge
+          # found nothing to merge.
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 1
+
+  tests-coverage:
+    # The merged report: every test result, and the one coverage threshold.
+    # The charter contract suite is ordinary vitest files, so a charter
+    # regression fails in a shard under its own file name; the dedicated step
+    # that re-ran it after the suite is gone.
+    runs-on: ubuntu-latest
+    needs: tests
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - run: npm ci
+
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          pattern: vitest-blob-*
+          path: .vitest-reports
+          merge-multiple: true
+
+      - run: npx vitest --merge-reports --coverage
+
+  next-build:
+    runs-on: ubuntu-latest
+    needs: scope
+    if: needs.scope.outputs.scope == 'code'
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - run: npm ci
 
       # .next/cache is content-hashed by Next, so a stale entry is ignored,
       # never mis-served — restoring it only ever saves compile work.
@@ -252,7 +406,6 @@ jobs:
       # the app compiles. The same values keep it running on Dependabot and
       # fork PRs, where secrets are not exposed.
       - run: npm run build
-        if: steps.scope.outputs.scope == 'code'
         env:
           NEXT_PUBLIC_SUPABASE_URL: "https://placeholder.supabase.co"
           NEXT_PUBLIC_SUPABASE_ANON_KEY: "placeholder-anon-key"
@@ -271,6 +424,40 @@ jobs:
             printf 'Untracked or modified files after the build:\n%s\n' "$dirty"
             exit 1
           fi
+
+  build:
+    # `CI / build` is the one required check and keeps its name: this job is
+    # the verdict. It waits for every other job and fails if any of them failed
+    # or was cancelled; a skipped one (the code-only jobs on a docs or corpus
+    # PR) counts as passed. Adding a job to this workflow means adding it to
+    # `needs`, or its failure no longer blocks the merge.
+    runs-on: ubuntu-latest
+    needs:
+      [
+        scope,
+        gates,
+        docs-tests,
+        lint,
+        typecheck,
+        tests,
+        tests-coverage,
+        next-build,
+      ]
+    if: always()
+    permissions:
+      contents: read
+
+    steps:
+      - name: Every job this PR needed has passed
+        env:
+          NEEDS: ${{ toJSON(needs) }}
+        run: |
+          echo "$NEEDS" | node -e '
+            const needs = JSON.parse(require("fs").readFileSync(0, "utf8"));
+            const bad = Object.entries(needs).filter(([, n]) => !["success", "skipped"].includes(n.result));
+            for (const [name, n] of bad) console.error(`${name}: ${n.result}`);
+            process.exit(bad.length ? 1 : 0);
+          '
 
   dependency-audit:
     # A high-severity advisory in a dependency change fails the PR that

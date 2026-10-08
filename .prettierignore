@@ -5,6 +5,7 @@ dist
 build
 storybook-static
 coverage
+.vitest-reports
 bootstrap/output
 *.min.js
 *.min.css

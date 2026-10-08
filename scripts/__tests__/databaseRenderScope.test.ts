@@ -134,7 +134,7 @@ function runScope(
 describe("CI build never reads the database", () => {
   // @req REQ-032
   it("builds with placeholder Supabase values, never the repository secrets", () => {
-    const build = stepsOf(jobBlock("ci.yml", "build")).find((step) =>
+    const build = stepsOf(jobBlock("ci.yml", "next-build")).find((step) =>
       /run: npm run build$/m.test(step)
     );
 
