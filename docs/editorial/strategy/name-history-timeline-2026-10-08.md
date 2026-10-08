@@ -44,6 +44,15 @@ palette: [mockup v5](name-history-timeline-mockup-v5.html), terre cuite.
   Type-specific fields (kinship for a family name, borders for a country)
   stay alongside it.
 
+- **It lives inside each fiche**, as a `nameHistory` block with exactly the
+  same shape in every model, validated by one shared schema. A separate
+  file per subject (`noms/`) was weighed and set aside: the fiches already
+  hold name content (769 people `originOfExonyms`, 54 country etymologies),
+  and two files per subject would let two versions of a name's origin drift
+  apart, on a site whose promise is to show every hypothesis in one place.
+  `nameHistory` replaces those fields as each subject is enriched, and the
+  12 `noms/` files fold into their fiches.
+
 - **Competing origins** of one name in one period are tiles in the same
   group, labelled "hypothèse 1, 2, 3", in a neutral order.
 - **Convergence is told, not drawn.** Bangala, bobangi and mangala feeding
