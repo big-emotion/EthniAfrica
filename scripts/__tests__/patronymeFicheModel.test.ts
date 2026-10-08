@@ -26,6 +26,7 @@ const COMMON_KEYS = [
   "gaps",
   "homonyms",
   "id",
+  "nameHistory",
   "nameMain",
   "nameSystem",
   "origin",

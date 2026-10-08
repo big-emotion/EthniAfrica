@@ -8,6 +8,7 @@
 
 import { z } from "zod";
 import { ficheSourceTierSchema } from "./ficheSourceTier";
+import { nameHistorySchema } from "./nameHistoryParser";
 
 const sourceSchema = z.object({
   title: z.string().min(1),
@@ -76,6 +77,7 @@ const placeSchema = z.object({
     z.object({ field: z.string().min(1), reason: z.string().min(1) })
   ),
   sources: z.array(sourceSchema),
+  nameHistory: nameHistorySchema.optional(),
 });
 
 type PlaceRecord = z.infer<typeof placeSchema>;
