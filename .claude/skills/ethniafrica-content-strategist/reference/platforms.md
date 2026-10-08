@@ -3,14 +3,14 @@
 **Current-policy precedence, 2026-09-22.** The measurements below are historical
 baselines, not current observations. Use a fresh six-network collection for each
 strategy run. Cadence comes from `docs/productions/README.md` and the dated
-strategy roadmap; network/format distribution comes from GABARITS §1 bis, whose
-September 21 revision supersedes the older LinkedIn video refusal below.
+strategy roadmap; network/format distribution comes from the September 21 rule
+recorded under "What changes per channel" below, which supersedes the older LinkedIn video refusal below.
 The operator's ordered thematic sequence supersedes rigid pillar rotation and
 fixed new-subject quotas. Historical algorithm and audience generalisations here
 must not substitute for measured evidence.
 
 **Audience correction, 2026-09-30.** Use `docs/editorial/audience-personas.md`
-for current reader needs and `docs/audience/audit-2026-09-30.md` for dated
+for current reader needs and the latest dated audit under `docs/audience/` for
 observations. The historical material below is not a live audience profile or a
 platform rule. Do not infer age, loyalty, occupation or diaspora identity from a
 network. The measured Facebook follower geography is predominantly West African;
@@ -126,7 +126,7 @@ channel by a reach metric, is how a working channel gets killed.
   they do not prove trust, agreement or comprehension.
 - **Job**: brand and aesthetic credibility — **plus traffic, as of 09-13**, the
   first measured evidence any channel here reliably converts to a site visit.
-- **Frequency**: 3 per week, the reel and the carousel (`GABARITS-SOCIAL.md` §1 bis), plus a story on every
+- **Frequency**: 3 per week, the reel and the carousel, plus a story on every
   publication carrying two stickers: the link sticker — stories are the only
   place a link is one tap away — and the « Questions » sticker, the cheapest
   reply the platform offers, carrying the question pinned under the TikTok post.
@@ -183,12 +183,16 @@ batched on Sunday** — is sound and is already running. Do not propose a
 different cadence without a measured reason.
 
 What changes per channel is not the cadence but the **format and the caption**.
-Which format goes where is a rule, not a per-post choice:
-`docs/design/gabarits-social/GABARITS-SOCIAL.md` §1 bis, decided by the operator
-on 2026-09-16 from the 2026-09-15 measurement. Every publication also carries the
-Instagram story with its link and Questions stickers. This skill proposes a
-change to that table only with the numbers that justify it, and the change is
-written into §1 bis with its date — never applied to one post by taste.
+Which format goes where is a rule, not a per-post choice. The operator's
+decision of 2026-09-21 (replacing the per-network split of 2026-09-16): **both
+formats, reel and carousel, go to every network that accepts them** — TikTok,
+Instagram, Facebook, YouTube and LinkedIn take both, LinkedIn also takes a text
+post with a link from the personal profile, and X takes the reel and a text post
+with a link but never the carousel, because X has no carousel (a platform
+constraint, not a measurement). Every publication also carries the Instagram
+story with its link and Questions stickers. This skill proposes a change to that
+rule only with the numbers that justify it, recorded with its date — never
+applied to one post by taste.
 The operator has already run all five networks simultaneously twice (09-11,
 09-12) rather than phasing them in; treat that as the current default cadence
 unless told otherwise. X opened on 09-16 and joins that same-day set, so the

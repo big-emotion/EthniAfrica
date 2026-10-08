@@ -222,7 +222,7 @@ gets the facade again. `CONSENT_EXPIRY_MONTHS = 12` already covers expiry.
 ### 3.4 The legal paragraphs, drafted (brief §3.2 q8)
 
 To be inserted under _« Services et sous-traitants »_ / _"Services and
-processors"_ — `src/lib/legal-pages.ts` and `src/lib/legal-pages.en.ts` — **only
+processors"_ — `src/lib/legal-pages.ts` and `src/lib/legal-pages.en.ts` (the latter removed in #1575) — **only
 when a provider is actually switched on.** Publishing a sub-processor the site
 does not contact is a false statement about the site in the direction that
 looks prudent.
@@ -604,7 +604,7 @@ entirely.
 
 It also happens to be the only option that is _better_, not merely cheaper:
 
-- The frames are rendered by `social/harness` from the project's own
+- The frames were rendered by `social/harness` (removed in #1571) from the project's own
   `cards.json`. The source files exist before the platform does. Embedding an
   Instagram post to show images the site generated would route the site's own
   output through a third party to get it back.
@@ -1041,7 +1041,7 @@ REQ-128 applies unchanged and is worth naming, since it is the requirement the
 middleware comment defers to: any video attached to an entity carries its
 author, a licence URI and the source page it came from. These are the project's
 own productions, so the author is the project and the licence is the one
-`social/harness` computes at render; the field is filled, not waived.
+`social/harness` (removed in #1571) computed at render; the field is filled, not waived.
 
 ### 8.2 When the piece goes away (brief §3.1 q5)
 
@@ -1051,7 +1051,7 @@ on a schedule, and reporting rather than blocking.
 
 `scripts/checkEmbedAvailability.ts` calls each published record's provider
 oEmbed endpoint and lists the ones that 404. It runs nightly, **cannot fail the
-job**, and exits 0 on findings — the shape `check:translation-parity` already
+job**, and exits 0 on findings — the shape `check:translation-parity` (since removed) already
 has, and for the same reason: a network round-trip to a third party is not a
 thing a pull request should be able to be blocked by.
 
@@ -1210,7 +1210,7 @@ change with the behaviour rather than be loosened to accommodate it.
 
 Two gates that hold across all four and are easy to forget because neither is
 about embeds: `check:local-paths` and `check:infra-disclosure` grep every
-tracked file, this document included. And `check:translation-parity` will report
+tracked file, this document included. And `check:translation-parity` (since removed) would report
 the French legal paragraph before its English twin lands if they are committed
 apart — it cannot fail the job, which is precisely why it is worth reading
 rather than trusting the build.
@@ -1251,7 +1251,7 @@ documents officially, never load-bearing on its own
 `origin/codex/search-feed-implementation`: `src/middleware.ts`,
 `src/__tests__/middleware.test.ts`, `src/lib/consent.ts`,
 `src/types/consent.ts`, `src/lib/i18n/copy/consent.ts`,
-`src/lib/legal-pages.ts`, `src/lib/legal-pages.en.ts`, `next.config.ts`,
+`src/lib/legal-pages.ts`, `next.config.ts`,
 `.lighthouserc.gate.js`, `.lighthouserc.js`, `scripts/quiz-bundle-size.ts`,
 `scripts/home-globe-bundle-size.ts`, `scripts/ci/checkOrphanDocs.ts`,
 `src/lib/discoveries/catalog.ts`, `src/lib/discoveries/videos.ts`,

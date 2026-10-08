@@ -186,7 +186,7 @@ jobs:
       - run: npm run check:asset-weight
 
       # Three gates that existed and ran nowhere, measured 2026-09-18. Two of
-      # them are named in CLAUDE.md's list of gates headed "all CI-blocking on
+      # them were documented as "all CI-blocking on
       # every PR", which is the worst shape a check can take: believed, and
       # protecting only whoever remembers to type it. They are cheap — two tsx
       # scripts — so the answer was to make the
@@ -207,10 +207,9 @@ jobs:
       # script existed, passed, and was wired to nothing.
       - run: npm run check:rls-coverage
 
-      # Validates docs/productions/ — the versioned publishing-cadence ledger
-      # (docs/plans/production-history-plan.md). Not a ratchet: every entry
-      # is authored once, correctly, by a skill that already has the corpus
-      # loader and GABARITS §1 bis's network/format table available to it.
+      # Validates docs/productions/ — the versioned publishing-cadence ledger.
+      # Not a ratchet: every entry is authored once and must be correct as
+      # written.
       - run: npm run check:production-ledger
 
       - run: npm run format:check

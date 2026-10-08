@@ -85,10 +85,5 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

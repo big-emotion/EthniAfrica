@@ -96,7 +96,7 @@ work nobody read, is dropped or left flagged.
   not a finding, and is not repeated as fact. Signature place of the 1885 convention not written
   (operator decision). Flags: source titles s1/s5 carried a raw corpus identifier (rewritten);
   our Yombe people record cites a DICE page about a different (Zambian) Yombe group — for
-  `/afrik-curator`, not fixed here; image reuse on cards 1/9, 2/8, 6/7 and credit-check on
+  editorial review (the `/afrik-curator` skill, since removed), not fixed here; image reuse on cards 1/9, 2/8, 6/7 and credit-check on
   1, 6, 7, 9; the carved figures are credited "Kongo" by their museums, not "Yombe"; Leganet.cd
   (in s4) was not opened.
 - **Improvement over the carousel.** Removes an etymology the carousel stated on encyclopedia

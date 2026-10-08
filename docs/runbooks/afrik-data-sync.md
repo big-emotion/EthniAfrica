@@ -11,7 +11,7 @@ own two-step rule — see [`migration-state.md`](./migration-state.md).
 ## Which environment am I writing to?
 
 `--target` names the **application** environment, and the two shared values are `recette` and
-`production` — the same vocabulary as the branches and the Vercel environments. A third value,
+`production` — the same vocabulary as the branches and the deploy environments. A third value,
 `local`, names a contributor's own `supabase start` stack; see [Local bootstrap](#local-bootstrap).
 
 | Application environment | Supabase project                             | Where the loader reads its URL                                              |
@@ -338,8 +338,8 @@ equivalent step, and that is a decision, not an oversight:
   (`src/api/v2/services/{countryFacet,languagesFacet,languageFamilyAtlas,continentPeopleCounts}.ts`)
   cache with `unstable_cache(..., { revalidate: 3600 })` — time-based, with no `tags` option.
   Nothing in the codebase attaches the `afrik-language-families` / `afrik-peoples` /
-  `afrik-countries` tags to a cache entry; only the revalidate route and
-  `src/lib/cache/dataVersion.ts` reference those strings. Mirroring production's step onto
+  `afrik-countries` tags to a cache entry; only the revalidate routes reference those
+  strings. Mirroring production's step onto
   recette would call `revalidateTag()` against tags no cache entry carries — it would not bust
   the caches that actually matter, so it would add a false sense of freshness rather than real
   invalidation.

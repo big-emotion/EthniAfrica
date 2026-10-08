@@ -37,7 +37,7 @@ anything. Where the plan does not decide, it says so in §12 and names the defau
 6. `docs/design/brand-charter.md`, `typography-charter.md`, `actions-charter.md`,
    `games-charter.md` — the rules §3 applies.
 
-**Working rules** (from `CLAUDE.md`, repeated because each has already cost a red
+**Working rules** (repeated because each has already cost a red
 build):
 
 - One git worktree per session; run `npm run worktree:setup` if you created it by
@@ -372,7 +372,7 @@ Desktop: blocks 4 and 10 stay rows (≤ 6 and ≤ 3 items fit), block 5 becomes 
   (`text-afh-caption font-bold text-[var(--accent-ink)]`), texts in §5.9.
 - `ShortPosterCard`: one link to the short's Découvertes permalink. The poster is
   an **image** — the cover the production pipeline exports next to each video
-  (GABARITS-SOCIAL §1 ter), title burnt in — `rounded-afh-lg overflow-hidden`,
+  (GABARITS-SOCIAL §1 ter, since removed), title burnt in — `rounded-afh-lg overflow-hidden`,
   130 × 231 / 160 × 284, `object-cover`, `alt` « Couverture : D'où vient le nom
   « X » ? ». Over it: the duration badge top-right (media-badge tokens, pill,
   padding 2 × 8) and a play glyph (inline SVG, `aria-hidden`, 32 / 36 px, centred
@@ -481,8 +481,8 @@ translated from corpus fields, never pasted (charter §3: no scholarly word).
 ### 5.13 Disagreement and silence copy
 
 When sources disagree (Lingala: date of the name, speaker counts), the page says
-so in the sub of block 5 and in block 13, **never picks one** (CLAUDE.md,
-« Assertion tracks certainty »). Silences come from the corpus's declared gaps
+so in the sub of block 5 and in block 13, **never picks one** (« Assertion
+tracks certainty »). Silences come from the corpus's declared gaps
 (`gaps[]`, missing attestation dates, missing origin), one dashed card each.
 
 ### 5.14 `FeedFiches` (block 15) [`fiches`]
@@ -578,7 +578,7 @@ add `factsForEntities(ids)` (Phase 3).
 
 ### 6.4 Generated images
 
-`generatedImagePublications()` (`src/lib/discoveries/generatedImages.ts`, 12,
+`generatedImagePublications()` (`src/lib/discoveries/generatedImages.ts`, removed in #1571, 12,
 entities people/country), sources in `generatedImageSources.json`, copy in
 `generatedImagesCopy`, permalink `discoveryPath(lang, entry)`.
 
@@ -606,6 +606,7 @@ Array<{ kind: "people"|"country"|"family"|"language"|"patronyme", id, label? }>`
   (listed in the former social-library inventory, since deleted) get a manifest record each, with
   subjects. `cards.json` (GABARITS-SOCIAL §10) gains `sujets: ["PPL_…"]` so the
   production chain writes subjects from now on (`/ethniafrica-structure`).
+  The chain, that skill and GABARITS-SOCIAL were removed in #1571.
 
 ### 6.6 Quiz
 
@@ -641,12 +642,13 @@ The page calls it once the subjects are known (after `searchWithLeads`).
 ## 7. Copy
 
 All new strings go to a new module `src/lib/i18n/copy/searchFeed.ts`
-(`searchFeedCopy`, registered in `src/lib/i18n/copy/index.ts`), `fr` and `en`.
+(`searchFeedCopy`, registered in `src/lib/i18n/copy/index.ts`, since removed), `fr` and `en`
+(French only since #1575).
 French strings are the boards' verbatim (typographic apostrophes `’` as in
 `nameAnswerCopy`; the boards use `'` — normalise when comparing, §10.1). Existing
-keys in `nameAnswerCopy` are reused, not duplicated. English copy is written in
-the same change (`copyParity.test.ts` fails otherwise); publication stays
-French-only by `SITE_LOCALE_MODE`.
+keys in `nameAnswerCopy` are reused, not duplicated. English copy was written in
+the same change (`copyParity.test.ts` failed otherwise); #1575 later removed the
+English copy and `SITE_LOCALE_MODE`.
 
 ## 8. Phases
 

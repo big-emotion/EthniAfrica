@@ -158,7 +158,7 @@ function proverbPublications(): DiscoveryPublication[] {
 
 /**
  * Productions filed under `docs/productions/**\/*.json` (the versioned
- * ledger, `docs/plans/production-history-plan.md`), projected alongside the
+ * ledger), projected alongside the
  * hand-authored `DISCOVERY_VIDEOS`. Most are not yet eligible — the ledger
  * does not carry a poster or a measured duration for any subject yet — so
  * this concat is safe today and starts working the moment a ledger entry

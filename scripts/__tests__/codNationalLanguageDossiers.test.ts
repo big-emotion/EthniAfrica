@@ -28,9 +28,6 @@ interface LanguageDossier {
       notes: string;
     }>;
   };
-  _translation?: {
-    deferred?: { en?: string };
-  };
 }
 
 const projectRoot = process.cwd();
@@ -115,14 +112,4 @@ describe("DRC national-language dossier wave", () => {
     expect(readDossier("ktu")?.peoples).toEqual([]);
     expect(readDossier("swc")?.peoples).toEqual([]);
   });
-
-  // @req REQ-145
-  it.each(dossierIds)(
-    "defers the English counterpart for %s explicitly",
-    (id) => {
-      expect(readDossier(id)?._translation?.deferred?.en).toBe(
-        "English translation is deferred until the French DRC country enrichment pass is stable."
-      );
-    }
-  );
 });

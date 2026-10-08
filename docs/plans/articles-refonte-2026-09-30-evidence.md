@@ -135,7 +135,7 @@ Built test-first on branch `articles-ui` from the frozen contract and merged wit
 conflicts: `src/components/articles/*` (listing, article view, media switch, carousel),
 `/fr/dossiers` as the Articles listing (paged with `pageOf`), `/fr/dossiers/<slug>` serving a
 published article first and otherwise falling through unchanged to the old dossier logic
-(drafts and `DOS_*` slugs still answer 404), bilingual copy in `src/lib/i18n/copy/articles.ts`.
+(drafts and `DOS_*` slugs still answer 404), bilingual copy in `src/lib/i18n/copy/articles.ts` (French-only since #1575).
 
 - Read on the rendered pages by the worker at 320, 390, 768 and 1200 px with 15 temporary
   fixture records (deleted afterwards, none committed): no horizontal overflow, one h1, draft
@@ -188,14 +188,14 @@ old-URL disposition beyond "withheld routes stay 404", brand charter §8.6 text.
 
 ## P3 — recovery and import (worker B, merged; recovery is PARTIAL)
 
-Tool: `social/tools/articles-import/` (dry run by default, `--write`, required `--out` outside
+Tool: `social/tools/articles-import/` (removed in #1571) (dry run by default, `--write`, required `--out` outside
 the repository, no default path, roots read from the two environment variables). 36 tests on
 isolated fixtures cover: dry run writes nothing, byte-identical re-run, refusal on a source
 changed since the snapshot / hash mismatch / two undecided editions / reserved, legacy or
 duplicate slug, slide order kept, cross-posts collapsed into one edition, a corrected edition
 shown with its verbatim correction note and never the older URL, hand-edited drafts never
 overwritten, missing media raised as an exception, private roots and production notes never
-reaching public output. `npm run test:social-tools`: 381 pass, 0 fail.
+reaching public output. `npm run test:social-tools` (since removed): 381 pass, 0 fail.
 
 Private outputs (not committed): `manifest.json`, `report.md`, `curation.json` and
 `derivatives/` under the workshop's `_articles-recovery` folder (checksums, per-candidate
@@ -356,7 +356,7 @@ recovery, 4 not published and 6 excluded in P3, and 8 drafts whose slides are no
 - **Pygmée:** a recognisable minor appears with no documented consent (marked to re-read);
   **Méconnaissance:** the reel uses cloned voices of named people whose usage rights the
   workshop never settled; soundtrack clearance for website reuse is recorded for no video.
-- `PPL_YOMBE` cites a page about a different, Zambian Yombe group (needs `/afrik-curator`).
+- `PPL_YOMBE` cites a page about a different, Zambian Yombe group (needs editorial review; the `/afrik-curator` skill was removed in #1571).
 
 **Sources.** Each report separates pages opened this pass from pages the workshop recorded as
 read. Where a fetch tool's summary looked implausible, only the workshop-recorded part was used.

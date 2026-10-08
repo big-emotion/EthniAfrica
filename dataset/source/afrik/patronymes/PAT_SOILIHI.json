@@ -103,10 +103,5 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Soilihi », « Comoros », « Comorian », « surname », « onomastics », « etymology » et « transmission », ainsi que la consultation directe de « Soilihi Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Soilihi permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
-    }
-  }
+  ]
 }

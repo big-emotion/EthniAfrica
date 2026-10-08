@@ -107,10 +107,5 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Idrissi lignée », « Idrissi clan », « Idrissi tribe » et « Idrissi place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

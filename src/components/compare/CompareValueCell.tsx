@@ -25,7 +25,7 @@ export interface CompareValueCellProps {
   showReferenceYear?: boolean;
 }
 
-// AFRIK identifier shapes (see CLAUDE.md): peoples PPL_xxx, families FLG_xxx,
+// AFRIK identifier shapes: peoples PPL_xxx, families FLG_xxx,
 // countries ISO 3166-1 alpha-3. Detecting these structurally lets every
 // relational field (top-level or nested) resolve to a fiche link without a
 // bespoke renderer per comparable section (FR4 navigation continuity).

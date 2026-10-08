@@ -9,11 +9,6 @@ inputs:
   - docs/editorial/refonte-plan-2026-09-18.md
   - docs/editorial/purpose-doctrine.md
   - docs/editorial/audience-personas.md
-  - docs/editorial/strategy/roadmap-2026-q4.md
-  - docs/audience/audit-2026-09-30.md
-  - docs/audience/format-audit-2026-09-26/README.md
-  - docs/audience/message/message-audit-2026-09-13.md
-  - docs/design/gabarits-social/EDITORIAL-CONTRACT.md
   - web landscape research, 2026-10-03 (sources listed at the end)
 ---
 
@@ -163,8 +158,7 @@ running on this split:
 | Source checks          | yes                         | A trained volunteer may approve sources at the `referenced` tier and check fiches alone. `official` and contested rulings stay with the operator. |
 | Search engine and site | yes                         | Runs without daily attention.                                                                                                                     |
 
-Each mission works at two levels. With Claude and git, a volunteer runs the
-project's own skills (`ethniafrica-idee`) and hands over an
+Each mission works at two levels. With Claude and git, a volunteer hands over an
 advanced draft; the operator trains people on the precise git task. Without
 them, a volunteer who simply brings sourced information through the template is
 already a contribution. Claude is welcome, never a barrier.
@@ -200,8 +194,7 @@ already a contribution. Claude is welcome, never a barrier.
   returning visitors are measured.
 - Becoming a media outlet, including long-form YouTube production as a goal.
 - Paid advertising and email lead magnets.
-- Open editing, and publication in English (the code is already bilingual, so
-  this stays a later, cheap step).
+- Open editing, and publication in English.
 - Any partnership with DNA or ancestry-matching services: they overclaim exactly
   where this project refuses to.
 

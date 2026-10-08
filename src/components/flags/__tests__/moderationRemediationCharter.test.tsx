@@ -38,7 +38,7 @@ const TERMINAL_STATES = ["accepted", "rejected", "duplicate"] as const;
 
 describe("the disposition axis carries no claim about the corpus", () => {
   // @req REQ-014
-  it("keeps corpus vocabulary out of every status label, in both locales", () => {
+  it("keeps corpus vocabulary out of every status label, in every locale", () => {
     for (const locale of LOCALES) {
       const labels = publicFlagsCopy[locale].statusDescriptions;
       for (const [status, label] of Object.entries(labels)) {

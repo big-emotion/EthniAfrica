@@ -152,7 +152,7 @@ const EMPTY_SOURCE_REF: QuizSourceRefView = {
 };
 
 /**
- * Every serving question already carries ≥ 1 Tier 1/2 resolvable source
+ * Every serving question already carries an authoritative source
  * (FR65 gate, re-checked in `composeQuizSession`), so this only chooses
  * *which* one to surface as the answer-reveal source line — highest tier
  * first, ties broken by `sourceIds` order.

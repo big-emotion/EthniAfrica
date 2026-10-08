@@ -4,11 +4,6 @@ import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 
 interface CountryFiche {
-  _translation?: {
-    deferred?: {
-      en?: string;
-    };
-  };
   content: {
     culture: {
       culturalTraditions: string | null;

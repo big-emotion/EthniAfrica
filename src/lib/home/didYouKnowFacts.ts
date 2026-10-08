@@ -19,8 +19,6 @@
  * cost, not its integration.
  */
 
-import { shuffleAnecdoteOrder } from "@/lib/home/anecdoteDeck";
-
 export type DidYouKnowEntityKind = "people" | "country" | "family";
 
 export interface DidYouKnowEntity {
@@ -1860,56 +1858,6 @@ export function pickDidYouKnowFact(
 }
 
 /**
- * Draw distinct, officially sourced facts for the home-page preview.
- *
- * Shuffling once rather than rolling once per card makes duplication
- * impossible and keeps the operation proportional to the small editorial
- * bank. When fewer entries qualify, the section tells every supported story
- * instead of filling the remaining slot with a weaker claim.
- */
-// @req REQ-113
-export function pickDidYouKnowFacts(
-  count = 2,
-  random: () => number = Math.random,
-  facts: DidYouKnowFact[] = DID_YOU_KNOW_FACTS
-): DidYouKnowFact[] {
-  if (count <= 0) return [];
-  return shuffleDidYouKnowDeck(random, facts.filter(hasOfficialSource)).slice(
-    0,
-    count
-  );
-}
-
-/**
- * The bank in a drawn order, every fact once before any fact twice.
- *
- * The anecdotes page reads one card at a time, so the draw has to be a
- * shuffled deck rather than a roll of the dice: drawing independently each
- * time a reader presses « Suivant » hands them the same anecdote twice
- * within a handful of turns, and a reader who sees a repeat concludes the
- * bank is smaller than it is. Exhausting a permutation guarantees the
- * twenty-fourth press shows the twenty-fourth fact.
- *
- * `avoidLeading` covers the seam between two permutations — without it, the
- * last card of one deck can be the first card of the next, which is the one
- * repeat a reader is certain to notice.
- */
-// @req REQ-113
-export function shuffleDidYouKnowDeck(
-  random: () => number = Math.random,
-  facts: DidYouKnowFact[] = DID_YOU_KNOW_FACTS,
-  avoidLeading: string | null = null
-): DidYouKnowFact[] {
-  const byId = new Map(facts.map((fact) => [fact.id, fact]));
-
-  return shuffleAnecdoteOrder(
-    facts.map((fact) => fact.id),
-    random,
-    avoidLeading
-  ).map((id) => byId.get(id) as DidYouKnowFact);
-}
-
-/**
  * The fact a shared URL names, or null when it names one the bank dropped.
  *
  * A link a reader posted last month has to survive the anecdote being
@@ -1926,10 +1874,8 @@ export function findDidYouKnowFact(
 }
 
 /**
- * The draw the loading interstitial uses, which differs from the band's in one
- * respect: it knows what it showed last time.
+ * The draw the loading interstitial uses: it knows what it showed last time.
  *
- * The band is seen once per visit to the home, so a uniform draw is fine there.
  * The loader is seen on every navigation, and a uniform draw over a bank this
  * small hands the reader the same fact twice in a row often enough to read as
  * broken — one navigation in six, and the reader concludes the loader is a

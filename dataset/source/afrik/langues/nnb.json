@@ -30,10 +30,5 @@
         "notes": "Notice directe pour le code ISO 639-3 nnb et le glottocode nand1264. Elle situe la langue en République démocratique du Congo et en Ouganda, atteste les variantes Kinande, Kinandi et Orundande et publie le statut EGIDS 5 en 2025. Aucun rôle véhiculaire régional n'est inféré de cette notice."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the French DRC country enrichment pass is stable."
-    }
   }
 }

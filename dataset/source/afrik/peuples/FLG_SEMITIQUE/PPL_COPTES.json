@@ -122,10 +122,5 @@
         "notes": "Source de la part chrétienne de la population égyptienne, donnée pour l'ensemble des confessions chrétiennes et non pour les seuls Coptes."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: none of the 776 people records has an English sidecar, so translating this one alone would make it the atlas's only English people record. It follows the people corpus's first translation pass."
-    }
   }
 }

@@ -175,7 +175,7 @@ export function parseNameRecordFile(raw: unknown): ParsedNameRecordFile {
     };
   }
 
-  // tsconfig has strictNullChecks: false (project-wide, see CLAUDE.md), which
+  // tsconfig has strictNullChecks: false (project-wide), which
   // zod's conditional output-type inference does not support cleanly — it
   // widens every field to optional. The cast is safe: safeParse succeeded.
   return { success: true, data: result.data as NameRecordDossier };

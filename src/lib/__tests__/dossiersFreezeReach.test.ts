@@ -15,7 +15,7 @@ import { LIVE_ROUTES } from "../../../scripts/a11yRoutes";
  * standing publishes a URL that answers 404 — which is worse than never
  * having listed it, because a crawler has to fetch it to find out.
  *
- * Written as one suite over both locales rather than one assertion per
+ * Written as one suite over every locale rather than one assertion per
  * surface: the freeze is a single decision, and it either reaches all of them
  * or it has a hole.
  */

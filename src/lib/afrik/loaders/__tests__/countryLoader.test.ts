@@ -57,7 +57,7 @@ describe("Country Loader", () => {
     });
 
     // ETNI-1290: nameFr is the name of ordinary use, nameOfficial the
-    // protocol name — see docs/adr/0008-country-namefr-common-name.md.
+    // protocol name.
     // @req REQ-033
     it("should surface nameFr as the name of ordinary use, distinct from nameOfficial, for every country", async () => {
       const countries = await loadAllCountries();

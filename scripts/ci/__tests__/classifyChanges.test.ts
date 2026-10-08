@@ -9,7 +9,7 @@ describe("classifyChanges", () => {
       classifyChanges([
         "docs/productions/peuple/ledger.json",
         "docs/editorial/reader-facing-register.md",
-        "CLAUDE.md",
+        "README.md",
       ])
     ).toBe("docs");
   });
@@ -19,7 +19,7 @@ describe("classifyChanges", () => {
     expect(
       classifyChanges([
         "dataset/source/afrik/peuples/FLG_KROU/PPL_BETE.json",
-        "dataset/translations/en/PPL_BETE.json",
+        "dataset/source/afrik/pays/CIV.json",
       ])
     ).toBe("corpus");
   });

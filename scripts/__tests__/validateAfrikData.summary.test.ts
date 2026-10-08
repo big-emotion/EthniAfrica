@@ -116,7 +116,7 @@ describe("FR28 demographics band (DEC-055: warns, never fails)", () => {
   });
 
   /**
-   * The whole advisory list, pinned. CLAUDE.md states that FR52-coverage is the
+   * The whole advisory list, pinned. FR52-coverage is meant to be the
    * only check still in it; a second entry added quietly would make that
    * sentence false and nothing else would notice.
    */

@@ -48,7 +48,7 @@ and it replaces this section.
 
 **Third-party sources.** Quotations, official figures, maps, photographs and
 documents from third parties keep their own terms, which the site states
-case by case. The Source Tier policy in `CLAUDE.md` governs how they are
+case by case. The Source Tier policy governs how they are
 recorded. Notably, media taken from Wikimedia Commons carries its own licence —
 often CC BY-SA 4.0, which is compatible, but never assume it without checking
 the credit line.

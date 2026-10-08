@@ -115,10 +115,5 @@
       "fieldPath": "origin.oralTraditions",
       "reason": "Le seul récit réuni ici est une synthèse venue de l'extérieur. Un récit sur les familles de Kong, rapporté par un officier français en 1888-1889, figure dans la fiche Daou ; nous ne l'avons pas relu pour celle-ci."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
-    }
-  }
+  ]
 }

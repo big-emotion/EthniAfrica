@@ -99,10 +99,5 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mvondo », « Ewondo », « le Cameroun », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Mvondo permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

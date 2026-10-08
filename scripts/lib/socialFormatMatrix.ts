@@ -1,13 +1,9 @@
 /**
- * Which formats each network receives. This is not a second policy — it is the
- * same table as `docs/design/gabarits-social/GABARITS-SOCIAL.md` §1 bis,
- * revised 2026-09-21 by the operator (both formats on every network; X alone
- * has no carrousel, a platform constraint), re-encoded so
- * `checkProductionLedger.ts` and the production skills can check against it in
- * code. A copy of a list is how it drifts:
- * whoever revises §1 bis must revise this constant in the same change, and
- * whoever revises this constant without touching §1 bis has broken the rule
- * that the table lives in one place.
+ * Which formats each network receives, as the operator revised it on
+ * 2026-09-21 (both formats on every network; X alone has no carrousel, a
+ * platform constraint). This constant is the table's only home, so
+ * `checkProductionLedger.ts` checks against it in code rather than against a
+ * prose copy that could drift.
  *
  * The data is `socialFormatMatrix.json`, kept as JSON so plain Node can read
  * it without a TypeScript loader. It also carries the platform limits that were
@@ -20,7 +16,7 @@ export type Network =
 
 /**
  * `texte` covers LinkedIn's "texte avec lien depuis le profil personnel" and
- * X's text-with-link — §1 bis gives both networks a text format alongside or
+ * X's text-with-link — the matrix gives both networks a text format alongside or
  * instead of a rendered image. Without it, a LinkedIn or X post has nowhere
  * to go in `publications[]` and the ledger under-reports what actually went
  * out.

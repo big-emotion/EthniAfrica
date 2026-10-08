@@ -13,9 +13,7 @@ import { ficheCanonical, type FicheKind } from "@/lib/seo/ficheCanonical";
 
 /**
  * What a fiche says about itself to a crawler: an absolute canonical on the
- * live fiche, and — since REQ-141 — its hreflang cluster, its robots
- * directive and its Open Graph card, all following the locales the fiche is
- * indexed in.
+ * live fiche, its robots directive and its Open Graph card.
  */
 
 const BASE = `https://${CANONICAL_DOMAIN}`;

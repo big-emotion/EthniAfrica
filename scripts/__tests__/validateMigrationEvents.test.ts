@@ -18,7 +18,7 @@ const MODEL = {
     format: "AFRIK JSON v2",
     entity: "migration",
     directives: [
-      "Never invent dates, paths, or peoples — every claim cites a Tier 1/2 source or is dropped",
+      "Never invent dates, paths, or peoples — every claim cites a tiered source",
       "classificationStatus is mandatory; contested events cite at least 2 sources",
       "Years are astronomical integers: negative values are BCE (e.g. -1500), positive values are CE",
       "Geometry is schematic (corridor-level), never a claim of precise historical borders",

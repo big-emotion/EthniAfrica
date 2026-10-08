@@ -2,7 +2,7 @@
 
 ## Position and promise
 
-Operator clarification, 2026-09-30; governing rule in `CLAUDE.md`.
+Operator clarification, 2026-09-30.
 
 EthniAfrica is a project of popular education. The operator uses research methods
 and seeks sources, without claiming to be a scientist, linguist or historian.
@@ -12,8 +12,7 @@ invites readers to investigate, compare and contribute.
 Write first for the African diaspora, without assuming that a reader shares one
 country, language, family history or wish to “return”. Readers living on the
 continent also encounter this work. The [editorial personas](audience-personas.md)
-describe needs rather than invented biographies; the [audience report](../audience/audit-2026-09-30.md)
-separates those intentions from observed behaviour.
+describe needs rather than invented biographies.
 
 A reader should understand the point before meeting the bibliography. Use familiar
 words, concrete verbs and one idea at a time. Define necessary specialist terms
@@ -165,7 +164,7 @@ any rule below as settled for a specific community.
 
 ## Using sources
 
-This section owns the rule; skills, the curator references and `CLAUDE.md` point
+This section owns the rule; skills and the curator references point
 here instead of restating it (remediation ledger, C01/C02/C07).
 
 - **Admission is traceability, not category.** A source the project consulted is
@@ -203,9 +202,8 @@ sentence's function, not the author's origin.
 
 A book, historical actor or quoted speaker may be the actual subject. A reading
 list must name authors; a direct quotation must identify its speaker. Do not erase
-those names to satisfy a mechanical rule. The narration checker identifies lexical
-patterns (`attribution-en-tete`); it cannot determine truth, community provenance
-or whether an author is the subject. `ethniafrica-message` performs that review.
+those names to satisfy a mechanical rule: whether an author is the subject is an
+editorial judgement, not a lexical pattern.
 
 ### Preserve what the evidence actually supports
 

@@ -112,10 +112,5 @@
         "notes": "Lu le 7 octobre 2026. « …other ethnonyms applied to the Hadza include Tindiga (from Swahili; human plural Watindiga), Kindiga, Kangeju (with a German j) and Wahi (with a German w). In current English usage, Hadza is the most commonly used term. » La phrase renvoie à Marlowe (2010). Même section : « The term \"Hadza\" is the feminine plural form of haza 'human being'. The Hadza call themselves the hazabee 'people' and their language hazane 'as the people'. » (la page de langue écrit : « Hadza itself means \"human being.\" »). Les Datooga et les Isanzu n'apparaissent pas dans cette section."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred: translate:record refuses this record on content.appellations.ethnoLinguisticGroup, which modele-peuple.json does not declare and translationClasses.ts does not classify, so the pipeline carries its French verbatim and the glossary check rejects \"peuples\". Measured 2026-09-10: 743 of the 776 people records carry that field and none of the 776 has an English sidecar, so no people record can be translated until the declaration covers it. Both sonnet and opus refused twice."
-    }
   }
 }

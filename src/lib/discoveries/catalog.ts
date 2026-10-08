@@ -218,31 +218,6 @@ export function eligiblePublications(
   });
 }
 
-/**
- * Narrows the publishable Discovery catalog to exact typed subjects.
- * An absent scope keeps the existing unscoped catalog unchanged.
- *
- * @public Awaiting its caller: the production-history brief
- * (docs/plans/production-history-brief.md) attaches productions to fiches
- * through this filter, so it is kept, with its tests, until that work lands.
- */
-// @req REQ-180
-export function publicationsForSubjects(
-  records: readonly DiscoveryPublication[],
-  subjects: readonly DiscoverySubjectReference[] = []
-): DiscoveryPublication[] {
-  const eligible = eligiblePublications(records);
-  if (subjects.length === 0) return eligible;
-
-  return eligible.filter((entry) =>
-    entry.detail?.entities.some((entity) =>
-      subjects.some(
-        (subject) => subject.kind === entity.kind && subject.id === entity.id
-      )
-    )
-  );
-}
-
 // @req REQ-158
 export function discoveryPath(
   language: Language,

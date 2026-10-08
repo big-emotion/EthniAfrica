@@ -77,9 +77,8 @@ describe("toDiscoveryPublication", () => {
   it("still projects an incomplete entry, but never as eligible", () => {
     // The real Lingala and Côte d'Ivoire ledger entries, as filed 2026-09-23:
     // a verified platform link, but no poster asset and no measured duration
-    // yet — the state docs/plans/production-history-plan.md §6 calls
-    // "projected but stays invisible on the feed until a URL lands," extended
-    // here to any missing required field, not only the URL.
+    // yet. Such an entry is projected but stays invisible on the feed until
+    // every required field lands, not only the URL.
     const partial = entry({
       publications: [
         {

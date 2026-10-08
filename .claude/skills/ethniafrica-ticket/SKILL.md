@@ -65,7 +65,7 @@ If `ferry.config.yaml` or `ferry-jira-automation-setup.md` changes, the skill mu
 - Summarise the ticket's intent, scope, and acceptance criteria.
 - **Surface assumptions explicitly** in the refinement (per the core operating behaviors): any ambiguous requirement gets a stated assumption rather than a silent guess.
 
-Apply the project's mandatory refinement rules. Each one has a trigger, a consequence on sub-task ordering, and an N/A escape hatch. They come from `CLAUDE.md` and are what stops silent scope drift.
+Apply the project's mandatory refinement rules. Each one has a trigger, a consequence on sub-task ordering, and an N/A escape hatch. They are what stops silent scope drift.
 
 **R1 — AFRIK hierarchy = data-model-first ordering.**
 _Trigger:_ the ticket touches AFRIK entities (linguistic families, languages, peoples, countries) — new fields, new relations, a new fiche section, or a migration under `supabase/migrations/`.
@@ -79,15 +79,15 @@ _N/A:_ no API surface touched.
 
 **R3 — TDD is mandatory, so every implementation sub-task is a test sub-task first.**
 _Trigger:_ always.
-_Consequence:_ each sub-task's description states the failing test it must produce before any implementation code. Tests land at the placement conventions declared in `CLAUDE.md` — unit tests in `src/lib/**/__tests__/**/*.test.ts`, handler/service tests in `src/api/v2/**/__tests__/**/*.test.ts`, API route tests in `src/app/api/v2/__tests__/**/*.test.ts`, parser tests in `src/lib/afrik/parsers/__tests__/**/*.test.ts`. A sub-task with no identified test file is under-refined — split it or name the file.
+_Consequence:_ each sub-task's description states the failing test it must produce before any implementation code. Tests land at the placement conventions — unit tests in `src/lib/**/__tests__/**/*.test.ts`, handler/service tests in `src/api/v2/**/__tests__/**/*.test.ts`, API route tests in `src/app/api/v2/__tests__/**/*.test.ts`, parser tests in `src/lib/afrik/parsers/__tests__/**/*.test.ts`. A sub-task with no identified test file is under-refined — split it or name the file.
 _N/A:_ none. A ticket that genuinely cannot be tested (a pure doc change) says so in the refinement and skips the test sub-task explicitly.
 
 **R4 — Source Tier boundary on any content work.**
 _Trigger:_ the ticket would add, change, or surface an ethnographic or demographic claim (fiche content, seed data, copy asserting a fact).
-_Consequence:_ **nothing is forbidden, everything is labelled** (the Source Tier Policy in `CLAUDE.md`, superseding the retired Tier 1/2/3 policy under which Tier 3 was forbidden and an un-citable claim was deleted). Every claim carries at least one source, and **every source carries an explicit tier**: `official` (UN, UNFPA, SIL Ethnologue, Glottolog, UNESCO, IWGIA, national statistics institutes), `referenced` (published, identifiable, verifiable work — academic, press, books) or `unverified` (aggregators, tertiary encyclopedias, blogs, social media, community accounts, AI-generated text). A weak source is published at `unverified`, never rejected and never over-tiered; the fiche's confidence follows from the tiers it rests on. Provenance is a separate axis: `source_kind` (e.g. `ai_generated`, which multiplies the weight by 0.5) is set alongside the tier, never folded into it. `needs_review` is a transitional marker for a citation nobody has ruled on yet, held by a ratchet — a ticket never introduces a new one. Wikipedia is read first and cited for what it is (`docs/editorial/reader-facing-register.md`, "Using sources"): prefer the primary source discovered through it, cited at its own tier by its own URL with the language versions crossed recorded in `notes`. The CIA World Factbook was sunset on 2026-02-04: never add a live `cia.gov/the-world-factbook` URL, cite a dated pre-sunset Wayback Machine snapshot instead. Where the claim is contested the sentence carries the uncertainty (`CLAUDE.md`, "Assertion tracks certainty"), and where a local account exists it is named beside the external one. Demographics use the 2025 reference year; the FR28 band [95,105]% and the target band [99,101]% are **warnings, never failures** (DEC-055, REQ-170) — aim for the strict band and let `PeoplesSection` label a partial breakdown. If the ticket asks for a claim with no available source, that becomes a blocking sub-task ("source it, or record the gap for the reader"), never an invented value.
+_Consequence:_ **nothing is forbidden, everything is labelled** (the Source Tier Policy, superseding the retired Tier 1/2/3 policy under which Tier 3 was forbidden and an un-citable claim was deleted). Every claim carries at least one source, and **every source carries an explicit tier**: `official` (UN, UNFPA, SIL Ethnologue, Glottolog, UNESCO, IWGIA, national statistics institutes), `referenced` (published, identifiable, verifiable work — academic, press, books) or `unverified` (aggregators, tertiary encyclopedias, blogs, social media, community accounts, AI-generated text). A weak source is published at `unverified`, never rejected and never over-tiered; the fiche's confidence follows from the tiers it rests on. Provenance is a separate axis: `source_kind` (e.g. `ai_generated`, which multiplies the weight by 0.5) is set alongside the tier, never folded into it. `needs_review` is a transitional marker for a citation nobody has ruled on yet, held by a ratchet — a ticket never introduces a new one. Wikipedia is read first and cited for what it is (`docs/editorial/reader-facing-register.md`, "Using sources"): prefer the primary source discovered through it, cited at its own tier by its own URL with the language versions crossed recorded in `notes`. The CIA World Factbook was sunset on 2026-02-04: never add a live `cia.gov/the-world-factbook` URL, cite a dated pre-sunset Wayback Machine snapshot instead. Where the claim is contested the sentence carries the uncertainty ("Assertion tracks certainty"), and where a local account exists it is named beside the external one. Demographics use the 2025 reference year; the FR28 band [95,105]% and the target band [99,101]% are **warnings, never failures** (DEC-055, REQ-170) — aim for the strict band and let `PeoplesSection` label a partial breakdown. If the ticket asks for a claim with no available source, that becomes a blocking sub-task ("source it, or record the gap for the reader"), never an invented value.
 _N/A:_ the ticket touches no content or data claim.
 
-**R5 — Supabase client isolation and bilingual invariants.**
+**R5 — Supabase client isolation and locale invariants.**
 _Trigger:_ the ticket touches data access or user-facing copy.
 _Consequence:_ pick the right client and say which in the sub-task — `src/lib/supabase/server.ts` (SSR / server components) or `admin.ts` (service role, **server-only**, never reachable from a browser bundle); the browser never reads the corpus from Supabase, every read goes through `/api/v2`. Never widen that boundary to make a task easier. The site is French-only: every page lives under `/fr`, and `/en/*` and any other locale segment redirect to French. Interface copy and corpus are written in French only. UI work is mobile-first at the project breakpoints — mobile 430px, tablet md 720px, desktop xl 800px.
 _N/A:_ no data access and no user-facing copy.
@@ -117,19 +117,19 @@ All implementation happens in a **dedicated git worktree**, never in the user's 
 
 ### Step 6 — Implement (parallel sub-agents)
 
-Follow TDD and KISS (user `CLAUDE.md`): tests before code, simplest design that satisfies acceptance criteria, surgical scope — touch only what the ticket requires.
+Follow TDD and KISS: tests before code, simplest design that satisfies acceptance criteria, surgical scope — touch only what the ticket requires.
 
 Dependency-aware execution:
 
-1. **Respect the project's toolchain constraints** (project `CLAUDE.md`):
+1. **Respect the project's toolchain constraints**:
    - **npm only, and `npm ci --legacy-peer-deps` in a fresh worktree.** The legacy peer deps are deliberate — Storybook runs on `@storybook/react-vite` because `@storybook/nextjs` is incompatible with this Next version. Never "fix" that peer conflict as a side effect of a ticket, and never switch package manager.
    - **Blocking sub-tasks run FIRST and alone**: a Supabase migration (`supabase/migrations/NNN_*.sql`) or an AFRIK data-model change is the whole first wave. Nothing runs in parallel with it. Migrations are numbered, idempotent (`IF NOT EXISTS`), and must not collide with an existing prefix — check `ls supabase/migrations/` before choosing a number. **Never apply a migration to any database from this skill**; the SQL lands in the PR, a human applies it.
    - **The three-layer API pattern is a boundary, not a suggestion**: a route file never queries Supabase directly, a handler never imports `next/server` request internals, a service never formats an HTTP response. If a sub-agent is tempted to shortcut a layer, it has mis-scoped its sub-task.
-   - **The three Supabase clients stay isolated**: `admin.ts` (service role) is server-only and must never be imported from a path that can reach a browser bundle. This invariant is documented in `CLAUDE.md` (`### Supabase: two data clients, never interchangeable`) — read it before touching data access.
+   - **The three Supabase clients stay isolated**: `admin.ts` (service role) is server-only and must never be imported from a path that can reach a browser bundle.
    - **AFRIK strict models are never extended ad-hoc**: fiche structure follows `public/modele-*.json`. A new section requires a model change as its own sub-task, not an improvised field.
    - **TypeScript is `strict: false`** — that is not licence for `any` in new code. Use `@/` for imports (maps to `src/`), and shadcn/ui components for UI consistency.
 2. **Independent sub-tasks run in parallel** via the `Agent` tool (`general-purpose`, or `agent-skills:test-engineer` for test-heavy slices). Always parallelise when sub-tasks have no dependency between them — launch the independent sub-agents in a single message so they run concurrently. Each sub-agent gets a self-contained brief: the worktree path as its working directory, the sub-task summary, acceptance criteria, relevant file paths, the test file it must write first, the TDD + KISS + mobile-first constraints, and the applicable rules from R1–R5. All sub-agents share the one worktree (they implement different sub-tasks of the same branch), so do not give them separate worktree isolation.
-3. **Mobile-first** (user `CLAUDE.md`): any UI work is designed and verified at 320–430 px first, then ≥768 px, then ≥1200 px — and against this project's own breakpoints (mobile 430px, tablet md 720px, desktop xl 800px).
+3. **Mobile-first**: any UI work is designed and verified at 320–430 px first, then ≥768 px, then ≥1200 px — and against this project's own breakpoints (mobile 430px, tablet md 720px, desktop xl 800px).
 
 ### Step 7 — Verify (safety blocker if it fails)
 
@@ -148,9 +148,9 @@ Additional gates when the ticket triggered the matching rule:
 
 - R2 fired (API change) → `npm run openapi:generate` then `npm run openapi:diff`, so the committed spec matches the routes and any breaking change is deliberate and called out in the PR body.
 - R1 or R4 fired (AFRIK data/content change) → `tsx scripts/validateAfrikData.ts`. The FR28 bands ([95,105]% and the target [99,101]%) only warn (DEC-055, REQ-170) — the run must exit clean, and any country the change leaves outside either band is reported in the PR body as a known deviation, not silently accepted.
-- UI change → verify the mobile breakpoint before the desktop one. If Playwright MCP is used, delete `.playwright-mcp/` immediately after (user `CLAUDE.md`).
+- UI change → verify the mobile breakpoint before the desktop one. If Playwright MCP is used, delete `.playwright-mcp/` immediately after.
 
-Do **not** run `npm run build` here — Vercel builds on push and CI covers it; running it in the worktree is slow and rarely adds signal beyond `typecheck` + `test`. Run it only if the ticket touches Next config, routing, or the build pipeline itself.
+Do **not** run `npm run build` here — CI's build job covers it; running it in the worktree is slow and rarely adds signal beyond `typecheck` + `test`. Run it only if the ticket touches Next config, routing, or the build pipeline itself.
 
 Known pre-existing failures (e.g. the Supabase mock in `scripts/__tests__/migrateAfrikToDatabase.test.ts`) do not block, but the count must not grow. If it grew, the ticket caused it — fix it.
 
@@ -159,8 +159,8 @@ If a check fails, iterate on the implementation to fix the **root cause** (do no
 ### Step 8 — Commit & push
 
 - Commit per sub-task (or logically grouped), Conventional Commits, message references the Jira key (e.g. `feat(api): add cursor pagination to /v2/peoples (ETNI-123)`).
-- **Never add `Co-Authored-By` trailers** (user + project `CLAUDE.md`).
-- Commit messages, code comments, PR body — **English** (user `CLAUDE.md`), even though the product copy is French.
+- **Never add `Co-Authored-By` trailers**.
+- Commit messages, code comments, PR body — **English**, even though the product copy is French.
 - Husky + lint-staged run ESLint + Prettier on commit; let them run, never bypass them.
 - `git push -u origin <branch>`.
 
@@ -223,4 +223,4 @@ End-of-turn summary (one or two sentences): the ticket key, the branch, the work
 
 ## Cleanup
 
-If any temporary files are created (e.g. `.playwright-mcp/` during browser verification), delete them immediately after use (user `CLAUDE.md`).
+If any temporary files are created (e.g. `.playwright-mcp/` during browser verification), delete them immediately after use.

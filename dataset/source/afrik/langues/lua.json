@@ -43,10 +43,5 @@
         "notes": "Notice directe pour le code ISO 639-3 lua et le glottocode luba1249. Elle documente Tshiluba, Ciluba, Luba-Kasai et Luba-Lulua comme formes de nom, ainsi que le statut EGIDS 3 en 2025 et le statut légal de langue d'identité nationale en RDC. Les liens aux peuples sont limités aux correspondances de code documentées pour la RDC."
       }
     ]
-  },
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the French DRC country enrichment pass is stable."
-    }
   }
 }

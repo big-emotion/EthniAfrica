@@ -113,10 +113,5 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Obame », « Obamé », « Fang », « Gabon », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », les travaux sur les noms propres gabonais, ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English translation is deferred until the personal-name corpus receives a coordinated translation and terminology review."
-    }
-  }
+  ]
 }

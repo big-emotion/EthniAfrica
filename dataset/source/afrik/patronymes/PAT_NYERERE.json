@@ -97,10 +97,5 @@
       "fieldPath": "peoples",
       "reason": "Le récit consulté situe le nom chez les Zanaki, dans le nord de la Tanzanie. Aucune source consultée ne le relie aux Nyamwezi, auxquels la fiche le rattache pour l'instant."
     }
-  ],
-  "_translation": {
-    "deferred": {
-      "en": "English publication is off (French-only mode); the sidecar will be produced in the translation wave for the patronymes batch."
-    }
-  }
+  ]
 }

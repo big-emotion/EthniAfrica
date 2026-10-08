@@ -23,24 +23,10 @@ pools, a new template, a changed prompt. Not otherwise: it rewrites the bank.
 
 ## Locale safety
 
-The command defaults to `--lang fr`, including every existing CI workflow.
-French and English are separate banks: reads, revocations, inserts and audits
-are always scoped to the selected `quiz_questions.locale`.
-
-English generation is explicit:
-
-```bash
-npx tsx scripts/generateQuizQuestions.ts --lang en
-```
-
-It consumes only people and countries that have a current English translation
-record. Missing or stale translations are excluded. Machine-only translations
-also exclude quiz fields whose translation doctrine requires human review.
-Before making any database write, the sweep verifies that the projected bank
-can fill a complete session. An incomplete English corpus therefore fails
-closed: it cannot alter the French bank and cannot publish a partial English
-bank. Regenerating English after the corpus translation wave is tracked
-separately from adding the generator support.
+The bank is French only. The command defaults to `--lang fr` and refuses any
+other value, `en` included, rather than silently building a French bank under
+another label. Reads, revocations, inserts and audits are scoped to
+`quiz_questions.locale`.
 
 The column names `prompt_fr`, `stimulus_fr`, `options_fr` and
 `explanation_fr` are retained for migration compatibility. The row's `locale`,
@@ -226,8 +212,7 @@ select revoked_reason, count(*) from quiz_questions
 
 The active count should be at or near what step 1 recorded — with the one
 documented exception above. Then play a full session at `/fr/jeux/quiz` and
-read four or five questions. The English route stays in its coming-soon state
-until a separately generated English bank can fill a session. Three things to
+read four or five questions. Three things to
 look at:
 
 - the distractors are peoples of the subject's own family _and_ of a country it

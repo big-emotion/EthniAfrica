@@ -146,7 +146,6 @@ populated themes; the other five are defined without empty public destinations.
 - `src/components/people/PeopleDetailViewV2.tsx`: people sections and existing contextual surfaces.
 - `src/components/family/FamilyParchment.tsx`, `FamilyHistorySection.tsx`, `FamilyLinguisticTraits.tsx`: family sections.
 - `src/components/language/LanguageDetailViewV2.tsx`: language sections.
-- `src/components/names/PeopleNamesSection.tsx`: appellation content and spelling history.
 - `src/components/patronymes/PatronymeFicheView.tsx`: personal-name sections.
 - `src/lib/home/didYouKnowFacts.ts`, `src/app/[lang]/dossiers/anecdotes/page.tsx`: current anecdote scope and reading route.
 - `src/lib/dossiers/nommer/chapters/index.ts`, `chapters/laChose.ts`: current naming dossier and examples spanning future themes.

@@ -6,7 +6,7 @@
  * sub-vocabularies, the colonial event types, the three access modes — used
  * to be labelled wherever it was first rendered: inside a badge component,
  * inside the French UI dictionary, once even twice with two spellings. The
- * bilingual glossary (REQ-144) needs one place to read them from, so this
+ * glossary (REQ-144) needs one place to read them from, so this
  * file is that place and `terms.ts` assembles the glossary from it.
  *
  * Only controlled-value labels live here, never sentences. UI copy stays in
@@ -218,7 +218,7 @@ export const PATRONYME_VOCABULARY: Record<GlossaryLocale, PatronymeVocabulary> =
 
 // ───── Colonial event types ───────────────────────────────────────────────
 
-// Lowercase in both locales: the timeline prints them mid-sentence
+// Lowercase: the timeline prints them mid-sentence
 // (« événement fragmentation »), never as a heading.
 // @req REQ-080
 export const COLONIAL_EVENT_TYPE_LABELS: Labels<ColonialEventType> = {
