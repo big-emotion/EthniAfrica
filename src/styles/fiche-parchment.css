@@ -617,6 +617,8 @@
 
 .afh-source-row {
   display: flex;
+  /* The source-kind tag drops under a title too long to share its line. */
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 10px;
   /* The site centres text under 768px from the body down. That rule left the

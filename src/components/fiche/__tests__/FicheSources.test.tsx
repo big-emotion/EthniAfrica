@@ -204,4 +204,27 @@ describe("FicheSources", () => {
     ]);
     expect(container.textContent).not.toMatch(/tier|domain ruling/i);
   });
+
+  /**
+   * Doctrine §1.1: every reader-facing source shows its type, never its tier.
+   * A source with no recorded kind prints nothing — "Type non précisé" on
+   * every untyped line would be noise — unless the record says "unknown".
+   */
+  // @req REQ-161
+  it("shows each source's kind, and nothing for a source without one", () => {
+    render(
+      <FicheSources
+        sources={[
+          entry("Ethnologue", { kind: "linguistic_reference" }),
+          entry("Récit recueilli", { kind: "unknown" }),
+          entry("Sans type"),
+        ]}
+      />
+    );
+
+    const items = screen.getAllByRole("listitem");
+    expect(items[0]).toHaveTextContent("Référence linguistique");
+    expect(items[1]).toHaveTextContent("Type non précisé");
+    expect(items[2].querySelector("[data-source-kind]")).toBeNull();
+  });
 });

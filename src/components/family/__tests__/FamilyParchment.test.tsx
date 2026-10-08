@@ -391,6 +391,26 @@ describe("FamilyParchment — the sources", () => {
     expect(footer?.querySelector("[data-tier]")).toBeNull();
   });
 
+  // @req REQ-161
+  it("names a source's kind when the fiche declares one", () => {
+    const withSources = undeclaredFamily();
+    withSources.sources = [
+      {
+        title: "Glottolog",
+        url: null,
+        tier: "referenced",
+        source_kind: "linguistic_reference",
+      },
+      { title: "Sans type", url: null, tier: "referenced" },
+    ] as FamilyPageData["sources"];
+
+    const { container } = renderParchment(withSources);
+
+    const rows = container.querySelectorAll("#sources li");
+    expect(rows[0].textContent).toContain("Référence linguistique");
+    expect(rows[1].querySelector("[data-source-kind]")).toBeNull();
+  });
+
   // @req REQ-116
   it("turns a markdown link in a source into a link", () => {
     const withSources = undeclaredFamily();

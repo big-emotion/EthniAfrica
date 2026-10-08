@@ -22,7 +22,12 @@
 
 import { createServerClient } from "../../server";
 import { logger } from "@/lib/api/logger";
-import { isSourceTier, type SourceTier } from "@/types/sources";
+import {
+  isSourceTier,
+  toSourceKindOrNull,
+  type SourceKind,
+  type SourceTier,
+} from "@/types/sources";
 
 export interface Source {
   id: string;
@@ -31,6 +36,8 @@ export interface Source {
   tier: SourceTier | null;
   /** Why the source carries this tier — the corpus's `sources[].notes`. */
   notes: string | null;
+  /** What kind of work it is; the column is sparse, so null is common. */
+  sourceKind?: SourceKind | null;
 }
 
 export interface ConfidenceScore {
@@ -115,7 +122,7 @@ export async function getSourcesMap(
     for (const sids of sourceIdChunks) {
       const { data, error } = await supabase
         .from("sources")
-        .select("id, title, url, tier, notes")
+        .select("id, title, url, tier, notes, source_kind")
         .in("id", sids);
 
       if (error) {
@@ -134,6 +141,7 @@ export async function getSourcesMap(
           // all 24 language fiches; it was never fetched, so no fiche could
           // show the reasoning behind a standing it displays.
           notes: src.notes ?? null,
+          sourceKind: toSourceKindOrNull(src.source_kind),
         });
       }
     }
@@ -268,6 +276,7 @@ export interface NoteSource {
   notes: string | null;
   author: string | null;
   year: number | null;
+  sourceKind?: SourceKind | null;
 }
 
 /** What one field of a fiche rests on. */
@@ -329,7 +338,7 @@ export async function getFieldNotes(
   for (const ids of chunk(allSourceIds, CHUNK_SIZE)) {
     const { data, error } = await supabase
       .from("sources")
-      .select("id, title, url, tier, notes, author, year")
+      .select("id, title, url, tier, notes, author, year, source_kind")
       .in("id", ids);
 
     if (error) {
@@ -346,6 +355,7 @@ export async function getFieldNotes(
         notes: src.notes ?? null,
         author: src.author ?? null,
         year: src.year ?? null,
+        sourceKind: toSourceKindOrNull(src.source_kind),
       });
     }
   }

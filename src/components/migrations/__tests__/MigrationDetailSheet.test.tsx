@@ -138,6 +138,29 @@ describe("MigrationDetailSheet", () => {
     });
   });
 
+  // @req REQ-161
+  it("names the kind of each source in the sheet a source chip opens", async () => {
+    render(
+      <MigrationDetailSheet
+        language="fr"
+        open
+        onOpenChange={vi.fn()}
+        event={{
+          ...EVENT,
+          sources: [{ ...EVENT.sources[0], sourceKind: "archive" }],
+        }}
+      />
+    );
+
+    fireEvent.click(screen.getByTestId("migration-source-chip-src-1"));
+
+    await waitFor(() => {
+      expect(screen.getByTestId("source-item-src-1")).toHaveTextContent(
+        "Archive"
+      );
+    });
+  });
+
   // @req REQ-101 UX-DR29
   it("calls onOpenChange(false) when Escape is pressed", () => {
     const onOpenChange = vi.fn();

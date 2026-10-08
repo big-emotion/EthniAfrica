@@ -140,6 +140,7 @@ export function MigrationDetailSheet({
       title: source.title,
       url: source.url ?? undefined,
       tier: toSourceTier(source.tier),
+      ...(source.sourceKind ? { sourceKind: source.sourceKind } : {}),
     })
   );
 

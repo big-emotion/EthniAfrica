@@ -7,7 +7,11 @@ import {
   getAfrikSpeakingPeoples,
 } from "@/lib/supabase/queries/afrik/languages";
 import { getSourcesMap } from "@/lib/supabase/queries/afrik/module-zero-batch";
-import { toSourceTier, type SourceTier } from "@/types/sources";
+import {
+  toSourceTier,
+  type SourceKind,
+  type SourceTier,
+} from "@/types/sources";
 
 // @req REQ-136
 export interface LanguageDetail {
@@ -47,6 +51,7 @@ export interface LanguageDetail {
     url: string | null;
     tier: SourceTier;
     notes?: string | null;
+    sourceKind?: SourceKind | null;
   }>;
 }
 

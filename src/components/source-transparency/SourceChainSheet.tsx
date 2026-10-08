@@ -11,6 +11,7 @@ import {
 import Link from "next/link";
 
 import { FlagTarget } from "@/components/flags/FlagTarget";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { cn } from "@/lib/utils";
 import { useRouteLanguage } from "@/hooks/use-language";
 import { formatDate } from "@/lib/languageTag";
@@ -264,6 +265,9 @@ function SourceItem({
           {source.title}
         </p>
       </div>
+      {source.sourceKind && (
+        <SourceKindBadge kind={source.sourceKind} language={language} />
+      )}
       <p className="text-afh-caption text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]">
         {[source.author, source.year, source.page].filter(Boolean).join(" · ")}
       </p>

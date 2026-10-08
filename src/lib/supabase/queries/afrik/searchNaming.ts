@@ -1,4 +1,5 @@
 import { createServerClient } from "@/lib/supabase/server";
+import { toSourceKindOrNull } from "@/types/sources";
 import {
   searchSourceStanding,
   strongestSearchSourceStanding,
@@ -118,6 +119,7 @@ function toEvidenceSource(row: Record<string, unknown>): SearchEvidenceSource {
     narrative && typeof narrative === "object" && !Array.isArray(narrative)
       ? (narrative as Record<string, unknown>).review_status
       : undefined;
+  const sourceKind = toSourceKindOrNull(row.source_kind);
   return {
     id: String(row.id),
     title: String(row.title ?? ""),
@@ -126,6 +128,7 @@ function toEvidenceSource(row: Record<string, unknown>): SearchEvidenceSource {
     ...(nullableText(row.page) ? { page: String(row.page) } : {}),
     ...(nullableText(row.url) ? { url: String(row.url) } : {}),
     tier: searchSourceStanding(row.tier),
+    ...(sourceKind ? { sourceKind } : {}),
     ...(row.source_kind === "oral_tradition"
       ? { reviewedNarrative: reviewStatus === "approved" }
       : {}),
