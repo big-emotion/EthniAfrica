@@ -193,9 +193,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-pejorative",
     label: "fiches qualifiant un exonyme de dépréciatif",
-    value: 84,
+    value: 83,
     method: `radicaux ${PEJORATIVE_STEMS.join(", ")} dans originOfExonyms + whyProblematic`,
-    countedOn: COUNTED_ON,
+    countedOn: "2026-10-08",
   },
   "probe-arabic": {
     kind: "counted",

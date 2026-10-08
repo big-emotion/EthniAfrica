@@ -1,0 +1,13 @@
+extends: existence
+message: "Check that '%s' is necessary and explained in ordinary French. Preserve names and source wording."
+level: warning
+scope: text
+ignorecase: true
+tokens:
+  - "ethnonymes?"
+  - "autonymes?"
+  - "endonymes?"
+  - "exonymes?"
+  - "polys[ée]mi(?:e|que)"
+  - "il convient de (?:noter|souligner)"
+  - "force est de constater"

@@ -70,7 +70,11 @@
     "type-check": "npm run typecheck",
     "typecheck": "tsc --noEmit",
     "unit-tests": "vitest run --dir src/lib",
-    "worktree:setup": "bash scripts/setup-worktree.sh"
+    "worktree:setup": "bash scripts/setup-worktree.sh",
+    "check:editorial": "tsx scripts/ci/checkPlainLanguage.ts",
+    "audit:editorial": "tsx scripts/ci/checkPlainLanguage.ts --audit",
+    "check:publication": "tsx scripts/ci/checkPlainLanguage.ts --strict",
+    "editorial:version": "vale --version"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.1.23",
@@ -138,6 +142,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitest/coverage-v8": "4.1.11",
     "@vitest/ui": "^4.1.11",
+    "@vvago/vale": "3.24.0",
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
     "autoprefixer": "^10.6.1",

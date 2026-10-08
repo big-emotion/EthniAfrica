@@ -137,6 +137,8 @@ jobs:
         env:
           REQ_BASE: ${{ github.head_ref == 'recette' && 'recette' || github.base_ref }}
 
+      - run: npm run check:editorial
+
       - run: npm run check:jira-template
 
       # --resolve also asks GitHub whether each pinned commit exists. A pin with

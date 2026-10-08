@@ -23,6 +23,12 @@ case "$file" in
 *) exit 0 ;;
 esac
 
+# Check public copy even for JSON, captions and subtitles.
+if ! output=$(npx tsx scripts/ci/checkPlainLanguage.ts --edited "$file" 2>&1); then
+  echo "$output" >&2
+  exit 2
+fi
+
 case "$file" in
 *.ts | *.tsx | *.js | *.jsx | *.mjs) ;;
 *.css | *.md | *.json | *.yml | *.yaml)

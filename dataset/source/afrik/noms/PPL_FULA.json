@@ -11,7 +11,7 @@
       "nameText": "Fulɓe",
       "nameType": "endonym",
       "languageOfOrigin": "ful",
-      "meaning": "C'est le nom que les Peuls se donnent, au pluriel et au singulier. Son sens n'est pas établi. Amadou Hampâté Bâ, lui-même pullo, le tire du verbe fullude, « couvrir de poussière », et cite comme autre possibilité le nom Ful, connu de la Bible, supposé par Maurice Delafosse, sans trancher entre les deux. D'autres lectures viennent de l'extérieur : « les dispersés », proposée par le commandant Gaden et rapportée par Delafosse puis Tauxier ; « brun clair, rouge », de Barth résumé par Crozals et rapporté par Tauxier, une lecture raciale de la couleur de peau qui oppose ce sens au « noir » des Wolof ; la base fur- du mot Ba-fur, par lequel les Berbères auraient désigné les peuples du Tekrur, proposée par Oumar Niang. Le linguiste J. O. Breedveld juge le sens de Pullo et de Fulɓe à peine étudié et rapporte une racine ful- sans lui donner de sens. Nous ne retenons aucune de ces lectures. Un récit d'un barde pullo du Cameroun, recueilli par Eldridge Mohammadu, parle de l'origine du peuple et non du sens du mot : il fait venir de Malle, le Mali, tous les Fulɓe et rattache à ce point de départ les noms de leurs lignages.",
+      "meaning": "Fulɓe est le nom que les personnes concernées emploient pour se nommer au pluriel. Pour une seule personne, elles disent Pullo. Plusieurs explications du sens de ce nom ont été proposées. Amadou Hampâté Bâ, lui-même pullo, le tire du verbe fullude, « couvrir de poussière », et cite comme autre possibilité le nom Ful, connu de la Bible, supposé par Maurice Delafosse, sans trancher entre les deux. D'autres lectures viennent de l'extérieur : « les dispersés », proposée par le commandant Gaden et rapportée par Delafosse puis Tauxier ; « brun clair, rouge », de Barth résumé par Crozals et rapporté par Tauxier, une lecture raciale de la couleur de peau qui oppose ce sens au « noir » des Wolof ; la base fur- du mot Ba-fur, par lequel les Berbères auraient désigné les peuples du Tekrur, proposée par Oumar Niang. Le linguiste J. O. Breedveld juge le sens de Pullo et de Fulɓe à peine étudié et rapporte une racine ful- sans lui donner de sens. Ces explications restent des hypothèses. Un récit d'un barde pullo du Cameroun, recueilli par Eldridge Mohammadu, parle de l'origine du peuple et non du sens du mot : il fait venir de Malle, le Mali, tous les Fulɓe et rattache à ce point de départ les noms de leurs lignages.",
       "periodLabel": "Usage contemporain",
       "imposedBy": null,
       "impositionPeriod": null,
@@ -120,7 +120,7 @@
           }
         }
       ],
-      "shortLine": "Le nom qu'ils se donnent dans leur langue ; un seul : un Pullo.",
+      "shortLine": "Ils se nomment Fulɓe au pluriel et Pullo au singulier.",
       "namedBy": null,
       "originDebated": true,
       "usedIn": ["ful"],
@@ -296,7 +296,7 @@
           }
         }
       ],
-      "shortLine": "Le nom en français ; les sources le font venir du wolof.",
+      "shortLine": "Peul est le nom courant en français. Il viendrait du wolof.",
       "namedBy": "les Wolof",
       "originDebated": false,
       "usedIn": ["fra"]
@@ -305,7 +305,7 @@
       "nameText": "Fula",
       "nameType": "exonym",
       "languageOfOrigin": "man",
-      "meaning": "Nom donné aux Fulɓe par les peuples manden (mandingues). Des formes proches sont écrites par des auteurs extérieurs : Fulos chez André Álvares de Almada, natif de l'île de Santiago du Cap-Vert, dans son traité de 1594 ; Foulahs ou Pholeys chez l'Écossais Mungo Park, qui voyage en 1795-1797. Ce ne sont pas les premières mentions du peuple : François de Medeiros relève qu'il est nommé explicitement dans les sources arabes à partir d'al-Maqrīzī et de la Chronique de Kano. Un guide d'apprentissage du pular (Caudill et Diallo, 2000) le présente au contraire comme le mot haoussa ; aucune source lue ne tranche.",
+      "meaning": "Nom donné aux Fulɓe par les peuples manden (mandingues). Des formes proches sont écrites par des auteurs extérieurs : Fulos chez André Álvares de Almada, natif de l'île de Santiago du Cap-Vert, dans son traité de 1594 ; Foulahs ou Pholeys chez l'Écossais Mungo Park, qui voyage en 1795-1797. Ce ne sont pas les premières mentions du peuple : François de Medeiros relève qu'il est nommé explicitement dans les sources arabes à partir d'al-Maqrīzī et de la Chronique de Kano. Un guide d'apprentissage du pular (Caudill et Diallo, 2000) le présente au contraire comme le mot haoussa ; les sources proposent donc des langues d'origine différentes.",
       "periodLabel": "Usage contemporain",
       "imposedBy": null,
       "impositionPeriod": null,
@@ -522,7 +522,7 @@
           }
         }
       ],
-      "shortLine": "Donné par les Haoussa, repris en anglais.",
+      "shortLine": "Fulani est courant en anglais. Ce nom aurait été repris du haoussa.",
       "namedBy": "les Haoussa",
       "originDebated": false,
       "usedIn": ["eng", "hau"]
@@ -646,7 +646,7 @@
           }
         }
       ],
-      "shortLine": "Le nom qu'on leur donne au Bornou et plus à l'est ; son origine n'est pas établie.",
+      "shortLine": "Fellata est un nom employé au Bornou et plus à l'est. Les sources proposent différentes origines.",
       "namedBy": "les Kanuri et les arabophones du Soudan",
       "originDebated": true,
       "usedIn": ["knc", "apd"]

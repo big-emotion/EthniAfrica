@@ -8,6 +8,7 @@
  */
 
 import { config } from "dotenv";
+import { assertCorpusLanguage } from "./ci/checkPlainLanguage";
 import { mkdirSync, writeFileSync } from "fs";
 import { join, resolve } from "path";
 
@@ -943,6 +944,7 @@ export async function migrateAfrikToDatabase(
   options: MigrationOptions
 ): Promise<MigrationReport> {
   const syncTarget = resolveAfrikSyncTarget(options.target);
+  assertCorpusLanguage();
 
   const dryRun = options.dryRun ?? true;
   const prune = options.prune ?? false;

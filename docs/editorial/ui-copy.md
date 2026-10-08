@@ -6,6 +6,10 @@ the chrome — a label, a hint, an empty state, a pager — lives in one place
 per surface rather than inline in a component. This page says where the copy
 lives, what guards it, and how a directory of inline French moves across.
 
+Read the shared [plain-language charter](reader-facing-register.md) for wording.
+The [editorial check](plain-language-checks.md) also reads unaccented strings and
+static JSX; keeping text in a dictionary does not exempt it from review.
+
 ## Where copy lives
 
 One file per surface under `src/lib/i18n/copy/`: `footer.ts`, `quiz.ts`,
