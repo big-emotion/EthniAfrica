@@ -164,7 +164,11 @@ certainty"): if you know of more than one account of the name's origin, list
 each one on its own line rather than picking one — a curator preserves all of
 them, attributed, none crowned.
 
-## 5. Place (`lieu`) — a new class, not yet a corpus type
+## 5. Place (`lieu`, `LOC_*`)
+
+> **2026-10-08:** places are in scope now (`doctrine.md` §2):
+> `public/modele-lieu.json` and `LOC_*` fiches exist (`LOC_YAMOUSSOUKRO`). Map
+> this form to that model; the paragraph below records the state on 2026-09-22.
 
 **This is the one template with no existing strict model, loader, or
 `SearchEntityType` entry to map to.** `public/modele-*.json` has no

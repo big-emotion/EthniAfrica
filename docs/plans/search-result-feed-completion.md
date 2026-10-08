@@ -595,6 +595,9 @@ Each item: the count of failing comparisons it blocks, what the board expects,
 what the page renders, and the fix. **Write the failing unit test first** in the
 block's own test file; the harness is the second gate, not the first.
 
+> **2026-10-08:** row 1's tier badge (`Référencée`) is superseded — the reader
+> sees a source's type, never its tier (`../editorial/doctrine.md` §1.1).
+
 | #   | Cases | Board expects                                                       | Page renders                                                | Fix                                                                                                                        |
 | --- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | 1   | 18    | `Référencée Voir la source` on every origin card                    | the badge alone                                             | render the evidence action in `OriginsBlock`; it exists (`SearchFeedEvidenceAction`) but is not mounted on the card footer |

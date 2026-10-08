@@ -31,11 +31,48 @@ What the result page shows, in this order:
 2. every name the same subject goes by;
 3. for each of those names, its history: who gave it, to whom, when, why,
    back as far as possible;
-4. the sources of each claim, with their tier.
+4. the sources of each claim, by their type (oral tradition, book, article,
+   research report, archive…), one click away. Never a tier: see §1.1.
+
+### 1.1 How a name's history is told
+
+Settled by the operator on 2026-10-08
+(`strategy/name-history-timeline-2026-10-08.md`).
+
+- **Every origin is a hypothesis.** Several competing origins for one name
+  is the normal case, not the exception. They stand side by side, unranked,
+  each with its own sources: the linguist's, the archive's and the oral
+  account carried by a people about itself.
+- **The site never affirms.** It presents sources and traces research; it
+  never writes "X named Y". A question raised on a page is answered on that
+  page by the sources, even when the answer is that they disagree. The
+  operator may set this aside on purpose for an editorial piece built on a
+  question.
+- **The reader sees a source's type, never its tier.** Oral tradition, book,
+  article, research report, archive: who speaks, not how much to trust them.
+  A printed book is not truer for being printed, and a tier would rank the
+  griot below the linguist. The tier stays an internal audit field for
+  moderation and validation; the public API still carries it as data.
+- **No gate blocks a source for not being written or online.** An account
+  given by a griot or by people on site is a first-class source. Requiring a
+  book or a link would impose a Western method on African history.
+- **Start from today's names and go back.** Each name has its _birth_: its
+  earliest origin known to the project (never "in the world"). What came
+  before is told as what existed before the name, because a thing is often
+  older than the word for it.
+- **The name searched comes first** where the reader searched; elsewhere the
+  name a people gives itself does. When the two differ, the page leads,
+  visibly, to the self-name: « Vous avez cherché Peul. Ce peuple se nomme
+  lui-même Fulɓe. »
+- **Every sentence about a name starts with the name.** « Le lingala est… »,
+  « Le nom lingala est fixé… », never a subjectless fragment.
+- **"Meanwhile, elsewhere".** Outside events are time anchors for a reader
+  schooled in French or Belgian history, never the subject: the African name
+  is always the subject of the sentence.
 
 ## 2. Scope
 
-**Now, five types of names:**
+**Now, six types of names:**
 
 | Type            | Example          |
 | --------------- | ---------------- |
@@ -44,12 +81,13 @@ What the result page shows, in this order:
 | Country         | Côte d'Ivoire    |
 | Language family | Bantou           |
 | Family name     | Traoré           |
+| Place           | Yamoussoukro     |
 
 **Plus one free type**, for a word whose history explains Africa through
-its names without fitting the five: glossary terms such as « racisme »,
+its names without fitting the six: glossary terms such as « racisme »,
 « nation », « État », « esclavage ».
 
-**Next:** places (Goma), customs, the names of things and
+**Next:** customs, the names of things and
 words, including words that went into other languages. Then the diasporas and
 the Creoles.
 
@@ -72,7 +110,7 @@ They are never criticised.
 ## 4. Our answer
 
 - **A search engine for names.** Every piece of information is shown with its
-  source, graded `official`, `referenced` or `unverified`.
+  source and the source's type, one click away (§1.1).
 - **Oral tradition on an equal footing**, identified by its carrier and place,
   published with their consent.
 - **Social media as the front door.** Short formats and video, because people
@@ -102,7 +140,7 @@ They are never criticised.
 ## 7. The editorial rule
 
 Every publication, on the site or on social media, tells the history of a
-name of one of the five types or the free type, and answers « qui a nommé
+name of one of the six types or the free type, and answers « qui a nommé
 qui, quand, pourquoi ». It links to that name's answer page.
 
 ## 8. Who carries it

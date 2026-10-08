@@ -51,10 +51,11 @@ Glottolog…), et trancher une question contestée.
   avec sa source, sans en choisir une.
 - **Le nom que le peuple se donne vient en premier**, avant les noms donnés par
   d'autres. Aucun nom n'est présenté comme le « vrai ».
-- **Les sources de premier rang** : les volumes de l'_Histoire générale de
-  l'Afrique_ de l'UNESCO (téléchargeables gratuitement), puis les travaux
-  publiés, puis les récits locaux et oraux. Wikipédia sert de premier passage :
-  remontez aux sources qu'il cite.
+- **Aucune source n'est classée au-dessus d'une autre.** Les volumes de
+  l'_Histoire générale de l'Afrique_ de l'UNESCO (téléchargeables
+  gratuitement), les travaux publiés et les récits locaux et oraux se valent :
+  chacun est publié avec son type, et un récit oral avec son porteur et son
+  lieu. Wikipédia sert de premier passage : remontez aux sources qu'il cite.
 
 ## Deux façons de travailler
 

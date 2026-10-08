@@ -64,8 +64,9 @@ reader-facing rules.
   éditoriale_, _tier résolu depuis le catalogue_, _tier fondé sur la nature
   académique_, _non listée au catalogue de domaines officiels_, _doctrine des
   sources du corpus_ — accented or not. How a source's tier was decided is the
-  workshop's reasoning; the tier badge already labels the source, and a badge
-  labels who published it — it does not settle whether a claim is true. A tiering codemod wrote one such sentence into more than 5 000
+  workshop's reasoning, and the tier itself never reaches the reader: the
+  reader sees the source's type — oral tradition, book, archive… — which says
+  who speaks, not whether a claim is true (`doctrine.md` §1.1). A tiering codemod wrote one such sentence into more than 5 000
   notes, in English, into French fiches too, and the gate read neither
   `content.sources`, nor the sources a chapter keeps for itself
   (`content.historicalAffiliation.sources`), nor French fiches against the
@@ -94,8 +95,8 @@ the workshop has not filled it yet.**
 | Aucun porteur décédé n'a été rattaché au jamu par les sources de cette passe.                                                                                                       | Nous ne présentons pas encore de porteur de ce jamu : les sources consultées n'en rattachent aucun que nous puissions nommer.      |
 | Les recherches exactes n'ont pas fourni, dans cette passe, un porteur décédé rattaché au patronyme.                                                                                 | Nous ne présentons pas encore de porteur de ce patronyme : les recherches exactes n'en ont fourni aucun que nous puissions nommer. |
 | Personne vivante, donc exclue par le protocole.                                                                                                                                     | Nous ne présentons pas encore de porteur de ce nom : les sources consultées n'en rattachent aucun que nous puissions nommer.       |
-| Tier resolved from the domain ruling for jstor.org.                                                                                                                                 | _(no note — the tier badge says it)_                                                                                               |
-| No URL and no recognisable citation shape; the tier awaits editorial review.                                                                                                        | _(no note — the Non vérifiée badge says it)_                                                                                       |
+| Tier resolved from the domain ruling for jstor.org.                                                                                                                                 | _(no note — the source's type says it)_                                                                                            |
+| No URL and no recognisable citation shape; the tier awaits editorial review.                                                                                                        | _(no note — the tier is internal; the source's type says what it is)_                                                              |
 | Tier resolved from the domain ruling for unesco.org (sous-domaine ich.unesco.org). Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité. | Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité.                                   |
 
 A note that only explained the tier is removed, not replaced: an empty or
@@ -168,8 +169,9 @@ This section owns the rule; skills and the curator references point
 here instead of restating it (remediation ledger, C01/C02/C07).
 
 - **Admission is traceability, not category.** A source the project consulted is
-  cited for what it is, with a tier and enough to find it again. A weak source is
-  labelled, never hidden, and a source is never described as more than it is.
+  cited for what it is, with its type, an internal tier and enough to find it
+  again. The reader sees the type, never the tier (`doctrine.md` §1.1). A weak
+  source is cited, never hidden, and a source is never described as more than it is.
   The one true gap is a citation that identifies nothing (« internet », « un
   site »): that is a missing source, and the reader is told the point is not yet
   documented.
@@ -188,7 +190,8 @@ here instead of restating it (remediation ledger, C01/C02/C07).
   not a licence to hide what was consulted: the workshop record of the piece keeps
   the consultation, dated, for traceability.
 - **`notes` says what the source is**, never why it received its tier. The tier
-  rationale belongs in the internal ruling ledger; the badge already speaks.
+  rationale belongs in the internal ruling ledger; the reader sees the source's
+  type, never its tier.
 - **A partial estimate is shown as partial.** Population shares that do not sum to
   100 % raise a warning, not an omission: keep the dated estimates and let the page
   say that the breakdown is incomplete. Never complete a figure to make it total.
@@ -351,8 +354,8 @@ In those three fields you must never write:
 - how a source's tier was decided — _domain ruling_, _citation shape_,
   _authorized source catalogue_, _awaits editorial review_, _needs_review_,
   _tier inféré_, _tier résolu_, _tier fondé sur…_, _catalogue de domaines
-  officiels_ — in any language, accented or not: set `tier`, and let the badge
-  speak; keep what the source is (publisher, edition, institution, what was read
+  officiels_ — in any language, accented or not: set `tier` (an internal field
+  the reader never sees) and let the source's type speak; keep what the source is (publisher, edition, institution, what was read
   or cross-checked, the Wikipedia language chain);
 - a ticket number (`ETNI-…`);
 - `Corpus AFRIK — …` as a source title.

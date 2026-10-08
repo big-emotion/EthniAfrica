@@ -102,7 +102,8 @@ without knowing the answer is doing no work. Never invent an option: if the
 near pool is short, the round is not generated (FR65/FR66).
 
 **Reveal.** Verbatim corpus text, where it was read in plain words, its source
-tier, and a link to the fiche. The field path stays in the data as the auditable
+type (oral tradition, book, archive… — never the tier, `docs/editorial/doctrine.md`
+§1.1), and a link to the fiche. The field path stays in the data as the auditable
 record but never reaches the player: `revealProvenanceFr` translates it, and a path
 with no wording omits the line (a new template with no wording fails the build). This is the part the player came for, whatever the score screen
 implies.

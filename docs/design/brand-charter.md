@@ -196,9 +196,10 @@ The atlas asserts three things, in this order, and every surface either serves
 them or is decoration:
 
 1. **It names peoples, languages, families and countries** — one record each.
-2. **Every claim carries its provenance**, tiered and visible, including the
-   weak ones. Nothing is forbidden; everything is labelled (see the Source Tier
-   policy).
+2. **Every claim carries its provenance**, including the weak ones, one click
+   away. The reader sees the source's type (oral tradition, book, archive…),
+   never its tier, which stays an internal audit field (`doctrine.md` §1.1).
+   Nothing is forbidden; everything is sourced.
 3. **It is open.** The corpus is citable and reusable.
 
 The third is contradicted on every page of the site. The footer prints
@@ -256,7 +257,9 @@ editorial. They do not translate: an autonym is the same string in both
 locales and keeps its `lang`; the exonym's gloss is the one thing that changes
 language.
 
-- **The autonym leads, the exonym glosses it.** Enforced in components by
+- **The autonym leads, the exonym glosses it** — except where the reader
+  searched another name: there the searched name comes first and leads,
+  visibly, to the autonym (`../editorial/doctrine.md` §1.1). Enforced in components by
   `afh/no-bare-people-name`; enforced typographically by the rule that the
   gloss sits one role below the name inside the same heading
   (`typography-charter.md` §3.2).
@@ -665,7 +668,7 @@ Gated by `homeOrientation.test.tsx`, `homeHeroSeedsCorpus.test.ts` and
 ### 8.4 One wait, one shape
 
 A wait is the one surface with a single job: be read before it is taken away.
-The site spends it on a `Saviez-vous que` fact — sourced, tiered, drawn from
+The site spends it on a `Saviez-vous que` fact — sourced, drawn from
 the home's own bank — so a reader who navigates a lot ends up having read the
 bank.
 
@@ -869,7 +872,7 @@ one, and where it appears it is captioned as what it is — a document of how
 Africa was seen, not a document of Africa. Any surface carrying more than one
 image carries more than one register. A surface that shows a people shows that
 people's own visual record where one is available and clearable, under the same
-discipline the text already obeys: sourced, dated, credited, tiered. Where no
+discipline the text already obeys: sourced, dated, credited. Where no
 such record exists yet, the honest fallback is the corpus's own cartography,
 which the atlas generates, owns and can cite.
 

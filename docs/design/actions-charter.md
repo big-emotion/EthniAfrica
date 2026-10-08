@@ -117,11 +117,11 @@ am one of several of my kind, interchangeable, removable".
 
 Three values. Each one says what kind of thing it wraps.
 
-| Token               | Value | Means                             | Where                                            |
-| ------------------- | ----- | --------------------------------- | ------------------------------------------------ |
-| `--afh-radius-0`    | 0     | **the source apparatus**          | citations, tier marks, version banners, captions |
-| `--afh-radius-lg`   | 14 px | **an action, or a content thing** | buttons, inputs, cards, panels, module tiles     |
-| `--afh-radius-full` | full  | **a value among several**         | chips, filters, facets, entity pills             |
+| Token               | Value | Means                             | Where                                                   |
+| ------------------- | ----- | --------------------------------- | ------------------------------------------------------- |
+| `--afh-radius-0`    | 0     | **the source apparatus**          | citations, source-type marks, version banners, captions |
+| `--afh-radius-lg`   | 14 px | **an action, or a content thing** | buttons, inputs, cards, panels, module tiles            |
+| `--afh-radius-full` | full  | **a value among several**         | chips, filters, facets, entity pills                    |
 
 The sharp corner says _this is a document, not an application_ — the corpus's
 citation apparatus is the one layer that must look auditable. The softened

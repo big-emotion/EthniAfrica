@@ -526,7 +526,7 @@ The contract is `src/components/fiche/__tests__/ficheOnwardCharter.test.tsx`.
 ## 8. Provenance at the head of a fiche
 
 The brand charter's second assertion is that **every claim carries its
-provenance, tiered and visible, including the weak ones**. Measured against the
+provenance, including the weak ones**. Measured against the
 code, that was true of four components on the peoples surface and one on the
 patronymes surface, and of **zero components on countries, zero on language
 families and zero on languages** — the three surfaces a search engine lands on
@@ -537,16 +537,19 @@ what it is: a **claim-level** mark at the end of an assertion, opening that
 assertion's source chain. `ProvenanceBanner` is the **page-level** object, and
 everything below is what it is allowed to be.
 
-**A census, never a score.** The banner states how many assertions the fiche
-records and how many sit at each standing. It never averages them. A single
-figure at the head of a fiche folds an identity chapter resting on `official`
-sources into an oral-tradition chapter resting on `unverified` ones; the number
-describes neither chapter, and it is the one figure the reader carries away. On
-an atlas whose entire argument is provenance, the aggregate is the most elegant
-way to lose it. The endpoint that feeds the banner therefore returns no score
-and puts none on `meta` either — the figure is not one field away, it is absent.
+**A count, never a score.** The banner states how many assertions the fiche
+records and when they were last reviewed, nothing more. Each source's type
+(oral tradition, publication, archive…) is one click away, in the source sheet;
+its tier never reaches the reader (`../editorial/doctrine.md` §1.1). It never
+averages anything. A single figure at the head of a fiche folds an identity
+chapter into an oral-tradition chapter; the number describes neither, and it is
+the one figure the reader carries away. On an atlas whose entire argument is
+provenance, the aggregate is the most elegant way to lose it. The endpoint that
+feeds the banner therefore returns no score and puts none on `meta` either —
+the figure is not one field away, it is absent.
 
-**One assertion, one standing, its strongest.** An assertion is as well
+**One assertion, one standing, its strongest** — for the internal audit
+count, not for the reader. An assertion is as well
 supported as its best source. Counting it under its weakest would report a
 corpus weaker than it is, and would make adding a community account to an
 already-official claim read as a downgrade — which pushes a curator to drop the
@@ -554,36 +557,34 @@ community account, the exact colonial filter the source-tier policy exists to
 refuse. `needs_review` ranks below `unverified`, because "judged weak" is a
 ruling somebody made and "not yet judged" is not.
 
-**The four names are the published ones.** _Officielle · Référencée · Non
-vérifiée_, and _En attente d'examen_ beside them for `needs_review`, read from
-`src/lib/glossaire/vocabularies.ts` and never respelled in a component. A scale
+**The four tier names are moderation vocabulary, not reader copy.**
+_Officielle · Référencée · Non vérifiée_, and _En attente d'examen_ beside them
+for `needs_review`, are read from `src/lib/glossaire/vocabularies.ts` by the
+moderation and admin surfaces only, and never respelled in a component. The
+reader sees source-type labels instead, `ai_generated` included as « Synthèse à
+vérifier ». A scale
 with two spellings is a scale the reader cannot carry from one page to the next
 — which is how this codebase came to label one vocabulary in three places with
 two wordings before migration 041 collapsed them.
 
-**Asymmetry is the anti-signal-fatigue mechanism.** While every assertion sits
-at `official` or `referenced`, the banner is one quiet line: transparent ground,
-`--afh-border`, ink `--afh-text-soft`, the total and the review date only. The
-moment one assertion is `unverified` or awaiting review, the ground becomes
-`--afh-color-gold-bg`, the ink `--afh-color-gold`, and the counts are stated.
-Salience is a **difference**, and it exists only because discretion is the norm:
-a banner that looks the same on every fiche is furniture by the second visit,
-which is what happened to the three chips §7's parchment head used to carry.
+**One quiet line, on every fiche.** Transparent ground, `--afh-border`, ink
+`--afh-text-soft`, the total and the review date. There is no loud state: a
+ground that turned gold under some sources would rank them, and the doctrine
+ranks none — an AI synthesis is named « Synthèse à vérifier » in the source
+sheet like any other type, and oral tradition is never set apart.
 
 **It never warns.** No alert icon, no shield, no check mark, no glyph of any
 kind — `actions-charter.md` licenses exactly one, the arrow, and this banner
-uses it once, on its link to the sources. The atlas doctrine is that nothing is
-forbidden and everything is labelled; an alert pictogram over a community or
-oral account would reinstate in one icon the filter the tier policy refuses. The
-loud state carries a plain declarative line instead: « Les assertions non
-vérifiées sont publiées et signalées comme telles. L'atlas ne les retire pas. »
+uses it once, on its link to the sources. Nothing is forbidden and every source
+is named by its type; an alert pictogram over a community or oral account would
+reinstate in one icon the filter the doctrine refuses.
 
 **Shape and measure.** `--afh-radius-0`, because the banner is source apparatus
 (`actions-charter.md` §6), and bounded to `--afh-measure-prose`. Stretched the
 full width of a 720 px screen it reads as a navigation bar — the one object
 readers have learned to skip, and the last shape a provenance statement can
 afford to borrow. It is judged at 430 px first: the census wraps onto as many
-lines as it needs and no count is ever truncated to hold a line.
+lines as it needs and the count is never truncated to hold a line.
 
 **A census of nothing is not a census.** A fiche the fabric records no assertion
 for renders no banner at all. What a fiche's silence is owed is ruled by §4

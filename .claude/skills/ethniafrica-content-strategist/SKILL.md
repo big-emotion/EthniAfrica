@@ -218,9 +218,12 @@ two are manual regardless.
 
 ## Editorial constraints that bind published copy
 
-- **Source tiers**: every claim carries its source and tier (`official` /
-  `referenced` / `unverified`). Nothing is excluded for being weak; everything is
-  labelled. Wikipedia is read first — prefer to cite what it led to (rule:
+- **Sources by type, never by tier**: every claim carries its source, named by
+  its type (oral tradition, book, archive…); `ai_generated` is « Synthèse à
+  vérifier ». The tier (`official` / `referenced` / `unverified`) is an internal
+  audit field and never reaches published copy (`docs/editorial/doctrine.md`
+  §1.1). Nothing is excluded for being weak; oral tradition is never ranked
+  below writing. Every origin is a hypothesis: copy never affirms. Wikipedia is read first — prefer to cite what it led to (rule:
   `docs/editorial/reader-facing-register.md`, "Using sources").
 - **Reader-facing register**: never let the workshop's vocabulary reach the
   reader. No file paths, no `PPL_`/`FLG_`/`PAT_` identifiers, no _file d'attente_,
