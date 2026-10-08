@@ -23,9 +23,7 @@ const evidenceSchema = z
   .strict();
 
 /**
- * One reviewed answer on disk. A file is one term; the answer text is
- * localized per language so a French-only record stays honest through an
- * explicit deferral rather than a silent gap (`_translation.deferred.en`).
+ * One reviewed answer on disk. A file is one term.
  */
 // @req REQ-178
 export const reviewedNameAnswerSchema = z
@@ -58,10 +56,6 @@ export const reviewedNameAnswerSchema = z
     /** What the sources leave unsettled, said where the answer is said. */
     uncertainty: localizedText.optional(),
     evidence: z.array(evidenceSchema).min(1),
-    _translation: z
-      .object({ deferred: z.object({ en: z.string().min(1) }).strict() })
-      .strict()
-      .optional(),
   })
   .strict();
 

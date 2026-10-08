@@ -122,7 +122,6 @@ export interface PatronymeGap {
 
 interface PatronymeDossierCommon {
   _meta: PatronymeFicheMeta;
-  _translation?: { deferred: Record<string, string> };
   id: PatronymeId;
   nameMain: string;
   spellings: PatronymeSpelling[];

@@ -51,19 +51,6 @@ describe("parsePatronymeFile", () => {
     }
   );
 
-  // @req REQ-145
-  it("accepts an English translation deferral on a French name fiche", () => {
-    const result = parsePatronymeFile(
-      validPatronymeFiche({
-        _translation: {
-          deferred: { en: "Awaiting the personal-name translation pass." },
-        },
-      })
-    );
-
-    expect(result.success).toBe(true);
-  });
-
   // @req REQ-134
   it.each([
     "patronymic_non_hereditary",

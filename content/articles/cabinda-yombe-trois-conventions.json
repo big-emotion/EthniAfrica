@@ -67,11 +67,6 @@
       }
     ]
   },
-  "_translation": {
-    "deferred": {
-      "en": "Articles are published in French only for now; the English text will be written once the French text has passed operator review."
-    }
-  },
   "sources": [
     {
       "id": "s1",

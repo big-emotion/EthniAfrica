@@ -109,9 +109,6 @@ export const articleSchema = z.object({
   angle: z.string().min(1),
   fr: localized,
   en: localized.optional(),
-  _translation: z
-    .object({ deferred: z.object({ en: z.string().min(1) }).partial() })
-    .optional(),
   sources: z.array(source),
   media: z.object({
     edition: z

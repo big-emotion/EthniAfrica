@@ -372,7 +372,7 @@ Desktop: blocks 4 and 10 stay rows (≤ 6 and ≤ 3 items fit), block 5 becomes 
   (`text-afh-caption font-bold text-[var(--accent-ink)]`), texts in §5.9.
 - `ShortPosterCard`: one link to the short's Découvertes permalink. The poster is
   an **image** — the cover the production pipeline exports next to each video
-  (GABARITS-SOCIAL §1 ter), title burnt in — `rounded-afh-lg overflow-hidden`,
+  (GABARITS-SOCIAL §1 ter, since removed), title burnt in — `rounded-afh-lg overflow-hidden`,
   130 × 231 / 160 × 284, `object-cover`, `alt` « Couverture : D'où vient le nom
   « X » ? ». Over it: the duration badge top-right (media-badge tokens, pill,
   padding 2 × 8) and a play glyph (inline SVG, `aria-hidden`, 32 / 36 px, centred

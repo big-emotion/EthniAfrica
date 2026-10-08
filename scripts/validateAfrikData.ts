@@ -4379,9 +4379,7 @@ export function checkLanguageStrictSchema(
     }
 
     const ficheTopKeys = new Set(
-      Object.keys(data).filter(
-        (key) => key !== "_meta" && key !== "_translation"
-      )
+      Object.keys(data).filter((key) => key !== "_meta")
     );
     const missingTop = [...modelTopKeys].filter((k) => !ficheTopKeys.has(k));
     const extraTop = [...ficheTopKeys].filter((k) => !modelTopKeys.has(k));
@@ -4483,10 +4481,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   pays: 9,
 };
 
-// Authoring blocks no model declares: `_meta` is curator metadata and
-// `_translation` is a translation deferral fiches still carry from the retired
-// corpus-translation workflow, exempt exactly as in the language check.
-const AUTHORING_KEYS = new Set(["_meta", "_translation"]);
+// Authoring blocks no model declares: `_meta` is curator metadata, exempt
+// exactly as in the language check.
+const AUTHORING_KEYS = new Set(["_meta"]);
 
 // Keys a model documents under `content` that a fiche may leave out without
 // drifting: the page has a fallback for each, so absence is not a defect and
