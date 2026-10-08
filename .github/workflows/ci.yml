@@ -59,6 +59,16 @@ jobs:
 
       - run: npm ci
 
+      # How much of the gate this PR needs, from the paths it touches
+      # (scripts/ci/classifyChanges.ts). The job always starts, because
+      # `CI / build` is a required check and a check that never runs blocks the
+      # PR forever; only its heavy steps are skipped. An unknown path or an
+      # unreadable diff classifies as `code`, so a mistake costs minutes and
+      # never a gate.
+      - name: Scope the checks to what this PR changes
+        id: scope
+        run: npx tsx scripts/ci/classifyChanges.ts "origin/${{ github.base_ref }}" | tee -a "$GITHUB_OUTPUT"
+
       # Restore the ESLint + Prettier caches so `npm run lint` and
       # `npm run format:check` only re-check files whose *content* changed since
       # a prior run. Both scripts must use `--cache-strategy content` (not the
@@ -80,6 +90,7 @@ jobs:
             linters-${{ hashFiles('package-lock.json', 'eslint.config.mjs', '.prettierrc.json', '.prettierignore') }}-
 
       - run: npm run lint
+        if: steps.scope.outputs.scope == 'code'
 
       # Diff-scoped, like the pre-commit hook but against the PR base instead of
       # HEAD. A bare run only surveys (the tree still holds ~1245 tests that
@@ -173,6 +184,7 @@ jobs:
       # accumulating. The ceilings live in scripts/ci/checkDeadCode.ts and can
       # only go down.
       - run: npm run check:dead
+        if: steps.scope.outputs.scope == 'code'
 
       # Pre-merge, only what is knowable without a database: no two files
       # claiming the same version or name, no hole in the sequence. Whether a
@@ -194,10 +206,22 @@ jobs:
       - run: npm run check:production-ledger
 
       - run: npm run typecheck
+        if: steps.scope.outputs.scope == 'code'
 
       - run: npm run format:check
 
       - run: npm run test:coverage
+        if: steps.scope.outputs.scope == 'code'
+
+      # A docs or corpus PR cannot move coverage, but ~100 tests read `docs/`
+      # and `dataset/` straight off the disk (no import for `--changed` to
+      # follow), so those run by name. The list comes from grep, never from a
+      # hand-kept table that would drift as tests are added.
+      - name: Tests that read the docs and the corpus
+        if: steps.scope.outputs.scope != 'code'
+        run: >
+          npx vitest run
+          $(grep -rlE "dataset/|docs/" --include='*.test.ts' --include='*.test.tsx' src scripts eslint)
 
       # Aggregated charter-v2 contract suite (ETNI-982 · FR110): already
       # covered by test:coverage above, but a dedicated named step attributes
@@ -205,6 +229,7 @@ jobs:
       # burying it in the generic test run's output.
       - name: Charter contract suite
         run: npm run test:charter-contracts
+        if: steps.scope.outputs.scope == 'code'
 
       # .next/cache is content-hashed by Next, so a stale entry is ignored,
       # never mis-served — restoring it only ever saves compile work.
@@ -227,6 +252,7 @@ jobs:
       # the app compiles. The same values keep it running on Dependabot and
       # fork PRs, where secrets are not exposed.
       - run: npm run build
+        if: steps.scope.outputs.scope == 'code'
         env:
           NEXT_PUBLIC_SUPABASE_URL: "https://placeholder.supabase.co"
           NEXT_PUBLIC_SUPABASE_ANON_KEY: "placeholder-anon-key"
