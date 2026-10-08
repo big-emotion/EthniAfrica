@@ -389,8 +389,7 @@ module availability behavior stays governed by the rules below.
   Arrow keys move between access-mode groups.
 
 Build both on the shadcn primitives already in the repo — `navigation-menu`
-for the panel, `drawer` for the mobile tray. No competing component library
-(`docs/component-inventory.md`).
+for the panel, `drawer` for the mobile tray. No competing component library.
 
 ---
 

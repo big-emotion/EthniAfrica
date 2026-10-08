@@ -300,8 +300,7 @@ two databases the 2026-08-31 readings of `001` → `049` reached.
 > it. Corpus translation was retired on 2026-10-08: the sidecars and that stage are gone, and the
 > table stays in place, no longer written. `recompute_confidence()` is deliberately untouched: translation provenance is a third axis
 > beside `tier` and `source_kind`. Verify on recette after merge: the table exists and the anon
-> key answers a `SELECT` on it; then `?lang=en` on `/api/v2/peoples/{id}` carries
-> `meta.translation`.
+> key answers a `SELECT` on it.
 
 > **REQ-127 (ETNI-1384).** `072` adds a `CHECK` constraint on `afrik_peoples.content` enforcing
 > the same shape `checkHistoricalAffiliationModel` (FR111) already enforces on the JSON corpus:

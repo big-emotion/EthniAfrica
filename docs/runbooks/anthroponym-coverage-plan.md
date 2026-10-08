@@ -334,8 +334,7 @@ and Coulibaly appear in the same corpus sentence, and treating that sentence as
 a source for all three is how the first batch ended up with one shared passage
 standing in for thirty etymologies.
 
-Share sources through a table keyed by sourceKey, the way
-scripts/afrik/patronymeResearch.data.mjs does — patronymeJsonLoader keys sources
+Share sources through a table keyed by sourceKey — patronymeJsonLoader keys sources
 by title and rejects the batch when the same title appears twice with a
 conflicting tier, URL or provenance.
 

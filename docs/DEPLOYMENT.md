@@ -110,7 +110,7 @@ jobs:
   `lint:req` and `check:copy-literals`; then `check:jira-template`,
   `check:action-pins -- --resolve`, `check:workflow-shell`, `check:env-example`, `check:local-paths`,
   `check:infra-disclosure`, `check:orphan-docs`, `check:asset-weight`, `check:skill-parity`,
-  `check:pagination-contract`, `test:social-tools`, `check:dead`; then
+  `check:pagination-contract`, `check:dead`; then
   `check:migration-files`, `check:rls-coverage`,
   `check:production-ledger`; then `typecheck`, `format:check`, `test:coverage`,
   `test:charter-contracts`, `npm run build`, and a last step that fails if any gate left the
@@ -423,10 +423,8 @@ allowlist check.
 values `reader`, `contributor`, `moderator`, `admin`, `advisor`. They gated the legacy
 `/admin/contributions` workspace, which was removed when contributions became flags (migration
 `081`), and they open no door in the moderation console — access there is membership of
-`admin_allowlist`. The table's one remaining reader in the code is
-`src/lib/rights/protected-asset-access.ts` (protected-asset signed URLs), which no route calls
-today. No script writes it any more; if that path is ever wired, a role is granted in SQL
-against the target project.
+`admin_allowlist`. No application code reads the table and no script writes it any more; if a
+reader is ever wired, a role is granted in SQL against the target project.
 
 ---
 

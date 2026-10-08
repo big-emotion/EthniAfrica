@@ -209,7 +209,6 @@ npx vitest run src/api/v2
 
 - [ARCHITECTURE.md](./ARCHITECTURE.md) - Détails techniques de l'architecture
 - [API_REFERENCE.md](./API_REFERENCE.md) - Référence complète des endpoints
-- [../../docs/IMPLEMENTATION_PROGRESS.md](../../docs/IMPLEMENTATION_PROGRESS.md) - Progression de l'implémentation
 
 ## Support
 
@@ -217,4 +216,3 @@ Pour toute question ou problème, consultez :
 
 - La documentation technique dans `ARCHITECTURE.md`
 - La référence des endpoints dans `API_REFERENCE.md`
-- Le plan d'implémentation dans `docs/IMPLEMENTATION_PROGRESS.md`

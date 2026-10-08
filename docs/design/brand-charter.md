@@ -103,22 +103,15 @@ Three consequences, each already paid for once:
   leaves the lockup about 200 px on a phone (see `SiteHeader.test.tsx`), so the
   header reads `L'histoire des noms` (`The history of names`). The 39-character
   form stays on the footer, the share card and the tab.
-  `brandQualifierCharter.test.ts` holds the French masthead to the opening of
-  `PRODUCT_TAGLINE`, and both locales to 24 characters.
+  `brandQualifierCharter.test.ts` holds the masthead to the opening of
+  `PRODUCT_TAGLINE`, and to 24 characters.
 - **`OG_TITLE` is composed** from `PRODUCT_NAME` and `PRODUCT_TAGLINE` in
   `brand.ts` itself. It was a second literal of the qualifier, which is how the
   test above had to compose it to catch a stale one.
-- **The render engine keeps a copy**, `TAGLINE` in `social/harness/ethni_brand.py`,
-  because Python cannot import `brand.ts`. The same test now reads it and
-  refuses any difference. The slogan is 491 px wide at the video lockup's
-  1080 px measure, against 366 px before, and the lockup's own guard (under
-  55 % of the frame) still holds. Productions already rendered keep the old
-  qualifier and are not re-rendered for this alone.
 
 **Aligned the same day.** `OG_DESCRIPTION` opens on « Chaque nom raconte une
 histoire. » and keeps the six classes behind it, and the About page's lead reads
-« EthniAfrica raconte l'histoire des noms, avec leurs sources » (« tells the
-history of names, with their sources » in English). The test that required the
+« EthniAfrica raconte l'histoire des noms, avec leurs sources ». The test that required the
 description to open on a question now requires it to open on what a name holds,
 and still refuses `peuples` there. Every sentence that says what the site is now
 says the qualifier's promise.
@@ -147,9 +140,8 @@ are now the same string and a second literal would be exactly the duplication
 §1 of this file forbids.
 
 **Aligned in the same pass**, the same way the 21 September change was: the
-About page's lead — `EthniAfrica raconte l'Afrique à travers ses noms` (`tells
-Africa through its names` in English) — and the render engine's `TAGLINE` in
-`social/harness/ethni_brand.py`. `OG_DESCRIPTION` was left untouched: it still
+About page's lead — `EthniAfrica raconte l'Afrique à travers ses noms`.
+`OG_DESCRIPTION` was left untouched: it still
 opens on the six-class enumeration `siteDescription.test.ts` gates, which the
 plan's own proposed description would break, and revising that gate is its own
 pass, not a consequence of the slogan change. Productions already rendered
@@ -193,7 +185,7 @@ canonical link is pointing somewhere the site is not.
 ## 2. The promise, and the one place it is currently broken
 
 **Scoped social extension, 2026-09-25:** the operator approved
-[Mémoires sonores](gabarits-social/MEMOIRES-SONORES.md) within EthniAfrica,
+Mémoires sonores within EthniAfrica,
 exclusively on TikTok and Instagram. Those accounts may have a broader musical
 and cultural remit than the website. The requirement above to repeat the site's
 name-focused slogan in every social bio no longer governs these two profiles;
@@ -248,16 +240,10 @@ African media and publishers, and would conflict with that same media.
 
 ## 3. Voice
 
-Two languages, one voice. In French: `vouvoiement`, present tense. In English,
-which has no `vouvoiement`: present tense, declarative, British spelling, and
-**no contractions in editorial prose** — _does not_, never _doesn't_ — with the
-second person only where the French uses it. The French addresses the reader in
-error states, consent and the report dialogs, and nowhere in a fiche, so the
-English fiche never says _you_ either. Both registers are declarative and
-specific — the surface states what the corpus holds and what it does not, and
-never advertises. Ruled with ETNI-1831: a contraction reads as marketing copy
-on a page that must read as a record, and a second Voice section would be the
-place where the two registers drift apart, which is why there is one.
+One voice: `vouvoiement`, present tense. The site addresses the reader in
+error states, consent and the report dialogs, and nowhere in a fiche. The
+register is declarative and specific — the surface states what the corpus
+holds and what it does not, and never advertises.
 
 These rules serve precision and reading comfort; a formal register is a means, not
 an end (`docs/editorial/reader-facing-register.md`). Whether the no-contraction and
@@ -663,7 +649,7 @@ il vit aujourd’hui. » (2026-10-06). It names the four things a reader arrives
 with, then the three movements of the answer — origin, other names, where it
 lives — so it never lists what the corpus holds and never says « sources » or
 « histoires », which the answer shows rather than promises. It lives in
-`src/lib/i18n/copy/homeHero.ts`, French and English together.
+`src/lib/i18n/copy/homeHero.ts`.
 
 Four examples introduce surnames, languages, peoples and countries. They are
 drawn per visit and renewed on request. People examples use attested self-given
@@ -1046,6 +1032,5 @@ audience.
 - **Anything a surface charter already governs.** Where this file and a surface
   charter disagree, the surface charter is more specific and wins — and the
   disagreement is a bug in one of them, to be closed rather than lived with.
-- **Translation classes and review.** Corpus translation, with its class
-  table and its parity gate, was retired on 2026-10-08. §3 settles how the
-  English interface reads, not what may be translated.
+- **Translation.** Corpus translation, with its class table and its parity
+  gate, was retired on 2026-10-08, and the site is French-only.

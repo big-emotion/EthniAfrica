@@ -506,4 +506,3 @@ Pour plus d'informations :
 
 - [README.md](./README.md) - Vue d'ensemble
 - [ARCHITECTURE.md](./ARCHITECTURE.md) - Détails techniques
-- [../../docs/IMPLEMENTATION_PROGRESS.md](../../docs/IMPLEMENTATION_PROGRESS.md) - Progression

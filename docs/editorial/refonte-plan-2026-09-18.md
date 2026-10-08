@@ -286,7 +286,7 @@ read, and a doc whose basename appears nowhere but in itself is an orphan.
 
 **An orphan is a candidate, never a verdict.** The twenty split three ways:
 
-- **Ledger entries** — the dated `gabarits-social/notes/_*.md`, the audience
+- **Ledger entries** — the dated notes and the audience
   audits. They are a record; they are linked from their directory's README or
   left alone, never deleted.
 - **Newly written and not yet linked** — `search-result-charter.md`

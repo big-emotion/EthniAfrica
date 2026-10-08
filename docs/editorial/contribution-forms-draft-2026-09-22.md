@@ -64,14 +64,13 @@ Recommended as a **pilot**, not a permanent architecture:
 - No code, works on mobile out of the box, answers land in a Google Sheet a
   curator can work from directly.
 - **No embedding.** An iframe would need `frame-src` opened in the CSP
-  (`src/middleware.ts`) and would load Google's cookies before the consent
+  (`src/proxy.ts`) and would load Google's cookies before the consent
   banner, ahead of Plausible's own load-after-consent discipline. Link out
   instead.
 - **No file upload without a Google account.** Excludes contributors without
   one. Ask for a link (a scan, a recording, a published source) instead of a
   file.
-- **Answers do not enter the corpus by themselves.** A curator (the
-  `afrik-curator` skill) turns each row into a sourced, tiered JSON proposal
+- **Answers do not enter the corpus by themselves.** A curator turns each row into a sourced, tiered JSON proposal
   against the relevant strict model, exactly as a hand-written enrichment
   would. Forms is an intake funnel, not a publishing path — the Source Tier
   Policy and the reader-facing register apply to whatever eventually reaches
@@ -177,7 +176,7 @@ requires corpus work first: a new id namespace (e.g. `LOC_XXXXX`, alongside
 (`src/lib/afrik/loaders/*JsonLoader.ts`), a Supabase table, and a
 `readNaming()` branch before anything filled through this form can reach the
 result page. Until then, submissions accumulate in the Sheet as raw material
-for that future class — this section should go back to `/afrik-curator` or
+for that future class — this section should go back to
 `/ethniafrica-spec` as a proposal before the form goes live, not straight to
 Google Forms.
 
@@ -271,7 +270,7 @@ Following mobile-first review order (430 px first):
    "site" are one candidate typology; it may be narrower (e.g. limited to
    former polities and colonial-era place names, which already have partial
    coverage through `content.kingdoms[]` on a country fiche) or broader. This
-   is a modeling decision, best made with `/afrik-curator` or
+   is a modeling decision, best made with
    `/ethniafrica-spec` before the form asks anything.
 3. **Curator cadence.** Who reads the Sheets, how often, and whether a
    contributor is ever told their submission became a fiche — the invitation

@@ -226,7 +226,9 @@ later migration look pending. Compare it against
 
 The throwaway project has different credentials from the one it replaces. Cutting over means
 updating `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` and
-`SUPABASE_SERVICE_ROLE_KEY` in the Vercel project and redeploying — plus the AFRIK corpus
+`SUPABASE_SERVICE_ROLE_KEY` where each application environment reads them (`/srv/ethniafrica/.env`
+on the production VPS, the Vercel environment variables for the recette preview) and
+rebuilding — plus the AFRIK corpus
 sync, which will otherwise keep writing to the old, damaged project:
 
 - recovering the **recette** project also means editing `AFRIK_RECETTE_SUPABASE_URL` in

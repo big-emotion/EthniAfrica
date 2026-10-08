@@ -383,13 +383,3 @@ describe("Country Service", () => {
 2. **Dependency Inversion** : Les couches supérieures dépendent d'abstractions
 3. **Open/Closed** : Ouvert à l'extension, fermé à la modification
 4. **Testability** : Chaque couche est testable indépendamment
-
-## Prochaines étapes
-
-Voir `docs/IMPLEMENTATION_PROGRESS.md` pour les étapes restantes :
-
-- Step 7 : Script de migration des données
-- Step 8 : Requêtes Supabase
-- Step 9 : Migration vers base de données
-- Step 10 : Tests d'évolutivité
-- Step 11 : Documentation finale

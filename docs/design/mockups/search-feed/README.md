@@ -124,7 +124,7 @@ paths, semantic attributes and index metadata all participate in it.
   Heights come from a browser render (fonts loaded), rounded up to 10 px.
 - `test_build.py` — validates the 10 × 4 matrix, manifest schema, semantic
   markup, local assets and clean deterministic regeneration.
-- `posters.py` — draws the posters (needs `social/harness/fonts/Anton-Regular.ttf`);
+- `posters.py` — draws the posters (needs `social/brand/fonts/Anton-Regular.ttf`);
   `posters.json` maps each to its canvas asset.
 
 The generator writes repository paths directly — posters to
