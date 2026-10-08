@@ -6,8 +6,12 @@ on:
   # alike, runs exactly once per commit SHA, and avoids the (push)/(pull_request)
   # duplication that doubles every check on a PR. Post-merge validation belongs
   # to the deploy workflows, not this gate.
+  #
+  # A draft is work in progress and agents push to it by the minute, so nothing
+  # runs until it is marked ready: `ready_for_review` is what starts the CI then.
   pull_request:
     branches: [recette, main]
+    types: [opened, synchronize, reopened, ready_for_review]
 
 concurrency:
   group: ci-${{ github.ref }}
@@ -15,6 +19,7 @@ concurrency:
 
 jobs:
   gitleaks:
+    if: github.event.pull_request.draft == false
     # Secret scan as its own job: no toolchain install needed, so it reports in
     # seconds and a leaked secret fails the PR even when the build is broken.
     # Separate from the Ferry automation, which runs its own gitleaks internally.
@@ -38,6 +43,7 @@ jobs:
           detect --source . --no-git --config .gitleaks.toml --redact --no-banner
 
   scope:
+    if: github.event.pull_request.draft == false
     # How much of the gate this PR needs, from the paths it touches
     # (scripts/ci/classifyChanges.ts). Node strips the types itself, so this job
     # needs no `npm ci` and answers in seconds. An unknown path or an unreadable
@@ -443,7 +449,7 @@ jobs:
         tests-coverage,
         next-build,
       ]
-    if: always()
+    if: always() && github.event.pull_request.draft == false
     permissions:
       contents: read
 
@@ -460,6 +466,7 @@ jobs:
           '
 
   dependency-audit:
+    if: github.event.pull_request.draft == false
     # A high-severity advisory in a dependency change fails the PR that
     # introduces it. GitHub's dependency diff is independent of npm's audit
     # endpoint, whose bulk API can fall back to the retired quick API during
