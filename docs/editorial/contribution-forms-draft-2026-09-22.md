@@ -111,7 +111,7 @@ they land on a blank fiche or amend one.
 
 The "ce que vous ne savez pas" field exists on purpose: the corpus treats a
 declared silence as different from an unasked question (`competing-appellations`,
-CLAUDE.md's Colonial terminology section). A form that only rewards filled
+the Colonial terminology rule). A form that only rewards filled
 fields trains contributors to guess rather than to say "je ne sais pas".
 
 **Source question, asked once per claim, not once per form.** Each
@@ -160,7 +160,7 @@ afterthought.
 | Anciens noms du pays, avec leurs dates si vous les connaissez (ex. « Haute-Volta, 1919–1960 »)                                                                                 | `content.historicalNames.formerNames[]` | No          |
 | Comment ce nom (ou ses formes antérieures) a-t-il changé — Antiquité, Moyen Âge, période précoloniale, colonisation, aujourd'hui ? Une réponse par période que vous connaissez | `content.historicalNames.{era}`         | No, per era |
 
-¹ Following the assertion-certainty rule (CLAUDE.md, "Assertion tracks
+¹ Following the assertion-certainty rule ("Assertion tracks
 certainty"): if you know of more than one account of the name's origin, list
 each one on its own line rather than picking one — a curator preserves all of
 them, attributed, none crowned.
@@ -201,8 +201,8 @@ same way a people or a country does.
 
 Maps to `public/modele-nom-patronyme.json`. Patronymes already have the
 one-record-per-form shape the other classes are converging toward
-(CLAUDE.md, "the corpus's own patronyme model already has the shape the
-other four are converging toward") — `spellings[]` each carrying their own
+(the corpus's own patronyme model already has the shape the
+other four are converging toward) — `spellings[]` each carrying their own
 `attestations[]`, which is what `fromSpellings()` reads. The form should
 collect one spelling per line, not a single free-text name field.
 

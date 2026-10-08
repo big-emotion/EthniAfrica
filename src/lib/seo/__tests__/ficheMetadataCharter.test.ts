@@ -123,7 +123,7 @@ describe("fiche metadata charter", () => {
   });
 
   /**
-   * The reader-facing register (CLAUDE.md): a title and a description are
+   * The reader-facing register: a title and a description are
    * published verbatim, so they may carry no corpus identifier and none of
    * the workshop's own vocabulary. 774 name fiches once told their visitors
    * which queue they came from.

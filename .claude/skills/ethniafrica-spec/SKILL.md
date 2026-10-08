@@ -14,8 +14,6 @@ This skill is **append-only on Confluence** and only writes new sections at stat
 
 ## Codex Compatibility
 
-This `.agents/skills` copy is the Codex-active port of the local Claude skill. Before acting, read `AGENTS.md` and `CLAUDE.md`; those are the active project rules for Codex runs.
-
 For Atlassian operations, use the available Atlassian Rovo MCP tools. If a legacy tool name appears below, resolve it by semantic name through `tool_search` before the first Atlassian call: `getAccessibleAtlassianResources`, `atlassianUserInfo`, `getConfluencePage`, `getConfluencePageDescendants`, `searchConfluenceUsingCql`, `searchJiraIssuesUsingJql`, `getJiraIssue`, `getVisibleJiraProjects`, `updateConfluencePage`, and `createJiraIssue`.
 
 ## When to Activate
@@ -309,5 +307,5 @@ Forbidden:
 
 - `ethniafrica-bootstrap-confluence` runs **once** before this skill is ever invoked. It writes the sentinel `docs/.confluence-bootstrap-complete` that this skill checks at Step 1. If the sentinel is missing, this skill aborts and points back.
 - `ethniafrica-ticket` runs **after** this skill. Given a Jira key created in Step 8, it self-assigns, refines, branches, implements, opens the PR, and transitions the ticket to review. The two skills are intentionally split: spec drafting (this skill, gated) versus implementation (next skill, full-auto).
-- When a draft Story touches AFRIK content rather than code, the Story body must carry the context the editorial work needs downstream: the exact fiche identifiers (`FLG_*`, `PPL_*`, ISO 3166-1 alpha-3), which `public/modele-*.json` strict model applies, and the Source Tier expectation for any new claim (each source labelled `official`, `referenced` or `unverified` per `CLAUDE.md`; a primary source found through Wikipedia cited by its own URL, with the language versions crossed recorded in `notes`). A Story that asks for content without those three things cannot be implemented without inventing data, which the project forbids.
+- When a draft Story touches AFRIK content rather than code, the Story body must carry the context the editorial work needs downstream: the exact fiche identifiers (`FLG_*`, `PPL_*`, ISO 3166-1 alpha-3), which `public/modele-*.json` strict model applies, and the Source Tier expectation for any new claim (each source labelled `official`, `referenced` or `unverified` per the Source Tier Policy; a primary source found through Wikipedia cited by its own URL, with the language versions crossed recorded in `notes`). A Story that asks for content without those three things cannot be implemented without inventing data, which the project forbids.
 - `ethniafrica-audit` reads the same tree read-only and never writes to it.

@@ -57,7 +57,7 @@ Pour chaque date candidate, cherche une confirmation auprès de :
   titres nationaux) ou national (la presse du pays concerné). Tier
   `referenced`.
 - **Wikipédia se lit en premier passage**, jamais comme source finale — la
-  règle déjà écrite dans CLAUDE.md pour toute affirmation du projet. Une
+  règle déjà en vigueur pour toute affirmation du projet. Une
   date lue seulement sur Wikipédia n'est pas encore vérifiée.
 
 **Le plancher : au moins une source `official`, ou deux sources

@@ -37,7 +37,7 @@ anything. Where the plan does not decide, it says so in §12 and names the defau
 6. `docs/design/brand-charter.md`, `typography-charter.md`, `actions-charter.md`,
    `games-charter.md` — the rules §3 applies.
 
-**Working rules** (from `CLAUDE.md`, repeated because each has already cost a red
+**Working rules** (repeated because each has already cost a red
 build):
 
 - One git worktree per session; run `npm run worktree:setup` if you created it by
@@ -481,8 +481,8 @@ translated from corpus fields, never pasted (charter §3: no scholarly word).
 ### 5.13 Disagreement and silence copy
 
 When sources disagree (Lingala: date of the name, speaker counts), the page says
-so in the sub of block 5 and in block 13, **never picks one** (CLAUDE.md,
-« Assertion tracks certainty »). Silences come from the corpus's declared gaps
+so in the sub of block 5 and in block 13, **never picks one** (« Assertion
+tracks certainty »). Silences come from the corpus's declared gaps
 (`gaps[]`, missing attestation dates, missing origin), one dashed card each.
 
 ### 5.14 `FeedFiches` (block 15) [`fiches`]

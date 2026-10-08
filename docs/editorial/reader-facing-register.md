@@ -2,7 +2,7 @@
 
 ## Position and promise
 
-Operator clarification, 2026-09-30; governing rule in `CLAUDE.md`.
+Operator clarification, 2026-09-30.
 
 EthniAfrica is a project of popular education. The operator uses research methods
 and seeks sources, without claiming to be a scientist, linguist or historian.
@@ -165,7 +165,7 @@ any rule below as settled for a specific community.
 
 ## Using sources
 
-This section owns the rule; skills, the curator references and `CLAUDE.md` point
+This section owns the rule; skills and the curator references point
 here instead of restating it (remediation ledger, C01/C02/C07).
 
 - **Admission is traceability, not category.** A source the project consulted is

@@ -9,7 +9,7 @@ describe("classifyChanges", () => {
       classifyChanges([
         "docs/productions/peuple/ledger.json",
         "docs/editorial/reader-facing-register.md",
-        "CLAUDE.md",
+        "README.md",
       ])
     ).toBe("docs");
   });

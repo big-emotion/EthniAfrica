@@ -373,7 +373,7 @@ constraint that makes this non-trivial.
 Add:
   - `/api/v2/peoples/{id}` — the names borne by this people, from
     afrik_patronyme_peoples. Route, handler and service, per the three-layer
-    rule in CLAUDE.md, plus the OpenAPI spec in src/lib/api/openapiV2.ts.
+    rule, plus the OpenAPI spec in src/lib/api/openapiV2.ts.
   - `/api/v2/countries/{id}` — the names attested in this country, from
     afrik_patronyme_countries.
   - a "Noms portés" section on the people fiche and a "Noms attestés" section on

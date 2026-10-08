@@ -246,7 +246,7 @@ companions && feedState`) in the same render, on overlapping conditions —
 both can be true at once, and untangling exactly when only reveals itself by
 loading the real page. This is the one piece of phase 12 that changes what a
 real visitor sees on the production search page, as opposed to a mockup or a
-test fixture, and CLAUDE.md's own instruction for UI changes is to render the
+test fixture, and the project's own instruction for UI changes is to render the
 page and look before calling it done. Every other fix in this document's four
 sessions was verified against a real Playwright render; this one specifically
 needs that same discipline, and this session's browser tooling proved

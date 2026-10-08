@@ -4004,7 +4004,7 @@ function unauthoritativeStanding(
  *
  * `dataset/source/afrik/noms/` mixes the retired numeric axis (wave 1,
  * `PPL_YORUBA.json`, tier 1/2) with the current official/referenced/
- * unverified vocabulary the rest of the corpus uses (see CLAUDE.md's Source
+ * unverified vocabulary the rest of the corpus uses (see the Source
  * Tier Policy) — `ficheSourceTierSchema` already accepts both when parsing,
  * so this validator has to recognise both too instead of only the numeric
  * one. Returns null for anything that is neither (missing, malformed).

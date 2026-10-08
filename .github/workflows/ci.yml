@@ -186,7 +186,7 @@ jobs:
       - run: npm run check:asset-weight
 
       # Three gates that existed and ran nowhere, measured 2026-09-18. Two of
-      # them are named in CLAUDE.md's list of gates headed "all CI-blocking on
+      # them were documented as "all CI-blocking on
       # every PR", which is the worst shape a check can take: believed, and
       # protecting only whoever remembers to type it. They are cheap — two tsx
       # scripts — so the answer was to make the

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "purpose": "Domain-level tier rulings for the AFRIK corpus. The authorized-source-catalog covers the 38 domains an editor may cite deliberately; this file covers the 801 domains the corpus already cites, so the classification pass can resolve them without a per-citation decision.",
-    "doctrine": "See CLAUDE.md, Source Tier Policy. Nothing is forbidden; everything is labelled. official = 1.0, referenced = 0.7, unverified = 0.4.",
+    "doctrine": "Source Tier Policy. Nothing is forbidden; everything is labelled. official = 1.0, referenced = 0.7, unverified = 0.4.",
     "precedence": "authorized-source-catalog.json wins where a domain appears in both. A domain absent from both resolves to needs_review, never to a silent guess.",
     "borderline": "An entry marked borderline:true is a judgement call that an editor should confirm. It is applied, not deferred — but it is the shortlist to re-read first.",
     "coverage": "353 domains, 3530 of the corpus's 3945 URL-bearing citations at the time of writing."

@@ -17,7 +17,7 @@ never restates it, only points at it where the two touch.
 an endonym or an exonym, and it keeps moving through history — a fiche
 publishes the forms and their sources, never a verdict on which is right.
 This is not a stance the ledger invents; it is the same discipline
-`CLAUDE.md`'s Source Tier Policy and its "Assertion tracks certainty" rule
+the Source Tier Policy and the "Assertion tracks certainty" rule
 already hold for every fiche, restated here for the two fields a reader sees
 closest to verbatim:
 

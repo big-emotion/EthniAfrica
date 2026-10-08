@@ -206,7 +206,7 @@ them or is decoration:
 1. **It names peoples, languages, families and countries** — one record each.
 2. **Every claim carries its provenance**, tiered and visible, including the
    weak ones. Nothing is forbidden; everything is labelled (see the Source Tier
-   policy in `CLAUDE.md`).
+   policy).
 3. **It is open.** The corpus is citable and reusable.
 
 The third is contradicted on every page of the site. The footer prints

@@ -57,7 +57,7 @@ until someone confirms the corresponding `DEC` page exists.
 `0001` and `0002` are the two that other files used to cite by path: the
 Confluence bootstrap catalog and the `ethniafrica-bootstrap-confluence` skill now point at
 `git show 0e753c07^:docs/adr/<filename>` instead of at a file that no longer exists. `0001`'s
-demographic doctrine is superseded by DEC-055 and REQ-170: `CLAUDE.md` ("Demographics") is the
+demographic doctrine is superseded by DEC-055 and REQ-170, which are the
 current statement.
 
 Of these, **0002 and 0005 are still load-bearing today**: 0002 is why this file exists, and

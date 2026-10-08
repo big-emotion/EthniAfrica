@@ -517,7 +517,7 @@ together:**
    retired framing ranked sources by closeness to a people's self-designation
    — « personne n'est mieux placé que lui pour raconter son histoire ». That
    is itself a form of the ranking the Source Tier Policy refuses elsewhere
-   (CLAUDE.md, "Whose account gets told"): tier measures who is speaking, not
+   ("Whose account gets told"): tier measures who is speaking, not
    which account deserves to be heard. The title changes with the sentence it
    headlines, since keeping the old title over the new sentence would leave a
    title contradicting its own paragraph.

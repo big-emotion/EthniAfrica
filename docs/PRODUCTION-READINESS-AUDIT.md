@@ -232,7 +232,7 @@ Ten domains, equal weight: **72 / 100 = 7.2 / 10**. No P0. Domain 8 has two fail
 - **Resolved: `docs/runbooks/migration-state.md` is current.** It was last verified 2026-10-03 and quotes recette 001–097 (run 37115838551) and production 001–095 (run 36827759480). Two later recette runs (07:55 and 15:30) are not in it; both succeeded.
 - **P2:** the restore drill's next-due date (2026-12-22) has no reminder behind it, because `backup-drill-reminder.yml` was removed.
 - **Info:** the operator's local `data_quality_status.md` note (from 2026-04/05) still quotes 789 peoples and the retired CIA Factbook. It is outside the repo, but it is the carry-over source this audit reads.
-- Pass: `README`, `CLAUDE.md`, `AGENTS.md` and `docs/DEPLOYMENT.md` agree on the topology (both stacks self-hosted, GitHub Release → VPS, `vercel.json` `deploymentEnabled: false`). `ETNI`, `ETHNIAFRIC` and the engineering root page id agree.
+- Pass: `README` and `docs/DEPLOYMENT.md` agree on the topology (both stacks self-hosted, GitHub Release → VPS, `vercel.json` `deploymentEnabled: false`). `ETNI`, `ETHNIAFRIC` and the engineering root page id agree.
 
 ### Hardcoded values (P0/P1)
 

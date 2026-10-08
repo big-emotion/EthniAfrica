@@ -233,7 +233,7 @@ two are manual regardless.
   problematic, always surface the autonym. Half the pillar rotation is built on
   exactly this move.
 - Documentation and commits in **English**. Reader-facing French copy carries
-  its English counterpart under `CLAUDE.md`’s bilingual-content rules; publication
+  its English counterpart under the bilingual-content rules; publication
   remains French-only unless the operator explicitly changes the locale mode.
 
 ## Boundaries

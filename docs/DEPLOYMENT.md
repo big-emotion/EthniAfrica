@@ -508,4 +508,3 @@ is blocking the read. Test with the anon key, never the service role.
 - [`runbooks/afrik-data-sync.md`](./runbooks/afrik-data-sync.md) — loading the corpus
 - [`runbooks/restore-procedure.md`](./runbooks/restore-procedure.md) — backup restore, RTO/RPO
 - [`runbooks/revisions-dba-bypass.md`](./runbooks/revisions-dba-bypass.md) — overriding the append-only invariant
-- [`../CLAUDE.md`](../CLAUDE.md) — architecture and repository conventions

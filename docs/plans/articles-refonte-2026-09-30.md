@@ -61,17 +61,16 @@ the concrete replacement and its consequences rather than silently introducing a
 
 Read these sources before editing, in this order:
 
-1. `AGENTS.md` and `CLAUDE.md`: workflow, worktrees, traceability and locale behavior.
-2. This plan: accepted product direction and bounded delivery scope.
-3. [Reader-facing register](../editorial/reader-facing-register.md),
+1. This plan: accepted product direction and bounded delivery scope.
+2. [Reader-facing register](../editorial/reader-facing-register.md),
    [personas](../editorial/audience-personas.md), and
    [editorial unification plan](../editorial/remediation-plan-2026-09-30.md).
-4. [Contradictions audit](../editorial/contradictions-2026-09-30/README.md), especially findings
+3. [Contradictions audit](../editorial/contradictions-2026-09-30/README.md), especially findings
    affecting templates, source attribution, local accounts and public prose.
-5. [Brand](../design/brand-charter.md), [typography](../design/typography-charter.md) and
+4. [Brand](../design/brand-charter.md), [typography](../design/typography-charter.md) and
    [actions](../design/actions-charter.md) charters; invoke the project art-direction skill
    before changing visible compositions.
-6. [Production ledger scope](../productions/README.md),
+5. [Production ledger scope](../productions/README.md),
    [media decision](embedded-media-decision.md), and
    production-history plan (since removed). Their dated observations are not
    substitutes for the current code or the operator's newer direction.
@@ -640,7 +639,7 @@ unexamined material is ready.
 ## 11. Copyable handoff to an implementation session
 
 > Implement option A of `docs/plans/articles-refonte-2026-09-30.md` on the current integration
-> baseline. Read AGENTS.md, CLAUDE.md and all required editorial/design references in section 2.
+> baseline. Read all required editorial/design references in section 2.
 > The operator selected Articles: media first, article text below, preserving Anecdotes,
 > Proverbes and Galerie and removing the other dossier navigation entries. Work phase by phase,
 > test first and KISS. Keep the plan checklist and per-candidate recovery/editorial accounting

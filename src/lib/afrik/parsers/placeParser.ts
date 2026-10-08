@@ -98,7 +98,7 @@ export function parsePlaceFile(raw: unknown): ParsedPlaceFile {
       ),
     };
   }
-  // strictNullChecks is off project-wide (CLAUDE.md), which widens zod's
+  // strictNullChecks is off project-wide (tsconfig), which widens zod's
   // inferred output; the cast is safe once safeParse has succeeded.
   return { success: true, data: result.data as PlaceRecord, errors: [] };
 }

@@ -12,7 +12,7 @@
 -- resubmitted until it expires. Upstash would have been the obvious store, but
 -- `src/lib/ratelimit/flagRateLimit.ts` **fails open** when Upstash is not
 -- configured — and a nonce store that fails open guarantees nothing. Supabase
--- is required to run at all (see CLAUDE.md), so the hard floor rests on the
+-- is required to run at all, so the hard floor rests on the
 -- thing that is always there.
 --
 -- Applied by a human via `supabase db push`, recette first, production second
