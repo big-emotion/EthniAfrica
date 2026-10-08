@@ -76,6 +76,10 @@ the markup, and the plan turns it into an assertion.
 
 ## Version 2 — the boards are the design system
 
+> **2026-10-08:** the boards' `SourceStandingBadge` (tier) is superseded — the
+> reader sees a source's type, never its tier (`../../../editorial/doctrine.md`
+> §1.1).
+
 The boards were redrawn on 2026-09-19 so that every value is what the code
 renders at 430 and 1280 px: the type roles evaluated at those widths, the spacing
 ramp, the two radii, `SourceStandingBadge`, the page frame measured on the live

@@ -3,12 +3,16 @@
 The two-page presentation of EthniAfrica, in French and English, sent on
 2026-10-08 to a prospective partner for funders. It asks for €52,700 over 12
 months in patronage, grants and partnerships. Its positions are the
-[doctrine](../../doctrine.md); this folder only holds the document as sent.
+[doctrine](../../doctrine.md); this folder only holds the document.
+
+On 2026-10-08, after sending, two lines were corrected to match doctrine §1.1
+and §2: readers see a source's type, never a tier, and places are in scope
+now. The PDFs were regenerated; the version as sent is in git history.
 
 | File                          | What it is                            |
 | ----------------------------- | ------------------------------------- |
-| `ethniafrica-onepager-fr.pdf` | The French document, as sent          |
-| `ethniafrica-onepager-en.pdf` | The English document, as sent         |
+| `ethniafrica-onepager-fr.pdf` | The French document, current          |
+| `ethniafrica-onepager-en.pdf` | The English document, current         |
 | `ethniafrica-onepager-*.html` | The sources the PDFs are printed from |
 
 The audience figures come from `docs/audience/audit-2026-10-08.md` and are

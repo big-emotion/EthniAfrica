@@ -113,7 +113,9 @@ page (`/fr/atlas/recherche`) is the central surface — the site answers "where 
 Africa's peoples come from". `src/lib/search/naming.ts` is the one module that reads a name's
 forms across the five storage shapes (people, country, family, patronyme, language);
 `nameSubject.ts` returns every entity answering to a query rather than crowning one. No name
-form is promoted over another; the autonym is listed first.
+form is promoted over another. Where the reader searched, the searched form comes first and
+leads visibly to the autonym; everywhere else the autonym comes first (doctrine §1.1).
+Readers see a source's type (`source_kind`), never its tier: the tier is an internal audit field.
 
 ### Frontend conventions
 

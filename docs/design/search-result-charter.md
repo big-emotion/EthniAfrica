@@ -72,12 +72,15 @@ retired word is legitimately discussed (`whyProblematic`, `originOfExonyms`,
 jargon gets in.
 
 **No appellation is crowned.** Every form the corpus holds is shown, **the name
-the people gives itself first** (operator ruling, 2026-09-22), then the filed
-name and the others in the fiche's order, each with its origin attributed to its
-source. Ordering is not crowning: every chip keeps the same weight, and the
+searched first, then the name the people gives itself** (operator ruling,
+2026-10-08, `../editorial/doctrine.md` §1.1, refining that of 2026-09-22), then
+the filed name and the others in the fiche's order, each with its origin
+attributed to its source. When the searched name and the self-name differ, the
+page leads, visibly, to the self-name: « Vous avez cherché Peul. Ce peuple se
+nomme lui-même Fulɓe. » Ordering is not crowning: every chip keeps the same weight, and the
 self-given one is marked, not enlarged. This replaced "the most common first",
 which nothing implemented — the corpus holds no measure of commonness — and which
-put « Peul » before « Fulbe » on the page that exists to show where the names
+put « Peul » before « Fulbe » whatever was searched, on the page that exists to show where the names
 come from. The component
 named `DominantAnswerPanel` is contrary to this rule by its premise and does not
 survive the reorientation.

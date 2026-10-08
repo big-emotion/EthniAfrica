@@ -10,6 +10,9 @@ Date: 2026-09-19. Status: **approved design, not started**. Target branch: `rece
 > phase order or visual-test mechanics differ; it does not reduce the approved
 > feature scope.
 
+> **2026-10-08:** every `<SourceStandingBadge>` below is superseded — the
+> reader sees a source's type, never its tier (`../editorial/doctrine.md` §1.1).
+
 This plan turns the search-result page (`/fr/atlas/recherche?q=…`) into a feed:
 the name answer and the shorts in the first screen, then visual shelves, then the
 reference material. It is written so that an agent with **only this repository**
