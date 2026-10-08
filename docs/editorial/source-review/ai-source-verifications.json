@@ -1,0 +1,4 @@
+{
+  "description": "One entry per ai_generated corpus source a web search was run for. Schema and doctrine: README.md in this directory. Proposed by scripts/afrik/verifyAiGeneratedSources.ts, decided by a human, applied by scripts/afrik/applyAiSourceVerifications.ts and held by scripts/ci/checkAiGeneratedSources.ts.",
+  "verifications": []
+}

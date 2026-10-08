@@ -17,6 +17,7 @@
     "bundle-size:quiz": "tsx scripts/quiz-bundle-size.ts",
     "bundle-size:embed-facade": "tsx scripts/embed-facade-bundle-size.ts",
     "check:action-pins": "tsx scripts/checkGithubActionPins.ts",
+    "check:ai-sources": "tsx scripts/ci/checkAiGeneratedSources.ts",
     "check:asset-weight": "tsx scripts/ci/checkPublicAssetWeight.ts",
     "check:copy-literals": "tsx scripts/ci/checkCopyLiterals.ts",
     "check:dead": "tsx scripts/ci/checkDeadCode.ts",
@@ -71,6 +72,7 @@
     "worktree:setup": "bash scripts/setup-worktree.sh"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.132.1",
     "@radix-ui/react-alert-dialog": "^1.1.23",
     "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-dropdown-menu": "^2.1.24",
