@@ -1,4 +1,43 @@
 {
   "description": "One entry per ai_generated corpus source a web search was run for. Schema and doctrine: README.md in this directory. Proposed by scripts/afrik/verifyAiGeneratedSources.ts, decided by a human, applied by scripts/afrik/applyAiSourceVerifications.ts and held by scripts/ci/checkAiGeneratedSources.ts.",
-  "verifications": []
+  "verifications": [
+    {
+      "id": "ASV-2026-10-08-0001",
+      "fiche": "patronymes/PAT_ABABDA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ABABDA; nameMain: Ababda; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-08",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-08-0002",
+      "fiche": "patronymes/PAT_ABAZA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ABAZA; nameMain: Abaza; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Abaza family",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Abaza_family",
+          "source_kind": "community",
+          "quote": "The clan has sometimes been referred to as 'the family of the pashas'",
+          "supports": "Abaza is the name of a clan (Egyptian aristocratic family of Abazin/Circassian maternal origin). The article says the name came from a maternal ancestor (transmission not standard patrilineal). The quote is from a fetch-tool summary and should be checked against the live page. Encyclopedia source; it cites al-Sayyid-Marsot 1984 (CUP), which I did not open."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-08",
+      "model": "opus (claude -p)"
+    }
+  ]
 }

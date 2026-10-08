@@ -343,4 +343,22 @@ describe("createClaudeCliProposer", () => {
     expect(args[args.indexOf("--tools") + 1]).toBe("WebSearch,WebFetch");
     expect(args[args.indexOf("--allowedTools") + 1]).toBe("WebSearch,WebFetch");
   });
+
+  // The CLI validates --json-schema with a validator that does not know the
+  // draft-2020-12 meta-schema zod declares, and refuses the run outright
+  // (found by the first real run, 2026-10-08). The shape is enough; the
+  // `$schema` declaration is dropped.
+  // @req REQ-161
+  it("passes a JSON schema the Claude Code CLI accepts, with no $schema declaration", async () => {
+    const { run, calls } = fakeClaude({
+      stdout: envelope({ structured_output: { candidates: [] } }),
+    });
+
+    await createClaudeCliProposer(run)(REQUEST);
+
+    const [{ args }] = calls;
+    const schema = JSON.parse(args[args.indexOf("--json-schema") + 1]);
+    expect(schema).not.toHaveProperty("$schema");
+    expect(schema).toHaveProperty("properties.candidates");
+  });
 });
