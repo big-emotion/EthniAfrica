@@ -3,12 +3,14 @@ import os from "os";
 import path from "path";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import {
-  AI_GENERATED_RATCHET,
+  UNREVIEWED_AI_GENERATED_RATCHET,
   checkAiGeneratedSources,
   checkAiSourceVerifications,
 } from "../checkAiGeneratedSources";
 import {
   AI_SOURCE_VERIFICATIONS_LEDGER,
+  readVerificationLedger,
+  sourceIdentity,
   type AiSourceVerification,
 } from "../../afrik/aiSourceVerifications";
 
@@ -130,18 +132,148 @@ describe("checkAiGeneratedSources", () => {
 
     expect(result.ok).toBe(false);
     expect(result.error).toContain(
-      "lower AI_GENERATED_RATCHET to 1 in scripts/ci/checkAiGeneratedSources.ts"
+      "lower UNREVIEWED_AI_GENERATED_RATCHET to 1 in scripts/ci/checkAiGeneratedSources.ts"
     );
+  });
+
+  // The guarantee is that no machine-written source enters without a person
+  // looking at it, not that none exists: a source a reviewer kept as a
+  // synthesis, or flagged for an oral account, is reviewed and leaves the
+  // count. A proposal is still waiting for a person, so it stays.
+  // @req REQ-161
+  it("counts only the sources no rejected or oral_needed decision covers", () => {
+    writeFiche("patronymes/PAT_DIOP.json", {
+      sources: [
+        AI_SOURCE,
+        { ...AI_SOURCE, title: "Relevé B" },
+        { ...AI_SOURCE, title: "Relevé C" },
+      ],
+    });
+    const decidedBy = { decidedBy: "moderator-1", decidedAt: "2026-10-09" };
+
+    const result = checkAiGeneratedSources(datasetRoot, 1, [
+      verification({ status: "rejected", ...decidedBy }),
+      verification({
+        id: "ASV-2026-10-08-0002",
+        path: "sources[1]",
+        original: { title: "  Relevé B ", url: null },
+        status: "oral_needed",
+        ...decidedBy,
+      }),
+      verification({
+        id: "ASV-2026-10-08-0003",
+        path: "sources[2]",
+        original: { title: "Relevé C", url: null },
+      }),
+    ]);
+
+    expect(result.ok).toBe(true);
+    expect(result.sources.map((source) => source.path)).toEqual(["sources[2]"]);
+  });
+
+  // @req REQ-161
+  it("counts every object of a reviewed identity out, however many share it", () => {
+    writeFiche("patronymes/PAT_DIOP.json", {
+      sources: [AI_SOURCE, { ...AI_SOURCE, sourceKey: "other" }],
+    });
+
+    const result = checkAiGeneratedSources(datasetRoot, 0, [
+      verification({
+        status: "rejected",
+        decidedBy: "moderator-1",
+        decidedAt: "2026-10-09",
+      }),
+    ]);
+
+    expect(result.count).toBe(0);
+  });
+
+  // A provenance marker carries no title or url; the queue entry owning it
+  // (country + name) is what tells one marker from the next.
+  // @req REQ-161
+  it("tells untitled provenance markers apart by their entry's country and name", () => {
+    writeFiche("patronymes/_queue.json", {
+      countries: [
+        {
+          entries: ["Diop", "Fall", "Sall"].map((name) => ({
+            countryId: "SEN",
+            name,
+            provenance: { tier: "unverified", source_kind: "ai_generated" },
+          })),
+        },
+      ],
+    });
+
+    const result = checkAiGeneratedSources(datasetRoot, 2, [
+      verification({
+        fiche: "patronymes/_queue.json",
+        path: "countries[0].entries[1].provenance",
+        original: { title: null, url: null },
+        owner: { countryId: "SEN", name: "Fall" },
+        status: "rejected",
+        decidedBy: "moderator-1",
+        decidedAt: "2026-10-09",
+      }),
+    ]);
+
+    expect(result.ok).toBe(true);
+    expect(result.sources.map((source) => source.owner?.name)).toEqual([
+      "Diop",
+      "Sall",
+    ]);
+  });
+
+  // @req REQ-161
+  it("adds nameSystem when country and name collide, and fails loudly when that collides too", () => {
+    const entry = (nameSystem: string) => ({
+      countryId: "SEN",
+      name: "Diop",
+      nameSystem,
+      provenance: { tier: "unverified", source_kind: "ai_generated" },
+    });
+    writeFiche("patronymes/_queue.json", {
+      entries: [entry("clan_name"), entry("patronym")],
+    });
+
+    expect(
+      checkAiGeneratedSources(datasetRoot, 2).sources.map(
+        (source) => source.owner
+      )
+    ).toEqual([
+      { countryId: "SEN", name: "Diop", nameSystem: "clan_name" },
+      { countryId: "SEN", name: "Diop", nameSystem: "patronym" },
+    ]);
+
+    writeFiche("patronymes/_queue.json", {
+      entries: [entry("clan_name"), entry("clan_name")],
+    });
+    expect(() => checkAiGeneratedSources(datasetRoot, 2)).toThrow(
+      "patronymes/_queue.json: two ai_generated markers share"
+    );
+  });
+
+  // @req REQ-161
+  it("counts the live queue's 849 markers as 849 sources, 1343 in all", () => {
+    const live = checkAiGeneratedSources("dataset/source/afrik", 0);
+    const identities = new Set(live.sources.map(sourceIdentity));
+    const queueMarkers = live.sources.filter(
+      (source) => source.fiche === "patronymes/_candidates-by-country.json"
+    );
+
+    expect(queueMarkers).toHaveLength(849);
+    expect(new Set(queueMarkers.map(sourceIdentity)).size).toBe(849);
+    expect(identities.size).toBe(1343);
   });
 
   // @req REQ-161
   it("holds the live corpus exactly at the committed ratchet", () => {
     const live = checkAiGeneratedSources(
       "dataset/source/afrik",
-      AI_GENERATED_RATCHET
+      UNREVIEWED_AI_GENERATED_RATCHET,
+      readVerificationLedger(AI_SOURCE_VERIFICATIONS_LEDGER)
     );
 
-    expect(live.count).toBe(AI_GENERATED_RATCHET);
+    expect(live.count).toBe(UNREVIEWED_AI_GENERATED_RATCHET);
   });
 });
 
@@ -156,11 +288,19 @@ describe("checkAiSourceVerifications", () => {
 
   // @req REQ-161
   it("holds a ledger of proposals, rejections and oral-account requests", () => {
+    writeFiche("patronymes/PAT_DIOP.json", {
+      sources: [
+        AI_SOURCE,
+        { ...AI_SOURCE, title: "Relevé B" },
+        { ...AI_SOURCE, title: "Relevé C" },
+      ],
+    });
     writeLedger([
       verification(),
       verification({
         id: "ASV-2026-10-08-0002",
         path: "sources[1]",
+        original: { title: "Relevé B", url: null },
         candidates: [],
         status: "oral_needed",
         decidedBy: "moderator-1",
@@ -169,6 +309,7 @@ describe("checkAiSourceVerifications", () => {
       verification({
         id: "ASV-2026-10-08-0003",
         path: "sources[2]",
+        original: { title: "Relevé C", url: null },
         status: "rejected",
         decidedBy: "moderator-1",
         decidedAt: "2026-10-09",
@@ -220,7 +361,7 @@ describe("checkAiSourceVerifications", () => {
     writeLedger([verification(ACCEPTED)]);
 
     expect(checkAiSourceVerifications(datasetRoot, ledgerPath).errors).toEqual([
-      `ASV-2026-10-08-0001: patronymes/PAT_DIOP.json sources[0] does not cite the accepted candidate "${CANDIDATE.title}"`,
+      `ASV-2026-10-08-0001: patronymes/PAT_DIOP.json does not cite the accepted candidate "${CANDIDATE.title}"`,
     ]);
   });
 
@@ -257,8 +398,73 @@ describe("checkAiSourceVerifications", () => {
       'ASV-2026-10-08-0001: candidate 0 has source_kind "ai_generated" — a candidate is a bibliographic work',
       "ASV-2026-10-08-0001: candidate 0 has no http(s) url",
       "ASV-2026-10-08-0001: duplicate id",
-      "ASV-2026-10-08-0001: patronymes/PAT_DIOP.json sources[0] is already verified by ASV-2026-10-08-0001 — one verification per source",
+      'ASV-2026-10-08-0001: patronymes/PAT_DIOP.json "Relevé de couverture" is already verified by ASV-2026-10-08-0001 — one verification per source',
     ]);
+  });
+
+  // A source is its fiche, title and url, not its position: the same citation
+  // under another path is the same source, verified once.
+  // @req REQ-161
+  it("fails two verifications of one identity even at different paths", () => {
+    writeLedger([
+      verification(),
+      verification({
+        id: "ASV-2026-10-08-0002",
+        path: "sources[4]",
+        original: { title: "Relevé de couverture ", url: "" as never },
+      }),
+    ]);
+
+    expect(checkAiSourceVerifications(datasetRoot, ledgerPath).errors).toEqual([
+      'ASV-2026-10-08-0002: patronymes/PAT_DIOP.json "Relevé de couverture" is already verified by ASV-2026-10-08-0001 — one verification per source',
+    ]);
+  });
+
+  // @req REQ-161
+  it("finds a not-yet-applied accepted source by identity after an insertion shifted it", () => {
+    writeFiche("patronymes/PAT_DIOP.json", {
+      sources: [{ title: "Autre", url: null, tier: "referenced" }, AI_SOURCE],
+    });
+    writeLedger([verification(ACCEPTED)]);
+
+    expect(checkAiSourceVerifications(datasetRoot, ledgerPath).errors).toEqual([
+      "ASV-2026-10-08-0001: patronymes/PAT_DIOP.json still carries the ai_generated source at sources[1] — run npx tsx scripts/afrik/applyAiSourceVerifications.ts --apply",
+    ]);
+  });
+
+  // @req REQ-161
+  it("fails a non-accepted entry whose owner matches no ai_generated marker", () => {
+    writeFiche("patronymes/_queue.json", {
+      entries: [
+        {
+          countryId: "SEN",
+          name: "Fall",
+          provenance: { tier: "unverified", source_kind: "ai_generated" },
+        },
+      ],
+    });
+    const marker = {
+      fiche: "patronymes/_queue.json",
+      path: "entries[0].provenance",
+      original: { title: null, url: null },
+      status: "rejected" as const,
+      decidedBy: "moderator-1",
+      decidedAt: "2026-10-09",
+    };
+
+    writeLedger([
+      verification({ ...marker, owner: { countryId: "SEN", name: "Fal" } }),
+    ]);
+    expect(checkAiSourceVerifications(datasetRoot, ledgerPath).errors).toEqual([
+      "ASV-2026-10-08-0001: patronymes/_queue.json names no AI-generated source — mistyped owner/title/url?",
+    ]);
+
+    writeLedger([
+      verification({ ...marker, owner: { countryId: "SEN", name: "Fall" } }),
+    ]);
+    expect(checkAiSourceVerifications(datasetRoot, ledgerPath).errors).toEqual(
+      []
+    );
   });
 
   // @req REQ-161

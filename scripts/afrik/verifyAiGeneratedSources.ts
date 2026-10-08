@@ -9,19 +9,22 @@
  * oral account — with a person. `applyAiSourceVerifications.ts` writes only
  * what a person accepted.
  *
+ * The search runs through the operator's Claude Code CLI (`claude -p`), on
+ * their subscription: the project pays for no API key and runs nothing on
+ * GitHub's side.
+ *
  * Sources are taken in corpus order (fiches sorted by path, then document
  * order) so successive runs walk the tail instead of re-asking the same ones;
  * anything already in the ledger, whatever its status, is skipped.
  *
- *   npx tsx scripts/afrik/verifyAiGeneratedSources.ts            # 20 sources
- *   npx tsx scripts/afrik/verifyAiGeneratedSources.ts --limit 5
- *
- * Credentials resolve from the environment (ANTHROPIC_API_KEY in CI).
+ *   npm run verify:ai-sources                # 20 sources
+ *   npm run verify:ai-sources -- --limit 5
  */
 
+import { spawnSync } from "node:child_process";
+import os from "node:os";
 import path from "node:path";
 
-import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 
 import {
@@ -29,6 +32,7 @@ import {
   CANDIDATE_SOURCE_KINDS,
   findAiGeneratedSources,
   readVerificationLedger,
+  sourceIdentity,
   validateCandidate,
   validateVerifications,
   writeVerificationLedger,
@@ -38,38 +42,40 @@ import {
 } from "./aiSourceVerifications";
 import { readCorpusFiches } from "./sourceTierRulings";
 
-const MODEL = "claude-opus-5-5";
+const MODEL_ALIAS = "opus";
+/** What the ledger records as `model`: the alias, and that it ran in the CLI. */
+export const CLI_MODEL_LABEL = `${MODEL_ALIAS} (claude -p)`;
 const DEFAULT_LIMIT = 20;
 
 export type VerificationRequest = AiGeneratedSource;
 
-/** The one seam to the network: tests pass a fake, CI passes Claude. */
+/** The one seam to the network: tests pass a fake, the scripts pass Claude. */
 export type ProposeCandidates = (
   request: VerificationRequest
 ) => Promise<SourceCandidate[]>;
-
-export interface VerificationOptions {
-  datasetRoot: string;
-  ledgerPath: string;
-  limit: number;
-  proposeCandidates: ProposeCandidates;
-  model: string;
-  /** ISO date stamped on the ids and `proposedAt`. */
-  today: string;
-}
 
 function nextSequence(entries: AiSourceVerification[]): number {
   const numbers = entries.map((entry) => Number(entry.id.slice(-4)) || 0);
   return Math.max(0, ...numbers) + 1;
 }
 
+export interface ProposalOptions {
+  ledgerPath: string;
+  proposeCandidates: ProposeCandidates;
+  model: string;
+  /** ISO date stamped on the ids and `proposedAt`. */
+  today: string;
+}
+
 /**
- * Returns the proposals appended. The ledger is written even when a search
- * throws midway, so a rate limit on source 15 does not discard the first 14
- * paid-for searches.
+ * Searches each source the ledger does not hold yet and appends one
+ * `proposed` entry per source. The ledger is written even when a search
+ * throws midway, so a failure on source 15 does not discard the first 14
+ * searches.
  */
-export async function runVerification(
-  options: VerificationOptions
+export async function appendProposals(
+  sources: AiGeneratedSource[],
+  options: ProposalOptions
 ): Promise<AiSourceVerification[]> {
   const ledger = readVerificationLedger(options.ledgerPath);
   const errors = validateVerifications(ledger);
@@ -79,12 +85,15 @@ export async function runVerification(
     );
   }
 
-  const known = new Set(
-    ledger.map((entry) => JSON.stringify([entry.fiche, entry.path]))
-  );
-  const pending = findAiGeneratedSources(readCorpusFiches(options.datasetRoot))
-    .filter((source) => !known.has(JSON.stringify([source.fiche, source.path])))
-    .slice(0, options.limit);
+  // One proposal per identity: sources of a fiche sharing a title and url
+  // are one source to decide on.
+  const known = new Set(ledger.map(sourceIdentity));
+  const pending = sources.filter((source) => {
+    const identity = sourceIdentity(source);
+    if (known.has(identity)) return false;
+    known.add(identity);
+    return true;
+  });
 
   const proposed: AiSourceVerification[] = [];
   let sequence = nextSequence(ledger);
@@ -99,6 +108,7 @@ export async function runVerification(
         path: source.path,
         claim: source.claim,
         original: source.original,
+        ...(source.owner ? { owner: source.owner } : {}),
         candidates,
         status: "proposed",
         proposedAt: options.today,
@@ -117,43 +127,45 @@ export async function runVerification(
   return proposed;
 }
 
-const CandidateReport = z.strictObject({
-  candidates: z.array(
-    z.strictObject({
-      title: z.string(),
-      author: z.string().nullable(),
-      // No .int(): it emits minimum/maximum, which strict tool schemas reject.
-      year: z.number().nullable(),
-      url: z.string(),
-      source_kind: z.enum(CANDIDATE_SOURCE_KINDS),
-      quote: z.string(),
-      supports: z.string(),
+export interface VerificationOptions extends ProposalOptions {
+  datasetRoot: string;
+  limit: number;
+}
+
+/** The backlog: the next `limit` ai_generated sources the ledger lacks. */
+export async function runVerification(
+  options: VerificationOptions
+): Promise<AiSourceVerification[]> {
+  const known = new Set(
+    readVerificationLedger(options.ledgerPath).map(sourceIdentity)
+  );
+  const pending = findAiGeneratedSources(readCorpusFiches(options.datasetRoot))
+    .filter((source) => {
+      const identity = sourceIdentity(source);
+      if (known.has(identity)) return false;
+      known.add(identity);
+      return true;
     })
-  ),
+    .slice(0, options.limit);
+  return appendProposals(pending, options);
+}
+
+const CandidateFields = z.strictObject({
+  title: z.string(),
+  author: z.string().nullable(),
+  year: z.number().nullable(),
+  url: z.string(),
+  source_kind: z.enum(CANDIDATE_SOURCE_KINDS),
+  quote: z.string(),
+  supports: z.string(),
 });
 
-// Structured output (`output_config.format`) is documented as incompatible
-// with citations, and web search answers always carry citations, so the
-// result comes back through a strict tool instead. Forcing that tool with
-// tool_choice is a 400 on this model; the prompt asks for it and the loop
-// nudges once if the model ends its turn without calling it.
-const reportSchema: Record<string, unknown> = z.toJSONSchema(CandidateReport);
-// The JSON Schema dialect marker is not part of a tool's input schema.
-delete reportSchema.$schema;
+const CandidateReport = z.strictObject({
+  candidates: z.array(CandidateFields),
+});
 
-const REPORT_TOOL: Anthropic.Tool = {
-  name: "report_candidates",
-  description:
-    "Report the sources found for the claim. Call it exactly once, with an empty list when no source states the claim.",
-  strict: true,
-  input_schema: reportSchema as Anthropic.Tool.InputSchema,
-};
-
-const WEB_SEARCH: Anthropic.WebSearchTool20260209 = {
-  type: "web_search_20260209",
-  name: "web_search",
-  max_uses: 5,
-};
+/** Passed to `--json-schema`, so the CLI itself holds the model to the shape. */
+const REPORT_SCHEMA = JSON.stringify(z.toJSONSchema(CandidateReport));
 
 const SYSTEM = `You verify citations for an open, sourced atlas of African peoples, languages and names. A corpus statement is currently backed only by machine-written text. Search the web for published sources that actually state it.
 
@@ -162,8 +174,8 @@ Rules:
 - Prefer academic, archival, linguistic-reference and official sources over encyclopedias, blogs and genealogy sites.
 - Never invent or reconstruct a URL: use the exact URL of a page you saw.
 - A source that merely mentions the name without supporting the claim does not count.
-- When nothing supports the claim, report an empty list. That is a useful answer: a human will then decide whether the statement rests on an oral account.
-- Finish by calling report_candidates once.`;
+- When nothing supports the claim, answer with an empty list. That is a useful answer: a human will then decide whether the statement rests on an oral account.
+- Answer with JSON only: {"candidates": [{"title", "author", "year", "url", "source_kind", "quote", "supports"}]}.`;
 
 function describeRequest(request: VerificationRequest): string {
   return [
@@ -173,60 +185,139 @@ function describeRequest(request: VerificationRequest): string {
   ].join("\n");
 }
 
-/** Server-side search pauses after ten iterations; a few resumes are plenty. */
-const MAX_TURNS = 6;
+const WEB_TOOLS = "WebSearch,WebFetch";
 
-export function createClaudeProposer(
-  client: Anthropic = new Anthropic()
+/**
+ * `--safe-mode` and `--strict-mcp-config` keep the operator's own CLAUDE.md,
+ * plugins, hooks and MCP servers out of the run: they are not part of the
+ * task, and loading them multiplies the context by two orders of magnitude.
+ * `--permission-prompts none` denies anything that would ask, so a run in a
+ * git hook can never hang on a prompt nobody sees. Unlike `--bare`, safe mode
+ * keeps subscription login working.
+ */
+export const CLAUDE_ARGS = [
+  "-p",
+  "--output-format",
+  "json",
+  "--model",
+  MODEL_ALIAS,
+  "--safe-mode",
+  "--strict-mcp-config",
+  "--no-session-persistence",
+  "--permission-prompts",
+  "none",
+  "--tools",
+  WEB_TOOLS,
+  "--allowedTools",
+  WEB_TOOLS,
+  "--system-prompt",
+  SYSTEM,
+  "--json-schema",
+  REPORT_SCHEMA,
+];
+
+/** A few searches and page reads per source; past this, something is stuck. */
+const CLAUDE_TIMEOUT_MS = 5 * 60 * 1000;
+
+export interface ClaudeRunResult {
+  status: number | null;
+  stdout: string;
+  stderr: string;
+  error: (Error & { code?: string }) | undefined;
+}
+
+/** The one process seam: tests pass a fake, so no test ever spawns the CLI. */
+export type ClaudeRun = (args: string[], input: string) => ClaudeRunResult;
+
+export const spawnClaude: ClaudeRun = (args, input) => {
+  const result = spawnSync("claude", args, {
+    input,
+    encoding: "utf8",
+    timeout: CLAUDE_TIMEOUT_MS,
+    maxBuffer: 16 * 1024 * 1024,
+    // Away from the repository, so no project setting or hook joins the run.
+    cwd: os.tmpdir(),
+  });
+  return {
+    status: result.status,
+    stdout: result.stdout ?? "",
+    stderr: result.stderr ?? "",
+    error: result.error,
+  };
+};
+
+const CliEnvelope = z.looseObject({
+  is_error: z.boolean().optional(),
+  subtype: z.string().optional(),
+  result: z.string().optional(),
+  structured_output: z.unknown().optional(),
+});
+
+function parseJson(text: string): unknown {
+  try {
+    return JSON.parse(text);
+  } catch {
+    return undefined;
+  }
+}
+
+/** The model's text answer, which may arrive inside a ```json fence. */
+function parseAnswerText(text: string | undefined): unknown {
+  if (!text) return undefined;
+  const fenced = text.match(/```(?:json)?\s*([\s\S]*?)```/);
+  return parseJson((fenced ? fenced[1] : text).trim());
+}
+
+function readCandidates(answer: unknown): SourceCandidate[] {
+  const report = Array.isArray(answer) ? { candidates: answer } : answer;
+  const parsed = CandidateReport.safeParse(report);
+  return parsed.success ? (parsed.data.candidates as SourceCandidate[]) : [];
+}
+
+/**
+ * An answer that cannot be read is zero candidates: a human still sees the
+ * source. A run that did not answer at all throws, so it is retried instead
+ * of being ledgered as an empty search.
+ */
+export function createClaudeCliProposer(
+  run: ClaudeRun = spawnClaude
 ): ProposeCandidates {
   return async (request) => {
-    const messages: Anthropic.MessageParam[] = [
-      { role: "user", content: describeRequest(request) },
-    ];
-    let nudged = false;
+    const label = `${request.fiche} ${request.path}`;
+    const outcome = run(CLAUDE_ARGS, describeRequest(request));
 
-    for (let turn = 0; turn < MAX_TURNS; turn += 1) {
-      const response = await client.messages.create({
-        model: MODEL,
-        max_tokens: 16000,
-        system: SYSTEM,
-        tools: [WEB_SEARCH, REPORT_TOOL],
-        output_config: { effort: "medium" },
-        messages,
-      });
-
-      if (response.stop_reason === "refusal") {
-        console.warn(
-          `  ${request.fiche} ${request.path}: refused (${response.stop_details?.category ?? "no category"}) — recorded with no candidate`
-        );
-        return [];
-      }
-
-      const report = response.content.find(
-        (block): block is Anthropic.ToolUseBlock =>
-          block.type === "tool_use" && block.name === REPORT_TOOL.name
+    if (outcome.error?.code === "ETIMEDOUT") {
+      throw new Error(
+        `claude timed out after ${CLAUDE_TIMEOUT_MS / 1000}s on ${label}`
       );
-      if (report) {
-        const parsed = CandidateReport.safeParse(report.input);
-        return parsed.success
-          ? (parsed.data.candidates as SourceCandidate[])
-          : [];
-      }
-
-      messages.push({ role: "assistant", content: response.content });
-      if (response.stop_reason === "pause_turn") continue;
-      if (nudged) break;
-      nudged = true;
-      messages.push({
-        role: "user",
-        content: "Report your findings with the report_candidates tool.",
-      });
+    }
+    if (outcome.error) {
+      throw new Error(
+        `claude could not run on ${label}: ${outcome.error.message}`
+      );
+    }
+    if (outcome.status !== 0) {
+      throw new Error(
+        `claude exited ${outcome.status} on ${label}: ${outcome.stderr.trim() || outcome.stdout.trim()}`
+      );
     }
 
-    console.warn(
-      `  ${request.fiche} ${request.path}: no report after ${MAX_TURNS} turns — recorded with no candidate`
+    const parsedEnvelope = CliEnvelope.safeParse(
+      parseJson(outcome.stdout.trim())
     );
-    return [];
+    if (!parsedEnvelope.success) {
+      throw new Error(`claude printed no JSON result on ${label}`);
+    }
+    const envelope = parsedEnvelope.data;
+    if (envelope.is_error) {
+      throw new Error(
+        `claude reported an error on ${label}: ${envelope.subtype ?? "unknown"} ${envelope.result ?? ""}`.trim()
+      );
+    }
+
+    return readCandidates(
+      envelope.structured_output ?? parseAnswerText(envelope.result)
+    );
   };
 }
 
@@ -247,8 +338,8 @@ async function main(): Promise<void> {
     datasetRoot: "dataset/source/afrik",
     ledgerPath: AI_SOURCE_VERIFICATIONS_LEDGER,
     limit: readLimit(process.argv),
-    proposeCandidates: createClaudeProposer(),
-    model: MODEL,
+    proposeCandidates: createClaudeCliProposer(),
+    model: CLI_MODEL_LABEL,
     today: new Date().toISOString().slice(0, 10),
   });
 

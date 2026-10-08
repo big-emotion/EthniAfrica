@@ -2,12 +2,12 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 
-import type Anthropic from "@anthropic-ai/sdk";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 
 import {
-  createClaudeProposer,
+  createClaudeCliProposer,
   runVerification,
+  type ClaudeRun,
   type VerificationRequest,
 } from "../verifyAiGeneratedSources";
 import {
@@ -179,6 +179,32 @@ describe("runVerification", () => {
   });
 
   // @req REQ-161
+  it("proposes once for sources of one fiche sharing a title and url", async () => {
+    writeFiche("patronymes/PAT_DIOP.json", {
+      ...aiFiche("PAT_DIOP", "Diop"),
+      sources: [aiFiche("", "").sources[0], aiFiche("", "").sources[0]],
+    });
+    const asked: string[] = [];
+
+    await runVerification({
+      datasetRoot,
+      ledgerPath,
+      limit: 2,
+      today: "2026-10-08",
+      model: "opus (claude -p)",
+      proposeCandidates: async (request) => {
+        asked.push(`${request.fiche} ${request.path}`);
+        return [];
+      },
+    });
+
+    expect(asked).toEqual([
+      "patronymes/PAT_DIOP.json sources[0]",
+      "patronymes/PAT_FALL.json sources[0]",
+    ]);
+  });
+
+  // @req REQ-161
   it("keeps the proposals gathered before the search failed", async () => {
     let calls = 0;
     await expect(
@@ -200,20 +226,6 @@ describe("runVerification", () => {
   });
 });
 
-/** A stand-in for the Messages API, replaying canned responses in order. */
-function scriptedClient(responses: Partial<Anthropic.Message>[]) {
-  const requests: Anthropic.MessageCreateParamsNonStreaming[] = [];
-  const client = {
-    messages: {
-      create: async (params: Anthropic.MessageCreateParamsNonStreaming) => {
-        requests.push(structuredClone(params));
-        return responses.shift();
-      },
-    },
-  } as unknown as Anthropic;
-  return { client, requests };
-}
-
 const REQUEST: VerificationRequest = {
   fiche: "patronymes/PAT_DIOP.json",
   path: "sources[0]",
@@ -221,61 +233,114 @@ const REQUEST: VerificationRequest = {
   original: { title: "Relevé de couverture", url: null },
 };
 
-function report(candidates: SourceCandidate[]): Anthropic.ContentBlock {
-  return {
-    type: "tool_use",
-    id: "toolu_1",
-    name: "report_candidates",
-    input: { candidates },
-  } as Anthropic.ContentBlock;
+/**
+ * The shape `claude -p --output-format json` prints: one result envelope, the
+ * schema-checked answer under `structured_output`, the raw text under `result`.
+ */
+function envelope(fields: Record<string, unknown>): string {
+  return JSON.stringify({
+    type: "result",
+    subtype: "success",
+    is_error: false,
+    ...fields,
+  });
 }
 
-describe("createClaudeProposer", () => {
+/** A stand-in for spawning the CLI, recording what it was given. */
+function fakeClaude(outcome: Partial<ReturnType<ClaudeRun>>) {
+  const calls: { args: string[]; input: string }[] = [];
+  const run: ClaudeRun = (args, input) => {
+    calls.push({ args, input });
+    return { status: 0, stdout: "", stderr: "", error: undefined, ...outcome };
+  };
+  return { run, calls };
+}
+
+describe("createClaudeCliProposer", () => {
   // @req REQ-161
-  it("resumes a paused turn and returns the reported candidates", async () => {
-    const paused: Anthropic.ContentBlock[] = [
-      { type: "text", text: "Searching." } as Anthropic.ContentBlock,
-    ];
-    const { client, requests } = scriptedClient([
-      { stop_reason: "pause_turn", content: paused },
-      { stop_reason: "tool_use", content: [report([CANDIDATE])] },
-    ]);
-
-    const candidates = await createClaudeProposer(client)(REQUEST);
-
-    expect(candidates).toEqual([CANDIDATE]);
-    expect(requests).toHaveLength(2);
-    expect(requests[1].messages.at(-1)).toEqual({
-      role: "assistant",
-      content: paused,
+  it("returns the candidates of a schema-checked answer", async () => {
+    const { run } = fakeClaude({
+      stdout: envelope({ structured_output: { candidates: [CANDIDATE] } }),
     });
+
+    expect(await createClaudeCliProposer(run)(REQUEST)).toEqual([CANDIDATE]);
   });
 
   // @req REQ-161
-  it("returns no candidate when the model refuses", async () => {
-    const { client } = scriptedClient([
-      { stop_reason: "refusal", content: [], stop_details: null },
-    ]);
+  it("falls back to the answer text when no structured output came back", async () => {
+    const { run } = fakeClaude({
+      stdout: envelope({
+        result: "```json\n" + JSON.stringify([CANDIDATE]) + "\n```",
+      }),
+    });
 
-    expect(await createClaudeProposer(client)(REQUEST)).toEqual([]);
+    expect(await createClaudeCliProposer(run)(REQUEST)).toEqual([CANDIDATE]);
   });
 
   // @req REQ-161
-  it("asks the web, on Opus 5.5, without forcing the report tool", async () => {
-    const { client, requests } = scriptedClient([
-      { stop_reason: "tool_use", content: [report([])] },
-    ]);
+  it("reads a malformed or off-schema answer as no candidate", async () => {
+    const malformed = fakeClaude({
+      stdout: envelope({ result: "I found nothing definitive {" }),
+    });
+    const offSchema = fakeClaude({
+      stdout: envelope({
+        structured_output: { candidates: [{ title: "No url, no quote" }] },
+      }),
+    });
 
-    await createClaudeProposer(client)(REQUEST);
+    expect(await createClaudeCliProposer(malformed.run)(REQUEST)).toEqual([]);
+    expect(await createClaudeCliProposer(offSchema.run)(REQUEST)).toEqual([]);
+  });
 
-    const [request] = requests;
-    expect(request.model).toBe("claude-opus-5-5");
-    expect(request.tool_choice).toBeUndefined();
-    expect(request.tools).toEqual(
-      expect.arrayContaining([
-        { type: "web_search_20260209", name: "web_search", max_uses: 5 },
-        expect.objectContaining({ name: "report_candidates", strict: true }),
-      ])
+  // A failed run is not an answer: ledgering it as "nothing found" would show
+  // a reviewer an empty search that never happened, and the backlog would
+  // never retry that source.
+  // @req REQ-161
+  it("throws when the CLI fails, reports an error or prints no envelope", async () => {
+    const failed = fakeClaude({ status: 1, stderr: "Not logged in" });
+    const reported = fakeClaude({
+      stdout: envelope({ is_error: true, subtype: "error_during_execution" }),
+    });
+    const garbled = fakeClaude({ stdout: "Usage: claude [options]" });
+
+    await expect(createClaudeCliProposer(failed.run)(REQUEST)).rejects.toThrow(
+      "Not logged in"
     );
+    await expect(
+      createClaudeCliProposer(reported.run)(REQUEST)
+    ).rejects.toThrow("error_during_execution");
+    await expect(createClaudeCliProposer(garbled.run)(REQUEST)).rejects.toThrow(
+      "no JSON result"
+    );
+  });
+
+  // @req REQ-161
+  it("throws on a timeout rather than wait on the push forever", async () => {
+    const timeout = Object.assign(new Error("spawnSync claude ETIMEDOUT"), {
+      code: "ETIMEDOUT",
+    });
+    const { run } = fakeClaude({ status: null, error: timeout });
+
+    await expect(createClaudeCliProposer(run)(REQUEST)).rejects.toThrow(
+      "timed out"
+    );
+  });
+
+  // The claim is corpus text: it travels on stdin, never through argv or a
+  // shell, and the run gets the web tools and nothing that writes or executes.
+  // @req REQ-161
+  it("sends the claim on stdin and allows only the web tools", async () => {
+    const { run, calls } = fakeClaude({
+      stdout: envelope({ structured_output: { candidates: [] } }),
+    });
+
+    await createClaudeCliProposer(run)(REQUEST);
+
+    const [{ args, input }] = calls;
+    expect(input).toContain("nameMain: Diop");
+    expect(args.join(" ")).not.toContain("nameMain: Diop");
+    expect(args).toEqual(expect.arrayContaining(["-p", "--json-schema"]));
+    expect(args[args.indexOf("--tools") + 1]).toBe("WebSearch,WebFetch");
+    expect(args[args.indexOf("--allowedTools") + 1]).toBe("WebSearch,WebFetch");
   });
 });

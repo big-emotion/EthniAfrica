@@ -3,10 +3,14 @@
  * machine output (`source_kind: "ai_generated"`), what a web search proposed
  * in their place, and what a human decided.
  *
- * A source is named by its fiche and its JSON path rather than by its title:
- * the ai_generated tail is mostly one generic citation ("Relevé de couverture
- * anthroponymique") repeated across hundreds of fiches, each standing for a
- * different claim, so a title match would verify them all at once.
+ * A source is identified by its fiche, title and url (`sourceIdentity`). Not
+ * by title alone: the ai_generated tail is mostly one generic citation
+ * ("Relevé de couverture anthroponymique") repeated across hundreds of
+ * fiches, each standing for a different claim. Not by JSON path either: a
+ * citation inserted above shifts every index after it, and the same source
+ * would read as new. Within one fiche, sources sharing a title and url are
+ * one identity, and one decision covers them all. The entry's `path` only
+ * records where the source was found at proposal time.
  *
  * Shared by the script that proposes candidates, the script that applies
  * accepted ones, and the gate that holds the corpus to the ledger, so the
@@ -80,6 +84,12 @@ export interface OriginalCitation {
   url: string | null;
 }
 
+/**
+ * The stable keys of the queue entry owning an untitled provenance marker:
+ * countryId and name, plus nameSystem only where those two collide.
+ */
+export type MarkerOwner = Record<string, string>;
+
 export interface AiSourceVerification {
   id: string;
   /** Relative to the dataset root, with forward slashes. */
@@ -87,6 +97,8 @@ export interface AiSourceVerification {
   path: string;
   claim: string;
   original: OriginalCitation;
+  /** Set for an untitled, url-less marker; part of its identity. */
+  owner?: MarkerOwner;
   candidates: SourceCandidate[];
   status: VerificationStatus;
   chosen?: number;
@@ -102,6 +114,7 @@ export interface AiGeneratedSource {
   path: string;
   claim: string;
   original: OriginalCitation;
+  owner?: MarkerOwner;
 }
 
 type JsonObject = Record<string, unknown>;
@@ -156,6 +169,7 @@ export function findAiGeneratedSources(
   fiches: CorpusFiche[]
 ): AiGeneratedSource[] {
   const found: AiGeneratedSource[] = [];
+  const owners = new Map<AiGeneratedSource, JsonObject>();
 
   function visit(
     fiche: string,
@@ -172,15 +186,22 @@ export function findAiGeneratedSources(
     if (!isObject(value)) return;
 
     if (isAiGenerated(value)) {
+      const original = {
+        title: stringOrNull(value.title),
+        url: normalizeUrl(value.url),
+      };
+      const owner =
+        trimmedOrNull(original.title) === null && original.url === null
+          ? ownerKeys(enclosing, OWNER_KEYS)
+          : null;
       found.push({
         fiche,
         path: valuePath,
         claim: describeClaim(enclosing),
-        original: {
-          title: stringOrNull(value.title),
-          url: normalizeUrl(value.url),
-        },
+        original,
+        ...(owner ? { owner } : {}),
       });
+      if (owner) owners.set(found[found.length - 1], enclosing);
       return;
     }
 
@@ -190,7 +211,133 @@ export function findAiGeneratedSources(
   }
 
   for (const fiche of fiches) visit(fiche.path, fiche.json, "", null);
+  disambiguateOwners(found, owners);
   return found;
+}
+
+const OWNER_KEYS = ["countryId", "name"];
+const OWNER_TIEBREAK_KEYS = [...OWNER_KEYS, "nameSystem"];
+
+function ownerKeys(
+  enclosing: JsonObject | null,
+  keys: string[]
+): MarkerOwner | null {
+  if (!enclosing) return null;
+  const owner: MarkerOwner = {};
+  for (const key of keys) {
+    const value = trimmedOrNull(enclosing[key]);
+    if (value !== null) owner[key] = value;
+  }
+  return Object.keys(owner).length > 0 ? owner : null;
+}
+
+/**
+ * Where country + name repeat within a fiche, nameSystem joins the owner; a
+ * collision that survives it would make two markers one decision, so the
+ * whole read fails rather than guess.
+ */
+function disambiguateOwners(
+  found: AiGeneratedSource[],
+  owners: Map<AiGeneratedSource, JsonObject>
+): void {
+  const byIdentity = new Map<string, AiGeneratedSource[]>();
+  for (const source of owners.keys()) {
+    const identity = sourceIdentity(source);
+    byIdentity.set(identity, [...(byIdentity.get(identity) ?? []), source]);
+  }
+  for (const group of byIdentity.values()) {
+    if (group.length < 2) continue;
+    for (const source of group) {
+      source.owner = ownerKeys(owners.get(source), OWNER_TIEBREAK_KEYS);
+    }
+  }
+
+  const seen = new Map<string, AiGeneratedSource>();
+  for (const source of found) {
+    if (!source.owner) continue;
+    const identity = sourceIdentity(source);
+    const earlier = seen.get(identity);
+    if (earlier) {
+      throw new Error(
+        `${source.fiche}: two ai_generated markers share ${JSON.stringify(source.owner)} (${earlier.path}, ${source.path}) — give one entry a distinct countryId, name or nameSystem`
+      );
+    }
+    seen.set(identity, source);
+  }
+}
+
+function trimmedOrNull(value: unknown): string | null {
+  return typeof value === "string" && value.trim() !== "" ? value.trim() : null;
+}
+
+/**
+ * Fiche + title + url, trimmed, with an absent or empty url as null; for an
+ * untitled, url-less marker, plus its owning entry's keys in a fixed order.
+ */
+export function sourceIdentity(source: {
+  fiche: string;
+  original?: Partial<OriginalCitation> | null;
+  owner?: MarkerOwner | null;
+}): string {
+  const owner = source.owner
+    ? OWNER_TIEBREAK_KEYS.map((key) => source.owner[key] ?? null)
+    : null;
+  return JSON.stringify([
+    source.fiche,
+    trimmedOrNull(source.original?.title),
+    trimmedOrNull(source.original?.url),
+    owner,
+  ]);
+}
+
+/**
+ * Sources a person has looked at and kept as they are: a synthesis
+ * (`rejected`) or an oral account to record (`oral_needed`). An accepted one
+ * is replaced in the corpus, and a proposed one is still waiting.
+ */
+export function findUnreviewedAiGeneratedSources(
+  fiches: CorpusFiche[],
+  verifications: AiSourceVerification[]
+): AiGeneratedSource[] {
+  const reviewed = new Set(
+    verifications
+      .filter(
+        (entry) => entry.status === "rejected" || entry.status === "oral_needed"
+      )
+      .map(sourceIdentity)
+  );
+  return findAiGeneratedSources(fiches).filter(
+    (source) => !reviewed.has(sourceIdentity(source))
+  );
+}
+
+/** JSON paths of the ai_generated sources in the fiche carrying this identity. */
+export function locateSource(
+  fiche: CorpusFiche,
+  entry: AiSourceVerification
+): string[] {
+  const identity = sourceIdentity(entry);
+  return findAiGeneratedSources([fiche])
+    .filter((source) => sourceIdentity(source) === identity)
+    .map((source) => source.path);
+}
+
+/** Whether any object in the fiche cites this candidate, and at which tiers. */
+export function findCitationTiers(
+  json: unknown,
+  candidate: SourceCandidate
+): unknown[] {
+  const tiers: unknown[] = [];
+  const url = normalizeUrl(candidate.url);
+  (function visit(value: unknown): void {
+    if (Array.isArray(value)) return value.forEach(visit);
+    if (!isObject(value)) return;
+    if (value.title === candidate.title && normalizeUrl(value.url) === url) {
+      tiers.push(value.tier);
+    }
+    Object.values(value).forEach(visit);
+  })(json);
+  return tiers;
 }
 
 function pathSegments(jsonPath: string): (string | number)[] {
@@ -363,10 +510,6 @@ export function validateVerification(
   return errors;
 }
 
-function sourceKey(entry: AiSourceVerification): string {
-  return JSON.stringify([entry.fiche, entry.path]);
-}
-
 export function validateVerifications(
   entries: AiSourceVerification[]
 ): string[] {
@@ -382,11 +525,11 @@ export function validateVerifications(
       if (ids.has(entry.id)) errors.push(`${label}: duplicate id`);
       ids.add(entry.id);
     }
-    const key = sourceKey(entry);
+    const key = sourceIdentity(entry);
     const earlier = verified.get(key);
     if (earlier) {
       errors.push(
-        `${label}: ${entry.fiche} ${entry.path} is already verified by ${earlier} — one verification per source`
+        `${label}: ${entry.fiche} "${trimmedOrNull(entry.original?.title) ?? "(untitled)"}" is already verified by ${earlier} — one verification per source`
       );
     } else {
       verified.set(key, label);
@@ -397,8 +540,10 @@ export function validateVerifications(
 
 /**
  * What the corpus says against well-formed verifications. Only an accepted
- * one makes a claim on the fiche; the other statuses leave the source as it
- * stands, so for them the gate only checks the fiche still exists.
+ * one makes a claim on the fiche, found by identity rather than by its
+ * recorded path; the other statuses leave the source as it stands, so for
+ * them the gate checks the identity still names an ai_generated source —
+ * a mistyped owner would otherwise decide nothing, silently.
  */
 export function findVerificationContradictions(
   fiches: CorpusFiche[],
@@ -413,25 +558,31 @@ export function findVerificationContradictions(
       errors.push(`${entry.id}: names ${entry.fiche}, which is not a fiche`);
       continue;
     }
-    if (entry.status !== "accepted") continue;
+    if (entry.status !== "accepted") {
+      if (locateSource(fiche, entry).length === 0) {
+        errors.push(
+          `${entry.id}: ${entry.fiche} names no AI-generated source — mistyped owner/title/url?`
+        );
+      }
+      continue;
+    }
 
-    const current = resolveJsonPath(fiche.json, entry.path);
     const chosen = entry.candidates[entry.chosen];
-    if (isAiGenerated(current)) {
+    const remaining = locateSource(fiche, entry);
+    if (remaining.length > 0) {
       errors.push(
-        `${entry.id}: ${entry.fiche} still carries the ai_generated source at ${entry.path} — run ${APPLY_VERIFICATIONS_COMMAND}`
+        `${entry.id}: ${entry.fiche} still carries the ai_generated source at ${remaining.join(", ")} — run ${APPLY_VERIFICATIONS_COMMAND}`
       );
-    } else if (
-      !isObject(current) ||
-      current.title !== chosen.title ||
-      normalizeUrl(current.url) !== normalizeUrl(chosen.url)
-    ) {
+      continue;
+    }
+    const tiers = findCitationTiers(fiche.json, chosen);
+    if (tiers.length === 0) {
       errors.push(
-        `${entry.id}: ${entry.fiche} ${entry.path} does not cite the accepted candidate "${chosen.title}"`
+        `${entry.id}: ${entry.fiche} does not cite the accepted candidate "${chosen.title}"`
       );
-    } else if (current.tier !== entry.tier) {
+    } else if (tiers.some((tier) => tier !== entry.tier)) {
       errors.push(
-        `${entry.id}: ${entry.fiche} cites "${chosen.title}" at "${String(current.tier)}", the verification says "${entry.tier}"`
+        `${entry.id}: ${entry.fiche} cites "${chosen.title}" at "${String(tiers.find((tier) => tier !== entry.tier))}", the verification says "${entry.tier}"`
       );
     }
   }
