@@ -142,22 +142,9 @@ Filter out merge commits and `chore:`, `ci:`, `docs:`, `test:` entries (too nois
 
 AFRIK-specific: a commit that changes `dataset/source/afrik/**` or a fiche's demographics is user-visible content, not a chore — surface it under **Changed** with the entity IDs it touched (`FLG_*`, `PPL_*`, ISO 3166-1 alpha-3).
 
-### Step 3 — Update or create `CHANGELOG.md`
+### Step 3 — Update `CHANGELOG.md`
 
-Use [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format. `CHANGELOG.md` lives at the repo root. **It does not exist yet** — the first run of this skill creates it with this skeleton before editing:
-
-```markdown
-# Changelog
-
-All notable changes to this project will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## [Unreleased]
-```
-
-On that first run, do **not** attempt to reconstruct the entire history back to `1.0.0` — start the file at the version being released and note in the report that earlier history lives in `git log` only.
+Use [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format. `CHANGELOG.md` lives at the repo root.
 
 Then:
 

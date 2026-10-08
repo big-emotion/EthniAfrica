@@ -53,8 +53,8 @@ qu'elle **doit montrer**.
 ## Ce que tu ne fais pas
 
 Décider une règle de gabarit ou de structure à partir d'un essai sans repasser
-par l'endroit où cette règle vit déjà (`GABARITS-SOCIAL.md`, les skills de la
-chaîne `idee → structure → produire`, `ethniafrica-message`). Un essai motive
+par l'endroit où cette règle vit déjà (les chartes sous `docs/design/`,
+`ethniafrica-content-strategist`). Un essai motive
 une règle ; il ne la remplace pas et ne duplique pas son texte.
 
 ## Pour finir

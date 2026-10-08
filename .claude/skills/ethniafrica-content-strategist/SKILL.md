@@ -89,9 +89,8 @@ must justify a subject against comparables, pays this cost.
 last 30 days — or is labelled **exploratory**, with the reason no comparator exists
 (a new family, a new format, an untested network). An exploratory subject is
 legitimate and is proposed as a test with what would count as a result; it is never
-presented as measured. The brief carries this as `strategy.basis`
-(`social/tools/narration/check-family-brief.mjs` refuses a brief with neither, or
-with a dated report older than 30 days).
+presented as measured. The brief carries this as `strategy.basis`, and a brief
+with neither, or with a dated report older than 30 days, is not ready.
 
 X joined on 2026-09-16 and is the one channel here that **cannot be collected
 from a dashboard**: account analytics sit behind X Premium, and both
@@ -120,7 +119,7 @@ fails after two attempts is reported as not collected, never skipped. **An
 unavailable metric is empty, never zero** — a fabricated zero poisons every later
 comparison.
 
-Cross each network's post list with `social/tools/etat-pipeline/bilan-sujets.mjs`.
+Cross each network's post list with the production ledgers under `docs/productions/`.
 A post live on a network that the ledger does not know is a finding: it is
 invisible to duplicate detection and to every later plan.
 
@@ -164,16 +163,14 @@ dated plan lives under `docs/editorial/strategy/`; update it with the evidence b
 any change in direction. Later operator decisions take precedence.
 
 **Choose a narrative family, then a format, then networks** — three separate
-decisions (`.claude/skills/ethniafrica-structure/references/narrative-families.md`;
-`docs/design/gabarits-social/EDITORIAL-CONTRACT.md`). A subject may have several
+decisions. A subject may have several
 angles; an adaptation (same angle, other format), a deepening and a republication are
 three different legitimate acts, and a subject already covered is not excluded for
 that. No myth, no name-origin question and no site record is required of a social
 piece; the name-origin machinery belongs to `series: name-origin`.
 
 **Format evidence is a dated observation, not a rule.** The 2026-09-26 format audit,
-as corrected on 2026-09-29 (`docs/audience/format-audit-2026-09-26/decision-matrix.md`,
-`measurement-protocol.md`), is the current reading: reels are the better-observed way
+as corrected on 2026-09-29, is the current reading: reels are the better-observed way
 to reach new people on Instagram and Facebook; both formats produced breakouts on
 TikTok; Shorts are the best-observed YouTube video format, not the only permitted one;
 LinkedIn and X did not test formats. Cite it as evidence with its date and sample, let
@@ -181,7 +178,7 @@ a newer report override it, and never turn it into a channel ban or a required p
 Both formats can teach, move an audience, attract discovery and be saved.
 
 What varies per channel is the **cut, the caption, and whether video is the
-right format there at all**, per `reference/platforms.md` and GABARITS §1 bis.
+right format there at all**, per `reference/platforms.md`.
 
 Per proposed piece, state: the pillar and the slot it fills; the single claim it
 makes and its identifiable sources (a corpus record when applicable); the hook, written out; the channels and
@@ -232,9 +229,8 @@ two are manual regardless.
 - **Colonial terminology**: keep the colonial-era name, explain why it is
   problematic, always surface the autonym. Half the pillar rotation is built on
   exactly this move.
-- Documentation and commits in **English**. Reader-facing French copy carries
-  its English counterpart under the bilingual-content rules; publication
-  remains French-only unless the operator explicitly changes the locale mode.
+- Documentation and commits in **English**. Reader-facing copy is French
+  only: the site publishes in French.
 
 ## Boundaries
 
