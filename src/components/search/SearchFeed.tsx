@@ -48,6 +48,7 @@ import {
 } from "@/lib/search/searchFeedPlan";
 import { buildFeedLenses, type FeedLensId } from "@/lib/search/searchLenses";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
+import { orderForSearch } from "@/lib/search/searchedName";
 import type { SearchFeedPresentation } from "@/lib/search/searchFeedPresentation";
 import type {
   SearchLead,
@@ -136,24 +137,28 @@ function resultForms(
     const subjectId = `${subject.type}:${subject.id}`;
     const presentation = subject.naming?.presentation.forms ?? [];
     const filedName = getLocalizedSearchResultName(subject, language);
-    // Operator ruling, 2026-09-22: the name a people gives itself comes first,
-    // then the filed name and the others in the fiche's order. Ordering is not
-    // crowning — every chip keeps the same weight; the self-given one is marked.
-    return selfGivenFirst([
-      {
-        form: filedName,
-        subjectId,
-        selfGiven: subject.autonym === subject.name ? true : null,
-        problematic: undefined,
-        searched: normalizeString(filedName) === wanted,
-      },
-      ...presentation.map((form) => ({
-        ...form,
-        subjectId,
-        searched: normalizeString(form.form) === wanted,
-        detail: formDetail(form),
-      })),
-    ]);
+    // Operator decision 2026-10-08 (doctrine §1.1): where the reader searched,
+    // the searched form comes first, the name a people gives itself right
+    // after it, then the filed name and the others in the fiche's order.
+    // Ordering is not crowning — every chip keeps the same weight.
+    return orderForSearch(
+      [
+        {
+          form: filedName,
+          subjectId,
+          selfGiven: subject.autonym === subject.name ? true : null,
+          problematic: undefined,
+          searched: normalizeString(filedName) === wanted,
+        },
+        ...presentation.map((form) => ({
+          ...form,
+          subjectId,
+          searched: normalizeString(form.form) === wanted,
+          detail: formDetail(form),
+        })),
+      ],
+      (form) => form.searched
+    );
   });
   const unique = new Map(
     forms.map((form) => [
@@ -184,16 +189,6 @@ function formDetail(
     .filter(Boolean)
     .join(" · ");
   return text ? { text, evidence: form.evidence[0] } : undefined;
-}
-
-/** A stable partition: self-given forms first, every other form in its order. */
-function selfGivenFirst<T extends { selfGiven?: boolean | null }>(
-  forms: readonly T[]
-): T[] {
-  return [
-    ...forms.filter((form) => form.selfGiven === true),
-    ...forms.filter((form) => form.selfGiven !== true),
-  ];
 }
 
 // @req REQ-178
@@ -577,6 +572,7 @@ export function SearchFeed({
               answer={subject!.answer!}
               listedPeoples={subject!.associatedPeoples}
               searchedForm={query}
+              selfNameHref={ficheHrefFor(subject!, language)}
               reviewed={reviewedFor(subject!)}
               originCoveredElsewhere={
                 coveredByAnother(subject!) || Boolean(sharedOrigin)

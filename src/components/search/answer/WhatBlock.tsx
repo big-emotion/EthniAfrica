@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 import {
   ANSWER_ACCENT_CLASS,
   ANSWER_BLOCK,
@@ -24,6 +26,8 @@ export interface WhatBlockProps {
    * titles under it: none of them is the page's title more than another.
    */
   titleScale?: "hero" | "section";
+  /** Drawn right under the title, before the sentence. */
+  children?: ReactNode;
 }
 
 function fallbackLead(
@@ -75,6 +79,7 @@ export function WhatBlock({
   lead,
   headingLevel = "h1",
   titleScale = headingLevel === "h1" ? "hero" : "section",
+  children,
 }: WhatBlockProps) {
   const copy = searchAnswerCopy[language];
   const eyebrow =
@@ -110,6 +115,7 @@ export function WhatBlock({
       >
         {answer.title}
       </Heading>
+      {children}
       {sentence ? (
         <p className="text-afh-lead leading-[var(--afh-leading-lead)] text-afh-text">
           <InlineMarkup text={sentence} />

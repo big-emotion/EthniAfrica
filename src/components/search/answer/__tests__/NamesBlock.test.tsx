@@ -6,16 +6,27 @@ import { answerOf } from "@/components/search/answer/__tests__/fixtures";
 
 // @req REQ-178
 describe("NamesBlock", () => {
-  it("lists a people's names with the one it gives itself first, and marks the searched form without promoting it", () => {
+  // Operator decision 2026-10-08: where the reader searched, the form they
+  // typed comes first and the name the people gives itself right after it.
+  // @req REQ-178
+  it("lists the searched form first, then the name a people gives itself, then the others", () => {
     render(<NamesBlock answer={answerOf("peul")} searchedForm="peul" />);
     const items = screen.getAllByRole("listitem");
-    expect(items[0]).toHaveTextContent("Fulɓe · Pullo");
-    expect(items[0]).toHaveTextContent("leur propre nom");
-    expect(items[1]).toHaveTextContent("Peul");
-    expect(items[1]).toHaveTextContent("votre recherche");
-    expect(items[1]).toHaveTextContent("La forme française, venue du wolof.");
-    // Marked, not reordered: the searched form stays second.
+    expect(items[0]).toHaveTextContent("Peul");
+    expect(items[0]).toHaveTextContent("votre recherche");
+    expect(items[0]).toHaveTextContent("La forme française, venue du wolof.");
+    expect(items[1]).toHaveTextContent("Fulɓe · Pullo");
+    expect(items[1]).toHaveTextContent("leur propre nom");
+    expect(items[2]).toHaveTextContent("Fulani");
     expect(screen.getAllByText("votre recherche")).toHaveLength(1);
+  });
+
+  // @req REQ-178
+  it("keeps the fiche's order, self-given name first, when nothing was searched", () => {
+    render(<NamesBlock answer={answerOf("peul")} />);
+    const items = screen.getAllByRole("listitem");
+    expect(items[0]).toHaveTextContent("Fulɓe · Pullo");
+    expect(items[1]).toHaveTextContent("Peul");
   });
 
   // A button centres its own text by default: wrapped on two lines at 430 px

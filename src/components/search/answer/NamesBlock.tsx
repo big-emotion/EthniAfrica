@@ -9,12 +9,13 @@ import {
 } from "@/components/search/answer/answerStyle";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import type { AnswerName, SearchAnswer } from "@/lib/search/answer";
+import { answersToSearch, orderForSearch } from "@/lib/search/searchedName";
 import { cn } from "@/lib/utils";
 import type { Language } from "@/types/shared";
 
 export interface NamesBlockProps {
   answer: Pick<SearchAnswer, "kind" | "names" | "path" | "title">;
-  /** The form the reader typed; marked, never promoted. */
+  /** The form the reader typed; marked, and listed first. */
   searchedForm?: string;
   language?: Language;
   /** Names a group when several answers share the page (the two Congos). */
@@ -28,16 +29,6 @@ const LIST_PREVIEW = 4;
 
 /** Past this a « form » is a sentence the fiche filed as a name. */
 const PILL_FORM_MAX = 40;
-
-const fold = (text: string): string =>
-  text.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().trim();
-
-/** « Fulɓe · Pullo » answers to a search for either word. */
-function matchesSearch(form: string, searched?: string): boolean {
-  if (!searched) return false;
-  const target = fold(searched);
-  return form.split("·").some((part) => fold(part) === target);
-}
 
 /** Pill text: « abantu · zoulou » from the short line « En zoulou. ». */
 function pillQualifier(line?: string): string | undefined {
@@ -82,7 +73,7 @@ function ListNames({
                   {copy.selfGiven}
                 </span>
               ) : null}
-              {matchesSearch(name.form, searchedForm) ? (
+              {answersToSearch(name.form, searchedForm) ? (
                 <span className="text-afh-caption font-bold text-[color:var(--accent-ink)]">
                   {copy.yourSearch}
                 </span>
@@ -133,7 +124,7 @@ function PillNames({
   return (
     <ul className="m-0 flex list-none flex-wrap gap-afh-md p-0">
       {names.map((name) => {
-        const searched = matchesSearch(name.form, searchedForm);
+        const searched = answersToSearch(name.form, searchedForm);
         const qualifier = pillQualifier(name.shortLine);
         // A sentence the fiche filed as a name is read, not boxed: a box
         // around a paragraph is a card, and a name is not a card.
@@ -224,9 +215,11 @@ function PathTable({ path }: { path: NonNullable<SearchAnswer["path"]> }) {
 /**
  * « Its names ». The shape follows what the fiche knows about each form: a list
  * when it says who uses it, a timeline when forms are dated, pills when they
- * are plain spellings, a table of steps for a word's journey. Order is the
- * fiche's order (the name a people gives itself first); no form is larger or
- * higher than another because it is the one searched.
+ * are plain spellings, a table of steps for a word's journey. In a list or
+ * pills the searched form comes first and the name a people gives itself
+ * right after it (doctrine §1.1, 2026-10-08); with nothing searched the order
+ * is the fiche's, self-given first. A timeline keeps its dates' order. No form
+ * is drawn larger than another.
  * @req REQ-178
  */
 export function NamesBlock({
@@ -244,6 +237,9 @@ export function NamesBlock({
   if (names.length === 0 && !hasPath) return null;
 
   const dated = kind === "country" && names.some((name) => name.period);
+  const listed = orderForSearch(names, (name) =>
+    answersToSearch(name.form, searchedForm)
+  );
   const annotated =
     kind === "people" &&
     names.some((name) => name.shortLine || name.selfGiven === true);
@@ -275,13 +271,13 @@ export function NamesBlock({
         <Timeline names={names} groupLabel={groupLabel} language={language} />
       ) : annotated ? (
         <ListNames
-          names={names}
+          names={listed}
           searchedForm={searchedForm}
           language={language}
         />
       ) : (
         <PillNames
-          names={names}
+          names={listed}
           searchedForm={searchedForm}
           language={language}
         />
