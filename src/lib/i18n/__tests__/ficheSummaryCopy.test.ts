@@ -68,7 +68,7 @@ describe("counted fiche summary copy (REQ-151)", () => {
   });
 
   // @req REQ-151
-  it("labels reference years, absent figures, and source tier without a fabricated value", () => {
+  it("labels reference years, absent figures without a fabricated value, and no source tier", () => {
     expect(countryCopy.fr.summary.referenceYear(2025)).toBe(
       "Année de référence : 2025"
     );
@@ -90,8 +90,9 @@ describe("counted fiche summary copy (REQ-151)", () => {
       expect(figure.absent).not.toMatch(/\b(?:0|undefined|unknown)\b/i);
     }
 
+    // Doctrine §1.1: no summary labels a fact by its source's tier.
     for (const summary of [countryCopy.fr.summary, peopleCopy.fr.summary]) {
-      expect(summary.factTier).toBeTruthy();
+      expect(summary).not.toHaveProperty("factTier");
     }
   });
 });

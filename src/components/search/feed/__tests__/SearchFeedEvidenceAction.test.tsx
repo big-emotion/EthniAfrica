@@ -33,7 +33,7 @@ const evidence: SearchEvidence = {
 };
 
 describe("SearchFeedEvidenceAction", () => {
-  // @req REQ-180
+  // @req REQ-180 REQ-092
   it("adapts a real search assertion and its sources into the shared sheet", async () => {
     render(
       <SearchFeedEvidenceAction
@@ -43,9 +43,10 @@ describe("SearchFeedEvidenceAction", () => {
       />
     );
 
-    expect(screen.getByText("Référencée")).toHaveAttribute(
-      "data-source-standing",
-      "referenced"
+    // The summary standing is an audit field, never a reader label
+    // (doctrine §1.1, REQ-092).
+    expect(document.getElementById("feed-evidence-fang")).not.toHaveTextContent(
+      /Référencée|Officielle|Non vérifiée/
     );
     const trigger = screen.getByRole("button", {
       name: /ouvrir la chaîne de sources/i,

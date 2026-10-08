@@ -36,4 +36,28 @@ describe("shared narrative reader", () => {
       expect(container.querySelector(link.getAttribute("href")!)).not.toBeNull()
     );
   });
+
+  // A source is shown by its type, never by its tier (doctrine §1.1).
+  // @req REQ-092
+  it("names each source by its type and never by its tier", () => {
+    const dossier = structuredClone(getDossierBySlug("royaume-kongo")!);
+    dossier.sources = dossier.sources.slice(0, 2);
+    dossier.sources[0] = {
+      ...dossier.sources[0],
+      tier: "official",
+      source_kind: "oral_tradition",
+    };
+    dossier.sources[1] = {
+      ...dossier.sources[1],
+      tier: "unverified",
+      source_kind: undefined,
+    };
+    const { container } = render(
+      <DossierPage dossier={dossier} language="fr" />
+    );
+    const notes = container.querySelectorAll(".afh-dossier-source-notes");
+    expect(notes[0]).toHaveTextContent("Tradition orale");
+    const list = container.querySelector(".afh-dossier-sources")!;
+    expect(list).not.toHaveTextContent(/Officielle|Référencée|Non vérifiée/);
+  });
 });

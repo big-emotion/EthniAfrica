@@ -9,11 +9,6 @@ const fr = {
     country: "Pays",
     family: "Famille linguistique",
   },
-  sourceTier: {
-    official: "Source officielle",
-    referenced: "Source référencée",
-    unverified: "Source non vérifiée",
-  },
 };
 
 type SystemCopy = typeof fr;

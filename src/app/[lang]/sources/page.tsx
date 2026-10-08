@@ -7,7 +7,6 @@ import {
   SOURCES_FACET_PAGE_SIZES,
   type SourcesFacetFilters,
   type SourcesFacetSort,
-  type SourceStanding,
 } from "@/api/v2/services/sourcesFacet";
 import { FacetFilterBar } from "@/components/hubs/facets/FacetFilterBar";
 import { FacetPagination } from "@/components/hubs/facets/FacetPagination";
@@ -20,7 +19,6 @@ import { PAGE_SIZE_PARAM, resolvePageSize } from "@/lib/hubs/pagination";
 import { getLocalizedRoute } from "@/lib/routing";
 import { pageHead } from "@/lib/seo/pageHead";
 import { formatNumber } from "@/lib/languageTag";
-import { sourceStandingLabel } from "@/lib/glossaire/vocabularies";
 import { sourcesDirectoryCopy } from "@/lib/i18n/copy/sourcesDirectory";
 import type { Language } from "@/types/shared";
 import { SOURCE_KINDS, type SourceKind } from "@/types/sources";
@@ -44,10 +42,14 @@ import { SOURCE_KINDS, type SourceKind } from "@/types/sources";
 type PageParams = { lang: string };
 type PageSearchParams = Record<string, string | string[] | undefined>;
 
-/** Query parameters, named as the reader sees them in the address bar. */
+/**
+ * Query parameters, named as the reader sees them in the address bar.
+ *
+ * `autorite` is deliberately absent: the tier filter was retired (doctrine
+ * §1.1), and addresses still carrying it read as the unfiltered directory.
+ */
 const PARAM = {
   search: "q",
-  standing: "autorite",
   provenance: "provenance",
   decade: "decennie",
   sort: "tri",
@@ -105,7 +107,6 @@ function directoryHref(
 ): string {
   const query = new URLSearchParams();
   if (filters.search) query.set(PARAM.search, filters.search);
-  if (filters.standing) query.set(PARAM.standing, filters.standing);
   if (filters.sourceKind) query.set(PARAM.provenance, filters.sourceKind);
   if (filters.decade) query.set(PARAM.decade, String(filters.decade));
   if (filters.sort && filters.sort !== "titre") {
@@ -143,7 +144,7 @@ export default async function SourcesPage({
   const provenance = definedFilter(query[PARAM.provenance]);
   const filters: SourcesFacetFilters = {
     search: definedFilter(query[PARAM.search]),
-    standing: definedFilter(query[PARAM.standing]) as SourceStanding | null,
+    standing: null,
     sourceKind: isKind(provenance) ? provenance : null,
     decade: decade ? Number.parseInt(decade, 10) : null,
     letter: null,
@@ -166,17 +167,6 @@ export default async function SourcesPage({
 
   /** What the fold owes back while it is shut. */
   const activeFilters: FacetActiveFilter[] = [];
-  if (filters.sourceKind) {
-    activeFilters.push({
-      label: `${copy.labels.provenance} : ${filters.sourceKind}`,
-      removeHref: directoryHref(
-        language,
-        { ...filters, sourceKind: null },
-        null,
-        pageSize
-      ),
-    });
-  }
   if (filters.decade) {
     activeFilters.push({
       label: `${copy.labels.decade} : ${filters.decade}`,
@@ -244,33 +234,22 @@ export default async function SourcesPage({
             placeholder: copy.labels.searchPlaceholder,
             value: filters.search,
           }}
+          // The type is the one narrowing that says who speaks, so it holds
+          // the slot the tier filter held before doctrine §1.1 retired it.
           primaryField={{
-            name: PARAM.standing,
-            label: copy.labels.standing,
-            anyLabel: copy.labels.anyStanding,
-            options: choices.standings.map((standing) => ({
-              value: standing.id,
+            name: PARAM.provenance,
+            label: copy.labels.provenance,
+            anyLabel: copy.labels.anyProvenance,
+            options: choices.sourceKinds.map((kind) => ({
+              value: kind.id,
               // The count rides in the label: a shelf that hides how much it
               // holds asserts an absence nobody checked, and the filter bar
               // has no slot of its own for a per-option figure.
-              label: `${sourceStandingLabel(
-                standing.id as SourceStanding,
-                language
-              )} (${count(standing.count)})`,
+              label: `${kind.label} (${count(kind.count)})`,
             })),
-            value: filters.standing,
+            value: filters.sourceKind,
           }}
           advancedFields={[
-            {
-              name: PARAM.provenance,
-              label: copy.labels.provenance,
-              anyLabel: copy.labels.anyProvenance,
-              options: choices.sourceKinds.map((kind) => ({
-                value: kind.id,
-                label: `${kind.label} (${count(kind.count)})`,
-              })),
-              value: filters.sourceKind,
-            },
             {
               name: PARAM.decade,
               label: copy.labels.decade,

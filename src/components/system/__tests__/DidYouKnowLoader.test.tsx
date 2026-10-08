@@ -90,11 +90,16 @@ describe("DidYouKnowLoader (REQ-104 — the wait is spent reading)", () => {
     );
   });
 
-  // @req REQ-104
-  it("states the tier of the source behind the fact", () => {
-    render(<DidYouKnowLoader fact={FACT} label="Chargement" />);
+  // A fact on the wait screen carries no tier word (doctrine §1.1).
+  // @req REQ-104 REQ-092
+  it("never states the tier of the source behind the fact", () => {
+    const { container } = render(
+      <DidYouKnowLoader fact={FACT} label="Chargement" />
+    );
 
-    expect(screen.getByText("Source référencée")).toBeInTheDocument();
+    expect(container).not.toHaveTextContent(
+      /Source (référencée|officielle|non vérifiée)/
+    );
   });
 
   // @req REQ-104

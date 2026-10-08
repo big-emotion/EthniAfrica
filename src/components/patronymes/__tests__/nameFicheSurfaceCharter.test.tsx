@@ -98,7 +98,7 @@ const filled: PublicPatronyme = {
         title: "Tarikh es-Sudan",
         url: "https://example.org/tarikh",
         tier: "referenced",
-        source_kind: "book",
+        source_kind: "academic",
         notes: "Chronique du XVIIe siècle.",
       },
     ],
@@ -186,11 +186,12 @@ describe("name fiche surface — the parchment's own vocabulary", () => {
    * The citation itself is `SourceCitation`, shared with the bibliography and
    * the dossier — this fiche's own component now adapts the corpus's source
    * shape onto it and nothing more. What stays this surface's contract is that
-   * the sources are laid out as the atlas's rows, and that the standing is
-   * rendered from the source's own record.
+   * the sources are laid out as the atlas's rows, and that each names its type
+   * from the source's own record — never its tier (doctrine §1.1).
    */
   // @req REQ-133
-  it("cites its sources through the atlas-wide row, standing included", () => {
+  // @req REQ-092
+  it("cites its sources through the atlas-wide row, type included, tier never", () => {
     const { container } = render(
       <PatronymeFicheView language="fr" patronyme={filled} />
     );
@@ -199,11 +200,11 @@ describe("name fiche surface — the parchment's own vocabulary", () => {
 
     expect(rows).toHaveLength(1);
     expect(
-      rows[0]
-        .querySelector(".afh-source-citation")
-        ?.getAttribute("data-source-tier")
-    ).toBe("referenced");
-    expect(rows[0].querySelector(".afh-source-tier-label")).not.toBeNull();
+      rows[0].querySelector(".afh-source-kind-label")?.textContent
+    ).toContain("Publication académique");
+    expect(rows[0].textContent).not.toMatch(
+      /Officielle|Référencée|Non vérifiée|En attente d'examen/
+    );
   });
 
   // @req REQ-133

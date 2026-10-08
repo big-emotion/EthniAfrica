@@ -270,8 +270,8 @@ describe("sources facet service", () => {
       expect(table.range).toHaveBeenCalledWith(1000, 1999);
       expect(choices.total).toBe(1001);
       expect(choices.standings).toEqual([
-        { id: "official", label: "Officielle", count: 1000 },
-        { id: "referenced", label: "Référencée", count: 1 },
+        { id: "official", count: 1000 },
+        { id: "referenced", count: 1 },
       ]);
     });
 
@@ -316,11 +316,44 @@ describe("sources facet service", () => {
 
       const choices = await getSourcesFacetChoices();
 
-      // French by contract: the endpoint has no locale parameter, so the
-      // glossary keying the labels by locale must not change this payload.
       expect(choices.standings).toEqual([
-        { id: "official", label: "Officielle", count: 2 },
-        { id: "needs_review", label: "En attente d'examen", count: 1 },
+        { id: "official", count: 2 },
+        { id: "needs_review", count: 1 },
+      ]);
+    });
+
+    /**
+     * Doctrine §1.1: a reader is never told a source's tier. The standings
+     * stay countable for internal use, but carry no reader-facing label.
+     */
+    // @req REQ-092
+    it("gives the standings no reader-facing tier label", async () => {
+      fromMock.mockReturnValue(
+        buildTable([{ tier: "official", source_kind: null, year: null }])
+      );
+
+      const choices = await getSourcesFacetChoices();
+
+      expect(JSON.stringify(choices)).not.toMatch(
+        /Officielle|Référencée|Non vérifiée|En attente d'examen/
+      );
+    });
+
+    /** The type is what the reader filters on, so it reads as a word, not an id. */
+    // @req REQ-161
+    it("labels each source type in French rather than by its id", async () => {
+      fromMock.mockReturnValue(
+        buildTable([
+          { tier: null, source_kind: "oral_tradition", year: null },
+          { tier: null, source_kind: "ai_generated", year: null },
+        ])
+      );
+
+      const choices = await getSourcesFacetChoices();
+
+      expect(choices.sourceKinds).toEqual([
+        { id: "ai_generated", label: "Synthèse à vérifier", count: 1 },
+        { id: "oral_tradition", label: "Tradition orale", count: 1 },
       ]);
     });
 

@@ -187,8 +187,8 @@ function attributedCommunity(source: QuizAssertionSource): string | null {
  * unresolvable and this predicate returned false for all 17 802 candidates
  * however well sourced they were.
  *
- * The standing stays visible either way: the reveal renders each source's tier
- * through `SOURCE_TIER_LABELS`, so a reader sees what an answer rests on.
+ * The tier gates eligibility only; the reveal never shows it to the reader
+ * (doctrine §1.1), who sees each source by its type instead.
  */
 function hasEligibleSource(sources: QuizAssertionSource[]): boolean {
   return sources.some(

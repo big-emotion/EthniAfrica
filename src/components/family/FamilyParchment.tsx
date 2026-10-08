@@ -25,13 +25,10 @@ import {
 } from "@/lib/familyFootprintSource";
 import type { FamilyPageData } from "@/lib/familyDataTransformer";
 import { ficheSourceLabel } from "@/lib/afrik/ficheSourceLabel";
-import { sourceStandingLabel } from "@/lib/glossaire/vocabularies";
-import { isSourceTier } from "@/types/sources";
 import type { Language } from "@/types/shared";
 import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
 import { ProvenanceBanner } from "@/components/source-transparency/ProvenanceBanner";
 import { familyCopy } from "@/lib/i18n/copy/family";
-import { ficheCopy } from "@/lib/i18n/copy/fiche";
 
 /**
  * The family fiche's reading: an opening and five sections on parchment, below
@@ -409,7 +406,6 @@ export function FamilyParchment({
           shown the gap instead, which is charter §4. */}
       <Section
         title={copy.sources}
-        note={ficheCopy[language].sourceTierNote}
         testId="family-sources"
         /* Deep links across the app point at #sources, and the sources are
            the fiche's own footer landmark. Both predate this layout. */
@@ -421,16 +417,8 @@ export function FamilyParchment({
             {data.sources.map((source, index) => {
               const label = ficheSourceLabel(source);
               if (!label) return null;
-              const tier =
-                typeof source === "string" ? null : (source.tier ?? null);
               return (
                 <li key={`${label}-${index}`} className="afh-source-row">
-                  <span className="afh-chip" data-tier={tier ?? "unknown"}>
-                    {sourceStandingLabel(
-                      isSourceTier(tier) ? tier : "needs_review",
-                      language
-                    )}
-                  </span>
                   <span>{renderSourceText(label)}</span>
                 </li>
               );

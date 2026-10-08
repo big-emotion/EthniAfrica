@@ -161,7 +161,6 @@ describe("fiche parchment contrast", () => {
     // text does.
     '.afh-naming-field[data-role="imposed"]',
     '.afh-naming-field[data-role="imposed"] .afh-naming-label',
-    '.afh-chip[data-tier="unverified"]',
   ];
 
   // @req REQ-116

@@ -2,10 +2,7 @@ import type {
   ContactCivility,
   ContactSubject,
 } from "@/lib/validations/contact";
-import type {
-  DidYouKnowEntityKind,
-  DidYouKnowTier,
-} from "@/lib/home/didYouKnowFacts";
+import type { DidYouKnowEntityKind } from "@/lib/home/didYouKnowFacts";
 import type { Language } from "@/types/shared";
 
 const fr = {
@@ -74,11 +71,6 @@ const fr = {
     country: "Pays",
     family: "Famille linguistique",
   } satisfies Record<DidYouKnowEntityKind, string>,
-  tierLabels: {
-    official: "Source officielle",
-    referenced: "Source référencée",
-    unverified: "Source non vérifiée",
-  } satisfies Record<DidYouKnowTier, string>,
 };
 
 type ContactCopy = typeof fr;

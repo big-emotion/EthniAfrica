@@ -258,3 +258,18 @@ describe("findProverb — the proverb a shared link names", () => {
     expect(findProverb(undefined, bank)).toBeNull();
   });
 });
+
+describe("the bank's reader prose (doctrine §1.1)", () => {
+  // A note may say where a text comes from, never what tier it was given.
+  // @req REQ-092
+  it("never names a source tier in what the reader reads", () => {
+    const tierWord = /(?<!\p{L})(source non vérifiée|tier)(?!\p{L})/iu;
+    const offenders = PROVERBS.filter((proverb) =>
+      [proverb.origin.note, ...proverb.sources.map((source) => source.notes)]
+        .filter(Boolean)
+        .some((text) => tierWord.test(text))
+    ).map((proverb) => proverb.id);
+
+    expect(offenders).toEqual([]);
+  });
+});

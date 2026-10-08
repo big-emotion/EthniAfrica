@@ -30,7 +30,7 @@ export interface ProverbCardProps {
  * The origin status is printed as a sentence fragment rather than a badge.
  * « non établie » over a proverb the whole web calls African is the one piece
  * of information this dossier adds to the compilations it draws on, and a
- * badge would read as decoration beside the tier labels below.
+ * badge would read as decoration beside the source list below.
  *
  * Ranged left at every width: a dossier page lists these one under another,
  * and a reader working down a column needs a starting edge (brand charter
@@ -124,9 +124,6 @@ export function ProverbCard({ language, proverb, picture }: ProverbCardProps) {
               ) : (
                 <cite className="proverb-source-cite">{source.title}</cite>
               )}
-              <span className="proverb-source-tier">
-                {shared.tierLabels[source.tier]}
-              </span>
               {source.notes ? (
                 <span className="proverb-source-note">{source.notes}</span>
               ) : null}
@@ -294,13 +291,6 @@ export function ProverbCard({ language, proverb, picture }: ProverbCardProps) {
         .proverb-source-cite {
           color: var(--afh-text-soft);
           font-style: italic;
-        }
-        .proverb-source-tier {
-          font-family: var(--font-mono, ui-monospace, monospace);
-          font-size: var(--afh-text-eyebrow);
-          letter-spacing: 0.05em;
-          text-transform: uppercase;
-          color: var(--afh-fg-muted);
         }
         .proverb-source-note {
           flex-basis: 100%;

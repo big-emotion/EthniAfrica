@@ -721,7 +721,7 @@ export const PROVERBS: Proverb[] = [
       "Chacun a droit à sa place : c'est la règle du « vivre et laisser vivre ».",
     origin: {
       status: "attested",
-      note: "Proverbe igbo qu'un personnage prononce, sous une forme abrégée, dans Things Fall Apart (1958) de Chinua Achebe. Une chronique de presse nigériane l'analyse comme proverbe igbo. Le texte igbo cité ici vient d'une source non vérifiée.",
+      note: "Proverbe igbo qu'un personnage prononce, sous une forme abrégée, dans Things Fall Apart (1958) de Chinua Achebe. Une chronique de presse nigériane l'analyse comme proverbe igbo. Le texte igbo cité ici vient d'une publication sur un réseau social, qui ne cite aucun recueil.",
     },
     entities: [
       {

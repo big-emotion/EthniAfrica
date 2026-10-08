@@ -35,7 +35,6 @@ const fr = {
         absent: "aucun nom référencé ici",
       },
     },
-    factTier: "Niveau de source",
   },
   sections: {
     nameAndHistory: "Le nom et son histoire",
@@ -66,10 +65,6 @@ const fr = {
     otherLanguages: (count: number) => `+ ${count} autres langues`,
   },
   reportSection: "Signaler cette section",
-  sourcesTally: {
-    total: (count: number) => `${count} source${count > 1 ? "s" : ""}`,
-    standing: (label: string, count: number) => `${label} : ${count}`,
-  },
   targetFacts: {
     written: "Page rédigée",
     derived: "Présence dérivée des pages peuple",

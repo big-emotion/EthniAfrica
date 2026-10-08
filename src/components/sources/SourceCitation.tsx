@@ -1,5 +1,5 @@
-import { sourceStandingLabel } from "@/lib/glossaire/vocabularies";
-import type { SourceTier } from "@/types/sources";
+import { sourceKindLabel } from "@/lib/glossaire/vocabularies";
+import type { SourceKind } from "@/types/sources";
 import type { Language } from "@/types/shared";
 
 /**
@@ -13,30 +13,20 @@ import type { Language } from "@/types/shared";
 export interface CitableSource {
   title: string;
   url: string | null;
-  /**
-   * `needs_review` is not a tier and must never be folded onto "Non vérifiée".
-   * Keeping it in the type is what forces every caller through
-   * `sourceStandingLabel`.
-   */
-  standing: SourceTier | "needs_review";
+  /** Absent when the record does not say; the citation then names no type. */
+  kind?: SourceKind | null;
 }
 
 /**
  * One citation, wherever the atlas cites.
  *
- * The Source Tier Policy has one rendering, not one per surface. This was the
- * patronyme fiche's own component, typed to `PatronymeSource`; its docblock
- * already said it existed so that three sections would not each grow their
- * own, and the dossier and the bibliography page were about to make that four
- * and five.
- *
- * The standing goes through `sourceStandingLabel` and never through
- * `SOURCE_TIER_LABELS` directly. `strictNullChecks` is off in this repo, so
- * indexing the label map with a value that turns out to be `needs_review`
- * yields an empty string — a source rendered with no visible provenance,
- * which is the one outcome the policy exists to prevent.
+ * The citation names the source's type — a tradition, an archive, a
+ * publication — and never its tier: the reader is told who speaks, not how
+ * much to trust them (doctrine §1.1). The tier stays on the record for
+ * moderation; it has no reader rendering.
  */
 // @req REQ-092
+// @req REQ-161
 export function SourceCitation({
   source,
   language = "fr",
@@ -44,18 +34,23 @@ export function SourceCitation({
   source: CitableSource;
   language?: Language;
 }) {
-  const standingLabel = sourceStandingLabel(source.standing, language);
-
   return (
-    <span className="afh-source-citation" data-source-tier={source.standing}>
+    <span className="afh-source-citation">
       {source.url ? (
         <a href={source.url} target="_blank" rel="noreferrer noopener">
           {source.title}
         </a>
       ) : (
         source.title
-      )}{" "}
-      <span className="afh-source-tier-label">({standingLabel})</span>
+      )}
+      {source.kind ? (
+        <>
+          {" "}
+          <span className="afh-source-kind-label">
+            ({sourceKindLabel(source.kind, language)})
+          </span>
+        </>
+      ) : null}
     </span>
   );
 }

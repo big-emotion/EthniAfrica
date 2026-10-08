@@ -83,14 +83,15 @@ describe("the contact page", () => {
   });
 
   /**
-   * The tier is what licenses quoting the bank outside a fiche at all.
+   * A quoted fact carries no tier word: the reader is never told how far to
+   * trust a source (doctrine §1.1).
    */
-  // @req REQ-113
-  it("states what backs the fact it shows", async () => {
+  // @req REQ-113 REQ-092
+  it("never ranks the fact it shows", async () => {
     await renderPage();
 
     const band = screen.getByTestId("contact-did-you-know");
-    expect(band.textContent).toMatch(
+    expect(band.textContent).not.toMatch(
       /Source (officielle|référencée|non vérifiée)/i
     );
   });

@@ -1,7 +1,4 @@
-import type {
-  DidYouKnowEntityKind,
-  DidYouKnowTier,
-} from "@/lib/home/didYouKnowFacts";
+import type { DidYouKnowEntityKind } from "@/lib/home/didYouKnowFacts";
 import type { Language } from "@/types/shared";
 
 const fr = {
@@ -19,14 +16,8 @@ const fr = {
     country: "Pays",
     family: "Famille linguistique",
   } satisfies Record<DidYouKnowEntityKind, string>,
-  tierLabels: {
-    official: "Source officielle",
-    referenced: "Source référencée",
-    unverified: "Source non vérifiée",
-  } satisfies Record<DidYouKnowTier, string>,
   file: "fichier",
   licence: "licence",
-  factReliability: "Fiabilité du fait",
   missingProvenance:
     "Provenance à documenter — ce fait est antérieur au champ de sources.",
   nextAnnouncement: (headline: string) => `Anecdote suivante : ${headline}`,

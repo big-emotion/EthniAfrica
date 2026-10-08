@@ -67,37 +67,42 @@ describe("SourcesPageContent (REQ-091)", () => {
 
 /**
  * The fifth section is the only one that lists *works* rather than providers,
- * so it is the only one that owes a tier. Without these, the site's own
- * bibliography would be the single place where a source appears with no
- * visible provenance — the exact outcome the Source Tier Policy exists to
- * prevent, and one `strictNullChecks: false` would render as an empty string
- * rather than as an error.
+ * so it is the only one that says what kind of work each is. It names the
+ * type and never the tier: the reader is told who speaks, not how much to
+ * trust them (doctrine §1.1).
  */
 describe("SourcesPageContent — the editorial bibliographies", () => {
-  // @req REQ-091
-  it("shows a standing beside every work it cites", () => {
+  // @req REQ-161
+  it("shows a type beside every work it cites", () => {
     const { container } = render(<SourcesPageContent />);
     const citations = container.querySelectorAll(".afh-source-citation");
 
     expect(citations.length).toBe(Object.keys(NOMMER_BIBLIOGRAPHY).length);
 
     for (const citation of citations) {
-      const label = citation.querySelector(".afh-source-tier-label");
-      expect(label?.textContent?.trim()).not.toBe("");
+      const label = citation.querySelector(".afh-source-kind-label");
+      expect(label).not.toBeNull();
+      expect(label.textContent.trim()).not.toBe("");
       expect(label?.textContent).not.toBe("()");
     }
   });
 
+  // @req REQ-092
+  it("names no tier anywhere in the bibliography", () => {
+    const { container } = render(<SourcesPageContent />);
+
+    expect(container.textContent).not.toMatch(
+      /Officielle|Référencée|Non vérifiée|En attente d'examen/
+    );
+  });
+
   // @req REQ-091
-  it("says what Wikipedia is used for and what « awaiting review » means, without hiding either", () => {
+  it("says what Wikipedia is used for without hiding it", () => {
     render(<SourcesPageContent />);
 
     const note = screen.getByText(/Nous lisons Wikipédia d'abord/);
     expect(note).toBeInTheDocument();
     expect(note.textContent).not.toMatch(/n'est pas une source/);
-    // « En attente d'examen » is a weight not yet assessed, never a claim that
-    // tracing the source is unfinished.
-    expect(note.textContent).toMatch(/pas encore évalué/);
     expect(note.textContent).not.toMatch(/remontée/);
   });
 

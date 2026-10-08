@@ -220,9 +220,6 @@ export function FicheSummaryBrief(props: FicheSummaryBriefProps) {
           data-testid="fiche-summary-fact"
         >
           <p>{fact.headline}</p>
-          <span className="fiche-summary-brief__tier">
-            {copy.factTier}: {anecdotesCopy[language].tierLabels[fact.tier]}
-          </span>
           {fact.sources?.length ? (
             <p className="fiche-summary-brief__source">
               {fact.sources[0].url ? (

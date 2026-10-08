@@ -385,7 +385,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "unverified",
     sourceKind: "community",
     notes:
-      "Source communautaire — Adanwomase est un village tisserand de l'Ashanti — retenue à son palier plutôt qu'écartée, comme la doctrine du site le prévoit. Elle atteste les deux étymologies internes : en akan, nwentoma, « tissu tissé », et kente rapproché de kɛntɛn, « panier », pour le motif ; en éwé, kete, des deux gestes alternés du métier, ke « ouvrir » et te « presser ». Reste à trouver une source linguistique pour la fixation de la forme francophone « kita », qui n'est attestée par aucune des deux traditions.",
+      "Source communautaire — Adanwomase est un village tisserand de l'Ashanti — retenue plutôt qu'écartée, comme la doctrine du site le prévoit. Elle atteste les deux étymologies internes : en akan, nwentoma, « tissu tissé », et kente rapproché de kɛntɛn, « panier », pour le motif ; en éwé, kete, des deux gestes alternés du métier, ke « ouvrir » et te « presser ». Reste à trouver une source linguistique pour la fixation de la forme francophone « kita », qui n'est attestée par aucune des deux traditions.",
     discoveredVia: [],
   },
   "coffee-qahwa": {

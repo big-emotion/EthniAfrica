@@ -105,14 +105,40 @@ describe("source page", () => {
   });
 
   // @req REQ-092
-  it("states the source, its standing, and why it carries that standing", async () => {
+  it("states the source and the note its record carries", async () => {
     render(await renderRoute(ID));
 
     expect(screen.getByText(/Ethnologue/)).toBeInTheDocument();
-    expect(screen.getByText("Officielle")).toBeInTheDocument();
     expect(
       screen.getByText("Catalogue entry — official tier by domain.")
     ).toBeInTheDocument();
+  });
+
+  /** Doctrine §1.1: the reader is told who speaks, never how much to trust them. */
+  // @req REQ-092
+  it("never states the source's tier", async () => {
+    for (const tier of [
+      "official",
+      "referenced",
+      "unverified",
+      null,
+    ] as const) {
+      getSourceByIdMock.mockResolvedValue({ ...source, tier });
+      const { container, unmount } = render(await renderRoute(ID));
+      expect(container.textContent).not.toMatch(
+        /Officielle|Référencée|Non vérifiée|En attente d'examen/
+      );
+      unmount();
+    }
+  });
+
+  // @req REQ-161
+  it("states the source's type when the record carries it", async () => {
+    getSourceByIdMock.mockResolvedValue({ ...source, sourceKind: "archive" });
+
+    render(await renderRoute(ID));
+
+    expect(screen.getByText("Archive")).toBeInTheDocument();
   });
 
   // @req REQ-092

@@ -75,8 +75,8 @@ export function ContributionForm({
       return [];
     }
   })();
-  // Advisory, never a gate: the contributor is told how their citation will be
-  // labelled, and submits anyway.
+  // Advisory, never a gate: an off-catalogue citation is accepted and the
+  // contributor is told it goes to review, and submits anyway.
   const hasUnverifiedSource = sourceCitations.some(
     (citation) => citation.tier === "unverified"
   );

@@ -100,15 +100,20 @@ describe("ProverbCard", () => {
     ).toHaveAttribute("href", getFamilyRoute("fr", "FLG_NIGERCONGO"));
   });
 
-  // @req REQ-113
-  it("states the origin status and prints every source with its tier", () => {
-    render(<ProverbCard language="fr" proverb={attested} />);
+  // A source is named, never ranked (doctrine §1.1).
+  // @req REQ-113 REQ-092
+  it("states the origin status and prints every source without a tier", () => {
+    const { container } = render(
+      <ProverbCard language="fr" proverb={attested} />
+    );
 
     expect(screen.getByText("attestée par une source")).toBeInTheDocument();
     expect(
       screen.getByRole("link", { name: "Yoruba Proverbs" })
     ).toHaveAttribute("href", "https://example.org/yoruba-proverbs");
-    expect(screen.getByText("Source référencée")).toBeInTheDocument();
+    expect(container).not.toHaveTextContent(
+      /Source (officielle|référencée|non vérifiée)/
+    );
     expect(
       screen.getByText("Recueil publié ; donne le texte original.")
     ).toBeInTheDocument();

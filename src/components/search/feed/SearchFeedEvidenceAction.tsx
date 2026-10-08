@@ -4,7 +4,6 @@ import { useState } from "react";
 
 import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
 import { LazySourceChainSheet } from "@/components/source-transparency/SourceChainSheet.lazy";
-import { SourceStandingBadge } from "@/components/sources/SourceStandingBadge";
 import {
   toSourceChainEvidence,
   type SearchEvidence,
@@ -35,7 +34,6 @@ export function SearchFeedEvidenceAction({
       id={anchorId}
       className="mt-afh-lg flex flex-wrap items-center gap-afh-md"
     >
-      <SourceStandingBadge standing={evidence.standing} language={language} />
       <ConfidenceChip
         id={anchorId}
         language={language}

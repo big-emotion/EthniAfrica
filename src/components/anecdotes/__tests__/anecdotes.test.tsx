@@ -74,20 +74,23 @@ function readerProps(openingId = DECK_IDS[0]) {
 }
 
 describe("AnecdoteCard — the fact a reader can cite (REQ-113)", () => {
-  // @req REQ-113
-  it("prints each source with its own tier, not just the fact's", () => {
-    render(<AnecdoteCard language="fr" fact={SOURCED} />);
+  // The reader is told which sources back the fact, never how far to trust
+  // the fact or each source (doctrine §1.1).
+  // @req REQ-113 REQ-092
+  it("prints each source without a tier, for the source or the fact", () => {
+    const { container } = render(<AnecdoteCard language="fr" fact={SOURCED} />);
 
     const source = screen.getByRole("link", { name: /Ministère/ });
     expect(source).toHaveAttribute("href", "https://www.diplocam.cm/histoire/");
-    expect(screen.getByText("Source officielle")).toBeInTheDocument();
-    expect(screen.getByText("Source référencée")).toBeInTheDocument();
+    expect(container).not.toHaveTextContent(
+      /Source (officielle|référencée|non vérifiée)|Fiabilité du fait/
+    );
   });
 
-  // A tier printed over a blank space asserts a provenance the reader
-  // cannot check. Six facts predate the field and have to say so.
+  // A blank footer asserts a provenance the reader cannot check. Six facts
+  // predate the field and have to say so.
   // @req REQ-113
-  it("says a fact is undocumented rather than showing a tier over nothing", () => {
+  it("says a fact is undocumented rather than leaving the footer blank", () => {
     render(<AnecdoteCard language="fr" fact={UNSOURCED} />);
 
     expect(screen.getByText(/Provenance à documenter/)).toBeInTheDocument();
