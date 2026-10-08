@@ -6,11 +6,29 @@
 
 import type { PeopleId } from "@/types/afrik";
 import type { SourceTier } from "@/types/sources";
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 
 // @req REQ-135
 export const NAME_RECORD_ENTITY_TYPES = ["people", "patronyme"] as const;
 
 export type NameRecordEntityType = (typeof NAME_RECORD_ENTITY_TYPES)[number];
+
+/**
+ * The subject types a `noms/` file may describe (public/modele-nom.json).
+ * `word` is the free type for a word whose history explains Africa through its
+ * names without fitting another fiche (REQ-196).
+ */
+// @req REQ-196
+export const NAME_RECORD_FILE_ENTITY_TYPES = [
+  "people",
+  "language",
+  "languageFamily",
+  "country",
+  "word",
+] as const;
+
+export type NameRecordFileEntityType =
+  (typeof NAME_RECORD_FILE_ENTITY_TYPES)[number];
 
 export type PatronymeId = `PAT_${string}`;
 
@@ -64,9 +82,10 @@ export interface NameAttestation {
 }
 
 export interface NameRecordDossier {
-  id: PeopleId | PatronymeId;
-  entityType: NameRecordEntityType;
+  id: PeopleId | PatronymeId | string;
+  entityType: NameRecordEntityType | NameRecordFileEntityType;
   names: NameRecordEntry[];
+  nameHistory?: NameHistory;
 }
 
 /**

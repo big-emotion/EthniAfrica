@@ -20,6 +20,7 @@ import { parseKingdomPeriod } from "./afrik/parseKingdomPeriod";
 import { parseRelationFile } from "../src/lib/afrik/parsers/relationParser";
 import { parseDossierFile } from "../src/lib/afrik/parsers/dossierParser";
 import { parsePlaceFile } from "../src/lib/afrik/parsers/placeParser";
+import { parseNameHistory } from "../src/lib/afrik/parsers/nameHistoryParser";
 import { parseNameRecordFile } from "../src/lib/afrik/parsers/nameRecordParser";
 import { parsePatronymeFile } from "../src/lib/afrik/parsers/patronymeParser";
 import type { SourceTier } from "../src/types/sources";
@@ -3957,6 +3958,47 @@ export function checkPlaceFicheModel(datasetRoot: string): ValidationResult {
   return { ok: errors.length === 0, errors, warnings };
 }
 
+// ─── Shared nameHistory block (REQ-196, ARCH-028) ────────────────────────────
+
+// Every directory holding a named-subject fiche. Each class carries the block
+// with the same shape, so one parser holds them all.
+const NAME_HISTORY_FICHE_DIRECTORIES = [
+  "peuples",
+  "langues",
+  "famille_linguistique",
+  "pays",
+  "patronymes",
+  "lieux",
+  "noms",
+];
+
+/**
+ * REQ-196 — every fiche that declares `nameHistory` passes the one shared
+ * schema. A fiche without the block is not a defect: it is filled subject by
+ * subject during enrichment. The errors name the fiche and, through the
+ * parser, the form, so a contradicting pair of births is found without
+ * opening the file.
+ */
+export function checkNameHistoryBlocks(datasetRoot: string): ValidationResult {
+  const errors: string[] = [];
+
+  for (const directory of NAME_HISTORY_FICHE_DIRECTORIES) {
+    for (const fullPath of collectJsonFiles(
+      path.join(datasetRoot, directory)
+    )) {
+      const fiche = readFiche(fullPath);
+      if (!fiche || !("nameHistory" in fiche)) continue;
+
+      const file = path.relative(datasetRoot, fullPath);
+      for (const message of parseNameHistory(fiche.nameHistory).errors) {
+        errors.push(`REQ-196: ${file}: ${message}`);
+      }
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings: [] };
+}
+
 /**
  * True when a source is `official` or `referenced`. `unverified` and the
  * unadjudicated `needs_review` are legal standings that publish; they only
@@ -4093,9 +4135,18 @@ export function checkNameRecordEndonymCoverage(
   return { ok: errors.length === 0, errors, warnings };
 }
 
+// Where the fiche of each non-people subject type lives, keyed by id.
+const NAME_RECORD_FICHE_DIRECTORIES: Readonly<Record<string, string>> = {
+  language: "langues",
+  languageFamily: "famille_linguistique",
+  country: "pays",
+};
+
 /**
- * FR53-ref – peopleId (dossier id) must resolve to an existing PPL fiche
- * under dataset/source/afrik/peuples/** (no orphan name files).
+ * FR53-ref – a name record's id must resolve to the fiche of its subject
+ * (no orphan name files): a people under peuples/**, a language, family or
+ * country under its own directory. A `word` is the free type and has no
+ * other fiche to resolve to (REQ-196).
  */
 export function checkNameRecordReferences(
   datasetRoot: string
@@ -4118,9 +4169,19 @@ export function checkNameRecordReferences(
     }
 
     const id = typeof data.id === "string" ? data.id : undefined;
-    if (!id || !pplIds.has(id)) {
+    const entityType = data.entityType ?? "people";
+    if (entityType === "word") continue;
+
+    const ficheDirectory = NAME_RECORD_FICHE_DIRECTORIES[String(entityType)];
+    const resolves =
+      !!id &&
+      (entityType === "people"
+        ? pplIds.has(id)
+        : !!ficheDirectory &&
+          fs.existsSync(path.join(datasetRoot, ficheDirectory, `${id}.json`)));
+    if (!resolves) {
       errors.push(
-        `FR53-ref: ${file}: peopleId "${data.id}" does not resolve to an existing PPL fiche`
+        `FR53-ref: noms/${file}: ${entityType} id "${data.id}" does not resolve to an existing fiche`
       );
     }
   }
@@ -4381,7 +4442,9 @@ export function checkLanguageStrictSchema(
     const ficheTopKeys = new Set(
       Object.keys(data).filter((key) => key !== "_meta")
     );
-    const missingTop = [...modelTopKeys].filter((k) => !ficheTopKeys.has(k));
+    const missingTop = [...modelTopKeys].filter(
+      (k) => !ficheTopKeys.has(k) && !OPTIONAL_TOP_LEVEL_KEYS.has(k)
+    );
     const extraTop = [...ficheTopKeys].filter((k) => !modelTopKeys.has(k));
     if (missingTop.length || extraTop.length) {
       errors.push(
@@ -4485,6 +4548,11 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
 // exactly as in the language check.
 const AUTHORING_KEYS = new Set(["_meta"]);
 
+// Top-level keys a model declares that a fiche may leave out without
+// drifting. `nameHistory` is written subject by subject during enrichment
+// (REQ-196); its absence is the starting state of every fiche, not drift.
+const OPTIONAL_TOP_LEVEL_KEYS: ReadonlySet<string> = new Set(["nameHistory"]);
+
 // Keys a model documents under `content` that a fiche may leave out without
 // drifting: the page has a fallback for each, so absence is not a defect and
 // must not be counted against the strict-model ceilings.
@@ -4562,7 +4630,8 @@ export function checkStrictModelKeys(
         .filter(
           (key) =>
             !ficheKeys.has(key) &&
-            !(section === "content" && OPTIONAL_CONTENT_KEYS.has(key))
+            !(section === "content" && OPTIONAL_CONTENT_KEYS.has(key)) &&
+            !(section === "top level" && OPTIONAL_TOP_LEVEL_KEYS.has(key))
         )
         .map((key) => `${section}: missing key "${key}"`),
       ...[...ficheKeys]
@@ -5399,6 +5468,14 @@ async function main() {
   newChecks.push({
     name: "REQ-193 Place fiche model",
     result: checkPlaceFicheModel(datasetRoot),
+  });
+
+  console.log(
+    "REQ-196 - Shared nameHistory block (one schema, every fiche)..."
+  );
+  newChecks.push({
+    name: "REQ-196 nameHistory block",
+    result: checkNameHistoryBlocks(datasetRoot),
   });
 
   console.log(

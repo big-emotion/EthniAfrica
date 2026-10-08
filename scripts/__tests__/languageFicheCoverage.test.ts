@@ -107,8 +107,10 @@ describe("language fiche coverage (ETNI-1508)", () => {
       content: Record<string, unknown>;
       [key: string]: unknown;
     };
+    // nameHistory is optional: it is written subject by subject (REQ-196).
+    const optionalTopKeys = new Set(["_meta", "nameHistory"]);
     const topKeys = Object.keys(model)
-      .filter((key) => key !== "_meta")
+      .filter((key) => !optionalTopKeys.has(key))
       .sort();
     // Optional in the model: a fiche may omit them (page falls back to a template).
     const optionalContentKeys = new Set([
@@ -129,7 +131,7 @@ describe("language fiche coverage (ETNI-1508)", () => {
 
       expect(
         Object.keys(fiche)
-          .filter((key) => key !== "_meta")
+          .filter((key) => !optionalTopKeys.has(key))
           .sort(),
         `${file} top-level keys`
       ).toEqual(topKeys);
