@@ -1,6 +1,12 @@
 import { createHash } from "node:crypto";
 import { spawnSync } from "node:child_process";
-import { mkdtempSync, readFileSync, writeFileSync, rmSync } from "node:fs";
+import {
+  existsSync,
+  mkdtempSync,
+  readFileSync,
+  writeFileSync,
+  rmSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import { extname, resolve } from "node:path";
 import { parse } from "csv-parse/sync";
@@ -286,6 +292,13 @@ export function lintCopy(
 ): CopyFinding[] {
   const findings: CopyFinding[] = [];
   if (!units.length) return findings;
+  // @vvago/vale is optional: its postinstall downloads the binary from the
+  // GitHub API, which answers 403 to rate-limited CI runners. Installation
+  // then goes on without it, and only this check needs it.
+  if (!existsSync(valeBin))
+    throw new Error(
+      `Vale binary is missing at ${valeBin}: the optional dependency @vvago/vale did not download it (GitHub rate limit). Reinstall with \`npm ci\` or rerun the CI job.`
+    );
   // File input avoids intermittent stdin stalls in large local Vale runs.
   const scratch = mkdtempSync(resolve(tmpdir(), "ethniafrica-vale-"));
   const inputFile = resolve(scratch, "copy.txt");
