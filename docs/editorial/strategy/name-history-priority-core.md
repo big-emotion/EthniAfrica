@@ -113,15 +113,13 @@ The three pilots (Peul, lingala, Mali) are written to the
 judge the format before the other 50 are written. Points left open for that
 review:
 
-- **Italics.** The register sets the name in italics the first time. The
-  corpus has no italics convention for `nameHistory` text, so the pilots carry
-  plain text and leave the emphasis to the renderer, which knows each
-  `nameText`.
+- **Italics — ruled 2026-10-09.** Names cited in a tile are set in italics by
+  the timeline UI; the fiche text stays plain, because the surfaces that show
+  it today parse no markup. The rule is in the register's tile section.
 - **Second-hand traces.** Several births rest on a trace an author reports
   rather than on a document the project has read (for Peul, D'Eichtal in 1842
   through Tauxier). The source note says so each time. The operator decides
   whether a reported trace may be a birth.
-- **Summary account and hypothesis tiles.** On `PPL_FULA`, the old meaning
-  account that listed every hypothesis is kept for the answer card, and each
-  hypothesis is now also its own tile. The two say the same thing in two
-  places; the operator decides whether the meaning account should shrink.
+- **Summary account and hypothesis tiles — ruled 2026-10-09.** On
+  `PPL_FULA`, the meaning account no longer retells the hypotheses that have
+  their own tiles: it keeps what only it says and all its sources.
