@@ -12,7 +12,7 @@
  */
 
 /**
- * Mirrors the latest `sources_source_kind_check` constraint (migration 089). The
+ * Mirrors the latest `sources_source_kind_check` constraint (migration 103). The
  * vocabulary contract test parses the CHECK and compares it to this list, so
  * the two cannot drift apart again.
  */
@@ -23,6 +23,7 @@ export const SOURCE_KINDS = [
   "official_statistics",
   "linguistic_reference",
   "academic",
+  "press",
   "community",
   "repository",
   "archive",
@@ -36,11 +37,12 @@ export const SOURCE_KINDS = [
 export type SourceKind = (typeof SOURCE_KINDS)[number];
 
 /**
- * Kinds that describe a bibliographic work. `discovery` (a lookup surface),
- * `ai_generated` (machine-written text), `unknown`, `oral_tradition` (a linked
- * account) and `ethniafrica_synthesis` (an editorial synthesis) are provenance
- * markers, not bibliographic works, so the structured reference model excludes
- * them.
+ * Kinds that describe a bibliographic work, `press` included: a dated, edited
+ * article is a work cited by its own title and outlet, like `academic`.
+ * `discovery` (a lookup surface), `ai_generated` (machine-written text),
+ * `unknown`, `oral_tradition` (a linked account) and `ethniafrica_synthesis`
+ * (an editorial synthesis) are provenance markers, not bibliographic works, so
+ * the structured reference model excludes them.
  */
 // @req REQ-161
 export type StructuredSourceKind = Exclude<

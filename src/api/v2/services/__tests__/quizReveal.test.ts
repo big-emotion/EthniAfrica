@@ -73,7 +73,7 @@ describe("getQuizRevealSources", () => {
             url: null,
             year: null,
             tier: "official",
-            source_kind: "press",
+            source_kind: "podcast",
           },
         ],
         error: null,

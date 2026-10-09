@@ -21,6 +21,11 @@ describe("sourceKindLabel", () => {
     expect(sourceKindLabel("ai_generated", "fr")).toBe("Synthèse à vérifier");
   });
 
+  // @req REQ-194
+  it("names a press article as such, not as an unspecified or community source", () => {
+    expect(sourceKindLabel("press", "fr")).toBe("Article de presse");
+  });
+
   // @req REQ-161
   it("never answers with a tier word", () => {
     const tierWords = /officiel|référencée|non vérifiée|palier|autorité/i;
