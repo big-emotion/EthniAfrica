@@ -149,7 +149,6 @@ files on disk before applying** — a parser rejection shows up here as a count 
 ```bash
 ls dataset/source/afrik/migrations/*.json | wc -l   # expect 6
 ls dataset/source/afrik/relations/*.json | wc -l    # expect 12
-ls dataset/source/afrik/noms/*.json | wc -l         # expect 1 — but see below
 ```
 
 ---
@@ -441,18 +440,18 @@ were rejected during parsing or insertion — do not treat the run as successful
 | `assertions`              | 18            |
 | `name_records`            | ~3 727        |
 
-This row used to read **0**, on the reasoning that the only file in
-`dataset/source/afrik/noms/` was `PPL_YORUBA.json`, which carries `_meta.illustrative: true`
-and is skipped by design. That stopped being true. `name_records` now has three feeders, and a
-count near zero is a failure rather than the expected state:
+`name_records` has two feeders, and a count near zero is a failure rather than the expected
+state:
 
 | Feeder                                                 | Rows   |
 | ------------------------------------------------------ | ------ |
-| `nameRecordJsonLoader` — 10 real dossiers in `noms/`   | 17     |
 | `patronymeJsonLoader` — one per spelling, `surname`    | 31     |
 | `peopleAppellationLoader` — derived from people fiches | ~3 679 |
 
-`PPL_YORUBA.json` is still illustrative and still skipped, so 10 of the 11 dossiers load.
+The third feeder, `nameRecordJsonLoader`, retired with `dataset/source/afrik/noms/` (ETNI-2021):
+the twelve hand-sourced records now live in their people fiches' `nameHistory`, projected onto
+`afrik_peoples.name_history`. A database loaded before then still holds their old rows; the
+readers prefer the fiche's `nameHistory` for the same name, so those rows are never shown.
 
 Note that the 31 `surname` rows sit in a partition the listing excludes: both
 `afrik_name_forms` and `afrik_name_type_counts` filter `where nr.entity_type = 'people'`, so
@@ -573,8 +572,6 @@ Then the SQL above, through the tunnel. Forgetting this step leaves the retired 
 
 ## Known limitation
 
-`nameRecordJsonLoader` does not create a `fiche_revisions` row, unlike the migration and
-relation loaders. This is deliberate rather than an oversight: its assertions key to the
-_people_ fiche, and a name dossier is not a snapshot of that fiche, so which revision it should
-attach to is an unresolved modelling decision. It will matter the first time a real name dossier
-is authored.
+A people's `nameHistory` reaches the database as `afrik_peoples.name_history`, not through the
+sources → assertions → `name_records` fabric, so its accounts carry no assertion row. The
+readers build each name's evidence from the block's own sources.

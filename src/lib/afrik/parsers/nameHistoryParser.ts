@@ -155,7 +155,14 @@ const nameSchema = z
     nameText: z.string().trim().min(1),
     nameStatus: z.enum(["current", "former"]),
     selfGiven: z.boolean(),
-    languageOfOrigin: z.string().min(1).nullable(),
+    // The rule the retired name records held (FR55-iso): a `lang` attribute
+    // is derived from it, so it must be a code, not a language's name.
+    languageOfOrigin: z
+      .string()
+      .regex(/^[a-z]{3}$/, {
+        message: "languageOfOrigin must be an ISO 639-3 code",
+      })
+      .nullable(),
     namedBy: z.string().trim().min(1).nullable(),
     // What the answer card reads (REQ-191, moved here by REQ-196).
     shortLine: shortLineSchema.optional(),

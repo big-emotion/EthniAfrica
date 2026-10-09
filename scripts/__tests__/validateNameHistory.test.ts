@@ -4,14 +4,12 @@ import { join } from "path";
 
 import {
   checkNameHistoryBlocks,
-  checkNameRecordReferences,
   checkStrictModelKeys,
   checkLanguageStrictSchema,
 } from "../validateAfrikData";
 import { parseNameHistory } from "../../src/lib/afrik/parsers/nameHistoryParser";
 import { parsePatronymeFile } from "../../src/lib/afrik/parsers/patronymeParser";
 import { parsePlaceFile } from "../../src/lib/afrik/parsers/placeParser";
-import { parseNameRecordFile } from "../../src/lib/afrik/parsers/nameRecordParser";
 
 const PUBLIC_ROOT = join(__dirname, "..", "..", "public");
 
@@ -74,7 +72,7 @@ const FICHE_PATHS = [
   "famille_linguistique/FLG_TEST.json",
   "patronymes/PAT_TEST.json",
   "lieux/LOC_TEST.json",
-  "noms/PPL_TEST.json",
+  "mots/WRD_TEST.json",
 ];
 
 describe("checkNameHistoryBlocks", () => {
@@ -110,6 +108,34 @@ describe("checkNameHistoryBlocks", () => {
     writeJson(tmpDir, "pays/TST.json", { id: "TST" });
 
     expect(checkNameHistoryBlocks(tmpDir).ok).toBe(true);
+  });
+
+  // @req REQ-196
+  it("fails a people fiche whose block names no name the people gives itself", () => {
+    const block = nameHistory([account()]);
+    block.names[0].selfGiven = false;
+    writeJson(tmpDir, "peuples/FLG_TEST/PPL_TEST.json", {
+      id: "PPL_TEST",
+      nameHistory: block,
+    });
+    writeJson(tmpDir, "pays/TST.json", { id: "TST", nameHistory: block });
+
+    const result = checkNameHistoryBlocks(tmpDir);
+
+    expect(result.errors).toEqual([
+      expect.stringMatching(/PPL_TEST\.json.*name the people gives itself/),
+    ]);
+  });
+
+  // @req REQ-196
+  it("fails a block that tells the same name twice", () => {
+    const block = nameHistory([account()]);
+    block.names.push({ ...block.names[0], selfGiven: false });
+    writeJson(tmpDir, "pays/TST.json", { id: "TST", nameHistory: block });
+
+    expect(checkNameHistoryBlocks(tmpDir).errors).toEqual([
+      expect.stringMatching(/TST\.json.*"Testa".*twice/),
+    ]);
   });
 
   // @req REQ-196
@@ -149,7 +175,7 @@ describe("the models declare the shared block", () => {
     "modele-pays.json",
     "modele-nom-patronyme.json",
     "modele-lieu.json",
-    "modele-nom.json",
+    "modele-mot.json",
   ];
 
   // @req REQ-196
@@ -169,19 +195,6 @@ describe("the models declare the shared block", () => {
     );
 
     expect(new Set(examples).size).toBe(1);
-  });
-
-  // @req REQ-196
-  it("lists the free word and the other subject types in modele-nom.json entityType", () => {
-    const { entityType } = readJson(join(PUBLIC_ROOT, "modele-nom.json"));
-
-    expect(entityType.split(" | ")).toEqual([
-      "people",
-      "language",
-      "languageFamily",
-      "country",
-      "word",
-    ]);
   });
 });
 
@@ -231,52 +244,6 @@ describe("the per-class parsers accept the block", () => {
     expect(
       parsePlaceFile({ ...real, nameHistory: { summary: "" } }).success
     ).toBe(false);
-  });
-
-  // @req REQ-196
-  it("a free word record is accepted by the name-record parser", () => {
-    const record = readJson(
-      join(
-        __dirname,
-        "..",
-        "..",
-        "dataset",
-        "source",
-        "afrik",
-        "noms",
-        "PPL_IGBO.json"
-      )
-    );
-
-    const parsed = parseNameRecordFile({
-      ...record,
-      id: "WRD_RACISME",
-      entityType: "word",
-      nameHistory: VALID_BLOCK,
-    });
-
-    expect(parsed.errors).toBeUndefined();
-    expect(parsed.success).toBe(true);
-  });
-
-  // @req REQ-196
-  it("a name record still refuses an id that does not match its entity type", () => {
-    const record = readJson(
-      join(
-        __dirname,
-        "..",
-        "..",
-        "dataset",
-        "source",
-        "afrik",
-        "noms",
-        "PPL_IGBO.json"
-      )
-    );
-
-    expect(parseNameRecordFile({ ...record, entityType: "word" }).success).toBe(
-      false
-    );
   });
 });
 
@@ -343,41 +310,5 @@ describe("strict-model key checks treat nameHistory as optional", () => {
     );
 
     expect(result.errors).toEqual([]);
-  });
-});
-
-describe("checkNameRecordReferences across subject types", () => {
-  let tmpDir: string;
-
-  beforeEach(() => {
-    tmpDir = join(
-      __dirname,
-      `tmp_test_nhrefs_${Date.now()}_${Math.random().toString(36).slice(2)}`
-    );
-    writeJson(tmpDir, "pays/CIV.json", { id: "CIV" });
-  });
-
-  afterEach(() => {
-    if (existsSync(tmpDir)) rmSync(tmpDir, { recursive: true, force: true });
-  });
-
-  // @req REQ-196
-  it("resolves a country record to its fiche and needs no fiche for a free word", () => {
-    writeJson(tmpDir, "noms/CIV.json", { id: "CIV", entityType: "country" });
-    writeJson(tmpDir, "noms/WRD_RACISME.json", {
-      id: "WRD_RACISME",
-      entityType: "word",
-    });
-
-    expect(checkNameRecordReferences(tmpDir).errors).toEqual([]);
-  });
-
-  // @req REQ-196
-  it("fails a language record whose fiche does not exist", () => {
-    writeJson(tmpDir, "noms/zzz.json", { id: "zzz", entityType: "language" });
-
-    expect(checkNameRecordReferences(tmpDir).errors).toContainEqual(
-      expect.stringMatching(/noms.*zzz\.json.*"zzz"/)
-    );
   });
 });

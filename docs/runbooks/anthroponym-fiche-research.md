@@ -44,10 +44,10 @@ source entry** — not a source inherited from the peoples fiche the name was
 extracted from. A field that research cannot establish stays a declared `gap`
 with a reason. An invented etymology is worse than an empty chapter.
 
-The shape is `PatronymeDossier` in `src/lib/afrik/parsers/patronymeTypes.ts`,
-not `public/modele-nom.json` — that file is the _appellation_ model, addressed
-by `PPL_*`, and describes the ethnonym dossier served at `/v2/names`. Two
-constraints only the real type states:
+The shape is `PatronymeDossier` in `src/lib/afrik/parsers/patronymeTypes.ts`.
+A name's history, on any fiche, goes in the shared `nameHistory` block
+(`src/lib/afrik/parsers/nameHistoryParser.ts`). Two constraints only the real
+type states:
 
 - `origin.oralTraditions[]` records who carried the account and how it was
   collected: `carrier` (a person, a role or an agreed public description),

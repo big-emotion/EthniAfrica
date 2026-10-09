@@ -277,6 +277,14 @@ describe("the answer-card fields keep the rules they had in a name record", () =
   }
 
   // @req REQ-196
+  it("refuses a language of origin that is not an ISO 639-3 code", () => {
+    const parsed = parseNameHistory(withName({ languageOfOrigin: "Baoulé" }));
+
+    expect(parsed.success).toBe(false);
+    expect(parsed.errors.join("\n")).toMatch(/ISO 639-3/);
+  });
+
+  // @req REQ-196
   it("refuses a short line over 120 characters", () => {
     expect(
       parseNameHistory(withName({ shortLine: "a".repeat(121) })).success

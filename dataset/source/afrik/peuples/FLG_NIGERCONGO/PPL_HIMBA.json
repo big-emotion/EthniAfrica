@@ -115,7 +115,8 @@
       {
         "title": "SIL Ethnologue — Herero (her)",
         "url": "https://www.ethnologue.com/language/her/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -3,8 +3,6 @@
  * name_records rows (REQ-196, ARCH-028): the fold of noms/ into the fiches
  * must leave the served dossier unchanged.
  */
-import { readdirSync, readFileSync } from "fs";
-import { join } from "path";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const fromMock = vi.fn();
@@ -23,20 +21,13 @@ vi.mock("@/lib/supabase/queries/afrik/module-zero-batch", () => ({
 
 import { getPeopleNamesDossier } from "../services/names";
 import { getConfidenceMap } from "@/lib/supabase/queries/afrik/module-zero-batch";
-import { parseNameRecordFile } from "@/lib/afrik/parsers/nameRecordParser";
 import { peopleNameAnswer } from "@/lib/fiche/nameAnswer";
 import type { NameRecordDossier } from "@/types/names";
-import { foldNameRecordDossier } from "../../../../scripts/foldNameRecords";
-
-const NOMS_ROOT = join(process.cwd(), "dataset", "source", "afrik", "noms");
-
-function dossierOf(file: string): NameRecordDossier {
-  const parsed = parseNameRecordFile(
-    JSON.parse(readFileSync(join(NOMS_ROOT, file), "utf-8"))
-  );
-  if (!parsed.success) throw new Error(JSON.stringify(parsed.errors));
-  return parsed.data;
-}
+import {
+  FOLDED_RECORD_FILES,
+  ficheNameHistory,
+  foldedRecord,
+} from "@/lib/afrik/__tests__/fixtures/foldedNameRecords";
 
 type FakeQuery = Record<string, ReturnType<typeof vi.fn>>;
 
@@ -134,10 +125,6 @@ function without<T extends object>(value: T, ...keys: string[]) {
   );
 }
 
-const NOMS_FILES = readdirSync(NOMS_ROOT).filter((file) =>
-  file.endsWith(".json")
-);
-
 describe("names service — a people's nameHistory", () => {
   beforeEach(() => {
     fromMock.mockReset();
@@ -146,17 +133,17 @@ describe("names service — a people's nameHistory", () => {
   });
 
   // @req REQ-196
-  it.each(NOMS_FILES)(
+  it.each(FOLDED_RECORD_FILES)(
     "%s: the folded history serves the dossier its name records served",
     async (file) => {
-      const dossier = dossierOf(file);
+      const dossier = foldedRecord(file);
       const people = { id: dossier.id, content: {} };
 
       mockTables({ people, ...recordTables(dossier) });
       const fromRecords = await getPeopleNamesDossier(dossier.id);
 
       mockTables({
-        people: { ...people, name_history: foldNameRecordDossier(dossier) },
+        people: { ...people, name_history: ficheNameHistory(dossier.id) },
       });
       const fromHistory = await getPeopleNamesDossier(dossier.id);
 
@@ -171,7 +158,7 @@ describe("names service — a people's nameHistory", () => {
 
   // @req REQ-196
   it("lets the history win over a row for the same name and keeps a name only the rows hold", async () => {
-    const igbo = dossierOf("PPL_IGBO.json");
+    const igbo = foldedRecord("PPL_IGBO.json");
     const tables = recordTables(igbo);
     const staleIbo = { ...tables.names[1], meaning: "Ancienne lecture" };
     const derived = {
@@ -186,7 +173,7 @@ describe("names service — a people's nameHistory", () => {
       people: {
         id: igbo.id,
         content: {},
-        name_history: foldNameRecordDossier(igbo),
+        name_history: ficheNameHistory(igbo.id),
       },
       ...tables,
       names: [staleIbo, derived],

@@ -38,21 +38,27 @@ afterEach(() => {
 
 describe("measureSearchAnswerCoverage", () => {
   // @req REQ-178
-  it("counts a people's shortLine against the number of peoples", () => {
-    writeJson("peuples/FLG_A/PPL_ONE.json", { id: "PPL_ONE", content: {} });
-    writeJson("peuples/FLG_A/PPL_TWO.json", { id: "PPL_TWO", content: {} });
-    writeJson("noms/PPL_ONE.json", {
-      names: [{ nameText: "One" }, { nameText: "Un", shortLine: "Un nom." }],
+  // @req REQ-196
+  it("counts a people's shortLine, read from its nameHistory, against the number of peoples", () => {
+    writeJson("peuples/FLG_A/PPL_ONE.json", {
+      id: "PPL_ONE",
+      content: {},
+      nameHistory: {
+        names: [{ nameText: "One" }, { nameText: "Un", shortLine: "Un nom." }],
+      },
     });
-    writeJson("noms/PPL_TWO.json", {
-      names: [{ nameText: "Two", shortLine: "  " }],
+    writeJson("peuples/FLG_A/PPL_TWO.json", {
+      id: "PPL_TWO",
+      content: {},
+      nameHistory: { names: [{ nameText: "Two", shortLine: "  " }] },
     });
+    writeJson("peuples/FLG_A/PPL_THREE.json", { id: "PPL_THREE", content: {} });
 
     const rows = measureSearchAnswerCoverage(datasetRoot, productionsRoot);
 
-    expect(row(rows, "names[].shortLine", "people")).toMatchObject({
+    expect(row(rows, "nameHistory.names[].shortLine", "people")).toMatchObject({
       filled: 1,
-      total: 2,
+      total: 3,
     });
   });
 

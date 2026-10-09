@@ -1,11 +1,11 @@
 /**
  * Derives name records from the appellations every people fiche already
- * carries, and writes them through the same sources → assertions →
- * name_records fabric the noms/ dossiers use (FR57).
+ * carries, and writes them through the sources → assertions → name_records
+ * fabric (FR57).
  *
- * The atlas of appellations shipped reading only dataset/source/afrik/noms/,
- * a folder covering eleven peoples: seventeen rows for a corpus that names
- * 790. Each fiche's `content.appellations` block holds the autonym and the
+ * The atlas of appellations shipped reading only the hand-sourced name
+ * records then kept in dataset/source/afrik/noms/, a folder covering eleven
+ * peoples: seventeen rows for a corpus that names 790. Each fiche's `content.appellations` block holds the autonym and the
  * exonyms already, so the gap was a missing loader, not missing editorial.
  *
  * Two decisions are worth stating because they are not the obvious ones.
@@ -14,12 +14,11 @@
  * NOT NULL by design — the atlas refuses to publish a name with no source —
  * and a fiche's appellations block carries no per-name citation. So a derived
  * record is anchored to the sources the fiche as a whole rests on. That is a
- * weaker claim than a noms/ dossier makes, which is exactly why the dossiers
- * are loaded after this and overwrite what they cover: a hand-sourced record
- * beats a derived one on the same (name, type) pair.
+ * weaker claim than a fiche's nameHistory makes, which is why the readers
+ * prefer the block wherever it tells the same (name, type) pair (REQ-196).
  *
  * Writes are batched per fiche rather than per name. The row-at-a-time shape
- * the dossier loader can afford for nineteen entries costs some seventeen
+ * a loader can afford for nineteen entries costs some seventeen
  * thousand round trips at four thousand, so each fiche resolves its sources,
  * its revision and its assertions in one query apiece.
  */

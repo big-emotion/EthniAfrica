@@ -141,7 +141,7 @@ function toEvidenceSource(row: Record<string, unknown>): SearchEvidenceSource {
   };
 }
 
-/** The field path nameRecordJsonLoader gave a record's assertion. */
+/** The field path a hand-sourced name record's assertion was loaded under. */
 function nameFieldPath(nameType: string, nameText: string): string {
   return `names.${nameType}.${normalizeToKey(nameText)}`;
 }
