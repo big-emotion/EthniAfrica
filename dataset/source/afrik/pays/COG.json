@@ -24,6 +24,7 @@
               "to": null,
               "label": "Depuis le 25 octobre 2015"
             },
+            "era": "modern",
             "statement": "Le nom Congo est celui de la République du Congo, dont la Constitution du 25 octobre 2015 fait un État souverain et unitaire, avec Brazzaville pour capitale.",
             "aspect": "usage",
             "sources": [
@@ -45,6 +46,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Congo est celui du pays, du fleuve qui le borde et de l'ancien royaume Kongo, dont le fleuve tient son nom. D'où vient le mot Kongo lui-même n'est pas établi ; nous présentons plus bas l'explication du missionnaire W. Holman Bentley.",
             "aspect": "meaning",
             "sources": [
@@ -75,6 +77,7 @@
               "to": 1991,
               "label": "4 juin 1991"
             },
+            "era": "modern",
             "statement": "Le nom République du Congo redevient celui du pays le 4 juin 1991 : l'Acte fondamental adopté par la Conférence nationale dispose que « le nom du pays est République du Congo ».",
             "formAsWritten": "République du Congo",
             "sources": [
@@ -96,6 +99,7 @@
               "to": 1960,
               "label": "15 août 1960"
             },
+            "era": "modern",
             "statement": "Le nom République du Congo est celui de l'État qui proclame son indépendance le 15 août 1960, selon l'Office of the Historian.",
             "sources": [
               {
@@ -125,6 +129,7 @@
               "to": 1958,
               "label": "28 novembre 1958"
             },
+            "era": "colonial",
             "statement": "Le nom République du Congo est adopté le 28 novembre 1958 par l'Assemblée territoriale du Moyen-Congo, qui fait du territoire un État membre de la Communauté.",
             "formAsWritten": "République du Congo",
             "sources": [
@@ -146,6 +151,7 @@
               "to": 1508,
               "label": "Vers 1505-1508"
             },
+            "era": "polity",
             "statement": "Le nom Congo apparaît par écrit chez le navigateur portugais Duarte Pacheco Pereira, qui situe le « reino de Congo » en amont du fleuve et explique que « manicongo » veut dire « seigneur du Congo » dans la langue du pays. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait déjà avant lui.",
             "formAsWritten": "reino de Congo",
             "birth": true,
@@ -184,6 +190,7 @@
               "to": 1484,
               "label": "1483-1484"
             },
+            "era": "polity",
             "statement": "Le royaume du Kongo voit arriver les premiers navigateurs portugais en 1483, selon l'Histoire générale de l'Afrique. Duarte Pacheco Pereira date de 1484 le voyage de Diogo Cão jusqu'à l'embouchure du fleuve, et W. Holman Bentley aussi.",
             "before": true,
             "actors": [
@@ -231,6 +238,7 @@
               "to": 1400,
               "label": "Avant 1400, date inconnue"
             },
+            "era": "polity",
             "statement": "Le royaume du Kongo prend naissance dans la chefferie vungu, au nord du fleuve ; Nimi Lukeni fonde sa capitale, Mbanza Kongo, selon Jan Vansina. Sa date reste inconnue : certains auteurs la placent au plus tard vers 1400, au plus tôt un siècle avant.",
             "before": true,
             "sources": [
@@ -252,6 +260,7 @@
               "to": 1886,
               "label": "Proposée en 1886"
             },
+            "era": "colonial",
             "statement": "Le nom Congo viendrait de Kongo ou Ekongo, le nom de l'ancien royaume dont la capitale était Mbanza Ekongo ; le fleuve l'aurait pris au royaume, selon le missionnaire W. Holman Bentley, qui ajoute qu'on ne peut rien dire de sûr sur le sens du mot.",
             "hypothesisGroup": "origine du nom Congo",
             "sources": [
@@ -283,6 +292,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Congo-Brazzaville désigne couramment le pays, par le nom de sa capitale, pour le distinguer de son voisin, la République démocratique du Congo, que l'on appelle parfois Congo-Kinshasa, selon le Permanent Committee on Geographical Names.",
             "aspect": "usage",
             "sources": [
@@ -304,6 +314,7 @@
               "to": 1998,
               "label": "Écrit dans un ouvrage de 1998"
             },
+            "era": "modern",
             "statement": "Le nom Congo-Brazzaville est celui qu'emploie le tableau des indépendances de l'Histoire générale de l'Afrique, qui donne entre parenthèses le nom colonial, Moyen-Congo.",
             "formAsWritten": "Congo-Brazzaville",
             "sources": [
@@ -335,6 +346,7 @@
               "to": 1991,
               "label": "1991"
             },
+            "era": "modern",
             "statement": "Le nom République populaire du Congo est abandonné en 1991 : la Conférence nationale abolit la République populaire et l'Acte fondamental du 4 juin rend au pays le nom de République du Congo.",
             "sources": [
               {
@@ -355,6 +367,7 @@
               "to": 1969,
               "label": "31 décembre 1969"
             },
+            "era": "modern",
             "statement": "Le nom République populaire du Congo est proclamé par Marien Ngouabi, président de la République, le 31 décembre 1969, selon Jean-Pierre Maury.",
             "actors": [
               {
@@ -380,6 +393,7 @@
               "to": 1969,
               "label": "30 décembre 1969"
             },
+            "era": "modern",
             "statement": "Le nom République populaire du Congo figure en tête du titre premier de la Constitution du 30 décembre 1969. C'est la plus ancienne trace de ce nom que le projet connaît.",
             "formAsWritten": "La République populaire du Congo",
             "birth": true,
@@ -412,6 +426,7 @@
               "to": 1958,
               "label": "De 1910 à 1958"
             },
+            "era": "colonial",
             "statement": "Le nom Moyen-Congo désigne l'une des colonies de l'Afrique-Équatoriale française, avec le Gabon, l'Oubangui-Chari et le Tchad ; c'est l'actuel Congo, selon l'Histoire générale de l'Afrique.",
             "aspect": "usage",
             "sources": [
@@ -433,6 +448,7 @@
               "to": 1903,
               "label": "29 décembre 1903"
             },
+            "era": "colonial",
             "statement": "Le nom Moyen-Congo apparaît dans le décret du 29 décembre 1903, qui en fait une colonie ayant son autonomie administrative, distincte du Gabon. C'est la plus ancienne trace de ce nom que le projet connaît.",
             "formAsWritten": "Moyen-Congo",
             "birth": true,
@@ -465,6 +481,7 @@
               "to": 1886,
               "label": "27 avril 1886"
             },
+            "era": "colonial",
             "statement": "Le nom Congo français apparaît dans le décret du 27 avril 1886, qui nomme Pierre Savorgnan de Brazza commissaire général du Gouvernement dans le Congo français. Il désigne l'ensemble des possessions françaises de la région, dont le futur Moyen-Congo. C'est la plus ancienne trace de ce nom que le projet connaît.",
             "formAsWritten": "Congo français",
             "birth": true,

@@ -164,6 +164,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "« Le peuple igbo » — ndi signifie « les gens de » en igbo. Le sens premier du mot Igbo n'est pas connu ; plusieurs explications sont présentées plus bas.",
             "aspect": "meaning",
             "sources": [
@@ -194,6 +195,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Terme universellement préféré dans les contextes académiques, officiels et communautaires depuis l'indépendance du Nigeria.",
             "aspect": "usage",
             "sources": [
@@ -214,6 +216,7 @@
               "to": 1931,
               "label": "1931"
             },
+            "era": "colonial",
             "statement": "Le nom Igbo n'est alors accepté par aucun des peuples que les Européens appellent ainsi, ni pour se désigner, ni pour nommer leur langue, écrit l'administrateur colonial M. D. W. Jeffreys, cité par Dmitri van den Bersselaar.",
             "sources": [
               {
@@ -234,6 +237,7 @@
               "to": 1950,
               "label": "1950"
             },
+            "era": "colonial",
             "statement": "Le nom Igbo sert surtout à nommer la langue, puis les autres groupes de même langue, et ne s'emploie pour soi que devant un Européen, selon Daryll Forde et G. I. Jones, cités par Dmitri van den Bersselaar. Les Igbo n'ont adopté ce nom pour eux-mêmes et pour leur langue que récemment, ajoute-t-il.",
             "sources": [
               {
@@ -254,6 +258,7 @@
               "to": 1789,
               "label": "Récit publié en 1789"
             },
+            "era": "polity",
             "formAsWritten": "Oye-Eboe",
             "statement": "Le nom Igbo pourrait figurer dans Oye-Eboe, le nom qu'Olaudah Equiano donne aux marchands venus du sud-ouest, des « hommes rouges vivant au loin » selon lui. Dmitri van den Bersselaar se demande s'il faut y lire Onye Igbo, « gens igbo ».",
             "actors": [
@@ -375,6 +380,7 @@
               "to": 1972,
               "label": "Proposée en 1972"
             },
+            "era": "modern",
             "hypothesisGroup": "origine du nom Igbo",
             "statement": "Le nom Igbo voudrait dire d'abord « communauté de personnes », selon l'anthropologue M. A. Onwuejeogwu, qui a comparé les mots igbo où il entre, cité par Dmitri van den Bersselaar.",
             "sources": [
@@ -428,6 +434,7 @@
               "to": null,
               "label": "XIXe-XXe siècle"
             },
+            "era": "colonial",
             "statement": "Transcription simplifiée qui aplatit la prononciation tonale complexe du terme igbo ; imposée par l'administration coloniale britannique sans consultation des locuteurs natifs, elle a longtemps véhiculé une lecture externe et déformée de l'identité igbo.",
             "aspect": "imposition",
             "actors": [
@@ -492,6 +499,7 @@
               "to": 1789,
               "label": "Récit publié en 1789"
             },
+            "era": "polity",
             "formAsWritten": "Eboe",
             "statement": "Le nom Ibo est écrit « Eboe » par Olaudah Equiano, qui situe dans ce pays le village où il est né, selon Dmitri van den Bersselaar ; les planteurs des Antilles, écrit Equiano, préfèrent les esclaves de Benin ou d'Eboe.",
             "actors": [
@@ -529,6 +537,7 @@
               "to": 1800,
               "label": "Voyages de 1789 à 1800"
             },
+            "era": "polity",
             "formAsWritten": "Heebo",
             "statement": "Le nom Ibo est écrit « Heebo » par le capitaine négrier John Adams : au moins quatre esclaves sur cinq vendus chaque année à Bonny seraient de cette « nation », selon Dmitri van den Bersselaar.",
             "actors": [
@@ -556,6 +565,7 @@
               "to": 1777,
               "label": "Enquête de 1767-1768, livre publié en 1777"
             },
+            "era": "polity",
             "statement": "Le nom Ibo figure chez le missionnaire morave C. G. A. Oldendorp, qui interroge des esclaves nés en Afrique dans les Antilles danoises : les Ibo, écrit-il, sont un peuple nombreux qui occupe un pays très étendu à l'intérieur de l'Afrique.",
             "actors": [
               {
@@ -592,6 +602,7 @@
               "to": 1627,
               "label": "1627"
             },
+            "era": "polity",
             "birth": true,
             "statement": "Le nom Ibo figure en 1627 dans une liste des lieux d'origine d'esclaves dressée par Alonso de Sandoval, un prêtre espagnol de Carthagène des Indes, selon Dmitri van den Bersselaar. C'est la plus ancienne trace de ce nom que le projet connaît. Rien ne dit, note l'historien, que ce nom désignait alors le même ensemble qu'aujourd'hui.",
             "sources": [
@@ -613,6 +624,7 @@
               "to": 1505,
               "label": "Vers 1505"
             },
+            "era": "polity",
             "before": true,
             "statement": "On parle alors d'Opuu, chez le voyageur portugais Duarte Pacheco Pereira, pour un pays à cent lieues en amont du Rio Fermoso. Elizabeth Isichei et d'autres y voient les Igbo ; Dmitri van den Bersselaar juge les preuves insuffisantes.",
             "sources": [
@@ -646,6 +658,7 @@
               "to": null,
               "label": "Fin du XIXe siècle à la première moitié du XXe siècle"
             },
+            "era": "colonial",
             "statement": "Dialecte écrit standardisé, composite de plusieurs dialectes igbo, créé par les missionnaires anglicans pour la traduction de la Bible.",
             "aspect": "meaning",
             "sources": [
@@ -666,6 +679,7 @@
               "to": null,
               "label": "Fin XIXe siècle – première moitié du XXe siècle"
             },
+            "era": "colonial",
             "statement": "Le choix du dialecte de base a été contesté par une partie de la population igbo ; l'effort missionnaire, mené sur près d'un demi-siècle avant la première traduction complète de la Bible, n'a jamais fait de l'Union Ibo la langue courante du groupe — la population s'est montrée davantage intéressée par l'éducation en anglais que par cette langue vernaculaire de mission.",
             "aspect": "imposition",
             "actors": [

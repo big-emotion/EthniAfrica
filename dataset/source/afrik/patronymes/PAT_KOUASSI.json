@@ -120,6 +120,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Kouassi est un nom de jour : on le donne à un garçon d'après le jour de la semaine où il est né. Ce jour n'est pas le même dans toutes les langues où le nom est porté ; nous présentons les sources séparément.",
             "aspect": "meaning",
             "sources": [
@@ -161,6 +162,7 @@
               "to": 2005,
               "label": "Décrit en 2005"
             },
+            "era": "modern",
             "statement": "Le nom Kouassi est donné chez les Baoulé au garçon né le lundi, le jour appelé kissié, selon la thèse de Doh Clément Pagnet.",
             "sources": [
               {
@@ -181,6 +183,7 @@
               "to": 1900,
               "label": "Proposé en 1900"
             },
+            "era": "colonial",
             "statement": "Le nom Kouassi serait formé du nom du lundi, kesye en agni, précédé du préfixe Kwa que portent les noms de jour des garçons, selon Maurice Delafosse.",
             "sources": [
               {
@@ -201,6 +204,7 @@
               "to": 1900,
               "label": "1900"
             },
+            "era": "colonial",
             "statement": "Le nom Kouassi apparaît par écrit chez Maurice Delafosse, qui le donne comme le nom agni du garçon né le lundi. Il l'écrit Kwasi en agni et Kouassi en français. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
             "formAsWritten": "Kouassi",
             "birth": true,

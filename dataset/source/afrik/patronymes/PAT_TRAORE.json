@@ -338,6 +338,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Traoré est la graphie française de Tàrawéle, un nom de clan, ou jamu, des Bambara et des Malinké. Les dictionnaires consultés ne lui donnent pas de sens ; nous présentons plus bas la seule explication de son origine que nous connaissons.",
             "aspect": "meaning",
             "sources": [
@@ -368,6 +369,7 @@
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Traoré a des équivalents chez des peuples voisins : en pays wolof, un Traoré est reçu comme un frère par les Diop et peut prendre leur nom, selon Djibril Tamsir Niane.",
             "aspect": "usage",
             "sources": [
@@ -389,6 +391,7 @@
               "to": 1913,
               "label": "1913"
             },
+            "era": "colonial",
             "statement": "Le nom Traoré est écrit « Traoré » par Moussa Travélé, dans une plaisanterie que font les Traoré : « Kouloubali, Kouloubali » imite le galop du mauvais cheval, et « Traoré, Traoré, Traoré » celui du bon coureur.",
             "formAsWritten": "Traoré",
             "actors": [
@@ -416,6 +419,7 @@
               "to": 1892,
               "label": "Voyage de 1887-1889, récit publié en 1892"
             },
+            "era": "polity",
             "statement": "Le nom Traoré est écrit « Traouré » par Louis-Gustave Binger, qui décrit la population d'un village entre le Baoulé et la Bagoé comme « Bambara Traouré ». C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand des familles le portent.",
             "formAsWritten": "Traouré",
             "birth": true,
@@ -444,6 +448,7 @@
               "to": null,
               "label": "Avant l'empire du Mali, selon les traditions"
             },
+            "era": "polity",
             "statement": "Le nom Traoré est celui de chasseurs qui vivaient, avant l'empire du Mali, dans le pays de Kiri et surtout dans la province appelée plus tard Gangaran, au nord-ouest du Bouré. C'est ce que rapportent les écoles de tradition orale du Manding, selon Djibril Tamsir Niane.",
             "sources": [
               {
@@ -464,6 +469,7 @@
               "to": null,
               "label": "Avant la naissance de Soundiata, selon l'épopée"
             },
+            "era": "polity",
             "statement": "Le nom Traoré est celui de deux frères chasseurs, Oulamba et Oulani, qui rapportent du pays de Do une jeune fille et la donnent au roi du Manding. Le récit est celui du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri, transcrit par Djibril Tamsir Niane.",
             "actors": [
               {
@@ -490,6 +496,7 @@
               "to": null,
               "label": "Avant la naissance de Soundiata, selon l'épopée"
             },
+            "era": "polity",
             "statement": "Le nom Diabaté serait né d'une séparation d'avec le nom Traoré : quand le cadet tue le buffle de Do, l'aîné chante aussitôt sa gloire, et le cadet lui dit que, s'il était griot, personne ne lui résisterait. Les griots Diabaté restent ainsi frères des Traoré, selon la tradition que rapporte une note de Djibril Tamsir Niane.",
             "sources": [
               {
@@ -510,6 +517,7 @@
               "to": null,
               "label": "Avant la naissance de Soundiata, selon l'épopée"
             },
+            "era": "polity",
             "statement": "Le nom Traoré serait lié au nom Kondé par une parenté à plaisanterie née du même épisode : les gens de Do se moquèrent des chasseurs qui avaient choisi la laide Sogolon plutôt que les belles filles, selon une autre note de Djibril Tamsir Niane.",
             "sources": [
               {
@@ -530,6 +538,7 @@
               "to": null,
               "label": "Temps de Soundiata, selon les traditions"
             },
+            "era": "polity",
             "statement": "Le nom Traoré est celui de Tiramaghan Traoré, général de Soundiata dans l'épopée. Les Mandenka de l'Ouest le tiennent pour le fondateur du Kaabu, les griots du Kaabu chantent sa geste et il est donné comme l'ancêtre des Traoré, selon Djibril Tamsir Niane et Jan Jansen.",
             "actors": [
               {
@@ -566,6 +575,7 @@
               "to": null,
               "label": "Récit recueilli en 2017"
             },
+            "era": "modern",
             "statement": "Le nom Traoré appartiendrait à la même branche paternelle que le nom Mara : les deux auraient un ancêtre commun, Mansa Yurukara Nayni, et seraient de la même famille que les Sako et les Kouyaté. C'est ce que dit Babou Condé, griot de Fadama, dans la préfecture de Kouroussa en Guinée, selon le mémoire d'E. A. Bogacheva.",
             "actors": [
               {
@@ -631,6 +641,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Tarawele est la forme bambara et malinké du nom de clan que le français écrit Traoré. Le dictionnaire des noms de clan l'écrit Tàrawéle, avec les variantes Traore et Taraore, sans lui donner de sens.",
             "aspect": "meaning",
             "sources": [
@@ -651,6 +662,7 @@
               "to": 1906,
               "label": "1906"
             },
+            "era": "colonial",
             "statement": "Le nom Tarawele est écrit « Tarawélé » par Hippolyte Bazin, à l'article Dyamou, « nom de famille », qui le range parmi les plus nobles : « Kouroubali, Dyara, Dembélé ou Tarawélé, Soko, Koné ».",
             "formAsWritten": "Tarawélé",
             "actors": [
@@ -678,6 +690,7 @@
               "to": 1906,
               "label": "1906"
             },
+            "era": "colonial",
             "statement": "Le nom Tarawele est écrit « Taraouélé » par Hippolyte Bazin, qui le cite parmi les principaux noms de famille des Bambara, sous la forme « Dembélé ou Taraouélé ». C'est la plus ancienne trace écrite de cette forme que le projet connaît ; le clan qui la porte est plus ancien que ce dictionnaire.",
             "formAsWritten": "Taraouélé",
             "birth": true,

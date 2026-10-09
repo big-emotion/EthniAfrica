@@ -24,6 +24,7 @@
               "to": null,
               "label": "Depuis le 9 juillet 2011"
             },
+            "era": "modern",
             "statement": "Le nom Soudan désigne depuis 2011 un pays plus petit : le 9 juillet, le Soudan du Sud proclame son indépendance, après un référendum tenu en janvier, selon l'Office of the Historian.",
             "sources": [
               {
@@ -43,6 +44,7 @@
               "to": null,
               "label": "Depuis le 1er janvier 1956"
             },
+            "era": "modern",
             "statement": "Le nom Soudan est celui de la République du Soudan, que les États-Unis reconnaissent le 1er janvier 1956. Le pays relevait auparavant d'un condominium anglo-égyptien, selon l'Office of the Historian.",
             "aspect": "usage",
             "sources": [
@@ -72,6 +74,7 @@
               "to": null,
               "label": "Moyen Âge, dans les sources arabes"
             },
+            "era": "polity",
             "statement": "Le nom Soudan reprend le mot arabe as-sudan, pluriel d'al-aswad, « noir ». Les sources arabes du Moyen Âge l'appliquent à toutes les personnes de peau noire, puis aux Africains noirs qui vivent au sud du Maghreb, dans le Bilad al-sudan, le « pays des Noirs », selon Y. Talib.",
             "aspect": "meaning",
             "sources": [
@@ -93,6 +96,7 @@
               "to": null,
               "label": "Usage des historiens, décrit au présent"
             },
+            "era": "modern",
             "statement": "Le nom Soudan désigne aussi, chez les historiens, une large bande de l'Afrique au sud du Sahara : les bassins du Sénégal, du Niger et du Tchad, et une partie des savanes et des forêts plus au sud. C'est l'ancien « pays des Noirs » des auteurs arabes, selon F. de Medeiros.",
             "sources": [
               {
@@ -113,6 +117,7 @@
               "to": 899,
               "label": "IXe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Soudan figure, sous la forme al-Sudan, dans le titre d'un livre d'al-Djahiz où cet auteur arabe défend les Noirs contre leurs détracteurs, selon Y. Talib. C'est la plus ancienne trace de ce nom que le projet connaît. Le mot désigne alors des personnes, pas encore un pays.",
             "formAsWritten": "Kitab fakhr al-Sudan 'ala' l-Bidan",
             "birth": true,
@@ -145,6 +150,7 @@
               "to": 1956,
               "label": "1899-1956"
             },
+            "era": "colonial",
             "statement": "Le nom Soudan anglo-égyptien désigne le pays au temps du condominium : en 1899, sous la pression britannique, l'Égypte accepte de partager avec le Royaume-Uni la souveraineté sur le Soudan, selon l'article anglais de Wikipédia sur le Soudan. B. O. Oloruntimehin emploie ce nom pour l'entre-deux-guerres, et H. A. Ibrahim fait de l'accord du condominium le cadre de l'administration du pays.",
             "aspect": "usage",
             "sources": [
@@ -195,6 +201,7 @@
               "to": 1985,
               "label": "Du 25 mai 1969 au 6 avril 1985"
             },
+            "era": "modern",
             "statement": "Le nom République démocratique du Soudan est celui de l'État du 25 mai 1969 au 6 avril 1985, date à laquelle il redevient la République du Soudan, selon l'article anglais de Wikipédia sur le Soudan.",
             "aspect": "usage",
             "sources": [

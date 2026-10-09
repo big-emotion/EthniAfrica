@@ -24,6 +24,7 @@
               "to": null,
               "label": "Depuis le 2 décembre 1975"
             },
+            "era": "modern",
             "statement": "Le nom Bénin est celui de l'État depuis l'ordonnance n° 75-80 du 2 décembre 1975 « portant dénomination de l'État », qui suit un discours du 30 novembre. Le pays s'appelait jusque-là Dahomey, selon les Nations unies.",
             "aspect": "usage",
             "sources": [
@@ -62,6 +63,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Bénin désigne depuis 1975 un pays d'Afrique de l'Ouest, appelé auparavant Dahomey. Il reprend le nom d'un ancien royaume situé dans l'actuel Nigeria, dont les habitants se nomment eux-mêmes Edo. L'origine du mot Bénin est discutée.",
             "aspect": "meaning",
             "sources": [
@@ -92,6 +94,7 @@
               "to": 1975,
               "label": "1975"
             },
+            "era": "modern",
             "statement": "Le nom Bénin aurait été choisi pour marquer une rupture à la fois avec l'influence coloniale et avec la mémoire du royaume d'Abomey, dans une lutte que le pouvoir disait antiféodale, selon Camilla Strandsbjerg.",
             "actors": [
               {
@@ -118,6 +121,7 @@
               "to": 1599,
               "label": "XVe et XVIe siècles"
             },
+            "era": "polity",
             "statement": "Le nom Bénin apparaît sous la forme Beny dans les récits des explorateurs et marchands portugais, où il désigne le territoire et la capitale du roi de Benin, selon Osarhieme Benson Osadolor. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume, lui, existait avant elle sous d'autres noms.",
             "formAsWritten": "Beny",
             "birth": true,
@@ -140,6 +144,7 @@
               "to": 1299,
               "label": "Milieu du XIIIe siècle, selon la tradition"
             },
+            "era": "polity",
             "statement": "On appelle alors le royaume Ubini : l'oba Ewedo exige qu'il reprenne ce nom, tenu pour son nom d'origine, selon la tradition de Benin rapportée par Osarhieme Benson Osadolor.",
             "before": true,
             "sources": [
@@ -161,6 +166,7 @@
               "to": 1000,
               "label": "Ier millénaire, selon la tradition"
             },
+            "era": "polity",
             "statement": "On parle d'Igodomigodo, « le pays d'Igodo », pour désigner les villages réunis sous le premier roi de la dynastie des Ogiso, selon la tradition de Benin rapportée par Osarhieme Benson Osadolor.",
             "before": true,
             "sources": [
@@ -235,6 +241,7 @@
               "to": 1975,
               "label": "1960-1975"
             },
+            "era": "modern",
             "statement": "Le nom Dahomey est celui de la République du Dahomey, indépendante le 1er août 1960, selon l'Office of the Historian. Il reste le nom du pays jusqu'au 2 décembre 1975, selon les Nations unies.",
             "aspect": "usage",
             "sources": [
@@ -264,6 +271,7 @@
               "to": null,
               "label": "Usage décrit au XIXe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Dahomey transcrit le fon Danxomè, le nom de l'ancien royaume dont Abomey était la capitale. Il s'applique d'abord à l'ancien palais, puis à la capitale, puis au royaume entier, selon Richard Burton. Son origine est discutée.",
             "aspect": "meaning",
             "sources": [
@@ -295,6 +303,7 @@
               "to": 1734,
               "label": "Récit publié en 1734"
             },
+            "era": "polity",
             "statement": "Le nom Dahomey est écrit Dahomè par le capitaine anglais William Snelgrave, qui raconte la conquête du royaume de Ouidah par le « roi de Dahomè ». C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand le royaume le porte.",
             "formAsWritten": "Dahomè",
             "birth": true,
@@ -317,6 +326,7 @@
               "to": null,
               "label": "Avant le royaume, selon les récits européens"
             },
+            "era": "polity",
             "statement": "On parle alors des Foys, avec pour capitale Dawhee, pour désigner le peuple d'où sortiront les rois du Dahomey, selon Robert Norris. Richard Burton y reconnaît Ffon, l'ancien nom de ce peuple et de sa langue.",
             "before": true,
             "sources": [
@@ -348,6 +358,7 @@
               "to": 1864,
               "label": "Rapportée de 1789 à 1864"
             },
+            "era": "polity",
             "statement": "Le nom Dahomey viendrait d'une maison bâtie « dans le ventre de Da » : un chef fon aurait tué Da, roi d'Abomey, et bâti un palais sur son corps, selon Robert Norris en 1789 et Archibald Dalzel en 1793. Richard Burton rapporte le même récit en 1864, mais écrit qu'il pourrait être né du nom plutôt que l'inverse, car un récit presque identique explique un autre nom, Agri-go-men.",
             "hypothesisGroup": "origine du nom Dahomey",
             "sources": [
@@ -389,6 +400,7 @@
               "to": 2019,
               "label": "Glose publiée en 2019"
             },
+            "era": "modern",
             "statement": "Le nom Dahomey, Danxomè en fon, voudrait dire « dans le ventre du serpent », selon Midjèou Béranger Avohouémè Togbé et Lambert Roch Mongbo. Richard Burton notait déjà que Danh, le nom du roi tué dans le récit, désigne le serpent ou l'arc-en-ciel.",
             "hypothesisGroup": "origine du nom Dahomey",
             "sources": [
@@ -420,6 +432,7 @@
               "to": 1793,
               "label": "Proposée en 1793"
             },
+            "era": "polity",
             "statement": "Le nom Dahomey serait une forme à peine modifiée de Dauma, un royaume que des cartes européennes placent dans la même région depuis la fin du XVIe siècle, selon la préface de l'histoire du Dahomey d'Archibald Dalzel. Richard Burton rejette ce rapprochement.",
             "hypothesisGroup": "origine du nom Dahomey",
             "sources": [

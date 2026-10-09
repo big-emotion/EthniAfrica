@@ -24,6 +24,7 @@
               "to": null,
               "label": "Depuis octobre 1985"
             },
+            "era": "modern",
             "statement": "Le nom Côte d'Ivoire est le nom propre du pays et ne doit plus être traduit : c'est la décision du congrès du Parti démocratique de Côte d'Ivoire réuni à Abidjan en octobre 1985. Le représentant du pays à l'ONU demande qu'elle s'applique à partir du 1er janvier 1986, selon une note verbale publiée par l'ONU.",
             "aspect": "usage",
             "sources": [
@@ -44,6 +45,7 @@
               "to": 1960,
               "label": "7 août 1960"
             },
+            "era": "modern",
             "statement": "Le nom Côte d'Ivoire reste celui du pays à l'indépendance, proclamée le 7 août 1960, selon la Digithèque de l'université de Perpignan.",
             "sources": [
               {
@@ -63,6 +65,7 @@
               "to": 1893,
               "label": "10 mars 1893"
             },
+            "era": "colonial",
             "statement": "Le nom Côte d'Ivoire devient celui d'une colonie distincte par le décret du 10 mars 1893, qui organise côte à côte la Guinée française, la Côte d'Ivoire et le Bénin, selon la Digithèque de l'université de Perpignan et les Archives nationales d'outre-mer.",
             "sources": [
               {
@@ -91,6 +94,7 @@
               "to": 1891,
               "label": "1891"
             },
+            "era": "colonial",
             "statement": "Le nom Côte d'Ivoire remplace en 1891 celui d'Établissements français de la Côte d'Or, pour éviter la confusion avec la Gold Coast anglaise voisine, selon la Digithèque de l'université de Perpignan. Le décret du 17 décembre 1891 range pourtant ces possessions sous le nom de Guinée française et dépendances, selon les Archives nationales d'outre-mer.",
             "sources": [
               {
@@ -119,6 +123,7 @@
               "to": 1843,
               "label": "1842-1843"
             },
+            "era": "colonial",
             "statement": "Le nom Côte d'Ivoire ne figure pas dans les traités conclus avec le roi Peter de Grand-Bassam en 1842 et avec les chefs d'Assinie en 1843 : ils parlent du « pays et de la rivière du Grand-Bassam » et du « pays d'Assinie ». Le nom existait déjà pour ce littoral, écrit en anglais dès 1670 dans l'Africa de John Ogilby.",
             "actors": [
               {
@@ -162,6 +167,7 @@
               "to": 1670,
               "label": "1670"
             },
+            "era": "polity",
             "statement": "Le nom Côte d'Ivoire apparaît par écrit, en anglais, dans l'Africa de John Ogilby, adaptée de la description de l'Afrique d'Olfert Dapper : l'« Ivory-Coast » va du village de Gruwa, près du cap des Palmes, au cap Lahou. C'est la plus ancienne trace de ce nom que le projet connaît. Cette côte et ses habitants existaient bien avant ce nom.",
             "formAsWritten": "Ivory-Coast",
             "birth": true,
@@ -190,6 +196,7 @@
               "to": 1650,
               "label": "Début du XVIIe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Côte d'Ivoire viendrait de Tand Kust, la « côte des dents », sous-entendu d'éléphant : c'est ainsi que les marchands hollandais auraient appelé la côte du cap des Palmes à Fresco, où ils trouvaient l'ivoire en abondance, selon Alfred Schwartz.",
             "hypothesisGroup": "origine du nom Côte d'Ivoire",
             "sources": [
@@ -242,6 +249,7 @@
               "to": 1668,
               "label": "1668"
             },
+            "era": "polity",
             "statement": "Avant le nom Côte d'Ivoire, on parle de Tantkust, la côte de la dent d'éléphant, pour désigner le littoral qui va du village de Gruwa, près du cap des Palmes, au cap Lahou, selon Olfert Dapper.",
             "before": true,
             "sources": [
@@ -263,6 +271,7 @@
               "to": 1506,
               "label": "Fin du XVe siècle"
             },
+            "era": "polity",
             "statement": "Avant le nom Côte d'Ivoire, les navigateurs portugais parlent de Costa de Malagens, la « côte des mauvaises gens », pour désigner la côte de part et d'autre du cap des Palmes, selon Alfred Schwartz.",
             "before": true,
             "sources": [
@@ -294,6 +303,7 @@
               "to": 1704,
               "label": "1704"
             },
+            "era": "polity",
             "statement": "Le nom Côte des Dents est écrit « Tand-Kust » par Willem Bosman dans le titre de son livre sur la Guinée, à côté de la Côte de l'Or et de la Côte des Esclaves. La traduction anglaise du même livre rend ce nom par « Ivory Coasts ».",
             "formAsWritten": "Tand-Kust",
             "actors": [
@@ -331,6 +341,7 @@
               "to": 1670,
               "label": "1670"
             },
+            "era": "polity",
             "statement": "Le nom Côte des Dents est écrit « Tooth-Coast » par John Ogilby, qui l'explique ainsi : on n'y trouve presque pas d'autre marchandise que des dents d'éléphant.",
             "formAsWritten": "Tooth-Coast",
             "aspect": "meaning",
@@ -359,6 +370,7 @@
               "to": 1668,
               "label": "1668"
             },
+            "era": "polity",
             "statement": "Le nom Côte des Dents apparaît par écrit chez Olfert Dapper, sous la forme « d'Olifants-tant, of by verkorting de Tantkust », la côte de la dent d'éléphant ou, en plus court, la Tantkust. C'est la plus ancienne trace de ce nom que le projet connaît. Le littoral qu'il désigne, du village de Gruwa au cap Lahou, était habité bien avant lui.",
             "formAsWritten": "Tantkust",
             "birth": true,
@@ -387,6 +399,7 @@
               "to": 1650,
               "label": "Début du XVIIe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Côte des Dents viendrait des marchands hollandais, qui auraient appelé Tand Kust la côte du cap des Palmes à Fresco pour l'ivoire qu'ils y trouvaient en abondance, selon Alfred Schwartz.",
             "hypothesisGroup": "origine du nom Côte des Dents",
             "sources": [
@@ -418,6 +431,7 @@
               "to": 1670,
               "label": "1670"
             },
+            "era": "polity",
             "statement": "Le nom Costa de Malagens est écrit « Mala Gens » par John Ogilby, qui le traduit par « Bad People, that is, Villanous », les mauvaises gens.",
             "formAsWritten": "Mala Gens",
             "actors": [
@@ -445,6 +459,7 @@
               "to": 1668,
               "label": "1668"
             },
+            "era": "polity",
             "statement": "Le nom Costa de Malagens est écrit « kust van Mala gens » par Olfert Dapper, qui le traduit par « het quade volk », les mauvaises gens, et le donne comme un autre nom de la Tantkust.",
             "formAsWritten": "kust van Mala gens",
             "actors": [
@@ -472,6 +487,7 @@
               "to": 1506,
               "label": "Vers 1506"
             },
+            "era": "polity",
             "statement": "Le nom Costa de Malagens figure dans l'Esmeraldo de situ orbis, le routier du capitaine portugais Duarte Pacheco Pereira, qui en raconte l'origine, selon Alfred Schwartz. C'est la plus ancienne trace de ce nom que le projet connaît. Les habitants de cette côte y vivaient bien avant ce nom venu de la mer.",
             "birth": true,
             "actors": [
@@ -499,6 +515,7 @@
               "to": 1476,
               "label": "1475-1476"
             },
+            "era": "polity",
             "statement": "Le nom Costa de Malagens viendrait du naufrage d'un navire flamand à l'ouest du cap des Palmes en 1475 : l'équipage aurait été massacré, et les Portugais l'auraient appris l'année suivante, selon le récit de Pacheco Pereira. Alfred Schwartz, qui le rapporte, ne tranche pas s'il est vrai.",
             "hypothesisGroup": "origine du nom Costa de Malagens",
             "sources": [
@@ -551,6 +568,7 @@
               "to": 1702,
               "label": "Lettre du 2 janvier 1702"
             },
+            "era": "polity",
             "statement": "Le nom Côte de Quaqua n'est pas celui que se donnent les habitants : ils appellent leur pays Adouw et se nomment eux-mêmes Adouwse, écrit Jan Snoek. Lui et ses compagnons les appellent Quaquase, d'après leurs cartes.",
             "actors": [
               {
@@ -587,6 +605,7 @@
               "to": 1668,
               "label": "1668"
             },
+            "era": "polity",
             "statement": "Le nom Côte de Quaqua est écrit « Quaqua-kust » par Olfert Dapper, parmi les côtes qui composent la Guinée ; elle commence au cap Lahou. C'est la plus ancienne trace de ce nom que le projet connaît. Cette côte et ses habitants existaient avant ce nom.",
             "formAsWritten": "Quaqua-kust",
             "birth": true,
@@ -718,6 +737,7 @@
               "to": 1891,
               "label": "De 1843 à 1891"
             },
+            "era": "colonial",
             "statement": "Le nom Établissements français de la Côte d'Or désigne les comptoirs français de Grand-Bassam et d'Assinie, nés des traités de 1842 et 1843. Il reprend le nom de la Côte de l'Or voisine, la Gold Coast anglaise qui deviendra le Ghana, selon la Digithèque de l'université de Perpignan.",
             "aspect": "usage",
             "sources": [
@@ -738,6 +758,7 @@
               "to": 1889,
               "label": "1er août 1889"
             },
+            "era": "colonial",
             "statement": "Le nom Établissements français de la Côte d'Or figure dans le décret du 1er août 1889, qui organise ces comptoirs avec les Rivières du Sud et les établissements du golfe du Bénin, selon la Digithèque de l'université de Perpignan.",
             "sources": [
               {

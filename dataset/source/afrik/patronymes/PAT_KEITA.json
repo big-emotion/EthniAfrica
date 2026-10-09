@@ -392,6 +392,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Keïta désigne un clan malinké, celui auquel l'épopée de Soundiata rattache son héros. Le dictionnaire des noms de clan mandingues l'écrit Kéyità, avec les formes Kétà et Kɛ́yità, et ne lui donne pas de sens ; son origine reste discutée.",
             "aspect": "meaning",
             "sources": [
@@ -524,6 +525,7 @@
               "to": 1912,
               "label": "Rapportée en 1912"
             },
+            "era": "colonial",
             "statement": "Le nom Keïta serait la forme abrégée du nom des descendants d'un roi du Mali surnommé Allakoï, parce qu'il répondait « Alla koï », « Dieu, certes », à toute question sur la cause d'un événement, selon des traditions que rapporte Maurice Delafosse en 1912.",
             "hypothesisGroup": "origine du nom Keïta",
             "sources": [

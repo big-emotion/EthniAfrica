@@ -195,6 +195,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "aspect": "meaning",
             "statement": "Le nom Kongo désigne un ancien royaume d'Afrique centrale et sa langue. Il désigne aussi les peuples qui parlent des formes de cette langue, du sud du Gabon au plateau de Benguela, en Angola, selon Jan Vansina. Personne ne sait avec certitude d'où vient ce nom : le missionnaire William Holman Bentley l'écrivait déjà en 1887. Les explications proposées sont présentées plus bas.",
             "sources": [
@@ -226,6 +227,7 @@
               "to": 1887,
               "label": "Livre publié en 1887"
             },
+            "era": "colonial",
             "formAsWritten": "Kongo or Ekongo",
             "statement": "Le nom Kongo est écrit « Kongo or Ekongo » par William Holman Bentley, qui en fait le nom d'un ancien royaume dont la capitale s'appelle Mbanza Ekongo.",
             "actors": [
@@ -253,6 +255,7 @@
               "to": 1490,
               "label": "13 octobre 1490"
             },
+            "era": "polity",
             "birth": true,
             "formAsWritten": "Manjcongo",
             "statement": "Le nom Kongo est écrit Manjcongo dans un ordre du roi Jean II de Portugal, daté de Lisbonne le 13 octobre 1490 : il fait livrer du biscuit à une caravelle de la flotte que le roi prépare pour Manjcongo, selon l'édition d'António Brásio. La forme joint au nom Kongo le titre mani, « seigneur », que relève Jan Vansina. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; le royaume existait déjà avant elle.",
@@ -285,6 +288,7 @@
               "to": 1400,
               "label": "Avant 1400 environ, date inconnue"
             },
+            "era": "polity",
             "before": true,
             "statement": "Vungu est alors une chefferie au nord du fleuve Congo. C'est là que commence le royaume que les écrits nommeront plus tard Kongo, selon Jan Vansina. Les historiens n'en connaissent pas la date : certains placent sa fondation vers 1400 au plus tard.",
             "sources": [
@@ -386,6 +390,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "aspect": "usage",
             "statement": "Le nom Bakongo réunit le préfixe ba-, qui marque en kikongo le pluriel des noms de personnes, et le nom Kongo ; une seule personne se dit Mukongo. C'est le nom qui prévaut aujourd'hui, surtout depuis le début du XXe siècle, selon les articles de Wikipédia.",
             "sources": [
@@ -512,6 +517,7 @@
               "to": 1887,
               "label": "Livre publié en 1887"
             },
+            "era": "colonial",
             "formAsWritten": "Mwixi-Kongo, pl. Exi-Kongo",
             "statement": "Le nom Esikongo est écrit « Mwixi-Kongo, pl. Exi-Kongo » par William Holman Bentley.",
             "actors": [
@@ -539,6 +545,7 @@
               "to": 1591,
               "label": "Livre publié en 1591"
             },
+            "era": "polity",
             "birth": true,
             "formAsWritten": "Mociconghi",
             "statement": "Le nom Esikongo est écrit Mociconghi par Filippo Pigafetta, d'après les récits du Portugais Duarte Lopes : c'est ainsi, écrit-il, que se nomment les gens nés au royaume de Congo. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
@@ -589,6 +596,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "aspect": "usage",
             "statement": "Le nom Congo est la graphie du nom Kongo dans les textes européens. En 1887, William Holman Bentley lui préfère Kongo, plus proche de la prononciation, tout en notant que la graphie en C est trop installée pour disparaître.",
             "sources": [
@@ -610,6 +618,7 @@
               "to": 1591,
               "label": "Livre publié en 1591"
             },
+            "era": "polity",
             "formAsWritten": "Congo",
             "statement": "Le nom Congo figure dans le titre du livre de Filippo Pigafetta, Relatione del reame di Congo, paru à Rome en 1591.",
             "actors": [

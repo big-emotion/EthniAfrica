@@ -173,6 +173,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Terme universel dans les contextes académiques, officiels et communautaires en Afrique de l'Ouest et dans la diaspora.",
             "aspect": "usage",
             "sources": [
@@ -204,6 +205,7 @@
               "to": null,
               "label": "XIXe-XXe siècle"
             },
+            "era": "colonial",
             "statement": "Terme employé par l'administration coloniale française pour désigner les Yoruba du Dahomey (actuel Bénin) et du Togo ; perçu comme réducteur par les communautés concernées.",
             "aspect": "imposition",
             "actors": [

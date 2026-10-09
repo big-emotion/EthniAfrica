@@ -206,6 +206,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Zarma est la forme que les Zarma emploient dans leur langue. Ils appellent Zarmaganda, « terre des Zarma », leur terre d'élection, et Zarmataray, « pays des Zarma », les terres où ils se sont étendus, selon Sandra Bornand.",
             "aspect": "usage",
             "sources": [
@@ -263,6 +264,7 @@
               "to": 1858,
               "label": "Voyage de 1853 (récit publié en 1858)"
             },
+            "era": "polity",
             "birth": true,
             "formAsWritten": "Zaberma, or Zerma",
             "statement": "Le nom Zarma est écrit « Zaberma, or Zerma » par Heinrich Barth, qui le donne à une province bordée par le Niger. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand le peuple l'emploie.",
@@ -323,6 +325,7 @@
               "to": 1946,
               "label": "1946"
             },
+            "era": "colonial",
             "birth": true,
             "formAsWritten": "Djerma",
             "statement": "Le nom Djerma figure dans le titre d'un travail de René Dutel paru en 1946, « L'animisme des populations islamisées du Moyen Niger (Songhay et Djerma) », que cite Jean Rouch. C'est la plus ancienne trace de cette écriture que le projet connaît ; Heinrich Barth écrivait déjà Jerma en 1858.",
@@ -394,6 +397,7 @@
               "to": 2010,
               "label": "Article de 2010"
             },
+            "era": "modern",
             "formAsWritten": "Zabrama",
             "statement": "Le nom Zabarma est écrit « Zabrama » par Monique Bertrand, qui étudie les migrants nigériens du Grand Accra ; un quartier d'Accra s'y appelle Zabrama Line.",
             "actors": [
@@ -421,6 +425,7 @@
               "to": 1858,
               "label": "Voyage de 1853 (récit publié en 1858)"
             },
+            "era": "polity",
             "birth": true,
             "formAsWritten": "Zaberma",
             "statement": "Le nom Zabarma est écrit « Zaberma » par Heinrich Barth, pour la province que l'on appelle aussi, écrit-il, Zerma. C'est la plus ancienne trace de cette forme que le projet connaît.",

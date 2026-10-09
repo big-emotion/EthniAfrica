@@ -23,6 +23,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Ajamat est celui que ce peuple se donne dans sa langue, Ajamataw au pluriel, selon Wikipédia. Un autre article de Wikipédia note qu'aucun nom propre n'est employé par tous ceux qui parlent ces langues.",
             "aspect": "usage",
             "sources": [
@@ -64,6 +65,7 @@
               "to": null,
               "label": "Usage décrit par les auteurs"
             },
+            "era": "modern",
             "statement": "Le nom Diola, ou Joola, désigne des riziculteurs de basse Casamance et du Rio Cacheu. Il réunit des groupes dont les parlers ne se comprennent pas toujours entre eux : Floup, Bayot, Blis-Kaniara, Kassa et Fooni, selon C. Wondji. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
             "aspect": "meaning",
             "sources": [
@@ -95,6 +97,7 @@
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Joola s'écrit de bien des façons, Diola, Dyola, Jola ou Djola, comme le note Yves Person à propos des Joola du Fonyi.",
             "aspect": "usage",
             "sources": [
@@ -116,6 +119,7 @@
               "to": 1856,
               "label": "1856"
             },
+            "era": "polity",
             "statement": "Le nom Diola est, selon le voyageur Anne Raffenel, celui que des Africains donnent au peuple qu'il appelle lui-même Zolas.",
             "sources": [
               {
@@ -136,6 +140,7 @@
               "to": 1856,
               "label": "1856"
             },
+            "era": "polity",
             "statement": "Le nom Diola apparaît par écrit chez le voyageur français Anne Raffenel, qui parle du « pays des Diolas » au bord de la Casamance. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
             "formAsWritten": "pays des Diolas",
             "birth": true,
@@ -158,6 +163,7 @@
               "to": 1854,
               "label": "1854"
             },
+            "era": "polity",
             "statement": "Le nom Joola sert aussi pour un peuple voisin : en 1854, Sigismund Koelle note que les gens du Kaabu appellent les Biafada Dsọ̄́la, et Yves Person écrit que les Beafada se disent eux-mêmes Joola. Les sources ne disent pas si ce nom est le même que celui des Diola.",
             "sources": [
               {
@@ -198,6 +204,7 @@
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Floup, ou Felup, désigne l'un des groupes que réunit le nom Diola, selon C. Wondji.",
             "aspect": "usage",
             "sources": [
@@ -219,6 +226,7 @@
               "to": 1596,
               "label": "Manuscrits de 1592-1596"
             },
+            "era": "polity",
             "statement": "Le nom Floup apparaît, écrit « Felupes », chez le Cap-Verdien André Álvares de Almada, selon José da Silva Horta. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
             "formAsWritten": "Felupes",
             "birth": true,

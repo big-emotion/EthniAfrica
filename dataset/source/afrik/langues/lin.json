@@ -43,6 +43,7 @@
               "to": null,
               "label": "Depuis 2006"
             },
+            "era": "modern",
             "statement": "Le lingala est l'une des quatre langues nationales de la République démocratique du Congo, avec le kikongo, le swahili et le tshiluba, selon l'article 1 de sa Constitution.",
             "aspect": "usage",
             "sources": [
@@ -63,6 +64,7 @@
               "to": 1904,
               "label": "1904"
             },
+            "era": "colonial",
             "statement": "Le nom lingala figure dans le titre de la grammaire que publie le père De Boeck, missionnaire de Scheut à Nouvelle-Anvers. Il y écrit que les Européens disent « Bangala », que « les noirs » disent « Lingala », et qu'il emploiera ce second nom.",
             "formAsWritten": "Lingala",
             "actors": [
@@ -90,6 +92,7 @@
               "to": 1902,
               "label": "1902"
             },
+            "era": "colonial",
             "statement": "Le nom lingala apparaît par écrit en 1902 : Michael Meeuwis n'en trouve aucune trace plus ancienne. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
             "birth": true,
             "sources": [
@@ -111,6 +114,7 @@
               "to": 1902,
               "label": "1901-1902"
             },
+            "era": "colonial",
             "statement": "Le nom lingala aurait été choisi par les missionnaires de Scheut de Nouvelle-Anvers pour remplacer « Bangala » : dans plusieurs langues de la région, le préfixe ba- marque un nom de peuple, pas un nom de langue, selon Michael Meeuwis.",
             "hypothesisGroup": "origine du nom lingala",
             "sources": [
@@ -195,6 +199,7 @@
               "to": 1882,
               "label": "Jusqu'aux années 1880"
             },
+            "era": "polity",
             "statement": "Le bobangi est alors la langue de commerce des riverains du fleuve Congo. Les Européens arrivés en 1881-1882 l'apprennent mal et le simplifient ; ce parler donnera plus tard ce qu'on appelle lingala, selon Michael Meeuwis.",
             "before": true,
             "sources": [
@@ -216,6 +221,7 @@
               "to": 1882,
               "label": "Vers 1882"
             },
+            "era": "polity",
             "statement": "Le nom mangala désigne déjà ce parler du fleuve quand l'Anglais Harry Johnston remonte le Congo, vers 1882, selon Mpoke Mimpongo, pour qui c'est le plus ancien nom de la langue.",
             "before": true,
             "sources": [
@@ -237,6 +243,7 @@
               "to": 1901,
               "label": "De 1884-1885 à 1901"
             },
+            "era": "colonial",
             "statement": "Le nom Bangala est donné à ce parler après 1884-1885, quand il est porté à Bangala Station, un poste de l'État sur le fleuve, selon Michael Meeuwis. Le père De Boeck écrit qu'on l'appelait aussi « la langue du fleuve » ou « la langue commerciale ».",
             "before": true,
             "sources": [
@@ -268,6 +275,7 @@
               "to": 1888,
               "label": "Années 1880"
             },
+            "era": "colonial",
             "statement": "Le nom kibangi est employé par des Européens venus de la côte atlantique, sur le modèle du kikongo, où le préfixe ki- marque un nom de langue, selon Mpoke Mimpongo.",
             "before": true,
             "sources": [
@@ -300,6 +308,7 @@
               "to": null,
               "label": "Aujourd'hui"
             },
+            "era": "modern",
             "statement": "Le nom Bangala reste employé dans le nord-est du Congo pour une variété de la langue, là où l'influence des missionnaires de Scheut était moindre, selon Michael Meeuwis.",
             "aspect": "usage",
             "sources": [
@@ -321,6 +330,7 @@
               "to": 1885,
               "label": "1884-1885"
             },
+            "era": "colonial",
             "statement": "Le nom Bangala est d'abord celui d'un poste de l'État, Bangala Station, nommé d'après des habitants qu'on croyait appeler ainsi ; le parler du poste reçoit ce nom, selon Michael Meeuwis. Le poste devient Nouvelle-Anvers en 1890, aujourd'hui Mankanza. C'est la plus ancienne trace de ce nom de langue que le projet connaît ; le parler lui-même est plus ancien.",
             "birth": true,
             "sources": [
@@ -342,6 +352,7 @@
               "to": 1884,
               "label": "Avant l'arrivée des Européens"
             },
+            "era": "polity",
             "statement": "Le nom Bangala, « ou plus exactement Mangala », désignait déjà avant l'arrivée des Européens le peuple des rives du fleuve en aval de Nouvelle-Anvers, selon le père De Boeck.",
             "hypothesisGroup": "Bangala, nom d'un peuple ?",
             "sources": [
@@ -363,6 +374,7 @@
               "to": 1884,
               "label": "Avant l'arrivée des Européens"
             },
+            "era": "polity",
             "statement": "Le nom Bangala serait un nom que les Européens ont cru entendre : les habitants de la région n'auraient pas porté ce nom, selon Michael Meeuwis, et aucun peuple Bangala n'aurait existé, selon Mpoke Mimpongo.",
             "hypothesisGroup": "Bangala, nom d'un peuple ?",
             "sources": [
@@ -405,6 +417,7 @@
               "to": null,
               "label": "Aujourd'hui"
             },
+            "era": "modern",
             "statement": "Le nom mangala reste celui que beaucoup de locuteurs préfèrent, surtout dans le nord des deux Congo et le sud de la Centrafrique, selon Mpoke Mimpongo, qui cite dans le même sens Tanghe (1930) et Guthrie (1939, 1943).",
             "aspect": "usage",
             "sources": [
@@ -447,6 +460,7 @@
               "to": 1882,
               "label": "Vers 1882"
             },
+            "era": "polity",
             "statement": "Le nom mangala est connu de l'Anglais Harry Johnston vers 1882, quand il remonte le fleuve Congo, selon Mpoke Mimpongo. C'est la plus ancienne trace de ce nom que le projet connaît. Le parler qu'il désigne est plus ancien que lui.",
             "birth": true,
             "sources": [

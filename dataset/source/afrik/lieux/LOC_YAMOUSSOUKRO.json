@@ -162,6 +162,7 @@
               "to": null,
               "label": "Depuis le début du XXe siècle : 1904 ou 1909-1910 selon les récits"
             },
+            "era": "modern",
             "statement": "Nom de la ville, capitale politique de la Côte d'Ivoire depuis 1983.",
             "aspect": "usage",
             "sources": [
@@ -191,6 +192,7 @@
               "to": 1904,
               "label": "1904"
             },
+            "era": "colonial",
             "statement": "Félix Houphouët-Boigny écrit qu'en 1904 un administrateur civil français, Simon, « ami de la famille », apprit qu'un jeune neveu de la reine s'appelait Kouasi N'go et lui dit que le village devait porter son nom à elle, l'aînée. Selon ce récit, l'interprète ne sut pas lui expliquer que le Kouasi N'go dont le village tenait son nom était un aîné, et non ce neveu.",
             "hypothesisGroup": "origine du nom",
             "sources": [
@@ -211,6 +213,7 @@
               "to": null,
               "label": "Après 1909 ; 1910 selon la Fondation"
             },
+            "era": "colonial",
             "statement": "Un autre récit, repris par la mairie de Yamoussoukro : après la révolte akouè de 1909, l'administrateur Simon Maurice, jugeant le poste de Bonzi peu sûr, le transféra à N'Gokro, rebaptisé Yamoussoukro en hommage à la reine. La Fondation Félix Houphouët-Boigny date ce transfert de 1910 et écrit que la reine fut alors « promue reine des Akoués ».",
             "hypothesisGroup": "origine du nom",
             "sources": [
@@ -249,6 +252,7 @@
               "to": null,
               "label": "Début du XXe siècle"
             },
+            "era": "colonial",
             "statement": "Félix Houphouët-Boigny écrit aussi que le vrai prénom de la reine était Yaha M'so, « vendredi », « septième », et qu'un interprète malien le confondit avec « mousso », « femme » : d'où Yaa n'so, puis Yamousso. C'est un récit de famille ; aucun linguiste ne l'a confirmé.",
             "hypothesisGroup": "origine du nom",
             "sources": [
@@ -318,6 +322,7 @@
               "to": null,
               "label": "De la fondation du village, en 1848 ou dans les années 1860 selon les récits, au début du XXe siècle"
             },
+            "era": "modern",
             "statement": "La chefferie coutumière parle encore du « trône de N'Gokro » en 2011.",
             "aspect": "usage",
             "sources": [
@@ -356,6 +361,7 @@
               "to": 1848,
               "label": "1848"
             },
+            "era": "polity",
             "statement": "Le porte-parole du chef de Kami dit que Koko Blé et Boigny N'Dri quittèrent Kami en 1848 pour fonder N'Gokro, devenu Yamoussoukro.",
             "sources": [
               {
@@ -375,6 +381,7 @@
               "to": 1869,
               "label": "Années 1860"
             },
+            "era": "polity",
             "statement": "D'autres récits situent dans les années 1860 l'arrivée de Boigny N'Dri à Kami, son mariage avec Kokoblé Adoua, princesse de Kami, et la cession des terres sur lesquelles le couple fonda N'Gokro.",
             "sources": [
               {

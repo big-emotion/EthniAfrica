@@ -301,6 +301,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Coulibaly est un nom de clan, ce que les Mandingues appellent un jamu. Le dictionnaire des noms de clan du Bamadaba le définit ainsi sans lui donner de sens ; son origine reste discutée, et chaque explication est présentée à part.",
             "aspect": "meaning",
             "sources": [
@@ -322,6 +323,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Coulibaly est porté chez les Bambara, les Malinké, les Minianka, les Peuls, les Kagoro et les Soninké, selon le dictionnaire des noms de clan du Bamadaba. Il s'est aussi répandu, du XVIIIe au XXe siècle, chez d'autres peuples comme les Bobo et les Sénoufo, selon E. A. Bogacheva.",
             "aspect": "usage",
             "sources": [
@@ -353,6 +355,7 @@
               "to": 1796,
               "label": "Février 1796 (récit publié en 1799), à Kemmou, capitale du Kaarta"
             },
+            "era": "polity",
             "statement": "Le nom Coulibaly a une forme proche, Koorabarri, chez l'explorateur Mungo Park, dans le nom du roi du Kaarta qui le reçoit, « Daisy Koorabarri ». Le lien avec Coulibaly passe par deux sources : la dynastie du Kaarta a été fondée par un Coulibaly, selon E. A. Bogacheva, et Kurubari est une autre forme de Koulibali, selon Michel Izard et Joseph Ki-Zerbo. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand des familles le portent.",
             "formAsWritten": "Daisy Koorabarri",
             "birth": true,
@@ -405,6 +408,7 @@
               "to": 1999,
               "label": "Rapportée en 1999"
             },
+            "era": "modern",
             "statement": "Le nom Coulibaly viendrait de kulu, « pirogue », et de bali, « sans » : il rappellerait le récit des frères Baramangolo et Niangolo, ancêtres des dynasties bambara, qui passent le fleuve sans pirogue grâce à un énorme silure, selon Michel Izard et Joseph Ki-Zerbo. Ces auteurs rapportent ce récit et ajoutent qu'il existe d'autres explications du nom.",
             "hypothesisGroup": "origine du nom Coulibaly",
             "actors": [
@@ -436,6 +440,7 @@
               "to": 2017,
               "label": "Proposée en 2017"
             },
+            "era": "modern",
             "statement": "Le nom Coulibaly, « sans pirogue », désignerait au contraire des ancêtres qui n'ont pas traversé le fleuve et sont restés sur la rive nord du Niger, selon E. A. Bogacheva. Elle rapporte aussi des récits qui font venir les Coulibaly de la rive sud, parfois de Kong, et leur font passer le fleuve sur un silure, sans nommer qui les raconte.",
             "hypothesisGroup": "origine du nom Coulibaly",
             "sources": [
@@ -457,6 +462,7 @@
               "to": 2017,
               "label": "Proposée en 2017"
             },
+            "era": "modern",
             "statement": "Le nom Coulibaly viendrait, par ses formes Kudubali ou Kurubali, de kuluba, « la grande colline », comme la colline de Koulouba à Bamako, selon E. A. Bogacheva. Elle juge cette lecture très plausible, tout en notant que le nom ne se rattache avec certitude à aucun nom de lieu.",
             "hypothesisGroup": "origine du nom Coulibaly",
             "sources": [
@@ -488,6 +494,7 @@
               "to": 2014,
               "label": "Entrée de dictionnaire datée de 2014"
             },
+            "era": "modern",
             "statement": "Le nom Kulibali est écrit « Kùlibàli », avec la forme « Kùlubàli », par le dictionnaire des noms de clan du Bamadaba, qui note les tons du bambara.",
             "formAsWritten": "Kùlibàli",
             "actors": [

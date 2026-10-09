@@ -153,6 +153,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Dramé figure parmi les noms de famille que Makhtar Diouf, chercheur à l'IFAN, donne pour caractéristiques d'une origine soninké, parfois lointaine, selon l'article Soninkés de Wikipédia.",
             "aspect": "usage",
             "sources": [
@@ -173,6 +174,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Dramé désigne un clan soninké. Le dictionnaire des noms de clan mandingues l'enregistre sous la forme Daramɛ sans lui donner de sens, et aucune autre source lue n'en propose.",
             "aspect": "meaning",
             "sources": [
@@ -203,6 +205,7 @@
               "to": 1599,
               "label": "Société songhay, du XIIe au XVIe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Dramé, écrit Drame, compte parmi les plus anciens clans de la société songhay, tous d'origine soninké, selon Sékéné Mody Cissoko.",
             "sources": [
               {
@@ -223,6 +226,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Dramé, écrit Drame, figure parmi les noms de clan du Wago, l'une des trois grandes subdivisions des Soninké, dont le berceau serait le Wagadou, selon le dictionnaire des noms de clan mandingues.",
             "sources": [
               {

@@ -60,6 +60,7 @@
               "to": 1331,
               "label": "Voyage de 1331"
             },
+            "era": "polity",
             "statement": "Le nom swahili apparaît par écrit dans le récit du voyageur Ibn Baṭṭūṭa, qui part de Mogadiscio vers « le pays des Saouâhil » et la ville de Kilwa ; ses traducteurs français rendent le mot par « les rivages ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme une côte, pas encore une langue.",
             "formAsWritten": "Saouâhil",
             "birth": true,
@@ -123,6 +124,7 @@
               "to": 1850,
               "label": "Rapportée en 1850"
             },
+            "era": "polity",
             "statement": "Le nom swahili voudrait dire « même ruse », de sawa, « égal », et hila, « ruse », selon l'explication que des habitants de la côte donnent souvent au missionnaire Johann Ludwig Krapf. Krapf l'écarte, mais rapporte que des Swahili disent eux-mêmes, quand ils sont dans l'embarras : « ne sommes-nous pas Swahili ? ».",
             "hypothesisGroup": "origine du nom swahili",
             "sources": [
@@ -144,6 +146,7 @@
               "to": 1850,
               "label": "Rapportée en 1850"
             },
+            "era": "polity",
             "statement": "Le nom swahili viendrait de suhel, qui veut dire en swahili « sud-est et sud-ouest » : pour un navigateur arabe, la côte se trouvait de ce côté, selon une deuxième explication que rapporte Johann Ludwig Krapf.",
             "hypothesisGroup": "origine du nom swahili",
             "sources": [
@@ -198,6 +201,7 @@
               "to": null,
               "label": "Depuis 2010"
             },
+            "era": "modern",
             "statement": "Le kiswahili est la langue nationale du Kenya et l'une de ses deux langues officielles, avec l'anglais, selon l'article 7 de la Constitution de 2010.",
             "aspect": "usage",
             "sources": [
@@ -218,6 +222,7 @@
               "to": 1850,
               "label": "1850"
             },
+            "era": "polity",
             "statement": "Le nom kiswahili apparaît par écrit sous la forme « Kisuáheli » dans le titre de la grammaire du missionnaire Johann Ludwig Krapf, qui parle aussi des Wasuaheli, les gens de la côte. C'est la plus ancienne trace de cette forme que le projet connaît. La langue existait déjà avant lui.",
             "formAsWritten": "Kisuáheli",
             "birth": true,

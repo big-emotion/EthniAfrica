@@ -24,6 +24,7 @@
               "to": null,
               "label": "Depuis le 18 février 2006"
             },
+            "era": "modern",
             "statement": "Le nom République démocratique du Congo est celui que donne au pays l'article premier de sa Constitution du 18 février 2006. Le pays est aussi appelé, de façon informelle, RD Congo ou Congo-Kinshasa, selon le Permanent Committee on Geographical Names.",
             "aspect": "usage",
             "sources": [
@@ -65,6 +66,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom République démocratique du Congo reprend celui du fleuve Congo, selon le Permanent Committee on Geographical Names. Le fleuve tient lui-même son nom de l'ancien royaume Kongo ; on ne sait pas avec certitude d'où vient ce mot.",
             "aspect": "meaning",
             "sources": [
@@ -96,6 +98,7 @@
               "to": 1997,
               "label": "17 mai 1997"
             },
+            "era": "modern",
             "statement": "Le nom République démocratique du Congo revient le 17 mai 1997, quand Laurent-Désiré Kabila se proclame président et que le Zaïre redevient Congo, selon Jean-Pierre Maury.",
             "actors": [
               {
@@ -131,6 +134,7 @@
               "to": 1964,
               "label": "1er août 1964"
             },
+            "era": "modern",
             "statement": "Le nom République démocratique du Congo figure dans l'article premier de la Constitution du 1er août 1964, dite de Luluabourg. C'est la plus ancienne trace de ce nom que le projet connaît.",
             "formAsWritten": "La République Démocratique du Congo",
             "birth": true,
@@ -164,6 +168,7 @@
               "to": 1997,
               "label": "Du 27 octobre 1971 à 1997"
             },
+            "era": "modern",
             "statement": "Le nom Zaïre est celui du pays à partir du 27 octobre 1971, selon l'Histoire générale de l'Afrique, jusqu'en 1997, quand le nom Congo est rétabli. Le fleuve est renommé de la même façon, selon le Permanent Committee on Geographical Names.",
             "aspect": "usage",
             "sources": [
@@ -204,6 +209,7 @@
               "to": 1974,
               "label": "15 août 1974"
             },
+            "era": "modern",
             "statement": "Le nom Zaïre figure dans l'article premier de la Constitution du 15 août 1974, qui commence par « La République du Zaïre est un État unitaire ».",
             "formAsWritten": "La République du Zaïre",
             "sources": [
@@ -225,6 +231,7 @@
               "to": 1886,
               "label": "1886"
             },
+            "era": "colonial",
             "statement": "Le nom Zaïre tombe alors en désuétude au profit de Congo, écrit le missionnaire W. Holman Bentley, même si c'est encore celui que portent les cartes à côté de Congo.",
             "sources": [
               {
@@ -245,6 +252,7 @@
               "to": 1508,
               "label": "Vers 1505-1508"
             },
+            "era": "polity",
             "statement": "Le nom Zaïre a une forme proche, Enzaze, chez Duarte Pacheco Pereira, qui écrit que c'est ainsi qu'on appelle le fleuve dans la langue du royaume de Congo. C'est la plus ancienne trace de cette forme que le projet connaît ; les sources lues ne disent pas s'il s'agit du même nom.",
             "formAsWritten": "Enzaze",
             "birth": true,
@@ -277,6 +285,7 @@
               "to": 1886,
               "label": "Proposée en 1886"
             },
+            "era": "colonial",
             "statement": "Le nom Zaïre viendrait de Nzadi, le nom que les riverains donnent au fleuve et qui veut dire « le grand fleuve », mal prononcé par les Européens, selon W. Holman Bentley.",
             "hypothesisGroup": "origine du nom Zaïre",
             "sources": [
@@ -308,6 +317,7 @@
               "to": 1964,
               "label": "Du 30 juin 1960 à 1964"
             },
+            "era": "modern",
             "statement": "Le nom République du Congo est celui sous lequel les États-Unis reconnaissent le nouvel État le 30 juin 1960, jour où l'ancien Congo belge est proclamé indépendant, selon l'Office of the Historian. La Constitution du 1er août 1964 lui donne le nom de République démocratique du Congo.",
             "sources": [
               {
@@ -347,6 +357,7 @@
               "to": 1960,
               "label": "De novembre 1908 au 30 juin 1960"
             },
+            "era": "colonial",
             "statement": "Le nom Congo belge désigne la colonie que la Belgique annexe en novembre 1908, le 15 selon l'Office of the Historian, le 18 selon l'Histoire générale de l'Afrique ; elle devient indépendante le 30 juin 1960.",
             "aspect": "usage",
             "sources": [
@@ -386,6 +397,7 @@
               "to": 1908,
               "label": "18 octobre 1908"
             },
+            "era": "colonial",
             "statement": "Le nom Congo belge figure dans l'article premier de la loi belge du 18 octobre 1908 sur le gouvernement de la colonie. C'est la plus ancienne trace de ce nom que le projet connaît.",
             "formAsWritten": "Le Congo belge",
             "birth": true,
@@ -418,6 +430,7 @@
               "to": 1908,
               "label": "Du 2 mai 1885 au 18 novembre 1908"
             },
+            "era": "colonial",
             "statement": "Le nom État indépendant du Congo désigne l'État que contrôle Léopold II, roi des Belges, du 2 mai 1885 jusqu'à l'annexion par la Belgique en 1908, selon l'Histoire générale de l'Afrique. Les États-Unis le reconnaissent le 11 septembre 1885, selon l'Office of the Historian.",
             "aspect": "usage",
             "actors": [

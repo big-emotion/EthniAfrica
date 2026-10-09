@@ -24,6 +24,7 @@
               "to": null,
               "label": "Depuis le 22 septembre 1960"
             },
+            "era": "modern",
             "statement": "Le nom Mali est celui de la République du Mali depuis que l'Assemblée de la République soudanaise l'adopte, le 22 septembre 1960, un mois après le départ du Sénégal de la Fédération du Mali, selon l'Office of the Historian.",
             "aspect": "usage",
             "sources": [
@@ -44,6 +45,7 @@
               "to": 1960,
               "label": "1960"
             },
+            "era": "modern",
             "statement": "Le nom Mali est repris par l'ancien Soudan français pour affirmer sa souveraineté : il prend le nom de l'empire fondé par Soundiata, comme la Gold Coast a pris celui du Ghana, selon Djibril Tamsir Niane.",
             "sources": [
               {
@@ -93,6 +95,7 @@
               "to": 1375,
               "label": "1375"
             },
+            "era": "polity",
             "statement": "Le nom Mali figure sur l'Atlas catalan, où une ville est nommée « Ciutat de Melly », la ville du Mali, selon François-Xavier Fauvelle.",
             "sources": [
               {
@@ -112,6 +115,7 @@
               "to": 1352,
               "label": "1352"
             },
+            "era": "polity",
             "statement": "Le nom Mali désigne aussi une ville : le voyageur Ibn Baṭṭūṭa arrive en 1352 à « la ville de Mâllî », où réside le roi, selon François-Xavier Fauvelle.",
             "sources": [
               {
@@ -131,6 +135,7 @@
               "to": 1339,
               "label": "1339"
             },
+            "era": "polity",
             "statement": "Le nom Mali figure, écrit Melli, sur la carte marine d'Angelino Dulcert, qui fait connaître aux chrétiens un « rex Melli » riche en or, selon Jean Devisse.",
             "formAsWritten": "rex Melli",
             "sources": [
@@ -152,6 +157,7 @@
               "to": 1199,
               "label": "XIIe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Mali est écrit Malel par le géographe al-Idrīsī, qui le donne à une ville, à quatre jours de marche d'une autre ville, Do, selon Djibril Tamsir Niane.",
             "formAsWritten": "Malel",
             "sources": [
@@ -173,6 +179,7 @@
               "to": 1099,
               "label": "XIe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Mali apparaît par écrit chez le géographe al-Bakrī, sous la forme Malel : un pays dont le roi porte le titre d'« El-Moslemani », selon Djibril Tamsir Niane. C'est la plus ancienne trace de ce nom que le projet connaît. Ce Malel est le noyau d'où partiront les Maninka pour créer l'empire, pas encore l'empire lui-même.",
             "formAsWritten": "Malel",
             "birth": true,
@@ -314,6 +321,7 @@
               "to": 1960,
               "label": "Époque coloniale"
             },
+            "era": "colonial",
             "statement": "Le nom Soudan français désigne la colonie française qui deviendra le Mali, selon Jean Suret-Canale et A. Adu Boahen ; le tableau des indépendances de l'Histoire générale de l'Afrique écrit « Mali (Soudan français) ».",
             "aspect": "usage",
             "sources": [

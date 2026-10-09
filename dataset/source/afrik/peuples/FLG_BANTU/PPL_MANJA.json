@@ -141,6 +141,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Mandja désigne un peuple de République centrafricaine, du Cameroun et du Tchad. La Bibliothèque nationale de France le range, avec Mandjia, Manja et Manza, sous une seule forme, Mandija. Les textes que nous avons lus ne disent pas d'où vient ce nom ni ce qu'il veut dire.",
             "aspect": "meaning",
             "sources": [
@@ -161,6 +162,7 @@
               "to": 1911,
               "label": "1911"
             },
+            "era": "colonial",
             "statement": "Le nom Mandja donne son titre à une monographie de Fernand Gaud publiée à Bruxelles en 1911, Les mandja (Congo français), qui contient une liste de mots de leur langue, selon Glottolog.",
             "sources": [
               {
@@ -265,6 +267,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Mandija est la forme que la Bibliothèque nationale de France retient aujourd'hui pour ce peuple ; elle retenait auparavant Manja.",
             "aspect": "usage",
             "sources": [
@@ -296,6 +299,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Manja est la forme qu'emploie la Library of Congress, en anglais, et celle que la Bibliothèque nationale de France retenait avant Mandija.",
             "aspect": "usage",
             "sources": [
@@ -326,6 +330,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Manza désigne surtout la langue de ce peuple : c'est le nom qu'emploient Glottolog et les catalogues des bibliothèques françaises, qui donnent Mandja, Mandjia et Manja comme d'autres noms de la même langue.",
             "aspect": "usage",
             "sources": [
@@ -355,6 +360,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Manza ne désigne pas les Mbanza, un autre peuple de Centrafrique et des deux Congo, selon l'article de Wikipédia sur les Mandja, qui met en garde contre cette confusion.",
             "sources": [
               {
