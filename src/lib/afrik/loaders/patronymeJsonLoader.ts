@@ -414,22 +414,9 @@ async function upsertSpelling(
   if ("error" in assertion) {
     return `${dossier.id}/${spelling.spelling}: assertion — ${assertion.error}`;
   }
-
-  const { error } = await supabase.from("name_records").upsert(
-    {
-      entity_type: "patronyme",
-      entity_id: dossier.id,
-      name_text: spelling.spelling,
-      name_type: "surname",
-      assertion_id: assertion.id,
-      sort_rank: spellingIndex,
-      updated_at: new Date().toISOString(),
-    },
-    { onConflict: "entity_type,entity_id,name_text,name_type" }
-  );
-  return error
-    ? `${dossier.id}/${spelling.spelling}: name_records — ${error.message}`
-    : null;
+  // The assertion is the spelling's only projection: search reads it back by
+  // its field path, now that name_records is retired (REQ-196).
+  return null;
 }
 
 async function upsertJoin(

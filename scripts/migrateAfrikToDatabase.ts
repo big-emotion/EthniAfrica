@@ -25,11 +25,7 @@ import {
   type LanguageLoadReport,
 } from "@/lib/afrik/loaders/languageProvenanceLoader";
 import { loadAllPeoples } from "@/lib/afrik/loaders/peopleLoader";
-import {
-  loadPeopleAppellations,
-  emptyAppellationLoadReport,
-  type AppellationLoadReport,
-} from "@/lib/afrik/loaders/peopleAppellationLoader";
+import { peopleNameIndex } from "@/lib/afrik/peopleNameIndex";
 import {
   loadAllPatronymeDossiers,
   loadPatronymes,
@@ -124,6 +120,18 @@ export interface CorpusOrphanReport {
   deleted: number;
 }
 
+/**
+ * What the people stage made of the fiches' appellations prose: how many names
+ * reached the name index, and which segments or fiches a curator must fix.
+ */
+export interface AppellationLoadReport {
+  total: number;
+  inserted: number;
+  /** Segments the grammar declined to read as a name, prefixed by fiche id. */
+  rejected: string[];
+  errors: string[];
+}
+
 export interface MigrationReport {
   languageFamilies: MigrationSectionReport;
   languages: LanguageLoadReport;
@@ -189,7 +197,7 @@ export function emptyMigrationReport(): MigrationReport {
     relations: { total: 0, inserted: 0, errors: [] },
     peopleRelations: { total: 0, inserted: 0, errors: [], orphans: [] },
     migrations: { total: 0, inserted: 0, errors: [] },
-    appellations: emptyAppellationLoadReport(),
+    appellations: { total: 0, inserted: 0, rejected: [], errors: [] },
     persons: { total: 0, inserted: 0, errors: [] },
     dossiers: { total: 0, inserted: 0, chapters: 0, errors: [] },
     patronymes: {
@@ -520,6 +528,8 @@ export async function upsertPeoples(
         people.content?.sources
       ));
 
+    const nameIndex = peopleNameIndex(people);
+
     try {
       const { error } = await supabase.from("afrik_peoples").upsert(
         {
@@ -532,15 +542,27 @@ export async function upsertPeoples(
           content: people.content,
           spelling_aliases: people.content.appellations?.spellingAliases ?? [],
           name_history: people.nameHistory ?? null,
+          name_index: nameIndex.entries,
           updated_at: new Date().toISOString(),
         },
         { onConflict: "id" }
       );
 
+      for (const segment of nameIndex.rejected) {
+        report.appellations.rejected.push(`${people.id}: ${segment}`);
+      }
+      if (nameIndex.unsourced) {
+        report.appellations.errors.push(
+          `${people.id}: fiche declares no source that may carry a name`
+        );
+      }
+      report.appellations.total += nameIndex.entries.length;
+
       if (error) {
         report.peoples.errors.push(`${people.id}: ${error.message}`);
       } else {
         report.peoples.inserted += 1;
+        report.appellations.inserted += nameIndex.entries.length;
         if (mayWriteClassification) {
           resolved.add(people.id);
         }
@@ -551,6 +573,10 @@ export async function upsertPeoples(
   });
 
   report.peoples.errors.sort();
+  // Lanes finish in whatever order the database answers; a curator diffs this
+  // list between runs.
+  report.appellations.rejected.sort();
+  report.appellations.errors.sort();
   report.protectedDrift.peoples = forgetResolvedDrift(
     report.protectedDrift.peoples,
     resolved
@@ -1087,11 +1113,6 @@ export async function migrateAfrikToDatabase(
   report.migrations.total = migrationsReport.total;
   report.migrations.inserted = migrationsReport.inserted;
   report.migrations.errors = migrationsReport.errors;
-
-  // The hand-sourced noms/ records were folded into their fiches'
-  // nameHistory (REQ-196), which the people loader projects onto
-  // name_history and the readers prefer over these derived rows.
-  report.appellations = await loadPeopleAppellations(supabase, peoples);
 
   const peopleRelationRecords = loadAllRelationFiles();
   const peopleRelationsReport = await loadRelations(
