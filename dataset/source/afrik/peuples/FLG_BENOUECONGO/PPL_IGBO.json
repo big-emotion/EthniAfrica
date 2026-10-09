@@ -148,7 +148,7 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Ndi Igbo est celui que ce peuple se donne. On le connaît aussi sous les noms Ibo et Union Ibo. Leur histoire est présentée plus bas.",
+    "summary": "Le nom Igbo désigne un peuple du sud-est du Nigeria, qui se nomme lui-même Ndi Igbo, « les gens igbo ». D'autres noms existent : Ibo, écrit aussi Eboe ou Heebo, et Union Ibo, le nom d'une langue écrite créée par des missionnaires. Les sources ne s'accordent pas sur l'origine du nom Igbo ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Ndi Igbo",
@@ -164,7 +164,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
-            "statement": "« Le peuple igbo » — ndi signifie « les gens de » en igbo.",
+            "statement": "« Le peuple igbo » — ndi signifie « les gens de » en igbo. Le sens premier du mot Igbo n'est pas connu ; plusieurs explications sont présentées plus bas.",
             "aspect": "meaning",
             "sources": [
               {
@@ -175,6 +175,16 @@
                 "tier": "official",
                 "source_kind": "linguistic_reference",
                 "notes": "Réutilisée depuis la fiche du peuple Igbo."
+              },
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
               }
             ]
           },
@@ -195,6 +205,209 @@
                 "tier": "official",
                 "source_kind": "linguistic_reference",
                 "notes": "Réutilisée depuis la fiche du peuple Igbo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "statement": "Le nom Igbo n'est alors accepté par aucun des peuples que les Européens appellent ainsi, ni pour se désigner, ni pour nommer leur langue, écrit l'administrateur colonial M. D. W. Jeffreys, cité par Dmitri van den Bersselaar.",
+            "sources": [
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53-54",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "1950"
+            },
+            "statement": "Le nom Igbo sert surtout à nommer la langue, puis les autres groupes de même langue, et ne s'emploie pour soi que devant un Européen, selon Daryll Forde et G. I. Jones, cités par Dmitri van den Bersselaar. Les Igbo n'ont adopté ce nom pour eux-mêmes et pour leur langue que récemment, ajoute-t-il.",
+            "sources": [
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 54 et p. 56",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1789,
+              "to": 1789,
+              "label": "Récit publié en 1789"
+            },
+            "formAsWritten": "Oye-Eboe",
+            "statement": "Le nom Igbo pourrait figurer dans Oye-Eboe, le nom qu'Olaudah Equiano donne aux marchands venus du sud-ouest, des « hommes rouges vivant au loin » selon lui. Dmitri van den Bersselaar se demande s'il faut y lire Onye Igbo, « gens igbo ».",
+            "actors": [
+              {
+                "name": "Olaudah Equiano",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Interesting Narrative of the Life of Olaudah Equiano, or Gustavus Vassa, the African, tome 1",
+                "author": "Olaudah Equiano",
+                "year": 1789,
+                "url": "https://archive.org/details/bim_eighteenth-century_the-interesting-narrativ_equiano-olaudah_1789_1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18",
+                "notes": "Londres, 1789. Lu dans la numérisation d'Internet Archive le 9 octobre 2026."
+              },
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 58",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "hypothesisGroup": "origine du nom Igbo",
+            "statement": "Le nom Igbo aurait d'abord servi à chaque groupe pour nommer le clan voisin, pour marquer « l'autre », selon une suggestion de l'écrivain Chinua Achebe que rapporte Dmitri van den Bersselaar.",
+            "sources": [
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "hypothesisGroup": "origine du nom Igbo",
+            "statement": "Le nom Igbo viendrait de Mbau ou Mbu, un terme qui désignait d'abord des peuples de la savane, d'où viendrait aussi le mot haoussa Bawa, « esclave », selon l'historien Murray Last, cité par Dmitri van den Bersselaar. Celui-ci objecte que les plus anciens emplois du nom concernent des peuples du sud.",
+            "sources": [
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "hypothesisGroup": "origine du nom Igbo",
+            "statement": "Le nom Igbo serait d'abord un mot yoruba, « les gens de la brousse », selon G. I. Jones, cité par Dmitri van den Bersselaar. Des linguistes jugent ce lien très peu probable, à cause des tons et du sens des deux mots.",
+            "sources": [
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56-57",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "hypothesisGroup": "origine du nom Igbo",
+            "statement": "Le nom Igbo désignerait d'abord les gens de l'intérieur, par opposition aux ndi oru, les gens de la rive du fleuve Niger, selon Victor Manfredi, cité par Dmitri van den Bersselaar. La linguiste Kay Williamson traduirait plutôt par « gens des hautes terres ».",
+            "sources": [
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "Proposée en 1972"
+            },
+            "hypothesisGroup": "origine du nom Igbo",
+            "statement": "Le nom Igbo voudrait dire d'abord « communauté de personnes », selon l'anthropologue M. A. Onwuejeogwu, qui a comparé les mots igbo où il entre, cité par Dmitri van den Bersselaar.",
+            "sources": [
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "hypothesisGroup": "origine du nom Igbo",
+            "statement": "Le nom Igbo voudrait dire d'abord « du nord » : dans le delta du Niger, où il désigne aussi les esclaves, venus de l'intérieur au nord, il semble avoir ce sens à Kolokuma, selon la linguiste Kay Williamson, citée par Dmitri van den Bersselaar.",
+            "sources": [
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
               }
             ]
           }
@@ -270,6 +483,148 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Page consultée en ligne : « Igbo is also known as Ibo, Ebo or Unege »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1789,
+              "to": 1789,
+              "label": "Récit publié en 1789"
+            },
+            "formAsWritten": "Eboe",
+            "statement": "Le nom Ibo est écrit « Eboe » par Olaudah Equiano, qui situe dans ce pays le village où il est né, selon Dmitri van den Bersselaar ; les planteurs des Antilles, écrit Equiano, préfèrent les esclaves de Benin ou d'Eboe.",
+            "actors": [
+              {
+                "name": "Olaudah Equiano",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Interesting Narrative of the Life of Olaudah Equiano, or Gustavus Vassa, the African, tome 1",
+                "author": "Olaudah Equiano",
+                "year": 1789,
+                "url": "https://archive.org/details/bim_eighteenth-century_the-interesting-narrativ_equiano-olaudah_1789_1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 21",
+                "notes": "Londres, 1789. Lu dans la numérisation d'Internet Archive le 9 octobre 2026."
+              },
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 58",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1789,
+              "to": 1800,
+              "label": "Voyages de 1789 à 1800"
+            },
+            "formAsWritten": "Heebo",
+            "statement": "Le nom Ibo est écrit « Heebo » par le capitaine négrier John Adams : au moins quatre esclaves sur cinq vendus chaque année à Bonny seraient de cette « nation », selon Dmitri van den Bersselaar.",
+            "actors": [
+              {
+                "name": "John Adams",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 58",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1767,
+              "to": 1777,
+              "label": "Enquête de 1767-1768, livre publié en 1777"
+            },
+            "statement": "Le nom Ibo figure chez le missionnaire morave C. G. A. Oldendorp, qui interroge des esclaves nés en Afrique dans les Antilles danoises : les Ibo, écrit-il, sont un peuple nombreux qui occupe un pays très étendu à l'intérieur de l'Afrique.",
+            "actors": [
+              {
+                "name": "C. G. A. Oldendorp",
+                "role": "écrit ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Geschichte der Mission der evangelischen Brüder auf den caraibischen Inseln S. Thomas, S. Croix und S. Jan, tome 1",
+                "author": "C. G. A. Oldendorp",
+                "year": 1777,
+                "url": "https://archive.org/details/cgaoldendorpsges12olde",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 285-286",
+                "notes": "Barby, 1777. Lu dans la numérisation d'Internet Archive le 9 octobre 2026, chapitre sur les nations africaines."
+              },
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 58",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1627,
+              "to": 1627,
+              "label": "1627"
+            },
+            "birth": true,
+            "statement": "Le nom Ibo figure en 1627 dans une liste des lieux d'origine d'esclaves dressée par Alonso de Sandoval, un prêtre espagnol de Carthagène des Indes, selon Dmitri van den Bersselaar. C'est la plus ancienne trace de ce nom que le projet connaît. Rien ne dit, note l'historien, que ce nom désignait alors le même ensemble qu'aujourd'hui.",
+            "sources": [
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53 et p. 58",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1505,
+              "label": "Vers 1505"
+            },
+            "before": true,
+            "statement": "On parle alors d'Opuu, chez le voyageur portugais Duarte Pacheco Pereira, pour un pays à cent lieues en amont du Rio Fermoso. Elizabeth Isichei et d'autres y voient les Igbo ; Dmitri van den Bersselaar juge les preuves insuffisantes.",
+            "sources": [
+              {
+                "title": "Who are the Igbo? Searching for Origins",
+                "author": "Dmitri van den Bersselaar",
+                "year": null,
+                "url": "https://igbocybershrine.com/wp-content/uploads/2013/01/who-are-the-igbo-searching-for-origins.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53, note 60",
+                "notes": "Chapitre 2 d'un ouvrage de l'historien sur l'identité igbo, mis en ligne au format PDF sans le titre du livre ni l'année d'édition. Lu en texte intégral le 9 octobre 2026, section « The history of an ethnonym »."
               }
             ]
           }

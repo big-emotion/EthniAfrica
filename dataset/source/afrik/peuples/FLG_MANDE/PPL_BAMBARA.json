@@ -144,5 +144,434 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bambara désigne un peuple du Mali, qui se nomme lui-même Bamana. Ce nom de Bambara a aussi servi, chez des voisins musulmans, à désigner des non-musulmans. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bamana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bam",
+        "namedBy": null,
+        "shortLine": "Bamana est le nom que se donnent ceux que le français appelle Bambara.",
+        "usedIn": ["bam"],
+        "periodLabel": "Écrit dès 1901",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Bamana est celui que se donnent les personnes que le français appelle Bambara. Au pluriel, elles disent Bamanaw, selon Michel Izard et Joseph Ki-Zerbo ; Louis Tauxier notait déjà que les intéressés prononcent Bamana.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, V, From the Niger to the Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1992,
+                "url": "https://archive.org/details/unesco_general_history_africa_v",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 329, note 2",
+                "notes": "UNESCO et Heinemann, 1992, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026 : « The Bambara call themselves Bamanaw, but we shall retain here the official present-day spelling of their name »."
+              },
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XVII",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction, p. XVII à XX, lue dans la numérisation d'Internet Archive le 9 octobre 2026. L'auteur passe en revue les explications du nom sans trancher."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Décrit en 2009"
+            },
+            "statement": "Le nom Bamana désigne aussi, au Mali, les personnes qui pratiquent des cultes non musulmans, selon l'anthropologue Jean-Paul Colleyn. Elles se disent Bamana parce qu'elles ne se sont pas converties à l'islam.",
+            "sources": [
+              {
+                "title": "Images, signes, fétiches. À propos de l'art bamana (Mali), Cahiers d'études africaines, n° 195",
+                "author": "Jean-Paul Colleyn",
+                "year": 2009,
+                "url": "https://journals.openedition.org/etudesafricaines/15596",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 3",
+                "notes": "Lu en ligne le 9 octobre 2026. L'auteur écrit que la littérature ethnographique parlait des Bambara jusque dans les années 1980, avant qu'on y reconnaisse une déformation française d'un nom donné aux Bamana par les Songhaï et les Peuls."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "statement": "Le nom Bamana est écrit « Ban-mana ou Bamana » par Maurice Delafosse, qui précise que ces populations se donnent elles-mêmes ce nom. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "formAsWritten": "Ban-mana ou Bamana",
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 236",
+                "notes": "Paris, Ernest Leroux, 1901. Lu dans la numérisation d'Internet Archive le 9 octobre 2026 : Avertissement, et chapitre « Le dialecte bamana »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bambara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant en français ; donné de l'extérieur, son origine reste discutée.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès le XVIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Bambara désigne en français le peuple qui se nomme lui-même Bamana. Des voisins musulmans l'ont aussi employé pour désigner des non-musulmans. Son origine est discutée : plusieurs explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 236",
+                "notes": "Paris, Ernest Leroux, 1901. Lu dans la numérisation d'Internet Archive le 9 octobre 2026 : Avertissement, et chapitre « Le dialecte bamana »."
+              },
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XVII, note 2, et p. XVIII",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction, p. XVII à XX, lue dans la numérisation d'Internet Archive le 9 octobre 2026. L'auteur passe en revue les explications du nom sans trancher."
+              },
+              {
+                "title": "Images, signes, fétiches. À propos de l'art bamana (Mali), Cahiers d'études africaines, n° 195",
+                "author": "Jean-Paul Colleyn",
+                "year": 2009,
+                "url": "https://journals.openedition.org/etudesafricaines/15596",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 3",
+                "notes": "Lu en ligne le 9 octobre 2026. L'auteur écrit que la littérature ethnographique parlait des Bambara jusque dans les années 1980, avant qu'on y reconnaisse une déformation française d'un nom donné aux Bamana par les Songhaï et les Peuls."
+              },
+              {
+                "title": "General History of Africa, V, From the Niger to the Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1992,
+                "url": "https://archive.org/details/unesco_general_history_africa_v",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 329, note 2",
+                "notes": "UNESCO et Heinemann, 1992, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026 : « The Bambara call themselves Bamanaw, but we shall retain here the official present-day spelling of their name »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Bambara reste la graphie officielle, selon Michel Izard et Joseph Ki-Zerbo. Jean-Paul Colleyn note que la littérature ethnographique l'a employé jusque dans les années 1980, avant de lui préférer Bamana.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, V, From the Niger to the Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1992,
+                "url": "https://archive.org/details/unesco_general_history_africa_v",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 329, note 2",
+                "notes": "UNESCO et Heinemann, 1992, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026 : « The Bambara call themselves Bamanaw, but we shall retain here the official present-day spelling of their name »."
+              },
+              {
+                "title": "Images, signes, fétiches. À propos de l'art bamana (Mali), Cahiers d'études africaines, n° 195",
+                "author": "Jean-Paul Colleyn",
+                "year": 2009,
+                "url": "https://journals.openedition.org/etudesafricaines/15596",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 3",
+                "notes": "Lu en ligne le 9 octobre 2026. L'auteur écrit que la littérature ethnographique parlait des Bambara jusque dans les années 1980, avant qu'on y reconnaisse une déformation française d'un nom donné aux Bamana par les Songhaï et les Peuls."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "Rapporté en 1927"
+            },
+            "statement": "Le nom Bambara sert, chez des musulmans d'Afrique de l'Ouest, à désigner les fidèles des religions locales : les Dioula appellent ainsi tous les Sénoufo, selon Louis Tauxier. Maurice Delafosse le relevait dès 1901.",
+            "sources": [
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XVII, note 2",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction, p. XVII à XX, lue dans la numérisation d'Internet Archive le 9 octobre 2026. L'auteur passe en revue les explications du nom sans trancher."
+              },
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 236",
+                "notes": "Paris, Ernest Leroux, 1901. Lu dans la numérisation d'Internet Archive le 9 octobre 2026 : Avertissement, et chapitre « Le dialecte bamana »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1652,
+              "to": 1655,
+              "label": "Chronique achevée en 1655"
+            },
+            "statement": "Le nom Bambara figure dans le Tarikh es-Soudan, la chronique d'Abderrahman es-Sa'di. À propos de l'année 1559, l'askia Daoud y dit que « les Bambara sont ici maintenant en très grand nombre », dans la traduction d'O. Houdas. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tarikh es-Soudan, traduit de l'arabe par O. Houdas",
+                "author": "Abderrahman es-Sa'di",
+                "year": 1900,
+                "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 172",
+                "notes": "Paris, Ernest Leroux, 1900. Chronique achevée en 1655, selon l'introduction du traducteur (p. XIII-XIV). Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 172, à propos de l'année 1559 : « les Bambara sont ici maintenant en très grand nombre ». Le nom est lu dans la traduction française, pas dans le texte arabe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1399,
+              "label": "XIVe siècle, règne de Mansa Moussa"
+            },
+            "statement": "Le peuple bamana se sépare alors des Malinké, semble-t-il : sous le règne de Mansa Moussa, il refuse l'islam et crée une société secrète, le Komo, selon Djibril Tamsir Niane.",
+            "before": true,
+            "sources": [
+              {
+                "title": "General History of Africa, IV, Relationships and exchanges among the different regions",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 622, note 27",
+                "notes": "UNESCO et Heinemann, 1984, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 622, note 27 : « The Bambara (ban-ma-na) are those who reject the mansa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "Proposée en 1901"
+            },
+            "statement": "Le nom Bambara serait une appellation étrangère, donnée par les Toucouleurs et les Sarakolé, et une déformation de Ban-mana ou Bamana, selon Maurice Delafosse.",
+            "hypothesisGroup": "origine du nom Bambara",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Avertissement, note 1, et p. 236",
+                "notes": "Paris, Ernest Leroux, 1901. Lu dans la numérisation d'Internet Archive le 9 octobre 2026 : Avertissement, et chapitre « Le dialecte bamana »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Proposée en 2009"
+            },
+            "statement": "Le nom Bambara serait la déformation française d'un nom que les Songhaï et les Peuls donnaient aux Bamana, selon Jean-Paul Colleyn.",
+            "hypothesisGroup": "origine du nom Bambara",
+            "sources": [
+              {
+                "title": "Images, signes, fétiches. À propos de l'art bamana (Mali), Cahiers d'études africaines, n° 195",
+                "author": "Jean-Paul Colleyn",
+                "year": 2009,
+                "url": "https://journals.openedition.org/etudesafricaines/15596",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 3",
+                "notes": "Lu en ligne le 9 octobre 2026. L'auteur écrit que la littérature ethnographique parlait des Bambara jusque dans les années 1980, avant qu'on y reconnaisse une déformation française d'un nom donné aux Bamana par les Songhaï et les Peuls."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1927,
+              "label": "Rapportée en 1927"
+            },
+            "statement": "Le nom Bambara voudrait dire « ceux du crocodile », de bama, le crocodile, selon Mgr Bazin et le père Brun, cités par Louis Tauxier, qui juge cette lecture la plus simple.",
+            "hypothesisGroup": "origine du nom Bambara",
+            "sources": [
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XVIII",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction, p. XVII à XX, lue dans la numérisation d'Internet Archive le 9 octobre 2026. L'auteur passe en revue les explications du nom sans trancher."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1927,
+              "label": "Rapportée en 1927"
+            },
+            "statement": "Le nom Bambara viendrait de ban-ma-na, « refus au maître » : les Banmana auraient quitté leur pays pour échapper aux conquérants malinké, selon une explication que Maurice Delafosse dit tenir des Banmana eux-mêmes, citée par Louis Tauxier. Djibril Tamsir Niane y lit « ceux qui refusent le mansa », le souverain du Mali.",
+            "hypothesisGroup": "origine du nom Bambara",
+            "sources": [
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XVIII-XIX",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction, p. XVII à XX, lue dans la numérisation d'Internet Archive le 9 octobre 2026. L'auteur passe en revue les explications du nom sans trancher."
+              },
+              {
+                "title": "General History of Africa, IV, Relationships and exchanges among the different regions",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 622, note 27",
+                "notes": "UNESCO et Heinemann, 1984, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 622, note 27 : « The Bambara (ban-ma-na) are those who reject the mansa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "Proposée en 1910"
+            },
+            "statement": "Le nom Bambara viendrait de bamba, « révolté », qui prend chez les musulmans le sens d'infidèle : le Bambara serait celui qui ne s'est jamais soumis à l'islam, selon l'abbé Joseph Henry, qui suit le père Coppe.",
+            "hypothesisGroup": "origine du nom Bambara",
+            "sources": [
+              {
+                "title": "L'âme d'un peuple africain. Les Bambara, leur vie psychique, éthique, sociale, religieuse",
+                "author": "Abbé Joseph Henry",
+                "year": 1910,
+                "url": "https://archive.org/details/lamedunpeupleafr00henr",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 77, note 1",
+                "notes": "Münster, Aschendorff, collection Anthropos, 1910. Lu dans la numérisation d'Internet Archive le 9 octobre 2026."
+              },
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XIX",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction, p. XVII à XX, lue dans la numérisation d'Internet Archive le 9 octobre 2026. L'auteur passe en revue les explications du nom sans trancher."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1927,
+              "label": "Rapportée en 1927"
+            },
+            "statement": "Le nom Bambara voudrait dire « les gens du grand rocher », de ba, grand, et mana, rocher, selon Louis-Gustave Binger, cité par Louis Tauxier.",
+            "hypothesisGroup": "origine du nom Bambara",
+            "sources": [
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XVIII",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction, p. XVII à XX, lue dans la numérisation d'Internet Archive le 9 octobre 2026. L'auteur passe en revue les explications du nom sans trancher."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1927,
+              "label": "Rapportée en 1927"
+            },
+            "statement": "Le nom Bambara viendrait d'une vieille racine ba, « noir », selon Charles Monteil, cité par Louis Tauxier, qui trouve cette lecture peu convaincante.",
+            "hypothesisGroup": "origine du nom Bambara",
+            "sources": [
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XIX",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction, p. XVII à XX, lue dans la numérisation d'Internet Archive le 9 octobre 2026. L'auteur passe en revue les explications du nom sans trancher."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
