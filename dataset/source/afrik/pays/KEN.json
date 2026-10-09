@@ -6,6 +6,309 @@
   "summary": "Le Kenya porte le nom d'une montagne que les Kikuyu appellent Kirinyaga, « la montagne de blancheur » ; les explorateurs européens du XIXe siècle en ont fait « Kenya ». Cités swahili de la côte, royaumes bantous et confédérations nilotiques s'y rencontrent. Kikuyu, Luhya, Kalenjin, Luo, Kamba et Somali y ont le swahili pour langue commune.",
   "etymology": "Le nom \"Kenya\" vient du mont Kenya, appelé \"Kirinyaga\" (montagne de blancheur) par les Kikuyu. Les explorateurs européens du XIXe siècle ont utilisé \"Kenya\" d'après le mont Kenya. Le nom a été officialisé lors de la colonisation britannique.",
   "nameOriginActor": "Le nom vient du mont Kenya, appelé \"Kirinyaga\" par les Kikuyu. Les explorateurs européens ont popularisé le terme \"Kenya\" au XIXe siècle. Le nom a été officialisé par les Britanniques lors de la colonisation.",
+  "nameHistory": {
+    "summary": "Le nom Kenya désigne un pays d'Afrique de l'Est, la République du Kenya, qui porte le nom d'une montagne, le mont Kenya. Le pays a d'abord porté d'autres noms : Protectorat de l'Afrique de l'Est, puis Colonie du Kenya. Les sources ne s'accordent pas sur ce que voulait dire le nom de la montagne ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kenya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une montagne, noté par un missionnaire en 1849 ; son sens premier reste discuté.",
+        "periodLabel": "Écrit dès 1849 ; nom de l'État depuis 1963",
+        "accounts": [
+          {
+            "period": {
+              "from": 1963,
+              "to": null,
+              "label": "Depuis le 12 décembre 1963"
+            },
+            "statement": "Le nom Kenya est celui d'un État indépendant depuis le 12 décembre 1963, jour où le gouvernement britannique cesse d'être responsable du pays, selon la loi britannique sur l'indépendance du Kenya.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kenya Independence Act 1963",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1963,
+                "url": "https://www.legislation.gov.uk/ukpga/1963/54/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu sur le site officiel de la législation britannique. Il fixe au 12 décembre 1963 la fin de la responsabilité du gouvernement britannique sur le Kenya, et nomme Kenya Protectorate la bande côtière."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Kenya désigne le pays et la montagne dont il vient, le mont Kenya. Le missionnaire Johann Ludwig Krapf l'a écrit d'après ce qu'on lui disait de la montagne ; ce que voulait dire ce nom reste discuté.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Trübner, 1860, lu dans l'exemplaire numérisé. En annexe, Krapf écrit que les Wakamba appellent la montagne « Kima ja Kegnia », qu'il traduit par « Mount of Whiteness », que d'autres peuples disent Kirenia et que les Wakuafi disent « Orldoinio eibor », « White Mountain ». Page 311, il écrit aussi « the snow-mountain Kirenia (Kenia) »."
+              },
+              {
+                "title": "Kenya — Wikipedia (en anglais)",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Kenya",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Section Etymology, consultée le 9 octobre 2026. Pour l'autruche, elle cite Paul Sullivan, Kikuyu Districts (Dar es Salaam, Mkuki na Nyota, 2006), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "statement": "Le nom Kenya devient celui du territoire en 1920 : un ordre en conseil britannique annexe l'intérieur du Protectorat de l'Afrique de l'Est sous le nom de Colonie du Kenya, selon la Gazette officielle du protectorat.",
+            "sources": [
+              {
+                "title": "The Special Official Gazette of the East Africa Protectorate, vol. XXII, n° 723 : Kenya (Annexation) Order in Council, 1920",
+                "author": "Gouvernement du Protectorat de l'Afrique de l'Est",
+                "year": 1920,
+                "url": "https://archive.gazettes.africa/archive/ke/1920/ke-government-gazette-dated-1920-07-23-no-723.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 697-698",
+                "notes": "Gazette publiée à Nairobi le 23 juillet 1920, lue dans l'exemplaire numérisé. Elle reproduit l'ordre en conseil du 11 juin 1920, qui annexe les territoires du protectorat, sauf ceux du sultan de Zanzibar, sous le nom de « Colony of Kenya »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "statement": "Le nom Kenya est écrit Kegnia par Krapf dans le récit de ses voyages, où il note aussi Kirenia ; il y raconte avoir vu la montagne le 3 décembre 1849 en quittant Kitui.",
+            "formAsWritten": "Kegnia",
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 544",
+                "notes": "Londres, Trübner, 1860, lu dans l'exemplaire numérisé. En annexe, Krapf écrit que les Wakamba appellent la montagne « Kima ja Kegnia », qu'il traduit par « Mount of Whiteness », que d'autres peuples disent Kirenia et que les Wakuafi disent « Orldoinio eibor », « White Mountain ». Page 311, il écrit aussi « the snow-mountain Kirenia (Kenia) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1849,
+              "to": 1850,
+              "label": "Journal de novembre 1849, publié en 1850"
+            },
+            "statement": "Le nom Kenya apparaît par écrit sous la forme Kenia dans le journal du missionnaire Johann Ludwig Krapf, qui parle le 28 novembre 1849 de « la montagne de neige Kenia » ; la revue de sa société missionnaire le publie en 1850. C'est la plus ancienne trace de ce nom que le projet connaît. La montagne avait déjà d'autres noms avant lui.",
+            "formAsWritten": "Kenia",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johann Ludwig Krapf",
+                "role": "missionnaire allemand de la Church Missionary Society, auteur du journal"
+              },
+              {
+                "name": "Kivoi",
+                "role": "chef kamba chez qui Krapf séjourne à Kitui"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Church Missionary Intelligencer, vol. I : Journal descriptive of a journey to Ukambani, in November and December 1849",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/1850TheChurchMissionaryIntelligencer",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 453",
+                "notes": "Revue de la Church Missionary Society, Londres, 1850, lue dans l'exemplaire numérisé. À la date du 28 novembre 1849, Krapf écrit « the snow-mountain Kenia », la montagne de neige Kenia. Page 449, la rédaction de la revue écrit aussi « the stupendous Kenia »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1849,
+              "label": "Avant 1849"
+            },
+            "statement": "Le nom Kenya n'est pas le seul nom de la montagne : en 1849, Krapf entend les Wakamba l'appeler Kima ja Kegnia, d'autres peuples Kirenia, et les Wakuafi Orldoinio eibor, « la montagne blanche », selon son récit.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 544",
+                "notes": "Londres, Trübner, 1860, lu dans l'exemplaire numérisé. En annexe, Krapf écrit que les Wakamba appellent la montagne « Kima ja Kegnia », qu'il traduit par « Mount of Whiteness », que d'autres peuples disent Kirenia et que les Wakuafi disent « Orldoinio eibor », « White Mountain ». Page 311, il écrit aussi « the snow-mountain Kirenia (Kenia) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Nom kikuyu, non daté"
+            },
+            "statement": "Le nom Kenya a un voisin en kikuyu : Kĩrĩnyaga, le nom que les Kikuyu donnent à la même montagne. Les Routledge l'écrivent Ki-ri-nya-ga en 1910 et le traduisent par « lieu de la blancheur » ; le dictionnaire de T. G. Benson le rattache à nyaga, « autruche », et le rend par « la montagne qui possède des autruches ».",
+            "sources": [
+              {
+                "title": "With a Prehistoric People: the Akikuyu of British East Africa",
+                "author": "W. Scoresby Routledge et Katherine Routledge",
+                "year": 1910,
+                "url": "https://archive.org/details/withprehistoricp00rout",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 226",
+                "notes": "Londres, Edward Arnold, 1910, lu dans l'exemplaire numérisé. Les auteurs écrivent le nom kikuyu de la montagne « Ki-ri-nya-ga » et le traduisent par « Place of Whiteness », le lieu de la blancheur."
+              },
+              {
+                "title": "Kikuyu-English Dictionary",
+                "author": "T. G. Benson",
+                "year": 1964,
+                "url": "https://archive.org/details/kikuyu-english-dictionary-tg-benson",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 338 ; p. 14",
+                "notes": "Dictionnaire lu dans l'exemplaire numérisé. Page 338, à l'entrée nyaga, « autruche », il donne kirinyaga comme « la montagne qui possède des autruches », le mont Kenya. Page 14, à l'entrée maara, « taches », il donne Kirimaara, « tacheté », comme l'un des noms du mont Kenya."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1849,
+              "to": 1860,
+              "label": "Proposée par Krapf (1849-1860)"
+            },
+            "statement": "Le nom Kenya viendrait du nom que les Wakamba donnent à la montagne, Kima ja Kegnia, que Krapf traduit par « montagne de blancheur », selon le récit de Krapf.",
+            "hypothesisGroup": "origine du nom Kenya",
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 544",
+                "notes": "Londres, Trübner, 1860, lu dans l'exemplaire numérisé. En annexe, Krapf écrit que les Wakamba appellent la montagne « Kima ja Kegnia », qu'il traduit par « Mount of Whiteness », que d'autres peuples disent Kirenia et que les Wakuafi disent « Orldoinio eibor », « White Mountain ». Page 311, il écrit aussi « the snow-mountain Kirenia (Kenia) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Kenya viendrait de la forme kamba Kĩ-Nyaa, que le chef Kivoi aurait donnée parce que la roche noire et la neige blanche des sommets rappelaient le plumage de l'autruche mâle, selon l'article de Wikipédia en anglais sur le Kenya et un article de WorldAtlas.",
+            "hypothesisGroup": "origine du nom Kenya",
+            "sources": [
+              {
+                "title": "Kenya — Wikipedia (en anglais)",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Kenya",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Section Etymology, consultée le 9 octobre 2026. Pour l'autruche, elle cite Paul Sullivan, Kikuyu Districts (Dar es Salaam, Mkuki na Nyota, 2006), que nous n'avons pas lu."
+              },
+              {
+                "title": "How Did Kenya Get Its Name?",
+                "author": "Benjamin Elisha Sawe, WorldAtlas",
+                "year": 2019,
+                "url": "https://www.worldatlas.com/articles/how-did-kenya-get-its-name.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Article de vulgarisation du 2 août 2019, consulté le 9 octobre 2026. Il donne les formes kamba Kĩĩma-Kĩĩnyaa et Kĩ-Nyaa et ne cite pas de source."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Colonie du Kenya",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": "La Couronne britannique, par un ordre en conseil",
+        "periodLabel": "1920-1963",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "11 juin 1920, publié le 23 juillet"
+            },
+            "statement": "Le nom Colonie du Kenya, Colony of Kenya en anglais, est créé par un ordre en conseil du roi d'Angleterre daté du 11 juin 1920 : l'intérieur du Protectorat de l'Afrique de l'Est est annexé et sera désormais connu sous ce nom, selon la Gazette officielle du protectorat. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Colony of Kenya",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Special Official Gazette of the East Africa Protectorate, vol. XXII, n° 723 : Kenya (Annexation) Order in Council, 1920",
+                "author": "Gouvernement du Protectorat de l'Afrique de l'Est",
+                "year": 1920,
+                "url": "https://archive.gazettes.africa/archive/ke/1920/ke-government-gazette-dated-1920-07-23-no-723.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 697-698",
+                "notes": "Gazette publiée à Nairobi le 23 juillet 1920, lue dans l'exemplaire numérisé. Elle reproduit l'ordre en conseil du 11 juin 1920, qui annexe les territoires du protectorat, sauf ceux du sultan de Zanzibar, sous le nom de « Colony of Kenya »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Protectorat de l'Afrique de l'Est",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "periodLabel": "Jusqu'en 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1920,
+              "label": "Jusqu'en 1920"
+            },
+            "statement": "Le nom Protectorat de l'Afrique de l'Est, East Africa Protectorate en anglais, désigne le territoire jusqu'en 1920 ; cette année-là, sa partie qui n'appartient pas au sultan de Zanzibar devient la Colonie du Kenya, selon la Gazette officielle du protectorat.",
+            "formAsWritten": "East Africa Protectorate",
+            "sources": [
+              {
+                "title": "The Special Official Gazette of the East Africa Protectorate, vol. XXII, n° 723 : Kenya (Annexation) Order in Council, 1920",
+                "author": "Gouvernement du Protectorat de l'Afrique de l'Est",
+                "year": 1920,
+                "url": "https://archive.gazettes.africa/archive/ke/1920/ke-government-gazette-dated-1920-07-23-no-723.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 697-698",
+                "notes": "Gazette publiée à Nairobi le 23 juillet 1920, lue dans l'exemplaire numérisé. Elle reproduit l'ordre en conseil du 11 juin 1920, qui annexe les territoires du protectorat, sauf ceux du sultan de Zanzibar, sous le nom de « Colony of Kenya »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

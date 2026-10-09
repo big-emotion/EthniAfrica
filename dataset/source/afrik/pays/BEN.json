@@ -6,6 +6,449 @@
   "summary": "Le Bénin porte depuis 1975 le nom d'un royaume qui n'était pas le sien, celui du Bénin, situé dans l'actuel Nigeria ; les raisons de ce choix ne sont portées par aucune source spécialisée. Il s'appelait auparavant Dahomey, du nom du royaume qui domina la région du XVIIe au XIXe siècle, dont l'explication par « le ventre de Dan » est discutée depuis Burton. Fon, Adja-Ewe, Yoruba, Bariba et Dendi y ont laissé des traditions royales, la divination Ifá et le vodun.",
   "etymology": "Le pays a changé de nom en 1975. Le président Mathieu Kérékou l'annonce dans un discours du 30 novembre, et l'ordonnance n° 75-80 du 2 décembre 1975 portant dénomination de l'État l'établit : les visas de deux ordonnances de janvier 1976, publiées par le secrétariat général du gouvernement béninois, citent l'une et l'autre. Le dépositaire des traités des Nations unies retient la même date, en notant que le pays s'appelait Dahomey jusqu'au 2 décembre 1975. En revanche, la raison du choix n'est établie par aucune source spécialisée. L'idée d'un nom recherché pour sa neutralité ethnique ne se lit que chez des auteurs non spécialistes ; le rattachement au golfe du Bénin n'est guère mieux porté ; et la seule lecture publiée dans une revue à comité de lecture, celle de Camilla Strandsbjerg, place le changement dans une lutte dirigée à la fois contre la puissance coloniale et contre les pouvoirs royaux d'Abomey. Le nom lui-même vient d'un royaume edo, que les Edo appellent Ubini et non Bénin — ils se nomment eux-mêmes Edo — et dont la forme portugaise Beny est elle aussi discutée : Ekhaguosa Aisien la fait venir de l'itsekiri Ubini, Alan Ryder objecte qu'aucune langue du sud du Nigeria n'en offre une source plausible, et l'historien edo Osarhieme Osadolor suit Ryder.\n\n« Dahomey » transcrit le fon Danhomè. La morphologie est réelle : le fon dit xò, ou xomɛ̀, pour le ventre, et mɛ̀ marque le lieu, si bien que « dans le ventre de Dan » se forme correctement. Le récit qui l'accompagne, lui, ne tient pas en place. Un roi cède un terrain, s'irrite de le voir empiéter, demande si l'on va bâtir jusque sur son ventre, et l'on bâtit sur son corps — mais le meurtrier change d'une source à l'autre : Dakodonou chez Robert Norris en 1789, chez Archibald Dalzel en 1793 et, sous la forme Dako, chez Richard Burton en 1864 ; Adarunza dans un récit portugais de 1797 ; Houegbadja chez Auguste Le Hérissé en 1911 ; Akaba chez Maurice Ahanhanzo Glélé. Le rang de la victime change aussi, roi, prince, chef voisin ou chef de terre, et le sens avec lui : le ventre, les entrailles, le cobra, ou la maison. Burton relevait dès 1864 que la légende pourrait être née du nom plutôt que l'inverse, et donnait pour raison qu'une seconde s'y trouvait à l'identique — Le Hérissé rapporte en effet le même meurtre une génération plus tôt, produisant Agrigomè, « dans le carquois d'Agri ». Dalzel imprimait déjà, dans le même volume que le récit, une dérivation concurrente. Et Dan n'est pas seulement un homme : c'est chez les Fon le serpent vodun, et c'est aussi un lieu. Deux chercheurs de l'université d'Abomey-Calavi glosent d'ailleurs Danxômè par « dans le ventre du serpent ». Aucun chercheur béninois ou fon contestant l'étymologie n'a été trouvé ; ceux qui la contestent sont tous européens, ce qui est en soi une donnée.",
   "nameOriginActor": "Le nom a été donné par le président Mathieu Kérékou, chef de l'État, par ordonnance, le Conseil des ministres entendu : annonce le 30 novembre 1975, ordonnance n° 75-80 le 2 décembre. Il n'existait pas de législature à cette date. Pourquoi « Bénin » plutôt qu'un autre nom n'est établi par aucune source spécialisée, et nous ne le tranchons pas. « Dahomey » était le nom du royaume fon, transcrit par les Européens à partir du XVIIIe siècle ; qui a nommé ce royaume, et d'après quoi, reste discuté.",
+  "nameHistory": {
+    "summary": "Le nom Bénin désigne un pays d'Afrique de l'Ouest, la République du Bénin, qui a repris en 1975 le nom d'un ancien royaume situé dans l'actuel Nigeria. Le pays s'appelait auparavant Dahomey, d'après le fon Danxomè. Les sources ne s'accordent pas sur l'origine de ces deux noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bénin",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un ancien royaume du Nigeria, repris par l'État en 1975 ; son origine reste discutée.",
+        "periodLabel": "Écrit dès le XVe siècle ; nom de l'État depuis 1975",
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": null,
+              "label": "Depuis le 2 décembre 1975"
+            },
+            "statement": "Le nom Bénin est celui de l'État depuis l'ordonnance n° 75-80 du 2 décembre 1975 « portant dénomination de l'État », qui suit un discours du 30 novembre. Le pays s'appelait jusque-là Dahomey, selon les Nations unies.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ordonnance n° 76-6 du 26 janvier 1976 portant dénomination des sociétés d'État et d'économie mixte, des établissements publics et autres institutions de l'État",
+                "author": "Présidence de la République populaire du Bénin",
+                "year": 1976,
+                "url": "https://sgg.gouv.bj/doc/ordonnance-1976-6/download",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Publiée par le secrétariat général du gouvernement béninois, lue le 9 octobre 2026. Ses visas citent l'ordonnance n° 75-80 du 2 décembre 1975 portant dénomination de l'État et le discours du 30 novembre 1975. L'ordonnance 75-80 elle-même n'a pas été lue."
+              },
+              {
+                "title": "Traités multilatéraux déposés auprès du Secrétaire général, informations historiques",
+                "author": "Nations unies, Section des traités",
+                "year": null,
+                "url": "https://treaties.un.org/pages/HistoricalInfo.aspx",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Page lue le 9 octobre 2026. Note sur le Bénin : « Formerly: \"Dahomey\" until 2 December 1975 »."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Benin",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/benin",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Elle date du 1er août 1960 l'indépendance de la République du Dahomey et rapporte qu'en 1975 le pays prend le nom de Bénin."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Bénin désigne depuis 1975 un pays d'Afrique de l'Ouest, appelé auparavant Dahomey. Il reprend le nom d'un ancien royaume situé dans l'actuel Nigeria, dont les habitants se nomment eux-mêmes Edo. L'origine du mot Bénin est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Traités multilatéraux déposés auprès du Secrétaire général, informations historiques",
+                "author": "Nations unies, Section des traités",
+                "year": null,
+                "url": "https://treaties.un.org/pages/HistoricalInfo.aspx",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Page lue le 9 octobre 2026. Note sur le Bénin : « Formerly: \"Dahomey\" until 2 December 1975 »."
+              },
+              {
+                "title": "The Military System of Benin Kingdom, c. 1440-1897",
+                "author": "Osarhieme Benson Osadolor",
+                "year": 2001,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/3156/2/Disse.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, Universität Hamburg, lue le 9 octobre 2026. L'auteur, historien edo, s'appuie sur la tradition de Benin et sur des entretiens menés à Benin City ; les ouvrages qu'il cite n'ont pas été lus.",
+                "page": "p. 50"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "1975"
+            },
+            "statement": "Le nom Bénin aurait été choisi pour marquer une rupture à la fois avec l'influence coloniale et avec la mémoire du royaume d'Abomey, dans une lutte que le pouvoir disait antiféodale, selon Camilla Strandsbjerg.",
+            "actors": [
+              {
+                "name": "Mathieu Kérékou",
+                "role": "chef de l'État en 1975"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Continuité et rupture dans les représentations du pouvoir politique au Bénin entre 1972 et 2001, Cahiers d'études africaines, n° 177",
+                "author": "Camilla Strandsbjerg",
+                "year": 2005,
+                "url": "https://doi.org/10.4000/etudesafricaines.14893",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "paragraphe 33",
+                "notes": "Article lu en ligne le 9 octobre 2026, avec une lecture assistée de la page. Il rattache le changement de nom à une lutte antiféodale dirigée contre les pouvoirs royaux comme contre le pouvoir colonial."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1400,
+              "to": 1599,
+              "label": "XVe et XVIe siècles"
+            },
+            "statement": "Le nom Bénin apparaît sous la forme Beny dans les récits des explorateurs et marchands portugais, où il désigne le territoire et la capitale du roi de Benin, selon Osarhieme Benson Osadolor. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume, lui, existait avant elle sous d'autres noms.",
+            "formAsWritten": "Beny",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Military System of Benin Kingdom, c. 1440-1897",
+                "author": "Osarhieme Benson Osadolor",
+                "year": 2001,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/3156/2/Disse.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, Universität Hamburg, lue le 9 octobre 2026. L'auteur, historien edo, s'appuie sur la tradition de Benin et sur des entretiens menés à Benin City ; les ouvrages qu'il cite n'ont pas été lus.",
+                "page": "p. 50"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1200,
+              "to": 1299,
+              "label": "Milieu du XIIIe siècle, selon la tradition"
+            },
+            "statement": "On appelle alors le royaume Ubini : l'oba Ewedo exige qu'il reprenne ce nom, tenu pour son nom d'origine, selon la tradition de Benin rapportée par Osarhieme Benson Osadolor.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Military System of Benin Kingdom, c. 1440-1897",
+                "author": "Osarhieme Benson Osadolor",
+                "year": 2001,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/3156/2/Disse.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, Universität Hamburg, lue le 9 octobre 2026. L'auteur, historien edo, s'appuie sur la tradition de Benin et sur des entretiens menés à Benin City ; les ouvrages qu'il cite n'ont pas été lus.",
+                "page": "p. 52"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1000,
+              "label": "Ier millénaire, selon la tradition"
+            },
+            "statement": "On parle d'Igodomigodo, « le pays d'Igodo », pour désigner les villages réunis sous le premier roi de la dynastie des Ogiso, selon la tradition de Benin rapportée par Osarhieme Benson Osadolor.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Military System of Benin Kingdom, c. 1440-1897",
+                "author": "Osarhieme Benson Osadolor",
+                "year": 2001,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/3156/2/Disse.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, Universität Hamburg, lue le 9 octobre 2026. L'auteur, historien edo, s'appuie sur la tradition de Benin et sur des entretiens menés à Benin City ; les ouvrages qu'il cite n'ont pas été lus.",
+                "page": "p. 51"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Bénin viendrait d'Ubini, le nom que les Itsekiri donnaient au royaume et qu'ils auraient transmis aux premiers explorateurs portugais, selon Ekhaguosa Aisien cité par Osarhieme Benson Osadolor.",
+            "hypothesisGroup": "origine du nom Bénin",
+            "sources": [
+              {
+                "title": "The Military System of Benin Kingdom, c. 1440-1897",
+                "author": "Osarhieme Benson Osadolor",
+                "year": 2001,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/3156/2/Disse.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, Universität Hamburg, lue le 9 octobre 2026. L'auteur, historien edo, s'appuie sur la tradition de Benin et sur des entretiens menés à Benin City ; les ouvrages qu'il cite n'ont pas été lus.",
+                "page": "p. 50"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Bénin ne viendrait d'aucune langue du sud du Nigeria, selon Alan Ryder. Osarhieme Benson Osadolor le suit et note que le nom Beni, associé aux Nupe, est plus proche du Beny des Portugais que les explications données à Benin même.",
+            "hypothesisGroup": "origine du nom Bénin",
+            "sources": [
+              {
+                "title": "The Military System of Benin Kingdom, c. 1440-1897",
+                "author": "Osarhieme Benson Osadolor",
+                "year": 2001,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/3156/2/Disse.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, Universität Hamburg, lue le 9 octobre 2026. L'auteur, historien edo, s'appuie sur la tradition de Benin et sur des entretiens menés à Benin City ; les ouvrages qu'il cite n'ont pas été lus.",
+                "page": "p. 50"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dahomey",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "fon",
+        "namedBy": null,
+        "shortLine": "Le nom du royaume fon d'Abomey, Danxomè, porté par le pays jusqu'en 1975.",
+        "periodLabel": "Écrit dès 1734 ; nom de l'État jusqu'en 1975",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": 1975,
+              "label": "1960-1975"
+            },
+            "statement": "Le nom Dahomey est celui de la République du Dahomey, indépendante le 1er août 1960, selon l'Office of the Historian. Il reste le nom du pays jusqu'au 2 décembre 1975, selon les Nations unies.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Benin",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/benin",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Elle date du 1er août 1960 l'indépendance de la République du Dahomey et rapporte qu'en 1975 le pays prend le nom de Bénin."
+              },
+              {
+                "title": "Traités multilatéraux déposés auprès du Secrétaire général, informations historiques",
+                "author": "Nations unies, Section des traités",
+                "year": null,
+                "url": "https://treaties.un.org/pages/HistoricalInfo.aspx",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Page lue le 9 octobre 2026. Note sur le Bénin : « Formerly: \"Dahomey\" until 2 December 1975 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit au XIXe siècle"
+            },
+            "statement": "Le nom Dahomey transcrit le fon Danxomè, le nom de l'ancien royaume dont Abomey était la capitale. Il s'applique d'abord à l'ancien palais, puis à la capitale, puis au royaume entier, selon Richard Burton. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Mobilisations politiques autour du Festival international des cultures de Danxômè (Abomey, Bénin), Cahiers d'études africaines, n° 233",
+                "author": "Midjèou Béranger Avohouémè Togbé et Lambert Roch Mongbo",
+                "year": 2019,
+                "url": "https://doi.org/10.4000/etudesafricaines.25257",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "paragraphe 6",
+                "notes": "Deux chercheurs de l'université d'Abomey-Calavi. Article lu en ligne le 9 octobre 2026 : « l'ex-royaume du Danxômè (en langue fon « dans le ventre du serpent ») »."
+              },
+              {
+                "title": "A Mission to Gelele, King of Dahome, vol. I",
+                "author": "Richard F. Burton",
+                "year": 1864,
+                "url": "https://archive.org/details/amissiontogelel00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 160-161 et notes",
+                "notes": "Londres, Tinsley Brothers, 1864. Lu en fac-similé le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1734,
+              "to": 1734,
+              "label": "Récit publié en 1734"
+            },
+            "statement": "Le nom Dahomey est écrit Dahomè par le capitaine anglais William Snelgrave, qui raconte la conquête du royaume de Ouidah par le « roi de Dahomè ». C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand le royaume le porte.",
+            "formAsWritten": "Dahomè",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A New Account of Some Parts of Guinea, and the Slave-Trade",
+                "author": "William Snelgrave",
+                "year": 1734,
+                "url": "https://archive.org/details/newaccountofsome00snel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 6",
+                "notes": "Londres, 1734. Récit d'un capitaine anglais sur la conquête du royaume de Ouidah par le roi de Dahomè. Lu en fac-similé le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le royaume, selon les récits européens"
+            },
+            "statement": "On parle alors des Foys, avec pour capitale Dawhee, pour désigner le peuple d'où sortiront les rois du Dahomey, selon Robert Norris. Richard Burton y reconnaît Ffon, l'ancien nom de ce peuple et de sa langue.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Memoirs of the Reign of Bossa Ahádee, King of Dahomy",
+                "author": "Robert Norris",
+                "year": 1789,
+                "url": "https://archive.org/details/bim_eighteenth-century_memoirs-of-the-reign-of-_norris-robert_1789",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. xiv",
+                "notes": "Londres, 1789. Lu en fac-similé le 9 octobre 2026. L'introduction donne le récit du palais bâti sur le corps de Da, d'où Da-homy, « une maison bâtie dans le ventre de Da »."
+              },
+              {
+                "title": "A Mission to Gelele, King of Dahome, vol. I",
+                "author": "Richard F. Burton",
+                "year": 1864,
+                "url": "https://archive.org/details/amissiontogelel00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 160-161 et notes",
+                "notes": "Londres, Tinsley Brothers, 1864. Lu en fac-similé le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1789,
+              "to": 1864,
+              "label": "Rapportée de 1789 à 1864"
+            },
+            "statement": "Le nom Dahomey viendrait d'une maison bâtie « dans le ventre de Da » : un chef fon aurait tué Da, roi d'Abomey, et bâti un palais sur son corps, selon Robert Norris en 1789 et Archibald Dalzel en 1793. Richard Burton rapporte le même récit en 1864, mais écrit qu'il pourrait être né du nom plutôt que l'inverse, car un récit presque identique explique un autre nom, Agri-go-men.",
+            "hypothesisGroup": "origine du nom Dahomey",
+            "sources": [
+              {
+                "title": "Memoirs of the Reign of Bossa Ahádee, King of Dahomy",
+                "author": "Robert Norris",
+                "year": 1789,
+                "url": "https://archive.org/details/bim_eighteenth-century_memoirs-of-the-reign-of-_norris-robert_1789",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. xiv",
+                "notes": "Londres, 1789. Lu en fac-similé le 9 octobre 2026. L'introduction donne le récit du palais bâti sur le corps de Da, d'où Da-homy, « une maison bâtie dans le ventre de Da »."
+              },
+              {
+                "title": "The History of Dahomy, an Inland Kingdom of Africa",
+                "author": "Archibald Dalzel",
+                "year": 1793,
+                "url": "https://archive.org/details/historydahomyan00dalzgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1793. Lu en fac-similé le 9 octobre 2026. Le récit du ventre de Da est à la page 2 ; la préface rapproche Dahomy du Dauma des cartes anciennes.",
+                "page": "p. 2"
+              },
+              {
+                "title": "A Mission to Gelele, King of Dahome, vol. I",
+                "author": "Richard F. Burton",
+                "year": 1864,
+                "url": "https://archive.org/details/amissiontogelel00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 160-161 et notes",
+                "notes": "Londres, Tinsley Brothers, 1864. Lu en fac-similé le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Glose publiée en 2019"
+            },
+            "statement": "Le nom Dahomey, Danxomè en fon, voudrait dire « dans le ventre du serpent », selon Midjèou Béranger Avohouémè Togbé et Lambert Roch Mongbo. Richard Burton notait déjà que Danh, le nom du roi tué dans le récit, désigne le serpent ou l'arc-en-ciel.",
+            "hypothesisGroup": "origine du nom Dahomey",
+            "sources": [
+              {
+                "title": "Mobilisations politiques autour du Festival international des cultures de Danxômè (Abomey, Bénin), Cahiers d'études africaines, n° 233",
+                "author": "Midjèou Béranger Avohouémè Togbé et Lambert Roch Mongbo",
+                "year": 2019,
+                "url": "https://doi.org/10.4000/etudesafricaines.25257",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "paragraphe 6",
+                "notes": "Deux chercheurs de l'université d'Abomey-Calavi. Article lu en ligne le 9 octobre 2026 : « l'ex-royaume du Danxômè (en langue fon « dans le ventre du serpent ») »."
+              },
+              {
+                "title": "A Mission to Gelele, King of Dahome, vol. I",
+                "author": "Richard F. Burton",
+                "year": 1864,
+                "url": "https://archive.org/details/amissiontogelel00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 160-161 et notes",
+                "notes": "Londres, Tinsley Brothers, 1864. Lu en fac-similé le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1793,
+              "to": 1793,
+              "label": "Proposée en 1793"
+            },
+            "statement": "Le nom Dahomey serait une forme à peine modifiée de Dauma, un royaume que des cartes européennes placent dans la même région depuis la fin du XVIe siècle, selon la préface de l'histoire du Dahomey d'Archibald Dalzel. Richard Burton rejette ce rapprochement.",
+            "hypothesisGroup": "origine du nom Dahomey",
+            "sources": [
+              {
+                "title": "The History of Dahomy, an Inland Kingdom of Africa",
+                "author": "Archibald Dalzel",
+                "year": 1793,
+                "url": "https://archive.org/details/historydahomyan00dalzgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1793. Lu en fac-similé le 9 octobre 2026. Le récit du ventre de Da est à la page 2 ; la préface rapproche Dahomy du Dauma des cartes anciennes.",
+                "page": "préface, p. xiii-xiv"
+              },
+              {
+                "title": "A Mission to Gelele, King of Dahome, vol. I",
+                "author": "Richard F. Burton",
+                "year": 1864,
+                "url": "https://archive.org/details/amissiontogelel00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 160-161 et notes",
+                "notes": "Londres, Tinsley Brothers, 1864. Lu en fac-similé le 9 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
