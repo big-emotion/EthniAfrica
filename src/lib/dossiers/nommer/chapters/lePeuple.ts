@@ -21,7 +21,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
     "Presque tous les peuples documentés ici portent un nom venu du dehors. Qui le leur a donné ?",
   standfirst: {
     id: "standfirst",
-    text: "Le corpus tient plus de noms donnés de l'extérieur que de noms revendiqués de l'intérieur. L'écart ne mesure pas d'abord la colonisation : il mesure qui a écrit.",
+    text: "Nos fiches recensent davantage de noms donnés de l'extérieur que de noms revendiqués par les peuples eux-mêmes. Cet écart dépend des personnes qui ont écrit les textes disponibles ; il ne permet pas à lui seul de mesurer l'effet de la colonisation.",
     sourceRefs: [],
     figureRefs: ["corpus-exonyms", "corpus-autonyms"],
   },
@@ -269,7 +269,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
       blocks: [
         {
           id: "herero-sans-connotation",
-          text: "Le dossier d'appellation des Ovaherero prend soin d'écrire l'inverse de ce qu'on attendrait. « Herero » est l'exonyme international, né du contact colonial — et, à la différence d'autres exonymes coloniaux du corpus, aucune source ne documente de connotation péjorative attachée au mot lui-même.",
+          text: "Notre fiche sur les Ovaherero distingue l'histoire du peuple du sens de son nom. « Herero » est un nom utilisé à l'international et lié au contact colonial. Les sources consultées ne décrivent pas de sens méprisant attaché au mot lui-même.",
           sourceRefs: ["afrik-ppl-herero", "ethnologue-her"],
           figureRefs: [],
         },
@@ -294,13 +294,13 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
       blocks: [
         {
           id: "compter-le-mot-administration",
-          text: "Le corpus enregistre d'où vient un exonyme. Il n'enregistre pas ce qui l'a fait tenir. On peut compter les fiches qui emploient le mot « administration » ; on ne peut pas compter les noms qu'une administration a réellement imposés, et ce chapitre ne le fait pas.",
+          text: "Nos fiches décrivent l'origine de noms donnés de l'extérieur, sans toujours expliquer pourquoi ils ont continué à être utilisés. La présence du mot « administration » dans une fiche ne signifie pas qu'une administration a imposé le nom. Elle ne permet donc pas de compter les noms réellement imposés.",
           sourceRefs: [],
           figureRefs: ["exonyms-imposed-by-administration"],
         },
         {
           id: "les-fiches-muettes",
-          text: "Et il reste les 309 fiches muettes. Elles ne disent pas que tout va bien : elles disent que personne n'a encore regardé. C'est la première dette de ce dossier envers son propre corpus.",
+          text: "Lors du relevé utilisé pour ce chapitre, 309 fiches ne précisaient pas si le nom était contesté ou hérité de la colonisation. Ce manque d'information ne signifie pas que ces noms ne posent aucune question. Il reste à les étudier.",
           sourceRefs: [],
           figureRefs: ["status-undeclared"],
         },

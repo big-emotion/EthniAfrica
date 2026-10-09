@@ -191,3 +191,9 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
     },
   },
 };
+
+// @req REQ-135
+export const noNameFicheCopy = {
+  label: "Nom absent",
+  body: "Nous n’avons pas encore de fiche sur ce nom.",
+} as const;

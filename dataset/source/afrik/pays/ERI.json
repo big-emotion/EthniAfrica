@@ -122,7 +122,7 @@
         "mainRegion": "Hauts plateaux (Asmara, Mendefera)",
         "languages": ["Tigrinya (tir", "ISO 639-3)", "anglais", "arabe"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "\"Təgray\" est l'auto-appellation. \"Tigrinya\" est l'exonyme le plus courant. \"Abyssins\" est un terme oriental/colonial englobant et imprécis qui doit être évité. Distinction importante avec les Tigré (musulmans) qui parlent une langue distincte."
+        "appellationRemarks": "Les personnes concernées se nomment Təgray. Tigrinya est le nom donné de l'extérieur le plus courant. Abyssins est une ancienne désignation orientale et coloniale qui réunit plusieurs peuples sans les distinguer ; elle est à éviter. Les Tigré, musulmans, forment un autre peuple et parlent une autre langue."
       },
       {
         "name": "Tigré",
@@ -135,7 +135,7 @@
         "mainRegion": "Nord-ouest, Sahel (régions côtières et basses terres)",
         "languages": ["Tigré (tig", "ISO 639-3)", "arabe", "tigrinya"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "\"Tigré\" ou \"Tigrayit\" est l'auto-appellation. \"Tigré\" est l'exonyme le plus courant. Distinction importante avec les Tigréens (Tigray) qui parlent le tigrinya et habitent les hauts plateaux. Les Tigré sont majoritairement musulmans, contrairement aux Tigréens chrétiens."
+        "appellationRemarks": "Les personnes concernées se nomment Tigré ou Tigrayit. Tigré est aussi le nom le plus courant à l'extérieur du groupe. Elles se distinguent des Tigréens, ou Tigray, qui parlent tigrinya et vivent sur les hauts plateaux. Les Tigré sont majoritairement musulmans, tandis que les Tigréens sont présentés ici comme chrétiens."
       },
       {
         "name": "Afar",
@@ -150,7 +150,7 @@
         "mainRegion": "Littoral et sud-est",
         "languages": ["Afar (aar", "ISO 639-3)", "arabe"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "\"Qafár\" est l'auto-appellation. \"Afar\" est l'exonyme le plus courant et accepté. \"Danakil\" est un terme européen et arabe ancien qui peut avoir une connotation péjorative et doit être évité."
+        "appellationRemarks": "Les personnes concernées se nomment Qafár. Afar est le nom donné de l'extérieur le plus courant et accepté. Danakil, ancien nom européen et arabe, peut être méprisant ; il est donc à éviter."
       },
       {
         "name": "Saho",
@@ -180,7 +180,7 @@
         "mainRegion": "Régions frontalières avec le Soudan",
         "languages": ["Beja (bej", "ISO 639-3)", "tigré", "arabe"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "\"Bega\" ou \"Hadendowa\" est l'auto-appellation. \"Beja\" est l'exonyme le plus courant. \"Hedareb\" est un terme spécifique pour les Beja d'Érythrée. Pas de terme péjoratif connu. Peuple beja transfrontalier (Soudan-Érythrée)."
+        "appellationRemarks": "Les personnes concernées emploient les noms Bega ou Hadendowa. Beja est le nom donné de l'extérieur le plus courant. Hedareb désigne plus précisément les Beja d'Érythrée. Ce peuple vit de part et d'autre de la frontière entre le Soudan et l'Érythrée. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Rashaida",

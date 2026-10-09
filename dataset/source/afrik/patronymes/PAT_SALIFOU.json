@@ -73,7 +73,7 @@
       "url": "https://www.behindthename.com/name/salifou/submitted",
       "tier": "unverified",
       "source_kind": "community",
-      "notes": "Contribution d'utilisateur consultée en anglais ; le site précise que ces contributions ne sont pas vérifiées par son équipe éditoriale. Elle présente Salifou comme une variante de Salifu ; cette proposition reste au statut claimed."
+      "notes": "Contribution d'un utilisateur, consultée en anglais. Le site précise que son équipe éditoriale ne vérifie pas ces contributions. L'utilisateur propose de voir dans Salifou une variante de Salifu. Cette explication reste une hypothèse."
     },
     {
       "sourceKey": "niger-mae-andre-salifou",
@@ -87,7 +87,7 @@
   "gaps": [
     {
       "fieldPath": "origin.oralTraditions",
-      "reason": "Les recherches sur « Salifou » dans les corpus et travaux songhay-zarma, avec les termes tradition orale, griot et jasare, n'ont livré aucun récit attribué et transcrit."
+      "reason": "Les textes songhay-zarma consultés ne donnent pas de récit oral sur Salifou dont nous ayons à la fois le texte et le nom de la personne qui l'a raconté."
     },
     {
       "fieldPath": "origin.writtenChronicles",

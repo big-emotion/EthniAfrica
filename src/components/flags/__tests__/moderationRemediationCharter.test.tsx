@@ -102,7 +102,7 @@ describe("the remediation axis is a record, not an opinion", () => {
     );
 
     const record = screen.getByTestId("flag-remediation-record");
-    expect(record).toHaveTextContent("État du corpus");
+    expect(record).toHaveTextContent("Avancement de la correction");
     expect(record).toHaveTextContent("Correction non encore publiée");
     expect(record).toHaveTextContent("n'a pas changé à ce jour");
   });

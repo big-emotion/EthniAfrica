@@ -118,7 +118,7 @@
         "mainRegion": "Toutes les régions du Niger",
         "languages": ["Fulfulde (ful", "ISO 639-3)", "français"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Fulɓe\" est l'auto-appellation. \"Peul\" et \"Fulani\" sont des exonymes acceptés. \"Fellata\" peut avoir une connotation péjorative dans certains contextes et doit être évité. Pasteurs et commerçants musulmans."
+        "appellationRemarks": "Le peuple se nomme Fulɓe. Peul et Fulani sont aussi des noms acceptés, donnés de l'extérieur. Fellata peut être méprisant dans certains contextes ; il est donc à éviter. Les groupes décrits ici sont musulmans et pratiquent l'élevage et le commerce."
       },
       {
         "name": "Touareg",
@@ -132,7 +132,7 @@
         "mainRegion": "Nord du Niger (Sahara)",
         "languages": ["Tamasheq (tmh", "ISO 639-3)", "français"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "\"Kel Tamasheq\" ou \"Imuhagh\" sont les auto-appellations. \"Touareg\" est l'exonyme le plus courant. \"Berbère\" est un terme descriptif mais peut être problématique dans certains contextes. Nomades sahariens, commerce transsaharien, rébellions touarègues (1990s-2010s)."
+        "appellationRemarks": "Les personnes concernées se nomment Kel Tamasheq ou Imuhagh. Touareg est le nom donné de l'extérieur le plus courant. Berbère sert aussi à les décrire, mais peut poser problème dans certains contextes. Leur histoire est liée au nomadisme saharien, au commerce à travers le Sahara et aux rébellions touarègues des années 1990 à 2010."
       },
       {
         "name": "Kanuri",

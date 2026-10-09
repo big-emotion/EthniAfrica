@@ -27,7 +27,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "official",
     sourceKind: "linguistic_reference",
     notes:
-      "Références le glossonyme otjiherero et l'ethnonyme Ovaherero. Déjà citée par la fiche PPL_HERERO du corpus. Elle n'atteste aucune connotation péjorative attachée à « Herero » — c'est précisément ce que le chapitre lui fait dire.",
+      "Cette référence donne otjiherero comme nom de la langue et Ovaherero comme nom du peuple. Elle est aussi citée dans notre fiche sur les Herero. Elle ne décrit pas de sens méprisant attaché au mot « Herero ».",
     discoveredVia: [],
   },
   "afrik-ppl-herero": {
@@ -40,7 +40,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "referenced",
     sourceKind: "repository",
     notes:
-      "La fiche du peuple Herero : dataset/source/afrik/peuples/FLG_BANTU/PPL_HERERO.json. Citée pour la formulation du contre-exemple, dont la prudence est reprise mot pour mot.",
+      "Notre fiche sur les noms des Herero est citée pour la distinction entre l'histoire coloniale du peuple et le sens du nom lui-même.",
     discoveredVia: [],
   },
   "afrik-ppl-dinka": {
@@ -53,7 +53,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "referenced",
     sourceKind: "repository",
     notes:
-      "Le corpus atteste l'origine arabe de l'exonyme et sa reprise par l'administration anglo-égyptienne, ainsi que la montée de « Jieng » dans les revendications depuis 2011. Il ne cite lui-même aucune source secondaire pour l'étymologie — voir la remontée demandée.",
+      "Notre fiche sur les Dinka propose une origine arabe du nom et décrit sa reprise par l'administration anglo-égyptienne. Elle évoque aussi l'usage croissant de « Jieng » dans les revendications depuis 2011. Elle ne cite toutefois pas de source à l'appui de l'explication de l'origine du nom.",
     discoveredVia: [],
   },
   "britannica-khoekhoe": {
@@ -108,7 +108,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "referenced",
     sourceKind: "academic",
     notes:
-      "Établit la date — 8 janvier 1897, The Times de Londres — et la citation de l'article. Distingue « suggérer » de « imposer » : le nom n'est officialisé qu'en 1914, par Lugard, à l'amalgamation. Signale aussi des occurrences antérieures de « Nigerian » chez William Cole (1862) et Richard Burton (1863), sans trancher si elles sont contemporaines ou ajoutées à l'édition. La fiche NGA.json disait 1914 et attribuait l'officialisation à Shaw : corrigée avec cette source, qui est la première étymologie sourcée du corpus pays.",
+      "L'article situe la proposition du nom Nigeria au 8 janvier 1897, dans The Times de Londres. Il la distingue de son officialisation par Lugard en 1914, lors de la réunion des territoires. Il signale aussi le mot « Nigerian » chez William Cole (1862) et Richard Burton (1863), sans déterminer si ces usages datent du texte initial ou d'une édition ultérieure.",
     discoveredVia: [],
   },
   "afrik-pays-ben": {

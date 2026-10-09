@@ -32,3 +32,21 @@ type NommerCopy = typeof fr;
 
 // @req REQ-145
 export const nommerCopy: Record<Language, NommerCopy> = { fr };
+
+// @req REQ-113
+export const nommerMeasuresCopy = {
+  ratio: (ratio: number) => `${ratio} pour 1`,
+  ratioClaim: (ratio: number) =>
+    `Nos fiches recensent environ ${ratio} noms donnés de l'extérieur pour un nom utilisé par les peuples eux-mêmes.`,
+  ratioProvenance: (external: string, selfGiven: string) =>
+    `${external} noms donnés de l'extérieur et ${selfGiven} noms utilisés par les peuples eux-mêmes.`,
+  share: (count: number, total: number) => `${count} sur ${total}`,
+  contestedClaim:
+    "Ces fiches décrivent un nom contesté ou hérité de la colonisation.",
+  undeclared: (count: number) =>
+    `${count} autres fiches ne donnent pas d'information sur ce point.`,
+  countryClaim:
+    "Ces pays portent un nom choisi ou rétabli par des Africains, selon notre lecture des fiches.",
+  countryProvenance:
+    "Ce classement vient d'une lecture de 54 fiches pays. Au moment du relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources.",
+} as const;

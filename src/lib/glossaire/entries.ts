@@ -48,7 +48,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Endonym",
     family: "origine",
     definition:
-      "Le nom d'un groupe dans sa propre langue. Le corpus en déclare 798 pour 800 fiches — et 3 201 noms venus du dehors.",
+      "Un endonyme est un nom utilisé pour un groupe dans sa propre langue. Le relevé cité dans ce glossaire en comptait 798 pour 800 fiches, contre 3 201 noms donnés de l'extérieur.",
     corpusExample: "Ovaherero, « les possesseurs de bétail » en otjiherero.",
     corpusPresence: "instantiated",
     seeAlso: ["autonyme", "exonyme"],
@@ -76,7 +76,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     definition:
       "Le nom donné à un groupe depuis le dehors — un voisin, un marchand, une administration. Ni forcément hostile, ni forcément colonial.",
     corpusExample:
-      "3 201 exonymes au corpus ; 120 fiches attribuent le leur à des voisins, 75 à l'arabe.",
+      "Le relevé cité dans ce glossaire comptait 3 201 noms donnés de l'extérieur. Parmi les fiches, 120 attribuaient un tel nom à des voisins et 75 à l'arabe.",
     corpusPresence: "instantiated",
     seeAlso: ["endonyme", "exonyme-depreciatif"],
     chapterRef: "le-peuple",
@@ -128,7 +128,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     family: "objet",
     definition:
       "Le nom d'une personne, tous systèmes confondus — prénom, nom de clan, nom de louange, nom d'attribution. Le terme générique que « patronyme » prétend à tort recouvrir.",
-    corpusExample: "Les trente fiches de nom du corpus.",
+    corpusExample: "Les trente fiches de nom du relevé présenté ici.",
     corpusPresence: "instantiated",
     seeAlso: ["patronyme-matronyme", "jamu", "oriki", "nisba"],
     chapterRef: "la-personne",
@@ -183,7 +183,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     definition:
       "Le nom d'une langue. Un glossonyme n'est pas un ethnonyme, et une famille de langues ne décrit aucune population.",
     corpusExample:
-      "Le corpus range 800 peuples sous 25 familles ; la plus vaste porte un mot forgé au XIXe siècle.",
+      "Le relevé cité ici regroupait 800 peuples dans 25 familles de langues. Le nom de la plus vaste a été créé au XIXe siècle.",
     corpusPresence: "instantiated",
     seeAlso: ["ethnonyme", "reification-ethnique"],
     chapterRef: "la-langue",
@@ -208,7 +208,8 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     family: "objet",
     definition:
       "Nom de clan mandingue. Ni patronyme ni nom de famille : une appartenance, transmise mais aussi accordée — par alliance, par clientèle, par captivité.",
-    corpusExample: "Dix-huit fiches du corpus déclarent un nom de clan.",
+    corpusExample:
+      "Dix-huit fiches du relevé présenté ici décrivent un nom de clan.",
     corpusPresence: "instantiated",
     seeAlso: ["anthroponyme", "oriki"],
     chapterRef: "la-personne",
@@ -221,7 +222,8 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     family: "objet",
     definition:
       "Nom d'attribution arabo-berbère, formé sur un lieu, un groupe d'origine ou un métier. La littérature dit « tribu » là où nous écrivons « groupe » — la règle vaut pour le monde arabe comme pour le reste.",
-    corpusExample: "Deux fiches du corpus déclarent ce système.",
+    corpusExample:
+      "Deux fiches du relevé présenté ici décrivent cette manière de nommer les personnes.",
     corpusPresence: "instantiated",
     seeAlso: ["anthroponyme"],
     chapterRef: "la-personne",
@@ -234,7 +236,8 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     family: "objet",
     definition:
       "Nom de clan attaché à un animal ou à une plante, souvent avec un interdit alimentaire et une liste fermée de prénoms permis.",
-    corpusExample: "Quatre fiches du corpus déclarent ce système.",
+    corpusExample:
+      "Quatre fiches du relevé présenté ici décrivent cette manière de nommer les personnes.",
     corpusPresence: "instantiated",
     seeAlso: ["jamu", "anthroponyme"],
     chapterRef: "la-personne",
@@ -247,7 +250,8 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     family: "objet",
     definition:
       "Nom de louange yoruba : une séquence qui dit la lignée, ses hauts faits et ses attributs. Il se récite plutôt qu'il ne s'inscrit.",
-    corpusExample: "Deux fiches du corpus déclarent un nom de louange.",
+    corpusExample:
+      "Deux fiches du relevé présenté ici décrivent un nom de louange.",
     corpusPresence: "instantiated",
     seeAlso: ["jamu", "anthroponyme"],
     chapterRef: "la-personne",
@@ -288,7 +292,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
       "Nom porté après le prénom, institué en République du Zaïre le 12 janvier 1972 en remplacement des prénoms chrétiens, et conservé après la chute du régime qui l'avait décrété.",
     corpusPresence: "defined_only",
     absenceReason:
-      "Aucune fiche de nom du corpus ne déclare le postnom comme système. Le terme est défini parce que le chapitre l'emploie, pas parce que nous l'instancions.",
+      "Le relevé utilisé pour ce glossaire ne comprend pas de fiche sur le postnom. Ce terme est expliqué parce que le chapitre l'emploie.",
     seeAlso: ["anthroponyme", "tradition-inventee"],
     chapterRef: "la-personne",
     sourceRefs: ["zaire-authenticite-1972"],
@@ -436,7 +440,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
       "Aucune des 800 fiches n'emploie le mot pour désigner ce qu'elle décrit.",
     corpusPresence: "defined_only",
     absenceReason:
-      "Le terme est défini pour être écarté. Il n'instancie rien dans le corpus, et c'est le but.",
+      "Ce terme est expliqué pour aider à comprendre les textes qui l'utilisent. Nous préférons le mot « peuple » pour présenter les groupes.",
     seeAlso: ["ethnonyme", "reification-ethnique"],
     chapterRef: "le-peuple",
   },

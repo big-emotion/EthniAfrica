@@ -204,7 +204,7 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
         },
         {
           id: "le-classement-est-un-outil",
-          text: "Le corpus range pourtant chaque peuple sous une famille, et cette page en est la meilleure critique disponible : le classement est un outil de lecture, jamais une origine. Là où nous employons une étiquette forgée ailleurs, nous le disons sur la fiche plutôt qu'ici.",
+          text: "Nos fiches regroupent les peuples par famille de langues pour faciliter la lecture. Ce classement ne décrit pas l'origine des personnes. Lorsqu'un nom de groupe a été donné de l'extérieur, la fiche le précise.",
           sourceRefs: [],
           figureRefs: [],
         },

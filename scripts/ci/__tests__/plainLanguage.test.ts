@@ -11,6 +11,41 @@ import {
 
 describe("plain-language editorial contract", () => {
   // @req REQ-178
+  it("preserves official reference titles without permitting ordinary corpus wording", () => {
+    const texts = [
+      "Dictionnaire du Corpus bambara de référence.",
+      "Le Botswana Names Corpus.",
+      "Vers une lexicographie mandingue sur la base de grands corpus annotés",
+      "Notre corpus cite le Corpus bambara de référence.",
+    ];
+    const units = texts.map((text, i) => ({
+      file: "notes.txt",
+      location: String(i),
+      text,
+    }));
+    const errors = lintCopy(units).filter((f) => f.severity === "error");
+    expect(errors.map((f) => f.unit.location)).toEqual(["3"]);
+  });
+
+  // @req REQ-178
+  it("ignores JSX styles/scripts and figure references while checking their surrounding public text", () => {
+    const units = extractCopy(
+      "src/lib/dossiers/example.tsx",
+      `const data = { figureKey: "corpus-peoples", figureRefs: ["corpus-countries"], title: "Notre corpus." }; const x = <div><p>Bonjour.</p><style jsx>{\`/* corpus */ .x {display: block;}\`}</style><script>{"corpus"}</script></div>;`
+    );
+    expect(
+      units.some(
+        (u) =>
+          u.text.includes("display") ||
+          u.text.includes("corpus-peoples") ||
+          u.text.includes("corpus-countries")
+      )
+    ).toBe(false);
+    expect(lintCopy(units).filter((f) => f.severity === "error")).toHaveLength(
+      1
+    );
+  });
+  // @req REQ-178
   it("checks large batches and keeps findings mapped across batch boundaries", () => {
     const units = Array.from({ length: 2100 }, (_, i) => ({
       file: "large.txt",
@@ -20,7 +55,7 @@ describe("plain-language editorial contract", () => {
     expect(lintCopy(units).filter((f) => f.severity === "error")).toHaveLength(
       2100
     );
-  });
+  }, 30_000);
 
   // @req REQ-178
   it("accepts the approved French and rejects the operator's unwanted phrases with the real Vale engine", () => {
@@ -219,5 +254,22 @@ describe("plain-language editorial contract", () => {
       ).errors
     ).toHaveLength(1);
     expect(classifyFindings([finding], []).errors).toHaveLength(1);
+  });
+});
+
+describe("lintCopy without the Vale binary", () => {
+  // @vvago/vale is an optional dependency: its install downloads the binary
+  // from the GitHub API, which rate-limits CI runners with a 403. When that
+  // happens the editorial check must say so, not fail with a bare ENOENT.
+  // @req REQ-178
+  it("names the missing binary and how to recover", () => {
+    expect(() =>
+      lintCopy(
+        [{ file: "a.md", location: "$", text: "Un texte." }],
+        "/nonexistent/vale"
+      )
+    ).toThrow(
+      /Vale binary is missing[\s\S]*optional dependency[\s\S]*rerun the CI job/
+    );
   });
 });

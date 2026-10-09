@@ -25,7 +25,7 @@
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "Une fiche culturelle sud-soudanaise analyse Nyan Deng comme « fille de Deng », tandis que la thèse de LeRoux-Rutledge atteste la graphie soudée Nyandeng en terrain dinka. Aucune étude linguistique dédiée n’ayant été trouvée pour relier explicitement les deux formes, cette analyse reste claimed.",
+        "claim": "Une fiche culturelle sur le Soudan du Sud explique Nyan Deng par « fille de Deng ». La thèse de LeRoux-Rutledge relève aussi Nyandeng, écrit en un seul mot, chez les Dinka. Les sources consultées ne relient pas explicitement les deux formes. Ce sens reste donc une hypothèse pour Nyandeng.",
         "claimStatus": "claimed",
         "sourceRefs": [
           "cultural-atlas-south-sudan-naming",
@@ -67,7 +67,7 @@
       "url": "https://culturalatlas.sbs.com.au/south-sudanese-culture/south-sudanese-culture-naming",
       "tier": "unverified",
       "source_kind": "community",
-      "notes": "Fiche culturelle rédigée par Nina Evason en 2018. Elle explique Nyan Deng comme « fille de Deng » dans un exemple dinka. Ce site de médiation n’est pas une publication savante ; il est conservé comme piste communautaire et le rapprochement avec la forme soudée Nyandeng reste claimed."
+      "notes": "Fiche culturelle rédigée par Nina Evason en 2018. Elle explique Nyan Deng par « fille de Deng » dans un exemple dinka. Ce site présente la culture au grand public ; il ne s'agit pas d'une étude spécialisée. Le lien avec Nyandeng, écrit en un seul mot, reste une hypothèse."
     },
     {
       "sourceKey": "edinburgh-dinka-songs-readme",
@@ -75,33 +75,33 @@
       "url": "https://datashare.ed.ac.uk/bitstream/handle/10283/184/ACollectionofDinkaSongs_readme.pdf",
       "tier": "referenced",
       "source_kind": "repository",
-      "notes": "Documentation du corpus sonore de Bert Remijsen et de l’équipe du projet Metre and Melody in Dinka Speech and Song, University of Edinburgh et SOAS, 2012. Elle précise que les Dinka n’ont pas de nom de famille fixe et que le nom individuel est suivi de ceux du père puis des ascendants."
+      "notes": "Présentation des enregistrements de Bert Remijsen et de l'équipe du projet Metre and Melody in Dinka Speech and Song, University of Edinburgh et SOAS, 2012. Elle indique que les Dinka n'ont pas de nom de famille fixe : le nom d'une personne est suivi de celui de son père, puis de ceux de ses ancêtres."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin.oralTraditions",
-      "reason": "Les recherches « Nyandeng tradition orale », « Nyandeng griot » et « Nyandeng oral history », ainsi que la thèse de LeRoux-Rutledge, la fiche Naming du Cultural Atlas et la documentation du corpus de chants dinka, n’ont livré ni détenteur nommé ni transcription attribuable ; aucune tradition orale n’est ajoutée."
+      "reason": "Les sources consultées, dont la thèse de LeRoux-Rutledge, la fiche Naming du Cultural Atlas et les chants dinka conservés à Édimbourg, ne donnent pas de récit oral sur l'origine de Nyandeng dont nous ayons à la fois le texte et le nom de la personne qui l'a raconté."
     },
     {
       "fieldPath": "origin.writtenChronicles",
-      "reason": "Les recherches « Nyandeng chronicle », « Nyandeng history » et « Nyandeng genealogy », complétées par la thèse de LeRoux-Rutledge, la fiche Naming du Cultural Atlas et la documentation du corpus de chants dinka, n’ont livré aucune chronique primaire qui explique l’origine du nom."
+      "reason": "Les sources consultées, dont la thèse de LeRoux-Rutledge, la fiche Naming du Cultural Atlas et les chants dinka conservés à Édimbourg, ne donnent pas de chronique ancienne expliquant l'origine de Nyandeng."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Les recherches « Nyandeng joking kinship », « Nyandeng name alliance » et « Nyandeng clan pact », ainsi que la thèse de LeRoux-Rutledge, la fiche Naming du Cultural Atlas et la documentation du corpus de chants dinka, n’ont identifié aucun pacte nommé avec un autre nom documenté ici."
+      "reason": "Les sources consultées, dont la thèse de LeRoux-Rutledge, la fiche Naming du Cultural Atlas et les chants dinka conservés à Édimbourg, ne décrivent pas de pacte entre Nyandeng et un autre nom présenté ici."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Les recherches « Nyandeng caste », « Nyandeng occupational group » ainsi que les passages sociaux consultés dans la thèse de LeRoux-Rutledge, la fiche Naming du Cultural Atlas et la documentation du corpus de chants dinka, n’ont établi aucune fonction héréditaire propre à ce nom."
+      "reason": "Les sources consultées, dont la thèse de LeRoux-Rutledge, la fiche Naming du Cultural Atlas et les chants dinka conservés à Édimbourg, ne décrivent pas de rôle social ou de métier transmis avec le nom Nyandeng."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Les recherches biographiques et nécrologiques sur « Nyandeng » dans les catalogues universitaires et institutionnels, complétées par la thèse de LeRoux-Rutledge, la fiche Naming du Cultural Atlas et la documentation du corpus de chants dinka, n’ont pas permis de vérifier un porteur décédé avec une identité suffisamment précise ; les personnes vivantes repérées ne sont pas ajoutées sans auto-identification."
+      "reason": "Nous n'avons pas encore d'exemple de personne à présenter pour le nom Nyandeng."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Les recherches sur la graphie exacte « Nyandeng » dans les index onomastiques et la thèse de LeRoux-Rutledge, la fiche Naming du Cultural Atlas et la documentation du corpus de chants dinka n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
+      "reason": "Les sources consultées, dont la thèse de LeRoux-Rutledge, la fiche Naming du Cultural Atlas et les chants dinka conservés à Édimbourg, ne décrivent pas d'autre nom écrit Nyandeng qui aurait une origine différente."
     }
   ]
 }
