@@ -122,5 +122,254 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mandja désigne un peuple du centre de la Centrafrique, présent aussi au Cameroun et au Tchad. Il s'écrit aussi Manja, Mandjia ou Mandija, et le nom Manza désigne surtout sa langue. Les textes que nous avons lus n'expliquent pas d'où vient ce nom ; nous présentons plus bas ses plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Mandja",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple de Centrafrique, écrit Mandjias dès 1892 ; son origine n'est pas expliquée.",
+        "periodLabel": "Écrit dès 1892 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Mandja désigne un peuple de République centrafricaine, du Cameroun et du Tchad. La Bibliothèque nationale de France le range, avec Mandjia, Manja et Manza, sous une seule forme, Mandija. Les textes que nous avons lus ne disent pas d'où vient ce nom ni ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notice RAMEAU « Mandija (peuple d'Afrique) »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1984,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb11963540f",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité créée en 1984, consultée le 9 octobre 2026. Elle range sous Mandija les formes Mandja, Mandjia, Mandjias, Manja, Manjas et Manza ; Manja y est l'ancienne forme retenue. Elle rattache ce peuple au Cameroun, à la République centrafricaine et au Tchad, et renvoie à la vedette de la Library of Congress « Manja (African people) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "statement": "Le nom Mandja donne son titre à une monographie de Fernand Gaud publiée à Bruxelles en 1911, Les mandja (Congo français), qui contient une liste de mots de leur langue, selon Glottolog.",
+            "sources": [
+              {
+                "title": "Glottolog — Manza (manz1243)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/manz1243",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Consulté le 9 octobre 2026. Nomme la langue Manza et la classe dans le groupe gbaya-manza-ngbaka. Parmi ses références figure la monographie de Fernand Gaud et Cyrille van Overbergh, Les mandja (Congo français), Bruxelles, 1911, qui contient une liste de mots."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Juillet 1892"
+            },
+            "statement": "Le nom Mandja sert aussi à nommer des groupes : un prisonnier nommé Maro explique aux voyageurs que la tribu se divise en Mandjias Gouriés, Mandjias Tommy et Mandjias proprement dits, selon Paul Brunache.",
+            "formAsWritten": "Mandjias Gouriés",
+            "sources": [
+              {
+                "title": "Le centre de l'Afrique : autour du Tchad",
+                "author": "Paul Brunache",
+                "year": 1894,
+                "url": "https://archive.org/details/lecentredelafriq00brunuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 174",
+                "notes": "Paris, Félix Alcan, 1894, lu dans l'exemplaire numérisé sur archive.org. Un prisonnier nommé Maro explique que « la tribu des Mandjias se divise en trois factions : les Mandjias Gouriés, les Mandjias Tommy et les Mandjias proprement dits »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "19 juillet 1892"
+            },
+            "statement": "Le nom Mandja est employé par les guides de la mission Maistre, qui annoncent aux voyageurs qu'ils entrent sur le territoire des Mandjias, selon Paul Brunache.",
+            "formAsWritten": "territoire des Mandjias",
+            "sources": [
+              {
+                "title": "Le centre de l'Afrique : autour du Tchad",
+                "author": "Paul Brunache",
+                "year": 1894,
+                "url": "https://archive.org/details/lecentredelafriq00brunuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 164",
+                "notes": "Paris, Félix Alcan, 1894, lu dans l'exemplaire numérisé sur archive.org. Le 19 juillet 1892 : « au dire des indigènes qui nous accompagnent, nous sommes sur le territoire des Mandjias »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1894,
+              "label": "Voyage de 1892, récit publié en 1894"
+            },
+            "statement": "Le nom Mandja apparaît par écrit sous la forme Mandjias dans le récit de Paul Brunache : Ali, un guide né chez les N'dris, dit n'avoir aucune relation avec cette tribu, plus au nord. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait avant ce récit, qui dit seulement quand des voyageurs ont noté son nom.",
+            "formAsWritten": "Mandjias",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Paul Brunache",
+                "role": "membre des missions Dybowski et Maistre, auteur du récit"
+              },
+              {
+                "name": "Ali",
+                "role": "guide de la mission Maistre, né chez les N'dris"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le centre de l'Afrique : autour du Tchad",
+                "author": "Paul Brunache",
+                "year": 1894,
+                "url": "https://archive.org/details/lecentredelafriq00brunuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 155",
+                "notes": "Paris, Félix Alcan, 1894, lu dans l'exemplaire numérisé sur archive.org. Récit de la mission Maistre, juillet 1892, au village du chef Amazaga. Ali, un guide né chez les N'dris, dit n'avoir « aucune relation avec la tribu des « Mandjias » », plus au nord."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mandija",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Mandija est la forme que la Bibliothèque nationale de France retient aujourd'hui pour ce peuple ; elle retenait auparavant Manja.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notice RAMEAU « Mandija (peuple d'Afrique) »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1984,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb11963540f",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité créée en 1984, consultée le 9 octobre 2026. Elle range sous Mandija les formes Mandja, Mandjia, Mandjias, Manja, Manjas et Manza ; Manja y est l'ancienne forme retenue. Elle rattache ce peuple au Cameroun, à la République centrafricaine et au Tchad, et renvoie à la vedette de la Library of Congress « Manja (African people) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Manja",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Manja est la forme qu'emploie la Library of Congress, en anglais, et celle que la Bibliothèque nationale de France retenait avant Mandija.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notice RAMEAU « Mandija (peuple d'Afrique) »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1984,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb11963540f",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité créée en 1984, consultée le 9 octobre 2026. Elle range sous Mandija les formes Mandja, Mandjia, Mandjias, Manja, Manjas et Manza ; Manja y est l'ancienne forme retenue. Elle rattache ce peuple au Cameroun, à la République centrafricaine et au Tchad, et renvoie à la vedette de la Library of Congress « Manja (African people) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Manza",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Manza désigne surtout la langue de ce peuple : c'est le nom qu'emploient Glottolog et les catalogues des bibliothèques françaises, qui donnent Mandja, Mandjia et Manja comme d'autres noms de la même langue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notice RAMEAU « Manza (langue) »",
+                "author": "IdRef, Agence bibliographique de l'enseignement supérieur",
+                "year": 1984,
+                "url": "https://www.idref.fr/027636410",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité créée en 1984, consultée le 9 octobre 2026 : point d'accès « Manza (langue) », langue de la République centrafricaine, avec pour variantes Mandja, Mandjia et Manja."
+              },
+              {
+                "title": "Glottolog — Manza (manz1243)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/manz1243",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Consulté le 9 octobre 2026. Nomme la langue Manza et la classe dans le groupe gbaya-manza-ngbaka. Parmi ses références figure la monographie de Fernand Gaud et Cyrille van Overbergh, Les mandja (Congo français), Bruxelles, 1911, qui contient une liste de mots."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Manza ne désigne pas les Mbanza, un autre peuple de Centrafrique et des deux Congo, selon l'article de Wikipédia sur les Mandja, qui met en garde contre cette confusion.",
+            "sources": [
+              {
+                "title": "Mandja (peuple) — Wikipédia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://fr.wikipedia.org/wiki/Mandja_(peuple)",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Sections Ethnonymie et Langues, consultées le 9 octobre 2026 : « Manza n'a rien à voir avec la population Mbanza », et la langue du peuple y est appelée mandza ou manza. Ce passage ne cite pas d'autre source que la notice de la BnF pour les variantes du nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

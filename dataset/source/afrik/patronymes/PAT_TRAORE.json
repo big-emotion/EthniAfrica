@@ -319,5 +319,389 @@
       "fieldPath": "homonyms",
       "reason": "Traoré et Tarawele sont deux graphies d'un même jamu, la première étant la graphie française ; le dictionnaire des jamuw en ajoute une troisième, Taraore, sous la même entrée. Il range en outre Sane, Mane, Ouédraogo, Dembélé, Diouf et — à Ségou — Touré parmi ses équivalences, des noms de clan d'autres peuples tenus pour le même, institution que l'Histoire générale de l'Afrique décrit de son côté en notant qu'un Traoré installé en pays wolof peut prendre le nom Diop. Ni les graphies ni les équivalences ne font des lignées distinctes : aucune n'est traitée en homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Traoré est un nom de clan, ou jamu, porté par des familles bambara et malinké. En bambara et en malinké, il se dit Tarawele ; Traoré en est la graphie française, et d'autres graphies existent : Traore et Taraore. Nous présentons plus bas la seule explication de son origine que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Traoré",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan bambara et malinké, graphie française de Tarawele ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Traoré est la graphie française de Tàrawéle, un nom de clan, ou jamu, des Bambara et des Malinké. Les dictionnaires consultés ne lui donnent pas de sens ; nous présentons plus bas la seule explication de son origine que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Entrée Tàrawéle : variantes Traore et Taraore, groupes bambara et malinké, aucun sens donné au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 136",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe. Notice Tàrawéle : les formes Traore et Taraore."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Traoré a des équivalents chez des peuples voisins : en pays wolof, un Traoré est reçu comme un frère par les Diop et peut prendre leur nom, selon Djibril Tamsir Niane.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 6, Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 158, note 44",
+                "notes": "UNESCO, 1985 ; chapitre de D. T. Niane."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "statement": "Le nom Traoré est écrit « Traoré » par Moussa Travélé, dans une plaisanterie que font les Traoré : « Kouloubali, Kouloubali » imite le galop du mauvais cheval, et « Traoré, Traoré, Traoré » celui du bon coureur.",
+            "formAsWritten": "Traoré",
+            "actors": [
+              {
+                "name": "Moussa Travélé",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Petit dictionnaire français-bambara et bambara-français",
+                "author": "Moussa Travélé",
+                "year": 1913,
+                "url": "https://archive.org/details/petitdictionnair00travuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 164",
+                "notes": "Paris, Paul Geuthner, 1913, avec une préface de Maurice Delafosse. L'auteur est interprète dans la colonie du Haut-Sénégal-Niger, et le bambara est sa langue maternelle selon la préface. Lu dans la numérisation d'Internet Archive. Page 164, article Fasakafasaka."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "statement": "Le nom Traoré est écrit « Traouré » par Louis-Gustave Binger, qui décrit la population d'un village entre le Baoulé et la Bagoé comme « Bambara Traouré ». C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Traouré",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 160",
+                "notes": "Hachette, Paris, 1892, deux tomes ; le récit avait d'abord paru dans la revue Le Tour du monde en 1891. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. Tome 1, page 160, au village de Bénokhobougoula : « Le fond de la population était Bambara Traouré, comme presque tout le pays entre Baoulé et Bagoé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'empire du Mali, selon les traditions"
+            },
+            "statement": "Le nom Traoré est celui de chasseurs qui vivaient, avant l'empire du Mali, dans le pays de Kiri et surtout dans la province appelée plus tard Gangaran, au nord-ouest du Bouré. C'est ce que rapportent les écoles de tradition orale du Manding, selon Djibril Tamsir Niane.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 6, Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 153-154",
+                "notes": "UNESCO, 1985 ; chapitre de D. T. Niane, d'après les écoles de tradition orale du Manding et les travaux de Youssouf Tata Cissé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la naissance de Soundiata, selon l'épopée"
+            },
+            "statement": "Le nom Traoré est celui de deux frères chasseurs, Oulamba et Oulani, qui rapportent du pays de Do une jeune fille et la donnent au roi du Manding. Le récit est celui du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri, transcrit par Djibril Tamsir Niane.",
+            "actors": [
+              {
+                "name": "Oulamba et Oulani",
+                "role": "frères chasseurs du récit, tous deux Traoré"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21-28",
+                "notes": "Présence Africaine, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri), lue sur l'exemplaire numérisé d'archive.org, dont la pagination est proche de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la naissance de Soundiata, selon l'épopée"
+            },
+            "statement": "Le nom Diabaté serait né d'une séparation d'avec le nom Traoré : quand le cadet tue le buffle de Do, l'aîné chante aussitôt sa gloire, et le cadet lui dit que, s'il était griot, personne ne lui résisterait. Les griots Diabaté restent ainsi frères des Traoré, selon la tradition que rapporte une note de Djibril Tamsir Niane.",
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "notes": "Présence Africaine, 1960. Note de l'éditeur sur la séparation des Traoré et des Diabaté, lue sur l'exemplaire numérisé d'archive.org."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la naissance de Soundiata, selon l'épopée"
+            },
+            "statement": "Le nom Traoré serait lié au nom Kondé par une parenté à plaisanterie née du même épisode : les gens de Do se moquèrent des chasseurs qui avaient choisi la laide Sogolon plutôt que les belles filles, selon une autre note de Djibril Tamsir Niane.",
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "notes": "Présence Africaine, 1960. Note de l'éditeur sur la parenté à plaisanterie entre Kondé et Traoré, lue sur l'exemplaire numérisé d'archive.org."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Temps de Soundiata, selon les traditions"
+            },
+            "statement": "Le nom Traoré est celui de Tiramaghan Traoré, général de Soundiata dans l'épopée. Les Mandenka de l'Ouest le tiennent pour le fondateur du Kaabu, les griots du Kaabu chantent sa geste et il est donné comme l'ancêtre des Traoré, selon Djibril Tamsir Niane et Jan Jansen.",
+            "actors": [
+              {
+                "name": "Tiramaghan Traoré",
+                "role": "général de Soundiata dans les récits, donné comme ancêtre des Traoré"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 6, Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 157, note 41",
+                "notes": "UNESCO, 1985 ; chapitre de D. T. Niane, qui reprend les résultats du colloque sur les traditions orales du Kaabu de la Fondation Léopold-Sédar-Senghor."
+              },
+              {
+                "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+                "author": "Jan Jansen",
+                "year": null,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Version d'auteur déposée à l'université de Leyde. Tiramagan y est donné comme l'ancêtre des Traoré et comme le fondateur du Kaabu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit recueilli en 2017"
+            },
+            "statement": "Le nom Traoré appartiendrait à la même branche paternelle que le nom Mara : les deux auraient un ancêtre commun, Mansa Yurukara Nayni, et seraient de la même famille que les Sako et les Kouyaté. C'est ce que dit Babou Condé, griot de Fadama, dans la préfecture de Kouroussa en Guinée, selon le mémoire d'E. A. Bogacheva.",
+            "actors": [
+              {
+                "name": "Mansa Yurukara Nayni",
+                "role": "ancêtre commun des Mara et des Traoré dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 104",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe. Notice Mara : le récit du griot Babou Condé, de Fadama, recueilli lors d'entretiens menés en 2017."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Traoré viendrait d'une formule, « À taá dá wéele », que l'on chantait aux descendants de Túraman, un général du temps de Soundiata rappelé pour sauver le Manden d'une guerre ; ils prirent le nom de Tárawele, et le nom de leur ancêtre devint leur jamu. C'est le récit d'un ouvrage en n'ko de Souleymane Kanté, selon la traduction russe qu'en donne E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Traoré",
+            "actors": [
+              {
+                "name": "Túraman",
+                "role": "ancêtre et général du récit, appelé à la guerre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 137",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe. Notice Tàrawéle : le récit tiré de l'ouvrage en n'ko de Souleymane Kanté sur les noms et les jamu du Manden. L'ouvrage ne traduit pas la formule, et son texte original n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tarawele",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bam",
+        "namedBy": null,
+        "shortLine": "La forme bambara et malinké du nom de clan Traoré.",
+        "usedIn": ["bam", "emk"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Tarawele est la forme bambara et malinké du nom de clan que le français écrit Traoré. Le dictionnaire des noms de clan l'écrit Tàrawéle, avec les variantes Traore et Taraore, sans lui donner de sens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Entrée Tàrawéle : variantes Traore et Taraore, groupes bambara et malinké, aucun sens donné au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "statement": "Le nom Tarawele est écrit « Tarawélé » par Hippolyte Bazin, à l'article Dyamou, « nom de famille », qui le range parmi les plus nobles : « Kouroubali, Dyara, Dembélé ou Tarawélé, Soko, Koné ».",
+            "formAsWritten": "Tarawélé",
+            "actors": [
+              {
+                "name": "Hippolyte Bazin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionnaire bambara-français, précédé d'un abrégé de grammaire bambara",
+                "author": "Hippolyte Bazin",
+                "year": 1906,
+                "url": "https://archive.org/details/DictionnaireBambaraBazin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 151",
+                "notes": "Paris, Imprimerie nationale, 1906. L'auteur est vicaire apostolique du Soudan français. Lu dans la numérisation d'Internet Archive. Page 151, article Dyamou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "statement": "Le nom Tarawele est écrit « Taraouélé » par Hippolyte Bazin, qui le cite parmi les principaux noms de famille des Bambara, sous la forme « Dembélé ou Taraouélé ». C'est la plus ancienne trace écrite de cette forme que le projet connaît ; le clan qui la porte est plus ancien que ce dictionnaire.",
+            "formAsWritten": "Taraouélé",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Hippolyte Bazin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionnaire bambara-français, précédé d'un abrégé de grammaire bambara",
+                "author": "Hippolyte Bazin",
+                "year": 1906,
+                "url": "https://archive.org/details/DictionnaireBambaraBazin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 7",
+                "notes": "Paris, Imprimerie nationale, 1906. L'auteur est vicaire apostolique du Soudan français. Lu dans la numérisation d'Internet Archive. Page 7 de l'abrégé de grammaire, sur les noms de famille, ou dyamou."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

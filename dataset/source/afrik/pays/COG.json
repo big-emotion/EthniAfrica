@@ -6,6 +6,491 @@
   "summary": "La République du Congo porte le même nom que le fleuve Congo, que l'on relie à celui de l'ancien royaume Kongo. Son territoire fut celui du royaume Tio et des chefferies mbochi avant de devenir colonie française. Le kikongo et le lingala y accompagnent le français, et la rumba congolaise y a trouvé l'un de ses foyers.",
   "etymology": "La République du Congo porte le même nom que le fleuve Congo, et que son voisin, la République démocratique du Congo. Une explication relie le nom du fleuve à celui de l'ancien royaume Kongo (Bentley, 1886, p. vii). Bentley rapporte que les riverains appellent le fleuve Nzadi, ou un terme voisin, qu'il traduit par « le Grand Fleuve », et que les Européens en ont fait Zaïre (même page). D'où vient le mot Kongo lui-même n'est pas établi : Bentley ne se prononce pas avec certitude ; il cite seulement, sans les relier au nom, les mots kikongo konga, nkongo et kinkongo. Nous n'avons lu qu'une seule explication de l'ordre entre le royaume et le fleuve, celle d'un missionnaire étranger ; nous n'en avons pas lu de la part de Kongo eux-mêmes. Le pays est aussi appelé « Congo-Brazzaville » pour le distinguer de la République démocratique du Congo (Congo-Kinshasa).",
   "nameOriginActor": "Le texte que nous avons lu ne dit pas qui a donné son nom au fleuve, ni quand. L'explication qui le relie au royaume Kongo décrit celui-ci comme un État ancien et puissant ; le même texte rapporte que le navigateur portugais Diogo Cam atteignit l'embouchure du fleuve en 1484 et qu'une expédition atteignit la capitale du royaume en 1491, dates qui ne disent pas quand le nom a été donné. Le nom « Congo-Brazzaville » a été utilisé pour distinguer ce pays de la République démocratique du Congo (Congo-Kinshasa) après l'indépendance des deux pays en 1960.",
+  "nameHistory": {
+    "summary": "Le nom Congo désigne un pays d'Afrique centrale, la République du Congo, qui porte le nom du fleuve Congo et, avant lui, d'un ancien royaume, le Kongo. On l'appelle aussi Congo-Brazzaville. Le pays a d'abord porté d'autres noms : Congo français, Moyen-Congo, puis République populaire du Congo de 1969 à 1991. Le nom Congo viendrait de celui du royaume, selon le missionnaire W. Holman Bentley, qui ne dit rien de sûr sur le sens du mot ; nous présentons son explication plus bas.",
+    "names": [
+      {
+        "nameText": "Congo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un fleuve et d'un ancien royaume, écrit dès le XVIe siècle ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Écrit vers 1505-1508 ; nom de l'État depuis 1958",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": null,
+              "label": "Depuis le 25 octobre 2015"
+            },
+            "statement": "Le nom Congo est celui de la République du Congo, dont la Constitution du 25 octobre 2015 fait un État souverain et unitaire, avec Brazzaville pour capitale.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République du Congo, 25 octobre 2015",
+                "author": "République du Congo",
+                "year": 2015,
+                "url": "https://mjp.univ-perp.fr/constit/cg2015.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan, d'après le Journal officiel de la République du Congo du 6 novembre 2015. Article premier : « La République du Congo est un État de droit, souverain, unitaire et indivisible, décentralisé, laïc et démocratique. Sa capitale est Brazzaville. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Congo est celui du pays, du fleuve qui le borde et de l'ancien royaume Kongo, dont le fleuve tient son nom. D'où vient le mot Kongo lui-même n'est pas établi ; nous présentons plus bas l'explication du missionnaire W. Holman Bentley.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, préface",
+                "author": "W. Holman Bentley",
+                "year": 1886,
+                "url": "https://tile.loc.gov/storage-services/service/gdc/gdclccn/44/01/76/16/44017616/44017616.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. vii",
+                "notes": "Baptist Missionary Society et Trübner, Londres, 1886 ; lu sur la numérisation de la Bibliothèque du Congrès. Missionnaire baptiste installé à San Salvador, l'auteur écrit que le fleuve est appelé par ses habitants « Nzadi, or some equivalent term », qu'il traduit « the Great River », et que les Européens en ont fait Zaire ; que le nom Zaire tombe en désuétude au profit de Congo ; que le nom du fleuve vient de Kongo ou Ekongo, nom d'un ancien royaume dont la capitale était Mbanza Ekongo ; et qu'on ne peut rien dire avec certitude de l'origine du mot Kongo lui-même. Il cite ensuite konga, nkongo et kinkongo sans dire qu'ils expliquent le nom."
+              },
+              {
+                "title": "Congo River — Wikipedia, section Name",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Congo_River",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Consultée le 9 octobre 2026. La section dit que les deux républiques tirent leur nom du fleuve, et le Zaïre de 1971 à 1997 aussi ; que les noms de peuples en Kongo viendraient peut-être d'un mot désignant une assemblée publique, phrase marquée « citation needed » ; et que Zaire vient de nzere, « rivière », forme courte de nzadi o nzere, « la rivière qui avale les rivières », d'après Peter Forbath (1979, p. 19), ouvrage que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "4 juin 1991"
+            },
+            "statement": "Le nom République du Congo redevient celui du pays le 4 juin 1991 : l'Acte fondamental adopté par la Conférence nationale dispose que « le nom du pays est République du Congo ».",
+            "formAsWritten": "République du Congo",
+            "sources": [
+              {
+                "title": "Acte fondamental du 4 juin 1991 portant organisation des pouvoirs publics durant la période de transition",
+                "author": "Conférence nationale souveraine du Congo",
+                "year": 1991,
+                "url": "https://mjp.univ-perp.fr/constit/cg1991.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 2",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article 2 : « Le nom du pays est République du Congo. » La présentation de la Digithèque précise que la Conférence nationale, réunie le 25 février 1991, abolit la République populaire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "15 août 1960"
+            },
+            "statement": "Le nom République du Congo est celui de l'État qui proclame son indépendance le 15 août 1960, selon l'Office of the Historian.",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Republic of the Congo",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/congo-republic",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Avant 1960, le pays fait partie de l'Afrique-Équatoriale française ; les États-Unis reconnaissent la République du Congo le 15 août 1960, jour où son indépendance est proclamée."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne « Congo-Brazzaville », indépendant le 15 août 1960, ancienne colonie française, avec entre parenthèses son nom colonial, « Moyen-Congo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "28 novembre 1958"
+            },
+            "statement": "Le nom République du Congo est adopté le 28 novembre 1958 par l'Assemblée territoriale du Moyen-Congo, qui fait du territoire un État membre de la Communauté.",
+            "formAsWritten": "République du Congo",
+            "sources": [
+              {
+                "title": "Délibération n° 112/58 de l'Assemblée territoriale du Moyen-Congo, 28 novembre 1958",
+                "author": "Assemblée territoriale du Moyen-Congo",
+                "year": 1958,
+                "url": "https://mjp.univ-perp.fr/constit/cg1958.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 2",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article 2 : « L'Etat autonome du Moyen-Congo prend le nom de « République du Congo ». » Fait à Pointe-Noire, le 28 novembre 1958."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "Vers 1505-1508"
+            },
+            "statement": "Le nom Congo apparaît par écrit chez le navigateur portugais Duarte Pacheco Pereira, qui situe le « reino de Congo » en amont du fleuve et explique que « manicongo » veut dire « seigneur du Congo » dans la langue du pays. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait déjà avant lui.",
+            "formAsWritten": "reino de Congo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Duarte Pacheco Pereira",
+                "role": "navigateur portugais, auteur de l'Esmeraldo de situ orbis"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, livre III, chapitres 1 et 2 : le rio do Padrão et le royaume de Congo",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1954,
+                "url": "https://archive.org/details/dli.ernet.534920",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 167-168",
+                "notes": "Texte portugais écrit vers 1505-1508, lu dans la troisième édition de l'Academia Portuguesa da História (Lisbonne, 1954, introduction et notes de Damião Peres), sur l'exemplaire numérisé d'archive.org. L'index de cette édition renvoie le royaume de Congo aux p. 167-169. L'auteur nomme le fleuve rio do Padrão, d'après la colonne de pierre posée à son embouchure par Diogo Cão, qu'il date de 1484, puis écrit qu'en amont « está o reino de Congo », qu'en sa langue on appelle ce fleuve « Enzaze » et que « manicongo » veut dire « senhor do Congo »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "Pierre Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 354",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. Le chapitre date l'Esmeraldo de situ orbis de 1506-1508 ; un autre chapitre du même volume (p. 198) écrit 1505-1506."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1483,
+              "to": 1484,
+              "label": "1483-1484"
+            },
+            "statement": "Le royaume du Kongo voit arriver les premiers navigateurs portugais en 1483, selon l'Histoire générale de l'Afrique. Duarte Pacheco Pereira date de 1484 le voyage de Diogo Cão jusqu'à l'embouchure du fleuve, et W. Holman Bentley aussi.",
+            "before": true,
+            "actors": [
+              {
+                "name": "Diogo Cão",
+                "role": "navigateur portugais parvenu à l'embouchure du fleuve"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 5 : La diaspora africaine dans l'Ancien et le Nouveau Monde",
+                "author": "J. E. Harris",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 139",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, lu dans l'exemplaire numérisé : « En 1435, les Portugais atteignirent le Sénégal ; en 1483, ils étaient au Kongo. »"
+              },
+              {
+                "title": "Esmeraldo de situ orbis, livre III, chapitres 1 et 2 : le rio do Padrão et le royaume de Congo",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1954,
+                "url": "https://archive.org/details/dli.ernet.534920",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 167-168",
+                "notes": "Texte portugais écrit vers 1505-1508, lu dans la troisième édition de l'Academia Portuguesa da História (Lisbonne, 1954, introduction et notes de Damião Peres), sur l'exemplaire numérisé d'archive.org. L'index de cette édition renvoie le royaume de Congo aux p. 167-169. L'auteur nomme le fleuve rio do Padrão, d'après la colonne de pierre posée à son embouchure par Diogo Cão, qu'il date de 1484, puis écrit qu'en amont « está o reino de Congo », qu'en sa langue on appelle ce fleuve « Enzaze » et que « manicongo » veut dire « senhor do Congo »."
+              },
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, préface",
+                "author": "W. Holman Bentley",
+                "year": 1886,
+                "url": "https://tile.loc.gov/storage-services/service/gdc/gdclccn/44/01/76/16/44017616/44017616.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. viii",
+                "notes": "Préface, p. viii : « In 1484 the mouth of the Kongo River was discovered by a Portuguese navigator, Diogo Cam ; and in 1491 an expedition reached the Mbanza, or chief town of Kongo ». Lu sur la numérisation de la Bibliothèque du Congrès."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1400,
+              "label": "Avant 1400, date inconnue"
+            },
+            "statement": "Le royaume du Kongo prend naissance dans la chefferie vungu, au nord du fleuve ; Nimi Lukeni fonde sa capitale, Mbanza Kongo, selon Jan Vansina. Sa date reste inconnue : certains auteurs la placent au plus tard vers 1400, au plus tôt un siècle avant.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 604",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, lu dans l'exemplaire numérisé. Le royaume du Kongo naît dans la chefferie vungu, au nord du fleuve ; Nimi Lukeni fonde Mbanza Kongo. La date de formation est inconnue : certains auteurs la placent au plus tard vers 1400, au plus tôt un bon siècle avant."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1886,
+              "to": 1886,
+              "label": "Proposée en 1886"
+            },
+            "statement": "Le nom Congo viendrait de Kongo ou Ekongo, le nom de l'ancien royaume dont la capitale était Mbanza Ekongo ; le fleuve l'aurait pris au royaume, selon le missionnaire W. Holman Bentley, qui ajoute qu'on ne peut rien dire de sûr sur le sens du mot.",
+            "hypothesisGroup": "origine du nom Congo",
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, préface",
+                "author": "W. Holman Bentley",
+                "year": 1886,
+                "url": "https://tile.loc.gov/storage-services/service/gdc/gdclccn/44/01/76/16/44017616/44017616.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. vii",
+                "notes": "Baptist Missionary Society et Trübner, Londres, 1886 ; lu sur la numérisation de la Bibliothèque du Congrès. Missionnaire baptiste installé à San Salvador, l'auteur écrit que le fleuve est appelé par ses habitants « Nzadi, or some equivalent term », qu'il traduit « the Great River », et que les Européens en ont fait Zaire ; que le nom Zaire tombe en désuétude au profit de Congo ; que le nom du fleuve vient de Kongo ou Ekongo, nom d'un ancien royaume dont la capitale était Mbanza Ekongo ; et qu'on ne peut rien dire avec certitude de l'origine du mot Kongo lui-même. Il cite ensuite konga, nkongo et kinkongo sans dire qu'ils expliquent le nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Congo-Brazzaville",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Congo-Brazzaville désigne couramment le pays, par le nom de sa capitale, pour le distinguer de son voisin, la République démocratique du Congo, que l'on appelle parfois Congo-Kinshasa, selon le Permanent Committee on Geographical Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Congo",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2024,
+                "url": "https://assets.publishing.service.gov.uk/media/671267969cd657734653d7f5/Congo_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 2",
+                "notes": "Fiche officielle britannique de toponymie, édition 2024 : « Congo is often informally referred to as Congo-Brazzaville to distinguish it from its neighbour, the Democratic Republic of the Congo (sometimes referred to as Congo-Kinshasa). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "Écrit dans un ouvrage de 1998"
+            },
+            "statement": "Le nom Congo-Brazzaville est celui qu'emploie le tableau des indépendances de l'Histoire générale de l'Afrique, qui donne entre parenthèses le nom colonial, Moyen-Congo.",
+            "formAsWritten": "Congo-Brazzaville",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne « Congo-Brazzaville », indépendant le 15 août 1960, ancienne colonie française, avec entre parenthèses son nom colonial, « Moyen-Congo »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République populaire du Congo",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "periodLabel": "De 1969 à 1991",
+        "accounts": [
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "1991"
+            },
+            "statement": "Le nom République populaire du Congo est abandonné en 1991 : la Conférence nationale abolit la République populaire et l'Acte fondamental du 4 juin rend au pays le nom de République du Congo.",
+            "sources": [
+              {
+                "title": "Acte fondamental du 4 juin 1991 portant organisation des pouvoirs publics durant la période de transition",
+                "author": "Conférence nationale souveraine du Congo",
+                "year": 1991,
+                "url": "https://mjp.univ-perp.fr/constit/cg1991.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 2",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article 2 : « Le nom du pays est République du Congo. » La présentation de la Digithèque précise que la Conférence nationale, réunie le 25 février 1991, abolit la République populaire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1969,
+              "label": "31 décembre 1969"
+            },
+            "statement": "Le nom République populaire du Congo est proclamé par Marien Ngouabi, président de la République, le 31 décembre 1969, selon Jean-Pierre Maury.",
+            "actors": [
+              {
+                "name": "Marien Ngouabi",
+                "role": "président de la République"
+              }
+            ],
+            "sources": [
+              {
+                "title": "République du Congo : constitutions et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": 2023,
+                "url": "https://mjp.univ-perp.fr/constit/cg.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 9 octobre 2026. Sa chronologie donne le 28 novembre 1958 (« Le Moyen-Congo choisit le statut d'État membre de la Communauté et devient la République du Congo »), le 15 août 1960 (indépendance) et le 31 décembre 1969 (Marien Ngouabi « proclame la République populaire du Congo ») ; elle écrit que la Constitution de 1969 fait du Congo une République populaire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1969,
+              "label": "30 décembre 1969"
+            },
+            "statement": "Le nom République populaire du Congo figure en tête du titre premier de la Constitution du 30 décembre 1969. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "La République populaire du Congo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Constitution de la République populaire du Congo, 30 décembre 1969",
+                "author": "République populaire du Congo",
+                "year": 1969,
+                "url": "https://mjp.univ-perp.fr/constit/cg1969.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "titre premier et article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan, d'après le Journal officiel de la République du Congo du 15 janvier 1970, p. 23. Le titre premier s'intitule « La République populaire du Congo » ; l'article premier dit que le Congo « est une République Populaire une, indivisible et laïque »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Moyen-Congo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "periodLabel": "De 1903 à 1958",
+        "accounts": [
+          {
+            "period": {
+              "from": 1910,
+              "to": 1958,
+              "label": "De 1910 à 1958"
+            },
+            "statement": "Le nom Moyen-Congo désigne l'une des colonies de l'Afrique-Équatoriale française, avec le Gabon, l'Oubangui-Chari et le Tchad ; c'est l'actuel Congo, selon l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 3 : L'Afrique tropicale et l'Afrique équatoriale sous la domination française, espagnole et portugaise",
+                "author": "Majhemout Diop, avec David Birmingham, Ivan Hrbek, Alfredo Margarido et Djibril Tamsir Niane",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 79",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji, lu dans l'exemplaire numérisé : l'Afrique-Équatoriale française, capitale Brazzaville, « regroupait les colonies du Moyen-Congo (actuel Congo), du Tchad, de l'Oubangui-Chari [...] et du Gabon »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "29 décembre 1903"
+            },
+            "statement": "Le nom Moyen-Congo apparaît dans le décret du 29 décembre 1903, qui en fait une colonie ayant son autonomie administrative, distincte du Gabon. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Moyen-Congo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Décret du 29 décembre 1903 portant réorganisation du Congo français et dépendances",
+                "author": "Président de la République française",
+                "year": 1903,
+                "url": "https://mjp.univ-perp.fr/constit/cg1880.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 3 (JORF, 24 janvier 1904, p. 604)",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan, qui le donne d'après le Journal officiel de la République française du 24 janvier 1904, p. 604. Le rapport qui le précède distingue quatre régions, dont « le Moyen-Congo » ; l'article 3 du décret dispose : « Le Moyen-Congo constitue une colonie ayant son autonomie administrative ». La présentation de la Digithèque ajoute que le territoire garde ce nom jusqu'en 1958."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Congo français",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "periodLabel": "De 1886 aux années 1900",
+        "accounts": [
+          {
+            "period": {
+              "from": 1886,
+              "to": 1886,
+              "label": "27 avril 1886"
+            },
+            "statement": "Le nom Congo français apparaît dans le décret du 27 avril 1886, qui nomme Pierre Savorgnan de Brazza commissaire général du Gouvernement dans le Congo français. Il désigne l'ensemble des possessions françaises de la région, dont le futur Moyen-Congo. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Congo français",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Pierre Savorgnan de Brazza",
+                "role": "commissaire général du Gouvernement"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Décret du 27 avril 1886 nommant Pierre Savorgnan de Brazza commissaire général du Gouvernement dans le Congo français",
+                "author": "Président de la République française",
+                "year": 1886,
+                "url": "https://mjp.univ-perp.fr/constit/cg1880.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 1er (JORF, 28 avril 1886, p. 1926)",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan, qui le donne d'après le Journal officiel de la République française du 28 avril 1886, p. 1926. Article 1er : Brazza « est nommé commissaire général du Gouvernement dans le Congo français ». C'est le plus ancien des textes réunis sur cette page à employer ce nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Congo français (1880-1960)", "Congo-Brazzaville"],

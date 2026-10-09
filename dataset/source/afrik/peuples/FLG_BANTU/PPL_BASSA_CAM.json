@@ -110,12 +110,14 @@
         "title": "Glottolog — Basaa (basa1284)",
         "url": "https://glottolog.org/resource/languoid/id/basa1284",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Donne Basaa, Basa-um, Basaeg et Bassa comme noms de la langue de code bas, parlée au Cameroun et classée bantoue."
       },
       {
         "title": "Glottolog — Bassa (nucl1418)",
         "url": "https://glottolog.org/resource/languoid/id/nucl1418",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Notice de la langue bassa du Liberia et de Sierra Leone, de code bsq, classée dans la famille krou."
       },
       {
@@ -176,6 +178,276 @@
         "url": "https://sk.sagepub.com/ency/edvol/africanreligion/chpt/bassa",
         "tier": "referenced",
         "notes": "Entrée d'encyclopédie de référence, lue le 10 septembre 2026 dans l'exemplaire numérisé par Internet Archive. Elle donne les autodésignations Bon ba Ngock « Children of the Rock » et Bon ba Mbog Liaa « Children of the Tradition of the Rock », ainsi que Hilolombi et les confréries du Mbog. Elle traite en revanche sous une entrée unique les Bassa du Cameroun, du Liberia, du Nigeria, du Togo, du Congo et du Sénégal comme un seul peuple d'origine égyptienne, ce qu'aucune classification linguistique ne soutient."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Basaa est celui que se donne un peuple bantou du Littoral et du Centre du Cameroun. On l'écrit aussi Bassa, comme le nom d'un autre peuple, les Bassa du Liberia, dont la langue appartient à une autre famille. Les sources consultées n'expliquent pas l'origine du nom ; nous présentons plus bas l'explication qui circule.",
+    "names": [
+      {
+        "nameText": "Basaa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bas",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne un peuple bantou du Cameroun ; on l'écrit aussi Bassa.",
+        "periodLabel": "Écrit Basa dès 1906 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Basaa est celui que se donne un peuple bantou du Littoral et du Centre du Cameroun ; il désigne aussi sa langue. Les travaux linguistiques consultés n'expliquent pas son origine, qui n'est pas établie ; l'explication qui circule est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Basaá (A.43)",
+                "author": "Larry M. Hyman",
+                "year": null,
+                "url": "https://linguistics.berkeley.edu/~hyman/Basaa_Chapter.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 1",
+                "notes": "Chapitre de description de la langue, mis en ligne par l'auteur, linguiste à l'université de Californie à Berkeley ; lu le 9 octobre 2026. La première page note la langue basaa [ɓasaá], parlée dans les provinces du Centre et du Littoral, au sud du Cameroun. Elle n'explique pas le nom."
+              },
+              {
+                "title": "Glottolog — Basaa (basa1284)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/basa1284",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 9 octobre 2026 : langue de code bas, parlée au Cameroun et rangée parmi les langues bantoues, aussi appelée Basa, Basaá ou Bassa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapporté en 1912"
+            },
+            "statement": "Le nom Basa ne sert pas, à cette date, à nommer la langue chez ceux qui la parlent : ils l'appellent hob likol, « la langue de l'Est », selon le missionnaire Georg Schürle.",
+            "sources": [
+              {
+                "title": "Die Sprache der Basa in Kamerun : Grammatik und Wörterbuch",
+                "author": "Georg Schürle",
+                "year": 1912,
+                "url": "https://archive.org/details/diesprachederbas00schuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 2",
+                "notes": "Hambourg, L. Friederichsen, 1912, collection de l'Institut colonial de Hambourg. Grammaire et dictionnaire laissés par Georg Schürle, missionnaire de la Mission de Bâle au Cameroun de 1897 à 1908, publiés après sa mort avec une préface de Carl Meinhof. Lu dans l'exemplaire numérisé par Internet Archive le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapporté en 1912"
+            },
+            "statement": "Le nom Basa n'est pas celui qu'emploient leurs voisins bati, qui les appellent Mbele, selon Georg Schürle. Il renvoie à une carte de von Stein où la forme Mwele figure déjà.",
+            "sources": [
+              {
+                "title": "Die Sprache der Basa in Kamerun : Grammatik und Wörterbuch",
+                "author": "Georg Schürle",
+                "year": 1912,
+                "url": "https://archive.org/details/diesprachederbas00schuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 2",
+                "notes": "Hambourg, L. Friederichsen, 1912, collection de l'Institut colonial de Hambourg. Grammaire et dictionnaire laissés par Georg Schürle, missionnaire de la Mission de Bâle au Cameroun de 1897 à 1908, publiés après sa mort avec une préface de Carl Meinhof. Lu dans l'exemplaire numérisé par Internet Archive le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapporté en 1912"
+            },
+            "statement": "Le nom Basa est, pour Georg Schürle, le seul qui convienne à la région où l'on parle cette langue : il juge inexact de l'appeler pays bakoko, comme le font des cartes de son époque.",
+            "sources": [
+              {
+                "title": "Die Sprache der Basa in Kamerun : Grammatik und Wörterbuch",
+                "author": "Georg Schürle",
+                "year": 1912,
+                "url": "https://archive.org/details/diesprachederbas00schuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 2",
+                "notes": "Hambourg, L. Friederichsen, 1912, collection de l'Institut colonial de Hambourg. Grammaire et dictionnaire laissés par Georg Schürle, missionnaire de la Mission de Bâle au Cameroun de 1897 à 1908, publiés après sa mort avec une préface de Carl Meinhof. Lu dans l'exemplaire numérisé par Internet Archive le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Rapport de 1906, publié en 1912"
+            },
+            "statement": "Le nom Basa apparaît dans un rapport que le missionnaire Georg Schürle envoie à Bâle en 1906 : il y décrit le pays où l'on parle le basa, à partir d'une heure de marche à l'est de Douala, selon la préface de Carl Meinhof. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple et sa langue existaient bien avant elle.",
+            "formAsWritten": "Basa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Sprache der Basa in Kamerun : Grammatik und Wörterbuch, préface",
+                "author": "Carl Meinhof",
+                "year": 1912,
+                "url": "https://archive.org/details/diesprachederbas00schuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. VI",
+                "notes": "Préface datée de juin 1912. Carl Meinhof y cite un rapport que Georg Schürle envoie à Bâle en 1906 : « Das Basa beginnt ungefähr eine Stunde hinter Duala (östl.) », le basa commence à environ une heure de marche à l'est de Douala. Lu dans l'exemplaire numérisé par Internet Archive le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2016,
+              "label": "Publiée en ligne en 2013, reprise en 2016"
+            },
+            "statement": "Le nom Bassa viendrait du pluriel de nsa, « la rétribution, le partage » : une querelle entre les fils de l'ancêtre Mban, au sujet du partage d'un serpent rapporté de la chasse, aurait valu au peuple ce nom, compris comme « les ravisseurs ». C'est ce que raconte un texte publié en ligne et repris par le site bassa Li'ten Li Bassa, dont une version anglaise est signée de Samuel Brice Tjomb.",
+            "hypothesisGroup": "origine du nom Basaa",
+            "sources": [
+              {
+                "title": "« L'histoire des origines du peuple Bassa du Cameroun », Li'ten Li Bassa",
+                "author": "Li'ten Li Bassa (article signé hotepafrik)",
+                "year": 2016,
+                "url": "https://web.archive.org/web/20170430212955/http://www.litenlibassa.com/index.php/culture/hist/636-lhistoire-des-origines-du-peuple-bassa-du-cameroun.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire bassa, article du 12 janvier 2016 qui reprend un billet publié en février 2013 sur le blog hotepafrik. Le site n'est plus en ligne ; la copie archivée le 30 avril 2017 a été relue le 9 octobre 2026. Citée pour montrer que ce récit circule, pas pour le confirmer."
+              },
+              {
+                "title": "A History of the Origins of the Bassa People",
+                "author": "Samuel Brice Tjomb",
+                "year": null,
+                "url": "https://www.eco-spirituality.org/e-cmr01.htm",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page non datée, consultée le 9 octobre 2026. L'auteur se présente comme chercheur et membre de la Confrérie Mbog-Parlement. Le texte est la version anglaise du même récit que celui de Li'ten Li Bassa : ce n'est pas un second témoignage indépendant."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit transmis, non daté"
+            },
+            "statement": "Le nom Bassa n'est pas expliqué par le récit de Ngok-litoupa, la « pierre à trou » d'où la tradition fait sortir le peuple : ce récit dit d'où viennent les Bassa, pas d'où vient leur nom. Louis-Marie Pouka, lui-même bassa, le rapporte en 1950, et Athanase Bopda le présente en 2001 comme partagé par plusieurs peuples de la côte, dont les Bakoko, les Babimbi et les Douala.",
+            "sources": [
+              {
+                "title": "« Les Bassa du Cameroun », Les Cahiers d'Outre-Mer, tome 3, n° 10",
+                "author": "Louis-Marie Pouka",
+                "year": 1950,
+                "url": "https://www.persee.fr/doc/caoum_0373-5834_1950_num_3_10_1676",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 153",
+                "notes": "Article d'un auteur bassa. Seule la première page est lisible en accès libre ; relue le 9 octobre 2026. Elle présente les Bassa comme une tribu bantoue divisée en clans, « répandus un peu partout au Cameroun », venue du nord-est, et décrit la Ngok-litoupa, « pierre à trou », comme le berceau de la tribu selon la tradition."
+              },
+              {
+                "title": "« De l'usage des fonds mythiques dans les remaniements territoriaux en Afrique et au Cameroun », Cahiers de géographie du Québec, vol. 45, n° 126",
+                "author": "Athanase Bopda",
+                "year": 2001,
+                "url": "https://www.erudit.org/fr/revues/cgq/2001-v45-n126-cgq2698/023003ar.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 473-475",
+                "notes": "Article en accès libre, relu le 9 octobre 2026. Il décrit le récit de la sortie de Ngog Lituba comme central pour les peuples de la côte, de l'embouchure du Nyong à celle du Moungo : Bassa, Bakoko, Babimbi, Douala, Pongo, Bakweri, Banen, Yabassi. Il n'explique ni le nom du lieu ni celui du peuple."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bassa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre écriture de Basaa, que porte aussi un autre peuple, au Liberia.",
+        "periodLabel": "Employé avant 1912 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Bassa désigne aussi un autre peuple, les Bassa du Liberia et de Sierra Leone. Leur langue appartient à la famille krou, alors que celle des Basaa du Cameroun est bantoue : malgré la même écriture, nos sources n'établissent aucun lien entre ces deux peuples.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Bassa (nucl1418)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nucl1418",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 9 octobre 2026 : langue bassa du Liberia et de Sierra Leone, de code bsq, rangée dans la famille krou."
+              },
+              {
+                "title": "Glottolog — Basaa (basa1284)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/basa1284",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 9 octobre 2026 : langue de code bas, parlée au Cameroun et rangée parmi les langues bantoues, aussi appelée Basa, Basaá ou Bassa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "1950"
+            },
+            "statement": "Le nom Bassa est celui qu'emploie Louis-Marie Pouka, lui-même bassa, pour présenter un peuple bantou divisé en clans et « répandu un peu partout au Cameroun ».",
+            "formAsWritten": "Bassa",
+            "sources": [
+              {
+                "title": "« Les Bassa du Cameroun », Les Cahiers d'Outre-Mer, tome 3, n° 10",
+                "author": "Louis-Marie Pouka",
+                "year": 1950,
+                "url": "https://www.persee.fr/doc/caoum_0373-5834_1950_num_3_10_1676",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 153",
+                "notes": "Article d'un auteur bassa. Seule la première page est lisible en accès libre ; relue le 9 octobre 2026. Elle présente les Bassa comme une tribu bantoue divisée en clans, « répandus un peu partout au Cameroun », venue du nord-est, et décrit la Ngok-litoupa, « pierre à trou », comme le berceau de la tribu selon la tradition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1912,
+              "label": "Avant 1912"
+            },
+            "statement": "Le nom Bassa est déjà en usage quand Georg Schürle l'écarte au profit de Basa : dans cette langue, explique-t-il, les deux a sont longs, et doubler le s n'a pas de sens.",
+            "formAsWritten": "Bassa",
+            "sources": [
+              {
+                "title": "Die Sprache der Basa in Kamerun : Grammatik und Wörterbuch",
+                "author": "Georg Schürle",
+                "year": 1912,
+                "url": "https://archive.org/details/diesprachederbas00schuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 2",
+                "notes": "Hambourg, L. Friederichsen, 1912, collection de l'Institut colonial de Hambourg. Grammaire et dictionnaire laissés par Georg Schürle, missionnaire de la Mission de Bâle au Cameroun de 1897 à 1908, publiés après sa mort avec une préface de Carl Meinhof. Lu dans l'exemplaire numérisé par Internet Archive le 9 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

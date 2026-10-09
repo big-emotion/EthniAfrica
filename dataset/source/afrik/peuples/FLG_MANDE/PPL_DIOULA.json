@@ -183,5 +183,497 @@
         "notes": "Article en accès ouvert. Place à Kong un dirigeant animiste, Lasiri Gombele (1660-1710), avant Seku Watara, auprès duquel l'imam Baro est daté d'environ 1697 à 1745 ; rapporte, d'après Delafosse, une fondation de Kong attribuée aux Nafana, et des dates d'attaques asante que les auteurs fixent différemment (1701 ; 1722-1723)."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dioula désigne un peuple de langue mandingue d'Afrique de l'Ouest, connu pour ses marchands, qui se nomme lui-même Jula. Un autre nom, plus ancien, existe : Wangara. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Jula",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dyu",
+        "namedBy": null,
+        "shortLine": "Jula se traduit par « marchand » ; c'est aussi le nom que ce peuple se donne.",
+        "usedIn": ["dyu"],
+        "periodLabel": "Écrit dès 1623",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Jula désigne un peuple de langue mandingue et, dans cette langue, le marchand qui va d'un lieu à un autre. D'où vient le mot reste discuté : plusieurs explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela, n° 14-1",
+                "author": "Yaya Konaté",
+                "year": 2016,
+                "url": "https://journals.openedition.org/corela/4586",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 22 à 29",
+                "notes": "Lu en ligne le 9 octobre 2026. Les paragraphes 22 à 29 rapportent les explications du mot jula données par des linguistes, des arabisants, Maurice Delafosse et des personnes interrogées ; l'auteur conclut que le mot, emprunté à l'arabe ou non, signifie « commerçant »."
+              },
+              {
+                "title": "General History of Africa, IV, Mali and the second Mandingo expansion",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 117, note 1",
+                "notes": "UNESCO et Heinemann, 1984, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 117, note 1 : Wangara est le mot des Peuls et des Haoussa pour les Mandingues ; dans les forêts de Côte d'Ivoire, les Mandingues sont appelés Dioula, « marchand » en malinké ; Wangara et Dioula sont synonymes."
+              },
+              {
+                "title": "Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos, n° 1",
+                "author": "Chikouna Cissé",
+                "year": 2025,
+                "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section « L'histoire d'un nom »",
+                "notes": "Lu en ligne le 9 octobre 2026. L'article attribue à Richard Jobson, à la suite d'Abdoulaye Bathily, la première mention écrite du mot jula, et rapporte les lectures de Drissa Diakité, Raymond Mauny, François-Xavier Fauvelle, Jean Bazin, Andreas Massing et Marie Perinbam."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1620,
+              "to": 1623,
+              "label": "Voyage de 1620-1621 (récit publié en 1623)"
+            },
+            "statement": "Le nom Jula est écrit « Iulietto » par Richard Jobson. Il rapporte les mots du marchand Buckor Sano, qui se dit « a Iulietto », c'est-à-dire un marchand qui va de place en place. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; Chikouna Cissé, à la suite d'Abdoulaye Bathily, y voit lui aussi la première mention écrite du mot. Le mot existait déjà avant elle.",
+            "birth": true,
+            "formAsWritten": "Iulietto",
+            "actors": [
+              {
+                "name": "Buckor Sano",
+                "role": "marchand de la Gambie, qui se dit lui-même Iulietto"
+              },
+              {
+                "name": "Richard Jobson",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Golden Trade: or, A discovery of the River Gambra, and the Golden Trade of the Aethiopians",
+                "author": "Richard Jobson",
+                "year": 1623,
+                "url": "https://penelope.uchicago.edu/jobson/",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 92",
+                "notes": "Londres, 1623 ; voyage de 1620-1621 sur le fleuve Gambie. Lu le 9 octobre 2026 dans la transcription de l'édition de 1623 publiée par l'université de Chicago, qui garde l'orthographe et la pagination d'origine. Page 9 : « their Iuliettos or Merchants » ; page 92, le marchand Buckor Sano : « I am as you are, a Iulietto, which signifies a Merchant, that goes from place to place »."
+              },
+              {
+                "title": "Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos, n° 1",
+                "author": "Chikouna Cissé",
+                "year": 2025,
+                "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section « L'histoire d'un nom »",
+                "notes": "Lu en ligne le 9 octobre 2026. L'article attribue à Richard Jobson, à la suite d'Abdoulaye Bathily, la première mention écrite du mot jula, et rapporte les lectures de Drissa Diakité, Raymond Mauny, François-Xavier Fauvelle, Jean Bazin, Andreas Massing et Marie Perinbam."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1200,
+              "to": 1299,
+              "label": "XIIIe siècle, selon cette lecture"
+            },
+            "statement": "Le mot jula s'applique déjà aux chasseurs au XIIIe siècle, selon l'historien Drissa Diakité, cité par Chikouna Cissé. Aucun texte de cette époque n'est cité à l'appui.",
+            "sources": [
+              {
+                "title": "Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos, n° 1",
+                "author": "Chikouna Cissé",
+                "year": 2025,
+                "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section « L'histoire d'un nom »",
+                "notes": "Lu en ligne le 9 octobre 2026. L'article attribue à Richard Jobson, à la suite d'Abdoulaye Bathily, la première mention écrite du mot jula, et rapporte les lectures de Drissa Diakité, Raymond Mauny, François-Xavier Fauvelle, Jean Bazin, Andreas Massing et Marie Perinbam."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Proposée en 2008"
+            },
+            "statement": "Le nom Jula viendrait du mot mandingue jùla, « marchand », selon les linguistes Sangaré et Tera, cités par Yaya Konaté.",
+            "hypothesisGroup": "origine du nom Jula",
+            "sources": [
+              {
+                "title": "Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela, n° 14-1",
+                "author": "Yaya Konaté",
+                "year": 2016,
+                "url": "https://journals.openedition.org/corela/4586",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 22",
+                "notes": "Lu en ligne le 9 octobre 2026. Les paragraphes 22 à 29 rapportent les explications du mot jula données par des linguistes, des arabisants, Maurice Delafosse et des personnes interrogées ; l'auteur conclut que le mot, emprunté à l'arabe ou non, signifie « commerçant »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Rapportée en 2016"
+            },
+            "statement": "Le nom Jula viendrait de l'arabe jawla, « tournée » : le marchand serait celui qui fait beaucoup de tournées, selon des arabisants interrogés par Yaya Konaté. Chikouna Cissé retient cette lecture.",
+            "hypothesisGroup": "origine du nom Jula",
+            "sources": [
+              {
+                "title": "Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela, n° 14-1",
+                "author": "Yaya Konaté",
+                "year": 2016,
+                "url": "https://journals.openedition.org/corela/4586",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 23 et 25",
+                "notes": "Lu en ligne le 9 octobre 2026. Les paragraphes 22 à 29 rapportent les explications du mot jula données par des linguistes, des arabisants, Maurice Delafosse et des personnes interrogées ; l'auteur conclut que le mot, emprunté à l'arabe ou non, signifie « commerçant »."
+              },
+              {
+                "title": "Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos, n° 1",
+                "author": "Chikouna Cissé",
+                "year": 2025,
+                "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section « L'histoire d'un nom »",
+                "notes": "Lu en ligne le 9 octobre 2026. L'article attribue à Richard Jobson, à la suite d'Abdoulaye Bathily, la première mention écrite du mot jula, et rapporte les lectures de Drissa Diakité, Raymond Mauny, François-Xavier Fauvelle, Jean Bazin, Andreas Massing et Marie Perinbam."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "statement": "Le nom Jula voudrait dire « de la source », « de l'origine », selon Maurice Delafosse et selon un habitant de Bondoukou interrogé par Yaya Konaté : les Jula seraient alors « les originaires ».",
+            "hypothesisGroup": "origine du nom Jula",
+            "sources": [
+              {
+                "title": "Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela, n° 14-1",
+                "author": "Yaya Konaté",
+                "year": 2016,
+                "url": "https://journals.openedition.org/corela/4586",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 26 et 27",
+                "notes": "Lu en ligne le 9 octobre 2026. Les paragraphes 22 à 29 rapportent les explications du mot jula données par des linguistes, des arabisants, Maurice Delafosse et des personnes interrogées ; l'auteur conclut que le mot, emprunté à l'arabe ou non, signifie « commerçant »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dioula",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dyu",
+        "namedBy": null,
+        "shortLine": "Dioula est la façon d'écrire jula en français ; on écrit aussi Dyula ou Dyoula.",
+        "usedIn": ["fra"],
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit au présent par l'auteur"
+            },
+            "statement": "Le nom Dioula est celui que les peuples de la forêt donnent aux Mandingues en Côte d'Ivoire ; au Ghana, ils disent Wangara. Les deux mots veulent dire « marchand », selon Djibril Tamsir Niane.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, Relationships and exchanges among the different regions",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 624",
+                "notes": "UNESCO et Heinemann, 1984, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026 : les peuples de la forêt appellent les Mandingues Dioula en Côte d'Ivoire et Wangara au Ghana, deux mots qui veulent dire « marchand »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "statement": "Le nom Dioula est écrit « Dyoula » par Maurice Delafosse, dans le titre d'un manuel qui étudie leur parler.",
+            "formAsWritten": "Dyoula",
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre et Avertissement",
+                "notes": "Paris, Ernest Leroux, 1901. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Le sous-titre porte « Étude grammaticale du dialecte dyoula » ; l'auteur dit avoir séjourné parmi les Dyoula du Dyamala et du Djimini."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wangara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom plus ancien des marchands de langue mandingue, connu des géographes arabes.",
+        "periodLabel": "Écrit dès le XIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Wangara désigne des marchands de langue mandingue ; il est encore employé au Ghana. Son lien avec le nom Jula est discuté : les lectures sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, Mali and the second Mandingo expansion",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 117, note 1",
+                "notes": "UNESCO et Heinemann, 1984, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 117, note 1 : Wangara est le mot des Peuls et des Haoussa pour les Mandingues ; dans les forêts de Côte d'Ivoire, les Mandingues sont appelés Dioula, « marchand » en malinké ; Wangara et Dioula sont synonymes."
+              },
+              {
+                "title": "General History of Africa, IV, Relationships and exchanges among the different regions",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 624",
+                "notes": "UNESCO et Heinemann, 1984, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026 : les peuples de la forêt appellent les Mandingues Dioula en Côte d'Ivoire et Wangara au Ghana, deux mots qui veulent dire « marchand »."
+              },
+              {
+                "title": "Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos, n° 1",
+                "author": "Chikouna Cissé",
+                "year": 2025,
+                "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction",
+                "notes": "Lu en ligne le 9 octobre 2026. Introduction « du Soninké (Wangara) au Jula »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Plus tard, après les sources arabes"
+            },
+            "statement": "Le nom Wangara cède peu à peu la place à Dioula pour désigner les marchands de langue mandingue de la savane, jusqu'au Ghana, selon Jean Devisse.",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, Africa in inter-continental relations",
+                "author": "Jean Devisse, avec Shuhdi Labib",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 635, note 1",
+                "notes": "UNESCO et Heinemann, 1984, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. La note donne les graphies arabes du nom Wangara, la forme Amdjara peut-être employée par al-Mas'ūdī, et dit que le mot Dioula tend ensuite à remplacer Wangara."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1353,
+              "to": 1354,
+              "label": "1353-1354"
+            },
+            "statement": "Le nom Wangara est associé aux marchands par le voyageur Ibn Baṭṭūṭa, le premier à le faire selon Chikouna Cissé, qui s'appuie sur Raymond Mauny.",
+            "sources": [
+              {
+                "title": "Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos, n° 1",
+                "author": "Chikouna Cissé",
+                "year": 2025,
+                "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction",
+                "notes": "Lu en ligne le 9 octobre 2026. Introduction « du Soninké (Wangara) au Jula »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1154,
+              "to": 1154,
+              "label": "1154"
+            },
+            "statement": "Le nom Wangara désigne le « pays de l'or » chez le géographe al-Idrīsī, selon Chikouna Cissé.",
+            "sources": [
+              {
+                "title": "Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos, n° 1",
+                "author": "Chikouna Cissé",
+                "year": 2025,
+                "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction",
+                "notes": "Lu en ligne le 9 octobre 2026. Introduction « du Soninké (Wangara) au Jula »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1000,
+              "to": 1099,
+              "label": "XIe siècle"
+            },
+            "statement": "Le nom Wangara apparaît chez le géographe al-Bakrī, qui parle de marchands noirs, les Nungharmata, transportant la poudre d'or ; Djibril Tamsir Niane y reconnaît les Wangara. C'est la plus ancienne trace sûre de ce nom que le projet connaît. Ces marchands existaient déjà avant elle.",
+            "birth": true,
+            "formAsWritten": "Nungharmata",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, Mali and the second Mandingo expansion",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 126",
+                "notes": "UNESCO et Heinemann, 1984, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 126 : citation d'al-Bakrī, « The Adjemm blacks, called Nungharmata [Wangara] are traders and transport gold dust ». Le mot entre crochets est l'ajout de Niane."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 900,
+              "to": 999,
+              "label": "Xe siècle"
+            },
+            "statement": "Le nom Wangara figure peut-être, sous la forme Amdjara, chez l'historien al-Mas'ūdī, selon Jean Devisse, qui ne l'affirme pas. Les sources ne disent pas s'il s'agit du même nom.",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, Africa in inter-continental relations",
+                "author": "Jean Devisse, avec Shuhdi Labib",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 635, note 1",
+                "notes": "UNESCO et Heinemann, 1984, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. La note donne les graphies arabes du nom Wangara, la forme Amdjara peut-être employée par al-Mas'ūdī, et dit que le mot Dioula tend ensuite à remplacer Wangara."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 2025,
+              "label": "Rapportée en 2025"
+            },
+            "statement": "Le nom Wangara désignerait d'abord un peuple du bord du Sahel, devenu avec le temps le nom d'une classe de négociants répandue dans toute l'Afrique de l'Ouest, selon François-Xavier Fauvelle, cité par Chikouna Cissé.",
+            "hypothesisGroup": "Wangara et Jula",
+            "sources": [
+              {
+                "title": "Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos, n° 1",
+                "author": "Chikouna Cissé",
+                "year": 2025,
+                "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction",
+                "notes": "Lu en ligne le 9 octobre 2026. Introduction « du Soninké (Wangara) au Jula »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 2025,
+              "label": "Rapportée en 2025"
+            },
+            "statement": "Le nom Wangara serait celui d'un peuple distinct, plus ancien que la communauté des marchands jula, selon Andreas Massing, cité par Chikouna Cissé.",
+            "hypothesisGroup": "Wangara et Jula",
+            "sources": [
+              {
+                "title": "Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos, n° 1",
+                "author": "Chikouna Cissé",
+                "year": 2025,
+                "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction",
+                "notes": "Lu en ligne le 9 octobre 2026. Introduction « du Soninké (Wangara) au Jula »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 2025,
+              "label": "Rapportée en 2025"
+            },
+            "statement": "Le nom Wangara ne désignerait qu'une variante de la langue jula, selon Marie Perinbam, citée par Chikouna Cissé.",
+            "hypothesisGroup": "Wangara et Jula",
+            "sources": [
+              {
+                "title": "Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos, n° 1",
+                "author": "Chikouna Cissé",
+                "year": 2025,
+                "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction",
+                "notes": "Lu en ligne le 9 octobre 2026. Introduction « du Soninké (Wangara) au Jula »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "Proposée en 1984"
+            },
+            "statement": "Le nom Wangara serait un synonyme de Dioula, employé par les Peuls et les Haoussa pour les Mandingues engagés dans le commerce, selon Djibril Tamsir Niane.",
+            "hypothesisGroup": "Wangara et Jula",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, Mali and the second Mandingo expansion",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 117, note 1",
+                "notes": "UNESCO et Heinemann, 1984, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 117, note 1 : Wangara est le mot des Peuls et des Haoussa pour les Mandingues ; dans les forêts de Côte d'Ivoire, les Mandingues sont appelés Dioula, « marchand » en malinké ; Wangara et Dioula sont synonymes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

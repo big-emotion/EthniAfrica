@@ -2,6 +2,288 @@
   "id": "FLG_MANDE",
   "nameFr": "Mandé",
   "nameEn": "Mande",
+  "nameHistory": {
+    "summary": "Le nom mandé désigne une famille de langues d'Afrique de l'Ouest, comme le bambara, le maninka ou le soninké. C'est un nom de savants, tiré de Manden, le nom d'un pays du haut Niger ; on a aussi dit mandingue. Les sources que nous avons lues n'expliquent pas le sens premier du nom Manden.",
+    "names": [
+      {
+        "nameText": "Mandé",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes européens, d'après le nom du pays Manden",
+        "shortLine": "Un nom de savants pour une famille de langues, tiré de Manden, un pays du haut Niger.",
+        "periodLabel": "Nom d'un groupe de langues depuis 1867",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "statement": "Le nom mandé désigne, pour D. Olderogge, le groupe de langues le plus nettement défini parmi ceux que le linguiste Diedrich Westermann distinguait en Afrique de l'Ouest.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 319"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "statement": "Le nom mandé est choisi par l'administrateur colonial Maurice Delafosse pour la langue qu'il décrit. Il écrit que ce mot « tend de plus en plus à se généraliser et à remplacer le mot mandingue », qui a selon lui la même origine.",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Avertissement, note 1",
+                "notes": "Paris, E. Leroux, 1901. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "statement": "Le nom mandé désigne aussi un ensemble de peuples chez Maurice Delafosse, qui parle en 1900 de « la famille mandé ou mandingue » et la range parmi les « familles nègres » d'Afrique de l'Ouest. Ce classement mêle la langue et l'apparence physique.",
+            "sources": [
+              {
+                "title": "Note sur les familles Krou, Mandé et Agni-Achanti (Afrique occidentale), Bulletin du Muséum d'histoire naturelle, vol. 6",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/biostor-268194",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 338-339",
+                "notes": "Lu dans la numérisation d'Internet Archive. L'auteur, administrateur colonial, classe les peuples en « familles » et parle de « race »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1867,
+              "to": 1867,
+              "label": "1867"
+            },
+            "statement": "Le nom mandé apparaît comme nom d'un groupe de langues dans le livre du linguiste allemand H. Steinthal, Die Mande-Neger-Sprachen. Il explique que la finale -ga forme des noms de peuples : on parle des Mandenga, mais leur langue ne peut s'appeler que le mande. C'est la plus ancienne trace de ce nom de famille de langues que le projet connaît. Les langues existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Mande-Neger-Sprachen, psychologisch und phonetisch betrachtet",
+                "author": "H. Steinthal",
+                "year": 1867,
+                "url": "https://archive.org/details/diemandenegersp00steigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. XI",
+                "notes": "Berlin, Ferd. Dümmler, 1867. Lu dans la numérisation d'Internet Archive, préface."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "On dit alors Mánde pour le pays et Mandénga pour ses habitants : c'est ce que des Africains libérés de la traite disent au missionnaire Sigismund Koelle, à Freetown. Koelle juge fautive la forme Mandingo des cartes européennes.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Manden",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "man",
+        "namedBy": null,
+        "shortLine": "Le nom d'un pays du haut Niger, entre le Mali et la Guinée, d'où est parti l'empire du Mali.",
+        "periodLabel": "Écrit dès la fin du XVIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Manden, ou Mande, désigne un pays du haut bassin du Niger, entre Kangaba et Siguiri, dans les actuels Mali et Guinée. Djibril Tamsir Niane en fait le noyau d'origine des Maninka. Les sources que nous avons lues n'expliquent pas le sens premier du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
+                "page": "p. 141 et p. 151, note 24"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1235,
+              "label": "Avant Soundiata, selon la tradition"
+            },
+            "statement": "Le nom Manden est, selon les traditions orales que rapporte Djibril Tamsir Niane, l'autre nom du royaume de Kiri, où vivaient les Konaté et les Keita. Ce nom a désigné ensuite l'ensemble des pays maninka.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
+                "page": "p. 153"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "Le nom Manden est noté Mánde par Sigismund Koelle, d'après un informateur qui lui dit que tous les Mandénga en sont venus et que sa capitale est sur le Djoliba.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1799,
+              "label": "Voyage de 1795-1797 (récit publié en 1799)"
+            },
+            "statement": "Le nom Manden est écrit « Manding » par le voyageur écossais Mungo Park, pour qui les Mandingoes tirent leur nom de cet État de l'intérieur, d'où ils seraient partis.",
+            "formAsWritten": "Manding",
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://www.gutenberg.org/ebooks/74976",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, W. Bulmer pour G. Nicol, 1799 ; voyage de 1795-1797. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg.",
+                "page": "p. 18"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1592,
+              "to": 1596,
+              "label": "Fin du XVIe siècle"
+            },
+            "statement": "Le nom Manden apparaît par écrit dans Mandimansa, le titre du mansa, ou roi, du Mandi, que les auteurs portugais de la fin du XVIe siècle donnent au grand souverain de l'intérieur, selon José da Silva Horta. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral. L'auteur cite les traités manuscrits d'André Álvares de Almada (1592-1596), d'André Donelha (1625) et de Francisco de Lemos Coelho (1669 et 1684) ; ces textes anciens eux-mêmes n'ont pas été lus.",
+                "page": "p. 664-665"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mandingue",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Des auteurs français, d'après la forme anglaise Mandingo",
+        "shortLine": "L'ancien nom français de ces langues ; il vient lui aussi de Manden.",
+        "periodLabel": "XIXe et XXe siècles",
+        "accounts": [
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "statement": "Le nom mandingue est encore celui que Maurice Delafosse donne en 1929 à une langue qu'il présente comme une seule langue à plusieurs dialectes : le malinké, le bambara et le dioula.",
+            "sources": [
+              {
+                "title": "La langue mandingue et ses dialectes : malinké, bambara, dioula",
+                "author": "Maurice Delafosse",
+                "year": 1929,
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k3412996f",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Numérisé par la Bibliothèque nationale de France. Seul le titre a été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "statement": "Le nom mandingue est, selon le voyageur français Anne Raffenel, la forme française tirée de Mandingos, le nom que les voyageurs anglais donnent aux Malinkés.",
+            "formAsWritten": "Mandingues",
+            "sources": [
+              {
+                "title": "Nouveau voyage dans le pays des nègres, tome premier",
+                "author": "Anne Raffenel",
+                "year": 1856,
+                "url": "https://archive.org/details/nouveauvoyagedan00raff",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Imprimerie de N. Chaix, 1856. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un officier colonial français du milieu du XIXe siècle.",
+                "page": "p. 299"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Les langues mandé, du Mali au Liberia, comme le bambara, le maninka et le soninké. Manden est le nom d'un pays, que des Européens citent dès 1594 sous la forme Mandingues.",

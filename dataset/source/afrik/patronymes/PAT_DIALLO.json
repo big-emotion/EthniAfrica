@@ -401,5 +401,195 @@
       "fieldPath": "homonyms",
       "reason": "Les répertoires onomastiques consultés laissent l'étymologie de Diallo inexpliquée : aucune racine pulaar établie ne la porte, et Bluett, qui donne pourtant la forme de 1734, n'en propose aucune. Les rattachements proposés — à un jallo qui vaudrait « commandement », ou au mandingue diala pour la noblesse — ne sont corroborés par aucune source linguistique primaire et ressemblent à des étymologies populaires nées du contact peul-mandingue. L'absence d'étymologie établie est ici le résultat de la recherche, non son défaut. Les transcriptions Jallo, Jalloh, Jallow et Djaló désignent le même nom et ne sont donc pas des homonymes."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Diallo est un nom de clan des Fulɓe, ou Peuls, devenu nom de famille et porté aussi chez d'autres peuples. On l'écrit aussi Jallo, Jalloh ou Jallow. Les sources consultées n'expliquent pas son origine ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Diallo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan des Fulɓe, écrit Jallo dès 1734 ; son origine n'est pas expliquée.",
+        "periodLabel": "Écrit depuis 1734",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Diallo est celui d'un clan des Fulɓe, ou Peuls, aussi porté chez d'autres peuples, comme les Bambara ; le dictionnaire qui le décrit juge son origine inexpliquée, selon Patrick Hanks.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrées Diallo, Jalloh et Jallow",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://en.geneanet.org/surnames/JALLOW",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press. Entrées reproduites par Geneanet, lues le 9 octobre 2026 dans une copie archivée de la page : Diallo y est le nom du clan Diallo des Peuls, « of unexplained etymology », aussi porté chez d'autres peuples comme les Bambara ; Jalloh y est une variante surtout portée en Sierra Leone, Jallow une variante surtout portée en Gambie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "Rapporté en 2011"
+            },
+            "statement": "Le nom Diallo est l'un des quatre noms de famille que portent presque tous les Fulɓe de Guinée, avec Barry, Balde et Sow ; il serait porté par environ un dixième de la population du pays, selon des spécialistes interrogés par Maura Kelly.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Does Dominique Strauss-Kahn's accuser, Nafissatou Diallo, have the most common surname in Guinea?",
+                "author": "Maura Kelly",
+                "year": 2011,
+                "url": "https://slate.com/news-and-politics/2011/07/does-dominique-strauss-kahn-s-accuser-nafissatou-diallo-have-the-most-common-surname-in-guinea.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Slate, 27 juillet 2011, lu le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Rapporté en 2006"
+            },
+            "statement": "Le nom Diallo est celui de l'un des quatre clans principaux qui composent l'ensemble peul, avec Diakité, Sidibé et Sangaré, selon Youssouf Diallo, qui a enquêté chez les Peuls de l'ouest du Burkina Faso.",
+            "sources": [
+              {
+                "title": "Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso",
+                "author": "Youssouf Diallo",
+                "year": 2006,
+                "url": "https://journals.openedition.org/etudesafricaines/15399",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 16",
+                "notes": "Cahiers d'études africaines, n° 184, 2006, p. 779-794, lu sur OpenEdition le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1734,
+              "to": 1734,
+              "label": "1734"
+            },
+            "statement": "Le nom Diallo apparaît par écrit, sous la forme Jallo, dans les mémoires qu'Ayuba Suleiman Diallo, venu du Bundu sur le haut Sénégal, dicte à l'Anglais Thomas Bluett : « The Surname of his Family is Jallo ». C'est la plus ancienne trace de ce nom que le projet connaît. Bluett le distingue déjà de la chaîne des noms des ancêtres : le nom de famille existait avant lui.",
+            "formAsWritten": "Jallo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ayuba Suleiman Diallo",
+                "role": "dicte ses mémoires"
+              },
+              {
+                "name": "Thomas Bluett",
+                "role": "les met par écrit et les publie"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Some Memoirs of the Life of Job, the Son of Solomon, the High Priest of Boonda in Africa",
+                "author": "Thomas Bluett",
+                "year": 1734,
+                "url": "https://nationalhumanitiescenter.org/pds/maai/freedom/text1/diallo.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "section I, p. 1 des extraits",
+                "notes": "Londres, 1734. Lu dans l'édition d'extraits du National Humanities Center, le 9 octobre 2026 : « JOB's Name, in his own Country, is HYUBA, BOON SALUMENA, BOON HIBRAHEMA [...] The Surname of his Family is Jallo. » La graphie Jallo est celle de Bluett."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Diallo aurait d'abord été celui de l'un des groupes de Fulɓe du plateau du Fouta-Djalon, selon le mémoire d'E. A. Bogacheva, qui ne dit pas d'où vient le mot lui-même.",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53-54",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Jàlo : graphies françaises Diallo, Dialo, Jallo, et « étymologie scientifique probable »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jalloh",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Jalloh est une graphie de Diallo, surtout portée en Sierra Leone, selon Patrick Hanks.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrées Diallo, Jalloh et Jallow",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://en.geneanet.org/surnames/JALLOW",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press. Entrées reproduites par Geneanet, lues le 9 octobre 2026 dans une copie archivée de la page : Diallo y est le nom du clan Diallo des Peuls, « of unexplained etymology », aussi porté chez d'autres peuples comme les Bambara ; Jalloh y est une variante surtout portée en Sierra Leone, Jallow une variante surtout portée en Gambie."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jallow",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Jallow est une graphie de Diallo, surtout portée en Gambie, selon Patrick Hanks.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrées Diallo, Jalloh et Jallow",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://en.geneanet.org/surnames/JALLOW",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press. Entrées reproduites par Geneanet, lues le 9 octobre 2026 dans une copie archivée de la page : Diallo y est le nom du clan Diallo des Peuls, « of unexplained etymology », aussi porté chez d'autres peuples comme les Bambara ; Jalloh y est une variante surtout portée en Sierra Leone, Jallow une variante surtout portée en Gambie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

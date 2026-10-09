@@ -127,12 +127,316 @@
       {
         "title": "Glottolog — Malba Birifor (malb1235)",
         "url": "https://glottolog.org/resource/languoid/id/malb1235",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Southern Birifor (sout2790)",
         "url": "https://glottolog.org/resource/languoid/id/sout2790",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Birifor désigne un peuple qui vit des deux côtés de la Volta Noire, au Burkina Faso, au Ghana et en Côte d'Ivoire, à côté des Lobi. D'autres noms existent : Birifo, la plus ancienne forme écrite que nous connaissions, et Wandar, le nom que lui donnent les Lobi. Le nom Lobi, celui du peuple voisin, a lui aussi son histoire. Les sources consultées n'expliquent l'origine d'aucun de ces noms ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Birifor",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple voisin des Lobi, de part et d'autre de la Volta Noire.",
+        "periodLabel": "Écrit Birifo dès 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Birifor désigne un peuple voisin des Lobi, établi de part et d'autre de la Volta Noire, et sa langue, une langue gur. Les sources consultées ne disent pas d'où vient ce nom ni ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Phonology of Birifor, Collected Language Notes n° 21",
+                "author": "Larry Kuch",
+                "year": 1993,
+                "url": "https://archive.org/details/rosettaproject_biv_detail-1",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 1",
+                "notes": "Institut d'études africaines, université du Ghana, 1993 ; lu le 9 octobre 2026. L'introduction situe les Birifor dans le nord-ouest du Ghana et juste au-delà de la frontière du Burkina Faso, range leur langue parmi les langues gur et distingue le birifor du Nord, parlé surtout au Burkina Faso, du birifor du Sud, parlé surtout au Ghana."
+              },
+              {
+                "title": "Glottolog — Malba Birifor (malb1235)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/malb1235",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 9 octobre 2026 : langue de code bfo, parlée au Burkina Faso, en Côte d'Ivoire et au Ghana, aussi appelée Birifo ou Northern Birifor."
+              },
+              {
+                "title": "Glottolog — Southern Birifor (sout2790)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/sout2790",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 9 octobre 2026 : langue de code biv, parlée au Burkina Faso, en Côte d'Ivoire et au Ghana, aussi appelée Birifo ou Ghana Birifor."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Birifor recouvre deux variétés de langue : le birifor du Nord, appelé aussi Malba Birifor et parlé surtout au Burkina Faso, et le birifor du Sud, parlé surtout au Ghana, selon Larry Kuch et les catalogues de langues.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Phonology of Birifor, Collected Language Notes n° 21",
+                "author": "Larry Kuch",
+                "year": 1993,
+                "url": "https://archive.org/details/rosettaproject_biv_detail-1",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 1",
+                "notes": "Institut d'études africaines, université du Ghana, 1993 ; lu le 9 octobre 2026. L'introduction situe les Birifor dans le nord-ouest du Ghana et juste au-delà de la frontière du Burkina Faso, range leur langue parmi les langues gur et distingue le birifor du Nord, parlé surtout au Burkina Faso, du birifor du Sud, parlé surtout au Ghana."
+              },
+              {
+                "title": "Glottolog — Malba Birifor (malb1235)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/malb1235",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 9 octobre 2026 : langue de code bfo, parlée au Burkina Faso, en Côte d'Ivoire et au Ghana, aussi appelée Birifo ou Northern Birifor."
+              },
+              {
+                "title": "Glottolog — Southern Birifor (sout2790)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/sout2790",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 9 octobre 2026 : langue de code biv, parlée au Burkina Faso, en Côte d'Ivoire et au Ghana, aussi appelée Birifo ou Ghana Birifor."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit au présent par l'auteur"
+            },
+            "statement": "Le nom Birifor s'écrit aussi LoBirifor. Dans la région, Lo, rapproché de Lobi, sert à dire l'ouest et Dagaa l'est, selon l'Encyclopedia of World Cultures.",
+            "sources": [
+              {
+                "title": "Lobi-Dagarti Peoples — Orientation and Ethnonyms",
+                "author": "Encyclopedia of World Cultures (auteur non nommé sur la page)",
+                "year": null,
+                "url": "https://www.everyculture.com/Africa-Middle-East/Lobi-Dagarti-Peoples-Orientation-and-Ethnonyms.html",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "notes": "Article d'encyclopédie diffusé par le site everyculture.com sous le copyright de Gale Group, consulté le 9 octobre 2026. Il donne la forme LoBirifor et présente Lo, rapproché de Lobi, comme un terme qui désigne l'ouest, et Dagaa comme celui qui désigne l'est. Sa bibliographie cite les travaux de Jack Goody."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "statement": "Le nom Birifor apparaît par écrit sous la forme Birifo chez Maurice Delafosse, qui situe ce peuple entre les monts Kpéré, au nord de Bouna, et la Volta Noire. Il note qu'on l'appelle souvent à tort « Birifon ». C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Birifo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 220-221",
+                "notes": "Paris, Ernest Leroux, 1904. Lu dans l'exemplaire numérisé par Internet Archive le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1810,
+              "label": "Vers 1800"
+            },
+            "statement": "Le nom Birifor est celui que Henri Labouret, cité par Michèle Fiéloux, donne aux groupes qui auraient traversé la Volta Noire au tout début du XIXe siècle pour s'installer vers 1800 à Batié Nord, que les Lobi avaient quitté.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les sentiers de la nuit : les migrations rurales lobi de la Haute-Volta vers la Côte d'Ivoire",
+                "author": "Michèle Fiéloux",
+                "year": 1980,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/10005.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "ORSTOM, Travaux et documents n° 110, Paris, 1980, issu d'une thèse soutenue en 1975 ; enquête menée en pays lobi de décembre 1971 à décembre 1972. Lu en ligne le 9 octobre 2026. Page 22 : l'arrivée des Birifor à Batié Nord vers 1800, d'après Henri Labouret."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wandar",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "lob",
+        "namedBy": "les Lobi",
+        "shortLine": "Le nom que les Lobi donnent aux Birifor.",
+        "periodLabel": "Usage rapporté au XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit au présent par l'auteur"
+            },
+            "statement": "Le nom Wandar est celui que les Lobi donnent aux Birifor, selon une note de Pierre Bonnafé qui accompagne des récits recueillis dans des villages lobi. La note ne dit pas ce que veut dire ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "« Une société hétérogène », sur la division entre gens libres et descendants de captifs chez les Lobi",
+                "author": "Pierre Bonnafé",
+                "year": null,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_02/37415.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 124, note 7",
+                "notes": "Chapitre d'un ouvrage collectif sur le pays lobi, partie « Histoire, peuplement et guerre », numérisé par l'IRD et lu le 9 octobre 2026. La note 7 de la page 124 précise : « Wandar est le nom lobi des Birifor. » Le fichier ne donne ni le titre du volume ni son année ; les derniers témoignages cités datent de 1977."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lobi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Lobi, voisins des Birifor ; son origine reste inconnue.",
+        "periodLabel": "Écrit dès 1888 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Lobi est celui que les Lobi emploient eux-mêmes pour se nommer, ce qui les distingue des Birifor et des autres groupes que des auteurs rangent avec eux. Les personnes interrogées par Michèle Fiéloux ne semblaient pas connaître son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les sentiers de la nuit : les migrations rurales lobi de la Haute-Volta vers la Côte d'Ivoire",
+                "author": "Michèle Fiéloux",
+                "year": 1980,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/10005.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "ORSTOM, Travaux et documents n° 110, Paris, 1980, issu d'une thèse soutenue en 1975 ; enquête menée en pays lobi de décembre 1971 à décembre 1972. Lu en ligne le 9 octobre 2026. Page 6 : le terme lobi, dont l'origine ne semble pas connue des informateurs, est employé par les Lobi eux-mêmes pour se désigner."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit au présent par l'auteur"
+            },
+            "statement": "Le nom Lobi sert aussi de repère d'orientation dans la région : sous la forme Lo, il désigne l'ouest. Un même village peut se dire Lo face à ses voisins de l'ouest et Dagaa face à ceux de l'est, selon l'Encyclopedia of World Cultures.",
+            "sources": [
+              {
+                "title": "Lobi-Dagarti Peoples — Orientation and Ethnonyms",
+                "author": "Encyclopedia of World Cultures (auteur non nommé sur la page)",
+                "year": null,
+                "url": "https://www.everyculture.com/Africa-Middle-East/Lobi-Dagarti-Peoples-Orientation-and-Ethnonyms.html",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "notes": "Article d'encyclopédie diffusé par le site everyculture.com sous le copyright de Gale Group, consulté le 9 octobre 2026. Il donne la forme LoBirifor et présente Lo, rapproché de Lobi, comme un terme qui désigne l'ouest, et Dagaa comme celui qui désigne l'est. Sa bibliographie cite les travaux de Jack Goody."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Rapporté en 1980"
+            },
+            "statement": "Le nom Lobi, écrit Lobe, sert dans les recensements du Ghana à compter ensemble Lobi et Birifor, si bien que le nombre de Lobi y reste inconnu, selon Michèle Fiéloux.",
+            "formAsWritten": "Lobe",
+            "sources": [
+              {
+                "title": "Les sentiers de la nuit : les migrations rurales lobi de la Haute-Volta vers la Côte d'Ivoire",
+                "author": "Michèle Fiéloux",
+                "year": 1980,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/10005.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "ORSTOM, Travaux et documents n° 110, Paris, 1980, issu d'une thèse soutenue en 1975 ; enquête menée en pays lobi de décembre 1971 à décembre 1972. Lu en ligne le 9 octobre 2026. Page 6 : au Ghana, les Lobi sont confondus avec les Birifor sous l'appellation de Lobe dans les recensements."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "statement": "Le nom Lobi est souvent étendu à tort, selon Maurice Delafosse, aux différents peuples qui vivent au nord de Bouna. Les Lobi n'en forment qu'une petite partie, et leur langue n'est pas comprise des autres.",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 224",
+                "notes": "Paris, Ernest Leroux, 1904. Lu dans l'exemplaire numérisé par Internet Archive le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "Février 1888"
+            },
+            "statement": "Le nom Lobi apparaît par écrit chez l'explorateur Louis-Gustave Binger : à Léra, des Mandé lui disent que la langue de leurs voisins ressemble à celle des « gens du Lobi ». Binger l'emploie pour un pays. C'est la plus ancienne trace de ce nom que le projet connaît ; les Lobi vivaient déjà dans la région avant elle.",
+            "formAsWritten": "gens du Lobi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "« Du Niger au golfe de Guinée », Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": null,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 78",
+                "notes": "Récit du voyage de 1887-1889 paru dans la revue Le Tour du monde, lu dans l'exemplaire numérisé par Internet Archive le 9 octobre 2026. La page 78 raconte l'étape de Léra, le dimanche 5 février 1888. L'année de parution du fascicule ne figure pas sur la page lue."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

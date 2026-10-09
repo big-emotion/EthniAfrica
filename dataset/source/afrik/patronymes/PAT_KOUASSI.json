@@ -101,5 +101,189 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Kouassi homonym etymology » et « Kouassi surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kouassi est un nom que reçoit à la naissance un garçon baoulé ou agni, en Côte d'Ivoire, d'après le jour où il naît. En twi, au Ghana, le même nom s'écrit Kwasi. Les sources ne le rattachent pas au même jour selon la langue ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kouassi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné à la naissance à un garçon, d'après le jour de la semaine où il naît.",
+        "periodLabel": "Écrit dès 1900 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Kouassi est un nom de jour : on le donne à un garçon d'après le jour de la semaine où il est né. Ce jour n'est pas le même dans toutes les langues où le nom est porté ; nous présentons les sources séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les noms Wè : valeur expressive et didactique, un exemple de créativité poétique dans la littérature orale africaine",
+                "author": "Doh Clément Pagnet",
+                "year": 2005,
+                "url": "https://fr.scribd.com/document/854608222/These-Pagnet-Doh-Clement-UFHB-I",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 259-263",
+                "notes": "Thèse, Université d'Abidjan-Cocody, soutenue le 20 mai 2005. Le chapitre « Les noms chez les Baoulé » atteste les noms donnés selon le jour de naissance."
+              },
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 133-134",
+                "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Page 133 : les garçons nés le « lundi (kesye) » sont appelés Kwasi, les noms d'hommes étant « formés du nom du jour correspondant (plus ou moins modifié) précédé du préfixe Kwa ». Page 134 : l'écriture française « Kouassi fils de Kouassi ». Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              },
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 567 ; annexe D, p. 662-663",
+                "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Entrée Ayisi : le génie du jour appelé Kwasida, le dimanche, dont le nom sert à saluer l'homme né ce jour-là (« Kwasi = akoa-Ayisi »). Annexe D : chaque garçon reçoit le nom de son jour de naissance, la syllabe Kwa, de akoa, « homme », précédant le nom du génie du jour ; « the name “Kwasi” means a man belonging to Ayisi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Décrit en 2005"
+            },
+            "statement": "Le nom Kouassi est donné chez les Baoulé au garçon né le lundi, le jour appelé kissié, selon la thèse de Doh Clément Pagnet.",
+            "sources": [
+              {
+                "title": "Les noms Wè : valeur expressive et didactique, un exemple de créativité poétique dans la littérature orale africaine",
+                "author": "Doh Clément Pagnet",
+                "year": 2005,
+                "url": "https://fr.scribd.com/document/854608222/These-Pagnet-Doh-Clement-UFHB-I",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 259-263",
+                "notes": "Thèse, Université d'Abidjan-Cocody, soutenue le 20 mai 2005. Le chapitre « Les noms chez les Baoulé » atteste les noms donnés selon le jour de naissance."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "Proposé en 1900"
+            },
+            "statement": "Le nom Kouassi serait formé du nom du lundi, kesye en agni, précédé du préfixe Kwa que portent les noms de jour des garçons, selon Maurice Delafosse.",
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 133-134",
+                "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Page 133 : les garçons nés le « lundi (kesye) » sont appelés Kwasi, les noms d'hommes étant « formés du nom du jour correspondant (plus ou moins modifié) précédé du préfixe Kwa ». Page 134 : l'écriture française « Kouassi fils de Kouassi ». Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "statement": "Le nom Kouassi apparaît par écrit chez Maurice Delafosse, qui le donne comme le nom agni du garçon né le lundi. Il l'écrit Kwasi en agni et Kouassi en français. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Kouassi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 133-134",
+                "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Page 133 : les garçons nés le « lundi (kesye) » sont appelés Kwasi, les noms d'hommes étant « formés du nom du jour correspondant (plus ou moins modifié) précédé du préfixe Kwa ». Page 134 : l'écriture française « Kouassi fils de Kouassi ». Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kwasi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le même nom en twi, au Ghana, où il est donné au garçon né le dimanche.",
+        "periodLabel": "Écrit dès 1881 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Proposé en 1881"
+            },
+            "statement": "Le nom Kwasi voudrait dire « l'homme d'Ayisi », le génie du dimanche : Kwa viendrait de akoa, « homme », selon Johann Gottlieb Christaller.",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 567 ; annexe D, p. 662-663",
+                "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Entrée Ayisi : le génie du jour appelé Kwasida, le dimanche, dont le nom sert à saluer l'homme né ce jour-là (« Kwasi = akoa-Ayisi »). Annexe D : chaque garçon reçoit le nom de son jour de naissance, la syllabe Kwa, de akoa, « homme », précédant le nom du génie du jour ; « the name “Kwasi” means a man belonging to Ayisi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "statement": "Le nom Kwasi apparaît dans le dictionnaire du twi de Johann Gottlieb Christaller, missionnaire de Bâle, qui le donne au garçon né le dimanche, Kwasida en twi. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Kwasi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johann Gottlieb Christaller",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 567 ; annexe D, p. 662-663",
+                "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Entrée Ayisi : le génie du jour appelé Kwasida, le dimanche, dont le nom sert à saluer l'homme né ce jour-là (« Kwasi = akoa-Ayisi »). Annexe D : chaque garçon reçoit le nom de son jour de naissance, la syllabe Kwa, de akoa, « homme », précédant le nom du génie du jour ; « the name “Kwasi” means a man belonging to Ayisi »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

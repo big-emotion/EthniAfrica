@@ -6,6 +6,185 @@
   "summary": "Le Burundi est un pays des Grands Lacs dont le nom désigne simplement « le pays » en kirundi, en référence au royaume précolonial qui l'a précédé. Monarchie ancienne, il passa sous protectorat allemand puis sous tutelle belge au sein du Ruanda-Urundi. Hutu, Tutsi et Twa y partagent une même langue, le kirundi.",
   "etymology": "Le nom \"Burundi\" vient probablement du kirundi \"Uburundi\" signifiant \"pays\" ou \"territoire\". Le nom fait référence au royaume précolonial du Burundi.",
   "nameOriginActor": "Le nom vient du royaume précolonial du Burundi (Royaume du Burundi), qui unifiait les peuples des hautes terres. Les colonisateurs allemands puis belges ont conservé ce nom.",
+  "nameHistory": {
+    "summary": "Le nom Burundi désigne un pays de la région des Grands Lacs, la République du Burundi, qui a gardé le nom d'un ancien royaume. En kirundi, la langue du pays, il se nomme Uburundi. Il a aussi été écrit Urundi, et réuni au Rwanda sous le nom de Ruanda-Urundi. Nous n'avons pas trouvé d'étude sur le sens premier du mot rundi ; ce que disent les sources est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Burundi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "run",
+        "namedBy": null,
+        "shortLine": "Le nom d'un ancien royaume des Grands Lacs, gardé par l'État indépendant en 1962.",
+        "periodLabel": "Écrit dès 1859 ; nom de l'État depuis 1962",
+        "accounts": [
+          {
+            "period": {
+              "from": 1962,
+              "to": null,
+              "label": "Depuis le 1er juillet 1962"
+            },
+            "statement": "Le nom Burundi est celui d'un État indépendant depuis le 1er juillet 1962, quand les Nations unies mettent fin à la tutelle belge sur le Ruanda-Urundi et que les États-Unis reconnaissent le royaume du Burundi, selon l'Office of the Historian.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Burundi",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/burundi",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Les États-Unis reconnaissent le royaume du Burundi le 1er juillet 1962, quand les Nations unies mettent fin à la tutelle sur le Ruanda-Urundi administrée par la Belgique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Burundi désigne le pays et reprend celui du royaume qui l'a précédé. Les sources lues expliquent le préfixe du nom, pas le sens du mot rundi lui-même.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Burundi — Wikipedia (en anglais)",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Burundi",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Section Etymology, consultée le 9 octobre 2026 : le Burundi moderne tient son nom du royaume précolonial du Burundi, ou Urundi. La section cite le CIA World Factbook et l'Encyclopaedia Britannica."
+              },
+              {
+                "title": "The Lake Regions of Central Africa: a Picture of Exploration",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsCent00Burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 30, note",
+                "notes": "New York, Harper, 1860, lu dans l'exemplaire numérisé. Dans une note, Burton explique qu'en swahili et dans les langues voisines le préfixe u- désigne un pays ou une région, comme Uzaramo, le pays des Zaramo, et le préfixe wa- ses habitants."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "1859"
+            },
+            "statement": "Le nom Burundi apparaît par écrit sous la forme Urundi chez l'explorateur Richard Burton, qui décrit « the kingdom of Urundi », le royaume d'Urundi, au nord d'Ujiji, dans la revue de la Royal Geographical Society. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait déjà avant que Burton l'écrive.",
+            "formAsWritten": "Urundi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Equatorial Africa, Journal of the Royal Geographical Society, vol. 29",
+                "author": "Richard F. Burton",
+                "year": 1859,
+                "url": "https://archive.org/details/in.ernet.dli.2015.70694",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 253",
+                "notes": "Revue de la Royal Geographical Society, Londres, 1859, lue dans l'exemplaire numérisé. Burton y décrit « the kingdom of Urundi », au nord d'Ujiji, un pays « strictement monarchique »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Uburundi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "run",
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Uburundi est le nom du pays en kirundi : l'État s'y appelle Republika y'u Burundi, aussi écrit Repuburika Y'Uburundi, selon la fiche de toponymie du gouvernement britannique.",
+            "aspect": "usage",
+            "formAsWritten": "Repuburika Y'Uburundi",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Burundi",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2025,
+                "url": "https://www.ecoi.net/en/file/local/2136369/Burundi_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, consultée le 9 octobre 2026. Elle donne le nom de l'État en kirundi, Republika y'u Burundi, et signale en note la graphie Repuburika Y'Uburundi."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Urundi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "swh",
+        "namedBy": null,
+        "periodLabel": "Du XIXe siècle à 1962",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1962,
+              "label": "Jusqu'au 1er juillet 1962"
+            },
+            "statement": "Le nom Urundi forme la seconde moitié de Ruanda-Urundi, le territoire sous tutelle administré par la Belgique jusqu'au 1er juillet 1962, selon l'Office of the Historian.",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Burundi",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/burundi",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Les États-Unis reconnaissent le royaume du Burundi le 1er juillet 1962, quand les Nations unies mettent fin à la tutelle sur le Ruanda-Urundi administrée par la Belgique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "statement": "Le nom Urundi suit un modèle que Burton décrit : en swahili et dans les langues voisines, le préfixe u- désigne un pays, et wa- ses habitants ; il écrit ainsi Urundi pour le royaume et Warundi pour ses habitants.",
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: a Picture of Exploration",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsCent00Burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 30, note",
+                "notes": "New York, Harper, 1860, lu dans l'exemplaire numérisé. Dans une note, Burton explique qu'en swahili et dans les langues voisines le préfixe u- désigne un pays ou une région, comme Uzaramo, le pays des Zaramo, et le préfixe wa- ses habitants."
+              },
+              {
+                "title": "The Lake Regions of Central Africa: a Picture of Exploration, vol. 2",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen21860burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 144-145",
+                "notes": "Londres, Longman, Green, Longman and Roberts, 1860, lu dans l'exemplaire numérisé. Burton décrit « the kingdom of Urundi », gouverné par un mwami, et ses habitants, qu'il appelle Warundi."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

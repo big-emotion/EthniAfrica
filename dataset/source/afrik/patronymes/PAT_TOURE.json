@@ -229,5 +229,204 @@
       "fieldPath": "spellings",
       "reason": "Les graphies anglophones Touray et Turay ne figurent dans aucune source que nous puissions citer : elles ne sont donc pas ajoutées aux graphies de ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Touré est un nom de clan d'Afrique de l'Ouest, porté chez les Soninké et les Malinké. On l'écrit aussi Toure ou Ture. L'historien Sékéné Mody Cissoko propose deux explications de son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Touré",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan soninké et malinké, écrit dès le XVIIe siècle ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès le XVIIe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Touré est un nom de clan que le dictionnaire des noms de clan mandingues écrit Tùre. Il lui donne pour équivalents Mànju, Bangura, Samake, Sogoba et Gonepogi, des noms tenus pour le même clan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 9 octobre 2026 : entrée Tùre et ses équivalents."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Touré désigne un clan présent chez les Soninké et les Malinké. L'historien Sékéné Mody Cissoko propose deux explications de son origine ; nous présentons chacune séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — chapitre 8, The Songhay from the 12th to the 16th century",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 193, 205",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Les Ture parmi les plus anciens clans d'origine soninké de la société songhay (p. 205) ; Ture donné comme titre religieux (p. 193, note 13)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1699,
+              "label": "XVIIe siècle"
+            },
+            "statement": "Le nom Touré apparaît par écrit dans le Tarikh es-Soudan, la chronique d'es-Sa'di, lettré de Tombouctou : il y nomme l'askia Mohammed « Mohammed-ben-Abou-Bekr-Et-Touri », ou Es-Sellenki selon d'autres auteurs. C'est la plus ancienne trace de ce nom que le projet connaît ; elle parle d'un souverain qui prend le pouvoir en 1493.",
+            "formAsWritten": "Et-Touri",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Abderrahman es-Sa'di",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "L'askia Mohammed",
+                "role": "souverain songhay que la chronique désigne ainsi"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Tarikh es-Soudan, par Abderrahman ben Abdallah ben Imran ben Amir es-Sa'di, traduit de l'arabe par O. Houdas",
+                "author": "Abderrahman es-Sa'di ; traduction d'Octave Houdas",
+                "year": 1900,
+                "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 117",
+                "notes": "Paris, Ernest Leroux, 1900. Lu sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Page 117 : « le très orthodoxe Mohammed-ben-Abou-Bekr-Et-Touri, ou, suivant d'autres auteurs, Es-Sellenki ». L'introduction du traducteur (p. IV) situe l'auteur, lettré de Tombouctou, « au commencement du XVIIe siècle »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "Proposé en 1984"
+            },
+            "statement": "Le nom Touré serait celui de l'un des plus anciens clans soninké de la société songhay, avec les Sylla, les Tunkara, les Cissé, les Jakhité, les Dramé et les Jawara, selon Sékéné Mody Cissoko.",
+            "hypothesisGroup": "origine du nom Touré",
+            "sources": [
+              {
+                "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — chapitre 8, The Songhay from the 12th to the 16th century",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 205",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. « The oldest were of Soninke origin (Ture, Sylla, Tunkara, Cisse, Jakhite, Drame and Jawara) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "Proposé en 1984"
+            },
+            "statement": "Le nom Touré aurait d'abord été un titre religieux, comme Cissé, au temps de l'askia Mohammed, avant d'être repris par les conquérants marocains, selon Sékéné Mody Cissoko.",
+            "hypothesisGroup": "origine du nom Touré",
+            "sources": [
+              {
+                "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — chapitre 8, The Songhay from the 12th to the 16th century",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 193, note 13",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. « Ture was at that time a religious title, like Cisse, and was adopted by the Moroccan conquerors » ; la même note juge que l'askia venait probablement du clan Sylla."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit de la tradition du Manden"
+            },
+            "statement": "Le nom Touré figure dans la tradition du Manden parmi les cinq clans maraboutiques proclamés « gardiens de la foi » après la victoire de Soundiata, selon Djibril Tamsir Niane.",
+            "sources": [
+              {
+                "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — chapitre 6, Mali and the second Mandingo expansion",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 134",
+                "notes": "UNESCO, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Les cinq clans maraboutiques, dont les Toure et les Berete, proclamés « cinq gardiens de la foi », Mori Kanda Lolu, d'après la tradition du Manden."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ture",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Ture est l'écriture de Touré dans l'Histoire générale de l'Afrique en anglais ; le dictionnaire des noms de clan mandingues l'écrit Tùre.",
+            "sources": [
+              {
+                "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — chapitre 8, The Songhay from the 12th to the 16th century",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 205",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Écriture Ture."
+              },
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Fichier complet relu le 9 octobre 2026 : entrée Tùre."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Toure",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      }
+    ]
+  }
 }

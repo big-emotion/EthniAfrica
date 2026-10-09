@@ -3,6 +3,197 @@
   "nameFr": "Bantou",
   "nameEn": "Bantu",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom bantou désigne une famille de langues d'Afrique centrale, orientale et australe, et non un peuple. C'est un mot de linguiste, tiré d'un mot de ces langues qui veut dire « les gens » ; on écrit aussi Bantu. Les sources s'accordent sur son origine, moins sur sa date ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bantou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste allemand Wilhelm Bleek, d'après un mot de ces langues",
+        "shortLine": "Un mot de linguiste, tiré d'un mot qui veut dire « les gens », pour une famille de langues.",
+        "periodLabel": "Depuis 1858",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom bantou désigne plus de deux mille langues apparentées d'Afrique orientale, centrale et australe. Wilhelm Bleek l'a tiré du mot qui veut dire « les gens » dans beaucoup de ces langues, dont le singulier est muntu, selon M. Posnansky et selon Samwiri Lwanga-Lunyiigo et Jan Vansina.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 21 : Introduction à la fin de la préhistoire en Afrique subsaharienne",
+                "author": "M. Posnansky",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 580"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 6 : Les peuples bantuphones et leur expansion",
+                "author": "Samwiri Lwanga-Lunyiigo et Jan Vansina",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. Une note de l'éditeur signale que les deux auteurs ne partagent pas toutes leurs conclusions.",
+                "page": "p. 166"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 324"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1990,
+              "label": "Années 1980"
+            },
+            "statement": "Le nom bantou n'est qu'une étiquette de linguiste : il ne désigne « ni un peuple, ni une société, ni une culture », écrivent Samwiri Lwanga-Lunyiigo et Jan Vansina, qui craignent la naissance d'un « mythe bantu ». D. Olderogge rappelle de même que le terme n'est qu'une référence linguistique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 6 : Les peuples bantuphones et leur expansion",
+                "author": "Samwiri Lwanga-Lunyiigo et Jan Vansina",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. Une note de l'éditeur signale que les deux auteurs ne partagent pas toutes leurs conclusions.",
+                "page": "p. 186"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 320"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1994,
+              "label": "De la fin des années 1950 à 1994"
+            },
+            "statement": "Le nom bantou devient en Afrique du Sud un mot d'administration de l'apartheid : vers 1960, « Bantu » remplace « Native » dans l'usage officiel, et une loi de 1959 regroupe les Africains dans des bantoustans. Rejeté par les Sud-Africains noirs, le mot est remplacé par « black » à partir de 1977, puis par « African », selon South African History Online et David Chanaiwa.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Defining the term Bantu",
+                "author": "South African History Online",
+                "year": 2011,
+                "url": "https://www.sahistory.org.za/article/defining-term-bantu",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article publié le 31 mars 2011, d'après un essai de Kees van der Waal, lu en ligne le 9 octobre 2026. Il date d'environ 1960 le remplacement de « Native » par « Bantu » dans l'usage officiel sud-africain, puis rapporte le rejet du mot et son remplacement par « black » à partir de 1977, puis par « African »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 10 : L'Afrique australe",
+                "author": "David Chanaiwa",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 283"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1862,
+              "to": 1862,
+              "label": "1862"
+            },
+            "statement": "Le nom bantou est repris par Wilhelm Bleek dans sa grammaire comparée de 1862, qui parle de « the Ba-ntu family ». Bleek y explique que les langues de cette famille marquent les noms de personnes au pluriel par ba-, comme dans a-ba-ntu, « les gens ».",
+            "formAsWritten": "the Ba-ntu family",
+            "sources": [
+              {
+                "title": "A Comparative Grammar of South African Languages, part 1",
+                "author": "Wilhelm Heinrich Immanuel Bleek",
+                "year": 1862,
+                "url": "https://archive.org/details/comparativegramm00blee",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Trübner, 1862. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 2, p. 3 et p. 26"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "statement": "Le nom bantou apparaît par écrit en 1858, sous la forme « The Bantu Family », dans le catalogue des livres de linguistique du gouverneur du Cap, George Grey, que rédige Wilhelm Bleek. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "formAsWritten": "The Bantu Family",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Library of His Excellency Sir George Grey, K.C.B. Philology, vol. 1, part 1 : South Africa",
+                "author": "Wilhelm Heinrich Immanuel Bleek",
+                "year": 1858,
+                "url": "https://archive.org/details/libraryofhisexce01grey",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35-36",
+                "notes": "Londres, Trübner, 1858. Catalogue des livres de linguistique du gouverneur du Cap, rédigé par Bleek. Lu dans la numérisation d'Internet Archive. Les chapitres de l'Histoire générale de l'Afrique datent le nom de 1862 ; ce catalogue l'emploie déjà."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1858,
+              "label": "Avant 1858"
+            },
+            "statement": "On parle alors de famille cafre ou de famille des langues sud-africaines pour désigner ce groupe de langues déjà reconnu comme apparenté, selon Joseph Greenberg.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 324"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bantu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      }
+    ]
+  },
   "content": {
     "decolonialHeader": {
       "whyProblematic": " Carl Meinhof (1857-1944) : Linguiste allemand dont les travaux reflétaient des perspectives coloniales et eurocentriques. Harry Hamilton Johnston (1858-1927) : Administrateur colonial britannique qui a utilisé le terme « bantou » dans un contexte de classification raciale. Placide Tempels (1906-1977) : Missionnaire belge qui, dans La philosophie bantoue (1945), a présenté une vision occidentale et paternaliste des cultures africaines. En Afrique du Sud, le gouvernement de l'apartheid a utilisé le terme « Bantu » pour désigner les populations noires, créant des catégories légales discriminatoires (« Bantu Education Act » de 1953). Des intellectuels africains ont critiqué cette terminologie. Le concept d'Ubuntu a été mis en avant par des penseurs africains pour défendre l'humanité et la solidarité inhérentes aux cultures africaines. Des études génétiques contemporaines (Berniell-Lee et al., 2009) ont montré que les populations parlant ces langues sont génétiquement diverses, remettant en question l'homogénéité supposée par le terme « bantou ». Aujourd'hui, « bantou » est strictement linguistique, pas racial. Le terme est utilisé uniquement pour désigner une famille linguistique au sein du Niger-Congo, sans aucune connotation raciale ou ethnique.",

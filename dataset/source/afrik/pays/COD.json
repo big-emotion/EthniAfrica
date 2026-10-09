@@ -6,6 +6,452 @@
   "summary": "La République démocratique du Congo tire son nom du fleuve Congo, dont l'appellation Congo/Kongo est historiquement liée au royaume Kongo. Son territoire a connu plusieurs États précoloniaux, la domination léopoldienne puis belge, le nom de Zaïre entre 1971 et 1997, et une grande diversité de peuples et de langues.",
   "etymology": "La République démocratique du Congo tire son nom du fleuve Congo. Le nom Congo/Kongo du fleuve est historiquement lié au royaume Kongo. L'origine lexicale plus ancienne de Kongo demeure incertaine et ne peut être réduite à une signification unique.",
   "nameOriginActor": "Le nom de l'État a été repris de celui du fleuve Congo, lui-même historiquement associé au royaume Kongo. Les sources disponibles ne permettent pas d'attribuer avec certitude l'origine lexicale de Kongo à un acteur ou à une traduction unique.",
+  "nameHistory": {
+    "summary": "Le nom République démocratique du Congo désigne un pays d'Afrique centrale, qui tient son nom du fleuve Congo ; on l'appelle aussi RD Congo ou Congo-Kinshasa. Le pays a d'abord porté d'autres noms : État indépendant du Congo, Congo belge, République du Congo, puis Zaïre de 1971 à 1997. Le nom Zaïre viendrait du nom que les riverains donnent au fleuve, selon le missionnaire W. Holman Bentley ; nous présentons son explication plus bas.",
+    "names": [
+      {
+        "nameText": "République démocratique du Congo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom du fleuve Congo, porté par l'État depuis 1964, puis de nouveau depuis 1997.",
+        "periodLabel": "De 1964 à 1971, puis depuis 1997",
+        "accounts": [
+          {
+            "period": {
+              "from": 2006,
+              "to": null,
+              "label": "Depuis le 18 février 2006"
+            },
+            "statement": "Le nom République démocratique du Congo est celui que donne au pays l'article premier de sa Constitution du 18 février 2006. Le pays est aussi appelé, de façon informelle, RD Congo ou Congo-Kinshasa, selon le Permanent Committee on Geographical Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République démocratique du Congo, 18 février 2006",
+                "author": "République démocratique du Congo",
+                "year": 2006,
+                "url": "https://mjp.univ-perp.fr/constit/cd2006.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article premier : « La République démocratique du Congo est, dans ses frontières du 30 juin 1960, un État de droit, indépendant, souverain, uni et indivisible, social, démocratique et laïc. »"
+              },
+              {
+                "title": "Toponymic Factfile: Congo (Democratic Republic), édition 2023",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/65a66847867cd8000d5ae933/Democratic_Republic_of_Congo_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2023. Le pays « takes its name from the Congo river » ; sous Mobutu Sese Seko, le pays et le fleuve sont renommés Zaire, et le nom Congo est rétabli en 1997. Une note cite « Congo (Kinshasa) », « DR Congo » et « DRC » parmi les formes informelles."
+              },
+              {
+                "title": "Toponymic Factfile: Congo",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2024,
+                "url": "https://assets.publishing.service.gov.uk/media/671267969cd657734653d7f5/Congo_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 2",
+                "notes": "Fiche officielle britannique de toponymie, édition 2024 : « Congo is often informally referred to as Congo-Brazzaville to distinguish it from its neighbour, the Democratic Republic of the Congo (sometimes referred to as Congo-Kinshasa). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom République démocratique du Congo reprend celui du fleuve Congo, selon le Permanent Committee on Geographical Names. Le fleuve tient lui-même son nom de l'ancien royaume Kongo ; on ne sait pas avec certitude d'où vient ce mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Congo (Democratic Republic), édition 2023",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/65a66847867cd8000d5ae933/Democratic_Republic_of_Congo_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2023. Le pays « takes its name from the Congo river » ; sous Mobutu Sese Seko, le pays et le fleuve sont renommés Zaire, et le nom Congo est rétabli en 1997. Une note cite « Congo (Kinshasa) », « DR Congo » et « DRC » parmi les formes informelles."
+              },
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, préface",
+                "author": "W. Holman Bentley",
+                "year": 1886,
+                "url": "https://tile.loc.gov/storage-services/service/gdc/gdclccn/44/01/76/16/44017616/44017616.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. vii",
+                "notes": "Baptist Missionary Society et Trübner, Londres, 1886 ; lu sur la numérisation de la Bibliothèque du Congrès. Missionnaire baptiste installé à San Salvador, l'auteur écrit que le fleuve est appelé par ses habitants « Nzadi, or some equivalent term », qu'il traduit « the Great River », et que les Européens en ont fait Zaire ; que le nom Zaire tombe en désuétude au profit de Congo ; que le nom du fleuve vient de Kongo ou Ekongo, nom d'un ancien royaume dont la capitale était Mbanza Ekongo ; et qu'on ne peut rien dire avec certitude de l'origine du mot Kongo lui-même. Il cite ensuite konga, nkongo et kinkongo sans dire qu'ils expliquent le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "17 mai 1997"
+            },
+            "statement": "Le nom République démocratique du Congo revient le 17 mai 1997, quand Laurent-Désiré Kabila se proclame président et que le Zaïre redevient Congo, selon Jean-Pierre Maury.",
+            "actors": [
+              {
+                "name": "Laurent-Désiré Kabila",
+                "role": "président de la République à partir de 1997"
+              }
+            ],
+            "sources": [
+              {
+                "title": "République démocratique du Congo : constitutions et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": 2009,
+                "url": "https://mjp.univ-perp.fr/constit/cd.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 9 octobre 2026. Elle écrit que l'ancien Congo belge est « devenu Zaïre en 1971, puis redevenu Congo en 1997 » ; sa chronologie donne le 27 octobre 1971 (« Le Congo devient le Zaïre ») et le 17 mai 1997, jour où Laurent-Désiré Kabila « se proclame président de la nouvelle République démocratique du Congo »."
+              },
+              {
+                "title": "Toponymic Factfile: Congo (Democratic Republic), édition 2023",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/65a66847867cd8000d5ae933/Democratic_Republic_of_Congo_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2023. Le pays « takes its name from the Congo river » ; sous Mobutu Sese Seko, le pays et le fleuve sont renommés Zaire, et le nom Congo est rétabli en 1997. Une note cite « Congo (Kinshasa) », « DR Congo » et « DRC » parmi les formes informelles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "1er août 1964"
+            },
+            "statement": "Le nom République démocratique du Congo figure dans l'article premier de la Constitution du 1er août 1964, dite de Luluabourg. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "La République Démocratique du Congo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Constitution de la République démocratique du Congo, 1er août 1964, dite de Luluabourg",
+                "author": "République démocratique du Congo",
+                "year": 1964,
+                "url": "https://mjp.univ-perp.fr/constit/cd1964.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article premier : « La République Démocratique du Congo constitue, dans ses frontières au 30 juin 1960, un État souverain, indivisible, démocratique et social. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zaïre",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays de 1971 à 1997, d'abord celui du fleuve chez les Européens.",
+        "periodLabel": "Nom du pays du 27 octobre 1971 à 1997",
+        "accounts": [
+          {
+            "period": {
+              "from": 1971,
+              "to": 1997,
+              "label": "Du 27 octobre 1971 à 1997"
+            },
+            "statement": "Le nom Zaïre est celui du pays à partir du 27 octobre 1971, selon l'Histoire générale de l'Afrique, jusqu'en 1997, quand le nom Congo est rétabli. Le fleuve est renommé de la même façon, selon le Permanent Committee on Geographical Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Zaïre : indépendant le 30 juin 1960 ; « État indépendant du Congo du 2/V/1885 au 18/XI/1908, date à laquelle il est devenu le Congo belge (Belgish Congo). A pris le nom de Zaïre le 27/X/1971. »"
+              },
+              {
+                "title": "République démocratique du Congo : constitutions et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": 2009,
+                "url": "https://mjp.univ-perp.fr/constit/cd.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 9 octobre 2026. Elle écrit que l'ancien Congo belge est « devenu Zaïre en 1971, puis redevenu Congo en 1997 » ; sa chronologie donne le 27 octobre 1971 (« Le Congo devient le Zaïre ») et le 17 mai 1997, jour où Laurent-Désiré Kabila « se proclame président de la nouvelle République démocratique du Congo »."
+              },
+              {
+                "title": "Toponymic Factfile: Congo (Democratic Republic), édition 2023",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/65a66847867cd8000d5ae933/Democratic_Republic_of_Congo_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2023. Le pays « takes its name from the Congo river » ; sous Mobutu Sese Seko, le pays et le fleuve sont renommés Zaire, et le nom Congo est rétabli en 1997. Une note cite « Congo (Kinshasa) », « DR Congo » et « DRC » parmi les formes informelles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1974,
+              "to": 1974,
+              "label": "15 août 1974"
+            },
+            "statement": "Le nom Zaïre figure dans l'article premier de la Constitution du 15 août 1974, qui commence par « La République du Zaïre est un État unitaire ».",
+            "formAsWritten": "La République du Zaïre",
+            "sources": [
+              {
+                "title": "Constitution de la République du Zaïre, 15 août 1974",
+                "author": "République du Zaïre",
+                "year": 1974,
+                "url": "https://mjp.univ-perp.fr/constit/cd1974.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article premier : « La République du Zaïre est un État unitaire, démocratique, social et laïque. » L'article 2 nomme aussi les régions du Bas-Zaïre et du Haut-Zaïre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1886,
+              "to": 1886,
+              "label": "1886"
+            },
+            "statement": "Le nom Zaïre tombe alors en désuétude au profit de Congo, écrit le missionnaire W. Holman Bentley, même si c'est encore celui que portent les cartes à côté de Congo.",
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, préface",
+                "author": "W. Holman Bentley",
+                "year": 1886,
+                "url": "https://tile.loc.gov/storage-services/service/gdc/gdclccn/44/01/76/16/44017616/44017616.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. vii",
+                "notes": "Baptist Missionary Society et Trübner, Londres, 1886 ; lu sur la numérisation de la Bibliothèque du Congrès. Missionnaire baptiste installé à San Salvador, l'auteur écrit que le fleuve est appelé par ses habitants « Nzadi, or some equivalent term », qu'il traduit « the Great River », et que les Européens en ont fait Zaire ; que le nom Zaire tombe en désuétude au profit de Congo ; que le nom du fleuve vient de Kongo ou Ekongo, nom d'un ancien royaume dont la capitale était Mbanza Ekongo ; et qu'on ne peut rien dire avec certitude de l'origine du mot Kongo lui-même. Il cite ensuite konga, nkongo et kinkongo sans dire qu'ils expliquent le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "Vers 1505-1508"
+            },
+            "statement": "Le nom Zaïre a une forme proche, Enzaze, chez Duarte Pacheco Pereira, qui écrit que c'est ainsi qu'on appelle le fleuve dans la langue du royaume de Congo. C'est la plus ancienne trace de cette forme que le projet connaît ; les sources lues ne disent pas s'il s'agit du même nom.",
+            "formAsWritten": "Enzaze",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, livre III, chapitres 1 et 2 : le rio do Padrão et le royaume de Congo",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1954,
+                "url": "https://archive.org/details/dli.ernet.534920",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 167-168",
+                "notes": "Texte portugais écrit vers 1505-1508, lu dans la troisième édition de l'Academia Portuguesa da História (Lisbonne, 1954, introduction et notes de Damião Peres), sur l'exemplaire numérisé d'archive.org. L'index de cette édition renvoie le royaume de Congo aux p. 167-169. L'auteur nomme le fleuve rio do Padrão, d'après la colonne de pierre posée à son embouchure par Diogo Cão, qu'il date de 1484, puis écrit qu'en amont « está o reino de Congo », qu'en sa langue on appelle ce fleuve « Enzaze » et que « manicongo » veut dire « senhor do Congo »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "Pierre Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 354",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. Le chapitre date l'Esmeraldo de situ orbis de 1506-1508 ; un autre chapitre du même volume (p. 198) écrit 1505-1506."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1886,
+              "to": 1886,
+              "label": "Proposée en 1886"
+            },
+            "statement": "Le nom Zaïre viendrait de Nzadi, le nom que les riverains donnent au fleuve et qui veut dire « le grand fleuve », mal prononcé par les Européens, selon W. Holman Bentley.",
+            "hypothesisGroup": "origine du nom Zaïre",
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, préface",
+                "author": "W. Holman Bentley",
+                "year": 1886,
+                "url": "https://tile.loc.gov/storage-services/service/gdc/gdclccn/44/01/76/16/44017616/44017616.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. vii",
+                "notes": "Baptist Missionary Society et Trübner, Londres, 1886 ; lu sur la numérisation de la Bibliothèque du Congrès. Missionnaire baptiste installé à San Salvador, l'auteur écrit que le fleuve est appelé par ses habitants « Nzadi, or some equivalent term », qu'il traduit « the Great River », et que les Européens en ont fait Zaire ; que le nom Zaire tombe en désuétude au profit de Congo ; que le nom du fleuve vient de Kongo ou Ekongo, nom d'un ancien royaume dont la capitale était Mbanza Ekongo ; et qu'on ne peut rien dire avec certitude de l'origine du mot Kongo lui-même. Il cite ensuite konga, nkongo et kinkongo sans dire qu'ils expliquent le nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République du Congo",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "periodLabel": "De 1960 à 1964",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": 1964,
+              "label": "Du 30 juin 1960 à 1964"
+            },
+            "statement": "Le nom République du Congo est celui sous lequel les États-Unis reconnaissent le nouvel État le 30 juin 1960, jour où l'ancien Congo belge est proclamé indépendant, selon l'Office of the Historian. La Constitution du 1er août 1964 lui donne le nom de République démocratique du Congo.",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Democratic Republic of the Congo",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/congo-democratic-republic",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Les États-Unis reconnaissent « the Republic of Congo (Democratic Republic of the Congo) » le 30 juin 1960, jour où « the area formerly known as the Belgian Congo » est proclamé indépendant."
+              },
+              {
+                "title": "Constitution de la République démocratique du Congo, 1er août 1964, dite de Luluabourg",
+                "author": "République démocratique du Congo",
+                "year": 1964,
+                "url": "https://mjp.univ-perp.fr/constit/cd1964.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article premier : « La République Démocratique du Congo constitue, dans ses frontières au 30 juin 1960, un État souverain, indivisible, démocratique et social. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Congo belge",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'État belge",
+        "periodLabel": "De 1908 à 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1908,
+              "to": 1960,
+              "label": "De novembre 1908 au 30 juin 1960"
+            },
+            "statement": "Le nom Congo belge désigne la colonie que la Belgique annexe en novembre 1908, le 15 selon l'Office of the Historian, le 18 selon l'Histoire générale de l'Afrique ; elle devient indépendante le 30 juin 1960.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Congo Free State",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/congo-free-state",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. L'État indépendant du Congo, créé dans les années 1880 par des accords avec des chefs locaux par un groupe d'investisseurs européens que dirige Léopold II, est reconnu par les États-Unis le 11 septembre 1885 ; il est annexé par la Belgique comme colonie le 15 novembre 1908."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Zaïre : indépendant le 30 juin 1960 ; « État indépendant du Congo du 2/V/1885 au 18/XI/1908, date à laquelle il est devenu le Congo belge (Belgish Congo). A pris le nom de Zaïre le 27/X/1971. »"
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Democratic Republic of the Congo",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/congo-democratic-republic",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Les États-Unis reconnaissent « the Republic of Congo (Democratic Republic of the Congo) » le 30 juin 1960, jour où « the area formerly known as the Belgian Congo » est proclamé indépendant."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "18 octobre 1908"
+            },
+            "statement": "Le nom Congo belge figure dans l'article premier de la loi belge du 18 octobre 1908 sur le gouvernement de la colonie. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Le Congo belge",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Loi sur le gouvernement du Congo belge, 18 octobre 1908",
+                "author": "Royaume de Belgique",
+                "year": 1908,
+                "url": "https://mjp.univ-perp.fr/constit/cd1908.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan, d'après l'Annuaire de législation étrangère pour 1908. Article premier : « Le Congo belge a une personnalité distincte de celle de la métropole. » La présentation de la Digithèque précise que l'annexion prend effet le 15 novembre 1908."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "État indépendant du Congo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "periodLabel": "De 1885 à 1908",
+        "accounts": [
+          {
+            "period": {
+              "from": 1885,
+              "to": 1908,
+              "label": "Du 2 mai 1885 au 18 novembre 1908"
+            },
+            "statement": "Le nom État indépendant du Congo désigne l'État que contrôle Léopold II, roi des Belges, du 2 mai 1885 jusqu'à l'annexion par la Belgique en 1908, selon l'Histoire générale de l'Afrique. Les États-Unis le reconnaissent le 11 septembre 1885, selon l'Office of the Historian.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Léopold II",
+                "role": "roi des Belges, souverain de cet État"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Zaïre : indépendant le 30 juin 1960 ; « État indépendant du Congo du 2/V/1885 au 18/XI/1908, date à laquelle il est devenu le Congo belge (Belgish Congo). A pris le nom de Zaïre le 27/X/1971. »"
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Congo Free State",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/congo-free-state",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. L'État indépendant du Congo, créé dans les années 1880 par des accords avec des chefs locaux par un groupe d'investisseurs européens que dirige Léopold II, est reconnu par les États-Unis le 11 septembre 1885 ; il est annexé par la Belgique comme colonie le 15 novembre 1908."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

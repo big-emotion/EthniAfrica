@@ -142,5 +142,289 @@
         "notes": "L'expression koyra-boro senn-i signifie littéralement la langue des gens de la ville."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Songhaï désigne un peuple et une langue de la boucle du Niger, au Mali et au Niger, et ce peuple se nomme lui-même ainsi. D'autres noms existent : Sonrhaï et Yammatawa. Les sources que nous avons lues ne disent pas d'où vient le nom Songhaï ; nous présentons plus bas son histoire écrite.",
+    "names": [
+      {
+        "nameText": "Songhaï",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du Niger, écrit par Léon l'Africain dès 1526 ; son sens reste inconnu.",
+        "periodLabel": "Écrit depuis 1526",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Songhaï désigne un peuple installé sur les deux rives du Niger, autour de Gao et de Tombouctou, et la langue qu'il parle. Les sources que nous avons lues ne disent pas d'où vient ce mot ni ce qu'il voulait dire au départ.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, ch. 8 : The Songhay from the 12th to the 16th century",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, Heinemann, 1984, volume dirigé par Djibril Tamsir Niane, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026.",
+                "page": "p. 187"
+              },
+              {
+                "title": "The History and Description of Africa, vol. 1",
+                "author": "Léon l'Africain, traduit par John Pory, édité par Robert Brown",
+                "year": 1896,
+                "url": "https://archive.org/details/historyanddescr03porygoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Hakluyt Society, 1896. Traduction anglaise de 1600, par John Pory, du texte que Léon l'Africain date de Rome le 10 mars 1526 et que Ramusio publie en 1550, selon l'introduction de Robert Brown. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 134 : « The Negros haue diuers languages among themselues, among which they call one Sungai »  ; cette langue est parlée, dit-il, à Gualata, Tombouctou, Ghinea, Melli et Gago.",
+                "page": "p. 134"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1858,
+              "label": "Voyage de 1849-1855 (récit publié en 1858)"
+            },
+            "statement": "Le nom Songhaï est écrit « Songhay » par Heinrich Barth. Il note que les auteurs plus anciens ne le mentionnent pas et qu'on le trouve d'abord chez Léon l'Africain et chez l'historien portugais João de Barros.",
+            "formAsWritten": "Songhay",
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 4",
+                "author": "Heinrich Barth",
+                "year": 1858,
+                "url": "https://archive.org/details/travelsdiscoveri04bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 604",
+                "notes": "Londres, Longman, 1858 ; récit du voyage de 1849-1855. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Annexe IX, tableau chronologique de l'histoire du Songhay, p. 604 : « The name Songhay, not mentioned by former authors, becomes conspicuous, being employed as well by Leo as by De Barros »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1699,
+              "label": "Milieu du XVIIe siècle"
+            },
+            "statement": "Le nom Songhaï figure dans le Tarikh es-Soudan, la chronique qu'Abderrahman es-Sa'di, de Tombouctou, écrit vers le milieu du XVIIe siècle. L'auteur y dit raconter l'histoire des princes « de la race des Songhaï », selon la traduction d'Octave Houdas.",
+            "actors": [
+              {
+                "name": "Abderrahman es-Sa'di",
+                "role": "auteur de la chronique"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Tarikh es-Soudan",
+                "author": "Abderrahman es-Sa'di, traduit de l'arabe par Octave Houdas",
+                "year": 1900,
+                "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3",
+                "notes": "Paris, École des langues orientales vivantes, 1900. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 3, l'auteur annonce qu'il écrit « tout ce que j'avais pu recueillir au sujet des princes de Soudan de la race des Songhaï ». La forme Songhaï est celle du traducteur."
+              },
+              {
+                "title": "General History of Africa, IV, ch. 8 : The Songhay from the 12th to the 16th century",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, Heinemann, 1984, volume dirigé par Djibril Tamsir Niane, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. La note 1 présente les deux chroniques de Tombouctou comme écrites vers le milieu du XVIIe siècle par des auteurs soudanais.",
+                "page": "p. 187, note 1"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1526,
+              "to": 1550,
+              "label": "Manuscrit daté de 1526 (publié en 1550)"
+            },
+            "birth": true,
+            "formAsWritten": "Sungai",
+            "statement": "Le nom Songhaï apparaît par écrit chez Léon l'Africain, sous la forme Sungai : c'est le nom que les Noirs donnent, écrit-il, à une langue parlée de Gualata à Gago. Robert Brown, son éditeur, et Félix Dubois n'en connaissent pas de mention plus ancienne. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le peuple l'emploie.",
+            "actors": [
+              {
+                "name": "Léon l'Africain",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History and Description of Africa, vol. 1",
+                "author": "Léon l'Africain, traduit par John Pory, édité par Robert Brown",
+                "year": 1896,
+                "url": "https://archive.org/details/historyanddescr03porygoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Hakluyt Society, 1896. Traduction anglaise de 1600, par John Pory, du texte que Léon l'Africain date de Rome le 10 mars 1526 et que Ramusio publie en 1550, selon l'introduction de Robert Brown. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 134 : « The Negros haue diuers languages among themselues, among which they call one Sungai »  ; cette langue est parlée, dit-il, à Gualata, Tombouctou, Ghinea, Melli et Gago.",
+                "page": "p. 134"
+              },
+              {
+                "title": "The History and Description of Africa, vol. 3, notes du livre VII",
+                "author": "Robert Brown",
+                "year": 1896,
+                "url": "https://archive.org/details/historyanddescr01porygoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 842",
+                "notes": "Londres, Hakluyt Society, 1896. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 842 : « It was Leo who first made the word Songhai (Sungai) familiar to Europe, De Barros also using it »."
+              },
+              {
+                "title": "Tombouctou la mystérieuse",
+                "author": "Félix Dubois",
+                "year": 1897,
+                "url": "https://archive.org/details/tombouctoulamys00dubogoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 103",
+                "notes": "Paris, Flammarion, 1897. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Chapitre VI, « Les fondateurs de Dienné », p. 103 : « les Songhoïs, et non Sonrhaïs, ainsi que disent parfois les Européens ; le mot, défiguré de la sorte, n'est pas compris de l'indigène ». Dubois ajoute que, parmi les géographes anciens, seul Léon l'Africain prononce ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1000,
+              "to": 1099,
+              "label": "XIe siècle"
+            },
+            "before": true,
+            "statement": "Le nom Kaw-Kaw est celui que le géographe arabe al-Bakri donne à la ville du Niger appelée aujourd'hui Gao, qui deviendra au XIIe siècle la capitale du royaume songhaï, selon Sékéné Mody Cissoko.",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, ch. 8 : The Songhay from the 12th to the 16th century",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, Heinemann, 1984, volume dirigé par Djibril Tamsir Niane, édition anglaise. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 187 : Gao devient au XIIe siècle la capitale du nouvel État songhay. Page 188 : « Al-Bakri, who transcribed the name ‘Kaw-Kaw’, wrote that the town was situated on the Niger ». La bibliographie du volume date l'ouvrage d'al-Bakri de 1068.",
+                "page": "p. 187-188"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sonrhaï",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "Une écriture européenne du nom Songhaï, qu'un voyageur jugeait incomprise sur place en 1897.",
+        "periodLabel": "Fin du XIXe et XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1943,
+              "to": 1943,
+              "label": "Article de 1943"
+            },
+            "formAsWritten": "Sonrai",
+            "statement": "Le nom Sonrhaï est écrit « Sonrai » par Jean Rouch dans le titre d'un de ses premiers articles, « Aperçu sur l'animisme Sonrai », paru à Dakar en 1943 ; sa thèse de 1960 écrit Songhay.",
+            "actors": [
+              {
+                "name": "Jean Rouch",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai sur la religion songhay",
+                "author": "Jean Rouch",
+                "year": 1960,
+                "url": "https://archive.org/details/IA41553815_0029",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, Paris, Presses universitaires de France, 1960. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 2, note 1 : « Aperçu sur l'animisme Sonrai, J. R., Notes africaines, n° 20, Dakar, 1943 ».",
+                "page": "p. 2, note 1"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "birth": true,
+            "formAsWritten": "Sonrhaïs",
+            "statement": "Le nom Sonrhaï est écrit « Sonrhaïs » par Félix Dubois, qui le donne comme une forme que disent parfois les Européens et que les habitants, selon lui, ne comprennent pas ; il écrit lui-même Songhoïs. C'est la plus ancienne trace de cette écriture que le projet connaît ; le nom Songhaï est bien plus ancien.",
+            "actors": [
+              {
+                "name": "Félix Dubois",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Tombouctou la mystérieuse",
+                "author": "Félix Dubois",
+                "year": 1897,
+                "url": "https://archive.org/details/tombouctoulamys00dubogoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 103",
+                "notes": "Paris, Flammarion, 1897. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Chapitre VI, « Les fondateurs de Dienné », p. 103 : « les Songhoïs, et non Sonrhaïs, ainsi que disent parfois les Européens ; le mot, défiguré de la sorte, n'est pas compris de l'indigène ». Dubois ajoute que, parmi les géographes anciens, seul Léon l'Africain prononce ce nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yammatawa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "hau",
+        "namedBy": null,
+        "shortLine": "« Les gens de l'ouest » : le seul nom que les Haoussa donnaient aux Songhaï, selon Heinrich Barth.",
+        "periodLabel": "1854",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "Août 1854 (récit publié en 1858)"
+            },
+            "birth": true,
+            "statement": "Le nom Yammatawa, « les gens de l'ouest », est le seul que les Haoussa donnent aux Songhaï, selon ce qu'un compagnon de route explique à Heinrich Barth. Il s'oppose à Gabbestawa, « les gens de l'est », et désigne une direction plutôt qu'un peuple. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "rapporte cet usage"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 5",
+                "author": "Heinrich Barth",
+                "year": 1858,
+                "url": "https://archive.org/details/travelsdiscoveri05bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 313",
+                "notes": "Londres, Longman, 1858 ; récit du voyage de 1849-1855. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 313, le 9 août 1854 : « the Hausa people have no general name for the Songhay. Their only designation for them is Yammatawa, meaning the western people, a term which is only used in opposition to Gabbestawa, the “eastern people,” without any regard to nationality »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

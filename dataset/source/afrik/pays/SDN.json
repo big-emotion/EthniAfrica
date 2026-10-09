@@ -6,6 +6,213 @@
   "summary": "Le Soudan porte un nom donné de l'extérieur : « Bilād as-Sūdān », le pays des Noirs, chez les géographes arabes. Royaumes de Koush et de Méroé, royaumes chrétiens nubiens, sultanat de Sennar : son histoire est celle de la vallée du Nil en amont de l'Égypte. Arabes soudanais, Beja, Nubiens et Four y composent la population.",
   "etymology": "Le nom \"Soudan\" provient de l'arabe \"Bilād as-Sūdān\" (بلاد السودان), signifiant \"pays des Noirs\". Ce terme était historiquement utilisé par les géographes arabes pour désigner la région subsaharienne habitée par des populations noires africaines, par opposition au \"Bilād al-Bayḍā\" (pays des Blancs) qui désignait l'Afrique du Nord. Le nom \"Soudan\" a été officialisé par les colonisateurs britanniques et égyptiens au XIXe siècle.",
   "nameOriginActor": "Les géographes arabes médiévaux ont utilisé le terme \"Bilād as-Sūdān\" (pays des Noirs) pour désigner la région. Le nom \"Soudan\" a été officialisé par les colonisateurs britanniques et égyptiens au XIXe siècle lors de la création du Soudan anglo-égyptien.",
+  "nameHistory": {
+    "summary": "Le nom Soudan désigne un pays de la vallée du Nil, la République du Soudan. C'est un mot arabe qui a d'abord désigné les Noirs, puis une large part de l'Afrique au sud du Sahara. Le pays a porté d'autres noms : Soudan anglo-égyptien, puis République démocratique du Soudan. Nous présentons plus bas l'histoire de ces noms et leurs sources.",
+    "names": [
+      {
+        "nameText": "Soudan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un mot arabe qui désignait les Noirs, devenu en 1956 le nom d'un État de la vallée du Nil.",
+        "periodLabel": "Écrit dès le IXe siècle ; nom de l'État depuis 1956",
+        "accounts": [
+          {
+            "period": {
+              "from": 2011,
+              "to": null,
+              "label": "Depuis le 9 juillet 2011"
+            },
+            "statement": "Le nom Soudan désigne depuis 2011 un pays plus petit : le 9 juillet, le Soudan du Sud proclame son indépendance, après un référendum tenu en janvier, selon l'Office of the Historian.",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: South Sudan",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/south-sudan",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Elle rapporte le référendum de janvier 2011 sur l'autodétermination du « Southern Sudan », prévu par l'accord de paix de 2005, et la proclamation de l'indépendance de la République du Soudan du Sud le 9 juillet 2011, reconnue le même jour par les États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": null,
+              "label": "Depuis le 1er janvier 1956"
+            },
+            "statement": "Le nom Soudan est celui de la République du Soudan, que les États-Unis reconnaissent le 1er janvier 1956. Le pays relevait auparavant d'un condominium anglo-égyptien, selon l'Office of the Historian.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Sudan",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/sudan",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Elle date du 1er janvier 1956 la reconnaissance de la République du Soudan par les États-Unis et rappelle que le pays relevait auparavant d'un condominium anglo-égyptien, sans le dater."
+              },
+              {
+                "title": "Sudan — Wikipedia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Sudan",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Article en anglais, consultée le 9 octobre 2026. L'encadré date le condominium anglo-égyptien de 1899, l'indépendance du 1er janvier 1956, la République démocratique du Soudan du 25 mai 1969 et le retour à la République du Soudan du 6 avril 1985 ; la section History rapporte qu'en 1899, sous la pression britannique, l'Égypte accepte de partager la souveraineté sur le Soudan avec le Royaume-Uni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Moyen Âge, dans les sources arabes"
+            },
+            "statement": "Le nom Soudan reprend le mot arabe as-sudan, pluriel d'al-aswad, « noir ». Les sources arabes du Moyen Âge l'appliquent à toutes les personnes de peau noire, puis aux Africains noirs qui vivent au sud du Maghreb, dans le Bilad al-sudan, le « pays des Noirs », selon Y. Talib.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "General History of Africa, III, ch. 26 : The African diaspora in Asia",
+                "author": "Y. Talib, d'après une contribution de F. Samir",
+                "year": 1988,
+                "url": "https://archive.org/details/general-history-of-africa-vol-3",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 713",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, lu dans l'exemplaire numérisé d'archive.org. Section « Various designations of blacks in Arabic » : as-sudan, pluriel d'al-aswad, « noir », désigne toutes les personnes de peau noire, puis les Africains noirs au sud du Maghreb, habitants du Bilad al-sudan, « the Land of the Blacks »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage des historiens, décrit au présent"
+            },
+            "statement": "Le nom Soudan désigne aussi, chez les historiens, une large bande de l'Afrique au sud du Sahara : les bassins du Sénégal, du Niger et du Tchad, et une partie des savanes et des forêts plus au sud. C'est l'ancien « pays des Noirs » des auteurs arabes, selon F. de Medeiros.",
+            "sources": [
+              {
+                "title": "General History of Africa, III, ch. 5 : The peoples of the Sudan: population movements",
+                "author": "F. de Medeiros",
+                "year": 1988,
+                "url": "https://archive.org/details/general-history-of-africa-vol-3",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 121",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, lu dans l'exemplaire numérisé d'archive.org : « The Land of the Blacks - Bilad al-Sudan - now denoted by the name Sudan comprises not only the Senegal, Niger and Chad basins but also ports of the savanna and forestlands further south »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 800,
+              "to": 899,
+              "label": "IXe siècle"
+            },
+            "statement": "Le nom Soudan figure, sous la forme al-Sudan, dans le titre d'un livre d'al-Djahiz où cet auteur arabe défend les Noirs contre leurs détracteurs, selon Y. Talib. C'est la plus ancienne trace de ce nom que le projet connaît. Le mot désigne alors des personnes, pas encore un pays.",
+            "formAsWritten": "Kitab fakhr al-Sudan 'ala' l-Bidan",
+            "birth": true,
+            "sources": [
+              {
+                "title": "General History of Africa, III, ch. 26 : The African diaspora in Asia",
+                "author": "Y. Talib, d'après une contribution de F. Samir",
+                "year": 1988,
+                "url": "https://archive.org/details/general-history-of-africa-vol-3",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 723-724 et note 121",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, lu dans l'exemplaire numérisé d'archive.org. Le texte parle d'un « texte célèbre du IXe siècle », la défense des Noirs contre leurs détracteurs par al-Djahiz ; la note 121 en donne le titre, Kitab fakhr al-Sudan 'ala' l-Bidan. Les signes diacritiques de l'imprimé ne sont pas reproduits ici. Nous n'avons pas lu le livre d'al-Djahiz lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Soudan anglo-égyptien",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "periodLabel": "1899-1956",
+        "accounts": [
+          {
+            "period": {
+              "from": 1899,
+              "to": 1956,
+              "label": "1899-1956"
+            },
+            "statement": "Le nom Soudan anglo-égyptien désigne le pays au temps du condominium : en 1899, sous la pression britannique, l'Égypte accepte de partager avec le Royaume-Uni la souveraineté sur le Soudan, selon l'article anglais de Wikipédia sur le Soudan. B. O. Oloruntimehin emploie ce nom pour l'entre-deux-guerres, et H. A. Ibrahim fait de l'accord du condominium le cadre de l'administration du pays.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sudan — Wikipedia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Sudan",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Article en anglais, consultée le 9 octobre 2026. L'encadré date le condominium anglo-égyptien de 1899, l'indépendance du 1er janvier 1956, la République démocratique du Soudan du 25 mai 1969 et le retour à la République du Soudan du 6 avril 1985 ; la section History rapporte qu'en 1899, sous la pression britannique, l'Égypte accepte de partager la souveraineté sur le Soudan avec le Royaume-Uni."
+              },
+              {
+                "title": "General History of Africa, VII, ch. 22 : African politics and nationalism, 1919-35",
+                "author": "B. O. Oloruntimehin",
+                "year": 1985,
+                "url": "https://archive.org/details/general-history-of-africa-vol-7",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 570",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé d'archive.org. Le chapitre cite « the Anglo-Egyptian Sudan » parmi les pays où les nationalistes de l'entre-deux-guerres agissent par des voies constitutionnelles."
+              },
+              {
+                "title": "General History of Africa, VII, ch. 23 : Politics and nationalism in North-East Africa, 1919-35",
+                "author": "H. A. Ibrahim",
+                "year": 1985,
+                "url": "https://archive.org/details/general-history-of-africa-vol-7",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 585",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé d'archive.org. L'accord du condominium, imposé par la Grande-Bretagne, reste le cadre de l'administration du Soudan après l'indépendance égyptienne de 1922 ; le passage ne date pas l'accord."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République démocratique du Soudan",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "periodLabel": "1969-1985",
+        "accounts": [
+          {
+            "period": {
+              "from": 1969,
+              "to": 1985,
+              "label": "Du 25 mai 1969 au 6 avril 1985"
+            },
+            "statement": "Le nom République démocratique du Soudan est celui de l'État du 25 mai 1969 au 6 avril 1985, date à laquelle il redevient la République du Soudan, selon l'article anglais de Wikipédia sur le Soudan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sudan — Wikipedia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Sudan",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Article en anglais, consultée le 9 octobre 2026. L'encadré date le condominium anglo-égyptien de 1899, l'indépendance du 1er janvier 1956, la République démocratique du Soudan du 25 mai 1969 et le retour à la République du Soudan du 6 avril 1985 ; la section History rapporte qu'en 1899, sous la pression britannique, l'Égypte accepte de partager la souveraineté sur le Soudan avec le Royaume-Uni."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

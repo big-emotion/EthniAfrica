@@ -6,6 +6,320 @@
   "summary": "Le Ghana a pris en 1957 le nom d'un ancien royaume, le Wagadu selon la tradition soninké, qui se trouvait bien plus au nord-ouest, hors de son territoire ; les sources ne s'accordent pas sur qui a choisi ce nom. Premier État d'Afrique subsaharienne à accéder à l'indépendance, il succède à la colonie britannique de la Côte-de-l'Or sur un sol qui fut celui des royaumes akan — Ashanti, Denkyira, Akwamu — et des peuples mole-dagbani, ewe et ga-dangme. Le kente et l'adinkra en sont les signatures visuelles.",
   "etymology": "Le nom \"Ghana\" est celui d'un ancien royaume ouest-africain que les sources arabes médiévales appellent Ghana, et que la tradition orale soninké situe à Wagadu (Hunwick). Ce royaume se trouvait bien plus au nord-ouest, entre le Sahara et les hauts cours du Sénégal et du Niger, et non sur le territoire du Ghana actuel, selon l'Encyclopaedia Africana. Chez al-Bakri (1067-1068), \"Ghana\" est le titre que portent les rois de ce peuple, et le nom du pays est Awkar. Le sens du mot est rapporté de plusieurs façons : \"chef de guerre\", selon une traduction courante (Citi Newsroom, 2026), ou nom de la dynastie Kaya Maghan, glosé \"roi de l'or\" en soninké dans une chronique de Tombouctou, une glose que Delafosse et Hunwick discutent en proposant chacun un autre sens du mot kaya (Hunwick, 2003). Le 11 décembre 1956, un ministre britannique déclare aux Communes que ce nom a été conféré au nouveau pays \"conformément aux vœux locaux\" et qu'il était celui d'un ancien royaume \"dans ce qui est aujourd'hui un territoire français au sud du Sahara\". Le Ghana Independence Act de 1957 place les territoires de la Côte-de-l'Or \"sous le nom de Ghana\", et l'Encyclopaedia Africana date du 6 mars 1957 le moment où le nom a été pris. J. B. Danquah voyait dans les Akan des descendants de ce royaume ; l'Encyclopaedia Africana juge la preuve douteuse et Citi Newsroom relève que la recherche n'a pas établi de lien migratoire direct.",
   "nameOriginActor": "Le choix du nom n'est attribué de la même façon par aucune source. L'Encyclopaedia Africana écrit que la suggestion de donner le nom Ghana à la Côte-de-l'Or est due à J. B. Danquah. MyJoyOnline (2019) et Citi Newsroom (2026) rapportent qu'il avait d'abord proposé \"Akanland\". Citi Newsroom lui attribue ensuite \"Akan-Ga\", puis l'idée de \"New Ghana\", que MyJoyOnline tire d'une chronique du Times of West Africa du 26 mars 1934. Citi Newsroom écrit que Kwame Nkrumah a joué un rôle décisif pour en faire le nom officiel de l'État. Devant les Communes, en décembre 1956, le gouvernement britannique dit seulement que le nom a été conféré conformément aux vœux locaux, sans nommer personne. En septembre 2023, un dirigeant politique ghanéen a contesté publiquement que Danquah ait proposé ce nom, selon la presse (Onua Online). Une phrase de Kwame Nkrumah, « nous tirons fierté du nom de Ghana, non par romantisme mais comme une inspiration pour l'avenir », est datée de 1953 par une transcription non officielle de son discours (Speakola) et de mai 1956 par MyJoyOnline, qui cite les débats de l'Assemblée législative ; la date n'est pas tranchée, et la phrase ne dit pas qui a choisi le nom. Aucun texte d'époque cité ici ne désigne l'auteur du choix.",
+  "nameHistory": {
+    "summary": "Le nom Ghana désigne un pays d'Afrique de l'Ouest, la République du Ghana, qui a pris en 1957 le nom d'un royaume médiéval situé plus au nord-ouest, comme le Mali a repris celui d'un empire. Le pays s'appelait auparavant Côte-de-l'Or, Gold Coast en anglais. Les sources ne s'accordent pas toujours sur le sens premier du nom Ghana ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ghana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un royaume médiéval, repris par la Côte-de-l'Or à son indépendance en 1957.",
+        "periodLabel": "Écrit dès le VIIIe siècle ; nom de l'État depuis 1957",
+        "accounts": [
+          {
+            "period": {
+              "from": 1957,
+              "to": null,
+              "label": "Depuis le 6 mars 1957"
+            },
+            "statement": "Le nom Ghana est celui de l'État depuis le 6 mars 1957 : ce jour-là, les territoires de la Côte-de-l'Or deviennent indépendants « sous le nom de Ghana », selon la loi britannique sur l'indépendance du Ghana.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ghana Independence Act 1957",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1957,
+                "url": "https://www.legislation.gov.uk/ukpga/Eliz2/5-6/6/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "sections 1 et 5",
+                "notes": "Texte de la loi, lu sur le site officiel de la législation britannique. La section 1 place les territoires de la Gold Coast « under the name of Ghana » ; la section 5 fixe le jour de l'indépendance au 6 mars 1957."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1957,
+              "to": 1957,
+              "label": "1957"
+            },
+            "statement": "Le nom Ghana est repris par l'ancienne colonie anglaise de la Côte-de-l'Or, qui prend celui de l'un des plus prestigieux empires de l'Ouest africain ; l'ancien Soudan français fera de même avec le nom du Mali, selon Djibril Tamsir Niane.",
+            "sources": [
+              {
+                "title": "La reconquête de l'identité historique : « décoloniser l'histoire ou la défalsifier ? », dans Histoire et diversité des cultures",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000058850",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 225",
+                "notes": "UNESCO, recueil de la réunion d'experts sur la nature et la fonction de l'histoire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "11 décembre 1956"
+            },
+            "statement": "Le nom Ghana a été donné au nouveau pays conformément aux vœux de ses habitants, déclare le gouvernement britannique devant la Chambre des communes ; il précise que c'était le nom d'un ancien royaume situé dans un territoire alors français, au sud du Sahara, selon le compte rendu des débats.",
+            "actors": [
+              {
+                "name": "Lord John Hope",
+                "role": "sous-secrétaire d'État britannique aux Relations du Commonwealth, qui présente la loi"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Ghana Independence Bill, débat de la Chambre des communes du 11 décembre 1956 (Hansard, vol. 562)",
+                "author": "Chambre des communes du Royaume-Uni",
+                "year": 1956,
+                "url": "https://api.parliament.uk/historic-hansard/commons/1956/dec/11/ghana-independence-bill",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "col. 233",
+                "notes": "Compte rendu officiel des débats, lu en ligne. Lord John Hope, sous-secrétaire d'État aux Relations du Commonwealth, dit que le nom a été donné « in accordance with local wishes » et qu'il était celui d'un ancien royaume situé dans un territoire alors français, au sud du Sahara."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1957,
+              "label": "Avant l'indépendance"
+            },
+            "statement": "Le nom Ghana est retenu au terme d'un débat où J. B. Danquah avait d'abord proposé Akanland, puis Akan-Ga, avant de parler de New Ghana, et où Kwame Nkrumah a joué un rôle décisif pour en faire le nom officiel, selon Citi Newsroom.",
+            "actors": [
+              {
+                "name": "J. B. Danquah",
+                "role": "homme politique de la Côte-de-l'Or, qui proposa d'autres noms"
+              },
+              {
+                "name": "Kwame Nkrumah",
+                "role": "dirigeant politique de la Côte-de-l'Or puis du Ghana"
+              }
+            ],
+            "sources": [
+              {
+                "title": "From Gold Coast to Ghana: history, memory and the naming of a nation",
+                "author": "Jimmy Kutin, Citi Newsroom",
+                "year": 2026,
+                "url": "https://citinewsroom.com/2026/03/from-gold-coast-to-ghana-history-memory-and-the-naming-of-a-nation/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse ghanéen du 5 mars 2026, consulté le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Ghana désigne aujourd'hui l'État ouest-africain ; il a d'abord désigné un royaume médiéval, fondé par les Soninke dans l'Awkār et le Hōdh, que leur légende appelle Wagadu. Le sens premier du mot reste discuté.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+                "author": "François de Medeiros",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 154",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. Selon la légende du Wagadu, les Soninke restés dans l'Awkār et le Hōdh y fondent leur premier État, l'ancien Ghana."
+              },
+              {
+                "title": "Description de l'Afrique septentrionale, traduction de William Mac Guckin de Slane, édition revue et corrigée",
+                "author": "Abou-Obeïd el-Bekri (al-Bakrī)",
+                "year": 1913,
+                "url": "https://archive.org/details/fr103andalus05",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Alger, Adolphe Jourdan, 1913, lu dans l'exemplaire numérisé. Chapitre « Description de Ghana et mœurs de ses habitants » : al-Bakrī écrit que Ghana est le titre que portent les rois de ce peuple, que leur pays porte un autre nom, et date sa description de l'an 460 de l'hégire, 1067-1068."
+              },
+              {
+                "title": "From Gold Coast to Ghana: history, memory and the naming of a nation",
+                "author": "Jimmy Kutin, Citi Newsroom",
+                "year": 2026,
+                "url": "https://citinewsroom.com/2026/03/from-gold-coast-to-ghana-history-memory-and-the-naming-of-a-nation/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse ghanéen du 5 mars 2026, consulté le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1067,
+              "to": 1068,
+              "label": "1067-1068"
+            },
+            "statement": "Le nom Ghana est, pour le géographe andalou al-Bakrī, le titre que portent les rois de ce peuple, dont le pays porte un autre nom ; son roi s'appelle alors Tenkamenin, selon la traduction de William Mac Guckin de Slane.",
+            "sources": [
+              {
+                "title": "Description de l'Afrique septentrionale, traduction de William Mac Guckin de Slane, édition revue et corrigée",
+                "author": "Abou-Obeïd el-Bekri (al-Bakrī)",
+                "year": 1913,
+                "url": "https://archive.org/details/fr103andalus05",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 327",
+                "notes": "Alger, Adolphe Jourdan, 1913, lu dans l'exemplaire numérisé. Chapitre « Description de Ghana et mœurs de ses habitants » : al-Bakrī écrit que Ghana est le titre que portent les rois de ce peuple, que leur pays porte un autre nom, et date sa description de l'an 460 de l'hégire, 1067-1068."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 813,
+              "to": 847,
+              "label": "Entre 813 et 847"
+            },
+            "statement": "Le nom Ghana figure comme nom de lieu dans l'« Image de la Terre » du géographe al-Khwārizmī, écrite entre 813 et 847 ; le neuvième volume de l'Histoire générale de l'Afrique y voit la plus ancienne mention du nom, selon Augustin F. C. Holl.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IX : General History of Africa Revisited, section IV, introduction",
+                "author": "Augustin F. C. Holl",
+                "year": 2025,
+                "url": "https://doi.org/10.54678/LHRT2470",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 871",
+                "notes": "UNESCO, volume dirigé par Augustin F. C. Holl, en anglais, lu dans l'exemplaire numérisé. Partie « The first territorial states: Tekrur and Ghana »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 780,
+              "to": 799,
+              "label": "Fin du VIIIe siècle"
+            },
+            "statement": "Le nom Ghana apparaît par écrit chez l'auteur arabe al-Fazārī, vers 788 : la renommée du Ghana, « pays de l'or », a alors atteint Bagdad, selon Thurstan Shaw et Tadeusz Lewicki. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume qu'il désigne existait déjà avant ce texte.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 16 : La zone guinéenne : situation générale",
+                "author": "Thurstan Shaw",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 504",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. À la fin du VIIIe siècle, la renommée du Ghana, « pays de l'or », a atteint Bagdad, comme l'atteste un passage d'al-Fazārī ; l'auteur renvoie à Levtzion (1973) et à Levtzion et Hopkins (1981)."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 11 : Le rôle du Sahara et des Sahariens dans les relations entre le Nord et le Sud",
+                "author": "Tadeusz Lewicki",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 334",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. Date l'œuvre d'al-Fazārī de 788 environ et précise qu'elle nous est parvenue en partie par al-Mas˓ūdī ; elle y nomme le royaume de Ghana."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Rapportée en 2026"
+            },
+            "statement": "Le nom Ghana voudrait dire « chef de guerre » : c'est la traduction qu'on donne souvent du titre du souverain, selon Citi Newsroom.",
+            "hypothesisGroup": "sens du nom Ghana",
+            "sources": [
+              {
+                "title": "From Gold Coast to Ghana: history, memory and the naming of a nation",
+                "author": "Jimmy Kutin, Citi Newsroom",
+                "year": 2026,
+                "url": "https://citinewsroom.com/2026/03/from-gold-coast-to-ghana-history-memory-and-the-naming-of-a-nation/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse ghanéen du 5 mars 2026, consulté le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1067,
+              "to": 1068,
+              "label": "Rapportée en 1067-1068"
+            },
+            "statement": "Le nom Ghana serait d'abord un titre royal plutôt que le nom d'un pays, selon le géographe al-Bakrī, pour qui le pays de ces rois porte un autre nom.",
+            "hypothesisGroup": "sens du nom Ghana",
+            "sources": [
+              {
+                "title": "Description de l'Afrique septentrionale, traduction de William Mac Guckin de Slane, édition revue et corrigée",
+                "author": "Abou-Obeïd el-Bekri (al-Bakrī)",
+                "year": 1913,
+                "url": "https://archive.org/details/fr103andalus05",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 327",
+                "notes": "Alger, Adolphe Jourdan, 1913, lu dans l'exemplaire numérisé. Chapitre « Description de Ghana et mœurs de ses habitants » : al-Bakrī écrit que Ghana est le titre que portent les rois de ce peuple, que leur pays porte un autre nom, et date sa description de l'an 460 de l'hégire, 1067-1068."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Côte-de-l'Or",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Jusqu'au 6 mars 1957",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1957,
+              "label": "Jusqu'au 6 mars 1957"
+            },
+            "statement": "Le nom Côte-de-l'Or, Gold Coast en anglais, est celui des territoires que la loi britannique place à partir du 6 mars 1957 sous le nom de Ghana, selon le texte de cette loi.",
+            "formAsWritten": "Gold Coast",
+            "sources": [
+              {
+                "title": "Ghana Independence Act 1957",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1957,
+                "url": "https://www.legislation.gov.uk/ukpga/Eliz2/5-6/6/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "sections 1 et 5",
+                "notes": "Texte de la loi, lu sur le site officiel de la législation britannique. La section 1 place les territoires de la Gold Coast « under the name of Ghana » ; la section 5 fixe le jour de l'indépendance au 6 mars 1957."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1599,
+              "label": "XVIe siècle"
+            },
+            "statement": "Le nom Côte-de-l'Or désigne au XVIe siècle la côte qui va du cap des Trois-Pointes à la Volta ; avec El Mina, elle est devenue à la fin du XVe siècle un très grand marché de l'or, selon P. Kipré.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "P. Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 355",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Au XVIe siècle, la Côte-de-l'Or, « actuelle République du Ghana », va du cap des Trois-Pointes à la Volta ; elle devient à la fin du XVe siècle, avec El Mina, un très grand marché de l'or."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

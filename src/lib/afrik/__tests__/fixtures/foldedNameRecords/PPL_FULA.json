@@ -531,7 +531,7 @@
       "nameText": "Fellata",
       "nameType": "exonym",
       "languageOfOrigin": null,
-      "meaning": "Nom donné aux Fulɓe au Bornou et plus à l'est. Heinrich Barth l'entend chez les gens du Bornou ; François de Medeiros l'attribue aux Kanuri et aux Arabes du Soudan ; Amadou Hampâté Bâ le range parmi les noms que donnent les Arabes. Ces auteurs disent qui emploie le nom, non d'où il vient. Seul Abu-Manga, cité par Breedveld, lui donne une origine : un mot kanouri qui désignait d'abord les Fulɓe du Bornou. L'article anglais de Wikipédia lui prête une origine arabe, sans source.",
+      "meaning": "Nom donné aux Fulɓe au Bornou et plus à l'est. Heinrich Barth l'entend chez les gens du Bornou ; François de Medeiros l'attribue aux Kanuri et aux Arabes du Soudan ; Amadou Hampâté Bâ le range parmi les noms que donnent les Arabes. Ces auteurs disent qui emploie le nom, non d'où il vient. Une origine kanouri est proposée ; elle reste une hypothèse.",
       "periodLabel": "Usage contemporain",
       "imposedBy": null,
       "impositionPeriod": null,
@@ -646,7 +646,7 @@
           }
         }
       ],
-      "shortLine": "Fellata est un nom employé au Bornou et plus à l'est. Les sources proposent différentes origines.",
+      "shortLine": "Fellata est un nom employé au Bornou et plus à l'est ; il viendrait du kanouri, selon Abu-Manga.",
       "namedBy": "les Kanuri et les arabophones du Soudan",
       "originDebated": true,
       "usedIn": ["knc", "apd"]
