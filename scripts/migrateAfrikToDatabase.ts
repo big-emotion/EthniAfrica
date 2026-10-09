@@ -3,8 +3,9 @@
  *
  * Data is processed in AFRIK hierarchy order:
  * language families → languages → peoples → people/language relations →
- * countries → people/country relations → persons → patronymes → migration
- * events (every normalized join is loaded only after its FK parents exist).
+ * countries → people/country relations → places → persons → patronymes →
+ * migration events (every normalized join is loaded only after its FK parents
+ * exist).
  */
 
 import { config } from "dotenv";
@@ -40,6 +41,12 @@ import {
   loadAllPersonDossiers,
   loadPersons,
 } from "@/lib/afrik/loaders/personJsonLoader";
+import {
+  loadAllPlaceFiches,
+  loadPlaces,
+  type PlaceBatch,
+  type PlaceLoadReport,
+} from "@/lib/afrik/loaders/placeJsonLoader";
 import {
   loadAllRelationFiles,
   loadRelations,
@@ -143,6 +150,7 @@ export interface MigrationReport {
   migrations: MigrationSectionReport;
   appellations: AppellationLoadReport;
   persons: MigrationSectionReport;
+  places: PlaceLoadReport;
   patronymes: PatronymeLoadReport;
   dossiers: DossierLoadReport;
   protectedDrift: {
@@ -199,6 +207,7 @@ export function emptyMigrationReport(): MigrationReport {
     migrations: { total: 0, inserted: 0, errors: [] },
     appellations: { total: 0, inserted: 0, rejected: [], errors: [] },
     persons: { total: 0, inserted: 0, errors: [] },
+    places: { total: 0, inserted: 0, errors: [] },
     dossiers: { total: 0, inserted: 0, chapters: 0, errors: [] },
     patronymes: {
       total: 0,
@@ -882,6 +891,7 @@ const STRUCTURAL_STAGES = [
   "peoples",
   "peopleLanguages",
   "countries",
+  "places",
   "patronymes",
 ] as const;
 
@@ -951,6 +961,24 @@ export function classifySyncOutcome(report: MigrationReport): SyncOutcome {
   };
 }
 
+/**
+ * A fiche the place model refuses never reaches `loadPlaces`; it is counted
+ * and reported beside the ones the loader refuses, so no place goes missing
+ * from the site without a line saying why.
+ */
+async function loadPlaceBatch(
+  supabase: AdminClient,
+  batch: PlaceBatch,
+  options: Parameters<typeof loadPlaces>[2]
+): Promise<PlaceLoadReport> {
+  const loaded = await loadPlaces(supabase, batch.places, options);
+  return {
+    total: loaded.total + batch.errors.length,
+    inserted: loaded.inserted,
+    errors: [...batch.errors, ...loaded.errors],
+  };
+}
+
 function saveErrorReport(report: MigrationReport): string {
   const logsDir = join(process.cwd(), "dataset", "source", "afrik", "logs");
   mkdirSync(logsDir, { recursive: true });
@@ -1003,6 +1031,7 @@ export async function migrateAfrikToDatabase(
   report.persons.total = personDossiers.length;
 
   const patronymeBatch = loadAllPatronymeDossiers();
+  const placeBatch = loadAllPlaceFiches();
   const dossierBatch = loadAllDossiers();
 
   const sources = sourceSnapshot(languageFamilies, peoples, countries);
@@ -1051,6 +1080,13 @@ export async function migrateAfrikToDatabase(
     report.dossiers = await loadDossiers(supabase, dossierBatch, {
       dryRun: true,
     });
+    report.places = await loadPlaceBatch(supabase, placeBatch, {
+      dryRun: true,
+      references: {
+        peopleIds: new Set(peoples.map(({ id }) => id)),
+        countryIds: new Set(countries.map(({ id }) => id)),
+      },
+    });
     logger.info("AFRIK synchronization preview completed", {
       target: syncTarget.environment,
       languageFamilies: report.languageFamilies.total,
@@ -1062,6 +1098,7 @@ export async function migrateAfrikToDatabase(
       peopleRelations: report.peopleRelations.total,
       migrations: report.migrations.total,
       persons: report.persons.total,
+      places: report.places,
       patronymes: report.patronymes,
       dossiers: report.dossiers,
       protectedDrift: report.protectedDrift,
@@ -1099,6 +1136,13 @@ export async function migrateAfrikToDatabase(
   const validCountryIds = await readIds(supabase, "afrik_countries");
 
   await upsertRelations(supabase, peoples, validCountryIds, report);
+
+  report.places = await loadPlaceBatch(supabase, placeBatch, {
+    references: {
+      peopleIds: await readIds(supabase, "afrik_peoples"),
+      countryIds: validCountryIds,
+    },
+  });
 
   const personsReport = await loadPersons(supabase, personDossiers);
   report.persons.total = personsReport.total;
@@ -1189,6 +1233,7 @@ export async function migrateAfrikToDatabase(
         errors: report.appellations.errors.length,
       },
       persons: report.persons,
+      places: report.places,
       patronymes: report.patronymes,
       dossiers: report.dossiers,
       protectedDrift: report.protectedDrift,

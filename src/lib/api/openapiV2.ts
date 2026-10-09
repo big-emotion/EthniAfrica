@@ -991,10 +991,22 @@ const options: swaggerJsdoc.Options = {
               description: "Languages matching corpus-wide",
               example: 0,
             },
+            places: {
+              type: "array",
+              items: { $ref: "#/components/schemas/PlaceSearchHitV2" },
+              description:
+                "Matching places (REQ-196), ranked by afrik_search_places (migration 100) on the filed name and every nameHistory name. A grouped facet like languages: not folded into `results`.",
+            },
+            placesTotal: {
+              type: "integer",
+              description:
+                "Places matching across every page, not only this one",
+              example: 0,
+            },
             total: {
               type: "integer",
               description:
-                "Without `lens`, the sum of the six non-quiz corpus-wide counts. With `lens=quiz`, this equals `quizzesTotal`. Changed in 2.2.0: this used to report the size of the returned page, which made it useless for paging.",
+                "Without `lens`, the sum of the seven non-quiz counts, each across every page. With `lens=quiz`, this equals `quizzesTotal`. Changed in 2.2.0: this used to report the size of the returned page, which made it useless for paging.",
               example: 17,
             },
             leads: {
@@ -5561,6 +5573,137 @@ const options: swaggerJsdoc.Options = {
               required: ["key"],
             },
           ],
+        },
+        PlaceSummaryV2: {
+          type: "object",
+          description: "One row of the place list (REQ-196).",
+          properties: {
+            id: { type: "string", example: "LOC_YAMOUSSOUKRO" },
+            placeType: {
+              type: "string",
+              enum: ["ville", "region", "site-historique", "autre"],
+            },
+            nameMain: { type: "string", example: "Yamoussoukro" },
+            countryId: { type: "string", example: "CIV" },
+          },
+          required: ["id", "placeType", "nameMain", "countryId"],
+        },
+        PlaceV2: {
+          type: "object",
+          description:
+            "A place fiche (REQ-196). `names` lists every name the place answers to — its filed name, then each nameText of its nameHistory — with no form promoted over another; `nameHistory` tells where each comes from.",
+          properties: {
+            id: { type: "string", example: "LOC_YAMOUSSOUKRO" },
+            placeType: {
+              type: "string",
+              enum: ["ville", "region", "site-historique", "autre"],
+            },
+            nameMain: { type: "string", example: "Yamoussoukro" },
+            names: {
+              type: "array",
+              items: { type: "string" },
+              example: ["Yamoussoukro", "N'Gokro"],
+            },
+            summary: { type: "string" },
+            country: {
+              type: "object",
+              properties: {
+                id: { type: "string", example: "CIV" },
+                name: { type: ["string", "null"] },
+              },
+              required: ["id", "name"],
+            },
+            associatedPeoples: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  id: { type: "string" },
+                  name: { type: ["string", "null"] },
+                  relation: { type: ["string", "null"] },
+                },
+                required: ["id", "name", "relation"],
+              },
+            },
+            gaps: { type: "array", items: { type: "object" } },
+            sources: { type: "array", items: { type: "object" } },
+            nameHistory: {
+              oneOf: [
+                { $ref: "#/components/schemas/NameHistoryV2" },
+                { type: "null" },
+              ],
+            },
+          },
+          required: [
+            "id",
+            "placeType",
+            "nameMain",
+            "names",
+            "summary",
+            "country",
+            "associatedPeoples",
+            "gaps",
+            "sources",
+            "nameHistory",
+          ],
+        },
+        PlaceSearchHitV2: {
+          type: "object",
+          description:
+            "A place search hit (REQ-196): exact name match, then a prefix match on any of its names, then a pg_trgm fallback; normalizedScore is the cross-kind scale of migration 069.",
+          properties: {
+            id: { type: "string", example: "LOC_YAMOUSSOUKRO" },
+            nameMain: { type: "string", example: "Yamoussoukro" },
+            placeType: { type: "string", example: "ville" },
+            countryId: { type: "string", example: "CIV" },
+            summary: { type: "string" },
+            nameHistory: {
+              oneOf: [
+                { $ref: "#/components/schemas/NameHistoryV2" },
+                { type: "null" },
+              ],
+            },
+            relevance: { type: "number" },
+            exactMatch: { type: "boolean" },
+            normalizedScore: { type: "number", minimum: 0, maximum: 1 },
+          },
+          required: [
+            "id",
+            "nameMain",
+            "placeType",
+            "countryId",
+            "exactMatch",
+            "normalizedScore",
+          ],
+        },
+        PlaceDetailEnvelope: {
+          type: "object",
+          properties: {
+            data: { $ref: "#/components/schemas/PlaceV2" },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
+        },
+        PlaceListEnvelope: {
+          type: "object",
+          properties: {
+            data: {
+              type: "array",
+              items: { $ref: "#/components/schemas/PlaceSummaryV2" },
+            },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
         },
       },
     },

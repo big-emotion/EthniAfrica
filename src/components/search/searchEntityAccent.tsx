@@ -55,6 +55,13 @@ export const SEARCH_ENTITY_ACCENT: Record<
     markClassName: "bg-afh-text-muted",
     accentScopeClassName: "afh-accent-neutral",
   },
+  // REQ-196: a place takes its country's teal — it is read as a part of the
+  // country until it has a page of its own.
+  place: {
+    label: "Lieu",
+    markClassName: "bg-[var(--afh-cat-teal)]",
+    accentScopeClassName: "afh-accent-teal",
+  },
 };
 
 /**

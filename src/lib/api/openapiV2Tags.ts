@@ -103,6 +103,11 @@ export const OPENAPI_V2_TAGS: { name: string; description: string }[] = [
     description:
       "Smart quiz engine — audience segments with per-rung question counts, and randomly-composed sessions drawn from the verified AFRIK corpus, gate-checked at serve time (Epic 10, FR65/FR66, AR8/AR9, NFR38).",
   },
+  {
+    name: "API v2 - Places",
+    description:
+      "Places (towns, regions, historic sites — LOC_*) and the history of their names: every name a place answers to, in the shared nameHistory block every named subject carries (REQ-196, ARCH-028).",
+  },
 ];
 
 /**

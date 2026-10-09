@@ -27,6 +27,10 @@ import {
   loadPersons,
 } from "@/lib/afrik/loaders/personJsonLoader";
 import {
+  loadAllPlaceFiches,
+  loadPlaces,
+} from "@/lib/afrik/loaders/placeJsonLoader";
+import {
   loadAllRelationFiles,
   loadRelations,
 } from "@/lib/afrik/loaders/relationJsonLoader";
@@ -56,6 +60,7 @@ vi.mock("@/lib/afrik/loaders/countryLoader");
 vi.mock("@/lib/afrik/loaders/dossierJsonLoader");
 vi.mock("@/lib/afrik/loaders/patronymeJsonLoader");
 vi.mock("@/lib/afrik/loaders/personJsonLoader");
+vi.mock("@/lib/afrik/loaders/placeJsonLoader");
 vi.mock("@/lib/afrik/loaders/relationJsonLoader");
 vi.mock("@/lib/afrik/loaders/migrationJsonLoader");
 vi.mock("@/lib/supabase/admin");
@@ -282,6 +287,12 @@ describe("migrateAfrikToDatabase", () => {
     });
     vi.mocked(loadAllPatronymeDossiers).mockReturnValue({
       dossiers: [],
+      errors: [],
+    });
+    vi.mocked(loadAllPlaceFiches).mockReturnValue({ places: [], errors: [] });
+    vi.mocked(loadPlaces).mockResolvedValue({
+      total: 0,
+      inserted: 0,
       errors: [],
     });
     vi.mocked(loadPatronymes).mockResolvedValue({
@@ -531,6 +542,73 @@ describe("migrateAfrikToDatabase", () => {
     );
     expect(report.persons).toMatchObject({ total: 1, inserted: 1 });
     expect(report.patronymes).toMatchObject({ total: 1, inserted: 1 });
+  });
+
+  // @req REQ-196
+  it("checks place fiches against the loaded countries and peoples in dry-run mode", async () => {
+    vi.mocked(loadAllPlaceFiches).mockReturnValue({
+      places: [{ id: "LOC_YAMOUSSOUKRO" } as never],
+      errors: ["LOC_BROKEN.json: countryId: must be ISO"],
+    });
+    vi.mocked(loadPlaces).mockResolvedValue({
+      total: 1,
+      inserted: 0,
+      errors: [],
+    });
+    const database = useSupabaseDouble();
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: true,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    expect(loadPlaces).toHaveBeenCalledWith(
+      expect.anything(),
+      [expect.objectContaining({ id: "LOC_YAMOUSSOUKRO" })],
+      {
+        dryRun: true,
+        references: {
+          peopleIds: new Set([peopleFixture.id]),
+          countryIds: new Set([coteDIvoire.id]),
+        },
+      }
+    );
+    // A fiche the model refuses is a place that will not be served: it is
+    // reported with the others, not dropped.
+    expect(report.places).toEqual({
+      total: 2,
+      inserted: 0,
+      errors: ["LOC_BROKEN.json: countryId: must be ISO"],
+    });
+    expect(database.operations).toEqual([]);
+  });
+
+  // @req REQ-196
+  it("loads places once their countries and peoples are written", async () => {
+    const events: string[] = [];
+    vi.mocked(loadPlaces).mockImplementation(async () => {
+      events.push("places");
+      return { total: 1, inserted: 1, errors: [] };
+    });
+    useSupabaseDouble({
+      writeError: ({ table }) => {
+        if (table === "afrik_peoples") events.push("peoples");
+        if (table === "afrik_countries") events.push("countries");
+        return null;
+      },
+    });
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: false,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    expect(events.indexOf("countries")).toBeGreaterThan(-1);
+    expect(events.indexOf("countries")).toBeLessThan(events.indexOf("places"));
+    expect(events.indexOf("peoples")).toBeLessThan(events.indexOf("places"));
+    expect(report.places).toEqual({ total: 1, inserted: 1, errors: [] });
   });
 
   it("upserts complete source content in hierarchy order and verifies the result", async () => {
