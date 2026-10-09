@@ -28,6 +28,8 @@ palette: [mockup v5](name-history-timeline-mockup-v5.html), terre cuite.
   plus the operator's own examples: Peul, lingala, Mali, Côte d'Ivoire,
   Traoré, Coulibaly, Gagnoa, Daloa. Every other subject shows a minimal
   timeline: the header with its names, and no dated tiles.
+  The list, with the evidence behind each subject, is in
+  [`name-history-priority-core.md`](name-history-priority-core.md).
 - **Every model carries name history.** People, language, language family,
   country, family name, place, and the free word type.
 - **One common model**, generalised from `LOC_YAMOUSSOUKRO`:
