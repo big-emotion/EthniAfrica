@@ -85,8 +85,10 @@ test("@smoke a search for lingala opens on its name-history timeline", async ({
 }) => {
   await page.goto(`${getLocalizedRoute(LOCALE, "search")}?q=lingala`);
 
+  // Exact: « Histoire du nom » is also the start of the tile list's name.
   const timelineLens = page.getByRole("button", {
     name: searchFeedCopy.fr.filters.timeline,
+    exact: true,
   });
   await expect(timelineLens).toHaveAttribute("aria-pressed", "true");
   await expect(

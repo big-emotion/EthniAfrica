@@ -22,12 +22,16 @@ palette: [mockup v5](name-history-timeline-mockup-v5.html), terre cuite.
 - **Content before form.** The fiches are enriched with name history before
   the timeline ships.
 - **The timeline is the default lens** of the search feed (`FeedLensId` in
-  `src/lib/search/searchLenses.ts`), for every query, with no per-subject
-  fallback. Tout, Shorts, Récits, Jeux and Fiches stay as secondary lenses.
+  `src/lib/search/searchLenses.ts`) whenever a searched subject carries a
+  `nameHistory`. Every subject is meant to carry one; when none does, the page
+  opens on « Tout », as a safety net rather than a second design (amended by
+  the operator on 2026-10-09, ETNI-2012 review: a lens with no dated tile
+  would open the page on an empty history). The lens reads « Histoire du
+  nom ». Tout, Shorts, Récits, Jeux and Fiches stay as secondary lenses.
 - **Release gate: a priority core.** The most searched names (Plausible),
   plus the operator's own examples: Peul, lingala, Mali, Côte d'Ivoire,
-  Traoré, Coulibaly, Gagnoa, Daloa. Every other subject shows a minimal
-  timeline: the header with its names, and no dated tiles.
+  Traoré, Coulibaly, Gagnoa, Daloa. Until a subject is enriched, its page
+  opens on « Tout » (see the default lens above).
   The list, with the evidence behind each subject, is in
   [`name-history-priority-core.md`](name-history-priority-core.md).
 - **Every model carries name history.** People, language, language family,
@@ -83,9 +87,15 @@ palette: [mockup v5](name-history-timeline-mockup-v5.html), terre cuite.
   as stray asterisks. The UI finds the names to set from the block itself:
   each `names[].nameText` and each account's `formAsWritten`, matched in the
   text. A form the block does not list stays roman until it is added there.
-- **"Elsewhere" anchors.** A fixed list of 20 to 30 sourced events outside
-  Africa, chosen from French and Belgian school history, with English or US
-  history only sparingly.
+- **"Elsewhere" anchors.** A fixed list of sourced, dated events
+  (`src/lib/search/elsewhereAnchors.json`) that mixes African events with
+  French and Belgian school history, roughly balanced, with English or US
+  history only sparingly (amended by the operator on 2026-10-09, ETNI-2012
+  review; the first list held only events outside Africa). Each African event
+  records its UN M49 region. « Ailleurs » stays elsewhere: a tile is never set
+  against an event from the subject's own region, and a subject whose region
+  is unknown (a language, a family, a family name) gets events outside Africa
+  only. Among the events left, the one nearest the tile's date wins.
 - **Source labels for the reader**, one per `source_kind`. `ai_generated`
   reads « Synthèse à vérifier ». The public API keeps the tier as data and
   drops its French labels.
@@ -124,5 +134,5 @@ palette: [mockup v5](name-history-timeline-mockup-v5.html), terre cuite.
   versions and need a dedicated pass.
 - **How sources are shown.** The exact icon, or the selection-to-sources
   interaction, is still to be designed.
-- **The minimal timeline.** It must be checked at 430 px so that it does not
-  read as a void.
+- **A subject without name history.** The page opens on « Tout » for now;
+  the lens appears only once the subject is enriched.

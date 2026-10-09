@@ -8,7 +8,10 @@ import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameTimelineCopy } from "@/lib/i18n/copy/nameTimeline";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
-import { elsewhereAnchorFor } from "@/lib/search/elsewhereAnchors";
+import {
+  africanRegionsOf,
+  elsewhereAnchorFor,
+} from "@/lib/search/elsewhereAnchors";
 import {
   buildNameTimeline,
   splitNamedText,
@@ -26,6 +29,8 @@ export interface NameTimelineProps {
   searched: string;
   subjectType: SearchEntityType;
   headingLevel?: "h1" | "h2";
+  /** The subject's countries, so « ailleurs » skips its own region. */
+  countryIds?: readonly string[];
   language: Language;
 }
 
@@ -60,6 +65,7 @@ export function NameTimeline({
   searched,
   subjectType,
   headingLevel = "h1",
+  countryIds,
   language,
 }: NameTimelineProps) {
   const copy = nameTimelineCopy[language];
@@ -79,8 +85,11 @@ export function NameTimeline({
     ? timeline.names.findIndex((n) => n.nameText === timeline.selfLead!.self)
     : -1;
 
+  const subjectRegions = africanRegionsOf(countryIds);
   const anchorOf = (tile: TimelineTile) =>
-    tile.hypotheses ? undefined : elsewhereAnchorFor(tile.accounts[0].period);
+    tile.hypotheses
+      ? undefined
+      : elsewhereAnchorFor(tile.accounts[0].period, subjectRegions);
   const hasAnchors = name.tiles.some((tile) => anchorOf(tile));
   const regimes = REGIMES.filter((regime) =>
     name.tiles.some((tile) => tile.regime === regime)

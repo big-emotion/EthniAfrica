@@ -8,8 +8,8 @@ import {
 import { cn } from "@/lib/utils";
 
 /**
- * The name-history timeline (ETNI-2012) as the search result page opens on
- * it, at 430 px first. The fixtures are condensed from the lingala and Peul
+ * The « Histoire du nom » lens (ETNI-2012) as the search result page opens
+ * on it, at 430 px first. The fixtures are condensed from the lingala and Peul
  * fiches; `…Night` rebinds the tokens the way the night theme does.
  */
 
@@ -25,7 +25,7 @@ const frame: Decorator = (Story, { parameters }) => (
 );
 
 const meta = {
-  title: "Search/Name timeline",
+  title: "Search/Histoire du nom",
   component: NameTimeline,
   tags: ["autodocs"],
   decorators: [frame],
@@ -49,10 +49,19 @@ type Story = StoryObj<typeof meta>;
 // @req REQ-198
 export const Lingala: Story = {};
 
-/** Searched by a name the people does not give itself: the lead to Fulɓe. */
+/**
+ * Searched by a name the people does not give itself: the lead to Fulɓe. With
+ * its West African countries, « Pendant ce temps, ailleurs » skips events from
+ * West Africa.
+ */
 // @req REQ-198
 export const PeulSearched: Story = {
-  args: { history: PEUL_HISTORY, searched: "Peul", subjectType: "people" },
+  args: {
+    history: PEUL_HISTORY,
+    searched: "Peul",
+    subjectType: "people",
+    countryIds: ["SEN", "GIN", "MLI"],
+  },
 };
 
 // @req REQ-198

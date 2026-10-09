@@ -45,7 +45,8 @@ describe("feed lenses", () => {
   });
 
   // A subject with no name history keeps the answer as its default (operator
-  // brief for ETNI-2012), rather than opening on a timeline with no tile.
+  // ruling, ETNI-2012 review): the guard is a safety net, since every subject
+  // is meant to carry one.
   // @req REQ-198
   it("opens on the timeline only when a name history exists", () => {
     expect(defaultFeedLens(1)).toBe("timeline");
