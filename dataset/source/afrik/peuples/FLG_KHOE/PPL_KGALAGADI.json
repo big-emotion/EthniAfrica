@@ -112,7 +112,8 @@
       {
         "title": "Ethnologue SIL International — Kgalagadi language (xkv)",
         "url": "https://www.ethnologue.com/language/xkv/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Kgalagadi people",
@@ -122,7 +123,8 @@
       {
         "title": "Statistics Botswana — Population Distribution 2022",
         "url": "https://statsbots.org.bw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Global Recordings Network — Kgalagadi (xkv)",

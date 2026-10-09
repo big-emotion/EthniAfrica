@@ -88,7 +88,8 @@
       {
         "title": "UNESCO World Heritage Centre — Island of Mozambique",
         "url": "https://whc.unesco.org/en/list/599/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Joshua Project — Swahili in Mozambique",
@@ -113,7 +114,8 @@
       {
         "title": "Ethnologue SIL — kiMwani (wmw)",
         "url": "https://www.ethnologue.com/language/wmw",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CID-DS — Tufo Dancing: Muslim Women's Culture in Northern Mozambique",

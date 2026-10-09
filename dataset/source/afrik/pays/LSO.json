@@ -108,17 +108,20 @@
       {
         "title": "SIL Ethnologue – Languages of Lesotho",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Lesotho",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Lesotho",
         "url": "https://www.unfpa.org/data/world-population/LS",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Recensements lesothans",
@@ -138,7 +141,8 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Eugène Casalis, Les Bassoutos, ou vingt-trois années de séjour et d'observations au sud de l'Afrique, Paris, Meyrueis, 1859",
@@ -156,18 +160,21 @@
         "title": "Lesotho Independence Act 1966, Royaume-Uni, 1966 chapitre 24, article 1",
         "url": "https://www.legislation.gov.uk/ukpga/1966/24/enacted",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Dispose que le territoire qui constituait « the Colony of Basutoland » devient le 4 octobre 1966 un royaume indépendant « under the name of Lesotho ». La loi rend le nom officiel ; elle ne le crée pas, puisqu'il est attesté dès 1859. Texte lu le 9 septembre 2026."
       },
       {
         "title": "D. Frédéric Ellenberger et J. C. Macgregor, History of the Basuto, Ancient and Modern, Londres, Caxton, 1912",
         "url": "https://emandulo.apc.uct.ac.za/collection/FHYA%20Depot/Ellenberger_F_History_of_the_Basuto_Ancient_and_Modern_1912.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Rattache le nom à un sobriquet swazi, Abashunto, du verbe uku shunta, « faire un nœud », visant le pagne noué des Bapedi et repris ensuite avec fierté. L'ouvrage repose sur quarante-cinq années de traditions orales recueillies au Leribe. Le nœud y est celui d'un vêtement, non d'une coiffure. Numérisation lue le 9 septembre 2026."
       },
       {
         "title": "Dictionary of South African English on Historical Principles, entrées « Sotho » et « Mosotho »",
         "url": "https://dsae.co.za/entry/sotho/e06714",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Enregistre trois rattachements concurrents de la racine : l'adjectif sootho, « brun » ; la rivière Usutu ; et un substitut d'évitement pour motho, « être humain ». Chacun est daté et accompagné d'une citation, dont un relevé de 1835 notant que les Ndebele appliquaient le terme à tous les peuples autres que le leur. Entrées lues le 9 septembre 2026."
       },
       {
@@ -180,12 +187,14 @@
         "title": "William Moruti Tšiu, Basotho Family Odes (Diboko) and Oral Tradition, mémoire de master, University of South Africa, 2001",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Origine de la lecture par lesôtô, la lanière de peau tannée, et de l'argument de préfixe qui l'accompagne. Le mémoire n'a pas été lu : le dépôt de l'université était hors service et la copie accessible ne contient que des pages liminaires sans texte. Ce que la fiche en rapporte passe par l'article de Lesedi FM qui le cite."
       },
       {
         "title": "Paulus M. Mohome, « Naming in Sesotho: Its Sociocultural and Linguistic Basis », Names, volume 20, numéro 3, 1972, p. 171-185",
         "url": "https://ans-names.pitt.edu/ans/article/download/715/714/1432",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Redonne en note liminaire la série des préfixes et traduit Lesotho par « country of the Basotho ». L'auteur enseignait à l'université du Botswana, du Lesotho et du Swaziland. Article lu le 9 septembre 2026."
       }
     ],

@@ -98,7 +98,8 @@
       {
         "title": "Ethnologue SIL — Shona (sna)",
         "url": "https://www.ethnologue.com/language/sna/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Shona in Zimbabwe",
@@ -118,17 +119,20 @@
       {
         "title": "CIA World Factbook — Zimbabwe",
         "url": "https://www.cia.gov/the-world-factbook/countries/zimbabwe/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Glottolog — Shona (shon1251)",
         "url": "https://glottolog.org/resource/languoid/id/shon1251",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Zimbabwe National Statistics Agency — Census 2022",
         "url": "https://www.zimstat.co.zw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

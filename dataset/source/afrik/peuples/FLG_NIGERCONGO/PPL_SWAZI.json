@@ -109,12 +109,14 @@
       {
         "title": "SIL Ethnologue — siSwati (ssw)",
         "url": "https://www.ethnologue.com/language/ssw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Eswatini",
         "url": "https://www.cia.gov/the-world-factbook/countries/eswatini/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Gillis, D. Hugh. The Kingdom of Swaziland: Studies in Political History. Greenwood Press, 1999",
@@ -130,12 +132,14 @@
         "title": "Statistics South Africa — Census 2022 Statistical Release",
         "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "Publication P0301.4, tableau 2.8 : le siSwati est la langue la plus parlée dans le ménage pour 2,8 % de la population sud-africaine en 2022."
       },
       {
         "title": "UNFPA Eswatini — Swaziland Releases Population Count from 2017 Census",
         "url": "https://eswatini.unfpa.org/en/news/swaziland-releases-population-count-2017-census",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Résultats préliminaires du recensement de 2017 : 1 093 238 habitants."
       }
     ]

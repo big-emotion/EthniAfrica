@@ -124,12 +124,14 @@
       {
         "title": "Tracey, Hugh (1948, reprint 1970). Chopi Musicians: Their Music, Poetry, and Instruments. Oxford University Press. ISBN 0-19-724182-4",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Locating the Chopi Xylophone Ensembles of Southern Mozambique – Ethnomusicology Review, UCLA",
         "url": "https://ethnomusicologyreview.ucla.edu/journal/volume/11/piece/513",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Smithsonian Folkways – Music from Mozambique Vol. 2: Chopi Timbila",
@@ -139,22 +141,26 @@
       {
         "title": "UNESCO / Programme Routes de la Soie — Chopi Timbila",
         "url": "https://en.unesco.org/silkroad/silk-road-themes/intangible-cultural-heritage/chopi-timbila",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNESCO — Chopi Timbila (patrimoine immateriel)",
         "url": "https://ich.unesco.org/en/RL/chopi-timbila-00158",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Ethnologue (SIL) — Chopi language (cce)",
         "url": "https://www.ethnologue.com/language/cce/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Mozambique",
         "url": "https://www.cia.gov/the-world-factbook/countries/mozambique/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Henri-Alexandre Junod, The Life of a South African Tribe. Neuchatel, 1913",
@@ -164,7 +170,8 @@
       {
         "title": "UNESCO Archives multimedia — Chopi Timbila (2005 Proclamation)",
         "url": "https://www.unesco.org/archives/multimedia/document-636",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

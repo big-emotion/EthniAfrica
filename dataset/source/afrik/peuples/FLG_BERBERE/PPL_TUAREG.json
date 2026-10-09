@@ -122,12 +122,14 @@
       {
         "title": "Ethnologue — Tuareg macrolanguage (tmh)",
         "url": "https://www.ethnologue.com/language/tmh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO — Patrimoine culturel immatériel : musique Ishumar touareg",
         "url": "https://ich.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Claudot-Hawad, Helene. Touaregs : Voix solitaires sous l'horizon confisque. Paris: Editions de l'EHESS, 1996",
@@ -153,18 +155,21 @@
         "title": "Chaker, Salem. Amazigh (le/un Berbere). Encyclopedie berbere, IV, 1986, p. 562-568",
         "url": "https://journals.openedition.org/encyclopedieberbere/2465",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article signe d'une encyclopedie scientifique publiee. Donne les formes touaregues du nom par region et precise que le sens d'homme libre ou noble est un usage local secondaire."
       },
       {
         "title": "Trousset, Pol. Fezzan. Encyclopedie berbere, XVIII, 1997, p. 2777-2817",
         "url": "https://journals.openedition.org/encyclopedieberbere/2083",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article signe d'une encyclopedie scientifique publiee. Expose l'hypothese qui rattache le mot Touareg a Targa, ancien nom du Fezzan."
       },
       {
         "title": "Academie francaise. Dictionnaire, 9e edition, article touareg",
         "url": "https://www.dictionnaire-academie.fr/article/A9T1561",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Dictionnaire publie par une institution identifiable. Etablit l'emprunt a l'arabe tawariq."
       },
       {
@@ -183,12 +188,14 @@
         "title": "Larousse, Encyclopedie. Touareg",
         "url": "https://www.larousse.fr/encyclopedie/divers/Touareg/147148",
         "tier": "unverified",
+        "source_kind": "linguistic_reference",
         "notes": "Encyclopedie generale. Indique que le nom Touareg est d'origine arabe et de signification discutee, et glose Kel Tamasheq comme ceux de langue tamasheq."
       },
       {
         "title": "Larousse, Encyclopedie. Almoravides",
         "url": "https://www.larousse.fr/encyclopedie/groupe-personnage/Almoravides/104945",
         "tier": "unverified",
+        "source_kind": "linguistic_reference",
         "notes": "Encyclopedie generale. Presente les Sanhadja comme apparentes aux Touareg."
       },
       {

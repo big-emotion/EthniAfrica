@@ -119,17 +119,20 @@
       {
         "title": "University of Missouri — Manyika, Shona people of Zimbabwe (PDF)",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Manyinka.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "US Department of Justice — Manyika-Shona, Zimbabwe (PDF)",
         "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2014/01/06/manyika%20.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Glottolog — Manyika (many1258)",
         "url": "https://glottolog.org/resource/languoid/id/many1258",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Seed Gallery New York — Manyika",

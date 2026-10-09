@@ -79,12 +79,14 @@
       {
         "title": "Ethnologue – Tafi Language TCD",
         "url": "https://www.ethnologue.com/language/tcd/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Wikidata – Tafi Q36545",
         "url": "https://www.wikidata.org/wiki/Q36545",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Facebook – Migration history of Tafi Guans in the Volta Region",
@@ -94,12 +96,14 @@
       {
         "title": "Ghana Volta Region – Modern Ghana demographics",
         "url": "https://www.modernghana.com/ghanahome/regions/volta.asp",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "ISO 639-3 – code tcd: Tafi",
         "url": "https://iso639-3.sil.org/code/tcd",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

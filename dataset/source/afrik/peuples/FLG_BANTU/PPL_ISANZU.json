@@ -75,12 +75,14 @@
       {
         "title": "Isanzu Language – Ethnologue",
         "url": "https://www.ethnologue.com/language/isn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Isanzu – Glottolog 5.3",
         "url": "https://glottolog.org/resource/languoid/id/isan1243",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Isanzu Community Perspectives on Ancestral Human Remains – Open Restitution Africa, 2025",

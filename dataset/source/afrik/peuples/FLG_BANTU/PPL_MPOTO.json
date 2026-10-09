@@ -85,7 +85,8 @@
       {
         "title": "Glottolog — Mpoto (mpot1240)",
         "url": "https://glottolog.org/resource/languoid/id/mpot1240",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

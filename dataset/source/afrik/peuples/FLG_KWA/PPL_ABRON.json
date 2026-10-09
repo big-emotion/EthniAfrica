@@ -75,7 +75,8 @@
       {
         "title": "Ethnologue - Abron language ABR",
         "url": "https://www.ethnologue.com/language/abr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Brong in Ghana",
@@ -85,7 +86,8 @@
       {
         "title": "Terray, Emmanuel - A History of the Abron Kingdom of Gyaman, Michigan State University, 1980",
         "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1980v12n1%2Fasrv012001002.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",

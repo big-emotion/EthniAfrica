@@ -204,17 +204,20 @@
       {
         "title": "SIL Ethnologue – Languages of Gabon",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Gabon",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Gabon",
         "url": "https://www.unfpa.org/data/world-population/GA",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Recensements gabonais",
@@ -234,12 +237,14 @@
       {
         "title": "CIA World Factbook – Gabon (ethnic groups, 2021 est.)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook, Gabon, rubrique Ethnic groups (estimation de 2021), copie datée du 25 octobre 2025",

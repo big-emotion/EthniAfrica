@@ -77,7 +77,8 @@
       {
         "title": "Greenberg, Joseph H. (1963) – *The Languages of Africa*. Indiana University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Marchese, Lynell (1984) – *Atlas linguistique kru*. Agence de coopération culturelle et technique, Université d'Abidjan",
@@ -87,12 +88,14 @@
       {
         "title": "Godé, Victor (2008) – *Le dadjriwalé, langue kru de la Côte d'Ivoire*. L'Harmattan",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Schwartz, Alfred (1980) – « Quelques repères dans l'histoire des Kroumen ». *Outre-Mers. Revue d'histoire*, tome 67, n°246-247, pp. 151-155. Persée",
         "url": "https://www.persee.fr/doc/outre_0300-9513_1980_num_67_246_2242",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Vandenhoute, Pieter Jan-L. (1948) – *Masques krou*. Anthropologie et arts africains",
@@ -117,17 +120,20 @@
       {
         "title": "CIA World Factbook (2025) – *Côte d'Ivoire, Liberia, Sierra Leone*",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue (2025) – *Kru languages*",
         "url": "https://www.ethnologue.com/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ONU / UNFPA (2025) – Données démographiques Côte d'Ivoire, Liberia, Sierra Leone",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Atlasocio.com (2021) – *Classement des langues krou par nombre de locuteurs*",
@@ -142,7 +148,8 @@
       {
         "title": "La Dépêche d'Abidjan (2021) – « Hommage à Frédéric Bruly Bouabré – Le Peuple bété, Histoires et Cultures »",
         "url": "https://ladepechedabidjan.info/2021/11/20/hommage-a-frederic-bruly-bouabre-le-peuple-bete-histoires-et-cultures/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "Encyclopaedia Universalis (s.d.) – *Krou*",
@@ -152,27 +159,32 @@
       {
         "title": "Ivoire 225 (2025) – « Les Peuples de Côte d'Ivoire : Diversité, Culture et Cohésion Nationale »",
         "url": "https://ivoire225.com/2025/08/06/les-peuples-de-cote-divoire-diversite-culture-et-cohesion-nationale/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "« Les masques « Krou » de Côte-d'Ivoire ». *Anthropologie et arts africains* (2025)",
         "url": "https://journals.openedition.org/aaa/767",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog (2025) – \"Kru\"",
         "url": "https://glottolog.org/resource/languoid/id/krua1234",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Agence Nationale de la Statistique (ANStat), Côte d'Ivoire (2021) – Recensement Général de la Population et de l'Habitat (RGPH 2021), jeu de données \"Répartition des Ivoiriens par grand groupe ethnique selon le sexe\" (groupe ethnolinguistique Krou, classification Bouquet)",
         "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Gunn, Jeffrey (2021) – Outsourcing African Labor: Kru Migratory Workers in Global Ports, Estates and Battlefields until the End of the 19th Century. De Gruyter Oldenbourg, Berlin et Boston",
         "url": "https://www.degruyterbrill.com/document/doi/10.1515/9783110680331/html",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Ouvrage universitaire, passages relus dans le texte numérisé. Son introduction (p. 3 et p. 22) porte le nom d'origine Krao, Klao ou Claho selon les traditions orales krou, la mention de Crua en 1588 chez James Welsh, et celle de Crou par des capitaines de quatre nations européennes au début du XVIIe siècle."
       },
       {

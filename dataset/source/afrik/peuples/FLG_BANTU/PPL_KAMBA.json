@@ -118,12 +118,14 @@
       {
         "title": "Ethnologue (SIL) — Kamba [kam]",
         "url": "https://www.ethnologue.com/language/kam/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kenya National Bureau of Statistics — Kenya Population and Housing Census 2019",
         "url": "https://www.knbs.or.ke/2019-kenya-population-and-housing-census/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Gateway Africa — Kuba Tribe",

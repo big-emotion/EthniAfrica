@@ -107,7 +107,8 @@
       {
         "title": "Nyakyusa And Ngonde – eHRAF World Cultures, Yale University",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fn17/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nyakyusa people – 101lasttribes.com",
@@ -122,22 +123,26 @@
       {
         "title": "Wilson, Monica – Good Company: A Study of Nyakyusa Age-Villages, Oxford University Press, 1951",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Wilson, Monica – Communal Rituals of the Nyakyusa, Oxford University Press / International African Institute, 1959",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Wilson, Godfrey – An Introduction to Nyakyusa Society, Bantu Studies 10, 1936, pp. 253-291",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fn17/documents/008",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nyakyusa-Ngonde – Glottolog",
         "url": "https://glottolog.org/resource/languoid/id/nyak1260",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },

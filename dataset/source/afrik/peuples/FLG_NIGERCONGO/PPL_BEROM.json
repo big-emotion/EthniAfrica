@@ -77,12 +77,14 @@
       {
         "title": "Berom – Glottolog 5.3, ISO 639-3 bom",
         "url": "https://glottolog.org/resource/languoid/id/bero1242",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Berom Language (BOM) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/bom/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

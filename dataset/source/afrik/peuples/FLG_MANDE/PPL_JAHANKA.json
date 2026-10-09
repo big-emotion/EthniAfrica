@@ -120,7 +120,8 @@
       {
         "title": "Ethnologue — Jahanka language (jad)",
         "url": "https://www.ethnologue.com/language/jad/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Jahanka in Guinea",
@@ -145,7 +146,8 @@
       {
         "title": "Levtzion, Nehemia & Hopkins, J.F.P. Corpus of Early Arabic Sources for West African History. Cambridge University Press, 1981",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

@@ -55,6 +55,7 @@
         "title": "Glottolog 5.3 — Ewe (ewee1241)",
         "url": "https://glottolog.org/resource/languoid/id/ewee1241",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Classification Glottolog : Atlantic-Congo > Volta-Congo > Kwa Volta-Congo > Gbe > Western Gbe > Eweic. Les dialectes listés sont les sous-languoids que Glottolog rattache à ewee1241, consultés le 2026-09-14."
       }
     ]

@@ -87,17 +87,20 @@
       {
         "title": "SIL Ethnologue — Konso (kxc)",
         "url": "https://www.ethnologue.com/language/kxc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO — Konso Cultural Landscape (Patrimoine mondial 2011)",
         "url": "https://whc.unesco.org/en/list/1333/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNESCO — Nomination du Paysage culturel konso",
         "url": "https://whc.unesco.org/uploads/nominations/1333rev.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Joshua Project — Konso in Ethiopia",
@@ -117,7 +120,8 @@
       {
         "title": "Recensement national ethiopien 2007. Ethiopian Statistics Services",
         "url": "https://ess.gov.et/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

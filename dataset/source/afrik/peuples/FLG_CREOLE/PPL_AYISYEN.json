@@ -64,6 +64,7 @@
           "title": "The African Political Roots of Haitian Vodou: The Aja-Fon and Gedevi-Yoruba Kingdoms and the Slave Trade — A Transatlantic History of Haitian Vodou",
           "url": "https://www.universitypressscholarship.com/view/10.14325/mississippi/9781496835604.001.0001/upso-9781496835604-chapter-002",
           "tier": "referenced",
+          "source_kind": "academic",
           "notes": "Chapitre universitaire (University Press of Mississippi Scholarship Online) sur les racines politiques ouest-africaines du vodou haïtien."
         },
         {
@@ -104,6 +105,7 @@
         "title": "Haiti Population 2025 — World Population Dashboard",
         "url": "https://www.unfpa.org/data/world-population/HT",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Agence des Nations unies pour la population (UNFPA)."
       },
       {
@@ -115,7 +117,8 @@
       {
         "title": "Haitian Creole Language (HAT) — Ethnologue",
         "url": "https://www.ethnologue.com/language/hat/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Vodou | Definition, History, West African Vodun, & Facts",
@@ -133,12 +136,14 @@
         "title": "Occupation des États-Unis en Haïti, 1915-1934, Office of the Historian, département d'État",
         "url": "https://history.state.gov/milestones/1914-1920/haiti",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Service historique officiel du département d'État des États-Unis, consulté le 10 septembre 2026. Donne les bornes de l'occupation."
       },
       {
         "title": "Floribert Patrick C. Endong, « The Westernization of the African Zombie in Nollywood Films », International Journal of Modern Anthropology, 2022",
         "url": "https://doi.org/10.4314/ijma.v2i17.2",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de revue à comité de lecture, université de Dschang, Cameroun. Donne l'origine du mot comme controversée et énumère les racines bantoues proposées."
       },
       {
@@ -151,6 +156,7 @@
         "title": "David Patrick Geggus, Haitian Revolutionary Studies, Indiana University Press, 2002 (chapitre « The Bois Caïman Ceremony »)",
         "url": "https://iupress.org/9780253341044/haitian-revolutionary-studies/",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Recueil d'un historien universitaire ; un chapitre est consacré à la cérémonie du Bois Caïman. Indiqué comme étude de référence sur le débat historiographique ; le chapitre lui-même n'a pas été relu pour cette fiche."
       }
     ]

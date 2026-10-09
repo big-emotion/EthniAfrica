@@ -94,7 +94,8 @@
       {
         "title": "Ethnologue SIL International - Chenoua (cnu)",
         "url": "https://www.ethnologue.com/language/cnu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "The Tribal Society - The Chenouis",
@@ -104,12 +105,14 @@
       {
         "title": "Glottolog - Shenwa (chen1266)",
         "url": "https://glottolog.org/resource/languoid/id/chen1266",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO World Heritage - Tipaza",
         "url": "https://whc.unesco.org/en/list/193/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

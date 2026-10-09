@@ -95,7 +95,8 @@
       {
         "title": "SIL Ethnologue – Sakalava Malagasy (skg)",
         "url": "https://www.ethnologue.com/language/skg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Mada Expeditions – Le peuple Vezo de Madagascar, entre tradition et modernité (2023)",
@@ -105,12 +106,14 @@
       {
         "title": "Astuti, R. (1995). People of the Sea: Identity and Descent among the Vezo of Madagascar. Cambridge University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook – Madagascar",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Blue Ventures – Velondriake marine protected area, southwest Madagascar",
@@ -120,7 +123,8 @@
       {
         "title": "UNESCO – Patrimoine immatériel de Madagascar",
         "url": "https://ich.unesco.org/en/state/madagascar-MG",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

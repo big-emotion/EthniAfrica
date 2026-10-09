@@ -84,7 +84,8 @@
       {
         "title": "Boswell, D. – Chipimpi, Vulgar Clans, and Lala-Lamba Ethnohistory, Furman University, 2008",
         "url": "https://scholarexchange.furman.edu/cgi/viewcontent.cgi?article=1001&context=ant-publications",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project – Zambia People Groups, Lamba",
@@ -94,7 +95,8 @@
       {
         "title": "Ethnologue – Lamba Language LAM",
         "url": "https://www.ethnologue.com/language/lam/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Lamba language – Chalo Chatu, Zambia Encyclopedia",

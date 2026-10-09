@@ -102,7 +102,8 @@
       {
         "title": "eHRAF World Cultures – Ovimbundu summary",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fp13/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Localizely – Umbundu language code umb",

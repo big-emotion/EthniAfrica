@@ -90,7 +90,8 @@
       {
         "title": "SIL Ethnologue — Aringa language (luc)",
         "url": "https://www.ethnologue.com/language/luc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Aringa in Uganda",
@@ -100,12 +101,14 @@
       {
         "title": "JSTOR — The Lugbara States (reference to Aringa-Ole'ba and Bari origins)",
         "url": "https://www.jstor.org/stable/24328592",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Uganda Bureau of Statistics — National Population and Housing Census 2014",
         "url": "https://www.ubos.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "101 Last Tribes — Aringa",
@@ -115,7 +118,8 @@
       {
         "title": "CIA World Factbook — Uganda",
         "url": "https://www.cia.gov/the-world-factbook/countries/uganda/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

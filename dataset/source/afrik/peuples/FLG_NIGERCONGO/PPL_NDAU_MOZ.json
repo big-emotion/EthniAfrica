@@ -93,22 +93,26 @@
       {
         "title": "Ethnologue SIL — Ndau (ndc)",
         "url": "https://www.ethnologue.com/language/ndc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Ndau (ndau1241)",
         "url": "https://glottolog.org/resource/languoid/id/ndau1241",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "University of Missouri — Ndau linguistic profile (DICE)",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Ndau.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "MacGonagle, Elizabeth. Crafting Identity in Zimbabwe and Mozambique. University of Rochester Press, 2007",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

@@ -165,7 +165,8 @@
       {
         "title": "SIL Ethnologue — Tonga (toi)",
         "url": "https://www.ethnologue.com/language/toi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Matebeleland Pulse — 23 000 BaTonga displaced for Kariba Dam (2026)",
@@ -175,17 +176,20 @@
       {
         "title": "ScienceDirect — Local knowledge among Tonga people in Zambia and Zimbabwe (2023)",
         "url": "https://www.sciencedirect.com/science/article/pii/S146290112300028X",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "eHRAF World Cultures — Tonga (fq12)",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fq12/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "The New Humanitarian — The Tonga: Left High and Dry (2007)",
         "url": "https://www.thenewhumanitarian.org/report/74139/zambia-zimbabwe-tonga-left-high-and-dry",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Inclusive Human Learning — Zambia/Tonga/Forced Away",
@@ -225,7 +229,8 @@
       {
         "title": "Mashingaidze T.M., The Zimbabwean Tonga in the aftermath of the Kariba Dam Induced Displacements – Journal of African Historical Studies, 2024",
         "url": "https://www.jstage.jst.go.jp/article/jahss/9/1/9_21/_pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "International Rivers Resource Hub (1995/2007) — Legacy of Dams on the Zambezi",
@@ -235,7 +240,8 @@
       {
         "title": "Colson, Elizabeth (1971) — The Social Consequences of Resettlement. Manchester University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Zimtribes.com — Tonga Tribes, clans and political organization",

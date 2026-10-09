@@ -103,7 +103,8 @@
       {
         "title": "SIL Ethnologue — Parkwa (pbi)",
         "url": "https://www.ethnologue.com/language/pbi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Lembezat, B. (1952). Les populations paiennes du Nord-Cameroun et de l'Adamaoua. Paris : ORSTOM",
@@ -118,7 +119,8 @@
       {
         "title": "Cambridge Archaeological Journal (2018). Beyond Ethnic Boundaries: Architectural Practices and Social Identity in the Mandara Highlands, Cameroon",
         "url": "https://www.cambridge.org/core/journals/cambridge-archaeological-journal/article/beyond-ethnic-boundaries/3FA1B2133D3B97A18E448749F0FB37EF",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Podoko Dictionary Android App — webonary.org/parkwa",
@@ -128,7 +130,8 @@
       {
         "title": "Maura, D. (2022). Socio-Cultural Heritage, Identity and Political Affirmation through Toponyms in Far-North Cameroon. SCIRP",
         "url": "https://www.scirp.org/journal/paperinformation?paperid=119428",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

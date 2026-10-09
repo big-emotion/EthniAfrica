@@ -103,7 +103,8 @@
       {
         "title": "Kwere Language (CWE) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/cwe/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

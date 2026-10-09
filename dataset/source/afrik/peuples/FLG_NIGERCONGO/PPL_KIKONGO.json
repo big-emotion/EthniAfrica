@@ -120,12 +120,14 @@
       {
         "title": "UNFPA Congo DRC Population 2025",
         "url": "https://www.unfpa.org/data/world-population/CD",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Glottolog : Kongo, ISO 639-3 : kon/kng",
         "url": "https://glottolog.org",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

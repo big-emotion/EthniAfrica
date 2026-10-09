@@ -93,12 +93,14 @@
       {
         "title": "Omniglot — Tembo (Kitembo / Chitembo)",
         "url": "https://www.omniglot.com/writing/tembo.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Tembo (tbt)",
         "url": "https://www.ethnologue.com/language/tbt/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Tembo-Kivu in Congo, Democratic Republic of",
@@ -118,7 +120,8 @@
       {
         "title": "The Conversation — How DRC's colonial legacy forged a nexus between ethnicity, territory and conflict",
         "url": "https://theconversation.com/how-drcs-colonial-legacy-forged-a-nexus-between-ethnicity-territory-and-conflict-153469",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "de Wit, Gert and Alie de Wit-Hasselaar. Tembo survey report. SIL International, 1995",

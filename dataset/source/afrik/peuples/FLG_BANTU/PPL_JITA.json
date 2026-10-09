@@ -79,7 +79,8 @@
       {
         "title": "Jita Language – Ethnologue",
         "url": "https://www.ethnologue.com/language/jit/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Adventists and Jita Culture – ESDA Encyclopedia",

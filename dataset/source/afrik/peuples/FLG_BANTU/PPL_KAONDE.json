@@ -101,12 +101,14 @@
       {
         "title": "Kaonde – DICE Database, University of Missouri",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Kaonde.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "A general survey of the historical migration of the Kaonde clans – University of Amsterdam",
         "url": "https://pure.uva.nl/ws/files/1687596/168316_ARTICLE_A_general_survey_of_the_historical_migration_of_the_Kaonde_clans_from_southern_Congo_into_Zambia_2_.pdf",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Kaonde in Zambia – Joshua Project",

@@ -48,6 +48,7 @@
         "url": "https://whc.unesco.org/en/list/144/",
         "year": 1981,
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": ""
       },
       {
@@ -55,6 +56,7 @@
         "url": "https://en.unesco.org/silkroad/silk-road-themes/underwater-heritage/kilwa-kisiwani-and-songo-mnara",
         "year": 2019,
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": ""
       },
       {
@@ -62,6 +64,7 @@
         "url": "https://www.researchgate.net/publication/294121208_AFRICA_EAST_Swahili_Coast",
         "year": 2008,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "LaViolette, in Encyclopedia of Archaeology (ed. D. M. Pearsall), Academic Press. Cité comme source archéologique primaire dans la page anglaise de Wikipédia « Swahili coast » ; le recours au Périple de la mer Érythrée et à Ibn Battuta comme textes fondateurs est corroboré par la page française « Côte swahilie »."
       }
     ]

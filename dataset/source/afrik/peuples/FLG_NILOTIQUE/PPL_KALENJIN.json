@@ -132,12 +132,14 @@
       {
         "title": "Ethnologue – Kalenjin macrolanguage [kln]",
         "url": "https://www.ethnologue.com/language/kln/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kenya National Bureau of Statistics – 2019 Kenya Population and Housing Census, Volume IV",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Anderson D. – Mau Mau and the Kalenjin (histoire coloniale et resistance nandi)",

@@ -99,22 +99,26 @@
       {
         "title": "Glottolog 5.3 — Shua (shua1254), ISO 639-3 : shg",
         "url": "https://glottolog.org/resource/languoid/id/shua1254",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Shua (shg)",
         "url": "https://www.ethnologue.com/language/shg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Cook, Anthony. Shua Phonology and Morphology. SOAS, University of London, 2004",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SciELO — The case of Khoisan languages of Botswana",
         "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S2224-33802019000300012",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Botswana country page — Joshua Project",

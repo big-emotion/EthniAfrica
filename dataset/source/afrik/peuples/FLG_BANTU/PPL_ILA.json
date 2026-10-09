@@ -82,12 +82,14 @@
       {
         "title": "Ila – eHRAF World Cultures, Yale University",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fq06/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Zambia Languages – Ethnologue",
         "url": "https://www.ethnologue.com/country/ZM/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

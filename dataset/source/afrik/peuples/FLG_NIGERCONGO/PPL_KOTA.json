@@ -95,7 +95,8 @@
       {
         "title": "SIL Ethnologue — Kota language (koq)",
         "url": "https://www.ethnologue.com/language/koq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Endangered Language Alliance — Ikota",

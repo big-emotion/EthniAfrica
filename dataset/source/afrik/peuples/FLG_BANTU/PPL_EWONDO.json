@@ -94,7 +94,8 @@
       {
         "title": "Ethnologue – Ewondo (ewo)",
         "url": "https://www.ethnologue.com/language/ewo/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "PeopleGroups.org – Ewondo of Cameroon",
@@ -109,7 +110,8 @@
       {
         "title": "Glottolog – Beti",
         "url": "https://glottolog.org/resource/languoid/id/beti1250",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes – Ewondo people",

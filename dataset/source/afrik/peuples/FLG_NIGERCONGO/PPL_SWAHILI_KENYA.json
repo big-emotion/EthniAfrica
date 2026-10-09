@@ -96,7 +96,8 @@
       {
         "title": "UNESCO World Heritage Centre — Lamu Old Town",
         "url": "https://whc.unesco.org/en/list/1055/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Africa Unfiltered — Stone Towns of the Swahili Coast",
@@ -121,7 +122,8 @@
       {
         "title": "SIL Ethnologue — Swahili (swh)",
         "url": "https://www.ethnologue.com/language/swh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

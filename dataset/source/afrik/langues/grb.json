@@ -56,6 +56,7 @@
         "title": "Glottolog 5.3 — Grebo (greb1256)",
         "url": "https://glottolog.org/resource/languoid/id/greb1256",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Glottolog name: Liberian Grebo; classification includes Kru. Les dialectes listés sont les sous-languoids que Glottolog rattache à greb1256, hors languoids portant leur propre code ISO 639-3."
       },
       {
@@ -68,12 +69,14 @@
         "title": "Wikipédia (anglais) — Grebo people",
         "url": "https://en.wikipedia.org/wiki/Grebo_people",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Page lue en ligne : le nom étendu depuis le premier groupe rencontré par les colons, et son emploi imprécis."
       },
       {
         "title": "Wikipédia (anglais) — Grebo languages",
         "url": "https://en.wikipedia.org/wiki/Grebo_languages",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Page lue en ligne : les Glebo de la côte, premier groupe rencontré au cap Palmas."
       }
     ]

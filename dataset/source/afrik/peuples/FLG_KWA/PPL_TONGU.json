@@ -78,12 +78,14 @@
       {
         "title": "GhanaWeb – Volta Region: Tongu chiefs create a unitary traditional state, 2024",
         "url": "https://www.ghanaweb.com/GhanaHomePage/NewsArchive/Volta-Region-Tongu-chiefs-create-a-unitary-traditional-state-1947608",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Ghana Statistical Service – 2021 Population and Housing Census",
         "url": "https://census2021.statsghana.gov.gh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "CityPopulation – North Tongu District",
@@ -99,6 +101,7 @@
         "title": "Capo, Hounkpati B. C. (1991) – A Comparative Phonology of Gbe. Foris Publications",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Classification comparative interne des langues gbe (éwé, fon, aja, mina, gen)."
       }
     ]

@@ -82,7 +82,8 @@
       {
         "title": "eHRAF World Cultures — Bilen (mn06) summary",
         "url": "https://ehrafworldcultures.yale.edu/cultures/mn06/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Bilen in Eritrea",
@@ -102,7 +103,8 @@
       {
         "title": "SIL Ethnologue — Bilen language (byn)",
         "url": "https://www.ethnologue.com/language/byn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

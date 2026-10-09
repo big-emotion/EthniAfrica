@@ -68,7 +68,8 @@
       {
         "title": "Adelaar, K. Alexander (2005) – *The Austronesian Languages of Asia and Madagascar*. Routledge",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Dahl, Otto Christian (1951) – *Malgache et Maanjan : une comparaison linguistique*. Egede-Instituttet",
@@ -88,32 +89,38 @@
       {
         "title": "Hurles, Matthew E. et al. (2005) – \"The Dual Origin of the Malagasy in Island Southeast Asia and East Africa: Evidence from Maternal and Paternal Lineages\". *American Journal of Human Genetics*",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Pierron, Denis et al. (2017) – \"Genomic landscape of human diversity across Madagascar\". *Proceedings of the National Academy of Sciences*",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "UNESCO – *Atlas of the World's Languages in Danger* (2010)",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "SIL Ethnologue – Malagasy (mlg)",
         "url": "https://www.ethnologue.com/language/mlg",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Madagascar (2025)",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "ONU/UNFPA – Projections démographiques Madagascar (2025)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Schmidt, W. (1899) – *Die sprachlichen Verhältnisse von Deutsch-Neuguinea*",
@@ -123,12 +130,14 @@
       {
         "title": "Glottolog 5.0 (2024) – Classification du nœud \"Malagasic\" [mala1537] : deux branches directes, \"North-Central Malagasic\" [nort3196] et \"Southwestern Malagasic\" [sout3174]",
         "url": "https://glottolog.org/resource/languoid/id/mala1537",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "World Bank (2023) – Population, total, Madagascar : 31 195 932 habitants. (contexte démographique du chiffre de ≈25 000 000 locuteurs du malgache retenu d'après Adelaar 2005)",
         "url": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=MG",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

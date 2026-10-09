@@ -89,12 +89,14 @@
         "title": "Ethnologue : Adioukrou (adj)",
         "url": "https://www.ethnologue.com/language/adj/",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "SIL International, notice de la langue adj."
       },
       {
         "title": "Glottolog : Adioukrou (adio1239)",
         "url": "https://glottolog.org/resource/languoid/id/adio1239",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Classement : Atlantique-Congo, Volta-Congo, Kwa, Nyo, Agneby. Noms alternatifs : Adjukru, Adyoukrou, Adyukru, Ajukru."
       },
       {
@@ -107,12 +109,14 @@
         "title": "Esso Lasm Constant, Onomastique des Odjoukrou : aspects toponymique et ethnonymique, Les Cahiers de l'ACAREF, vol. 3, n° 6, tome 1, mai 2021, p. 174-188",
         "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Étude de l'Université Félix Houphouët-Boigny sur les noms de lieux et de peuples à partir de la tradition orale. Elle rapporte les explications de l'origine de Lodjoukrou recueillies par Harris Memel-Fotê."
       },
       {
         "title": "Bibliothèque nationale de France, notice d'autorité RAMEAU : Adioukrou (peuple d'Afrique)",
         "url": "https://catalogue.bnf.fr/ark:/12148/cb11952806n",
         "tier": "referenced",
+        "source_kind": "repository",
         "notes": "Notice créée en 1983 et mise à jour en 2002. Elle répertorie d'autres formes du nom, qu'elle ne retient pas comme entrée principale : Adiokrou, Adiukru, Adjoukrou, Adjukru, Adyoukrou, Adyukru, Adyukuru, Ajukru, Boubouri, Odjoukrou, Odjukru et Odzukru. Elle s'appuie sur des répertoires de noms de peuples, dont le Dictionnaire des peuples de Jean-Claude Tamisier (1998)."
       },
       {
@@ -125,6 +129,7 @@
         "title": "PHOIBLE : inventaire phonologique de l'adioukrou (inventaire 650)",
         "url": "https://phoible.org/inventories/view/650",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "D'après Hartell (éd.), 1993, et Chanard, 2006. Nom de la langue donné : Mↄjukru."
       },
       {

@@ -93,12 +93,14 @@
       {
         "title": "SIL Ethnologue – Nyamwezi (nym)",
         "url": "https://www.ethnologue.com/subgroup/3292/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Omniglot – Nyamwezi language and alphabet",
         "url": "https://www.omniglot.com/writing/nyamwezi.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Pray Africa – Nyamwezi of Tanzania (2024)",
@@ -108,12 +110,14 @@
       {
         "title": "Cambridge Core – The Major Dialects of Nyamwezi and Their Relationship to Sukuma (2014)",
         "url": "https://www.cambridge.org/core/journals/journal-of-linguistic-geography/article/major-dialects-of-nyamwezi-and-their-relationship-to-sukuma-a-timebased-perspective/9A1872A4C2E9A1BB915492E359F3586D",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "ASJP Database – Nyamwezi (nym)",
         "url": "https://asjp.clld.org/languages/NYAMWEZI",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "kwekudee-tripdownmemorylane – Nyamwezi People: Africa's Bantu People of the Moon (2014)",

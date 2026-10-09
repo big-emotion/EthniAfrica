@@ -108,7 +108,8 @@
       {
         "title": "Ethnologue — Guinea-Bissau Creole (pov)",
         "url": "https://www.ethnologue.com/language/pov/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Guinea-Bissau",

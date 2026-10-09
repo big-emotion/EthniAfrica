@@ -80,7 +80,8 @@
       {
         "title": "Sabinet – An Account of Lɛtɛ Language Context",
         "url": "https://journals.co.za/doi/10.4314/contjas.v11i1.1",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Medwin Publishers – The Guan-Kyerepon in the Suzerainty of the Asante 1635-1750",
@@ -95,7 +96,8 @@
       {
         "title": "ISO 639-3 Code lar – Larteh",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

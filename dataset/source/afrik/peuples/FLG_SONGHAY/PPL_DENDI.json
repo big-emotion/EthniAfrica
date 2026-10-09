@@ -107,12 +107,14 @@
       {
         "title": "Ethnologue — Dendi language (ddn)",
         "url": "https://www.ethnologue.com/language/ddn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Omniglot — Dendi language and alphabet",
         "url": "https://www.omniglot.com/writing/dendi.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Dendi people",
@@ -127,7 +129,8 @@
       {
         "title": "CIA World Factbook — Benin, Niger, Nigeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       }
     ]
   }

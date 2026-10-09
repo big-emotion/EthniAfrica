@@ -101,12 +101,14 @@
       {
         "title": "Omniglot — Vai Syllabary",
         "url": "https://www.omniglot.com/writing/vaisyllabary.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Vai language (vai)",
         "url": "https://www.ethnologue.com/language/vai/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Rosetta Panglossia — Vai Language (vai)",
@@ -126,7 +128,8 @@
       {
         "title": "Kelly, Piers; Winters, James; Miton, Helena & Morin, Olivier. The Predictable Evolution of Letter Shapes: An Emergent Script of West Africa Recapitulates Historical Change in Writing Systems. Current Anthropology, 2021",
         "url": "https://www.journals.uchicago.edu/doi/10.1086/717779",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Koelle, Sigismund Wilhelm. Narrative of an Expedition into the Vy Country of West Africa, and the Discovery of a System of Syllabic Writing, Recently Invented by the Natives of the Vy Tribe. Church Missionary House, 1849",
@@ -136,7 +139,8 @@
       {
         "title": "Tuchscherer, Konrad & Hair, P.E.H. Cherokee and West Africa: Examining the Origins of the Vai Script. History in Africa, 2002",
         "url": "https://www.cambridge.org/core/journals/history-in-africa/article/abs/cherokee-and-west-africa-examining-the-origins-of-the-vai-script/5123DB37F287706DF5F0EAB6E0A3B283",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

@@ -95,7 +95,8 @@
       {
         "title": "Kunama Language (KUN) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/kun/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kunama in Eritrea – Joshua Project, 2024",

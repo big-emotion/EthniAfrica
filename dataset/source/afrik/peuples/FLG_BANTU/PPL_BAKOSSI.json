@@ -94,22 +94,26 @@
       {
         "title": "Glottolog – Akoose (bss)",
         "url": "https://glottolog.org/resource/languoid/id/akoo1248",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL International – Akoose-English dictionary (2012)",
         "url": "https://searchworks.stanford.edu/view/10770615",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Balz, Heinrich (1984). Where the Faith Has to Live: Studies in Bakossi Society and Religion. Berlin: Reimer Verlag",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook – Cameroon",
         "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

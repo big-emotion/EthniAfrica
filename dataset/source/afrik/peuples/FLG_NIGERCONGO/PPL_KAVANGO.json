@@ -114,12 +114,14 @@
       {
         "title": "University of Cape Town — Education in Kavango Region (pre-colonial to 1966)",
         "url": "https://open.uct.ac.za/server/api/core/bitstreams/7c26adea-1094-4744-aca7-5376f0a05cd8/content",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Kwangali language (kwn)",
         "url": "https://www.ethnologue.com/language/kwn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -106,7 +106,8 @@
       {
         "title": "ISO 639-3 – Mashi (Zambia) code mho",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

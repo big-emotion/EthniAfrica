@@ -108,7 +108,8 @@
       {
         "title": "Ethnologue – Mankanya (mcs), SIL International, 2024",
         "url": "https://www.ethnologue.com/language/mcs/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -95,7 +95,8 @@
       {
         "title": "SIL Ethnologue — Manga Kanuri (kby)",
         "url": "https://www.ethnologue.com/language/kby/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Kanuri, Manga in Niger",
@@ -115,7 +116,8 @@
       {
         "title": "Introduction to the Kanuri Language — Michigan State University (ALMA)",
         "url": "https://alma.matrix.msu.edu/assets/uploads/2023/02/ALMA_IntroductionToTheKanuriLanguageEdited2.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

@@ -101,17 +101,20 @@
       {
         "title": "SIL Ethnologue – Khoekhoe language (naq)",
         "url": "https://www.ethnologue.com/language/naq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Namibia Statistics Agency – 2023 Population and Housing Census Main Report",
         "url": "https://nsa.org.na/census/wp-content/uploads/2024/10/2023-Population-and-Housing-Census-Main-Report-28-Oct-2024.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "The Namibian – Aakwanyama, Aandonga and Ovaherero named largest ethnic groups (2024)",
         "url": "https://www.namibian.com.na/aakwanyama-aandonga-and-ovaherero-named-largest-ethnic-groups-in-namibia-2023-census/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Bradshaw Foundation – The Damara People",
@@ -121,7 +124,8 @@
       {
         "title": "Tsammalex – Khoekhoe/Damara language",
         "url": "https://tsammalex.clld.org/languages/naq-d",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes – Damara people",

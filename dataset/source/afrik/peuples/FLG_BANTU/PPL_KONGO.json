@@ -123,22 +123,26 @@
       {
         "title": "Ethnologue (SIL) — Kongo [kon]",
         "url": "https://www.ethnologue.com/language/kon",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Jan Vansina — Kingdoms of the Savanna. University of Wisconsin Press, 1966",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Simon Bockie — Death and the Invisible Powers: The World of Kongo Belief. Indiana University Press, 1993",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — Republic of the Congo",
         "url": "https://www.cia.gov/the-world-factbook/countries/congo-republic-of-the/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "SimpleLocalize — Language Kongo (kon)",
@@ -161,18 +165,21 @@
         "title": "Floribert Patrick C. Endong, « The Westernization of the African Zombie in Nollywood Films », International Journal of Modern Anthropology, 2022",
         "url": "https://doi.org/10.4314/ijma.v2i17.2",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de revue à comité de lecture, université de Dschang, Cameroun. Donne l'origine du mot comme controversée et énumère les racines bantoues proposées."
       },
       {
         "title": "Hans-W. Ackermann et Jeanine Gauthier, « The Ways and Nature of the Zombi », The Journal of American Folklore, 1991",
         "url": "https://doi.org/10.2307/541551",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de revue universitaire à comité de lecture consacré aux racines bantoues du mot. Accès fermé : la référence est vérifiée, son contenu ne l'est pas."
       },
       {
         "title": "UNESCO, Histoire générale de l'Afrique, vol. V : L'Afrique du XVIe au XVIIIe siècle (dir. B. A. Ogot), 1999 — chap. 19, « Le Royaume du Kongo et ses voisins » (J. Vansina, à partir d'une contribution de T. Obenga), p. 601-642",
         "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Formation du royaume dont la date est inconnue, deux datations proposées, chefferie vungu au nord du fleuve : p. 604."
       }
     ]

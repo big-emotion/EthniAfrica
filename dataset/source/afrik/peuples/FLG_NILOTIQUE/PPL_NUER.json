@@ -118,7 +118,8 @@
       {
         "title": "Hutchinson, Sharon E. Nuer Dilemmas: Coping with Money, War, and the State. Berkeley: University of California Press, 1996",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "101 Last Tribes — Nuer people",
@@ -128,12 +129,14 @@
       {
         "title": "Ethnologue — Nuer (NUS)",
         "url": "https://www.ethnologue.com/language/nus/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "University of Edinburgh Research Explorer — Nuer Collection (dialectologie)",
         "url": "https://www.research.ed.ac.uk/en/datasets/nuer-collection/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Nuer in Ethiopia",

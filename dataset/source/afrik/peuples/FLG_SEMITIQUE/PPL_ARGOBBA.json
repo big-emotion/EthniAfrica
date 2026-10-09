@@ -94,7 +94,8 @@
       {
         "title": "Ethnologue — Argobba language (agj)",
         "url": "https://www.ethnologue.com/language/agj",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Argobba in Ethiopia",
@@ -104,7 +105,8 @@
       {
         "title": "Dergipark — The Gafat and Argobba of Ethiopia: A Historical Survey",
         "url": "https://dergipark.org.tr/en/pub/toplumsalbilimler/article/1352052",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "101 Last Tribes — Argobba people",
@@ -114,12 +116,14 @@
       {
         "title": "Ethiopian Central Statistical Agency (CSA) — Population and Housing Census 2007",
         "url": "https://www.csa.gov.et",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Encyclopaedia Aethiopica, vol. 1 (Uhlig ed.), Harrassowitz Verlag, 2003",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

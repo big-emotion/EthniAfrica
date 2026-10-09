@@ -108,7 +108,8 @@
       {
         "title": "National Repository of Nigeria, A history of Oron people",
         "url": "https://nigeriareposit.nln.gov.ng/items/3093c34c-b4b8-44d9-b271-cd508b224529/full",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Nwednyin.org, Oron Museum",

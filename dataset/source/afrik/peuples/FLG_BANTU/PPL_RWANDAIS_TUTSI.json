@@ -141,12 +141,14 @@
       {
         "title": "CIA World Factbook — Rwanda",
         "url": "https://www.cia.gov/the-world-factbook/countries/rwanda/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "NISR Rwanda — Recensement 2022",
         "url": "https://www.statistics.gov.rw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Big Ape Africa Safaris — Intore, Rwanda Traditional Dance",
@@ -156,7 +158,8 @@
       {
         "title": "United Nations — 1994 Genocide against the Tutsi in Rwanda",
         "url": "https://www.un.org/en/preventgenocide/rwanda/historical-background.shtml",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "US Holocaust Memorial Museum — Rwanda (Divided by Ethnicity)",
@@ -176,7 +179,8 @@
       {
         "title": "SIL Ethnologue — Kinyarwanda (kin)",
         "url": "https://www.ethnologue.com/language/kin",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

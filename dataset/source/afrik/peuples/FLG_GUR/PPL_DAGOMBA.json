@@ -101,12 +101,14 @@
       {
         "title": "Tufts University — About the Dagomba",
         "url": "https://sites.tufts.edu/dagomba/about-the-dagomba/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Tufts University — Dagomba Dance Drumming (Lunsi)",
         "url": "https://sites.tufts.edu/dagomba/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Melodigging — Dagomba Music",

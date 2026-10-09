@@ -123,12 +123,14 @@
       {
         "title": "Ethnologue, Jula [dyu]",
         "url": "https://www.ethnologue.com/language/dyu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Jean Derive, Parole et Pouvoir chez les Dioula de Kong, CNRS Editions, Paris, 1987",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Georges Niamkey Kodjo, Le Royaume de Kong, Abidjan, NEA, 2006",
@@ -139,6 +141,7 @@
         "title": "Niane, Djibril Tamsir (dir.) (1985) – Histoire générale de l'Afrique, tome IV : L'Afrique du XIIe au XVIe siècle. UNESCO, Paris",
         "url": null,
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Publication de l'UNESCO. Le chapitre 6, signé Niane, suit les traditions orales des écoles de griots du Manden et les croise avec les auteurs arabes ; sa chronologie est relative. Antérieure aux relectures archéologiques de Niani. Dans la section sur le commerce, les Soninké et les Malinké spécialisés dans la cola et l'or sont appelés dioula ou wangara, « commerçants », par les peuples de la forêt (Akan, Gur), et le mot dioula remplace ensuite wangara."
       },
       {
@@ -150,36 +153,42 @@
         "title": "Donaldson, Coleman (2017) – Orthography, Standardization, and Register: The Case of Manding",
         "url": "https://core.ac.uk/download/219377367.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Chapitre de Standardizing Minority Languages, Routledge. Donne la morphologie des glottonymes mandingues : ka pour l'habitant, kan pour la langue."
       },
       {
         "title": "Dictionnaire bambara et dioula An ka taa",
         "url": "https://dictionary.ankataa.com/lexicon.php?letter=11",
         "tier": "unverified",
+        "source_kind": "linguistic_reference",
         "notes": "Compilation en ligne dérivée des dictionnaires de Bailleul, Dumestre et Vydrin. Donne jula pour le commerçant, jago pour le commerce, et julakan pour la langue."
       },
       {
         "title": "Chikouna Cissé, Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos 1, 2025",
         "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Cite François-Xavier Fauvelle et Jean Bazin sur le glissement sémantique de Wangara vers Jula, du nom d'un groupe vers celui d'une spécialisation professionnelle."
       },
       {
         "title": "Yaya Konaté, Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela 14-1, 2016",
         "url": "https://doi.org/10.4000/corela.4586",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article fondé sur des enquêtes de terrain : les interlocuteurs de l'auteur traduisent jula par « commerçant »."
       },
       {
         "title": "Paul E. Lovejoy, The Role of the Wangara in the Economic Transformation of the Central Sudan in the Fifteenth and Sixteenth Centuries, The Journal of African History 19(2), 1978, pp. 173-193",
         "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/role-of-the-wangara-in-the-economic-transformation-of-the-central-sudan-in-the-fifteenth-and-sixteenth-centuries/1DB11290A76E4158CE5E60EB0CB0E4B9",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Conteste, pour le Soudan central et le pays haoussa, l'équivalence courante entre Wangara et Jula : y décrit les Wangara comme une diaspora commerciale distincte, liée à l'empire Songhaï. Résumé consulté, texte intégral non lu."
       },
       {
         "title": "Andreas Walter Massing, Imams of Gonja: The Kamaghate and the Transmission of Islam to the Volta Basin, Cahiers d'études africaines 205, 2012",
         "url": "https://journals.openedition.org/etudesafricaines/16965",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article en accès ouvert. Place à Kong un dirigeant animiste, Lasiri Gombele (1660-1710), avant Seku Watara, auprès duquel l'imam Baro est daté d'environ 1697 à 1745 ; rapporte, d'après Delafosse, une fondation de Kong attribuée aux Nafana, et des dates d'attaques asante que les auteurs fixent différemment (1701 ; 1722-1723)."
       }
     ]

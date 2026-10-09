@@ -101,12 +101,14 @@
       {
         "title": "ZeHabesha — Fascinating History and Culture of the Habesha People",
         "url": "https://zehabesha.com/fascinating-history-and-culture-of-habesha-people/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "Marcus, Harold G. — A History of Ethiopia. University of California Press, 2002",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Pankhurst, Richard — The Ethiopians: A History. Blackwell, 2001",
@@ -116,22 +118,26 @@
       {
         "title": "Ethnologue — Amharic (amh)",
         "url": "https://www.ethnologue.com/language/amh",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Tigrinya (tir)",
         "url": "https://www.ethnologue.com/language/tir",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Ethiopia",
         "url": "https://www.cia.gov/the-world-factbook/countries/ethiopia/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Eritrea",
         "url": "https://www.cia.gov/the-world-factbook/countries/eritrea/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

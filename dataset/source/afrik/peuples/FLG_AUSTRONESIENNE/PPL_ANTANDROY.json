@@ -89,12 +89,14 @@
       {
         "title": "Ethnologue – Malagasy, Tandroy-Mahafaly (tdx)",
         "url": "https://www.ethnologue.com/language/tdx/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog – Tandroy Malagasy",
         "url": "https://glottolog.org/glottolog?country=MG",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Worldometer – Madagascar Population",
@@ -104,7 +106,8 @@
       {
         "title": "CIA World Factbook – Madagascar",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

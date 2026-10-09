@@ -79,12 +79,14 @@
       {
         "title": "Buli (Ghana) – WALS Online",
         "url": "https://wals.info/languoid/lect/wals_code_buy",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Buli (Ghana) – Glottolog 5.2, ISO 639-3 bwu",
         "url": "https://glottolog.org/resource/languoid/id/buli1254",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Builsa South District population – CityPopulation.de, recensement Ghana 2021",

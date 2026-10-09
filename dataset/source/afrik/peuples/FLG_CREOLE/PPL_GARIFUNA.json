@@ -118,12 +118,14 @@
         "title": "SIL Ethnologue — Garifuna language (cab)",
         "url": "https://www.ethnologue.com/language/cab/",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Confirme la classification arawak/maipuréenne (ta-maipuréenne, groupe iñeri) de la langue garifuna."
       },
       {
         "title": "UNESCO — Language, dance and music of the Garifuna",
         "url": "https://ich.unesco.org/en/RL/language-dance-and-music-of-the-garifuna-00001",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité (proclamation 2001, inscription 2008)."
       },
       {

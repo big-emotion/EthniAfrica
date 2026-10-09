@@ -101,7 +101,8 @@
       {
         "title": "UNFPA, Comoros Population 2025",
         "url": "https://www.unfpa.org/data/world-population/KM",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Joshua Project, Comorian in France",

@@ -108,7 +108,8 @@
       {
         "title": "Ethnologue — Tigre language (tig)",
         "url": "https://www.ethnologue.com/language/tig/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Tigre",

@@ -71,7 +71,8 @@
       {
         "title": "Telusma, Henri-Claude (2017) – *Thèse doctorale, Université de Strasbourg* – Origine et évolution du terme \"créole\"",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Turner, Lorenzo Dow (1949) – *Africanisms in the Gullah Dialect* – Démonstration des liens linguistiques entre créoles américains et langues africaines (Sierra Leone)",
@@ -111,32 +112,38 @@
       {
         "title": "SIL Ethnologue – Creole languages",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO – langues de contact d'Afrique et de l'océan Indien",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "SIL Ethnologue (19e éd., 2016) – Kabuverdianu [kea] : ≈871 000 locuteurs (2017), Cap-Vert. (chiffre vérifié via Wikipédia EN « Kabuverdianu », consulté en 2026 ; accès direct à ethnologue.com bloqué depuis cet environnement)",
         "url": "https://www.ethnologue.com/language/kea/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue (27e éd., 2024) – Guinea-Bissau Creole [pov] : ≈350 000 locuteurs natifs (2013-2022), Guinée-Bissau. (chiffre vérifié via Wikipédia EN « Guinea-Bissau Creole », consulté en 2026)",
         "url": "https://www.ethnologue.com/language/pov/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue (27e éd., 2024) – Sierra Leonean Creole/Krio [kri] : ≈860 000 locuteurs natifs (2021), Sierra Leone. (chiffre vérifié via Wikipédia EN « Krio language », consulté en 2026)",
         "url": "https://www.ethnologue.com/language/kri/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "United Nations Statistics Division (données 2012, citées par Ethnologue) – Morisyen/Mauritian Creole : ≈1 090 000 locuteurs natifs, Maurice. (chiffre vérifié via Wikipédia EN « Mauritian Creole », consulté en 2026)",
         "url": "https://unstats.un.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "René Butaye, Dictionnaire kikongo-français, français-kikongo, 1910",
@@ -154,12 +161,14 @@
         "title": "Floribert Patrick C. Endong, « The Westernization of the African Zombie in Nollywood Films », International Journal of Modern Anthropology, 2022",
         "url": "https://doi.org/10.4314/ijma.v2i17.2",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de revue à comité de lecture, université de Dschang, Cameroun. Donne l'origine du mot comme controversée et énumère les racines bantoues proposées."
       },
       {
         "title": "Hans-W. Ackermann et Jeanine Gauthier, « The Ways and Nature of the Zombi », The Journal of American Folklore, 1991",
         "url": "https://doi.org/10.2307/541551",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de revue universitaire à comité de lecture consacré aux racines bantoues du mot. Accès fermé : la référence est vérifiée, son contenu ne l'est pas."
       }
     ]

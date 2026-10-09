@@ -96,12 +96,14 @@
       {
         "title": "Dunham, Gordon – A Grammatical Sketch of Mbugwe (Bantu F.34, Tanzania), Koeppe Verlag",
         "url": "https://www.koeppe.de/titel_print_a-grammatical-sketch-of-mbugwe-bantu-f-34-tanzania",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Mous, Maarten – Language and Identity among marginal people in East Africa, Universiteit Leiden",
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:3144215/download",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

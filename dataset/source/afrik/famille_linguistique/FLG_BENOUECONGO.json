@@ -105,57 +105,68 @@
       {
         "title": "Greenberg, Joseph H. (1963) – *The Languages of Africa*. Indiana University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Williamson, Kay (1989) – \"Benue–Congo Overview\", dans Bendor-Samuel, J. & Hartell, R. L. (éds.), *The Niger–Congo Languages – A classification and description of Africa's largest language family*. University Press of America, pp. 246-266",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Guthrie, Malcolm (1948) – *The Classification of the Bantu Languages*. Oxford University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Maho, Jouni F. (2009) – *New Updated Guthrie List Online*",
         "url": "https://goto.glottolog.org/resource/languoid/id/narr1281",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Blench, Roger M. (2012) – *Niger-Congo: an alternative view*. Working paper",
         "url": "https://www.academia.edu/1974569/Niger_Congo_an_alternative_view",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Vansina, Jan (1990) – *Paths in the Rainforests: Toward a History of Political Tradition in Equatorial Africa*. University of Wisconsin Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ehret, Christopher (1998) – *An African Classical Age: Eastern and Southern Africa in World History, 1000 B.C. to A.D. 400*. University of Virginia Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Phillipson, David W. (2005) – *African Archaeology* (3e édition). Cambridge University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nurse, Derek & Philippson, Gérard (2003) – *The Bantu Languages*. Routledge",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Hyman, Larry M. (2007) – \"Niger-Congo verb extensions: overview and discussion\", dans Payne, D. L. & Peña, J. (éds.), *Selected Proceedings of the 37th Annual Conference on African Linguistics*. Cascadilla Proceedings Project, pp. 149-163",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Good, Jeff (2020) – \"Niger-Congo, with a special focus on Benue-Congo\", dans Vossen, R. & Dimmendaal, G. J. (éds.), *The Oxford Handbook of African Languages*. Oxford University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Djité, Paulin G. (1993) – *The Sociolinguistics of Development in Africa*. Multilingual Matters",
@@ -170,7 +181,8 @@
       {
         "title": "Watters, John R. (éd.) (2003) – *East Benue-Congo: Nouns, pronouns, and verbs*. Language Science Press",
         "url": "https://langsci-press.org/catalog/book/190",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Bendor-Samuel, John T. (2025) – \"Benue-Congo languages\", *Encyclopædia Britannica*",
@@ -180,32 +192,38 @@
       {
         "title": "SIL International (2025) – *Ethnologue: Languages of the World* (25e édition)",
         "url": "https://www.ethnologue.com",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog (2025) – \"Benue-Congo\"",
         "url": "https://glottolog.org/resource/languoid/id/benu1247",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNFPA (2025) – *World Population Dashboard*",
         "url": "https://www.unfpa.org/data/world-population-dashboard",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA (2025) – *The World Factbook*",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Statistics South Africa (2025) – *Census 2022 Main Results*",
         "url": "http://www.statssa.gov.za/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Statistics South Africa (2025) – Census 2022 Statistical Release P0301.4, Table 2.8 (Setswana home language)",
         "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

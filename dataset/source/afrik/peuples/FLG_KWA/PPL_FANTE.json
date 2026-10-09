@@ -93,7 +93,8 @@
       {
         "title": "SIL Ethnologue — Fante language (fat)",
         "url": "https://www.ethnologue.com/language/fat/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "World Population Review — Ghana Population 2025",
@@ -103,12 +104,14 @@
       {
         "title": "CIA World Factbook — Ghana",
         "url": "https://www.cia.gov/the-world-factbook/countries/ghana/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Recensement national du Ghana, Ghana Statistical Service",
         "url": "https://statsghana.gov.gh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

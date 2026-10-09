@@ -118,7 +118,8 @@
       {
         "title": "SIL Ethnologue — Marka language (rkm)",
         "url": "https://www.ethnologue.com/language/rkm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Marka Dafing in Burkina Faso",
@@ -128,12 +129,14 @@
       {
         "title": "CEDS / SIL — ISO 639-3 Language Code Table: Marka = rkm",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Glottolog — Marka",
         "url": "https://glottolog.org/resource/languoid/id/mark1256",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

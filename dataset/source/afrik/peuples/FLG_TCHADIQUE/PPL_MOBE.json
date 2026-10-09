@@ -89,17 +89,20 @@
       {
         "title": "SIL Ethnologue — Chadic (subgroup Cameroon)",
         "url": "https://www.ethnologue.com/subgroup/555/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Wiktionary — ISO 639-3 codes Africa (Biu-Mandara Cameroon)",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — Cameroon",
         "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

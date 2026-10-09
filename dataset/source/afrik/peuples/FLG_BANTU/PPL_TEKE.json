@@ -144,12 +144,14 @@
       {
         "title": "Bateke people, Likembe – Metropolitan Museum of Art",
         "url": "https://www.metmuseum.org/art/collection/search/501099",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Jan Vansina, The Tio Kingdom of the Middle Congo 1880-1892, Oxford University Press, 1973",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "101 Last Tribes — Teke people",
@@ -164,23 +166,27 @@
       {
         "title": "CIA World Factbook — Republic of Congo",
         "url": "https://www.cia.gov/the-world-factbook/countries/congo-republic-of-the/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Democratic Republic of the Congo",
         "url": "https://www.cia.gov/the-world-factbook/countries/congo-democratic-republic-of-the/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Guy Kouarata, Sara Pacchiarotti et Koen Bostoen, « Nouvelle contribution a l'inventaire et la description des parlers teke (bantou, B70-80) », Linguistique et langues africaines, 9 (2), 2023",
         "url": "https://journals.openedition.org/lla/12921",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article d'une revue à comité de lecture, sur OpenEdition. À la section 2, paragraphe 6, teke est présenté comme un nom donné de l'extérieur, issu d'une racine kikongo signifiant « vendre ». Les personnes concernées se nomment plutôt Tyo ou Teo, d'après Jacquot (1965), Vansina (1966) et Boone (1973)."
       },
       {
         "title": "Igor Matonda, « L'identite des Pamzoallumbu ou Pangelungus du royaume Kongo », Cahiers d'etudes africaines, 238, 2020, p. 371-406",
         "url": "https://journals.openedition.org/etudesafricaines/30387",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Revue a comite de lecture, OpenEdition. Paragraphe 3 : Pigafetta nomme Anzique ou Anziquete les ennemis du roi Zinga Kuwu en 1591 ; le terme designait anciennement le peuple teke (d'apres Vansina 1994)."
       },
       {
@@ -193,6 +199,7 @@
         "title": "Marie-Claude Dupre, compte rendu de Jan Vansina, The Tio Kingdom of the Middle Congo 1880-1892, Journal des Africanistes, 45 (1-2), 1975, p. 239-241",
         "url": "https://www.persee.fr/doc/jafr_0037-9166_1975_num_45_1_1769_t1_0239_0000_1",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Persee. Le compte rendu indique qu'en 1880 le Makoko Iloo Ier, roi des Tio, signe le traite avec Brazza."
       }
     ]

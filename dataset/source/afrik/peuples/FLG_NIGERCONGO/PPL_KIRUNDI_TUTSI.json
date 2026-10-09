@@ -117,12 +117,14 @@
       {
         "title": "UNFPA — Rwanda Population 2025",
         "url": "https://www.unfpa.org/data/world-population/RW",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA — Burundi Population 2025",
         "url": "https://www.unfpa.org/data/world-population/BI",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "World Population Review — Burundi 2025",
@@ -137,7 +139,8 @@
       {
         "title": "SIL Ethnologue — Kirundi (run)",
         "url": "https://www.ethnologue.com/language/run",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

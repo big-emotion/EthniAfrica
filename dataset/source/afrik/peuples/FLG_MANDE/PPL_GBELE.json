@@ -87,7 +87,8 @@
       {
         "title": "Ethnologue — Cote d'Ivoire languages",
         "url": "https://www.ethnologue.com/country/CI/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "African Security Sector Network — Les Malinke en Cote d'Ivoire",

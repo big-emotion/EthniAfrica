@@ -96,12 +96,14 @@
       {
         "title": "Ethnologue, Papel (pbo)",
         "url": "https://www.ethnologue.com/language/pbo",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog, Papel",
         "url": "https://glottolog.org/resource/languoid/id/pape1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project, Papel in Guinea-Bissau",

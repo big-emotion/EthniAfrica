@@ -108,7 +108,8 @@
       {
         "title": "UNFPA — Rwanda Population 2025",
         "url": "https://www.unfpa.org/data/world-population/RW",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Minority Rights Group — Banyarwanda in the DRC",
@@ -128,7 +129,8 @@
       {
         "title": "SIL Ethnologue — Kinyarwanda (kin)",
         "url": "https://www.ethnologue.com/language/kin",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "USHMM — Divided by Ethnicity : Rwanda",

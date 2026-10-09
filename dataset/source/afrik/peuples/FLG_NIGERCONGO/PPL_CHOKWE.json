@@ -127,7 +127,8 @@
       {
         "title": "Glottolog — Chokwe (chok1245)",
         "url": "https://glottolog.org/resource/languoid/id/chok1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

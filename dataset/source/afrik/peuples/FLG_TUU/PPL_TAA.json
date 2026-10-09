@@ -103,22 +103,26 @@
       {
         "title": "DoBeS MPI — Taa language project",
         "url": "https://dobes.mpi.nl/projects/taa/language/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "archive"
       },
       {
         "title": "Ethnologue — Taa (nmn)",
         "url": "https://www.ethnologue.com/language/nmn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog 5.3 — East Taa",
         "url": "https://glottolog.org/resource/languoid/id/huaa1248",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Traill, Anthony (1994). A !Xoo Dictionary. Quellen zur Khoisan-Forschung / Research in Khoisan Studies, 9. Cologne: Rüdiger Köppe",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Naumann, Christfried (2008). DoBeS documentation project on Taa (West ǃXoon). MPI Nijmegen",

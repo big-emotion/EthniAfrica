@@ -164,7 +164,8 @@
       {
         "title": "KNBS Kenya Census 2019 – Kenya National Bureau of Statistics",
         "url": "https://www.knbs.or.ke",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

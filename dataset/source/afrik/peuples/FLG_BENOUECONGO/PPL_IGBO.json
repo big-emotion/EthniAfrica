@@ -128,12 +128,14 @@
         "title": "Afigbo, Adiele E. — The Warrant Chiefs: Indirect Rule in Southeastern Nigeria, 1891-1929. Longman, 1972",
         "url": "https://www.persee.fr/doc/outre_0300-9513_1974_num_61_224_1789_t1_0486_0000_2",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Ouvrage lu par le compte rendu de Persée : la politique des chefs désignés par l'administration là où l'Igboland n'avait pas de chefferie."
       },
       {
         "title": "Ethnologue (SIL International) — Igbo language (ibo)",
         "url": "https://www.ethnologue.com/language/ibo/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Nwala, T. Uzodinma — Igbo Philosophy (1985)",

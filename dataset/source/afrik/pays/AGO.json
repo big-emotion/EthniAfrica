@@ -268,17 +268,20 @@
       {
         "title": "SIL Ethnologue – Languages of Angola",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Angola",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Angola",
         "url": "https://www.unfpa.org/data/world-population/AO",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Governance in West Central Africa Before 1600\"",
@@ -308,17 +311,20 @@
       {
         "title": "CIA World Factbook – Angola (ethnic groups, 2000 est.)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNESCO Publishing – Njinga Mbandi: Queen of Ndongo and Matamba",
         "url": "https://shop.unesco.org/products/njinga-mbandi-queen-of-ndongo-and-matamba",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Publication de l'UNESCO consacrée à Njinga Mbandi ; sa présentation indique qu'elle a résisté avec détermination à l'expansion coloniale portugaise tout au long de son règne."
       },
       {

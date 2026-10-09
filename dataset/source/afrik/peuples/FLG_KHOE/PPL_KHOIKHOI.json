@@ -116,17 +116,20 @@
       {
         "title": "Ethnologue – Nama subgroup : naq, kqz, xii",
         "url": "https://www.ethnologue.com/subgroup/4292/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Richtersveld Cultural and Botanical Landscape – UNESCO World Heritage",
         "url": "https://whc.unesco.org/en/list/1265",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "« Hottentot », Dictionary of South African English on Historical Principles (DSAE)",
         "url": "https://dsae.co.za/entry/hottentot/e03109",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Dictionnaire historique publie. Donne une origine neerlandaise, peut-etre issue de l'allemand hotteren-totteren (begayer), puis mentionne l'autre lecture, celle d'un chant de danse, sans les departager. Consulte le 25 septembre 2026."
       }
     ]

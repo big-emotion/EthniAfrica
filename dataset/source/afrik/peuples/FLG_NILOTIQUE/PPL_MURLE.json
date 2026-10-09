@@ -106,12 +106,14 @@
       {
         "title": "WALS Online — Murle language (ISO 639-3: mur)",
         "url": "https://wals.info/languoid/lect/wals_code_mrl",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Murle (murl1244)",
         "url": "https://glottolog.org/resource/languoid/id/murl1244",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Murle in South Sudan",
@@ -121,7 +123,8 @@
       {
         "title": "SFASID/US Army War College — South Sudan Country Profile",
         "url": "https://pksoi.armywarcollege.edu/index.php/country-profile-of-south-sudan-social/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Arensen, J. E. (1992). Mice are Men: Language and Society Among the Murle of Sudan. Dallas: SIL International",
@@ -136,7 +139,8 @@
       {
         "title": "Ethnologue — Murle (MUR)",
         "url": "https://www.ethnologue.com/language/mur/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

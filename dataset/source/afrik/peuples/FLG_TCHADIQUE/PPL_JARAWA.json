@@ -102,17 +102,20 @@
       {
         "title": "SIL Ethnologue — Bankal (jjr)",
         "url": "https://www.ethnologue.com/language/jjr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Jarawan subgroup",
         "url": "https://www.ethnologue.com/subgroup/622/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Jarawa (Nigeria)",
         "url": "https://glottolog.org/resource/languoid/id/jara1263",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kunzaar.com — History and Origin of Jarawa Tribe",
@@ -127,7 +130,8 @@
       {
         "title": "CIA World Factbook — Nigeria",
         "url": "https://www.cia.gov/the-world-factbook/countries/nigeria/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

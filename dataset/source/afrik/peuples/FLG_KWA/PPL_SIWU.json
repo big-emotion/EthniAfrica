@@ -95,12 +95,14 @@
       {
         "title": "Ethnologue – Siwu AKP",
         "url": "https://www.ethnologue.com/language/akp/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ISO 639-3 – code akp: Siwu",
         "url": "https://iso639-3.sil.org/code/akp",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -119,29 +119,34 @@
       {
         "title": "Glottolog — Bouna Kulango (boun1243)",
         "url": "https://glottolog.org/resource/languoid/id/boun1243",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Bondoukou Kulango (bond1246)",
         "url": "https://glottolog.org/resource/languoid/id/bond1246",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Boutillier, Jean-Louis — Bouna, royaume de la savane ivoirienne. Princes, marchands et paysans, Karthala et ORSTOM, collection Hommes et Sociétés, 1993, 396 pages",
         "url": "https://www.documentation.ird.fr/hor/fdi:37306",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Étude de référence sur le royaume de Bouna. Elle date sa fondation du début du XVIIe siècle, sous Bounkani, et tient ce royaume pour le plus ancien connu de Côte d'Ivoire en l'état des connaissances."
       },
       {
         "title": "Boulègue, Jean — Compte rendu de Bouna, royaume de la savane ivoirienne, Outre-Mers. Revue d'histoire, tome 82, numéro 306, 1995",
         "url": "https://www.persee.fr/doc/outre_0300-9513_1995_num_82_306_3296_t1_0111_0000_2",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Cette lecture retient que le nom Koulango a d'abord désigné une catégorie sociale, avant de prendre un sens ethnique à l'époque coloniale."
       },
       {
         "title": "Viti, Fabio — Compte rendu de Bouna, royaume de la savane ivoirienne, Cahiers d'Études africaines, volume 35, numéro 138-139, 1995",
         "url": "https://www.persee.fr/doc/cea_0008-0055_1995_num_35_138_1467_t1_0669_0000_2",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Seconde lecture de la même étude, qui situe elle aussi la fondation du royaume au début du XVIIe siècle."
       }
     ]

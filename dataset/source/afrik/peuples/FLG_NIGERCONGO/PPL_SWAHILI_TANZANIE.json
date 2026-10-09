@@ -92,22 +92,26 @@
       {
         "title": "UNESCO World Heritage Centre — Ruins of Kilwa Kisiwani and Ruins of Songo Mnara",
         "url": "https://whc.unesco.org/en/list/144/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "NPR — The Hot New Musical Trend In Zanzibar Is From The 1880s",
         "url": "https://www.npr.org/sections/goatsandsoda/2018/09/29/650073622/the-hot-new-musical-trend-in-zanzibar-is-from-the-80s-the-1880s",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "National Geographic — Tanzania's Zanzibar is the cradle of African Swahili culture",
         "url": "https://www.nationalgeographic.com/travel/article/why-tanzanias-zanzibar-is-the-cradle-of-african-swahili-culture",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "The Conversation — Ancient DNA is restoring the origin story of the Swahili people",
         "url": "https://theconversation.com/ancient-dna-is-restoring-the-origin-story-of-the-swahili-people-of-the-east-african-coast-201154",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Pan African Music — Taarab in Zanzibar",
@@ -117,7 +121,8 @@
       {
         "title": "Ethnologue SIL — Swahili (swa)",
         "url": "https://www.ethnologue.com/language/swa",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

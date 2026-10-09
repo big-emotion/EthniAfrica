@@ -110,7 +110,8 @@
       {
         "title": "SIL Ethnologue — Bemba language (bem)",
         "url": "https://www.ethnologue.com/language/bem/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Bemba in Zambia",
@@ -120,7 +121,8 @@
       {
         "title": "Richards, Audrey I. — Chisungu : A Girl's Initiation Ceremony Among the Bemba of Zambia. Faber and Faber, 1956. eHRAF World Cultures",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fq05/documents/003",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nkwazi Magazine — Kalindula : A Rhythmic Journey Through Zambian Culture (2024)",

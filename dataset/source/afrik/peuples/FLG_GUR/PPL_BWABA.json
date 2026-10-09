@@ -115,7 +115,8 @@
       {
         "title": "Pacific Lutheran University — Learn More: Bwa Mask",
         "url": "https://www.plu.edu/africanartcollection/masks/bwa-mask/learn-more-bwa-mask/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Encyclopaedia Britannica — Bwa",
@@ -125,7 +126,8 @@
       {
         "title": "Roy, Christopher D. et Wheelock, Thomas G. B. Land of the Flying Masks: Art and Culture in Burkina Faso. Prestel Verlag, 2007",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

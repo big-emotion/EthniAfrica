@@ -105,12 +105,14 @@
       {
         "title": "Ethnologue - Mandjak (mfv)",
         "url": "https://www.ethnologue.com/language/mfv/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog - mand1419 Manjak",
         "url": "https://glottolog.org/resource/languoid/id/mand1419",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

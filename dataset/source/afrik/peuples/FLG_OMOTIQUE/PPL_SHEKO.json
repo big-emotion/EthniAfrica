@@ -81,17 +81,20 @@
       {
         "title": "Glottolog — Sheko, glottocode shek1245, ISO 639-3: she",
         "url": "https://glottolog.org/resource/languoid/id/shek1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Sheko language (SHE)",
         "url": "https://www.ethnologue.com/language/she/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Aklilu Yilma. The Sheko Language. SIL/Addis Ababa University, 1988",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Sheko in Ethiopia",
