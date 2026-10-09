@@ -55,6 +55,12 @@ jobs:
       - name: Check ai_generated sources
         run: npm run check:ai-sources
 
+      # Descending ratchet on sources with no source_kind: readers see a
+      # source's type, never its tier. Fails when the count grows, and when it
+      # drops without the threshold being lowered.
+      - name: Check source kind coverage
+        run: npm run check:source-kinds
+
       # Reports the tier mix and the untiered tail across the 789 people
       # fiches, and writes the Prismic eligibility manifest.
       - name: Run people source tier audit
