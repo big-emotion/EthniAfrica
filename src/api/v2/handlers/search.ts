@@ -26,6 +26,8 @@ export interface FtsSearchData {
   patronymes: object[];
   quizzes: object[];
   languages: object[];
+  /** Places (REQ-196), a grouped facet like languages: not in `results`. */
+  places: object[];
   /**
    * Every hit in the selected stream, ordered on `normalizedScore` (migration
    * 069). The grouped arrays stay beside it because a facet asks about one
@@ -44,6 +46,7 @@ export interface FtsSearchData {
   patronymesTotal: number;
   quizzesTotal: number;
   languagesTotal: number;
+  placesTotal: number;
   total: number;
   /** Near-miss leads (REQ-125), populated only when `total` is 0. */
   leads: object[];
@@ -96,6 +99,7 @@ function shapeSearchData(
       patronymes: [],
       quizzes: (result.quizzes ?? []) as object[],
       languages: [],
+      places: [],
       results: (result.results ?? []).filter((hit) => hit.kind === "quiz"),
       peoplesTotal: 0,
       countriesTotal: 0,
@@ -104,6 +108,7 @@ function shapeSearchData(
       patronymesTotal: 0,
       quizzesTotal,
       languagesTotal: 0,
+      placesTotal: 0,
       total: quizzesTotal,
       leads: [],
       nearNames: [],
@@ -119,13 +124,15 @@ function shapeSearchData(
   const personsTotal = result.personsTotal ?? 0;
   const patronymesTotal = result.patronymesTotal ?? 0;
   const languagesTotal = result.languagesTotal ?? 0;
+  const placesTotal = result.placesTotal ?? 0;
   const total =
     peoplesTotal +
     countriesTotal +
     familiesTotal +
     personsTotal +
     patronymesTotal +
-    languagesTotal;
+    languagesTotal +
+    placesTotal;
   const language = "fr";
 
   return {
@@ -136,6 +143,7 @@ function shapeSearchData(
     patronymes: (result.patronymes ?? []) as object[],
     quizzes: [],
     languages: (result.languages ?? []) as object[],
+    places: (result.places ?? []) as object[],
     // Preserve the database order while excluding the other stream.
     results: (result.results ?? []).filter((hit) => hit.kind !== "quiz"),
     peoplesTotal,
@@ -145,6 +153,7 @@ function shapeSearchData(
     patronymesTotal,
     quizzesTotal: 0,
     languagesTotal,
+    placesTotal,
     total,
     leads: (result.leads ?? []) as object[],
     nearNames: result.nearNames ?? [],

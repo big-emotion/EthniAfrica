@@ -70,6 +70,18 @@ describe("classifySyncOutcome", () => {
     expect(outcome.failed).toBe(true);
   });
 
+  // A place fiche whose country does not resolve is a place the site will
+  // not serve; the run says so in red rather than in the editorial tail.
+  // @req REQ-196
+  it("fails when a place fiche is refused", () => {
+    const report = reportWith();
+    report.places.errors = [
+      "LOC_X: countryId XXX does not resolve to a country fiche",
+    ];
+
+    expect(classifySyncOutcome(report).structuralFailures).toEqual(["places"]);
+  });
+
   // @req REQ-032
   it("fails on a structural stage however few records it lost", () => {
     const report = reportWith();

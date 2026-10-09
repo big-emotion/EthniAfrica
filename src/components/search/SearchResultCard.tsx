@@ -62,6 +62,9 @@ export function ficheHrefFor(result: SearchResult, language: Language): string {
   if (result.type === "patronyme")
     return getPatronymeRoute(language, result.id);
   if (result.type === "language") return getLanguageRoute(language, result.id);
+  // No place page yet (REQ-196): the place leads to its country's fiche.
+  if (result.type === "place" && result.countryIds?.[0])
+    return getCountryRoute(language, result.countryIds[0]);
   return getPeopleRoute(language, result.id);
 }
 
