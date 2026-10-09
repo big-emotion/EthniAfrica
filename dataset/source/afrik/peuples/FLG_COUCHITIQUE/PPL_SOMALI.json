@@ -124,7 +124,8 @@
       {
         "title": "Britannica — Somali people",
         "url": "https://www.britannica.com/topic/Somali-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Countrystudies.us — Somalia : Origins, Migrations, and Settlement",

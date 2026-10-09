@@ -90,7 +90,8 @@
       {
         "title": "Joshua Project - Antanosy in Madagascar",
         "url": "https://joshuaproject.net/people_groups/10346",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue - Tanosy Malagasy (txy)",
@@ -113,7 +114,8 @@
       {
         "title": "Britannica - Madagascar Ethnic Groups",
         "url": "https://www.britannica.com/place/Madagascar/Ethnic-groups",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

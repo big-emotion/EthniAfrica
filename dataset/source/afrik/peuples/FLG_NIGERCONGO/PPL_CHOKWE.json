@@ -107,22 +107,26 @@
       {
         "title": "Chokwe people group – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/11365",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Chokwe in Angola – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/11365/AO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Chokwe in Zambia – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/11365/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Chokwe language ISO 639-3 cjk – Common Crawl / web-languages, 2024",
         "url": "https://github.com/commoncrawl/web-languages/blob/main/living/chokwe.md",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Chokwe (chok1245)",

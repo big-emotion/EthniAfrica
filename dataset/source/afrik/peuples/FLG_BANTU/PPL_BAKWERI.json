@@ -88,7 +88,8 @@
       {
         "title": "Swordshare Map – Mokpwe (bri)",
         "url": "https://map.swordshare.com/bri",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Lugha Yangu – Bakweri/Kpwe/Mokpwe language",
@@ -98,7 +99,8 @@
       {
         "title": "Joshua Project – Cameroon people groups",
         "url": "https://joshuaproject.net/countries/CM",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes – Bakweri people",

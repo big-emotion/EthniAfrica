@@ -97,7 +97,8 @@
       {
         "title": "Joshua Project — Berber, Siwa in Egypt",
         "url": "https://joshuaproject.net/people_groups/14958/EG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Fakhry, Ahmed. Siwa Oasis. Cairo: The American University in Cairo Press, 1973",

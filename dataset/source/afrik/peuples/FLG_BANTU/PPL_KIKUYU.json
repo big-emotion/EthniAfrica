@@ -116,7 +116,8 @@
       {
         "title": "Joshua Project — Kikuyu people group",
         "url": "https://joshuaproject.net/people_groups/11523/KE",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   },

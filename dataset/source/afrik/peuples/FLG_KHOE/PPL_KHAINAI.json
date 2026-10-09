@@ -86,7 +86,8 @@
       {
         "title": "Joshua Project — Gxana, llGana in Botswana",
         "url": "https://joshuaproject.net/countries/bc",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "!Khwa ttu — The San of Botswana",

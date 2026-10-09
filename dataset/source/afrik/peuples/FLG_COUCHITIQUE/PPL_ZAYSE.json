@@ -82,12 +82,14 @@
       {
         "title": "Zayse in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/16096",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Zayse of Ethiopia – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg011659/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Zayse-Zergulla – Glottolog 5.3",

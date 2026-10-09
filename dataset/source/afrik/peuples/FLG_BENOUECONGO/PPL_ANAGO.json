@@ -105,12 +105,14 @@
       {
         "title": "Joshua Project, Yoruba in Togo. (consulté 2025)",
         "url": "https://joshuaproject.net/people_groups/16057/TO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project, Yoruba in Benin. (consulté 2025)",
         "url": "https://joshuaproject.net/people_groups/16057/BN",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Anago Adventures Blog, The Anago in Benin Republic, Togo and Nigeria (2016)",

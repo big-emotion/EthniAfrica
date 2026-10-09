@@ -232,12 +232,14 @@
         "title": "Dixon Denham, Hugh Clapperton et Walter Oudney, Narrative of Travels and Discoveries in Northern and Central Africa in the Years 1822, 1823 and 1824, Londres, John Murray, 1826",
         "url": "https://archive.org/details/narrativetravel00browgoog",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Premier récit européen du lac. La forme « Tchad » y est employée d'un bout à l'autre sans jamais être traduite, et aucun échange sur l'origine du nom n'y est rapporté. Volume lu en fac-similé le 9 septembre 2026."
       },
       {
         "title": "Sigismund Wilhelm Koelle, African Native Literature, or Proverbs, Tales, Fables and Historical Fragments in the Kanuri or Bornu Language, Londres, Church Missionary House, 1854",
         "url": "https://archive.org/details/africannativelit00koel",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Décrit Tsade comme le lac d'eau douce bien connu, que d'autres peuples appellent aussi Tsad. Le mot y est traité en nom propre et ne reçoit aucune traduction ; le vocabulaire ne comporte pas d'entrée le glosant. Note et vocabulaire lus en fac-similé le 9 septembre 2026."
       },
       {
@@ -262,6 +264,7 @@
         "title": "CIA World Factbook – Chad (ethnic groups)",
         "url": "https://web.archive.org/web/20260115/https://www.cia.gov/the-world-factbook/countries/chad/",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Répartition des groupes ethniques d'après l'estimation de 2014-2015, lue dans une copie archivée de janvier 2026 ; la publication a cessé d'être mise à jour début 2026. Elle compte par regroupements de plusieurs peuples : un pourcentage n'est rattaché à une fiche que lorsque le regroupement ne désigne qu'un seul peuple."
       }
     ],

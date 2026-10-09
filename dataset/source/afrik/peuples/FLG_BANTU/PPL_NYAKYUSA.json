@@ -97,12 +97,14 @@
       {
         "title": "Nyakyusa, Ngonde in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/print/14078/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Nyakyusa, Ngonde in Malawi – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/14078/MI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Nyakyusa And Ngonde – eHRAF World Cultures, Yale University",
@@ -118,7 +120,8 @@
       {
         "title": "Nyakyusa – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Nyakyusa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Wilson, Monica – Good Company: A Study of Nyakyusa Age-Villages, Oxford University Press, 1951",

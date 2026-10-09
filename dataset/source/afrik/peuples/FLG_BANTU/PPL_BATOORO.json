@@ -88,12 +88,14 @@
       {
         "title": "Toro – History, Culture and Traditions – Encyclopedia Britannica, 1998",
         "url": "https://www.britannica.com/topic/Toro-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Batooro in Uganda – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/15561",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Tooro Language (TTJ) – Ethnologue SIL",

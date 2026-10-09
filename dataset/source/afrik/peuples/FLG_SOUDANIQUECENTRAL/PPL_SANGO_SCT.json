@@ -125,7 +125,8 @@
       {
         "title": "PeopleGroups.org — Sango of Central African Republic",
         "url": "https://peoplegroups.org/people_groups/pg012925/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

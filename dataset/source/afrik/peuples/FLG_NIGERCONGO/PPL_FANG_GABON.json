@@ -126,12 +126,14 @@
       {
         "title": "Joshua Project — Fang in Gabon",
         "url": "https://joshuaproject.net/people_groups/11187/GB",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Britannica — Fang, Central African peoples",
         "url": "https://www.britannica.com/topic/Fang-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue — Fang language (fan)",

@@ -97,7 +97,8 @@
       {
         "title": "Joshua Project, Totela in Zambia",
         "url": "https://joshuaproject.net/people_groups/15571",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

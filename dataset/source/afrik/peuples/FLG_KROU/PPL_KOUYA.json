@@ -91,7 +91,8 @@
       {
         "title": "Swordshare Map — Kouya language info (10 746 speakers)",
         "url": "https://map.swordshare.com/kyf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Scribd — Histoire et culture du peuple Krou",
@@ -101,7 +102,8 @@
       {
         "title": "Minority Rights Group — Côte d'Ivoire",
         "url": "https://minorityrights.org/country/cote-divoire/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Glottolog — Kru language family",

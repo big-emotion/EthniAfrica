@@ -140,7 +140,8 @@
       {
         "title": "Cameroon ethnic groups – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/place/Cameroon/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

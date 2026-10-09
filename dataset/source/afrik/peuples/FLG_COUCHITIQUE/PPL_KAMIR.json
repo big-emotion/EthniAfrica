@@ -109,7 +109,8 @@
       {
         "title": "Agew People: History and Culture – Horn of Africa Evangelical Mission",
         "url": "https://hornofafrica.org/wp-content/uploads/2019/12/Agew.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

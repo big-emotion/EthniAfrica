@@ -71,12 +71,14 @@
       {
         "title": "K'abeena in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/print/21539/ET",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kebena of Ethiopia – Horn of Africa Evangelical Mission, 2019",
         "url": "https://hornofafrica.org/wp-content/uploads/2019/12/Kabena.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "K'abeena phonology – Macrolinguistics and Microlinguistics, Yibekal Aemero, 2024",

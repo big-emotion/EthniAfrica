@@ -113,7 +113,8 @@
       {
         "title": "Encyclopedia Britannica — Fang",
         "url": "https://www.britannica.com/topic/Fang-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "101 Last Tribes — Fang people",

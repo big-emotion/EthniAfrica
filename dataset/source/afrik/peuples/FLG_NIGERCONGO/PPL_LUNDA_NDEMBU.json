@@ -88,7 +88,8 @@
       {
         "title": "Joshua Project – Lunda, Ndembu in Angola, 2025",
         "url": "https://joshuaproject.net/people_groups/13276",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes – Ndembu people",
@@ -109,7 +110,8 @@
       {
         "title": "Britannica – Ndembu, 2025",
         "url": "https://www.britannica.com/topic/Ndembu",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

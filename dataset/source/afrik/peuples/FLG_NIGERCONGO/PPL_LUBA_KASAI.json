@@ -99,7 +99,8 @@
       {
         "title": "Minority Rights Group — Kasaians of Luba origin",
         "url": "https://minorityrights.org/communities/kasaians-of-luba-origin/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Columbia Academic Commons — Luba-Kasai: A Working Bibliography",
@@ -115,7 +116,8 @@
       {
         "title": "Encyclopaedia Britannica — Luba",
         "url": "https://www.britannica.com/topic/Luba-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "IJREHC — Luba People and Politeness in their Everyday Speeches",

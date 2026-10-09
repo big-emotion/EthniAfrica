@@ -27,6 +27,17 @@ describe("sourceKindLabel", () => {
   });
 
   // @req REQ-161
+  it("names a mission people-group database, an encyclopedia and an NGO for what they are", () => {
+    expect(sourceKindLabel("missionary_database", "fr")).toBe(
+      "Base de données missionnaire"
+    );
+    expect(sourceKindLabel("encyclopedia", "fr")).toBe("Encyclopédie");
+    expect(sourceKindLabel("ngo", "fr")).toBe(
+      "Organisation non gouvernementale"
+    );
+  });
+
+  // @req REQ-161
   it("never answers with a tier word", () => {
     const tierWords = /officiel|référencée|non vérifiée|palier|autorité/i;
     for (const kind of SOURCE_KINDS) {

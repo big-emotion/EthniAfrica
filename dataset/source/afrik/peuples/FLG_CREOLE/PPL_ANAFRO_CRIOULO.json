@@ -98,7 +98,8 @@
       {
         "title": "Joshua Project — Crioulo, Upper Guinea in Guinea-Bissau",
         "url": "https://joshuaproject.net/people_groups/11436/PU",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Sorosoro — Guinea-Bissau Creole language",
@@ -114,7 +115,8 @@
       {
         "title": "Britannica — Guinea-Bissau",
         "url": "https://www.britannica.com/place/Guinea-Bissau",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

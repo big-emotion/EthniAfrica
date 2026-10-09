@@ -101,7 +101,8 @@
       {
         "title": "Britannica - Republic of the Congo Cultural Life",
         "url": "https://www.britannica.com/place/Republic-of-the-Congo/Cultural-life",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

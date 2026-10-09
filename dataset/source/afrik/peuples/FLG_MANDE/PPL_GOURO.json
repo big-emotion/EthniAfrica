@@ -84,7 +84,8 @@
       {
         "title": "Guro | Traditional Arts, Mask Carving & Rituals – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Guro",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Guro people – 101 Last Tribes",
@@ -94,7 +95,8 @@
       {
         "title": "Gouro, Kweni in Cote d'Ivoire – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/12007",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Guro language and alphabet – Omniglot, 2025",

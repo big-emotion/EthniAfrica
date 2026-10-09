@@ -72,12 +72,14 @@
       {
         "title": "Ila in Zambia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/12208",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ila – Encyclopaedia Britannica, 1998",
         "url": "https://www.britannica.com/topic/Ila-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ila – eHRAF World Cultures, Yale University",

@@ -218,6 +218,7 @@
         "title": "CIA World Factbook – Zambia (ethnic groups, 2010 census)",
         "url": "https://web.archive.org/web/20260115/https://www.cia.gov/the-world-factbook/countries/zambia/",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Répartition des groupes ethniques d'après le recensement de 2010, lue dans une copie archivée de janvier 2026 ; la publication a cessé d'être mise à jour début 2026. Les Lunda y sont comptés pour le nord-ouest seulement ; aucune fiche de notre projet ne correspond sans ambiguïté aux Lunda du nord-ouest ; la fiche Lala-Lamba décrit une désignation commune et non un peuple, d'où l'absence de lien pour les Lamba."
       },
       {

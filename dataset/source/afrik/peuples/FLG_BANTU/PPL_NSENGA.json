@@ -93,12 +93,14 @@
       {
         "title": "Nsenga – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Nsenga",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Nsenga in Zambia – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/print/14047/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Nsenga People – Nsenga Bible Community",

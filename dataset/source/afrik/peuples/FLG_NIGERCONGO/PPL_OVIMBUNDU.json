@@ -98,12 +98,14 @@
       {
         "title": "Britannica — Ovimbundu",
         "url": "https://www.britannica.com/topic/Ovimbundu",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Minority Rights Group — Ovimbundu in Angola",
         "url": "https://minorityrights.org/communities/ovimbundu/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "eHRAF World Cultures — Ovimbundu (fp13)",

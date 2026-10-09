@@ -274,7 +274,8 @@
       {
         "title": "Minority Rights Group – Amazigh in Algeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "ngo"
       },
       {
         "title": "CNRS – Berbères",
@@ -289,22 +290,26 @@
       {
         "title": "Encyclopaedia of Islam – Algeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project – Berber, Kabyle in Algeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Berber, Shawiya in Algeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "missionary_database"
       },
       {
         "title": "UNPO – Kabylia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "ngo"
       },
       {
         "title": "Recensements algériens",

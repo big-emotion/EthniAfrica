@@ -94,12 +94,14 @@
       {
         "title": "Mandyak, Manjago in Guinea-Bissau – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13493/PU",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bainouk, Gunyaamolo in Senegal – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10665/SG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bainuk people – Djola History and Genealogy Society, 2021",

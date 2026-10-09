@@ -465,7 +465,8 @@
       {
         "title": "Britannica — Malinke",
         "url": "https://www.britannica.com/topic/Malinke",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "101 Last Tribes — Malinke people",
@@ -475,7 +476,8 @@
       {
         "title": "Joshua Project — Western Maninka in Mali",
         "url": "https://joshuaproject.net/people_groups/13510/ML",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Peoples of the World — Mandinka",
@@ -552,18 +554,21 @@
         "title": "Prévost, Antoine-François (dir.) (1746) – Histoire générale des voyages, tome III, Paris : Didot, « Vocabulaire mandingo »",
         "url": "https://archive.org/details/histoiregenerale03prev",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Numérisation lue par reconnaissance de texte, identique sur sept numérisations indépendantes de ce texte ; l'image de la page n'a pas été consultée. Donne « Jelliki », chanteur, comme plus ancienne trace écrite que nous ayons lue de jeli."
       },
       {
         "title": "Dard, Jean (1826) – Grammaire wolofe, Paris, p. 161",
         "url": "https://archive.org/details/grammairewolofe00dardgoog",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Image de la page lue. Donne « Guéwal. — Griot. » comme plus ancienne trace écrite que nous ayons lue de gewel."
       },
       {
         "title": "Faidherbe, Louis (1875) – Essai sur la langue poul, Paris : Maisonneuve, vocabulaire",
         "url": "https://archive.org/details/essaisurlalangue00faid",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Numérisation lue par reconnaissance de texte ; l'image de la page n'a pas été consultée. Donne « Gaoulo, haouloubé » pour griot, caste de musiciens, comme plus ancienne trace écrite que nous ayons lue de gawlo."
       }
     ]

@@ -91,12 +91,14 @@
       {
         "title": "Encyclopaedia Britannica — Luba",
         "url": "https://www.britannica.com/topic/Luba-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Luba-Lulua in DRC",
         "url": "https://joshuaproject.net/people_groups/13134/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Luba-Katanga (lub)",

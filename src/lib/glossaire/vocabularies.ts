@@ -100,6 +100,10 @@ export const SOURCE_KIND_LABELS: Labels<SourceKind> = {
     linguistic_reference: "Référence linguistique",
     academic: "Publication académique",
     press: "Article de presse",
+    encyclopedia: "Encyclopédie",
+    // Spelled out, like the two other organisation kinds beside it.
+    ngo: "Organisation non gouvernementale",
+    missionary_database: "Base de données missionnaire",
     community: "Organisation communautaire",
     repository: "Dépôt documentaire",
     archive: "Archive",

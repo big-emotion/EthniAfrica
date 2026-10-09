@@ -239,7 +239,8 @@
       {
         "title": "Minority Rights Group – Haratine in Mauritania",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "ngo"
       },
       {
         "title": "Anti-Slavery International – Slavery in Mauritania",

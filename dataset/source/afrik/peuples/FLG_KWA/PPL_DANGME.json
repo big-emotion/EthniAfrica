@@ -104,7 +104,8 @@
       {
         "title": "Joshua Project : Dangme in Ghana",
         "url": "https://joshuaproject.net/countries/GH",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue : Dangme (ADA)",

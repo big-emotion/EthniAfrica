@@ -105,12 +105,14 @@
       {
         "title": "Joshua Project — Tembo-Kivu in Congo, Democratic Republic of",
         "url": "https://joshuaproject.net/people_groups/15329",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Tembo-Kitembo of Democratic Republic of the Congo",
         "url": "https://peoplegroups.org/people_groups/pg014737/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Africa Federation — History of Kivu, Batembo Chiefdoms",

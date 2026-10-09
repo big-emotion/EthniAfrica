@@ -80,7 +80,8 @@
       {
         "title": "Igede in Nigeria – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/12190",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Igede language (ISO 639-3 code: ige) – Notion",
@@ -90,7 +91,8 @@
       {
         "title": "Igede – Swordshare Map",
         "url": "https://map.swordshare.com/ige",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

@@ -126,7 +126,8 @@
       {
         "title": "Joshua Project — Oromo, Borana in Ethiopia",
         "url": "https://joshuaproject.net",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   },

@@ -134,7 +134,8 @@
       {
         "title": "Joshua Project — Guere in Cote d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/11124",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

@@ -85,7 +85,8 @@
       {
         "title": "Britannica — Omotic Languages (mention du Koyra comme langue a systeme d'accent de hauteur)",
         "url": "https://www.britannica.com/topic/Omotic-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue — Gamo-Gofa-Dawro language [gmv] (similarites lexicales avec Koyra mentionnees)",

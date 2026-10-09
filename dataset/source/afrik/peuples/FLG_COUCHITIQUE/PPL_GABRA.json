@@ -105,7 +105,8 @@
       {
         "title": "Joshua Project — Oromo, Gabra in Kenya",
         "url": "https://joshuaproject.net/people_groups/19603/KE",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Borana-Arsi-Guji Oromo (gax)",

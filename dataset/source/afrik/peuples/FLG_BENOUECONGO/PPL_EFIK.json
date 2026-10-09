@@ -101,12 +101,14 @@
       {
         "title": "Encyclopaedia Britannica — Efik",
         "url": "https://www.britannica.com/topic/Efik",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Efik in Nigeria (2025)",
         "url": "https://joshuaproject.net/people_groups/11717/NI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Talbot, P. Amaury. In the Shadow of the Bush (1912)",

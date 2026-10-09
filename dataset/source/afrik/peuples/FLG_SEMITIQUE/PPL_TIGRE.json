@@ -103,7 +103,8 @@
       {
         "title": "Joshua Project 2025 — Tigre, Eritrean",
         "url": "https://joshuaproject.net/people_groups/15482/er",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue — Tigre language (tig)",
@@ -119,7 +120,8 @@
       {
         "title": "Britannica — Tigre people",
         "url": "https://www.britannica.com/topic/Tigre-northwestern-Eritrean-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Shabait (Ministère de l'information érythréen) — Oral Tradition in Tigre Language, 2022",

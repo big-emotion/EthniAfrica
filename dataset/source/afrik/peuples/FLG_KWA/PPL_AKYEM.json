@@ -80,7 +80,8 @@
       {
         "title": "Joshua Project – Akan-Akyem in Ghana, 2025",
         "url": "https://joshuaproject.net/countries/gh",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "LearnAkan – Akan Language dialects",

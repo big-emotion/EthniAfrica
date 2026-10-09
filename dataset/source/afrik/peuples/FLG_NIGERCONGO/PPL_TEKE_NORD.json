@@ -107,17 +107,20 @@
       {
         "title": "Joshua Project — Teke, Northern in Congo, Republic of the",
         "url": "https://joshuaproject.net/people_groups/14033/CF",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Teke, Northern of Congo",
         "url": "https://peoplegroups.org/people_groups/pg013009/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Britannica — Teke (people)",
         "url": "https://www.britannica.com/topic/Teke",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Vansina, Jan. The Tio Kingdom of the Middle Congo 1880-1892. Oxford University Press, 1973",

@@ -99,7 +99,8 @@
       {
         "title": "Joshua Project — Berber, Ghomara in Morocco",
         "url": "https://joshuaproject.net/people_groups/11882",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "IRCAM (Institut Royal de la Culture Amazighe) — Études amazighes du Rif",

@@ -85,7 +85,8 @@
       {
         "title": "Nyabwa-Nyedebwa in Côte d'Ivoire – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/14076",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Nyabwa language (nwb), SIL International, 2024",
@@ -96,7 +97,8 @@
       {
         "title": "Niaboua of Côte d'Ivoire – PeopleGroups.org, consulté 2025",
         "url": "https://peoplegroups.org/people_groups/pg013118/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Zézé-Béké (P.), Les interdits alimentaires chez les Nyabwa de Côte d'Ivoire – Journal des africanistes, 1989, tome 59, fascicule 1-2, p. 229",

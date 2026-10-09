@@ -94,12 +94,14 @@
       {
         "title": "Joshua Project — Swahili in Mozambique",
         "url": "https://joshuaproject.net/people_groups/15145/MZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Swahili of Mozambique (PGID: PG015420)",
         "url": "https://peoplegroups.org/people_groups/pg015420/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Mozambique Experience — Ilha de Mocambique history and culture",

@@ -106,7 +106,8 @@
       {
         "title": "IWGIA - The Indigenous World 2025: Morocco",
         "url": "https://iwgia.org/en/morocco/5632-iw-2025-morocco.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "Encyclopedie berbere (CNRS/INALCO)",

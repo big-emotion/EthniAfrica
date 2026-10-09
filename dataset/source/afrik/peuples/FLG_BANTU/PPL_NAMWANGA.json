@@ -80,7 +80,8 @@
       {
         "title": "Namwanga people – Chalo Chatu, Zambia encyclopedia",
         "url": "https://chalochatu.org/Namwanga_people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "History of the Namwanga people of Nakonde – ICUTVZM",
@@ -90,12 +91,14 @@
       {
         "title": "Nyamwanga in Zambia – Joshua Project, population 217 000",
         "url": "https://joshuaproject.net/people_groups/13901/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Nyamwanga language resources – Joshua Project",
         "url": "https://joshuaproject.net/languages/mwn",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Nyamwanga – Glottolog 5.3, code nyam1275",

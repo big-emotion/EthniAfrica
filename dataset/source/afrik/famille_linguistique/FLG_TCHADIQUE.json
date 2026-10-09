@@ -176,7 +176,8 @@
       {
         "title": "[Britannica] ([2025]) – *Chadic Languages*",
         "url": "https://www.britannica.com/topic/Chadic-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "[UNFPA] ([2025]) – *West & Central Africa Regional Profiles*",

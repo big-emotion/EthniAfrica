@@ -107,7 +107,8 @@
       {
         "title": "Encyclopaedia Britannica — Gurage",
         "url": "https://www.britannica.com/topic/Gurage",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Nature — Cultural, economic, and symbolic value of the enset crop in Sebat Bet Gurage, 2022",
@@ -118,7 +119,8 @@
       {
         "title": "Joshua Project — Gurage, West in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/15917",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "William Shack — The Gurage: A People of the Ensete Culture. Oxford University Press, 1966",

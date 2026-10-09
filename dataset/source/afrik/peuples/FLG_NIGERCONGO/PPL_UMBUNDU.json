@@ -92,12 +92,14 @@
       {
         "title": "Joshua Project – Ovimbundu, Umbundu in Angola",
         "url": "https://joshuaproject.net/people_groups/15706/AO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Minority Rights Group – Ovimbundu in Angola",
         "url": "https://minorityrights.org/communities/ovimbundu/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "eHRAF World Cultures – Ovimbundu summary",

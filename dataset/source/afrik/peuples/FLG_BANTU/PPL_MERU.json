@@ -120,7 +120,8 @@
       {
         "title": "Joshua Project — Meru in Kenya",
         "url": "https://joshuaproject.net/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Jeffrey Fadiman — When We Began There Were Witchmen: An Oral History from Mount Kenya. University of Washington Press, 1993",

@@ -99,12 +99,14 @@
       {
         "title": "Joshua Project — Furu in Congo, Democratic Republic of",
         "url": "https://joshuaproject.net/people_groups/11780/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Furu in Central African Republic",
         "url": "https://joshuaproject.net/people_groups/11780/CT",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Blench, Roger. Central Sudanic languages classification. 2012",
@@ -114,7 +116,8 @@
       {
         "title": "Britannica — Central Sudanic languages",
         "url": "https://www.britannica.com/topic/Central-Sudanic-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

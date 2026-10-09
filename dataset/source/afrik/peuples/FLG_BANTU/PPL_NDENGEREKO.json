@@ -77,7 +77,8 @@
       {
         "title": "Ndengereko of Tanzania – Pray Africa",
         "url": "https://prayafrica.org/project/ndengereko-of-tanzania/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ndengereko – 101 Last Tribes",
@@ -87,7 +88,8 @@
       {
         "title": "Ndengereko in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/13279",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ndengereko – Glottolog 5.3, code nden1248",

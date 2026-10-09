@@ -103,7 +103,8 @@
       {
         "title": "Seychelles – Encyclopaedia Britannica, 2026",
         "url": "https://www.britannica.com/place/Seychelles",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Seychelles' population now stands at 120,581 – The Nation (Seychelles), 2024",

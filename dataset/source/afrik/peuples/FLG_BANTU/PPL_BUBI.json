@@ -98,7 +98,8 @@
       {
         "title": "Bubi – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Bubi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Bioko's indigenous Bubi tribe – The Bubis on Fernando Po, Colleen Truelsen",
@@ -118,7 +119,8 @@
       {
         "title": "Bubi in Equatorial Guinea – Minority Rights Group",
         "url": "https://minorityrights.org/communities/bubi/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Spirits of the Forest, Guardians of the Island – Art of the Motherland",

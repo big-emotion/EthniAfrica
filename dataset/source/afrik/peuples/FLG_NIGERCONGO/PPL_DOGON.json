@@ -113,7 +113,8 @@
       {
         "title": "Britannica — Dogon",
         "url": "https://www.britannica.com/topic/Dogon",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "eHRAF World Cultures — Dogon summary",

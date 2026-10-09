@@ -92,12 +92,14 @@
       {
         "title": "Joshua Project – Leya in Zambia, 2025",
         "url": "https://joshuaproject.net/people_groups/13048",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "A Short History Of The Leya – Mukuni Royal Dynasty, Calameo, 2019",
         "url": "https://www.calameo.com/books/005916510ee1bd9d9abeb",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

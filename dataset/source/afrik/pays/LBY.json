@@ -213,7 +213,8 @@
       {
         "title": "Minority Rights Group – Amazigh in Libya",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "ngo"
       },
       {
         "title": "CNRS – Berbères",

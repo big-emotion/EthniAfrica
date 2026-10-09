@@ -118,7 +118,8 @@
       {
         "title": "Joshua Project — Yaka in Congo DRC",
         "url": "https://joshuaproject.net/people_groups/15953/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Yaka H.31",

@@ -92,7 +92,8 @@
       {
         "title": "Ethnologue (SIL International) — Moru (mgd)",
         "url": "https://www.scriptureearth.org/maps/SS/mgd.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Glottolog — Moru (moru1253)",

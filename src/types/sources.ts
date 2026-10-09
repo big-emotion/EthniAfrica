@@ -12,7 +12,7 @@
  */
 
 /**
- * Mirrors the latest `sources_source_kind_check` constraint (migration 103). The
+ * Mirrors the latest `sources_source_kind_check` constraint (migration 104). The
  * vocabulary contract test parses the CHECK and compares it to this list, so
  * the two cannot drift apart again.
  */
@@ -24,6 +24,9 @@ export const SOURCE_KINDS = [
   "linguistic_reference",
   "academic",
   "press",
+  "encyclopedia",
+  "ngo",
+  "missionary_database",
   "community",
   "repository",
   "archive",
@@ -38,7 +41,9 @@ export type SourceKind = (typeof SOURCE_KINDS)[number];
 
 /**
  * Kinds that describe a bibliographic work, `press` included: a dated, edited
- * article is a work cited by its own title and outlet, like `academic`.
+ * article is a work cited by its own title and outlet, like `academic`. So are
+ * an encyclopedia entry, an NGO report and a mission people-group profile:
+ * each is a page cited by its own title, whatever weight its tier gives it.
  * `discovery` (a lookup surface), `ai_generated` (machine-written text),
  * `unknown`, `oral_tradition` (a linked account) and `ethniafrica_synthesis`
  * (an editorial synthesis) are provenance markers, not bibliographic works, so

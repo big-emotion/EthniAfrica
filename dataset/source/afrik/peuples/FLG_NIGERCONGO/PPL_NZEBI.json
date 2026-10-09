@@ -256,7 +256,8 @@
       {
         "title": "PeopleGroups.org — Nzebi of Gabon",
         "url": "https://peoplegroups.org/people_groups/pg013010/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Nzebi language, code nzb",

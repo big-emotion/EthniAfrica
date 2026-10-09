@@ -159,12 +159,14 @@
         "title": "Van Overbergh, Cyrille, et de Jonghe, Édouard, Les Bangala (État indépendant du Congo), Bruxelles, 1907, p. 55-56",
         "url": "https://archive.org/stream/lesbangalatatin00jonggoog/lesbangalatatin00jonggoog_djvu.txt",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Rapporte la réponse de Lothaire : des travailleurs de groupes différents se disent Bangala loin de chez eux."
       },
       {
         "title": "EBSCO Research Starters — Lingala Language",
         "url": "https://www.ebsco.com/research-starters/language-and-linguistics/lingala-language",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "MustGo — Lingala Language",
@@ -175,7 +177,8 @@
       {
         "title": "Joshua Project — Bangala in DRC",
         "url": "https://joshuaproject.net/people_groups/print/13330/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue (SIL) — Lingala [lin]",

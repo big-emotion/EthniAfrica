@@ -22,7 +22,7 @@ import { parseDossierFile } from "../src/lib/afrik/parsers/dossierParser";
 import { parsePlaceFile } from "../src/lib/afrik/parsers/placeParser";
 import { parseNameHistory } from "../src/lib/afrik/parsers/nameHistoryParser";
 import { parsePatronymeFile } from "../src/lib/afrik/parsers/patronymeParser";
-import type { SourceTier } from "../src/types/sources";
+import { SOURCE_KINDS, type SourceTier } from "../src/types/sources";
 // The same resolver the globe uses, so this gate and the rendering can never
 // disagree about which countries are drawable.
 import { getAdmin0Rings } from "../src/lib/atlas/overlays";
@@ -2412,6 +2412,18 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
             errors.push(
               `${fiche}: source "${title}" declares standing "${String(tier)}", ` +
                 `which is not one of ${[...SOURCE_STANDINGS].join(", ")}`
+            );
+          }
+
+          // Mirrors sources_source_kind_check: a kind the vocabulary does not
+          // know passes every fiche gate and is refused only by the sync.
+          if (
+            kind !== undefined &&
+            !(SOURCE_KINDS as readonly unknown[]).includes(kind)
+          ) {
+            errors.push(
+              `${fiche}: source "${title}" declares kind "${String(kind)}", ` +
+                `which is not one of ${SOURCE_KINDS.join(", ")}`
             );
           }
 

@@ -98,7 +98,8 @@
       {
         "title": "Joshua Project — Makonde in Tanzania",
         "url": "https://joshuaproject.net/people_groups/13427/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "African Blackwood Conservation Project — Makonde Art",
@@ -108,7 +109,8 @@
       {
         "title": "Smithsonian Institution Libraries — Makonde Sculpture bibliography",
         "url": "https://www.sil.si.edu/silpublications/modernafricanart/maadetail.cfm?subCategory=Tanzania+--+Makonde+Sculpture",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Safaris Rwanda Safari — Cultural Heritage of the Makonde People",

@@ -108,7 +108,8 @@
       {
         "title": "Swordshare — Dawro language info",
         "url": "https://map.swordshare.com/dwr",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Facebook — Dawro Dinka world's longest woodwind",

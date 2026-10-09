@@ -106,12 +106,14 @@
       {
         "title": "Encyclopaedia Britannica – Fang",
         "url": "https://www.britannica.com/topic/Fang-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project – Fang in Gabon",
         "url": "https://joshuaproject.net/people_groups/11187/GB",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Metropolitan Museum of Art – Male Reliquary Figure (Nlo Bieri)",
@@ -128,7 +130,8 @@
       {
         "title": "Smithsonian Folkways – Fang Bwiti Music from Gabon",
         "url": "https://folkways.si.edu/music-from-an-equatorial-microcosm-fang-bwiti-from-gabon-republic-africa-with-mbiri-selections/world/album/smithsonian",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "archive"
       },
       {
         "title": "Qiraat Africa – The Fang people of Africa",
@@ -152,12 +155,14 @@
         "title": "Marquis de Compiègne, L'Afrique équatoriale. Gabonais, Pahouins, Gallois, Paris, Plon, 1875",
         "url": "https://archive.org/details/gabonaispahouins00comp",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Récit d'exploration de l'Ogooué. Note de la page 154 : le nom de Pahouins a été adopté par les Français, ces peuples se nomment eux-mêmes Fan, leurs voisins les appellent Mpangwen. Référence repérée via Wikipédia en français, puis lue dans l'exemplaire numérisé."
       },
       {
         "title": "Günter Tessmann, Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, Berlin, Ernst Wasmuth, 1913",
         "url": "https://archive.org/details/diepangwevlkerku01tess",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Monographie allemande tirée de l'expédition de Lübeck (1907-1909), écrite dans le vocabulaire colonial de son époque. L'introduction rapporte que les peuples de la côte ont entendu leurs voisins se nommer fang, en ont tiré Pangwe, et que les Français en ont fait Pahouins."
       },
       {

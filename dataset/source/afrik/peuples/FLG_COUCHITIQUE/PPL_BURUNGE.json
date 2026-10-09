@@ -87,7 +87,8 @@
       {
         "title": "Burunge – Encyclopedia Britannica",
         "url": "https://www.britannica.com/topic/Burunge",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Burunge tribe – Tanzania Cultural Tours",

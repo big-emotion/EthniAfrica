@@ -116,7 +116,8 @@
       {
         "title": "Joshua Project — Basotho profile",
         "url": "https://joshuaproject.net/people_groups/10271",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "MatheVK — Basotho clans",

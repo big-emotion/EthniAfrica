@@ -80,17 +80,20 @@
       {
         "title": "Nao in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13951",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Nao in Ethiopia – Mission Infobank / Joshua Project",
         "url": "https://www.missioninfobank.org/mib/index.php?main_page=document_general_info&products_id=37019",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Nao of Ethiopia – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg011624/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Nayi – Ethnologue",

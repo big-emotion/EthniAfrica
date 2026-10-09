@@ -100,7 +100,8 @@
       {
         "title": "Council on Foreign Relations — Conflict in Ethiopia",
         "url": "https://www.cfr.org/global-conflict-tracker/conflict/conflict-ethiopia",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Ethnologue — Tigrinya (tir)",

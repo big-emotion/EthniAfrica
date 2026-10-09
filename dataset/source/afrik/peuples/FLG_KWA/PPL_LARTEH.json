@@ -75,7 +75,8 @@
       {
         "title": "Joshua Project – Larteh, Gua in Ghana",
         "url": "https://joshuaproject.net/people_groups/11948",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Sabinet – An Account of Lɛtɛ Language Context",
@@ -91,7 +92,8 @@
       {
         "title": "Swordshare Map – Larteh Language ISO lar",
         "url": "https://map.swordshare.com/lar",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ISO 639-3 Code lar – Larteh",

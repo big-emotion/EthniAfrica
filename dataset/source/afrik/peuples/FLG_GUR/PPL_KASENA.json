@@ -128,12 +128,14 @@
       {
         "title": "Kasem in Ghana – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/12556/GH",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kasem in Burkina Faso – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/print/12556/UV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kasem – Glottolog 5.3, ISO 639-3 : xsm",
@@ -182,12 +184,14 @@
       {
         "title": "Joshua Project — Kasem in Ghana",
         "url": "https://joshuaproject.net/people_groups/print/12556/GH",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Kasena of Ghana",
         "url": "https://peoplegroups.org/people_groups/pg013342/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "WALS Online — Kasem language",

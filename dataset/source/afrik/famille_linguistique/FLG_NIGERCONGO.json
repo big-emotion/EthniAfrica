@@ -152,7 +152,8 @@
       {
         "title": "Britannica Editors – *\"Niger-Congo languages\"*. Encyclopædia Britannica",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ethnologue (SIL International, 2025) – *Niger–Congo*. Fiches linguistiques pour chaque langue, nombre de langues, locuteurs, répartition pays",

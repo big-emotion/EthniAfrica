@@ -105,6 +105,83 @@ describe("classifySource", () => {
   });
 
   // @req REQ-161
+  it("types a mission people-group database, an edited encyclopedia and an NGO by their own kinds", () => {
+    expect(
+      classifySource({
+        title: "Joshua Project – Dioula",
+        url: "https://joshuaproject.net/people_groups/11590/IV",
+        tier: "unverified",
+      })
+    ).toEqual({ kind: "missionary_database", rule: "missionary-database" });
+    expect(
+      classifySource({
+        title: "Encyclopaedia Britannica – Dyula",
+        url: "https://www.britannica.com/topic/Dyula",
+        tier: "referenced",
+      })
+    ).toEqual({ kind: "encyclopedia", rule: "encyclopedia" });
+    expect(
+      classifySource({
+        title: "Minority Rights Group – Batwa",
+        url: "https://minorityrights.org/communities/batwa/",
+        tier: "referenced",
+      })
+    ).toEqual({ kind: "ngo", rule: "ngo" });
+  });
+
+  // @req REQ-161
+  it("types those families from an explicit title when the citation has no URL", () => {
+    const kindOf = (title: string) =>
+      classifySource({ title, url: null, tier: "unverified" }).kind;
+
+    expect(kindOf("Joshua Project, Dioula of Côte d'Ivoire")).toBe(
+      "missionary_database"
+    );
+    expect(kindOf("Encyclopaedia Britannica, « Dyula »")).toBe("encyclopedia");
+    expect(kindOf("Minority Rights Group, World Directory")).toBe("ngo");
+  });
+
+  // @req REQ-161
+  it("keeps Wikipedia a community source: its readers write it", () => {
+    expect(
+      classifySource({
+        title: "Wikipédia – Dioula",
+        url: "https://fr.wikipedia.org/wiki/Dioula",
+        tier: "unverified",
+      }).kind
+    ).toBe("community");
+  });
+
+  // @req REQ-161
+  it("types a page on a work-dependent host by the work a person ruled on", () => {
+    expect(
+      classifySource({
+        title: "René Butaye, Dictionnaire kikongo-français, 1910",
+        url: "https://archive.org/details/dictionnaire-butaye",
+        tier: "referenced",
+      })
+    ).toEqual({ kind: "linguistic_reference", rule: "work-ruling" });
+    expect(
+      classifySource({
+        title: "Encyclopædia Britannica, 11e édition (1911) — Krumen",
+        url: "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Krumen",
+        tier: "unverified",
+      }).kind
+    ).toBe("encyclopedia");
+  });
+
+  // @req REQ-161
+  it("keeps holding a page on a work-dependent host that nobody ruled on", () => {
+    expect(
+      classifySource({
+        title: "Scribd — Histoire et culture du peuple Krou",
+        url: "https://fr.scribd.com/document/457402032/expose-sur-les-krou-docx",
+        tier: "unverified",
+      })
+    ).toEqual({ kind: null, rule: "held:work-dependent" });
+  });
+
+  // @req REQ-161
   it("never guesses a host no rule names", () => {
     expect(
       classifySource({

@@ -112,12 +112,14 @@
       {
         "title": "Britannica – Songhai (ethnolinguistic group), 2026",
         "url": "https://www.britannica.com/topic/Songhai",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica – Songhai Empire, 2024",
         "url": "https://www.britannica.com/place/Songhai-empire",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Glottolog – Koyraboro Senni ISO 639-3 : ses",

@@ -90,12 +90,14 @@
       {
         "title": "Joshua Project – Maan in Liberia, 2025",
         "url": "https://joshuaproject.net/people_groups/16121/LI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Maan in Guinea, 2025",
         "url": "https://joshuaproject.net/people_groups/16121/GV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes – Mano people of Liberia and Guinea",
@@ -110,7 +112,8 @@
       {
         "title": "Scripture Earth – Mano [mev], SIL International",
         "url": "https://www.scriptureearth.org/00i-Scripture_Index.php?iso=mev",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "missionary_database"
       }
     ]
   }

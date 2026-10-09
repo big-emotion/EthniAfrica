@@ -108,12 +108,14 @@
       {
         "title": "Joshua Project - Hunde, Kobi in DRC",
         "url": "https://joshuaproject.net/people_groups/12152",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Minority Rights Group - The silent killings",
         "url": "https://minorityrights.org/the-silent-killings/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Rift Valley Institute - Background to conflict in North Kivu",

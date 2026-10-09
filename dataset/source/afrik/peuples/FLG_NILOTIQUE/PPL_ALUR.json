@@ -125,7 +125,8 @@
       {
         "title": "Joshua Project — Alur people profile",
         "url": "https://joshuaproject.net/people_groups/10023",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   },

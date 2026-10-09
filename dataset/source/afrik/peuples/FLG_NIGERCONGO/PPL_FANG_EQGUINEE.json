@@ -96,7 +96,8 @@
       {
         "title": "Minority Rights Group — Equatorial Guinea",
         "url": "https://minorityrights.org/country/equatorial-guinea/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "UNFPA — Equatorial Guinea Population 2025",

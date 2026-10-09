@@ -105,7 +105,8 @@
       {
         "title": "Britannica — Luo people",
         "url": "https://www.britannica.com/topic/Luo-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue — Dholuo (luo)",

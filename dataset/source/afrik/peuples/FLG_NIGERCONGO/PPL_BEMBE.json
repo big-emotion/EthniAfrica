@@ -107,12 +107,14 @@
       {
         "title": "Joshua Project — Bembe in Congo DRC",
         "url": "https://joshuaproject.net/people_groups/10783/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Bembe in Tanzania",
         "url": "https://joshuaproject.net/people_groups/print/10783/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes — Bembe people",

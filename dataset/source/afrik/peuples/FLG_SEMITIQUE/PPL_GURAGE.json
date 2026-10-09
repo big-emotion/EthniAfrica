@@ -110,7 +110,8 @@
       {
         "title": "Joshua Project — Gurage Kistane in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/18863",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethiopian Central Statistical Agency (CSA) — Population and Housing Census 2007",

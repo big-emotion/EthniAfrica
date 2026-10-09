@@ -94,7 +94,8 @@
       {
         "title": "Britannica - Hehe",
         "url": "https://www.britannica.com/topic/Hehe",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Glottolog - Hehe",
@@ -121,7 +122,8 @@
       {
         "title": "Joshua Project - Hehe in Tanzania",
         "url": "https://joshuaproject.net/people_groups/12078",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "African Union Library - Mkwawa and the Hehe Wars",

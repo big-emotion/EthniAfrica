@@ -93,12 +93,14 @@
       {
         "title": "Joshua Project — Koore in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/12790",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Koorete of Ethiopia",
         "url": "https://peoplegroups.org/people_groups/pg011608/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Koorete language [kqy]",
@@ -120,7 +122,8 @@
       {
         "title": "Britannica — Omotic Languages",
         "url": "https://www.britannica.com/topic/Omotic-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

@@ -95,12 +95,14 @@
       {
         "title": "Joshua Project — Shona-Karanga in Zimbabwe",
         "url": "https://joshuaproject.net/people_groups/12530",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Shona-Karanga of Zimbabwe",
         "url": "https://peoplegroups.org/people_groups/pg015659/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Shona language (sna)",
@@ -111,7 +113,8 @@
       {
         "title": "Britannica — Karanga people",
         "url": "https://www.britannica.com/topic/Karanga-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "HTS Theological Studies — Karanga people Masvingo",
