@@ -161,6 +161,8 @@ describe("ftsSearchEntities", () => {
   let patronymesPayload: { total: number; rows: unknown[] };
   let placesPayload: { total: number; rows: unknown[] };
   let placesError: { code: string; message: string } | null;
+  let wordsPayload: { total: number; rows: unknown[] };
+  let wordsError: { code: string; message: string } | null;
   let familiesPayload: { total: number; rows: unknown[] };
   let quizPayload: { total: number; rows: unknown[] };
   let languagesPayload: { total: number; rows: unknown[] };
@@ -177,6 +179,8 @@ describe("ftsSearchEntities", () => {
     patronymesPayload = { total: 0, rows: [] };
     placesPayload = { total: 0, rows: [] };
     placesError = null;
+    wordsPayload = { total: 0, rows: [] };
+    wordsError = null;
     familiesPayload = { total: 0, rows: [] };
     quizPayload = { total: 0, rows: [] };
     languagesPayload = { total: 0, rows: [] };
@@ -195,6 +199,8 @@ describe("ftsSearchEntities", () => {
         return Promise.resolve({ data: patronymesPayload, error: null });
       if (fn === "afrik_search_places")
         return Promise.resolve({ data: placesPayload, error: placesError });
+      if (fn === "afrik_search_words")
+        return Promise.resolve({ data: wordsPayload, error: wordsError });
       if (fn === "afrik_search_language_families")
         return Promise.resolve({ data: familiesPayload, error: null });
       if (fn === "afrik_search_quiz")
@@ -1035,6 +1041,75 @@ describe("ftsSearchEntities", () => {
     await expect(
       ftsSearchEntities({ q: "yamoussoukro", limit: 20, offset: 0 })
     ).rejects.toEqual(placesError);
+  });
+
+  // @req REQ-196
+  it("finds a word fiche by its name and carries its nameHistory", async () => {
+    const nameHistory = { summary: "Le mot race…", names: [] };
+    wordsPayload = {
+      total: 1,
+      rows: [
+        {
+          id: "WRD_RACE",
+          nameMain: "race",
+          wordLanguage: "fra",
+          definition: "Un mot.",
+          content: { relatedSubjects: [], gaps: [], sources: [] },
+          nameHistory,
+          relevance: 1,
+          exactMatch: true,
+          normalizedScore: 1,
+        },
+      ],
+    };
+
+    const result = await ftsSearchEntities({ q: "race", limit: 20, offset: 0 });
+
+    expect(rpc).toHaveBeenCalledWith(
+      "afrik_search_words",
+      expect.objectContaining({ p_q: "race", p_limit: 20, p_offset: 0 })
+    );
+    expect(result.words).toEqual([
+      {
+        id: "WRD_RACE",
+        nameMain: "race",
+        wordLanguage: "fra",
+        definition: "Un mot.",
+        content: { relatedSubjects: [], gaps: [], sources: [] },
+        nameHistory,
+        relevance: 1,
+        exactMatch: true,
+        normalizedScore: 1,
+      },
+    ]);
+    expect(result.wordsTotal).toBe(1);
+    expect(result.total).toBe(1);
+  });
+
+  // Code may reach a database that has not applied migration 104 yet.
+  // @req REQ-196
+  it("answers no word, not a failed search, while afrik_search_words is missing", async () => {
+    wordsError = { code: "PGRST202", message: "function not found" };
+    peoplesPayload = { total: 1, rows: [peopleRow("PPL_BAOULE", "Baoulé")] };
+
+    const result = await ftsSearchEntities({
+      q: "baoule",
+      limit: 20,
+      offset: 0,
+    });
+
+    expect(result.words).toEqual([]);
+    expect(result.wordsTotal).toBe(0);
+    expect(result.peoples).toHaveLength(1);
+  });
+
+  // @req REQ-196
+  it("still fails on any other error from the word search", async () => {
+    wordsError = { code: "57014", message: "statement timeout" };
+
+    await expect(
+      ftsSearchEntities({ q: "race", limit: 20, offset: 0 })
+    ).rejects.toEqual(wordsError);
   });
 
   // @req REQ-135

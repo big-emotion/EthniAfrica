@@ -20,6 +20,7 @@ import { formatNumber } from "@/lib/languageTag";
 import {
   getCountryRoute,
   getFamilyRoute,
+  getLocalizedRoute,
   getLanguageRoute,
   getPatronymeRoute,
   getPeopleRoute,
@@ -65,6 +66,10 @@ export function ficheHrefFor(result: SearchResult, language: Language): string {
   // No place page yet (REQ-196): the place leads to its country's fiche.
   if (result.type === "place" && result.countryIds?.[0])
     return getCountryRoute(language, result.countryIds[0]);
+  // A word has no fiche page (REQ-196): its search result is where its name
+  // history is told.
+  if (result.type === "word")
+    return `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: result.name })}`;
   return getPeopleRoute(language, result.id);
 }
 

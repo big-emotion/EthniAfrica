@@ -212,6 +212,7 @@ const ORIGIN_FIELD_PATHS: Record<string, string[]> = {
   country: ["etymology", "nameOriginActor"],
   language: ["whyProblematic"],
   languageFamily: ["decolonialHeader.originOfHistoricalTerm"],
+  word: ["nameHistory.summary"],
 };
 
 function evidenceAt(
@@ -277,11 +278,22 @@ function readAccounts(
   ];
 }
 
+/** Competing origins are the accounts a nameHistory groups as hypotheses. */
+function historyHoldsHypotheses(root: Fiche): boolean {
+  return list(fiche(root.nameHistory).names).some((name) =>
+    list(fiche(name).accounts).some(
+      (account) => sentence(fiche(account).hypothesisGroup) !== undefined
+    )
+  );
+}
+
 function isDebated(
+  type: string,
   accounts: AnswerAccount[],
   content: Fiche,
   root: Fiche
 ): boolean {
+  if (type === "word" && historyHoldsHypotheses(root)) return true;
   const status = String(
     fieldOf(content, root, "classificationStatus") ??
       fieldOf(content, root, "classification_status") ??
@@ -420,7 +432,7 @@ function titleOf(root: Fiche): string {
  * @req REQ-178
  */
 export function readAnswer(
-  type: Exclude<AnswerKind, "word">,
+  type: AnswerKind,
   content: unknown,
   root: unknown = {},
   extras: AnswerExtras = {}
@@ -451,9 +463,12 @@ export function readAnswer(
     where,
     type === "country" ? naming.forms[0]?.form : undefined
   );
+  // A word fiche's definition is the one sentence it writes about what the
+  // word means today: its lead.
   const lead = writtenSentence(
     "lead",
-    fiche(fieldOf(contentRecord, rootRecord, "searchAnswer")).lead
+    fiche(fieldOf(contentRecord, rootRecord, "searchAnswer")).lead ??
+      (type === "word" ? rootRecord.definition : undefined)
   );
 
   const population = finiteNumber(
@@ -490,7 +505,7 @@ export function readAnswer(
       ? {
           origin: {
             accounts,
-            debated: isDebated(accounts, contentRecord, rootRecord),
+            debated: isDebated(type, accounts, contentRecord, rootRecord),
           },
         }
       : {}),

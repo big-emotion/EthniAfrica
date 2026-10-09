@@ -28,6 +28,8 @@ export interface FtsSearchData {
   languages: object[];
   /** Places (REQ-196), a grouped facet like languages: not in `results`. */
   places: object[];
+  /** Word fiches (REQ-196), a grouped facet like places: not in `results`. */
+  words: object[];
   /**
    * Every hit in the selected stream, ordered on `normalizedScore` (migration
    * 069). The grouped arrays stay beside it because a facet asks about one
@@ -47,6 +49,7 @@ export interface FtsSearchData {
   quizzesTotal: number;
   languagesTotal: number;
   placesTotal: number;
+  wordsTotal: number;
   total: number;
   /** Near-miss leads (REQ-125), populated only when `total` is 0. */
   leads: object[];
@@ -100,6 +103,7 @@ function shapeSearchData(
       quizzes: (result.quizzes ?? []) as object[],
       languages: [],
       places: [],
+      words: [],
       results: (result.results ?? []).filter((hit) => hit.kind === "quiz"),
       peoplesTotal: 0,
       countriesTotal: 0,
@@ -109,6 +113,7 @@ function shapeSearchData(
       quizzesTotal,
       languagesTotal: 0,
       placesTotal: 0,
+      wordsTotal: 0,
       total: quizzesTotal,
       leads: [],
       nearNames: [],
@@ -125,6 +130,7 @@ function shapeSearchData(
   const patronymesTotal = result.patronymesTotal ?? 0;
   const languagesTotal = result.languagesTotal ?? 0;
   const placesTotal = result.placesTotal ?? 0;
+  const wordsTotal = result.wordsTotal ?? 0;
   const total =
     peoplesTotal +
     countriesTotal +
@@ -132,7 +138,8 @@ function shapeSearchData(
     personsTotal +
     patronymesTotal +
     languagesTotal +
-    placesTotal;
+    placesTotal +
+    wordsTotal;
   const language = "fr";
 
   return {
@@ -144,6 +151,7 @@ function shapeSearchData(
     quizzes: [],
     languages: (result.languages ?? []) as object[],
     places: (result.places ?? []) as object[],
+    words: (result.words ?? []) as object[],
     // Preserve the database order while excluding the other stream.
     results: (result.results ?? []).filter((hit) => hit.kind !== "quiz"),
     peoplesTotal,
@@ -154,6 +162,7 @@ function shapeSearchData(
     quizzesTotal: 0,
     languagesTotal,
     placesTotal,
+    wordsTotal,
     total,
     leads: (result.leads ?? []) as object[],
     nearNames: result.nearNames ?? [],

@@ -383,6 +383,7 @@ describe("afrikLoader", () => {
         person: 0,
         patronyme: 0,
         place: 0,
+        word: 0,
       });
     });
 
@@ -438,6 +439,7 @@ describe("afrikLoader", () => {
         person: 0,
         patronyme: 0,
         place: 0,
+        word: 0,
       });
     });
   });
