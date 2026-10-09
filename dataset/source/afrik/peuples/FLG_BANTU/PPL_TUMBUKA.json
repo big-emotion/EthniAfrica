@@ -113,12 +113,14 @@
       {
         "title": "UNESCO — Vimbuza healing dance (inscrit 2008)",
         "url": "https://ich.unesco.org/en/RL/vimbuza-healing-dance-00158",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "SIL Ethnologue — Tumbuka (tum)",
         "url": "https://www.ethnologue.com/language/tum/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Qiraat Africa — The Tumbuka People of Africa (2025)",

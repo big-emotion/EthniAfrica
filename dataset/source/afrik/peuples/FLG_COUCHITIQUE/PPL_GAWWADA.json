@@ -100,12 +100,14 @@
       {
         "title": "ISO 639-3 gwd : Gawwada – CEDS / National Center for Education Statistics",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Gawwada (gwd) – WOLD / MPI-EVA",
         "url": "https://wold.clld.org/language/3",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethiopia Profile – Languages – Day Translations, 2024",

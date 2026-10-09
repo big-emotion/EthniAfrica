@@ -4,7 +4,7 @@
   "nameEn": "Tunisia",
   "nameOfficial": "République tunisienne (Al-Jumhūriyyah at-Tūnisiyyah)",
   "summary": "La Tunisie porte le nom de sa capitale, dont l'origine est peut-être berbère ou punique. Carthage, l'Afrique romaine — d'où vient le nom du continent —, le royaume vandale et les califats s'y sont succédé, avant la régence de Tunis et le protectorat français. Arabes et Berbères de Tunisie y perpétuent le malouf et le mezoued.",
-  "etymology": "Le nom \"Tunisie\" vient de \"Tunis\", la capitale. Le nom \"Tunis\" vient probablement de \"Tynes\" (ancien nom berbère) ou de \"Tunès\" (nom punique). Le nom arabe \"Tūnis\" (تونس) est utilisé depuis le Moyen Âge.",
+  "etymology": "Le nom \"Tunisie\" viendrait de \"Tunis\", la capitale. Le nom \"Tunis\" viendrait de \"Tynes\" (ancien nom berbère) ou de \"Tunès\" (nom punique). Le nom arabe \"Tūnis\" (تونس) est utilisé depuis le Moyen Âge.",
   "nameOriginActor": "Le nom \"Tunisie\" vient de \"Tunis\", fondée par les Berbères puis développée par les Arabes. Le nom a été officialisé lors de la colonisation française.",
   "content": {
     "historicalNames": {
@@ -205,17 +205,20 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Tunisia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Ethnologue – Languages of Tunisia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Minority Rights Group – Amazigh in Tunisia",
@@ -230,18 +233,21 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "South African History Online, « Africa: What's in a name? »",
         "url": "https://sahistory.org.za/article/africa-whats-name",
         "tier": "referenced",
+        "source_kind": "repository",
         "notes": "Article d'un portail d'histoire public. Dit que tous les historiens s'accordent sur l'emploi romain du nom en Tunisie et en Algérie vers le IIe siècle avant notre ère, mais que son origine reste discutée : l'idée d'une « terre des Afri » n'est appuyée par aucune preuve directe dans les sources primaires. Mentionne aussi l'explication grecque de Léon l'Africain. Consulté le 25 septembre 2026."
       },
       {
         "title": "UNFPA – World Population Dashboard — Tunisie",
         "url": "https://www.unfpa.org/data/world-population/TN",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

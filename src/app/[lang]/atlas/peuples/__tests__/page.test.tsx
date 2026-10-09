@@ -99,10 +99,10 @@ vi.mock("@/components/people/PeopleDetailViewV2", () => ({
   ),
 }));
 
-// ConfidenceChip stub — marks where a chip renders
-vi.mock("@/components/source-transparency/ConfidenceChip", () => ({
-  ConfidenceChip: () => <div data-testid="confidence-chip" />,
-  default: () => <div data-testid="confidence-chip" />,
+// SourceReviewChip stub — marks where a chip renders
+vi.mock("@/components/source-transparency/SourceReviewChip", () => ({
+  SourceReviewChip: () => <div data-testid="source-review-chip" />,
+  default: () => <div data-testid="source-review-chip" />,
 }));
 
 vi.mock("@/components/source-transparency/PinnedVersionBanner", () => ({
@@ -382,7 +382,7 @@ describe("/[lang]/peuples/[slug] page", () => {
 
   // 8. A pinned snapshot still stores its confidence; the reader never sees it.
   // @req REQ-194
-  it("pinned snapshot renders no confidence chip or score", async () => {
+  it("pinned snapshot renders no source review chip or score", async () => {
     mockGetSnapshot.mockResolvedValueOnce({
       data: { id: "PPL_BAKONGO", nameMain: "Bakongo", confidence: 72 },
       version: 10,
@@ -392,7 +392,7 @@ describe("/[lang]/peuples/[slug] page", () => {
 
     const { container, queryByTestId } = await renderPage("PPL_BAKONGO@v10");
 
-    expect(queryByTestId("confidence-chip")).toBeNull();
+    expect(queryByTestId("source-review-chip")).toBeNull();
     expect(container.textContent).not.toMatch(/72|confiance/i);
     expect(mockGetSnapshot).toHaveBeenCalledWith("PPL_BAKONGO", 10);
   });

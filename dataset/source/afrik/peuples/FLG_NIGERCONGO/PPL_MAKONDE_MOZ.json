@@ -90,7 +90,8 @@
       {
         "title": "SIL Ethnologue — Makonde (kde)",
         "url": "https://www.ethnologue.com/language/kde/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Makonde in Mozambique",
@@ -110,12 +111,14 @@
       {
         "title": "CIA World Factbook — Mozambique",
         "url": "https://www.cia.gov/the-world-factbook/countries/mozambique/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Mozambique High Commission — Cabo Delgado",
         "url": "http://www.mozambiquehighcommission.org.uk/cabo-delgado.html",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       }
     ]
   }

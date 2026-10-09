@@ -79,12 +79,14 @@
       {
         "title": "Sumbwa – University of Missouri Ethnographic Survey",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Sumbwa.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Sumbwa – Glottolog 5.3, code sumb1240",
         "url": "https://glottolog.org/resource/languoid/id/sumb1240",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Bantu, Central-Tanzania People Cluster – Joshua Project 2025",

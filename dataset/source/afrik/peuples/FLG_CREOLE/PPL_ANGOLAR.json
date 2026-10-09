@@ -91,12 +91,14 @@
       {
         "title": "PMC/NIH — The Genes of Freedom: Genome-Wide Insights into Marronage (Bouyer et al., 2021)",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8229774/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "John Benjamins — The vitality of Angolar (2022)",
         "url": "https://www.jbe-platform.com/content/journals/10.1075/jpcl.00089.bou",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Gale Academic — Linguistic, historical and ethnographic evidence on Angolar",
@@ -106,7 +108,8 @@
       {
         "title": "Ethnologue — Angolar language (aoa)",
         "url": "https://www.ethnologue.com/language/aoa/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

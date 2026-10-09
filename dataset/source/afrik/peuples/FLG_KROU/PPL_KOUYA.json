@@ -85,7 +85,8 @@
       {
         "title": "SIL Ethnologue — Kouya language (kyf)",
         "url": "https://www.ethnologue.com/language/kyf/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Swordshare Map — Kouya language info (10 746 speakers)",
@@ -105,7 +106,8 @@
       {
         "title": "Glottolog — Kru language family",
         "url": "https://glottolog.org/resource/languoid/id/kru1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

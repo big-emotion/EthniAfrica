@@ -80,22 +80,26 @@
       {
         "title": "Ethnologue SIL International — Kwadi language (kwz, extinct)",
         "url": "https://www.ethnologue.com/language/kwz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Kwadi, code kwad1244",
         "url": "https://glottolog.org/resource/languoid/id/kwad1244",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Science Advances 2023 — Genome-wide variation in the Angolan Namib Desert reveals unique pre-Bantu heritage",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10516492/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Human Molecular Genetics 2021 — The genomic prehistory of peoples speaking Khoisan languages",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8117426/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Britannica — Khoisan languages",
@@ -105,7 +109,8 @@
       {
         "title": "UNESCO Atlas of the World's Languages in Danger — Kwadi",
         "url": "https://en.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Rosetta Panglossia — Kwadi language (kwz)",
@@ -115,7 +120,8 @@
       {
         "title": "Cambridge Core — Tracing contact and migration in pre-Bantu Southern Africa",
         "url": "https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/tracing-contact-and-migration-in-prebantu-southern-africa-through-lexical-borrowing/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

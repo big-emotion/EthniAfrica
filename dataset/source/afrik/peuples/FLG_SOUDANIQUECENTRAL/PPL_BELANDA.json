@@ -90,12 +90,14 @@
       {
         "title": "SIL Ethnologue — Belanda Bor (bxb)",
         "url": "https://www.ethnologue.com/language/bxb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Belanda Viri (bvi)",
         "url": "https://www.ethnologue.com/language/bvi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Amnesty International — South Sudan: War crimes against Azande and Balanda Bviri (2021)",
@@ -105,7 +107,8 @@
       {
         "title": "CIA World Factbook — South Sudan",
         "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

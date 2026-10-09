@@ -237,12 +237,14 @@
       {
         "title": "CIA World Factbook – South Africa",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of South Africa",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements nationaux sud-africains",
@@ -252,12 +254,14 @@
       {
         "title": "ONU – Données démographiques 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Afrique du Sud",
         "url": "https://www.unfpa.org/data/world-population/ZA",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Études anthropologiques sur les peuples sud-africains",
@@ -272,17 +276,20 @@
       {
         "title": "Statistics South Africa – Census 2022 Statistical Release P0301.4 (Figure 2.3: Percentage distribution by population group, 1996–2022)",
         "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Statistics South Africa – Mid-year population estimates 2025 (P0302, population by population group)",
         "url": "https://www.statssa.gov.za/publications/P0302/P03022025.pdf",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "National statistical office; supplies the 2025 headcount per population group."
       }
     ],

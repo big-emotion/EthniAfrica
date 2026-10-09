@@ -91,7 +91,8 @@
       {
         "title": "Ethnologue — Siwi (siz)",
         "url": "https://www.ethnologue.com/language/siz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Berber, Siwa in Egypt",
@@ -101,7 +102,8 @@
       {
         "title": "Fakhry, Ahmed. Siwa Oasis. Cairo: The American University in Cairo Press, 1973",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Souag, Lameen. Siwa and its significance for Arabic dialectology. Zeitschrift fur Arabische Linguistik, 2009",

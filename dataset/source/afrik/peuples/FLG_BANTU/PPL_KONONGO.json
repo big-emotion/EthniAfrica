@@ -87,7 +87,8 @@
       {
         "title": "ISO 639-3 Language Code List – Wiktionary / Ethnologue",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Bantu, Central-Tanzania People Cluster – Joshua Project",
@@ -97,7 +98,8 @@
       {
         "title": "Glottolog — Konongo-Ruwila (kono1265)",
         "url": "https://glottolog.org/resource/languoid/id/kono1265",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

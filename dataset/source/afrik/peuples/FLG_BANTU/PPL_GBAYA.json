@@ -136,7 +136,8 @@
       {
         "title": "Gbaya-Bossangoa Language (GBP) – Ethnologue",
         "url": "https://www.ethnologue.com/language/gbp/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

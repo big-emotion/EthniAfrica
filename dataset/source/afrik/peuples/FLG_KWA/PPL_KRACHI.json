@@ -76,7 +76,8 @@
       {
         "title": "National Commission on Culture Ghana – Oti Region : Krachi history and culture",
         "url": "https://ghanaculture.gov.gh/oti-region/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Krachi Dente Worship – Preface and Introduction",
@@ -96,17 +97,20 @@
       {
         "title": "Krachi East Municipality – Department of Urban Roads Ghana",
         "url": "https://dur.gov.gh/oti/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Paramount Chief of Krachi Traditional Area Visits Institute of African Studies, UG, 2025",
         "url": "https://ias.ug.edu.gh/content/paramount-chief-krachi-traditional-area-visits-institute-african-studies",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog : Krache, ISO 639-3 : kye",
         "url": "https://glottolog.org/resource/languoid/id/krac1238",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

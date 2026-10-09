@@ -127,12 +127,14 @@
       {
         "title": "Ethnologue — Malagasy macrolanguage (mlg), (consulté 2025)",
         "url": "https://www.ethnologue.com/language/mlg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kusuma, P. et al. Malagasy Genetic Ancestry Comes from an Historical Malay Trading. Molecular Biology and Evolution, 2016",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4989113/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "RAIS Conference — The Ethnicity and Identity of the Malagasy People",
@@ -142,17 +144,20 @@
       {
         "title": "CIA World Factbook — Madagascar, (consulté 2025)",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Beaujard, Philippe. Les mondes de l'océan Indien (2 vol.). Paris : Armand Colin, 2012",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "INSTAT Madagascar — Institut National de la Statistique, (consulté 2025)",
         "url": "https://www.instat.mg",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

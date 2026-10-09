@@ -87,12 +87,14 @@
       {
         "title": "Ethnologue — Ghomara (gho)",
         "url": "https://www.ethnologue.com/language/gho/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Ghomara (ghom1257)",
         "url": "https://glottolog.org/resource/languoid/id/ghom1257",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Berber, Ghomara in Morocco",

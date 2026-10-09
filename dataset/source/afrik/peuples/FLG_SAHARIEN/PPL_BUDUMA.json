@@ -131,7 +131,8 @@
       {
         "title": "CIA World Factbook — Chad",
         "url": "https://www.cia.gov/the-world-factbook/countries/chad/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

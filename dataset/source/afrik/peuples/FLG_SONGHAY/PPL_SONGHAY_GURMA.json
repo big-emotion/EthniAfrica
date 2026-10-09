@@ -13,7 +13,7 @@
         "Songhay de Hombori",
         "Central Songhay"
       ],
-      "originOfExonyms": "Le terme Humburi Senni signifie litteralement la langue de Hombori en songhay. Hombori est la ville principale de la region de residence de ce groupe au sud-est du Mali. L'appellation Songhay Gurma designe les locuteurs de ce dialecte qui vivent aussi dans le nord-est du Burkina Faso, dans la province du Seno.",
+      "originOfExonyms": "Le terme Humburi Senni signifierait littéralement la langue de Hombori en songhay. Hombori est la ville principale de la region de residence de ce groupe au sud-est du Mali. L'appellation Songhay Gurma designe les locuteurs de ce dialecte qui vivent aussi dans le nord-est du Burkina Faso, dans la province du Seno.",
       "whyProblematic": "Le terme Gurma peut etre source de confusion car il designe egalement les Gourmantche, peuple de langue gur sans lien avec les Songhay. L'appellation correcte dans la litterature linguistique est Humburi Senni (ISO 639-3 : hmb). La denomination Songhay Gurma est un terme geographique qui designe les Songhay vivant dans la zone du Gurma, region a cheval entre le Burkina Faso, le Mali et le Niger.",
       "contemporaryUsage": "Ces locuteurs du songhay central sont environ 81 000, repartis principalement au sud du Mali (region de Hombori, cercle de Douentza, region de Mopti) et dans le nord-est du Burkina Faso (region du Sahel, province du Seno, environs de Dori). Ils se designent eux-memes comme Ayneha, terme collectif songhay. Le francais est la langue d'administration et d'education dans les deux pays.",
       "linguisticFamily": "FLG_SONGHAY",
@@ -95,27 +95,32 @@
       {
         "title": "SIL Ethnologue – Humburi Senni Songhay (hmb)",
         "url": "https://www.ethnologue.com/language/hmb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog – Humburi Senni",
         "url": "https://glottolog.org/resource/languoid/id/humb1243",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Omniglot – Humburi Senni language and alphabet",
         "url": "https://www.omniglot.com/writing/humburisenni.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Stoller, Paul. The Taste of Ethnographic Things : The Senses in Anthropology. University of Pennsylvania Press, 1989",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Hunwick, John O. Timbuktu and the Songhay Empire. Brill, 1999",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

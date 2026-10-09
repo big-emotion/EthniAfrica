@@ -106,7 +106,8 @@
       {
         "title": "Omniglot — Tswa language and alphabet",
         "url": "https://www.omniglot.com/writing/tswa.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Tswa people",
@@ -126,7 +127,8 @@
       {
         "title": "SIL Ethnologue — Tswa (tsc)",
         "url": "https://www.ethnologue.com/language/tsc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "IMB (International Mission Board) — Tswa of Zimbabwe Flyer",

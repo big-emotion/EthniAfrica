@@ -124,12 +124,14 @@
       {
         "title": "South African History Online — Mfecane",
         "url": "https://sahistory.org.za/article/mfecane-understanding-period-transformation-southern-africa",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Nation Online Malawi — Understanding Maseko and Jere Ngoni",
         "url": "https://mwnation.com/understanding-maseko-jere-ngoni/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "YouTube — Ingoma, Ngoni Dance with Brian Nyirenda",
@@ -139,12 +141,14 @@
       {
         "title": "JSTOR — My Ngoni of Malawi (Jele and Maseko Ngoni)",
         "url": "https://www.jstor.org/stable/27328061",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue (SIL) — Ngoni [ngo]",
         "url": "https://www.ethnologue.com/language/ngo",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

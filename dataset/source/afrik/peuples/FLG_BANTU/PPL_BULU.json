@@ -107,7 +107,8 @@
       {
         "title": "Ethnologue, Bulu (bum)",
         "url": "https://www.ethnologue.com/language/bum/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "PeopleGroups.org, Bulu of Cameroon",

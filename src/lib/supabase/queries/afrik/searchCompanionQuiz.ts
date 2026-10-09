@@ -9,7 +9,11 @@ import {
   type QuizSourceRow,
 } from "@/lib/quiz/eligibility";
 import { createServerClient } from "@/lib/supabase/server";
-import { toSourceTier, type SourceTier } from "@/types/sources";
+import {
+  toSourceTier,
+  type SourceKind,
+  type SourceTier,
+} from "@/types/sources";
 import type { QuizOptionValue, QuizTemplateId } from "@/types/quiz";
 import type { Language } from "@/types/shared";
 
@@ -63,6 +67,7 @@ export interface SearchCompanionQuizCandidate extends CompanionQuizCandidate {
     title: string;
     url: string | null;
     tier: SourceTier;
+    sourceKind?: SourceKind;
   };
   entity: { type: QuizEntityType; id: string };
 }
@@ -245,6 +250,7 @@ export async function loadSearchCompanionQuizCandidates(
     });
     const source = bestSource(row.source_ids ?? [], sourceById);
     if (!eligibility.eligible || !source) return [];
+    const { sourceKind } = toQuizAssertionSource(source);
 
     return [
       {
@@ -264,6 +270,7 @@ export async function loadSearchCompanionQuizCandidates(
           title: source.title,
           url: source.url,
           tier: toSourceTier(source.tier),
+          ...(sourceKind ? { sourceKind } : {}),
         },
         entity: { type: row.entity_type, id: row.entity_id },
       },

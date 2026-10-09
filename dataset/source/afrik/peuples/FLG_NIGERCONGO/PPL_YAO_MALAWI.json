@@ -9,7 +9,7 @@
       "mainName": "Yao (Malawi)",
       "selfAppellation": "Wayao",
       "exonyms": ["Yao", "Ajawa", "Adsawa", "Wahiao"],
-      "originOfExonyms": "Le terme Yao est derive du nom d'une colline dans l'actuelle province de Niassa au Mozambique, lieu d'origine ancestrale du peuple. Le mot Yao serait le pluriel d'un nom signifiant colline deboisee. Le terme Wayao (avec le prefixe de classe wa- pour les personnes) est l'appellation en swahili et en chichewa. Les Europeens ont utilise des variantes comme Ajawa ou Adsawa.",
+      "originOfExonyms": "Le terme Yao deriverait du nom d'une colline dans l'actuelle province de Niassa au Mozambique, lieu d'origine ancestrale du peuple. Le mot Yao serait le pluriel d'un nom signifiant colline deboisee. Le terme Wayao (avec le prefixe de classe wa- pour les personnes) est l'appellation en swahili et en chichewa. Les Europeens ont utilise des variantes comme Ajawa ou Adsawa.",
       "whyProblematic": "L'ethnonymie yao au Malawi est complexifiee par le fait que les Yao sont un peuple trans-frontalier partage entre le Malawi, le Mozambique et la Tanzanie, avec une identite culturelle qui transcende les frontieres coloniales. Au Malawi, leur identification a l'islam peut creer des tensions avec les groupes chretiens majoritaires.",
       "contemporaryUsage": "Le terme Yao est couramment employe au Malawi en anglais, en chichewa et dans les langues administratives. Les Yao du Malawi se designent eux-memes comme Wayao et leur langue comme Ciyawo ou Chiyao. Ils constituent environ 13 % de la population malawienne et sont concentres dans les districts de Mangochi, Machinga, Zomba, Chiradzulu et Blantyre.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -90,7 +90,8 @@
       {
         "title": "Ethnologue — Yao language (yao)",
         "url": "https://www.ethnologue.com/language/yao/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Yao in Malawi",
@@ -115,7 +116,8 @@
       {
         "title": "CIA World Factbook — Malawi",
         "url": "https://www.cia.gov/the-world-factbook/countries/malawi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

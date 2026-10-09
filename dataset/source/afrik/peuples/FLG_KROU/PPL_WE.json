@@ -111,7 +111,8 @@
       {
         "title": "Refworld/MRGI — World Directory of Minorities, Cote d'Ivoire (Guere/We 318 000)",
         "url": "https://www.refworld.org/reference/countryrep/mrgi/2008/en/65159",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Day Translations — Ivory Coast Language Profile (gxx, wob, wec)",
@@ -121,12 +122,14 @@
       {
         "title": "SIL Ethnologue — We Southern (gxx)",
         "url": "https://www.ethnologue.com/language/gxx/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Wobe-We Northern (weno1238, ISO wob)",
         "url": "https://glottolog.org/resource/languoid/id/weno1238",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Guere in Cote d'Ivoire",

@@ -101,7 +101,8 @@
       {
         "title": "SIL Ethnologue — Bembe (bmb)",
         "url": "https://www.ethnologue.com/language/bmb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Bembe in Congo DRC",
@@ -121,7 +122,8 @@
       {
         "title": "Glottolog — bemb1255",
         "url": "https://glottolog.org/resource/languoid/id/bemb1255",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "The GOAT PoL — Once upon a Bembe tradition",

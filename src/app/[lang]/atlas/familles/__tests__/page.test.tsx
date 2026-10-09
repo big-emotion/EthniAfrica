@@ -93,8 +93,8 @@ vi.mock("@/components/family/LanguageFamilyDetailViewV2", () => ({
   ),
 }));
 
-vi.mock("@/components/source-transparency/ConfidenceChip", () => ({
-  ConfidenceChip: () => <div data-testid="confidence-chip" />,
+vi.mock("@/components/source-transparency/SourceReviewChip", () => ({
+  SourceReviewChip: () => <div data-testid="source-review-chip" />,
 }));
 
 vi.mock("@/components/source-transparency/PinnedVersionBanner", () => ({
@@ -448,7 +448,7 @@ describe("/[lang]/familles/[slug] page", () => {
   describe("versioned URLs", () => {
     // @req REQ-019
     // @req REQ-025 REQ-194
-    it("renders the pinned snapshot, banner first, with no confidence chip and no panel chapter", async () => {
+    it("renders the pinned snapshot, banner first, with no source review chip and no panel chapter", async () => {
       mockGetRevisionSnapshot.mockResolvedValueOnce({
         data: { name_fr: "Famille bantu" },
         version: 8,
@@ -482,7 +482,7 @@ describe("/[lang]/familles/[slug] page", () => {
         "data-live-url",
         getFamilyRoute("fr", "FLG_BANTU")
       );
-      expect(queryByTestId("confidence-chip")).toBeNull();
+      expect(queryByTestId("source-review-chip")).toBeNull();
       expect(
         getByText(/Ce contenu est une capture archivée/)
       ).toBeInTheDocument();

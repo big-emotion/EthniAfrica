@@ -92,7 +92,8 @@
       {
         "title": "Ndengereko – Glottolog 5.3, code nden1248",
         "url": "https://glottolog.org/resource/languoid/id/nden1248",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Language, Tribe and Ethnic Clusters : Ndengereko – Orville Jenkins",
@@ -102,7 +103,8 @@
       {
         "title": "Ndengereko Language – Ethnologue",
         "url": "https://www.ethnologue.com/language/ndg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

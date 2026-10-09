@@ -92,12 +92,14 @@
       {
         "title": "SIL Ethnologue — Bijagó (bjg)",
         "url": "https://www.ethnologue.com/language/bjg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue subgroups Niger-Congo — Bijago listing",
         "url": "https://www.ethnologue.com/subgroup/47/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Responsible Travel — Bijagos Archipelago culture",
@@ -117,7 +119,8 @@
       {
         "title": "UNESCO Biosphere Reserve — Bijagos Archipelago (1996)",
         "url": "https://en.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Kumakonda African Travel — Bijagos Islands matriarchal society",

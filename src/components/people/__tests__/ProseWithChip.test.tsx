@@ -57,7 +57,8 @@ describe("ProseWithChip", () => {
     });
   });
 
-  it("shows ConfidenceChip button when all chip data is present", async () => {
+  // @req REQ-019
+  it("shows SourceReviewChip button when all chip data is present", async () => {
     render(<ProseWithChip text="Paragraphe vérifié." chip={fullChip} />);
     await waitFor(() => {
       const btn = screen.queryByRole("button");

@@ -76,7 +76,8 @@
       {
         "title": "Wasa Language (WSS) – Ethnologue",
         "url": "https://www.ethnologue.com/language/wss/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Akan Heritage – History of Wassa",

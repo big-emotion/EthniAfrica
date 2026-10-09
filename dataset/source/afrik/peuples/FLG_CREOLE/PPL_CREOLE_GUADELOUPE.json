@@ -15,7 +15,7 @@
       "selfAppellation": "Gwadloupéyen",
       "exonyms": ["Antillais", "Créoles des Antilles françaises"],
       "spellingAliases": ["Gwadloupéyen(ne)"],
-      "originOfExonyms": "Le terme « créole » provient de l'espagnol criollo et du portugais crioulo, eux-mêmes dérivés du latin creare (« élever », « faire naître »), et désignait à l'origine les personnes nées dans les colonies plutôt qu'en métropole.",
+      "originOfExonyms": "Le terme « créole » proviendrait de l'espagnol criollo et du portugais crioulo, qui viendraient eux-mêmes du latin creare (« élever », « faire naître ») ; il désignait à l'origine les personnes nées dans les colonies plutôt qu'en métropole.",
       "whyProblematic": "Le terme « créole » peut être perçu comme portant l'héritage de classifications coloniales fondées sur le lieu de naissance et l'ascendance, opposant historiquement Blancs créoles, libres de couleur et descendants d'esclaves.",
       "contemporaryUsage": "« Gwadloupéyen » est l'auto-désignation courante et valorisée des habitants de la Guadeloupe ; « créole » qualifie aujourd'hui surtout la langue et la culture issues de la créolisation antillaise.",
       "peopleGroupId": null,
@@ -99,18 +99,21 @@
       {
         "title": "Insee - L'essentiel sur... la Guadeloupe",
         "url": "https://www.insee.fr/fr/statistiques/4481456",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Ministère de la Culture - créole guadeloupéen (portail des langues de France)",
         "url": "https://www.culture.gouv.fr/fr/Thematiques/portail-langues-en-france/langues/creole-guadeloupeen",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Auto-désignation « Kréyòl Gwadloup » et statut de langue régionale, relevés dans l'index d'un moteur de recherche : la page elle-même n'a pas pu être consultée directement."
       },
       {
         "title": "Glottolog 5.3 - Guadeloupean Creole French (guad1243)",
         "url": "https://glottolog.org/resource/languoid/id/guad1243",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

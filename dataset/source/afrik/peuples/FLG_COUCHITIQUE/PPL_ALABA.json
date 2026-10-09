@@ -101,7 +101,8 @@
       {
         "title": "SIL Ethnologue — Alaba-K'abeena language (alw)",
         "url": "https://www.ethnologue.com/language/alw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

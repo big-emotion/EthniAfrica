@@ -98,12 +98,14 @@
       {
         "title": "Tooro Language (TTJ) – Ethnologue SIL",
         "url": "https://www.ethnologue.com/language/ttj/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Language Runyoro-Rutooro – WALS Online",
         "url": "https://wals.info/languoid/lect/wals_code_rru",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

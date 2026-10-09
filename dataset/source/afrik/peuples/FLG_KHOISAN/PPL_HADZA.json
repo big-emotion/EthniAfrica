@@ -9,7 +9,7 @@
       "mainName": "Hadza",
       "selfAppellation": "Hadzabe",
       "exonyms": ["Wahadzabe (en swahili)", "Kindiga", "Tindiga", "Kangeju"],
-      "originOfExonyms": "Les Hadza se nomment eux-mêmes Hadzabe, et leur langue Hadzane ; Hadza est lié à un mot qui veut dire « être humain ». Wahadzabe est la forme swahilie de ce nom. Une explication relie Tindiga au swahili watindiga, « les gens de l'herbe des marais », d'après la grande source de Mangola ; une autre source dit que les Hadza étaient appelés Watindiga par d'autres groupes parce que l'eau qui serpente dans cette zone crée un marais, tindiga voulant dire « marais » en swahili. Kindiga serait une forme du même mot dans une langue bantoue locale, probablement l'isanzu : c'est une hypothèse, sans référence à l'appui. Kangeju est un ancien nom allemand, d'origine incertaine. Wahi, ancien nom de ceux de l'ouest, est l'écriture allemande d'un nom sukuma qui désigne soit les Hadza de l'ouest du lac, soit peut-être un clan sukuma descendant des Hadza (également sans référence). On ne sait pas qui a donné Tindiga et Kangeju ; la source parle seulement d'« autres groupes ».",
+      "originOfExonyms": "Les Hadza se nomment eux-mêmes Hadzabe, et leur langue Hadzane ; Hadza serait lié à un mot qui veut dire « être humain ». Wahadzabe est la forme swahilie de ce nom. Une explication relie Tindiga au swahili watindiga, « les gens de l'herbe des marais », d'après la grande source de Mangola ; une autre source dit que les Hadza étaient appelés Watindiga par d'autres groupes parce que l'eau qui serpente dans cette zone crée un marais, tindiga voulant dire « marais » en swahili. Kindiga serait une forme du même mot dans une langue bantoue locale, probablement l'isanzu : c'est une hypothèse, sans référence à l'appui. Kangeju est un ancien nom allemand, d'origine incertaine. Wahi, ancien nom de ceux de l'ouest, est l'écriture allemande d'un nom sukuma qui désigne soit les Hadza de l'ouest du lac, soit peut-être un clan sukuma descendant des Hadza (également sans référence). On ne sait pas qui a donné Tindiga et Kangeju ; la source parle seulement d'« autres groupes ».",
       "whyProblematic": "Nous n'avons trouvé aucune source qui juge Kindiga ou Tindiga péjoratifs : ce point n'est pas établi.",
       "contemporaryUsage": "Hadzabe est le nom que les Hadza se donnent ; Hadza en est la partie commune (la terminaison -be désigne les gens, -ne la langue). Hadza est le mot que l'auteur d'un ouvrage de 2010 emploie parce qu'il est le plus utilisé dans les publications depuis les premières études de James Woodburn, en 1958. En swahili, on dit Wahadzabe.",
       "linguisticFamily": "FLG_KHOISAN",
@@ -76,7 +76,8 @@
       {
         "title": "Hadza – Glottolog 5.3, ISO 639-3 hts",
         "url": "https://glottolog.org/resource/languoid/id/hadz1240",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "The Ultimate Guide to the Hadza People of Tanzania – Visit Natives, 2024",
@@ -103,12 +104,14 @@
         "title": "Wikipédia (EN) – Hadza language, section Name",
         "url": "https://en.wikipedia.org/wiki/Hadza_language",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Lu le 7 octobre 2026. « Tindiga is from Swahili watindiga \"people of the marsh grass\" (from the large spring in Mangola) and kitindiga (their language). Kindiga is apparently a form of the same from one of the local Bantu languages, presumably Isanzu. » (passage marqué « citation needed », donc sans référence) ; « Kangeju (pronounced Kangeyu) is an obsolete German name of unclear origin. Wahi (pronounced Vahi) is the German spelling of the Sukuma name for either the Hadza west of the lake, or perhaps a Sukuma clan that traces its ancestry to the Hadza. » (également sans référence)."
       },
       {
         "title": "Wikipédia (EN) – Hadza people, section Name",
         "url": "https://en.wikipedia.org/wiki/Hadza_people",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Lu le 7 octobre 2026. « …other ethnonyms applied to the Hadza include Tindiga (from Swahili; human plural Watindiga), Kindiga, Kangeju (with a German j) and Wahi (with a German w). In current English usage, Hadza is the most commonly used term. » La phrase renvoie à Marlowe (2010). Même section : « The term \"Hadza\" is the feminine plural form of haza 'human being'. The Hadza call themselves the hazabee 'people' and their language hazane 'as the people'. » (la page de langue écrit : « Hadza itself means \"human being.\" »). Les Datooga et les Isanzu n'apparaissent pas dans cette section."
       }
     ]

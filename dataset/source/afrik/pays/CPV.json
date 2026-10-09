@@ -4,7 +4,7 @@
   "nameEn": "Cabo Verde",
   "nameOfficial": "République de Cabo Verde (República de Cabo Verde)",
   "summary": "Cabo Verde doit son nom au cap Vert sénégalais, près duquel les navigateurs portugais abordèrent l'archipel. Les îles étaient inhabitées : la société cap-verdienne est née de la colonisation et de la traite, et elle est créole de part en part. La morna, la coladeira, le funaná et le batuque en portent la mémoire.",
-  "etymology": "Le nom \"Cabo Verde\" (Cap-Vert en français) provient du portugais \"Cabo Verde\" (Cap Vert), en référence au Cap Vert continental situé au Sénégal, près duquel les îles ont été découvertes. Les navigateurs portugais ont nommé les îles \"Ilhas de Cabo Verde\" (Îles du Cap Vert) en référence à ce cap. Le nom officiel international a été normalisé en \"Cabo Verde\" en 2013.",
+  "etymology": "Le nom \"Cabo Verde\" (Cap-Vert en français) viendrait du portugais \"Cabo Verde\" (Cap Vert), en référence au Cap Vert continental situé au Sénégal, près duquel les îles ont été découvertes, selon la fiche de toponymie britannique Toponymic Factfile. Les navigateurs portugais ont nommé les îles \"Ilhas de Cabo Verde\" (Îles du Cap Vert) en référence à ce cap. Le nom officiel international a été normalisé en \"Cabo Verde\" en 2013.",
   "nameOriginActor": "Le nom \"Cabo Verde\" a été donné par les navigateurs portugais et génois qui ont découvert les îles en 1456-1462. Le nom fait référence au Cap Vert continental (Sénégal), près duquel les îles sont situées. Le nom officiel international a été normalisé en \"Cabo Verde\" en 2013 par les autorités cap-verdiennes.",
   "content": {
     "historicalNames": {
@@ -102,17 +102,20 @@
       {
         "title": "SIL Ethnologue – Languages of Cape Verde",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Cape Verde",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Cabo Verde",
         "url": "https://www.unfpa.org/data/world-population/CV",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Speeches and Writings\"",
@@ -132,18 +135,21 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Toponymic Factfile: Cape Verde — Permanent Committee on Geographical Names (Royaume-Uni)",
         "url": "https://assets.publishing.service.gov.uk/media/654cfedf014cc90010677386/Cape_Verde_Toponymic_Factfile.pdf",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Fiche officielle britannique de toponymie, édition 2023 : le nom Cabo Verde vient du cap Vert (Cap-Vert), point le plus occidental de l'Afrique, au Sénégal ; le pays préfère la forme portugaise Cabo Verde, employée par l'ONU en anglais."
       },
       {
         "title": "The Boston Globe — Cape Verde asks world to call it Cabo Verde (10 février 2014)",
         "url": "https://www.bostonglobe.com/metro/2014/02/10/cape-verde-asks-world-call-cabo-verde/LoHX9VhfzljfmnrY9I8xeM/story.html",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Article de presse relatant la demande de 2013 : le nom Cabo Verde n'est pas traduit dans les langues de l'ONU, la forme longue française étant République de Cabo Verde."
       }
     ],

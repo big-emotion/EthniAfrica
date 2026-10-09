@@ -82,12 +82,14 @@
       {
         "title": "SIL Ethnologue – Taal language (tql)",
         "url": "https://www.ethnologue.com/language/tql/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Burkina Faso – Gur languages of Burkina Faso",
         "url": "https://sil-burkina.org/en/content/gur-languages",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes – Gurunsi people",

@@ -8,7 +8,7 @@
       "mainName": "Akuapem",
       "selfAppellation": "Akuapem",
       "exonyms": ["Akwapim", "Akwapem", "Akuapim"],
-      "originOfExonyms": "Le nom Akuapem derive du twi Nkuu apem signifiant mille groupes, nom donne par le guerrier akan Nana Ansa Sasraku I d'Akwamu apres que sa force d'invasion eut ete repoussee par la confederation de peuples de la crete.",
+      "originOfExonyms": "Le nom Akuapem viendrait du twi Nkuu apem, qui veut dire mille groupes : il aurait été donné par le guerrier akan Nana Ansa Sasraku I d'Akwamu apres que sa force d'invasion eut ete repoussee par la confederation de peuples de la crete.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Akuapem (ou Akwapim) est utilise officiellement dans les denominations administratives du Ghana, notamment dans les municipalites d'Akwapim Nord et Akwapim Sud de la region orientale. Il designe aujourd'hui l'ensemble de la population de la crete, qu'elle soit d'origine guan ou akan.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -99,7 +99,8 @@
       {
         "title": "Glottolog — Twi (twii1234)",
         "url": "https://glottolog.org/resource/languoid/id/twii1234",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",

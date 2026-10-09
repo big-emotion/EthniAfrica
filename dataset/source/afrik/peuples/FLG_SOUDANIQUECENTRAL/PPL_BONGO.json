@@ -94,12 +94,14 @@
       {
         "title": "Metropolitan Museum of Art — Reclaiming the Histories of The Met's Bongo Ngya (2018)",
         "url": "https://www.metmuseum.org/perspectives/bongo-commemorative-post-ngya",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Bongo language (bot)",
         "url": "https://www.ethnologue.com/language/bot/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Bongo in South Sudan",
@@ -109,7 +111,8 @@
       {
         "title": "Pacific Lutheran University — Bongo Grave Post",
         "url": "https://www.plu.edu/africanartcollection/figures/bongo-grave-post/learn-more-bongo-grave-post/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Santandrea, Stefano. Concise grammar outline of the Bongo language. 1963",

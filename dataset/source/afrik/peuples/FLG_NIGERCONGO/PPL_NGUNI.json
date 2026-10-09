@@ -13,7 +13,7 @@
         "Bantu de zone S (classification linguistique)",
         "Ngoni (variante ancienne utilisee en Afrique centrale et orientale)"
       ],
-      "originOfExonyms": "Le terme Nguni derive du nom d'un ancetre eponyme mythique, Mnguni. Il fut adopte par les linguistes et anthropologues europeens au 19e siecle pour regrouper les peuples bantous partageant des langues a consonnes claquantes (clicks), heritees du contact avec les peuples khoisan.",
+      "originOfExonyms": "Le terme Nguni deriverait du nom d'un ancetre eponyme mythique, Mnguni. Il fut adopte par les linguistes et anthropologues europeens au 19e siecle pour regrouper les peuples bantous partageant des langues a consonnes claquantes (clicks), heritees du contact avec les peuples khoisan.",
       "whyProblematic": "Nguni est une categorie macro-ethnique englobant des peuples distincts (Zulu, Xhosa, Swazi, Ndebele, Ngoni, Thembu, Mpondo, Mfengu, etc.) qui possedent chacun leur identite propre. Certains chercheurs debattent des limites exactes du groupe.",
       "contemporaryUsage": "Nguni est principalement employe en linguistique et en anthropologie. Les membres se definissent en priorite par leur appartenance a leur propre sous-groupe (amaZulu, amaXhosa, etc.). Le terme Ngoni designe les branches diasporiques en Afrique de l'Est (Tanzanie, Zambie, Malawi).",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -137,27 +137,32 @@
       {
         "title": "South African History Online — Zulu",
         "url": "https://sahistory.org.za/article/zulu",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Ethnologue SIL — Zulu (zul)",
         "url": "https://www.ethnologue.com/language/zul/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue SIL — Xhosa (xho)",
         "url": "https://www.ethnologue.com/language/xho/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO — Isicathamiya (Zulu choral music)",
         "url": "https://ich.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Statistics South Africa — Census 2022",
         "url": "https://www.statssa.gov.za/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

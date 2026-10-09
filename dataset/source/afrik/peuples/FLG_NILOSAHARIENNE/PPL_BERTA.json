@@ -24,7 +24,7 @@
         "Wetawit",
         "Watawit"
       ],
-      "originOfExonyms": "Benishangul est la forme arabisee du nom original Bela Shangul (Rocher de Shangul), designant une pierre sacree dans le woreda de Menge en Ethiopie. Funj est le nom utilise au Soudan, faisant reference au sultanat de Sennar dont ils sont issus. Watawit signifie chauve-souris en arabe local, evoquant le melange entre Berta et commercants arabes par mariages. Changalla et Shanqella sont des termes collectifs parfois pejoratifs utilises pour designer des peuples nilotiques le long de la frontiere ethio-soudanaise.",
+      "originOfExonyms": "Benishangul est la forme arabisee du nom original Bela Shangul (Rocher de Shangul), designant une pierre sacree dans le woreda de Menge en Ethiopie. Funj est le nom utilise au Soudan, faisant reference au sultanat de Sennar dont ils sont issus. Watawit voudrait dire chauve-souris en arabe local et évoquerait le mélange, par mariages, entre Berta et commerçants arabes. Changalla et Shanqella sont des termes collectifs parfois pejoratifs utilises pour designer des peuples nilotiques le long de la frontiere ethio-soudanaise.",
       "whyProblematic": "Les termes Shanqella et Changalla sont consideres pejoratifs car utilises par les peuples des hautes terres pour designer les peuples des basses terres qu'ils asservissaient. Wetawit/Watawit peut etre ressenti comme stigmatisant pour les individus issus de mariages mixtes.",
       "contemporaryUsage": "Le nom Berta est l'appellation officielle utilisee en Ethiopie. La region Benishangul-Gumuz tire son nom de Benishangul (Berta) et Gumuz. Au Soudan, le terme Funj reste d'usage courant.",
       "linguisticFamily": "FLG_NILOSAHARIENNE",
@@ -104,7 +104,8 @@
       {
         "title": "Berta Language (WTI) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/wti/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Berta, Benishangul in Ethiopia – Joshua Project, 2024",

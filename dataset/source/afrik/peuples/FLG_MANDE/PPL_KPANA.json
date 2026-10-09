@@ -82,7 +82,8 @@
       {
         "title": "SIL Ethnologue — Sierra Leone languages",
         "url": "https://www.ethnologue.com/country/SL/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Mende, Boumpe in Sierra Leone",
@@ -92,7 +93,8 @@
       {
         "title": "Statistics Sierra Leone — 2015 Population and Housing Census",
         "url": "https://www.statistics.sl/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Britannica — Mande",
@@ -102,7 +104,8 @@
       {
         "title": "CIA World Factbook — Sierra Leone",
         "url": "https://www.cia.gov/the-world-factbook/countries/sierra-leone/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

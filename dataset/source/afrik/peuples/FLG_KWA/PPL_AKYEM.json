@@ -90,7 +90,8 @@
       {
         "title": "Glottolog — Twi (twii1234)",
         "url": "https://glottolog.org/resource/languoid/id/twii1234",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",

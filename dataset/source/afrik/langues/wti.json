@@ -38,6 +38,7 @@
         "title": "Glottolog 5.3 - Berta",
         "url": "https://glottolog.org/resource/languoid/id/bert1248",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à bert1248, hors languoids portant leur propre code ISO 639-3."
       }
     ]

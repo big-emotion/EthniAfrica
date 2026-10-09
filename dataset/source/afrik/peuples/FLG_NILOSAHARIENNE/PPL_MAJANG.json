@@ -74,7 +74,8 @@
       {
         "title": "Majang Language (MPE) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/mpe/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Majang in Ethiopia – Joshua Project, 2024",
@@ -84,12 +85,14 @@
       {
         "title": "Stauder, Jack – The Majangir: Ecology and Society of a Southwest Ethiopian People, Cambridge University Press, 1971",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Dimmendaal, Gerrit Jan et al. – The Majang Language (Scholarly Publications Leiden University, 2025, )",
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2979180/view",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

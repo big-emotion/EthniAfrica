@@ -111,7 +111,8 @@
       {
         "title": "SIL Ethnologue — Makhuwa (vmw)",
         "url": "https://www.ethnologue.com/country/MZ/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Makua",
@@ -131,12 +132,14 @@
       {
         "title": "CIA World Factbook — Mozambique",
         "url": "https://www.cia.gov/the-world-factbook/countries/mozambique/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "INE Mozambique — Censo 2017",
         "url": "https://www.ine.gov.mz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

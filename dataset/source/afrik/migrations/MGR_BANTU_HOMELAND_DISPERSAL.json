@@ -66,6 +66,7 @@
         "url": "https://doi.org/10.1073/pnas.1503793112",
         "year": 2015,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Grollemund, Branford, Bostoen, Meade, Venditti & Pagel, Proceedings of the National Academy of Sciences 112(43). Article et référence bibliographique confirmés dans la page anglaise de Wikipédia « Bantu expansion » (section References/Further reading, citation complète avec DOI)."
       },
       {
@@ -73,6 +74,7 @@
         "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/new-linguistic-evidence-and-the-bantu-expansion/87B3D2F9F0215174EA5B645EBEA236AD",
         "year": 1995,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Vansina, The Journal of African History, vol. 36, pp. 173-195. Cité comme source académique primaire dans la page anglaise de Wikipédia « Bantu expansion » et repris dans la page française « Bantous » qui présente explicitement le modèle des « micro-migrations » de Vansina en alternative au récit classique."
       },
       {
@@ -80,6 +82,7 @@
         "url": "https://glottolog.org/resource/languoid/id/narr1281",
         "year": 2025,
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": ""
       }
     ]

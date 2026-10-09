@@ -105,7 +105,8 @@
       {
         "title": "SIL Ethnologue — Shona language (sna)",
         "url": "https://www.ethnologue.com/language/sna/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Karanga people",
@@ -115,7 +116,8 @@
       {
         "title": "HTS Theological Studies — Karanga people in Masvingo",
         "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S0259-94222016000400109",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Chigwedere, Aeneas. The Karanga Empire. Books for Africa, Harare, 1986",

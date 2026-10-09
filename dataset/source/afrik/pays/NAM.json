@@ -4,7 +4,7 @@
   "nameEn": "Namibia",
   "nameOfficial": "République de Namibie (Republic of Namibia, Republiek van Namibië)",
   "summary": "La Namibie porte le nom du désert du Namib, « le vaste lieu » en langue nama. Peuplée de longue date par les Khoïsan puis par les migrations bantoues, elle fut colonie allemande du Sud-Ouest africain avant l'administration sud-africaine. Ovambo, Kavango, Herero, Damara, Nama et Himba y composent la population.",
-  "etymology": "Le nom \"Namibie\" vient du désert du Namib, qui borde la côte atlantique du pays. \"Namib\" est rapporté comme signifiant \"vaste lieu\" ou \"endroit vide\" en langue nama, selon des traductions qui varient. Le 12 juin 1968, l'Assemblée générale des Nations unies décide que le Territoire, jusque-là appelé Afrique du Sud-Ouest, sera désormais appelé Namibie ; le nom devient celui de l'État à l'indépendance en 1990. Auparavant, le territoire était appelé \"Afrique du Sud-Ouest\" (South West Africa, Suidwes-Afrika) pendant la colonisation sud-africaine.",
+  "etymology": "Le nom \"Namibie\" viendrait du désert du Namib, qui borde la côte atlantique du pays. \"Namib\" est rapporté comme signifiant \"vaste lieu\" ou \"endroit vide\" en langue nama, selon des traductions qui varient. Le 12 juin 1968, l'Assemblée générale des Nations unies décide que le Territoire, jusque-là appelé Afrique du Sud-Ouest, sera désormais appelé Namibie ; le nom devient celui de l'État à l'indépendance en 1990. Auparavant, le territoire était appelé \"Afrique du Sud-Ouest\" (South West Africa, Suidwes-Afrika) pendant la colonisation sud-africaine.",
   "nameOriginActor": "Le nom \"Namibie\" vient du désert du Namib, nommé par les Nama. Les Nations unies l'ont adopté pour le Territoire le 12 juin 1968 et il est devenu celui de l'État à l'indépendance en 1990, à la place de \"Afrique du Sud-Ouest\" (nom colonial sud-africain). Le nom \"Namibie\" a été proposé par les nationalistes namibiens.",
   "content": {
     "historicalNames": {
@@ -257,22 +257,26 @@
       {
         "title": "ONU – World Population Prospects 2024 (projections pour 2025)",
         "url": "https://population.un.org/wpp/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Namibia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Namibia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Namibia Statistics Agency – Recensement de la population et de l'habitat 2023, rapport principal",
         "url": "https://nsa.org.na/wp-content/uploads/2024/10/2023-Population-and-Housing-Census-Main-Report-28-Oct-2024.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples de Namibie",
@@ -287,34 +291,40 @@
       {
         "title": "CIA World Factbook – Namibia (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Répertoire de la pratique des Nations unies, Supplément n° 4, vol. II, Article 77 (note 1 et sa note de bas de page)",
         "url": "https://legal.un.org/repertory/art77/english/rep_supp4_vol2_art77.pdf",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Publication des Nations unies : le nom du Territoire est passé de South West Africa à Namibia le 12 juin 1968, par la résolution 2372 (XXII) de l'Assemblée générale."
       },
       {
         "title": "UNFPA – World Population Dashboard — Namibie",
         "url": "https://www.unfpa.org/data/NA",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Présidence de la Namibie – Netumbo Nandi-Ndaitwah",
         "url": "https://op.gov.na/president",
 
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Agence namibienne de statistique, Namibia 2023 Population and Housing Census, Main Report, octobre 2024, tableau 3.6 et annexe IV « Population distribution by ethnic groups and sex »",
         "url": "https://nsa.org.na/wp-content/uploads/2024/10/2023-Population-and-Housing-Census-Main-Report-28-Oct-2024.pdf",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "Le recensement a demandé à chaque personne son groupe. Parts calculées sur 3 022 401 personnes : Ovambo 50,4 % (somme des neuf lignes Aakolonkadhi, Aakwaluudhi, Aakwambi, Aakwanyama, Aambalantu, Aambadja, Aandonga, Aangandjera et Aawambo non classés ailleurs), Kavango 11,6 % (somme des lignes Hambukushu, Vambunza, Vagciriku, Vasambyu, Vakwangali et Vakavango non classés ailleurs). Herero 5,9 % (ligne Ovaherero), Damara 5,6 % (ligne « Damara, non classés ailleurs ») et Nama 3,1 % (ligne « Nama, non classés ailleurs ») : les sous-groupes Damara et Nama listés à part ne sont pas ajoutés, ces deux parts sont donc des minimums. Les Himba, les San et les Blancs restent dans « Autres ». Rapport lu le 6 octobre 2026."
       }
     ],

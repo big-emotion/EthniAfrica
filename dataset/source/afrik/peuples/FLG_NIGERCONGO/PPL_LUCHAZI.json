@@ -19,7 +19,7 @@
         "Luxage",
         "Ponda"
       ],
-      "originOfExonyms": "Luchazi est le nom du peuple tire du nom de la riviere Luchazi, affluent du Luena, dans l'est de l'Angola; les premiers groupes etaient etablis le long de cette riviere. Chiluchazi designe la langue (prefixe chi- = langue en bantou). VaLuchazi est la forme plurielle de l'auto-denomination (va- = prefix de classe des personnes). KaLuchazi designe un membre du peuple. Ngangela est un terme couvre-chef cree par les traders Ovimbundu et missionnaires au 18e siecle pour designer l'ensemble des peuples de l'Angola central-oriental. Lucazi est la forme portugaise du nom.",
+      "originOfExonyms": "Le nom du peuple, Luchazi, serait tire du nom de la riviere Luchazi, affluent du Luena, dans l'est de l'Angola; les premiers groupes etaient etablis le long de cette riviere. Chiluchazi designe la langue (prefixe chi- = langue en bantou). VaLuchazi est la forme plurielle de l'auto-denomination (va- = prefix de classe des personnes). KaLuchazi designe un membre du peuple. Ngangela est un terme couvre-chef cree par les traders Ovimbundu et missionnaires au 18e siecle pour designer l'ensemble des peuples de l'Angola central-oriental. Lucazi est la forme portugaise du nom.",
       "whyProblematic": null,
       "contemporaryUsage": "Luchazi est la denomination standard en anglais et en portugais. Chiluchazi designe la langue. La denomination Ngangela est parfois utilisee pour l'ensemble du groupe linguistique, ce qui peut entretenir des confusions avec d'autres peuples Ngangela de la region.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -93,7 +93,8 @@
       {
         "title": "Omniglot – Luchazi language and alphabet",
         "url": "https://www.omniglot.com/writing/luchazi.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes – Luchazi people",
@@ -123,7 +124,8 @@
       {
         "title": "Glottolog — Luchazi (luch1239)",
         "url": "https://glottolog.org/resource/languoid/id/luch1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

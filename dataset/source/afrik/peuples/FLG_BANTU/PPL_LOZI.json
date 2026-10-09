@@ -16,7 +16,7 @@
         "Balozi",
         "Makololo (nom impropre issu de la periode de conquete sotho)"
       ],
-      "originOfExonyms": "Le terme Barotse est d'origine coloniale britannique, derive du nom Barotseland. Makololo vient du peuple sotho qui conquit la region vers 1840 et y imposa temporairement sa langue.",
+      "originOfExonyms": "Le terme Barotse serait d'origine coloniale britannique et dériverait du nom Barotseland. Makololo viendrait du peuple sotho qui conquit la region vers 1840 et y imposa temporairement sa langue.",
       "whyProblematic": "Le terme Makololo est incorrect car il designe le peuple conquis et non les Lozi eux-memes. Barotse peut etre percu comme un terme impose par les puissances coloniales europeennes.",
       "contemporaryUsage": "Lozi et Malozi sont les termes preferes aujourd'hui. Barotseland demeure le nom historique de la region. Barotseland Freedom Movement revendique encore cette denomination.",
       "linguisticFamily": "FLG_BANTU",
@@ -112,7 +112,8 @@
       {
         "title": "SIL Ethnologue — Lozi (loz)",
         "url": "https://www.ethnologue.com/language/loz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Lozi in Zambia",
@@ -127,7 +128,8 @@
       {
         "title": "ISO 639-3 Codes for Africa — Wiktionary",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

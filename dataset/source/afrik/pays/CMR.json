@@ -4,7 +4,7 @@
   "nameEn": "Cameroon",
   "nameOfficial": "République du Cameroun (Republic of Cameroon)",
   "summary": "Le Cameroun doit son nom aux crevettes du fleuve Wouri, que les Portugais nommèrent « Rio dos Camarões » au XVe siècle. Colonisé successivement par l'Allemagne, la France et la Grande-Bretagne, il en garde un bilinguisme officiel. Plus de 280 peuples s'y côtoient, du royaume Bamoun aux chefferies bamiléké, des Sawa côtiers aux peuples des forêts du Sud.",
-  "etymology": "Le nom \"Cameroun\" dérive du portugais \"Rio dos Camarões\" (Rivière des crevettes), donné par les navigateurs portugais au XVe siècle en référence au fleuve Wouri, riche en crevettes. Le terme \"Camarões\" a été adapté en \"Cameroun\" par les Français et \"Cameroons\" par les Britanniques. Le nom anglais est déjà écrit dans le traité de protection du 12 juillet 1884, où les rois douala Bell et Akwa parlent du pays appelé \"Cameroons\", avant que l'administration allemande n'en fasse \"Kamerun\".",
+  "etymology": "Le nom \"Cameroun\" viendrait du portugais \"Rio dos Camarões\" (Rivière des crevettes), selon l'Online Etymology Dictionary. Les navigateurs portugais auraient donné ce nom au fleuve Wouri au XVe siècle, parce qu'il était riche en crevettes. Le terme \"Camarões\" a été adapté en \"Cameroun\" par les Français et \"Cameroons\" par les Britanniques. Le nom anglais est déjà écrit dans le traité de protection du 12 juillet 1884, où les rois douala Bell et Akwa parlent du pays appelé \"Cameroons\", avant que l'administration allemande n'en fasse \"Kamerun\".",
   "nameOriginActor": "Le nom \"Cameroun\" provient des navigateurs portugais qui ont exploré la côte camerounaise au XVe siècle. Le terme \"Rio dos Camarões\" (Rivière des crevettes) a été donné au fleuve Wouri et a ensuite été généralisé pour désigner l'ensemble du territoire. Les colonisateurs allemands, français et britanniques ont adapté ce nom. Ni l'auteur précis du baptême ni la date exacte ne sont établis ici par une source d'époque : la tradition parle du XVe siècle.",
   "nameHistory": {
     "summary": "Le nom Cameroun désigne un pays d'Afrique centrale, la République du Cameroun. Il vient du nom qu'un fleuve portait chez les navigateurs portugais. Le pays a porté d'autres noms : Kamerun, République fédérale du Cameroun, puis République unie du Cameroun. Une seule des sources lues dit pourquoi les navigateurs portugais ont donné ce nom au fleuve ; nous la présentons plus bas.",
@@ -584,17 +584,20 @@
       {
         "title": "SIL Ethnologue – Languages of Cameroon",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Cameroon",
         "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Cameroun",
         "url": "https://www.unfpa.org/data/world-population/CM",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Politics and the Occult in Postcolonial Africa\"",
@@ -619,12 +622,14 @@
       {
         "title": "CIA World Factbook – Cameroon (ethnic groups, 2018 est.)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Treaty of Protection with Chiefs of Cameroon Coast (12 juillet 1884)",
@@ -636,6 +641,7 @@
         "title": "P. Tchawa, « Le Cameroun : une « Afrique en miniature » ? », Les Cahiers d'Outre-Mer, n° 259, 2012",
         "url": "https://journals.openedition.org/com/6640",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article scientifique en accès ouvert sur OpenEdition ; lu pour la formule « Afrique en miniature » et la représentation des familles linguistiques."
       }
     ],

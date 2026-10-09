@@ -17,7 +17,7 @@
         "Pygmees des Grands Lacs"
       ],
       "spellingAliases": ["Pigmée", "Pigmées"],
-      "originOfExonyms": "Batwa est la forme la plus courante avec le prefixe bantu de pluriel Ba-. Abatwa est la forme en kinyarwanda/kirundi (prefixe Aba-). Ge-Sera est un terme local moins repandu. Le terme 'Pygmee' (Pygmy en anglais) provient du grec 'pygmaios' (haut d'une coudee) et a ete applique par les colonisateurs europeens. Ce terme designe a l'origine les petites estatues humaines de l'antiquite grecque, applique aux populations de petite stature d'Afrique centrale.",
+      "originOfExonyms": "Batwa est la forme la plus courante avec le prefixe bantu de pluriel Ba-. Abatwa est la forme en kinyarwanda/kirundi (prefixe Aba-). Ge-Sera est un terme local moins repandu. Le terme 'Pygmee' (Pygmy en anglais) proviendrait du grec 'pygmaios' (haut d'une coudée) ; les colonisateurs européens l'ont appliqué à ces peuples. Ce terme designe a l'origine les petites estatues humaines de l'antiquite grecque, applique aux populations de petite stature d'Afrique centrale.",
       "whyProblematic": "Le terme 'Pygmee' est considere comme pejoratif et deshumanisant par de nombreuses organisations de defenses des droits des peuples autochtones, dont l'IWGIA (International Work Group for Indigenous Affairs) et le Forum Permanent de l'ONU sur les Questions Autochtones. Il reduit les individus a une caracteristique physique (stature) et nie leur identite culturelle et linguistique. L'auto-denomination Batwa ou Twa est preferred par les communautes et les organisations de defense des droits. Au Rwanda, suite au genocide de 1994, toute denomination ethnique est officiellement proscrite, ce qui cree une tension entre protection de l'identite Batwa et interdiction legale des categories ethniques.",
       "contemporaryUsage": "Twa et Batwa sont les termes acceptes dans les contextes academiques, onusiens et dans les communications des organisations de defense des droits des peuples autochtones. L'IWGIA et le Forest Peoples Programme utilisent systematiquement Batwa. Au Rwanda, le gouvernement utilise le terme 'peuples historiquement marginalises' pour eviter la denomination ethnique. Au Burundi, les Twa sont reconnus comme l'une des trois composantes ethniques (avec les Hutu et les Tutsi).",
       "linguisticFamily": "FLG_BANTU",
@@ -132,7 +132,8 @@
       {
         "title": "Voice of America, The Twa: The Forgotten People of the Great Lakes, 2006",
         "url": "https://www.voanews.com/a/a-13-2006-05-25-voa13/325093.html",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "101 Last Tribes, Twa Great Lakes",
@@ -148,6 +149,7 @@
         "title": "Dictionnaire de l'Académie française, 1re édition (1694), entrée « pigmée » renvoyant à « pygmée »",
         "url": "https://www.dictionnaire-academie.fr/article/A1_0071",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Atteste la graphie ancienne « pigmée »."
       }
     ]

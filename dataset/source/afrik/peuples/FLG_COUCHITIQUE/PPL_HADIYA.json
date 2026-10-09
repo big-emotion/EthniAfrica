@@ -94,12 +94,14 @@
       {
         "title": "SIL Ethnologue — Hadiyya (hdy)",
         "url": "https://www.ethnologue.com/language/hdy/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Braukamper, Ulrich. A History of the Hadiyya in Southern Ethiopia. Wiesbaden : Franz Steiner Verlag, 1980",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "History of Hadiya state and political struggles for self-determination",
@@ -109,12 +111,14 @@
       {
         "title": "Academia.edu — Wedding Ceremonies in Hadiyya",
         "url": "https://www.academia.edu/3666145/Wedding_Ceremonies_in_Hadiyya",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Recensement national ethiopien 2007. Ethiopian Statistics Services",
         "url": "https://ess.gov.et/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

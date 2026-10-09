@@ -98,7 +98,8 @@
       {
         "title": "SIL Ethnologue — Kenga language (kyq)",
         "url": "https://www.ethnologue.com/language/kyq",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Peoplegroups.org — Kenga of Chad",
@@ -108,7 +109,8 @@
       {
         "title": "CIA World Factbook — Chad",
         "url": "https://www.cia.gov/the-world-factbook/countries/chad/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Joshua Project — Chad people groups (vue generale)",

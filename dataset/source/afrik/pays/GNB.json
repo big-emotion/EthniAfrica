@@ -4,7 +4,7 @@
   "nameEn": "Guinea-Bissau",
   "nameOfficial": "République de Guinée-Bissau (República da Guiné-Bissau)",
   "summary": "La Guinée-Bissau associe le mot portugais « Guiné », employé pour la côte ouest-africaine, au nom de sa capitale. Elle fut le royaume mandinka de Kaabu et le territoire des peuples côtiers et bijagó, avant quatre siècles de présence portugaise. Balante, Fula, Mandinka, Papel et Manjak y parlent, outre le portugais, un créole largement répandu.",
-  "etymology": "Le nom \"Guinée-Bissau\" combine \"Guinée\" (du portugais \"Guiné\", terme utilisé pour désigner la côte ouest-africaine) et \"Bissau\" (nom de la capitale, dérivé du nom d'un chef local ou d'un terme local). Le nom \"Bissau\" a été ajouté en 1973 lors de l'indépendance pour différencier le pays de la Guinée-Conakry (Guinée).",
+  "etymology": "Le nom \"Guinée-Bissau\" combine \"Guinée\" (du portugais \"Guiné\", terme utilisé pour désigner la côte ouest-africaine) et \"Bissau\" (nom de la capitale, qui viendrait du nom d'un chef local ou d'un terme local). Le nom \"Bissau\" a été ajouté en 1973 lors de l'indépendance pour différencier le pays de la Guinée-Conakry (Guinée).",
   "nameOriginActor": "Le nom \"Guinée\" a été donné par les navigateurs portugais au XVe siècle. Le nom \"Guiné Portuguesa\" (Guinée portugaise) a été utilisé pendant la colonisation. Le nom \"Guinée-Bissau\" a été officialisé lors de l'indépendance en 1973 par le PAIGC (Parti africain pour l'indépendance de la Guinée et du Cap-Vert) pour différencier le pays de la Guinée-Conakry.",
   "content": {
     "historicalNames": {
@@ -226,17 +226,20 @@
       {
         "title": "SIL Ethnologue – Languages of Guinea-Bissau",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Guinea-Bissau",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Guinée-Bissau",
         "url": "https://www.unfpa.org/data/world-population/GW",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Speeches and Writings\"",
@@ -261,12 +264,14 @@
       {
         "title": "CIA World Factbook – Guinea-Bissau (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

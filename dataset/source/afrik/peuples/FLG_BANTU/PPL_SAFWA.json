@@ -78,7 +78,8 @@
       {
         "title": "Safwa Language (SBK) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/sbk/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Roth, Tim – Master Wungu Thesis – Canada Institute of Linguistics, 2012",

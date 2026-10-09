@@ -108,7 +108,8 @@
       {
         "title": "SIL Ethnologue – Mongo-Nkundu (lol)",
         "url": "https://www.ethnologue.com/language/lol/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Qiraat Africa – The Mongo People in Congo (2024)",

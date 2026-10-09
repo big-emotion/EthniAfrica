@@ -96,12 +96,14 @@
       {
         "title": "Ethnologue — Dawro language (dwr)",
         "url": "https://www.ethnologue.com/language/dwr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Histoire de l'interaction entre le Dawuro et les communautés environnantes (1800-1991). Universite de Jimma",
         "url": "https://repository.ju.edu.et/bitstream/handle/123456789/825/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Swordshare — Dawro language info",

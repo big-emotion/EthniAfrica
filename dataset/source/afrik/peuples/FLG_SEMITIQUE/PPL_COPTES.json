@@ -20,7 +20,7 @@
         "Qibṭ (قبط, arabe)"
       ],
       "spellingAliases": ["Qibt", "Aqbat", "Kopte"],
-      "originOfExonyms": "Le mot vient du grec « Aigyptios » (Αἰγύπτιος), « Égyptien », emprunté par l'arabe sous la forme « qibṭ » (قبط) au moment de la conquête de 641, puis repris par les langues européennes. Il ne comportait à l'origine aucune valeur religieuse : il désignait l'habitant de l'Égypte, quelle que fût sa croyance. C'est le même mot qui a donné le nom du pays en français.",
+      "originOfExonyms": "Le mot viendrait du grec « Aigyptios » (Αἰγύπτιος), « Égyptien » : l'arabe l'aurait emprunté sous la forme « qibṭ » (قبط) au moment de la conquête de 641, puis les langues européennes l'auraient repris. Il ne comportait à l'origine aucune valeur religieuse : il désignait l'habitant de l'Égypte, quelle que fût sa croyance. C'est le même mot qui a donné le nom du pays en français.",
       "whyProblematic": "Le sens de copte a changé au fil du temps. Le mot désignait d'abord l'ensemble de la population égyptienne. Après l'arabisation progressive du pays, il en est venu à désigner la minorité restée chrétienne. Aujourd'hui, certains y voient une appartenance religieuse ; d'autres, une origine égyptienne antérieure à l'arrivée des Arabes. Ces deux lectures ont des conséquences politiques en Égypte, où les recensements ne donnent plus la répartition de la population par religion depuis 1986. Les personnes concernées revendiquent elles-mêmes le nom copte.",
       "contemporaryUsage": "Le terme est employé par la communauté elle-même, notamment par l'Église copte orthodoxe d'Alexandrie, et par les organisations de la diaspora. Il est d'usage courant en Égypte et dans la littérature scientifique. L'auto-appellation arabe « Aqbāṭ » est la forme vivante ; la forme copte « remenkhēmi » appartient à la langue liturgique.",
       "peopleGroupId": null,
@@ -68,12 +68,14 @@
           "title": "Glottolog 5.3 — Coptic",
           "url": "https://glottolog.org/resource/languoid/id/copt1239",
           "tier": "official",
+          "source_kind": "linguistic_reference",
           "notes": "Rattache le copte à la branche égyptienne et non au sémitique."
         },
         {
           "title": "Glottolog 5.3 — Egyptian (Ancient)",
           "url": "https://glottolog.org/resource/languoid/id/egyp1246",
           "tier": "official",
+          "source_kind": "linguistic_reference",
           "notes": "Établit la continuité entre l'égyptien ancien et le copte, sur laquelle repose la filiation décrite ci-dessus."
         }
       ]
@@ -107,18 +109,21 @@
         "title": "Glottolog 5.3 — Coptic",
         "url": "https://glottolog.org/resource/languoid/id/copt1239",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Source du glottocode, du rattachement à la branche égyptienne et de la liste des dialectes."
       },
       {
         "title": "SIL Ethnologue — Coptic (cop)",
         "url": "https://www.ethnologue.com/language/cop/",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Source du statut liturgique de la langue et de son code ISO 639-3."
       },
       {
         "title": "CIA World Factbook — Egypt",
         "url": "https://www.cia.gov/the-world-factbook/countries/egypt/",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Source de la part chrétienne de la population égyptienne, donnée pour l'ensemble des confessions chrétiennes et non pour les seuls Coptes."
       }
     ]

@@ -95,7 +95,8 @@
       {
         "title": "Cambridge University Press – The G/wi and G//ana of the central Kalahari",
         "url": "https://www.cambridge.org/core/books/hunters-and-herders-of-southern-africa/gwi-and-gana-of-the-central-kalahari/ACAB14045D1FAE8988698311A31334D9",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Orville Jenkins – Gwikwe Bushmen Profile",
@@ -105,12 +106,14 @@
       {
         "title": "Khoisan language family data – Ling.fju.edu.tw",
         "url": "http://www.ling.fju.edu.tw/typology/Khoisan.htm",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "CEDS ISO 639-3 – G//ana (gnk)",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

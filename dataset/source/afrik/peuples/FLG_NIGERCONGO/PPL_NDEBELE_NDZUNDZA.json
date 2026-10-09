@@ -94,7 +94,8 @@
       {
         "title": "South African History Online — Ndebele",
         "url": "https://sahistory.org.za/article/ndebele",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Joshua Project — Ndebele, Southern in South Africa",
@@ -114,12 +115,14 @@
       {
         "title": "Statistics South Africa — Census 2011 (langue isiNdebele)",
         "url": "http://www.statssa.gov.za/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Ethnologue (SIL) — isiNdebele [nbl]",
         "url": "https://www.ethnologue.com/language/nbl",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

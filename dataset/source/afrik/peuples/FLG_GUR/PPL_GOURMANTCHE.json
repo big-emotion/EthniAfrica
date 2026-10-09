@@ -17,7 +17,7 @@
         "Bigulimanceba",
         "Migulimancema"
       ],
-      "originOfExonyms": "Le terme Gourmantché est la transcription française du nom que les voisins Mossi donnaient à ce peuple. Les locuteurs se désignent eux-mêmes par le terme Gulmanceba (singulier : Gulimance), qui désigne à la fois le peuple et sa langue. Le nom dérive du royaume du Gulma (Gulmu), territoire historique centré sur Fada N'Gourma.",
+      "originOfExonyms": "Le terme Gourmantché est la transcription française du nom que les voisins Mossi donnaient à ce peuple. Les locuteurs se désignent eux-mêmes par le terme Gulmanceba (singulier : Gulimance), qui désigne à la fois le peuple et sa langue. Le nom viendrait du royaume du Gulma (Gulmu), territoire historique centré sur Fada N'Gourma.",
       "whyProblematic": "Gourmantché est parfois confondu avec Gurma, employé en anglais, ou Gourma, employé par l'administration burkinabè. Ces formes viennent des manières française et britannique d'écrire le nom à l'époque coloniale. Elles ne correspondent pas à un nom unique employé durablement par le peuple lui-même.",
       "contemporaryUsage": "En usage officiel au Burkina Faso, au Togo et au Bénin sous la forme Gourmantché ou Gourma. La langue est désignée Gourmanchéma ou Gulmancema dans les publications linguistiques et éducatives. L'appellation Gurma est courante dans la littérature anglophone."
     },
@@ -110,17 +110,20 @@
       {
         "title": "Gurmantche language (gux) – Ethnologue / SIL Global, 2026",
         "url": "https://www.ethnologue.com/language/gux/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Gourmanchéma – Omniglot, 2022",
         "url": "https://www.omniglot.com/writing/gourmanchema.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "L'organisation politique dans le Gulma avant la pénétration coloniale – LeFaso.net, 2024",
         "url": "https://lefaso.net/spip.php?article132239",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Histoire et organisation du royaume Gourmantché – Scribd / auteur non précisé, 2026",

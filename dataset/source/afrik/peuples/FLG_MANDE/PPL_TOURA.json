@@ -93,17 +93,20 @@
       {
         "title": "Glottolog – Dan-Toura (dant1235), 2024",
         "url": "https://glottolog.org/resource/languoid/id/dant1235",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Omniglot – Dan language and alphabet, 2024",
         "url": "https://www.omniglot.com/writing/dan.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Landinfo – Report Cote d'Ivoire: Ethnicity, Ivoirite and Conflict, 2006",
         "url": "https://www.landinfo.no/asset/514/1/514_1.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "RTI Officiel – 2mn pour comprendre les Toura, 2021",

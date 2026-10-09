@@ -77,22 +77,26 @@
       {
         "title": "Axl CEFAN - Congo-Brazzaville, donnees demographiques et linguistiques",
         "url": "https://www.axl.cefan.ulaval.ca/afrique/congo.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Revue SLC - Contribution a l'identification des peuples du Congo Brazzaville",
         "url": "https://www.revue-slc.org/wp-content/uploads/2023/11/12-EKONDI-Fulbert_RISLC-n%C2%B015-Decembre-2021-1.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue - Langues du Congo (COG)",
         "url": "https://www.ethnologue.com/country/CG/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ambassade du Congo aux Etats-Unis - Peoples and Culture",
         "url": "http://www.ambacongo-us.org/en/about-congo/people-culture/people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "government"
       },
       {
         "title": "Britannica - Republic of the Congo Cultural Life",

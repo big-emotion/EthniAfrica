@@ -103,7 +103,8 @@
       {
         "title": "Ethnologue – Kissi, Northern (kqs), SIL International, 2024",
         "url": "https://www.ethnologue.com/language/kqs/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Supplement to a Handbook of the Kissi Language – Kilson M., 1966",
