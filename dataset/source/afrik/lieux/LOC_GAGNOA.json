@@ -53,7 +53,7 @@
       "year": null,
       "url": "https://fr.wikipedia.org/wiki/Gagnoa",
       "tier": "unverified",
-      "source_kind": "community",
+      "source_kind": "encyclopedia",
       "notes": "Consulté le 9 octobre 2026. Pour l'origine du nom, l'article renvoie au Grand dictionnaire encyclopédique de la Côte d'Ivoire de Raymond Borremans (tome 3, 1987, p. 100), que nous n'avons pas consulté."
     },
     {
@@ -103,7 +103,7 @@
                 "year": null,
                 "url": "https://fr.wikipedia.org/wiki/Gagnoa",
                 "tier": "unverified",
-                "source_kind": "community",
+                "source_kind": "encyclopedia",
                 "notes": "Introduction et section Situation, consultées le 9 octobre 2026."
               }
             ]

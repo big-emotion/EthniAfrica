@@ -49,14 +49,14 @@
             "aspect": "meaning",
             "sources": [
               {
-                "title": "General History of Africa, III, ch. 26 : The African diaspora in Asia",
+                "title": "Histoire générale de l'Afrique, III, ch. 26 : La diaspora africaine en Asie",
                 "author": "Y. Talib, d'après une contribution de F. Samir",
-                "year": 1988,
-                "url": "https://archive.org/details/general-history-of-africa-vol-3",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
                 "tier": "official",
                 "source_kind": "intergovernmental",
-                "page": "p. 713",
-                "notes": "UNESCO, volume dirigé par M. El Fasi, lu dans l'exemplaire numérisé d'archive.org. Section « Various designations of blacks in Arabic » : as-sudan, pluriel d'al-aswad, « noir », désigne toutes les personnes de peau noire, puis les Africains noirs au sud du Maghreb, habitants du Bilad al-sudan, « the Land of the Blacks »."
+                "page": "p. 757",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 757, section « Désignation des Noirs en arabe » : « Le terme al-sūdān (pluriel de al-aswad [noir]) est le plus général ; il s'applique à tous ceux qui étaient noirs de peau », puis aux habitants du « Bilād al-sūdān [pays des Noirs] »."
               },
               {
                 "title": "Southern Sudan Nears a Decision on One Matter: Its New Name, The New York Times",
@@ -116,18 +116,19 @@
               "to": 1880,
               "label": "1821-1880"
             },
-            "statement": "Le sud du Soudan est alors le pays de peuples qui subissent les guerres d'esclavage et de conquête menées par des vagues d'envahisseurs. On s'en souvient là-bas comme d'une « période du chaos », selon B. A. Ogot.",
+            "era": "colonial",
+            "statement": "Le sud du Soudan est alors le pays de peuples qui subissent les guerres d'esclavage et de conquête menées par des vagues d'envahisseurs. Dans la mémoire populaire du Soudan méridional, cette période est restée synonyme de chaos, selon B. A. Ogot.",
             "before": true,
             "sources": [
               {
-                "title": "General History of Africa, VI, ch. 14 : The Sudan in the nineteenth century",
+                "title": "Histoire générale de l'Afrique, VI, ch. 14 : Le Soudan au XIXe siècle",
                 "author": "H. A. Ibrahim, avec une contribution de B. A. Ogot sur le Soudan méridional",
-                "year": 1989,
-                "url": "https://archive.org/details/general-history-of-africa-vol-6",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
                 "tier": "official",
                 "source_kind": "intergovernmental",
-                "page": "p. 363",
-                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, lu dans l'exemplaire numérisé d'archive.org. Section « Resistance to the imperial drive in the South, 1821-80 » : le XIXe siècle est pour les peuples du sud du Soudan une « période du chaos », comme on s'en souvient encore là-bas ; F. M. Deng, lui-même jieng, y voit le temps des guerres d'esclavage et de conquête."
+                "page": "p. 401",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 401 : la période « est restée synonyme de chaos dans la mémoire populaire du Soudan méridional » ; F. M. Deng, « lui-même un Jieng (Dinka) », y voit des « guerres d'esclavage et de conquête menées contre elles par des vagues d'envahisseurs »."
               }
             ]
           }

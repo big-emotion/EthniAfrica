@@ -55,21 +55,21 @@
         "title": "Wikipédia — Malinkés",
         "url": "https://fr.wikipedia.org/wiki/Malink%C3%A9s",
         "tier": "unverified",
-        "source_kind": "community",
+        "source_kind": "encyclopedia",
         "notes": "Section sur le nom, lue en ligne : mandingue, mandenka, Malinké d'origine peule ; elle renvoie à Bugiel (1922) et à Delafosse (1929), que nous n'avons pas lus."
       },
       {
         "title": "Wikipédia (anglais) — Manding region",
         "url": "https://en.wikipedia.org/wiki/Manding_region",
         "tier": "unverified",
-        "source_kind": "community",
+        "source_kind": "encyclopedia",
         "notes": "Section sur le nom, lue en ligne : elle reprend, par une notice du Kindlers Literatur Lexikon, le passage de Camara Laye, Le Maître de la parole. Kouma Lafôlô Kouma (Paris, Plon, 1978)."
       },
       {
         "title": "Wikipédia (anglais) — Mandinka people",
         "url": "https://en.wikipedia.org/wiki/Mandinka_people",
         "tier": "unverified",
-        "source_kind": "community",
+        "source_kind": "encyclopedia",
         "notes": "Note sur les graphies lue en ligne : Maninka, Manding, Mandingo ; les formes en g y sont jugées anciennes."
       }
     ]

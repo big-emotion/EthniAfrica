@@ -19,10 +19,10 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * real number is room to regress into. A typing batch lowers this line in the
  * same change; NEVER raise it.
  *
- * Measured 2026-10-09 after the encyclopedia, NGO and mission-database kinds
- * and the work-by-work rulings (ETNI-2007).
+ * Measured 2026-10-10, after three HGA IV citations moved from an unofficial
+ * copy to their UNESDOC original and took the intergovernmental kind.
  */
-export const UNTYPED_SOURCE_RATCHET = 1706;
+export const UNTYPED_SOURCE_RATCHET = 1703;
 
 export interface UntypedSource {
   file: string;

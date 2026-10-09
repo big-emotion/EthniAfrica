@@ -94,8 +94,9 @@
               "label": "Chronique achevée en 1453"
             },
             "era": "polity",
-            "statement": "Le nom Sénégal est écrit Çanaga dans la chronique portugaise de Gomes Eanes de Zurara. Il y nomme le fleuve que les navigateurs portugais cherchent le long de la côte, d'après ce que le prince Henri a appris de prisonniers azenègues.",
+            "statement": "Le nom Sénégal est écrit Çanaga dans la chronique portugaise de Gomes Eanes de Zurara. Il y nomme le fleuve que les navigateurs portugais cherchent le long de la côte, d'après ce que le prince Henri a appris de prisonniers azenègues. C'est la plus ancienne trace de ce nom que le projet a lue lui-même ; Maurice Delafosse en rapporte de plus anciennes. Le fleuve et les peuples de ses rives existaient bien avant lui.",
             "formAsWritten": "Çanaga",
+            "birth": true,
             "sources": [
               {
                 "title": "The Chronicle of the Discovery and Conquest of Guinea, vol. II",
@@ -160,9 +161,8 @@
               "label": "XIe siècle"
             },
             "era": "polity",
-            "statement": "Le nom Sénégal a peut-être sa plus ancienne trace chez le géographe al-Bakrī, qui nomme Sanaghāna ou Sanghāna un royaume noir de la basse vallée du fleuve, selon Maurice Delafosse. C'est la plus ancienne trace de ce nom que le projet connaît, si l'on admet avec Delafosse qu'il s'agit du même nom. Le fleuve et les peuples de ses rives existaient bien avant lui.",
+            "statement": "Sanaghāna, ou Sanghāna, figure chez le géographe al-Bakrī au XIe siècle : il nomme ainsi un royaume noir de la basse vallée du fleuve, selon Maurice Delafosse. Delafosse y voit une forme ancienne du nom Sénégal ; les autres sources lues ne disent pas s'il s'agit du même nom.",
             "formAsWritten": "Sanghāna",
-            "birth": true,
             "sources": [
               {
                 "title": "Senegal, dans Encyclopaedia of Islam, première édition",
@@ -214,7 +214,7 @@
                 "year": 2026,
                 "url": "https://en.wikipedia.org/wiki/Senegal_River",
                 "tier": "unverified",
-                "source_kind": "community",
+                "source_kind": "encyclopedia",
                 "notes": "Passage sur les noms du fleuve, consulté le 9 octobre 2026. Il s'appuie sur Luis del Mármol Carvajal, Descripción general de África (1573), livre VIII, chapitre 3, que nous n'avons pas lu nous-mêmes."
               }
             ]
@@ -585,7 +585,7 @@
         "url": "http://www.seneweb.com/news/Immigration/s-n-gal-n-est-pas-sunugal-ou-de-l-tymologie-du-toponyme-s-n-gal_n_5047.html",
         "tier": "unverified",
         "source_kind": "press",
-        "notes": "Présentation non signée. Elle est l'origine de l'attribution du terme Singhane à Paul Marty et du désaccord de Monod et Mauny avec Boilat. Elle date les Esquisses sénégalaises de 1850, ce qui est inexact."
+        "notes": "Compte rendu signé par Amady Aly Dieng et publié le 1er septembre 2006. Il est l'origine de l'attribution du terme Singhane à Paul Marty et du désaccord de Monod et Mauny avec Boilat. Il date les Esquisses sénégalaises de 1850, ce qui est inexact."
       },
       {
         "title": "Luis del Mármol Carvajal, Primera parte de la descripción general de Áffrica, Grenade, René Rabut, 1573",
