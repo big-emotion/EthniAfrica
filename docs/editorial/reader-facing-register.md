@@ -365,6 +365,47 @@ English counterparts; documentation itself remains in English.
 | Two explanations                            | “The accepted origin is A.”                                         | « Deux explications sont proposées : [A], selon [source A], et [B], selon [source B]. »                             | “Two explanations are documented: [A] and [B]. The sources consulted do not settle the question.”                          | Separate references for A and B; do not invent equal support or consensus                                       |
 | Invitation to research                      | “Research is needed.”                                               | « Quel récit avez-vous entendu autour de ce nom ? Vous pouvez nous en indiquer la provenance. »                     | “What account have you heard about this name? You can tell us where it comes from.”                                        | Link to the project's contribution route when available; no demand to disclose private family details           |
 
+### Name-history timeline tiles
+
+The timeline (REQ-198, DEC-073) tells one name's history in short tiles read from
+today backwards. Everything above applies; these patterns cover what tiles add.
+They follow [doctrine §1.1](doctrine.md) and the
+[timeline decision](strategy/name-history-timeline-2026-10-08.md). As in the
+table above, they are writing patterns with slots, not facts.
+
+- **The sentence opens on the name**, in italics the first time: « Le nom
+  _[nom]_… », « _[nom]_ désigne… ». Never a subjectless fragment.
+- **One tile, one idea**, in one or two complete sentences.
+- **The period is already printed at the top of the tile.** Do not repeat it as
+  an opener (« À cette période… », « Vers [date]… »).
+- **A hypothesis is conditional and attributed**, the attribution at the end:
+  « … viendrait de [explication], selon [source] ». Competing hypotheses are
+  separate tiles of one group; none is written as the answer.
+- **The birth tile** ends with one plain sentence that tells the name apart from
+  what it names, without drama.
+- **A “before the name” tile** says what existed then; it does not repeat « le nom
+  n'existe pas encore » on every tile.
+- **“Meanwhile, elsewhere”** is two sentences: the first about the African name,
+  the second, shorter, about the outside anchor with its date. No sentence opens
+  with « Ailleurs, ».
+
+| Tile                     | Before                                                         | After — French                                                                                                     |
+| ------------------------ | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Today                    | « Langue véhiculaire de [villes]. »                            | « Le _[nom]_ est la langue que partagent [villes], dans [usages documentés]. »                                     |
+| Birth                    | « [Date] : des missionnaires fixent le nom. »                  | « Le nom _[nom]_ apparaît par écrit dans [document], selon [source]. »                                             |
+| Birth, closing sentence  | « Le nom naît ici. »                                           | « C'est la plus ancienne trace de ce nom que le projet connaît. [La langue / le peuple] existait déjà avant lui. » |
+| Before the name          | « Le nom [nom] n'existe pas encore. On parle de [ancien]. »    | « On parle alors de _[ancien nom]_ pour désigner [ce qu'il désigne], selon [source]. »                             |
+| Convergence              | « Ce sont des sources de ce qu'on appelle aujourd'hui [nom]. » | « Ces [parlers / groupes] donneront plus tard ce qu'on appelle _[nom]_, selon [source]. »                          |
+| Competing hypothesis     | « Hypothèse 1 : prononciation de [forme]. »                    | « Le nom _[nom]_ viendrait de [forme], telle que la prononçaient [voisins], selon [source]. »                      |
+| Oldest trace, uncertain  | « [Forme] est la plus ancienne mention. Est-ce le même nom ? » | « _[Forme]_ figure chez [auteur] au [siècle]. Les sources ne disent pas s'il s'agit du même [royaume / peuple]. »  |
+| Meanwhile, elsewhere     | « À cette période, [nom] est en usage. Ailleurs, Rome tombe. » | « Le nom _[nom]_ est alors employé par [qui]. En France, [repère], en [date]. »                                    |
+| Actor, never attribution | « [Personne] a nommé [lieu]. »                                 | « Le nom _[nom]_ apparaît dans [récit / archive] où figure [personne], selon [source]. »                           |
+
+The summary under the searched name follows one shape: « Le nom _[nom]_ est
+[ce qu'il désigne], qui se nomme lui-même _[autonyme]_. [D'autres noms existent :
+…]. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons
+plus bas. »
+
 ### Review before handing over copy
 
 1. Can a first-time reader explain the main point in ordinary words?
