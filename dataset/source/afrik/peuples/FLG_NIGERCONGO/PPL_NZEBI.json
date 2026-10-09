@@ -4,6 +4,116 @@
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["GAB", "COG"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Nzebi désigne un peuple du sud du Gabon et du sud-ouest du Congo, qui se nomme lui-même ainsi : Banzèbi au pluriel, Munzèbi pour une seule personne. Un autre nom existe : Bandjabi. Nous n'avons pas trouvé de source sur l'origine de ces noms ; nous présentons plus bas ce que nous savons de leur histoire.",
+    "names": [
+      {
+        "nameText": "Nzebi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nzb",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : Banzèbi au pluriel, Munzèbi pour une seule personne.",
+        "usedIn": ["nzb"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "Usage décrit en 1979"
+            },
+            "statement": "Le nom Nzebi est celui par lequel les membres de ce peuple se désignent : Banzèbi au pluriel, Munzèbi pour une seule personne. Gérard Collomb choisit cette graphie parce qu'elle suit leur prononciation, plutôt que la graphie habituelle, Bandjabi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les sept fils de Nzèbi. Un mythe cosmogonique des Banzèbi du Gabon, Journal des africanistes, 49 (2)",
+                "author": "Gérard Collomb",
+                "year": 1979,
+                "url": "https://www.persee.fr/doc/jafr_0399-0346_1979_num_49_2_1985",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89, notes 1 et 2",
+                "notes": "Seule la première page et le résumé ont pu être lus sur Persée. Les récits ont été enregistrés en 1974 et 1975 auprès de conteurs banzèbi et sont conservés au Musée national des Arts et Traditions de Libreville."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1974,
+              "to": 1975,
+              "label": "Récits recueillis en 1974 et 1975"
+            },
+            "statement": "Le nom Nzèbi est aussi celui du personnage dont un mythe des Banzèbi raconte les sept fils. Gérard Collomb en a recueilli plusieurs versions dans les districts de Mbigou et de Koulamoutou.",
+            "sources": [
+              {
+                "title": "Les sept fils de Nzèbi. Un mythe cosmogonique des Banzèbi du Gabon, Journal des africanistes, 49 (2)",
+                "author": "Gérard Collomb",
+                "year": 1979,
+                "url": "https://www.persee.fr/doc/jafr_0399-0346_1979_num_49_2_1985",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89, notes 1 et 2",
+                "notes": "Seule la première page et le résumé ont pu être lus sur Persée. Les récits ont été enregistrés en 1974 et 1975 auprès de conteurs banzèbi et sont conservés au Musée national des Arts et Traditions de Libreville."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1867,
+              "label": "Voyage des années 1860 (récit publié en 1867)"
+            },
+            "statement": "Le nom Nzebi pourrait être celui que l'explorateur Paul Du Chaillu écrit Njavi : il rencontre des gens de la « Njavi tribe » dans un village de l'Ashango-land, à l'est duquel ils vivent. Les sources que nous avons lues ne disent pas s'il s'agit du même peuple.",
+            "sources": [
+              {
+                "title": "A Journey to Ashango-Land, and Further Penetration into Equatorial Africa",
+                "author": "Paul B. Du Chaillu",
+                "year": 1867,
+                "url": "https://archive.org/details/journeytoashango00duch",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 300",
+                "notes": "Londres, John Murray, 1867. Lu dans la numérisation d'Internet Archive, chapitre XV."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bandjabi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom, longtemps la graphie habituelle.",
+        "periodLabel": "Usage décrit en 1979",
+        "accounts": [
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "Usage décrit en 1979"
+            },
+            "statement": "Le nom Bandjabi est en 1979 la graphie habituelle du nom de ce peuple, selon Gérard Collomb, qui lui préfère Banzèbi, plus proche de la prononciation des intéressés.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les sept fils de Nzèbi. Un mythe cosmogonique des Banzèbi du Gabon, Journal des africanistes, 49 (2)",
+                "author": "Gérard Collomb",
+                "year": 1979,
+                "url": "https://www.persee.fr/doc/jafr_0399-0346_1979_num_49_2_1985",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89, notes 1 et 2",
+                "notes": "Seule la première page et le résumé ont pu être lus sur Persée. Les récits ont été enregistrés en 1974 et 1975 auprès de conteurs banzèbi et sont conservés au Musée national des Arts et Traditions de Libreville."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Nzebi",

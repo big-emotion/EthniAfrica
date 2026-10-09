@@ -6,6 +6,204 @@
   "summary": "La Guinée porte un nom que les Portugais appliquaient au XVe siècle à toute la côte ouest-africaine. Le pays articule quatre ensembles : le Fouta-Djalon peul, la Haute-Guinée malinké héritée de l'empire du Mali, la Basse-Guinée soussou et les peuples forestiers. Griots, kora et balafon y portent une tradition orale continue.",
   "etymology": "L'origine du nom Guinée n'est pas établie, et trois lectures coexistent. En Guinée, on rattache couramment le mot au soussou guinè, qui désigne la femme. Une deuxième lecture le fait venir de l'expression amazighe akal n ignawen, la terre des ignawen, par laquelle les berbérophones désignaient au Moyen Âge la zone sahélienne ; on la traduit d'ordinaire par pays des Noirs, d'après Maurice Delafosse en 1924. Les linguistes rattachent agnaw au verbe gnu, coudre : l'agnaw serait celui qui a la langue cousue, c'est-à-dire celui qui ne parle pas la langue de celui qui le nomme. Les navigateurs portugais, enfin, écrivent Guiné dès le XVe siècle pour toute la côte ouest-africaine au sud du Sénégal. Les Français ont repris ce nom pour leur colonie en 1891.",
   "nameOriginActor": "Les navigateurs portugais écrivent Guiné dès le XVe siècle et répandent la forme écrite du nom en Europe, sans que son origine soit établie. Les Français la reprennent en 1891 pour la colonie de Guinée française. Le pays garde ce nom à l'indépendance, le 2 octobre 1958.",
+  "nameHistory": {
+    "summary": "Le nom Guinée désigne un pays d'Afrique de l'Ouest, la République de Guinée. Il a d'abord désigné toute la côte ouest de l'Afrique pour les navigateurs portugais, et le pays s'est appelé Guinée française pendant la colonisation. L'origine du nom n'est pas établie ; nous présentons plus bas ce que les sources en disent.",
+    "names": [
+      {
+        "nameText": "Guinée",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Portugais donnaient au XVe siècle à la terre des Noirs ; son origine reste discutée.",
+        "periodLabel": "Écrit dès le XVe siècle ; nom de l'État depuis 1958",
+        "accounts": [
+          {
+            "period": {
+              "from": 1958,
+              "to": null,
+              "label": "Depuis le 2 octobre 1958"
+            },
+            "statement": "Le nom Guinée est celui de la République de Guinée depuis le 2 octobre 1958. Ce jour-là, le pays proclame son indépendance, après avoir voté non à plus de 80 % au référendum de 1958, selon Jean Suret-Canale et A. Adu Boahen.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 7 : L'Afrique occidentale",
+                "author": "Jean Suret-Canale et A. Adu Boahen",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 201",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Au référendum de 1958, le non l'emporte en Guinée avec plus de 80 % des voix, et le pays proclame son indépendance le 2 octobre 1958."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : « Guinée », indépendante le 2 octobre 1958, avec l'ancien nom colonial entre parenthèses, « Guinée française »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1899,
+              "label": "Fin du XIXe siècle"
+            },
+            "statement": "Le nom Guinée est repris par plusieurs puissances coloniales à la fin du XIXe siècle : Guinée portugaise, Guinée française, Guinée espagnole. Il passe même en Océanie avec la Nouvelle-Guinée, selon Claude Rivière.",
+            "sources": [
+              {
+                "title": "Guinea: The Mobilization of a People, préface",
+                "author": "Claude Rivière",
+                "year": null,
+                "url": "https://webguine.site/bibliotheque/sociology/riviere/mobilization_people/preface.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ithaca, Cornell University Press. Préface lue en ligne le 9 octobre 2026 sur le site webGuinée, qui indique 1968 pour l'édition ; la préface est datée de juin 1976."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1400,
+              "to": 1499,
+              "label": "XVe siècle"
+            },
+            "statement": "Le nom Guinée désigne d'abord toute la côte ouest de l'Afrique, de la Gambie au delta du Niger. Sous la plume des premiers navigateurs portugais, il veut dire la même chose qu'Éthiopie, le pays des Noirs, selon Yves Person.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers, premiers contacts avec les Portugais, de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 329"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1453,
+              "to": 1453,
+              "label": "Chronique achevée en 1453"
+            },
+            "statement": "Le nom Guinée est écrit « Guinee » par le chroniqueur portugais Gomes Eanes de Zurara, qui nomme ainsi la terre des Noirs. Il précise que ce n'est pas une seule terre, mais des terres très différentes. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples de cette côte vivaient là bien avant lui.",
+            "formAsWritten": "Guinee",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Chronica do descobrimento e conquista de Guiné",
+                "author": "Gomes Eanes de Zurara",
+                "year": 1841,
+                "url": "https://archive.org/details/chronicadodesco00zuragoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 158",
+                "notes": "Chronique achevée en 1453 selon son éditeur, publiée à Paris chez J.-P. Aillaud en 1841. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1100,
+              "to": 1199,
+              "label": "XIIe siècle"
+            },
+            "statement": "Le nom Guinée pourrait avoir un ancêtre dans Kanawa, un pays dont parle au XIIe siècle le géographe arabe que Claude Rivière nomme Al Zukri ; Rivière se demande aussi s'il ne s'agit pas d'une forme du nom Ghana. Rachid Agrour relève la forme ginawa dans un manuscrit arabe du même siècle. Les sources ne disent pas s'il s'agit du même nom.",
+            "sources": [
+              {
+                "title": "Guinea: The Mobilization of a People, préface",
+                "author": "Claude Rivière",
+                "year": null,
+                "url": "https://webguine.site/bibliotheque/sociology/riviere/mobilization_people/preface.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ithaca, Cornell University Press. Préface lue en ligne le 9 octobre 2026 sur le site webGuinée, qui indique 1968 pour l'édition ; la préface est datée de juin 1976."
+              },
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 74 et note 20",
+                "notes": "Lu en texte intégral sur OpenEdition. L'auteur s'appuie sur Maurice Delafosse (1924, p. 153) et, en note, sur Jacques-Meunié (1982, p. 571), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Guinée viendrait du berbère akal n ignawen, « la terre des Ignawen », par lequel les berbérophones désignaient au Moyen Âge l'Afrique sahélienne. L'agnaw serait celui qui a « la langue cousue », qui ne parle pas la langue de celui qui le nomme, selon Rachid Agrour et Claude Rivière.",
+            "hypothesisGroup": "origine du nom Guinée",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 74 et note 20",
+                "notes": "Lu en texte intégral sur OpenEdition. L'auteur s'appuie sur Maurice Delafosse (1924, p. 153) et, en note, sur Jacques-Meunié (1982, p. 571), que nous n'avons pas lus."
+              },
+              {
+                "title": "Guinea: The Mobilization of a People, préface",
+                "author": "Claude Rivière",
+                "year": null,
+                "url": "https://webguine.site/bibliotheque/sociology/riviere/mobilization_people/preface.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ithaca, Cornell University Press. Préface lue en ligne le 9 octobre 2026 sur le site webGuinée, qui indique 1968 pour l'édition ; la préface est datée de juin 1976."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Guinée française",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "periodLabel": "Époque coloniale, jusqu'en 1958",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1958,
+              "label": "Jusqu'au 2 octobre 1958"
+            },
+            "statement": "Le nom Guinée française est celui de la colonie qui devient la Guinée indépendante le 2 octobre 1958 ; le tableau des indépendances de l'Histoire générale de l'Afrique l'écrit entre parenthèses.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : « Guinée », indépendante le 2 octobre 1958, avec l'ancien nom colonial entre parenthèses, « Guinée française »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Guinée française (1891-1958)"],

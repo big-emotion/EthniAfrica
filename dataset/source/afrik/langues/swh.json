@@ -21,6 +21,223 @@
   "spellingAliases": [],
   "familyId": "FLG_NIGERCONGO",
   "peoples": [],
+  "nameHistory": {
+    "summary": "Le nom swahili désigne une langue bantoue de la côte d'Afrique de l'Est, que ses locuteurs appellent kiswahili. Il a d'abord nommé une côte avant de nommer une langue. Les sources ne s'accordent pas toujours sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Swahili",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un nom venu de l'arabe, qui a d'abord nommé une côte ; le swahili est une langue bantoue.",
+        "periodLabel": "Écrit dès le XIVe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom swahili désigne une langue bantoue de la côte d'Afrique de l'Est. Le mot a d'abord désigné la côte, de Mogadiscio à Lamu, avant de désigner la langue, selon Fidel T. Masao et Henry W. Mutoro. D'autres explications de son origine ont circulé ; nous les présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 21 : La côte d'Afrique orientale et les Comores",
+                "author": "Fidel T. Masao et Henry W. Mutoro",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 643"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1331,
+              "to": 1331,
+              "label": "Voyage de 1331"
+            },
+            "statement": "Le nom swahili apparaît par écrit dans le récit du voyageur Ibn Baṭṭūṭa, qui part de Mogadiscio vers « le pays des Saouâhil » et la ville de Kilwa ; ses traducteurs français rendent le mot par « les rivages ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme une côte, pas encore une langue.",
+            "formAsWritten": "Saouâhil",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Voyages d'Ibn Batoutah, tome II, texte arabe et traduction par C. Defrémery et B. R. Sanguinetti",
+                "author": "Ibn Baṭṭūṭa",
+                "year": 1854,
+                "url": "https://archive.org/details/bub_gb_VuyOecTYXpUC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 191",
+                "notes": "Paris, Imprimerie impériale, 1854, pour la Société asiatique. Lu dans la numérisation d'Internet Archive. Le texte arabe n'a pas été lu."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 21 : Les bassins du Zambèze et du Limpopo (1100-1500)",
+                "author": "Brian Murray Fagan",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 577"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom swahili viendrait de l'arabe sāḥil, « côte », au pluriel sawāḥil, selon Fidel T. Masao et Henry W. Mutoro. Johann Ludwig Krapf jugeait déjà en 1850 cette explication « la plus juste » : le Swahili serait l'habitant des côtes, par opposition à l'intérieur.",
+            "hypothesisGroup": "origine du nom swahili",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 21 : La côte d'Afrique orientale et les Comores",
+                "author": "Fidel T. Masao et Henry W. Mutoro",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 643"
+              },
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Tübingen, L. F. Fues, 1850. Lu dans la numérisation d'Internet Archive. Le missionnaire écrit en homme de son temps : il juge ses informateurs « incultes ».",
+                "page": "p. 10-11"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1850,
+              "to": 1850,
+              "label": "Rapportée en 1850"
+            },
+            "statement": "Le nom swahili voudrait dire « même ruse », de sawa, « égal », et hila, « ruse », selon l'explication que des habitants de la côte donnent souvent au missionnaire Johann Ludwig Krapf. Krapf l'écarte, mais rapporte que des Swahili disent eux-mêmes, quand ils sont dans l'embarras : « ne sommes-nous pas Swahili ? ».",
+            "hypothesisGroup": "origine du nom swahili",
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Tübingen, L. F. Fues, 1850. Lu dans la numérisation d'Internet Archive. Le missionnaire écrit en homme de son temps : il juge ses informateurs « incultes ».",
+                "page": "p. 10"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1850,
+              "to": 1850,
+              "label": "Rapportée en 1850"
+            },
+            "statement": "Le nom swahili viendrait de suhel, qui veut dire en swahili « sud-est et sud-ouest » : pour un navigateur arabe, la côte se trouvait de ce côté, selon une deuxième explication que rapporte Johann Ludwig Krapf.",
+            "hypothesisGroup": "origine du nom swahili",
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Tübingen, L. F. Fues, 1850. Lu dans la numérisation d'Internet Archive. Le missionnaire écrit en homme de son temps : il juge ses informateurs « incultes ».",
+                "page": "p. 10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kiswahili",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "swh",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue en swahili même : « la langue de la côte ».",
+        "usedIn": ["swh"],
+        "periodLabel": "Écrit dès 1850",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom kiswahili veut dire littéralement « la langue de la côte », selon Fidel T. Masao et Henry W. Mutoro.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 21 : La côte d'Afrique orientale et les Comores",
+                "author": "Fidel T. Masao et Henry W. Mutoro",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 643"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2010,
+              "to": null,
+              "label": "Depuis 2010"
+            },
+            "statement": "Le kiswahili est la langue nationale du Kenya et l'une de ses deux langues officielles, avec l'anglais, selon l'article 7 de la Constitution de 2010.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution of Kenya, 2010, article 7",
+                "author": "République du Kenya",
+                "year": 2010,
+                "url": "https://www.constituteproject.org/constitution/Kenya_2010",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Texte lu sur Constitute le 9 octobre 2026. L'article 7 fait du kiswahili la langue nationale, et du kiswahili et de l'anglais les langues officielles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1850,
+              "to": 1850,
+              "label": "1850"
+            },
+            "statement": "Le nom kiswahili apparaît par écrit sous la forme « Kisuáheli » dans le titre de la grammaire du missionnaire Johann Ludwig Krapf, qui parle aussi des Wasuaheli, les gens de la côte. C'est la plus ancienne trace de cette forme que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "Kisuáheli",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Tübingen, L. F. Fues, 1850. Lu dans la numérisation d'Internet Archive. Le missionnaire écrit en homme de son temps : il juge ses informateurs « incultes ».",
+                "page": "page de titre et p. 8"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [
