@@ -4,16 +4,16 @@
   "nameEn": "Uganda",
   "nameOfficial": "République de l'Ouganda (Republic of Uganda, Jamhuri ya Uganda)",
   "summary": "L'Ouganda porte le nom du Buganda, le plus puissant royaume de la région, que les Britanniques ont étendu à tout le protectorat. Buganda, Bunyoro, Toro et Ankole y coexistaient comme royaumes distincts. Baganda, Banyankole, Basoga, Acholi, Banyoro et Langi y font se rencontrer mondes bantou et nilotique.",
-  "etymology": "Le nom \"Ouganda\" viendrait du royaume du Buganda, le plus puissant royaume précolonial de la région. \"Buganda\" voudrait dire \"pays des Baganda\" en langue luganda. Les Britanniques ont utilisé \"Uganda\" (forme anglaise) pour désigner le protectorat, qui incluait plusieurs royaumes (Buganda, Bunyoro, Toro, Ankole). Le nom a été officialisé lors de l'indépendance en 1962.",
-  "nameOriginActor": "Le nom \"Ouganda\" vient du royaume du Buganda, nommé par les Baganda. Les Britanniques ont utilisé \"Uganda\" (forme anglaise) pour désigner le protectorat (1894-1962). Le nom a été officialisé lors de l'indépendance (1962).",
+  "etymology": "Le nom « Ouganda » reprend Uganda, la forme swahilie de Buganda, le nom d'un royaume situé au nord du lac Victoria. En swahili, un nom de pays commence par U-. En luganda, la langue du Buganda, le même mot change de début selon ce qu'il désigne : Buganda (le pays, le royaume), Baganda (les habitants), Muganda (une personne), Luganda (la langue). Seul, « ganda » n'a pas de sens connu en luganda, et son origine reste incertaine. En 1863, le voyageur britannique John Hanning Speke écrit déjà « the kingdom of Uganda » pour parler du Buganda. À partir de 1894, ce nom désigne un protectorat britannique qui réunit d'autres royaumes et de nombreux peuples. À l'indépendance, le 9 octobre 1962, le pays garde ce nom.",
+  "nameOriginActor": "Buganda est le nom que les Baganda donnent à leur royaume. Uganda en est la forme swahilie, la langue de la côte et du commerce. Les voyageurs britanniques l'emploient pour le royaume (Speke, 1863), puis l'administration britannique pour le protectorat (1894-1962). Le pays indépendant garde ce nom en 1962.",
   "content": {
     "historicalNames": {
       "formerNames": ["Protectorat de l'Ouganda (1894-1962)"],
       "antiquity": "Le territoire actuel de l'Ouganda était peuplé de diverses sociétés bantoues et nilotiques. Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
       "middleAges": "Migrations bantoues vers la région. Développement de royaumes et chefferies (Buganda, Bunyoro, Toro, Ankole). Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Consolidation des royaumes (Buganda, Bunyoro, Toro, Ankole). Le royaume du Buganda était le plus puissant. Les Européens utilisaient le terme \"Uganda\" pour désigner la région.",
-      "colonization": "1894-1962 : Protectorat britannique de l'Ouganda (Uganda Protectorate). Les Britanniques ont établi un protectorat sur plusieurs royaumes (Buganda, Bunyoro, Toro, Ankole). Le nom \"Uganda\" est officialisé par les Britanniques.",
-      "contemporary": "1962 : Indépendance (9 octobre 1962), proclamation de la République de l'Ouganda. Le nom \"Ouganda\" est officiel."
+      "precolonial": "Consolidation des royaumes (Buganda, Bunyoro, Toro, Ankole). Le royaume du Buganda était le plus puissant. Les voyageurs européens écrivaient « Uganda », la forme swahilie, pour désigner le royaume du Buganda.",
+      "colonization": "1894-1962 : Protectorat britannique de l'Ouganda (Uganda Protectorate). Les Britanniques ont établi un protectorat sur plusieurs royaumes (Buganda, Bunyoro, Toro, Ankole). Le protectorat porte le nom du royaume du Buganda sous sa forme swahilie, Uganda.",
+      "contemporary": "1962 : Indépendance, le 9 octobre 1962, sous le nom d'Uganda, que le protectorat portait déjà. Ouganda est la forme française de ce nom."
     },
     "kingdoms": [
       {
@@ -272,6 +272,34 @@
         "tier": "official",
         "source_kind": "government",
         "notes": "Répartition des groupes ethniques d'après l'estimation de 2014, lue dans une copie archivée de janvier 2026 ; la publication a cessé d'être mise à jour début 2026. Les Banyoro et les Batooro n'y sont pas nommés. Wikipédia reprend cette liste avec 9,8 % pour les Banyankole ; la copie archivée donne 9,6 %."
+      },
+      {
+        "title": "Uganda Independence Act 1962 (Royaume-Uni), article 1",
+        "url": "https://www.legislation.gov.uk/ukpga/Eliz2/10-11/57/enacted",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte de la loi britannique : le 9 octobre 1962, les territoires du protectorat de l'Ouganda deviennent indépendants « under the name of Uganda »."
+      },
+      {
+        "title": "J. H. Speke, Journal of the Discovery of the Source of the Nile, Édimbourg et Londres, Blackwood, 1863",
+        "url": "https://archive.org/details/journalofdiscove00spek",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Introduction, p. xxxi : en swahili, U- placé devant un nom désigne le pays (Ugogo, le pays des Gogo). À partir de la p. 253 : « the kingdom of Uganda » désigne le Buganda. Le livre n'emploie jamais la forme Buganda."
+      },
+      {
+        "title": "CIA World Factbook – Uganda (Country name), édition 2025",
+        "url": "https://worldfactbookarchive.org/archive/field/UG/Country%20name",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Le nom vient du swahili u, « pays », et du nom des Ganda ; l'origine du nom Ganda n'est pas claire. Les éditions 2016 à 2024 formulaient l'étymologie autrement."
+      },
+      {
+        "title": "Worldmark Encyclopedia of Cultures and Daily Life, « Baganda »",
+        "url": "https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/baganda",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Gale, article révisé par E. Kalipeni. Le radical ganda n'a pas de sens en luganda ; Buganda désigne le lieu ou le royaume où vivent les Baganda, et Muganda est le singulier de Baganda."
       }
     ],
     "demographics": {
