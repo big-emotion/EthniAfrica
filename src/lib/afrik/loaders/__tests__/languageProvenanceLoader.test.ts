@@ -184,6 +184,23 @@ describe("loadLanguages", () => {
     });
   });
 
+  // @req REQ-196
+  it("persists a fiche's nameHistory onto name_history, and null for a language without one", async () => {
+    const double = createSupabaseDouble();
+    const nameHistory = {
+      summary: "Le nom yoruba a une histoire, présentée plus bas.",
+      names: [],
+    } as unknown as LanguageRecord["nameHistory"];
+
+    await loadLanguages(asClient(double), [
+      sourced({ nameHistory }),
+      derived(),
+    ]);
+
+    expect(double.languages[0].name_history).toEqual(nameHistory);
+    expect(double.languages[1].name_history).toBeNull();
+  });
+
   // The answer page reads this flag from `content`; a loader that drops it
   // leaves a debated language name presented as settled.
   // @req REQ-178

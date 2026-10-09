@@ -383,6 +383,24 @@ describe("patronymeJsonLoader", () => {
     ]);
   });
 
+  // @req REQ-196
+  it("projects a dossier's nameHistory onto name_history, and null for one without", async () => {
+    const database = createSupabaseDouble();
+    const nameHistory = {
+      summary: "Le nom Keïta a une histoire, présentée plus bas.",
+      names: [],
+    };
+    const keita = validPatronymeFiche({ nameHistory }) as PatronymeDossier;
+
+    await loadPatronymes(database.client as never, {
+      dossiers: [keita, secondDossier()],
+      errors: [],
+    });
+
+    expect(database.rows.afrik_patronymes[0].name_history).toEqual(nameHistory);
+    expect(database.rows.afrik_patronymes[1].name_history).toBeNull();
+  });
+
   // @req REQ-133
   // @req REQ-134
   it("previews and replays a valid batch without writes or duplicate projections", async () => {

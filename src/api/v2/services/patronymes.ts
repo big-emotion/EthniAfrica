@@ -21,6 +21,7 @@
  * `person_peoples`/`person_countries` or `content`.
  */
 
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { logger } from "@/lib/api/logger";
 import { walkRanges } from "@/lib/supabase/queries/walkRanges";
 import { readAlliances } from "@/lib/patronymes/content";
@@ -47,6 +48,7 @@ export interface PatronymeAggregate {
   bearers: PatronymeBearerSummary[];
   namedBearers: PatronymeNamedBearer[];
   alliances: PatronymeAllianceSummary[];
+  nameHistory?: NameHistory;
 }
 
 export interface PatronymeListItem {
@@ -607,7 +609,7 @@ export async function getPatronymeById(
 
   const { data: patronymeRow, error: patronymeError } = await supabase
     .from("afrik_patronymes")
-    .select("id, name_system, caste_or_social_function, content")
+    .select("id, name_system, caste_or_social_function, content, name_history")
     .eq("id", id)
     .maybeSingle();
 
@@ -623,6 +625,7 @@ export async function getPatronymeById(
     name_system: PatronymeNameSystem;
     caste_or_social_function: string | null;
     content: Record<string, unknown> | null;
+    name_history: NameHistory | null;
   };
   const content = row.content ?? {};
 
@@ -651,6 +654,7 @@ export async function getPatronymeById(
     bearers,
     namedBearers,
     alliances,
+    ...(row.name_history ? { nameHistory: row.name_history } : {}),
   };
 
   return aggregate;

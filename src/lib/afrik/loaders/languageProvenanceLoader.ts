@@ -105,6 +105,7 @@ export async function loadLanguages(
         family_id: language.familyId ?? null,
         content: persistedContent(language),
         spelling_aliases: language.spellingAliases ?? [],
+        name_history: language.nameHistory ?? null,
         updated_at: new Date().toISOString(),
       },
       { onConflict: "id" }

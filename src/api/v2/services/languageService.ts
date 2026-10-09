@@ -2,6 +2,7 @@
  * Language service - business logic for the public language detail endpoint.
  */
 
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import {
   getAfrikLanguageById,
   getAfrikSpeakingPeoples,
@@ -53,6 +54,8 @@ export interface LanguageDetail {
     notes?: string | null;
     sourceKind?: SourceKind | null;
   }>;
+  /** The fiche's shared name-history block (REQ-196), when it declares one. */
+  nameHistory?: NameHistory;
 }
 
 /** Keeps a JSONB array that should hold strings from leaking other types. */
@@ -121,6 +124,7 @@ export async function getLanguageById(
       ...source,
       tier: toSourceTier(source.tier),
     })),
+    ...(language.nameHistory ? { nameHistory: language.nameHistory } : {}),
   };
 
   return detail;

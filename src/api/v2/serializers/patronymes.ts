@@ -106,5 +106,6 @@ export function serializePatronyme(
       .sort(compareNamedBearers)
       .map(serializeNamedBearer),
     alliances: aggregate.alliances.map(serializeAlliance),
+    ...(aggregate.nameHistory ? { nameHistory: aggregate.nameHistory } : {}),
   };
 }

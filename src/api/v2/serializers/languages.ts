@@ -15,6 +15,7 @@ interface LanguageAggregate {
   vehicularRole: PublicLanguage["vehicularRole"];
   vitalityStatus: PublicLanguage["vitalityStatus"];
   sources: PublicLanguage["sources"];
+  nameHistory?: PublicLanguage["nameHistory"];
 }
 
 function comparePeopleByName(
@@ -61,5 +62,6 @@ export function serializeLanguage(language: LanguageAggregate): PublicLanguage {
       tier: source.tier,
       ...(source.notes !== undefined ? { notes: source.notes } : {}),
     })),
+    ...(language.nameHistory ? { nameHistory: language.nameHistory } : {}),
   };
 }

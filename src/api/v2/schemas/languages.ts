@@ -1,3 +1,4 @@
+import { nameHistorySchema } from "@/lib/afrik/parsers/nameHistoryParser";
 import { z } from "zod";
 
 import { SOURCE_TIERS } from "@/types/sources";
@@ -55,6 +56,8 @@ export const publicLanguageSchema = z.object({
     })
     .nullable(),
   sources: z.array(languageSourceSchema),
+  // Optional: most fiches carry no block yet (REQ-196).
+  nameHistory: nameHistorySchema.optional(),
 });
 
 // @req REQ-136

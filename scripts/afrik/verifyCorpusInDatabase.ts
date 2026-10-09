@@ -165,24 +165,33 @@ export function buildCorpusExpectations(
     {
       table: "afrik_language_families",
       primaryKey: ["id"],
-      columns: ["id", "name_fr", "name_en", "content"],
+      columns: ["id", "name_fr", "name_en", "content", "name_history"],
       rows: corpus.languageFamilies.map((family) => ({
         id: family.id,
         name_fr: family.nameFr,
         name_en: family.nameEn ?? null,
         content: family.content,
+        name_history: family.nameHistory ?? null,
       })),
     },
     {
       table: "afrik_languages",
       primaryKey: ["id"],
-      columns: ["id", "name", "family_id", "content", "spelling_aliases"],
+      columns: [
+        "id",
+        "name",
+        "family_id",
+        "content",
+        "spelling_aliases",
+        "name_history",
+      ],
       rows: corpus.languages.map((language) => ({
         id: language.id,
         name: language.name,
         family_id: language.familyId ?? null,
         content: persistedContent(language),
         spelling_aliases: language.spellingAliases ?? [],
+        name_history: language.nameHistory ?? null,
       })),
     },
     {
@@ -194,6 +203,7 @@ export function buildCorpusExpectations(
         "language_family_id",
         "content",
         "spelling_aliases",
+        "name_history",
       ],
       rows: corpus.peoples.map((people) => ({
         id: people.id,
@@ -201,6 +211,7 @@ export function buildCorpusExpectations(
         language_family_id: people.languageFamilyId,
         content: people.content,
         spelling_aliases: people.content?.appellations?.spellingAliases ?? [],
+        name_history: people.nameHistory ?? null,
       })),
     },
     {
@@ -226,6 +237,7 @@ export function buildCorpusExpectations(
         "etymology",
         "name_origin_actor",
         "content",
+        "name_history",
       ],
       rows: corpus.countries.map((country) => ({
         id: country.id,
@@ -236,6 +248,7 @@ export function buildCorpusExpectations(
         etymology: country.etymology ?? null,
         name_origin_actor: country.nameOriginActor ?? null,
         content: country.content,
+        name_history: country.nameHistory ?? null,
       })),
     },
     {
@@ -252,12 +265,19 @@ export function buildCorpusExpectations(
     {
       table: "afrik_patronymes",
       primaryKey: ["id"],
-      columns: ["id", "name_system", "caste_or_social_function", "content"],
+      columns: [
+        "id",
+        "name_system",
+        "caste_or_social_function",
+        "content",
+        "name_history",
+      ],
       rows: corpus.patronymes.map((dossier) => ({
         id: dossier.id,
         name_system: dossier.nameSystem,
         caste_or_social_function: dossier.casteOrSocialFunction?.value ?? null,
         content: dossier,
+        name_history: dossier.nameHistory ?? null,
       })),
     },
   ];

@@ -2,6 +2,7 @@
  * Supabase queries for AFRIK language families
  */
 
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { createServerClient } from "../../server";
 import { logger } from "@/lib/api/logger";
 import type { ClassificationStatus, LanguageFamily } from "@/types/afrik";
@@ -56,6 +57,7 @@ export async function getAllAfrikLanguageFamilies(
     classificationStatus:
       (row.classification_status as ClassificationStatus | null) ?? null,
     content: row.content || {},
+    nameHistory: (row.name_history as NameHistory | null) ?? undefined,
     createdAt: row.created_at ? new Date(row.created_at) : undefined,
     updatedAt: row.updated_at ? new Date(row.updated_at) : undefined,
   }));
@@ -150,6 +152,7 @@ export async function getAfrikLanguageFamilyById(
     classificationStatus:
       (data.classification_status as ClassificationStatus | null) ?? null,
     content: data.content || {},
+    nameHistory: (data.name_history as NameHistory | null) ?? undefined,
     createdAt: data.created_at ? new Date(data.created_at) : undefined,
     updatedAt: data.updated_at ? new Date(data.updated_at) : undefined,
   };
