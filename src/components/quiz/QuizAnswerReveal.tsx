@@ -4,6 +4,7 @@ import * as React from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
 
 import { LazySourceChainSheet } from "@/components/source-transparency/SourceChainSheet.lazy";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { toSourceTier } from "@/types/sources";
 import { cn } from "@/lib/utils";
 import { quizCopy } from "@/lib/i18n/copy/quiz";
@@ -123,9 +124,15 @@ export const QuizAnswerReveal = ({
         </p>
       </div>
 
-      <div className="flex items-center gap-2 border-t border-afh-border pt-3 text-afh-small text-afh-text-soft">
+      <div className="flex flex-wrap items-center gap-2 border-t border-afh-border pt-3 text-afh-small text-afh-text-soft">
         <span>{question.source.title}</span>
         {question.source.year ? <span>· {question.source.year}</span> : null}
+        {question.source.sourceKind ? (
+          <SourceKindBadge
+            kind={question.source.sourceKind}
+            language={language}
+          />
+        ) : null}
       </div>
 
       <button
@@ -155,6 +162,9 @@ export const QuizAnswerReveal = ({
             year: question.source.year ?? undefined,
             url: question.source.url ?? undefined,
             tier,
+            ...(question.source.sourceKind
+              ? { sourceKind: question.source.sourceKind }
+              : {}),
           },
         ]}
         anchorId={`quiz-${question.assertionId}`}

@@ -44,6 +44,42 @@ describe("PlatesBlock", () => {
     expect(screen.getAllByText("Recueil")).toHaveLength(2);
   });
 
+  // @req REQ-194
+  it("names each source's type on an anecdote and a proverb, still without a tier", () => {
+    const { container } = render(
+      <PlatesBlock
+        items={[
+          {
+            ...anecdote,
+            sources: [
+              {
+                title: "Recueil",
+                url: null,
+                tier: "referenced",
+                sourceKind: "archive",
+              },
+            ],
+          },
+          {
+            ...proverb,
+            sources: [
+              {
+                title: "Recueil",
+                url: null,
+                tier: "referenced",
+                sourceKind: "academic",
+              },
+            ],
+          },
+        ]}
+      />
+    );
+
+    expect(container).toHaveTextContent("Archive");
+    expect(container).toHaveTextContent("Publication académique");
+    expect(container).not.toHaveTextContent(TIER_WORDS);
+  });
+
   it("preserves the editorial order in a reachable shelf", () => {
     render(
       <PlatesBlock

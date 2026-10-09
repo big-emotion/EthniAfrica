@@ -257,6 +257,35 @@ describe("GameAnswerReveal (Jouer hub engine, REQ-120)", () => {
     );
   });
 
+  // @req REQ-194
+  it("names the type of a source that records one, and still no tier word", () => {
+    const typed: BinaryRound = {
+      ...ROUND,
+      reveal: {
+        ...ROUND.reveal,
+        sources: [
+          { ...ROUND.reveal.sources[0], kind: "academic" },
+          { label: "Une source ancienne", url: null, standing: "needs_review" },
+        ],
+      },
+    };
+
+    render(
+      <GameAnswerReveal
+        round={typed}
+        isCorrect
+        isLastRound={false}
+        onNext={vi.fn()}
+      />
+    );
+
+    const provenance = screen.getByTestId("game-reveal-provenance");
+    expect(provenance).toHaveTextContent("Publication académique");
+    expect(provenance).not.toHaveTextContent(
+      /Type non précisé|Non vérifiée|En attente d'examen|Référencée|Officielle/
+    );
+  });
+
   // @req REQ-120
   it("leads to the subject's fiche, because a wrong answer is an opening", () => {
     render(

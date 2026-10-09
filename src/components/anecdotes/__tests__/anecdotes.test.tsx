@@ -37,6 +37,7 @@ const SOURCED: DidYouKnowFact = {
       title: "Ministère des Relations extérieures du Cameroun — Histoire",
       url: "https://www.diplocam.cm/histoire/",
       tier: "official",
+      source_kind: "government",
       notes: "Atteste la nomination de l'estuaire en 1472.",
     },
   ],
@@ -84,6 +85,17 @@ describe("AnecdoteCard — the fact a reader can cite (REQ-113)", () => {
     expect(source).toHaveAttribute("href", "https://www.diplocam.cm/histoire/");
     expect(container).not.toHaveTextContent(
       /Source (officielle|référencée|non vérifiée)|Fiabilité du fait/
+    );
+  });
+
+  // @req REQ-194
+  it("names each source's type, and no tier word comes back with it", () => {
+    render(<AnecdoteCard language="fr" fact={SOURCED} />);
+
+    const item = screen.getByRole("link", { name: /Ministère/ }).closest("li");
+    expect(item).toHaveTextContent("Source gouvernementale");
+    expect(item).not.toHaveTextContent(
+      /Officielle|Référencée|Non vérifiée|Source officielle/
     );
   });
 

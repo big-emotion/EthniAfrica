@@ -9,6 +9,7 @@ import {
   didYouKnowEntityHref,
   type AnecdoteImageSide,
 } from "@/lib/home/didYouKnowPresentation";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import type { Language } from "@/types/shared";
 
@@ -182,6 +183,12 @@ export function AnecdoteCard({
                 ) : (
                   <cite className="anecdote-source-cite">{source.title}</cite>
                 )}
+                {source.source_kind ? (
+                  <SourceKindBadge
+                    kind={source.source_kind}
+                    language={language}
+                  />
+                ) : null}
                 {source.notes ? (
                   <span className="anecdote-source-note">{source.notes}</span>
                 ) : null}

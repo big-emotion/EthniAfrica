@@ -5,6 +5,7 @@ import { CompanionRelationLabel } from "@/components/search/feed/CompanionRelati
 import { FEED_TEXT_LINK_HIT_AREA } from "@/components/search/feed/feedHitArea";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSectionHeading";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { ActionLink } from "@/components/ui/ActionLink";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
@@ -54,7 +55,13 @@ function pieceHref(item: FeedPlateItem, language: Language): string {
   return `${route}${filter}#${item.id}`;
 }
 
-function PlateSources({ sources }: { sources: FeedPlateItem["sources"] }) {
+function PlateSources({
+  sources,
+  language,
+}: {
+  sources: FeedPlateItem["sources"];
+  language: Language;
+}) {
   return (
     <ul className="list-none space-y-afh-xs border-t border-afh-border pt-afh-md min-[1200px]:hidden">
       {sources.map((source) => (
@@ -74,6 +81,9 @@ function PlateSources({ sources }: { sources: FeedPlateItem["sources"] }) {
           ) : (
             <cite className="not-italic">{source.title}</cite>
           )}
+          {source.sourceKind ? (
+            <SourceKindBadge kind={source.sourceKind} language={language} />
+          ) : null}
         </li>
       ))}
     </ul>
@@ -261,7 +271,10 @@ export function PlatesBlock({
                         {item.illustration.credit}
                       </p>
                       {reviewed ? null : (
-                        <PlateSources sources={item.sources} />
+                        <PlateSources
+                          sources={item.sources}
+                          language={language}
+                        />
                       )}
                       <SeeMore
                         href={pieceHref(item, language)}
@@ -302,7 +315,12 @@ export function PlatesBlock({
                         {item.origin.note}
                       </p>
                     ) : null}
-                    {reviewed ? null : <PlateSources sources={item.sources} />}
+                    {reviewed ? null : (
+                      <PlateSources
+                        sources={item.sources}
+                        language={language}
+                      />
+                    )}
                     <SeeMore
                       href={pieceHref(item, language)}
                       label={copy.labels.seeMore}

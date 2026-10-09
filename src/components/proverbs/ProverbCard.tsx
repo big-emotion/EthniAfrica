@@ -5,6 +5,7 @@ import {
   DID_YOU_KNOW_ENTITY_ACCENT,
   didYouKnowEntityHref,
 } from "@/lib/home/didYouKnowPresentation";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import { proverbsCopy } from "@/lib/i18n/copy/proverbs";
 import type { ProverbPicture } from "@/lib/proverbs/proverbImages";
@@ -124,6 +125,12 @@ export function ProverbCard({ language, proverb, picture }: ProverbCardProps) {
               ) : (
                 <cite className="proverb-source-cite">{source.title}</cite>
               )}
+              {source.source_kind ? (
+                <SourceKindBadge
+                  kind={source.source_kind}
+                  language={language}
+                />
+              ) : null}
               {source.notes ? (
                 <span className="proverb-source-note">{source.notes}</span>
               ) : null}

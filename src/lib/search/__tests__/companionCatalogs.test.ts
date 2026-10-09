@@ -51,6 +51,7 @@ function fact(
         title: "Source",
         url: "https://example.org/source",
         tier: "referenced",
+        source_kind: "academic",
       },
     ],
     ...overrides,
@@ -69,6 +70,7 @@ function proverb(id: string, overrides: Partial<Proverb> = {}): Proverb {
         title: "Source",
         url: "https://example.org/source",
         tier: "referenced",
+        source_kind: "academic",
       },
     ],
     ...overrides,
@@ -121,7 +123,13 @@ describe("search companion catalogs", () => {
   it("keeps sourced unverified anecdotes and excludes legacy bare-tier facts", () => {
     const sourced = fact("sourced", {
       tier: "unverified",
-      sources: [{ title: "Community note", tier: "unverified" }],
+      sources: [
+        {
+          title: "Community note",
+          tier: "unverified",
+          source_kind: "discovery",
+        },
+      ],
     });
     const selection = anecdotesForTargets(exactPeople, {
       facts: [sourced, fact("bare", { sources: undefined })],
@@ -162,7 +170,13 @@ describe("search companion catalogs", () => {
     const selection = proverbsForTargets(exactPeople, {
       proverbs: [
         proverb("offline", {
-          sources: [{ title: "Printed monograph", tier: "referenced" }],
+          sources: [
+            {
+              title: "Printed monograph",
+              tier: "referenced",
+              source_kind: "academic",
+            },
+          ],
         }),
       ],
     });
@@ -181,7 +195,13 @@ describe("search companion catalogs", () => {
     const selection = proverbsForTargets(exactPeople, {
       proverbs: [
         proverb("community", {
-          sources: [{ title: "Recueil communautaire", tier: "unverified" }],
+          sources: [
+            {
+              title: "Recueil communautaire",
+              tier: "unverified",
+              source_kind: "discovery",
+            },
+          ],
         }),
       ],
     });
@@ -196,7 +216,9 @@ describe("search companion catalogs", () => {
     const selection = proverbsForTargets(exactPeople, {
       proverbs: [
         proverb("untitled", {
-          sources: [{ title: "  ", tier: "referenced" }],
+          sources: [
+            { title: "  ", tier: "referenced", source_kind: "academic" },
+          ],
         }),
         proverb("no-source", { sources: [] }),
       ],

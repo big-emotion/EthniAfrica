@@ -70,6 +70,49 @@ describe("QuizAnswerReveal (Epic 10, Story 10.9, ETNI-1134, FR68/FR71)", () => {
     );
   });
 
+  // The type says who speaks; the tier would say how much to trust them, and
+  // that stays off the reader's line (doctrine §1.1).
+  // @req REQ-194
+  it("names the source's type and still no tier word", () => {
+    render(
+      <QuizAnswerReveal
+        language="fr"
+        question={{
+          ...QUESTION,
+          source: { ...QUESTION.source, sourceKind: "academic" },
+        }}
+        isCorrect
+        isLastQuestion={false}
+        onNext={vi.fn()}
+      />
+    );
+
+    const reveal = screen.getByTestId("quiz-answer-reveal");
+    expect(reveal).toHaveTextContent("Publication académique");
+    expect(reveal).not.toHaveTextContent(
+      /Officielle|Référencée|Non vérifiée|Source officielle/
+    );
+  });
+
+  // A question served before the API carried the kind prints the title alone
+  // rather than « Type non précisé ».
+  // @req REQ-194
+  it("prints no type when the source records none", () => {
+    render(
+      <QuizAnswerReveal
+        language="fr"
+        question={QUESTION}
+        isCorrect
+        isLastQuestion={false}
+        onNext={vi.fn()}
+      />
+    );
+
+    expect(screen.getByTestId("quiz-answer-reveal")).not.toHaveTextContent(
+      "Type non précisé"
+    );
+  });
+
   // @req REQ-103 FR68
   it("uses --afh-terracotta and never --afh-error for an incorrect verdict", () => {
     render(
