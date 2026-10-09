@@ -557,6 +557,7 @@ export async function loadPatronymes(
           caste_or_social_function:
             dossier.casteOrSocialFunction?.value ?? null,
           content: dossier,
+          name_history: dossier.nameHistory ?? null,
           updated_at: new Date().toISOString(),
         },
         { onConflict: "id" }

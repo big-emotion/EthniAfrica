@@ -678,6 +678,42 @@ describe("migrateAfrikToDatabase", () => {
     expect(peopleOperation.row.spelling_aliases).toEqual(["Gour", "Gor"]);
   });
 
+  // @req REQ-196
+  it("writes each fiche's nameHistory onto name_history, and null where a fiche has none", async () => {
+    const nameHistory = {
+      summary: "Le nom Bété a plusieurs origines, présentées plus bas.",
+      names: [],
+    } as unknown as People["nameHistory"];
+    vi.mocked(loadAllLanguageFamilies).mockResolvedValue([
+      { ...familyFixture, nameHistory },
+    ]);
+    vi.mocked(loadAllPeoples).mockResolvedValue([
+      { ...peopleFixture, nameHistory },
+    ]);
+    const database = useSupabaseDouble({
+      rows: {
+        afrik_language_families: [
+          { id: afroasiaticFamily.id, content: {} },
+          { id: "FLG_KROU", content: {} },
+        ],
+        afrik_peoples: [{ id: betePeople.id, content: {} }],
+        afrik_countries: [{ id: coteDIvoire.id, content: {} }],
+      },
+    });
+
+    await migrateAfrikToDatabase({
+      dryRun: false,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    const rowOf = (table: string) =>
+      database.operations.find((operation) => operation.table === table)!.row;
+    expect(rowOf("afrik_language_families").name_history).toEqual(nameHistory);
+    expect(rowOf("afrik_peoples").name_history).toEqual(nameHistory);
+    expect(rowOf("afrik_countries").name_history).toBeNull();
+  });
+
   // @req REQ-032
   it("does not rewrite an unchanged protected classification while synchronizing content", async () => {
     const database = useSupabaseDouble({
