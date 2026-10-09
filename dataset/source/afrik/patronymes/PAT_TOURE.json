@@ -231,7 +231,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Touré est un nom de clan d'Afrique de l'Ouest, porté chez les Soninké et les Malinké. On l'écrit aussi Toure ou Ture. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "summary": "Le nom Touré est un nom de clan d'Afrique de l'Ouest, porté chez les Soninké et les Malinké. On l'écrit aussi Toure ou Ture. L'historien Sékéné Mody Cissoko propose deux explications de son origine ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Touré",
@@ -239,7 +239,7 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Un nom de clan soninké et malinké, écrit dès le XVIIe siècle ; son origine reste discutée.",
+        "shortLine": "Un nom de clan soninké et malinké, écrit dès le XVIIe siècle ; on ne sait pas avec certitude d'où il vient.",
         "periodLabel": "Écrit dès le XVIIe siècle ; porté aujourd'hui",
         "accounts": [
           {
@@ -268,7 +268,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
-            "statement": "Le nom Touré désigne un clan présent chez les Soninké et les Malinké. Les sources ne s'accordent pas sur son origine ; nous présentons chacune séparément.",
+            "statement": "Le nom Touré désigne un clan présent chez les Soninké et les Malinké. L'historien Sékéné Mody Cissoko propose deux explications de son origine ; nous présentons chacune séparément.",
             "aspect": "meaning",
             "sources": [
               {
@@ -280,15 +280,6 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 193, 205",
                 "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Les Ture parmi les plus anciens clans d'origine soninké de la société songhay (p. 205) ; Ture donné comme titre religieux (p. 193, note 13)."
-              },
-              {
-                "title": "Askia Muhammad I — Wikipedia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://en.wikipedia.org/wiki/Askia_Muhammad_I",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Article en anglais consulté le 9 octobre 2026. Il rapporte, d'après Stephan Bühnen (« Askiya Muḥammad I and his qabīla: name and provenance », Sudanic Africa, 2005), que al-Turi et al-Sillanki seraient des nisbas renvoyant au Fouta-Toro et à Silla, dans la vallée du Sénégal, et il ajoute que l'origine au Fouta-Toro est controversée. Nous n'avons pas lu l'article de Bühnen."
               }
             ]
           },
@@ -363,26 +354,6 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 193, note 13",
                 "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. « Ture was at that time a religious title, like Cisse, and was adopted by the Moroccan conquerors » ; la même note juge que l'askia venait probablement du clan Sylla."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 2005,
-              "to": 2005,
-              "label": "Proposé en 2005"
-            },
-            "statement": "Le nom Touré, écrit at-Turi dans la chronique, serait une nisba, un nom qui dit d'où l'on vient : il renverrait au Fouta-Toro, dans la vallée du Sénégal, selon l'historien Stephan Bühnen, dont Wikipédia rapporte la thèse.",
-            "hypothesisGroup": "origine du nom Touré",
-            "sources": [
-              {
-                "title": "Askia Muhammad I — Wikipedia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://en.wikipedia.org/wiki/Askia_Muhammad_I",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Article en anglais consulté le 9 octobre 2026. Il rapporte, d'après Stephan Bühnen (« Askiya Muḥammad I and his qabīla: name and provenance », Sudanic Africa, 2005), que al-Turi et al-Sillanki seraient des nisbas renvoyant au Fouta-Toro et à Silla, dans la vallée du Sénégal, et il ajoute que l'origine au Fouta-Toro est controversée. Nous n'avons pas lu l'article de Bühnen."
               }
             ]
           },

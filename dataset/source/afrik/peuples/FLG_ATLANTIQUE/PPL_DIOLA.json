@@ -5,7 +5,7 @@
   "currentCountries": ["SEN", "GMB", "GNB"],
   "classificationStatus": "colonial-legacy",
   "nameHistory": {
-    "summary": "Le nom Diola désigne un peuple de basse Casamance, de Gambie et du nord de la Guinée-Bissau, qui se nomme lui-même Ajamat. D'autres noms existent : Joola, Jola, et Floup pour l'un de ses groupes. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "summary": "Le nom Diola désigne un peuple de basse Casamance, de Gambie et du nord de la Guinée-Bissau, qui se nomme lui-même Ajamat. D'autres noms existent : Joola, Jola, et Floup pour l'un de ses groupes. Les sources que nous avons lues n'expliquent pas l'origine de ces noms.",
     "names": [
       {
         "nameText": "Ajamat",
@@ -64,7 +64,7 @@
               "to": null,
               "label": "Usage décrit par les auteurs"
             },
-            "statement": "Le nom Diola, ou Joola, désigne des riziculteurs de basse Casamance et du Rio Cacheu. Il réunit des groupes dont les parlers ne se comprennent pas toujours entre eux : Floup, Bayot, Blis-Kaniara, Kassa et Fooni, selon C. Wondji. L'origine du nom est discutée ; nous présentons plus bas l'explication que nous connaissons.",
+            "statement": "Le nom Diola, ou Joola, désigne des riziculteurs de basse Casamance et du Rio Cacheu. Il réunit des groupes dont les parlers ne se comprennent pas toujours entre eux : Floup, Bayot, Blis-Kaniara, Kassa et Fooni, selon C. Wondji. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
             "aspect": "meaning",
             "sources": [
               {
@@ -178,35 +178,6 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 334"
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
-            },
-            "statement": "Le nom Diola viendrait du mandinka joolaa, « celui qui rend », celui qui rend le bien comme le mal, selon Wikipédia, qui donne cette origine comme possible.",
-            "hypothesisGroup": "origine du nom Diola",
-            "sources": [
-              {
-                "title": "Jola languages — Wikipedia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://en.wikipedia.org/wiki/Jola_languages",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Section Name, consultée le 9 octobre 2026 : le nom Jola est donné comme venu de l'extérieur, et peut-être du mandinka joolaa, « celui qui rend ». La section ajoute qu'aucun nom propre n'est employé par tous les locuteurs."
-              },
-              {
-                "title": "Jola people — Wikipedia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://en.wikipedia.org/wiki/Jola_people",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Section consacrée au nom, consultée le 9 octobre 2026 : Ajamat au singulier, Ajamataw au pluriel, et Jola présenté comme le nom mandinka, « ceux qui rendent ». La section ne cite pas de source."
               }
             ]
           }

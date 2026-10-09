@@ -6,6 +6,11 @@
  * serves the same forms, written traces and answer-card fields from the
  * fiche as it did from the record, and these copies are what that promise
  * is checked against.
+ *
+ * One correction is made in the copies themselves: the operator removed
+ * origin hypotheses backed only by Wikipedia (ETNI-2008, 2026-10-09), so the
+ * Fellata record no longer announces the Arabic origin in its meaning and
+ * short line. Every other field of every record is the folded original.
  */
 import { readdirSync, readFileSync } from "fs";
 import { join } from "path";

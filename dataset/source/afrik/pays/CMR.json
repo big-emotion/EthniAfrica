@@ -7,7 +7,7 @@
   "etymology": "Le nom \"Cameroun\" dérive du portugais \"Rio dos Camarões\" (Rivière des crevettes), donné par les navigateurs portugais au XVe siècle en référence au fleuve Wouri, riche en crevettes. Le terme \"Camarões\" a été adapté en \"Cameroun\" par les Français et \"Cameroons\" par les Britanniques. Le nom anglais est déjà écrit dans le traité de protection du 12 juillet 1884, où les rois douala Bell et Akwa parlent du pays appelé \"Cameroons\", avant que l'administration allemande n'en fasse \"Kamerun\".",
   "nameOriginActor": "Le nom \"Cameroun\" provient des navigateurs portugais qui ont exploré la côte camerounaise au XVe siècle. Le terme \"Rio dos Camarões\" (Rivière des crevettes) a été donné au fleuve Wouri et a ensuite été généralisé pour désigner l'ensemble du territoire. Les colonisateurs allemands, français et britanniques ont adapté ce nom. Ni l'auteur précis du baptême ni la date exacte ne sont établis ici par une source d'époque : la tradition parle du XVe siècle.",
   "nameHistory": {
-    "summary": "Le nom Cameroun désigne un pays d'Afrique centrale, la République du Cameroun. Il vient du nom qu'un fleuve portait chez les navigateurs portugais. Le pays a porté d'autres noms : Kamerun, République fédérale du Cameroun, puis République unie du Cameroun. Les sources ne s'accordent pas toujours sur la date et la raison du nom portugais ; nous les présentons plus bas.",
+    "summary": "Le nom Cameroun désigne un pays d'Afrique centrale, la République du Cameroun. Il vient du nom qu'un fleuve portait chez les navigateurs portugais. Le pays a porté d'autres noms : Kamerun, République fédérale du Cameroun, puis République unie du Cameroun. Une seule des sources lues dit pourquoi les navigateurs portugais ont donné ce nom au fleuve ; nous la présentons plus bas.",
     "names": [
       {
         "nameText": "Cameroun",
@@ -158,26 +158,6 @@
                 "source_kind": "archive",
                 "page": "livre II, p. 77",
                 "notes": "Édition de l'Imprensa Nacional, Lisbonne, 1892, lue dans l'exemplaire numérisé d'archive.org : « adiante desta serra de fernam do poo duas leguoas ao nordest esta hum rio que se chama dos Camarões & aquy ha muita pescaria ». Le texte nomme le fleuve et dit qu'on y pêche beaucoup ; il ne dit pas d'où vient son nom."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 1472,
-              "to": 1472,
-              "label": "1472, selon cette lecture"
-            },
-            "statement": "Le nom Cameroun remonterait à 1472 : des marins portugais de Fernando Pó, entrés dans l'estuaire du Wouri, auraient alors nommé le fleuve Rio dos Camarões, selon l'article Cameroun de Wikipédia, qui ne cite pas de source pour cette date.",
-            "hypothesisGroup": "origine du nom Cameroun",
-            "sources": [
-              {
-                "title": "Cameroun — Wikipédia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://fr.wikipedia.org/wiki/Cameroun",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Article en français, consultée le 9 octobre 2026. Il rapporte que des marins portugais de Fernando Pó entrent dans l'estuaire du Wouri en 1472 et nomment le fleuve Rio dos Camarões ; ce passage ne cite pas de source. Il date aussi la République fédérale du 1er octobre 1961, la République unie du 20 mai 1972 et le retour à la République du Cameroun en 1984."
               }
             ]
           }

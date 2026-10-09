@@ -235,31 +235,6 @@
                 "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet lu le 9 octobre 2026. L'entrée Daramɛ l'enregistre comme nom de clan, sans variante, sans statut et sans sens. L'entrée Wago, dont la note est en russe, présente le Wago comme l'une des trois grandes subdivisions des Soninké, dont le berceau serait le Wagadou, et compte Drame parmi ses noms de clan ; la traduction de cette note est la nôtre. Le fichier ne donne pas la légende de ses abréviations de provenance, que nous ne lisons donc pas."
               }
             ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Récit de la tradition orale soninké"
-            },
-            "statement": "Le nom Dramé serait porté par des descendants de Dinga, l'ancêtre légendaire des Soninké, selon la tradition orale des griots soninkés que rapporte Wikipédia sans citer de source.",
-            "actors": [
-              {
-                "name": "Dinga",
-                "role": "ancêtre légendaire du récit"
-              }
-            ],
-            "sources": [
-              {
-                "title": "Soninkés — Wikipédia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://fr.wikipedia.org/wiki/Sonink%C3%A9s",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Article consulté le 9 octobre 2026. La section « Mythe des origines » attribue à la tradition orale des griots soninkés le récit de Dinga et la liste des noms de ses descendants, sans citer de source pour cette liste. La section sur les patronymes reprend une liste de Makhtar Diouf, chercheur à l'IFAN (Sénégal, les ethnies et la nation, Dakar, NEAS, 1998, p. 70-71), que nous n'avons pas lue."
-              }
-            ]
           }
         ]
       },

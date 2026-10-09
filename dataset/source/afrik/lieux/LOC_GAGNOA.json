@@ -76,7 +76,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Gagnoa est celui d'une ville du centre-ouest de la Côte d'Ivoire, en pays bété ; nous ne lui connaissons pas d'autre nom. Les sources le font venir du bété et le rattachent au fromager, sans s'accorder tout à fait sur sa forme d'origine ; nous les présentons plus bas.",
+    "summary": "Le nom Gagnoa est celui d'une ville du centre-ouest de la Côte d'Ivoire, en pays bété ; nous ne lui connaissons pas d'autre nom. L'ethnologue Jean-Pierre Dozon le fait venir du bété et le rattache au fromager ; nous présentons son explication plus bas.",
     "names": [
       {
         "nameText": "Gagnoa",
@@ -176,35 +176,6 @@
                 "source_kind": "academic",
                 "page": "p. 32",
                 "notes": "« En bété, Gagnoa signifie littéralement les hommes du fromager ; go : fromager, gnoa : les hommes. » L'auteur ne dit pas de qui il tient cette explication."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Date inconnue"
-            },
-            "statement": "Le nom Gagnoa serait une déformation de Gognoa, « homme du fromager », selon le site Rezo-Ivoire. Wikipédia écrit Go-gnoa, « les habitants du fromager », d'après un dictionnaire de 1987.",
-            "hypothesisGroup": "origine du nom Gagnoa",
-            "sources": [
-              {
-                "title": "Gagnoa (Rezo-Ivoire)",
-                "author": "Rezo-Ivoire",
-                "year": null,
-                "url": "https://rezoivoire.net/ivoire/villes-villages/1826/gagnoa.html",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "« Déformation de Gognoa (homme du fromager), aujourd'hui Gagnoa. » Sans source citée."
-              },
-              {
-                "title": "Gagnoa",
-                "author": "Wikipédia (français)",
-                "year": null,
-                "url": "https://fr.wikipedia.org/wiki/Gagnoa",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "« Le nom Gagnoa vient de « Go-gnoa » qui veut dire « les habitants du fromager » », avec un renvoi au dictionnaire de Raymond Borremans (1987, p. 100), que nous n'avons pas consulté."
               }
             ]
           }

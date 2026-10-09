@@ -221,26 +221,6 @@
               "to": null,
               "label": "Origine non datée"
             },
-            "statement": "Le nom Daloa viendrait de Dalo, un célèbre chasseur de buffles de la région, qui serait bété, selon l'article de Wikipédia sur Daloa.",
-            "hypothesisGroup": "origine du nom Daloa",
-            "sources": [
-              {
-                "title": "Daloa",
-                "author": "Wikipédia (français)",
-                "year": null,
-                "url": "https://fr.wikipedia.org/wiki/Daloa",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Section Histoire, consultée le 9 octobre 2026. L'article cite pour ce point le Grand dictionnaire encyclopédique de la Côte d'Ivoire de Raymond Borremans, tome 2, page 171 ; nous n'avons pas lu ce dictionnaire."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
-            },
             "statement": "Le nom Daloa voudrait dire « ceux de Dalo », « les descendants de Dalo » ; Dalo serait un chasseur gouro venu de Zuénoula, installé sur le site de la ville, selon Lebanco.net.",
             "hypothesisGroup": "origine du nom Daloa",
             "sources": [

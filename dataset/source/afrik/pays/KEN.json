@@ -7,7 +7,7 @@
   "etymology": "Le nom \"Kenya\" vient du mont Kenya, appelé \"Kirinyaga\" (montagne de blancheur) par les Kikuyu. Les explorateurs européens du XIXe siècle ont utilisé \"Kenya\" d'après le mont Kenya. Le nom a été officialisé lors de la colonisation britannique.",
   "nameOriginActor": "Le nom vient du mont Kenya, appelé \"Kirinyaga\" par les Kikuyu. Les explorateurs européens ont popularisé le terme \"Kenya\" au XIXe siècle. Le nom a été officialisé par les Britanniques lors de la colonisation.",
   "nameHistory": {
-    "summary": "Le nom Kenya désigne un pays d'Afrique de l'Est, la République du Kenya, qui porte le nom d'une montagne, le mont Kenya. Le pays a d'abord porté d'autres noms : Protectorat de l'Afrique de l'Est, puis Colonie du Kenya. Les sources ne s'accordent pas sur ce que voulait dire le nom de la montagne ; nous les présentons plus bas.",
+    "summary": "Le nom Kenya désigne un pays d'Afrique de l'Est, la République du Kenya, qui porte le nom d'une montagne, le mont Kenya. Le pays a d'abord porté d'autres noms : Protectorat de l'Afrique de l'Est, puis Colonie du Kenya. Le nom de la montagne voudrait dire « montagne de blancheur », selon le missionnaire Johann Ludwig Krapf ; nous présentons son explication plus bas.",
     "names": [
       {
         "nameText": "Kenya",
@@ -15,7 +15,7 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom d'une montagne, noté par un missionnaire en 1849 ; son sens premier reste discuté.",
+        "shortLine": "Le nom d'une montagne, noté par un missionnaire en 1849 ; on ne sait pas avec certitude ce qu'il voulait dire.",
         "periodLabel": "Écrit dès 1849 ; nom de l'État depuis 1963",
         "accounts": [
           {
@@ -45,7 +45,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
-            "statement": "Le nom Kenya désigne le pays et la montagne dont il vient, le mont Kenya. Le missionnaire Johann Ludwig Krapf l'a écrit d'après ce qu'on lui disait de la montagne ; ce que voulait dire ce nom reste discuté.",
+            "statement": "Le nom Kenya désigne le pays et la montagne dont il vient, le mont Kenya. Le missionnaire Johann Ludwig Krapf l'a écrit d'après ce qu'on lui disait de la montagne ; nous présentons plus bas le sens qu'il lui donne.",
             "aspect": "meaning",
             "sources": [
               {
@@ -56,15 +56,6 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "notes": "Londres, Trübner, 1860, lu dans l'exemplaire numérisé. En annexe, Krapf écrit que les Wakamba appellent la montagne « Kima ja Kegnia », qu'il traduit par « Mount of Whiteness », que d'autres peuples disent Kirenia et que les Wakuafi disent « Orldoinio eibor », « White Mountain ». Page 311, il écrit aussi « the snow-mountain Kirenia (Kenia) »."
-              },
-              {
-                "title": "Kenya — Wikipedia (en anglais)",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://en.wikipedia.org/wiki/Kenya",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Section Etymology, consultée le 9 octobre 2026. Pour l'autruche, elle cite Paul Sullivan, Kikuyu Districts (Dar es Salaam, Mkuki na Nyota, 2006), que nous n'avons pas lu."
               }
             ]
           },
@@ -210,35 +201,6 @@
                 "source_kind": "archive",
                 "page": "p. 544",
                 "notes": "Londres, Trübner, 1860, lu dans l'exemplaire numérisé. En annexe, Krapf écrit que les Wakamba appellent la montagne « Kima ja Kegnia », qu'il traduit par « Mount of Whiteness », que d'autres peuples disent Kirenia et que les Wakuafi disent « Orldoinio eibor », « White Mountain ». Page 311, il écrit aussi « the snow-mountain Kirenia (Kenia) »."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
-            },
-            "statement": "Le nom Kenya viendrait de la forme kamba Kĩ-Nyaa, que le chef Kivoi aurait donnée parce que la roche noire et la neige blanche des sommets rappelaient le plumage de l'autruche mâle, selon l'article de Wikipédia en anglais sur le Kenya et un article de WorldAtlas.",
-            "hypothesisGroup": "origine du nom Kenya",
-            "sources": [
-              {
-                "title": "Kenya — Wikipedia (en anglais)",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://en.wikipedia.org/wiki/Kenya",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Section Etymology, consultée le 9 octobre 2026. Pour l'autruche, elle cite Paul Sullivan, Kikuyu Districts (Dar es Salaam, Mkuki na Nyota, 2006), que nous n'avons pas lu."
-              },
-              {
-                "title": "How Did Kenya Get Its Name?",
-                "author": "Benjamin Elisha Sawe, WorldAtlas",
-                "year": 2019,
-                "url": "https://www.worldatlas.com/articles/how-did-kenya-get-its-name.html",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Article de vulgarisation du 2 août 2019, consulté le 9 octobre 2026. Il donne les formes kamba Kĩĩma-Kĩĩnyaa et Kĩ-Nyaa et ne cite pas de source."
               }
             ]
           }

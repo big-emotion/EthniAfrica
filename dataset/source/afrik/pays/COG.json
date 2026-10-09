@@ -7,7 +7,7 @@
   "etymology": "La République du Congo porte le même nom que le fleuve Congo, et que son voisin, la République démocratique du Congo. Une explication relie le nom du fleuve à celui de l'ancien royaume Kongo (Bentley, 1886, p. vii). Bentley rapporte que les riverains appellent le fleuve Nzadi, ou un terme voisin, qu'il traduit par « le Grand Fleuve », et que les Européens en ont fait Zaïre (même page). D'où vient le mot Kongo lui-même n'est pas établi : Bentley ne se prononce pas avec certitude ; il cite seulement, sans les relier au nom, les mots kikongo konga, nkongo et kinkongo. Nous n'avons lu qu'une seule explication de l'ordre entre le royaume et le fleuve, celle d'un missionnaire étranger ; nous n'en avons pas lu de la part de Kongo eux-mêmes. Le pays est aussi appelé « Congo-Brazzaville » pour le distinguer de la République démocratique du Congo (Congo-Kinshasa).",
   "nameOriginActor": "Le texte que nous avons lu ne dit pas qui a donné son nom au fleuve, ni quand. L'explication qui le relie au royaume Kongo décrit celui-ci comme un État ancien et puissant ; le même texte rapporte que le navigateur portugais Diogo Cam atteignit l'embouchure du fleuve en 1484 et qu'une expédition atteignit la capitale du royaume en 1491, dates qui ne disent pas quand le nom a été donné. Le nom « Congo-Brazzaville » a été utilisé pour distinguer ce pays de la République démocratique du Congo (Congo-Kinshasa) après l'indépendance des deux pays en 1960.",
   "nameHistory": {
-    "summary": "Le nom Congo désigne un pays d'Afrique centrale, la République du Congo, qui porte le nom du fleuve Congo et, avant lui, d'un ancien royaume, le Kongo. On l'appelle aussi Congo-Brazzaville. Le pays a d'abord porté d'autres noms : Congo français, Moyen-Congo, puis République populaire du Congo de 1969 à 1991. Les sources ne s'accordent pas sur l'origine du nom Congo ; nous les présentons plus bas.",
+    "summary": "Le nom Congo désigne un pays d'Afrique centrale, la République du Congo, qui porte le nom du fleuve Congo et, avant lui, d'un ancien royaume, le Kongo. On l'appelle aussi Congo-Brazzaville. Le pays a d'abord porté d'autres noms : Congo français, Moyen-Congo, puis République populaire du Congo de 1969 à 1991. Le nom Congo viendrait de celui du royaume, selon le missionnaire W. Holman Bentley, qui ne dit rien de sûr sur le sens du mot ; nous présentons son explication plus bas.",
     "names": [
       {
         "nameText": "Congo",
@@ -15,7 +15,7 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom d'un fleuve et d'un ancien royaume, écrit dès le début du XVIe siècle ; son sens reste discuté.",
+        "shortLine": "Le nom d'un fleuve et d'un ancien royaume, écrit dès le XVIe siècle ; on ne sait pas avec certitude ce qu'il veut dire.",
         "periodLabel": "Écrit vers 1505-1508 ; nom de l'État depuis 1958",
         "accounts": [
           {
@@ -45,7 +45,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
-            "statement": "Le nom Congo est celui du pays, du fleuve qui le borde et de l'ancien royaume Kongo, dont le fleuve tient son nom. D'où vient le mot Kongo lui-même n'est pas établi : les explications proposées sont présentées plus bas.",
+            "statement": "Le nom Congo est celui du pays, du fleuve qui le borde et de l'ancien royaume Kongo, dont le fleuve tient son nom. D'où vient le mot Kongo lui-même n'est pas établi ; nous présentons plus bas l'explication du missionnaire W. Holman Bentley.",
             "aspect": "meaning",
             "sources": [
               {
@@ -264,26 +264,6 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. vii",
                 "notes": "Baptist Missionary Society et Trübner, Londres, 1886 ; lu sur la numérisation de la Bibliothèque du Congrès. Missionnaire baptiste installé à San Salvador, l'auteur écrit que le fleuve est appelé par ses habitants « Nzadi, or some equivalent term », qu'il traduit « the Great River », et que les Européens en ont fait Zaire ; que le nom Zaire tombe en désuétude au profit de Congo ; que le nom du fleuve vient de Kongo ou Ekongo, nom d'un ancien royaume dont la capitale était Mbanza Ekongo ; et qu'on ne peut rien dire avec certitude de l'origine du mot Kongo lui-même. Il cite ensuite konga, nkongo et kinkongo sans dire qu'ils expliquent le nom."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
-            },
-            "statement": "Le nom Kongo viendrait d'un mot qui désigne une assemblée publique, un rassemblement, selon l'article anglais de Wikipédia sur le fleuve Congo, qui ne cite pas de source pour ce point.",
-            "hypothesisGroup": "origine du nom Congo",
-            "sources": [
-              {
-                "title": "Congo River — Wikipedia, section Name",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://en.wikipedia.org/wiki/Congo_River",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Consultée le 9 octobre 2026. La section dit que les deux républiques tirent leur nom du fleuve, et le Zaïre de 1971 à 1997 aussi ; que les noms de peuples en Kongo viendraient peut-être d'un mot désignant une assemblée publique, phrase marquée « citation needed » ; et que Zaire vient de nzere, « rivière », forme courte de nzadi o nzere, « la rivière qui avale les rivières », d'après Peter Forbath (1979, p. 19), ouvrage que nous n'avons pas lu."
               }
             ]
           }

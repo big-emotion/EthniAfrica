@@ -1604,7 +1604,7 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": "les Kanuri et les arabophones du Soudan",
-        "shortLine": "Fellata est un nom employé au Bornou et plus à l'est. Les sources proposent différentes origines.",
+        "shortLine": "Fellata est un nom employé au Bornou et plus à l'est ; il viendrait du kanouri, selon Abu-Manga.",
         "usedIn": ["knc", "apd"],
         "periodLabel": "Usage contemporain",
         "accounts": [
@@ -1614,7 +1614,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
-            "statement": "Nom donné aux Fulɓe au Bornou et plus à l'est. Heinrich Barth l'entend chez les gens du Bornou ; François de Medeiros l'attribue aux Kanuri et aux Arabes du Soudan ; Amadou Hampâté Bâ le range parmi les noms que donnent les Arabes. Ces auteurs disent qui emploie le nom, non d'où il vient. Deux origines sont proposées, l'une kanouri, l'autre arabe ; elles restent des hypothèses.",
+            "statement": "Nom donné aux Fulɓe au Bornou et plus à l'est. Heinrich Barth l'entend chez les gens du Bornou ; François de Medeiros l'attribue aux Kanuri et aux Arabes du Soudan ; Amadou Hampâté Bâ le range parmi les noms que donnent les Arabes. Ces auteurs disent qui emploie le nom, non d'où il vient. Une origine kanouri est proposée ; elle reste une hypothèse.",
             "aspect": "meaning",
             "sources": [
               {
@@ -1879,26 +1879,6 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "notes": "Chapitre 1, sections 1.1.1 et 1.1.2 : le sens de Pullo et de Fulɓe, jugé à peine étudié, une racine ful- rapportée d'après Klingenheben, et l'origine des noms peul, Fulani, fellata et fula, rapportée d'après Nussbaum (1970), Newman (1990), Abu-Manga (1986) et Arnott (1970), travaux qui n'ont pas été lus."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
-            },
-            "statement": "Le nom Fellata serait d'origine arabe, selon l'article anglais de Wikipédia sur les Peuls, qui ne cite pas de source pour ce point.",
-            "hypothesisGroup": "origine du nom Fellata",
-            "sources": [
-              {
-                "title": "Fula people — Wikipedia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://en.wikipedia.org/wiki/Fula_people",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Consultée en octobre 2026 : Fula y est rattaché aux langues mandingues, Fulani au haoussa, Fallata à l'arabe ; les variantes Fulah, Fullah, Fallatah y sont listées."
               }
             ]
           }

@@ -7,7 +7,7 @@
   "etymology": "La République démocratique du Congo tire son nom du fleuve Congo. Le nom Congo/Kongo du fleuve est historiquement lié au royaume Kongo. L'origine lexicale plus ancienne de Kongo demeure incertaine et ne peut être réduite à une signification unique.",
   "nameOriginActor": "Le nom de l'État a été repris de celui du fleuve Congo, lui-même historiquement associé au royaume Kongo. Les sources disponibles ne permettent pas d'attribuer avec certitude l'origine lexicale de Kongo à un acteur ou à une traduction unique.",
   "nameHistory": {
-    "summary": "Le nom République démocratique du Congo désigne un pays d'Afrique centrale, qui tient son nom du fleuve Congo ; on l'appelle aussi RD Congo ou Congo-Kinshasa. Le pays a d'abord porté d'autres noms : État indépendant du Congo, Congo belge, République du Congo, puis Zaïre de 1971 à 1997. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "summary": "Le nom République démocratique du Congo désigne un pays d'Afrique centrale, qui tient son nom du fleuve Congo ; on l'appelle aussi RD Congo ou Congo-Kinshasa. Le pays a d'abord porté d'autres noms : État indépendant du Congo, Congo belge, République du Congo, puis Zaïre de 1971 à 1997. Le nom Zaïre viendrait du nom que les riverains donnent au fleuve, selon le missionnaire W. Holman Bentley ; nous présentons son explication plus bas.",
     "names": [
       {
         "nameText": "République démocratique du Congo",
@@ -65,7 +65,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
-            "statement": "Le nom République démocratique du Congo reprend celui du fleuve Congo, selon le Permanent Committee on Geographical Names. Le fleuve tient lui-même son nom de l'ancien royaume Kongo, dont l'origine reste discutée.",
+            "statement": "Le nom République démocratique du Congo reprend celui du fleuve Congo, selon le Permanent Committee on Geographical Names. Le fleuve tient lui-même son nom de l'ancien royaume Kongo ; on ne sait pas avec certitude d'où vient ce mot.",
             "aspect": "meaning",
             "sources": [
               {
@@ -289,35 +289,6 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. vii",
                 "notes": "Baptist Missionary Society et Trübner, Londres, 1886 ; lu sur la numérisation de la Bibliothèque du Congrès. Missionnaire baptiste installé à San Salvador, l'auteur écrit que le fleuve est appelé par ses habitants « Nzadi, or some equivalent term », qu'il traduit « the Great River », et que les Européens en ont fait Zaire ; que le nom Zaire tombe en désuétude au profit de Congo ; que le nom du fleuve vient de Kongo ou Ekongo, nom d'un ancien royaume dont la capitale était Mbanza Ekongo ; et qu'on ne peut rien dire avec certitude de l'origine du mot Kongo lui-même. Il cite ensuite konga, nkongo et kinkongo sans dire qu'ils expliquent le nom."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
-            },
-            "statement": "Le nom Zaïre viendrait de nzere, « rivière », forme courte de nzadi o nzere, « la rivière qui avale les rivières », selon les articles de Wikipédia sur le fleuve Congo et sur le Zaïre, qui renvoient à des livres que nous n'avons pas lus.",
-            "hypothesisGroup": "origine du nom Zaïre",
-            "sources": [
-              {
-                "title": "Congo River — Wikipedia, section Name",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://en.wikipedia.org/wiki/Congo_River",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Consultée le 9 octobre 2026. La section dit que les deux républiques tirent leur nom du fleuve, et le Zaïre de 1971 à 1997 aussi ; que les noms de peuples en Kongo viendraient peut-être d'un mot désignant une assemblée publique, phrase marquée « citation needed » ; et que Zaire vient de nzere, « rivière », forme courte de nzadi o nzere, « la rivière qui avale les rivières », d'après Peter Forbath (1979, p. 19), ouvrage que nous n'avons pas lu."
-              },
-              {
-                "title": "Zaïre — Wikipédia, section Étymologie",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://fr.wikipedia.org/wiki/Za%C3%AFre",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Consultée le 9 octobre 2026. La section rattache Zaïre au mot kikongo nzadi, « fleuve », et donne nzadi o nzere pour « la rivière qui engloutit toutes les autres rivières », d'après David Van Reybrouck (p. 332), ouvrage que nous n'avons pas lu."
               }
             ]
           }

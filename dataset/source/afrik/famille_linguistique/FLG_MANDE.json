@@ -3,7 +3,7 @@
   "nameFr": "Mandé",
   "nameEn": "Mande",
   "nameHistory": {
-    "summary": "Le nom mandé désigne une famille de langues d'Afrique de l'Ouest, comme le bambara, le maninka ou le soninké. C'est un nom de savants, tiré de Manden, le nom d'un pays du haut Niger ; on a aussi dit mandingue. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "summary": "Le nom mandé désigne une famille de langues d'Afrique de l'Ouest, comme le bambara, le maninka ou le soninké. C'est un nom de savants, tiré de Manden, le nom d'un pays du haut Niger ; on a aussi dit mandingue. Les sources que nous avons lues n'expliquent pas le sens premier du nom Manden.",
     "names": [
       {
         "nameText": "Mandé",
@@ -133,7 +133,7 @@
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
-            "statement": "Le nom Manden, ou Mande, désigne un pays du haut bassin du Niger, entre Kangaba et Siguiri, dans les actuels Mali et Guinée. Djibril Tamsir Niane en fait le noyau d'origine des Maninka. Le sens premier du nom n'est pas établi ; nous présentons plus bas l'explication que nous connaissons.",
+            "statement": "Le nom Manden, ou Mande, désigne un pays du haut bassin du Niger, entre Kangaba et Siguiri, dans les actuels Mali et Guinée. Djibril Tamsir Niane en fait le noyau d'origine des Maninka. Les sources que nous avons lues n'expliquent pas le sens premier du nom.",
             "aspect": "meaning",
             "sources": [
               {
@@ -145,15 +145,6 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
                 "page": "p. 141 et p. 151, note 24"
-              },
-              {
-                "title": "Mandé — Wikipédia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://fr.wikipedia.org/wiki/Mand%C3%A9",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Section Toponymie, consultée le 9 octobre 2026. Elle rapporte les paroles du griot Babou Condé transcrites par Camara Laye dans Le Maître de la parole (1978), livre que nous n'avons pas lu."
               }
             ]
           },
@@ -235,26 +226,6 @@
                 "source_kind": "academic",
                 "notes": "Lu en texte intégral. L'auteur cite les traités manuscrits d'André Álvares de Almada (1592-1596), d'André Donelha (1625) et de Francisco de Lemos Coelho (1669 et 1684) ; ces textes anciens eux-mêmes n'ont pas été lus.",
                 "page": "p. 664-665"
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
-            },
-            "statement": "Le nom Manden voudrait dire « l'enfant du lamantin », de man, « lamantin », et den, « enfant », selon le griot Babou Condé, dont Camara Laye a transcrit les paroles. Nous ne connaissons ce récit que par Wikipédia.",
-            "hypothesisGroup": "origine du nom Manden",
-            "sources": [
-              {
-                "title": "Mandé — Wikipédia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://fr.wikipedia.org/wiki/Mand%C3%A9",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Section Toponymie, consultée le 9 octobre 2026. Elle rapporte les paroles du griot Babou Condé transcrites par Camara Laye dans Le Maître de la parole (1978), livre que nous n'avons pas lu."
               }
             ]
           }

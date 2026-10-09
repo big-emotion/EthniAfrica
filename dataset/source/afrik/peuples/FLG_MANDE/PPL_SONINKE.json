@@ -16,7 +16,7 @@
   ],
   "classificationStatus": "contested",
   "nameHistory": {
-    "summary": "Le nom Soninké désigne un peuple d'Afrique de l'Ouest, fondateur de l'empire du Ghana, qui se nomme lui-même Soninké. D'autres noms existent : Sarakolé, Marka, Wakoré. Les sources ne s'accordent pas sur l'origine du nom Soninké ; nous les présentons plus bas.",
+    "summary": "Le nom Soninké désigne un peuple d'Afrique de l'Ouest, fondateur de l'empire du Ghana, qui se nomme lui-même Soninké. D'autres noms existent : Sarakolé, Marka, Wakoré. Les sources que nous avons lues n'expliquent pas l'origine du nom Soninké.",
     "names": [
       {
         "nameText": "Soninké",
@@ -34,7 +34,7 @@
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
-            "statement": "Le nom Soninké désigne le peuple qui a fondé l'empire du Ghana, dans le Wagadu, selon Djibril Tamsir Niane. Ailleurs, le même mot a pris d'autres sens : chez les Maninka, Soninké ou Sununke désigne un Maninka resté fidèle à la religion de ses ancêtres. L'origine du nom est discutée ; nous présentons plus bas les explications que nous connaissons.",
+            "statement": "Le nom Soninké désigne le peuple qui a fondé l'empire du Ghana, dans le Wagadu, selon Djibril Tamsir Niane. Ailleurs, le même mot a pris d'autres sens : chez les Maninka, Soninké ou Sununke désigne un Maninka resté fidèle à la religion de ses ancêtres. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
             "aspect": "meaning",
             "sources": [
               {
@@ -110,46 +110,6 @@
                 "source_kind": "academic",
                 "notes": "Lu en texte intégral. L'auteur cite les traités manuscrits d'André Álvares de Almada (1592-1596), d'André Donelha (1625) et de Francisco de Lemos Coelho (1669 et 1684) ; ces textes anciens eux-mêmes n'ont pas été lus.",
                 "page": "p. 663"
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
-            },
-            "statement": "Le nom Soninké voudrait dire « homme du lamantin », soni désignant le lamantin en soninké, selon un texte ancien que reprend Wikipédia sans dire d'où il vient.",
-            "hypothesisGroup": "origine du nom Soninké",
-            "sources": [
-              {
-                "title": "Mandingues — Wikipédia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://fr.wikipedia.org/wiki/Mandingues",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Section sur les Soninké, consultée le 9 octobre 2026. Le passage reprend un texte ancien sans dire d'où il vient."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
-            },
-            "statement": "Le nom Soninké viendrait de Soni, le nom d'un grand conquérant songhaï et de sa dynastie, selon le même texte ancien que reprend Wikipédia.",
-            "hypothesisGroup": "origine du nom Soninké",
-            "sources": [
-              {
-                "title": "Mandingues — Wikipédia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://fr.wikipedia.org/wiki/Mandingues",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Section sur les Soninké, consultée le 9 octobre 2026. Le passage reprend un texte ancien sans dire d'où il vient."
               }
             ]
           }

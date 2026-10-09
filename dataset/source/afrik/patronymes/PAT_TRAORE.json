@@ -321,7 +321,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Traoré est un nom de clan, ou jamu, porté par des familles bambara et malinké. En bambara et en malinké, il se dit Tarawele ; Traoré en est la graphie française, et d'autres graphies existent : Traore et Taraore. Les sources ne s'accordent pas toujours sur son origine ; nous les présentons plus bas.",
+    "summary": "Le nom Traoré est un nom de clan, ou jamu, porté par des familles bambara et malinké. En bambara et en malinké, il se dit Tarawele ; Traoré en est la graphie française, et d'autres graphies existent : Traore et Taraore. Nous présentons plus bas la seule explication de son origine que nous connaissons.",
     "names": [
       {
         "nameText": "Traoré",
@@ -329,7 +329,7 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Un nom de clan bambara et malinké, graphie française de Tarawele ; son origine est discutée.",
+        "shortLine": "Un nom de clan bambara et malinké, graphie française de Tarawele ; on ne sait pas avec certitude d'où il vient.",
         "periodLabel": "Usage contemporain",
         "accounts": [
           {
@@ -338,7 +338,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
-            "statement": "Le nom Traoré est la graphie française de Tàrawéle, un nom de clan, ou jamu, des Bambara et des Malinké. Les dictionnaires consultés ne lui donnent pas de sens, et les explications de son origine ne s'accordent pas ; nous les présentons plus bas.",
+            "statement": "Le nom Traoré est la graphie française de Tàrawéle, un nom de clan, ou jamu, des Bambara et des Malinké. Les dictionnaires consultés ne lui donnent pas de sens ; nous présentons plus bas la seule explication de son origine que nous connaissons.",
             "aspect": "meaning",
             "sources": [
               {
@@ -610,26 +610,6 @@
                 "source_kind": "academic",
                 "page": "p. 137",
                 "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe. Notice Tàrawéle : le récit tiré de l'ouvrage en n'ko de Souleymane Kanté sur les noms et les jamu du Manden. L'ouvrage ne traduit pas la formule, et son texte original n'a pas été lu."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
-            },
-            "statement": "Le nom Traoré signifierait « le père », « le chef », « l'ancien », selon l'article Traoré de Wikipédia en français, qui ne donne pas de source pour ce sens.",
-            "hypothesisGroup": "origine du nom Traoré",
-            "sources": [
-              {
-                "title": "Traoré — Wikipédia (en français)",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://fr.wikipedia.org/wiki/Traor%C3%A9",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Article consulté le 9 octobre 2026. La phrase sur le sens du nom ne cite aucune source."
               }
             ]
           }

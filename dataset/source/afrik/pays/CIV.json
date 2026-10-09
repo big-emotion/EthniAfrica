@@ -209,29 +209,9 @@
             "period": {
               "from": null,
               "to": null,
-              "label": "Origine non datée"
-            },
-            "statement": "Le nom Côte d'Ivoire serait la traduction du portugais Costa do Marfim, qui figurerait sur des cartes marines portugaises à la fin du XVIIe siècle, selon l'article de Wikipédia sur la Côte d'Ivoire. Nous ne connaissons pas de carte portugaise qui le montre.",
-            "hypothesisGroup": "origine du nom Côte d'Ivoire",
-            "sources": [
-              {
-                "title": "Côte d'Ivoire — Wikipédia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://fr.wikipedia.org/wiki/C%C3%B4te_d%27Ivoire",
-                "tier": "unverified",
-                "source_kind": "community",
-                "notes": "Section sur le nom, consultée le 9 octobre 2026. Pour la traduction de Costa do Marfim et les portulans portugais, l'article ne cite que le site d'une société de conseil, pas une carte ou un historien."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
               "label": "Sens du nom"
             },
-            "statement": "Le nom Côte d'Ivoire désigne aujourd'hui un État. Il a d'abord désigné une portion de littoral, celle où les navires européens achetaient surtout de l'ivoire ; la langue d'où vient la forme est discutée, et les explications sont présentées à part.",
+            "statement": "Le nom Côte d'Ivoire désigne aujourd'hui un État. Il a d'abord désigné une portion de littoral, celle où les navires européens achetaient surtout de l'ivoire ; la forme du nom viendrait de celui que lui donnaient des marchands hollandais, selon Alfred Schwartz, dont l'explication est présentée à part.",
             "aspect": "meaning",
             "sources": [
               {
