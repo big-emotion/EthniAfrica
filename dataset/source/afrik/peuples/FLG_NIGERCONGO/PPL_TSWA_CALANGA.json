@@ -112,7 +112,8 @@
       {
         "title": "Joshua Project — Tswa in Mozambique",
         "url": "https://joshuaproject.net/people_groups/15600/MZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue — Tswa (tsc)",

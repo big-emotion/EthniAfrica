@@ -106,7 +106,8 @@
       {
         "title": "Human Rights Watch — Northern Uganda : Abducted and Abused (2003)",
         "url": "https://www.hrw.org/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Latigo, James Ojera — Northern Uganda: tradition-based practices in the Acholi region. In Traditional Justice and Reconciliation after Violent Conflict, IDEA, 2008",

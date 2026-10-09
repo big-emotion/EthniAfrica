@@ -75,12 +75,14 @@
       {
         "title": "Joshua Project – Ambo in Zambia",
         "url": "https://joshuaproject.net/people_groups/18917",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Zambia People Groups",
         "url": "https://joshuaproject.net/countries/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Boswell, D. – Chipimpi, Vulgar Clans, and Lala-Lamba Ethnohistory, Furman University, 2008",

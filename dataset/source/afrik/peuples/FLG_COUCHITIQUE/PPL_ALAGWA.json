@@ -76,7 +76,8 @@
       {
         "title": "Joshua Project – Alagwa in Tanzania",
         "url": "https://joshuaproject.net/people_groups/10242",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Mous M., Alagwa : a South Cushitic language of Tanzania, 2016, Rüdiger Köppe Verlag",
@@ -98,7 +99,8 @@
       {
         "title": "TanzaniaScripture.com – Alagwa History, Culture & Religion",
         "url": "https://tanzaniascripture.com/languages/alagwa/alagwa-history-culture-religion/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

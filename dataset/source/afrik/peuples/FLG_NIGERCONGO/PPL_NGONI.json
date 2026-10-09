@@ -119,7 +119,8 @@
       {
         "title": "Britannica — Mfecane",
         "url": "https://www.britannica.com/event/Mfecane",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "South African History Online — Mfecane",

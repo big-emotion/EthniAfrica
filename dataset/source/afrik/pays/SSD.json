@@ -411,6 +411,7 @@
         "title": "CIA World Factbook, Soudan du Sud, rubrique Ethnic groups (estimation de 2011), copie datée du 6 janvier 2026",
         "url": "https://web.archive.org/web/20260106203520/https://www.cia.gov/the-world-factbook/page-data/countries/south-sudan/page-data.json",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Estimation de 2011 donnée en fourchettes : « Dinka (Jieng) approximately 35-40%, Nuer (Naath) approximately 15% », avec la mention que ces chiffres sont des estimations faute d'études démographiques récentes. Les Shilluk (Chollo) sont cités sans pourcentage. La part des Dinka (35,8 %) se place dans la fourchette du Factbook, celle des Nuer (15,6 %) est proche de son « approximately 15% ». Aucune de ces deux sources ne donne de part pour les Shilluk. Le Factbook a cessé de paraître le 4 février 2026 ; copie lue le 7 octobre 2026."
       }
     ],

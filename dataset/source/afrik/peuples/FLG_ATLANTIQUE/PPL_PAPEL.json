@@ -108,7 +108,8 @@
       {
         "title": "Joshua Project, Papel in Guinea-Bissau",
         "url": "https://joshuaproject.net/people_groups/14307/PU",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Les Pepels (ou Papels) - Guinee-Bissau",
@@ -118,7 +119,8 @@
       {
         "title": "Britannica, Biombo region",
         "url": "https://www.britannica.com/place/Biombo-region-Guinea-Bissau",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

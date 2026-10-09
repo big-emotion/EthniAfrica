@@ -99,7 +99,8 @@
       {
         "title": "Britannica – Gabon",
         "url": "https://www.britannica.com/place/Gabon",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Fang people – 101 Last Tribes",
@@ -109,7 +110,8 @@
       {
         "title": "Joshua Project – Fang in Gabon",
         "url": "https://joshuaproject.net/people_groups/11187/GB",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Institut Pasteur – Histoire migratoire des peuples Bantous, 2017",

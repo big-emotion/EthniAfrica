@@ -344,12 +344,14 @@
       {
         "title": "Joshua Project — Jola-Fonyi in Senegal",
         "url": "https://joshuaproject.net/people_groups/11568/SG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Minority Rights Group — Diola (Jola) in Senegal",
         "url": "https://minorityrights.org/communities/diola-jola/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Ethnologue — Jola-Fogny (dyo)",

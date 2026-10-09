@@ -125,7 +125,8 @@
       {
         "title": "Joshua Project — Sango in Central African Republic",
         "url": "https://joshuaproject.net/people_groups/14728/CT",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

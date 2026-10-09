@@ -96,12 +96,14 @@
       {
         "title": "Minority Rights Group - Chad",
         "url": "https://minorityrights.org/country/chad/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Joshua Project - Chad people groups",
         "url": "https://joshuaproject.net/countries/CD",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "CIA World Factbook - Chad",

@@ -74,7 +74,8 @@
       {
         "title": "Bondei in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/10930",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bondei people – 101 Last Tribes",
@@ -102,7 +103,8 @@
       {
         "title": "Bondei of Tanzania – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg014913/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

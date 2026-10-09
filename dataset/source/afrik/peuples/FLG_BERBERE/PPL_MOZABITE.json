@@ -111,12 +111,14 @@
       {
         "title": "Britannica — M'zabite",
         "url": "https://www.britannica.com/topic/Mzabite",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Berber, Mozabite in Algeria",
         "url": "https://joshuaproject.net/people_groups/13842/AG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ASJP/CERIST — The Mozabite Heritage: Authenticity of Identity and Continuity",

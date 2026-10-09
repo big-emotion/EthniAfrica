@@ -102,7 +102,8 @@
       {
         "title": "Joshua Project, Silt'e in Ethiopia – Joshua Project 2024",
         "url": "https://joshuaproject.net/people_groups/11677",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue, Silt'e (stv) – SIL International 2024",
@@ -125,7 +126,8 @@
       {
         "title": "Horn of Africa Evangelical Mission — Silti people profile",
         "url": "https://hornofafrica.org/wp-content/uploads/2019/12/Silti.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Glottolog — Silt'e language (stv)",

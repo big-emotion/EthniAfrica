@@ -122,7 +122,8 @@
       {
         "title": "Human Rights Watch — Leave None to Tell the Story: Genocide in Rwanda (1999)",
         "url": "https://www.hrw.org/reports/1999/rwanda/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "CIA World Factbook — Rwanda",

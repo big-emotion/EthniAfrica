@@ -131,7 +131,8 @@
       {
         "title": "Minority Rights Group International - Chad: Toubou",
         "url": "https://minorityrights.org/country/chad/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Chapelle, Jean - Le Peuple tchadien : ses racines et sa vie quotidienne. L'Harmattan, 1980",

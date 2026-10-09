@@ -93,7 +93,8 @@
       {
         "title": "Joshua Project – Iteso in Kenya, 2025",
         "url": "https://joshuaproject.net/people_groups/15448/KE",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Uganda Bureau of Statistics – National Population and Housing Census 2024",
@@ -104,7 +105,8 @@
       {
         "title": "Encyclopedia.com – Iteso",
         "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/iteso",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Omniglot – Ateso language (ISO 639-3 : teo)",

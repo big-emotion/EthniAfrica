@@ -88,7 +88,8 @@
       {
         "title": "Joshua Project — Mende, Boumpe in Sierra Leone",
         "url": "https://joshuaproject.net/people_groups/16123/SL",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Statistics Sierra Leone — 2015 Population and Housing Census",
@@ -99,7 +100,8 @@
       {
         "title": "Britannica — Mande",
         "url": "https://www.britannica.com/topic/Mande",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "CIA World Factbook — Sierra Leone",

@@ -107,12 +107,14 @@
       {
         "title": "Joshua Project, Aja in Togo. (consulté 2025)",
         "url": "https://joshuaproject.net/people_groups/10158/TO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org, Adja of Togo (PGID: PG014304). (consulté 2025)",
         "url": "https://peoplegroups.org/people_groups/pg014304/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Peoples Dispatch, School in Benin recovers ancestral language (2025)",

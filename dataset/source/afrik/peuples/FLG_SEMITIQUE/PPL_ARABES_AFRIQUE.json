@@ -220,7 +220,8 @@
       {
         "title": "Minority Rights Group - Mauritania, Sudan, Chad profiles",
         "url": "https://minorityrights.org/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       }
     ]
   }

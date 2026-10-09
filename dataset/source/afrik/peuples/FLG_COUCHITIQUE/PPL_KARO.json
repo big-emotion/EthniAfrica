@@ -71,7 +71,8 @@
       {
         "title": "Karo in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/12547",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Karo (Ethiopia) – Glottolog 5.1, 2024",
@@ -87,7 +88,8 @@
       {
         "title": "Omotic languages – Encyclopaedia Britannica, 2024",
         "url": "https://www.britannica.com/topic/Omotic-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

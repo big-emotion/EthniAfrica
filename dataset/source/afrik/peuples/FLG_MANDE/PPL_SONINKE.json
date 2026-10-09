@@ -448,12 +448,14 @@
       {
         "title": "Joshua Project — Soninke people group all countries (2025)",
         "url": "https://joshuaproject.net/people_groups/14996",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Minority Rights Group — Mali",
         "url": "https://minorityrights.org/country/mali/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Glottolog — Soninke (snk)",
@@ -470,7 +472,8 @@
       {
         "title": "Joshua Project — Soninke in Mali",
         "url": "https://joshuaproject.net/people_groups/14996/ML",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Rosetta Panglossia — Soninke Language (snk)",
@@ -480,7 +483,8 @@
       {
         "title": "Joshua Project – Soninke in Guinea, 2025",
         "url": "https://joshuaproject.net/people_groups/14996/GV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes – Soninke people",
@@ -497,6 +501,7 @@
         "title": "Encyclopædia Universalis — Soninké ou Sarakholé",
         "url": "https://www.universalis.fr/encyclopedie/soninke-sarakhole/",
         "tier": "referenced",
+        "source_kind": "encyclopedia",
         "notes": "Début de l'article lu directement : les Soninké, un Soninké et des Soninko, se nomment ainsi eux-mêmes ; les Wolof les appellent Sarakholé ou Sarakolé ; on leur rattache souvent les Marka ou Maraka."
       },
       {

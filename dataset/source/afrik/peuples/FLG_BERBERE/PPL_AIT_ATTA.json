@@ -95,7 +95,8 @@
       {
         "title": "Hart, David. The Ait Atta of Southern Morocco: Daily Life and Recent History. Middle East and North African Studies Press, 1984",
         "url": "https://www.scribd.com/document/352703674/156167417-The-Ait-Atta-of-Southern-Morocco-Daily-Life-and-Recent-History-David-Hart-pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "academic"
       },
       {
         "title": "Amazigh Ethnic Jewels Shop, Berber Tribes - The Ait Atta",
@@ -116,7 +117,8 @@
       {
         "title": "IWGIA, The Indigenous World 2024 Morocco",
         "url": "https://iwgia.org/en/morocco/5357-iw-2024-morocco.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       }
     ]
   }

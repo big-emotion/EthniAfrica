@@ -100,7 +100,8 @@
       {
         "title": "Seychelles – Multicultural, Indian Ocean, Creole – Encyclopaedia Britannica, 2024",
         "url": "https://www.britannica.com/place/Seychelles/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

@@ -130,7 +130,8 @@
       {
         "title": "Britannica - Senufo",
         "url": "https://www.britannica.com/topic/Senufo",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Wiktionary - ISO 639-3 codes Africa (Senufo)",
@@ -141,7 +142,8 @@
       {
         "title": "Joshua Project - Senoufo, Southern in Cote d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/15066/IV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "CIA World Factbook - Burkina Faso",

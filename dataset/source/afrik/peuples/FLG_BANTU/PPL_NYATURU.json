@@ -87,7 +87,8 @@
       {
         "title": "Turu, Nyaturu in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/15657",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Nyaturu – Glottolog 5.3, code nyat1246, ISO 639-3: rim",

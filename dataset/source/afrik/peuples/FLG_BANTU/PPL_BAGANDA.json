@@ -196,7 +196,8 @@
       {
         "title": "EBSCO Research Starters - Rise of Buganda",
         "url": "https://www.ebsco.com/research-starters/history/rise-buganda",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "CIA World Factbook — Uganda",
@@ -213,7 +214,8 @@
       {
         "title": "Joshua Project — Baganda in Uganda",
         "url": "https://joshuaproject.net/people_groups/10346/ug",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "UNESCO — Bark cloth making in Uganda (Buganda) — Patrimoine culturel immateriel inscrit 2008",

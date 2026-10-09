@@ -143,7 +143,8 @@
       {
         "title": "Minority Rights Group International (s.d.) – *Krou in Côte d'Ivoire*",
         "url": "https://minorityrights.org/communities/krou/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "La Dépêche d'Abidjan (2021) – « Hommage à Frédéric Bruly Bouabré – Le Peuple bété, Histoires et Cultures »",
@@ -154,7 +155,8 @@
       {
         "title": "Encyclopaedia Universalis (s.d.) – *Krou*",
         "url": "https://www.universalis.fr/dictionnaire/krou/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ivoire 225 (2025) – « Les Peuples de Côte d'Ivoire : Diversité, Culture et Cohésion Nationale »",
@@ -191,6 +193,7 @@
         "title": "Encyclopædia Britannica, 11e édition (1911) — Krumen",
         "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Krumen",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Texte de l'édition de 1911, cité pour les graphies Krus, Croos, Kroomen et Krooboys."
       }
     ]

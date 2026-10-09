@@ -85,7 +85,8 @@
       {
         "title": "Nkoya, Lambya in Zambia – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/13954",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Kazanga Ceremony, Kaoma district – Wim van Binsbergen, Quest Journal",
@@ -101,7 +102,8 @@
       {
         "title": "Nkoya of Zambia – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015618/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

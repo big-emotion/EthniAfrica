@@ -74,12 +74,14 @@
       {
         "title": "Kinga in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/12699",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kinga – TanzaniaScripture.com, 2021",
         "url": "https://tanzaniascripture.com/languages/kinga/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kinga people – Tanzania Tourist Board / Facebook, 2024",
@@ -94,7 +96,8 @@
       {
         "title": "Kinga of Tanzania – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg014963/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kinga – University of Missouri DICE",

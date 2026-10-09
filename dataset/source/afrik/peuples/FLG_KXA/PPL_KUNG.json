@@ -112,7 +112,8 @@
       {
         "title": "Joshua Project — Ju'hoan language resources (ktz)",
         "url": "https://joshuaproject.net/languages/ktz",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "UNESCO Tentative List — San Living Cultural Landscape",
@@ -123,7 +124,8 @@
       {
         "title": "Internet Archive — N/um tchai: The Ceremonial Dance of the !Kung Bushmen (Marshall, 1969)",
         "url": "https://archive.org/details/numtchaitheceremonialdanceofthekungbushmen",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Kx'a language subgroup",

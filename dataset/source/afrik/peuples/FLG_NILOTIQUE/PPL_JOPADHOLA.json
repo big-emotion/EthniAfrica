@@ -83,7 +83,8 @@
       {
         "title": "Swordshare Map — Dhopadhola ISO 639-3 adh",
         "url": "https://map.swordshare.com/adh",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ogot, B.A. (1967). History of the southern Luo. East African Publishing House, Nairobi",

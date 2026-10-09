@@ -113,7 +113,8 @@
       {
         "title": "Mission Atlas Project — Cote d'Ivoire Country Profile",
         "url": "http://www.worldmap.org/uploads/9/3/4/4/9344303/cote_divoire_country_profile.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Refworld/MRGI — World Directory of Minorities and Indigenous Peoples, Cote d'Ivoire",

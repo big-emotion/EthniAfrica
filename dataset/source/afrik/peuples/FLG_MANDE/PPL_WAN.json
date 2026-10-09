@@ -89,7 +89,8 @@
       {
         "title": "Joshua Project - Wan, Nwa in Cote d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/15848",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue - Wan Language (WAN)",

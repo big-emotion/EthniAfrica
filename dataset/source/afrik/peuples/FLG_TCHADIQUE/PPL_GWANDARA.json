@@ -102,7 +102,8 @@
       {
         "title": "Joshua Project — Gwandara in Nigeria",
         "url": "https://joshuaproject.net/people_groups/12015",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "OlaLeone.org — History of Gwandara, an Aboriginal of Hausa Land",
@@ -123,7 +124,8 @@
       {
         "title": "Swordshare Map — Gwandara (gwn)",
         "url": "https://map.swordshare.com/gwn",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "CIA World Factbook — Nigeria",

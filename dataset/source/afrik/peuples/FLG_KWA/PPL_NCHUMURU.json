@@ -84,12 +84,14 @@
       {
         "title": "Nchumburu, Kyombaron in Ghana – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/13266",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Nawuri in Ghana – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/13261",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Krachi Nchumuru District – City Population 2021",
@@ -99,7 +101,8 @@
       {
         "title": "Ghana people groups, languages and religions – Joshua Project",
         "url": "https://joshuaproject.net/countries/gh",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

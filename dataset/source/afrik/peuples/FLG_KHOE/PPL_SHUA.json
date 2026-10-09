@@ -123,12 +123,14 @@
       {
         "title": "Botswana country page — Joshua Project",
         "url": "https://joshuaproject.net/countries/bc",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "IWGIA — Indigenous World 2025",
         "url": "https://iwgia.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "Facebook — Culture Botswana : SUA is corruption of original Khwe name",

@@ -114,7 +114,8 @@
       {
         "title": "Minority Rights Group — Banyarwanda in the DRC",
         "url": "https://minorityrights.org/communities/banyarwanda/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Bilinguistics — Kinyarwanda Speech and Language Development",

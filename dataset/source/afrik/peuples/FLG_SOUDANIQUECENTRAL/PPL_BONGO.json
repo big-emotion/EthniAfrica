@@ -89,7 +89,8 @@
       {
         "title": "Britannica — Bongo people",
         "url": "https://www.britannica.com/topic/Bongo-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Metropolitan Museum of Art — Reclaiming the Histories of The Met's Bongo Ngya (2018)",
@@ -106,7 +107,8 @@
       {
         "title": "Joshua Project — Bongo in South Sudan",
         "url": "https://joshuaproject.net/people_groups/10939",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Pacific Lutheran University — Bongo Grave Post",

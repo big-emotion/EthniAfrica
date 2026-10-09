@@ -130,7 +130,8 @@
       {
         "title": "Encyclopaedia Britannica — Tumbuka",
         "url": "https://www.britannica.com/topic/Tumbuka",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

@@ -117,12 +117,14 @@
       {
         "title": "Joshua Project — Tswa in Mozambique (MZ)",
         "url": "https://joshuaproject.net/people_groups/15600/MZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Tswa of Zimbabwe",
         "url": "https://peoplegroups.org/people_groups/pg015681/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Tswa (tsc)",
@@ -133,7 +135,8 @@
       {
         "title": "IMB (International Mission Board) — Tswa of Zimbabwe Flyer",
         "url": "https://www.imb.org/wp-content/uploads/2020/08/Tswa-Zimbabwe-Flyer.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

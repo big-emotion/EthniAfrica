@@ -92,12 +92,14 @@
       {
         "title": "Han Chinese, Mandarin in Seychelles – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/12051/SE",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Seychelles – Multicultural, Indian Ocean, Creole – Encyclopaedia Britannica, 2024",
         "url": "https://www.britannica.com/place/Seychelles/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "The Chinese in Seychelles Facts and Origins – My China Roots",

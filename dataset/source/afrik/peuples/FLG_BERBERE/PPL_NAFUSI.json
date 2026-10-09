@@ -97,12 +97,14 @@
       {
         "title": "Joshua Project — Berber, Jabal Nafusah in Libya",
         "url": "https://joshuaproject.net/people_groups/12306",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Britannica — Libya : People",
         "url": "https://www.britannica.com/place/Libya/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Reuters — Berber culture reborn in Libya revolt",

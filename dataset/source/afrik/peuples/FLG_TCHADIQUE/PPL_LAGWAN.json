@@ -105,12 +105,14 @@
       {
         "title": "Joshua Project — Kotoko, Lagwan in Cameroon",
         "url": "https://joshuaproject.net/people_groups/print/12816/CM",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Peoplegroups.org — Kotoko-Logone of Chad",
         "url": "https://peoplegroups.org/people_groups/pg011389/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes — Kotoko people",

@@ -110,7 +110,8 @@
       {
         "title": "Joshua Project — Kambata in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/12468",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Wolde Lakew Hirigo. The Case of Kambata and Hadiya (1890s–1990s). Haramaya University, 2023",
@@ -133,7 +134,8 @@
       {
         "title": "Kambata of Ethiopia – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg011602/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Cushitic Language Groups Ethiopia – Country Studies, US Library of Congress",

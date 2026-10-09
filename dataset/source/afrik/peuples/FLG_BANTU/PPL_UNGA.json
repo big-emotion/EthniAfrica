@@ -74,12 +74,14 @@
       {
         "title": "Joshua Project – Unga in Zambia",
         "url": "https://joshuaproject.net/people_groups/15714",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org – Unga of Zambia PGID PG015641",
         "url": "https://peoplegroups.org/people_groups/pg015641/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Imai, I. – Fishing Life in the Bangweulu Swamps: A Socio-ecological Study of the Swamp Fishermen in Zambia, African Study Monographs Supplementary Issue n°4, Kyoto University",

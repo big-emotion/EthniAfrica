@@ -161,17 +161,20 @@
       {
         "title": "Joshua Project — Susu people group all countries (2025)",
         "url": "https://joshuaproject.net/people_groups/15141",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Susu in Guinea-Bissau (2026)",
         "url": "https://joshuaproject.net/people_groups/15141/PU",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Susu of Guinea (PG013431)",
         "url": "https://peoplegroups.org/people_groups/pg013431/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Rosetta Panglossia — Susu Language (sus)",

@@ -114,7 +114,8 @@
       {
         "title": "Joshua Project — Heikum San in Botswana",
         "url": "https://joshuaproject.net/countries/bc",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Glottolog — Hainum subgroup, code haio1238",
@@ -125,7 +126,8 @@
       {
         "title": "Cultural Survival — The Hunter-Gatherer Myth in Southern Africa",
         "url": "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/hunter-gatherer-myth-southern-africa",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       }
     ]
   }

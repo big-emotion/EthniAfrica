@@ -108,7 +108,8 @@
       {
         "title": "Joshua Project — Guere in Côte d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/11124",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ECOI/IRB Canada — Côte d'Ivoire : information sur l'ethnie Wé, 2018",
@@ -118,7 +119,8 @@
       {
         "title": "Minority Rights Group — Côte d'Ivoire",
         "url": "https://minorityrights.org/country/cote-divoire/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Guiblehon, Bi Drombé — La conception du temps chez les Wè en Côte d'Ivoire. Sycomore 5.1, 2011",

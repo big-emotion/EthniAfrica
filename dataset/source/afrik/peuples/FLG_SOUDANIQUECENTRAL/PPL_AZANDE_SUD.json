@@ -121,7 +121,8 @@
       {
         "title": "Joshua Project — Azande in South Sudan",
         "url": "https://joshuaproject.net/people_groups/10526/od",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Conflict Sensitivity Resource Facility — Ezo County, Western Equatoria",

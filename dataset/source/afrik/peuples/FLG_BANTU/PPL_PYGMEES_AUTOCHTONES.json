@@ -110,12 +110,14 @@
       {
         "title": "Les Baka : Territoires et Modes de Vie Traditionnels – IWGIA, Pyhala Aili",
         "url": "https://iwgia.org/images/publications/0584_informe_13_fre_opt.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "Des leaders Baka et Bagyeli exposent les problemes – Forest Peoples Programme, 2010",
         "url": "https://www.forestpeoples.org/fr/publications-resources/news/article/des-leaders-baka-et-bagyeli-exposent-les-problemes-de-leur-forets-aupres-des-medias-et-du-public/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Dictionnaire de l'Académie française, 1re édition (1694), entrée « pigmée » renvoyant à « pygmée »",

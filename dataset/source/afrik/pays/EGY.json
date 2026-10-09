@@ -269,12 +269,14 @@
       {
         "title": "Joshua Project – Coptic in Egypt",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Encyclopaedia of Islam – Egypt",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Recensements égyptiens",

@@ -96,7 +96,8 @@
       {
         "title": "Encyclopaedia Britannica, Comoros",
         "url": "https://www.britannica.com/place/Comoros",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "UNFPA, Comoros Population 2025",
@@ -107,12 +108,14 @@
       {
         "title": "Joshua Project, Comorian in France",
         "url": "https://joshuaproject.net/people_groups/19179",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ISS Africa, Comoros-Mayotte migration",
         "url": "https://issafrica.org/iss-today/comoros-mayotte-saga-a-microcosm-of-africa-europe-migration-crisis",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "ngo"
       }
     ]
   }

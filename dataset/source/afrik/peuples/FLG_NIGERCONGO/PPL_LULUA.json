@@ -100,12 +100,14 @@
       {
         "title": "Encyclopaedia Britannica — Luba",
         "url": "https://www.britannica.com/topic/Luba-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Minority Rights Group — Kasaians of Luba origin",
         "url": "https://minorityrights.org/communities/kasaians-of-luba-origin/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Wikimedia Commons — Tshiluba language",

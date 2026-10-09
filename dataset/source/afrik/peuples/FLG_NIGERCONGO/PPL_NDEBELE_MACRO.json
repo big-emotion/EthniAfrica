@@ -110,7 +110,8 @@
       {
         "title": "Encyclopaedia Britannica — Ndebele (Zimbabwean people)",
         "url": "https://www.britannica.com/topic/Ndebele-Zimbabwean-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "South African History Online — Ndebele",
@@ -121,7 +122,8 @@
       {
         "title": "Joshua Project — Ndebele, Southern in South Africa",
         "url": "https://joshuaproject.net/people_groups/15054",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Northern Ndebele (nde)",

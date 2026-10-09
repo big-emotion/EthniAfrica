@@ -124,7 +124,8 @@
       {
         "title": "Joshua Project — Kanembu in Niger",
         "url": "https://joshuaproject.net/people_groups/12489/NG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Michigan State University — Introduction to the Kanuri Language",

@@ -88,12 +88,14 @@
       {
         "title": "Joshua Project — Kenga in Chad (profil complet)",
         "url": "https://joshuaproject.net/people_groups/12620/CD",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Kenga in Chad (fiche imprimable)",
         "url": "https://joshuaproject.net/people_groups/print/12620/CD",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Kenga language (kyq)",
@@ -104,7 +106,8 @@
       {
         "title": "Peoplegroups.org — Kenga of Chad",
         "url": "https://peoplegroups.org/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "CIA World Factbook — Chad",
@@ -115,7 +118,8 @@
       {
         "title": "Joshua Project — Chad people groups (vue generale)",
         "url": "https://joshuaproject.net/countries/CD",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

@@ -109,12 +109,14 @@
       {
         "title": "Mbukushu in Zambia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13639/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Mbukushu, Gova in Botswana – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13639/BC",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Mbukushu people – Africa 101 Last Tribes, 2025",
@@ -130,12 +132,14 @@
       {
         "title": "Zambia people groups – Joshua Project",
         "url": "https://joshuaproject.net/countries/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Mbukushu of Angola – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015190/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Glottolog — Mbukushu (mbuk1240)",

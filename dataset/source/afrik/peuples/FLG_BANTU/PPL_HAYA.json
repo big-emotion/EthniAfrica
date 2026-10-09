@@ -110,7 +110,8 @@
       {
         "title": "Joshua Project - Haya, Ziba in Tanzania",
         "url": "https://joshuaproject.net/people_groups/12075/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "University of Missouri - DICE cross-cultural database",

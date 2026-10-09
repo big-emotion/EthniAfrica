@@ -99,17 +99,20 @@
       {
         "title": "Encyclopaedia Britannica — Griqua",
         "url": "https://www.britannica.com/topic/Griqua",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Encyclopaedia Britannica — Baster",
         "url": "https://www.britannica.com/topic/Baster",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "IWGIA — The Indigenous World 2024: South Africa",
         "url": "https://iwgia.org/en/south-africa/5358-iw-2024-southafrica.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "South African History Online — Rehoboth",

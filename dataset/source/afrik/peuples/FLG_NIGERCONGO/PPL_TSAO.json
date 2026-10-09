@@ -96,12 +96,14 @@
       {
         "title": "Britannica — People of the Democratic Republic of the Congo",
         "url": "https://www.britannica.com/place/Democratic-Republic-of-the-Congo/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "IWGIA — Indigenous peoples in the Democratic Republic of Congo",
         "url": "https://iwgia.org/en/democratic-republic-of-congo.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "Vansina, Jan — Paths in the Rainforests: Toward a History of Political Tradition in Equatorial Africa. University of Wisconsin Press, 1990",

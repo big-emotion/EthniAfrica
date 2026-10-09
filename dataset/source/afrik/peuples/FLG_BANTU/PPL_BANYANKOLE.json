@@ -100,12 +100,14 @@
       {
         "title": "Joshua Project – Banyankore in Uganda",
         "url": "https://joshuaproject.net/people_groups/12103/UG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Encyclopedia.com – Banyankole",
         "url": "https://www.encyclopedia.com/places/africa/uganda-political-geography/banyankole",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Mulera, Muniini K. – Clans and totems of Banyankore, 2019",

@@ -124,7 +124,8 @@
       {
         "title": "Britannica — Pedi",
         "url": "https://www.britannica.com/topic/Pedi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Kruger Park — Pedi African Tribe",

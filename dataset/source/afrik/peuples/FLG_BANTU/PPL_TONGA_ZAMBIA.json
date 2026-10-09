@@ -150,7 +150,8 @@
       {
         "title": "Encyclopaedia Britannica — Tonga (African people)",
         "url": "https://www.britannica.com/topic/Tonga-African-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Toward Freedom — Why Zimbabwe's People of the Great River Have No Water (2023)",
@@ -204,7 +205,8 @@
       {
         "title": "Encyclopedia.com — Leza",
         "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/leza",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Facebook/Batonga — The Ancient Tonga Spiritual Hierarchy (Leza, Mizimo)",
@@ -219,7 +221,8 @@
       {
         "title": "Tonga people – Chalo Chatu, Zambia Online Encyclopedia",
         "url": "http://www.chalochatu.org/index.php?title=Tonga_people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Tonga (Batonga) Tribe – TribeGuess",
@@ -251,7 +254,8 @@
       {
         "title": "Smithsonian Folkways — Dance Songs with Drums from the Valley Tonga",
         "url": "https://folkways.si.edu/dance-songs-with-drums-from-the-valley-tonga-people-of-zambia/world/music/album/smithsonian",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "archive"
       }
     ]
   }

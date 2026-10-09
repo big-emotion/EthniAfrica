@@ -93,7 +93,8 @@
       {
         "title": "Joshua Project — Kalabari in Nigeria (ijn)",
         "url": "https://joshuaproject.net/people_groups/12441/NI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Alagoa, E.J. (2009). A History of the Niger Delta. Port Harcourt: Onyoma Research Publications",
@@ -109,7 +110,8 @@
       {
         "title": "SwordShare Language Map — Kalabari ISO 639-3 ijn",
         "url": "https://map.swordshare.com/ijn",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

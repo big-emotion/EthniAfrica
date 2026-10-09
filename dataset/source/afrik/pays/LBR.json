@@ -361,6 +361,7 @@
         "title": "CIA World Factbook – Liberia, édition archivée du 26 décembre 2025",
         "url": "https://web.archive.org/web/20251226162048/https://www.cia.gov/the-world-factbook/countries/liberia/",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Instantané pris avant l'arrêt de la publication, le 4 février 2026. Origine de la répartition par peuple retenue ici, que cette édition rapportait du recensement libérien de 2008."
       },
       {

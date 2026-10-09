@@ -97,22 +97,26 @@
       {
         "title": "Joshua Project, Temne of Sierra Leone",
         "url": "https://joshuaproject.net/people_groups/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org, Temne of Sierra Leone",
         "url": "https://peoplegroups.org/people_groups/pg014297/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Britannica, Temne",
         "url": "https://www.britannica.com/topic/Temne",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Minority Rights Group, Sierra Leone",
         "url": "https://minorityrights.org/country/sierra-leone/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "101 Last Tribes, Temne people",

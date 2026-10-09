@@ -127,7 +127,8 @@
       {
         "title": "Minority Rights Group — Liberia",
         "url": "https://minorityrights.org/country/liberia/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Sage Reference — Encyclopedia of African Religion, Bassa",
@@ -203,6 +204,7 @@
         "title": "Encyclopædia Britannica, 11e édition (1911) — Krumen",
         "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Krumen",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Texte de l'édition de 1911, cité pour la graphie Basa, donnée pour un peuple apparenté aux Kru sur la côte libérienne."
       }
     ]

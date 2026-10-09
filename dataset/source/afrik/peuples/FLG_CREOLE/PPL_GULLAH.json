@@ -98,12 +98,14 @@
         "title": "South Carolina Encyclopedia - Gullah",
         "url": "https://www.scencyclopedia.org/sce/entries/gullah/",
         "tier": "referenced",
+        "source_kind": "encyclopedia",
         "notes": "Encyclopédie académique adossée à l'Institute for Southern Studies (University of South Carolina) ; entrée signée."
       },
       {
         "title": "New Georgia Encyclopedia - Geechee and Gullah Culture (Althea Sumpter, Georgia Institute of Technology)",
         "url": "https://www.georgiaencyclopedia.org/articles/arts-culture/geechee-and-gullah-culture/",
         "tier": "referenced",
+        "source_kind": "encyclopedia",
         "notes": "Encyclopédie académique à entrées signées ; auteure affiliée au Georgia Institute of Technology."
       },
       {

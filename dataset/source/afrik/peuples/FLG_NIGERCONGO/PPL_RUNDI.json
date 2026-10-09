@@ -111,12 +111,14 @@
       {
         "title": "Britannica — Rundi people",
         "url": "https://www.britannica.com/topic/Rundi-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica — Kingdom of Burundi",
         "url": "https://www.britannica.com/place/Kingdom-of-Burundi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue — Rundi / Kirundi (run)",

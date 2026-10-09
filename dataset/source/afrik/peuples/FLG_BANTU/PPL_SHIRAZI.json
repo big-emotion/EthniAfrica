@@ -98,22 +98,26 @@
       {
         "title": "Shirazi and Arabs of Zanzibar – Minority Rights Group",
         "url": "https://minorityrights.org/communities/shirazi-and-arabs-of-zanzibar/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Eastern Africa: The Shirazi migration – Britannica",
         "url": "https://www.britannica.com/place/eastern-Africa/The-Shirazi-migration",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Shirazi in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/print/14915/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Shirazi of Tanzania – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg050316/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Jerman, Helena – Washirazi identity and Islam, XVIIe siecle (reference academique)",

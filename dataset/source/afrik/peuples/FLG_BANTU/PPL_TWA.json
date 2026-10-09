@@ -107,17 +107,20 @@
       {
         "title": "Minority Rights Group International, Twa in Rwanda",
         "url": "https://minorityrights.org/communities/twa-2/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Minority Rights Group International, Twa Women, Twa Rights in the Great Lakes Region, Dorothy Jackson, 2003",
         "url": "https://minorityrights.org/resources/twa-women-twa-rights-in-the-great-lakes-region-of-africa/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Jerome Lewis, The Batwa Pygmies of the Great Lakes Region, MRG Report, 2000",
         "url": "https://citizenshiprightsafrica.org/wp-content/uploads/2001/03/Lewis-Batwa-report-MRG-2000.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "UNPO, Rapport UPR Rwanda 23e session – situation des Batwa",
@@ -143,7 +146,8 @@
       {
         "title": "IWGIA (International Work Group for Indigenous Affairs), profil des Batwa des Grands Lacs",
         "url": "https://www.iwgia.org",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "Dictionnaire de l'Académie française, 1re édition (1694), entrée « pigmée » renvoyant à « pygmée »",

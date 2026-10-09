@@ -111,7 +111,8 @@
       {
         "title": "Joshua Project - Zaghawa people groups",
         "url": "https://joshuaproject.net/people_groups/16080/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Immigration and Refugee Board of Canada - Goranes et Zaghawa du Tchad (2013)",
@@ -121,12 +122,14 @@
       {
         "title": "Brookings Institution - The death of Chadian President Deby (2021)",
         "url": "https://www.brookings.edu/articles/the-death-of-chadian-president-idris-deby-itno-threatens-stability-in-the-region/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Minority Rights Group - Chad",
         "url": "https://minorityrights.org/country/chad/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       }
     ]
   }

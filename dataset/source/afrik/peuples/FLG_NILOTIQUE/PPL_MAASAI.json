@@ -123,7 +123,8 @@
       {
         "title": "Joshua Project — Maasai, Arusha in Tanzania",
         "url": "https://joshuaproject.net/people_groups/10441",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   },

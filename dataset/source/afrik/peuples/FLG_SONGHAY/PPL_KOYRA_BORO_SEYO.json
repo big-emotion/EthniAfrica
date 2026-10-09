@@ -107,7 +107,8 @@
       {
         "title": "Joshua Project — Songhai-Koyraboro in Mali",
         "url": "https://joshuaproject.net/people_groups/14989",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ScriptSource — Koyraboro Senni Songhay (ses)",

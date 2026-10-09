@@ -97,7 +97,8 @@
       {
         "title": "Human Rights Watch — South Africa: Ciskei: Ten Years on",
         "url": "https://www.hrw.org/reports/1991/southafrica3/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "SIL Ethnologue — Xhosa (xho)",

@@ -105,12 +105,14 @@
       {
         "title": "Minority Rights Group – Wayeyi in Botswana",
         "url": "https://minorityrights.org/communities/wayeyi/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Survival International – Wayeyi related material",
         "url": "https://www.survivalinternational.org/materials/95",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Africa 101 Last Tribes – The Okavango Delta Peoples of Botswana",

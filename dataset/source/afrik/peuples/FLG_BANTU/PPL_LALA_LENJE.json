@@ -98,12 +98,14 @@
       {
         "title": "Joshua Project – Lenje in Zambia",
         "url": "https://joshuaproject.net/people_groups/13039",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org – Lenje of Zambia PG015590",
         "url": "https://peoplegroups.org/people_groups/pg015590/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Explore Lusaka – Before Lusaka: A Brief History of the Soli and Lenje Peoples",

@@ -104,7 +104,8 @@
       {
         "title": "Joshua Project — Swahili, Zanzibari in Oman",
         "url": "https://joshuaproject.net/people_groups/16087/MU",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "IJICC — The Omani Diaspora in Eastern Africa (Yenigun 2021)",
@@ -114,12 +115,14 @@
       {
         "title": "EBSCO Research Starters — Oman Captures Zanzibar",
         "url": "https://www.ebsco.com/research-starters/history/oman-captures-zanzibar",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Citizenship Rights Africa — OAHR Right to Return Campaign (2019)",
         "url": "https://citizenshiprightsafrica.org/east-africa-oahr-launches-right-to-return-campaign-coinciding-with-the-world-conference-on-statelessness/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Reddit r/Oman — Swahili speakers in Oman (2025)",

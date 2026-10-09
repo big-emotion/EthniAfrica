@@ -122,7 +122,8 @@
       {
         "title": "Joshua Project — Bambara in Mali",
         "url": "https://joshuaproject.net/people_groups/10530/ML",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Marc Ladreit de Lacharriere Collection — N'tomo masks",
@@ -132,7 +133,8 @@
       {
         "title": "Britannica — Umar Tal",
         "url": "https://www.britannica.com/biography/Umar-Tal",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Zahan, Dominique. La Dialectique du verbe chez les Bambara. Paris : Mouton, 1963",

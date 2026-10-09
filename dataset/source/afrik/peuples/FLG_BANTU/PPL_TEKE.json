@@ -129,12 +129,14 @@
       {
         "title": "Teke – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Teke",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Teke, Northern in Gabon – Joshua Project 2025",
         "url": "https://joshuaproject.net/people_groups/14033/GB",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bateke (People) Overview – StudyGuides.com, 2026",
@@ -193,6 +195,7 @@
         "title": "Loi du 30 novembre 1882 approuvant les traite et acte signes les 10 septembre et 3 octobre 1880 par M. de Brazza et le roi Makoko, Journal officiel de la Republique francaise, 3 decembre 1882, p. 6513",
         "url": "https://mjp.univ-perp.fr/constit/cg1880.htm",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Texte de la loi et des deux actes annexes, lu sur la Digitheque de materiaux juridiques et politiques de l'Universite de Perpignan. Le traite est fait a Ndao, au village de Makoko, le 10 septembre 1880 ; l'acte du 3 octobre 1880, fait a Ncouna, est la prise de possession du territoire devant les chefs vassaux."
       },
       {

@@ -364,6 +364,7 @@
         "title": "Koelle, Sigismund Wilhelm (1854) – Polyglotta Africana. Church Missionary House, Londres",
         "url": "https://github.com/lexibank/polyglottaafricana",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Transcription savante du texte de 1854, publiée comme jeu de données par le projet Lexibank. Les remarques de terrain de Koelle sur le pays de Mánde et sur le suffixe de gentilé y sont lues intégralement."
       },
       {
@@ -462,7 +463,8 @@
       {
         "title": "Britannica – \"Mande languages\" et \"Mande peoples\" articles",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Glottolog (2025) – \"Mande\"",
@@ -486,6 +488,7 @@
         "title": "Almada, André Álvares de (1594) – Tratado breve dos rios de Guiné do Cabo Verde",
         "url": "https://archive.org/details/tratadobrevedosr00alma",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Le chapitre III est consacré au royaume des Mandingues. Fac-similé consultable en ligne."
       },
       {
@@ -499,12 +502,14 @@
         "title": "Caillié, René (1830) – Journal d'un voyage à Temboctou et à Jenné",
         "url": "https://archive.org/details/journaldunvoyage01cail",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Le mot Mandingues y revient une centaine de fois sur les deux volumes ; le mot mandé n'y apparaît pas."
       },
       {
         "title": "Delafosse, Maurice (1929) – La langue mandingue et ses dialectes : malinké, bambara, dioula",
         "url": "https://gallica.bnf.fr/ark:/12148/bpt6k3412996f",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Le titre porte la thèse d'une langue mandingue unique à dialectes. Numérisé par la Bibliothèque nationale de France."
       },
       {

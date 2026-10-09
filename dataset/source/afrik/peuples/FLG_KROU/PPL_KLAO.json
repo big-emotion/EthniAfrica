@@ -109,12 +109,14 @@
       {
         "title": "Encyclopaedia Britannica — Kru",
         "url": "https://www.britannica.com/topic/Kru",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Minority Rights Group — Liberia",
         "url": "https://minorityrights.org/country/liberia/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Qiraat Africa — The Kru/Kroo of West Africa",

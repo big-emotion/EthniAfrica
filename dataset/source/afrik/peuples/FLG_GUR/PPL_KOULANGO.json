@@ -89,12 +89,14 @@
       {
         "title": "Kulango, Bouna in Côte d'Ivoire – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10955/IV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kulango, Bouna people group in all countries – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10955",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "TERROIR : L'histoire du peuple Koulango – Djasso.com, 2021",
@@ -109,7 +111,8 @@
       {
         "title": "Kulango of Ghana – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg013276/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Parlons Koulango – Kra (linguistique), The Swiss Bay PDF",

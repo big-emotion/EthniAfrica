@@ -133,7 +133,8 @@
       {
         "title": "Britannica — Gur languages",
         "url": "https://www.britannica.com/topic/Gur-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Bodomo, Adams (2017) — Mabia classification of Central Gur languages",

@@ -109,7 +109,8 @@
       {
         "title": "Joshua Project – Luchazi in Angola",
         "url": "https://joshuaproject.net/people_groups/13138/ao",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Luchazi Language Blog – Origins",
@@ -119,7 +120,8 @@
       {
         "title": "PeopleGroups.org – Luchazi of Zambia PG015596",
         "url": "https://peoplegroups.org/people_groups/pg015596/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Glottolog — Luchazi (luch1239)",

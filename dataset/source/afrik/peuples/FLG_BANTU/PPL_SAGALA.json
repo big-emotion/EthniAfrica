@@ -85,12 +85,14 @@
       {
         "title": "Sagara in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/14636",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Sagara of Tanzania (PGID: PG015032) – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg015032/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bollaert, Flore – The synchronic phonology and nominal morphology of Sagala (Bantu G39, Tanzania): A preliminary study – Universiteit Gent, 2018",

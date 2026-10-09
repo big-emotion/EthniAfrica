@@ -148,7 +148,8 @@
       {
         "title": "IWGIA — Indigenous Peoples in Africa",
         "url": "https://www.iwgia.org/en/africa.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "UNESCO Memory of the World — Bleek and Lloyd Collection, 1997",

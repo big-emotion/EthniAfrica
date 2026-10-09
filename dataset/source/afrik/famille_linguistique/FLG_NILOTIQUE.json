@@ -126,12 +126,14 @@
       {
         "title": "Britannica Editors (2025) – \"Nilotic languages\". *Britannica.com*",
         "url": "https://www.britannica.com/topic/Nilotic-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica Editors (2025) – \"Nilo-Saharan languages\". *Britannica.com*",
         "url": "https://www.britannica.com/topic/Nilo-Saharan-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ethnologue (SIL International) (2025) – \"Nilotic languages\". *Ethnologue.com*",

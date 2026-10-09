@@ -79,7 +79,8 @@
       {
         "title": "Rangi in Tanzania – Joshua Project",
         "url": "https://www.joshuaproject.net/people_groups/14519",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Exploring contact in Rangi- and Alagwa-speaking communities – Gibson & Mous, LHEAF 2024",
@@ -95,7 +96,8 @@
       {
         "title": "Rangi of Tanzania – Pray Africa",
         "url": "https://prayafrica.org/project/rangi-of-tanzania/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Rangi language and alphabet – Omniglot",

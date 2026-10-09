@@ -117,12 +117,14 @@
       {
         "title": "Junod, Henri-Alexandre — The Life of a South African Tribe (2 vol., 1912-1913, reed. 1927). Neuchatel: Attinger. Archive.org",
         "url": "https://archive.org/details/lifeofsouthafric02junouoft",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Britannica — Henri Alexandre Junod, Missionary, Ethnographer",
         "url": "https://www.britannica.com/biography/Henri-Alexandre-Junod",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "UNISA — Junod Archives (HA & HP Junod)",
@@ -139,7 +141,8 @@
       {
         "title": "Joshua Project — Tsonga, Shangaan in Eswatini",
         "url": "https://joshuaproject.net/people_groups/15596/wz",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

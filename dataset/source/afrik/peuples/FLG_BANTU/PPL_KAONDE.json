@@ -81,7 +81,8 @@
       {
         "title": "Kaonde – Britannica",
         "url": "https://www.britannica.com/topic/Kaonde",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "The Kaonde People – Lugha Yangu, 2022",
@@ -113,7 +114,8 @@
       {
         "title": "Kaonde in Zambia – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/12511/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

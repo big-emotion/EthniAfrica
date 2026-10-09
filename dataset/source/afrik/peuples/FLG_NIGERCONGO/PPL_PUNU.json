@@ -111,7 +111,8 @@
       {
         "title": "Smithsonian Institution — Face mask (mukudj)",
         "url": "https://www.si.edu/object/face-mask:nmafa_90-6-1",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Saint Louis Art Museum — Mask (mukudj) for the Okuyi Society",
@@ -132,7 +133,8 @@
       {
         "title": "Joshua Project — Punu in Gabon",
         "url": "https://joshuaproject.net/people_groups/14484/GB",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

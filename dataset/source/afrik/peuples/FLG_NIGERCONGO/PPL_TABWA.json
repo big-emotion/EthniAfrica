@@ -97,7 +97,8 @@
       {
         "title": "Britannica — Tabwa (people)",
         "url": "https://www.britannica.com/topic/Tabwa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Roberts, Allen F. The Rising of a New Moon: A Century of Tabwa Art. Ann Arbor: University of Michigan Museum of Art / Smithsonian Institution, 1985",
@@ -108,7 +109,8 @@
       {
         "title": "Smithsonian National Museum of African Art — The Rising of a New Moon",
         "url": "https://www.si.edu/exhibitions/rising-new-moon-century-tabwa-art:event-exhib-1208",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Metropolitan Museum of Art — Mukisi Mupasi (ancestor figure), Tabwa peoples",

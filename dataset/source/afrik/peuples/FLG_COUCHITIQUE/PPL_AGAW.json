@@ -125,7 +125,8 @@
       {
         "title": "Horn of Africa Evangelical Mission — Agew people profile",
         "url": "https://hornofafrica.org/wp-content/uploads/2019/12/Agew.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

@@ -117,12 +117,14 @@
       {
         "title": "Britannica — Makua",
         "url": "https://www.britannica.com/topic/Makua",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Makhuwa-Makhuwana in Mozambique",
         "url": "https://joshuaproject.net/people_groups/18875/MZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Trip Down Memory Lane — Makua People: Mozambique's Largest Matriarchical Group",

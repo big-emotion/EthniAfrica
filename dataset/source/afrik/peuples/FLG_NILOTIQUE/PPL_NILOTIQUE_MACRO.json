@@ -179,7 +179,8 @@
       {
         "title": "Joshua Project — Nilotic peoples profiles",
         "url": "https://joshuaproject.net/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

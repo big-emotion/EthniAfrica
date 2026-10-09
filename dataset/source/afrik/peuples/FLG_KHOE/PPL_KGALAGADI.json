@@ -107,7 +107,8 @@
       {
         "title": "Joshua Project — Bangologa, Kgalagadi in Botswana",
         "url": "https://joshuaproject.net/people_groups/12646/BC",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue SIL International — Kgalagadi language (xkv)",
@@ -118,7 +119,8 @@
       {
         "title": "Britannica — Kgalagadi people",
         "url": "https://www.britannica.com/topic/Kgalagadi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Statistics Botswana — Population Distribution 2022",
@@ -129,7 +131,8 @@
       {
         "title": "Global Recordings Network — Kgalagadi (xkv)",
         "url": "https://globalrecordings.net/en/language/xkv",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "missionary_database"
       }
     ]
   }

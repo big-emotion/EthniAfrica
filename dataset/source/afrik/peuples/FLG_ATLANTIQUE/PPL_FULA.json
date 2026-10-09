@@ -242,7 +242,8 @@
       {
         "title": "Joshua Project — Fulani, Maasina in Mali",
         "url": "https://joshuaproject.net/people_groups/11773/ml",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ScienceDirect — Population history and admixture of the Fulani people from the Sahel (2025)",
@@ -253,17 +254,20 @@
       {
         "title": "Britannica - Fulani empire",
         "url": "https://www.britannica.com/place/Fulani-Empire",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica - Western Africa, jihad of Usman dan Fodio",
         "url": "https://www.britannica.com/place/western-Africa/The-jihad-of-Usman-dan-Fodio",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica 1911 — Fula (Encyclopaedia Britannica, 11e édition)",
         "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Fula",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Texte lu directement : « Fulbe or Fula (sing. Pullo, Peul) is the Mandingan name, Follani the Hausa, Fellatah the Kanuri, Fullan the Arab, and Fulde on the Benue »."
       },
       {
@@ -338,6 +342,7 @@
         "title": "Britannica 1911 — Tukulor (Encyclopaedia Britannica, 11e édition)",
         "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Tukulor",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Texte lu directement. Rapporte deux explications du nom Tukulor sans en retenir une."
       },
       {

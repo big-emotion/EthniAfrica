@@ -86,7 +86,8 @@
       {
         "title": "Iramba, Nyilamba in Tanzania – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/12245",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Iramba – 101lasttribes.com",
@@ -102,7 +103,8 @@
       {
         "title": "Bantu, Central-Tanzania People Cluster – Joshua Project, 2025",
         "url": "https://www.joshuaproject.net/clusters/341",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

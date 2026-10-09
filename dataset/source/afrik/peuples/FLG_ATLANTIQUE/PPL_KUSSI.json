@@ -88,12 +88,14 @@
       {
         "title": "Joshua Project - Kasanga, Haal in Guinea-Bissau",
         "url": "https://joshuaproject.net/people_groups/print/12555/PU",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Minority Rights Group - Guinea-Bissau (2024)",
         "url": "https://minorityrights.org/country/guinea-bissau/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "US State Department - Guinea-Bissau Background Note",

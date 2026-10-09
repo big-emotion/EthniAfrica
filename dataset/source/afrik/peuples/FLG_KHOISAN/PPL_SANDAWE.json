@@ -76,12 +76,14 @@
       {
         "title": "Sandawe in Tanzania – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/14720",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Sandawe – Britannica, 2026",
         "url": "https://www.britannica.com/topic/Sandawe",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Sandawe language (SAD) – Ethnologue SIL",
