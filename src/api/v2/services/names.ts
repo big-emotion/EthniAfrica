@@ -18,6 +18,8 @@
 import { createServerClient } from "@/lib/supabase/server";
 import { logger } from "@/lib/api/logger";
 import { getConfidenceMap } from "@/lib/supabase/queries/afrik/module-zero-batch";
+import { parseNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
+import { nameRecordsFromHistory } from "@/lib/afrik/nameHistoryRecords";
 import type {
   ListNameFormsQuery,
   ListNamesQuery,
@@ -75,7 +77,15 @@ function uniqueStrings(values: string[]): string[] {
   return Array.from(new Set(values));
 }
 
-function buildImposition(row: NameRecordRow): NameRecordImposition | null {
+function buildImposition(
+  row: Pick<
+    NameRecordRow,
+    | "imposed_by"
+    | "imposition_period"
+    | "why_problematic"
+    | "contemporary_usage"
+  >
+): NameRecordImposition | null {
   if (
     !row.imposed_by &&
     !row.imposition_period &&
@@ -90,6 +100,86 @@ function buildImposition(row: NameRecordRow): NameRecordImposition | null {
     whyProblematic: row.why_problematic,
     contemporaryUsage: row.contemporary_usage,
   };
+}
+
+/** The (name, type) pair name_records is unique on. */
+function nameKey(nameText: string, nameType: string): string {
+  return `${nameType}\u0000${nameText}`;
+}
+
+/**
+ * A people's names as its fiche's nameHistory tells them (REQ-196). The block
+ * is the source of truth, so a folded name wins over a name_records row for
+ * the same name; rows the block does not cover (names derived from the
+ * fiche's appellations) are still served beside it.
+ *
+ * A folded name has no database row, so its ids are stable keys built from
+ * the people and the name's position — never mistaken for a row's uuid.
+ */
+function namesFromHistory(
+  peopleId: string,
+  rawHistory: unknown
+): Array<Omit<PeopleNameRecord, "confidence">> {
+  if (rawHistory == null) return [];
+  const parsed = parseNameHistory(rawHistory);
+  if (!parsed.success) {
+    // The loader refuses an invalid block, so this is a row written by hand;
+    // the name_records rows still answer rather than an empty card.
+    logger.warn("names.getPeopleNamesDossier: unreadable nameHistory", {
+      peopleId,
+      errors: parsed.errors,
+    });
+    return [];
+  }
+  return nameRecordsFromHistory(parsed.data).map((entry, index) => {
+    const id = `${peopleId}:nameHistory:${index}`;
+    return {
+      id,
+      nameText: entry.nameText,
+      nameType: entry.nameType,
+      languageOfOrigin: entry.languageOfOrigin,
+      meaning: entry.meaning,
+      periodLabel: entry.periodLabel,
+      imposition: buildImposition({
+        imposed_by: entry.imposedBy,
+        imposition_period: entry.impositionPeriod,
+        why_problematic: entry.whyProblematic,
+        contemporary_usage: entry.contemporaryUsage,
+      }),
+      assertionId: id,
+      sources: entry.sources.map((source, sourceIndex) => ({
+        id: `${id}:source:${sourceIndex}`,
+        title: source.title,
+        url: source.url,
+        year: source.year,
+        tier: source.tier,
+      })),
+      attestations: entry.attestations,
+      shortLine: entry.shortLine ?? null,
+      namedBy: entry.namedBy ?? null,
+      originDebated: entry.originDebated,
+      usedIn: entry.usedIn ?? [],
+      pronunciation: entry.pronunciation ?? null,
+    };
+  });
+}
+
+interface RankedName {
+  rank: number;
+  name: PeopleNameRecord;
+}
+
+function compareText(left: string, right: string): number {
+  return left < right ? -1 : left > right ? 1 : 0;
+}
+
+// The order name_records is read in: rank, then type, then name.
+function compareRanked(left: RankedName, right: RankedName): number {
+  return (
+    left.rank - right.rank ||
+    compareText(left.name.nameType, right.name.nameType) ||
+    compareText(left.name.nameText, right.name.nameText)
+  );
 }
 
 /**
@@ -161,7 +251,7 @@ export async function getPeopleNamesDossier(
 
   const { data: peopleRow, error: peopleError } = await supabase
     .from("afrik_peoples")
-    .select("id, content")
+    .select("id, content, name_history")
     .eq("id", peopleId)
     .maybeSingle();
 
@@ -200,11 +290,24 @@ export async function getPeopleNamesDossier(
     );
   }
 
-  const rows = (nameRows ?? []) as NameRecordRow[];
-  const assertionIds = uniqueStrings(rows.map((row) => row.assertion_id));
+  const allRows = (nameRows ?? []) as NameRecordRow[];
+
+  const historyNames = namesFromHistory(
+    peopleId,
+    (peopleRow as { name_history?: unknown }).name_history
+  );
+  const told = new Set(
+    historyNames.map((name) => nameKey(name.nameText, name.nameType))
+  );
+  const rows = allRows.filter(
+    (row) => !told.has(nameKey(row.name_text, row.name_type))
+  );
 
   const [sourcesByAssertion, confidenceMap] = await Promise.all([
-    getSourcesByAssertionId(supabase, assertionIds),
+    getSourcesByAssertionId(
+      supabase,
+      uniqueStrings(rows.map((row) => row.assertion_id))
+    ),
     getConfidenceMap([peopleId]),
   ]);
 
@@ -216,26 +319,39 @@ export async function getPeopleNamesDossier(
       }
     : null;
 
-  const names: PeopleNameRecord[] = rows.map((row) => ({
-    id: row.id,
-    nameText: row.name_text,
-    nameType: row.name_type,
-    languageOfOrigin: row.language_of_origin,
-    meaning: row.meaning,
-    periodLabel: row.period_label,
-    imposition: buildImposition(row),
-    assertionId: row.assertion_id,
-    sources: sourcesByAssertion.get(row.assertion_id) ?? [],
-    confidence,
-    // A row loaded before migration 096 has no history yet: an empty list,
-    // never null, so the fiche draws no timeline rather than a broken one.
-    attestations: row.attestations ?? [],
-    shortLine: row.short_line ?? null,
-    namedBy: row.named_by ?? null,
-    originDebated: row.origin_debated ?? false,
-    usedIn: row.used_in ?? [],
-    pronunciation: row.pronunciation ?? null,
+  const rowNames: RankedName[] = rows.map((row) => ({
+    rank: row.sort_rank,
+    name: {
+      id: row.id,
+      nameText: row.name_text,
+      nameType: row.name_type,
+      languageOfOrigin: row.language_of_origin,
+      meaning: row.meaning,
+      periodLabel: row.period_label,
+      imposition: buildImposition(row),
+      assertionId: row.assertion_id,
+      sources: sourcesByAssertion.get(row.assertion_id) ?? [],
+      confidence,
+      // A row loaded before migration 096 has no history yet: an empty list,
+      // never null, so the fiche draws no timeline rather than a broken one.
+      attestations: row.attestations ?? [],
+      shortLine: row.short_line ?? null,
+      namedBy: row.named_by ?? null,
+      originDebated: row.origin_debated ?? false,
+      usedIn: row.used_in ?? [],
+      pronunciation: row.pronunciation ?? null,
+    },
   }));
+
+  const names = [
+    ...historyNames.map((name, rank) => ({
+      rank,
+      name: { ...name, confidence },
+    })),
+    ...rowNames,
+  ]
+    .sort(compareRanked)
+    .map(({ name }) => name);
 
   return {
     peopleId,
