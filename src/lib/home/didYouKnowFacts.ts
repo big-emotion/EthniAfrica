@@ -193,7 +193,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Jeune Afrique — Quelle est l'origine du mot « Afrique » ?",
         url: "https://www.jeuneafrique.com/115118/archives-thematique/quelle-est-l-origine-du-mot-afrique/",
         tier: "referenced",
-        source_kind: "unknown",
+        source_kind: "press",
         notes:
           "Plusieurs étymologies coexistent (Ifren, ifri « grotte », punique faraqa). La fiche retient l'extension du périmètre, qui n'est pas contestée, pas l'étymon.",
       },
@@ -218,7 +218,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "Jeune Afrique — Le 4 août 1984, Thomas Sankara rebaptisait la Haute-Volta en Burkina Faso",
         url: "https://www.jeuneafrique.com/48652/politique/le-4-ao-t-1984-thomas-sankara-rebaptisait-la-haute-volta-en-burkina-faso/",
         tier: "referenced",
-        source_kind: "unknown",
+        source_kind: "press",
       },
       {
         title:
@@ -287,7 +287,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "Dubawa — How true is the claim that Flora Shaw coined the name Nigeria?",
         url: "https://dubawa.org/nigeria60-how-true-is-claim-that-flora-shaw-british-journalist-coined-the-name-nigeria/",
         tier: "referenced",
-        source_kind: "unknown",
+        source_kind: "press",
         notes:
           "Vérification de presse citant l'article du Times du 8 janvier 1897 ; l'adoption officielle par Lugard date de 1914.",
       },
@@ -317,7 +317,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Scientific American — Great Zimbabwe",
         url: "https://www.scientificamerican.com/article/great-zimbabwe-2005-01/",
         tier: "referenced",
-        source_kind: "unknown",
+        source_kind: "press",
         notes:
           "Documente la commande de fouille de 1902 et la censure rhodésienne de 1970.",
       },
@@ -1334,7 +1334,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "JSTOR Daily — Cape Verde's Dilemma(s)",
         url: "https://daily.jstor.org/cape-verdes-dilemmas/",
         tier: "referenced",
-        source_kind: "unknown",
+        source_kind: "press",
         notes:
           "Revient sur l'enjeu politique du rattachement identitaire au moment de l'indépendance.",
       },

@@ -99,6 +99,7 @@ export const SOURCE_KIND_LABELS: Labels<SourceKind> = {
     official_statistics: "Statistiques publiques",
     linguistic_reference: "Référence linguistique",
     academic: "Publication académique",
+    press: "Article de presse",
     community: "Organisation communautaire",
     repository: "Dépôt documentaire",
     archive: "Archive",

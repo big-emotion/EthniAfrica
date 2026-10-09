@@ -300,14 +300,14 @@
       "key": "citi-newsroom",
       "name": "Citi Newsroom",
       "tier": "referenced",
-      "sourceKind": "academic",
+      "sourceKind": "press",
       "matchDomains": ["citinewsroom.com"]
     },
     {
       "key": "myjoyonline",
       "name": "MyJoyOnline",
       "tier": "referenced",
-      "sourceKind": "academic",
+      "sourceKind": "press",
       "matchDomains": ["myjoyonline.com"]
     }
   ]

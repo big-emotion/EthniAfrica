@@ -66,6 +66,7 @@ describe("authorized source catalogue", () => {
 
   // The Ghana name-origin fiche cites these five, at the tiers it declares.
   // Without an entry they publish as "Non vérifiée" whatever the fiche says.
+  // The two Ghanaian news sites are press, not academic publications.
   // @req REQ-092
   it.each([
     [
@@ -82,12 +83,12 @@ describe("authorized source catalogue", () => {
     [
       "https://www.citinewsroom.com/2026/03/from-gold-coast-to-ghana-history-memory-and-the-naming-of-a-nation/",
       "referenced",
-      "academic",
+      "press",
     ],
     [
       "https://www.myjoyonline.com/j-b-danquah-and-the-naming-of-our-republic/",
       "referenced",
-      "academic",
+      "press",
     ],
   ])("tiers %s as %s (%s)", (url, tier, sourceKind) => {
     expect(evaluateSourceUrl(url)).toMatchObject({ tier, sourceKind });
