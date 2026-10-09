@@ -94,4 +94,29 @@ describe("QuizBlock", () => {
       screen.getByRole("button", { name: "Question suivante" })
     ).toBeEnabled();
   });
+
+  // Readers see what kind of source backs the answer, never its tier.
+  // @req REQ-194
+  it("names the source type on the reveal, and no tier word", () => {
+    const { container } = render(
+      <QuizBlock
+        question={{
+          ...question,
+          source: { ...question.source, sourceKind: "academic" as const },
+        }}
+        selectedOption={1}
+        onSelectOption={vi.fn()}
+        onValidate={vi.fn()}
+        language="fr"
+        questionCountLabel="12 questions"
+        allHref={getLocalizedRoute("fr", "quiz")}
+        result={{ isCorrect: true, isLastQuestion: false, onNext: vi.fn() }}
+      />
+    );
+
+    expect(screen.getByText("Publication académique")).toBeInTheDocument();
+    expect(container.textContent).not.toMatch(
+      /référencée|officielle|non vérifiée|referenced|official|unverified/i
+    );
+  });
 });
