@@ -6,8 +6,6 @@
  * `quizService.composeQuizSession` rows (Epic 10, Story 10.7, ETNI-496).
  */
 
-import { createServerClient } from "@/lib/supabase/server";
-import { logger } from "@/lib/api/logger";
 import {
   getQuizScopeCatalogue,
   getQuizScopeLabel,
@@ -15,6 +13,12 @@ import {
   type QuizScopeOption,
   type QuizSessionQuestion,
 } from "@/api/v2/services/quizService";
+import {
+  getQuizRevealSources,
+  getQuizSubjectNames,
+  type QuizRevealSource,
+  type QuizSubjectName,
+} from "@/api/v2/services/quizReveal";
 import {
   parseQuizScope,
   QUIZ_SESSION_SIZE,
@@ -112,43 +116,17 @@ export async function getQuizScopesHandler(
   });
 }
 
-interface SourceRow {
-  id: string;
-  title: string;
-  url: string | null;
-  year: number | null;
-  tier: string | null;
-}
-
 /** Lower rank = higher priority. Unknown/null tiers sort last. */
 const SOURCE_TIER_RANK: Record<string, number> = Object.fromEntries(
   SOURCE_TIERS.map((tier, rank) => [tier, rank])
 );
-
-async function getSourceRefsMap(
-  supabase: ReturnType<typeof createServerClient>,
-  sourceIds: string[]
-): Promise<Map<string, SourceRow>> {
-  if (sourceIds.length === 0) return new Map();
-
-  const { data, error } = await supabase
-    .from("sources")
-    .select("id, title, url, year, tier")
-    .in("id", sourceIds);
-
-  if (error) {
-    logger.error("quiz handler getSourceRefsMap failed", error);
-    return new Map();
-  }
-
-  return new Map(((data ?? []) as SourceRow[]).map((row) => [row.id, row]));
-}
 
 const EMPTY_SOURCE_REF: QuizSourceRefView = {
   title: "",
   year: null,
   tier: null,
   url: null,
+  sourceKind: null,
 };
 
 /**
@@ -159,11 +137,11 @@ const EMPTY_SOURCE_REF: QuizSourceRefView = {
  */
 function pickBestSource(
   sourceIds: string[],
-  sourceMap: Map<string, SourceRow>
+  sourceMap: Map<string, QuizRevealSource>
 ): QuizSourceRefView {
   const resolved = sourceIds
     .map((id) => sourceMap.get(id))
-    .filter((row): row is SourceRow => Boolean(row));
+    .filter((row): row is QuizRevealSource => Boolean(row));
 
   const [best] = resolved.sort(
     (a, b) =>
@@ -173,14 +151,13 @@ function pickBestSource(
 
   if (!best) return EMPTY_SOURCE_REF;
 
-  return { title: best.title, year: best.year, tier: best.tier, url: best.url };
-}
-
-interface PeopleAppellationsRow {
-  id: string;
-  content: {
-    appellations?: { selfAppellation?: string; exonyms?: string[] };
-  } | null;
+  return {
+    title: best.title,
+    year: best.year,
+    tier: best.tier,
+    url: best.url,
+    sourceKind: best.sourceKind,
+  };
 }
 
 function entityLinkFor(
@@ -190,75 +167,22 @@ function entityLinkFor(
   return { type, id, slug: id, autonym: null, exonym: null };
 }
 
-/**
- * Names the subjects of a session, whichever kind of fiche they are.
- *
- * Two reads rather than one: a people's name lives in
- * `content.appellations.selfAppellation` and a country's in its own `name_fr`
- * column, and a country has no autonym/exonym pair at all — that opposition is
- * what a people fiche is about.
- */
-async function getEntityLinksMap(
-  supabase: ReturnType<typeof createServerClient>,
-  peopleIds: string[],
-  countryIds: string[]
-): Promise<Map<string, QuizEntityLinkView>> {
-  const map = new Map<string, QuizEntityLinkView>();
-
-  if (peopleIds.length > 0) {
-    const { data, error } = await supabase
-      .from("afrik_peoples")
-      .select("id, content")
-      .in("id", peopleIds);
-
-    if (error) {
-      logger.error("quiz handler getEntityLinksMap failed", error);
-    } else {
-      for (const row of (data ?? []) as PeopleAppellationsRow[]) {
-        const appellations = row.content?.appellations ?? {};
-        map.set(row.id, {
-          type: "people",
-          id: row.id,
-          slug: row.id,
-          autonym: appellations.selfAppellation ?? null,
-          exonym: appellations.exonyms?.[0] ?? null,
-        });
-      }
-    }
-  }
-
-  if (countryIds.length > 0) {
-    const { data, error } = await supabase
-      .from("afrik_countries")
-      .select("id, name_fr")
-      .in("id", countryIds);
-
-    if (error) {
-      logger.error("quiz handler getEntityLinksMap failed", error);
-    } else {
-      for (const row of (data ?? []) as Array<{
-        id: string;
-        name_fr: string;
-      }>) {
-        map.set(row.id, {
-          type: "country",
-          id: row.id,
-          slug: row.id,
-          autonym: row.name_fr,
-          exonym: null,
-        });
-      }
-    }
-  }
-
-  return map;
+function toEntityLinkView(name: QuizSubjectName): QuizEntityLinkView {
+  return {
+    type: name.type,
+    id: name.id,
+    slug: name.id,
+    autonym: name.autonym,
+    exonym: name.exonym,
+  };
 }
 
 function buildQuestionView(
   question: QuizSessionQuestion,
-  sourceMap: Map<string, SourceRow>,
-  entityLinkMap: Map<string, QuizEntityLinkView>
+  sourceMap: Map<string, QuizRevealSource>,
+  subjectNames: Map<string, QuizSubjectName>
 ): QuizSessionQuestionView {
+  const subjectName = subjectNames.get(question.entityId);
   return {
     id: question.id,
     templateId: question.templateId,
@@ -269,9 +193,9 @@ function buildQuestionView(
     explanationFr: question.explanationFr,
     source: pickBestSource(question.sourceIds, sourceMap),
     assertionId: question.assertionId,
-    entity:
-      entityLinkMap.get(question.entityId) ??
-      entityLinkFor(question.entityId, question.entityType),
+    entity: subjectName
+      ? toEntityLinkView(subjectName)
+      : entityLinkFor(question.entityId, question.entityType),
   };
 }
 
@@ -363,7 +287,6 @@ export async function composeQuizSessionHandler(
     };
   }
 
-  const supabase = createServerClient();
   const sourceIds = Array.from(
     new Set(questions.flatMap((question) => question.sourceIds))
   );
@@ -376,10 +299,9 @@ export async function composeQuizSessionHandler(
       )
     );
 
-  const [sourceMap, entityLinkMap] = await Promise.all([
-    getSourceRefsMap(supabase, sourceIds),
-    getEntityLinksMap(
-      supabase,
+  const [sourceMap, subjectNames] = await Promise.all([
+    getQuizRevealSources(sourceIds),
+    getQuizSubjectNames(
       subjectIdsByType("people"),
       subjectIdsByType("country")
     ),
@@ -390,7 +312,7 @@ export async function composeQuizSessionHandler(
     envelope: createApiResponse({
       scope: described,
       questions: questions.map((question) =>
-        buildQuestionView(question, sourceMap, entityLinkMap)
+        buildQuestionView(question, sourceMap, subjectNames)
       ),
     }),
   };
