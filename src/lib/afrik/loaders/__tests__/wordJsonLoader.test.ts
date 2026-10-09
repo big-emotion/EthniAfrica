@@ -69,8 +69,11 @@ describe("loadAllWordFiches", () => {
   // A word fiche exists only to tell the history of the word.
   // @req REQ-196
   it("names a fiche without nameHistory instead of loading it", () => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars -- dropped on purpose
-    const { nameHistory, ...withoutHistory } = { ...race, id: "WRD_EMPTY" };
+    const withoutHistory: Record<string, unknown> = {
+      ...race,
+      id: "WRD_EMPTY",
+    };
+    delete withoutHistory.nameHistory;
     writeWord("WRD_EMPTY.json", withoutHistory);
 
     const { words, errors } = loadAllWordFiches(datasetRoot);
