@@ -154,9 +154,11 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "SEN",
           "provenance": {
+            "title": "La banalité du rare, par Abu Oumar",
+            "author": "Abu Oumar",
+            "url": "https://lesoleil.sn/le-decodeur/chronique/la-banalite-du-rare-par-abu-oumar/",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "press"
           },
           "verificationLead": "Registre national des électeurs, annuaires ANSD, travaux d'onomastique wolof et sérère",
           "reviewStatus": "candidate_pending_verification"
@@ -332,9 +334,11 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "GMB",
           "provenance": {
-            "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "title": "An Interview About The Kamara Clan in Brikama And Ngansu Masing (NCAC_RDD_TAPE_1068A)",
+            "author": "NCAC – National Digital Archive of The Gambia (University of Hamburg)",
+            "url": "https://b2find.eudat.eu/dataset/b005cad1-ce77-5233-a472-f4af0a556221",
+            "tier": "referenced",
+            "source_kind": "archive"
           },
           "verificationLead": "Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -384,9 +388,10 @@
           "peopleIds": ["PPL_BAMBARA"],
           "countryId": "MLI",
           "provenance": {
-            "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "title": "Last Name Shout-Outs (An ka taa Bambara course, grammar lesson)",
+            "url": "https://kalan.ankataa.com/bb/grammar/5half-lastnames",
+            "tier": "referenced",
+            "source_kind": "linguistic_reference"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -398,9 +403,11 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "MLI",
           "provenance": {
+            "title": "Soundiata Keita",
+            "author": "Encyclopédie Larousse",
+            "url": "https://www.larousse.fr/encyclopedie/personnage/Soundiata_Keita/180393",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -412,9 +419,11 @@
           "peopleIds": ["PPL_BAMBARA"],
           "countryId": "MLI",
           "provenance": {
+            "title": "Bamana Kingdom of Segu (polity entry)",
+            "author": "Seshat: Global History Databank",
+            "url": "https://seshat-db.com/core/polity/434",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "academic"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -426,9 +435,11 @@
           "peopleIds": ["PPL_BAMBARA"],
           "countryId": "MLI",
           "provenance": {
+            "title": "Diarra",
+            "author": "Wikipedia contributors",
+            "url": "https://en.wikipedia.org/wiki/Diarra",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "community"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -510,9 +521,12 @@
           "peopleIds": ["PPL_SONINKE"],
           "countryId": "MLI",
           "provenance": {
-            "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "title": "Les ancêtres de Samori",
+            "author": "Yves Person",
+            "year": 1963,
+            "url": "https://www.persee.fr/doc/cea_0008-0055_1963_num_4_13_3008",
+            "tier": "referenced",
+            "source_kind": "academic"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -580,9 +594,12 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "MLI",
           "provenance": {
-            "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "title": "Histoire générale des Kamara",
+            "author": "Seydou Camara",
+            "year": 2025,
+            "url": "https://africanbookscollective.com/books/histoire-generale-des-kamara/",
+            "tier": "referenced",
+            "source_kind": "academic"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -674,9 +691,10 @@
           "peopleIds": ["PPL_MOSSI"],
           "countryId": "BFA",
           "provenance": {
+            "title": "Abdoul Schraf Ouédraogo: Peul et Mauritanien",
+            "url": "https://burkina24.com/?p=127320",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "press"
           },
           "verificationLead": "Listes électorales CENI, INSD, onomastique mooré et dioula",
           "reviewStatus": "candidate_pending_verification"
@@ -688,9 +706,11 @@
           "peopleIds": ["PPL_MOSSI"],
           "countryId": "BFA",
           "provenance": {
+            "title": "Village Koundougou-Mossi",
+            "author": "Dogon Languages Project (dogonlanguages.info)",
+            "url": "https://dogonlanguages.info/villages/54",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "linguistic_reference"
           },
           "verificationLead": "Listes électorales CENI, INSD, onomastique mooré et dioula",
           "reviewStatus": "candidate_pending_verification"
@@ -758,9 +778,12 @@
           "peopleIds": ["PPL_DIOULA"],
           "countryId": "BFA",
           "provenance": {
-            "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "title": "Approche ethnolinguistique des formules de salutation chez les Dioula de Darsalamy au Burkina Faso (mémoire de DEA, Université de Ouagadougou)",
+            "author": "Ignace Sangaré",
+            "year": 2008,
+            "url": "https://www.memoireonline.com/12/13/8177/m_Approche-ethnolinguistique-des-formules-de-salutation-chez-les-Dioula-de-Darsalamy-au-Burkina-Faso1.html",
+            "tier": "referenced",
+            "source_kind": "academic"
           },
           "verificationLead": "Listes électorales CENI, INSD, onomastique mooré et dioula",
           "reviewStatus": "candidate_pending_verification"
@@ -940,9 +963,12 @@
           "peopleIds": ["PPL_DIOULA"],
           "countryId": "BFA",
           "provenance": {
-            "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "title": "Toponymie et histoire dans l'Ouest du Burkina Faso",
+            "author": "Bakary Traoré",
+            "year": 2007,
+            "url": "https://journals.openedition.org/africanistes/1442?lang=en",
+            "tier": "referenced",
+            "source_kind": "academic"
           },
           "verificationLead": "Listes électorales CENI, INSD, onomastique mooré et dioula",
           "reviewStatus": "candidate_pending_verification"
@@ -1254,9 +1280,11 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "GIN",
           "provenance": {
+            "title": "Nafissatou and Amadou: Why are so many Guineans named Diallo?",
+            "year": 2011,
+            "url": "https://www.slate.com/articles/news_and_politics/explainer/2011/07/nafissatou_and_amadou.html",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "press"
           },
           "verificationLead": "Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon",
           "reviewStatus": "candidate_pending_verification"
@@ -1310,9 +1338,10 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "GIN",
           "provenance": {
+            "title": "The Dark Child",
+            "url": "https://www.encyclopedia.com/arts/culture-magazines/dark-child",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon",
           "reviewStatus": "candidate_pending_verification"
@@ -1338,9 +1367,11 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "GIN",
           "provenance": {
+            "title": "Guinée",
+            "author": "Wikipédia contributors",
+            "url": "https://fr.wikipedia.org/wiki/Guin%C3%A9e",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "community"
           },
           "verificationLead": "Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon",
           "reviewStatus": "candidate_pending_verification"

@@ -317,11 +317,11 @@
     },
     {
       "sourceKey": "afrik-candidate-queue",
-      "title": "Relevé de couverture anthroponymique EthniAfrica",
-      "url": null,
-      "tier": "unverified",
-      "source_kind": "ai_generated",
-      "notes": "Liste de noms tenue par EthniAfrica. Elle signale le nom dans un pays sans qu'une source dédiée l'y documente : ce pays est donc indiqué comme supposé, non comme attesté."
+      "title": "Histoire générale des Kamara",
+      "url": "https://africanbookscollective.com/books/histoire-generale-des-kamara/",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Seydou Camara, 2025."
     },
     {
       "sourceKey": "canut-2002-senankuya",
