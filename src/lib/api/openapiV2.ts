@@ -4,7 +4,7 @@ import swaggerJsdoc from "swagger-jsdoc";
 import { OPENAPI_V2_TAGS } from "@/lib/api/openapiV2Tags";
 import { PRODUCT_NAME } from "@/lib/brand";
 import { resolveSiteUrl } from "@/lib/siteUrl";
-import { SOURCE_KINDS } from "@/types/sources";
+import { SOURCE_KINDS, SOURCE_TIERS } from "@/types/sources";
 
 const options: swaggerJsdoc.Options = {
   definition: {
@@ -1898,6 +1898,113 @@ const options: swaggerJsdoc.Options = {
           },
           required: ["data", "meta", "errors"],
         },
+        NameHistorySourceV2: {
+          type: "object",
+          description:
+            "A source of a name-history account. An oral source is never refused for having no URL or no page (REQ-195): it names what it can of its narrative, carrier and place.",
+          properties: {
+            title: { type: "string", minLength: 1 },
+            author: { type: "string", minLength: 1 },
+            year: { type: ["integer", "null"] },
+            url: { type: ["string", "null"] },
+            tier: { type: "string", enum: [...SOURCE_TIERS] },
+            source_kind: { type: "string", enum: [...SOURCE_KINDS] },
+            page: { type: "string", minLength: 1 },
+            narrative: { type: "string", minLength: 1 },
+            carrier: { type: "string", minLength: 1 },
+            place: { type: "string", minLength: 1 },
+            notes: { type: "string" },
+          },
+          required: ["title", "author", "year", "url", "tier", "source_kind"],
+        },
+        NameHistoryAccountV2: {
+          type: "object",
+          description:
+            "One dated account of a name. Accounts sharing a hypothesisGroup are competing hypotheses, shown side by side and never ranked.",
+          properties: {
+            period: {
+              type: "object",
+              description:
+                "Integer years, negative before the common era; either bound may be unknown. `label` is what the reader reads.",
+              properties: {
+                from: { type: ["integer", "null"] },
+                to: { type: ["integer", "null"] },
+                label: { type: "string", minLength: 1 },
+              },
+              required: ["from", "to", "label"],
+            },
+            statement: { type: "string", minLength: 1 },
+            hypothesisGroup: { type: "string", minLength: 1 },
+            birth: {
+              type: "boolean",
+              enum: [true],
+              description:
+                "The earliest origin of this name the project knows; at most one per name.",
+            },
+            before: {
+              type: "boolean",
+              enum: [true],
+              description: "What existed before this name.",
+            },
+            actors: {
+              type: "array",
+              description:
+                "Context for the reader, never the author of a name.",
+              items: {
+                type: "object",
+                properties: {
+                  name: { type: "string", minLength: 1 },
+                  role: { type: "string", minLength: 1 },
+                  personId: { type: "string", minLength: 1 },
+                },
+                required: ["name", "role"],
+              },
+            },
+            sources: {
+              type: "array",
+              minItems: 1,
+              items: { $ref: "#/components/schemas/NameHistorySourceV2" },
+            },
+          },
+          required: ["period", "statement", "sources"],
+        },
+        NameHistoryV2: {
+          type: "object",
+          description:
+            "The subject's name history (REQ-196, ARCH-028): one shape on every subject, validated by the one shared schema before it is loaded. Absent when the fiche declares none yet.",
+          properties: {
+            summary: { type: "string", minLength: 1 },
+            names: {
+              type: "array",
+              minItems: 1,
+              items: {
+                type: "object",
+                properties: {
+                  nameText: { type: "string", minLength: 1 },
+                  nameStatus: { type: "string", enum: ["current", "former"] },
+                  selfGiven: { type: "boolean" },
+                  languageOfOrigin: { type: ["string", "null"] },
+                  namedBy: { type: ["string", "null"] },
+                  accounts: {
+                    type: "array",
+                    items: {
+                      $ref: "#/components/schemas/NameHistoryAccountV2",
+                    },
+                  },
+                },
+                required: [
+                  "nameText",
+                  "nameStatus",
+                  "selfGiven",
+                  "languageOfOrigin",
+                  "namedBy",
+                  "accounts",
+                ],
+              },
+            },
+          },
+          required: ["summary", "names"],
+        },
         CountryV2: {
           type: "object",
           properties: {
@@ -1932,6 +2039,9 @@ const options: swaggerJsdoc.Options = {
             },
             answer: {
               $ref: "#/components/schemas/SearchAnswerV2",
+            },
+            nameHistory: {
+              $ref: "#/components/schemas/NameHistoryV2",
             },
           },
         },
@@ -1968,6 +2078,9 @@ const options: swaggerJsdoc.Options = {
             },
             answer: {
               $ref: "#/components/schemas/SearchAnswerV2",
+            },
+            nameHistory: {
+              $ref: "#/components/schemas/NameHistoryV2",
             },
           },
         },
@@ -2249,6 +2362,9 @@ const options: swaggerJsdoc.Options = {
             answer: {
               $ref: "#/components/schemas/SearchAnswerV2",
             },
+            nameHistory: {
+              $ref: "#/components/schemas/NameHistoryV2",
+            },
           },
         },
         LanguageSourceV2: {
@@ -2330,6 +2446,9 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/LanguageSourceV2" },
             },
+            nameHistory: {
+              $ref: "#/components/schemas/NameHistoryV2",
+            },
           },
           required: [
             "id",
@@ -2370,6 +2489,9 @@ const options: swaggerJsdoc.Options = {
               ],
             },
             casteOrSocialFunction: { type: ["string", "null"] },
+            nameHistory: {
+              $ref: "#/components/schemas/NameHistoryV2",
+            },
             content: {
               type: "object",
               description:

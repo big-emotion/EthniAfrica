@@ -15,6 +15,7 @@
  * bearer entry never carries `peopleLinks`, `countryIds` or `content`.
  */
 
+import { nameHistorySchema } from "@/lib/afrik/parsers/nameHistoryParser";
 import { z } from "zod";
 
 // @req REQ-133
@@ -153,6 +154,8 @@ export const publicPatronymeSchema = z.object({
   bearers: z.array(patronymeBearerSummarySchema),
   namedBearers: z.array(patronymeNamedBearerSchema),
   alliances: z.array(patronymeAllianceSummarySchema),
+  // Optional: most fiches carry no block yet (REQ-196).
+  nameHistory: nameHistorySchema.optional(),
 });
 
 export type PublicPatronyme = z.infer<typeof publicPatronymeSchema>;

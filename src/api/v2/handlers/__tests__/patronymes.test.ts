@@ -1,3 +1,4 @@
+import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__fixtures__/nameHistory";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("@/api/v2/services/patronymes", () => ({
@@ -39,6 +40,25 @@ const KEITA = {
 describe("Patronyme Handler", () => {
   beforeEach(() => {
     vi.clearAllMocks();
+  });
+
+  // @req REQ-196
+  it("serves the name's nameHistory, and no key when it has none", async () => {
+    vi.mocked(getPatronymeById).mockResolvedValueOnce({
+      ...KEITA,
+      nameHistory: VALID_NAME_HISTORY,
+    });
+    vi.mocked(getPatronymeById).mockResolvedValueOnce(KEITA);
+
+    const withHistory = await getPatronymeHandler("PAT_KEITA");
+    const without = await getPatronymeHandler("PAT_KEITA");
+
+    expect(withHistory.ok && withHistory.envelope.data.nameHistory).toEqual(
+      VALID_NAME_HISTORY
+    );
+    expect(without.ok && without.envelope.data).not.toHaveProperty(
+      "nameHistory"
+    );
   });
 
   // @req REQ-133

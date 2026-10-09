@@ -2,6 +2,7 @@
  * Supabase queries for AFRIK countries
  */
 
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { createServerClient } from "../../server";
 import { logger } from "@/lib/api/logger";
 import type { Country } from "@/types/afrik";
@@ -38,6 +39,7 @@ export async function getAllAfrikCountries(
     etymology: row.etymology || undefined,
     nameOriginActor: row.name_origin_actor || undefined,
     content: row.content || {},
+    nameHistory: (row.name_history as NameHistory | null) ?? undefined,
     createdAt: row.created_at ? new Date(row.created_at) : undefined,
     updatedAt: row.updated_at ? new Date(row.updated_at) : undefined,
   }));
@@ -115,6 +117,7 @@ export async function getAfrikCountryById(
     etymology: data.etymology || undefined,
     nameOriginActor: data.name_origin_actor || undefined,
     content: data.content || {},
+    nameHistory: (data.name_history as NameHistory | null) ?? undefined,
     createdAt: data.created_at ? new Date(data.created_at) : undefined,
     updatedAt: data.updated_at ? new Date(data.updated_at) : undefined,
   };

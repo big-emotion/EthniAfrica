@@ -1,6 +1,7 @@
 /**
  * Test-first: patronyme dossier service (ETNI-1462, REQ-133).
  */
+import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__fixtures__/nameHistory";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const fromMock = vi.fn();
@@ -144,6 +145,17 @@ describe("patronymes service — getPatronymeById", () => {
     expect(result?.nameSystem).toBe("clan_name");
     expect(result?.casteOrSocialFunction).toBe("horon");
     expect(result?.content).toEqual({ nameMain: "Keita" });
+  });
+
+  // @req REQ-196
+  it("carries the name_history column as nameHistory", async () => {
+    mockTables({
+      patronyme: { ...patronymeRow, name_history: VALID_NAME_HISTORY },
+    });
+
+    const result = await getPatronymeById("PAT_KEITA");
+
+    expect(result?.nameHistory).toEqual(VALID_NAME_HISTORY);
   });
 
   // @req REQ-133

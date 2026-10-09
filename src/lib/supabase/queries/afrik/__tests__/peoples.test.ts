@@ -244,6 +244,41 @@ describe("AFRIK Peoples Queries", () => {
   });
 
   describe("getAfrikPeopleById", () => {
+    // @req REQ-196
+    it("maps name_history onto nameHistory, and leaves it absent when null", async () => {
+      const nameHistory = {
+        summary: "Le nom a une histoire, présentée plus bas.",
+        names: [],
+      };
+      setupMock({
+        peoplesSingleData: {
+          id: "PPL_SHONA",
+          name_main: "Shona",
+          language_family_id: "FLG_BANTU",
+          content: {},
+          name_history: nameHistory,
+        },
+        relationsData: [],
+      });
+      expect((await getAfrikPeopleById("PPL_SHONA"))?.nameHistory).toEqual(
+        nameHistory
+      );
+
+      setupMock({
+        peoplesSingleData: {
+          id: "PPL_SHONA",
+          name_main: "Shona",
+          language_family_id: "FLG_BANTU",
+          content: {},
+          name_history: null,
+        },
+        relationsData: [],
+      });
+      expect(
+        JSON.parse(JSON.stringify(await getAfrikPeopleById("PPL_SHONA")))
+      ).not.toHaveProperty("nameHistory");
+    });
+
     // @req REQ-019
     it("should return a people by ID", async () => {
       setupMock({

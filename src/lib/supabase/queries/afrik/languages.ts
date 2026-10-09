@@ -2,6 +2,7 @@
  * Supabase queries for AFRIK languages
  */
 
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { createServerClient } from "../../server";
 import { logger } from "@/lib/api/logger";
 import type { Language } from "@/types/afrik";
@@ -17,6 +18,8 @@ export interface AfrikLanguageDetail {
   content: Record<string, unknown>;
   /** Its own column since migration 060, not part of `content`. */
   spellingAliases: string[];
+  /** Its own column since migration 098 (REQ-196); absent when null. */
+  nameHistory?: NameHistory;
 }
 
 // @req REQ-136
@@ -163,7 +166,7 @@ export async function getAfrikLanguageById(
   const { data, error } = await supabase
     .from("afrik_languages")
     .select(
-      "id, name, family_id, content, spelling_aliases, family:afrik_language_families(id, name_fr)"
+      "id, name, family_id, content, spelling_aliases, name_history, family:afrik_language_families(id, name_fr)"
     )
     .eq("id", id)
     .maybeSingle();
@@ -181,6 +184,7 @@ export async function getAfrikLanguageById(
     family_id: string;
     content: Record<string, unknown> | null;
     spelling_aliases: unknown;
+    name_history: NameHistory | null;
     family: { id: string; name_fr: string } | null;
   };
 
@@ -197,6 +201,7 @@ export async function getAfrikLanguageById(
           (entry): entry is string => typeof entry === "string"
         )
       : [],
+    ...(row.name_history ? { nameHistory: row.name_history } : {}),
   };
 }
 

@@ -2,6 +2,7 @@
  * Supabase queries for AFRIK peoples
  */
 
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { createServerClient } from "../../server";
 import { logger } from "@/lib/api/logger";
 import { walkRanges } from "@/lib/supabase/queries/walkRanges";
@@ -133,6 +134,8 @@ function mapRowsToPeoples(
     classificationStatus:
       (row.classification_status as ClassificationStatus | null) ?? null,
     content: (row.content as Record<string, unknown>) || {},
+    // Undefined rather than null, so a fiche without a block serves no key.
+    nameHistory: (row.name_history as NameHistory | null) ?? undefined,
     createdAt: row.created_at ? new Date(row.created_at as string) : undefined,
     updatedAt: row.updated_at ? new Date(row.updated_at as string) : undefined,
   }));

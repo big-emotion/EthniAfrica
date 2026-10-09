@@ -1,3 +1,4 @@
+import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__fixtures__/nameHistory";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 
 vi.mock("../../../server", () => ({
@@ -122,7 +123,7 @@ describe("AFRIK Languages Queries", () => {
 
       expect(mockSupabase.from).toHaveBeenCalledWith("afrik_languages");
       expect(mockSupabase.select).toHaveBeenCalledWith(
-        "id, name, family_id, content, spelling_aliases, family:afrik_language_families(id, name_fr)"
+        "id, name, family_id, content, spelling_aliases, name_history, family:afrik_language_families(id, name_fr)"
       );
       expect(mockSupabase.eq).toHaveBeenCalledWith("id", "yor");
       expect(result).toEqual({
@@ -132,6 +133,26 @@ describe("AFRIK Languages Queries", () => {
         content: { nameProvenance: "sourced" },
         spellingAliases: ["Yorouba"],
       });
+    });
+
+    // @req REQ-196
+    it("maps name_history onto nameHistory", async () => {
+      mockSupabase.maybeSingle.mockResolvedValue({
+        data: {
+          id: "yor",
+          name: "Yoruba",
+          family_id: "FLG_BENOUECONGO",
+          content: {},
+          spelling_aliases: [],
+          name_history: VALID_NAME_HISTORY,
+          family: null,
+        },
+        error: null,
+      });
+
+      const result = await getAfrikLanguageById("yor");
+
+      expect(result?.nameHistory).toEqual(VALID_NAME_HISTORY);
     });
 
     // @req REQ-136
