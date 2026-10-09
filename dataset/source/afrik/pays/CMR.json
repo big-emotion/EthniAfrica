@@ -3,9 +3,9 @@
   "nameFr": "Cameroun",
   "nameEn": "Cameroon",
   "nameOfficial": "République du Cameroun (Republic of Cameroon)",
-  "summary": "Le Cameroun doit son nom aux crevettes du fleuve Wouri, que les Portugais nommèrent « Rio dos Camarões » au XVe siècle. Colonisé successivement par l'Allemagne, la France et la Grande-Bretagne, il en garde un bilinguisme officiel. Plus de 280 peuples s'y côtoient, du royaume Bamoun aux chefferies bamiléké, des Sawa côtiers aux peuples des forêts du Sud.",
-  "etymology": "Le nom \"Cameroun\" viendrait du portugais \"Rio dos Camarões\" (Rivière des crevettes), selon l'Online Etymology Dictionary. Les navigateurs portugais auraient donné ce nom au fleuve Wouri au XVe siècle, parce qu'il était riche en crevettes. Le terme \"Camarões\" a été adapté en \"Cameroun\" par les Français et \"Cameroons\" par les Britanniques. Le nom anglais est déjà écrit dans le traité de protection du 12 juillet 1884, où les rois douala Bell et Akwa parlent du pays appelé \"Cameroons\", avant que l'administration allemande n'en fasse \"Kamerun\".",
-  "nameOriginActor": "Le nom \"Cameroun\" provient des navigateurs portugais qui ont exploré la côte camerounaise au XVe siècle. Le terme \"Rio dos Camarões\" (Rivière des crevettes) a été donné au fleuve Wouri et a ensuite été généralisé pour désigner l'ensemble du territoire. Les colonisateurs allemands, français et britanniques ont adapté ce nom. Ni l'auteur précis du baptême ni la date exacte ne sont établis ici par une source d'époque : la tradition parle du XVe siècle.",
+  "summary": "Le Cameroun doit son nom aux crevettes du fleuve Wouri, que les Portugais nommèrent « Rio dos Camarões » au XVIe siècle. Colonisé successivement par l'Allemagne, la France et la Grande-Bretagne, il en garde un bilinguisme officiel. Plus de 280 peuples s'y côtoient, du royaume Bamoun aux chefferies bamiléké, des Sawa côtiers aux peuples des forêts du Sud.",
+  "etymology": "Le nom \"Cameroun\" viendrait du portugais \"Rio dos Camarões\" (Rivière des crevettes), selon l'Online Etymology Dictionary. Les navigateurs portugais auraient donné ce nom au fleuve Wouri au XVIe siècle, parce qu'il était riche en crevettes. Le terme \"Camarões\" a été adapté en \"Cameroun\" par les Français et \"Cameroons\" par les Britanniques. Le nom anglais est déjà écrit dans le traité de protection du 12 juillet 1884, où les rois douala Bell et Akwa parlent du pays appelé \"Cameroons\", avant que l'administration allemande n'en fasse \"Kamerun\".",
+  "nameOriginActor": "Le nom \"Cameroun\" provient des navigateurs portugais qui ont exploré la côte camerounaise. Le terme \"Rio dos Camarões\" (Rivière des crevettes) a été donné au fleuve Wouri et a ensuite été généralisé pour désigner l'ensemble du territoire. Les colonisateurs allemands, français et britanniques ont adapté ce nom. Ni l'auteur précis du baptême ni la date exacte ne sont établis ici par une source d'époque : l'Online Etymology Dictionary date ce nom portugais du XVIe siècle.",
   "nameHistory": {
     "summary": "Le nom Cameroun désigne un pays d'Afrique centrale, la République du Cameroun. Il vient du nom qu'un fleuve portait chez les navigateurs portugais. Le pays a porté d'autres noms : Kamerun, République fédérale du Cameroun, puis République unie du Cameroun. Une seule des sources lues dit pourquoi les navigateurs portugais ont donné ce nom au fleuve ; nous la présentons plus bas.",
     "names": [
@@ -59,14 +59,14 @@
                 "notes": "Notice consultée le 9 octobre 2026. Les États-Unis reconnaissent la République du Cameroun le 1er janvier 1960, date à laquelle les Nations unies mettent fin à la tutelle française."
               },
               {
-                "title": "General History of Africa, VIII, ch. 5 : Seek ye first the political kingdom",
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
                 "author": "Ali A. Mazrui",
-                "year": 1993,
-                "url": "https://archive.org/details/general-history-of-africa-vol-8",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
                 "tier": "official",
                 "source_kind": "intergovernmental",
-                "page": "p. 109-110, tableau 5.1",
-                "notes": "UNESCO, lu dans l'exemplaire numérisé d'archive.org. Tableau des indépendances : Cameroon, 1.1.1960, France ; Cameroon (British South), 1.10.1961, Britain, territoire sous tutelle de l'ONU, « part of former German colony of Kamerun », union avec le Cameroun « as United Republic of Cameroon »."
+                "page": "p. 129-130, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par A. A. Mazrui, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Tableau 5.1, « Chronologie de l'indépendance africaine » : « Cameroun 1/I/1960 France Tutelle de l'ONU. Majeure partie de l'ancienne colonie allemande du Kamerun. » ; le sud du Cameroun britannique, « partie de l'ancienne colonie allemande du Kamerun », s'unit au Cameroun « pour former la République fédérale du Cameroun ». Les pages du tableau ne sont pas numérotées : nous les comptons à partir des pages 127 et 130."
               }
             ]
           },
@@ -227,14 +227,14 @@
             "aspect": "usage",
             "sources": [
               {
-                "title": "General History of Africa, VIII, ch. 8 : Equatorial West Africa",
+                "title": "Histoire générale de l'Afrique, VIII, ch. 8 : L'Afrique équatoriale de l'Ouest",
                 "author": "Elikia M'Bokolo",
-                "year": 1993,
-                "url": "https://archive.org/details/general-history-of-africa-vol-8",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
                 "tier": "official",
                 "source_kind": "intergovernmental",
-                "page": "p. 218",
-                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, lu dans l'exemplaire numérisé d'archive.org. Le référendum de février 1961 dans le territoire britannique : le nord rejoint le Nigeria, le sud choisit la réunification avec l'ancien Cameroun français, rendue officielle par la constitution du 1er octobre 1961 qui établit la Federal Republic of Cameroon."
+                "page": "p. 239",
+                "notes": "UNESCO, volume dirigé par A. A. Mazrui, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 239 : « le Sud opta pour la réunification avec l'ancien Cameroun français, officialisée par la Constitution du 1er octobre 1961 qui créa la République fédérale du Cameroun »."
               },
               {
                 "title": "Cameroun — Wikipédia",
@@ -278,14 +278,14 @@
                 "notes": "Page consultée le 9 octobre 2026. Le traité, daté « Cameroons, July 12, 1884 », est signé à Douala par King Bell, King Aqua et d'autres notables avec Eduard Schmidt et Johannes Voss ; il parle du « country called \"Cameroons\" situated on the Cameroons-River ». La présentation y voit le début de la domination allemande sur le territoire qui deviendra le Kamerun."
               },
               {
-                "title": "General History of Africa, VIII, ch. 5 : Seek ye first the political kingdom",
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
                 "author": "Ali A. Mazrui",
-                "year": 1993,
-                "url": "https://archive.org/details/general-history-of-africa-vol-8",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
                 "tier": "official",
                 "source_kind": "intergovernmental",
-                "page": "p. 109-110, tableau 5.1",
-                "notes": "UNESCO, lu dans l'exemplaire numérisé d'archive.org. Tableau des indépendances : Cameroon, 1.1.1960, France ; Cameroon (British South), 1.10.1961, Britain, territoire sous tutelle de l'ONU, « part of former German colony of Kamerun », union avec le Cameroun « as United Republic of Cameroon »."
+                "page": "p. 129-130, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par A. A. Mazrui, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Tableau 5.1, « Chronologie de l'indépendance africaine » : « Cameroun 1/I/1960 France Tutelle de l'ONU. Majeure partie de l'ancienne colonie allemande du Kamerun. » ; le sud du Cameroun britannique, « partie de l'ancienne colonie allemande du Kamerun », s'unit au Cameroun « pour former la République fédérale du Cameroun ». Les pages du tableau ne sont pas numérotées : nous les comptons à partir des pages 127 et 130."
               }
             ]
           }

@@ -300,14 +300,36 @@
           },
           {
             "period": {
+              "from": 1902,
+              "to": 1905,
+              "label": "Photographie datée de 1902-1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bassa apparaît dans la légende d'une photographie du missionnaire Jakob Stutz, de la Mission de Bâle : « Haus eines Zauberers im Bassa Gebiet in Kamerun », que les archives traduisent par « la maison d'un magicien dans la région bassa, au Cameroun ». Les archives de la Mission datent l'image de 1902 à 1905. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple et sa langue existaient bien avant elle.",
+            "formAsWritten": "Bassa Gebiet",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Haus eines Zauberers im Bassa Gebiet in Kamerun.",
+                "author": "Jakob Stutz",
+                "year": null,
+                "url": "https://www.bmarchives.org/items/show/59171",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "légende de la photographie, cote BMA E-30.12.030",
+                "notes": "Photographie des archives de la Mission de Bâle (mission 21), tirage sur papier, notice consultée le 10 octobre 2026. La notice date l'image du 1er janvier 1902 au 31 décembre 1905 et la situe dans la région bassa, département de la Sanaga ; son titre anglais est « The house of a magician in the Bassa area in Cameroon ». La notice ne dit pas si la légende a été écrite au moment de la prise de vue."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1906,
               "to": 1906,
               "label": "Rapport de 1906, publié en 1912"
             },
             "era": "colonial",
-            "statement": "Le nom Basa apparaît dans un rapport que le missionnaire Georg Schürle envoie à Bâle en 1906 : il y décrit le pays où l'on parle le basa, à partir d'une heure de marche à l'est de Douala, selon la préface de Carl Meinhof. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple et sa langue existaient bien avant elle.",
+            "statement": "Le nom Basa apparaît dans un rapport que le missionnaire Georg Schürle envoie à Bâle en 1906 : il y décrit le pays où l'on parle le basa, à partir d'une heure de marche à l'est de Douala, selon la préface de Carl Meinhof.",
             "formAsWritten": "Basa",
-            "birth": true,
             "sources": [
               {
                 "title": "Die Sprache der Basa in Kamerun : Grammatik und Wörterbuch, préface",

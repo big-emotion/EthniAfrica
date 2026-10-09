@@ -120,6 +120,13 @@ review:
   rather than on a document the project has read (for Peul, D'Eichtal in 1842
   through Tauxier). The source note says so each time. The operator decides
   whether a reported trace may be a birth.
+- **What may be a birth — ruled 2026-10-10.** A close form may be a birth
+  when the tile says so (« a une forme proche », Coulibaly and Koorabarri). A
+  press article (Soudan du Sud, 2011), a form a chronicler gives as the
+  local name (Enzaze for Zaïre) and a dated archive photo caption (Basaa,
+  1902–1905) may be births too. For Sénégal the birth moves to Zurara's
+  Çanaga (1453), read in facsimile; al-Bakrī's Sanghāna, known only through
+  Delafosse, stays as an earlier, uncertain trace.
 - **Summary account and hypothesis tiles — ruled 2026-10-09.** On
   `PPL_FULA`, the meaning account no longer retells the hypotheses that have
   their own tiles: it keeps what only it says and all its sources.

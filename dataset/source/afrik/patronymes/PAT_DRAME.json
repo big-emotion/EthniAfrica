@@ -98,11 +98,11 @@
     },
     {
       "sourceKey": "hga-iv-cissoko",
-      "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — chapitre 8, The Songhay from the 12th to the 16th century",
-      "url": "https://archive.org/details/unesco_general_history_africa_iv",
+      "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
       "tier": "official",
       "source_kind": "intergovernmental",
-      "notes": "UNESCO, 1984, volume dirigé par Djibril Tamsir Niane ; chapitre de Sékéné Mody Cissoko. Édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Page 205 : « The oldest were of Soninke origin (Ture, Sylla, Tunkara, Cisse, Jakhite, Drame and Jawara) » : les plus anciens clans de la société songhay. Le chapitre ne donne aucun sens au nom."
+      "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 230 : « Les plus anciens étaient d'origine soninke (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara) ». Le chapitre ne donne aucun sens au nom."
     },
     {
       "sourceKey": "wikipedia-soninkes",
@@ -188,14 +188,14 @@
                 "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet lu le 9 octobre 2026. L'entrée Daramɛ l'enregistre comme nom de clan, sans variante, sans statut et sans sens. L'entrée Wago, dont la note est en russe, présente le Wago comme l'une des trois grandes subdivisions des Soninké, dont le berceau serait le Wagadou, et compte Drame parmi ses noms de clan ; la traduction de cette note est la nôtre. Le fichier ne donne pas la légende de ses abréviations de provenance, que nous ne lisons donc pas."
               },
               {
-                "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — chapitre 8, The Songhay from the 12th to the 16th century",
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
                 "author": "Sékéné Mody Cissoko",
-                "year": 1984,
-                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
                 "tier": "official",
                 "source_kind": "intergovernmental",
-                "page": "p. 205",
-                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. « The oldest were of Soninke origin (Ture, Sylla, Tunkara, Cisse, Jakhite, Drame and Jawara) » : les plus anciens clans de la société songhay. Le chapitre ne donne aucun sens au nom."
+                "page": "p. 230",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 230 : « Les plus anciens étaient d'origine soninke (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara) ». Le chapitre ne donne aucun sens au nom."
               }
             ]
           },
@@ -209,14 +209,14 @@
             "statement": "Le nom Dramé, écrit Drame, compte parmi les plus anciens clans de la société songhay, tous d'origine soninké, selon Sékéné Mody Cissoko.",
             "sources": [
               {
-                "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — chapitre 8, The Songhay from the 12th to the 16th century",
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
                 "author": "Sékéné Mody Cissoko",
-                "year": 1984,
-                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
                 "tier": "official",
                 "source_kind": "intergovernmental",
-                "page": "p. 205",
-                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. « The oldest were of Soninke origin (Ture, Sylla, Tunkara, Cisse, Jakhite, Drame and Jawara) » : les plus anciens clans de la société songhay. Le chapitre ne donne aucun sens au nom."
+                "page": "p. 230",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 230 : « Les plus anciens étaient d'origine soninke (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara) ». Le chapitre ne donne aucun sens au nom."
               }
             ]
           },

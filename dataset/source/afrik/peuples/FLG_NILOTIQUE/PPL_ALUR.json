@@ -169,6 +169,7 @@
               "to": 1879,
               "label": "Novembre et décembre 1879, près de Mahagi"
             },
+            "era": "colonial",
             "statement": "Le nom Alur est donné par les habitants des environs de Mahagi, à l'ouest du lac Albert, comme le nom de tout le pays qui s'étend au sud des Madi, selon les lettres d'Emin Pacha.",
             "formAsWritten": "Lur or Alur",
             "actors": [
@@ -196,6 +197,7 @@
               "to": 1879,
               "label": "Novembre 1879, à Wadelai"
             },
+            "era": "colonial",
             "statement": "Le nom Alur désigne chez Emin Pacha un grand pays dont le district de Wadelai, appelé Koche, n'est qu'une des subdivisions. Il appelle Aluri la langue qu'on y parle.",
             "formAsWritten": "Lur or Alur",
             "sources": [

@@ -1,6 +1,6 @@
 ---
 title: "Colonial periods: the reference table behind a name-history account's era"
-status: "proposed — awaiting operator review, 2026-10-09"
+status: "proposed — awaiting operator review, 2026-10-09; Sudan 1821–1885 and South Africa 1959–1994 ruled 2026-10-10"
 related:
   - docs/editorial/strategy/name-history-timeline-2026-10-08.md
   - docs/editorial/strategy/name-history-priority-core.md
@@ -99,7 +99,7 @@ precision. « by 1880 » means HGA VII, p. 1.
 | Tanzania (Tanganyika)                   | none by 1880; German East Africa, then British mandate                                                                                                                 | 9 Dec. 1961                                  | HGA VII pp. 1, 309; HGA VIII table 5.1                                                  |
 | Malawi (Nyasaland)                      | none by 1880; British                                                                                                                                                  | 6 July 1964                                  | HGA VII p. 1; HGA VIII table 5.1                                                        |
 | Burundi                                 | none by 1880; German East Africa, then Belgian Ruanda-Urundi                                                                                                           | 1 July 1962                                  | HGA VII pp. 1, 309; HGA VIII table 5.1; BDI fiche                                       |
-| Sudan                                   | Turco-Egyptian rule to 1885 (see below); Mahdist state 1881–1898, « national independence »; Anglo-Egyptian condominium 1899                                           | 1 Jan. 1956                                  | HGA VII pp. 77, 453–454; HGA VIII table 5.1; SDN fiche                                  |
+| Sudan                                   | Turco-Egyptian rule 1821–1885, colonial by operator ruling (see below); Mahdist state 1881–1898, « national independence »; Anglo-Egyptian condominium 1899            | 1 Jan. 1956                                  | HGA VII pp. 77, 453–454; HGA VIII table 5.1; SDN fiche                                  |
 | South Sudan                             | as Sudan to 1956                                                                                                                                                       | 9 July 2011                                  | SSD fiche                                                                               |
 | South Africa                            | the Cape Colony and Natal well before 1880                                                                                                                             | Union, 31 May 1910                           | HGA VII pp. 1, 194; HGA VIII table 5.1                                                  |
 | Liberia                                 | « private colony » 1822–1847                                                                                                                                           | 26 July 1847                                 | HGA VIII table 5.1; Office of the Historian, Liberia                                    |
@@ -130,16 +130,21 @@ Sources opened for this table:
   1822, `colonial` 1822–1847, `modern` from 1847. One account touches it
   (Kamana, 1899) and stays undecided, since the Vai live in Liberia and in
   Sierra Leone, a British protectorate at that date.
-- **South Africa.** HGA VIII dates independence to the Union, 31 May 1910, and
-  notes white minority rule. Following the table, an account about apartheid
-  South Africa (Bantou, 1959–1994) is `modern`. The operator may prefer to
-  treat minority rule differently; that would be a new ruling, not a reading
-  of this table.
-- **Sudan before 1885.** Turco-Egyptian rule was a conquest, but not by a
-  European power, and HGA VII calls the Mahdist state that ended it a period
-  of « national independence ». Whether 1821–1885 is `colonial` is the
-  operator's call; the accounts set there (South Sudan 1821–1880, Emin
-  Pasha's Equatoria in 1877–1879) carry no era until then.
+- **South Africa — ruled 2026-10-10.** HGA VIII dates independence to the
+  Union, 31 May 1910, and notes white minority rule. An account about
+  apartheid South Africa (Bantou, 1959–1994) stays `modern`, as the table
+  reads; the operator asks that its text name apartheid, which it does.
+- **Sudan before 1885 — ruled 2026-10-10.** Turco-Egyptian rule was a
+  conquest, but not by a European power, and HGA VII calls the Mahdist state
+  that ended it a period of « national independence ». The operator ruled
+  that 1821–1885 counts as `colonial`, wherever the Egyptian province
+  reached. South Sudan 1821–1880 is `colonial`, and so are Emin Pasha's two
+  Alur accounts of November–December 1879: Mahagi was already « our
+  station », and at Wadelai he obtained the chief's « permission to form a
+  station » on that excursion (_Emin Pasha in Central Africa_, 1888,
+  pp. 143, 147). His letter of 20 August 1877 stays
+  without an era: it places the Lur south of Wadelai, « subject to
+  Kabréga », the king of Bunyoro, not under the province (p. 11).
 - **Europe.** The word _race_ was coined in Europe; its accounts set there
   (1290–1684, and an Italian etymology proposed in 1959) are about no African
   territory and carry no era.

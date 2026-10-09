@@ -163,18 +163,18 @@
     {
       "sourceKey": "gha-iv-mali",
       "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
-      "url": "https://archive.org/details/unesco_general_history_africa_iv",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
       "tier": "official",
       "source_kind": "intergovernmental",
-      "notes": "UNESCO, 1984, sous la direction de D. T. Niane ; consulté sur le texte intégral de l'exemplaire numérisé. Le chapitre 6, « Mali and the second Mandingo expansion » (D. T. Niane), range les Touré et les Bérété parmi les cinq clans maraboutiques proclamés « cinq gardiens de la foi », Mori Kanda Lolu, aux côtés des Cissé du Wagadou (p. 134). Le chapitre consacré au Songhay nomme les Ture parmi les plus anciens clans soninké, avec les Sylla, Tunkara, Cissé, Jakhité, Dramé et Diawara (p. 205), et sa note 13 (p. 191) rapporte que les chroniques donnent Muhammad Ture ou Sylla pour l'askiya et que Ture était alors un titre religieux, comme Cisse. L'ouvrage est une synthèse savante et non une chronique ; seule la mention explicite des chroniques est rangée comme telle."
+      "notes": "UNESCO, 1985, sous la direction de D. T. Niane ; édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le chapitre 6, « Le Mali et la deuxième expansion manden » (D. T. Niane), range les Ture et les Berete parmi les cinq clans maraboutiques proclamés « cinq gardiens de la foi », mori kanda lolu, aux côtés des Cissé du Wagadou (p. 158). Le chapitre 8, « Les Songhay du XIIe au XVIe siècle », nomme les Ture parmi les plus anciens clans soninké, avec les Sylla, Tunkara, Sise, Jakite, Drame et Jawara (p. 230), et sa note 13 (p. 219) rapporte que les chroniques donnent Muhammad Ture ou Sylla pour l'askiya et que Ture était alors un titre religieux, comme Sise. L'ouvrage est une synthèse savante et non une chronique ; seule la mention explicite des chroniques est rangée comme telle."
     },
     {
       "sourceKey": "gha-vii-colonial",
       "title": "Histoire générale de l'Afrique, volume VII : l'Afrique sous domination coloniale, 1880-1935",
-      "url": "https://www.unesco.org/en/articles/general-history-africa-vii-africa-under-colonial-domination-1880-1935",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
       "tier": "official",
       "source_kind": "intergovernmental",
-      "notes": "UNESCO, 1985, sous la direction de A. Adu Boahen ; consulté sur le texte intégral du volume. Le chapitre 6 date Samory Touré « vers 1830-1900 », décrit l'armée et l'empire qu'il bâtit entre le nord de l'actuelle Sierra Leone et le Sassandra, puis rapporte sa capture par surprise à Guélémou, le 29 septembre 1898, par la colonne de Gouraud, et sa déportation au Gabon, où il meurt en 1900. Le volume renvoie pour le détail aux trois tomes de la thèse d'Yves Person."
+      "notes": "UNESCO, 1987, sous la direction de A. Adu Boahen ; édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le chapitre 6 date Samori Touré « vers 1830-1900 » (légende de la figure 6.3, p. 146), décrit l'empire qu'il bâtit entre le nord de l'actuelle Sierra Leone et la rivière Sassandra (p. 147), puis rapporte que Gouraud l'attaque par surprise à Gelemu le 29 septembre 1898 et qu'il est déporté au Gabon, où il meurt en 1900 (p. 149). Le volume renvoie pour le détail à la thèse d'Yves Person (note 20)."
     },
     {
       "sourceKey": "person-1963-ancetres-samori",
@@ -275,14 +275,14 @@
             "aspect": "meaning",
             "sources": [
               {
-                "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — chapitre 8, The Songhay from the 12th to the 16th century",
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
                 "author": "Sékéné Mody Cissoko",
-                "year": 1984,
-                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
                 "tier": "official",
                 "source_kind": "intergovernmental",
-                "page": "p. 193, 205",
-                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Les Ture parmi les plus anciens clans d'origine soninké de la société songhay (p. 205) ; Ture donné comme titre religieux (p. 193, note 13)."
+                "page": "p. 219, 230",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Les Ture parmi les plus anciens clans d'origine soninké de la société songhay (p. 230) ; Ture donné comme titre religieux (p. 219, note 13)."
               }
             ]
           },
@@ -330,14 +330,14 @@
             "hypothesisGroup": "origine du nom Touré",
             "sources": [
               {
-                "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — chapitre 8, The Songhay from the 12th to the 16th century",
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
                 "author": "Sékéné Mody Cissoko",
-                "year": 1984,
-                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
                 "tier": "official",
                 "source_kind": "intergovernmental",
-                "page": "p. 205",
-                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. « The oldest were of Soninke origin (Ture, Sylla, Tunkara, Cisse, Jakhite, Drame and Jawara) »."
+                "page": "p. 230",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 230 : « Les plus anciens étaient d'origine soninke (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara) »."
               }
             ]
           },
@@ -352,14 +352,57 @@
             "hypothesisGroup": "origine du nom Touré",
             "sources": [
               {
-                "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — chapitre 8, The Songhay from the 12th to the 16th century",
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
                 "author": "Sékéné Mody Cissoko",
-                "year": 1984,
-                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
                 "tier": "official",
                 "source_kind": "intergovernmental",
-                "page": "p. 193, note 13",
-                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. « Ture was at that time a religious title, like Cisse, and was adopted by the Moroccan conquerors » ; la même note juge que l'askia venait probablement du clan Sylla."
+                "page": "p. 219, note 13",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 219, note 13 : « à l'époque, Ture (« touré ») était un titre religieux tout comme Sise (« cissé »). Le titre ture fut adopté par les conquérants marocains. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1352,
+              "to": 1354,
+              "label": "Voyage d'Ibn Battûta, 1352-1354"
+            },
+            "era": "polity",
+            "statement": "Le nom Touré serait celui des rois de Zâgharî, une ville marchande du Mali où passe le voyageur Ibn Battûta entre 1352 et 1354 : il y note des Blancs sunnites appelés Tûrî. Andreas Massing y reconnaît le clan Touré et voit dans ce passage la première mention de noms de clans maliens dans les sources arabes.",
+            "sources": [
+              {
+                "title": "The Wangara, an Old Soninke Diaspora in West Africa?",
+                "author": "Andreas W. Massing",
+                "year": 2000,
+                "url": "https://journals.openedition.org/etudesafricaines/175",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "paragraphes 14 et 16",
+                "notes": "Cahiers d'études africaines, n° 158, 2000, p. 281-308, texte intégral relu sur OpenEdition le 10 octobre 2026 ; l'édition en ligne numérote les paragraphes, pas les pages. Le paragraphe 14 cite la traduction anglaise d'Ibn Battûta : « The Sunni mâliki among the white men in that country are called Tûrî ». Le paragraphe 16 en conclut qu'à Zaghari, « the kings (maliks) were orthodox Sunni muslims, and of the Toure clan », et y voit la première mention de noms de clans maliens dans les sources arabes. C'est la lecture de l'auteur ; nous n'avons pas lu Ibn Battûta nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "Proposé en 2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Touré viendrait d'une famille d'origine berbère ou arabe, puisque des sources anciennes présentent les Touré comme des Blancs et des rois, selon Andreas Massing. Il rapporte qu'à Bamako deux branches de Touré, les Dravéla et les Tawati, disent venir l'une de la vallée du Drâa, l'autre du Touat.",
+            "hypothesisGroup": "origine du nom Touré",
+            "sources": [
+              {
+                "title": "The Wangara, an Old Soninke Diaspora in West Africa?",
+                "author": "Andreas W. Massing",
+                "year": 2000,
+                "url": "https://journals.openedition.org/etudesafricaines/175",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 12",
+                "notes": "Cahiers d'études africaines, n° 158, 2000, p. 281-308, texte intégral relu sur OpenEdition le 10 octobre 2026 ; l'édition en ligne numérote les paragraphes, pas les pages. La note 12 appelle à étudier le clan Touré, l'un des principaux du Niger moyen ; elle note que les Touré sont mentionnés comme des Blancs et des rois, « which implies a Berber of Arab origin », et rapporte qu'à Bamako « there are 2 branches of Touré, Dravéla and Tawati, claiming origin from the Dra valley and from the Tuat respectively ». L'article traite de la diaspora soninké ; ce passage est une indication incidente."
               }
             ]
           },
@@ -373,14 +416,14 @@
             "statement": "Le nom Touré figure dans la tradition du Manden parmi les cinq clans maraboutiques proclamés « gardiens de la foi » après la victoire de Soundiata, selon Djibril Tamsir Niane.",
             "sources": [
               {
-                "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — chapitre 6, Mali and the second Mandingo expansion",
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
                 "author": "Djibril Tamsir Niane",
-                "year": 1984,
-                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
                 "tier": "official",
                 "source_kind": "intergovernmental",
-                "page": "p. 134",
-                "notes": "UNESCO, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Les cinq clans maraboutiques, dont les Toure et les Berete, proclamés « cinq gardiens de la foi », Mori Kanda Lolu, d'après la tradition du Manden."
+                "page": "p. 158",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 158 : les cinq clans maraboutiques, « dont les Ture et les Berete », furent proclamés les « cinq gardiens de la foi » ou mori kanda lolu, d'après la tradition du Manden."
               }
             ]
           }
@@ -401,17 +444,17 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Ture est l'écriture de Touré dans l'Histoire générale de l'Afrique en anglais ; le dictionnaire des noms de clan mandingues l'écrit Tùre.",
+            "statement": "Le nom Ture est l'écriture de Touré dans l'Histoire générale de l'Afrique de l'UNESCO ; le dictionnaire des noms de clan mandingues l'écrit Tùre.",
             "sources": [
               {
-                "title": "General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — chapitre 8, The Songhay from the 12th to the 16th century",
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
                 "author": "Sékéné Mody Cissoko",
-                "year": 1984,
-                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
                 "tier": "official",
                 "source_kind": "intergovernmental",
-                "page": "p. 205",
-                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise lue sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Écriture Ture."
+                "page": "p. 230",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 230 : écriture Ture."
               },
               {
                 "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
