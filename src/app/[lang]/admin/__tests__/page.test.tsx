@@ -182,6 +182,6 @@ describe("ModerationQueuePage", () => {
   it("states that deciding on a report does not change the fiche", async () => {
     await renderQueue();
 
-    expect(screen.getByText(/ne modifie pas la fiche/)).toBeTruthy();
+    expect(screen.getByText(/ne corrige pas la fiche/)).toBeTruthy();
   });
 });

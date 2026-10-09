@@ -118,13 +118,13 @@ const fr: ModerationConsoleCopy = {
     heading: "Remédiation",
     readOnlyMarker: "Lecture seule",
     readOnlyReason:
-      "La console lit cet état et ne peut pas l'écrire. Un modérateur peut lier une révision — une intention — mais seule la publication du corpus clôt une remédiation : une case à cocher ici annoncerait une correction qui n'a pas eu lieu.",
+      "La console affiche l'avancement de la correction. Un modérateur peut y associer une révision prévue. La correction sera indiquée comme terminée lorsque le contenu corrigé aura été publié.",
     stateHeading: "État",
     states: {
       not_started: "Non entamée",
       in_progress: "Révision en cours",
       published: "Publiée en production",
-      not_applicable: "Aucune correction du corpus nécessaire",
+      not_applicable: "Aucune correction du contenu nécessaire",
     },
     untracked: "Pas encore suivie pour ce signalement.",
     publishedAt: "Publiée le",

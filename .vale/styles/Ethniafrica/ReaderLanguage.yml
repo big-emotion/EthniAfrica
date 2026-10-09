@@ -10,3 +10,9 @@ tokens:
   - "(?:fait|sens|origine) (?:n[’']est pas|non) [ée]tabli(?:e)?"
   - "n[’']a pas de sens [ée]tabli"
   - "aucune de ces lectures n[’']est [ée]tablie"
+
+# Keep the exact names of cited works and research collections.
+exceptions:
+  - "Corpus bambara de référence"
+  - "Botswana Names Corpus"
+  - "Vers une lexicographie mandingue sur la base de grands corpus annotés"

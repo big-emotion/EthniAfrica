@@ -82,7 +82,7 @@
         "mainRegion": "Sud de Djibouti (Issa majoritaires politiquement), Gadabursi, Isaaq",
         "languages": ["Somali (som", "ISO 639-3)", "français", "arabe"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "\"Soomaali\" est l'auto-appellation. \"Somali\" est l'exonyme le plus courant. \"Somalies\" est une forme coloniale française dépassée. Les clans (Issa, Gadabursi, Isaaq) sont des sous-groupes somali. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le peuple se nomme Soomaali. Somali est le nom donné de l'extérieur le plus courant. Somalies est une ancienne forme française de la période coloniale, aujourd'hui délaissée. Les Issa, les Gadabursi et les Isaaq sont des clans somali. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Afar",
@@ -98,7 +98,7 @@
         "mainRegion": "Nord et Centre de Djibouti",
         "languages": ["Afar (aar", "ISO 639-3)", "français", "arabe"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "\"Qafár\" est l'auto-appellation. \"Afar\" est l'exonyme le plus courant et accepté. \"Danakil\" est un terme européen et arabe ancien qui peut avoir une connotation péjorative et doit être évité. \"Dankali\" est un terme historique utilisé pour désigner les Afar et peut être utilisé dans un contexte historique, mais \"Afar\" est préféré."
+        "appellationRemarks": "Les personnes concernées se nomment Qafár. Afar est le nom donné de l'extérieur le plus courant et accepté. Danakil, ancien nom européen et arabe, peut être méprisant ; il est donc à éviter. Dankali peut être employé pour parler d'un usage historique, mais Afar est préféré."
       },
       {
         "name": "Arabes",

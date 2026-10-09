@@ -118,7 +118,7 @@
         "mainRegion": "Sud-est du Bénin (Porto-Novo, Kétou), frontière avec le Nigeria",
         "languages": ["Yoruba (yor", "ISO 639-3)", "français"],
         "languageFamily": "FLG_BENOUECONGO",
-        "appellationRemarks": "\"Yoruba\" et \"Anagó\" sont les auto-appellations. \"Nago\" est une variante exonyme qui peut avoir une connotation réductrice dans certains contextes historiques, mais est accepté comme auto-appellation par les Anago du Bénin et du Togo."
+        "appellationRemarks": "Les populations emploient les noms Yoruba et Anagó pour se présenter. Nago a été donné de l'extérieur et peut être réducteur dans certains contextes historiques. Les Anago du Bénin et du Togo l'ont aussi adopté pour se nommer."
       },
       {
         "name": "Bariba",
@@ -131,7 +131,7 @@
         "mainRegion": "Nord du Bénin (Borgou, Alibori), royaume de Nikki",
         "languages": ["Baatonu (bci", "ISO 639-3)", "français"],
         "languageFamily": "FLG_GUR",
-        "appellationRemarks": "\"Baatonu\" est l'auto-appellation, \"Bariba\" est l'exonyme le plus courant. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le peuple se nomme Baatonu. Bariba est le nom donné de l'extérieur le plus courant. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Dendi",
@@ -157,7 +157,7 @@
         "mainRegion": "Nord du Bénin (pasteurs nomades et sédentaires)",
         "languages": ["Fulfulde (ful", "ISO 639-3)", "français"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Fulɓe\" est l'auto-appellation. \"Peul\" et \"Fulani\" sont des exonymes acceptés. \"Fellata\" peut avoir une connotation péjorative dans certains contextes et doit être évité."
+        "appellationRemarks": "Le peuple se nomme Fulɓe. Peul et Fulani sont aussi des noms acceptés, donnés de l'extérieur. Fellata peut être méprisant dans certains contextes ; il est donc à éviter."
       },
       {
         "name": "Otamari / Somba",

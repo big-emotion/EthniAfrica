@@ -24,7 +24,7 @@
     "oralTraditions": [],
     "writtenChronicles": [
       {
-        "claim": "L’étude des registres d’état civil de Mostaganem relève Benyoucef parmi les prénoms transformés en patronymes et rapproche Youcef de Joseph. Cette observation porte sur ce corpus algérien et ne prouve pas une lignée unique.",
+        "claim": "Une étude des registres d'état civil de Mostaganem relève Benyoucef parmi les prénoms devenus noms de famille et rapproche Youcef de Joseph. Cette observation concerne les registres étudiés. Elle ne signifie pas que toutes les familles Benyoucef ont les mêmes ancêtres.",
         "claimStatus": "claimed",
         "sourceRefs": ["onomastica-benyoucef"]
       }
@@ -64,7 +64,7 @@
       "url": "https://saber.unioeste.br/index.php/onomastica/article/view/32826",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Article scientifique consulté le 2 septembre 2026. Il étudie les registres civils de Mostaganem et cite Benyoucef parmi les prénoms devenus patronymes ; la conclusion reste limitée à ce corpus."
+      "notes": "Article scientifique consulté le 2 septembre 2026. Il étudie les registres d'état civil de Mostaganem et cite Benyoucef parmi les prénoms devenus noms de famille. Cette observation concerne les registres étudiés."
     }
   ],
   "gaps": [

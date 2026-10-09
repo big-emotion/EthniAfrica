@@ -97,7 +97,7 @@
   "gaps": [
     {
       "fieldPath": "origin.oralTraditions",
-      "reason": "Les recherches sur « Idrissa » dans les corpus et travaux songhay-zarma, avec les termes tradition orale, griot et jasare, n'ont livré aucun récit attribué et transcrit."
+      "reason": "Les textes songhay-zarma consultés ne donnent pas de récit oral sur Idrissa dont nous ayons à la fois le texte et le nom de la personne qui l'a raconté."
     },
     {
       "fieldPath": "origin.writtenChronicles",

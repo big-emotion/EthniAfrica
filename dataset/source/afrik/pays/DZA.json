@@ -146,7 +146,7 @@
         "name": "Kabyles",
         "selfAppellation": "Leqbayel / Iqbayliyen",
         "exonyms": [
-          "« Kabyle » (exonyme arabe devenu courant ; non péjoratif mais issu d'une classification extérieure)",
+          "« Kabyle » (nom arabe devenu courant, sans sens méprisant, mais donné de l'extérieur)",
           "« Berbère » (terme colonial",
           "considéré problématique ; auto-appellation correcte : Amazigh / Imazighen)"
         ],
@@ -154,25 +154,25 @@
         "mainRegion": "Kabylie (nord de l'Algérie, massif de l'Atlas tellien)",
         "languages": ["Kabyle (tamaziɣt taqbaylit)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Le terme \"Berbère\" est considéré comme problématique car il vient du grec \"barbaros\" (étranger) et a été utilisé par les colonisateurs. L'auto-appellation correcte est \"Amazigh\" (pluriel : Imazighen). Le terme \"Kabyle\" est un exonyme arabe mais est largement accepté."
+        "appellationRemarks": "Une explication rapproche Berbère du grec barbaros, « étranger ». Son usage par les colonisateurs contribue à rendre ce nom problématique. Les personnes concernées se nomment Amazigh, ou Imazighen au pluriel. Kabyle est un nom d'origine arabe largement accepté."
       },
       {
         "name": "Chaouis",
         "selfAppellation": "Ishawiyen / Icawiyen",
         "exonyms": [
-          "« Chaouïa » (exonyme arabe utilisé depuis le Moyen Âge ; non péjoratif mais extérieur)"
+          "« Chaouïa » (nom arabe utilisé depuis le Moyen Âge, donné de l'extérieur, sans sens méprisant)"
         ],
         "peopleId": "PPL_CHAOUI",
         "mainRegion": "Massif de l'Aurès (est de l'Algérie)",
         "languages": ["Chaoui (tachawit)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Le terme \"Chaoui\" est un exonyme arabe mais est largement accepté. L'auto-appellation est \"Ishawiyen\" ou \"Icawiyen\"."
+        "appellationRemarks": "Chaoui est un nom d'origine arabe largement accepté. Les personnes concernées se nomment Ishawiyen ou Icawiyen."
       },
       {
         "name": "Mozabites",
         "selfAppellation": "Imazighen du Mzab",
         "exonyms": [
-          "Mozabites (exonyme français)",
+          "Mozabites (nom français donné de l'extérieur)",
           "« Berbère » (terme colonial",
           "considéré problématique)"
         ],
@@ -185,7 +185,7 @@
       {
         "name": "Chenoua",
         "selfAppellation": "Ičenwa",
-        "exonyms": ["Chenoua (exonyme français)"],
+        "exonyms": ["Chenoua (nom français donné de l'extérieur)"],
         "peopleId": "PPL_CHENOUA",
         "mainRegion": "Mont Chenoua (région de Tipaza)",
         "languages": ["Chenoua (tacenwit)"],
@@ -196,7 +196,7 @@
         "name": "Touaregs",
         "selfAppellation": "Kel Tamasheq / Imuhagh",
         "exonyms": [
-          "Touaregs (exonyme français)",
+          "Touaregs (nom français donné de l'extérieur)",
           "« Berbère » (terme colonial",
           "considéré problématique)"
         ],
@@ -204,7 +204,7 @@
         "mainRegion": "Sahara algérien (Ahaggar, Tassili n'Ajjer)",
         "languages": ["Tamasheq (tamahaq)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Le terme \"Touareg\" est un exonyme français. L'auto-appellation est \"Kel Tamasheq\" (ceux qui parlent tamasheq) ou \"Imuhagh\". Le terme \"Berbère\" est considéré comme problématique."
+        "appellationRemarks": "Touareg est un nom français donné de l'extérieur. Les personnes concernées se nomment Kel Tamasheq, « ceux qui parlent tamasheq », ou Imuhagh. Le nom Berbère est considéré comme problématique."
       }
     ],
     "culture": {

@@ -22,7 +22,7 @@
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "La notice consultée présente Ismail (إسماعيل) comme la forme arabe d'Ishmael et répertorie Ismaaciil comme forme somalie ; ce rapprochement est conservé comme claimed au tier communautaire.",
+        "claim": "La notice consultée présente Ismail (إسماعيل) comme la forme arabe d'Ishmael et Ismaaciil comme forme somalie. Ce rapprochement vient d'une contribution communautaire et reste une hypothèse.",
         "claimStatus": "claimed",
         "sourceRefs": ["ismail-behindthename"]
       }
@@ -83,7 +83,7 @@
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Ismail, Ismaïl et Ismaaciil ont été recherchés comme anthroponymes et toponymes ; aucun homonyme distinct répondant au modèle du corpus n'a été établi."
+      "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Ismail, mais d'origine différente."
     }
   ]
 }
