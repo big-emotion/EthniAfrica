@@ -59,7 +59,7 @@ const fr = {
     other: "Autre",
   },
   targets: {
-    assertion: "Assertion",
+    assertion: "Information concernée",
     source: "Source",
     fiche_section: "Section de page",
     classification: "Classification",

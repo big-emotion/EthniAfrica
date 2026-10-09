@@ -250,7 +250,7 @@ describe("PeopleCountriesSection", () => {
       ],
     };
     render(<PeopleCountriesSection language="fr" data={data} />);
-    expect(screen.getAllByText(/Dérivé/)).toHaveLength(1);
+    expect(screen.getAllByText(/À partir de/)).toHaveLength(1);
   });
 
   // @req REQ-155
@@ -277,7 +277,7 @@ describe("PeopleCountriesSection", () => {
       ],
     };
     render(<PeopleCountriesSection language="fr" data={data} />);
-    expect(screen.getAllByText(/Dérivé/)).toHaveLength(2);
+    expect(screen.getAllByText(/À partir de/)).toHaveLength(2);
   });
 
   // Five countries must fit a 430px screen, not a screen and a half: the

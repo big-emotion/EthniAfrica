@@ -146,7 +146,7 @@ describe("the Appellations nomenclature page", () => {
     render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
 
     expect(
-      screen.getByText(/Un peuple porte rarement un seul nom/)
+      screen.getByText(/Un peuple peut porter plusieurs noms/)
     ).toBeInTheDocument();
   });
 
@@ -179,6 +179,8 @@ describe("the Appellations nomenclature page", () => {
     });
     render((await resolveAsyncServerComponents(ui)) as React.ReactElement);
 
-    expect(screen.getByText(/C'est la dimension Nom/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/la rubrique consacrée aux noms des personnes/)
+    ).toBeInTheDocument();
   });
 });

@@ -87,7 +87,7 @@ describe("FicheSnapshotView", () => {
     );
 
     expect(
-      screen.getByRole("link", { name: /version vivante/i })
+      screen.getByRole("link", { name: /version à jour/i })
     ).toHaveAttribute("href", getPeopleRoute("fr", "PPL_YORUBA"));
   });
 

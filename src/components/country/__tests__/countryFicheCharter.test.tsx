@@ -117,7 +117,7 @@ describe("country fiche charter", () => {
     );
 
     expect(section).toHaveTextContent(/32,7\sM/);
-    expect(section).toHaveTextContent("Donnée manquante");
+    expect(section).toHaveTextContent("Information manquante");
   });
 
   // @req REQ-115
@@ -433,14 +433,14 @@ describe("country fiche charter", () => {
 
     expect(
       document.querySelector('[data-fiche-section="Histoire"]')
-    ).toHaveTextContent("Donnée manquante");
+    ).toHaveTextContent("Information manquante");
 
     // The chapter the atlas does fill carries no marker: a marker beside a
     // declared value would report a gap that is not there.
     const peoples = document.querySelector(
       '[data-fiche-section="Peuples du pays"]'
     );
-    expect(peoples?.textContent).not.toContain("Donnée manquante");
+    expect(peoples?.textContent).not.toContain("Information manquante");
   });
 
   /**

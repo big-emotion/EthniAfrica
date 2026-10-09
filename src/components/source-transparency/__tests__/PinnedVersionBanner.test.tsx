@@ -31,14 +31,14 @@ describe("PinnedVersionBanner", () => {
     );
 
     const region = screen.getByRole("region", {
-      name: "indicateur de version figée",
+      name: "informations sur cette version enregistrée",
     });
     expect(region).toHaveAttribute("data-pinned-banner");
     expect(region).toHaveTextContent(
-      "Version figée du 21 septembre 2025 (@v34) · voir la version vivante"
+      "Version enregistrée du 21 septembre 2025 (@v34) · voir la version à jour"
     );
     expect(
-      screen.getByRole("link", { name: "voir la version vivante" })
+      screen.getByRole("link", { name: "voir la version à jour" })
     ).toHaveAttribute("href", LIVE_URL);
   });
 
@@ -72,7 +72,7 @@ describe("PinnedVersionBanner", () => {
 
       const region = screen.getByRole("region");
       expect(region).toHaveTextContent(
-        "Version figée (@v34) · voir la version vivante"
+        "Version enregistrée (@v34) · voir la version à jour"
       );
       expect(region).not.toHaveTextContent("Invalid Date");
     }
@@ -108,7 +108,7 @@ describe("PinnedVersionBanner", () => {
     );
 
     const collapseControl = screen.getByRole("button", {
-      name: "réduire l’indicateur de version figée",
+      name: "masquer les détails de cette version",
     });
     expect(collapseControl).toHaveClass("min-h-[44px]", "min-w-[44px]");
 
@@ -123,11 +123,11 @@ describe("PinnedVersionBanner", () => {
       "max-w-full"
     );
     expect(
-      screen.getByRole("link", { name: "voir la version vivante" })
+      screen.getByRole("link", { name: "voir la version à jour" })
     ).toBeVisible();
     expect(
       screen.getByRole("button", {
-        name: "développer l’indicateur de version figée",
+        name: "afficher les détails de cette version",
       })
     ).toHaveAttribute("aria-expanded", "false");
     expect(window.localStorage.getItem(storageKey(LIVE_URL))).toBe("1");
@@ -148,11 +148,11 @@ describe("PinnedVersionBanner", () => {
 
     expect(
       await screen.findByRole("button", {
-        name: "développer l’indicateur de version figée",
+        name: "afficher les détails de cette version",
       })
     ).toBeInTheDocument();
     expect(screen.getByRole("region")).not.toHaveTextContent(
-      "Version figée du"
+      "Version enregistrée du"
     );
     expect(screen.getByRole("link")).toBeVisible();
   });
@@ -171,7 +171,7 @@ describe("PinnedVersionBanner", () => {
 
     expect(
       screen.getByRole("button", {
-        name: "réduire l’indicateur de version figée",
+        name: "masquer les détails de cette version",
       })
     ).toBeInTheDocument();
 
@@ -187,7 +187,7 @@ describe("PinnedVersionBanner", () => {
     await waitFor(() => {
       expect(
         screen.getByRole("button", {
-          name: "développer l’indicateur de version figée",
+          name: "afficher les détails de cette version",
         })
       ).toBeInTheDocument();
     });
@@ -216,20 +216,20 @@ describe("PinnedVersionBanner", () => {
 
     fireEvent.click(
       screen.getByRole("button", {
-        name: "réduire l’indicateur de version figée",
+        name: "masquer les détails de cette version",
       })
     );
     expect(
       screen.getByRole("button", {
-        name: "développer l’indicateur de version figée",
+        name: "afficher les détails de cette version",
       })
     ).toBeInTheDocument();
   });
 
   // @req REQ-019
   it.each([
-    [1, "Depuis cette version figée, 1 assertion a été corrigée"],
-    [2, "Depuis cette version figée, 2 assertions ont été corrigées"],
+    [1, "Depuis cette version enregistrée, 1 information a été corrigée"],
+    [2, "Depuis cette version enregistrée, 2 informations ont été corrigées"],
   ])("renders the resolved flag note for count %i", (count, expectedCopy) => {
     render(
       <PinnedVersionBanner
@@ -243,7 +243,9 @@ describe("PinnedVersionBanner", () => {
 
     expect(screen.getByRole("region")).toHaveTextContent(expectedCopy);
     expect(screen.getAllByRole("link")).toHaveLength(1);
-    expect(screen.getByRole("link")).toHaveTextContent("voir version vivante");
+    expect(screen.getByRole("link")).toHaveTextContent(
+      "voir la version à jour"
+    );
   });
 
   // @req REQ-019
@@ -259,7 +261,7 @@ describe("PinnedVersionBanner", () => {
     );
 
     expect(screen.getByRole("region")).not.toHaveTextContent(
-      "Depuis cette version figée"
+      "Depuis cette version enregistrée"
     );
   });
 });

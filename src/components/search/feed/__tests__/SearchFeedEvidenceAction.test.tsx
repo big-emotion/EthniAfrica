@@ -49,7 +49,7 @@ describe("SearchFeedEvidenceAction", () => {
       /Référencée|Officielle|Non vérifiée/
     );
     const trigger = screen.getByRole("button", {
-      name: /ouvrir la chaîne de sources/i,
+      name: /consulter les sources de cette information/i,
     });
     expect(trigger).toHaveClass("min-h-[44px]");
     expect(trigger).toHaveTextContent("1 référence");
@@ -79,7 +79,9 @@ describe("SearchFeedEvidenceAction", () => {
     expect(document.getElementById("feed-evidence-fang")).toBeInTheDocument();
 
     fireEvent.click(
-      screen.getByRole("button", { name: /ouvrir la chaîne de sources/i })
+      screen.getByRole("button", {
+        name: /consulter les sources de cette information/i,
+      })
     );
 
     await screen.findByText("Dictionnaire fang-français");

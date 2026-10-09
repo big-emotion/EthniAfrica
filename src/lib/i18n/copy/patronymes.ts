@@ -28,7 +28,7 @@ const fr = {
       "Cette page est en cours de constitution : ce qu'elle avance reste à confirmer.",
   },
   casteOrSocialFunctionLabel: "Caste ou fonction sociale",
-  attestedFormsTitle: "Graphies attestées",
+  attestedFormsTitle: "Orthographes trouvées dans les sources",
   spellingAttestedInPrefix: "attestée en",
   transmissionModeLabel: "Mode de transmission",
   transmissionModeLabels: PATRONYME_VOCABULARY.fr.transmissionMode,

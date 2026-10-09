@@ -9,6 +9,8 @@ import type { Language } from "@/types/shared";
  * budget on +0.58 KB of unrelated copy. The island reads this module only.
  */
 const fr = {
+  autonymQuestion: (name: string) =>
+    `Quel nom emploie pour se désigner le peuple appelé ${name} ?`,
   navLabel: "Quiz",
   pageTitle: "Sur quoi veux-tu jouer ?",
   pageSubtitle:

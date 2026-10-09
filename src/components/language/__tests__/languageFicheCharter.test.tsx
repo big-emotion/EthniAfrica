@@ -67,7 +67,7 @@ const CHAPTER_TITLES: Array<{ title: string; fieldPath: string }> = [
   { title: "Identifiants", fieldPath: "isoCode639_3" },
   { title: "Autres noms attestés", fieldPath: "alternateNames" },
   { title: "Famille linguistique", fieldPath: "familyId" },
-  { title: "Locuteurs", fieldPath: "peoples" },
+  { title: "Personnes qui parlent cette langue", fieldPath: "peoples" },
   { title: "Dialectes", fieldPath: "content.dialects" },
   { title: "Rôle véhiculaire", fieldPath: "content.vehicularRole" },
   { title: "Vitalité", fieldPath: "content.vitalityStatus" },
@@ -101,7 +101,7 @@ describe("language fiche charter — the chapter list is the model's", () => {
     // sources — the six the corpus leaves empty on 23 of the 24 fiches.
     // Identifiers is the one chapter that always has something to say, which
     // is the whole point of adding it.
-    expect(screen.getAllByText("Donnée manquante")).toHaveLength(6);
+    expect(screen.getAllByText("Information manquante")).toHaveLength(6);
   });
 });
 

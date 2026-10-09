@@ -34,7 +34,7 @@ const fr = {
       heading: "Trois questions à distinguer",
       paragraphs: [
         "Comment ce nom est-il employé aujourd’hui ? Où et quand retrouve-t-on des traces de son usage ? Quelles explications sont proposées pour son origine ?",
-        "Un témoignage peut documenter un usage. Un document peut attester qu’un nom était écrit à une certaine date. Expliquer son origine demande une enquête distincte. Nous précisons à quelle question chaque élément répond.",
+        "Un témoignage peut montrer comment un nom est employé. Un document peut prouver que ce nom était écrit à une certaine date. Comprendre son origine demande d’autres recherches. Nous précisons ce que chaque source permet de dire.",
       ],
     },
     {
@@ -48,7 +48,7 @@ const fr = {
       heading: "Ce qu’une source permet de dire",
       paragraphs: [
         "Nous indiquons l’auteur ou l’institution, le document et sa date lorsqu’ils sont connus. Nous cherchons à relier chaque affirmation importante à la source qui la soutient.",
-        "La provenance d’une source et la solidité d’une affirmation sont deux questions distinctes. Une source peut être utile pour un usage, sans établir une origine. Un document peut reprendre une information sans la vérifier.",
+        "Connaître l’auteur d’une source ne suffit pas à savoir si une information est exacte. Un texte peut montrer comment un nom est employé sans expliquer son origine. Il peut aussi reprendre une information sans la vérifier.",
       ],
     },
     {
@@ -56,7 +56,7 @@ const fr = {
       paragraphs: [
         "Un récit transmis oralement est présenté avec son contexte : qui le transmet, où et quand il a été recueilli, et quelles variantes sont connues, lorsque ces informations sont disponibles.",
         "Nous cherchons à travailler avec les personnes qui portent ces traditions. Nous ne publions un témoignage confié au projet qu’avec un accord sur son utilisation et son attribution.",
-        "Un récit absent des archives consultées n’est pas pour autant inexistant. Un récit transmis et une affirmation chronologique peuvent demander des lectures et des vérifications différentes.",
+        "Un récit peut exister sans apparaître dans les archives que nous avons consultées. Pour comprendre ce récit ou vérifier la date d’un événement, nous pouvons avoir besoin de sources différentes.",
       ],
     },
     {
@@ -69,14 +69,14 @@ const fr = {
     {
       heading: "Montrer ce qui est établi et ce qui reste discuté",
       paragraphs: [
-        "Nous distinguons les faits étayés, les explications attribuées à leurs auteurs et les questions non résolues. Lorsqu’il existe plusieurs hypothèses, nous expliquons sur quoi elles reposent et quelles limites sont connues.",
+        "Nous distinguons les faits appuyés par des sources, les explications attribuées à leurs auteurs et les questions non résolues. Lorsqu’il existe plusieurs hypothèses, nous expliquons sur quoi elles reposent et quelles limites sont connues.",
         "Présenter un désaccord n’oblige pas à donner la même solidité à toutes les explications. Si les sources ne permettent pas de conclure, nous le disons.",
       ],
     },
     {
       heading: "Une trace n’est pas toujours un commencement",
       paragraphs: [
-        "La plus ancienne trace que nous avons retrouvée atteste un usage à cette date. Elle ne prouve pas que le nom a été créé ce jour-là, ni qu’il n’était pas employé auparavant à l’oral ou dans un autre document.",
+        "La plus ancienne trace que nous avons retrouvée montre que le nom était employé à cette date. Elle ne prouve pas que le nom a été créé ce jour-là, ni qu’il n’était pas employé auparavant à l’oral ou dans un autre document.",
       ],
     },
     {
@@ -93,22 +93,22 @@ const fr = {
         {
           sentence: "« Avant, on vivait en accord avec le continent. »",
           reason:
-            "Un âge d’or n’a pas besoin d’être vrai pour être attaquable : l’Afrique d’avant Berlin avait aussi des empires, des conquêtes, des traites internes. La force de l’argument vient de sa durée et de son échelle, pas de la douceur du passé.",
+            "Avant la conférence de Berlin, l’Afrique connaissait aussi des empires, des conquêtes et des commerces d’esclaves. Nous cherchons à raconter cette histoire sans présenter le passé comme une époque où tout le monde vivait en paix.",
         },
         {
           sentence: "« Les frontières sont arbitraires. »",
           reason:
-            "À demi faux : certaines suivent des fleuves. Elles ont surtout été tracées sans référence à qui habitait là, et nous le montrons peuple par peuple.",
+            "Certaines frontières suivent des fleuves ou d’autres repères géographiques. La question est aussi de savoir comment leur tracé a tenu compte des populations qui vivaient sur place. Nous examinons cette question pour chaque cas.",
         },
         {
           sentence: "« Renouer avec le passé. »",
           reason:
-            "Renouer suppose la rupture consommée — or ces peuples sont comptés en 2025 et présents en France. Il ne s’agit pas de renouer, mais de reconnaître ce qui n’a jamais cessé : c’est plus vrai, et moins triste.",
+            "Cette formule peut laisser croire que ces histoires ont disparu. Les populations et leurs descendants sont toujours présents, en Afrique et dans les diasporas. Leurs histoires continuent et se transmettent.",
         },
         {
           sentence: "« Avant les frontières, les peuples étaient unis. »",
           reason:
-            "Des parentés de langue et de culture ont parfois traversé des ruptures plus anciennes que la carte coloniale — une scission, une migration, une querelle de succession. La frontière n’a pas toujours créé la séparation : elle l’a souvent verrouillée.",
+            "Des populations proches par la langue ou la culture ont parfois été séparées avant la colonisation, à la suite de migrations, de divisions ou de conflits de succession. Certaines frontières ont renforcé des séparations déjà présentes.",
         },
       ],
     },
@@ -136,18 +136,18 @@ const fr = {
   classificationSection: {
     heading: "Comprendre nos indications",
     intro:
-      "Certaines pages indiquent si une classification fait l’objet d’un large accord, reste discutée, porte la trace d’une histoire coloniale ou repose sur une reconstruction. Ces indications décrivent la classification présentée, pas la valeur ni la légitimité des personnes concernées.",
+      "Certaines pages précisent comment les chercheurs regroupent les peuples ou les langues. Nous indiquons si ce regroupement est largement accepté, discuté, hérité de la colonisation ou proposé à partir d’informations incomplètes. Ces indications portent sur le classement, pas sur la valeur des personnes concernées.",
   },
-  stepLabel: "Statut éditorial",
+  stepLabel: "À propos de ce classement",
   descriptions: {
     consensual:
-      "Une classification est dite consensuelle lorsqu'elle fait l'objet d'un large accord dans la littérature scientifique contemporaine (linguistique historique, anthropologie, archéologie). Les sources primaires et secondaires convergent et le débat académique sur le rattachement est clos ou marginal.",
+      "Ce regroupement fait l’objet d’un large accord dans les travaux de recherche actuels. Les sources consultées proposent des rapprochements semblables et peu de chercheurs les contestent.",
     contested:
-      "Une classification est contestée lorsqu'elle fait l'objet de débats actifs entre chercheurs : sous-classification interne discutée, frontières floues avec une famille voisine, hypothèses concurrentes documentées. Nous conservons la classification courante tout en signalant la controverse.",
+      "Les chercheurs proposent plusieurs façons de regrouper ces peuples ou ces langues. Ils peuvent notamment ne pas être d’accord sur les liens avec un groupe voisin. Nous présentons le classement courant et expliquons les désaccords.",
     "colonial-legacy":
-      "Une classification d'héritage colonial est une catégorie produite (ou figée) durant la période coloniale, généralement par des administrateurs, des missionnaires ou des linguistes au service de l'administration. Nous conservons ces catégories pour respecter la traçabilité historique, mais nous expliquons pourquoi elles sont problématiques et privilégions les auto-appellations.",
+      "Ce regroupement a été créé ou rendu officiel pendant la colonisation, souvent par une administration, des missionnaires ou des chercheurs à son service. Nous le conservons pour permettre de retrouver les sources anciennes. Nous expliquons les questions qu’il pose et privilégions les noms employés par les personnes concernées.",
     reconstructive:
-      "Une classification reconstructive est une catégorisation établie à partir de sources fragmentaires (traditions orales, archéologie, génétique, glottochronologie). Elle reste provisoire, sujette à révision à mesure que de nouvelles données émergent, et explicitement présentée comme une reconstruction.",
+      "Ce regroupement est une proposition fondée sur des informations incomplètes. Elles peuvent venir de récits oraux, de fouilles, d’études génétiques ou de comparaisons entre les langues. Il peut changer avec de nouvelles recherches.",
   } satisfies Record<ClassificationStatus, string>,
   closingActions: {
     sources: "Consulter les sources",
@@ -155,7 +155,7 @@ const fr = {
     search: "Chercher un nom",
   } satisfies ClosingActionsCopy,
   article: {
-    sectionName: "Doctrine éditoriale",
+    sectionName: "Notre méthode",
     changelog: "Voir l'historique des modifications",
     fallback: "",
   },

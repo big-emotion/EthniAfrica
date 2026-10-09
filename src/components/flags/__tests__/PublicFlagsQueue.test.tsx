@@ -115,7 +115,7 @@ describe("PublicFlagsQueue", () => {
     ).toBeInTheDocument();
     expect(within(row).getByText("Peuple")).toBeInTheDocument();
     expect(within(row).getByText("Source manquante")).toBeInTheDocument();
-    expect(within(row).getByText("Assertion")).toBeInTheDocument();
+    expect(within(row).getByText("Information concernée")).toBeInTheDocument();
     // The corpus identifier and the schema path are what the row used to end
     // on. The type, the entity label and the statement already name the target
     // in words, so the two mono lines were schema shown to the public.

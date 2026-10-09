@@ -181,9 +181,9 @@ export const RELATION_TYPE_LABELS: Labels<RelationBadgeType> = {
 // @req REQ-056
 export const NAME_TYPE_LABELS: Labels<NameRecordType | "imposed"> = {
   fr: {
-    endonym: "endonyme",
-    exonym: "exonyme",
-    historical_spelling: "graphie historique",
+    endonym: "nom employé par le peuple",
+    exonym: "nom donné par d’autres",
+    historical_spelling: "ancienne orthographe",
     surname: "patronyme",
     imposed: "nom imposé",
   },

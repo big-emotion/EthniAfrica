@@ -23,22 +23,21 @@ const fr = {
    * autonym each and cannot be entered from a name heard elsewhere.
    */
   purpose:
-    "Un peuple porte rarement un seul nom. Il en a un qu'il emploie lui-même, d'autres que ses voisins lui donnent, d'autres encore qu'une administration coloniale a fixés par écrit — et certains sont péjoratifs. Cette page les recense tous, pour qu'un nom entendu quelque part mène au peuple qu'il désigne, sans décider lequel est le bon.",
+    "Un peuple peut porter plusieurs noms. Certains sont employés par ses habitants, d’autres viennent de ses voisins ou d’une administration coloniale. Certains noms sont jugés méprisants. Cette page rassemble les noms que nous avons retrouvés pour vous aider à identifier le peuple dont on parle et à comprendre leur histoire.",
   // The note used to say the genealogy of personal names was "not covered
   // yet". It is: the patronyme pages exist and now have their own route
   // (DEC-038), so the note points there instead of closing the door.
   genealogyNote:
-    "Cette page documente les noms de peuples (ethnonymes) — endonymes, exonymes et appellations imposées. Vous cherchez l'origine d'un nom de famille ? C'est la dimension Nom, qui documente les systèmes de nommage des personnes.",
+    "Cette page présente les noms de peuples. Pour chercher l’origine d’un nom de famille, consultez la rubrique consacrée aux noms des personnes.",
   searchLabel: "Rechercher un nom",
-  searchPlaceholder:
-    "Rechercher un nom (endonyme, exonyme, graphie historique...)",
+  searchPlaceholder: "Rechercher un nom, actuel ou ancien…",
   searchSubmit: "Rechercher",
   filtersLabel: "Filtrer par type de nom",
   // The four chips are the page's own vocabulary and were glossed nowhere
   // a reader passes through — « endonyme » and « exonyme » least of all,
   // and they are the two that carry the page's whole argument.
   filtersLegend:
-    "Un endonyme est le nom qu'un peuple se donne ; un exonyme, celui que d'autres lui donnent ; une graphie historique, une forme fixée par écrit à une époque ; un nom imposé, une appellation attribuée de l'extérieur.",
+    "Les filtres distinguent les noms employés par un peuple pour se nommer, ceux que d’autres lui donnent et les anciennes façons de les écrire. Un nom donné de l’extérieur n’a pas nécessairement été imposé.",
   filters: {
     all: "tous",
     endonym: NAME_TYPE_LABELS.fr.endonym,
@@ -68,14 +67,14 @@ const fr = {
   peoplesPlural: "peuples",
   problematicLabel: "Pourquoi ce nom pose problème :",
   pagination: {
-    label: "Pagination de la nomenclature",
+    label: "Pages de résultats",
     previous: "Précédent",
     next: "Suivant",
     page: "Page",
   },
   emptyState: {
     spellingGuidance:
-      "Vérifiez l'orthographe : un même nom peut varier selon la graphie historique ou la langue d'origine.",
+      "Essayez une autre orthographe : un nom peut s’écrire différemment selon la langue ou l’époque.",
     browseByTypeLabel: "Parcourir par type de nom :",
     clearFilters: "Retirer les filtres",
     reportMissing: "Signaler une donnée manquante",

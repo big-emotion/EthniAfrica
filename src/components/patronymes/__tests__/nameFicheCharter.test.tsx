@@ -168,6 +168,8 @@ describe("name fiche charter — the corpus explains its own silences", () => {
       />
     );
 
-    expect(screen.getAllByText("Donnée manquante").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Information manquante").length).toBeGreaterThan(
+      0
+    );
   });
 });

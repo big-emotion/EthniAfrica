@@ -176,7 +176,7 @@ describe("people fiche parity with the mockup", () => {
     );
     expect(distribution?.textContent).toContain("67,5");
     expect(
-      distribution?.querySelectorAll('[aria-label*="Dérivé"]')
+      distribution?.querySelectorAll('[aria-label*="Information obtenue"]')
     ).toHaveLength(1);
     expect(distribution?.textContent).toContain("32");
   });
@@ -291,9 +291,9 @@ describe("people fiche — what the corpus does not fill", () => {
       container.querySelector(`[data-fiche-section="${title}"]`)?.textContent ??
       "";
 
-    expect(textOf("Histoire")).toContain("Donnée manquante");
-    expect(textOf("Langue")).toContain("Donnée manquante");
-    expect(textOf("Culture et société")).toContain("Donnée manquante");
+    expect(textOf("Histoire")).toContain("Information manquante");
+    expect(textOf("Langue")).toContain("Information manquante");
+    expect(textOf("Culture et société")).toContain("Information manquante");
   });
 
   // A marker beside a value the fiche does declare would report a gap that is
@@ -309,7 +309,7 @@ describe("people fiche — what the corpus does not fill", () => {
 
     expect(
       container.querySelector('[data-fiche-section="Langue"]')?.textContent
-    ).not.toContain("Donnée manquante");
+    ).not.toContain("Information manquante");
   });
 
   // Fragmentation is not a rubric of the model: it exists only where a people

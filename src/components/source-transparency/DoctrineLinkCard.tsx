@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { sourceTransparencyCopy } from "@/lib/i18n/copy/sourceTransparency";
 import { getLocalizedRoute } from "@/lib/routing";
 import { FALLBACK_LOCALE } from "@/lib/locale";
 import type { Language } from "@/types/shared";
@@ -29,24 +30,13 @@ export type DoctrineLinkCardProps = {
   language?: Language;
 };
 
-const FR_DOCTRINE_COPY: Record<DoctrineSlug, string> = {
-  "endonymes-vs-exonymes":
-    "Cette fiche utilise endonymes (auto-désignations) et exonymes (désignations extérieures). Lisez la doctrine pour comprendre nos choix.",
-  "classifications-contestees":
-    "Cette classification fait l'objet de débats académiques et de positionnements éditoriaux. Voir la doctrine.",
-  "heritage-colonial":
-    "Ce terme provient de l'héritage colonial. Nous le conservons en l'expliquant. Voir la doctrine.",
-  "topics-sensibles":
-    "Ce sujet est sensible. Notre doctrine éditoriale encadre la rédaction. Voir la doctrine.",
-};
-
 // @req REQ-019
 export function DoctrineLinkCard({
   slug,
   version,
   language = FALLBACK_LOCALE,
 }: DoctrineLinkCardProps) {
-  const copy = FR_DOCTRINE_COPY[slug];
+  const copy = sourceTransparencyCopy[language].doctrineLink;
   const href =
     version !== undefined
       ? `${getLocalizedRoute(language, "doctrine")}/${slug}@v${version}`
@@ -60,13 +50,13 @@ export function DoctrineLinkCard({
         color: "var(--country-text, #1a1a1a)",
       }}
     >
-      <p className="mb-[8px]">{copy}</p>
+      <p className="mb-[8px]">{copy.descriptions[slug]}</p>
       <Link
         href={href}
         className="inline-block font-semibold underline underline-offset-2 hover:no-underline"
         style={{ color: "var(--country-earth, currentColor)" }}
       >
-        {"Lire la doctrine"}
+        {copy.action}
       </Link>
     </aside>
   );

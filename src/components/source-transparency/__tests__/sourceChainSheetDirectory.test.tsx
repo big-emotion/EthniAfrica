@@ -70,7 +70,7 @@ describe("SourceChainSheet — the directory bridge", () => {
     ]);
 
     expect(
-      screen.getByRole("link", { name: /bibliographie/i })
+      screen.getByRole("link", { name: /référence complète/i })
     ).toHaveAttribute(
       "href",
       "/fr/sources/11111111-1111-1111-1111-111111111111"

@@ -47,7 +47,7 @@ const fr = {
   reportSection: "Signaler cette section",
   naming: {
     selfDesignation: "Auto-appellation",
-    exonyms: "Exonymes",
+    exonyms: "Noms donnés par d’autres",
     origin: "D'où viennent ces noms.",
     problematic: "Pourquoi ces noms posent problème.",
     contemporary: "L'usage aujourd'hui.",

@@ -134,9 +134,7 @@ describe("FicheSummaryBrief", () => {
     );
 
     const fact = screen.getByTestId("fiche-summary-fact");
-    expect(
-      within(fact).getByText(/Un même peuple s'appelle Guéré/)
-    ).toBeVisible();
+    expect(within(fact).getByText(/Wè, Guéré, Wobé et Krahn/)).toBeVisible();
     expect(within(fact).getByRole("link", { name: /Holsoe/ })).toBeVisible();
     // Doctrine §1.1: the reader sees the source, never its tier.
     expect(fact.textContent).not.toMatch(
@@ -173,7 +171,7 @@ describe("FicheSummaryBrief", () => {
     );
 
     expect(screen.getAllByTestId("fiche-summary-fact")).toHaveLength(1);
-    expect(screen.getByText(/Un même peuple s'appelle Guéré/)).toBeVisible();
+    expect(screen.getByText(/Wè, Guéré, Wobé et Krahn/)).toBeVisible();
   });
 
   // @req REQ-151

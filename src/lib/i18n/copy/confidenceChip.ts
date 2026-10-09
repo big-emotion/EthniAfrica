@@ -20,7 +20,7 @@ export const confidenceChipCopy: Record<Language, ConfidenceChipCopy> = {
       `${count} ${count === 1 ? "référence" : "références"}`,
     pill: (references, isoDate) => `${references} · revu ${isoDate}`,
     openSources: (references, longDate) =>
-      `ouvrir la chaîne de sources pour cette assertion (${references}, dernière relecture le ${longDate})`,
+      `consulter les sources de cette information (${references}, dernière relecture le ${longDate})`,
     viewSources: "voir les sources",
   },
 };

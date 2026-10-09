@@ -3,43 +3,57 @@ import type { Language } from "@/types/shared";
 const fr = {
   verifyBadge: {
     label: "source à vérifier",
-    reason: "URL de la source injoignable depuis au moins 7 jours consécutifs.",
+    reason:
+      "Le lien vers cette source ne fonctionne plus depuis au moins 7 jours.",
   },
   sourceChain: {
-    title: "Chaîne des sources",
+    title: "Sources de cette information",
     description:
-      "Détails de l'assertion, niveau de confiance et sources vérifiables.",
+      "Consultez les sources et les vérifications associées à cette information.",
     position: "Position",
     confidence: "Niveau de confiance",
     confidenceSummary: (count: number, auditedAt: string | null) =>
       `Calculé à partir de ${count} source${count > 1 ? "s" : ""}${
         auditedAt
-          ? ` · dernier audit humain le ${auditedAt}`
-          : " · jamais audité par un humain"
+          ? ` · dernière relecture le ${auditedAt}`
+          : " · pas encore relu par une personne"
       }.`,
     openReports: (count: number) =>
       `${count} signalement${count > 1 ? "s" : ""} ouvert${
         count > 1 ? "s" : ""
-      } sur cette assertion.`,
+      } sur cette information.`,
     sources: "Sources",
     reviewedNarratives: "Récits oraux relus",
-    viewInBibliography: "Voir dans la bibliographie",
-    brokenLink: (date: string) => `lien non résolu — signalé le ${date}`,
+    viewInBibliography: "Consulter la référence complète",
+    brokenLink: (date: string) => `lien inaccessible, signalé le ${date}`,
     reportSource: "Signaler cette source",
-    revisionHistory: "Voir l'historique des révisions",
+    revisionHistory: "Voir les modifications précédentes",
     reportProblem: "Signaler un problème",
-    citeAssertion: "Citer cette assertion",
+    citeAssertion: "Citer cette information",
+  },
+  doctrineLink: {
+    action: "Comprendre notre méthode",
+    descriptions: {
+      "endonymes-vs-exonymes":
+        "Cette fiche distingue les noms que les personnes emploient pour se nommer et ceux que d’autres leur donnent. Notre méthode explique comment nous les présentons.",
+      "classifications-contestees":
+        "Les chercheurs ne regroupent pas tous ces peuples ou ces langues de la même façon. Nous expliquons les choix retenus et les désaccords.",
+      "heritage-colonial":
+        "Ce nom est lié à la période coloniale. Nous le conservons pour raconter son histoire et expliquer les questions qu’il pose.",
+      "topics-sensibles":
+        "Ce sujet peut toucher à l’identité ou à l’histoire des personnes concernées. Notre méthode explique comment nous utilisons les sources et présentons les désaccords.",
+    },
   },
   pinnedVersion: {
-    regionLabel: "indicateur de version figée",
-    live: "voir la version vivante",
-    liveAfterCorrections: "voir version vivante",
-    title: "Version figée",
+    regionLabel: "informations sur cette version enregistrée",
+    live: "voir la version à jour",
+    liveAfterCorrections: "voir la version à jour",
+    title: "Version enregistrée",
     dated: (date: string) => ` du ${date}`,
     corrections: (count: number) =>
-      `Depuis cette version figée, ${count} ${count === 1 ? "assertion a" : "assertions ont"} été corrigée${count === 1 ? "" : "s"}`,
-    expand: "développer l’indicateur de version figée",
-    collapse: "réduire l’indicateur de version figée",
+      `Depuis cette version enregistrée, ${count} ${count === 1 ? "information a" : "informations ont"} été corrigée${count === 1 ? "" : "s"}`,
+    expand: "afficher les détails de cette version",
+    collapse: "masquer les détails de cette version",
   },
 };
 
