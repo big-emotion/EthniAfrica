@@ -15,202 +15,21 @@
     }
   ],
   "summary": "Capitale politique de la Côte d'Ivoire, Yamoussoukro a d'abord porté un autre nom, N'Gokro. Les récits ne s'accordent ni sur la date ni sur les circonstances du changement.",
-  "names": [
-    {
-      "nameText": "Yamoussoukro",
-      "nameStatus": "current",
-      "languageOfOrigin": "bci",
-      "meaning": "« Le village de Yamousso » : le nom de la reine qui dirigeait le village, suivi de -kro, « village » en baoulé.",
-      "shortLine": "« Le village de Yamousso », du nom de la reine qui dirigeait le village.",
-      "namedBy": "Un administrateur colonial français, selon les récits, en hommage à la reine",
-      "originDebated": true,
-      "periodLabel": "Depuis le début du XXe siècle : 1904 ou 1909-1910 selon les récits",
-      "contemporaryUsage": "Nom de la ville, capitale politique de la Côte d'Ivoire depuis 1983.",
-      "accounts": [
-        {
-          "statement": "Félix Houphouët-Boigny écrit qu'en 1904 un administrateur civil français, Simon, « ami de la famille », apprit qu'un jeune neveu de la reine s'appelait Kouasi N'go et lui dit que le village devait porter son nom à elle, l'aînée. Selon ce récit, l'interprète ne sut pas lui expliquer que le Kouasi N'go dont le village tenait son nom était un aîné, et non ce neveu.",
-          "periodLabel": "1904",
-          "sources": [
-            {
-              "title": "Mes premiers combats",
-              "author": "Félix Houphouët-Boigny, avec Patrice Vautier",
-              "year": null,
-              "url": "https://www.eolis.ci/news/4053",
-              "tier": "referenced",
-              "source_kind": "academic",
-              "notes": "Nouvelles Éditions Ivoiriennes, pages 29 à 36 ; lu dans l'extrait republié par eolis.ci le 8 octobre 2024, pas dans le livre. Récit familial à la première personne ; l'extrait appelle le même aîné « grand-père », puis « oncle »."
-            }
-          ]
-        },
-        {
-          "statement": "Un autre récit, repris par la mairie de Yamoussoukro : après la révolte akouè de 1909, l'administrateur Simon Maurice, jugeant le poste de Bonzi peu sûr, le transféra à N'Gokro, rebaptisé Yamoussoukro en hommage à la reine. La Fondation Félix Houphouët-Boigny date ce transfert de 1910 et écrit que la reine fut alors « promue reine des Akoués ».",
-          "periodLabel": "Après 1909 ; 1910 selon la Fondation",
-          "sources": [
-            {
-              "title": "Histoire de la commune de Yamoussoukro",
-              "author": "Mairie de Yamoussoukro",
-              "year": null,
-              "url": "https://mairieyamoussoukro.ci/yamoussoukro/historique",
-              "tier": "referenced",
-              "source_kind": "government",
-              "notes": "Page sans auteur nommé ni source citée. La même page présente la reine comme nièce, puis comme tante, de Kouassi N'Go."
-            },
-            {
-              "title": "Biographie",
-              "author": "Fondation Félix Houphouët-Boigny pour la recherche de la paix",
-              "year": null,
-              "url": "https://www.fondation-fhb.org/biographie/",
-              "tier": "referenced",
-              "source_kind": "community",
-              "notes": "Section « Le cercle de la famille » ; aucun acte de renommage n'y est reproduit."
-            },
-            {
-              "title": "Yamoussoukro",
-              "author": "Wikipédia (français)",
-              "year": null,
-              "url": "https://fr.wikipedia.org/wiki/Yamoussoukro",
-              "tier": "unverified",
-              "source_kind": "community",
-              "notes": "Sections Toponymie et Histoire coloniale, consultées le 7 octobre 2026."
-            }
-          ]
-        },
-        {
-          "statement": "Félix Houphouët-Boigny écrit aussi que le vrai prénom de la reine était Yaha M'so, « vendredi », « septième », et qu'un interprète malien le confondit avec « mousso », « femme » : d'où Yaa n'so, puis Yamousso. C'est un récit de famille ; aucun linguiste ne l'a confirmé.",
-          "periodLabel": "Début du XXe siècle",
-          "sources": [
-            {
-              "title": "Mes premiers combats",
-              "author": "Félix Houphouët-Boigny, avec Patrice Vautier",
-              "year": null,
-              "url": "https://www.eolis.ci/news/4053",
-              "tier": "referenced",
-              "source_kind": "academic",
-              "notes": "Nouvelles Éditions Ivoiriennes, pages 29 à 36 ; lu dans l'extrait republié par eolis.ci le 8 octobre 2024."
-            }
-          ]
-        }
-      ],
-      "attestations": [],
-      "sources": [
-        {
-          "title": "Yamoussoukro",
-          "author": "Wikipédia (français)",
-          "year": null,
-          "url": "https://fr.wikipedia.org/wiki/Yamoussoukro",
-          "tier": "unverified",
-          "source_kind": "community",
-          "notes": "Section Toponymie : « Le suffixe kro signifiant “village” en langue baoulé. »"
-        },
-        {
-          "title": "Histoire de la commune de Yamoussoukro",
-          "author": "Mairie de Yamoussoukro",
-          "year": null,
-          "url": "https://mairieyamoussoukro.ci/yamoussoukro/historique",
-          "tier": "referenced",
-          "source_kind": "government",
-          "notes": "Page sans auteur nommé ni source citée."
-        }
-      ]
-    },
-    {
-      "nameText": "N'Gokro",
-      "nameStatus": "former",
-      "languageOfOrigin": "bci",
-      "meaning": "Le village de N'Go : il porte le nom de Kouassi N'Goh, fils aîné des fondateurs, selon des récits familiaux.",
-      "shortLine": "Le premier nom du village : celui de Kouassi N'Goh, fils aîné de ses fondateurs, selon des récits familiaux.",
-      "namedBy": "La famille fondatrice, Boigny N'Dri et Kokoblé, selon des récits familiaux",
-      "originDebated": false,
-      "periodLabel": "De la fondation du village, en 1848 ou dans les années 1860 selon les récits, au début du XXe siècle",
-      "contemporaryUsage": "La chefferie coutumière parle encore du « trône de N'Gokro » en 2011.",
-      "accounts": [
-        {
-          "statement": "Le porte-parole du chef de Kami dit que Koko Blé et Boigny N'Dri quittèrent Kami en 1848 pour fonder N'Gokro, devenu Yamoussoukro.",
-          "periodLabel": "1848",
-          "sources": [
-            {
-              "title": "Chefferie traditionnelle : Le trône de N'Gokro remis à nanan Boigny N'Dri III",
-              "author": "Ousmane Diallo",
-              "year": 2011,
-              "url": "https://news.abidjan.net/articles/399144/chefferie-traditionnelle-le-trone-de-ngokro-remis-a-nanan-boigny-ndri-iii",
-              "tier": "referenced",
-              "source_kind": "community",
-              "notes": "Abidjan.net, 16 mai 2011. Propos du porte-parole du chef de Kami, lors de l'intronisation."
-            }
-          ]
-        },
-        {
-          "statement": "D'autres récits situent dans les années 1860 l'arrivée de Boigny N'Dri à Kami, son mariage avec Kokoblé Adoua, princesse de Kami, et la cession des terres sur lesquelles le couple fonda N'Gokro.",
-          "periodLabel": "Années 1860",
-          "sources": [
-            {
-              "title": "Kami, N'Gokro et les Boigny, deux villages, un nom et une histoire intimement liée",
-              "author": "YakroNews",
-              "year": null,
-              "url": "https://rezoivoire.net/ivoire/patrimoine/1644/kami-ngokro-et-les-boigny-deux-villages-un-nom-et-une-histoire-intimement-liee.html",
-              "tier": "unverified",
-              "source_kind": "community",
-              "notes": "Republié par Rezo-Ivoire ; sans auteur nommé, sans date, sans informateur cité."
-            },
-            {
-              "title": "Yamoussoukro / Augustin Thiam est-il le vrai héritier d'Houphouët ? Les révélations d'un chef Akoué, membre de la famille",
-              "author": "Blaise Bonsie",
-              "year": 2011,
-              "url": "https://news.abidjan.net/articles/409353/yamoussoukro-augustin-thiam-est-il-le-vrai-heritier-dhouphouet-les-revelations-dun-chef-akoue-membre-de-la-famille",
-              "tier": "referenced",
-              "source_kind": "community",
-              "notes": "Abidjan.net, 3 septembre 2011. Entretien avec N'Guessan Amani Sylvain, qui parle de l'origine des terres de N'Gokro, pas du changement de nom."
-            }
-          ]
-        }
-      ],
-      "attestations": [],
-      "sources": [
-        {
-          "title": "Kami, N'Gokro et les Boigny, deux villages, un nom et une histoire intimement liée",
-          "author": "YakroNews",
-          "year": null,
-          "url": "https://rezoivoire.net/ivoire/patrimoine/1644/kami-ngokro-et-les-boigny-deux-villages-un-nom-et-une-histoire-intimement-liee.html",
-          "tier": "unverified",
-          "source_kind": "community",
-          "notes": "« N'Gokro ou Kouassi N'Gokro, nom du fils aîné de N'Dri Boigny et de Kokoblé. »"
-        },
-        {
-          "title": "Histoire de la famille Boigny",
-          "author": "Rezo-Ivoire",
-          "year": null,
-          "url": "https://rezoivoire.net/ivoire/patrimoine/763/histoire-de-la-famille-boigny.html",
-          "tier": "unverified",
-          "source_kind": "community",
-          "notes": "« C'est leur aîné Kouassi N'Goh qui donnera son premier nom au nouveau village : N'Gokro. » Sans auteur ni date."
-        },
-        {
-          "title": "Chefferie traditionnelle : Le trône de N'Gokro remis à nanan Boigny N'Dri III",
-          "author": "Ousmane Diallo",
-          "year": 2011,
-          "url": "https://news.abidjan.net/articles/399144/chefferie-traditionnelle-le-trone-de-ngokro-remis-a-nanan-boigny-ndri-iii",
-          "tier": "referenced",
-          "source_kind": "community",
-          "notes": "Abidjan.net, 16 mai 2011."
-        }
-      ]
-    }
-  ],
   "gaps": [
     {
-      "field": "names[0].attestations",
+      "field": "nameHistory.names[0].accounts",
       "reason": "Nous n'avons lu aucun document colonial daté qui porte le nom Yamoussoukro ou N'Gokro. La plus ancienne mention signalée, un registre d'état civil de 1918, reste à consulter."
     },
     {
-      "field": "names[0].namedBy",
+      "field": "nameHistory.names[0].namedBy",
       "reason": "Aucun acte de renommage n'a été retrouvé, et l'identité exacte de l'administrateur n'est pas établie : les récits l'appellent Simon, ou Simon Maurice."
     },
     {
-      "field": "names[0].meaning",
+      "field": "nameHistory.names[0].accounts",
       "reason": "Le sens du prénom de la reine n'est donné que par un récit de famille ; nous n'avons trouvé aucun linguiste qui le confirme."
     },
     {
-      "field": "names[1].meaning",
+      "field": "nameHistory.names[1].accounts",
       "reason": "Aucune source ne dit ce que signifie « N'Go »."
     }
   ],

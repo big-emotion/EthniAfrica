@@ -1,7 +1,7 @@
 /**
- * The search sheet reads a people's names from its nameHistory before its
- * name_records rows (REQ-196, ARCH-028), and the fold of noms/ into the
- * fiches must leave what it shows unchanged.
+ * The search sheet reads a people's names from its nameHistory, then from the
+ * name index its appellations add (REQ-196, ARCH-028); the fold of noms/ into
+ * the fiches must leave what it shows unchanged.
  */
 import { describe, expect, it, vi } from "vitest";
 
@@ -31,7 +31,10 @@ function thenableQuery(result: { data: unknown; error: unknown }) {
   return query;
 }
 
-/** What nameRecordJsonLoader wrote for a dossier. */
+/**
+ * The assertions and sources the retired nameRecordJsonLoader wrote for a
+ * dossier, which a database loaded before the fold still holds.
+ */
 function recordTables(dossier: NameRecordDossier) {
   const sources = new Map<string, Record<string, unknown>>();
   const assertions = dossier.names.map((entry, index) => {
@@ -60,35 +63,16 @@ function recordTables(dossier: NameRecordDossier) {
       superseded_by: null,
     };
   });
-  const names = dossier.names.map((entry, index) => ({
-    id: `row-${index}`,
-    entity_type: "people",
-    entity_id: dossier.id,
-    name_text: entry.nameText,
-    name_type: entry.nameType,
-    language_of_origin: entry.languageOfOrigin,
-    meaning: entry.meaning,
-    period_label: entry.periodLabel,
-    short_line: entry.shortLine ?? null,
-    imposed_by: entry.imposedBy,
-    imposition_period: entry.impositionPeriod,
-    why_problematic: entry.whyProblematic,
-    contemporary_usage: entry.contemporaryUsage,
-    assertion_id: `assertion-${index}`,
-    sort_rank: entry.sortRank,
-  }));
-  return { names, assertions, sources: [...sources.values()] };
+  return { assertions, sources: [...sources.values()] };
 }
 
 function client(tables: {
   peoples: unknown[];
-  names?: unknown[];
   assertions?: unknown[];
   sources?: unknown[];
 }) {
   const byTable: Record<string, ReturnType<typeof thenableQuery>> = {
     afrik_peoples: thenableQuery({ data: tables.peoples, error: null }),
-    name_records: thenableQuery({ data: tables.names ?? [], error: null }),
     assertions: thenableQuery({ data: tables.assertions ?? [], error: null }),
     confidence_scores: thenableQuery({ data: [], error: null }),
     sources: thenableQuery({ data: tables.sources ?? [], error: null }),
@@ -96,52 +80,17 @@ function client(tables: {
   return { from: vi.fn((table: string) => byTable[table]) };
 }
 
-// Ids are database keys, and the history adds each source's source_kind,
-// which the rows never carried: everything else must match.
-function evidenceContent(evidence: SearchEvidence) {
-  return {
-    ...evidence,
-    assertion: without(evidence.assertion, "id"),
-    sources: evidence.sources.map((source) =>
-      without(source, "id", "sourceKind")
-    ),
-  };
-}
-
-function recordContent(record: SearchNameRecord) {
-  return {
-    ...without(record, "id"),
-    evidence: record.evidence.map(evidenceContent),
-  };
-}
-
-function without<T extends object>(value: T, ...keys: string[]) {
-  return Object.fromEntries(
-    Object.entries(value).filter(([key]) => !keys.includes(key))
-  );
-}
-
 describe("search naming — a people's nameHistory", () => {
   // @req REQ-196
   it.each(FOLDED_RECORD_FILES)(
-    "%s: the folded history shows the names its name records showed",
+    "%s: the folded history shows each name its record held, citing the record's sources",
     async (file) => {
       const dossier = foldedRecord(file);
       const key = searchNamingKey("people", dossier.id);
-      const subjects = [{ type: "people" as const, id: dossier.id }];
 
-      const fromRecords = (
-        await loadSearchNamingData(
-          subjects,
-          client({
-            peoples: [{ id: dossier.id, name_history: null }],
-            ...recordTables(dossier),
-          }) as never
-        )
-      ).get(key);
       const fromHistory = (
         await loadSearchNamingData(
-          subjects,
+          [{ type: "people" as const, id: dossier.id }],
           client({
             peoples: [
               { id: dossier.id, name_history: ficheNameHistory(dossier.id) },
@@ -150,17 +99,93 @@ describe("search naming — a people's nameHistory", () => {
         )
       ).get(key);
 
-      expect(fromHistory.records.map(recordContent)).toEqual(
-        fromRecords.records.map(recordContent)
+      const expected = [...dossier.names].sort(
+        (left, right) =>
+          left.sortRank - right.sortRank ||
+          (left.nameText < right.nameText ? -1 : 1)
       );
-      expect(fromHistory.evidence.map(evidenceContent)).toEqual(
-        fromRecords.evidence.map(evidenceContent)
+      expect(
+        fromHistory.records.map((record) => ({
+          form: record.form,
+          kind: record.kind,
+          sources: record.evidence[0].sources.map(({ title }) => title),
+        }))
+      ).toEqual(
+        expected.map((entry) => ({
+          form: entry.nameText,
+          kind: entry.nameType,
+          sources: entry.sources.map(({ title }) => title),
+        }))
       );
     }
   );
 
   // @req REQ-196
-  it("shows each name once when the rows still hold the folded record", async () => {
+  it("shows a name the appellations add once, even where an assertion from an earlier load still names it", async () => {
+    const result = (
+      await loadSearchNamingData(
+        [{ type: "people", id: "PPL_TEST" }],
+        client({
+          peoples: [
+            {
+              id: "PPL_TEST",
+              name_history: null,
+              name_index: [
+                {
+                  nameText: "Tosti",
+                  nameType: "exonym",
+                  origin: "appellation",
+                  languageOfOrigin: null,
+                  meaning: null,
+                  periodLabel: null,
+                  imposedBy: null,
+                  impositionPeriod: null,
+                  whyProblematic: null,
+                  contemporaryUsage: null,
+                  sortRank: 1,
+                  sources: [
+                    {
+                      title: "Ethnologue",
+                      url: null,
+                      year: null,
+                      tier: "official",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          assertions: [
+            {
+              id: "assertion-stale",
+              entity_type: "people",
+              entity_id: "PPL_TEST",
+              field_path: `names.exonym.${normalizeToKey("Tosti")}`,
+              statement: "Tosti",
+              position: null,
+              confidence_level: null,
+              source_ids: ["source:Ethnologue"],
+              superseded_by: null,
+            },
+          ],
+          sources: [
+            {
+              id: "source:Ethnologue",
+              title: "Ethnologue",
+              tier: "official",
+            },
+          ],
+        }) as never
+      )
+    ).get(searchNamingKey("people", "PPL_TEST"));
+
+    expect(result.records.map((record) => record.form)).toEqual(["Tosti"]);
+    expect(result.evidence).toHaveLength(1);
+    expect(result.evidence[0].assertion.id).not.toBe("assertion-stale");
+  });
+
+  // @req REQ-196
+  it("shows each name once where the assertions of the folded record remain", async () => {
     const dossier = foldedRecord("PPL_IGBO.json");
 
     const result = (

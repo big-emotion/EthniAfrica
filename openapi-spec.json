@@ -1824,7 +1824,7 @@
     "/api/v2/patronymes/{id}": {
       "get": {
         "summary": "Get a name (patronyme) by identifier",
-        "description": "Returns the public details for one name (patronyme) — DEC-038's fifth corpus dimension: its naming system, its associated peoples and countries, and its bearers. Distinct from `/api/v2/names`, which serves the ethnonym dossier (name_records).\n",
+        "description": "Returns the public details for one name (patronyme) — DEC-038's fifth corpus dimension: its naming system, its associated peoples and countries, and its bearers. Distinct from `/api/v2/names`, which serves the ethnonym dossier (the peoples' names).\n",
         "tags": ["API v2 - Patronymes"],
         "parameters": [
           {
@@ -1986,7 +1986,7 @@
     "/api/v2/names": {
       "get": {
         "summary": "List and search name-variant records",
-        "description": "Browsable index of name_records with optional full-text search via `websearch_to_tsquery('french', q)` on `search_vector`, ranked by relevance × confidence boost. Any name variant leads to its people (FR53, FR55, FR58).\n",
+        "description": "Browsable index of the peoples' names with optional full-text search via `websearch_to_tsquery('french', q)` on `search_vector`, ranked by relevance × confidence boost. Any name variant leads to its people (FR53, FR55, FR58).\n",
         "tags": ["API v2 - Names"],
         "parameters": [
           {

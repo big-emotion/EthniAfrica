@@ -249,7 +249,7 @@ describe("module visibility charter", () => {
     );
 
     expect(noms?.availability).toBe("data");
-    expect(noms?.dataSource).toBe("name_records");
+    expect(noms?.dataSource).toBe("afrik_people_names");
     expect(noms?.editorialReadiness).toBe("ready");
   });
 });

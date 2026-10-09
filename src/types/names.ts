@@ -1,6 +1,6 @@
 /**
- * Name-record types - the shape of a `name_records` row and of what its
- * readers consume (Epic 8, FR55-FR57). The noms/ files that once held it were
+ * Name-record types - the shape the name readers consume (Epic 8,
+ * FR55-FR57), first held by the retired `name_records` table. The noms/ files that once held it were
  * folded into the fiches' nameHistory (REQ-196); nameHistoryRecords.ts
  * projects a block back into this shape.
  */

@@ -57,8 +57,8 @@ curl -s -o /dev/null -w '%{http_code}\n' \
 ```
 
 **Migration `038_user_roles_rls_recursion_fix.sql` must be applied**, or every anonymous read of
-`migration_events` and `name_records` fails with `42P17` recursion. The rows load fine; you just
-cannot verify them through the UI. Probe by reading either table **with the anon key** — the
+`migration_events` fails with `42P17` recursion. The rows load fine; you just
+cannot verify them through the UI. Probe by reading the table **with the anon key** — the
 service role bypasses RLS and proves nothing.
 
 **Migration `039_restore_sources_title_unique.sql` must be applied**, or every `upsertSource`
@@ -100,7 +100,7 @@ All three are applied by a human, never auto-applied. Their current state per pr
 1. Get explicit approval for a write to the chosen environment.
 2. Take a snapshot that can restore the AFRIK tables: `afrik_language_families`,
    `afrik_languages`, `afrik_peoples`, `afrik_countries`, `afrik_people_countries` — plus
-   `migration_events`, `migration_event_peoples`, `name_records` and `afrik_people_relations`
+   `migration_events`, `migration_event_peoples` and `afrik_people_relations`
    when loading those corpora.
 3. Configure credentials for that one environment:
 
@@ -438,25 +438,14 @@ were rejected during parsing or insertion — do not treat the run as successful
 | `afrik_people_relations`  | 12            |
 | `fiche_revisions`         | 18            |
 | `assertions`              | 18            |
-| `name_records`            | ~3 727        |
+| `afrik_people_names`      | ~3 700        |
 
-`name_records` has two feeders, and a count near zero is a failure rather than the expected
-state:
-
-| Feeder                                                 | Rows   |
-| ------------------------------------------------------ | ------ |
-| `patronymeJsonLoader` — one per spelling, `surname`    | 31     |
-| `peopleAppellationLoader` — derived from people fiches | ~3 679 |
-
-The third feeder, `nameRecordJsonLoader`, retired with `dataset/source/afrik/noms/` (ETNI-2021):
-the twelve hand-sourced records now live in their people fiches' `nameHistory`, projected onto
-`afrik_peoples.name_history`. A database loaded before then still holds their old rows; the
-readers prefer the fiche's `nameHistory` for the same name, so those rows are never shown.
-
-Note that the 31 `surname` rows sit in a partition the listing excludes: both
-`afrik_name_forms` and `afrik_name_type_counts` filter `where nr.entity_type = 'people'`, so
-they are present in the table and invisible in the ethnonym index (`/fr/atlas/appellations`)
-(ETNI-1821).
+`afrik_people_names` is a view over `afrik_peoples.name_index`, which the people upsert writes
+from each fiche (migration 101, ETNI-2023): its `nameHistory` names first, then the names the
+appellation grammar derives from `content.appellations`, citing the fiche's sources. A count
+near zero is a failure rather than the expected state. It replaced the `name_records` table,
+whose three feeders (`nameRecordJsonLoader`, `peopleAppellationLoader`, and the patronyme
+spellings) are retired; a family name's spellings live in their `spellings.*` assertions only.
 
 A `HEAD` request with `Prefer: count=exact` reads a count without fetching rows:
 
@@ -511,9 +500,9 @@ migration was not repointed in git.
 
 ### 2. The rows no foreign key reaches
 
-Seven tables key a `TEXT entity_id` to a people with no constraint, so their rows outlive the
-prune: `assertions`, `fiche_revisions`, `name_records`, `quiz_questions`, `flags`, `afrik_media`
-and `oral_narratives`. The public readers join `afrik_peoples`, so nothing stale is served, but
+Six tables key a `TEXT entity_id` to a people with no constraint, so their rows outlive the
+prune: `assertions`, `fiche_revisions`, `quiz_questions`, `flags`, `afrik_media` and
+`oral_narratives`. The public readers join `afrik_peoples`, so nothing stale is served, but
 the rows are dead weight and their counts drift the audits. Build the id list from the ledger
 and run this against the same target, in the SQL editor for recette and through the SSH tunnel
 `deploy-production.yml` uses for production (see `docs/runbooks/production-deploy.md`):
@@ -533,14 +522,12 @@ WITH retired(entity_id) AS (VALUES ('PPL_EXAMPLE_A'), ('PPL_EXAMPLE_B'))
 )
 , d1 AS (DELETE FROM assertions a       USING retired r WHERE a.entity_type = 'people' AND a.entity_id = r.entity_id RETURNING 1)
 , d2 AS (DELETE FROM fiche_revisions f  USING retired r WHERE f.entity_type = 'people' AND f.entity_id = r.entity_id RETURNING 1)
-, d3 AS (DELETE FROM name_records n     USING retired r WHERE n.entity_type = 'people' AND n.entity_id = r.entity_id RETURNING 1)
 , d4 AS (DELETE FROM flags fl           USING retired r WHERE fl.entity_type = 'people' AND fl.entity_id = r.entity_id RETURNING 1)
 , d5 AS (DELETE FROM afrik_media m      USING retired r WHERE m.entity_type = 'people' AND m.entity_id = r.entity_id RETURNING 1)
 , d6 AS (DELETE FROM oral_narratives o  USING retired r WHERE o.entity_type = 'people' AND o.entity_id = r.entity_id RETURNING 1)
 SELECT (SELECT count(*) FROM revoked) AS quiz_revoked,
        (SELECT count(*) FROM d1) AS assertions,
        (SELECT count(*) FROM d2) AS fiche_revisions,
-       (SELECT count(*) FROM d3) AS name_records,
        (SELECT count(*) FROM d4) AS flags,
        (SELECT count(*) FROM d5) AS afrik_media,
        (SELECT count(*) FROM d6) AS oral_narratives;
@@ -572,6 +559,6 @@ Then the SQL above, through the tunnel. Forgetting this step leaves the retired 
 
 ## Known limitation
 
-A people's `nameHistory` reaches the database as `afrik_peoples.name_history`, not through the
-sources → assertions → `name_records` fabric, so its accounts carry no assertion row. The
-readers build each name's evidence from the block's own sources.
+A people's names reach the database as `afrik_peoples.name_history` and `name_index`, not
+through the sources → assertions fabric, so they carry no assertion row. The readers build each
+name's evidence from the sources the fiche cites.

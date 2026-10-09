@@ -86,15 +86,10 @@ async function readPresenceView(): Promise<CorpusPresence | null> {
 async function probeDataSource(
   source: ModuleDataSource
 ): Promise<boolean | undefined> {
-  const columns = createServerClient().from(source).select("id");
-  // Mirrors `names.ts#listNames`, and the same filter in the view, so all
-  // three judge the noms module on the records it actually renders.
-  const query =
-    source === "name_records"
-      ? columns.eq("entity_type", "people").limit(1)
-      : columns.limit(1);
-
-  const { data, error } = await query;
+  const { data, error } = await createServerClient()
+    .from(source)
+    .select("id")
+    .limit(1);
 
   if (error) {
     logger.error(`Hub module availability probe failed for ${source}`, error);
@@ -118,7 +113,7 @@ async function readCorpusPresence(): Promise<CorpusPresence> {
       probed.filter(([, present]) => present !== undefined)
     );
   } catch (error) {
-    logger.error("Hub module corpus presence threw", error);
+    logger.error("Hub module presence read threw", error);
     return {};
   }
 }

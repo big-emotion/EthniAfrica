@@ -498,7 +498,7 @@ curl -s -o /dev/null -w '%{http_code}\n' \
 
 # 038 — the user_roles RLS recursion fix. 42P17 in the body = still broken.
 # Must use the ANON key: the service role bypasses RLS and proves nothing.
-curl -s "$NEXT_PUBLIC_SUPABASE_URL/rest/v1/name_records?select=id&limit=1" \
+curl -s "$NEXT_PUBLIC_SUPABASE_URL/rest/v1/migration_events?select=id&limit=1" \
   -H "apikey: $NEXT_PUBLIC_SUPABASE_ANON_KEY"
 ```
 

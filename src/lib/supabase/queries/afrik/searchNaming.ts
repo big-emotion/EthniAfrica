@@ -1,10 +1,8 @@
 import { createServerClient } from "@/lib/supabase/server";
 import { normalizeToKey } from "@/lib/normalize";
 import { parseNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
-import {
-  nameRecordsFromHistory,
-  type HistoryNameRecord,
-} from "@/lib/afrik/nameHistoryRecords";
+import { nameRecordsFromHistory } from "@/lib/afrik/nameHistoryRecords";
+import type { PeopleNameIndexEntry } from "@/lib/afrik/peopleNameIndex";
 import { toSourceKindOrNull } from "@/types/sources";
 import {
   searchSourceStanding,
@@ -141,7 +139,11 @@ function toEvidenceSource(row: Record<string, unknown>): SearchEvidenceSource {
   };
 }
 
-/** The field path a hand-sourced name record's assertion was loaded under. */
+/**
+ * The field path a people name's assertion was loaded under by the retired
+ * name-record loaders. A database loaded before migration 101 still holds
+ * them; they yield to the fiche's own account of the same name.
+ */
 function nameFieldPath(nameType: string, nameText: string): string {
   return `names.${nameType}.${normalizeToKey(nameText)}`;
 }
@@ -149,86 +151,148 @@ function nameFieldPath(nameType: string, nameText: string): string {
 interface ToldNames {
   /** Each folded name, with its rank in the block. */
   records: Array<{ rank: number; record: SearchNameRecord }>;
-  /** What the block covers, so a name_records row or an assertion for the same name is not shown twice. */
+  /** What the fiche covers, so an assertion left for the same name is not shown twice. */
   fieldPaths: Set<string>;
 }
 
+/** A name as the search sheet shows it, before evidence is attached. */
+type ToldName = Omit<
+  SearchNameRecord,
+  "id" | "entityType" | "entityId" | "evidence"
+>;
+
+interface ToldSource {
+  title: string;
+  author?: string | null;
+  year: number | null;
+  url: string | null;
+  tier: string | null;
+  source_kind?: string;
+}
+
 /**
- * A people's names as its fiche's nameHistory tells them (REQ-196). A folded
- * name has no database assertion, so its evidence is built from the block's
- * own sources, in the shape the assertion of a name record had.
+ * A people's names as its fiche tells them (REQ-196): the nameHistory block
+ * first, then the names the name index derived from the appellations. A told
+ * name has no database assertion, so its evidence is built from the fiche's
+ * own sources, in the shape an assertion's evidence has.
  */
 function toldNames(
   entityId: string,
   rawHistory: unknown,
+  rawIndex: unknown,
   confidence: { score: number; lastHumanAuditAt: string | null } | undefined
-): ToldNames | undefined {
-  if (rawHistory == null) return undefined;
-  const parsed = parseNameHistory(rawHistory);
-  if (!parsed.success) return undefined;
-
+): ToldNames {
   const told: ToldNames = { records: [], fieldPaths: new Set() };
-  nameRecordsFromHistory(parsed.data).forEach(
-    (entry: HistoryNameRecord, rank) => {
-      const id = `${entityId}:nameHistory:${rank}`;
-      const fieldPath = nameFieldPath(entry.nameType, entry.nameText);
-      const sources: SearchEvidenceSource[] = entry.sources.map(
-        (source, index) => ({
+
+  const tell = (
+    id: string,
+    rank: number,
+    name: ToldName,
+    citedSources: ToldSource[]
+  ) => {
+    const fieldPath = nameFieldPath(name.kind, name.form);
+    const sources: SearchEvidenceSource[] = citedSources.map(
+      (source, index) => {
+        const sourceKind = toSourceKindOrNull(source.source_kind);
+        return {
           id: `${id}:source:${index}`,
           title: source.title,
           ...(nullableText(source.author) ? { author: source.author } : {}),
           ...(typeof source.year === "number" ? { year: source.year } : {}),
           ...(nullableText(source.url) ? { url: source.url } : {}),
           tier: searchSourceStanding(source.tier),
-          sourceKind: source.source_kind,
-        })
-      );
-      const evidence: SearchEvidence = {
-        assertion: {
-          id,
-          statement: entry.nameText,
-          fieldPath,
-          ...(confidence ? { confidenceScore: confidence.score } : {}),
-          sourceCount: sources.length,
-          lastHumanAuditAt: confidence?.lastHumanAuditAt ?? null,
-        },
-        sources,
-        standing: strongestSearchSourceStanding(sources),
-      };
-      told.fieldPaths.add(fieldPath);
-      told.records.push({
+          ...(sourceKind ? { sourceKind } : {}),
+        };
+      }
+    );
+    const evidence: SearchEvidence = {
+      assertion: {
+        id,
+        statement: name.form,
+        fieldPath,
+        ...(confidence ? { confidenceScore: confidence.score } : {}),
+        sourceCount: sources.length,
+        lastHumanAuditAt: confidence?.lastHumanAuditAt ?? null,
+      },
+      sources,
+      standing: strongestSearchSourceStanding(sources),
+    };
+    told.fieldPaths.add(fieldPath);
+    told.records.push({
+      rank,
+      record: {
+        id,
+        entityType: "people",
+        entityId,
+        ...name,
+        evidence: [evidence],
+      },
+    });
+  };
+
+  const parsed = rawHistory == null ? undefined : parseNameHistory(rawHistory);
+  if (parsed?.success) {
+    nameRecordsFromHistory(parsed.data).forEach((entry, rank) => {
+      tell(
+        `${entityId}:nameHistory:${rank}`,
         rank,
-        record: {
-          id,
-          entityType: "people",
-          entityId,
-          form: entry.nameText,
-          kind: entry.nameType,
-          ...(nullableText(entry.languageOfOrigin)
-            ? { languageOfOrigin: entry.languageOfOrigin }
-            : {}),
-          ...(nullableText(entry.meaning) ? { meaning: entry.meaning } : {}),
-          ...(nullableText(entry.periodLabel)
-            ? { periodLabel: entry.periodLabel }
-            : {}),
-          ...(nullableText(entry.shortLine)
-            ? { shortLine: entry.shortLine }
-            : {}),
-          ...(nullableText(entry.imposedBy)
-            ? { imposedBy: entry.imposedBy }
-            : {}),
-          ...(nullableText(entry.impositionPeriod)
-            ? { impositionPeriod: entry.impositionPeriod }
-            : {}),
-          problematic: Boolean(nullableText(entry.whyProblematic)),
-          usedToday: Boolean(nullableText(entry.contemporaryUsage)),
-          evidence: [evidence],
-        },
-      });
-    }
-  );
+        shownName(entry),
+        entry.sources
+      );
+    });
+  }
+
+  if (Array.isArray(rawIndex)) {
+    (rawIndex as PeopleNameIndexEntry[]).forEach((entry, position) => {
+      // The block's names are read from the block above, which carries the
+      // short line the flattened index leaves out.
+      if (entry?.origin !== "appellation") return;
+      tell(
+        `${entityId}:name:${position}`,
+        entry.sortRank,
+        shownName(entry),
+        entry.sources ?? []
+      );
+    });
+  }
+
   return told;
 }
+
+function shownName(entry: {
+  nameText: string;
+  nameType: string;
+  languageOfOrigin: string | null;
+  meaning: string | null;
+  periodLabel: string | null;
+  shortLine?: string;
+  imposedBy: string | null;
+  impositionPeriod: string | null;
+  whyProblematic: string | null;
+  contemporaryUsage: string | null;
+}): ToldName {
+  return {
+    form: entry.nameText,
+    kind: entry.nameType as SearchNameRecord["kind"],
+    ...(nullableText(entry.languageOfOrigin)
+      ? { languageOfOrigin: entry.languageOfOrigin }
+      : {}),
+    ...(nullableText(entry.meaning) ? { meaning: entry.meaning } : {}),
+    ...(nullableText(entry.periodLabel)
+      ? { periodLabel: entry.periodLabel }
+      : {}),
+    ...(nullableText(entry.shortLine) ? { shortLine: entry.shortLine } : {}),
+    ...(nullableText(entry.imposedBy) ? { imposedBy: entry.imposedBy } : {}),
+    ...(nullableText(entry.impositionPeriod)
+      ? { impositionPeriod: entry.impositionPeriod }
+      : {}),
+    problematic: Boolean(nullableText(entry.whyProblematic)),
+    usedToday: Boolean(nullableText(entry.contemporaryUsage)),
+  };
+}
+
+/** A family name's spelling, as its loader keys the assertion: `spellings.<rank>.<key>`. */
+const SPELLING_FIELD_PATH = /^spellings\.(\d+)\./;
 
 function claimStatusOf(value: unknown): NamingClaimStatus | undefined {
   return value === "contested" ? "contested" : undefined;
@@ -260,23 +324,6 @@ export async function loadSearchNamingData(
   const allEntityTypes = unique(
     uniqueSubjects.map(({ type }) => DATABASE_ENTITY_TYPE[type])
   );
-  const nameSubjects = uniqueSubjects.filter(
-    ({ type }) => type === "people" || type === "patronyme"
-  );
-
-  const nameRecordsPromise =
-    nameSubjects.length > 0
-      ? client
-          .from("name_records")
-          .select(
-            "id, entity_type, entity_id, name_text, name_type, language_of_origin, meaning, period_label, short_line, imposed_by, imposition_period, why_problematic, contemporary_usage, assertion_id, sort_rank"
-          )
-          .in("entity_type", ["people", "patronyme"])
-          .in("entity_id", unique(nameSubjects.map(({ id }) => id)))
-          .order("sort_rank", { ascending: true })
-          .order("name_text", { ascending: true })
-      : Promise.resolve({ data: [], error: null });
-
   const assertionsPromise = client
     .from("assertions")
     .select(
@@ -298,18 +345,15 @@ export async function loadSearchNamingData(
     peopleIds.length > 0
       ? client
           .from("afrik_peoples")
-          .select("id, name_history")
+          .select("id, name_history, name_index")
           .in("id", peopleIds)
       : Promise.resolve({ data: [], error: null });
 
-  const [nameResult, assertionResult, confidenceResult, historyResult] =
-    await Promise.all([
-      nameRecordsPromise,
-      assertionsPromise,
-      confidencePromise,
-      historiesPromise,
-    ]);
-  if (nameResult.error) throw queryFailure("records", nameResult.error);
+  const [assertionResult, confidenceResult, historyResult] = await Promise.all([
+    assertionsPromise,
+    confidencePromise,
+    historiesPromise,
+  ]);
   if (assertionResult.error)
     throw queryFailure("assertions", assertionResult.error);
   if (confidenceResult.error)
@@ -374,22 +418,22 @@ export async function loadSearchNamingData(
   const toldBySubject = new Map<string, ToldNames>();
   for (const row of asRows(historyResult.data)) {
     const key = searchNamingKey("people", String(row.id));
-    const told = toldNames(
-      String(row.id),
-      row.name_history,
-      confidenceBySubject.get(key)
+    toldBySubject.set(
+      key,
+      toldNames(
+        String(row.id),
+        row.name_history,
+        row.name_index,
+        confidenceBySubject.get(key)
+      )
     );
-    if (told) toldBySubject.set(key, told);
   }
-  // The block is the source of truth: the assertion a name_records row was
-  // loaded with yields to the block's account of the same name.
+  // The fiche is the source of truth: an assertion an earlier load left for a
+  // name yields to the fiche's account of the same name.
   const isTold = (key: string, fieldPath: unknown) =>
     toldBySubject.get(key)?.fieldPaths.has(String(fieldPath)) ?? false;
 
   const evidenceByAssertion = new Map<string, SearchEvidence>();
-  const assertionById = new Map(
-    assertionRows.map((row) => [String(row.id), row])
-  );
   const evidenceBySubject = new Map<string, SearchEvidence[]>();
   for (const row of assertionRows) {
     const statement = searchPresentationText(row.statement);
@@ -451,47 +495,28 @@ export async function loadSearchNamingData(
       )
     );
   }
-  for (const row of asRows(nameResult.data)) {
-    const key = databaseKey(String(row.entity_type), String(row.entity_id));
-    if (!subjectKeys.has(key)) continue;
-    if (
-      isTold(key, nameFieldPath(String(row.name_type), String(row.name_text)))
-    )
-      continue;
-    const evidence = evidenceByAssertion.get(String(row.assertion_id));
-    const claimStatus = claimStatusOf(
-      assertionById.get(String(row.assertion_id))?.confidence_level
-    );
+  for (const row of assertionRows) {
+    if (row.entity_type !== "patronyme") continue;
+    const spelling = SPELLING_FIELD_PATH.exec(String(row.field_path));
+    const form = searchPresentationText(row.statement);
+    if (!spelling || !form) continue;
+    const key = databaseKey("patronyme", String(row.entity_id));
+    const evidence = evidenceByAssertion.get(String(row.id));
+    const claimStatus = claimStatusOf(row.confidence_level);
     const record: SearchNameRecord = {
       id: String(row.id),
-      entityType: String(row.entity_type),
+      entityType: "patronyme",
       entityId: String(row.entity_id),
-      form: String(row.name_text),
-      kind: row.name_type as SearchNameRecord["kind"],
-      ...(nullableText(row.language_of_origin)
-        ? { languageOfOrigin: String(row.language_of_origin) }
-        : {}),
-      ...(nullableText(row.meaning) ? { meaning: String(row.meaning) } : {}),
-      ...(nullableText(row.period_label)
-        ? { periodLabel: String(row.period_label) }
-        : {}),
-      ...(nullableText(row.short_line)
-        ? { shortLine: String(row.short_line) }
-        : {}),
-      ...(nullableText(row.imposed_by)
-        ? { imposedBy: String(row.imposed_by) }
-        : {}),
-      ...(nullableText(row.imposition_period)
-        ? { impositionPeriod: String(row.imposition_period) }
-        : {}),
-      problematic: Boolean(nullableText(row.why_problematic)),
-      usedToday: Boolean(nullableText(row.contemporary_usage)),
+      form,
+      kind: "surname",
+      problematic: false,
+      usedToday: false,
       ...(claimStatus ? { claimStatus } : {}),
       evidence: evidence ? [evidence] : [],
     };
     recordsBySubject.set(key, [
       ...(recordsBySubject.get(key) ?? []),
-      { rank: Number(row.sort_rank ?? 0), record },
+      { rank: Number(spelling[1]), record },
     ]);
   }
 
@@ -501,7 +526,7 @@ export async function loadSearchNamingData(
       return [
         key,
         {
-          // The order name_records is read in: rank, then name.
+          // Rank, then name: the order the sheet has always shown.
           records: (recordsBySubject.get(key) ?? [])
             .sort(
               (left, right) =>

@@ -1,7 +1,7 @@
 /**
  * Zod schemas for `GET /v2/patronymes/{id}` (ETNI-1462, REQ-133 — DEC-038's
  * fifth corpus dimension, internally the patronyme; distinct from
- * `/v2/names` (name_records, the ethnonym dossier).
+ * `/v2/names` (the peoples' names, the ethnonym dossier).
  *
  * `afrik_patronymes` (migration 053) pulls only `name_system` and
  * `caste_or_social_function` out of `content` as real columns; every other

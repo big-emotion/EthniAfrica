@@ -3816,7 +3816,9 @@ export function checkDossierFicheModel(datasetRoot: string): ValidationResult {
  * the filename, and links that resolve. A place points outward to its country
  * and peoples; nothing points back, so an unresolved link here is the only
  * place the corpus can notice it. A form resting on no `official` or
- * `referenced` source is reported, never refused (DEC-055).
+ * `referenced` source is reported, never refused (DEC-055). The names come
+ * from `nameHistory` only; a legacy `names` / `accounts` / `attestations` key
+ * is refused by the parser (REQ-196, DEC-071).
  */
 export function checkPlaceFicheModel(datasetRoot: string): ValidationResult {
   const errors: string[] = [];
@@ -3868,11 +3870,10 @@ export function checkPlaceFicheModel(datasetRoot: string): ValidationResult {
       }
     }
 
-    for (const name of place.names) {
-      const standing = unauthoritativeStanding([
-        ...name.sources,
-        ...name.accounts.flatMap((account) => account.sources),
-      ]);
+    for (const name of place.nameHistory.names) {
+      const standing = unauthoritativeStanding(
+        name.accounts.flatMap((account) => account.sources)
+      );
       if (standing) {
         warnings.push(`REQ-193: ${file}: form "${name.nameText}" ${standing}`);
       }

@@ -15,64 +15,9 @@
     }
   ],
   "summary": "<Deux phrases au plus : ce qu'est le lieu et la question que pose son nom>",
-  "names": [
-    {
-      "nameText": "<Forme du nom, telle qu'attestée par la source>",
-      "nameStatus": "current | former | concurrent",
-      "languageOfOrigin": "xxx",
-      "meaning": "<Sens de la forme, si une source le donne ; null sinon>",
-      "shortLine": "<Une phrase qu'un lecteur comprend sans contexte, 120 caractères au plus>",
-      "namedBy": "<Qui a donné ce nom : une personne, une famille, une autorité ; null si inconnu>",
-      "originDebated": false,
-      "periodLabel": "<Période d'usage telle que les sources la donnent>",
-      "contemporaryUsage": "<Où et par qui la forme est encore employée, si une source le dit ; null sinon>",
-      "accounts": [
-        {
-          "statement": "<Un récit de l'origine ou du changement de nom, attribué — ex: Les mémoires de X racontent que…>",
-          "periodLabel": "<Date ou période telle que ce récit la donne>",
-          "sources": [
-            {
-              "title": "<Titre de la source>",
-              "author": "<Auteur>",
-              "year": null,
-              "url": "<URL résolvable>",
-              "tier": "official | referenced | unverified",
-              "notes": "<Faits de provenance publiés tels quels au lecteur>"
-            }
-          ]
-        }
-      ],
-      "attestations": [
-        {
-          "formAsWritten": "<La forme telle qu'écrite dans le document cité>",
-          "year": 0,
-          "periodLabel": "<Date ou période telle que la source la donne>",
-          "attestedBy": "<Qui a écrit cette forme>",
-          "source": {
-            "title": "<Titre de la source>",
-            "author": "<Auteur>",
-            "year": 0,
-            "url": "<URL résolvable>",
-            "tier": "official | referenced | unverified",
-            "page": "<Page imprimée>"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "title": "<Titre de la source>",
-          "author": "<Auteur>",
-          "year": null,
-          "url": "<URL résolvable>",
-          "tier": "official | referenced | unverified",
-          "notes": "<Faits de provenance publiés tels quels au lecteur>"
-        }
-      ]
-    }
-  ],
   "gaps": [
     {
-      "field": "<Chemin du champ que les sources ne remplissent pas — ex: names[0].meaning>",
+      "field": "<Chemin du champ que les sources ne remplissent pas — ex: nameHistory.names[0].namedBy>",
       "reason": "<Ce que nous ne savons pas, dit au lecteur, sans vocabulaire d'atelier>"
     }
   ],

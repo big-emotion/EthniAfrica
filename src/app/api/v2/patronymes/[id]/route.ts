@@ -10,7 +10,7 @@
  *       Returns the public details for one name (patronyme) — DEC-038's fifth
  *       corpus dimension: its naming system, its associated peoples and
  *       countries, and its bearers. Distinct from `/api/v2/names`, which
- *       serves the ethnonym dossier (name_records).
+ *       serves the ethnonym dossier (the peoples' names).
  *     tags: [API v2 - Patronymes]
  *     parameters:
  *       - in: path

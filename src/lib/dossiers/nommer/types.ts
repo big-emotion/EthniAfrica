@@ -70,7 +70,7 @@ export interface DossierSource {
  * the atlas charter §4 requires the interface to say which is which.
  *
  * There is deliberately no "read from the database at render" branch. The
- * database and the git corpus disagree — `name_records` deduplicates spellings,
+ * database and the git corpus disagree — the name index deduplicates spellings,
  * so it answers 3,8 exonyms per endonym where the fiches answer 4 — and a
  * dossier that quoted whichever number the page happened to reach would be
  * unciteable. The corpus is the editorial source of truth, so the dossier

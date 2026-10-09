@@ -2,17 +2,17 @@
  * Names Atlas service (Epic 8, FR53-FR58). Shared by `GET /v2/peoples/{id}/names`
  * (Story 8.6) and `GET /v2/names` (Story 8.7).
  *
- * `getPeopleNamesDossier` batches its joins per AR17 (map pattern, one query
- * per relation set, no per-record queries):
- *   1) one `name_records` query for the people's dossier rows
- *   2) one `assertions` query for the union of their assertion ids
- *   3) one `sources` query for the union of cited source ids
- *   4) one `getConfidenceMap` call (entity-scoped, shared with other Module 0
- *      consumers) for the people's confidence score
+ * Both read the people fiche as the loader projected it (REQ-196): the
+ * nameHistory block (`name_history`) and the name index (`name_index`, its
+ * names plus those derived from the appellations prose). `name_records`, the
+ * table both used to read, is retired (migration 101).
+ *
+ * `getPeopleNamesDossier` is one people-row read plus one `getConfidenceMap`
+ * call: every name cites its sources inline, so there is no per-name join.
  *
  * `listNames` filters q?, nameType?, imposedOnly?, peopleId?, letter? against
- * `name_records`, batches the people summary + confidence-boost lookups
- * (AR17 map pattern — one query per relation set, no per-record queries).
+ * the `afrik_people_names` view, batching the people summary +
+ * confidence-boost lookups (AR17 map pattern).
  */
 
 import { createServerClient } from "@/lib/supabase/server";
@@ -20,16 +20,14 @@ import { logger } from "@/lib/api/logger";
 import { getConfidenceMap } from "@/lib/supabase/queries/afrik/module-zero-batch";
 import { parseNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameRecordsFromHistory } from "@/lib/afrik/nameHistoryRecords";
+import type { PeopleNameIndexEntry } from "@/lib/afrik/peopleNameIndex";
 import type {
   ListNameFormsQuery,
   ListNamesQuery,
   NameForm,
   NameRecord,
   NameRecordConfidenceView,
-  NameAttestationView,
-  NamePronunciationView,
   NameRecordImposition,
-  NameRecordSourceView,
   NameRecordType,
   PeopleNameRecord,
   PeopleNamesDossier,
@@ -52,40 +50,14 @@ export class NamesSchemaUnavailableError extends Error {
   }
 }
 
-interface NameRecordRow {
-  id: string;
-  name_text: string;
-  name_type: NameRecordType;
-  language_of_origin: string | null;
-  meaning: string | null;
-  period_label: string | null;
+interface ImpositionFields {
   imposed_by: string | null;
   imposition_period: string | null;
   why_problematic: string | null;
   contemporary_usage: string | null;
-  attestations: NameAttestationView[] | null;
-  short_line: string | null;
-  named_by: string | null;
-  origin_debated: boolean | null;
-  used_in: string[] | null;
-  pronunciation: NamePronunciationView | null;
-  assertion_id: string;
-  sort_rank: number;
 }
 
-function uniqueStrings(values: string[]): string[] {
-  return Array.from(new Set(values));
-}
-
-function buildImposition(
-  row: Pick<
-    NameRecordRow,
-    | "imposed_by"
-    | "imposition_period"
-    | "why_problematic"
-    | "contemporary_usage"
-  >
-): NameRecordImposition | null {
+function buildImposition(row: ImpositionFields): NameRecordImposition | null {
   if (
     !row.imposed_by &&
     !row.imposition_period &&
@@ -102,19 +74,12 @@ function buildImposition(
   };
 }
 
-/** The (name, type) pair name_records is unique on. */
-function nameKey(nameText: string, nameType: string): string {
-  return `${nameType}\u0000${nameText}`;
-}
-
 /**
- * A people's names as its fiche's nameHistory tells them (REQ-196). The block
- * is the source of truth, so a folded name wins over a name_records row for
- * the same name; rows the block does not cover (names derived from the
- * fiche's appellations) are still served beside it.
+ * A people's names as its fiche's nameHistory tells them (REQ-196). The
+ * dossier reads the block rather than its flattened copy in the name index,
+ * because only the block carries the written traces and answer-card fields.
  *
- * A folded name has no database row, so its ids are stable keys built from
- * the people and the name's position — never mistaken for a row's uuid.
+ * Ids are stable keys built from the people and the name's position.
  */
 function namesFromHistory(
   peopleId: string,
@@ -124,7 +89,7 @@ function namesFromHistory(
   const parsed = parseNameHistory(rawHistory);
   if (!parsed.success) {
     // The loader refuses an invalid block, so this is a row written by hand;
-    // the name_records rows still answer rather than an empty card.
+    // the derived names still answer rather than an empty card.
     logger.warn("names.getPeopleNamesDossier: unreadable nameHistory", {
       peopleId,
       errors: parsed.errors,
@@ -173,7 +138,7 @@ function compareText(left: string, right: string): number {
   return left < right ? -1 : left > right ? 1 : 0;
 }
 
-// The order name_records is read in: rank, then type, then name.
+// Rank, then type, then name: the order the dossier has always served.
 function compareRanked(left: RankedName, right: RankedName): number {
   return (
     left.rank - right.rank ||
@@ -183,64 +148,53 @@ function compareRanked(left: RankedName, right: RankedName): number {
 }
 
 /**
- * Sources cited by the assertions backing a set of name_records. Two-step
- * fetch mirroring the module-zero-batch.getSourcesMap pattern (AR17), keyed
- * by assertion_id rather than peopleId since each name record has its own
- * per-field assertion (not the people-wide assertion bag getSourcesMap
- * returns).
+ * The names the fiche's appellations yield, from the name index (REQ-196).
+ * The loader already left out every name the block tells, so these never
+ * repeat one; they cite the fiche's sources, embedded in the entry.
  */
-async function getSourcesByAssertionId(
-  supabase: ReturnType<typeof createServerClient>,
-  assertionIds: string[]
-): Promise<Map<string, NameRecordSourceView[]>> {
-  const map = new Map<string, NameRecordSourceView[]>();
-  if (assertionIds.length === 0) return map;
-
-  const { data: assertionRows, error: assertionError } = await supabase
-    .from("assertions")
-    .select("id, source_ids")
-    .in("id", assertionIds);
-
-  if (assertionError) {
-    throw new Error(
-      `Failed to load assertions for names: ${assertionError.message}`
-    );
-  }
-
-  const rows = (assertionRows ?? []) as Array<{
-    id: string;
-    source_ids: string[] | null;
-  }>;
-
-  const allSourceIds = uniqueStrings(
-    rows.flatMap((row) => row.source_ids ?? [])
-  );
-
-  const sourcesById = new Map<string, NameRecordSourceView>();
-  if (allSourceIds.length > 0) {
-    const { data: sourceRows, error: sourcesError } = await supabase
-      .from("sources")
-      .select("id, title, url, year, tier")
-      .in("id", allSourceIds);
-
-    if (sourcesError) {
-      throw new Error(`Failed to load sources: ${sourcesError.message}`);
-    }
-
-    for (const source of (sourceRows ?? []) as NameRecordSourceView[]) {
-      sourcesById.set(source.id, source);
-    }
-  }
-
-  for (const row of rows) {
-    const ids = row.source_ids ?? [];
-    const sources = ids
-      .map((id) => sourcesById.get(id))
-      .filter((s): s is NameRecordSourceView => Boolean(s));
-    map.set(row.id, sources);
-  }
-
-  return map;
+function namesFromAppellations(
+  peopleId: string,
+  rawIndex: unknown
+): Array<{ rank: number; name: Omit<PeopleNameRecord, "confidence"> }> {
+  if (!Array.isArray(rawIndex)) return [];
+  return (rawIndex as PeopleNameIndexEntry[]).flatMap((entry, position) => {
+    if (entry?.origin !== "appellation") return [];
+    // The position in the index, as the afrik_people_names view numbers it.
+    const id = `${peopleId}:name:${position}`;
+    return [
+      {
+        rank: entry.sortRank,
+        name: {
+          id,
+          nameText: entry.nameText,
+          nameType: entry.nameType,
+          languageOfOrigin: entry.languageOfOrigin,
+          meaning: entry.meaning,
+          periodLabel: entry.periodLabel,
+          imposition: buildImposition({
+            imposed_by: entry.imposedBy,
+            imposition_period: entry.impositionPeriod,
+            why_problematic: entry.whyProblematic,
+            contemporary_usage: entry.contemporaryUsage,
+          }),
+          assertionId: id,
+          sources: (entry.sources ?? []).map((source, sourceIndex) => ({
+            id: `${id}:source:${sourceIndex}`,
+            title: source.title,
+            url: source.url,
+            year: source.year,
+            tier: source.tier,
+          })),
+          attestations: [],
+          shortLine: null,
+          namedBy: null,
+          originDebated: false,
+          usedIn: [],
+          pronunciation: null,
+        },
+      },
+    ];
+  });
 }
 
 // @req REQ-057
@@ -251,7 +205,7 @@ export async function getPeopleNamesDossier(
 
   const { data: peopleRow, error: peopleError } = await supabase
     .from("afrik_peoples")
-    .select("id, content, name_history")
+    .select("id, content, name_history, name_index")
     .eq("id", peopleId)
     .maybeSingle();
 
@@ -264,54 +218,17 @@ export async function getPeopleNamesDossier(
     throw new PeopleNamesNotFoundError(peopleId);
   }
 
-  const content = ((peopleRow as { content?: unknown }).content ??
-    {}) as Record<string, unknown>;
+  const row = peopleRow as {
+    content?: unknown;
+    name_history?: unknown;
+    name_index?: unknown;
+  };
+  const content = (row.content ?? {}) as Record<string, unknown>;
   const appellations = (content.appellations ?? {}) as {
     selfAppellation?: string;
   };
 
-  const { data: nameRows, error: namesError } = await supabase
-    .from("name_records")
-    .select(
-      "id, name_text, name_type, language_of_origin, meaning, period_label, imposed_by, imposition_period, why_problematic, contemporary_usage, attestations, short_line, named_by, origin_debated, used_in, pronunciation, assertion_id, sort_rank"
-    )
-    .eq("entity_type", "people")
-    .eq("entity_id", peopleId)
-    .order("sort_rank", { ascending: true })
-    .order("name_type", { ascending: true })
-    .order("name_text", { ascending: true });
-
-  if (namesError) {
-    logger.error("names.getPeopleNamesDossier failed", namesError, {
-      peopleId,
-    });
-    throw new Error(
-      `Failed to load names for ${peopleId}: ${namesError.message}`
-    );
-  }
-
-  const allRows = (nameRows ?? []) as NameRecordRow[];
-
-  const historyNames = namesFromHistory(
-    peopleId,
-    (peopleRow as { name_history?: unknown }).name_history
-  );
-  const told = new Set(
-    historyNames.map((name) => nameKey(name.nameText, name.nameType))
-  );
-  const rows = allRows.filter(
-    (row) => !told.has(nameKey(row.name_text, row.name_type))
-  );
-
-  const [sourcesByAssertion, confidenceMap] = await Promise.all([
-    getSourcesByAssertionId(
-      supabase,
-      uniqueStrings(rows.map((row) => row.assertion_id))
-    ),
-    getConfidenceMap([peopleId]),
-  ]);
-
-  const confidenceScore = confidenceMap.get(peopleId);
+  const confidenceScore = (await getConfidenceMap([peopleId])).get(peopleId);
   const confidence: NameRecordConfidenceView | null = confidenceScore
     ? {
         score: confidenceScore.score,
@@ -319,37 +236,14 @@ export async function getPeopleNamesDossier(
       }
     : null;
 
-  const rowNames: RankedName[] = rows.map((row) => ({
-    rank: row.sort_rank,
-    name: {
-      id: row.id,
-      nameText: row.name_text,
-      nameType: row.name_type,
-      languageOfOrigin: row.language_of_origin,
-      meaning: row.meaning,
-      periodLabel: row.period_label,
-      imposition: buildImposition(row),
-      assertionId: row.assertion_id,
-      sources: sourcesByAssertion.get(row.assertion_id) ?? [],
-      confidence,
-      // A row loaded before migration 096 has no history yet: an empty list,
-      // never null, so the fiche draws no timeline rather than a broken one.
-      attestations: row.attestations ?? [],
-      shortLine: row.short_line ?? null,
-      namedBy: row.named_by ?? null,
-      originDebated: row.origin_debated ?? false,
-      usedIn: row.used_in ?? [],
-      pronunciation: row.pronunciation ?? null,
-    },
-  }));
-
   const names = [
-    ...historyNames.map((name, rank) => ({
+    ...namesFromHistory(peopleId, row.name_history).map((name, rank) => ({
       rank,
-      name: { ...name, confidence },
+      name,
     })),
-    ...rowNames,
+    ...namesFromAppellations(peopleId, row.name_index),
   ]
+    .map(({ rank, name }) => ({ rank, name: { ...name, confidence } }))
     .sort(compareRanked)
     .map(({ name }) => name);
 
@@ -412,10 +306,10 @@ export async function listNames(
 ): Promise<ListNamesResult> {
   const supabase = createServerClient();
 
+  // Every row of the view is a people's name, so no entity filter applies.
   let dbQuery = supabase
-    .from("name_records")
-    .select("*", { count: "exact" })
-    .eq("entity_type", "people");
+    .from("afrik_people_names")
+    .select("*", { count: "exact" });
 
   if (query.q) {
     dbQuery = dbQuery.textSearch("search_vector", query.q, {
@@ -545,7 +439,7 @@ function mapRowToNameForm(row: Record<string, unknown>): NameForm {
 /**
  * One page of the Appellations nomenclature.
  *
- * Reads `afrik_name_forms` rather than `name_records`: the surface's unit is
+ * Reads `afrik_name_forms` rather than `afrik_people_names`: the surface's unit is
  * the name, and a page can only group what it has already fetched, so
  * grouping the records here — after `range()` — would have produced a
  * different set of entries on every page. Ordering is alphabetical on the

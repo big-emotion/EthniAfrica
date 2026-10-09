@@ -11,7 +11,7 @@
  *   get:
  *     summary: List and search name-variant records
  *     description: >
- *       Browsable index of name_records with optional full-text search via
+ *       Browsable index of the peoples' names with optional full-text search via
  *       `websearch_to_tsquery('french', q)` on `search_vector`, ranked by
  *       relevance × confidence boost. Any name variant leads to its people
  *       (FR53, FR55, FR58).

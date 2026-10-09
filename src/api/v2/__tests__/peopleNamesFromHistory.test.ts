@@ -1,7 +1,7 @@
 /**
- * GET /v2/peoples/{id}/names reads a people's nameHistory before its
- * name_records rows (REQ-196, ARCH-028): the fold of noms/ into the fiches
- * must leave the served dossier unchanged.
+ * GET /v2/peoples/{id}/names reads a people's nameHistory first, then the
+ * names its appellations yield (REQ-196, ARCH-028): the fold of noms/ into
+ * the fiches must leave the served dossier unchanged.
  */
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
@@ -47,64 +47,62 @@ function thenable(rows: unknown, single = false): FakeQuery {
   return query;
 }
 
-/** The rows nameRecordJsonLoader wrote for a dossier: sources → assertions → name_records. */
-function recordTables(dossier: NameRecordDossier) {
-  const sourceId = (title: string) => `source:${title}`;
-  const sources = new Map<string, Record<string, unknown>>();
-  const assertions = dossier.names.map((entry, index) => {
-    for (const source of entry.sources) {
-      sources.set(source.title, {
-        id: sourceId(source.title),
-        title: source.title,
-        url: source.url,
-        year: source.year,
-        tier: source.tier,
-      });
-    }
-    return {
-      id: `assertion-${index}`,
-      source_ids: entry.sources.map((source) => sourceId(source.title)),
-    };
-  });
-  const names = dossier.names.map((entry, index) => ({
-    id: `row-${index}`,
-    name_text: entry.nameText,
-    name_type: entry.nameType,
-    language_of_origin: entry.languageOfOrigin,
-    meaning: entry.meaning,
-    period_label: entry.periodLabel,
-    imposed_by: entry.imposedBy,
-    imposition_period: entry.impositionPeriod,
-    why_problematic: entry.whyProblematic,
-    contemporary_usage: entry.contemporaryUsage,
-    attestations: entry.attestations ?? [],
-    short_line: entry.shortLine ?? null,
-    named_by: entry.namedBy ?? null,
-    origin_debated: entry.originDebated ?? null,
-    used_in: entry.usedIn ?? [],
-    pronunciation: entry.pronunciation ?? null,
-    assertion_id: `assertion-${index}`,
-    sort_rank: entry.sortRank,
-  }));
-  return { names, assertions, sources: [...sources.values()] };
+/**
+ * The dossier the retired name_records rows of a folded record served, built
+ * the way the service mapped a row: the frozen expectation the fold is held to.
+ */
+function servedFromRecords(dossier: NameRecordDossier) {
+  return {
+    peopleId: dossier.id,
+    autonym: null,
+    names: [...dossier.names]
+      .sort(
+        (left, right) =>
+          left.sortRank - right.sortRank ||
+          left.nameType.localeCompare(right.nameType) ||
+          (left.nameText < right.nameText ? -1 : 1)
+      )
+      .map((entry, index) => ({
+        id: `row-${index}`,
+        nameText: entry.nameText,
+        nameType: entry.nameType,
+        languageOfOrigin: entry.languageOfOrigin,
+        meaning: entry.meaning,
+        periodLabel: entry.periodLabel,
+        imposition:
+          entry.imposedBy ||
+          entry.impositionPeriod ||
+          entry.whyProblematic ||
+          entry.contemporaryUsage
+            ? {
+                imposedBy: entry.imposedBy,
+                impositionPeriod: entry.impositionPeriod,
+                whyProblematic: entry.whyProblematic,
+                contemporaryUsage: entry.contemporaryUsage,
+              }
+            : null,
+        assertionId: `assertion-${index}`,
+        sources: entry.sources.map((source) => ({
+          id: `source:${source.title}`,
+          title: source.title,
+          url: source.url,
+          year: source.year,
+          tier: source.tier,
+        })),
+        confidence: null,
+        attestations: entry.attestations ?? [],
+        shortLine: entry.shortLine ?? null,
+        namedBy: entry.namedBy ?? null,
+        originDebated: entry.originDebated ?? false,
+        usedIn: entry.usedIn ?? [],
+        pronunciation: entry.pronunciation ?? null,
+      })),
+  };
 }
 
-function mockTables({
-  people,
-  names = [],
-  assertions = [],
-  sources = [],
-}: {
-  people: Record<string, unknown>;
-  names?: unknown[];
-  assertions?: unknown[];
-  sources?: unknown[];
-}) {
+function mockPeople(people: Record<string, unknown>) {
   fromMock.mockImplementation((table: string) => {
     if (table === "afrik_peoples") return thenable(people, true);
-    if (table === "name_records") return thenable(names);
-    if (table === "assertions") return thenable(assertions);
-    if (table === "sources") return thenable(sources);
     throw new Error(`Unexpected table: ${table}`);
   });
 }
@@ -137,13 +135,12 @@ describe("names service — a people's nameHistory", () => {
     "%s: the folded history serves the dossier its name records served",
     async (file) => {
       const dossier = foldedRecord(file);
-      const people = { id: dossier.id, content: {} };
+      const fromRecords = servedFromRecords(dossier);
 
-      mockTables({ people, ...recordTables(dossier) });
-      const fromRecords = await getPeopleNamesDossier(dossier.id);
-
-      mockTables({
-        people: { ...people, name_history: ficheNameHistory(dossier.id) },
+      mockPeople({
+        id: dossier.id,
+        content: {},
+        name_history: ficheNameHistory(dossier.id),
       });
       const fromHistory = await getPeopleNamesDossier(dossier.id);
 
@@ -157,26 +154,33 @@ describe("names service — a people's nameHistory", () => {
   );
 
   // @req REQ-196
-  it("lets the history win over a row for the same name and keeps a name only the rows hold", async () => {
+  it("serves the names the appellations yield beside the history, in rank order", async () => {
     const igbo = foldedRecord("PPL_IGBO.json");
-    const tables = recordTables(igbo);
-    const staleIbo = { ...tables.names[1], meaning: "Ancienne lecture" };
     const derived = {
-      ...tables.names[0],
-      id: "row-derived",
-      name_text: "Igbos",
-      name_type: "exonym",
-      sort_rank: 1,
+      nameText: "Igbos",
+      nameType: "exonym",
+      origin: "appellation",
+      languageOfOrigin: null,
+      meaning: null,
+      periodLabel: null,
+      imposedBy: null,
+      impositionPeriod: null,
+      whyProblematic: null,
+      contemporaryUsage: null,
+      sortRank: 1,
+      sources: [],
     };
 
-    mockTables({
-      people: {
-        id: igbo.id,
-        content: {},
-        name_history: ficheNameHistory(igbo.id),
-      },
-      ...tables,
-      names: [staleIbo, derived],
+    mockPeople({
+      id: igbo.id,
+      content: {},
+      name_history: ficheNameHistory(igbo.id),
+      // The index repeats the history's names; the dossier reads them from
+      // the block, which carries what the index flattens away.
+      name_index: [
+        { ...derived, nameText: "Ibo", origin: "nameHistory" },
+        derived,
+      ],
     });
     const result = await getPeopleNamesDossier(igbo.id);
 
@@ -186,7 +190,6 @@ describe("names service — a people's nameHistory", () => {
       "Igbos",
       "Union Ibo",
     ]);
-    expect(result.names[1].meaning).toBeNull();
-    expect(result.names[2].id).toBe("row-derived");
+    expect(result.names[2].id).toBe(`${igbo.id}:name:1`);
   });
 });

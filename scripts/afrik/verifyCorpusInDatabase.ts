@@ -19,6 +19,7 @@
  *
  * Usage: npx tsx --conditions=react-server scripts/afrik/verifyCorpusInDatabase.ts --target=recette|production|local
  */
+import { peopleNameIndex } from "@/lib/afrik/peopleNameIndex";
 import { createHash } from "node:crypto";
 import { resolve } from "node:path";
 
@@ -211,6 +212,7 @@ export function buildCorpusExpectations(
         "content",
         "spelling_aliases",
         "name_history",
+        "name_index",
       ],
       rows: corpus.peoples.map((people) => ({
         id: people.id,
@@ -219,6 +221,7 @@ export function buildCorpusExpectations(
         content: people.content,
         spelling_aliases: people.content?.appellations?.spellingAliases ?? [],
         name_history: people.nameHistory ?? null,
+        name_index: peopleNameIndex(people).entries,
       })),
     },
     {

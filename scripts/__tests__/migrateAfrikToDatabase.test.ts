@@ -17,10 +17,7 @@ import {
   loadLanguages,
 } from "@/lib/afrik/loaders/languageProvenanceLoader";
 import { loadAllPeoples } from "@/lib/afrik/loaders/peopleLoader";
-import {
-  emptyAppellationLoadReport,
-  loadPeopleAppellations,
-} from "@/lib/afrik/loaders/peopleAppellationLoader";
+import { peopleNameIndex } from "@/lib/afrik/peopleNameIndex";
 import {
   loadAllPatronymeDossiers,
   loadPatronymes,
@@ -61,7 +58,6 @@ vi.mock("@/lib/afrik/loaders/languageProvenanceLoader");
 vi.mock("@/lib/afrik/loaders/peopleLoader");
 vi.mock("@/lib/afrik/loaders/countryLoader");
 vi.mock("@/lib/afrik/loaders/dossierJsonLoader");
-vi.mock("@/lib/afrik/loaders/peopleAppellationLoader");
 vi.mock("@/lib/afrik/loaders/patronymeJsonLoader");
 vi.mock("@/lib/afrik/loaders/personJsonLoader");
 vi.mock("@/lib/afrik/loaders/placeJsonLoader");
@@ -85,10 +81,6 @@ function emptyLanguageReport(): LanguageLoadReport {
     perFamily: {},
     errors: [],
   };
-}
-
-function emptyAppellationReport() {
-  return { total: 0, inserted: 0, rejected: [], errors: [] };
 }
 
 const PRODUCTION_URL = "https://ethniafrica-production.supabase.co";
@@ -262,12 +254,6 @@ describe("migrateAfrikToDatabase", () => {
       }
     );
     vi.mocked(emptyLanguageLoadReport).mockImplementation(emptyLanguageReport);
-    vi.mocked(emptyAppellationLoadReport).mockImplementation(
-      emptyAppellationReport
-    );
-    vi.mocked(loadPeopleAppellations).mockResolvedValue(
-      emptyAppellationReport()
-    );
     vi.mocked(loadLanguages).mockResolvedValue(emptyLanguageReport());
     vi.mocked(loadAllPeoples).mockResolvedValue([peopleFixture]);
     // A JSON import widens every string to `string`, so the fiche's
@@ -782,6 +768,40 @@ describe("migrateAfrikToDatabase", () => {
     expect(rowOf("afrik_language_families").name_history).toEqual(nameHistory);
     expect(rowOf("afrik_peoples").name_history).toEqual(nameHistory);
     expect(rowOf("afrik_countries").name_history).toBeNull();
+  });
+
+  // @req REQ-196
+  it("writes each people's name index onto name_index, and reports the segments the grammar refused", async () => {
+    const database = useSupabaseDouble({
+      rows: {
+        afrik_language_families: [
+          { id: afroasiaticFamily.id, content: {} },
+          { id: "FLG_KROU", content: {} },
+        ],
+        afrik_peoples: [{ id: betePeople.id, content: {} }],
+        afrik_countries: [{ id: coteDIvoire.id, content: {} }],
+      },
+    });
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: false,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    const expected = peopleNameIndex(peopleFixture);
+    const peopleRow = database.operations.find(
+      ({ table }) => table === "afrik_peoples"
+    )!.row;
+    expect(expected.entries.length).toBeGreaterThan(0);
+    expect(peopleRow.name_index).toEqual(expected.entries);
+    expect(report.appellations).toMatchObject({
+      total: expected.entries.length,
+      inserted: expected.entries.length,
+      rejected: expected.rejected.map(
+        (segment) => `${peopleFixture.id}: ${segment}`
+      ),
+    });
   });
 
   // @req REQ-032
