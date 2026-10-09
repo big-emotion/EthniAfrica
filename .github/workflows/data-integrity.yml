@@ -55,6 +55,11 @@ jobs:
       - name: Check ai_generated sources
         run: npm run check:ai-sources
 
+      # Exact ratchet on etymology fields that state a name's origin as fact
+      # (doctrine §1.1: every origin is a hypothesis). Fails when one enters.
+      - name: Check etymologies are written as hypotheses
+        run: npm run check:etymology-hypotheses
+
       # Reports the tier mix and the untiered tail across the 789 people
       # fiches, and writes the Prismic eligibility manifest.
       - name: Run people source tier audit
