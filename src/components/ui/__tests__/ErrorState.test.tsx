@@ -16,6 +16,7 @@ const ANECDOTE: DidYouKnowFact = {
       title: "Official history of Cameroon",
       url: "https://example.org/cameroon",
       tier: "official",
+      source_kind: "academic",
     },
   ],
 };

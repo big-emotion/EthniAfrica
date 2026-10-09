@@ -161,6 +161,54 @@ describe("search companions handler", () => {
 
   // A word has no entity to point at: the match carries the word itself, and
   // the piece still leads to its own Découvertes entry.
+  // @req REQ-194
+  it("carries each anecdote and proverb source's type onto the wire", async () => {
+    const fact = DID_YOU_KNOW_FACTS.find(({ id }) => id === "cameroun")!;
+    const proverb = PROVERBS[0];
+
+    vi.mocked(getSearchCompanionSelections).mockResolvedValue({
+      subjects: [{ type: "country", id: "CMR" }],
+      targets: [match],
+      shorts: { count: 0, items: [] },
+      anecdotes: {
+        count: 1,
+        items: [
+          {
+            item: {
+              id: fact.id,
+              fact,
+              illustration: illustrationFor(fact.id)!,
+              subjects: [],
+            },
+            match,
+          },
+        ],
+      },
+      proverbs: {
+        count: 1,
+        items: [{ item: { id: proverb.id, proverb, subjects: [] }, match }],
+      },
+      quiz: { count: 0, items: [] },
+    } as never);
+
+    const envelope = await getSearchCompanionsHandler({
+      lang: "fr",
+      subjects: [{ type: "country", id: "CMR" }],
+    });
+
+    // The Cameroonian foreign ministry, and Rattray's 1916 Clarendon Press
+    // collection.
+    expect(envelope.data.anecdotes.items[0].sources[0].sourceKind).toBe(
+      "government"
+    );
+    expect(envelope.data.proverbs.items[0].sources[0].sourceKind).toBe(
+      "academic"
+    );
+    expect(searchCompanionsDataSchema.parse(envelope.data)).toEqual(
+      envelope.data
+    );
+  });
+
   // @req REQ-180
   it("projects a production found by a word, with the word as its match", async () => {
     const wordMatch = { relation: "word" as const, word: "zombie" };

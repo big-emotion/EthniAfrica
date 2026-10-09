@@ -4,6 +4,7 @@ import {
   quizOptionValueSchema,
   quizSessionQuestionSchema,
 } from "@/api/v2/schemas/quiz";
+import { SOURCE_KINDS } from "@/types/sources";
 
 const SUBJECT_ID_PATTERNS = {
   people: /^PPL_[A-Z0-9_]+$/,
@@ -110,6 +111,7 @@ const sourceSchema = z.object({
   url: z.string().url().nullable(),
   tier: sourceTierSchema,
   notes: z.string().min(1).optional(),
+  sourceKind: z.enum(SOURCE_KINDS).optional(),
 });
 const companionMatchSchema = z.object({
   relation: z.enum([

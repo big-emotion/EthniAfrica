@@ -9,6 +9,7 @@ import {
   proverbEntities,
   type Proverb,
 } from "@/lib/proverbs/proverbs";
+import { SOURCE_KINDS } from "@/types/sources";
 import { afrikCorpusIds } from "@/test/afrikCorpusIds";
 
 const proverb = (id: string, entities: Proverb["entities"] = []): Proverb => ({
@@ -22,6 +23,7 @@ const proverb = (id: string, entities: Proverb["entities"] = []): Proverb => ({
       title: `Recueil ${id}`,
       url: `https://example.org/${id}`,
       tier: "referenced",
+      source_kind: "academic",
     },
   ],
 });
@@ -271,5 +273,21 @@ describe("the bank's reader prose (doctrine §1.1)", () => {
     ).map((proverb) => proverb.id);
 
     expect(offenders).toEqual([]);
+  });
+});
+
+describe("the proverb bank — what each source is", () => {
+  // The card names a source's type beside its title. A source without one
+  // would print a bare title next to typed ones, and a misspelt kind would
+  // print « Type non précisé » for a source whose type is known.
+  // @req REQ-194
+  it("gives every source a type from the corpus vocabulary", () => {
+    const untyped = PROVERBS.flatMap((entry) =>
+      entry.sources
+        .filter((source) => !SOURCE_KINDS.includes(source.source_kind))
+        .map((source) => `${entry.id} → ${source.title}`)
+    );
+
+    expect(untyped).toEqual([]);
   });
 });

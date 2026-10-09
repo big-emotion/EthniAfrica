@@ -10,6 +10,7 @@ import {
   pickNextDidYouKnowFact,
   type DidYouKnowFact,
 } from "@/lib/home/didYouKnowFacts";
+import { SOURCE_KINDS } from "@/types/sources";
 
 const fact = (id: string): DidYouKnowFact => ({
   id,
@@ -22,6 +23,7 @@ const fact = (id: string): DidYouKnowFact => ({
       title: `Source officielle ${id}`,
       url: `https://example.org/${id}`,
       tier: "official",
+      source_kind: "academic",
     },
   ],
 });
@@ -33,6 +35,7 @@ const factWithoutOfficialSource = (id: string): DidYouKnowFact => ({
       title: `Source secondaire ${id}`,
       url: `https://example.org/${id}`,
       tier: "referenced",
+      source_kind: "academic",
     },
   ],
 });
@@ -241,5 +244,21 @@ describe("the bank's reader prose (doctrine §1.1)", () => {
     ).map((entry) => entry.id);
 
     expect(offenders).toEqual([]);
+  });
+});
+
+describe("the Saviez-vous bank — what each source is", () => {
+  // The card names a source's type beside its title. A source without one
+  // would print a bare title next to typed ones, and a misspelt kind would
+  // print « Type non précisé » for a source whose type is known.
+  // @req REQ-194
+  it("gives every source a type from the corpus vocabulary", () => {
+    const untyped = DID_YOU_KNOW_FACTS.flatMap((entry) =>
+      (entry.sources ?? [])
+        .filter((source) => !SOURCE_KINDS.includes(source.source_kind))
+        .map((source) => `${entry.id} → ${source.title}`)
+    );
+
+    expect(untyped).toEqual([]);
   });
 });

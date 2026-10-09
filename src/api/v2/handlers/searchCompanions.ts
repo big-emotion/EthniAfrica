@@ -10,18 +10,21 @@ import {
   searchShortDiscoveryPublication,
   searchShortPosterAlt,
 } from "@/lib/search/companionCatalogs";
+import type { SourceKind } from "@/types/sources";
 
 function source(source: {
   title: string;
   url?: string | null;
   tier: "official" | "referenced" | "unverified";
   notes?: string;
+  source_kind?: SourceKind;
 }) {
   return {
     title: source.title,
     url: source.url ?? null,
     tier: source.tier,
     ...(source.notes ? { notes: source.notes } : {}),
+    ...(source.source_kind ? { sourceKind: source.source_kind } : {}),
   };
 }
 

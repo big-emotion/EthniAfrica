@@ -26,6 +26,7 @@ const attested: Proverb = {
       title: "Yoruba Proverbs",
       url: "https://example.org/yoruba-proverbs",
       tier: "referenced",
+      source_kind: "academic",
       notes: "Recueil publié ; donne le texte original.",
     },
   ],
@@ -55,6 +56,7 @@ const unestablished: Proverb = {
       title: "Quote Investigator",
       url: "https://example.org/qi",
       tier: "referenced",
+      source_kind: "discovery",
     },
   ],
 };
@@ -120,6 +122,19 @@ describe("ProverbCard", () => {
   });
 
   // No chip, and the reason there is none, rather than a blank row.
+  // @req REQ-194
+  it("names each source's type, and no tier word comes back with it", () => {
+    render(<ProverbCard language="fr" proverb={attested} />);
+
+    const item = screen
+      .getByRole("link", { name: "Yoruba Proverbs" })
+      .closest("li");
+    expect(item).toHaveTextContent("Publication académique");
+    expect(item).not.toHaveTextContent(
+      /Officielle|Référencée|Non vérifiée|Source officielle/
+    );
+  });
+
   // @req REQ-113
   it("gives an unestablished proverb no chip and says why", () => {
     render(<ProverbCard language="fr" proverb={unestablished} />);

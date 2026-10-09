@@ -1437,6 +1437,12 @@ const options: swaggerJsdoc.Options = {
               enum: ["official", "referenced", "unverified"],
             },
             notes: { type: "string", minLength: 1 },
+            sourceKind: {
+              type: "string",
+              enum: [...SOURCE_KINDS],
+              description:
+                "What kind of work the source is. Absent when the source records none.",
+            },
           },
           required: ["title", "url", "tier"],
         },
@@ -5402,6 +5408,12 @@ const options: swaggerJsdoc.Options = {
               enum: ["official", "referenced", "unverified", null],
             },
             url: { type: ["string", "null"] },
+            sourceKind: {
+              type: ["string", "null"],
+              enum: [...SOURCE_KINDS, null],
+              description:
+                "What kind of work the source is. Absent or null when the source records none.",
+            },
           },
           required: ["title", "year", "tier", "url"],
         },

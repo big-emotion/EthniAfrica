@@ -4,6 +4,7 @@ import * as React from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
 
 import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
 import { isEstimateRound, type GameRound } from "@/lib/games/gameKinds";
 import { revealProvenanceFr } from "@/lib/games/revealProvenance";
@@ -127,8 +128,9 @@ export const GameAnswerReveal = ({
         ) : null}
 
         {/*
-          The source is named, its tier is not (doctrine §1.1): ranking what
-          a claim rests on is moderation's job, not the reader's.
+          The source is named with its type, its tier is not (doctrine
+          §1.1): ranking what a claim rests on is moderation's job, not the
+          reader's.
         */}
         {sources.length > 0 ? (
           <ul className="flex flex-col gap-1">
@@ -138,6 +140,9 @@ export const GameAnswerReveal = ({
                 className="flex flex-wrap items-center gap-2"
               >
                 <span>{source.label}</span>
+                {source.kind ? (
+                  <SourceKindBadge kind={source.kind} language={language} />
+                ) : null}
               </li>
             ))}
           </ul>

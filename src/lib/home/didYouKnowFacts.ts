@@ -19,6 +19,8 @@
  * cost, not its integration.
  */
 
+import type { SourceKind } from "@/types/sources";
+
 export type DidYouKnowEntityKind = "people" | "country" | "family";
 
 export interface DidYouKnowEntity {
@@ -49,6 +51,11 @@ export interface DidYouKnowSource {
    */
   url?: string;
   tier: DidYouKnowTier;
+  /**
+   * What kind of work the citation is — the type a card shows beside the
+   * title, never the tier. Same vocabulary as a fiche's `source_kind`.
+   */
+  source_kind: SourceKind;
   /** What the citation actually supports, or what it deliberately leaves open. */
   notes?: string;
 }
@@ -186,6 +193,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Jeune Afrique — Quelle est l'origine du mot « Afrique » ?",
         url: "https://www.jeuneafrique.com/115118/archives-thematique/quelle-est-l-origine-du-mot-afrique/",
         tier: "referenced",
+        source_kind: "unknown",
         notes:
           "Plusieurs étymologies coexistent (Ifren, ifri « grotte », punique faraqa). La fiche retient l'extension du périmètre, qui n'est pas contestée, pas l'étymon.",
       },
@@ -210,12 +218,14 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "Jeune Afrique — Le 4 août 1984, Thomas Sankara rebaptisait la Haute-Volta en Burkina Faso",
         url: "https://www.jeuneafrique.com/48652/politique/le-4-ao-t-1984-thomas-sankara-rebaptisait-la-haute-volta-en-burkina-faso/",
         tier: "referenced",
+        source_kind: "unknown",
       },
       {
         title:
           "Alain Maharaux — La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux, 1995",
         url: "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
         tier: "referenced",
+        source_kind: "academic",
       },
     ],
   },
@@ -236,6 +246,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Ministère des Relations extérieures du Cameroun — Histoire",
         url: "https://www.diplocam.cm/histoire/",
         tier: "official",
+        source_kind: "government",
       },
     ],
   },
@@ -257,6 +268,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Why was Dahomey renamed Benin in 1975? — Visit Abomey",
         url: "https://visitabomey.com/en/pillars/why-dahomey-renamed-benin",
         tier: "referenced",
+        source_kind: "community",
       },
     ],
   },
@@ -275,6 +287,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "Dubawa — How true is the claim that Flora Shaw coined the name Nigeria?",
         url: "https://dubawa.org/nigeria60-how-true-is-claim-that-flora-shaw-british-journalist-coined-the-name-nigeria/",
         tier: "referenced",
+        source_kind: "unknown",
         notes:
           "Vérification de presse citant l'article du Times du 8 janvier 1897 ; l'adoption officielle par Lugard date de 1914.",
       },
@@ -298,11 +311,13 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "The British Academy — Reclaiming Great Zimbabwe's past",
         url: "https://www.thebritishacademy.ac.uk/blog/reclaiming-great-zimbabwes-past-to-learn-lessons-for-the-future/",
         tier: "referenced",
+        source_kind: "academic",
       },
       {
         title: "Scientific American — Great Zimbabwe",
         url: "https://www.scientificamerican.com/article/great-zimbabwe-2005-01/",
         tier: "referenced",
+        source_kind: "unknown",
         notes:
           "Documente la commande de fouille de 1902 et la censure rhodésienne de 1970.",
       },
@@ -328,11 +343,13 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Sesotho (sot)",
         url: "https://www.ethnologue.com/language/sot/",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
       {
         title: "SIL Ethnologue — Setswana (tsn)",
         url: "https://www.ethnologue.com/language/tsn/",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
     ],
   },
@@ -355,6 +372,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Pulaar (fuc)",
         url: "https://www.ethnologue.com/language/fuc/",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
     ],
   },
@@ -377,6 +395,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Dictionary of South African English — Hottentot",
         url: "https://dsae.co.za/entry/hottentot/e03109",
         tier: "referenced",
+        source_kind: "linguistic_reference",
         notes:
           "Le dictionnaire donne l'hypothèse des clics comme la plus répandue tout en notant l'absence d'attestation antérieure.",
       },
@@ -406,6 +425,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Online Etymology Dictionary — pygmy",
         url: "https://www.etymonline.com/word/pygmy",
         tier: "referenced",
+        source_kind: "linguistic_reference",
         notes:
           "Établit pygmē « coudée » et l'usage homérique ; l'absence de terme collectif de remplacement est documentée par les organisations de défense des peuples concernés.",
       },
@@ -431,6 +451,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "WorldAtlas — What is a tautological place name?",
         url: "https://www.worldatlas.com/articles/what-is-a-tautological-place.html",
         tier: "referenced",
+        source_kind: "discovery",
       },
     ],
   },
@@ -452,6 +473,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "World History Encyclopedia — Timbuktu",
         url: "https://www.worldhistory.org/Timbuktu/",
         tier: "referenced",
+        source_kind: "discovery",
         notes:
           "Le fait publié est le désaccord lui-même. Les étymologies concurrentes relèvent de la tradition orale et d'hypothèses d'auteurs : aucune n'est attestée.",
       },
@@ -476,6 +498,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Online Etymology Dictionary — Niger",
         url: "https://www.etymonline.com/word/Niger",
         tier: "referenced",
+        source_kind: "linguistic_reference",
         notes:
           "Donne l'altération du touareg egerew n-igerewen sous l'influence du latin niger comme hypothèse la plus probable, non comme certitude.",
       },
@@ -499,6 +522,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Ethiopia",
         url: "https://www.ethnologue.com/country/ET/",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
     ],
   },
@@ -520,6 +544,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "WorldAtlas — Why are so many countries called Guinea?",
         url: "https://www.worldatlas.com/geography/why-are-so-many-countries-called-guinea-56865.html",
         tier: "unverified",
+        source_kind: "discovery",
         notes:
           "Les deux étymologies concurrentes (aginaw berbère, Djenné) sont des conjectures d'auteurs ; aucune n'est démontrée.",
       },
@@ -542,6 +567,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Tanzania",
         url: "https://www.ethnologue.com/country/TZ/",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
     ],
   },
@@ -563,6 +589,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "UNESCO — Island of Mozambique",
         url: "https://whc.unesco.org/en/list/599/",
         tier: "official",
+        source_kind: "intergovernmental",
         notes:
           "Atteste le rôle de l'île comme comptoir puis capitale coloniale ; l'attribution du nom au cheikh Mussa Bin Bique est la lecture courante des chroniques portugaises.",
       },
@@ -587,11 +614,13 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Mission permanente de la Sierra Leone — Country history",
         url: "https://missionsierraleone.ch/411-412-country-history-of-sierra-leone",
         tier: "official",
+        source_kind: "government",
       },
       {
         title: "Sierra Leone: Why the Name? — African Heritage",
         url: "https://afrolegends.com/2012/11/14/sierra-leone-why-the-name/",
         tier: "unverified",
+        source_kind: "community",
         notes:
           "Rapporte la contestation de C. Magbaily Fyle sur l'attribution à Pedro de Sintra.",
       },
@@ -625,6 +654,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Ateso (teo)",
         url: "https://www.ethnologue.com/language/teo/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste les appellations Teso, Bakedi et Wamia et la répartition Ouganda-Kenya. Le sens de Bakedi et son caractère péjoratif sont rapportés par notre fiche sur ce peuple.",
       },
@@ -648,6 +678,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Datooga (tcc)",
         url: "https://www.ethnologue.com/language/tcc/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Mentionne Datooga, Tatog et Barabaig, et précise les liens entre le peuple et ses sous-groupes.",
       },
@@ -655,6 +686,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Glottolog — Datooga (dato1239)",
         url: "https://glottolog.org/resource/languoid/id/dato1239",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
     ],
   },
@@ -678,6 +710,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title:
           "Evans-Pritchard, E. E. — Witchcraft, Oracles and Magic Among the Azande. Oxford University Press, 1937",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "L'ethnographie de référence sur les Azande, et la source de la distinction entre le peuple et la réputation qu'on lui a faite.",
       },
@@ -685,6 +718,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Zande (zne)",
         url: "https://www.ethnologue.com/language/zne/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Mentionne le nom du peuple et ses variantes, dont Niam-Niam, présenté comme un nom méprisant.",
       },
@@ -708,6 +742,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Godié (god)",
         url: "https://www.ethnologue.com/language/god/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste l'appellation Godié et ses variantes. L'étymologie néyo Gwèdji est rapportée par notre fiche sur ce peuple.",
       },
@@ -731,11 +766,13 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "WALS Online — Murle (ISO 639-3 : mur)",
         url: "https://wals.info/languoid/lect/wals_code_mrl",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
       {
         title: "Glottolog — Murle (murl1244)",
         url: "https://glottolog.org/resource/languoid/id/murl1244",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Mentionne le nom du peuple et les noms employés par ses voisins. Le sens de moden est rapporté par notre fiche sur ce peuple.",
       },
@@ -761,6 +798,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Mafa (maf)",
         url: "https://www.ethnologue.com/language/maf/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste l'une des langues rassemblées sous l'étiquette. L'étymologie et la mention de Denham en 1826 sont rapportées par notre fiche sur ce peuple.",
       },
@@ -783,6 +821,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Bambara (bam)",
         url: "https://www.ethnologue.com/language/bam/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Mentionne les formes Bambara et Bamana et l’usage de la langue dans les échanges entre peuples. Notre fiche rapporte une explication méprisante de l’origine du nom, tout en précisant qu’elle est discutée.",
       },
@@ -806,6 +845,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "UNESCO — Falaises de Bandiagara, pays dogon",
         url: "https://whc.unesco.org/fr/list/516/",
         tier: "official",
+        source_kind: "intergovernmental",
         notes:
           "Décrit le territoire et emploie le nom Dogon. Le nom peul Habe et son sens sont rapportés par notre fiche sur ce peuple.",
       },
@@ -833,18 +873,21 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Farefare (gur)",
         url: "https://www.ethnologue.com/language/gur/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes: "Atteste l'appellation Frafra et ses variantes.",
       },
       {
         title: "SIL Ethnologue — Bisa (bib)",
         url: "https://www.ethnologue.com/language/bib/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes: "Atteste les formes Bissa, Busansi et Busanga.",
       },
       {
         title: "SIL Ethnologue — Ma'di (mhi)",
         url: "https://www.ethnologue.com/language/mhi/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Mentionne le nom du peuple. Les trois récits d’origine sont rapportés par nos fiches sur les peuples concernés, qui les présentent comme des récits transmis.",
       },
@@ -870,6 +913,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "Holsoe, S. E. & Lauer, J. — « Who Are the Kran/Guere and the Gio/Yacouba? », African Studies Review 19(1), 1976",
         url: "https://www.cambridge.org/core/journals/african-studies-review/article/who-are-the-kranguere-and-the-gioyacouba-ethnic-identifications-along-the-liberiaivory-coast-border/4E33CA4D6CDC5962A21AEE535A3E10AD",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "L'article qui pose la question de l'identité de ce groupe de part et d'autre de la frontière Liberia-Côte d'Ivoire.",
       },
@@ -877,6 +921,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Wè Southern (gxx)",
         url: "https://www.ethnologue.com/language/gxx/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes: "Atteste les appellations Wè, Guéré, Wobé et Krahn.",
       },
     ],
@@ -902,6 +947,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — sous-groupe bamiléké",
         url: "https://www.ethnologue.com/subgroup/589/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste la pluralité des langues rassemblées sous l'étiquette. L'origine administrative allemande et l'étymologie débattue sont rapportées par notre fiche sur ce peuple.",
       },
@@ -926,6 +972,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Ngambay (sba)",
         url: "https://www.ethnologue.com/language/sba/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste l'une des langues rassemblées sous l'étiquette et le nom que ce groupe se donne.",
       },
@@ -933,6 +980,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Glottolog — Ngambay (ngam1268)",
         url: "https://glottolog.org/resource/languoid/id/ngam1268",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
     ],
   },
@@ -955,6 +1003,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "Dozon, Jean-Pierre — La société bété : histoires d'une ethnie de Côte d'Ivoire. Karthala / ORSTOM, 1985",
         url: "https://www.documentation.ird.fr/hor/fdi:17296",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Étudie comment le regroupement bété s’est formé au fil de l’histoire. Rapporte les explications recueillies à Gagnoa et la proposition Magwé de Téty Gauze.",
       },
@@ -962,6 +1011,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Ethnologue — Bété, Daloa (bev)",
         url: "https://www.ethnologue.com/language/bev/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste que trois langues distinctes portent aujourd'hui le nom bété.",
       },
@@ -985,6 +1035,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Glottolog — langues nupoïdes (nupo1239)",
         url: "https://glottolog.org/resource/languoid/id/nupo1239",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste le rattachement nupe des Bassa Nge, et donc leur distance d'avec les Bassa Komu.",
       },
@@ -992,6 +1043,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Nupe-Nupe-Tako (nup)",
         url: "https://www.ethnologue.com/language/nup/",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
     ],
   },
@@ -1014,6 +1066,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Tswa (tsc)",
         url: "https://www.ethnologue.com/language/tsc/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste le xitswa comme langue distincte et ses appellations concurrentes.",
       },
@@ -1021,6 +1074,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "CLEAR Global — Language data for Mozambique (2024)",
         url: "https://clearglobal.org/language-data-for-mozambique/",
         tier: "referenced",
+        source_kind: "linguistic_reference",
         notes:
           "Documente l'écart entre les langues effectivement parlées et les catégories du recensement.",
       },
@@ -1046,6 +1100,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "United States Holocaust Memorial Museum — Divided by Ethnicity: Rwanda",
         url: "https://www.ushmm.org/genocide-prevention/countries/rwanda/divided-by-ethnicity",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Atteste l'institution des cartes d'identité ethniques par l'administration coloniale belge et ses critères.",
       },
@@ -1053,6 +1108,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Kirundi (run)",
         url: "https://www.ethnologue.com/language/run",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste la langue commune aux trois catégories. Les deux étymologies concurrentes sont rapportées par notre fiche sur ce peuple, qui les donne pour débattues.",
       },
@@ -1077,6 +1133,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Kasem (xsm)",
         url: "https://www.ethnologue.com/language/xsm/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Décrit la langue, le nom Kasena employé par les personnes concernées et leur présence des deux côtés de la frontière.",
       },
@@ -1084,6 +1141,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "WALS Online — Kasem",
         url: "https://wals.info/languoid/lect/wals_code_ksm",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
     ],
   },
@@ -1109,6 +1167,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Jula (dyu)",
         url: "https://www.ethnologue.com/language/dyu/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste les graphies Dioula, Jula, Dyula et l'aire des réseaux marchands.",
       },
@@ -1117,6 +1176,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "Chikouna Cissé, Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos 1, 2025",
         url: "https://www.ouvroir.fr/apropos/index.php?id=100",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Cite François-Xavier Fauvelle et Jean Bazin sur le glissement sémantique de Wangara vers Jula, du nom d'un groupe vers celui d'une spécialisation professionnelle.",
       },
@@ -1125,6 +1185,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "Yaya Konaté, Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela 14-1, 2016",
         url: "https://doi.org/10.4000/corela.4586",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article fondé sur des enquêtes de terrain : les interlocuteurs de l'auteur traduisent jula par « commerçant ».",
       },
@@ -1133,6 +1194,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "Paul E. Lovejoy, The Role of the Wangara in the Economic Transformation of the Central Sudan in the Fifteenth and Sixteenth Centuries, The Journal of African History 19(2), 1978, pp. 173-193",
         url: "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/role-of-the-wangara-in-the-economic-transformation-of-the-central-sudan-in-the-fifteenth-and-sixteenth-centuries/1DB11290A76E4158CE5E60EB0CB0E4B9",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Conteste, pour le Soudan central et le pays haoussa, l'équivalence courante entre Wangara et Jula : y décrit les Wangara comme une diaspora commerciale distincte, liée à l'empire Songhaï. Résumé consulté, texte intégral non lu.",
       },
@@ -1156,6 +1218,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Teke-Tege (teg)",
         url: "https://www.ethnologue.com/language/teg/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Mentionne le nom du peuple et les formes qui changent selon qu’il s’agit d’une ou de plusieurs personnes. L’explication du sens est rapportée par notre fiche sur ce peuple.",
       },
@@ -1179,6 +1242,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Tangaza University — A Collection of 100 Tetela Proverbs",
         url: "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/ebooks_tetela.pdf",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ce recueil de proverbes présente la langue tetela. Il ne donne pas l’origine du nom du peuple. Les deux explications viennent de notre fiche et demandent encore une source consacrée à cette question.",
       },
@@ -1202,6 +1266,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title:
           "Roberts, Allen F. — The Rising of a New Moon: A Century of Tabwa Art. University of Michigan Museum of Art, 1985",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Étude sur les Tabwa et le rôle de la colonisation dans la formation de leur identité. Notre fiche présente « être attaché » comme une origine possible du nom, qui reste à vérifier.",
       },
@@ -1209,6 +1274,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Taabwa (tap)",
         url: "https://www.ethnologue.com/language/tap/",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
     ],
   },
@@ -1231,6 +1297,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "Bouyer et al. — The Genes of Freedom: Genome-Wide Insights into Marronage (2021)",
         url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8229774/",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Étude génomique de la communauté angolar, qui discute le récit du naufrage et l'origine angolaise des ancêtres.",
       },
@@ -1238,6 +1305,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Angolar (aoa)",
         url: "https://www.ethnologue.com/language/aoa/",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
     ],
   },
@@ -1258,6 +1326,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Cape Verdean Creole (kea)",
         url: "https://www.ethnologue.com/language/kea/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste le kabuverdianu comme langue de l'archipel et ses appellations.",
       },
@@ -1265,6 +1334,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "JSTOR Daily — Cape Verde's Dilemma(s)",
         url: "https://daily.jstor.org/cape-verdes-dilemmas/",
         tier: "referenced",
+        source_kind: "unknown",
         notes:
           "Revient sur l'enjeu politique du rattachement identitaire au moment de l'indépendance.",
       },
@@ -1291,6 +1361,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Kwangali (kwn)",
         url: "https://www.ethnologue.com/language/kwn/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste la langue et la localisation riveraine. Le rapport de nom entre la rivière, le peuple et la région est rapporté par notre fiche sur ce peuple.",
       },
@@ -1314,6 +1385,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Kaonde — DICE Database, University of Missouri",
         url: "https://dice.missouri.edu/assets/docs/niger-congo/Kaonde.pdf",
         tier: "referenced",
+        source_kind: "linguistic_reference",
         notes:
           "Fiche sur la langue kaonde. Notre fiche du peuple rapporte deux récits d’origine transmis par la tradition. Les sources réunies ici ne permettent pas de choisir entre eux.",
       },
@@ -1337,6 +1409,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Kikongo (kon)",
         url: "https://www.ethnologue.com/language/kon",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste la langue et le rattachement kongo. Les deux hypothèses sur l'origine du nom sont rapportées par notre fiche sur ce peuple d'après Van Bulck d'une part, Monnier et Wiliame d'autre part, sans arbitrage.",
       },
@@ -1360,6 +1433,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "Harvey, Andrew — Gorwaa (Tanzania), Language Documentation and Description",
         url: "https://www.lddjournal.org/article/1200/galley/2445/download/",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Documentation de terrain qui relève les appellations concurrentes et le glissement urbain vers Mbulu.",
       },
@@ -1367,6 +1441,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Gorwaa (gow)",
         url: "https://www.ethnologue.com/language/gow/",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
     ],
   },
@@ -1388,6 +1463,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title:
           "Alagoa, E. J. — A History of the Niger Delta. Onyoma Research Publications, 2009",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "L'histoire de référence du delta du Niger, et la source de la distinction entre Kalabari et Calabar.",
       },
@@ -1395,6 +1471,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Kalabari (ijn)",
         url: "https://www.ethnologue.com/language/ijn/",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
     ],
   },
@@ -1423,6 +1500,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title:
           "Bender, M. Lionel — Omotic: A New Afroasiatic Language Family. Southern Illinois University, 1975",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "L'ouvrage qui installe la famille omotique comme branche indépendante, après la proposition de Fleming.",
       },
@@ -1431,6 +1509,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "The Cambridge Handbook of Linguistic Typology — The Omotic Language Family",
         url: "https://www.cambridge.org/core/books/cambridge-handbook-of-linguistic-typology/omotic-language-family/376C86AD112F0E4C5F5677AE4F3DB5FA",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "État de la question, y compris les contestations de l'unité interne de la famille.",
       },
@@ -1455,6 +1534,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title:
           "Bodomo, Adams — Mabia: its etymological genesis, geographical spread, and some salient genetic features, 2017",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "La proposition de renommer Mabia le gur central, et l'argument étymologique ma- + bia.",
       },
@@ -1462,6 +1542,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title:
           "Kleinewillinghöfer, Ulrich — Gur-Adamawa relationship, Journal of West African Languages, 2014",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Situe la famille gur et la fragilité de ses contours, dont l'appellation dépend.",
       },
@@ -1485,6 +1566,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title:
           "Junod, Henri-Alexandre — The Life of a South African Tribe, 1912-1913",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "L'ethnographie qui installe le vocabulaire dont la littérature ultérieure hérite.",
       },
@@ -1492,6 +1574,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Ronga (rng)",
         url: "https://www.ethnologue.com/language/rng/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes: "Atteste le xironga comme langue et ses appellations voisines.",
       },
     ],
@@ -1522,12 +1605,14 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Fulfulde, Maasina (ffm)",
         url: "https://www.ethnologue.com/language/ffm/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste les appellations Peul, Fula, Fulani et Fulbe pour la même langue.",
       },
       {
         title: "Seydou, Christiane — La poésie pastorale peule. Karthala, 1977",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Travail de référence sur la langue et la tradition orale peules, et sur ce que le peuple nomme lui-même.",
       },
@@ -1554,6 +1639,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — macrolangue mandingue (man)",
         url: "https://www.ethnologue.com/language/man/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste les formes concurrentes et le découpage en langues distinctes par l'ISO 639-3.",
       },
@@ -1579,6 +1665,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Fang (fan)",
         url: "https://www.ethnologue.com/language/fan/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Mentionne le nom du peuple et les différents noms employés pendant la colonisation.",
       },
@@ -1586,6 +1673,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Smarthistory — Fang reliquary guardian figure",
         url: "https://smarthistory.org/fang-reliquary-figure/",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Présente les Fang et leur art. Notre fiche rapporte que cette réputation aurait été entretenue pour éloigner les visiteurs, mais ne cite pas de source consacrée à cette affirmation.",
       },
@@ -1610,6 +1698,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Ewondo (ewo)",
         url: "https://www.ethnologue.com/language/ewo/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste l'une des langues rassemblées sous l'étiquette Beti-Pahouin.",
       },
@@ -1617,6 +1706,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Fang (fan)",
         url: "https://www.ethnologue.com/language/fan/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste l'autre. L'épisode Du Chaillu et la nature des crânes sont rapportés par notre fiche sur ce peuple.",
       },
@@ -1644,12 +1734,14 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Glottolog — Kxoe (kxoe1243, ISO 639-3 : xuu)",
         url: "https://glottolog.org/resource/languoid/id/kxoe1243",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes: "Atteste la langue et les appellations concurrentes.",
       },
       {
         title:
           "Kilian-Hatz, Christa — Khwe Dictionary. Rüdiger Köppe Verlag, 2003",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Le dictionnaire de référence, publié sous l'orthographe recommandée par la déclaration de Penduka.",
       },
@@ -1674,6 +1766,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Taa (nmn)",
         url: "https://www.ethnologue.com/language/nmn/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Décrit la langue et mentionne !Xoon, employé par les personnes concernées, ainsi que Masarwa, donné par leurs voisins.",
       },
@@ -1681,6 +1774,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Glottolog — West !Xoon (xooo1239)",
         url: "https://glottolog.org/resource/languoid/id/xooo1239",
         tier: "official",
+        source_kind: "linguistic_reference",
       },
     ],
   },
@@ -1701,6 +1795,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — malgache (mlg)",
         url: "https://www.ethnologue.com/language/mlg/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Présente la langue et ses variantes. Notre fiche rapporte un récit transmis sur l’origine du nom, sans citer de source qui permette de le vérifier.",
       },
@@ -1724,6 +1819,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Masana (mcn)",
         url: "https://www.ethnologue.com/language/mcn/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Mentionne Masana, employé par les personnes concernées, ainsi que les noms Massa, Banana et Yagoua.",
       },
@@ -1747,12 +1843,14 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Rendille (rel)",
         url: "https://www.ethnologue.com/language/rel/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes: "Atteste la langue et les appellations voisines.",
       },
       {
         title:
           "Schlee, Günther — Identities on the Move: Clanship and Pastoralism in Northern Kenya. Manchester University Press, 1989",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "L'étude de référence sur les identités et les appartenances claniques dans le nord du Kenya.",
       },
@@ -1779,12 +1877,14 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Glottolog — Kafa (kafa1242)",
         url: "https://glottolog.org/resource/languoid/id/kafa1242",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Décrit la langue et le nom employé par les personnes concernées. Notre fiche rapporte les travaux de linguistes qui jugent peu probable le lien entre Kaffa et le mot « café ».",
       },
       {
         title: "Pankhurst, Richard — The Ethiopian Borderlands, 1997",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Histoire des marches éthiopiennes, dont le royaume de Kaffa et son incorporation.",
       },
@@ -1808,12 +1908,14 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Abron (abr)",
         url: "https://www.ethnologue.com/language/abr/",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes: "Atteste les formes Bono, Brong et Abron pour la même langue.",
       },
       {
         title:
           "Stahl, Ann Brower — Making History in Banda: Anthropological Visions of Africa's Past. Cambridge University Press, 2001",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Archéologie et histoire de la zone, et de ce que les découpages régionaux y ont recouvert.",
       },
@@ -1838,6 +1940,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "Glottolog — Dan-Toura (dant1235)",
         url: "https://glottolog.org/resource/languoid/id/dant1235",
         tier: "official",
+        source_kind: "linguistic_reference",
         notes:
           "Atteste le rattachement de la langue et les appellations concurrentes.",
       },

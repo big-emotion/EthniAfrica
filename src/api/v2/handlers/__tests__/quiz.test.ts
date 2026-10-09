@@ -20,18 +20,16 @@ vi.mock("@/lib/api/logger", () => ({
   },
 }));
 
-const fromMock = vi.fn();
-vi.mock("@/lib/supabase/server", () => ({
-  createServerClient: () => ({ from: fromMock }),
+const getQuizRevealSourcesMock = vi.fn();
+const getQuizSubjectNamesMock = vi.fn();
+vi.mock("@/api/v2/services/quizReveal", () => ({
+  getQuizRevealSources: (...args: unknown[]) =>
+    getQuizRevealSourcesMock(...args),
+  getQuizSubjectNames: (...args: unknown[]) => getQuizSubjectNamesMock(...args),
 }));
 
-function buildInQuery(result: { data: unknown; error: unknown }) {
-  const query = {
-    select: vi.fn(() => query),
-    in: vi.fn(() => Promise.resolve(result)),
-  };
-  return query;
-}
+import { readFileSync } from "node:fs";
+import path from "node:path";
 
 import { getQuizScopesHandler, composeQuizSessionHandler } from "../quiz";
 
@@ -39,7 +37,8 @@ beforeEach(() => {
   getQuizScopeCatalogueMock.mockReset();
   getQuizScopeLabelMock.mockReset().mockResolvedValue("Ghana");
   composeQuizSessionMock.mockReset();
-  fromMock.mockReset();
+  getQuizRevealSourcesMock.mockReset().mockResolvedValue(new Map());
+  getQuizSubjectNamesMock.mockReset().mockResolvedValue(new Map());
 });
 
 describe("getQuizScopesHandler", () => {
@@ -305,38 +304,39 @@ describe("composeQuizSessionHandler", () => {
       ],
     });
 
-    const sourcesQuery = buildInQuery({
-      data: [
-        {
-          id: "source-1",
-          title: "Ethnologue",
-          url: "https://example.org/eth",
-          year: 2020,
-          tier: "referenced",
-        },
-        {
-          id: "source-2",
-          title: "UN report",
-          url: "https://example.org/un",
-          year: 2021,
-          tier: "official",
-        },
-      ],
-      error: null,
-    });
-    const peoplesQuery = buildInQuery({
-      data: [
-        {
-          id: "PPL_A",
-          content: {
-            appellations: { selfAppellation: "Shona", exonyms: ["Mashona"] },
+    getQuizRevealSourcesMock.mockResolvedValue(
+      new Map([
+        [
+          "source-1",
+          {
+            id: "source-1",
+            title: "Ethnologue",
+            url: "https://example.org/eth",
+            year: 2020,
+            tier: "referenced",
+            sourceKind: "linguistic_reference",
           },
-        },
-      ],
-      error: null,
-    });
-    fromMock.mockImplementation((table: string) =>
-      table === "sources" ? sourcesQuery : peoplesQuery
+        ],
+        [
+          "source-2",
+          {
+            id: "source-2",
+            title: "UN report",
+            url: "https://example.org/un",
+            year: 2021,
+            tier: "official",
+            sourceKind: "intergovernmental",
+          },
+        ],
+      ])
+    );
+    getQuizSubjectNamesMock.mockResolvedValue(
+      new Map([
+        [
+          "PPL_A",
+          { type: "people", id: "PPL_A", autonym: "Shona", exonym: "Mashona" },
+        ],
+      ])
     );
 
     const result = await composeQuizSessionHandler({
@@ -362,6 +362,7 @@ describe("composeQuizSessionHandler", () => {
       url: "https://example.org/un",
       year: 2021,
       tier: "official",
+      sourceKind: "intergovernmental",
     });
     expect(question.entity).toEqual({
       type: "people",
@@ -385,7 +386,8 @@ describe("composeQuizSessionHandler", () => {
     expect(result.ok).toBe(true);
     if (!result.ok) return;
     expect(result.envelope.data.questions).toEqual([]);
-    expect(fromMock).not.toHaveBeenCalled();
+    expect(getQuizRevealSourcesMock).not.toHaveBeenCalled();
+    expect(getQuizSubjectNamesMock).not.toHaveBeenCalled();
   });
 
   // @req REQ-103
@@ -410,8 +412,6 @@ describe("composeQuizSessionHandler", () => {
       ],
     });
 
-    fromMock.mockImplementation(() => buildInQuery({ data: [], error: null }));
-
     const result = await composeQuizSessionHandler({
       pays: "GHA",
       count: 8,
@@ -431,6 +431,22 @@ describe("composeQuizSessionHandler", () => {
       url: null,
       year: null,
       tier: null,
+      sourceKind: null,
     });
+  });
+
+  /**
+   * Services are the only layer that talks to the database (CLAUDE.md, API
+   * section). The reveal's source and subject reads used to sit here.
+   */
+  // @req REQ-194
+  it("reads the corpus through services and imports no Supabase client", () => {
+    const handlerSource = readFileSync(
+      path.resolve(__dirname, "../quiz.ts"),
+      "utf8"
+    );
+
+    expect(handlerSource).not.toMatch(/@\/lib\/supabase/);
+    expect(handlerSource).toMatch(/@\/api\/v2\/services\/quizReveal/);
   });
 });
