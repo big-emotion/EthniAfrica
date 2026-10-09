@@ -11,9 +11,11 @@
         "url": null
       },
       "candidates": [],
-      "status": "proposed",
+      "status": "oral_needed",
       "proposedAt": "2026-10-08",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-09"
     },
     {
       "id": "ASV-2026-10-08-0002",
@@ -35,9 +37,11 @@
           "supports": "Abaza is the name of a clan (Egyptian aristocratic family of Abazin/Circassian maternal origin). The article says the name came from a maternal ancestor (transmission not standard patrilineal). The quote is from a fetch-tool summary and should be checked against the live page. Encyclopedia source; it cites al-Sayyid-Marsot 1984 (CUP), which I did not open."
         }
       ],
-      "status": "proposed",
+      "status": "oral_needed",
       "proposedAt": "2026-10-08",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-09"
     }
   ]
 }
