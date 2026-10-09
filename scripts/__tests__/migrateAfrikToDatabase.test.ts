@@ -746,6 +746,11 @@ describe("migrateAfrikToDatabase", () => {
     vi.mocked(loadAllPeoples).mockResolvedValue([
       { ...peopleFixture, nameHistory },
     ]);
+    // The real Côte d'Ivoire fiche now carries a nameHistory; this case needs
+    // a country without one.
+    vi.mocked(loadAllCountries).mockResolvedValue([
+      { ...coteDIvoire, nameHistory: undefined } as Country,
+    ]);
     const database = useSupabaseDouble({
       rows: {
         afrik_language_families: [

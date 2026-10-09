@@ -47,7 +47,7 @@ familles birifor » (counted under Birifor).
 ## The list
 
 Status: `pilot` = written in full in the phase-1 pull request for the operator
-to judge the format; `todo` = not yet written; `partial` = carries a
+to judge the format; `done` = written in full in the priority-core pull request; `todo` = not yet written; `partial` = carries a
 `nameHistory` folded from an old name record, to complete.
 
 | #   | Subject (as searched) | Type        | Fiche                                        | Evidence                                                                                                               | Status  |
@@ -55,11 +55,11 @@ to judge the format; `todo` = not yet written; `partial` = carries a
 | 1   | Peul                  | people      | `PPL_FULA`                                   | O; Q « peul » 7 visitors, plus « puel », « fulbe », « fulbé », « gulbe »; P 11, the busiest fiche; S YouTube « Fulbe » | pilot   |
 | 2   | Lingala               | language    | `lin`                                        | O; Q 7 visitors; T « origine du lingala et son ascension »; S YouTube « Lingala : un nom, plusieurs lectures »         | pilot   |
 | 3   | Mali                  | country     | `MLI`                                        | O; P 5. No « mali » query recorded                                                                                     | pilot   |
-| 4   | Côte d'Ivoire         | country     | `CIV`                                        | O; Q 2; P 7, a dead end in the audit; S campaign `bouet-willaumez-a-t-il-invente-la-cote-divoire` (4 visits)           | todo    |
-| 5   | Traoré                | family name | `PAT_TRAORE`                                 | O; Q « traore » 2, « traoré » 1, « tarawele » 1; P 8; S campaign `traore-diop`                                         | todo    |
-| 6   | Coulibaly             | family name | `PAT_COULIBALY`                              | O; P 4; S Instagram « Keïta et Coulibaly » (16.9K views)                                                               | todo    |
-| 7   | Gagnoa                | place       | to create (`public/modele-lieu.json`)        | O only                                                                                                                 | todo    |
-| 8   | Daloa                 | place       | to create (`public/modele-lieu.json`)        | O; Q 1                                                                                                                 | todo    |
+| 4   | Côte d'Ivoire         | country     | `CIV`                                        | O; Q 2; P 7, a dead end in the audit; S campaign `bouet-willaumez-a-t-il-invente-la-cote-divoire` (4 visits)           | done    |
+| 5   | Traoré                | family name | `PAT_TRAORE`                                 | O; Q « traore » 2, « traoré » 1, « tarawele » 1; P 8; S campaign `traore-diop`                                         | done    |
+| 6   | Coulibaly             | family name | `PAT_COULIBALY`                              | O; P 4; S Instagram « Keïta et Coulibaly » (16.9K views)                                                               | done    |
+| 7   | Gagnoa                | place       | `LOC_GAGNOA`                                 | O only                                                                                                                 | done    |
+| 8   | Daloa                 | place       | `LOC_DALOA`                                  | O; Q 1                                                                                                                 | done    |
 | 9   | Mandé, Manden         | family      | `FLG_MANDE`                                  | P 10, a dead end in the audit; T « mandingue et diola »; S campaign `manden-mande-mandingue-trois-mots`                | todo    |
 | 10  | Bantou                | family      | `FLG_BANTU`                                  | Q 3; P 6                                                                                                               | todo    |
 | 11  | Guinée                | country     | `GIN`                                        | Q « guinée » 3, « guinee » 1; P 4; S Instagram « La Guinée, c'est vingt-neuf peuples » (25.2K), YouTube « première »   | todo    |

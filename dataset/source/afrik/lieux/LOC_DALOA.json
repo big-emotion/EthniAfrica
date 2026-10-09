@@ -1,0 +1,320 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "lieu",
+    "directives": "Fiche lieu de Daloa. Chaque récit sur l'origine du nom garde sa source ; aucun n'est retenu contre les autres. Les dates du poste colonial viennent du livre de Jean-Pierre Dozon, lu dans l'exemplaire numérisé."
+  },
+  "id": "LOC_DALOA",
+  "placeType": "ville",
+  "nameMain": "Daloa",
+  "countryId": "CIV",
+  "associatedPeoples": [
+    {
+      "peopleId": "PPL_BETE",
+      "relation": "Daloa est l'une des trois villes qui bornent le pays bété, et les Bété de la région de Daloa forment l'un de ses trois groupes, selon Jean-Pierre Dozon."
+    },
+    {
+      "peopleId": "PPL_GOURO",
+      "relation": "Un récit publié par Lebanco.net fait de Dalo, dont la ville porterait le nom, un chasseur gouro venu de Zuénoula."
+    }
+  ],
+  "summary": "Ville du Centre-Ouest de la Côte d'Ivoire, Daloa porterait le nom d'un chasseur appelé Dalo. Les récits ne s'accordent ni sur l'origine de ce chasseur, bété ou gouro, ni sur la façon dont son nom est devenu celui de la ville.",
+  "gaps": [
+    {
+      "field": "nameHistory.names[0].accounts",
+      "reason": "Nous ne connaissons pas de document de l'époque coloniale qui porte le nom Daloa. La plus ancienne date connue, 1905, est donnée par un historien."
+    },
+    {
+      "field": "nameHistory.names[0].accounts",
+      "reason": "Nous n'avons pas trouvé comment les Bété, ni les Gouro, prononcent ou écrivent ce nom dans leur langue."
+    },
+    {
+      "field": "nameHistory.names[0].selfGiven",
+      "reason": "Nous ne savons pas si les habitants ont eux-mêmes donné ce nom au lieu, ou si les Européens l'ont noté tel qu'ils l'ont entendu, comme le dit une légende."
+    },
+    {
+      "field": "nameHistory.names[0].namedBy",
+      "reason": "Aucune source que nous avons lue ne dit qui a donné ce nom au lieu, ni quand."
+    },
+    {
+      "field": "nameHistory.names[0].accounts",
+      "reason": "Nous ne connaissons pas d'explication du nom Daloa recueillie auprès des habitants eux-mêmes."
+    }
+  ],
+  "sources": [
+    {
+      "title": "La société bété : histoires d'une « ethnie » de Côte-d'Ivoire",
+      "author": "Jean-Pierre Dozon",
+      "year": 1985,
+      "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Livre publié par l'ORSTOM et Karthala, lu dans l'exemplaire numérisé par l'IRD."
+    },
+    {
+      "title": "Côte d'Ivoire - Daloa : Origine de la ville",
+      "author": "Lebanco.net",
+      "year": 2019,
+      "url": "https://lebanco.net/news/36863-c244te-d39ivoire-daloa-origine-de-la-ville.html",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Article de presse en ligne du 13 février 2019, signé « Emilia-Romagna », sans informateur ni source cités."
+    },
+    {
+      "title": "Historique de la ville de Daloa",
+      "author": "Rezo-Ivoire",
+      "year": null,
+      "url": "https://rezoivoire.net/ivoire/villes-villages/432/historique-de-la-ville-de-daloa.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Sans auteur ni date ; aucune source citée."
+    },
+    {
+      "title": "Daloa",
+      "author": "Wikipédia (français)",
+      "year": null,
+      "url": "https://fr.wikipedia.org/wiki/Daloa",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Consulté le 9 octobre 2026."
+    }
+  ],
+  "nameHistory": {
+    "summary": "Le nom Daloa est celui d'une ville du Centre-Ouest de la Côte d'Ivoire. Nous n'avons pas trouvé le nom que lui donnent les Bété ou les Gouro dans leur langue. Les sources ne s'accordent pas toujours sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Daloa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une ville de Côte d'Ivoire, qui viendrait d'un chasseur appelé Dalo, selon les récits.",
+        "periodLabel": "Connu depuis la création du poste colonial, en 1905",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "statement": "Le nom Daloa désigne la ville chef-lieu de la région du Haut-Sassandra. On parle aussi des Bété de Daloa pour l'un des trois groupes du pays bété, à côté de ceux de Gagnoa et de Soubré, selon Jean-Pierre Dozon.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Daloa",
+                "author": "Wikipédia (français)",
+                "year": null,
+                "url": "https://fr.wikipedia.org/wiki/Daloa",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Introduction de l'article, consultée le 9 octobre 2026."
+              },
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte-d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 25",
+                "notes": "Livre publié par l'ORSTOM et Karthala, lu dans l'exemplaire numérisé par l'IRD. « Il est admis de distinguer les Bété de Daloa, les Bété de Soubré et ceux de Gagnoa. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Daloa est relié à un homme appelé Dalo dans tous les récits que nous avons lus. Qui était Dalo, et comment son nom est devenu celui de la ville, reste discuté.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Daloa",
+                "author": "Wikipédia (français)",
+                "year": null,
+                "url": "https://fr.wikipedia.org/wiki/Daloa",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Section Histoire, consultée le 9 octobre 2026."
+              },
+              {
+                "title": "Côte d'Ivoire - Daloa : Origine de la ville",
+                "author": "Lebanco.net",
+                "year": 2019,
+                "url": "https://lebanco.net/news/36863-c244te-d39ivoire-daloa-origine-de-la-ville.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de presse en ligne du 13 février 2019, sans informateur ni source cités."
+              },
+              {
+                "title": "Historique de la ville de Daloa",
+                "author": "Rezo-Ivoire",
+                "year": null,
+                "url": "https://rezoivoire.net/ivoire/villes-villages/432/historique-de-la-ville-de-daloa.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Sans auteur ni date ; aucune source citée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1916,
+              "to": 1916,
+              "label": "1916"
+            },
+            "statement": "Le nom Daloa devient aussi celui d'un cercle colonial, qui réunit les secteurs d'Issia, de Daloa et de Vavoua, selon Jean-Pierre Dozon.",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte-d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 270",
+                "notes": "Livre publié par l'ORSTOM et Karthala, lu dans l'exemplaire numérisé par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "statement": "Le nom Daloa est celui d'un poste militaire français créé en 1905 par un officier que l'administrateur Georges Thomann envoie remonter le Sassandra, après le poste d'Issia, selon Jean-Pierre Dozon. C'est la plus ancienne date que nous connaissons pour ce nom ; le lieu était habité avant le poste.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Georges Thomann",
+                "role": "administrateur colonial, qui envoie l'officier fonder les postes"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte-d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 263",
+                "notes": "Livre publié par l'ORSTOM et Karthala, lu dans l'exemplaire numérisé par l'IRD. « En 1905, il confie à l'un de ses officiers la tâche de remonter à nouveau le Sassandra », et l'officier crée les postes d'Issia et de Daloa « la même année »."
+              },
+              {
+                "title": "Daloa",
+                "author": "Wikipédia (français)",
+                "year": null,
+                "url": "https://fr.wikipedia.org/wiki/Daloa",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Section Histoire, consultée le 9 octobre 2026 : « Le premier poste militaire français est installé à Daloa en 1905 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Daloa viendrait de Dalo, un célèbre chasseur de buffles de la région, qui serait bété, selon l'article de Wikipédia sur Daloa.",
+            "hypothesisGroup": "origine du nom Daloa",
+            "sources": [
+              {
+                "title": "Daloa",
+                "author": "Wikipédia (français)",
+                "year": null,
+                "url": "https://fr.wikipedia.org/wiki/Daloa",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Section Histoire, consultée le 9 octobre 2026. L'article cite pour ce point le Grand dictionnaire encyclopédique de la Côte d'Ivoire de Raymond Borremans, tome 2, page 171 ; nous n'avons pas lu ce dictionnaire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Daloa voudrait dire « ceux de Dalo », « les descendants de Dalo » ; Dalo serait un chasseur gouro venu de Zuénoula, installé sur le site de la ville, selon Lebanco.net.",
+            "hypothesisGroup": "origine du nom Daloa",
+            "sources": [
+              {
+                "title": "Côte d'Ivoire - Daloa : Origine de la ville",
+                "author": "Lebanco.net",
+                "year": 2019,
+                "url": "https://lebanco.net/news/36863-c244te-d39ivoire-daloa-origine-de-la-ville.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de presse en ligne du 13 février 2019, sans informateur ni source cités : « Daloa signifie « ceux de Dalo », « les descendants de Dalo ». Dalo est un chasseur Gouro, originaire de Zuénoula »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "À l'arrivée des Européens"
+            },
+            "statement": "Le nom Daloa viendrait d'un malentendu : des Européens auraient demandé à la femme de Dalo où était son mari, elle l'aurait appelé « Dalo ah ! », et ils auraient noté Daloa. C'est une légende, rapportée par Rezo-Ivoire et par Lebanco.net.",
+            "hypothesisGroup": "origine du nom Daloa",
+            "sources": [
+              {
+                "title": "Historique de la ville de Daloa",
+                "author": "Rezo-Ivoire",
+                "year": null,
+                "url": "https://rezoivoire.net/ivoire/villes-villages/432/historique-de-la-ville-de-daloa.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Sans auteur ni date ; aucune source citée. Le récit y est présenté « pour la petite histoire »."
+              },
+              {
+                "title": "Côte d'Ivoire - Daloa : Origine de la ville",
+                "author": "Lebanco.net",
+                "year": 2019,
+                "url": "https://lebanco.net/news/36863-c244te-d39ivoire-daloa-origine-de-la-ville.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de presse en ligne du 13 février 2019, qui reprend presque mot pour mot le même récit, présenté comme une légende."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "Vers 1873"
+            },
+            "statement": "Avant le nom Daloa, il n'y avait pas de vrai village à cet endroit, mais un petit hameau de chasseurs en pleine forêt, dont le plus célèbre s'appelait Dalo, selon Rezo-Ivoire et Lebanco.net.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Historique de la ville de Daloa",
+                "author": "Rezo-Ivoire",
+                "year": null,
+                "url": "https://rezoivoire.net/ivoire/villes-villages/432/historique-de-la-ville-de-daloa.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Sans auteur ni date ; aucune source citée."
+              },
+              {
+                "title": "Côte d'Ivoire - Daloa : Origine de la ville",
+                "author": "Lebanco.net",
+                "year": 2019,
+                "url": "https://lebanco.net/news/36863-c244te-d39ivoire-daloa-origine-de-la-ville.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de presse en ligne du 13 février 2019. Le même article écrit aussi que la ville « a été créée en 1873 par l'ancêtre Dalo »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
