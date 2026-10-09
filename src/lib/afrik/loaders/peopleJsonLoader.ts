@@ -6,6 +6,7 @@ import { readFileSync, readdirSync, statSync } from "fs";
 import { join } from "path";
 import type { People, ParsedFile } from "@/types/afrik";
 import { logger } from "@/lib/api/logger";
+import { ficheNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 
 const PEOPLES_PATH = join(process.cwd(), "dataset/source/afrik/peuples");
 const peopleCache = new Map<string, People>();
@@ -23,16 +24,20 @@ export async function loadPeople(
     );
     for (const dir of dirs) {
       const filePath = join(PEOPLES_PATH, dir, `${peopleId}.json`);
+      let data: People;
       try {
-        const raw = readFileSync(filePath, "utf-8");
-        const data: People = JSON.parse(raw);
+        data = JSON.parse(readFileSync(filePath, "utf-8"));
         if (!data.id)
           throw new Error(`Missing required field "id" in ${peopleId}.json`);
-        peopleCache.set(peopleId, data);
-        return { success: true, data };
       } catch {
         continue;
       }
+      // Outside the per-directory catch: a block that breaks the shared
+      // schema is a refusal to report, not a fiche to look for elsewhere.
+      const nameHistory = ficheNameHistory(data, peopleId);
+      if (nameHistory) data.nameHistory = nameHistory;
+      peopleCache.set(peopleId, data);
+      return { success: true, data };
     }
     return {
       success: false,
@@ -72,6 +77,10 @@ export async function loadAllPeoples(): Promise<People[]> {
         const peopleId = file.replace(".json", "");
         const result = await loadPeople(peopleId);
         if (result.success && result.data) peoples.push(result.data);
+        else
+          logger.error(`Failed to load ${peopleId}`, undefined, {
+            errors: result.errors,
+          });
       }
     }
     return peoples;

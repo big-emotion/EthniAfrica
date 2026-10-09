@@ -76,8 +76,23 @@ describe("parseNameRecordFile", () => {
     );
   });
 
-  // @req REQ-056
-  it("rejects an entityType other than 'people'", () => {
+  // REQ-196 widened the v1 scope: a record may describe a language, family,
+  // country or free word, each keyed by its own identifier.
+  // @req REQ-196
+  it("rejects an entityType outside the subject types", () => {
+    const result = parseNameRecordFile({
+      ...validNameDossier,
+      entityType: "region",
+    });
+
+    expect(result.success).toBe(false);
+    expect(result.errors).toContainEqual(
+      expect.objectContaining({ path: "entityType" })
+    );
+  });
+
+  // @req REQ-196
+  it("rejects an id that does not match its entityType", () => {
     const result = parseNameRecordFile({
       ...validNameDossier,
       entityType: "country",
@@ -86,8 +101,8 @@ describe("parseNameRecordFile", () => {
     expect(result.success).toBe(false);
     expect(result.errors).toContainEqual(
       expect.objectContaining({
-        path: "entityType",
-        message: "entityType must be 'people' (v1 scope, migration 029)",
+        path: "id",
+        message: "id must match ^[A-Z]{3}$ for entityType country",
       })
     );
   });

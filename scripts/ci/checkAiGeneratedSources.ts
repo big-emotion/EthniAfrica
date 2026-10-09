@@ -39,9 +39,10 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  *
  * 1343 measured 2026-10-08 with an empty ledger: 494 patronyme `sources[]`
  * entries, plus 849 `provenance` markers in the anthroponym candidate queue
- * (patronymes/_candidates-by-country.json).
+ * (patronymes/_candidates-by-country.json). 1343 -> 1341 on 2026-10-09: PAT_ABABDA
+ * and PAT_ABAZA decided oral_needed.
  */
-export const UNREVIEWED_AI_GENERATED_RATCHET = 1343;
+export const UNREVIEWED_AI_GENERATED_RATCHET = 1341;
 
 export interface AiGeneratedSourcesResult {
   ok: boolean;

@@ -1,65 +1,17 @@
 {
   "_meta": {
     "format": "AFRIK JSON v2",
-    "entity": "nom",
-    "directives": "Voir DIRECTIVES-AFRIK.md pour les règles de rédaction complètes."
+    "entity": "mot",
+    "directives": "Un mot dont l'histoire explique l'Afrique par ses noms sans entrer dans les six types (doctrine §2) — ex: racisme, nation, État, esclavage. La fiche n'existe que pour raconter l'histoire du mot : son bloc nameHistory est obligatoire. Chaque origine est une hypothèse, et chaque phrase commence par le mot (doctrine §1.1)."
   },
-  "id": "PPL_XXXXX",
-  "entityType": "people | language | languageFamily | country | word",
-  "names": [
+  "id": "WRD_XXXXX",
+  "nameMain": "<Le mot, tel qu'un lecteur le cherche>",
+  "wordLanguage": "<Code ISO 639-3 de la langue du mot cherché — ex: fra>",
+  "definition": "<Une phrase : ce que le mot désigne aujourd'hui>",
+  "relatedSubjects": [
     {
-      "nameText": "<Nom, tel qu'attesté par la source>",
-      "nameType": "endonym",
-      "languageOfOrigin": "xxx",
-      "meaning": "<Signification/étymologie du nom, si connue>",
-      "periodLabel": "<Période d'usage — ex: contemporain, XIXe siècle>",
-      "imposedBy": null,
-      "impositionPeriod": null,
-      "whyProblematic": null,
-      "contemporaryUsage": "<Usage contemporain du nom, si pertinent>",
-      "sortRank": 0,
-      "sources": [
-        {
-          "title": "<Titre de la source>",
-          "author": "<Auteur>",
-          "year": 0,
-          "url": "<URL résolvable>",
-          "tier": "official | referenced | unverified",
-          "notes": "<Faits de provenance publiés tels quels au lecteur : éditeur, édition, institution, ce qui a été lu ou recoupé — jamais la raison pour laquelle le tier a été attribué. Si la source a été atteinte via Wikipédia : les versions linguistiques croisées, pour que la chaîne reste auditable.>"
-        }
-      ],
-      "shortLine": "<Une phrase qu'un lecteur comprend sans contexte, 120 caractères au plus — ex: Donné par les Haoussa, repris en anglais.>",
-      "namedBy": "<Qui a donné ce nom : un peuple ou une autorité, jamais un auteur ; null pour le nom que le peuple se donne>",
-      "originDebated": false,
-      "usedIn": ["xxx"],
-      "pronunciation": {
-        "respelling": "<Transcription à la française, pour le nom que le peuple se donne — ex: foul-bé>",
-        "audio": null,
-        "source": {
-          "title": "<Dictionnaire ou enregistrement>",
-          "author": "<Auteur>",
-          "year": 0,
-          "url": "<URL résolvable>",
-          "tier": "official | referenced | unverified",
-          "page": "<Page, si la source est imprimée>"
-        }
-      },
-      "attestations": [
-        {
-          "formAsWritten": "<La forme telle qu'écrite dans le document cité>",
-          "year": 0,
-          "periodLabel": "<Date ou période telle que la source la donne — ex: XIVe siècle>",
-          "attestedBy": "<Qui a écrit cette forme : auteur, chroniqueur, administration>",
-          "source": {
-            "title": "<Titre de la source>",
-            "author": "<Auteur>",
-            "year": 0,
-            "url": "<URL résolvable>",
-            "tier": "official | referenced | unverified",
-            "page": "<Page imprimée — ex: p. 192. Obligatoire : c'est ce qui permet de relire la preuve.>"
-          }
-        }
-      ]
+      "id": "<Identifiant d'une fiche existante : PPL_*, ISO 3166-1 alpha-3, FLG_*, LOC_*, PAT_*, WRD_*…>",
+      "relation": "<Ce qui relie ce sujet au mot, en une phrase>"
     }
   ],
   "nameHistory": {
@@ -140,5 +92,7 @@
         "accounts": []
       }
     ]
-  }
+  },
+  "gaps": ["<Ce que le projet ne sait pas encore sur l'histoire de ce mot>"],
+  "sources": []
 }

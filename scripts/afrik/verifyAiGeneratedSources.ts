@@ -164,8 +164,14 @@ const CandidateReport = z.strictObject({
   candidates: z.array(CandidateFields),
 });
 
-/** Passed to `--json-schema`, so the CLI itself holds the model to the shape. */
-const REPORT_SCHEMA = JSON.stringify(z.toJSONSchema(CandidateReport));
+/**
+ * Passed to `--json-schema`, so the CLI itself holds the model to the shape.
+ * Without zod's `$schema` line: the CLI's validator does not know the
+ * draft-2020-12 meta-schema and refuses the whole run.
+ */
+const reportShape: Record<string, unknown> = z.toJSONSchema(CandidateReport);
+delete reportShape.$schema;
+const REPORT_SCHEMA = JSON.stringify(reportShape);
 
 const SYSTEM = `You verify citations for an open, sourced atlas of African peoples, languages and names. A corpus statement is currently backed only by machine-written text. Search the web for published sources that actually state it.
 

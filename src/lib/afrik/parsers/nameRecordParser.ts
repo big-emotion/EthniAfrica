@@ -4,8 +4,13 @@
  */
 
 import { z } from "zod";
-import type { NameRecordDossier } from "@/types/names";
+import {
+  NAME_RECORD_FILE_ENTITY_TYPES,
+  type NameRecordDossier,
+  type NameRecordFileEntityType,
+} from "@/types/names";
 import { ficheSourceTierSchema } from "./ficheSourceTier";
+import { nameHistorySchema } from "./nameHistoryParser";
 
 const nameRecordMetaSchema = z
   .object({
@@ -136,19 +141,39 @@ const nameRecordEntrySchema = z
     }
   });
 
+// The identifier each subject type is keyed by; a `word` is the free type
+// (racisme, nation, État) and has no other fiche to point to (REQ-196).
+const ENTITY_ID_PATTERNS: Record<NameRecordFileEntityType, RegExp> = {
+  people: /^PPL_[A-Z0-9_]+$/,
+  language: /^[a-z]{3}$/,
+  languageFamily: /^FLG_[A-Z0-9_]+$/,
+  country: /^[A-Z]{3}$/,
+  word: /^WRD_[A-Z0-9_]+$/,
+};
+
 // @req REQ-056
+// @req REQ-196
 export const nameRecordDossierSchema = z
   .object({
     _meta: nameRecordMetaSchema,
-    id: z.string().regex(/^PPL_[A-Z0-9_]+$/, {
-      message: "id must match ^PPL_[A-Z0-9_]+$",
-    }),
-    entityType: z.literal("people", {
-      error: "entityType must be 'people' (v1 scope, migration 029)",
+    id: z.string().min(1),
+    entityType: z.enum(NAME_RECORD_FILE_ENTITY_TYPES, {
+      error: `entityType must be one of ${NAME_RECORD_FILE_ENTITY_TYPES.join(", ")}`,
     }),
     names: z.array(nameRecordEntrySchema).min(1),
+    nameHistory: nameHistorySchema.optional(),
   })
-  .strict();
+  .strict()
+  .superRefine((dossier, ctx) => {
+    const pattern = ENTITY_ID_PATTERNS[dossier.entityType];
+    if (!pattern.test(dossier.id)) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["id"],
+        message: `id must match ${pattern.source} for entityType ${dossier.entityType}`,
+      });
+    }
+  });
 
 export interface NameRecordParseFieldError {
   path: string;

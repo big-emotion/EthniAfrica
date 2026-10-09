@@ -14,6 +14,7 @@ import { parse } from "csv-parse/sync";
 import { readFileSync } from "fs";
 import { join } from "path";
 import { loadLanguageFiches } from "@/lib/afrik/loaders/languageFicheLoader";
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import type { People } from "@/types/afrik";
 import type { SourceTier } from "@/types/sources";
 
@@ -73,6 +74,8 @@ export interface LanguageRecord {
     scale: string;
     asOf: number;
   } | null;
+  /** The fiche's shared name-history block (REQ-196); only fiches carry one. */
+  nameHistory?: NameHistory;
 }
 
 /** The CSV's `source_tier=1` is the only value the corpus declares today; anything else is not the official tier the corpus asserts. */

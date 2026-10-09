@@ -12,6 +12,7 @@ import type { PersonId, PersonPeopleLink } from "@/types/persons";
 import type { TranslationLocale } from "@/lib/i18n/translationLocale";
 import type { SearchAnswer } from "@/lib/search/answer";
 import type { NamingProjection } from "@/lib/search/naming";
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 
 // ==========================================
 // STABLE IDENTIFIERS (IMMUTABLE)
@@ -87,6 +88,9 @@ export interface Country {
   etymology?: string;
   nameOriginActor?: string; // Person/people/administration who named it
 
+  /** The fiche's shared name-history block (REQ-196), when it declares one. */
+  nameHistory?: NameHistory;
+
   // Variable content stored in JSONB (evolutionary)
   content: CountryContent;
 
@@ -124,6 +128,9 @@ export interface LanguageFamily {
    * derived, never the fiche's own declared `content.distribution` (REQ-119).
    */
   footprintByCountry?: Record<CountryId, number>;
+
+  /** The fiche's shared name-history block (REQ-196), when it declares one. */
+  nameHistory?: NameHistory;
 
   // Variable content stored in JSONB (evolutionary)
   content: LanguageFamilyContent;
@@ -166,6 +173,9 @@ export interface People {
 
   // Editorial classification status (migration 009)
   classificationStatus?: ClassificationStatus | null;
+
+  /** The fiche's shared name-history block (REQ-196), when it declares one. */
+  nameHistory?: NameHistory;
 
   // Variable content stored in JSONB (evolutionary)
   content: PeopleContent;

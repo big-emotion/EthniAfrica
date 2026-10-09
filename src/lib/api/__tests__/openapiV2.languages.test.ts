@@ -165,6 +165,7 @@ describe("OpenAPI v2 language detail contract", () => {
         type: "array",
         items: { $ref: "#/components/schemas/LanguageSourceV2" },
       },
+      nameHistory: { $ref: "#/components/schemas/NameHistoryV2" },
     });
   });
 

@@ -1,4 +1,5 @@
 import type { SourceKind, SourceTier } from "@/types/sources";
+import type { NameHistory } from "./nameHistoryParser";
 
 /** @req REQ-133 */
 export const PATRONYME_NAME_SYSTEMS = [
@@ -149,6 +150,7 @@ interface PatronymeDossierCommon {
   homonyms: PatronymeHomonym[];
   sources: PatronymeSource[];
   gaps: PatronymeGap[];
+  nameHistory?: NameHistory;
 }
 
 export interface PatronymeClanNameDossier extends PatronymeDossierCommon {

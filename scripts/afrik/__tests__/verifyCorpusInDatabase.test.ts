@@ -131,6 +131,7 @@ describe("buildCorpusExpectations", () => {
         name_fr: "Bantu",
         name_en: null,
         content: { summary: "x" },
+        name_history: null,
       },
     ]);
     expect(expectationFor("afrik_countries").rows[1]).toEqual({
@@ -142,6 +143,7 @@ describe("buildCorpusExpectations", () => {
       etymology: null,
       name_origin_actor: null,
       content: {},
+      name_history: null,
     });
     expect(expectationFor("afrik_patronymes").rows[0]).toMatchObject({
       id: "PAT_ADE",

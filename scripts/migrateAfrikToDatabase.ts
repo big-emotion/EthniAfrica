@@ -459,6 +459,7 @@ export async function upsertLanguageFamilies(
             ? { classification_status: classificationStatus }
             : {}),
           content: family.content,
+          name_history: family.nameHistory ?? null,
           updated_at: new Date().toISOString(),
         },
         { onConflict: "id" }
@@ -533,6 +534,7 @@ export async function upsertPeoples(
             : {}),
           content: people.content,
           spelling_aliases: people.content.appellations?.spellingAliases ?? [],
+          name_history: people.nameHistory ?? null,
           updated_at: new Date().toISOString(),
         },
         { onConflict: "id" }
@@ -578,6 +580,7 @@ export async function upsertCountries(
           etymology: country.etymology ?? null,
           name_origin_actor: country.nameOriginActor ?? null,
           content: country.content,
+          name_history: country.nameHistory ?? null,
           updated_at: new Date().toISOString(),
         },
         { onConflict: "id" }
