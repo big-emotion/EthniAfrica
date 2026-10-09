@@ -144,6 +144,14 @@ describe("the noms/ records folded into their people fiches", () => {
 });
 
 describe("Yamoussoukro's names folded into its own nameHistory", () => {
+  // The legacy names[] as they stood before DEC-071 retired them from the
+  // fiche; kept only as the evidence the fold is checked against.
+  const LEGACY_NAMES = JSON.parse(
+    readFileSync(
+      join(__dirname, "fixtures", "foldedPlaceNames.LOC_YAMOUSSOUKRO.json"),
+      "utf-8"
+    )
+  ).names;
   const PLACE = JSON.parse(
     readFileSync(
       join(
@@ -159,8 +167,9 @@ describe("Yamoussoukro's names folded into its own nameHistory", () => {
   );
 
   // @req REQ-196
-  it("keeps every statement and source of every name the place model still lists", () => {
-    PLACE.names.forEach((name, index) => {
+  it("keeps every statement and source of every name the legacy block listed", () => {
+    expect(LEGACY_NAMES.length).toBeGreaterThan(0);
+    LEGACY_NAMES.forEach((name, index) => {
       const folded = PLACE.nameHistory.names[index];
       expect(folded).toMatchObject({
         nameText: name.nameText,
@@ -190,6 +199,13 @@ describe("Yamoussoukro's names folded into its own nameHistory", () => {
         expect(titles).toContain(source.title);
       }
     });
+  });
+
+  // @req REQ-196
+  it("keeps nameHistory as the place's only list of names", () => {
+    expect(PLACE).not.toHaveProperty("names");
+    expect(PLACE).not.toHaveProperty("accounts");
+    expect(PLACE).not.toHaveProperty("attestations");
   });
 
   // @req REQ-196

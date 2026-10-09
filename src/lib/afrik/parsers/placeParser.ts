@@ -4,6 +4,11 @@
  *
  * The shape only: whether `countryId` and `peopleId` resolve to fiches is a
  * corpus question, answered by checkPlaceFicheModel in validateAfrikData.
+ *
+ * A place's names live in `nameHistory` alone (REQ-196, DEC-071). The schema
+ * is strict so a retired `names` / `accounts` / `attestations` key is refused
+ * rather than silently dropped: kept beside the block, it would be a second
+ * source of truth for the same names, free to drift from the first.
  */
 
 import { z } from "zod";
@@ -20,65 +25,31 @@ const sourceSchema = z.object({
   notes: z.string().optional(),
 });
 
-const citedSourcesSchema = z
-  .array(sourceSchema)
-  .min(1, { message: "at least one tiered source is required" });
-
-const accountSchema = z.object({
-  statement: z.string().min(1),
-  periodLabel: z.string().nullable(),
-  sources: citedSourcesSchema,
-});
-
-const attestationSchema = z.object({
-  formAsWritten: z.string().min(1),
-  year: z.number().int().nullable(),
-  periodLabel: z.string().nullable(),
-  attestedBy: z.string().min(1),
-  source: sourceSchema.extend({ page: z.string().nullable() }),
-});
-
-const nameSchema = z.object({
-  nameText: z.string().min(1),
-  nameStatus: z.enum(["current", "former", "concurrent"]),
-  languageOfOrigin: z.string().nullable(),
-  meaning: z.string().nullable(),
-  shortLine: z.string().min(1).max(120),
-  namedBy: z.string().nullable(),
-  originDebated: z.boolean(),
-  periodLabel: z.string().nullable(),
-  contemporaryUsage: z.string().nullable(),
-  accounts: z.array(accountSchema),
-  attestations: z.array(attestationSchema),
-  sources: citedSourcesSchema,
-});
-
 // @req REQ-193
-const placeSchema = z.object({
-  _meta: z
-    .object({ format: z.string(), entity: z.literal("lieu") })
-    .passthrough(),
-  id: z.string().regex(/^LOC_[A-Z0-9_]+$/, {
-    message: "id must match ^LOC_[A-Z0-9_]+$",
-  }),
-  placeType: z.enum(["ville", "region", "site-historique", "autre"]),
-  nameMain: z.string().min(1),
-  countryId: z.string().regex(/^[A-Z]{3}$/, {
-    message: "countryId must be an ISO 3166-1 alpha-3 code",
-  }),
-  associatedPeoples: z.array(
-    z.object({ peopleId: z.string().min(1), relation: z.string().optional() })
-  ),
-  summary: z.string().min(1),
-  names: z
-    .array(nameSchema)
-    .min(1, { message: "a place declares at least its current name" }),
-  gaps: z.array(
-    z.object({ field: z.string().min(1), reason: z.string().min(1) })
-  ),
-  sources: z.array(sourceSchema),
-  nameHistory: nameHistorySchema.optional(),
-});
+const placeSchema = z
+  .object({
+    _meta: z
+      .object({ format: z.string(), entity: z.literal("lieu") })
+      .passthrough(),
+    id: z.string().regex(/^LOC_[A-Z0-9_]+$/, {
+      message: "id must match ^LOC_[A-Z0-9_]+$",
+    }),
+    placeType: z.enum(["ville", "region", "site-historique", "autre"]),
+    nameMain: z.string().min(1),
+    countryId: z.string().regex(/^[A-Z]{3}$/, {
+      message: "countryId must be an ISO 3166-1 alpha-3 code",
+    }),
+    associatedPeoples: z.array(
+      z.object({ peopleId: z.string().min(1), relation: z.string().optional() })
+    ),
+    summary: z.string().min(1),
+    gaps: z.array(
+      z.object({ field: z.string().min(1), reason: z.string().min(1) })
+    ),
+    sources: z.array(sourceSchema),
+    nameHistory: nameHistorySchema,
+  })
+  .strict();
 
 type PlaceRecord = z.infer<typeof placeSchema>;
 
