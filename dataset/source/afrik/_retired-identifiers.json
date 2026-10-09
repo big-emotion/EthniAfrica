@@ -1,6 +1,13 @@
 [
   {
     "decision": "merged",
+    "retiredId": "PPL_JOLA",
+    "successorId": "PPL_DIOLA",
+    "reason": "Same people (Joola, who call themselves Ajamat; SEN, GMB, GNB): same autonym, same exonyms Diola and Jola, same sub-groups, rites and Casamance homeland, filed twice under two families. The keeper is the fiche under FLG_ATLANTIQUE that carries the written name history and that GMB and SEN already point at. The retiree's Ethnologue subgroup, Glottolog, Sage, Academia, Public Intelligence, Baum (1999) and Mark (1985) sources, its Kuwaataay, Felupe, Brin and community sub-groups, its Mlomp and Kuwaataay dialects and the Jola-Kasa code csk are folded in; its dyi code (Djimini Senoufo, not a Joola language) is not. The two population estimates (700,000 vs 900,000) could not be reconciled from the sources read and are both recorded in the keeper's demography.source. PAT_JAMMEH, PAT_SONKO and the candidate queue now point at the keeper. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
     "retiredId": "PPL_FULANI",
     "successorId": "PPL_FULA",
     "reason": "Same people (Fulbe, Pullo in the singular, French Peul): same autonym, same exonyms, same origin narrative, and its seven countries all sit inside the keeper's twelve. Only the country list and the population figure (35,000,000 against 40,000,000) differed, both estimates of the same whole. The keeper is the fiche that GIN, SEN, MLI, BFA, BEN, GMB, GNB and CMR already point at. The retiree's Joshua Project and ScienceDirect sources and its Jelgooji sub-group are folded in. Its prose was a parallel rendering of the keeper's fields and is not carried over; it stays readable in the git history.",

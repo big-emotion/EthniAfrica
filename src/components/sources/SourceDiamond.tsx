@@ -1,3 +1,5 @@
+import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
+import { cn } from "@/lib/utils";
 import { sourceKindLabel } from "@/lib/glossaire/vocabularies";
 import { sourceDiamondCopy } from "@/lib/i18n/copy/sourceDiamond";
 import {
@@ -47,7 +49,7 @@ export function SourceDiamond({
       data-family={sourceKindFamily(lead)}
       aria-label={copy.open(sourceKindLabel(lead, language), kinds.length - 1)}
       onClick={onOpen}
-      className="afh-source-diamond"
+      className={cn("afh-source-diamond", CHARTER_FOCUS_RING)}
     >
       <span className="afh-source-diamond-mark" aria-hidden="true" />
     </button>

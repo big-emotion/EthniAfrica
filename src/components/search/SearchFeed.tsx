@@ -902,7 +902,7 @@ export function SearchFeed({
             <button
               type="button"
               onClick={() => setActiveLens("all")}
-              className="inline-flex min-h-11 items-center font-bold text-[color:var(--accent-ink)] underline underline-offset-4 focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
+              className="inline-flex min-h-11 items-center font-bold text-[color:var(--accent-ink)] underline underline-offset-4 focus-visible:outline-none focus-visible:shadow-afh-focus"
             >
               {copy.lens.back}
             </button>

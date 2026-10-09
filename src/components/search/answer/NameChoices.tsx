@@ -45,7 +45,7 @@ export function NameChoices({ title, choices }: NameChoicesProps) {
               href={choice.href}
               className={cn(
                 ANSWER_ACCENT_CLASS[choice.kind],
-                "flex min-h-11 w-full flex-col gap-afh-sm rounded-afh-xl border border-afh-border bg-afh-surface p-afh-xl text-afh-text no-underline focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
+                "flex min-h-11 w-full flex-col gap-afh-sm rounded-afh-xl border border-afh-border bg-afh-surface p-afh-xl text-afh-text no-underline focus-visible:outline-none focus-visible:shadow-afh-focus"
               )}
             >
               <span className="text-afh-eyebrow font-bold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[0.1em] text-[color:var(--accent-ink)]">

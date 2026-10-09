@@ -261,7 +261,7 @@
           "name": "Jammeh",
           "nameSystem": "clan_name",
           "variants": ["Jammé"],
-          "peopleIds": ["PPL_JOLA"],
+          "peopleIds": ["PPL_DIOLA"],
           "countryId": "GMB",
           "provenance": {
             "tier": "unverified",
@@ -303,7 +303,7 @@
           "name": "Sonko",
           "nameSystem": "clan_name",
           "variants": [],
-          "peopleIds": ["PPL_JOLA"],
+          "peopleIds": ["PPL_DIOLA"],
           "countryId": "GMB",
           "provenance": {
             "tier": "unverified",

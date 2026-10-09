@@ -67,3 +67,34 @@ describe("the folded PAT_KAMARA address", () => {
     expect(entry?.permanent).toBe(true);
   });
 });
+
+describe("a retired people id in the API", () => {
+  // The fiche pages redirect a retired id through the ledger, but the API kept
+  // serving the stale row until a prune, then answered 404. An API client
+  // holds the old id the same way a bookmark holds the old page. `:rest*`
+  // also matches the bare id, so one entry covers the detail and its sub-routes.
+  // @req REQ-084
+  it.each([
+    ["PPL_JOLA", "PPL_DIOLA"],
+    ["PPL_FULANI", "PPL_FULA"],
+  ])("sends %s and its sub-routes to %s", async (retiredId, successorId) => {
+    const entry = destinationOf(
+      await loadRedirects(),
+      `/api/v2/peoples/${retiredId}/:rest*`
+    );
+
+    expect(entry?.destination).toBe(`/api/v2/peoples/${successorId}/:rest*`);
+    expect(entry?.permanent).toBe(true);
+  });
+
+  // A kept-distinct decision records why two ids stay apart; its id is live.
+  // @req REQ-084
+  it("leaves an id the ledger kept distinct alone", async () => {
+    const entry = destinationOf(
+      await loadRedirects(),
+      "/api/v2/peoples/PPL_KISI/:rest*"
+    );
+
+    expect(entry).toBeUndefined();
+  });
+});

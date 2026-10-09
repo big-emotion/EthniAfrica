@@ -30,8 +30,13 @@
 
   /* Warm elevation — for hero / featured cards */
   --afh-elev-warm: 0 10px 40px -10px hsl(18 70% 52% / 0.2);
+}
 
-  /* Focus ring — accessibility */
-  --afh-ring-focus:
-    0 0 0 2px var(--afh-bg), 0 0 0 4px var(--afh-color-terracotta);
+/* Focus ring — accessibility. Declared on the night scopes as well as :root:
+   a custom property holding var(--afh-bg) is resolved where it is declared,
+   so a :root-only ring would carry the day ground into a night subtree. */
+:root,
+.dark,
+.afh-on-night {
+  --afh-ring-focus: 0 0 0 2px var(--afh-bg), 0 0 0 4px var(--afh-focus-ring);
 }

@@ -111,7 +111,7 @@ export function SearchResultCard({
         "relative p-4 md:p-5",
         SEARCH_ENTITY_ACCENT[type]?.accentScopeClassName,
         CHARTER_HOVER_LIFT,
-        "focus-within:shadow-[var(--afh-ring-focus)]",
+        "focus-within:shadow-afh-focus",
         className
       )}
     >
