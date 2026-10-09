@@ -290,4 +290,21 @@ describe("the proverb bank — what each source is", () => {
 
     expect(untyped).toEqual([]);
   });
+
+  // Before `press` existed these outlets read « Type non précisé ». A press
+  // article is typed as one, so the reader sees what kind of text it is.
+  // @req REQ-194
+  it("types every press outlet's article as press", () => {
+    const pressHosts = ["npr.org", "opinionnigeria.com", "theparisreview.org"];
+    const mistyped = PROVERBS.flatMap((entry) =>
+      (entry.sources ?? [])
+        .filter((source) =>
+          pressHosts.some((host) => source.url?.includes(`${host}/`))
+        )
+        .filter((source) => source.source_kind !== "press")
+        .map((source) => `${entry.id} → ${source.title}`)
+    );
+
+    expect(mistyped).toEqual([]);
+  });
 });

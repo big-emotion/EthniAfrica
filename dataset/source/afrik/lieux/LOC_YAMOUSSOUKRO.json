@@ -67,7 +67,7 @@
       "year": 2011,
       "url": "https://news.abidjan.net/articles/399144/chefferie-traditionnelle-le-trone-de-ngokro-remis-a-nanan-boigny-ndri-iii",
       "tier": "referenced",
-      "source_kind": "community",
+      "source_kind": "press",
       "notes": "Abidjan.net, 16 mai 2011."
     },
     {
@@ -76,7 +76,7 @@
       "year": 2011,
       "url": "https://news.abidjan.net/articles/409353/yamoussoukro-augustin-thiam-est-il-le-vrai-heritier-dhouphouet-les-revelations-dun-chef-akoue-membre-de-la-famille",
       "tier": "referenced",
-      "source_kind": "community",
+      "source_kind": "press",
       "notes": "Abidjan.net, 3 septembre 2011. Entretien avec N'Guessan Amani Sylvain."
     },
     {
@@ -307,7 +307,7 @@
                 "year": 2011,
                 "url": "https://news.abidjan.net/articles/399144/chefferie-traditionnelle-le-trone-de-ngokro-remis-a-nanan-boigny-ndri-iii",
                 "tier": "referenced",
-                "source_kind": "community",
+                "source_kind": "press",
                 "notes": "Abidjan.net, 16 mai 2011."
               }
             ]
@@ -345,7 +345,7 @@
                 "year": 2011,
                 "url": "https://news.abidjan.net/articles/399144/chefferie-traditionnelle-le-trone-de-ngokro-remis-a-nanan-boigny-ndri-iii",
                 "tier": "referenced",
-                "source_kind": "community",
+                "source_kind": "press",
                 "notes": "Abidjan.net, 16 mai 2011."
               }
             ]
@@ -364,7 +364,7 @@
                 "year": 2011,
                 "url": "https://news.abidjan.net/articles/399144/chefferie-traditionnelle-le-trone-de-ngokro-remis-a-nanan-boigny-ndri-iii",
                 "tier": "referenced",
-                "source_kind": "community",
+                "source_kind": "press",
                 "notes": "Abidjan.net, 16 mai 2011. Propos du porte-parole du chef de Kami, lors de l'intronisation."
               }
             ]
@@ -392,7 +392,7 @@
                 "year": 2011,
                 "url": "https://news.abidjan.net/articles/409353/yamoussoukro-augustin-thiam-est-il-le-vrai-heritier-dhouphouet-les-revelations-dun-chef-akoue-membre-de-la-famille",
                 "tier": "referenced",
-                "source_kind": "community",
+                "source_kind": "press",
                 "notes": "Abidjan.net, 3 septembre 2011. Entretien avec N'Guessan Amani Sylvain, qui parle de l'origine des terres de N'Gokro, pas du changement de nom."
               }
             ]

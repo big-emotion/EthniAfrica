@@ -760,7 +760,7 @@ export const PROVERBS: Proverb[] = [
           'A Dissection of the Proverb "Let the kite perch and let the eagle perch"',
         url: "https://www.opinionnigeria.com/a-dissection-of-the-proverb-let-the-kite-perch-and-let-the-eagle-perch-by-azuka-onwuka/",
         tier: "referenced",
-        source_kind: "unknown",
+        source_kind: "press",
         notes:
           "Chronique signée dans la presse nigériane. Elle commente le proverbe comme proverbe igbo.",
       },
@@ -1050,7 +1050,7 @@ export const PROVERBS: Proverb[] = [
           "It Takes A Village To Determine The Origins Of An African Proverb",
         url: "https://www.npr.org/sections/goatsandsoda/2016/07/30/487925796/it-takes-a-village-to-determine-the-origins-of-an-african-proverb",
         tier: "referenced",
-        source_kind: "unknown",
+        source_kind: "press",
         notes:
           "Article de presse. Il cite ce proverbe en swahili, recueilli lors d'une discussion entre universitaires africanistes, comme proche du sens de « It takes a village ».",
       },
@@ -1093,7 +1093,7 @@ export const PROVERBS: Proverb[] = [
           "It Takes A Village To Determine The Origins Of An African Proverb",
         url: "https://www.npr.org/sections/goatsandsoda/2016/07/30/487925796/it-takes-a-village-to-determine-the-origins-of-an-african-proverb",
         tier: "referenced",
-        source_kind: "unknown",
+        source_kind: "press",
         notes:
           "Article de presse. Il donne le proverbe en jita et explique que l'éducation de l'enfant appartient à la communauté.",
       },
@@ -2603,7 +2603,7 @@ export const PROVERBS: Proverb[] = [
         title: "Chinua Achebe, The Art of Fiction No. 139",
         url: "https://www.theparisreview.org/interviews/1720/the-art-of-fiction-no-139-chinua-achebe",
         tier: "referenced",
-        source_kind: "unknown",
+        source_kind: "press",
         notes:
           "Entretien publié dans The Paris Review. Achebe y cite « ce grand proverbe » : tant que les lions n'auront pas leurs propres historiens, l'histoire de la chasse glorifiera toujours le chasseur. Il ne l'attribue à aucun peuple précis.",
       },
@@ -2839,7 +2839,7 @@ export const PROVERBS: Proverb[] = [
           "It Takes A Village To Determine The Origins Of An African Proverb",
         url: "https://www.npr.org/sections/goatsandsoda/2016/07/30/487925796/it-takes-a-village-to-determine-the-origins-of-an-african-proverb",
         tier: "referenced",
-        source_kind: "unknown",
+        source_kind: "press",
         notes:
           "Article de presse (NPR). Il conclut qu'on ne peut pas remonter à une origine précise. Il cite des universitaires et deux proverbes voisins, l'un en jita et l'autre en swahili, qui ne sont pas cette phrase.",
       },
