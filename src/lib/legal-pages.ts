@@ -47,9 +47,9 @@ export const legalPages = {
         ],
       },
       {
-        title: "Licence du corpus",
+        title: "Licence des contenus",
         paragraphs: [
-          "Le corpus d’EthniAfrica — les fiches de peuples, de pays et de familles linguistiques, ainsi que les textes éditoriaux du site et les données qui en sont dérivées — est mis à disposition sous licence Creative Commons Attribution – Partage dans les mêmes conditions 4.0 International (CC BY-SA 4.0).",
+          "Les contenus d’EthniAfrica — les fiches de peuples, de pays et de familles linguistiques, ainsi que les textes éditoriaux du site et les données qui en sont dérivées — sont mis à disposition sous licence Creative Commons Attribution – Partage dans les mêmes conditions 4.0 International (CC BY-SA 4.0).",
           "Cette licence autorise la reproduction, la modification et la réutilisation, y compris commerciale, à deux conditions : citer EthniAfrica et l’adresse de la fiche réutilisée, et placer toute œuvre dérivée sous la même licence. Le bloc de citation présent sur chaque fiche fournit la formule d’attribution à recopier.",
           "Le texte complet de la licence est disponible sur creativecommons.org/licenses/by-sa/4.0/deed.fr.",
         ],

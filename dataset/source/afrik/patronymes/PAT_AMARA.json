@@ -25,7 +25,7 @@
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "Dans un corpus de noms de famille de Yakouren, l'étude consultée analyse Amara sur la racine arabe /ʕmr/, « remplir », et propose l'interprétation « ceux qui peuplent une maison ou un endroit ». Cette proposition locale est conservée comme hypothèse et non comme étymologie universelle de tous les Amara.",
+        "claim": "Une étude sur les noms de famille de Yakouren propose de relier Amara à la racine arabe /ʕmr/, « remplir », avec le sens de « ceux qui peuplent une maison ou un endroit ». Cette explication concerne les noms étudiés dans cette région. Elle ne permet pas de donner la même origine à tous les Amara.",
         "claimStatus": "claimed",
         "sourceRefs": ["ummto-amara-yakouren"]
       }
@@ -72,7 +72,7 @@
       "url": "https://dspace.ummto.dz/server/api/core/bitstreams/28e613b9-203f-44ed-bcd8-210ba34f636f/content",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Mémoire de master d'Ikhlef Lamia et Hadj Ahmed Lilia, UMMTO, 2020-2021, consulté le 2 septembre 2026. Aux p. 32-33, l'étude analyse AMARA dans son corpus de noms de famille de Yakouren et propose la racine arabe /ʕmr/. Cette analyse régionale ne doit pas être étendue aux homographes d'autres régions."
+      "notes": "Mémoire de master d'Ikhlef Lamia et Hadj Ahmed Lilia, UMMTO, 2020-2021, consulté le 2 septembre 2026. Aux p. 32-33, l'étude examine le nom AMARA à Yakouren et propose de le relier à la racine arabe /ʕmr/. Cette explication ne vaut pas nécessairement pour les personnes portant ce nom dans d'autres régions."
     },
     {
       "sourceKey": "dafn-amara",

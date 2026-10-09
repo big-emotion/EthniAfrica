@@ -47,6 +47,8 @@ const PROTECTED_KEYS = new Set([
   "sourceRefs",
   "sourceKey",
   "fieldPath",
+  "figureKey",
+  "figureRefs",
   "sitePath",
   "languageOfOrigin",
   "entityType",
@@ -91,7 +93,9 @@ function jsonCopy(
 function staticText(node: ts.Node): string | undefined {
   if (
     ts.isJsxElement(node) &&
-    /^(blockquote|cite)$/.test(node.openingElement.tagName.getText())
+    /^(blockquote|cite|style|script)$/.test(
+      node.openingElement.tagName.getText()
+    )
   )
     return " ";
   if (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node))
@@ -150,7 +154,9 @@ function codeCopy(file: string, source: string): CopyUnit[] {
       return;
     if (
       ts.isJsxElement(node) &&
-      /^(blockquote|cite)$/.test(node.openingElement.tagName.getText(ast))
+      /^(blockquote|cite|style|script)$/.test(
+        node.openingElement.tagName.getText(ast)
+      )
     )
       return;
     if (ts.isJsxElement(node) || ts.isJsxFragment(node)) {

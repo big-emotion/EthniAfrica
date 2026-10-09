@@ -1,3 +1,4 @@
+import { SOURCE_PAGE_COPY } from "@/lib/i18n/copy/sourcePage";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -27,31 +28,6 @@ import type { Language } from "@/types/shared";
  */
 
 type PageParams = { lang: string; id: string };
-
-const SOURCE_PAGE_COPY = {
-  fr: {
-    reliesOn: "Ce qui repose sur cette source",
-    empty: "Aucune fiche du corpus ne cite cette source pour l'instant.",
-    ficheOne: "fiche",
-    ficheMany: "fiches",
-    assertionOne: "affirmation",
-    assertionMany: "affirmations",
-    truncated:
-      "Les fiches les plus liées à cette source, et non la liste entière.",
-    back: "Retour à la bibliographie",
-  },
-  en: {
-    reliesOn: "What relies on this source",
-    empty: "No corpus fiche cites this source yet.",
-    ficheOne: "fiche",
-    ficheMany: "fiches",
-    assertionOne: "statement",
-    assertionMany: "statements",
-    truncated:
-      "The fiches most closely linked to this source, rather than the full list.",
-    back: "Back to the bibliography",
-  },
-} as const;
 
 /** "www.ethnologue.com/..." — the host first, which is what a reader recognises. */
 function displayUrl(url: string): string {

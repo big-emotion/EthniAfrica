@@ -10,6 +10,9 @@ describe("NoNameFicheNote", () => {
 
     const note = screen.getByTestId("no-name-fiche-note");
     expect(note).toHaveAttribute("role", "status");
-    expect(note).toHaveTextContent(/nom/i);
+    expect(note).toHaveTextContent(
+      "Nous n’avons pas encore de fiche sur ce nom."
+    );
+    expect(note).not.toHaveTextContent(/corpus|documente/i);
   });
 });

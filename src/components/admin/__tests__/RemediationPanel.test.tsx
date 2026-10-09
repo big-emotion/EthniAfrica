@@ -39,7 +39,7 @@ describe("RemediationPanel", () => {
 
     expect(screen.getByText("Lecture seule")).toBeInTheDocument();
     expect(
-      screen.getByText(/seule la publication du corpus clôt une remédiation/i)
+      screen.getByText(/lorsque le contenu corrigé aura été publié/i)
     ).toBeInTheDocument();
   });
 

@@ -25,7 +25,7 @@
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "L'étude de Thapelo Otlogetswe sur un corpus de plus d'un million de noms botswanais définit kgosi comme « roi » ou « chef » et classe Kgosi parmi les noms personnels masculins setswana liés aux rapports de pouvoir. La base de Forebears atteste séparément l'emploi de Kgosi comme nom de famille, surtout au Botswana, mais ne fournit aucune étymologie du patronyme : le sens lexical du nom personnel ne suffit donc pas à prouver une origine unique de toutes les lignées patronymiques.",
+        "claim": "Dans son étude de plus d'un million de noms du Botswana, Thapelo Otlogetswe donne à kgosi le sens de « roi » ou de « chef ». Il classe Kgosi parmi les noms personnels masculins setswana liés au pouvoir. Forebears recense aussi Kgosi comme nom de famille, surtout au Botswana, sans en expliquer l'origine. Le sens du mot ne signifie donc pas que toutes les familles Kgosi ont la même origine.",
         "claimStatus": "established",
         "sourceRefs": ["otlogetswe-2018-kgosi", "forebears-kgosi"]
       }

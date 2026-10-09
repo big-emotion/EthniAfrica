@@ -20,6 +20,7 @@ change. Do not replace editorial judgement with a growing list of banned words.
       content strategy skill; store the supplied references locally.
 - [x] Apply a first wording pass to the Peul name records and provide three tone
       examples. Preserve source titles, reference links and competing hypotheses.
+- [x] Correct the initial blocking public-copy findings; see the existing-copy pass below.
 - [ ] Continue the editorial review of legacy material in small batches, starting
       with the pages and texts actually read by the public. This is ongoing
       content maintenance, not an automatic rewrite of every existing fiche.
@@ -153,3 +154,75 @@ local BMAD installations unrelated to this change. The modified content-strategy
 skill is shared through its existing Codex mirror; the two editorial review
 skills used by this plan are present. These local installation findings need
 separate maintenance and are not hidden by changing the check.
+
+## Existing-copy pass — 2026-10-09
+
+- [x] Reproduce the existing findings, then distinguish public wording from CSS,
+      internal figure references and official reference titles.
+- [x] Write failing extraction/title tests before making the small checker fixes.
+- [x] Rewrite the flagged fiche passages and site copy using the shared charter.
+- [x] Review meaning and compare JSON before/after: only prose changes; source
+      metadata, links, name spellings, hypothesis status and publication history
+      remain intact.
+- [x] Prune obsolete allowances without admitting any new baseline hashes.
+
+The baseline shrank from 334 to 32 unique findings. The remaining allowances are
+English API documentation and internal diagnostics, not French reader copy. The
+strict check of all 1,799 dataset/publication files passes without a baseline.
+Warnings remain available for contextual review; this pass does not claim that
+all legacy writing is now simple or that every historical claim was reverified.
+
+The two edited production records change only `answer` prose, which the site's
+word-answer page renders. Their publication URLs, dates and source lists remain
+unchanged. This does not edit a previously published social post. Fiche changes
+are versioned source data; a normal data import is still needed for database-backed
+pages. No remote database write or social publication was performed.
+
+Three exact official names are allowed within authored notes: _Corpus bambara de
+référence_, _Botswana Names Corpus_, and _Vers une lexicographie mandingue sur la
+base de grands corpus annotés_. Generic uses of “corpus” in the same sentence
+still fail. JSX `style`/`script` content and internal `figureKey`/`figureRefs` values
+are protected; surrounding public prose remains checked. These narrow cases are
+covered by tests, not directory-wide exceptions.
+
+### Prose review
+
+Inputs: the existing public passages; the shared charter as `style_guide`;
+`reader_type=humans`. Keep a calm explanatory voice. Replace workshop reports,
+unexplained terminology and noun fragments with connected sentences. The examples
+below group repeated issues; the versioned diff carries each individual edit.
+
+| Original text                                                                          | Revised text                                                                                             | Changes                                                                                            |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Le corpus ne documente pas encore de fiche de nom pour cette recherche.                | Nous n’avons pas encore de fiche sur ce nom.                                                             | Say what is missing in everyday words.                                                             |
+| Le corpus tient quatre noms venus du dehors pour un nom venu du dedans.                | Nos fiches recensent environ 4 noms donnés de l'extérieur pour un nom utilisé par les peuples eux-mêmes. | Explain the comparison; render its ratio from the existing counts.                                 |
+| Le corpus ne tranche pas ces débats et renvoie aux travaux spécialisés.                | Les travaux spécialisés décrivent l'évolution de leur situation jusqu'aux tensions contemporaines.       | Keep the subject in view instead of explaining the project's posture.                              |
+| Nous ne tranchons pas ; nous rapportons la suite de noms citée dans la lettre de 1945. | La suite de noms présentée ici vient de la lettre de 1945.                                               | Attribute the choice of account while keeping the surrounding disagreement and succession context. |
+| État du corpus                                                                         | Avancement de la correction                                                                              | Name the information the reader can act on.                                                        |
+| une migration démique biaisée vers les mâles                                           | Les hommes y auraient davantage participé que les femmes.                                                | Explain the migration hypothesis in ordinary French within its original attribution.               |
+| cette proposition reste au statut claimed.                                             | Cette explication reste une hypothèse.                                                                   | Remove an internal status label from public prose; preserve the stored status.                     |
+
+Repeated surname gaps now say which association or account remains undocumented,
+without listing search queries. Specific distinctions remain: a person bearing a
+name does not establish every family's origin; a place name is not proof about a
+surname; a usage in one country does not establish a usage in another. Dated
+Nommer counts are described as the chapter's recorded inventory, not a new census.
+
+Validation for this pass: 214 prose fields changed across 169 dataset fiches and
+two production-answer records, in addition to site/dictionary copy. A structural
+before/after comparison preserved every non-prose value, reference key, source
+metadata entry and publication-history row. The 189 edited public files pass the
+strict check with zero errors and zero legacy allowances; 89 vocabulary warnings
+remain visible for review of their other fields. All dataset/publication files
+also pass strict checking. Data validation passes all 54 controls with no errors.
+
+The full suite initially reported 9,989 passing tests and five failures. Three
+assertions still expected the retired wording; they now check the same reader
+promise in plain language. The real-Vale volume test exceeded its five-second
+limit during the parallel run; it keeps the same batch and expected findings with
+a 30-second allowance. The rerun of all affected suites passes 60 tests. The sole
+unresolved failure is the pre-existing `bissaFicheMerge` test reading an ignored
+migration log with a retired identifier; that local log remains untouched.
+Type checking, the configured `src scripts` lint scope, changed-file formatting,
+requirement annotations and staged copy-literal checks pass. No browser visual
+review was performed in this text-only pass.

@@ -75,33 +75,33 @@
       "url": "https://datashare.ed.ac.uk/bitstream/handle/10283/184/ACollectionofDinkaSongs_readme.pdf",
       "tier": "referenced",
       "source_kind": "repository",
-      "notes": "Documentation du corpus sonore de Bert Remijsen et de l’équipe du projet Metre and Melody in Dinka Speech and Song, University of Edinburgh et SOAS, 2012. Elle précise que les Dinka n’ont pas de nom de famille fixe et que le nom individuel est suivi de ceux du père puis des ascendants."
+      "notes": "Présentation des enregistrements de Bert Remijsen et de l'équipe du projet Metre and Melody in Dinka Speech and Song, University of Edinburgh et SOAS, 2012. Elle indique que les Dinka n'ont pas de nom de famille fixe : le nom d'une personne est suivi de celui de son père, puis de ceux de ses ancêtres."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin.oralTraditions",
-      "reason": "Les recherches « Majok tradition orale », « Majok griot » et « Majok oral history », ainsi que l’article d’Impey, le livret d’archive Smithsonian Folkways et la documentation du corpus de chants dinka, n’ont livré ni détenteur nommé ni transcription attribuable ; aucune tradition orale n’est ajoutée."
+      "reason": "Les sources consultées, dont l'article d'Impey, le livret de Smithsonian Folkways et les chants dinka conservés à Édimbourg, ne donnent pas de récit oral sur l'origine de Majok dont nous ayons à la fois le texte et le nom de la personne qui l'a raconté."
     },
     {
       "fieldPath": "origin.writtenChronicles",
-      "reason": "Les recherches « Majok chronicle », « Majok history » et « Majok genealogy », complétées par l’article d’Impey, le livret d’archive Smithsonian Folkways et la documentation du corpus de chants dinka, n’ont livré aucune chronique primaire qui explique l’origine du nom."
+      "reason": "Les sources consultées, dont l'article d'Impey, le livret de Smithsonian Folkways et les chants dinka conservés à Édimbourg, ne donnent pas de chronique ancienne expliquant l'origine de Majok."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Les recherches « Majok joking kinship », « Majok name alliance » et « Majok clan pact », ainsi que l’article d’Impey, le livret d’archive Smithsonian Folkways et la documentation du corpus de chants dinka, n’ont identifié aucun pacte nommé avec un autre nom documenté ici."
+      "reason": "Les sources consultées, dont l'article d'Impey, le livret de Smithsonian Folkways et les chants dinka conservés à Édimbourg, ne décrivent pas de pacte entre Majok et un autre nom présenté ici."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Les recherches « Majok caste », « Majok occupational group » ainsi que les passages sociaux consultés dans l’article d’Impey, le livret d’archive Smithsonian Folkways et la documentation du corpus de chants dinka, n’ont établi aucune fonction héréditaire propre à ce nom."
+      "reason": "Les sources consultées, dont l'article d'Impey, le livret de Smithsonian Folkways et les chants dinka conservés à Édimbourg, ne décrivent pas de rôle social ou de métier transmis avec le nom Majok."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Les recherches biographiques et nécrologiques sur « Majok » dans les catalogues universitaires et institutionnels, complétées par l’article d’Impey, le livret d’archive Smithsonian Folkways et la documentation du corpus de chants dinka, n’ont pas permis de vérifier un porteur décédé avec une identité suffisamment précise ; les personnes vivantes repérées ne sont pas ajoutées sans auto-identification."
+      "reason": "Nous n'avons pas encore d'exemple de personne à présenter pour le nom Majok."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Les recherches sur la graphie exacte « Majok » dans les index onomastiques et l’article d’Impey, le livret d’archive Smithsonian Folkways et la documentation du corpus de chants dinka n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
+      "reason": "Les sources consultées, dont l'article d'Impey, le livret de Smithsonian Folkways et les chants dinka conservés à Édimbourg, ne décrivent pas d'autre nom écrit Majok qui aurait une origine différente."
     }
   ]
 }

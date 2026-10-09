@@ -47,7 +47,7 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
         },
         {
           id: "une-lecture-a-une-date",
-          text: "Le classement qui suit est donc une lecture, faite à la main, à une date. Ce n'est pas une mesure du corpus, et le corpus ne porte aucun champ qui permettrait d'en faire une : la question « ce pays a-t-il été nommé par des Africains ? » n'est aujourd'hui pas interrogeable.",
+          text: "Le classement qui suit repose sur une lecture des fiches à une date donnée. Les fiches ne précisent pas toutes de la même manière qui a choisi le nom du pays. Ce classement demande donc une interprétation et ne peut pas être obtenu par un simple décompte.",
           sourceRefs: [],
           figureRefs: ["countries-african-choice"],
         },
@@ -197,7 +197,7 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
       blocks: [
         {
           id: "trois-etymologies-sourcees",
-          text: "Trois des étymologies citées ici — Nigeria, Bénin, Ghana — ont été sourcées en écrivant ce chapitre, et la fiche du Nigeria a été corrigée au passage : elle datait de 1914 un nom proposé en 1897, et attribuait à Flora Shaw une officialisation qui fut celle de Lugard. Les cinquante et une autres restent des affirmations que le corpus porte sans les appuyer.",
+          text: "Des sources sont citées ici pour les noms Nigeria, Bénin et Ghana. Flora Shaw a proposé Nigeria en 1897 ; Lugard l'a officialisé en 1914. Lors du relevé utilisé pour ce chapitre, les cinquante et une autres explications de noms de pays n'étaient pas accompagnées de sources.",
           sourceRefs: [
             "shaw-times-nigeria",
             "afrik-pays-ben",

@@ -24,7 +24,7 @@
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "Une notice onomastique communautaire analyse Farah comme l'arabe فرح, « joie, bonheur », dérivé de la racine fariḥa « être heureux », et donne Faarax comme forme somalie ; l'analyse reste claimed tant que le dictionnaire imprimé cité n'a pas été vérifié directement.",
+        "claim": "Une notice rédigée par un membre d'un site communautaire rapproche Farah de l'arabe فرح, « joie, bonheur », et de la racine fariḥa, « être heureux ». Elle donne Faarax comme forme somalie. Cette explication reste une hypothèse : nous n'avons pas encore vérifié directement le dictionnaire imprimé qu'elle cite.",
         "claimStatus": "claimed",
         "sourceRefs": ["farah-behindthename"]
       }
@@ -95,7 +95,7 @@
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Farah et Faarax ont été recherchés comme anthroponymes, lexèmes et toponymes ; aucune entité homonyme distincte satisfaisant le modèle du corpus n'a été établie."
+      "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Farah, mais d'origine différente."
     }
   ]
 }
