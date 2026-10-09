@@ -13,8 +13,9 @@ import type { Language } from "@/types/shared";
  * Renders a tappable typographic pill at the end of an assertion:
  *   `N références · revu YYYY-MM-DD`
  *
- * `confidenceScore` still decides whether the chip has enough data to render,
- * but is never printed.
+ * It takes no confidence score: the score is internal (REQ-194), and letting
+ * it decide between the pill and the fallback link made two fiches with the
+ * same sources read differently.
  *
  * - No emoji, no icon, no color alarm.
  * - 44×44 px tap target enforced directly on the button.
@@ -32,7 +33,6 @@ const KEYFRAMES_STYLE_ID = "afh-chip-keyframes";
 export type ConfidenceChipVariant = "inline" | "hero" | "contested";
 
 export type ConfidenceChipProps = {
-  confidenceScore: number | null;
   sourceCount: number | null;
   lastHumanAuditAt: string | null;
   variant?: ConfidenceChipVariant;
@@ -110,7 +110,6 @@ function ensureKeyframesInjected(): void {
 
 // @req REQ-019
 export function ConfidenceChip({
-  confidenceScore,
   sourceCount,
   lastHumanAuditAt,
   variant = "inline",
@@ -125,8 +124,6 @@ export function ConfidenceChip({
   const routeLanguage = useRouteLanguage();
   const language = languageOverride ?? routeLanguage;
   const hasAllData =
-    confidenceScore !== null &&
-    confidenceScore !== undefined &&
     sourceCount !== null &&
     sourceCount !== undefined &&
     lastHumanAuditAt !== null &&
@@ -172,8 +169,8 @@ export function ConfidenceChip({
 
   const shortDate = toIsoShortDate(lastHumanAuditAt!);
   const longDate = toLongDate(language, lastHumanAuditAt!);
-  // The stored score is not printed: a percentage next to a claim reads as the
-  // odds that it is true, and it only weighs who published the sources. « Revu »
+  // No score is printed: a percentage next to a claim reads as the odds that
+  // it is true, and it only weighs who published the sources. « Revu »
   // is what the date means — a person last read the references — not a promise
   // that the claim was verified. The count is a count, and the sources sheet
   // says it is not corroboration (audit findings T04, T02).

@@ -59,9 +59,8 @@ interface QuizAnswerRevealProps {
  * Revealed-state panel (FR68/FR71): verdict, correct answer, explanation and
  * source line, with a « ouvrir la chaîne de sources » trigger. The sheet is
  * built from the single source the session already carries per question —
- * there is no richer assertion payload to fetch, so `confidenceScore` is
- * left at 0 and `sourceCount` at 1 rather than inventing data (same
- * precedent as `RelationsListWithSourceSheet`).
+ * there is no richer assertion payload to fetch, so `sourceCount` is 1
+ * rather than invented data (same precedent as `RelationsListWithSourceSheet`).
  */
 // @req REQ-103 FR68 FR71
 export const QuizAnswerReveal = ({
@@ -146,7 +145,6 @@ export const QuizAnswerReveal = ({
         onOpenChange={setSheetOpen}
         assertion={{
           statement: question.promptFr,
-          confidenceScore: 0,
           sourceCount: 1,
           lastHumanAuditAt: null,
         }}

@@ -34,7 +34,6 @@ export function PeopleFicheHead({
   language,
   hero,
   countries,
-  confidenceScore = null,
   sourceCount = null,
   lastHumanAuditAt = null,
   showConfidence = true,
@@ -42,7 +41,6 @@ export function PeopleFicheHead({
   language: Language;
   hero: PeopleHeroData;
   countries: PeopleCountriesData;
-  confidenceScore?: number | null;
   sourceCount?: number | null;
   lastHumanAuditAt?: string | null;
   /**
@@ -115,14 +113,10 @@ export function PeopleFicheHead({
         <ClassificationBadge status={hero.classificationStatus} />
       </div>
 
-      {/* A fiche resting entirely on unverified sources is published and
-          visibly marked as such — that is the intended outcome of the tier
-          policy, not a defect, so the chip belongs in the head. */}
       {showConfidence && (
         <div className="mt-afh-sm">
           <ConfidenceChip
             language={language}
-            confidenceScore={confidenceScore}
             sourceCount={sourceCount}
             lastHumanAuditAt={lastHumanAuditAt}
             variant="hero"

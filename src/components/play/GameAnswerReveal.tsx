@@ -148,7 +148,6 @@ export const GameAnswerReveal = ({
             variant="inline"
             language={language}
             id={`game-reveal-${round.subjectId}`}
-            confidenceScore={round.reveal.confidence.score}
             sourceCount={round.reveal.confidence.sourceCount}
             lastHumanAuditAt={round.reveal.confidence.lastHumanAuditAt}
             ariaSuffix={copy.confidenceAriaSuffix}

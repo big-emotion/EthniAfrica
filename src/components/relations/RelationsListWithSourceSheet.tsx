@@ -158,7 +158,6 @@ export function RelationsListWithSourceSheet({
                   activeItem.neighbor.nameMain
                 )
               ),
-            confidenceScore: activeItem.confidence?.score ?? 0,
             sourceCount: activeItem.confidence?.sourceCount ?? 0,
             lastHumanAuditAt: null,
           }}

@@ -568,17 +568,15 @@ describe("transformPeopleNameRecord", () => {
   });
 
   // @req REQ-054
-  it("extracts confidence fields and source count", () => {
+  it("extracts the review date and source count", () => {
     const result = transformPeopleNameRecord(dinkaNamesDossier.names[0]);
-    expect(result.confidenceScore).toBe(90);
     expect(result.lastHumanAuditAt).toBe("2025-01-01");
     expect(result.sourceCount).toBe(1);
   });
 
   // @req REQ-054
-  it("defaults confidence fields to null when absent", () => {
+  it("defaults the review date to null when absent", () => {
     const result = transformPeopleNameRecord(dinkaNamesDossier.names[1]);
-    expect(result.confidenceScore).toBeNull();
     expect(result.lastHumanAuditAt).toBeNull();
     expect(result.sourceCount).toBe(0);
   });

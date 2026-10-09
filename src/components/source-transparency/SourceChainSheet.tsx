@@ -463,30 +463,10 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
           ) : null}
         </section>
 
-        {/* 2. Confidence */}
-        <section
-          data-testid="section-confidence"
-          className="rounded-md bg-[var(--afh-muted,var(--country-muted,#f9fafb))] p-3"
-        >
-          {assertion.confidenceScore !== undefined ? (
-            <div className="flex items-baseline justify-between">
-              <span className="text-afh-eyebrow font-semibold uppercase tracking-wide text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]">
-                {copy.confidence}
-              </span>
-              <span className="text-afh-h3 font-semibold text-[var(--afh-fg,var(--country-fg,#111827))]">
-                {Math.round(assertion.confidenceScore * 100)}%
-              </span>
-            </div>
-          ) : null}
-          <p className="mt-1 text-afh-caption text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]">
-            {copy.confidenceSummary(
-              assertion.sourceCount,
-              assertion.lastHumanAuditAt
-            )}
-          </p>
-        </section>
+        {/* No confidence block: the score, its derivation and the « not yet
+            reviewed » line are internal (REQ-194). The sources speak. */}
 
-        {/* 3. Flags banner (conditional) */}
+        {/* 2. Flags banner (conditional) */}
         {openFlagCount > 0 ? (
           <section
             data-testid="section-flags"
@@ -497,7 +477,7 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
           </section>
         ) : null}
 
-        {/* 4. Sources */}
+        {/* 3. Sources */}
         <section data-testid="section-sources" className="space-y-4">
           <h3 className="text-afh-small font-semibold text-[var(--afh-fg,var(--country-fg,#111827))]">
             {copy.sources}
@@ -522,7 +502,7 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
           )}
         </section>
 
-        {/* 5. Revision link (conditional) */}
+        {/* 4. Revision link (conditional) */}
         {revisionUrl && safeUrl(revisionUrl) ? (
           <section data-testid="section-revision">
             <a
@@ -536,7 +516,7 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
           </section>
         ) : null}
 
-        {/* 6. FlagTarget */}
+        {/* 5. FlagTarget */}
         <section data-testid="section-flag-target" className="pt-2">
           {/* The `assertion.id` guard stays: with no assertion there is no
               target to report. Only the Turnstile half of the condition goes. */}
@@ -554,7 +534,7 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
           ) : null}
         </section>
 
-        {/* 7. Cite affordance (appears after 4 s dwell) */}
+        {/* 6. Cite affordance (appears after 4 s dwell) */}
         <section data-testid="section-cite" className="pt-1">
           <button
             type="button"

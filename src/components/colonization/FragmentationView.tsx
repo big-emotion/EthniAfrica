@@ -18,11 +18,11 @@ import type { Language } from "@/types/shared";
  * No map involved: countries and border pairs are listed as prose/table data,
  * each share traceable to its source via ConfidenceChip -> SourceChainSheet.
  *
- * The fragmentation endpoint (Story 13.5) does not yet expose confidence
- * score / source count / audit date per country share — only an
- * `assertionId` pointer. Per the "never invent data" policy, ConfidenceChip
- * is fed nulls (its established fallback affordance) rather than fabricated
- * numbers; it still opens the same SourceChainSheet on activation.
+ * The fragmentation endpoint (Story 13.5) does not expose a source count or
+ * audit date per country share — only an `assertionId` pointer. Per the
+ * "never invent data" policy, ConfidenceChip is fed nulls (its established
+ * fallback affordance) rather than fabricated numbers; it still opens the
+ * same SourceChainSheet on activation.
  */
 
 export type FragmentationViewVariant = "fiche-section" | "module-index";
@@ -75,7 +75,6 @@ function FragmentationRow({
       <td className="py-2">
         <ConfidenceChip
           id={anchorId}
-          confidenceScore={null}
           sourceCount={null}
           lastHumanAuditAt={null}
           variant="inline"
@@ -91,7 +90,6 @@ function FragmentationRow({
               localizedCountry,
               formatShare(country.populationShare)
             ),
-            confidenceScore: 0,
             sourceCount: 0,
             lastHumanAuditAt: null,
           }}
@@ -174,7 +172,7 @@ export function FragmentationView({
               scope="col"
               className="text-left text-afh-caption font-semibold pb-2"
             >
-              {copy.confidence}
+              {copy.sources}
             </th>
           </tr>
         </thead>

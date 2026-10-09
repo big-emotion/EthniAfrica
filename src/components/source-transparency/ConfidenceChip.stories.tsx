@@ -21,7 +21,6 @@ const meta: Meta<typeof ConfidenceChip> = {
       control: "select",
       options: ["inline", "hero", "contested"],
     },
-    confidenceScore: { control: { type: "number", min: 0, max: 100 } },
     sourceCount: { control: { type: "number", min: 0 } },
     lastHumanAuditAt: { control: "text" },
     onOpen: { action: "open" },
@@ -34,7 +33,6 @@ type Story = StoryObj<typeof ConfidenceChip>;
 // @req REQ-019
 export const Inline: Story = {
   args: {
-    confidenceScore: 87,
     sourceCount: 4,
     lastHumanAuditAt: "2025-09-21",
     variant: "inline",
@@ -51,7 +49,6 @@ export const Inline: Story = {
 // @req REQ-019
 export const Hero: Story = {
   args: {
-    confidenceScore: 92,
     sourceCount: 6,
     lastHumanAuditAt: "2025-10-04",
     variant: "hero",
@@ -70,7 +67,6 @@ export const Hero: Story = {
 // @req REQ-019
 export const Contested: Story = {
   args: {
-    confidenceScore: 42,
     sourceCount: 2,
     lastHumanAuditAt: "2025-04-10",
     variant: "contested",
@@ -88,7 +84,6 @@ export const Contested: Story = {
 export const MissingData: Story = {
   name: "Fallback — missing data",
   args: {
-    confidenceScore: null,
     sourceCount: null,
     lastHumanAuditAt: null,
     variant: "inline",
@@ -105,7 +100,6 @@ export const MissingData: Story = {
 export const NoOnOpen: Story = {
   name: "Without onOpen callback",
   args: {
-    confidenceScore: 78,
     sourceCount: 3,
     lastHumanAuditAt: "2025-07-15",
     variant: "inline",
@@ -132,7 +126,6 @@ export const AllVariants: Story = {
         <p className="text-base">
           Texte d&apos;assertion factuelle.{" "}
           <ConfidenceChip
-            confidenceScore={87}
             sourceCount={4}
             lastHumanAuditAt="2025-09-21"
             variant="inline"
@@ -146,7 +139,6 @@ export const AllVariants: Story = {
         <p className="text-lg">
           Assertion mise en avant.{" "}
           <ConfidenceChip
-            confidenceScore={92}
             sourceCount={6}
             lastHumanAuditAt="2025-10-04"
             variant="hero"
@@ -160,7 +152,6 @@ export const AllVariants: Story = {
         <p className="text-base">
           Assertion débattue par les sources.{" "}
           <ConfidenceChip
-            confidenceScore={42}
             sourceCount={2}
             lastHumanAuditAt="2025-04-10"
             variant="contested"
@@ -172,12 +163,8 @@ export const AllVariants: Story = {
           Missing data — fallback link
         </p>
         <p className="text-base">
-          Assertion non auditée.{" "}
-          <ConfidenceChip
-            confidenceScore={null}
-            sourceCount={null}
-            lastHumanAuditAt={null}
-          />
+          Assertion sans référence datée.{" "}
+          <ConfidenceChip sourceCount={null} lastHumanAuditAt={null} />
         </p>
       </div>
     </div>

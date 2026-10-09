@@ -136,7 +136,9 @@ describe("ColonizationModulePage (Epic 13, Story 13.9, ETNI-533)", () => {
     render(
       <ColonizationModulePage language="fr" data={dataWithFragmentation} />
     );
-    expect(screen.getByText("Sources")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Sources" })
+    ).toBeInTheDocument();
     expect(
       screen.getAllByRole("link", { name: "voir les sources" }).length
     ).toBeGreaterThan(0);

@@ -238,7 +238,6 @@ export function RelationsList({
                   </p>
                 ) : (
                   <ConfidenceChip
-                    confidenceScore={item.confidence?.score ?? null}
                     sourceCount={item.confidence?.sourceCount ?? null}
                     lastHumanAuditAt={null}
                     onOpen={() => onOpenRelation(item.id)}

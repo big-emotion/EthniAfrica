@@ -64,6 +64,31 @@ describe("SearchFeedEvidenceAction", () => {
     expect(screen.getByText("Dictionnaire fang-français")).toBeVisible();
   });
 
+  // The assertion carries a stored score of 0.85; neither the chip nor the
+  // sheet it opens may print it.
+  // @req REQ-194
+  it("prints no confidence score on the plate or in its sheet", async () => {
+    render(
+      <SearchFeedEvidenceAction
+        evidence={evidence}
+        anchorId="feed-evidence-fang"
+        language="fr"
+      />
+    );
+
+    expect(
+      document.getElementById("feed-evidence-fang")?.textContent
+    ).not.toMatch(/confiance|85|%/i);
+    fireEvent.click(
+      screen.getByRole("button", {
+        name: /consulter les sources de cette information/i,
+      })
+    );
+
+    const dialog = await screen.findByRole("dialog");
+    expect(dialog.textContent).not.toMatch(/confiance|85|%|Calculé/i);
+  });
+
   // @req REQ-180
   it("renders the shareable source anchor and keeps the hash on activation", async () => {
     window.history.replaceState(null, "", getLocalizedRoute("fr", "search"));

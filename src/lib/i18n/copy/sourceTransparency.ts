@@ -11,13 +11,6 @@ const fr = {
     description:
       "Consultez les sources et les vérifications associées à cette information.",
     position: "Position",
-    confidence: "Niveau de confiance",
-    confidenceSummary: (count: number, auditedAt: string | null) =>
-      `Calculé à partir de ${count} source${count > 1 ? "s" : ""}${
-        auditedAt
-          ? ` · dernière relecture le ${auditedAt}`
-          : " · pas encore relu par une personne"
-      }.`,
     openReports: (count: number) =>
       `${count} signalement${count > 1 ? "s" : ""} ouvert${
         count > 1 ? "s" : ""
