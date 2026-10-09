@@ -18,7 +18,7 @@ interface SourceNoteCallProps {
 /**
  * The inline mark that turns a sourced field into a citation.
  *
- * A sibling of `ConfidenceChip` rather than a use of it, and the difference is
+ * A sibling of `SourceReviewChip` rather than a use of it, and the difference is
  * not stylistic. The chip states a reference count and a review date — "3
  * références · revu …" — and falls back to a plain text link the moment any of those three values is
  * null, which on this corpus is nearly always, because `last_human_audit_at` is

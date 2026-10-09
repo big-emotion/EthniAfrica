@@ -341,11 +341,11 @@ describe("CompareEntityHeader", () => {
     type: "peuple",
   };
 
-  // Each compared entity used to carry a confidence chip, a « page non
+  // Each compared entity used to carry a source review chip, a « page non
   // auditée » disclaimer when it had no score, and a link explaining how the
   // score is computed. All three told the reader how far to trust the page.
   // @req REQ-194
-  it("shows no confidence chip, unaudited disclaimer or score explainer", () => {
+  it("shows no source review chip, unaudited disclaimer or score explainer", () => {
     const { container } = render(
       <CompareEntityHeader language="fr" column={column} />
     );

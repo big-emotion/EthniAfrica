@@ -7,7 +7,7 @@
  *
  * `getMigrationById`'s confidence envelope currently exposes only a bare
  * score (no sourceCount/lastHumanAuditAt) — until that API is enriched, the
- * per-paragraph ConfidenceChips honestly degrade to "voir les sources"
+ * per-paragraph SourceReviewChips honestly degrade to "voir les sources"
  * links rather than fabricating an audit date.
  */
 

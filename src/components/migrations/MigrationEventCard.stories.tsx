@@ -27,11 +27,13 @@ const meta: Meta<typeof MigrationEventCard> = {
 export default meta;
 type Story = StoryObj<typeof MigrationEventCard>;
 
+// @req REQ-101
 export const Consensual: Story = {
   name: "Consensual (no badge)",
   args: { event: baseEvent },
 };
 
+// @req REQ-101
 export const Contested: Story = {
   args: {
     event: {
@@ -47,6 +49,7 @@ export const Contested: Story = {
  * When `migrationGroup` is set, the card surfaces a phase indicator so
  * readers understand this event is one leg of a larger macro-migration.
  */
+// @req REQ-101
 export const WithMigrationPhase: Story = {
   name: "With migration phase (migrationGroup set)",
   args: {
@@ -54,6 +57,7 @@ export const WithMigrationPhase: Story = {
   },
 };
 
+// @req REQ-101
 export const WithFullConfidence: Story = {
   name: "Full confidence pill",
   args: {
@@ -63,14 +67,16 @@ export const WithFullConfidence: Story = {
 };
 
 /**
- * No confidence payload — the shared ConfidenceChip degrades to a
+ * No confidence payload — the shared SourceReviewChip degrades to a
  * "voir les sources" link rather than showing a broken/empty pill.
  */
+// @req REQ-101
 export const NoConfidenceData: Story = {
   name: "No confidence data (degraded link)",
   args: { event: baseEvent, confidence: null },
 };
 
+// @req REQ-101
 export const NoPeoples: Story = {
   name: "No linked peoples (graceful degradation)",
   args: { event: { ...baseEvent, peoples: [] } },
@@ -113,6 +119,7 @@ const Frame = ({
   </div>
 );
 
+// @req REQ-101
 export const Mobile430: Story = {
   name: "Breakpoint — Mobile (430px)",
   render: () => (
@@ -129,6 +136,7 @@ export const Mobile430: Story = {
   ),
 };
 
+// @req REQ-101
 export const Tablet720: Story = {
   name: "Breakpoint — Tablet (720px)",
   render: () => (
@@ -145,6 +153,7 @@ export const Tablet720: Story = {
   ),
 };
 
+// @req REQ-101
 export const Desktop800: Story = {
   name: "Breakpoint — Desktop (800px)",
   render: () => (

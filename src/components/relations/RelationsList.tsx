@@ -7,7 +7,7 @@ import { X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { EmptyState } from "@/components/ui/EmptyState";
 import { AutonymExonymHeading } from "@/components/ui/AutonymExonymHeading";
-import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
+import { SourceReviewChip } from "@/components/source-transparency/SourceReviewChip";
 import { RelationTypeBadge } from "@/components/relations/RelationTypeBadge";
 import { RELATION_TYPE_LABELS } from "@/lib/glossaire/vocabularies";
 import type {
@@ -237,7 +237,7 @@ export function RelationsList({
                     {copy.list.derived}
                   </p>
                 ) : (
-                  <ConfidenceChip
+                  <SourceReviewChip
                     sourceCount={item.confidence?.sourceCount ?? null}
                     lastHumanAuditAt={null}
                     onOpen={() => onOpenRelation(item.id)}

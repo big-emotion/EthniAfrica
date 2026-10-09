@@ -512,10 +512,10 @@ describe("country fiche charter", () => {
     expect(container.textContent).not.toMatch(/Tier\s*1/);
   });
 
-  // ConfidenceChip's incomplete-confidence fallback links to #sources by hard
+  // SourceReviewChip's incomplete-confidence fallback links to #sources by hard
   // coded id, so the anchor has to exist on this surface.
   // @req REQ-116
-  it("anchors the sources section where the confidence chip points", () => {
+  it("anchors the sources section where the source review chip points", () => {
     const { container } = renderParchment(countryFixture());
 
     expect(container.querySelector("#sources")).not.toBeNull();
