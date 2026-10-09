@@ -13,6 +13,7 @@ import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { getLocalizedRoute, getPeopleRoute } from "@/lib/routing";
 import { SEARCH_RESULT_GROUPS } from "@/lib/search/searchVocabulary";
+import { PEUL_HISTORY } from "@/lib/search/__fixtures__/nameTimelineFixtures";
 
 // ── next/navigation ──────────────────────────────────────────────────────────
 vi.mock("next/navigation", () => ({
@@ -85,10 +86,19 @@ global.ResizeObserver = ResizeObserverMock;
 
 const mockFetch = vi.fn();
 const mockCompanionFetch = vi.fn();
+// A subject's fiche is read for its name history (REQ-198). Kept apart so the
+// counts below still count the search itself; no fiche here has a history.
+const mockFicheFetch = vi.fn<
+  (input: RequestInfo | URL, init?: RequestInit) => Promise<Response>
+>(async () => new Response(JSON.stringify({ data: {} }), { status: 200 }));
+const FICHE_PATH =
+  /^\/api\/v2\/(peoples|countries|languages|language-families|patronymes)\//;
 global.fetch = vi.fn((input: RequestInfo | URL, init?: RequestInit) => {
   const target = String(input).startsWith("/api/v2/search/companions?")
     ? mockCompanionFetch
-    : mockFetch;
+    : FICHE_PATH.test(String(input))
+      ? mockFicheFetch
+      : mockFetch;
   return init ? target(input, init) : target(input);
 }) as unknown as typeof fetch;
 
@@ -1314,6 +1324,27 @@ describe("RecherchePageContent feed orchestration", () => {
     });
     fireEvent.click(screen.getByRole("button", { name: /rechercher/i }));
   }
+
+  // @req REQ-198
+  it("opens on the name-history timeline when the subject's fiche has one", async () => {
+    mockFetch.mockResolvedValue(okJson(searchApiResponse));
+    mockFicheFetch.mockResolvedValueOnce(
+      new Response(JSON.stringify({ data: { nameHistory: PEUL_HISTORY } }), {
+        status: 200,
+      })
+    );
+
+    await submitQuery("Zulu");
+    await screen.findByTestId("feed-layout");
+
+    expect(String(mockFicheFetch.mock.calls[0][0])).toBe(
+      "/api/v2/peoples/PPL_ZULU"
+    );
+    expect(
+      screen.getByRole("button", { name: searchFeedCopy.fr.filters.timeline })
+    ).toHaveAttribute("aria-pressed", "true");
+    expect(document.querySelector("[data-name-timeline]")).not.toBeNull();
+  });
 
   // @req REQ-180
   it("loads companions once after a resolved search with its typed subject", async () => {

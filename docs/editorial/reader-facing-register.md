@@ -394,7 +394,8 @@ table above, they are writing patterns with slots, not facts.
   n'existe pas encore » on every tile.
 - **“Meanwhile, elsewhere”** is two sentences: the first about the African name,
   the second, shorter, about the outside anchor with its date. No sentence opens
-  with « Ailleurs, ».
+  with « Ailleurs, ». The anchor names its place first: France or Belgium, or
+  another region of Africa than the subject's (« Au Maroc, », « En Éthiopie, »).
 
 | Tile                     | Before                                                         | After — French                                                                                                     |
 | ------------------------ | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |

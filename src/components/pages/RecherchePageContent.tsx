@@ -9,7 +9,10 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { SearchFeedFrame } from "@/components/search/SearchFeedFrame";
-import { SearchFeed } from "@/components/search/SearchFeed";
+import {
+  SearchFeed,
+  type SubjectNameHistory,
+} from "@/components/search/SearchFeed";
 import type { WordAnswer } from "@/lib/search/answer";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
@@ -33,6 +36,7 @@ import {
 } from "@/lib/search/searchEnvelope";
 import {
   loadSearchCompanions,
+  loadSubjectNameHistories,
   search as searchCorpus,
   searchWithLeads,
 } from "@/lib/afrikLoader";
@@ -159,6 +163,7 @@ export function RecherchePageContent() {
   const [feedPresentation, setFeedPresentation] =
     useState<SearchFeedPresentation>();
   const [feedSubjects, setFeedSubjects] = useState<SearchHit[]>([]);
+  const [nameHistories, setNameHistories] = useState<SubjectNameHistory[]>([]);
   const requestController = useRef<AbortController | null>(null);
   const requestTicket = useRef(0);
   const restoreFocusAfterClear = useRef(false);
@@ -287,15 +292,21 @@ export function RecherchePageContent() {
           resolvedSubjects,
           nearMisses
         );
-        const nextCompanions = await loadSearchCompanions(
-          companionSubjects,
-          language,
-          controller.signal,
-          q
-        );
+        // Loaded before the feed mounts: the feed picks its default lens once,
+        // and opens on the timeline when a subject has a name history.
+        const [nextCompanions, nextNameHistories] = await Promise.all([
+          loadSearchCompanions(
+            companionSubjects,
+            language,
+            controller.signal,
+            q
+          ),
+          loadSubjectNameHistories(resolvedSubjects, controller.signal),
+        ]);
         if (ticket !== requestTicket.current) return;
 
         setCompanions(nextCompanions);
+        setNameHistories(nextNameHistories);
         setFeedSubjects(resolvedSubjects);
         setFeedState(
           classifySearchFeed({
@@ -739,6 +750,7 @@ export function RecherchePageContent() {
               resultCount={counts.all}
               presentation={feedPresentation}
               relation={relation ?? undefined}
+              nameHistories={nameHistories}
               onResultNavigate={trackResultClick}
             />
           ) : null}
