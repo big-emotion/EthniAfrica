@@ -29,9 +29,11 @@ import {
 /** The view migration 080 adds, and the only relation the fast path reads. */
 const PRESENCE_VIEW = "hub_module_corpus_presence";
 
+// The latest migration that (re)defines the view: 080 created it, 101 moved
+// the noms row onto afrik_people_names (REQ-196).
 const PRESENCE_MIGRATION = join(
   process.cwd(),
-  "supabase/migrations/080_hub_module_corpus_presence.sql"
+  "supabase/migrations/101_name_index_on_name_history.sql"
 );
 
 /** Every table some module waits on, in the registry's own words. */
@@ -287,20 +289,20 @@ describe("moduleAvailability — REQ-106/REQ-114 data-backed hub availability", 
     expect(availability.frise).toBe(false);
   });
 
-  // @req REQ-106 @req REQ-114
-  it("applies the entity_type=people filter for the noms probe", async () => {
+  // @req REQ-196
+  it("probes the people names view, where every row is a people's name, without a filter", async () => {
     const supabase = buildSupabaseMock({
       [PRESENCE_VIEW]: VIEW_MISSING,
-      name_records: ONE_ROW,
+      afrik_people_names: ONE_ROW,
     });
     createServerClientMock.mockReturnValue(supabase);
 
     await getHubModules("atlas");
 
     const nameQuery = supabase.queries.find(
-      (query) => query.table === "name_records"
+      (query) => query.table === "afrik_people_names"
     );
-    expect(nameQuery?.filters).toEqual([["entity_type", "people"]]);
+    expect(nameQuery?.filters).toEqual([]);
   });
 
   // A wrong table name here would read as "still coming soon" rather than as
@@ -485,6 +487,7 @@ describe("moduleAvailability — REQ-106/REQ-114 data-backed hub availability", 
    * whose table is empty.
    */
   // @req REQ-106 @req REQ-114
+  // @req REQ-196
   it("gives every declared data source a row in the presence view", () => {
     // Comments are stripped first: this file argues about the tables it
     // covers at length, and a name mentioned in prose must not pass for a
@@ -499,8 +502,5 @@ describe("moduleAvailability — REQ-106/REQ-114 data-backed hub availability", 
         `'${source}'`
       );
     }
-    // The one source the view may not read whole: `noms` counts people
-    // records only, exactly as the direct probe does.
-    expect(sql).toContain("entity_type");
   });
 });

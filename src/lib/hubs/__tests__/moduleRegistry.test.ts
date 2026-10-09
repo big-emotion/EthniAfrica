@@ -173,7 +173,7 @@ describe("moduleRegistry — access-mode → module mapping (REQ-114)", () => {
       accessMode: "atlas",
       page: "names",
       availability: "data",
-      dataSource: "name_records",
+      dataSource: "afrik_people_names",
       editorialReadiness: "ready",
       unlisted: true,
     });

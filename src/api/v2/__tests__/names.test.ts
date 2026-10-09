@@ -78,8 +78,7 @@ function buildConfidenceQuery(rows: Array<Record<string, unknown>>): FakeQuery {
 }
 
 const jiengName = {
-  id: "11111111-1111-1111-1111-111111111111",
-  entity_type: "people",
+  id: "PPL_JIENG:name:0",
   entity_id: "PPL_JIENG",
   name_text: "Jieng",
   name_type: "endonym",
@@ -94,8 +93,7 @@ const jiengName = {
 };
 
 const dinkaName = {
-  id: "22222222-2222-2222-2222-222222222222",
-  entity_type: "people",
+  id: "PPL_JIENG:name:1",
   entity_id: "PPL_JIENG",
   name_text: "Dinka",
   name_type: "exonym",
@@ -125,7 +123,7 @@ describe("listNames (service)", () => {
     const namesQuery = buildNamesQuery([jiengName], 1);
     const peopleQuery = buildPeopleQuery([jiengPeopleRow]);
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return namesQuery;
+      if (table === "afrik_people_names") return namesQuery;
       if (table === "afrik_peoples") return peopleQuery;
       throw new Error(`unexpected table ${table}`);
     });
@@ -146,11 +144,25 @@ describe("listNames (service)", () => {
     });
   });
 
+  // @req REQ-196
+  it("reads the index unpacked from the fiches, where every row is a people's name", async () => {
+    const namesQuery = buildNamesQuery([], 0);
+    fromMock.mockImplementation((table: string) => {
+      if (table === "afrik_people_names") return namesQuery;
+      throw new Error(`unexpected table ${table}`);
+    });
+
+    await listNames(baseQuery());
+
+    expect(fromMock).toHaveBeenCalledWith("afrik_people_names");
+    expect(namesQuery.eq).not.toHaveBeenCalledWith("entity_type", "people");
+  });
+
   // @req REQ-057
   it("passes nameType filter to the query", async () => {
     const namesQuery = buildNamesQuery([], 0);
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return namesQuery;
+      if (table === "afrik_people_names") return namesQuery;
       throw new Error(`unexpected table ${table}`);
     });
 
@@ -164,7 +176,7 @@ describe("listNames (service)", () => {
     const namesQuery = buildNamesQuery([dinkaName], 1);
     const peopleQuery = buildPeopleQuery([jiengPeopleRow]);
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return namesQuery;
+      if (table === "afrik_people_names") return namesQuery;
       if (table === "afrik_peoples") return peopleQuery;
       throw new Error(`unexpected table ${table}`);
     });
@@ -180,7 +192,7 @@ describe("listNames (service)", () => {
   it("does not apply the imposed filter when imposedOnly is false", async () => {
     const namesQuery = buildNamesQuery([], 0);
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return namesQuery;
+      if (table === "afrik_people_names") return namesQuery;
       throw new Error(`unexpected table ${table}`);
     });
 
@@ -193,7 +205,7 @@ describe("listNames (service)", () => {
   it("filters by peopleId via entity_id", async () => {
     const namesQuery = buildNamesQuery([], 0);
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return namesQuery;
+      if (table === "afrik_people_names") return namesQuery;
       throw new Error(`unexpected table ${table}`);
     });
 
@@ -206,7 +218,7 @@ describe("listNames (service)", () => {
   it("filters by initial letter case-insensitively", async () => {
     const namesQuery = buildNamesQuery([], 0);
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return namesQuery;
+      if (table === "afrik_people_names") return namesQuery;
       throw new Error(`unexpected table ${table}`);
     });
 
@@ -219,7 +231,7 @@ describe("listNames (service)", () => {
   it("applies pagination via range(offset, offset+limit-1)", async () => {
     const namesQuery = buildNamesQuery([], 0);
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return namesQuery;
+      if (table === "afrik_people_names") return namesQuery;
       throw new Error(`unexpected table ${table}`);
     });
 
@@ -247,7 +259,7 @@ describe("listNames (service)", () => {
       { entity_id: "PPL_JIENG", score: 0.9 },
     ]);
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return namesQuery;
+      if (table === "afrik_people_names") return namesQuery;
       if (table === "afrik_peoples") return peopleQuery;
       if (table === "confidence_scores") return confidenceQuery;
       throw new Error(`unexpected table ${table}`);
@@ -270,7 +282,7 @@ describe("listNames (service)", () => {
   it("skips people/confidence lookups when no rows match", async () => {
     const namesQuery = buildNamesQuery([], 0);
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return namesQuery;
+      if (table === "afrik_people_names") return namesQuery;
       throw new Error(`unexpected table ${table}`);
     });
 
@@ -291,7 +303,7 @@ describe("listNames (service)", () => {
       Promise.resolve({ data: null, error: { message: "boom" }, count: null })
     );
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return query;
+      if (table === "afrik_people_names") return query;
       throw new Error(`unexpected table ${table}`);
     });
 
@@ -307,7 +319,7 @@ describe("listNames (service)", () => {
       'infinite recursion detected in policy for relation "user_roles"'
     );
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return namesQuery;
+      if (table === "afrik_people_names") return namesQuery;
       throw new Error(`unexpected table ${table}`);
     });
 
@@ -320,10 +332,10 @@ describe("listNames (service)", () => {
   it("still degrades to an empty result for schema-absence codes (42P01, PGRST205)", async () => {
     const namesQuery = buildNamesQueryError(
       "42P01",
-      'relation "name_records" does not exist'
+      'relation "afrik_people_names" does not exist'
     );
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return namesQuery;
+      if (table === "afrik_people_names") return namesQuery;
       throw new Error(`unexpected table ${table}`);
     });
 
@@ -343,7 +355,7 @@ describe("listNamesHandler (handler)", () => {
     const namesQuery = buildNamesQuery([jiengName], 1);
     const peopleQuery = buildPeopleQuery([jiengPeopleRow]);
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return namesQuery;
+      if (table === "afrik_people_names") return namesQuery;
       if (table === "afrik_peoples") return peopleQuery;
       throw new Error(`unexpected table ${table}`);
     });
@@ -361,7 +373,7 @@ describe("listNamesHandler (handler)", () => {
   it("empty result — returns valid envelope", async () => {
     const namesQuery = buildNamesQuery([], 0);
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return namesQuery;
+      if (table === "afrik_people_names") return namesQuery;
       throw new Error(`unexpected table ${table}`);
     });
 
@@ -382,7 +394,7 @@ describe("listNamesHandler (handler)", () => {
       Promise.resolve({ data: null, error: { message: "boom" }, count: null })
     );
     fromMock.mockImplementation((table: string) => {
-      if (table === "name_records") return query;
+      if (table === "afrik_people_names") return query;
       throw new Error(`unexpected table ${table}`);
     });
 

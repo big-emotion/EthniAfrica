@@ -36,116 +36,54 @@ function buildMaybeSingleQuery(row: Record<string, unknown> | null): FakeQuery {
   return query;
 }
 
-function buildNameRecordsQuery(
-  rows: Array<Record<string, unknown>>,
-  error: { message: string } | null = null
-): FakeQuery {
-  const query: FakeQuery = {} as FakeQuery;
-  query.select = vi.fn(() => query);
-  query.eq = vi.fn(() => query);
-  query.order = vi.fn(() => query);
-  // Supabase's PostgrestFilterBuilder is itself thenable — the query
-  // resolves whichever builder method was called last.
-  (
-    query as unknown as {
-      then: (resolve: (value: unknown) => unknown) => Promise<unknown>;
-    }
-  ).then = (resolve: (value: unknown) => unknown) =>
-    Promise.resolve({ data: rows, error }).then(resolve);
-  return query;
-}
+const ethnologue = {
+  title: "Ethnologue",
+  url: "https://ethnologue.com",
+  year: null,
+  tier: "official",
+};
 
-function buildAssertionsQuery(
-  rows: Array<Record<string, unknown>>,
-  error: { message: string } | null = null
-): FakeQuery {
-  const query: FakeQuery = {} as FakeQuery;
-  query.select = vi.fn(() => query);
-  query.in = vi.fn(() => Promise.resolve({ data: rows, error }));
-  return query;
-}
+// Name-index entries derived from the fiche's appellations (REQ-196): they
+// cite the fiche's sources, embedded, rather than an assertion row.
+const endonymEntry = {
+  nameText: "Jieng",
+  nameType: "endonym",
+  origin: "appellation",
+  languageOfOrigin: null,
+  meaning: null,
+  periodLabel: null,
+  imposedBy: null,
+  impositionPeriod: null,
+  whyProblematic: null,
+  contemporaryUsage: "primary self-identification",
+  sortRank: 0,
+  sources: [ethnologue],
+};
 
-function buildSourcesQuery(
-  rows: Array<Record<string, unknown>>,
-  error: { message: string } | null = null
-): FakeQuery {
-  const query: FakeQuery = {} as FakeQuery;
-  query.select = vi.fn(() => query);
-  query.in = vi.fn(() => Promise.resolve({ data: rows, error }));
-  return query;
-}
+const exonymEntry = {
+  ...endonymEntry,
+  nameText: "Dinka",
+  nameType: "exonym",
+  whyProblematic: "Arabic-origin exonym imposed by colonial administrators",
+  contemporaryUsage: "still in common external use",
+  sortRank: 1,
+};
 
 const peopleRow = {
   id: "PPL_DINKA",
   content: {
     appellations: { selfAppellation: "Jieng" },
   },
-};
-
-const endonymRow = {
-  id: "nr-endonym-1",
-  name_text: "Jieng",
-  name_type: "endonym",
-  language_of_origin: "din",
-  meaning: "the people",
-  period_label: null,
-  imposed_by: null,
-  imposition_period: null,
-  why_problematic: null,
-  contemporary_usage: "primary self-identification",
-  assertion_id: "assertion-1",
-  sort_rank: 0,
-};
-
-const exonymRow = {
-  id: "nr-exonym-1",
-  name_text: "Dinka",
-  name_type: "exonym",
-  language_of_origin: "ara",
-  meaning: null,
-  period_label: null,
-  imposed_by: "British/Egyptian colonial administration",
-  imposition_period: "19th century",
-  why_problematic: "Arabic-origin exonym imposed by colonial administrators",
-  contemporary_usage: "still in common external use",
-  assertion_id: "assertion-2",
-  sort_rank: 1,
+  name_index: [endonymEntry, exonymEntry],
 };
 
 function mockTables({
   people = peopleRow,
-  names = [endonymRow, exonymRow],
-  assertions = [
-    { id: "assertion-1", source_ids: ["src-1"] },
-    { id: "assertion-2", source_ids: ["src-2"] },
-  ],
-  sources = [
-    {
-      id: "src-1",
-      title: "Ethnologue",
-      url: "https://ethnologue.com",
-      year: 2023,
-      tier: "official",
-    },
-    {
-      id: "src-2",
-      title: "UNESCO report",
-      url: "https://unesco.org",
-      year: 2019,
-      tier: "official",
-    },
-  ],
 }: {
   people?: Record<string, unknown> | null;
-  names?: Array<Record<string, unknown>>;
-  assertions?: Array<Record<string, unknown>>;
-  sources?: Array<Record<string, unknown>>;
 } = {}) {
   fromMock.mockImplementation((table: string) => {
     if (table === "afrik_peoples") return buildMaybeSingleQuery(people);
-    if (table === "name_records") return buildNameRecordsQuery(names);
-    if (table === "assertions") return buildAssertionsQuery(assertions);
-    if (table === "sources") return buildSourcesQuery(sources);
     throw new Error(`Unexpected table: ${table}`);
   });
 }
@@ -173,7 +111,7 @@ describe("names service — getPeopleNamesDossier", () => {
   });
 
   // @req REQ-092
-  it("returns the dossier ordered endonyms-first with per-record sources and confidence", async () => {
+  it("returns the dossier ordered endonyms-first with per-name sources and confidence", async () => {
     mockTables();
 
     const result = await getPeopleNamesDossier("PPL_DINKA");
@@ -184,13 +122,7 @@ describe("names service — getPeopleNamesDossier", () => {
     expect(result.names[0].nameText).toBe("Jieng");
     expect(result.names[0].nameType).toBe("endonym");
     expect(result.names[0].sources).toEqual([
-      {
-        id: "src-1",
-        title: "Ethnologue",
-        url: "https://ethnologue.com",
-        year: 2023,
-        tier: "official",
-      },
+      { id: "PPL_DINKA:name:0:source:0", ...ethnologue },
     ]);
     expect(result.names[0].confidence).toEqual({
       score: 85,
@@ -201,14 +133,14 @@ describe("names service — getPeopleNamesDossier", () => {
   });
 
   // @req REQ-092
-  it("nests imposition fields for an exonym with imposedBy set", async () => {
+  it("nests the imposition fields of an exonym", async () => {
     mockTables();
 
     const result = await getPeopleNamesDossier("PPL_DINKA");
 
     expect(result.names[1].imposition).toEqual({
-      imposedBy: "British/Egyptian colonial administration",
-      impositionPeriod: "19th century",
+      imposedBy: null,
+      impositionPeriod: null,
       whyProblematic: "Arabic-origin exonym imposed by colonial administrators",
       contemporaryUsage: "still in common external use",
     });
@@ -231,13 +163,10 @@ describe("names service — getPeopleNamesDossier", () => {
   // @req REQ-092
   it("sets imposition to null when no imposition-related field is present", async () => {
     mockTables({
-      names: [
-        {
-          ...endonymRow,
-          contemporary_usage: null,
-        },
-      ],
-      assertions: [{ id: "assertion-1", source_ids: ["src-1"] }],
+      people: {
+        ...peopleRow,
+        name_index: [{ ...endonymEntry, contemporaryUsage: null }],
+      },
     });
 
     const result = await getPeopleNamesDossier("PPL_DINKA");
@@ -245,68 +174,15 @@ describe("names service — getPeopleNamesDossier", () => {
     expect(result.names[0].imposition).toBeNull();
   });
 
-  // @req REQ-189
-  it("carries each form's attestations, with their page, to the dossier", async () => {
-    const attestation = {
-      formAsWritten: "Dinka",
-      year: 1841,
-      periodLabel: null,
-      attestedBy: "Expedition journal",
-      source: {
-        title: "Journal",
-        author: "A",
-        year: 1841,
-        url: "https://example.org",
-        tier: "referenced",
-        page: "p. 12",
-      },
-    };
-    mockTables({
-      names: [endonymRow, { ...exonymRow, attestations: [attestation] }],
-    });
-
-    const result = await getPeopleNamesDossier("PPL_DINKA");
-
-    expect(result.names[1].attestations).toEqual([attestation]);
-  });
-
+  // @req REQ-196
   // @req REQ-191
-  it("carries the answer-card fields to the dossier, and defaults when the row has none", async () => {
-    const pronunciation = {
-      respelling: "djièng",
-      audio: null,
-      source: {
-        title: "D",
-        author: "A",
-        year: 1990,
-        url: "u",
-        tier: "referenced",
-      },
-    };
-    mockTables({
-      names: [
-        {
-          ...endonymRow,
-          short_line: "Le nom qu'ils se donnent.",
-          named_by: null,
-          origin_debated: true,
-          used_in: ["din"],
-          pronunciation,
-        },
-        exonymRow,
-      ],
-    });
+  it("answers empty answer-card fields for a name derived from the appellations", async () => {
+    mockTables();
 
     const result = await getPeopleNamesDossier("PPL_DINKA");
 
-    expect(result.names[0]).toMatchObject({
-      shortLine: "Le nom qu'ils se donnent.",
-      namedBy: null,
-      originDebated: true,
-      usedIn: ["din"],
-      pronunciation,
-    });
     expect(result.names[1]).toMatchObject({
+      attestations: [],
       shortLine: null,
       namedBy: null,
       originDebated: false,
@@ -315,34 +191,23 @@ describe("names service — getPeopleNamesDossier", () => {
     });
   });
 
-  // @req REQ-189
-  it("answers an empty history, never a missing one, for a form with no attestation", async () => {
-    mockTables({ names: [{ ...endonymRow, attestations: null }] });
-
-    const result = await getPeopleNamesDossier("PPL_DINKA");
-
-    expect(result.names[0].attestations).toEqual([]);
-  });
-
   // @req REQ-092
-  it("returns an empty names array when the people has no name records", async () => {
-    mockTables({ names: [], assertions: [] });
+  it("returns an empty names array when the people has no indexed name", async () => {
+    mockTables({ people: { ...peopleRow, name_index: null } });
 
     const result = await getPeopleNamesDossier("PPL_DINKA");
 
     expect(result.names).toEqual([]);
   });
 
-  // @req REQ-092
-  it("batches sources and confidence lookups in one query each (AR17, no per-record queries)", async () => {
+  // @req REQ-196
+  it("reads the dossier from the people row alone, with one confidence lookup", async () => {
     mockTables();
 
     await getPeopleNamesDossier("PPL_DINKA");
 
     const calledTables = fromMock.mock.calls.map((call) => call[0]);
-    expect(calledTables.filter((t) => t === "name_records")).toHaveLength(1);
-    expect(calledTables.filter((t) => t === "assertions")).toHaveLength(1);
-    expect(calledTables.filter((t) => t === "sources")).toHaveLength(1);
+    expect(calledTables).toEqual(["afrik_peoples"]);
     expect(getConfidenceMap).toHaveBeenCalledTimes(1);
     expect(getConfidenceMap).toHaveBeenCalledWith(["PPL_DINKA"]);
   });
