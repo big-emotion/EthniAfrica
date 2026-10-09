@@ -316,6 +316,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Diarra s'écrit Jàra en bambara, comme le mot qui désigne le lion, un animal que le clan compte parmi ses interdits. Le dictionnaire bambara range le nom et le mot dans deux articles distincts et ne dit pas si l'un vient de l'autre : on ne sait pas d'où vient le nom.",
             "aspect": "meaning",
             "sources": [
@@ -346,6 +347,7 @@
               "to": 1960,
               "label": "Récit publié en 1960"
             },
+            "era": "modern",
             "statement": "Le nom Diarra est, dans l'épopée de Soundiata, celui des rois du pays de Do, d'où vient Sogolon, la mère de Soundiata : Do Mansa-Gnèmo Diarra, puis Faony Diarra, que le récit appelle aussi Faony Kondé.",
             "formAsWritten": "Do Mansa-Gnèmo Diarra",
             "actors": [

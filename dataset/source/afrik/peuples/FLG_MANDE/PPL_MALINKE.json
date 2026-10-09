@@ -34,6 +34,7 @@
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Maninka désigne les gens du pays appelé Mande ou Manden, sur le haut Niger, entre Kangaba et Siguiri. Djibril Tamsir Niane écrit Maninka, et met entre parenthèses la forme française « Malinkés ».",
             "aspect": "meaning",
             "sources": [
@@ -55,6 +56,7 @@
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Maninka a un cousin plus large, Mandenka, que Djibril Tamsir Niane emploie pour tous les peuples rattachés par la langue aux Soninké et aux Maninka, de la Guinée au Liberia.",
             "aspect": "usage",
             "sources": [
@@ -88,6 +90,7 @@
               "to": 1854,
               "label": "1854"
             },
+            "era": "polity",
             "statement": "Le nom Mandinka est noté Mandénga par Sigismund Koelle, d'après ses informateurs de Freetown. Pour lui, la finale -nga, souvent prononcée -nka, forme des noms de peuples : les Mandénga sont les gens du Mánde. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant lui.",
             "birth": true,
             "sources": [
@@ -120,6 +123,7 @@
               "to": 1856,
               "label": "1856"
             },
+            "era": "polity",
             "statement": "Le nom Malinké est écrit « Malinkiés » par le voyageur français Anne Raffenel. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
             "formAsWritten": "Malinkiés",
             "birth": true,
@@ -142,6 +146,7 @@
               "to": 1856,
               "label": "Proposée en 1856"
             },
+            "era": "polity",
             "statement": "Le nom Malinké voudrait dire « homme du Mali » : le nom Mali, ou Meli, suivi de -kié, « de », selon Anne Raffenel.",
             "hypothesisGroup": "origine du nom Malinké",
             "sources": [
@@ -175,6 +180,7 @@
               "to": 1856,
               "label": "1856"
             },
+            "era": "polity",
             "statement": "Le nom Mandingue est, selon Anne Raffenel, la forme française tirée de Mandingos, le nom que les voyageurs anglais donnent aux Malinkés.",
             "formAsWritten": "Mandingues",
             "sources": [
@@ -196,6 +202,7 @@
               "to": 1799,
               "label": "Voyage de 1795-1797 (récit publié en 1799)"
             },
+            "era": "polity",
             "statement": "Le nom Mandingue est écrit « Mandingoes » par le voyageur écossais Mungo Park.",
             "formAsWritten": "Mandingoes",
             "sources": [
@@ -217,6 +224,7 @@
               "to": 1596,
               "label": "Manuscrits de 1592-1596"
             },
+            "era": "polity",
             "statement": "Le nom Mandingue apparaît, écrit Mandingas, chez le Cap-Verdien André Álvares de Almada, qui parle du « Reino dos Mandingas », selon José da Silva Horta. Horta note que les auteurs portugais acceptaient le nom qu'une personne se donnait. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
             "birth": true,
             "sources": [
@@ -238,6 +246,7 @@
               "to": 1625,
               "label": "Rapportée en 1625"
             },
+            "era": "polity",
             "statement": "Le nom Mandingue viendrait de Mandimansa, le titre du roi du Mandé, selon ce que des Fulos, des Jalofos et des Mandingas disent à André Donelha, d'après José da Silva Horta.",
             "hypothesisGroup": "origine du nom Mandingue",
             "sources": [
@@ -259,6 +268,7 @@
               "to": 1799,
               "label": "Proposée en 1799"
             },
+            "era": "polity",
             "statement": "Le nom Mandingue viendrait de Manding, l'État de l'intérieur d'où ce peuple aurait migré, selon Mungo Park.",
             "hypothesisGroup": "origine du nom Mandingue",
             "sources": [
@@ -280,6 +290,7 @@
               "to": 1854,
               "label": "Proposée en 1854"
             },
+            "era": "polity",
             "statement": "Le nom Mandingue reposerait sur Mánde, le nom du pays, suivi de la finale -nga qui désigne les gens d'un lieu, selon Sigismund Koelle, puis H. Steinthal.",
             "hypothesisGroup": "origine du nom Mandingue",
             "sources": [

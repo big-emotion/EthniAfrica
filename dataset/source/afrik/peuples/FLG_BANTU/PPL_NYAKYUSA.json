@@ -168,6 +168,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "aspect": "meaning",
             "statement": "Le nom Nyakyusa désigne aujourd'hui le peuple de la vallée qui descend du mont Rungwe vers le lac Nyasa, en Tanzanie, et sa langue. Il a d'abord désigné un groupe plus petit. Les sources que nous avons lues ne donnent qu'une explication de son origine, présentée plus bas.",
             "sources": [
@@ -199,6 +200,7 @@
               "to": 1938,
               "label": "1934-1938"
             },
+            "era": "colonial",
             "statement": "Le nom Nyakyusa s'applique alors surtout aux chefs de la plaine du lac, au nord de la rivière Songwe, et à ceux de Masoko. En 1938, il englobe souvent aussi les gens de Selya et, dans la conversation, les Kukwe des collines, selon Monica Wilson. Un Kukwe parti travailler aux mines d'or de la Lupa se dit Nyakyusa ; chez lui, à Tukuyu, il se dit Kukwe.",
             "sources": [
               {
@@ -219,6 +221,7 @@
               "to": 1937,
               "label": "1936-1937"
             },
+            "era": "colonial",
             "statement": "Le nom Nyakyusa s'impose dans les livres avec les travaux de Godfrey et Monica Wilson, qui l'emploient pour distinguer les chefferies au nord de la Songwe du royaume de Ngonde au sud, selon Bastian Persohn. Ensuite, les linguistes qui décrivent les parlers de Tanzanie disent tous Nyakyusa.",
             "sources": [
               {
@@ -239,6 +242,7 @@
               "to": 1959,
               "label": "1959"
             },
+            "era": "colonial",
             "formAsWritten": "BaNyakyusa",
             "statement": "Le nom Nyakyusa est écrit « BaNyakyusa », avec le préfixe des noms de peuple, par Monica Wilson, qui leur dédie son livre.",
             "actors": [
@@ -266,6 +270,7 @@
               "to": 1925,
               "label": "1925"
             },
+            "era": "colonial",
             "formAsWritten": "Nyakyusa",
             "statement": "Le nom Nyakyusa est celui que se donnent les habitants des hauteurs de Tukuyu, à côté de plusieurs noms locaux, selon le missionnaire D. R. Mackenzie. Lui-même appelle tout le peuple Konde.",
             "actors": [
@@ -341,6 +346,7 @@
               "to": 1879,
               "label": "Années 1870"
             },
+            "era": "polity",
             "before": true,
             "statement": "Le nom Konde sert alors aux premiers Européens venus par le lac Nyasa pour désigner les groupes du nord du lac, dont ceux qu'on appellera plus tard Nyakyusa, selon Bastian Persohn.",
             "sources": [
@@ -375,6 +381,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "aspect": "usage",
             "statement": "Le nom Wanyakyusa est la forme qu'emploie le swahili, la langue commune de la Tanzanie. L'article de Wikipédia en swahili ajoute qu'on les appelle aussi Wangonde ou Wasochile.",
             "sources": [
@@ -407,6 +414,7 @@
               "to": null,
               "label": "Aujourd'hui"
             },
+            "era": "modern",
             "aspect": "usage",
             "statement": "Le nom Konde reste dans celui du diocèse de Konde de l'Église luthérienne de Tanzanie, dans la région de Mbeya, selon l'article de Wikipédia en swahili.",
             "sources": [
@@ -427,6 +435,7 @@
               "to": 1942,
               "label": "Jusqu'aux années 1940"
             },
+            "era": "colonial",
             "statement": "Le nom Konde reste en usage chez des linguistes des années 1930 et jusqu'en 1942, alors que les ethnologues disent déjà Nyakyusa, selon Bastian Persohn.",
             "sources": [
               {
@@ -447,6 +456,7 @@
               "to": 1925,
               "label": "1925"
             },
+            "era": "colonial",
             "formAsWritten": "Konde",
             "statement": "Le nom Konde est écrit « Konde » par le missionnaire D. R. Mackenzie, qui l'emploie pour tout le peuple, des deux côtés de la Songwe. Il précise que ce peuple appelle son pays Ngonde.",
             "actors": [
@@ -474,6 +484,7 @@
               "to": 1879,
               "label": "Note d'octobre 1877 (publiée en 1879)"
             },
+            "era": "polity",
             "birth": true,
             "formAsWritten": "Konde",
             "statement": "Le nom Konde est écrit par le consul J. Frederic Elton, qui traverse la région en octobre 1877 : le pays « est maintenant généralement connu sous le nom de Konde ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
@@ -502,6 +513,7 @@
               "to": 1879,
               "label": "Années 1870"
             },
+            "era": "polity",
             "statement": "Le nom Konde viendrait de Ngonde : les premiers Européens arrivés par le lac Nyasa débarquent d'abord dans le royaume de Ngonde et étendent ce nom aux groupes voisins, selon Bastian Persohn.",
             "sources": [
               {
@@ -534,6 +546,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "aspect": "meaning",
             "statement": "Le nom Ngonde désigne d'abord la plaine du Malawi au sud de la rivière Songwe, puis les collines qui faisaient partie du royaume du Kyungu, et les gens qui y vivent, selon Monica Wilson. Nous n'avons pas trouvé d'explication de son origine.",
             "sources": [
@@ -555,6 +568,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "aspect": "usage",
             "statement": "Le nom Ngonde sert aussi aux gens du nord de la Tanzanie, sous la forme MuNgonde, pour désigner les Nyakyusa de la plaine du lac, qui ne se nomment pas ainsi eux-mêmes, selon Bastian Persohn. La langue du Malawi se dit IkyaNgonde.",
             "sources": [
@@ -576,6 +590,7 @@
               "to": 1925,
               "label": "1925"
             },
+            "era": "colonial",
             "birth": true,
             "formAsWritten": "NGONDE",
             "statement": "Le nom Ngonde est écrit « NGONDE » par le missionnaire D. R. Mackenzie, comme le nom que ce peuple donne à son pays. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne existait déjà avant elle.",

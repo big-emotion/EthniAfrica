@@ -97,6 +97,7 @@
               "to": null,
               "label": "Aujourd'hui"
             },
+            "era": "modern",
             "statement": "Le nom Daloa désigne la ville chef-lieu de la région du Haut-Sassandra. On parle aussi des Bété de Daloa pour l'un des trois groupes du pays bété, à côté de ceux de Gagnoa et de Soubré, selon Jean-Pierre Dozon.",
             "aspect": "usage",
             "sources": [
@@ -165,6 +166,7 @@
               "to": 1916,
               "label": "1916"
             },
+            "era": "colonial",
             "statement": "Le nom Daloa devient aussi celui d'un cercle colonial, qui réunit les secteurs d'Issia, de Daloa et de Vavoua, selon Jean-Pierre Dozon.",
             "sources": [
               {
@@ -185,6 +187,7 @@
               "to": 1905,
               "label": "1905"
             },
+            "era": "colonial",
             "statement": "Le nom Daloa est celui d'un poste militaire français créé en 1905 par un officier que l'administrateur Georges Thomann envoie remonter le Sassandra, après le poste d'Issia, selon Jean-Pierre Dozon. C'est la plus ancienne date que nous connaissons pour ce nom ; le lieu était habité avant le poste.",
             "birth": true,
             "actors": [
@@ -270,6 +273,7 @@
               "to": 1873,
               "label": "Vers 1873"
             },
+            "era": "polity",
             "statement": "Avant le nom Daloa, il n'y avait pas de vrai village à cet endroit, mais un petit hameau de chasseurs en pleine forêt, dont le plus célèbre s'appelait Dalo, selon Rezo-Ivoire et Lebanco.net.",
             "before": true,
             "sources": [

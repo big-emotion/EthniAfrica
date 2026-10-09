@@ -34,6 +34,7 @@
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Soninké désigne le peuple qui a fondé l'empire du Ghana, dans le Wagadu, selon Djibril Tamsir Niane. Ailleurs, le même mot a pris d'autres sens : chez les Maninka, Soninké ou Sununke désigne un Maninka resté fidèle à la religion de ses ancêtres. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
             "aspect": "meaning",
             "sources": [
@@ -55,6 +56,7 @@
               "to": 1856,
               "label": "1856"
             },
+            "era": "polity",
             "statement": "Le nom Soninké est écrit « Soninkiés » par Anne Raffenel, qui rapporte des traditions selon lesquelles ce peuple occupait autrefois le Massina, le Ségou et le Bambouk.",
             "formAsWritten": "Soninkiés",
             "sources": [
@@ -76,6 +78,7 @@
               "to": 1684,
               "label": "Manuscrit de 1684"
             },
+            "era": "polity",
             "statement": "Le nom Soninké est écrit « Sominques » par le Portugais Francisco de Lemos Coelho, qui distingue ce peuple des Mandingas.",
             "formAsWritten": "Sominques",
             "sources": [
@@ -97,6 +100,7 @@
               "to": 1615,
               "label": "Vers 1615"
             },
+            "era": "polity",
             "statement": "Le nom Soninké apparaît par écrit sous la forme « Sonequeis » chez le jésuite Manuel Álvares, le premier à distinguer par écrit les Soninké des Mandingas, selon José da Silva Horta. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
             "formAsWritten": "Sonequeis",
             "birth": true,
@@ -131,6 +135,7 @@
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Sarakolé est l'un de ceux que les Maninka donnent aux Soninké, à côté de Marka ; le chemin vers leur pays s'appelle Sarakule sila, selon Djibril Tamsir Niane.",
             "aspect": "usage",
             "sources": [
@@ -152,6 +157,7 @@
               "to": 1830,
               "label": "1830"
             },
+            "era": "polity",
             "statement": "Le nom Sarakolé est écrit « séracolets, ou sarakolais » par le voyageur René Caillié, pour qui il désigne une corporation de marchands voyageurs et non un peuple.",
             "formAsWritten": "séracolets, ou sarakolais",
             "sources": [
@@ -173,6 +179,7 @@
               "to": 1799,
               "label": "Voyage de 1795-1797 (récit publié en 1799)"
             },
+            "era": "polity",
             "statement": "Le nom Sarakolé est écrit « Serawoollies » par Mungo Park, qui ajoute que les Français l'écrivent « Seracolets ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
             "formAsWritten": "Serawoollies, or (as the French write it) Seracolets",
             "birth": true,
@@ -206,6 +213,7 @@
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Marka est celui que les Maninka donnent couramment aux Soninké, selon Djibril Tamsir Niane.",
             "aspect": "usage",
             "sources": [
@@ -238,6 +246,7 @@
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Wakoré a la même origine que Wangara, le nom que les Peuls et les Haoussa donnent aux Manden ; Wakoré s'applique surtout aux Soninké, selon Djibril Tamsir Niane.",
             "aspect": "usage",
             "sources": [

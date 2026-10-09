@@ -215,6 +215,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Jula désigne un peuple de langue mandingue et, dans cette langue, le marchand qui va d'un lieu à un autre. D'où vient le mot reste discuté : plusieurs explications sont présentées plus bas.",
             "aspect": "meaning",
             "sources": [
@@ -256,6 +257,7 @@
               "to": 1623,
               "label": "Voyage de 1620-1621 (récit publié en 1623)"
             },
+            "era": "polity",
             "statement": "Le nom Jula est écrit « Iulietto » par Richard Jobson. Il rapporte les mots du marchand Buckor Sano, qui se dit « a Iulietto », c'est-à-dire un marchand qui va de place en place. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; Chikouna Cissé, à la suite d'Abdoulaye Bathily, y voit lui aussi la première mention écrite du mot. Le mot existait déjà avant elle.",
             "birth": true,
             "formAsWritten": "Iulietto",
@@ -298,6 +300,7 @@
               "to": 1299,
               "label": "XIIIe siècle, selon cette lecture"
             },
+            "era": "polity",
             "statement": "Le mot jula s'applique déjà aux chasseurs au XIIIe siècle, selon l'historien Drissa Diakité, cité par Chikouna Cissé. Aucun texte de cette époque n'est cité à l'appui.",
             "sources": [
               {
@@ -318,6 +321,7 @@
               "to": 2008,
               "label": "Proposée en 2008"
             },
+            "era": "modern",
             "statement": "Le nom Jula viendrait du mot mandingue jùla, « marchand », selon les linguistes Sangaré et Tera, cités par Yaya Konaté.",
             "hypothesisGroup": "origine du nom Jula",
             "sources": [
@@ -339,6 +343,7 @@
               "to": 2016,
               "label": "Rapportée en 2016"
             },
+            "era": "modern",
             "statement": "Le nom Jula viendrait de l'arabe jawla, « tournée » : le marchand serait celui qui fait beaucoup de tournées, selon des arabisants interrogés par Yaya Konaté. Chikouna Cissé retient cette lecture.",
             "hypothesisGroup": "origine du nom Jula",
             "sources": [
@@ -370,6 +375,7 @@
               "to": 1929,
               "label": "Proposée en 1929"
             },
+            "era": "colonial",
             "statement": "Le nom Jula voudrait dire « de la source », « de l'origine », selon Maurice Delafosse et selon un habitant de Bondoukou interrogé par Yaya Konaté : les Jula seraient alors « les originaires ».",
             "hypothesisGroup": "origine du nom Jula",
             "sources": [
@@ -404,6 +410,7 @@
               "to": null,
               "label": "Usage décrit au présent par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Dioula est celui que les peuples de la forêt donnent aux Mandingues en Côte d'Ivoire ; au Ghana, ils disent Wangara. Les deux mots veulent dire « marchand », selon Djibril Tamsir Niane.",
             "aspect": "usage",
             "sources": [
@@ -425,6 +432,7 @@
               "to": 1901,
               "label": "1901"
             },
+            "era": "colonial",
             "statement": "Le nom Dioula est écrit « Dyoula » par Maurice Delafosse, dans le titre d'un manuel qui étudie leur parler.",
             "formAsWritten": "Dyoula",
             "actors": [
@@ -463,6 +471,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Wangara désigne des marchands de langue mandingue ; il est encore employé au Ghana. Son lien avec le nom Jula est discuté : les lectures sont présentées plus bas.",
             "aspect": "meaning",
             "sources": [
@@ -524,6 +533,7 @@
               "to": 1354,
               "label": "1353-1354"
             },
+            "era": "polity",
             "statement": "Le nom Wangara est associé aux marchands par le voyageur Ibn Baṭṭūṭa, le premier à le faire selon Chikouna Cissé, qui s'appuie sur Raymond Mauny.",
             "sources": [
               {
@@ -544,6 +554,7 @@
               "to": 1154,
               "label": "1154"
             },
+            "era": "polity",
             "statement": "Le nom Wangara désigne le « pays de l'or » chez le géographe al-Idrīsī, selon Chikouna Cissé.",
             "sources": [
               {
@@ -564,6 +575,7 @@
               "to": 1099,
               "label": "XIe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Wangara apparaît chez le géographe al-Bakrī, qui parle de marchands noirs, les Nungharmata, transportant la poudre d'or ; Djibril Tamsir Niane y reconnaît les Wangara. C'est la plus ancienne trace sûre de ce nom que le projet connaît. Ces marchands existaient déjà avant elle.",
             "birth": true,
             "formAsWritten": "Nungharmata",
@@ -586,6 +598,7 @@
               "to": 999,
               "label": "Xe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Wangara figure peut-être, sous la forme Amdjara, chez l'historien al-Mas'ūdī, selon Jean Devisse, qui ne l'affirme pas. Les sources ne disent pas s'il s'agit du même nom.",
             "sources": [
               {
@@ -606,6 +619,7 @@
               "to": 2025,
               "label": "Rapportée en 2025"
             },
+            "era": "modern",
             "statement": "Le nom Wangara désignerait d'abord un peuple du bord du Sahel, devenu avec le temps le nom d'une classe de négociants répandue dans toute l'Afrique de l'Ouest, selon François-Xavier Fauvelle, cité par Chikouna Cissé.",
             "hypothesisGroup": "Wangara et Jula",
             "sources": [
@@ -627,6 +641,7 @@
               "to": 2025,
               "label": "Rapportée en 2025"
             },
+            "era": "modern",
             "statement": "Le nom Wangara serait celui d'un peuple distinct, plus ancien que la communauté des marchands jula, selon Andreas Massing, cité par Chikouna Cissé.",
             "hypothesisGroup": "Wangara et Jula",
             "sources": [
@@ -648,6 +663,7 @@
               "to": 2025,
               "label": "Rapportée en 2025"
             },
+            "era": "modern",
             "statement": "Le nom Wangara ne désignerait qu'une variante de la langue jula, selon Marie Perinbam, citée par Chikouna Cissé.",
             "hypothesisGroup": "Wangara et Jula",
             "sources": [
@@ -669,6 +685,7 @@
               "to": 1984,
               "label": "Proposée en 1984"
             },
+            "era": "modern",
             "statement": "Le nom Wangara serait un synonyme de Dioula, employé par les Peuls et les Haoussa pour les Mandingues engagés dans le commerce, selon Djibril Tamsir Niane.",
             "hypothesisGroup": "Wangara et Jula",
             "sources": [

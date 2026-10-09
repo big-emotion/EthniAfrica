@@ -153,6 +153,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Terme universellement utilisé en français, en anglais et par les institutions maliennes ; c'est aussi le terme que la communauté emploie pour se désigner elle-même. « Dogon » regroupe une douzaine de langues distinctes et non mutuellement intelligibles : l'unité qu'il nomme est culturelle et territoriale, pas strictement linguistique.",
             "aspect": "usage",
             "sources": [
@@ -173,6 +174,7 @@
               "to": null,
               "label": "Décrit en 1995"
             },
+            "era": "modern",
             "statement": "Le nom Dogon est accepté par tous les clans qui s'en réclament ; pour une personne, on lui ajoute un suffixe. Les voisins emploient d'autres noms : Habbé chez les Peuls, Kaado chez les Dioula, Tombon chez les Bwaba, Tomhon chez les Bambara de Ségou, Kibsi chez les Mossi, selon Jacky Bouju.",
             "sources": [
               {
@@ -213,6 +215,7 @@
               "to": 1938,
               "label": "1938"
             },
+            "era": "colonial",
             "birth": true,
             "statement": "Le nom Dogon figure dans le titre de la thèse de l'ethnologue Marcel Griaule, Masques dogons, parue en 1938, selon Paul R. Davis. C'est la plus ancienne trace de ce nom que le projet connaît ; des mentions plus anciennes existent sans doute. Le peuple existait bien avant elle.",
             "actors": [
@@ -239,6 +242,7 @@
               "to": 1930,
               "label": "Jusqu'aux années 1930"
             },
+            "era": "colonial",
             "before": true,
             "statement": "On parle alors surtout de Habé pour désigner les Dogon, chez les Européens comme chez les Peuls, selon Paul R. Davis.",
             "sources": [
@@ -270,6 +274,7 @@
               "to": null,
               "label": "Usage décrit en 1995 et en 2017"
             },
+            "era": "modern",
             "aspect": "meaning",
             "statement": "Le nom Habé est celui que les Peuls, musulmans, donnent aux Dogon ; au singulier, il fait Kado. Ils l'employaient pour les rabaisser comme paysans et infidèles, selon Paul R. Davis. Son origine est discutée ; nous présentons les explications plus bas.",
             "sources": [
@@ -300,6 +305,7 @@
               "to": 1930,
               "label": "Jusqu'aux années 1930"
             },
+            "era": "colonial",
             "aspect": "usage",
             "statement": "Le nom Habé, ou Habbe, est celui sous lequel la plupart des Européens et des Américains connaissent les Dogon jusqu'aux années 1930 ; les administrateurs coloniaux l'ont emprunté aux Peuls, selon Paul R. Davis.",
             "sources": [
@@ -320,6 +326,7 @@
               "to": 1910,
               "label": "1910"
             },
+            "era": "colonial",
             "statement": "Le nom Habé figure dans une déclaration de l'administration coloniale de 1910 : « Désormais les Habé peuvent être considérés comme soumis », selon Paul R. Davis.",
             "sources": [
               {
@@ -339,6 +346,7 @@
               "to": 1907,
               "label": "Livre publié en 1907"
             },
+            "era": "colonial",
             "birth": true,
             "formAsWritten": "Habbés",
             "statement": "Le nom Habé est écrit « Habbés » par le lieutenant Louis Desplagnes, pour qui les Foulbé, musulmans de la plaine, appellent ainsi les montagnards du plateau ; au singulier, note-t-il, le mot fait Kaddo. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un Européen l'a noté, pas depuis quand les Peuls l'emploient.",
@@ -367,6 +375,7 @@
               "to": 1907,
               "label": "Proposée en 1907"
             },
+            "era": "colonial",
             "hypothesisGroup": "origine du nom Habé",
             "statement": "Le nom Habé viendrait de Kambé ou Hambbé, le nom d'un groupe venu du nord ; les pasteurs peuls l'auraient repris pour tous les montagnards hostiles à l'islam, puis le mot aurait pris un sens très général, selon Louis Desplagnes.",
             "sources": [

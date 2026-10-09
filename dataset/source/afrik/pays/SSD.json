@@ -24,6 +24,7 @@
               "to": null,
               "label": "Depuis le 9 juillet 2011"
             },
+            "era": "modern",
             "statement": "Le nom Soudan du Sud est celui de la République du Soudan du Sud, qui proclame son indépendance le 9 juillet 2011 après le référendum de janvier, selon l'Office of the Historian.",
             "aspect": "usage",
             "sources": [
@@ -74,6 +75,7 @@
               "to": 2011,
               "label": "Janvier 2011"
             },
+            "era": "modern",
             "statement": "Le nom Soudan du Sud apparaît dans un article de presse du 23 janvier 2011 : un comité de pilotage l'a retenu pour le futur État, sous la forme République du Soudan du Sud, selon Josh Kron. C'est la plus ancienne trace de ce nom que le projet connaît ; l'article note que des ministères l'employaient déjà.",
             "birth": true,
             "sources": [
@@ -94,6 +96,7 @@
               "to": 2011,
               "label": "Janvier 2011"
             },
+            "era": "modern",
             "statement": "Le nom Soudan du Sud a été préféré à plus d'une douzaine d'autres propositions, dont Azania, Nile Republic, Kush Republic et Juwama, formé sur les noms de Juba, Wau et Malakal. Le ministre Benjamin Marial explique ce choix par la familiarité et la commodité, selon Josh Kron.",
             "sources": [
               {
@@ -144,6 +147,7 @@
               "to": 2011,
               "label": "2005-2011"
             },
+            "era": "modern",
             "statement": "Le nom Southern Sudan désigne la région qui vote en janvier 2011 sur son autodétermination, comme le prévoyait l'accord de paix de 2005, selon l'Office of the Historian. Josh Kron l'emploie aussi pour le gouvernement régional qui choisit le nom du futur État.",
             "aspect": "usage",
             "sources": [

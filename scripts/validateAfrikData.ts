@@ -4026,6 +4026,7 @@ const NAME_HISTORY_FICHE_DIRECTORIES = [
  */
 export function checkNameHistoryBlocks(datasetRoot: string): ValidationResult {
   const errors: string[] = [];
+  const warnings: string[] = [];
 
   for (const directory of NAME_HISTORY_FICHE_DIRECTORIES) {
     for (const fullPath of collectJsonFiles(
@@ -4059,10 +4060,30 @@ export function checkNameHistoryBlocks(datasetRoot: string): ValidationResult {
         }
         seen.add(nameText);
       }
+
+      // A warning, not an error: the accounts left without an era are the
+      // ones whose territory or date the colonial-periods table cannot
+      // settle, listed for the operator. A new account lands in this list
+      // until someone decides its era.
+      let undecidedCount = 0;
+      const undecided = names.flatMap(({ nameText, accounts }) => {
+        const indexes = accounts.flatMap((account, index) =>
+          account.era === undefined ? [`#${index}`] : []
+        );
+        undecidedCount += indexes.length;
+        return indexes.length > 0
+          ? [`"${nameText}" ${indexes.join(", ")}`]
+          : [];
+      });
+      if (undecidedCount > 0) {
+        warnings.push(
+          `REQ-196: ${file}: ${undecidedCount} nameHistory account(s) declare no era (docs/editorial/strategy/colonial-periods.md): ${undecided.join("; ")}`
+        );
+      }
     }
   }
 
-  return { ok: errors.length === 0, errors, warnings: [] };
+  return { ok: errors.length === 0, errors, warnings };
 }
 
 /**

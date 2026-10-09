@@ -16,7 +16,10 @@
  * where the author wrote them relative to the birth, and nothing else.
  */
 
-import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
+import type {
+  NameHistory,
+  NameHistoryEra,
+} from "@/lib/afrik/parsers/nameHistoryParser";
 import {
   answersToSearch,
   orderForSearch,
@@ -26,14 +29,14 @@ import {
 type HistoryName = NameHistory["names"][number];
 export type NameHistoryAccount = HistoryName["accounts"][number];
 
-export type TimelineRegime = "polity" | "colonial" | "modern";
+export type TimelineRegime = NameHistoryEra;
 
 export interface TimelineTile {
   key: string;
   placement: "plain" | "birth" | "before";
   /** Undefined for a group whose hypotheses are dated differently. */
   periodLabel?: string;
-  /** Undefined for an undated tile: its era is not ours to guess. */
+  /** Undefined for an undated tile that declares no era: not ours to guess. */
   regime?: TimelineRegime;
   /** Several accounts only when they are competing origins of one group. */
   hypotheses: boolean;
@@ -58,9 +61,10 @@ export interface NameTimelineModel {
   italicForms: string[];
 }
 
-// Approximate cuts, since the block declares no era: the Berlin conference
-// for the colonial period, 1960 for the independences. A tile is inked by the
-// latest year it covers.
+// Approximate cuts, read only for an account that declares no era: the Berlin
+// conference for the colonial period, 1960 for the independences. They are
+// wrong wherever colonial rule came earlier or later, which is why a fiche
+// states the era itself.
 const COLONIAL_FROM = 1885;
 const MODERN_FROM = 1960;
 
@@ -79,21 +83,34 @@ function latestYear(account: NameHistoryAccount): number | null {
 const byLatestFirst = (a: NameHistoryAccount, b: NameHistoryAccount) =>
   (latestYear(b) ?? -Infinity) - (latestYear(a) ?? -Infinity);
 
+const eraOf = (account: NameHistoryAccount) =>
+  account.era ?? regimeOfYear(latestYear(account));
+
+// A tile is inked by its latest account. Competing hypotheses of different
+// eras with an undated one among them have no latest account, so no ink.
+function regimeOfTile(
+  accounts: NameHistoryAccount[]
+): TimelineRegime | undefined {
+  const eras = accounts.map(eraOf);
+  if (eras.some((era) => era === undefined)) return undefined;
+  if (new Set(eras).size === 1) return eras[0];
+  if (accounts.some((account) => latestYear(account) === null)) {
+    return undefined;
+  }
+  return eraOf([...accounts].sort(byLatestFirst)[0]);
+}
+
 function tileOf(
   accounts: NameHistoryAccount[],
   placement: TimelineTile["placement"],
   key: string
 ): TimelineTile {
   const labels = new Set(accounts.map(({ period }) => period.label));
-  const years = accounts.map(latestYear).filter((year) => year !== null);
   return {
     key,
     placement,
     periodLabel: labels.size === 1 ? accounts[0].period.label : undefined,
-    regime:
-      years.length === accounts.length
-        ? regimeOfYear(Math.max(...years))
-        : undefined,
+    regime: regimeOfTile(accounts),
     hypotheses: accounts.length > 1,
     accounts,
   };

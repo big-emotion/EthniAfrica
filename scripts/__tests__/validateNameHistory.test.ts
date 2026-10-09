@@ -56,6 +56,7 @@ function nameHistory(accounts: unknown[]) {
 function account(overrides: Record<string, unknown> = {}) {
   return {
     period: { from: 1500, to: 1599, label: "XVIe siècle" },
+    era: "polity",
     statement: "Le nom Testa apparaît au XVIe siècle selon le récit.",
     sources: [oralSource()],
     ...overrides,
@@ -154,6 +155,28 @@ describe("checkNameHistoryBlocks", () => {
     expect(result.errors).toContainEqual(
       expect.stringMatching(/pays\/TST\.json.*name "Testa".*at most one birth/)
     );
+  });
+
+  // @req REQ-196
+  it("warns, without failing, about the accounts that declare no era", () => {
+    // writeJson drops an undefined key, as a fiche without the field.
+    const undecided = account({ era: undefined });
+    writeJson(tmpDir, "pays/TST.json", {
+      id: "TST",
+      nameHistory: nameHistory([
+        account({ birth: true }),
+        undecided,
+        undecided,
+      ]),
+    });
+
+    expect(checkNameHistoryBlocks(tmpDir)).toEqual({
+      ok: true,
+      errors: [],
+      warnings: [
+        'REQ-196: pays/TST.json: 2 nameHistory account(s) declare no era (docs/editorial/strategy/colonial-periods.md): "Testa" #1, #2',
+      ],
+    });
   });
 
   // @req REQ-195

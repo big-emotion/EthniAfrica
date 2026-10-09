@@ -444,6 +444,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Camara est un nom de clan mandingue, porté notamment au Mali, en Guinée, au Liberia et en Côte d'Ivoire. Un mémoire de 2017 donne Camara et Kamara comme deux écritures françaises du même nom de clan, Kàmara.",
             "aspect": "usage",
             "sources": [
@@ -485,6 +486,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Camara désigne un clan mandingue. Aucun dictionnaire ni linguiste consulté ne lui donne de sens, et le griot de l'épopée publiée en 1960 dit savoir pourquoi on s'appelle Kamara sans le dire. Les origines proposées restent des hypothèses, présentées séparément.",
             "aspect": "meaning",
             "sources": [
@@ -544,6 +546,7 @@
               "to": 1907,
               "label": "1907"
             },
+            "era": "colonial",
             "statement": "Le nom Camara est écrit Kamara par André Arcin, administrateur colonial, à propos « des Kamara de Beyla (Konianka) et des hautes régions du Libéria ».",
             "formAsWritten": "Kamara",
             "actors": [
@@ -571,6 +574,7 @@
               "to": 1960,
               "label": "Récit publié en 1960"
             },
+            "era": "modern",
             "statement": "Le nom Camara, écrit Kamara, désigne dans l'épopée de Soundiata deux branches : les Kamara de Sibi, dits Dalikimbon, et les Kamara forgerons de Tabon, dits Sinikimbon, selon le récit du griot Djeli Mamadou Kouyaté publié par Djibril Tamsir Niane.",
             "sources": [
               {
@@ -592,6 +596,7 @@
               "to": null,
               "label": "Date disputée, du XIVe au XVIe siècle ou plus tôt"
             },
+            "era": "polity",
             "statement": "Le nom Camara est celui du clan qui aurait conduit des clans mandingues du haut Niger vers la côte, à l'origine des Kono et des Vai. Les historiens ne s'accordent pas sur la date de ce mouvement, selon l'Histoire générale de l'Afrique.",
             "sources": [
               {
@@ -632,6 +637,7 @@
               "to": 2017,
               "label": "Recueilli en 2017"
             },
+            "era": "modern",
             "statement": "Le nom Camara viendrait d'un ancêtre : les descendants de Kamanjan Boro, fils de Neni Mansa Kara, auraient été les premiers à s'appeler Kamara, selon le griot Babou Condé, de Fadama en Guinée.",
             "hypothesisGroup": "origine du nom Camara",
             "actors": [
@@ -703,6 +709,7 @@
               "to": 1970,
               "label": "Proposé en 1970"
             },
+            "era": "modern",
             "statement": "Le nom Camara serait apparu d'abord chez les ancêtres des Soninké, avant le monde malinké, selon une hypothèse de N'Diaye que rapporte E. A. Bogacheva, qui la donne pour probable et non pour établie.",
             "hypothesisGroup": "origine du nom Camara",
             "sources": [
@@ -724,6 +731,7 @@
               "to": 1907,
               "label": "Proposé en 1907"
             },
+            "era": "colonial",
             "statement": "Le nom Camara viendrait de Hamara, les « hommes rouges du Nord », selon une question que pose André Arcin, administrateur colonial, sur une simple ressemblance de sons.",
             "hypothesisGroup": "origine du nom Camara",
             "sources": [
@@ -755,6 +763,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Kamara est une autre écriture française de Camara : un mémoire de 2017 donne les deux pour le même nom de clan, Kàmara.",
             "sources": [
               {

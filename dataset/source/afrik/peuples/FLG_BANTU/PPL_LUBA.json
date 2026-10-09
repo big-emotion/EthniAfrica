@@ -158,6 +158,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "aspect": "meaning",
             "statement": "Le nom Luba désigne moins un peuple aux limites nettes qu'un système politique et culturel, né au Katanga, dans lequel se sont formés plusieurs peuples, selon Ndaywel è Nziem. Nous n'avons pas trouvé d'étude sur l'origine du mot lui-même.",
             "sources": [
@@ -179,6 +180,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "aspect": "usage",
             "statement": "Le nom Luba s'applique aujourd'hui aux Luba du Katanga, appelés Luba Shankadi, et aux Luba du Kasaï, appelés Luba Lubilanji. L'histoire luba concerne aussi les Songye, les Kanyok, les Kete, les Sala Mpasu, les Bindji et les Lulua, selon Ndaywel è Nziem.",
             "sources": [
@@ -200,6 +202,7 @@
               "to": 1299,
               "label": "Au plus tard au XIIIe siècle"
             },
+            "era": "polity",
             "before": true,
             "statement": "Les ancêtres des Luba vivent alors dans la dépression de l'Upemba. À Sanga et à Katota, les fouilles montrent des insignes de pouvoir au plus tard au XIIIe siècle. Ces deux chefferies ne sont pas encore le royaume luba, dont les traditions orales ne permettent pas de remonter sûrement avant 1700, selon Ndaywel è Nziem.",
             "sources": [
@@ -232,6 +235,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "aspect": "usage",
             "statement": "Le nom Baluba est le pluriel de Luba, formé avec le préfixe ba- ; une seule personne se dit Muluba, et la langue du Katanga s'appelle kiluba, selon l'article de Wikipédia.",
             "sources": [
@@ -252,6 +256,7 @@
               "to": 1874,
               "label": "Note du 18 mai 1869, publiée en 1874"
             },
+            "era": "polity",
             "birth": true,
             "formAsWritten": "Baluba",
             "statement": "Le nom Baluba figure dans le journal de David Livingstone, à Ujiji, le 18 mai 1869, au bout d'une route qui mène « on to Baluba ». La note ne dit pas s'il s'agit d'un peuple ou d'un pays. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",

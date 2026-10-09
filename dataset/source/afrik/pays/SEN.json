@@ -24,6 +24,7 @@
               "to": null,
               "label": "Depuis 1960"
             },
+            "era": "modern",
             "statement": "Le nom Sénégal est celui de la République du Sénégal, qui le tient du fleuve formant ses frontières au nord et à l'est. L'État se retire de la Fédération du Mali et proclame son indépendance le 20 août 1960, selon l'Office of the Historian.",
             "aspect": "usage",
             "sources": [
@@ -53,6 +54,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Sénégal désigne d'abord un fleuve d'Afrique de l'Ouest, puis le pays qu'il borde. Son origine est discutée depuis longtemps : en 2006, le journaliste et ancien ambassadeur Saliou Kandji récuse encore toutes les explications proposées avant lui. Nous présentons ces explications une à une.",
             "aspect": "meaning",
             "sources": [
@@ -91,6 +93,7 @@
               "to": 1453,
               "label": "Chronique achevée en 1453"
             },
+            "era": "polity",
             "statement": "Le nom Sénégal est écrit Çanaga dans la chronique portugaise de Gomes Eanes de Zurara. Il y nomme le fleuve que les navigateurs portugais cherchent le long de la côte, d'après ce que le prince Henri a appris de prisonniers azenègues.",
             "formAsWritten": "Çanaga",
             "sources": [
@@ -112,6 +115,7 @@
               "to": 1446,
               "label": "1446"
             },
+            "era": "polity",
             "statement": "Le nom Sénégal est écrit Sanaga chez le navigateur portugais Deniz Fernandez en 1446, puis Senega chez Ca da Mosto, Thevet et Marmol, selon Maurice Delafosse.",
             "formAsWritten": "Sanaga",
             "sources": [
@@ -133,6 +137,7 @@
               "to": 1351,
               "label": "1351"
             },
+            "era": "polity",
             "statement": "Le nom Sénégal figure sous la forme Senegany dans un livre de pilotes des Médicis daté de 1351, où il désigne un royaume de la basse vallée du fleuve, selon Maurice Delafosse. Nous n'avons pas vu ce document nous-mêmes.",
             "formAsWritten": "Senegany",
             "sources": [
@@ -154,6 +159,7 @@
               "to": 1099,
               "label": "XIe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Sénégal a peut-être sa plus ancienne trace chez le géographe al-Bakrī, qui nomme Sanaghāna ou Sanghāna un royaume noir de la basse vallée du fleuve, selon Maurice Delafosse. C'est la plus ancienne trace de ce nom que le projet connaît, si l'on admet avec Delafosse qu'il s'agit du même nom. Le fleuve et les peuples de ses rives existaient bien avant lui.",
             "formAsWritten": "Sanghāna",
             "birth": true,
@@ -176,6 +182,7 @@
               "to": null,
               "label": "Nom wolof rapporté pour 1447"
             },
+            "era": "polity",
             "statement": "On appelle le fleuve Ovidech, selon le navigateur Lancelot en 1447, tel que le rapporte l'abbé David Boilat. Boilat y entend le wolof Vi-dekh, « cette rivière ».",
             "before": true,
             "sources": [
@@ -197,6 +204,7 @@
               "to": null,
               "label": "Noms des riverains, notés en 1573"
             },
+            "era": "polity",
             "statement": "On appelle aussi le fleuve Mayo chez les Toucouleurs et Colle chez les Soninkés du Ngalam, selon le géographe espagnol Luis del Mármol Carvajal en 1573, cité par l'article de Wikipédia en anglais consacré au fleuve.",
             "before": true,
             "sources": [

@@ -156,6 +156,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Ouédraogo figure parmi les exemples de noms de famille mossi que cite la Société internationale de linguistique. Chez les Mossi, un tel nom désigne un buudu, un groupe de descendance par les pères, selon Michel Izard.",
             "aspect": "usage",
             "sources": [
@@ -187,6 +188,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Ouédraogo désigne un lignage mossi. Les sources le rattachent toutes à un cheval, mais elles ne lui donnent pas le même sens ; nous les présentons séparément.",
             "aspect": "meaning",
             "sources": [
@@ -228,6 +230,7 @@
               "to": 1909,
               "label": "1909"
             },
+            "era": "colonial",
             "statement": "Le nom Ouédraogo apparaît par écrit sous la forme Ouidiraogo chez Lucien Marc, officier colonial, qui le donne à la fille du roi de Gambaga dans les traditions locales qu'il rapporte. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est porté.",
             "formAsWritten": "Ouidiraogo",
             "birth": true,
@@ -256,6 +259,7 @@
               "to": 1909,
               "label": "Rapporté en 1909"
             },
+            "era": "colonial",
             "statement": "Le nom Ouédraogo signifierait « pied de cheval » et serait celui de la fille du roi de Gambaga, selon les traditions locales que rapporte Lucien Marc.",
             "hypothesisGroup": "sens du nom Ouédraogo",
             "sources": [
@@ -277,6 +281,7 @@
               "to": 1963,
               "label": "Publié en 1963"
             },
+            "era": "modern",
             "statement": "Le nom Ouédraogo viendrait du cheval fougueux de la princesse Yennenga : leur fils, à elle et au chasseur Rialé, aurait été nommé ainsi en souvenir de ce cheval, selon l'histoire traditionnelle des Mossi publiée par Yamba Tiendrebeogo.",
             "hypothesisGroup": "sens du nom Ouédraogo",
             "actors": [
@@ -348,6 +353,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Wedraogo est une autre écriture d'Ouédraogo, que donne le projet de répertoire des patronymes du Burkina Faso.",
             "sources": [
               {

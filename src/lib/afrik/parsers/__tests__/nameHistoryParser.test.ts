@@ -257,6 +257,39 @@ describe("parseNameHistory", () => {
   });
 
   // @req REQ-196
+  it("keeps the era an account declares for its territory and date", () => {
+    const parsed = parseNameHistory(
+      nameHistory([
+        account({ era: "colonial" }),
+        account({
+          era: "polity",
+          period: { from: 1848, to: 1848, label: "1848" },
+        }),
+        account({ period: { from: null, to: null, label: "Non daté" } }),
+      ])
+    );
+
+    expect(parsed.errors).toEqual([]);
+    expect(parsed.data!.names[0].accounts.map(({ era }) => era)).toEqual([
+      "colonial",
+      "polity",
+      undefined,
+    ]);
+  });
+
+  // @req REQ-196
+  it("refuses an era outside polity, colonial and modern", () => {
+    const parsed = parseNameHistory(
+      nameHistory([account({ era: "precolonial" })])
+    );
+
+    expect(parsed.success).toBe(false);
+    expect(parsed.errors.join("\n")).toMatch(
+      /era must be one of polity, colonial, modern/
+    );
+  });
+
+  // @req REQ-196
   it("refuses a pronunciation whose source has no source_kind", () => {
     const withoutKind: Record<string, unknown> = writtenSource();
     delete withoutKind.source_kind;
