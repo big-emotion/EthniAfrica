@@ -292,7 +292,7 @@ describe("SearchResultCard — word", () => {
 
     expect(screen.getByRole("link", { name: "race" })).toHaveAttribute(
       "href",
-      "/fr/atlas/recherche?q=race"
+      `${getLocalizedRoute("fr", "search")}?q=race`
     );
     expect(screen.getByText("Mot")).toBeInTheDocument();
   });
