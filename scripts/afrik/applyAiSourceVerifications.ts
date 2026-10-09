@@ -9,8 +9,8 @@
  * deletes a source for not being written or online.
  *
  * The replacement keeps the original's `sourceKey`, which a fiche's
- * attestations cite by name, and writes no `notes`: notes are published to
- * readers verbatim, and a ledger id is workshop vocabulary
+ * attestations cite by name, and never puts the ledger id in `notes`: notes
+ * are published to readers verbatim, and a ledger id is workshop vocabulary
  * (docs/editorial/reader-facing-register.md). The ledger already ties the
  * citation to its verification by fiche, title and url.
  *
@@ -66,21 +66,34 @@ export interface AiSourceVerificationReport {
   ratchetLine: string | null;
 }
 
+/**
+ * A patronyme fiche's source model is strict and has no author or year field,
+ * so there they open the note, as the corpus already writes them by hand.
+ */
+function isPatronymeFiche(fiche: string): boolean {
+  return /^patronymes\/PAT_[^/]+\.json$/.test(fiche);
+}
+
 function citationFor(
   entry: AiSourceVerification,
   original: Record<string, unknown>
 ): Record<string, unknown> {
   const chosen = entry.candidates[entry.chosen];
+  const byline = [chosen.author, chosen.year].filter(
+    (part) => part !== null && part !== undefined && part !== ""
+  );
+  const inNote = isPatronymeFiche(entry.fiche);
   return {
     ...(typeof original.sourceKey === "string"
       ? { sourceKey: original.sourceKey }
       : {}),
     title: chosen.title,
-    ...(chosen.author ? { author: chosen.author } : {}),
-    ...(chosen.year !== null ? { year: chosen.year } : {}),
+    ...(!inNote && chosen.author ? { author: chosen.author } : {}),
+    ...(!inNote && chosen.year !== null ? { year: chosen.year } : {}),
     url: chosen.url,
     tier: entry.tier,
     source_kind: chosen.source_kind,
+    ...(inNote && byline.length > 0 ? { notes: `${byline.join(", ")}.` } : {}),
   };
 }
 

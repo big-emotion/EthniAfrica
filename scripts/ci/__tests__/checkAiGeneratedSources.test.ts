@@ -253,16 +253,20 @@ describe("checkAiGeneratedSources", () => {
   });
 
   // @req REQ-161
-  it("counts the live queue's 849 markers as 849 sources, 1343 in all", () => {
+  // Counts shrink with every reviewed batch, so the invariant is pinned, not
+  // the 849 markers / 1343 sources measured on 2026-10-08.
+  it("counts every live queue marker as a source of its own", () => {
     const live = checkAiGeneratedSources("dataset/source/afrik", 0);
     const identities = new Set(live.sources.map(sourceIdentity));
     const queueMarkers = live.sources.filter(
       (source) => source.fiche === "patronymes/_candidates-by-country.json"
     );
 
-    expect(queueMarkers).toHaveLength(849);
-    expect(new Set(queueMarkers.map(sourceIdentity)).size).toBe(849);
-    expect(identities.size).toBe(1343);
+    expect(queueMarkers.length).toBeGreaterThan(0);
+    expect(new Set(queueMarkers.map(sourceIdentity)).size).toBe(
+      queueMarkers.length
+    );
+    expect(identities.size).toBe(live.sources.length);
   });
 
   // @req REQ-161

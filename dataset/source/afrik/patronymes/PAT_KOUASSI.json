@@ -61,11 +61,10 @@
   "sources": [
     {
       "sourceKey": "afrik-candidate-queue",
-      "title": "Relevé de couverture anthroponymique EthniAfrica",
-      "url": null,
+      "title": "Baoulés",
+      "url": "https://fr.wikipedia.org/wiki/Baoul%C3%A9s",
       "tier": "unverified",
-      "source_kind": "ai_generated",
-      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "source_kind": "community"
     },
     {
       "sourceKey": "pagnet-2005-noms-baoule",

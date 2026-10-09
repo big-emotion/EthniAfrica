@@ -194,11 +194,11 @@
     },
     {
       "sourceKey": "afrik-candidate-queue",
-      "title": "Relevé de couverture anthroponymique EthniAfrica",
-      "url": null,
-      "tier": "unverified",
-      "source_kind": "ai_generated",
-      "notes": "Relevé interne d'EthniAfrica. Il enregistre que le nom est porté en Guinée, sans qu'un travail publié ait été consulté pour cette attestation-là : les sources nommées à côté documentent le nom au Mali et dans le Manden, non sa répartition guinéenne. Les autres affirmations de cette fiche ne reposent pas sur ce relevé."
+      "title": "Les ancêtres de Samori",
+      "url": "https://www.persee.fr/doc/cea_0008-0055_1963_num_4_13_3008",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Yves Person, 1963. Article paru dans les Cahiers d'études africaines, vol. 4, n° 13, 1963, p. 125-156."
     },
     {
       "sourceKey": "massing-2000-wangara",

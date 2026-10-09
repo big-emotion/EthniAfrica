@@ -32,6 +32,24 @@ Les mots du verdict :
 
 ## Lot 1 — vérifié le 9 octobre 2026 (`ASV-2026-10-09-0003` à `0022`)
 
+**Décidé le 10 octobre 2026.** Vous avez répondu « suis tes conseils » à la proposition
+suivante, et les fiches ont été mises à jour :
+
+- **acceptés avec le candidat 0** : n° 2, 3, 5, 6, 7, 8, 10, 11, 13, 14, 15, 16, 17, 18 et 20 ;
+- **n° 9** : accepté avec le candidat 1 (Larousse), rangé en « encyclopédie » ;
+- **n° 19** : accepté avec le candidat 0 (Encyclopedia.com), rangé en « encyclopédie » ;
+- **n° 1, Camara** : accepté avec le livre de Seydou Camara du n° 13, à la place de la page
+  d'homonymie de Wikipédia ;
+- **n° 12, Touré au Mali** : accepté avec l'article d'Yves Person du n° 5 ;
+- **n° 4, Lawson** : « oral ». L'article fait de Lawson une maison royale du clan Akagban, pas
+  un clan. Il faut le témoignage d'une famille d'Aného.
+
+Niveau : « référencée » pour les sources solides (n° 1, 2, 5, 7, 8, 12, 13, 16 et 17),
+« non vérifiée » pour les sources faibles. Pour le n° 2, la note de la fiche cite la revue
+d'origine, et le lien mène à la copie en ligne de webguine. Pour les n° 5 et 12, le lien mène à
+l'article d'origine sur Persée, que la fiche Touré citait déjà : un même titre ne peut avoir
+qu'une adresse dans toutes nos fiches.
+
 | n°  | Fiche              | Ce que dit l'IA                      | Meilleur candidat (type)                                                                 | Verdict | Conseil                |
 | --- | ------------------ | ------------------------------------ | ---------------------------------------------------------------------------------------- | ------- | ---------------------- |
 | 1   | Camara             | Nom de clan, transmis par le père    | Wikipédia, page « Camara » (encyclopédie)                                                | faible  | rejeter                |
@@ -96,3 +114,14 @@ lot 1.
 
 Une entrée sans candidat veut dire que la recherche n'a rien trouvé. Pour elle, il reste deux
 réponses : « non » ou « oral ».
+
+## Témoignages oraux à recueillir
+
+Ces sources restent dans leur fiche. Elles attendent un récit oral, qui passera par le circuit
+de collecte des récits.
+
+| Entrée                | Fiche  | Ce qu'il faut recueillir                                                                 | Décidé le       |
+| --------------------- | ------ | ---------------------------------------------------------------------------------------- | --------------- |
+| `ASV-2026-10-08-0001` | Ababda | D'où vient le nom et comment il se transmet                                              | 9 octobre 2026  |
+| `ASV-2026-10-08-0002` | Abaza  | Si Abaza nomme un clan, et comment le nom se transmet                                    | 9 octobre 2026  |
+| `ASV-2026-10-09-0006` | Lawson | Si Lawson est un clan ou une maison royale du clan Akagban, auprès d'une famille d'Aného | 10 octobre 2026 |

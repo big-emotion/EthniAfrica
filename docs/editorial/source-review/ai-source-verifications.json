@@ -61,12 +61,25 @@
           "source_kind": "community",
           "quote": "Camara, an early clan of Mandinka people in West Africa.",
           "supports": "Partial only: supports nameSystem clan_name and designatedSocialUnit clan for Camara. It does NOT support transmissionMode patrilineal; no source opened states patrilineal transmission of the Camara name."
+        },
+        {
+          "title": "Histoire générale des Kamara",
+          "author": "Seydou Camara",
+          "year": 2025,
+          "url": "https://africanbookscollective.com/books/histoire-generale-des-kamara/",
+          "source_kind": "academic",
+          "quote": "But according to almost all traditions, the first inhabitants who lived there were the Kamara, whose first ancestor, Mansa Kiran, came from Wagadu and was the first to settle in the country. ... As natives, they established the other clans, including the Konaté-Keyita, who would expand their political formation and found the Mali Empire.",
+          "supports": "Borrowed from ASV-2026-10-09-0015 on the operator's decision (2026-10-10). Kamara is a clan of the Manden (Mande heartland in today's Mali), where Mande traditions name it as the first settled clan. Supports nameSystem clan_name, the Kamara form and countryId MLI. It does not state the Camara spelling or name the Malinké."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] Wikipedia disambiguation page: the quote is there, but it is one line ('an early clan of Mandinka people') and says nothing on patrilineal transmission. Kind community is right for Wikipedia. Weak and partial. ASV-...-0015 (Histoire générale des Kamara) is a stronger lead for this fiche.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 1,
+      "tier": "referenced",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0004",
@@ -80,7 +93,7 @@
       "candidates": [
         {
           "title": "L'endogamie des Peuls du Fouta-Djallon",
-          "author": "P. Cantrelle & M. Dupire",
+          "author": "P. Cantrelle et M. Dupire",
           "year": 1964,
           "url": "https://webguine.site/bibliotheque/archives/rechAfric/1964/endogamiePeulFJ.html",
           "source_kind": "academic",
@@ -97,10 +110,14 @@
           "supports": "Male-line transmission of the clan honour name; the same page identifies the Diallo clan ('Les Yirlaɓe sont les Dialluɓe du reste du monde peul'). The source adds that the rule 'n'a rien de rigoureux'."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] Cantrelle & Dupire, Recherches africaines 1964, on a webguine.site mirror: quote verbatim, plus 'la filiation s'établit par les mâles' just before — states clan, patriclan and male-line transmission for Diallo. [1] Vieillard 1939, mirror: quote there; it adds the rule 'n'a rien de rigoureux'. Both kind academic, correct. Strong; [0] best.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "referenced",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0005",
@@ -131,10 +148,14 @@
           "supports": "Lists Kouassi as the Baoulé name for a boy born on Monday (Lundi, kisie), and says the father's given name serves as his children's family name. This supports the individual, patronymic, non-hereditary system. It is a community course page and appears to echo Wikipedia."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] fr.wikipedia Baoulés: both quoted passages there (father's first name becomes the children's family name; Monday = Kouassi). [1] coastsystems.net Baoulé course: quote there; a language course, linguistic_reference would fit better than community. States the claim, but only through encyclopedic or course pages. Weak.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "unverified",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0006",
@@ -165,10 +186,12 @@
           "supports": "Partial support only. It confirms that Lawson is the name of a family group, the royal house of Lolan in Aného. The same article puts the late king in 'clan Akagban', which suggests Lawson is a family or house name rather than the clan name. That conflicts with designatedSocialUnit: clan."
         }
       ],
-      "status": "proposed",
+      "status": "oral_needed",
       "reviewNote": "Opened 2026-10-09. [0] Leipzig project page for Jones & Sebald's edition: only the title matches; it names a family archive, not a clan or a transmission rule. [1] Koaci (press, correct): quote there, and the same article places Lawson VIII in 'le clan Akagban' — Lawson reads as a family or royal house, not a clan. Neither supports the claim; the fiche's clan_name itself may be wrong.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0007",
@@ -184,16 +207,20 @@
           "title": "Les ancêtres de Samori",
           "author": "Yves Person",
           "year": 1963,
-          "url": "https://www.webmande.site/bibliotheque/yperson/ancetres-samori/index.html",
+          "url": "https://www.persee.fr/doc/cea_0008-0055_1963_num_4_13_3008",
           "source_kind": "academic",
           "quote": "Dans la légende du Wagadou, les Tourè forment l'un des clans authentiquement soninké, descendant de l'ancêtre mythique Dinga",
-          "supports": "Touré (Tourè) is a clan name (dyamu/jamu) that marks a clan in the Soninke/Mande clan system (nameSystem: clan_name; designatedSocialUnit: clan). Published in Cahiers d'études africaines vol. 4 no. 13, pp. 125-156, with a section titled 'Origine et diffusion du dyamu Tourè'. This URL is a copy on webMande."
+          "supports": "Touré (Tourè) is a clan name (dyamu/jamu) that marks a clan in the Soninke/Mande clan system (nameSystem: clan_name; designatedSocialUnit: clan). Published in Cahiers d'études africaines vol. 4 no. 13, pp. 125-156, with a section titled 'Origine et diffusion du dyamu Tourè'. This URL is a copy on webMande. The url is the original article on Persée, which PAT_TOURE already cites; the quote was read on the webmande.site copy (https://www.webmande.site/bibliotheque/yperson/ancetres-samori/index.html), and one title takes one locator across the corpus."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] Yves Person, 'Les ancêtres de Samori', Cahiers d'études africaines 1963, on a webmande.site mirror: quote verbatim — the Tourè are one of the Soninke clans descending from Dinga. Kind academic, correct. Strong for clan_name; says nothing on transmission (claim has 'other').",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "referenced",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0008",
@@ -237,10 +264,14 @@
           "supports": "Supports the variant Jallo and the Fula origin of the name. It is an encyclopedia source, so it is weak."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] Le Soleil column (press, correct): quote there — Diallo as a typical Peul name in Senegal. [1] Senego 'Noms Sénégalais': quote there; a site service page, not an article, community would fit better than press. [2] en.wikipedia Diallo: quote there, gives the Jallo variant. None says 'clan'. Weak but on point; [0] best.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "unverified",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0009",
@@ -284,10 +315,14 @@
           "supports": "Supports Camara as a Mandinka clan name. It does not mention Gambia or the Kamara spelling, and it is a weak encyclopedia source."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] B2FIND record of an NCAC (Gambia national archive) tape, 'An Interview About The Kamara Clan in Brikama': alternative names list includes Camara. Kind archive, correct. States a Kamara clan in Gambia; no Malinke link. [1] and [2] Wikipedia, quotes there. Fairly strong; [0] best.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "referenced",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0010",
@@ -322,10 +357,14 @@
           "supports": "Supports that Traoré/Traore is a Manding surname common in Mali, with a Bambara form. This is a weaker, encyclopedic source."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] An ka taa Bambara course: the vocabulary table gives 'Tarawele — Traoré [French spelling]' under jamu (last name); the quote is two passages joined. Kind linguistic_reference, correct. [1] en.wikipedia Traoré: quote there. Supports the jamu and the Tarawele variant; [0] best.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "referenced",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0011",
@@ -355,15 +394,19 @@
           "author": "Encyclopédie Larousse",
           "year": null,
           "url": "https://www.larousse.fr/encyclopedie/personnage/Soundiata_Keita/180393",
-          "source_kind": "press",
+          "source_kind": "encyclopedia",
           "quote": "Il était le chef d'un clan mandingue du Sud, les Keita, commerçants qui s'étaient établis dans la haute vallée du Niger",
           "supports": "Keita is a Mandingue (Malinke) clan name, from the upper Niger valley."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. Both quotes are on the pages. Both kinds are WRONG: [0] World History Encyclopedia and [1] Encyclopédie Larousse are encyclopedias, not press. The vocabulary has no encyclopedia kind; the corpus files Wikipedia under community. Content fits (Keita, a Malinke clan). Weak (encyclopedias); [1] Larousse best.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 1,
+      "tier": "unverified",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0012",
@@ -398,10 +441,14 @@
           "supports": "Supports Coulibaly as a Bambara surname found in Mali (MLI, PPL_BAMBARA). It does not explicitly call the name a clan name (jamu). Encyclopedia source, so lower priority."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] Seshat databank, Bamana Kingdom of Segu: quote there, plus 'founded in 1712 by Biton Kulibali'. Kind academic acceptable. Supports the Kulibali spelling and the Bambara link, not 'clan'. [1] en.wikipedia Coulibaly: quote there. Weak to fair; [0] best.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "unverified",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0013",
@@ -427,10 +474,14 @@
           "supports": "Diarra is a clan name with the variant Jara, of Bambara origin; the same page says it is traditionally concentrated in Mali (encyclopedic source, not academic)"
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] en.wikipedia Diarra: quote there — 'the clan name Jara', from Bambara jara 'lion'. Kind community, correct. States the whole claim, but Wikipedia is the only candidate. Weak.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "unverified",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0014",
@@ -463,12 +514,25 @@
           "source_kind": "community",
           "quote": "The name is probably derived from tùùré, the word for 'elephant' in Soninké, the language of the Ghana Empire.",
           "supports": "Weak partial support: a hedged origin theory linking the surname to Soninke. It does not say that Touré is a Soninke clan name or mention Mali. Encyclopedia copy, low reliability."
+        },
+        {
+          "title": "Les ancêtres de Samori",
+          "author": "Yves Person",
+          "year": 1963,
+          "url": "https://www.persee.fr/doc/cea_0008-0055_1963_num_4_13_3008",
+          "source_kind": "academic",
+          "quote": "Dans la légende du Wagadou, les Tourè forment l'un des clans authentiquement soninké, descendant de l'ancêtre mythique Dinga",
+          "supports": "Borrowed from ASV-2026-10-09-0007 on the operator's decision (2026-10-10). Touré (Tourè) is a clan name (dyamu/jamu) that marks a clan in the Soninke/Mande clan system (nameSystem: clan_name; designatedSocialUnit: clan). Published in Cahiers d'études africaines vol. 4 no. 13, pp. 125-156, with a section titled 'Origine et diffusion du dyamu Tourè'. This URL is a copy on webMande. The url is the original article on Persée, which PAT_TOURE already cites; the quote was read on the webmande.site copy (https://www.webmande.site/bibliotheque/yperson/ancetres-samori/index.html), and one title takes one locator across the corpus."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] Guinéenews (press, correct): quote there, but it is about the Woulada area of Guinea, not Mali, and names Touré a family name. [1] IPFS copy of a Wikipedia article: quote there; an unofficial mirror, cite the real Wikipedia page if kept. Neither supports Touré as a Soninke clan in Mali. Person 1963 (ASV-...-0007) does state Touré as a Soninke clan.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 2,
+      "tier": "referenced",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0015",
@@ -494,10 +558,14 @@
           "supports": "Kamara is a clan of the Manden (Mande heartland in today's Mali), where Mande traditions name it as the first settled clan. Supports nameSystem clan_name, the Kamara form and countryId MLI. It does not state the Camara spelling or name the Malinké."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] African Books Collective page for Seydou Camara, 'Histoire générale des Kamara' (2025): the quote is from the publisher's blurb, not the book's text. Kamara as the first clan of the Manden. Kind academic acceptable (a historian's book). Fairly strong.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "referenced",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0016",
@@ -532,10 +600,14 @@
           "supports": "Variants Ouédraogo/Ouedraogo/Wedraogo, and the name's link to Wedraogo, legendary founder of the Mossi Kingdoms in modern Burkina Faso"
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] Burkina24 (press, correct): quote there — Ouédraogo usually read as a Mossi name. [1] en.wikipedia Ouedraogo (surname): quote there, gives the Wedraogo link. Neither says 'clan'. Weak; [0] best for the Mossi link, [1] for the variants.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "unverified",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0017",
@@ -561,10 +633,14 @@
           "supports": "Partial: shows Sawadogo as a Mossi surname in a village in Burkina Faso (name, PPL_MOSSI, BFA). It does not say Sawadogo is a clan name (sondre)."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] Dogon Languages Project village page (Jeffrey Heath): 'Surnames: Sawadogo (Mossi)' is there. Kind linguistic_reference, correct. Shows a Mossi surname in Burkina Faso; nothing on clan. Weak, one line.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "unverified",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0018",
@@ -599,10 +675,14 @@
           "supports": "Calls Traore a Dioula clan. The kingdom it founded covered parts of western Burkina Faso. This is an encyclopedia source, so it is weaker evidence."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] Sangaré, DEA thesis (Ouagadougou 2008) on memoireonline: quote there — Traoré among the Dioula families arriving from Kong. Kind academic, correct. [1] en.wikipedia Kénédougou: quote there — 'the Dioula Traore clan'. Fair; [0] best.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "referenced",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0019",
@@ -628,10 +708,14 @@
           "supports": "Identifies Coulibaly as a Jula (Dioula) patronym/clan name in western Burkina Faso; note 12 adds that the Lobi kept their own clan names but equated them with Jula patronyms such as Coulibaly (Journal des africanistes 77-1)."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09 (the site's bot check blocks browser-like clients; plain fetch works). [0] Bakary Traoré, Journal des Africanistes 2007: quote verbatim — Coulibaly among Jula patronyms that Lobi and Gouin equated with their clan names. Kind academic, correct. Strong.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "referenced",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0020",
@@ -666,10 +750,14 @@
           "supports": "Diallo is a Fula surname; the page gives the Adlam romanization 'Jallo' and the English spellings Jalloh/Jallow (variant Jallo, PPL_FULA); it does not mention clans"
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] Slate explainer 2011 (press, correct): quote there — Diallo (also Jalloh) one of four Fulbe family names in Guinea. [1] en.wikipedia Diallo: quote there. Calls it a family name, not a clan. Fair. Cantrelle & Dupire (ASV-...-0004) is stronger for Diallo in the Fouta-Djallon.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "unverified",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0021",
@@ -690,7 +778,7 @@
           "author": null,
           "year": null,
           "url": "https://www.encyclopedia.com/arts/culture-magazines/dark-child",
-          "source_kind": "press",
+          "source_kind": "encyclopedia",
           "quote": "Sunjata's forefathers ... found there a number of small societies, including the Camara, Traore, and Kone clans",
           "supports": "Camara is an old Mande clan name. The same entry places the Malinke (\"a subgroup of the larger Mande people\") in colonial Guinea. It also says the Guinean author's real surname is Camara and that he was born in 'Kourassa' (Kouroussa). Partial support for name, clan_name, PPL_MALINKE and GIN."
         },
@@ -704,10 +792,14 @@
           "supports": "Kamara is a spelling of Camara, and this is one of the oldest Mande lineages. It does not mention Guinea. This is a weak encyclopedia source."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] encyclopedia.com entry on 'The Dark Child': quote there (Camara among the old Mande clans; Malinke in colonial Guinea). Kind WRONG: a reference-work entry, not press. [1] Simple English Wikipedia: quote there, no Guinea. Weak.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "unverified",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0022",
@@ -742,10 +834,14 @@
           "supports": "Partial support: it treats the Touré as a Malinké lineage, but in Côte d'Ivoire (Odienné), not Guinea."
         }
       ],
-      "status": "proposed",
+      "status": "accepted",
       "reviewNote": "Opened 2026-10-09. [0] fr.wikipedia Guinée: quote there — the Touré among the Maninka clans settled at the Mellacorée. Kind community, correct. [1] Koné 2017 PDF: quote there (minor wording: 'du Kabadougou'), but about Côte d'Ivoire, not Guinea. Weak; [0] best.",
       "proposedAt": "2026-10-09",
-      "model": "opus (claude -p)"
+      "model": "opus (claude -p)",
+      "chosen": 0,
+      "tier": "unverified",
+      "decidedBy": "jean-noe",
+      "decidedAt": "2026-10-10"
     },
     {
       "id": "ASV-2026-10-09-0023",

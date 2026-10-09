@@ -102,8 +102,10 @@ afterEach(() => {
 
 describe("runAiSourceVerifications", () => {
   // The sourceKey stays: the fiche's attestations point at it by name.
-  // No note is written: notes are published verbatim, and a ledger id is
-  // workshop vocabulary (docs/editorial/reader-facing-register.md).
+  // The ledger id never reaches the note: notes are published verbatim, and
+  // a ledger id is workshop vocabulary (docs/editorial/reader-facing-register.md).
+  // A patronyme source has no author or year field (its model is strict), so
+  // the corpus convention applies: the author and year open the note.
   // @req REQ-161
   it("replaces the ai_generated source with the chosen candidate at the human's tier", async () => {
     await writeFiche("patronymes/PAT_DIOP.json", diop());
@@ -124,13 +126,84 @@ describe("runAiSourceVerifications", () => {
         {
           sourceKey: "afrik-candidate-queue",
           title: "Les noms de famille wolof",
-          author: "A. Diallo",
-          year: 1998,
           url: "https://example.org/wolof",
           tier: "referenced",
           source_kind: "academic",
+          notes: "A. Diallo, 1998.",
         },
       ],
+    });
+  });
+
+  // @req REQ-161
+  it("writes no note on a patronyme source when the candidate names no author or year", async () => {
+    await writeFiche("patronymes/PAT_DIOP.json", diop());
+    writeLedger([verification({ chosen: 0 })]);
+
+    await runAiSourceVerifications({
+      datasetRoot,
+      ledgerPath,
+      write: true,
+      ratchet: 1,
+    });
+
+    expect(JSON.parse(readFiche("patronymes/PAT_DIOP.json")).sources).toEqual([
+      {
+        sourceKey: "afrik-candidate-queue",
+        title: "Les noms de famille wolof",
+        url: "https://example.org/wolof",
+        tier: "referenced",
+        source_kind: "academic",
+      },
+    ]);
+  });
+
+  // The candidate queue's provenance markers are not patronyme sources, and
+  // carry the author and year as fields.
+  // @req REQ-161
+  it("keeps the author and year as fields on a candidate-queue provenance marker", async () => {
+    const queue = {
+      countries: [
+        {
+          countryId: "SEN",
+          entries: [
+            {
+              name: "Diop",
+              countryId: "SEN",
+              provenance: { tier: "unverified", source_kind: "ai_generated" },
+            },
+          ],
+        },
+      ],
+    };
+    await writeFiche("patronymes/_candidates-by-country.json", queue);
+    writeLedger([
+      verification({
+        fiche: "patronymes/_candidates-by-country.json",
+        path: "countries[0].entries[0].provenance",
+        original: { title: null, url: null },
+        owner: { countryId: "SEN", name: "Diop" },
+      }),
+    ]);
+
+    const report = await runAiSourceVerifications({
+      datasetRoot,
+      ledgerPath,
+      write: true,
+      ratchet: 1,
+    });
+
+    expect(report.errors).toEqual([]);
+    expect(
+      JSON.parse(readFiche("patronymes/_candidates-by-country.json"))
+        .countries[0].entries[0].provenance
+    ).toEqual({
+      title: "Les noms de famille wolof",
+      author: "A. Diallo",
+      year: 1998,
+      url: "https://example.org/wolof",
+      tier: "referenced",
+      source_kind: "academic",
     });
   });
 
