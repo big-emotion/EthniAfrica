@@ -109,12 +109,14 @@
       {
         "title": "Joshua Project — Yao all countries (2025)",
         "url": "https://joshuaproject.net/people_groups/15988",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Yao in Malawi",
         "url": "https://joshuaproject.net/people_groups/15988/MI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Qiraat Africa — The Yao/Wayao people of Lake Malawi (2026)",

@@ -96,17 +96,20 @@
       {
         "title": "Joshua Project – Dida, Lakota in Côte d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/12959",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Dida, Yocoboue in Côte d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/16046",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Minority Rights Group – Krou in Côte d'Ivoire",
         "url": "https://minorityrights.org/communities/krou/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Ethnologue – Dida, Lakota (dic)",

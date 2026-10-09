@@ -124,7 +124,8 @@
       {
         "title": "Joshua Project — Basaa, Cameroon people group profile",
         "url": "https://joshuaproject.net/people_groups/19155/CM",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Larry M. Hyman — Basaá (A.43), reference chapter",
@@ -165,6 +166,7 @@
         "title": "« L'histoire des origines du peuple Bassa du Cameroun », Li'ten Li Bassa, 12 janvier 2016",
         "url": "https://web.archive.org/web/20170430212955/http://www.litenlibassa.com/index.php/culture/hist/636-lhistoire-des-origines-du-peuple-bassa-du-cameroun.html",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Site communautaire bassa, article signé d'un pseudonyme et sans source. Il porte la lecture faisant de Bassa le pluriel de nsa et le récit de la querelle entre les fils de Mban, et glose Ngog Lituba « la pierre ouverte ». Le site n'est plus en ligne ; la page est citée d'après la copie archivée le 30 avril 2017, consultée le 10 septembre 2026. Citée pour établir que cette lecture circule, non pour l'accréditer."
       },
       {
@@ -208,6 +210,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Basaa est celui que se donne un peuple bantou du Littoral et du Centre du Cameroun ; il désigne aussi sa langue. Les travaux linguistiques consultés n'expliquent pas son origine, qui n'est pas établie ; l'explication qui circule est présentée plus bas.",
             "aspect": "meaning",
             "sources": [
@@ -238,6 +241,7 @@
               "to": 1912,
               "label": "Rapporté en 1912"
             },
+            "era": "colonial",
             "statement": "Le nom Basa ne sert pas, à cette date, à nommer la langue chez ceux qui la parlent : ils l'appellent hob likol, « la langue de l'Est », selon le missionnaire Georg Schürle.",
             "sources": [
               {
@@ -258,6 +262,7 @@
               "to": 1912,
               "label": "Rapporté en 1912"
             },
+            "era": "colonial",
             "statement": "Le nom Basa n'est pas celui qu'emploient leurs voisins bati, qui les appellent Mbele, selon Georg Schürle. Il renvoie à une carte de von Stein où la forme Mwele figure déjà.",
             "sources": [
               {
@@ -278,6 +283,7 @@
               "to": 1912,
               "label": "Rapporté en 1912"
             },
+            "era": "colonial",
             "statement": "Le nom Basa est, pour Georg Schürle, le seul qui convienne à la région où l'on parle cette langue : il juge inexact de l'appeler pays bakoko, comme le font des cartes de son époque.",
             "sources": [
               {
@@ -298,6 +304,7 @@
               "to": 1906,
               "label": "Rapport de 1906, publié en 1912"
             },
+            "era": "colonial",
             "statement": "Le nom Basa apparaît dans un rapport que le missionnaire Georg Schürle envoie à Bâle en 1906 : il y décrit le pays où l'on parle le basa, à partir d'une heure de marche à l'est de Douala, selon la préface de Carl Meinhof. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple et sa langue existaient bien avant elle.",
             "formAsWritten": "Basa",
             "birth": true,
@@ -320,6 +327,7 @@
               "to": 2016,
               "label": "Publiée en ligne en 2013, reprise en 2016"
             },
+            "era": "modern",
             "statement": "Le nom Bassa viendrait du pluriel de nsa, « la rétribution, le partage » : une querelle entre les fils de l'ancêtre Mban, au sujet du partage d'un serpent rapporté de la chasse, aurait valu au peuple ce nom, compris comme « les ravisseurs ». C'est ce que raconte un texte publié en ligne et repris par le site bassa Li'ten Li Bassa, dont une version anglaise est signée de Samuel Brice Tjomb.",
             "hypothesisGroup": "origine du nom Basaa",
             "sources": [
@@ -391,6 +399,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Bassa désigne aussi un autre peuple, les Bassa du Liberia et de Sierra Leone. Leur langue appartient à la famille krou, alors que celle des Basaa du Cameroun est bantoue : malgré la même écriture, nos sources n'établissent aucun lien entre ces deux peuples.",
             "aspect": "usage",
             "sources": [
@@ -420,6 +429,7 @@
               "to": 1950,
               "label": "1950"
             },
+            "era": "colonial",
             "statement": "Le nom Bassa est celui qu'emploie Louis-Marie Pouka, lui-même bassa, pour présenter un peuple bantou divisé en clans et « répandu un peu partout au Cameroun ».",
             "formAsWritten": "Bassa",
             "sources": [

@@ -135,7 +135,8 @@
       {
         "title": "IWGIA — Indigenous Peoples in Africa: Botswana and Namibia",
         "url": "https://www.iwgia.org/en/africa.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       }
     ]
   }

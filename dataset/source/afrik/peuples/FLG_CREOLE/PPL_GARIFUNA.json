@@ -64,12 +64,14 @@
           "title": "EBSCO Research Starters — Garifuna people (Josephine Campbell, 2023)",
           "url": "https://www.ebsco.com/research-starters/language-and-linguistics/garifuna-people",
           "tier": "referenced",
+          "source_kind": "encyclopedia",
           "notes": "Article signé, publié par EBSCO Research Starters ; détaille l'origine akan/ashanti, igbo et yoruba des naufragés de 1635 et le déroulement de la déportation de 1797 vers Roatán."
         },
         {
           "title": "Encyclopaedia Britannica — Saint Vincent and the Grenadines: History",
           "url": "https://www.britannica.com/place/Saint-Vincent-and-the-Grenadines/History",
           "tier": "referenced",
+          "source_kind": "encyclopedia",
           "notes": "Encyclopédie de référence à autorité éditoriale identifiée ; corrobore le naufrage de navires négriers espagnols au large de Saint-Vincent en 1635 et la formation des « Black Caribs » par métissage avec les Kalinagos."
         }
       ]
@@ -132,12 +134,14 @@
         "title": "Minority Rights Group — Garifuna (Garinagu) in Belize",
         "url": "https://minorityrights.org/communities/garifuna-garinagu/",
         "tier": "referenced",
+        "source_kind": "ngo",
         "notes": "Présentation publiée par une organisation non gouvernementale internationale qui défend les droits des minorités. Elle donne les estimations de population par pays et présente les noms Garinagu/Garífuna, employés par les personnes concernées pour se nommer elles-mêmes."
       },
       {
         "title": "Encyclopedia.com — Garifuna Religion",
         "url": "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/garifuna-religion",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Encyclopédie tertiaire agrégeant des notices de référence sans autorité éditoriale académique directement vérifiable ; utilisée pour la description du dügü et du rôle des buyei."
       },
       {

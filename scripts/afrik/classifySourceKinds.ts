@@ -12,10 +12,10 @@
  * A source no rule names is never guessed: it stays without a kind and is
  * listed in the review file for a person to rule on. Some hosts are named on
  * purpose with no kind ("held"): the kind depends on the work behind the page
- * (archive.org scans dictionaries and travel journals alike), or the
- * vocabulary has no kind for it yet (encyclopedias, NGOs, mission databases).
- * Writing `unknown` instead would say the same thing to the reader while
- * hiding the gap from the coverage ratchet.
+ * (archive.org scans dictionaries and travel journals alike). A person types
+ * such a page by reading its work, in `WORK_RULINGS`; a page nobody has ruled
+ * on stays held. Writing `unknown` instead would say the same thing to the
+ * reader while hiding the gap from the coverage ratchet.
  *
  * Only `source_kind` keys are added, right after `tier`, at the fiche's own
  * indentation; tiers, URLs and text are never touched, and a typed source —
@@ -33,6 +33,7 @@ import * as prettier from "prettier";
 
 import type { SourceKind } from "@/types/sources";
 
+import { WORK_RULINGS } from "./sourceKindWorkRulings";
 import { readCorpusFiches } from "./sourceTierRulings";
 
 const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
@@ -382,10 +383,10 @@ export const HOST_RULES: HostRule[] = [
     ],
   },
   {
-    id: "held:encyclopedia",
-    kind: null,
-    reason:
-      "Edited tertiary encyclopedia: the vocabulary has no kind for it yet (Wikipedia is typed community because its readers write it).",
+    // Wikipedia stays `community`: its readers write it, nobody edits it as
+    // a publisher does.
+    id: "encyclopedia",
+    kind: "encyclopedia",
     domains: [
       "britannica.com",
       "encyclopedia.com",
@@ -396,13 +397,13 @@ export const HOST_RULES: HostRule[] = [
       "scencyclopedia.org",
       "georgiaencyclopedia.org",
       "anthroencyclopedia.com",
+      "chalochatu.org",
+      "encyclopedia.adventist.org",
     ],
   },
   {
-    id: "held:ngo",
-    kind: null,
-    reason:
-      "Advocacy or research NGO: neither government nor community, and the vocabulary has no kind for it yet.",
+    id: "ngo",
+    kind: "ngo",
     domains: [
       "minorityrights.org",
       "iwgia.org",
@@ -416,13 +417,12 @@ export const HOST_RULES: HostRule[] = [
       "issafrica.org",
       "accord.org.za",
       "brookings.edu",
+      "citizenshiprightsafrica.org",
     ],
   },
   {
-    id: "held:mission-database",
-    kind: null,
-    reason:
-      "People-group database kept by a mission organisation: no kind describes it honestly yet.",
+    id: "missionary-database",
+    kind: "missionary_database",
     domains: [
       "joshuaproject.net",
       "peoplegroups.org",
@@ -432,6 +432,13 @@ export const HOST_RULES: HostRule[] = [
       "wycliffe.org",
       "scriptureearth.org",
       "map.swordshare.com",
+      "hornofafrica.org",
+      "tanzaniascripture.com",
+      "ethiopiascripture.org",
+      "worldmap.org",
+      "globalprn.com",
+      "missioninfobank.org",
+      "madmissions.com",
     ],
   },
 ];
@@ -461,18 +468,20 @@ export const HOST_PATTERN_RULES: PatternRule[] = [
  */
 export const TITLE_RULES: PatternRule[] = [
   {
-    id: "held:encyclopedia",
-    kind: null,
-    pattern: /Britannica|Encyclopaedia of Islam/,
+    // Anchored so that a book read "via Britannica" is not typed by the name.
+    id: "title-encyclopedia",
+    kind: "encyclopedia",
+    pattern:
+      /^Britannica\b|Encyclop(æ|ae)dia Britannica|^Encyclopaedia of Islam\b/,
   },
   {
-    id: "held:mission-database",
-    kind: null,
+    id: "title-missionary-database",
+    kind: "missionary_database",
     pattern: /^Joshua Project\b/,
   },
   {
-    id: "held:ngo",
-    kind: null,
+    id: "title-ngo",
+    kind: "ngo",
     pattern: /^(Minority Rights Group|UNPO)\b/,
   },
   {
@@ -531,6 +540,10 @@ function matchesDomain(host: string, domain: string): boolean {
 }
 
 export function classifySource(source: CitedSource): Classification {
+  const ruled =
+    typeof source.url === "string" ? WORK_RULINGS[source.url] : undefined;
+  if (ruled) return { kind: ruled, rule: "work-ruling" };
+
   const host = hostOf(source.url);
 
   if (host) {

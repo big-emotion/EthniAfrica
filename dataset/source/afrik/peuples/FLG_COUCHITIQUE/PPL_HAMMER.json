@@ -100,7 +100,8 @@
       {
         "title": "Hamer language PDF – Archive.org, 2020",
         "url": "https://archive.org/download/enwiki-Hamer_language-20200726.pdf/enwiki-Hamer_language-20200726.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "community"
       }
     ]
   }

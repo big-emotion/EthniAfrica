@@ -20,6 +20,7 @@
               "to": 1980,
               "label": "1980"
             },
+            "era": "modern",
             "statement": "Le nom mandé désigne, pour D. Olderogge, le groupe de langues le plus nettement défini parmi ceux que le linguiste Diedrich Westermann distinguait en Afrique de l'Ouest.",
             "aspect": "usage",
             "sources": [
@@ -41,6 +42,7 @@
               "to": 1901,
               "label": "1901"
             },
+            "era": "colonial",
             "statement": "Le nom mandé est choisi par l'administrateur colonial Maurice Delafosse pour la langue qu'il décrit. Il écrit que ce mot « tend de plus en plus à se généraliser et à remplacer le mot mandingue », qui a selon lui la même origine.",
             "sources": [
               {
@@ -61,6 +63,7 @@
               "to": 1900,
               "label": "1900"
             },
+            "era": "colonial",
             "statement": "Le nom mandé désigne aussi un ensemble de peuples chez Maurice Delafosse, qui parle en 1900 de « la famille mandé ou mandingue » et la range parmi les « familles nègres » d'Afrique de l'Ouest. Ce classement mêle la langue et l'apparence physique.",
             "sources": [
               {
@@ -81,6 +84,7 @@
               "to": 1867,
               "label": "1867"
             },
+            "era": "polity",
             "statement": "Le nom mandé apparaît comme nom d'un groupe de langues dans le livre du linguiste allemand H. Steinthal, Die Mande-Neger-Sprachen. Il explique que la finale -ga forme des noms de peuples : on parle des Mandenga, mais leur langue ne peut s'appeler que le mande. C'est la plus ancienne trace de ce nom de famille de langues que le projet connaît. Les langues existaient déjà avant lui.",
             "birth": true,
             "sources": [
@@ -102,6 +106,7 @@
               "to": 1854,
               "label": "1854"
             },
+            "era": "polity",
             "statement": "On dit alors Mánde pour le pays et Mandénga pour ses habitants : c'est ce que des Africains libérés de la traite disent au missionnaire Sigismund Koelle, à Freetown. Koelle juge fautive la forme Mandingo des cartes européennes.",
             "before": true,
             "sources": [
@@ -133,6 +138,7 @@
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Manden, ou Mande, désigne un pays du haut bassin du Niger, entre Kangaba et Siguiri, dans les actuels Mali et Guinée. Djibril Tamsir Niane en fait le noyau d'origine des Maninka. Les sources que nous avons lues n'expliquent pas le sens premier du nom.",
             "aspect": "meaning",
             "sources": [
@@ -154,6 +160,7 @@
               "to": 1235,
               "label": "Avant Soundiata, selon la tradition"
             },
+            "era": "polity",
             "statement": "Le nom Manden est, selon les traditions orales que rapporte Djibril Tamsir Niane, l'autre nom du royaume de Kiri, où vivaient les Konaté et les Keita. Ce nom a désigné ensuite l'ensemble des pays maninka.",
             "sources": [
               {
@@ -174,6 +181,7 @@
               "to": 1854,
               "label": "1854"
             },
+            "era": "polity",
             "statement": "Le nom Manden est noté Mánde par Sigismund Koelle, d'après un informateur qui lui dit que tous les Mandénga en sont venus et que sa capitale est sur le Djoliba.",
             "sources": [
               {
@@ -193,6 +201,7 @@
               "to": 1799,
               "label": "Voyage de 1795-1797 (récit publié en 1799)"
             },
+            "era": "polity",
             "statement": "Le nom Manden est écrit « Manding » par le voyageur écossais Mungo Park, pour qui les Mandingoes tirent leur nom de cet État de l'intérieur, d'où ils seraient partis.",
             "formAsWritten": "Manding",
             "sources": [
@@ -214,6 +223,7 @@
               "to": 1596,
               "label": "Fin du XVIe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Manden apparaît par écrit dans Mandimansa, le titre du mansa, ou roi, du Mandi, que les auteurs portugais de la fin du XVIe siècle donnent au grand souverain de l'intérieur, selon José da Silva Horta. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays existait déjà avant lui.",
             "birth": true,
             "sources": [
@@ -246,6 +256,7 @@
               "to": 1929,
               "label": "1929"
             },
+            "era": "colonial",
             "statement": "Le nom mandingue est encore celui que Maurice Delafosse donne en 1929 à une langue qu'il présente comme une seule langue à plusieurs dialectes : le malinké, le bambara et le dioula.",
             "sources": [
               {
@@ -265,6 +276,7 @@
               "to": 1856,
               "label": "1856"
             },
+            "era": "polity",
             "statement": "Le nom mandingue est, selon le voyageur français Anne Raffenel, la forme française tirée de Mandingos, le nom que les voyageurs anglais donnent aux Malinkés.",
             "formAsWritten": "Mandingues",
             "sources": [
@@ -364,6 +376,7 @@
         "title": "Koelle, Sigismund Wilhelm (1854) – Polyglotta Africana. Church Missionary House, Londres",
         "url": "https://github.com/lexibank/polyglottaafricana",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Transcription savante du texte de 1854, publiée comme jeu de données par le projet Lexibank. Les remarques de terrain de Koelle sur le pays de Mánde et sur le suffixe de gentilé y sont lues intégralement."
       },
       {
@@ -462,7 +475,8 @@
       {
         "title": "Britannica – \"Mande languages\" et \"Mande peoples\" articles",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Glottolog (2025) – \"Mande\"",
@@ -486,6 +500,7 @@
         "title": "Almada, André Álvares de (1594) – Tratado breve dos rios de Guiné do Cabo Verde",
         "url": "https://archive.org/details/tratadobrevedosr00alma",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Le chapitre III est consacré au royaume des Mandingues. Fac-similé consultable en ligne."
       },
       {
@@ -499,12 +514,14 @@
         "title": "Caillié, René (1830) – Journal d'un voyage à Temboctou et à Jenné",
         "url": "https://archive.org/details/journaldunvoyage01cail",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Le mot Mandingues y revient une centaine de fois sur les deux volumes ; le mot mandé n'y apparaît pas."
       },
       {
         "title": "Delafosse, Maurice (1929) – La langue mandingue et ses dialectes : malinké, bambara, dioula",
         "url": "https://gallica.bnf.fr/ark:/12148/bpt6k3412996f",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Le titre porte la thèse d'une langue mandingue unique à dialectes. Numérisé par la Bibliothèque nationale de France."
       },
       {

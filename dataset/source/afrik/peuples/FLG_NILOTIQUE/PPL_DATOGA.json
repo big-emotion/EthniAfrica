@@ -124,7 +124,8 @@
       {
         "title": "Joshua Project — Datoga people profile",
         "url": "https://joshuaproject.net/people_groups/11040/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

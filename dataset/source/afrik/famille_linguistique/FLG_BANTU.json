@@ -62,6 +62,7 @@
               "to": 1990,
               "label": "Années 1980"
             },
+            "era": "modern",
             "statement": "Le nom bantou n'est qu'une étiquette de linguiste : il ne désigne « ni un peuple, ni une société, ni une culture », écrivent Samwiri Lwanga-Lunyiigo et Jan Vansina, qui craignent la naissance d'un « mythe bantu ». D. Olderogge rappelle de même que le terme n'est qu'une référence linguistique.",
             "aspect": "usage",
             "sources": [
@@ -93,6 +94,7 @@
               "to": 1994,
               "label": "De la fin des années 1950 à 1994"
             },
+            "era": "modern",
             "statement": "Le nom bantou devient en Afrique du Sud un mot d'administration de l'apartheid : vers 1960, « Bantu » remplace « Native » dans l'usage officiel, et une loi de 1959 regroupe les Africains dans des bantoustans. Rejeté par les Sud-Africains noirs, le mot est remplacé par « black » à partir de 1977, puis par « African », selon South African History Online et David Chanaiwa.",
             "aspect": "imposition",
             "sources": [
@@ -123,6 +125,7 @@
               "to": 1862,
               "label": "1862"
             },
+            "era": "colonial",
             "statement": "Le nom bantou est repris par Wilhelm Bleek dans sa grammaire comparée de 1862, qui parle de « the Ba-ntu family ». Bleek y explique que les langues de cette famille marquent les noms de personnes au pluriel par ba-, comme dans a-ba-ntu, « les gens ».",
             "formAsWritten": "the Ba-ntu family",
             "sources": [
@@ -144,6 +147,7 @@
               "to": 1858,
               "label": "1858"
             },
+            "era": "colonial",
             "statement": "Le nom bantou apparaît par écrit en 1858, sous la forme « The Bantu Family », dans le catalogue des livres de linguistique du gouverneur du Cap, George Grey, que rédige Wilhelm Bleek. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
             "formAsWritten": "The Bantu Family",
             "birth": true,

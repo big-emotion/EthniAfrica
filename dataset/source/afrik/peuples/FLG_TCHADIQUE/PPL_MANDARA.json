@@ -94,12 +94,14 @@
       {
         "title": "Joshua Project — Mandara, Wandala in Cameroon",
         "url": "https://joshuaproject.net/people_groups/13487/CM",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Mandara, Wandala in Nigeria",
         "url": "https://joshuaproject.net/people_groups/13487/NI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes — Mandara people",

@@ -72,12 +72,14 @@
       {
         "title": "Tsemay in Ethiopia – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/15589",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Tsamai of Ethiopia – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg011650/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Tsamai language (tsb) – Ethnologue, SIL International, 2022",

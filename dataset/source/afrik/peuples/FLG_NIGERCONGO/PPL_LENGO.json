@@ -90,12 +90,14 @@
       {
         "title": "Joshua Project — Lengola in Congo, Democratic Republic of",
         "url": "https://joshuaproject.net/people_groups/13037",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Peoplegroups.org — Lengola of Democratic Republic of the Congo",
         "url": "https://peoplegroups.org/people_groups/pg014611/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "OpenEdition Journals — Paths in the eastern Congo rainforest: Vernacular histories",

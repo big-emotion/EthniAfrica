@@ -88,12 +88,14 @@
       {
         "title": "Encyclopaedia Britannica - Shawiya",
         "url": "https://www.britannica.com/topic/Shawiya",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project - Berber Shawiya in Algeria",
         "url": "https://joshuaproject.net/people_groups/14899/AG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Algeria.com - The Chaouis of Algeria",

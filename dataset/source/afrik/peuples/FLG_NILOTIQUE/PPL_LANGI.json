@@ -97,7 +97,8 @@
       {
         "title": "Encyclopaedia Britannica – Lango",
         "url": "https://www.britannica.com/topic/Lango",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Cross-Cultural Foundation Uganda – Culture and the Rights of Women and Girls in Lango, 2019",

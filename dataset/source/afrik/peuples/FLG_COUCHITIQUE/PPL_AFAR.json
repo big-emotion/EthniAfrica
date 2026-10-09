@@ -107,7 +107,8 @@
       {
         "title": "Joshua Project — Afar in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/11486/et",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "AfriGO Magazine — People Groups: the Afar of Djibouti",

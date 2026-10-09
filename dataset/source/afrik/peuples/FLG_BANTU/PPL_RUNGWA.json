@@ -84,7 +84,8 @@
       {
         "title": "Rungwa in Tanzania Profile – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/14594/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Rungwa Language (RNW) – Ethnologue, SIL International",
@@ -106,17 +107,20 @@
       {
         "title": "Rungwa in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/print/14594/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Rungwa of Tanzania – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015029/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Rungwa – Language Info, Swordshare Map",
         "url": "https://map.swordshare.com/rnw",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Rungwa – ScriptSource",

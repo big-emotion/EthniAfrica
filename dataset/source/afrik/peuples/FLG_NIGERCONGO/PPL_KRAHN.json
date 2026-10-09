@@ -105,12 +105,14 @@
       {
         "title": "Minority Rights Group - Krou in Cote d'Ivoire",
         "url": "https://minorityrights.org/communities/krou/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Joshua Project - Krahn, Western in Liberia",
         "url": "https://joshuaproject.net/people_groups/print/15374/LI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue - Western Krahn (krw) et Eastern Krahn (kqo)",

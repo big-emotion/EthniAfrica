@@ -114,6 +114,80 @@ describe("buildNameTimeline — the tiles of one name, from today backwards", ()
   });
 
   // @req REQ-198
+  it("inks a tile by the era its accounts declare before guessing from the date", () => {
+    const source = LINGALA_HISTORY.names[0].accounts[0].sources[0];
+    const dated = (year: number) => ({
+      period: { from: year, to: year, label: String(year) },
+      statement: `Le nom Testa est daté de ${year}.`,
+      sources: [source],
+    });
+    const history = {
+      summary: "Le nom Testa est porté depuis longtemps.",
+      names: [
+        {
+          nameText: "Testa",
+          nameStatus: "current" as const,
+          selfGiven: true,
+          languageOfOrigin: null,
+          namedBy: null,
+          accounts: [
+            {
+              period: { from: null, to: null, label: "Usage contemporain" },
+              era: "modern" as const,
+              statement: "Le nom Testa est employé aujourd'hui.",
+              sources: [source],
+            },
+            // Liberia or Ethiopia in 1900: no colonial rule to infer.
+            { ...dated(1900), era: "polity" as const },
+            // Saint-Louis in 1850, already under French rule.
+            { ...dated(1850), era: "colonial" as const },
+            dated(1700),
+          ],
+        },
+      ],
+    };
+
+    const regimes = buildNameTimeline(history, "testa").names[0].tiles.map(
+      (tile) => [tile.periodLabel, tile.regime]
+    );
+
+    expect(regimes).toEqual([
+      ["Usage contemporain", "modern"],
+      ["1900", "polity"],
+      ["1850", "colonial"],
+      ["1700", "polity"],
+    ]);
+  });
+
+  // @req REQ-198
+  it("inks a group of undated hypotheses only when they all declare one era", () => {
+    const withEras = (eras: ("polity" | "colonial")[]) => ({
+      ...LINGALA_HISTORY,
+      names: [
+        {
+          ...LINGALA_HISTORY.names[0],
+          accounts: LINGALA_HISTORY.names[0].accounts.map((account) =>
+            account.hypothesisGroup && !account.birth && !account.before
+              ? { ...account, era: eras.shift() }
+              : account
+          ),
+        },
+      ],
+    });
+    const groupOf = (history: typeof LINGALA_HISTORY) =>
+      buildNameTimeline(history, "lingala").names[0].tiles.find(
+        (tile) => tile.hypotheses
+      )!;
+
+    expect(groupOf(withEras(["polity", "polity", "polity"])).regime).toBe(
+      "polity"
+    );
+    expect(
+      groupOf(withEras(["polity", "colonial", "polity"])).regime
+    ).toBeUndefined();
+  });
+
+  // @req REQ-198
   it("cuts the eras at 1885 and 1960", () => {
     expect(regimeOfYear(1884)).toBe("polity");
     expect(regimeOfYear(1885)).toBe("colonial");

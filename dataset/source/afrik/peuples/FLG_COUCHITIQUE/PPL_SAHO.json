@@ -89,12 +89,14 @@
       {
         "title": "Saho, Irob in Eritrea – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/14641/er",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Saho, Irob in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/14641/ET",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "History of the Saho – Saho Archive, 2023",
@@ -109,12 +111,14 @@
       {
         "title": "Saho – Encyclopedia Britannica, 2008",
         "url": "https://www.britannica.com/topic/Saho",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Saho in Ethiopia (PGID PG042732) – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg042732/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

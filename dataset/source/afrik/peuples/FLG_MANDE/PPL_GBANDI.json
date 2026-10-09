@@ -81,12 +81,14 @@
       {
         "title": "Bandi in Liberia – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/16125/LI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Minority Rights Group – Liberia, 2024",
         "url": "https://minorityrights.org/country/liberia/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "The Gbandi Language: Editor's Note – Gbandi Landers Association in the Americas",

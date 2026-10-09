@@ -88,7 +88,8 @@
       {
         "title": "Joshua Project – Ogoni in Nigeria",
         "url": "https://joshuaproject.net/people_groups/19639",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Oyinlade, A. Olu et Vincent, Jeffery M. – The Ogoni of Nigeria, University of Nebraska-Lincoln, 2016",
@@ -104,7 +105,8 @@
       {
         "title": "Human Rights Watch – Nigeria 1995",
         "url": "https://www.hrw.org/reports/1995/Nigeria.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "UNEP – Environmental Assessment of Ogoniland, 2011",

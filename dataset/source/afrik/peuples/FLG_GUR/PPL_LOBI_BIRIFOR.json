@@ -92,27 +92,32 @@
       {
         "title": "Lobi people group in all countries – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13082",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Lobi in Burkina Faso – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13082/UV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Birifor, Southern in Côte d'Ivoire – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/10869/IV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Birifor, Southern in Ghana – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/10869/GH",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Birifor of Burkina Faso – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg012375/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Les Racines du Ciel (roman) – Gary R., 1956 (inspiration : peuple Lobi)",
@@ -157,6 +162,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Birifor désigne un peuple voisin des Lobi, établi de part et d'autre de la Volta Noire, et sa langue, une langue gur. Les sources consultées ne disent pas d'où vient ce nom ni ce qu'il veut dire.",
             "aspect": "meaning",
             "sources": [
@@ -196,6 +202,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Birifor recouvre deux variétés de langue : le birifor du Nord, appelé aussi Malba Birifor et parlé surtout au Burkina Faso, et le birifor du Sud, parlé surtout au Ghana, selon Larry Kuch et les catalogues de langues.",
             "aspect": "usage",
             "sources": [
@@ -235,6 +242,7 @@
               "to": null,
               "label": "Usage décrit au présent par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Birifor s'écrit aussi LoBirifor. Dans la région, Lo, rapproché de Lobi, sert à dire l'ouest et Dagaa l'est, selon l'Encyclopedia of World Cultures.",
             "sources": [
               {
@@ -254,6 +262,7 @@
               "to": 1904,
               "label": "1904"
             },
+            "era": "colonial",
             "statement": "Le nom Birifor apparaît par écrit sous la forme Birifo chez Maurice Delafosse, qui situe ce peuple entre les monts Kpéré, au nord de Bouna, et la Volta Noire. Il note qu'on l'appelle souvent à tort « Birifon ». C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
             "formAsWritten": "Birifo",
             "birth": true,
@@ -276,6 +285,7 @@
               "to": 1810,
               "label": "Vers 1800"
             },
+            "era": "polity",
             "statement": "Le nom Birifor est celui que Henri Labouret, cité par Michèle Fiéloux, donne aux groupes qui auraient traversé la Volta Noire au tout début du XIXe siècle pour s'installer vers 1800 à Batié Nord, que les Lobi avaient quitté.",
             "before": true,
             "sources": [
@@ -308,6 +318,7 @@
               "to": null,
               "label": "Usage décrit au présent par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Wandar est celui que les Lobi donnent aux Birifor, selon une note de Pierre Bonnafé qui accompagne des récits recueillis dans des villages lobi. La note ne dit pas ce que veut dire ce nom.",
             "aspect": "usage",
             "sources": [
@@ -340,6 +351,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Lobi est celui que les Lobi emploient eux-mêmes pour se nommer, ce qui les distingue des Birifor et des autres groupes que des auteurs rangent avec eux. Les personnes interrogées par Michèle Fiéloux ne semblaient pas connaître son origine.",
             "aspect": "meaning",
             "sources": [
@@ -361,6 +373,7 @@
               "to": null,
               "label": "Usage décrit au présent par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Lobi sert aussi de repère d'orientation dans la région : sous la forme Lo, il désigne l'ouest. Un même village peut se dire Lo face à ses voisins de l'ouest et Dagaa face à ceux de l'est, selon l'Encyclopedia of World Cultures.",
             "sources": [
               {
@@ -380,6 +393,7 @@
               "to": 1980,
               "label": "Rapporté en 1980"
             },
+            "era": "modern",
             "statement": "Le nom Lobi, écrit Lobe, sert dans les recensements du Ghana à compter ensemble Lobi et Birifor, si bien que le nombre de Lobi y reste inconnu, selon Michèle Fiéloux.",
             "formAsWritten": "Lobe",
             "sources": [
@@ -401,6 +415,7 @@
               "to": 1904,
               "label": "1904"
             },
+            "era": "colonial",
             "statement": "Le nom Lobi est souvent étendu à tort, selon Maurice Delafosse, aux différents peuples qui vivent au nord de Bouna. Les Lobi n'en forment qu'une petite partie, et leur langue n'est pas comprise des autres.",
             "sources": [
               {
@@ -421,6 +436,7 @@
               "to": 1888,
               "label": "Février 1888"
             },
+            "era": "polity",
             "statement": "Le nom Lobi apparaît par écrit chez l'explorateur Louis-Gustave Binger : à Léra, des Mandé lui disent que la langue de leurs voisins ressemble à celle des « gens du Lobi ». Binger l'emploie pour un pays. C'est la plus ancienne trace de ce nom que le projet connaît ; les Lobi vivaient déjà dans la région avant elle.",
             "formAsWritten": "gens du Lobi",
             "birth": true,

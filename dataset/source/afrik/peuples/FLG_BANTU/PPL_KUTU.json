@@ -72,7 +72,8 @@
       {
         "title": "Kutu in Tanzania – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/12891",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kutu people – 101 Last Tribes, 2023",
@@ -82,12 +83,14 @@
       {
         "title": "Kutu of Tanzania – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg014969/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kutu – ISO 639-3 kdc, SwordsShare Map",
         "url": "https://map.swordshare.com/kdc",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Societies, Religion, and History – Gutenberg-e, 2008",

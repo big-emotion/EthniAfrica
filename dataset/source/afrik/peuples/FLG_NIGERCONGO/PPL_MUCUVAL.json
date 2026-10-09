@@ -79,7 +79,8 @@
       {
         "title": "Kuvale language resources – Joshua Project",
         "url": "https://joshuaproject.net/languages/olu",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Rull et al. – Genome-wide variation in the Angolan Namib Desert reveals unique Pre-Bantu ancestry, Science Advances (2023)",

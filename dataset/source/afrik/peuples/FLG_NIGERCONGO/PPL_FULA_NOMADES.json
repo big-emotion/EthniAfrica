@@ -139,7 +139,8 @@
       {
         "title": "IIED - Pastoralism and climate change in the Sahel",
         "url": "https://www.iied.org/pastoralism",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       }
     ]
   }

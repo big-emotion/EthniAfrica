@@ -114,12 +114,14 @@
       {
         "title": "Britannica — Malawi: History and People",
         "url": "https://www.britannica.com/place/Malawi/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Nyanja, Chewa in Malawi",
         "url": "https://joshuaproject.net/people_groups/14091/MI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

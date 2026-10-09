@@ -96,7 +96,8 @@
       {
         "title": "Joshua Project — Attie in Cote d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/10483",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Attie language (ati)",
@@ -128,7 +129,8 @@
       {
         "title": "Peoplegroups.org — Akye (Attie) in Cote d'Ivoire",
         "url": "https://www.peoplegroups.org/explore/GroupDetails.aspx?peid=16025",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

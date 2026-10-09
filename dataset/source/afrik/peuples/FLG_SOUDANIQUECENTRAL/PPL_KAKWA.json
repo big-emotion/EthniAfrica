@@ -95,7 +95,8 @@
       {
         "title": "Britannica — Idi Amin",
         "url": "https://www.britannica.com/biography/Idi-Amin",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue — Kakwa language (keo)",
@@ -111,7 +112,8 @@
       {
         "title": "ACCORD — The Hidden Population (2020)",
         "url": "https://www.accord.org.za/conflict-trends/the-hidden-population/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Kyemba, Henry. State of Blood: The Inside Story of Idi Amin. 1977",

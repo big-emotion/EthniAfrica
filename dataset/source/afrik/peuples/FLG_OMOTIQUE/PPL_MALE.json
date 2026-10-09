@@ -95,7 +95,8 @@
       {
         "title": "Male in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13451",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Male (Ethiopia) – Glottolog 5.1",
@@ -106,7 +107,8 @@
       {
         "title": "Male (Ethiopia) – ISO 639-3 / Swordshare Map",
         "url": "https://map.swordshare.com/mdy",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Maale people – The Tribal Society, 2024",

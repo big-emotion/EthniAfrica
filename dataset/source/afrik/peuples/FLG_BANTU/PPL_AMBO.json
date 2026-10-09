@@ -79,12 +79,14 @@
       {
         "title": "Joshua Project – Ambo in Zambia",
         "url": "https://joshuaproject.net/people_groups/18917",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org – Ambo of Zambia",
         "url": "https://peoplegroups.org/people_groups/pg015563/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Lala-Bisa language (leb)",
@@ -95,7 +97,8 @@
       {
         "title": "Britannica – Ambo people",
         "url": "https://www.britannica.com/topic/Ambo-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

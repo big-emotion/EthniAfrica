@@ -143,6 +143,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Sawadogo figure parmi les exemples de noms de famille mossi que cite la Société internationale de linguistique. Chez les Mossi, un tel nom désigne un buudu, un groupe de descendance par les pères, selon Michel Izard.",
             "aspect": "usage",
             "sources": [
@@ -174,6 +175,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Sawadogo désigne un lignage mossi. Les sources le relient au nuage et à la pluie, mais elles ne lui donnent pas tout à fait le même sens ; nous les présentons séparément.",
             "aspect": "meaning",
             "sources": [
@@ -205,6 +207,7 @@
               "to": 1982,
               "label": "1982"
             },
+            "era": "modern",
             "statement": "Le nom Sawadogo apparaît par écrit chez Doris Bonnet, qui le donne comme sôndré, ou nom de lignage, de Pierre Sawadogo, un des participants aux veillées de Gourcy. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand une chercheuse l'a noté, pas depuis quand le nom est porté.",
             "birth": true,
             "sources": [
@@ -226,6 +229,7 @@
               "to": 1982,
               "label": "Proposé en 1982"
             },
+            "era": "modern",
             "statement": "Le nom Sawadogo voudrait dire « le nuage », selon Doris Bonnet.",
             "hypothesisGroup": "sens du nom Sawadogo",
             "sources": [
@@ -268,6 +272,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Sawadogo, écrit aussi Saoudougué, est également porté par une lignée kurumfe. Ce nom-là voudrait dire « nous avons cessé » et ne se confond pas avec le nom mossi, selon le projet de répertoire des patronymes du Burkina Faso.",
             "sources": [
               {
@@ -298,6 +303,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Savadogo est une autre écriture de Sawadogo, que donne le projet de répertoire des patronymes du Burkina Faso.",
             "sources": [
               {

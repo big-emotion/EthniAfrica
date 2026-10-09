@@ -111,7 +111,8 @@
       {
         "title": "Britannica — Itsekiri",
         "url": "https://www.britannica.com/topic/Itsekiri",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Itsekiri National Association of Washington, D.C. — Itsekiri Language and Culture",
@@ -126,7 +127,8 @@
       {
         "title": "Joshua Project — Itsekiri in Nigeria",
         "url": "https://joshuaproject.net/people_groups/12264",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Warri Kingdom Archives — traditions orales et histoire du royaume de Warri",

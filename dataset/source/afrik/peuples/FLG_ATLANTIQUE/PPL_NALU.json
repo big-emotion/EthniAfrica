@@ -99,12 +99,14 @@
       {
         "title": "Joshua Project, Nalu in Guinea",
         "url": "https://joshuaproject.net/people_groups/13930/GV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project, Nalu in Guinea-Bissau",
         "url": "https://joshuaproject.net/people_groups/13930/PU",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bouju, Stephane. Historique sur les populations cotieres de Guinee et de Sierra Leone. IRD Editions, OpenEdition Books, 2013",

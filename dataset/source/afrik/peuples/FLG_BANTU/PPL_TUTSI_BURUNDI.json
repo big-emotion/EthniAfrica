@@ -99,7 +99,8 @@
       {
         "title": "Encyclopaedia Britannica — Burundi, Ethnic Conflict",
         "url": "https://www.britannica.com/place/Burundi/The-Third-Republic",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Global Voices — Burundis troubled history 1972 (2023)",

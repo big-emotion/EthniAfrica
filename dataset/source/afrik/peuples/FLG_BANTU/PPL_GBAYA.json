@@ -111,22 +111,26 @@
       {
         "title": "Gbaya – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Gbaya",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Gbaya-Bossangoa in Central African Republic – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/11844",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Gbaya, Northwest in Cameroon – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10742/CM",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Gbaya, Southwest in Central African Republic – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/11843",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "What Is The Ethnic Composition of the Central African Republic – WorldAtlas, 2019",

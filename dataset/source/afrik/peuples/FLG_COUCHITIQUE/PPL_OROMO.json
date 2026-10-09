@@ -126,7 +126,8 @@
       {
         "title": "Joshua Project — Oromo, Borana in Ethiopia",
         "url": "https://joshuaproject.net",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   },
@@ -147,6 +148,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Oromo est l'appellation officielle dans tous les contextes éthiopiens et kényans ; la langue est appelée Afaan Oromoo et la région fédérale Oromia.",
             "aspect": "usage",
             "sources": [

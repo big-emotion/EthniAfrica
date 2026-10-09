@@ -71,17 +71,20 @@
       {
         "title": "A Sustainable Future for the Pimbwe – Cultural Survival Quarterly, 2010",
         "url": "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/sustainable-future-pimbwe-peoples-mpimbwe-fund",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Pimbwe in Tanzania – Joshua Project",
         "url": "https://www.joshuaproject.net/people_groups/14394",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Pimbwe of Tanzania – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015021/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Social Organization and Social Status in Nineteenth and Twentieth Century Rukwa – Waters, African Studies Quarterly vol.11 no.1",

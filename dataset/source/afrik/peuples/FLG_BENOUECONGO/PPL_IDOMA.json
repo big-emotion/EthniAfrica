@@ -99,7 +99,8 @@
       {
         "title": "Britannica — Idoma",
         "url": "https://www.britannica.com/topic/Idoma",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "iambenue.com — Idoma People of Benue State",
@@ -114,7 +115,8 @@
       {
         "title": "Joshua Project — Idoma in Nigeria",
         "url": "https://joshuaproject.net/people_groups/12182",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Recensements nationaux du Nigeria (NPC), 2006",

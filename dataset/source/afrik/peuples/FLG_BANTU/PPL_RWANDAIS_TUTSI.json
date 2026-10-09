@@ -131,12 +131,14 @@
       {
         "title": "Human Rights Watch — Leave None to Tell the Story: Genocide in Rwanda (1999)",
         "url": "https://www.hrw.org/reports/1999/rwanda/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Council on Foreign Relations — Thirty Years After Rwanda Genocide (2024)",
         "url": "https://www.cfr.org/articles/thirty-years-after-rwandas-genocide-where-country-stands-today",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "CIA World Factbook — Rwanda",

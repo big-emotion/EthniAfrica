@@ -107,7 +107,8 @@
       {
         "title": "The Editors of Encyclopaedia Britannica (2025) – \"Saharan languages\". *Britannica*",
         "url": "https://www.britannica.com/topic/Saharan-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Études génétiques",

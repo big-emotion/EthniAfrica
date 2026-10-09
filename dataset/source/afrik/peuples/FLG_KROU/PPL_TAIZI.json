@@ -117,7 +117,8 @@
       {
         "title": "Britannica — Kru ethnic group",
         "url": "https://www.britannica.com/topic/Kru",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "CIA World Factbook — Liberia",

@@ -108,7 +108,8 @@
       {
         "title": "Encyclopaedia Britannica — Banda",
         "url": "https://www.britannica.com/topic/Banda-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue — Banda-Linda (liy)",
@@ -119,7 +120,8 @@
       {
         "title": "Joshua Project — Banda, West Central in Central African Republic",
         "url": "https://joshuaproject.net/people_groups/10638/CT",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes — Banda",

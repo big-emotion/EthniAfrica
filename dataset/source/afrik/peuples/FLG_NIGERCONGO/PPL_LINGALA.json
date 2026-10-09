@@ -146,12 +146,14 @@
       {
         "title": "Britannica — Lingala language",
         "url": "https://www.britannica.com/topic/Lingala-language",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Lingala in Congo, Democratic Republic of",
         "url": "https://joshuaproject.net/people_groups/13068/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Lingala (lin)",

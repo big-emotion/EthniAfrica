@@ -22,7 +22,7 @@ import { parseDossierFile } from "../src/lib/afrik/parsers/dossierParser";
 import { parsePlaceFile } from "../src/lib/afrik/parsers/placeParser";
 import { parseNameHistory } from "../src/lib/afrik/parsers/nameHistoryParser";
 import { parsePatronymeFile } from "../src/lib/afrik/parsers/patronymeParser";
-import type { SourceTier } from "../src/types/sources";
+import { SOURCE_KINDS, type SourceTier } from "../src/types/sources";
 // The same resolver the globe uses, so this gate and the rendering can never
 // disagree about which countries are drawable.
 import { getAdmin0Rings } from "../src/lib/atlas/overlays";
@@ -2415,6 +2415,18 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
             );
           }
 
+          // Mirrors sources_source_kind_check: a kind the vocabulary does not
+          // know passes every fiche gate and is refused only by the sync.
+          if (
+            kind !== undefined &&
+            !(SOURCE_KINDS as readonly unknown[]).includes(kind)
+          ) {
+            errors.push(
+              `${fiche}: source "${title}" declares kind "${String(kind)}", ` +
+                `which is not one of ${SOURCE_KINDS.join(", ")}`
+            );
+          }
+
           // Mirrors sources_new_kind_tier_check (migration 089). Unchecked
           // here, a "referenced" oral_tradition source passed every PR gate
           // and was then refused by both database syncs (PAT_CAMARA,
@@ -4014,6 +4026,7 @@ const NAME_HISTORY_FICHE_DIRECTORIES = [
  */
 export function checkNameHistoryBlocks(datasetRoot: string): ValidationResult {
   const errors: string[] = [];
+  const warnings: string[] = [];
 
   for (const directory of NAME_HISTORY_FICHE_DIRECTORIES) {
     for (const fullPath of collectJsonFiles(
@@ -4047,10 +4060,30 @@ export function checkNameHistoryBlocks(datasetRoot: string): ValidationResult {
         }
         seen.add(nameText);
       }
+
+      // A warning, not an error: the accounts left without an era are the
+      // ones whose territory or date the colonial-periods table cannot
+      // settle, listed for the operator. A new account lands in this list
+      // until someone decides its era.
+      let undecidedCount = 0;
+      const undecided = names.flatMap(({ nameText, accounts }) => {
+        const indexes = accounts.flatMap((account, index) =>
+          account.era === undefined ? [`#${index}`] : []
+        );
+        undecidedCount += indexes.length;
+        return indexes.length > 0
+          ? [`"${nameText}" ${indexes.join(", ")}`]
+          : [];
+      });
+      if (undecidedCount > 0) {
+        warnings.push(
+          `REQ-196: ${file}: ${undecidedCount} nameHistory account(s) declare no era (docs/editorial/strategy/colonial-periods.md): ${undecided.join("; ")}`
+        );
+      }
     }
   }
 
-  return { ok: errors.length === 0, errors, warnings: [] };
+  return { ok: errors.length === 0, errors, warnings };
 }
 
 /**

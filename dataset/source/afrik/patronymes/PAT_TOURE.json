@@ -249,6 +249,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Touré est un nom de clan que le dictionnaire des noms de clan mandingues écrit Tùre. Il lui donne pour équivalents Mànju, Bangura, Samake, Sogoba et Gonepogi, des noms tenus pour le même clan.",
             "aspect": "usage",
             "sources": [
@@ -269,6 +270,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Touré désigne un clan présent chez les Soninké et les Malinké. L'historien Sékéné Mody Cissoko propose deux explications de son origine ; nous présentons chacune séparément.",
             "aspect": "meaning",
             "sources": [
@@ -290,6 +292,7 @@
               "to": 1699,
               "label": "XVIIe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Touré apparaît par écrit dans le Tarikh es-Soudan, la chronique d'es-Sa'di, lettré de Tombouctou : il y nomme l'askia Mohammed « Mohammed-ben-Abou-Bekr-Et-Touri », ou Es-Sellenki selon d'autres auteurs. C'est la plus ancienne trace de ce nom que le projet connaît ; elle parle d'un souverain qui prend le pouvoir en 1493.",
             "formAsWritten": "Et-Touri",
             "birth": true,
@@ -322,6 +325,7 @@
               "to": 1984,
               "label": "Proposé en 1984"
             },
+            "era": "modern",
             "statement": "Le nom Touré serait celui de l'un des plus anciens clans soninké de la société songhay, avec les Sylla, les Tunkara, les Cissé, les Jakhité, les Dramé et les Jawara, selon Sékéné Mody Cissoko.",
             "hypothesisGroup": "origine du nom Touré",
             "sources": [
@@ -343,6 +347,7 @@
               "to": 1984,
               "label": "Proposé en 1984"
             },
+            "era": "modern",
             "statement": "Le nom Touré aurait d'abord été un titre religieux, comme Cissé, au temps de l'askia Mohammed, avant d'être repris par les conquérants marocains, selon Sékéné Mody Cissoko.",
             "hypothesisGroup": "origine du nom Touré",
             "sources": [
@@ -364,6 +369,7 @@
               "to": null,
               "label": "Récit de la tradition du Manden"
             },
+            "era": "polity",
             "statement": "Le nom Touré figure dans la tradition du Manden parmi les cinq clans maraboutiques proclamés « gardiens de la foi » après la victoire de Soundiata, selon Djibril Tamsir Niane.",
             "sources": [
               {
@@ -394,6 +400,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Ture est l'écriture de Touré dans l'Histoire générale de l'Afrique en anglais ; le dictionnaire des noms de clan mandingues l'écrit Tùre.",
             "sources": [
               {

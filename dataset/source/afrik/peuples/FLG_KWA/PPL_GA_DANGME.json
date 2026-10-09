@@ -99,7 +99,8 @@
       {
         "title": "Britannica - Ga people",
         "url": "https://www.britannica.com/topic/Ga",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Visit Ghana - Homowo Festival",

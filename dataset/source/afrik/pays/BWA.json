@@ -258,18 +258,21 @@
         "title": "David Livingstone, Missionary Travels and Researches in South Africa, Londres, John Murray, 1857, p. 200-201",
         "url": "https://archive.org/details/missionarytravel03livi",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Rattache le nom à chuana, « semblable, égal », rapporte puis écarte l'explication par le malentendu d'un voyageur, et note que les Bechuana ne savent pas expliquer la dérivation de leur propre nom. Donne aussi le couple Sichuana pour leur langue et Sekoa pour celle des Blancs. Passage lu en fac-similé le 9 septembre 2026."
       },
       {
         "title": "John Brown, Secwana Dictionary: English-Secwana and Secwana-English, imprimé pour la London Missionary Society par Butler et Tanner, 1895",
         "url": "https://archive.org/details/secwanadictionar00brow",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Donne à chwana deux sens, « être semblable » et le féminin de ncho, « noir », et glose Bocwana par « la personnalité d'un Mocwana », non par un territoire. Il porte en revanche Bokweni pour le pays des Bakweni et Borwe pour celui des San, ce qui atteste l'emploi territorial du préfixe. La notice du fac-similé donne une date et un auteur erronés ; la page de titre et la préface, signée à Taungs en mars 1895, ont été lues, ainsi que la fiche de la Open Library. Consulté le 9 septembre 2026."
       },
       {
         "title": "James Archbell, A Grammar of the Bechuana Language, Grahamstown, Meurant et Godlonton, 1837",
         "url": "https://archive.org/details/grammarofbechuan00arch",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Première grammaire du setswana. Elle établit le système des préfixes mo-, ba-, se-, bo-. Elle range toutefois la forme Buchuana parmi les duels, et non parmi les noms de territoire : la lecture « pays des Tswana » de ce passage est celle de commentateurs modernes, pas celle d'Archbell. Volume lu en fac-similé le 9 septembre 2026."
       },
       {
@@ -302,6 +305,7 @@
         "title": "Bechuanaland Protectorate: Report for the year 1965, Londres, His Majesty's Stationery Office, établi par le service d'information du gouvernement du Bechuanaland",
         "url": "https://archive.org/details/b31415994",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Rapport annuel du territoire, rédigé par son propre gouvernement. Il rapporte qu'un document présenté à l'Assemblée législative par le Premier ministre le 13 décembre 1965 proposait l'établissement d'une république « to be called the Republic of Botswana ». C'est le premier acte de dénomination daté et attribuable qui ait été trouvé. Passage lu en fac-similé le 9 septembre 2026."
       },
       {

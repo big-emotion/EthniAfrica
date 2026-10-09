@@ -23,6 +23,7 @@
               "to": 1979,
               "label": "Usage décrit en 1979"
             },
+            "era": "modern",
             "statement": "Le nom Nzebi est celui par lequel les membres de ce peuple se désignent : Banzèbi au pluriel, Munzèbi pour une seule personne. Gérard Collomb choisit cette graphie parce qu'elle suit leur prononciation, plutôt que la graphie habituelle, Bandjabi.",
             "aspect": "usage",
             "sources": [
@@ -44,6 +45,7 @@
               "to": 1975,
               "label": "Récits recueillis en 1974 et 1975"
             },
+            "era": "modern",
             "statement": "Le nom Nzèbi est aussi celui du personnage dont un mythe des Banzèbi raconte les sept fils. Gérard Collomb en a recueilli plusieurs versions dans les districts de Mbigou et de Koulamoutou.",
             "sources": [
               {
@@ -64,6 +66,7 @@
               "to": 1867,
               "label": "Voyage des années 1860 (récit publié en 1867)"
             },
+            "era": "polity",
             "statement": "Le nom Nzebi pourrait être celui que l'explorateur Paul Du Chaillu écrit Njavi : il rencontre des gens de la « Njavi tribe » dans un village de l'Ashango-land, à l'est duquel ils vivent. Les sources que nous avons lues ne disent pas s'il s'agit du même peuple.",
             "sources": [
               {
@@ -95,6 +98,7 @@
               "to": 1979,
               "label": "Usage décrit en 1979"
             },
+            "era": "modern",
             "statement": "Le nom Bandjabi est en 1979 la graphie habituelle du nom de ce peuple, selon Gérard Collomb, qui lui préfère Banzèbi, plus proche de la prononciation des intéressés.",
             "aspect": "usage",
             "sources": [
@@ -252,7 +256,8 @@
       {
         "title": "PeopleGroups.org — Nzebi of Gabon",
         "url": "https://peoplegroups.org/people_groups/pg013010/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Nzebi language, code nzb",

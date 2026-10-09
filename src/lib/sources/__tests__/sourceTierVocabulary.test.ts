@@ -296,7 +296,7 @@ describe("source tier vocabulary contract — Supabase schema", () => {
   // @req REQ-161
   it("allows exactly the exported source kinds in the latest sources_source_kind_check", () => {
     const allowed = checkConstraintValues(
-      readMigration("103_"),
+      readMigration("105_"),
       "sources_source_kind_check"
     );
     expect([...allowed].sort()).toEqual([...SOURCE_KINDS].sort());

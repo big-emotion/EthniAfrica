@@ -99,7 +99,8 @@
       {
         "title": "Britannica – Mzilikazi",
         "url": "https://www.britannica.com/biography/Mzilikazi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue – Ndebele (nde)",
@@ -143,6 +144,7 @@
               "to": null,
               "label": "Usage contemporain, auto-désignation"
             },
+            "era": "modern",
             "statement": "« Ndebele » est le terme officiel au Zimbabwe ; « AmaNdebele » reste l'auto-désignation privilégiée par le peuple.",
             "aspect": "usage",
             "sources": [

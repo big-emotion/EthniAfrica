@@ -134,17 +134,20 @@
       {
         "title": "Britannica — Mande",
         "url": "https://www.britannica.com/topic/Mande",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica — Mande languages",
         "url": "https://www.britannica.com/topic/Mande-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "EBSCO Research Starters — Mande Languages",
         "url": "https://www.ebsco.com/research-starters/language-and-linguistics/mande-languages",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Trailblazer Travelz — The Mande People",
@@ -191,6 +194,7 @@
         "title": "Koelle, Sigismund Wilhelm (1854) – Polyglotta Africana. Church Missionary House, Londres",
         "url": "https://github.com/lexibank/polyglottaafricana",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Transcription savante du texte de 1854, publiée comme jeu de données par le projet Lexibank. Les remarques de terrain de Koelle sur le pays de Mánde et sur le suffixe de gentilé y sont lues intégralement."
       },
       {

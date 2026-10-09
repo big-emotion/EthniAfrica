@@ -108,12 +108,14 @@
       {
         "title": "Britannica — Lobengula",
         "url": "https://www.britannica.com/biography/Lobengula",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Ndebele, Tabele in Zimbabwe",
         "url": "https://joshuaproject.net/people_groups/13275/ZI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue (SIL) — isiNdebele [nde]",

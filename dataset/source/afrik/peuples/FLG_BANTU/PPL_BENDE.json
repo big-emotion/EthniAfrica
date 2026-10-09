@@ -75,7 +75,8 @@
       {
         "title": "Bende in Tanzania – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10787",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bende Language (BDP) – Ethnologue SIL",
@@ -92,7 +93,8 @@
       {
         "title": "The Bende of Tanzania (PG014912) – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg014912/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "A Bende Vocabulary – Yuko Abe, ILCAA, Tokyo University of Foreign Studies, 2006",

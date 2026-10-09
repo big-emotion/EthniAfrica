@@ -90,17 +90,20 @@
       {
         "title": "Ethnologue — Suri, Tirmaga-Chai (SuQ)",
         "url": "https://joshuaproject.net/people_groups/15130",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Global Recordings Network — Suri, Tirmaga-Chai (suq)",
         "url": "https://globalrecordings.net/en/language/suq",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Suri, Tirmaga-Chai in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/15130",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Abbink, Jon G. 2009. Suri Orature and Material Culture in Changing Times. African Studies",

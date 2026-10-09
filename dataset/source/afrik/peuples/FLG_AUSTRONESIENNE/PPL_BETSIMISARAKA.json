@@ -92,7 +92,8 @@
       {
         "title": "Britannica — Betsimisaraka, (consulté 2025)",
         "url": "https://www.britannica.com/topic/Betsimisaraka",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "101 Last Tribes — Betsimisaraka, (consulté 2025)",
@@ -102,7 +103,8 @@
       {
         "title": "Joshua Project — Betsimisaraka North in Madagascar, (consulté 2025)",
         "url": "https://joshuaproject.net/people_groups/10819",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue — Northern Betsimisaraka Malagasy (bmm), (consulté 2025)",

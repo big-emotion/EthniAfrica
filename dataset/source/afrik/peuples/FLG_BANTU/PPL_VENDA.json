@@ -109,7 +109,8 @@
       {
         "title": "Minority Rights Group — Vhavenda in South Africa",
         "url": "https://minorityrights.org/communities/vhavenda-in-south-africa/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Statistics South Africa — Mid-Year Population Estimates 2025",

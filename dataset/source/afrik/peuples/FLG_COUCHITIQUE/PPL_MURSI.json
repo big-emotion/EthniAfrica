@@ -70,7 +70,8 @@
       {
         "title": "Mursi in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13887",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Worku Firew – A Grammar of Mursi, a Nilo-Saharan Language of Ethiopia (these JCU / Brill), 2020-2021",
@@ -86,7 +87,8 @@
       {
         "title": "Omo Valley Tribes – Survival International",
         "url": "https://survivalinternational.org/peoples/omovalley",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "ISO 639-3: muz (Mursi) – SIL International / Ethnologue",

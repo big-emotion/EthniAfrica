@@ -99,12 +99,14 @@
       {
         "title": "Minority Rights Group, Tiv in Nigeria",
         "url": "https://minorityrights.org/communities/tiv/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Joshua Project, Tiv people group all countries",
         "url": "https://joshuaproject.net/people_groups/15505",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Agaku, J.M. (2008). The Girinya Dance Theatre of the Tiv People of Nigeria. International Journal of Intangible Heritage",

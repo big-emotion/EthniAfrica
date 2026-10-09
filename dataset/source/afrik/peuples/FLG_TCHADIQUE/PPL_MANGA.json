@@ -101,17 +101,20 @@
       {
         "title": "Joshua Project — Kanuri, Manga in Niger",
         "url": "https://joshuaproject.net/people_groups/13496/NG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Kanuri, Manga in Nigeria",
         "url": "https://joshuaproject.net/people_groups/13496/NI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Encyclopaedia Britannica — Manga people",
         "url": "https://www.britannica.com/topic/Manga-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Introduction to the Kanuri Language — Michigan State University (ALMA)",

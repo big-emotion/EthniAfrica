@@ -129,7 +129,8 @@
       {
         "title": "EBSCO Research Starters — Tswana or Setswana language",
         "url": "https://www.ebsco.com/research-starters/language-and-linguistics/tswana-or-setswana-language",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue — Setswana (tsn)",

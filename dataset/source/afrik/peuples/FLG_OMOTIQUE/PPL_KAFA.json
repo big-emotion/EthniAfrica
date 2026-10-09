@@ -123,7 +123,8 @@
       {
         "title": "PeopleGroups.org — Kafa of Ethiopia",
         "url": "https://peoplegroups.org/people_groups/pg011601/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kafa Nature Tours — Kaffa: The Birthplace of Arabica",
@@ -139,7 +140,8 @@
       {
         "title": "Kafa in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/12408",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "XLIII Coffee – Kaffa Coffee and the Journey from the Ethiopian Rainforest, 2025",

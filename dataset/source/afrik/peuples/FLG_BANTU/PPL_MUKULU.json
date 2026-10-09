@@ -67,12 +67,14 @@
       {
         "title": "Mukulu of Zambia – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015611/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Mukulu in Zambia – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/13860",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ISO 639-3 codes Africa – Wiktionary",

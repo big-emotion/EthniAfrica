@@ -107,7 +107,8 @@
       {
         "title": "Swordshare Map — Ng'akarimojong ISO 639-3 kdj",
         "url": "https://map.swordshare.com/kdj",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Uganda Bureau of Statistics — National Population and Housing Census 2014",

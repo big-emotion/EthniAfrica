@@ -223,7 +223,8 @@
       {
         "title": "Minority Rights Group – Amazigh in Tunisia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "ngo"
       },
       {
         "title": "Recensements tunisiens",

@@ -120,7 +120,8 @@
       {
         "title": "Encyclopaedia Africana — Nabiembali",
         "url": "https://encyclopaediaafricana.com/nabiembali/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "African History Extra — Kingdoms at the forest's edge: a history of Mangbetu (ca. 1750-1895)",

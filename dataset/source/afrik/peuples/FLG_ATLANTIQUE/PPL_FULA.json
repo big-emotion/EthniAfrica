@@ -242,7 +242,8 @@
       {
         "title": "Joshua Project — Fulani, Maasina in Mali",
         "url": "https://joshuaproject.net/people_groups/11773/ml",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ScienceDirect — Population history and admixture of the Fulani people from the Sahel (2025)",
@@ -253,17 +254,20 @@
       {
         "title": "Britannica - Fulani empire",
         "url": "https://www.britannica.com/place/Fulani-Empire",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica - Western Africa, jihad of Usman dan Fodio",
         "url": "https://www.britannica.com/place/western-Africa/The-jihad-of-Usman-dan-Fodio",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica 1911 — Fula (Encyclopaedia Britannica, 11e édition)",
         "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Fula",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Texte lu directement : « Fulbe or Fula (sing. Pullo, Peul) is the Mandingan name, Follani the Hausa, Fellatah the Kanuri, Fullan the Arab, and Fulde on the Benue »."
       },
       {
@@ -338,6 +342,7 @@
         "title": "Britannica 1911 — Tukulor (Encyclopaedia Britannica, 11e édition)",
         "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Tukulor",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Texte lu directement. Rapporte deux explications du nom Tukulor sans en retenir une."
       },
       {
@@ -407,6 +412,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Fulɓe est le nom que les personnes concernées emploient pour se nommer au pluriel. Pour une seule personne, elles disent Pullo. Plusieurs explications du sens de ce nom ont été proposées : deux par Amadou Hampâté Bâ, lui-même pullo, qui ne tranche pas, les autres par des auteurs extérieurs. Elles restent des hypothèses. Le linguiste J. O. Breedveld juge le sens de Pullo et de Fulɓe à peine étudié et rapporte une racine ful- sans lui donner de sens. Un récit d'un barde pullo du Cameroun, recueilli par Eldridge Mohammadu, parle de l'origine du peuple et non du sens du mot : il fait venir de Malle, le Mali, tous les Fulɓe et rattache à ce point de départ les noms de leurs lignages.",
             "aspect": "meaning",
             "sources": [
@@ -481,6 +487,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Nom employé par les intéressés eux-mêmes, quelle que soit la langue dans laquelle les autres les désignent.",
             "aspect": "usage",
             "sources": [
@@ -555,6 +562,7 @@
               "to": null,
               "label": "Usage décrit au présent par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Fulɓe est écrit « Pullo (au singulier) et Fulbe (au pluriel) » par François de Medeiros.",
             "formAsWritten": "Pullo (au singulier) et Fulbe (au pluriel)",
             "actors": [
@@ -581,6 +589,7 @@
               "to": 1857,
               "label": "Voyage de 1849-1855 (récit publié en 1857), à Kano"
             },
+            "era": "polity",
             "statement": "Le nom Fulɓe est écrit « Fúlbe (sing. Púllo) » par Heinrich Barth. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand le peuple l'emploie.",
             "formAsWritten": "Fúlbe (sing. Púllo)",
             "actors": [
@@ -608,6 +617,7 @@
               "to": 1966,
               "label": "Rapporté dans un article de 1966"
             },
+            "era": "modern",
             "statement": "Le nom Fulɓe est écrit « Fulbe, qui fait au singulier Pullo » par Amadou Hampâté Bâ.",
             "formAsWritten": "Fulbe, qui fait au singulier Pullo",
             "actors": [
@@ -634,6 +644,7 @@
               "to": 1966,
               "label": "Proposée en 1966"
             },
+            "era": "modern",
             "statement": "Le nom Fulɓe viendrait du verbe fullude, « couvrir de poussière », selon Amadou Hampâté Bâ, lui-même pullo.",
             "hypothesisGroup": "origine du nom Fulɓe",
             "sources": [
@@ -655,6 +666,7 @@
               "to": 1966,
               "label": "Rapportée en 1966"
             },
+            "era": "modern",
             "statement": "Le nom Fulɓe viendrait de Ful, un nom connu de la Bible, selon une supposition de Maurice Delafosse que rapporte Amadou Hampâté Bâ, sans trancher entre les deux.",
             "hypothesisGroup": "origine du nom Fulɓe",
             "sources": [
@@ -676,6 +688,7 @@
               "to": 1937,
               "label": "Rapportée en 1937"
             },
+            "era": "colonial",
             "statement": "Le nom Fulɓe signifierait « les dispersés », « les éparpillés », selon le commandant Gaden, cité par Maurice Delafosse puis par Louis Tauxier.",
             "hypothesisGroup": "origine du nom Fulɓe",
             "sources": [
@@ -696,6 +709,7 @@
               "to": 1883,
               "label": "Rapportée en 1883"
             },
+            "era": "polity",
             "statement": "Le nom Fulɓe reposerait sur une forme Pul, « brun clair, rouge », opposée au « noir » des Wolof, selon Heinrich Barth résumé par Crozals. Cette lecture range les peuples selon la couleur de la peau.",
             "hypothesisGroup": "origine du nom Fulɓe",
             "sources": [
@@ -716,6 +730,7 @@
               "to": 2018,
               "label": "Proposée en 2018"
             },
+            "era": "modern",
             "statement": "Le nom Fulɓe viendrait de la base fur- du mot Ba-fur, par lequel les Berbères auraient désigné les peuples du Tekrur, selon Oumar Niang.",
             "hypothesisGroup": "origine du nom Fulɓe",
             "sources": [
@@ -748,6 +763,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "« Ceux qui parlent le pulaar ». Le nom désigne tous ceux qui parlent la langue ; c'est aussi celui que se donnent les habitants du Fouta Toro, que d'autres appellent Toucouleur.",
             "aspect": "meaning",
             "sources": [
@@ -786,6 +802,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Nom que se donnent les Fulɓe de la vallée du fleuve Sénégal, là où l'extérieur dit Toucouleur. Nous n'avons pas trouvé depuis quand il est employé.",
             "aspect": "usage",
             "sources": [
@@ -824,6 +841,7 @@
               "to": null,
               "label": "Usage décrit au présent par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Haalpulaar'en est écrit « Halpularen » par François de Medeiros.",
             "formAsWritten": "Halpularen",
             "actors": [
@@ -850,6 +868,7 @@
               "to": null,
               "label": "Usage décrit au présent par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Haalpulaar'en est écrit « Hal pulaaren (ceux qui parlent pular — ou « peul ») » par Djibril Tamsir Niane.",
             "formAsWritten": "Hal pulaaren (ceux qui parlent pular — ou « peul »)",
             "actors": [
@@ -888,6 +907,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "« Les gens du Fouta ». L'un des deux noms que se donnent, d'après Yaya Wane, ceux que l'extérieur appelle Toucouleur, à côté de Haalpulaar'en.",
             "aspect": "meaning",
             "sources": [
@@ -920,6 +940,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Forme française du nom. Les sources consultées la font venir du wolof, où le peuple est nommé d'une forme proche : pal chez Nussbaum, cité par Breedveld ; Pë'l dans l'article de Wikipédia ; Maurice Delafosse, rapporté par Tauxier, écrit que les Wolof prononcent Peul le radical de Foulbé.",
             "aspect": "meaning",
             "sources": [
@@ -967,6 +988,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Forme courante en français, aussi écrite Peulh ou Peuhl. Un article d'Amadou Hampâté Bâ paru en 1966 rapporte que les Français disent « Peuls » ou « Peulhs ».",
             "aspect": "usage",
             "sources": [
@@ -1014,6 +1036,7 @@
               "to": 1966,
               "label": "Rapporté dans un article de 1966"
             },
+            "era": "modern",
             "statement": "Le nom Peul est écrit « Peuls ou Peulhs » par Amadou Hampâté Bâ, à propos de l'usage français.",
             "formAsWritten": "Peuls ou Peulhs",
             "actors": [
@@ -1040,6 +1063,7 @@
               "to": 1842,
               "label": "1842"
             },
+            "era": "polity",
             "statement": "Le nom Peul apparaît chez l'auteur que Louis Tauxier nomme D'Eichtal, qui sait en 1842 que ce peuple se dit « Foul ou Peul » au singulier. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
             "birth": true,
             "sources": [
@@ -1072,6 +1096,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Nom donné aux Fulɓe par les peuples manden (mandingues), puis écrit par des auteurs extérieurs. Ce ne sont pas les premières mentions du peuple : François de Medeiros relève qu'il est nommé explicitement dans les sources arabes à partir d'al-Maqrīzī et de la Chronique de Kano. Les sources ne s'accordent pas sur la langue d'où vient le nom : le manden pour les unes, le haoussa pour un guide d'apprentissage du pular.",
             "aspect": "meaning",
             "sources": [
@@ -1137,6 +1162,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Forme employée en anglais, aussi écrite Fulah ou Fullah.",
             "aspect": "usage",
             "sources": [
@@ -1202,6 +1228,7 @@
               "to": 1594,
               "label": "Manuscrit daté de 1594"
             },
+            "era": "polity",
             "statement": "Le nom Fula est écrit « Fulos » par André Álvares de Almada, Tratado breve dos Rios de Guiné do Cabo Verde.",
             "formAsWritten": "Fulos",
             "actors": [
@@ -1228,6 +1255,7 @@
               "to": 1799,
               "label": "Voyage de 1795-1797 (récit publié en 1799)"
             },
+            "era": "polity",
             "statement": "Le nom Fula est écrit « Foulahs (or Pholeys) » par Mungo Park.",
             "formAsWritten": "Foulahs (or Pholeys)",
             "actors": [
@@ -1254,6 +1282,7 @@
               "to": null,
               "label": "Usage décrit au présent par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Fula est écrit « Fula » par François de Medeiros, à propos de l'usage des Manden.",
             "formAsWritten": "Fula",
             "actors": [
@@ -1280,6 +1309,7 @@
               "to": 1599,
               "label": "XVIe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Fula apparaît, écrit Fullos, chez un auteur portugais du XVIe siècle que Louis Tauxier nomme « Jeao de Barras ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
             "birth": true,
             "sources": [
@@ -1363,6 +1393,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Nom donné aux Fulɓe en haoussa, d'où l'anglais l'a repris. Heinrich Barth l'écrit Féllani, au singulier Baféllanchi ; François de Medeiros écrit Fulani, au singulier Ba-Filanci, et note qu'une forme Fulāni est aussi employée par les Arabes.",
             "aspect": "meaning",
             "sources": [
@@ -1419,6 +1450,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Forme courante en anglais. Un article d'Amadou Hampâté Bâ paru en 1966 l'attribue aux Haoussa et aux Anglais.",
             "aspect": "usage",
             "sources": [
@@ -1475,6 +1507,7 @@
               "to": 1857,
               "label": "Voyage de 1849-1855 (récit publié en 1857)"
             },
+            "era": "polity",
             "statement": "Le nom Fulani est écrit « Féllani » par Heinrich Barth, à propos de l'usage haoussa.",
             "formAsWritten": "Féllani",
             "actors": [
@@ -1501,6 +1534,7 @@
               "to": 1857,
               "label": "Voyage de 1849-1855 (récit publié en 1857), à Kano"
             },
+            "era": "polity",
             "statement": "Le nom Fulani est écrit « Féllani (sing. Baféllanchi) » par Heinrich Barth, à propos de l'usage haoussa.",
             "formAsWritten": "Féllani (sing. Baféllanchi)",
             "actors": [
@@ -1527,6 +1561,7 @@
               "to": null,
               "label": "Usage décrit au présent par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Fulani est écrit « Fulani (au singulier Ba-Filanci) » par François de Medeiros, à propos de l'usage haoussa.",
             "formAsWritten": "Fulani (au singulier Ba-Filanci)",
             "actors": [
@@ -1553,6 +1588,7 @@
               "to": 1966,
               "label": "Rapporté dans un article de 1966"
             },
+            "era": "modern",
             "statement": "Le nom Fulani est écrit « Fulani » par Amadou Hampâté Bâ.",
             "formAsWritten": "Fulani",
             "actors": [
@@ -1579,6 +1615,7 @@
               "to": 1442,
               "label": "Vie d'al-Maqrīzī, 1364-1442"
             },
+            "era": "polity",
             "statement": "Le nom Fulani a une forme proche, Foulania, chez l'historien al-Maqrīzī, selon Louis Tauxier. C'est la plus ancienne trace de cette forme que le projet connaît ; les sources lues ne disent pas s'il s'agit du même nom.",
             "birth": true,
             "sources": [
@@ -1599,6 +1636,7 @@
               "to": 1830,
               "label": "1830"
             },
+            "era": "polity",
             "statement": "Le nom Fulani est écrit « Foulanies » par les frères Lander, selon Louis Tauxier.",
             "sources": [
               {
@@ -1630,6 +1668,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Nom donné aux Fulɓe au Bornou et plus à l'est. Heinrich Barth l'entend chez les gens du Bornou ; François de Medeiros l'attribue aux Kanuri et aux Arabes du Soudan ; Amadou Hampâté Bâ le range parmi les noms que donnent les Arabes. Ces auteurs disent qui emploie le nom, non d'où il vient. Une origine kanouri est proposée ; elle reste une hypothèse.",
             "aspect": "meaning",
             "sources": [
@@ -1695,6 +1734,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Aussi écrit Fallata ou Fallatah.",
             "aspect": "usage",
             "sources": [
@@ -1760,6 +1800,7 @@
               "to": 1857,
               "label": "Voyage de 1849-1855 (récit publié en 1857)"
             },
+            "era": "polity",
             "statement": "Le nom Fellata est écrit « Felláta » par Heinrich Barth, à propos de l'usage du Bornou.",
             "formAsWritten": "Felláta",
             "actors": [
@@ -1786,6 +1827,7 @@
               "to": null,
               "label": "Usage décrit au présent par l'auteur"
             },
+            "era": "modern",
             "statement": "Le nom Fellata est écrit « Felata » par François de Medeiros, à propos de l'usage des Kanuri et des Arabes du Soudan.",
             "formAsWritten": "Felata",
             "actors": [
@@ -1812,6 +1854,7 @@
               "to": null,
               "label": "À propos du début du XIXe siècle, face au Borno"
             },
+            "era": "polity",
             "statement": "Le nom Fellata est écrit « réformistes « fellata » (fulbe) » par Murray Last.",
             "formAsWritten": "réformistes « fellata » (fulbe)",
             "actors": [
@@ -1838,6 +1881,7 @@
               "to": 1966,
               "label": "Rapporté dans un article de 1966"
             },
+            "era": "modern",
             "statement": "Le nom Fellata est écrit « Fulata ou Fellata » par Amadou Hampâté Bâ, à propos de l'usage arabe.",
             "formAsWritten": "Fulata ou Fellata",
             "actors": [
@@ -1864,6 +1908,7 @@
               "to": 1825,
               "label": "1825"
             },
+            "era": "polity",
             "statement": "Le nom Fellata apparaît, écrit Fellalahs, chez l'explorateur Clapperton, qui note qu'on appelait ainsi ce peuple jusque-là, selon Louis Tauxier. C'est la plus ancienne trace de ce nom que le projet connaît ; elle renvoie à un usage plus ancien qu'elle ne date pas.",
             "birth": true,
             "sources": [
@@ -1990,6 +2035,7 @@
               "to": null,
               "label": "Époque coloniale (classification comme ethnie distincte)"
             },
+            "era": "colonial",
             "statement": "Le nom est plus ancien que la colonisation ; ce que l'époque coloniale a imposé, c'est la classification. Ses ethnographes l'ont réservé à la population sédentaire du Fouta Toro, traitée comme une ethnie distincte des Fulɓe pasteurs, alors que les différences entre ces deux groupes sont d'ordre socio-économique, non ethnique, linguistique ou culturel. Les intéressés n'emploient pas ce nom : là même d'où les Fulɓe ont essaimé vers l'est, ils sont désignés par un nom qui leur est étranger.",
             "aspect": "imposition",
             "actors": [
@@ -2144,6 +2190,7 @@
               "to": 1508,
               "label": "1505-1508"
             },
+            "era": "polity",
             "statement": "Le nom Toucouleur est écrit « Tucurois » par Duarte Pacheco Pereira, Esmeraldo de Situ Orbis. C'est la plus ancienne trace de ce nom que le projet connaît. Les gens qu'il désigne vivaient déjà là avant lui.",
             "formAsWritten": "Tucurois",
             "actors": [
@@ -2171,6 +2218,7 @@
               "to": null,
               "label": "Début du XVIe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Toucouleur est écrit « Tucuroes » par Valentim Fernandes, Descripçam.",
             "formAsWritten": "Tucuroes",
             "actors": [
@@ -2197,6 +2245,7 @@
               "to": 1594,
               "label": "Manuscrit daté de 1594"
             },
+            "era": "polity",
             "statement": "Le nom Toucouleur est écrit « Tucurois » par André Álvares de Almada, à propos des « Fulas pretos » venus du Fouta Toro.",
             "formAsWritten": "Tucurois",
             "actors": [
@@ -2223,6 +2272,7 @@
               "to": null,
               "label": "Usage décrit au présent par les auteurs"
             },
+            "era": "modern",
             "statement": "Le nom Toucouleur est écrit « Toucouleur » par Mohammed El Fasi et Ivan Hrbek.",
             "formAsWritten": "Toucouleur",
             "actors": [
@@ -2249,6 +2299,7 @@
               "to": null,
               "label": "Époque coloniale, dans les sources européennes"
             },
+            "era": "colonial",
             "statement": "Le nom Toucouleur est écrit « Tukuler (Toucouleur) ; Tukuleur/Toucouleur » par François de Medeiros.",
             "formAsWritten": "Tukuler (Toucouleur) ; Tukuleur/Toucouleur",
             "actors": [
@@ -2275,6 +2326,7 @@
               "to": null,
               "label": "Usage des voisins wolof et seereer, décrit au présent"
             },
+            "era": "modern",
             "statement": "Le nom Toucouleur est écrit « Tukulóór (Toucouleur) » par Djibril Tamsir Niane.",
             "formAsWritten": "Tukulóór (Toucouleur)",
             "actors": [
@@ -2301,6 +2353,7 @@
               "to": 1966,
               "label": "Rapporté dans un article de 1966"
             },
+            "era": "modern",
             "statement": "Le nom Toucouleur est écrit « Tukulor ou Toucouleur » par Amadou Hampâté Bâ, à propos de l'usage des Djolof et des Sérères.",
             "formAsWritten": "Tukulor ou Toucouleur",
             "actors": [
@@ -2327,6 +2380,7 @@
               "to": 1099,
               "label": "XIe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Takrūr désigne alors le pays de la basse vallée du Sénégal, dont le roi se convertit à l'islam avant les années 1030, d'après le géographe al-Bakrī. Mohammed El Fasi et Ivan Hrbek jugent plus probable que ce pays était alors peuplé de Soninke.",
             "before": true,
             "sources": [
@@ -2389,6 +2443,7 @@
               "to": null,
               "label": "Époque coloniale"
             },
+            "era": "colonial",
             "statement": "Le nom Toucouleur viendrait de l'anglais « two colours », selon Bérenger-Féraud, à l'époque coloniale, qui y voyait la trace d'un métissage, une thèse que Faidherbe soutenait aussi. Yaya Wane, qui la rapporte, admet un temps l'idée d'un métissage tout en la jugeant trop simple.",
             "hypothesisGroup": "origine du nom Toucouleur",
             "sources": [

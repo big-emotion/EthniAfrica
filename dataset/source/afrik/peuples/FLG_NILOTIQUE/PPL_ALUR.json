@@ -125,7 +125,8 @@
       {
         "title": "Joshua Project — Alur people profile",
         "url": "https://joshuaproject.net/people_groups/10023",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   },
@@ -147,6 +148,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Alur désigne un peuple nilotique d'Ouganda et de République démocratique du Congo. La Bibliothèque nationale de France range sous ce nom d'autres formes : Alour, Aluur, Joalur, Jonam, Lur ou Luri. Les textes que nous avons lus ne disent pas d'où vient ce nom ni ce qu'il veut dire.",
             "aspect": "meaning",
             "sources": [
@@ -243,6 +245,7 @@
               "to": 1866,
               "label": "Récit publié en 1866"
             },
+            "era": "polity",
             "statement": "On parle alors du pays Koshi, sur la rive ouest du Nil à sa sortie du lac Albert, d'après ce que le roi du Bunyoro et ses gens ont dit aux voyageurs Speke et Grant, selon Samuel Baker. Emin Pacha écrira plus tard que Koshi est la prononciation shuli et nyoro de Koche, le district de Wadelai, qu'il compte dans le pays Lur.",
             "before": true,
             "sources": [

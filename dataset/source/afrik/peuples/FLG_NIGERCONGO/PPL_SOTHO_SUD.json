@@ -122,7 +122,8 @@
       {
         "title": "PeopleGroups.org — Southern Sotho of Lesotho",
         "url": "https://peoplegroups.org/people_groups/pg015283/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

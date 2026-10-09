@@ -99,7 +99,8 @@
       {
         "title": "Encyclopedia.com — Lakeshore Tonga",
         "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/lakeshore-tonga",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "eHRAF World Cultures — Lakeshore Tonga (fr07)",

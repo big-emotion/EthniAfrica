@@ -125,7 +125,8 @@
       {
         "title": "Joshua Project — Kxoe, Xun in Botswana",
         "url": "https://joshuaproject.net/people_groups/10676/BC",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kilian-Hatz, Christa. Khwe Dictionary. Koln : Rudiger Koppe Verlag, 2003",
@@ -141,7 +142,8 @@
       {
         "title": "IWGIA — The Indigenous World 2025 : Namibia",
         "url": "https://iwgia.org/en/namibia/5634-iw-2025-namibia.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "UNESCO — Tsodilo Hills World Heritage Site",

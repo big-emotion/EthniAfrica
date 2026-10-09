@@ -83,7 +83,8 @@
       {
         "title": "Kwere in Tanzania – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/12923",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kwere people – 101 Last Tribes",
@@ -98,7 +99,8 @@
       {
         "title": "Kwere of Tanzania – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg014972/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kwere Language (CWE) – Ethnologue, SIL International",

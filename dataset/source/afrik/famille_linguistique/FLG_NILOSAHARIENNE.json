@@ -131,7 +131,8 @@
       {
         "title": "Blench, Roger (2010) – Travaux sur le protolangage Nilo-Saharien et la typologie, notamment le système singulatif-collectif-pluratif. Dans *The Nilo-Saharan Languages*. Cambridge: Cambridge University Press (références indirectes via Britannica / articles de typologie)",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ehret, Christopher (2001) – *A Historical-Comparative Reconstruction of Nilo-Saharan*. Cologne: Rüdiger Köppe Verlag",
@@ -142,7 +143,8 @@
       {
         "title": "Britannica Editors (2020-2025) – \"Nilo-Saharan languages\", \"Linguistic characteristics\", \"The diffusion of Nilo-Saharan languages\". Encyclopaedia Britannica. Disponible en ligne",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue (2020-2025) – *Ethnologue: Languages of the World*. SIL International. Données sur nombre de locuteurs et distribution géographique",

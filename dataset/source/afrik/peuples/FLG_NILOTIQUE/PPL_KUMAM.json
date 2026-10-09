@@ -111,12 +111,14 @@
       {
         "title": "Joshua Project — Kumam, Akokolemu in Uganda",
         "url": "https://joshuaproject.net/people_groups/12842",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Swordshare Map — Kumam language",
         "url": "https://map.swordshare.com/kdi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

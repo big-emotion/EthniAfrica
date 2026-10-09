@@ -118,12 +118,14 @@
       {
         "title": "Joshua Project — Lozi in Zambia",
         "url": "https://joshuaproject.net/people_groups/13127/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Lozi of Zambia",
         "url": "https://peoplegroups.org/people_groups/pg015593/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ISO 639-3 Codes for Africa — Wiktionary",

@@ -79,12 +79,14 @@
       {
         "title": "Joshua Project – Songo, Nsongo in Angola",
         "url": "https://joshuaproject.net/people_groups/19052",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Swordshare Map – Songo NSX",
         "url": "https://map.swordshare.com/nsx",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "GhanaWeb – Songo, the African tribe where children are raised by their uncles",

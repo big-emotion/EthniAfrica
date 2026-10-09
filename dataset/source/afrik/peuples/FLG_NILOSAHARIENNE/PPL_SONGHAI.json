@@ -112,12 +112,14 @@
       {
         "title": "Britannica – Songhai (ethnolinguistic group), 2026",
         "url": "https://www.britannica.com/topic/Songhai",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica – Songhai Empire, 2024",
         "url": "https://www.britannica.com/place/Songhai-empire",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Glottolog – Koyraboro Senni ISO 639-3 : ses",
@@ -195,6 +197,7 @@
               "to": 1858,
               "label": "Voyage de 1849-1855 (récit publié en 1858)"
             },
+            "era": "polity",
             "statement": "Le nom Songhaï est écrit « Songhay » par Heinrich Barth. Il note que les auteurs plus anciens ne le mentionnent pas et qu'on le trouve d'abord chez Léon l'Africain et chez l'historien portugais João de Barros.",
             "formAsWritten": "Songhay",
             "actors": [
@@ -222,6 +225,7 @@
               "to": 1699,
               "label": "Milieu du XVIIe siècle"
             },
+            "era": "polity",
             "statement": "Le nom Songhaï figure dans le Tarikh es-Soudan, la chronique qu'Abderrahman es-Sa'di, de Tombouctou, écrit vers le milieu du XVIIe siècle. L'auteur y dit raconter l'histoire des princes « de la race des Songhaï », selon la traduction d'Octave Houdas.",
             "actors": [
               {
@@ -258,6 +262,7 @@
               "to": 1550,
               "label": "Manuscrit daté de 1526 (publié en 1550)"
             },
+            "era": "polity",
             "birth": true,
             "formAsWritten": "Sungai",
             "statement": "Le nom Songhaï apparaît par écrit chez Léon l'Africain, sous la forme Sungai : c'est le nom que les Noirs donnent, écrit-il, à une langue parlée de Gualata à Gago. Robert Brown, son éditeur, et Félix Dubois n'en connaissent pas de mention plus ancienne. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le peuple l'emploie.",
@@ -306,6 +311,7 @@
               "to": 1099,
               "label": "XIe siècle"
             },
+            "era": "polity",
             "before": true,
             "statement": "Le nom Kaw-Kaw est celui que le géographe arabe al-Bakri donne à la ville du Niger appelée aujourd'hui Gao, qui deviendra au XIIe siècle la capitale du royaume songhaï, selon Sékéné Mody Cissoko.",
             "sources": [
@@ -339,6 +345,7 @@
               "to": 1943,
               "label": "Article de 1943"
             },
+            "era": "colonial",
             "formAsWritten": "Sonrai",
             "statement": "Le nom Sonrhaï est écrit « Sonrai » par Jean Rouch dans le titre d'un de ses premiers articles, « Aperçu sur l'animisme Sonrai », paru à Dakar en 1943 ; sa thèse de 1960 écrit Songhay.",
             "actors": [
@@ -405,6 +412,7 @@
               "to": 1854,
               "label": "Août 1854 (récit publié en 1858)"
             },
+            "era": "polity",
             "birth": true,
             "statement": "Le nom Yammatawa, « les gens de l'ouest », est le seul que les Haoussa donnent aux Songhaï, selon ce qu'un compagnon de route explique à Heinrich Barth. Il s'oppose à Gabbestawa, « les gens de l'est », et désigne une direction plutôt qu'un peuple. C'est la plus ancienne trace de ce nom que le projet connaît.",
             "actors": [

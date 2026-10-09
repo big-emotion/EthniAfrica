@@ -122,7 +122,8 @@
       {
         "title": "Joshua Project — Bambara in Mali",
         "url": "https://joshuaproject.net/people_groups/10530/ML",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Marc Ladreit de Lacharriere Collection — N'tomo masks",
@@ -132,7 +133,8 @@
       {
         "title": "Britannica — Umar Tal",
         "url": "https://www.britannica.com/biography/Umar-Tal",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Zahan, Dominique. La Dialectique du verbe chez les Bambara. Paris : Mouton, 1963",
@@ -167,6 +169,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Bamana est celui que se donnent les personnes que le français appelle Bambara. Au pluriel, elles disent Bamanaw, selon Michel Izard et Joseph Ki-Zerbo ; Louis Tauxier notait déjà que les intéressés prononcent Bamana.",
             "aspect": "usage",
             "sources": [
@@ -198,6 +201,7 @@
               "to": 2009,
               "label": "Décrit en 2009"
             },
+            "era": "modern",
             "statement": "Le nom Bamana désigne aussi, au Mali, les personnes qui pratiquent des cultes non musulmans, selon l'anthropologue Jean-Paul Colleyn. Elles se disent Bamana parce qu'elles ne se sont pas converties à l'islam.",
             "sources": [
               {
@@ -218,6 +222,7 @@
               "to": 1901,
               "label": "1901"
             },
+            "era": "colonial",
             "statement": "Le nom Bamana est écrit « Ban-mana ou Bamana » par Maurice Delafosse, qui précise que ces populations se donnent elles-mêmes ce nom. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
             "birth": true,
             "formAsWritten": "Ban-mana ou Bamana",
@@ -258,6 +263,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Bambara désigne en français le peuple qui se nomme lui-même Bamana. Des voisins musulmans l'ont aussi employé pour désigner des non-musulmans. Son origine est discutée : plusieurs explications sont présentées plus bas.",
             "aspect": "meaning",
             "sources": [
@@ -309,6 +315,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Bambara reste la graphie officielle, selon Michel Izard et Joseph Ki-Zerbo. Jean-Paul Colleyn note que la littérature ethnographique l'a employé jusque dans les années 1980, avant de lui préférer Bamana.",
             "aspect": "usage",
             "sources": [
@@ -340,6 +347,7 @@
               "to": 1927,
               "label": "Rapporté en 1927"
             },
+            "era": "colonial",
             "statement": "Le nom Bambara sert, chez des musulmans d'Afrique de l'Ouest, à désigner les fidèles des religions locales : les Dioula appellent ainsi tous les Sénoufo, selon Louis Tauxier. Maurice Delafosse le relevait dès 1901.",
             "sources": [
               {
@@ -370,6 +378,7 @@
               "to": 1655,
               "label": "Chronique achevée en 1655"
             },
+            "era": "polity",
             "statement": "Le nom Bambara figure dans le Tarikh es-Soudan, la chronique d'Abderrahman es-Sa'di. À propos de l'année 1559, l'askia Daoud y dit que « les Bambara sont ici maintenant en très grand nombre », dans la traduction d'O. Houdas. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
             "birth": true,
             "sources": [
@@ -391,6 +400,7 @@
               "to": 1399,
               "label": "XIVe siècle, règne de Mansa Moussa"
             },
+            "era": "polity",
             "statement": "Le peuple bamana se sépare alors des Malinké, semble-t-il : sous le règne de Mansa Moussa, il refuse l'islam et crée une société secrète, le Komo, selon Djibril Tamsir Niane.",
             "before": true,
             "sources": [
@@ -412,6 +422,7 @@
               "to": 1901,
               "label": "Proposée en 1901"
             },
+            "era": "colonial",
             "statement": "Le nom Bambara serait une appellation étrangère, donnée par les Toucouleurs et les Sarakolé, et une déformation de Ban-mana ou Bamana, selon Maurice Delafosse.",
             "hypothesisGroup": "origine du nom Bambara",
             "sources": [
@@ -433,6 +444,7 @@
               "to": 2009,
               "label": "Proposée en 2009"
             },
+            "era": "modern",
             "statement": "Le nom Bambara serait la déformation française d'un nom que les Songhaï et les Peuls donnaient aux Bamana, selon Jean-Paul Colleyn.",
             "hypothesisGroup": "origine du nom Bambara",
             "sources": [
@@ -454,6 +466,7 @@
               "to": 1927,
               "label": "Rapportée en 1927"
             },
+            "era": "colonial",
             "statement": "Le nom Bambara voudrait dire « ceux du crocodile », de bama, le crocodile, selon Mgr Bazin et le père Brun, cités par Louis Tauxier, qui juge cette lecture la plus simple.",
             "hypothesisGroup": "origine du nom Bambara",
             "sources": [
@@ -475,6 +488,7 @@
               "to": 1927,
               "label": "Rapportée en 1927"
             },
+            "era": "colonial",
             "statement": "Le nom Bambara viendrait de ban-ma-na, « refus au maître » : les Banmana auraient quitté leur pays pour échapper aux conquérants malinké, selon une explication que Maurice Delafosse dit tenir des Banmana eux-mêmes, citée par Louis Tauxier. Djibril Tamsir Niane y lit « ceux qui refusent le mansa », le souverain du Mali.",
             "hypothesisGroup": "origine du nom Bambara",
             "sources": [
@@ -506,6 +520,7 @@
               "to": 1910,
               "label": "Proposée en 1910"
             },
+            "era": "colonial",
             "statement": "Le nom Bambara viendrait de bamba, « révolté », qui prend chez les musulmans le sens d'infidèle : le Bambara serait celui qui ne s'est jamais soumis à l'islam, selon l'abbé Joseph Henry, qui suit le père Coppe.",
             "hypothesisGroup": "origine du nom Bambara",
             "sources": [
@@ -537,6 +552,7 @@
               "to": 1927,
               "label": "Rapportée en 1927"
             },
+            "era": "colonial",
             "statement": "Le nom Bambara voudrait dire « les gens du grand rocher », de ba, grand, et mana, rocher, selon Louis-Gustave Binger, cité par Louis Tauxier.",
             "hypothesisGroup": "origine du nom Bambara",
             "sources": [
@@ -558,6 +574,7 @@
               "to": 1927,
               "label": "Rapportée en 1927"
             },
+            "era": "colonial",
             "statement": "Le nom Bambara viendrait d'une vieille racine ba, « noir », selon Charles Monteil, cité par Louis Tauxier, qui trouve cette lecture peu convaincante.",
             "hypothesisGroup": "origine du nom Bambara",
             "sources": [

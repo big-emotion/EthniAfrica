@@ -91,12 +91,14 @@
       {
         "title": "Britannica, Ila – African tribe, Zambia",
         "url": "https://www.britannica.com/topic/Ila-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project, Ila in Zambia",
         "url": "https://joshuaproject.net/people_groups/12208",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Wiktionary, Appendix ISO 639-3 codes Africa – code ilb pour Ila",

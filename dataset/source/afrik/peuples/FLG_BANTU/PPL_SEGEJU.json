@@ -86,17 +86,20 @@
       {
         "title": "Segeju in Tanzania Profile – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/14816/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Segeju in Kenya Profile – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/14816/KE",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Segeju of Tanzania (PGID: PG015035) – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015035/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Segeju Tribe: People of the North Tanganyika Coast – Institute of Current World Affairs, 1956",

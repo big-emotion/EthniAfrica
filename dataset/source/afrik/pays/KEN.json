@@ -24,6 +24,7 @@
               "to": null,
               "label": "Depuis le 12 décembre 1963"
             },
+            "era": "modern",
             "statement": "Le nom Kenya est celui d'un État indépendant depuis le 12 décembre 1963, jour où le gouvernement britannique cesse d'être responsable du pays, selon la loi britannique sur l'indépendance du Kenya.",
             "aspect": "usage",
             "sources": [
@@ -45,6 +46,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Kenya désigne le pays et la montagne dont il vient, le mont Kenya. Le missionnaire Johann Ludwig Krapf l'a écrit d'après ce qu'on lui disait de la montagne ; nous présentons plus bas le sens qu'il lui donne.",
             "aspect": "meaning",
             "sources": [
@@ -65,6 +67,7 @@
               "to": 1920,
               "label": "1920"
             },
+            "era": "colonial",
             "statement": "Le nom Kenya devient celui du territoire en 1920 : un ordre en conseil britannique annexe l'intérieur du Protectorat de l'Afrique de l'Est sous le nom de Colonie du Kenya, selon la Gazette officielle du protectorat.",
             "sources": [
               {
@@ -85,6 +88,7 @@
               "to": 1860,
               "label": "1860"
             },
+            "era": "polity",
             "statement": "Le nom Kenya est écrit Kegnia par Krapf dans le récit de ses voyages, où il note aussi Kirenia ; il y raconte avoir vu la montagne le 3 décembre 1849 en quittant Kitui.",
             "formAsWritten": "Kegnia",
             "sources": [
@@ -106,6 +110,7 @@
               "to": 1850,
               "label": "Journal de novembre 1849, publié en 1850"
             },
+            "era": "polity",
             "statement": "Le nom Kenya apparaît par écrit sous la forme Kenia dans le journal du missionnaire Johann Ludwig Krapf, qui parle le 28 novembre 1849 de « la montagne de neige Kenia » ; la revue de sa société missionnaire le publie en 1850. C'est la plus ancienne trace de ce nom que le projet connaît. La montagne avait déjà d'autres noms avant lui.",
             "formAsWritten": "Kenia",
             "birth": true,
@@ -138,6 +143,7 @@
               "to": 1849,
               "label": "Avant 1849"
             },
+            "era": "polity",
             "statement": "Le nom Kenya n'est pas le seul nom de la montagne : en 1849, Krapf entend les Wakamba l'appeler Kima ja Kegnia, d'autres peuples Kirenia, et les Wakuafi Orldoinio eibor, « la montagne blanche », selon son récit.",
             "before": true,
             "sources": [
@@ -189,6 +195,7 @@
               "to": 1860,
               "label": "Proposée par Krapf (1849-1860)"
             },
+            "era": "polity",
             "statement": "Le nom Kenya viendrait du nom que les Wakamba donnent à la montagne, Kima ja Kegnia, que Krapf traduit par « montagne de blancheur », selon le récit de Krapf.",
             "hypothesisGroup": "origine du nom Kenya",
             "sources": [
@@ -220,6 +227,7 @@
               "to": 1920,
               "label": "11 juin 1920, publié le 23 juillet"
             },
+            "era": "colonial",
             "statement": "Le nom Colonie du Kenya, Colony of Kenya en anglais, est créé par un ordre en conseil du roi d'Angleterre daté du 11 juin 1920 : l'intérieur du Protectorat de l'Afrique de l'Est est annexé et sera désormais connu sous ce nom, selon la Gazette officielle du protectorat. C'est la plus ancienne trace de ce nom que le projet connaît.",
             "formAsWritten": "Colony of Kenya",
             "birth": true,
@@ -252,6 +260,7 @@
               "to": 1920,
               "label": "Jusqu'en 1920"
             },
+            "era": "colonial",
             "statement": "Le nom Protectorat de l'Afrique de l'Est, East Africa Protectorate en anglais, désigne le territoire jusqu'en 1920 ; cette année-là, sa partie qui n'appartient pas au sultan de Zanzibar devient la Colonie du Kenya, selon la Gazette officielle du protectorat.",
             "formAsWritten": "East Africa Protectorate",
             "sources": [

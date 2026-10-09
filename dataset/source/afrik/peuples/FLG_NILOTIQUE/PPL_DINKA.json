@@ -144,7 +144,8 @@
       {
         "title": "Human Rights Watch — South Sudan: Ethnic Targeting, Crimes Against Humanity (2014)",
         "url": "https://www.hrw.org/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "CIA World Factbook — South Sudan",

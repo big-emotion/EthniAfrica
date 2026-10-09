@@ -97,12 +97,14 @@
       {
         "title": "Joshua Project — Kulango, Bondoukou in Cote d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/10931/IV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Kulango, Bouna in Cote d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/10955/IV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue — Kulango, Bondoukou (KZC)",

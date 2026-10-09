@@ -93,12 +93,14 @@
       {
         "title": "Joshua Project – Gen, Mina in Togo, 2025",
         "url": "https://joshuaproject.net/people_groups/print/19053/TO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Gen, Mina in Benin, 2025",
         "url": "https://joshuaproject.net/people_groups/19053/BN",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes – Mina people",

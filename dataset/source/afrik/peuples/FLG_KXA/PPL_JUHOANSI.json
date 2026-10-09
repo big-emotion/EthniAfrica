@@ -115,7 +115,8 @@
       {
         "title": "Joshua Project — Ju'hoan language resources",
         "url": "https://joshuaproject.net/languages/ktz",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "UNESCO Tentative List — San Living Cultural Landscape (Tsumkwe District)",
@@ -137,7 +138,8 @@
       {
         "title": "Cultural Survival Quarterly — Progress or Poverty? The Dobe Ju|'hoansi",
         "url": "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/progress-or-poverty-dobe-juhoansi",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Shamwari Game Reserve — Ju/'hoansi Tracking Cultural Experience",

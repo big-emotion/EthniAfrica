@@ -87,12 +87,14 @@
       {
         "title": "Joshua Project – Nyangatom in Ethiopia, 2024",
         "url": "https://joshuaproject.net/people_groups/11610/et",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Peoplegroups.org – Nyangatom of Ethiopia PG011628",
         "url": "https://peoplegroups.org/people_groups/pg011628/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Nyangatom (NNJ), ISO 639-3 : nnj",

@@ -82,7 +82,8 @@
       {
         "title": "PeopleGroups.org — Wane of Cote d'Ivoire (PGID: PG013141)",
         "url": "https://peoplegroups.org/people_groups/pg013141/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Wane language (hwa)",
@@ -128,7 +129,8 @@
       {
         "title": "Britannica — Kru ethnic group",
         "url": "https://www.britannica.com/topic/Kru",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

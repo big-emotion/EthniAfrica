@@ -90,12 +90,14 @@
       {
         "title": "Joshua Project — Bezanozano in Madagascar, (consulté 2025)",
         "url": "https://joshuaproject.net/people_groups/print/10822/MA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Bezanozano of Madagascar, (consulté 2025)",
         "url": "https://peoplegroups.org/people_groups/pg015296/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes — Bezanozano, (consulté 2025)",

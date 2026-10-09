@@ -96,7 +96,8 @@
       {
         "title": "Britannica — Ngbandi",
         "url": "https://www.britannica.com/topic/Ngbandi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Qiraat Africa — The Ngbandi People of Central Africa",
@@ -106,7 +107,8 @@
       {
         "title": "Minority Rights Group International — Ngbandi in the Democratic Republic of the Congo",
         "url": "https://minorityrights.org/communities/ngbandi/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "US Department of Justice (EOIR) — Democratic Republic of the Congo: Ngbandi",

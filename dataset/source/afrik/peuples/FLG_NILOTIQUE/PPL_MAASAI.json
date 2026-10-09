@@ -123,7 +123,8 @@
       {
         "title": "Joshua Project — Maasai, Arusha in Tanzania",
         "url": "https://joshuaproject.net/people_groups/10441",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   },
@@ -145,6 +146,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "« Ceux qui parlent maa » — de Maa, la langue, et du préfixe collectif il- (Il Maasai).",
             "aspect": "meaning",
             "sources": [
@@ -174,6 +176,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Graphie officielle au Kenya et en Tanzanie ; les Maasai eux-mêmes la préfèrent comme plus fidèle à leur langue.",
             "aspect": "usage",
             "sources": [

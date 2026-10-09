@@ -95,7 +95,8 @@
       {
         "title": "Swordshare Map — Ng'akarimojong ISO 639-3 kdj (inclut Jiye comme nom alternatif)",
         "url": "https://map.swordshare.com/kdj",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kara-Tunga — Karamoja Bibliography",
