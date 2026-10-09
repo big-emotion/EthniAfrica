@@ -131,9 +131,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     figureKey: "probe-colonial",
     label: "fiches employant le radical « colonial »",
     // 243 -> 242 on 2026-10-07: PPL_HADZA no longer calls Kangeju colonial, which no source read says.
-    value: 242,
+    // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
+    value: 237,
     method: "radical colonial dans originOfExonyms + whyProblematic",
-    countedOn: COUNTED_ON,
+    countedOn: "2026-10-09",
   },
   "probe-administration": {
     kind: "counted",
@@ -167,9 +168,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // Baouré were written by Europeans, which its sources state.
     // 121 -> 122 on 2026-10-07: PPL_BETE now reports that Magwé's author says the
     // French took « bété » from the English.
-    value: 122,
+    // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
+    value: 120,
     method: "radical europ dans originOfExonyms + whyProblematic",
-    countedOn: COUNTED_ON,
+    countedOn: "2026-10-09",
   },
   "probe-neighbours": {
     kind: "counted",
@@ -177,9 +179,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     label: "fiches attribuant un exonyme à des voisins",
     // 113 -> 112 on 2026-10-07: PPL_HADZA no longer attributes Kindiga/Tindiga to neighbours, which no source read says.
     // 112 -> 113 on 2026-10-07: PPL_BETE now says the Gouro called their southern neighbours Tshien (Dozon 1985, p. 45).
-    value: 113,
+    // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
+    value: 114,
     method: "radical voisin dans originOfExonyms + whyProblematic",
-    countedOn: COUNTED_ON,
+    countedOn: "2026-10-09",
   },
   "probe-portuguese": {
     kind: "counted",
@@ -193,9 +196,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-pejorative",
     label: "fiches qualifiant un exonyme de dépréciatif",
-    value: 83,
+    // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
+    value: 60,
     method: `radicaux ${PEJORATIVE_STEMS.join(", ")} dans originOfExonyms + whyProblematic`,
-    countedOn: "2026-10-08",
+    countedOn: "2026-10-09",
   },
   "probe-arabic": {
     kind: "counted",
@@ -217,9 +221,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-slavery",
     label: "fiches employant le radical « esclav- »",
-    value: 27,
+    // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
+    value: 28,
     method: "radical esclav dans originOfExonyms + whyProblematic",
-    countedOn: COUNTED_ON,
+    countedOn: "2026-10-09",
   },
   "probe-missionary": {
     kind: "counted",

@@ -65,7 +65,7 @@
         "mainRegion": "Tout le Botswana (peuple majoritaire)",
         "languages": ["Setswana / Tswana (tsn", "ISO 639-3)", "anglais"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Batswana\" est l'auto-appellation (pluriel), \"Tswana\" est l'exonyme le plus courant. \"Bechuana\" est une ancienne orthographe coloniale dépassée. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le peuple se nomme Batswana, au pluriel. Tswana est le nom donné de l'extérieur le plus courant. Bechuana est une ancienne orthographe de la période coloniale, aujourd'hui délaissée. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Kgalagadi",
@@ -95,7 +95,7 @@
           "anglais"
         ],
         "languageFamily": "FLG_KXA",
-        "appellationRemarks": "Les termes \"Bushmen\" et \"Hottentots\" sont des exonymes coloniaux péjoratifs et doivent être évités. \"San\" est un terme générique parfois utilisé, mais chaque groupe a sa propre auto-appellation (Ju|'hoansi, ǂHoan, etc.). \"Khoisan\" est un terme académique utilisé pour désigner l'ensemble des peuples de cette famille linguistique. Les San sont les premiers habitants du Botswana et de l'Afrique australe."
+        "appellationRemarks": "Les noms Bushmen et Hottentots, donnés pendant la colonisation, sont méprisants et à éviter. San est parfois utilisé pour réunir plusieurs groupes, mais chacun a son propre nom, comme Ju|'hoansi ou ǂHoan. Les chercheurs emploient aussi Khoisan pour les réunir dans une même classification de langues. Les San sont présentés comme les premiers habitants du Botswana et de l'Afrique australe."
       },
       {
         "name": "Kalanga",
@@ -115,7 +115,7 @@
         "mainRegion": "Nord-ouest du Botswana, frontière avec la Namibie",
         "languages": ["Otjiherero (her", "ISO 639-3)", "setswana", "anglais"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Ovaherero\" est l'auto-appellation (pluriel), \"Herero\" est l'exonyme le plus courant. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le peuple se nomme Ovaherero, au pluriel. Herero est le nom donné de l'extérieur le plus courant. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Mbukushu",

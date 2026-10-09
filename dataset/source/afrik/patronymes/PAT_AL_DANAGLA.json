@@ -34,7 +34,7 @@
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "Jaeger emploie Danágla pour les Nubiens dongolawi et décrit Dongolawi comme un exonyme. En arabe, les locuteurs se nomment dungulanderi (« je suis de Dongola ») ou dungulawi, tandis qu'Andaandi est le nom de leur langue dans celle-ci. Cette documentation établit un ensemble de désignations liées à Dongola, mais pas l'étymologie propre de la graphie patronymique al-Danagla.",
+        "claim": "Jaeger emploie Danágla pour les Nubiens dongolawi. Il décrit Dongolawi comme un nom donné de l'extérieur. En arabe, les personnes concernées se nomment dungulanderi (« je suis de Dongola ») ou dungulawi. Dans leur propre langue, elles appellent celle-ci Andaandi. Ces noms sont liés à Dongola, mais ils n'expliquent pas à eux seuls l'origine du nom de famille al-Danagla.",
         "claimStatus": "established",
         "sourceRefs": ["jaeger-2024-danagla"]
       }
@@ -73,7 +73,7 @@
       "url": "https://kups.ub.uni-koeln.de/74842/1/AM%20Proverbs%20publication%20A5%20Glossar%20italics.pdf",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Marcus Jaeger, thèse de doctorat, Universität zu Köln, 2024, p. 18-19. Le texte distingue Andaandi/Dongolawi/Danágla au Soudan, qualifie Dongolawi d'exonyme et documente les auto-désignations dungulanderi et dungulawi. Il n'atteste pas al-Danagla comme patronyme."
+      "notes": "Marcus Jaeger, thèse de doctorat, Universität zu Köln, 2024, p. 18-19. Le texte distingue les usages d'Andaandi, de Dongolawi et de Danágla au Soudan. Il décrit Dongolawi comme un nom donné de l'extérieur, et dungulanderi et dungulawi comme des noms employés par les personnes concernées. Il ne décrit pas l'usage d'al-Danagla comme nom de famille."
     }
   ],
   "gaps": [
@@ -103,7 +103,7 @@
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Jaeger documente Danágla comme ethnonyme et Dongolawi comme exonyme, non comme nom de famille transmis ; les recherches dans le catalogue du Central Bureau of Statistics soudanais et sur « al-Danagla surname » n'ont pas établi de règle de transmission."
+      "reason": "Jaeger décrit Danágla comme un nom de peuple et Dongolawi comme un nom donné de l'extérieur. Il ne les décrit pas comme des noms de famille transmis entre générations. Les sources consultées, dont le catalogue du Central Bureau of Statistics soudanais, ne précisent pas comment al-Danagla se transmet."
     },
     {
       "fieldPath": "designatedSocialUnit",
