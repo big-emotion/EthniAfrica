@@ -25,9 +25,6 @@ export function SearchFeedEvidenceAction({
 }: SearchFeedEvidenceActionProps) {
   const [open, setOpen] = useState(false);
   const adapted = toSourceChainEvidence(evidence);
-  const score = evidence.assertion.confidenceScore;
-  const scorePercent =
-    score === undefined ? null : Math.round(score <= 1 ? score * 100 : score);
 
   return (
     <div
@@ -37,7 +34,6 @@ export function SearchFeedEvidenceAction({
       <ConfidenceChip
         id={anchorId}
         language={language}
-        confidenceScore={scorePercent}
         sourceCount={evidence.assertion.sourceCount}
         lastHumanAuditAt={evidence.assertion.lastHumanAuditAt}
         onOpen={() => setOpen(true)}

@@ -60,9 +60,6 @@ const fr = {
   missing: "non renseigné",
   missingFor: (name: string) => ` pour ${name}`,
   referenceYear: "réf. 2025",
-  viewSources: "voir les sources",
-  editorialConfidence: (name: string) => `Confiance éditoriale — ${name}`,
-  scoreExplainer: "comment ce score est calculé",
   metadataTitle: (labels: string) => `Comparaison : ${labels}`,
   metadataDescription: (labels: string) =>
     `Comparez les pages ${labels} pour explorer les noms, les langues, les populations et les sources.`,
@@ -81,8 +78,6 @@ const fr = {
       pays: "Pays",
       famille: "Familles linguistiques",
     },
-    unaudited: "page pas encore relue",
-    confidence: (score: number) => `${score} % de confiance`,
   },
 };
 

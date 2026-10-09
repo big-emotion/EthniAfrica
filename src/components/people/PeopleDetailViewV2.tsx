@@ -218,7 +218,6 @@ export function PeopleDetailViewV2({
               <div className="afh-parchment-confidence">
                 <ConfidenceChip
                   language={language}
-                  confidenceScore={null}
                   sourceCount={data.sources.length || null}
                   lastHumanAuditAt={null}
                   variant="hero"

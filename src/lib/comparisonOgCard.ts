@@ -2,9 +2,9 @@
  * Comparison OG card — pure data prep (FR63, AR30).
  *
  * Turns an already-assembled `ComparisonPageData` into the flat, render-ready
- * shape the `opengraph-image.tsx` route draws. No I/O here: confidence must
- * already be attached to each column (or absent, which is the honest
- * "fiche non auditée" case — Source Tier policy forbids fabricating a score).
+ * shape the `opengraph-image.tsx` route draws. No I/O here. The card names
+ * the entities and says nothing about how far to trust their pages: the
+ * confidence score is internal (REQ-194).
  */
 
 import type { ComparisonColumn, ComparisonPageData } from "@/types/compare";
@@ -26,7 +26,6 @@ export interface OgCardEntity {
   id: string;
   autonym: string;
   exonym: string | null;
-  confidenceLabel: string;
 }
 
 export interface OgCardProps {
@@ -81,16 +80,6 @@ function resolveAutonymExonym(
   };
 }
 
-function resolveConfidenceLabel(
-  column: ComparisonColumn,
-  language: Language
-): string {
-  const copy = compareCopy[language].og;
-  const score = column.confidence?.score;
-  if (typeof score !== "number") return copy.unaudited;
-  return copy.confidence(Math.round(score * 100));
-}
-
 // @req REQ-097
 export function buildComparisonOgCard(
   data: ComparisonPageData,
@@ -103,7 +92,6 @@ export function buildComparisonOgCard(
       id: column.id,
       autonym: truncate(autonym, AUTONYM_CHAR_BUDGET),
       exonym,
-      confidenceLabel: resolveConfidenceLabel(column, language),
     };
   });
 

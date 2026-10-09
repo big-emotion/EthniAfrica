@@ -29,7 +29,6 @@ describe("ConfidenceChip", () => {
     const { container } = render(
       <ConfidenceChip
         language="fr"
-        confidenceScore={87}
         sourceCount={4}
         lastHumanAuditAt="2025-09-21"
       />
@@ -47,7 +46,6 @@ describe("ConfidenceChip", () => {
     render(
       <ConfidenceChip
         language="fr"
-        confidenceScore={40}
         sourceCount={1}
         lastHumanAuditAt="2025-09-21"
       />
@@ -57,16 +55,28 @@ describe("ConfidenceChip", () => {
     expect(screen.queryByText(/1 références/)).not.toBeInTheDocument();
   });
 
+  // The stored score no longer decides what the reader sees: the chip states
+  // a count and a review date, and a fiche without a score reads the same.
+  // @req REQ-194
+  it("states the count and review date without being handed a score", () => {
+    const { container } = render(
+      <ConfidenceChip
+        language="fr"
+        sourceCount={4}
+        lastHumanAuditAt="2025-09-21"
+      />
+    );
+
+    expect(
+      screen.getByText(/4 références · revu 2025-09-21/)
+    ).toBeInTheDocument();
+    expect(container.textContent).not.toMatch(/confiance|%/i);
+  });
+
   describe("rendering with complete data", () => {
     // @req REQ-019
     it("renders the typographic pill with the reference count and the review date", () => {
-      render(
-        <ConfidenceChip
-          confidenceScore={87}
-          sourceCount={4}
-          lastHumanAuditAt="2025-09-21"
-        />
-      );
+      render(<ConfidenceChip sourceCount={4} lastHumanAuditAt="2025-09-21" />);
 
       expect(
         screen.getByText(/4\s*références\s*·\s*revu\s*2025-09-21/i)
@@ -75,11 +85,7 @@ describe("ConfidenceChip", () => {
 
     it("renders no emoji or icon — only typographic content", () => {
       const { container } = render(
-        <ConfidenceChip
-          confidenceScore={87}
-          sourceCount={4}
-          lastHumanAuditAt="2025-09-21"
-        />
+        <ConfidenceChip sourceCount={4} lastHumanAuditAt="2025-09-21" />
       );
 
       expect(container.querySelector("svg")).toBeNull();
@@ -89,13 +95,7 @@ describe("ConfidenceChip", () => {
 
   describe("aria-label", () => {
     it("matches the exact French template using a long French date", () => {
-      render(
-        <ConfidenceChip
-          confidenceScore={87}
-          sourceCount={4}
-          lastHumanAuditAt="2025-09-21"
-        />
-      );
+      render(<ConfidenceChip sourceCount={4} lastHumanAuditAt="2025-09-21" />);
 
       const button = screen.getByRole("button");
       expect(button).toHaveAttribute(
@@ -105,13 +105,7 @@ describe("ConfidenceChip", () => {
     });
 
     it("renders the long French date in a TZ-stable way (no off-by-one)", () => {
-      render(
-        <ConfidenceChip
-          confidenceScore={87}
-          sourceCount={4}
-          lastHumanAuditAt="2025-09-21"
-        />
-      );
+      render(<ConfidenceChip sourceCount={4} lastHumanAuditAt="2025-09-21" />);
 
       const button = screen.getByRole("button");
       expect(button.getAttribute("aria-label")).toMatch(/21 septembre 2025/);
@@ -123,7 +117,6 @@ describe("ConfidenceChip", () => {
       const onOpen = vi.fn();
       render(
         <ConfidenceChip
-          confidenceScore={87}
           sourceCount={4}
           lastHumanAuditAt="2025-09-21"
           onOpen={onOpen}
@@ -143,7 +136,6 @@ describe("ConfidenceChip", () => {
       const onOpen = vi.fn();
       render(
         <ConfidenceChip
-          confidenceScore={87}
           sourceCount={4}
           lastHumanAuditAt="2025-09-21"
           onOpen={onOpen}
@@ -159,7 +151,6 @@ describe("ConfidenceChip", () => {
     it("renders without any red color or alarm styling", () => {
       const { container } = render(
         <ConfidenceChip
-          confidenceScore={42}
           sourceCount={2}
           lastHumanAuditAt="2025-09-21"
           variant="contested"
@@ -175,7 +166,6 @@ describe("ConfidenceChip", () => {
     it("still renders the canonical pill text in contested variant", () => {
       render(
         <ConfidenceChip
-          confidenceScore={42}
           sourceCount={2}
           lastHumanAuditAt="2025-09-21"
           variant="contested"
@@ -189,39 +179,16 @@ describe("ConfidenceChip", () => {
   });
 
   describe("fallback when data is missing", () => {
-    it("renders a 'voir les sources' link when confidenceScore is null", () => {
-      render(
-        <ConfidenceChip
-          confidenceScore={null}
-          sourceCount={4}
-          lastHumanAuditAt="2025-09-21"
-        />
-      );
-
-      expect(screen.queryByRole("button")).toBeNull();
-      expect(screen.getByText(/voir les sources/i)).toBeInTheDocument();
-    });
-
     it("renders a 'voir les sources' link when sourceCount is null", () => {
       render(
-        <ConfidenceChip
-          confidenceScore={87}
-          sourceCount={null}
-          lastHumanAuditAt="2025-09-21"
-        />
+        <ConfidenceChip sourceCount={null} lastHumanAuditAt="2025-09-21" />
       );
 
       expect(screen.getByText(/voir les sources/i)).toBeInTheDocument();
     });
 
     it("renders a 'voir les sources' link when lastHumanAuditAt is null", () => {
-      render(
-        <ConfidenceChip
-          confidenceScore={87}
-          sourceCount={4}
-          lastHumanAuditAt={null}
-        />
-      );
+      render(<ConfidenceChip sourceCount={4} lastHumanAuditAt={null} />);
 
       expect(screen.getByText(/voir les sources/i)).toBeInTheDocument();
     });
@@ -229,13 +196,7 @@ describe("ConfidenceChip", () => {
 
   describe("tap target (WCAG 2.5.5 / 2.5.8)", () => {
     it("button carries 44x44 min sizing utilities directly", () => {
-      render(
-        <ConfidenceChip
-          confidenceScore={87}
-          sourceCount={4}
-          lastHumanAuditAt="2025-09-21"
-        />
-      );
+      render(<ConfidenceChip sourceCount={4} lastHumanAuditAt="2025-09-21" />);
 
       const button = screen.getByRole("button");
       const classes = button.className;
@@ -249,7 +210,6 @@ describe("ConfidenceChip", () => {
       render(
         <ConfidenceChip
           id="chip-a"
-          confidenceScore={87}
           sourceCount={4}
           lastHumanAuditAt="2025-09-21"
         />
@@ -264,7 +224,6 @@ describe("ConfidenceChip", () => {
       const { rerender } = render(
         <ConfidenceChip
           id="chip-a"
-          confidenceScore={87}
           sourceCount={4}
           lastHumanAuditAt="2025-09-21"
         />
@@ -272,7 +231,6 @@ describe("ConfidenceChip", () => {
       rerender(
         <ConfidenceChip
           id="chip-b"
-          confidenceScore={87}
           sourceCount={4}
           lastHumanAuditAt="2025-09-21"
         />
@@ -292,19 +250,16 @@ describe("ConfidenceChip", () => {
         <>
           <ConfidenceChip
             id="chip-1"
-            confidenceScore={87}
             sourceCount={4}
             lastHumanAuditAt="2025-09-21"
           />
           <ConfidenceChip
             id="chip-2"
-            confidenceScore={87}
             sourceCount={4}
             lastHumanAuditAt="2025-09-21"
           />
           <ConfidenceChip
             id="chip-3"
-            confidenceScore={87}
             sourceCount={4}
             lastHumanAuditAt="2025-09-21"
           />

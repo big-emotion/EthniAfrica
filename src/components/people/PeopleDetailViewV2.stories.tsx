@@ -200,7 +200,6 @@ export const Hero_Mobile: Story = {
         language="fr"
         hero={yorubaHero}
         countries={countries}
-        confidenceScore={null}
         sourceCount={null}
         lastHumanAuditAt={null}
       />

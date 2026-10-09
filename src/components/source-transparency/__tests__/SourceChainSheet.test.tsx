@@ -119,7 +119,6 @@ describe("SourceChainSheet", () => {
     const order = sections.map((el) => el.getAttribute("data-testid"));
     expect(order).toEqual([
       "section-assertion",
-      "section-confidence",
       "section-flags",
       "section-sources",
       "section-revision",
@@ -128,19 +127,28 @@ describe("SourceChainSheet", () => {
     ]);
   });
 
-  // @req REQ-180
-  it("keeps source context but omits a numeric confidence that was never recorded", () => {
+  // The score, its explanation and the « not yet reviewed » disclaimer were
+  // one standing-derived signal: the sheet lists the sources and stops there.
+  // @req REQ-194
+  it.each([
+    ["with a stored score", 0.82, "2026-04-01"],
+    ["without a stored score or review", undefined, null],
+  ])("shows no confidence %s", (_label, confidenceScore, lastHumanAuditAt) => {
+    setViewportWidth(430);
     renderSheet({
       assertion: {
-        statement: "A sourced statement without an entity confidence row.",
-        sourceCount: 1,
-        lastHumanAuditAt: null,
+        statement: "Le peuple Seereer est attesté depuis le XIIIe siècle.",
+        confidenceScore,
+        sourceCount: 3,
+        lastHumanAuditAt,
       },
     });
 
-    const confidence = screen.getByTestId("section-confidence");
-    expect(confidence.textContent).not.toContain("%");
-    expect(confidence).toHaveTextContent(/1 source/i);
+    const dialog = screen.getByRole("dialog");
+    expect(screen.queryByTestId("section-confidence")).toBeNull();
+    expect(dialog.textContent).not.toMatch(
+      /confiance|82|Calculé|pas encore relu/i
+    );
   });
 
   it("does not render the flag banner when no open flags", () => {
@@ -303,12 +311,6 @@ describe("SourceChainSheet", () => {
     ]);
     expect(within(sourcesSection).queryByTestId(/^tier-group-/)).toBeNull();
     expect(within(sourcesSection).queryByTestId(/^source-tier-/)).toBeNull();
-  });
-
-  it("renders the confidence block with the score", () => {
-    renderSheet();
-    const confidence = screen.getByTestId("section-confidence");
-    expect(confidence).toHaveTextContent("82");
   });
 
   it("returns null when open is false", () => {

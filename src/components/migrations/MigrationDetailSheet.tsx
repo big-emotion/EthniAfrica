@@ -176,7 +176,6 @@ export function MigrationDetailSheet({
 
         <ConfidenceChip
           id={`${event.id}-confidence`}
-          confidenceScore={event.confidence?.score ?? null}
           sourceCount={event.confidence?.sourceCount ?? null}
           lastHumanAuditAt={event.confidence?.lastHumanAuditAt ?? null}
           variant="hero"
@@ -220,7 +219,6 @@ export function MigrationDetailSheet({
           anchorId={`migration-${event.id}`}
           assertion={{
             statement: event.nameMain,
-            confidenceScore: (event.confidence?.score ?? 0) / 100,
             sourceCount: event.sources.length,
             lastHumanAuditAt: event.confidence?.lastHumanAuditAt ?? null,
           }}

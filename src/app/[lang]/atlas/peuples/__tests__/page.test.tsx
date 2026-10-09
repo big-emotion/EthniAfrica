@@ -99,14 +99,10 @@ vi.mock("@/components/people/PeopleDetailViewV2", () => ({
   ),
 }));
 
-// ConfidenceChip stub — exposes the confidence score
+// ConfidenceChip stub — marks where a chip renders
 vi.mock("@/components/source-transparency/ConfidenceChip", () => ({
-  ConfidenceChip: ({ confidenceScore }: { confidenceScore: number | null }) => (
-    <div data-testid="confidence-chip" data-confidence={confidenceScore} />
-  ),
-  default: ({ confidenceScore }: { confidenceScore: number | null }) => (
-    <div data-testid="confidence-chip" data-confidence={confidenceScore} />
-  ),
+  ConfidenceChip: () => <div data-testid="confidence-chip" />,
+  default: () => <div data-testid="confidence-chip" />,
 }));
 
 vi.mock("@/components/source-transparency/PinnedVersionBanner", () => ({
@@ -384,26 +380,20 @@ describe("/[lang]/peuples/[slug] page", () => {
     expect(notFound).toHaveBeenCalled();
   });
 
-  // 8. Snapshot-vs-live divergence: pinned snapshot shows frozen confidence
-  // @req REQ-019
-  it("snapshot-vs-live divergence: ConfidenceChip shows confidence from snapshot, not live", async () => {
-    const frozenConfidence = 72;
+  // 8. A pinned snapshot still stores its confidence; the reader never sees it.
+  // @req REQ-194
+  it("pinned snapshot renders no confidence chip or score", async () => {
     mockGetSnapshot.mockResolvedValueOnce({
-      data: {
-        id: "PPL_BAKONGO",
-        nameMain: "Bakongo",
-        confidence: frozenConfidence,
-      },
+      data: { id: "PPL_BAKONGO", nameMain: "Bakongo", confidence: 72 },
       version: 10,
       published_at: "2024-06-01T00:00:00Z",
-      confidence: frozenConfidence,
+      confidence: 72,
     });
 
-    const { getByTestId } = await renderPage("PPL_BAKONGO@v10");
+    const { container, queryByTestId } = await renderPage("PPL_BAKONGO@v10");
 
-    const chip = getByTestId("confidence-chip");
-    expect(chip.getAttribute("data-confidence")).toBe(String(frozenConfidence));
-    // live component was not rendered
+    expect(queryByTestId("confidence-chip")).toBeNull();
+    expect(container.textContent).not.toMatch(/72|confiance/i);
     expect(mockGetSnapshot).toHaveBeenCalledWith("PPL_BAKONGO", 10);
   });
 

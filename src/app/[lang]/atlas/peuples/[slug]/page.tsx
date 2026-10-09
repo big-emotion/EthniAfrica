@@ -289,7 +289,6 @@ export default async function PeoplesSlugPage({
             entityId={parsed.slug}
             version={parsed.version}
             publishedAt={snapshot.published_at}
-            confidence={snapshot.confidence}
             doctrine={snapshot.doctrine}
             snapshotData={snapshot.data}
             lang={lang}

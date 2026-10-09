@@ -10,10 +10,10 @@ const fr = {
     title: "Peuples fragmentés par les frontières coloniales",
     countryCount: (count: number) => `${count} pays`,
     caption: (name: string) =>
-      `Répartition de ${name} par pays, avec niveau de confiance`,
+      `Répartition de ${name} par pays, avec les sources`,
     country: "Pays",
     populationShare: "Part de la population",
-    confidence: "Confiance",
+    sources: "Sources",
     colonialBorder: "frontière issue du partage colonial",
     shareAria: (country: string) => `pour la part de population en ${country}`,
     shareStatement: (country: string, share: string) =>

@@ -279,7 +279,6 @@ export default async function PaysSlugPage({
             entityId={parsed.slug}
             version={parsed.version}
             publishedAt={snapshot.published_at}
-            confidence={snapshot.confidence}
             snapshotData={snapshot.data}
             doctrine={snapshot.doctrine}
             lang={lang}

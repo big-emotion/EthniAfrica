@@ -1,7 +1,6 @@
 import { getCountryRoute, getFamilyRoute, getPeopleRoute } from "@/lib/routing";
 import type { Language } from "@/types/shared";
 import type { FrozenDoctrineReference } from "@/api/v2/services/revisions";
-import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
 import { PinnedVersionBanner } from "@/components/source-transparency/PinnedVersionBanner";
 import {
   DoctrineLinkCard,
@@ -58,7 +57,6 @@ export interface FicheSnapshotViewProps {
   entityId: string;
   version: number;
   publishedAt: string | null;
-  confidence: number | null;
   snapshotData: Record<string, unknown>;
   doctrine: FrozenDoctrineReference | null;
   lang: string;
@@ -70,7 +68,6 @@ export function FicheSnapshotView({
   entityId,
   version,
   publishedAt,
-  confidence,
   snapshotData,
   doctrine,
   lang,
@@ -98,17 +95,6 @@ export function FicheSnapshotView({
         versionTag={String(version)}
         liveUrl={liveRoute(language, entityId)}
       />
-
-      {confidence !== null && (
-        <div className="px-1">
-          <ConfidenceChip
-            confidenceScore={confidence}
-            sourceCount={null}
-            lastHumanAuditAt={publishedAt}
-            variant="hero"
-          />
-        </div>
-      )}
 
       <div className="prose prose-neutral max-w-none text-afh-small text-muted-foreground">
         <p>{ficheCopy[language].archivedCapture(version)}</p>

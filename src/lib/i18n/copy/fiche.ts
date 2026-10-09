@@ -57,12 +57,6 @@ const fr = {
     `Ce contenu est une capture archivée (v${version}) et ne sera jamais modifié.`,
   unreadableField:
     "Ce champ n'est pas lisible : la page l'a enregistré sous une forme que l'affichage ne sait pas rendre.",
-  auditDisclaimer: {
-    never: "page non auditée — lire avec précaution",
-    stale: (date: string) => `dernière vérification : ${date} · à re-vérifier`,
-    region: "avertissement vérification",
-    close: "fermer l'avertissement",
-  },
   onward: {
     title: "Poursuivre",
     kind: {

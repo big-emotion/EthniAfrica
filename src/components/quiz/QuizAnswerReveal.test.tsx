@@ -126,6 +126,31 @@ describe("QuizAnswerReveal (Epic 10, Story 10.9, ETNI-1134, FR68/FR71)", () => {
     );
   });
 
+  // The reveal has no stored score, so its sheet used to print « 0% » under
+  // « Niveau de confiance » and « pas encore relu » beneath it.
+  // @req REQ-194
+  it("opens a source sheet that prints no confidence", async () => {
+    const user = userEvent.setup();
+    render(
+      <QuizAnswerReveal
+        language="fr"
+        question={QUESTION}
+        isCorrect
+        isLastQuestion={false}
+        onNext={vi.fn()}
+      />
+    );
+
+    await user.click(
+      screen.getByRole("button", { name: "Ouvrir la chaîne de sources" })
+    );
+
+    const dialog = await screen.findByRole("dialog");
+    expect(dialog.textContent).not.toMatch(
+      /confiance|%|Calculé|pas encore relu/i
+    );
+  });
+
   // @req REQ-103 REQ-180
   it("keeps the source-chain action at the minimum touch-target height", () => {
     render(
