@@ -553,7 +553,7 @@ export async function upsertPeoples(
       }
       if (nameIndex.unsourced) {
         report.appellations.errors.push(
-          `${people.id}: fiche declares no source that may carry a name`
+          `${people.id}: fiche declares no source with a tier`
         );
       }
       report.appellations.total += nameIndex.entries.length;

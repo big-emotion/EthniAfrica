@@ -46,24 +46,20 @@ export interface PeopleNameIndex {
   entries: PeopleNameIndexEntry[];
   /** Appellation segments the grammar declined to read as a name. */
   rejected: string[];
-  /** The fiche yields derived names but cites no source that may carry them. */
+  /** The fiche yields derived names but cites no source with a tier. */
   unsourced: boolean;
 }
 
 /**
- * The rule the retired `name_records` source-or-drop trigger applied to a
- * people name (migration 091), minus its oral-tradition branch: that branch
- * needs a rights-cleared narrative in the database, which a fiche cannot
- * show, so an oral-only fiche publishes no derived name rather than one the
- * gate would have refused.
+ * A derived name needs one source that carries a tier, whatever its kind
+ * (REQ-195, doctrine §1.1): an oral account or an EthniAfrica synthesis is
+ * cited at its own tier, never refused for being oral or offline. The retired
+ * name_records trigger admitted a people name only on official or referenced
+ * evidence; that restriction is deliberately not carried over. Consent to an
+ * oral narrative is still gated where the narrative itself is loaded.
  */
 function mayCarryAName(source: FicheSource): boolean {
-  return (
-    source.tier === "official" ||
-    source.tier === "referenced" ||
-    (source.tier === "unverified" &&
-      source.source_kind === "ethniafrica_synthesis")
-  );
+  return isSourceTier(source.tier);
 }
 
 /**

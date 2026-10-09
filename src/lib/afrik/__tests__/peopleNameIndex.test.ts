@@ -119,13 +119,66 @@ describe("peopleNameIndex", () => {
     ]);
   });
 
-  // @req REQ-196
-  it("publishes no derived name for a fiche citing no official or referenced source", () => {
+  // @req REQ-195
+  it("indexes a derived name resting only on an oral account", () => {
     const index = peopleNameIndex(
       people({
         content: {
           appellations: { selfAppellation: "Testa", exonyms: ["Tosti"] },
-          sources: [{ title: "Blog", url: null, tier: "unverified" }],
+          sources: [
+            {
+              title: "Récit de famille",
+              url: null,
+              tier: "unverified",
+              source_kind: "oral_tradition",
+            },
+          ],
+        } as People["content"],
+      })
+    );
+
+    expect(index.entries.map(({ nameText }) => nameText)).toEqual([
+      "Testa",
+      "Tosti",
+    ]);
+    expect(index.entries[1].sources[0]).toMatchObject({
+      tier: "unverified",
+      source_kind: "oral_tradition",
+    });
+    expect(index.unsourced).toBe(false);
+  });
+
+  // @req REQ-195
+  it.each([
+    ["an EthniAfrica synthesis", "ethniafrica_synthesis"],
+    ["an unverified source of any kind", undefined],
+  ])("indexes a derived name resting only on %s", (_label, sourceKind) => {
+    const index = peopleNameIndex(
+      people({
+        content: {
+          appellations: { selfAppellation: "Testa" },
+          sources: [
+            {
+              title: "Note",
+              url: null,
+              tier: "unverified",
+              ...(sourceKind ? { source_kind: sourceKind } : {}),
+            },
+          ],
+        } as People["content"],
+      })
+    );
+
+    expect(index.entries.map(({ nameText }) => nameText)).toEqual(["Testa"]);
+  });
+
+  // @req REQ-196
+  it("publishes no derived name for a fiche citing no source at all", () => {
+    const index = peopleNameIndex(
+      people({
+        content: {
+          appellations: { selfAppellation: "Testa", exonyms: ["Tosti"] },
+          sources: [],
         } as People["content"],
       })
     );
