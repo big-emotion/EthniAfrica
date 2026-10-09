@@ -27,44 +27,53 @@ const ETYMOLOGY_FIELDS: { folder: string; field: string }[] = [
   { folder: "pays/", field: "etymology" },
 ];
 
+// JavaScript's \b only knows ASCII letters, even under the u flag, so a word
+// ending in « é » (« dérivé », « rapporté ») never met it. These two
+// letter-aware boundaries stand in for it in both patterns.
+const START = String.raw`(?<!\p{L})`;
+const END = String.raw`(?!\p{L})`;
+
+function words(alternatives: string[]): RegExp {
+  return new RegExp(
+    alternatives
+      .map((pattern) => pattern.replace(/^\\b/, START).replace(/\\b$/, END))
+      .join("|"),
+    "iu"
+  );
+}
+
 // Accents are optional throughout: older fiches were written without them.
-const ORIGIN_STATED = new RegExp(
-  [
-    String.raw`\bvien(?:t|nent)\b`,
-    String.raw`\bvenant d`,
-    String.raw`\bprovien(?:t|nent)\b`,
-    String.raw`\bprovenant d`,
-    String.raw`\bd[ée]riv(?:e|ent|[ée]e?s?)\b`,
-    String.raw`\bsignifi(?:e|ent|ant)\b`,
-    String.raw`\bveu(?:t|lent) dire\b`,
-    String.raw`\bvoulant dire\b`,
-    String.raw`\bse tradui(?:t|sent)\b`,
-    // « issus de » alone also tells where a group comes from, not a name.
-    String.raw`\b(?:est|sont) issue?s? d`,
-    String.raw`\btir(?:e|ent) (?:son|leur) nom\b`,
-    String.raw`\btir[ée]e?s? d`,
-    String.raw`\b(?:trouve|tire|a)n?t? (?:son|leur|pour) origine\b`,
-  ].join("|"),
-  "i"
-);
+const ORIGIN_STATED = words([
+  String.raw`\bvien(?:t|nent)\b`,
+  String.raw`\bvenant d`,
+  String.raw`\bprovien(?:t|nent)\b`,
+  String.raw`\bprovenant d`,
+  String.raw`\bd[ée]riv(?:e|ent|[ée]e?s?)\b`,
+  String.raw`\bsignifi(?:e|ent|ant)\b`,
+  String.raw`\bveu(?:t|lent) dire\b`,
+  String.raw`\bvoulant dire\b`,
+  String.raw`\bse tradui(?:t|sent)\b`,
+  // « issus de » alone also tells where a group comes from, not a name.
+  String.raw`\b(?:est|sont) issue?s? d`,
+  String.raw`\btir(?:e|ent) (?:son|leur) nom\b`,
+  String.raw`\btir[ée]e?s? d`,
+  String.raw`\b(?:trouve|tire|a)n?t? (?:son|leur|pour) origine\b`,
+]);
 
 // The conditional endings of the verbs these fields use (serait, viendrait,
 // pourrait, signifierait…), anchored so that « portrait » or « extrait » do
 // not pass for one.
-const HEDGED = new RegExp(
-  [
-    String.raw`\b\p{L}*(?:erai|irai|drai|rrai|aurai)(?:t|ent)\b`,
-    String.raw`\bselon\b`,
-    String.raw`\bd'apr[èe]s\b`,
-    String.raw`\bhypoth[èe]se`,
-    String.raw`\bpropos(?:e|ent|ée?s?|ait)\b`,
-    String.raw`\brapport(?:e|ent|ée?s?|ait)\b`,
-    String.raw`\bexplication`,
-    String.raw`\binterpr[ée]tation`,
-    String.raw`\bth[ée]orie`,
-  ].join("|"),
-  "iu"
-);
+const HEDGED = words([
+  String.raw`\b\p{L}*(?:erai|irai|drai|rrai|aurai)(?:t|ent)\b`,
+  String.raw`\bselon\b`,
+  String.raw`\bd'apr[èe]s\b`,
+  String.raw`\bhypoth[èe]se`,
+  String.raw`\bpropos(?:e|ent|ée?s?|ait)\b`,
+  String.raw`\brapport(?:e|ent|ée?s?|ait)\b`,
+  String.raw`\bexplication`,
+  String.raw`\binterpr[ée]tation`,
+  String.raw`\bth[ée]orie`,
+]);
 
 const QUOTATION = /«[^»]*»/g;
 

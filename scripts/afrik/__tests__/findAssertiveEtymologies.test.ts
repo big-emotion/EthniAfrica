@@ -20,6 +20,7 @@ describe("findAssertiveSentences", () => {
     "Kakwa Salia Musala, qui se traduit par Kakwa trois pays.",
     "Fulɓe, signifiant les dispersés, est le nom qu'ils se donnent.",
     "Le nom vient probablement du mot wolof jolof.",
+    "Ityop'iya est dérivé du grec Aithiops.",
   ])("flags an origin stated as fact: %s", (sentence) => {
     expect(findAssertiveSentences(sentence)).toEqual([sentence]);
   });
@@ -34,6 +35,7 @@ describe("findAssertiveSentences", () => {
     "Le nom pourrait venir du mot kasai, qui signifie rivière.",
     "Le terme Pygmées est un terme colonial aujourd'hui considéré péjoratif.",
     "Les Aka préfèrent être désignés par leur nom propre.",
+    "Pul vient du mot rouge, rapporté par Tauxier.",
     "Les Anyi sont des groupes issus de l'État Aowin après 1715.",
   ])("leaves a hypothesis, an attribution or a usage alone: %s", (sentence) => {
     expect(findAssertiveSentences(sentence)).toEqual([]);
