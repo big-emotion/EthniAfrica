@@ -75,6 +75,14 @@ palette: [mockup v5](name-history-timeline-mockup-v5.html), terre cuite.
     anchors behind a button;
   - an honest notice when a name has no dated origin;
   - the closing line « Fin de ce que nos recherches retracent pour le nom X. »
+- **Names in italics** (operator, 2026-10-09). Every name or written form
+  cited in the summary, a name line or a tile is set in italics by the
+  timeline UI (ETNI-2012). The fiche text stays plain: the surfaces that show
+  `nameHistory` today (the answer card, the fiche's name story) print it as
+  plain text and parse no markup, so markup in the data would reach the reader
+  as stray asterisks. The UI finds the names to set from the block itself:
+  each `names[].nameText` and each account's `formAsWritten`, matched in the
+  text. A form the block does not list stays roman until it is added there.
 - **"Elsewhere" anchors.** A fixed list of 20 to 30 sourced events outside
   Africa, chosen from French and Belgian school history, with English or US
   history only sparingly.

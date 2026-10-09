@@ -14,7 +14,7 @@ import type { NameRecordEntry, NameRecordSource } from "@/types/names";
 
 import {
   FOLDED_RECORD_FILES,
-  datedLikeFiche,
+  enrichedLikeFiche,
   ficheNameHistory,
   foldedRecord,
 } from "./fixtures/foldedNameRecords";
@@ -78,7 +78,7 @@ describe("the noms/ records folded into their people fiches", () => {
     (file) => {
       const folded = foldedRecord(file);
       const parsed = parseNameHistory(ficheNameHistory(folded.id));
-      const record = datedLikeFiche(folded, parsed.data);
+      const record = enrichedLikeFiche(folded, parsed.data);
 
       expect(parsed.errors).toEqual([]);
       expect(nameRecordsFromHistory(parsed.data).map(served)).toEqual(
@@ -119,6 +119,28 @@ describe("the noms/ records folded into their people fiches", () => {
     expect(accountsOf("Peul").some((account) => account.hypothesisGroup)).toBe(
       false
     );
+  });
+
+  // @req REQ-196
+  it("tells each origin once: the meaning names the hypotheses, their tiles attribute them", () => {
+    const toucouleur = ficheNameHistory("PPL_FULA").names.find(
+      (name) => name.nameText === "Toucouleur"
+    ).accounts;
+    const meaning = toucouleur.find((account) => account.aspect === "meaning");
+    const origins = toucouleur.filter((account) => account.hypothesisGroup);
+
+    for (const author of ["Djibril Tamsir Niane", "Bérenger-Féraud", "Horta"]) {
+      expect(meaning.statement).not.toContain(author);
+      expect(origins.some((tile) => tile.statement.includes(author))).toBe(
+        true
+      );
+    }
+    // The tile that took over Horta's link to Tukulër cites him.
+    expect(
+      origins.some((tile) =>
+        tile.sources.some((source) => source.author === "José da Silva Horta")
+      )
+    ).toBe(true);
   });
 
   // @req REQ-196
