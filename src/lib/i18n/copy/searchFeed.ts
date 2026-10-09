@@ -56,6 +56,8 @@ export interface SearchFeedCopy {
     stories: string;
     quiz: string;
     fiches: string;
+    /** The name-history timeline (REQ-198), the default when a name has one. */
+    timeline: string;
   };
   /** What a filter shows once the reader has chosen it. */
   lens: {
@@ -157,6 +159,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       stories: "Récits",
       quiz: "Jeux",
       fiches: "Fiches",
+      timeline: "Timeline",
     },
     lens: {
       title: {

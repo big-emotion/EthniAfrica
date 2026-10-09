@@ -28,6 +28,8 @@ import { CountriesAnswer } from "@/components/search/feed/CountriesAnswer";
 import { SubjectAnswer } from "@/components/search/feed/SubjectAnswer";
 import { VerdictBlock } from "@/components/search/feed/VerdictBlock";
 import { WordAnswerPage } from "@/components/search/feed/WordAnswerPage";
+import { NameTimeline } from "@/components/search/timeline/NameTimeline";
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
@@ -46,7 +48,11 @@ import {
   buildSearchFeedPlan,
   type SearchFeedAnswerState,
 } from "@/lib/search/searchFeedPlan";
-import { buildFeedLenses, type FeedLensId } from "@/lib/search/searchLenses";
+import {
+  buildFeedLenses,
+  defaultFeedLens,
+  type FeedLensId,
+} from "@/lib/search/searchLenses";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
 import { orderForSearch } from "@/lib/search/searchedName";
 import type { SearchFeedPresentation } from "@/lib/search/searchFeedPresentation";
@@ -93,7 +99,17 @@ export interface SearchFeedProps {
   resultCount?: number;
   presentation?: SearchFeedPresentation;
   relation?: SearchFeedRelation;
+  /**
+   * The name history of each searched subject that has one, in the subjects'
+   * order. When there is one, the page opens on the timeline (REQ-198).
+   */
+  nameHistories?: readonly SubjectNameHistory[];
   onResultNavigate?: (type: string, rank: number) => void;
+}
+
+export interface SubjectNameHistory {
+  subject: SearchResult;
+  nameHistory: NameHistory;
 }
 
 function normalizedQueryId(query: string): string {
@@ -207,9 +223,13 @@ export function SearchFeed({
   resultCount,
   presentation,
   relation,
+  nameHistories = [],
   onResultNavigate,
 }: SearchFeedProps) {
-  const [activeLens, setActiveLens] = useState<FeedLensId>("all");
+  // The feed is keyed by query, so the default is chosen once per search.
+  const [activeLens, setActiveLens] = useState<FeedLensId>(() =>
+    defaultFeedLens(nameHistories.length)
+  );
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [validatedOption, setValidatedOption] = useState<number | null>(null);
   const copy = searchFeedCopy[language];
@@ -389,6 +409,7 @@ export function SearchFeed({
 
   const lenses = buildFeedLenses(
     {
+      timeline: nameHistories.length,
       shorts: companions.shorts.items.length,
       stories: plates.length,
       quiz: companions.quiz.item ? 1 : 0,
@@ -817,10 +838,35 @@ export function SearchFeed({
     return renderBlock(id);
   };
 
+  // The timeline is a whole page of its own: each subject's name history, the
+  // first under the page's h1. « Tout » in the lens bar is the way back.
+  if (activeLens === "timeline") {
+    return (
+      <SearchFeedLayout
+        className="text-afh-text"
+        reviewed={Boolean(presentation)}
+        first={renderBlock("lenses")}
+        blocks={nameHistories.map(({ subject, nameHistory }, index) => (
+          <NameTimeline
+            key={`${subject.type}:${subject.id}`}
+            history={nameHistory}
+            searched={query}
+            subjectType={subject.type}
+            headingLevel={index === 0 ? "h1" : "h2"}
+            language={language}
+          />
+        ))}
+      />
+    );
+  }
+
   // A filter replaces the answer: the page is then about what the reader
   // asked to see, under a heading that says so, with a way back.
   if (activeLens !== "all") {
-    const lensBlock: Record<Exclude<FeedLensId, "all">, ReactNode> = {
+    const lensBlock: Record<
+      Exclude<FeedLensId, "all" | "timeline">,
+      ReactNode
+    > = {
       shorts: (
         <ShortsBlock
           grouped

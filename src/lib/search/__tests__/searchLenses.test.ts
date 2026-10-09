@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
-import { buildFeedLenses } from "@/lib/search/searchLenses";
+import { buildFeedLenses, defaultFeedLens } from "@/lib/search/searchLenses";
 
 const labels = searchFeedCopy.fr.filters;
 
@@ -26,6 +26,30 @@ describe("feed lenses", () => {
       { id: "quiz", label: "Jeux", count: 1 },
       { id: "fiches", label: "Fiches", count: 98 },
     ]);
+  });
+
+  // REQ-198: the name-history timeline opens the page, ahead of « Tout ».
+  // @req REQ-198
+  it("puts the timeline first, without a count, when a name history exists", () => {
+    expect(
+      buildFeedLenses(
+        { timeline: 1, shorts: 2, stories: 0, quiz: 0, fiches: 3 },
+        labels
+      ).map(({ id, count }) => [id, count])
+    ).toEqual([
+      ["timeline", undefined],
+      ["all", undefined],
+      ["shorts", 2],
+      ["fiches", 3],
+    ]);
+  });
+
+  // A subject with no name history keeps the answer as its default (operator
+  // brief for ETNI-2012), rather than opening on a timeline with no tile.
+  // @req REQ-198
+  it("opens on the timeline only when a name history exists", () => {
+    expect(defaultFeedLens(1)).toBe("timeline");
+    expect(defaultFeedLens(0)).toBe("all");
   });
 
   // @req REQ-178

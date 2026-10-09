@@ -101,6 +101,16 @@
     var(--afh-brand-gold)
   );
 
+  /* The name-history timeline (ETNI-2012), from the approved mockup v5:
+     terre cuite for the birth of a name, a warm grey for the dashes of
+     « before the name ». The ink reads 6.4:1 on the ground and 5.3:1 on the
+     chip; the dashes reach 4.3:1 on the warm page, over the 3:1 a
+     non-text mark needs. */
+  --afh-color-name-birth-bg: #fbe9dc;
+  --afh-color-name-birth-ink: #8a3d1c;
+  --afh-color-name-birth-chip: #f6d3bd;
+  --afh-color-name-before-dash: #7d6c5c;
+
   --afh-cat-ocre: #c9821f;
   --afh-cat-ocre-tint: #f1d9ae;
   --afh-cat-teal: #33a390;
@@ -141,6 +151,12 @@
   --afh-bg-warm: var(--afh-color-bg-warm);
   --afh-surface: var(--afh-color-card);
   --afh-border: var(--afh-color-border);
+
+  /* Name-history timeline: the birth tile and the before-the-name dashes. */
+  --afh-name-birth-bg: var(--afh-color-name-birth-bg);
+  --afh-name-birth-ink: var(--afh-color-name-birth-ink);
+  --afh-name-birth-chip: var(--afh-color-name-birth-chip);
+  --afh-name-before-dash: var(--afh-color-name-before-dash);
 
   /* Text */
   --afh-text: var(--afh-color-text);
@@ -402,6 +418,13 @@
   --afh-text-muted: var(--afh-night-ink-3);
 
   --afh-colonial-ink: var(--afh-night-colonial);
+
+  /* On a dark page the birth tile takes the raised night surface, inked with
+     the terre ramp lifted for type (4.8:1). */
+  --afh-name-birth-bg: var(--afh-night-surface-2);
+  --afh-name-birth-ink: var(--afh-cat-terre-ink-night);
+  --afh-name-birth-chip: var(--afh-night-surface);
+  --afh-name-before-dash: var(--afh-night-ink-3);
 
   /* Raw terracotta is a dark red on a dark ground — 2.5:1, a figure nobody
      can read. The terre ink ramp is the same hue lifted for type. */

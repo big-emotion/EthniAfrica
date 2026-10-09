@@ -1,0 +1,430 @@
+[
+  {
+    "year": 1066,
+    "sentence": "En Angleterre, Guillaume le Conquérant gagne la bataille d'Hastings, en 1066.",
+    "sources": [
+      {
+        "title": "Tapisserie de Bayeux",
+        "author": "Brodeurs anonymes",
+        "year": null,
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "archive"
+      }
+    ]
+  },
+  {
+    "year": 1095,
+    "sentence": "En France, le pape Urbain II appelle à la première croisade à Clermont, en 1095.",
+    "sources": [
+      {
+        "title": "Historia Hierosolymitana",
+        "author": "Foucher de Chartres",
+        "year": null,
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "archive"
+      }
+    ]
+  },
+  {
+    "year": 1214,
+    "sentence": "En France, le roi Philippe Auguste gagne la bataille de Bouvines, en 1214.",
+    "sources": [
+      {
+        "title": "Gesta Philippi Augusti",
+        "author": "Guillaume le Breton",
+        "year": null,
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "archive"
+      }
+    ]
+  },
+  {
+    "year": 1226,
+    "sentence": "En France, Louis IX, qu'on appellera Saint Louis, devient roi, en 1226.",
+    "sources": [
+      {
+        "title": "Vie de saint Louis",
+        "author": "Jean de Joinville",
+        "year": 1309,
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "archive"
+      }
+    ]
+  },
+  {
+    "year": 1348,
+    "sentence": "En France, la peste noire tue une grande partie de la population, en 1348.",
+    "sources": [
+      {
+        "title": "Chronique latine de Guillaume de Nangis, continuation",
+        "author": "Jean de Venette",
+        "year": null,
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "archive"
+      }
+    ]
+  },
+  {
+    "year": 1429,
+    "sentence": "En France, Jeanne d'Arc fait lever le siège d'Orléans, en 1429.",
+    "sources": [
+      {
+        "title": "Procès de condamnation et de réhabilitation de Jeanne d'Arc",
+        "author": "Jules Quicherat (éditeur)",
+        "year": 1841,
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "archive"
+      }
+    ]
+  },
+  {
+    "year": 1453,
+    "sentence": "En France, la guerre de Cent Ans prend fin, en 1453.",
+    "sources": [
+      {
+        "title": "Histoire de Charles VII",
+        "author": "Thomas Basin",
+        "year": null,
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "archive"
+      }
+    ]
+  },
+  {
+    "year": 1492,
+    "sentence": "En Espagne, Christophe Colomb part vers l'ouest et atteint l'Amérique, en 1492.",
+    "sources": [
+      {
+        "title": "Journal de bord du premier voyage de Christophe Colomb, transmis par Bartolomé de Las Casas",
+        "author": "Christophe Colomb",
+        "year": null,
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "archive"
+      }
+    ]
+  },
+  {
+    "year": 1515,
+    "sentence": "En France, François Ier gagne la bataille de Marignan, en 1515.",
+    "sources": [
+      {
+        "title": "Journal d'un bourgeois de Paris sous le règne de François Ier",
+        "author": "Ludovic Lalanne (éditeur)",
+        "year": 1854,
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "archive"
+      }
+    ]
+  },
+  {
+    "year": 1539,
+    "sentence": "En France, l'ordonnance de Villers-Cotterêts impose le français dans les actes officiels, en 1539.",
+    "sources": [
+      {
+        "title": "Ordonnance de Villers-Cotterêts, août 1539",
+        "author": "François Ier, roi de France",
+        "year": 1539,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1598,
+    "sentence": "En France, l'édit de Nantes donne des droits aux protestants, en 1598.",
+    "sources": [
+      {
+        "title": "Édit de Nantes, avril 1598",
+        "author": "Henri IV, roi de France",
+        "year": 1598,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1661,
+    "sentence": "En France, Louis XIV commence à gouverner seul, en 1661.",
+    "sources": [
+      {
+        "title": "Mémoires pour l'instruction du dauphin",
+        "author": "Louis XIV",
+        "year": null,
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "archive"
+      }
+    ]
+  },
+  {
+    "year": 1685,
+    "sentence": "En France, Louis XIV révoque l'édit de Nantes, en 1685.",
+    "sources": [
+      {
+        "title": "Édit de Fontainebleau, octobre 1685",
+        "author": "Louis XIV, roi de France",
+        "year": 1685,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1789,
+    "sentence": "En France, la Révolution commence et les députés votent la Déclaration des droits de l'homme et du citoyen, en 1789.",
+    "sources": [
+      {
+        "title": "Déclaration des droits de l'homme et du citoyen du 26 août 1789",
+        "author": "Assemblée nationale constituante",
+        "year": 1789,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1804,
+    "sentence": "En France, le Code civil est promulgué, en 1804.",
+    "sources": [
+      {
+        "title": "Code civil des Français, 21 mars 1804",
+        "author": "République française",
+        "year": 1804,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1815,
+    "sentence": "Près de Bruxelles, Napoléon est vaincu à Waterloo, en 1815.",
+    "sources": [
+      {
+        "title": "Dépêche du 19 juin 1815, publiée dans The London Gazette",
+        "author": "Arthur Wellesley, duc de Wellington",
+        "year": 1815,
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "archive"
+      }
+    ]
+  },
+  {
+    "year": 1830,
+    "sentence": "En Belgique, le Gouvernement provisoire proclame l'indépendance du pays, en 1830.",
+    "sources": [
+      {
+        "title": "Arrêté du Gouvernement provisoire du 4 octobre 1830",
+        "author": "Gouvernement provisoire de la Belgique",
+        "year": 1830,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1848,
+    "sentence": "En France, les hommes obtiennent le droit de vote sans condition de fortune, en 1848.",
+    "sources": [
+      {
+        "title": "Décret du 5 mars 1848",
+        "author": "Gouvernement provisoire de la République française",
+        "year": 1848,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1882,
+    "sentence": "En France, l'école primaire devient gratuite, puis obligatoire et laïque, en 1881 et 1882.",
+    "sources": [
+      {
+        "title": "Loi du 16 juin 1881 établissant la gratuité absolue de l'enseignement primaire",
+        "author": "République française",
+        "year": 1881,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      },
+      {
+        "title": "Loi du 28 mars 1882 sur l'enseignement primaire obligatoire",
+        "author": "République française",
+        "year": 1882,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1889,
+    "sentence": "En France, la tour Eiffel est inaugurée pour l'Exposition universelle de Paris, en 1889.",
+    "sources": [
+      {
+        "title": "Rapport général de l'Exposition universelle internationale de 1889",
+        "author": "Alfred Picard",
+        "year": 1891,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1905,
+    "sentence": "En France, la loi de séparation des Églises et de l'État est votée, en 1905.",
+    "sources": [
+      {
+        "title": "Loi du 9 décembre 1905 concernant la séparation des Églises et de l'État",
+        "author": "République française",
+        "year": 1905,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1914,
+    "sentence": "En Belgique, l'armée allemande envahit le pays et la Première Guerre mondiale commence, en 1914.",
+    "sources": [
+      {
+        "title": "Correspondance diplomatique relative à la guerre de 1914 (Livre gris belge)",
+        "author": "Ministère des Affaires étrangères de Belgique",
+        "year": 1914,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1918,
+    "sentence": "En France, l'armistice arrête les combats de la Première Guerre mondiale, en 1918.",
+    "sources": [
+      {
+        "title": "Convention d'armistice du 11 novembre 1918",
+        "author": "Puissances alliées et Allemagne",
+        "year": 1918,
+        "url": null,
+        "tier": "official",
+        "source_kind": "intergovernmental"
+      }
+    ]
+  },
+  {
+    "year": 1936,
+    "sentence": "En France, les salariés obtiennent leurs premiers congés payés, en 1936.",
+    "sources": [
+      {
+        "title": "Loi du 20 juin 1936 instituant un congé annuel payé dans l'industrie, le commerce, les professions libérales, les services domestiques et l'agriculture",
+        "author": "République française",
+        "year": 1936,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1944,
+    "sentence": "En France, les femmes obtiennent le droit de vote, en 1944.",
+    "sources": [
+      {
+        "title": "Ordonnance du 21 avril 1944 portant organisation des pouvoirs publics en France après la Libération, article 17",
+        "author": "Gouvernement provisoire de la République française",
+        "year": 1944,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1945,
+    "sentence": "En Europe, la Seconde Guerre mondiale prend fin, en 1945.",
+    "sources": [
+      {
+        "title": "Acte de capitulation militaire de l'Allemagne, signé à Reims le 7 mai 1945",
+        "author": "Puissances alliées et Allemagne",
+        "year": 1945,
+        "url": null,
+        "tier": "official",
+        "source_kind": "intergovernmental"
+      }
+    ]
+  },
+  {
+    "year": 1958,
+    "sentence": "En France, la Ve République est fondée, en 1958.",
+    "sources": [
+      {
+        "title": "Constitution du 4 octobre 1958",
+        "author": "République française",
+        "year": 1958,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1969,
+    "sentence": "Aux États-Unis, la mission Apollo 11 dépose deux astronautes sur la Lune, en 1969.",
+    "sources": [
+      {
+        "title": "Apollo 11 Mission Report",
+        "author": "National Aeronautics and Space Administration",
+        "year": 1969,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 1993,
+    "sentence": "En Belgique, le pays devient un État fédéral, en 1993.",
+    "sources": [
+      {
+        "title": "Constitution belge, texte coordonné du 17 février 1994, article 1er",
+        "author": "Royaume de Belgique",
+        "year": 1994,
+        "url": null,
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  {
+    "year": 2002,
+    "sentence": "En Europe, les pièces et les billets en euros entrent en circulation, en 2002.",
+    "sources": [
+      {
+        "title": "Règlement (CE) n° 974/98 du Conseil du 3 mai 1998 concernant l'introduction de l'euro",
+        "author": "Conseil de l'Union européenne",
+        "year": 1998,
+        "url": null,
+        "tier": "official",
+        "source_kind": "intergovernmental"
+      }
+    ]
+  }
+]
