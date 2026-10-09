@@ -38,11 +38,6 @@ function dossierOf(file: string): NameRecordDossier {
   return parsed.data;
 }
 
-/**
- * What GET /v2/peoples/{id}/names serves for one name, with the defaults the
- * service applies to a row (`?? null`, `?? false`, `?? []`). Comparing at this
- * level is the fold's promise: the reader sees the same names after it.
- */
 // The record's own source fields; the block adds a source_kind on top.
 function recordSourceFields({
   title,
@@ -62,6 +57,11 @@ function recordSourceFields({
   };
 }
 
+/**
+ * What GET /v2/peoples/{id}/names serves for one name, with the defaults the
+ * service applies to a row (`?? null`, `?? false`, `?? []`). Comparing at this
+ * level is the fold's promise: the reader sees the same names after it.
+ */
 function served(
   entry: Omit<NameRecordEntry, "sources"> & { sources: NameRecordSource[] }
 ) {
