@@ -131,7 +131,7 @@ describe("parchment layout — one continuous document", () => {
     );
   });
 
-  // The confidence chip used to open the people fiche above its first section,
+  // The source review chip used to open the people fiche above its first section,
   // with a gutter of its own to keep in step with the sections' — and when the
   // two drifted, "voir les sources" sat left of every heading below it. It now
   // rides inside the "En bref" chapter, so it takes that chapter's gutter and

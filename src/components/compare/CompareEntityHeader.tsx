@@ -8,7 +8,7 @@
  * its own `column`, so there is no code path that could compare entities
  * against each other.
  *
- * It used to carry each entity's confidence chip, a « page non auditée »
+ * It used to carry each entity's source review chip, a « page non auditée »
  * disclaimer when there was no score, and a link explaining the score. All
  * three told the reader how far to trust a page, which REQ-194 keeps internal.
  */

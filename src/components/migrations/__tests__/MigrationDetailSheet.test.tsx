@@ -69,7 +69,7 @@ describe("MigrationDetailSheet", () => {
   });
 
   // @req REQ-101 FR78 FR79 FR82
-  it("renders period, classification badge, confidence chip and linked peoples", () => {
+  it("renders period, classification badge, source review chip and linked peoples", () => {
     render(
       <MigrationDetailSheet
         language="fr"

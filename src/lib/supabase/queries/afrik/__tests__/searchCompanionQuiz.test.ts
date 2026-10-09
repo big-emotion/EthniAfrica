@@ -127,6 +127,50 @@ describe("search companion quiz query", () => {
     ]);
   });
 
+  // The feed quiz reveal names the source's type, like the quiz page does;
+  // a value outside SOURCE_KINDS (the legacy "written" of the case above)
+  // stays absent rather than reaching the badge.
+  // @req REQ-194
+  it("carries the best source's type so the feed reveal can name it", async () => {
+    const { client } = clientFor({
+      quiz_questions: { data: [question], error: null },
+      confidence_scores: {
+        data: [
+          {
+            entity_type: "country",
+            entity_id: "NGA",
+            score: 0.8,
+            last_human_audit_at: null,
+          },
+        ],
+        error: null,
+      },
+      flags: { data: [], error: null },
+      sources: {
+        data: [
+          {
+            id: "SRC_NGA",
+            title: "A referenced source",
+            url: "https://example.org/nigeria",
+            tier: "referenced",
+            verified_at: null,
+            source_kind: "academic",
+            oral_narratives: null,
+          },
+        ],
+        error: null,
+      },
+    });
+
+    const [candidate] = await loadSearchCompanionQuizCandidates(
+      [{ relation: "exact", entityType: "country", entityId: "NGA" }],
+      "fr",
+      client as never
+    );
+
+    expect(candidate.source.sourceKind).toBe("academic");
+  });
+
   // @req REQ-180
   it("fails closed when confidence, sources or flags no longer satisfy the quiz gate", async () => {
     const { client } = clientFor({

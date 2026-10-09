@@ -10,9 +10,9 @@ const navigation = await vi.hoisted(async () => {
 });
 vi.mock("next/navigation", () => navigation);
 import { render, screen, fireEvent } from "@testing-library/react";
-import { ConfidenceChip } from "../ConfidenceChip";
+import { SourceReviewChip } from "../SourceReviewChip";
 
-describe("ConfidenceChip", () => {
+describe("SourceReviewChip", () => {
   beforeEach(() => {
     if (typeof sessionStorage !== "undefined") {
       sessionStorage.clear();
@@ -27,7 +27,7 @@ describe("ConfidenceChip", () => {
   // @req REQ-019
   it("states no probability of truth and no verification", () => {
     const { container } = render(
-      <ConfidenceChip
+      <SourceReviewChip
         language="fr"
         sourceCount={4}
         lastHumanAuditAt="2025-09-21"
@@ -44,7 +44,7 @@ describe("ConfidenceChip", () => {
   // @req REQ-019
   it("counts one reference in the singular", () => {
     render(
-      <ConfidenceChip
+      <SourceReviewChip
         language="fr"
         sourceCount={1}
         lastHumanAuditAt="2025-09-21"
@@ -60,7 +60,7 @@ describe("ConfidenceChip", () => {
   // @req REQ-194
   it("states the count and review date without being handed a score", () => {
     const { container } = render(
-      <ConfidenceChip
+      <SourceReviewChip
         language="fr"
         sourceCount={4}
         lastHumanAuditAt="2025-09-21"
@@ -76,7 +76,9 @@ describe("ConfidenceChip", () => {
   describe("rendering with complete data", () => {
     // @req REQ-019
     it("renders the typographic pill with the reference count and the review date", () => {
-      render(<ConfidenceChip sourceCount={4} lastHumanAuditAt="2025-09-21" />);
+      render(
+        <SourceReviewChip sourceCount={4} lastHumanAuditAt="2025-09-21" />
+      );
 
       expect(
         screen.getByText(/4\s*références\s*·\s*revu\s*2025-09-21/i)
@@ -85,7 +87,7 @@ describe("ConfidenceChip", () => {
 
     it("renders no emoji or icon — only typographic content", () => {
       const { container } = render(
-        <ConfidenceChip sourceCount={4} lastHumanAuditAt="2025-09-21" />
+        <SourceReviewChip sourceCount={4} lastHumanAuditAt="2025-09-21" />
       );
 
       expect(container.querySelector("svg")).toBeNull();
@@ -95,7 +97,9 @@ describe("ConfidenceChip", () => {
 
   describe("aria-label", () => {
     it("matches the exact French template using a long French date", () => {
-      render(<ConfidenceChip sourceCount={4} lastHumanAuditAt="2025-09-21" />);
+      render(
+        <SourceReviewChip sourceCount={4} lastHumanAuditAt="2025-09-21" />
+      );
 
       const button = screen.getByRole("button");
       expect(button).toHaveAttribute(
@@ -105,7 +109,9 @@ describe("ConfidenceChip", () => {
     });
 
     it("renders the long French date in a TZ-stable way (no off-by-one)", () => {
-      render(<ConfidenceChip sourceCount={4} lastHumanAuditAt="2025-09-21" />);
+      render(
+        <SourceReviewChip sourceCount={4} lastHumanAuditAt="2025-09-21" />
+      );
 
       const button = screen.getByRole("button");
       expect(button.getAttribute("aria-label")).toMatch(/21 septembre 2025/);
@@ -116,7 +122,7 @@ describe("ConfidenceChip", () => {
     it("invokes onOpen exactly once when activated (native click fired by Enter/Space)", () => {
       const onOpen = vi.fn();
       render(
-        <ConfidenceChip
+        <SourceReviewChip
           sourceCount={4}
           lastHumanAuditAt="2025-09-21"
           onOpen={onOpen}
@@ -135,7 +141,7 @@ describe("ConfidenceChip", () => {
     it("invokes onOpen when the chip is clicked", () => {
       const onOpen = vi.fn();
       render(
-        <ConfidenceChip
+        <SourceReviewChip
           sourceCount={4}
           lastHumanAuditAt="2025-09-21"
           onOpen={onOpen}
@@ -150,7 +156,7 @@ describe("ConfidenceChip", () => {
   describe("variant='contested'", () => {
     it("renders without any red color or alarm styling", () => {
       const { container } = render(
-        <ConfidenceChip
+        <SourceReviewChip
           sourceCount={2}
           lastHumanAuditAt="2025-09-21"
           variant="contested"
@@ -165,7 +171,7 @@ describe("ConfidenceChip", () => {
 
     it("still renders the canonical pill text in contested variant", () => {
       render(
-        <ConfidenceChip
+        <SourceReviewChip
           sourceCount={2}
           lastHumanAuditAt="2025-09-21"
           variant="contested"
@@ -181,14 +187,14 @@ describe("ConfidenceChip", () => {
   describe("fallback when data is missing", () => {
     it("renders a 'voir les sources' link when sourceCount is null", () => {
       render(
-        <ConfidenceChip sourceCount={null} lastHumanAuditAt="2025-09-21" />
+        <SourceReviewChip sourceCount={null} lastHumanAuditAt="2025-09-21" />
       );
 
       expect(screen.getByText(/voir les sources/i)).toBeInTheDocument();
     });
 
     it("renders a 'voir les sources' link when lastHumanAuditAt is null", () => {
-      render(<ConfidenceChip sourceCount={4} lastHumanAuditAt={null} />);
+      render(<SourceReviewChip sourceCount={4} lastHumanAuditAt={null} />);
 
       expect(screen.getByText(/voir les sources/i)).toBeInTheDocument();
     });
@@ -196,7 +202,9 @@ describe("ConfidenceChip", () => {
 
   describe("tap target (WCAG 2.5.5 / 2.5.8)", () => {
     it("button carries 44x44 min sizing utilities directly", () => {
-      render(<ConfidenceChip sourceCount={4} lastHumanAuditAt="2025-09-21" />);
+      render(
+        <SourceReviewChip sourceCount={4} lastHumanAuditAt="2025-09-21" />
+      );
 
       const button = screen.getByRole("button");
       const classes = button.className;
@@ -208,7 +216,7 @@ describe("ConfidenceChip", () => {
   describe("per-chip session pulse", () => {
     it("records the chip id in sessionStorage on first render", () => {
       render(
-        <ConfidenceChip
+        <SourceReviewChip
           id="chip-a"
           sourceCount={4}
           lastHumanAuditAt="2025-09-21"
@@ -222,14 +230,14 @@ describe("ConfidenceChip", () => {
 
     it("tracks distinct ids independently — each new chip id is added to the set", () => {
       const { rerender } = render(
-        <ConfidenceChip
+        <SourceReviewChip
           id="chip-a"
           sourceCount={4}
           lastHumanAuditAt="2025-09-21"
         />
       );
       rerender(
-        <ConfidenceChip
+        <SourceReviewChip
           id="chip-b"
           sourceCount={4}
           lastHumanAuditAt="2025-09-21"
@@ -248,17 +256,17 @@ describe("ConfidenceChip", () => {
     it("injects the keyframes <style> only once even with multiple chips", () => {
       render(
         <>
-          <ConfidenceChip
+          <SourceReviewChip
             id="chip-1"
             sourceCount={4}
             lastHumanAuditAt="2025-09-21"
           />
-          <ConfidenceChip
+          <SourceReviewChip
             id="chip-2"
             sourceCount={4}
             lastHumanAuditAt="2025-09-21"
           />
-          <ConfidenceChip
+          <SourceReviewChip
             id="chip-3"
             sourceCount={4}
             lastHumanAuditAt="2025-09-21"
