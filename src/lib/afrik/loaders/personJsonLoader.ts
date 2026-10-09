@@ -44,8 +44,7 @@ function isIllustrative(raw: unknown): boolean {
 /**
  * Reads and parses every dataset/source/afrik/personnes/*.json fiche,
  * skipping illustrative fixtures and files that fail the strict model.
- * `datasetRoot` is the AFRIK dataset root (parent of `personnes/`), matching
- * the convention of loadAllNameRecordDossiers.
+ * `datasetRoot` is the AFRIK dataset root (parent of `personnes/`).
  */
 // @req REQ-137
 export function loadAllPersonDossiers(

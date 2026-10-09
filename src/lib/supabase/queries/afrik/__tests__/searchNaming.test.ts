@@ -227,10 +227,16 @@ describe("batched search naming data", () => {
       ],
       error: null,
     });
+    // REQ-196: a people's names are read from its nameHistory first.
+    const histories = thenableQuery({
+      data: [{ id: "PPL_FANG", name_history: null }],
+      error: null,
+    });
     const byTable = {
       name_records: nameRecords,
       assertions,
       confidence_scores: confidence,
+      afrik_peoples: histories,
       sources,
     };
     const client = {
@@ -253,8 +259,10 @@ describe("batched search naming data", () => {
       "name_records",
       "assertions",
       "confidence_scores",
+      "afrik_peoples",
       "sources",
     ]);
+    expect(histories.in).toHaveBeenCalledWith("id", ["PPL_FANG"]);
     expect(nameRecords.in).toHaveBeenCalledWith("entity_type", [
       "people",
       "patronyme",
@@ -347,6 +355,7 @@ describe("batched search naming data", () => {
         error: null,
       }),
       confidence_scores: thenableQuery({ data: [], error: null }),
+      afrik_peoples: thenableQuery({ data: [], error: null }),
       sources: thenableQuery({ data: [], error: null }),
     };
     const client = {

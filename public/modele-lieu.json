@@ -95,6 +95,22 @@
         "selfGiven": true,
         "languageOfOrigin": "xxx",
         "namedBy": null,
+        "shortLine": "<Une phrase qu'un lecteur comprend sans contexte, 120 caractères au plus>",
+        "usedIn": ["xxx"],
+        "pronunciation": {
+          "respelling": "<Transcription à la française, pour le nom que le sujet se donne — ex: foul-bé>",
+          "audio": null,
+          "source": {
+            "title": "<Dictionnaire ou enregistrement>",
+            "author": "<Auteur>",
+            "year": null,
+            "url": "<URL résolvable>",
+            "tier": "referenced",
+            "source_kind": "linguistic_reference",
+            "page": "<Page, si la source est imprimée>"
+          }
+        },
+        "periodLabel": "<Quand le nom est ou était en usage — ex: usage contemporain>",
         "accounts": [
           {
             "period": {
@@ -152,6 +168,51 @@
                 "source_kind": "archive"
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "<Période telle que la source la donne>"
+            },
+            "statement": "<Ce que la source dit du nom pris dans son ensemble ; aspect dit lequel : meaning (son sens), imposition (qui l'a imposé, et pourquoi il pose problème), usage (son usage aujourd'hui)>",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "<Titre>",
+                "author": "<Auteur>",
+                "year": null,
+                "url": "<URL résolvable>",
+                "tier": "official",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "<Date ou période telle que la source la donne — ex: Manuscrit daté de 1594>"
+            },
+            "statement": "<Le nom X est écrit « forme » par l'auteur>",
+            "formAsWritten": "<La forme telle qu'écrite dans le document cité>",
+            "actors": [
+              {
+                "name": "<Qui a écrit cette forme : auteur, chroniqueur, administration>",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "<Titre>",
+                "author": "<Auteur>",
+                "year": null,
+                "url": "<URL résolvable>",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "<Page imprimée — ex: p. 192>"
+              }
+            ]
           }
         ]
       },
@@ -161,6 +222,15 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": "<Qui a donné ce nom : un peuple, une autorité ; null si inconnu>",
+        "accounts": []
+      },
+      {
+        "nameText": "<Une autre graphie d'un nom, pas un nom à part — ex: Masai pour Maasai>",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
         "accounts": []
       }
     ]

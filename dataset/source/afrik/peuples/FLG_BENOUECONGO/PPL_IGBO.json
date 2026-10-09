@@ -146,5 +146,193 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ndi Igbo est celui que ce peuple se donne. On le connaît aussi sous les noms Ibo et Union Ibo. Leur histoire est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Ndi Igbo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ibo",
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "« Le peuple igbo » — ndi signifie « les gens de » en igbo.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethnologue: Languages of the World — Igbo (ibo)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/ibo/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Réutilisée depuis la fiche du peuple Igbo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Terme universellement préféré dans les contextes académiques, officiels et communautaires depuis l'indépendance du Nigeria.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ethnologue: Languages of the World — Igbo (ibo)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/ibo/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Réutilisée depuis la fiche du peuple Igbo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ibo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Autre graphie de « Igbo ».",
+        "periodLabel": "Documents administratifs coloniaux, XIXe-XXe siècle ; encore en usage par méconnaissance",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "XIXe-XXe siècle"
+            },
+            "statement": "Transcription simplifiée qui aplatit la prononciation tonale complexe du terme igbo ; imposée par l'administration coloniale britannique sans consultation des locuteurs natifs, elle a longtemps véhiculé une lecture externe et déformée de l'identité igbo.",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Administration coloniale britannique",
+                "role": "impose ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Ethnologue: Languages of the World — Igbo (ibo)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/ibo/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "La langue est identifiée par le code ISO 639-3 « ibo », qui reprend l'ancienne orthographe. Ce code technique se distingue d'Igbo, le nom employé par les personnes concernées."
+              },
+              {
+                "title": "Igbo — Omniglot",
+                "author": "Omniglot",
+                "year": 2026,
+                "url": "https://www.omniglot.com/writing/igbo.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Page consultée en ligne : « Igbo is also known as Ibo, Ebo or Unege »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Documents administratifs coloniaux, XIXe-XXe siècle ; encore en usage par méconnaissance"
+            },
+            "statement": "Cette orthographe apparaît surtout dans des documents historiques ou est encore utilisée par méconnaissance. Le code ISO 639-3 de la langue reste toutefois « ibo ». Ce code sert à identifier la langue dans les outils techniques ; le peuple se nomme Igbo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ethnologue: Languages of the World — Igbo (ibo)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/ibo/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "La langue est identifiée par le code ISO 639-3 « ibo », qui reprend l'ancienne orthographe. Ce code technique se distingue d'Igbo, le nom employé par les personnes concernées."
+              },
+              {
+                "title": "Igbo — Omniglot",
+                "author": "Omniglot",
+                "year": 2026,
+                "url": "https://www.omniglot.com/writing/igbo.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Page consultée en ligne : « Igbo is also known as Ibo, Ebo or Unege »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Union Ibo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "ibo",
+        "namedBy": null,
+        "shortLine": "Nom d'une langue écrite mêlant plusieurs parlers igbo, créée par des missionnaires pour traduire la Bible.",
+        "periodLabel": "Fin du XIXe siècle à la première moitié du XXe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Fin du XIXe siècle à la première moitié du XXe siècle"
+            },
+            "statement": "Dialecte écrit standardisé, composite de plusieurs dialectes igbo, créé par les missionnaires anglicans pour la traduction de la Bible.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Creating 'Union Ibo': Missionaries and the Igbo language",
+                "author": "D. van den Bersselaar (Africa, vol. 67, n° 2, Cambridge University Press)",
+                "year": 1997,
+                "url": "https://www.cambridge.org/core/journals/africa/article/abs/creating-union-ibo-missionaries-and-the-igbo-language/73FE8764A3E6453222212093A75CD600",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Résumé consulté en ligne (texte intégral sous péage) ; corrobore le processus missionnaire et sa contestation partielle par une partie de la population igbo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Fin XIXe siècle – première moitié du XXe siècle"
+            },
+            "statement": "Le choix du dialecte de base a été contesté par une partie de la population igbo ; l'effort missionnaire, mené sur près d'un demi-siècle avant la première traduction complète de la Bible, n'a jamais fait de l'Union Ibo la langue courante du groupe — la population s'est montrée davantage intéressée par l'éducation en anglais que par cette langue vernaculaire de mission.",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Missionnaires de la Church Missionary Society (CMS)",
+                "role": "impose ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Creating 'Union Ibo': Missionaries and the Igbo language",
+                "author": "D. van den Bersselaar (Africa, vol. 67, n° 2, Cambridge University Press)",
+                "year": 1997,
+                "url": "https://www.cambridge.org/core/journals/africa/article/abs/creating-union-ibo-missionaries-and-the-igbo-language/73FE8764A3E6453222212093A75CD600",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Résumé consulté en ligne (texte intégral sous péage) ; corrobore le processus missionnaire et sa contestation partielle par une partie de la population igbo."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

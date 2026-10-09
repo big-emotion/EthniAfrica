@@ -40,6 +40,24 @@ const nameHistorySourceSchema = z
   })
   .strict();
 
+// The answer card reads this line on its own, without the paragraph around
+// it, so it carries nothing a reader could not parse (REQ-191).
+// @req REQ-196
+export const shortLineSchema = z
+  .string()
+  .trim()
+  .min(1)
+  .max(120, { message: "a short line holds at most 120 characters" })
+  .refine(
+    (line) =>
+      !/\b(PPL|FLG|PAT)_[A-Z0-9_]+|\w\/[\w.-]+\.(json|tsx?|md)\b|\b[a-z]+\.[a-z]+[A-Z]\w*/.test(
+        line
+      ),
+    {
+      message: "a short line carries no identifier, path or field path",
+    }
+  );
+
 const periodSchema = z
   .object({
     from: yearSchema,
@@ -62,10 +80,25 @@ const actorSchema = z
   })
   .strict();
 
+// What a folded name record said about the name as a whole, kept as a
+// sourced account rather than a bare field so no statement escapes its
+// citation (doctrine §1.1). The tag is what lets the answer card and the
+// search sheet find the meaning, the imposition and today's usage again
+// (REQ-190, REQ-191) without guessing from prose.
+const ACCOUNT_ASPECTS = ["meaning", "imposition", "usage"] as const;
+
 const accountSchema = z
   .object({
     period: periodSchema,
     statement: z.string().trim().min(1),
+    aspect: z
+      .enum(ACCOUNT_ASPECTS, {
+        error: `aspect must be one of ${ACCOUNT_ASPECTS.join(", ")}`,
+      })
+      .optional(),
+    // A written trace of the name (REQ-189): the form exactly as the cited
+    // document spells it, which can differ from `nameText`.
+    formAsWritten: z.string().trim().min(1).optional(),
     hypothesisGroup: z.string().trim().min(1).optional(),
     birth: z.literal(true).optional(),
     before: z.literal(true).optional(),
@@ -77,7 +110,20 @@ const accountSchema = z
   .strict()
   .refine((account) => !(account.birth && account.before), {
     message: "an account is either the birth of the name or before it",
-  });
+  })
+  // A written trace is reread at its page (REQ-189); an oral account has no
+  // page and is never refused for it (REQ-195).
+  .refine(
+    (account) =>
+      account.formAsWritten === undefined ||
+      account.sources.every(
+        (source) => source.source_kind === "oral_tradition" || !!source.page
+      ),
+    {
+      message: "a written trace cites its written source at a page",
+      path: ["sources"],
+    }
+  );
 
 type NameHistoryAccount = z.infer<typeof accountSchema>;
 
@@ -87,13 +133,46 @@ function sortYear(account: NameHistoryAccount): number | null {
   return account.period.from ?? account.period.to;
 }
 
+const pronunciationSchema = z
+  .object({
+    respelling: z.string().trim().min(1),
+    // A recording is a person's voice: no stated consent, no recording.
+    audio: z
+      .object({
+        url: z.string().min(1),
+        consent: z.string().trim().min(1, {
+          message: "a recording states the speaker's consent",
+        }),
+      })
+      .strict()
+      .nullable(),
+    source: nameHistorySourceSchema,
+  })
+  .strict();
+
 const nameSchema = z
   .object({
     nameText: z.string().trim().min(1),
     nameStatus: z.enum(["current", "former"]),
     selfGiven: z.boolean(),
-    languageOfOrigin: z.string().min(1).nullable(),
+    // The rule the retired name records held (FR55-iso): a `lang` attribute
+    // is derived from it, so it must be a code, not a language's name.
+    languageOfOrigin: z
+      .string()
+      .regex(/^[a-z]{3}$/, {
+        message: "languageOfOrigin must be an ISO 639-3 code",
+      })
+      .nullable(),
     namedBy: z.string().trim().min(1).nullable(),
+    // What the answer card reads (REQ-191, moved here by REQ-196).
+    shortLine: shortLineSchema.optional(),
+    usedIn: z.array(z.string().min(1)).optional(),
+    pronunciation: pronunciationSchema.optional(),
+    // When the name is or was in use, as the reader reads it.
+    periodLabel: z.string().trim().min(1).optional(),
+    // Another spelling of a name rather than a name of its own (Masai for
+    // Maasai): the distinction the retired `historical_spelling` type made.
+    variantSpelling: z.literal(true).optional(),
     accounts: z.array(accountSchema),
   })
   .strict()

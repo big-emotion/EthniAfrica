@@ -123,5 +123,131 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Maasai est celui que ce peuple se donne. On le connaît aussi sous le nom Masai. Leur histoire est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Maasai",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mas",
+        "namedBy": null,
+        "shortLine": "Ceux qui parlent le maa, leur langue.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "« Ceux qui parlent maa » — de Maa, la langue, et du préfixe collectif il- (Il Maasai).",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethnologue: Languages of the World — Maasai (mas)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/mas/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Réutilisée depuis la fiche du peuple Maasai."
+              },
+              {
+                "title": "Omniglot — Maasai (ɔl Maa)",
+                "author": "Omniglot",
+                "year": 2024,
+                "url": "https://www.omniglot.com/writing/maasai.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Attestation de l'étymologie « one who speaks the Maa language »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Graphie officielle au Kenya et en Tanzanie ; les Maasai eux-mêmes la préfèrent comme plus fidèle à leur langue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ethnologue: Languages of the World — Maasai (mas)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/mas/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Réutilisée depuis la fiche du peuple Maasai."
+              },
+              {
+                "title": "Omniglot — Maasai (ɔl Maa)",
+                "author": "Omniglot",
+                "year": 2024,
+                "url": "https://www.omniglot.com/writing/maasai.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Attestation de l'étymologie « one who speaks the Maa language »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Masai",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Autre graphie de Maasai, sans le double a.",
+        "periodLabel": "Usage colonial britannique et allemand (XIXe-XXe siècle), encore répandu dans le tourisme et les médias",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage colonial britannique et allemand (XIXe-XXe siècle), encore répandu dans le tourisme et les médias"
+            },
+            "statement": "Simplification orthographique de « Maasai », sans la voyelle longue caractéristique du maa.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Omniglot — Maasai (ɔl Maa)",
+                "author": "Omniglot",
+                "year": 2024,
+                "url": "https://www.omniglot.com/writing/maasai.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "« Maasai is also known as Masai or Maa. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage colonial britannique et allemand (XIXe-XXe siècle), encore répandu dans le tourisme et les médias"
+            },
+            "statement": "Encore répandu dans les médias et le tourisme, mais supplanté par « Maasai » dans les usages officiels et académiques.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Omniglot — Maasai (ɔl Maa)",
+                "author": "Omniglot",
+                "year": 2024,
+                "url": "https://www.omniglot.com/writing/maasai.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "« Maasai is also known as Masai or Maa. »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

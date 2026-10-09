@@ -1,4 +1,10 @@
 import { createServerClient } from "@/lib/supabase/server";
+import { normalizeToKey } from "@/lib/normalize";
+import { parseNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
+import {
+  nameRecordsFromHistory,
+  type HistoryNameRecord,
+} from "@/lib/afrik/nameHistoryRecords";
 import { toSourceKindOrNull } from "@/types/sources";
 import {
   searchSourceStanding,
@@ -135,6 +141,95 @@ function toEvidenceSource(row: Record<string, unknown>): SearchEvidenceSource {
   };
 }
 
+/** The field path a hand-sourced name record's assertion was loaded under. */
+function nameFieldPath(nameType: string, nameText: string): string {
+  return `names.${nameType}.${normalizeToKey(nameText)}`;
+}
+
+interface ToldNames {
+  /** Each folded name, with its rank in the block. */
+  records: Array<{ rank: number; record: SearchNameRecord }>;
+  /** What the block covers, so a name_records row or an assertion for the same name is not shown twice. */
+  fieldPaths: Set<string>;
+}
+
+/**
+ * A people's names as its fiche's nameHistory tells them (REQ-196). A folded
+ * name has no database assertion, so its evidence is built from the block's
+ * own sources, in the shape the assertion of a name record had.
+ */
+function toldNames(
+  entityId: string,
+  rawHistory: unknown,
+  confidence: { score: number; lastHumanAuditAt: string | null } | undefined
+): ToldNames | undefined {
+  if (rawHistory == null) return undefined;
+  const parsed = parseNameHistory(rawHistory);
+  if (!parsed.success) return undefined;
+
+  const told: ToldNames = { records: [], fieldPaths: new Set() };
+  nameRecordsFromHistory(parsed.data).forEach(
+    (entry: HistoryNameRecord, rank) => {
+      const id = `${entityId}:nameHistory:${rank}`;
+      const fieldPath = nameFieldPath(entry.nameType, entry.nameText);
+      const sources: SearchEvidenceSource[] = entry.sources.map(
+        (source, index) => ({
+          id: `${id}:source:${index}`,
+          title: source.title,
+          ...(nullableText(source.author) ? { author: source.author } : {}),
+          ...(typeof source.year === "number" ? { year: source.year } : {}),
+          ...(nullableText(source.url) ? { url: source.url } : {}),
+          tier: searchSourceStanding(source.tier),
+          sourceKind: source.source_kind,
+        })
+      );
+      const evidence: SearchEvidence = {
+        assertion: {
+          id,
+          statement: entry.nameText,
+          fieldPath,
+          ...(confidence ? { confidenceScore: confidence.score } : {}),
+          sourceCount: sources.length,
+          lastHumanAuditAt: confidence?.lastHumanAuditAt ?? null,
+        },
+        sources,
+        standing: strongestSearchSourceStanding(sources),
+      };
+      told.fieldPaths.add(fieldPath);
+      told.records.push({
+        rank,
+        record: {
+          id,
+          entityType: "people",
+          entityId,
+          form: entry.nameText,
+          kind: entry.nameType,
+          ...(nullableText(entry.languageOfOrigin)
+            ? { languageOfOrigin: entry.languageOfOrigin }
+            : {}),
+          ...(nullableText(entry.meaning) ? { meaning: entry.meaning } : {}),
+          ...(nullableText(entry.periodLabel)
+            ? { periodLabel: entry.periodLabel }
+            : {}),
+          ...(nullableText(entry.shortLine)
+            ? { shortLine: entry.shortLine }
+            : {}),
+          ...(nullableText(entry.imposedBy)
+            ? { imposedBy: entry.imposedBy }
+            : {}),
+          ...(nullableText(entry.impositionPeriod)
+            ? { impositionPeriod: entry.impositionPeriod }
+            : {}),
+          problematic: Boolean(nullableText(entry.whyProblematic)),
+          usedToday: Boolean(nullableText(entry.contemporaryUsage)),
+          evidence: [evidence],
+        },
+      });
+    }
+  );
+  return told;
+}
+
 function claimStatusOf(value: unknown): NamingClaimStatus | undefined {
   return value === "contested" ? "contested" : undefined;
 }
@@ -196,16 +291,31 @@ export async function loadSearchNamingData(
     .in("entity_type", allEntityTypes)
     .in("entity_id", allIds);
 
-  const [nameResult, assertionResult, confidenceResult] = await Promise.all([
-    nameRecordsPromise,
-    assertionsPromise,
-    confidencePromise,
-  ]);
+  const peopleIds = unique(
+    uniqueSubjects.filter(({ type }) => type === "people").map(({ id }) => id)
+  );
+  const historiesPromise =
+    peopleIds.length > 0
+      ? client
+          .from("afrik_peoples")
+          .select("id, name_history")
+          .in("id", peopleIds)
+      : Promise.resolve({ data: [], error: null });
+
+  const [nameResult, assertionResult, confidenceResult, historyResult] =
+    await Promise.all([
+      nameRecordsPromise,
+      assertionsPromise,
+      confidencePromise,
+      historiesPromise,
+    ]);
   if (nameResult.error) throw queryFailure("records", nameResult.error);
   if (assertionResult.error)
     throw queryFailure("assertions", assertionResult.error);
   if (confidenceResult.error)
     throw queryFailure("confidence", confidenceResult.error);
+  if (historyResult.error)
+    throw queryFailure("name histories", historyResult.error);
 
   const assertionRows = asRows(assertionResult.data)
     .filter(
@@ -261,6 +371,21 @@ export async function loadSearchNamingData(
     })
   );
 
+  const toldBySubject = new Map<string, ToldNames>();
+  for (const row of asRows(historyResult.data)) {
+    const key = searchNamingKey("people", String(row.id));
+    const told = toldNames(
+      String(row.id),
+      row.name_history,
+      confidenceBySubject.get(key)
+    );
+    if (told) toldBySubject.set(key, told);
+  }
+  // The block is the source of truth: the assertion a name_records row was
+  // loaded with yields to the block's account of the same name.
+  const isTold = (key: string, fieldPath: unknown) =>
+    toldBySubject.get(key)?.fieldPaths.has(String(fieldPath)) ?? false;
+
   const evidenceByAssertion = new Map<string, SearchEvidence>();
   const assertionById = new Map(
     assertionRows.map((row) => [String(row.id), row])
@@ -269,6 +394,7 @@ export async function loadSearchNamingData(
   for (const row of assertionRows) {
     const statement = searchPresentationText(row.statement);
     const key = databaseKey(String(row.entity_type), String(row.entity_id));
+    if (isTold(key, row.field_path)) continue;
     const confidence = confidenceBySubject.get(key);
     const orderedIds = unique(stringArray(row.source_ids));
     const sources = orderedIds.flatMap((id) => {
@@ -307,10 +433,31 @@ export async function loadSearchNamingData(
     ]);
   }
 
-  const recordsBySubject = new Map<string, SearchNameRecord[]>();
+  const recordsBySubject = new Map<
+    string,
+    Array<{ rank: number; record: SearchNameRecord }>
+  >();
+  for (const [key, told] of toldBySubject) {
+    recordsBySubject.set(key, [...told.records]);
+    evidenceBySubject.set(
+      key,
+      [
+        ...(evidenceBySubject.get(key) ?? []),
+        ...told.records.flatMap(({ record }) => record.evidence),
+      ].sort(
+        (left, right) =>
+          compareText(left.assertion.fieldPath, right.assertion.fieldPath) ||
+          compareText(left.assertion.id, right.assertion.id)
+      )
+    );
+  }
   for (const row of asRows(nameResult.data)) {
     const key = databaseKey(String(row.entity_type), String(row.entity_id));
     if (!subjectKeys.has(key)) continue;
+    if (
+      isTold(key, nameFieldPath(String(row.name_type), String(row.name_text)))
+    )
+      continue;
     const evidence = evidenceByAssertion.get(String(row.assertion_id));
     const claimStatus = claimStatusOf(
       assertionById.get(String(row.assertion_id))?.confidence_level
@@ -342,7 +489,10 @@ export async function loadSearchNamingData(
       ...(claimStatus ? { claimStatus } : {}),
       evidence: evidence ? [evidence] : [],
     };
-    recordsBySubject.set(key, [...(recordsBySubject.get(key) ?? []), record]);
+    recordsBySubject.set(key, [
+      ...(recordsBySubject.get(key) ?? []),
+      { rank: Number(row.sort_rank ?? 0), record },
+    ]);
   }
 
   return new Map(
@@ -351,7 +501,14 @@ export async function loadSearchNamingData(
       return [
         key,
         {
-          records: recordsBySubject.get(key) ?? [],
+          // The order name_records is read in: rank, then name.
+          records: (recordsBySubject.get(key) ?? [])
+            .sort(
+              (left, right) =>
+                left.rank - right.rank ||
+                compareText(left.record.form, right.record.form)
+            )
+            .map(({ record }) => record),
           evidence: evidenceBySubject.get(key) ?? [],
         },
       ];

@@ -17,7 +17,6 @@ import {
   loadLanguages,
 } from "@/lib/afrik/loaders/languageProvenanceLoader";
 import { loadAllPeoples } from "@/lib/afrik/loaders/peopleLoader";
-import { loadNameRecords } from "@/lib/afrik/loaders/nameRecordJsonLoader";
 import {
   emptyAppellationLoadReport,
   loadPeopleAppellations,
@@ -58,7 +57,6 @@ vi.mock("@/lib/afrik/loaders/languageProvenanceLoader");
 vi.mock("@/lib/afrik/loaders/peopleLoader");
 vi.mock("@/lib/afrik/loaders/countryLoader");
 vi.mock("@/lib/afrik/loaders/dossierJsonLoader");
-vi.mock("@/lib/afrik/loaders/nameRecordJsonLoader");
 vi.mock("@/lib/afrik/loaders/peopleAppellationLoader");
 vi.mock("@/lib/afrik/loaders/patronymeJsonLoader");
 vi.mock("@/lib/afrik/loaders/personJsonLoader");
@@ -287,12 +285,6 @@ describe("migrateAfrikToDatabase", () => {
     vi.mocked(loadMigrations).mockResolvedValue({
       total: 0,
       inserted: 0,
-      errors: [],
-    });
-    vi.mocked(loadNameRecords).mockResolvedValue({
-      total: 0,
-      inserted: 0,
-      dropped: [],
       errors: [],
     });
     vi.mocked(loadAllPersonDossiers).mockReturnValue([]);

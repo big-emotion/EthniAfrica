@@ -14,8 +14,7 @@ const personMetaSchema = z
     entity: z.literal("personne"),
     directives: z.string().min(1),
     // Marks fixture-quality dataset examples so the loader excludes them
-    // from production loads (same contract as nameRecordParser). Not part
-    // of the standard model shape.
+    // from production loads. Not part of the standard model shape.
     illustrative: z.boolean().optional(),
   })
   .strict();

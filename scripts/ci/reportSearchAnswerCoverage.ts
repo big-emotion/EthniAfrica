@@ -88,10 +88,6 @@ export function measureSearchAnswerCoverage(
   productionsRoot: string
 ): CoverageRow[] {
   const peoples = readPeoples(datasetRoot);
-  const nameRecords = readFiches(
-    path.join(datasetRoot, "noms"),
-    /^PPL_.*\.json$/
-  );
   const countries = readFiches(
     path.join(datasetRoot, "pays"),
     /^[^_].*\.json$/
@@ -138,10 +134,10 @@ export function measureSearchAnswerCoverage(
 
   return [
     {
-      field: "names[].shortLine",
+      field: "nameHistory.names[].shortLine",
       class: "people",
-      filled: nameRecords.filter((record) => {
-        const names = at(record, "names");
+      filled: peoples.filter((people) => {
+        const names = at(people, "nameHistory", "names");
         return (
           Array.isArray(names) &&
           names.some((name) => filledText(at(name, "shortLine")))
@@ -196,7 +192,7 @@ export function formatCoverageReport(rows: CoverageRow[]): string {
     `${"class".padEnd(classWidth)}  ${"field".padEnd(fieldWidth)}  ${"filled".padStart(ratioWidth)}  ${"share".padStart(6)}`,
     ...lines,
     "",
-    "shortLine is read from names[].shortLine in noms/PPL_*.json; a people counts once if any of its names carries one.",
+    "shortLine is read from nameHistory.names[].shortLine in the people fiche; a people counts once if any of its names carries one.",
   ].join("\n");
 }
 
