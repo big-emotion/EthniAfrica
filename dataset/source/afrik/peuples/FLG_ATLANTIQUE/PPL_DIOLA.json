@@ -4,6 +4,270 @@
   "languageFamilyId": "FLG_ATLANTIQUE",
   "currentCountries": ["SEN", "GMB", "GNB"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Diola désigne un peuple de basse Casamance, de Gambie et du nord de la Guinée-Bissau, qui se nomme lui-même Ajamat. D'autres noms existent : Joola, Jola, et Floup pour l'un de ses groupes. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ajamat",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dyo",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent dans leur langue : Ajamat, au pluriel Ajamataw.",
+        "usedIn": ["dyo"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Ajamat est celui que ce peuple se donne dans sa langue, Ajamataw au pluriel, selon Wikipédia. Un autre article de Wikipédia note qu'aucun nom propre n'est employé par tous ceux qui parlent ces langues.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Jola people — Wikipedia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Jola_people",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Section consacrée au nom, consultée le 9 octobre 2026 : Ajamat au singulier, Ajamataw au pluriel, et Jola présenté comme le nom mandinka, « ceux qui rendent ». La section ne cite pas de source."
+              },
+              {
+                "title": "Jola languages — Wikipedia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Jola_languages",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Section Name, consultée le 9 octobre 2026 : le nom Jola est donné comme venu de l'extérieur, et peut-être du mandinka joolaa, « celui qui rend ». La section ajoute qu'aucun nom propre n'est employé par tous les locuteurs."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Diola",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme française du nom Joola, un nom venu de l'extérieur.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès le milieu du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "statement": "Le nom Diola, ou Joola, désigne des riziculteurs de basse Casamance et du Rio Cacheu. Il réunit des groupes dont les parlers ne se comprennent pas toujours entre eux : Floup, Bayot, Blis-Kaniara, Kassa et Fooni, selon C. Wondji. L'origine du nom est discutée ; nous présentons plus bas l'explication que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers, premiers contacts avec les Portugais, de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 334"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "C. Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 413"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Joola s'écrit de bien des façons, Diola, Dyola, Jola ou Djola, comme le note Yves Person à propos des Joola du Fonyi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 24 : États et peuples de Sénégambie et de haute Guinée",
+                "author": "Yves Person",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 691"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "statement": "Le nom Diola est, selon le voyageur Anne Raffenel, celui que des Africains donnent au peuple qu'il appelle lui-même Zolas.",
+            "sources": [
+              {
+                "title": "Nouveau voyage dans le pays des nègres, tome premier",
+                "author": "Anne Raffenel",
+                "year": 1856,
+                "url": "https://archive.org/details/nouveauvoyagedan00raff",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Imprimerie de N. Chaix, 1856. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un officier colonial français du milieu du XIXe siècle.",
+                "page": "p. 394"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "statement": "Le nom Diola apparaît par écrit chez le voyageur français Anne Raffenel, qui parle du « pays des Diolas » au bord de la Casamance. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "pays des Diolas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Nouveau voyage dans le pays des nègres, tome premier",
+                "author": "Anne Raffenel",
+                "year": 1856,
+                "url": "https://archive.org/details/nouveauvoyagedan00raff",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Imprimerie de N. Chaix, 1856. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un officier colonial français du milieu du XIXe siècle.",
+                "page": "p. 352"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "Le nom Joola sert aussi pour un peuple voisin : en 1854, Sigismund Koelle note que les gens du Kaabu appellent les Biafada Dsọ̄́la, et Yves Person écrit que les Beafada se disent eux-mêmes Joola. Les sources ne disent pas si ce nom est le même que celui des Diola.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers, premiers contacts avec les Portugais, de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 334"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Diola viendrait du mandinka joolaa, « celui qui rend », celui qui rend le bien comme le mal, selon Wikipédia, qui donne cette origine comme possible.",
+            "hypothesisGroup": "origine du nom Diola",
+            "sources": [
+              {
+                "title": "Jola languages — Wikipedia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Jola_languages",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Section Name, consultée le 9 octobre 2026 : le nom Jola est donné comme venu de l'extérieur, et peut-être du mandinka joolaa, « celui qui rend ». La section ajoute qu'aucun nom propre n'est employé par tous les locuteurs."
+              },
+              {
+                "title": "Jola people — Wikipedia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Jola_people",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Section consacrée au nom, consultée le 9 octobre 2026 : Ajamat au singulier, Ajamataw au pluriel, et Jola présenté comme le nom mandinka, « ceux qui rendent ». La section ne cite pas de source."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Floup",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de l'un des groupes diola ; les Portugais écrivaient Felupes.",
+        "periodLabel": "Écrit dès la fin du XVIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Floup, ou Felup, désigne l'un des groupes que réunit le nom Diola, selon C. Wondji.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "C. Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 413"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1592,
+              "to": 1596,
+              "label": "Manuscrits de 1592-1596"
+            },
+            "statement": "Le nom Floup apparaît, écrit « Felupes », chez le Cap-Verdien André Álvares de Almada, selon José da Silva Horta. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Felupes",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral. L'auteur cite les traités manuscrits d'André Álvares de Almada (1592-1596), d'André Donelha (1625) et de Francisco de Lemos Coelho (1669 et 1684) ; ces textes anciens eux-mêmes n'ont pas été lus.",
+                "page": "p. 658"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Diola (Joola / Jola)",

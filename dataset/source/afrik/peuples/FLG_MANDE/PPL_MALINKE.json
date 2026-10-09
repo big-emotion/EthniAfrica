@@ -15,6 +15,299 @@
     "GHA"
   ],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Malinké désigne un peuple d'Afrique de l'Ouest qui se nomme lui-même Maninka, ou Mandinka en Sénégambie. D'autres noms existent : Mandingue en français, Mandingo en anglais. Les sources les rattachent au Manden ou au Mali, le pays du haut Niger d'où est parti l'empire du Mali. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Maninka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "man",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent en Guinée et au Mali : les gens du Manden.",
+        "usedIn": ["man"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Maninka désigne les gens du pays appelé Mande ou Manden, sur le haut Niger, entre Kangaba et Siguiri. Djibril Tamsir Niane écrit Maninka, et met entre parenthèses la forme française « Malinkés ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
+                "page": "p. 141"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Maninka a un cousin plus large, Mandenka, que Djibril Tamsir Niane emploie pour tous les peuples rattachés par la langue aux Soninké et aux Maninka, de la Guinée au Liberia.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
+                "page": "p. 151, note 24"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mandinka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "man",
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom qu'ils se donnent, notée dès 1854.",
+        "usedIn": ["man"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "Le nom Mandinka est noté Mandénga par Sigismund Koelle, d'après ses informateurs de Freetown. Pour lui, la finale -nga, souvent prononcée -nka, forme des noms de peuples : les Mandénga sont les gens du Mánde. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Malinké",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Des auteurs français",
+        "shortLine": "La forme française du nom, écrite dès 1856.",
+        "usedIn": ["fra"],
+        "periodLabel": "Depuis le XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "statement": "Le nom Malinké est écrit « Malinkiés » par le voyageur français Anne Raffenel. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Malinkiés",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Nouveau voyage dans le pays des nègres, tome premier",
+                "author": "Anne Raffenel",
+                "year": 1856,
+                "url": "https://archive.org/details/nouveauvoyagedan00raff",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Imprimerie de N. Chaix, 1856. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un officier colonial français du milieu du XIXe siècle.",
+                "page": "p. 299"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Proposée en 1856"
+            },
+            "statement": "Le nom Malinké voudrait dire « homme du Mali » : le nom Mali, ou Meli, suivi de -kié, « de », selon Anne Raffenel.",
+            "hypothesisGroup": "origine du nom Malinké",
+            "sources": [
+              {
+                "title": "Nouveau voyage dans le pays des nègres, tome premier",
+                "author": "Anne Raffenel",
+                "year": 1856,
+                "url": "https://archive.org/details/nouveauvoyagedan00raff",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Imprimerie de N. Chaix, 1856. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un officier colonial français du milieu du XIXe siècle.",
+                "page": "p. 299"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mandingue",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Des auteurs européens, d'après le nom que se donnent les intéressés",
+        "shortLine": "Le nom en français ; on dit Mandingo en anglais et Mandinga en portugais.",
+        "usedIn": ["fra", "eng", "por"],
+        "periodLabel": "Depuis la fin du XVIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "statement": "Le nom Mandingue est, selon Anne Raffenel, la forme française tirée de Mandingos, le nom que les voyageurs anglais donnent aux Malinkés.",
+            "formAsWritten": "Mandingues",
+            "sources": [
+              {
+                "title": "Nouveau voyage dans le pays des nègres, tome premier",
+                "author": "Anne Raffenel",
+                "year": 1856,
+                "url": "https://archive.org/details/nouveauvoyagedan00raff",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Imprimerie de N. Chaix, 1856. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un officier colonial français du milieu du XIXe siècle.",
+                "page": "p. 299"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1799,
+              "label": "Voyage de 1795-1797 (récit publié en 1799)"
+            },
+            "statement": "Le nom Mandingue est écrit « Mandingoes » par le voyageur écossais Mungo Park.",
+            "formAsWritten": "Mandingoes",
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://www.gutenberg.org/ebooks/74976",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, W. Bulmer pour G. Nicol, 1799 ; voyage de 1795-1797. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg.",
+                "page": "p. 18"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1592,
+              "to": 1596,
+              "label": "Manuscrits de 1592-1596"
+            },
+            "statement": "Le nom Mandingue apparaît, écrit Mandingas, chez le Cap-Verdien André Álvares de Almada, qui parle du « Reino dos Mandingas », selon José da Silva Horta. Horta note que les auteurs portugais acceptaient le nom qu'une personne se donnait. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral. L'auteur cite les traités manuscrits d'André Álvares de Almada (1592-1596), d'André Donelha (1625) et de Francisco de Lemos Coelho (1669 et 1684) ; ces textes anciens eux-mêmes n'ont pas été lus.",
+                "page": "p. 653 et p. 663"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1625,
+              "to": 1625,
+              "label": "Rapportée en 1625"
+            },
+            "statement": "Le nom Mandingue viendrait de Mandimansa, le titre du roi du Mandé, selon ce que des Fulos, des Jalofos et des Mandingas disent à André Donelha, d'après José da Silva Horta.",
+            "hypothesisGroup": "origine du nom Mandingue",
+            "sources": [
+              {
+                "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral. Page 665 : André Donelha écrit en 1625 que les Mandingas et les Manes « tomaram os tais nomes de Mandimansa », d'après ce que lui disent des Fulos, des Jalofos et des Mandingas ; l'auteur y voit des noms venus des Africains eux-mêmes. Le manuscrit de Donelha n'a pas été lu.",
+                "page": "p. 665"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1799,
+              "label": "Proposée en 1799"
+            },
+            "statement": "Le nom Mandingue viendrait de Manding, l'État de l'intérieur d'où ce peuple aurait migré, selon Mungo Park.",
+            "hypothesisGroup": "origine du nom Mandingue",
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://www.gutenberg.org/ebooks/74976",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, W. Bulmer pour G. Nicol, 1799 ; voyage de 1795-1797. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg.",
+                "page": "p. 18"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "Proposée en 1854"
+            },
+            "statement": "Le nom Mandingue reposerait sur Mánde, le nom du pays, suivi de la finale -nga qui désigne les gens d'un lieu, selon Sigismund Koelle, puis H. Steinthal.",
+            "hypothesisGroup": "origine du nom Mandingue",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              },
+              {
+                "title": "Die Mande-Neger-Sprachen, psychologisch und phonetisch betrachtet",
+                "author": "H. Steinthal",
+                "year": 1867,
+                "url": "https://archive.org/details/diemandenegersp00steigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. XI",
+                "notes": "Berlin, Ferd. Dümmler, 1867. Lu dans la numérisation d'Internet Archive, préface."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Malinké",
