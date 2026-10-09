@@ -39,6 +39,7 @@ const TABLES = {
   families: "afrik_language_families",
   languages: "afrik_languages",
   patronymes: "afrik_patronymes",
+  places: "afrik_places",
 } as const;
 
 export interface SitemapEntityIds {
@@ -47,6 +48,7 @@ export interface SitemapEntityIds {
   families: string[];
   languages: string[];
   patronymes: string[];
+  places: string[];
 }
 
 const EMPTY: SitemapEntityIds = {
@@ -55,6 +57,7 @@ const EMPTY: SitemapEntityIds = {
   families: [],
   languages: [],
   patronymes: [],
+  places: [],
 };
 
 type SupabaseClient = ReturnType<typeof createServerClient>;
@@ -190,7 +193,7 @@ export async function getSitemapEntityIds(): Promise<SitemapEntityIds> {
     return EMPTY;
   }
 
-  const [peoples, countries, families, languages, patronymes] =
+  const [peoples, countries, families, languages, patronymes, places] =
     await Promise.all([
       idsInTable(supabase, TABLES.peoples),
       idsInTable(supabase, TABLES.countries),
@@ -200,7 +203,8 @@ export async function getSitemapEntityIds(): Promise<SitemapEntityIds> {
         columns: "id, sources:content->sources",
         keeps: nameCitesAReadableSource,
       }),
+      idsInTable(supabase, TABLES.places),
     ]);
 
-  return { peoples, countries, families, languages, patronymes };
+  return { peoples, countries, families, languages, patronymes, places };
 }

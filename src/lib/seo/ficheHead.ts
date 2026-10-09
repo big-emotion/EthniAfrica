@@ -8,6 +8,7 @@ import {
   loadLanguageFiche,
   loadPatronymeFiche,
   loadPeopleFiche,
+  loadPlaceFiche,
 } from "@/lib/fiche/ficheExistence";
 import { ficheCanonical, type FicheKind } from "@/lib/seo/ficheCanonical";
 import { buildFicheHead, type FicheSubject } from "@/lib/seo/ficheMetadata";
@@ -18,10 +19,10 @@ import type { Language } from "@/types/shared";
  * The whole `<head>` of a fiche: the crawler half `ficheCanonical` already
  * answered, plus the half that names the fiche.
  *
- * This module is the only one that knows the five aggregate shapes. It reduces
+ * This module is the only one that knows the six aggregate shapes. It reduces
  * each to a `FicheSubject` and hands that to the pure builder, so the templates
  * stay testable without a database and the mapping stays in one place rather
- * than duplicated across five route files.
+ * than duplicated across six route files.
  *
  * **A failure here must never propagate.** `ficheExistence` documents why at
  * length: the fiche routes declare a `loading.tsx`, so the shell and its `200`
@@ -109,6 +110,11 @@ export async function ficheSubjectFor(
           (country) => country.nameFr
         ),
       };
+    }
+    case "place": {
+      const place = await loadPlaceFiche(id);
+      if (!place) return null;
+      return { name: place.nameMain, summary: place.summary };
     }
   }
 }

@@ -8,6 +8,7 @@ import {
   getPatronymeRoute,
   getPeopleLinksRoute,
   getPeopleRoute,
+  getPlaceRoute,
 } from "@/lib/routing";
 import { ficheCanonical, type FicheKind } from "@/lib/seo/ficheCanonical";
 
@@ -25,6 +26,7 @@ const ROUTES: Record<FicheKind, [id: string, route: typeof getPeopleRoute]> = {
   language: ["yor", getLanguageRoute],
   name: ["PAT_KEITA", getPatronymeRoute],
   peopleLinks: ["PPL_YORUBA", getPeopleLinksRoute],
+  place: ["LOC_GAGNOA", getPlaceRoute],
 };
 
 afterEach(() => {

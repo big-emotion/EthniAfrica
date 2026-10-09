@@ -70,6 +70,16 @@ vi.mock("@/api/v2/services/patronymes", async (importOriginal) => ({
   }),
 }));
 
+vi.mock("@/api/v2/services/places", async (importOriginal) => ({
+  ...(await importOriginal<object>()),
+  getPlaceById: async (id: string) => ({
+    id,
+    nameMain: id,
+    summary: "",
+    country: { id: "CIV", name: null },
+  }),
+}));
+
 vi.mock("@/api/v2/services/sources", async (importOriginal) => ({
   ...(await importOriginal<object>()),
   getSourceById: async () => null,
@@ -153,6 +163,10 @@ const FIXTURES: Record<string, RouteFixture> = {
   "atlas/langues": { expectation: { surface: "languages" } },
   "atlas/langues/[slug]": {
     params: { slug: "yor" },
+    expectation: { surface: "fiche" },
+  },
+  "atlas/lieux/[slug]": {
+    params: { slug: "LOC_GAGNOA" },
     expectation: { surface: "fiche" },
   },
   "atlas/noms": { expectation: { surface: "patronymes" } },
