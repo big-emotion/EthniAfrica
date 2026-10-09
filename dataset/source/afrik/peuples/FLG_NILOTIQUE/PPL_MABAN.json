@@ -94,7 +94,8 @@
       {
         "title": "SIL Ethnologue — Mabaan language (mfz)",
         "url": "https://www.ethnologue.com/language/mfz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Maban people",
@@ -109,12 +110,14 @@
       {
         "title": "SCIRP — The Luo People of South Sudan: Theories of Origin, Separation and Migration",
         "url": "https://www.scirp.org/pdf/oalib_1113676.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Seligman, Charles G. et Brenda Z. Pagan Tribes of the Nilotic Sudan. London: Routledge, 1932",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Danish Demining Group — South Sudan Assessment, 2011",

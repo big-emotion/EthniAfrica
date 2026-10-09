@@ -72,7 +72,8 @@
       {
         "title": "Kachama-Ganjule Language (KCX) – Ethnologue, SIL International, 2025",
         "url": "https://www.ethnologue.com/language/kcx/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kachama, Ganjule in Ethiopia – Joshua Project, 2025",

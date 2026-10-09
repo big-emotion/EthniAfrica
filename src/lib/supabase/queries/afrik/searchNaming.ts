@@ -12,8 +12,10 @@ import {
 } from "@/lib/search/evidence";
 import {
   searchPresentationText,
+  toldName,
   type NamingClaimStatus,
   type SearchNameRecord,
+  type ToldName,
 } from "@/lib/search/naming";
 
 export type SearchNamingSubjectType =
@@ -155,12 +157,6 @@ interface ToldNames {
   fieldPaths: Set<string>;
 }
 
-/** A name as the search sheet shows it, before evidence is attached. */
-type ToldName = Omit<
-  SearchNameRecord,
-  "id" | "entityType" | "entityId" | "evidence"
->;
-
 interface ToldSource {
   title: string;
   author?: string | null;
@@ -237,7 +233,7 @@ function toldNames(
       tell(
         `${entityId}:nameHistory:${rank}`,
         rank,
-        shownName(entry),
+        toldName(entry),
         entry.sources
       );
     });
@@ -251,45 +247,13 @@ function toldNames(
       tell(
         `${entityId}:name:${position}`,
         entry.sortRank,
-        shownName(entry),
+        toldName(entry),
         entry.sources ?? []
       );
     });
   }
 
   return told;
-}
-
-function shownName(entry: {
-  nameText: string;
-  nameType: string;
-  languageOfOrigin: string | null;
-  meaning: string | null;
-  periodLabel: string | null;
-  shortLine?: string;
-  imposedBy: string | null;
-  impositionPeriod: string | null;
-  whyProblematic: string | null;
-  contemporaryUsage: string | null;
-}): ToldName {
-  return {
-    form: entry.nameText,
-    kind: entry.nameType as SearchNameRecord["kind"],
-    ...(nullableText(entry.languageOfOrigin)
-      ? { languageOfOrigin: entry.languageOfOrigin }
-      : {}),
-    ...(nullableText(entry.meaning) ? { meaning: entry.meaning } : {}),
-    ...(nullableText(entry.periodLabel)
-      ? { periodLabel: entry.periodLabel }
-      : {}),
-    ...(nullableText(entry.shortLine) ? { shortLine: entry.shortLine } : {}),
-    ...(nullableText(entry.imposedBy) ? { imposedBy: entry.imposedBy } : {}),
-    ...(nullableText(entry.impositionPeriod)
-      ? { impositionPeriod: entry.impositionPeriod }
-      : {}),
-    problematic: Boolean(nullableText(entry.whyProblematic)),
-    usedToday: Boolean(nullableText(entry.contemporaryUsage)),
-  };
 }
 
 /**

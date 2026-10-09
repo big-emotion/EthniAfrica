@@ -90,7 +90,8 @@
       {
         "title": "Glottolog — Mwera (Chimwera) (mwer1248)",
         "url": "https://glottolog.org/resource/languoid/id/mwer1248",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

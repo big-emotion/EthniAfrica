@@ -100,7 +100,8 @@
       {
         "title": "Glottolog — Tirma-Chai (suri1267)",
         "url": "https://glottolog.org/resource/languoid/id/suri1267",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

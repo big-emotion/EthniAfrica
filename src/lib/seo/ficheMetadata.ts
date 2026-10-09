@@ -137,6 +137,8 @@ function titleDescriptor(
       return copy.title.language(name, family);
     case "name":
       return copy.title.name(name);
+    case "place":
+      return copy.title.place(name);
   }
 }
 

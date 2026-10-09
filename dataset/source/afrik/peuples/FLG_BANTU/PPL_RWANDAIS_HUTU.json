@@ -127,12 +127,14 @@
       {
         "title": "CIA World Factbook — Rwanda",
         "url": "https://www.cia.gov/the-world-factbook/countries/rwanda/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "NISR (Institut National de la Statistique du Rwanda) — Recensement 2022",
         "url": "https://www.statistics.gov.rw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Jonathan Beloff, The Conversation — 30 years after genocide: Rwanda's older generations",
@@ -142,17 +144,20 @@
       {
         "title": "USF Digital Commons — I am Rwandan: Unity and Reconciliation in Post-Genocide Rwanda",
         "url": "https://digitalcommons.usf.edu/cgi/viewcontent.cgi?article=1480&context=gsp",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Berkeley Law — Teaching of History of Rwanda resource book",
         "url": "https://www.law.berkeley.edu/files/HRC/Rwanda_resource_book_for_teachers_version_10._rwandan_history_book.pdf",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "United Nations — 1994 Genocide against the Tutsi in Rwanda",
         "url": "https://www.un.org/en/preventgenocide/rwanda/historical-background.shtml",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "US Holocaust Memorial Museum — Rwanda",
@@ -172,7 +177,8 @@
       {
         "title": "SIL Ethnologue — Kinyarwanda (kin)",
         "url": "https://www.ethnologue.com/language/kin",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

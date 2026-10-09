@@ -8,7 +8,7 @@
       "mainName": "Ebrié",
       "selfAppellation": "Tchaman",
       "exonyms": ["Ébriés", "Kyaman", "Cama"],
-      "originOfExonyms": "Le nom Ebrié, signifiant les guerriers méchants, fut donné par leurs voisins Abourés de Moossou à la suite d'une guerre perdue par ces derniers. Le nom Tchaman (peuple élu, peuple choisi) est l'auto-désignation. Kyaman est une variante usitée en littérature scientifique.",
+      "originOfExonyms": "Le nom Ebrié voudrait dire les guerriers méchants ; il aurait été donné par leurs voisins Abourés de Moossou à la suite d'une guerre perdue par ces derniers. Le nom Tchaman (peuple élu, peuple choisi) est l'auto-désignation. Kyaman est une variante usitée en littérature scientifique.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Ebrié reste dominant dans les usages administratifs et médiatiques ivoiriens. Tchaman est préféré par les membres du peuple eux-mêmes et de plus en plus utilisé dans la littérature académique récente.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -90,7 +90,8 @@
       {
         "title": "Les Bidjan, un peuple Kyaman peu connu – Revue Akofena, 2023",
         "url": "https://www.revue-akofena.com/wp-content/uploads/2023/09/03-T09v03-62-Fabrice-ALIMAN_029-040.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

@@ -102,12 +102,14 @@
       {
         "title": "Gaved T.J.D. - A grammar of Mankanya: An Atlantic language of Guinea-Bissau, Senegal and the Gambia. Leiden University, 2020",
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2969896/view",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog - Mankanya mank1251",
         "url": "https://glottolog.org/resource/languoid/id/mank1251",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Mankanya in Guinea-Bissau and all countries",

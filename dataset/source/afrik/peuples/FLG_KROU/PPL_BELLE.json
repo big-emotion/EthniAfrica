@@ -81,7 +81,8 @@
       {
         "title": "Ethnologue – Kuwaa Language (BLH)",
         "url": "https://www.ethnologue.com/language/blh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project – Kuwaa, Belle in Liberia",
@@ -101,7 +102,8 @@
       {
         "title": "Modern Ghana – Historicity Of Liberia Before The Arrival Of The Settler",
         "url": "https://www.modernghana.com/news/966909/historicity-of-liberia-before-the-arrival-of-the.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       }
     ]
   }

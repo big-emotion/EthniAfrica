@@ -78,7 +78,8 @@
       {
         "title": "Zigula Language (ZIW) – Ethnologue / SIL International, 2025",
         "url": "https://www.ethnologue.com/language/ziw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Grottanelli, V.L. – Peoples of Africa, 1963",

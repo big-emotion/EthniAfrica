@@ -322,6 +322,23 @@ describe("checkAiSourceVerifications", () => {
     });
   });
 
+  // A verification note helps the person who decides; it decides nothing
+  // itself, so a proposal may carry one — but never an empty one.
+  // @req REQ-161
+  it("holds a proposal carrying a review note, and fails a blank one", () => {
+    writeLedger([
+      verification({ reviewNote: "Page ouverte : la citation y figure." }),
+    ]);
+    expect(checkAiSourceVerifications(datasetRoot, ledgerPath).errors).toEqual(
+      []
+    );
+
+    writeLedger([verification({ reviewNote: "  " })]);
+    expect(checkAiSourceVerifications(datasetRoot, ledgerPath).errors).toEqual([
+      "ASV-2026-10-08-0001: reviewNote is empty — drop it or write the note",
+    ]);
+  });
+
   // @req REQ-161
   it("fails an accepted verification the corpus does not carry yet, naming the command that applies it", () => {
     writeLedger([verification(ACCEPTED)]);

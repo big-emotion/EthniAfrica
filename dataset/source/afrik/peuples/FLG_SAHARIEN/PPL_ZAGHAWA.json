@@ -105,7 +105,8 @@
       {
         "title": "SIL Ethnologue - Zaghawa (zag)",
         "url": "https://www.ethnologue.com/language/zag/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Zaghawa people groups",

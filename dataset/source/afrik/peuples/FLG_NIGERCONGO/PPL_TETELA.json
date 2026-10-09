@@ -8,7 +8,7 @@
       "mainName": "Tetela",
       "selfAppellation": "Batetela (pluriel) ; Motetela (singulier) ; AnKutshu-Membele (ancestral)",
       "exonyms": ["Batetela", "Otetela", "Kitetela", "Sungu", "Watetera"],
-      "originOfExonyms": "Le terme Batetela est d'origine coloniale, apparu entre 1885 et 1887 dans les journaux geographiques europeens. Il derive de Watetera, terme arabe designant les populations de la region de Maniema a l'epoque du commerce esclavagiste. Le nom Motetela viendrait d'une divinite locale signifiant celui qui ne rit pas ou celui dont on ne peut se moquer.",
+      "originOfExonyms": "Le terme Batetela est d'origine coloniale, apparu entre 1885 et 1887 dans les journaux geographiques europeens. Il deriverait de Watetera, terme arabe designant les populations de la region de Maniema a l'epoque du commerce esclavagiste. Le nom Motetela viendrait d'une divinite locale signifiant celui qui ne rit pas ou celui dont on ne peut se moquer.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Batetela est aujourd'hui pleinement adopte comme identite ethnique par les populations du Sankuru et du Maniema en RDC. Tetela designe a la fois le peuple et sa langue dans les usages administratifs congolais.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -73,7 +73,8 @@
       {
         "title": "Omniglot – Tetela language and alphabet, 2025",
         "url": "https://www.omniglot.com/writing/tetela.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes – Tetela people, 2024",
@@ -83,7 +84,8 @@
       {
         "title": "South African History Online – Patrice Emery Lumumba, 2014",
         "url": "https://sahistory.org.za/people/patrice-emery-lumumba",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Ubuntu National Institute – Culture: Tetela/Batetela, Bantu People of DRC, 2020",
@@ -93,12 +95,14 @@
       {
         "title": "Tangaza University – A Collection of 100 Tetela Proverbs",
         "url": "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/ebooks_tetela.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog 5.3 — Tetela (tete1250)",
         "url": "https://glottolog.org/resource/languoid/id/tete1250",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Glottolog direct languoid record establishing the Tetela name, ISO 639-3 code tll, glottocode tete1250, and Democratic Republic of the Congo country association."
       }
     ]

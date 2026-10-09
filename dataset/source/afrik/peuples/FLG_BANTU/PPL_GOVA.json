@@ -124,7 +124,8 @@
       {
         "title": "Mbukushu language and alphabet – Omniglot, 2025",
         "url": "https://www.omniglot.com/writing/mbukushu.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Zambia people groups – Joshua Project",
@@ -139,7 +140,8 @@
       {
         "title": "Glottolog — Mbukushu (mbuk1240)",
         "url": "https://glottolog.org/resource/languoid/id/mbuk1240",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

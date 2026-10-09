@@ -94,7 +94,8 @@
       {
         "title": "Country Studies US – Angola: Lunda-Chokwe",
         "url": "https://countrystudies.us/angola/62.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Britannica – Lunda empire",

@@ -97,7 +97,8 @@
       {
         "title": "SIL Ethnologue — Sango (sag)",
         "url": "https://www.ethnologue.com/language/sag",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Sango people",
@@ -107,7 +108,8 @@
       {
         "title": "Vergiat, Antonin-Marius. Les rites secrets des primitifs de l'Oubangui. Payot, 1936 ; reimpr. L'Harmattan, Paris, 1981. ISBN 2-85802-205-4",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Samarin, William J. The Black Man's Burden: African Colonial Labor on the Congo and Ubangi Rivers, 1880-1900. Westview Press, 1989",
@@ -117,7 +119,8 @@
       {
         "title": "CIA World Factbook — Central African Republic",
         "url": "https://www.cia.gov/the-world-factbook/countries/central-african-republic/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "PeopleGroups.org — Sango of Central African Republic",

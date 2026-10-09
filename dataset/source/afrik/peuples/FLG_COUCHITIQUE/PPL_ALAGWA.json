@@ -81,7 +81,8 @@
       {
         "title": "Mous M., Alagwa : a South Cushitic language of Tanzania, 2016, Rüdiger Köppe Verlag",
         "url": "https://www.koeppe.de/titel_alagwa-a-south-cushitic-language-of-tanzania",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Gibson H. & Mous M., Exploring contact in Rangi- and Alagwa-speaking communities, 2024, LHEAF",
@@ -91,7 +92,8 @@
       {
         "title": "Ethnologue – Alagwa [wbj]",
         "url": "https://www.ethnologue.com/language/wbj/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "TanzaniaScripture.com – Alagwa History, Culture & Religion",

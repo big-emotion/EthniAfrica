@@ -8,7 +8,7 @@
       "mainName": "Zoulou",
       "selfAppellation": "amaZulu",
       "exonyms": ["Zulu", "Zoulou", "Amazulu"],
-      "originOfExonyms": "AmaZulu est l'autonym en isiZulu (ama- etant le prefixe de classe pour les peuples). Le nom Zulu derive de iZulu, qui signifie le ciel ou le temps (meteo) en langues Nguni. La legende attribue ce nom a Zulu kaMalandela, ancetre fondateur du clan vers 1574. Zoulou est la transcription francaise courante. Amazulu est parfois use en anglais comme variante.",
+      "originOfExonyms": "AmaZulu est l'autonym en isiZulu (ama- etant le prefixe de classe pour les peuples). Le nom Zulu dériverait de iZulu, qui veut dire le ciel ou le temps (meteo) en langues Nguni. La legende attribue ce nom a Zulu kaMalandela, ancetre fondateur du clan vers 1574. Zoulou est la transcription francaise courante. Amazulu est parfois use en anglais comme variante.",
       "whyProblematic": null,
       "contemporaryUsage": "AmaZulu est l'autonym contemporain. Zulu est l'usage courant en anglais international. Zoulou est la forme officielle en francais. IsiZulu designe specifiquement la langue. La nation Zoulou (Zulu Nation) est un concept politique et culturel toujours actif.",
       "peopleGroupId": "PGRP_ZULU",
@@ -114,22 +114,26 @@
       {
         "title": "South African History Online — Zulu",
         "url": "https://sahistory.org.za/article/zulu",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Statistics South Africa — SA Population Trends 2025",
         "url": "https://www.statssa.gov.za/?p=18613",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "SIL Ethnologue — isiZulu (zul)",
         "url": "https://www.ethnologue.com/language/zul/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "University of Vienna — IsiZulu",
         "url": "https://afrika.univie.ac.at/en/studies/languages/isizulu/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

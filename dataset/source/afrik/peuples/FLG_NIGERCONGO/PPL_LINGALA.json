@@ -112,30 +112,35 @@
       {
         "title": "APiCS Online — Survey chapter: Lingala (Koen Bostoen et al.)",
         "url": "https://apics-online.info/surveys/60",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Meeuwis, Michael, « The linguistic features of Bangala before Lingala: The pidginization of Bobangi in the 1880s and 1890s », Afrikanistik-Aegyptologie Online, 2019 (publié en 2020)",
         "url": "https://backoffice.biblio.ugent.be/download/8644523/8645617",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Décrit la fondation de Bangala-Station en 1884, le passage du nom Bangala du peuple supposé au poste puis au parler issu du bobangi, et l'apparition écrite du nom Lingala en 1901."
       },
       {
         "title": "Mimpongo, Mpoke, « L'origine et la signification du glossonyme lingala », lingbuzz, 2024",
         "url": "https://ling.auf.net/lingbuzz/008154",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Propose que Lingála et Mangála viennent d'une expression bobangi signifiant « le langage des grands marchés », et discute les lectures de Coquilhat, de Mumbanza et de Tshimpaka."
       },
       {
         "title": "Mbulamoko Nzenge Movoambe, « État des recherches sur le lingala comme groupe linguistique autonome », Annales Aequatoria, 12, 1991, p. 377-406",
         "url": "https://www.aequatoria.be/04common/020publications_pdf/Annales%20Aequatoria%201991.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Fait dériver lingala de Bangala, nom employé pour la première fois par Stanley en 1877, et situe l'entrée du nom lingala dans l'usage autour de 1895."
       },
       {
         "title": "Castillo, Joshua, « Navigating Lingala: Linguistic Change, Political Power, and Everyday Authoritarianism in Congo-Zaire, 1965-97 », The Journal of African History, 65, 2024, p. 327-343",
         "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/navigating-lingala-linguistic-change-political-power-and-everyday-authoritarianism-in-congozaire-196597/118FE97D3CC34974331138A906D07B2A",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Situe l'expansion du lingala après la mutinerie de 1893-1894, quand la Force publique adopte le lingala comme langue de commandement, puis décrit son usage sous Mobutu."
       },
       {
@@ -151,7 +156,8 @@
       {
         "title": "SIL Ethnologue — Lingala (lin)",
         "url": "https://www.ethnologue.com/language/lin/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Translators Without Borders — The four National Languages of DRC",

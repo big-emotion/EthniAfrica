@@ -101,7 +101,8 @@
       {
         "title": "UNESCO-MAB — Kafa Biosphere Reserve",
         "url": "https://www.unesco.org/en/mab/kafa",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Kafa Biosphere Reserve official website",
@@ -116,7 +117,8 @@
       {
         "title": "Omniglot — Kafa language and alphabet",
         "url": "https://www.omniglot.com/writing/kafa.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "PeopleGroups.org — Kafa of Ethiopia",
@@ -131,7 +133,8 @@
       {
         "title": "Kafa – Glottolog 5.3",
         "url": "https://glottolog.org/resource/languoid/id/kafa1242",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kafa in Ethiopia – Joshua Project, 2025",

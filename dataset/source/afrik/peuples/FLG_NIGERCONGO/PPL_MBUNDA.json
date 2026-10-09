@@ -131,7 +131,8 @@
       {
         "title": "Glottolog — Mbunda (mbun1249)",
         "url": "https://glottolog.org/resource/languoid/id/mbun1249",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

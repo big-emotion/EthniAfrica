@@ -8,7 +8,7 @@
       "mainName": "Antakarana",
       "selfAppellation": "Antakarana",
       "exonyms": ["Antankarana"],
-      "originOfExonyms": "Le nom Antakarana signifie ceux des rochers en malgache, en reference aux formations calcaires de tsingy qui caracterisent leur territoire traditionnel dans la reserve d'Ankarana. Ce nom a ete adopte au XVIIe siecle lorsque le roi Andriantsirotso a mene son peuple se refugier dans ces formations rocheuses pour echapper aux armees sakalava.",
+      "originOfExonyms": "Le nom Antakarana signifierait « ceux des rochers » en malgache, en référence aux formations calcaires de tsingy qui caractérisent leur territoire traditionnel dans la réserve d'Ankarana. Ce nom a ete adopte au XVIIe siecle lorsque le roi Andriantsirotso a mene son peuple se refugier dans ces formations rocheuses pour echapper aux armees sakalava.",
       "whyProblematic": null,
       "contemporaryUsage": "Antakarana est la forme la plus repandue dans la litterature anthropologique et les sources malgaches modernes. Antankarana, avec insertion de n, est aussi frequente dans les sources anglophones et francophones.",
       "linguisticFamily": "FLG_AUSTRONESIENNE",
@@ -95,12 +95,14 @@
       {
         "title": "Glottolog – Antankarana Malagasy (xmv)",
         "url": "https://glottolog.org/resource/languoid/id/anta1255",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue – Malagasy subgroup",
         "url": "https://www.ethnologue.com/subgroup/1795/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes – Antankarana",
@@ -110,7 +112,8 @@
       {
         "title": "CIA World Factbook – Madagascar",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

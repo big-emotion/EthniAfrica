@@ -101,17 +101,20 @@
       {
         "title": "The Mao and Komo Languages in the Begi-Tongo area in Western Ethiopia – Journals of Dartmouth College, 2013",
         "url": "https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/article/447",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Omotic Features in the Mao Group and Internal Coherence – Ahland, CSULB",
         "url": "https://www.csulb.edu/sites/default/files/2025/documents/OmoticFeaturesMaoGroup.Final_Ahland.pdf",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Mao – Summary – eHRAF World Cultures",
         "url": "https://ehrafworldcultures.yale.edu/cultures/mp19/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

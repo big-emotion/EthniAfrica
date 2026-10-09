@@ -100,12 +100,14 @@
       {
         "title": "Glottolog — Kresh-Woro (krs)",
         "url": "https://glottolog.org/resource/languoid/id/gbay1288",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Kresh subgroup",
         "url": "https://www.ethnologue.com/subgroup/2721/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Kresh in Sudan",

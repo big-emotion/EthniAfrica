@@ -23,7 +23,7 @@ import { PatronymeSourcesSection } from "@/components/patronymes/PatronymeSource
  * section that stood here read `content.filiationClaims`, a key no model and
  * no dossier has ever had.
  *
- * Sources stays last: it is the footer the confidence chip's `#sources`
+ * Sources stays last: it is the footer the source review chip's `#sources`
  * anchor points at, and that anchor was dead on every name fiche.
  */
 // @req REQ-133

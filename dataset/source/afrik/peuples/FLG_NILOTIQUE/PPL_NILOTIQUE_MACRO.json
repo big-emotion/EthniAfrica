@@ -14,7 +14,7 @@
         "Nilotiques",
         "Gens du Nil"
       ],
-      "originOfExonyms": "Le terme nilotique fut employe par les anthropologues et linguistes europeens du 19e siecle pour designer les populations du bassin du Haut-Nil parlant des langues apparentees. Il derive du latin Nilus (Nil). Le regroupement sous cette appellation repose desormais sur des criteres linguistiques (famille de langues nilotiques) plutot que raciaux ou geographiques.",
+      "originOfExonyms": "Le terme nilotique fut employe par les anthropologues et linguistes europeens du 19e siecle pour designer les populations du bassin du Haut-Nil parlant des langues apparentees. Il viendrait du latin Nilus (Nil). Le regroupement sous cette appellation repose desormais sur des criteres linguistiques (famille de langues nilotiques) plutot que raciaux ou geographiques.",
       "whyProblematic": "Le terme nilotique est anthropologiquement contestable car il regroupe des peuples tres divers sur les plans culturel, historique et meme linguistique. Les classifications raciales historiques (grande taille, peau tres sombre, membres longs) ont ete abandonnees au profit de la linguistique. Certains groupes classes comme nilotiques (ex: Kalenjin) sont linguistiquement nilotiques mais culturellement tres differents des Dinka ou Nuer.",
       "contemporaryUsage": "Le terme peuples nilotiques est utilise dans la litterature academique, les classifications ethnolinguistiques (SIL Ethnologue, Glottolog) et les etudes demographiques pour designer l'ensemble des locuteurs de langues nilotiques. Il est courant dans les contextes politique et journalistique en Afrique de l'Est et au Soudan du Sud. Il n'existe pas d'auto-appellation collective : chaque groupe se designe par son propre nom, notamment Naath (Nuer), Jieng (Dinka), Cøllo (Shilluk), Lokop (Samburu) et Ilmaasai (Maasai).",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -139,17 +139,20 @@
       {
         "title": "SIL Ethnologue — Nilotic language family",
         "url": "https://www.ethnologue.com/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Nilotic",
         "url": "https://glottolog.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ehret, Christopher. A Historical-Comparative Reconstruction of Nilo-Saharan. Cologne: Rudiger Koppe Verlag, 2001",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Evans-Pritchard, E. E. The Nuer. Oxford: Clarendon Press, 1940",
@@ -159,7 +162,8 @@
       {
         "title": "Spear, T. & Waller, R. (eds.). Being Maasai. London: James Currey, 1993",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Lienhardt, G. Divinity and Experience: The Religion of the Dinka. Oxford: Clarendon Press, 1961",
@@ -169,7 +173,8 @@
       {
         "title": "CIA World Factbook — South Sudan, Kenya, Uganda, Tanzania, Ethiopia",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Joshua Project — Nilotic peoples profiles",

@@ -99,7 +99,8 @@
       {
         "title": "Ethnologue (SIL International) — Mangbetu (mdj)",
         "url": "https://www.ethnologue.com/language/mdj/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Smarthistory — Figurative Harp (Domu), Mangbetu peoples",
@@ -129,7 +130,8 @@
       {
         "title": "The Metropolitan Museum of Art — Figurative Harp (Domu)",
         "url": "https://www.metmuseum.org/art/collection/search/319553",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

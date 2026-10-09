@@ -96,12 +96,14 @@
       {
         "title": "Glottolog 5.3 — Nyabwa (nyab1255)",
         "url": "https://glottolog.org/resource/languoid/id/nyab1255",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Nyabwa language (nwb)",
         "url": "https://www.ethnologue.com/language/nwb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Day Translations — Ivory Coast Language Profile",
@@ -116,12 +118,14 @@
       {
         "title": "Refworld/MRGI — World Directory of Minorities and Indigenous Peoples, Cote d'Ivoire",
         "url": "https://www.refworld.org/reference/countryrep/mrgi/2008/en/65159",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Ethnologue — Subgroup Nyabwa",
         "url": "https://www.ethnologue.com/subgroup/971/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ze Ze Beke (P.) — Les Interdits alimentaires chez les Nyabwa de Cote d'Ivoire, cit. in Aka Konin 2012",

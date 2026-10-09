@@ -105,7 +105,8 @@
       {
         "title": "SIL Ethnologue — Akan language (aka)",
         "url": "https://www.ethnologue.com/language/aka/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "TOTA World — Akan Geography",
@@ -115,12 +116,14 @@
       {
         "title": "CIA World Factbook — Ghana",
         "url": "https://www.cia.gov/the-world-factbook/countries/ghana/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Cote d'Ivoire",
         "url": "https://www.cia.gov/the-world-factbook/countries/cote-divoire/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "African American Registry — The Akan African Community",

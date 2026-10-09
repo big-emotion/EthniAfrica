@@ -101,7 +101,8 @@
       {
         "title": "Ethnologue — Afar (aar)",
         "url": "https://www.ethnologue.com/language/aar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Afar in Ethiopia",
@@ -116,7 +117,8 @@
       {
         "title": "Wiktionary — ISO 639-3 codes Africa (confirmation code aar)",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Nesbitt, L.M. Desert and Forest: Exploration of Abyssinian Danakil. London: Jonathan Cape, 1934",
@@ -126,7 +128,8 @@
       {
         "title": "Trimingham, J. Spencer. Islam in Ethiopia. Oxford: Oxford University Press, 1952",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

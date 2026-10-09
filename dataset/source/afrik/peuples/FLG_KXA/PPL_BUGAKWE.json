@@ -18,7 +18,7 @@
         "/anda",
         "River Bushmen"
       ],
-      "originOfExonyms": "Barakwena ou Mbarakwena vient d'une langue bantoue. Les personnes concernées jugent ce nom méprisant. Les Tswana et les administrateurs coloniaux employaient couramment Kwengo. Les chercheurs emploient Kxoe pour un ensemble de parlers proches de la famille de langues Khoe-Kwadi.",
+      "originOfExonyms": "Barakwena ou Mbarakwena viendrait d'une langue bantoue. Les personnes concernées jugent ce nom méprisant. Les Tswana et les administrateurs coloniaux employaient couramment Kwengo. Les chercheurs emploient Kxoe pour un ensemble de parlers proches de la famille de langues Khoe-Kwadi.",
       "whyProblematic": "Le terme Barakwena est percu comme devalorisant car il fut utilise par les populations bantoues voisines pour designer ces chasseurs-cueilleurs de maniere stigmatisante. Le terme Bushmen, bien que prefere par certains membres des communautes elles-memes, reste sensible en contexte officiel.",
       "contemporaryUsage": "Bugakwe ou Bugakhoe est l'appellation preferee et utilisee par les communautes dans le delta de l'Okavango au Botswana. Le terme Kxoe est retenu par les linguistes pour designer la langue du groupe.",
       "linguisticFamily": "FLG_KXA",
@@ -111,12 +111,14 @@
       {
         "title": "SIL Ethnologue — Kxoe language (xuu)",
         "url": "https://www.ethnologue.com/language/xuu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Kxoe language entry",
         "url": "https://glottolog.org/resource/languoid/id/kxoe1243",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "IWGIA — Indigenous Peoples in Africa: Botswana",
@@ -126,7 +128,8 @@
       {
         "title": "Statistics Botswana — Population & Housing Census 2022",
         "url": "https://www.statsbots.org.bw",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

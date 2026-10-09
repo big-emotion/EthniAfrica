@@ -89,7 +89,8 @@
       {
         "title": "Ethnologue – Arbore [arv]",
         "url": "https://www.ethnologue.com/language/arv/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Sasse H.-J., The Cushitic languages of the Omo-Tana group, 1974",

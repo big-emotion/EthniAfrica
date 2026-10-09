@@ -241,14 +241,14 @@
   color: var(--afh-text-soft);
 }
 
-/* The confidence chip rides inside the people fiche's "En bref" chapter, under
+/* The source review chip rides inside the people fiche's "En bref" chapter, under
    its heading. It declares no gutter of its own: it takes the chapter's, which
    is the only way the two can never drift apart again. */
 .afh-parchment-confidence {
   margin-bottom: var(--afh-space-lg);
 }
 
-/* ConfidenceChip pads itself by 4px so its focus ring is not clipped where it
+/* SourceReviewChip pads itself by 4px so its focus ring is not clipped where it
    sits flush against something. That padding is the component's business, but
    it must not read as an indent here: a gutter is measured to the text, which
    is what a reader lines the column up against. */
@@ -257,7 +257,7 @@
 }
 
 /* The provenance census sits at the head of the first chapter, on the same
-   gutter as the confidence chip and for the same reason: it declares no gutter
+   gutter as the source review chip and for the same reason: it declares no gutter
    of its own, so it can never drift from the column the reader lines up
    against. Its own width is bounded by the banner (the reading measure) — a
    census stretched across the parchment reads as a navigation bar, which is

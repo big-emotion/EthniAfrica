@@ -98,12 +98,14 @@
       {
         "title": "Glottolog — Yulu-Binga (yulu1243)",
         "url": "https://glottolog.org/glottolog?iso=yul",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Yulu (yul)",
         "url": "https://www.ethnologue.com/language/yul/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Yulu in Central African Republic",

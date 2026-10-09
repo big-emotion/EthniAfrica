@@ -94,7 +94,8 @@
       {
         "title": "SIL Ethnologue – Havu (hav)",
         "url": "https://www.ethnologue.com/language/hav/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Newbury, David S. – Kings and Clans: Ijwi Island and the Lake Kivu Rift, 1780-1840. Madison: University of Wisconsin Press, 1991",

@@ -86,17 +86,20 @@
       {
         "title": "Gedeo language (DRS) – Ethnologue / SIL International, 2025",
         "url": "https://www.ethnologue.com/language/drs/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "West Guji-Gedeo Conflict Displacement Flash Update – ReliefWeb / OCHA, mai 2018",
         "url": "https://reliefweb.int/report/ethiopia/ethiopia-west-guji-gedeo-conflict-displacement-flash-update-1-9-may-2018",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "ISO 639-3 drs : Gedeo – CEDS / National Center for Education Statistics",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

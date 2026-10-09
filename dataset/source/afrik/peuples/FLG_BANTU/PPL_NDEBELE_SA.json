@@ -99,7 +99,8 @@
       {
         "title": "SIL Ethnologue – Southern Ndebele (nbl) : code ISO 639-3 nbl",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Wataka Africa – The Vibrant World of Ndebele Art and Culture (2023)",
@@ -114,7 +115,8 @@
       {
         "title": "StatsSA – Census 2022 Statistical Release",
         "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

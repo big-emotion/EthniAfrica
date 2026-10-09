@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { ConfidenceChip } from "./ConfidenceChip";
+import { SourceReviewChip } from "./SourceReviewChip";
 
-const meta: Meta<typeof ConfidenceChip> = {
-  title: "Source Transparency/ConfidenceChip",
-  component: ConfidenceChip,
+const meta: Meta<typeof SourceReviewChip> = {
+  title: "Source Transparency/SourceReviewChip",
+  component: SourceReviewChip,
   tags: ["autodocs"],
   parameters: {
     layout: "centered",
@@ -28,7 +28,7 @@ const meta: Meta<typeof ConfidenceChip> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof ConfidenceChip>;
+type Story = StoryObj<typeof SourceReviewChip>;
 
 // @req REQ-019
 export const Inline: Story = {
@@ -41,7 +41,7 @@ export const Inline: Story = {
     <p className="max-w-xl text-base leading-relaxed">
       Les Yoruba forment l&apos;un des plus grands groupes ethniques
       d&apos;Afrique occidentale, présents principalement au Nigeria, au Bénin
-      et au Togo. <ConfidenceChip {...args} />
+      et au Togo. <SourceReviewChip {...args} />
     </p>
   ),
 };
@@ -58,7 +58,7 @@ export const Hero: Story = {
       <h1 className="text-3xl font-bold mb-3">Peuple Yoruba</h1>
       <p className="text-lg leading-relaxed">
         Riche héritage culturel et religieux d&apos;Afrique occidentale.{" "}
-        <ConfidenceChip {...args} />
+        <SourceReviewChip {...args} />
       </p>
     </div>
   ),
@@ -75,7 +75,7 @@ export const Contested: Story = {
     <p className="max-w-xl text-base leading-relaxed">
       Certains historiens estiment que la migration initiale aurait eu lieu vers
       le VIII<sup>e</sup> siècle, mais cette datation reste discutée.{" "}
-      <ConfidenceChip {...args} />
+      <SourceReviewChip {...args} />
     </p>
   ),
 };
@@ -91,7 +91,7 @@ export const MissingData: Story = {
   render: (args) => (
     <p className="max-w-xl text-base leading-relaxed">
       Cette assertion n&apos;a pas encore été auditée — la fiche affiche un lien
-      générique. <ConfidenceChip {...args} />
+      générique. <SourceReviewChip {...args} />
     </p>
   ),
 };
@@ -108,7 +108,7 @@ export const NoOnOpen: Story = {
   render: (args) => (
     <p className="max-w-xl text-base leading-relaxed">
       Quand aucun gestionnaire n&apos;est fourni, le clic est silencieux mais le
-      chip reste focusable et accessible. <ConfidenceChip {...args} />
+      chip reste focusable et accessible. <SourceReviewChip {...args} />
     </p>
   ),
 };
@@ -125,7 +125,7 @@ export const AllVariants: Story = {
         </p>
         <p className="text-base">
           Texte d&apos;assertion factuelle.{" "}
-          <ConfidenceChip
+          <SourceReviewChip
             sourceCount={4}
             lastHumanAuditAt="2025-09-21"
             variant="inline"
@@ -138,7 +138,7 @@ export const AllVariants: Story = {
         </p>
         <p className="text-lg">
           Assertion mise en avant.{" "}
-          <ConfidenceChip
+          <SourceReviewChip
             sourceCount={6}
             lastHumanAuditAt="2025-10-04"
             variant="hero"
@@ -151,7 +151,7 @@ export const AllVariants: Story = {
         </p>
         <p className="text-base">
           Assertion débattue par les sources.{" "}
-          <ConfidenceChip
+          <SourceReviewChip
             sourceCount={2}
             lastHumanAuditAt="2025-04-10"
             variant="contested"
@@ -164,7 +164,7 @@ export const AllVariants: Story = {
         </p>
         <p className="text-base">
           Assertion sans référence datée.{" "}
-          <ConfidenceChip sourceCount={null} lastHumanAuditAt={null} />
+          <SourceReviewChip sourceCount={null} lastHumanAuditAt={null} />
         </p>
       </div>
     </div>

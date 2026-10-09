@@ -37,6 +37,7 @@
         "title": "Glottolog 5.3 - Wolaytta",
         "url": "https://glottolog.org/resource/languoid/id/wola1242",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à wola1242, hors languoids portant leur propre code ISO 639-3."
       }
     ]

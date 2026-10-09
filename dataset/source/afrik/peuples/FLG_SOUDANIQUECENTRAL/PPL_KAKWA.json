@@ -9,7 +9,7 @@
       "mainName": "Kakwa",
       "selfAppellation": "Kakwa Salia Musala",
       "exonyms": ["Kakwa", "Kutuk na Kakwa (nom de la langue)"],
-      "originOfExonyms": "Le nom Kakwa designe ce peuple dans toutes les langues regionales et internationales. L'expression Kakwa Salia Musala, qui se traduit litteralement par Kakwa trois pays, est la formule par laquelle les Kakwa eux-memes soulignent leur unite culturelle malgre leur dispersion politique en trois etats. Ils se designent collectivement autour d'un arbre unique situe a la frontiere de l'Ouganda, de la RDC et du Soudan du Sud.",
+      "originOfExonyms": "Le nom Kakwa designe ce peuple dans toutes les langues regionales et internationales. L'expression Kakwa Salia Musala, qui se traduirait littéralement par Kakwa trois pays, est la formule par laquelle les Kakwa eux-memes soulignent leur unite culturelle malgre leur dispersion politique en trois etats. Ils se designent collectivement autour d'un arbre unique situe a la frontiere de l'Ouganda, de la RDC et du Soudan du Sud.",
       "whyProblematic": "La classification linguistique des Kakwa est discutee: certaines sources (Wikipedia) les designent comme Nilotiques orientaux (groupe Karo avec les Bari, Pojulu, Mundari), tandis que leur classement dans le groupe soudanique central est aussi atteste. Cette ambiguite reflète les debats academiques sur la classification des langues de l'Equatoria.",
       "contemporaryUsage": "Le terme Kakwa est utilise en anglais, en arabe soudanais et dans les langues officielles des trois pays (anglais en Ouganda et au Soudan du Sud, francais en RDC). Suite au regime d'Idi Amin (1971-1979), le terme Kakwa a acquis une resonance politique particuliere en Ouganda.",
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
@@ -100,7 +100,8 @@
       {
         "title": "SIL Ethnologue — Kakwa language (keo)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Muwado — My Kakwa Culture",

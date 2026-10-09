@@ -105,17 +105,20 @@
       {
         "title": "SIL Ethnologue — Kpelle macrolanguage (kpe)",
         "url": "https://www.ethnologue.com/language/kpe/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Liberia Kpelle (xpe)",
         "url": "https://www.ethnologue.com/language/xpe/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "eHRAF World Cultures — Kpelle",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fd06/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Union of Todeeans in the Americas — History, Migrations and Kingdom of the Kpelle",
@@ -140,7 +143,8 @@
       {
         "title": "CIA World Factbook — Liberia",
         "url": "https://www.cia.gov/the-world-factbook/countries/liberia/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

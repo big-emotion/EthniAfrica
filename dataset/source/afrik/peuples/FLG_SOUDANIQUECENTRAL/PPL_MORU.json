@@ -97,7 +97,8 @@
       {
         "title": "Glottolog — Moru (moru1253)",
         "url": "https://glottolog.org/resource/languoid/id/moru1253",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "African Mission — Farewell rituals of the Moru",
@@ -122,7 +123,8 @@
       {
         "title": "CIA World Factbook — South Sudan",
         "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

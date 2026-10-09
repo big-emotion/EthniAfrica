@@ -128,7 +128,8 @@
       {
         "title": "SIT Digital Collections - Young Adults in North Kivu",
         "url": "https://digitalcollections.sit.edu/cgi/viewcontent.cgi?article=3539&context=capstones",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

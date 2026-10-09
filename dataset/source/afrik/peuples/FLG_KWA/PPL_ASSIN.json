@@ -73,7 +73,8 @@
       {
         "title": "Ghana Statistical Service, Population and Housing Census 2021",
         "url": "https://census2021.statsghana.gov.gh",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Daaku, Kwame – Oral Traditions of Assin, in The Akan People: A Documentary History, Markus Wiener Publishers",
@@ -83,7 +84,8 @@
       {
         "title": "Modern Ghana – Discover the historic colonial treasures in Assin area, 2021",
         "url": "https://www.modernghana.com/news/1110502/discover-the-historic-colonial-treasures-in-assin.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",

@@ -102,6 +102,7 @@ describe("sitemap entity ids", () => {
       afrik_language_families: ids("FLG_", 1),
       afrik_languages: ids("bam", 2),
       afrik_patronymes: [nameCiting("PAT_0000", "referenced")],
+      afrik_places: ids("LOC_", 1),
     });
     (createServerClient as unknown as ReturnType<typeof vi.fn>).mockReturnValue(
       client
@@ -114,6 +115,7 @@ describe("sitemap entity ids", () => {
     expect(entries.families).toEqual(["FLG_0000"]);
     expect(entries.languages).toEqual(["bam0000", "bam0001"]);
     expect(entries.patronymes).toEqual(["PAT_0000"]);
+    expect(entries.places).toEqual(["LOC_0000"]);
   });
 
   // An unranged select is silently capped at 1000 rows server-side. The corpus
@@ -147,6 +149,7 @@ describe("sitemap entity ids", () => {
       afrik_language_families: [],
       afrik_languages: [],
       afrik_patronymes: [],
+      afrik_places: [],
     });
     (createServerClient as unknown as ReturnType<typeof vi.fn>).mockReturnValue(
       client
@@ -156,7 +159,7 @@ describe("sitemap entity ids", () => {
 
     // Two reads for the table holding rows, then one empty read per empty
     // table: a short page no longer ends a walk, an empty one does.
-    expect(client.range).toHaveBeenCalledTimes(6);
+    expect(client.range).toHaveBeenCalledTimes(7);
     expect(client.range).toHaveBeenCalledWith(0, SITEMAP_ID_PAGE_SIZE - 1);
   });
 
@@ -180,6 +183,7 @@ describe("sitemap entity ids", () => {
       families: [],
       languages: [],
       patronymes: [],
+      places: [],
     });
   });
 
@@ -207,6 +211,7 @@ describe("sitemap entity ids", () => {
       families: [],
       languages: [],
       patronymes: [],
+      places: [],
     });
   });
 
@@ -224,6 +229,7 @@ describe("sitemap entity ids", () => {
       families: [],
       languages: [],
       patronymes: [],
+      places: [],
     });
   });
 
@@ -329,6 +335,7 @@ describe("sitemap entity ids", () => {
       families: ["FLG_0000"],
       languages: ["bam0000"],
       patronymes: [],
+      places: [],
     });
   });
 
@@ -371,6 +378,7 @@ describe("sitemap entity ids", () => {
       afrik_language_families: ["id"],
       afrik_languages: ["id"],
       afrik_patronymes: ["id, sources:content->sources"],
+      afrik_places: ["id"],
     });
   });
 });

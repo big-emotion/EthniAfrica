@@ -13,6 +13,7 @@ import {
   getPatronymeRoute,
   getPeopleRoute,
   getPersonRoute,
+  getPlaceRoute,
 } from "@/lib/routing";
 
 vi.mock("next/link", () => ({
@@ -264,10 +265,8 @@ describe("SearchResultCard", () => {
 });
 
 describe("SearchResultCard — place", () => {
-  // No place page exists yet: the card leads to the fiche of the country the
-  // place belongs to.
   // @req REQ-196
-  it("labels a place and links it to its country's fiche", () => {
+  it("labels a place and links it to its own page", () => {
     renderCard({
       type: "place",
       id: "LOC_YAMOUSSOUKRO",
@@ -277,7 +276,7 @@ describe("SearchResultCard — place", () => {
 
     expect(screen.getByRole("link", { name: "Yamoussoukro" })).toHaveAttribute(
       "href",
-      getCountryRoute("fr", "CIV")
+      getPlaceRoute("fr", "LOC_YAMOUSSOUKRO")
     );
     expect(screen.getByText("Lieu")).toBeInTheDocument();
   });

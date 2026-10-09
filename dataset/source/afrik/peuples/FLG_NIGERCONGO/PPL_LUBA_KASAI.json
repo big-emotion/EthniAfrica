@@ -93,7 +93,8 @@
       {
         "title": "SIL Ethnologue — Luba-Kasai (lua)",
         "url": "https://www.ethnologue.com/language/lua/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Minority Rights Group — Kasaians of Luba origin",
@@ -103,7 +104,8 @@
       {
         "title": "Columbia Academic Commons — Luba-Kasai: A Working Bibliography",
         "url": "https://academiccommons.columbia.edu/doi/10.7916/q2kx-9m66/download",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "101 Last Tribes — Luba people",

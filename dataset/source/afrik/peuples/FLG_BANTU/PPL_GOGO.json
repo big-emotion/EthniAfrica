@@ -84,7 +84,8 @@
       {
         "title": "Ethnologue – Gogo (gog)",
         "url": "https://www.ethnologue.com/language/gog/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "PeopleGroups.org – Gogo of Tanzania",
@@ -94,7 +95,8 @@
       {
         "title": "National Bureau of Statistics Tanzania – 2022 Population and Housing Census",
         "url": "https://www.nbs.go.tz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "101 Last Tribes – Gogo people",

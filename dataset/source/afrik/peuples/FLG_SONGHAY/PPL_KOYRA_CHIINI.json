@@ -14,7 +14,7 @@
         "Songhay de Tombouctou (désignation géographique)",
         "Djenné Chiini (pour la variété parlée à Djenné)"
       ],
-      "originOfExonyms": "L'expression koyra chiini signifie littéralement langue de la ville en songhay occidental (koyra = ville, chiini = langue dans ce dialecte). La désignation Western Songhay utilisée par les linguistes fait référence à sa position géographique à l'ouest des autres dialectes songhay du Mali. Djenné Chiini est le nom de la variante dialectale parlée dans la ville historique de Djenné. Le terme Chiini est la forme que prend le mot songhay senni (langue) dans ce dialecte où le z/s original s'est transformé en j/ch.",
+      "originOfExonyms": "L'expression koyra chiini signifierait littéralement langue de la ville en songhay occidental (koyra = ville, chiini = langue dans ce dialecte). La désignation Western Songhay utilisée par les linguistes fait référence à sa position géographique à l'ouest des autres dialectes songhay du Mali. Djenné Chiini est le nom de la variante dialectale parlée dans la ville historique de Djenné. Le terme Chiini est la forme que prend le mot songhay senni (langue) dans ce dialecte où le z/s original s'est transformé en j/ch.",
       "whyProblematic": "Le koyra chiini est linguistiquement atypique parmi les langues songhay : il est la seule variété songhay sans tons phonémiques et utilise l'ordre syntaxique sujet-verbe-objet (SVO) plutôt que l'ordre sujet-objet-verbe (SOV) typique du groupe. Ces particularités ont conduit certains linguistes à s'interroger sur le statut de cette variété. Par ailleurs, la frontière entre koyra chiini (Tombouctou) et koyraboro senni (Gao) est abrupte à l'est de Tombouctou, créant une zone de transition complexe.",
       "contemporaryUsage": "Le koyra chiini est la langue principale de la ville de Tombouctou et des centres urbains voisins (Diré, Tonka, Goundam, Niafunké) ainsi que de la ville saharienne d'Araouane. En 1999, on comptait environ 200 000 locuteurs ; la croissance démographique malienne suggère un nombre sensiblement plus élevé en 2025. La crise de 2012 a perturbé la vie à Tombouctou mais n'a pas fondamentalement altéré la composition ethnolinguistique.",
       "linguisticFamily": "FLG_SONGHAY",
@@ -98,17 +98,20 @@
       {
         "title": "Glottolog — Koyra Chiini Songhay (khq)",
         "url": "https://glottolog.org/resource/languoid/id/koyr1240",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO — Tombouctou (patrimoine mondial)",
         "url": "https://whc.unesco.org/fr/list/119",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook — Mali",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       }
     ]
   }

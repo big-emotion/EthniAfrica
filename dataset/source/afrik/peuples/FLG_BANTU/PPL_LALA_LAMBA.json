@@ -9,7 +9,7 @@
       "mainName": "Lala-Lamba",
       "selfAppellation": "Lamba",
       "exonyms": ["Lamba", "Ilamba", "Aramba"],
-      "originOfExonyms": "Lamba signifie en langue Lamba l'acte de s'humilier, temoignant du caractere generalement humble de ce peuple. Ilamba designe le territoire Lamba (Lambaland). Aramba est une forme ancienne utilisee dans les sources portugaises de 1798 (voyage de Lacerda). Le terme Lala-Lamba est utilise dans la litterature ethnohistorique pour designer la relation etroite et la zone de contact entre Lala et Lamba.",
+      "originOfExonyms": "Lamba voudrait dire en langue Lamba l'acte de s'humilier, ce qui témoignerait du caractère généralement humble de ce peuple. Ilamba designe le territoire Lamba (Lambaland). Aramba est une forme ancienne utilisee dans les sources portugaises de 1798 (voyage de Lacerda). Le terme Lala-Lamba est utilise dans la litterature ethnohistorique pour designer la relation etroite et la zone de contact entre Lala et Lamba.",
       "whyProblematic": "Lala-Lamba est une denomination relationnelle/ethnohistorique plutot qu'une identite ethnique propre. Les Lamba sont un peuple distinct des Lala, bien que partageant des origines communes et des zones de contact. La classification Lala-Lamba renvoie aux relations historiques complexes entre ces deux groupes, notamment dans la region de Bukanda sur le Pedicule de Shaba.",
       "contemporaryUsage": "Lamba est l'appellation usuelle pour ce peuple. Lala-Lamba est utilise dans les etudes academiques d'ethnohistoire pour decrire les interactions et l'histoire partagee des deux groupes dans la region transfrontaliere Zambie-RDC.",
       "linguisticFamily": "FLG_BANTU",
@@ -84,7 +84,8 @@
       {
         "title": "Boswell, D. – Chipimpi, Vulgar Clans, and Lala-Lamba Ethnohistory, Furman University, 2008",
         "url": "https://scholarexchange.furman.edu/cgi/viewcontent.cgi?article=1001&context=ant-publications",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project – Zambia People Groups, Lamba",
@@ -94,7 +95,8 @@
       {
         "title": "Ethnologue – Lamba Language LAM",
         "url": "https://www.ethnologue.com/language/lam/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Lamba language – Chalo Chatu, Zambia Encyclopedia",

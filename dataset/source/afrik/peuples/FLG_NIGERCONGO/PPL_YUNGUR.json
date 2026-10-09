@@ -92,12 +92,14 @@
       {
         "title": "Adamawa Language Projects – Bena-Mboi or Yungur Group, Kleinewillinghöfer 2011",
         "url": "https://www.blogs.uni-mainz.de/fb07-adamawa/adamawa-languages/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "LLACAN-CNRS – AdaGram Bena-Yungur",
         "url": "https://llacan.cnrs.fr/AdaGram/bena-yungur.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "PeopleGroups.org – Yungur of Nigeria, PG014199",
@@ -117,7 +119,8 @@
       {
         "title": "Fact Check News – Yungur Chiefdom: Our Heritage, Our Future, 2025",
         "url": "https://factchecknews.com.ng/2025/01/01/yungur-chiefdom-our-heritage-our/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       }
     ]
   }

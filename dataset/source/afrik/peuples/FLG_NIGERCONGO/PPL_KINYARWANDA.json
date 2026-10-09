@@ -13,7 +13,7 @@
         "Banyarwanda (denomination panregionale, inclusive)",
         "Banyamulenge (sous-groupe tutsi en RDC, province du Sud-Kivu)"
       ],
-      "originOfExonyms": "Le terme Banyarwanda (singulier : Munyarwanda) signifie litteralement les gens du Rwanda en kinyarwanda. Ce nom derive de Rwanda, nom du pays et du royaume historique. En RDC, le terme Banyarwanda designe les locuteurs kinyarwanda establis dans les provinces du Nord et du Sud-Kivu, quelle que soit leur appartenance ethnique (Hutu, Tutsi ou Twa).",
+      "originOfExonyms": "Le terme Banyarwanda (singulier : Munyarwanda) voudrait dire litteralement les gens du Rwanda en kinyarwanda. Ce nom deriverait de Rwanda, nom du pays et du royaume historique. En RDC, le terme Banyarwanda designe les locuteurs kinyarwanda establis dans les provinces du Nord et du Sud-Kivu, quelle que soit leur appartenance ethnique (Hutu, Tutsi ou Twa).",
       "whyProblematic": "La denomination Kinyarwanda (locuteurs) utilisee dans l'intitule initial est une denomination linguistique, non ethnique. Elle recouvre plusieurs identites ethniques distinctes (Hutu, Tutsi, Twa) qui partagent une langue commune. Elle ne doit pas etre confondue avec l'identite ethnique ou nationale rwandaise. En RDC, les Banyarwanda font l'objet de controverses sur leur nationalite, certains etant consideres comme etrangers par d'autres groupes congolais.",
       "contemporaryUsage": "Au Rwanda, depuis 1994, le gouvernement promeut une identite nationale unifiee Banyarwanda abolissant officiellement les distinctions ethniques Hutu-Tutsi-Twa. En RDC, Banyarwanda est le terme usuel pour les locuteurs kinyarwanda dans les Kivu. En Ouganda, les locuteurs kinyarwanda sont souvent appeles Bafumbira (originaires de la region de Bufumbira, partageant le kinyarwanda).",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -108,7 +108,8 @@
       {
         "title": "UNFPA — Rwanda Population 2025",
         "url": "https://www.unfpa.org/data/world-population/RW",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Minority Rights Group — Banyarwanda in the DRC",
@@ -128,7 +129,8 @@
       {
         "title": "SIL Ethnologue — Kinyarwanda (kin)",
         "url": "https://www.ethnologue.com/language/kin",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "USHMM — Divided by Ethnicity : Rwanda",

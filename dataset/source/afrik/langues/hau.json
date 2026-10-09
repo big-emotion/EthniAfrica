@@ -52,12 +52,14 @@
         "title": "Glottolog 5.3 — Hausa (haus1257)",
         "url": "https://glottolog.org/resource/languoid/id/haus1257",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Glottolog name: Hausa; classification includes Chadic. Les dialectes listés sont les sous-languoids que Glottolog rattache à haus1257, hors languoids portant leur propre code ISO 639-3."
       },
       {
         "title": "Skinner, Neil, « The origin of the name Hausa », Africa, 38(3), 1968, p. 253-257",
         "url": "https://doi.org/10.2307/1157217",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Seuls l'extrait de début d'article et le résumé en ligne ont été lus, pas l'article entier."
       }
     ]

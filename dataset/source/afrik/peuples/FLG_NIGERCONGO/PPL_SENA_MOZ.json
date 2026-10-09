@@ -96,7 +96,8 @@
       {
         "title": "SIL Ethnologue — Sena (seh)",
         "url": "https://www.ethnologue.com/language/seh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Sena in Mozambique",
@@ -106,17 +107,20 @@
       {
         "title": "Allen F. Isaacman, Mozambique: The Africanization of a European Institution — The Zambezi Prazos 1750-1902, University of Wisconsin Press, 1972",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — Mozambique",
         "url": "https://www.cia.gov/the-world-factbook/countries/mozambique/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "INE Mozambique — Institut National de Statistiques",
         "url": "https://www.ine.gov.mz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Rhodian G. Munyenyembe, Christianity and African Traditional Religion, 2011",
@@ -126,7 +130,8 @@
       {
         "title": "Wikidata — Sena language (Q1160487)",
         "url": "https://www.wikidata.org/wiki/Q1160487",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

@@ -102,17 +102,20 @@
       {
         "title": "National Statistics Office Malawi — 2018 Population and Housing Census Main Report. ).pdf",
         "url": "https://malawi.unfpa.org/sites/default/files/resource-pdf/2018%20Malawi%20Population%20and%20Housing%20Census%20Main%20Report%20(1",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "SIL Ethnologue — Lomwe (ngl)",
         "url": "https://www.ethnologue.com/language/ngl/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Lomwe, Malawi (lon)",
         "url": "https://www.ethnologue.com/language/lon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Malawi Ethnic Groups",
@@ -122,7 +125,8 @@
       {
         "title": "Academia.edu — The Rise of Lomwe Ethnic Consciousness in Malawi, 1890-2010",
         "url": "https://www.academia.edu/11719522/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Maputo Essential Tours — Mozambique Ethnic Groups",

@@ -113,7 +113,8 @@
       {
         "title": "El Hamel C. – Le Maroc noir (Black Morocco), Stanford University Press, 2014",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Pazzanita A.G. – Historical Dictionary of Mauritania, 3e ed., Scarecrow Press, 2008",
@@ -123,7 +124,8 @@
       {
         "title": "Ould Saleck El Arby – Les Haratins : le paysage politique mauritanien, L'Harmattan, 2003",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Gast M. – article Haratin, Encyclopedie berbere, vol. XXII, 2000",

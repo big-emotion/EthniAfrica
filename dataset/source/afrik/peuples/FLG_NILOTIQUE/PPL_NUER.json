@@ -11,7 +11,7 @@
         "Nuer (terme europeen introduit par les colonisateurs britanniques)",
         "Nei ti Naath (peuple de Naath, formule developpee)"
       ],
-      "originOfExonyms": "Nuer est un nom d'origine incertaine employé par les colonisateurs européens au XIXe siècle. Le peuple se nomme lui-même Naath, les gens. Les sources interprètent ce nom comme l'idée que les membres du groupe sont pleinement humains, contrairement aux personnes extérieures. Nei ti Naath signifie littéralement les gens qui sont des gens.",
+      "originOfExonyms": "Nuer est un nom d'origine incertaine employé par les colonisateurs européens au XIXe siècle. Le peuple se nomme lui-même Naath, les gens. Les sources interprètent ce nom comme l'idée que les membres du groupe sont pleinement humains, contrairement aux personnes extérieures. Nei ti Naath signifierait littéralement les gens qui sont des gens.",
       "whyProblematic": null,
       "contemporaryUsage": "Nuer est largement reconnu dans la recherche, la vie politique et les relations diplomatiques. Naath est le nom que les personnes concernées emploient pour elles-mêmes dans leurs discours politiques et culturels. Les sources présentent les Nuer comme le deuxième peuple le plus nombreux au Soudan du Sud et le premier dans la région de Gambella, en Éthiopie.",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -118,7 +118,8 @@
       {
         "title": "Hutchinson, Sharon E. Nuer Dilemmas: Coping with Money, War, and the State. Berkeley: University of California Press, 1996",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "101 Last Tribes — Nuer people",
@@ -128,12 +129,14 @@
       {
         "title": "Ethnologue — Nuer (NUS)",
         "url": "https://www.ethnologue.com/language/nus/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "University of Edinburgh Research Explorer — Nuer Collection (dialectologie)",
         "url": "https://www.research.ed.ac.uk/en/datasets/nuer-collection/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Nuer in Ethiopia",

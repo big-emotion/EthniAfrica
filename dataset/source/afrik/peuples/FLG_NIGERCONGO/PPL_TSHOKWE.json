@@ -111,7 +111,8 @@
       {
         "title": "The Metropolitan Museum of Art — Mwanangana (lord of the land) playing a sanza, Chokwe artist, 19th century",
         "url": "https://www.metmuseum.org/art/collection/search/316173",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Smarthistory — Female (pwo) Mask, Chokwe peoples",
@@ -131,12 +132,14 @@
       {
         "title": "CountryStudies.us — Lunda and Chokwe Kingdoms, Angola",
         "url": "https://countrystudies.us/angola/9.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue — Chokwe (cjk)",
         "url": "https://www.ethnologue.com/language/cjk/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Bastin, Marie-Louise — Arts of the Angolan Peoples, I: Chokwe. Museu do Dundo, 1961",

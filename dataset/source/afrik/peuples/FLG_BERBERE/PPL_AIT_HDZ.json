@@ -84,7 +84,8 @@
       {
         "title": "Morocco World News - Imilchil Marriage Festival",
         "url": "https://www.moroccoworldnews.com/2020/07/67795/moroccos-imilchil-wedding-festival-a-treasured-amazigh-tradition/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "IRCAM (Institut Royal de la Culture Amazighe, Rabat)",
@@ -99,7 +100,8 @@
       {
         "title": "Ethnologue - Tamazight Central Atlas (tzm)",
         "url": "https://www.ethnologue.com/language/tzm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "IWGIA - The Indigenous World 2025: Morocco",
@@ -109,7 +111,8 @@
       {
         "title": "Encyclopedie berbere (CNRS/INALCO)",
         "url": "https://journals.openedition.org/encyclopedieberbere/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

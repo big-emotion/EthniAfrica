@@ -24,6 +24,6 @@ describe("the origin of the name Krou", () => {
 
   // @req REQ-178
   it("keeps the derivation hedged, as its source does", () => {
-    expect(text).toMatch(/dérive probablement/);
+    expect(text).toMatch(/dériverait du nom propre Klao/);
   });
 });

@@ -149,7 +149,7 @@ applying rather than hoped for afterwards.
 The schema is now level across both projects. The **corpus is not**: production holds 713
 peoples, 54 countries and 24 families, but **0 sources, 0 assertions and 0 languages**. The
 `PRODUCTION_SUPABASE_SERVICE_ROLE_KEY` repository secret does not exist, so
-`production-data-sync.yml` fails rather than skips. Confidence chips and source transparency have
+`production-data-sync.yml` fails rather than skips. Source review chips and source transparency have
 nothing to render until that secret is set and a load runs.
 
 ---

@@ -130,23 +130,27 @@
       {
         "title": "Ethnologue – Susu Language (SUS)",
         "url": "https://www.ethnologue.com/language/sus/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Indiana University Center for Language Technology – Susu Language Portal",
         "url": "https://celt.indiana.edu/portal/Susu/index.html",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Niane, Djibril Tamsir (dir.) (1985) – Histoire générale de l'Afrique, tome IV : L'Afrique du XIIe au XVIe siècle. UNESCO, Paris",
         "url": null,
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Publication de l'UNESCO. Le chapitre 6, signé Niane, suit les traditions orales des écoles de griots du Manden et les croise avec les auteurs arabes ; sa chronologie est relative. Antérieure aux relectures archéologiques de Niani."
       },
       {
         "title": "Person, Yves (1985) – Les peuples côtiers de la Casamance aux lagunes ivoiriennes, in Niane (dir.), Histoire générale de l'Afrique IV. UNESCO, Paris",
         "url": null,
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Décrit les Susu et les Jalonke comme deux peuples étroitement apparentés du Fouta-Djalon ; ne les relie pas au royaume de Soso."
       },
       {
@@ -177,7 +181,8 @@
       {
         "title": "SIL CEDS — ISO 639-3: Susu = sus",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   },

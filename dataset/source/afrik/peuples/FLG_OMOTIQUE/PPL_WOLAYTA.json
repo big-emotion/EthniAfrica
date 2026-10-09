@@ -90,7 +90,8 @@
       {
         "title": "Ethnologue — Wolaytta (WAL)",
         "url": "https://www.ethnologue.com/language/wal/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Wolaitta in Ethiopia",
@@ -115,7 +116,8 @@
       {
         "title": "Bahru Zewde — A History of Modern Ethiopia. Ohio University Press, 2001",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

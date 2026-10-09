@@ -208,7 +208,8 @@
       {
         "title": "SIL Ethnologue — Fulfulde language (ful)",
         "url": "https://www.ethnologue.com/language/ful/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Last, Murray — The Sokoto Caliphate. Longman, 1967",
@@ -218,7 +219,8 @@
       {
         "title": "Riesman, Paul — Freedom in Fulani Social Life. University of Chicago Press, 1977",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Diallo, Thierno — Les institutions politiques du Fouta-Djallon au XIXe siecle. IFAN, 1972",
@@ -228,12 +230,14 @@
       {
         "title": "UNFPA — Sahel population data",
         "url": "https://www.unfpa.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Fieloux, Michele - compte rendu de Thierno Diallo, Les institutions politiques du Fouta Dyalon au XIXe siecle (Dakar, IFAN, 1972) - Cahiers d'Etudes africaines, 14 (54), 1974, p. 402-403",
         "url": "https://www.persee.fr/doc/cea_0008-0055_1974_num_14_54_2655_t1_0402_0000_2",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Fulani, Maasina in Mali",
@@ -243,7 +247,8 @@
       {
         "title": "ScienceDirect — Population history and admixture of the Fulani people from the Sahel (2025)",
         "url": "https://www.sciencedirect.com/science/article/pii/S0002929724004579",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Britannica - Fulani empire",
@@ -265,6 +270,7 @@
         "title": "Breedveld, J.O. — Form and meaning in Fulfulde: a morphophonological study of Maasinankoore. Thèse, Université de Leyde, 1995",
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2938820/view",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Chapitre 1, sections 1.1.1 et 1.1.2 : le sens de Pullo et de Fulbe, et l'origine des noms peul, Fulani, fellata et fula, rapportée d'après Nussbaum (1970), Newman (1990), Abu-Manga (1986) et Arnott (1970). Texte lu directement ; ces quatre travaux n'ont pas été lus."
       },
       {
@@ -277,18 +283,21 @@
         "title": "Tauxier, Louis — Moeurs et histoire des Peuls. Payot, 1937",
         "url": "https://webpulaaku.site/defte/tauxier/livre1ch1.html",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Chapitre 1. Rapporte l'explication de Gaden par Delafosse (Haut-Sénégal-Niger, t. I, pp. 118-119) et celle de Crozals (Les Peuhls, p. 256) résumant Barth ; ces deux ouvrages n'ont pas été lus directement. L'auteur ne tranche pas entre les deux."
       },
       {
         "title": "TLFi — entrée PEUL, CNRS / ATILF",
         "url": "https://www.cnrtl.fr/etymologie/peul",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Donne 1847 pour la graphie peul (lettre de A. Raffenel, Annales maritimes et coloniales, t. 103, p. 233) et qualifie le mot de « mot africain »."
       },
       {
         "title": "Barth, Heinrich — Travels and Discoveries in North and Central Africa, vol. 2. 1857",
         "url": "https://www.gutenberg.org/ebooks/76317",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Texte lu directement : les Fulbe y sont dits Féllani par les Haoussa et Felláta par les gens du Bornou."
       },
       {
@@ -301,24 +310,28 @@
         "title": "Wane, Yaya — Les Toucouleur du Fouta Tooro : stratification sociale et structure familiale. IFAN, Dakar, 1969",
         "url": "https://webpulaaku.site/defte/yWane/intro.html",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Introduction. Rapporte l'explication de Delafosse sur Tokolor, Tokoror, Takruur et Etkaarir ; l'ouvrage de Delafosse n'a pas été lu directement."
       },
       {
         "title": "Humery, Marie-Ève — La littératie pulaar : nationalisme culturel, mouvement social ou instrument du développement ? Cahiers de la recherche sur l'éducation et les savoirs, n° 12, 2013",
         "url": "https://journals.openedition.org/cres/2348?lang=fr",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Note 1 : Toucouleur est un terme exogène, la dénomination indigène étant Haalpulaar'en, littéralement « ceux qui parlent le pulaar ». L'article ne date pas l'apparition de ce nom."
       },
       {
         "title": "Horta, José da Silva — Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII). Varia Historia, 29 (51), 2013, pp. 649-675",
         "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Cite le passage de Almada (Tratado breve dos Rios de Guiné, manuscrit daté de 1594) où les Fula sont écrits Fulos."
       },
       {
         "title": "Park, Mungo — Travels in the Interior Districts of Africa, 1799",
         "url": "https://www.gutenberg.org/ebooks/74976",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Texte lu directement : « The Foulahs (or Pholeys) »."
       },
       {
@@ -331,12 +344,14 @@
         "title": "Niang, Oumar — Réflexion sur l'origine des termes Fulɓe, pullo (et aussi Wolof, Bambara, Soninke). ndarinfo.com, 18 juillet 2018",
         "url": "https://www.ndarinfo.com/Reflexion-sur-l-origine-des-termes-%C2%A0Ful%C9%93e%C2%A0--%C2%A0pullo%C2%A0-et-aussi-%C2%A0Wolof%C2%A0--%C2%A0Bambara%C2%A0-%C2%A0-%C2%A0Soninke%C2%A0-Par-Niang_a22308.html",
         "tier": "unverified",
+        "source_kind": "press",
         "notes": "Texte lu directement. Article publié sur un site d'actualité ; la lecture Ba-fur n'est reprise dans aucun autre texte consulté."
       },
       {
         "title": "Wikipédia — Peuls",
         "url": "https://fr.wikipedia.org/wiki/Peuls",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Seul endroit où a été rencontrée la lecture fullade, attribuée à Jean-Marie Mathieu, Les Bergers du soleil, l'Or Peul, Desiris, 1998, ouvrage non lu. L'article renvoie à Thomas M. Shaw (1994), non lu non plus."
       },
       {
@@ -355,6 +370,7 @@
         "title": "Hunwick, John O. — Timbuktu and the Songhay Empire: Al-Sa'di's Ta'rikh al-Sudan down to 1613 and other contemporary documents. Brill, 2003",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Texte lu directement (note 58 du chapitre 26) : la chronique emploie Fulan et note que cela reflète l'usage songhay ; les Fulani s'y disent Fulɓe, au singulier Pullo. La note 13 date la rédaction de 1653-1654 environ."
       }
     ]

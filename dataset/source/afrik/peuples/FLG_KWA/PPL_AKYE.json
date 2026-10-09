@@ -101,7 +101,8 @@
       {
         "title": "SIL Ethnologue — Attie language (ati)",
         "url": "https://www.ethnologue.com/language/ati/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "TypeCraft — Typological Features for Attie",
@@ -121,7 +122,8 @@
       {
         "title": "Glottolog — Attie",
         "url": "https://glottolog.org/resource/languoid/id/atti1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Peoplegroups.org — Akye (Attie) in Cote d'Ivoire",

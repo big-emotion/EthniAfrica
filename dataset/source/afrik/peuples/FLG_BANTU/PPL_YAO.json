@@ -129,7 +129,8 @@
       {
         "title": "SIL Ethnologue — Yao language (yao)",
         "url": "https://www.ethnologue.com/language/yao/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

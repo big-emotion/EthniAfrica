@@ -12,7 +12,7 @@
         "Calabar people (terme colonial anglais)",
         "Carabali (terme utilise a Cuba pour designer les esclaves d'origine efik et ibibio)"
       ],
-      "originOfExonyms": "Calabar provient du nom portugais du port (Calabar), devenu synonyme du peuple lors des premiers contacts europeens. Carabali est une deformation espagnole de Calabar, utilisee dans le contexte de la traite atlantique pour designer les esclaves embarques a Old Calabar.",
+      "originOfExonyms": "Calabar viendrait du nom portugais du port (Calabar), devenu synonyme du peuple lors des premiers contacts europeens. Carabali est une deformation espagnole de Calabar, utilisee dans le contexte de la traite atlantique pour designer les esclaves embarques a Old Calabar.",
       "whyProblematic": "Calabar people est reducteur car il amalgame les Efik avec d'autres groupes de la region (Efut, Qua, Ibibio). Carabali est un terme colonial lie a l'esclavage, porteur d'un traumatisme historique profond.",
       "contemporaryUsage": "Le terme Efik est universellement prefere. Calabar reste utilise geographiquement pour la ville et la region, mais non comme identifiant ethnique.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -121,7 +121,8 @@
       {
         "title": "Ethnologue (SIL International) — Efik language, code efi",
         "url": "https://www.ethnologue.com/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Study.com — Efik People History, Culture and Language",
@@ -137,12 +138,14 @@
         "title": "Henry John Drewal, Mami Wata: Arts for Water Spirits in Africa and Its Diasporas",
         "url": "https://fowler.ucla.edu/exhibitions/mami-wata-arts-for-water-spirits-in-africa-and-its-diasporas/",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Monographie et exposition du Fowler Museum, UCLA, 2008, commissaire invité Henry John Drewal ; consultée le 10 septembre 2026."
       },
       {
         "title": "Alex van Stipriaan, Watramama/Mami Wata: Three Centuries of Creolization of a Water Spirit in West Africa, Suriname and Europe",
         "url": "https://brill.com/abstract/journals/mata/27/1/article-p321_321.xml",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Revue Matatu, volumes 27-28, 2003 ; travail universitaire indépendant de celui de Drewal, consulté le 10 septembre 2026."
       }
     ]

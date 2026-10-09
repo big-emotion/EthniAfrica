@@ -11,7 +11,7 @@
         "Herero (terme europeen courant)",
         "OvaHerero (forme longue du nom employé par le peuple lui-même)"
       ],
-      "originOfExonyms": "Le nom Herero signifie litteralement 'possesseur de betail' en otjiherero, reflet de leur identite pastorale. Ovaherero est le pluriel de OmuHerero (singulier). Les locuteurs designent leur langue Otjiherero.",
+      "originOfExonyms": "Le nom Herero voudrait dire littéralement 'possesseur de betail' en otjiherero, ce qui refléterait leur identité pastorale. Ovaherero est le pluriel de OmuHerero (singulier). Les locuteurs designent leur langue Otjiherero.",
       "whyProblematic": null,
       "contemporaryUsage": "Ovaherero est le nom collectif préféré par les personnes concernées. Herero est utilisé en anglais, en français et dans les médias internationaux.",
       "linguisticFamily": "FLG_BANTU",
@@ -103,12 +103,14 @@
       {
         "title": "SIL Ethnologue - Herero language (her)",
         "url": "https://www.ethnologue.com/language/her/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Omniglot - Herero language",
         "url": "https://www.omniglot.com/writing/herero.php",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Herero language resources",
@@ -118,12 +120,14 @@
       {
         "title": "BBC News - Germany recognises colonial-era Namibia genocide, 28 mai 2021",
         "url": "https://www.bbc.com/news/world-europe-57279008",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "South African History Online - Herero Revolt 1904-1907",
         "url": "https://sahistory.org.za/article/herero-revolt-1904-1907",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "JFCS Holocaust Center - Herero and Nama Genocide",
@@ -133,7 +137,8 @@
       {
         "title": "Oxford Guide to Bantu Languages - Otjiherero",
         "url": "https://academic.oup.com/book/61440/chapter/534774683",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   },

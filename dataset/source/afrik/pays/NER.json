@@ -215,17 +215,20 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Niger",
         "url": "https://www.cia.gov/the-world-factbook/countries/niger/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Niger",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements nigériens",
@@ -245,17 +248,20 @@
       {
         "title": "CIA World Factbook – Niger (ethnic groups, 2006 census)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Niger",
         "url": "https://www.unfpa.org/data/world-population/NE",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Mungo Park, Travels in the Interior Districts of Africa, Londres, W. Bulmer, 1799, chapitre XV et appendice de James Rennell",

@@ -10,7 +10,7 @@
       "exonyms": [
         "Wemba (forme ancienne), Chibemba, Ichibemba (designe aussi la langue)"
       ],
-      "originOfExonyms": "Le terme Bemba derive du mot chibemba UluBemba ou Lubemba, designant le territoire ancestral autour de Kasama (Zambie du Nord). Le nom Chitimukulu (grand Chiti) vient du premier dirigeant historique Chiti Muluba, qui a renomme son royaume en son honneur. Le terme Pemba existe en Luba (langue d'origine) avec une signification similaire.",
+      "originOfExonyms": "Le terme Bemba dériverait du mot chibemba UluBemba ou Lubemba, qui désigne le territoire ancestral autour de Kasama (Zambie du Nord). Le nom Chitimukulu (grand Chiti) viendrait du premier dirigeant historique Chiti Muluba, qui aurait renommé son royaume en son honneur. Le terme Pemba existe en Luba (langue d'origine) avec une signification similaire.",
       "whyProblematic": null,
       "contemporaryUsage": "Aɓemba est le nom officiel employé par le peuple lui-même. Bemba est utilisé en anglais et dans les travaux de recherche. IchiBemba ou Chibemba désigne la langue.",
       "linguisticFamily": "FLG_BANTU",
@@ -110,7 +110,8 @@
       {
         "title": "SIL Ethnologue — Bemba language (bem)",
         "url": "https://www.ethnologue.com/language/bem/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Bemba in Zambia",
@@ -120,7 +121,8 @@
       {
         "title": "Richards, Audrey I. — Chisungu : A Girl's Initiation Ceremony Among the Bemba of Zambia. Faber and Faber, 1956. eHRAF World Cultures",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fq05/documents/003",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nkwazi Magazine — Kalindula : A Rhythmic Journey Through Zambian Culture (2024)",

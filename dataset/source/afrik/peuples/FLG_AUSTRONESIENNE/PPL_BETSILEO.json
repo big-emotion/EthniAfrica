@@ -10,7 +10,7 @@
       "exonyms": [
         "Les Nombreux Invincibles (traduction du nom Betsileo en français)"
       ],
-      "originOfExonyms": "Le nom Betsileo est attribué à la suite de la résistance victorieuse du roi Besilau contre une invasion du royaume Sakalava-Menabe dans les années 1670. Le terme signifie littéralement les nombreux invincibles ou les nombreux qui ne peuvent être vaincus.",
+      "originOfExonyms": "Le nom Betsileo est attribué à la suite de la résistance victorieuse du roi Besilau contre une invasion du royaume Sakalava-Menabe dans les années 1670. Le terme signifierait littéralement « les nombreux invincibles » ou « les nombreux qui ne peuvent être vaincus ».",
       "whyProblematic": null,
       "contemporaryUsage": "Le groupe emploie et revendique ce nom comme désignation officielle depuis le XIXe siècle, après son incorporation dans l'Empire Merina.",
       "linguisticFamily": "FLG_AUSTRONESIENNE",
@@ -105,7 +105,8 @@
       {
         "title": "Ethnologue — Plateau Malagasy (plt), (consulté 2025)",
         "url": "https://www.ethnologue.com/language/plt/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Betsileo in Madagascar, (consulté 2025)",
@@ -120,12 +121,14 @@
       {
         "title": "Kusuma, P. et al. Malagasy Genetic Ancestry. Molecular Biology and Evolution, 2016",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4989113/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — Madagascar, (consulté 2025)",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

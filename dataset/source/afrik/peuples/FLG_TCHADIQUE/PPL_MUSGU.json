@@ -14,7 +14,7 @@
         "Muzuk / Muzgu (variante dialectale)",
         "Munjuk (nom utilise dans la region de Maga pour les habitants et leur langue)"
       ],
-      "originOfExonyms": "L'origine de Musgu/Mousgoum reste incertaine. Ce nom aurait été transmis par les voisins peuls ou arabes. Le peuple se nomme lui-même Mulwi, qui signifie « ceux du fleuve » ou « les gens ». Plusieurs noms de lieux sont aussi rapprochés de sa langue. Waza, le nom du parc national, viendrait d'un mot musgu signifiant 'ma maison' ou 'ma patrie'. Mindif signifierait 'la bouche de l'homme'. Bogo viendrait d'un mot pour 'bruit', en souvenir de la bataille décisive contre les Peuls.",
+      "originOfExonyms": "L'origine de Musgu/Mousgoum reste incertaine. Ce nom aurait été transmis par les voisins peuls ou arabes. Le peuple se nomme lui-même Mulwi, qui signifierait « ceux du fleuve » ou « les gens ». Plusieurs noms de lieux sont aussi rapprochés de sa langue. Waza, le nom du parc national, viendrait d'un mot musgu signifiant 'ma maison' ou 'ma patrie'. Mindif signifierait 'la bouche de l'homme'. Bogo viendrait d'un mot pour 'bruit', en souvenir de la bataille décisive contre les Peuls.",
       "whyProblematic": "Le terme Mousgoum recouvre plusieurs varietes dialectales proches (Beege, Mpus, Vulum) qui ne sont pas toujours mutuellement intelligibles. Les distinctions entre Musgu proper, Munjuk et Muzuk peuvent etre considerees comme des langues separees par certains linguistes.",
       "contemporaryUsage": "Le terme Musgu est utilise dans les publications scientifiques, administratives camerounaises et tchadiennes. Mousgoum reste courant dans la litterature francophone. Mulwi est utilise par les locuteurs dans les contextes intimes et communautaires. Le terme est desormais associe internationalement a l'architecture exceptionnelle de leurs maisons en boue (cases obus / teleukakay).",
       "linguisticFamily": "FLG_TCHADIQUE",
@@ -101,7 +101,8 @@
       {
         "title": "Academia.edu — Mousgoum architecture (Oxford University Press, 2014)",
         "url": "https://www.academia.edu/71511192/Mousgoum_architecture",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Architecture in Development — Mousgoum dwellings",
@@ -116,7 +117,8 @@
       {
         "title": "SIL Ethnologue — Musgu (mug)",
         "url": "https://www.ethnologue.com/language/mug/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "The African History Channel — The tolekakay of the Musgum",

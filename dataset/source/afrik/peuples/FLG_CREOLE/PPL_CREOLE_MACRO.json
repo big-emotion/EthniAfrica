@@ -9,7 +9,7 @@
       "mainName": "Peuples Créoles (macro-groupe)",
       "selfAppellation": null,
       "exonyms": ["Creoles", "Crioulos", "Créoles africains"],
-      "originOfExonyms": "Le terme créole vient du portugais crioulo, désignant à l'origine une personne née dans la colonie par opposition à celle venue de la métropole. Il s'est ensuite appliqué aux langues et aux peuples issus des contacts entre Européens, Africains et autres populations dans les territoires coloniaux.",
+      "originOfExonyms": "Le terme créole viendrait du portugais crioulo, désignant à l'origine une personne née dans la colonie par opposition à celle venue de la métropole. Il s'est ensuite appliqué aux langues et aux peuples issus des contacts entre Européens, Africains et autres populations dans les territoires coloniaux.",
       "whyProblematic": "Le mot a plusieurs sens selon les régions. À la Réunion, il désigne tout habitant né sur l'île. À Maurice, il désigne les descendants chrétiens de personnes africaines réduites en esclavage. En Sierra Leone, il correspond à un peuple précis. Ces différences peuvent créer des confusions sur les personnes désignées et sur leur place dans la société.",
       "contemporaryUsage": "Le terme est aujourd'hui revendiqué comme marqueur identitaire positif dans les communautés créoles de l'océan Indien et d'Afrique de l'Ouest. Des festivals comme le Festival Kreol aux Seychelles et le Carnaval mauricien valorisent la culture créole contemporaine. Il n'existe pas d'auto-appellation collective : chaque groupe se nomme dans sa propre langue, Kreol, Krio, Crioulo ou Seselwa.",
       "linguisticFamily": "FLG_CREOLE",
@@ -119,12 +119,14 @@
       {
         "title": "Newitt, Malyn. Africa and the wider world: creole communities in the Atlantic and Indian Oceans. Revista Tempo, vol. 23, n.3, 2017",
         "url": "https://www.scielo.br/j/tem/a/J9bCFkBXm7rw4B8RcTj9zWS/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Creole languages subgroup",
         "url": "https://www.ethnologue.com/subgroup/70/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "African American Registry — The Creole Communities of Africa",
@@ -134,12 +136,14 @@
       {
         "title": "Wiktionary — ISO 639-3 codes (Creole languages)",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Others",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — Country profiles (Mauritius, Seychelles, São Tomé, Sierra Leone, Cape Verde, Réunion)",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

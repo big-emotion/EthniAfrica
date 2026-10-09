@@ -124,7 +124,8 @@
       {
         "title": "Ethnologue - Cebaara Senufo (sef)",
         "url": "https://www.ethnologue.com/language/sef/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica - Senufo",
@@ -134,7 +135,8 @@
       {
         "title": "Wiktionary - ISO 639-3 codes Africa (Senufo)",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project - Senoufo, Southern in Cote d'Ivoire",
@@ -144,7 +146,8 @@
       {
         "title": "CIA World Factbook - Burkina Faso",
         "url": "https://www.cia.gov/the-world-factbook/countries/burkina-faso/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Tautain, Louis Frédéric Émile — Le Dioula-dougou et le Sénéfo, Revue d'ethnographie, tome 6, 1887",
@@ -162,12 +165,14 @@
         "title": "Gagliardi, Susan Elizabeth et Petridis, Constantine — Mapping Senufo: Reframing Questions, Reevaluating Sources, and Reimagining a Digital Monograph, History in Africa, volume 48, 2021, pages 165 à 209",
         "url": "https://doi.org/10.1017/hia.2021.5",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Travail universitaire qui rouvre les questions et réexamine les sources sur l'ensemble d'objets et de populations désignés comme Sénoufo, et sur la façon dont cette désignation s'est construite."
       },
       {
         "title": "Richter, Dolores — Further Considerations of Caste in West Africa: The Senufo. Africa, 50 (1), 1980, p. 37-54",
         "url": "https://doi.org/10.2307/1158641",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article évalué par les pairs, lu par son résumé : à partir des Sénoufo de Côte d'Ivoire, l'autrice examine les traits attribués aux castes ouest-africaines et montre qu'ils sont souvent tournés à leur avantage par les castes dites inférieures."
       }
     ]

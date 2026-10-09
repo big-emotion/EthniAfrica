@@ -105,7 +105,8 @@
       {
         "title": "SIL Ethnologue — Tswana (tsn)",
         "url": "https://www.ethnologue.com/language/tsn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Namibia Tourism Board — Tswana people in Namibia (2025)",
@@ -115,17 +116,20 @@
       {
         "title": "CIA World Factbook — Botswana",
         "url": "https://www.cia.gov/the-world-factbook/countries/botswana/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — South Africa",
         "url": "https://www.cia.gov/the-world-factbook/countries/south-africa/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Academia.edu — Setswana Dialects and Inter-Dialectical Variation in Botswana",
         "url": "https://www.academia.edu/41715929/Setswana_Dialects_and_Inter_Dialectical_Variation_in_the_Republic_of_Botswana",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

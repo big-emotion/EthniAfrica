@@ -281,12 +281,14 @@
       {
         "title": "Nature (2023) — The genetic legacy of the expansion of Bantu-speaking peoples in Africa",
         "url": "https://www.nature.com/articles/s41586-023-06770-6",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Institut Pasteur (2017) — The migration history of Bantu-speaking people",
         "url": "https://www.pasteur.fr/en/home/research-journal/press-documents/migration-history-bantu-speaking-people-genomics-reveals-benefits-admixture-and-sheds-new-light",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Britannica — Bantu peoples",
@@ -306,12 +308,14 @@
       {
         "title": "SIL Ethnologue — Niger-Congo subgroup (Bantu)",
         "url": "https://www.ethnologue.com/subgroup/47/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "« The Bantu languages: sociohistorical perspectives », in Rajend Mesthrie (dir.), Language in South Africa, Cambridge University Press, 2002",
         "url": "https://www.cambridge.org/core/books/abs/language-in-south-africa/the-bantu-languages-sociohistorical-perspectives/02CCE08E10611E69474FC93EDCC574B9",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Chapitre d'un ouvrage universitaire publié. Date le premier emploi du terme par Bleek de 1857 ou 1858 et sa popularisation de la Comparative Grammar de 1862. Consulté le 25 septembre 2026."
       }
     ]

@@ -111,7 +111,8 @@
       {
         "title": "Ethnologue - Kuranko language (knk)",
         "url": "https://www.ethnologue.com/language/knk/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

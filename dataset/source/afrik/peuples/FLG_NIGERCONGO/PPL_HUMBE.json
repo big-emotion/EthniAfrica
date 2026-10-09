@@ -101,7 +101,8 @@
       {
         "title": "Glottolog 5.3 – Nkhumbi, glottolog.org/resource/languoid/id/nkhu1238 (2025)",
         "url": "https://glottolog.org/resource/languoid/id/nkhu1238",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -89,7 +89,8 @@
       {
         "title": "Ethnologue – Lala-Bisa language (leb)",
         "url": "https://www.ethnologue.com/language/leb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica – Ambo people",

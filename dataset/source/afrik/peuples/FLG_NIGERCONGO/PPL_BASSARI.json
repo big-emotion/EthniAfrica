@@ -105,7 +105,8 @@
       {
         "title": "UNESCO — Bassari Country and the Cultural Landscape of Bassari, Fula and Bedik Communities (Senegal)",
         "url": "https://whc.unesco.org/en/list/1369",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "ISO 639-3 : code bsc (Bassari)",
@@ -115,7 +116,8 @@
       {
         "title": "ISO 639-3 codes Africa list",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

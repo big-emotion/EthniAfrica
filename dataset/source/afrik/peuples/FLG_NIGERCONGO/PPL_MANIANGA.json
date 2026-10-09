@@ -96,12 +96,14 @@
       {
         "title": "SIL Ethnologue — Kikongo (kon)",
         "url": "https://www.ethnologue.com/language/kon",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Democratic Republic of the Congo",
         "url": "https://www.cia.gov/the-world-factbook/countries/congo-democratic-republic-of-the/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

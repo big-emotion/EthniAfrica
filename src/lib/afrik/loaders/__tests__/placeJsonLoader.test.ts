@@ -74,6 +74,28 @@ describe("loadAllPlaceFiches", () => {
     expect(place).not.toHaveProperty("names");
   });
 
+  // The place page shows each source's type (doctrine §1.1); a parser that
+  // drops `source_kind` leaves every source « type non précisé ».
+  // @req REQ-196
+  it("keeps the type of each source the fiche declares", () => {
+    writePlace("LOC_YAMOUSSOUKRO.json", yamoussoukro);
+
+    const [place] = loadAllPlaceFiches(datasetRoot).places;
+
+    expect(
+      (place.content.sources as Array<{ source_kind?: string }>).map(
+        (source) => source.source_kind
+      )
+    ).toEqual(
+      (yamoussoukro.sources as Array<{ source_kind: string }>).map(
+        (source) => source.source_kind
+      )
+    );
+    expect(
+      (place.content.sources as Array<{ source_kind?: string }>)[0]
+    ).toMatchObject({ source_kind: "academic" });
+  });
+
   // @req REQ-196
   it("names a fiche that fails the place model instead of dropping it silently", () => {
     writePlace("LOC_BROKEN.json", {

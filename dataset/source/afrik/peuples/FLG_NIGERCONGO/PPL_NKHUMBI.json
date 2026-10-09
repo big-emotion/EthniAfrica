@@ -90,12 +90,14 @@
       {
         "title": "Angola – Ovambo, Nyaneka-Humbe, Herero, and Others – Country Studies",
         "url": "https://countrystudies.us/angola/64.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Angola – Ethnic Groups and Languages – Country Studies",
         "url": "https://countrystudies.us/angola/56.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Britannica – Angola People: Nyaneka-Nkhumbi",
@@ -105,7 +107,8 @@
       {
         "title": "World Directory of Minorities – Angola – UNHCR Refworld",
         "url": "https://www.refworld.org/country,COI,,COUNTRYREP,ago,,49749d6232,0.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

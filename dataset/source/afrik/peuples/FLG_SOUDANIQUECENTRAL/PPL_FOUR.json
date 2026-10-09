@@ -21,7 +21,7 @@
         "Fota",
         "Fot"
       ],
-      "originOfExonyms": "Le terme Four (ou Fur) est l'ethnonym principal en usage dans les sources francaises et arabes. Le nom Darfour (arabe : dar Four, maison des Four) derive directement de ce peuple et nomme la region qu'ils habitent. Les variantes Konjara et Keira designent la dynastye royale au pouvoir dans le sultanat du Darfour. Forawa est le pluriel en langue four.",
+      "originOfExonyms": "Le terme Four (ou Fur) est l'ethnonym principal en usage dans les sources francaises et arabes. Le nom Darfour (arabe : dar Four, maison des Four) viendrait du nom de ce peuple ; il nomme la région qu'ils habitent. Les variantes Konjara et Keira designent la dynastye royale au pouvoir dans le sultanat du Darfour. Forawa est le pluriel en langue four.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Fur (anglais) ou Four (francais) est utilise dans les contextes administratifs, juridiques (CPI, enquetes ONU) et academiques. Dans le contexte du conflit du Darfour, les Four sont identifies comme l'une des principales ethnies cibles. Le nom Darfour reste le nom officiel de la region.",
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
@@ -100,12 +100,14 @@
       {
         "title": "Ethnologue, Fur (fvr) – SIL International 2024",
         "url": "https://www.ethnologue.com/language/fvr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UK Government, Country policy and information note: non-Arab Darfuris – GOV.UK, aout 2024",
         "url": "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-non-arab-darfuri-august-2024-accessible",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Jorg Adelberger, Vom Sultanat zur Republik : Veranderungen in der Sozialorganisation der Fur (Sudan) – F. Steiner, Stuttgart, 1990 (ISBN 3515055126)",

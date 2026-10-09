@@ -108,7 +108,8 @@
       {
         "title": "SIL Ethnologue – Nande (nnb)",
         "url": "https://www.ethnologue.com/language/nnb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "PeopleGroups.org – Nande of DRC (2024)",
@@ -123,7 +124,8 @@
       {
         "title": "Global Press Journal – A Tribe Watches Its Language Languish (2021)",
         "url": "https://globalpressjournal.com/africa/democratic-republic-of-congo/tribe-watches-language-languish/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Swordshare Map – Kinande (nnb)",

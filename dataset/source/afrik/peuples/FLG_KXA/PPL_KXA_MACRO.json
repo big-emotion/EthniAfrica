@@ -14,7 +14,7 @@
         "San septentrional",
         "Bushmen du Kalahari septentrional"
       ],
-      "originOfExonyms": "Le terme Kx'a fut cree en 2010 par Heine et Honken pour remplacer le compose Ju-ǂHoan (facilement confondu avec la langue Ju|'hoan) en choisissant le mot proto-Kx'a reconstruit signifiant terre, sol. Northern Khoisan est une denomination obsolete issue de la classification de Greenberg (1963) qui regroupait ces langues dans un hypothetique macro-ensemble Khoisan desormais rejete. San est un terme khoekhoegowab utilise comme terme collectif politiquement correct pour les populations autochtones de chasseurs-cueilleurs d'Afrique australe.",
+      "originOfExonyms": "Le terme Kx'a fut cree en 2010 par Heine et Honken pour remplacer le compose Ju-ǂHoan (facilement confondu avec la langue Ju|'hoan) en choisissant un mot proto-Kx'a reconstruit qui signifierait terre, sol, selon ces auteurs. Northern Khoisan est une denomination obsolete issue de la classification de Greenberg (1963) qui regroupait ces langues dans un hypothetique macro-ensemble Khoisan desormais rejete. San est un terme khoekhoegowab utilise comme terme collectif politiquement correct pour les populations autochtones de chasseurs-cueilleurs d'Afrique australe.",
       "whyProblematic": "La designation macro-groupe Kx'a est avant tout une categorie linguistique et non un groupe ethnique unifie. Les peuples qui parlent des langues Kx'a n'ont pas de conscience collective commune ni d'organisation politique partagee. La notion de groupe Khoisan, jadis utilisee, est scientifiquement invalide car les trois familles linguistiques concernees (Kx'a, Tuu, Khoe-Kwadi) ne sont pas genealogiquement liees.",
       "contemporaryUsage": "Kx'a est un nom employé uniquement dans les recherches sur les langues et la génétique. Dans la vie politique et associative, San ou Bushmen servent de noms communs à plusieurs groupes. Au quotidien, chacun préfère son propre nom : notamment Ju|'hoansi, qui signifierait vrais gens, !Kung ou !Xun, qui signifieraient gens, ainsi que ǂHoan et Bugakhoe.",
       "linguisticFamily": "FLG_KXA",
@@ -105,32 +105,38 @@
       {
         "title": "Heine, Bernd & Honken, Henry (2010). The Kx'a Family: A New Khoisan Genealogy. Journal of Asian and African Studies 79: 5-36",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog — Kxa language family",
         "url": "https://glottolog.org/resource/languoid/id/kxaa1236",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Kx'a language subgroup",
         "url": "https://www.ethnologue.com/subgroup/4285/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO Tentative List — San Living Cultural Landscape",
         "url": "https://whc.unesco.org/en/tentativelists/6096/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Complex Ancient Genetic Structure and Cultural Transitions in Southern African Populations. PMC5223510",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5223510/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "The Genomic Prehistory of Peoples Speaking Khoisan Languages. PMC8117426",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8117426/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }
