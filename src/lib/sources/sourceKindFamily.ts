@@ -21,13 +21,8 @@ export const SOURCE_KIND_FAMILIES = [
 
 export type SourceKindFamily = (typeof SOURCE_KIND_FAMILIES)[number];
 
-/**
- * Every corpus kind must have a family (the `SourceKind` half); the string
- * index admits the kinds PR #1624 adds before they reach
- * `SOURCE_KINDS`, so this map does not wait on that merge.
- */
-const FAMILY_OF_KIND: Record<SourceKind, SourceKindFamily> &
-  Record<string, SourceKindFamily> = {
+// Typed as a full Record so a new corpus kind cannot ship without a family.
+const FAMILY_OF_KIND: Record<SourceKind, SourceKindFamily> = {
   oral_tradition: "oral",
   // A community organisation speaks for the people it belongs to, which is
   // closer to a testimony than to a publication.
