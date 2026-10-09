@@ -200,7 +200,8 @@ whose ratchet fails on any new unreviewed ai_generated source whether the hook r
    sets `status` and `decidedBy` / `decidedAt` — plus `chosen` and `tier` when accepting.
 3. `npx tsx scripts/afrik/applyAiSourceVerifications.ts` prints what would change; `--apply`
    re-locates each accepted source by identity and replaces it with the chosen candidate (keeping
-   its `sourceKey`, writing no `notes` — a ledger id is workshop vocabulary). It writes nothing
+   its `sourceKey`, never writing the ledger id in `notes` — it is workshop vocabulary). A
+   patronyme fiche's source model has no author or year field, so there they open the note. It writes nothing
    when an accepted identity is in the fiche neither as an ai_generated source nor as the applied
    candidate. It prints the `UNREVIEWED_AI_GENERATED_RATCHET` line to lower in the same change.
 4. `npm run check:ai-sources` counts the unreviewed ai_generated sources: every one whose identity

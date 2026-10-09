@@ -289,11 +289,11 @@
     },
     {
       "sourceKey": "afrik-candidate-queue",
-      "title": "Relevé de couverture anthroponymique EthniAfrica",
-      "url": null,
-      "tier": "unverified",
-      "source_kind": "ai_generated",
-      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "title": "L'endogamie des Peuls du Fouta-Djallon",
+      "url": "https://webguine.site/bibliotheque/archives/rechAfric/1964/endogamiePeulFJ.html",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "P. Cantrelle et M. Dupire, 1964. Article paru d'abord dans la revue Population, n° 3, juin-juillet 1964, puis dans Recherches africaines, n° 1-4, 1964, p. 69-98. Le lien mène à la copie publiée par le site webguine."
     },
     {
       "sourceKey": "bluett-1734-job-jallo",
