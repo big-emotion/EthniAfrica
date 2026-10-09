@@ -41,7 +41,7 @@ export interface RelationsListWithSourceSheetProps {
 
 /**
  * Client boundary pairing `RelationsList` (SSR-rendered by the caller) with
- * the `SourceChainSheet` its `ConfidenceChip`s open (UX-DR48) — the sheet
+ * the `SourceChainSheet` its `SourceReviewChip`s open (UX-DR48) — the sheet
  * owns no data source of its own beyond what `RelationListItem` already
  * carries, so per-relation `sources` stay empty rather than invented
  * (FragmentationView precedent, "never invent data").

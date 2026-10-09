@@ -8,7 +8,7 @@
       "mainName": "Ewe",
       "selfAppellation": "Eʋeawó (les gens Ewe), Eʋe",
       "exonyms": ["Evhe", "Efe", "Gbe (terme générique pour locuteurs Gbe)"],
-      "originOfExonyms": "Le nom Ewe est utilisé par les colonisateurs européens et les voisins. L'autoappellation Eʋe signifie simplement le peuple ou la communauté en langue ewe.",
+      "originOfExonyms": "Le nom Ewe est utilisé par les colonisateurs européens et les voisins. L'autoappellation Eʋe voudrait dire simplement le peuple ou la communauté en langue ewe.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Ewe est aujourd'hui universellement utilisé au Ghana, au Togo et au Bénin pour désigner ce peuple.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -99,7 +99,8 @@
       {
         "title": "SIL Ethnologue — Ewe language (ewe)",
         "url": "https://www.ethnologue.com/language/ewe/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Ewe people group",
@@ -114,17 +115,20 @@
       {
         "title": "GhanaWeb — The fascinating history and culture of the Ewe",
         "url": "https://www.ghanaweb.com/GhanaHomePage/NewsArchive/The-fascinating-history-and-culture-of-the-Ewe-in-Ghana-Togo-Benin-and-Nigeria-1010593",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "WALS Online — Language Ewe (ISO 639-3 : ewe)",
         "url": "https://wals.info/languoid/lect/wals_code_ewe",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "The Metropolitan Museum of Art — Man's kente (prestige cloth)",
         "url": "https://www.metmuseum.org/art/collection/search/320677",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Notice de collection, objet 2010.555 : culture « Ewe peoples », Ghana, vers 1930-1950, textile tissé en coton et soie."
       }
     ]

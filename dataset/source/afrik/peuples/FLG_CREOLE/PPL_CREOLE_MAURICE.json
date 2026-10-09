@@ -101,22 +101,26 @@
       {
         "title": "SIL Ethnologue — Morisyen (mfe)",
         "url": "https://www.ethnologue.com/language/mfe/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Morisyen (mori1278)",
         "url": "https://glottolog.org/resource/languoid/id/mori1278",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO — Sega Tipik Morisien (patrimoine immatériel, 2014)",
         "url": "https://ich.unesco.org/doc/src/26081-EN.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook — Mauritius",
         "url": "https://www.cia.gov/the-world-factbook/countries/mauritius/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Creole Mauritius — The History of Mauritian Creole",

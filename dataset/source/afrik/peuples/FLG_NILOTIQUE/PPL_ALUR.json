@@ -96,7 +96,8 @@
       {
         "title": "SIL Ethnologue — Alur language (alz)",
         "url": "https://www.ethnologue.com/language/alz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Southall, Aidan — Alur Society: A Study in Processes and Types of Domination. Cambridge : Heffer, 1953",
@@ -106,17 +107,20 @@
       {
         "title": "Glottolog — Alur",
         "url": "https://glottolog.org/resource/languoid/id/alur1250",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Uganda",
         "url": "https://www.cia.gov/the-world-factbook/countries/uganda/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Democratic Republic of the Congo",
         "url": "https://www.cia.gov/the-world-factbook/countries/congo-democratic-republic-of-the/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Joshua Project — Alur people profile",

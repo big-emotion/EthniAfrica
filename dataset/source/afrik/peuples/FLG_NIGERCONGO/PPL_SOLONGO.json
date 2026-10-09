@@ -93,7 +93,8 @@
       {
         "title": "Country Studies US — Angola: Bakongo",
         "url": "https://countrystudies.us/angola/61.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "IRB Canada — Angola: Situation and treatment of Bakongo people (2024)",
@@ -103,12 +104,14 @@
       {
         "title": "Ethnologue (SIL) — Kongo language (kon)",
         "url": "https://www.ethnologue.com/language/kon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Angola",
         "url": "https://www.cia.gov/the-world-factbook/countries/angola/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Reddit Angola — Bakongo subgroups including Solongo (Soyo)",

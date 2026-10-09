@@ -13,6 +13,7 @@ import {
   getPatronymeRoute,
   getPeopleLinksRoute,
   getPeopleRoute,
+  getPlaceRoute,
 } from "@/lib/routing";
 import { getSiteTreePaths } from "@/lib/siteTree";
 import { getSitemapEntityIds } from "@/lib/supabase/queries/afrik/sitemapEntries";
@@ -68,6 +69,7 @@ function fichePaths(
     ...corpus.countries.map((id) => getCountryRoute("fr", id)),
     ...corpus.languages.map((id) => getLanguageRoute("fr", id)),
     ...corpus.patronymes.map((id) => getPatronymeRoute("fr", id)),
+    ...corpus.places.map((id) => getPlaceRoute("fr", id)),
   ];
 }
 

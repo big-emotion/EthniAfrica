@@ -130,7 +130,8 @@
       {
         "title": "Greenberg, Joseph H. The Languages of Africa. Indiana University Press, 1963",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Blench, Roger. Classification of Central Sudanic (2023). Manuscrit de travail",
@@ -140,27 +141,32 @@
       {
         "title": "Starostin, George. Glottolog classification of Central Sudanic. 2016",
         "url": "https://glottolog.org",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Central Sudanic family",
         "url": "https://www.ethnologue.com",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Democratic Republic of the Congo, Central African Republic, Chad, Uganda, South Sudan",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Evans-Pritchard, E.E. Witchcraft, Oracles and Magic Among the Azande. Oxford University Press, 1937",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Vansina, Jan. Kingdoms of the Savanna. University of Wisconsin Press, 1966",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

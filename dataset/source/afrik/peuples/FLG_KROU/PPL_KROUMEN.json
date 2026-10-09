@@ -99,12 +99,14 @@
       {
         "title": "OpenEdition Ethnomusicologie — La danse bollo des Kroumen en Côte d'Ivoire, 2023",
         "url": "https://journals.openedition.org/ethnomusicologie/5068",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog — Tepo Krumen (ted)",
         "url": "https://glottolog.org/resource/languoid/id/tepo1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kroumen.com — Aspects of tone change in three Krumen languages",
@@ -114,7 +116,8 @@
       {
         "title": "History Today — Kroomen: Black Slaver Hunters",
         "url": "https://www.historytoday.com/archive/feature/kroomen-black-slaver-hunters",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "Qiraat Africa — The Kru/Kroo of West Africa",

@@ -29,18 +29,21 @@
         "title": "Glottolog 5.3 - Egyptian (Ancient)",
         "url": "https://glottolog.org/resource/languoid/id/egyp1246",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à egyp1246, hors languoids portant leur propre code ISO 639-3."
       },
       {
         "title": "Wikipédia anglophone, Egyptian language",
         "url": "https://en.wikipedia.org/wiki/Egyptian_language",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Article lu pour le nom r n km.t donné par les Égyptiens à leur langue ; il renvoie au dictionnaire d'Adolf Erman et Hermann Grapow (1926-1961), non consulté directement."
       },
       {
         "title": "Wikipédia anglophone, Names of Egypt",
         "url": "https://en.wikipedia.org/wiki/Names_of_Egypt",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Article lu pour Kemet et pour les explications proposées du grec Aígyptos : ḥwt-kꜣ-ptḥ, l'explication de Strabon et le roi légendaire Aegyptus. L'article ne cite pas de spécialiste pour la première."
       }
     ]

@@ -91,7 +91,8 @@
       {
         "title": "Ethnologue, Temne (tem)",
         "url": "https://www.ethnologue.com/language/tem",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project, Temne of Sierra Leone",

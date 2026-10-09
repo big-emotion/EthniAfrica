@@ -11,7 +11,7 @@
         "Ytata (premiere mention europeenne par Marmol Carvajal, 1571)",
         "Ait 'Atta (transliteration academique standard)"
       ],
-      "originOfExonyms": "Ytata est la transcription iberique du 16e siecle du nom Ait Atta. La transliteration academique Ait Atta est employee par les ethnologues et les sources officielles marocaines. En amazighe, Ait signifie les gens de ou les fils de.",
+      "originOfExonyms": "Ytata est la transcription iberique du 16e siecle du nom Ait Atta. La transliteration academique Ait Atta est employee par les ethnologues et les sources officielles marocaines. Le nom Ait Atta viendrait de l'amazighe ait, qui veut dire « les gens de » ou « les fils de ».",
       "whyProblematic": null,
       "contemporaryUsage": "Ait Atta est le nom standard employe dans les sources marocaines, academiques et administratives. La confederation se designe elle-meme par Ayt Etta en tamazight.",
       "linguisticFamily": "FLG_BERBERE",
@@ -105,7 +105,8 @@
       {
         "title": "University of New Mexico, A Comparison of Haratin and Ait Atta Indigenous Legal Systems",
         "url": "https://digitalrepository.unm.edu/cgi/viewcontent.cgi?article=1041&context=tlj",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "IRCAM (Institut Royal de la Culture Amazighe), Rabat",

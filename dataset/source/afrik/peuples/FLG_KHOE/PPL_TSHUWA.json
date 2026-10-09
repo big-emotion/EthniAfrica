@@ -103,22 +103,26 @@
       {
         "title": "Glottolog 5.3 — Northern Tshwa (tsoa1238), ISO 639-3 : hio",
         "url": "https://glottolog.org/resource/languoid/id/tsoa1238",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Wiktionary — ISO 639-3 codes Africa : hio Tshuwau, tyu Kua",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Tshuwau (hio)",
         "url": "https://www.ethnologue.com/language/hio/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SciELO — The case of Khoisan languages of Botswana",
         "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S2224-33802019000300012",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Botswana countries",

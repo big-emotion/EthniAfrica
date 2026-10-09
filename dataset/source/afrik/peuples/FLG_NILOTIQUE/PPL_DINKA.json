@@ -122,7 +122,8 @@
       {
         "title": "SIL Ethnologue — Dinka macrolanguage (din)",
         "url": "https://www.ethnologue.com/language/din/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Deng, Francis Mading — The Dinka of the Sudan. New York: Holt, Rinehart and Winston, 1972",
@@ -137,7 +138,8 @@
       {
         "title": "Johnson, Douglas H. — The Root Causes of Sudan's Civil Wars. Oxford: James Currey, 2003",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Human Rights Watch — South Sudan: Ethnic Targeting, Crimes Against Humanity (2014)",
@@ -147,12 +149,14 @@
       {
         "title": "CIA World Factbook — South Sudan",
         "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA South Sudan population data",
         "url": "https://southsudan.unfpa.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

@@ -115,7 +115,8 @@
       {
         "title": "SIL Ethnologue — Mende language (men)",
         "url": "https://www.ethnologue.com/language/men/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Translators without Borders — Language data for Sierra Leone",
@@ -130,7 +131,8 @@
       {
         "title": "SIL CEDS — ISO 639-3: Mende = men",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

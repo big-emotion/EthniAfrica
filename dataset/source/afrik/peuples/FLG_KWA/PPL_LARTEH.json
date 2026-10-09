@@ -9,7 +9,7 @@
       "mainName": "Larteh",
       "selfAppellation": "Gua",
       "exonyms": ["Kyerepong", "Okere", "Late", "Lete", "Lɛtɛ"],
-      "originOfExonyms": "Le nom Larteh est derive de deux mots ga signifiant 'pierre de feu' (fire stone). Lɛtɛ est la forme vernaculaire designant a la fois la ville et la langue. Kyerepong (ou Okere) designe le groupe Guan des collines d'Akuapem dont les Larteh font partie; Okere est le terme utilise par les Akan voisins. Gua est le nom que le peuple se donne a lui-meme.",
+      "originOfExonyms": "Le nom Larteh viendrait de deux mots ga qui veulent dire 'pierre de feu' (fire stone). Lɛtɛ est la forme vernaculaire designant a la fois la ville et la langue. Kyerepong (ou Okere) designe le groupe Guan des collines d'Akuapem dont les Larteh font partie; Okere est le terme utilise par les Akan voisins. Gua est le nom que le peuple se donne a lui-meme.",
       "whyProblematic": "Le terme Larteh peut designer a la fois la ville, la langue et le peuple, entrainant des confusions dans la litterature. Kyerepong designe un ensemble plus large comprenant plusieurs communautes Guan des collines d'Akuapem (Abiriw, Dawu, Awukugua, Adukrom, Apirede, Abonse). Certaines sources distinguent Larteh et Kyerepong comme deux groupes distincts au sein de l'Akuapem State.",
       "contemporaryUsage": "Larteh est le nom couramment utilise en anglais pour ce peuple et sa ville dans la Region Est du Ghana. Le terme Gua est prefere par les locuteurs natifs. L'Akuapem State regroupe administrativement Larteh avec d'autres communautes Guan et Akan.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -80,7 +80,8 @@
       {
         "title": "Sabinet – An Account of Lɛtɛ Language Context",
         "url": "https://journals.co.za/doi/10.4314/contjas.v11i1.1",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Medwin Publishers – The Guan-Kyerepon in the Suzerainty of the Asante 1635-1750",
@@ -95,7 +96,8 @@
       {
         "title": "ISO 639-3 Code lar – Larteh",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

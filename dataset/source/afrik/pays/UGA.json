@@ -4,7 +4,7 @@
   "nameEn": "Uganda",
   "nameOfficial": "République de l'Ouganda (Republic of Uganda, Jamhuri ya Uganda)",
   "summary": "L'Ouganda porte le nom du Buganda, le plus puissant royaume de la région, que les Britanniques ont étendu à tout le protectorat. Buganda, Bunyoro, Toro et Ankole y coexistaient comme royaumes distincts. Baganda, Banyankole, Basoga, Acholi, Banyoro et Langi y font se rencontrer mondes bantou et nilotique.",
-  "etymology": "Le nom \"Ouganda\" vient du royaume du Buganda, le plus puissant royaume précolonial de la région. \"Buganda\" signifie \"pays des Baganda\" en langue luganda. Les Britanniques ont utilisé \"Uganda\" (forme anglaise) pour désigner le protectorat, qui incluait plusieurs royaumes (Buganda, Bunyoro, Toro, Ankole). Le nom a été officialisé lors de l'indépendance en 1962.",
+  "etymology": "Le nom \"Ouganda\" viendrait du royaume du Buganda, le plus puissant royaume précolonial de la région. \"Buganda\" voudrait dire \"pays des Baganda\" en langue luganda. Les Britanniques ont utilisé \"Uganda\" (forme anglaise) pour désigner le protectorat, qui incluait plusieurs royaumes (Buganda, Bunyoro, Toro, Ankole). Le nom a été officialisé lors de l'indépendance en 1962.",
   "nameOriginActor": "Le nom \"Ouganda\" vient du royaume du Buganda, nommé par les Baganda. Les Britanniques ont utilisé \"Uganda\" (forme anglaise) pour désigner le protectorat (1894-1962). Le nom a été officialisé lors de l'indépendance (1962).",
   "content": {
     "historicalNames": {
@@ -224,17 +224,20 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Uganda",
         "url": "https://www.cia.gov/the-world-factbook/countries/uganda/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Uganda",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements ougandais",
@@ -254,12 +257,14 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Ouganda",
         "url": "https://www.unfpa.org/data/world-population/UG",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Uganda (ethnic groups)",

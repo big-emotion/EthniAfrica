@@ -77,7 +77,8 @@
       {
         "title": "Luvale Language (LUE) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/lue/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Luvale, Lwena in Angola – Joshua Project, 2025",

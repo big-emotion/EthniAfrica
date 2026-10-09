@@ -19,7 +19,7 @@
         "Mamakush",
         "Mampakush"
       ],
-      "originOfExonyms": "Le nom Mbukushu est utilise par les Tswana du Botswana pour designer ce peuple. L'auto-designation Hambukushu signifie litteralement 'les gens'. Anciennement ils se designaient comme Haguva (les gens) puis Havamasiko avant leur arrivee sur l'Okavango.",
+      "originOfExonyms": "Le nom Mbukushu est utilise par les Tswana du Botswana pour designer ce peuple. L'auto-designation Hambukushu voudrait dire littéralement 'les gens'. Anciennement ils se designaient comme Haguva (les gens) puis Havamasiko avant leur arrivee sur l'Okavango.",
       "whyProblematic": "La multiplicite des variantes orthographiques (Mbukushu, Hambukushu, Hakokuhu) cree des confusions dans les sources coloniales et contemporaines. Le terme Mbukushu est impose par les Tswana et non choisi par le peuple lui-meme.",
       "contemporaryUsage": "Le terme Hambukushu est utilise dans les contextes officiels en Namibie ou il constitue l'un des cinq royaumes Kavango reconnus. Au Botswana le terme Mbukushu est le plus repandu dans les documents gouvernementaux.",
       "linguisticFamily": "FLG_BANTU",
@@ -112,7 +112,8 @@
       {
         "title": "Fisch Maria, The Mbukushu in Angola (1730-2002): A History of Migration, Flight and Royal Rainmaking – Koeppe Verlag, 2005",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

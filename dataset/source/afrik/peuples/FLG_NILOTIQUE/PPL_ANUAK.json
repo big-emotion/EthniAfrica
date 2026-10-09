@@ -112,7 +112,8 @@
       {
         "title": "SIL Ethnologue — Anuak language (anu)",
         "url": "https://www.ethnologue.com/language/anu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Anuak Justice Council — Documentation des violations des droits humains",
@@ -122,7 +123,8 @@
       {
         "title": "Glottolog — Anuak",
         "url": "https://glottolog.org/resource/languoid/id/anua1241",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

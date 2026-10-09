@@ -14,7 +14,7 @@
         "Nieniegue (Bwa du sud, dit Bwa scarifies, pour leur ancienne tradition de scarification faciale)",
         "White Bobo (Bobo Gbe) : terme parfois applique aux Bwa par leurs voisins"
       ],
-      "originOfExonyms": "Le terme Bobo Oule est une appellation jula (dioula) signifiant Bobo Rouge, les differençant des Bobo fing (Bobo Noirs), un peuple distinct. Les premiers Europeens ont confus les Bwa avec les Bobo, erreur perpetuee dans les documents coloniaux. Nieniegue (Bwa scarifies) designe les Bwa du sud qui pratiquaient historiquement la scarification corporelle et faciale. Les Bwa rejettent le terme Bobo comme une mauvaise denomination.",
+      "originOfExonyms": "Le terme Bobo Oule est une appellation jula (dioula) qui voudrait dire Bobo Rouge, pour les distinguer des Bobo fing (Bobo Noirs), un peuple distinct. Les premiers Europeens ont confus les Bwa avec les Bobo, erreur perpetuee dans les documents coloniaux. Nieniegue (Bwa scarifies) designe les Bwa du sud qui pratiquaient historiquement la scarification corporelle et faciale. Les Bwa rejettent le terme Bobo comme une mauvaise denomination.",
       "whyProblematic": "La confusion systematique entre Bwa et Bobo (deux peuples distincts) dans les sources coloniales et meme contemporaines est la principale difficulte ethnonymique. Les Bwa sont un groupe gur distinct des Bobo (groupe mande), bien que leurs territoires soient proches.",
       "contemporaryUsage": "Bwa est l'auto-denomination prefere. Bwaba est la forme adjective ou nominale etendue utilisee dans les contextes academiques et nationaux burkinabe. Le terme Bobo Oule subsiste dans la litterature jula mais tend a etre abandonne.",
       "linguisticFamily": "FLG_GUR",
@@ -115,7 +115,8 @@
       {
         "title": "Pacific Lutheran University — Learn More: Bwa Mask",
         "url": "https://www.plu.edu/africanartcollection/masks/bwa-mask/learn-more-bwa-mask/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Encyclopaedia Britannica — Bwa",
@@ -125,7 +126,8 @@
       {
         "title": "Roy, Christopher D. et Wheelock, Thomas G. B. Land of the Flying Masks: Art and Culture in Burkina Faso. Prestel Verlag, 2007",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

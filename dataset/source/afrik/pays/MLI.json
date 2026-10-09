@@ -581,12 +581,14 @@
       {
         "title": "CIA World Factbook – Mali",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Mali",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements nationaux maliens",
@@ -596,12 +598,14 @@
       {
         "title": "ONU – Données démographiques 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Mali",
         "url": "https://www.unfpa.org/data/world-population/ML",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Études anthropologiques sur les peuples maliens",
@@ -616,28 +620,33 @@
       {
         "title": "CIA World Factbook – Mali (ethnic groups, 2018 est.)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Glottolog 5.3 — Mamara Senoufo (myk)",
         "url": "https://glottolog.org/resource/languoid/id/mama1271",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Colleyn, Jean-Paul et Jonckers, Danielle — Ceux qui refusent le maître : la conception du pouvoir chez les Minyanka du Mali. Africa 53(4), 1983, p. 43-58",
         "url": "https://www.cambridge.org/core/journals/africa/article/abs/ceux-qui-refusent-le-maitre-la-conception-du-pouvoir-chez-les-minyanka-du-mali/10D44A79F1FF3B3F9C4E211F24E4BB21",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Peer-reviewed article published by Cambridge University Press; supports the naming and self-identification note."
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Toponymic Factfile: Mali — Permanent Committee on Geographical Names (Royaume-Uni)",
         "url": "https://assets.publishing.service.gov.uk/media/67eaae97070b3238cf7f27b8/Mali_toponymic_factfile.pdf",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Fiche officielle britannique de toponymie, édition 2025 : les treize langues nationales reconnues par la Constitution, le bambara compris par environ 80 % de la population, le français devenu langue de travail avec la révision constitutionnelle de 2023."
       },
       {
@@ -650,18 +659,21 @@
         "title": "Collet, Hadrien (2013) – L'introuvable capitale du Mali, Afriques 4",
         "url": "https://journals.openedition.org/afriques/1098",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Retrace comment la lecture Niani a été substituée à un tracé consonantique arabe que les manuscrits ne vocalisent pas. Accès libre."
       },
       {
         "title": "Office of the Historian — A Guide to the United States’ History of Recognition, Diplomatic, and Consular Relations: Mali",
         "url": "https://history.state.gov/countries/mali",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Notice historique du Département d’État des États-Unis. Distingue l’indépendance de la Fédération le 20 juin 1960, le retrait du Sénégal le 20 août et l’adoption du nom de République du Mali le 22 septembre. Consultée le 23 septembre 2026."
       },
       {
         "title": "Office of the Historian — Memorandum From Acting Secretary of State Dillon to President Eisenhower, 23 September 1960, FRUS 1958–1960, volume XIV, document 75",
         "url": "https://history.state.gov/historicaldocuments/frus1958-60v14/d75",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Document diplomatique contemporain rapportant la décision de l’Assemblée de la République soudanaise du 22 septembre 1960. Consulté le 23 septembre 2026."
       },
       {
@@ -687,6 +699,7 @@
         "title": "Fauvelle, François-Xavier (2024) — The imperial capital of Mâli (14th century): A new hypothesis, Medievalista 35",
         "url": "https://scielo.pt/scielo.php?pid=S1646-740X2024000100055&script=sci_arttext",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de recherche, DOI 10.4000/medievalista.7706, consulté le 23 septembre 2026. Analyse les usages médiévaux du nom Mali dans les récits arabes et l’Atlas catalan de 1375, en les distinguant de la République actuelle. Les attestations du nom n’en établissent pas le sens premier."
       }
     ],

@@ -9,7 +9,7 @@
       "mainName": "Nembe",
       "selfAppellation": "Nembe",
       "exonyms": ["Brass", "Nimbe", "Izon"],
-      "originOfExonyms": "Le nom Brass est un nom colonial britannique derive de la ville de Twon-Brass sur la cote, devenu le principal port d'exportation de l'huile de palme au XIXe siecle. Ce nom est utilise pour la ville et le Local Government Area (Nembe et Brass LGA). Le terme Izon (ou Ijo/Ijaw) designe le groupe ethnolinguistique plus large auquel appartiennent les Nembe. Nimbe est une variante orthographique du meme nom.",
+      "originOfExonyms": "Le nom Brass est un nom colonial britannique qui viendrait de la ville de Twon-Brass sur la cote, devenu le principal port d'exportation de l'huile de palme au XIXe siecle. Ce nom est utilise pour la ville et le Local Government Area (Nembe et Brass LGA). Le terme Izon (ou Ijo/Ijaw) designe le groupe ethnolinguistique plus large auquel appartiennent les Nembe. Nimbe est une variante orthographique du meme nom.",
       "whyProblematic": "La denomination Brass est d'origine coloniale et ne reflete pas l'identite autochtone du peuple. Elle peut etre confondue avec la ville de Brass (Twon-Brass), qui est une localite distincte au sein du territoire nembe. Le terme Ijaw designe un ensemble plus vaste de peuples dont les Nembe constituent un sous-groupe.",
       "contemporaryUsage": "Le terme Nembe est la designation oficielle et preferee dans les contextes contemporains. Le Nembe et Brass Local Government Area de l'Etat de Bayelsa constitue la zone administrative principale. Les Nembe sont reconnus comme un sous-groupe distinct des Ijaw (Izon) orientaux.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -102,12 +102,14 @@
       {
         "title": "Ethnologue (SIL) — Southeast Ijo (nvm)",
         "url": "https://www.ethnologue.com/language/nvm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Guardian Nigeria — Modernising Ijaw language (mention de Kay Williamson et orthographe Nembe)",
         "url": "https://guardian.ng/art/modernising-ijaw-language/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       }
     ]
   }

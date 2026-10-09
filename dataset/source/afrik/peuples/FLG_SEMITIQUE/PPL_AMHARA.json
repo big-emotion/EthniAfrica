@@ -13,7 +13,7 @@
         "Habesha (terme régional englobant Amhara et Tigréens)",
         "Al-Amhari (terme arabe médiéval)"
       ],
-      "originOfExonyms": "Le terme Abyssin est dérivé du nom arabe Habash, désignant les peuples des hautes terres éthiopiennes. Le terme Habesha, utilisé par les Amhara et les Tigréens pour se désigner eux-mêmes collectivement, renvoie aux origines sudarabes (Himyarites, Sabaens) des populations sémitiques de la Corne de l'Afrique. Au 14e siècle, les sources arabes désignent l'empereur amhara sous le titre al-Malik al-Amhari.",
+      "originOfExonyms": "Le terme Abyssin viendrait du nom arabe Habash, désignant les peuples des hautes terres éthiopiennes. Le terme Habesha, utilisé par les Amhara et les Tigréens pour se désigner eux-mêmes collectivement, renvoie aux origines sudarabes (Himyarites, Sabaens) des populations sémitiques de la Corne de l'Afrique. Au 14e siècle, les sources arabes désignent l'empereur amhara sous le titre al-Malik al-Amhari.",
       "whyProblematic": "L'identité amhara est complexe car ce groupe a longtemps exercé une domination politique et culturelle sur l'Éthiopie, ce qui a conduit à confondre l'identité amhara avec l'identité éthiopienne elle-même. Sous le FDRE (depuis 1991), l'organisation ethnique de l'Éthiopie a généré des tensions autour de la définition de l'amharité (débat Mesfin Woldemariam vs Meles Zenawi en 1991).",
       "contemporaryUsage": "Le terme Amhara désigne aujourd'hui le groupe ethnique dominant des hautes terres centrales et nord-ouest de l'Éthiopie, langue officielle de facto de l'État éthiopien (avec l'oromo depuis 2019). Les Amhara représentent environ 26-27 % de la population éthiopienne. Depuis 2018, le Mouvement national amhara (MNA) défend leurs intérêts politiques.",
       "linguisticFamily": "FLG_SEMITIQUE",
@@ -93,22 +93,26 @@
       {
         "title": "SIL Ethnologue - Amharic (amh)",
         "url": "https://www.ethnologue.com/language/amh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog - Amharic (amha1245)",
         "url": "https://glottolog.org/resource/languoid/id/amha1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethiopian Central Statistics Agency - Census 2007",
         "url": "https://www.csa.gov.et/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Encyclopaedia Aethiopica. Harrassowitz Verlag, 2003-2014",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Phillipson, David W. - Ancient Ethiopia. The British Museum Press, 1998",
@@ -118,35 +122,41 @@
       {
         "title": "Levine, Donald N. - Wax and Gold : Tradition and Innovation in Ethiopian Culture. University of Chicago Press, 1965",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook - Ethiopia",
         "url": "https://www.cia.gov/the-world-factbook/countries/ethiopia/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Marcus, Harold G. - A History of Ethiopia. University of California Press, 1994 (éd. rév. 2002)",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Cité par Wikipédia (Ras (title), note 5) pour l'étymologie de ras (« tête », titre de noblesse équivalent à duc) ; cité par Wikipédia (Haile Selassie, note 90) pour la date du 7 octobre 1928 (Tafari fait negus). Ouvrage non consulté directement, citation vérifiée via son usage sur Wikipédia."
       },
       {
         "title": "Witakowski, Witold ; Balicka-Witakowska, Ewa - \"Solomon in Ethiopian Tradition\", in The Queen of Sheba and Her Sons, Brill, 2013",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Cité par Wikipédia (1955 Constitution of Ethiopia, note 7) pour le texte de l'article 2 sur la lignée impériale revendiquée jusqu'à Ménélik Ier, la reine de Saba et Salomon. Ouvrage non consulté directement."
       },
       {
         "title": "Murrell, Nathaniel Samuel ; Spencer, William D. ; McFarlane, Adrian A. (dir.) - Chanting Down Babylon: The Rastafari Reader. Temple University Press, 1998",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Cité par Wikipédia (Lion of Judah, note 11, chapitre de Clinton Chislom) pour le titre impérial « conquering Lion of Judah, elect of God » ; cité par Wikipédia (Haile Selassie, note 45) pour l'étymologie « Haile Selassie » = « puissance de la Trinité ». Ouvrage non consulté directement."
       },
       {
         "title": "Edmonds, Ennis B. - Rastafari: A Very Short Introduction. Oxford University Press, 2012",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Un des quatre ouvrages cités par Wikipédia (Rastafari, note 30, p. 32) pour l'origine du nom « Rastafari », repris de « Ras Tafari Makonnen ». Ouvrage non consulté directement."
       }
     ]

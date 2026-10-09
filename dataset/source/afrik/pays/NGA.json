@@ -246,12 +246,14 @@
       {
         "title": "CIA World Factbook – Nigeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Nigeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements nationaux nigérians",
@@ -261,12 +263,14 @@
       {
         "title": "ONU – Données démographiques 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Nigeria",
         "url": "https://www.unfpa.org/data/world-population/NG",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Études anthropologiques sur les peuples nigérians",
@@ -281,17 +285,20 @@
       {
         "title": "CIA World Factbook – Nigeria (ethnic groups, 2018 est.)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Dubawa — How true is the claim that Flora Shaw coined the name Nigeria?",
         "url": "https://dubawa.org/nigeria60-how-true-is-claim-that-flora-shaw-british-journalist-coined-the-name-nigeria/",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "L'étude situe au 8 janvier 1897 l'article du Times proposant le nom Nigeria. Elle distingue la proposition d'un nom de son imposition. Elle signale aussi des usages antérieurs de « Nigerian » chez Cole (1862) et Burton (1863), dont l'interprétation reste discutée."
       }
     ],

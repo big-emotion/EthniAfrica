@@ -88,7 +88,8 @@
       {
         "title": "SIL Ethnologue — Lango language (laj)",
         "url": "https://www.ethnologue.com/language/laj/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Lango people",
@@ -108,7 +109,8 @@
       {
         "title": "Academia.edu — The Socio-Political History of the Langi of Uganda 1750-1909",
         "url": "https://www.academia.edu/11684657/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

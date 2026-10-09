@@ -108,12 +108,14 @@
       {
         "title": "Ethnologue — Lobi Language (LOB)",
         "url": "https://www.ethnologue.com/language/lob/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Lobi",
         "url": "https://glottolog.org/resource/languoid/id/lobi1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Encyclopedia.com — Lobi-Dagarti Peoples",

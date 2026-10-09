@@ -12,7 +12,7 @@ import type { Language } from "@/types/shared";
  *
  * Filled on all 30 dossiers and exposed by the serializer, but the view had
  * no Sources section at all — so a name fiche published no `#sources` anchor,
- * which is the target every confidence chip and citation link in the app
+ * which is the target every source review chip and citation link in the app
  * points at. The anchor is as much the point of this section as the list is.
  *
  * The id matches the other four fiches deliberately: one `#sources` anchor

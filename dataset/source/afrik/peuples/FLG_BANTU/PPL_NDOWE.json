@@ -9,7 +9,7 @@
       "mainName": "Ndowe",
       "selfAppellation": "Ndowe",
       "exonyms": ["Playeros", "Peuples de la plage", "Beach People"],
-      "originOfExonyms": "Playeros est le terme espagnol signifiant litteralement gens de la plage ou habitants du rivage, utilise par les colons espagnols pour designer les peuples cotiers de la Guinee equatoriale. Beach People en est la traduction anglaise. Le terme Ndowe signifie lui-meme les gens dans leur langue native.",
+      "originOfExonyms": "Playeros viendrait de l'espagnol et voudrait dire littéralement gens de la plage ou habitants du rivage ; les colons espagnols l'utilisaient pour désigner les peuples côtiers de la Guinée équatoriale. Beach People en est la traduction anglaise. Le terme Ndowe voudrait dire lui-même les gens dans leur langue native.",
       "whyProblematic": "Le nom Ndowe est en realite un terme collectif englobant plusieurs peuples bantous cotiers distincts (Kombe, Benga, Bujeba, Balengue, etc.) partageant une identite littorale commune. Il est parfois difficile de distinguer les differents sous-groupes dans les statistiques et les sources.",
       "contemporaryUsage": "Ndowe et Playeros sont utilises de maniere interchangeable en Guinee equatoriale. Le terme Ndowe est prefere dans les contextes politiques et culturels contemporains. Le nom Pais Ndowe (Pays Ndowe) designe la region cotiere de la province du Littoral en Guinee equatoriale.",
       "linguisticFamily": "FLG_BANTU",
@@ -94,7 +94,8 @@
       {
         "title": "Benga language and alphabet – Omniglot",
         "url": "https://www.omniglot.com/writing/benga.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "What are the different tribes of Equatorial Guinea – SAIGA Tours",
@@ -104,7 +105,8 @@
       {
         "title": "Equatorial Guinea – South African History Online",
         "url": "https://sahistory.org.za/place/equatorial-guinea",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       }
     ]
   }

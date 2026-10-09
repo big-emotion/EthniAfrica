@@ -14,7 +14,7 @@
         "Vekuhane (en Namibie et Botswana)",
         "Masubia"
       ],
-      "originOfExonyms": "Le nom Subiya aurait ete donne par les Luyi (Lozi) en raison de la peau pale des membres du groupe ('Subira' signifiant 'pale' en lozi), peut-etre parce qu'ils peignaient leur peau a l'ocre. Le nom Ikuhane ou Kuhane derive du roi Ikuhane (1575-1600), fils du premier chef Itenge, qui migra vers la riviere Chobe et lui donna son nom (Ikuhane River).",
+      "originOfExonyms": "Le nom Subiya aurait ete donne par les Luyi (Lozi) en raison de la peau pale des membres du groupe ('Subira' signifiant 'pale' en lozi), peut-etre parce qu'ils peignaient leur peau a l'ocre. Le nom Ikuhane ou Kuhane dériverait du roi Ikuhane (1575-1600), fils du premier chef Itenge, qui aurait migré vers la rivière Chobe et lui aurait donné son nom (Ikuhane River).",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Subiya est utilise en Zambie, Subia ou Kuhane en Namibie et Vekuhane au Botswana. La langue (Chikuhane ou Chisubia) reste la langue maternelle du groupe mais est menacee par la langue Silozi (lozi) qui est la langue officielle dans la region de Caprivi/Zambezi en Namibie et dans l'ouest de la Zambie.",
       "linguisticFamily": "FLG_BANTU",
@@ -121,12 +121,14 @@
       {
         "title": "Subia – Justapedia",
         "url": "https://justapedia.org/wiki/Subia_people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Glottolog — Subiya (subi1246)",
         "url": "https://glottolog.org/resource/languoid/id/subi1246",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

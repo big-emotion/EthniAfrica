@@ -17,7 +17,7 @@
         "Nyam nyam",
         "Neam Nam"
       ],
-      "originOfExonyms": "Le nom Azande signifie en langue zande les gens qui possedent beaucoup de terre, refletant leur histoire de conquerants. Le terme pejoratif Niam-Niam (et ses variantes Nyam-Nyam, Neam Nam) fut employe par les peuples arabes voisins et les explorateurs europeens des 18e-19e siecles, evoquant une reputation de cannibalisme. Le turc yamyam en derive. La plante Impatiens niamniamensis a ete nommee d'apres eux.",
+      "originOfExonyms": "Le nom Azande voudrait dire en langue zande les gens qui possèdent beaucoup de terre, ce qui refléterait leur histoire de conquérants. Le terme pejoratif Niam-Niam (et ses variantes Nyam-Nyam, Neam Nam) fut employe par les peuples arabes voisins et les explorateurs europeens des 18e-19e siecles, evoquant une reputation de cannibalisme. Le turc yamyam en dériverait. La plante Impatiens niamniamensis a ete nommee d'apres eux.",
       "whyProblematic": "Niam-Niam est un nom méprisant qui associe les Azande au cannibalisme. Les sources qui décrivent cette pratique l'attribuent à certains clans, et non à l'ensemble du peuple. Les formes Azande et Zande peuvent aussi prêter à confusion : Azande est le pluriel, tandis que Zande désigne une personne et la langue.",
       "contemporaryUsage": "Le terme Azande (pluriel) ou Zande (singulier) est l'appellation standard dans les sources scientifiques et officielles. Les Azande du Soudan du Sud vivent principalement dans les Etats de l'Equatoria central, de l'Equatoria occidental et du Bahr el Ghazal occidental, dans les villes de Yambio, Tombura, Deim Zubeir et Wau.",
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
@@ -109,12 +109,14 @@
       {
         "title": "Evans-Pritchard, E.E. — Witchcraft, Oracles and Magic Among the Azande. Oxford University Press, 1937 (abrege 1976). ISBN 0-19-874029-8",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Zande language (zne)",
         "url": "https://www.ethnologue.com/language/zne/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Azande in South Sudan",
@@ -129,7 +131,8 @@
       {
         "title": "CIA World Factbook — South Sudan",
         "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

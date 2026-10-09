@@ -120,7 +120,8 @@
       {
         "title": "Metropolitan Museum of Art — Male Reliquary Figure (Nlo Bieri), Fang peoples",
         "url": "https://www.metmuseum.org/art/collection/search/312334",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Fang in Gabon",
@@ -135,7 +136,8 @@
       {
         "title": "SIL Ethnologue — Fang language (fan)",
         "url": "https://www.ethnologue.com/language/fan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -137,17 +137,20 @@
       {
         "title": "Gambia Bureau of Statistics — 2024 Population and Housing Census",
         "url": "https://gambia.unfpa.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "SIL Ethnologue — Serer-Sine language (srr)",
         "url": "https://www.ethnologue.com/language/srr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Galvan, Dennis Charles. The State Must Be Our Master of Fire: How Peasants Craft Culturally Sustainable Development in Senegal. University of California Press, 2004",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Gravrand, Henry. La civilisation sereer. Dakar : Nouvelles Editions Africaines, 1983",

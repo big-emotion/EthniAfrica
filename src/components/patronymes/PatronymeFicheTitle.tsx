@@ -34,7 +34,7 @@ function standingSentence(standing: NameStanding, t: PatronymeCopy): string {
  * from which fields the dossier below happens to show, and what the fiche
  * rests on.
  *
- * The standing carries no percentage and no `ConfidenceChip`: DEC-050 rules
+ * The standing carries no percentage and no `SourceReviewChip`: DEC-050 rules
  * that a name has neither a confidence row nor a human-audit date, so a figure
  * here would be arithmetic on two terms that are zero by construction. Nor
  * does it name the sources' tier (doctrine §1.1): the reader is told how many

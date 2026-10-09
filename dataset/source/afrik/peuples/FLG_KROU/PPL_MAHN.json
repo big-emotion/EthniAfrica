@@ -101,12 +101,14 @@
       {
         "title": "Omniglot – Mano language and alphabet, 2021",
         "url": "https://www.omniglot.com/writing/mano.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue – Maan language (mev), SIL International, 2024",
         "url": "https://www.ethnologue.com/language/mev/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

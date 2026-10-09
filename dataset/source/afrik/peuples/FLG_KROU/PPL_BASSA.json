@@ -108,12 +108,14 @@
         "title": "Glottolog 5.3 — Bassa (bsq)",
         "url": "https://glottolog.org/resource/languoid/id/nucl1418",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Supports the Kru classification."
       },
       {
         "title": "SIL Ethnologue — Bassa (bsq)",
         "url": "https://www.ethnologue.com/language/bsq/",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Ethnologue's page could not be consulted directly, so the 18th-edition (2015) speaker figures and dialect-cluster names cited here were read from its data as relayed in the infobox of the English Wikipedia article \"Bassa language\", crossed on 2026-09-05."
       },
       {
@@ -131,18 +133,21 @@
         "title": "Sage Reference — Encyclopedia of African Religion, Bassa",
         "url": "https://sk.sagepub.com/ency/edvol/africanreligion/chpt/bassa",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Entrée « Bassa » signée Emmanuel Kombem Ngwainmbi, pages 108-110. Elle porte la formule Baah Sooh Nyombe et sa traduction « Father Stone's people », lues le 10 septembre 2026 dans l'exemplaire numérisé par Internet Archive. La même entrée traite comme un seul peuple les Bassa du Liberia, du Cameroun, du Nigeria, du Togo, du Congo et du Sénégal, leur donne une origine égyptienne et la classification bantoue des Bassa du Cameroun ; elle est aussi la source des formes Gboboh, Adbassa et Bambog-Mbog. Elle est citée pour ce qu'elle affirme, non comme description des seuls Bassa du Liberia."
       },
       {
         "title": "Liberia Institute of Statistics and Geo-Information Services (LISGIS) — 2022 Population and Housing Census, Final Results Report",
         "url": "https://www.lisgis.gov.lr/document/LiberiaCensus2022Report.pdf",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "Report of the national statistics office. The document itself could not be opened, so only the national total population is drawn from it here (corroborated independently below); its ethnic-group breakdown table was not verified."
       },
       {
         "title": "UN Liberia — Liberia announces provisional results of its 5th National Population and Housing Census (2022)",
         "url": "https://liberia.un.org/en/220493-liberia-announces-provisional-results-its-5th-national-population-and-housing-census",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "UN country office press release; independently corroborates LISGIS's national total of 5,248,621 (census night 10-11 November 2022) cited in the demography source note."
       },
       {
@@ -166,6 +171,7 @@
         "title": "Unseth, Peter (2011) — \"Invention of Scripts in West Africa for Ethnic Revitalization\", in Handbook of Language and Ethnic Identity, Oxford University Press",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Offline book chapter; identified via the bibliography of the English Wikipedia article \"Bassa Vah alphabet\", crossed on 2026-09-05, supporting the script's framing as an ethnic-revitalization project. Content not independently re-verified."
       },
       {
@@ -184,6 +190,7 @@
         "title": "Syrulwa Somah, « Tribute to Rev. Joseph Munter Nana Gbadyu, a Veteran Bassa Historian », FrontPage Africa, 23 mai 2017",
         "url": "https://frontpageafricaonline.com/opinion/tribute-to-rev-joseph-munter-nana-gbadyu-a-veteran-bassa-historian/",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Hommage signé, paru dans un quotidien liberien identifiable. Il donne les dates de Gbadyu (10 juillet 1933 - 14 mai 2017), ses fonctions — journaliste de radio, superintendant du comté de Grand Bassa de 1976 à 1980, vice-ministre — et nomme son ouvrage. Il ne dit rien de l'origine du nom Bassa."
       },
       {

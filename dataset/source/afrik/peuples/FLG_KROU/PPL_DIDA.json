@@ -111,23 +111,27 @@
       {
         "title": "Ethnologue – Dida, Lakota (dic)",
         "url": "https://www.ethnologue.com/language/dic/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue – Dida, Yocoboué (gud)",
         "url": "https://www.ethnologue.com/language/gud/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Dozon, Jean-Pierre — La société Bété : histoires d'une ethnie de Côte d'Ivoire. Paris : Karthala ; ORSTOM, 1985",
         "url": "https://www.documentation.ird.fr/hor/fdi:17296",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "IRD-hosted academic monograph; supports the colonial Bété-Dida boundary note around Gagnoa."
       },
       {
         "title": "SearchWorks Stanford – Dynamique des institutions coutumières dida de Côte d'Ivoire",
         "url": "https://searchworks.stanford.edu/view/11373252",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "France 24 / YouTube – Djaka festival en Côte d'Ivoire",

@@ -111,7 +111,8 @@
       {
         "title": "SIL Ethnologue — Burji language (bji)",
         "url": "https://www.ethnologue.com/language/bji/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

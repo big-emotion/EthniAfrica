@@ -1,12 +1,12 @@
 import type { Language } from "@/types/shared";
 
 /**
- * What the confidence chip says. It states a reference count and the date a
+ * What the source review chip says. It states a reference count and the date a
  * person last reviewed those references, and nothing about how likely the claim
  * is to be true: a percentage beside a claim reads as its odds, and « vérifié »
  * reads as a guarantee (audit findings T04, T02).
  */
-interface ConfidenceChipCopy {
+interface SourceReviewChipCopy {
   references: (count: number) => string;
   pill: (references: string, isoDate: string) => string;
   openSources: (references: string, longDate: string) => string;
@@ -14,7 +14,7 @@ interface ConfidenceChipCopy {
 }
 
 // @req REQ-019
-export const confidenceChipCopy: Record<Language, ConfidenceChipCopy> = {
+export const sourceReviewChipCopy: Record<Language, SourceReviewChipCopy> = {
   fr: {
     references: (count) =>
       `${count} ${count === 1 ? "référence" : "références"}`,

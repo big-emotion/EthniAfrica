@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
+import { SourceReviewChip } from "@/components/source-transparency/SourceReviewChip";
 import { LazySourceChainSheet } from "@/components/source-transparency/SourceChainSheet.lazy";
 import {
   toSourceChainEvidence,
@@ -31,7 +31,7 @@ export function SearchFeedEvidenceAction({
       id={anchorId}
       className="mt-afh-lg flex flex-wrap items-center gap-afh-md"
     >
-      <ConfidenceChip
+      <SourceReviewChip
         id={anchorId}
         language={language}
         sourceCount={evidence.assertion.sourceCount}

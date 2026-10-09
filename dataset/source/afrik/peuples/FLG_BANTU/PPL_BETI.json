@@ -103,12 +103,14 @@
       {
         "title": "SIL Ethnologue — Ewondo language (ewo)",
         "url": "https://www.ethnologue.com/language/ewo/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Fang language (fan)",
         "url": "https://www.ethnologue.com/language/fan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Ewondo, Beti in Cameroon",

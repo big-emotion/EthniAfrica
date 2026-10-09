@@ -13,7 +13,7 @@
         "Tigrean (terme anglais)",
         "Tigrigna speakers (designation linguistique utilisee en Erythree pour distinguer des Tigrinya eritreens)"
       ],
-      "originOfExonyms": "Le nom Tigray (ትግራይ) derive probablement du terme ge'ez ancien Tigri ou Tigriti, dessinant la region et ses habitants. Le geographe arabe Ibn al-Faqih (vers 903 apr. J.-C.) est l'un des premiers a mentionner Tigri comme region distincte. Hiob Ludolf au 17e siecle decrit la region comme Regio Tigrensis ou Tigraia. L'appellation Tigrigna ou Tigrinya est parfois utilisee pour designer les locuteurs du tigrinya d'Erythree, a distinguer des Tigrayens d'Ethiopie.",
+      "originOfExonyms": "Le nom Tigray (ትግራይ) viendrait du terme ge'ez ancien Tigri ou Tigriti, qui désignait la région et ses habitants. Le geographe arabe Ibn al-Faqih (vers 903 apr. J.-C.) est l'un des premiers a mentionner Tigri comme region distincte. Hiob Ludolf au 17e siecle decrit la region comme Regio Tigrensis ou Tigraia. L'appellation Tigrigna ou Tigrinya est parfois utilisee pour designer les locuteurs du tigrinya d'Erythree, a distinguer des Tigrayens d'Ethiopie.",
       "whyProblematic": "La distinction entre Tigrayens d'Ethiopie et Tigrinya d'Erythree (aussi Tigrigna) est source de confusion : les deux groupes parlent le tigrinya mais sont separes par la frontiere nationale depuis 1993. En Erythree, le terme Tigrinya designe le groupe specifiquement eritreen. Le conflit du Tigray (2020-2022) a politise et tensifie les enjeux identitaires liees au terme Tigray.",
       "contemporaryUsage": "Le terme Tigray designe a la fois le peuple, la region federale du nord de l'Ethiopie (Region Tigray) et la langue (tigrinya). L'identite tigraye est forte et etroitement liee au patrimoine aksumite et a l'Eglise orthodoxe ethiopienne. Le Tigray People's Liberation Front (TPLF) a domine la politique ethiopienne de 1991 a 2019 avant le conflit.",
       "linguisticFamily": "FLG_SEMITIQUE",
@@ -105,7 +105,8 @@
       {
         "title": "Ethnologue — Tigrinya (tir)",
         "url": "https://www.ethnologue.com/language/tir",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "EthnoMed — Tigrean Cultural Profile",
@@ -115,7 +116,8 @@
       {
         "title": "PMC Population Health Metrics — Civilian death and injury from airstrikes in Tigray",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11909939/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Martin Plaut — Tigray, evidence of the death toll",
@@ -125,12 +127,14 @@
       {
         "title": "Encyclopaedia Aethiopica, vol. 4 (Uhlig ed.), Harrassowitz Verlag, 2010",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Ethiopian Central Statistical Agency (CSA) — Population and Housing Census 2007",
         "url": "https://www.csa.gov.et",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

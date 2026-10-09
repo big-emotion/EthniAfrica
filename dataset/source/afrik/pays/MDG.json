@@ -4,7 +4,7 @@
   "nameEn": "Madagascar",
   "nameOfficial": "République de Madagascar (Repoblikan'i Madagasikara)",
   "summary": "Madagascar doit son nom à une méprise : « Madageiscar », chez Marco Polo, désignait probablement Mogadiscio, et les Portugais l'ont appliqué à l'île. Peuplée par des migrations venues d'Asie du Sud-Est et d'Afrique de l'Est, elle réunit Merina, Betsimisaraka, Betsileo, Sakalava et Antandroy autour d'une langue commune, le malgache. Le famadihana y dit le rapport aux ancêtres.",
-  "etymology": "Le nom \"Madagascar\" vient probablement de \"Madageiscar\", mentionné par Marco Polo au XIIIe siècle, qui faisait référence à Mogadiscio en Somalie. Les Portugais ont ensuite appliqué ce nom à l'île qu'ils appelaient \"São Lourenço\". En malgache, le pays est appelé \"Madagasikara\".",
+  "etymology": "Le nom \"Madagascar\" viendrait de \"Madageiscar\", mentionné par Marco Polo au XIIIe siècle, qui aurait désigné Mogadiscio en Somalie. Les Portugais ont ensuite appliqué ce nom à l'île qu'ils appelaient \"São Lourenço\". En malgache, le pays est appelé \"Madagasikara\".",
   "nameOriginActor": "Le nom a été popularisé par les navigateurs européens (portugais, français) à partir du XVIe siècle. L'origine exacte est incertaine, mais pourrait provenir d'une confusion avec Mogadiscio.",
   "content": {
     "historicalNames": {
@@ -187,12 +187,14 @@
       {
         "title": "CIA World Factbook – Madagascar",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Malagasy language (mlg)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements nationaux malgaches",
@@ -202,12 +204,14 @@
       {
         "title": "ONU – Données démographiques 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Madagascar",
         "url": "https://www.unfpa.org/data/world-population/MG",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Études anthropologiques sur les peuples malgaches",
@@ -227,12 +231,14 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "EPR Atlas — Ethnicity in Madagascar (GROWup, ETH Zurich)",
         "url": "https://growup.ethz.ch/atlas/pdf/Madagascar.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Donne la part des cinq groupes les plus nombreux : Merina 27 %, Betsimisaraka 15 %, Betsileo 13 %, Antandroy 8 %, Sakalava 5 %. Les recensements malgaches ne relèvent pas l'appartenance ethnique — celui de 2018 a dénombré 25,7 millions d'habitants sans poser la question —, si bien qu'aucune répartition officielle n'existe et que ces parts restent des estimations. Nous rappelons que les dix-huit groupes dits officiels ont été figés par l'administration coloniale française plus que par des frontières culturelles nettes, et que les Bara et les Sihanaka relèvent des deux grands ensembles à la fois, raison pour laquelle ils ne reçoivent pas de part propre."
       }
     ],

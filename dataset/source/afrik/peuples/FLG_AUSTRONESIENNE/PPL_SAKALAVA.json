@@ -11,7 +11,7 @@
         "Sakalava (terme signifiant le plus couramment ceux des longues vallees, faisant reference a la topographie plate de l'ouest malgache)",
         "Saqaliba (hypothese etymologique arabe, du latin sclavus, esclave, en reference au commerce d'esclaves)"
       ],
-      "originOfExonyms": "L'etymologie la plus repandue derive du malgache moderne et signifie ceux qui habitent les longues vallees ou ravins (saka : vallee/ravin, lava : long). Une theorie alternative, moins etablie, le fait remonter a l'arabe saqaliba.",
+      "originOfExonyms": "L'explication la plus répandue fait venir le nom du malgache moderne : il voudrait dire « ceux qui habitent les longues vallées ou ravins » (saka : vallée/ravin, lava : long). Une theorie alternative, moins etablie, le fait remonter a l'arabe saqaliba.",
       "whyProblematic": null,
       "contemporaryUsage": "Sakalava est l'appellation officielle et courante utilisee par le groupe lui-meme et par les autorites malgaches.",
       "linguisticFamily": "FLG_AUSTRONESIENNE",
@@ -89,22 +89,26 @@
       {
         "title": "SIL Ethnologue - Sakalava Malagasy (skg)",
         "url": "https://www.ethnologue.com/language/skg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue - Malagasy macrolanguage (mlg)",
         "url": "https://www.ethnologue.com/language/mlg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook - Madagascar",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Banque mondiale - Madagascar",
         "url": "https://data.worldbank.org/country/madagascar",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Joshua Project - Sakalava in Madagascar",

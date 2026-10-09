@@ -10,10 +10,10 @@ import { FALLBACK_LOCALE } from "@/lib/locale";
 
 // Wave-2 imports — excluded from the initial bundle.
 // The Suspense fallback renders the prose immediately (Wave 1), protecting LCP.
-const LazyConfidenceChip = lazy(async () => {
-  const { ConfidenceChip } =
-    await import("@/components/source-transparency/ConfidenceChip");
-  return { default: ConfidenceChip };
+const LazySourceReviewChip = lazy(async () => {
+  const { SourceReviewChip } =
+    await import("@/components/source-transparency/SourceReviewChip");
+  return { default: SourceReviewChip };
 });
 
 const LazySourceChainSheet = lazy(
@@ -154,14 +154,14 @@ interface ProseWithChipProps {
 }
 
 /**
- * Renders a prose paragraph with an optional inline ConfidenceChip at the end.
+ * Renders a prose paragraph with an optional inline SourceReviewChip at the end.
  *
  * Two-wave hydration (protects LCP, UX-DR46):
  *   Wave 1 — prose text renders immediately via Suspense fallback.
  *   Wave 2 — lazy chip JS loads after the prose is interactive.
  *
  * Fallback (AC: hydration fails or data missing):
- *   ConfidenceChip itself renders "voir les sources" when any data field is null.
+ *   SourceReviewChip itself renders "voir les sources" when any data field is null.
  *   The Suspense fallback also shows "voir les sources" while the lazy chunk loads.
  */
 // @req REQ-003
@@ -213,7 +213,7 @@ export function ProseWithChip({
           <Suspense
             fallback={<FallbackLink onOpen={() => setSheetOpen(true)} />}
           >
-            <LazyConfidenceChip
+            <LazySourceReviewChip
               id={anchorId}
               sourceCount={chip.sourceCount}
               lastHumanAuditAt={chip.lastHumanAuditAt}

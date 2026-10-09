@@ -95,12 +95,14 @@
       {
         "title": "SIL Ethnologue — Lomwe (ngl)",
         "url": "https://www.ethnologue.com/language/ngl/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "INE Mozambique — IV Recensement General de la Population et de l'Habitat 2017",
         "url": "https://www.ine.gov.mz/en/censo-2017/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "GHDx — Mozambique Population and Housing Census 2017",

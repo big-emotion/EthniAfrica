@@ -16,7 +16,7 @@
         "Ivbiosakon",
         "Ivbiesakon"
       ],
-      "originOfExonyms": "Kukuruku : nom donné par l'administration coloniale britannique, prétendument dérivé d'un cri de guerre; considéré aujourd'hui comme péjoratif et abandonné. Etsako signifie ceux qui se liment les dents, en référence à une ancienne pratique de scarification dentaire. Ivbiosakon / Ivbiesakon est le nom bini (edo) signifiant enfants de ceux qui se liment les dents.",
+      "originOfExonyms": "Kukuruku : nom donné par l'administration coloniale britannique, qui viendrait d'un cri de guerre; considéré aujourd'hui comme péjoratif et abandonné. Etsako voudrait dire ceux qui se liment les dents, en référence à une ancienne pratique de scarification dentaire. Ivbiosakon / Ivbiesakon est le nom bini (edo), qui voudrait dire enfants de ceux qui se liment les dents.",
       "whyProblematic": "Le nom Kukuruku, encore utilisé parfois en référence aux Kukuruku Hills, est rejeté par la communauté comme héritage colonial dévalorisant.",
       "contemporaryUsage": "Afemai et Afenmai sont utilisés indifféremment dans la littérature et les documents officiels de l'État d'Edo. Etsako désigne plus précisément le sous-groupe principal et ses trois LGAs.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -103,7 +103,8 @@
       {
         "title": "Ethnologue, Etsako (ETS). (consulté 2025)",
         "url": "https://www.ethnologue.com/language/ets/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "AFESANCOM, The Afemai People of Edo State Nigeria. (consulté 2025)",
@@ -118,12 +119,14 @@
       {
         "title": "Presidency of Nigeria (Community Engagement South-South), Edo State. (consulté 2025)",
         "url": "https://communityengagementss.presidency.gov.ng/portfolio/edo/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Egharevba, Jacob U. A Short History of Benin. Ibadan University Press, 4e éd., 1968",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

@@ -85,12 +85,14 @@
       {
         "title": "Zinza – Glottolog 5.3, zinz1238",
         "url": "https://glottolog.org/resource/languoid/id/zinz1238",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "The High God among the Zinza of Northwestern Tanzania – JSTOR",
         "url": "https://www.jstor.org/stable/3269748",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Zinza – TanzaniaScripture.com",

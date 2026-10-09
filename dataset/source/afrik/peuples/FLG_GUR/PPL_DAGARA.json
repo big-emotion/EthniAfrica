@@ -101,7 +101,8 @@
       {
         "title": "Ethnologue — Dagaare, Southern (dga)",
         "url": "https://www.ethnologue.com/language/dga",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Cultural Survival Quarterly — The Seen and the Unseen: Spirituality among the Dagara people",

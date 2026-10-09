@@ -93,12 +93,14 @@
       {
         "title": "Ethnologue - Anyin (ANY)",
         "url": "https://www.ethnologue.com/language/any/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "DICE Missouri - Agni (Anyin) database",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Agni.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

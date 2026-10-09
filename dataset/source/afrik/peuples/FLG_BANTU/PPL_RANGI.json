@@ -89,7 +89,8 @@
       {
         "title": "Why Rangi Christians Continue to Practice African Traditional Religion – Cox, DIU 2007",
         "url": "https://diu.edu/documents/gialens/Vol2-3/Cox-Why-Rangi-Christians-Practice-ATR.pdf",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Rangi of Tanzania – Pray Africa",
@@ -99,7 +100,8 @@
       {
         "title": "Rangi language and alphabet – Omniglot",
         "url": "https://www.omniglot.com/writing/rangi.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Tanzania and the Rangi – Africa Inland Mission Europe, 2023",

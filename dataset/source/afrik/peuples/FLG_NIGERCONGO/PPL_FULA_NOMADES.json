@@ -118,7 +118,8 @@
       {
         "title": "SIL Ethnologue - Fulah macrolanguage (ful)",
         "url": "https://www.ethnologue.com/language/ful/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Africa Geographic - The Wodaabe Nomads of the North (2019)",

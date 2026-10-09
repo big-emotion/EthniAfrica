@@ -100,7 +100,7 @@ describe("RelationsList", () => {
   });
 
   // @req REQ-097
-  it("shows a derived caption instead of a ConfidenceChip on derived rows", () => {
+  it("shows a derived caption instead of a SourceReviewChip on derived rows", () => {
     render(<RelationsList items={[BAMILEKE_ITEM]} onOpenRelation={vi.fn()} />);
     expect(
       screen.getByText(/dérivé de la hiérarchie afrik/i)
@@ -108,7 +108,7 @@ describe("RelationsList", () => {
   });
 
   // @req REQ-097
-  it("invokes onOpenRelation when a sourced row's confidence chip is activated", () => {
+  it("invokes onOpenRelation when a sourced row's source review chip is activated", () => {
     const onOpenRelation = vi.fn();
     render(
       <RelationsList items={[FON_ITEM]} onOpenRelation={onOpenRelation} />

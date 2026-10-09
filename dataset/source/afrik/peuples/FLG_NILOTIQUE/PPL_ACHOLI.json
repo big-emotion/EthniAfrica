@@ -16,7 +16,7 @@
         "Shuli",
         "Gang"
       ],
-      "originOfExonyms": "Le terme Acholi est une transformation du mot arabe Shooli, utilise par les marchands arabophones du nord au cours de la seconde moitie du 19e siecle. Les voisins Lango les appelaient Ugangi (gens de la maison). Le nom propre est Luo Gang. Luo Gang signifie « gens du foyer ».",
+      "originOfExonyms": "Le terme Acholi est une transformation du mot arabe Shooli, utilise par les marchands arabophones du nord au cours de la seconde moitie du 19e siecle. Les voisins Lango les appelaient Ugangi (gens de la maison). Le nom propre est Luo Gang. Luo Gang signifierait « gens du foyer ».",
       "whyProblematic": "Acholi est un nom arabe donné au peuple de l'extérieur. Les colonisateurs britanniques et les chercheurs l'ont repris par commodité. Luo Gang, le nom que les communautés employaient historiquement pour elles-mêmes, est moins connu à l'extérieur.",
       "contemporaryUsage": "Le terme Acholi est universellement utilise en ougandais, anglais et en contexte international. Les locuteurs s'identifient egalement comme Luo ou Luo Gang. L'identite acholi a ete profondement marquee par le conflit avec la LRA (1986-2006).",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -100,7 +100,8 @@
       {
         "title": "SIL Ethnologue — Acholi language (ach)",
         "url": "https://www.ethnologue.com/language/ach/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Human Rights Watch — Northern Uganda : Abducted and Abused (2003)",
@@ -120,17 +121,20 @@
       {
         "title": "Doom, Ruddy & Vlassenroot, Koen — Kony's Message: A New Koine? The Lord's Resistance Army in Northern Uganda. African Affairs, 1999",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog — Acholi",
         "url": "https://glottolog.org/resource/languoid/id/achi1257",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNFPA Uganda — Population data",
         "url": "https://uganda.unfpa.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

@@ -118,7 +118,8 @@
       {
         "title": "Guardians of the forest: the Baka and the living spirit of the Dja – UNESCO",
         "url": "https://www.unesco.org/en/articles/guardians-forest-baka-and-living-spirit-dja",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "In Southeastern Cameroon, the Baka People Are Marginalized in the Name of Nature Conservation – Pulitzer Center",
@@ -133,7 +134,8 @@
       {
         "title": "SIL Cameroon – Koonzime (ozm)",
         "url": "https://www.silcam.org/resources/archives/3329",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Cameroon ethnic groups – Encyclopaedia Britannica",

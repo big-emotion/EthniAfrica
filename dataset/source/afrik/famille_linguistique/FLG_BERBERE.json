@@ -160,7 +160,8 @@
       {
         "title": "[Chaker] ([1995]) – *Textes en linguistique berbère*. [CNRS Éditions]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Camps] ([1987]) – *Les Berbères : mémoire et identité*. [Errance]",
@@ -170,7 +171,8 @@
       {
         "title": "[Basset] ([1952]) – *La langue berbère*. [Oxford University Press]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Galand] ([2010]) – *Regards sur le berbère*. [Bouchène]",
@@ -180,17 +182,20 @@
       {
         "title": "[UNESCO] ([2011]) – *Atlas des langues en danger dans le monde*. [UNESCO]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Glottolog 5.2 – classification génétique \"Berber [berb1260]\", 8 branches immédiates (Awjilah, Ghadames, Greater Zenatic, Kabyle-Atlas Berber, Nafusi, Tuareg, Unclassified Berber, Western Berber)",
         "url": "https://glottolog.org/resource/languoid/id/berb1260",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Haut-Commissariat au Plan du Maroc (2024) – Recensement Général de la Population et de l'Habitat 2024, Principaux résultats, Rabat, 17 décembre 2024, p. 19",
         "url": "https://www.hcp.ma/file/242665/",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "Page « Expressions linguistiques utilisées par la population (%) » : « Le quart utilise les différentes expressions linguistiques de l'Amazigh (24,8%) avec une proportion plus élevée en milieu rural (33,3%) qu'en milieu urbain (19,9%) ». La légende précise « Amazigh (Tachelhit, Tamazight, Tarifit et autres) ». C'est une part de la population, pas un nombre de locuteurs ; la page ne précise ni la tranche d'âge ni le sens exact de « utilisées ». Dans cette fiche, le chiffre de 9 444 131 pour le Maroc est calculé à partir de ce taux d'usage (24,8 %) et de la population nationale (38 081 173 en 2024, chiffre de la Banque mondiale repris par la fiche et non relu ici) : c'est un ordre de grandeur, pas un nombre de locuteurs. Le total de 35 000 000 pour la famille n'a pas de source lue ; il ne correspond pas à la somme des chiffres par pays donnés plus haut (environ 20,4 millions)."
       },
       {
@@ -203,18 +208,21 @@
         "title": "Greenberg, Joseph (1963) — The Languages of Africa. Bloomington : Indiana University Press",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Monographie d'auteur nommé avec année ; source de la classification interne dans laquelle le berbère constitue une branche distincte."
       },
       {
         "title": "Ehret, Christopher (2002) — The Civilizations of Africa: A History to 1800. Charlottesville : University Press of Virginia",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Monographie d'auteur nommé avec année ; source de la théorie minoritaire d'une origine saharienne ou nilotique du proto-afro-asiatique."
       },
       {
         "title": "Diop, Cheikh Anta (1954) — Nations nègres et culture. Paris : Présence Africaine",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Monographie d'auteur nommé avec année ; source de la thèse de continuité entre l'Égypte pharaonique et les populations subsahariennes, exposée avec ses points de divergence."
       },
       {
@@ -227,24 +235,28 @@
         "title": "Obenga, Théophile (1993) — L'origine commune de l'égyptien ancien, du copte et des langues négro-africaines modernes. Paris : L'Harmattan",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Monographie d'auteur nommé avec année ; source de l'hypothèse d'un ensemble négro-égyptien incluant le berbère comme branche périphérique."
       },
       {
         "title": "Modéran, Yves (2003) — Les Maures et l'Afrique romaine (IVe-VIIe siècle). Rome : École française de Rome, Bibliothèque des Écoles françaises d'Athènes et de Rome",
         "url": "https://books.openedition.org/efr/1431",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Monographie d'historien. L'introduction de sa cinquième partie retrace l'origine du nom arabe des Berbères et sa première attestation."
       },
       {
         "title": "Chaker, Salem (1986) – « Amaziɣ (le/un Berbère) », Encyclopédie berbère, 4, p. 562-568",
         "url": "https://journals.openedition.org/encyclopedieberbere/2465",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Notice de l'Encyclopédie berbère (CNRS et INALCO), passages relus dans le texte en ligne. Porte la critique de la glose « hommes libres », les formes antiques du nom, le sens de noble chez les Touareg et la diffusion du terme depuis les années 1945-1950."
       },
       {
         "title": "Modéran, Yves (2010) – « Mythes d'origine des Berbères (Antiquité et Moyen Âge) », Encyclopédie berbère, 32, p. 5157-5169",
         "url": "https://journals.openedition.org/encyclopedieberbere/674",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Notice de l'Encyclopédie berbère (CNRS et INALCO), passage relu dans le texte en ligne. Porte l'éponyme Berr ou Berber introduit par les généalogistes médiévaux pour expliquer le terme forgé par les Arabes."
       }
     ]

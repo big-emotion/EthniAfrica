@@ -71,7 +71,8 @@
       {
         "title": "Ethnologue - Ahanta (AHA)",
         "url": "https://www.ethnologue.com/language/aha/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ghana Statistical Service - 2021 Population and Housing Census, Ahanta West Municipal District",

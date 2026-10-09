@@ -80,7 +80,7 @@ const meta: Meta<typeof FragmentationView> = {
         component:
           "Text-first fragmentation view for FR85 (Epic 13, Story 13.7) — no map involved. " +
           "Lists the countries a people spans with their demographic share, each traceable to " +
-          "its source via ConfidenceChip → SourceChainSheet. Colonial-origin border pairs are " +
+          "its source via SourceReviewChip → SourceChainSheet. Colonial-origin border pairs are " +
           "annotated with the --afh-color-colonial marker plus an explicit text label — never " +
           "color alone. Renders nothing for a people confined to a single country.",
       },
