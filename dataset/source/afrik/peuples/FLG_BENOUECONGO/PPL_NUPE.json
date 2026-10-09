@@ -97,17 +97,20 @@
       {
         "title": "Ethnologue (SIL) — Nupe-Nupe-Tako (nup)",
         "url": "https://www.ethnologue.com/subgroup/2027/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ASJP Database — Nupe, ISO 639-3 nup",
         "url": "https://asjp.clld.org/languages/NUPE",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Nadel, Siegfried F. (1942). A Black Byzantium: The Kingdom of Nupe in Nigeria. London: Oxford University Press for the International African Institute",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Britannica — Bida (Nigeria), histoire de l'emirat de Bida",

@@ -100,7 +100,8 @@
       {
         "title": "Ethnologue — Urhobo (urh)",
         "url": "https://www.ethnologue.com/language/urh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Urhobo in Nigeria",
@@ -120,7 +121,8 @@
       {
         "title": "Purdue University CLCWeb — Urhobo Folklore and Udje Aesthetics",
         "url": "https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=3014&context=clcweb",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ojaide, Tanure. The Poetry of Tanure Ojaide. Trenton NJ: Africa World Press, 2006",

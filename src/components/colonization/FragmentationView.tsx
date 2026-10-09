@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { AutonymExonymHeading } from "@/components/ui/AutonymExonymHeading";
-import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
+import { SourceReviewChip } from "@/components/source-transparency/SourceReviewChip";
 import SourceChainSheet from "@/components/source-transparency/SourceChainSheet";
 import type {
   PeopleFragmentation,
@@ -16,11 +16,11 @@ import type { Language } from "@/types/shared";
  * FragmentationView — text-first fragmentation view for FR85 (Epic 13, Story 13.7).
  *
  * No map involved: countries and border pairs are listed as prose/table data,
- * each share traceable to its source via ConfidenceChip -> SourceChainSheet.
+ * each share traceable to its source via SourceReviewChip -> SourceChainSheet.
  *
  * The fragmentation endpoint (Story 13.5) does not expose a source count or
  * audit date per country share — only an `assertionId` pointer. Per the
- * "never invent data" policy, ConfidenceChip is fed nulls (its established
+ * "never invent data" policy, SourceReviewChip is fed nulls (its established
  * fallback affordance) rather than fabricated numbers; it still opens the
  * same SourceChainSheet on activation.
  */
@@ -73,7 +73,7 @@ function FragmentationRow({
         {formatShare(country.populationShare)}
       </td>
       <td className="py-2">
-        <ConfidenceChip
+        <SourceReviewChip
           id={anchorId}
           sourceCount={null}
           lastHumanAuditAt={null}

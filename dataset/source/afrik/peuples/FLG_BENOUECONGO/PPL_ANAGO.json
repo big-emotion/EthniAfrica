@@ -99,7 +99,8 @@
       {
         "title": "Ethnologue, Yoruba (YOR). (consulté 2025)",
         "url": "https://www.ethnologue.com/language/yor/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project, Yoruba in Togo. (consulté 2025)",

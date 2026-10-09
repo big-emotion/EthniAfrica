@@ -10,7 +10,7 @@
       "exonyms": [
         "Les nombreux inséparables (traduction française du nom Betsimisaraka)"
       ],
-      "originOfExonyms": "Le nom Betsimisaraka a été donné par le roi fondateur Ratsimilaho (Ramaromanompo) au début du XVIIIe siècle pour désigner la confédération de clans qu'il avait unifiée sur la côte est. Le terme signifie les nombreux qui ne se séparent pas ou les nombreux inseparables.",
+      "originOfExonyms": "Le nom Betsimisaraka a été donné par le roi fondateur Ratsimilaho (Ramaromanompo) au début du XVIIIe siècle pour désigner la confédération de clans qu'il avait unifiée sur la côte est. Le terme signifierait « les nombreux qui ne se séparent pas » ou « les nombreux inséparables ».",
       "whyProblematic": null,
       "contemporaryUsage": "Le groupe emploie et revendique ce nom comme désignation officielle. Les recensements et estimations actuels le présentent comme le deuxième peuple le plus nombreux de Madagascar.",
       "linguisticFamily": "FLG_AUSTRONESIENNE",
@@ -107,22 +107,26 @@
       {
         "title": "Ethnologue — Northern Betsimisaraka Malagasy (bmm), (consulté 2025)",
         "url": "https://www.ethnologue.com/language/bmm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Southern Betsimisaraka Malagasy (bzc), (consulté 2025)",
         "url": "https://www.ethnologue.com/language/bzc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Madagascar, (consulté 2025)",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Beaujard, Philippe. Les mondes de l'océan Indien. Paris : Armand Colin, 2012",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

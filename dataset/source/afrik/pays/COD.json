@@ -4,7 +4,7 @@
   "nameEn": "Democratic Republic of the Congo",
   "nameOfficial": "République démocratique du Congo (RDC)",
   "summary": "La République démocratique du Congo tire son nom du fleuve Congo, dont l'appellation Congo/Kongo est historiquement liée au royaume Kongo. Son territoire a connu plusieurs États précoloniaux, la domination léopoldienne puis belge, le nom de Zaïre entre 1971 et 1997, et une grande diversité de peuples et de langues.",
-  "etymology": "La République démocratique du Congo tire son nom du fleuve Congo. Le nom Congo/Kongo du fleuve est historiquement lié au royaume Kongo. L'origine lexicale plus ancienne de Kongo demeure incertaine et ne peut être réduite à une signification unique.",
+  "etymology": "La République démocratique du Congo tirerait son nom du fleuve Congo, selon la fiche de toponymie britannique Toponymic Factfile. Le nom Congo/Kongo du fleuve est historiquement lié au royaume Kongo. L'origine lexicale plus ancienne de Kongo demeure incertaine et ne peut être réduite à une signification unique.",
   "nameOriginActor": "Le nom de l'État a été repris de celui du fleuve Congo, lui-même historiquement associé au royaume Kongo. Les sources disponibles ne permettent pas d'attribuer avec certitude l'origine lexicale de Kongo à un acteur ou à une traduction unique.",
   "nameHistory": {
     "summary": "Le nom République démocratique du Congo désigne un pays d'Afrique centrale, qui tient son nom du fleuve Congo ; on l'appelle aussi RD Congo ou Congo-Kinshasa. Le pays a d'abord porté d'autres noms : État indépendant du Congo, Congo belge, République du Congo, puis Zaïre de 1971 à 1997. Le nom Zaïre viendrait du nom que les riverains donnent au fleuve, selon le missionnaire W. Holman Bentley ; nous présentons son explication plus bas.",
@@ -736,17 +736,20 @@
       {
         "title": "UNFPA – World Population Dashboard — République démocratique du Congo",
         "url": "https://www.unfpa.org/data/world-population/CD",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Toponymic Factfile: Congo (Democratic Republic)",
         "url": "https://assets.publishing.service.gov.uk/media/65a66847867cd8000d5ae933/Democratic_Republic_of_Congo_Toponymic_Factfile.pdf",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Official toponymic reference supporting the country-to-river name relationship; it does not settle the lexical origin of Kongo."
       },
       {
@@ -759,30 +762,35 @@
         "title": "Upemba Depression",
         "url": "https://whc.unesco.org/fr/listesindicatives/963/",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Soumission de l'État partie à la liste indicative hébergée par l'UNESCO ; elle documente la séquence régionale de l'Upemba sans constituer une approbation du Comité du patrimoine mondial."
       },
       {
         "title": "Central Africa, 1600-1800 A.D.",
         "url": "https://82nd-and-fifth.metmuseum.org/toah/ht/09/afc.html",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Chronologie institutionnelle de référence pour les formations luba, lunda, kuba et leurs contextes régionaux."
       },
       {
         "title": "Central Africa, 1800-1900 A.D.",
         "url": "https://82nd-and-fifth.metmuseum.org/toah/ht/10/afc.html",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Chronologie institutionnelle de référence pour les formations politiques et réseaux du XIXe siècle en Afrique centrale."
       },
       {
         "title": "Kingdoms of the Savanna: The Luba and Lunda Empires — The Metropolitan Museum of Art",
         "url": "https://www.metmuseum.org/essays/kingdoms-of-the-savanna-the-luba-and-lunda-empires",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Alexander Ives Bortolot, The Metropolitan Museum of Art ; consulté le 6 septembre 2026."
       },
       {
         "title": "Kongo: Power and Majesty — Exhibition Galleries",
         "url": "https://www.metmuseum.org/exhibitions/listings/2015/kongo/exhibition-galleries",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Référence institutionnelle pour la chronologie et l'étendue transfrontalière du royaume Kongo."
       },
       {
@@ -795,18 +803,21 @@
         "title": "This kingdom will not be like the kingdom(s) in the era of Gbudue: On the rebirth of the Azande Kingdom",
         "url": "https://www.journals.uchicago.edu/doi/full/10.1086/732344",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article évalué par les pairs soutenant la représentation de royaumes zande reliés mais largement autonomes."
       },
       {
         "title": "Zaire — United Nations authority record",
         "url": "https://digitallibrary.un.org/record/878251",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Notice d'autorité des Nations unies fournissant les dates exactes des changements de nom de 1964 et 1971."
       },
       {
         "title": "Terminology Bulletin No. 347, Corrigendum 5",
         "url": "https://digitallibrary.un.org/record/198733/files/ST_CS_SER-F_347-EN.pdf?ln=en",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Bulletin terminologique du Secrétariat des Nations unies attestant le rétablissement du nom République démocratique du Congo en mai 1997."
       },
       {
@@ -819,72 +830,84 @@
         "title": "United Nations Operation in the Congo — history and mandate",
         "url": "https://peacekeeping.un.org/sites/default/files/past/onucB.htm",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Chronologie officielle de l'indépendance, de la crise du Congo et du mandat de l'ONUC."
       },
       {
         "title": "The Congo, Decolonization, and the Cold War, 1960-1965",
         "url": "https://history.state.gov/milestones/1961-1968/congo-decolonization",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Histoire institutionnelle américaine utilisée avec les sources des Nations unies ; elle documente aussi les intérêts et interventions des États-Unis."
       },
       {
         "title": "Mobutu Sese Seko — former president biography",
         "url": "https://www.presidence.cd/ancien-president-infos/5",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Chronologie biographique officielle utilisée pour les dates du régime et non comme source unique d'évaluation de celui-ci."
       },
       {
         "title": "MONUC background",
         "url": "https://peacekeeping.un.org/sites/default/files/past/monuc/background.shtml",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Chronologie officielle des guerres du Congo, du cessez-le-feu de Lusaka, de la MONUC et de la transition."
       },
       {
         "title": "Inter-Congolese Negotiations: The Final Act (Sun City Agreement)",
         "url": "https://peacemaker.un.org/sites/default/files/document/files/2024/05/cd030402suncityagreement.pdf",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Texte de l'accord de Sun City conservé par les Nations unies et utilisé comme source primaire du cadre de transition."
       },
       {
         "title": "Constitution of the Democratic Republic of the Congo",
         "url": "https://presidence.cd/detail-texte-fondateur/1",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Texte constitutionnel publié par la Présidence de la République démocratique du Congo."
       },
       {
         "title": "Update of the Secretary-General on progress in the electoral process and implementation of the 31 December 2016 political agreement",
         "url": "https://digitallibrary.un.org/record/3792221/files/S_2019_159-EN.pdf",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Rapport des Nations unies sur le processus électoral de 2018-2019, la transmission pacifique du pouvoir et les limites du processus."
       },
       {
         "title": "Congolese rumba — UNESCO Intangible Cultural Heritage",
         "url": "https://ich.unesco.org/en/RL/congolese-rumba-01711?RL=01711",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Inscription multinationale de 2021 documentant une pratique musicale et dansée urbaine partagée par les deux États du Congo ; elle ne rend pas la rumba représentative de toutes les communautés de la RDC."
       },
       {
         "title": "Mwanangana (lord of the land) playing a sanza — The Metropolitan Museum of Art",
         "url": "https://www.metmuseum.org/art/collection/search/316173",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Notice d'objet utilisée comme exemple circonscrit d'art de cour chokwe, et non comme synthèse complète des arts chokwe."
       },
       {
         "title": "Democratic Republic of the Congo Demographic and Health Survey 2013-2014 — DHS Program",
         "url": "https://dhsprogram.com/pubs/pdf/FR300/FR300.pdf",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "Enquête officielle par échantillon ; la distribution religieuse concerne les femmes et hommes interrogés dans des classes d'âge définies et non un recensement de toute la population."
       },
       {
         "title": "2023 Report on International Religious Freedom: Democratic Republic of the Congo — United States Department of State",
         "url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/democratic-republic-of-the-congo/",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Synthèse institutionnelle de contexte ; ses estimations démographiques sont attribuées à des sources tierces de dates et classifications différentes."
       },
       {
         "title": "GIEWS Country Brief: Democratic Republic of the Congo — FAO",
         "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=COD&lang=en",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Note conjoncturelle sur la production agricole et la sécurité alimentaire, utilisée pour leurs variations régionales et non comme ethnographie générale des modes de vie."
       },
       {
@@ -897,18 +920,21 @@
         "title": "République démocratique du Congo, ministère des Droits humains — huitième, neuvième et dixième rapports périodiques à la Commission africaine des droits de l'homme et des peuples (juillet 2003 - juillet 2007)",
         "url": "https://achpr.au.int/sites/default/files/files/2022-08/staterep8910drc2007eng.pdf",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Déclaration de l'État, version anglaise, paragraphe 13 : « more than 450 tribes ». Le décompte est celui de l'État, avec son propre critère ; il n'est pas une mesure indépendante."
       },
       {
         "title": "UNESCO, Histoire générale de l'Afrique, vol. V : L'Afrique du XVIe au XVIIIe siècle (dir. B. A. Ogot), 1999 — chap. 19, « Le Royaume du Kongo et ses voisins » (J. Vansina, à partir d'une contribution de T. Obenga), p. 601-642",
         "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Formation du royaume dont la date est inconnue, deux datations proposées : p. 604."
       },
       {
         "title": "UNESCO, Histoire générale de l'Afrique, vol. V : L'Afrique du XVIe au XVIIIe siècle (dir. B. A. Ogot), 1999 — chap. 20, « Le système politique luba et lunda : émergence et expansion » (Ndaywel è Nziem), p. 643-664",
         "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Limite de 1700 pour la chronologie orale luba : p. 644. État rund non daté par la tradition orale, mentionné en 1680 : p. 646. Royaume luba d'assez petite taille jusqu'à la fin du XVIIe siècle : p. 647."
       }
     ],

@@ -12,7 +12,7 @@
         "Fon nu",
         "Agadja (terme historique)"
       ],
-      "originOfExonyms": "Le terme Dahomeans provient du royaume de Dahomey, nom de l'État fon dominant. Le terme Fon nu signifie simplement les gens fon en langue fon.",
+      "originOfExonyms": "Le terme Dahomeans viendrait du royaume de Dahomey, nom de l'État fon dominant. Le terme Fon nu voudrait dire simplement les gens fon en langue fon.",
       "whyProblematic": null,
       "contemporaryUsage": "Fon est le terme courant utilisé au Bénin et dans la littérature académique contemporaine.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -95,7 +95,8 @@
       {
         "title": "SIL Ethnologue — Fon language (fon)",
         "url": "https://www.ethnologue.com/language/fon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Fon in Benin",
@@ -120,12 +121,14 @@
       {
         "title": "UNESCO — Palais royaux d'Abomey (patrimoine mondial)",
         "url": "https://whc.unesco.org/fr/liste/323/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Herskovits, Melville J. & Herskovits, Frances S. (1958) – Dahomean Narrative: A Cross-Cultural Analysis. Northwestern University Press",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Étude ethnographique de la littérature orale fon (dahoméenne), dont les proverbes."
       },
       {

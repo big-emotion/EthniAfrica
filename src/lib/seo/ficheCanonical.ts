@@ -7,6 +7,7 @@ import {
   getPatronymeRoute,
   getPeopleLinksRoute,
   getPeopleRoute,
+  getPlaceRoute,
 } from "@/lib/routing";
 import { pageHead } from "@/lib/seo/pageHead";
 import { parseVersionedSlug } from "@/lib/versioned-slug";
@@ -40,7 +41,13 @@ import type { Language } from "@/types/shared";
  */
 // @req REQ-091
 export type FicheKind =
-  "country" | "people" | "family" | "language" | "name" | "peopleLinks";
+  | "country"
+  | "people"
+  | "family"
+  | "language"
+  | "name"
+  | "peopleLinks"
+  | "place";
 
 /** What the fiche calls itself, when the caller has loaded enough to know. */
 // @req REQ-091
@@ -59,6 +66,7 @@ const ROUTE_BY_KIND: Record<
   language: getLanguageRoute,
   name: getPatronymeRoute,
   peopleLinks: getPeopleLinksRoute,
+  place: getPlaceRoute,
 };
 
 /**

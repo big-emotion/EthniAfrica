@@ -108,17 +108,20 @@
       {
         "title": "Gradhiva / Musee du quai Branly – Nos grands-peres achetaient des esclaves : le vodun Tchamba chez les Mina",
         "url": "https://journals.openedition.org/gradhiva/1188",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "ALMA – The Language of African Music: Gen-Mina",
         "url": "https://alma.matrix.msu.edu/the-language-of-african-music-gen-mina",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Capo, Hounkpati B. C. (1991) – A Comparative Phonology of Gbe. Foris Publications",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Classification comparative interne des langues gbe (éwé, fon, aja, mina, gen)."
       }
     ]

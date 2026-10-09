@@ -499,12 +499,14 @@
       {
         "title": "CIA World Factbook – Senegal",
         "url": "https://www.cia.gov/the-world-factbook/countries/senegal/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Senegal",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements nationaux sénégalais (ANSD)",
@@ -514,12 +516,14 @@
       {
         "title": "ONU – Données démographiques 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Sénégal",
         "url": "https://www.unfpa.org/data/world-population/SN",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Études anthropologiques sur les peuples sénégalais",
@@ -534,17 +538,20 @@
       {
         "title": "CIA World Factbook – Senegal (ethnic groups, 2019 est.)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Maurice Delafosse, « Senegal », Encyclopaedia of Islam, première édition, Brill",
         "url": "https://doi.org/10.1163/2214-871X_ei1_SIM_5235",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Constate que la majorité des auteurs modernes rattachent le nom aux Sanhaja, juge ce rapprochement fortuit et propose un royaume de la basse vallée, Sanghana. L'entrée a été lue le 9 septembre 2026 ; son début est en accès libre, la suite est payante."
       },
       {
@@ -569,18 +576,21 @@
         "title": "Saliou Kandji, Sénégal n'est pas Sunugal, ou De l'étymologie du toponyme Sénégal, Presses universitaires de Dakar, 2006, 56 pages",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Récuse aussi bien l'explication wolof que les rattachements berbères. L'ouvrage ne figure pas au catalogue de la Bibliothèque nationale de France ; titre, éditeur, année et pagination sont repris d'une présentation de presse."
       },
       {
         "title": "Présentation de « Sénégal n'est pas Sunugal », de Saliou Kandji, Seneweb",
         "url": "http://www.seneweb.com/news/Immigration/s-n-gal-n-est-pas-sunugal-ou-de-l-tymologie-du-toponyme-s-n-gal_n_5047.html",
         "tier": "unverified",
+        "source_kind": "press",
         "notes": "Présentation non signée. Elle est l'origine de l'attribution du terme Singhane à Paul Marty et du désaccord de Monod et Mauny avec Boilat. Elle date les Esquisses sénégalaises de 1850, ce qui est inexact."
       },
       {
         "title": "Luis del Mármol Carvajal, Primera parte de la descripción general de Áffrica, Grenade, René Rabut, 1573",
         "url": "https://bvpb.mcu.es/es/consulta/registro.cmd?id=406911",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Donne deux noms du fleuve chez les peuples de ses rives : Mayo chez les Toucouleurs, Colle chez les Soninkés de Ngalam. L'imprimé est numérisé par la Biblioteca Virtual del Patrimonio Bibliográfico. Le passage est situé au livre VIII, chapitre 3 ; il n'a pas été lu dans l'original, et la référence a été trouvée par la version anglaise de Wikipédia, consultée le 9 septembre 2026."
       },
       {
@@ -593,12 +603,14 @@
         "title": "Border Disputes among African States, AHG/Res.16(I) (Organisation de l'unité africaine, Le Caire, 17-21 juillet 1964)",
         "url": "https://www.peaceau.org/uploads/ahg-res-16-i-en.pdf",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Texte de la résolution lu en entier. Il engage les États membres à respecter les frontières existant à leur indépendance ; il ne contient aucun relevé de vote ni mention du consentement des populations."
       },
       {
         "title": "Toponymic Factfile: Senegal — Permanent Committee on Geographical Names (Royaume-Uni)",
         "url": "https://assets.publishing.service.gov.uk/media/69e6292c3e3b4e9340cc92d8/Senegal_Toponymic_Factfile.pdf",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Fiche officielle britannique de toponymie, édition 2026 : le français langue officielle, six langues nationales (wolof, pulaar, sérère, jola, malinké, soninké) avec leurs codes ISO 639-3."
       }
     ],

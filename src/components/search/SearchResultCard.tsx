@@ -20,10 +20,12 @@ import { formatNumber } from "@/lib/languageTag";
 import {
   getCountryRoute,
   getFamilyRoute,
+  getLocalizedRoute,
   getLanguageRoute,
   getPatronymeRoute,
   getPeopleRoute,
   getPersonRoute,
+  getPlaceRoute,
 } from "@/lib/routing";
 import { buildRelationSearchHref } from "@/lib/search/relationSearch";
 import { searchResultDisplayLabel } from "@/lib/search/peopleDisplayNames";
@@ -62,9 +64,11 @@ export function ficheHrefFor(result: SearchResult, language: Language): string {
   if (result.type === "patronyme")
     return getPatronymeRoute(language, result.id);
   if (result.type === "language") return getLanguageRoute(language, result.id);
-  // No place page yet (REQ-196): the place leads to its country's fiche.
-  if (result.type === "place" && result.countryIds?.[0])
-    return getCountryRoute(language, result.countryIds[0]);
+  if (result.type === "place") return getPlaceRoute(language, result.id);
+  // A word has no fiche page (REQ-196): its search result is where its name
+  // history is told.
+  if (result.type === "word")
+    return `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: result.name })}`;
   return getPeopleRoute(language, result.id);
 }
 

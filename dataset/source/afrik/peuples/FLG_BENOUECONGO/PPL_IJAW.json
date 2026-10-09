@@ -98,7 +98,8 @@
       {
         "title": "Ethnologue (SIL International) — Izon language (ijc)",
         "url": "https://www.ethnologue.com/language/ijc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "All Ijaw Culture — History of Ijaw People",
@@ -113,7 +114,8 @@
       {
         "title": "The Guardian Nigeria — The Ijaw quest for Nigeria's fourth pillar",
         "url": "https://guardian.ng/politics/the-ijaw-quest-for-nigerias-fourth-pillar/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       }
     ]
   }

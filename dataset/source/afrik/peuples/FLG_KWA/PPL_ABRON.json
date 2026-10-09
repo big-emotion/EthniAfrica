@@ -8,7 +8,7 @@
       "mainName": "Abron",
       "selfAppellation": "Abron",
       "exonyms": ["Brong", "Bono", "Bonofoɔ", "Gyaman"],
-      "originOfExonyms": "Le terme Brong est utilise par les voisins Ashanti et Gonja pour designer les peuples proches de Bono Manso. Gyaman (aussi ecrit Gyaaman ou Jamang) designe a la fois le royaume et le peuple, signifiant approximativement ceux qui ont quitte le pays en reference a la migration fondatrice depuis Akwamu.",
+      "originOfExonyms": "Le terme Brong est utilise par les voisins Ashanti et Gonja pour designer les peuples proches de Bono Manso. Gyaman (aussi ecrit Gyaaman ou Jamang) designe a la fois le royaume et le peuple ; le nom voudrait dire approximativement ceux qui ont quitte le pays, en reference a la migration fondatrice depuis Akwamu.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Abron est utilise en Cote d'Ivoire, tandis que Brong ou Bono predomine au Ghana. La region administrative ghaneenne Brong-Ahafo (aujourd'hui Bono Region) tire son nom de ce peuple.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -75,7 +75,8 @@
       {
         "title": "Ethnologue - Abron language ABR",
         "url": "https://www.ethnologue.com/language/abr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Brong in Ghana",
@@ -85,7 +86,8 @@
       {
         "title": "Terray, Emmanuel - A History of the Abron Kingdom of Gyaman, Michigan State University, 1980",
         "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1980v12n1%2Fasrv012001002.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",

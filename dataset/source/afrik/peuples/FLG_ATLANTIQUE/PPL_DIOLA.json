@@ -261,7 +261,7 @@
         "Flup",
         "Floups"
       ],
-      "originOfExonyms": "Diola est la translittération française du nom mandinka Jola signifiant 'ceux qui payent en retour'. Popularise au XIXe siecle par les colonisateurs. Felupe ou Flup designent specifiquement les groupes de Guinee-Bissau.",
+      "originOfExonyms": "Diola est la translittération française de Jola, un nom qui viendrait du mandinka et voudrait dire 'ceux qui payent en retour', selon Wikipédia. Popularise au XIXe siecle par les colonisateurs. Felupe ou Flup designent specifiquement les groupes de Guinee-Bissau.",
       "whyProblematic": "Diola et Jola sont des noms donnés par les Mandinka. Ils réunissent sous un même nom plusieurs groupes dont les manières de parler ne sont pas toujours compréhensibles d'un groupe à l'autre.",
       "contemporaryUsage": "Diola reste l'usage dominant en francais (Senegal, Guinee-Bissau), Jola ou Joola en anglais (Gambie). L'auto-appellation Ajamat est privilegiee dans les milieux academiques et communautaires.",
       "linguisticFamily": "FLG_ATLANTIQUE",
@@ -362,12 +362,14 @@
       {
         "title": "Ethnologue — Jola-Fogny (dyo)",
         "url": "https://www.ethnologue.com/language/dyo/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Jola-Felupe (eja)",
         "url": "https://www.ethnologue.com/language/eja/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -142,12 +142,14 @@
       {
         "title": "SIL Ethnologue — Hausa language (hau)",
         "url": "https://www.ethnologue.com/language/hau/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO — Durbar festival inscrit au patrimoine immatériel, décembre 2024",
         "url": "https://www.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "NKENNE — History of the Seven Original Hausa States",
@@ -157,7 +159,8 @@
       {
         "title": "European Union Agency for Asylum — Nigeria Country Focus",
         "url": "https://www.euaa.europa.eu/nigeria-country-focus/13-demographics",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Last Places — Durbar Festival",
@@ -167,17 +170,20 @@
       {
         "title": "Hausa and the Chadic Languages (IU ScholarWorks)",
         "url": "https://scholarworks.iu.edu/dspace/bitstreams/b175371d-4472-4485-abd1-f96698068937/download",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — Nigeria",
         "url": "https://www.cia.gov/the-world-factbook/countries/nigeria/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "UNESCO World Heritage Centre — La vieille ville de Zinder, quartier de Birni et le Sultanat",
         "url": "https://whc.unesco.org/en/tentativelists/5040/",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Soumission du Niger à la liste indicative hébergée par l'UNESCO (26 mai 2006) ; elle décrit l'architecture haoussa du quartier de Birni et des murailles en terre de 9 à 10 m de hauteur, sans constituer une inscription au patrimoine mondial."
       }
     ]

@@ -39,6 +39,10 @@ import {
   loadAllPlaceFiches,
   type PlaceFiche,
 } from "@/lib/afrik/loaders/placeJsonLoader";
+import {
+  loadAllWordFiches,
+  type WordFiche,
+} from "@/lib/afrik/loaders/wordJsonLoader";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { SUPABASE_BATCH_REQUEST_TIMEOUT_MS } from "@/lib/supabase/requestDeadline";
 import type { Country, LanguageFamily, People } from "@/types/afrik";
@@ -58,6 +62,7 @@ export const CORPUS_TABLES = [
   "afrik_people_countries",
   "afrik_places",
   "afrik_place_peoples",
+  "afrik_words",
   "afrik_patronymes",
 ] as const;
 
@@ -71,6 +76,7 @@ export interface CorpusSnapshot {
   countries: Country[];
   patronymes: PatronymeBatch["dossiers"];
   places: PlaceFiche[];
+  words: WordFiche[];
 }
 
 export interface TableExpectation {
@@ -307,6 +313,26 @@ export function buildCorpusExpectations(
       ),
     },
     {
+      table: "afrik_words",
+      primaryKey: ["id"],
+      columns: [
+        "id",
+        "name_main",
+        "word_language",
+        "definition",
+        "content",
+        "name_history",
+      ],
+      rows: (corpus.words ?? []).map((word) => ({
+        id: word.id,
+        name_main: word.nameMain,
+        word_language: word.wordLanguage,
+        definition: word.definition,
+        content: word.content,
+        name_history: word.nameHistory,
+      })),
+    },
+    {
       table: "afrik_patronymes",
       primaryKey: ["id"],
       columns: [
@@ -404,12 +430,14 @@ async function readCorpus(): Promise<{
   corpus: CorpusSnapshot;
   rejectedPatronymes: string[];
   rejectedPlaces: string[];
+  rejectedWords: string[];
 }> {
   const languageFamilies = await loadAllLanguageFamilies();
   const peoples = await loadAllPeoples();
   const countries = await loadAllCountries();
   const patronymeBatch = loadAllPatronymeDossiers();
   const placeBatch = loadAllPlaceFiches();
+  const wordBatch = loadAllWordFiches();
 
   return {
     corpus: {
@@ -419,9 +447,11 @@ async function readCorpus(): Promise<{
       countries,
       patronymes: patronymeBatch.dossiers,
       places: placeBatch.places,
+      words: wordBatch.words,
     },
     rejectedPatronymes: patronymeBatch.errors,
     rejectedPlaces: placeBatch.errors,
+    rejectedWords: wordBatch.errors,
   };
 }
 
@@ -473,7 +503,8 @@ async function main(): Promise<void> {
     requestTimeoutMs: SUPABASE_BATCH_REQUEST_TIMEOUT_MS,
   });
 
-  const { corpus, rejectedPatronymes, rejectedPlaces } = await readCorpus();
+  const { corpus, rejectedPatronymes, rejectedPlaces, rejectedWords } =
+    await readCorpus();
   console.log(
     `Verifying that ${target.environment} serves the corpus git holds\n`
   );
@@ -513,6 +544,12 @@ async function main(): Promise<void> {
   if (rejectedPlaces.length > 0) {
     console.log(
       `\n  note: ${rejectedPlaces.length} place fiche(s) fail to parse and are compared as absent from git`
+    );
+  }
+
+  if (rejectedWords.length > 0) {
+    console.log(
+      `\n  note: ${rejectedWords.length} word fiche(s) fail to parse and are compared as absent from git`
     );
   }
 

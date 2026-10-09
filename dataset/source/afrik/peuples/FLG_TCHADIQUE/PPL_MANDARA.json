@@ -109,12 +109,14 @@
       {
         "title": "SIL Ethnologue — Wandala (mfi)",
         "url": "https://www.ethnologue.com/language/mfi",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "MacEachern, Scott — What was the Wandala state, and who are the Wandala? Academia.edu",
         "url": "https://www.academia.edu/12092979/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

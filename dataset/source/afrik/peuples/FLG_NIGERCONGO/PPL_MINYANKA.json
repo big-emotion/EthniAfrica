@@ -86,12 +86,14 @@
       {
         "title": "Glottolog 5.3 — Mamara Senoufo (myk)",
         "url": "https://glottolog.org/resource/languoid/id/mama1271",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Colleyn, Jean-Paul et Jonckers, Danielle — Ceux qui refusent le maître : la conception du pouvoir chez les Minyanka du Mali. Africa 53(4), 1983, p. 43-58",
         "url": "https://www.cambridge.org/core/journals/africa/article/abs/ceux-qui-refusent-le-maitre-la-conception-du-pouvoir-chez-les-minyanka-du-mali/10D44A79F1FF3B3F9C4E211F24E4BB21",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Peer-reviewed article published by Cambridge University Press; supports the naming and self-identification note."
       }
     ]

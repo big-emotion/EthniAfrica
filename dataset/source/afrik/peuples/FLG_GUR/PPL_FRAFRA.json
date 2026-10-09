@@ -105,12 +105,14 @@
       {
         "title": "GhanaWeb — FraFra people",
         "url": "https://www.ghanaweb.com/GhanaHomePage/tribes/frafra.php",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "GhanaWeb — What you need to know about the Frafra people",
         "url": "https://www.ghanaweb.com/GhanaHomePage/NewsArchive/What-you-need-to-know-about-the-Frafra-people-of-Ghana-West-Africa-1011064",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Folklore.ee — The Dagaaba-Frafra Joking Relationship",

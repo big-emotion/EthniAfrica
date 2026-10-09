@@ -853,6 +853,12 @@ export function SearchFeed({
             searched={query}
             subjectType={subject.type}
             headingLevel={index === 0 ? "h1" : "h2"}
+            // A country result is its own country; a people carries its
+            // countries. Other kinds carry none, and get outside-Africa
+            // events only (see elsewhereAnchorFor).
+            countryIds={
+              subject.type === "country" ? [subject.id] : subject.countryIds
+            }
             language={language}
           />
         ))}

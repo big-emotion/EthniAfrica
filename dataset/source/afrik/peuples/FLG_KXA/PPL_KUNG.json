@@ -117,7 +117,8 @@
       {
         "title": "UNESCO Tentative List — San Living Cultural Landscape",
         "url": "https://whc.unesco.org/en/tentativelists/6096/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Internet Archive — N/um tchai: The Ceremonial Dance of the !Kung Bushmen (Marshall, 1969)",
@@ -127,7 +128,8 @@
       {
         "title": "SIL Ethnologue — Kx'a language subgroup",
         "url": "https://www.ethnologue.com/subgroup/4285/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

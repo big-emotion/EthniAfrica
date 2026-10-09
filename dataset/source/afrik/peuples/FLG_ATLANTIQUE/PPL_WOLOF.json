@@ -8,7 +8,7 @@
       "mainName": "Wolof",
       "selfAppellation": "Wolof",
       "exonyms": ["Jolof", "Djolof", "Ouolof", "Wollof", "Woloff"],
-      "originOfExonyms": "Le terme Jolof ou Djolof derive du nom de l'Empire Jolof fonde au XIVe siecle au Senegal. Les Portugais, premiers Europeens a contacter ce peuple au XVe siecle, ont transcrit le nom en Jalof ou Ouolof.",
+      "originOfExonyms": "Le terme Jolof ou Djolof viendrait du nom de l'Empire Jolof fonde au XIVe siecle au Senegal. Les Portugais, premiers Europeens a contacter ce peuple au XVe siecle, ont transcrit le nom en Jalof ou Ouolof.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Wolof est universellement adopte aujourd'hui en francais et en anglais. Ouolof est encore utilise dans certains textes administratifs francais anciens.",
       "linguisticFamily": "FLG_ATLANTIQUE",
@@ -117,7 +117,8 @@
       {
         "title": "Ethnologue – Wolof (wol)",
         "url": "https://www.ethnologue.com/language/wol/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "World History Encyclopedia – Wolof Empire",
@@ -127,12 +128,14 @@
       {
         "title": "Agence Nationale de la Statistique et de la Demographie du Senegal (ANSD), Recensement 2023",
         "url": "https://www.ansd.sn",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "CIA World Factbook – Senegal",
         "url": "https://www.cia.gov/the-world-factbook/countries/senegal/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Joshua Project — Wolof in Senegal (2025)",

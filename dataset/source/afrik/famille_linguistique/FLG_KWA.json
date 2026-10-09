@@ -84,36 +84,42 @@
         "title": "Westermann, Diedrich (1927) – Die westlichen Sudansprachen und ihre Beziehungen zum Bantu. Walter de Gruyter",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Première introduction du terme « Kwa » comme catégorie linguistique."
       },
       {
         "title": "Greenberg, Joseph H. (1963) – The Languages of Africa. Indiana University Press",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Classe le Kwa comme branche du Niger-Congo, dans un sens plus large que la classification actuelle."
       },
       {
         "title": "Bennett, Patrick R. & Sterk, Jan P. (1977) – \"South Central Niger-Congo: A Reclassification\", Studies in African Linguistics 8(3), pp. 241-273",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article qui scinde le « Kwa » de Greenberg en Kwa restreint et Bénoué-Congo sur le critère des classes nominales."
       },
       {
         "title": "Stewart, John M. (1989) – \"Kwa\", dans Bendor-Samuel, J. & Hartell, R. L. (éds.), The Niger–Congo Languages. University Press of America, pp. 217-245",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Formalise la classification restreinte du Kwa retenue par cette fiche et reconstruit un proto-Tano."
       },
       {
         "title": "Williamson, Kay & Blench, Roger (2000) – \"Niger-Congo\", dans Heine, B. & Nurse, D. (éds.), African Languages: An Introduction. Cambridge University Press, pp. 11-42",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Synthèse de référence de l'arbre du Volta-Congo utilisée pour les branches internes du Kwa."
       },
       {
         "title": "Good, Jeff (2020) – \"Niger-Congo, with a special focus on Benue-Congo\", dans Vossen, R. & Dimmendaal, G. J. (éds.), The Oxford Handbook of African Languages. Oxford University Press",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Discute le caractère débattu de la frontière entre Kwa et Bénoué-Congo comme unités généalogiques."
       },
       {
@@ -126,36 +132,42 @@
         "title": "Kropp Dakubu, Mary Esther (1988) – The Languages of Ghana. Kegan Paul International, pour l'International African Institute",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Inventaire de référence des langues kwa et non-kwa du Ghana, dont le ga-dangme."
       },
       {
         "title": "Capo, Hounkpati B. C. (1991) – A Comparative Phonology of Gbe. Foris Publications",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Classification comparative interne des langues gbe (éwé, fon, aja, mina, gen)."
       },
       {
         "title": "SIL International (2025) – Ethnologue: Languages of the World (25e édition)",
         "url": "https://www.ethnologue.com",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Fiches de langues individuelles du groupe kwa et estimations de locuteurs."
       },
       {
         "title": "Glottolog 5.2 (2025) – \"Kwa Volta-Congo\" (kwav1236)",
         "url": "https://glottolog.org/resource/languoid/id/kwav1236",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Classification de référence : Atlantic-Congo > Volta-Congo > Kwa Volta-Congo, 81 langues rattachées, consultée le 2026-09-14."
       },
       {
         "title": "UNFPA (2025) – World Population Dashboard",
         "url": "https://www.unfpa.org/data/world-population-dashboard",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Populations nationales du Ghana, de la Côte d'Ivoire, du Togo et du Bénin utilisées pour calibrer les estimations de locuteurs par pays."
       },
       {
         "title": "Ghana Statistical Service (2021) – 2021 Population and Housing Census: General Report",
         "url": "https://statsghana.gov.gh",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "Répartition linguistique déclarée au recensement ghanéen, dont akan et ewe."
       }
     ]

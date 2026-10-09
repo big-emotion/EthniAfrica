@@ -62,6 +62,13 @@ export const SEARCH_ENTITY_ACCENT: Record<
     markClassName: "bg-[var(--afh-cat-teal)]",
     accentScopeClassName: "afh-accent-teal",
   },
+  // REQ-196: a word fiche wears the ocre its answer page already wears
+  // (SEARCH_ANSWER_ACCENT below), so the card and the page agree.
+  word: {
+    label: "Mot",
+    markClassName: "bg-[var(--afh-cat-ocre)]",
+    accentScopeClassName: "afh-accent-ocre",
+  },
 };
 
 /**

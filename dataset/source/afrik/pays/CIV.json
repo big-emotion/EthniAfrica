@@ -1043,17 +1043,20 @@
       {
         "title": "SIL Ethnologue – Languages of Côte d'Ivoire",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Côte d'Ivoire",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Côte d'Ivoire",
         "url": "https://www.unfpa.org/data/world-population/CI",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Memel-Fotê, Harris – \"Le modèle politique ivoirien\"",
@@ -1078,7 +1081,8 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Schwartz, Alfred — Histoire de la Côte des Dents (Sud-Ouest ivoirien), ORSTOM, 1972",
@@ -1105,6 +1109,7 @@
         "title": "Rezo-Ivoire — Port-Bouët, présentation de la commune",
         "url": "https://rezoivoire.net/ivoire/villes-villages/4340/la-presentation-de-port-bouet.html",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Site d'information ivoirien ; il rattache le nom de la commune d'Abidjan à Bouët-Willaumez."
       }
     ],

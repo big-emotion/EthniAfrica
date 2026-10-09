@@ -78,7 +78,8 @@
       {
         "title": "Le peuple Abidji – Rezo-Ivoire, 2011",
         "url": "https://rezoivoire.net/ivoire/patrimoine/3811/le-peuple-abidji.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Le Dipri chez les Abidji de Cote d'Ivoire – Revue du GRALIFAH, J.J. Essoh et M. Yeo, 2024",
@@ -88,12 +89,14 @@
       {
         "title": "Abidji Language (ABI) – Ethnologue / SIL International",
         "url": "https://www.ethnologue.com/language/abi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Abidji – Glottolog, abid1235",
         "url": "https://glottolog.org/resource/languoid/id/abid1235",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

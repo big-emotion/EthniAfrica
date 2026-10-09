@@ -104,7 +104,8 @@
       {
         "title": "SIL Ethnologue — Basaa language (bas)",
         "url": "https://www.ethnologue.com/language/bas/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Basaa (basa1284)",
@@ -129,30 +130,35 @@
         "title": "Larry M. Hyman — Basaá (A.43), reference chapter",
         "url": "https://linguistics.berkeley.edu/~hyman/Basaa_Chapter.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Author is a linguistics faculty member at the University of California, Berkeley; hosted on his own academic page. Supports the Guthrie A.43/zone A40 classification and the \"Basaá\" spelling alias."
       },
       {
         "title": "Emmanuel-Moselly Makasso — Illustrations of the IPA: Basa'a, Journal of the International Phonetic Association",
         "url": "https://doi.org/10.1017/S0025100314000383",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Peer-reviewed article, Cambridge University Press. Supports the \"Basa'a\" spelling alias and the language's phonological description."
       },
       {
         "title": "JusticeInfo.net — Cameroon: Um Nyobè, a hero and symbol of French colonial crimes",
         "url": "https://www.justiceinfo.net/en/82062-cameroon-um-nyobe-hero-symbol-french-colonial-crimes.html",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Identifiable transitional-justice press outlet. Corroborates the 1948 founding of the UPC, the 13 September 1958 assassination, and the 2007 memorial at Eseka."
       },
       {
         "title": "Henry John Drewal, Mami Wata: Arts for Water Spirits in Africa and Its Diasporas",
         "url": "https://fowler.ucla.edu/exhibitions/mami-wata-arts-for-water-spirits-in-africa-and-its-diasporas/",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Monographie et exposition du Fowler Museum, UCLA, 2008, commissaire invité Henry John Drewal ; consultée le 10 septembre 2026."
       },
       {
         "title": "Alex van Stipriaan, Watramama/Mami Wata: Three Centuries of Creolization of a Water Spirit in West Africa, Suriname and Europe",
         "url": "https://brill.com/abstract/journals/mata/27/1/article-p321_321.xml",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Revue Matatu, volumes 27-28, 2003 ; travail universitaire indépendant de celui de Drewal, consulté le 10 septembre 2026."
       },
       {
@@ -165,18 +171,21 @@
         "title": "Louis-Marie Pouka, « Les Bassa du Cameroun », Les Cahiers d'Outre-Mer, 1950, tome 3, n° 10, p. 153-166",
         "url": "https://www.persee.fr/doc/caoum_0373-5834_1950_num_3_10_1676",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article d'un auteur bassa dans une revue académique française. Il situe l'origine du peuple au nord-est et son passage par Ngok-litoupa, qu'il glose « pierre à trou », et nomme les clans restés sur place, dont les Babimbi et les Basso ba Likol. Seule la première page est lisible en accès libre ; elle porte le passage cité, lu le 10 septembre 2026."
       },
       {
         "title": "Athanase Bopda, « De l'usage des fonds mythiques dans les remaniements territoriaux en Afrique et au Cameroun », Cahiers de géographie du Québec, vol. 45, n° 126, 2001, p. 451-478",
         "url": "https://www.erudit.org/fr/revues/cgq/2001-v45-n126-cgq2698/023003ar.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de revue universitaire en accès libre, lu le 10 septembre 2026. Il décrit la place centrale du récit de la sortie de Ngog Lituba dans l'organisation des territoires de la côte camerounaise, de l'embouchure du Nyong à celle du Moungo. Il concerne les Bassa, les Bakoko, les Babimbi, les Douala, les Pongo et les Banen. Il n'explique ni le sens du nom du lieu ni celui du nom du peuple."
       },
       {
         "title": "Emmanuel Kombem Ngwainmbi, « Bassa », dans Molefi Kete Asante et Ama Mazama (dir.), Encyclopedia of African Religion, SAGE, 2009, p. 108-110",
         "url": "https://sk.sagepub.com/ency/edvol/africanreligion/chpt/bassa",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Entrée d'encyclopédie de référence, lue le 10 septembre 2026 dans l'exemplaire numérisé par Internet Archive. Elle donne les autodésignations Bon ba Ngock « Children of the Rock » et Bon ba Mbog Liaa « Children of the Tradition of the Rock », ainsi que Hilolombi et les confréries du Mbog. Elle traite en revanche sous une entrée unique les Bassa du Cameroun, du Liberia, du Nigeria, du Togo, du Congo et du Sénégal comme un seul peuple d'origine égyptienne, ce qu'aucune classification linguistique ne soutient."
       }
     ]

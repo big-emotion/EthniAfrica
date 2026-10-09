@@ -104,12 +104,14 @@
       {
         "title": "US State Department — Angola country report (Bakongo 13% of population)",
         "url": "https://2009-2017.state.gov/outofdate/bgn/angola/82228.htm",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue — Kongo macrolanguage (kon)",
         "url": "https://www.ethnologue.com/language/kon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Kongo in Angola",

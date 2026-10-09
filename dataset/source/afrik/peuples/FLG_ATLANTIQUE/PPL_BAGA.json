@@ -118,7 +118,8 @@
       {
         "title": "Ethnologue (SIL International). Baga subgroup",
         "url": "https://www.ethnologue.com/subgroup/1232/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

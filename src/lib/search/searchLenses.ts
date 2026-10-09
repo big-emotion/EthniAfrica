@@ -45,9 +45,11 @@ export function buildFeedLenses(
 }
 
 /**
- * The page opens on the timeline when a searched subject has a name history.
- * REQ-198 asks for it on every query, with a minimal timeline otherwise; the
- * operator's brief for ETNI-2012 keeps the answer as the default until then.
+ * The page opens on « Histoire du nom » when a searched subject has a name
+ * history, and on the answer otherwise. Every subject is meant to carry one,
+ * so the fallback is a safety net rather than a second design: a lens with no
+ * dated tile would open the page on an empty history (operator ruling,
+ * ETNI-2012 review, 2026-10-09).
  */
 // @req REQ-198
 export function defaultFeedLens(timelineCount: number): FeedLensId {

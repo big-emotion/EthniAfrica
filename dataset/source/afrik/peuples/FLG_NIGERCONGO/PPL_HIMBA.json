@@ -11,7 +11,7 @@
         "Himba (terme européen et international)",
         "Les nomades rouges de Namibie (surnom touristique)"
       ],
-      "originOfExonyms": "Le terme Ovahimba signifie mendiant en langue ngambwe. Il fut attribué aux Herero du Kaokoveld par le peuple Ngambwe d'Angola lorsque ces derniers, fuyant les raids Nama au milieu du XIXe siècle, se réfugièrent en Angola démunis de tout bétail. Les réfugiés adoptèrent eux-mêmes ce nom et le conservent encore aujourd'hui.",
+      "originOfExonyms": "Le terme Ovahimba voudrait dire mendiant en langue ngambwe. Il fut attribué aux Herero du Kaokoveld par le peuple Ngambwe d'Angola lorsque ces derniers, fuyant les raids Nama au milieu du XIXe siècle, se réfugièrent en Angola démunis de tout bétail. Les réfugiés adoptèrent eux-mêmes ce nom et le conservent encore aujourd'hui.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Ovahimba est l'appellation endonymique officielle. Himba est universellement utilisé dans les contextes touristiques, scientifiques et internationaux. Le singulier est Omuhimba.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -105,7 +105,8 @@
       {
         "title": "Culture and the Mind, University of Sheffield — Himba fieldsites",
         "url": "https://cultureandmind.sites.sheffield.ac.uk/fieldsites/himba",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Africa Travel — Cultural Spotlight: The Himba of Namibia",

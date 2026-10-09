@@ -32,36 +32,42 @@
         "title": "Glottolog 5.3 — Dyula (dyul1238)",
         "url": "https://glottolog.org/resource/languoid/id/dyul1238",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Notice directe pour le code ISO 639-3 dyu et le glottocode dyul1238. Classification Glottolog, du plus large au plus étroit : Mande, Mande occidental, Manding-Kpelle, Mande central, Manding-Jogo, Manding-Vai, Manding-Mokole, Manding, Manding oriental. La notice reprend l'appréciation EGIDS d'Ethnologue 2025, niveau 3, communication élargie, et note un usage de langue véhiculaire en Côte d'Ivoire ainsi qu'au Burkina Faso, dans le commerce, la chasse, la religion et l'enseignement. Les dialectes listés sont les sous-languoids que Glottolog rattache à dyul1238, hors languoids portant leur propre code ISO 639-3. Consultée le 2026-09-16."
       },
       {
         "title": "ISO 639-3, tables de codes publiées par SIL Global, autorité d'enregistrement de la norme",
         "url": "https://iso639-3.sil.org/code_tables/download_tables",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Tables du 2026-07-15, consultées le 2026-09-16. La table des macrolangues n'associe le code dyu à aucune macrolangue, non plus que le code bam du bambara, tandis qu'elle rattache le maninkakan de l'Est et le mandinka à la macrolangue man, Mandingo. Le partage entre langue et dialecte est ici une décision de codification, prise code par code par un organisme, et non une frontière relevée sur le terrain."
       },
       {
         "title": "Chikouna Cissé, Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos 1, 2025",
         "url": "https://www.ouvroir.fr/apropos/index.php?id=100",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Cite François-Xavier Fauvelle (p. 172) sur les Wangara, intermédiaires marchands connus ensuite sous d'autres noms jusqu'à Dioula. Rapporte les pistes proposées pour le mot jula : arabe jawla ou jûl (Cissé, Konaté), malinké dyo (Person), « du fond de la souche » (Delafosse, démenti par les informateurs de Tauxier). Cite le mot malinké jagokêla."
       },
       {
         "title": "Yaya Konaté, Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela 14-1, 2016",
         "url": "https://doi.org/10.4000/corela.4586",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article fondé sur des enquêtes de terrain : les interlocuteurs de l'auteur traduisent jula par « commerçant »."
       },
       {
         "title": "Paul E. Lovejoy, The Role of the Wangara in the Economic Transformation of the Central Sudan in the Fifteenth and Sixteenth Centuries, The Journal of African History 19(2), 1978, pp. 173-193",
         "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/role-of-the-wangara-in-the-economic-transformation-of-the-central-sudan-in-the-fifteenth-and-sixteenth-centuries/1DB11290A76E4158CE5E60EB0CB0E4B9",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Pour le Soudan central et le pays haoussa, décrit les Wangara comme une diaspora commerciale distincte, liée à l'empire Songhaï. Résumé consulté, texte intégral non lu."
       },
       {
         "title": "Dictionnaire bambara et dioula An ka taa",
         "url": "https://dictionary.ankataa.com/lexicon.php?letter=11",
         "tier": "unverified",
+        "source_kind": "linguistic_reference",
         "notes": "Compilation en ligne dérivée des dictionnaires de Bailleul, Dumestre et Vydrin. Donne jula pour le commerçant et julakan pour la langue."
       }
     ]

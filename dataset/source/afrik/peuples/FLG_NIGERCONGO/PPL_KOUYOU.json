@@ -89,12 +89,14 @@
       {
         "title": "Glottolog 5.2 - Koyo (koh)",
         "url": "https://glottolog.org/resource/languoid/id/koyo1242",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue - Koyo language (koh)",
         "url": "https://www.ethnologue.com/language/koh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Expeditions Ducret - Ethnic Groups of Congo",

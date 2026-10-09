@@ -12,8 +12,10 @@ import {
 } from "@/lib/search/evidence";
 import {
   searchPresentationText,
+  toldName,
   type NamingClaimStatus,
   type SearchNameRecord,
+  type ToldName,
 } from "@/lib/search/naming";
 
 export type SearchNamingSubjectType =
@@ -155,12 +157,6 @@ interface ToldNames {
   fieldPaths: Set<string>;
 }
 
-/** A name as the search sheet shows it, before evidence is attached. */
-type ToldName = Omit<
-  SearchNameRecord,
-  "id" | "entityType" | "entityId" | "evidence"
->;
-
 interface ToldSource {
   title: string;
   author?: string | null;
@@ -180,7 +176,8 @@ function toldNames(
   entityId: string,
   rawHistory: unknown,
   rawIndex: unknown,
-  confidence: { score: number; lastHumanAuditAt: string | null } | undefined
+  confidence: { score: number; lastHumanAuditAt: string | null } | undefined,
+  entityType = "people"
 ): ToldNames {
   const told: ToldNames = { records: [], fieldPaths: new Set() };
 
@@ -222,7 +219,7 @@ function toldNames(
       rank,
       record: {
         id,
-        entityType: "people",
+        entityType,
         entityId,
         ...name,
         evidence: [evidence],
@@ -236,7 +233,7 @@ function toldNames(
       tell(
         `${entityId}:nameHistory:${rank}`,
         rank,
-        shownName(entry),
+        toldName(entry),
         entry.sources
       );
     });
@@ -250,7 +247,7 @@ function toldNames(
       tell(
         `${entityId}:name:${position}`,
         entry.sortRank,
-        shownName(entry),
+        toldName(entry),
         entry.sources ?? []
       );
     });
@@ -259,35 +256,68 @@ function toldNames(
   return told;
 }
 
-function shownName(entry: {
-  nameText: string;
-  nameType: string;
-  languageOfOrigin: string | null;
-  meaning: string | null;
-  periodLabel: string | null;
-  shortLine?: string;
-  imposedBy: string | null;
-  impositionPeriod: string | null;
-  whyProblematic: string | null;
-  contemporaryUsage: string | null;
-}): ToldName {
+/**
+ * A word's names and their evidence, read from the nameHistory its search row
+ * already carries (REQ-196): no table holds assertions for a word, so there
+ * is nothing to look up.
+ *
+ * Beside each name's own evidence, one evidence entry sits at
+ * `nameHistory.summary` with every distinct source the block cites. The
+ * summary sums up every account, so it rests on all of them; giving it only
+ * the sources of the account that describes the name would show the reader
+ * one source behind a history that cites a dozen.
+ */
+// @req REQ-196
+export function wordNamingData(
+  entityId: string,
+  rawHistory: unknown
+): SearchNamingData {
+  const told = toldNames(entityId, rawHistory, undefined, undefined, "word");
+  const records = told.records.map(({ record }) => record);
+  const parsed = parseNameHistory(rawHistory);
+  if (!parsed.success) {
+    return { records, evidence: records.flatMap(({ evidence }) => evidence) };
+  }
+
+  const distinct = new Map<string, ToldSource>();
+  for (const name of parsed.data.names) {
+    for (const account of name.accounts) {
+      for (const source of account.sources) {
+        // strictNullChecks is off, so zod's output reads every key as
+        // optional; the block has been parsed, so the source is whole.
+        distinct.set(JSON.stringify(source), source as ToldSource);
+      }
+    }
+  }
+  const sources: SearchEvidenceSource[] = [...distinct.values()].map(
+    (source, index) => {
+      const sourceKind = toSourceKindOrNull(source.source_kind);
+      return {
+        id: `${entityId}:nameHistory:source:${index}`,
+        title: source.title,
+        ...(nullableText(source.author) ? { author: source.author } : {}),
+        ...(typeof source.year === "number" ? { year: source.year } : {}),
+        ...(nullableText(source.url) ? { url: source.url } : {}),
+        tier: searchSourceStanding(source.tier),
+        ...(sourceKind ? { sourceKind } : {}),
+      };
+    }
+  );
+  const summary: SearchEvidence = {
+    assertion: {
+      id: `${entityId}:nameHistory:summary`,
+      statement: parsed.data.summary,
+      fieldPath: "nameHistory.summary",
+      sourceCount: sources.length,
+      lastHumanAuditAt: null,
+    },
+    sources,
+    standing: strongestSearchSourceStanding(sources),
+  };
+
   return {
-    form: entry.nameText,
-    kind: entry.nameType as SearchNameRecord["kind"],
-    ...(nullableText(entry.languageOfOrigin)
-      ? { languageOfOrigin: entry.languageOfOrigin }
-      : {}),
-    ...(nullableText(entry.meaning) ? { meaning: entry.meaning } : {}),
-    ...(nullableText(entry.periodLabel)
-      ? { periodLabel: entry.periodLabel }
-      : {}),
-    ...(nullableText(entry.shortLine) ? { shortLine: entry.shortLine } : {}),
-    ...(nullableText(entry.imposedBy) ? { imposedBy: entry.imposedBy } : {}),
-    ...(nullableText(entry.impositionPeriod)
-      ? { impositionPeriod: entry.impositionPeriod }
-      : {}),
-    problematic: Boolean(nullableText(entry.whyProblematic)),
-    usedToday: Boolean(nullableText(entry.contemporaryUsage)),
+    records,
+    evidence: [summary, ...records.flatMap(({ evidence }) => evidence)],
   };
 }
 

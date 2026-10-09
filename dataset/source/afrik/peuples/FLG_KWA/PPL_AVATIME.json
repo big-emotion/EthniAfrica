@@ -82,7 +82,8 @@
       {
         "title": "Ethnologue - Avatime Language (AVN)",
         "url": "https://www.ethnologue.com/language/avn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Avatime, Sideme in Ghana",

@@ -171,4 +171,17 @@ describe("search-feed plan", () => {
     expect(isSearchFeedSubject({ type: "person" })).toBe(false);
     expect(isSearchFeedSubject({ type: "people" })).toBe(true);
   });
+
+  // A word is answered on the page like any subject, but the companion
+  // endpoint knows no word: asking it about one would fail the feed.
+  // @req REQ-196
+  it("answers a word fiche as a subject without asking companions about it", () => {
+    const word = { type: "word" as const, id: "WRD_RACE", name: "race" };
+    const people = { type: "people" as const, id: "PPL_FANG", name: "Fang" };
+
+    expect(isSearchFeedSubject(word)).toBe(true);
+    expect(companionSubjectsForSearch([word, people], [])).toEqual([
+      { entityType: "people", entityId: "PPL_FANG" },
+    ]);
+  });
 });

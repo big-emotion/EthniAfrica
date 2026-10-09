@@ -8,7 +8,7 @@
       "mainName": "Rashaida",
       "selfAppellation": "Bani Rasheed",
       "exonyms": ["Rashaida", "Rashad", "Bani Rashid"],
-      "originOfExonyms": "Le nom Rashaida derive du terme arabe signifiant refugie ou exile, en reference a la fuite de la peninsule arabique au XIXe siecle. L'auto-appellation Bani Rasheed designe les descendants de Rasheed, ancetre eponyme de la tribu.",
+      "originOfExonyms": "Le nom Rashaida dériverait du terme arabe signifiant réfugié ou exilé, en référence à la fuite de la péninsule arabique au XIXe siècle. L'auto-appellation Bani Rasheed designe les descendants de Rasheed, ancetre eponyme de la tribu.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Rashaida est aujourd'hui universellement utilise dans les contextes administratifs en Erythree et au Soudan, ainsi que dans les sources academiques et les organisations humanitaires.",
       "linguisticFamily": "FLG_SEMITIQUE",
@@ -102,12 +102,14 @@
       {
         "title": "Tishkoff et al., The Genetic Structure and History of Africans and African Americans – Science, 2009",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue, Arabic, Gulf (afb) – SIL International 2024",
         "url": "https://www.ethnologue.com/language/afb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -110,7 +110,8 @@
       {
         "title": "SIL Ethnologue — Borana-Arsi-Guji Oromo (gax)",
         "url": "https://www.ethnologue.com/language/gax/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ultimate Wild Safaris — The Gabbra people",
@@ -120,7 +121,8 @@
       {
         "title": "Robinson, P. W. (1985). Gabra Nomadic Pastoralism in Nineteenth and Twentieth Century Northern Kenya. Northwestern University dissertation",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

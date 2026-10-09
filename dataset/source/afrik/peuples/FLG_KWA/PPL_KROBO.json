@@ -16,7 +16,7 @@
         "Nowe",
         "Nyewe"
       ],
-      "originOfExonyms": "Le nom Krobo est d'origine akan, derive de Kro-obo-so-Foo signifiant ville des habitants de la montagne ou montagnards. Klo yo signifie Montagne Krobo dans la langue dangme. Les deux divisions historiques portent les noms Nowe (Manya, signifiant notre chez-soi) et Nyewe (Yilo, de wa yilo signifiant on ne mange pas ca, reference aux tabous alimentaires acquis lors du retour de la branche yilo depuis Krobo Denkyera).",
+      "originOfExonyms": "Le nom Krobo serait d'origine akan : il viendrait de Kro-obo-so-Foo, qui veut dire ville des habitants de la montagne ou montagnards. Klo yo voudrait dire Montagne Krobo dans la langue dangme. Les deux divisions historiques portent les noms Nowe (Manya, qui voudrait dire notre chez-soi) et Nyewe (Yilo, qui viendrait de wa yilo, soit on ne mange pas ca, en reference aux tabous alimentaires acquis lors du retour de la branche yilo depuis Krobo Denkyera).",
       "whyProblematic": "Les deux divisions Manya Krobo et Yilo Krobo sont parfois traitees comme deux groupes distincts alors qu'ils constituent un seul peuple. L'usage colonial des termes Eastern Krobo (Manya) et Western Krobo (Yilo) a cree des confusions administratives.",
       "contemporaryUsage": "Krobo est le nom officiel employé par l'administration ghanéenne et par la recherche. Les membres du peuple se nomment eux-mêmes Klo. Leurs deux divisions sont réparties dans les districts de Lower Manya Krobo, Upper Manya Krobo et Yilo Krobo, dans la Région orientale du Ghana.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -88,7 +88,8 @@
       {
         "title": "Adangme (Dangme) – Glottolog 5.3, ISO 639-3 : ada",
         "url": "https://glottolog.org/resource/languoid/id/adan1247",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Lower Manya Krobo population – CityPopulation.de",
@@ -98,7 +99,8 @@
       {
         "title": "Yilo Krobo Municipal population 2021 – Ghana Statistical Service",
         "url": "https://microdata.statsghana.gov.gh",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Krobo People Migration from Klo Mountains – Facebook / Groupes communautaires",
@@ -114,6 +116,7 @@
         "title": "Kropp Dakubu, Mary Esther (1988) – The Languages of Ghana. Kegan Paul International, pour l'International African Institute",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Survol linguistique des langues du Ghana, dont le ga-dangme et ses traditions orales."
       }
     ]

@@ -95,22 +95,26 @@
       {
         "title": "SIL Ethnologue — Sukuma (suk)",
         "url": "https://www.ethnologue.com/language/suk/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Tanzania",
         "url": "https://www.cia.gov/the-world-factbook/countries/tanzania/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "National Bureau of Statistics Tanzania — 2022 Population and Housing Census",
         "url": "https://www.nbs.go.tz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Glottolog — Sukuma (suku1261)",
         "url": "https://glottolog.org/resource/languoid/id/suku1261",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Encyclopaedia Britannica — Sukuma",

@@ -108,17 +108,20 @@
       {
         "title": "eHRAF World Cultures — Ovimbundu (fp13)",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fp13/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Country Studies — Angola: Ovimbundu",
         "url": "https://countrystudies.us/angola/59.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue — Umbundu language, code umb",
         "url": "https://www.ethnologue.com/language/umb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Localizely — Umbundu (umb) ISO code",
@@ -128,7 +131,8 @@
       {
         "title": "Heywood, Linda. Contested Power in Angola, 1840s to the Present. University of Rochester Press, 2000",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

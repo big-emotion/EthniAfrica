@@ -92,17 +92,20 @@
       {
         "title": "SIL Ethnologue - Haya language (hay)",
         "url": "https://www.ethnologue.com/language/hay/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog - Haya",
         "url": "https://glottolog.org/resource/languoid/id/haya1250",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Peter Schmidt & Donald Avery, 'Complex iron smelting and prehistoric culture in Tanzania', Science, 1978",
         "url": "https://pubmed.ncbi.nlm.nih.gov/17830304/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project - Haya, Ziba in Tanzania",
@@ -112,7 +115,8 @@
       {
         "title": "University of Missouri - DICE cross-cultural database",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Haya.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "BLAC Foundation - Self-Praise Verses in Haya Ethnic Groups",
@@ -122,7 +126,8 @@
       {
         "title": "TIME Magazine - 'Africa's Ancient Steelmakers', 25 septembre 1978",
         "url": "https://time.com/archive/6845911/science-africas-ancient-steelmakers/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       }
     ]
   }

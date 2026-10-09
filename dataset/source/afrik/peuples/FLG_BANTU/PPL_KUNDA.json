@@ -98,12 +98,14 @@
       {
         "title": "Zambia: Tracing History of the Kunda – allAfrica.com, 2006",
         "url": "https://allafrica.com/stories/200611020687.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Kunda Language (KDN) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/kdn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

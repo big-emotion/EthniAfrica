@@ -24,7 +24,7 @@
         "Libyens (Antiquite grecque)",
         "Mazikes (sources byzantines)"
       ],
-      "originOfExonyms": "Berber est le nom arabe Barbar, et c'est de lui que vient le francais berbere. Il derive probablement du latin barbarus, par la forme parlee des villes romanisees que les Arabes entendent a leur arrivee, et non par un usage savant, selon Yves Modéran. Amazigh (pluriel Imazighen) est le nom que les peuples autochtones se donnent eux-memes. On y lit souvent « les hommes libres », mais Salem Chaker rapporte que cette glose vient de Jean-Leon l'Africain puis de Gsell, la juge « certainement pas fondee » et estime qu'il est difficile d'etablir une etymologie sure ; chez les Touareg, amajeγ designe l'aristocrate nomade, ce qui ne vaut pas pour l'ensemble. Les titres tribaux Barabara et Beraberata apparaissent dans des inscriptions egyptiennes de 1700 et 1300 av. J.-C.",
+      "originOfExonyms": "Berber est le nom arabe Barbar, et le français berbère viendrait de lui. Il derive probablement du latin barbarus, par la forme parlee des villes romanisees que les Arabes entendent a leur arrivee, et non par un usage savant, selon Yves Modéran. Amazigh (pluriel Imazighen) est le nom que les peuples autochtones se donnent eux-memes. On y lit souvent « les hommes libres », mais Salem Chaker rapporte que cette glose vient de Jean-Leon l'Africain puis de Gsell, la juge « certainement pas fondee » et estime qu'il est difficile d'etablir une etymologie sure ; chez les Touareg, amajeγ designe l'aristocrate nomade, ce qui ne vaut pas pour l'ensemble. Les titres tribaux Barabara et Beraberata apparaissent dans des inscriptions egyptiennes de 1700 et 1300 av. J.-C.",
       "whyProblematic": "Le terme Berber est considere pejoratif par une partie de la communaute car associe historiquement au mot barbare. Les mouvements culturels amazighs preferent Imazighen ou Amazigh.",
       "contemporaryUsage": "Amazigh et Imazighen sont desormais les termes officialises dans les constitutions du Maroc (2011) et de l'Algerie. Berber reste d'usage courant dans les sources academiques anglophones.",
       "linguisticFamily": "FLG_BERBERE",
@@ -178,17 +178,20 @@
       {
         "title": "Ethnologue SIL International - Berber languages",
         "url": "https://www.ethnologue.com/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Peabody Museum Harvard - Imazighen! Beauty and Artisanship",
         "url": "https://peabody.harvard.edu/OE-imazighen",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Encyclopédie berbère — Bijoux (H. Camps-Fabrer)",
         "url": "https://journals.openedition.org/encyclopedieberbere/1758",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Notice « Bijoux », Encyclopédie berbère, volume 10 (1991) ; la section sur les matériaux pose que l'argent est la base de la bijouterie berbère."
       },
       {
@@ -200,12 +203,14 @@
         "title": "Chaker, Salem (1986) – « Amaziɣ (le/un Berbère) », Encyclopédie berbère, 4, p. 562-568",
         "url": "https://journals.openedition.org/encyclopedieberbere/2465",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Notice de l'Encyclopédie berbère (CNRS et INALCO), passages relus dans le texte en ligne. Porte la critique de la glose « hommes libres », les formes antiques du nom, le sens de noble chez les Touareg et la diffusion du terme depuis les années 1945-1950."
       },
       {
         "title": "Modéran, Yves (2003) — Les Maures et l'Afrique romaine (IVe-VIIe siècle). Rome : École française de Rome, Bibliothèque des Écoles françaises d'Athènes et de Rome",
         "url": "https://books.openedition.org/efr/1431",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Monographie d'historien. L'introduction de sa cinquième partie retrace l'origine du nom arabe des Berbères et sa première attestation."
       }
     ]

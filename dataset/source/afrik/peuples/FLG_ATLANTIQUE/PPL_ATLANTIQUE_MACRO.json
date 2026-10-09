@@ -177,12 +177,14 @@
       {
         "title": "Ethnologue (SIL International). Guinea Languages",
         "url": "https://www.ethnologue.com/country/GN/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Creissels, Denis. Presentation de quelques langues ouest-africaines appartenant aux familles mande et atlantique. CNRS LGIDF, 2017",
         "url": "https://lgidf.cnrs.fr/sites/lgidf.cnrs.fr/files/images/Creissels.langues.afric.jan.%202017.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

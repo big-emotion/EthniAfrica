@@ -4,7 +4,7 @@
   "nameEn": "Seychelles",
   "nameOfficial": "République des Seychelles (Republic of Seychelles, Repiblik Sesel)",
   "summary": "Les Seychelles portent le nom de Jean Moreau de Séchelles, contrôleur général des finances de Louis XV. Les îles étaient inhabitées : leur population est née de la colonisation française puis britannique. Le créole seychellois y est langue officielle aux côtés du français et de l'anglais.",
-  "etymology": "Le nom \"Seychelles\" vient de Jean Moreau de Séchelles, contrôleur général des finances de Louis XV, roi de France. Les îles ont été nommées \"Seychelles\" par les Français en 1756 en son honneur. Le nom créole \"Sesel\" est dérivé de \"Seychelles\". Auparavant, les îles étaient appelées \"Îles de la Ligne\" ou \"Îles de la Soif\" par les navigateurs.",
+  "etymology": "Le nom \"Seychelles\" viendrait de Jean Moreau de Séchelles, contrôleur général des finances de Louis XV, roi de France. Les îles ont été nommées \"Seychelles\" par les Français en 1756 en son honneur. Le nom créole \"Sesel\" serait dérivé de \"Seychelles\". Auparavant, les îles étaient appelées \"Îles de la Ligne\" ou \"Îles de la Soif\" par les navigateurs.",
   "nameOriginActor": "Les Français ont nommé les îles \"Seychelles\" en l'honneur de Jean Moreau de Séchelles, contrôleur général des finances de Louis XV (1756). Le nom a été conservé par les Britanniques puis officialisé lors de l'indépendance (1976).",
   "content": {
     "historicalNames": {
@@ -185,17 +185,20 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Seychelles",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Seychelles",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements seychellois",
@@ -215,12 +218,14 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Seychelles",
         "url": "https://www.unfpa.org/data/world-population/SC",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

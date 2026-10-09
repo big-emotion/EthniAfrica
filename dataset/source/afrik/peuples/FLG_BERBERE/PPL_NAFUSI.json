@@ -13,7 +13,7 @@
         "Berbères du Djebel Nefusa",
         "Amazigh du Djebel Nafusa"
       ],
-      "originOfExonyms": "Le nom Nafusi dérive du nom de la tribu des Nafousa (Banu Nafousa), mentionnée par Ibn Khaldoun parmi les tribus berbères zénètes de Tripolitaine. Le terme Djebel Nefusa (Adrar n Infusen en berbère) désigne la chaîne montagneuse où ils résident. Le terme Nefusa ou Nafusa sont les formes arabisées du nom.",
+      "originOfExonyms": "Le nom Nafusi dériverait du nom de la tribu des Nafousa (Banu Nafousa), mentionnée par Ibn Khaldoun parmi les tribus berbères zénètes de Tripolitaine. Le terme Djebel Nefusa (Adrar n Infusen en berbère) désigne la chaîne montagneuse où ils résident. Le terme Nefusa ou Nafusa sont les formes arabisées du nom.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Nafusi est utilisé dans la littérature académique et par les locuteurs eux-mêmes (Inafusen). Sous le régime de Kadhafi (1969-2011), les Berbères libyens furent contraints d'adopter des identités arabes ; leur langue et leurs noms berbères furent interdits. Depuis 2011, une renaissance identitaire est en cours.",
       "linguisticFamily": "FLG_BERBERE",
@@ -91,7 +91,8 @@
       {
         "title": "Ethnologue — Nafusi (jbn)",
         "url": "https://www.ethnologue.com/language/jbn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Berber, Jabal Nafusah in Libya",
@@ -106,12 +107,14 @@
       {
         "title": "Reuters — Berber culture reborn in Libya revolt",
         "url": "https://www.reuters.com/article/libya-berber-idAFLDE76A1HS20110711",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "CEDS — ISO 639-3 code jbn (Nafusi)",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "The Monsoon Diaries — The Jebel Alliance Take the Nafusa Mountains",

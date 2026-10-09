@@ -344,6 +344,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     patronymes,
     languages,
     places,
+    words,
   } = data as Record<string, unknown>;
 
   return [
@@ -462,6 +463,18 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
       relevance: numberOrUndefined(row.relevance),
       exactMatch: row.exactMatch === true,
     })),
+    // REQ-196: a word fiche answers to every name its nameHistory records,
+    // and arrives with the answer that history gives, like any subject.
+    ...asRows(words).map((row): SearchResult => ({
+      type: "word",
+      naming: namingOf(row),
+      answer: answerOf(row),
+      id: String(row.id),
+      name: String(row.nameMain ?? ""),
+      snippet: (row.definition as string) || undefined,
+      relevance: numberOrUndefined(row.relevance),
+      exactMatch: row.exactMatch === true,
+    })),
   ];
 }
 
@@ -537,6 +550,7 @@ export const EMPTY_SEARCH_LENS_COUNTS: SearchLensCounts = {
   person: 0,
   patronyme: 0,
   place: 0,
+  word: 0,
 };
 
 function numberOrZero(value: unknown): number {
@@ -562,9 +576,17 @@ export function mapSearchCounts(envelope: unknown): SearchLensCounts {
   const person = numberOrZero(row.personsTotal);
   const patronyme = numberOrZero(row.patronymesTotal);
   const place = numberOrZero(row.placesTotal);
+  const word = numberOrZero(row.wordsTotal);
   return {
     all:
-      people + country + languageFamily + language + person + patronyme + place,
+      people +
+      country +
+      languageFamily +
+      language +
+      person +
+      patronyme +
+      place +
+      word,
     people,
     country,
     languageFamily,
@@ -572,6 +594,7 @@ export function mapSearchCounts(envelope: unknown): SearchLensCounts {
     person,
     patronyme,
     place,
+    word,
   };
 }
 

@@ -17,7 +17,7 @@ import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
  * The atlas charter §8 contract, held here rather than trusted.
  *
  * Every assertion below cites the failure it prevents. The measured one that
- * started it: `ConfidenceChip` was rendered by four components on the peoples
+ * started it: `SourceReviewChip` was rendered by four components on the peoples
  * surface and one on the patronymes surface, and by zero on countries, zero on
  * language families and zero on languages — the three surfaces a search engine
  * lands on first, on an atlas whose brand charter asserts that every claim

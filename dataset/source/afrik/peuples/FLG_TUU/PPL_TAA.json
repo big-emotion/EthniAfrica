@@ -18,7 +18,7 @@
         "Tshasi",
         "Koon"
       ],
-      "originOfExonyms": "Dans la langue, taa signifie être humain. La langue se nomme taa ǂaan, langue des humains. Les populations des deux extrémités de la zone où elle est parlée, Aminius Reserve en Namibie et Dzutshwa au Botswana, emploient ǃXóõ pour se nommer. Celles qui vivent entre ces deux zones ne l'emploient pas. Le linguiste Westphal (1971) a choisi taa pour nommer la famille de langues aujourd'hui appelée Tuu. En tswana, Masarwa désigne l'ensemble des Bushmen, ou San, avec un sens méprisant. Magon et Tshasi sont des noms tswana plus précisément appliqués aux Taa. Koon est une adaptation anglaise.",
+      "originOfExonyms": "Dans la langue, taa signifierait être humain. La langue se nomme taa ǂaan, langue des humains. Les populations des deux extrémités de la zone où elle est parlée, Aminius Reserve en Namibie et Dzutshwa au Botswana, emploient ǃXóõ pour se nommer. Celles qui vivent entre ces deux zones ne l'emploient pas. Le linguiste Westphal (1971) a choisi taa pour nommer la famille de langues aujourd'hui appelée Tuu. En tswana, Masarwa désigne l'ensemble des Bushmen, ou San, avec un sens méprisant. Magon et Tshasi sont des noms tswana plus précisément appliqués aux Taa. Koon est une adaptation anglaise.",
       "whyProblematic": "La nomenclature est complexe : le même groupe est désigné Taa, ǃXóõ, ǃXoon, et chacun de ces termes recouvre des réalités légèrement différentes selon les dialectes et les regions. Les locuteurs eux-mêmes utilisent ǃXoon ou ʼNǀohan selon leur dialecte. Le terme ǃXóõ a été popularisé dans la littérature linguistique internationale mais n'est pas employé par tous les locuteurs. Le terme Masarwa est considéré péjoratif par les communautés San.",
       "contemporaryUsage": "Le terme Taa est utilisé par les linguistes pour désigner la langue et le peuple. ǃXoon est l'appellation préférée des membres de la communauté dans l'Est du Botswana et en Namibie. ʼNǀohan est utilisé par la communauté de l'Est. La langue taa (ISO nmn) est la dernière variété vivante vitale de la famille Tuu, avec environ 2 500 à 3 000 locuteurs selon les sources (Ethnologue 2011 : 2 500 ; DoBeS/MPI : 3 000).",
       "linguisticFamily": "FLG_TUU",
@@ -103,22 +103,26 @@
       {
         "title": "DoBeS MPI — Taa language project",
         "url": "https://dobes.mpi.nl/projects/taa/language/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "archive"
       },
       {
         "title": "Ethnologue — Taa (nmn)",
         "url": "https://www.ethnologue.com/language/nmn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog 5.3 — East Taa",
         "url": "https://glottolog.org/resource/languoid/id/huaa1248",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Traill, Anthony (1994). A !Xoo Dictionary. Quellen zur Khoisan-Forschung / Research in Khoisan Studies, 9. Cologne: Rüdiger Köppe",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Naumann, Christfried (2008). DoBeS documentation project on Taa (West ǃXoon). MPI Nijmegen",

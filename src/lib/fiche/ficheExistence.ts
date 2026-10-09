@@ -6,6 +6,7 @@ import { getLanguageFamilyById } from "@/api/v2/services/languageFamilyService";
 import { getLanguageById } from "@/api/v2/services/languageService";
 import { getPatronymeById } from "@/api/v2/services/patronymes";
 import { getPeopleById } from "@/api/v2/services/peopleService";
+import { getPlaceById } from "@/api/v2/services/places";
 
 /**
  * Whether a fiche exists, decided early enough for the HTTP status to still be
@@ -65,6 +66,11 @@ export const loadLanguageFiche = perRequest(async (id: string) =>
 /** @req REQ-147 */
 export const loadPatronymeFiche = perRequest(async (id: string) =>
   getPatronymeById(id)
+);
+
+/** @req REQ-196 */
+export const loadPlaceFiche = perRequest(async (id: string) =>
+  getPlaceById(id)
 );
 
 /**

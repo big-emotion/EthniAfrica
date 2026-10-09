@@ -226,6 +226,29 @@ describe("NameTimeline — « Pendant ce temps, ailleurs »", () => {
       within(anchor).getByRole("button", { name: /Voir les sources/ })
     ).toBeInTheDocument();
   });
+
+  // « Ailleurs » stays elsewhere: a West African people meets an event from
+  // East Africa, never one from its own region (Liberia, 1847).
+  // @req REQ-198
+  it("sets a subject against events from outside its own region", () => {
+    render(
+      <NameTimeline
+        history={PEUL_HISTORY}
+        searched="Peul"
+        subjectType="people"
+        countryIds={["SEN", "GIN"]}
+        language="fr"
+      />
+    );
+    fireEvent.click(
+      screen.getByRole("button", { name: "Pendant ce temps, ailleurs" })
+    );
+
+    expect(
+      screen.getByText(/l'Organisation de l'unité africaine, en 1963\./)
+    ).toBeInTheDocument();
+    expect(screen.queryByText(/Liberia/)).not.toBeInTheDocument();
+  });
 });
 
 describe("NameTimeline — the sources behind a passage", () => {

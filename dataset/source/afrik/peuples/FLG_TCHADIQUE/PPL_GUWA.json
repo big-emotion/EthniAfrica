@@ -82,7 +82,8 @@
       {
         "title": "SIL Ethnologue — Jarawan subgroup (Gwa gwb)",
         "url": "https://www.ethnologue.com/subgroup/622/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Gwa people of Nigeria",
@@ -92,12 +93,14 @@
       {
         "title": "Glottolog — Languages of Nigeria",
         "url": "https://glottolog.org/glottolog?country=NG",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Nigeria",
         "url": "https://www.cia.gov/the-world-factbook/countries/nigeria/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

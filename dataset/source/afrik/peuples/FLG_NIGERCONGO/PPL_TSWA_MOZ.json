@@ -117,7 +117,8 @@
       {
         "title": "Ethnologue — Tswa (tsc)",
         "url": "https://www.ethnologue.com/language/tsc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CLEAR Global — Language data for Mozambique (2024)",
@@ -127,7 +128,8 @@
       {
         "title": "Instituto Nacional de Estatistica — Mozambique",
         "url": "https://www.ine.gov.mz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "WorldAtlas — What Languages Are Spoken In Mozambique",

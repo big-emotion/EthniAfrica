@@ -556,24 +556,28 @@
         "title": "SIL Ethnologue – Ghana",
         "url": "https://www.ethnologue.com/country/GH/",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Catalogue de référence linguistique de SIL International, qui documente les langues vivantes du Ghana et leur statut."
       },
       {
         "title": "Ghana Statistical Service – Recensement général de la population et de l'habitat 2021, volume 3",
         "url": "https://census2021.statsghana.gov.gh/gssmain/fileUpload/reportthemelist/Volume%203%20Highlights.pdf",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "Recensement conduit par le service statistique national du Ghana, qui publie la répartition de la population par groupe ethnique."
       },
       {
         "title": "UN DESA – World Population Prospects",
         "url": "https://population.un.org/wpp/",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Estimations et projections démographiques publiées par la division population des Nations unies."
       },
       {
         "title": "UNFPA – World Population Dashboard — Ghana",
         "url": "https://www.unfpa.org/data/world-population/GH",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Tableau de bord démographique mondial du Fonds des Nations unies pour la population."
       },
       {
@@ -586,12 +590,14 @@
         "title": "Chambre des communes du Royaume-Uni — Ghana Independence Bill, 11 décembre 1956 (Hansard)",
         "url": "https://api.parliament.uk/historic-hansard/commons/1956/dec/11/ghana-independence-bill",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Compte rendu parlementaire de l'intervention de lord John Hope, sous-secrétaire d'État aux Relations avec le Commonwealth : le nom \"Ghana\" a été conféré au nouveau pays \"in accordance with local wishes\". Le texte rapporte aussi la motion adoptée le 3 août 1956 par 72 voix contre zéro, l'opposition étant absente."
       },
       {
         "title": "Ghana Independence Act 1957 (Royaume-Uni)",
         "url": "https://www.legislation.gov.uk/ukpga/Eliz2/5-6/6/enacted",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Texte de la loi britannique publié par le service des archives nationales du Royaume-Uni ; l'article 1 fait des territoires de la Côte-de-l'Or une partie des dominions de la Couronne \"under the name of Ghana\"."
       },
       {
@@ -604,12 +610,14 @@
         "title": "MyJoyOnline — J. B. Danquah and the naming of our Republic (5 juin 2019)",
         "url": "https://www.myjoyonline.com/j-b-danquah-and-the-naming-of-our-republic/",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Article de presse ghanéenne, sans note ni bibliographie : il cite l'Akim Abuakwa Handbook (1928) et une chronique du Times of West Africa du 26 mars 1934, et rapporte les propositions \"Akanland\", \"Akan-Ga\" et \"New Ghana\"."
       },
       {
         "title": "Citi Newsroom — From Gold Coast to Ghana: History, Memory and the Naming of a Nation (mars 2026)",
         "url": "https://www.citinewsroom.com/2026/03/from-gold-coast-to-ghana-history-memory-and-the-naming-of-a-nation/",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Tribune de Jimmy Kutin, historien et éducateur : elle rapporte les propositions de J. B. Danquah, le rôle de Kwame Nkrumah dans l'adoption du nom, la traduction courante de ghana par \"chef de guerre\" et l'absence de lien migratoire établi entre l'empire médiéval et les Akan."
       },
       {
@@ -658,6 +666,7 @@
         "title": "Colonial Reports — Annual Report on the Social and Economic Progress of the People of the Gold Coast, 1935-36 (n° 1785)",
         "url": "https://libsysdigi.library.illinois.edu/ilharvest/africana/books2011-05/5530214/5530214_1935_1936/5530214_1935_1936_opt.pdf",
         "tier": "official",
+        "source_kind": "academic",
         "notes": "Rapport annuel officiel du gouvernement colonial britannique : il rappelle la charte du 24 juillet 1874 qui constitue la \"Gold Coast Colony\"."
       }
     ],

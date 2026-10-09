@@ -8,7 +8,7 @@
       "mainName": "Tongu",
       "selfAppellation": "Tonu ou Tonu Ewe (en ewe : Tonu signifie bord d'un cours d'eau ; tor = riviere, ngu = pres de)",
       "exonyms": ["Tongu Ewe", "Tonu", "Tonguland"],
-      "originOfExonyms": "Le terme Tongu vient du ewe tor-ngu, signifiant pres de la riviere. Il designe les communautes Ewe etablies le long du fleuve Volta et du lac Volta dans la region des Volta au Ghana. Appellation geographique devenue identite communautaire.",
+      "originOfExonyms": "Le terme Tongu viendrait du ewe tor-ngu, qui veut dire pres de la riviere. Il designe les communautes Ewe etablies le long du fleuve Volta et du lac Volta dans la region des Volta au Ghana. Appellation geographique devenue identite communautaire.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Tongu est utilise officiellement dans les decoupages administratifs ghanéens (North Tongu District, Central Tongu District, South Tongu District). Il designe un sous-groupe Ewe distinct des Anlo (cote) et des Ewedome (interieur des terres). En 2024, les chefs traditionnels des 13 aires traditionnelles Tongu ont cree l'Union des Chefs Tongu.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -78,12 +78,14 @@
       {
         "title": "GhanaWeb – Volta Region: Tongu chiefs create a unitary traditional state, 2024",
         "url": "https://www.ghanaweb.com/GhanaHomePage/NewsArchive/Volta-Region-Tongu-chiefs-create-a-unitary-traditional-state-1947608",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Ghana Statistical Service – 2021 Population and Housing Census",
         "url": "https://census2021.statsghana.gov.gh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "CityPopulation – North Tongu District",
@@ -99,6 +101,7 @@
         "title": "Capo, Hounkpati B. C. (1991) – A Comparative Phonology of Gbe. Foris Publications",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Classification comparative interne des langues gbe (éwé, fon, aja, mina, gen)."
       }
     ]

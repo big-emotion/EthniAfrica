@@ -85,7 +85,8 @@
       {
         "title": "eHRAF World Cultures, Ila – Description et Summary",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fq06/description",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Britannica, Ila – African tribe, Zambia",
@@ -100,7 +101,8 @@
       {
         "title": "Wiktionary, Appendix ISO 639-3 codes Africa – code ilb pour Ila",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

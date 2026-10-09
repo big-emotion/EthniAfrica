@@ -117,22 +117,26 @@
       {
         "title": "Ethnologue — Toposa (TOQ)",
         "url": "https://www.ethnologue.com/language/toq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Gulliver, P.H. 1958. The Turkana age organization. American Anthropologist 60:900-922",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — South Sudan",
         "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "JSTOR — Generation- and age-set systems with special reference to Toposa and Turkana",
         "url": "https://www.jstor.org/stable/619062",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

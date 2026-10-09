@@ -107,7 +107,8 @@
       {
         "title": "Dogon Languages — University of Michigan (Heath, J.)",
         "url": "https://public.websites.umich.edu/~jheath/Dogon%20languages.html",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Britannica — Dogon",
@@ -117,7 +118,8 @@
       {
         "title": "eHRAF World Cultures — Dogon summary",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fa16/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "UNESCO — Pays Dogon (patrimoine mondial)",

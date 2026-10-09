@@ -16,7 +16,7 @@
         "Adaŋgbi",
         "Adampe"
       ],
-      "originOfExonyms": "La forme Adangme reflète une translittération ancienne. Le terme Dangbe est la prononciation locale attestée dans les sources coloniales. Les formes Adaŋme et Adaŋgbi correspondent à l'orthographe scientifique avec des voyelles spéciales. Adawogbe est un terme éwé signifiant la voix des guerriers, appliqué aux Dangme par leurs voisins en référence à leur réputation militaire. La self-appellation La li (gens de La) fait référence à leur lieu d'origine mythique et à la langue sacrée Klama.",
+      "originOfExonyms": "La forme Adangme reflète une translittération ancienne. Le terme Dangbe est la prononciation locale attestée dans les sources coloniales. Les formes Adaŋme et Adaŋgbi correspondent à l'orthographe scientifique avec des voyelles spéciales. Adawogbe est un terme éwé appliqué aux Dangme par leurs voisins ; il voudrait dire la voix des guerriers, en référence à leur réputation militaire. La self-appellation La li (gens de La) fait référence à leur lieu d'origine mythique et à la langue sacrée Klama.",
       "whyProblematic": "Les variantes orthographiques nombreuses (Adangme, Dangbe, Adangbe) peuvent prêter à confusion dans les bases de données. Il ne faut pas confondre le peuple Dangme (Kwa, Ghana) avec d'autres groupes portant des noms similaires. Le terme Adawogbe utilisé par les Éwé était parfois perçu comme condescendant.",
       "contemporaryUsage": "Dangme et Adangme sont toutes deux acceptées et utilisées officiellement au Ghana. La désignation Ga-Dangme (ou Ga-Adangbe) est utilisée pour désigner l'ensemble ethno-linguistique regroupant les Ga et les Dangme. Dans les contextes académiques et administratifs ghanéens, Dangme est la forme standard.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -109,12 +109,14 @@
       {
         "title": "Ethnologue : Dangme (ADA)",
         "url": "https://www.ethnologue.com/language/ada/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Bureau of Ghana Languages : The Krobo People - Beads and Dipo Initiation Rite",
         "url": "https://www.bgl.gov.gh/wp-content/uploads/Krobo_People_Beads_Dipo_Initiation_Rite.pdf",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Noyam Publishers : The Exodus of a West African People: Dangme in Perspective",
@@ -130,6 +132,7 @@
         "title": "Kropp Dakubu, Mary Esther (1988) – The Languages of Ghana. Kegan Paul International, pour l'International African Institute",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Survol linguistique des langues du Ghana, dont le ga-dangme et ses traditions orales."
       }
     ]

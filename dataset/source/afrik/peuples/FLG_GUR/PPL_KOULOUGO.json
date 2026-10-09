@@ -107,12 +107,14 @@
       {
         "title": "Ethnologue — Kulango, Bondoukou (KZC)",
         "url": "https://www.ethnologue.com/language/kzc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Kulango subgroup",
         "url": "https://www.ethnologue.com/subgroup/967/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Kulango people",

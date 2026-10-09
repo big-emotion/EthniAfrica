@@ -122,28 +122,33 @@
       {
         "title": "Ethnologue – Bété, Daloa (bev)",
         "url": "https://www.ethnologue.com/language/bev/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue – Bété, Guiberoua (bet)",
         "url": "https://www.ethnologue.com/language/bet/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue – Bété, Gagnoa (btg)",
         "url": "https://www.ethnologue.com/language/btg/",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Supports the ISO 639-3 code btg."
       },
       {
         "title": "Tchetche, Mathieu Obou – L'exemple des effets du KUIZI chez le peuple Bété de Côte d'Ivoire. Revue SLC, 2023",
         "url": "https://www.revue-slc.org/wp-content/uploads/2023/12/29_Mathieu-Obou-TCHETCHE.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Dozon, Jean-Pierre — La société Bété : histoires d'une ethnie de Côte d'Ivoire. Paris : Karthala ; ORSTOM, 1985",
         "url": "https://www.documentation.ird.fr/hor/fdi:17296",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Pages 16, 43-45, 262-263, 267-270 et 353-354, lues sur le texte intégral publié par l'IRD. À Gagnoa, les personnes interrogées disent que le mot « bété » est contemporain de la conquête française (1905-1913). L'auteur rapporte l'expression « beteo » (paix, pardon) et l'idée d'un nom venu de l'ouest, suit l'usage du mot dans les écrits de Thomann (1901, 1903), puis son extension vers 1930, rapporte la fuite de jeunes devant le travail forcé, et la thèse Magwé de Téty Gauze, qu'aucun informateur n'a citée."
       },
       {
@@ -167,12 +172,14 @@
         "title": "IdRef – Notice d'autorité « Gbeuly, Zokou (1835-1912) »",
         "url": "https://www.idref.fr/265567963",
         "tier": "official",
+        "source_kind": "repository",
         "notes": "Notice d'autorité du Sudoc (ABES). Elle donne 1835 et 1912 comme dates de naissance et de mort et cite l'ouvrage collectif « Zokou Gbeuly : un héros de la résistance en Côte d'Ivoire », sous la direction de Zacharie Séry Bailly."
       },
       {
         "title": "Dozon, Jean-Pierre — Les Bété : une création coloniale, dans Amselle et M'Bokolo (dir.), Au cœur de l'ethnie, Paris, La Découverte, 1985, p. 59-60 et note 7",
         "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/b_fdi_18-19/25531.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Le texte commence par mettre en doute l'origine du nom Bété : « Tout d'abord, l'ethnonyme est sujet à caution ». Les personnes interrogées chez les Bété de Gagnoa disaient ne pas connaître ce mot avant la période coloniale. Elles le faisaient venir de l'expression « bete o bete o », « paix » ou « pardon », souvent répétée pendant la conquête coloniale appelée pacification. La note 7 précise que le mot figure dans les écrits de Thomann et Delafosse de 1901 et 1904, alors que le pays bété restait largement méconnu. Le même texte est repris dans Une anthropologie en mouvement, Quæ, 2008."
       },
       {
@@ -185,6 +192,7 @@
         "title": "Journal des voyages, n° 340, 7 juin 1903, p. 21 — carte de la mission Thomann",
         "url": "https://commons.wikimedia.org/wiki/File:Itin%C3%A9raire_Mission_Thomann_1902_de_Sassandra_%C3%A0_S%C3%A9gu%C3%A9la,_C%C3%B4te_d%27Ivoire.jpg",
         "tier": "referenced",
+        "source_kind": "community",
         "notes": "Carte imprimée, lue sur sa numérisation : elle porte le nom « Bêtés » en lettres espacées sur une vaste zone de forêt, de Sokolo à l'est de Soubré. La date et la page viennent de la description de la numérisation. Elle montre que le mot circule par écrit en 1903."
       },
       {

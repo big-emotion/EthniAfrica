@@ -66,12 +66,14 @@
       {
         "title": "Kitchen, Andrew ; Ehret, Christopher ; Assefa, Shiferaw ; Mulligan, Connie J. (2009) – *Bayesian phylogenetic analysis of Semitic languages identifies an Early Bronze Age origin of Semitic in the Near East*. Proceedings of the Royal Society B: Biological Sciences, vol. 276, n° 1668, p. 2703-2710. DOI: 10.1098/rspb.2009.0408",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Pagani, Luca ; Schiffels, Stephan ; Gurdasani, Deepti ; et al. (2015) – *Ethiopian genetic diversity reveals linguistic stratification and complex influences on the Ethiopian gene pool*. Nature Communications, vol. 6, article 1552. DOI: 10.1038/ncomms1552",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Schlözer, August Ludwig von (1781) – *Von den Chaldäern*. Repertorium für biblische und morgenländische Literatur, Göttingen",
@@ -101,32 +103,38 @@
       {
         "title": "Greenberg, Joseph H. (1950) – *Studies in African Linguistic Classification: IV. Chamito-Semitic*. Southwestern Journal of Anthropology, vol. 6, n° 4, p. 487-498",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Hetzron, Robert (1972) – *Ethiopian Semitic: Studies in Classification*. Journal of Semitic Studies, Monograph n° 2. Manchester: Manchester University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Diop, Cheikh Anta (1954) – *Nations nègres et culture : De l'antiquité nègre égyptienne aux problèmes culturels de l'Afrique noire d'aujourd'hui*. Paris: Présence Africaine",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Diop, Cheikh Anta (1967) – *Antériorité des civilisations nègres : Mythe ou vérité historique ?*. Paris: Présence Africaine",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Leslau, Wolf (1995) – *Reference Grammar of Amharic*. Wiesbaden: Harrassowitz Verlag",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Huehnergard, John ; Pat-El, Na'ama (2019) – *The Semitic Languages*. 2e édition. London: Routledge",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Britannica Editors (2025) – *Semitic languages*. Encyclopædia Britannica. Consulté en 2025. URL",
@@ -141,12 +149,14 @@
       {
         "title": "CIA World Factbook (2025) – *Field Listing: Languages*. Central Intelligence Agency. Consulté en 2025",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "United Nations / UNFPA (2025) – *World Population Prospects*. United Nations Department of Economic and Social Affairs. Consulté en 2025",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Global Mission Data (2025) – *Language Portal*. Consulté en 2025",
@@ -156,12 +166,14 @@
       {
         "title": "Glottolog 5.2 – classification génétique \"Semitic [semi1276]\", 3 branches immédiates (East Semitic, Unclassified Semitic, West Semitic) ; les langues sémitiques africaines vivantes (arabe, éthiosémitique) appartiennent toutes au Sémitique occidental",
         "url": "https://glottolog.org/resource/languoid/id/semi1276",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethiopian Statistics Service / Population Census Commission (2007) – Summary and Statistical Report of the 2007 Population and Housing Census, Table 2.2/Annexe : somme des nationalités éthiosémitiques recensées (Amhara 19 867 817, Tigrie/Tigrinya 4 483 776, Guragie 1 867 350, Silte 940 766, Hareri 31 869) = 27 191 578",
         "url": "https://ess.gov.et/wp-content/uploads/2026/06/national-population-and-housing-census-report-2007.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

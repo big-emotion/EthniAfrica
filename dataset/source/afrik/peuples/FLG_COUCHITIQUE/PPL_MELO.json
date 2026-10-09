@@ -68,7 +68,8 @@
       {
         "title": "Melo language – Ethnologue (SIL International), 18e edition, 2015",
         "url": "https://www.ethnologue.com/language/mfx/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Melo in Ethiopia – Joshua Project, 2025",
@@ -83,7 +84,8 @@
       {
         "title": "ISO 639-3 Language Codes – SIL International / CEDS",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Ethiopian Languages: Semitic, Cushitic, Omotic and Nilo-Saharan – Ethiopian Treasures",

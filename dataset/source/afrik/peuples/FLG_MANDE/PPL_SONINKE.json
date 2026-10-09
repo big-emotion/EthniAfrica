@@ -467,12 +467,14 @@
       {
         "title": "Glottolog — Soninke (snk)",
         "url": "https://glottolog.org/resource/languoid/id/soni1259",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL CEDS — ISO 639-3: Soninke = snk",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Joshua Project — Soninke in Mali",
@@ -497,7 +499,8 @@
       {
         "title": "Soninkara.com – Association culturelle soninke",
         "url": "https://www.soninkara.com",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "community"
       },
       {
         "title": "Encyclopædia Universalis — Soninké ou Sarakholé",
@@ -509,6 +512,7 @@
         "title": "Larousse — Soninkés ou Sarakolés ou Sarakollés ou Markas",
         "url": "https://www.larousse.fr/encyclopedie/divers/Sonink%C3%A9s/144837",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Texte lu directement : la langue s'y écrit soninké, ou soningokan."
       },
       {

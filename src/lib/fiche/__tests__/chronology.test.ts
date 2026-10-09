@@ -174,7 +174,7 @@ describe("countryChronology", () => {
   it("opens on the etymology and never repeats its preview", () => {
     const { etymology } = countryChronology(countryRecord("NAM"), "fr");
     expect(etymology?.preview).toBe(
-      'Le nom "Namibie" vient du désert du Namib, qui borde la côte atlantique du pays.'
+      'Le nom "Namibie" viendrait du désert du Namib, qui borde la côte atlantique du pays.'
     );
     expect(etymology?.passages).not.toContain(etymology?.preview);
     expect(etymology?.passages.join(" ")).toContain(

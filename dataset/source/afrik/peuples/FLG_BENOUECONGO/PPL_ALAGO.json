@@ -95,7 +95,8 @@
       {
         "title": "Ethnologue, Alago (ALA). (consulté 2025)",
         "url": "https://www.ethnologue.com/language/ala/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project, Alago Idoma Nokwu in Nigeria. (consulté 2025)",
@@ -115,7 +116,8 @@
       {
         "title": "Wikidata, Alago (Q106490494). (consulté 2025)",
         "url": "https://www.wikidata.org/wiki/Q106490494",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

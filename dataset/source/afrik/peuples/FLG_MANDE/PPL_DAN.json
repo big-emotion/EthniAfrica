@@ -16,7 +16,7 @@
         "Gyo"
       ],
       "spellingAliases": ["Yacuba", "Yakuba", "Yakouba"],
-      "originOfExonyms": "Yacouba est une adaptation française du mot mandingue Jakuba. Au Liberia, les Bassa appellent les Dan Gio. Ce nom signifierait esclave, ce qui explique que les personnes concernées le jugent dévalorisant. Elles préfèrent Dan, qui signifie « les gens » dans leur langue.",
+      "originOfExonyms": "Yacouba est une adaptation française du mot mandingue Jakuba. Au Liberia, les Bassa appellent les Dan Gio. Ce nom signifierait esclave, ce qui explique que les personnes concernées le jugent dévalorisant. Elles préfèrent Dan, un nom qui voudrait dire « les gens » dans leur langue.",
       "whyProblematic": "Les Dan jugent Gio méprisant en raison de son lien supposé avec le mot bassa pour esclave. Il reste employé dans les documents officiels libériens et certaines publications de recherche en anglais, malgré leur préférence pour leur propre nom, Dan.",
       "contemporaryUsage": "Dan est l'appellation academique internationale standard et celle preferee par le peuple. Yacouba reste tres utilise en Cote d'Ivoire dans la vie quotidienne et dans les medias. Gio est encore courant au Liberia dans les documents officiels et la presse.",
       "linguisticFamily": "FLG_MANDE",
@@ -108,17 +108,20 @@
       {
         "title": "Daniel B. Reed, Dan Ge Performance: Masks and Music in Contemporary Cote d'Ivoire, Indiana University Press, 2003",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Hugo Zemp, Musique dan : la musique dans la pensee et la vie sociale d'une societe africaine, Mouton, La Haye, 1971",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Dan – Glottolog 5.3",
         "url": "https://glottolog.org/resource/languoid/id/dann1241",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes – The Dan",

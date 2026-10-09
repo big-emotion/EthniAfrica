@@ -93,7 +93,8 @@
       {
         "title": "Barbieri et al. – The maternal genetic history of the Angolan Namib Desert, bioRxiv (2017)",
         "url": "https://www.biorxiv.org/content/10.1101/162230v1.full",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

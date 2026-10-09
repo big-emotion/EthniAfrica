@@ -83,12 +83,14 @@
       {
         "title": "Ethnologue – Alladian language (ald)",
         "url": "https://www.ethnologue.com/language/ald/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue – Avikam-Alladian subgroup",
         "url": "https://www.ethnologue.com/subgroup/939/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Facebook EthnicsDECI – Jacqueville",

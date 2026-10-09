@@ -107,12 +107,14 @@
       {
         "title": "UNESCO ICH — Guruna, pratique des retraites pastorales (2025)",
         "url": "https://ich.unesco.org/en/RL/guruna-a-practice-of-pastoral-socio-cultural-and-artistic-retreats-centered-on-livestock-among-the-massa-02260",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "SIL Ethnologue — Masana (mcn)",
         "url": "https://www.ethnologue.com/language/mcn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Masa in Chad",

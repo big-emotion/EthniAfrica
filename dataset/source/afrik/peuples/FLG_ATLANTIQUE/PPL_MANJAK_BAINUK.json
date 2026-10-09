@@ -12,7 +12,7 @@
         "Manjak: Mandjak (français), Manjaco (portugais), Njaago (wolof), Manjago (jola)",
         "Bainuk: Banyuk, Banun, Banyun, Bainouk, Bainunk, Banyum, Bagnoun, Banhum, Banyung, Nun"
       ],
-      "originOfExonyms": "Le nom Manjak signifie 'je te dis' dans la langue du groupe. Le terme Manjaco (portugais) s'est répandu depuis la colonisation. Pour les Bainuk, le nom Banyun est attribué aux Portugais, qui l'auraient dérivé du mandingue pour designer de façon collective plusieurs groupes vivant le long des voies d'eau entre la Gambie et le Cacheu; il signifie possiblement 'commerçant', à l'image du terme dyula pour les commerçants mande. Selon la tradition orale mandingue, Bainouk signifie 'ceux qui sont chassés' (de 'bai', chasser en mandingue), terme utilisé après une défaite militaire au XVIe siècle.",
+      "originOfExonyms": "Le nom Manjak voudrait dire 'je te dis' dans la langue du groupe. Le terme Manjaco (portugais) s'est répandu depuis la colonisation. Pour les Bainuk, le nom Banyun est attribué aux Portugais, qui l'auraient dérivé du mandingue pour designer de façon collective plusieurs groupes vivant le long des voies d'eau entre la Gambie et le Cacheu; il signifie possiblement 'commerçant', à l'image du terme dyula pour les commerçants mande. Selon la tradition orale mandingue, Bainouk signifie 'ceux qui sont chassés' (de 'bai', chasser en mandingue), terme utilisé après une défaite militaire au XVIe siècle.",
       "whyProblematic": "Le terme Bainouk est perçu comme péjoratif selon la tradition mandingue (signifiant 'ceux qui ont été chassés'). Une malédiction légendaire du roi Gana Sira Bana pousse historiquement certains Bainuk à dissimuler leurs origines. La confusion entre Manjak et Bainuk est fréquente, ces deux peuples étant bien distincts sur les plans linguistique et historique malgré leur cohabitation géographique.",
       "contemporaryUsage": "Manjak / Manjaco est le terme officiel en Guinée-Bissau. Mandjak est utilisé au Sénégal. Les Bainuk connaissent un renouveau identitaire avec des efforts de préservation culturelle et linguistique, notamment en Sénégal et en Gambie.",
       "linguisticFamily": "FLG_ATLANTIQUE",
@@ -114,7 +114,8 @@
       {
         "title": "Ethnologue – Manjak (mfv) et Bainuk (bcb), SIL International, 2024",
         "url": "https://www.ethnologue.com",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

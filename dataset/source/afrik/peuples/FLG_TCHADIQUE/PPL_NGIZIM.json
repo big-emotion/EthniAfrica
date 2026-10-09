@@ -91,7 +91,8 @@
       {
         "title": "African Languages at UCLA — Ngizim",
         "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/ngizim/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Ngizim, Ngizmawa in Nigeria",
@@ -106,12 +107,14 @@
       {
         "title": "SIL Ethnologue — Ngizim (ngi)",
         "url": "https://www.ethnologue.com/language/ngi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Schuh, R. G. (1981). A Dictionary of Ngizim. Berkeley: University of California Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Palmer, H. R. History of the first twelve years of the reign of Mai Idris Alooma (1571-1583) by Imam Ahmad Ibn Furtua (notes et traduction)",

@@ -112,12 +112,14 @@
       {
         "title": "UNESCO — Xeer Ciise (patrimoine immatériel 2024)",
         "url": "https://ich.unesco.org/en/RL/xeer-ciise-oral-customary-laws-of-somali-issa-communities-in-ethiopia-djibouti-and-somalia-02087",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA — Somalia Population 2025",
         "url": "https://www.unfpa.org/data/world-population/SO",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Britannica — Somali people",
@@ -127,7 +129,8 @@
       {
         "title": "Countrystudies.us — Somalia : Origins, Migrations, and Settlement",
         "url": "https://countrystudies.us/somalia/3.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "101 Last Tribes — Somali people profile",
@@ -138,12 +141,14 @@
         "title": "Countrystudies.us — Somalia : Foreign Relations",
         "url": "https://countrystudies.us/somalia/78.htm",
         "tier": "referenced",
+        "source_kind": "government",
         "notes": "Chapitre de l'étude pays sur la Somalie ; il situe des zones peuplées de Somalis à Djibouti, en Éthiopie et au Kenya."
       },
       {
         "title": "Countrystudies.us — Somalia : The Economy",
         "url": "https://countrystudies.us/somalia/56.htm",
         "tier": "referenced",
+        "source_kind": "government",
         "notes": "Chapitre de l'étude pays sur la Somalie ; le chameau y tient le rôle central d'indicateur de richesse et de réussite."
       }
     ]

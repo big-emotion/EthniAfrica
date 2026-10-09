@@ -543,18 +543,21 @@
         "title": "Glottolog 5.3 — Lingala (ling1263)",
         "url": "https://glottolog.org/resource/languoid/id/ling1263",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Notice directe pour le code ISO 639-3 lin et le glottocode ling1263. Glottolog nomme la notice Kinshasa Lingala, la classe dans le bantou central (zone C, groupes C30-40) et la situe en République démocratique du Congo, en République du Congo et en République centrafricaine. Elle relève les noms Lingala, Ngala (Multitree) et Losengo (Moseley et Asher, 1994). Aucune variété n'y est listée séparément."
       },
       {
         "title": "Meeuwis, Michael, « Lingala », APiCS Online (Atlas of Pidgin and Creole Language Structures Online), chapitre de synthèse",
         "url": "https://apics-online.info/surveys/60",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Chapitre lu en texte intégral. Source de l'histoire du bobangi restructuré à partir de 1881-1882, du nom Bangala donné après 1884-1885, du nom Lingala attesté à partir de 1902, des quatre variétés (Kinshasa, Brazzaville, nord-ouest du Congo, Bangala) et de l'estimation de quinze millions de personnes dont le lingala est la langue maternelle, auxquelles s'ajoutent dix millions qui l'utilisent régulièrement comme langue commune d'échange, sans année donnée. Le chapitre situe le lingala dans l'ouest et le nord de la République démocratique du Congo, dans le centre et le nord de la République du Congo et dans le nord de l'Angola, sans donner de chiffre pour un pays en particulier."
       },
       {
         "title": "Meeuwis, Michael, « Lingala (C30B) », The Oxford Guide to the Bantu Languages, Oxford University Press, 2025, résumé du chapitre",
         "url": "https://academic.oup.com/book/61440/chapter/534771259",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Seul le résumé du chapitre, tel que le publie Crossref (DOI 10.1093/oso/9780198808343.003.0065), a été lu. Il compte environ 45 millions de personnes qui parlent le lingala, langue maternelle et langue commune d'échange réunies, sans année ni chiffre par pays. Cette estimation et celle des quinze et dix millions ne se recoupent pas : aucun des deux passages ne dit comment le chiffre a été établi."
       },
       {
@@ -568,12 +571,14 @@
         "title": "Mimpongo, Mpoke, « L'origine et la signification du glossonyme lingala », lingbuzz, 2024",
         "url": "https://ling.auf.net/lingbuzz/008154",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Prépublication de mai 2024, dont nous avons lu le texte complet dans sa version révisée de 2025. Elle avance que Lingála et Mangála sont des formes abrégées de mangála má libɔkɔ, ou parfois de lingála lí mabɔkɔ, « la langue des marchés » en bobangi. Elle écarte trois autres pistes : un nom de peuple, un bras de rivière ou un élément ajouté au début du mot par les missionnaires."
       },
       {
         "title": "Castillo, Joshua, « Navigating Lingala: Linguistic Change, Political Power, and Everyday Authoritarianism in Congo-Zaire, 1965-97 », The Journal of African History, 65, 2024, p. 327-343",
         "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/navigating-lingala-linguistic-change-political-power-and-everyday-authoritarianism-in-congozaire-196597/118FE97D3CC34974331138A906D07B2A",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article revue par les pairs. Il rapporte qu'après la mutinerie des auxiliaires batetela de 1893-1894, les autorités ont adopté le lingala comme langue de commandement de la force coloniale pour réduire le risque de mutinerie, et que l'imposition du lingala sous Mobutu fut « une politique par les effets, et non par la loi ou le décret »."
       }
     ]

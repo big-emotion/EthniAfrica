@@ -57,7 +57,7 @@ describe("SearchFeed — the name-history timeline lens", () => {
   it("opens on the timeline when the searched subject has a name history", () => {
     renderFeed();
 
-    expect(lens("Timeline")).toHaveAttribute("aria-pressed", "true");
+    expect(lens("Histoire du nom")).toHaveAttribute("aria-pressed", "true");
     expect(lens("Tout")).toHaveAttribute("aria-pressed", "false");
     expect(
       screen.getByRole("list", { name: /Histoire du nom Lingala/ })
@@ -81,7 +81,7 @@ describe("SearchFeed — the name-history timeline lens", () => {
     renderFeed([]);
 
     expect(
-      screen.queryByRole("button", { name: "Timeline" })
+      screen.queryByRole("button", { name: "Histoire du nom" })
     ).not.toBeInTheDocument();
     expect(
       screen.queryByRole("list", { name: /Histoire du nom/ })

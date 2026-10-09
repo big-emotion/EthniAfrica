@@ -92,7 +92,8 @@
       {
         "title": "We, the people of Seychelles – The Nation (Seychelles), 2022",
         "url": "https://www.nation.sc/articles/15689/we-the-people-of-seychelles",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Seychelles Population 2026 – World Population Review",
@@ -107,12 +108,14 @@
       {
         "title": "Seychelles' population now stands at 120,581 – The Nation (Seychelles), 2024",
         "url": "https://www.nation.sc/articles/21345/seychelles-population-now-stands-at-120581",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Seychelles (11/01) – U.S. Department of State",
         "url": "https://2009-2017.state.gov/outofdate/bgn/seychelles/19601.htm",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

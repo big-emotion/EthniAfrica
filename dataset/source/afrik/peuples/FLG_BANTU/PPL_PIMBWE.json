@@ -86,7 +86,8 @@
       {
         "title": "Social Organization and Social Status in Nineteenth and Twentieth Century Rukwa – Waters, African Studies Quarterly vol.11 no.1",
         "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/Waters-V11Is1.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "A Description of Pimbwe (Bantu, Tanzania) – Trinity Western University / ARCA",
@@ -96,7 +97,8 @@
       {
         "title": "ISO 639-3 Language Codes – National Center for Education Statistics",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

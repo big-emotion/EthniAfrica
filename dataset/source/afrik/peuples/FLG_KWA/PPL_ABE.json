@@ -87,12 +87,14 @@
         "title": "Rezo Ivoire — Les Abés",
         "url": "https://rezoivoire.net/ivoire/patrimoine/3653/les-abes.html",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Cité pour les graphies Abés, Abbeys, Abbays et Abès, pour le nom baoulé Béssouffouè et pour la révolte de 1910, dite « révolte du peuple Abbé »."
       },
       {
         "title": "Rezo Ivoire — L'histoire des Abbey",
         "url": "https://www.rezoivoire.net/ivoire/patrimoine/2888/lhistoire-des-abbey.html",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Récit d'origine rapporté comme une légende, cité pour la graphie Abbey."
       },
       {
@@ -113,7 +115,8 @@
       {
         "title": "Ethnologue – Cote d'Ivoire Languages",
         "url": "https://www.ethnologue.com/country/CI/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

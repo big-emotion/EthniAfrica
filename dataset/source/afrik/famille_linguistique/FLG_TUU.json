@@ -73,12 +73,14 @@
       {
         "title": "Güldemann, Tom (2006) – *Structural Isoglosses between Khoekhoe and Tuu: The Cape as a Linguistic Area*. In Y. Matras, A. McMahon & N. Vincent (eds.), Linguistic Areas, London: Palgrave Macmillan UK, pp. 99–134. DOI: 10.1057/9780230287617_5",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Güldemann, Tom (2019) – *Toward a subclassification of the ǃUi branch of Tuu*. Paper presented at Afrikalinguistisches Forschungskolloquium at Humboldt Universität zu Berlin, 8 January 2019",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Güldemann, Tom & Loughnane, Robynne (2012) – *The problem of linguistic inheritance and contact in the Kalahari Basin: the case of body parts*. Language Dynamics and Change, 2(1), 1–43",
@@ -88,27 +90,32 @@
       {
         "title": "Traill, Anthony (1994) – *A !Xóõ Dictionary*. Quellen zur Khoisan-Forschung, 9. Köln: Rüdiger Köppe Verlag",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Traill, Anthony (2007) – *Taa (ǃXóõ) phonology*. In Rainer Vossen (ed.), The Khoesan Languages, London: Routledge, pp. 268–291",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Greenberg, Joseph H. (1963) – *The Languages of Africa*. Bloomington: Indiana University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Pickrell, Joseph K. et al. (2012) – *The Genetic Prehistory of Southern Africa*. Nature Communications, 3, article 1143. DOI: 10.1038/ncomms2140",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Schlebusch, Carina M. et al. (2017) – *Southern African ancient genomes estimate modern human divergence to 350,000 to 260,000 years ago*. Science, 358(6363), 652–655. DOI: 10.1126/science.aao6266",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Bleek, Wilhelm H. I. & Lloyd, Lucy C. (1911) – *Specimens of Bushman Folklore*. London: George Allen & Company",
@@ -123,22 +130,26 @@
       {
         "title": "Westphal, Ernst O. J. (1971) – *The Click Languages of Southern and Eastern Africa*. In T. A. Sebeok (ed.), Current Trends in Linguistics, Vol. 7: Linguistics in Sub-Saharan Africa, The Hague: Mouton, pp. 367–420",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Story, Robert (1999) – *Kʼuǀha꞉si Manuscript*. In Anthony Traill (ed.), Khoisan Forum Working Paper, 13. Köln: University of Köln, pp. 18–34",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Skotnes, Pippa (1996) – *Miscast: Negotiating the Presence of the Bushmen*. Cape Town: University of Cape Town Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Penn, Nigel (2005) – *The Forgotten Frontier: Colonist and Khoisan on the Cape's Northern Frontier in the 18th Century*. Athens: Ohio University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Deacon, Hilary J. & Deacon, Janette (1999) – *Human Beginnings in South Africa: Uncovering the Secrets of the Stone Age*. Cape Town: David Philip Publishers",
@@ -153,22 +164,26 @@
       {
         "title": "SIL Ethnologue (2025) – *Taa Language*. Ethnologue: Languages of the World. URL",
         "url": "https://www.ethnologue.com/language/nmn",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog (2024) – *Tuu languages*. Glottolog 5.0. URL",
         "url": "https://glottolog.org/resource/languoid/id/tuuu1241",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog 5.0 (2024) – Classification du nœud \"Tuu\" [tuuu1241] : deux branches directes, \"!Ui\" [kwii1241] et \"Hua\" [huaa1247]",
         "url": "https://glottolog.org/resource/languoid/id/tuuu1241",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue (19e éd., 2016) – Taa/ǃXóõ [nmn] : ≈2 500 locuteurs (2011), pour l'essentiel au Botswana (vallée de la Nossob, districts de Ghanzi/Kgalagadi), quelques centaines en Namibie orientale. (chiffre vérifié via Wikipédia EN « Taa language », consulté en 2026 ; accès direct à ethnologue.com bloqué depuis cet environnement)",
         "url": "https://www.ethnologue.com/language/nmn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

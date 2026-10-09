@@ -51,6 +51,7 @@
         "url": "https://doi.org/10.1073/pnas.1503793112",
         "year": 2015,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Grollemund, Branford, Bostoen, Meade, Venditti & Pagel, Proceedings of the National Academy of Sciences 112(43). Référence confirmée dans la bibliographie de la page anglaise de Wikipédia « Bantu expansion »."
       },
       {
@@ -58,6 +59,7 @@
         "url": "https://doi.org/10.1093/acrefore/9780190277734.013.191",
         "year": 2018,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Bostoen, Oxford Research Encyclopedia of African History. Cité comme source académique primaire (synthèse de la chronologie de l'expansion) dans la page anglaise de Wikipédia « Bantu expansion »."
       }
     ]

@@ -13,7 +13,7 @@
         "Chewa (nom ethnique principal du groupe majoritaire)",
         "Maravi (appellation historique de l'ensemble du complexe culturel)"
       ],
-      "originOfExonyms": "Nyanja signifie lac en langue bantou de la zone N; il designe initialement les gens qui vivent pres du lac (lac Malawi/Nyasa). Chewa est le nom ethnique propre du sous-groupe dominant. Maravi (ou Malawi) est le nom historique du complexe ethno-politique, donne au pays lui-meme : il signifierait les flammes qui brillent (evoquant les reflets du soleil sur le lac). En 1968, le president Hastings Kamuzu Banda renomma officiellement la langue Chinyanja en Chichewa.",
+      "originOfExonyms": "Nyanja voudrait dire lac en langue bantou de la zone N; il designe initialement les gens qui vivent pres du lac (lac Malawi/Nyasa). Chewa est le nom ethnique propre du sous-groupe dominant. Maravi (ou Malawi) est le nom historique du complexe ethno-politique, donne au pays lui-meme : il signifierait les flammes qui brillent (evoquant les reflets du soleil sur le lac). En 1968, le president Hastings Kamuzu Banda renomma officiellement la langue Chinyanja en Chichewa.",
       "whyProblematic": "La distinction entre Nyanja et Chewa est historiquement et politiquement chargee : Kamuzu Banda imposa le terme Chichewa/Chewa dans le cadre d'une politique nationaliste d'unite (one nation, one language) qui marginalisa d'autres langues comme le tumbuka. En Zambie, le terme Nyanja reste prefere. Les deux noms referent essentiellement au meme continuum ethnolinguistique.",
       "contemporaryUsage": "Chichewa est le terme officiel au Malawi (langue nationale depuis 1968). Nyanja est prefere en Zambie et Zimbabwe. En Mozambique, la langue est souvent appelee Chinyanja. La langue est l'une des 55 langues embarquees sur la sonde Voyager (1977).",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -112,12 +112,14 @@
       {
         "title": "UNESCO ICH — Gule Wamkulu",
         "url": "https://ich.unesco.org/en/RL/gule-wamkulu-00142",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Ethnologue SIL — Chichewa (nya)",
         "url": "https://www.ethnologue.com/language/nya/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Chewa people",
@@ -132,7 +134,8 @@
       {
         "title": "UNESCO — Gule Wamkulu safeguarding project",
         "url": "https://ich.unesco.org/en/projects/safeguarding-of-the-gulu-wamkulu-the-great-dance-of-the-chewa-people-00027",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

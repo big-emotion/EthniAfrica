@@ -80,7 +80,8 @@
       {
         "title": "Ethnologue – Godié language (god), SIL International, 2024",
         "url": "https://www.ethnologue.com/language/god/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Les Godiés : ce sous-groupe des Krou – VoixVoie de Femme, 2025",
@@ -100,7 +101,8 @@
       {
         "title": "Ch. Kokra, Notion de spiritisme chez les Godié de Fresco – Notes Africaine, 70, 1956, pp. 52-54",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

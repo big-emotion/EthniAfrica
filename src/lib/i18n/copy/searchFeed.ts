@@ -159,7 +159,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       stories: "Récits",
       quiz: "Jeux",
       fiches: "Fiches",
-      timeline: "Timeline",
+      timeline: "Histoire du nom",
     },
     lens: {
       title: {

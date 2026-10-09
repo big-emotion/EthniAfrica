@@ -104,7 +104,8 @@
       {
         "title": "SIL Ethnologue — Abron language [abr]",
         "url": "https://www.ethnologue.com/language/abr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Yengafrica — Bono cultural heritage",

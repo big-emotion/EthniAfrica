@@ -1,4 +1,4 @@
-import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
+import { SourceReviewChip } from "@/components/source-transparency/SourceReviewChip";
 import { AutonymExonymHeading } from "@/components/ui/AutonymExonymHeading";
 import { ClassificationBadge } from "@/components/ui/classification-badge";
 import type {
@@ -115,7 +115,7 @@ export function PeopleFicheHead({
 
       {showConfidence && (
         <div className="mt-afh-sm">
-          <ConfidenceChip
+          <SourceReviewChip
             language={language}
             sourceCount={sourceCount}
             lastHumanAuditAt={lastHumanAuditAt}

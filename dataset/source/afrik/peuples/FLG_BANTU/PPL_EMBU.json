@@ -91,12 +91,14 @@
       {
         "title": "Kenya National Bureau of Statistics – Kenya Population and Housing Census 2019",
         "url": "https://www.knbs.or.ke/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Ethnologue – Kiembu (ebu)",
         "url": "https://www.ethnologue.com/language/ebu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CityPopulation – Embu County",

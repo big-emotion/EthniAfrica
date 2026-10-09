@@ -75,17 +75,20 @@
       {
         "title": "Ethnologue – Baoulé Language (BCI)",
         "url": "https://www.ethnologue.com/language/bci/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ISO 639-3 code bci – SIL International / CEDS",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Vogel, Susan M. – Baule: African Art, Western Eyes, Yale University Press, 1997",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Delafosse, Maurice – Essai de manuel de la langue agni parlée dans la moitié orientale de la Côte d'Ivoire, Paris, J. André, 1900, p. 159-164 et vocabulaire",
@@ -97,18 +100,21 @@
         "title": "Viti, Fabio – Les ruses de l'oral, la force de l'écrit. Le mythe baule d'Aura Poku, Cahiers d'études africaines, n° 196, 2009, p. 869-892",
         "url": "https://journals.openedition.org/etudesafricaines/15689",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Étude de dix versions complètes et sept fragments, recueillis entre 1986 et 2000 chez des Nanafoué, Nzikpri, Aitu et Warèbo. Il rapporte aussi les versions de Lasnet (1896, offrande d'une tunique et d'un pagne tissé de fils d'or) et de Perrot (1982, la victime est la fille d'Akwa Boni (la nièce et héritière de Pokou)), et le récit nzikpri (traversée de la Comoé sans sacrifice). Il écrit que la version de Delafosse est devenue le modèle des versions écrites suivantes et de la plupart des versions orales, et la date la crise de succession « autour de 1750 »."
       },
       {
         "title": "Viti, Fabio – La Guerre au Baoulé : une ethnographie historique du fait guerrier, Éditions de la MSH, 2023, chap. 1, § 1",
         "url": "https://books.openedition.org/editionsmsh/61681",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "« Le terme Baoulé a désigné d'abord un toponyme, sous les formes Bacorees ou Bahoree, dont les premières occurrences datent du début du XVIIe siècle (Weiskel 1978) ». Cette datation est celle de Weiskel (Cahiers d'études africaines, 72, 1978), citée par Viti. Il écrit aussi que des groupes déjà installés ont été refoulés ou absorbés."
       },
       {
         "title": "Chauveau, Jean-Pierre – Note sur la place du Baoulé dans l'ensemble économique ouest-africain précolonial, ORSTOM, 1972, p. 4 et 10",
         "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers11-05/05910.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Document de travail de 1972. Il cite Bowdich (Mission from Cape Coast Castle to Ashantee, 1819, p. 169) : « A powerfull kingdom called Bahooree […] was described to be westward », récit du voyage de 1817 ; il y voit la première mention des Baoulé. Il cite aussi la carte de la Côte de l'Or du Service hydrographique de la Marine (1866-1867), qui mentionne le Baouré, et Fleuriot de Langle (1873), qui décrit Baouré comme une ville sur la lagune Guindé, d'après un informateur ébrié ; Chauveau identifie ce lieu au Baoulé."
       },
       {
@@ -121,6 +127,7 @@
         "title": "Allou, Koumé René – Confusion dans l'histoire des Baoulé, à propos de deux reines : Abraha Pokou et Akoua Boni, Journal des africanistes, 73-1, 2003, p. 137-143",
         "url": "https://www.persee.fr/doc/jafr_0399-0346_2003_num_73_1_1332",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Cité pour son sujet : la confusion entre les deux reines Pokou et Akoua Boni."
       }
     ]

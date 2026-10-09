@@ -101,24 +101,28 @@
       {
         "title": "SIL Ethnologue — Luba-Katanga (lub)",
         "url": "https://www.ethnologue.com/language/lub/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog 5.3 — Luba-Lulua (luba1249)",
         "url": "https://glottolog.org/resource/languoid/id/luba1249",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Donne Tshiluba, Ciluba, Luba-Kasai et Western Luba comme noms de la langue de code lua, et son statut de langue d'identité nationale en RDC."
       },
       {
         "title": "Glottolog 5.3 — Luba-Katanga (luba1250)",
         "url": "https://glottolog.org/resource/languoid/id/luba1250",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Donne Kiluba et Luba-Shaba comme noms de la langue de code lub, et son statut de langue menacée."
       },
       {
         "title": "Omniglot — Luba-Katanga language",
         "url": "https://www.omniglot.com/writing/lubakatanga.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Mary Nooter Roberts & Allen F. Roberts — Memory : Luba Art and the Making of History. Museum for African Art, New York, 1996",
@@ -129,6 +133,7 @@
         "title": "UNESCO, Histoire générale de l'Afrique, vol. V : L'Afrique du XVIe au XVIIIe siècle (dir. B. A. Ogot), 1999 — chap. 20, « Le système politique luba et lunda : émergence et expansion » (Ndaywel è Nziem), p. 643-664",
         "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Luba et Lunda comme réseaux politico-culturels : p. 643. Limite de 1700 pour la chronologie orale et insignes du XIIIe siècle : p. 644. Kongolo et royaume d'assez petite taille jusqu'à la fin du XVIIe siècle : p. 647."
       }
     ]

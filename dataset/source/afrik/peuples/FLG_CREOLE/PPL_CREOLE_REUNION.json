@@ -95,17 +95,20 @@
       {
         "title": "UNESCO — Maloya, patrimoine immatériel (2009)",
         "url": "https://ich.unesco.org/en/RL/maloya-00183",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "SIL Ethnologue — Réunion French Creole (rcf)",
         "url": "https://www.ethnologue.com/language/rcf/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "APiCS Online — Survey chapter: Reunion Creole",
         "url": "https://apics-online.info/surveys/54",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Portail esclavage Réunion — Maloya et séga, héritage musical de l'esclavage",

@@ -960,6 +960,7 @@ describe("mapSearchCounts", () => {
       person: 1,
       patronyme: 0,
       place: 0,
+      word: 0,
     });
   });
 
@@ -987,6 +988,7 @@ describe("mapSearchCounts", () => {
       person: 1,
       patronyme: 7,
       place: 0,
+      word: 0,
     });
   });
 
@@ -1001,6 +1003,7 @@ describe("mapSearchCounts", () => {
       person: 0,
       patronyme: 0,
       place: 0,
+      word: 0,
     };
     expect(mapSearchCounts({ data: {} })).toEqual(zero);
     expect(mapSearchCounts({ data: [{ id: "PPL_BETE" }] })).toEqual(zero);
@@ -1083,5 +1086,54 @@ describe("mapSearchEnvelope — places", () => {
     expect(
       mapSearchCounts({ data: { peoplesTotal: 2, placesTotal: 1 } })
     ).toMatchObject({ all: 3, place: 1 });
+  });
+});
+
+describe("mapSearchEnvelope — words", () => {
+  const answer = {
+    kind: "word",
+    title: "race",
+    what: { lead: "Un mot.", facts: {} },
+    names: [{ form: "race", selfGiven: true }],
+    sources: { count: 7 },
+  };
+
+  // @req REQ-196
+  it("brings a word fiche onto the result page with the answer its nameHistory gave", () => {
+    const results = mapSearchEnvelope({
+      data: {
+        words: [
+          {
+            id: "WRD_RACE",
+            nameMain: "race",
+            wordLanguage: "fra",
+            definition: "Un mot.",
+            answer,
+            relevance: 1,
+            exactMatch: true,
+            normalizedScore: 1,
+          },
+        ],
+      },
+    });
+
+    expect(results).toEqual([
+      {
+        type: "word",
+        id: "WRD_RACE",
+        name: "race",
+        snippet: "Un mot.",
+        answer,
+        relevance: 1,
+        exactMatch: true,
+      },
+    ]);
+  });
+
+  // @req REQ-196
+  it("counts words in the all lens", () => {
+    expect(
+      mapSearchCounts({ data: { peoplesTotal: 2, wordsTotal: 1 } })
+    ).toMatchObject({ all: 3, word: 1 });
   });
 });

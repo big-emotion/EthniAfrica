@@ -99,7 +99,8 @@
       {
         "title": "Kinga – University of Missouri DICE",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Kinga.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

@@ -74,7 +74,8 @@
       {
         "title": "Doe language – Ethnologue",
         "url": "https://www.ethnologue.com/language/doe/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Doe in Tanzania – Joshua Project",
@@ -94,7 +95,8 @@
       {
         "title": "Central Bantu subgroup (G.30) – Ethnologue",
         "url": "https://www.ethnologue.com/subgroup/54/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

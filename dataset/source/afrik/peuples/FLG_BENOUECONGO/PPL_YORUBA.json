@@ -12,7 +12,7 @@
         "Nago (terme colonial francophone, connotation reductrice, encore employe au Benin et au Togo)",
         "Aku (diaspora historique en Sierra Leone et en Gambie)"
       ],
-      "originOfExonyms": "Nago est un terme utilise par les colons francais pour designer les Yoruba du Dahomey (actuel Benin) et du Togo ; il a une connotation reductrice et est evite en contexte academique. Aku designe les Yoruba liberes de la traite et reinstalles en Sierra Leone au 19e siecle ; il derive probablement de oka ou oka, un terme de salutation yoruba.",
+      "originOfExonyms": "Nago est un terme utilise par les colons francais pour designer les Yoruba du Dahomey (actuel Benin) et du Togo ; il a une connotation reductrice et est evite en contexte academique. Aku designe les Yoruba liberes de la traite et reinstalles en Sierra Leone au 19e siecle ; il viendrait de oka ou oka, un terme de salutation yoruba.",
       "whyProblematic": "Nago peut etre percu comme reducteur par les communautes concernees. L'appellation Aku en Sierra Leone est specifique a la diaspora musulmane liberee et non a la totalite des Yoruba.",
       "contemporaryUsage": "Yoruba est le terme universel dans les contextes academi­ques, officiels et communautaires en Afrique de l'Ouest et dans la diaspora. La Sierra Leone constitue une presence diasporique historique verifiable (communaute Aku / Oku, descendants de Yoruba liberes par la Royal Navy au 19e siecle et reinstalles a Freetown).",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -116,12 +116,14 @@
       {
         "title": "Ethnologue, Yoruba (yor)",
         "url": "https://www.ethnologue.com/language/yor",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog, Yoruba",
         "url": "https://glottolog.org/resource/languoid/id/yoru1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project, Yoruba in Sierra Leone",
@@ -136,7 +138,8 @@
       {
         "title": "UNESCO, Patrimoine culturel immateriel Ifa (2005) et Gelede (2003)",
         "url": "https://ich.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Britannica, Oyo Empire",
@@ -152,6 +155,7 @@
         "title": "Wikidata — Yoruba people (Q190168)",
         "url": "https://www.wikidata.org/wiki/Q190168",
         "tier": "referenced",
+        "source_kind": "community",
         "notes": "Structured identifier catalogue, used only for the wikidataId cross-reference; associated countries (Nigeria, Benin, Togo) match currentCountries."
       }
     ]

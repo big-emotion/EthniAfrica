@@ -664,12 +664,14 @@
       {
         "title": "CIA World Factbook – Republic of the Congo",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of the Republic of the Congo",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements nationaux congolais (RGPH-5, 2023)",
@@ -679,12 +681,14 @@
       {
         "title": "ONU – Données démographiques 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Congo",
         "url": "https://www.unfpa.org/data/world-population/CG",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Études anthropologiques sur les peuples congolais",
@@ -699,17 +703,20 @@
       {
         "title": "CIA World Factbook – Republic of the Congo (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Toponymic Factfile: Congo — Permanent Committee on Geographical Names (Royaume-Uni)",
         "url": "https://assets.publishing.service.gov.uk/media/671267969cd657734653d7f5/Congo_Toponymic_Factfile.pdf",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Fiche officielle britannique de toponymie, édition 2024 : nom court Congo, titre de l'État République du Congo, capitale Brazzaville ; nomme les formes courantes Congo-Brazzaville et Congo-Kinshasa qui distinguent les deux États ; le français seule langue officielle, le kituba et le lingala langues nationales (Constitution de 2015) ; précise que le gentilé congolais est aussi employé pour la République démocratique du Congo."
       },
       {

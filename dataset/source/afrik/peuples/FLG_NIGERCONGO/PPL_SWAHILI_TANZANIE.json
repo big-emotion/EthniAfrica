@@ -8,7 +8,7 @@
       "mainName": "Waswahili de Tanzanie",
       "selfAppellation": "Waswahili / Waungwana",
       "exonyms": ["Swahili", "Zanzibari", "Shirazi (sur l'ile de Zanzibar)"],
-      "originOfExonyms": "Le terme Swahili vient de l'arabe sawahil (cotes). Waungwana (hommes libres, civilises) etait l'auto-designation historique des Swahili pour se distinguer des autres groupes bantoues. Le terme Shirazi designe les descendants des migrants persans de Shiraz ayant fonde les dynasties cotières selon la tradition orale swahili (Chronique de Kilwa). Les Afro-Shirazis constituent aujourd'hui environ la moitie de la population de Zanzibar.",
+      "originOfExonyms": "Le terme Swahili viendrait de l'arabe sawahil (cotes). Waungwana (hommes libres, civilises) etait l'auto-designation historique des Swahili pour se distinguer des autres groupes bantoues. Le terme Shirazi designe les descendants des migrants persans de Shiraz ayant fonde les dynasties cotières selon la tradition orale swahili (Chronique de Kilwa). Les Afro-Shirazis constituent aujourd'hui environ la moitie de la population de Zanzibar.",
       "whyProblematic": null,
       "contemporaryUsage": "En Tanzanie, les Waswahili sont l'ethnie nationale par excellence : le swahili est la langue officielle et nationale, et l'identite swahili s'est elargie pour englober quiconque parle swahili comme langue maternelle, est musulman et vit dans un centre urbain cotier. Zanzibar maintient une identite swahili particulierement vivace, marquee par l'architecture de Stone Town, la musique taarab et les cites-etats historiques de Kilwa.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -92,22 +92,26 @@
       {
         "title": "UNESCO World Heritage Centre — Ruins of Kilwa Kisiwani and Ruins of Songo Mnara",
         "url": "https://whc.unesco.org/en/list/144/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "NPR — The Hot New Musical Trend In Zanzibar Is From The 1880s",
         "url": "https://www.npr.org/sections/goatsandsoda/2018/09/29/650073622/the-hot-new-musical-trend-in-zanzibar-is-from-the-80s-the-1880s",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "National Geographic — Tanzania's Zanzibar is the cradle of African Swahili culture",
         "url": "https://www.nationalgeographic.com/travel/article/why-tanzanias-zanzibar-is-the-cradle-of-african-swahili-culture",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "The Conversation — Ancient DNA is restoring the origin story of the Swahili people",
         "url": "https://theconversation.com/ancient-dna-is-restoring-the-origin-story-of-the-swahili-people-of-the-east-african-coast-201154",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Pan African Music — Taarab in Zanzibar",
@@ -117,7 +121,8 @@
       {
         "title": "Ethnologue SIL — Swahili (swa)",
         "url": "https://www.ethnologue.com/language/swa",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

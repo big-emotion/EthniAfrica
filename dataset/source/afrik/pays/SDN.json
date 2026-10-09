@@ -4,7 +4,7 @@
   "nameEn": "Sudan",
   "nameOfficial": "République du Soudan (Republic of the Sudan, جمهورية السودان)",
   "summary": "Le Soudan porte un nom donné de l'extérieur : « Bilād as-Sūdān », le pays des Noirs, chez les géographes arabes. Royaumes de Koush et de Méroé, royaumes chrétiens nubiens, sultanat de Sennar : son histoire est celle de la vallée du Nil en amont de l'Égypte. Arabes soudanais, Beja, Nubiens et Four y composent la population.",
-  "etymology": "Le nom \"Soudan\" provient de l'arabe \"Bilād as-Sūdān\" (بلاد السودان), signifiant \"pays des Noirs\". Ce terme était historiquement utilisé par les géographes arabes pour désigner la région subsaharienne habitée par des populations noires africaines, par opposition au \"Bilād al-Bayḍā\" (pays des Blancs) qui désignait l'Afrique du Nord. Le nom \"Soudan\" a été officialisé par les colonisateurs britanniques et égyptiens au XIXe siècle.",
+  "etymology": "Le nom \"Soudan\" viendrait de l'arabe \"Bilād as-Sūdān\" (بلاد السودان), qui veut dire \"pays des Noirs\", selon l'Histoire générale de l'Afrique publiée par l'UNESCO. Ce terme était historiquement utilisé par les géographes arabes pour désigner la région subsaharienne habitée par des populations noires africaines, par opposition au \"Bilād al-Bayḍā\" (pays des Blancs) qui désignait l'Afrique du Nord. Le nom \"Soudan\" a été officialisé par les colonisateurs britanniques et égyptiens au XIXe siècle.",
   "nameOriginActor": "Les géographes arabes médiévaux ont utilisé le terme \"Bilād as-Sūdān\" (pays des Noirs) pour désigner la région. Le nom \"Soudan\" a été officialisé par les colonisateurs britanniques et égyptiens au XIXe siècle lors de la création du Soudan anglo-égyptien.",
   "nameHistory": {
     "summary": "Le nom Soudan désigne un pays de la vallée du Nil, la République du Soudan. C'est un mot arabe qui a d'abord désigné les Noirs, puis une large part de l'Afrique au sud du Sahara. Le pays a porté d'autres noms : Soudan anglo-égyptien, puis République démocratique du Soudan. Nous présentons plus bas l'histoire de ces noms et leurs sources.",
@@ -436,17 +436,20 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Sudan",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Sudan",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements soudanais",
@@ -466,12 +469,14 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Soudan",
         "url": "https://www.unfpa.org/data/world-population/SD",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

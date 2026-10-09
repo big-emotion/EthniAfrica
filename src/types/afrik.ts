@@ -822,6 +822,27 @@ export interface RankedPlace {
 }
 
 /**
+ * A word search hit (REQ-196), ranked by afrik_search_words (migration 104)
+ * on its filed name and every name its nameHistory records. A word fiche
+ * exists only to tell the history of the word, so nameHistory is never null.
+ */
+export interface RankedWord {
+  id: string;
+  nameMain: string;
+  wordLanguage: string;
+  definition: string;
+  /** relatedSubjects, gaps and sources, as the fiche writes them. */
+  content: Record<string, unknown>;
+  nameHistory: NameHistory;
+  relevance: number;
+  exactMatch: boolean;
+  normalizedScore: number;
+  /** Set by the search service, as on every other answered kind. */
+  naming?: NamingProjection;
+  answer?: SearchAnswer;
+}
+
+/**
  * One row of the canonical cross-kind ranking.
  *
  * The grouped arrays answer "what did this query find among peoples?"; this
@@ -901,6 +922,12 @@ export interface FtsSearchResponse {
    */
   places?: RankedPlace[];
   placesTotal?: number;
+  /**
+   * Word fiches (REQ-196), a grouped facet like places. Optional for the
+   * same reason.
+   */
+  words?: RankedWord[];
+  wordsTotal?: number;
   /** Every hit in the selected main or quiz stream, ordered on `normalizedScore`. */
   results: RankedSearchHit[];
   /** Corpus-wide match counts, not the size of the returned page. */

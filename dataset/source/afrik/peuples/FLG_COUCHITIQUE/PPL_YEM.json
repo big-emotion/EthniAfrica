@@ -95,7 +95,8 @@
       {
         "title": "Glottolog — Yemsa (yems1235)",
         "url": "https://glottolog.org/resource/languoid/id/yems1235",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

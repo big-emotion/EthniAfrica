@@ -117,7 +117,8 @@
       {
         "title": "Ethnologue — Dazaga (DZG)",
         "url": "https://www.ethnologue.com/language/dzg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Daza in Niger",
@@ -132,17 +133,20 @@
       {
         "title": "CIA — Libya-Chad Cultural Factors (document declassifie)",
         "url": "https://www.cia.gov/readingroom/docs/CIA-RDP06T00412R000200010001-7.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Jean Chapelle — Nomades Noirs du Sahara. L'Harmattan, 1982",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Haber et al. — Chad Basin: Genetic structure (Toubou Y-DNA study). American Journal of Human Genetics, 2016",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }
