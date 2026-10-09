@@ -101,7 +101,7 @@ the validator applies live in that script.
 it; anything that mentions regions or ethnicities as entities is stale.
 
 Resources under `/api/v2/`: `countries`, `peoples`, `language-families`, `languages`,
-`patronymes`, `relations`, `migrations`, `names`, `oral-narratives`, `dossiers`, `media`,
+`patronymes`, `places`, `relations`, `migrations`, `names`, `oral-narratives`, `dossiers`, `media`,
 `sources`, `reference-library`, `search`, `compare`, `confidence`, `doctrine`, `flags`,
 `antibot`, `quiz`, `feed`, `keys`, and `admin` (moderator-only). The folders under
 `src/app/api/v2/` are the list.
