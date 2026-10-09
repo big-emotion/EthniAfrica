@@ -251,7 +251,7 @@ minimal `PAT_*` fiche, and run it.
 
 Read first:
   - src/lib/afrik/parsers/patronymeTypes.ts — `PatronymeDossier`, the strict
-    shape. This, not public/modele-nom.json, which is the appellation model.
+    shape.
   - src/types/sources.ts — `SOURCE_KINDS` is a closed vocabulary. There is no
     `book`, `blog` or `website`.
   - scripts/afrik/enrichPatronymeFiches.mjs — the merge and gap-rewriting

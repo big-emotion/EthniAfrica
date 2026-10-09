@@ -42,7 +42,7 @@ jobs:
     # database is the only progress signal the step gives — it writes nothing to
     # stdout until it returns — and it shows patronymes finishing ~15 minutes in,
     # with the remaining half hour spent in loadPeopleAppellations,
-    # loadNameRecords and loadRelations. `name_records` in recette still carries
+    # loadNameRecords (since retired, ETNI-2021) and loadRelations. `name_records` in recette still carries
     # a timestamp from a run that never reached it.
     #
     # 90 minutes is twice the longest measured run, not a measured figure itself:
