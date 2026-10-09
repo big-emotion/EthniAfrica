@@ -98,7 +98,8 @@
       {
         "title": "ISO 639-3 Language Codes – National Center for Education Statistics",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

@@ -80,12 +80,14 @@
       {
         "title": "Kisi – Omniglot, 2021",
         "url": "https://www.omniglot.com/writing/kisi.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kisi – Ethnologue",
         "url": "https://www.ethnologue.com/language/kiz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kisi of Tanzania – PeopleGroups.org",

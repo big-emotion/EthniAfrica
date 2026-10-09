@@ -150,7 +150,8 @@
       {
         "title": "Ethnologue — Chadian Arabic (shu). SIL International",
         "url": null,
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

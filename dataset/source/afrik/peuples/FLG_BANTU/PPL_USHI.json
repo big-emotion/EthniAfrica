@@ -84,7 +84,8 @@
       {
         "title": "Omniglot – Aushi language and alphabet",
         "url": "https://www.omniglot.com/writing/aushi.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project – Aushi in Zambia",
@@ -99,7 +100,8 @@
       {
         "title": "UNESCO – Liste representative du patrimoine culturel immateriel : Kalela (2022)",
         "url": null,
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

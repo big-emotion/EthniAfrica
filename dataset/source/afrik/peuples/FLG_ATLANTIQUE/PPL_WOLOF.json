@@ -117,7 +117,8 @@
       {
         "title": "Ethnologue – Wolof (wol)",
         "url": "https://www.ethnologue.com/language/wol/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "World History Encyclopedia – Wolof Empire",
@@ -127,12 +128,14 @@
       {
         "title": "Agence Nationale de la Statistique et de la Demographie du Senegal (ANSD), Recensement 2023",
         "url": "https://www.ansd.sn",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "CIA World Factbook – Senegal",
         "url": "https://www.cia.gov/the-world-factbook/countries/senegal/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Joshua Project — Wolof in Senegal (2025)",

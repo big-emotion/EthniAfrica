@@ -27,18 +27,21 @@
         "title": "yor | ISO 639-3",
         "url": "https://iso639-3.sil.org/code/yor",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "SIL International — registration authority for ISO 639-3 codes."
       },
       {
         "title": "Glottolog 5.3 - Yoruba",
         "url": "https://glottolog.org/resource/languoid/id/yoru1245",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Glottolog — authoritative languoid catalogue, source of the glottocode."
       },
       {
         "title": "Yoruba Language (YOR) – L1 & L2 Speakers, Status, Map, Endangered Level & Official Use",
         "url": "https://www.ethnologue.com/language/yor/",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Ethnologue — EGIDS vitality classification, grouped as Institutional."
       }
     ]

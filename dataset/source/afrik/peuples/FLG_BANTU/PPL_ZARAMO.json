@@ -107,7 +107,8 @@
       {
         "title": "Glottolog — Zaramo (zara1247)",
         "url": "https://glottolog.org/resource/languoid/id/zara1247",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

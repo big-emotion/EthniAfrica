@@ -83,7 +83,8 @@
       {
         "title": "Ekit – Glottolog",
         "url": "https://glottolog.org/resource/languoid/id/ekit1246",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "City Facts – Eket, Akwa Ibom, Nigeria",

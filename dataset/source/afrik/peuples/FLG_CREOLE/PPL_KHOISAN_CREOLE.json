@@ -114,7 +114,8 @@
       {
         "title": "South African History Online — Rehoboth",
         "url": "https://sahistory.org.za/place/rehoboth",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Namibia Safari Tours — The Rehoboth Basters and their culture",
@@ -124,7 +125,8 @@
       {
         "title": "UCT Humanities — Coloured is not an Identity",
         "url": "https://humanities.uct.ac.za/apc/coloured-not-identity-learning-speak-my-ancestors-tongue-again",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

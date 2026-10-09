@@ -100,7 +100,8 @@
       {
         "title": "SIL Ethnologue — Acholi language (ach)",
         "url": "https://www.ethnologue.com/language/ach/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Human Rights Watch — Northern Uganda : Abducted and Abused (2003)",
@@ -120,17 +121,20 @@
       {
         "title": "Doom, Ruddy & Vlassenroot, Koen — Kony's Message: A New Koine? The Lord's Resistance Army in Northern Uganda. African Affairs, 1999",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog — Acholi",
         "url": "https://glottolog.org/resource/languoid/id/achi1257",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNFPA Uganda — Population data",
         "url": "https://uganda.unfpa.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

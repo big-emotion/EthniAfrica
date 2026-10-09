@@ -176,7 +176,8 @@
       {
         "title": "Ethnologue (SIL International, 2017) : 976 langues bénoué-congo",
         "url": "https://www.ethnologue.com",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

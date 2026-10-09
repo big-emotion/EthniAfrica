@@ -97,7 +97,8 @@
       {
         "title": "SIL Ethnologue — Datooga language (tcc)",
         "url": "https://www.ethnologue.com/language/tcc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Nyamera Treks and Safaris — The Datoga Tribe of Tanzania",
@@ -117,7 +118,8 @@
       {
         "title": "Glottolog — Datooga",
         "url": "https://glottolog.org/resource/languoid/id/dato1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Datoga people profile",

@@ -105,7 +105,8 @@
       {
         "title": "Ethnologue — Tigrinya (tir)",
         "url": "https://www.ethnologue.com/language/tir",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "EthnoMed — Tigrean Cultural Profile",
@@ -115,7 +116,8 @@
       {
         "title": "PMC Population Health Metrics — Civilian death and injury from airstrikes in Tigray",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11909939/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Martin Plaut — Tigray, evidence of the death toll",
@@ -125,12 +127,14 @@
       {
         "title": "Encyclopaedia Aethiopica, vol. 4 (Uhlig ed.), Harrassowitz Verlag, 2010",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Ethiopian Central Statistical Agency (CSA) — Population and Housing Census 2007",
         "url": "https://www.csa.gov.et",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

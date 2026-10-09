@@ -93,7 +93,8 @@
       {
         "title": "University of Cape Town — Sekoele Basotho: Protecting Initiation through the Law in Lesotho",
         "url": "https://humanities.uct.ac.za/apc/sekoele-basotho-protecting-initiation-through-law-lesotho",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Vogue — The Rich History Behind Basotho Heritage Blankets",
@@ -103,12 +104,14 @@
       {
         "title": "SIL Ethnologue — Sesotho (sot)",
         "url": "https://www.ethnologue.com/language/sot/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Lesotho",
         "url": "https://www.cia.gov/the-world-factbook/countries/lesotho/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Mofolo, Thomas. Chaka. Morija Sesuto Book Depot, 1925",

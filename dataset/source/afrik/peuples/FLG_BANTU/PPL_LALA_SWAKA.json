@@ -75,12 +75,14 @@
       {
         "title": "Chipimpi, Vulgar Clans, and Lala-Lamba Ethnohistory – Brian Siegel, Furman University, 2008",
         "url": "https://scholarexchange.furman.edu/cgi/viewcontent.cgi?article=1001&context=ant-publications",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ichibwela Mushi – Luano Town Council",
         "url": "https://www.luanocouncil.gov.zm/?page_id=2517",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Chief Chitina of the Lala-Swaka people of Mkushi District – QFM Zambia, 2025",

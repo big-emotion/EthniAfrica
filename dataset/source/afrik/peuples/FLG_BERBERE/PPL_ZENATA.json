@@ -122,17 +122,20 @@
       {
         "title": "Encyclopaedie Berbere — articles sur Zenata, Marinides, Zayyanides",
         "url": "https://journals.openedition.org/encyclopedieberbere/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue — Tarifit (rif)",
         "url": "https://www.ethnologue.com/language/rif/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Chaoui (shy)",
         "url": "https://www.ethnologue.com/language/shy/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

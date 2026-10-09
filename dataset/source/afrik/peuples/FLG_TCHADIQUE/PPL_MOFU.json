@@ -97,7 +97,8 @@
       {
         "title": "Sterner, J. & David, N. (2020). Gudur revisited. NDJS 2020.2. University of Calgary",
         "url": "https://www.ucalgary.ca/sukur/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Barreteau, D. (1988). Description du mofu-gudur. Paris : ORSTOM/CNRS",
@@ -112,17 +113,20 @@
       {
         "title": "Maura, D. (2022). Socio-Cultural Heritage, Identity and Political Affirmation through Toponyms in Far-North Cameroon. SCIRP",
         "url": "https://www.scirp.org/journal/paperinformation?paperid=119428",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Mofu-Gudur (mif)",
         "url": "https://www.ethnologue.com/language/mif/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Mofu North (mfk)",
         "url": "https://www.ethnologue.com/language/mfk/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Mofu, North in Cameroon",

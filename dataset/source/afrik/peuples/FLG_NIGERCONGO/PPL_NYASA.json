@@ -102,12 +102,14 @@
       {
         "title": "SIL Ethnologue — Mwera (Nyasa), code mjh",
         "url": "https://www.ethnologue.com/language/mjh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Mwera (Nyasa), N201",
         "url": "https://glottolog.org/resource/languoid/id/mwer1247",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Malawi: History and People",

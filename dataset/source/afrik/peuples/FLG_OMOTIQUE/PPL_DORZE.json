@@ -80,12 +80,14 @@
       {
         "title": "Dorze language (DOZ) – Ethnologue / SIL International, 2025",
         "url": "https://www.ethnologue.com/language/doz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog : Dorze (dorz1235) – Hammarstrom et al., 2025",
         "url": "https://glottolog.org/resource/languoid/id/dorz1235",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Experience Traditional Dorze Village Life in Ethiopia – Hoblets On The Go, 2025",

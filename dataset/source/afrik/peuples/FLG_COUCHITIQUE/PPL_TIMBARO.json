@@ -82,12 +82,14 @@
       {
         "title": "Andashe, Abayneh – A History of Religions and Religious Processes Among the Tembaro People, Southern Ethiopia 1891-1974, Jimma University, 2014",
         "url": "https://repository.ju.edu.et/bitstream/handle/123456789/5233/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnohistory and Culture of Tambaro of Southwest Ethiopia – Academia.edu, 2014",
         "url": "https://www.academia.edu/7866560/Ethnohistory_and_Culture_of_Tambaro_of_Southwest_Ethiopia",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

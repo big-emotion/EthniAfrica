@@ -89,12 +89,14 @@
       {
         "title": "Rungwa Language (RNW) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/rnw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Waters, Tony – Social Organization and Social Status in Nineteenth and Twentieth Century Rukwa, Tanzania – African Studies Quarterly, Vol. 11, No. 1, 2009",
         "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/Waters-V11Is1.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Roth, Tim – Master Wungu Thesis – Canada Institute of Linguistics, 2012",
@@ -119,12 +121,14 @@
       {
         "title": "Rungwa – ScriptSource",
         "url": "https://www.scriptsource.org/cms/scripts/page.php?item_id=subtag_detail&uid=vl25fkvzt2",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ISO 639-3 Language Codes – National Center for Education Statistics",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

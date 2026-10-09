@@ -101,7 +101,8 @@
       {
         "title": "SIL Ethnologue — Ronga (rng)",
         "url": "https://www.ethnologue.com/language/rng/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kwekudee — Tsonga People: South African Peaceful People",
@@ -111,7 +112,8 @@
       {
         "title": "Kronos — Photographic Narrations and the Visual Struggle for Mozambique",
         "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S0259-01902020000100009",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Maputo Essential Tours — Ethnic Groups of Mozambique",

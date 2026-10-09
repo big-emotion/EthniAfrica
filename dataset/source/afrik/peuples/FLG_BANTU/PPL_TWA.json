@@ -132,7 +132,8 @@
       {
         "title": "Voice of America, The Twa: The Forgotten People of the Great Lakes, 2006",
         "url": "https://www.voanews.com/a/a-13-2006-05-25-voa13/325093.html",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "101 Last Tribes, Twa Great Lakes",
@@ -148,6 +149,7 @@
         "title": "Dictionnaire de l'Académie française, 1re édition (1694), entrée « pigmée » renvoyant à « pygmée »",
         "url": "https://www.dictionnaire-academie.fr/article/A1_0071",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Atteste la graphie ancienne « pigmée »."
       }
     ]

@@ -119,17 +119,20 @@
       {
         "title": "Uganda Bureau of Statistics (UBOS) — National Population and Housing Census 2024 Final Report",
         "url": "https://www.ubos.org/wp-content/uploads/2024/12/National-Population-and-Housing-Census-2024-Final-Report-Volume-1-Main.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Ethnologue — Kiga language (cgg). SIL International",
         "url": "https://www.ethnologue.com/language/cgg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Kiga language",
         "url": "https://glottolog.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Facebook — Estimated Population: Ethnic Groups in Uganda (2025)",

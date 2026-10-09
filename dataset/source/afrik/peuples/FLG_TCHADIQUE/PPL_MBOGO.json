@@ -79,12 +79,14 @@
       {
         "title": "SIL Ethnologue — Chadic languages subgroup Nigeria",
         "url": "https://www.ethnologue.com/subgroup/555/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Nigeria",
         "url": "https://www.cia.gov/the-world-factbook/countries/nigeria/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

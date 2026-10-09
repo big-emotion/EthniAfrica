@@ -205,17 +205,20 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Tunisia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Ethnologue – Languages of Tunisia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Minority Rights Group – Amazigh in Tunisia",
@@ -230,18 +233,21 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "South African History Online, « Africa: What's in a name? »",
         "url": "https://sahistory.org.za/article/africa-whats-name",
         "tier": "referenced",
+        "source_kind": "repository",
         "notes": "Article d'un portail d'histoire public. Dit que tous les historiens s'accordent sur l'emploi romain du nom en Tunisie et en Algérie vers le IIe siècle avant notre ère, mais que son origine reste discutée : l'idée d'une « terre des Afri » n'est appuyée par aucune preuve directe dans les sources primaires. Mentionne aussi l'explication grecque de Léon l'Africain. Consulté le 25 septembre 2026."
       },
       {
         "title": "UNFPA – World Population Dashboard — Tunisie",
         "url": "https://www.unfpa.org/data/world-population/TN",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

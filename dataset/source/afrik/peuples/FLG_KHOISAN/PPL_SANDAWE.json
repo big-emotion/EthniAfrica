@@ -86,7 +86,8 @@
       {
         "title": "Sandawe language (SAD) – Ethnologue SIL",
         "url": "https://www.ethnologue.com/language/sad/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

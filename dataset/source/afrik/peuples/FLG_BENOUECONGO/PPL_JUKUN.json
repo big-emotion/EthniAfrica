@@ -114,12 +114,14 @@
       {
         "title": "RSIS International — The Jukun-Muri Relations: Pre-Colonial Dynamics (2025)",
         "url": "https://rsisinternational.org/journals/ijriss/articles/the-jukun-muri-relations-pre-colonial-dynamics/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue (SIL) — Jukun Takum (jbu)",
         "url": "https://www.ethnologue.com/language/jbu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Jukun Kona in Nigeria",
@@ -134,7 +136,8 @@
       {
         "title": "ASJP Database — Jukun Takum, ISO 639-3 jbu",
         "url": "https://asjp.clld.org/languages/JUKUN_TAKUM",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

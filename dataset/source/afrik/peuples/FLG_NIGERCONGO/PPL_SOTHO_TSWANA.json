@@ -124,17 +124,20 @@
       {
         "title": "SIL Ethnologue — Tswana (tsn)",
         "url": "https://www.ethnologue.com/language/tsn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Sesotho (sot)",
         "url": "https://www.ethnologue.com/language/sot/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Northern Sotho (nso)",
         "url": "https://www.ethnologue.com/language/nso/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "South Africa Gateway — Languages of South Africa",

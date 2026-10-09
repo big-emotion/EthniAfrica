@@ -101,7 +101,8 @@
       {
         "title": "Ethnologue — Songhay, Koyraboro Senni (ses)",
         "url": "https://www.ethnologue.com/language/ses/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Songhai-Koyraboro in Mali",
@@ -111,17 +112,20 @@
       {
         "title": "ScriptSource — Koyraboro Senni Songhay (ses)",
         "url": "https://scriptsource.org/cms/scripts/page.php?item_id=subtag_detail&uid=uthnk4pcdr",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO — Tombeau des Askia, Gao (patrimoine mondial)",
         "url": "https://whc.unesco.org/fr/list/1139",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook — Mali",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       }
     ]
   }

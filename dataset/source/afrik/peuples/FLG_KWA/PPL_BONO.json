@@ -81,7 +81,8 @@
       {
         "title": "Bono Region – BRCC Ghana",
         "url": "https://brcc.gov.gh/major-settlements/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Bono Region Population Statistics – Citypopulation.de",
@@ -91,7 +92,8 @@
       {
         "title": "Ghana Statistical Service, Population and Housing Census 2021",
         "url": "https://census2021.statsghana.gov.gh",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Posnansky, Merrick – Aspects of Early West African Trade, World Archaeology, 5(2), 1973",
@@ -101,7 +103,8 @@
       {
         "title": "Stahl, Ann Brower – Making History in Banda: Anthropological Visions of Africa's Past, Cambridge University Press, 2001",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",

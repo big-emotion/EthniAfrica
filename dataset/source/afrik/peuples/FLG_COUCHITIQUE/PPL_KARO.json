@@ -76,7 +76,8 @@
       {
         "title": "Karo (Ethiopia) – Glottolog 5.1, 2024",
         "url": "https://glottolog.org/resource/languoid/id/karo1297",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "A Look at the Kara Tribe, Ethiopia's Famous Body Painters – Absolute Ethiopia Tours, 2025",

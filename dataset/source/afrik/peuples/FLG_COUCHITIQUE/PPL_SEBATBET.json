@@ -95,12 +95,14 @@
       {
         "title": "SIL Ethnologue — Sebat Bet Gurage (sgw)",
         "url": "https://www.ethnologue.com/language/sgw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Sebat Bet Gurage (seba1251)",
         "url": "https://glottolog.org/resource/languoid/id/seba1251",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Encyclopaedia Britannica — Gurage",
@@ -110,7 +112,8 @@
       {
         "title": "Nature — Cultural, economic, and symbolic value of the enset crop in Sebat Bet Gurage, 2022",
         "url": "https://www.nature.com/articles/s41599-022-01179-4",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Gurage, West in Ethiopia",
@@ -120,7 +123,8 @@
       {
         "title": "William Shack — The Gurage: A People of the Ensete Culture. Oxford University Press, 1966",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

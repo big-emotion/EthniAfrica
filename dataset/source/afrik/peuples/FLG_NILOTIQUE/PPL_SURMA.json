@@ -120,7 +120,8 @@
       {
         "title": "CIA World Factbook — Ethiopia",
         "url": "https://www.cia.gov/the-world-factbook/countries/ethiopia/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

@@ -87,7 +87,8 @@
       {
         "title": "Ndamba – Glottolog 5.3, ISO 639-3: ndj",
         "url": "https://glottolog.org/resource/languoid/id/ndam1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ndamba – 101 Last Tribes",
@@ -97,7 +98,8 @@
       {
         "title": "Memory, Migration and the Authority of History in Southern Tanzania – JSTOR",
         "url": "https://www.jstor.org/stable/183473",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

@@ -95,27 +95,32 @@
       {
         "title": "SIL Ethnologue – Humburi Senni Songhay (hmb)",
         "url": "https://www.ethnologue.com/language/hmb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog – Humburi Senni",
         "url": "https://glottolog.org/resource/languoid/id/humb1243",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Omniglot – Humburi Senni language and alphabet",
         "url": "https://www.omniglot.com/writing/humburisenni.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Stoller, Paul. The Taste of Ethnographic Things : The Senses in Anthropology. University of Pennsylvania Press, 1989",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Hunwick, John O. Timbuktu and the Songhay Empire. Brill, 1999",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

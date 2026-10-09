@@ -77,12 +77,14 @@
       {
         "title": "KOFFI Kouakou Sylvain - The Wan and their migrations in Cote d'Ivoire, Revue ASTR-Ghana / e.f.u.a editions, 2024",
         "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2024/11/7-KOFFI-Kouakou-Sylvain.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ravenhill P. L. - The Wan Language, LLACAN-CNRS",
         "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project - Wan, Nwa in Cote d'Ivoire",
@@ -92,7 +94,8 @@
       {
         "title": "Ethnologue - Wan Language (WAN)",
         "url": "https://www.ethnologue.com/language/wan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

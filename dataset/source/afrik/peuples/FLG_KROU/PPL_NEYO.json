@@ -80,12 +80,14 @@
       {
         "title": "Ethnologue – Neyo language (ney), SIL International, 2024",
         "url": "https://www.ethnologue.com/language/ney/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Omniglot – Neyo language and alphabet, 2021",
         "url": "https://www.omniglot.com/writing/neyo.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Neyo people – 101 Last Tribes, 2023",

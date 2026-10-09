@@ -96,7 +96,8 @@
       {
         "title": "Ethnologue : Bille Language (BIL)",
         "url": "https://www.ethnologue.com/language/bil/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "YouTube : Agiri Festival - The Spirit of Ancient Bille Kingdom",

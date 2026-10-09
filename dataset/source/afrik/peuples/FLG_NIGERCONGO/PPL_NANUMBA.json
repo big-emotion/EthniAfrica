@@ -89,7 +89,8 @@
       {
         "title": "Ghana Statistical Service – Population and Housing Census 2021",
         "url": "https://www.statsghana.gov.gh",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Immigration and Refugee Board of Canada – Primary language of the Nanumba, 1996",

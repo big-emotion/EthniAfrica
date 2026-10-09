@@ -370,6 +370,7 @@
         "title": "Niane, Djibril Tamsir (dir.) (1985) – Histoire générale de l'Afrique, tome IV : L'Afrique du XIIe au XVIe siècle. UNESCO, Paris",
         "url": null,
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Publication de l'UNESCO. Le chapitre 6, signé Niane, suit les traditions orales des écoles de griots du Manden et les croise avec les auteurs arabes ; sa chronologie est relative. Le chapitre 12, signé Person, situe la fin de la dépendance du Bambugu vis-à-vis du Mali en 1599."
       },
       {
@@ -390,28 +391,33 @@
       {
         "title": "Greenberg, Joseph H. (1963) – *The Languages of Africa*. Indiana University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Vydrin, Valentin (2009) – On the Problem of the Proto-Mande Homeland, Journal of Language Relationship 1",
         "url": "https://www.jolr.ru/files/(10)jlr2009-1(107-142).pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Onze groupes de bas niveau font consensus ; les désaccords portent sur les regroupements intermédiaires et sur le berceau de la famille."
       },
       {
         "title": "Dimmendaal, Gerrit J. (2008) – \"Language Ecology and Linguistic Diversity on the African Continent\", *Language and Linguistics Compass*, et *Historical Linguistics and the Comparative Study of African Languages*",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Güldemann, Tom (2018) – *The Languages and Linguistics of Africa*. De Gruyter Mouton",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Creissels, Denis & Sambou, Pierre (2013) – *Le mandinka : phonologie, grammaire, textes*. Karthala",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Creissels, Denis (2019) – \"Tonologie du mandinka du Pakaawu\", *Mandenkan* 61",
@@ -421,17 +427,20 @@
       {
         "title": "Khachaturyan, Lusine (2020) – *A typological portrait of Mano, Southern Mande*. De Gruyter Brill",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Durvasula, Arun & Sankararaman, Sriram (2020) – \"Recovering signals of ghost archaic admixture in the genomes of present-day Africans\", *Science Advances*",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Rosa, Alexandra et al. (2011) – \"Y-Chromosomal diversity in the population of Guinea-Bissau: a multiethnic perspective\", *Molecular Biology and Evolution* 28(3): 1255-1266",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nikitina, Tatiana (2019) – \"Missionary descriptions of Mande languages: verbal morphology…\", *Folia Linguistica* 50(2)",
@@ -441,12 +450,14 @@
       {
         "title": "Ethnologue/SIL International – \"Mande languages\" entrée pour 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO – *Atlas des langues en danger dans le monde*",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Britannica – \"Mande languages\" et \"Mande peoples\" articles",
@@ -456,17 +467,20 @@
       {
         "title": "Glottolog (2025) – \"Mande\"",
         "url": "https://glottolog.org/resource/languoid/id/mand1469",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Agence Nationale de la Statistique et de la Démographie (ANSD), Sénégal (2023) – RGPH-5, Rapport Chapitre 1 : État et structure de la population, Table I-32 (Mandinka / Màndienka langue courante)",
         "url": "https://www.ansd.sn/sites/default/files/recensements/rapport/Chapitre-1_ETAT-STRUCTURE-POPULATION-Rapport-def-RGPH-5.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Agence Nationale de la Statistique (ANStat), Côte d'Ivoire (2021) – Recensement Général de la Population et de l'Habitat (RGPH 2021), jeu de données \"Répartition des Ivoiriens par grand groupe ethnique selon le sexe\" (groupe ethnolinguistique Mandé du Nord + Mandé du Sud, agrégat, classification Bouquet)",
         "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Almada, André Álvares de (1594) – Tratado breve dos rios de Guiné do Cabo Verde",
@@ -478,6 +492,7 @@
         "title": "Park, Mungo (1799) – Travels in the Interior Districts of Africa",
         "url": "https://www.gutenberg.org/cache/epub/5266/pg5266.txt",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Park rattache explicitement le nom Mandingo à l'État intérieur de Manding. Texte intégral."
       },
       {
@@ -496,36 +511,42 @@
         "title": "Donaldson, Coleman (2017) – Orthography, Standardization, and Register: The Case of Manding",
         "url": "https://core.ac.uk/download/219377367.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Chapitre de Standardizing Minority Languages, Routledge. Donne le mandingue comme continuum de langue et de dialecte, et la morphologie des glottonymes : ka pour l'habitant, kan pour la langue."
       },
       {
         "title": "SIL International – Tables du registre ISO 639-3",
         "url": "https://iso639-3.sil.org/code_tables/download_tables",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "La macrolangue man réunit six variétés maninka et mandinka. Le bambara et le dioula portent un code individuel hors de cette macrolangue. Un code, myq, a été retiré en 2013."
       },
       {
         "title": "Massing, Andreas W. (2000) – The Wangara, an Old Soninke Diaspora in West Africa ?, Cahiers d'études africaines 158",
         "url": "https://journals.openedition.org/etudesafricaines/175",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Suit le réseau marchand wangara depuis les sources arabes du onzième siècle. Accès libre."
       },
       {
         "title": "Sanou Noël, Bationo (2021) – La charte du Mandé, Afroglobe 1",
         "url": "https://edition.uqam.ca/afroglobe/article/view/982",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Retrace l'atelier de Kankan de mars 1998 d'où sort la version écrite en quarante-quatre articles, d'après le récit de Djibril Tamsir Niane."
       },
       {
         "title": "UNESCO (2009) – La Charte du Mandén, proclamée à Kouroukan Fouga",
         "url": "https://ich.unesco.org/fr/RL/la-charte-du-manden-proclamee-a-kouroukan-fouga-00290",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Inscription au patrimoine culturel immatériel à la demande du Mali. La description inscrite énumère sept chapitres."
       },
       {
         "title": "Donaldson, Coleman (2019) – Linguistic and Civic Refinement in the N’ko Movement of Manding-Speaking West Africa. Signs and Society 7(2), p. 156-185",
         "url": "https://www.cambridge.org/core/journals/signs-and-society/article/linguistic-and-civic-refinement-in-the-nko-movement-of-mandingspeaking-west-africa/22BCE1074BD8F08FD5F998BB259E3E60",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de recherche fondé sur des enquêtes entre 2012 et 2017, avec des observations à Bamako et à Bobo-Dioulasso. Les pratiques décrites concernent les acteurs étudiés du mouvement n'ko. DOI : 10.1086/702554."
       },
       {

@@ -120,7 +120,8 @@
       {
         "title": "SIL Ethnologue – Runyankole language nyn",
         "url": "https://www.ethnologue.com/language/nyn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -90,12 +90,14 @@
       {
         "title": "Omniglot — Myene language and alphabet",
         "url": "https://www.omniglot.com/writing/myene.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue SIL — Myene (mye)",
         "url": "https://www.ethnologue.com/language/mye/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Gabon",

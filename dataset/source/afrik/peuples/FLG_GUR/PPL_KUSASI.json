@@ -93,12 +93,14 @@
       {
         "title": "Ethnologue — Kusaal Language (KUS)",
         "url": "https://www.ethnologue.com/language/kus/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Webonary — Kusaal Dictionary Introduction",
         "url": "https://www.webonary.org/kusaal-gh/overview/introduction/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Kusasi in Ghana",
@@ -108,7 +110,8 @@
       {
         "title": "Modern Ghana — Why Dr. Bawumia Cannot Win (2025)",
         "url": "https://www.modernghana.com/news/1426645/why-dr-bawumia-cannot-win-any-presidential-electi.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "The Rest Journal — Ethnic Conflicts in Ghana (2025)",
@@ -118,7 +121,8 @@
       {
         "title": "Government of Ghana — Composite Budget Kassena-Nakana 2022-2025",
         "url": "https://mofep.gov.gh/sites/default/files/composite-budget/2022/UE/Kasena-Nakana.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

@@ -82,7 +82,8 @@
       {
         "title": "Ethnologue - Kasanga language (ccj)",
         "url": "https://www.ethnologue.com/language/ccj/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Kasanga, Haal in Guinea-Bissau",
@@ -97,7 +98,8 @@
       {
         "title": "US State Department - Guinea-Bissau Background Note",
         "url": "https://2009-2017.state.gov/outofdate/bgn/guineabissau/47466.htm",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

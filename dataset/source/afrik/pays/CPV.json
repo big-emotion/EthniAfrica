@@ -102,17 +102,20 @@
       {
         "title": "SIL Ethnologue – Languages of Cape Verde",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Cape Verde",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Cabo Verde",
         "url": "https://www.unfpa.org/data/world-population/CV",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Speeches and Writings\"",
@@ -132,18 +135,21 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Toponymic Factfile: Cape Verde — Permanent Committee on Geographical Names (Royaume-Uni)",
         "url": "https://assets.publishing.service.gov.uk/media/654cfedf014cc90010677386/Cape_Verde_Toponymic_Factfile.pdf",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Fiche officielle britannique de toponymie, édition 2023 : le nom Cabo Verde vient du cap Vert (Cap-Vert), point le plus occidental de l'Afrique, au Sénégal ; le pays préfère la forme portugaise Cabo Verde, employée par l'ONU en anglais."
       },
       {
         "title": "The Boston Globe — Cape Verde asks world to call it Cabo Verde (10 février 2014)",
         "url": "https://www.bostonglobe.com/metro/2014/02/10/cape-verde-asks-world-call-cabo-verde/LoHX9VhfzljfmnrY9I8xeM/story.html",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Article de presse relatant la demande de 2013 : le nom Cabo Verde n'est pas traduit dans les langues de l'ONU, la forme longue française étant République de Cabo Verde."
       }
     ],

@@ -119,7 +119,8 @@
       {
         "title": "Glottolog 5.3 — Kxoe (kxoe1243), ISO 639-3 : xuu",
         "url": "https://glottolog.org/resource/languoid/id/kxoe1243",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Kxoe, Xun in Botswana",
@@ -129,7 +130,8 @@
       {
         "title": "Kilian-Hatz, Christa. Khwe Dictionary. Koln : Rudiger Koppe Verlag, 2003",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Kilian-Hatz, Christa & Naude, David. Khwe Folktales. Koln, 1999",
@@ -144,7 +146,8 @@
       {
         "title": "UNESCO — Tsodilo Hills World Heritage Site",
         "url": "https://whc.unesco.org/en/list/1021/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Brenzinger, Matthias. Language endangerment in Africa. In Encyclopedia of Language and Linguistics, 2011",
@@ -154,7 +157,8 @@
       {
         "title": "SciELO — The case of Khoisan languages of Botswana",
         "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S2224-33802019000300012",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

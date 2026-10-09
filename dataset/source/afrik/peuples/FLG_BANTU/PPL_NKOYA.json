@@ -79,7 +79,8 @@
       {
         "title": "Nkoya Language (NKA) – Ethnologue",
         "url": "https://www.ethnologue.com/language/nka/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Nkoya, Lambya in Zambia – Joshua Project",
@@ -94,7 +95,8 @@
       {
         "title": "The Kazanga Festival – Scholarly Publications Leiden University",
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2870800/download",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nkoya of Zambia – PeopleGroups.org",

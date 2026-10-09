@@ -115,12 +115,14 @@
       {
         "title": "Omniglot — Ndau language and alphabet",
         "url": "https://www.omniglot.com/writing/ndau.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Ndau (ndau1241)",
         "url": "https://glottolog.org/resource/languoid/id/ndau1241",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Ndau, Shona in Mozambique",
@@ -135,12 +137,14 @@
       {
         "title": "MacGonagle, Elizabeth. Crafting Identity in Zimbabwe and Mozambique. University of Rochester Press, 2007",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Earthy, E.D. Valenge Women. International African Institute, 1933",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

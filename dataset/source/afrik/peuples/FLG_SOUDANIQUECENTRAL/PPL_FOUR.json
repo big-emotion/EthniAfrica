@@ -100,12 +100,14 @@
       {
         "title": "Ethnologue, Fur (fvr) – SIL International 2024",
         "url": "https://www.ethnologue.com/language/fvr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UK Government, Country policy and information note: non-Arab Darfuris – GOV.UK, aout 2024",
         "url": "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-non-arab-darfuri-august-2024-accessible",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Jorg Adelberger, Vom Sultanat zur Republik : Veranderungen in der Sozialorganisation der Fur (Sudan) – F. Steiner, Stuttgart, 1990 (ISBN 3515055126)",

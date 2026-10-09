@@ -93,12 +93,14 @@
       {
         "title": "Cambridge University Press, Culture and subsistence ecology of the Tongwe",
         "url": "https://www.cambridge.org/core/books/mahale-chimpanzees/culture-and-subsistence-ecology-of-the-tongwe-and-their-significance-in-chimpanzee-research/D5ABAE77990DCDEA81B9CC7EE3CD4E39",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue, Tongwe language TNY",
         "url": "https://www.ethnologue.com/language/tny/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes, Tongwe people",

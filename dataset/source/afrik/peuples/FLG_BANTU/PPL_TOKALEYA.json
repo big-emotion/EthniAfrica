@@ -99,7 +99,8 @@
       {
         "title": "Glottolog — Tonga (Zambia) (tong1318)",
         "url": "https://glottolog.org/resource/languoid/id/tong1318",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

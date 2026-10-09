@@ -57,6 +57,7 @@
           "title": "Smithsonian Magazine - How the Memory of a Song Reunited Two Women Separated by the Trans-Atlantic Slave Trade",
           "url": "https://www.smithsonianmag.com/history/how-the-memory-of-a-song-reunited-two-women-separated-by-the-trans-atlantic-slave-trade-180983864/",
           "tier": "referenced",
+          "source_kind": "press",
           "notes": "Established press journalism; the article names its historical sources (Joseph Opala, Cynthia Schmidt) and dates (1933, 1990)."
         },
         {
@@ -109,12 +110,14 @@
         "title": "APiCS Online - Survey chapter: Gullah (Thomas B. Klein)",
         "url": "https://apics-online.info/surveys/13",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Chapitre d'atlas linguistique académique à comité de relecture (Atlas of Pidgin and Creole Language Structures Online), auteur nommé."
       },
       {
         "title": "Los Angeles Times - The Gullah people have survived on the Carolina sea islands for centuries. Now development is taking a toll. (Nigel Duara, 4 novembre 2016)",
         "url": "https://www.latimes.com/nation/la-na-hurricane-matthew-geechee-snap-story.html",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Presse établie (Los Angeles Times), article signé et daté. Référence de la figure de population (~200 000), recoupée via la bibliographie de l'article encyclopédique « Gullah »."
       },
       {

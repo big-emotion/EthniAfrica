@@ -428,12 +428,14 @@
       {
         "title": "SIL Ethnologue - Langues de Guinee",
         "url": "https://www.ethnologue.com/country/GN/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNFPA – World Population Dashboard — Guinée",
         "url": "https://www.unfpa.org/data/world-population/GN",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Niane, Djibril Tamsir – \"Soundjata ou l'épopée mandingue\"",
@@ -448,22 +450,26 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Institut national de la statistique (Guinee) - Recensement general de la population et de l'habitation 2025, resultats preliminaires",
         "url": "https://www.stat-guinee.org/images/Documents/Publications/INS/rapports_enquetes/RGPH-4/Resultats_preliminaires_rgph_4.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Fieloux, Michele - compte rendu de Thierno Diallo, Les institutions politiques du Fouta Dyalon au XIXe siecle (Dakar, IFAN, 1972) - Cahiers d'Etudes africaines, 14 (54), 1974, p. 402-403",
         "url": "https://www.persee.fr/doc/cea_0008-0055_1974_num_14_54_2655_t1_0402_0000_2",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "N'Daou, Mohamed Saidou - Sangalan Oral Traditions as Philosophy and Ideologies - History in Africa, 26, 1999, p. 239-267",
         "url": "https://doi.org/10.2307/3172143",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Fauvelle-Aymar, François-Xavier (2012) – Niani redux : mise au point sur la ville éponyme de l'empire du Mali, P@lethnology 4",
@@ -475,12 +481,14 @@
         "title": "Collet, Hadrien (2013) – L'introuvable capitale du Mali, Afriques 4",
         "url": "https://journals.openedition.org/afriques/1098",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Retrace comment la lecture Niani a été substituée à un tracé consonantique arabe que les manuscrits ne vocalisent pas. Accès libre."
       },
       {
         "title": "Agrour, Rachid - Contribution à l'étude d'un mot voyageur : Chleuh - Cahiers d'Études africaines, 208, 2012, p. 767-811",
         "url": "https://doi.org/10.4000/etudesafricaines.17161",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Rattache l'expression amazighe akal n ignawen à la désignation médiévale de la zone sahélienne par les berbérophones, en citant Maurice Delafosse (1924, page 153), et rapporte l'étymologie d'agnaw par le verbe gnu, coudre. Accès libre."
       },
       {
@@ -493,6 +501,7 @@
         "title": "Dubawa – Guinée : des chiffres sur la répartition ethnique en 2025 circulent sur Facebook sans aucune base officielle",
         "url": "https://dubawa.org/guinee-des-chiffres-sur-la-repartition-ethnique-en-2025-circulent-sur-facebook-sans-aucune-base-officielle/",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Vérification d'un message largement partagé en juillet 2025 : aucun chiffre officiel récent ne permet d'établir une répartition ethnique de la Guinée."
       },
       {

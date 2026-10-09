@@ -93,12 +93,14 @@
       {
         "title": "Glottolog : Nupoid (classification linguistique)",
         "url": "https://glottolog.org/resource/languoid/id/nupo1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue : Nupe-Nupe-Tako (NUP)",
         "url": "https://www.ethnologue.com/language/nup/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "YouTube : The History of Bassa Nigeria",

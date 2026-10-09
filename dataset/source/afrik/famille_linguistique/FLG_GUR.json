@@ -87,27 +87,32 @@
       {
         "title": "Greenberg, Joseph H. (1955, révisé 1963) – *The Languages of Africa*. Bloomington : Indiana University / La Haye : Mouton",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Manessy, Gabriel (1975, 1979) – *Les langues Oti-Volta* / *Contribution à la classification généalogique des langues voltaïques : le proto-central*. Paris : SELAF",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Bendor-Samuel, John T. (1989) – *The Niger-Congo Languages: A Classification and Description of Africa's Largest Language Family*. Lanham : University Press of America",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Naden, Tony (1989) – *Gur*. In: Bendor-Samuel (éd.), *The Niger-Congo Languages*. Lanham : University Press of America",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Williamson, Kay & Blench, Roger (2000) – *Niger-Congo*. In: Heine & Nurse (éds.), *African Languages: An Introduction*. Cambridge : Cambridge University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Kleinewillinghöfer, Ulrich (2002) – *Kontaktphänomene im Südost-Gurunsi*. In: *Aktuelle Forschungen zu afrikanischen Sprachen*. Köln",
@@ -117,12 +122,14 @@
       {
         "title": "Kleinewillinghöfer, Ulrich (2014) – *Adamawa*. Séminaire, Humboldt-Universität Berlin",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "de Filippo, Cesare ; Altheide, I.; Caron, M.; et al. (2011) – \"Contrasting maternal and paternal histories in the linguistic context of Burkina Faso\", *Molecular Biology and Evolution* vol. 29(4), pp. 1213-1224. Oxford University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Bodomo, Adams (2017) – \"Mabia: Its Etymological Genesis, Geographical Spread, and some Salient Genetic Features\". Présentation académique",
@@ -132,7 +139,8 @@
       {
         "title": "Bodomo, Adams ; Abubakari, Hasiyatu ; Issah, Samuel Alhassan (2020) – *Handbook of the Mabia Languages of West Africa*. Glienicke : Galda Verlag",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Blench, Roger – *Gur Languages Overview*. URL : Glottolog / African Language Resources",
@@ -142,17 +150,20 @@
       {
         "title": "Glottolog – Oti-Volta / Gur branch. Max Planck Institute for Evolutionary Anthropology",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue – Gur languages. Dallas : SIL International",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO – Atlas des langues africaines",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Britannica Editors (2024-2025) – \"Gur languages\". *Encyclopædia Britannica*. Chicago : Encyclopædia Britannica, Inc",
@@ -167,12 +178,14 @@
       {
         "title": "Glottolog (2025) – \"Gur\"",
         "url": "https://glottolog.org/resource/languoid/id/gura1261",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Agence Nationale de la Statistique (ANStat), Côte d'Ivoire (2021) – Recensement Général de la Population et de l'Habitat (RGPH 2021), jeu de données \"Répartition des Ivoiriens par grand groupe ethnique selon le sexe\" (groupe ethnolinguistique Gur/Voltaïque, classification Bouquet)",
         "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

@@ -114,12 +114,14 @@
       {
         "title": "Statistics South Africa — Mid-Year Population Estimates 2025",
         "url": "https://www.statssa.gov.za/?p=18613",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "SIL Ethnologue — Venda (ven)",
         "url": "https://www.ethnologue.com/language/ven/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

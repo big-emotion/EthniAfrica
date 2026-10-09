@@ -103,12 +103,14 @@
       {
         "title": "UNESCO — Gadaa System, inscribed 2016",
         "url": "https://www.unesco.org/archives/multimedia/document-4375",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNESCO ICH — Fichee-Chambalaalla (contexte Cushitique regional)",
         "url": "https://ich.unesco.org/en/RL/fichee-chambalaalla-new-year-festival-of-the-sidama-people-01054",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "SIL Ethnologue — Oromo (orm)",

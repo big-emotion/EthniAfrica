@@ -103,12 +103,14 @@
       {
         "title": "SIL Ethnologue — Ju|'hoansi language (ktz)",
         "url": "https://www.ethnologue.com/language/ktz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — South-Eastern Ju (ktz)",
         "url": "https://glottolog.org/resource/languoid/id/juho1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Ju'hoan language resources",
@@ -118,7 +120,8 @@
       {
         "title": "UNESCO Tentative List — San Living Cultural Landscape (Tsumkwe District)",
         "url": "https://whc.unesco.org/en/tentativelists/6096/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Peoples of the World — The Indigenous Juhoansi People",
@@ -128,7 +131,8 @@
       {
         "title": "Lee, Richard B. & DeVore, Irven (1976). Kalahari Hunter-Gatherers. Harvard University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Cultural Survival Quarterly — Progress or Poverty? The Dobe Ju|'hoansi",

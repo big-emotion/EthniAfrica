@@ -112,7 +112,8 @@
       {
         "title": "Ethnologue, Chaga subgroup (E.621)",
         "url": "https://www.ethnologue.com/subgroup/4196/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Social Science Research, Rewriting Chagga History",

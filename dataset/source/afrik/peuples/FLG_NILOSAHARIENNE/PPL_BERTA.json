@@ -104,7 +104,8 @@
       {
         "title": "Berta Language (WTI) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/wti/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Berta, Benishangul in Ethiopia – Joshua Project, 2024",

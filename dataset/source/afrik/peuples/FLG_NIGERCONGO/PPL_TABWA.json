@@ -102,7 +102,8 @@
       {
         "title": "Roberts, Allen F. The Rising of a New Moon: A Century of Tabwa Art. Ann Arbor: University of Michigan Museum of Art / Smithsonian Institution, 1985",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Smithsonian National Museum of African Art — The Rising of a New Moon",
@@ -112,7 +113,8 @@
       {
         "title": "Metropolitan Museum of Art — Mukisi Mupasi (ancestor figure), Tabwa peoples",
         "url": "https://www.metmuseum.org/art/collection/search/311052",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Seattle Art Museum — Balamwezi: The Rising of the New Moon",
@@ -132,7 +134,8 @@
       {
         "title": "SIL Ethnologue — Taabwa (tap)",
         "url": "https://www.ethnologue.com/language/tap/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

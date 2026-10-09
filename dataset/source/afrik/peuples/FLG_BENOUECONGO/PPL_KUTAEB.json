@@ -100,7 +100,8 @@
       {
         "title": "Ethnologue (SIL) — Kutep (kub)",
         "url": "https://www.ethnologue.com/language/kub/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Kuteb in Nigeria",
@@ -120,7 +121,8 @@
       {
         "title": "SIL International — Ethnologue 26th edition (2023), langue kub (Kutep)",
         "url": "https://www.ethnologue.com/language/kub/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

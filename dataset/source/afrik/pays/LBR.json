@@ -333,24 +333,28 @@
         "title": "UNFPA – World Population Dashboard, Libéria",
         "url": "https://www.unfpa.org/data/world-population/LR",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Fonds des Nations unies pour la population. Population totale retenue pour l'année de référence 2025."
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Division de statistique des Nations unies. Code pays et forme française du nom."
       },
       {
         "title": "Republic of Liberia, 2008 Population and Housing Census – Highlights",
         "url": "https://www.paris21.org/sites/default/files/LIBERIA_census.pdf",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Institut libérien de statistique et de services d'information géographique, avec PARIS21. Dénombrement du 21 au 30 mars 2008 : 3 476 608 habitants, répartition par comté et par ville."
       },
       {
         "title": "Banque mondiale – catalogue de microdonnées, recensement libérien de 2008",
         "url": "https://microdata.worldbank.org/index.php/catalog/2098",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Notice documentaire du recensement de 2008. Elle atteste que l'appartenance ethnique et la langue figuraient parmi les variables collectées."
       },
       {
@@ -363,36 +367,42 @@
         "title": "SIL Ethnologue – Languages of Liberia",
         "url": "https://www.ethnologue.com/country/LR/",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Summer Institute of Linguistics. Inventaire des langues du Libéria et codes ISO 639-3."
       },
       {
         "title": "Glottolog – langues du Libéria",
         "url": "https://glottolog.org/glottolog/language.map.html?country=LR",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Institut Max-Planck d'anthropologie évolutionniste. Rattachement des langues du pays à leurs familles."
       },
       {
         "title": "Fred P. M. van der Kraaij, Liberia in the 19th Century: From American Colony to African Republic",
         "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "African Studies Centre Leiden, 2026, ISBN 9789054482093, consultable en ligne. Relève des emplois du nom « Liberia » antérieurs à l'attribution couramment retenue de 1824."
       },
       {
         "title": "African Studies Centre Leiden – présentation de l'ouvrage de Fred P. M. van der Kraaij",
         "url": "https://ascleiden.nl/news/liberia-19th-century-american-colony-african-republic",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Notice de l'éditeur, 20 juillet 2026."
       },
       {
         "title": "Maryland State Archives – notice biographique de Robert Goodloe Harper",
         "url": "https://msa.maryland.gov/megafile/msa/speccol/sc3500/sc3520/002000/002031/html/02031bio.html",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Archives d'État du Maryland. Carrière de Robert Goodloe Harper (1765-1825) ; la notice rattache à son nom la ville de Harper, et non le nom du pays."
       },
       {
         "title": "U.S. Department of State, Office of the Historian — Founding of Liberia, 1847",
         "url": "https://history.state.gov/milestones/1830-1860/liberia",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Société fondée en 1816 par un groupe d'Américains blancs ; en 1821, un officier de marine contraint un dirigeant local à céder du territoire ; l'établissement est nommé Liberia et sa capitale Monrovia en l'honneur du président James Monroe, qui avait obtenu des fonds publics pour le projet ; indépendance déclarée en 1847."
       },
       {

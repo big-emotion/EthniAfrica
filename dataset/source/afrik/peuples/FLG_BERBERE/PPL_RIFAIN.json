@@ -108,12 +108,14 @@
       {
         "title": "Ethnologue — Tarifit (rif)",
         "url": "https://www.ethnologue.com/language/rif/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Omniglot — Riffian language and alphabet",
         "url": "https://www.omniglot.com/writing/riffian.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Berber, Rif in Morocco",

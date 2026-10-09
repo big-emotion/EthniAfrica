@@ -88,12 +88,14 @@
       {
         "title": "About Zambia – Western Province Provincial Administration",
         "url": "https://www.wes.gov.zm/?page_id=1186",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Kwangwa – Glottolog kwan1275",
         "url": "https://glottolog.org/resource/languoid/id/kwan1275",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

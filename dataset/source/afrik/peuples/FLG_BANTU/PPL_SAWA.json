@@ -130,23 +130,27 @@
       {
         "title": "SIL Ethnologue — Duala (dua)",
         "url": "https://www.ethnologue.com/language/dua",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "VertigO — Le Ngondo chez les peuples Sawa du Cameroun",
         "url": "https://journals.openedition.org/vertigo/2685",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Henry John Drewal, Mami Wata: Arts for Water Spirits in Africa and Its Diasporas",
         "url": "https://fowler.ucla.edu/exhibitions/mami-wata-arts-for-water-spirits-in-africa-and-its-diasporas/",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Monographie et exposition du Fowler Museum, UCLA, 2008, commissaire invité Henry John Drewal ; consultée le 10 septembre 2026."
       },
       {
         "title": "Alex van Stipriaan, Watramama/Mami Wata: Three Centuries of Creolization of a Water Spirit in West Africa, Suriname and Europe",
         "url": "https://brill.com/abstract/journals/mata/27/1/article-p321_321.xml",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Revue Matatu, volumes 27-28, 2003 ; travail universitaire indépendant de celui de Drewal, consulté le 10 septembre 2026."
       }
     ]

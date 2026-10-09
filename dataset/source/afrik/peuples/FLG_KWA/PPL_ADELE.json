@@ -78,7 +78,8 @@
       {
         "title": "Omniglot - Adele language and alphabet, 2023",
         "url": "https://www.omniglot.com/writing/adele.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Adele in Ghana",
@@ -88,7 +89,8 @@
       {
         "title": "Ethnologue - Adele Language (ADE)",
         "url": "https://www.ethnologue.com/language/ade/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "PeopleGroups.org - Adele of Ghana",

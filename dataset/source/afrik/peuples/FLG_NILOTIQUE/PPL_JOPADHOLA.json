@@ -93,7 +93,8 @@
       {
         "title": "Owor, Maureen (2012). Creating an Independent Traditional Court: A Study of Jopadhola Clan Courts in Uganda. Journal of African Law, 56/2, pp 215-242",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Oboth-Ofumbi, A.C.K. (1959). Silver Tanga Padhola. East African Literature Bureau, Nairobi",
@@ -103,7 +104,8 @@
       {
         "title": "Ethnologue — Jopadhola (ADH)",
         "url": "https://www.ethnologue.com/language/adh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

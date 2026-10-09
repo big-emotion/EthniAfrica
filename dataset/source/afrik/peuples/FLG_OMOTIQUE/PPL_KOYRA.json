@@ -90,7 +90,8 @@
       {
         "title": "SIL Ethnologue — Gamo-Gofa-Dawro language [gmv] (similarites lexicales avec Koyra mentionnees)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Day Translations / Ethnologue — Ethiopia Profile: Koorete alternate names including Koyra",
@@ -100,17 +101,20 @@
       {
         "title": "Ethiopian Central Statistical Agency — Summary and Statistical Report of the 2007 Population and Housing Census. Addis Ababa, 2008",
         "url": null,
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Glottolog — Ometo languages (classification des varietes ometo incluant le Koyra)",
         "url": "https://glottolog.org/resource/languoid/id/omet1241",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Cambridge University Press — The Omotic Language Family, Cambridge Handbook of Linguistic Typology",
         "url": "https://www.cambridge.org/core/books/cambridge-handbook-of-linguistic-typology/omotic-language-family/376C86AD112F0E4C5F5677AE4F3DB5FA",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

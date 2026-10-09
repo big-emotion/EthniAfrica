@@ -89,7 +89,8 @@
       {
         "title": "SIL Ethnologue — Luba-Kasai (lua)",
         "url": "https://www.ethnologue.com/language/lua/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "IJREHC — Luba People and Politeness in their Everyday Speeches",
@@ -109,7 +110,8 @@
       {
         "title": "Wikimedia Commons — Tshiluba language",
         "url": "https://commons.wikimedia.org/wiki/Category:Tshiluba_language",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

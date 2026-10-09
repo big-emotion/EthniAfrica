@@ -92,7 +92,8 @@
       {
         "title": "Gumuz Language (GUK) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/guk/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Wolde-Selassie Abbute, Gumuz and Highland Resettlers – Ethiopian Studies, 2004",
@@ -107,7 +108,8 @@
       {
         "title": "Ahland, Colleen – A grammar of Northern and Southern Gumuz (these de PhD), University of Oregon, 2004",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

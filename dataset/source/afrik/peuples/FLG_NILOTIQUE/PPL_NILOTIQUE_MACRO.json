@@ -139,17 +139,20 @@
       {
         "title": "SIL Ethnologue — Nilotic language family",
         "url": "https://www.ethnologue.com/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Nilotic",
         "url": "https://glottolog.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ehret, Christopher. A Historical-Comparative Reconstruction of Nilo-Saharan. Cologne: Rudiger Koppe Verlag, 2001",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Evans-Pritchard, E. E. The Nuer. Oxford: Clarendon Press, 1940",
@@ -159,7 +162,8 @@
       {
         "title": "Spear, T. & Waller, R. (eds.). Being Maasai. London: James Currey, 1993",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Lienhardt, G. Divinity and Experience: The Religion of the Dinka. Oxford: Clarendon Press, 1961",
@@ -169,7 +173,8 @@
       {
         "title": "CIA World Factbook — South Sudan, Kenya, Uganda, Tanzania, Ethiopia",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Joshua Project — Nilotic peoples profiles",

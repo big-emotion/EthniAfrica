@@ -95,12 +95,14 @@
       {
         "title": "Glottolog – Antankarana Malagasy (xmv)",
         "url": "https://glottolog.org/resource/languoid/id/anta1255",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue – Malagasy subgroup",
         "url": "https://www.ethnologue.com/subgroup/1795/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes – Antankarana",
@@ -110,7 +112,8 @@
       {
         "title": "CIA World Factbook – Madagascar",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

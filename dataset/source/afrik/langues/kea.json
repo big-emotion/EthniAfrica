@@ -23,18 +23,21 @@
         "title": "Glottolog 5.3 - Kabuverdianu",
         "url": "https://glottolog.org/resource/languoid/id/kabu1256",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à kabu1256, hors languoids portant leur propre code ISO 639-3."
       },
       {
         "title": "Wikipédia (anglais) — Kabuverdianu",
         "url": "https://en.wikipedia.org/wiki/Kabuverdianu",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Page lue en ligne : les noms formels et d'usage courant de la langue, et le nom proposé pour sa standardisation, donné sans source."
       },
       {
         "title": "Wikipédia (anglais) — Cape Verde",
         "url": "https://en.wikipedia.org/wiki/Cape_Verde",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Section sur le nom du pays, lue en ligne : le cap de la côte sénégalaise et la date de 1444."
       }
     ]

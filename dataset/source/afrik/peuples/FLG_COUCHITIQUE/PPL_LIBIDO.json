@@ -84,12 +84,14 @@
       {
         "title": "SIL Ethnologue — Libido (liq)",
         "url": "https://www.ethnologue.com/language/liq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Libido (libi1250)",
         "url": "https://glottolog.org/resource/languoid/id/libi1250",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Maraqo in Ethiopia",
@@ -99,7 +101,8 @@
       {
         "title": "Getachew & Jima — A History of the Mareko People (Southern Ethiopia), Jimma University repository, 2017",
         "url": "https://repository.ju.edu.et/bitstream/handle/123456789/1309/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Maaga Indigenous Conflict Resolution Institution among Libido People. International Journal of Scientific and Research Publications, 2016",

@@ -102,12 +102,14 @@
       {
         "title": "Tishkoff et al., The Genetic Structure and History of Africans and African Americans – Science, 2009",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue, Arabic, Gulf (afb) – SIL International 2024",
         "url": "https://www.ethnologue.com/language/afb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

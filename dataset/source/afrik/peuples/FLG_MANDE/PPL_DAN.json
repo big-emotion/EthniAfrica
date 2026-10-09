@@ -108,17 +108,20 @@
       {
         "title": "Daniel B. Reed, Dan Ge Performance: Masks and Music in Contemporary Cote d'Ivoire, Indiana University Press, 2003",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Hugo Zemp, Musique dan : la musique dans la pensee et la vie sociale d'une societe africaine, Mouton, La Haye, 1971",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Dan – Glottolog 5.3",
         "url": "https://glottolog.org/resource/languoid/id/dann1241",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes – The Dan",

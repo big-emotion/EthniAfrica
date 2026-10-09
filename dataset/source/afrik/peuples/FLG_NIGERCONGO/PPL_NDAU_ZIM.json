@@ -95,7 +95,8 @@
       {
         "title": "SIL Ethnologue — Ndau language (ndc)",
         "url": "https://www.ethnologue.com/language/ndc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CITE Zimbabwe — The Ndau people of Zimbabwe",
@@ -105,7 +106,8 @@
       {
         "title": "South African History Online — Mfecane",
         "url": "https://sahistory.org.za/article/mfecane-understanding-period-transformation-southern-africa",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Constitution of Zimbabwe Amendment (No. 20) Act 2013 — reconnaissance du chiNdau comme langue officielle",

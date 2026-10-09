@@ -112,12 +112,14 @@
       {
         "title": "UNFPA — Burundi Population 2025",
         "url": "https://www.unfpa.org/data/world-population/BI",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Ethnologue (SIL) — Rundi [run]",
         "url": "https://www.ethnologue.com/language/run/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "World Population Review — Burundi Population 2026",
@@ -132,7 +134,8 @@
       {
         "title": "Accord d'Arusha pour la Paix et la Réconciliation au Burundi, 2000",
         "url": "https://peacemaker.un.org/burundi-arusha-agreement2000",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

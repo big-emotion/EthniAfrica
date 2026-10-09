@@ -354,12 +354,14 @@
       {
         "title": "Ethnologue — Jola-Fogny (dyo)",
         "url": "https://www.ethnologue.com/language/dyo/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Jola-Felupe (eja)",
         "url": "https://www.ethnologue.com/language/eja/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

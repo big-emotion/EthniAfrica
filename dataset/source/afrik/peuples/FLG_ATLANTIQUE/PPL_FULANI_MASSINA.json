@@ -107,17 +107,20 @@
       {
         "title": "Ba, Amadou Hampâté & Daget, Jacques — L'Empire peul du Macina (1818-1853). IFAN/Mouton, 1962",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Robinson, David — The Holy War of Umar Tal, ch. 8 « Maasina: Conquest and Revolt, 1862-4 ». Clarendon Press, 1985",
         "url": "https://www.webpulaaku.site/defte/david_robinson/pt2ch8.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Brown, William A. — « Toward a Chronology for the Caliphate of Hamdullahi (Māsina) ». Cahiers d'Études africaines 8(31), 1968, p. 428-434",
         "url": "https://www.persee.fr/doc/cea_0008-0055_1968_num_8_31_3136",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Fulani, Maasina in Mali",
@@ -127,17 +130,20 @@
       {
         "title": "SIL Ethnologue — Fulfulde, Maasina (ffm)",
         "url": "https://www.ethnologue.com/language/ffm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Seydou, Christiane — La poesie pastorale peule. Karthala, 1977",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ba, Amadou Hampâté — Aspects de la civilisation africaine. Presence Africaine, 1972",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

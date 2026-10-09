@@ -98,17 +98,20 @@
       {
         "title": "Glottolog — Koyra Chiini Songhay (khq)",
         "url": "https://glottolog.org/resource/languoid/id/koyr1240",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO — Tombouctou (patrimoine mondial)",
         "url": "https://whc.unesco.org/fr/list/119",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook — Mali",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       }
     ]
   }

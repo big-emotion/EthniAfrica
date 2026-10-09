@@ -104,17 +104,20 @@
       {
         "title": "eHRAF World Cultures — Lakeshore Tonga (fr07)",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fr07/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Tonga (tog, Malawi)",
         "url": "https://www.ethnologue.com/language/tog/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Cochrane, Thandeka — Politics of Literature in Malawi: Filemon Chirwa, Nthanu za Chitonga and the Battle for the Atonga Tribal Council. Cambridge University Press, 2022",
         "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/28B6EEE65784897FB1F5BF9B06B550BA/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Malawi Project — Customs, Traditions, and Religion in the Tribes of Malawi",

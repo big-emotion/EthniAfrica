@@ -99,12 +99,14 @@
       {
         "title": "Guro language and alphabet – Omniglot, 2025",
         "url": "https://www.omniglot.com/writing/guro.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Guro Language (GOA) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/goa/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "RTI Officiel – 2 minutes pour comprendre les Gouro, 2021",

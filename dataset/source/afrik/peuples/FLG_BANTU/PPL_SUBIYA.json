@@ -121,12 +121,14 @@
       {
         "title": "Subia – Justapedia",
         "url": "https://justapedia.org/wiki/Subia_people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Glottolog — Subiya (subi1246)",
         "url": "https://glottolog.org/resource/languoid/id/subi1246",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

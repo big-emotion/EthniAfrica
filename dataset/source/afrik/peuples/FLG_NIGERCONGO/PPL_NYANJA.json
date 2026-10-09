@@ -112,12 +112,14 @@
       {
         "title": "UNESCO ICH — Gule Wamkulu",
         "url": "https://ich.unesco.org/en/RL/gule-wamkulu-00142",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Ethnologue SIL — Chichewa (nya)",
         "url": "https://www.ethnologue.com/language/nya/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Chewa people",
@@ -132,7 +134,8 @@
       {
         "title": "UNESCO — Gule Wamkulu safeguarding project",
         "url": "https://ich.unesco.org/en/projects/safeguarding-of-the-gulu-wamkulu-the-great-dance-of-the-chewa-people-00027",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

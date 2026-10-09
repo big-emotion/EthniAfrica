@@ -116,12 +116,14 @@
       {
         "title": "Ethnologue, Yoruba (yor)",
         "url": "https://www.ethnologue.com/language/yor",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog, Yoruba",
         "url": "https://glottolog.org/resource/languoid/id/yoru1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project, Yoruba in Sierra Leone",
@@ -136,7 +138,8 @@
       {
         "title": "UNESCO, Patrimoine culturel immateriel Ifa (2005) et Gelede (2003)",
         "url": "https://ich.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Britannica, Oyo Empire",
@@ -152,6 +155,7 @@
         "title": "Wikidata — Yoruba people (Q190168)",
         "url": "https://www.wikidata.org/wiki/Q190168",
         "tier": "referenced",
+        "source_kind": "community",
         "notes": "Structured identifier catalogue, used only for the wikidataId cross-reference; associated countries (Nigeria, Benin, Togo) match currentCountries."
       }
     ]

@@ -95,12 +95,14 @@
       {
         "title": "Glottolog — Amkoe (ǂHoan) language entry (huc)",
         "url": "https://glottolog.org/resource/languoid/id/hoaa1235",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Heine, Bernd & Honken, Henry (2010). The Kx'a Family: A New Khoisan Genealogy. Journal of Asian and African Studies 79: 5-36",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Batibo, Herman M. (2005). Language Decline and Death in Africa. Multilingual Matters. (cite dans Glottolog)",
@@ -110,17 +112,20 @@
       {
         "title": "Moumakwa, Tshiamiso V. & Monaka, Kemmonye C. (2017). Speakers living and languages dying: The endangerment of !Xoo and oHua in Botswana. University of Namibia Repository",
         "url": "https://repository.unam.edu.na/bitstreams/9844648c-ce29-49ac-9a94-2ae8e4594fd1/download",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Complex Ancient Genetic Structure and Cultural Transitions in Southern African Populations. PMC5223510",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5223510/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Kx'a language subgroup",
         "url": "https://www.ethnologue.com/subgroup/4285/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

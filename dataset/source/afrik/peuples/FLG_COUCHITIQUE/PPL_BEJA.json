@@ -110,12 +110,14 @@
       {
         "title": "SIL Ethnologue — Beja language (bej)",
         "url": "https://www.ethnologue.com/language/bej/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ISO 639-3 Language Codes — CEDS",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

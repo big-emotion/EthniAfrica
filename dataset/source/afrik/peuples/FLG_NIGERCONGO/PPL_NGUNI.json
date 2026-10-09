@@ -137,27 +137,32 @@
       {
         "title": "South African History Online — Zulu",
         "url": "https://sahistory.org.za/article/zulu",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Ethnologue SIL — Zulu (zul)",
         "url": "https://www.ethnologue.com/language/zul/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue SIL — Xhosa (xho)",
         "url": "https://www.ethnologue.com/language/xho/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO — Isicathamiya (Zulu choral music)",
         "url": "https://ich.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Statistics South Africa — Census 2022",
         "url": "https://www.statssa.gov.za/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

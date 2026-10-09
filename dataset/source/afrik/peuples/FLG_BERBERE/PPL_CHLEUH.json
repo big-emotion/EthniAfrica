@@ -98,7 +98,8 @@
       {
         "title": "Ethnologue SIL International - Tachelhit (shi)",
         "url": "https://www.ethnologue.com/language/shi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "IRCAM (Institut Royal de la Culture Amazighe, Rabat)",
@@ -113,12 +114,14 @@
       {
         "title": "eHRAF World Cultures Yale - Shluh (Chleuh)",
         "url": "https://ehrafworldcultures.yale.edu/cultures/mw11/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Recensement HCP Maroc 2024",
         "url": "https://www.hcp.ma/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

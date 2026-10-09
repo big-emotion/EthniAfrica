@@ -117,12 +117,14 @@
       {
         "title": "SIL Ethnologue — Swahili (swa)",
         "url": "https://www.ethnologue.com/language/swa/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO World Heritage — Stone Town of Zanzibar",
         "url": "https://whc.unesco.org/en/list/173/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Joshua Project — Swahili in United States",
@@ -132,12 +134,14 @@
       {
         "title": "CIA World Factbook — Tanzania",
         "url": "https://www.cia.gov/the-world-factbook/countries/tanzania/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Kenya",
         "url": "https://www.cia.gov/the-world-factbook/countries/kenya/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Krapf, J. L., Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect, Tübingen, L. F. Fues, 1850",
@@ -155,6 +159,7 @@
         "title": "Robinson, Morgan J., « History of the Standard Swahili Language », Oxford Research Encyclopedia of African History, 2024",
         "url": "https://doi.org/10.1093/acrefore/9780190277734.013.1012",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article publié en ligne le 30 janvier 2024, lu en texte intégral. Source du passage sur l'origine arabe du nom."
       }
     ]

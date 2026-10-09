@@ -94,12 +94,14 @@
       {
         "title": "Koeppe Verlag — Kaulinge's History of Kwanyama",
         "url": "https://www.koeppe.de/titel_print_healing-the-land-kaulinge-s-history-of-kwanyama",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "eHRAF World Cultures — Ovambo summary",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fx08/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

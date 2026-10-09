@@ -116,17 +116,20 @@
       {
         "title": "SIL Ethnologue — Klao language (klu)",
         "url": "https://www.ethnologue.com/language/klu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Liberia",
         "url": "https://www.cia.gov/the-world-factbook/countries/liberia/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Zogbo, Lynell Marchese — Kru revisited, Kru revealed (LLACAN/CNRS)",
         "url": "https://llacan.cnrs.fr/fichiers/nigercongo/fichiers/Zogbo_Kru.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Encyclopædia Britannica, 11e édition (1911) — Krumen",

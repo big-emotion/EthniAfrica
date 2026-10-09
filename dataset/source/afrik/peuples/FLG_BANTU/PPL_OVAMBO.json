@@ -95,27 +95,32 @@
       {
         "title": "SIL Ethnologue — Kwanyama (kua)",
         "url": "https://www.ethnologue.com/language/kua",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Ndonga (ndo)",
         "url": "https://www.ethnologue.com/language/ndo",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Namibia",
         "url": "https://www.cia.gov/the-world-factbook/countries/namibia/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "South African History Archive — The Namibian struggle for independence 1966-1990",
         "url": "https://sahistory.org.za/article/namibian-struggle-independence-1966-1990-historical-background",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Namibia Statistics Agency — Population and Housing Census 2011",
         "url": "https://nsa.org.na",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

@@ -85,7 +85,8 @@
       {
         "title": "Harvey A., Gorwaa (Tanzania) – Language Documentation and Description Journal",
         "url": "https://www.lddjournal.org/article/1200/galley/2445/download/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Harvey A., Toward a description of the Gorwaa language, 2018",
@@ -95,12 +96,14 @@
       {
         "title": "Gorwaa Language (GOW) – Ethnologue",
         "url": "https://www.ethnologue.com/language/gow/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog : Gorwaa goro1270",
         "url": "https://glottolog.org/resource/languoid/id/goro1270",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -101,42 +101,50 @@
       {
         "title": "Glottolog — Turkana (tuv)",
         "url": "https://glottolog.org/resource/languoid/id/turk1308",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Turkana (TUV)",
         "url": "https://www.ethnologue.com/language/tuv/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "eHRAF World Cultures — Turkana",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fl17/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Gulliver, P.H. 1955. The Family Herds: A Study of Two Pastoral Tribes in East Africa, the Jie and Turkana. London: Routledge",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Gulliver, P.H. 1958. The Turkana age organization. American Anthropologist 60:900-922",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Lamphear, John. 1992. The Scattering Time: Turkana Responses to Colonial Rule. Oxford University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnology (Pitt) — The Filial Disaffection of a Turkana Age-Set",
         "url": "https://ethnology.pitt.edu/ojs/index.php/Ethnology/article/download/6085/6290",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — Kenya",
         "url": "https://www.cia.gov/the-world-factbook/countries/kenya/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }
