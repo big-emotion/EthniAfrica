@@ -4402,7 +4402,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // spelling note was moved out of its self-appellation.
   // 7005 -> 7004 on 2026-10-07: PPL_BAOULE gained `spellingAliases` for the
   // 19th-century spellings its sources attest.
-  peuple: 7004,
+  // 7004 -> 6995 on 2026-10-10: PPL_JOLA, a duplicate of PPL_DIOLA, was
+  // folded into it and retired with the model keys it lacked.
+  peuple: 6995,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next

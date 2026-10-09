@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 import { withSentryConfig } from "@sentry/nextjs/config";
 
+import { RETIRED_PEOPLE_IDS } from "./src/lib/afrik/retiredPeopleIds";
+
 const nextConfig: NextConfig = {
   // Production is self-hosted on a VPS in a Docker image that carries no
   // node_modules: the runner stage copies `.next/standalone` and nothing else.
@@ -87,6 +89,14 @@ const nextConfig: NextConfig = {
         destination: "/fr/atlas/noms/PAT_CAMARA",
         permanent: true,
       },
+      // The fiche pages redirect a retired people id themselves; the API has
+      // no page to do it, and would serve the stale row until a prune and a
+      // 404 after. Built from the same ledger, so a merge redirects both.
+      ...Object.entries(RETIRED_PEOPLE_IDS).map(([retiredId, successorId]) => ({
+        source: `/api/v2/peoples/${retiredId}/:rest*`,
+        destination: `/api/v2/peoples/${successorId}/:rest*`,
+        permanent: true,
+      })),
     ];
   },
 };

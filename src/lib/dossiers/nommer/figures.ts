@@ -66,7 +66,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     label: "fiches de peuple",
     // 772 -> 770 on 2026-10-03: the two Bissa duplicates (PPL_BUSSA, PPL_BUSANSI)
     // were merged into PPL_BISSA through the retired-identifiers ledger.
-    value: 770,
+    // 770 -> 769 on 2026-10-10: PPL_JOLA folded into PPL_DIOLA the same way.
+    value: 769,
     method: `nombre de fichiers ${PEOPLE_GLOB}`,
     countedOn: COUNTED_ON,
   },
@@ -76,7 +77,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     label: "noms donnés de l’extérieur",
     // 3122 -> 3117 on 2026-10-03: the Bissa merge removed six exonyms with the two
     // retired fiches and added one (Busanga, as the Kusasi use it).
-    value: 3117,
+    // 3117 -> 3116 on 2026-10-10: PPL_JOLA's two exonyms left with the fiche,
+    // and PPL_MALINKE gained a bare « Mandingue ».
+    value: 3116,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -95,7 +98,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // grouping whose own source calls the term an outsiders' category over
     // independent peoples; it now declares the absence with `null`, like the other
     // macro-group fiches.
-    value: 758,
+    value: 757,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,
@@ -113,7 +116,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
       "fiches déclarant leur appellation contestée ou héritée de la colonisation",
     // 444 -> 443 on 2026-10-03: PPL_BUSANSI, the one "contested" Bissa fiche, was
     // merged into PPL_BISSA, which declares no status.
-    value: 443,
+    value: 442,
     method:
       "fiches dont classificationStatus vaut contested (253) ou colonial-legacy (190)",
     countedOn: COUNTED_ON,
@@ -144,7 +147,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     label: "fiches employant le radical « colonial »",
     // 243 -> 242 on 2026-10-07: PPL_HADZA no longer calls Kangeju colonial, which no source read says.
     // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
-    value: 237,
+    value: 236,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -165,7 +168,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 183 -> 182 on 2026-10-03: the Frafra explanation no longer says the "British
     // administrators" heard the greeting; its source gives missionaries in one
     // account and the British in a variant, so the sentence follows the source.
-    value: 182,
+    value: 181,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },

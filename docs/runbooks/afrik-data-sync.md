@@ -471,7 +471,8 @@ counts above are non-zero, the rows are present and RLS is blocking the read —
 A merge or rename of a `PPL_*` id is decided in git, in
 `dataset/source/afrik/_retired-identifiers.json`: the retired fiche is deleted, its successor
 absorbs it, every inbound reference is repointed, and the fiche page redirects the old URL to
-the successor's. `validateAfrikData.ts` (FR27 Retired identifiers) refuses a ledger whose retired
+the successor's. `next.config.ts` builds the API's redirects from the same ledger:
+`/api/v2/peoples/{retired}` and its sub-routes answer 308 to the successor's. `validateAfrikData.ts` (FR27 Retired identifiers) refuses a ledger whose retired
 ids still have a fiche or whose successors do not. None of that touches a database, and the
 automated syncs never pass `--prune`, so after the merge lands each target still serves the
 retired rows until a human removes them — in two steps, recette first, then production.
@@ -552,8 +553,8 @@ npx tsx --conditions=react-server scripts/migrateAfrikToDatabase.ts --target=pro
 npx tsx --conditions=react-server scripts/migrateAfrikToDatabase.ts --target=production --prune --apply
 ```
 
-Then the SQL above, through the tunnel. Forgetting this step leaves the retired rows served by
-`/api/v2/peoples/{id}` and listed in the sitemap while the pages redirect elsewhere.
+Then the SQL above, through the tunnel. Forgetting this step leaves the retired rows listed in
+the sitemap and the list endpoints while the pages and `/api/v2/peoples/{id}` redirect elsewhere.
 
 ---
 
