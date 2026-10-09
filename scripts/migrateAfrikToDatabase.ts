@@ -25,7 +25,6 @@ import {
   type LanguageLoadReport,
 } from "@/lib/afrik/loaders/languageProvenanceLoader";
 import { loadAllPeoples } from "@/lib/afrik/loaders/peopleLoader";
-import { loadNameRecords } from "@/lib/afrik/loaders/nameRecordJsonLoader";
 import {
   loadPeopleAppellations,
   emptyAppellationLoadReport,
@@ -134,7 +133,6 @@ export interface MigrationReport {
   relations: MigrationSectionReport;
   peopleRelations: PeopleRelationsSectionReport;
   migrations: MigrationSectionReport;
-  names: MigrationSectionReport;
   appellations: AppellationLoadReport;
   persons: MigrationSectionReport;
   patronymes: PatronymeLoadReport;
@@ -191,7 +189,6 @@ export function emptyMigrationReport(): MigrationReport {
     relations: { total: 0, inserted: 0, errors: [] },
     peopleRelations: { total: 0, inserted: 0, errors: [], orphans: [] },
     migrations: { total: 0, inserted: 0, errors: [] },
-    names: { total: 0, inserted: 0, errors: [] },
     appellations: emptyAppellationLoadReport(),
     persons: { total: 0, inserted: 0, errors: [] },
     dossiers: { total: 0, inserted: 0, chapters: 0, errors: [] },
@@ -871,7 +868,6 @@ const EDITORIAL_STAGES = [
   "relations",
   "peopleRelations",
   "migrations",
-  "names",
   "appellations",
   "persons",
 ] as const;
@@ -1092,15 +1088,10 @@ export async function migrateAfrikToDatabase(
   report.migrations.inserted = migrationsReport.inserted;
   report.migrations.errors = migrationsReport.errors;
 
-  // Derived first, hand-sourced dossiers second: loadNameRecords upserts on
-  // the same (entity, name, type) key, so a noms/ entry overwrites the
-  // weaker record derived from the fiche rather than competing with it.
+  // The hand-sourced noms/ records were folded into their fiches'
+  // nameHistory (REQ-196), which the people loader projects onto
+  // name_history and the readers prefer over these derived rows.
   report.appellations = await loadPeopleAppellations(supabase, peoples);
-
-  const namesReport = await loadNameRecords(supabase);
-  report.names.total = namesReport.total;
-  report.names.inserted = namesReport.inserted;
-  report.names.errors = [...namesReport.errors, ...namesReport.dropped];
 
   const peopleRelationRecords = loadAllRelationFiles();
   const peopleRelationsReport = await loadRelations(
@@ -1170,7 +1161,6 @@ export async function migrateAfrikToDatabase(
       relations: report.relations,
       peopleRelations: report.peopleRelations,
       migrations: report.migrations,
-      names: report.names,
       appellations: {
         total: report.appellations.total,
         inserted: report.appellations.inserted,

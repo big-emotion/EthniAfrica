@@ -40,7 +40,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "referenced",
     sourceKind: "repository",
     notes:
-      "Le corpus lui-même : dataset/source/afrik/noms/PPL_HERERO.json. Cité pour la formulation du contre-exemple, dont la prudence est reprise mot pour mot.",
+      "La fiche du peuple Herero : dataset/source/afrik/peuples/FLG_BANTU/PPL_HERERO.json. Citée pour la formulation du contre-exemple, dont la prudence est reprise mot pour mot.",
     discoveredVia: [],
   },
   "afrik-ppl-dinka": {

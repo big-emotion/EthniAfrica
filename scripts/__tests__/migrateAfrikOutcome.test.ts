@@ -19,6 +19,15 @@ function reportWith(overrides: Partial<MigrationReport> = {}): MigrationReport {
   return { ...emptyMigrationReport(), ...overrides };
 }
 
+describe("the sync's stages", () => {
+  // The noms/ records were folded into their fiches' nameHistory, which the
+  // fiche loaders already project onto name_history (REQ-196).
+  // @req REQ-196
+  it("has no noms/ name-record stage left to report", () => {
+    expect(emptyMigrationReport()).not.toHaveProperty("names");
+  });
+});
+
 describe("classifySyncOutcome", () => {
   // @req REQ-032
   it("passes a load that delivered the corpus with no defects", () => {

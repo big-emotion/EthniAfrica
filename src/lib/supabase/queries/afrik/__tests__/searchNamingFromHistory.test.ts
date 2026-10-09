@@ -3,12 +3,9 @@
  * name_records rows (REQ-196, ARCH-028), and the fold of noms/ into the
  * fiches must leave what it shows unchanged.
  */
-import { readdirSync, readFileSync } from "fs";
-import { join } from "path";
 import { describe, expect, it, vi } from "vitest";
 
 import { normalizeToKey } from "@/lib/normalize";
-import { parseNameRecordFile } from "@/lib/afrik/parsers/nameRecordParser";
 import type { SearchEvidence } from "@/lib/search/evidence";
 import type { SearchNameRecord } from "@/lib/search/naming";
 import {
@@ -16,20 +13,11 @@ import {
   searchNamingKey,
 } from "@/lib/supabase/queries/afrik/searchNaming";
 import type { NameRecordDossier } from "@/types/names";
-import { foldNameRecordDossier } from "../../../../../../scripts/foldNameRecords";
-
-const NOMS_ROOT = join(process.cwd(), "dataset", "source", "afrik", "noms");
-const NOMS_FILES = readdirSync(NOMS_ROOT).filter((file) =>
-  file.endsWith(".json")
-);
-
-function dossierOf(file: string): NameRecordDossier {
-  const parsed = parseNameRecordFile(
-    JSON.parse(readFileSync(join(NOMS_ROOT, file), "utf-8"))
-  );
-  if (!parsed.success) throw new Error(JSON.stringify(parsed.errors));
-  return parsed.data;
-}
+import {
+  FOLDED_RECORD_FILES,
+  ficheNameHistory,
+  foldedRecord,
+} from "@/lib/afrik/__tests__/fixtures/foldedNameRecords";
 
 function thenableQuery(result: { data: unknown; error: unknown }) {
   const query: Record<string, ReturnType<typeof vi.fn>> & {
@@ -135,10 +123,10 @@ function without<T extends object>(value: T, ...keys: string[]) {
 
 describe("search naming — a people's nameHistory", () => {
   // @req REQ-196
-  it.each(NOMS_FILES)(
+  it.each(FOLDED_RECORD_FILES)(
     "%s: the folded history shows the names its name records showed",
     async (file) => {
-      const dossier = dossierOf(file);
+      const dossier = foldedRecord(file);
       const key = searchNamingKey("people", dossier.id);
       const subjects = [{ type: "people" as const, id: dossier.id }];
 
@@ -156,7 +144,7 @@ describe("search naming — a people's nameHistory", () => {
           subjects,
           client({
             peoples: [
-              { id: dossier.id, name_history: foldNameRecordDossier(dossier) },
+              { id: dossier.id, name_history: ficheNameHistory(dossier.id) },
             ],
           }) as never
         )
@@ -173,14 +161,14 @@ describe("search naming — a people's nameHistory", () => {
 
   // @req REQ-196
   it("shows each name once when the rows still hold the folded record", async () => {
-    const dossier = dossierOf("PPL_IGBO.json");
+    const dossier = foldedRecord("PPL_IGBO.json");
 
     const result = (
       await loadSearchNamingData(
         [{ type: "people", id: dossier.id }],
         client({
           peoples: [
-            { id: dossier.id, name_history: foldNameRecordDossier(dossier) },
+            { id: dossier.id, name_history: ficheNameHistory(dossier.id) },
           ],
           ...recordTables(dossier),
         }) as never

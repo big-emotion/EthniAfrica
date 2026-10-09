@@ -22,7 +22,7 @@ const STORY_SWEEP_LANES = 4;
 // axe-core's built-in `valid-lang` allowlist covers ISO 639-1 plus only a
 // narrow subset of ISO 639-3, missing African-language codes this app
 // legitimately renders via `lang` attributes (UX-DR38, ISO 639-3 is the
-// AFRIK language identifier standard — see nameRecordParser.ts). Extend the
+// AFRIK language identifier standard — see nameHistoryParser.ts). Extend the
 // built-in list rather than replace it, so genuinely invalid `lang` values
 // are still caught. `validLangs` isn't part of axe-core's public TS types.
 const AXE_UTILS = axeCore.utils as unknown as { validLangs: () => string[] };

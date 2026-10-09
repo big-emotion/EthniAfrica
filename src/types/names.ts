@@ -1,34 +1,17 @@
 /**
- * Name-record types - TypeScript definitions for AFRIK name records (Epic 8, FR55-FR57)
- *
- * Mirrors public/modele-nom.json exactly.
+ * Name-record types - the shape of a `name_records` row and of what its
+ * readers consume (Epic 8, FR55-FR57). The noms/ files that once held it were
+ * folded into the fiches' nameHistory (REQ-196); nameHistoryRecords.ts
+ * projects a block back into this shape.
  */
 
 import type { PeopleId } from "@/types/afrik";
 import type { SourceTier } from "@/types/sources";
-import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 
 // @req REQ-135
 export const NAME_RECORD_ENTITY_TYPES = ["people", "patronyme"] as const;
 
 export type NameRecordEntityType = (typeof NAME_RECORD_ENTITY_TYPES)[number];
-
-/**
- * The subject types a `noms/` file may describe (public/modele-nom.json).
- * `word` is the free type for a word whose history explains Africa through its
- * names without fitting another fiche (REQ-196).
- */
-// @req REQ-196
-export const NAME_RECORD_FILE_ENTITY_TYPES = [
-  "people",
-  "language",
-  "languageFamily",
-  "country",
-  "word",
-] as const;
-
-export type NameRecordFileEntityType =
-  (typeof NAME_RECORD_FILE_ENTITY_TYPES)[number];
 
 export type PatronymeId = `PAT_${string}`;
 
@@ -83,9 +66,8 @@ export interface NameAttestation {
 
 export interface NameRecordDossier {
   id: PeopleId | PatronymeId | string;
-  entityType: NameRecordEntityType | NameRecordFileEntityType;
+  entityType: NameRecordEntityType;
   names: NameRecordEntry[];
-  nameHistory?: NameHistory;
 }
 
 /**
