@@ -303,3 +303,15 @@ those incoming changes; this batch does not modify that inherited baseline.
 The integrated full-suite rerun reports 10,072 passing tests, the same two
 pre-existing failures and 21 skips. Type checking and source lint also pass on
 that integrated version (30 existing lint warnings, no errors).
+
+### Merge verification — 2026-10-09
+
+The Khoe restoration check is now resolved without increasing its anchor budget.
+Three new failing cases first reproduced the mismatch between `1200` and French
+`1 200` (ordinary, nonbreaking and narrow nonbreaking spaces). Anchor comparison
+now ignores these numeric grouping spaces, while the same tests still reject
+`1 201`. The Khoe migration paragraph also retains the archive's designation
+“pasteurs khoe-kwadi” and explains it as communities of herders speaking those
+languages. Both restoration suites pass all 15 tests, and the Khoe fiche passes
+the strict plain-language check with no errors or warnings. The unrelated local
+Bissa migration log remains untouched.
