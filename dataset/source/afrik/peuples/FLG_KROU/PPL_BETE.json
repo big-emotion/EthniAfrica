@@ -194,5 +194,399 @@
         "notes": "Textes non consultés : la thèse Magwé et le groupe Gadi sont connus par le compte rendu de Jean-Pierre Dozon (La société bété, 1985, p. 43 et 353-354). Gadi est détaillé dans le texte de 1982."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bété désigne un peuple de langues krou du centre-ouest de la Côte d'Ivoire, autour de Daloa, Gagnoa et Soubré, qui se nomme aujourd'hui lui-même Bété. Avant la conquête coloniale, ses groupes se désignaient par les noms de leurs tribus, et un autre nom, Tshien, a servi au début de la colonisation. Les sources ne s'accordent pas sur l'origine du nom Bété ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bété",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit pour la première fois vers 1901 ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis 1901 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Bété désigne aujourd'hui sans ambiguïté un peuple et un territoire du centre-ouest de la Côte d'Ivoire, selon Jean-Pierre Dozon. Ce peuple ne formait pas une unité politique avant la colonisation, et l'origine de son nom est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Bété : une création coloniale",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/b_fdi_18-19/25531.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 58-59",
+                "notes": "Dans Au cœur de l'ethnie, sous la direction de Jean-Loup Amselle et Elikia M'Bokolo, La Découverte, lu dans le texte publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1982,
+              "label": "1969-1982"
+            },
+            "statement": "Le nom Bété se voit opposer celui de Magwé, que l'historien Louhoy Téty Gauze donne en 1969, puis en 1982, à un groupe ancien d'où descendraient les Bété et d'autres peuples du sud-ouest. Jean-Pierre Dozon y lit une solution de rechange à un nom trop lié à l'histoire coloniale ; aucune des personnes qu'il a interrogées à Gagnoa ne lui a cité ce nom.",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43 et p. 353-354",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1935,
+              "label": "Autour des années 1930"
+            },
+            "statement": "Le nom Bété prend alors un sens large : il ne désigne plus seulement les habitants du triangle Soubré-Daloa-Gagnoa, mais un ensemble dont l'unité semble seulement linguistique, selon Jean-Pierre Dozon.",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 270-271",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1912,
+              "label": "Conquête militaire, 1907-1912"
+            },
+            "statement": "Le nom Bété est presque absent des rapports militaires de la conquête autour de Gagnoa : les officiers français y nomment les groupes par les noms de leurs tribus, comme les Koukouezo, les Gbassi, les Niabré, les Paccolo ou les Zabia, selon Jean-Pierre Dozon.",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44-45",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD."
+              },
+              {
+                "title": "Les Bété : une création coloniale",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/b_fdi_18-19/25531.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63",
+                "notes": "Dans Au cœur de l'ethnie, sous la direction de Jean-Loup Amselle et Elikia M'Bokolo, La Découverte, lu dans le texte publié par l'IRD. L'auteur date la conquête de 1907 à 1912."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "1903"
+            },
+            "statement": "Le nom Bété est écrit « Bêtés », en grandes lettres espacées, sur la carte de la mission Thomann publiée par le Journal des voyages : il couvre une vaste zone de forêt, de Sokolo jusqu'à l'est de Soubré.",
+            "formAsWritten": "Bêtés",
+            "sources": [
+              {
+                "title": "Journal des voyages, n° 340, 7 juin 1903 — carte de la mission Thomann",
+                "author": "Journal des voyages",
+                "year": 1903,
+                "url": "https://commons.wikimedia.org/wiki/File:Itin%C3%A9raire_Mission_Thomann_1902_de_Sassandra_%C3%A0_S%C3%A9gu%C3%A9la,_C%C3%B4te_d%27Ivoire.jpg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 21",
+                "notes": "Carte imprimée, lue sur sa numérisation le 9 octobre 2026. Le numéro, la date et la page viennent de la description de la numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1903,
+              "label": "1901-1903"
+            },
+            "statement": "Le nom Bété apparaît par écrit dans les comptes rendus d'expédition de Georges Thomann, administrateur colonial du cercle du Sassandra, publiés en 1901 et 1903 ; il l'écrit « beré » et l'emploie pour un pays qu'il connaît à peine, selon Jean-Pierre Dozon. C'est la plus ancienne trace de ce nom que le projet connaît. Les groupes qu'il désigne vivaient déjà là avant lui.",
+            "formAsWritten": "beré",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Georges Thomann",
+                "role": "administrateur colonial, auteur des comptes rendus d'expédition"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 262-263",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD. L'auteur cite Georges Thomann, À la Côte d'Ivoire : le Sassandra (1901) et De Sassandra à Séguéla (1903) ; nous n'avons pas lu ces textes nous-mêmes."
+              },
+              {
+                "title": "Les Bété : une création coloniale",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/b_fdi_18-19/25531.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59-60, note 7",
+                "notes": "Dans Au cœur de l'ethnie, sous la direction de Jean-Loup Amselle et Elikia M'Bokolo, La Découverte, lu dans le texte publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "statement": "Le nom Bété est absent du récit de voyage du capitaine Binger, paru en 1892 : pour cette partie du pays, il ne mentionne que les peuples de la côte, fréquentés depuis des siècles par les navigateurs, selon Jean-Pierre Dozon.",
+            "before": true,
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 261",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1900,
+              "label": "Avant la conquête coloniale"
+            },
+            "statement": "Le nom Bété est alors inconnu autour de Gagnoa : chaque groupe se désigne par le nom de sa tribu, selon les personnes interrogées par Jean-Pierre Dozon.",
+            "before": true,
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44-45",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD. Récit recueilli par l'auteur auprès d'informateurs de la région de Gagnoa, qu'il ne nomme pas."
+              },
+              {
+                "title": "Les Bété : une création coloniale",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/b_fdi_18-19/25531.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59",
+                "notes": "Dans Au cœur de l'ethnie, sous la direction de Jean-Loup Amselle et Elikia M'Bokolo, La Découverte, lu dans le texte publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1913,
+              "label": "Pendant la conquête, 1905-1913"
+            },
+            "statement": "Le nom Bété viendrait de l'expression « bete o bete o », « paix » ou « pardon », que les vaincus répétaient à chaque soumission et que les Français auraient prise pour un nom de peuple, selon des personnes interrogées à Gagnoa par Jean-Pierre Dozon.",
+            "hypothesisGroup": "origine du nom Bété",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD. Récit recueilli par l'auteur auprès d'informateurs de la région de Gagnoa, qu'il ne nomme pas."
+              },
+              {
+                "title": "Les Bété : une création coloniale",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/b_fdi_18-19/25531.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59",
+                "notes": "Dans Au cœur de l'ethnie, sous la direction de Jean-Loup Amselle et Elikia M'Bokolo, La Découverte, lu dans le texte publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1913,
+              "label": "Pendant la conquête, 1905-1913"
+            },
+            "statement": "Le nom Bété aurait d'abord désigné les groupes situés plus à l'ouest, autour de Daloa, et ne serait arrivé à Gagnoa qu'avec la conquête, selon d'autres personnes interrogées à Gagnoa par Jean-Pierre Dozon, qui juge les deux explications compatibles.",
+            "hypothesisGroup": "origine du nom Bété",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD. Récit recueilli par l'auteur auprès d'informateurs de la région de Gagnoa, qu'il ne nomme pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1904,
+              "label": "1901-1904"
+            },
+            "statement": "Le nom Bété serait issu des classements linguistiques des administrateurs coloniaux Georges Thomann et Maurice Delafosse, selon Jean-Pierre Dozon, qui note qu'on ignore comment ils ont construit cet ensemble.",
+            "hypothesisGroup": "origine du nom Bété",
+            "sources": [
+              {
+                "title": "Les Bété : une création coloniale",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/b_fdi_18-19/25531.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59-60, note 7, et p. 63",
+                "notes": "Dans Au cœur de l'ethnie, sous la direction de Jean-Loup Amselle et Elikia M'Bokolo, La Découverte, lu dans le texte publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1982,
+              "to": 1982,
+              "label": "Proposée en 1982"
+            },
+            "statement": "Le nom Bété viendrait des Européens, les Français l'ayant plus ou moins repris aux Anglais, selon Louhoy Téty Gauze, que rapporte Jean-Pierre Dozon. Nous n'avons pas lu le texte de Louhoy Téty Gauze.",
+            "hypothesisGroup": "origine du nom Bété",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 353",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD. L'auteur résume Louhoy Téty Gauze, Histoire des Magwé, Godo-Godo, numéro spécial, 1982."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tshien",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Gouro, semble-t-il",
+        "shortLine": "Un nom donné au début de la colonisation aux Bété de Gagnoa et de Daloa ; il a disparu.",
+        "periodLabel": "Début de la période coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Début de la période coloniale"
+            },
+            "statement": "Le nom Tshien désigne, au début de la colonisation, une partie du pays bété : les monographies coloniales distinguent les Tshien du Nord, entre Daloa et Vavoua, et les Tshien du Sud, autour de Gagnoa, selon Jean-Pierre Dozon.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 268",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD."
+              },
+              {
+                "title": "Les Bété : une création coloniale",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/b_fdi_18-19/25531.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 60-61",
+                "notes": "Dans Au cœur de l'ethnie, sous la direction de Jean-Loup Amselle et Elikia M'Bokolo, La Découverte, lu dans le texte publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Tshien viendrait des Gouro, qui l'employaient semble-t-il pour désigner leurs voisins du sud, selon Jean-Pierre Dozon.",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 45 et p. 270",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Après la conquête"
+            },
+            "statement": "Le nom Tshien sert encore quelques années pour la région de Gagnoa, le « secteur tshien », puis tombe en désuétude, sans doute avec l'essor des plantations : les gens de Gagnoa sont alors appelés Bété, comme ceux de Daloa et de Soubré, selon Jean-Pierre Dozon.",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 270",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
