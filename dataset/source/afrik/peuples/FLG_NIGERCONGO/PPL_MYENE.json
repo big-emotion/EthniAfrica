@@ -102,7 +102,8 @@
       {
         "title": "Britannica — Gabon",
         "url": "https://www.britannica.com/place/Gabon",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Soul-O-Travels — Gabonese Republic History (Mpongwe and Orungu historical kingdoms)",

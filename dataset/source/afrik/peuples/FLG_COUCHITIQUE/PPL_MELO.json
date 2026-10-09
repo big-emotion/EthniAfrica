@@ -74,12 +74,14 @@
       {
         "title": "Melo in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13668",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Melo language resources – Joshua Project, 2025",
         "url": "https://joshuaproject.net/languages/mfx",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ISO 639-3 Language Codes – SIL International / CEDS",
@@ -95,7 +97,8 @@
       {
         "title": "Melo of Ethiopia – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg011618/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

@@ -114,7 +114,8 @@
       {
         "title": "Chopi in Mozambique – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/11368",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "UNESCO – Chopi Timbila (Representative List of the Intangible Cultural Heritage of Humanity, 2008)",
@@ -136,7 +137,8 @@
       {
         "title": "Smithsonian Folkways – Music from Mozambique Vol. 2: Chopi Timbila",
         "url": "https://folkways.si.edu/music-from-mozambique-vol-2-chopi-timbila-two-orchestral-performances/world/album/smithsonian",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "archive"
       },
       {
         "title": "UNESCO / Programme Routes de la Soie — Chopi Timbila",

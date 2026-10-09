@@ -99,17 +99,20 @@
       {
         "title": "Minority Rights Group — Democratic Republic of the Congo",
         "url": "https://minorityrights.org/country/democratic-republic-of-the-congo/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Britannica — People of the Democratic Republic of the Congo",
         "url": "https://www.britannica.com/place/Democratic-Republic-of-the-Congo/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Congo, Democratic Republic of people groups",
         "url": "https://joshuaproject.net/countries/cg",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Gorilla Highlands — The Bantu (contexte DRC-Ouganda)",

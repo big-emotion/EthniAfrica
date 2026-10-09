@@ -101,7 +101,8 @@
       {
         "title": "Britannica — KwaZulu",
         "url": "https://www.britannica.com/place/KwaZulu",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Statistics South Africa — Mid-year population estimates 2025",

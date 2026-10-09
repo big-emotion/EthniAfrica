@@ -96,7 +96,8 @@
       {
         "title": "Britannica — Bamileke",
         "url": "https://www.britannica.com/topic/Bamileke",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "101LastTribes — Bamileke people",
@@ -112,7 +113,8 @@
       {
         "title": "Encyclopedia.com — Bamileke",
         "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bamileke",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "GoNOMAD Travel — Bamileke Region of Cameroon",

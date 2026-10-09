@@ -275,12 +275,14 @@
         "title": "Krapf, J. L., Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect, Tübingen, L. F. Fues, 1850",
         "url": "https://archive.org/details/krapf-outline-of-the-elements-of-the-kisuaheli-language",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Lu sur la numérisation d'archive.org (texte reconnu automatiquement). Source des graphies Kisuaheli et Suahili, et des trois explications du nom données page 10 : saua hila, Süḥel et Sahel, cette dernière jugée « the most correct » par l'auteur."
       },
       {
         "title": "The Travels of Ibn Battuta, A.D. 1325-1354, traduit par H. A. R. Gibb, vol. II, Cambridge, Hakluyt Society, 1962",
         "url": "https://archive.org/details/travelsofibnbatt02harg",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Lu sur la numérisation d'archive.org (texte reconnu automatiquement) ; le texte arabe n'a pas été consulté. Page 378 : « the country of the Sawahil [Coastlands] », où se trouve Kilwa. Le traducteur donne au mot le sens de côte."
       }
     ]

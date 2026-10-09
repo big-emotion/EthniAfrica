@@ -76,12 +76,14 @@
       {
         "title": "Fipa in Tanzania – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/11211",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Fipa – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Fipa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Fipa tribe – Africa 101 Last Tribes",

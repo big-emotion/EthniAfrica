@@ -117,12 +117,14 @@
       {
         "title": "Traill, A. (1998) – *The Khoisan Languages*. In: *Encyclopædia Britannica*",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Traill, A. (2005) – *Khoisan languages*. In: *Encyclopædia Britannica Online*",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Sands, B. (1998) – *Eastern and Southern African Khoisan: Evaluating Claims of Distant Linguistic Relationships*. Cologne: Rüdiger Köppe Verlag",
@@ -173,7 +175,8 @@
       {
         "title": "\"Khoisan languages\" – *Encyclopædia Britannica*",
         "url": "https://www.britannica.com/topic/Khoisan-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "\"Famille khoïsane\" – *Aménagement linguistique dans le monde (AXL-Cefan)*",

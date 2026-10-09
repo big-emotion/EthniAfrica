@@ -133,12 +133,14 @@
       {
         "title": "Joshua Project — Daasanach in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/14549/ET",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Daasanach in Kenya",
         "url": "https://joshuaproject.net/people_groups/14549/KE",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Daasanach language (dsh)",
@@ -160,7 +162,8 @@
       {
         "title": "Daasanach of Ethiopia – Horn of Africa Evangelical Mission",
         "url": "https://hornofafrica.org/wp-content/uploads/2019/12/Daasanach.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

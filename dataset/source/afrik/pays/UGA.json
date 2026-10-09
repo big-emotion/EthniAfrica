@@ -270,6 +270,7 @@
         "title": "CIA World Factbook – Uganda (ethnic groups)",
         "url": "https://web.archive.org/web/20260115/https://www.cia.gov/the-world-factbook/countries/uganda/",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Répartition des groupes ethniques d'après l'estimation de 2014, lue dans une copie archivée de janvier 2026 ; la publication a cessé d'être mise à jour début 2026. Les Banyoro et les Batooro n'y sont pas nommés. Wikipédia reprend cette liste avec 9,8 % pour les Banyankole ; la copie archivée donne 9,6 %."
       }
     ],

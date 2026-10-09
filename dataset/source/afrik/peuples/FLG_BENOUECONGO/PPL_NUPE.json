@@ -92,7 +92,8 @@
       {
         "title": "Britannica — Nupe",
         "url": "https://www.britannica.com/topic/Nupe",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ethnologue (SIL) — Nupe-Nupe-Tako (nup)",
@@ -115,7 +116,8 @@
       {
         "title": "Britannica — Bida (Nigeria), histoire de l'emirat de Bida",
         "url": "https://www.britannica.com/topic/Nupe",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

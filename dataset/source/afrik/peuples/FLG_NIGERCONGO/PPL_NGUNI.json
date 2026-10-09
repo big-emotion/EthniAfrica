@@ -132,7 +132,8 @@
       {
         "title": "Britannica — Nguni peoples",
         "url": "https://www.britannica.com/topic/Nguni",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "South African History Online — Zulu",

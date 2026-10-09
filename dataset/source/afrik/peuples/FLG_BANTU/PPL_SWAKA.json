@@ -72,12 +72,14 @@
       {
         "title": "Swaka in Zambia – Joshua Project 2025",
         "url": "https://joshuaproject.net/people_groups/15146",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Swaka of Zambia – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015635/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Factors Contributing to Language Endangerment of Minority Languages – Science Publishing Group, 2018",

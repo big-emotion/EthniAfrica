@@ -264,12 +264,14 @@
         "title": "David et Charles Livingstone, Narrative of an Expedition to the Zambesi and its Tributaries, Londres, John Murray, 1865",
         "url": "https://archive.org/details/narrativeofexpe00livi",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Donne « nyanja ou nyanza » pour un nom commun désignant un marais, un lac, une rivière ou un ruisseau, et rapporte l'épisode où la troupe, demandant le grand lac, est menée à un marécage qui porte ce nom pour le guide. Mentionne par ailleurs un lac Maravi connu des sources portugaises. Volume lu en fac-similé le 9 septembre 2026."
       },
       {
         "title": "Jean-Baptiste Bourguignon d'Anville, Afrique, publiée sous les auspices de Monseigneur le Duc d'Orléans, gravé par Guillaume Delahaye, Paris, 1749",
         "url": "https://gallica.bnf.fr/ark:/12148/btv1b53053165w",
         "tier": "official",
+        "source_kind": "archive",
         "notes": "Carte conservée et numérisée par la Bibliothèque nationale de France. C'est le type de carte sur lequel les biographes de Banda situent le choix du nom. L'exemplaire numérisé a été localisé le 9 septembre 2026 ; le libellé Lac Maravi n'a pas été lu sur l'image elle-même."
       },
       {
@@ -283,6 +285,7 @@
         "title": "David Clement Scott, A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa, Édimbourg, Foreign Mission Committee of the Church of Scotland, 1892",
         "url": "https://archive.org/details/acyclopdicdicti00commgoog",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Ne connaît pas la racine lawi. Donne chirangali et kwiri pour la flamme de feu, et glose « Malawi » comme le mot yao signifiant demain, le mang'anja disant mawa. Entrées lues en fac-similé le 9 septembre 2026."
       },
       {

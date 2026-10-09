@@ -102,12 +102,14 @@
       {
         "title": "PeopleGroups.org — Madi of Uganda",
         "url": "https://peoplegroups.org/people_groups/pg015114/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Ma'adi in South Sudan",
         "url": "https://joshuaproject.net/people_groups/13196/OD",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Uganda Bureau of Statistics — Madi Sub Region Census 2024 Report",

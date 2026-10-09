@@ -293,7 +293,8 @@
       {
         "title": "Britannica — Bantu peoples",
         "url": "https://www.britannica.com/topic/Bantu-peoples",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "History Guild — The Bantu Migration",

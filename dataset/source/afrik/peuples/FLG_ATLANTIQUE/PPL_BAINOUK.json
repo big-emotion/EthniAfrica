@@ -120,7 +120,8 @@
       {
         "title": "Joshua Project. Bainouk, Gunyaamolo in Senegal",
         "url": "https://joshuaproject.net/people_groups/10665/SG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Sorosoro. Le baynunk",

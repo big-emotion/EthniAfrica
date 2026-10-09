@@ -267,18 +267,21 @@
         "title": "Mungo Park, Travels in the Interior Districts of Africa, Londres, W. Bulmer, 1799, chapitre XV et appendice de James Rennell",
         "url": "https://archive.org/details/travelsininteri00park",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Le chapitre XV donne le nom mandingue du fleuve, Joliba, traduit « la grande eau ». L'appendice de James Rennell tient « Niger » pour un terme romain signifiant le fleuve des populations noires, rapporte les noms arabes et maures Neel Abeed et Neel Kebeer, et une forme Guin ou Fin qu'il lit chez al-Idrisi. Édition de 1799 lue en fac-similé le 9 septembre 2026 ; les pages ne sont pas données, le volume numérisé n'en portant pas de numérotation lisible à ces endroits."
       },
       {
         "title": "Samuel Johnson, The History of the Yorubas, Londres, George Routledge & Sons, 1921",
         "url": "https://archive.org/details/the-history-of-the-yorubas-from-the-earliest-times-to-the-beginning-of-the-british-protectorate",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Écrit par un pasteur yoruba. Le chapitre sur la religion établit que le fleuve est consacré à Ọya, épouse divinisée de Ṣàngó, et qu'il porte pour cette raison le nom d'Ọpo Ọya dans tout le pays yoruba. Passage lu en fac-similé le 9 septembre 2026."
       },
       {
         "title": "Sigismund Wilhelm Koelle, African Native Literature, or Proverbs, Tales, Fables and Historical Fragments in the Kanuri or Bornu Language, Londres, Church Missionary House, 1854",
         "url": "https://archive.org/details/africannativelit00koel",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Le vocabulaire kanuri-anglais glose « si Koarabe » comme un affluent du Niger, ce qui donne la forme kanuri Koara pour le fleuve. La forme n'y figure qu'une fois et n'a pas d'entrée propre. Volume lu en fac-similé le 9 septembre 2026."
       },
       {
@@ -297,6 +300,7 @@
         "title": "CIA World Factbook, Niger, rubrique Ethnic groups (estimation de 2006), copie datée du 15 janvier 2026",
         "url": "https://web.archive.org/web/20260115233241/https://www.cia.gov/the-world-factbook/countries/niger",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Estimation, pas un recensement : « Hausa 53,1 %, Zarma/Songhai 21,2 %, Touareg 11 %, Peul 6,5 %, Kanuri 5,9 %, Gurma 0,8 %, Arabes 0,4 %, Toubou 0,4 %, autres ou inconnus 0,9 % ». Les Zarma et les Songhai sont comptés ensemble ; la part est portée sur les Zarma. Gurma, Arabes et autres restent dans « Autres peuples » : 1,9 % est le complément des parts listées, car les chiffres du Factbook totalisent 100,2 %. Le Factbook a cessé de paraître le 4 février 2026 ; copie lue le 6 octobre 2026."
       }
     ],

@@ -149,12 +149,14 @@
         "title": "René Butaye, Dictionnaire kikongo-français, français-kikongo, 1910",
         "url": "https://archive.org/details/dictionnaire-butaye",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Dictionnaire publié, auteur identifié, consultable en ligne le 10 septembre 2026. Lexicographie missionnaire de la période coloniale, donc une description extérieure à la société décrite. Donne nzambi comme Être Suprême, zumbi comme fétiche bienfaisant et mvumbi comme cadavre."
       },
       {
         "title": "J. D. Cordeiro da Matta, Ensaio de diccionario kimbúndu-portuguez, 1893",
         "url": "https://archive.org/details/ensaiodediccion00mattgoog",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Dictionnaire du kimbundu par un auteur angolais, publié à Lisbonne en 1893, consulté le 10 septembre 2026. Donne nzumbi comme l'âme d'un mort qui revient en paix, par opposition à celle qui poursuit les vivants."
       },
       {

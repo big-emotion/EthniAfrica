@@ -123,7 +123,8 @@
       {
         "title": "IWGIA — Indigenous Peoples in Africa: Botswana",
         "url": "https://www.iwgia.org/en/botswana.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "Statistics Botswana — Population & Housing Census 2022",

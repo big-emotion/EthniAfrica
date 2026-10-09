@@ -538,6 +538,7 @@
         "title": "CIA World Factbook – Ghana",
         "url": "http://web.archive.org/web/20260118103813/https://www.cia.gov/the-world-factbook/countries/ghana/",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Publication de référence de l'agence de renseignement américaine sur les pays du monde ; le site a cessé d'être mis à jour début 2026, la page consultée est une copie archivée de janvier 2026."
       },
       {
@@ -572,6 +573,7 @@
         "title": "Kimble, David — A Political History of Ghana: The Rise of Gold Coast Nationalism, 1850–1928",
         "url": "https://archive.org/details/politicalhistory0000kimb",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Étude historique de référence sur la politique coloniale de la Côte-de-l'Or entre 1850 et 1928, publiée par Oxford University Press en 1963."
       },
       {
@@ -592,6 +594,7 @@
         "title": "Encyclopaedia Africana — Ghana",
         "url": "https://encyclopaediaafricana.com/ghana/",
         "tier": "referenced",
+        "source_kind": "encyclopedia",
         "notes": "Article de l'encyclopédie en ligne : il attribue à J. B. Danquah la suggestion du nom, situe l'ancien royaume entre le Sahara et les hauts cours du Sénégal et du Niger, juge douteuse la preuve d'une filiation akan et donne le 6 mars 1957 pour la date à laquelle le nom a été pris."
       },
       {
@@ -636,18 +639,21 @@
         "title": "Pacheco Pereira, Duarte — Esmeraldo de situ orbis (vers 1505-1508), traduction de G. H. T. Kimble",
         "url": "https://archive.org/details/in.ernet.dli.2015.280017",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Traduction anglaise publiée par la Hakluyt Society en 1937 ; livre II, chapitres 4 et 5 : le lieu de traite d'or de Samaa, \"at that time called Mina\", en janvier 1471, et le château de São Jorge da Mina, 1482."
       },
       {
         "title": "De Marees, Pieter — Beschryvinghe ende historische verhael van het Gout koninckrijck van Gunea, anders de Gout-Custe de Mina genaemt (1602)",
         "url": "https://archive.org/details/beschryvingheend00mare",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Édition de la Linschoten-Vereeniging d'un ouvrage néerlandais de 1602 ; le titre appelle la côte \"Gout-Custe de Mina\"."
       },
       {
         "title": "Bosman, William — A New and Accurate Description of the Coast of Guinea (1705)",
         "url": "https://archive.org/details/newaccuratedescr00bosm",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Traduction anglaise, publiée en 1705, d'un ouvrage écrit en néerlandais ; l'exemplaire consulté est une réédition en fac-similé de 1907. La lettre I décrit la \"Gold-Coast\" comme une partie de la Guinée."
       },
       {

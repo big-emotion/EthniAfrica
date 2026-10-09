@@ -125,7 +125,8 @@
       {
         "title": "Britannica – \"Central Sudanic languages\", \"Nilo-Saharan languages / Linguistic characteristics\". Encyclopaedia Britannica",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Santandrea, Stefano (1976) – Travaux sur Yulu et groupe Kresh",

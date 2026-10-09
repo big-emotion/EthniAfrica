@@ -104,12 +104,14 @@
       {
         "title": "Minority Rights Group – Coastal minorities including Benadiri, Bajuni and Bravans in Somalia , mis a jour novembre 2024",
         "url": "https://minorityrights.org/communities/benadiri/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Joshua Project – Arab in Somalia",
         "url": "https://joshuaproject.net/people_groups/10375/SO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ibn Battuta – Rihla (Voyages), XIV e siecle (description du Sultanat de Mogadiscio)",

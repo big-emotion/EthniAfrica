@@ -97,7 +97,8 @@
       {
         "title": "Encyclopaedia Britannica, article Bulu",
         "url": "https://www.britannica.com/topic/Bulu",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "101 Last Tribes, Bulu people",
@@ -113,7 +114,8 @@
       {
         "title": "PeopleGroups.org, Bulu of Cameroon",
         "url": "https://peoplegroups.org/people_groups/pg012558/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

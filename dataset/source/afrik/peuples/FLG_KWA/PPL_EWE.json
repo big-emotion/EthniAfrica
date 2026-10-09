@@ -105,12 +105,14 @@
       {
         "title": "Joshua Project — Ewe people group",
         "url": "https://joshuaproject.net/people_groups/11169",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Encyclopaedia Britannica — Ewe",
         "url": "https://www.britannica.com/topic/Ewe-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "GhanaWeb — The fascinating history and culture of the Ewe",

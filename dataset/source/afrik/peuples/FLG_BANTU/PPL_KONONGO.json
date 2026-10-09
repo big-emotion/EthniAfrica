@@ -72,17 +72,20 @@
       {
         "title": "Konongo in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/12785",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Konongo of Tanzania – IMB International Mission Board",
         "url": "https://www.imb.org/55-in-5-resource/konongo-of-tanzania/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Konongo of Tanzania – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg014967/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ISO 639-3 Language Code List – Wiktionary / Ethnologue",
@@ -93,7 +96,8 @@
       {
         "title": "Bantu, Central-Tanzania People Cluster – Joshua Project",
         "url": "https://www.joshuaproject.net/clusters/341",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Glottolog — Konongo-Ruwila (kono1265)",

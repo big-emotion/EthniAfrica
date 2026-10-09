@@ -111,12 +111,14 @@
       {
         "title": "Joshua Project — Lunda in Angola",
         "url": "https://joshuaproject.net/people_groups/13153/AO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Lunda in DRC",
         "url": "https://joshuaproject.net/people_groups/13153/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Victor Turner — The Ritual Process: Structure and Anti-Structure. Aldine, Chicago, 1969",

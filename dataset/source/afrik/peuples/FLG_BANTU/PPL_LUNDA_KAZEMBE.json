@@ -98,12 +98,14 @@
       {
         "title": "Kazembe – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/place/Kazembe",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Luba-Lunda states – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/place/Luba-Lunda-states",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Kazembe Lunda – Zambia's Traditional History",
@@ -113,7 +115,8 @@
       {
         "title": "Joshua Project – Lunda, Luapula in Zambia, 2025",
         "url": "https://joshuaproject.net/countries/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

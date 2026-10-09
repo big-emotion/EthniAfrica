@@ -102,12 +102,14 @@
       {
         "title": "Encyclopaedia Britannica — Ndebele (Zimbabwean people)",
         "url": "https://www.britannica.com/topic/Ndebele-Zimbabwean-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Encyclopaedia Britannica — Lobengula",
         "url": "https://www.britannica.com/biography/Lobengula",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "South African History Online — Ndebele",
@@ -118,12 +120,14 @@
       {
         "title": "EBSCO Research Starters — Lobengula",
         "url": "https://www.ebsco.com/research-starters/history/lobengula",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Ndebele, Tabele in Zimbabwe",
         "url": "https://joshuaproject.net/people_groups/13275/ZI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Northern Ndebele (nde)",

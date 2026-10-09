@@ -161,12 +161,14 @@
       {
         "title": "Britannica : Benue-Congo languages",
         "url": "https://www.britannica.com/topic/Benue-Congo-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "EBSCO Research Starters : Benue-Congo Languages",
         "url": "https://www.ebsco.com/research-starters/language-and-linguistics/benue-congo-languages",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "LanguagesGulper : Benue-Congo Languages",

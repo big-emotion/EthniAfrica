@@ -99,7 +99,8 @@
       {
         "title": "Britannica – Mzilikazi",
         "url": "https://www.britannica.com/biography/Mzilikazi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue – Ndebele (nde)",

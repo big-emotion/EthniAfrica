@@ -137,7 +137,8 @@
       {
         "title": "Cultural Survival Quarterly (2010). Foragers to First Peoples: The Kalahari San Today",
         "url": "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/foragers-first-peoples-kalahari-san-today",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       }
     ]
   }

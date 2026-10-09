@@ -86,12 +86,14 @@
       {
         "title": "Joshua Project – Vidunda in Tanzania",
         "url": "https://www.joshuaproject.net/people_groups/15789",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org – Vidunda of Tanzania PG015055",
         "url": "https://peoplegroups.org/people_groups/pg015055/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

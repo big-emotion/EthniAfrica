@@ -77,12 +77,14 @@
       {
         "title": "Encyclopaedia Britannica – Zaramo",
         "url": "https://www.britannica.com/topic/Zaramo",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Encyclopedia.com – Zaramo",
         "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/zaramo",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Africa 101 Last Tribes – Zaramo people",
@@ -92,12 +94,14 @@
       {
         "title": "Joshua Project – Zaramo in Tanzania",
         "url": "https://joshuaproject.net/people_groups/16090",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org – Zaramo of Tanzania PG015064",
         "url": "https://peoplegroups.org/people_groups/pg015064/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Gateway Africa Safaris – Zaramo Tribe",

@@ -91,7 +91,8 @@
       {
         "title": "Abure, Eyive in Cote d'Ivoire – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10141/IV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ayemou, K.F. – Aboure et Eotile : deux peuples lies par l'histoire (XVIIe-debut XXe siecles), Ziglobitha, 2021",
@@ -107,7 +108,8 @@
       {
         "title": "Cote d'Ivoire people groups – Joshua Project",
         "url": "https://joshuaproject.net/countries/iv",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

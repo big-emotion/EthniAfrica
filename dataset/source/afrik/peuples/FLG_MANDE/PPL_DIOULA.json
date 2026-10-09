@@ -113,12 +113,14 @@
       {
         "title": "Jula in Cote d'Ivoire – Joshua Project 2025",
         "url": "https://joshuaproject.net/people_groups/12375/IV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Jula people group in all countries – Joshua Project 2025",
         "url": "https://joshuaproject.net/people_groups/12375",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue, Jula [dyu]",
@@ -147,7 +149,8 @@
       {
         "title": "Minority Rights Group – Cote d'Ivoire",
         "url": "https://minorityrights.org/country/cote-divoire/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Donaldson, Coleman (2017) – Orthography, Standardization, and Register: The Case of Manding",

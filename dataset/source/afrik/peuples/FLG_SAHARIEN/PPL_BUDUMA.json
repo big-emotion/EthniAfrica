@@ -121,7 +121,8 @@
       {
         "title": "Minority Rights Group — Chad",
         "url": "https://minorityrights.org/country/chad/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "YouTube — The Buduma people, the water nomads of the Lake Chad",

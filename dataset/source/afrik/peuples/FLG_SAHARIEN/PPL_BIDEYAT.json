@@ -100,12 +100,14 @@
       {
         "title": "PeopleGroups.org — Bideyat of Chad",
         "url": "https://peoplegroups.org/people_groups/pg011322/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Minority Rights Group — Chad",
         "url": "https://minorityrights.org/country/chad/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "CIA World Factbook — Chad",

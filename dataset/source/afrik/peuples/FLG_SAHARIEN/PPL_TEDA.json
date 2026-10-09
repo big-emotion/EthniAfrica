@@ -110,17 +110,20 @@
       {
         "title": "Britannica — Teda people",
         "url": "https://www.britannica.com/topic/Teda",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Tedaga language (tuq)",
         "url": "https://joshuaproject.net/languages/tuq",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Tubu Teda in Chad",
         "url": "https://joshuaproject.net/people_groups/15316/CD",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Amara Accessibility Media — Tedaga language now supported on Amara",

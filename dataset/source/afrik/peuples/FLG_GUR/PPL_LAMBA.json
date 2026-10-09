@@ -84,12 +84,14 @@
       {
         "title": "Lama people group in all countries – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/18887",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Lama in Togo – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/18887/TO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Lamba people – Africa 101 Last Tribes",
@@ -99,7 +101,8 @@
       {
         "title": "Togo people groups – Joshua Project",
         "url": "https://joshuaproject.net/countries/to",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

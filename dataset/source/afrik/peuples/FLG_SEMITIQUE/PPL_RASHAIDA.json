@@ -87,12 +87,14 @@
       {
         "title": "Joshua Project, Rashaida in Eritrea – Joshua Project 2024",
         "url": "https://joshuaproject.net/people_groups/14523/ER",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org, Rashaida of Sudan – PeopleGroups.org 2025",
         "url": "https://peoplegroups.org/people_groups/pg012130/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Last Places, The Rashaida tribe, the most conservative tribe in Eritrea – Last Places 2024",

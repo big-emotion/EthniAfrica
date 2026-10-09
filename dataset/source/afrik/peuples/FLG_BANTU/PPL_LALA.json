@@ -94,7 +94,8 @@
       {
         "title": "PeopleGroups.org – Lala of Zambia",
         "url": "https://peoplegroups.org/people_groups/pg015588/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Lala-Bisa Language (LEB)",
@@ -105,7 +106,8 @@
       {
         "title": "Joshua Project – Zambia People Groups",
         "url": "https://joshuaproject.net/countries/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

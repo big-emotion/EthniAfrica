@@ -167,7 +167,8 @@
       {
         "title": "Britannica. African Atlantic languages",
         "url": "https://www.britannica.com/topic/African-Atlantic-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Language Gulper. Atlantic. (2014)",

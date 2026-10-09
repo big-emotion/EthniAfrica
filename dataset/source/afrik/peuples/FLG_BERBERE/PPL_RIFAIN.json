@@ -103,7 +103,8 @@
       {
         "title": "Britannica — Rif people",
         "url": "https://www.britannica.com/topic/Rif-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ethnologue — Tarifit (rif)",
@@ -120,7 +121,8 @@
       {
         "title": "Joshua Project — Berber, Rif in Morocco",
         "url": "https://joshuaproject.net/people_groups/10803/MO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Glottopedia — Rif Berber",

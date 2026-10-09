@@ -74,7 +74,8 @@
       {
         "title": "Sumbwa in Tanzania – Joshua Project 2025",
         "url": "https://joshuaproject.net/people_groups/15120",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Sumbwa – University of Missouri Ethnographic Survey",
@@ -91,7 +92,8 @@
       {
         "title": "Bantu, Central-Tanzania People Cluster – Joshua Project 2025",
         "url": "https://www.joshuaproject.net/clusters/341",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

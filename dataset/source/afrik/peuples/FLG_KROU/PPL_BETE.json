@@ -112,12 +112,14 @@
       {
         "title": "Joshua Project – Bete, Gagnoa in Côte d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/15357",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Minority Rights Group – Krou in Côte d'Ivoire",
         "url": "https://minorityrights.org/communities/krou/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Ethnologue – Bété, Daloa (bev)",

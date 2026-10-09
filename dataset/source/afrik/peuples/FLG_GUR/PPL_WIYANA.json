@@ -104,7 +104,8 @@
       {
         "title": "Britannica – Grusi",
         "url": "https://www.britannica.com/topic/Grusi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

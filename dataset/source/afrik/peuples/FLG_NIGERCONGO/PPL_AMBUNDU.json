@@ -122,7 +122,8 @@
       {
         "title": "Britannica — Mbundu people",
         "url": "https://www.britannica.com/topic/Mbundu",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue — Kimbundu (kmb)",
@@ -149,7 +150,8 @@
       {
         "title": "Kimbundu in Angola – Joshua Project",
         "url": "https://m.joshuaproject.net/people_groups/print/13154/AO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ISO 639-3 : kmb (Kimbundu) – SIL International / Ethnologue",

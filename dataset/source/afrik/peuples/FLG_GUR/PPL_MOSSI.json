@@ -121,12 +121,14 @@
       {
         "title": "Joshua Project - Mossi in Burkina Faso",
         "url": "https://joshuaproject.net/people_groups/13802/uv",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "EBSCO Research Starters - Mossi (people)",
         "url": "https://www.ebsco.com/research-starters/language-and-linguistics/mossi-people",
         "tier": "referenced",
+        "source_kind": "encyclopedia",
         "notes": "Notice encyclopédique éditorialisée, avec bibliographie. Lue intégralement le 16 septembre 2026 : le récit fondateur de Yennenga, du roi Nedega et du chasseur Rialle, les cinq royaumes mossi, la datation de la formation des royaumes à la fin du 15e siècle, les classes nakomse et nyonyose, la conquête française de 1897, et la migration forcée vers la Côte d'Ivoire et le Ghana sous l'administration coloniale."
       },
       {

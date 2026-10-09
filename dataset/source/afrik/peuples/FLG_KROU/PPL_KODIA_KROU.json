@@ -83,7 +83,8 @@
       {
         "title": "Joshua Project – Cote d'Ivoire people groups, Kwadia",
         "url": "https://joshuaproject.net/countries/iv",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Landinfo – Report Cote d'Ivoire: Ethnicity, Ivoirité and Conflict",

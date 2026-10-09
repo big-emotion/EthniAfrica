@@ -140,7 +140,8 @@
       {
         "title": "Joshua Project — Kamba people",
         "url": "https://joshuaproject.net/people_groups/11484/KE",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

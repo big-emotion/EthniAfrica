@@ -103,7 +103,8 @@
       {
         "title": "Encyclopedia.com — Lugbara Religion (Encyclopedia of Religion)",
         "url": "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/lugbara-religion",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Middleton, John. Lugbara Religion: Religion and Authority among an East African People. Oxford University Press, 1960. New ed. 1999",
@@ -114,7 +115,8 @@
       {
         "title": "Middleton, John. The Lugbara of Uganda. New York: Holt, Rinehart and Winston, 1965 (Archive.org: )",
         "url": "https://archive.org/details/lugbaraofuganda00midd",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Lugbara language (lgg)",
@@ -131,7 +133,8 @@
       {
         "title": "Joshua Project — Lugbara, High in Uganda",
         "url": "https://joshuaproject.net/people_groups/13141/UG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "WorldAtlas — Largest Ethnic Groups In Uganda",

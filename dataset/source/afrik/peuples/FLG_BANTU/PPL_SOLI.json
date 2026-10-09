@@ -82,12 +82,14 @@
       {
         "title": "Soli of Zambia – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015632/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Soli in Zambia – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/print/14977/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Manchishi, P.C. et Musona, E.T. – A Brief History of the Soli People from 1500-1900 (1990)",

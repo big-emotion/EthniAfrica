@@ -123,7 +123,8 @@
       {
         "title": "World History Encyclopedia – Wolof Empire",
         "url": "https://www.worldhistory.org/Wolof_Empire/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Agence Nationale de la Statistique et de la Demographie du Senegal (ANSD), Recensement 2023",
@@ -140,7 +141,8 @@
       {
         "title": "Joshua Project — Wolof in Senegal (2025)",
         "url": "https://joshuaproject.net/people_groups/15414/SG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Wolof Resources — The Wolof of Senegal",

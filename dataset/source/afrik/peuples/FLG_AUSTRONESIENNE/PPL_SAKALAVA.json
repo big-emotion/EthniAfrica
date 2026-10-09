@@ -113,7 +113,8 @@
       {
         "title": "Joshua Project - Sakalava in Madagascar",
         "url": "https://joshuaproject.net/people_groups/15284",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

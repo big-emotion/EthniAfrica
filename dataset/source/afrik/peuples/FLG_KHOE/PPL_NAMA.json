@@ -110,12 +110,14 @@
       {
         "title": "Encyclopaedia Britannica — Nama",
         "url": "https://www.britannica.com/topic/Nama-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Nama, Khoekhoe in Namibia",
         "url": "https://joshuaproject.net/people_groups/13931/WA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "UNESCO — Intangible Cultural Heritage : Aixan/Gana/Ob#ANS TSI //Khasigu ancestral musical sound (Namibia, 2020)",
@@ -137,7 +139,8 @@
       {
         "title": "IWGIA — The Indigenous World 2025 : Namibia",
         "url": "https://iwgia.org/en/namibia/5634-iw-2025-namibia.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       }
     ]
   }

@@ -104,7 +104,8 @@
       {
         "title": "Britannica — Khoisan languages",
         "url": "https://www.britannica.com/topic/Khoisan-languages/Classification-of-the-Khoisan-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "UNESCO Atlas of the World's Languages in Danger — Kwadi",

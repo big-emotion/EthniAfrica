@@ -66,6 +66,7 @@
           "title": "IWGIA — The Indigenous World 2023: Suriname",
           "url": "https://iwgia.org/en/suriname/5106-iw-2023-suriname.html",
           "tier": "official",
+          "source_kind": "ngo",
           "notes": "Documente le statut politique et territorial des peuples marrons du Suriname, dont les Saamaka, issu des traites coloniaux du 18e siecle."
         }
       ]
@@ -122,6 +123,7 @@
         "title": "Minority Rights Group International — Maroons in Suriname",
         "url": "https://minorityrights.org/communities/maroons/",
         "tier": "referenced",
+        "source_kind": "ngo",
         "notes": "Rapport identifiable et publie par une organisation de reference sur les droits des minorites ; distingue les Saamaka comme l'un des deux plus grands peuples marrons du Suriname et documente le traite de 1762."
       },
       {

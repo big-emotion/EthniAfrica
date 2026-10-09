@@ -111,12 +111,14 @@
       {
         "title": "Britannica — Kingdom of Loango",
         "url": "https://www.britannica.com/place/Kingdom-of-Loango",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica — Vili people",
         "url": "https://www.britannica.com/topic/Vili-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL ISO 639-3 — Vili (vif)",
@@ -133,7 +135,8 @@
       {
         "title": "Joshua Project — Vili, Fioti in Congo, Republic of the",
         "url": "https://joshuaproject.net/people_groups/15792/CF",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "African History Extra — A history of the Loango kingdom (ca.1500-1883)",

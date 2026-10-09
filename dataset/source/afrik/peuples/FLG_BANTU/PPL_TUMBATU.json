@@ -75,7 +75,8 @@
       {
         "title": "Britannica, Tumbatu people",
         "url": "https://www.britannica.com/topic/Tumbatu",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Pongwe Beach Hotel, Tumbatu Island: Sacred Shores and Hidden History",
@@ -85,12 +86,14 @@
       {
         "title": "Joshua Project, Swahili Tumbatu in Tanzania",
         "url": "https://joshuaproject.net/people_groups/15633",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org, Tumbatu of Tanzania",
         "url": "https://peoplegroups.org/people_groups/pg050321/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Essque Zalu Zanzibar, The People of Zanzibar: Ethnic Origins, Language and Religion",

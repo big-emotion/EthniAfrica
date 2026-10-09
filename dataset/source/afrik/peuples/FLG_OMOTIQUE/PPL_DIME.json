@@ -86,7 +86,8 @@
       {
         "title": "Dime in Ethiopia – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/11559/ET",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Dimé – Endangered Languages Project ELCAT",
@@ -114,7 +115,8 @@
       {
         "title": "Omotic languages – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Omotic-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Mulugeta Seyoum. 2008. A Grammar of Dime. Doctoral dissertation, Leiden University",
@@ -136,7 +138,8 @@
       {
         "title": "Joshua Project — Dime in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/11559",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Aklilu Yilma et Ralph Siebert. 2002. Sociolinguistic survey report of the Chara, Dime, Melo and Nayi languages of Ethiopia part 1. SIL Electronic Survey Reports 2002-029",

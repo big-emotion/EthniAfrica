@@ -101,12 +101,14 @@
       {
         "title": "Britannica — Kru ethnic group",
         "url": "https://www.britannica.com/topic/Kru",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "PeopleGroups.org — Kru of Liberia (PGID: PG013510)",
         "url": "https://peoplegroups.org/people_groups/pg013510/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes — Kru people",
@@ -135,6 +137,7 @@
         "title": "Encyclopædia Britannica, 11e édition (1911) — Krumen",
         "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Krumen",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Texte de l'édition de 1911, cité pour les graphies Krus et Croos."
       }
     ]

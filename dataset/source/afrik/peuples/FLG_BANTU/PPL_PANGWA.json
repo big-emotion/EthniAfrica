@@ -79,7 +79,8 @@
       {
         "title": "Pangwa in Tanzania – Joshua Project",
         "url": "https://www.joshuaproject.net/people_groups/14296",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Pangwa – Glottolog 5.3, ISO 639-3: pbr, code Guthrie G.64",

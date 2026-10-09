@@ -79,7 +79,8 @@
       {
         "title": "Joshua Project – Akan-Akwapem in Ghana, 2025",
         "url": "https://joshuaproject.net/countries/gh",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "AkanArchives – Christaller Bible Translation 1870-1872",

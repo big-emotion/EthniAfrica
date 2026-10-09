@@ -83,12 +83,14 @@
       {
         "title": "Luvale, Lwena in Angola – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13168/AO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Luvale in Zambia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13166/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

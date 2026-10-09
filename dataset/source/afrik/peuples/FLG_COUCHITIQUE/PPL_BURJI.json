@@ -96,12 +96,14 @@
       {
         "title": "Cultural Survival — Burji Recognition in the Kenya Constitution. 2010",
         "url": "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/burji-recognition-kenya-constitution",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Joshua Project — Burji in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/11027/ET",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Google Arts and Culture / National Museums of Kenya — Burji Farmers of the Desert",

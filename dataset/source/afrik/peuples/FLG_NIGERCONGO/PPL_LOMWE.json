@@ -120,7 +120,8 @@
       {
         "title": "Britannica — Malawi Ethnic Groups",
         "url": "https://www.britannica.com/place/Malawi/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Academia.edu — The Rise of Lomwe Ethnic Consciousness in Malawi, 1890-2010",

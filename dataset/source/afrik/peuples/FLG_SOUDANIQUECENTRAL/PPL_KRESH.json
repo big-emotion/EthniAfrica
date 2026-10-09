@@ -112,12 +112,14 @@
       {
         "title": "Joshua Project — Kresh in Sudan",
         "url": "https://joshuaproject.net/people_groups/11239/SU",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Kresh of South Sudan",
         "url": "https://peoplegroups.org/people_groups/pg012073/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PaanLuel Wel — How Dinka-Fertit Rivalry began in Wau (2025)",

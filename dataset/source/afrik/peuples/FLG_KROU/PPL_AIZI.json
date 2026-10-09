@@ -106,7 +106,8 @@
       {
         "title": "Joshua Project – Cote d'Ivoire people groups",
         "url": "https://joshuaproject.net/countries/iv",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

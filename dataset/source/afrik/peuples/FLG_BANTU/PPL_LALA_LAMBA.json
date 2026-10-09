@@ -90,7 +90,8 @@
       {
         "title": "Joshua Project – Zambia People Groups, Lamba",
         "url": "https://joshuaproject.net/countries/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Lamba Language LAM",
@@ -101,7 +102,8 @@
       {
         "title": "Lamba language – Chalo Chatu, Zambia Encyclopedia",
         "url": "http://chalochatu.org/Lamba_language",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "AfricaBib – Chipimpi, vulgar clans, and Lala-Lamba ethnohistory",

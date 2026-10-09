@@ -70,17 +70,20 @@
       {
         "title": "Mpoto, Nyasa in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/13846",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Mpoto language ISO mpa – Swordshare Map",
         "url": "https://map.swordshare.com/mpa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bantu, Central-Tanzania People Cluster – Joshua Project",
         "url": "https://www.joshuaproject.net/clusters/341",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Glottolog — Mpoto (mpot1240)",

@@ -140,12 +140,14 @@
       {
         "title": "Britannica — Khoisan languages, Classification",
         "url": "https://www.britannica.com/topic/Khoisan-languages/Classification-of-the-Khoisan-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "EBSCO Research Starters — Khoekhoen",
         "url": "https://www.ebsco.com/research-starters/history/khoekhoen",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "South African History Online — The Khoisan",
@@ -167,7 +169,8 @@
       {
         "title": "Joshua Project — Botswana people groups",
         "url": "https://joshuaproject.net/countries/bc",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

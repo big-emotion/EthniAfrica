@@ -58,6 +58,7 @@
           "title": "Vodou | Definition, History, West African Vodun, & Facts",
           "url": "https://www.britannica.com/topic/Vodou",
           "tier": "referenced",
+          "source_kind": "encyclopedia",
           "notes": "Encyclopedic reference work with named editorial process ; confirme l'origine fon/dahoméenne du terme et de la théologie vodou et son transfert à Saint-Domingue via la traite."
         },
         {
@@ -71,6 +72,7 @@
           "title": "Haitian Revolution | Causes, Summary, & Facts",
           "url": "https://www.britannica.com/topic/Haitian-Revolution",
           "tier": "referenced",
+          "source_kind": "encyclopedia",
           "notes": "Encyclopedic reference work avec auteurs identifiés ; utilisé pour la chronologie 1791-1804 et le rôle des Africains déportés dans le soulèvement."
         }
       ]
@@ -124,12 +126,14 @@
         "title": "Vodou | Definition, History, West African Vodun, & Facts",
         "url": "https://www.britannica.com/topic/Vodou",
         "tier": "referenced",
+        "source_kind": "encyclopedia",
         "notes": "Encyclopedic reference work avec auteurs identifiés, utilisé pour le contexte religieux et culturel général."
       },
       {
         "title": "William Seabrook, The Magic Island, 1929",
         "url": "https://archive.org/details/magicisland00seab",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Récit de voyage publié, consulté le 10 septembre 2026, par lequel le sens de mort-vivant entre en anglais. L'épisode de la compagnie sucrière est un témoignage que l'auteur dit tenir d'un habitant, non une observation directe, et il conclut lui-même que les zonbi qu'on lui a montrés étaient des malades qu'on faisait travailler."
       },
       {
@@ -150,6 +154,7 @@
         "title": "Antoine Dalmas, Histoire de la révolution de Saint-Domingue, Paris, Mame frères, 1814",
         "url": "https://archive.org/details/histoiredelarv00dalm",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Récit d'un colon, donc un regard extérieur et hostile à l'insurrection. Premier texte imprimé à décrire la cérémonie du Caïman (tome 1) : sacrifice d'un cochon noir, sang bu, poils gardés comme talismans. Boukman n'y paraît que plus loin, comme chef de bande, et Cécile Fatiman n'y figure pas. Lu le 25 septembre 2026."
       },
       {
