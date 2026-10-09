@@ -76,5 +76,110 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Lawson à un peuple au Togo. Nous n'avons pas encore consulté de source consacrée à ce nom. Lawson apparaît comme nom d'un auteur cité dans notre fiche sur les Ogbia. Cette mention ne renseigne pas sur l'origine du nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Lawson est celui d'une famille d'Aného, au Togo, qui dirige une chefferie dans cette ville. Les sources lues n'en donnent qu'une origine ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Lawson",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une famille de chefs d'Aného, au Togo, repris d'un capitaine marchand selon un historien.",
+        "periodLabel": "Écrit dès 1841 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1821,
+              "to": null,
+              "label": "Depuis 1821"
+            },
+            "statement": "Le nom Lawson est celui des chefs de Lolan, une chefferie que la famille établit à Aného en 1821, à côté de celle de Glidji. Ils portent le titre de Togbé Ahuawoto, selon la liste de souverains de Rulers.org.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Rulers: Togo — Traditional polities",
+                "author": "Ben Cahoon, Rulers.org",
+                "year": null,
+                "url": "https://www.rulers.org/togotrad.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Liste de souverains consultée le 9 octobre 2026. Section Genyigba (Glidji) : la famille Lawson établit à Aného une chefferie parallèle, le « royaume » de Lolan, en avril 1821. Section Lolan : titre Togbé Ahuawoto ; premier titulaire Georges Akuété Zankli Lawson I (vers 1777-1857). La page ne cite pas ses sources."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1841,
+              "to": 1877,
+              "label": "1841-1877"
+            },
+            "statement": "Le nom Lawson est celui de la famille d'Aného dont le Grand Livre, un registre de lettres tenu par elle, rassemble des documents à partir de 1841, selon la recension de Philippe David. C'est la plus ancienne trace de ce nom à Aného que le projet connaît ; elle dit quand la famille écrit, pas depuis quand elle porte le nom.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Le grand livre des Lawson : les archives d'une famille africaine d'Aného, Togo — recension",
+                "author": "Philippe David, Académie des sciences d'outre-mer",
+                "year": 2020,
+                "url": "https://www.academieoutremer.fr/images/files/20191211_6c0c614d6db956f009fe650672627c9f.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Recension de janvier 2020 de l'édition d'Adam Jones et Peter Sebald, traduite et adaptée par Yves Marguerat (L'Harmattan, 2018). Elle date de 1841 à 1877 la première période du registre et rapporte l'intronisation de George Lawson III en octobre 1883. Lue le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit publié en 2014"
+            },
+            "statement": "Le nom Lawson viendrait de George Lawson, un capitaine marchand qui aurait pris en charge Akuete Zankhli et l'aurait fait éduquer en Angleterre. À la mort du capitaine, Akuete Zankhli aurait pris son nom et épousé sa veuve, selon l'historien Nicoué Lodjou Gayibor, résumé par Jean Martin.",
+            "actors": [
+              {
+                "name": "George Lawson",
+                "role": "capitaine marchand du récit"
+              },
+              {
+                "name": "Akuete Zankhli",
+                "role": "fils du chef de guerre Latevi Awokou, selon le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Africains et Européens dans le monde atlantique, XVe-XIXe siècle, sous la direction de Guy Saupin — recension",
+                "author": "Jean Martin, Académie des sciences d'outre-mer",
+                "year": null,
+                "url": "https://www.academieoutremer.fr/images/files/Africains-europeens-monde-%2859_860%29.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Recension d'un ouvrage collectif publié aux Presses universitaires de Rennes en 2014. Elle résume la contribution de l'historien Nicoué Lodjou Gayibor sur la famille Lawson de Petit-Popo (Aného), que nous n'avons pas lue elle-même. Lue le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1799,
+              "label": "Fin du XVIIIe siècle"
+            },
+            "statement": "Akuete Zankhli est alors le nom du fils du chef de guerre Latevi Awokou, à Aného, ville en pleine expansion, selon Nicoué Lodjou Gayibor, résumé par Jean Martin.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Africains et Européens dans le monde atlantique, XVe-XIXe siècle, sous la direction de Guy Saupin — recension",
+                "author": "Jean Martin, Académie des sciences d'outre-mer",
+                "year": null,
+                "url": "https://www.academieoutremer.fr/images/files/Africains-europeens-monde-%2859_860%29.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Recension d'un ouvrage collectif publié aux Presses universitaires de Rennes en 2014. Elle résume la contribution de l'historien Nicoué Lodjou Gayibor sur la famille Lawson de Petit-Popo (Aného), que nous n'avons pas lue elle-même. Lue le 9 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

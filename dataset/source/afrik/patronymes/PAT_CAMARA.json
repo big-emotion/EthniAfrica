@@ -425,5 +425,391 @@
       "fieldPath": "homonyms",
       "reason": "Un mémoire de 2017 sur les noms de clan du Manden donne Camara et Kamara comme deux écritures françaises du même nom de clan, Kàmara ; c'est la seule source lue qui les relie, et elle ne dit pas laquelle des deux est la première. Le dictionnaire des noms de clan mandingues, comme le mémoire, ajoute Kámala et donne comme équivalents, tenus pour le même clan sous d'autres noms, Koiwogi chez les Loma, ainsi que Dansogo (écrit Dansoko dans le mémoire), Fofana et Magasa ; le mémoire y ajoute Mara et Sekonho chez les Sénoufo. Les sources lues les présentent comme des écritures et des équivalences, non comme des lignées distinctes. Nous n'avons trouvé aucune source qui distingue du nom mandingue le nom portugais ou espagnol Câmara, porté ailleurs pour d'autres raisons."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Camara est un nom de clan mandingue, aussi écrit Kamara ; chez les Vai, il se dit Kamana. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Camara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan mandingue porté du Mali au Liberia ; son origine reste discutée.",
+        "periodLabel": "Écrit dès 1899 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Camara est un nom de clan mandingue, porté notamment au Mali, en Guinée, au Liberia et en Côte d'Ivoire. Un mémoire de 2017 donne Camara et Kamara comme deux écritures françaises du même nom de clan, Kàmara.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 73",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Kàmara : les écritures françaises Camara et Kamara, données pour le même nom de clan."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 13, Les États et les cultures de la côte de haute Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 421",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Les Malinké du clan Camara établis au XVIe siècle au Liberia et dans l'ouest de la Côte d'Ivoire."
+              },
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 310",
+                "notes": "Paris, Challamel, 1907. Administrateur colonial. « Les Kamara de Beyla (Konianka) et des hautes régions du Libéria », relevé sur le texte numérisé d'archive.org."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Camara désigne un clan mandingue. Aucun dictionnaire ni linguiste consulté ne lui donne de sens, et le griot de l'épopée publiée en 1960 dit savoir pourquoi on s'appelle Kamara sans le dire. Les origines proposées restent des hypothèses, présentées séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 9 octobre 2026. L'entrée Kàmara donne la variante Kámala et ses équivalents, mais aucun sens au nom."
+              },
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+                "notes": "Paris, Présence Africaine, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté ; pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue). Le griot dit savoir pourquoi tel s'appelle Kamara, sans le dire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "1899"
+            },
+            "statement": "Le nom Camara apparaît par écrit sous la forme Kamara chez Maurice Delafosse, qui note que les Vai disent Kamana « au lieu de Kamara chez les Malinke ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le clan le porte.",
+            "formAsWritten": "Kamara",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les Vai : leur langue et leur système d'écriture",
+                "author": "Maurice Delafosse",
+                "year": 1899,
+                "url": "https://archive.org/details/rosettaproject_vai_multiple-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 134",
+                "notes": "L'Anthropologie, tome X, 1899, p. 134 (page 6 du tiré à part) : « les Kamana (au lieu de Kamara chez les Malinke) ». Auteur de l'époque coloniale, cité ici pour une forme relevée, non pour ses classements."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "statement": "Le nom Camara est écrit Kamara par André Arcin, administrateur colonial, à propos « des Kamara de Beyla (Konianka) et des hautes régions du Libéria ».",
+            "formAsWritten": "Kamara",
+            "actors": [
+              {
+                "name": "André Arcin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 310",
+                "notes": "Paris, Challamel, 1907. Administrateur colonial. Relevé sur le texte numérisé d'archive.org d'après les en-têtes de page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "Récit publié en 1960"
+            },
+            "statement": "Le nom Camara, écrit Kamara, désigne dans l'épopée de Soundiata deux branches : les Kamara de Sibi, dits Dalikimbon, et les Kamara forgerons de Tabon, dits Sinikimbon, selon le récit du griot Djeli Mamadou Kouyaté publié par Djibril Tamsir Niane.",
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 101",
+                "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+                "notes": "Paris, Présence Africaine, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté ; pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue). Kamandjan, roi des Kamara, dit Dalikimbon, et Tabon Wana, roi des forgerons Kamara, dit Sinikimbon."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date disputée, du XIVe au XVIe siècle ou plus tôt"
+            },
+            "statement": "Le nom Camara est celui du clan qui aurait conduit des clans mandingues du haut Niger vers la côte, à l'origine des Kono et des Vai. Les historiens ne s'accordent pas sur la date de ce mouvement, selon l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 13, Les États et les cultures de la côte de haute Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 419",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Les Kono-Vai venus du haut Niger sous la direction du clan des Camara, entre 1500 et 1550 d'après Holsoe et ses coauteurs."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 12, Les peuples côtiers, premiers contacts avec les Portugais, de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 341, 346",
+                "notes": "UNESCO, volume dirigé par D. T. Niane. Les Kamara à l'origine de l'arrivée de clans mandingues sur la côte du Liberia et de la Sierra Leone ; l'auteur la place avant les années 1460, peut-être dès le siècle précédent, et donne cette date comme sa propre synthèse."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III : L'Afrique du VIIe au XIe siècle — chapitre 18, Les peuples de la Guinée supérieure",
+                "author": "B. W. Andah",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 590-591",
+                "notes": "UNESCO, volume dirigé par M. El Fasi et I. Hrbek. Une arrivée des Vai possible plusieurs siècles avant la date avancée par Person ; d'après A. Jones, le « facteur kamara » mérite des recherches plus approfondies."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Recueilli en 2017"
+            },
+            "statement": "Le nom Camara viendrait d'un ancêtre : les descendants de Kamanjan Boro, fils de Neni Mansa Kara, auraient été les premiers à s'appeler Kamara, selon le griot Babou Condé, de Fadama en Guinée.",
+            "hypothesisGroup": "origine du nom Camara",
+            "actors": [
+              {
+                "name": "Kamanjan Boro",
+                "role": "ancêtre du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 76",
+                "carrier": "Babou Condé, griot du village de Fadama",
+                "place": "Fadama, préfecture de Kouroussa, Guinée",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Récit du griot Babou Condé recueilli lors d'entretiens à Fadama, dans le cercle de Kouroussa, en 2017."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Camara viendrait d'un ordre donné au premier souverain commun des pays du Sankaran, « qu'il règne ! », formule devenue le nom de ses descendants, selon l'ouvrage en n'ko de Souleymane Kanté cité par E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Camara",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 75",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Origine racontée dans l'ouvrage en n'ko de Souleymane Kanté sur les noms et les jamu du Manden ; le texte original n'a pas été lu, seule sa traduction russe l'a été."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "Rapporté en 1959"
+            },
+            "statement": "Le nom Camara viendrait de Fassuna et de Badjuba Nassari, dont des Kamara se disent descendants, Fassuna étant présentée comme une concubine du prophète Mahomet, selon l'officier Molinie, cité par E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Camara",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 74",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Récit rapporté par Molinie, officier de la marine française, dans un dictionnaire de 1959 rédigé pour les Européens en poste en Afrique-Occidentale française ; le mémoire met en garde contre ses généralisations sans fondement et l'informateur n'est pas nommé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1970,
+              "to": 1970,
+              "label": "Proposé en 1970"
+            },
+            "statement": "Le nom Camara serait apparu d'abord chez les ancêtres des Soninké, avant le monde malinké, selon une hypothèse de N'Diaye que rapporte E. A. Bogacheva, qui la donne pour probable et non pour établie.",
+            "hypothesisGroup": "origine du nom Camara",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 74",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Hypothèse rapportée d'après N'Diaye, 1970."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposé en 1907"
+            },
+            "statement": "Le nom Camara viendrait de Hamara, les « hommes rouges du Nord », selon une question que pose André Arcin, administrateur colonial, sur une simple ressemblance de sons.",
+            "hypothesisGroup": "origine du nom Camara",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 635-636",
+                "notes": "Paris, Challamel, 1907. Administrateur colonial. La question sur les « hommes rouges du Nord » (p. 635) précède une comparaison du mandé avec le berbère (p. 636) ; elle est citée comme un exemple d'explication venue de l'extérieur."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kamara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Kamara est une autre écriture française de Camara : un mémoire de 2017 donne les deux pour le même nom de clan, Kàmara.",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 73",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Kàmara."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kamana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "vai",
+        "namedBy": null,
+        "shortLine": "La forme vai du nom Camara.",
+        "periodLabel": "Écrit dès 1899",
+        "accounts": [
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "1899"
+            },
+            "statement": "Le nom Kamana est la forme que prend le nom chez les Vai, là où les Malinké disent Kamara, selon Maurice Delafosse. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand elle est employée.",
+            "formAsWritten": "Kamana",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les Vai : leur langue et leur système d'écriture",
+                "author": "Maurice Delafosse",
+                "year": 1899,
+                "url": "https://archive.org/details/rosettaproject_vai_multiple-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 134",
+                "notes": "L'Anthropologie, tome X, 1899, p. 134 (page 6 du tiré à part) : « les Kamana (au lieu de Kamara chez les Malinke) ». Auteur de l'époque coloniale, cité ici pour une forme relevée, non pour ses classements."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
