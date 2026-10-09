@@ -338,7 +338,7 @@ export default async function PeuplesHubPage({
                   <Link
                     href={getPeopleRoute(language, people.id)}
                     prefetch={false}
-                    className="block h-full rounded-afh-xl border border-afh-border bg-afh-surface p-4 focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
+                    className="block h-full rounded-afh-xl border border-afh-border bg-afh-surface p-4 focus-visible:outline-none focus-visible:shadow-afh-focus"
                   >
                     <AutonymExonymHeading
                       variant="compact"

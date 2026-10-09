@@ -81,7 +81,7 @@ export function WordAnswerPage({
                   key={publication.url}
                   href={publication.url}
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-11 items-center rounded-afh-lg border border-[color:var(--accent)] bg-afh-surface px-afh-2xl py-afh-md text-afh-small font-bold text-afh-text no-underline focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
+                  className="inline-flex min-h-11 items-center rounded-afh-lg border border-[color:var(--accent)] bg-afh-surface px-afh-2xl py-afh-md text-afh-small font-bold text-afh-text no-underline focus-visible:outline-none focus-visible:shadow-afh-focus"
                 >
                   {copy.publicationLink(
                     (

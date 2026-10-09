@@ -103,7 +103,7 @@ export function NextQuestion({
       href={href}
       className={cn(
         cardClass,
-        "focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
+        "focus-visible:outline-none focus-visible:shadow-afh-focus"
       )}
       data-answer-block="next"
       data-feed-block="answer-next"

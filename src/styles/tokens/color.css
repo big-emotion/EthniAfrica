@@ -173,6 +173,9 @@
   --afh-surface: var(--afh-color-card);
   --afh-border: var(--afh-color-border);
 
+  /* The keyboard focus ring's ink: 4.8:1 on the parchment ground. */
+  --afh-focus-ring: var(--afh-color-terracotta);
+
   /* Name-history timeline: the birth tile and the before-the-name dashes. */
   --afh-name-birth-bg: var(--afh-color-name-birth-bg);
   --afh-name-birth-ink: var(--afh-color-name-birth-ink);
@@ -441,6 +444,10 @@
   --afh-bg-warm: var(--afh-night-surface);
   --afh-surface: var(--afh-night-surface-2);
   --afh-border: var(--afh-night-line);
+
+  /* Raw terracotta clears 3:1 on the night ground but not with margin on the
+     raised surfaces; the lifted terre ink holds 4.8:1 or more on all three. */
+  --afh-focus-ring: var(--afh-cat-terre-ink-night);
 
   --afh-text: var(--afh-night-ink);
   --afh-text-soft: var(--afh-night-ink-2);
