@@ -191,29 +191,6 @@
   font-family: var(--afh-font-body);
 }
 
-/* The source marker sits in the sentence it sources. Its box is the 44px tap
-   target; the visible tag stays small, square like the rest of the source
-   apparatus (actions-charter §6). */
-.afh-name-timeline-source {
-  /* The negative block margin keeps the 44px target from opening a gap in
-     the line of prose it sits on. */
-  margin-block: -12px;
-  padding: 0 var(--afh-space-xs);
-  border: 0;
-  background: transparent;
-  color: var(--afh-text-soft);
-  font-family: var(--afh-font-mono);
-  font-size: var(--afh-text-eyebrow);
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  cursor: pointer;
-}
-
-.afh-name-timeline-source:hover {
-  color: var(--afh-text);
-}
-
 .afh-name-timeline-pill {
   align-self: flex-start;
   margin: 0;

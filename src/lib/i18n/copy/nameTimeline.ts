@@ -31,10 +31,6 @@ export interface NameTimelineCopy {
     birth: (name: string) => string;
     before: (name: string) => string;
   };
-  sources: {
-    open: (kind: string) => string;
-    more: (count: number) => string;
-  };
 }
 
 // @req REQ-198
@@ -72,10 +68,6 @@ export const nameTimelineCopy: Record<Language, NameTimelineCopy> = {
       birth: (name) =>
         `Le nom ${name} laisse alors sa plus ancienne trace connue du projet.`,
       before: (name) => `Le nom ${name} n'est pas encore attesté.`,
-    },
-    sources: {
-      open: (kind) => `Voir les sources de ce passage (${kind})`,
-      more: (count) => `+${count}`,
     },
   },
 };

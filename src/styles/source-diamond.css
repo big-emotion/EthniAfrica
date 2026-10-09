@@ -1,0 +1,107 @@
+/**
+ * The source diamond (ETNI-2015): a small coloured diamond after the sentence
+ * it backs, its colour the family of the source. Shape and proportions follow
+ * the manifesto film (a square turned 45°, about half the type's height,
+ * slightly rounded). The colours are the --afh-source-* tokens, whose
+ * contrast on every tile ground is asserted in sourceDiamondCharter.test.ts.
+ */
+
+.afh-source-diamond,
+.afh-source-diamond-legend li {
+  --afh-source-diamond-fill: var(--afh-source-other);
+}
+
+.afh-source-diamond[data-family="oral"],
+.afh-source-diamond-legend [data-family="oral"] {
+  --afh-source-diamond-fill: var(--afh-source-oral);
+}
+.afh-source-diamond[data-family="book"],
+.afh-source-diamond-legend [data-family="book"] {
+  --afh-source-diamond-fill: var(--afh-source-book);
+}
+.afh-source-diamond[data-family="press"],
+.afh-source-diamond-legend [data-family="press"] {
+  --afh-source-diamond-fill: var(--afh-source-press);
+}
+.afh-source-diamond[data-family="report"],
+.afh-source-diamond-legend [data-family="report"] {
+  --afh-source-diamond-fill: var(--afh-source-report);
+}
+.afh-source-diamond[data-family="archive"],
+.afh-source-diamond-legend [data-family="archive"] {
+  --afh-source-diamond-fill: var(--afh-source-archive);
+}
+.afh-source-diamond[data-family="other"],
+.afh-source-diamond-legend [data-family="other"] {
+  --afh-source-diamond-fill: var(--afh-source-other);
+}
+
+/* The button is the 24px target (WCAG 2.5.8); the negative block margin keeps
+   it from opening a gap in the line of prose it ends. The mark sits at the
+   start of the box, so the no-break space before it is the only gap after
+   the last word, as in the film; the rest of the target extends past it. */
+.afh-source-diamond {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 24px;
+  min-height: 24px;
+  margin-block: -4px;
+  padding: 0 0 0 2px;
+  border: 0;
+  border-radius: var(--afh-radius-sm);
+  background: transparent;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Stated here rather than through CHARTER_FOCUS_RING alone: measured in the
+   browser, that utility left the focused diamond with no ring at all. */
+.afh-source-diamond:focus-visible {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
+}
+
+.afh-source-diamond-mark {
+  display: inline-block;
+  flex: none;
+  width: 0.5em;
+  height: 0.5em;
+  min-width: 8px;
+  min-height: 8px;
+  border-radius: 1px;
+  background: var(--afh-source-diamond-fill);
+  transform: rotate(45deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .afh-source-diamond-mark {
+    transition: transform 120ms ease-out;
+  }
+  .afh-source-diamond:hover .afh-source-diamond-mark {
+    transform: rotate(45deg) scale(1.25);
+  }
+}
+
+/* Forced colours drop backgrounds; the diamond must not vanish with them. */
+@media (forced-colors: active) {
+  .afh-source-diamond-mark {
+    background: CanvasText;
+  }
+}
+
+.afh-source-diamond-legend ul {
+  margin: var(--afh-space-sm) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.afh-source-diamond-legend li {
+  display: flex;
+  align-items: center;
+  gap: var(--afh-space-sm);
+  padding-block: var(--afh-space-xs);
+  border-bottom: 1px solid var(--afh-border);
+  font-size: var(--afh-text-small);
+  color: var(--afh-text);
+}

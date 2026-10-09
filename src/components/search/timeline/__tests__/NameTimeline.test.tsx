@@ -223,7 +223,7 @@ describe("NameTimeline — « Pendant ce temps, ailleurs »", () => {
       "Le nom Lingala est alors en usage. En France, la loi de séparation des Églises et de l'État est votée, en 1905."
     );
     expect(
-      within(anchor).getByRole("button", { name: /Voir les sources/ })
+      within(anchor).getByRole("button", { name: /voir les sources/ })
     ).toBeInTheDocument();
   });
 
@@ -253,23 +253,35 @@ describe("NameTimeline — « Pendant ce temps, ailleurs »", () => {
 
 describe("NameTimeline — the sources behind a passage", () => {
   // @req REQ-194
-  it("names each passage's source by its type, never its tier", () => {
+  // @req REQ-198
+  it("ends each sourced passage with a diamond named by its source type, never its tier", () => {
     renderLingala();
-    const marker = within(tiles()[1]).getByRole("button", {
-      name: "Voir les sources de ce passage (Archive)",
+    const diamond = within(tiles()[1]).getByRole("button", {
+      name: "Source : Archive — voir les sources",
     });
 
-    expect(marker).toHaveTextContent("Archive");
+    expect(diamond).toHaveAttribute("data-family", "archive");
+    expect(diamond).toHaveTextContent("");
     expect(document.body).not.toHaveTextContent(
       /Référencée|Officielle|Non vérifiée|confiance/i
     );
   });
 
+  // @req REQ-198
+  it("keeps the diamond on the passage's last word", () => {
+    renderLingala();
+    const diamond = within(tiles()[1]).getByRole("button", {
+      name: /voir les sources/,
+    });
+    expect(diamond.previousSibling?.textContent?.endsWith("\u00a0")).toBe(true);
+  });
+
   // @req REQ-194
-  it("opens the sources of the passage, each with its type", async () => {
+  // @req REQ-198
+  it("opens the sources of the passage, each with its type, and the colour key", async () => {
     renderLingala();
     fireEvent.click(
-      within(tiles()[4]).getByRole("button", { name: /Voir les sources/ })
+      within(tiles()[4]).getByRole("button", { name: /voir les sources/ })
     );
 
     const sheet = await screen.findByRole("dialog");
@@ -278,6 +290,11 @@ describe("NameTimeline — the sources behind a passage", () => {
       within(sheet).getByText(
         "Grammaire et vocabulaire du lingala ou langue du Haut-Congo"
       )
+    ).toBeInTheDocument();
+    expect(
+      within(sheet).getByRole("region", {
+        name: "La couleur du losange indique le type de source",
+      })
     ).toBeInTheDocument();
     expect(sheet).not.toHaveTextContent(/Référencée|Officielle/);
   });

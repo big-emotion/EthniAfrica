@@ -119,6 +119,44 @@ test("@smoke a search for lingala opens on its name-history timeline", async ({
   ).toEqual([]);
 });
 
+// The diamond after a passage (ETNI-2015): a 24px target around a small
+// coloured mark, opening the sources with the key to the colours.
+// @req REQ-198
+test("@smoke a passage's diamond opens its sources and the colour key", async ({
+  page,
+}) => {
+  await page.goto(`${getLocalizedRoute(LOCALE, "search")}?q=lingala`);
+
+  const diamond = page
+    .locator("[data-name-timeline]")
+    .getByRole("button", { name: /^Sources? : .* — voir les sources$/ })
+    .first();
+  await expect(diamond).toBeVisible();
+
+  const target = await diamond.boundingBox();
+  expect(target?.width).toBeGreaterThanOrEqual(24);
+  expect(target?.height).toBeGreaterThanOrEqual(24);
+  const mark = await diamond.locator(".afh-source-diamond-mark").boundingBox();
+  // Rotated 45°, the 8px mark's box is about 11px across.
+  expect(mark?.width).toBeLessThan(16);
+
+  await page.keyboard.press("Shift+Tab");
+  await diamond.focus();
+  const ring = await diamond.evaluate((el) => getComputedStyle(el).boxShadow);
+  expect(ring).not.toBe("none");
+
+  await diamond.click();
+  const sheet = page.getByRole("dialog");
+  await expect(
+    sheet.getByRole("region", {
+      name: "La couleur du losange indique le type de source",
+    })
+  ).toBeVisible();
+  await expect(
+    sheet.getByRole("listitem").filter({ hasText: "Archive" }).first()
+  ).toBeVisible();
+});
+
 // « Tout » is one tap away and brings the answer back.
 // @req REQ-198
 test("@smoke « Tout » leaves the timeline for the answer", async ({ page }) => {

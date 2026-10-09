@@ -98,7 +98,9 @@ export function NameTimeline({
   const passage = (account: NameHistoryAccount, key: string) => (
     <>
       <p className="afh-name-timeline-statement">
-        <NamedText text={account.statement} forms={forms} />{" "}
+        <NamedText text={account.statement} forms={forms} />
+        {/* A no-break space, so the diamond never wraps alone onto a line. */}
+        {"\u00a0"}
         <TileSourceMarker
           statement={account.statement}
           sources={account.sources}
@@ -284,7 +286,8 @@ export function NameTimeline({
                         text={copy.elsewhereLead[tile.placement](name.nameText)}
                         forms={forms}
                       />{" "}
-                      {anchor.sentence}{" "}
+                      {anchor.sentence}
+                      {"\u00a0"}
                       <TileSourceMarker
                         statement={anchor.sentence}
                         sources={anchor.sources}
