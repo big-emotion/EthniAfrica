@@ -54,7 +54,6 @@ export function MigrationNarrative({
                 {paragraph.text}{" "}
                 <ConfidenceChip
                   id={`${event.id}-paragraph-${index}`}
-                  confidenceScore={paragraph.confidence?.score ?? null}
                   sourceCount={paragraph.confidence?.sourceCount ?? null}
                   lastHumanAuditAt={
                     paragraph.confidence?.lastHumanAuditAt ?? null

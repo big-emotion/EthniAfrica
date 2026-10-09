@@ -95,7 +95,6 @@ export const SinglePosition: Story = {
     assertion: {
       statement:
         "Le peuple Seereer est historiquement attesté dans le bassin du Saloum dès le XIIIe siècle.",
-      confidenceScore: 0.84,
       sourceCount: 3,
       lastHumanAuditAt: "2026-04-01",
     },
@@ -112,7 +111,6 @@ export const MultiPerspective: Story = {
     assertion: {
       statement:
         "L'origine du peuple est disputée par plusieurs courants historiographiques.",
-      confidenceScore: 0.55,
       sourceCount: 4,
       lastHumanAuditAt: "2026-03-15",
     },
@@ -145,7 +143,6 @@ export const BrokenLink: Story = {
     assertion: {
       statement:
         "Le royaume cité disposait d'un système monétaire propre au XVIIIe siècle.",
-      confidenceScore: 0.62,
       sourceCount: 2,
       lastHumanAuditAt: null,
     },
@@ -162,7 +159,6 @@ export const MissingData: Story = {
     anchorId: "chip-paragraph-empty",
     assertion: {
       statement: "Assertion ajoutée par enrichissement IA, sans audit humain.",
-      confidenceScore: 0.35,
       sourceCount: 1,
       lastHumanAuditAt: null,
     },
@@ -207,7 +203,6 @@ export const UnconfirmedSourcesIntroduced: Story = {
     assertion: {
       statement:
         "Le fondateur du lignage serait venu de l'est avec ses troupeaux.",
-      confidenceScore: 0.48,
       sourceCount: 4,
       lastHumanAuditAt: null,
     },

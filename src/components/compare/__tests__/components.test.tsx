@@ -6,7 +6,6 @@ import {
   within,
   fireEvent,
 } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createElement } from "react";
 import axe from "axe-core";
@@ -19,7 +18,6 @@ import type {
   CompareEntityType,
 } from "@/hooks/use-compare-selection";
 import type { ComparisonColumn, ComparisonPageData } from "@/types/compare";
-import { getLocalizedRoute } from "@/lib/routing";
 
 // axe-core is already a project dependency (used by scripts/a11y-test.ts via
 // @axe-core/playwright); running it directly against the jsdom/happy-dom
@@ -337,125 +335,26 @@ describe("EntityComparePicker default fetchSuggestions (DEC-027 canonical path)"
 });
 
 describe("CompareEntityHeader", () => {
-  const highConfidenceColumn: ComparisonColumn = {
-    id: "PPL_ILLUSTRATIVE_HIGH",
-    label: "Peuple Illustratif Haut",
-    type: "peuple",
-    confidence: { score: 0.82, sourceCount: 5, lastHumanAuditAt: "2025-09-21" },
-  };
-
-  const lowConfidenceColumn: ComparisonColumn = {
-    id: "PPL_ILLUSTRATIVE_LOW",
-    label: "Peuple Illustratif Bas",
-    type: "peuple",
-    confidence: { score: 0.41, sourceCount: 2, lastHumanAuditAt: "2025-06-01" },
-  };
-
-  const unauditedColumn: ComparisonColumn = {
-    id: "PPL_ILLUSTRATIVE_UNAUDITED",
-    label: "Peuple Illustratif Non Audité",
+  const column: ComparisonColumn = {
+    id: "PPL_ILLUSTRATIVE",
+    label: "Peuple Illustratif",
     type: "peuple",
   };
 
-  // @req REQ-097 — the sticky entity strip above the fold must not shift
-  // when the lazy ConfidenceChip resolves: reserve its 44px tap target
-  // height around both the Suspense fallback link and the loaded chip.
-  it("reserves the confidence chip's minimum tap-target height so loading it in causes no layout shift", async () => {
-    render(<CompareEntityHeader language="fr" column={highConfidenceColumn} />);
-
-    const slotBeforeLoad = screen.getByTestId("compare-entity-confidence-slot");
-    expect(slotBeforeLoad.className).toMatch(/min-h-\[44px\]/);
-
-    await waitFor(() => {
-      expect(
-        screen.getByText(/5 références · revu 2025-09-21/)
-      ).toBeInTheDocument();
-    });
-
-    const slotAfterLoad = screen.getByTestId("compare-entity-confidence-slot");
-    expect(slotAfterLoad.className).toMatch(/min-h-\[44px\]/);
-  });
-
-  // @req REQ-097
-  it("shows each entity's own confidence chip side by side with no comparative markup or copy", async () => {
-    render(
-      <>
-        <CompareEntityHeader language="fr" column={highConfidenceColumn} />
-        <CompareEntityHeader language="fr" column={lowConfidenceColumn} />
-      </>
+  // Each compared entity used to carry a confidence chip, a « page non
+  // auditée » disclaimer when it had no score, and a link explaining how the
+  // score is computed. All three told the reader how far to trust the page.
+  // @req REQ-194
+  it("shows no confidence chip, unaudited disclaimer or score explainer", () => {
+    const { container } = render(
+      <CompareEntityHeader language="fr" column={column} />
     );
 
-    await waitFor(() => {
-      expect(
-        screen.getByText(/5 références · revu 2025-09-21/)
-      ).toBeInTheDocument();
-      expect(
-        screen.getByText(/2 références · revu 2025-06-01/)
-      ).toBeInTheDocument();
-    });
-
-    const bodyText = document.body.textContent ?? "";
-    expect(bodyText).not.toMatch(
-      /plus (élevé|fiable)|meilleur|gagnant|top|highest|lowest|winner|ranking/i
+    expect(container.textContent).not.toMatch(
+      /confiance|score|non auditée|références · revu/i
     );
-    expect(document.querySelector("[data-winner]")).toBeNull();
-    expect(document.querySelectorAll('[class*="highlight"]')).toHaveLength(0);
-  });
-
-  // @req REQ-097
-  it("shows the Epic 1 unaudited treatment when there is no confidence_scores row — the slot is never empty", () => {
-    render(<CompareEntityHeader language="fr" column={unauditedColumn} />);
-    expect(screen.getByText(/page non auditée/i)).toBeInTheDocument();
-  });
-
-  // @req REQ-097
-  it("opens the Epic 1 SourceChainSheet when the chip is activated", async () => {
-    const user = userEvent.setup();
-    render(<CompareEntityHeader language="fr" column={highConfidenceColumn} />);
-
-    const button = await screen.findByRole("button", {
-      name: /5 références/i,
-    });
-    await user.click(button);
-
-    await waitFor(() => {
-      expect(
-        screen.getByText("Sources de cette information")
-      ).toBeInTheDocument();
-    });
-
-    // Close the sheet so its focus trap / body-hide side effects don't leak
-    // into subsequent tests that query the accessibility tree.
-    await user.keyboard("{Escape}");
-    await waitFor(() => {
-      expect(
-        screen.queryByText("Sources de cette information")
-      ).not.toBeInTheDocument();
-    });
-  });
-
-  // @req REQ-097
-  it("passes the entity label through to the chip's aria-label (Epic 1 contract)", async () => {
-    render(<CompareEntityHeader language="fr" column={highConfidenceColumn} />);
-
-    await waitFor(() => {
-      expect(
-        screen.getByRole("button", {
-          name: new RegExp(`${highConfidenceColumn.label}$`),
-        })
-      ).toBeInTheDocument();
-    });
-  });
-
-  // @req REQ-097
-  it("renders a tertiary caption link to the confidence explainer", () => {
-    render(<CompareEntityHeader language="fr" column={highConfidenceColumn} />);
-
-    const link = screen.getByRole("link", {
-      name: /comment ce score est calculé/i,
-    });
-    expect(link).toBeInTheDocument();
-    expect(link.getAttribute("href")).toBe(getLocalizedRoute("fr", "doctrine"));
+    expect(screen.queryByRole("button")).toBeNull();
+    expect(screen.queryByRole("region")).toBeNull();
   });
 
   // @req REQ-097
@@ -463,7 +362,7 @@ describe("CompareEntityHeader", () => {
     render(
       <CompareEntityHeader
         language="fr"
-        column={{ ...highConfidenceColumn, classificationStatus: "contested" }}
+        column={{ ...column, classificationStatus: "contested" }}
       />
     );
     expect(screen.getByTestId("classification-icon")).toBeInTheDocument();
@@ -471,7 +370,7 @@ describe("CompareEntityHeader", () => {
 
   // @req REQ-097
   it("renders no badge for the consensual/default classification status", () => {
-    render(<CompareEntityHeader language="fr" column={highConfidenceColumn} />);
+    render(<CompareEntityHeader language="fr" column={column} />);
     expect(screen.queryByTestId("classification-icon")).not.toBeInTheDocument();
   });
 });
@@ -480,44 +379,8 @@ describe("CompareEntityHeader", () => {
 // story's technical notes (ComparisonView + picker), run test-first before
 // wiring /fr/comparer into the a11y CI live-route list (scripts/a11y-test.ts).
 describe("Accessibility (axe)", () => {
-  const auditedComparison: ComparisonPageData = {
-    type: "peuple",
-    columns: [
-      {
-        id: "PPL_YORUBA",
-        label: "Yoruba",
-        type: "peuple",
-        confidence: {
-          score: 0.82,
-          sourceCount: 5,
-          lastHumanAuditAt: "2025-09-21",
-        },
-      },
-      {
-        id: "PPL_IGBO",
-        label: "Igbo",
-        type: "peuple",
-        confidence: {
-          score: 0.41,
-          sourceCount: 2,
-          lastHumanAuditAt: "2025-06-01",
-        },
-      },
-    ],
-    rows: [
-      {
-        key: "appellations",
-        values: {
-          PPL_YORUBA: { mainName: "Yoruba", selfAppellation: "Yoruba" },
-          PPL_IGBO: { mainName: "Igbo" },
-        },
-      },
-    ],
-  };
-
-  // Two unsourced columns rendered side by side — the regression case that
-  // caught the landmark-unique violation (duplicate role="region"
-  // aria-label="avertissement vérification" from UnauditedDisclaimer).
+  // Two columns rendered side by side — the case that once caught a
+  // landmark-unique violation (two identically labelled regions).
   const unauditedComparison: ComparisonPageData = {
     type: "peuple",
     columns: [
@@ -531,14 +394,6 @@ describe("Accessibility (axe)", () => {
       },
     ],
   };
-
-  // @req REQ-097
-  it("ComparisonView has no axe violations with audited columns", async () => {
-    const { container } = render(
-      <ComparisonView language="fr" data={auditedComparison} />
-    );
-    await expectNoAxeViolations(container);
-  });
 
   // @req REQ-097
   it("ComparisonView has no axe violations with multiple unaudited columns (landmark-unique regression)", async () => {

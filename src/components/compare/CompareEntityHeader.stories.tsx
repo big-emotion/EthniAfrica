@@ -6,14 +6,7 @@ import {
 } from "@/components/fiche/ficheStoryViewports";
 import type { ComparisonColumn } from "@/types/compare";
 
-const auditedColumn: ComparisonColumn = {
-  id: "PPL_WOLOF",
-  label: "Wolof",
-  type: "peuple",
-  confidence: { score: 0.82, sourceCount: 5, lastHumanAuditAt: "2025-09-21" },
-};
-
-const unauditedColumn: ComparisonColumn = {
+const plainColumn: ComparisonColumn = {
   id: "PPL_SERER",
   label: "Sérère",
   type: "peuple",
@@ -23,7 +16,6 @@ const contestedColumn: ComparisonColumn = {
   id: "PPL_ILLUSTRATIVE_CONTESTED",
   label: "Peuple Illustratif Contesté",
   type: "peuple",
-  confidence: { score: 0.55, sourceCount: 2, lastHumanAuditAt: "2025-01-10" },
   classificationStatus: "contested",
 };
 
@@ -37,14 +29,9 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-const audited: Story = {
-  name: "Audited (confidence chip)",
-  args: { language: "fr", column: auditedColumn },
-};
-
-const unaudited: Story = {
-  name: "Unaudited (no confidence_scores row)",
-  args: { language: "fr", column: unauditedColumn },
+const plain: Story = {
+  name: "Consensual classification (no badge)",
+  args: { language: "fr", column: plainColumn },
 };
 
 const contested: Story = {
@@ -53,8 +40,8 @@ const contested: Story = {
 };
 
 // @req REQ-097
-export const Mobile430 = atFicheBreakpoint(audited, "ficheMobile430");
+export const Mobile430 = atFicheBreakpoint(contested, "ficheMobile430");
 // @req REQ-097
-export const Tablet720 = atFicheBreakpoint(unaudited, "ficheTablet720");
+export const Tablet720 = atFicheBreakpoint(plain, "ficheTablet720");
 // @req REQ-097
 export const Desktop800 = atFicheBreakpoint(contested, "ficheDesktop800");

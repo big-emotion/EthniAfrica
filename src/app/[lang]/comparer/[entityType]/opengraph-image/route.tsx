@@ -1,10 +1,9 @@
 /**
  * Dynamic comparison OG image route — `next/og` `ImageResponse` (FR63, AR30).
  *
- * Same URL-reconstructs-the-comparison contract as page.tsx, but fetches
- * through `comparisonService.getComparisonEntities` instead of
- * `assembleComparison` because this route also needs the batched Module #0
- * confidence read (`assembleComparison` does not fetch confidence).
+ * Same URL-reconstructs-the-comparison contract as page.tsx, fetched
+ * through `comparisonService.getComparisonEntities`. The card prints no
+ * confidence (REQ-194), so the confidence that read returns is not used here.
  */
 import { ImageResponse } from "next/og";
 import { getComparisonEntities } from "@/api/v2/services/comparisonService";
@@ -80,24 +79,8 @@ export async function GET(
     return new Response(null, { status: 404 });
   }
 
-  const pageData = transformComparisonData(entities.map((item) => item.entity));
-  const confidenceById = new Map(
-    entities.map((item) => [item.id, item.confidence])
-  );
-
   const card = buildComparisonOgCard(
-    {
-      ...pageData,
-      columns: pageData.columns.map((column) => {
-        const confidence = confidenceById.get(column.id);
-        return {
-          ...column,
-          confidence: confidence
-            ? { score: confidence.score, sourceCount: confidence.sourceCount }
-            : null,
-        };
-      }),
-    },
+    transformComparisonData(entities.map((item) => item.entity)),
     language
   );
 
@@ -162,16 +145,6 @@ export async function GET(
                 {entity.exonym}
               </div>
             ) : null}
-            <div
-              style={{
-                display: "flex",
-                fontFamily: "Nunito Sans",
-                fontSize: 18,
-                color: SHARE_CARD_THEME.inkSoft,
-              }}
-            >
-              {entity.confidenceLabel}
-            </div>
           </div>
         ))}
       </div>

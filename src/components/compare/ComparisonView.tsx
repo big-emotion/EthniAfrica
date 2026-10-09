@@ -8,8 +8,8 @@
  * primary DOM for every reader, not a fallback (FR59, FR61, FR43, FR44).
  *
  * `<th scope="col">` entity headers here are the minimal text-first form —
- * Story 9.7 (`CompareEntityHeader`) layers the `ConfidenceChip` /
- * `ClassificationBadge` presentation on top without changing this markup.
+ * Story 9.7 (`CompareEntityHeader`) layers the `ClassificationBadge`
+ * presentation on top without changing this markup.
  */
 
 import Link from "next/link";
@@ -61,7 +61,7 @@ export function ComparisonView({ data, language }: ComparisonViewProps) {
 
   return (
     <div>
-      {/* Story 9.7 header band — each entity's own ConfidenceChip / ClassificationBadge,
+      {/* Story 9.7 header band — each entity's own ClassificationBadge,
           above the fold, identical visual weight, no cross-column comparison. */}
       <div
         className="grid gap-afh-md mb-afh-md"

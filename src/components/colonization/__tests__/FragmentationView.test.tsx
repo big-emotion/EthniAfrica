@@ -111,6 +111,24 @@ describe("FragmentationView", () => {
       expect(screen.getByText(/45\s*%/)).toBeTruthy();
     });
 
+    // The last column used to be headed « Confiance » although each cell only
+    // ever linked to the share's sources.
+    // @req REQ-194
+    it("labels the last column by its sources, never by confidence", () => {
+      render(
+        <FragmentationView
+          fragmentation={twoCountryFragmentation}
+          variant="fiche-section"
+        />
+      );
+
+      const table = screen.getByRole("table");
+      expect(table.textContent).not.toMatch(/confiance/i);
+      expect(
+        within(table).getByRole("columnheader", { name: "Sources" })
+      ).toBeTruthy();
+    });
+
     // @req REQ-091
     it("ends each row with a ConfidenceChip that opens a SourceChainSheet on activation", async () => {
       const user = userEvent.setup();

@@ -27,7 +27,6 @@ const LazySourceChainSheet = lazy(
 
 export interface ParagraphChipData {
   chipId: string;
-  confidenceScore: number | null;
   sourceCount: number | null;
   lastHumanAuditAt: string | null;
   assertionStatement: string;
@@ -109,7 +108,6 @@ function ProseWithNote({
           assertion={{
             id: note.assertionId,
             statement: note.assertionStatement,
-            confidenceScore: 0,
             sourceCount: note.sources.length,
             lastHumanAuditAt: null,
           }}
@@ -144,7 +142,7 @@ interface ProseWithChipProps {
    * A note callout for this field, when the corpus sources it.
    *
    * Takes precedence over `chip`: the two occupy the same character position
-   * and say different things — the chip states a confidence verdict, the
+   * and say different things — the chip states a reference count, the
    * callout states a reference — and a paragraph ending in both would ask the
    * reader to tell two marks apart at six pixels tall.
    */
@@ -217,7 +215,6 @@ export function ProseWithChip({
           >
             <LazyConfidenceChip
               id={anchorId}
-              confidenceScore={chip.confidenceScore}
               sourceCount={chip.sourceCount}
               lastHumanAuditAt={chip.lastHumanAuditAt}
               variant={chip.contested ? "contested" : "inline"}
@@ -236,7 +233,6 @@ export function ProseWithChip({
           onOpenChange={setSheetOpen}
           assertion={{
             statement: chip.assertionStatement,
-            confidenceScore: chip.confidenceScore ?? 0,
             sourceCount: chip.sourceCount ?? 0,
             lastHumanAuditAt: chip.lastHumanAuditAt,
           }}

@@ -87,8 +87,10 @@ describe("PatronymeFicheTitle standing (REQ-147)", () => {
     expect(screen.queryByText(/en cours de constitution/)).toBeNull();
   });
 
-  // @req REQ-147
-  it("marks a lone machine-written source and says the fiche is being assembled", () => {
+  // « En cours de constitution » used to follow from the sources' tier: a
+  // fiche resting only on unverified citations was flagged as unconfirmed.
+  // @req REQ-194
+  it("marks a lone machine-written source without flagging the fiche by its tier", () => {
     const { container } = render(
       <PatronymeFicheTitle
         language="fr"
@@ -108,7 +110,7 @@ describe("PatronymeFicheTitle standing (REQ-147)", () => {
         /1 source citée, dont une rédigée par une intelligence artificielle/
       )
     ).toBeInTheDocument();
-    expect(screen.getByText(/en cours de constitution/)).toBeInTheDocument();
+    expect(screen.queryByText(/en cours de constitution/)).toBeNull();
   });
 
   // @req REQ-147

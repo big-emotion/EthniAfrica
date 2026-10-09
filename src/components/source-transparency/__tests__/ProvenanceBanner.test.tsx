@@ -33,6 +33,22 @@ describe("the provenance banner", () => {
     expect(screen.getByText(/15 informations présentées/)).toBeInTheDocument();
   });
 
+  // The banner counts and dates; it never weighs. No score, no « confiance »,
+  // no explanation of how sources are weighted.
+  // @req REQ-194
+  it("prints no confidence score or weighting", () => {
+    render(
+      <ProvenanceBanner
+        language="fr"
+        census={census({ unverified: 7, needs_review: 3 })}
+      />
+    );
+
+    expect(screen.getByRole("region").textContent).not.toMatch(
+      /confiance|score|%|pondér|poids/i
+    );
+  });
+
   /**
    * Doctrine §1.1 (operator ruling, 2026-10-08): the reader never sees a
    * source's tier — no per-standing count, no gold warning, no notice about

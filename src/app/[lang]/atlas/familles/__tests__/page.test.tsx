@@ -94,9 +94,7 @@ vi.mock("@/components/family/LanguageFamilyDetailViewV2", () => ({
 }));
 
 vi.mock("@/components/source-transparency/ConfidenceChip", () => ({
-  ConfidenceChip: ({ confidenceScore }: { confidenceScore: number | null }) => (
-    <div data-testid="confidence-chip" data-confidence={confidenceScore} />
-  ),
+  ConfidenceChip: () => <div data-testid="confidence-chip" />,
 }));
 
 vi.mock("@/components/source-transparency/PinnedVersionBanner", () => ({
@@ -449,8 +447,8 @@ describe("/[lang]/familles/[slug] page", () => {
 
   describe("versioned URLs", () => {
     // @req REQ-019
-    // @req REQ-025
-    it("renders the pinned snapshot, banner first and without any panel chapter", async () => {
+    // @req REQ-025 REQ-194
+    it("renders the pinned snapshot, banner first, with no confidence chip and no panel chapter", async () => {
       mockGetRevisionSnapshot.mockResolvedValueOnce({
         data: { name_fr: "Famille bantu" },
         version: 8,
@@ -459,7 +457,7 @@ describe("/[lang]/familles/[slug] page", () => {
         doctrine: null,
       });
 
-      const { container, getByRole, getByTestId, getByText } =
+      const { container, getByRole, getByTestId, getByText, queryByTestId } =
         await renderFamillesPage("FLG_BANTU@v8");
 
       expect(mockGetRevisionSnapshot).toHaveBeenCalledWith(
@@ -484,10 +482,7 @@ describe("/[lang]/familles/[slug] page", () => {
         "data-live-url",
         getFamilyRoute("fr", "FLG_BANTU")
       );
-      expect(getByTestId("confidence-chip")).toHaveAttribute(
-        "data-confidence",
-        "91"
-      );
+      expect(queryByTestId("confidence-chip")).toBeNull();
       expect(
         getByText(/Ce contenu est une capture archivée/)
       ).toBeInTheDocument();

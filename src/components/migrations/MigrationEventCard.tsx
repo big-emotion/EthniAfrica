@@ -74,7 +74,6 @@ export function MigrationEventCard({
 
       <ConfidenceChip
         id={`${event.id}-confidence`}
-        confidenceScore={confidence?.score ?? null}
         sourceCount={confidence?.sourceCount ?? null}
         lastHumanAuditAt={confidence?.lastHumanAuditAt ?? null}
         variant="hero"
