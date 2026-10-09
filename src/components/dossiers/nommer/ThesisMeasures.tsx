@@ -1,3 +1,4 @@
+import { nommerMeasuresCopy as copy } from "@/lib/i18n/copy/nommer";
 import { NOMMER_FIGURES } from "@/lib/dossiers/nommer/figures";
 import { formatNumber } from "@/lib/languageTag";
 import type { Language } from "@/types/shared";
@@ -44,24 +45,25 @@ const measures = (language: Language): Measure[] => {
   const africanChoice = countedValue("countries-african-choice");
   const countries = countedValue("corpus-countries");
 
+  const ratio = Math.round(exonyms / autonyms);
   return [
     {
-      value: `${Math.round(exonyms / autonyms)} pour 1`,
-      claim:
-        "Le corpus tient quatre noms venus du dehors pour un nom venu du dedans.",
-      provenance: `${formatNumber(language, exonyms)} exonymes contre ${formatNumber(language, autonyms)} autonymes, comptés sur les fiches`,
+      value: copy.ratio(ratio),
+      claim: copy.ratioClaim(ratio),
+      provenance: copy.ratioProvenance(
+        formatNumber(language, exonyms),
+        formatNumber(language, autonyms)
+      ),
     },
     {
-      value: `${contested} sur ${peoples}`,
-      claim:
-        "Autant de peuples déclarent leur propre nom contesté ou hérité de la colonisation.",
-      provenance: `et ${undeclared} fiches ne déclarent rien du tout — le chiffre qu'un pourcentage effacerait`,
+      value: copy.share(contested, peoples),
+      claim: copy.contestedClaim,
+      provenance: copy.undeclared(undeclared),
     },
     {
-      value: `${africanChoice} sur ${countries}`,
-      claim: "Autant de pays portent un nom que des Africains ont choisi.",
-      provenance:
-        "lecture à la main des 54 étymologies, qu'aucune source du corpus n'appuie encore",
+      value: copy.share(africanChoice, countries),
+      claim: copy.countryClaim,
+      provenance: copy.countryProvenance,
     },
   ];
 };

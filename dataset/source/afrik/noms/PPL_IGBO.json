@@ -38,7 +38,7 @@
       "imposedBy": "Administration coloniale britannique",
       "impositionPeriod": "XIXe-XXe siècle",
       "whyProblematic": "Transcription simplifiée qui aplatit la prononciation tonale complexe du terme igbo ; imposée par l'administration coloniale britannique sans consultation des locuteurs natifs, elle a longtemps véhiculé une lecture externe et déformée de l'identité igbo.",
-      "contemporaryUsage": "N'est plus employé que dans des documents historiques ou par méconnaissance. Le code ISO 639-3 du SIL conserve néanmoins « ibo » comme identifiant technique de la langue, distinct de l'endonyme « Igbo ».",
+      "contemporaryUsage": "Cette orthographe apparaît surtout dans des documents historiques ou est encore utilisée par méconnaissance. Le code ISO 639-3 de la langue reste toutefois « ibo ». Ce code sert à identifier la langue dans les outils techniques ; le peuple se nomme Igbo.",
       "sortRank": 1,
       "sources": [
         {
@@ -47,7 +47,7 @@
           "year": 2024,
           "url": "https://www.ethnologue.com/language/ibo/",
           "tier": "official",
-          "notes": "Le code ISO 639-3 « ibo » atteste la reconnaissance de cette graphie historique comme identifiant technique de la langue, distinct de l'endonyme « Igbo »."
+          "notes": "La langue est identifiée par le code ISO 639-3 « ibo », qui reprend l'ancienne orthographe. Ce code technique se distingue d'Igbo, le nom employé par les personnes concernées."
         },
         {
           "title": "Igbo — Omniglot",

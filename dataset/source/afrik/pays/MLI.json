@@ -151,14 +151,14 @@
         "name": "Touareg",
         "selfAppellation": "Kel Tamasheq / Imajaghan",
         "exonyms": [
-          "Touareg (exonyme arabo-berbère",
+          "Touareg (nom arabo-berbère donné de l'extérieur)",
           "connotation historiquement ambiguë ; pas insultant mais marqué par les récits coloniaux)"
         ],
         "peopleId": "PPL_TUAREG",
         "mainRegion": "Nord (Ahaggar, Azawagh, Air, Adagh)",
         "languages": ["Tamasheq", "français", "arabe"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Le terme \"Touareg\" est un exonyme marqué par les récits coloniaux. L'auto-appellation \"Kel Tamasheq\" ou \"Imajaghan\" est préférée."
+        "appellationRemarks": "Touareg est un nom donné de l'extérieur, marqué par les récits coloniaux. Kel Tamasheq ou Imajaghan, employés par les personnes concernées pour se nommer, sont préférés."
       },
       {
         "name": "Soninké",

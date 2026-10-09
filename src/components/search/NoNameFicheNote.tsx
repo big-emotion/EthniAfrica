@@ -1,3 +1,4 @@
+import { noNameFicheCopy } from "@/lib/i18n/copy/searchFeed";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
@@ -23,11 +24,9 @@ export function NoNameFicheNote({ className }: NoNameFicheNoteProps) {
       )}
     >
       <Badge variant="outline" className="text-afh-caption">
-        Nom absent
+        {noNameFicheCopy.label}
       </Badge>
-      <span>
-        Le corpus ne documente pas encore de fiche de nom pour cette recherche.
-      </span>
+      <span>{noNameFicheCopy.body}</span>
     </div>
   );
 }

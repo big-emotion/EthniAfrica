@@ -131,7 +131,7 @@
         "mainRegion": "Région de Luanda et centre-nord de l'Angola",
         "languages": ["Kimbundu (kmb", "ISO 639-3)", "portugais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Ambundu\" est l'auto-appellation du peuple. \"Mbundu\" est une variante exonyme acceptée. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le peuple se nomme Ambundu. Mbundu est une autre forme, donnée de l'extérieur et acceptée. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Kongo",
@@ -144,7 +144,7 @@
         "mainRegion": "Nord de l'Angola (notamment Cabinda), frontière avec la RDC et le Congo",
         "languages": ["Kikongo (kon", "ISO 639-3)", "portugais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "\"Bakongo\" est l'auto-appellation (pluriel), \"Kongo\" est l'exonyme le plus courant. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le peuple se nomme Bakongo, au pluriel. Kongo est le nom donné de l'extérieur le plus courant. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Lunda",
@@ -164,7 +164,7 @@
         "mainRegion": "Est de l'Angola, frontière avec la RDC et la Zambie",
         "languages": ["Tshokwe / Chokwe (cjk", "ISO 639-3)", "portugais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "\"Tshokwe\" est l'auto-appellation, \"Chokwe\" est une variante exonyme acceptée. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le peuple se nomme Tshokwe. Chokwe est une autre forme, donnée de l'extérieur et acceptée. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Nyaneka-Nkhumbi",
@@ -207,7 +207,7 @@
         "mainRegion": "Sud de l'Angola, zones arides et semi-arides",
         "languages": ["Langues khoïsan (plusieurs langues)", "portugais"],
         "languageFamily": "FLG_KHOE",
-        "appellationRemarks": "Les termes \"Bushmen\" et \"Hottentots\" sont des exonymes coloniaux péjoratifs et doivent être évités. \"San\" et \"Khoikhoi\" sont les auto-appellations respectives. \"Khoisan\" est un terme académique utilisé pour désigner l'ensemble des peuples de cette famille linguistique. Les Khoisan sont les premiers habitants de l'Angola et de l'Afrique australe."
+        "appellationRemarks": "Les noms \"Bushmen\" et \"Hottentots\", donnés pendant la colonisation, sont méprisants et à éviter. Les groupes concernés se nomment respectivement San et Khoikhoi. Les chercheurs emploient Khoisan pour les réunir dans une même classification de langues. Ces peuples sont présentés comme les premiers habitants de l’Angola et de l’Afrique australe."
       }
     ],
     "culture": {

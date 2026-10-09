@@ -5,7 +5,7 @@ const fr = {
     metadataTitle: "Signalements",
     title: "Signalements",
     guidance:
-      "Statuer sur un signalement ne modifie pas la fiche : la décision dit ce que nous pensons de la remarque, tandis que la correction du corpus est un acte éditorial distinct. Une décision qui clôt un signalement demande une note, qui est publiée avec lui.",
+      "Répondre à un signalement ne corrige pas la fiche concernée. La correction se fait séparément. Pour clore un signalement, ajoutez une note : elle sera publiée avec votre décision.",
     statusFilter: "Statut",
     allStatuses: "Tous les statuts",
     kindFilter: "Type de signalement",
@@ -61,7 +61,7 @@ const fr = {
     metadataTitle: "Sources en attente d'examen",
     title: "Sources en attente d'examen",
     guidance:
-      "Chaque carte est une citation — un titre et une adresse exacts — sur laquelle le corpus n'a pas encore statué. Une décision prise ici est enregistrée comme brouillon : la fiche garde son statut actuel jusqu'à ce que le brouillon soit versé au registre des décisions puis appliqué. La justification reste dans le registre et n'est jamais montrée aux lecteurs.",
+      "Chaque carte présente une source à examiner, avec son titre et son adresse. Votre décision est d'abord enregistrée comme brouillon. Le statut de la source dans la fiche changera une fois la décision ajoutée au registre, puis appliquée. Votre justification reste dans le registre et n'est pas affichée aux lecteurs.",
     searchLabel: "Fiche",
     searchPlaceholder: "PPL_…, BEN, FLG_…",
     kindFilter: "Type de fiche",

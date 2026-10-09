@@ -24,7 +24,7 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
     "Le nom de famille se transmet, croit-on, depuis toujours. Depuis quand, exactement ?",
   standfirst: {
     id: "standfirst",
-    text: "Le nom de famille héréditaire n'est pas une survivance : c'est un artefact administratif. Le corpus documente des systèmes entiers où le nom ne se transmet pas.",
+    text: "Le nom de famille transmis entre générations dépend aussi de règles administratives. Nos fiches présentent d'autres manières de nommer les personnes, où le nom ne se transmet pas.",
     sourceRefs: ["afrik-naming-taxonomy"],
     figureRefs: ["patronyme-non-hereditary", "patronyme-fiches"],
   },
@@ -38,7 +38,7 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
     {
       id: "ce-que-le-corpus-tient",
       stepLabel: "03 · La personne",
-      heading: "Ce que le corpus tient",
+      heading: "Les noms présentés ici",
       blocks: [
         {
           id: "trente-six-systemes",
@@ -55,7 +55,7 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
       ],
       table: {
         caption:
-          "Les trente fiches de nom du corpus, par système et par mode de transmission",
+          "Les trente fiches de ce tableau, selon ce que le nom désigne et la manière dont il se transmet",
         columns: ["Système", "Fiches", "Ce que le nom désigne"],
         rows: [
           {
@@ -220,7 +220,7 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
         },
         {
           id: "les-systemes-sans-fiche",
-          text: "Trente-six fiches de nom, c'est peu au regard des systèmes qui existent. La chaîne somalie, l'abtirsi, n'a pas encore la sienne, et le corpus ne porte aucune fiche dont le système déclaré soit le postnom. Le glossaire les définit quand même, en disant qu'il les définit sans les instancier.",
+          text: "Le relevé de trente-six fiches utilisé pour ce chapitre ne couvre qu'une partie des façons de nommer les personnes. Il ne comprend pas de fiche consacrée à l'abtirsi, la suite de noms somalie, ni au postnom. Le glossaire explique ces deux termes.",
           sourceRefs: [],
           figureRefs: ["patronyme-fiches"],
         },

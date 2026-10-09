@@ -122,6 +122,25 @@ describe("diffFamilyArchive", () => {
   });
 
   // @req REQ-148
+  it.each([" ", "\u00a0", "\u202f"])(
+    "preserves a numeric anchor written with the thousands separator %j",
+    (separator) => {
+      const archive = "# 4. Histoire et origines\n- Mélanges depuis 1200 ans.";
+      const compare = (number: string) =>
+        diffFamilyArchive(
+          "FLG_TEST",
+          archive,
+          fiche({ historyAndOrigins: { diffusion: `Depuis ${number} ans.` } })
+        ).sections.find(
+          (section) => section.target === "content.historyAndOrigins"
+        );
+
+      expect(compare(`1${separator}200`)?.missingAnchors).not.toContain("1200");
+      expect(compare(`1${separator}201`)?.missingAnchors).toContain("1200");
+    }
+  );
+
+  // @req REQ-148
   it("keeps a three-digit year that is not a separator artefact", () => {
     const archive = ARCHIVE.replace(
       "- Rattachement afro-asiatique discuté.",

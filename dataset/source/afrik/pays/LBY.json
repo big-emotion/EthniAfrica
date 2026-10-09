@@ -125,7 +125,7 @@
         "name": "Touaregs",
         "selfAppellation": "Kel Tamasheq / Imuhagh",
         "exonyms": [
-          "Touaregs (exonyme français)",
+          "Touaregs (nom français donné de l'extérieur)",
           "« Berbère » (terme colonial",
           "considéré problématique)"
         ],
@@ -133,12 +133,16 @@
         "mainRegion": "Fezzan (sud-ouest), désert libyen",
         "languages": ["Tamasheq (tmh)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Le terme \"Touareg\" est un exonyme français. L'auto-appellation est \"Kel Tamasheq\" (ceux qui parlent tamasheq) ou \"Imuhagh\". Le terme \"Berbère\" est considéré comme problématique."
+        "appellationRemarks": "Touareg est un nom français donné de l'extérieur. Les personnes concernées se nomment Kel Tamasheq, « ceux qui parlent tamasheq », ou Imuhagh. Le nom Berbère est considéré comme problématique."
       },
       {
         "name": "Toubou",
         "selfAppellation": "Teda / Daza",
-        "exonyms": ["Toubou (exonyme français)", "Teda", "Daza"],
+        "exonyms": [
+          "Toubou (nom français donné de l'extérieur)",
+          "Teda",
+          "Daza"
+        ],
         "peopleId": "PPL_TOUBOU",
         "mainRegion": "Sud-est (région frontalière avec le Tchad)",
         "languages": ["Teda (tud)", "Daza (dzg)"],

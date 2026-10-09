@@ -73,7 +73,7 @@
         "mainRegion": "Toutes les régions de la Gambie, majoritaires",
         "languages": ["Mandinka (mnk", "ISO 639-3)", "anglais"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Mandinka\" ou \"Mandiŋka\" est l'auto-appellation. \"Mandingue\" est l'exonyme français accepté. \"Mandingo\" est un terme historique qui peut avoir une connotation péjorative dans certains contextes et doit être évité."
+        "appellationRemarks": "Les personnes concernées se nomment Mandinka ou Mandiŋka. Mandingue est un nom français donné de l'extérieur et accepté. Mandingo est un terme historique qui peut être méprisant dans certains contextes ; il est donc à éviter."
       },
       {
         "name": "Fula / Peul",
@@ -89,7 +89,7 @@
         "mainRegion": "Toutes les régions de la Gambie",
         "languages": ["Fulfulde (ful", "ISO 639-3)", "anglais"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Fulɓe\" est l'auto-appellation. \"Peul\" et \"Fulani\" sont des exonymes acceptés. \"Fellata\" peut avoir une connotation péjorative dans certains contextes et doit être évité."
+        "appellationRemarks": "Le peuple se nomme Fulɓe. Peul et Fulani sont aussi des noms acceptés, donnés de l'extérieur. Fellata peut être méprisant dans certains contextes ; il est donc à éviter."
       },
       {
         "name": "Wolof",

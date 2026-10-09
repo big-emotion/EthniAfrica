@@ -5,7 +5,7 @@
     "directives": "Voir DIRECTIVES-AFRIK.md pour les règles de rédaction complètes."
   },
   "id": "MGR_YORUBA_NAGO_COLONIAL_EXONYM",
-  "nameMain": "Imposition de l'ethnonyme colonial « Nago » aux populations yoruba du Dahomey",
+  "nameMain": "Imposition du nom colonial « Nago » aux populations yoruba du Dahomey",
   "migrationGroup": null,
   "eventType": "imposed_name",
   "classificationStatus": "colonial-legacy",
@@ -29,8 +29,8 @@
     }
   ],
   "content": {
-    "summary": "Durant la période coloniale française au Dahomey (1894-1960), l'administration a systématisé l'usage de l'exonyme « Nago » pour désigner les populations yorubaphones du sud-est du territoire, en lieu et place de l'endonyme « Yorùbá ».",
-    "narrative": "L'ethnonyme « Nago » — probablement forgé à l'origine par le royaume du Danxomè (Abomey), rival politique des cités yoruba — est repris et diffusé par l'administration coloniale française au Dahomey à partir de la conquête du royaume d'Abomey (1892-1894) pour désigner administrativement les populations yorubaphones de la région de Porto-Novo et d'Abomey, ainsi que celles du Togo voisin. Ce choix administratif, distinct de l'endonyme « Yorùbá » employé par les populations elles-mêmes, s'inscrit dans une taxonomie ethnique coloniale plus large qui a durablement marqué les catégorisations officielles jusqu'à l'indépendance du Dahomey en 1960 et au-delà.",
+    "summary": "Pendant la période coloniale française au Dahomey (1894-1960), l'administration a généralisé l'usage de Nago pour désigner les populations parlant yoruba dans le sud-est du territoire. Elle l'a préféré à Yorùbá, le nom employé par les populations elles-mêmes.",
+    "narrative": "Le nom Nago aurait d'abord été donné par le royaume du Danxomè (Abomey), rival politique des cités yoruba. L'administration coloniale française le reprend après la conquête d'Abomey (1892-1894). Elle l'utilise pour désigner les populations parlant yoruba autour de Porto-Novo et d'Abomey, ainsi qu'au Togo voisin. Ce nom diffère de Yorùbá, que les populations emploient elles-mêmes. Il fait partie des catégories utilisées par l'administration coloniale pour classer les peuples. Ces catégories ont continué à marquer les désignations officielles après l'indépendance du Dahomey, en 1960.",
     "debate": null,
     "sources": [
       {
@@ -45,7 +45,7 @@
         "url": "https://www.cambridge.org/core/journals/history-in-africa/article/abs/ethnicity-and-the-slave-trade-lucumi-and-nago-as-ethnonyms-in-west-africa1/80BEE99BEC504093D17F8BC37583AF0D",
         "year": 1997,
         "tier": "referenced",
-        "notes": "Vérifié via Wikipedia EN « Yoruba people » et FR « Yoruba (peuple) » ; source académique primaire sur l'origine et l'usage colonial de l'ethnonyme Nago."
+        "notes": "Cette étude porte sur l'origine du nom Nago et son usage pendant la colonisation. Elle a été repérée à partir des articles Wikipédia « Yoruba people » en anglais et « Yoruba (peuple) » en français."
       }
     ]
   }
