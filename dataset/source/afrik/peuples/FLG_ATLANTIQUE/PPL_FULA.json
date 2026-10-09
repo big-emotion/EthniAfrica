@@ -360,7 +360,7 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Fulɓe est celui que ce peuple se donne. On le connaît aussi sous les noms Haalpulaar'en, Futankooɓe, Peul, Fula, Fulani, Fellata et Toucouleur. L'origine des noms Fulɓe, Fula, Fellata et Toucouleur est débattue. Leur histoire est présentée plus bas.",
+    "summary": "Le nom Peul désigne un peuple qui se nomme lui-même Fulɓe, et Pullo pour une seule personne. D'autres noms existent : Haalpulaar'en, Futankooɓe, Fula, Fulani, Fellata et Toucouleur. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Fulɓe",
@@ -391,9 +391,8 @@
               "to": null,
               "label": "Usage contemporain"
             },
-            "statement": "Fulɓe est le nom que les personnes concernées emploient pour se nommer au pluriel. Pour une seule personne, elles disent Pullo. Plusieurs explications du sens de ce nom ont été proposées. Amadou Hampâté Bâ, lui-même pullo, le tire du verbe fullude, « couvrir de poussière », et cite comme autre possibilité le nom Ful, connu de la Bible, supposé par Maurice Delafosse, sans trancher entre les deux. D'autres lectures viennent de l'extérieur : « les dispersés », proposée par le commandant Gaden et rapportée par Delafosse puis Tauxier ; « brun clair, rouge », de Barth résumé par Crozals et rapporté par Tauxier, une lecture raciale de la couleur de peau qui oppose ce sens au « noir » des Wolof ; la base fur- du mot Ba-fur, par lequel les Berbères auraient désigné les peuples du Tekrur, proposée par Oumar Niang. Le linguiste J. O. Breedveld juge le sens de Pullo et de Fulɓe à peine étudié et rapporte une racine ful- sans lui donner de sens. Ces explications restent des hypothèses. Un récit d'un barde pullo du Cameroun, recueilli par Eldridge Mohammadu, parle de l'origine du peuple et non du sens du mot : il fait venir de Malle, le Mali, tous les Fulɓe et rattache à ce point de départ les noms de leurs lignages.",
+            "statement": "Fulɓe est le nom que les personnes concernées emploient pour se nommer au pluriel. Pour une seule personne, elles disent Pullo. Plusieurs explications du sens de ce nom ont été proposées : deux par Amadou Hampâté Bâ, lui-même pullo, qui ne tranche pas, les autres par des auteurs extérieurs. Elles restent des hypothèses. Le linguiste J. O. Breedveld juge le sens de Pullo et de Fulɓe à peine étudié et rapporte une racine ful- sans lui donner de sens. Un récit d'un barde pullo du Cameroun, recueilli par Eldridge Mohammadu, parle de l'origine du peuple et non du sens du mot : il fait venir de Malle, le Mali, tous les Fulɓe et rattache à ce point de départ les noms de leurs lignages.",
             "aspect": "meaning",
-            "hypothesisGroup": "origine du nom",
             "sources": [
               {
                 "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
@@ -562,11 +561,11 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
+              "from": 1849,
+              "to": 1857,
               "label": "Voyage de 1849-1855 (récit publié en 1857), à Kano"
             },
-            "statement": "Le nom Fulɓe est écrit « Fúlbe (sing. Púllo) » par Heinrich Barth.",
+            "statement": "Le nom Fulɓe est écrit « Fúlbe (sing. Púllo) » par Heinrich Barth. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand le peuple l'emploie.",
             "formAsWritten": "Fúlbe (sing. Púllo)",
             "actors": [
               {
@@ -584,12 +583,13 @@
                 "source_kind": "archive",
                 "page": "p. 121"
               }
-            ]
+            ],
+            "birth": true
           },
           {
             "period": {
-              "from": null,
-              "to": null,
+              "from": 1966,
+              "to": 1966,
               "label": "Rapporté dans un article de 1966"
             },
             "statement": "Le nom Fulɓe est écrit « Fulbe, qui fait au singulier Pullo » par Amadou Hampâté Bâ.",
@@ -609,6 +609,108 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 23"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "Proposée en 1966"
+            },
+            "statement": "Le nom Fulɓe viendrait du verbe fullude, « couvrir de poussière », selon Amadou Hampâté Bâ, lui-même pullo.",
+            "hypothesisGroup": "origine du nom Fulɓe",
+            "sources": [
+              {
+                "title": "Des Foulbé du Mali et de leur culture, Abbia, n° 14-15",
+                "author": "Amadou Hampâté Bâ",
+                "year": 1966,
+                "url": "https://www.vestiges-journal.info/Abbia/Abbia_14-15_1966/Abbiav14-15n3.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Revue Abbia, Yaoundé. Page 23 : le nom que les Peuls se donnent, deux explications de son origine données sans trancher, et la liste des noms que leur donnent les autres.",
+                "page": "p. 23"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "Rapportée en 1966"
+            },
+            "statement": "Le nom Fulɓe viendrait de Ful, un nom connu de la Bible, selon une supposition de Maurice Delafosse que rapporte Amadou Hampâté Bâ, sans trancher entre les deux.",
+            "hypothesisGroup": "origine du nom Fulɓe",
+            "sources": [
+              {
+                "title": "Des Foulbé du Mali et de leur culture, Abbia, n° 14-15",
+                "author": "Amadou Hampâté Bâ",
+                "year": 1966,
+                "url": "https://www.vestiges-journal.info/Abbia/Abbia_14-15_1966/Abbiav14-15n3.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Revue Abbia, Yaoundé. Page 23 : le nom que les Peuls se donnent, deux explications de son origine données sans trancher, et la liste des noms que leur donnent les autres.",
+                "page": "p. 23"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1937,
+              "to": 1937,
+              "label": "Rapportée en 1937"
+            },
+            "statement": "Le nom Fulɓe signifierait « les dispersés », « les éparpillés », selon le commandant Gaden, cité par Maurice Delafosse puis par Louis Tauxier.",
+            "hypothesisGroup": "origine du nom Fulɓe",
+            "sources": [
+              {
+                "title": "Mœurs et histoire des Peuls",
+                "author": "Louis Tauxier",
+                "year": 1937,
+                "url": "https://webpulaaku.site/defte/tauxier/livre1ch1.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Payot, 1937, chapitre 1, lu dans une transcription en ligne sans pagination. Tauxier cite Delafosse (Haut-Sénégal-Niger, t. I, p. 118-119), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1883,
+              "label": "Rapportée en 1883"
+            },
+            "statement": "Le nom Fulɓe reposerait sur une forme Pul, « brun clair, rouge », opposée au « noir » des Wolof, selon Heinrich Barth résumé par Crozals. Cette lecture range les peuples selon la couleur de la peau.",
+            "hypothesisGroup": "origine du nom Fulɓe",
+            "sources": [
+              {
+                "title": "Mœurs et histoire des Peuls",
+                "author": "Louis Tauxier",
+                "year": 1937,
+                "url": "https://webpulaaku.site/defte/tauxier/livre1ch1.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Payot, 1937, chapitre 1, lu dans une transcription en ligne sans pagination. Tauxier cite Crozals, Les Peuhls (1883), p. 256, qui résume Barth ; nous n'avons pas lu Crozals."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Proposée en 2018"
+            },
+            "statement": "Le nom Fulɓe viendrait de la base fur- du mot Ba-fur, par lequel les Berbères auraient désigné les peuples du Tekrur, selon Oumar Niang.",
+            "hypothesisGroup": "origine du nom Fulɓe",
+            "sources": [
+              {
+                "title": "Réflexion sur l'origine des termes Fulɓe, pullo (et aussi Wolof, Bambara, Soninke)",
+                "author": "Oumar Niang",
+                "year": 2018,
+                "url": "https://www.ndarinfo.com/Reflexion-sur-l-origine-des-termes-%C2%A0Ful%C9%93e%C2%A0--%C2%A0pullo%C2%A0-et-aussi-%C2%A0Wolof%C2%A0--%C2%A0Bambara%C2%A0-%C2%A0-%C2%A0Soninke%C2%A0-Par-Niang_a22308.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article publié sur le site d'actualité ndarinfo.com le 18 juillet 2018. La lecture Ba-fur n'est reprise dans aucun autre texte consulté."
               }
             ]
           }
@@ -892,8 +994,8 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
+              "from": 1966,
+              "to": 1966,
               "label": "Rapporté dans un article de 1966"
             },
             "statement": "Le nom Peul est écrit « Peuls ou Peulhs » par Amadou Hampâté Bâ, à propos de l'usage français.",
@@ -915,6 +1017,26 @@
                 "page": "p. 23"
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1842,
+              "to": 1842,
+              "label": "1842"
+            },
+            "statement": "Le nom Peul apparaît chez l'auteur que Louis Tauxier nomme D'Eichtal, qui sait en 1842 que ce peuple se dit « Foul ou Peul » au singulier. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mœurs et histoire des Peuls",
+                "author": "Louis Tauxier",
+                "year": 1937,
+                "url": "https://webpulaaku.site/defte/tauxier/livre1ch1.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Payot, 1937, chapitre 1, lu dans une transcription en ligne sans pagination. Tauxier cite D'Eichtal (1842) sans donner le titre de l'ouvrage ; nous ne l'avons pas lu."
+              }
+            ]
           }
         ]
       },
@@ -934,9 +1056,8 @@
               "to": null,
               "label": "Usage contemporain"
             },
-            "statement": "Nom donné aux Fulɓe par les peuples manden (mandingues). Des formes proches sont écrites par des auteurs extérieurs : Fulos chez André Álvares de Almada, natif de l'île de Santiago du Cap-Vert, dans son traité de 1594 ; Foulahs ou Pholeys chez l'Écossais Mungo Park, qui voyage en 1795-1797. Ce ne sont pas les premières mentions du peuple : François de Medeiros relève qu'il est nommé explicitement dans les sources arabes à partir d'al-Maqrīzī et de la Chronique de Kano. Un guide d'apprentissage du pular (Caudill et Diallo, 2000) le présente au contraire comme le mot haoussa ; les sources proposent donc des langues d'origine différentes.",
+            "statement": "Nom donné aux Fulɓe par les peuples manden (mandingues), puis écrit par des auteurs extérieurs. Ce ne sont pas les premières mentions du peuple : François de Medeiros relève qu'il est nommé explicitement dans les sources arabes à partir d'al-Maqrīzī et de la Chronique de Kano. Les sources ne s'accordent pas sur la langue d'où vient le nom : le manden pour les unes, le haoussa pour un guide d'apprentissage du pular.",
             "aspect": "meaning",
-            "hypothesisGroup": "origine du nom",
             "sources": [
               {
                 "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
@@ -1061,8 +1182,8 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
+              "from": 1594,
+              "to": 1594,
               "label": "Manuscrit daté de 1594"
             },
             "statement": "Le nom Fula est écrit « Fulos » par André Álvares de Almada, Tratado breve dos Rios de Guiné do Cabo Verde.",
@@ -1087,8 +1208,8 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
+              "from": 1795,
+              "to": 1799,
               "label": "Voyage de 1795-1797 (récit publié en 1799)"
             },
             "statement": "Le nom Fula est écrit « Foulahs (or Pholeys) » par Mungo Park.",
@@ -1134,6 +1255,77 @@
                 "tier": "official",
                 "source_kind": "intergovernmental",
                 "page": "p. 152"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1599,
+              "label": "XVIe siècle"
+            },
+            "statement": "Le nom Fula apparaît, écrit Fullos, chez un auteur portugais du XVIe siècle que Louis Tauxier nomme « Jeao de Barras ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mœurs et histoire des Peuls",
+                "author": "Louis Tauxier",
+                "year": 1937,
+                "url": "https://webpulaaku.site/defte/tauxier/livre1ch1.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Payot, 1937, chapitre 1, lu dans une transcription en ligne sans pagination. Tauxier ne donne ni le titre ni la page de l'ouvrage portugais ; nous ne l'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Fula viendrait des langues mandingues, où il désigne les Fulɓe, selon François de Medeiros ; Louis Tauxier le donnait déjà comme le mot des Malinké et des Bambara.",
+            "hypothesisGroup": "origine du nom Fula",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+                "author": "François de Medeiros",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. Page 152 et sa note 25 : les noms que les Fulɓe se donnent, ceux que leur donnent leurs voisins, et leur première mention explicite dans les sources arabes.",
+                "page": "p. 152"
+              },
+              {
+                "title": "Mœurs et histoire des Peuls",
+                "author": "Louis Tauxier",
+                "year": 1937,
+                "url": "https://webpulaaku.site/defte/tauxier/livre1ch1.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Payot, 1937, chapitre 1, lu dans une transcription en ligne sans pagination. Passage sur le mot Foula ou Foulah."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Fula serait le mot haoussa pour les Peuls, selon le guide d'apprentissage du pular de Herbert Caudill et Ousmane Besseko Diallo.",
+            "hypothesisGroup": "origine du nom Fula",
+            "sources": [
+              {
+                "title": "Learner's Guide to Pular (Fuuta Jallon)",
+                "author": "Herbert Caudill et Ousmane Besseko Diallo",
+                "year": 2000,
+                "url": "https://ibamba.net/pular/manual.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Guide d'apprentissage du pular, deuxième édition, Conakry. La note 1 de la page i présente Fula comme le mot haoussa pour les Peuls.",
+                "page": "p. i, note 1"
               }
             ]
           }
@@ -1263,8 +1455,8 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
+              "from": 1849,
+              "to": 1857,
               "label": "Voyage de 1849-1855 (récit publié en 1857)"
             },
             "statement": "Le nom Fulani est écrit « Féllani » par Heinrich Barth, à propos de l'usage haoussa.",
@@ -1289,8 +1481,8 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
+              "from": 1849,
+              "to": 1857,
               "label": "Voyage de 1849-1855 (récit publié en 1857), à Kano"
             },
             "statement": "Le nom Fulani est écrit « Féllani (sing. Baféllanchi) » par Heinrich Barth, à propos de l'usage haoussa.",
@@ -1341,8 +1533,8 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
+              "from": 1966,
+              "to": 1966,
               "label": "Rapporté dans un article de 1966"
             },
             "statement": "Le nom Fulani est écrit « Fulani » par Amadou Hampâté Bâ.",
@@ -1364,6 +1556,45 @@
                 "page": "p. 23"
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1364,
+              "to": 1442,
+              "label": "Vie d'al-Maqrīzī, 1364-1442"
+            },
+            "statement": "Le nom Fulani a une forme proche, Foulania, chez l'historien al-Maqrīzī, selon Louis Tauxier. C'est la plus ancienne trace de cette forme que le projet connaît ; les sources lues ne disent pas s'il s'agit du même nom.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mœurs et histoire des Peuls",
+                "author": "Louis Tauxier",
+                "year": 1937,
+                "url": "https://webpulaaku.site/defte/tauxier/livre1ch1.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Payot, 1937, chapitre 1, lu dans une transcription en ligne sans pagination. Tauxier cite al-Maqrīzī et le Tarikh es-Soudan (1667) sans en donner les pages ; nous ne les avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1830,
+              "to": 1830,
+              "label": "1830"
+            },
+            "statement": "Le nom Fulani est écrit « Foulanies » par les frères Lander, selon Louis Tauxier.",
+            "sources": [
+              {
+                "title": "Mœurs et histoire des Peuls",
+                "author": "Louis Tauxier",
+                "year": 1937,
+                "url": "https://webpulaaku.site/defte/tauxier/livre1ch1.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Payot, 1937, chapitre 1, lu dans une transcription en ligne sans pagination. Tauxier cite les frères Lander (1830) ; nous ne les avons pas lus."
+              }
+            ]
           }
         ]
       },
@@ -1383,9 +1614,8 @@
               "to": null,
               "label": "Usage contemporain"
             },
-            "statement": "Nom donné aux Fulɓe au Bornou et plus à l'est. Heinrich Barth l'entend chez les gens du Bornou ; François de Medeiros l'attribue aux Kanuri et aux Arabes du Soudan ; Amadou Hampâté Bâ le range parmi les noms que donnent les Arabes. Ces auteurs disent qui emploie le nom, non d'où il vient. Seul Abu-Manga, cité par Breedveld, lui donne une origine : un mot kanouri qui désignait d'abord les Fulɓe du Bornou. L'article anglais de Wikipédia lui prête une origine arabe, sans source.",
+            "statement": "Nom donné aux Fulɓe au Bornou et plus à l'est. Heinrich Barth l'entend chez les gens du Bornou ; François de Medeiros l'attribue aux Kanuri et aux Arabes du Soudan ; Amadou Hampâté Bâ le range parmi les noms que donnent les Arabes. Ces auteurs disent qui emploie le nom, non d'où il vient. Deux origines sont proposées, l'une kanouri, l'autre arabe ; elles restent des hypothèses.",
             "aspect": "meaning",
-            "hypothesisGroup": "origine du nom",
             "sources": [
               {
                 "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
@@ -1510,8 +1740,8 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
+              "from": 1849,
+              "to": 1857,
               "label": "Voyage de 1849-1855 (récit publié en 1857)"
             },
             "statement": "Le nom Fellata est écrit « Felláta » par Heinrich Barth, à propos de l'usage du Bornou.",
@@ -1588,8 +1818,8 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
+              "from": 1966,
+              "to": 1966,
               "label": "Rapporté dans un article de 1966"
             },
             "statement": "Le nom Fellata est écrit « Fulata ou Fellata » par Amadou Hampâté Bâ, à propos de l'usage arabe.",
@@ -1611,6 +1841,66 @@
                 "page": "p. 23"
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1825,
+              "to": 1825,
+              "label": "1825"
+            },
+            "statement": "Le nom Fellata apparaît, écrit Fellalahs, chez l'explorateur Clapperton, qui note qu'on appelait ainsi ce peuple jusque-là, selon Louis Tauxier. C'est la plus ancienne trace de ce nom que le projet connaît ; elle renvoie à un usage plus ancien qu'elle ne date pas.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mœurs et histoire des Peuls",
+                "author": "Louis Tauxier",
+                "year": 1937,
+                "url": "https://webpulaaku.site/defte/tauxier/livre1ch1.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Payot, 1937, chapitre 1, lu dans une transcription en ligne sans pagination. Tauxier cite Clapperton (1825) ; nous ne l'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Fellata viendrait d'un mot kanouri qui désignait d'abord les Fulɓe du Bornou, selon Abu-Manga, cité par J. O. Breedveld.",
+            "hypothesisGroup": "origine du nom Fellata",
+            "sources": [
+              {
+                "title": "Form and meaning in Fulfulde: a morphophonological study of Maasinankoore (thèse, Université de Leyde)",
+                "author": "J. O. Breedveld",
+                "year": 1995,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2938820/view",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chapitre 1, sections 1.1.1 et 1.1.2 : le sens de Pullo et de Fulɓe, jugé à peine étudié, une racine ful- rapportée d'après Klingenheben, et l'origine des noms peul, Fulani, fellata et fula, rapportée d'après Nussbaum (1970), Newman (1990), Abu-Manga (1986) et Arnott (1970), travaux qui n'ont pas été lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Fellata serait d'origine arabe, selon l'article anglais de Wikipédia sur les Peuls, qui ne cite pas de source pour ce point.",
+            "hypothesisGroup": "origine du nom Fellata",
+            "sources": [
+              {
+                "title": "Fula people — Wikipedia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Fula_people",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Consultée en octobre 2026 : Fula y est rattaché aux langues mandingues, Fulani au haoussa, Fallata à l'arabe ; les variantes Fulah, Fullah, Fallatah y sont listées."
+              }
+            ]
           }
         ]
       },
@@ -1630,9 +1920,8 @@
               "to": null,
               "label": "Écrit au début du XVIe siècle et employé aujourd'hui"
             },
-            "statement": "Le nom s'applique aux Fulɓe sédentaires du Fouta Toro, qui ne l'emploient pas eux-mêmes et se disent Haalpulaar'en ou Futankooɓe. Son origine est expliquée de deux manières, que les sources lues ne départagent pas. Une explication le relie à Takrūr, nom ancien du pays de la basse vallée du fleuve Sénégal : les auteurs de l'Histoire générale de l'Afrique y voient une déformation de ce nom, que les voisins wolof et seereer disent Tukulóór, et José da Silva Horta le rattache au wolof Tukulër, écrit Tucurois ou Tucuroes dès le début du XVIe siècle. Une autre, avancée à l'époque coloniale par Bérenger-Féraud, le tire de l'anglais « two colours » et l'associe à la thèse d'un métissage entre Peuls et populations noires, que Faidherbe soutenait aussi ; Yaya Wane, qui la rapporte, admet provisoirement l'idée d'un métissage tout en la jugeant trop simple.",
+            "statement": "Le nom s'applique aux Fulɓe sédentaires du Fouta Toro, qui ne l'emploient pas eux-mêmes et se disent Haalpulaar'en ou Futankooɓe. Son origine est expliquée de deux manières, que les sources lues ne départagent pas : l'une la relie à Takrūr, l'ancien nom du pays, l'autre à l'anglais « two colours ».",
             "aspect": "meaning",
-            "hypothesisGroup": "origine du nom",
             "sources": [
               {
                 "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
@@ -1855,11 +2144,11 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
+              "from": 1505,
+              "to": 1508,
               "label": "1505-1508"
             },
-            "statement": "Le nom Toucouleur est écrit « Tucurois » par Duarte Pacheco Pereira, Esmeraldo de Situ Orbis.",
+            "statement": "Le nom Toucouleur est écrit « Tucurois » par Duarte Pacheco Pereira, Esmeraldo de Situ Orbis. C'est la plus ancienne trace de ce nom que le projet connaît. Les gens qu'il désigne vivaient déjà là avant lui.",
             "formAsWritten": "Tucurois",
             "actors": [
               {
@@ -1877,7 +2166,8 @@
                 "source_kind": "academic",
                 "page": "p. 659"
               }
-            ]
+            ],
+            "birth": true
           },
           {
             "period": {
@@ -1907,8 +2197,8 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
+              "from": 1594,
+              "to": 1594,
               "label": "Manuscrit daté de 1594"
             },
             "statement": "Le nom Toucouleur est écrit « Tucurois » par André Álvares de Almada, à propos des « Fulas pretos » venus du Fouta Toro.",
@@ -2011,8 +2301,8 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
+              "from": 1966,
+              "to": 1966,
               "label": "Rapporté dans un article de 1966"
             },
             "statement": "Le nom Toucouleur est écrit « Tukulor ou Toucouleur » par Amadou Hampâté Bâ, à propos de l'usage des Djolof et des Sérères.",
@@ -2032,6 +2322,88 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 23"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1000,
+              "to": 1099,
+              "label": "XIe siècle"
+            },
+            "statement": "Le nom Takrūr désigne alors le pays de la basse vallée du Sénégal, dont le roi se convertit à l'islam avant les années 1030, d'après le géographe al-Bakrī. Mohammed El Fasi et Ivan Hrbek jugent plus probable que ce pays était alors peuplé de Soninke.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 3 : Étapes du développement de l'Islam et de sa diffusion en Afrique",
+                "author": "Mohammed El Fasi et Ivan Hrbek",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO. Page 98 : Toucouleur, déformation de Takrūr, nom que les intéressés n'utilisent pas.",
+                "page": "p. 98"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Toucouleur viendrait de Takrūr, l'ancien nom du pays, que les voisins wolof et seereer prononcent Tukulóór, selon Djibril Tamsir Niane ; Mohammed El Fasi et Ivan Hrbek y voient aussi une déformation de Takrūr ; José da Silva Horta le rattache au wolof Tukulër, écrit Tucurois ou Tucuroes dès le début du XVIe siècle.",
+            "hypothesisGroup": "origine du nom Toucouleur",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO. Page 180, note 73 : Tukulóór, déformation de Takrūr, et le nom que se donnent les intéressés.",
+                "page": "p. 180, note 73"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 3 : Étapes du développement de l'Islam et de sa diffusion en Afrique",
+                "author": "Mohammed El Fasi et Ivan Hrbek",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO. Page 98 : Toucouleur, déformation de Takrūr, nom que les intéressés n'utilisent pas.",
+                "page": "p. 98"
+              },
+              {
+                "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page 651, notes 9 et 10 : les manuscrits du traité d'André Álvares de Almada, « natural da Ilha de Santiago de Cabo Verde », datés de 1592-1593 à 1596. Page 658 : Almada écrit les Fula Fulos. Page 659 et note 41 : Tucurois chez Duarte Pacheco Pereira (1505-1508) et chez Almada, Tucuroes chez Valentim Fernandes, que l'auteur rattache au wolof Tukulër. Les textes anciens eux-mêmes n'ont pas été lus.",
+                "page": "p. 659, note 41"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "statement": "Le nom Toucouleur viendrait de l'anglais « two colours », selon Bérenger-Féraud, à l'époque coloniale, qui y voyait la trace d'un métissage, une thèse que Faidherbe soutenait aussi. Yaya Wane, qui la rapporte, admet un temps l'idée d'un métissage tout en la jugeant trop simple.",
+            "hypothesisGroup": "origine du nom Toucouleur",
+            "sources": [
+              {
+                "title": "Les Toucouleur du Fouta Tooro : stratification sociale et structure familiale",
+                "author": "Yaya Wane",
+                "year": 1969,
+                "url": "https://webpulaaku.site/defte/yWane/intro.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "IFAN, Dakar, 1969, introduction, lue dans une transcription en ligne sans pagination. Donne Haal-pulaaren et Futankooɓe comme les noms que se donnent ceux que l'on appelle Toucouleur ; rapporte l'explication de Maurice Delafosse (Tokolor et Tokoror chez les Wolof) et celle de Bérenger-Féraud (l'anglais « two colours »), liée à la thèse d'un métissage que Faidherbe soutenait aussi. Les ouvrages de Delafosse, Faidherbe et Bérenger-Féraud n'ont pas été lus."
               }
             ]
           }

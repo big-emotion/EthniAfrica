@@ -373,8 +373,15 @@ They follow [doctrine §1.1](doctrine.md) and the
 [timeline decision](strategy/name-history-timeline-2026-10-08.md). As in the
 table above, they are writing patterns with slots, not facts.
 
-- **The sentence opens on the name**, in italics the first time: « Le nom
-  _[nom]_… », « _[nom]_ désigne… ». Never a subjectless fragment.
+- **The sentence opens on the name**: « Le nom _[nom]_… », « _[nom]_
+  désigne… ». Never a subjectless fragment.
+- **Names cited in a tile are set in italics** (operator ruling, 2026-10-09):
+  every name or written form a tile, a name line or the summary cites. The
+  italics are the timeline's job, not the fiche's: the surfaces that show
+  `nameHistory` text today print it as plain text and parse no markup, so the
+  fiche keeps it plain. Never write `*…*`, `_…_` or `<em>` into the data. The
+  requirement on the timeline UI is in the
+  [timeline decision](strategy/name-history-timeline-2026-10-08.md).
 - **One tile, one idea**, in one or two complete sentences.
 - **The period is already printed at the top of the tile.** Do not repeat it as
   an opener (« À cette période… », « Vers [date]… »).

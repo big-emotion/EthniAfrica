@@ -14,6 +14,7 @@ import type { NameRecordEntry, NameRecordSource } from "@/types/names";
 
 import {
   FOLDED_RECORD_FILES,
+  enrichedLikeFiche,
   ficheNameHistory,
   foldedRecord,
 } from "./fixtures/foldedNameRecords";
@@ -75,8 +76,9 @@ describe("the noms/ records folded into their people fiches", () => {
   it.each(FOLDED_RECORD_FILES)(
     "%s: the fiche serves the forms, traces and answer-card fields the record served",
     (file) => {
-      const record = foldedRecord(file);
-      const parsed = parseNameHistory(ficheNameHistory(record.id));
+      const folded = foldedRecord(file);
+      const parsed = parseNameHistory(ficheNameHistory(folded.id));
+      const record = enrichedLikeFiche(folded, parsed.data);
 
       expect(parsed.errors).toEqual([]);
       expect(nameRecordsFromHistory(parsed.data).map(served)).toEqual(
@@ -103,18 +105,42 @@ describe("the noms/ records folded into their people fiches", () => {
   });
 
   // @req REQ-196
-  it("tells a debated origin as a hypothesis group on the name's meaning", () => {
+  it("tells each competing origin as its own account of one hypothesis group", () => {
     const fula = ficheNameHistory("PPL_FULA");
     const accountsOf = (nameText: string) =>
       fula.names.find((name) => name.nameText === nameText).accounts;
+    const toucouleurOrigins = accountsOf("Toucouleur").filter(
+      (account) => account.hypothesisGroup === "origine du nom Toucouleur"
+    );
 
-    expect(
-      accountsOf("Toucouleur").find((account) => account.aspect === "meaning")
-        .hypothesisGroup
-    ).toBeDefined();
+    expect(toucouleurOrigins.length).toBeGreaterThanOrEqual(2);
+    // No origin is crowned: none of them is the account the answer card reads.
+    expect(toucouleurOrigins.some((account) => account.aspect)).toBe(false);
     expect(accountsOf("Peul").some((account) => account.hypothesisGroup)).toBe(
       false
     );
+  });
+
+  // @req REQ-196
+  it("tells each origin once: the meaning names the hypotheses, their tiles attribute them", () => {
+    const toucouleur = ficheNameHistory("PPL_FULA").names.find(
+      (name) => name.nameText === "Toucouleur"
+    ).accounts;
+    const meaning = toucouleur.find((account) => account.aspect === "meaning");
+    const origins = toucouleur.filter((account) => account.hypothesisGroup);
+
+    for (const author of ["Djibril Tamsir Niane", "Bérenger-Féraud", "Horta"]) {
+      expect(meaning.statement).not.toContain(author);
+      expect(origins.some((tile) => tile.statement.includes(author))).toBe(
+        true
+      );
+    }
+    // The tile that took over Horta's link to Tukulër cites him.
+    expect(
+      origins.some((tile) =>
+        tile.sources.some((source) => source.author === "José da Silva Horta")
+      )
+    ).toBe(true);
   });
 
   // @req REQ-196
@@ -126,7 +152,7 @@ describe("the noms/ records folded into their people fiches", () => {
 
     expect(trace).toMatchObject({
       formAsWritten: "Fulos",
-      period: { from: null, to: null, label: "Manuscrit daté de 1594" },
+      period: { from: 1594, to: 1594, label: "Manuscrit daté de 1594" },
     });
     expect(trace.statement).toMatch(/^Le nom Fula est écrit « Fulos »/);
     expect(trace.sources[0].page).toBe("p. 658");

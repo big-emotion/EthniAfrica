@@ -25,6 +25,7 @@ import { peopleNameAnswer } from "@/lib/fiche/nameAnswer";
 import type { NameRecordDossier } from "@/types/names";
 import {
   FOLDED_RECORD_FILES,
+  enrichedLikeFiche,
   ficheNameHistory,
   foldedRecord,
 } from "@/lib/afrik/__tests__/fixtures/foldedNameRecords";
@@ -134,7 +135,10 @@ describe("names service — a people's nameHistory", () => {
   it.each(FOLDED_RECORD_FILES)(
     "%s: the folded history serves the dossier its name records served",
     async (file) => {
-      const dossier = foldedRecord(file);
+      const dossier = enrichedLikeFiche(
+        foldedRecord(file),
+        ficheNameHistory(foldedRecord(file).id)
+      );
       const fromRecords = servedFromRecords(dossier);
 
       mockPeople({
