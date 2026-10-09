@@ -11,7 +11,7 @@
         "Fanti (variante orthographique europeenne)",
         "Fante (terme utilise par les colonisateurs europeens et adopte dans la litterature academique)"
       ],
-      "originOfExonyms": "Le nom Fante est derive de l'expression akan Fa-atsew signifiant la moitie qui est partie, faisant reference a la separation des Fante des autres groupes akan autour de 1250 ap. J.-C. a Krako (Techiman actuel). Fanti est une variante orthographique anglaise fixee au XIXe siecle.",
+      "originOfExonyms": "Le nom Fante viendrait de l'expression akan Fa-atsew, qui veut dire la moitie qui est partie, et ferait reference a la separation des Fante des autres groupes akan autour de 1250 ap. J.-C. a Krako (Techiman actuel). Fanti est une variante orthographique anglaise fixee au XIXe siecle.",
       "whyProblematic": null,
       "contemporaryUsage": "Fante est l'appellation standard en anglais comme en akan. Les locuteurs se designent eux-memes comme Mfantse (singulier) ou Mfantsefo (pluriel). La langue fante est l'un des trois dialectes litteraires de l'akan (avec l'asante et l'akuapem) et est officiellement enseigne dans les ecoles du Ghana.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -93,7 +93,8 @@
       {
         "title": "SIL Ethnologue — Fante language (fat)",
         "url": "https://www.ethnologue.com/language/fat/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "World Population Review — Ghana Population 2025",
@@ -103,12 +104,14 @@
       {
         "title": "CIA World Factbook — Ghana",
         "url": "https://www.cia.gov/the-world-factbook/countries/ghana/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Recensement national du Ghana, Ghana Statistical Service",
         "url": "https://statsghana.gov.gh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

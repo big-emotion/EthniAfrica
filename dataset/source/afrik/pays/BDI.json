@@ -4,7 +4,7 @@
   "nameEn": "Burundi",
   "nameOfficial": "République du Burundi (Republika y'Uburundi)",
   "summary": "Le Burundi est un pays des Grands Lacs dont le nom désigne simplement « le pays » en kirundi, en référence au royaume précolonial qui l'a précédé. Monarchie ancienne, il passa sous protectorat allemand puis sous tutelle belge au sein du Ruanda-Urundi. Hutu, Tutsi et Twa y partagent une même langue, le kirundi.",
-  "etymology": "Le nom \"Burundi\" vient probablement du kirundi \"Uburundi\" signifiant \"pays\" ou \"territoire\". Le nom fait référence au royaume précolonial du Burundi.",
+  "etymology": "Le nom \"Burundi\" viendrait du kirundi \"Uburundi\", qui voudrait dire \"pays\" ou \"territoire\". Le nom fait référence au royaume précolonial du Burundi.",
   "nameOriginActor": "Le nom vient du royaume précolonial du Burundi (Royaume du Burundi), qui unifiait les peuples des hautes terres. Les colonisateurs allemands puis belges ont conservé ce nom.",
   "nameHistory": {
     "summary": "Le nom Burundi désigne un pays de la région des Grands Lacs, la République du Burundi, qui a gardé le nom d'un ancien royaume. En kirundi, la langue du pays, il se nomme Uburundi. Il a aussi été écrit Urundi, et réuni au Rwanda sous le nom de Ruanda-Urundi. Nous n'avons pas trouvé d'étude sur le sens premier du mot rundi ; ce que disent les sources est présenté plus bas.",
@@ -307,12 +307,14 @@
       {
         "title": "CIA World Factbook – Burundi",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Kirundi language (run)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements nationaux burundais",
@@ -322,12 +324,14 @@
       {
         "title": "ONU – Données démographiques 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Burundi",
         "url": "https://www.unfpa.org/data/world-population/BI",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Études anthropologiques sur les Grands Lacs",
@@ -342,17 +346,20 @@
       {
         "title": "CIA World Factbook – Burundi (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Toponymic Factfile: Burundi — Permanent Committee on Geographical Names (Royaume-Uni)",
         "url": "https://assets.publishing.service.gov.uk/media/68b99685b0a373a01819fe3c/Burundi_Toponymic_Factfile.pdf",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Fiche officielle britannique de toponymie, édition 2025 : kirundi langue nationale (Constitution de 2005), français et anglais, ce dernier langue officielle depuis 2014 ; Gitega capitale politique depuis 2019, Bujumbura capitale économique."
       }
     ],

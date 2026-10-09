@@ -91,7 +91,8 @@
       {
         "title": "Curley R.T. – Elders, Shades and Women: Ceremonial Change in Lango, Uganda, University of California Press, 1973",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Encyclopaedia Britannica – Lango",
@@ -106,7 +107,8 @@
       {
         "title": "SIL Ethnologue – Lango language [laj]",
         "url": "https://www.ethnologue.com/language/laj/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -93,17 +93,20 @@
       {
         "title": "Omniglot — Luba-Katanga language",
         "url": "https://www.omniglot.com/writing/lubakatanga.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Luba-Katanga (lub)",
         "url": "https://www.ethnologue.com/language/lub/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog 5.3 — Luba-Katanga (luba1250)",
         "url": "https://glottolog.org/resource/languoid/id/luba1250",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Donne Kiluba et Luba-Shaba comme noms de la langue de code lub, classée menacée ; le statut de langue d'identité nationale y est celui du tshiluba (Luba-Lulua), non du kiluba."
       },
       {

@@ -87,7 +87,8 @@
       {
         "title": "SIL Ethnologue – Winyé language (kst)",
         "url": "https://www.ethnologue.com/language/kst/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes – Gurunsi people (Winiama sculptures)",
@@ -97,7 +98,8 @@
       {
         "title": "SIL Burkina Faso – Gur languages",
         "url": "https://sil-burkina.org/en/content/gur-languages",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica – Grusi",

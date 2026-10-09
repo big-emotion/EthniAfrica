@@ -9,7 +9,7 @@
       "mainName": "Peuples Songhay (macro-groupe)",
       "selfAppellation": "Ayneha",
       "exonyms": ["Songhai", "Songhay", "Sonrhai", "Songoy", "Songhoy"],
-      "originOfExonyms": "L'origine du nom Songhay ou Songhai, donné au peuple de l'extérieur, reste incertaine. Certains spécialistes la relient à la dynastie fondatrice Za, ou Zuwa : Songhai désignerait ses descendants. Du XIe au XVIe siècle, les auteurs arabes et berbères ont écrit Sungay, Songhay ou Sonrai. Les colonisateurs européens ont repris Songhai ou Songhay. Les personnes concernées emploient Ayneha, un nom collectif qui signifie littéralement « le peuple » ou « les gens ».",
+      "originOfExonyms": "L'origine du nom Songhay ou Songhai, donné au peuple de l'extérieur, reste incertaine. Certains spécialistes la relient à la dynastie fondatrice Za, ou Zuwa : Songhai désignerait ses descendants. Du XIe au XVIe siècle, les auteurs arabes et berbères ont écrit Sungay, Songhay ou Sonrai. Les colonisateurs européens ont repris Songhai ou Songhay. Les personnes concernées emploient Ayneha, un nom collectif qui signifierait littéralement « le peuple » ou « les gens ».",
       "whyProblematic": "Le terme Songhay designe a la fois un peuple, un empire historique et un ensemble linguistique. Il peut exclure les Zarma, qui constituent le plus grand sous-groupe mais se designent eux-memes differemment. Certains chercheurs utilisent Zarma-Songhay ou Zarma-Djerma pour le sous-groupe nigerian. La categorisation comme macro-groupe recouvre une diversite linguistique et historique importante.",
       "contemporaryUsage": "Le terme Songhay est utilise en francais et en anglais pour designer l'ensemble des peuples parlant des langues songhay. Les sous-groupes les plus importants sont les Zarma (Niger occidental), les Songhay de Gao et Tombouctou (Mali), les Dendi (Benin, Niger, Nigeria) et les Humburi Senni (Mali, Burkina Faso). La population totale est estimee a plus de 6 millions de personnes.",
       "linguisticFamily": "FLG_SONGHAY",
@@ -122,7 +122,8 @@
       {
         "title": "Hunwick, John O. Timbuktu and the Songhay Empire : Al-Sa'di's Ta'rikh al-Sudan down to 1613. Brill, 1999",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Kati, Mahmoud. Tarikh al-Fattash (Chronique du chercheur). Traduit par O. Houdas et M. Delafosse. Paris, 1913",
@@ -132,17 +133,20 @@
       {
         "title": "Stoller, Paul. Fusion of the Worlds : An Ethnography of Possession among the Songhay of Niger. University of Chicago Press, 1989",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue – Songhay languages",
         "url": "https://www.ethnologue.com/subgroup/300/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Niger",
         "url": "https://www.cia.gov/the-world-factbook/countries/niger/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "OpenStax World History Volume 2 – The Songhai Empire",

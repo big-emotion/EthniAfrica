@@ -143,7 +143,8 @@
       {
         "title": "Kleinewillinghöfer, Ulrich (2014) — Gur-Adamawa relationship. In: Journal of West African Languages",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Koelle, Sigismund Wilhelm (1854) — Polyglotta Africana. London",
@@ -153,7 +154,8 @@
       {
         "title": "kids.kiddle.co — Gur languages Facts for Kids",
         "url": "https://kids.kiddle.co/Gur_languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

@@ -1,4 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 
 vi.mock("@/lib/supabase/queries/afrik/search", () => ({
   ftsSearchEntities: vi.fn(),
@@ -274,5 +276,96 @@ describe("search answer projection", () => {
     await expect(
       ftsSearch({ q: "fang", limit: 10, offset: 0 })
     ).rejects.toThrow("aggregates unavailable");
+  });
+});
+
+describe("search word projection", () => {
+  const race = JSON.parse(
+    readFileSync(
+      join(process.cwd(), "dataset/source/afrik/mots/WRD_RACE.json"),
+      "utf8"
+    )
+  );
+
+  function withRace(): FtsSearchResponse {
+    return {
+      ...response(),
+      words: [
+        {
+          id: race.id,
+          nameMain: race.nameMain,
+          wordLanguage: race.wordLanguage,
+          definition: race.definition,
+          content: {
+            relatedSubjects: race.relatedSubjects,
+            gaps: race.gaps,
+            sources: race.sources,
+          },
+          nameHistory: race.nameHistory,
+          relevance: 1,
+          exactMatch: true,
+          normalizedScore: 1,
+        },
+      ],
+      wordsTotal: 1,
+    };
+  }
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+    vi.mocked(loadSearchNamingData).mockResolvedValue(new Map());
+    vi.mocked(loadSearchAnswerExtras).mockResolvedValue(new Map());
+  });
+
+  // The word's names come from its nameHistory, already on the row: no
+  // database lookup is asked for it.
+  // @req REQ-196
+  it("answers « race » from its own nameHistory, with no extra lookup", async () => {
+    vi.mocked(ftsSearchEntities).mockResolvedValue(withRace());
+
+    const result = await ftsSearch({ q: "race", limit: 10, offset: 0 });
+    const [word] = result.words;
+
+    expect(loadSearchNamingData).toHaveBeenCalledWith(
+      expect.not.arrayContaining([expect.objectContaining({ id: "WRD_RACE" })])
+    );
+    expect(word.naming?.presentation.forms).toEqual([
+      expect.objectContaining({
+        form: "race",
+        selfGiven: true,
+        shortLine: race.nameHistory.names[0].shortLine,
+      }),
+    ]);
+    expect(word.answer).toMatchObject({
+      kind: "word",
+      title: "race",
+      what: { lead: race.definition, facts: {} },
+      origin: {
+        accounts: [{ text: race.nameHistory.summary }],
+        debated: true,
+      },
+      names: [{ form: "race", selfGiven: true }],
+    });
+  });
+
+  // The summary sums up every account, so every source of the history backs it.
+  // @req REQ-196
+  it("counts every distinct source the nameHistory cites", async () => {
+    vi.mocked(ftsSearchEntities).mockResolvedValue(withRace());
+    const cited = new Set(
+      race.nameHistory.names.flatMap(
+        (name: { accounts: { sources: object[] }[] }) =>
+          name.accounts.flatMap((account) =>
+            account.sources.map((source) => JSON.stringify(source))
+          )
+      )
+    );
+
+    const [word] = (await ftsSearch({ q: "race", limit: 10, offset: 0 })).words;
+
+    expect(word.answer?.sources.count).toBe(cited.size);
+    expect(word.answer?.origin?.accounts[0].evidence[0].sources).toHaveLength(
+      cited.size
+    );
   });
 });

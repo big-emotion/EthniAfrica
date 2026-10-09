@@ -4,7 +4,7 @@
   "nameEn": "Eritrea",
   "nameOfficial": "État d'Érythrée (State of Eritrea, Hagere Ertra)",
   "summary": "L'Érythrée porte un nom grec : « Erythraia », de la mer Rouge qui la borde, repris par la colonisation italienne en 1890. Le territoire relevait du royaume d'Aksoum, puis de chefferies tigrigna, beja et afar. Neuf peuples y sont reconnus, du Tigrinya des hauts plateaux aux Rashaida de la côte.",
-  "etymology": "Le nom \"Érythrée\" vient du grec \"Erythraia\" (Ἐρυθραία), dérivé de \"Mare Erythraeum\" (mer Érythrée), nom donné par les Grecs à la mer Rouge. Le terme signifie \"rouge\" en grec, en référence à la couleur de la mer Rouge. Les Italiens ont adopté ce nom pour leur colonie en 1890.",
+  "etymology": "Le nom \"Érythrée\" viendrait du grec \"Erythraia\" (Ἐρυθραία), qui serait dérivé de \"Mare Erythraeum\" (mer Érythrée), nom donné par les Grecs à la mer Rouge. Le terme viendrait du mot grec pour \"rouge\", en référence à la couleur de la mer Rouge. Les Italiens ont adopté ce nom pour leur colonie en 1890.",
   "nameOriginActor": "Le nom \"Érythrée\" a été donné par les Italiens lors de la création de la colonie italienne en 1890, en référence à la \"mer Érythrée\" (mer Rouge) mentionnée par les Grecs anciens. Le nom a été officialisé à l'indépendance en 1993.",
   "content": {
     "historicalNames": {
@@ -253,17 +253,20 @@
       {
         "title": "SIL Ethnologue – Languages of Eritrea",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Eritrea",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Érythrée",
         "url": "https://www.unfpa.org/data/world-population/ER",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "A Chronicle of the Eritrean Revolution\"",
@@ -298,7 +301,8 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

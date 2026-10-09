@@ -115,7 +115,8 @@
       {
         "title": "Ethnologue - Moore (mos)",
         "url": "https://www.ethnologue.com/language/mos/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Mossi in Burkina Faso",
@@ -131,23 +132,27 @@
       {
         "title": "Glottolog - Mossi",
         "url": "https://glottolog.org/resource/languoid/id/moss1236",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook - Burkina Faso",
         "url": "https://www.cia.gov/the-world-factbook/countries/burkina-faso/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Alain Maharaux, « La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux », colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995",
         "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Communication de colloque, archivée par l'Institut de recherche pour le développement. Lue le 16 septembre 2026 : la conquête des pays mossi en 1896 y est décrite comme une opération militaire."
       },
       {
         "title": "« Septembre 1896 – septembre 2016, il y a 110 ans la bataille et la prise de Ouagadougou », leFaso.net",
         "url": "https://lefaso.net/spip.php?article73244",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Presse burkinabè. Lue le 16 septembre 2026 : le refus opposé par le Mogho Naaba Wobgo, la marche de la colonne Voulet, la prise de Ouagadougou le 1er septembre 1896, le départ du souverain et le traité obtenu en janvier 1897. L'article date par ailleurs la conférence de Berlin de 1888, ce qui est inexact."
       }
     ]

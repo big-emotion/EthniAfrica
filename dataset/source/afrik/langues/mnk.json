@@ -41,30 +41,35 @@
         "title": "Glottolog 5.3 — Mandinka (mand1436)",
         "url": "https://glottolog.org/resource/languoid/id/mand1436",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Notice directe pour le code ISO 639-3 mnk et le glottocode mand1436. Classification Glottolog, du plus large au plus étroit : Mande, Mande occidental, Manding-Kpelle, Mande central, Manding-Jogo, Manding-Vai, Manding-Mokole, Manding, Manding occidental. La notice situe la langue en Gambie, en Guinée, en Guinée-Bissau et au Sénégal, et reprend l'appréciation EGIDS d'Ethnologue 2025, niveau 5, langue en développement, avec la mention d'une reconnaissance officielle par décret en 2005. Glottolog ne rattache à ce languoid aucun sous-languoid : la liste des dialectes reste vide, ce qui dit l'état de la source et non l'absence de variation dialectale. Consultée le 2026-09-16."
       },
       {
         "title": "ISO 639-3, tables de codes publiées par SIL Global, autorité d'enregistrement de la norme",
         "url": "https://iso639-3.sil.org/code_tables/download_tables",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Tables du 2026-07-15, consultées le 2026-09-16. La table des macrolangues rattache le code mnk à la macrolangue man, Mandingo, aux côtés notamment du maninkakan de l'Est. Les codes du bambara et du dioula, eux, n'appartiennent à aucune macrolangue. Un même continuum mandingue est donc coupé de deux façons selon le code, ce qui montre que le partage entre langue et dialecte est ici une décision de codification, prise code par code par un organisme, et non une frontière relevée sur le terrain."
       },
       {
         "title": "Wikipédia — Malinkés",
         "url": "https://fr.wikipedia.org/wiki/Malink%C3%A9s",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Section sur le nom, lue en ligne : mandingue, mandenka, Malinké d'origine peule ; elle renvoie à Bugiel (1922) et à Delafosse (1929), que nous n'avons pas lus."
       },
       {
         "title": "Wikipédia (anglais) — Manding region",
         "url": "https://en.wikipedia.org/wiki/Manding_region",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Section sur le nom, lue en ligne : elle reprend, par une notice du Kindlers Literatur Lexikon, le passage de Camara Laye, Le Maître de la parole. Kouma Lafôlô Kouma (Paris, Plon, 1978)."
       },
       {
         "title": "Wikipédia (anglais) — Mandinka people",
         "url": "https://en.wikipedia.org/wiki/Mandinka_people",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Note sur les graphies lue en ligne : Maninka, Manding, Mandingo ; les formes en g y sont jugées anciennes."
       }
     ]

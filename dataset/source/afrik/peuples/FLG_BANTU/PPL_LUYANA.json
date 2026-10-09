@@ -74,7 +74,8 @@
       {
         "title": "Luyana Language (LYN) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/lyn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Luyana in Zambia – Joshua Project, 2025",
@@ -94,7 +95,8 @@
       {
         "title": "The Barotse Cultural Landscape – UNESCO World Heritage Centre",
         "url": "https://whc.unesco.org/fr/listesindicatives/5428/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

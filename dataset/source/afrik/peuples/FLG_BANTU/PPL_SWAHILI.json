@@ -13,7 +13,7 @@
         "Arabes de la cote (terme inexact et problematique utilise par les Europeens)",
         "Wangozi (nom originel, parlaient le Kingozi, ancetre du swahili)"
       ],
-      "originOfExonyms": "Swahili vient de l'arabe sawāḥil, pluriel de sāḥil, « rivage, côte » : les Swahili sont « ceux de la côte » (Krapf, 1850 ; Robinson, 2024). Au XIVe siècle, Ibn Battuta emploie déjà sawāḥil, mais pour un pays : dans la traduction de Gibb (1962), il embarque à Mogadiscio « pour le pays des Sawahil [Coastlands] » et nomme Zinj les habitants de Kilwa. Le mot désigne alors une côte, non un peuple. En 1850, Krapf entend les Swahili l'employer d'eux-mêmes et rapporte trois explications du nom : une expression swahili saua hila, tirée de l'arabe hila, « ruse », que lui donnent ses interlocuteurs et qu'il récuse ; un rapprochement avec sühel, « sud-est, sud-ouest », que Krapf rattache à l'arabe suhailon, l'étoile Canopus ; et sāḥil, « côte », qu'il juge la plus juste. La date de la première attestation du mot pour des gens ou une langue n'est pas établie. L'auto-identification Waswahili s'est imposée comme dénominateur commun d'une identité complexe bantoue, arabe, persane et indienne.",
+      "originOfExonyms": "Swahili viendrait de l'arabe sawāḥil, pluriel de sāḥil, « rivage, côte » : les Swahili seraient « ceux de la côte », selon Krapf (1850) et Robinson (2024). Au XIVe siècle, Ibn Battuta emploie déjà sawāḥil, mais pour un pays : dans la traduction de Gibb (1962), il embarque à Mogadiscio « pour le pays des Sawahil [Coastlands] » et nomme Zinj les habitants de Kilwa. Le mot désigne alors une côte, non un peuple. En 1850, Krapf entend les Swahili l'employer d'eux-mêmes et rapporte trois explications du nom : une expression swahili saua hila, tirée de l'arabe hila, « ruse », que lui donnent ses interlocuteurs et qu'il récuse ; un rapprochement avec sühel, « sud-est, sud-ouest », que Krapf rattache à l'arabe suhailon, l'étoile Canopus ; et sāḥil, « côte », qu'il juge la plus juste. La date de la première attestation du mot pour des gens ou une langue n'est pas établie. L'auto-identification Waswahili s'est imposée comme dénominateur commun d'une identité complexe bantoue, arabe, persane et indienne.",
       "whyProblematic": "L'appellation Arabes pour les Waswahili efface leur fondement bantou dominant. Certains chercheurs distinguent les Waswahili ethniques (population de la cote) des locuteurs du swahili comme langue vehiculaire (plusieurs dizaines de millions de personnes).",
       "contemporaryUsage": "Waswahili designe aujourd'hui les communautes historiques de la cote est-africaine (Kenya, Tanzanie, nord du Mozambique, Comores) partageant une culture islamique, une architecture specifique et un patrimoine commercial maritime.",
       "linguisticFamily": "FLG_BANTU",
@@ -117,12 +117,14 @@
       {
         "title": "SIL Ethnologue — Swahili (swa)",
         "url": "https://www.ethnologue.com/language/swa/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO World Heritage — Stone Town of Zanzibar",
         "url": "https://whc.unesco.org/en/list/173/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Joshua Project — Swahili in United States",
@@ -132,12 +134,14 @@
       {
         "title": "CIA World Factbook — Tanzania",
         "url": "https://www.cia.gov/the-world-factbook/countries/tanzania/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Kenya",
         "url": "https://www.cia.gov/the-world-factbook/countries/kenya/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Krapf, J. L., Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect, Tübingen, L. F. Fues, 1850",
@@ -155,6 +159,7 @@
         "title": "Robinson, Morgan J., « History of the Standard Swahili Language », Oxford Research Encyclopedia of African History, 2024",
         "url": "https://doi.org/10.1093/acrefore/9780190277734.013.1012",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article publié en ligne le 30 janvier 2024, lu en texte intégral. Source du passage sur l'origine arabe du nom."
       }
     ]

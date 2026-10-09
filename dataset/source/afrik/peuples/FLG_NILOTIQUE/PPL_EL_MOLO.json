@@ -78,17 +78,20 @@
       {
         "title": "Glottolog — El Molo (elmo1238)",
         "url": "https://glottolog.org/resource/languoid/id/elmo1238",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Endangered Languages Project — El Molo",
         "url": "https://endangeredlanguages.com/elp-language/4124",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Dyson, W.S. and Fuchs, V.E. (1937). The Elmolo. Journal of the Royal Anthropological Institute of Great Britain and Ireland, 67, 327-338",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Heine, Bernd (1980). Elmolo. In The Non-Bantu Languages of Kenya, 173-218. Berlin: Dietrich Reimer",
@@ -103,7 +106,8 @@
       {
         "title": "Kenya National Bureau of Statistics — Population and Housing Census 2019",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

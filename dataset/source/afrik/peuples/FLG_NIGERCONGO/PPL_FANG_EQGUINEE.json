@@ -90,7 +90,8 @@
       {
         "title": "SIL Ethnologue / Omniglot — Fang language (fan)",
         "url": "https://www.omniglot.com/writing/fang.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Minority Rights Group — Equatorial Guinea",
@@ -100,7 +101,8 @@
       {
         "title": "UNFPA — Equatorial Guinea Population 2025",
         "url": "https://www.unfpa.org/data/world-population/GQ",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "PopulationPyramid.net — Equatorial Guinea 2025",
@@ -115,12 +117,14 @@
       {
         "title": "Revistas UCE — Fang culture of Equatorial Guinea",
         "url": "https://revistadigital.uce.edu.ec/index.php/CATEDRA/article/download/3868/5199/23782",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "U.S. Department of State — Equatorial Guinea Background Note",
         "url": "https://2009-2017.state.gov/outofdate/bgn/equatorialguinea/116191.htm",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

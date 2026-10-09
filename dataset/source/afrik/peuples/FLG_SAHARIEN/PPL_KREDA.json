@@ -93,12 +93,14 @@
       {
         "title": "Country Studies US — Chad, Nilo-Saharan Languages",
         "url": "https://countrystudies.us/chad/19.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue — Dazaga language (dzg)",
         "url": "https://www.ethnologue.com/language/dzg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Walters — A Grammar Sketch of Dazaga. ).pdf",
@@ -113,7 +115,8 @@
       {
         "title": "CIA World Factbook — Chad",
         "url": "https://www.cia.gov/the-world-factbook/countries/chad/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

@@ -93,7 +93,8 @@
       {
         "title": "Ekegusii – Minority and Minoritized Languages and Cultures, Texas State University Press, 2023",
         "url": "https://pressbooks.txst.edu/minoritylanguages/part/ekegusii/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Gusii history – Traditional Music and Cultures of Kenya, Jens Finke, 2003",
@@ -108,7 +109,8 @@
       {
         "title": "Gusii – eHRAF World Cultures, Yale University",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fl08/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Information on the Kisii tribe – Immigration and Refugee Board of Canada, 2005",

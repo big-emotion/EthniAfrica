@@ -8,7 +8,7 @@
       "mainName": "Gurma",
       "selfAppellation": "Gulimanceba / Gourmantché",
       "exonyms": ["Gurma", "Gourma", "Gourmantché", "Gurmanche", "Binumba"],
-      "originOfExonyms": "Gourmantché est la transcription française du terme qui désigne ce peuple dans le contexte colonial francophone. Gurma est la variante anglophone. Gulimanceba est l'endonymme (singulier : Gulimanche ou Gulimanceba). Bigourmantcheba est une autre forme indigène. Binumba est une appellation alternative utilisée dans certains contextes. Fada N'Gourma (capitale régionale du Burkina Faso) tire son nom de ce peuple : Fada signifiant palais ou residence royale, et N'Gourma désignant la région.",
+      "originOfExonyms": "Gourmantché est la transcription française du terme qui désigne ce peuple dans le contexte colonial francophone. Gurma est la variante anglophone. Gulimanceba est l'endonymme (singulier : Gulimanche ou Gulimanceba). Bigourmantcheba est une autre forme indigène. Binumba est une appellation alternative utilisée dans certains contextes. Fada N'Gourma (capitale régionale du Burkina Faso) tirerait son nom de ce peuple : Fada voudrait dire palais ou résidence royale, et N'Gourma désignerait la région.",
       "whyProblematic": null,
       "contemporaryUsage": "Gourmantché est le terme courant en contexte francophone (Burkina Faso, Togo, Bénin). Gurma est utilisé dans la littérature anglophone. Les membres du groupe se désignent eux-mêmes Gulimanceba. Fada N'Gourma (Burkina Faso) est le centre politique et culturel du peuple Gurma.",
       "linguisticFamily": "FLG_GUR",
@@ -128,7 +128,8 @@
       {
         "title": "João Pedro Galhano Alves — Anthropologie et écosystèmes au Niger. Humains, lions et esprits de la forêt dans la culture gourmantché. Editions l'Harmattan, Paris, 2012",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Qiraat Africa — The Gurma people of West Africa",

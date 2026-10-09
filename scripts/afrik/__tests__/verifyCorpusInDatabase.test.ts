@@ -70,6 +70,16 @@ function corpus(overrides: Partial<CorpusSnapshot> = {}): CorpusSnapshot {
         nameHistory: null,
       },
     ],
+    words: [
+      {
+        id: "WRD_RACE",
+        nameMain: "race",
+        wordLanguage: "fra",
+        definition: "d",
+        content: { relatedSubjects: [], gaps: [], sources: [] },
+        nameHistory: { summary: "s", names: [] },
+      },
+    ],
     ...overrides,
   } as unknown as CorpusSnapshot;
 }
@@ -128,6 +138,7 @@ describe("buildCorpusExpectations", () => {
       "afrik_people_countries",
       "afrik_places",
       "afrik_place_peoples",
+      "afrik_words",
       "afrik_patronymes",
     ]);
     expect(
@@ -221,6 +232,20 @@ describe("buildCorpusExpectations", () => {
     ]);
   });
 
+  // @req REQ-196
+  it("expects each word with its name_history", () => {
+    expect(expectationFor("afrik_words").rows).toEqual([
+      {
+        id: "WRD_RACE",
+        name_main: "race",
+        word_language: "fra",
+        definition: "d",
+        content: { relatedSubjects: [], gaps: [], sources: [] },
+        name_history: { summary: "s", names: [] },
+      },
+    ]);
+  });
+
   // The verifier restates each upsert's column list because the loader's row
   // builders are private. A column the loader starts writing and the verifier
   // never compares is the silent kind of drift, so the two lists are held
@@ -232,6 +257,7 @@ describe("buildCorpusExpectations", () => {
       "src/lib/afrik/loaders/languageProvenanceLoader.ts",
       "src/lib/afrik/loaders/patronymeJsonLoader.ts",
       "src/lib/afrik/loaders/placeJsonLoader.ts",
+      "src/lib/afrik/loaders/wordJsonLoader.ts",
     ].map((file) => readFileSync(join(process.cwd(), file), "utf8"));
     const bookkeeping = new Set(["updated_at", "classification_status"]);
     const compared: string[] = [];
@@ -259,7 +285,7 @@ describe("buildCorpusExpectations", () => {
 
     // Every object-literal upsert must have been found, or this test would
     // pass by comparing nothing the day a loader is reformatted.
-    expect(compared).toHaveLength(7);
+    expect(compared).toHaveLength(8);
   });
 });
 

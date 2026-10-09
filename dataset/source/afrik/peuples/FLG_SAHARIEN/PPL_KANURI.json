@@ -117,12 +117,14 @@
       {
         "title": "SIL Ethnologue — Kanuri subgroup",
         "url": "https://www.ethnologue.com/subgroup/767/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Michigan State University ALMA — Introduction to the Kanuri Language",
         "url": "https://alma.matrix.msu.edu/assets/uploads/2023/02/ALMA_IntroductionToTheKanuriLanguageEdited2.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Qiraat African — The Kanuri people in West Africa",
@@ -137,7 +139,8 @@
       {
         "title": "CIA World Factbook — Nigeria, Niger, Chad, Cameroon",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

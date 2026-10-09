@@ -74,7 +74,8 @@
       {
         "title": "Gesese, Aemero – A History of Na'o People of Goba Warada, Kafa Zone, ca. 1897 to 1991 (these, Universite de Jimma), 2020",
         "url": "https://repository.ju.edu.et/handle/123456789/5286",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nao in Ethiopia – Joshua Project, 2025",
@@ -94,12 +95,14 @@
       {
         "title": "Nayi – Ethnologue",
         "url": "https://www.ethnologue.com/language/noz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Description and Documentation of the Nayi Language – GLOCAL / AFALA, 2023",
         "url": "https://glocal.soas.ac.uk/afala2024/172-2/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nayi language endangerment – Foundation for Endangered Languages, Ogmios 52, 2013",

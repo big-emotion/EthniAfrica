@@ -156,6 +156,7 @@ identity and never trusts that path.
 | `tier`       | for `accepted`         | `official`, `referenced` or `unverified`, set by the reviewer — never by the model         |
 | `decidedBy`  | for every human status | The reviewer's account id — never an e-mail address, this repository is public             |
 | `decidedAt`  | for every human status | ISO date                                                                                   |
+| `reviewNote` | no                     | What a pre-reviewer found on opening the candidates; advice, never a decision              |
 | `proposedAt` | yes                    | ISO date of the search                                                                     |
 | `model`      | yes                    | The model that ran the search                                                              |
 
@@ -208,3 +209,13 @@ whose ratchet fails on any new unreviewed ai_generated source whether the hook r
    when an entry is malformed or two entries name one identity, and when an accepted entry is not
    in the fiche yet or the fiche contradicts it. Recording a `rejected` or `oral_needed` decision
    lowers the count, so lower the ratchet in the same change.
+
+## Source kinds awaiting a person
+
+`source-kind-review.json` lists the fiche sources that `scripts/afrik/classifySourceKinds.ts`
+leaves without a `source_kind`, grouped by host. A group carrying a `rule` is held on purpose,
+with the reason: the host serves several kinds of work (archive.org), or the vocabulary has no
+kind for it yet (encyclopedias, NGOs, mission databases). A group without one is a host no rule
+names. The script regenerates the file on every `--apply`; a decision lands as a new rule in
+the script or as a `source_kind` written in the fiche, and `npm run check:source-kinds` is then
+lowered to the new count.

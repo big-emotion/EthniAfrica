@@ -9,7 +9,7 @@
       "mainName": "Ndau (Zimbabwe)",
       "selfAppellation": "VaNdau / ChiNdau",
       "exonyms": ["Ndau", "Chindau", "Ndzawu", "Njao", "Chidanda"],
-      "originOfExonyms": "Le terme Ndau est parfois interprété comme dérivant de la salutation traditionnelle 'ndau wee!', ou du mot signifiant 'terre, pays' dans la langue ndau. Les Nguni du Gaza l'auraient traduit par 'Amading'indawo' (ceux qui cherchent un lieu), mais cette étymologie est contestée car les Ndau étaient déjà dans leurs territoires ancestraux.",
+      "originOfExonyms": "Le terme Ndau viendrait de la salutation traditionnelle 'ndau wee!', ou du mot qui veut dire 'terre, pays' dans la langue ndau. Les Nguni du Gaza l'auraient traduit par 'Amading'indawo' (ceux qui cherchent un lieu), mais cette étymologie est contestée car les Ndau étaient déjà dans leurs territoires ancestraux.",
       "whyProblematic": "Depuis 1931, beaucoup de jeunes locuteurs du ndau ont adopté l'identité shona comme identité principale, diluant la conscience ndau distincte. La reconnaissance constitutionnelle du ndau en 2013 au Zimbabwe a contribué à un renouveau identitaire, mais les tensions entre identité ndau et identité shona persistent.",
       "contemporaryUsage": "Le terme VaNdau est utilisé par les locuteurs pour désigner leur groupe. ChiNdau désigne la langue. Depuis la reconnaissance constitutionnelle de 2013 au Zimbabwe, l'identité ndau connaît un renouveau. Le terme est utilisé au Zimbabwe (districts de Chipinge et Chimanimani) et en lien avec leurs cousins du Mozambique.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -95,7 +95,8 @@
       {
         "title": "SIL Ethnologue — Ndau language (ndc)",
         "url": "https://www.ethnologue.com/language/ndc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CITE Zimbabwe — The Ndau people of Zimbabwe",
@@ -105,7 +106,8 @@
       {
         "title": "South African History Online — Mfecane",
         "url": "https://sahistory.org.za/article/mfecane-understanding-period-transformation-southern-africa",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Constitution of Zimbabwe Amendment (No. 20) Act 2013 — reconnaissance du chiNdau comme langue officielle",

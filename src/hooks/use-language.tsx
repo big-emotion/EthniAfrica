@@ -9,7 +9,7 @@ import { FALLBACK_LOCALE } from "@/lib/locale";
  * The locale of the page a client component is rendered on.
  *
  * For the components that format a figure or a date deep inside a fiche —
- * the confidence chip, the source sheet — where threading the locale through
+ * the source review chip, the source sheet — where threading the locale through
  * every caller would move dozens of files for one argument. Outside the App
  * Router (a story, a test that mocked no route) `usePathname` answers null,
  * and French is the answer there too: it is the only locale published.

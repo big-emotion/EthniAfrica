@@ -18,7 +18,7 @@
         "Hajo",
         "Tjaube"
       ],
-      "originOfExonyms": "MaYeyi est l'auto-designation du groupe (Ma- prefixe plural). Bayeyi est la forme avec le prefixe bantou Ba-. Wayeyi est la forme tswana. Bakoba et Koba sont des noms anciens utilises par les voisins San, signifiant probablement 'gens de l'eau' ou 'rameurs'. Le terme Yeyi est la forme anglicisee la plus repandue dans les sources academiques et administratives.",
+      "originOfExonyms": "MaYeyi est l'auto-designation du groupe (Ma- prefixe plural). Bayeyi est la forme avec le prefixe bantou Ba-. Wayeyi est la forme tswana. Bakoba et Koba sont des noms anciens utilises par les voisins San ; ils voudraient dire 'gens de l'eau' ou 'rameurs'. Le terme Yeyi est la forme anglicisee la plus repandue dans les sources academiques et administratives.",
       "whyProblematic": "Le nom Bakoba, parfois utilise par les voisins, a une connotation de subalternite liee a la periode de servage sous les Batawana. Les Wayeyi preferent leurs propres noms MaYeyi ou Wayeyi.",
       "contemporaryUsage": "Wayeyi et Yeyi sont les formes les plus utilisees en anglais. Au Botswana, le peuple revendique sa reconnaissance comme groupe distinct, notamment via l'Association Kamanakao fondee en 1995 pour defendre ses droits linguistiques et culturels.",
       "linguisticFamily": "FLG_BANTU",
@@ -93,12 +93,14 @@
       {
         "title": "Omniglot – Yeyi language and alphabet",
         "url": "https://www.omniglot.com/writing/yeyi.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "US Department of Justice – Wayeyi profile",
         "url": "https://www.justice.gov/eoir/file/876336/dl",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Minority Rights Group – Wayeyi in Botswana",

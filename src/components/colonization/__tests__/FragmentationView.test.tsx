@@ -130,7 +130,7 @@ describe("FragmentationView", () => {
     });
 
     // @req REQ-091
-    it("ends each row with a ConfidenceChip that opens a SourceChainSheet on activation", async () => {
+    it("ends each row with a SourceReviewChip that opens a SourceChainSheet on activation", async () => {
       const user = userEvent.setup();
       render(
         <FragmentationView
@@ -144,7 +144,7 @@ describe("FragmentationView", () => {
       const ghanaRow = rows[1];
 
       // Data is null at this layer (no confidence fields in the fragmentation
-      // API response yet), so ConfidenceChip renders its "voir les sources"
+      // API response yet), so SourceReviewChip renders its "voir les sources"
       // fallback affordance — still the same component, still opens the sheet.
       const trigger = within(ghanaRow).getByText("voir les sources");
       await user.click(trigger);

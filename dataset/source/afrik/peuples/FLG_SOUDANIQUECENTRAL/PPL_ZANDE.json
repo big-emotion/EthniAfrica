@@ -108,7 +108,8 @@
       {
         "title": "Evans-Pritchard, E.E. Witchcraft, Oracles and Magic Among the Azande. Oxford University Press, 1937. Edition abregee 1976 : ISBN 0-19-874029-8",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Azande Royal — History of the Avongara Dynasty",
@@ -118,12 +119,14 @@
       {
         "title": "SIL Ethnologue — Zande (zne)",
         "url": "https://www.ethnologue.com/language/zne/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Zande",
         "url": "https://glottolog.org/resource/languoid/id/zand1248",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "HAU Journal — New oracles among the Azande (2024)",
@@ -133,7 +136,8 @@
       {
         "title": "Leiden University — Zande chieftaincy and kingship (2024)",
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:3718381/view",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "HistoryFiles — Kingdoms of Central Africa : Zande State of Vungara",

@@ -105,7 +105,8 @@
       {
         "title": "Glottolog — Tumbuka (tumb1250)",
         "url": "https://glottolog.org/resource/languoid/id/tumb1250",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

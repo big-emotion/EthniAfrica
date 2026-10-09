@@ -139,7 +139,8 @@ export type SearchEntityType =
   | "languageFamily"
   | "person"
   | "patronyme"
-  | "place";
+  | "place"
+  | "word";
 
 /**
  * Résultat de recherche individuel

@@ -118,4 +118,22 @@ describe("buildFicheJsonLd", () => {
     expect(entity).not.toHaveProperty("containedInPlace");
     expect(entity.name).toBe("Dei");
   });
+
+  // No places index exists: the trail goes from the atlas straight to the
+  // place, never through a rung that would 404.
+  // @req REQ-196
+  it("hangs a place straight under the atlas, as a Place", () => {
+    const graph = buildFicheJsonLd("place", "fr", { name: "Gagnoa" }, URL);
+    const crumbs = graph.find((node) => node["@type"] === "BreadcrumbList");
+
+    expect(graph[0]["@type"]).toBe("Place");
+    expect(
+      (
+        crumbs?.itemListElement as Array<{ name: string; position: number }>
+      ).map((item) => [item.position, item.name])
+    ).toEqual([
+      [1, "Parcourir"],
+      [2, "Gagnoa"],
+    ]);
+  });
 });

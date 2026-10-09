@@ -8,6 +8,7 @@ import {
   getLanguageRoute,
   getLocalizedRoute,
   getPatronymeRoute,
+  getPlaceRoute,
   getPeopleRoute,
   type PageType,
 } from "@/lib/routing";
@@ -55,6 +56,7 @@ const SCHEMA_TYPE_BY_KIND: Record<FicheKind, string> = {
   peopleLinks: "DefinedTerm",
   language: "Language",
   country: "Country",
+  place: "Place",
 };
 
 /** The hub each kind of fiche hangs under, for the breadcrumb's middle rung. */
@@ -65,6 +67,8 @@ const HUB_BY_KIND: Record<FicheKind, PageType> = {
   language: "languages",
   country: "countries",
   name: "patronymes",
+  // No places index yet: a place hangs straight under the atlas.
+  place: "atlasHub",
 };
 
 const absoluteUrl = (path: string) => `https://${CANONICAL_DOMAIN}${path}`;
@@ -90,24 +94,29 @@ function breadcrumb(
 ): JsonLdNode {
   const labels = TRAIL_PAGE_LABELS[language];
   const hub = HUB_BY_KIND[kind];
+  const rungs = [
+    {
+      name: labels.atlasHub,
+      item: absoluteUrl(getLocalizedRoute(language, "atlasHub")),
+    },
+    ...(hub === "atlasHub"
+      ? []
+      : [
+          {
+            name: labels[hub],
+            item: absoluteUrl(getLocalizedRoute(language, hub)),
+          },
+        ]),
+    { name, item: url },
+  ];
 
   return {
     "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: labels.atlasHub,
-        item: absoluteUrl(getLocalizedRoute(language, "atlasHub")),
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: labels[hub],
-        item: absoluteUrl(getLocalizedRoute(language, hub)),
-      },
-      { "@type": "ListItem", position: 3, name, item: url },
-    ],
+    itemListElement: rungs.map((rung, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      ...rung,
+    })),
   };
 }
 
@@ -180,6 +189,7 @@ const ROUTE_BY_KIND: Record<
   family: getFamilyRoute,
   language: getLanguageRoute,
   name: getPatronymeRoute,
+  place: getPlaceRoute,
 };
 
 /**

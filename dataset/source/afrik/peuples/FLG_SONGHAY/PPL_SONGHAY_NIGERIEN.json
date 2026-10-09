@@ -93,27 +93,32 @@
       {
         "title": "eHRAF World Cultures – Songhai (Yale)",
         "url": "https://ehrafworldcultures.yale.edu/cultures/MS20/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Stoller, Paul. Fusion of the Worlds : An Ethnography of Possession among the Songhay of Niger. University of Chicago Press, 1989",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Stoller, Paul & Olkes, Cheryl. In Sorcery's Shadow. University of Chicago Press, 1987",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue – Koyraboro Senni (ses)",
         "url": "https://www.ethnologue.com/language/ses/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Niger",
         "url": "https://www.cia.gov/the-world-factbook/countries/niger/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "African Spiritualities – Holle Hori : Songhay spirit possession",

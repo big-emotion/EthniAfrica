@@ -58,6 +58,7 @@ export function QuizBlock({
       year: null,
       tier: question.source.tier,
       url: question.source.url,
+      sourceKind: question.source.sourceKind,
     },
     assertionId: question.assertionId,
   };

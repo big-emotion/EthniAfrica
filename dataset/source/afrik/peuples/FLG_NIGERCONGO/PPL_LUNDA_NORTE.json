@@ -92,12 +92,14 @@
       {
         "title": "Country Studies — Angola, Lunda-Chokwe",
         "url": "https://countrystudies.us/angola/62.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "EPR Atlas — Ethnicity in Angola",
         "url": "https://growup.ethz.ch/atlas/pdf/Angola.pdf",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Scribd — Introduction Lunda Tshokwe (traduction)",
@@ -107,12 +109,14 @@
       {
         "title": "SIL Ethnologue — Lunda (lun)",
         "url": "https://www.ethnologue.com/language/lun/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Angola",
         "url": "https://www.cia.gov/the-world-factbook/countries/angola/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

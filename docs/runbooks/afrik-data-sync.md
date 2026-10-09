@@ -268,7 +268,7 @@ silently go stale under a route that changed.
 
 `scripts/ci/seedEphemeralDatabase.ts` reuses `migrateAfrikToDatabase.ts`'s own exported
 `upsertLanguageFamilies` / `upsertPeoples` / `upsertCountries`, so a fiche seeded here carries the
-same classification-protection and assertion-writing logic a real sync does — the confidence chip
+same classification-protection and assertion-writing logic a real sync does — the source review chip
 on `PPL_WOLOF`'s ephemeral fiche is not a stub. It does **not** reuse that script's orchestration:
 the drift comparison and orphan scan there assume they are reading the whole corpus, and would
 misread a deliberately partial one as thousands of missing rows. Out of scope, on purpose:

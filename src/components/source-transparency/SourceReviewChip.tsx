@@ -2,13 +2,16 @@
 
 import * as React from "react";
 import { useRouteLanguage } from "@/hooks/use-language";
-import { confidenceChipCopy } from "@/lib/i18n/copy/confidenceChip";
+import { sourceReviewChipCopy } from "@/lib/i18n/copy/sourceReviewChip";
 import { formatDate } from "@/lib/languageTag";
 import { cn } from "@/lib/utils";
 import type { Language } from "@/types/shared";
 
 /**
- * ConfidenceChip — L3 component (ETNI-25)
+ * SourceReviewChip — L3 component (ETNI-25)
+ *
+ * Named for what it shows: the sources' count and their last review. It was
+ * `ConfidenceChip` until the score left reader surfaces (ETNI-2016, ETNI-2039).
  *
  * Renders a tappable typographic pill at the end of an assertion:
  *   `N références · revu YYYY-MM-DD`
@@ -30,12 +33,12 @@ import type { Language } from "@/types/shared";
 const SESSION_PULSE_KEY = "afh-chip-pulsed-ids";
 const KEYFRAMES_STYLE_ID = "afh-chip-keyframes";
 
-export type ConfidenceChipVariant = "inline" | "hero" | "contested";
+export type SourceReviewChipVariant = "inline" | "hero" | "contested";
 
-export type ConfidenceChipProps = {
+export type SourceReviewChipProps = {
   sourceCount: number | null;
   lastHumanAuditAt: string | null;
-  variant?: ConfidenceChipVariant;
+  variant?: SourceReviewChipVariant;
   onOpen?: () => void;
   ariaSuffix?: string;
   id?: string;
@@ -109,7 +112,7 @@ function ensureKeyframesInjected(): void {
 }
 
 // @req REQ-019
-export function ConfidenceChip({
+export function SourceReviewChip({
   sourceCount,
   lastHumanAuditAt,
   variant = "inline",
@@ -117,7 +120,7 @@ export function ConfidenceChip({
   ariaSuffix,
   id,
   language: languageOverride,
-}: ConfidenceChipProps) {
+}: SourceReviewChipProps) {
   // Read off the route rather than threaded: the chip sits at the end of an
   // assertion on every fiche surface, and its dozen callers have no locale
   // to hand it.
@@ -146,7 +149,7 @@ export function ConfidenceChip({
   }, [hasAllData, id]);
 
   if (!hasAllData) {
-    const sourceLink = confidenceChipCopy[language].viewSources;
+    const sourceLink = sourceReviewChipCopy[language].viewSources;
     return (
       <span className="inline-flex items-center p-1">
         <a
@@ -174,7 +177,7 @@ export function ConfidenceChip({
   // is what the date means — a person last read the references — not a promise
   // that the claim was verified. The count is a count, and the sources sheet
   // says it is not corroboration (audit findings T04, T02).
-  const copy = confidenceChipCopy[language];
+  const copy = sourceReviewChipCopy[language];
   const references = copy.references(sourceCount);
   const pillText = copy.pill(references, shortDate);
   const baseAriaLabel = copy.openSources(references, longDate);
@@ -182,7 +185,7 @@ export function ConfidenceChip({
     ? `${baseAriaLabel} ${ariaSuffix}`
     : baseAriaLabel;
 
-  const variantClasses: Record<ConfidenceChipVariant, string> = {
+  const variantClasses: Record<SourceReviewChipVariant, string> = {
     inline:
       "text-afh-caption font-medium tracking-tight text-[color:var(--afh-text-soft,var(--country-text-soft,#7A6B5D))]",
     hero: "text-afh-small font-semibold tracking-tight text-[color:var(--afh-text,var(--country-text,#2C2018))]",

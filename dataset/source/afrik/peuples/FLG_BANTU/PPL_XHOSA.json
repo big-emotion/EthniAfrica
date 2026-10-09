@@ -8,7 +8,7 @@
       "mainName": "Xhosa",
       "selfAppellation": "amaXhosa",
       "exonyms": ["Xhosa", "Kosa", "Abambo", "Red Blanket People"],
-      "originOfExonyms": "Le terme amaXhosa est l'autonym en isiXhosa (ama- etant le prefixe de classe pour les peuples). Kosa est une transcription ancienne utilisee par certains colons. L'appellation Red Blanket People vient des couvertures teintes a l'ocre rouge portees traditionnellement par les femmes Xhosa. Abambo est un nom historique. Le X dans Xhosa represente un clic dental lateral, typique des langues nguni ayant emprunte aux Khoisan.",
+      "originOfExonyms": "Le terme amaXhosa est l'autonym en isiXhosa (ama- etant le prefixe de classe pour les peuples). Kosa est une transcription ancienne utilisee par certains colons. L'appellation Red Blanket People viendrait des couvertures teintes a l'ocre rouge portees traditionnellement par les femmes Xhosa. Abambo est un nom historique. Le X dans Xhosa represente un clic dental lateral, typique des langues nguni ayant emprunte aux Khoisan.",
       "whyProblematic": null,
       "contemporaryUsage": "AmaXhosa est l'autonym courant. Xhosa est l'usage general en anglais et en afrikaans. isiXhosa designe specifiquement la langue.",
       "linguisticFamily": "FLG_BANTU",
@@ -103,7 +103,8 @@
       {
         "title": "South African History Online — Xhosa",
         "url": "https://sahistory.org.za/article/xhosa",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "South African Tourism — Xhosa culture",
@@ -113,12 +114,14 @@
       {
         "title": "Statistics South Africa — Population trends 2025",
         "url": "https://www.statssa.gov.za/?p=18613",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "SIL Ethnologue — isiXhosa (xho)",
         "url": "https://www.ethnologue.com/language/xho/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kruger Park — Xhosa people",

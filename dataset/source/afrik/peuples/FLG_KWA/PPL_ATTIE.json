@@ -93,7 +93,8 @@
       {
         "title": "Ethnologue : Attié language (ATI)",
         "url": "https://www.ethnologue.com/language/ati/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project : Attie in Côte d'Ivoire",
@@ -103,7 +104,8 @@
       {
         "title": "UNESCO : Les savoir-faire liés à la fabrication de l'attiéké (2024)",
         "url": "https://ich.unesco.org/fr/RL/les-savoir-faire-lies-a-la-fabrication-de-l-attieke-en-cote-d-ivoire-02086",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Spirit Land of Africa : Attié culture",
@@ -113,7 +115,8 @@
       {
         "title": "Rezo Ivoire : Le peuple Attié",
         "url": "https://www.rezoivoire.net/ivoire/patrimoine/2826/le-peuple-attie.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "101 Last Tribes : Akye",

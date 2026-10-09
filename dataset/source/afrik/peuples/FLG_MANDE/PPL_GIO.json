@@ -106,7 +106,8 @@
       {
         "title": "Liberia Population and Housing Census 2022 – LISGIS",
         "url": "https://www.lisgis.gov.lr/document/LiberiaCensus2022Report.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

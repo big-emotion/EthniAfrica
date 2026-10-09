@@ -4,7 +4,7 @@
   "nameEn": "Zimbabwe",
   "nameOfficial": "République du Zimbabwe (Republic of Zimbabwe)",
   "summary": "Le Zimbabwe porte le nom des « maisons de pierre » — dzimba-dza-mabwe en shona — c'est-à-dire des ruines du Grand Zimbabwe, centre commercial majeur du XIe au XVe siècle. Royaumes Mutapa, Rozvi puis Ndebele s'y sont succédé, avant la Rhodésie du Sud. Shona, Ndebele et Tonga y perpétuent la sculpture sur pierre et la peinture murale.",
-  "etymology": "Le nom \"Zimbabwe\" vient du terme shona \"dzimba-dza-mabwe\", qui signifie \"maisons de pierre\" ou \"grandes maisons de pierre\". Ce terme fait référence aux ruines du Grand Zimbabwe, un site archéologique majeur construit entre le XIe et le XVe siècle.",
+  "etymology": "Le nom \"Zimbabwe\" viendrait du terme shona \"dzimba-dza-mabwe\", qui veut dire \"maisons de pierre\" ou \"grandes maisons de pierre\". Ce terme fait référence aux ruines du Grand Zimbabwe, un site archéologique majeur construit entre le XIe et le XVe siècle.",
   "nameOriginActor": "Le nom \"Zimbabwe\" a été adopté lors de l'indépendance en 1980, remplaçant \"Rhodésie du Sud\". Il rend hommage à l'ancienne civilisation du Grand Zimbabwe, construite par le peuple Shona.",
   "content": {
     "historicalNames": {
@@ -156,17 +156,20 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Zimbabwe",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Ethnologue – Languages of Zimbabwe",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Études anthropologiques sur les peuples bantous du Zimbabwe",
@@ -186,22 +189,26 @@
       {
         "title": "CIA World Factbook – Zimbabwe (ethnic groups, 2012 census)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Zimbabwe",
         "url": "https://www.unfpa.org/data/world-population/ZW",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNESCO World Heritage Centre – Great Zimbabwe National Monument",
         "url": "https://whc.unesco.org/en/list/364/",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Bien inscrit sur la Liste du patrimoine mondial en 1986 ; la synthèse de sa valeur universelle exceptionnelle le date de 1100 à 1450 de notre ère."
       }
     ],

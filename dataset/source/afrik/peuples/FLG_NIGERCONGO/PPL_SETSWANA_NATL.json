@@ -117,12 +117,14 @@
       {
         "title": "The Conversation — Botswana's kgotla system and democracy (2024)",
         "url": "https://theconversation.com/in-a-world-where-political-polarization-and-disengagement-are-denting-democracy-does-botswanas-kgotla-system-hold-the-key-242358",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "South African History Online — Tswana",
         "url": "https://sahistory.org.za/article/tswana",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "EBSCO Research Starters — Tswana or Setswana language",
@@ -132,12 +134,14 @@
       {
         "title": "SIL Ethnologue — Setswana (tsn)",
         "url": "https://www.ethnologue.com/language/tsn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Botswana",
         "url": "https://www.cia.gov/the-world-factbook/countries/botswana/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

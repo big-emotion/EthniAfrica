@@ -296,58 +296,69 @@
       {
         "title": "Guthrie, M. (1948) – The Classification of the Bantu Languages. London : International African Institute, Oxford University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Greenberg, J. H. (1963) – The Languages of Africa. Bloomington : Indiana University",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nurse, D. & Philippson, G. (2003) – The Bantu Languages. London : Routledge",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Vansina, J. (1990) – Paths in the Rainforests. Madison : University of Wisconsin Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ehret, C. (1998) – An African Classical Age. Charlottesville : University Press of Virginia",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Berniell-Lee, G. et al. (2009) – \"Genetic and Demographic Implications of the Bantu Expansion\", Molecular Biology and Evolution, vol. 26, n°7, pp. 1581-1589",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Henn, B. M. et al. (2011) – \"Hunter-gatherer genomic diversity suggests a southern African origin for modern humans\", Proceedings of the National Academy of Sciences, vol. 108, n°13, pp. 5154-5162",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "ONU (2025) – World Population Prospects 2025. New York : United Nations",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA (2025) – État de la population mondiale 2025. New York : UNFPA",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "SIL Ethnologue (2025) – \"Bantu languages\"",
         "url": "https://www.ethnologue.com/subgroups/bantu",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Cette notice ne sert pas de source au chiffre de 350 millions de personnes."
       },
       {
         "title": "Bostoen, Koen et Van de Velde, Mark (dir.), The Bantu Languages, 2e édition, Routledge, 2019, introduction, p. 3",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Source du chiffre d'environ 350 millions de personnes (total de la famille des langues bantoues) : une estimation d'environ 350 millions, extrapolation de Hammarström, communication personnelle, citée dans cette introduction. C'est un ordre de grandeur sans année, que nous n'avons pas relu à la page dans cette session."
       },
       {
@@ -359,29 +370,34 @@
       {
         "title": "Glottolog (2025) – \"Narrow Bantu\"",
         "url": "https://glottolog.org/resource/languoid/id/narr1281",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Statistics South Africa (2025) – Census 2022 Statistical Release P0301.4, Table 2.8 (isiZulu home language)",
         "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "« The Bantu languages: sociohistorical perspectives », in Rajend Mesthrie (dir.), Language in South Africa, Cambridge University Press, 2002",
         "url": "https://www.cambridge.org/core/books/abs/language-in-south-africa/the-bantu-languages-sociohistorical-perspectives/02CCE08E10611E69474FC93EDCC574B9",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Chapitre d'un ouvrage universitaire publié. Date le premier emploi du terme par Bleek de 1857 ou 1858 et sa popularisation de la Comparative Grammar de 1862, et glose Bantu par « personnes ». Consulté le 25 septembre 2026."
       },
       {
         "title": "South African History Online – « Defining the term Bantu » (d'après un essai de Kees van der Waal), publié le 31 mars 2011",
         "url": "https://www.sahistory.org.za/article/defining-term-bantu",
         "tier": "referenced",
+        "source_kind": "repository",
         "notes": "Article lu en ligne. Rapporte que Bleek emploie Bantu comme terme de classement dans sa Comparative Grammar de 1862 (sans mentionner les emplois antérieurs de 1857 et 1858), à partir du zoulou abantu, « personnes » ; que le gouvernement d'apartheid substitue Bantu à « indigène » vers 1960 ; et que le terme, rejeté par beaucoup, a aussi été repris positivement, par exemple dans le périodique Umsebenzi de l'ANC dans les années 1940."
       },
       {
         "title": "Dictionary of South African English – entrée « Bantu »",
         "url": "https://www.dsae.co.za/entry/bantu/e00566",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Entrée lue en ligne. Donne le préfixe pluriel ba-, « personnes », et le radical -ntu, « personne », comme éléments sur lesquels Bleek a formé le mot ; une première citation du dictionnaire vers 1862, tirée de Zulu-Land de L. Grout ; et marque l'emploi désignant des personnes noires africaines comme offensant depuis l'apartheid."
       }
     ]

@@ -108,12 +108,14 @@
       {
         "title": "SIL Ethnologue — Saramaccan language (srm)",
         "url": "https://www.ethnologue.com/language/srm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ISO 639-3 Registration Authority — srm",
         "url": "https://iso639-3.sil.org/code/srm",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Confirme le code ISO 639-3 du saamaka."
       },
       {
@@ -126,6 +128,7 @@
         "title": "Richard Price, « The Maroon Population Explosion: Suriname and Guyane »",
         "url": "https://brill.com/view/journals/nwig/87/3-4/article-p323_3.xml?language=en",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article academique evalue par les pairs, revue New West Indian Guide (Brill, 2013) ; source des chiffres demographiques."
       }
     ]

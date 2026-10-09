@@ -8,7 +8,7 @@
       "mainName": "Chaoui",
       "selfAppellation": "Ishawiyen / Icawiyen",
       "exonyms": ["Shawiya", "Chaouia", "Shawia", "Shawi"],
-      "originOfExonyms": "Le terme Chaoui ou Chaouia vient de l'arabe et signifie berger ou gardien de troupeaux. Le nom designe les Berberes Zenata et renvoie a la pratique ancestrale du pastoralisme, selon le traducteur de Ibn Khaldoun (de Slane). L'orthographe francaise Chaouia a ete fixee par l'administration coloniale.",
+      "originOfExonyms": "Le terme Chaoui ou Chaouia viendrait de l'arabe et voudrait dire « berger » ou « gardien de troupeaux ». Le nom designe les Berberes Zenata et renvoie a la pratique ancestrale du pastoralisme, selon le traducteur de Ibn Khaldoun (de Slane). L'orthographe francaise Chaouia a ete fixee par l'administration coloniale.",
       "whyProblematic": null,
       "contemporaryUsage": "Chaoui et Shawiya sont tous deux en usage courant en Algerie et dans la litterature scientifique. Les locuteurs utilisent le terme Icawiyen pour se designer eux-memes.",
       "linguisticFamily": "FLG_BERBERE",
@@ -103,7 +103,8 @@
       {
         "title": "Ethnologue SIL International - Tachawit (shy)",
         "url": "https://www.ethnologue.com/language/shy/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

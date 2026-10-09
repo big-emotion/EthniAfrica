@@ -88,7 +88,8 @@
       {
         "title": "SIL Ethnologue — Kera (ker)",
         "url": "https://www.ethnologue.com/language/ker",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Kera in Chad",
@@ -108,7 +109,8 @@
       {
         "title": "Wiktionary — ISO 639-3 codes Africa (ker classification)",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

@@ -16,6 +16,7 @@ import {
   getPatronymeRoute,
   getPeopleLinksRoute,
   getPeopleRoute,
+  getPlaceRoute,
   getStaticPageRoute,
 } from "@/lib/routing";
 
@@ -29,6 +30,7 @@ const CORPUS = {
   families: ["FLG_NIGER_CONGO"],
   languages: ["bam", "wol"],
   patronymes: ["PAT_BAMBA_CLAN"],
+  places: ["LOC_GAGNOA"],
 };
 
 async function urls() {
@@ -83,6 +85,15 @@ describe("sitemap.xml", () => {
     expect(all).toContain(`${base}${getLanguageRoute("fr", "wol")}`);
     expect(all).toContain(
       `${base}${getPatronymeRoute("fr", "PAT_BAMBA_CLAN")}`
+    );
+  });
+
+  // @req REQ-196
+  it("carries one url per place page", async () => {
+    const all = await urls();
+
+    expect(all).toContain(
+      `https://${CANONICAL_DOMAIN}${getPlaceRoute("fr", "LOC_GAGNOA")}`
     );
   });
 
@@ -171,6 +182,7 @@ describe("sitemap.xml", () => {
       families: [],
       languages: [],
       patronymes: [],
+      places: [],
     });
 
     const all = await urls();
@@ -178,6 +190,7 @@ describe("sitemap.xml", () => {
     expect(all.some((url) => url.includes("/peuples/PPL_"))).toBe(false);
     expect(all.some((url) => url.includes("/atlas/langues/"))).toBe(false);
     expect(all.some((url) => url.includes("/atlas/noms/"))).toBe(false);
+    expect(all.some((url) => url.includes("/atlas/lieux/"))).toBe(false);
   });
 
   // @req REQ-141

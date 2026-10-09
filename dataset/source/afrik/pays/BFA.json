@@ -284,17 +284,20 @@
       {
         "title": "SIL Ethnologue – Languages of Burkina Faso",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Burkina Faso",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Burkina Faso",
         "url": "https://www.unfpa.org/data/world-population/BF",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Izard, Michel – \"Le Yatenga précolonial\"",
@@ -319,24 +322,28 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Alain Maharaux, « La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux », colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995",
         "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Communication de colloque, archivée par l'Institut de recherche pour le développement. Lue intégralement : la création de la colonie en 1919, sa suppression en 1932 et le partage de son territoire, la Région de la Haute Côte-d'Ivoire, le rétablissement de 1947, et la phrase selon laquelle le gentilé emprunte aux trois langues principales du pays."
       },
       {
         "title": "Benjamin Roger, « Le 4 août 1984, Thomas Sankara rebaptisait la Haute-Volta en Burkina Faso », Jeune Afrique, 25 juillet 2014",
         "url": "https://www.jeuneafrique.com/48652/politique/le-4-ao-t-1984-thomas-sankara-rebaptisait-la-haute-volta-en-burkina-faso/",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Article de presse signé et daté. Donne la date de l'ordonnance, le 2 août 1984, et son entrée en vigueur le 4 août 1984."
       },
       {
         "title": "UNESCO, Centre du patrimoine mondial — Sites de métallurgie ancienne du fer du Burkina Faso, bien n° 1602, inscrit en 2019",
         "url": "https://whc.unesco.org/fr/list/1602/",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Déclaration de valeur universelle exceptionnelle publiée par le Centre du patrimoine mondial. Lue le 16 septembre 2026 : la datation de Douroula au VIIIe siècle avant notre ère, la diffusion de la technologie du fer vers 500 avant notre ère, la continuité de production sur plus de 2700 ans, et les traditions de forgerons vivantes à Yamané, Kindibo et Douroula."
       },
       {

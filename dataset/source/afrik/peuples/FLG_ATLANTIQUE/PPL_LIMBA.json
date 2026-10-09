@@ -103,12 +103,14 @@
       {
         "title": "Ethnologue - Limba, West-Central (lia)",
         "url": "https://www.ethnologue.com/language/lia/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue - Limba, East (lma)",
         "url": "https://www.ethnologue.com/language/lma/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

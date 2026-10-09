@@ -13,7 +13,7 @@
         "Kanemboue (transcription française coloniale)",
         "Kanembou"
       ],
-      "originOfExonyms": "Kanembu est le nom que le peuple se donne et celui qu'emploient les autres populations. Il désigne les habitants du Kanem, au nord-est du lac Tchad. Dans leur langue, la terminaison -bu signifie peuple. Kanembou et Kanemboue sont des adaptations françaises employées à l'époque coloniale.",
+      "originOfExonyms": "Kanembu est le nom que le peuple se donne et celui qu'emploient les autres populations. Il désigne les habitants du Kanem, au nord-est du lac Tchad. Dans leur langue, la terminaison -bu signifierait peuple. Kanembou et Kanemboue sont des adaptations françaises employées à l'époque coloniale.",
       "whyProblematic": "La frontière entre Kanembu et Kanuri est souvent floue dans la littérature : les deux groupes partagent une origine commune dans l'empire du Kanem-Bornu, et leur langue forme un continuum dialectal. Certains auteurs traitent le kanembu comme un simple dialecte du kanuri, d'autres comme une langue distincte.",
       "contemporaryUsage": "Le terme Kanembu est couramment utilisé au Tchad pour désigner ce groupe. Les locuteurs se distinguent des Kanuri du Nigeria, bien que les deux groupes partagent une histoire et une langue proches. Au Tchad, de nombreux Kanembu s'identifient à l'Alifa de Mao, chef traditionnel de la région du Kanem.",
       "linguisticFamily": "FLG_SAHARIEN",
@@ -107,12 +107,14 @@
       {
         "title": "SIL Ethnologue — Kanembu language (kbl)",
         "url": "https://www.ethnologue.com/language/kbl/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Kanembu (kane1243)",
         "url": "https://glottolog.org/resource/languoid/id/kane1243",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Lumen Learning / SUNY — Bornu Empire",
@@ -127,12 +129,14 @@
       {
         "title": "Michigan State University — Introduction to the Kanuri Language",
         "url": "https://alma.matrix.msu.edu/assets/uploads/2023/02/ALMA_IntroductionToTheKanuriLanguageEdited2.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — Chad",
         "url": "https://www.cia.gov/the-world-factbook/countries/chad/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

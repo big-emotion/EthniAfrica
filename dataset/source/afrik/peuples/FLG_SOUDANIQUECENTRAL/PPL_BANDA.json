@@ -113,7 +113,8 @@
       {
         "title": "SIL Ethnologue — Banda-Linda (liy)",
         "url": "https://www.ethnologue.com/language/liy/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Banda, West Central in Central African Republic",

@@ -23,6 +23,7 @@ import type {
   RankedPeople,
   RankedPerson,
   RankedPlace,
+  RankedWord,
   RankedQuizQuestion,
   RankedSearchHit,
   SearchHitKind,
@@ -101,6 +102,7 @@ async function rankAttempt(
     quizResult,
     languageResult,
     placeResult,
+    wordResult,
   ] = await Promise.all([
     !quizOnly
       ? supabase.rpc("afrik_search_peoples", {
@@ -168,6 +170,13 @@ async function rankAttempt(
           p_offset: offset,
         })
       : Promise.resolve({ data: EMPTY_RANKED_PAYLOAD, error: null }),
+    !quizOnly && text
+      ? supabase.rpc("afrik_search_words", {
+          p_q: text,
+          p_limit: limit,
+          p_offset: offset,
+        })
+      : Promise.resolve({ data: EMPTY_RANKED_PAYLOAD, error: null }),
   ]);
 
   if (peopleResult.error) {
@@ -221,6 +230,16 @@ async function rankAttempt(
     ? EMPTY_RANKED_PAYLOAD
     : asRankedPayload(placeResult.data);
 
+  // Migration 104 likewise: an unknown function is « no word ».
+  const wordsMissing = isMissingFunction(wordResult.error);
+  if (wordResult.error && !wordsMissing) {
+    logger.error("Error in ranked words search", wordResult.error);
+    throw wordResult.error;
+  }
+  const wordPayload = wordsMissing
+    ? EMPTY_RANKED_PAYLOAD
+    : asRankedPayload(wordResult.data);
+
   const peoples = peoplePayload.rows.map(toRankedPeople);
   const countries = countryPayload.rows.map(toRankedCountry);
   const families = familyPayload.rows.map(toRankedLanguageFamily);
@@ -237,6 +256,7 @@ async function rankAttempt(
   );
   const languages = languagePayload.rows.map(toRankedLanguage);
   const places = placePayload.rows.map(toRankedPlace);
+  const words = wordPayload.rows.map(toRankedWord);
 
   const total =
     peoplePayload.total +
@@ -246,7 +266,8 @@ async function rankAttempt(
     patronymePayload.total +
     quizPayload.total +
     languagePayload.total +
-    placePayload.total;
+    placePayload.total +
+    wordPayload.total;
 
   return {
     peoples,
@@ -257,6 +278,7 @@ async function rankAttempt(
     quizzes,
     languages,
     places,
+    words,
     results: mergeIntoOneRanking(
       {
         peoples,
@@ -276,6 +298,7 @@ async function rankAttempt(
     quizzesTotal: quizPayload.total,
     languagesTotal: languagePayload.total,
     placesTotal: placePayload.total,
+    wordsTotal: wordPayload.total,
     total,
     leads: [],
     nearNames: [],
@@ -344,7 +367,7 @@ export async function ftsSearchEntities(
   );
 }
 
-/** Beyond this a « query » is a sentence, and each name costs eight RPCs. */
+/** Beyond this a « query » is a sentence, and each name costs nine RPCs. */
 const MAX_WIDENED_TOKENS = 3;
 
 function mergeAttempts(
@@ -371,6 +394,7 @@ function mergeAttempts(
   const patronymes = union((a) => a.patronymes);
   const languages = union((a) => a.languages);
   const places = union((a) => a.places ?? []);
+  const words = union((a) => a.words ?? []);
   const totals = {
     peoplesTotal: sum((a) => a.peoplesTotal),
     countriesTotal: sum((a) => a.countriesTotal),
@@ -379,6 +403,7 @@ function mergeAttempts(
     patronymesTotal: sum((a) => a.patronymesTotal),
     languagesTotal: sum((a) => a.languagesTotal),
     placesTotal: sum((a) => a.placesTotal ?? 0),
+    wordsTotal: sum((a) => a.wordsTotal ?? 0),
   };
 
   return {
@@ -390,6 +415,7 @@ function mergeAttempts(
     quizzes: [],
     languages,
     places,
+    words,
     results: mergeIntoOneRanking(
       { peoples, countries, families, persons, patronymes, quizzes: [] },
       lang ?? "fr"
@@ -674,6 +700,20 @@ function toRankedLanguageFamily(
 /** PostgREST's « no such function » and Postgres' own undefined_function. */
 function isMissingFunction(error: { code?: string } | null): boolean {
   return error?.code === "PGRST202" || error?.code === "42883";
+}
+
+function toRankedWord(row: Record<string, unknown>): RankedWord {
+  return {
+    id: row.id as string,
+    nameMain: row.nameMain as string,
+    wordLanguage: row.wordLanguage as string,
+    definition: (row.definition as string) ?? "",
+    content: (row.content as Record<string, unknown>) ?? {},
+    nameHistory: row.nameHistory as RankedWord["nameHistory"],
+    relevance: typeof row.relevance === "number" ? row.relevance : 0,
+    exactMatch: row.exactMatch === true,
+    normalizedScore: toScore(row.normalizedScore),
+  };
 }
 
 function toRankedPlace(row: Record<string, unknown>): RankedPlace {

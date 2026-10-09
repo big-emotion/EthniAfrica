@@ -87,12 +87,14 @@
       {
         "title": "SIL Ethnologue - Masikoro Malagasy (msh)",
         "url": "https://www.ethnologue.com/language/msh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue - Malagasy macrolanguage (mlg)",
         "url": "https://www.ethnologue.com/language/mlg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Blench, R. et Walsh, M. (2009) - Faunal names in Malagasy : their etymology and implications for the prehistory of the East African coast, etude sur les substrats linguistiques Mikea",
@@ -102,12 +104,14 @@
       {
         "title": "CIA World Factbook - Madagascar",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Banque mondiale - Madagascar donnees demographiques",
         "url": "https://data.worldbank.org/country/madagascar",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

@@ -100,7 +100,8 @@
       {
         "title": "Nyamwanga – Glottolog 5.3, code nyam1275",
         "url": "https://glottolog.org/resource/languoid/id/nyam1275",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

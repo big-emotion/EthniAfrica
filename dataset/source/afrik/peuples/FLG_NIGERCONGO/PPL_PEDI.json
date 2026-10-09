@@ -16,7 +16,7 @@
         "Marota",
         "Dikgoshi"
       ],
-      "originOfExonyms": "Le terme 'Pedi' designe a la fois le clan royal Maroteng et par extension le grand ensemble linguistique sotho du nord. Durant la colonisation, l'administration britannique et boere a utilise 'Northern Sotho' pour regrouper une trentaine de dialectes distincts sous une meme etiquette administrative. Le terme 'Basotho ba Lebowa' derive du homeland de Lebowa cree sous l'apartheid en 1972.",
+      "originOfExonyms": "Le terme 'Pedi' designe a la fois le clan royal Maroteng et par extension le grand ensemble linguistique sotho du nord. Durant la colonisation, l'administration britannique et boere a utilise 'Northern Sotho' pour regrouper une trentaine de dialectes distincts sous une meme etiquette administrative. Le terme 'Basotho ba Lebowa' deriverait du homeland de Lebowa cree sous l'apartheid en 1972.",
       "whyProblematic": "L'appellation 'Pedi' est ambigue : elle renvoie tantot au clan royal Maroteng (sens etroit), tantot a l'ensemble des 27-30 dialectes Sesotho sa Leboa (sens large). L'assimilation de 'Sepedi' a 'Northern Sotho' dans la constitution sud-africaine de 1994 a efface les identites de nombreux groupes dialectaux tels que les Lobedu, Birwa ou Hananwa.",
       "contemporaryUsage": "Le terme Pedi est couramment employe en anglais et en sesotho sa leboa. Les locuteurs se designent eux-memes comme Bapedi (peuple) et parlent Sepedi ou Sesotho sa Leboa. Sepedi est l'une des 12 langues officielles de l'Afrique du Sud depuis 1994.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -118,7 +118,8 @@
       {
         "title": "South African History Online — Pedi",
         "url": "https://sahistory.org.za/article/pedi",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Britannica — Pedi",
@@ -138,12 +139,14 @@
       {
         "title": "SIL Ethnologue — Northern Sotho (nso)",
         "url": "https://www.ethnologue.com/language/nso/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Acta Theologica — The cultural and historical significance of malopo ritual",
         "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S1015-87582014000500002",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Literator — The elevation of Sepedi from a dialect to an official standard language",
@@ -158,7 +161,8 @@
       {
         "title": "Statistics South Africa — Census 2011",
         "url": "https://www.statssa.gov.za/census/census_2011/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

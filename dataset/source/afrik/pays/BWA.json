@@ -201,17 +201,20 @@
       {
         "title": "SIL Ethnologue – Languages of Botswana",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Botswana",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Botswana",
         "url": "https://www.unfpa.org/data/world-population/BW",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Schapera, Isaac – \"A Handbook of Tswana Law and Custom\"",
@@ -226,7 +229,8 @@
       {
         "title": "UNESCO – Art rupestre san du Botswana (patrimoine mondial)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Recensements botswanais",
@@ -241,12 +245,14 @@
       {
         "title": "CIA World Factbook – Botswana (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "David Livingstone, Missionary Travels and Researches in South Africa, Londres, John Murray, 1857, p. 200-201",
@@ -270,6 +276,7 @@
         "title": "Dictionary of South African English on Historical Principles, entrées « Motswana » et « Bechuana »",
         "url": "https://dsae.co.za/entry/motswana/e04953",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Donne deux racines concurrentes pour -tswana sans choisir entre elles : un adjectif signifiant « noir » au féminin, et un verbe signifiant « être semblable ». Traite « Bechuana » comme la forme anglicisée de baTswana, relève une quarantaine de graphies attestées, et cite un relevé de 1801 où le mot est déjà une auto-désignation ainsi que la position de Paul Maylam, pour qui l'appellation a été forgée par les Blancs au XIXe siècle. Entrées lues le 9 septembre 2026 ; les ouvrages cités par le dictionnaire ne l'ont pas été."
       },
       {
@@ -288,6 +295,7 @@
         "title": "Permanent Committee on Geographical Names, Toponymic Factfile: Botswana, Royaume-Uni, juillet 2025",
         "url": "https://assets.publishing.service.gov.uk/media/68aee27d3a052c9c504c8e7f/Botswana_Toponymic_Factfile.pdf",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Nomenclature géographique officielle britannique. Elle donne « Land of the Tswana » pour le nom du pays et rappelle que le territoire s'appelait Bechuanaland Protectorate sous administration britannique. Document lu le 9 septembre 2026."
       },
       {
@@ -300,6 +308,7 @@
         "title": "Botswana Independence Act 1966, Royaume-Uni, 1966 chapitre 23, article 1",
         "url": "https://www.legislation.gov.uk/ukpga/1966/23/enacted",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Dispose que le protectorat du Bechuanaland devient le 30 septembre 1966 une république indépendante « under the name of Botswana ». La loi entérine un nom proposé sur place l'année précédente ; elle ne dit pas qui l'a choisi. Texte lu le 9 septembre 2026."
       }
     ],

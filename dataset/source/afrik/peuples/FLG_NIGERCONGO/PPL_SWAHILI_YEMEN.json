@@ -14,7 +14,7 @@
         "Afro-Yemenites",
         "Muwalladeen d'origine africaine"
       ],
-      "originOfExonyms": "Le terme Akhdam (singulier khadami) signifie serviteurs en arabe et est utilise de maniere pejorative. Le terme Muwalladeen (singulier Muwallad) designe en arabe une personne d'ascendance mixte, ne completement arabe ; il est souvent employe de facon stigmatisante pour les personnes d'ascendance yemeno-africaine. Muhamasheen (marginalises) est un terme plus moderne utilise par les organisations de droits pour decrire leur situation sociale.",
+      "originOfExonyms": "Le terme Akhdam (singulier khadami) viendrait du mot arabe qui veut dire serviteurs ; il est utilise de maniere pejorative. Le terme Muwalladeen (singulier Muwallad) designe en arabe une personne d'ascendance mixte, ne completement arabe ; il est souvent employe de facon stigmatisante pour les personnes d'ascendance yemeno-africaine. Muhamasheen (marginalises) est un terme plus moderne utilise par les organisations de droits pour decrire leur situation sociale.",
       "whyProblematic": "Les termes Akhdam et Muwalladeen sont charges de stigmatisation raciale et sociale. Les Akhdam sont considers comme intouchables par une partie de la societe yemenite et sont confines aux emplois menagers. Les Muwalladeen d'origine africaine sont plus racialises et discrimines que ceux d'autres origines (asiatiques, europeennes). Ces populations nient souvent leurs racines africaines pour eviter la stigmatisation.",
       "contemporaryUsage": "Le terme Akhdam est employe couramment mais de maniere pejorative. Les organisations de defense des droits preferent le terme Muhamasheen. Les Muwalladeen d'ascendance africaine sont concentres principalement dans le sud du Yemen (Aden, Hadramawt), ou la discrimination est moins severe qu'a Sanaa. La guerre civile yemenite (depuis 2015) a aggrave leur situation economique tout en rendant plus difficile la distinction ethnique.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -99,12 +99,14 @@
       {
         "title": "Al Jazeera — Yemen's Muwaladeen: The struggle for equal citizenship (2014)",
         "url": "https://www.aljazeera.com/opinions/2014/4/5/yemens-muwaladeen-the-struggle-for-equal-citizenship",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Scholarly Publishing Collective — We Are All Suffering Equally: The Impact of the War on Muwalladin (2022)",
         "url": "https://scholarlypublishingcollective.org/msup/neas/article/22/1/165/381346/We-Are-All-Suffering-Equally-The-Impact-of-the-War",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Muhamasheen, Akhdam in Yemen",
@@ -119,7 +121,8 @@
       {
         "title": "CIA Reading Room — Southern Yemen (Aden): The Society",
         "url": "https://www.cia.gov/readingroom/docs/CIA-RDP01-00707R000200100018-6.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

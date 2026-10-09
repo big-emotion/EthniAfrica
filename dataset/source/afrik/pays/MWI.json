@@ -218,17 +218,20 @@
       {
         "title": "SIL Ethnologue – Languages of Malawi",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Malawi",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Malawi",
         "url": "https://www.unfpa.org/data/world-population/MW",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Recensements malawiens",
@@ -248,12 +251,14 @@
       {
         "title": "CIA World Factbook – Malawi (ethnic groups, 2018 census)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "David et Charles Livingstone, Narrative of an Expedition to the Zambesi and its Tributaries, Londres, John Murray, 1865",
@@ -271,6 +276,7 @@
         "title": "Philip Short, Banda, Londres, Routledge & Kegan Paul, 1974",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Biographie d'où provient le récit du choix du nom sur une carte française ancienne. L'imprimé est vérifié au catalogue ; le passage n'a pas été lu, il est repris de comptes rendus qui s'y réfèrent."
       },
       {
@@ -289,12 +295,14 @@
         "title": "Malyn Newitt, « The Early History of the Maravi », The Journal of African History, volume 23, numéro 2, 1982, p. 145-162",
         "url": "https://doi.org/10.1017/S0021853700020508",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de référence sur la formation des chefferies maravi. Il est cité ici pour ce qu'il ne fait pas : il ne traite pas de l'origine ni du sens du nom Maravi. Notice et résumé lus le 9 septembre 2026 ; le texte intégral est payant."
       },
       {
         "title": "Bureau national de la statistique du Malawi, 2018 Malawi Population and Housing Census, Main Report, mai 2019, tableau 3.5 « Population distribution by tribe », p. 20",
         "url": "https://malawi.unfpa.org/sites/default/files/resource-pdf/2018%20Malawi%20Population%20and%20Housing%20Census%20Main%20Report%20%281%29.pdf",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Le recensement a demandé à chaque personne son groupe (« tribe »). Parts calculées sur 17 506 022 personnes et arrondies à une décimale : Chewa 34,4 %, Lomwe 18,9 %, Yao 13,3 %, Ngoni 10,4 %, Tumbuka 9,2 %, Sena 3,8 %, Nyanja 1,9 % (la ligne « Nyanja » du recensement, distincte de la ligne Mang'anja), Tonga 1,8 %. « Autres » (6,3 %) est le complément des parts arrondies ; le reste exact du recensement est 6,4 %. Les Mang'anja (3,2 %), les Nkhonde (1,0 %), les Lambya, les Sukwa et les autres groupes restent dans « Autres ». Copie du rapport hébergée par le bureau de l'UNFPA au Malawi, lue le 6 octobre 2026."
       }
     ],

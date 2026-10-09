@@ -6,7 +6,7 @@
  *
  * Reuses `migrateAfrikToDatabase.ts`'s own upsert functions rather than
  * reimplementing the write path: they carry the classification-protection
- * and assertion-writing logic a fiche's confidence chip depends on, and
+ * and assertion-writing logic a fiche's source review chip depends on, and
  * duplicating it risks it drifting from what production actually does.
  * What this script does NOT reuse is `migrateAfrikToDatabase.ts`'s own
  * orchestration — its drift comparison and orphan scan assume they are

@@ -8,7 +8,7 @@
       "mainName": "Jopadhola",
       "selfAppellation": "Jopadhola (Jo'padhola)",
       "exonyms": ["Adhola", "Padhola", "Badama"],
-      "originOfExonyms": "Jopadhola signifie litteralement les gens de Padhola (de jo = peuple et pa-Adhola = lieu d'Adhola). Padhola est la forme elliptique de Pa Adhola (le lieu d'Adhola), du nom du père fondateur légendaire du peuple. Badama est le terme utilisé par les Baganda, résultant d'une mauvaise interprétation du mot dhopadhola Widoma, cri de guerre signifiant tu es en difficulté.",
+      "originOfExonyms": "Jopadhola signifierait littéralement les gens de Padhola (de jo = peuple et pa-Adhola = lieu d'Adhola). Padhola est la forme elliptique de Pa Adhola (le lieu d'Adhola), du nom du père fondateur légendaire du peuple. Badama est le terme utilisé par les Baganda, résultant d'une mauvaise interprétation du mot dhopadhola Widoma, cri de guerre signifiant tu es en difficulté.",
       "whyProblematic": null,
       "contemporaryUsage": "Jopadhola est le nom officiel et courant en anglais et dans les usages ougandais. Les chercheurs emploient parfois Adhola. Leur langue est connue sous le nom Dhopadhola. La fiche cite le roi, appelé Kwar Adhola, sous le titre His Highness Moses Stephen Owor.",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -93,7 +93,8 @@
       {
         "title": "Owor, Maureen (2012). Creating an Independent Traditional Court: A Study of Jopadhola Clan Courts in Uganda. Journal of African Law, 56/2, pp 215-242",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Oboth-Ofumbi, A.C.K. (1959). Silver Tanga Padhola. East African Literature Bureau, Nairobi",
@@ -103,7 +104,8 @@
       {
         "title": "Ethnologue — Jopadhola (ADH)",
         "url": "https://www.ethnologue.com/language/adh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

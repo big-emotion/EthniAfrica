@@ -4,7 +4,7 @@
   "nameEn": "Tanzania",
   "nameOfficial": "République unie de Tanzanie (Jamhuri ya Muungano wa Tanzania)",
   "summary": "La Tanzanie est un mot composé : « Tanganyika » et « Zanzibar », soudés à l'unification de 1964. Cités-États swahilies de la côte, sultanat de Zanzibar et royaumes bantous de l'intérieur en composent l'histoire. Sukuma, Chaga, Haya, Nyamwezi et Maasai y ont le swahili pour langue commune.",
-  "etymology": "Le nom \"Tanzanie\" est une combinaison de \"Tanganyika\" et \"Zanzibar\", créé lors de l'unification en 1964. \"Tanganyika\" vient probablement du swahili \"tanga\" (voile) et \"nyika\" (plaine désertique), ou de \"tanga\" (voile) et \"hika\" (étendre). \"Zanzibar\" vient de l'arabe \"Zanj\" (noir) et \"barr\" (côte), signifiant \"côte des Noirs\".",
+  "etymology": "Le nom \"Tanzanie\" est une combinaison de \"Tanganyika\" et \"Zanzibar\", créé lors de l'unification en 1964. \"Tanganyika\" viendrait du swahili \"tanga\" (voile) et \"nyika\" (plaine désertique), ou de \"tanga\" (voile) et \"hika\" (étendre). \"Zanzibar\" viendrait de l'arabe \"Zanj\" (noir) et \"barr\" (côte), et voudrait dire \"côte des Noirs\".",
   "nameOriginActor": "Le nom \"Tanzanie\" a été créé en 1964 lors de l'unification du Tanganyika et de Zanzibar. \"Tanganyika\" était le nom colonial allemand puis britannique. \"Zanzibar\" était le nom du sultanat puis protectorat.",
   "content": {
     "historicalNames": {
@@ -201,12 +201,14 @@
       {
         "title": "CIA World Factbook – Tanzania",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Tanzania",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements nationaux tanzaniens",
@@ -216,12 +218,14 @@
       {
         "title": "ONU – Données démographiques 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — République-Unie de Tanzanie",
         "url": "https://www.unfpa.org/data/world-population/TZ",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Études anthropologiques sur les peuples tanzaniens",
@@ -236,12 +240,14 @@
       {
         "title": "CIA World Factbook – Tanzania (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

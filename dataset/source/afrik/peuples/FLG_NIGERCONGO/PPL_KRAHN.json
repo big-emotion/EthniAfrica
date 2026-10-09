@@ -115,7 +115,8 @@
       {
         "title": "SIL Ethnologue - Western Krahn (krw) et Eastern Krahn (kqo)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

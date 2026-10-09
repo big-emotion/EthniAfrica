@@ -85,12 +85,14 @@
       {
         "title": "Boswell, D. – Chipimpi, Vulgar Clans, and Lala-Lamba Ethnohistory, Furman University, 2008",
         "url": "https://scholarexchange.furman.edu/cgi/viewcontent.cgi?article=1001&context=ant-publications",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue – Lala-Bisa Language (LEB)",
         "url": "https://www.ethnologue.com/language/leb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Stefaniszyn, B. – Social and Ritual Life of the Ambo of Northern Rhodesia, 1964",

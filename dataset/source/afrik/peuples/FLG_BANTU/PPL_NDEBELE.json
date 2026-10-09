@@ -15,7 +15,7 @@
         "Ndebele du Nord",
         "isiNdebele saseNyakatho"
       ],
-      "originOfExonyms": "Le terme Matabele (ou Amatabele) fut employe par les Sotho-Tswana voisins pour designer le groupe de Mzilikazi, signifiant les gens aux grands boucliers, en reference a leurs boucliers de guerre. Ce terme fut repris par les colons europeens et les Britanniques de la British South Africa Company.",
+      "originOfExonyms": "Le terme Matabele (ou Amatabele) fut employe par les Sotho-Tswana voisins pour designer le groupe de Mzilikazi ; il voudrait dire les gens aux grands boucliers, en référence à leurs boucliers de guerre. Ce terme fut repris par les colons europeens et les Britanniques de la British South Africa Company.",
       "whyProblematic": "Le terme Matabele peut etre percu comme depreciatif par les Ndebele contemporains, qui preferent leur autodesignation AmaNdebele. La region appelee Matabeleland par les Europeens est designee Mthwakazi dans la tradition ndebele.",
       "contemporaryUsage": "Ndebele est le terme officiel au Zimbabwe. AmaNdebele est l'autodesignation preferee. Mthwakazi designe le royaume et la region historique.",
       "linguisticFamily": "FLG_BANTU",
@@ -104,17 +104,20 @@
       {
         "title": "SIL Ethnologue – Ndebele (nde)",
         "url": "https://www.ethnologue.com/language/nde/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ZIMSTAT – Zimbabwe 2022 Population and Housing Census",
         "url": "https://www.zimstat.co.zw/population-census/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "UNFPA Zimbabwe – 2022 Census Preliminary Results",
         "url": "https://zimbabwe.unfpa.org/en/publications/2022-population-and-housing-census-preliminary-results",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Africa Federation – The History of Matabeleland",

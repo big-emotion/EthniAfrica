@@ -9,7 +9,7 @@
       "mainName": "Bobo",
       "selfAppellation": "Bobo",
       "exonyms": ["Bobo-Fing", "Bobo Madare", "Bobo Noire"],
-      "originOfExonyms": "Bobo-Fing signifie en bambara Bobo Noirs, designation donnee par les voisins bambara pour distinguer les Bobo proprement dits (Mande) des Bwa (peuple Gur aussi nommes Bobo-Oule ou Bobo Rouges par les Bambara). Bobo Madare est une autre designation savante utilisee dans la litterature ethnographique francophone.",
+      "originOfExonyms": "Bobo-Fing voudrait dire en bambara Bobo Noirs, designation donnee par les voisins bambara pour distinguer les Bobo proprement dits (Mande) des Bwa (peuple Gur aussi nommes Bobo-Oule ou Bobo Rouges par les Bambara). Bobo Madare est une autre designation savante utilisee dans la litterature ethnographique francophone.",
       "whyProblematic": "Le terme Bobo est ambigu dans la litterature : les Bambara designent sous ce nom a la fois les Bobo-Fing (vrais Bobo, peuple Mande) et les Bwa (peuple Gur), qui sont deux entites distinctes. La confusion est frequente dans les sources populaires.",
       "contemporaryUsage": "Bobo est le terme courant utilise par la communaute et dans les contextes administratifs au Burkina Faso. Bobo-Dioulasso, deuxieme ville du Burkina Faso, tire son nom du peuple Bobo et du terme dioula (marchand).",
       "linguisticFamily": "FLG_MANDE",
@@ -100,17 +100,20 @@
       {
         "title": "SIL Ethnologue — Southern Bobo Madare (bwq)",
         "url": "https://www.ethnologue.com/language/bwq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Chazen Museum of Art — Bobo Mask",
         "url": "https://chazen.wisc.edu/collection/30683/mask/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Le Moal, Guy. Les Bobo. Nature et fonction des masques. Paris : ORSTOM, 1980",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Olson, James S. Peoples of Africa. Westport : Greenwood Press, 1996",

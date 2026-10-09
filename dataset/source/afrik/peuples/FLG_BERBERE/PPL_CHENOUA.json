@@ -13,7 +13,7 @@
         "Chelhas du Tell",
         "Kabyles de l'Ouest"
       ],
-      "originOfExonyms": "Le nom Chenoua (ou Chenoui) derive du mont Chenoua (Jebel Chenoua) qui domine la ville de Tipaza, 70 km a l'ouest d'Alger. En berbere, le nom propre du peuple est Icenwiyen (Ichenwiyen). Certains les appelaient Chelhas du Tell ou Kabyles de l'Ouest en raison de similarites linguistiques et culturelles avec ces groupes voisins.",
+      "originOfExonyms": "Le nom Chenoua (ou Chenoui) viendrait du mont Chenoua (Jebel Chenoua), qui domine la ville de Tipaza, 70 km à l'ouest d'Alger. En berbere, le nom propre du peuple est Icenwiyen (Ichenwiyen). Certains les appelaient Chelhas du Tell ou Kabyles de l'Ouest en raison de similarites linguistiques et culturelles avec ces groupes voisins.",
       "whyProblematic": null,
       "contemporaryUsage": "Chenoua et Shenwa sont tous deux utilises dans la litterature scientifique. Icenwiyen est le terme endonymique prefere par la communaute. La langue shenwa/chenoua est egalement appelee Haqbaylit par ses locuteurs.",
       "linguisticFamily": "FLG_BERBERE",
@@ -94,7 +94,8 @@
       {
         "title": "Ethnologue SIL International - Chenoua (cnu)",
         "url": "https://www.ethnologue.com/language/cnu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "The Tribal Society - The Chenouis",
@@ -104,12 +105,14 @@
       {
         "title": "Glottolog - Shenwa (chen1266)",
         "url": "https://glottolog.org/resource/languoid/id/chen1266",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO World Heritage - Tipaza",
         "url": "https://whc.unesco.org/en/list/193/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

@@ -3,8 +3,8 @@
  *
  * Data is processed in AFRIK hierarchy order:
  * language families → languages → peoples → people/language relations →
- * countries → people/country relations → places → persons → patronymes →
- * migration events (every normalized join is loaded only after its FK parents
+ * countries → people/country relations → places → words → persons →
+ * patronymes → migration events (every normalized join is loaded only after its FK parents
  * exist).
  */
 
@@ -47,6 +47,12 @@ import {
   type PlaceBatch,
   type PlaceLoadReport,
 } from "@/lib/afrik/loaders/placeJsonLoader";
+import {
+  loadAllWordFiches,
+  loadWords,
+  type WordBatch,
+  type WordLoadReport,
+} from "@/lib/afrik/loaders/wordJsonLoader";
 import {
   loadAllRelationFiles,
   loadRelations,
@@ -151,6 +157,7 @@ export interface MigrationReport {
   appellations: AppellationLoadReport;
   persons: MigrationSectionReport;
   places: PlaceLoadReport;
+  words: WordLoadReport;
   patronymes: PatronymeLoadReport;
   dossiers: DossierLoadReport;
   protectedDrift: {
@@ -208,6 +215,7 @@ export function emptyMigrationReport(): MigrationReport {
     appellations: { total: 0, inserted: 0, rejected: [], errors: [] },
     persons: { total: 0, inserted: 0, errors: [] },
     places: { total: 0, inserted: 0, errors: [] },
+    words: { total: 0, inserted: 0, errors: [] },
     dossiers: { total: 0, inserted: 0, chapters: 0, errors: [] },
     patronymes: {
       total: 0,
@@ -892,6 +900,7 @@ const STRUCTURAL_STAGES = [
   "peopleLanguages",
   "countries",
   "places",
+  "words",
   "patronymes",
 ] as const;
 
@@ -979,6 +988,20 @@ async function loadPlaceBatch(
   };
 }
 
+/** As for places: a fiche the word model refuses is reported, never dropped. */
+async function loadWordBatch(
+  supabase: AdminClient,
+  batch: WordBatch,
+  options: Parameters<typeof loadWords>[2]
+): Promise<WordLoadReport> {
+  const loaded = await loadWords(supabase, batch.words, options);
+  return {
+    total: loaded.total + batch.errors.length,
+    inserted: loaded.inserted,
+    errors: [...batch.errors, ...loaded.errors],
+  };
+}
+
 function saveErrorReport(report: MigrationReport): string {
   const logsDir = join(process.cwd(), "dataset", "source", "afrik", "logs");
   mkdirSync(logsDir, { recursive: true });
@@ -1032,6 +1055,7 @@ export async function migrateAfrikToDatabase(
 
   const patronymeBatch = loadAllPatronymeDossiers();
   const placeBatch = loadAllPlaceFiches();
+  const wordBatch = loadAllWordFiches();
   const dossierBatch = loadAllDossiers();
 
   const sources = sourceSnapshot(languageFamilies, peoples, countries);
@@ -1087,6 +1111,7 @@ export async function migrateAfrikToDatabase(
         countryIds: new Set(countries.map(({ id }) => id)),
       },
     });
+    report.words = await loadWordBatch(supabase, wordBatch, { dryRun: true });
     logger.info("AFRIK synchronization preview completed", {
       target: syncTarget.environment,
       languageFamilies: report.languageFamilies.total,
@@ -1099,6 +1124,7 @@ export async function migrateAfrikToDatabase(
       migrations: report.migrations.total,
       persons: report.persons.total,
       places: report.places,
+      words: report.words,
       patronymes: report.patronymes,
       dossiers: report.dossiers,
       protectedDrift: report.protectedDrift,
@@ -1143,6 +1169,8 @@ export async function migrateAfrikToDatabase(
       countryIds: validCountryIds,
     },
   });
+
+  report.words = await loadWordBatch(supabase, wordBatch, {});
 
   const personsReport = await loadPersons(supabase, personDossiers);
   report.persons.total = personsReport.total;
@@ -1234,6 +1262,7 @@ export async function migrateAfrikToDatabase(
       },
       persons: report.persons,
       places: report.places,
+      words: report.words,
       patronymes: report.patronymes,
       dossiers: report.dossiers,
       protectedDrift: report.protectedDrift,

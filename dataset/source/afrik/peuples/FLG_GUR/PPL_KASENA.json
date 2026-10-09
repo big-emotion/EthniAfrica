@@ -138,12 +138,14 @@
       {
         "title": "Kasem – Glottolog 5.3, ISO 639-3 : xsm",
         "url": "https://glottolog.org/resource/languoid/id/kase1253",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kassena Nankana Municipal – Composite Budget 2022-2025, Ministry of Finance Ghana",
         "url": "https://mofep.gov.gh/sites/default/files/composite-budget/2022/UE/Kasena-Nakana.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Ann Cassiman, Stirring Life: Women's Paths and Places Among the Kasena of Northern Ghana, Museum Aan de Stroom (MAS), Antwerp",
@@ -153,12 +155,14 @@
       {
         "title": "UNESCO World Heritage Centre — Royal Court of Tiebelé (inscrit 2024)",
         "url": "https://whc.unesco.org/en/list/1713/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Ethnologue — Kasem Language (XSM)",
         "url": "https://www.ethnologue.com/language/xsm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Right for Education Africa — The Kassena of Tiebelé Houses (2024)",
@@ -188,7 +192,8 @@
       {
         "title": "WALS Online — Kasem language",
         "url": "https://wals.info/languoid/lect/wals_code_ksm",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }
