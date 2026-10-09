@@ -14,6 +14,7 @@ import { ftsSearchEntities } from "@/lib/supabase/queries/afrik/search";
 import {
   loadSearchNamingData,
   searchNamingKey,
+  wordNamingData,
   type SearchNamingSubjectRef,
   type SearchNamingSubjectType,
 } from "@/lib/supabase/queries/afrik/searchNaming";
@@ -24,7 +25,11 @@ import {
 } from "@/lib/supabase/queries/afrik/searchAnswer";
 import { readAnswer } from "@/lib/search/answer";
 import { readNaming } from "@/lib/search/naming";
-import type { FtsSearchParams, FtsSearchResponse } from "@/types/afrik";
+import type {
+  FtsSearchParams,
+  FtsSearchResponse,
+  RankedWord,
+} from "@/types/afrik";
 
 type NamingRow = {
   id: string;
@@ -62,6 +67,23 @@ function projectRows<T extends NamingRow>(
       }),
     };
   });
+}
+
+/**
+ * A word carries its whole nameHistory on the search row, so its names and
+ * their evidence are read from it rather than loaded (REQ-196). The row is the
+ * root: the answer reads `definition` and `nameHistory` there.
+ */
+function projectWord(word: RankedWord): RankedWord {
+  const data = wordNamingData(word.id, word.nameHistory);
+  return {
+    ...word,
+    naming: readNaming("word", word.content, word, data.records, data.evidence),
+    answer: readAnswer("word", word.content, word, {
+      nameRecords: data.records,
+      evidence: data.evidence,
+    }),
+  };
 }
 
 // @req REQ-002
@@ -111,5 +133,6 @@ export async function ftsSearch(
       namingData,
       answerExtras
     ),
+    ...(result.words ? { words: result.words.map(projectWord) } : {}),
   };
 }

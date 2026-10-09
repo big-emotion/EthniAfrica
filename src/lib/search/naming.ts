@@ -563,6 +563,15 @@ export function readNaming(
         ),
       };
       break;
+    // A word's names are its nameHistory's, which arrive as `nameRecords`;
+    // the block's summary is the only prose it has about where they come
+    // from (REQ-196).
+    case "word":
+      legacy = {
+        ...EMPTY,
+        origin: text(record(rootRecord.nameHistory).summary),
+      };
+      break;
     default:
       legacy = EMPTY;
   }

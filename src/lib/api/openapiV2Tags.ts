@@ -108,6 +108,11 @@ export const OPENAPI_V2_TAGS: { name: string; description: string }[] = [
     description:
       "Places (towns, regions, historic sites — LOC_*) and the history of their names: every name a place answers to, in the shared nameHistory block every named subject carries (REQ-196, ARCH-028).",
   },
+  {
+    name: "API v2 - Words",
+    description:
+      "Words (WRD_*) whose history explains Africa through its names, each told in the shared nameHistory block (REQ-196, ARCH-028).",
+  },
 ];
 
 /**

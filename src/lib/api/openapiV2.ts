@@ -1003,10 +1003,22 @@ const options: swaggerJsdoc.Options = {
                 "Places matching across every page, not only this one",
               example: 0,
             },
+            words: {
+              type: "array",
+              items: { $ref: "#/components/schemas/WordSearchHitV2" },
+              description:
+                "Matching word fiches (REQ-196), ranked by afrik_search_words (migration 104) on the filed name and every nameHistory name. Each row carries the six-block `answer` of kind `word`, read from its nameHistory. A grouped facet like places: not folded into `results`.",
+            },
+            wordsTotal: {
+              type: "integer",
+              description:
+                "Word fiches matching across every page, not only this one",
+              example: 0,
+            },
             total: {
               type: "integer",
               description:
-                "Without `lens`, the sum of the seven non-quiz counts, each across every page. With `lens=quiz`, this equals `quizzesTotal`. Changed in 2.2.0: this used to report the size of the returned page, which made it useless for paging.",
+                "Without `lens`, the sum of the eight non-quiz counts, each across every page. With `lens=quiz`, this equals `quizzesTotal`. Changed in 2.2.0: this used to report the size of the returned page, which made it useless for paging.",
               example: 17,
             },
             leads: {
@@ -1997,6 +2009,115 @@ const options: swaggerJsdoc.Options = {
             },
           },
           required: ["period", "statement", "sources"],
+        },
+        WordSearchHitV2: {
+          type: "object",
+          description:
+            "A word search hit (REQ-196): exact name match, then a prefix match on any of its names, then a pg_trgm fallback; normalizedScore is the cross-kind scale of migration 069.",
+          properties: {
+            id: { type: "string", example: "WRD_RACE" },
+            nameMain: { type: "string", example: "race" },
+            wordLanguage: { type: "string", example: "fra" },
+            definition: { type: "string" },
+            nameHistory: { $ref: "#/components/schemas/NameHistoryV2" },
+            naming: {
+              $ref: "#/components/schemas/SearchNamingProjectionV2",
+            },
+            answer: { $ref: "#/components/schemas/SearchAnswerV2" },
+            relevance: { type: "number" },
+            exactMatch: { type: "boolean" },
+            normalizedScore: { type: "number", minimum: 0, maximum: 1 },
+          },
+          required: ["id", "nameMain", "exactMatch", "normalizedScore"],
+        },
+        WordSummaryV2: {
+          type: "object",
+          description: "One row of the word list (REQ-196).",
+          properties: {
+            id: { type: "string", example: "WRD_RACE" },
+            nameMain: { type: "string", example: "race" },
+            wordLanguage: { type: "string", example: "fra" },
+          },
+          required: ["id", "nameMain", "wordLanguage"],
+        },
+        WordV2: {
+          type: "object",
+          description:
+            "A word fiche (REQ-196): a word whose history explains Africa through its names. `names` lists every name the word answers to — its filed name, then each nameText of its nameHistory — with no form promoted over another; `nameHistory`, always present for a word, tells where each comes from.",
+          properties: {
+            id: { type: "string", example: "WRD_RACE" },
+            nameMain: { type: "string", example: "race" },
+            names: {
+              type: "array",
+              items: { type: "string" },
+              example: ["race"],
+            },
+            wordLanguage: {
+              type: "string",
+              description: "ISO 639-3 code of the language of the word.",
+              example: "fra",
+            },
+            definition: {
+              type: "string",
+              description: "One sentence: what the word means today.",
+            },
+            relatedSubjects: {
+              type: "array",
+              description:
+                "Fiches of any class the word is tied to, with the fiche's own sentence saying how.",
+              items: {
+                type: "object",
+                properties: {
+                  id: { type: "string", example: "FLG_MANDE" },
+                  relation: { type: "string" },
+                },
+                required: ["id", "relation"],
+              },
+            },
+            gaps: { type: "array", items: { type: "string" } },
+            sources: { type: "array", items: { type: "object" } },
+            nameHistory: { $ref: "#/components/schemas/NameHistoryV2" },
+          },
+          required: [
+            "id",
+            "nameMain",
+            "names",
+            "wordLanguage",
+            "definition",
+            "relatedSubjects",
+            "gaps",
+            "sources",
+            "nameHistory",
+          ],
+        },
+        WordDetailEnvelope: {
+          type: "object",
+          properties: {
+            data: { $ref: "#/components/schemas/WordV2" },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
+        },
+        WordListEnvelope: {
+          type: "object",
+          properties: {
+            data: {
+              type: "array",
+              items: { $ref: "#/components/schemas/WordSummaryV2" },
+            },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
         },
         NameHistoryV2: {
           type: "object",

@@ -82,6 +82,15 @@ describe("classifySyncOutcome", () => {
     expect(classifySyncOutcome(report).structuralFailures).toEqual(["places"]);
   });
 
+  // A word fiche the model refuses is a word the search will not find.
+  // @req REQ-196
+  it("fails when a word fiche is refused", () => {
+    const report = reportWith();
+    report.words.errors = ["WRD_X.json: nameHistory: Required"];
+
+    expect(classifySyncOutcome(report).structuralFailures).toEqual(["words"]);
+  });
+
   // @req REQ-032
   it("fails on a structural stage however few records it lost", () => {
     const report = reportWith();

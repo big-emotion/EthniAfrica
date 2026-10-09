@@ -281,3 +281,18 @@ describe("SearchResultCard — place", () => {
     expect(screen.getByText("Lieu")).toBeInTheDocument();
   });
 });
+
+describe("SearchResultCard — word", () => {
+  // A word has no fiche page: its page is the search result for it, where
+  // its name history is the answer.
+  // @req REQ-196
+  it("labels a word and links it to its own search result page", () => {
+    renderCard({ type: "word", id: "WRD_RACE", name: "race" });
+
+    expect(screen.getByRole("link", { name: "race" })).toHaveAttribute(
+      "href",
+      `${getLocalizedRoute("fr", "search")}?q=race`
+    );
+    expect(screen.getByText("Mot")).toBeInTheDocument();
+  });
+});

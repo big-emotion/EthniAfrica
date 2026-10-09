@@ -13,6 +13,7 @@ const FULL_COUNTS: SearchLensCounts = {
   patronyme: 2,
   person: 1,
   place: 0,
+  word: 0,
 };
 
 describe("SearchLensBar", () => {

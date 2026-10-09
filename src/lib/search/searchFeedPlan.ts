@@ -136,19 +136,27 @@ const COMPANION_TYPES = new Set<SearchCompanionSubject["entityType"]>([
   "patronyme",
 ]);
 
+/**
+ * A word fiche (REQ-196) is answered on the page like any subject, from the
+ * nameHistory its row carries; the companion endpoint holds no word, so it is
+ * a subject without being a companion subject.
+ */
 // @req REQ-180
 export function isSearchFeedSubject(
   value: Pick<SearchResult, "type">
 ): boolean {
-  return COMPANION_TYPES.has(
-    value.type as SearchCompanionSubject["entityType"]
+  return (
+    value.type === "word" ||
+    COMPANION_TYPES.has(value.type as SearchCompanionSubject["entityType"])
   );
 }
 
 function companionSubject(
   value: Pick<SearchResult | SearchLead, "type" | "id">
 ): SearchCompanionSubject | null {
-  if (!isSearchFeedSubject(value)) {
+  if (
+    !COMPANION_TYPES.has(value.type as SearchCompanionSubject["entityType"])
+  ) {
     return null;
   }
   return {

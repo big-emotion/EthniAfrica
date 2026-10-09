@@ -1,3 +1,6 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
@@ -8,7 +11,8 @@ import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { ANSWER_LABELS } from "@/lib/search/__fixtures__/answerLabels";
 import { ANSWER_FIXTURES } from "@/lib/search/__fixtures__/answerFixtures";
 import { FEED_CASES } from "@/lib/search/__fixtures__/feedCases";
-import type { SearchAnswer } from "@/lib/search/answer";
+import { readAnswer, type SearchAnswer } from "@/lib/search/answer";
+import { wordNamingData } from "@/lib/supabase/queries/afrik/searchNaming";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
 import type { SearchResult } from "@/types/afrik-frontend";
 
@@ -29,6 +33,7 @@ const RESULT_TYPE: Record<string, SearchResult["type"]> = {
   language: "language",
   languageFamily: "languageFamily",
   patronyme: "patronyme",
+  word: "word",
 };
 
 function subjectOf(
@@ -676,5 +681,37 @@ describe("no block says it is empty", () => {
 
     expect(blockIds(container)).not.toContain("answer-where");
     expect(container.textContent).not.toMatch(/aucun|pas de donn/i);
+  });
+});
+
+describe("the answer page for a word fiche", () => {
+  // Built the way the search service builds it, from the corpus fiche itself.
+  const race = JSON.parse(
+    readFileSync(
+      join(process.cwd(), "dataset/source/afrik/mots/WRD_RACE.json"),
+      "utf8"
+    )
+  );
+  const naming = wordNamingData(race.id, race.nameHistory);
+  const answer = readAnswer("word", {}, race, {
+    nameRecords: naming.records,
+    evidence: naming.evidence,
+  });
+
+  // @req REQ-196
+  it("answers « race » with the word, its definition and where its name comes from", () => {
+    const { container } = renderAnswer("race", [
+      subjectOf(answer, { type: "word", id: race.id }),
+    ]);
+
+    expect(blockIds(container)).toEqual(
+      expect.arrayContaining(["answer-what", "answer-origin", "answer-names"])
+    );
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("race");
+    expect(screen.getByText("Un mot")).toBeInTheDocument();
+    expect(container).toHaveTextContent(race.definition);
+    expect(container).toHaveTextContent(
+      race.nameHistory.summary.split(" ; ")[0]
+    );
   });
 });
