@@ -157,3 +157,24 @@ export function parseNameHistory(raw: unknown): ParsedNameHistory {
   // inferred output; the cast is safe once safeParse has succeeded.
   return { success: true, data: result.data as NameHistory, errors: [] };
 }
+
+/**
+ * The block a fiche loader keeps, read through the one schema (ARCH-028).
+ *
+ * Every fiche loader calls this rather than passing the raw JSON through, so
+ * the database and the API never hold a block the validator would refuse.
+ * An invalid block throws instead of being dropped: losing a name's history
+ * silently would look like a fiche that never had one.
+ */
+// @req REQ-196
+export function ficheNameHistory(
+  fiche: { nameHistory?: unknown },
+  ficheId: string
+): NameHistory | undefined {
+  if (fiche.nameHistory === undefined) return undefined;
+  const parsed = parseNameHistory(fiche.nameHistory);
+  if (!parsed.success) {
+    throw new Error(`${ficheId}: ${parsed.errors.join("; ")}`);
+  }
+  return parsed.data;
+}

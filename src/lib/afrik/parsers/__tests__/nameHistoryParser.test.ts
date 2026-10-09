@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { parseNameHistory } from "../nameHistoryParser";
+import { ficheNameHistory, parseNameHistory } from "../nameHistoryParser";
 
 function writtenSource(overrides: Record<string, unknown> = {}) {
   return {
@@ -199,5 +199,31 @@ describe("parseNameHistory", () => {
     (block.names[0] as Record<string, unknown>).nameStatus = "concurrent";
 
     expect(parseNameHistory(block).success).toBe(false);
+  });
+});
+
+describe("ficheNameHistory", () => {
+  // @req REQ-196
+  it("returns the parsed block a fiche declares", () => {
+    expect(ficheNameHistory({ nameHistory: nameHistory() }, "PPL_X")).toEqual(
+      nameHistory()
+    );
+  });
+
+  // @req REQ-196
+  it("leaves a fiche without a block without one", () => {
+    expect(ficheNameHistory({}, "PPL_X")).toBeUndefined();
+  });
+
+  // @req REQ-196
+  it("throws naming the fiche when its block breaks the shared schema", () => {
+    const block = nameHistory([
+      account({ birth: true }),
+      account({ birth: true }),
+    ]);
+
+    expect(() => ficheNameHistory({ nameHistory: block }, "PPL_X")).toThrow(
+      /^PPL_X: .*at most one birth/
+    );
   });
 });
