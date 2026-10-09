@@ -30,14 +30,14 @@
         "title": "Wikipédia (anglais) — Kabuverdianu",
         "url": "https://en.wikipedia.org/wiki/Kabuverdianu",
         "tier": "unverified",
-        "source_kind": "community",
+        "source_kind": "encyclopedia",
         "notes": "Page lue en ligne : les noms formels et d'usage courant de la langue, et le nom proposé pour sa standardisation, donné sans source."
       },
       {
         "title": "Wikipédia (anglais) — Cape Verde",
         "url": "https://en.wikipedia.org/wiki/Cape_Verde",
         "tier": "unverified",
-        "source_kind": "community",
+        "source_kind": "encyclopedia",
         "notes": "Section sur le nom du pays, lue en ligne : le cap de la côte sénégalaise et la date de 1444."
       }
     ]

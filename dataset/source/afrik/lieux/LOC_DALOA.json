@@ -75,7 +75,7 @@
       "year": null,
       "url": "https://fr.wikipedia.org/wiki/Daloa",
       "tier": "unverified",
-      "source_kind": "community",
+      "source_kind": "encyclopedia",
       "notes": "Consulté le 9 octobre 2026."
     }
   ],
@@ -107,7 +107,7 @@
                 "year": null,
                 "url": "https://fr.wikipedia.org/wiki/Daloa",
                 "tier": "unverified",
-                "source_kind": "community",
+                "source_kind": "encyclopedia",
                 "notes": "Introduction de l'article, consultée le 9 octobre 2026."
               },
               {
@@ -137,7 +137,7 @@
                 "year": null,
                 "url": "https://fr.wikipedia.org/wiki/Daloa",
                 "tier": "unverified",
-                "source_kind": "community",
+                "source_kind": "encyclopedia",
                 "notes": "Section Histoire, consultée le 9 octobre 2026."
               },
               {
@@ -213,7 +213,7 @@
                 "year": null,
                 "url": "https://fr.wikipedia.org/wiki/Daloa",
                 "tier": "unverified",
-                "source_kind": "community",
+                "source_kind": "encyclopedia",
                 "notes": "Section Histoire, consultée le 9 octobre 2026 : « Le premier poste militaire français est installé à Daloa en 1905 »."
               }
             ]

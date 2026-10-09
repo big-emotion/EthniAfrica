@@ -103,7 +103,7 @@
       "year": null,
       "url": "https://fr.wikipedia.org/wiki/Yamoussoukro",
       "tier": "unverified",
-      "source_kind": "community",
+      "source_kind": "encyclopedia",
       "notes": "Consulté le 7 octobre 2026."
     },
     {
@@ -112,7 +112,7 @@
       "year": null,
       "url": "https://fr.wikipedia.org/wiki/Administrateurs_coloniaux_en_C%C3%B4te_d'Ivoire",
       "tier": "unverified",
-      "source_kind": "community",
+      "source_kind": "encyclopedia",
       "notes": "Nomme « Simon Maurice, administrateur de la région de Yamoussoukro » de 1901 à 1905, sans source."
     }
   ],
@@ -143,7 +143,7 @@
                 "year": null,
                 "url": "https://fr.wikipedia.org/wiki/Yamoussoukro",
                 "tier": "unverified",
-                "source_kind": "community",
+                "source_kind": "encyclopedia",
                 "notes": "Section Toponymie : « Le suffixe kro signifiant “village” en langue baoulé. »"
               },
               {
@@ -173,7 +173,7 @@
                 "year": null,
                 "url": "https://fr.wikipedia.org/wiki/Yamoussoukro",
                 "tier": "unverified",
-                "source_kind": "community",
+                "source_kind": "encyclopedia",
                 "notes": "Section Toponymie : « Le suffixe kro signifiant “village” en langue baoulé. »"
               },
               {
@@ -242,7 +242,7 @@
                 "year": null,
                 "url": "https://fr.wikipedia.org/wiki/Yamoussoukro",
                 "tier": "unverified",
-                "source_kind": "community",
+                "source_kind": "encyclopedia",
                 "notes": "Sections Toponymie et Histoire coloniale, consultées le 7 octobre 2026."
               }
             ]

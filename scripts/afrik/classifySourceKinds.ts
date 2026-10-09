@@ -19,7 +19,9 @@
  *
  * Only `source_kind` keys are added, right after `tier`, at the fiche's own
  * indentation; tiers, URLs and text are never touched, and a typed source —
- * `ai_generated` included — is never re-typed.
+ * `ai_generated` included — is never re-typed, except where an operator
+ * ruling moves a rule's kind (`RULED_KIND_MOVES`): then only the value of
+ * that key changes, so the move is replayed by the script instead of by hand.
  *
  * Usage:
  *   npx tsx scripts/afrik/classifySourceKinds.ts            # dry run: counts per kind and rule
@@ -83,6 +85,7 @@ export const HOST_RULES: HostRule[] = [
       "bamadaba.coastsystems.net",
       "cnrtl.fr",
       "dictionnaire-academie.fr",
+      // larousse.fr/encyclopedie is an encyclopedia: see URL_PREFIX_RULES.
       "larousse.fr",
       "oed.com",
       "dsae.co.za",
@@ -346,7 +349,6 @@ export const HOST_RULES: HostRule[] = [
     id: "community",
     kind: "community",
     domains: [
-      "wikipedia.org",
       "wiktionary.org",
       "wikidata.org",
       "wikimedia.org",
@@ -383,8 +385,14 @@ export const HOST_RULES: HostRule[] = [
     ],
   },
   {
-    // Wikipedia stays `community`: its readers write it, nobody edits it as
-    // a publisher does.
+    // Operator ruling, 2026-10-10: Wikipedia reads as an encyclopedia, which
+    // is what a reader recognises it as. Its own id lets RULED_KIND_MOVES
+    // re-type the sources typed `community` before the ruling.
+    id: "encyclopedia-wikipedia",
+    kind: "encyclopedia",
+    domains: ["wikipedia.org"],
+  },
+  {
     id: "encyclopedia",
     kind: "encyclopedia",
     domains: [
@@ -443,6 +451,30 @@ export const HOST_RULES: HostRule[] = [
   },
 ];
 
+/**
+ * Host-and-path prefixes, tried before the host table, for a host that
+ * carries two kinds of work under different paths: Larousse's dictionary is a
+ * linguistic reference, its encyclopedia is not.
+ */
+export const URL_PREFIX_RULES: PatternRule[] = [
+  {
+    id: "encyclopedia-larousse",
+    kind: "encyclopedia",
+    pattern: /^larousse\.fr\/encyclopedie\//,
+  },
+];
+
+/**
+ * Kinds an operator ruling moved after sources were already typed: a source
+ * typed `from` whose rule is `rule` now takes that rule's kind. Wikipedia and
+ * Larousse's encyclopedia moved to `encyclopedia` on 2026-10-10.
+ */
+export const RULED_KIND_MOVES: { from: SourceKind; rule: string }[] = [
+  { from: "community", rule: "encyclopedia-wikipedia" },
+  { from: "community", rule: "title-encyclopedia-wikipedia" },
+  { from: "linguistic_reference", rule: "encyclopedia-larousse" },
+];
+
 /** Domain shapes, tried in order once no explicit domain matched. */
 export const HOST_PATTERN_RULES: PatternRule[] = [
   {
@@ -473,6 +505,13 @@ export const TITLE_RULES: PatternRule[] = [
     kind: "encyclopedia",
     pattern:
       /^Britannica\b|Encyclop(æ|ae)dia Britannica|^Encyclopaedia of Islam\b/,
+  },
+  {
+    // Anchored for the same reason: « chiffre vérifié via Wikipédia » in an
+    // Ethnologue title does not make it Wikipedia.
+    id: "title-encyclopedia-wikipedia",
+    kind: "encyclopedia",
+    pattern: /^Wikip[ée]dia\b|— Wikip[ée]dia\b/,
   },
   {
     id: "title-missionary-database",
@@ -547,6 +586,12 @@ export function classifySource(source: CitedSource): Classification {
   const host = hostOf(source.url);
 
   if (host) {
+    const hostAndPath = `${host}${new URL(source.url as string).pathname}`;
+    const prefixed = URL_PREFIX_RULES.find((rule) =>
+      rule.pattern.test(hostAndPath)
+    );
+    if (prefixed) return { kind: prefixed.kind, rule: prefixed.id };
+
     let best: { rule: HostRule; length: number } | null = null;
     for (const rule of HOST_RULES) {
       for (const domain of rule.domains) {
@@ -712,6 +757,42 @@ export function insertSourceKinds(
   return updated;
 }
 
+/**
+ * Rewrites the `source_kind` value of each source whose entry in `kinds` is
+ * not null, and only that value: the key, its spacing and its line stay.
+ * `kinds` follows the order of `locateSources`.
+ */
+export function moveSourceKinds(
+  text: string,
+  kinds: (SourceKind | null)[]
+): string {
+  const spans = locateSources(text);
+  let updated = text;
+  [...spans.entries()].reverse().forEach(([index, span]) => {
+    const kind = kinds[index];
+    if (!kind) return;
+    const entry = updated.slice(span.start, span.end);
+    const moved = entry.replace(
+      /("source_kind"\s*:\s*")[a-z_]+(")/,
+      `$1${kind}$2`
+    );
+    updated = updated.slice(0, span.start) + moved + updated.slice(span.end);
+  });
+  return updated;
+}
+
+/** The kind a ruled move gives an already-typed source, or null. */
+function ruledMove(
+  source: CitedSource & { source_kind?: unknown }
+): SourceKind | null {
+  const { kind, rule } = classifySource(source);
+  const move = RULED_KIND_MOVES.find(
+    (candidate) =>
+      candidate.from === source.source_kind && candidate.rule === rule
+  );
+  return move && kind && kind !== move.from ? kind : null;
+}
+
 // ───── Corpus run ─────────────────────────────────────────────────────────
 
 export interface UnmatchedSource {
@@ -726,6 +807,8 @@ export interface UnmatchedSource {
 export interface SourceKindReport {
   byKind: Partial<Record<SourceKind, number>>;
   byRule: Record<string, number>;
+  /** Typed sources a ruled move re-typed, keyed « from → to ». */
+  moved: Record<string, number>;
   unmatched: UnmatchedSource[];
 }
 
@@ -733,10 +816,27 @@ export function runSourceKindClassification(options: {
   datasetRoot: string;
   apply: boolean;
 }): SourceKindReport {
-  const report: SourceKindReport = { byKind: {}, byRule: {}, unmatched: [] };
+  const report: SourceKindReport = {
+    byKind: {},
+    byRule: {},
+    moved: {},
+    unmatched: [],
+  };
 
   for (const fiche of readCorpusFiches(options.datasetRoot)) {
     const spans = locateSources(fiche.text);
+    const moves = spans.map((span) => {
+      const source = JSON.parse(
+        fiche.text.slice(span.start, span.end)
+      ) as CitedSource & { source_kind?: unknown };
+      if (source.source_kind === undefined) return null;
+      const kind = ruledMove(source);
+      if (kind) {
+        const key = `${String(source.source_kind)} → ${kind}`;
+        report.moved[key] = (report.moved[key] ?? 0) + 1;
+      }
+      return kind;
+    });
     const kinds = spans.map((span) => {
       const source = JSON.parse(
         fiche.text.slice(span.start, span.end)
@@ -759,9 +859,13 @@ export function runSourceKindClassification(options: {
       return kind;
     });
 
-    if (options.apply && kinds.some(Boolean)) {
-      const updated = insertSourceKinds(fiche.text, kinds);
-      assertOnlyKindsAdded(fiche.text, updated, kinds, fiche.path);
+    if (options.apply && (kinds.some(Boolean) || moves.some(Boolean))) {
+      const updated = moveSourceKinds(
+        insertSourceKinds(fiche.text, kinds),
+        moves
+      );
+      const changed = kinds.map((kind, index) => kind ?? moves[index]);
+      assertOnlyKindsChanged(fiche.text, updated, changed, fiche.path);
       fs.writeFileSync(path.join(options.datasetRoot, fiche.path), updated);
     }
   }
@@ -770,10 +874,11 @@ export function runSourceKindClassification(options: {
 }
 
 /**
- * Insertion only adds text, so what can go wrong is a key landing in the
- * wrong object or breaking the JSON; either must stop the run before disk.
+ * The rewrite only adds or re-values `source_kind` keys, so what can go wrong
+ * is a key landing in the wrong object or breaking the JSON; either must stop
+ * the run before disk.
  */
-function assertOnlyKindsAdded(
+function assertOnlyKindsChanged(
   before: string,
   after: string,
   kinds: (SourceKind | null)[],
@@ -868,6 +973,9 @@ async function main(): Promise<void> {
     (a, b) => b[1] - a[1]
   )) {
     console.log(`  ${rule.padEnd(28)} ${count}`);
+  }
+  for (const [move, count] of Object.entries(report.moved)) {
+    console.log(`${apply ? "Moved" : "Would move"} ${count} sources ${move}.`);
   }
   console.log(
     `Left for review: ${report.unmatched.length} (${held} held on purpose, ${report.unmatched.length - held} matched by no rule)`

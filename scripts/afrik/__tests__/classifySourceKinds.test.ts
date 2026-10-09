@@ -142,14 +142,39 @@ describe("classifySource", () => {
   });
 
   // @req REQ-161
-  it("keeps Wikipedia a community source: its readers write it", () => {
+  it("types Wikipedia as an encyclopedia, by its URL or by a title naming it", () => {
     expect(
       classifySource({
         title: "Wikipédia – Dioula",
         url: "https://fr.wikipedia.org/wiki/Dioula",
         tier: "unverified",
+      })
+    ).toEqual({ kind: "encyclopedia", rule: "encyclopedia-wikipedia" });
+    expect(
+      classifySource({
+        title: "Wikipédia (anglais) — Mandinka people",
+        url: null,
+        tier: "unverified",
+      })
+    ).toEqual({ kind: "encyclopedia", rule: "title-encyclopedia-wikipedia" });
+  });
+
+  // @req REQ-161
+  it("types Larousse's encyclopedia as an encyclopedia and keeps its dictionary a linguistic reference", () => {
+    expect(
+      classifySource({
+        title: "Larousse — Sénégal",
+        url: "https://www.larousse.fr/encyclopedie/pays/S%C3%A9n%C3%A9gal/143524",
+        tier: "referenced",
+      })
+    ).toEqual({ kind: "encyclopedia", rule: "encyclopedia-larousse" });
+    expect(
+      classifySource({
+        title: "Larousse — définition de griot",
+        url: "https://www.larousse.fr/dictionnaires/francais/griot/38038",
+        tier: "referenced",
       }).kind
-    ).toBe("community");
+    ).toBe("linguistic_reference");
   });
 
   // @req REQ-161
@@ -349,5 +374,81 @@ describe("runSourceKindClassification", () => {
     expect(written.sources[0].source_kind).toBe("linguistic_reference");
     expect(written.sources[1]).not.toHaveProperty("source_kind");
     expect(written.sources[2].source_kind).toBe("ai_generated");
+  });
+
+  // @req REQ-161
+  it("moves a source already typed when an operator ruling moves its rule's kind, and nothing else", () => {
+    const typed = [
+      "{",
+      '  "id": "PPL_B",',
+      '  "sources": [',
+      "    {",
+      '      "title": "Wikipédia – B",',
+      '      "url": "https://fr.wikipedia.org/wiki/B",',
+      '      "tier": "unverified",',
+      '      "source_kind": "community",',
+      '      "notes": "Lue le 9 octobre 2026."',
+      "    },",
+      '    { "title": "Larousse — B", "url": "https://www.larousse.fr/encyclopedie/divers/B/1", "tier": "referenced", "source_kind": "linguistic_reference" },',
+      "    {",
+      '      "title": "Behind the Name — B",',
+      '      "url": "https://www.behindthename.com/name/b",',
+      '      "tier": "unverified",',
+      '      "source_kind": "community"',
+      "    },",
+      "    {",
+      '      "title": "Machine text about Wikipedia",',
+      '      "url": "https://en.wikipedia.org/wiki/B",',
+      '      "tier": "unverified",',
+      '      "source_kind": "ai_generated"',
+      "    }",
+      "  ]",
+      "}",
+      "",
+    ].join("\n");
+    const file = writeFiche("peuples/PPL_B.json", typed);
+
+    const report = runSourceKindClassification({ datasetRoot, apply: true });
+
+    expect(report.moved).toEqual({
+      "community → encyclopedia": 1,
+      "linguistic_reference → encyclopedia": 1,
+    });
+    expect(fs.readFileSync(file, "utf8")).toBe(
+      typed
+        .replace(
+          '"source_kind": "community",',
+          '"source_kind": "encyclopedia",'
+        )
+        .replace(
+          '"source_kind": "linguistic_reference" }',
+          '"source_kind": "encyclopedia" }'
+        )
+    );
+  });
+
+  // @req REQ-161
+  it("reports a ruled move on a dry run without writing it", () => {
+    const typed = JSON.stringify(
+      {
+        id: "PPL_C",
+        sources: [
+          {
+            title: "Wikipédia – C",
+            url: "https://fr.wikipedia.org/wiki/C",
+            tier: "unverified",
+            source_kind: "community",
+          },
+        ],
+      },
+      null,
+      2
+    );
+    const file = writeFiche("peuples/PPL_C.json", typed);
+
+    const report = runSourceKindClassification({ datasetRoot, apply: false });
+
+    expect(report.moved).toEqual({ "community → encyclopedia": 1 });
+    expect(fs.readFileSync(file, "utf8")).toBe(typed);
   });
 });
