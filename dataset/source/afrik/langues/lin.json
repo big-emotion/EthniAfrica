@@ -25,6 +25,447 @@
       "peopleId": "PPL_LINGALA"
     }
   ],
+  "nameHistory": {
+    "summary": "Le nom lingala désigne une langue du bassin du Congo, que beaucoup de ses locuteurs appellent aussi mangala. Elle a porté d'autres noms : Bangala, et avant lui bobangi et kibangi. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Lingala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une langue du fleuve Congo, écrit pour la première fois vers 1902 ; son origine est débattue.",
+        "periodLabel": "Depuis 1902",
+        "accounts": [
+          {
+            "period": {
+              "from": 2006,
+              "to": null,
+              "label": "Depuis 2006"
+            },
+            "statement": "Le lingala est l'une des quatre langues nationales de la République démocratique du Congo, avec le kikongo, le swahili et le tshiluba, selon l'article 1 de sa Constitution.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République démocratique du Congo, 18 février 2006, article 1",
+                "author": "République démocratique du Congo",
+                "year": 2006,
+                "url": "https://mjp.univ-perp.fr/constit/cd2006.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Texte lu sur la Digithèque de la Faculté de droit de Perpignan. L'article 1 fixe le français comme langue officielle et le kikongo, le lingala, le swahili et le tshiluba comme langues nationales."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "statement": "Le nom lingala figure dans le titre de la grammaire que publie le père De Boeck, missionnaire de Scheut à Nouvelle-Anvers. Il y écrit que les Européens disent « Bangala », que « les noirs » disent « Lingala », et qu'il emploiera ce second nom.",
+            "formAsWritten": "Lingala",
+            "actors": [
+              {
+                "name": "Le père De Boeck",
+                "role": "auteur de la grammaire, arrivé à Nouvelle-Anvers en 1901"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grammaire et vocabulaire du lingala ou langue du Haut-Congo",
+                "author": "Le père De Boeck, de la congrégation de Scheut",
+                "year": 1904,
+                "url": "https://archive.org/details/grammaireetvoca00boecgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3 et p. 5",
+                "notes": "Bruxelles, Polleunis et Ceuterick, 1904. Lu dans la numérisation d'Internet Archive, introduction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "statement": "Le nom lingala apparaît par écrit en 1902 : Michael Meeuwis n'en trouve aucune trace plus ancienne. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Lingala",
+                "author": "Michael Meeuwis",
+                "year": null,
+                "url": "https://apics-online.info/surveys/60",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1902,
+              "label": "1901-1902"
+            },
+            "statement": "Le nom lingala aurait été choisi par les missionnaires de Scheut de Nouvelle-Anvers pour remplacer « Bangala » : dans plusieurs langues de la région, le préfixe ba- marque un nom de peuple, pas un nom de langue, selon Michael Meeuwis.",
+            "hypothesisGroup": "origine du nom lingala",
+            "sources": [
+              {
+                "title": "Lingala",
+                "author": "Michael Meeuwis",
+                "year": null,
+                "url": "https://apics-online.info/surveys/60",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 9 octobre 2026. Mpoke Mimpongo écrit en 2024 (p. 43, note 61) que Michael Meeuwis ne défend plus cette lecture et pense désormais que De Boeck a seulement officialisé un nom qui existait déjà (communication personnelle). Nous n'avons pas trouvé de texte publié où Meeuwis le dit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1901,
+              "label": "Avant 1901, selon cette lecture"
+            },
+            "statement": "Le nom lingala viendrait du bobangi : ce serait la forme courte de mangála má libɔkɔ, « le langage des marchés ». Le père De Boeck n'aurait fait que retenir un nom que les Africains employaient déjà, selon Mpoke Mimpongo.",
+            "hypothesisGroup": "origine du nom lingala",
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1, p. 3 et p. 44",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024 (Montréal), lu en texte intégral."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom lingala aurait été formé par des locuteurs du libinza, sur le modèle du préfixe li- de leur langue, selon Tshimpaka, cité par Mpoke Mimpongo, qui rejette cette lecture.",
+            "hypothesisGroup": "origine du nom lingala",
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024 (Montréal), lu en texte intégral. Il cite Tshimpaka (1980, p. 119), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom lingala viendrait de mongálá, « bras de rivière » : les Européens auraient pris pour un nom de langue le mot par lequel les commerçants du fleuve disaient d'où ils venaient, selon Bokamba, cité par Mpoke Mimpongo, qui rejette cette lecture.",
+            "hypothesisGroup": "origine du nom lingala",
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024 (Montréal), lu en texte intégral. Il cite Bokamba (2009, p. 57), que nous n'avons pas lu, et oppose à cette lecture une différence de ton entre les deux mots."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1882,
+              "label": "Jusqu'aux années 1880"
+            },
+            "statement": "Le bobangi est alors la langue de commerce des riverains du fleuve Congo. Les Européens arrivés en 1881-1882 l'apprennent mal et le simplifient ; ce parler donnera plus tard ce qu'on appelle lingala, selon Michael Meeuwis.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Lingala",
+                "author": "Michael Meeuwis",
+                "year": null,
+                "url": "https://apics-online.info/surveys/60",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "Vers 1882"
+            },
+            "statement": "Le nom mangala désigne déjà ce parler du fleuve quand l'Anglais Harry Johnston remonte le Congo, vers 1882, selon Mpoke Mimpongo, pour qui c'est le plus ancien nom de la langue.",
+            "before": true,
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6 et p. 42",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024 (Montréal), lu en texte intégral. Il s'appuie sur un livre de Harry Johnston paru en 1902 (p. 897), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1901,
+              "label": "De 1884-1885 à 1901"
+            },
+            "statement": "Le nom Bangala est donné à ce parler après 1884-1885, quand il est porté à Bangala Station, un poste de l'État sur le fleuve, selon Michael Meeuwis. Le père De Boeck écrit qu'on l'appelait aussi « la langue du fleuve » ou « la langue commerciale ».",
+            "before": true,
+            "sources": [
+              {
+                "title": "Lingala",
+                "author": "Michael Meeuwis",
+                "year": null,
+                "url": "https://apics-online.info/surveys/60",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 9 octobre 2026."
+              },
+              {
+                "title": "Grammaire et vocabulaire du lingala ou langue du Haut-Congo",
+                "author": "Le père De Boeck, de la congrégation de Scheut",
+                "year": 1904,
+                "url": "https://archive.org/details/grammaireetvoca00boecgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3",
+                "notes": "Bruxelles, Polleunis et Ceuterick, 1904. Lu dans la numérisation d'Internet Archive, introduction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1886,
+              "to": 1888,
+              "label": "Années 1880"
+            },
+            "statement": "Le nom kibangi est employé par des Européens venus de la côte atlantique, sur le modèle du kikongo, où le préfixe ki- marque un nom de langue, selon Mpoke Mimpongo.",
+            "before": true,
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2, note 3, et p. 3, note 5",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024 (Montréal), lu en texte intégral. Il cite Sims (1886) et Coquilhat (1888), que nous n'avons pas lus."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bangala",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des Européens, d'après le nom d'un poste de l'État sur le fleuve Congo",
+        "shortLine": "Le premier nom donné à la langue ; il reste employé dans le nord-est de la RD Congo.",
+        "periodLabel": "Depuis 1884-1885",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "statement": "Le nom Bangala reste employé dans le nord-est du Congo pour une variété de la langue, là où l'influence des missionnaires de Scheut était moindre, selon Michael Meeuwis.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Lingala",
+                "author": "Michael Meeuwis",
+                "year": null,
+                "url": "https://apics-online.info/surveys/60",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1885,
+              "label": "1884-1885"
+            },
+            "statement": "Le nom Bangala est d'abord celui d'un poste de l'État, Bangala Station, nommé d'après des habitants qu'on croyait appeler ainsi ; le parler du poste reçoit ce nom, selon Michael Meeuwis. Le poste devient Nouvelle-Anvers en 1890, aujourd'hui Mankanza. C'est la plus ancienne trace de ce nom de langue que le projet connaît ; le parler lui-même est plus ancien.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Lingala",
+                "author": "Michael Meeuwis",
+                "year": null,
+                "url": "https://apics-online.info/surveys/60",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1884,
+              "label": "Avant l'arrivée des Européens"
+            },
+            "statement": "Le nom Bangala, « ou plus exactement Mangala », désignait déjà avant l'arrivée des Européens le peuple des rives du fleuve en aval de Nouvelle-Anvers, selon le père De Boeck.",
+            "hypothesisGroup": "Bangala, nom d'un peuple ?",
+            "sources": [
+              {
+                "title": "Grammaire et vocabulaire du lingala ou langue du Haut-Congo",
+                "author": "Le père De Boeck, de la congrégation de Scheut",
+                "year": 1904,
+                "url": "https://archive.org/details/grammaireetvoca00boecgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4, note 1",
+                "notes": "Bruxelles, Polleunis et Ceuterick, 1904. Lu dans la numérisation d'Internet Archive, introduction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1884,
+              "label": "Avant l'arrivée des Européens"
+            },
+            "statement": "Le nom Bangala serait un nom que les Européens ont cru entendre : les habitants de la région n'auraient pas porté ce nom, selon Michael Meeuwis, et aucun peuple Bangala n'aurait existé, selon Mpoke Mimpongo.",
+            "hypothesisGroup": "Bangala, nom d'un peuple ?",
+            "sources": [
+              {
+                "title": "Lingala",
+                "author": "Michael Meeuwis",
+                "year": null,
+                "url": "https://apics-online.info/surveys/60",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 9 octobre 2026."
+              },
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 et p. 43",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024 (Montréal), lu en texte intégral."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mangala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que beaucoup de locuteurs donnent à la langue, surtout dans le nord des deux Congo.",
+        "periodLabel": "Vers 1882 et aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "statement": "Le nom mangala reste celui que beaucoup de locuteurs préfèrent, surtout dans le nord des deux Congo et le sud de la Centrafrique, selon Mpoke Mimpongo, qui cite dans le même sens Tanghe (1930) et Guthrie (1939, 1943).",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024 (Montréal), lu en texte intégral."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens en bobangi"
+            },
+            "statement": "Le nom mangala veut dire en bobangi « langage, façon de parler, jargon » ; il serait la forme courte de mangála má libɔkɔ, « le langage des marchés », selon Mpoke Mimpongo.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3, p. 5 et p. 6",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024 (Montréal), lu en texte intégral."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "Vers 1882"
+            },
+            "statement": "Le nom mangala est connu de l'Anglais Harry Johnston vers 1882, quand il remonte le fleuve Congo, selon Mpoke Mimpongo. C'est la plus ancienne trace de ce nom que le projet connaît. Le parler qu'il désigne est plus ancien que lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6 et p. 42",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024 (Montréal), lu en texte intégral. Il s'appuie sur un livre de Harry Johnston paru en 1902 (p. 897), que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "regional_lingua_franca",
     "dialects": [
@@ -106,6 +547,7 @@
         "title": "Constitution de la République démocratique du Congo, 18 février 2006, article 1",
         "url": "https://mjp.univ-perp.fr/constit/cd2006.htm",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Texte consulté sur la Digithèque de la Faculté de droit de Perpignan. L'article 1 fixe le français comme langue officielle et le kikongo, le lingala, le swahili et le tshiluba comme langues nationales."
       },
       {

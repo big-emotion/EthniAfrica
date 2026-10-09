@@ -6,6 +6,343 @@
   "summary": "Le Mali porte le nom de l'empire qui domina l'Afrique de l'Ouest du XIIIe au XVIe siècle. Ghana, Mali, Songhaï : trois empires s'y sont succédé, et Djenné comme Tombouctou en gardent l'architecture. Bambara, Peuls, Dogons, Touaregs, Soninké et Songhaï y perpétuent l'épopée de Soundiata et l'art des griots.",
   "etymology": "La plus ancienne mention est celle du géographe al-Bakrī au XIe siècle, qui écrit Malel, selon Djibril Tamsir Niane ; le nom est aussi attesté dans des récits arabes du XIVe siècle. Le nom de l’État actuel renvoie à l’empire médiéval, mais son sens premier n’est pas établi par les sources citées. Djibril Tamsir Niane (1985, p. 153, note 28) propose que Mali provienne d’une transformation de Manden chez les Fulɓe, aussi appelés Peuls en français, et donne Mellit comme variante berbère du même nom. Le dictionnaire bambara Bamadaba donne au mot màli le sens d’hippopotame ; ce sens lexical ne démontre pas que le nom du pays en dérive. L’interprétation « lieu où vit le roi » figure notamment dans un document pédagogique de Core Knowledge, sans démonstration linguistique dans le passage concerné. Ces rapprochements doivent être distingués d’une traduction certaine du nom.",
   "nameOriginActor": "L’Assemblée de la République soudanaise adopte le nom de République du Mali le 22 septembre 1960. Cette décision moderne ne permet pas d’identifier qui a créé le nom médiéval.",
+  "nameHistory": {
+    "summary": "Le nom Mali désigne un pays d'Afrique de l'Ouest, la République du Mali, qui a repris le nom d'un empire médiéval. Le pays a d'abord porté d'autres noms : Soudan français, puis République soudanaise. Les sources ne s'accordent pas sur l'origine du nom Mali ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Mali",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un empire médiéval, repris par l'État en 1960 ; son sens premier reste débattu.",
+        "periodLabel": "Écrit dès le XIe siècle ; nom de l'État depuis 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": null,
+              "label": "Depuis le 22 septembre 1960"
+            },
+            "statement": "Le nom Mali est celui de la République du Mali depuis que l'Assemblée de la République soudanaise l'adopte, le 22 septembre 1960, un mois après le départ du Sénégal de la Fédération du Mali, selon l'Office of the Historian.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Mali",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/mali",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Elle date l'indépendance de la Fédération du Mali du 20 juin 1960, le retrait du Sénégal du 20 août et rapporte que l'Assemblée nationale de la République soudanaise décide que l'État deviendra la République du Mali."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1960"
+            },
+            "statement": "Le nom Mali est repris par l'ancien Soudan français pour affirmer sa souveraineté : il prend le nom de l'empire fondé par Soundiata, comme la Gold Coast a pris celui du Ghana, selon Djibril Tamsir Niane.",
+            "sources": [
+              {
+                "title": "La reconquête de l'identité historique : « décoloniser l'histoire ou la défalsifier ? », dans Histoire et diversité des cultures",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000058850",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 225",
+                "notes": "UNESCO, recueil de la réunion d'experts sur la nature et la fonction de l'histoire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1960,
+              "label": "1959-1960"
+            },
+            "statement": "Le nom Mali désigne d'abord la fédération que forment le Sénégal et le Soudan français ; elle obtient l'indépendance le 20 juin 1960 et se défait deux mois plus tard, selon Jean Suret-Canale et A. Adu Boahen.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 7 : L'Afrique occidentale",
+                "author": "Jean Suret-Canale et A. Adu Boahen",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 202",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Le Sénégal et le Soudan français créent la Fédération du Mali, qui demande son indépendance en septembre 1959 et l'obtient le 20 juin 1960."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Mali",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/mali",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Elle date l'indépendance de la Fédération du Mali du 20 juin 1960, le retrait du Sénégal du 20 août et rapporte que l'Assemblée nationale de la République soudanaise décide que l'État deviendra la République du Mali."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1375,
+              "to": 1375,
+              "label": "1375"
+            },
+            "statement": "Le nom Mali figure sur l'Atlas catalan, où une ville est nommée « Ciutat de Melly », la ville du Mali, selon François-Xavier Fauvelle.",
+            "sources": [
+              {
+                "title": "The imperial capital of Mâli (14th century): A new hypothesis",
+                "author": "François-Xavier Fauvelle",
+                "year": 2024,
+                "url": "https://scielo.pt/scielo.php?pid=S1646-740X2024000100055&script=sci_arttext",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Medievalista, n° 35, 2024, lu en ligne. Sections « Introduction » et « The Capital of Mâli »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1352,
+              "to": 1352,
+              "label": "1352"
+            },
+            "statement": "Le nom Mali désigne aussi une ville : le voyageur Ibn Baṭṭūṭa arrive en 1352 à « la ville de Mâllî », où réside le roi, selon François-Xavier Fauvelle.",
+            "sources": [
+              {
+                "title": "The imperial capital of Mâli (14th century): A new hypothesis",
+                "author": "François-Xavier Fauvelle",
+                "year": 2024,
+                "url": "https://scielo.pt/scielo.php?pid=S1646-740X2024000100055&script=sci_arttext",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Medievalista, n° 35, 2024, lu en ligne. Sections « Introduction » et « The Capital of Mâli »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1339,
+              "to": 1339,
+              "label": "1339"
+            },
+            "statement": "Le nom Mali figure, écrit Melli, sur la carte marine d'Angelino Dulcert, qui fait connaître aux chrétiens un « rex Melli » riche en or, selon Jean Devisse.",
+            "formAsWritten": "rex Melli",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 26 : L'Afrique dans les relations intercontinentales",
+                "author": "Jean Devisse, avec Shuhdi Labib",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 693",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Le chapitre cite la carte d'Angelino Dulcert ; nous ne l'avons pas vue nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1100,
+              "to": 1199,
+              "label": "XIIe siècle"
+            },
+            "statement": "Le nom Mali est écrit Malel par le géographe al-Idrīsī, qui le donne à une ville, à quatre jours de marche d'une autre ville, Do, selon Djibril Tamsir Niane.",
+            "formAsWritten": "Malel",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 151",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. Niane cite al-Idrīsī d'après Joseph Cuoq (1975)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1000,
+              "to": 1099,
+              "label": "XIe siècle"
+            },
+            "statement": "Le nom Mali apparaît par écrit chez le géographe al-Bakrī, sous la forme Malel : un pays dont le roi porte le titre d'« El-Moslemani », selon Djibril Tamsir Niane. C'est la plus ancienne trace de ce nom que le projet connaît. Ce Malel est le noyau d'où partiront les Maninka pour créer l'empire, pas encore l'empire lui-même.",
+            "formAsWritten": "Malel",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 150-151 et note 26",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. Niane écrit qu'al-Bakrī « a été le premier à faire mention du Mali, qu'il appelle Malel », et que ce Malel « désigne le noyau d'origine d'où partiront les Maninka pour créer l'empire du Mali »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Mali viendrait de Manden, le nom du pays des Maninka, tel que le prononçaient les Fulɓe, ou Peuls ; Mellit en serait la forme berbère, selon Djibril Tamsir Niane.",
+            "hypothesisGroup": "origine du nom Mali",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 153, note 28",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur l'avance sans en donner la démonstration."
+              },
+              {
+                "title": "The imperial capital of Mâli (14th century): A new hypothesis",
+                "author": "François-Xavier Fauvelle",
+                "year": 2024,
+                "url": "https://scielo.pt/scielo.php?pid=S1646-740X2024000100055&script=sci_arttext",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Medievalista, n° 35, 2024, lu en ligne. Sections « Introduction » et « The Capital of Mâli »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Mali viendrait de màli, « hippopotame » en bambara. Ce rapprochement circule, mais le dictionnaire Bamadaba range ce mot à part du nom du pays, et l'article de Wikipédia sur l'empire du Mali le juge insuffisant.",
+            "hypothesisGroup": "origine du nom Mali",
+            "sources": [
+              {
+                "title": "Bamadaba — Dictionnaire bambara, entrées Màli et màli",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "https://bamadaba.coastsystems.net/lexicon/m/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Consulté le 9 octobre 2026. Deux entrées distinctes : Màli, nom propre du pays, et màli, « hippopotame ». Le dictionnaire ne relie pas l'une à l'autre."
+              },
+              {
+                "title": "Empire du Mali — Wikipédia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Section Étymologie, consultée le 9 octobre 2026 : « cette coïncidence lexicale ne suffit pas à expliquer l'origine du nom impérial ». Ce passage ne cite pas de source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Mali serait un mot arabe signifiant « là où vit le roi », selon un document scolaire américain de la Core Knowledge Foundation, qui n'en donne pas la preuve.",
+            "hypothesisGroup": "origine du nom Mali",
+            "sources": [
+              {
+                "title": "Core Knowledge — Mali, document pédagogique",
+                "author": "Core Knowledge Foundation",
+                "year": null,
+                "url": "https://www.coreknowledge.org/wp-content/uploads/2017/03/CKHG-G4-U5-about-Mali.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 1",
+                "notes": "Document scolaire américain, consulté le 9 octobre 2026 : « Mali is also an Arabic word. It means “where the king lives.” » Le document ne cite aucune source pour ce sens."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République soudanaise",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "periodLabel": "Jusqu'au 22 septembre 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1960,
+              "label": "Jusqu'au 22 septembre 1960"
+            },
+            "statement": "Le nom République soudanaise est celui de l'État qui forme la Fédération du Mali avec le Sénégal ; son Assemblée décide le 22 septembre 1960 qu'il s'appellera République du Mali, selon l'Office of the Historian.",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Mali",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/mali",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Elle date l'indépendance de la Fédération du Mali du 20 juin 1960, le retrait du Sénégal du 20 août et rapporte que l'Assemblée nationale de la République soudanaise décide que l'État deviendra la République du Mali."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Soudan français",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "periodLabel": "Époque coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1960,
+              "label": "Époque coloniale"
+            },
+            "statement": "Le nom Soudan français désigne la colonie française qui deviendra le Mali, selon Jean Suret-Canale et A. Adu Boahen ; le tableau des indépendances de l'Histoire générale de l'Afrique écrit « Mali (Soudan français) ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 7 : L'Afrique occidentale",
+                "author": "Jean Suret-Canale et A. Adu Boahen",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 202",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Le Sénégal et le Soudan français créent la Fédération du Mali, qui demande son indépendance en septembre 1959 et l'obtient le 20 juin 1960."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : « Mali (Soudan français) », indépendant le 20 juin 1960 sous la forme d'une Fédération du Mali avec le Sénégal, puis le 22 septembre 1960."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -337,6 +674,7 @@
         "title": "Bamadaba — Dictionnaire bambara, entrées Màli et màli",
         "url": "https://bamadaba.coastsystems.net/lexicon/m/",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Dictionnaire du Corpus bambara de référence, consulté le 23 septembre 2026. Distingue le nom du pays et le nom de l’hippopotame ; ces entrées ne démontrent pas une dérivation historique du premier à partir du second."
       },
       {
