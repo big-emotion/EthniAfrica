@@ -221,3 +221,20 @@ describe("plain-language editorial contract", () => {
     expect(classifyFindings([finding], []).errors).toHaveLength(1);
   });
 });
+
+describe("lintCopy without the Vale binary", () => {
+  // @vvago/vale is an optional dependency: its install downloads the binary
+  // from the GitHub API, which rate-limits CI runners with a 403. When that
+  // happens the editorial check must say so, not fail with a bare ENOENT.
+  // @req REQ-178
+  it("names the missing binary and how to recover", () => {
+    expect(() =>
+      lintCopy(
+        [{ file: "a.md", location: "$", text: "Un texte." }],
+        "/nonexistent/vale"
+      )
+    ).toThrow(
+      /Vale binary is missing[\s\S]*optional dependency[\s\S]*rerun the CI job/
+    );
+  });
+});
