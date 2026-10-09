@@ -262,3 +262,23 @@ describe("SearchResultCard", () => {
     expect(card.className).not.toContain("--afh-cat-");
   });
 });
+
+describe("SearchResultCard — place", () => {
+  // No place page exists yet: the card leads to the fiche of the country the
+  // place belongs to.
+  // @req REQ-196
+  it("labels a place and links it to its country's fiche", () => {
+    renderCard({
+      type: "place",
+      id: "LOC_YAMOUSSOUKRO",
+      name: "Yamoussoukro",
+      countryIds: ["CIV"],
+    });
+
+    expect(screen.getByRole("link", { name: "Yamoussoukro" })).toHaveAttribute(
+      "href",
+      getCountryRoute("fr", "CIV")
+    );
+    expect(screen.getByText("Lieu")).toBeInTheDocument();
+  });
+});

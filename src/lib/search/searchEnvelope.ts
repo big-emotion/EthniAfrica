@@ -336,8 +336,15 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
   // reading `peoples` off an Array and crashing the whole modal.
   if (!data || Array.isArray(data)) return [];
 
-  const { peoples, countries, families, persons, patronymes, languages } =
-    data as Record<string, unknown>;
+  const {
+    peoples,
+    countries,
+    families,
+    persons,
+    patronymes,
+    languages,
+    places,
+  } = data as Record<string, unknown>;
 
   return [
     ...asRows(peoples).map((row): SearchResult => ({
@@ -442,6 +449,19 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
       relevance: numberOrUndefined(row.relevance),
       exactMatch: row.exactMatch === true,
     })),
+    // REQ-196: a place answers to every name its nameHistory records; the
+    // result carries its filed name, and its summary says what it is.
+    ...asRows(places).map((row): SearchResult => ({
+      type: "place",
+      id: String(row.id),
+      name: String(row.nameMain ?? ""),
+      countryIds: row.countryId
+        ? [row.countryId as SearchResult["countryIds"][number]]
+        : [],
+      snippet: (row.summary as string) || undefined,
+      relevance: numberOrUndefined(row.relevance),
+      exactMatch: row.exactMatch === true,
+    })),
   ];
 }
 
@@ -516,6 +536,7 @@ export const EMPTY_SEARCH_LENS_COUNTS: SearchLensCounts = {
   language: 0,
   person: 0,
   patronyme: 0,
+  place: 0,
 };
 
 function numberOrZero(value: unknown): number {
@@ -540,14 +561,17 @@ export function mapSearchCounts(envelope: unknown): SearchLensCounts {
   const language = numberOrZero(row.languagesTotal);
   const person = numberOrZero(row.personsTotal);
   const patronyme = numberOrZero(row.patronymesTotal);
+  const place = numberOrZero(row.placesTotal);
   return {
-    all: people + country + languageFamily + language + person + patronyme,
+    all:
+      people + country + languageFamily + language + person + patronyme + place,
     people,
     country,
     languageFamily,
     language,
     person,
     patronyme,
+    place,
   };
 }
 

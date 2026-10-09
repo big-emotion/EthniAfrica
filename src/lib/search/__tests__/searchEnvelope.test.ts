@@ -959,6 +959,7 @@ describe("mapSearchCounts", () => {
       language: 5,
       person: 1,
       patronyme: 0,
+      place: 0,
     });
   });
 
@@ -985,6 +986,7 @@ describe("mapSearchCounts", () => {
       language: 5,
       person: 1,
       patronyme: 7,
+      place: 0,
     });
   });
 
@@ -998,6 +1000,7 @@ describe("mapSearchCounts", () => {
       language: 0,
       person: 0,
       patronyme: 0,
+      place: 0,
     };
     expect(mapSearchCounts({ data: {} })).toEqual(zero);
     expect(mapSearchCounts({ data: [{ id: "PPL_BETE" }] })).toEqual(zero);
@@ -1039,5 +1042,46 @@ describe("mapSearchEnvelope — answer", () => {
       undefined,
       undefined,
     ]);
+  });
+});
+
+describe("mapSearchEnvelope — places", () => {
+  // @req REQ-196
+  it("brings a place onto the result page under its filed name and country", () => {
+    const results = mapSearchEnvelope({
+      data: {
+        places: [
+          {
+            id: "LOC_YAMOUSSOUKRO",
+            nameMain: "Yamoussoukro",
+            placeType: "ville",
+            countryId: "CIV",
+            summary: "Capitale politique de la Côte d'Ivoire.",
+            relevance: 1,
+            exactMatch: true,
+            normalizedScore: 0.95,
+          },
+        ],
+      },
+    });
+
+    expect(results).toEqual([
+      {
+        type: "place",
+        id: "LOC_YAMOUSSOUKRO",
+        name: "Yamoussoukro",
+        countryIds: ["CIV"],
+        snippet: "Capitale politique de la Côte d'Ivoire.",
+        relevance: 1,
+        exactMatch: true,
+      },
+    ]);
+  });
+
+  // @req REQ-196
+  it("counts places in the all lens", () => {
+    expect(
+      mapSearchCounts({ data: { peoplesTotal: 2, placesTotal: 1 } })
+    ).toMatchObject({ all: 3, place: 1 });
   });
 });

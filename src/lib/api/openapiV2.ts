@@ -991,10 +991,22 @@ const options: swaggerJsdoc.Options = {
               description: "Languages matching corpus-wide",
               example: 0,
             },
+            places: {
+              type: "array",
+              items: { $ref: "#/components/schemas/PlaceSearchHitV2" },
+              description:
+                "Matching places (REQ-196), ranked by afrik_search_places (migration 100) on the filed name and every nameHistory name. A grouped facet like languages: not folded into `results`.",
+            },
+            placesTotal: {
+              type: "integer",
+              description:
+                "Places matching across every page, not only this one",
+              example: 0,
+            },
             total: {
               type: "integer",
               description:
-                "Without `lens`, the sum of the six non-quiz corpus-wide counts. With `lens=quiz`, this equals `quizzesTotal`. Changed in 2.2.0: this used to report the size of the returned page, which made it useless for paging.",
+                "Without `lens`, the sum of the seven non-quiz counts, each across every page. With `lens=quiz`, this equals `quizzesTotal`. Changed in 2.2.0: this used to report the size of the returned page, which made it useless for paging.",
               example: 17,
             },
             leads: {
@@ -5633,6 +5645,35 @@ const options: swaggerJsdoc.Options = {
             "gaps",
             "sources",
             "nameHistory",
+          ],
+        },
+        PlaceSearchHitV2: {
+          type: "object",
+          description:
+            "A place search hit (REQ-196): exact name match, then a prefix match on any of its names, then a pg_trgm fallback; normalizedScore is the cross-kind scale of migration 069.",
+          properties: {
+            id: { type: "string", example: "LOC_YAMOUSSOUKRO" },
+            nameMain: { type: "string", example: "Yamoussoukro" },
+            placeType: { type: "string", example: "ville" },
+            countryId: { type: "string", example: "CIV" },
+            summary: { type: "string" },
+            nameHistory: {
+              oneOf: [
+                { $ref: "#/components/schemas/NameHistoryV2" },
+                { type: "null" },
+              ],
+            },
+            relevance: { type: "number" },
+            exactMatch: { type: "boolean" },
+            normalizedScore: { type: "number", minimum: 0, maximum: 1 },
+          },
+          required: [
+            "id",
+            "nameMain",
+            "placeType",
+            "countryId",
+            "exactMatch",
+            "normalizedScore",
           ],
         },
         PlaceDetailEnvelope: {

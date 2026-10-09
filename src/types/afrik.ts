@@ -806,6 +806,22 @@ export type SearchHitKind =
   "people" | "country" | "languageFamily" | "person" | "patronyme" | "quiz";
 
 /**
+ * A place search hit (REQ-196), ranked by afrik_search_places (migration 100)
+ * on its filed name and every name its nameHistory records.
+ */
+export interface RankedPlace {
+  id: string;
+  nameMain: string;
+  placeType: string;
+  countryId: string;
+  summary: string;
+  nameHistory: NameHistory | null;
+  relevance: number;
+  exactMatch: boolean;
+  normalizedScore: number;
+}
+
+/**
  * One row of the canonical cross-kind ranking.
  *
  * The grouped arrays answer "what did this query find among peoples?"; this
@@ -879,6 +895,12 @@ export interface FtsSearchResponse {
   patronymes: RankedPatronyme[];
   quizzes: RankedQuizQuestion[];
   languages: RankedLanguage[];
+  /**
+   * Places (REQ-196), a grouped facet like languages: not folded into
+   * `results`. Optional because a payload built before places existed has none.
+   */
+  places?: RankedPlace[];
+  placesTotal?: number;
   /** Every hit in the selected main or quiz stream, ordered on `normalizedScore`. */
   results: RankedSearchHit[];
   /** Corpus-wide match counts, not the size of the returned page. */
