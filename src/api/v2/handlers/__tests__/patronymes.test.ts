@@ -1,4 +1,4 @@
-import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__fixtures__/nameHistory";
+import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__tests__/fixtures";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("@/api/v2/services/patronymes", () => ({

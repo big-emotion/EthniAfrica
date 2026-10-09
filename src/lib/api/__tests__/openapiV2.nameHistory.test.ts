@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { validateAgainstSchema } from "@/app/api/v2/__tests__/helpers/openapiValidator";
-import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__fixtures__/nameHistory";
+import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__tests__/fixtures";
 import { swaggerSpecV2 } from "@/lib/api/openapiV2";
 
 interface SchemaObject {

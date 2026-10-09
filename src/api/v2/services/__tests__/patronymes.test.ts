@@ -1,7 +1,7 @@
 /**
  * Test-first: patronyme dossier service (ETNI-1462, REQ-133).
  */
-import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__fixtures__/nameHistory";
+import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__tests__/fixtures";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const fromMock = vi.fn();
