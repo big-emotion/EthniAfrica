@@ -3958,6 +3958,114 @@ export function checkPlaceFicheModel(datasetRoot: string): ValidationResult {
   return { ok: errors.length === 0, errors, warnings };
 }
 
+/**
+ * WRD_* word fiches (REQ-196) — the free type of doctrine §2: a word whose
+ * history explains Africa through its names without fitting the six classes
+ * (racisme, nation, État, esclavage). Strict shape, identifier equal to the
+ * filename, related subjects that resolve. Unlike every other class the
+ * `nameHistory` block is required here: a word fiche exists only to tell the
+ * history of the word. The block's own shape is held by checkNameHistoryBlocks.
+ */
+const WORD_FICHE_KEYS = [
+  "_meta",
+  "id",
+  "nameMain",
+  "wordLanguage",
+  "definition",
+  "relatedSubjects",
+  "nameHistory",
+  "gaps",
+  "sources",
+];
+
+// Every directory a related subject may live in, read by `id` so a word can
+// point at any class without a per-class rule.
+const RELATED_SUBJECT_DIRECTORIES = [
+  "peuples",
+  "langues",
+  "famille_linguistique",
+  "pays",
+  "patronymes",
+  "lieux",
+  "mots",
+];
+
+function collectFicheIds(datasetRoot: string): Set<string> {
+  const ids = new Set<string>();
+  for (const directory of RELATED_SUBJECT_DIRECTORIES) {
+    for (const fullPath of collectJsonFiles(
+      path.join(datasetRoot, directory)
+    )) {
+      const fiche = readFiche(fullPath);
+      if (fiche && typeof fiche.id === "string") ids.add(fiche.id);
+    }
+  }
+  return ids;
+}
+
+export function checkWordFicheModel(datasetRoot: string): ValidationResult {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+  const wordDir = path.join(datasetRoot, "mots");
+
+  if (!fs.existsSync(wordDir)) return { ok: true, errors, warnings };
+
+  const ficheIds = collectFicheIds(datasetRoot);
+
+  for (const file of fs
+    .readdirSync(wordDir)
+    .filter((f) => f.endsWith(".json"))) {
+    const word = readFiche(path.join(wordDir, file));
+    if (!word) {
+      errors.push(`REQ-196: ${file}: could not parse JSON`);
+      continue;
+    }
+
+    const unknownKeys = Object.keys(word).filter(
+      (key) => !WORD_FICHE_KEYS.includes(key)
+    );
+    if (unknownKeys.length > 0) {
+      errors.push(
+        `REQ-196: ${file}: keys not in modele-mot.json: ${unknownKeys.join(", ")}`
+      );
+    }
+
+    const id = typeof word.id === "string" ? word.id : "";
+    if (!/^WRD_[A-Z0-9_]+$/.test(id)) {
+      errors.push(`REQ-196: ${file}: id "${id}" must match WRD_[A-Z0-9_]+`);
+    } else if (file !== `${id}.json`) {
+      errors.push(`REQ-196: ${file}: file should be named ${id}.json`);
+    }
+
+    if (typeof word.nameMain !== "string" || word.nameMain.trim() === "") {
+      errors.push(`REQ-196: ${file}: nameMain is required`);
+    }
+
+    if (!("nameHistory" in word) || word.nameHistory == null) {
+      errors.push(
+        `REQ-196: ${file}: nameHistory is required — a word fiche exists to tell the history of the word`
+      );
+    }
+
+    const related = Array.isArray(word.relatedSubjects)
+      ? word.relatedSubjects
+      : [];
+    for (const subject of related) {
+      const subjectId =
+        subject && typeof subject === "object"
+          ? (subject as { id?: unknown }).id
+          : undefined;
+      if (typeof subjectId !== "string" || !ficheIds.has(subjectId)) {
+        errors.push(
+          `REQ-196: ${file}: related subject "${String(subjectId)}" does not resolve to an existing fiche`
+        );
+      }
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings };
+}
+
 // ─── Shared nameHistory block (REQ-196, ARCH-028) ────────────────────────────
 
 // Every directory holding a named-subject fiche. Each class carries the block
@@ -3970,6 +4078,7 @@ const NAME_HISTORY_FICHE_DIRECTORIES = [
   "patronymes",
   "lieux",
   "noms",
+  "mots",
 ];
 
 /**
@@ -5468,6 +5577,12 @@ async function main() {
   newChecks.push({
     name: "REQ-193 Place fiche model",
     result: checkPlaceFicheModel(datasetRoot),
+  });
+
+  console.log("REQ-196 - Word fiche model (strict shape + links resolve)...");
+  newChecks.push({
+    name: "REQ-196 Word fiche model",
+    result: checkWordFicheModel(datasetRoot),
   });
 
   console.log(
