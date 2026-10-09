@@ -42,6 +42,3213 @@
       "model": "opus (claude -p)",
       "decidedBy": "jean-noe",
       "decidedAt": "2026-10-09"
+    },
+    {
+      "id": "ASV-2026-10-09-0003",
+      "fiche": "patronymes/PAT_CAMARA.json",
+      "path": "sources[4]",
+      "claim": "id: PAT_CAMARA; nameMain: Camara; nameSystem: clan_name; transmissionMode: patrilineal; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Camara (disambiguation page)",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Camara",
+          "source_kind": "community",
+          "quote": "Camara, an early clan of Mandinka people in West Africa.",
+          "supports": "Partial only: supports nameSystem clan_name and designatedSocialUnit clan for Camara. It does NOT support transmissionMode patrilineal; no source opened states patrilineal transmission of the Camara name."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] Wikipedia disambiguation page: the quote is there, but it is one line ('an early clan of Mandinka people') and says nothing on patrilineal transmission. Kind community is right for Wikipedia. Weak and partial. ASV-...-0015 (Histoire générale des Kamara) is a stronger lead for this fiche.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0004",
+      "fiche": "patronymes/PAT_DIALLO.json",
+      "path": "sources[2]",
+      "claim": "id: PAT_DIALLO; nameMain: Diallo; nameSystem: clan_name; transmissionMode: patrilineal; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "L'endogamie des Peuls du Fouta-Djallon",
+          "author": "P. Cantrelle & M. Dupire",
+          "year": 1964,
+          "url": "https://webguine.site/bibliotheque/archives/rechAfric/1964/endogamiePeulFJ.html",
+          "source_kind": "academic",
+          "quote": "Tout Foula dit appartenir à l'un des patriclans, Ba, Bari, So, Diallo, issus des quatre fils d'un ancêtre mythique.",
+          "supports": "Diallo is a Fulɓe patriclan (clan name, patrilineal transmission, clan as social unit); also: 'Chez ces immigrants peul venus du Macina, la filiation s'établit par les mâles.'"
+        },
+        {
+          "title": "Coutumes des Peuls du Fouta Djallon – Organisation de la famille, parenté, alliance",
+          "author": "Gilbert Vieillard",
+          "year": 1939,
+          "url": "https://www.webfuuta.site/bibliotheque/gilbert_vieillard/coutumes/s1orgFPA.html",
+          "source_kind": "academic",
+          "quote": "La règle est que le yettoore se transmet de mâle en mâle.",
+          "supports": "Male-line transmission of the clan honour name; the same page identifies the Diallo clan ('Les Yirlaɓe sont les Dialluɓe du reste du monde peul'). The source adds that the rule 'n'a rien de rigoureux'."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] Cantrelle & Dupire, Recherches africaines 1964, on a webguine.site mirror: quote verbatim, plus 'la filiation s'établit par les mâles' just before — states clan, patriclan and male-line transmission for Diallo. [1] Vieillard 1939, mirror: quote there; it adds the rule 'n'a rien de rigoureux'. Both kind academic, correct. Strong; [0] best.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0005",
+      "fiche": "patronymes/PAT_KOUASSI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_KOUASSI; nameMain: Kouassi; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Baoulés",
+          "author": null,
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Baoul%C3%A9s",
+          "source_kind": "community",
+          "quote": "Chez les Baoulé, le nom de famille est patronymique : le père donne son prénom comme nom de famille à ses enfants. […] Lundi : (Kouassi / Akissi)",
+          "supports": "Kouassi is a personal day name (born on Monday) given to an individual, and in the traditional patronymic system the father's personal name becomes his children's family name. This means the name changes with each generation rather than being inherited (non-hereditary patronymic). The article does not use the word 'non-héréditaire' directly; that part is inferred."
+        },
+        {
+          "title": "Les noms en baoulé",
+          "author": null,
+          "year": 2025,
+          "url": "https://coastsystems.net/fr/docs/cours/baoule/2025-03-01-noms-baoule/",
+          "source_kind": "community",
+          "quote": "le père donne son prénom comme nom de famille à ses enfants",
+          "supports": "Lists Kouassi as the Baoulé name for a boy born on Monday (Lundi, kisie), and says the father's given name serves as his children's family name. This supports the individual, patronymic, non-hereditary system. It is a community course page and appears to echo Wikipedia."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] fr.wikipedia Baoulés: both quoted passages there (father's first name becomes the children's family name; Monday = Kouassi). [1] coastsystems.net Baoulé course: quote there; a language course, linguistic_reference would fit better than community. States the claim, but only through encyclopedic or course pages. Weak.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0006",
+      "fiche": "patronymes/PAT_LAWSON.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_LAWSON; nameMain: Lawson; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Le grand livre des Lawson: Les archives d'une famille africaine d'Aného (Togo) – Volume II (1883–1932)",
+          "author": "Adam Jones & Peter Sebald",
+          "year": 2018,
+          "url": "https://research.uni-leipzig.de/~sfb1199/publications/le-grand-livre-des-lawson-les-archives-dune-famille-africaine-daneho-togo-volume-ii-1883-1932",
+          "source_kind": "academic",
+          "quote": "Le grand livre des Lawson: Les archives d'une famille africaine d'Aného (Togo)",
+          "supports": "Partial support only. It confirms that Lawson is the name of an African family or lineage group in Aného, Togo. It does not use the word 'clan' and does not explain how the name is passed down."
+        },
+        {
+          "title": "Togo : Comment la perte du roi Lawson VIII a été annoncée",
+          "author": null,
+          "year": 2021,
+          "url": "https://www.koaci.com/article/2021/08/07/togo/societe/togo-comment-la-perte-du-roi-lawson-viii-a-ete-annoncee_153034.html",
+          "source_kind": "press",
+          "quote": "Le royaume de Lolan a été créé le 03 avril 1821 par la famille Lawson.",
+          "supports": "Partial support only. It confirms that Lawson is the name of a family group, the royal house of Lolan in Aného. The same article puts the late king in 'clan Akagban', which suggests Lawson is a family or house name rather than the clan name. That conflicts with designatedSocialUnit: clan."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] Leipzig project page for Jones & Sebald's edition: only the title matches; it names a family archive, not a clan or a transmission rule. [1] Koaci (press, correct): quote there, and the same article places Lawson VIII in 'le clan Akagban' — Lawson reads as a family or royal house, not a clan. Neither supports the claim; the fiche's clan_name itself may be wrong.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0007",
+      "fiche": "patronymes/PAT_TOURE.json",
+      "path": "sources[4]",
+      "claim": "id: PAT_TOURE; nameMain: Touré; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Les ancêtres de Samori",
+          "author": "Yves Person",
+          "year": 1963,
+          "url": "https://www.webmande.site/bibliotheque/yperson/ancetres-samori/index.html",
+          "source_kind": "academic",
+          "quote": "Dans la légende du Wagadou, les Tourè forment l'un des clans authentiquement soninké, descendant de l'ancêtre mythique Dinga",
+          "supports": "Touré (Tourè) is a clan name (dyamu/jamu) that marks a clan in the Soninke/Mande clan system (nameSystem: clan_name; designatedSocialUnit: clan). Published in Cahiers d'études africaines vol. 4 no. 13, pp. 125-156, with a section titled 'Origine et diffusion du dyamu Tourè'. This URL is a copy on webMande."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] Yves Person, 'Les ancêtres de Samori', Cahiers d'études africaines 1963, on a webmande.site mirror: quote verbatim — the Tourè are one of the Soninke clans descending from Dinga. Kind academic, correct. Strong for clan_name; says nothing on transmission (claim has 'other').",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0008",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[0].entries[9].provenance",
+      "claim": "name: Diallo; nameSystem: clan_name; variants: Jallo; peopleIds: PPL_FULA; countryId: SEN; verificationLead: Registre national des électeurs, annuaires ANSD, travaux d'onomastique wolof et sérère; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "SEN",
+        "name": "Diallo"
+      },
+      "candidates": [
+        {
+          "title": "La banalité du rare, par Abu Oumar",
+          "author": "Abu Oumar",
+          "year": null,
+          "url": "https://lesoleil.sn/le-decodeur/chronique/la-banalite-du-rare-par-abu-oumar/",
+          "source_kind": "press",
+          "quote": "Un Peul est toujours un Ba, un Sow, un Diallo ou un Ka.",
+          "supports": "A Senegalese national newspaper (Le Soleil) gives Diallo as one of the typical Peul (Fula) patronyms in Senegal."
+        },
+        {
+          "title": "Noms Sénégalais",
+          "author": null,
+          "year": null,
+          "url": "https://senego.com/services/noms-senegalais",
+          "source_kind": "press",
+          "quote": "Les Diallo, Ba, Sow, Balde sont peul.",
+          "supports": "A Senegalese media guide to names says Diallo is a Peul (Fula) surname in Senegal and adds that the Ba and Diallo are often linked to large herding families."
+        },
+        {
+          "title": "Diallo",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Diallo",
+          "source_kind": "community",
+          "quote": "a French pronunciation of a Fulani surname of Fula origin (romanized: Jallo)",
+          "supports": "Supports the variant Jallo and the Fula origin of the name. It is an encyclopedia source, so it is weak."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] Le Soleil column (press, correct): quote there — Diallo as a typical Peul name in Senegal. [1] Senego 'Noms Sénégalais': quote there; a site service page, not an article, community would fit better than press. [2] en.wikipedia Diallo: quote there, gives the Jallo variant. None says 'clan'. Weak but on point; [0] best.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0009",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[1].entries[9].provenance",
+      "claim": "name: Camara; nameSystem: clan_name; variants: Kamara; peopleIds: PPL_MALINKE; countryId: GMB; verificationLead: Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GMB",
+        "name": "Camara"
+      },
+      "candidates": [
+        {
+          "title": "An Interview About The Kamara Clan in Brikama And Ngansu Masing (NCAC_RDD_TAPE_1068A)",
+          "author": "NCAC – National Digital Archive of The Gambia (University of Hamburg)",
+          "year": null,
+          "url": "https://b2find.eudat.eu/dataset/b005cad1-ce77-5233-a472-f4af0a556221",
+          "source_kind": "archive",
+          "quote": "Camara, Mamu, Fatty, Wuday, Darbo, Darboe, Dabo, Daboe, Konteh, Conteh",
+          "supports": "Gambian archival record of oral history about the Kamara clan in Brikama (The Gambia). Its alternative-name list gives 'Camara', so it supports Kamara/Camara as a clan name in GMB. It does not name the ethnic group (Mandinka)."
+        },
+        {
+          "title": "Kingdom of Niani",
+          "author": "Wikipedia contributors",
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Kingdom_of_Niani",
+          "source_kind": "community",
+          "quote": "Niani was a Mandinka kingdom located on the north bank of the Gambia River ... The Kamara would rule the state until its incorporation into the French colony of Senegal in the late 19th century.",
+          "supports": "Supports Kamara as a Mandinka clan (the ruling clan of Niani) in present-day Gambia/Senegal. This is an encyclopedia source, so it is weaker than the archive record."
+        },
+        {
+          "title": "Camara (disambiguation)",
+          "author": "Wikipedia contributors",
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Camara",
+          "source_kind": "community",
+          "quote": "Camara, an early clan of Mandinka people in West Africa",
+          "supports": "Supports Camara as a Mandinka clan name. It does not mention Gambia or the Kamara spelling, and it is a weak encyclopedia source."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] B2FIND record of an NCAC (Gambia national archive) tape, 'An Interview About The Kamara Clan in Brikama': alternative names list includes Camara. Kind archive, correct. States a Kamara clan in Gambia; no Malinke link. [1] and [2] Wikipedia, quotes there. Fairly strong; [0] best.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0010",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[0].provenance",
+      "claim": "name: Traoré; nameSystem: clan_name; variants: Traore, Tarawele; peopleIds: PPL_BAMBARA; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Traoré"
+      },
+      "candidates": [
+        {
+          "title": "Last Name Shout-Outs (An ka taa Bambara course, grammar lesson)",
+          "author": null,
+          "year": null,
+          "url": "https://kalan.ankataa.com/bb/grammar/5half-lastnames",
+          "source_kind": "linguistic_reference",
+          "quote": "combine the word for i ('you') with the other person's last name or jamu … Tarawele — Traoré [French spelling]",
+          "supports": "Supports that Tarawele is the Bambara (Bamanankan) form of the jamu (clan/last name) spelled Traoré in French, which covers the clan_name system, the Tarawele variant and the Bambara link. It does not address RAVEC or INSTAT."
+        },
+        {
+          "title": "Traoré",
+          "author": "Wikipedia contributors",
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Traor%C3%A9",
+          "source_kind": "community",
+          "quote": "Traoré or Traore is a surname of Manding origin (Bambara: Taara-oray … as written in French orthography), common in Mali, Senegal, Burkina Faso, Ivory Coast and Guinea.",
+          "supports": "Supports that Traoré/Traore is a Manding surname common in Mali, with a Bambara form. This is a weaker, encyclopedic source."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] An ka taa Bambara course: the vocabulary table gives 'Tarawele — Traoré [French spelling]' under jamu (last name); the quote is two passages joined. Kind linguistic_reference, correct. [1] en.wikipedia Traoré: quote there. Supports the jamu and the Tarawele variant; [0] best.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0011",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[1].provenance",
+      "claim": "name: Keïta; nameSystem: clan_name; variants: Keita; peopleIds: PPL_MALINKE; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Keïta"
+      },
+      "candidates": [
+        {
+          "title": "Sundiata Keita",
+          "author": "World History Encyclopedia",
+          "year": null,
+          "url": "https://www.worldhistory.org/Sundiata_Keita/",
+          "source_kind": "press",
+          "quote": "Sundiata's name means 'lion prince' or 'hungering lion', the big cat being the symbol of the Keita clan.",
+          "supports": "Keita is a clan name (nameSystem: clan_name); the same page says Sundiata was 'a prince of the indigenous Malinke (aka Mandingo) ethnic group', linking the clan to the Malinke (PPL_MALINKE)."
+        },
+        {
+          "title": "Soundiata Keita",
+          "author": "Encyclopédie Larousse",
+          "year": null,
+          "url": "https://www.larousse.fr/encyclopedie/personnage/Soundiata_Keita/180393",
+          "source_kind": "press",
+          "quote": "Il était le chef d'un clan mandingue du Sud, les Keita, commerçants qui s'étaient établis dans la haute vallée du Niger",
+          "supports": "Keita is a Mandingue (Malinke) clan name, from the upper Niger valley."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. Both quotes are on the pages. Both kinds are WRONG: [0] World History Encyclopedia and [1] Encyclopédie Larousse are encyclopedias, not press. The vocabulary has no encyclopedia kind; the corpus files Wikipedia under community. Content fits (Keita, a Malinke clan). Weak (encyclopedias); [1] Larousse best.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0012",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[2].provenance",
+      "claim": "name: Coulibaly; nameSystem: clan_name; variants: Kulibali; peopleIds: PPL_BAMBARA; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Coulibaly"
+      },
+      "candidates": [
+        {
+          "title": "Bamana Kingdom of Segu (polity entry)",
+          "author": "Seshat: Global History Databank",
+          "year": null,
+          "url": "https://seshat-db.com/core/polity/434",
+          "source_kind": "academic",
+          "quote": "for example, Kulibali is sometimes spelled Coulibaly and Segu is sometimes spelled Segou.",
+          "supports": "Supports the variant spelling Kulibali for Coulibaly. It also ties the name to the Bamana (Bambara) of Ségou in Mali: 'The Bamana Kingdom was founded in 1712 by Biton Kulibali'."
+        },
+        {
+          "title": "Coulibaly",
+          "author": "Wikipedia contributors",
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Coulibaly",
+          "source_kind": "community",
+          "quote": "Coulibaly is a common Bambara language surname in West Africa, especially in Mali and Ivory Coast.",
+          "supports": "Supports Coulibaly as a Bambara surname found in Mali (MLI, PPL_BAMBARA). It does not explicitly call the name a clan name (jamu). Encyclopedia source, so lower priority."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] Seshat databank, Bamana Kingdom of Segu: quote there, plus 'founded in 1712 by Biton Kulibali'. Kind academic acceptable. Supports the Kulibali spelling and the Bambara link, not 'clan'. [1] en.wikipedia Coulibaly: quote there. Weak to fair; [0] best.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0013",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[3].provenance",
+      "claim": "name: Diarra; nameSystem: clan_name; variants: Jara; peopleIds: PPL_BAMBARA; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Diarra"
+      },
+      "candidates": [
+        {
+          "title": "Diarra",
+          "author": "Wikipedia contributors",
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Diarra",
+          "source_kind": "community",
+          "quote": "Diarra is a French translation of the clan name Jara used in West Africa ... It originates from the Bambara language word jara, meaning lion",
+          "supports": "Diarra is a clan name with the variant Jara, of Bambara origin; the same page says it is traditionally concentrated in Mali (encyclopedic source, not academic)"
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] en.wikipedia Diarra: quote there — 'the clan name Jara', from Bambara jara 'lion'. Kind community, correct. States the whole claim, but Wikipedia is the only candidate. Weak.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0014",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[9].provenance",
+      "claim": "name: Touré; nameSystem: clan_name; variants: Toure; peopleIds: PPL_SONINKE; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Touré"
+      },
+      "candidates": [
+        {
+          "title": "Ladji Fodé Moussa Nabé présente « Chroniques migratoires et organisation sociale d'un peuple Soninké du Woulada »",
+          "author": "Mady Bangoura (Guinéenews)",
+          "year": 2022,
+          "url": "https://guineenews.org/2022/04/24/ladji-fode-moussa-nabe-presente-les-chroniques-migratoires-et-organisation-sociale-dun-peuple-soninke-du-woulada/",
+          "source_kind": "press",
+          "quote": "Souanou – Bérété, Soumbounou, Sylla, Sy, Sy Savané, Tandjigora, Tounkara, Touré, etc",
+          "supports": "Partial support only: lists Touré among Soninke family names (drawing on research by Makhtar Diouf, IFAN). It concerns the Woulada area of Guinea, not Mali, and calls Touré a family name rather than a clan name."
+        },
+        {
+          "title": "Touré (Wikipedia article, archived IPFS copy)",
+          "author": null,
+          "year": null,
+          "url": "https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Toure.html",
+          "source_kind": "community",
+          "quote": "The name is probably derived from tùùré, the word for 'elephant' in Soninké, the language of the Ghana Empire.",
+          "supports": "Weak partial support: a hedged origin theory linking the surname to Soninke. It does not say that Touré is a Soninke clan name or mention Mali. Encyclopedia copy, low reliability."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] Guinéenews (press, correct): quote there, but it is about the Woulada area of Guinea, not Mali, and names Touré a family name. [1] IPFS copy of a Wikipedia article: quote there; an unofficial mirror, cite the real Wikipedia page if kept. Neither supports Touré as a Soninke clan in Mali. Person 1963 (ASV-...-0007) does state Touré as a Soninke clan.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0015",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[14].provenance",
+      "claim": "name: Camara; nameSystem: clan_name; variants: Kamara; peopleIds: PPL_MALINKE; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Camara"
+      },
+      "candidates": [
+        {
+          "title": "Histoire générale des Kamara",
+          "author": "Seydou Camara",
+          "year": 2025,
+          "url": "https://africanbookscollective.com/books/histoire-generale-des-kamara/",
+          "source_kind": "academic",
+          "quote": "But according to almost all traditions, the first inhabitants who lived there were the Kamara, whose first ancestor, Mansa Kiran, came from Wagadu and was the first to settle in the country. ... As natives, they established the other clans, including the Konaté-Keyita, who would expand their political formation and found the Mali Empire.",
+          "supports": "Kamara is a clan of the Manden (Mande heartland in today's Mali), where Mande traditions name it as the first settled clan. Supports nameSystem clan_name, the Kamara form and countryId MLI. It does not state the Camara spelling or name the Malinké."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] African Books Collective page for Seydou Camara, 'Histoire générale des Kamara' (2025): the quote is from the publisher's blurb, not the book's text. Kamara as the first clan of the Manden. Kind academic acceptable (a historian's book). Fairly strong.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0016",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[3].entries[0].provenance",
+      "claim": "name: Ouédraogo; nameSystem: clan_name; variants: Ouedraogo, Wedraogo; peopleIds: PPL_MOSSI; countryId: BFA; verificationLead: Listes électorales CENI, INSD, onomastique mooré et dioula; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "BFA",
+        "name": "Ouédraogo"
+      },
+      "candidates": [
+        {
+          "title": "Abdoul Schraf Ouédraogo: Peul et Mauritanien",
+          "author": null,
+          "year": null,
+          "url": "https://burkina24.com/?p=127320",
+          "source_kind": "press",
+          "quote": "D'habitude, le nom de famille Ouédraogo est automatiquement attribué au Mossi du Burkina.",
+          "supports": "Ouédraogo is a family name typically associated with the Mossi of Burkina Faso (BFA, PPL_MOSSI)"
+        },
+        {
+          "title": "Ouedraogo (surname)",
+          "author": "Wikipedia contributors",
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Ouedraogo_(surname)",
+          "source_kind": "community",
+          "quote": "Ouédraogo, sometimes Ouedraogo, is a surname taken from the French spelling of Wedraogo",
+          "supports": "Variants Ouédraogo/Ouedraogo/Wedraogo, and the name's link to Wedraogo, legendary founder of the Mossi Kingdoms in modern Burkina Faso"
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] Burkina24 (press, correct): quote there — Ouédraogo usually read as a Mossi name. [1] en.wikipedia Ouedraogo (surname): quote there, gives the Wedraogo link. Neither says 'clan'. Weak; [0] best for the Mossi link, [1] for the variants.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0017",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[3].entries[1].provenance",
+      "claim": "name: Sawadogo; nameSystem: clan_name; peopleIds: PPL_MOSSI; countryId: BFA; verificationLead: Listes électorales CENI, INSD, onomastique mooré et dioula; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "BFA",
+        "name": "Sawadogo"
+      },
+      "candidates": [
+        {
+          "title": "Village Koundougou-Mossi",
+          "author": "Dogon Languages Project (dogonlanguages.info)",
+          "year": null,
+          "url": "https://dogonlanguages.info/villages/54",
+          "source_kind": "linguistic_reference",
+          "quote": "Surnames: Sawadogo (Mossi), Diallo (Fulbe)",
+          "supports": "Partial: shows Sawadogo as a Mossi surname in a village in Burkina Faso (name, PPL_MOSSI, BFA). It does not say Sawadogo is a clan name (sondre)."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] Dogon Languages Project village page (Jeffrey Heath): 'Surnames: Sawadogo (Mossi)' is there. Kind linguistic_reference, correct. Shows a Mossi surname in Burkina Faso; nothing on clan. Weak, one line.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0018",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[3].entries[6].provenance",
+      "claim": "name: Traoré; nameSystem: clan_name; variants: Traore; peopleIds: PPL_DIOULA; countryId: BFA; verificationLead: Listes électorales CENI, INSD, onomastique mooré et dioula; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "BFA",
+        "name": "Traoré"
+      },
+      "candidates": [
+        {
+          "title": "Approche ethnolinguistique des formules de salutation chez les Dioula de Darsalamy au Burkina Faso (mémoire de DEA, Université de Ouagadougou)",
+          "author": "Ignace Sangaré",
+          "year": 2008,
+          "url": "https://www.memoireonline.com/12/13/8177/m_Approche-ethnolinguistique-des-formules-de-salutation-chez-les-Dioula-de-Darsalamy-au-Burkina-Faso1.html",
+          "source_kind": "academic",
+          "quote": "Certains parmi eux, à savoir les Cissé, Kamara, Coulibaly, Traoré seraient arrivés à Kong",
+          "supports": "Names Traoré as one of the Dioula families of Darsalamy (near Bobo-Dioulasso, Burkina Faso), whose Dioula ancestors moved from Kong toward Bobo after 1898. This supports the link between Traoré and the Dioula in Burkina Faso. It does not use the terms 'nom de clan' or 'jamu'."
+        },
+        {
+          "title": "Kénédougou Kingdom",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/K%C3%A9n%C3%A9dougou_Kingdom",
+          "source_kind": "community",
+          "quote": "Kénédougou, meaning 'country of the plain', was first established in the 17th century by the Dioula Traore clan.",
+          "supports": "Calls Traore a Dioula clan. The kingdom it founded covered parts of western Burkina Faso. This is an encyclopedia source, so it is weaker evidence."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] Sangaré, DEA thesis (Ouagadougou 2008) on memoireonline: quote there — Traoré among the Dioula families arriving from Kong. Kind academic, correct. [1] en.wikipedia Kénédougou: quote there — 'the Dioula Traore clan'. Fair; [0] best.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0019",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[3].entries[19].provenance",
+      "claim": "name: Coulibaly; nameSystem: clan_name; peopleIds: PPL_DIOULA; countryId: BFA; verificationLead: Listes électorales CENI, INSD, onomastique mooré et dioula; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "BFA",
+        "name": "Coulibaly"
+      },
+      "candidates": [
+        {
+          "title": "Toponymie et histoire dans l'Ouest du Burkina Faso",
+          "author": "Bakary Traoré",
+          "year": 2007,
+          "url": "https://journals.openedition.org/africanistes/1442?lang=en",
+          "source_kind": "academic",
+          "quote": "un patronyme jula (Traoré, Watara, Saganogo, Coulibaly…)",
+          "supports": "Identifies Coulibaly as a Jula (Dioula) patronym/clan name in western Burkina Faso; note 12 adds that the Lobi kept their own clan names but equated them with Jula patronyms such as Coulibaly (Journal des africanistes 77-1)."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09 (the site's bot check blocks browser-like clients; plain fetch works). [0] Bakary Traoré, Journal des Africanistes 2007: quote verbatim — Coulibaly among Jula patronyms that Lobi and Gouin equated with their clan names. Kind academic, correct. Strong.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0020",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[5].entries[0].provenance",
+      "claim": "name: Diallo; nameSystem: clan_name; variants: Jallo; peopleIds: PPL_FULA; countryId: GIN; verificationLead: Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GIN",
+        "name": "Diallo"
+      },
+      "candidates": [
+        {
+          "title": "Nafissatou and Amadou: Why are so many Guineans named Diallo?",
+          "author": null,
+          "year": 2011,
+          "url": "https://www.slate.com/articles/news_and_politics/explainer/2011/07/nafissatou_and_amadou.html",
+          "source_kind": "press",
+          "quote": "almost all Fulbe have one of four family names: Diallo, also spelled Jalloh; Barry; Balde, also spelled Bah; and Sow.",
+          "supports": "Diallo is a Fulbe (Fula) family name in Guinea, with the variant spelling Jalloh; it supports name, peopleIds PPL_FULA and countryId GIN, but calls it a family name rather than a clan name"
+        },
+        {
+          "title": "Diallo",
+          "author": "Wikipedia contributors",
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Diallo",
+          "source_kind": "community",
+          "quote": "is a French pronunciation of a Fulani surname of Fula origin ... one of several common surnames used among the Fula",
+          "supports": "Diallo is a Fula surname; the page gives the Adlam romanization 'Jallo' and the English spellings Jalloh/Jallow (variant Jallo, PPL_FULA); it does not mention clans"
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] Slate explainer 2011 (press, correct): quote there — Diallo (also Jalloh) one of four Fulbe family names in Guinea. [1] en.wikipedia Diallo: quote there. Calls it a family name, not a clan. Fair. Cantrelle & Dupire (ASV-...-0004) is stronger for Diallo in the Fouta-Djallon.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0021",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[5].entries[4].provenance",
+      "claim": "name: Camara; nameSystem: clan_name; variants: Kamara; peopleIds: PPL_MALINKE; countryId: GIN; verificationLead: Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GIN",
+        "name": "Camara"
+      },
+      "candidates": [
+        {
+          "title": "The Dark Child",
+          "author": null,
+          "year": null,
+          "url": "https://www.encyclopedia.com/arts/culture-magazines/dark-child",
+          "source_kind": "press",
+          "quote": "Sunjata's forefathers ... found there a number of small societies, including the Camara, Traore, and Kone clans",
+          "supports": "Camara is an old Mande clan name. The same entry places the Malinke (\"a subgroup of the larger Mande people\") in colonial Guinea. It also says the Guinean author's real surname is Camara and that he was born in 'Kourassa' (Kouroussa). Partial support for name, clan_name, PPL_MALINKE and GIN."
+        },
+        {
+          "title": "Mandé",
+          "author": "Simple English Wikipedia contributors",
+          "year": null,
+          "url": "https://simple.wikipedia.org/wiki/Mand%C3%A9",
+          "source_kind": "community",
+          "quote": "The Camara (or Kamara) are considered to be the oldest family to have lived in Mandé",
+          "supports": "Kamara is a spelling of Camara, and this is one of the oldest Mande lineages. It does not mention Guinea. This is a weak encyclopedia source."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] encyclopedia.com entry on 'The Dark Child': quote there (Camara among the old Mande clans; Malinke in colonial Guinea). Kind WRONG: a reference-work entry, not press. [1] Simple English Wikipedia: quote there, no Guinea. Weak.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0022",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[5].entries[6].provenance",
+      "claim": "name: Touré; nameSystem: clan_name; variants: Toure; peopleIds: PPL_MALINKE; countryId: GIN; verificationLead: Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GIN",
+        "name": "Touré"
+      },
+      "candidates": [
+        {
+          "title": "Guinée",
+          "author": "Wikipédia contributors",
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Guin%C3%A9e",
+          "source_kind": "community",
+          "quote": "un groupe maninka parti du Batè et vint s'établir à l'embouchure de la Mellacorée [...] Ce groupe était composé des clans Touré, Youla, Sylla, etc.",
+          "supports": "Touré as a Maninka (Malinké) clan in Guinea (Batè/Kankan region). This is an encyclopedia written by volunteers and gives no primary citation in this excerpt."
+        },
+        {
+          "title": "Les Malinké en Côte d'Ivoire",
+          "author": "Fahiraman Rodrigue Koné",
+          "year": 2017,
+          "url": "https://africansecuritynetwork.org/HSGO4/wp-content/uploads/2025/11/Le-Malinke-en-Cote-d_Ivoire.pdf",
+          "source_kind": "academic",
+          "quote": "Les Touré fondent le royaume de Kabadougou, appellation actuelle de la région administrative de Odienné.",
+          "supports": "Partial support: it treats the Touré as a Malinké lineage, but in Côte d'Ivoire (Odienné), not Guinea."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened 2026-10-09. [0] fr.wikipedia Guinée: quote there — the Touré among the Maninka clans settled at the Mellacorée. Kind community, correct. [1] Koné 2017 PDF: quote there (minor wording: 'du Kabadougou'), but about Côte d'Ivoire, not Guinea. Weak; [0] best.",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0023",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[5].entries[8].provenance",
+      "claim": "name: Keïta; nameSystem: clan_name; variants: Keita; peopleIds: PPL_MALINKE; countryId: GIN; verificationLead: Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GIN",
+        "name": "Keïta"
+      },
+      "candidates": [
+        {
+          "title": "Les ONG locales de développement et la question de pérennisation de leurs acquis dans la préfecture de Kankan (mémoire de Master II recherche en sociologie, Université de Kankan)",
+          "author": "Mamadou Sounoussy Diallo",
+          "year": 2012,
+          "url": "https://www.memoireonline.com/12/13/8235/m_Les-ONG-locales-de-developpement-et-la-question-de-perennisation-de-leurs-acquis-dans-la-prefectu22.html",
+          "source_kind": "academic",
+          "quote": "Il semblerait qu'ils soient venus au même moment que les Keïta de Hamana au XIV siècle. [...] les Keïta, dans leur déplacement ont entraîné aussi d'autres tribus alliées",
+          "supports": "Partial support only: it treats the Keïta as a lineage or clan group settled in Guinean Upper Guinea (Hamana, Kankan region) and uses the spelling Keïta alongside Keita. It does not explicitly name the Malinké."
+        },
+        {
+          "title": "Keita dynasty",
+          "author": "Wikipedia contributors",
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Keita_dynasty",
+          "source_kind": "community",
+          "quote": "This is when Mari Jata is crowned and Keita becomes a clan name. [...] Rivals from within the clan founded smaller kingdoms within contemporary Mali and Guinea.",
+          "supports": "Supports Keita as a Mande (Mandinka) clan name present in Guinea. This is an encyclopedia, and the clan-name sentence is tagged [citation needed]."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0024",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[6].entries[0].provenance",
+      "claim": "name: Camará; nameSystem: clan_name; variants: Camara; peopleIds: PPL_MALINKE; countryId: GNB; verificationLead: Recenseamento Geral (INE Guiné-Bissau), listes électorales CNE, onomastique balante et manjaque; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GNB",
+        "name": "Camará"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0025",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[7].entries[0].provenance",
+      "claim": "name: Kouassi; nameSystem: non_hereditary_patronymic; variants: Kwasi; peopleIds: PPL_BAOULE; countryId: CIV; verificationLead: Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "CIV",
+        "name": "Kouassi"
+      },
+      "candidates": [
+        {
+          "title": "Les noms Baoulé et signification",
+          "author": null,
+          "year": null,
+          "url": "https://rezoivoire.net/ivoire/patrimoine/1672/les-noms-baoule-et-signification.html",
+          "source_kind": "press",
+          "quote": "Chez les Baoulé, on donne souvent le prénom en fonction du jour de naissance: [...] – Lundi: (Kouassi, Akissi). [...] Chez les baoulés, le père donne son prénom à ses enfants, qui devient leur nom de famille. Cette pratique est appelée à disparaître depuis la réglementation qui impose le système du nom de famille fixe.",
+          "supports": "Kouassi is a Baoulé day name (Monday, male) used in Côte d'Ivoire; the father's first name becomes the children's family name (non-hereditary patronymic). Does not support the Kwasi variant."
+        },
+        {
+          "title": "Côte d'Ivoire : Les noms Baoulé et signification",
+          "author": "Lebel N'goran",
+          "year": 2018,
+          "url": "https://www.lebanco.net/news/33592-c244te-d39ivoire-les-noms-baoul233-et-signification.html",
+          "source_kind": "press",
+          "quote": "Lundi: (Kouassi, Akissi).",
+          "supports": "Kouassi is the Baoulé male name given to a boy born on Monday, in Côte d'Ivoire."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0026",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[7].entries[2].provenance",
+      "claim": "name: Traoré; nameSystem: clan_name; variants: Traore; peopleIds: PPL_DIOULA; countryId: CIV; verificationLead: Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "CIV",
+        "name": "Traoré"
+      },
+      "candidates": [
+        {
+          "title": "Dioula (peuple)",
+          "author": "Wikipédia contributors",
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Dioula_(peuple)",
+          "source_kind": "community",
+          "quote": "Les Wangaras Dioulas portent des patronymes mandingues : [...] Fadiga Fofana, Haidara, Touré, Traoré, Koné, Keita, Konaté,",
+          "supports": "Lists Traoré as a Mandé surname carried by the Dioula (Wangara) in the Côte d'Ivoire context. Weak support: the page flags this section as unsourced, disputed and possibly original research."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0027",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[7].entries[8].provenance",
+      "claim": "name: Coulibaly; nameSystem: clan_name; peopleIds: PPL_DIOULA; countryId: CIV; verificationLead: Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "CIV",
+        "name": "Coulibaly"
+      },
+      "candidates": [
+        {
+          "title": "Traders Without Trade: Responses to Change in Two Dyula Communities — chapter 'Clansmen and kinsmen'",
+          "author": "Robert Launay",
+          "year": 1982,
+          "url": "https://www.cambridge.org/core/books/traders-without-trade/clansmen-and-kinsmen/4DA04E200F6A5F5CB26DD11F54C4BF22",
+          "source_kind": "academic",
+          "quote": "Cissera (the Cisse quarter), Coulibaly-ra, Bakayoko-ra and so forth exist not only as social units",
+          "supports": "Coulibaly is a Dyula kabila (patrilineal descent group or clan), and it names a residential quarter in Dyula communities. Launay's fieldwork was done in Côte d'Ivoire (Korhogo); that location comes from background knowledge, not from the quoted excerpt."
+        },
+        {
+          "title": "Côte d'Ivoire: The Dioula people, particularly their physical traits, cultural beliefs, socio-economic situation and language (CIV100038.FE)",
+          "author": "Immigration and Refugee Board of Canada",
+          "year": 2005,
+          "url": "https://www.ecoi.net/en/document/1180869.html",
+          "source_kind": "government",
+          "quote": "However, certain patronymics, such as Touré, Koné, Konété, Ouattara, Koulibaly and Jawara, are Dioula-specific.",
+          "supports": "Names Koulibaly, a spelling variant of Coulibaly, as a Dioula-specific patronymic in Côte d'Ivoire."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0028",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[9].entries[8].provenance",
+      "claim": "name: Lawson; nameSystem: clan_name; countryId: TGO; verificationLead: Listes électorales CENI Togo, INSEED, travaux d'onomastique éwé et kabyè; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "TGO",
+        "name": "Lawson"
+      },
+      "candidates": [
+        {
+          "title": "Le grand livre des Lawson: Les archives d'une famille africaine d'Aného (Togo) – Volume II (1883–1932)",
+          "author": "Adam Jones; Peter Sebald",
+          "year": 2018,
+          "url": "https://research.uni-leipzig.de/~sfb1199/publications/le-grand-livre-des-lawson-les-archives-dune-famille-africaine-daneho-togo-volume-ii-1883-1932",
+          "source_kind": "academic",
+          "quote": "Le grand livre des Lawson: Les archives d'une famille africaine d'Aného (Togo)",
+          "supports": "An academic edition of a family archive (L'Harmattan, 2018). Its title alone identifies Lawson as an African family name from Aného, Togo. The publication page gives no further detail."
+        },
+        {
+          "title": "Rulers: Togo (traditional polities)",
+          "author": "Ben Cahoon",
+          "year": null,
+          "url": "https://www.rulers.org/togotrad.html",
+          "source_kind": "archive",
+          "quote": "Lawson family establishes a parallel cheffery at Aneho",
+          "supports": "Says the Lawson family is a lineage in Aného, Togo, and that it set up a chieftaincy (Lolan) there in 1821. This supports Lawson as a family or lineage name in Togo."
+        },
+        {
+          "title": "Togo : comment la perte du roi Lawson VIII a été annoncée",
+          "author": null,
+          "year": 2021,
+          "url": "https://www.koaci.com/article/2021/08/07/togo/societe/togo-comment-la-perte-du-roi-lawson-viii-a-ete-annoncee_153034.html",
+          "source_kind": "press",
+          "quote": "Le royaume de Lolan a été créé le 03 avril 1821 par la famille Lawson.",
+          "supports": "A press report confirming that the Lawson family is a lineage in Aného, Togo, and that it founded the Lolan kingdom."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0029",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[14].entries[7].provenance",
+      "claim": "name: Diallo; nameSystem: clan_name; peopleIds: PPL_FULA; countryId: MRT; verificationLead: ANRPTS (registre national), ONS Mauritanie, travaux sur les nisba hassaniyya; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MRT",
+        "name": "Diallo"
+      },
+      "candidates": [
+        {
+          "title": "Sociétés",
+          "author": "Tabital Pulaaku",
+          "year": null,
+          "url": "https://www.tabitalpulaaku.org/societes/",
+          "source_kind": "community",
+          "quote": "la plupart d’entre eux sont de patronymes Diallo",
+          "supports": "Partial support only. It shows that Diallo is a Fulbe (Peul) clan patronym; in the same list of common Fulbe patronyms it gives 'Egge, Ka, Diallo, Sall, Sow, Dia, Baldé'. The page places Fulbe and Toucouleur groups in Mauritania among other countries, but it does not say that people named Diallo live in Mauritania. It is a source from a Fulbe cultural association, not an academic or official one."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0030",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[0].entries[11].provenance",
+      "claim": "name: Cissé; nameSystem: clan_name; variants: Cisse, Sisse; peopleIds: PPL_SONINKE; countryId: SEN; verificationLead: Registre national des électeurs, annuaires ANSD, travaux d'onomastique wolof et sérère; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "SEN",
+        "name": "Cissé"
+      },
+      "candidates": [
+        {
+          "title": "Soninkés",
+          "author": null,
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Soninkés",
+          "source_kind": "community",
+          "quote": "Selon Makhtar Diouf, chercheur à l'IFAN, certains patronymes sont caractéristiques d'une origine soninké",
+          "supports": "In this article, the list of surnames that follows this sentence includes Cissé as a name of Soninke origin. It cites Makhtar Diouf's 'Sénégal, les ethnies et la nation', which links the claim to Senegal. It does not mention the variant 'Sisse' or call Cissé a clan name."
+        },
+        {
+          "title": "Soninke people",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Soninke_people",
+          "source_kind": "community",
+          "quote": "Cissé",
+          "supports": "Cissé is the third entry in the article's 'Soninke patronyms' list, which supports it being a Soninke surname. It does not mention Senegal, the variants Cisse/Sisse, or call Cissé a clan name."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0031",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[1].entries[0].provenance",
+      "claim": "name: Jallow; nameSystem: clan_name; variants: Diallo; peopleIds: PPL_FULA; countryId: GMB; verificationLead: Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GMB",
+        "name": "Jallow"
+      },
+      "candidates": [
+        {
+          "title": "Jallow",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Jallow",
+          "source_kind": "community",
+          "quote": "Jallow is an English transcription of the surname of Fula origin, Diallo.",
+          "supports": "Jallow is a Fula surname and a variant (English spelling) of Diallo"
+        },
+        {
+          "title": "Fula people",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Fula_people",
+          "source_kind": "community",
+          "quote": "Diallo (French speaking regions), Jallow or Jalloh (English speaking regions)",
+          "supports": "Jallow is a common Fulani family name in English-speaking countries, including The Gambia, and corresponds to Diallo"
+        },
+        {
+          "title": "The Microphone Was On: Gambia's Tribal Undercurrent, Nine Years Later",
+          "author": "Kerr Fatou",
+          "year": null,
+          "url": "https://www.kerrfatou.com/the-microphone-was-on-gambias-tribal-undercurrent-nine-years-later/",
+          "source_kind": "press",
+          "quote": "He is Jallow, with an unmistakably Fula name.",
+          "supports": "In The Gambia, people commonly treat the name Jallow as Fula"
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0032",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[1].entries[1].provenance",
+      "claim": "name: Ceesay; nameSystem: clan_name; variants: Cissé; peopleIds: PPL_SONINKE; countryId: GMB; verificationLead: Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GMB",
+        "name": "Ceesay"
+      },
+      "candidates": [
+        {
+          "title": "An Interview About The History of The Siise Clan in Yundum (NCAC_RDD_TAPE_1878A)",
+          "author": "Siise, Baakari (contributor); NCAC – National Digital Archive of The Gambia",
+          "year": null,
+          "url": "https://b2find.eudat.eu/dataset/ecbe83a9-19c0-5c92-8c9b-704d05daed3b",
+          "source_kind": "archive",
+          "quote": "Ceesay, Cisse, Seesay, Sissay, Sise, Sisse",
+          "supports": "Gambian national archive record on the Siise clan lists Ceesay and Cisse as alternative names: supports variant Ceesay/Cissé and the clan framing in The Gambia (does not mention Soninke)."
+        },
+        {
+          "title": "The Ceesay legacy: A thousand years of power, faith and knowledge",
+          "author": "AlaSan Ceesay",
+          "year": 2025,
+          "url": "https://thepoint.gm/africa/gambia/feature/the-ceesay-legacy-a-thousand-years-of-power-faith-and-knowledge",
+          "source_kind": "press",
+          "quote": "In the ancient Soninké language, the word associated with 'Ceesay' points to a horseman or a man on a horse.",
+          "supports": "Gambian press feature linking Ceesay to Soninke and listing spelling variants (Ciise, Cissé, Sesay, Siise, Sesai); non-scholarly, unsourced."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0033",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[1].entries[2].provenance",
+      "claim": "name: Touray; nameSystem: clan_name; variants: Touré; peopleIds: PPL_MALINKE; countryId: GMB; verificationLead: Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GMB",
+        "name": "Touray"
+      },
+      "candidates": [
+        {
+          "title": "Touray",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Touray",
+          "source_kind": "press",
+          "quote": "a common Gambian surname of Mandinka origin",
+          "supports": "Supports only part of the claim: Touray is a Gambian surname of Mandinka (Malinké) origin, matching PPL_MALINKE and GMB. It does not support the Touré variant (Touré appears only under 'See also') or the clan_name classification. This is an encyclopedia, a weaker source than the rules prefer; there is no encyclopedia option in the schema, so it is marked 'press'."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0034",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[1].entries[3].provenance",
+      "claim": "name: Sanneh; nameSystem: clan_name; variants: Sané; peopleIds: PPL_MALINKE; countryId: GMB; verificationLead: Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GMB",
+        "name": "Sanneh"
+      },
+      "candidates": [
+        {
+          "title": "Guelowar",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Guelowar",
+          "source_kind": "press",
+          "quote": "the patrilineages of Sanneh and Manneh (Sané or Mané)",
+          "supports": "Sanneh is a clan (patrilineage) name of the Mandinka kingdom of Kaabu, with the variant spelling Sané. Encyclopedia source; it also says the lineage had Serer ancestry on the father's side."
+        },
+        {
+          "title": "An Account on The History of Kaabu And Fuladu (NCAC_RDD_TAPE_0020A_B)",
+          "author": "National Centre for Arts and Culture (The Gambia)",
+          "year": null,
+          "url": "https://b2find.eudat.eu/dataset/a6014785-a918-50f6-ac22-29905b59e6a5",
+          "source_kind": "archive",
+          "quote": "Origin of the clan names Saane and Maane",
+          "supports": "Gambian oral-history archive treats Saane (Sanneh) as a clan name tied to Kaabu. Catalogue entry only; it does not mention the Mandinka."
+        },
+        {
+          "title": "An Account on The History of Kaabu (NCAC_RDD_TAPE_0275A_B)",
+          "author": "National Centre for Arts and Culture (The Gambia)",
+          "year": null,
+          "url": "https://b2find.eudat.eu/dataset/783d2548-bd0d-5fb4-837e-0ab7b64931a7",
+          "source_kind": "archive",
+          "quote": "The origin of nyanci with reference to Tura Saane and his descendants",
+          "supports": "Saane/Sanneh is a lineage in Gambian Kaabu/Mandinka oral tradition. The record lists 'Sanneh' among alternative names, has a contributor named Momodu Saane and covers 'Islam among the Mandinka people'. Catalogue entry only."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0035",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[1].entries[4].provenance",
+      "claim": "name: Jammeh; nameSystem: clan_name; variants: Jammé; peopleIds: PPL_JOLA; countryId: GMB; verificationLead: Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GMB",
+        "name": "Jammeh"
+      },
+      "candidates": [
+        {
+          "title": "Senegambian Ethnic Groups: Common Origins and Cultural Affinities Factors and Forces of National Unity, Peace and Stability",
+          "author": "Ebou Momar Taal",
+          "year": 2010,
+          "url": "https://thepoint.gm/africa/gambia/article/senegambian-ethnic-groups-common-origins-and-cultural-affinities-factors-and-forces-of-national-unit",
+          "source_kind": "press",
+          "quote": "Not surprisingly Jolas and Sereres share a number of family names like Sanyang, Badjan, Manga, Sonko, Jammeh and Senghor",
+          "supports": "Jammeh is a family name borne by Jola people in the Gambia. The same article adds that it is also found among Sereres and Mandinka ('just as one would find Jammeh among Jolas, Sereres and Mandinka'), so the name is not exclusively Jola."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0036",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[1].entries[5].provenance",
+      "claim": "name: Bojang; nameSystem: clan_name; peopleIds: PPL_MALINKE; countryId: GMB; verificationLead: Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GMB",
+        "name": "Bojang"
+      },
+      "candidates": [
+        {
+          "title": "An Interview About The History of The Boojang Kaabiila in Brikama (NCAC_RDD_TAPE_1142A)",
+          "author": "National Centre for Arts and Culture (NCAC), National Digital Archive of The Gambia",
+          "year": null,
+          "url": "https://b2find.eudat.eu/dataset/acd61438-77a2-5c55-82c7-7308e92401bc",
+          "source_kind": "archive",
+          "quote": "Originally, the Bojangs possessed the surname Conteh from Manding.",
+          "supports": "Treats Bojang as a Gambian clan (kaabiila) of Manding origin, settled at Kartong and then Brikama; the record is tagged Culture: Mandinka and Language: Mandinka. This supports nameSystem clan_name, PPL_MALINKE and GMB. It is oral-history metadata, and the full recording is restricted."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0037",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[1].entries[7].provenance",
+      "claim": "name: Sonko; nameSystem: clan_name; peopleIds: PPL_JOLA; countryId: GMB; verificationLead: Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GMB",
+        "name": "Sonko"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0038",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[1].entries[8].provenance",
+      "claim": "name: Darboe; nameSystem: clan_name; variants: Dabo; peopleIds: PPL_MALINKE; countryId: GMB; verificationLead: Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GMB",
+        "name": "Darboe"
+      },
+      "candidates": [
+        {
+          "title": "An Interview About The History of The Daabo Clan in Gunjur (NCAC_RDD_TAPE_0953A)",
+          "author": "NCAC - National Digital Archive of The Gambia",
+          "year": null,
+          "url": "https://b2find.eudat.eu/dataset/06a5dff4-8ec9-5fd6-9bcf-7bd2d43a9589",
+          "source_kind": "archive",
+          "quote": "Arfang, Kemo, Darbo, Darboe, Dabo, Daboe, Bojang",
+          "supports": "In this archive record of an oral-history interview about the Daabo clan (kaabiila) in Gunjur, The Gambia, Darboe and Dabo are listed as alternative names. This supports Darboe as a Gambian clan name with Dabo as a variant. The record does not name an ethnic group, so it does not confirm the Mandinka link."
+        },
+        {
+          "title": "An Interview About The History of The Daabo Clan in Busumbala (NCAC_RDD_TAPE_2010A)",
+          "author": "NCAC - National Digital Archive of The Gambia",
+          "year": null,
+          "url": "https://b2find.eudat.eu/dataset/4f612e68-e0c3-5b11-a643-6c1db82f77e2",
+          "source_kind": "archive",
+          "quote": "Darboe, Daboe, Darbo, Dabo, Kemo, Kebbeh",
+          "supports": "In this record of an interview about the Daabo clan in Busumbala, The Gambia, Darboe and Dabo are listed as alternative names. This supports Darboe as a Gambian clan name with Dabo as a variant. The record does not name an ethnic group, so it does not confirm the Mandinka link."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0039",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[1].entries[10].provenance",
+      "claim": "name: Manneh; nameSystem: clan_name; variants: Mané; peopleIds: PPL_MALINKE; countryId: GMB; verificationLead: Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GMB",
+        "name": "Manneh"
+      },
+      "candidates": [
+        {
+          "title": "NCAC_RDD_TAPE_0268A (oral history recording, National Digital Archive of The Gambia)",
+          "author": "Suuso Bamba; Amadu Bansang Joobaate (NCAC/RDD)",
+          "year": 2022,
+          "url": "https://www.fdr.uni-hamburg.de/record/10571",
+          "source_kind": "archive",
+          "quote": "Tiramakang's family began to expand, and the family later included both Sanneh and Manneh as surnames. ... Tiramakang was the ancestor of the Sanneh, Manneh, Nanki, Trawalley and Banja clans",
+          "supports": "Manneh is a Mandinka clan name in The Gambia (record metadata: Culture: Mandinka; Language: Mandinka; country The Gambia)"
+        },
+        {
+          "title": "An Interview About The Maane Clan in Basori (NCAC_RDD_TAPE_3050A)",
+          "author": "NCAC/RDD",
+          "year": 2022,
+          "url": "https://b2find.eudat.eu/dataset/3771d310-1443-5ef6-a25f-cc8a7303ccbf",
+          "source_kind": "archive",
+          "quote": "Alternative names: Manneh, Mane, Mané, Almamy, Almame, Almami, Ceesay, Cisse, Seesay, Sissay, Sise, Sisse",
+          "supports": "Maane/Manneh is a clan name (the 'Maane clan'), with Mané listed as a variant, in a Gambian archive record"
+        },
+        {
+          "title": "Guelowar",
+          "author": "Wikipedia contributors",
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Guelowar",
+          "source_kind": "community",
+          "quote": "Kaabu was governed by the noble paternal \"Sanneh\" and \"Manneh\" clans (variations : Sane and Mane)",
+          "supports": "Manneh is a paternal clan name, with Mane/Mané as a variant, in the Mandinka Kaabu world"
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0040",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[1].entries[11].provenance",
+      "claim": "name: Bah; nameSystem: clan_name; variants: Ba; peopleIds: PPL_FULA; countryId: GMB; verificationLead: Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GMB",
+        "name": "Bah"
+      },
+      "candidates": [
+        {
+          "title": "Fula people",
+          "author": "Wikipedia contributors",
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Fula_people",
+          "source_kind": "community",
+          "quote": "Common Fulani family names in Guinea, Sierra Leone, Liberia, Gambia, Guinea-Bissau, and Southern Senegal are: ... Sow, Barry, Bah or Ba, Baldé, and Diouldé.",
+          "supports": "Supports Bah/Ba (variant) as a common Fula family name in the Gambia. It does not explicitly call it a clan name."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0041",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[4].provenance",
+      "claim": "name: Konaté; nameSystem: clan_name; variants: Konate; peopleIds: PPL_MALINKE; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Konaté"
+      },
+      "candidates": [
+        {
+          "title": "Manding region",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Manding_region",
+          "source_kind": "community",
+          "quote": "confederation of the main Malinke tribes: Konaté, Condé, Traoré and Doumbia",
+          "supports": "Konaté is one of the main Malinké clan names of the Manding area (present-day Mali). The same article also says a ruler 'will receive the clanic name of Konaté'. Encyclopedia source; needs review against academic work on Mande clan names."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0042",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[5].provenance",
+      "claim": "name: Sissoko; nameSystem: clan_name; variants: Cissoko; peopleIds: PPL_SONINKE; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Sissoko"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0043",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[6].provenance",
+      "claim": "name: Doumbia; nameSystem: clan_name; peopleIds: PPL_BAMBARA; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Doumbia"
+      },
+      "candidates": [
+        {
+          "title": "Festival culturel des DOUMBIA Tontigui : Les descendants de Fakoly se ressourcent à Kartabougou",
+          "author": null,
+          "year": 2017,
+          "url": "https://bamada.net/festival-culturel-des-doumbia-tontigui-les-descendants-de-fakoly-se-ressourcent-kartabougou",
+          "source_kind": "press",
+          "quote": "Koliyoro Tamba Fotigui, l'ancêtre des DOUMBIA, a été roi de Kartabougou, capitale du Solon dans la Mandé.",
+          "supports": "Partial support: Doumbia is a Mandé clan/patronym in Mali with a founding ancestor and an organised clan community (noble Doumbia / Tontigui). The article puts it in a Malinké/Mandé setting and does not mention the Bambara, so the PPL_BAMBARA link is not confirmed."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0044",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[7].provenance",
+      "claim": "name: Sidibé; nameSystem: clan_name; variants: Sidibe; peopleIds: PPL_FULA; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Sidibé"
+      },
+      "candidates": [
+        {
+          "title": "Fula people",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Fula_people",
+          "source_kind": "community",
+          "quote": "In Mali, the most common Fulani family names are Diallo, Diakité, Dia, Sow, Sidibé, Sangaré, Bah, Dicko, Tall, etc.",
+          "supports": "Sidibé is a Fula (Fulani/Peul) family name in Mali"
+        },
+        {
+          "title": "Sidibé",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Sidib%C3%A9",
+          "source_kind": "community",
+          "quote": "Sidibé is a Fulani surname that can be found in countries like Mali, Guinea, Senegal, Burkina Faso and Mauritania.",
+          "supports": "Sidibé is a Fula surname found in Mali (an earlier version of the article said it was of Soninke origin)"
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0045",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[8].provenance",
+      "claim": "name: Cissé; nameSystem: clan_name; variants: Cisse; peopleIds: PPL_SONINKE; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Cissé"
+      },
+      "candidates": [
+        {
+          "title": "GHANA (empire du) – 2. Un empire militaire",
+          "author": null,
+          "year": null,
+          "url": "https://www.universalis.fr/encyclopedie/empire-du-ghana/2-un-empire-militaire/",
+          "source_kind": "linguistic_reference",
+          "quote": "le clan soninké des Sisé, sans doute précocement lié aux étrangers",
+          "supports": "Cissé (Sisé) is a Soninké clan name, the royal clan of ancient Ghana/Wagadou"
+        },
+        {
+          "title": "Cissé",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Ciss%C3%A9",
+          "source_kind": "linguistic_reference",
+          "quote": "Cissé is a common West African name of Soninke origin",
+          "supports": "Cissé is a name of Soninké origin"
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0046",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[10].provenance",
+      "claim": "name: Maïga; nameSystem: clan_name; variants: Maiga; peopleIds: PPL_SONGHAI; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Maïga"
+      },
+      "candidates": [
+        {
+          "title": "Songhay - Kinship (Encyclopedia of World Cultures)",
+          "author": null,
+          "year": 2008,
+          "url": "https://www.everyculture.com/Africa-Middle-East/Songhay-Kinship.html",
+          "source_kind": "linguistic_reference",
+          "quote": "the Songhay also recognize noble lineages, principally those whose apical ancestor is Askia Mohammed Toure (maiga)",
+          "supports": "Maïga is a Songhai noble lineage (clan) name descending from Askia Mohammed; supports nameSystem clan_name and PPL_SONGHAI. Does not name Mali."
+        },
+        {
+          "title": "Maïga",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Ma%C3%AFga",
+          "source_kind": "community",
+          "quote": "The name Maiga is a commonly used surname among the Songhai people in Mali",
+          "supports": "Maïga/Maiga is a common Songhai surname in Mali; supports the variant spelling, PPL_SONGHAI and countryId MLI. This is an encyclopedia source, so it is weaker."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0047",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[11].provenance",
+      "claim": "name: Diakité; nameSystem: clan_name; variants: Diakite; peopleIds: PPL_FULA; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Diakité"
+      },
+      "candidates": [
+        {
+          "title": "Diakité",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Diakit%C3%A9",
+          "source_kind": "press",
+          "quote": "Diakité is a family name of Fula origin.",
+          "supports": "Diakité is a family name of Fula origin. Supports the PPL_FULA link and family-name status; does not state Mali or call it a clan name. Encyclopedia source, so weak; the source_kind schema has no encyclopedia value."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0048",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[12].provenance",
+      "claim": "name: Dembélé; nameSystem: clan_name; variants: Dembele; peopleIds: PPL_BAMBARA; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Dembélé"
+      },
+      "candidates": [
+        {
+          "title": "L'origine des noms de familles traoré, diarra, coulibaly..et toute la clique (forum Soninkara, post #3)",
+          "author": "Jade (forum user)",
+          "year": 2007,
+          "url": "https://www.soninkara.com/forums/de-l-origine-des-soninke/l-origine-des-noms-de-familles-traore-diarra-coulibaly-et-toute-la-clique-2718.html",
+          "source_kind": "community",
+          "quote": "Il y en a d'autres : Konat�, Sissoko, Camara, Diakit�, Demb�l�...",
+          "supports": "Weak support. An anonymous user lists Dembélé among names of Bambara origin, right after saying Traoré, Diarra and Coulibaly are Bambara. It does not say Dembélé is a clan name (jamu) and gives no reference. Treat it as a lead only."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0049",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[13].provenance",
+      "claim": "name: Sangaré; nameSystem: clan_name; variants: Sangare; peopleIds: PPL_FULA; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Sangaré"
+      },
+      "candidates": [
+        {
+          "title": "Fula people",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Fula_people",
+          "source_kind": "community",
+          "quote": "In Mali, the most common Fulani family names are Diallo, Diakité, Dia, Sow, Sidibé, Sangaré, Bah, Dicko, Tall, etc.",
+          "supports": "Sangaré is a common Fula (Peul) family name in Mali (PPL_FULA, MLI). It doesn't establish clan status. This is an encyclopedia, so it is a weak source."
+        },
+        {
+          "title": "Les communautés peules au Mali",
+          "author": null,
+          "year": null,
+          "url": "https://africansecuritynetwork.org/assn/wp-content/uploads/2016/11/les-communaut%C3%A9s-peules-au-Mali-2.pdf",
+          "source_kind": "academic",
+          "quote": "Ceux du Wassoulou ont pour patronymes Diakite, Diallo, Sidibe et Sangare.",
+          "supports": "Sangare (variant spelling) is a family name of the Peuls of Wassoulou (Sikasso region, Mali). Not checked in the PDF itself: its text is compressed and couldn't be read, so this quote comes from the search result's extract of the PDF. Check the wording, page and author in the PDF before using it."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0050",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[15].provenance",
+      "claim": "name: Fofana; nameSystem: clan_name; peopleIds: PPL_SONINKE; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Fofana"
+      },
+      "candidates": [
+        {
+          "title": "Soninkés",
+          "author": "Wikipédia contributors (citing Makhtar Diouf, Sénégal, les ethnies et la nation, NEAS 1998, pp. 70-71)",
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Sonink%C3%A9s",
+          "source_kind": "press",
+          "quote": "Selon Makhtar Diouf, chercheur à l'IFAN, certains patronymes sont caractéristiques d'une origine soninké […] Fadiga, Fadé, Fall, Fofana, Gassama,",
+          "supports": "Partly supports the claim. Through its citation of Diouf (IFAN), the article lists Fofana among surnames that point to a Soninké origin. It is an encyclopedia, though, and Diouf writes about Senegal, so the source does not confirm Mali (MLI) specifically. Diouf's book, pp. 70-71, is the primary source to check."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0051",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[16].provenance",
+      "claim": "name: Kanté; nameSystem: clan_name; variants: Kante; peopleIds: PPL_MALINKE; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Kanté"
+      },
+      "candidates": [
+        {
+          "title": "N'Golo Kanté, homonyme d'un des plus grands rois de l'histoire de l'Afrique",
+          "author": "Sandro Capo Chichi",
+          "year": 2018,
+          "url": "https://www.nofi.media/2018/07/ngolo-soumahoro-kante/56222",
+          "source_kind": "press",
+          "quote": "le nom de clan Kanté que partagent Soumaoro et N’Golo est associé à la caste des forgerons.",
+          "supports": "Describes Kanté as a clan name ('nom de clan') in the Manding area, linked to the smith (numu) caste. It supports nameSystem = clan_name for the Mande peoples. It does not specifically name Mali or the Malinké."
+        },
+        {
+          "title": "Castes au Mali",
+          "author": null,
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Castes_au_Mali",
+          "source_kind": "community",
+          "quote": "Les patronymes les plus fréquents chez les forgerons sont : Ballo, Kanté, Fané, Sinayoko, etc.",
+          "supports": "Lists Kanté as a common surname among the smith caste in Mali. This supports the Mali (MLI) attestation of the name. It is an encyclopedia source and should be checked against academic work, for example the Revue Akofena article by Amadou Zan Traoré (2022), which could not be read here, or Tal Tamari's work."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0052",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[18].provenance",
+      "claim": "name: Bagayoko; nameSystem: clan_name; peopleIds: PPL_BAMBARA; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Bagayoko"
+      },
+      "candidates": [
+        {
+          "title": "HISTOIRE DES BAGAYOGO",
+          "author": null,
+          "year": 2018,
+          "url": "https://histoiresahelienne.over-blog.com/2018/10/histoire-des-bagayogo.html",
+          "source_kind": "community",
+          "quote": "Bagayogo est un nom de louange donné par les Bambaras aux guerriers venus de Banico.",
+          "supports": "Partially supports Bagayogo/Bagayoko as a Malian family name tied to the Bambara (described as a Bambara-given praise name). The blog also gives Lodé and Soninke origins, and it relies on Youba Bathily, Histoire des patronymes au Mali (2017), which was not opened."
+        },
+        {
+          "title": "Bakayoko",
+          "author": null,
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Bakayoko",
+          "source_kind": "community",
+          "quote": "Bakayoko est un nom de famille malinké qu'on retrouve au Mali, en Guinée et en Côte d’Ivoire. On retrouve des variantes, telles que Bagayoko et Bagayogo",
+          "supports": "Supports Bagayoko as a Mande family name found in Mali. It calls the name Malinké, not specifically Bambara."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0053",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[2].entries[19].provenance",
+      "claim": "name: Guindo; nameSystem: clan_name; peopleIds: PPL_DOGON; countryId: MLI; verificationLead: RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MLI",
+        "name": "Guindo"
+      },
+      "candidates": [
+        {
+          "title": "Aouguine",
+          "author": null,
+          "year": null,
+          "url": "https://dogon-lobi.ch/089aouguine.html",
+          "source_kind": "community",
+          "quote": "The inhabitants of Aouguine belong to the Dyon tribe. Their surname is Guindo and they speak Jamsay",
+          "supports": "Guindo is the family name of a Dogon descent group (Dyon) in Mali"
+        },
+        {
+          "title": "Indeli village record, Dogon languages project",
+          "author": null,
+          "year": null,
+          "url": "https://dogonlanguages.info/villages/837",
+          "source_kind": "linguistic_reference",
+          "quote": "Walbane, Guindo, Tembiné, Yalkouyé, Kamia",
+          "supports": "Guindo is listed as a surname in a Dogon village in Mali where Tommo So is spoken"
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0054",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[3].entries[7].provenance",
+      "claim": "name: Ouattara; nameSystem: clan_name; variants: Watara; peopleIds: PPL_DIOULA; countryId: BFA; verificationLead: Listes électorales CENI, INSD, onomastique mooré et dioula; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "BFA",
+        "name": "Ouattara"
+      },
+      "candidates": [
+        {
+          "title": "Gold Mining and Jula Influence in Precolonial Southern Burkina Faso",
+          "author": "Katja Werthmann",
+          "year": 2007,
+          "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/gold-mining-and-jula1-influence-in-precolonial-southern-burkina-faso/87B1DDFE2E46F6E94AE86652B282A53E",
+          "source_kind": "academic",
+          "quote": "the Lobi clan name 'Kambou' is thought of as being equivalent to the Jula patronym 'Watara' … Other versions: Ouattara, Ouatara, Watara.",
+          "supports": "Watara/Ouattara is a Jula (Dioula) patronym/clan name in southern Burkina Faso, with Watara as a variant spelling"
+        },
+        {
+          "title": "Communauté Dioula du Burkina Faso : Karamoko Ouattara, nouveau chef suprême",
+          "author": null,
+          "year": 2023,
+          "url": "https://www.sidwaya.info/communaute-dioula-du-burkina-faso-karamoko-ouattara-nouveau-chef-supreme/",
+          "source_kind": "press",
+          "quote": "est venue de Kong, où est né le premier empire des Ouattara fondé par Sékou Ouattara",
+          "supports": "Ouattara is a lineage name associated with the Dioula community of Burkina Faso (Bobo-Dioulasso)"
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0055",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[3].entries[18].provenance",
+      "claim": "name: Barry; nameSystem: clan_name; peopleIds: PPL_FULA; countryId: BFA; verificationLead: Listes électorales CENI, INSD, onomastique mooré et dioula; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "BFA",
+        "name": "Barry"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0056",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[4].entries[0].provenance",
+      "claim": "name: Maïga; nameSystem: clan_name; variants: Maiga; peopleIds: PPL_SONGHAI; countryId: NER; verificationLead: Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NER",
+        "name": "Maïga"
+      },
+      "candidates": [
+        {
+          "title": "Maïga",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Ma%C3%AFga",
+          "source_kind": "community",
+          "quote": "The name Maiga is a commonly used surname among the Songhai people in Mali, Niger ... In Niger, the name Maïga is sometimes used interchangeably to refer to the general Songhaiborai identity",
+          "supports": "Maïga/Maiga is a Songhai surname and clan/noble title in Niger (PPL_SONGHAI, NER)"
+        },
+        {
+          "title": "Songhaiborai",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Songhaiborai",
+          "source_kind": "community",
+          "quote": "It is also worth noting that both groups use the title surname \"Maiga\" (meaning, \"King or Prince\").",
+          "supports": "Maiga is a title surname used by the Songhai noble groups (Si Hamey and Mamar Hamey)"
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0057",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[4].entries[2].provenance",
+      "claim": "name: Moussa; nameSystem: non_hereditary_patronymic; variants: Musa; peopleIds: PPL_ZARMA; countryId: NER; verificationLead: Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NER",
+        "name": "Moussa"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0058",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[4].entries[5].provenance",
+      "claim": "name: Issaka; nameSystem: non_hereditary_patronymic; variants: Issaca; peopleIds: PPL_ZARMA; countryId: NER; verificationLead: Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NER",
+        "name": "Issaka"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0059",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[4].entries[7].provenance",
+      "claim": "name: Seyni; nameSystem: non_hereditary_patronymic; peopleIds: PPL_ZARMA; countryId: NER; verificationLead: Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NER",
+        "name": "Seyni"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0060",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[4].entries[8].provenance",
+      "claim": "name: Idrissa; nameSystem: non_hereditary_patronymic; variants: Idrissou; peopleIds: PPL_ZARMA; countryId: NER; verificationLead: Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NER",
+        "name": "Idrissa"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0061",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[4].entries[9].provenance",
+      "claim": "name: Souley; nameSystem: non_hereditary_patronymic; variants: Soulé; peopleIds: PPL_ZARMA; countryId: NER; verificationLead: Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NER",
+        "name": "Souley"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0062",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[4].entries[10].provenance",
+      "claim": "name: Hamidou; nameSystem: non_hereditary_patronymic; peopleIds: PPL_FULA; countryId: NER; verificationLead: Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NER",
+        "name": "Hamidou"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0063",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[4].entries[12].provenance",
+      "claim": "name: Kountché; nameSystem: clan_name; variants: Kounche; peopleIds: PPL_ZARMA; countryId: NER; verificationLead: Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NER",
+        "name": "Kountché"
+      },
+      "candidates": [
+        {
+          "title": "KOUNTCHÉ SEYNI (1931-1987)",
+          "author": null,
+          "year": null,
+          "url": "https://www.universalis.fr/encyclopedie/seyni-kountche/",
+          "source_kind": "press",
+          "quote": "Il est issu d'une famille de chefs coutumiers de la tribu Gabda, rameau du peuple Djerma",
+          "supports": "Kountché is the family name of a Djerma (Zarma) chiefly family in Niger (Gabda group). This supports peopleIds PPL_ZARMA and countryId NER. It does not say whether the name is a clan name, and it does not mention the variant Kounche."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0064",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[4].entries[13].provenance",
+      "claim": "name: Diori; nameSystem: clan_name; peopleIds: PPL_ZARMA; countryId: NER; verificationLead: Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NER",
+        "name": "Diori"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0065",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[4].entries[16].provenance",
+      "claim": "name: Yacouba; nameSystem: non_hereditary_patronymic; variants: Yakouba; peopleIds: PPL_ZARMA; countryId: NER; verificationLead: Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NER",
+        "name": "Yacouba"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0066",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[4].entries[17].provenance",
+      "claim": "name: Salifou; nameSystem: non_hereditary_patronymic; variants: Salif; peopleIds: PPL_ZARMA; countryId: NER; verificationLead: Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NER",
+        "name": "Salifou"
+      },
+      "candidates": [
+        {
+          "title": "Amadou Salifou",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Amadou_Salifou",
+          "source_kind": "press",
+          "quote": "Salifou is a Zarma from the Niamey suburb of Goudel.",
+          "supports": "Partial only: shows Salifou as the name of a Zarma person in Niger (supports peopleIds PPL_ZARMA / countryId NER). It does not support the non_hereditary_patronymic system or the Salif variant. This is an encyclopedia entry (no better category fit), so the evidence is weak."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0067",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[4].entries[18].provenance",
+      "claim": "name: Ousmane; nameSystem: non_hereditary_patronymic; variants: Usman; peopleIds: PPL_FULA; countryId: NER; verificationLead: Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NER",
+        "name": "Ousmane"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0068",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[5].entries[1].provenance",
+      "claim": "name: Barry; nameSystem: clan_name; variants: Bari; peopleIds: PPL_FULA; countryId: GIN; verificationLead: Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GIN",
+        "name": "Barry"
+      },
+      "candidates": [
+        {
+          "title": "webFuuta / History — Fouta-Diallon History: sample interviews (Joseph Harris)",
+          "author": "Joseph Harris (interviewer); informant Diallo Abdoul",
+          "year": 1961,
+          "url": "https://www.webfuuta.site/bibliotheque/joseph_harris/fouta_diallon_history/sample_interviews.html",
+          "source_kind": "archive",
+          "quote": "had four sons: Diallo, Bah, Sow, Barry",
+          "supports": "Partial support only. In an oral tradition from the Fouta-Djalon (Guinea), Barry is one of the four sons of a marabout, Abouda Daye, from whom the Foula descend. The source does not use the word 'clan' and does not support the variant 'Bari'."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0069",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[5].entries[2].provenance",
+      "claim": "name: Bah; nameSystem: clan_name; variants: Ba; peopleIds: PPL_FULA; countryId: GIN; verificationLead: Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GIN",
+        "name": "Bah"
+      },
+      "candidates": [
+        {
+          "title": "The Kingdom of Fouta-Diallon (sample interviews, webFuuta transcription)",
+          "author": "Joseph Earl Harris",
+          "year": 1965,
+          "url": "https://webfuuta.site/bibliotheque/joseph_harris/fouta_diallon_history/sample_interviews.html",
+          "source_kind": "academic",
+          "quote": "had four sons: Diallo, Bah, Sow, Barry",
+          "supports": "Oral history recorded in the Fouta-Djalon (PhD dissertation) treats Bah as one of the four founding lineage names of the Foula (Fula). Supports the name and the Fula people, as an oral account. The word 'clan' and the variant 'Ba' do not appear."
+        },
+        {
+          "title": "Fula people",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Fula_people",
+          "source_kind": "community",
+          "quote": "Sow, Barry, Bah or Ba, Baldé, and Diouldé.",
+          "supports": "Supports Bah, with the variant Ba, as a Fulani family name in Guinea (the full sentence lists common Fulani family names in Guinea and neighbouring countries). Encyclopedia source, so weaker."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0070",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[5].entries[3].provenance",
+      "claim": "name: Sow; nameSystem: clan_name; peopleIds: PPL_FULA; countryId: GIN; verificationLead: Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GIN",
+        "name": "Sow"
+      },
+      "candidates": [
+        {
+          "title": "Fouta-Diallon History: Sample interviews (Joseph E. Harris collection, webFuuta library)",
+          "author": "Joseph E. Harris (interviewer); informant Diallo Abdoul",
+          "year": null,
+          "url": "https://www.webfuuta.site/bibliotheque/joseph_harris/fouta_diallon_history/sample_interviews.html",
+          "source_kind": "archive",
+          "quote": "had four sons: Diallo, Bah, Sow, Barry",
+          "supports": "Oral tradition recorded in Fouta-Djallon, Guinea. It names Sow as one of the four ancestral Fula lineages, alongside Diallo, Bah and Barry. This supports reading Sow as a Fula clan name in Guinea, though the passage frames the names as sons of one ancestor, not as clans."
+        },
+        {
+          "title": "Guinée Conakry : valorisation des ressources humaines, révélation sur la galère des Peulh",
+          "author": null,
+          "year": null,
+          "url": "https://news.abidjan.net/articles/369268/guinee-conakry-valorisation-des-ressources-humaines-revelation-sur-la-galere-des-peulh",
+          "source_kind": "press",
+          "quote": "Plus de la moitié des Peulh s'appèlent BA ou Diallo, en plus des thierno, Sow, Barry, Sangaré, etc,",
+          "supports": "Press article on Guinea that lists Sow among the common names borne by the Peulh (Fula)."
+        },
+        {
+          "title": "Fula people",
+          "author": "Wikipedia contributors",
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Fula_people",
+          "source_kind": "community",
+          "quote": "Common Fulani family names in Guinea, Sierra Leone, Liberia, Gambia, Guinea-Bissau, and Southern Senegal are: ... Sow, Barry, Bah or Ba, Baldé, and Diouldé.",
+          "supports": "Lists Sow as a common Fula family name in Guinea. This is encyclopedic, tertiary support only. The quote is spliced from two parts of one sentence: the ellipsis leaves out the Diallo/Jallow/Jalloh/Djalo names."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0071",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[5].entries[5].provenance",
+      "claim": "name: Condé; nameSystem: clan_name; variants: Conde; peopleIds: PPL_MALINKE; countryId: GIN; verificationLead: Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GIN",
+        "name": "Condé"
+      },
+      "candidates": [
+        {
+          "title": "Mandé",
+          "author": null,
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Manden",
+          "source_kind": "press",
+          "quote": "une confédération des principales tribus malinké : Konaté, Condé, Traoré et Doumbia",
+          "supports": "Condé is one of the main Malinké clans/tribes of the early Mandé confederation; the page also says 'les Keita, les Konaté, les Camara et les Condé resteront les propriétaires exclusifs du Manding'. Encyclopedia, so weaker evidence."
+        },
+        {
+          "title": "Condé (surname)",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Cond%C3%A9_(surname)",
+          "source_kind": "press",
+          "quote": "a common surname among the Mandinka people of West Africa, prevalently Guinea",
+          "supports": "Links Condé to the Mandinka (Malinké/Maninka) people, most common in Guinea. Does not say 'clan' or 'Malinké'. Encyclopedia, so weaker evidence."
+        },
+        {
+          "title": "Sékou Touré, président – volume 5, chapitre 64, annexe 3",
+          "author": "André Lewin",
+          "year": null,
+          "url": "https://webguine.site/bibliotheque/histoire/andre-lewin/sekou-toure-president/volume-5/chap64-annexe3.html",
+          "source_kind": "academic",
+          "quote": "Toya Condé Maninka",
+          "supports": "Indirect only: Guinean officers named Condé are listed with their ethnicity as Maninka (also Idrissa, Sidiki and Baourou Condé). Shows Condés in Guinea being Maninka, not that Condé is a clan name."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0072",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[5].entries[7].provenance",
+      "claim": "name: Sylla; nameSystem: clan_name; variants: Silla; peopleIds: PPL_MALINKE; countryId: GIN; verificationLead: Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GIN",
+        "name": "Sylla"
+      },
+      "candidates": [
+        {
+          "title": "Dioula, malinké, bambara ou mandinka : Quelles similarités et différences ?",
+          "author": null,
+          "year": null,
+          "url": "https://poulmanogo.wixsite.com/zangaschool/post/dioula-malinke-bambara-mandinka",
+          "source_kind": "community",
+          "quote": "Les classes de marabouts, appelés Maninka Mori et Mandé Mori (\"Marabout du Mandé\"), portent généralement les noms suivants : Kaba, Touré, Cisse, Dramé, Dabo, Diané, Berété (équivalent de Souané au Sénégal), Sakho, Sylla.",
+          "supports": "Partial support only. The source lists Sylla as a family name of the Maninka/Mandé marabout (Mori) classes, and says these peoples are called Malinké in Guinea. It also says these marabout families are of Soninke origin. It is a community blog, not a scholarly source, and it does not mention the variant Silla."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0073",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[5].entries[11].provenance",
+      "claim": "name: Kourouma; nameSystem: clan_name; peopleIds: PPL_MALINKE; countryId: GIN; verificationLead: Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GIN",
+        "name": "Kourouma"
+      },
+      "candidates": [
+        {
+          "title": "Janjon pour Ahmadou Kourouma",
+          "author": "Jean-Fernand Bédia (interview with Ahmadou Kourouma)",
+          "year": 2005,
+          "url": "http://africultures.com/janjon-pour-ahmadou-kourouma-4066/",
+          "source_kind": "press",
+          "quote": "Chez les Malinké, Doumbouya et Kourouma, c'est la même chose. [...] Les Kourouma prétendent être des descendants de Koroma, allié de Soundjata dans la guerre contre Soumaoro",
+          "supports": "Partial support: Kourouma is a Malinké family/clan name, equivalent to Doumbouya/Doumbia and traced to Koroma, an ally of Soundjata. Nothing here ties it specifically to Guinea."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0074",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[6].entries[1].provenance",
+      "claim": "name: Baldé; nameSystem: clan_name; variants: Balde; peopleIds: PPL_FULA; countryId: GNB; verificationLead: Recenseamento Geral (INE Guiné-Bissau), listes électorales CNE, onomastique balante et manjaque; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GNB",
+        "name": "Baldé"
+      },
+      "candidates": [
+        {
+          "title": "Trabalho de conclusão de curso (TCC), Instituto de Humanidades, UNILAB (author per file name: Ibu Djaló)",
+          "author": "Ibu Djaló",
+          "year": null,
+          "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3467/1/ibu%20djalo_tcc.pdf",
+          "source_kind": "academic",
+          "quote": "os do clã Djal-Djaló, usam o nome Diallo, Djaló ou Jaló, os do clã ururó, o nome de Baldé",
+          "supports": "Links Baldé to a Fula clan (ururó) in Guinea-Bissau, which fits nameSystem clan_name and PPL_FULA for GNB. The quote came from the search tool's extract because the PDF text could not be read directly, so it needs manual checking."
+        },
+        {
+          "title": "Fula people",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Fula_people",
+          "source_kind": "community",
+          "quote": "Sow, Barry, Bah or Ba, Baldé, and Diouldé",
+          "supports": "Lists Baldé among common Fulani family names in Guinea, Sierra Leone, Guinea-Bissau and southern Senegal."
+        },
+        {
+          "title": "Guiné 61/74 - P19919: O reino de Fuladu, de Alfa Moló Baldé a Mussá Moló (Cherno Baldé)",
+          "author": "Cherno Baldé",
+          "year": 2019,
+          "url": "https://blogueforanadaevaotres.blogspot.com/2019/06/guine-6174-p19919-historiografia-da.html",
+          "source_kind": "community",
+          "quote": "configura uma violação do pacto entre as duas linhagens da família « Baldé »",
+          "supports": "Describes Baldé as a Fula lineage or family name in the Fuladu region, which crosses into Guinea-Bissau. It also refers to a noble Fula pastoral family 'de apelido «Baldé»'."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0075",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[6].entries[2].provenance",
+      "claim": "name: Djaló; nameSystem: clan_name; variants: Diallo, Jalo; peopleIds: PPL_FULA; countryId: GNB; verificationLead: Recenseamento Geral (INE Guiné-Bissau), listes électorales CNE, onomastique balante et manjaque; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GNB",
+        "name": "Djaló"
+      },
+      "candidates": [
+        {
+          "title": "Djaló",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Djal%C3%B3",
+          "source_kind": "community",
+          "quote": "Djaló is the Portuguese and Creole transcription of a surname of Fula origin.",
+          "supports": "Djaló is a Fula (PPL_FULA) surname; the same article gives Jalloh/Jallow (English) and Diallo (French) as variants"
+        },
+        {
+          "title": "Fula people",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Fula_people",
+          "source_kind": "community",
+          "quote": "Common Fulani family names in Guinea, Sierra Leone, Liberia, Gambia, Guinea-Bissau, and Southern Senegal are: ... Djalo (Cap Verde and Guinea-Bissau)",
+          "supports": "Djalo is a common Fula family name, and this spelling is tied to Guinea-Bissau (GNB)"
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0076",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[6].entries[3].provenance",
+      "claim": "name: Embaló; nameSystem: clan_name; variants: Embalo; peopleIds: PPL_FULA; countryId: GNB; verificationLead: Recenseamento Geral (INE Guiné-Bissau), listes électorales CNE, onomastique balante et manjaque; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "GNB",
+        "name": "Embaló"
+      },
+      "candidates": [
+        {
+          "title": "Embalo",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Embalo",
+          "source_kind": "community",
+          "quote": "Embalo is a Bissau-Guinean surname.",
+          "supports": "Partial: supports Embalo/Embaló as a surname of Guinea-Bissau (countryId GNB, variant Embalo). Does not state a Fula ethnic or clan association."
+        },
+        {
+          "title": "'The General' becomes president in Guinea-Bissau",
+          "author": null,
+          "year": null,
+          "url": "https://www.omanobserver.om/ampArticle/18687",
+          "source_kind": "press",
+          "quote": "Embalo is a member of the Fulani ethnic group",
+          "supports": "Weak/partial: says one prominent bearer of the surname (Umaro Sissoco Embaló) is Fulani. Does not state that the surname itself is a Fula clan name."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0077",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[7].entries[1].provenance",
+      "claim": "name: Koné; nameSystem: clan_name; variants: Kone; peopleIds: PPL_DIOULA; countryId: CIV; verificationLead: Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "CIV",
+        "name": "Koné"
+      },
+      "candidates": [
+        {
+          "title": "Dioula (peuple)",
+          "author": null,
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Dioula_(peuple)",
+          "source_kind": "community",
+          "quote": "Les Wangaras Dioulas portent des patronymes mandingues : Fadiga Fofana, Haidara, Touré, Traoré, Koné, Keita, Konaté,",
+          "supports": "Partial and weak: lists Koné as a Mande family name carried by the Wangara Dioula. Supports name and peopleId PPL_DIOULA only. Does not say 'jamu' or clan name, and does not tie the name to CIV. The page's own banner says this list is unsourced and its academic validity is disputed. Needs an academic source or human review."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0078",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[7].entries[6].provenance",
+      "claim": "name: Bamba; nameSystem: clan_name; peopleIds: PPL_DIOULA; countryId: CIV; verificationLead: Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "CIV",
+        "name": "Bamba"
+      },
+      "candidates": [
+        {
+          "title": "Dioula (peuple)",
+          "author": null,
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Dioula_(peuple)",
+          "source_kind": "community",
+          "quote": "Les Wangaras Dioulas portent des patronymes mandingues : Bakayoko ; Bamba ; Berthé; Camara, Coulibaly, Cissé, Chérif, Dagnogo, Diabagaté, Diané, Diarra, Diarrassouba",
+          "supports": "Weak, partial support only. The article lists Bamba as a Mande patronym borne by the Dioula (Wangara). It does not call Bamba a clan name (jamu) or link it to Côte d'Ivoire specifically. Wikipedia itself flags this surname list as unsourced and its academic validity as contested. Do not use as a primary citation."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0079",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[7].entries[7].provenance",
+      "claim": "name: Ouattara; nameSystem: clan_name; variants: Watara; peopleIds: PPL_DIOULA; countryId: CIV; verificationLead: Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "CIV",
+        "name": "Ouattara"
+      },
+      "candidates": [
+        {
+          "title": "Dyula (Encyclopedia.com entry)",
+          "author": null,
+          "year": null,
+          "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/dyula-0",
+          "source_kind": "linguistic_reference",
+          "quote": "Coulibaly, Kone, Wattara, Cisse, Saganogo, Toure",
+          "supports": "Lists Wattara (= Ouattara/Watara) among common Dyula clan names. This supports nameSystem clan_name, peopleIds PPL_DIOULA and the Watara spelling variant. The article also places Kong in northern Ivory Coast."
+        },
+        {
+          "title": "Kong Empire",
+          "author": "Wikipedia contributors",
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Kong_Empire",
+          "source_kind": "community",
+          "quote": "each ruled by a member of the Watara clan, either related to Seku or who had adopted the name.",
+          "supports": "Calls Watara a clan in the Dyula Kong polity of northern Côte d'Ivoire and says the name could be adopted. The same article gives the Ouattara and Wattara spellings ('also known as the Wattara Empire or Ouattara Empire for its founder Seku Watara')."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0080",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[7].entries[11].provenance",
+      "claim": "name: Doumbia; nameSystem: clan_name; peopleIds: PPL_DIOULA; countryId: CIV; verificationLead: Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "CIV",
+        "name": "Doumbia"
+      },
+      "candidates": [
+        {
+          "title": "Le groupe Mandé",
+          "author": null,
+          "year": null,
+          "url": "https://rezoivoire.net/ivoire/ressources/293/le-groupe-mande.html",
+          "source_kind": "community",
+          "quote": "Aïdara, Doumbia, Fakoly, Kaba, Condé",
+          "supports": "Lists Doumbia as a lineage (family/clan) name in the Ivorian Mandé group. The page says Malinké in Côte d'Ivoire 'sont aussi appelés Dioulas' and that among the Mandé du Nord (Malinké and Dioula), 'la descendance, le statut social, l'héritage et la succession sont régies suivant les règles du régime patrilinéaire'. This partly supports Doumbia as a patrilineal clan name among Malinké/Dioula in CIV. It is a community source, not an academic one."
+        },
+        {
+          "title": "Doumbia",
+          "author": "Wikipédia contributors",
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Doumbia",
+          "source_kind": "community",
+          "quote": "Doumbia est un nom de famille Malinke que nous trouvons au Mali, en Guinée et en Côte d’Ivoire",
+          "supports": "Supports Doumbia as a Mandé (Malinké) family name found in Côte d'Ivoire. It does not say 'Dioula' or 'clan' explicitly, so the support is only partial."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0081",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[7].entries[15].provenance",
+      "claim": "name: Gbagbo; nameSystem: clan_name; peopleIds: PPL_BETE; countryId: CIV; verificationLead: Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "CIV",
+        "name": "Gbagbo"
+      },
+      "candidates": [
+        {
+          "title": "Laurent Gbagbo",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Laurent_Gbagbo",
+          "source_kind": "press",
+          "quote": "In Bete and other Ivorian languages, the g and b are pronounced simultaneously",
+          "supports": "Partial support only. The source treats Gbagbo as a Bété-language name: it gives the Gagnoa Bété pronunciation [ɡ͡baɡ͡bo] and says the bearer was born to a Bété family in Gagnoa. It does not support the claim that Gbagbo is a clan name. It is also an encyclopedia, not a scholarly source."
+        },
+        {
+          "title": "Gbagbo, Laurent 1945–",
+          "author": null,
+          "year": null,
+          "url": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/gbagbo-laurent-1945",
+          "source_kind": "press",
+          "quote": "His parents, Zepe Paul Kou-dou and Gado Marguerite Koudou Paul, belonged to the Bété tribe.",
+          "supports": "Supports only that the best-known bearer of the name comes from a Bété family (link between the name and PPL_BETE / CIV). It says nothing about the name being a clan name. The parents are named Koudou, not Gbagbo, which casts doubt on calling it a clan or lineage name."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0082",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[7].entries[16].provenance",
+      "claim": "name: Zadi; nameSystem: clan_name; peopleIds: PPL_BETE; countryId: CIV; verificationLead: Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "CIV",
+        "name": "Zadi"
+      },
+      "candidates": [
+        {
+          "title": "Côte d'Ivoire : Voici la signification des noms Bété que vous connaissez",
+          "author": "Afrik Soir",
+          "year": 2021,
+          "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+          "source_kind": "press",
+          "quote": "En pays Bété, l'on ne donne pas de nom de façon fortuite. La raison en est que les noms ont chacun une signification. […] Zadi : Nom de jumeaux",
+          "supports": "Supports that Zadi is a Bété name (peopleIds PPL_BETE, Côte d'Ivoire). It does not support nameSystem clan_name: the article calls it a name given to twins. Single press source with no academic confirmation."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0083",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[7].entries[19].provenance",
+      "claim": "name: Fofana; nameSystem: clan_name; peopleIds: PPL_DIOULA; countryId: CIV; verificationLead: Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "CIV",
+        "name": "Fofana"
+      },
+      "candidates": [
+        {
+          "title": "Dioula (peuple)",
+          "author": null,
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Dioula_(peuple)",
+          "source_kind": "community",
+          "quote": "Les Wangaras Dioulas portent des patronymes mandingues : Fadiga Fofana, Haidara, Touré, Traoré, Koné, Keita, Konaté,",
+          "supports": "Lists Fofana among the Mande family names (patronymes) borne by the Dioula. Weak support: Wikipedia flags this list as unsourced and of contested validity, and it does not specifically mention Côte d'Ivoire."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0084",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[11].entries[1].provenance",
+      "claim": "name: Okafor; nameSystem: clan_name; peopleIds: PPL_IGBO; countryId: NGA; verificationLead: INEC voter register, NPC census, littérature sur l'oríkì yoruba et l'anthroponymie igbo; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NGA",
+        "name": "Okafor"
+      },
+      "candidates": [
+        {
+          "title": "Okoro",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Okoro",
+          "source_kind": "community",
+          "quote": "Okafor/Okorafor (a man born on Afọ) ... Like Okoro, these are no longer used as given names but have become highly common surnames.",
+          "supports": "Supports that Okafor is an Igbo name (PPL_IGBO) that is now a common surname. It describes it as a market-day name (a man born on Afọ), not a clan name, so the nameSystem value 'clan_name' is not supported."
+        },
+        {
+          "title": "Okafor (name entry)",
+          "author": "Mike Campbell (Behind the Name)",
+          "year": null,
+          "url": "https://www.behindthename.com/name/okafor",
+          "source_kind": "linguistic_reference",
+          "quote": "Means \"boy (born on) Afor\" in Igbo, Afor being one of the four days of the Igbo week.",
+          "supports": "Supports that Okafor is an Igbo name. It explains the name as a birth-day (market-day) name, which contradicts the 'clan_name' classification."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0085",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[11].entries[3].provenance",
+      "claim": "name: Chukwu; nameSystem: clan_name; variants: Chukwuma; peopleIds: PPL_IGBO; countryId: NGA; verificationLead: INEC voter register, NPC census, littérature sur l'oríkì yoruba et l'anthroponymie igbo; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NGA",
+        "name": "Chukwu"
+      },
+      "candidates": [
+        {
+          "title": "Chukwu (surname)",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Chukwu_(surname)",
+          "source_kind": "community",
+          "quote": "Chukwu is a Nigerian male given name and surname of Igbo origin. It means \"the great god\", derived from Igbo chi \"god, spiritual being\" and úkwú \"great\".",
+          "supports": "Chukwu is an Igbo (Nigerian) surname/given name; supports peopleIds PPL_IGBO and countryId NGA (does not support classification as clan_name)"
+        },
+        {
+          "title": "Chukwuma - Behind the Name",
+          "author": "Mike Campbell (Behind the Name)",
+          "year": null,
+          "url": "https://www.behindthename.com/name/chukwuma",
+          "source_kind": "community",
+          "quote": "Means \"God knows\" in Igbo. ... a variant of Chima using Chukwu as the first element.",
+          "supports": "Chukwuma is an Igbo name formed with Chukwu as its first element (variant relation)"
+        },
+        {
+          "title": "Chukwuma",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Chukwuma",
+          "source_kind": "community",
+          "quote": "Chukwuma is a Nigerian name that means 'God knows'. It is an Igbo word.",
+          "supports": "Chukwuma is an Igbo/Nigerian name, also used as a surname (lists bearers with the surname)"
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0086",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[11].entries[5].provenance",
+      "claim": "name: Nwachukwu; nameSystem: clan_name; peopleIds: PPL_IGBO; countryId: NGA; verificationLead: INEC voter register, NPC census, littérature sur l'oríkì yoruba et l'anthroponymie igbo; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NGA",
+        "name": "Nwachukwu"
+      },
+      "candidates": [
+        {
+          "title": "Nwachukwu",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Nwachukwu",
+          "source_kind": "community",
+          "quote": "is a very common Igbo surname. It means \"child of God\".",
+          "supports": "Supports name Nwachukwu as an Igbo (PPL_IGBO) surname. It does NOT support nameSystem 'clan_name': it describes a theophoric personal-name-derived surname, not a clan name. The source does not explicitly name Nigeria."
+        },
+        {
+          "title": "Nwachukwu – Behind the Name",
+          "author": "Mike Campbell (Behind the Name)",
+          "year": null,
+          "url": "https://www.behindthename.com/name/nwachukwu",
+          "source_kind": "linguistic_reference",
+          "quote": "Means \"child of God\" in Igbo.",
+          "supports": "Supports Igbo usage of the name (roots ńnwá + Chukwu). It treats the name as a theophoric given name, not a clan name, so it does not support nameSystem 'clan_name'."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0087",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[11].entries[6].provenance",
+      "claim": "name: Okonkwo; nameSystem: clan_name; peopleIds: PPL_IGBO; countryId: NGA; verificationLead: INEC voter register, NPC census, littérature sur l'oríkì yoruba et l'anthroponymie igbo; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NGA",
+        "name": "Okonkwo"
+      },
+      "candidates": [
+        {
+          "title": "Okonkwo — Nkọwa okwu Igbo dictionary entry",
+          "author": null,
+          "year": null,
+          "url": "https://nkowaokwu.com/search?word=nkwo",
+          "source_kind": "linguistic_reference",
+          "quote": "a male child born on 'Nkwọ' day",
+          "supports": "Okonkwo is an Igbo personal name meaning a male born on Nkwọ, the fourth Igbo market day. It supports the Igbo attribution (PPL_IGBO), not the clan_name classification."
+        },
+        {
+          "title": "Okonkwo",
+          "author": "Wikipedia contributors",
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Okonkwo",
+          "source_kind": "community",
+          "quote": "A boy born on Nkwo day.",
+          "supports": "Says Okonkwo is an Igbo name meaning a boy born on Nkwo market day. It supports the Igbo attribution; it describes a market-day name, not a clan name."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0088",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[11].entries[10].provenance",
+      "claim": "name: Eze; nameSystem: clan_name; peopleIds: PPL_IGBO; countryId: NGA; verificationLead: INEC voter register, NPC census, littérature sur l'oríkì yoruba et l'anthroponymie igbo; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NGA",
+        "name": "Eze"
+      },
+      "candidates": [
+        {
+          "title": "Eze (disambiguation)",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Eze_(disambiguation)",
+          "source_kind": "community",
+          "quote": "Eze is an Igbo word which means King.",
+          "supports": "Partial: says eze is an Igbo word and lists Eze under a 'Surname' heading (e.g. Eberechi Eze). Does not support the clan_name classification."
+        },
+        {
+          "title": "Eze (Igbo)",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Eze_(Igbo)",
+          "source_kind": "community",
+          "quote": "Eze is an Igbo word which means king.",
+          "supports": "Partial: links Eze to the Igbo people (PPL_IGBO) as the word for king / a royal title. Does not show it is a clan name or a surname."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0089",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[11].entries[18].provenance",
+      "claim": "name: Okoro; nameSystem: clan_name; peopleIds: PPL_IGBO; countryId: NGA; verificationLead: INEC voter register, NPC census, littérature sur l'oríkì yoruba et l'anthroponymie igbo; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NGA",
+        "name": "Okoro"
+      },
+      "candidates": [
+        {
+          "title": "Okoro",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Okoro",
+          "source_kind": "community",
+          "quote": "is a very common Igbo surname that means \"a man,\" equivalent to Mann as used in English-speaking countries.",
+          "supports": "Okoro is an Igbo name (surname) in Nigeria (PPL_IGBO). It does not support the clan_name classification: it is described as a common surname meaning 'a man'."
+        },
+        {
+          "title": "Okoro - Behind the Name",
+          "author": "Mike Campbell (Behind the Name)",
+          "year": null,
+          "url": "https://www.behindthename.com/name/okoro",
+          "source_kind": "linguistic_reference",
+          "quote": "Means \"boy, young man\" in Igbo.",
+          "supports": "Okoro is an Igbo name (usage: Igbo). It does not support clan_name: it is listed as a given name."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0090",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[11].entries[19].provenance",
+      "claim": "name: Nwosu; nameSystem: clan_name; peopleIds: PPL_IGBO; countryId: NGA; verificationLead: INEC voter register, NPC census, littérature sur l'oríkì yoruba et l'anthroponymie igbo; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NGA",
+        "name": "Nwosu"
+      },
+      "candidates": [
+        {
+          "title": "Nwosu",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Nwosu",
+          "source_kind": "community",
+          "quote": "Nwosu is a common Nigerian surname of Igbo origin meaning \"child dedicated to the gods\"",
+          "supports": "Supports name=Nwosu, people=Igbo, country=Nigeria. It calls the name a surname and does not support classifying it as a clan name."
+        },
+        {
+          "title": "Understanding the Osu caste system in Igboland: why do people bear surnames like Nwosu, Osuagwu, Osuigwe, Osuji",
+          "author": "Anayo M. Nwosu",
+          "year": null,
+          "url": "https://chidoonumah.com/understanding-the-osu-caste-system-in-igboland-why-do-people-bear-surnames-like-nwosu-osuagwu-osuigwe-osuji/",
+          "source_kind": "community",
+          "quote": "Nwosu is a short form of “Nwa osu agha” meaning the son of a great warrior or the chief army commander",
+          "supports": "Supports that Nwosu is an Igbo surname (from Nnewi and Igbo usage). It explains the name as a personal or honorific name, not a clan name, which goes against nameSystem=clan_name."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0091",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[11].entries[20].provenance",
+      "claim": "name: Obi; nameSystem: clan_name; peopleIds: PPL_IGBO; countryId: NGA; verificationLead: INEC voter register, NPC census, littérature sur l'oríkì yoruba et l'anthroponymie igbo; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NGA",
+        "name": "Obi"
+      },
+      "candidates": [
+        {
+          "title": "Obi (name)",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Obi_(name)",
+          "source_kind": "community",
+          "quote": "is a very common given name and surname of Igbo origin.",
+          "supports": "Obi is an Igbo-origin name, used as both a given name and a surname (supports peopleId PPL_IGBO and, implicitly, NGA). It does not support the 'clan_name' classification."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0092",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[11].entries[21].provenance",
+      "claim": "name: Chinedu; nameSystem: clan_name; peopleIds: PPL_IGBO; countryId: NGA; verificationLead: INEC voter register, NPC census, littérature sur l'oríkì yoruba et l'anthroponymie igbo; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "NGA",
+        "name": "Chinedu"
+      },
+      "candidates": [
+        {
+          "title": "Chinedu",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Chinedu",
+          "source_kind": "community",
+          "quote": "Chinedu is a common Igbo masculine given name and surname. It means “God leads”.",
+          "supports": "Supports that Chinedu is an Igbo name (PPL_IGBO). It describes Chinedu as a given name and surname, not a clan name, so it contradicts nameSystem: clan_name. It gives no country, so NGA is inferred."
+        },
+        {
+          "title": "Chinedu – Behind the Name",
+          "author": "Mike Campbell (Behind the Name)",
+          "year": null,
+          "url": "https://www.behindthename.com/name/chinedu",
+          "source_kind": "community",
+          "quote": "Means \"God is leading\" in Igbo.",
+          "supports": "Supports that Chinedu is an Igbo name with a theophoric meaning built on Chi. It does not support the clan_name classification."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0093",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[13].entries[7].provenance",
+      "claim": "name: Jalloh; nameSystem: clan_name; variants: Diallo; peopleIds: PPL_FULA; countryId: SLE; verificationLead: NEC Sierra Leone voter register, Statistics Sierra Leone, travaux sur l'onomastique krio; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "SLE",
+        "name": "Jalloh"
+      },
+      "candidates": [
+        {
+          "title": "Jalloh",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Jalloh",
+          "source_kind": "press",
+          "quote": "Jalloh is a surname which is a variant of the Fula name Diallo.",
+          "supports": "Jalloh is a variant of Diallo and is a Fula name (variants: Diallo; peopleIds: PPL_FULA). Does not establish the clan-name status or the Sierra Leone link."
+        },
+        {
+          "title": "Diallo",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Diallo",
+          "source_kind": "press",
+          "quote": "English transcriptions are Jalloh and Jallow",
+          "supports": "Jalloh is the English transcription of Diallo, which the same article calls 'one of several common surnames used among the Fula people'. Supports the variant and Fula link; does not mention Sierra Leone."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0094",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[14].entries[10].provenance",
+      "claim": "name: Soumaré; nameSystem: clan_name; variants: Soumare; peopleIds: PPL_SONINKE; countryId: MRT; verificationLead: ANRPTS (registre national), ONS Mauritanie, travaux sur les nisba hassaniyya; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MRT",
+        "name": "Soumaré"
+      },
+      "candidates": [
+        {
+          "title": "Guidimakha",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Guidimakha",
+          "source_kind": "community",
+          "quote": "It was founded by the legendary ancestor Maxam Malle Duho, ancestor of the Soumare clan.",
+          "supports": "Soumaré (Soumare/Sumare) as a Soninke clan name tied to Guidimakha, a Soninke chiefdom in what is now southern Mauritania and western Mali. The article cites Bathily 1989, pp. 81, 83. It does not confirm the name's use in Mauritania today."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0095",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[14].entries[11].provenance",
+      "claim": "name: Tandia; nameSystem: clan_name; peopleIds: PPL_SONINKE; countryId: MRT; verificationLead: ANRPTS (registre national), ONS Mauritanie, travaux sur les nisba hassaniyya; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "MRT",
+        "name": "Tandia"
+      },
+      "candidates": [
+        {
+          "title": "Tandia",
+          "author": null,
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Tandia",
+          "source_kind": "community",
+          "quote": "Tandia ou Tandiang' est un nom de famille Soninkés d'Afrique de l'ouest",
+          "supports": "Supports Tandia as a Soninke family name. It ties the name to Mauritania only indirectly: Mamadou Tandja's paternal family is described as coming from the village of Djeol, near Kaédi in the Gorgol region. This is a crowd-edited encyclopedia, so it is weak evidence."
+        },
+        {
+          "title": "Soninkés",
+          "author": null,
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Sonink%C3%A9s",
+          "source_kind": "community",
+          "quote": "Talla, Tandia ou Tandian, Tandjougora Tigana, Tounkara",
+          "supports": "Puts Tandia/Tandian on a list of patronyms said to show Soninke origin, which the article attributes to Makhtar Diouf of IFAN. I did not check the original IFAN publication, and this source does not mention Mauritania specifically."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0096",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[16].entries[9].provenance",
+      "claim": "name: Bello; nameSystem: non_hereditary_patronymic; peopleIds: PPL_FULA; countryId: CMR; verificationLead: ELECAM voter register, BUCREP (recensement), travaux sur l'anthroponymie beti et bamiléké; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "CMR",
+        "name": "Bello"
+      },
+      "candidates": [
+        {
+          "title": "Fula people",
+          "author": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Fula_people",
+          "source_kind": "community",
+          "quote": "Although most Fulbe of Nigeria, Niger and Cameroon use their father's given name as surnames ... there are some common Fulani last names such as Bello.",
+          "supports": "Fulbe (PPL_FULA) of Cameroon use the father's given name as surname (non-hereditary patronymic), and Bello is listed as a common Fulani surname. Encyclopedic source only; it does not tie Bello to Cameroon specifically and notes the name is also found among other ethnic groups in Nigeria."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0097",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[16].entries[18].provenance",
+      "claim": "name: Nyobè; nameSystem: clan_name; variants: Nyobe; peopleIds: PPL_BASSA_CAM; countryId: CMR; verificationLead: ELECAM voter register, BUCREP (recensement), travaux sur l'anthroponymie beti et bamiléké; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "CMR",
+        "name": "Nyobè"
+      },
+      "candidates": [
+        {
+          "title": "Ruben Um Nyobè",
+          "author": "Wikipédia contributors",
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Ruben_Um_Nyobè",
+          "source_kind": "community",
+          "quote": "de l'union de Nyobé Nsounga et de Ngo Um Nonos, tous deux paysans bassa.",
+          "supports": "Partial support only. It shows that Nyobé/Nyobè is a name carried by Bassa people in Cameroon: Um Nyobè's father, Nyobé Nsounga, was Bassa. It also notes that some authors write the name with a grave accent ('Nyobè'), which backs the Nyobe/Nyobè spelling variants. It does NOT say that Nyobè is a clan name (nameSystem: clan_name)."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0098",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[16].entries[19].provenance",
+      "claim": "name: Aboubakar; nameSystem: non_hereditary_patronymic; variants: Abubakar; peopleIds: PPL_FULA; countryId: CMR; verificationLead: ELECAM voter register, BUCREP (recensement), travaux sur l'anthroponymie beti et bamiléké; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "CMR",
+        "name": "Aboubakar"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0099",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[21].entries[0].provenance",
+      "claim": "name: Nkounkou; nameSystem: clan_name; peopleIds: PPL_KONGO; countryId: COG; verificationLead: CNEI Congo, INS Congo, travaux sur le kanda kongo; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "COG",
+        "name": "Nkounkou"
+      },
+      "candidates": [
+        {
+          "title": "Clans du peuple kongo",
+          "author": null,
+          "year": null,
+          "url": "https://fr.wikipedia.org/wiki/Clans_du_peuple_kongo",
+          "source_kind": "community",
+          "quote": "…lawu, mankunku, nkunku, nsongo (tsongo, mitsongo)…",
+          "supports": "Only partly supports the claim. This French Wikipedia page lists 'nkunku' among the Kongo clans that descend from Nsaku. It introduces the list as 'Voici une liste proposée par Ne Muanda Nsemi' and cites Ne Bitumba (Bundu dia Kongo), 'Les mvila une catégorie philosophique ?', 2004, published in Kinshasa. That supports Nkunku being a Kongo clan name. It does not use the spelling 'Nkounkou', and it does not tie the clan to the Republic of the Congo (COG). It is a weak source: an encyclopedia page drawing on a Bundu dia Kongo writer, not academic work."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0100",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[21].entries[1].provenance",
+      "claim": "name: Mabiala; nameSystem: clan_name; peopleIds: PPL_KONGO; countryId: COG; verificationLead: CNEI Congo, INS Congo, travaux sur le kanda kongo; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "COG",
+        "name": "Mabiala"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0101",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[21].entries[2].provenance",
+      "claim": "name: Makosso; nameSystem: clan_name; peopleIds: PPL_KONGO; countryId: COG; verificationLead: CNEI Congo, INS Congo, travaux sur le kanda kongo; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "COG",
+        "name": "Makosso"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
+    },
+    {
+      "id": "ASV-2026-10-09-0102",
+      "fiche": "patronymes/_candidates-by-country.json",
+      "path": "countries[21].entries[3].provenance",
+      "claim": "name: Ngoma; nameSystem: clan_name; peopleIds: PPL_KONGO; countryId: COG; verificationLead: CNEI Congo, INS Congo, travaux sur le kanda kongo; reviewStatus: candidate_pending_verification",
+      "original": {
+        "title": null,
+        "url": null
+      },
+      "owner": {
+        "countryId": "COG",
+        "name": "Ngoma"
+      },
+      "candidates": [
+        {
+          "title": "Les mères fondatrices de la nation Kongo",
+          "author": "Miatudila-Malonga",
+          "year": 2013,
+          "url": "https://www.mbokamosika.com/article-les-meres-fondatrices-de-la-nation-kongo-117216979.html",
+          "source_kind": "community",
+          "quote": "...voma, ki-hombi, ki-lombi, ngoma, ki-ngoma, lombo, ki-lombo...",
+          "supports": "Partial support. In its 'Groupe Mpanzu' section, the post lists ngoma as a Kongo clan name. It does not name the Republic of the Congo (COG) specifically."
+        },
+        {
+          "title": "La notion de « LUVILA » expliquée aux non Bakongo (reader comment)",
+          "author": "Samuel Malonga",
+          "year": 2013,
+          "url": "https://www.mbokamosika.com/article-la-notion-de-luvila-expliquee-aux-non-bakango-116956339.html",
+          "source_kind": "community",
+          "quote": "ngoma, kingoma, ngombe, kingombe, lombo",
+          "supports": "Partial support. A reader comment lists ngoma among the luvila (clans) descended from Mpanzu, citing Ne Muanda Nsemi. It does not name the Republic of the Congo specifically."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-10-09",
+      "model": "opus (claude -p)"
     }
   ]
 }

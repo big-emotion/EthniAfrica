@@ -105,6 +105,11 @@ export interface AiSourceVerification {
   tier?: SourceTier;
   decidedBy?: string;
   decidedAt?: string;
+  /**
+   * What a pre-reviewer saw on opening the candidates. Advice for the person
+   * who decides, never a decision: it sets no status and is never applied.
+   */
+  reviewNote?: string;
   proposedAt: string;
   model: string;
 }
@@ -459,6 +464,9 @@ export function validateVerification(
     );
   }
   if (isBlank(entry?.model)) errors.push(`${label}: model is empty`);
+  if (entry?.reviewNote !== undefined && isBlank(entry.reviewNote)) {
+    errors.push(`${label}: reviewNote is empty — drop it or write the note`);
+  }
 
   const candidates = Array.isArray(entry?.candidates) ? entry.candidates : null;
   if (!candidates) {

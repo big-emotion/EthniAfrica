@@ -156,6 +156,7 @@ identity and never trusts that path.
 | `tier`       | for `accepted`         | `official`, `referenced` or `unverified`, set by the reviewer — never by the model         |
 | `decidedBy`  | for every human status | The reviewer's account id — never an e-mail address, this repository is public             |
 | `decidedAt`  | for every human status | ISO date                                                                                   |
+| `reviewNote` | no                     | What a pre-reviewer found on opening the candidates; advice, never a decision              |
 | `proposedAt` | yes                    | ISO date of the search                                                                     |
 | `model`      | yes                    | The model that ran the search                                                              |
 
