@@ -127,6 +127,22 @@ describe("SourceChainSheet", () => {
     ]);
   });
 
+  // @req REQ-198
+  it("shows the legend it is given right after the sources (ETNI-2015)", () => {
+    renderSheet({
+      legend: (
+        <section data-testid="section-source-diamond-legend">clé</section>
+      ),
+    });
+    const order = screen
+      .getAllByTestId(/^section-/)
+      .map((el) => el.getAttribute("data-testid"));
+    expect(order.slice(1, 3)).toEqual([
+      "section-sources",
+      "section-source-diamond-legend",
+    ]);
+  });
+
   // The score, its explanation and the « not yet reviewed » disclaimer were
   // one standing-derived signal: the sheet lists the sources and stops there.
   // @req REQ-194

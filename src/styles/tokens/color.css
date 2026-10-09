@@ -144,6 +144,27 @@
   --afh-cat-terre-ink-night: #cd725e;
   --afh-cat-perv-ink-night: var(--afh-cat-perv);
 
+  /* The source diamond (ETNI-2015): one colour per family of source, from the
+     manifesto film's legend. The film's fills are the --afh-cat-* hexes, and
+     ocre, teal and perv land at 2.6:1 on the birth tile's wash, under the
+     3:1 a meaningful mark needs (WCAG 1.4.11). Each day fill is its film hue
+     taken darker, to the lightest step clearing 3.3:1 on every tile ground;
+     press and archive already clear it at the film's own value. The night
+     fills are the film hues as they are, archive and other lifted to 4:1.
+     Asserted in src/styles/__tests__/sourceDiamondCharter.test.ts. */
+  --afh-color-source-oral: #b1721b;
+  --afh-color-source-book: #2c8e7d;
+  --afh-color-source-press: #c4573f;
+  --afh-color-source-report: #6277e4;
+  --afh-color-source-archive: #7e603e;
+  --afh-color-source-other: #5b6b7b;
+  --afh-color-source-oral-night: #c9821f;
+  --afh-color-source-book-night: #33a390;
+  --afh-color-source-press-night: #cd725e;
+  --afh-color-source-report-night: #7a8ce8;
+  --afh-color-source-archive-night: #9d774d;
+  --afh-color-source-other-night: #6e8194;
+
   /* ─── L2 · Semantic aliases ────────────────────────────────── */
 
   /* Surface */
@@ -381,6 +402,14 @@
      every headline that wants an accented word. */
   --afh-display-accent: var(--afh-cat-ocre-ink);
 
+  /* The source diamond, by family (ETNI-2015). */
+  --afh-source-oral: var(--afh-color-source-oral);
+  --afh-source-book: var(--afh-color-source-book);
+  --afh-source-press: var(--afh-color-source-press);
+  --afh-source-report: var(--afh-color-source-report);
+  --afh-source-archive: var(--afh-color-source-archive);
+  --afh-source-other: var(--afh-color-source-other);
+
   /* Retired: --afh-gradient-spectrum, a five-hue ramp read off
      `public/africa.png` and reserved for the footer's brand qualifier. The
      qualifier now takes --afh-gradient-brand, the gradient the masthead sets
@@ -441,6 +470,13 @@
   --accent-foreground: #1a1208;
 
   --afh-display-accent: var(--afh-night-ocre-soft);
+
+  --afh-source-oral: var(--afh-color-source-oral-night);
+  --afh-source-book: var(--afh-color-source-book-night);
+  --afh-source-press: var(--afh-color-source-press-night);
+  --afh-source-report: var(--afh-color-source-report-night);
+  --afh-source-archive: var(--afh-color-source-archive-night);
+  --afh-source-other: var(--afh-color-source-other-night);
 
   /* Rebinding the tokens is not enough on its own: `color` is resolved
      once on body and then inherited, so text with no colour of its own

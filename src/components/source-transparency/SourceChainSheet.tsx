@@ -55,6 +55,12 @@ export type SourceChainSheetProps = {
   /** Anchor id for the source chip (e.g. "chip-paragraph-3"). */
   anchorId: string;
   /**
+   * A key to the mark that opened the sheet, shown after the sources. The
+   * source diamond passes the meaning of its colours (ETNI-2015); the other
+   * openers have no colour to explain and pass nothing.
+   */
+  legend?: React.ReactNode;
+  /**
    * Cloudflare Turnstile public site key, threaded down from a Server
    * Component. Required together with `assertion.id` to enable the live
    * FlagTarget wiring — otherwise the disabled placeholder is kept.
@@ -392,6 +398,7 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
   openFlagCount = 0,
   revisionUrl,
   anchorId,
+  legend,
 }) => {
   const variant = useSheetVariant();
   const reducedMotion = usePrefersReducedMotion();
@@ -501,6 +508,8 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
             <SourceList language={language} sources={sources} />
           )}
         </section>
+
+        {legend}
 
         {/* 4. Revision link (conditional) */}
         {revisionUrl && safeUrl(revisionUrl) ? (
