@@ -5562,6 +5562,108 @@ const options: swaggerJsdoc.Options = {
             },
           ],
         },
+        PlaceSummaryV2: {
+          type: "object",
+          description: "One row of the place list (REQ-196).",
+          properties: {
+            id: { type: "string", example: "LOC_YAMOUSSOUKRO" },
+            placeType: {
+              type: "string",
+              enum: ["ville", "region", "site-historique", "autre"],
+            },
+            nameMain: { type: "string", example: "Yamoussoukro" },
+            countryId: { type: "string", example: "CIV" },
+          },
+          required: ["id", "placeType", "nameMain", "countryId"],
+        },
+        PlaceV2: {
+          type: "object",
+          description:
+            "A place fiche (REQ-196). `names` lists every name the place answers to — its filed name, then each nameText of its nameHistory — with no form promoted over another; `nameHistory` tells where each comes from.",
+          properties: {
+            id: { type: "string", example: "LOC_YAMOUSSOUKRO" },
+            placeType: {
+              type: "string",
+              enum: ["ville", "region", "site-historique", "autre"],
+            },
+            nameMain: { type: "string", example: "Yamoussoukro" },
+            names: {
+              type: "array",
+              items: { type: "string" },
+              example: ["Yamoussoukro", "N'Gokro"],
+            },
+            summary: { type: "string" },
+            country: {
+              type: "object",
+              properties: {
+                id: { type: "string", example: "CIV" },
+                name: { type: ["string", "null"] },
+              },
+              required: ["id", "name"],
+            },
+            associatedPeoples: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  id: { type: "string" },
+                  name: { type: ["string", "null"] },
+                  relation: { type: ["string", "null"] },
+                },
+                required: ["id", "name", "relation"],
+              },
+            },
+            gaps: { type: "array", items: { type: "object" } },
+            sources: { type: "array", items: { type: "object" } },
+            nameHistory: {
+              oneOf: [
+                { $ref: "#/components/schemas/NameHistoryV2" },
+                { type: "null" },
+              ],
+            },
+          },
+          required: [
+            "id",
+            "placeType",
+            "nameMain",
+            "names",
+            "summary",
+            "country",
+            "associatedPeoples",
+            "gaps",
+            "sources",
+            "nameHistory",
+          ],
+        },
+        PlaceDetailEnvelope: {
+          type: "object",
+          properties: {
+            data: { $ref: "#/components/schemas/PlaceV2" },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
+        },
+        PlaceListEnvelope: {
+          type: "object",
+          properties: {
+            data: {
+              type: "array",
+              items: { $ref: "#/components/schemas/PlaceSummaryV2" },
+            },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
+        },
       },
     },
     // The empty requirement is OpenAPI for "or no authentication": the key
