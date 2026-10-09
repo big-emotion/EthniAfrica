@@ -21,7 +21,7 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
 /**
  * NEVER raise it: rewrite the new sentence as a hypothesis instead.
  *
- * 289 flagged on 2026-10-09; 275 fiches rewritten to the conditional the same
+ * 289 flagged on 2026-10-09; 273 fiches rewritten to the conditional the same
  * day, including those an accent-boundary fix then caught. The 19 left were
  * each read and kept: they state that an origin is unknown or denied, give a spelling's or a group's
  * provenance, describe a Bantu prefix, or are already attributed.
