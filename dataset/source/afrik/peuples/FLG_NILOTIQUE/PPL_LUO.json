@@ -118,5 +118,40 @@
         "tier": "official"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Joluo est celui que ce peuple se donne. Son histoire est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Joluo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "luo",
+        "namedBy": null,
+        "periodLabel": "Usage contemporain, auto-désignation (Jaluo au singulier)",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain, auto-désignation (Jaluo au singulier)"
+            },
+            "statement": "En anglais kenyan courant, « Luo » désigne exclusivement ce peuple — aujourd'hui le quatrième groupe ethnique du Kenya (recensement KNBS 2019 : 5 066 966 personnes, 10,6 % de la population).",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ethnologue: Languages of the World — Dholuo (luo)",
+                "author": "SIL International",
+                "year": 2026,
+                "url": "https://www.ethnologue.com/language/luo/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

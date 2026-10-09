@@ -122,13 +122,49 @@
       {
         "title": "UNESCO — Pays Dogon (patrimoine mondial)",
         "url": "https://whc.unesco.org/fr/list/516/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Paul R. Davis, introduction à ReCollecting Dogon, The Menil Collection, Houston, 2017",
         "url": "https://publications.menil.org/recollecting-dogon/introduction/index.html",
         "tier": "referenced",
         "notes": "Publication d'un musee. Donne Habe ou Habbe (singulier Kado) comme le nom sous lequel les Dogon etaient connus jusqu'aux annees 1930, emprunte par l'administration coloniale aux Peuls islamises, et rappelle que des specialistes discutent l'usage de Dogon comme categorie unificatrice. Renvoie a Jacky Bouju, « Qu'est-ce que l'ethnie dogon ? », Cahiers des Sciences Humaines, 31-2, 1995. Consulte le 25 septembre 2026."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dogon est celui que ce peuple se donne. Son histoire est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Dogon",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Terme universellement utilisé en français, en anglais et par les institutions maliennes ; c'est aussi le terme que la communauté emploie pour se désigner elle-même. « Dogon » regroupe une douzaine de langues distinctes et non mutuellement intelligibles : l'unité qu'il nomme est culturelle et territoriale, pas strictement linguistique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "UNESCO — Pays Dogon (patrimoine mondial)",
+                "author": "UNESCO World Heritage Centre",
+                "year": 1989,
+                "url": "https://whc.unesco.org/fr/list/516/",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Année d'inscription du bien au patrimoine mondial ; atteste l'usage officiel international du nom « Dogon »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

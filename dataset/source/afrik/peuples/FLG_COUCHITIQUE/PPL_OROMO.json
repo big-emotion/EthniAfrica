@@ -113,7 +113,8 @@
       {
         "title": "SIL Ethnologue — Oromo (orm)",
         "url": "https://www.ethnologue.com/language/orm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Mekuria Bulcha — Oromia Irreecha Festival, Advocacy for Oromia, 2015",
@@ -124,6 +125,172 @@
         "title": "Joshua Project — Oromo, Borana in Ethiopia",
         "url": "https://joshuaproject.net",
         "tier": "unverified"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Oromoo est celui que ce peuple se donne. On le connaît aussi sous le nom Galla. Leur histoire est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Oromoo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "orm",
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Oromo est l'appellation officielle dans tous les contextes éthiopiens et kényans ; la langue est appelée Afaan Oromoo et la région fédérale Oromia.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "SIL Ethnologue — Oromo (orm)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/orm/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Documente l'autonyme du peuple et de la langue."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Galla",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Nom que leurs voisins et les dirigeants éthiopiens leur donnaient ; il est jugé très insultant.",
+        "periodLabel": "Attesté depuis le XVIe siècle jusqu'à son abandon officiel en 1974",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Attesté depuis le XVIe siècle jusqu'à son abandon officiel en 1974"
+            },
+            "statement": "Étymologie incertaine ; l'Oxford English Dictionary avance une origine possible en amharique ou dans l'arabe ghalīẓ, « rude, grossier », sans trancher.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "EthnoMed — Oromo Cultural Profile",
+                "author": "Susan Omura, MD; Oromo Community Organization — Harborview Medical Center / University of Washington",
+                "year": 2003,
+                "url": "https://ethnomed.org/culture/oromo/",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Profil culturel institutionnel (rédigé 1994, dernière révision 2003) : « \"Galla\" is a derogatory term used in the past for Oromos by the ruling groups in Ethiopia. »"
+              },
+              {
+                "title": "Oxford English Dictionary — \"Galla, n. & adj.\"",
+                "author": "Oxford University Press",
+                "year": 2024,
+                "url": "https://www.oed.com/dictionary/galla_n?tl=true",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Étymologie incertaine (amharique ou arabe ghalīẓ) ; confirme que le terme n'est pas une autodésignation oromo."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Page 777 : les Oromo, jusque-là habituellement connus sous le nom de Galla, comme les appelaient leurs voisins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "XIXe siècle – 1974"
+            },
+            "statement": "Terme jugé profondément insultant par les Oromo eux-mêmes ; employé par les groupes dominants éthiopiens pour les désigner depuis l'extérieur, jamais comme autodésignation. Le remplacement officiel du « misnomer Galla » par l'autonyme Oromo suit directement la révolution de 1974.",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Groupes dominants de l'Éthiopie impériale (administration amharique), repris ensuite par les colonisateurs et voyageurs européens",
+                "role": "impose ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "EthnoMed — Oromo Cultural Profile",
+                "author": "Susan Omura, MD; Oromo Community Organization — Harborview Medical Center / University of Washington",
+                "year": 2003,
+                "url": "https://ethnomed.org/culture/oromo/",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Profil culturel institutionnel (rédigé 1994, dernière révision 2003) : « \"Galla\" is a derogatory term used in the past for Oromos by the ruling groups in Ethiopia. »"
+              },
+              {
+                "title": "Oxford English Dictionary — \"Galla, n. & adj.\"",
+                "author": "Oxford University Press",
+                "year": 2024,
+                "url": "https://www.oed.com/dictionary/galla_n?tl=true",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Étymologie incertaine (amharique ou arabe ghalīẓ) ; confirme que le terme n'est pas une autodésignation oromo."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Page 777 : les Oromo, jusque-là habituellement connus sous le nom de Galla, comme les appelaient leurs voisins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Attesté depuis le XVIe siècle jusqu'à son abandon officiel en 1974"
+            },
+            "statement": "Considéré offensant et hors d'usage dans tout contexte officiel, académique ou médiatique contemporain ; « Oromo » est aujourd'hui la seule appellation employée.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "EthnoMed — Oromo Cultural Profile",
+                "author": "Susan Omura, MD; Oromo Community Organization — Harborview Medical Center / University of Washington",
+                "year": 2003,
+                "url": "https://ethnomed.org/culture/oromo/",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Profil culturel institutionnel (rédigé 1994, dernière révision 2003) : « \"Galla\" is a derogatory term used in the past for Oromos by the ruling groups in Ethiopia. »"
+              },
+              {
+                "title": "Oxford English Dictionary — \"Galla, n. & adj.\"",
+                "author": "Oxford University Press",
+                "year": 2024,
+                "url": "https://www.oed.com/dictionary/galla_n?tl=true",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Étymologie incertaine (amharique ou arabe ghalīẓ) ; confirme que le terme n'est pas une autodésignation oromo."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Page 777 : les Oromo, jusque-là habituellement connus sous le nom de Galla, comme les appelaient leurs voisins."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

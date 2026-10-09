@@ -150,5 +150,40 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Wolof est celui que ce peuple se donne. Son histoire est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Wolof",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "wol",
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Terme universellement adopté aujourd'hui en français et en anglais, aussi bien par la communauté elle-même que par l'extérieur.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "SIL Ethnologue — Wolof (wol)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/wol/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Source également citée par la fiche du peuple Wolof."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
