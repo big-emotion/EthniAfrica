@@ -39,7 +39,7 @@ export function SourceRow({ source, language = "fr" }: SourceRowProps) {
     <Link
       href={getSourceRoute(language, source.id)}
       prefetch={false}
-      className="block border-b border-afh-border px-1 py-4 focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
+      className="block border-b border-afh-border px-1 py-4 focus-visible:outline-none focus-visible:shadow-afh-focus"
     >
       <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
         {source.sourceKind && (

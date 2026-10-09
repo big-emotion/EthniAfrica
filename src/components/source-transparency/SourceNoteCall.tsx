@@ -51,7 +51,7 @@ export function SourceNoteCall({
         className={cn(
           "relative inline-block rounded-none px-0.5 text-afh-eyebrow tabular-nums",
           "text-afh-text-soft underline-offset-2 hover:underline",
-          "focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]",
+          "focus-visible:outline-none focus-visible:shadow-afh-focus",
           // The target is grown with an absolutely positioned overlay rather
           // than with padding: padding on an inline element inside prose grows
           // the line box, and a paragraph whose leading jumps at every citation

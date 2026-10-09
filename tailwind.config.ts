@@ -58,6 +58,9 @@ export default {
         "afh-4": "var(--afh-elev-4)",
         "afh-5": "var(--afh-elev-5)",
         "afh-warm": "var(--afh-elev-warm)",
+        // A named key, never `shadow-[var(--afh-ring-focus)]`: Tailwind reads
+        // an untyped arbitrary var() on `shadow-` as a colour and draws nothing.
+        "afh-focus": "var(--afh-ring-focus)",
       },
       transitionDuration: {
         "afh-fast": "120ms",

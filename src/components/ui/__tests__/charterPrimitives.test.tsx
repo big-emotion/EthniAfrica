@@ -104,7 +104,7 @@ describe("charter primitive tokenization (ETNI-799 · FR104 §4-§5)", () => {
       const source = readPrimitiveSource(file);
       // Either inline, or via the shared CHARTER_FOCUS_RING util (ETNI-837 scope).
       expect(source).toMatch(
-        /focus-visible:shadow-\[var\(--afh-ring-focus\)\]|CHARTER_FOCUS_RING/
+        /focus-visible:shadow-afh-focus|CHARTER_FOCUS_RING/
       );
     });
   });
@@ -178,7 +178,7 @@ describe("charter primitive tokenization (ETNI-799 · FR104 §4-§5)", () => {
         </RadioGroup>
       );
       expect(screen.getByRole("radio").className).toMatch(
-        /focus-visible:shadow-\[var\(--afh-ring-focus\)\]/
+        /focus-visible:shadow-afh-focus/
       );
     });
   });

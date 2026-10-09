@@ -55,13 +55,6 @@
   cursor: pointer;
 }
 
-/* Stated here rather than through CHARTER_FOCUS_RING alone: measured in the
-   browser, that utility left the focused diamond with no ring at all. */
-.afh-source-diamond:focus-visible {
-  outline: none;
-  box-shadow: var(--afh-ring-focus);
-}
-
 .afh-source-diamond-mark {
   display: inline-block;
   flex: none;

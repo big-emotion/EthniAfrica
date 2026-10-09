@@ -167,3 +167,65 @@ test("@smoke « Tout » leaves the timeline for the answer", async ({ page }) =>
 
   await expect(page.locator("[data-name-timeline]")).toHaveCount(0);
 });
+
+// The shared focus utility compiled to a shadow colour and drew no ring, so a
+// keyboard reader lost their place on every control below. The ring is a 2px
+// band outside a 2px gap of the ground, in day and in night; the bands are the
+// --afh-focus-ring inks, 3:1 or more on their ground.
+// @req REQ-047
+test("@smoke @nfr-a11y every representative control shows its focus ring", async ({
+  page,
+}) => {
+  await page.goto(`${getLocalizedRoute(LOCALE, "search")}?q=lingala`);
+  const timeline = page.locator("[data-name-timeline]");
+  await expect(timeline).toBeVisible();
+
+  const controls = {
+    "lens tab": page.getByRole("button", {
+      name: searchFeedCopy.fr.filters.timeline,
+      exact: true,
+    }),
+    "timeline name chip": page.getByRole("button", { name: "Mangala" }),
+    "source diamond": timeline
+      .getByRole("button", { name: /^Sources? : .* — voir les sources$/ })
+      .first(),
+    "lens « Tout »": page.getByRole("button", {
+      name: searchFeedCopy.fr.filters.all,
+    }),
+  };
+
+  // :focus-visible only follows a keyboard: one Tab first, then focus().
+  await page.keyboard.press("Tab");
+  const ringsIn = async (theme: "day" | "night") => {
+    await page.evaluate(
+      (night) => document.documentElement.classList.toggle("dark", night),
+      theme === "night"
+    );
+    const rings: Record<string, string> = {};
+    for (const [name, control] of Object.entries(controls)) {
+      await control.focus();
+      rings[name] = await control.evaluate(
+        (el) => getComputedStyle(el).boxShadow
+      );
+    }
+    return rings;
+  };
+
+  const band = (rgb: string) =>
+    new RegExp(`0px 0px 0px 2px, rgb\\(${rgb}\\) 0px 0px 0px 4px$`);
+  for (const [name, ring] of Object.entries(await ringsIn("day"))) {
+    expect(ring, name).toMatch(band("182, 78, 39"));
+  }
+  for (const [name, ring] of Object.entries(await ringsIn("night"))) {
+    expect(ring, name).toMatch(band("205, 114, 94"));
+  }
+
+  await page.evaluate(() => document.documentElement.classList.remove("dark"));
+  const results = await new AxeBuilder({ page })
+    .include("main")
+    .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
+    .analyze();
+  expect(
+    results.violations.map((v) => `[${v.impact}] ${v.id}: ${v.help}`)
+  ).toEqual([]);
+});
