@@ -160,8 +160,8 @@ describe("the noms/ records folded into their people fiches", () => {
 
   // @req REQ-196
   it("opens each summary with the name the people gives itself", () => {
-    expect(ficheNameHistory("PPL_IGBO").summary).toBe(
-      "Le nom Ndi Igbo est celui que ce peuple se donne. On le connaît aussi sous les noms Ibo et Union Ibo. Leur histoire est présentée plus bas."
+    expect(ficheNameHistory("PPL_HERERO").summary).toBe(
+      "Le nom Ovaherero est celui que ce peuple se donne. On le connaît aussi sous le nom Herero. Leur histoire est présentée plus bas."
     );
     expect(ficheNameHistory("PPL_WOLOF").summary).toBe(
       "Le nom Wolof est celui que ce peuple se donne. Son histoire est présentée plus bas."

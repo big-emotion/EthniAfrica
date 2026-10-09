@@ -1,7 +1,8 @@
 /**
  * The search sheet reads a people's names from its nameHistory, then from the
  * name index its appellations add (REQ-196, ARCH-028); the fold of noms/ into
- * the fiches must leave what it shows unchanged.
+ * the fiches must leave what it shows unchanged, apart from the names and
+ * sources a later enrichment adds after the record's own.
  */
 import { describe, expect, it, vi } from "vitest";
 
@@ -15,6 +16,7 @@ import {
 import type { NameRecordDossier } from "@/types/names";
 import {
   FOLDED_RECORD_FILES,
+  enrichedLikeFiche,
   ficheNameHistory,
   foldedRecord,
 } from "@/lib/afrik/__tests__/fixtures/foldedNameRecords";
@@ -85,7 +87,8 @@ describe("search naming — a people's nameHistory", () => {
   it.each(FOLDED_RECORD_FILES)(
     "%s: the folded history shows each name its record held, citing the record's sources",
     async (file) => {
-      const dossier = foldedRecord(file);
+      const folded = foldedRecord(file);
+      const dossier = enrichedLikeFiche(folded, ficheNameHistory(folded.id));
       const key = searchNamingKey("people", dossier.id);
 
       const fromHistory = (

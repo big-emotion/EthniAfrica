@@ -157,5 +157,294 @@
         "tier": "official"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Zarma désigne un peuple de l'ouest du Niger, qui se nomme lui-même ainsi. D'autres noms existent : Djerma et Zabarma. Les sources que nous avons lues ne disent pas d'où vient le nom Zarma ; nous présentons plus bas ses formes et leur histoire.",
+    "names": [
+      {
+        "nameText": "Zarma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dje",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple de l'ouest du Niger ; Zarmaganda veut dire « terre des Zarma ».",
+        "usedIn": ["dje"],
+        "periodLabel": "Écrit depuis 1853",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Zarma désigne un peuple de l'ouest du Niger, autour de Niamey et de Dosso, et sa langue, l'une des langues songhaï. Les sources que nous avons lues ne disent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Zarma people — Wikipedia (en anglais)",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Zarma_people",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Consulté le 9 octobre 2026 : « Zarma is the term used by the Zarma people themselves », avec la liste des autres formes, dont Zerma, Zaberma, Zabarma et Djerma."
+              },
+              {
+                "title": "Zarma language — Wikipedia (en anglais)",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Zarma_language",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Consulté le 9 octobre 2026 : « In earlier decades, Zarma was rendered Djerma, using French orthography, but it is usually now 'Zarma', the form that the Zarma people use in their language. » Ce passage ne cite pas de source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Zarma est la forme que les Zarma emploient dans leur langue. Ils appellent Zarmaganda, « terre des Zarma », leur terre d'élection, et Zarmataray, « pays des Zarma », les terres où ils se sont étendus, selon Sandra Bornand.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Boûbou Ardo Galo, une interprétation songhay-zarma",
+                "author": "Sandra Bornand",
+                "year": 2017,
+                "url": "https://journals.openedition.org/epopee/1751",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 6",
+                "notes": "Projet Épopée, n° 3, 2017, lu en ligne le 9 octobre 2026. Note 6 : « le Zarmaganda (litt. « terre des Zarma ») est la terre d'élection, le Zarmataray (litt. « pays des Zarma, être/condition de Zarma ») est la terre d'expansion »."
+              },
+              {
+                "title": "Zarma language — Wikipedia (en anglais)",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Zarma_language",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Consulté le 9 octobre 2026 : « In earlier decades, Zarma was rendered Djerma, using French orthography, but it is usually now 'Zarma', the form that the Zarma people use in their language. » Ce passage ne cite pas de source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "Thèse publiée en 1960"
+            },
+            "formAsWritten": "Zerma",
+            "statement": "Le nom Zarma est écrit « Zerma » par Jean Rouch, qui parle des « Songhay et Zerma » de la région de Niamey.",
+            "actors": [
+              {
+                "name": "Jean Rouch",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai sur la religion songhay",
+                "author": "Jean Rouch",
+                "year": 1960,
+                "url": "https://archive.org/details/IA41553815_0029",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, Paris, Presses universitaires de France, 1960. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Avant-propos, p. 3 : « les croyances et les rites non islamiques des Songhay et Zerma ».",
+                "page": "p. 3"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1858,
+              "label": "Voyage de 1853 (récit publié en 1858)"
+            },
+            "birth": true,
+            "formAsWritten": "Zaberma, or Zerma",
+            "statement": "Le nom Zarma est écrit « Zaberma, or Zerma » par Heinrich Barth, qui le donne à une province bordée par le Niger. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand le peuple l'emploie.",
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 4",
+                "author": "Heinrich Barth",
+                "year": 1858,
+                "url": "https://archive.org/details/travelsdiscoveri04bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 238 et p. 547",
+                "notes": "Londres, Longman, 1858 ; récit du voyage de 1849-1855. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 238, en juin 1853 : « Dáudu, the young rebellious chieftain of Zaberma, or Zerma » ; page 547, en annexe : « The province of Zaberma, or Zerma (Jerma) is bordered towards the south-west by the Niger »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Djerma",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "L'ancienne écriture française du nom Zarma ; on écrit plutôt Zarma aujourd'hui.",
+        "periodLabel": "XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage passé"
+            },
+            "statement": "Le nom Djerma est l'écriture française du nom Zarma, employée pendant des décennies ; on écrit plutôt Zarma aujourd'hui, la forme que les Zarma emploient dans leur langue, selon l'article de Wikipédia sur la langue zarma.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Zarma language — Wikipedia (en anglais)",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Zarma_language",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Consulté le 9 octobre 2026 : « In earlier decades, Zarma was rendered Djerma, using French orthography, but it is usually now 'Zarma', the form that the Zarma people use in their language. » Ce passage ne cite pas de source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1946,
+              "to": 1946,
+              "label": "1946"
+            },
+            "birth": true,
+            "formAsWritten": "Djerma",
+            "statement": "Le nom Djerma figure dans le titre d'un travail de René Dutel paru en 1946, « L'animisme des populations islamisées du Moyen Niger (Songhay et Djerma) », que cite Jean Rouch. C'est la plus ancienne trace de cette écriture que le projet connaît ; Heinrich Barth écrivait déjà Jerma en 1858.",
+            "actors": [
+              {
+                "name": "René Dutel",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai sur la religion songhay",
+                "author": "Jean Rouch",
+                "year": 1960,
+                "url": "https://archive.org/details/IA41553815_0029",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, Paris, Presses universitaires de France, 1960. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 3, note 1 : « Dutel (R.), L'animisme des populations islamisées du Moyen Niger (Songhay et Djerma), C.H.E.A.M., Paris, 1946 ». Nous n'avons pas lu ce travail lui-même.",
+                "page": "p. 3, note 1"
+              },
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 4",
+                "author": "Heinrich Barth",
+                "year": 1858,
+                "url": "https://archive.org/details/travelsdiscoveri04bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 547",
+                "notes": "Londres, Longman, 1858 ; récit du voyage de 1849-1855. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 238, en juin 1853 : « Dáudu, the young rebellious chieftain of Zaberma, or Zerma » ; page 547, en annexe : « The province of Zaberma, or Zerma (Jerma) is bordered towards the south-west by the Niger »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zabarma",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "hau",
+        "namedBy": null,
+        "shortLine": "Un nom venu du haoussa, sous lequel on connaît au Ghana les migrants zarma de l'ouest du Niger.",
+        "usedIn": ["hau"],
+        "periodLabel": "Écrit depuis 1853",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Zabarma, écrit aussi Zabrama, désigne au Ghana les migrants venus de l'ouest du Niger et leurs descendants. C'est un mot haoussa, la langue d'échange des musulmans sur la côte d'Afrique de l'Ouest ; parmi ceux qui parlent songhaï, il distingue les gens de l'ouest du Niger des « gens de Gao », selon Monique Bertrand.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Migration internationale et métropolisation en Afrique de l'Ouest : le cas des Zabrama du Grand Accra, Ghana",
+                "author": "Monique Bertrand",
+                "year": 2010,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers20-12/010052153.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 307, note 1",
+                "notes": "Espace, populations, sociétés, 2010/2-3, p. 307-320, lu en texte intégral le 9 octobre 2026. Note 1 : « Le mot est Hausa, lingua franca des musulmans sur la côte ouest-africaine. Parmi les locuteurs de la même langue Songhaï, il démarque les ressortissants de l'ouest du Niger des « gens de Gao » provenant du nord du Mali. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "Article de 2010"
+            },
+            "formAsWritten": "Zabrama",
+            "statement": "Le nom Zabarma est écrit « Zabrama » par Monique Bertrand, qui étudie les migrants nigériens du Grand Accra ; un quartier d'Accra s'y appelle Zabrama Line.",
+            "actors": [
+              {
+                "name": "Monique Bertrand",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Migration internationale et métropolisation en Afrique de l'Ouest : le cas des Zabrama du Grand Accra, Ghana",
+                "author": "Monique Bertrand",
+                "year": 2010,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers20-12/010052153.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 307 et p. 308",
+                "notes": "Espace, populations, sociétés, 2010/2-3, p. 307-320, lu en texte intégral le 9 octobre 2026. Note 1 : « Le mot est Hausa, lingua franca des musulmans sur la côte ouest-africaine. Parmi les locuteurs de la même langue Songhaï, il démarque les ressortissants de l'ouest du Niger des « gens de Gao » provenant du nord du Mali. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1858,
+              "label": "Voyage de 1853 (récit publié en 1858)"
+            },
+            "birth": true,
+            "formAsWritten": "Zaberma",
+            "statement": "Le nom Zabarma est écrit « Zaberma » par Heinrich Barth, pour la province que l'on appelle aussi, écrit-il, Zerma. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 4",
+                "author": "Heinrich Barth",
+                "year": 1858,
+                "url": "https://archive.org/details/travelsdiscoveri04bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 238 et p. 547",
+                "notes": "Londres, Longman, 1858 ; récit du voyage de 1849-1855. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 238, en juin 1853 : « Dáudu, the young rebellious chieftain of Zaberma, or Zerma » ; page 547, en annexe : « The province of Zaberma, or Zerma (Jerma) is bordered towards the south-west by the Niger »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

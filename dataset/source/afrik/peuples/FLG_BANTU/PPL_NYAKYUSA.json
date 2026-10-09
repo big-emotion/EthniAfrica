@@ -140,5 +140,458 @@
         "tier": "official"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nyakyusa désigne un peuple du sud-ouest de la Tanzanie, au nord du lac Nyasa, qui se nomme lui-même Nyakyusa ; en swahili, on dit Wanyakyusa. D'autres noms existent : Konde, employé par les premiers Européens, et Ngonde, le nom de leurs proches parents du Malawi. Les sources consultées ne donnent qu'une explication de l'origine du nom Nyakyusa ; nous la présentons plus bas, avec l'histoire des autres noms.",
+    "names": [
+      {
+        "nameText": "Nyakyusa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nyy",
+        "namedBy": null,
+        "shortLine": "Le nom d'une chefferie du bord du lac Nyasa, étendu au XXe siècle à tout le peuple et à sa langue.",
+        "usedIn": ["nyy", "swh", "eng", "fra"],
+        "periodLabel": "Écrit dès 1894 ; nom de tout le peuple depuis les années 1930",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "aspect": "meaning",
+            "statement": "Le nom Nyakyusa désigne aujourd'hui le peuple de la vallée qui descend du mont Rungwe vers le lac Nyasa, en Tanzanie, et sa langue. Il a d'abord désigné un groupe plus petit. Les sources que nous avons lues ne donnent qu'une explication de son origine, présentée plus bas.",
+            "sources": [
+              {
+                "title": "The verb in Nyakyusa: A focus on tense, aspect and modality. Second revised edition",
+                "author": "Bastian Persohn",
+                "year": 2020,
+                "url": "https://archive.org/details/oapen-20.500.12657-46943",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2-3",
+                "notes": "Berlin, Language Science Press, collection Contemporary African Linguistics 2, sous licence libre. Lu dans la copie d'Internet Archive, section 1.2.2 « On the name Nyakyusa », consulté le 9 octobre 2026."
+              },
+              {
+                "title": "For Men and Elders: Change in the Relations of Generations and of Men and Women among the Nyakyusa-Ngonde People, 1875-1971",
+                "author": "Monica Wilson",
+                "year": 1977,
+                "url": "https://archive.org/details/monica-hunter-wilson-for-men-and-elders-change-in-relations-generations-of-men-w",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14",
+                "notes": "Londres, International African Institute. Lu dans la copie d'Internet Archive, introduction, consulté le 9 octobre 2026. L'autrice explique comment le nom s'est étendu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1934,
+              "to": 1938,
+              "label": "1934-1938"
+            },
+            "statement": "Le nom Nyakyusa s'applique alors surtout aux chefs de la plaine du lac, au nord de la rivière Songwe, et à ceux de Masoko. En 1938, il englobe souvent aussi les gens de Selya et, dans la conversation, les Kukwe des collines, selon Monica Wilson. Un Kukwe parti travailler aux mines d'or de la Lupa se dit Nyakyusa ; chez lui, à Tukuyu, il se dit Kukwe.",
+            "sources": [
+              {
+                "title": "For Men and Elders: Change in the Relations of Generations and of Men and Women among the Nyakyusa-Ngonde People, 1875-1971",
+                "author": "Monica Wilson",
+                "year": 1977,
+                "url": "https://archive.org/details/monica-hunter-wilson-for-men-and-elders-change-in-relations-generations-of-men-w",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14",
+                "notes": "Londres, International African Institute. Lu dans la copie d'Internet Archive, introduction, consulté le 9 octobre 2026. Monica Wilson a enquêté sur place de 1934 à 1938, puis en 1955."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1937,
+              "label": "1936-1937"
+            },
+            "statement": "Le nom Nyakyusa s'impose dans les livres avec les travaux de Godfrey et Monica Wilson, qui l'emploient pour distinguer les chefferies au nord de la Songwe du royaume de Ngonde au sud, selon Bastian Persohn. Ensuite, les linguistes qui décrivent les parlers de Tanzanie disent tous Nyakyusa.",
+            "sources": [
+              {
+                "title": "The verb in Nyakyusa: A focus on tense, aspect and modality. Second revised edition",
+                "author": "Bastian Persohn",
+                "year": 2020,
+                "url": "https://archive.org/details/oapen-20.500.12657-46943",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Berlin, Language Science Press, collection Contemporary African Linguistics 2, sous licence libre. Lu dans la copie d'Internet Archive, section 1.2.2 « On the name Nyakyusa », consulté le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "1959"
+            },
+            "formAsWritten": "BaNyakyusa",
+            "statement": "Le nom Nyakyusa est écrit « BaNyakyusa », avec le préfixe des noms de peuple, par Monica Wilson, qui leur dédie son livre.",
+            "actors": [
+              {
+                "name": "Monica Wilson",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Communal Rituals of the Nyakyusa",
+                "author": "Monica Wilson",
+                "year": 1959,
+                "url": "https://archive.org/details/monica-hunter-wilson-communal-rituals-of-the-nyakyusa-international-african-inst",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "dédicace",
+                "notes": "Londres, Oxford University Press pour l'International African Institute. Lu dans la copie d'Internet Archive, consulté le 9 octobre 2026. Le livre est dédié « To the BaNyakyusa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "1925"
+            },
+            "formAsWritten": "Nyakyusa",
+            "statement": "Le nom Nyakyusa est celui que se donnent les habitants des hauteurs de Tukuyu, à côté de plusieurs noms locaux, selon le missionnaire D. R. Mackenzie. Lui-même appelle tout le peuple Konde.",
+            "actors": [
+              {
+                "name": "D. R. Mackenzie",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Spirit-Ridden Konde",
+                "author": "D. R. Mackenzie",
+                "year": 1925,
+                "url": "https://archive.org/details/spiritriddenkond00mack_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18",
+                "notes": "Londres, Seeley, Service and Co. Récit d'un missionnaire écossais qui dit avoir vécu vingt-quatre ans dans la région. Lu dans la numérisation d'Internet Archive, chapitre I, consulté le 9 octobre 2026. Il écrit : « In this region the people call themselves Nyakyusa, with a number of local names »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "birth": true,
+            "formAsWritten": "Iki Nyakyusa",
+            "statement": "Le nom Nyakyusa apparaît par écrit dans le sous-titre d'une liste de mots publiée par le missionnaire Alexander Merensky, sous la forme Iki Nyakyusa, le nom de la langue, selon Bastian Persohn. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple et sa langue existaient déjà avant lui.",
+            "actors": [
+              {
+                "name": "Alexander Merensky",
+                "role": "auteur de la liste de mots"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The verb in Nyakyusa: A focus on tense, aspect and modality. Second revised edition",
+                "author": "Bastian Persohn",
+                "year": 2020,
+                "url": "https://archive.org/details/oapen-20.500.12657-46943",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Berlin, Language Science Press, lu dans la copie d'Internet Archive, section 1.2.2, consulté le 9 octobre 2026. L'auteur rapporte le sous-titre de la liste de mots de Merensky (1894), que nous n'avons pas lue, et la présente comme « sans doute » la première mention savante de la langue sous ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Nyakyusa désignait d'abord une chefferie locale. Il viendrait de Mwakyusa, un chef de légende dont le nom veut dire « fils de Kyusa » ; le préfixe nya- marque l'appartenance à un groupe, un clan ou une famille, selon Bastian Persohn.",
+            "sources": [
+              {
+                "title": "The verb in Nyakyusa: A focus on tense, aspect and modality. Second revised edition",
+                "author": "Bastian Persohn",
+                "year": 2020,
+                "url": "https://archive.org/details/oapen-20.500.12657-46943",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Berlin, Language Science Press, lu dans la copie d'Internet Archive, section 1.2.2, consulté le 9 octobre 2026. L'auteur s'appuie sur Labroussi (1998) et Weber (1998), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1870,
+              "to": 1879,
+              "label": "Années 1870"
+            },
+            "before": true,
+            "statement": "Le nom Konde sert alors aux premiers Européens venus par le lac Nyasa pour désigner les groupes du nord du lac, dont ceux qu'on appellera plus tard Nyakyusa, selon Bastian Persohn.",
+            "sources": [
+              {
+                "title": "The verb in Nyakyusa: A focus on tense, aspect and modality. Second revised edition",
+                "author": "Bastian Persohn",
+                "year": 2020,
+                "url": "https://archive.org/details/oapen-20.500.12657-46943",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Berlin, Language Science Press, collection Contemporary African Linguistics 2, sous licence libre. Lu dans la copie d'Internet Archive, section 1.2.2 « On the name Nyakyusa », consulté le 9 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wanyakyusa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "swh",
+        "namedBy": null,
+        "shortLine": "La forme swahilie du nom Nyakyusa, avec le préfixe wa- des noms de peuple.",
+        "usedIn": ["swh"],
+        "variantSpelling": true,
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "aspect": "usage",
+            "statement": "Le nom Wanyakyusa est la forme qu'emploie le swahili, la langue commune de la Tanzanie. L'article de Wikipédia en swahili ajoute qu'on les appelle aussi Wangonde ou Wasochile.",
+            "sources": [
+              {
+                "title": "Wanyakyusa — Wikipedia kwa Kiswahili",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://sw.wikipedia.org/wiki/Wanyakyusa",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Article en swahili, consulté le 9 octobre 2026. Il donne Wanyakyusa comme nom du peuple, ajoute qu'on les appelle aussi Wangonde ou Wasochile, et rapporte que l'Église luthérienne de Tanzanie nomme encore « dayosisi ya Konde » son diocèse de la région. Ces passages ne citent pas de source."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Konde",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des Européens arrivés par le lac Nyasa, d'après le nom du royaume de Ngonde",
+        "shortLine": "Le nom donné par les premiers Européens à tout le nord du lac Nyasa ; il reste dans un nom d'Église.",
+        "usedIn": ["eng", "deu"],
+        "periodLabel": "Des années 1870 aux années 1940",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "aspect": "usage",
+            "statement": "Le nom Konde reste dans celui du diocèse de Konde de l'Église luthérienne de Tanzanie, dans la région de Mbeya, selon l'article de Wikipédia en swahili.",
+            "sources": [
+              {
+                "title": "Wanyakyusa — Wikipedia kwa Kiswahili",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://sw.wikipedia.org/wiki/Wanyakyusa",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Article en swahili, consulté le 9 octobre 2026. Il donne Wanyakyusa comme nom du peuple, ajoute qu'on les appelle aussi Wangonde ou Wasochile, et rapporte que l'Église luthérienne de Tanzanie nomme encore « dayosisi ya Konde » son diocèse de la région. Ces passages ne citent pas de source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1933,
+              "to": 1942,
+              "label": "Jusqu'aux années 1940"
+            },
+            "statement": "Le nom Konde reste en usage chez des linguistes des années 1930 et jusqu'en 1942, alors que les ethnologues disent déjà Nyakyusa, selon Bastian Persohn.",
+            "sources": [
+              {
+                "title": "The verb in Nyakyusa: A focus on tense, aspect and modality. Second revised edition",
+                "author": "Bastian Persohn",
+                "year": 2020,
+                "url": "https://archive.org/details/oapen-20.500.12657-46943",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Berlin, Language Science Press, collection Contemporary African Linguistics 2, sous licence libre. Lu dans la copie d'Internet Archive, section 1.2.2 « On the name Nyakyusa », consulté le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "1925"
+            },
+            "formAsWritten": "Konde",
+            "statement": "Le nom Konde est écrit « Konde » par le missionnaire D. R. Mackenzie, qui l'emploie pour tout le peuple, des deux côtés de la Songwe. Il précise que ce peuple appelle son pays Ngonde.",
+            "actors": [
+              {
+                "name": "D. R. Mackenzie",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Spirit-Ridden Konde",
+                "author": "D. R. Mackenzie",
+                "year": 1925,
+                "url": "https://archive.org/details/spiritriddenkond00mack_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 17",
+                "notes": "Londres, Seeley, Service and Co. Récit d'un missionnaire écossais qui dit avoir vécu vingt-quatre ans dans la région. Lu dans la numérisation d'Internet Archive, chapitre I, consulté le 9 octobre 2026. Il écrit : « NGONDE, as the Konde people call their country, lies around the north end of Lake Nyasa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1879,
+              "label": "Note d'octobre 1877 (publiée en 1879)"
+            },
+            "birth": true,
+            "formAsWritten": "Konde",
+            "statement": "Le nom Konde est écrit par le consul J. Frederic Elton, qui traverse la région en octobre 1877 : le pays « est maintenant généralement connu sous le nom de Konde ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "actors": [
+              {
+                "name": "J. Frederic Elton",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Researches among the Lakes and Mountains of Eastern and Central Africa, from the journals of the late J. Frederic Elton",
+                "author": "J. Frederic Elton, édité par H. B. Cotterill",
+                "year": 1879,
+                "url": "https://archive.org/details/travelsandresea00fredgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 331",
+                "notes": "Londres, John Murray, 1879. Note écrite par le consul Elton au col de Mazote, en octobre 1877, quelques semaines avant sa mort. Lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Elton écrit que le pays « is now generally known as Konde »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1870,
+              "to": 1879,
+              "label": "Années 1870"
+            },
+            "statement": "Le nom Konde viendrait de Ngonde : les premiers Européens arrivés par le lac Nyasa débarquent d'abord dans le royaume de Ngonde et étendent ce nom aux groupes voisins, selon Bastian Persohn.",
+            "sources": [
+              {
+                "title": "The verb in Nyakyusa: A focus on tense, aspect and modality. Second revised edition",
+                "author": "Bastian Persohn",
+                "year": 2020,
+                "url": "https://archive.org/details/oapen-20.500.12657-46943",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Berlin, Language Science Press, collection Contemporary African Linguistics 2, sous licence libre. Lu dans la copie d'Internet Archive, section 1.2.2 « On the name Nyakyusa », consulté le 9 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ngonde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un ancien royaume de la plaine du Malawi et de ses habitants, proches parents des Nyakyusa.",
+        "usedIn": ["nyy", "eng"],
+        "periodLabel": "Écrit dès 1925, sans doute plus ancien",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "aspect": "meaning",
+            "statement": "Le nom Ngonde désigne d'abord la plaine du Malawi au sud de la rivière Songwe, puis les collines qui faisaient partie du royaume du Kyungu, et les gens qui y vivent, selon Monica Wilson. Nous n'avons pas trouvé d'explication de son origine.",
+            "sources": [
+              {
+                "title": "For Men and Elders: Change in the Relations of Generations and of Men and Women among the Nyakyusa-Ngonde People, 1875-1971",
+                "author": "Monica Wilson",
+                "year": 1977,
+                "url": "https://archive.org/details/monica-hunter-wilson-for-men-and-elders-change-in-relations-generations-of-men-w",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Londres, International African Institute. Lu dans la copie d'Internet Archive, introduction, consulté le 9 octobre 2026. L'autrice écrit : « Ngonde means primarily the Malawi plain, south of the Songwe river »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "aspect": "usage",
+            "statement": "Le nom Ngonde sert aussi aux gens du nord de la Tanzanie, sous la forme MuNgonde, pour désigner les Nyakyusa de la plaine du lac, qui ne se nomment pas ainsi eux-mêmes, selon Bastian Persohn. La langue du Malawi se dit IkyaNgonde.",
+            "sources": [
+              {
+                "title": "The verb in Nyakyusa: A focus on tense, aspect and modality. Second revised edition",
+                "author": "Bastian Persohn",
+                "year": 2020,
+                "url": "https://archive.org/details/oapen-20.500.12657-46943",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8",
+                "notes": "Berlin, Language Science Press, collection Contemporary African Linguistics 2, sous licence libre. Lu dans la copie d'Internet Archive, section 1.2.2 « On the name Nyakyusa », consulté le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "1925"
+            },
+            "birth": true,
+            "formAsWritten": "NGONDE",
+            "statement": "Le nom Ngonde est écrit « NGONDE » par le missionnaire D. R. Mackenzie, comme le nom que ce peuple donne à son pays. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne existait déjà avant elle.",
+            "actors": [
+              {
+                "name": "D. R. Mackenzie",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Spirit-Ridden Konde",
+                "author": "D. R. Mackenzie",
+                "year": 1925,
+                "url": "https://archive.org/details/spiritriddenkond00mack_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 17",
+                "notes": "Londres, Seeley, Service and Co. Récit d'un missionnaire écossais qui dit avoir vécu vingt-quatre ans dans la région. Lu dans la numérisation d'Internet Archive, chapitre I, consulté le 9 octobre 2026. Il écrit : « NGONDE, as the Konde people call their country, lies around the north end of Lake Nyasa »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
