@@ -278,7 +278,11 @@
       "Joola Karon — cote de Casamance au sud de Diouloulou",
       "Joola Banjal — au sud du fleuve Casamance",
       "Joola Bliss-Karones (Eblinayi) — littoral atlantique et iles",
-      "Joola Gusilay — village de Thionck-Essyl"
+      "Joola Gusilay — village de Thionck-Essyl",
+      "Joola Kuwaataay — cote sud du fleuve Casamance",
+      "Joola Felupe (Ediamat) — quelques villages au sud d'Oussouye et en Guinee-Bissau",
+      "Joola Brin — Casamance nord",
+      "Joola Jamat, Joheyt, Seleky, Kabrouse et Jiwat — sous-groupes communautaires"
     ],
     "origins": {
       "ancientOrigins": "Les Joola sont consideres comme les premiers habitants des basses rives des fleuves Casamance et Gambie. Les traditions orales senegambiennes les disent apparentes aux Sereres et aux Peuls, originaires de la vallee du Nil. Ils ont assimile les Bainuk, population anterieure, et leur tradition rizicole.",
@@ -305,15 +309,17 @@
     },
     "languages": {
       "mainLanguage": "Diola (Jola-Fogni / dyo)",
-      "isoCodes": ["dyo", "eja", "bda", "kdi"],
+      "isoCodes": ["dyo", "eja", "bda", "kdi", "csk"],
       "dialects": [
         "Jola-Fogni (dyo) — dialecte principal, l'une des six langues nationales du Senegal",
         "Jola-Felupe / Ajamat (eja) — parle en Guinee-Bissau",
         "Jola-Bayot (bda) — autour de Ziguinchor",
-        "Jola-Kasa — autour d'Oussouye",
+        "Jola-Kasa (csk) — autour d'Oussouye",
         "Jola-Karon — cote sud de la Casamance",
         "Jola-Gusilay — village de Thionck-Essyl",
-        "Jola-Banjal — sud du fleuve Casamance"
+        "Jola-Banjal — sud du fleuve Casamance",
+        "Jola-Mlomp — village de Mlomp",
+        "Jola-Kuwaataay — cote sud de la Casamance"
       ],
       "vehicularRole": "Le Jola-Fogni est reconnu comme l'une des six langues nationales du Senegal et sert de langue vehiculaire en Basse-Casamance. Les differents dialectes joola peuvent etre mutuellement inintelligibles. Le français est langue d'education en Casamance; le portugais et le creole guineen en Guinee-Bissau."
     },
@@ -332,7 +338,7 @@
     "demography": {
       "totalPopulation": 700000,
       "referenceYear": 2025,
-      "source": "Estimations aggregees : Joshua Project (Jola-Fonyi : 535 000 toutes regions; sous-groupes Karon, Bayot, Gusilay, Banjal, Bliss supplementaires); Minority Rights Group (environ 4% de la population senegalaise); Ethnologue (dyo, eja, bda). Chiffre global estime a 700 000 personnes en comptant tous les sous-groupes.",
+      "source": "Estimations aggregees : Joshua Project (Jola-Fonyi : 535 000 toutes regions; sous-groupes Karon, Bayot, Gusilay, Banjal, Bliss supplementaires); Minority Rights Group (environ 4% de la population senegalaise); Ethnologue (dyo, eja, bda). Chiffre global estime a 700 000 personnes en comptant tous les sous-groupes. Une autre estimation donne 900 000 personnes (Wikipedia, Jola people) : environ 600 000 au Senegal, selon le Senegal Cultural Field Guide, 270 000 en Gambie et 30 000 en Guinee-Bissau. Les sources lues ne permettent pas de choisir entre les deux chiffres.",
       "distributionByCountry": [
         {
           "country": "SEN",
@@ -372,6 +378,47 @@
         "url": "https://www.ethnologue.com/language/eja/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Ethnologue SIL — Jola-Fonyi (dyo)",
+        "url": "https://www.ethnologue.com/subgroup/1247/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Sage Reference — Encyclopedia of African Religion: Diola",
+        "url": "https://sk.sagepub.com/ency/edvol/africanreligion/chpt/diola",
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Academia.edu — Ritual and Masking Traditions in Jola Men's Initiation",
+        "url": "https://www.academia.edu/63748523/Ritual_and_Masking_Traditions_in_Jola_Mens_Initiation",
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Public Intelligence — Senegal Cultural Field Guide",
+        "url": "https://info.publicintelligence.net/MCIA-SenegalCultureGuide.pdf",
+        "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Jola",
+        "url": "https://glottolog.org/resource/languoid/id/jola1264",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Baum, Robert M. — Shrines of the Slave Trade: Diola Religion and Society in Precolonial Senegambia. Oxford University Press, 1999",
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Mark, Peter — A Cultural, Economic and Religious History of the Basse Casamance since 1500. Franz Steiner Verlag, 1985",
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

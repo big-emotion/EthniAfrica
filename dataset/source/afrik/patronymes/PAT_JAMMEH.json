@@ -30,7 +30,7 @@
   },
   "peoples": [
     {
-      "peopleId": "PPL_JOLA",
+      "peopleId": "PPL_DIOLA",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
     }
