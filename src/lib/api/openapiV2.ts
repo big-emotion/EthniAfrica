@@ -1934,6 +1934,18 @@ const options: swaggerJsdoc.Options = {
               required: ["from", "to", "label"],
             },
             statement: { type: "string", minLength: 1 },
+            aspect: {
+              type: "string",
+              enum: ["meaning", "imposition", "usage"],
+              description:
+                "What the account says of the name as a whole: its meaning, who imposed it and why that is a problem, or how it is used today.",
+            },
+            formAsWritten: {
+              type: "string",
+              minLength: 1,
+              description:
+                "A written trace of the name: the form exactly as the cited document spells it, cited at its page.",
+            },
             hypothesisGroup: { type: "string", minLength: 1 },
             birth: {
               type: "boolean",
@@ -1985,6 +1997,48 @@ const options: swaggerJsdoc.Options = {
                   selfGiven: { type: "boolean" },
                   languageOfOrigin: { type: ["string", "null"] },
                   namedBy: { type: ["string", "null"] },
+                  shortLine: {
+                    type: "string",
+                    minLength: 1,
+                    maxLength: 120,
+                    description:
+                      "One sentence a reader understands without context.",
+                  },
+                  usedIn: {
+                    type: "array",
+                    items: { type: "string", minLength: 1 },
+                    description:
+                      "ISO 639-3 codes of the languages the name is used in.",
+                  },
+                  pronunciation: {
+                    type: "object",
+                    properties: {
+                      respelling: { type: "string", minLength: 1 },
+                      audio: {
+                        type: ["object", "null"],
+                        properties: {
+                          url: { type: "string", minLength: 1 },
+                          consent: { type: "string", minLength: 1 },
+                        },
+                        required: ["url", "consent"],
+                      },
+                      source: {
+                        $ref: "#/components/schemas/NameHistorySourceV2",
+                      },
+                    },
+                    required: ["respelling", "audio", "source"],
+                  },
+                  periodLabel: {
+                    type: "string",
+                    minLength: 1,
+                    description: "When the name is or was in use.",
+                  },
+                  variantSpelling: {
+                    type: "boolean",
+                    enum: [true],
+                    description:
+                      "Another spelling of a name rather than a name of its own.",
+                  },
                   accounts: {
                     type: "array",
                     items: {

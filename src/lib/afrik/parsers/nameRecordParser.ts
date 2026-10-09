@@ -10,7 +10,7 @@ import {
   type NameRecordFileEntityType,
 } from "@/types/names";
 import { ficheSourceTierSchema } from "./ficheSourceTier";
-import { nameHistorySchema } from "./nameHistoryParser";
+import { nameHistorySchema, shortLineSchema } from "./nameHistoryParser";
 
 const nameRecordMetaSchema = z
   .object({
@@ -49,23 +49,6 @@ const nameAttestationSchema = z
     }),
   })
   .strict();
-
-// The answer card reads this line on its own, without the paragraph around
-// it, so it carries nothing a reader could not parse (REQ-191).
-const shortLineSchema = z
-  .string()
-  .trim()
-  .min(1)
-  .max(120, { message: "a short line holds at most 120 characters" })
-  .refine(
-    (line) =>
-      !/\b(PPL|FLG|PAT)_[A-Z0-9_]+|\w\/[\w.-]+\.(json|tsx?|md)\b|\b[a-z]+\.[a-z]+[A-Z]\w*/.test(
-        line
-      ),
-    {
-      message: "a short line carries no identifier, path or field path",
-    }
-  );
 
 // A pronunciation is a claim like any other: no source, no pronunciation. A
 // recording is a person's voice: no stated consent, no recording.

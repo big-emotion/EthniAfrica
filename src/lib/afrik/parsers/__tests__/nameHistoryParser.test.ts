@@ -200,6 +200,151 @@ describe("parseNameHistory", () => {
 
     expect(parseNameHistory(block).success).toBe(false);
   });
+
+  // @req REQ-196
+  it("carries what the answer card reads on a name: short line, usage, pronunciation, period, spelling", () => {
+    const block = nameHistory([
+      account({
+        aspect: "meaning",
+        period: { from: null, to: null, label: "Usage contemporain" },
+      }),
+      account({
+        aspect: "imposition",
+        actors: [{ name: "Administration coloniale", role: "impose ce nom" }],
+      }),
+      account({ aspect: "usage" }),
+      account({
+        formAsWritten: "Yamoussokro",
+        actors: [{ name: "Un registre", role: "écrit cette forme" }],
+      }),
+    ]);
+    Object.assign(block.names[0], {
+      shortLine: "« Le village de Yamousso ».",
+      usedIn: ["fra", "bci"],
+      periodLabel: "Depuis le début du XXe siècle",
+      variantSpelling: true,
+      pronunciation: {
+        respelling: "ya-mou-sou-kro",
+        audio: null,
+        source: writtenSource(),
+      },
+    });
+
+    const parsed = parseNameHistory(block);
+
+    expect(parsed.errors).toEqual([]);
+    expect(parsed.data?.names[0]).toMatchObject({
+      shortLine: "« Le village de Yamousso ».",
+      usedIn: ["fra", "bci"],
+      variantSpelling: true,
+    });
+    expect(parsed.data?.names[0].accounts.map((item) => item.aspect)).toEqual([
+      "meaning",
+      "imposition",
+      "usage",
+      undefined,
+    ]);
+  });
+
+  // @req REQ-196
+  it("refuses an aspect outside meaning, imposition and usage", () => {
+    const parsed = parseNameHistory(
+      nameHistory([account({ aspect: "etymology" })])
+    );
+
+    expect(parsed.success).toBe(false);
+    expect(parsed.errors.join("\n")).toMatch(/aspect/);
+  });
+
+  // @req REQ-196
+  it("refuses a pronunciation whose source has no source_kind", () => {
+    const withoutKind: Record<string, unknown> = writtenSource();
+    delete withoutKind.source_kind;
+    const block = nameHistory();
+    Object.assign(block.names[0], {
+      pronunciation: { respelling: "ya", audio: null, source: withoutKind },
+    });
+
+    expect(parseNameHistory(block).success).toBe(false);
+  });
+});
+
+describe("the answer-card fields keep the rules they had in a name record", () => {
+  function withName(fields: Record<string, unknown>) {
+    const block = nameHistory();
+    Object.assign(block.names[0], fields);
+    return block;
+  }
+
+  // @req REQ-196
+  it("refuses a short line over 120 characters", () => {
+    expect(
+      parseNameHistory(withName({ shortLine: "a".repeat(121) })).success
+    ).toBe(false);
+  });
+
+  // @req REQ-196
+  it("refuses a short line that leaks an identifier", () => {
+    const parsed = parseNameHistory(
+      withName({ shortLine: "Voir PPL_FULA pour le détail." })
+    );
+
+    expect(parsed.success).toBe(false);
+    expect(parsed.errors.join("\n")).toMatch(/identifier/);
+  });
+
+  // @req REQ-196
+  it("refuses a recording that does not state the speaker's consent", () => {
+    const parsed = parseNameHistory(
+      withName({
+        pronunciation: {
+          respelling: "ya",
+          audio: { url: "https://example.org/a.mp3", consent: " " },
+          source: writtenSource(),
+        },
+      })
+    );
+
+    expect(parsed.success).toBe(false);
+    expect(parsed.errors.join("\n")).toMatch(/consent/);
+  });
+
+  // @req REQ-196
+  it("refuses a written trace whose written source gives no page", () => {
+    const withoutPage: Record<string, unknown> = writtenSource();
+    delete withoutPage.page;
+    const parsed = parseNameHistory(
+      nameHistory([
+        account({ formAsWritten: "Yamoussokro", sources: [withoutPage] }),
+      ])
+    );
+
+    expect(parsed.success).toBe(false);
+    expect(parsed.errors.join("\n")).toMatch(/page/);
+  });
+
+  // @req REQ-195
+  it("accepts a trace heard in an oral account with no page", () => {
+    const parsed = parseNameHistory(
+      nameHistory([
+        account({
+          formAsWritten: "Yamousso",
+          sources: [
+            {
+              title: "Récit familial",
+              author: "Famille fondatrice",
+              year: null,
+              url: null,
+              tier: "unverified",
+              source_kind: "oral_tradition",
+            },
+          ],
+        }),
+      ])
+    );
+
+    expect(parsed.errors).toEqual([]);
+  });
 });
 
 describe("ficheNameHistory", () => {
