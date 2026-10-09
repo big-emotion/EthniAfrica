@@ -99,7 +99,8 @@
       {
         "title": "SIL Ethnologue — Gola language (gol)",
         "url": "https://www.ethnologue.com/language/gol/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "The Advocates for Human Rights — Background on Liberia and the Conflict",

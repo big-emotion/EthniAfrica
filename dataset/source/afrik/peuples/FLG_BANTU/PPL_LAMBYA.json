@@ -80,12 +80,14 @@
       {
         "title": "The Establishment and Expansion of the Lambya Kingdom c1600-1750 – African Studies Review, Cambridge University Press, 1993",
         "url": "https://www.cambridge.org/core/journals/african-studies-review/article/establishment-and-expansion-of-the-lambya-kingdom-c16001750/2A73651C94DF84588BD88A712D777AAF",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Lambya language and alphabet – Omniglot",
         "url": "https://www.omniglot.com/writing/lambya.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Lambya, Rambia in Zambia – Joshua Project",
@@ -95,7 +97,8 @@
       {
         "title": "Lambya – Glottolog 5.3, SIL International",
         "url": "https://glottolog.org/resource/languoid/id/lamb1272",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Lambya – 101 Last Tribes",

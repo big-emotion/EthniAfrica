@@ -108,7 +108,8 @@
       {
         "title": "Ethnologue (SIL International) — Edo language, code bin",
         "url": "https://www.ethnologue.com/language/bin/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

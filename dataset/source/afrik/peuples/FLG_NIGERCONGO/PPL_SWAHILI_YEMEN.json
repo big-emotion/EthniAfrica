@@ -99,12 +99,14 @@
       {
         "title": "Al Jazeera — Yemen's Muwaladeen: The struggle for equal citizenship (2014)",
         "url": "https://www.aljazeera.com/opinions/2014/4/5/yemens-muwaladeen-the-struggle-for-equal-citizenship",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Scholarly Publishing Collective — We Are All Suffering Equally: The Impact of the War on Muwalladin (2022)",
         "url": "https://scholarlypublishingcollective.org/msup/neas/article/22/1/165/381346/We-Are-All-Suffering-Equally-The-Impact-of-the-War",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Muhamasheen, Akhdam in Yemen",
@@ -119,7 +121,8 @@
       {
         "title": "CIA Reading Room — Southern Yemen (Aden): The Society",
         "url": "https://www.cia.gov/readingroom/docs/CIA-RDP01-00707R000200100018-6.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

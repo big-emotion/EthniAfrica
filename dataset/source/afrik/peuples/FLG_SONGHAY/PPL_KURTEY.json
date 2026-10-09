@@ -118,7 +118,8 @@
       {
         "title": "CIA World Factbook — Niger",
         "url": "https://www.cia.gov/the-world-factbook/countries/niger/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

@@ -113,7 +113,8 @@
       {
         "title": "Nsenga – Glottolog",
         "url": "https://glottolog.org/resource/languoid/id/nsen1242",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

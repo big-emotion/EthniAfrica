@@ -94,12 +94,14 @@
       {
         "title": "Ethnologue (SIL International) — Esan language, code ish",
         "url": "https://www.ethnologue.com/language/ish/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ScriptSource — Esan language (ISO ish)",
         "url": "https://www.scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=ish",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "City Population — Edo State LGA data (2022)",

@@ -117,7 +117,8 @@
       {
         "title": "Ethnologue — Tswa (tsc)",
         "url": "https://www.ethnologue.com/language/tsc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CLEAR Global — Language data for Mozambique",

@@ -94,7 +94,8 @@
       {
         "title": "Glottolog — Luvale (luva1239)",
         "url": "https://glottolog.org/resource/languoid/id/luva1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

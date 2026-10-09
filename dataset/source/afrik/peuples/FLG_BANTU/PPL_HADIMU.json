@@ -84,17 +84,20 @@
       {
         "title": "Zanzibar Fact Sheet 2025 – Gouvernement indien, Consulat général de Zanzibar",
         "url": "https://www.cgizanzibar.gov.in/pdf/Zanzibar%20Fact%20Sheet-2025.pdf",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Zanzibar: A Political Economy, Bevan D. et al. – Oxford Academic, 2013",
         "url": "https://academic.oup.com/book/33093/chapter/282271632",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue – Swahili, Coastal (swh), SIL International, 2024",
         "url": "https://www.ethnologue.com/language/swh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "A Handbook of the Swahili Language as Spoken at Zanzibar – Steere E., 1884 (archive Wikimedia)",

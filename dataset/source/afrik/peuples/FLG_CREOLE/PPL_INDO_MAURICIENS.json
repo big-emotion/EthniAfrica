@@ -113,7 +113,8 @@
       {
         "title": "Aapravasi Ghat – UNESCO World Heritage",
         "url": "https://whc.unesco.org/en/list/1227",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

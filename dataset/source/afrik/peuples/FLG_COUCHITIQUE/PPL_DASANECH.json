@@ -143,7 +143,8 @@
       {
         "title": "SIL Ethnologue — Daasanach language (dsh)",
         "url": "https://www.ethnologue.com/language/dsh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Begin North Adventures — The Daasanach Tribe",
@@ -153,7 +154,8 @@
       {
         "title": "Daasanach – Glottolog 5.2",
         "url": "https://glottolog.org/resource/languoid/id/daas1238",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Daasanach of Ethiopia – Horn of Africa Evangelical Mission",

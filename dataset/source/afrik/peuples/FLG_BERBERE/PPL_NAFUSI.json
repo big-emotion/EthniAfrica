@@ -91,7 +91,8 @@
       {
         "title": "Ethnologue — Nafusi (jbn)",
         "url": "https://www.ethnologue.com/language/jbn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Berber, Jabal Nafusah in Libya",
@@ -106,12 +107,14 @@
       {
         "title": "Reuters — Berber culture reborn in Libya revolt",
         "url": "https://www.reuters.com/article/libya-berber-idAFLDE76A1HS20110711",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "CEDS — ISO 639-3 code jbn (Nafusi)",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "The Monsoon Diaries — The Jebel Alliance Take the Nafusa Mountains",

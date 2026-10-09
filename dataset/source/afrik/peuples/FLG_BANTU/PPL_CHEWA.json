@@ -114,12 +114,14 @@
       {
         "title": "Ethnologue, Chichewa (nya)",
         "url": "https://www.ethnologue.com/language/nya/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Deutsche Welle, The Nyau cult",
         "url": "https://www.dw.com/en/the-nyau-cult-unmasking-one-of-africas-secret-societies/a-38463791",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       }
     ]
   }

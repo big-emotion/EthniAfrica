@@ -122,7 +122,8 @@
       {
         "title": "Hunwick, John O. Timbuktu and the Songhay Empire : Al-Sa'di's Ta'rikh al-Sudan down to 1613. Brill, 1999",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Kati, Mahmoud. Tarikh al-Fattash (Chronique du chercheur). Traduit par O. Houdas et M. Delafosse. Paris, 1913",
@@ -132,17 +133,20 @@
       {
         "title": "Stoller, Paul. Fusion of the Worlds : An Ethnography of Possession among the Songhay of Niger. University of Chicago Press, 1989",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue – Songhay languages",
         "url": "https://www.ethnologue.com/subgroup/300/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Niger",
         "url": "https://www.cia.gov/the-world-factbook/countries/niger/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "OpenStax World History Volume 2 – The Songhai Empire",

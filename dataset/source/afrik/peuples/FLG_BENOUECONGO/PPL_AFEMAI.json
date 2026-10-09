@@ -103,7 +103,8 @@
       {
         "title": "Ethnologue, Etsako (ETS). (consulté 2025)",
         "url": "https://www.ethnologue.com/language/ets/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "AFESANCOM, The Afemai People of Edo State Nigeria. (consulté 2025)",
@@ -118,12 +119,14 @@
       {
         "title": "Presidency of Nigeria (Community Engagement South-South), Edo State. (consulté 2025)",
         "url": "https://communityengagementss.presidency.gov.ng/portfolio/edo/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Egharevba, Jacob U. A Short History of Benin. Ibadan University Press, 4e éd., 1968",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

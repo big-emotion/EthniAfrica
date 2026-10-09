@@ -86,7 +86,8 @@
       {
         "title": "Ethnologue — Bench language (bcq)",
         "url": "https://www.ethnologue.com/language/bcq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Bench people",
@@ -106,7 +107,8 @@
       {
         "title": "Fernyhough, Timothy D. 1994. Human rights and precolonial Africa. In: Human Rights and Governance in Africa, pp. 55-99",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

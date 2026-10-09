@@ -108,12 +108,14 @@
       {
         "title": "Ethnologue – Sisaala, Tumulung SIL",
         "url": "https://www.ethnologue.com/language/sil/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue – Sisaala, Western SSL",
         "url": "https://www.ethnologue.com/language/ssl/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ghana Statistical Service – 2021 Population and Housing Census, Sissala West District",

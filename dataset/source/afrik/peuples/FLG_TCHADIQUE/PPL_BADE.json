@@ -92,12 +92,14 @@
       {
         "title": "SIL Ethnologue — Bade (bde)",
         "url": "https://www.ethnologue.com/subgroup/2040/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UCLA African Languages — Bade",
         "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bade/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Bade in Nigeria",
@@ -112,12 +114,14 @@
       {
         "title": "Glottolog 5.3 — Bade (bade1248)",
         "url": "https://glottolog.org/glottolog?search=bade",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Wiktionary ISO 639-3 codes/Africa — bde Bade",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

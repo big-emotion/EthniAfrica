@@ -88,7 +88,8 @@
       {
         "title": "Adangme (Dangme) – Glottolog 5.3, ISO 639-3 : ada",
         "url": "https://glottolog.org/resource/languoid/id/adan1247",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Lower Manya Krobo population – CityPopulation.de",
@@ -98,7 +99,8 @@
       {
         "title": "Yilo Krobo Municipal population 2021 – Ghana Statistical Service",
         "url": "https://microdata.statsghana.gov.gh",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Krobo People Migration from Klo Mountains – Facebook / Groupes communautaires",
@@ -114,6 +116,7 @@
         "title": "Kropp Dakubu, Mary Esther (1988) – The Languages of Ghana. Kegan Paul International, pour l'International African Institute",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Survol linguistique des langues du Ghana, dont le ga-dangme et ses traditions orales."
       }
     ]

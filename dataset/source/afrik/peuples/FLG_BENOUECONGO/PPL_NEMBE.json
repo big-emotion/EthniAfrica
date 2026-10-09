@@ -102,12 +102,14 @@
       {
         "title": "Ethnologue (SIL) — Southeast Ijo (nvm)",
         "url": "https://www.ethnologue.com/language/nvm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Guardian Nigeria — Modernising Ijaw language (mention de Kay Williamson et orthographe Nembe)",
         "url": "https://guardian.ng/art/modernising-ijaw-language/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       }
     ]
   }

@@ -102,12 +102,14 @@
       {
         "title": "SIL Ethnologue — Guinea-Bissau Creole (pov)",
         "url": "https://www.ethnologue.com/language/pov/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "APiCS Online — Guinea-Bissau Kriyol (survey chapter)",
         "url": "https://apics-online.info/surveys/33",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Revista Africa e Africanidades — Guinee-Bissau et la langue guineenne",
@@ -117,7 +119,8 @@
       {
         "title": "CIA World Factbook — Guinea-Bissau",
         "url": "https://www.cia.gov/the-world-factbook/countries/guinea-bissau/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "PopulationPyramid.net — Guinea-Bissau 2024",

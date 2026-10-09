@@ -89,7 +89,8 @@
       {
         "title": "Ethnologue – Matuumbi (mgw)",
         "url": "https://www.ethnologue.com/language/mgw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

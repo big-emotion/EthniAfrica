@@ -130,17 +130,20 @@
       {
         "title": "SIL Ethnologue — Tedaga language (tuq)",
         "url": "https://www.ethnologue.com/language/tuq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Country Studies US — Chad",
         "url": "https://countrystudies.us/chad/19.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Chad, Libya, Niger",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

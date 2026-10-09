@@ -74,7 +74,8 @@
       {
         "title": "Igede Language (IGE) – Ethnologue",
         "url": "https://www.ethnologue.com/language/ige/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Igede in Nigeria – Joshua Project",

@@ -100,7 +100,8 @@
       {
         "title": "Glottolog — Me'en, glottocode meen1242, ISO 639-3: mym",
         "url": "https://glottolog.org/resource/languoid/id/meen1242",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Jenkins, Orville. Meen People Profile",

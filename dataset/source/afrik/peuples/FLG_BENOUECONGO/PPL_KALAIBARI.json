@@ -103,7 +103,8 @@
       {
         "title": "Ethnologue (SIL) — Kalabari (ijn)",
         "url": "https://www.ethnologue.com/language/ijn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SwordShare Language Map — Kalabari ISO 639-3 ijn",

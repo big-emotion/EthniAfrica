@@ -126,7 +126,8 @@
       {
         "title": "Refworld – World Directory of Minorities and Indigenous Peoples – Somalia",
         "url": "https://www.refworld.org/reference/countryrep/mrgi/2018/121768",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

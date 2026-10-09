@@ -103,7 +103,8 @@
       {
         "title": "South African History Online — Xhosa",
         "url": "https://sahistory.org.za/article/xhosa",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "South African Tourism — Xhosa culture",
@@ -113,12 +114,14 @@
       {
         "title": "Statistics South Africa — Population trends 2025",
         "url": "https://www.statssa.gov.za/?p=18613",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "SIL Ethnologue — isiXhosa (xho)",
         "url": "https://www.ethnologue.com/language/xho/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kruger Park — Xhosa people",

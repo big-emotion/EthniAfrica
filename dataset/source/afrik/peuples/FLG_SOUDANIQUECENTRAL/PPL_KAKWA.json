@@ -100,7 +100,8 @@
       {
         "title": "SIL Ethnologue — Kakwa language (keo)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Muwado — My Kakwa Culture",

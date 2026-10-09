@@ -93,12 +93,14 @@
       {
         "title": "Omniglot – Yeyi language and alphabet",
         "url": "https://www.omniglot.com/writing/yeyi.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "US Department of Justice – Wayeyi profile",
         "url": "https://www.justice.gov/eoir/file/876336/dl",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Minority Rights Group – Wayeyi in Botswana",

@@ -92,7 +92,8 @@
       {
         "title": "SIL Ethnologue — Makonde (kde)",
         "url": "https://www.ethnologue.com/language/kde/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Makonde in Tanzania",
@@ -117,7 +118,8 @@
       {
         "title": "CIA World Factbook — Tanzania",
         "url": "https://www.cia.gov/the-world-factbook/countries/tanzania/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

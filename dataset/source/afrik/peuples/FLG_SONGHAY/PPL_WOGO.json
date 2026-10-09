@@ -100,17 +100,20 @@
       {
         "title": "SIL Ethnologue – Koyraboro Senni (ses)",
         "url": "https://www.ethnologue.com/language/ses/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Rouch, Jean. La Religion et la magie songhay. PUF, Paris, 1960",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook – Niger",
         "url": "https://www.cia.gov/the-world-factbook/countries/niger/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

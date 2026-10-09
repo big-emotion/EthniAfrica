@@ -88,7 +88,8 @@
       {
         "title": "UNESCO ICH — Fichee-Chambalaalla, New Year festival of the Sidama people (2015)",
         "url": "https://ich.unesco.org/en/RL/fichee-chambalaalla-new-year-festival-of-the-sidama-people-01054",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Joshua Project — Sidama in Ethiopia",
@@ -98,12 +99,14 @@
       {
         "title": "SIL Ethnologue — Sidama (sid)",
         "url": "https://www.ethnologue.com",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Sidama (sida1246)",
         "url": "https://glottolog.org",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CityPopulation.de — Sidama Region",
@@ -113,7 +116,8 @@
       {
         "title": "Academia.edu — Fichee-Chambalalla as a Sidama New Year Festival and World Intangible Cultural Heritage, 2022",
         "url": "https://www.academia.edu/83996948",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

@@ -99,7 +99,8 @@
       {
         "title": "Gardiens de la foret : les Baka et l'esprit vivant du Dja – UNESCO, 2025",
         "url": "https://www.unesco.org/fr/articles/gardiens-de-la-foret-les-baka-et-lesprit-vivant-du-dja",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Statut des Peuples Autochtones – Greenpeace Afrique, 2025",
@@ -120,6 +121,7 @@
         "title": "Dictionnaire de l'Académie française, 1re édition (1694), entrée « pigmée » renvoyant à « pygmée »",
         "url": "https://www.dictionnaire-academie.fr/article/A1_0071",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Atteste la graphie ancienne « pigmée »."
       }
     ]

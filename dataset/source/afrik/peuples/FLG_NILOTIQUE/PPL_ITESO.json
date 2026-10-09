@@ -98,7 +98,8 @@
       {
         "title": "Uganda Bureau of Statistics – National Population and Housing Census 2024",
         "url": "https://www.ubos.org/wp-content/uploads/2024/12/National-Population-and-Housing-Census-2024-Final-Report-Volume-1-Main.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Encyclopedia.com – Iteso",
@@ -108,12 +109,14 @@
       {
         "title": "Omniglot – Ateso language (ISO 639-3 : teo)",
         "url": "https://www.omniglot.com/writing/ateso.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue – Ateso (TEO)",
         "url": "https://www.ethnologue.com/language/teo/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Mzee Lima S. scribbles – Clans of Iteso of Uganda and Kenya",

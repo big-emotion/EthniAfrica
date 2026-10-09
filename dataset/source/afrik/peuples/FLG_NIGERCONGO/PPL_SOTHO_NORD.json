@@ -101,12 +101,14 @@
       {
         "title": "Ethnologue (SIL) — Northern Sotho (nso)",
         "url": "https://www.ethnologue.com/language/nso/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Statistics South Africa — Census 2022 Cultural Dynamics (mars 2025)",
         "url": "https://www.statssa.gov.za",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "South Africa Gateway — Languages of South Africa (2025)",
@@ -126,7 +128,8 @@
       {
         "title": "Delius, Peter — The Land Belongs to Us: The Pedi Polity, the Boers and the British in the Nineteenth-Century Transvaal. Berkeley: University of California Press, 1984",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Qiraat Africa — Pedi people of South Africa (2024)",

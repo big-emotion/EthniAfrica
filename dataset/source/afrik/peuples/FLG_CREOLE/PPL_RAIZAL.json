@@ -65,6 +65,7 @@
           "title": "Kupperman, K. O., « Providence Island, 1630-1641: The Other Puritan Colony »",
           "url": "https://www.cambridge.org/core/books/abs/providence-island-16301641/providence-island-company-and-its-colony-the-program/286208AFED06439921A3752C04DE44B7",
           "tier": "referenced",
+          "source_kind": "academic",
           "notes": "Ouvrage académique publié par Cambridge University Press (1993) ; son chapitre « Servants into Slaves » documente le basculement d'une main-d'œuvre sous contrat vers une main-d'œuvre africaine asservie sur Providence Island dès 1629-1630."
         },
         {
@@ -104,12 +105,14 @@
         "title": "SIL Ethnologue — Islander Creole English (icr)",
         "url": "https://www.ethnologue.com/language/icr/",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Confirme la classification du créole de San Andrés-Providencia comme créole à base lexicale anglaise."
       },
       {
         "title": "DANE — Población Negra, Afrocolombiana, Raizal y Palenquera",
         "url": "https://www.dane.gov.co/index.php/estadisticas-por-tema/enfoque-diferencial-e-interseccional/autorreconocimiento-etnico/poblacion-negra-afrocolombiana-raizal-y-palenquera",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "Institut national de statistique de la Colombie (DANE)."
       },
       {
@@ -122,6 +125,7 @@
         "title": "Universidad Nacional de Colombia, Análisis Político — « Colombia insular: construcción de identidad y movilización del pueblo raizal del archipiélago de San Andrés y Providencia »",
         "url": "https://revistas.unal.edu.co/index.php/anpol/article/view/58047",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article publié dans une revue académique universitaire ; documente la politique de « colombianisation » engagée en 1953 et la mobilisation identitaire raizale ayant abouti à la reconnaissance constitutionnelle de 1991."
       }
     ]

@@ -105,7 +105,8 @@
       {
         "title": "Ethnologue — Plateau Malagasy (plt), (consulté 2025)",
         "url": "https://www.ethnologue.com/language/plt/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Betsileo in Madagascar, (consulté 2025)",
@@ -120,12 +121,14 @@
       {
         "title": "Kusuma, P. et al. Malagasy Genetic Ancestry. Molecular Biology and Evolution, 2016",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4989113/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — Madagascar, (consulté 2025)",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

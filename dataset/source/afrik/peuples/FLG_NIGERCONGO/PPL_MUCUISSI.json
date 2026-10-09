@@ -79,12 +79,14 @@
       {
         "title": "Rull et al. – Genome-wide variation in the Angolan Namib Desert reveals unique Pre-Bantu ancestry, Science Advances (2023)",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10516492/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Barbieri et al. – The maternal genetic history of the Angolan Namib Desert, bioRxiv (2017)",
         "url": "https://www.biorxiv.org/content/10.1101/162230v1.full",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Responsible Travel – Angola's tribal groups: The Mucuroca and Mucuis",
@@ -94,7 +96,8 @@
       {
         "title": "World Directory of Minorities and Indigenous Peoples – Angola, UNHCR/Refworld",
         "url": "https://www.refworld.org/country,COI,,COUNTRYREP,ago,,49749d6232,0.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

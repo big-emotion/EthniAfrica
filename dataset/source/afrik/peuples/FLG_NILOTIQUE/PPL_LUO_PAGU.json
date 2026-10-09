@@ -95,7 +95,8 @@
       {
         "title": "SIL Ethnologue — Luo language (luo)",
         "url": "https://www.ethnologue.com/language/luo/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "YouTube — NYATITI The Queen of the Clan (feat. Ayub Ogada)",
@@ -105,12 +106,14 @@
       {
         "title": "UNESCO — Patrimoine immateriel (Kenya)",
         "url": "https://ich.unesco.org/en/state/kenya-KE",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "RSIS International — Population Movements and the Gem Community in Western Kenya",
         "url": "https://rsisinternational.org/journals/ijriss/articles/population-movements-and-the-consolidation-of-authority-in-the-inter-lacustrine-region-of-western-kenya-a-political-transformation-of-gem-community-in-pre-colonial-times/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

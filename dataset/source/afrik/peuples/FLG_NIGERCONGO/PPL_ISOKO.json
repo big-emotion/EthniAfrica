@@ -103,12 +103,14 @@
       {
         "title": "Ethnologue SIL — Isoko (iso)",
         "url": "https://www.ethnologue.com/language/iso/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "WALS Online — Isoko language",
         "url": "https://wals.info/languoid/lect/wals_code_iso",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Isoko in Nigeria",

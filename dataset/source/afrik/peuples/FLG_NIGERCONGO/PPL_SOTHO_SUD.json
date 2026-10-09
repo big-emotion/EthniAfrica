@@ -101,7 +101,8 @@
       {
         "title": "SIL Ethnologue — Sesotho (sot)",
         "url": "https://www.ethnologue.com/language/sot/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "South Africa Census 2011 — Home language distribution. Stats SA",

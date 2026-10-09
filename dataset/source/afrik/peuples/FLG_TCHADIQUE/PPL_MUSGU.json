@@ -101,7 +101,8 @@
       {
         "title": "Academia.edu — Mousgoum architecture (Oxford University Press, 2014)",
         "url": "https://www.academia.edu/71511192/Mousgoum_architecture",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Architecture in Development — Mousgoum dwellings",
@@ -116,7 +117,8 @@
       {
         "title": "SIL Ethnologue — Musgu (mug)",
         "url": "https://www.ethnologue.com/language/mug/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "The African History Channel — The tolekakay of the Musgum",

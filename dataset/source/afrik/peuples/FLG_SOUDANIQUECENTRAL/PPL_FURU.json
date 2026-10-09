@@ -87,12 +87,14 @@
       {
         "title": "SIL Ethnologue — Furu language (fuu)",
         "url": "https://www.ethnologue.com/language/fuu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Furu",
         "url": "https://glottolog.org/resource/languoid/id/furu1242",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Furu in Congo, Democratic Republic of",

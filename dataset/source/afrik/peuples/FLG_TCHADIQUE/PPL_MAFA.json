@@ -111,7 +111,8 @@
       {
         "title": "SIL Ethnologue — Mafa (maf)",
         "url": "https://www.ethnologue.com/language/maf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Gbaya Art Blog — The Mafa community",

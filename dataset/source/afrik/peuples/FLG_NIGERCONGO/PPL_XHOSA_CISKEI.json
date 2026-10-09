@@ -91,7 +91,8 @@
       {
         "title": "South African History Online — Ciskei",
         "url": "https://www.sahistory.org.za/place/ciskei",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Human Rights Watch — South Africa: Ciskei: Ten Years on",
@@ -101,17 +102,20 @@
       {
         "title": "SIL Ethnologue — Xhosa (xho)",
         "url": "https://www.ethnologue.com/language/xho/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Statistics South Africa — Census 2011",
         "url": "https://www.statssa.gov.za/census/census_2011/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "CIA World Factbook — South Africa",
         "url": "https://www.cia.gov/the-world-factbook/countries/south-africa/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

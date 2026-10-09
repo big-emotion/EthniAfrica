@@ -100,17 +100,20 @@
       {
         "title": "SIL Ethnologue — Southern Bobo Madare (bwq)",
         "url": "https://www.ethnologue.com/language/bwq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Chazen Museum of Art — Bobo Mask",
         "url": "https://chazen.wisc.edu/collection/30683/mask/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Le Moal, Guy. Les Bobo. Nature et fonction des masques. Paris : ORSTOM, 1980",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Olson, James S. Peoples of Africa. Westport : Greenwood Press, 1996",

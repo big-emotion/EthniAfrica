@@ -87,7 +87,8 @@
       {
         "title": "Côte d'Ivoire – Ethnic groups and languages – Country Studies",
         "url": "https://countrystudies.us/ivory-coast/20.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       }
     ]
   }

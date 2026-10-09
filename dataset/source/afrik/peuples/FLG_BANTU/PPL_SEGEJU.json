@@ -80,7 +80,8 @@
       {
         "title": "Segeju Language (SEG) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/seg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Segeju in Tanzania Profile – Joshua Project, 2025",

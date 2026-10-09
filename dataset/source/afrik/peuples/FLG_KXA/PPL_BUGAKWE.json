@@ -111,12 +111,14 @@
       {
         "title": "SIL Ethnologue — Kxoe language (xuu)",
         "url": "https://www.ethnologue.com/language/xuu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Kxoe language entry",
         "url": "https://glottolog.org/resource/languoid/id/kxoe1243",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "IWGIA — Indigenous Peoples in Africa: Botswana",
@@ -126,7 +128,8 @@
       {
         "title": "Statistics Botswana — Population & Housing Census 2022",
         "url": "https://www.statsbots.org.bw",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

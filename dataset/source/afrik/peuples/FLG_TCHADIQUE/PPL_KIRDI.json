@@ -135,7 +135,8 @@
       {
         "title": "CIA World Factbook, Cameroon – CIA 2024",
         "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Jean Hurault, Quelques aspects de la structure sociale des montagnards kirdi du nord Cameroun – Bulletin de l'IFAN, Dakar, serie B, 1958, p.111-122",
@@ -150,7 +151,8 @@
       {
         "title": "Ethnologue, Mafa (maf) – SIL International 2024",
         "url": "https://www.ethnologue.com/language/maf/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

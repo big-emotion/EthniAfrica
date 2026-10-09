@@ -110,12 +110,14 @@
       {
         "title": "CIA World Factbook – Comoros",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Comorian languages (swb, wni, zdj, wlc)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements nationaux comoriens",
@@ -135,33 +137,39 @@
       {
         "title": "ONU – Données démographiques 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Comores",
         "url": "https://www.unfpa.org/data/world-population/KM",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Comoros (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Claude Allibert, « Le mot Komr dans l'océan Indien », Topoi. Orient-Occident, 10-1, 2000, p. 319-334",
         "url": "https://doi.org/10.3406/topoi.2000.1883",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article universitaire sur le mot arabe komr. Il établit que komr désignait les Nuages de Magellan et servait de nom générique à plusieurs grandes terres de l'océan Indien occidental, Madagascar comprise, et que la lecture « îles de la Lune » est fausse. Il cite les mises en garde d'auteurs arabes médiévaux sur la prononciation. Article lu en entier le 16 septembre 2026 ; les textes arabes qu'il cite l'ont été à travers lui."
       },
       {
         "title": "A. Clockers, « Histoire des noms anciens de Madagascar : réévaluations et nouvelles hypothèses », Études océan Indien, 51-52, 2014",
         "url": "https://doi.org/10.4000/oceanindien.1704",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Confirme le lien entre komr et les Nuages de Magellan, mais rappelle que la racine arabe renvoie à la clarté lumineuse, et donc aussi à la lune. Article lu en septembre 2026."
       }
     ],

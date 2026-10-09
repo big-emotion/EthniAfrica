@@ -83,12 +83,14 @@
       {
         "title": "Chumburung – Glottolog 5.3, ISO 639-3 ncu",
         "url": "https://glottolog.org/resource/languoid/id/chum1261",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Chumburung language and alphabet – Omniglot, 2023",
         "url": "https://www.omniglot.com/writing/chumburung.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Chumburung history and religion – Open Book / Northern Ghana Peoples",

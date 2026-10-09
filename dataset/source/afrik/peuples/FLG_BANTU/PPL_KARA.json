@@ -82,7 +82,8 @@
       {
         "title": "Kara (Tanzania) – Glottolog 5.3, code kara1481",
         "url": "https://glottolog.org",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

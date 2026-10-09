@@ -584,17 +584,20 @@
       {
         "title": "SIL Ethnologue – Languages of Cameroon",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Cameroon",
         "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Cameroun",
         "url": "https://www.unfpa.org/data/world-population/CM",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Politics and the Occult in Postcolonial Africa\"",
@@ -619,12 +622,14 @@
       {
         "title": "CIA World Factbook – Cameroon (ethnic groups, 2018 est.)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Treaty of Protection with Chiefs of Cameroon Coast (12 juillet 1884)",
@@ -636,6 +641,7 @@
         "title": "P. Tchawa, « Le Cameroun : une « Afrique en miniature » ? », Les Cahiers d'Outre-Mer, n° 259, 2012",
         "url": "https://journals.openedition.org/com/6640",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article scientifique en accès ouvert sur OpenEdition ; lu pour la formule « Afrique en miniature » et la représentation des familles linguistiques."
       }
     ],

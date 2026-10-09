@@ -72,7 +72,8 @@
       {
         "title": "Machinga Language (MVW) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/mvw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Machinga People and their Culture in Tanzania – My Free School Tanzania, 2014",
@@ -87,7 +88,8 @@
       {
         "title": "Machinga – Glottolog 5.3, mach1265",
         "url": "https://glottolog.org/resource/languoid/id/mach1265",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

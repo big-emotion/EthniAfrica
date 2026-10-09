@@ -104,12 +104,14 @@
       {
         "title": "Ethnologue (SIL International) — Taa language (nmn)",
         "url": "https://www.ethnologue.com/language/nmn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — West !Xoon",
         "url": "https://glottolog.org/resource/languoid/id/xooo1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Sorosoro — Tuu languages",
@@ -134,12 +136,14 @@
       {
         "title": "Adhikari, Mohamed — The Destruction of Cape San Society under Dutch Colonial Rule. South African Historical Journal, 2010",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Boden, Gertrud — Khoisan Kinship Terminologies in Diachronic Perspective. University of Edinburgh / Kalahari Basin Area project",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "IWGIA — Indigenous Peoples in Africa",
@@ -149,7 +153,8 @@
       {
         "title": "UNESCO Memory of the World — Bleek and Lloyd Collection, 1997",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       }
     ]
   }

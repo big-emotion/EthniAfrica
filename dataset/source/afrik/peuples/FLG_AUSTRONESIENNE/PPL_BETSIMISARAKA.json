@@ -107,22 +107,26 @@
       {
         "title": "Ethnologue — Northern Betsimisaraka Malagasy (bmm), (consulté 2025)",
         "url": "https://www.ethnologue.com/language/bmm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Southern Betsimisaraka Malagasy (bzc), (consulté 2025)",
         "url": "https://www.ethnologue.com/language/bzc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Madagascar, (consulté 2025)",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Beaujard, Philippe. Les mondes de l'océan Indien. Paris : Armand Colin, 2012",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

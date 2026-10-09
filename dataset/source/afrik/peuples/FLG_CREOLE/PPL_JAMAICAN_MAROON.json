@@ -67,12 +67,14 @@
           "title": "Maroon heritage of Moore Town — Representative List of the Intangible Cultural Heritage of Humanity",
           "url": "https://ich.unesco.org/en/RL/maroon-heritage-of-moore-town-00053",
           "tier": "referenced",
+          "source_kind": "intergovernmental",
           "notes": "Fiche UNESCO du patrimoine culturel immatériel documentant les cérémonies Kromanti Play et leur langue rituelle d'origine akan."
         },
         {
           "title": "The Maroon Treaty of 1739",
           "url": "https://link.springer.com/chapter/10.1007/978-3-031-81880-6_2",
           "tier": "referenced",
+          "source_kind": "academic",
           "notes": "Chapitre d'ouvrage académique (Springer) sur le traité de 1739 entre Cudjoe et les autorités britanniques, qui institutionnalise l'autonomie marronne issue de la résistance au marronnage."
         }
       ]
@@ -125,6 +127,7 @@
         "title": "Meet the legendary community that fought for its freedom in Jamaica",
         "url": "https://www.nationalgeographic.com/culture/article/legendary-community-that-fought-for-its-freedom-in-jamaica",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Presse établie (National Geographic) ; source d'une estimation de population (environ 700 personnes dans les villages marrons autonomes, selon l'Institute of Jamaica) et d'éléments sur les origines akan/coromantee."
       },
       {

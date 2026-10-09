@@ -97,7 +97,8 @@
       {
         "title": "Omniglot — Karamojong language and alphabet",
         "url": "https://www.omniglot.com/writing/karamojong.php",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Swordshare Map — Ng'akarimojong ISO 639-3 kdj",
@@ -122,7 +123,8 @@
       {
         "title": "The New Humanitarian — Uganda's fight against cattle raiders is dividing Karamoja communities (2024)",
         "url": "https://www.thenewhumanitarian.org/analysis/2024/04/12/ugandas-fight-against-cattle-raiders-dividing-karamoja-communities",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "University of Wisconsin — Ngakarimojong: Animals and the Age Set System",

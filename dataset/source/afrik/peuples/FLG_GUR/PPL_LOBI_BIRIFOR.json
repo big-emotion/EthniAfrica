@@ -122,7 +122,8 @@
       {
         "title": "Glottolog — Lobi",
         "url": "https://glottolog.org/resource/languoid/id/lobi1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Malba Birifor (malb1235)",

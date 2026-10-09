@@ -93,22 +93,26 @@
       {
         "title": "SIL Ethnologue - Amharic (amh)",
         "url": "https://www.ethnologue.com/language/amh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog - Amharic (amha1245)",
         "url": "https://glottolog.org/resource/languoid/id/amha1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethiopian Central Statistics Agency - Census 2007",
         "url": "https://www.csa.gov.et/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Encyclopaedia Aethiopica. Harrassowitz Verlag, 2003-2014",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Phillipson, David W. - Ancient Ethiopia. The British Museum Press, 1998",
@@ -118,35 +122,41 @@
       {
         "title": "Levine, Donald N. - Wax and Gold : Tradition and Innovation in Ethiopian Culture. University of Chicago Press, 1965",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook - Ethiopia",
         "url": "https://www.cia.gov/the-world-factbook/countries/ethiopia/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Marcus, Harold G. - A History of Ethiopia. University of California Press, 1994 (éd. rév. 2002)",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Cité par Wikipédia (Ras (title), note 5) pour l'étymologie de ras (« tête », titre de noblesse équivalent à duc) ; cité par Wikipédia (Haile Selassie, note 90) pour la date du 7 octobre 1928 (Tafari fait negus). Ouvrage non consulté directement, citation vérifiée via son usage sur Wikipédia."
       },
       {
         "title": "Witakowski, Witold ; Balicka-Witakowska, Ewa - \"Solomon in Ethiopian Tradition\", in The Queen of Sheba and Her Sons, Brill, 2013",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Cité par Wikipédia (1955 Constitution of Ethiopia, note 7) pour le texte de l'article 2 sur la lignée impériale revendiquée jusqu'à Ménélik Ier, la reine de Saba et Salomon. Ouvrage non consulté directement."
       },
       {
         "title": "Murrell, Nathaniel Samuel ; Spencer, William D. ; McFarlane, Adrian A. (dir.) - Chanting Down Babylon: The Rastafari Reader. Temple University Press, 1998",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Cité par Wikipédia (Lion of Judah, note 11, chapitre de Clinton Chislom) pour le titre impérial « conquering Lion of Judah, elect of God » ; cité par Wikipédia (Haile Selassie, note 45) pour l'étymologie « Haile Selassie » = « puissance de la Trinité ». Ouvrage non consulté directement."
       },
       {
         "title": "Edmonds, Ennis B. - Rastafari: A Very Short Introduction. Oxford University Press, 2012",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Un des quatre ouvrages cités par Wikipédia (Rastafari, note 30, p. 32) pour l'origine du nom « Rastafari », repris de « Ras Tafari Makonnen ». Ouvrage non consulté directement."
       }
     ]

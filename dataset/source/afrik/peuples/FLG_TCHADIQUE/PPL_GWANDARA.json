@@ -96,7 +96,8 @@
       {
         "title": "SIL Ethnologue — Gwandara language (gwn)",
         "url": "https://www.ethnologue.com/language/gwn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Gwandara in Nigeria",
@@ -116,7 +117,8 @@
       {
         "title": "Glottolog — Gwandara (gwn)",
         "url": "https://glottolog.org/resource/languoid/id/duhw1236",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Swordshare Map — Gwandara (gwn)",
@@ -126,7 +128,8 @@
       {
         "title": "CIA World Factbook — Nigeria",
         "url": "https://www.cia.gov/the-world-factbook/countries/nigeria/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

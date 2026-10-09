@@ -352,17 +352,20 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – South Sudan",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of South Sudan",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements sud-soudanais",
@@ -382,22 +385,26 @@
       {
         "title": "CIA World Factbook – South Sudan (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Soudan du Sud",
         "url": "https://www.unfpa.org/data/world-population/SS",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Ambassade du Soudan du Sud en Belgique, « Ethnic groups in South Sudan »",
         "url": "https://southsudanembassy.be/nl/producten/south-sudan/culture/ethnic-groups-in-south-sudan",
         "tier": "referenced",
+        "source_kind": "government",
         "notes": "Page publiée par une ambassade, et non par un institut de statistique. Estimations de 2011 : les Dinka forment environ 35,8 % de la population, les Nuer 15,6 % (« second largest ethnic group »). La page ne chiffre pas les Shilluk. Page lue le 7 octobre 2026."
       },
       {

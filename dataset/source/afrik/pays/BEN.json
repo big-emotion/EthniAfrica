@@ -692,17 +692,20 @@
       {
         "title": "SIL Ethnologue – Languages of Benin",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Benin",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Bénin",
         "url": "https://www.unfpa.org/data/world-population/BJ",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Law, Robin – \"The Kingdom of Allada\"",
@@ -722,7 +725,8 @@
       {
         "title": "UNESCO – Tatas somba du Bénin (patrimoine mondial)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Recensements béninois",
@@ -737,24 +741,28 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Ordonnance n° 76-6 du 26 janvier 1976 portant dénomination des sociétés d'État et d'économie mixte, des établissements publics et autres institutions de l'État, République populaire du Bénin",
         "url": "https://sgg.gouv.bj/doc/ordonnance-1976-6/download",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Publiée par le secrétariat général du gouvernement béninois. Ses visas citent l'ordonnance n° 75-80 du 2 décembre 1975 portant dénomination de l'État, ainsi que le discours du 30 novembre 1975 : c'est ce qui établit à la fois l'instrument et la double date. L'ordonnance 75-80 elle-même n'est pas numérisée et n'a pas été lue. Document téléchargé et lu le 9 septembre 2026 ; sa reconnaissance de caractères est médiocre."
       },
       {
         "title": "Nations unies, Traités multilatéraux déposés auprès du Secrétaire général, informations historiques",
         "url": "https://treaties.un.org/pages/HistoricalInfo.aspx",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Le dépositaire note que le pays s'appelait Dahomey jusqu'au 2 décembre 1975, ce qui recoupe exactement l'ordonnance citée en visa. La page des États membres du site des Nations unies donne pour sa part une date de 1974 et un nom de République du Bénin : les deux sont erronés. Page lue le 9 septembre 2026."
       },
       {
         "title": "Osarhieme Benson Osadolor, The Military System of Benin Kingdom, c. 1440-1897, thèse de doctorat, Universität Hamburg, 2001",
         "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/3156/2/Disse.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Travail d'un historien edo. Il établit que les Edo se nomment eux-mêmes Edo et non Bénin, que la graphie du nom ancien est Ubini, et il expose le désaccord sur la forme portugaise : Ekhaguosa Aisien la fait venir de l'itsekiri Ubini, Alan Ryder objecte qu'aucune langue du sud du Nigeria n'en offre une source plausible, et l'auteur suit Ryder. Il distingue aussi Ubini de l'expression yoruba Ile-Ibinu, « la terre de la contrariété », qu'Oranmiyan aurait employée et que les Edo n'ont jamais reprise. Thèse lue le 9 septembre 2026 ; les ouvrages qu'elle cite ne l'ont pas été."
       },
       {
@@ -779,18 +787,21 @@
         "title": "Midjèou Béranger Avohouémè Togbé et Lambert Roch Mongbo, « Mobilisations politiques autour du Festival international des cultures de Danxômè (Abomey, Bénin) », Cahiers d'études africaines, numéro 233, 2019, p. 193-214",
         "url": "https://doi.org/10.4000/etudesafricaines.25257",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Deux chercheurs de l'université d'Abomey-Calavi. Ils glosent Danxômè, sans réserve, par « dans le ventre du serpent » — la lecture par l'animal plutôt que par un homme nommé Dan. Article lu le 9 septembre 2026."
       },
       {
         "title": "Camilla Strandsbjerg, « Continuité et rupture dans les représentations du pouvoir politique au Bénin entre 1972 et 2001 », Cahiers d'études africaines, numéro 177, 2005, p. 71-94",
         "url": "https://doi.org/10.4000/etudesafricaines.14893",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Seule lecture parue dans une revue à comité de lecture qui donne un sens au changement de nom. Elle le rattache à une lutte dirigée contre la puissance coloniale et contre les pouvoirs royaux d'Abomey, et non à une recherche de neutralité ethnique. Article consulté le 9 septembre 2026 par une lecture assistée de la page, non sur le texte brut."
       },
       {
         "title": "Michael Houseman, « Note sur les récits de fondation des royaumes Aja-Tado du Sud Bénin », dans La terre et le pouvoir, Paris, CNRS Éditions, 2012, p. 223-248",
         "url": "https://shs.hal.science/halshs-01469933/document",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Retrace l'explication du nom jusqu'à Norris en 1789 et Dalzel en 1793, et rappelle que tout le reste des récits a été recueilli au XXe siècle, alors que des travaux récents mettent en doute l'exactitude des faits qu'ils rapportent. Avertit aussi qu'il serait abusif de confondre le Dahomey avec la chefferie de Dauma des cartes du XVIe siècle. Texte lu le 9 septembre 2026."
       }
     ],

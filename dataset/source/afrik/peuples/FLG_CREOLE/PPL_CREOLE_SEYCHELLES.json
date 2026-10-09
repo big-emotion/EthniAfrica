@@ -90,12 +90,14 @@
       {
         "title": "SIL Ethnologue — Seychelles French Creole (crs)",
         "url": "https://www.ethnologue.com/language/crs/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO — Moutya, patrimoine immatériel (2021)",
         "url": "https://ich.unesco.org/en/RL/moutya-01559",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Seychelles.com — The People of Seychelles: A Melting Pot of Cultures",
@@ -110,7 +112,8 @@
       {
         "title": "CIA World Factbook — Seychelles",
         "url": "https://www.cia.gov/the-world-factbook/countries/seychelles/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

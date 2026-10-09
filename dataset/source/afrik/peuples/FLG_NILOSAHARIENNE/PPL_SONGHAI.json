@@ -122,12 +122,14 @@
       {
         "title": "Glottolog – Koyraboro Senni ISO 639-3 : ses",
         "url": "https://glottolog.org/resource/languoid/id/koyr1242",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "South African History Online – Songhai, African Empire 15-16th Century",
         "url": "https://sahistory.org.za/article/songhai-african-empire-15-16th-century",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Minkailou, Mohamed et Abdoulaye, Ibrahima. Traditional personal names : an investigation into Songhay anthroponomastics. American Journal of Humanities and Social Sciences Research, vol. 4, n° 9, 2020, p. 49-58",
@@ -139,6 +141,7 @@
         "title": "Heath, Jeffrey. A Grammar of Koyraboro (Koroboro) Senni : the Songhay of Gao, Mali. Rüdiger Köppe, 1999",
         "url": "https://www.koeppe.de/titel_a-grammar-of-koyraboro-koroboro-senni",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "L'expression koyra-boro senn-i signifie littéralement la langue des gens de la ville."
       }
     ]

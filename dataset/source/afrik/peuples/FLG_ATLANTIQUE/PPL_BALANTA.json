@@ -120,7 +120,8 @@
       {
         "title": "Ethnologue (SIL International). Balanta Language (BLE)",
         "url": "https://www.ethnologue.com/language/ble/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -117,7 +117,8 @@
       {
         "title": "UNFPA — Cabo Verde Population 2025",
         "url": "https://www.unfpa.org/data/world-population/CV",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "International Kreol Magazine — Creole Culture in Cape Verde",
@@ -127,7 +128,8 @@
       {
         "title": "Al Jazeera — The story of morna: Cape Verde's music of displacement and return",
         "url": "https://www.aljazeera.com/features/2021/5/23/morna-the-music-of-displacement-and-return",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Brava News — Cape Verde Launches Global Survey to Map Diaspora (2025)",
@@ -137,12 +139,14 @@
       {
         "title": "JSTOR Daily — Cape Verde's Dilemma(s)",
         "url": "https://daily.jstor.org/cape-verdes-dilemmas/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Ethnologue — Cape Verdean Creole (kea)",
         "url": "https://www.ethnologue.com/language/kea/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -104,7 +104,8 @@
       {
         "title": "Glottolog 5.3 — Nama (Namibia) (nama1264), ISO 639-3 : naq",
         "url": "https://glottolog.org/resource/languoid/id/nama1264",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Encyclopaedia Britannica — Nama",
@@ -119,12 +120,14 @@
       {
         "title": "UNESCO — Intangible Cultural Heritage : Aixan/Gana/Ob#ANS TSI //Khasigu ancestral musical sound (Namibia, 2020)",
         "url": "https://ich.unesco.org/en/USL/01544",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Namibia Statistics Agency — 2023 Population and Housing Census",
         "url": "https://nsa.org.na/census/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "khoisan.org — Ritual: The Khoikhoi and the San",

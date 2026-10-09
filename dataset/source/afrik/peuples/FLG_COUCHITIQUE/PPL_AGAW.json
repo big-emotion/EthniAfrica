@@ -102,17 +102,20 @@
       {
         "title": "Ethnologue — Awngi (awn)",
         "url": "https://www.ethnologue.com/language/awn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Bilen (byn)",
         "url": "https://www.ethnologue.com/language/byn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethiopia Insight — The Ethiopian Qemant of the Agaw in perspective",
         "url": "https://www.ethiopia-insight.com/2019/03/06/the-ethiopian-qemant-of-the-agaw-in-perspective/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Tamrat, Taddesse. Church and State in Ethiopia 1270-1527. Oxford: Clarendon Press, 1972",

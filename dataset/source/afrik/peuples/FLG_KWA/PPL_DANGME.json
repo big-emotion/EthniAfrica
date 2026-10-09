@@ -109,12 +109,14 @@
       {
         "title": "Ethnologue : Dangme (ADA)",
         "url": "https://www.ethnologue.com/language/ada/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Bureau of Ghana Languages : The Krobo People - Beads and Dipo Initiation Rite",
         "url": "https://www.bgl.gov.gh/wp-content/uploads/Krobo_People_Beads_Dipo_Initiation_Rite.pdf",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Noyam Publishers : The Exodus of a West African People: Dangme in Perspective",
@@ -130,6 +132,7 @@
         "title": "Kropp Dakubu, Mary Esther (1988) – The Languages of Ghana. Kegan Paul International, pour l'International African Institute",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Survol linguistique des langues du Ghana, dont le ga-dangme et ses traditions orales."
       }
     ]

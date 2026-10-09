@@ -114,12 +114,14 @@
       {
         "title": "SIL Ethnologue - Tedaga (tuq)",
         "url": "https://www.ethnologue.com/language/tuq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue - Dazaga (dzg)",
         "url": "https://www.ethnologue.com/language/dzg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Baroin, Catherine - Anarchie et Cohesion sociale chez les Toubou. Paris : MSH, 1985",
@@ -134,12 +136,14 @@
       {
         "title": "Chapelle, Jean - Le Peuple tchadien : ses racines et sa vie quotidienne. L'Harmattan, 1980",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook - Chad, Niger, Libya",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Africa Is a Country - A forsaken people (2021)",

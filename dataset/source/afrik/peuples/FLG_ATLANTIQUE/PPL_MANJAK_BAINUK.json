@@ -114,7 +114,8 @@
       {
         "title": "Ethnologue – Manjak (mfv) et Bainuk (bcb), SIL International, 2024",
         "url": "https://www.ethnologue.com",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

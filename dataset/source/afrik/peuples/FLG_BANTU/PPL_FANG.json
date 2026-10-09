@@ -116,12 +116,14 @@
       {
         "title": "Metropolitan Museum of Art – Male Reliquary Figure (Nlo Bieri)",
         "url": "https://www.metmuseum.org/art/collection/search/312334",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Sainsbury Centre – Reliquary guardian head Fang",
         "url": "https://sainsburycentre.ac.uk/art-and-objects/240-reliquary-guardian-head-angokh-nlo-byeri/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Smithsonian Folkways – Fang Bwiti Music from Gabon",
@@ -137,6 +139,7 @@
         "title": "Glottolog 5.3 – Fang (Equatorial Guinea)",
         "url": "https://glottolog.org/resource/languoid/id/fang1246",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Code ISO 639-3 fan. Noms alternatifs relevés : Pahouin, Pahoun, Pamue."
       },
       {
@@ -161,18 +164,21 @@
         "title": "Pierre Alexandre, Proto-histoire du groupe beti-bulu-fang : essai de synthèse provisoire, Cahiers d'études africaines, 1965",
         "url": "https://www.persee.fr/doc/cea_0008-0055_1965_num_5_20_3049",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Rapporte que les Mpangwe, signalés dans l'arrière-pays de l'estuaire du Gabon peu après 1840, sont devenus dans la bouche des Européens les Pahouins ou Pamue, et rattache ces formes à la phonologie de la langue mpongwè."
       },
       {
         "title": "Raúl Sánchez Molina, El Pamue imaginado : los Fang de la literatura colonial española, UNED, 2011",
         "url": "https://portalcientifico.uned.es/documentos/5f88ea6d29995259ef291c13",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Étude du nom pamue, employé par les explorateurs, missionnaires et administrateurs pour désigner les Fang de la colonie espagnole de Guinée. Résumé consulté."
       },
       {
         "title": "Lolke J. van der Veen, The Fang coming all the way down from Egyptland?, atelier Migration du programme Eurocores OMLL, 2007",
         "url": "http://www.ddl.cnrs.fr/fulltext/Van%20Der%20Veen/Fang_WebVersion.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Présentation de recherche du laboratoire Dynamique du langage, CNRS et Université Lyon 2. Range les Fang avec les Beti et les Bulu dans le groupe dit pahouin, et tient le nom Mpangwe, Pamouay ou Pamue pour un nom donné par des voisins, probablement les Mpongwe."
       }
     ]

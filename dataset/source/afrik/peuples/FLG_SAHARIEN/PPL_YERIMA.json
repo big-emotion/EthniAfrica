@@ -84,12 +84,14 @@
       {
         "title": "Djimadoumadji Naidongarti - Les peuples preislamiques et precoloniaux du Tchad. ACAREF, 2024",
         "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2024/03/4-DJIMADOUMADJI-Naidongarti.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue - Kanembu (kbl)",
         "url": "https://www.ethnologue.com/language/kbl/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Minority Rights Group - Chad",
@@ -104,7 +106,8 @@
       {
         "title": "CIA World Factbook - Chad",
         "url": "https://www.cia.gov/the-world-factbook/countries/chad/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

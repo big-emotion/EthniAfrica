@@ -95,12 +95,14 @@
       {
         "title": "Omniglot – Shambala language",
         "url": "https://www.omniglot.com/writing/shambala.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Shambala (sham1280)",
         "url": "https://glottolog.org/resource/languoid/id/sham1280",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

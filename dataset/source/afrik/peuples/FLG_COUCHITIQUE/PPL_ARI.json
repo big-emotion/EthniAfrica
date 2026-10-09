@@ -98,12 +98,14 @@
       {
         "title": "Ethnologue – Aari [aiw]",
         "url": "https://www.ethnologue.com/language/aiw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensement éthiopien 2007, Central Statistical Agency of Ethiopia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

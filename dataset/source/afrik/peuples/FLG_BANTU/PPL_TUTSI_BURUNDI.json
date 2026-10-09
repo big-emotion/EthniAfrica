@@ -88,7 +88,8 @@
       {
         "title": "UNESCO — Ritual dance of the royal drum (2014)",
         "url": "https://ich.unesco.org/en/RL/ritual-dance-of-the-royal-drum-00989",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "World Without Genocide — Burundi 1972",
@@ -103,7 +104,8 @@
       {
         "title": "Global Voices — Burundis troubled history 1972 (2023)",
         "url": "https://globalvoices.org/2023/07/13/burundis-troubled-history-of-the-untold-1972-hutu-genocide/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Africa Faith and Justice Network — Ubushingantahe Council (2009)",
@@ -113,12 +115,14 @@
       {
         "title": "USF Digital Commons — Burundi Building Democracy on Ethnically Divided Society",
         "url": "https://digitalcommons.usf.edu/cgi/viewcontent.cgi?article=1264&context=jacaps",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Western Washington University RWI — Genocide Burundi (historical overview)",
         "url": "https://rwi.wwu.edu/genocide-burundi",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

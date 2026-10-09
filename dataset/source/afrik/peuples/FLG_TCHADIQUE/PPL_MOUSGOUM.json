@@ -94,7 +94,8 @@
       {
         "title": "Musgu Language (MUG) – Ethnologue / SIL International, 2025",
         "url": "https://www.ethnologue.com/language/mug/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Musgum, Mulwi in Chad – Joshua Project, 2025",

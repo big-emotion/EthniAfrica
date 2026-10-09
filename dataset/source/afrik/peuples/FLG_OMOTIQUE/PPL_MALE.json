@@ -100,7 +100,8 @@
       {
         "title": "Male (Ethiopia) – Glottolog 5.1",
         "url": "https://glottolog.org/resource/languoid/id/male1284",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Male (Ethiopia) – ISO 639-3 / Swordshare Map",
@@ -120,7 +121,8 @@
       {
         "title": "Donham, Donald L. Work and Power in Maale, Ethiopia. Columbia University Press, 1994",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Donham, Donald L. From ritual kings to Ethiopian landlords in Maale. In The Southern Marches of Imperial Ethiopia, 1986",

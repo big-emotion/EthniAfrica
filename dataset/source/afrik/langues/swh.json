@@ -261,12 +261,14 @@
         "title": "Glottolog 5.3 - Swahili",
         "url": "https://glottolog.org/resource/languoid/id/swah1253",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à swah1253, hors languoids portant leur propre code ISO 639-3."
       },
       {
         "title": "Robinson, Morgan J., « History of the Standard Swahili Language », Oxford Research Encyclopedia of African History, 2024",
         "url": "https://doi.org/10.1093/acrefore/9780190277734.013.1012",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article publié en ligne le 30 janvier 2024, lu en texte intégral. Source du passage sur l'origine arabe du nom, l'appartenance du swahili au groupe bantou de la côte nord-est et le classement par certains observateurs comme langue non africaine."
       },
       {

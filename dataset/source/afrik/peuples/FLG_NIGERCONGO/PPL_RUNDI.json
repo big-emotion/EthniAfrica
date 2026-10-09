@@ -121,12 +121,14 @@
       {
         "title": "SIL Ethnologue — Rundi / Kirundi (run)",
         "url": "https://www.ethnologue.com/language/run/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "eHRAF World Cultures — Barundi",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fo58/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Lugha Yangu — Karyenda and the Royal Burundi Drummers",
@@ -136,17 +138,20 @@
       {
         "title": "UNESCO — Ritual dance of the royal drum of Burundi (inscription 2014)",
         "url": "https://ich.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "BBC News — Burundi country profile",
         "url": "https://www.bbc.com/news/world-africa-13085064",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "ISTEEBU — Institut de Statistiques et d'Etudes Economiques du Burundi",
         "url": "https://www.isteebu.bi/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

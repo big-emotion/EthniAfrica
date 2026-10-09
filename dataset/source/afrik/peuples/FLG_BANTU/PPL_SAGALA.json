@@ -74,7 +74,8 @@
       {
         "title": "Sagala Language (SBM) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/sbm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Jenkins, Orville – The Sagara (Sagala) People of Tanzania, Dr. Orville Jenkins",
@@ -94,7 +95,8 @@
       {
         "title": "Bollaert, Flore – The synchronic phonology and nominal morphology of Sagala (Bantu G39, Tanzania): A preliminary study – Universiteit Gent, 2018",
         "url": "https://www.africanstudies.ugent.be/wp-content/uploads/2018/03/BA-Thesis-Flore-Bollaert.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

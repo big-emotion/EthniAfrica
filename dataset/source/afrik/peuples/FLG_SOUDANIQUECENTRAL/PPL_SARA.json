@@ -127,7 +127,8 @@
       {
         "title": "CIA World Factbook — Chad",
         "url": "https://www.cia.gov/the-world-factbook/countries/chad/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Kumakonda Travel — Sara initiation rites Ndo and Yondo",
@@ -137,22 +138,26 @@
       {
         "title": "SIL Ethnologue — Ngambay (sba)",
         "url": "https://www.ethnologue.com/language/sba/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Ngambay",
         "url": "https://glottolog.org/resource/languoid/id/ngam1268",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "New York Times — Chad Tribal Rite Disrupting Nation, 13 octobre 1974",
         "url": "https://www.nytimes.com/1974/10/13/archives/chad-tribal-rite-disrupting-nation-sole-party-is-renamed.html",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "Jean-Pierre Magnant — Terres de lignage et Etat chez les dites Sara du Sud du Tchad (XIXe-XXe siecles), Revue francaise d'histoire d'outre-mer, 1981",
         "url": "https://www.persee.fr/doc/outre_0300-9513_1981_num_68_250_2313",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Page 394 : le nom Sara impose par la colonisation aux habitants du Tchad dit utile, refuse par les Day et les Tunia, puis applique apres l'independance aux gens du Sud."
       },
       {
@@ -165,18 +170,21 @@
         "title": "Glottolog — Sar",
         "url": "https://glottolog.org/resource/languoid/id/sarr1246",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Code ISO 639-3 mwm. Noms relevés : Sar, Sara, Sara Madjingay."
       },
       {
         "title": "Glottolog — Mbay",
         "url": "https://glottolog.org/resource/languoid/id/mbay1241",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Code ISO 639-3 myb. Noms relevés : Mbai, Mbaye, Moissala Mbai, Sara Mbai."
       },
       {
         "title": "Christian Seignobos et Olivier Iyebi-Mandjek (dir.) — Atlas de la province Extreme-Nord Cameroun, glossaire, IRD Editions",
         "url": "https://books.openedition.org/irdeditions/11603",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Entree kirdi : de l'arabe qird, singe, designation pejorative des non-musulmans, reprise par les officiers francais venus du Tchad et generalisee apres 1914."
       },
       {

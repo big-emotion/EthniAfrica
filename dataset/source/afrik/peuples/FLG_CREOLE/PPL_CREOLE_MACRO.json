@@ -119,12 +119,14 @@
       {
         "title": "Newitt, Malyn. Africa and the wider world: creole communities in the Atlantic and Indian Oceans. Revista Tempo, vol. 23, n.3, 2017",
         "url": "https://www.scielo.br/j/tem/a/J9bCFkBXm7rw4B8RcTj9zWS/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Creole languages subgroup",
         "url": "https://www.ethnologue.com/subgroup/70/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "African American Registry — The Creole Communities of Africa",
@@ -134,12 +136,14 @@
       {
         "title": "Wiktionary — ISO 639-3 codes (Creole languages)",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Others",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — Country profiles (Mauritius, Seychelles, São Tomé, Sierra Leone, Cape Verde, Réunion)",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

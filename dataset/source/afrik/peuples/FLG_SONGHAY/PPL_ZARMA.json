@@ -124,7 +124,8 @@
       {
         "title": "SIL Ethnologue – Zarma (dje)",
         "url": "https://www.ethnologue.com/language/dje/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Crystal Clear Translation – The Zarma Language",
@@ -144,7 +145,8 @@
       {
         "title": "Rouch, Jean. La Religion et la magie songhay. PUF, Paris, 1960",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Rouch, Jean. Les Maitres fous (film documentaire). CNRS/Films de la Pleiade, 1955",
@@ -154,7 +156,8 @@
       {
         "title": "CIA World Factbook – Niger",
         "url": "https://www.cia.gov/the-world-factbook/countries/niger/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   },

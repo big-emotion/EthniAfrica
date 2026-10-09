@@ -98,12 +98,14 @@
       {
         "title": "Lala-Bisa Language (LEB) – Ethnologue SIL",
         "url": "https://www.ethnologue.com/language/leb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Lala-Bisa – Glottolog",
         "url": "https://glottolog.org/resource/languoid/id/lala1264",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Bisa Tribe Safari Tours – Kingsfari",

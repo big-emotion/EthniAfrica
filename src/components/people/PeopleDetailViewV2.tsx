@@ -17,7 +17,7 @@ import {
   PeopleCountriesSection,
 } from "@/components/people";
 import { FicheSources } from "@/components/fiche/FicheSources";
-import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
+import { SourceReviewChip } from "@/components/source-transparency/SourceReviewChip";
 import { FicheChronologyChapter } from "@/components/fiche/FicheChronologyChapter";
 import { peopleChronology } from "@/lib/fiche/chronology";
 import { FicheTileChapter } from "@/components/fiche/FicheTileChapter";
@@ -216,7 +216,7 @@ export function PeopleDetailViewV2({
             language={language}
             sourcesLink={
               <div className="afh-parchment-confidence">
-                <ConfidenceChip
+                <SourceReviewChip
                   language={language}
                   sourceCount={data.sources.length || null}
                   lastHumanAuditAt={null}

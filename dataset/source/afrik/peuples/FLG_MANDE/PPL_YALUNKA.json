@@ -121,12 +121,14 @@
       {
         "title": "Ethnologue – Yalunka (yal)",
         "url": "https://www.ethnologue.com/language/yal/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "University of Missouri DICE – Yalunka ethnographic profile",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Yalunka.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Encyclopaedia Britannica – Yalunka",
@@ -136,12 +138,14 @@
       {
         "title": "Glottolog - Yalunka, classee dans la famille mande (mande, mande occidental, central, susu-yalunka)",
         "url": "https://glottolog.org/resource/languoid/id/yalu1240",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "N'Daou, Mohamed Saidou - Sangalan Oral Traditions as Philosophy and Ideologies - History in Africa, 26, 1999, p. 239-267",
         "url": "https://doi.org/10.2307/3172143",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Fyle, C. Magbaily - The Solima Yalunka Kingdom: Pre-colonial Politics, Economics and Society - Nyakon Publishers, 1979, p. 6",
@@ -151,12 +155,14 @@
       {
         "title": "Orange, Didier - Hydroclimatologie du Fouta Djalon et dynamique actuelle d'un vieux paysage lateritique (Afrique de l'Ouest) - Sciences Geologiques, memoire 93, Strasbourg, 1992",
         "url": "https://www.persee.fr/doc/sgeol_0302-2684_1992_mon_93_1",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Fieloux, Michele - compte rendu de Thierno Diallo, Les institutions politiques du Fouta Dyalon au XIXe siecle (Dakar, IFAN, 1972) - Cahiers d'Etudes africaines, 14 (54), 1974, p. 402-403",
         "url": "https://www.persee.fr/doc/cea_0008-0055_1974_num_14_54_2655_t1_0402_0000_2",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

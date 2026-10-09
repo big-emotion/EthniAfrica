@@ -114,7 +114,8 @@
       {
         "title": "SIL Ethnologue — Tiemacewe Bozo (boo)",
         "url": "https://www.ethnologue.com/language/boo/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Trip Down Memory Lane — Bozo People, Masters of the River (2013)",
@@ -124,7 +125,8 @@
       {
         "title": "UNESCO ICH — Coming forth of the masks and puppets in Markala",
         "url": "https://ich.unesco.org/en/RL/coming-forth-of-the-masks-and-puppets-in-markala-01004",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Elisabeth den Otter — Masquerades of the Bozo, Kirango (Mali)",

@@ -74,7 +74,8 @@
       {
         "title": "Manda Language (MGS) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/mgs/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Manda in Tanzania – Joshua Project",

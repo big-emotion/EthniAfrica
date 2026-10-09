@@ -78,7 +78,8 @@
       {
         "title": "Gban language (GGU) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/ggu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Tauxier, Louis – Negres gouro et gagou : Centre de la Cote d'Ivoire, Librairie orientaliste P. Geuthner, 1924",

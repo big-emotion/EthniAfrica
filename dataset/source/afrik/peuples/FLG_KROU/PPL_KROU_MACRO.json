@@ -156,7 +156,8 @@
       {
         "title": "Glottolog — Kru language family",
         "url": "https://glottolog.org/resource/languoid/id/kru1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Qiraat Africa — The Kru/Kroo of West Africa",

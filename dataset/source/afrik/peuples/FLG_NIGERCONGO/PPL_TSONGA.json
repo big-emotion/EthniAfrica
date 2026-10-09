@@ -127,12 +127,14 @@
       {
         "title": "UNISA — Junod Archives (HA & HP Junod)",
         "url": "https://www.unisa.ac.za/sites/corporate/default/Library/Library-services/Archival-and-special-collections/Special-collections/Archival-collections/Junod-Archives",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Tsonga (tso)",
         "url": "https://www.ethnologue.com/language/tso/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Tsonga, Shangaan in Eswatini",

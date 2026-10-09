@@ -79,27 +79,32 @@
       {
         "title": "Xamtanga language, alphabet and pronunciation – Omniglot, 2023",
         "url": "https://www.omniglot.com/writing/xamtanga.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Xamtanga Language (XAN) – Ethnologue, SIL International, 2025",
         "url": "https://www.ethnologue.com/language/xan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Xamtanga – Glottolog 5.3",
         "url": "https://glottolog.org/resource/languoid/id/xamt1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Cushitic Language Groups Ethiopia – Country Studies, US Library of Congress",
         "url": "https://countrystudies.us/ethiopia/50.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Sociolinguistic Survey Report of the Khamir Language of Ethiopia – Academia.edu, 2015",
         "url": "https://www.academia.edu/10128423/Sociolinguistic_Survey_Report_of_the_Khamir_Language_of_Ethiopia",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Agew People: History and Culture – Horn of Africa Evangelical Mission",

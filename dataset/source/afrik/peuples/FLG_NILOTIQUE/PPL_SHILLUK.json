@@ -98,17 +98,20 @@
       {
         "title": "Ethnologue — Shilluk (SHK)",
         "url": "https://www.ethnologue.com/language/shk/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ASJP Database — Shilluk",
         "url": "https://asjp.clld.org/languages/SHILLUK_2",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Graeber, David. The divine kingship of the Shilluk: On violence, utopia, and the human condition. HAU: Journal of Ethnographic Theory, 2011",
         "url": "https://www.journals.uchicago.edu/doi/full/10.14318/hau1.1.002",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Seligman, C.G. The Shilluk of the Upper Nile. 1911. Études anthropologiques fondatrices",
@@ -123,17 +126,20 @@
       {
         "title": "eHRAF World Cultures — Shilluk",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fj23/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — South Sudan",
         "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "UN Peacekeeping — Fashoda history",
         "url": "https://peacekeeping.un.org/en/sign-of-peace-past-british-and-french-ambassadors-visit-historical-town-where-peace-deal-was-reached",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

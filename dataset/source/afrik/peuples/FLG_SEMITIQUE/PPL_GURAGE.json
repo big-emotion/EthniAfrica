@@ -92,17 +92,20 @@
       {
         "title": "Ethnologue — Sebat Bet Gurage (sgw), Soddo (gru), Silte (stv)",
         "url": "https://www.ethnologue.com/language/sgw",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Nature — Cultural and symbolic value of enset crop in Sebat Bet Gurage",
         "url": "https://www.nature.com/articles/s41599-022-01179-4",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "PMC/Frontiers in Pharmacology — Enset landraces knowledge in Gurage community",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12075952/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Gurage Kistane in Ethiopia",
@@ -112,12 +115,14 @@
       {
         "title": "Ethiopian Central Statistical Agency (CSA) — Population and Housing Census 2007",
         "url": "https://www.csa.gov.et",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Encyclopaedia Aethiopica, vol. 2 (Uhlig ed.), Harrassowitz Verlag, 2005",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

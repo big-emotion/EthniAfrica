@@ -6,7 +6,7 @@
  * for contested events, all server-rendered.
  */
 
-import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
+import { SourceReviewChip } from "@/components/source-transparency/SourceReviewChip";
 import { getTranslation } from "@/lib/translations";
 import type { MigrationNarrativeEntry } from "@/lib/migrationDataTransformer";
 import type { Language } from "@/types/shared";
@@ -52,7 +52,7 @@ export function MigrationNarrative({
             {event.paragraphs.map((paragraph, index) => (
               <p key={index} className="mt-3 text-foreground">
                 {paragraph.text}{" "}
-                <ConfidenceChip
+                <SourceReviewChip
                   id={`${event.id}-paragraph-${index}`}
                   sourceCount={paragraph.confidence?.sourceCount ?? null}
                   lastHumanAuditAt={

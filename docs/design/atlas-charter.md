@@ -532,7 +532,7 @@ patronymes surface, and of **zero components on countries, zero on language
 families and zero on languages** — the three surfaces a search engine lands on
 first. The claim was a charter sentence, not a property of the site.
 
-Two objects answer it, and they must not be collapsed. `ConfidenceChip` stays
+Two objects answer it, and they must not be collapsed. `SourceReviewChip` stays
 what it is: a **claim-level** mark at the end of an assertion, opening that
 assertion's source chain. `ProvenanceBanner` is the **page-level** object, and
 everything below is what it is allowed to be.

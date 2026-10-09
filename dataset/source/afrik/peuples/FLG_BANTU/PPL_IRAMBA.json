@@ -96,7 +96,8 @@
       {
         "title": "Nilamba Language – Ethnologue",
         "url": "https://www.ethnologue.com/language/nim/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Bantu, Central-Tanzania People Cluster – Joshua Project, 2025",

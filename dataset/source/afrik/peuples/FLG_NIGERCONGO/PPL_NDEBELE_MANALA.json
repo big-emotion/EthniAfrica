@@ -91,7 +91,8 @@
       {
         "title": "South African History Online — Ndebele",
         "url": "https://sahistory.org.za/article/ndebele",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Kruger Park Africa — The Southern Ndebele tribe",
@@ -106,12 +107,14 @@
       {
         "title": "Ethnologue (SIL) — isiNdebele [nbl]",
         "url": "https://www.ethnologue.com/language/nbl",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Statistics South Africa — Census 2011",
         "url": "https://www.statssa.gov.za/census/census_2011/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

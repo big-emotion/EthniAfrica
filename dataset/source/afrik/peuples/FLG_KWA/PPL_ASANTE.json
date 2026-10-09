@@ -101,17 +101,20 @@
       {
         "title": "Ghana National Commission on Culture — Ashanti Region",
         "url": "https://ghanaculture.gov.gh/ashanti-region/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue — Twi language (twi/aka)",
         "url": "https://www.ethnologue.com/language/twi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ghana Statistical Service — Population Projections Report Ashanti Region 2021-2050",
         "url": "https://statsghana.gov.gh/gssmain/fileUpload/pressrelease/06_Ashanti%20Region_Fau_final.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "R.S. Rattray — Asante Law and Constitution. Oxford: Clarendon Press, 1929",

@@ -99,12 +99,14 @@
       {
         "title": "Glottolog - Hehe",
         "url": "https://glottolog.org/resource/languoid/id/hehe1240",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Omniglot - Hehe language",
         "url": "https://www.omniglot.com/writing/hehe.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Mkwawa Memorial",
@@ -124,7 +126,8 @@
       {
         "title": "African Union Library - Mkwawa and the Hehe Wars",
         "url": "https://library.au.int/mkwawa-and-hehe-wars-2",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

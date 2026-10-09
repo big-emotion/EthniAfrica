@@ -87,7 +87,8 @@
       {
         "title": "Ethnologue SIL – Tera language (ttr)",
         "url": "https://www.ethnologue.com/language/ttr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project – Tera in Nigeria",
@@ -102,7 +103,8 @@
       {
         "title": "Triumph Newspapers – Ngwarda annual harvesting festival of Tera people, 2024",
         "url": "https://triumphnewspapers.ng/ngwarda-annual-harvesting-festival-of-tera-people-in-zambuk-gombe-state/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "Tench, Paul. A New Orthography in Tera",
@@ -117,7 +119,8 @@
       {
         "title": "Blench, Roger. 2006. Afro-Asiatic Languages. Cambridge University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Peoplegroups.org – Tera in Nigeria, population 2024",

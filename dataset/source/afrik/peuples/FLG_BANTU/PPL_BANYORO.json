@@ -96,12 +96,14 @@
       {
         "title": "Bunyoro-Kitara Kingdom – History",
         "url": "http://www.bunyoro-kitara.org/7.html",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue – Nyoro language (nyo)",
         "url": "https://www.ethnologue.com/language/nyo/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes – Banyoro people",
@@ -116,7 +118,8 @@
       {
         "title": "CIA World Factbook – Uganda",
         "url": "https://www.cia.gov/the-world-factbook/countries/uganda/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

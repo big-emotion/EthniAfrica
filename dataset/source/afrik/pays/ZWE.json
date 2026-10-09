@@ -156,17 +156,20 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Zimbabwe",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Ethnologue – Languages of Zimbabwe",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Études anthropologiques sur les peuples bantous du Zimbabwe",
@@ -186,22 +189,26 @@
       {
         "title": "CIA World Factbook – Zimbabwe (ethnic groups, 2012 census)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Zimbabwe",
         "url": "https://www.unfpa.org/data/world-population/ZW",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNESCO World Heritage Centre – Great Zimbabwe National Monument",
         "url": "https://whc.unesco.org/en/list/364/",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Bien inscrit sur la Liste du patrimoine mondial en 1986 ; la synthèse de sa valeur universelle exceptionnelle le date de 1100 à 1450 de notre ère."
       }
     ],

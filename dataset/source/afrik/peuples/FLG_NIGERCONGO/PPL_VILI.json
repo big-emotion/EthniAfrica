@@ -121,12 +121,14 @@
       {
         "title": "SIL ISO 639-3 — Vili (vif)",
         "url": "https://iso639-3.sil.org/code/vif",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Vili language (vif)",
         "url": "https://www.ethnologue.com/language/vif/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Vili, Fioti in Congo, Republic of the",

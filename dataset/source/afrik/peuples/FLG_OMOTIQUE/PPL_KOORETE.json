@@ -103,7 +103,8 @@
       {
         "title": "SIL Ethnologue — Koorete language [kqy]",
         "url": null,
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Beletu Redda — The Morphology of Koorete. Addis Ababa University",
@@ -113,7 +114,8 @@
       {
         "title": "Ethiopian Central Statistical Agency — Summary and Statistical Report of the 2007 Population and Housing Census. Addis Ababa, 2008",
         "url": null,
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Britannica — Omotic Languages",

@@ -3,7 +3,7 @@
 import * as React from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
 
-import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
+import { SourceReviewChip } from "@/components/source-transparency/SourceReviewChip";
 import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
 import { isEstimateRound, type GameRound } from "@/lib/games/gameKinds";
@@ -149,7 +149,7 @@ export const GameAnswerReveal = ({
         ) : null}
 
         {round.reveal.confidence ? (
-          <ConfidenceChip
+          <SourceReviewChip
             variant="inline"
             language={language}
             id={`game-reveal-${round.subjectId}`}

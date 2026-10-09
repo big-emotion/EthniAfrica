@@ -95,12 +95,14 @@
       {
         "title": "SIL Ethnologue — Teke-Tege (teg)",
         "url": "https://www.ethnologue.com/language/teg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Ngungwel (ngz)",
         "url": "https://www.ethnologue.com/language/ngz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Teke, Northern in Congo, Republic of the",
@@ -120,7 +122,8 @@
       {
         "title": "Vansina, Jan. The Tio Kingdom of the Middle Congo 1880-1892. Oxford University Press, 1973",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

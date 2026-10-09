@@ -82,7 +82,8 @@
       {
         "title": "Nyamwanga Language – Ethnologue",
         "url": "https://www.ethnologue.com/language/mwn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Nyamwanga in Tanzania – Joshua Project, 2025",

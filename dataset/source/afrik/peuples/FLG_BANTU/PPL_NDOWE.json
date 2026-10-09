@@ -94,7 +94,8 @@
       {
         "title": "Benga language and alphabet – Omniglot",
         "url": "https://www.omniglot.com/writing/benga.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "What are the different tribes of Equatorial Guinea – SAIGA Tours",
@@ -104,7 +105,8 @@
       {
         "title": "Equatorial Guinea – South African History Online",
         "url": "https://sahistory.org.za/place/equatorial-guinea",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       }
     ]
   }

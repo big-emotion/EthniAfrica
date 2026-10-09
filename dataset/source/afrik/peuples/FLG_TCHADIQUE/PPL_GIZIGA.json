@@ -93,7 +93,8 @@
       {
         "title": "Pontie, Guy (1973). Les Guiziga du Cameroun septentrional. Paris : ORSTOM",
         "url": "https://horizon.documentation.ird.fr/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Podlewski, A.M. (1966). La dynamique des principales populations du Nord-Cameroun. Cahiers ORSTOM, serie Sciences Humaines",
@@ -103,12 +104,14 @@
       {
         "title": "SIL Ethnologue — Giziga (giz)",
         "url": "https://www.ethnologue.com/language/giz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Giziga, North (gis)",
         "url": "https://www.ethnologue.com/language/gis/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Gisiga people",

@@ -89,17 +89,20 @@
       {
         "title": "Ethnologue — Basketo language (bst)",
         "url": "https://www.ethnologue.com/language/bst/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Azeb Amha et Dirk Bustorf : 'Basketo'. In: Encyclopaedia Aethiopica, vol. 1. Wiesbaden, 2003, pp. 499-500",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Haberland, Eike : 'Die Basketto und verwandte Stämme'. In: Altvölker Süd-Äthiopiens. Stuttgart, 1959, pp. 189-226",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "The Tribal Society — The Basketo people",

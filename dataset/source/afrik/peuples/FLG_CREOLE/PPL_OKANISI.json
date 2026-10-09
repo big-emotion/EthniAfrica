@@ -60,12 +60,14 @@
           "title": "Marcel van der Linden, « The Okanisi: A Surinamese Maroon Community, c.1712-2010 »",
           "url": "https://www.cambridge.org/core/journals/international-review-of-social-history/article/okanisi-a-surinamese-maroon-community-c17122010/FEB980D8422F82D4154CEFAE020DAA04",
           "tier": "referenced",
+          "source_kind": "academic",
           "notes": "Article de recherche publié dans International Review of Social History, vol. 60, n°3 (Cambridge University Press, 2015). Il retrace trois siècles d'histoire de la communauté okanisi et reprend le nom « Okanisi », que le peuple emploie lui-même, plutôt que les noms habituellement donnés de l'extérieur."
         },
         {
           "title": "Kenneth Bilby, « How the \"Older Heads\" Talk: A Jamaican Maroon Spirit Possession Language and Its Relationship to the Creoles of Suriname and Sierra Leone »",
           "url": "https://www.jstor.org/stable/41849105",
           "tier": "referenced",
+          "source_kind": "academic",
           "notes": "Etude academique documentant la parente entre les langues rituelles de possession des peuples marrons du Suriname et d'autres societes marronnes des Ameriques, temoin d'un heritage religieux africain commun."
         }
       ]
@@ -108,18 +110,21 @@
       {
         "title": "SIL Ethnologue — Aukan language (djk)",
         "url": "https://www.ethnologue.com/language/djk/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ISO 639-3 Registration Authority — djk",
         "url": "https://iso639-3.sil.org/code/djk",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Confirme le code ISO 639-3 djk (Eastern Maroon Creole, anciennement « Aukan »)."
       },
       {
         "title": "SIL International — A buku fu Okanisi anga Ingiisi wowtu (dictionnaire okanisi-anglais)",
         "url": "https://www.sil.org/resources/archives/13443",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Dictionnaire de reference compile avec des locuteurs okanisi (Evert D. Koanting, Carlo T. Velanti), attestant l'auto-designation « Okanisi » des le titre de l'ouvrage."
       },
       {
@@ -132,6 +137,7 @@
         "title": "Richard Price, « The Maroon Population Explosion: Suriname and Guyane »",
         "url": "https://brill.com/view/journals/nwig/87/3-4/article-p323_3.xml?language=en",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article academique evalue par les pairs, revue New West Indian Guide (Brill, 2013) ; source des chiffres demographiques."
       }
     ]

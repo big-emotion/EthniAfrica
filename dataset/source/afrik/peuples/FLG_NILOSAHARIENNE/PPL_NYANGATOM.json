@@ -97,7 +97,8 @@
       {
         "title": "Ethnologue – Nyangatom (NNJ), ISO 639-3 : nnj",
         "url": "https://www.ethnologue.com/language/nnj/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Intercontinental Cry – The Nyangatom: Pastoral Nations of Ethiopia's Omo Valley",

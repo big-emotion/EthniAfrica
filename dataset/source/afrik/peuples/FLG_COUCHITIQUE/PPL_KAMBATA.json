@@ -104,7 +104,8 @@
       {
         "title": "SIL Ethnologue — Kambaata (ktb)",
         "url": "https://www.ethnologue.com/language/ktb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Kambata in Ethiopia",
@@ -114,17 +115,20 @@
       {
         "title": "Wolde Lakew Hirigo. The Case of Kambata and Hadiya (1890s–1990s). Haramaya University, 2023",
         "url": "http://ir.haramaya.edu.et/hru/bitstream/handle/123456789/7065/Wolde%20Lakew%20Hirigo.pdf",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Tagesse Shuramo. Ethnic Interaction in South Central Ethiopia: The Case of Kambata and Hadya (1890s–1990s). Jimma University",
         "url": "https://repository.ju.edu.et/bitstream/handle/123456789/833/tagesse.2.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Recensement national ethiopien 2007. Ethiopian Statistics Services",
         "url": "https://ess.gov.et/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Kambata of Ethiopia – PeopleGroups.org, 2025",
@@ -134,7 +138,8 @@
       {
         "title": "Cushitic Language Groups Ethiopia – Country Studies, US Library of Congress",
         "url": "https://countrystudies.us/ethiopia/50.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       }
     ]
   }

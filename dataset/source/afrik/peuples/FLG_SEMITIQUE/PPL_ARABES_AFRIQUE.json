@@ -184,32 +184,38 @@
       {
         "title": "Hourani, Albert - A History of the Arab Peoples. Harvard University Press, 1991",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Lapidus, Ira M. - A History of Islamic Societies. Cambridge University Press, 2002",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue - Arabic language varieties",
         "url": "https://www.ethnologue.com/subgroups/arabic-1/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook - Country profiles (EGY, DZA, MAR, TUN, LBY, SDN, MRT, TCD, DJI, SOM)",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "ONU Population Division - World Population Prospects 2024",
         "url": "https://population.un.org/wpp/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Djimadoumadji Naidongarti - Les peuples preislamiques et precoloniaux du Tchad. ACAREF, 2024",
         "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2024/03/4-DJIMADOUMADJI-Naidongarti.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Minority Rights Group - Mauritania, Sudan, Chad profiles",

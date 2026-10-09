@@ -88,7 +88,8 @@
       {
         "title": "UNESCO World Heritage Centre – Tenzug Tallensi settlements",
         "url": "https://whc.unesco.org/en/tentativelists/1392/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Kwekudee – Tallensi people, custodians of ancient Gurunshi culture",
@@ -98,7 +99,8 @@
       {
         "title": "UBC Library – Tallensi ethnography (Fortes 1945, 1954)",
         "url": "https://open.library.ubc.ca/media/stream/pdf/52387/1.0380228/5",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Kanaga Africa Tours – The powerful Talensi fetishes in the Tongo Hills",
@@ -113,12 +115,14 @@
       {
         "title": "Fortes, Meyer. The Dynamics of Clanship among the Tallensi. Oxford University Press, 1945",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Fortes, Meyer. The Web of Kinship among the Tallensi. Oxford University Press, 1949",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

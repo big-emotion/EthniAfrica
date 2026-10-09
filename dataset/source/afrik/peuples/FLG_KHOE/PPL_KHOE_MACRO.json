@@ -134,7 +134,8 @@
       {
         "title": "Ethnologue SIL International — Khoe-Kwadi language family",
         "url": "https://www.ethnologue.com/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Khoisan languages, Classification",
@@ -149,12 +150,14 @@
       {
         "title": "South African History Online — The Khoisan",
         "url": "https://sahistory.org.za/article/khoisan",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "BMC Biology — Male-biased migration from East Africa introduced pastoralism into southern Africa",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8650298/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Google Arts & Culture — How we heal: The trance dance of San",

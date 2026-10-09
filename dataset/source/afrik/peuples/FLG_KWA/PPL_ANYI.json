@@ -107,7 +107,8 @@
       {
         "title": "Glottolog — Anyin (anyi1245)",
         "url": "https://glottolog.org/resource/languoid/id/anyi1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -118,7 +118,8 @@
       {
         "title": "South African History Online — Pedi",
         "url": "https://sahistory.org.za/article/pedi",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Britannica — Pedi",
@@ -138,12 +139,14 @@
       {
         "title": "SIL Ethnologue — Northern Sotho (nso)",
         "url": "https://www.ethnologue.com/language/nso/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Acta Theologica — The cultural and historical significance of malopo ritual",
         "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S1015-87582014000500002",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Literator — The elevation of Sepedi from a dialect to an official standard language",
@@ -158,7 +161,8 @@
       {
         "title": "Statistics South Africa — Census 2011",
         "url": "https://www.statssa.gov.za/census/census_2011/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

@@ -104,17 +104,20 @@
       {
         "title": "SIL Ethnologue – Ndebele (nde)",
         "url": "https://www.ethnologue.com/language/nde/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ZIMSTAT – Zimbabwe 2022 Population and Housing Census",
         "url": "https://www.zimstat.co.zw/population-census/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "UNFPA Zimbabwe – 2022 Census Preliminary Results",
         "url": "https://zimbabwe.unfpa.org/en/publications/2022-population-and-housing-census-preliminary-results",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Africa Federation – The History of Matabeleland",

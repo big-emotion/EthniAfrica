@@ -93,7 +93,8 @@
       {
         "title": "Omniglot – Luchazi language and alphabet",
         "url": "https://www.omniglot.com/writing/luchazi.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes – Luchazi people",
@@ -123,7 +124,8 @@
       {
         "title": "Glottolog — Luchazi (luch1239)",
         "url": "https://glottolog.org/resource/languoid/id/luch1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }
