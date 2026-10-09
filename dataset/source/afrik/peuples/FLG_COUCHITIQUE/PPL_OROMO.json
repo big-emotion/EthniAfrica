@@ -155,7 +155,7 @@
                 "url": "https://www.ethnologue.com/language/orm/",
                 "tier": "official",
                 "source_kind": "linguistic_reference",
-                "notes": "Documente l'autonyme du peuple et de la langue."
+                "notes": "La source donne le nom que les personnes concernées emploient pour elles-mêmes et leur langue."
               }
             ]
           }
@@ -214,7 +214,7 @@
               "to": null,
               "label": "XIXe siècle – 1974"
             },
-            "statement": "Terme jugé profondément insultant par les Oromo eux-mêmes ; employé par les groupes dominants éthiopiens pour les désigner depuis l'extérieur, jamais comme autodésignation. Le remplacement officiel du « misnomer Galla » par l'autonyme Oromo suit directement la révolution de 1974.",
+            "statement": "Les Oromo jugent ce terme profondément insultant. Des groupes dominants éthiopiens l'ont utilisé pour les désigner, mais les Oromo ne l'emploient pas pour se nommer. Après la révolution de 1974, Oromo remplace officiellement le nom jugé erroné, « misnomer Galla ».",
             "aspect": "imposition",
             "actors": [
               {
