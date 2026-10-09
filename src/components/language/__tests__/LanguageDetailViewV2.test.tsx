@@ -69,7 +69,7 @@ describe("LanguageDetailViewV2", () => {
     expect(
       screen.getByRole("heading", { name: "Vitalité" })
     ).toBeInTheDocument();
-    expect(screen.getByText("Donnée manquante")).toBeInTheDocument();
+    expect(screen.getByText("Information manquante")).toBeInTheDocument();
   });
 
   // @req REQ-136
@@ -81,7 +81,7 @@ describe("LanguageDetailViewV2", () => {
       />
     );
 
-    const missingMarkers = screen.getAllByText("Donnée manquante");
+    const missingMarkers = screen.getAllByText("Information manquante");
     expect(missingMarkers.length).toBeGreaterThanOrEqual(2);
   });
 
@@ -94,7 +94,7 @@ describe("LanguageDetailViewV2", () => {
     expect(
       screen.getByRole("heading", { name: "Sources" })
     ).toBeInTheDocument();
-    expect(screen.getByText("Donnée manquante")).toBeInTheDocument();
+    expect(screen.getByText("Information manquante")).toBeInTheDocument();
   });
 
   // @req REQ-151

@@ -82,7 +82,7 @@ describe("NamesBlock", () => {
   it("calls a patronyme's forms spellings", () => {
     render(<NamesBlock answer={answerOf("camara")} searchedForm="camara" />);
     expect(
-      screen.getByRole("heading", { name: "Ses graphies" })
+      screen.getByRole("heading", { name: "Ses différentes orthographes" })
     ).toBeInTheDocument();
     expect(screen.getByText("Kamana").closest("li")).toHaveTextContent(
       "Kamana · vaï"

@@ -84,7 +84,7 @@ describe("OriginBlock", () => {
     render(<OriginBlock {...originOf("camara")} />);
     expect(
       screen.getByText(
-        "Plusieurs récits expliquent ce nom ; aucun ne s'impose."
+        "Plusieurs récits proposent une origine pour ce nom. Les sources consultées ne permettent pas de choisir entre eux."
       )
     ).toBeInTheDocument();
     expect(document.querySelectorAll("[data-account]")).toHaveLength(3);

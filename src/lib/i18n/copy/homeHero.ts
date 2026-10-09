@@ -4,7 +4,7 @@ export interface HomeHeroCopy {
   question: string;
   searchPlaceholder: string;
   /**
-   * The sentence under the question, and the search field's description
+   * The short explanation under the question, and the search field's description
    * (`aria-describedby`). One string, so SWC cannot drop a space.
    */
   description: string;
@@ -47,7 +47,7 @@ export const homeHeroCopy: Record<Language, HomeHeroCopy> = {
   fr: {
     searchPlaceholder: "Ex. : Keïta, Lingala, Fulbe, Bénin",
     description:
-      "Votre nom de famille, celui d’un peuple, d’une langue ou d’un pays : d’où il vient, comment on l’appelle ailleurs, et où il vit aujourd’hui.",
+      "Découvrez l’histoire de votre nom de famille ou du nom d’un peuple, d’une langue ou d’un pays. Retrouvez ses différents noms, ses origines possibles et les endroits où il est employé.",
     question: "D’où vient ce nom ?",
     searchLabel: "Quel nom cherchez-vous ?",
     seedsIntro: "Essayez avec",

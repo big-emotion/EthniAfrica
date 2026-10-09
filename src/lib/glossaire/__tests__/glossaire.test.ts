@@ -115,7 +115,7 @@ describe("the glossary", () => {
       (entry) => entry.id === "type-de-source"
     );
     expect(sourceType?.fr).toBe("Type de source");
-    expect(sourceType?.definition).toMatch(/tradition orale/i);
+    expect(sourceType?.definition).toMatch(/récit oral/i);
 
     const tierWords =
       /palier|Officielle|Référencée|Non vérifiée|En attente d'examen/;

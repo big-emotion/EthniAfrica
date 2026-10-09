@@ -516,7 +516,9 @@ describe("/[lang]/familles/[slug] page", () => {
         "FLG_BANTU",
         7
       );
-      expect(getByRole("link", { name: "Lire la doctrine" })).toHaveAttribute(
+      expect(
+        getByRole("link", { name: "Comprendre notre méthode" })
+      ).toHaveAttribute(
         "href",
         `${getLocalizedRoute("fr", "doctrine")}/classifications-contestees@v42`
       );
@@ -535,7 +537,7 @@ describe("/[lang]/familles/[slug] page", () => {
       const { queryByRole } = await renderFamillesPage("FLG_BANTU@v7");
 
       expect(
-        queryByRole("link", { name: "Lire la doctrine" })
+        queryByRole("link", { name: "Comprendre notre méthode" })
       ).not.toBeInTheDocument();
     });
 

@@ -1,3 +1,4 @@
+import { formatNommerFigure } from "../figures";
 import type { DossierChapter } from "../types";
 
 /**
@@ -29,8 +30,8 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
     figureRefs: ["patronyme-non-hereditary", "patronyme-fiches"],
   },
   measure: {
-    value: "4 systèmes",
-    unit: "où le nom ne se transmet pas",
+    value: formatNommerFigure({ figureKey: "patronyme-non-hereditary" }),
+    unit: "fiches sur des noms qui ne se transmettent pas à l’identique",
     sourceRefs: [],
     figureRefs: ["patronyme-non-hereditary"],
   },
@@ -42,34 +43,34 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
       blocks: [
         {
           id: "trente-six-systemes",
-          text: "Nous documentons trente-six systèmes de nomination. Ils ne se ressemblent pas : un nom de clan, un nom de louange récité, un nom d'attribution géographique, un nom totémique assorti d'un interdit alimentaire. Ce que le mot « patronyme » recouvre en français est, ici, une demi-douzaine de choses différentes.",
+          text: `Nos ${formatNommerFigure({ figureKey: "patronyme-fiches" })} fiches accompagnées de sources présentent plusieurs façons de nommer une personne. Le nom peut rappeler un clan, célébrer une famille, indiquer un lieu d’origine ou renvoyer à un animal ou une plante associés au clan. Ces usages ne correspondent pas tous au nom de famille tel qu’on le connaît en français.`,
           sourceRefs: ["afrik-naming-taxonomy"],
           figureRefs: ["patronyme-fiches"],
         },
         {
           id: "quatre-systemes-non-hereditaires",
-          text: "Le chiffre qui compte est le dernier de la colonne : quatre systèmes documentés où le nom ne se transmet pas. Ce n'est pas une curiosité marginale, c'est la démonstration. L'hérédité du nom n'est pas la règle dont ces systèmes seraient l'exception ; c'est une manière de faire parmi d'autres.",
+          text: `${formatNommerFigure({ figureKey: "patronyme-non-hereditary" })} de ces fiches décrivent des noms qui ne se transmettent pas à l’identique d’une génération à l’autre. Transmettre un nom de famille est donc une façon de faire parmi d’autres.`,
           sourceRefs: [],
           figureRefs: ["patronyme-non-hereditary"],
         },
       ],
       table: {
         caption:
-          "Les trente fiches de ce tableau, selon ce que le nom désigne et la manière dont il se transmet",
+          "Exemples tirés d’un premier relevé de trente fiches, selon ce que le nom désigne et la manière dont il se transmet",
         columns: ["Système", "Fiches", "Ce que le nom désigne"],
         rows: [
           {
             cells: [
               "Nom de clan",
               "18",
-              "Une appartenance — transmise, mais aussi accordée",
+              "L’appartenance à un clan, par naissance ou par accueil de nouveaux membres",
             ],
             sourceRefs: ["afrik-naming-taxonomy"],
             figureRefs: [],
           },
           {
             cells: [
-              "Nom totémique clanique",
+              "Nom de clan associé à un animal ou une plante",
               "4",
               "Un clan, avec son interdit alimentaire et sa liste fermée de prénoms",
             ],
@@ -78,18 +79,18 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
           },
           {
             cells: [
-              "Chaîne patronymique non héréditaire",
+              "Suite de prénoms des parents",
               "4",
-              "Un individu : le prénom du père devient le second nom de l'enfant, et rien ne se fige",
+              "Une personne dont le second nom est le prénom de son père",
             ],
             sourceRefs: ["afrik-naming-taxonomy"],
-            figureRefs: ["patronyme-non-hereditary"],
+            figureRefs: [],
           },
           {
             cells: [
               "Nom de louange",
               "2",
-              "Une lignée louée — l'oríkì yoruba, le jamu mandingue",
+              "Une famille célébrée, comme dans l’oríkì yoruba ou le jamu mandingue",
             ],
             sourceRefs: ["afrik-naming-taxonomy"],
             figureRefs: [],
@@ -98,7 +99,7 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
             cells: [
               "Nisba",
               "2",
-              "Un lieu, une tribu ou un métier, dans le monde arabo-berbère",
+              "Un lieu, un groupe ou un métier, dans le monde arabo-berbère",
             ],
             sourceRefs: ["afrik-naming-taxonomy"],
             figureRefs: [],
@@ -109,23 +110,23 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
     {
       id: "letat-civil-colonial",
       stepLabel: "03 · La personne",
-      heading: "L'état civil, ou le nom rendu héréditaire par l'écriture",
+      heading: "Comment l’état civil a changé la transmission des noms",
       blocks: [
         {
           id: "le-nom-comme-outil-detat",
-          text: "Le nom de famille obligatoire et transmissible est un outil d'État avant d'être un usage. James Scott range le nom de famille permanent parmi les instruments par lesquels un État se rend ses sujets lisibles, au même titre que le recensement, la langue unifiée et les unités de mesure standard : il faut pouvoir retrouver la même famille d'une génération à l'autre, et un nom qui change à chaque naissance ne le permet pas.",
+          text: "James Scott explique que le nom de famille permanent aide un État à identifier ses habitants et à retrouver une même famille d’une génération à l’autre. Il le rapproche d’autres moyens utilisés par les administrations, comme les recensements, une langue commune et des unités de mesure partagées.",
           sourceRefs: ["civil-registration-surnames"],
           figureRefs: [],
         },
         {
           id: "le-mecanisme-colonial",
-          text: "Le mécanisme colonial est simple, et c'est ce qui le rend efficace. Entrer dans un registre — de naissance, de baptême, de propriété, de travail — exigeait un nom de forme européenne. Là où il n'en existait pas, l'agent en inscrivait un. Et il devenait héréditaire par le seul fait d'avoir été écrit : la génération suivante héritait de la ligne du registre avant d'hériter d'un usage.",
+          text: "Dans les situations coloniales décrites par la source, les registres de naissance, de baptême, de propriété ou de travail exigeaient un nom selon le modèle européen. Lorsqu’une personne n’en avait pas, un agent en inscrivait un. Ce nom pouvait ensuite être transmis à la génération suivante, même si cet usage n’existait pas auparavant.",
           sourceRefs: ["civil-registration-surnames"],
           figureRefs: [],
         },
         {
           id: "le-meme-geste",
-          text: "C'est le même geste que celui du chapitre premier, appliqué à une personne au lieu d'un peuple. Un nom cesse d'être une manière de désigner pour devenir une entrée d'état, et ce qui est inscrit ne se renégocie plus.",
+          text: "Comme pour certains noms de peuples, l’inscription dans un registre pouvait rendre un nom officiel et durable. Les façons de nommer les personnes devaient alors s’adapter aux règles administratives.",
           sourceRefs: [],
           figureRefs: [],
         },
@@ -134,7 +135,7 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
     {
       id: "le-postnom",
       stepLabel: "03 · La personne",
-      heading: "Le contre-mouvement, et sa date",
+      heading: "Le choix du postnom au Zaïre",
       blocks: [
         {
           id: "le-recours-a-lauthenticite",
@@ -144,19 +145,19 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
         },
         {
           id: "une-ordonnance-loi",
-          text: "Ce n'était pas une exhortation. Une ordonnance-loi du 30 août 1972 introduit au Code pénal une sanction contre tout ministre du culte qui conférerait un prénom étranger lors d'un baptême. Décoloniser le nom passe ici par l'instrument même qui l'avait fixé : la loi, le registre, la peine.",
+          text: "Une ordonnance-loi du 30 août 1972 prévoit une sanction contre les responsables religieux qui donnent un prénom étranger lors d’un baptême. Le changement est donc imposé par la loi, avec des conséquences pour les personnes qui ne le respectent pas.",
           sourceRefs: ["zaire-authenticite-1972"],
           figureRefs: [],
         },
         {
           id: "ce-quil-en-reste",
-          text: "Le fait qui vaut d'être retenu n'est pourtant pas le décret : c'est ce qu'il en reste. Le postnom se porte encore, un demi-siècle après la chute du régime qui l'avait imposé. Une politique du nom survit à la politique qui l'a faite, parce qu'elle a été inscrite au même endroit que la précédente.",
+          text: "Le postnom est resté en usage après la chute du régime de Mobutu. Un nom imposé par une politique peut ainsi continuer à être porté lorsque cette politique a disparu.",
           sourceRefs: ["zaire-authenticite-1972"],
           figureRefs: [],
         },
         {
           id: "les-instruments-empruntes",
-          text: "Le contre-mouvement emprunte donc les instruments qu'il conteste : la contrainte, la date d'effet, l'état civil. C'est ce qui le rend efficace, et c'est aussi ce qui rend le geste discutable — décoloniser le nom par décret reste décider à la place des gens.",
+          text: "Le régime entendait abandonner des noms liés à la colonisation. Il a pourtant lui aussi utilisé la loi et l’état civil pour décider des noms que les habitants pouvaient porter. Le choix des personnes concernées reste donc une question centrale.",
           sourceRefs: [],
           figureRefs: [],
         },
@@ -169,13 +170,13 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
       blocks: [
         {
           id: "un-nom-ne-dit-pas-lorigine",
-          text: "Un nom de famille n'indique pas l'origine d'une personne. Ce n'est pas une précaution juridique, c'est un fait historique : les systèmes de clan ont absorbé des lignées sans lien de sang, par alliance politique, par clientèle et par captivité de guerre. Une fiche peut dire qu'un nom est attesté chez un peuple ; elle ne dit jamais qu'un porteur en est.",
+          text: "Un nom de famille ne suffit pas à connaître l’origine d’une personne. Des familles sans lien de sang ont pu rejoindre un même clan par une alliance politique, une relation de protection ou la captivité de guerre. Une fiche peut indiquer qu’un nom est employé chez un peuple. Elle ne permet pas d’en déduire que toute personne portant ce nom appartient à ce peuple.",
           sourceRefs: ["dec-040"],
           figureRefs: [],
         },
         {
           id: "aucune-fonctionnalite",
-          text: "Nous nous y tenons dans notre code autant que dans notre prose : aucune fonctionnalité de ce site ne prend un nom de famille et ne rend une origine ethnique. Construire l'inverse reviendrait à reproduire en logiciel le registre de l'administration indirecte, avec la même prétention à savoir qui est quoi.",
+          text: "Le site permet de chercher l’histoire d’un nom de famille. Il ne détermine pas l’origine ethnique de la personne qui le porte.",
           sourceRefs: ["dec-040"],
           figureRefs: [],
         },
@@ -214,13 +215,13 @@ export const CHAPITRE_LA_PERSONNE: DossierChapter = {
       blocks: [
         {
           id: "lhypothese-la-moins-etayee",
-          text: "Que le nom de famille héréditaire soit une invention d'États européens exportée par la colonisation est l'affirmation la plus large de ce dossier, et la moins étayée. Ce que les sources tiennent, c'est le mécanisme : le registre exigeait un nom, et l'exigence a produit l'hérédité. La généalogie européenne de cette exigence reste, ici, une hypothèse de travail.",
+          text: "La source citée aide à comprendre comment l’état civil a rendu certains noms transmissibles. Elle ne suffit pas à établir que tous les noms de famille héréditaires auraient été inventés par des États européens, puis diffusés par la colonisation. Cette explication plus générale demanderait d’autres recherches.",
           sourceRefs: ["civil-registration-surnames"],
           figureRefs: [],
         },
         {
           id: "les-systemes-sans-fiche",
-          text: "Le relevé de trente-six fiches utilisé pour ce chapitre ne couvre qu'une partie des façons de nommer les personnes. Il ne comprend pas de fiche consacrée à l'abtirsi, la suite de noms somalie, ni au postnom. Le glossaire explique ces deux termes.",
+          text: "Le premier relevé de trente-six fiches utilisé pour ce chapitre ne comprenait pas de fiche consacrée à l’abtirsi, la suite de noms somalie, ni au postnom. Le glossaire explique ces deux termes. Ce relevé ne couvrait qu’une partie des façons de nommer les personnes.",
           sourceRefs: [],
           figureRefs: ["patronyme-fiches"],
         },

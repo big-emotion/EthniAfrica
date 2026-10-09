@@ -46,7 +46,10 @@ const fr = {
     all: "Tous les articles",
     nommerTitle: "Qui a donné ce nom ?",
     nommerNote: "Le dossier fondateur, et ses cinq chapitres.",
-    names: ["Appellations", "Autonymes, exonymes, et ce que l'écart raconte."],
+    names: [
+      "Appellations",
+      "Les noms employés par les peuples et ceux que d’autres leur donnent.",
+    ],
     migrations: [
       "Premiers repères de migrations",
       "Six événements sourcés, pas une frise de trois millénaires.",

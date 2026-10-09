@@ -132,7 +132,7 @@ describe("FragmentationView", () => {
       await user.click(trigger);
 
       await waitFor(() => {
-        expect(screen.getByText("Chaîne des sources")).toBeTruthy();
+        expect(screen.getByText("Sources de cette information")).toBeTruthy();
       });
     });
 

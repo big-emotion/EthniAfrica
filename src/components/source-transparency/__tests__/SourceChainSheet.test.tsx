@@ -205,7 +205,7 @@ describe("SourceChainSheet", () => {
     const link = screen.getByTestId("source-url-src-1");
     expect(link.className).toMatch(/line-through/);
     expect(screen.getByTestId("source-broken-badge-src-1")).toHaveTextContent(
-      /lien non résolu — signalé le 10 avril 2026/i
+      /lien inaccessible, signalé le 10 avril 2026/i
     );
   });
 

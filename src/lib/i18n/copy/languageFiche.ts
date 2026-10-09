@@ -4,7 +4,7 @@ const fr = {
   identifiers: "Identifiants",
   otherAttestedNames: "Autres noms attestés",
   languageFamily: "Famille linguistique",
-  speakers: "Locuteurs",
+  speakers: "Personnes qui parlent cette langue",
   dialects: "Dialectes",
   vehicularRole: "Rôle véhiculaire",
   vitality: "Vitalité",

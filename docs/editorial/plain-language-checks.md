@@ -315,3 +315,77 @@ now ignores these numeric grouping spaces, while the same tests still reject
 languages. Both restoration suites pass all 15 tests, and the Khoe fiche passes
 the strict plain-language check with no errors or warnings. The unrelated local
 Bissa migration log remains untouched.
+
+### Site-copy pass — 2026-10-09
+
+This pass applies the shared charter to the remaining site copy: the five Nommer
+chapters, 65 of the 66 anecdotes (the Monrovia entry already uses straightforward
+sentences), glossary definitions, home and About introductions, method page,
+search explanations, name filters, source controls and accessibility labels.
+It does not change dataset fiches, publication records, routes or feature flags.
+Existing bibliography titles and URLs remain intact. Three references already
+present in the Dioula fiche accompany the anecdote that now uses their findings.
+
+The BMAD structure review uses `reader_type=humans`. **PRESERVE** the five chapters,
+their 28 sections, examples, tables, anchors and source links. **CONDENSE** rhetorical
+conclusions, repeated editorial caveats and statements about the project's internal
+workflow. **CLARIFY** the distinction between a word count, an interpretation of
+sources and a current name usage. The five chapters' prose decreases from about
+4,000 to about 3,500 words; no section is removed. The anecdote structure remains
+a headline, two connected paragraphs and its references.
+
+The BMAD prose review uses `docs/editorial/reader-facing-register.md` as the
+`style_guide`. Repeated issues are grouped below; the diff holds each individual
+revision.
+
+| Original text                                                        | Revised text                                                               | Changes                                                                                                 |
+| -------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Un glossonyme n'est pas un ethnonyme.                                | Le nom d’une langue et le nom d’un peuple ne désignent pas la même chose.  | Explain the distinction in ordinary words.                                                              |
+| voir la version vivante                                              | voir la version à jour                                                     | Name the destination of the action.                                                                     |
+| Détails de l'assertion, niveau de confiance et sources vérifiables.  | Consultez les sources et les vérifications associées à cette information.  | Explain what the reader can do.                                                                         |
+| Lesotho et Botswana ne sont pas des noms : ce sont des conjugaisons. | Les mots Lesotho et Botswana indiquent le lien entre un pays et un peuple. | Replace a misleading slogan with a direct explanation, developed in the following paragraphs.           |
+| Le fleuve Niger ne doit rien au latin niger.                         | Le nom Niger pourrait venir d’une expression touarègue.                    | Preserve the source note's uncertainty, including the proposed Latin influence on spelling in the body. |
+
+Two anecdotes also required alignment with the project's already-researched
+fiches. Julakan names the language, not its speakers; the relation between Wangara
+and Jula is disputed. The Bété anecdote now follows the Dozon account recorded in
+the fiche instead of presenting Magwé as an uncontested ancient self-name. These
+are corrections from existing local research, not a fresh historical verification
+of all anecdotes. Source limitations remain visible, including the unverified
+account of the Fang deliberately maintaining a hostile reputation.
+
+The dossier no longer repeats stale counts in its people measure, opening prose
+or lexical table. A figure-reference formatter reads the verified ledger, also
+used by the language introduction, personal-name introduction and glossary
+example. The red test first reproduced 3,137 versus 3,117 and four “systems” versus
+176 name fiches. The historical thirty-fiche example table is explicitly marked
+as an earlier selection; its four examples no longer cite the current count of 176. Lexical-probe labels describe word occurrences rather than pretending to
+count all names imposed or considered offensive. No counter, probe or editorial
+baseline has been relaxed.
+
+Initial full-suite validation exposed old wording expectations in UI tests. Those
+expectations now follow the revised labels while retaining checks for routing,
+source access, accessibility, missing information and numerical provenance. The
+home explanation uses two short sentences while still describing the accepted
+name types and the three parts of the answer. Numeric rendering assertions
+normalize French grouping spaces in the same way as the DOM matcher.
+
+Final validation: the full editorial gate covers 2,777 files and reports zero new
+errors, 25 review warnings and 34 unchanged legacy matches. Strict checking of the
+34 rewritten library copy files reports zero errors and 20 warnings, all glossary
+headwords or cross-reference keys. Rules and the legacy baseline are unchanged.
+
+The full test run reports 10,078 passes, one failure and 21 skips. The failure is
+the existing Bissa check reading an ignored local migration log with a retired
+identifier. That file was not changed. A final render test first caught a literal
+dictionary expression in the pejorative-name label; after fixing it, all 46 Nommer
+tests pass, including the new case. Type checking, source lint (30 existing
+warnings, zero errors), changed-file formatting and documentation links pass.
+The API specification is unchanged; its developer-facing descriptions remain
+outside this site-copy pass.
+
+Browser review covers the home introduction at 320 pixels, the method page and
+name filters from mobile (320 and 430) through tablet (820) to desktop (1,440),
+and the method link card at 320 and 430 pixels. Checked pages have no horizontal
+overflow. The pinned-version banner preview did not complete; its unit tests
+pass, but this pass does not claim visual verification for that story.

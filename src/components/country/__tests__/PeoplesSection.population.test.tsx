@@ -33,7 +33,7 @@ describe("PeoplesSection — a population the fiche does not declare", () => {
   // @req REQ-092
   it("names the gap instead of the figure", () => {
     render(<PeoplesSection language="fr" data={undeclared} />);
-    expect(screen.getByText("Donnée manquante")).toBeTruthy();
+    expect(screen.getByText("Information manquante")).toBeTruthy();
   });
 
   // The shares are declared even where the headcounts are not, so the bar and

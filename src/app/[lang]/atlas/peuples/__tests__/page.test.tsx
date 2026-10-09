@@ -422,7 +422,9 @@ describe("/[lang]/peuples/[slug] page", () => {
 
     const { getByRole } = await renderPage("PPL_BAKONGO@v34");
 
-    expect(getByRole("link", { name: "Lire la doctrine" })).toHaveAttribute(
+    expect(
+      getByRole("link", { name: "Comprendre notre méthode" })
+    ).toHaveAttribute(
       "href",
       `${getLocalizedRoute("fr", "doctrine")}/classifications-contestees@v42`
     );
@@ -441,7 +443,7 @@ describe("/[lang]/peuples/[slug] page", () => {
     const { queryByRole } = await renderPage("PPL_BAKONGO@v34");
 
     expect(
-      queryByRole("link", { name: "Lire la doctrine" })
+      queryByRole("link", { name: "Comprendre notre méthode" })
     ).not.toBeInTheDocument();
   });
 

@@ -7,9 +7,9 @@ import type { Language } from "@/types/shared";
  * (doctrine §1.1).
  */
 const fr = {
-  region: "Provenance des assertions de cette fiche",
+  region: "Sources des informations de cette fiche",
   assertionCount: (count: number) =>
-    `${count} assertion${count > 1 ? "s" : ""} recensée${count > 1 ? "s" : ""}`,
+    `${count} information${count > 1 ? "s" : ""} présentée${count > 1 ? "s" : ""}`,
   lastHumanAudit: (date: string) => `Dernière relecture humaine : ${date}`,
   neverAudited: "Aucune relecture humaine enregistrée à ce jour",
   viewSources: "Voir les sources",

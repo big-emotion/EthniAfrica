@@ -27,7 +27,7 @@ describe("PatronymeOriginSection (REQ-133)", () => {
     expect(
       screen.getByRole("heading", { name: "Origine" })
     ).toBeInTheDocument();
-    expect(screen.getByText("Donnée manquante")).toBeInTheDocument();
+    expect(screen.getByText("Information manquante")).toBeInTheDocument();
   });
 
   // @req REQ-133
@@ -55,7 +55,7 @@ describe("PatronymeOriginSection (REQ-133)", () => {
         "Le passage ne documente aucune origine orale, écrite ou linguistique du nom."
       )
     ).toBeInTheDocument();
-    expect(screen.queryByText("Donnée manquante")).not.toBeInTheDocument();
+    expect(screen.queryByText("Information manquante")).not.toBeInTheDocument();
   });
 
   // @req REQ-133

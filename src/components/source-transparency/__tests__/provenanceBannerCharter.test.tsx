@@ -47,7 +47,7 @@ const settled = census();
 const weak = census({ unverified: 4, needs_review: 2 });
 
 function banner(): HTMLElement {
-  return screen.getByRole("region", { name: /provenance/i });
+  return screen.getByRole("region", { name: /sources des informations/i });
 }
 
 const GOLD_GROUND = "--afh-color-gold-bg";

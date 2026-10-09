@@ -1,10 +1,10 @@
 import type { Language } from "@/types/shared";
 
 const fr = {
-  missingLabel: "Donnée manquante",
-  missingReason: "Nous ne renseignons pas ce champ pour cette page.",
-  derivedLabel: "Valeur dérivée",
-  derivedFromPrefix: "Dérivée de : ",
+  missingLabel: "Information manquante",
+  missingReason: "Cette information n’est pas renseignée sur cette page.",
+  derivedLabel: "Information obtenue à partir d’autres données",
+  derivedFromPrefix: "À partir de : ",
 };
 
 type FieldProvenanceCopy = typeof fr;

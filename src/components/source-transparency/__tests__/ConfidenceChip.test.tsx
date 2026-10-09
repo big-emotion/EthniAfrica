@@ -100,7 +100,7 @@ describe("ConfidenceChip", () => {
       const button = screen.getByRole("button");
       expect(button).toHaveAttribute(
         "aria-label",
-        "ouvrir la chaîne de sources pour cette assertion (4 références, dernière relecture le 21 septembre 2025)"
+        "consulter les sources de cette information (4 références, dernière relecture le 21 septembre 2025)"
       );
     });
 

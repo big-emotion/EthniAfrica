@@ -73,7 +73,7 @@ describe("buildComparisonOgCard", () => {
       id: "PPL_ILLUSTRATIVE_ONE",
       autonym: "Endonyme Un",
       exonym: "Exonyme Un",
-      confidenceLabel: "page non auditée",
+      confidenceLabel: "page pas encore relue",
     });
   });
 
@@ -93,7 +93,7 @@ describe("buildComparisonOgCard", () => {
       id: "FLG_ILLUSTRATIVE",
       autonym: "Endonyme Famille",
       exonym: "Ancien nom",
-      confidenceLabel: "page non auditée",
+      confidenceLabel: "page pas encore relue",
     });
   });
 
@@ -105,7 +105,7 @@ describe("buildComparisonOgCard", () => {
       id: "COM",
       autonym: "Comores",
       exonym: null,
-      confidenceLabel: "page non auditée",
+      confidenceLabel: "page pas encore relue",
     });
   });
 
@@ -120,7 +120,7 @@ describe("buildComparisonOgCard", () => {
   it("replaces a missing confidence score with the unaudited fallback", () => {
     const card = buildComparisonOgCard(peuplePageData);
 
-    expect(card.entities[0].confidenceLabel).toBe("page non auditée");
+    expect(card.entities[0].confidenceLabel).toBe("page pas encore relue");
   });
 
   // @req REQ-097

@@ -122,7 +122,7 @@ describe("EntityComparePicker", () => {
   it("renders a labelled type radiogroup before the search combobox", () => {
     renderPicker();
     const radiogroup = screen.getByRole("radiogroup", {
-      name: /type d.?entité/i,
+      name: /type de page/i,
     });
     expect(
       within(radiogroup).getByRole("radio", { name: /peuples/i })
@@ -419,14 +419,18 @@ describe("CompareEntityHeader", () => {
     await user.click(button);
 
     await waitFor(() => {
-      expect(screen.getByText("Chaîne des sources")).toBeInTheDocument();
+      expect(
+        screen.getByText("Sources de cette information")
+      ).toBeInTheDocument();
     });
 
     // Close the sheet so its focus trap / body-hide side effects don't leak
     // into subsequent tests that query the accessibility tree.
     await user.keyboard("{Escape}");
     await waitFor(() => {
-      expect(screen.queryByText("Chaîne des sources")).not.toBeInTheDocument();
+      expect(
+        screen.queryByText("Sources de cette information")
+      ).not.toBeInTheDocument();
     });
   });
 

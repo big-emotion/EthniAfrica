@@ -30,7 +30,7 @@ describe("the provenance banner", () => {
   it("states how many assertions the fiche records", () => {
     render(<ProvenanceBanner language="fr" census={census()} />);
 
-    expect(screen.getByText(/15 assertions recensées/)).toBeInTheDocument();
+    expect(screen.getByText(/15 informations présentées/)).toBeInTheDocument();
   });
 
   /**

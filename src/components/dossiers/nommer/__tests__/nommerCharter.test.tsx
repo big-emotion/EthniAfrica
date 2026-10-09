@@ -87,7 +87,7 @@ describe("the Nommer dossier — charter contract", () => {
 
     expect(tile).toHaveTextContent(chapter.title);
     expect(tile).toHaveTextContent(chapter.question);
-    expect(tile).toHaveTextContent(chapter.measure.value);
+    expect(tile).toHaveTextContent(chapter.measure.value.replace(/\s/g, " "));
     // The support line asks; it never states a figure, because a claim on a
     // navigation tile has nowhere to put its source.
     expect(chapter.question).not.toMatch(/\d/);

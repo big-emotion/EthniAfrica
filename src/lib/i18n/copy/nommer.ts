@@ -3,27 +3,28 @@ import type { Language } from "@/types/shared";
 const fr = {
   title: "Qui a donné ce nom ?",
   subtitle:
-    "Nous nommons huit cents peuples, cinquante-quatre pays et vingt-quatre familles de langues. Presque aucun de ces noms n'a été choisi par ceux qu'il désigne.",
-  thesisStep: "La thèse",
-  thesisHeading: "Trois nombres, avant tout le reste",
+    "Les noms des peuples, des pays et des langues ont des histoires différentes. Certains ont été choisis par les personnes concernées, d’autres leur ont été donnés. Ce dossier suit ces histoires.",
+  thesisStep: "Pour commencer",
+  thesisHeading: "Trois nombres pour comprendre les fiches",
   dossierStep: "Le dossier",
   dossierHeading: "Cinq chapitres, cinq choses qu'on nomme",
   dossierIntro:
-    "Un peuple, un pays, une personne, une langue, une chose. Chaque chapitre est un régime de dénomination différent, et le dernier existe parce que les quatre premiers laisseraient croire que la question ne concerne que les peuples.",
+    "Les cinq chapitres explorent les noms des peuples, des pays, des personnes, des langues et des choses. Chaque cas aide à comprendre qui a choisi un nom et comment il a été repris.",
   limitsStep: "Les limites",
   limitsHeading: "Ce que ce dossier ne peut pas dire",
   undeclared: (undeclared: number, peoples: number) =>
-    `${undeclared} pages de peuple sur ${peoples} ne déclarent aucun statut de classification. Elles ne sont pas jugées non problématiques : elles n’ont pas été examinées. C’est un chantier ouvert, et le taire derrière un pourcentage reviendrait à le compter comme un résultat.`,
+    `${undeclared} fiches de peuple sur ${peoples} ne précisent pas si le nom est contesté ou hérité de la colonisation. Ce manque d’information ne signifie pas que le nom est accepté sans réserve.`,
   missingImposition:
-    "Nous enregistrons l'origine d'un exonyme en prose libre, jamais comme une valeur. On peut compter les pages qui emploient le mot « administration » ; on ne peut pas compter les noms qu'une administration a imposés.",
+    "Les fiches racontent l’origine des noms donnés de l’extérieur. Compter celles qui emploient le mot « administration » ne permet pas de savoir combien de noms une administration a imposés.",
   countryEtymologies:
-    "Les étymologies des cinquante-quatre pays sont renseignées ici et adossées à aucune source : le chapitre « Le pays » les présente comme une lecture, jamais comme une mesure.",
-  doctrineAction: "Lire la doctrine éditoriale",
+    "Le classement des noms de pays repose sur un relevé dont les explications n’étaient pas accompagnées de sources. Le chapitre « Le pays » présente cette limite et les références ajoutées depuis.",
+  doctrineAction: "Comprendre notre méthode",
   vocabularyStep: "Le vocabulaire",
-  vocabularyHeading: (count: number) => `${count} mots, définis une fois`,
+  vocabularyHeading: (count: number) => `${count} mots expliqués`,
   vocabularyIntro:
-    "Endonyme, exonyme, glossonyme, réification ethnique : ce dossier emploie des mots que le site affichait sans les définir nulle part. Le glossaire les tient, chacun avec un exemple pris dans nos fiches — ou avec la raison pour laquelle nous n’en avons pas.",
+    "Le glossaire explique les mots spécialisés que vous pouvez rencontrer dans les sources. Chaque définition est accompagnée d’un exemple, lorsque nos fiches en proposent un.",
   glossaryAction: (count: number) => `Ouvrir le glossaire — ${count} termes`,
+  pejorativeName: "nom jugé méprisant dans les sources",
   otherChapters: "Les autres chapitres",
   backToDossier: "Revenir au dossier",
 };

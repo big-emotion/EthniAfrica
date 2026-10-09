@@ -184,9 +184,10 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       searched: (name) => `Vous avez cherché ${name}.`,
       self: {
         people: (self) => `Ce peuple se nomme lui-même ${self}.`,
-        language: (self) => `Le nom que ses locuteurs lui donnent : ${self}.`,
+        language: (self) =>
+          `Le nom employé par les personnes qui la parlent : ${self}.`,
         languageFamily: (self) =>
-          `Le nom que ses locuteurs lui donnent : ${self}.`,
+          `Le nom employé par les personnes qui la parlent : ${self}.`,
       },
     },
   },

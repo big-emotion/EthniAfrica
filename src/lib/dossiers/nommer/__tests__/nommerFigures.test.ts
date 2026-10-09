@@ -2,6 +2,8 @@ import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 
 import { describe, expect, it } from "vitest";
+import { CHAPITRE_LE_PEUPLE } from "../chapters/lePeuple";
+import { CHAPITRE_LA_PERSONNE } from "../chapters/laPersonne";
 
 import {
   NOMMER_FIGURES,
@@ -73,6 +75,23 @@ function countedValue(figureKey: string): number {
 }
 
 describe("the Nommer dossier's figures", () => {
+  // @req REQ-113
+  it("publishes the verified figures in the chapter's measure, prose and table", () => {
+    const number = (key: string) => countedValue(key).toLocaleString("fr-FR");
+    const chapter = CHAPITRE_LE_PEUPLE;
+    expect(chapter.measure.value).toBe(number("corpus-exonyms"));
+    expect(CHAPITRE_LA_PERSONNE.measure.value).toBe(
+      number("patronyme-non-hereditary")
+    );
+    const opening = chapter.sections[0].blocks[0].text;
+    for (const key of ["corpus-peoples", "corpus-exonyms", "corpus-autonyms"]) {
+      expect(opening).toContain(number(key));
+    }
+    for (const row of chapter.sections[1].table!.rows) {
+      expect(row.cells[1]).toBe(number(row.figureRefs[0]));
+    }
+  });
+
   // @req REQ-113
   it("still counts what it says it counts, on today's corpus", () => {
     const fiches = readPeopleFiches();

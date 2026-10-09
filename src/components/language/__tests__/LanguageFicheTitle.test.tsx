@@ -42,7 +42,7 @@ describe("LanguageFicheTitle", () => {
 
     expect(screen.getByRole("heading", { name: "Yoruba" })).toBeInTheDocument();
     expect(
-      screen.getByText("Dérivée de : vote majoritaire des sources")
+      screen.getByText("À partir de : vote majoritaire des sources")
     ).toBeInTheDocument();
   });
 });

@@ -59,7 +59,7 @@ describe("the Nommer pillar", () => {
     for (const chapter of NOMMER_CHAPTERS) {
       const tile = screen.getByTestId(`nommer-chapter-${chapter.key}`);
       expect(tile).toHaveTextContent(chapter.ordinal);
-      expect(tile).toHaveTextContent(chapter.measure.value);
+      expect(tile).toHaveTextContent(chapter.measure.value.replace(/\s/g, " "));
       expect(within(tile).getByText(chapter.question)).toBeInTheDocument();
     }
   });
@@ -91,7 +91,7 @@ describe("the Nommer pillar", () => {
     expect(
       screen.getByText(
         new RegExp(
-          `${counted("status-undeclared")} pages de peuple sur ${peoples} ne déclarent aucun statut`
+          `${counted("status-undeclared")} fiches de peuple sur ${peoples} ne précisent pas`
         )
       )
     ).toBeInTheDocument();

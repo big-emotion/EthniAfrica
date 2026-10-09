@@ -66,7 +66,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "referenced",
     sourceKind: "academic",
     notes:
-      "Atteste « Hottentot » comme forge des colons néerlandais et afrikaners, probablement par imitation des clics, et « Khoekhoe » (« hommes des hommes ») comme endonyme. N'établit pas la datation précise de la première attestation.",
+      "Rapporte que des colons néerlandais et afrikaners auraient créé « Hottentot », probablement en imitant les sons à clics. Présente « Khoekhoe » (« hommes des hommes ») comme le nom employé par les personnes concernées. Ne donne pas la date précise du premier usage écrit connu.",
     discoveredVia: [],
   },
   "saho-khoisan": {

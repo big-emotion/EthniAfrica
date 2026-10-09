@@ -24,6 +24,18 @@
 
 import type { CorpusFigure, FigureKey } from "./types";
 
+/** Format a published count without duplicating it in reader-facing prose. */
+// @req REQ-113
+export function formatNommerFigure({
+  figureKey,
+}: Pick<CorpusFigure, "figureKey">): string {
+  const figure = NOMMER_FIGURES[figureKey];
+  if (!figure || figure.kind === "missing") {
+    throw new Error(`No numeric figure for ${figureKey}`);
+  }
+  return figure.value.toLocaleString("fr-FR");
+}
+
 /** Every count below was taken against `recette` on this date. */
 const COUNTED_ON = "2026-09-29";
 
@@ -61,7 +73,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   "corpus-exonyms": {
     kind: "counted",
     figureKey: "corpus-exonyms",
-    label: "exonymes recensés",
+    label: "noms donnés de l’extérieur",
     // 3122 -> 3117 on 2026-10-03: the Bissa merge removed six exonyms with the two
     // retired fiches and added one (Busanga, as the Kusasi use it).
     value: 3117,
@@ -72,7 +84,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   "corpus-autonyms": {
     kind: "counted",
     figureKey: "corpus-autonyms",
-    label: "autonymes déclarés",
+    label: "noms employés par les peuples eux-mêmes",
     // 772 until eight macro-group fiches were corrected: their field held a
     // sentence listing *other* groups' names — « Variées selon les groupes :
     // Maninka, Bambara, Dioula… » — which the count took for an autonym. A
@@ -176,7 +188,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   "probe-neighbours": {
     kind: "counted",
     figureKey: "probe-neighbours",
-    label: "fiches attribuant un exonyme à des voisins",
+    label: "fiches contenant le mot « voisin » ou ses variantes",
     // 113 -> 112 on 2026-10-07: PPL_HADZA no longer attributes Kindiga/Tindiga to neighbours, which no source read says.
     // 112 -> 113 on 2026-10-07: PPL_BETE now says the Gouro called their southern neighbours Tshien (Dozon 1985, p. 45).
     // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
@@ -195,7 +207,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   "probe-pejorative": {
     kind: "counted",
     figureKey: "probe-pejorative",
-    label: "fiches qualifiant un exonyme de dépréciatif",
+    label:
+      "fiches contenant les mots recherchés pour repérer les noms méprisants",
     // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
     value: 60,
     method: `radicaux ${PEJORATIVE_STEMS.join(", ")} dans originOfExonyms + whyProblematic`,
@@ -250,7 +263,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   "countries-european-exonym": {
     kind: "read",
     figureKey: "countries-european-exonym",
-    label: "pays portant un exonyme européen conservé",
+    label: "pays ayant conservé un nom donné par des Européens",
     value: 20,
     method:
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
@@ -261,7 +274,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   "countries-ancient-exonym": {
     kind: "read",
     figureKey: "countries-ancient-exonym",
-    label: "pays portant un exonyme ancien non européen",
+    label: "pays portant un nom ancien donné de l’extérieur",
     value: 6,
     method:
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
@@ -307,7 +320,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   "patronyme-non-hereditary": {
     kind: "counted",
     figureKey: "patronyme-non-hereditary",
-    label: "systèmes documentés où le nom ne se transmet pas",
+    label: "fiches sur des noms qui ne se transmettent pas à l’identique",
     value: 176,
     method:
       "fiches de nom recherchées dont transmissionMode vaut non_hereditary, au " +
@@ -332,7 +345,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   "exonyms-imposed-by-administration": {
     kind: "missing",
     figureKey: "exonyms-imposed-by-administration",
-    label: "exonymes effectivement imposés par une administration",
+    label: "noms réellement imposés par une administration",
     reason:
       "Nos fiches racontent l'origine des noms donnés de l'extérieur. Compter celles qui contiennent le mot « administration » ne permet pas de savoir combien de noms une administration a réellement imposés.",
   },

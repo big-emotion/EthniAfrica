@@ -88,7 +88,7 @@ describe("ColonizationModulePage (Epic 13, Story 13.9, ETNI-533)", () => {
   it("renders the doctrine intro card linking the live heritage-colonial doctrine", () => {
     render(<ColonizationModulePage language="fr" data={emptyData} />);
     expect(
-      screen.getByRole("link", { name: "Lire la doctrine" })
+      screen.getByRole("link", { name: "Comprendre notre méthode" })
     ).toHaveAttribute(
       "href",
       `${getLocalizedRoute("fr", "doctrine")}/heritage-colonial`

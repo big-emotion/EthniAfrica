@@ -367,7 +367,7 @@ describe("FamilyParchment — the sources", () => {
     const footer = container.querySelector("#sources");
     expect(footer).not.toBeNull();
     expect(footer?.tagName.toLowerCase()).toBe("footer");
-    expect(footer?.textContent).toMatch(/Donnée manquante/);
+    expect(footer?.textContent).toMatch(/Information manquante/);
   });
 
   // @req REQ-092
@@ -483,7 +483,7 @@ describe("FamilyParchment — provenance addressed to the reader", () => {
     expect(document.querySelectorAll(".afh-stat-card")).toHaveLength(4);
     expect(
       within(screen.getByTestId("stat-card-branches")).getByText(
-        "Donnée manquante"
+        "Information manquante"
       )
     ).toBeTruthy();
   });

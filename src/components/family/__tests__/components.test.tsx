@@ -138,7 +138,9 @@ describe("LanguageFamilyDetailViewV2", () => {
     expect(
       screen.getByRole("heading", { name: "L'empreinte, et d'où elle vient" })
     ).toBeTruthy();
-    expect(screen.getAllByText("Donnée manquante").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Information manquante").length).toBeGreaterThan(
+      0
+    );
   });
 
   // @req REQ-119
@@ -156,7 +158,7 @@ describe("LanguageFamilyDetailViewV2", () => {
     );
 
     expect(
-      screen.getByText("Dérivée de : peuples rattachés à la famille")
+      screen.getByText("À partir de : peuples rattachés à la famille")
     ).toBeInTheDocument();
     expect(screen.getByTestId("footprint-ranking")).toBeInTheDocument();
   });
@@ -175,9 +177,11 @@ describe("LanguageFamilyDetailViewV2", () => {
       />
     );
 
-    expect(screen.getAllByText("Donnée manquante").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Information manquante").length).toBeGreaterThan(
+      0
+    );
     expect(
-      screen.getByText("Dérivée de : peuples rattachés à la famille")
+      screen.getByText("À partir de : peuples rattachés à la famille")
     ).toBeInTheDocument();
   });
 
@@ -242,7 +246,7 @@ describe("LanguageFamilyDetailViewV2", () => {
       "sw"
     );
     expect(
-      screen.getByRole("link", { name: "Lire la doctrine" })
+      screen.getByRole("link", { name: "Comprendre notre méthode" })
     ).toHaveAttribute(
       "href",
       `${getLocalizedRoute("fr", "doctrine")}/endonymes-vs-exonymes`

@@ -54,7 +54,9 @@ describe("the glossary page", () => {
           ? entry.corpusExample
           : entry.absenceReason;
 
-      expect(article, entry.id).toHaveTextContent(expected.slice(0, 40));
+      expect(article, entry.id).toHaveTextContent(
+        expected.slice(0, 40).replace(/\s/g, " ")
+      );
     }
   });
 

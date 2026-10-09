@@ -144,7 +144,7 @@ describe("GameAnswerReveal (Jouer hub engine, REQ-120)", () => {
 
     const provenance = screen.getByTestId("game-reveal-provenance");
     expect(provenance).toHaveTextContent(
-      "D'après l'origine des exonymes, telle que la fiche la donne."
+      "D'après l’explication de la fiche sur les noms donnés par d’autres."
     );
     expect(provenance).not.toHaveTextContent("content.appellations");
     expect(container.querySelector("code")).toBeNull();

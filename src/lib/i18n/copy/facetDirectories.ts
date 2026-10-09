@@ -77,7 +77,7 @@ const fr = {
     lede: (total: string, singular: boolean) =>
       `${total} ${singular ? "nom" : "noms"} dans cette sélection. Choisissez un pays sur le globe pour voir ceux qu'il atteste.`,
     searchLabel: "Rechercher un nom",
-    searchPlaceholder: "Nom, graphie attestée",
+    searchPlaceholder: "Nom ou autre orthographe",
     people: "Peuple",
     allPeoples: "Tous les peuples",
     country: "Pays",

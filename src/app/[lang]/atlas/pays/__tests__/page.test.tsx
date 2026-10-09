@@ -270,7 +270,7 @@ describe("/[lang]/pays/[slug] page", () => {
 
     expect(mockGetRevisionSnapshot).toHaveBeenCalledWith("country", "NGA", 12);
     expect(
-      screen.getByRole("link", { name: "Lire la doctrine" })
+      screen.getByRole("link", { name: "Comprendre notre méthode" })
     ).toHaveAttribute(
       "href",
       `${getLocalizedRoute("fr", "doctrine")}/classifications-contestees@v42`
@@ -290,7 +290,7 @@ describe("/[lang]/pays/[slug] page", () => {
     await renderPage("NGA@v12");
 
     expect(
-      screen.queryByRole("link", { name: "Lire la doctrine" })
+      screen.queryByRole("link", { name: "Comprendre notre méthode" })
     ).not.toBeInTheDocument();
   });
 

@@ -91,10 +91,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "bantou",
     headline:
-      "« Bantou » n'est pas un peuple : c'est une catégorie forgée par un philologue au milieu du XIXe siècle.",
+      "« Bantou » a été proposé au XIXe siècle pour nommer un groupe de langues.",
     body: [
-      "Wilhelm Bleek construit le terme : il l'écrit en 1857 selon les historiens de la linguistique, le publie en 1858, et sa Comparative Grammar of South African Languages (1862) le répand, à partir d'une racine commune à des centaines de langues : ba-, le préfixe de pluriel humain, et -ntu, la personne. Ba-ntu : « les gens ».",
-      "Ce que Bleek nomme est une parenté entre langues, pas une identité. L'anthropologie coloniale, puis l'apartheid avec le Bantu Education Act de 1953, en ont fait une catégorie de « races » et de « cultures » bantoues — un usage que sa classification ne portait pas.",
+      "Les historiens de la linguistique retrouvent ce mot chez Wilhelm Bleek dans un manuscrit de 1857. Il est imprimé en 1858, puis diffusé dans son ouvrage Comparative Grammar of South African Languages, publié en 1862. Le mot reprend ba-, qui indique plusieurs personnes, et -ntu, qui renvoie à la personne. Ba-ntu signifie ainsi « les gens ».",
+      "Bleek regroupait des langues apparentées. Le mot a ensuite été appliqué à des peuples par les travaux coloniaux, puis utilisé sous l’apartheid. Le Bantu Education Act de 1953 l’emploie notamment pour organiser des écoles séparées. Ces usages dépassent la comparaison entre les langues.",
     ],
     entities: [
       { kind: "family", id: "FLG_BANTU", label: "Langues bantoues" },
@@ -107,10 +107,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "cote-ivoire",
     headline:
-      "La Côte d'Ivoire porte le nom de la marchandise qu'on y chargeait.",
+      "Le nom Côte d’Ivoire est lié au commerce de l’ivoire sur le littoral.",
     body: [
-      "Les navigateurs portugais désignaient ce littoral par sa marchandise : Costa do Marfim, la côte de l'ivoire. À l'est, vers Assinie, on parlait déjà de la Côte de l'Or — l'actuel Ghana.",
-      "En 1839, l'officier français Bouët-Willaumez francise l'appellation et la fixe officiellement. Il n'invente pas le nom : il institutionnalise un terme employé depuis des siècles dans les langues européennes. Ces noms de côtes découpaient un commerce, pas les peuples qui y vivaient.",
+      "Les navigateurs portugais employaient Costa do Marfim, « la côte de l’ivoire », pour désigner ce littoral. À l’est, vers Assinie, on rencontrait aussi le nom Côte de l’Or, associé à l’actuel Ghana.",
+      "En 1839, l’officier français Bouët-Willaumez reprend le nom en français et le rend officiel. L’appellation circulait donc avant son adoption administrative. Elle renvoyait aux marchandises échangées sur la côte, sans décrire les peuples qui y vivaient.",
     ],
     entities: [
       { kind: "country", id: "CIV", label: "Côte d'Ivoire" },
@@ -121,10 +121,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "amazigh",
     headline:
-      "« Berbère » vient du grec barbaros : celui dont on ne comprend pas la langue.",
+      "Le nom « Berbère » est rapproché d’un mot grec pour les personnes dont on ne comprenait pas la langue.",
     body: [
-      "Passé au latin barbarus, le terme sert aux Romains à désigner les populations non latines d'Afrique du Nord ; les auteurs arabes médiévaux le reprennent, l'administration coloniale française en fait une catégorie. Une partie de la communauté le reçoit aujourd'hui comme péjoratif, par association avec « barbare ».",
-      "Le nom que ces peuples se donnent est Amazigh — Imazighen au pluriel — et il signifie « homme libre ». Kabyles, Chaouis, Rifains, Chleuhs, Mozabites et Touaregs sont tous Imazighen : des branches d'un même arbre, chacune avec sa région et son histoire.",
+      "L’explication présentée ici fait passer le mot grec barbaros par le latin barbarus, puis par les auteurs arabes du Moyen Âge. L’administration coloniale française a ensuite repris « Berbère » pour classer des populations. Certaines personnes jugent aujourd’hui ce nom méprisant, notamment en raison de son rapprochement avec « barbare ».",
+      "Amazigh, au pluriel Imazighen, est le nom employé par les personnes concernées. Il est souvent interprété comme « homme libre ». Kabyles, Chaouis, Rifains, Chleuhs, Mozabites et Touaregs sont regroupés sous ce nom, tout en ayant chacun leur région et leur histoire.",
     ],
     entities: [
       { kind: "people", id: "PPL_AMAZIGH_MACRO", label: "Amazigh" },
@@ -135,10 +135,11 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "lingala",
-    headline: "Le nom du lingala a été inventé par des missionnaires belges.",
+    headline:
+      "Le nom Lingala est lié à l’histoire coloniale et missionnaire du fleuve Congo.",
     body: [
-      "La langue, elle, ne l'a pas été : sa base est le bobangi, grande langue commerciale du fleuve Congo, parlée par les peuples riverains bien avant l'arrivée des Européens.",
-      "Au XIXe siècle, l'administration coloniale regroupe plusieurs populations du fleuve sous une même étiquette, « Bangala » — un nom que ces peuples n'employaient pas. Elle simplifie leur langue, en fixe l'orthographe, et baptise cette version standardisée lingala. Le lingala moderne garde environ 60 à 70 % de la structure bobangi.",
+      "Le bobangi, une langue employée dans le commerce sur le fleuve Congo avant l’arrivée des Européens, a joué un rôle important dans la formation du lingala. L’histoire du nom et celle de la langue ne commencent donc pas au même moment.",
+      "Au XIXe siècle, l’administration coloniale regroupe des populations du fleuve sous le nom Bangala. Les travaux administratifs et missionnaires contribuent ensuite à fixer une orthographe et une forme commune appelée lingala. L’estimation rapportée ici attribue au bobangi environ 60 à 70 % de la structure du lingala moderne.",
     ],
     entities: [
       { kind: "country", id: "COD", label: "RDC" },
@@ -169,10 +170,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "afrique",
     headline:
-      "Le nom du continent vient d'un peuple qui tenait dans une province.",
+      "Le nom Afrique aurait d’abord désigné une région autour de Carthage.",
     body: [
-      "Les Romains appellent Afri les habitants de la région de Carthage — on rapproche le nom des Ifren et du berbère ifri, « grotte ». Africa désigne d'abord leur seule province : la Tunisie actuelle et l'est de l'Algérie, pas davantage.",
-      "Les Arabes en font Ifrīqiya, sur le même périmètre. Ce n'est qu'au Moyen Âge que le mot glisse sur toutes les terres au sud de la Méditerranée. Un peuple d'une province a fini par nommer trente millions de kilomètres carrés et cinquante-quatre États — dont aucun ne s'était nommé ainsi.",
+      "Les Romains appelaient Afri les habitants de la région de Carthage. Le nom est rapproché des Ifren et du mot berbère ifri, « grotte », sans que cette explication suffise à établir son origine. Africa désignait alors une province correspondant à la Tunisie actuelle et à l’est de l’Algérie.",
+      "Le nom arabe Ifrīqiya a désigné une région proche. Au Moyen Âge, l’usage d’Afrique s’est progressivement étendu à des terres plus vastes au sud de la Méditerranée. Le même nom désigne aujourd’hui le continent.",
     ],
     entities: [
       { kind: "country", id: "TUN", label: "Tunisie" },
@@ -193,10 +194,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "burkina-faso",
     headline:
-      "Le nom du Burkina Faso est fait de deux mots pris dans deux langues.",
+      "Le nom du Burkina Faso réunit des mots de plusieurs langues du pays.",
     body: [
-      "Burkina vient du mooré et dit l'intégrité, l'honneur ; faso vient du dioula et dit le pays, la patrie. Ensemble : la patrie des hommes intègres. Le gentilé, burkinabè, n'appartient à aucune des deux — le géographe Alain Maharaux écrit qu'il emprunte aux trois langues principales du pays.",
-      "Une ordonnance du 2 août 1984 le substitue à Haute-Volta, avec effet au 4 août, un an jour pour jour après l'arrivée au pouvoir de Thomas Sankara. Haute-Volta était un nom donné par l'administration coloniale, qui ne disait rien des peuples qu'il recouvrait. Le nouveau n'en choisit aucun : il les fait parler ensemble.",
+      "Burkina vient du mooré et renvoie à l’intégrité et à l’honneur. Faso vient du dioula et désigne le pays ou la patrie. L’ensemble est traduit par « la patrie des hommes intègres ». Pour burkinabè, qui désigne les habitants, le géographe Alain Maharaux décrit un nom formé à partir des trois principales langues du pays.",
+      "Une ordonnance du 2 août 1984 remplace Haute-Volta par Burkina Faso, avec effet au 4 août. Cette date marque le premier anniversaire de l’arrivée au pouvoir de Thomas Sankara. Le nouveau nom réunit plusieurs langues, tandis que Haute-Volta venait de l’administration coloniale.",
     ],
     entities: [
       { kind: "country", id: "BFA", label: "Burkina Faso" },
@@ -220,10 +221,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "cameroun",
-    headline: "Le Cameroun porte le nom d'un crustacé.",
+    headline: "Le nom Cameroun serait lié aux crevettes du fleuve Wouri.",
     body: [
-      "En 1472, le navigateur portugais Fernão do Pó remonte l'estuaire du Wouri et le baptise Rio dos Camarões — la rivière des crevettes, d'après ce qu'il y voit grouiller.",
-      "Le nom du fleuve passe ensuite au territoire, et change de bouche à chaque administration : Camarões en portugais, Kamerun sous les Allemands, Cameroon en anglais, Cameroun en français. Quatre orthographes pour une observation de pêche.",
+      "Selon le récit présenté ici, le navigateur portugais Fernão do Pó remonte l’estuaire du Wouri en 1472 et le nomme Rio dos Camarões, « la rivière des crevettes », en référence aux crustacés qu’il y observe.",
+      "Le nom du fleuve est ensuite appliqué au territoire. Il prend plusieurs formes selon les langues et les administrations : Camarões en portugais, Kamerun en allemand, Cameroon en anglais et Cameroun en français.",
     ],
     entities: [
       { kind: "country", id: "CMR", label: "Cameroun" },
@@ -240,11 +241,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "benin-dahomey",
-    headline:
-      "Le Bénin a pris un nom qui n'appartenait à aucun de ses peuples.",
+    headline: "Le Bénin a choisi un nom qui ne désignait aucun peuple du pays.",
     body: [
-      "Jusqu'en 1975 le pays s'appelait Dahomey, du nom du royaume fon d'Abomey — un nom légitime, mais celui d'un seul groupe parmi la cinquantaine que compte le pays. Le gouvernement de Mathieu Kérékou le remplace par Bénin, d'après la baie sur laquelle le pays s'ouvre, précisément parce que ce nom-là n'était à personne.",
-      "Le calcul a son ironie : la baie du Bénin tient elle-même son nom du royaume du Bénin, qui se trouve au Nigeria et dont l'actuel Bénin n'a jamais fait partie. Le pays a échangé le nom d'un de ses royaumes contre celui du royaume d'un voisin.",
+      "Jusqu’en 1975, le pays s’appelait Dahomey, en référence au royaume fon d’Abomey. Le gouvernement de Mathieu Kérékou a retenu Bénin, d’après la baie qui borde sa côte. Ce choix permettait d’employer un nom qui ne soit pas celui d’un seul des peuples du pays.",
+      "La baie tient toutefois son nom du royaume du Bénin, situé dans l’actuel Nigeria. Le territoire du Bénin actuel n’en faisait pas partie. Un même nom peut ainsi relier des lieux qui ont des histoires politiques différentes.",
     ],
     entities: [
       { kind: "country", id: "BEN", label: "Bénin" },
@@ -262,10 +262,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "nigeria-flora-shaw",
-    headline: "Le Nigeria a été nommé dans une tribune de presse.",
+    headline: "Une journaliste a proposé le nom Nigeria dans le Times en 1897.",
     body: [
-      "Le 8 janvier 1897, Flora Shaw publie dans le Times une chronique où elle propose d'appeler Nigeria les territoires administrés par la Royal Niger Company — l'appellation en vigueur, « Royal Niger Company Territories », étant impraticable. Elle est alors rédactrice coloniale du journal, et la journaliste la mieux payée de son temps.",
-      "Elle épouse en 1902 Frederick Lugard, qui devient gouverneur général et reprend le nom en 1914 en fusionnant les protectorats du Nord et du Sud. Le pays le plus peuplé d'Afrique porte donc un nom de commodité, trouvé par une chroniqueuse pour éviter une périphrase.",
+      "Le 8 janvier 1897, Flora Shaw propose d’appeler Nigeria les territoires administrés par la Royal Niger Company. Elle cherche un nom plus court que « Royal Niger Company Territories ». Elle est alors chargée des sujets coloniaux au Times.",
+      "En 1902, elle épouse Frederick Lugard. Devenu gouverneur général, il reprend le nom en 1914 lors de l’unification des protectorats du Nord et du Sud. La proposition dans le journal et le choix officiel du nom sont donc deux étapes distinctes.",
     ],
     entities: [{ kind: "country", id: "NGA", label: "Nigeria" }],
     tier: "referenced",
@@ -283,10 +283,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "zimbabwe-grand-zimbabwe",
     headline:
-      "Le Zimbabwe porte le nom d'un monument qu'une loi interdisait d'attribuer aux Africains.",
+      "Le Zimbabwe a choisi le nom d’un site dont l’origine africaine avait été niée.",
     body: [
-      "Dzimba dza mabwe : « maisons de pierre », en shona. Le site du Grand Zimbabwe gênait : en 1902, Cecil Rhodes finance une fouille avec pour consigne explicite d'établir une origine non africaine, et l'on invoque tour à tour les Phéniciens et la reine de Saba.",
-      "En 1970, le gouvernement rhodésien interdit à toute publication officielle d'affirmer que le site est une création africaine. L'archéologue Peter Garlake, qui le soutenait, est emprisonné puis expulsé. En 1980, le pays indépendant se donne le nom des ruines — la réponse la plus courte possible à soixante-dix ans de démenti.",
+      "Le nom est rapproché du shona dzimba dza mabwe, « maisons de pierre ». En 1902, Cecil Rhodes finance des fouilles au Grand Zimbabwe avec la volonté de lui attribuer une origine non africaine. Des récits évoquent alors les Phéniciens ou la reine de Saba.",
+      "En 1970, le gouvernement rhodésien interdit aux publications officielles de présenter le site comme une création africaine. L’archéologue Peter Garlake, qui défend cette origine, est emprisonné puis expulsé. En 1980, le pays indépendant adopte Zimbabwe comme nom, en référence au site.",
     ],
     entities: [
       { kind: "country", id: "ZWE", label: "Zimbabwe" },
@@ -311,10 +311,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "prefixes-bantous",
     headline:
-      "Lesotho et Botswana ne sont pas des noms : ce sont des conjugaisons.",
+      "Les mots Lesotho et Botswana indiquent le lien entre un pays et un peuple.",
     body: [
-      "Mosotho, une personne ; Basotho, le peuple ; Sesotho, la langue ; Lesotho, le pays. La racine ne bouge pas, seul le préfixe change — et il porte tout. Motswana, Batswana, Setswana, Botswana suivent exactement la même grammaire.",
-      "Ces préfixes de classe sont le trait le plus caractéristique des langues bantoues. Deux États en ont fait leur nom officiel : lus correctement, ils annoncent qu'ils sont le pays d'un peuple, et donnent au passage de quoi nommer ce peuple et sa langue sans se tromper.",
+      "En sesotho, Mosotho désigne une personne, Basotho le peuple, Sesotho la langue et Lesotho le pays. Une même base revient dans ces mots, mais leur début change. On retrouve ce fonctionnement avec Motswana, Batswana, Setswana et Botswana.",
+      "Cette partie placée au début du mot s’appelle un préfixe. Dans ces exemples, elle permet de distinguer le pays, le peuple, une personne et la langue. La comprendre aide donc à savoir de quoi l’on parle.",
     ],
     entities: [
       { kind: "country", id: "LSO", label: "Lesotho" },
@@ -338,10 +338,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "peul-dix-noms",
-    headline: "Le même peuple change de nom à chaque frontière qu'il traverse.",
+    headline: "Peul, Fulani et Fulɓe désignent le même peuple.",
     body: [
-      "Ils se nomment Fulɓe au pluriel, Pullo au singulier. Le français dit Peul, emprunté au wolof ; l'anglais dit Fulani, emprunté au haoussa ; on lit aussi Fula, et Fellata au Tchad et au Soudan. Leur langue s'appelle pulaar à l'ouest et fulfulde à l'est.",
-      "Plusieurs noms coexistent, et un seul est celui qu'ils se donnent eux-mêmes. La dispersion du vocabulaire suit celle du peuple : présents du Sénégal au Soudan, les Fulɓe ont été nommés par chacun de leurs voisins, puis par chaque administration coloniale qui les a rencontrés, dans la langue qu'elle avait sous la main.",
+      "Les personnes concernées emploient Fulɓe pour plusieurs personnes et Pullo pour une seule. Le nom Peul, courant en français, viendrait du wolof. Fulani, courant en anglais, serait passé par le haoussa. On rencontre aussi Fula, ainsi que Fellata au Tchad et au Soudan. Leur langue est appelée pulaar à l’ouest et fulfulde à l’est.",
+      "Présents du Sénégal au Soudan, les Fulɓe ont été désignés dans plusieurs langues, par leurs voisins et par des administrations coloniales. Ces contacts aident à comprendre pourquoi plusieurs noms continuent à circuler.",
     ],
     entities: [
       { kind: "people", id: "PPL_FULA", label: "Fulɓe (Peul)" },
@@ -360,10 +360,11 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "khoikhoi-hottentot",
-    headline: "« Hottentot » serait une moquerie de la sonorité d'une langue.",
+    headline:
+      "« Hottentot » aurait été créé pour se moquer des sons d’une langue.",
     body: [
-      "L'hypothèse la plus répandue veut que les colons néerlandais du Cap, arrivés dans les années 1650, aient forgé le mot en imitant les clics de la langue khoekhoe — quelque chose comme « bègue ». Elle n'est pas établie : aucune attestation antérieure ne vient l'appuyer, et une autre piste le fait venir d'une formule répétée dans un chant nama.",
-      "Ce que l'on sait avec certitude, c'est ce que le mot est devenu : une insulte, tenue aujourd'hui pour profondément offensante en Afrique du Sud. L'autonyme, lui, ne varie pas — Khoekhoen, « les hommes des hommes ».",
+      "Le Dictionary of South African English rapporte une explication courante : les colons néerlandais arrivés au Cap dans les années 1650 auraient créé le mot en imitant les sons à clics du khoekhoe, avec un sens proche de « bègue ». Le dictionnaire signale toutefois qu’aucun usage écrit plus ancien ne vient appuyer cette piste. Une autre explication le rattache à une formule répétée dans un chant nama.",
+      "Quelle que soit son origine, le mot est aujourd’hui considéré comme profondément offensant en Afrique du Sud. Les personnes concernées emploient notamment Khoekhoen, traduit par « les hommes des hommes ».",
     ],
     entities: [
       { kind: "people", id: "PPL_KHOIKHOI", label: "Khoikhoi" },
@@ -384,10 +385,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "pygmee-homere",
     headline:
-      "« Pygmée » est une unité de mesure grecque posée sur des peuples qui n'ont pas de nom commun.",
+      "Le mot « Pygmée » vient d’un récit grec et a été appliqué à plusieurs peuples d’Afrique.",
     body: [
-      "Pygmē désigne en grec la coudée — du coude à l'articulation des doigts, environ trente-cinq centimètres. Homère et Hérodote en tirent les Pygmaioi, peuple minuscule et légendaire, occupé dans l'Iliade à faire la guerre aux grues. Le mot n'a désigné personne de réel avant que l'Europe ne le pose sur l'Afrique centrale.",
-      "Baka, Bagyeli, Aka, Twa, Mbuti n'ont ni langue commune, ni territoire commun, ni identité commune, et aucun ne se nomme ainsi : chacun a son propre nom. Il n'existe d'ailleurs aucun terme de remplacement qui les couvre tous — le meilleur indice que le groupe qu'il prétend nommer n'existe pas.",
+      "Le grec pygmē désigne une ancienne mesure allant du coude à l’articulation des doigts, soit environ trente-cinq centimètres. Les Pygmaioi sont un peuple légendaire de très petite taille mentionné par Homère et Hérodote. Dans l’Iliade, ils combattent des grues. Des Européens ont ensuite repris ce nom pour des populations d’Afrique centrale.",
+      "Les Baka, Bagyeli, Aka, Twa et Mbuti ont chacun leurs noms, leurs langues et leurs territoires. Le terme commun ne signifie donc pas qu’ils forment un peuple unique ou qu’ils se désignent eux-mêmes ainsi.",
     ],
     entities: [
       {
@@ -412,10 +413,11 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "lac-lac",
-    headline: "Plusieurs cartes d'Afrique disent deux fois la même chose.",
+    headline:
+      "Certains noms de lacs reprennent simplement le mot « lac » dans une langue locale.",
     body: [
-      "Nyasa veut dire « lac » en yao et en chichewa : le lac Nyasa est le lac Lac, et le Nyassaland était le pays du Lac. Tsade veut dire « lac » en kanouri : le lac Tchad est le lac Lac, et le pays en porte aujourd'hui le nom. Ṣaḥrāʾ veut dire « désert » en arabe : le Sahara est le désert du Désert.",
-      "Le mécanisme est toujours le même. Le voyageur demande le nom d'un lieu, on lui répond ce que c'est, il note la réponse comme un nom propre. Ces toponymes tautologiques marquent l'endroit exact où la conversation a échoué.",
+      "Nyasa signifie « lac » en yao et en chichewa. L’expression « lac Nyasa » répète donc cette idée, et Nyassaland désignait le « pays du Lac ». Tchad est rapproché de tsade, « lac » en kanouri. De même, l’arabe ṣaḥrāʾ signifie « désert », ce qui explique le nom Sahara.",
+      "Un mot qui décrit un lieu dans une langue peut devenir son nom propre dans une autre. Les récits présentés ici évoquent notamment des voyageurs qui auraient pris une description pour le nom du lieu.",
     ],
     entities: [
       { kind: "country", id: "MWI", label: "Malawi" },
@@ -434,10 +436,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "tombouctou",
-    headline: "Personne ne sait ce que veut dire Tombouctou.",
+    headline: "Plusieurs explications sont proposées pour le nom Tombouctou.",
     body: [
-      "Quatre étymologies au moins se disputent la ville. La plus racontée en fait Tin Buktu, « le lieu de Bouctou », une vieille femme touarègue à qui les nomades confiaient leurs biens près d'un puits. L'historien malien Sékéné Cissoko y lit plutôt tin, le lieu, et bouctou, une petite dune.",
-      "L'explorateur Heinrich Barth, lui, écartait le puits et proposait le songhaï tùmbutu, un creux dans le sable — la ville étant bâtie dans une cuvette. Aucune ne l'emporte. Le nom le plus mythique d'Afrique est celui dont on est le moins sûr.",
+      "Un récit courant le rapproche de Tin Buktu, « le lieu de Bouctou ». Bouctou aurait été une femme touarègue à qui des nomades confiaient leurs biens près d’un puits. L’historien malien Sékéné Cissoko propose plutôt tin, « le lieu », et bouctou, « une petite dune ».",
+      "L’explorateur Heinrich Barth écartait l’explication du puits et proposait le songhaï tùmbutu, un creux dans le sable, en lien avec la position de la ville dans une cuvette. Ces propositions donnent des sens différents au nom ; les sources réunies ici ne permettent pas de choisir entre elles.",
     ],
     entities: [
       { kind: "country", id: "MLI", label: "Mali" },
@@ -457,10 +459,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "fleuve-niger",
-    headline: "Le fleuve Niger ne doit rien au latin niger.",
+    headline: "Le nom Niger pourrait venir d’une expression touarègue.",
     body: [
-      "Le nom vient très probablement du touareg egerew n-igerewen, « le fleuve des fleuves », employé sur le cours moyen autour de Tombouctou et raccourci par les intermédiaires du commerce transsaharien. La ressemblance avec le latin niger, « noir », a fait le reste : elle a fixé l'orthographe et suggéré un sens qui n'y était pas.",
-      "Les peuples riverains disaient tous à peu près la même chose dans leur langue : Joliba en mandingue, Isa Ber en songhaï, Orimili en igbo — « grand fleuve » —, Kwara en haoussa, Oya en yoruba. Deux États portent aujourd'hui le nom que l'Europe a mal entendu.",
+      "L’Online Etymology Dictionary propose comme origine probable egerew n-igerewen, « le fleuve des fleuves », une expression touarègue employée autour de Tombouctou. Elle aurait été raccourcie au fil des échanges commerciaux à travers le Sahara. La ressemblance avec le latin niger, « noir », aurait ensuite influencé l’orthographe.",
+      "Le fleuve porte aussi plusieurs noms dans les langues riveraines, notamment Joliba en mandingue, Isa Ber en songhaï, Orimili en igbo, Kwara en haoussa et Oya en yoruba. Niger est aujourd’hui repris dans le nom de deux États, le Niger et le Nigeria.",
     ],
     entities: [
       { kind: "country", id: "NER", label: "Niger" },
@@ -481,10 +483,11 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "ethiopie",
-    headline: "L'Éthiopie a deux noms venus du dehors, et un seul du dedans.",
+    headline:
+      "Éthiopie et Abyssinie racontent plusieurs usages du nom du pays.",
     body: [
-      "Aithiopía est grec et signifie « visage brûlé ». Abyssinie vient de l'arabe habasha, qui désignait les populations de la corne. Deux exonymes, posés par deux voisins, pour un pays qui n'a jamais cessé de se nommer lui-même.",
-      "L'autonyme est ʾĪtyōṗṗyā, attesté dans les textes guèzes et repris comme nom officiel de l'État. Abyssinie, lui, est sorti de l'usage : le pays a laissé tomber l'un des deux noms qu'on lui avait donnés et gardé celui qu'il pouvait revendiquer.",
+      "Éthiopie est rattaché au grec Aithiopía, interprété comme « visage brûlé ». Abyssinie serait passé par l’arabe habasha, qui désignait des populations de la Corne de l’Afrique. Ces explications renvoient aux noms employés par des peuples voisins.",
+      "La forme ʾĪtyōṗṗyā se retrouve dans les textes guèzes et dans le nom officiel de l’État. Abyssinie est devenu un nom ancien. Un nom venu d’une autre langue peut donc être adopté par les personnes qu’il désigne.",
     ],
     entities: [
       { kind: "country", id: "ETH", label: "Éthiopie" },
@@ -501,11 +504,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "guinee",
-    headline:
-      "Quatre pays portent le nom de Guinée, et personne ne sait ce qu'il veut dire.",
+    headline: "L’origine du nom Guinée reste discutée.",
     body: [
-      "Une piste le fait venir du berbère aginaw, « homme noir » — d'où akal n-iguinawen, « le pays des hommes noirs » — ; le mot apparaît sur les cartes européennes à partir du XIVe siècle. Une autre, avancée par le géographe Léon l'Africain en 1526, y voit une déformation de Djenné, la grande cité marchande du Niger.",
-      "Aucune n'est établie. Le nom n'en a pas moins servi à découper la côte, puis à baptiser la Guinée, la Guinée-Bissau et la Guinée équatoriale — et, à l'autre bout du monde, la Nouvelle-Guinée, nommée ainsi par un navigateur qui trouvait à ses habitants un air de ressemblance.",
+      "Une explication le rapproche du berbère aginaw, « homme noir », et d’akal n-iguinawen, « le pays des hommes noirs ». Le nom apparaît sur des cartes européennes à partir du XIVe siècle. En 1526, le géographe Léon l’Africain propose plutôt un lien avec Djenné, une ville marchande du Niger.",
+      "Ces deux pistes restent à vérifier. Le nom a été employé pour des parties de la côte, puis repris par la Guinée, la Guinée-Bissau et la Guinée équatoriale. Il se retrouve aussi dans Nouvelle-Guinée : un navigateur aurait choisi ce nom en rapprochant l’apparence de ses habitants de celle des populations de Guinée.",
     ],
     entities: [
       { kind: "country", id: "GIN", label: "Guinée" },
@@ -525,10 +527,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "tanzanie",
-    headline: "La Tanzanie est un mot-valise de moins d'un an.",
+    headline: "Le nom Tanzanie réunit Tanganyika et Zanzibar.",
     body: [
-      "Le Tanganyika devient indépendant en 1961, Zanzibar en 1963. Les deux fusionnent en avril 1964, et l'État né de l'union cherche un nom : ce sera Tanzanie, des trois premières lettres de l'un et des trois premières de l'autre.",
-      "C'est l'un des rares noms d'État africain qui ne vient ni d'un peuple, ni d'un fleuve, ni d'un explorateur. Il est le procès-verbal d'une addition politique, et il le dit ouvertement.",
+      "Le Tanganyika devient indépendant en 1961 et Zanzibar en 1963. Les deux s’unissent en avril 1964. Le nouvel État adopte Tanzanie, en assemblant le début de chacun des deux noms.",
+      "Le nom garde ainsi la trace de cette union politique. Son explication passe par l’histoire des deux territoires qui ont formé le pays.",
     ],
     entities: [
       { kind: "country", id: "TZA", label: "Tanzanie" },
@@ -546,10 +548,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "mozambique",
     headline:
-      "Le Mozambique porte le nom d'un homme, pris pour celui d'un lieu.",
+      "Le nom Mozambique serait lié à un marchand appelé Mussa Bin Bique.",
     body: [
-      "Mussa Bin Bique était un cheikh et marchand établi sur l'île qui commande la côte. Quand l'expédition de Vasco de Gama y aborde en 1498, les Portugais entendent son nom, le prennent pour celui de l'endroit, et écrivent Moçambique.",
-      "L'île devient la capitale coloniale au XVIe siècle, puis le nom déborde sur tout l'arrière-pays. Un pays de plus de trente millions d'habitants s'appelle donc d'après un négociant du XVe siècle, par l'effet d'un malentendu jamais corrigé.",
+      "Selon le récit présenté ici, Mussa Bin Bique était un cheikh et marchand installé sur l’île. Lorsque l’expédition de Vasco de Gama y arrive en 1498, les Portugais auraient pris son nom pour celui du lieu et l’auraient écrit Moçambique.",
+      "L’île devient une capitale coloniale au XVIe siècle. Son nom est ensuite étendu à un territoire plus vaste. Cette explication relie donc le nom d’une personne, celui d’une île et celui du pays.",
     ],
     entities: [
       { kind: "country", id: "MOZ", label: "Mozambique" },
@@ -569,10 +571,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "sierra-leone",
     headline:
-      "On ne s'accorde ni sur qui a nommé la Sierra Leone, ni sur pourquoi.",
+      "Les sources ne donnent pas toutes la même origine au nom Sierra Leone.",
     body: [
-      "Le récit courant attribue Serra Lyoa, « montagnes du Lion », au Portugais Pedro de Sintra vers 1462. L'historien sierra-léonais C. Magbaily Fyle le conteste : le nom est attesté avant cette date, et l'attribution serait une erreur de lecture recopiée d'un historien à l'autre.",
-      "La raison du nom se dédouble aussi : pour les uns le relief de la côte évoquait des dents de lion, pour les autres c'est l'orage qui rugissait au-dessus des collines. Les marins anglais en font Sierra Leoa au XVIe siècle, puis Sierra Leone ; les Britanniques l'officialisent en 1787.",
+      "Un récit courant attribue Serra Lyoa, « montagnes du Lion », au Portugais Pedro de Sintra vers 1462. L’historien sierra-léonais C. Magbaily Fyle conteste cette attribution : il relève le nom avant cette date et propose qu’une erreur de lecture ait été recopiée par plusieurs historiens.",
+      "Le sens est lui aussi expliqué de plusieurs façons. Le relief aurait évoqué des dents de lion, ou le tonnerre au-dessus des collines aurait rappelé un rugissement. Les marins anglais emploient Sierra Leoa au XVIe siècle, puis Sierra Leone, rendu officiel par les Britanniques en 1787.",
     ],
     entities: [
       { kind: "country", id: "SLE", label: "Sierra Leone" },
@@ -607,11 +609,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   // ——————————————————————————————————————————————————————————————————————
   {
     id: "iteso-bakedi",
-    headline:
-      "Les Iteso ont longtemps été désignés par un mot qui veut dire « les nus ».",
+    headline: "Bakedi est un nom donné aux Iteso par leurs voisins.",
     body: [
-      "Bakedi — aussi écrit Bakidi — est le nom que les Baganda leur donnent au XIXᵉ siècle. Il qualifie une manière de se vêtir, jugée depuis l'extérieur, et il est aujourd'hui tenu pour insultant.",
-      "Deux autres mots entourent le premier sans le dire. Teso ne nomme pas le peuple mais son territoire, et Ateso sa langue : trois entités, trois mots, que l'usage a fini par confondre en un seul. La frontière coloniale de 1902 a fait le reste, en séparant les Iteso de l'Ouganda de ceux du Kenya.",
+      "Les Baganda emploient Bakedi, aussi écrit Bakidi, au XIXe siècle. La fiche l’interprète comme « les nus », en référence à un jugement porté sur la façon de se vêtir. Ce nom est aujourd’hui considéré comme insultant.",
+      "Iteso désigne le peuple, Teso son territoire et Ateso sa langue. Ces noms proches peuvent être confondus. La frontière coloniale de 1902 a aussi séparé les Iteso entre l’Ouganda et le Kenya.",
     ],
     entities: [
       { kind: "people", id: "PPL_ITESO", label: "Iteso" },
@@ -632,10 +633,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "datoga-mangati",
     headline:
-      "Les Datooga sont connus sous deux noms, et le plus courant signifie « les ennemis ».",
+      "Les Datooga sont aussi appelés Mang’ati, un nom interprété comme « les ennemis ».",
     body: [
-      "Mang'ati est le mot par lequel les Maasai et plusieurs peuples bantous voisins les désignent. Ce n'est pas une description, c'est une position : le nom dit la relation, pas le peuple.",
-      "L'autre nom courant, Barabaig, est celui du plus grand de leurs sous-groupes. Les Datooga en comptent au moins dix. Un peuple appelé par le nom de sa fraction la plus visible est un peuple dont on n'a compté qu'une partie — l'erreur est de recensement autant que de vocabulaire.",
+      "Les Maasai et plusieurs peuples voisins de langue bantoue emploient Mang’ati pour désigner les Datooga. Le sens rapporté pour ce nom évoque les relations entre ces peuples.",
+      "Barabaig, un autre nom courant, désigne le plus grand de leurs sous-groupes. Les Datooga en comptent au moins dix. Employer le nom d’un seul sous-groupe pour l’ensemble peut donc créer une confusion.",
     ],
     entities: [
       { kind: "people", id: "PPL_DATOGA", label: "Datooga" },
@@ -648,7 +649,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/tcc/",
         tier: "official",
         notes:
-          "Atteste l'endonyme Datooga, les variantes Tatog et Barabaig et le rapport de sous-groupe.",
+          "Mentionne Datooga, Tatog et Barabaig, et précise les liens entre le peuple et ses sous-groupes.",
       },
       {
         title: "Glottolog — Datooga (dato1239)",
@@ -660,10 +661,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "azande-niamniam",
     headline:
-      "Une calomnie faite aux Azande a fini par nommer une plante et entrer dans le turc.",
+      "Un nom méprisant donné aux Azande se retrouve dans le nom d’une plante.",
     body: [
-      "Azande signifie dans leur langue « ceux qui possèdent beaucoup de terre ». Le nom que l'Europe a retenu au XIXᵉ siècle est un autre : Niam-Niam, employé par les voisins arabes puis par les explorateurs, et censé imiter le bruit d'une bouche qui mange. Il accusait tout un peuple de cannibalisme.",
-      "Le mot a voyagé plus loin que l'accusation. Le turc yamyam en dérive. Une balsamine décrite par les botanistes porte encore le nom d'Impatiens niamniamensis. Une calomnie du XIXᵉ siècle survit ainsi dans une nomenclature qui ne sait plus ce qu'elle répète.",
+      "Azande est interprété comme « ceux qui possèdent beaucoup de terre ». Au XIXe siècle, des explorateurs européens ont repris Niam-Niam, un nom employé par des voisins arabes. Il aurait imité le bruit d’une bouche qui mange et associait les Azande à une accusation de cannibalisme.",
+      "Le nom a ensuite circulé dans d’autres usages. Le mot turc yamyam en serait issu, et une plante porte encore le nom scientifique Impatiens niamniamensis. Ces mots gardent ainsi la trace d’une réputation attribuée aux Azande.",
     ],
     entities: [
       { kind: "people", id: "PPL_AZANDE_SUD", label: "Azande" },
@@ -685,17 +686,17 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/zne/",
         tier: "official",
         notes:
-          "Atteste l'ethnonyme et les variantes, dont Niam-Niam, relevée comme appellation dépréciative.",
+          "Mentionne le nom du peuple et ses variantes, dont Niam-Niam, présenté comme un nom méprisant.",
       },
     ],
   },
   {
     id: "wonnin-godie",
     headline:
-      "Le nom officiel des Wonnin est un sobriquet de voisin : « chimpanzé-panthère ».",
+      "Le nom Godié viendrait d’un surnom donné par les voisins des Wonnin.",
     body: [
-      "Gwèdji, en langue néyo, associe deux animaux pour qualifier un caractère jugé belliqueux. Les Néyo l'appliquent à leurs voisins ; la forme francisée Godié est aujourd'hui celle des cartes, des recensements et des codes de langue.",
-      "Wonnin est le nom que le groupe se donne. Il n'a jamais quitté l'usage domestique, ce qui laisse le sobriquet occuper seul l'espace public — l'ordinaire de cette page : le nom qui circule est rarement celui qu'on s'est choisi.",
+      "La fiche des Wonnin rapproche Godié du mot néyo Gwèdji, qui associerait « chimpanzé » et « panthère » pour évoquer un caractère jugé combatif. Selon cette explication, les Néyo auraient donné ce surnom à leurs voisins. La forme française Godié est employée sur les cartes, dans les recensements et pour identifier la langue.",
+      "Wonnin est le nom que le groupe emploie pour se désigner. Les deux noms coexistent donc, mais ils n’occupent pas la même place dans les documents officiels et les usages des personnes concernées.",
     ],
     entities: [
       { kind: "people", id: "PPL_WONNIN", label: "Wonnin (Godié)" },
@@ -714,11 +715,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "murle-moden",
-    headline:
-      "Trois voisins ont donné trois noms différents aux Murle, et les Murle n'ont qu'un mot pour les trois.",
+    headline: "Les voisins des Murle les appellent par plusieurs noms.",
     body: [
-      "Beir chez les Dinka, Jebe chez les Luo et les Nuer, Ajibba chez les Anuak : la littérature coloniale britannique enregistre ces trois formes avant que l'autonyme Murle ne soit reconnu. Un peuple porte autant de noms qu'il a de voisins.",
-      "La symétrie est exacte de l'autre côté. En murle, tous les non-Murle sont moden — un seul mot, qui dit à la fois l'étranger et l'ennemi. Nommer ses voisins et être nommé par eux sont le même geste, pris dans les deux sens.",
+      "Les documents coloniaux britanniques relèvent Beir chez les Dinka, Jebe chez les Luo et les Nuer, et Ajibba chez les Anuak. Murle est le nom employé par les personnes concernées pour se désigner.",
+      "La fiche rapporte qu’en murle, moden désigne les personnes qui ne sont pas murle, avec les sens d’étranger et d’ennemi. Les noms employés de part et d’autre peuvent ainsi exprimer la manière dont chacun perçoit ses voisins.",
     ],
     entities: [
       { kind: "people", id: "PPL_MURLE", label: "Murle" },
@@ -737,17 +737,17 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://glottolog.org/resource/languoid/id/murl1244",
         tier: "official",
         notes:
-          "Atteste l'ethnonyme et les exonymes voisins. Le sens de moden est rapporté par notre fiche sur ce peuple.",
+          "Mentionne le nom du peuple et les noms employés par ses voisins. Le sens de moden est rapporté par notre fiche sur ce peuple.",
       },
     ],
   },
   {
     id: "kirdi-paien",
     headline:
-      "« Kirdi » ne désigne aucun peuple : il désigne quarante peuples qui ont refusé l'islam.",
+      "Kirdi a été employé pour regrouper plus de quarante peuples non musulmans.",
     body: [
-      "Le mot vient du kanouri-haoussa et signifie païen. Les populations islamisées du nord du Cameroun et du Tchad — Peuls, Mandaras, Kotokos — l'appliquent à celles qui ne le sont pas. La première mention occidentale date du récit de voyage du major Denham, en 1826, sous la forme Kerdies.",
-      "Il recouvre plus de quarante ethnies sans parenté linguistique ni culturelle, dont la seule chose commune est ce refus. Depuis les années 1990, un mouvement politique l'a retourné en « Kirditude » et s'en sert comme drapeau — un des rares cas où une insulte de vainqueur est reprise par ceux qu'elle visait.",
+      "Le nom est rattaché au kanouri-haoussa et interprété comme « païen ». Des populations musulmanes du nord du Cameroun et du Tchad, dont les Peuls, les Mandaras et les Kotokos, l’emploient pour des voisins non musulmans. Le récit de voyage du major Denham, publié en 1826, mentionne la forme Kerdies.",
+      "Le regroupement réunit des peuples aux langues et aux cultures différentes. Depuis les années 1990, un mouvement politique reprend le nom dans « Kirditude » pour affirmer une identité commune. Un mot donné de l’extérieur peut ainsi être réutilisé par des personnes qu’il désignait.",
     ],
     entities: [
       { kind: "people", id: "PPL_KIRDI", label: "Kirdi" },
@@ -768,10 +768,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "bambara-refus",
-    headline: "Bambara veut probablement dire « ceux qui refusent ».",
+    headline: "Une explication rapproche Bambara de « ceux qui refusent ».",
     body: [
-      "L'étymologie est débattue — on l'a rattachée à l'arabe comme au mandingue — mais le sens que retiennent les sources du XVIIIᵉ siècle est stable : infidèle, mécréant. Le mot est alors employé par les Mandingues islamisés pour désigner les Bamana restés animistes.",
-      "Bamana est la forme que les locuteurs emploient. Bambara, lui, a suivi le chemin inverse de la plupart des noms de cette page : porté par l'usage jusqu'à en perdre sa charge, il nomme aujourd'hui une langue véhiculaire que des millions de personnes parlent sans y entendre le reproche d'origine.",
+      "L’origine est discutée : le nom a été rapproché de l’arabe et du mandingue. Les sources du XVIIIe siècle citées dans la fiche lui donnent des sens comme « infidèle » ou « mécréant ». Des Mandingues musulmans l’employaient pour désigner les Bamana restés attachés à d’autres croyances.",
+      "Bamana est le nom employé par les personnes concernées. Bambara désigne aujourd’hui aussi une langue parlée par des millions de personnes et utilisée dans les échanges entre peuples. Ces usages actuels ne portent pas toujours le jugement religieux rapporté dans les textes anciens.",
     ],
     entities: [
       { kind: "people", id: "PPL_BAMBARA", label: "Bambara (Bamana)" },
@@ -784,17 +784,16 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/bam/",
         tier: "official",
         notes:
-          "Atteste les formes Bambara et Bamana et le statut véhiculaire de la langue. L'étymologie dépréciative est rapportée par notre fiche sur ce peuple, qui la donne pour débattue.",
+          "Mentionne les formes Bambara et Bamana et l’usage de la langue dans les échanges entre peuples. Notre fiche rapporte une explication méprisante de l’origine du nom, tout en précisant qu’elle est discutée.",
       },
     ],
   },
   {
     id: "dogon-habe",
-    headline:
-      "Dans les sources anciennes, les Dogon s'appellent Habe — un mot peul pour « étranger ».",
+    headline: "Des textes anciens désignent les Dogon par le nom peul Habe.",
     body: [
-      "Habe est employé par les Peuls pour désigner ceux qui ont refusé l'islamisation ; le mot dit à la fois l'étranger et le paysan, et il est utilisé péjorativement. Les références anciennes le mettent régulièrement à la place de Dogon.",
-      "Dogon a fini par s'imposer partout, y compris chez les intéressés. Ce que le nom unique masque, c'est qu'il recouvre une douzaine de langues et une cinquantaine de sous-dialectes dont beaucoup ne s'entendent pas entre eux : l'unité dogon est culturelle et territoriale avant d'être linguistique.",
+      "La fiche rapporte que des Peuls emploient Habe pour des populations ayant refusé l’islamisation, avec des sens liés à l’étranger et au paysan. Le nom est décrit comme méprisant. Il apparaît régulièrement à la place de Dogon dans des références anciennes.",
+      "Dogon s’est ensuite largement répandu, y compris chez les personnes concernées. Ce nom commun recouvre pourtant une douzaine de langues et une cinquantaine de variantes, dont beaucoup ne permettent pas de se comprendre. Les liens entre les Dogon sont donc aussi culturels et territoriaux.",
     ],
     entities: [
       { kind: "people", id: "PPL_DOGON", label: "Dogon" },
@@ -808,17 +807,17 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://whc.unesco.org/fr/list/516/",
         tier: "official",
         notes:
-          "Atteste le territoire et la désignation Dogon. L'exonyme peul Habe et son sens sont rapportés par notre fiche sur ce peuple.",
+          "Décrit le territoire et emploie le nom Dogon. Le nom peul Habe et son sens sont rapportés par notre fiche sur ce peuple.",
       },
     ],
   },
   {
     id: "le-nom-est-une-reponse",
     headline:
-      "Trois peuples d'Afrique de l'Ouest portent pour nom la réponse qu'un ancêtre a faite à une question.",
+      "Trois récits expliquent des noms de peuples par une réponse mal comprise.",
     body: [
-      "Les Nankana du Ghana sont administrativement des Frafra depuis les Britanniques. Le mot est la corruption d'une salutation en gurune, Ya fara fara ? — « comment va ton travail, ta peine ? ». On a pris la formule de politesse pour le nom du peuple qui la prononçait.",
-      "Le même accident se répète deux fois. Busanga, l'exonyme des Bissa, vient de bisag gua — « homme bissa » —, la réponse donnée aux premiers Européens qui demandaient qui ils étaient. Et les Ma'di du Nil rapportent que leur nom vient de madi, « une personne », répondu dans les mêmes circonstances. Trois fois, la question « qui êtes-vous ? » a produit un nom qui n'en était pas un.",
+      "Un récit rapproche Frafra, employé sous l’administration britannique pour les Nankana du Ghana, de la salutation en gurune Ya fara fara ?, « comment va ton travail, ta peine ? ». Une formule de politesse aurait ainsi été prise pour un nom de peuple.",
+      "Un autre récit rapproche Busanga, nom donné aux Bissa, de bisag gua, « homme bissa », une réponse à des Européens qui demandaient qui ils étaient. Les Ma'di du Nil rapportent une histoire semblable avec madi, « une personne ». Les fiches présentent ces explications comme des récits transmis, dont les détails restent à vérifier.",
     ],
     entities: [
       { kind: "people", id: "PPL_NANKANA", label: "Nankana (Frafra)" },
@@ -847,17 +846,16 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/mhi/",
         tier: "official",
         notes:
-          "Atteste l'ethnonyme. Les trois récits d'origine sont rapportés par les fiches AFRIK des peuples concernés, qui les donnent pour traditionnels.",
+          "Mentionne le nom du peuple. Les trois récits d’origine sont rapportés par nos fiches sur les peuples concernés, qui les présentent comme des récits transmis.",
       },
     ],
   },
   {
     id: "guere-wobe",
-    headline:
-      "Un même peuple s'appelle Guéré en Côte d'Ivoire et Krahn au Liberia, et Wè chez lui.",
+    headline: "Wè, Guéré, Wobé et Krahn sont liés à une même histoire de noms.",
     body: [
-      "Wè est le nom que ce peuple se donne — les sources le glosent « les hommes qui pardonnent facilement ». Guéré est l'exonyme qu'un administrateur colonial français a introduit, et la France y a ajouté une division interne, Guéré au sud, Wobé au nord, qui ne correspondait à aucune frontière culturelle ni linguistique préexistante.",
-      "De l'autre côté de la ligne coloniale, au Liberia, les mêmes gens sont nommés Krahn par leurs voisins kru. Quatre noms pour un peuple, dont trois viennent de l'extérieur — et la division inventée s'est institutionnalisée jusqu'à devenir vraie.",
+      "Wè est le nom employé par les personnes concernées. Les sources citées l’interprètent comme « les hommes qui pardonnent facilement ». Guéré aurait été introduit par un administrateur colonial français. L’administration a ensuite distingué Guéré au sud et Wobé au nord, sans que cette séparation corresponde aux limites culturelles et linguistiques décrites dans ces sources.",
+      "Au Liberia, les voisins kru emploient Krahn. Ces noms montrent comment des populations proches ont été désignées différemment de part et d’autre de la frontière coloniale. Les catégories administratives ont ensuite influencé la façon de les présenter.",
     ],
     entities: [
       { kind: "people", id: "PPL_GUERE", label: "Guéré" },
@@ -889,10 +887,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "bamileke-cent-royaumes",
     headline:
-      "« Bamiléké » est une étiquette allemande posée sur une centaine de royaumes.",
+      "Le nom Bamiléké a été employé pour regrouper une centaine de royaumes.",
     body: [
-      "L'administration coloniale du Kamerun l'introduit à partir de 1884 pour désigner collectivement les populations des hauts plateaux de l'Ouest. L'étymologie reste débattue ; l'une des lectures la rend par « les gens du bas », en référence à la position des arrivants venus des plaines du nord.",
-      "Sous le mot unique, il y a une centaine de fondoms, chacun avec sa langue, son chef et son histoire — et c'est par le nom de son fondom qu'un Bamiléké se désigne d'ordinaire. L'étiquette a effacé cette diversité avant d'être instrumentalisée dans les tensions politiques de l'après-indépendance.",
+      "L’administration coloniale du Kamerun utilise ce nom à partir de 1884 pour des populations des hauts plateaux de l’Ouest. Son origine reste discutée. Une explication propose « les gens du bas », en lien avec la position d’arrivants venus des plaines du nord.",
+      "Ces populations comptent une centaine de royaumes, appelés fondoms, avec leurs langues, leurs chefs et leurs histoires. Les habitants peuvent se désigner par le nom de leur fondom. Le regroupement sous « Bamiléké » rend cette diversité moins visible et a aussi été utilisé dans les tensions politiques après l’indépendance.",
     ],
     entities: [
       { kind: "people", id: "PPL_BAMILEKE", label: "Bamiléké" },
@@ -912,10 +910,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "sara-douzaine",
     headline:
-      "Les Sara ne se sont jamais appelés Sara : le mot vient de ceux qui les regardaient.",
+      "Le nom Sara regroupe plusieurs peuples qui ont leurs propres noms.",
     body: [
-      "Il désigne un ensemble de peuples non musulmans du sud du Tchad dont les langues s'entendent entre elles. Chacun d'eux se nomme autrement — Ngambay, Sar, Mbay — et aucun n'employait le terme collectif.",
-      "L'administration coloniale française l'a amplifié, et l'indépendance lui a donné une réalité politique qu'il n'avait pas. Un regroupement fait de l'extérieur pour la commodité du classement finit par produire le groupe qu'il prétendait décrire.",
+      "Sara a été employé de l’extérieur pour des peuples non musulmans du sud du Tchad parlant des langues proches. Les noms Ngambay, Sar et Mbay, entre autres, permettent de distinguer les groupes concernés.",
+      "L’administration coloniale française a étendu l’usage du nom commun. Après l’indépendance, il a aussi pris une place dans la vie politique. Un regroupement administratif peut ainsi influencer la manière dont les populations sont ensuite présentées.",
     ],
     entities: [
       { kind: "people", id: "PPL_SARA", label: "Sara" },
@@ -941,10 +939,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "bete-plantation",
     headline:
-      "L'ethnie bété a été assemblée par l'administration coloniale à partir de 93 sous-groupes.",
+      "L’administration coloniale a regroupé 93 sous-groupes sous le nom Bété.",
     body: [
-      "Le terme est d'origine locale et ne porte pas de charge coloniale repérable ; ce qui est colonial, c'est le périmètre. Il aurait émergé comme désignation générique des populations travaillant sur les plantations, avant d'être fixé comme catégorie administrative française.",
-      "Ces 93 sous-groupes n'avaient aucune unité politique précoloniale. Magwé, l'ethnonyme traditionnel le plus ancien, est partagé avec les Wè, dont les Bété tiennent un ancêtre commun — une parenté que la nouvelle étiquette a rendue invisible.",
+      "Jean-Pierre Dozon rapporte deux explications recueillies à Gagnoa. Le nom viendrait de « bete o bete o », « paix » ou « pardon », une expression que les Français auraient prise pour un nom de peuple pendant la conquête. Il pourrait aussi avoir été diffusé depuis les premiers postes coloniaux de l’ouest. Ces deux récits ne s’excluent pas nécessairement.",
+      "Les 93 sous-groupes réunis sous ce nom ne formaient pas un ensemble politique unique avant la colonisation. Dozon présente aussi la proposition Magwé de Louhoy Téty Gauze, qui décrit une origine commune à plusieurs peuples du sud-ouest. Aucune des personnes interrogées par Dozon à Gagnoa n’avait toutefois cité ce nom.",
     ],
     entities: [
       { kind: "people", id: "PPL_BETE", label: "Bété" },
@@ -958,7 +956,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.documentation.ird.fr/hor/fdi:17296",
         tier: "referenced",
         notes:
-          "L'étude qui pose la formation de l'ethnie bété comme un processus historique plutôt que comme un donné.",
+          "Étudie comment le regroupement bété s’est formé au fil de l’histoire. Rapporte les explications recueillies à Gagnoa et la proposition Magwé de Téty Gauze.",
       },
       {
         title: "Ethnologue — Bété, Daloa (bev)",
@@ -972,10 +970,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "bassa-nge-distinction",
     headline:
-      "Un nom colonial a, pour une fois, empêché une confusion au lieu d'en créer une.",
+      "Le nom Bassa Nge a servi à distinguer deux peuples appelés Bassa.",
     body: [
-      "Deux peuples sans lien — les Bassa Nge, d'origine nupe, et les Bassa Komu, dont la langue est benue-congo — ont migré presque en même temps vers la même province coloniale britannique, dite province de Bassa. Sous le seul nom de Bassa, ils auraient été comptés comme un.",
-      "Les administrateurs ont ajouté le suffixe nupe Nge pour les distinguer. La distinction tient encore. C'est l'exception qui mesure la règle : ailleurs, la même administration a passé son temps à fondre en une case des peuples que rien ne rapprochait.",
+      "Les Bassa Nge, d’origine nupe, et les Bassa Komu, dont la langue appartient au groupe benue-congo, ont migré à des périodes proches vers la province coloniale britannique de Bassa. Employer Bassa seul pouvait créer une confusion entre eux.",
+      "Les administrateurs ont ajouté Nge, un mot nupe, pour les distinguer. Ce nom est resté en usage. Cet exemple montre qu’un nom administratif peut aussi servir à différencier des groupes.",
     ],
     entities: [
       { kind: "people", id: "PPL_BASSA_NIGERIA", label: "Bassa Nge" },
@@ -1000,10 +998,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "tswa-recensement",
     headline:
-      "Les Vatswa disparaissent à chaque recensement, absorbés dans une case voisine.",
+      "Les Vatswa peuvent être regroupés avec les Tsonga dans les recensements.",
     body: [
-      "Les recensements mozambicains les comptent comme Tsonga. L'étiquette Shangaan, tirée du nom du chef Soshangane, leur a été appliquée par extension alors que les Vatswa précèdent historiquement son empire.",
-      "Un nom qui n'a pas sa case administrative n'a pas d'existence statistique : il n'apparaît dans aucun tableau, donc dans aucune politique publique. La confusion remonte à l'administration coloniale portugaise, qui écrivait Tshwa, et elle a survécu à tous les États qui ont suivi.",
+      "La fiche rapporte que les recensements mozambicains comptent les Vatswa avec les Tsonga. Shangaan, un nom tiré de celui du chef Soshangane, leur a aussi été appliqué, bien qu’ils soient présents avant son empire.",
+      "Ces regroupements rendent les Vatswa moins visibles dans les chiffres publiés. La fiche rattache cette confusion aux usages de l’administration coloniale portugaise, qui écrivait Tshwa. Il faut donc regarder les catégories du recensement avant d’interpréter ses nombres.",
     ],
     entities: [
       { kind: "people", id: "PPL_TSWA_MOZ", label: "Vatswa" },
@@ -1031,10 +1029,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "hutu-cartes-identite",
     headline:
-      "Personne ne s'accorde sur ce que veut dire Hutu, et une administration en a fait une race.",
+      "L’origine du nom Hutu reste discutée, malgré son usage dans les classements coloniaux.",
     body: [
-      "L'étymologie est disputée depuis un siècle. Ernest Viaene, en 1910, propose « esclave ». René Bourgeois le réfute et propose l'inverse, « seigneurs » — chez les Mongo du Congo, les mots apparentés Bahoto et Bawoto désignent bien des dirigeants. Le mot que les intéressés emploient est Abahutu.",
-      "L'incertitude n'a gêné personne. Dans les années 1920, l'administration coloniale belge institue des cartes d'identité ethniques obligatoires et fait de la distinction Hutu-Tutsi une hiérarchie fixe, tranchée notamment sur le nombre de vaches possédées. Une catégorie dont le sens n'était pas établi a été rendue administrativement irréversible.",
+      "Ernest Viaene propose en 1910 le sens d’« esclave ». René Bourgeois conteste cette explication et propose « seigneurs », en rapprochant le nom de Bahoto et Bawoto, employés pour des dirigeants chez les Mongo du Congo. Les personnes concernées utilisent Abahutu.",
+      "L’administration coloniale belge a ensuite inscrit la distinction Hutu-Tutsi dans les cartes d’identité et l’a traitée comme une hiérarchie fixe. La fiche mentionne notamment le nombre de vaches possédées parmi les critères utilisés. L’origine discutée du mot et son emploi administratif sont deux questions distinctes.",
     ],
     entities: [
       { kind: "people", id: "PPL_KIRUNDI_HUTU", label: "Hutu" },
@@ -1063,10 +1061,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "kasem-gurunsi",
     headline:
-      "« Gurunsi » signifie « le fer ne pénètre pas » : c'était le nom d'une troupe, pas d'un peuple.",
+      "Un récit rapproche Gurunsi d’une formule de protection employée pour des soldats.",
     body: [
-      "Le mot est d'origine djerma. Il désignait les soldats que le chef de guerre Babatu recruta dans les années 1890 parmi plusieurs groupes de la région — une formule de protection, portée par des hommes réputés invulnérables aux armes.",
-      "Les colonisateurs européens l'ont repris comme nom d'ethnie. Les Kasena, qu'il englobe, n'ont de parenté proche ni linguistique ni culturelle avec tous ceux qu'il recouvre. Et le partage franco-britannique de 1898 les a coupés en deux communautés, l'une au Ghana, l'autre au Burkina Faso.",
+      "Selon l’explication rapportée ici, le mot viendrait du djerma et signifierait « le fer ne pénètre pas ». Il aurait désigné des soldats recrutés par le chef de guerre Babatu dans les années 1890. La formule évoquerait leur réputation de résistance aux armes.",
+      "Les administrations européennes ont repris Gurunsi pour regrouper des populations. Les Kasena en font partie, sans partager une langue et une culture proches avec tous les groupes ainsi nommés. La frontière franco-britannique de 1898 les a aussi répartis entre les territoires devenus le Ghana et le Burkina Faso.",
     ],
     entities: [
       { kind: "people", id: "PPL_KASENA", label: "Kasena" },
@@ -1080,7 +1078,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/xsm/",
         tier: "official",
         notes:
-          "Atteste la langue, l'autonyme Kasena et la répartition de part et d'autre de la frontière.",
+          "Décrit la langue, le nom Kasena employé par les personnes concernées et leur présence des deux côtés de la frontière.",
       },
       {
         title: "WALS Online — Kasem",
@@ -1094,10 +1092,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   // ——————————————————————————————————————————————————————————————————————
   {
     id: "dioula-metier",
-    headline: "Les Dioula portent pour nom de peuple un nom de métier.",
+    headline: "Le nom Dioula serait lié au commerce.",
     body: [
-      "Dioula est un nom commun mandingue : marchand, commerçant itinérant. Il s'est appliqué aux communautés mandé islamisées spécialisées dans le commerce à longue distance, jusqu'à devenir leur ethnonyme. En Afrique de l'Ouest anglophone, les mêmes réseaux s'appellent Wangara.",
-      "Le peuple lui-même dit Julakan, « les gens du commerce » — il assume donc le métier comme identité. Un piège demeure pour le lecteur pressé : les Diola de Casamance n'ont rien à voir, ni la langue, ni la famille, ni l'histoire. Deux noms voisins à l'œil, deux peuples sans rapport.",
+      "Dioula est rapproché d’un mot mandingue qui signifie « marchand » ou « commerçant itinérant ». Il aurait été appliqué à des communautés mandé musulmanes spécialisées dans le commerce à longue distance, puis serait devenu un nom de peuple. Wangara apparaît aussi dans les récits sur ces réseaux, mais les deux noms ne désignent pas toujours exactement les mêmes groupes.",
+      "Jula et Dyula sont d’autres façons d’écrire le nom. Julakan désigne la langue, et non « les gens du commerce » : kan signifie ici « langue ». Il faut aussi distinguer Dioula de Diola, employé en Casamance pour un autre peuple et une autre langue.",
     ],
     entities: [
       { kind: "people", id: "PPL_DIOULA", label: "Dioula" },
@@ -1114,14 +1112,38 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         notes:
           "Atteste les graphies Dioula, Jula, Dyula et l'aire des réseaux marchands.",
       },
+      {
+        title:
+          "Chikouna Cissé, Entre descriptions (pré)coloniales et descriptions de soi. La fabrique de l'identité jula au fil des enquêtes en Afrique de l'Ouest (XVIe–XIXe siècles), À propos 1, 2025",
+        url: "https://www.ouvroir.fr/apropos/index.php?id=100",
+        tier: "referenced",
+        notes:
+          "Cite François-Xavier Fauvelle et Jean Bazin sur le glissement sémantique de Wangara vers Jula, du nom d'un groupe vers celui d'une spécialisation professionnelle.",
+      },
+      {
+        title:
+          "Yaya Konaté, Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela 14-1, 2016",
+        url: "https://doi.org/10.4000/corela.4586",
+        tier: "referenced",
+        notes:
+          "Article fondé sur des enquêtes de terrain : les interlocuteurs de l'auteur traduisent jula par « commerçant ».",
+      },
+      {
+        title:
+          "Paul E. Lovejoy, The Role of the Wangara in the Economic Transformation of the Central Sudan in the Fifteenth and Sixteenth Centuries, The Journal of African History 19(2), 1978, pp. 173-193",
+        url: "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/role-of-the-wangara-in-the-economic-transformation-of-the-central-sudan-in-the-fifteenth-and-sixteenth-centuries/1DB11290A76E4158CE5E60EB0CB0E4B9",
+        tier: "referenced",
+        notes:
+          "Conteste, pour le Soudan central et le pays haoussa, l'équivalence courante entre Wangara et Jula : y décrit les Wangara comme une diaspora commerciale distincte, liée à l'empire Songhaï. Résumé consulté, texte intégral non lu.",
+      },
     ],
   },
   {
     id: "teke-vendre",
-    headline: "En langue teke, « teke » veut dire vendre.",
+    headline: "Le nom Teke est rapproché d’un verbe qui signifie « vendre ».",
     body: [
-      "Le nom du peuple est le verbe de son activité historique. Le préfixe bantou donne BaTeke au pluriel, MuTeke au singulier : « ceux du commerce », en un seul mot.",
-      "C'est le même geste que chez les Dioula, à trois mille kilomètres et dans une autre famille de langues. Quand un peuple tient les routes, ce sont les routes qui finissent par le nommer.",
+      "Cette explication rattache le nom aux activités commerciales du peuple. Les formes BaTeke et MuTeke désignent respectivement plusieurs personnes et une seule. Leur sens est présenté comme « ceux du commerce ».",
+      "Comme pour le nom Dioula, l’explication proposée fait un lien entre un nom de peuple et le commerce. La ressemblance entre ces récits ne signifie pas que les deux noms ont une origine commune.",
     ],
     entities: [
       { kind: "people", id: "PPL_TEKE_NORD", label: "Teke" },
@@ -1135,17 +1157,17 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/teg/",
         tier: "official",
         notes:
-          "Atteste l'ethnonyme et ses formes préfixées. Le sens du radical est rapporté par notre fiche sur ce peuple.",
+          "Mentionne le nom du peuple et les formes qui changent selon qu’il s’agit d’une ou de plusieurs personnes. L’explication du sens est rapportée par notre fiche sur ce peuple.",
       },
     ],
   },
   {
     id: "tetela-watetera",
     headline:
-      "« Batetela » est apparu dans des revues de géographie européennes entre 1885 et 1887.",
+      "« Batetela » apparaît dans des revues européennes entre 1885 et 1887.",
     body: [
-      "Le mot dérive de Watetera, terme arabe qui désignait les populations du Maniema à l'époque du commerce esclavagiste. Il entre dans la littérature savante avec les explorateurs, et n'en est jamais ressorti : c'est aujourd'hui le nom courant.",
-      "Le nom que le peuple se donne dit autre chose. Motetela viendrait d'une divinité locale, et se traduit « celui qui ne rit pas » ou « celui dont on ne peut se moquer ». Deux noms, deux points de vue, et un seul a été imprimé.",
+      "La fiche rattache ce mot à Watetera, un terme arabe employé pour des populations du Maniema à l’époque du commerce esclavagiste. Des explorateurs l’auraient fait entrer dans les publications européennes. Cette origine demande encore une source consacrée au nom lui-même.",
+      "La fiche propose une autre explication pour Motetela, employé par les personnes concernées. Il serait lié à une divinité locale et signifierait « celui qui ne rit pas » ou « celui dont on ne peut se moquer ». Les deux noms renvoient ainsi à des récits différents.",
     ],
     entities: [
       { kind: "people", id: "PPL_TETELA", label: "Tetela" },
@@ -1158,17 +1180,16 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/ebooks_tetela.pdf",
         tier: "referenced",
         notes:
-          "Recueil de proverbes en tetela. Il documente la langue, non l'étymologie de l'ethnonyme : les deux origines rapportées ici viennent de notre fiche sur ce peuple et n'ont pas de source dédiée, d'où la fiabilité basse du fait.",
+          "Ce recueil de proverbes présente la langue tetela. Il ne donne pas l’origine du nom du peuple. Les deux explications viennent de notre fiche et demandent encore une source consacrée à cette question.",
       },
     ],
   },
   {
     id: "tabwa-attache",
-    headline:
-      "Le nom des Tabwa viendrait d'un verbe de leur langue qui signifie « être attaché ».",
+    headline: "Le nom Tabwa viendrait d’un verbe signifiant « être attaché ».",
     body: [
-      "Le rapprochement renvoie à la période où ils furent pris dans la traite. Si l'étymologie tient, c'est un peuple qui porte le nom de ce qui lui a été fait.",
-      "L'identité tabwa est elle-même en partie coloniale : ce qui s'appelle aujourd'hui les Tabwa était une série de villages distincts, aux histoires différentes, que l'administration belge a réunis sous un seul nom. La frontière avec les Lungu voisins reste floue, et plusieurs sources confondent les deux.",
+      "Cette explication renvoie à la période où les Tabwa ont subi la traite esclavagiste. La fiche la présente comme une origine possible du nom, qui demande encore à être vérifiée.",
+      "Elle décrit aussi plusieurs villages aux histoires différentes, regroupés sous un même nom par l’administration belge. Les Tabwa et les Lungu voisins sont parfois confondus dans les sources. Leur regroupement et l’origine de leur nom doivent donc être examinés séparément.",
     ],
     entities: [
       { kind: "people", id: "PPL_TABWA", label: "Tabwa" },
@@ -1182,7 +1203,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
           "Roberts, Allen F. — The Rising of a New Moon: A Century of Tabwa Art. University of Michigan Museum of Art, 1985",
         tier: "referenced",
         notes:
-          "L'étude de référence sur les Tabwa et sur la formation coloniale de leur identité. L'étymologie « être attaché » est rapportée par notre fiche sur ce peuple au conditionnel, d'où la fiabilité basse du fait.",
+          "Étude sur les Tabwa et le rôle de la colonisation dans la formation de leur identité. Notre fiche présente « être attaché » comme une origine possible du nom, qui reste à vérifier.",
       },
       {
         title: "SIL Ethnologue — Taabwa (tap)",
@@ -1194,10 +1215,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "angolar-naufrage",
     headline:
-      "Les Angolares de São Tomé portent le nom du pays d'où leurs ancêtres n'ont pas achevé le voyage.",
+      "Un récit relie les Angolares de São Tomé au naufrage d’un navire venu d’Angola.",
     body: [
-      "La tradition rapporte qu'un navire négrier fit naufrage au large des côtes sud de l'île vers 1540, et que les survivants fondèrent une communauté marronne dans les forêts de l'intérieur. L'ethnonyme renvoie directement à l'Angola, région d'origine de la plupart de leurs ancêtres.",
-      "Le nom est donc un point de départ transformé en identité — et il est régulièrement mal employé : on le donne à tous les créolophones de l'île, alors qu'il désigne cette communauté précise, historiquement stigmatisée comme le bas de l'échelle sociale santoméenne.",
+      "La tradition rapporte qu’un navire négrier aurait fait naufrage près des côtes sud de l’île vers 1540. Les survivants auraient fondé dans les forêts une communauté de personnes ayant échappé à l’esclavage. Le nom Angolares est rapproché de l’Angola, présenté dans ce récit comme la région d’origine de leurs ancêtres.",
+      "Ce nom désigne une communauté précise et ne s’applique pas à toutes les personnes qui parlent une langue créole sur l’île. La fiche rappelle aussi que les Angolares ont longtemps été dévalorisés dans la société de São Tomé.",
     ],
     entities: [
       { kind: "people", id: "PPL_ANGOLAR", label: "Angolares" },
@@ -1222,11 +1243,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "crioulo-cap-vert",
-    headline:
-      "Au Cap-Vert, un mot qui désignait l'esclave né dans la colonie est devenu le nom de la nation.",
+    headline: "Au Cap-Vert, le sens de crioulo a changé au fil de l’histoire.",
     body: [
-      "Le portugais crioulo nommait d'abord les esclaves africains nés dans les colonies, puis les personnes de descendance mixte. C'était une catégorie de statut, produite par le système qui la nommait.",
-      "Sur l'archipel, il s'est étendu à toute la population et a cessé d'être discriminant : il est devenu le marqueur d'une identité nationale inclusive, et le nom de la langue que le pays parle. Peu de mots ont changé de camp aussi complètement.",
+      "En portugais, crioulo désignait d’abord les esclaves africains nés dans les colonies, puis les personnes d’ascendance mixte. Le mot était donc lié aux catégories de la société coloniale.",
+      "Au Cap-Vert, son usage s’est étendu à l’ensemble de la population. Il sert à exprimer une identité nationale commune et à nommer la langue parlée dans l’archipel. Le sens actuel ne se limite donc plus à l’ancien statut colonial.",
     ],
     entities: [
       { kind: "people", id: "PPL_CREOLE_CABOVERDIEN", label: "Cap-Verdiens" },
@@ -1255,10 +1275,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   // ——————————————————————————————————————————————————————————————————————
   {
     id: "kavango-riviere",
-    headline: "Les vaKavango portent le nom de la rivière qui les sépare.",
+    headline: "Le nom vaKavango est lié au fleuve Okavango.",
     body: [
-      "L'Okavango marque la frontière naturelle entre la Namibie et l'Angola dans cette région. Le peuple riverain en a pris le nom, et la région administrative namibienne — coupée en Kavango Est et Kavango Ouest en 2013 — a pris le sien.",
-      "Le mot a donc fait trois fois le tour : de l'eau au peuple, du peuple à la province, et de la province à l'état civil de ceux qui y vivent. Une frontière tracée par un fleuve finit par nommer les gens des deux rives.",
+      "Dans cette région, l’Okavango marque la frontière entre la Namibie et l’Angola. Le nom vaKavango est rattaché à ce fleuve. La région administrative namibienne de Kavango, divisée en Kavango Est et Kavango Ouest en 2013, reprend également ce nom.",
+      "Le même nom sert ainsi à parler du fleuve, des populations riveraines et de régions administratives. Le contexte permet de savoir lequel de ces sens est employé.",
     ],
     entities: [
       { kind: "people", id: "PPL_KAVANGO", label: "vaKavango" },
@@ -1278,11 +1298,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "kaonde-riviere",
-    headline:
-      "Le nom des Kaonde leur a été donné par le chef qui venait de les vaincre.",
+    headline: "Deux récits relient le nom Kaonde à une défaite militaire.",
     body: [
-      "La tradition rapporte que le chef lunda Musokantanda, après avoir défait le chef Mushima, le surnomma Mushima wa Kaonde — Mushima de la rivière Kaonde, un affluent de la Mukwizhi. Le vaincu a hérité du nom du cours d'eau où il se trouvait.",
-      "Une étymologie populaire tire par ailleurs Kaonde vers « le mince » ou « le petit nombre », en référence à cette même défaite. Deux lectures, une seule direction : dans les deux cas, le nom est écrit par le vainqueur.",
+      "La tradition rapporte que le chef lunda Musokantanda aurait vaincu le chef Mushima et l’aurait surnommé Mushima wa Kaonde, « Mushima de la rivière Kaonde ». Le nom viendrait ainsi d’un affluent de la Mukwizhi, près duquel Mushima se trouvait.",
+      "Une autre explication propose « le mince » ou « le petit nombre », en référence à la même défaite. Les deux récits donnent un rôle au vainqueur dans le choix du nom, mais ne lui attribuent pas le même sens.",
     ],
     entities: [
       { kind: "people", id: "PPL_KAONDE", label: "Kaonde" },
@@ -1296,17 +1315,16 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://dice.missouri.edu/assets/docs/niger-congo/Kaonde.pdf",
         tier: "referenced",
         notes:
-          "Fiche linguistique sur le kaonde. Les deux récits d'origine sont traditionnels et rapportés par notre fiche sur ce peuple, sans source qui les arbitre : d'où la fiabilité basse du fait.",
+          "Fiche sur la langue kaonde. Notre fiche du peuple rapporte deux récits d’origine transmis par la tradition. Les sources réunies ici ne permettent pas de choisir entre eux.",
       },
     ],
   },
   {
     id: "manianga-marche",
-    headline:
-      "Les Manianga s'appellent peut-être d'après un marché, ou d'après un mot lâché par Stanley.",
+    headline: "Le nom Manianga est expliqué par deux récits différents.",
     body: [
-      "Deux explications s'accordent : Manianga n'était pas un ethnonyme. Une explication en fait le nom d'un marché fondé près de Kimbanza par l'ancêtre Volumina, seul marché de la région à subsister à l'époque coloniale (Van Bulck). Une autre y voit un surnom lancé par Stanley et sa suite en 1881 près des chutes de Mpioka, appliqué à un peuple qui s'appelait Sundi (Monnier et Wiliame).",
-      "Les deux versions racontent la même chose : un mot de circonstance, ramassé par l'écrit colonial, devenu le nom d'un groupe. Ba-sundi reste l'appellation ethnique propre — Ba- étant le préfixe bantou du pluriel des humains.",
+      "Van Bulck le rapproche d’un marché fondé près de Kimbanza par l’ancêtre Volumina. Ce marché aurait été le seul de la région à subsister à l’époque coloniale. Monnier et Wiliame rapportent plutôt un surnom employé par Stanley et ses compagnons en 1881 près des chutes de Mpioka, pour des personnes appelées Sundi.",
+      "Dans ces deux explications, Manianga n’aurait donc pas été à l’origine un nom de peuple. Ba-sundi reste un nom employé pour le groupe ; ba- indique le pluriel des personnes. Les récits ne donnent toutefois pas la même origine à Manianga.",
     ],
     entities: [
       { kind: "people", id: "PPL_MANIANGA", label: "Manianga (Ba-sundi)" },
@@ -1326,11 +1344,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "gorowa-village-voisin",
-    headline:
-      "Les Gorwaa sont désignés par le nom du plus gros village de leurs voisins.",
+    headline: "Les Gorwaa portent aussi des noms donnés par leurs voisins.",
     body: [
-      "Kimbulu — ou Mbulu — est emprunté au principal village iraqw. Les exonymes swahilis Fiome et Ufiomi circulent en parallèle, et les Datooga, éleveurs voisins, les appellent Gobreik, mot qui désigne les anciens groupes couchitiques agriculteurs dont Gorwaa et Iraqw descendent.",
-      "L'affaire n'est pas historique. En ville, beaucoup de jeunes Gorwaa se disent eux-mêmes Mbulu, et l'étiquette absorbe progressivement les deux groupes en un seul. Un nom emprunté au voisin finit par effacer la distinction qu'il servait à marquer.",
+      "Kimbulu, ou Mbulu, serait emprunté au nom du principal village iraqw. Fiome et Ufiomi sont employés en swahili. Les Datooga, des éleveurs voisins, utilisent Gobreik pour les anciens groupes d’agriculteurs de langue couchitique auxquels la fiche rattache les Gorwaa et les Iraqw.",
+      "La fiche rapporte qu’en ville, de jeunes Gorwaa se présentent eux-mêmes comme Mbulu. Un nom venu des voisins peut donc être adopté par les personnes concernées, tout en rendant moins visible la distinction entre les groupes.",
     ],
     entities: [
       { kind: "people", id: "PPL_GOROWA", label: "Gorwaa" },
@@ -1356,10 +1373,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "kalabari-calabar",
     headline:
-      "Kalabari et Calabar sonnent pareil et n'ont rien en commun : les Européens ont confondu les deux.",
+      "La ressemblance entre Kalabari et Calabar a créé des confusions.",
     body: [
-      "Kalabari vient d'un ancêtre éponyme, Perebo Kalabari, fils de Meinowei. Calabar est un nom efik, celui d'une ville du Cross River. Les Portugais, arrivés sur la côte, ont écrit Calabari sous l'influence du voisinage ; les Britanniques ont prononcé Calabar. Deux toponymes sans parenté ont fusionné dans l'oreille des arrivants.",
-      "Le peuple, lui, se nomme Awome. Et le nom du lieu principal, Elem Kalabari, dit « nouveau port d'expédition » — c'est-à-dire ce que le commerce en avait fait.",
+      "La fiche rapproche Kalabari d’un ancêtre nommé Perebo Kalabari, fils de Meinowei. Calabar est un nom efik qui désigne une ville du Cross River. Elle rapporte que les Portugais ont écrit Calabari et que les Britanniques ont employé Calabar, en rapprochant les deux noms.",
+      "Les personnes concernées emploient aussi Awome. Elem Kalabari, le nom du principal lieu d’installation, est interprété comme « nouveau port d’expédition ». Ces explications distinguent le nom du peuple de ceux des lieux.",
     ],
     entities: [
       { kind: "people", id: "PPL_KALAIBARI", label: "Kalabari" },
@@ -1386,11 +1403,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   // ——————————————————————————————————————————————————————————————————————
   {
     id: "omotique-fleuve-omo",
-    headline:
-      "Une famille de langues d'Éthiopie a été rebaptisée en 1969 d'après un fleuve, pour cesser de dire « couchitique occidental ».",
+    headline: "Le nom des langues omotiques vient du fleuve Omo.",
     body: [
-      "Jusqu'à Greenberg, en 1963, ces langues du sud-ouest éthiopien sont classées comme une branche occidentale du couchitique. Harold C. Fleming propose en 1969 de les tenir pour une branche indépendante de l'afro-asiatique, et de les appeler omotiques — du nom de l'Omo, le fleuve au bord duquel vivent la plupart de ces peuples. Les travaux de Bender, en 1971, font accepter la proposition.",
-      "Le mot ne désigne aucune identité partagée : Bench, Dizi, Kafa, Wolaita, Gamo, Hamer ne se pensent pas omotiques. Et l'unité de la famille est contestée — pour certains linguistes, les langues mao et sud-omotiques n'appartiennent même pas à l'afro-asiatique. Une catégorie savante peut se renommer une fois et rester discutée un demi-siècle.",
+      "En 1963, Greenberg classe encore ces langues du sud-ouest de l’Éthiopie dans le groupe couchitique occidental. En 1969, Harold C. Fleming propose de les regrouper séparément au sein de l’ensemble afro-asiatique et de les appeler « omotiques », d’après le fleuve Omo. Les travaux de Bender, en 1971, contribuent à faire connaître ce classement.",
+      "Ce nom de famille de langues ne signifie pas que les Bench, Dizi, Kafa, Wolaita, Gamo et Hamer se considèrent comme un seul peuple. Le classement reste aussi discuté : certains linguistes placent les langues mao et sud-omotiques en dehors de l’ensemble afro-asiatique.",
     ],
     entities: [
       {
@@ -1422,11 +1438,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "gur-mabia",
-    headline:
-      "Les langues gur ont changé trois fois de nom, et la dernière proposition vient de l'intérieur.",
+    headline: "Mabia est un nom proposé pour une partie des langues gur.",
     body: [
-      "Koelle les range en 1854 dans son « North-Eastern High Sudan ». Elles deviennent ensuite les langues voltaïques, du nom du fleuve Volta, puis gur. Aucun de ces noms ne vient des peuples concernés : ils n'ont d'ailleurs pas de sentiment d'appartenance commune, la famille étant une catégorie de linguistes.",
-      "En 2017, le linguiste Adams Bodomo propose Mabia pour l'ensemble du gur central : du proto-gur ma-, mère, et bia, enfant. Le nom dit une parenté au lieu de dire un fleuve, et il est proposé par quelqu'un dont c'est la langue. C'est rare assez pour être noté.",
+      "Koelle regroupe ces langues en 1854 sous le nom « North-Eastern High Sudan ». Elles sont ensuite appelées voltaïques, en référence au fleuve Volta, puis gur. Ces classements viennent des chercheurs et ne décrivent pas nécessairement une appartenance commune ressentie par les peuples concernés.",
+      "En 2017, le linguiste Adams Bodomo propose Mabia pour le gur central. Il rapproche ce nom de ma-, « mère », et bia, « enfant », dans une forme ancienne de la langue reconstituée par les linguistes. Sa proposition emploie ainsi des mots de la famille de langues qu’il étudie et à laquelle appartient sa propre langue.",
     ],
     entities: [
       { kind: "people", id: "PPL_GUR_MACRO", label: "Peuples gur" },
@@ -1455,10 +1470,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "ronga-junod",
     headline:
-      "L'ethnonyme ronga a été mis en circulation par un philologue suisse.",
+      "Les travaux d’un chercheur suisse ont diffusé le nom Ronga en Europe.",
     body: [
-      "Henri-Alexandre Junod, missionnaire et linguiste, est le premier à étudier la langue à la fin du XIXᵉ siècle, et c'est son usage qui fixe le terme dans la littérature européenne. Le mot n'était pas inventé : les sources portugaises du XVIᵉ siècle mentionnaient déjà des chefferies rhonga autour de la baie de Delagoa, l'actuelle baie de Maputo.",
-      "Ce que le savant fixe, il le fixe aussi contre autre chose. Les recensements mozambicains et sud-africains ont ensuite rangé les Ronga sous Tsonga ou sous Shangaan, et la question de savoir si le xironga est une langue ou un dialecte du xitsonga n'est toujours pas close.",
+      "Henri-Alexandre Junod, missionnaire et linguiste, étudie la langue à la fin du XIXe siècle. Ses travaux contribuent à installer Ronga dans les publications européennes. Il n’a pas inventé le mot : des sources portugaises du XVIe siècle mentionnaient déjà des chefferies rhonga autour de la baie de Delagoa, aujourd’hui baie de Maputo.",
+      "Les recensements mozambicains et sud-africains ont ensuite regroupé les Ronga sous les noms Tsonga ou Shangaan. La place du xironga reste discutée : selon les classements, il est présenté comme une langue ou comme une variante du xitsonga.",
     ],
     entities: [
       { kind: "people", id: "PPL_RONGA", label: "Ronga" },
@@ -1487,10 +1502,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "fulbe-quatre-noms",
     headline:
-      "Les Fulbe portent quatre noms internationaux, et aucun des quatre n'est le leur.",
+      "Peul, Fula, Fulani et Fellata sont des noms venus de plusieurs langues.",
     body: [
-      "Peul vient du wolof Pel, repris par les colonisateurs français. Fula est l'anglicisation d'un terme mandingue. Fulani est la forme haoussa, devenue courante au Nigeria et dans tout le monde anglophone. Fellata est le terme arabe du Soudan et du Tchad, appliqué à ceux installés sur les routes du pèlerinage — et il est chargé de stéréotypes assez négatifs pour qu'on l'évite.",
-      "Le nom du peuple, en peul, est Fulbe au pluriel et Pullo au singulier. Quatre langues voisines ont chacune fabriqué sa propre étiquette, et ce sont ces quatre-là qui ont voyagé.",
+      "Peul viendrait du wolof Pel, repris en français. Fula serait passé par un terme mandingue, puis par l’anglais. Fulani est rattaché au haoussa et reste courant au Nigeria et en anglais. Fellata est employé en arabe au Soudan et au Tchad, notamment pour des personnes installées sur les routes du pèlerinage. Ce dernier nom peut véhiculer des stéréotypes négatifs.",
+      "Les personnes concernées emploient Fulbe au pluriel et Pullo au singulier. Les autres noms racontent les contacts avec leurs voisins et les langues dans lesquelles leur histoire a été écrite.",
     ],
     entities: [
       {
@@ -1521,10 +1536,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "malinke-manden",
     headline:
-      "Malinké, Mandinka, Mandingo, Maninka : un seul nom, réfracté par les routes de la dispersion.",
+      "Malinké, Mandinka, Mandingo et Maninka sont des noms liés au Manden.",
     body: [
-      "Tous viennent du Manden, la région historique berceau de l'empire du Mali. Malinké en est la forme française, Maninka celle de Guinée et du Mali, Mandinka celle du Sénégal, de la Gambie et de la Guinée-Bissau, Mandingo la version anglaise coloniale encore employée en Gambie et en Sierra Leone.",
-      "Chaque forme marque une route de dispersion et l'administration qui l'a écrite. Quinze millions de personnes environ sont concernées, et l'ISO 639-3 a fini par découper l'ensemble en une demi-douzaine de langues séparées — parce qu'un nom qui se dit de six façons finit par être classé six fois.",
+      "Ces noms sont rattachés au Manden, région historique associée à l’empire du Mali. Malinké est la forme française. Maninka est employé en Guinée et au Mali ; Mandinka au Sénégal, en Gambie et en Guinée-Bissau. Mandingo est une forme anglaise héritée de la période coloniale, encore employée en Gambie et en Sierra Leone.",
+      "Les usages varient donc selon les régions et les langues. La fiche évoque environ quinze millions de personnes et plusieurs langues distinctes dans le classement ISO 639-3. La ressemblance entre les noms ne suffit pas à décrire les liens entre toutes ces langues.",
     ],
     entities: [
       { kind: "people", id: "PPL_MALINKE", label: "Malinké" },
@@ -1547,10 +1562,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "fang-reputation",
     headline:
-      "Les Fang ont laissé courir une réputation de cannibales pour tenir les étrangers à distance.",
+      "La réputation attribuée aux Fang demande à être examinée avec prudence.",
     body: [
-      "Pahouin est l'étiquette française, Pangwe l'allemande, Pamue l'espagnole : trois empires, trois orthographes, un seul peuple, qui se nomme Fang. Le terme Pahouin est aujourd'hui tenu pour péjoratif.",
-      "Il l'est notamment parce qu'il s'est chargé d'une réputation de guerriers cannibales — que les Fang, rapporte la notice de ce peuple, ont eux-mêmes cultivée pour dissuader les visiteurs. Un peuple peut donc contribuer à sa propre légende noire, et découvrir ensuite qu'elle lui survit et le dessert.",
+      "Les administrations française, allemande et espagnole ont employé les formes Pahouin, Pangwe et Pamue pour des personnes qui se nomment Fang. Pahouin est aujourd’hui jugé méprisant, notamment en raison des accusations de cannibalisme qui lui ont été associées.",
+      "La fiche rapporte que des Fang auraient entretenu cette réputation pour tenir les visiteurs à distance. Elle ne cite toutefois pas de source consacrée à cette affirmation. Ce récit demande donc une vérification avant de pouvoir être retenu.",
     ],
     entities: [
       { kind: "people", id: "PPL_FANG_GABON", label: "Fang" },
@@ -1564,24 +1579,25 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Fang (fan)",
         url: "https://www.ethnologue.com/language/fan/",
         tier: "official",
-        notes: "Atteste l'ethnonyme et les étiquettes coloniales concurrentes.",
+        notes:
+          "Mentionne le nom du peuple et les différents noms employés pendant la colonisation.",
       },
       {
         title: "Smarthistory — Fang reliquary guardian figure",
         url: "https://smarthistory.org/fang-reliquary-figure/",
         tier: "referenced",
         notes:
-          "Contexte sur les Fang et leur art. La culture délibérée de la réputation est rapportée par notre fiche sur ce peuple sans source dédiée, d'où la fiabilité basse du fait.",
+          "Présente les Fang et leur art. Notre fiche rapporte que cette réputation aurait été entretenue pour éloigner les visiteurs, mais ne cite pas de source consacrée à cette affirmation.",
       },
     ],
   },
   {
     id: "beti-cranes",
     headline:
-      "L'accusation de cannibalisme portée contre les Béti reposait sur des crânes d'ancêtres.",
+      "Des crânes d’ancêtres ont été interprétés comme un signe de cannibalisme chez les Béti.",
     body: [
-      "Paul Du Chaillu, en 1856, observe des crânes près des villages et conclut à l'anthropophagie. C'étaient des crânes d'ancêtres, conservés comme tels. L'erreur de lecture a été reprise, imprimée, et a servi à justifier la violence coloniale.",
-      "Le mot qui l'a portée est Pahouin, déformation française du Pangwe allemand, étiquette administrative qui amalgamait Ewondo, Bulu, Fang, Eton et Bane sous un seul nom. Une catégorie fausse et une calomnie fausse ont voyagé ensemble, et l'une a rendu l'autre plus facile à croire.",
+      "La fiche rapporte qu’en 1856, Paul Du Chaillu observe des crânes près des villages et y voit une preuve de cannibalisme. Elle les décrit comme des crânes d’ancêtres conservés dans un autre but. L’accusation a ensuite été reprise dans des textes et utilisée pour justifier la violence coloniale.",
+      "Ces récits emploient Pahouin, une forme française rapprochée de Pangwe en allemand. Ce nom administratif regroupait Ewondo, Bulu, Fang, Eton et Bane. Il faut donc examiner à la fois les populations visées par le nom et les preuves avancées par les auteurs.",
     ],
     entities: [
       { kind: "people", id: "PPL_BETI", label: "Béti" },
@@ -1612,10 +1628,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "khwe-penduka",
     headline:
-      "En 2000, à Penduka, des peuples se sont réunis pour décider comment leur nom s'écrit.",
+      "La déclaration de Penduka recommande l’orthographe Khwe depuis 2000.",
     body: [
-      "Les Khwe du Kalahari et de l'Okavango étaient nommés Kxoe, Hukwe, Xun, Barakwena, Mbarakwena selon la source — et « Water Bushmen » dans les documents coloniaux, du fait de leur habitat riverain. Plusieurs de ces formes sont dépréciatives ; le mot Bushmen est aujourd'hui largement rejeté.",
-      "La déclaration de Penduka, en 2000, recommande une orthographe standardisée : Khwe. C'est le geste inverse de tout le reste de cette page — non pas un nom reçu, mais un nom arrêté par ceux qui le portent, à une date qu'on peut citer.",
+      "Les sources emploient plusieurs noms pour les Khwe du Kalahari et de l’Okavango, notamment Kxoe, Hukwe, Xun, Barakwena et Mbarakwena. Les documents coloniaux utilisaient aussi « Water Bushmen », en référence à leur vie près des cours d’eau. Plusieurs de ces noms sont jugés méprisants, et Bushmen est largement rejeté.",
+      "En 2000, la déclaration de Penduka recommande une orthographe commune : Khwe. Cet exemple montre que les personnes concernées peuvent se réunir pour faire reconnaître la manière dont elles souhaitent écrire leur nom.",
     ],
     entities: [
       { kind: "people", id: "PPL_KXOE", label: "Khwe" },
@@ -1642,10 +1658,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "west-taa-masarwa",
     headline:
-      "Les !Xoon s'appellent « les gens de l'ouest », et leurs voisins les appellent Masarwa.",
+      "Les !Xoon sont connus sous des noms qui n’ont pas tous le même sens.",
     body: [
-      "ǃama ʘʔâni, en taa, dit la direction : les gens de l'ouest. Masarwa est le mot tswana, généralement tenu pour péjoratif ; Magong en est une variante régionale. L'étiquette West Taa, elle, est venue des linguistes, pour distinguer ce parler du !Xoon oriental documenté par Anthony Traill.",
-      "Trois registres se superposent donc sur les mêmes personnes : ce qu'elles se disent, ce que le voisin en dit, ce que la science en note. Aucun des trois n'est traduisible dans les deux autres, et c'est le troisième qui figure dans les catalogues.",
+      "En taa, ǃama ʘʔâni est interprété comme « les gens de l’ouest ». Les voisins tswana emploient Masarwa, généralement jugé méprisant, ainsi que la variante régionale Magong. Les linguistes utilisent West Taa pour distinguer cette langue du !Xoon oriental étudié par Anthony Traill.",
+      "Ces noms correspondent à des usages différents : celui des personnes concernées, celui de leurs voisins et celui des chercheurs. Les catalogues de langues reprennent surtout ce dernier.",
     ],
     entities: [
       { kind: "people", id: "PPL_WEST_TAA", label: "!Xoon occidental" },
@@ -1658,7 +1674,8 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         title: "SIL Ethnologue — Taa (nmn)",
         url: "https://www.ethnologue.com/language/nmn/",
         tier: "official",
-        notes: "Atteste la langue, l'autonyme !Xoon et l'exonyme Masarwa.",
+        notes:
+          "Décrit la langue et mentionne !Xoon, employé par les personnes concernées, ainsi que Masarwa, donné par leurs voisins.",
       },
       {
         title: "Glottolog — West !Xoon (xooo1239)",
@@ -1669,11 +1686,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "antambahoaka-surnom",
-    headline:
-      "Les Antambahoaka de Madagascar portent la déformation d'un surnom : « aimé de son peuple ».",
+    headline: "Un récit relie Antambahoaka au surnom « aimé de son peuple ».",
     body: [
-      "Ratiambahoaka était le surnom du fondateur Ravalarivo. Le groupe qui s'est constitué autour de lui a pris le mot, usé par l'usage, pour nom collectif.",
-      "En interne, un autre nom circule : Zafiraminia, « fils de Raminia », réservé aux membres initiés après la circoncision — le sambatra. Un peuple peut ainsi porter deux noms qui ne s'adressent pas au même public.",
+      "La tradition rapporte que Ravalarivo, présenté comme le fondateur, portait le surnom Ratiambahoaka. Le groupe constitué autour de lui aurait repris ce surnom, dont la forme aurait changé avec l’usage.",
+      "La fiche mentionne aussi Zafiraminia, interprété comme « fils de Raminia ». Ce nom serait réservé aux membres initiés après la circoncision, lors du sambatra. Les deux noms ne s’appliqueraient donc pas exactement aux mêmes personnes ni aux mêmes circonstances.",
     ],
     entities: [
       { kind: "people", id: "PPL_ANTAMBAHOAKA", label: "Antambahoaka" },
@@ -1686,17 +1702,16 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/mlg/",
         tier: "official",
         notes:
-          "Atteste la macrolangue et ses variétés. L'étymologie du nom est une tradition rapportée par notre fiche sur ce peuple, sans source qui l'atteste : d'où la fiabilité basse du fait.",
+          "Présente la langue et ses variantes. Notre fiche rapporte un récit transmis sur l’origine du nom, sans citer de source qui permette de le vérifier.",
       },
     ],
   },
   {
     id: "masa-banana",
-    headline:
-      "Tous les noms donnés par les voisins ne blessent pas : « Banana » veut dire amical.",
+    headline: "Le nom Banana donné aux Masa serait lié à leur hospitalité.",
     body: [
-      "C'est l'exonyme des Masa dans plusieurs langues voisines, et il vient de leur réputation d'hospitalité. Yagoua, autre appellation courante, est simplement le nom de leur ville principale au Cameroun.",
-      "Le contraste rend le reste lisible. Les mêmes Masa sont aussi appelés Kirdi — « païen » —, mot qu'ils rejettent. Un peuple reçoit des noms de plusieurs voisins à la fois, et ce sont les rapports de force, pas la langue, qui décident lequel s'imprime.",
+      "La fiche des Masa interprète Banana, employé dans plusieurs langues voisines, comme « amical ». Elle relie ce nom à leur réputation d’hospitalité. Yagoua, une autre appellation, vient du nom de leur ville principale au Cameroun.",
+      "Les Masa sont aussi appelés Kirdi, un mot interprété comme « païen » et qu’ils rejettent. Les noms donnés à un même peuple peuvent donc exprimer des regards très différents.",
     ],
     entities: [
       { kind: "people", id: "PPL_MASA", label: "Masa" },
@@ -1710,17 +1725,17 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/mcn/",
         tier: "official",
         notes:
-          "Atteste l'endonyme Masana et les appellations Massa, Banana et Yagoua.",
+          "Mentionne Masana, employé par les personnes concernées, ainsi que les noms Massa, Banana et Yagoua.",
       },
     ],
   },
   {
     id: "rendille-baton",
     headline:
-      "Les Rendille se disent « porteurs du bâton de Dieu ». Les Somali les appellent « ceux qui ont refusé ».",
+      "Deux explications des noms des Rendille racontent des histoires différentes.",
     body: [
-      "L'ethnonyme rendille est traduit par une référence à un bâton sacré de chef. Le mot somali Rertit — Reer Til, les rejetés — dit tout autre chose : ceux qui ont refusé le territoire somali et sont restés à Marsabit.",
-      "Les Somali poussent la distinction plus loin encore, en séparant les « vrais » Rendille, dits asil, de ceux qui parlent samburu et sont tenus pour assimilés. Nommer son voisin, ici, revient à trancher ce qu'il aurait dû être.",
+      "Le nom Rendille est interprété comme « porteurs du bâton de Dieu », en référence à un bâton sacré de chef. Le nom somali Rertit, rapproché de Reer Til, « les rejetés », évoquerait plutôt des personnes qui auraient refusé le territoire somali pour rester à Marsabit.",
+      "La fiche rapporte aussi une distinction faite en somali entre les Rendille dits asil, ou « vrais » Rendille, et ceux qui parlent samburu. Ce classement exprime le regard de leurs voisins ; il ne permet pas de décider de l’identité des personnes concernées.",
     ],
     entities: [
       { kind: "people", id: "PPL_RENDILLE", label: "Rendille" },
@@ -1749,10 +1764,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "kaffa-cafe",
     headline:
-      "Non, le mot « café » ne vient probablement pas du royaume de Kaffa.",
+      "Le lien entre Kaffa et le mot « café » reste une hypothèse peu probable.",
     body: [
-      "L'hypothèse est trop belle pour ne pas circuler : le caféier pousse dans cette région d'Éthiopie, le royaume s'appelle Kaffa, donc le mot en viendrait. Les linguistes la jugent peu probable, et la littérature la rapporte comme une hypothèse, pas comme un fait.",
-      "Ce que Kaffa nomme réellement est déjà triple : un peuple — qui se dit Kafficho —, un royaume historique, et une zone administrative éthiopienne actuelle. Keffa en est la translittération amharique. Trois choses sous un mot suffisent ; la quatrième était de trop.",
+      "Le caféier pousse dans cette région d’Éthiopie, ce qui peut faire penser que le mot « café » vient du nom Kaffa. Les linguistes cités jugent toutefois ce rapprochement peu probable. La ressemblance entre un lieu et un mot ne suffit pas à établir leur lien.",
+      "Kaffa désigne un peuple qui se nomme Kafficho, un ancien royaume et une zone administrative éthiopienne. Keffa est une façon de transcrire le nom amharique. Ces différents usages doivent être distingués de l’hypothèse sur le mot « café ».",
     ],
     entities: [
       { kind: "people", id: "PPL_KAFA", label: "Kafficho" },
@@ -1765,7 +1780,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://glottolog.org/resource/languoid/id/kafa1242",
         tier: "official",
         notes:
-          "Atteste la langue et l'autonyme. Le caractère peu probable de l'étymologie du mot café est rapporté par notre fiche sur ce peuple d'après la littérature linguistique.",
+          "Décrit la langue et le nom employé par les personnes concernées. Notre fiche rapporte les travaux de linguistes qui jugent peu probable le lien entre Kaffa et le mot « café ».",
       },
       {
         title: "Pankhurst, Richard — The Ethiopian Borderlands, 1997",
@@ -1777,11 +1792,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   },
   {
     id: "bono-brong-ahafo",
-    headline:
-      "Un exonyme est devenu, en 1959, le nom officiel d'une région du Ghana.",
+    headline: "Brong est devenu le nom d’une région du Ghana en 1959.",
     body: [
-      "Les Bono se nomment Bono, ou Bonofoɔ — « les pionniers », « les premiers-nés de la terre ». Brong est la forme que les Asante et les Gonja employaient pour désigner les peuples de la zone située entre les Asante et le Volta, et que les administrateurs britanniques ont reprise. En Côte d'Ivoire, la même population est dite Abron.",
-      "En 1959, l'exonyme entre dans la géographie officielle avec la région Brong-Ahafo, qui amalgame des peuples d'origines différentes. Le pays l'a depuis scindée en Bono, Bono Est et Ahafo : il aura fallu soixante ans pour que le nom que le peuple se donne revienne sur la carte.",
+      "Les personnes concernées se nomment Bono ou Bonofoɔ, interprété comme « les pionniers » ou « les premiers-nés de la terre ». Brong était employé par les Asante et les Gonja pour des populations situées entre les Asante et le Volta. L’administration britannique l’a repris. En Côte d’Ivoire, on rencontre aussi Abron.",
+      "En 1959, le Ghana crée la région Brong-Ahafo, qui réunit des peuples d’origines différentes. Environ soixante ans plus tard, elle est divisée en Bono, Bono Est et Ahafo. Le nom Bono apparaît ainsi dans le nom officiel de deux régions.",
     ],
     entities: [
       { kind: "people", id: "PPL_BONO", label: "Bono" },
@@ -1808,10 +1822,10 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
   {
     id: "toura-wen",
     headline:
-      "Chez les Toura, le nom colonial est resté officiel et le nom propre est resté domestique.",
+      "Toura est employé officiellement, tandis que Wen reste utilisé au sein du peuple.",
     body: [
-      "Toura est la forme adoptée par l'administration coloniale française ; elle reste en usage officiel en Côte d'Ivoire, et Tura en est la variante anglophone. Wen, ou Wenmebo, est l'endonyme.",
-      "Le partage est net et il est banal : l'un des deux noms figure sur les papiers, l'autre se parle à la maison. La douzaine d'autres appellations relevées — Gwane, Nebou, Yaramassa — sont des noms de sous-groupes que le nom unique a effacés.",
+      "Toura est la forme adoptée par l’administration coloniale française et toujours employée officiellement en Côte d’Ivoire. Tura en est la variante en anglais. Les personnes concernées se nomment Wen ou Wenmebo.",
+      "La fiche relève aussi une douzaine d’autres noms, dont Gwane, Nebou et Yaramassa, qui désignent des sous-groupes. Le nom officiel ne rend donc pas compte à lui seul de cette diversité.",
     ],
     entities: [
       { kind: "people", id: "PPL_TOURA", label: "Toura (Wen)" },

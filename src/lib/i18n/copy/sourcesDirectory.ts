@@ -2,7 +2,7 @@ import type { Language } from "@/types/shared";
 
 const fr = {
   description:
-    "Notre bibliographie : chaque source sur laquelle reposent les pages, son type et ce qui la cite.",
+    "Retrouvez les sources utilisées sur le site. Chaque référence indique son type et les pages qui la citent.",
   sorts: {
     titre: "Titre",
     annee: "Année, la plus récente d'abord",
@@ -20,10 +20,10 @@ const fr = {
   },
   selection: (total: string, singular: boolean) =>
     `${total} ${singular ? "source" : "sources"} dans cette sélection. ` +
-    `Chacune mène à sa page, qui dit ce qui la cite.`,
+    `Chaque référence mène à une page qui présente la source et ses usages sur le site.`,
   provenanceNote: (withKind: string, total: string) =>
     `Le type n'est renseigné que pour ${withKind} sources sur ${total} : ` +
-    `filtrer dessus ne montre pas l'état de notre projet, seulement ce qui a déjà été qualifié.`,
+    `ce filtre affiche uniquement les références dont le type est déjà connu.`,
   empty: "Aucune source ne répond à cette sélection.",
   reset: "Revenir à toutes les sources",
   referenceBibliography: "La bibliographie de référence du projet",
