@@ -55,6 +55,11 @@ jobs:
       - name: Check ai_generated sources
         run: npm run check:ai-sources
 
+      # Exact ratchet on etymology fields that state a name's origin as fact
+      # (doctrine §1.1: every origin is a hypothesis). Fails when one enters.
+      - name: Check etymologies are written as hypotheses
+        run: npm run check:etymology-hypotheses
+
       # Descending ratchet on sources with no source_kind: readers see a
       # source's type, never its tier. Fails when the count grows, and when it
       # drops without the threshold being lowered.
