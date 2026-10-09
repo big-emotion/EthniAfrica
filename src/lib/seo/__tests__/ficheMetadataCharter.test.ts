@@ -27,6 +27,7 @@ const SUBJECTS: Record<FicheKind, FicheSubject> = {
   family: { name: "Krou", peopleCount: 31 },
   language: { name: "Lingala", familyName: "Bantou" },
   name: { name: "Keïta", peopleNames: ["Mandingues"] },
+  place: { name: "Gagnoa" },
 };
 
 const KINDS = Object.keys(SUBJECTS) as FicheKind[];
@@ -163,6 +164,7 @@ describe("fiche metadata charter", () => {
       "Krou — famille linguistique | EthniAfrica",
       "Lingala — langue (Bantou) | EthniAfrica",
       "Keïta — origine et histoire du nom | EthniAfrica",
+      "Gagnoa — lieu et histoire de son nom | EthniAfrica",
     ]);
   });
 

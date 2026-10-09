@@ -19,10 +19,17 @@ export interface FicheMetadataCopy {
     family: (name: string) => string;
     language: (name: string, context: string | null) => string;
     name: (name: string) => string;
+    place: (name: string) => string;
   };
   /** Used only when the atlas fills no summary of its own. */
   lead: Record<
-    "people" | "peopleLinks" | "country" | "family" | "language" | "name",
+    | "people"
+    | "peopleLinks"
+    | "country"
+    | "family"
+    | "language"
+    | "name"
+    | "place",
     string
   >;
   /** Facts the atlas actually holds, appended to the lead as clauses. */
@@ -48,6 +55,7 @@ const fr: FicheMetadataCopy = {
     language: (name, context) =>
       context ? `${name} — langue (${context})` : `${name} — langue d'Afrique`,
     name: (name) => `${name} — origine et histoire du nom`,
+    place: (name) => `${name} — lieu et histoire de son nom`,
   },
   lead: {
     people: "Peuple d'Afrique",
@@ -56,6 +64,7 @@ const fr: FicheMetadataCopy = {
     family: "Famille linguistique africaine",
     language: "Langue d'Afrique",
     name: "Origine, porteurs et histoire du nom",
+    place: "Lieu d'Afrique et histoire de son nom",
   },
   clause: {
     family: (familyName) => `famille linguistique : ${familyName}`,

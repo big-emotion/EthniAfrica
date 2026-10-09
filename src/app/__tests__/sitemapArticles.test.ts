@@ -34,6 +34,7 @@ describe("sitemap.xml — articles", () => {
       families: [],
       languages: [],
       patronymes: [],
+      places: [],
     });
   });
 

@@ -76,6 +76,54 @@ export interface SearchNameRecord {
   evidence: SearchEvidence[];
 }
 
+/** A name as the search sheet shows it, before evidence is attached. */
+export type ToldName = Omit<
+  SearchNameRecord,
+  "id" | "entityType" | "entityId" | "evidence"
+>;
+
+function filledText(value: unknown): string | undefined {
+  return typeof value === "string" && value.trim() ? value : undefined;
+}
+
+/**
+ * A name record (a nameHistory name folded by `nameRecordsFromHistory`, or a
+ * people's name index entry) in the shape the naming readers consume. Shared
+ * by the search sheet and the place page so the two read a name alike.
+ */
+// @req REQ-196
+export function toldName(entry: {
+  nameText: string;
+  nameType: string;
+  languageOfOrigin: string | null;
+  meaning: string | null;
+  periodLabel: string | null;
+  shortLine?: string;
+  imposedBy: string | null;
+  impositionPeriod: string | null;
+  whyProblematic: string | null;
+  contemporaryUsage: string | null;
+}): ToldName {
+  return {
+    form: entry.nameText,
+    kind: entry.nameType as SearchNameRecord["kind"],
+    ...(filledText(entry.languageOfOrigin)
+      ? { languageOfOrigin: entry.languageOfOrigin }
+      : {}),
+    ...(filledText(entry.meaning) ? { meaning: entry.meaning } : {}),
+    ...(filledText(entry.periodLabel)
+      ? { periodLabel: entry.periodLabel }
+      : {}),
+    ...(filledText(entry.shortLine) ? { shortLine: entry.shortLine } : {}),
+    ...(filledText(entry.imposedBy) ? { imposedBy: entry.imposedBy } : {}),
+    ...(filledText(entry.impositionPeriod)
+      ? { impositionPeriod: entry.impositionPeriod }
+      : {}),
+    problematic: Boolean(filledText(entry.whyProblematic)),
+    usedToday: Boolean(filledText(entry.contemporaryUsage)),
+  };
+}
+
 export interface NamingOriginFact {
   languageCode?: string;
   meaning?: string;

@@ -12,6 +12,7 @@
  */
 
 import { z } from "zod";
+import { SOURCE_KINDS } from "@/types/sources";
 import { ficheSourceTierSchema } from "./ficheSourceTier";
 import { nameHistorySchema } from "./nameHistoryParser";
 
@@ -22,6 +23,14 @@ const sourceSchema = z.object({
   year: z.number().int().nullable(),
   url: z.string().min(1),
   tier: ficheSourceTierSchema,
+  // The type the reader sees (doctrine §1.1). Without it here, zod's default
+  // strip removed it and the place page could show no type at all. Optional
+  // while ETNI-2007 gives every source one.
+  source_kind: z
+    .enum(SOURCE_KINDS, {
+      error: `source_kind must be one of ${SOURCE_KINDS.join(", ")}`,
+    })
+    .optional(),
   notes: z.string().optional(),
 });
 
