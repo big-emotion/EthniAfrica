@@ -93,4 +93,15 @@ describe("OpenAPI v2 nameHistory contract", () => {
 
     expect(validateAgainstSchema(NAME_HISTORY_REF, block)).not.toBeNull();
   });
+
+  // @req REQ-196
+  it("accepts the era an account declares and rejects one the parser refuses", () => {
+    const declared = structuredClone(VALID_NAME_HISTORY);
+    Object.assign(declared.names[0].accounts[0], { era: "colonial" });
+    const refused = structuredClone(VALID_NAME_HISTORY);
+    Object.assign(refused.names[0].accounts[0], { era: "precolonial" });
+
+    expect(validateAgainstSchema(NAME_HISTORY_REF, declared)).toBeNull();
+    expect(validateAgainstSchema(NAME_HISTORY_REF, refused)).not.toBeNull();
+  });
 });

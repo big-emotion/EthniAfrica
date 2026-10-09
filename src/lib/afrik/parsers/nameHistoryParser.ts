@@ -87,9 +87,23 @@ const actorSchema = z
 // (REQ-190, REQ-191) without guessing from prose.
 const ACCOUNT_ASPECTS = ["meaning", "imposition", "usage"] as const;
 
+// The great era of the territory an account is about, at its period. A date
+// alone cannot tell it: Saint-Louis was French long before 1885, and Ethiopia
+// had no colonial era outside the Italian occupation. The contributor decides
+// it from docs/editorial/strategy/colonial-periods.md and leaves it out when
+// the account does not say where or when; the timeline then reads the date.
+// @req REQ-196
+export const NAME_HISTORY_ERAS = ["polity", "colonial", "modern"] as const;
+export type NameHistoryEra = (typeof NAME_HISTORY_ERAS)[number];
+
 const accountSchema = z
   .object({
     period: periodSchema,
+    era: z
+      .enum(NAME_HISTORY_ERAS, {
+        error: `era must be one of ${NAME_HISTORY_ERAS.join(", ")}`,
+      })
+      .optional(),
     statement: z.string().trim().min(1),
     aspect: z
       .enum(ACCOUNT_ASPECTS, {

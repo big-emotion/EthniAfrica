@@ -1951,6 +1951,12 @@ const options: swaggerJsdoc.Options = {
               },
               required: ["from", "to", "label"],
             },
+            era: {
+              type: "string",
+              enum: ["polity", "colonial", "modern"],
+              description:
+                "The great era of the territory the account is about, at its period: before colonial rule, under it, or since independence. Absent when the account does not settle where or when.",
+            },
             statement: { type: "string", minLength: 1 },
             aspect: {
               type: "string",
@@ -2092,7 +2098,7 @@ const options: swaggerJsdoc.Options = {
             nameEn: {
               type: "string",
               description:
-                "English name of ordinary use, in the state's own English form (Chad, Côte d'Ivoire, Cabo Verde, The Gambia). Absent until the corpus reload fills migration 084's column.",
+                "English name of ordinary use, in the state's own English form (Chad, Côte d'Ivoire, Cabo Verde, The Gambia). Absent until the next data reload fills migration 084's column.",
               example: "Zimbabwe",
             },
             nameOfficial: {
@@ -2327,7 +2333,7 @@ const options: swaggerJsdoc.Options = {
             nameEn: {
               type: ["string", "null"],
               description:
-                "The fiche's English name (content.nameEn), carried as corpus data and not searched; null when the fiche carries none.",
+                "The fiche's English name (content.nameEn), carried as fiche data and not searched; null when the fiche carries none.",
               example: "Swahili",
             },
             familyId: {
@@ -2542,7 +2548,7 @@ const options: swaggerJsdoc.Options = {
         PatronymeV2: {
           type: "object",
           description:
-            "A name (patronyme) — DEC-038's fifth corpus dimension. Bearer entries are a narrow allow-listed summary; no code path takes a family name and returns an ethnic origin for a named living person (DEC-040).",
+            "A name (patronyme) — DEC-038's fifth dimension of the atlas. Bearer entries are a narrow allow-listed summary; no code path takes a family name and returns an ethnic origin for a named living person (DEC-040).",
           properties: {
             id: {
               type: "string",
@@ -2610,7 +2616,7 @@ const options: swaggerJsdoc.Options = {
             namedBearers: {
               type: "array",
               description:
-                "Bearers the corpus can only name, because no person record exists for them — they carry a name and a status, never an id, a role or a biography, which is why they are a separate list and not a `bearers` entry with empty fields. Only a bearer the corpus records as dead is served: a family name is an ethnic marker, so publishing a living one would publish their ethnic origin (DEC-040, RGPD art. 9).",
+                "Bearers the atlas can only name, because no person record exists for them — they carry a name and a status, never an id, a role or a biography, which is why they are a separate list and not a `bearers` entry with empty fields. Only a bearer the atlas records as dead is served: a family name is an ethnic marker, so publishing a living one would publish their ethnic origin (DEC-040, RGPD art. 9).",
               items: {
                 type: "object",
                 properties: {
@@ -2699,7 +2705,7 @@ const options: swaggerJsdoc.Options = {
                 { type: "null" },
               ],
               description:
-                "No longer emitted: corpus translation was retired and every record is served as authored, in French. Kept declared so existing clients are not broken.",
+                "No longer emitted: translation of the fiches was retired and every record is served as authored, in French. Kept declared so existing clients are not broken.",
             },
           },
           required: ["license", "attribution"],
@@ -2839,7 +2845,7 @@ const options: swaggerJsdoc.Options = {
         CountryPatronymesV2: {
           type: "object",
           description:
-            "The two name routes a country answers along, kept apart. They assert different things and neither contains the other — measured on the corpus, 2 countries are reachable only directly and 6 only through their peoples. Summing them publishes an inference under the heading of a sourced fact.",
+            "The two name routes a country answers along, kept apart. They assert different things and neither contains the other — measured on the published fiches, 2 countries are reachable only directly and 6 only through their peoples. Summing them publishes an inference under the heading of a sourced fact.",
           properties: {
             attested: {
               type: "array",
@@ -2865,7 +2871,7 @@ const options: swaggerJsdoc.Options = {
                 patronymes: {
                   type: "array",
                   description:
-                    "The names this people bears. Distinct from the ethnonym dossier at /peoples/{id}/names, which holds what the people is called. An empty array is the ordinary state of the corpus, not an omission.",
+                    "The names this people bears. Distinct from the ethnonym dossier at /peoples/{id}/names, which holds what the people is called. An empty array is the ordinary state of the fiches, not an omission.",
                   items: { $ref: "#/components/schemas/PatronymeLinkV2" },
                 },
               },
@@ -4547,7 +4553,7 @@ const options: swaggerJsdoc.Options = {
               type: "string",
               enum: ["language-corpus", "people-fiches"],
               description:
-                "Which source produced `branches`: the language corpus, or a reconstruction from the ISO codes the people fiches declare. `afrik_languages` now holds 748 rows in recette, but coverage still varies by family, so `people-fiches` remains a common fallback.",
+                "Which source produced `branches`: the language fiches, or a reconstruction from the ISO codes the people fiches declare. `afrik_languages` now holds 748 rows in recette, but coverage still varies by family, so `people-fiches` remains a common fallback.",
             },
             declaredBranches: {
               type: "array",
@@ -5085,14 +5091,14 @@ const options: swaggerJsdoc.Options = {
                 null,
               ],
               description:
-                "What changed in the corpus, separately from what the moderators thought of the report. Written by the publication of a correction, never by a moderator decision. NULL while the report is open or under review.",
+                "What changed in the published fiches, separately from what the moderators thought of the report. Written by the publication of a correction, never by a moderator decision. NULL while the report is open or under review.",
               example: null,
             },
             remediation_published_at: {
               type: ["string", "null"],
               format: "date-time",
               description:
-                "When the correction reached the published corpus. Never null when remediation_state is published.",
+                "When the correction reached the published fiches. Never null when remediation_state is published.",
               example: null,
             },
             remediation_summary: {
@@ -5327,7 +5333,7 @@ const options: swaggerJsdoc.Options = {
         QuizThemeOption: {
           type: "object",
           description:
-            "One domain of content a session can be narrowed to, counted across the whole corpus.",
+            "One domain of content a session can be narrowed to, counted across all the published fiches.",
           properties: {
             id: {
               type: "string",

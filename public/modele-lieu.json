@@ -63,6 +63,7 @@
               "to": 1599,
               "label": "<Ce que le lecteur lit — ex: XVIe siècle>"
             },
+            "era": "polity",
             "statement": "<Une phrase qui commence par le nom — ex: Le nom X est attesté…>",
             "hypothesisGroup": "<Même valeur pour les origines concurrentes d'une même période, montrées côte à côte, sans classement>",
             "birth": true,
@@ -101,6 +102,7 @@
               "to": 1500,
               "label": "<Avant le nom — ex: avant le XVIe siècle>"
             },
+            "era": "polity",
             "statement": "<Ce qui existait avant le nom, en commençant par le nom — ex: Avant le nom X, …>",
             "before": true,
             "sources": [
