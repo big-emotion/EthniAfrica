@@ -1068,7 +1068,7 @@
         {
           "title": "Rapport de la Commission internationale d'enquête pour le Burundi (ONU, 1996) — contexte génocide 1993",
           "url": null,
-          "fiches": ["peuples/FLG_BANTU/PPL_HUTU_BURUNDI.json"]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_KIRUNDI_HUTU.json"]
         },
         {
           "title": "Beidelman, Thomas O. – The Kaguru: A Matrilineal People of East Africa, 1971",
@@ -1515,10 +1515,9 @@
             "peuples/FLG_KWA/PPL_AKUAPEM.json",
             "peuples/FLG_KWA/PPL_AKYEM.json",
             "peuples/FLG_KWA/PPL_AOWIN.json",
-            "peuples/FLG_KWA/PPL_ASHANTI.json",
+            "peuples/FLG_KWA/PPL_ASANTE.json",
             "peuples/FLG_KWA/PPL_ASSIN.json",
             "peuples/FLG_KWA/PPL_BONO.json",
-            "peuples/FLG_KWA/PPL_BRONG.json",
             "peuples/FLG_KWA/PPL_SEFWI.json",
             "peuples/FLG_KWA/PPL_TWIFO.json",
             "peuples/FLG_KWA/PPL_WASSA.json"
@@ -1615,7 +1614,7 @@
         {
           "title": "Craven, A. – The Pottery of Northern Ghana, 1975",
           "url": null,
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_DAGAABA.json"]
+          "fiches": ["peuples/FLG_GUR/PPL_DAGARA.json"]
         },
         {
           "title": "Abasiattai, M.B. – History of the Cross River Region of Nigeria, Unical Press, 1988",
@@ -1673,7 +1672,7 @@
         {
           "title": "Mofolo, Thomas. Chaka. Morija Sesuto Book Depot, 1925",
           "url": null,
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_SESOTHO_NATL.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_SOTHO.json"]
         },
         {
           "title": "Monnig, H.O. — The Pedi. Pretoria: Van Schaik, 1967",
@@ -2095,7 +2094,7 @@
         {
           "title": "Localizely – Umbundu language code umb",
           "url": "https://localizely.com/language-code/umb/",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_UMBUNDU.json"]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_OVIMBUNDU.json"]
         },
         {
           "title": "ISO 639-3 — Buduma (bdm)",
@@ -2186,7 +2185,7 @@
         {
           "title": "Study.com — Sotho History, Culture and People",
           "url": "https://study.com/academy/lesson/sotho-history-culture-facts-people.html",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_SOTHO_SUD.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_SOTHO.json"]
         },
         {
           "title": "Study.com — Chadic Languages",
@@ -2735,7 +2734,7 @@
         {
           "title": "African World Heritage Sites — Lamu Old Town",
           "url": "https://www.africanworldheritagesites.org/cultural-places/swahili-coast/lamu-old-town.html",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_SWAHILI_KENYA.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_SWAHILI.json"]
         }
       ]
     },
@@ -3399,10 +3398,7 @@
         {
           "title": "Malawi Project — Customs, Traditions, and Religion in the Tribes of Malawi",
           "url": "https://www.malawiproject.org/download/malawi_project_brochures/2024/04-FLYER-CustomsTraditions.pdf",
-          "fiches": [
-            "peuples/FLG_NIGERCONGO/PPL_TONGA_LAC.json",
-            "peuples/FLG_NIGERCONGO/PPL_TONGA_MALA.json"
-          ]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_TONGA_MALA.json"]
         }
       ]
     },
@@ -3522,7 +3518,7 @@
         {
           "title": "Participedia — Kgotla (Botswana Public Assembly)",
           "url": "https://participedia.net/method/kgotla-botswana-public-assembly",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_SETSWANA_NATL.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_TSWANA.json"]
         }
       ]
     },
@@ -3720,7 +3716,7 @@
         {
           "title": "southafrica.net — The culture of Basotho",
           "url": "https://www.southafrica.net/za/en/travel/article/the-culture-of-basotho-history-people-clothing-and-food",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_SOTHO_SUD.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_SOTHO.json"]
         }
       ]
     },
@@ -3738,7 +3734,7 @@
         {
           "title": "Stats Kenya — Tribe and Ethnicity in Kenya",
           "url": "https://statskenya.co.ke/at-stats-kenya/about/tribe-and-ethnicity-in-kenya-number-of-people-by-tribe/93/",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_SWAHILI_KENYA.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_SWAHILI.json"]
         }
       ]
     },
@@ -4106,7 +4102,7 @@
         {
           "title": "Africa Unfiltered — Stone Towns of the Swahili Coast",
           "url": "https://africaunfiltered.substack.com/p/stone-towns-of-the-swahili-coast",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_SWAHILI_KENYA.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_SWAHILI.json"]
         }
       ]
     },
@@ -5627,7 +5623,7 @@
         {
           "title": "Friends of Mombasa — The Swahili",
           "url": "https://www.friendsofmombasa.com/migration-rich-cultures/the-swahili/",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_SWAHILI_KENYA.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_SWAHILI.json"]
         }
       ]
     },
@@ -7659,7 +7655,7 @@
         {
           "title": "Pan African Music — Taarab in Zanzibar",
           "url": "https://pan-african-music.com/en/taarab-zanzibar/",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_SWAHILI_TANZANIE.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_SWAHILI.json"]
         }
       ]
     },
@@ -8961,7 +8957,7 @@
         {
           "title": "Vogue — The Rich History Behind Basotho Heritage Blankets",
           "url": "https://www.vogue.com/article/basotho-heritage-blankets",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_SESOTHO_NATL.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_SOTHO.json"]
         }
       ]
     },
@@ -9221,7 +9217,7 @@
         {
           "title": "Yengafrica — Bono cultural heritage",
           "url": "https://yengafrica.com/",
-          "fiches": ["peuples/FLG_KWA/PPL_BRONG.json"]
+          "fiches": ["peuples/FLG_KWA/PPL_BONO.json"]
         }
       ]
     },

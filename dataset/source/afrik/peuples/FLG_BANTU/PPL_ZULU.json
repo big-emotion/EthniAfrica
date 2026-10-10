@@ -11,8 +11,8 @@
       "originOfExonyms": "AmaZulu est l'autonym en isiZulu (ama- etant le prefixe de classe pour les peuples). Le nom Zulu dériverait de iZulu, qui veut dire le ciel ou le temps (meteo) en langues Nguni. La legende attribue ce nom a Zulu kaMalandela, ancetre fondateur du clan vers 1574. Zoulou est la transcription francaise courante. Amazulu est parfois use en anglais comme variante.",
       "whyProblematic": null,
       "contemporaryUsage": "AmaZulu est l'autonym contemporain. Zulu est l'usage courant en anglais international. Zoulou est la forme officielle en francais. IsiZulu designe specifiquement la langue. La nation Zoulou (Zulu Nation) est un concept politique et culturel toujours actif.",
-      "peopleGroupId": "PGRP_ZULU",
-      "peopleGroupLabel": "Zulu (AmaZulu)",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantou Nguni septentrional et central (Zone S)",
       "historicalRegion": "KwaZulu-Natal, Afrique du Sud — province du KwaZulu-Natal et regions adjacentes",
@@ -25,7 +25,12 @@
       "Clan de Gumbi (origine Pongola) — clan lie a Shaka via Zwangendaba",
       "Buthelezi — clan tres influent, dont est issu Mangosuthu Buthelezi (fondateur de l'Inkatha)",
       "Mthethwa — confederation absorbee par Shaka dans l'Empire Zoulou",
-      "Qwabe — ancien clan Nguni independant, integre au royaume zoulou"
+      "Qwabe — ancien clan Nguni independant, integre au royaume zoulou",
+      "Usuthu (Zulu royaux) — partisans de la lignee royale directe, autour de Nongoma et Ulundi",
+      "Cele — clan cotier du KwaZulu-Natal meridional",
+      "Ngcobo — clan de la region de Nquthu, nord du KwaZulu-Natal",
+      "Mchunu — clan zulu des collines du centre du KwaZulu-Natal",
+      "Zibhebhu Mandlakazi — branche rivale de la famille royale, conflit post-Cetshwayo"
     ],
     "origins": {
       "ancientOrigins": "Les Zoulou sont originaires des migrations bantoues qui se sont etalees sur des millenaires le long de la cote est de l'Afrique. A l'origine, ils formaient un clan mineur dans ce qui est aujourd'hui le nord du KwaZulu-Natal. En langues Nguni, iZulu signifie le ciel ou le temps. La region etait occupee par de nombreuses communautes Nguni independantes avant l'unification sous Shaka.",
@@ -35,14 +40,20 @@
         "Installation originelle dans le nord du KwaZulu-Natal actuel",
         "Expansion rapide sous Shaka vers tout le KwaZulu-Natal et au-dela (1816-1828)",
         "Exode de Mzilikazi vers le nord (1821), eventual etablissement au Zimbabwe (Matabele)",
-        "Exode de Zwangendaba vers le nord, traversee du Zambezi a Chirundu (1835), puis Malawi, Mozambique, Tanzanie, Zambie (Ngoni)"
+        "Exode de Zwangendaba vers le nord, traversee du Zambezi a Chirundu (1835), puis Malawi, Mozambique, Tanzanie, Zambie (Ngoni)",
+        "Deplacements forces sous l'apartheid de zones dites points noirs (black spots) vers le bantustan KwaZulu (1948-1990)"
       ],
       "historicalSettlementZones": [
         "KwaZulu-Natal — province principale, plus de 80% des Zoulou",
         "Gauteng — importante population urbaine (Johannesburg, Soweto)",
         "Mpumalanga — zone de culture de la canne a sucre et d'industrie",
         "Zimbabwe (Matabele) — descendants de Mzilikazi (Ndebele du Nord)",
-        "Malawi, Mozambique, Tanzanie, Zambie — descendants de Zwangendaba (Ngoni)"
+        "Malawi, Mozambique, Tanzanie, Zambie — descendants de Zwangendaba (Ngoni)",
+        "Nongoma — siege de la royaute zulu, kraal royal (Ondini)",
+        "Ulundi — derniere capitale du royaume zulu independant, aussi capitale du bantustan KwaZulu (apres 1980)",
+        "Eshowe — ancienne garnison britannique et centre du Zululand colonial",
+        "Empangeni, Eshowe, Melmoth — villes du coeur du Zululand historique",
+        "Mahlabatini, Nqutu, Msinga — districts du Zululand rural"
       ],
       "unificationsOrDivisions": "L'unification sous Shaka (1816-1828) fut radicale : imposition de l'identite Zoulou a toutes les nations absorbees via le systeme des regiments (amabutho). Apres la defaite face aux Britanniques (1879), Cetshwayo fut exile et l'empire divise en 13 royaumes vassaux. Cetshwayo fut reinstaure en 1883 mais mourut en 1884. Les guerres de succession et la colonisation menerent a l'integration dans la Colonie du Natal (1897). Sous l'apartheid, le homeland de KwaZulu fut cree en 1970. La reunification avec le Natal en 1994 forma le KwaZulu-Natal.",
       "externalInfluences": "Contacts avec les Khoisan (emprunt de clics dans la langue isiZulu). Commerce avec les Portugais et les Arabes via la cote est. Confrontation avec les Boers (Voortrekkers) lors du Grand Trek (annees 1830-1840 : bataille de Blood River, 1838). Guerre Anglo-Zouloue (1879) : defaite britannique a Isandlwana (22 janvier 1879), victoire britannique finale a Ulundi (juillet 1879). Christianisme introduit par les missionnaires (Hanoverian Missionary Society, American Board Mission) a partir des annees 1820.",
@@ -62,7 +73,10 @@
         "IsiZulu standard — parle dans le KwaZulu-Natal, base de la langue normee",
         "IsiNdebele — dialecte parle par les Ndebele du Nord au Zimbabwe (forme par le groupe de Mzilikazi)",
         "IsiNguni de Mpumalanga — parle par les Ndebele du Sud (Ndebele meridional)",
-        "Zulu urbain — variante parlée dans les zones urbaines (Johannesburg, Durban), avec emprunts a l'anglais et a l'afrikaans"
+        "Zulu urbain — variante parlée dans les zones urbaines (Johannesburg, Durban), avec emprunts a l'anglais et a l'afrikaans",
+        "Zululand Zulu — dialecte rural du Zululand historique (Nongoma, Ulundi, Eshowe), forme la plus conservatrice",
+        "Natal Zulu — variante du sud du KwaZulu-Natal, influences Xhosa et anglaises",
+        "Northern KZN Zulu — dialecte du Zululand nord, zone frontaliere avec le Swaziland (Eswatini)"
       ],
       "vehicularRole": "L'isiZulu est la langue maternelle la plus parlee d'Afrique du Sud (environ 24,4% de la population, soit 13,78 millions de locuteurs natifs et plus de 15 millions de locuteurs secondaires en 2025). C'est l'une des 11 langues officielles de l'Afrique du Sud. Plus de la moitie de la population sud-africaine comprend l'isiZulu. C'est la deuxieme langue bantoue la plus parlee dans le monde apres le swahili, selon Ethnologue. Intelligibilite partielle avec l'isiXhosa, notamment en zones urbaines."
     },
@@ -81,7 +95,7 @@
     "demography": {
       "totalPopulation": 15800000,
       "referenceYear": 2025,
-      "source": "Statistics South Africa Census 2022 et estimations 2025 : les Zoulou representent environ 24,4% de la population sud-africaine. Avec une population totale de 64,7 millions (2025), cela correspond a environ 15,8 millions de Zoulou en Afrique du Sud. IsiZulu : 13,78 millions de locuteurs natifs en Afrique du Sud selon Ethnologue/Wikipedia. Ndebele au Zimbabwe : environ 1,5 million. Ngoni (Malawi, Mozambique, Tanzanie, Zambie) : plusieurs centaines de milliers, groupes linguistiquement differencies.",
+      "source": "Statistics South Africa Census 2022 et estimations 2025 : les Zoulou representent environ 24,4% de la population sud-africaine. Avec une population totale de 64,7 millions (2025), cela correspond a environ 15,8 millions de Zoulou en Afrique du Sud. IsiZulu : 13,78 millions de locuteurs natifs en Afrique du Sud selon Ethnologue/Wikipedia. Ndebele au Zimbabwe : environ 1,5 million. Ngoni (Malawi, Mozambique, Tanzanie, Zambie) : plusieurs centaines de milliers, groupes linguistiquement differencies. Pour le seul KwaZulu-Natal, une autre estimation donne environ 10 500 000 Zoulou : la province compte 12,42 millions d'habitants au recensement de 2022, dont environ 84,8 % de Noirs africains, en grande majorite zoulou (Statistics South Africa ; Parlement d'Afrique du Sud, profil provincial 2025).",
       "distributionByCountry": [
         {
           "country": "ZAF",
@@ -134,6 +148,30 @@
         "url": "https://afrika.univie.ac.at/en/studies/languages/isizulu/",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "South African History Online — Inkatha Freedom Party",
+        "url": "https://sahistory.org.za/article/inkatha-freedom-party-ifp",
+        "tier": "referenced",
+        "source_kind": "repository"
+      },
+      {
+        "title": "Britannica — KwaZulu",
+        "url": "https://www.britannica.com/place/KwaZulu",
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Parliament of South Africa — KwaZulu-Natal Provincial Profile 2025",
+        "url": "https://www.parliament.gov.za/storage/app/media/Pages/2025/07-11-2025_NCOP_Provincial_week/background/KwaZulu-Natal_Profile.pdf",
+        "tier": "needs_review",
+        "source_kind": "government"
+      },
+      {
+        "title": "BBC — Goodwill Zwelithini",
+        "url": "https://www.bbc.com/news/world-africa-56371742",
+        "tier": "referenced",
+        "source_kind": "press"
       }
     ]
   },

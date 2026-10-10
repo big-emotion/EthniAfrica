@@ -24,7 +24,10 @@
       "amaThembu — groupe Nguni apparente, Cap oriental (Nelson Mandela etait Thembu)",
       "amaMfengu — refugies Nguni (amaHlubi, amaBhele, amaZizi, Rhadebe) absorbes apres le Mfecane",
       "amaBhaca — groupe Nguni meridional etabli dans les collines du Cap oriental",
-      "Mfengu de Zimbabwe — communaute introduite par Cecil Rhodes pour travailler dans les mines"
+      "Mfengu de Zimbabwe — communaute introduite par Cecil Rhodes pour travailler dans les mines",
+      "abaThembu du bas — sous-groupe thembu du Ciskei, region de Middledrift",
+      "amaNgqosini — groupe d'origine mixte khoikhoi et sotho, assimile aux Xhosa du Ciskei",
+      "amaGqunukhwebe — clan d'origine khoikhoi, absorbe par les amaRharhabe"
     ],
     "origins": {
       "ancientOrigins": "Les amaXhosa sont des descendants de clans Nguni qui ont migre dans le sud-est de l'Afrique du Sud, deplacant les populations Khoisan d'origine. Des preuves archeologiques attestent une occupation de la zone du Cap oriental depuis au moins le VIIe siecle apres J.-C. La tradition orale Xhosa mentionne un lieu de peuplement originel appele Eluhlangeni, situe en Afrique de l'Est, d'ou les Nguni auraient migre vers le sud. Ces agropasteurs pratiquaient l'elevage de bovins et de chevres et pratiquaient l'agriculture.",
@@ -33,14 +36,22 @@
         "Migration depuis l'Afrique de l'Est vers le sud-est de l'Afrique (migration bantoue)",
         "Traversee des massifs et cours d'eau sud-africains en direction du Cap oriental",
         "Expansion depuis le Transkei vers le Ciskei a l'ouest du fleuve Kei",
-        "Extension vers le Cap occidental au XXe siecle (surtout migration urbaine vers Cape Town)"
+        "Extension vers le Cap occidental au XXe siecle (surtout migration urbaine vers Cape Town)",
+        "Mouvement vers l'ouest de la branche amaRharhabe depuis le Transkei apres la mort de Phalo (vers 1775)",
+        "Deplacements forces par les guerres cafres et les expulsions coloniales (1812, 1819, 1835, 1847, 1877)",
+        "Deportations massives par le regime d'apartheid depuis les zones blanches vers le Ciskei (1960s-1980s)"
       ],
       "historicalSettlementZones": [
         "Transkei — zone principale, est du Cap oriental",
         "Ciskei — zone ouest du fleuve Kei",
         "Cap oriental — province principale actuelle",
         "Cap occidental — forte communaute urbaine a Cape Town (Khayelitsha, Gugulethu)",
-        "Gauteng — importante population urbaine a Johannesburg"
+        "Gauteng — importante population urbaine a Johannesburg",
+        "Region du fleuve Fish (Vis) — frontier historique etablie par les Britanniques en 1812",
+        "King William's Town (Qonce) — centre administratif colonial puis ciskeien",
+        "Alice et Fort Hare — centre universitaire et intellectuel (Universite de Fort Hare, alma mater de Mandela, Mugabe, Biko)",
+        "Mdantsane — ville-dortoir construite par le Ciskei pres d'East London (plus de 105 000 hab. en 1991)",
+        "East London — port industriel, attraction migratoire"
       ],
       "unificationsOrDivisions": "La fondation du royaume Xhosa par Tshawe instaura une unite politique Nguni meridionale. Au XVIIIe siecle, la division entre amaGcaleka (est du Kei) et amaRharhabe (ouest du Kei) affaiblit le royaume. Les guerres de frontiere contre les colons europeens (1779-1879) fragmenterent davantage la societe Xhosa. L'incorporation des bantustans de Transkei et Ciskei dans le Cap oriental en 1994 mit fin aux divisions territoriales de l'apartheid.",
       "externalInfluences": "Absorption des clans Khoekhoe (Inqua, Giqwa, amaNgqosini) et de groupes San, qui apporterent les consonnes clics dans la langue isiXhosa. Contacts puis conflits avec les colons neerlandais (Boers) et britanniques a partir du XVIIe siecle. Influence chretienne massive apres l'arrivee des missionnaires (premiere eglise protestante 1820s) ; l'hymne Nkosi Sikelel' iAfrika fut compose en isiXhosa par Enoch Sontonga (1897). Impact du mouvement anti-apartheid et role politique majeur (Nelson Mandela, Walter Sisulu, Oliver Tambo).",
@@ -61,7 +72,9 @@
         "isiMpondomise — dialecte des amaMpondomise, Transkei interieur",
         "isiThembu — dialecte des amaThembu, Cap oriental interieur",
         "isiRharhabe — dialecte des amaRharhabe, Ciskei et zones urbaines du Cap occidental",
-        "isiGcaleka — dialecte des amaGcaleka, considere comme dialecte de prestige"
+        "isiGcaleka — dialecte des amaGcaleka, considere comme dialecte de prestige",
+        "isiXhosa standard — langue vehiculaire et scolaire commune a tous les Xhosa",
+        "isiMfengu — variante parlee par les amaMfengu, tres proche de l'isiXhosa standard"
       ],
       "vehicularRole": "L'isiXhosa est l'une des 11 langues officielles de l'Afrique du Sud. Parle par environ 18% de la population sud-africaine comme langue maternelle. Intelligibilite partielle avec le zoulou, notamment dans les zones urbaines. L'anglais et l'afrikaans sont couramment utilises comme langues secondes par les Xhosa, en particulier dans les zones urbaines. L'isiXhosa est enseigne dans les ecoles du Cap oriental et du Cap occidental."
     },
@@ -80,7 +93,7 @@
     "demography": {
       "totalPopulation": 10200000,
       "referenceYear": 2025,
-      "source": "Statistics South Africa — Census 2022 et estimations 2025 : les Xhosa representent environ 16,3% de la population sud-africaine. Avec une population totale de 64,7 millions (2025), cela correspond a environ 10,2 millions de locuteurs isiXhosa comme premiere langue. Wikipedia EN indique plus de 10 millions de locuteurs isiXhosa. Joshua Project et SIL Ethnologue confirment environ 8-10 millions.",
+      "source": "Statistics South Africa — Census 2022 et estimations 2025 : les Xhosa representent environ 16,3% de la population sud-africaine. Avec une population totale de 64,7 millions (2025), cela correspond a environ 10,2 millions de locuteurs isiXhosa comme premiere langue. Wikipedia EN indique plus de 10 millions de locuteurs isiXhosa. Joshua Project et SIL Ethnologue confirment environ 8-10 millions. Pour le seul territoire de l'ancien Ciskei, le recensement de 1991 comptait 477 501 habitants (districts d'Alice, Whittlesea, Keiskammahoek, Mdantsane, Middledrift, Peddie, Zwelitsha et Mpofu) ; une estimation de 2025 y compte environ 1 500 000 personnes (Statistics South Africa, Human Rights Watch).",
       "distributionByCountry": [
         {
           "country": "ZAF",
@@ -127,6 +140,30 @@
         "title": "Kruger Park — Xhosa people",
         "url": "https://www.krugerpark.co.za/africa_xhosa.html",
         "tier": "unverified"
+      },
+      {
+        "title": "South African History Online — Ciskei",
+        "url": "https://www.sahistory.org.za/place/ciskei",
+        "tier": "referenced",
+        "source_kind": "repository"
+      },
+      {
+        "title": "Human Rights Watch — South Africa: Ciskei: Ten Years on",
+        "url": "https://www.hrw.org/reports/1991/southafrica3/",
+        "tier": "referenced",
+        "source_kind": "ngo"
+      },
+      {
+        "title": "Statistics South Africa — Census 2011",
+        "url": "https://www.statssa.gov.za/census/census_2011/",
+        "tier": "official",
+        "source_kind": "official_statistics"
+      },
+      {
+        "title": "CIA World Factbook — South Africa",
+        "url": "https://www.cia.gov/the-world-factbook/countries/south-africa/",
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   },

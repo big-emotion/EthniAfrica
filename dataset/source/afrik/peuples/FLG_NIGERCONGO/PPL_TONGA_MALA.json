@@ -109,7 +109,14 @@
     "appellations": {
       "mainName": "Tonga (Malawi)",
       "selfAppellation": "Atonga (Batonga)",
-      "exonyms": ["Nyasa Tonga", "Chitonga", "Western Nyasa Tonga"],
+      "exonyms": [
+        "Nyasa Tonga",
+        "Chitonga",
+        "Western Nyasa Tonga",
+        "Kitonga",
+        "Siska",
+        "Sisya"
+      ],
       "originOfExonyms": "Le terme Nyasa Tonga, utilisé en particulier dans les travaux de l'époque coloniale et du protectorat du Nyasaland (actuel Malawi), distingue ce peuple des Tonga de Zambie-Zimbabwe. Chitonga désigne la langue du groupe. Le préfixe A/Ba- (pluriel) et Chi- (langue) suivent la convention bantu. Le terme Tonga (Malawi) ou Malawian Tonga est utilisé dans la littérature contemporaine pour éviter la confusion avec les Tonga de Zambie.",
       "whyProblematic": "L'appellation Tonga (Malawi) recouvre en réalité deux sous-ensembles distincts selon les auteurs : les Lakeshore Tonga (rive du lac, Nkhata Bay) et les Tonga de l'intérieur du Malawi. La parenté avec les Tonga de Zambie est nulle sur le plan linguistique (langues de branches bantoues différentes) et historique. La langue Chitonga (tog, N15) est un dialecte du Chitumbuka, radicalement différent du Chitonga de Zambie (toi, M64). L'identité Tonga au Malawi est parfois floue, certains groupes étant proches des Tumbuka ou des Cewa.",
       "contemporaryUsage": "Le terme Tonga ou Atonga est utilisé dans le nord du Malawi pour désigner le groupe ethnique établi principalement dans le district de Nkhata Bay. Ils représentent une minorité ethnique du pays. Le Chitonga est l'une des langues minoritaires du Malawi, parlée par environ 170 000 personnes (recensement 2018). Nationalement, le chichewa et l'anglais sont les langues officielles.",
@@ -123,7 +130,8 @@
       "Atonga de Chinteche : communautés du district de Chinteche résistant à l'indirect rule colonial",
       "Atonga de Kabunduli : chiefdom dans le district de Nkhata Bay, lié à l'empire Maravi",
       "Tonga de l'intérieur (plateau) : communautés des collines Vipya et zones adjacentes",
-      "Groupes issus de la fusion des quatre communautés fondatrices de la fin du 18e siècle"
+      "Groupes issus de la fusion des quatre communautés fondatrices de la fin du 18e siècle",
+      "Communautés côtières de pêcheurs (mphara) et communautés agricoles des collines intérieures"
     ],
     "origins": {
       "ancientOrigins": "Les Tonga du Malawi sont un peuple bantu dont l'identité se forma à la fin du 18e siècle par la convergence d'au moins quatre groupes distincts sur la rive occidentale du lac Nyasa (actuel lac Malawi). Leurs origines lointaines remontent aux migrations bantoues à travers l'Afrique centrale. La tradition orale affirme une migration depuis le nord lointain. Les chercheurs situent leur origine commune avec les Tumbuka et les Cewa : descendants de commerçants en ivoire et de populations installées à l'ouest du lac Malawi à la fin du 18e siècle. Le Chitonga est un dialecte du Chitumbuka qui s'autonomisa après l'arrivée des missionnaires.",
@@ -175,7 +183,7 @@
     "demography": {
       "totalPopulation": 250000,
       "referenceYear": 2025,
-      "source": "Estimations basées sur : recensement du Malawi 2018 (170 000 locuteurs du Chitonga, National Statistical Office of Malawi); Encyclopedia of World Cultures (165 654 en 1998, 50 359 en 1945); SIL Ethnologue tog; Cambridge University Press (270 833 locuteurs du Chitonga cités pour 2009). Projection 2025 estimée à 250 000 en tenant compte du taux de croissance démographique du Malawi et de la diaspora (Tonga du Malawi au sens large). Le chiffre diffère du TONGA_LAC car il inclut les communautés de l'intérieur.",
+      "source": "Estimations basées sur : recensement du Malawi 2018 (170 000 locuteurs du Chitonga, National Statistical Office of Malawi); Encyclopedia of World Cultures (165 654 en 1998, 50 359 en 1945); SIL Ethnologue tog; Cambridge University Press (270 833 locuteurs du Chitonga cités pour 2009). Projection 2025 estimée à 250 000 en tenant compte du taux de croissance démographique du Malawi et de la diaspora (Tonga du Malawi au sens large). Une estimation limitée aux communautés du lac donne 200 000 personnes (195 000 au Malawi, 5 000 au Zimbabwe) ; le chiffre retenu ici est plus élevé car il inclut les communautés de l'intérieur.",
       "distributionByCountry": [
         {
           "country": "MWI",
