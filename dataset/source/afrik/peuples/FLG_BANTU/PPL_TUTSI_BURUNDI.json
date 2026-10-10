@@ -126,5 +126,246 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tutsi désigne, au Burundi, l'une des catégories de la société, à côté des Hutu et des Twa ; Batutsi en est le pluriel dans sa langue. D'autres noms existent : Watusi, la forme des voyageurs du XIXe siècle, et Hamites, un nom savant européen aujourd'hui rejeté. Les sources que nous avons lues expliquent mal l'origine du nom Tutsi ; nous présentons ce qu'elles en disent plus bas.",
+    "names": [
+      {
+        "nameText": "Tutsi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "run",
+        "namedBy": null,
+        "shortLine": "Le nom d'une des catégories de la société burundaise ; Batutsi au pluriel.",
+        "usedIn": ["run", "fra"],
+        "periodLabel": "Écrit dès 1859 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les historiens"
+            },
+            "statement": "Le nom Tutsi désigne, avec Hutu et Twa, l'une des catégories de la société du Rwanda et du Burundi. Ces catégories traversent les clans : au Rwanda, dix-huit grands clans réunissent des Batutsi, des Bahutu et des Batwa, et il serait hasardeux de dire ce qu'elles représentaient il y a quatre siècles, selon J. B. Webster, B. A. Ogot et J. P. Chrétien. L'origine du nom est discutée : les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 879 et 881",
+                "notes": "Édition française, lue dans le PDF diffusé par l'UNESCO."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1946,
+              "to": 1962,
+              "label": "Après 1945, sous la tutelle belge"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tutsi désigne, au Burundi comme au Rwanda, l'un des deux groupes entre lesquels les réformes belges d'après-guerre aggravent les tensions, selon Elikia M'Bokolo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 8 : L'Afrique équatoriale de l'Ouest",
+                "author": "Elikia M'Bokolo",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 231",
+                "notes": "Édition française, lue dans le PDF diffusé par l'UNESCO."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les historiens"
+            },
+            "statement": "Le nom Tutsi ne recouvre pas des clans à part au Burundi : chez les Batutsi, plus de la moitié des clans sont mixtes, selon J. B. Webster, B. A. Ogot et J. P. Chrétien.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 881",
+                "notes": "Édition française, lue dans le PDF diffusé par l'UNESCO."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Tutsi est écrit Watusi par l'explorateur John Hanning Speke, pour des éleveurs venus du Karagwe qui vivent sur les collines de l'Uha, au-dessus du lac Tanganyika.",
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 250-251",
+                "notes": "Édimbourg et Londres, William Blackwood and Sons, lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "1859"
+            },
+            "era": "polity",
+            "statement": "Le nom Tutsi a une forme proche, Watosi, chez l'explorateur Richard Burton, qui décrit au marché de Msene, dans l'ouest de l'Unyamwezi, une population flottante du « clan pastoral appelé Watosi » et des réfugiés de l'Uha. C'est la plus ancienne trace de ce nom que le projet connaît. Les sociétés qu'il désigne existaient bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Equatorial Africa, Journal of the Royal Geographical Society, vol. 29",
+                "author": "Richard F. Burton",
+                "year": 1859,
+                "url": "https://archive.org/details/in.ernet.dli.2015.70694",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 189",
+                "notes": "Lu sur sa numérisation par la Digital Library of India."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "Proposée en 1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Watusi aurait remplacé celui de Wahuma, porté par des pasteurs qu'il croyait venus d'Éthiopie, selon John Hanning Speke, qui ajoute que personne ne sait expliquer comment ni quand. Les auteurs de l'Histoire générale de l'Afrique y voient le début d'une théorie qui a faussé la lecture des traditions orales.",
+            "hypothesisGroup": "origine du nom Tutsi",
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 251",
+                "notes": "Édimbourg et Londres, William Blackwood and Sons, lu sur sa numérisation."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 873",
+                "notes": "Édition française, lue dans le PDF diffusé par l'UNESCO."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Watusi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "swa",
+        "namedBy": null,
+        "shortLine": "La forme du nom avec le préfixe swahili wa-, celle des récits de voyage du XIXe siècle.",
+        "usedIn": ["swa", "eng"],
+        "periodLabel": "Écrit dès 1859 ; vieilli",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Watusi, écrit Watosi, a un singulier, Mtosi, chez Richard Burton : chez les Wavinza, dont les chefs sont de la « race » watosi, on appelle ainsi par compliment l'étranger qu'on apprécie. Le préfixe wa- marque en swahili les habitants d'un pays.",
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: a Picture of Exploration, vol. 2",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen21860burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 75",
+                "notes": "Londres, Longman, Green, Longman and Roberts, lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Watusi est la forme qu'emploie John Hanning Speke pour des éleveurs de l'Uha et de l'Unyamwezi.",
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 250-251",
+                "notes": "Édimbourg et Londres, William Blackwood and Sons, lu sur sa numérisation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hamites",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom savant européen, qui faisait des Tutsi des étrangers « supérieurs » : une théorie rejetée.",
+        "periodLabel": "Du milieu du XIXe siècle aux années 1950",
+        "accounts": [
+          {
+            "period": {
+              "from": 1890,
+              "to": 1914,
+              "label": "1890-1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hamites est appliqué aux Hima et aux Tutsi dès les premières explorations, d'après une théorie qui faisait des Hamites des Africains de « race supérieure » venus d'ailleurs, selon J. B. Webster, B. A. Ogot et J. P. Chrétien. Les officiers allemands et les Pères blancs la reprennent entre 1890 et 1914, et elle a faussé pour longtemps la lecture des traditions orales.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 873",
+                "notes": "Édition française, lue dans le PDF diffusé par l'UNESCO."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

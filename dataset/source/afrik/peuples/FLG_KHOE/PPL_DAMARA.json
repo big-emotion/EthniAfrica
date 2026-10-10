@@ -134,5 +134,404 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Damara désigne un peuple du centre et du nord-ouest de la Namibie, qui se nomme lui-même ǂNūkhoen, les gens noirs, dans la langue qu'il partage avec les Nama. D'autres noms existent : Dama, Bergdama, et des noms donnés par leurs voisins. Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "ǂNūkhoen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : « les gens noirs », un nom que Heinrich Vedder jugeait déjà ancien.",
+        "usedIn": ["naq"],
+        "periodLabel": "Décrit dès 1923",
+        "accounts": [
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom ǂNūkhoen veut dire « les gens noirs » : partout où ils vivent, les Dama se désignent de préférence ainsi, selon le missionnaire Heinrich Vedder. Il ne sait pas si les San et les Nama, plus clairs de peau, leur ont d'abord donné ce nom, ou s'ils l'ont choisi eux-mêmes. Il le juge en tout cas très ancien. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Bergdama, 1re partie",
+                "author": "Heinrich Vedder",
+                "year": 1923,
+                "url": "https://archive.org/details/diebergdama00vedd",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Hambourg, L. Friederichsen, lu sur sa numérisation. Chapitre « Der Name des Volkes »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Damara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "Le nom le plus courant aujourd'hui, venu du nama ; il a longtemps désigné aussi les Herero.",
+        "usedIn": ["eng", "fra", "naq"],
+        "periodLabel": "Écrit dès 1838 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Damara désigne aujourd'hui un peuple de Namibie, selon le Dictionary of South African English, qui le donne aussi sous une forme courte, Dama. Son origine est discutée : les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Damara »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/damara/e01905",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Damara recouvrait autrefois deux peuples : les Berg-Dama et les Dama « à bétail », c'est-à-dire les Herero, selon Heinrich Vedder. Il propose de dire simplement Dama, puisque ce second sens n'est plus en usage.",
+            "sources": [
+              {
+                "title": "Die Bergdama, 1re partie",
+                "author": "Heinrich Vedder",
+                "year": 1923,
+                "url": "https://archive.org/details/diebergdama00vedd",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Hambourg, L. Friederichsen, lu sur sa numérisation. Chapitre « Der Name des Volkes »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1838,
+              "to": 1838,
+              "label": "1838"
+            },
+            "era": "polity",
+            "statement": "Le nom Damara apparaît dans le récit de James Edward Alexander, qui distingue les « Kamaka or Cattle Damaras », les Damara à bétail des plaines, et les Damara des collines. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne vivaient là bien avant lui.",
+            "formAsWritten": "Damaras",
+            "birth": true,
+            "sources": [
+              {
+                "title": "An Expedition of Discovery into the Interior of Africa, through the hitherto undescribed countries of the Great Namaquas, Boschmans, and Hill Damaras, vol. I",
+                "author": "James Edward Alexander",
+                "year": 1838,
+                "url": "https://archive.org/details/expeditionofdisc00alex",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et p. 191",
+                "notes": "Londres, Henry Colburn, lu sur sa numérisation par la bibliothèque de l'université de Pretoria."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Damara viendrait du nama damap, « les gens noirs », dont il adapterait une forme du pluriel féminin, selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Damara",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Damara »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/damara/e01905",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "Proposée en 1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Damara viendrait de Damup, le nom que les Khoekhoe donnaient aux Noirs vivant au nord de Walvis Bay, que les colons hollandais auraient déformé, selon l'historien George McCall Theal, que cite le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Damara",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Damara »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/damara/e01905",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de G. M. Theal, Beginning of South African History, 1902."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Proposée en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Damara serait né d'un malentendu, selon Heinrich Vedder : -ra est en nama un suffixe qui veut dire « elles deux » ou « eux deux ». Un des premiers observateurs aurait entendu « Nera gye Damara », « ce sont deux Dama », et retenu le mot entier comme nom du peuple.",
+            "hypothesisGroup": "origine du nom Damara",
+            "sources": [
+              {
+                "title": "Die Bergdama, 1re partie",
+                "author": "Heinrich Vedder",
+                "year": 1923,
+                "url": "https://archive.org/details/diebergdama00vedd",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4-5",
+                "notes": "Hambourg, L. Friederichsen, lu sur sa numérisation. Chapitre « Der Name des Volkes »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bergdama",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "afr",
+        "namedBy": null,
+        "shortLine": "« Les Dama des montagnes » : un nom des colons, qui reprendrait aussi un nom que se donnaient les Dama.",
+        "usedIn": ["afr", "eng", "deu"],
+        "periodLabel": "Écrit dès 1838 sous la forme Hill Damaras",
+        "accounts": [
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bergdama est celui qu'emploie l'anthropologue Isaac Schapera pour un peuple du Sud-Ouest africain qui parle la langue des Nama, auxquels il est soumis depuis longtemps, écrit-il.",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1842,
+              "to": 1842,
+              "label": "1842"
+            },
+            "era": "polity",
+            "statement": "Le nom Bergdama est écrit « Berg Damaras » par le missionnaire Joseph Tindall, qui note qu'ils parlent la langue des Namaqua, selon le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Berg Damara »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/berg-damara/e00702",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation du journal de J. Tindall, 1842, publié en 1959."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1838,
+              "to": 1838,
+              "label": "1838"
+            },
+            "era": "polity",
+            "statement": "Le nom Bergdama a une forme proche, en anglais, dans le titre du récit de James Edward Alexander : les « Hill Damaras », les Damara des collines. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait déjà dans ces montagnes.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "An Expedition of Discovery into the Interior of Africa, through the hitherto undescribed countries of the Great Namaquas, Boschmans, and Hill Damaras, vol. I",
+                "author": "James Edward Alexander",
+                "year": 1838,
+                "url": "https://archive.org/details/expeditionofdisc00alex",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et p. 191",
+                "notes": "Londres, Henry Colburn, lu sur sa numérisation par la bibliothèque de l'université de Pretoria."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Bergdama viendrait de l'afrikaans Bergdamara, de berg, « montagne », et Damara, selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Bergdama",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Berg Damara »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/berg-damara/e00702",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Proposée en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bergdama traduirait un nom que se donnent les Dama eux-mêmes, !Hom-dama, les Dama des vallées de montagne, qui possèdent des chèvres, selon Heinrich Vedder. En 1928, il fait remonter ce nom au temps où les Dama vivaient surtout dans les monts Auas, Erongo et Brandberg.",
+            "hypothesisGroup": "origine du nom Bergdama",
+            "sources": [
+              {
+                "title": "Die Bergdama, 1re partie",
+                "author": "Heinrich Vedder",
+                "year": 1923,
+                "url": "https://archive.org/details/diebergdama00vedd",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Hambourg, L. Friederichsen, lu sur sa numérisation. Chapitre « Der Name des Volkes »."
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Berg Damara »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/berg-damara/e00702",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de H. Vedder, The Native Tribes of South West Africa, 1928, p. 39."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Xoudama",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "Un nom injurieux que leur donnaient les Nama, d'après Heinrich Vedder.",
+        "periodLabel": "Rapporté en 1923",
+        "accounts": [
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Rapporté en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Xoudama est un nom injurieux que les Nama donnaient aux Dama, selon Heinrich Vedder : xou désigne les excréments. Il servait à les distinguer des Herero, arrivés plus tard, que les Nama appelaient les Dama qui possèdent du bétail.",
+            "sources": [
+              {
+                "title": "Die Bergdama, 1re partie",
+                "author": "Heinrich Vedder",
+                "year": 1923,
+                "url": "https://archive.org/details/diebergdama00vedd",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Hambourg, L. Friederichsen, lu sur sa numérisation. Chapitre « Der Name des Volkes »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "!Hau-khoin",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "« Les étrangers » : un nom que des voyageurs leur ont prêté, et que les Dama refusent.",
+        "periodLabel": "Rapporté en 1923",
+        "accounts": [
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Rapporté en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom !Hau-khoin, « les étrangers », serait celui que les Dama se donnent, d'après certains récits. Mais tous les Dama le refusent, écrit Heinrich Vedder, et aucun Nama ni Herero ne l'emploie pour eux. Il pense qu'un voyageur a mal compris une réponse donnée chez des voisins où des Dama étaient de passage.",
+            "sources": [
+              {
+                "title": "Die Bergdama, 1re partie",
+                "author": "Heinrich Vedder",
+                "year": 1923,
+                "url": "https://archive.org/details/diebergdama00vedd",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5-6",
+                "notes": "Hambourg, L. Friederichsen, lu sur sa numérisation. Chapitre « Der Name des Volkes »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Rapporté en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom ǂHou-khoin, une autre forme relevée par des voyageurs, ne serait pas non plus un nom du peuple, selon Andreas Gurirab, un Dama âgé de Gaub qu'interroge Heinrich Vedder. Le mot ǂhou se dit des gens et des bêtes sans défense : un Dama a pu parler ainsi des siens, au temps où ils étaient attaqués par les Nama et les Herero.",
+            "sources": [
+              {
+                "title": "Témoignage d'Andreas Gurirab, rapporté par Heinrich Vedder",
+                "author": "Andreas Gurirab",
+                "year": 1923,
+                "url": "https://archive.org/details/diebergdama00vedd",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Ce que veut dire ǂhou-khoin",
+                "carrier": "Andreas Gurirab",
+                "place": "Gaub, Sud-Ouest africain",
+                "notes": "Explication donnée à Heinrich Vedder et citée dans Die Bergdama, p. 6 ; nous ne la connaissons que par lui."
+              },
+              {
+                "title": "Die Bergdama, 1re partie",
+                "author": "Heinrich Vedder",
+                "year": 1923,
+                "url": "https://archive.org/details/diebergdama00vedd",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Hambourg, L. Friederichsen, lu sur sa numérisation. Chapitre « Der Name des Volkes »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

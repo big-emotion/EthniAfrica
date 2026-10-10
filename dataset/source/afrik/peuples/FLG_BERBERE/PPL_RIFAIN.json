@@ -136,5 +136,283 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Rifain désigne un peuple berbère du Rif, dans le nord-est du Maroc, qui se nomme lui-même Irifiyen, et Arifi pour une seule personne. Ses anciens se disaient aussi Imazighen. Le nom vient de celui de la région, le Rif, dont l'origine est discutée ; nous présentons les explications plus bas.",
+    "names": [
+      {
+        "nameText": "Irifiyen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent en rifain : Irifiyen, et Arifi pour une seule personne.",
+        "periodLabel": "Décrit en 1976 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Irifiyen est celui que se donnent les Rifains, et Arifi désigne un homme. Les jeunes disent « nishinin dh-irifiyen », « nous sommes Rifains », plus que le nom de leur tribu, depuis l'indépendance du Maroc en 1956, selon l'anthropologue David Montgomery Hart. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait dans le Rif bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Aith Waryaghar of the Moroccan Rif: an ethnography and history",
+                "author": "David Montgomery Hart",
+                "year": 1976,
+                "url": "https://archive.org/details/the-aith-waryagher-of-the-moroccan-rif-david-hart",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 340",
+                "notes": "Tucson, University of Arizona Press pour la fondation Wenner-Gren, lu sur une copie non officielle mise en ligne sur archive.org."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Imazighen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "« Les Berbères » : le nom que les anciens du Rif employaient pour eux-mêmes, selon David Hart.",
+        "periodLabel": "Décrit en 1976",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Imazighen, « les Berbères », est encore employé par les hommes âgés du Rif à la place d'Irifiyen. Avant tout contact suivi avec les Européens, c'était peut-être le seul nom que les Rifains se donnaient, selon David Montgomery Hart, qui le présente comme une supposition.",
+            "sources": [
+              {
+                "title": "The Aith Waryaghar of the Moroccan Rif: an ethnography and history",
+                "author": "David Montgomery Hart",
+                "year": 1976,
+                "url": "https://archive.org/details/the-aith-waryagher-of-the-moroccan-rif-david-hart",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 340",
+                "notes": "Tucson, University of Arizona Press pour la fondation Wenner-Gren, lu sur une copie non officielle mise en ligne sur archive.org."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rifain",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom français, formé sur celui de la région, le Rif ; en arabe, rifi.",
+        "usedIn": ["fra"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Rifain, rifi en arabe, désigne au Maroc toute personne qui parle la variété berbère du nord ; dans le Rif même, on réserve le nom aux seules tribus de langue berbère, selon Mimoun Aziza. Il est formé sur le nom de la région, le Rif, dont l'histoire est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Rif : Géographie – Histoire – Société, Encyclopédie berbère, 41",
+                "author": "Mimoun Aziza",
+                "year": 2017,
+                "url": "https://journals.openedition.org/encyclopedieberbere/4509",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 3-4",
+                "notes": "Peeters, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rif",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Le nom de la région, d'où vient Rifain : un mot arabe dont l'origine est discutée.",
+        "usedIn": ["ara", "fra"],
+        "periodLabel": "Écrit dès le début du XIVe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Rif désigne aujourd'hui, au Maroc, la région qui longe la Méditerranée ; les géographes l'étendent de Tanger à la Moulouya, mais ses habitants le réservent aux provinces de Nador, Driouch et Al-Hoceima, selon Mimoun Aziza. Son origine est discutée : les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Rif : Géographie – Histoire – Société, Encyclopédie berbère, 41",
+                "author": "Mimoun Aziza",
+                "year": 2017,
+                "url": "https://journals.openedition.org/encyclopedieberbere/4509",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 3 et 5",
+                "notes": "Peeters, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1927,
+              "label": "Années 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rif s'étend alors à toutes les montagnes du nord du Maroc, au temps de la résistance que mène Abd el-Krim el-Khattabi contre l'occupation espagnole, de 1921 à 1927, selon Mimoun Aziza, qui suit le géographe Maurer.",
+            "sources": [
+              {
+                "title": "Rif : Géographie – Histoire – Société, Encyclopédie berbère, 41",
+                "author": "Mimoun Aziza",
+                "year": 2017,
+                "url": "https://journals.openedition.org/encyclopedieberbere/4509",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 14 et 36",
+                "notes": "Peeters, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1330,
+              "label": "Début du XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Rif apparaît dans le Rawd al-Qirtas, chronique écrite au début du XIVe siècle par Ibn Abi Zar, à propos des conquêtes almoravides dans le Rif, selon Mimoun Aziza. C'est la plus ancienne trace de ce nom que le projet connaît. Les tribus du Rif vivaient déjà là avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Rif : Géographie – Histoire – Société, Encyclopédie berbère, 41",
+                "author": "Mimoun Aziza",
+                "year": 2017,
+                "url": "https://journals.openedition.org/encyclopedieberbere/4509",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 10-11",
+                "notes": "Peeters, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1000,
+              "to": 1099,
+              "label": "XIe siècle"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Rif, le géographe al-Bakri ne parle pas de Rif : il nomme les villes de la région et ses tribus, comme les Temsaman, les Baqquya, les Gzennaya, les Ait Ouriaghel ou les Kebdana, selon Mimoun Aziza.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Rif : Géographie – Histoire – Société, Encyclopédie berbère, 41",
+                "author": "Mimoun Aziza",
+                "year": 2017,
+                "url": "https://journals.openedition.org/encyclopedieberbere/4509",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 9",
+                "notes": "Peeters, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "Proposée en 1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Rif viendrait du mot arabe rif, « bord » ou « bordure », qui a pris le sens de terre cultivée ; au Maroc, il désigne la région montagneuse le long de la Méditerranée, selon David Montgomery Hart. Mimoun Aziza donne la même explication en 2017.",
+            "hypothesisGroup": "origine du nom Rif",
+            "sources": [
+              {
+                "title": "The Aith Waryaghar of the Moroccan Rif: an ethnography and history",
+                "author": "David Montgomery Hart",
+                "year": 1976,
+                "url": "https://archive.org/details/the-aith-waryagher-of-the-moroccan-rif-david-hart",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339",
+                "notes": "Tucson, University of Arizona Press pour la fondation Wenner-Gren, lu sur une copie non officielle mise en ligne sur archive.org."
+              },
+              {
+                "title": "Rif : Géographie – Histoire – Société, Encyclopédie berbère, 41",
+                "author": "Mimoun Aziza",
+                "year": 2017,
+                "url": "https://journals.openedition.org/encyclopedieberbere/4509",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1-3",
+                "notes": "Peeters, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1926,
+              "to": 1926,
+              "label": "Proposée en 1926"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rif aurait eu au Maroc un sens militaire, celui de « bord du camp », la ligne de défense de l'islam d'Occident contre les attaques chrétiennes venues d'Espagne, selon l'arabisant Édouard Michaux-Bellaire, que cite David Montgomery Hart.",
+            "hypothesisGroup": "origine du nom Rif",
+            "sources": [
+              {
+                "title": "The Aith Waryaghar of the Moroccan Rif: an ethnography and history",
+                "author": "David Montgomery Hart",
+                "year": 1976,
+                "url": "https://archive.org/details/the-aith-waryagher-of-the-moroccan-rif-david-hart",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339, note 1",
+                "notes": "Tucson, University of Arizona Press pour la fondation Wenner-Gren, lu sur une copie non officielle mise en ligne sur archive.org."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Proposée en 2014"
+            },
+            "statement": "Le nom Rif viendrait, à travers l'arabe, d'un mot de l'égyptien ancien qui désignait le pourtour d'un temple, des terres cultivées au bord du Nil, selon le dialectologue Federico Corriente, dans une communication orale que rapporte Mimoun Aziza.",
+            "hypothesisGroup": "origine du nom Rif",
+            "sources": [
+              {
+                "title": "Rif : Géographie – Histoire – Société, Encyclopédie berbère, 41",
+                "author": "Mimoun Aziza",
+                "year": 2017,
+                "url": "https://journals.openedition.org/encyclopedieberbere/4509",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1 et notes 1-2",
+                "notes": "Peeters, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
