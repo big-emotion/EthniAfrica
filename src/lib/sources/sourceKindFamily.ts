@@ -5,14 +5,17 @@ import type { SourceKind } from "@/types/sources";
  *
  * Fourteen source kinds are too many colours for a reader to learn, so the
  * diamond groups them into the five the manifesto film showed (oral
- * tradition, book, article, report, archive) plus a neutral for the
- * provenance markers that are not a cited work. The precise kind is never
+ * tradition, book, article, report, archive), an encyclopedia family, and a
+ * neutral for the provenance markers that are not a cited work. Encyclopedias
+ * left « book » once Wikipedia was filed as one: a reader seeing the book
+ * colour would take a Wikipedia page for a book or a study. The precise kind is never
  * lost: the diamond's accessible name and the source sheet both print it.
  */
 // @req REQ-161
 export const SOURCE_KIND_FAMILIES = [
   "oral",
   "book",
+  "encyclopedia",
   "press",
   "report",
   "archive",
@@ -29,7 +32,7 @@ const FAMILY_OF_KIND: Record<SourceKind, SourceKindFamily> = {
   community: "oral",
   academic: "book",
   linguistic_reference: "book",
-  encyclopedia: "book",
+  encyclopedia: "encyclopedia",
   press: "press",
   government: "report",
   intergovernmental: "report",

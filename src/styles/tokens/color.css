@@ -151,15 +151,21 @@
      taken darker, to the lightest step clearing 3.3:1 on every tile ground;
      press and archive already clear it at the film's own value. The night
      fills are the film hues as they are, archive and other lifted to 4:1.
+     Encyclopedia is not in the film: it is a plum, a hue none of the other
+     families uses, kept at least 35 ΔE from each of them so Wikipedia
+     no longer reads as a book (4.6:1 on the birth wash by day, 5.3:1 on the
+     lightest night surface).
      Asserted in src/styles/__tests__/sourceDiamondCharter.test.ts. */
   --afh-color-source-oral: #b1721b;
   --afh-color-source-book: #2c8e7d;
+  --afh-color-source-encyclopedia: #a3488a;
   --afh-color-source-press: #c4573f;
   --afh-color-source-report: #6277e4;
   --afh-color-source-archive: #7e603e;
   --afh-color-source-other: #5b6b7b;
   --afh-color-source-oral-night: #c9821f;
   --afh-color-source-book-night: #33a390;
+  --afh-color-source-encyclopedia-night: #cf73b4;
   --afh-color-source-press-night: #cd725e;
   --afh-color-source-report-night: #7a8ce8;
   --afh-color-source-archive-night: #9d774d;
@@ -408,6 +414,7 @@
   /* The source diamond, by family (ETNI-2015). */
   --afh-source-oral: var(--afh-color-source-oral);
   --afh-source-book: var(--afh-color-source-book);
+  --afh-source-encyclopedia: var(--afh-color-source-encyclopedia);
   --afh-source-press: var(--afh-color-source-press);
   --afh-source-report: var(--afh-color-source-report);
   --afh-source-archive: var(--afh-color-source-archive);
@@ -480,6 +487,7 @@
 
   --afh-source-oral: var(--afh-color-source-oral-night);
   --afh-source-book: var(--afh-color-source-book-night);
+  --afh-source-encyclopedia: var(--afh-color-source-encyclopedia-night);
   --afh-source-press: var(--afh-color-source-press-night);
   --afh-source-report: var(--afh-color-source-report-night);
   --afh-source-archive: var(--afh-color-source-archive-night);

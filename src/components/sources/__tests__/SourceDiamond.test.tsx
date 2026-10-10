@@ -74,7 +74,7 @@ describe("SourceDiamond — the mark after a sourced sentence", () => {
 describe("SourceDiamondLegend — what each colour means", () => {
   // @req REQ-198
   // @req REQ-194
-  it("lists the six colour families under a plain heading, with no tier word", () => {
+  it("lists the seven colour families under a plain heading, with no tier word", () => {
     render(<SourceDiamondLegend language="fr" />);
     const legend = screen.getByRole("region", {
       name: "La couleur du losange indique le type de source",
@@ -85,6 +85,7 @@ describe("SourceDiamondLegend — what each colour means", () => {
     expect(rows).toEqual([
       ["Tradition orale ou communauté", "oral"],
       ["Livre ou étude", "book"],
+      ["Encyclopédie", "encyclopedia"],
       ["Article de presse", "press"],
       ["Rapport public", "report"],
       ["Archive", "archive"],

@@ -8,10 +8,11 @@ import { SOURCE_KINDS, type SourceKind } from "@/types/sources";
 
 describe("sourceKindFamily — the diamond's colour families", () => {
   // @req REQ-161
-  it("keeps the reader-facing palette to six families, in legend order", () => {
+  it("keeps the reader-facing palette to seven families, in legend order", () => {
     expect(SOURCE_KIND_FAMILIES).toEqual([
       "oral",
       "book",
+      "encyclopedia",
       "press",
       "report",
       "archive",
@@ -32,6 +33,9 @@ describe("sourceKindFamily — the diamond's colour families", () => {
     expect(sourceKindFamily("community")).toBe("oral");
     expect(sourceKindFamily("academic")).toBe("book");
     expect(sourceKindFamily("linguistic_reference")).toBe("book");
+    // Wikipedia is filed as `encyclopedia`; a reader must not take it for a
+    // book or a study, so it gets its own colour.
+    expect(sourceKindFamily("encyclopedia")).toBe("encyclopedia");
     expect(sourceKindFamily("press")).toBe("press");
     expect(sourceKindFamily("government")).toBe("report");
     expect(sourceKindFamily("intergovernmental")).toBe("report");
@@ -45,8 +49,7 @@ describe("sourceKindFamily — the diamond's colour families", () => {
   });
 
   // @req REQ-161
-  it("already places the three kinds PR #1624 adds", () => {
-    expect(sourceKindFamily("encyclopedia" as SourceKind)).toBe("book");
+  it("already places the other two kinds PR #1624 adds", () => {
     expect(sourceKindFamily("ngo" as SourceKind)).toBe("report");
     expect(sourceKindFamily("missionary_database" as SourceKind)).toBe("other");
   });

@@ -23,6 +23,7 @@ export const sourceDiamondCopy: Record<Language, SourceDiamondCopy> = {
     families: {
       oral: "Tradition orale ou communauté",
       book: "Livre ou étude",
+      encyclopedia: "Encyclopédie",
       press: "Article de presse",
       report: "Rapport public",
       archive: "Archive",
