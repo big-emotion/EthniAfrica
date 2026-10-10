@@ -1,0 +1,30 @@
+<!-- @dsCard group="Blocs" height=560 subtitle="Marques de statut et frise de clôture" -->
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<style>
+html,body{margin:0;background:#0f0c09;font-family:Andika,sans-serif}
+.wrap{padding:20px;display:flex;flex-direction:column;gap:20px}
+.strip{width:1080px;transform:scale(.5);transform-origin:0 0;padding:40px 72px 30px;background:var(--ground);color:var(--ink);box-sizing:border-box}
+.holder{width:540px;overflow:hidden}
+.marks{display:flex;flex-wrap:wrap;gap:16px 18px}
+.marks .ec-status{margin:0}
+.cap{font:700 14px/18px Andika,sans-serif;color:#f3e9da}
+</style></head><body><div class="wrap" id="w"></div>
+<script>
+(async function () {
+  var w = document.getElementById('w');
+  var t = await (await fetch('../../tokens.json')).json();
+  await EthniCards.installTokens(t, '../../');
+  ['nuit', 'parchemin'].forEach(function (theme) {
+    var cap = document.createElement('div'); cap.className = 'cap'; cap.textContent = 'Thème ' + theme + ' : chaque marque associe un mot et une forme. Sur les cartes, seules l’origine, le contexte et l’incertitude dessinent une marque ; les autres types nomment le chapeau. Dessous, la frise de la carte de clôture.'; w.appendChild(cap);
+    var holder = document.createElement('div'); holder.className = 'holder';
+    var s = document.createElement('div'); s.className = 'strip'; s.setAttribute('data-theme', theme);
+    var m = document.createElement('div'); m.className = 'marks';
+    Object.keys(EthniCards.statusLabels).forEach(function (k) { m.appendChild(EthniCards.statusMark(k)); });
+    s.appendChild(m);
+    var r = EthniCards.recap([{ date: '1962', name: 'Uganda', kind: 'independance' }, { date: '1894', name: 'Uganda', kind: 'adoption' }, { date: '1863', name: '« Uganda »', kind: 'attestation' }, { date: '?', name: 'Buganda', kind: 'origine' }]); r.style.marginTop = '36px'; s.appendChild(r);
+    holder.appendChild(s); w.appendChild(holder);
+    holder.style.height = (s.getBoundingClientRect().height + 4) + 'px';
+  });
+})();
+</script></body></html>

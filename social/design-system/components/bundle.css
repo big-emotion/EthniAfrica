@@ -1,0 +1,188 @@
+/* EthniAfrica Cartes 1.1.0-proposition. Card geometry in export pixels (1080 x 1350).
+   Colours and families come from tokens.json (tokens.css or EthniCards.installTokens). */
+
+.ec-card {
+  position: relative;
+  width: 1080px;
+  height: 1350px;
+  overflow: hidden;
+  background: var(--ground, #15100b);
+  color: var(--ink, #f3e9da);
+  font-family: var(--font-text, "Nunito Sans", sans-serif);
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+.ec-card *, .ec-card *::before, .ec-card *::after { box-sizing: border-box; }
+.ec-card em { font-style: normal; }
+
+/* Media layer: photo, document or map, always covering the whole card; the veil lets it show through. */
+.ec-media { position: absolute; inset: 0; overflow: hidden; background: var(--ground-raised, #251c13); }
+.ec-media > img.ec-photo { position: absolute; left: 0; top: 0; max-width: none; transform-origin: 0 0; display: block; }
+.ec-media > svg.ec-map { position: absolute; left: 0; top: 0; width: 1080px; height: 1350px; display: block; }
+.ec-scrim {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to bottom, var(--scrim-clear, rgba(21, 16, 11, 0)) 0, var(--veil, rgba(21, 16, 11, .86)) 300px, var(--veil, rgba(21, 16, 11, .86)) 100%);
+}
+.ec-scrim--map { background: linear-gradient(to bottom, var(--scrim-clear, rgba(21, 16, 11, 0)) 0, var(--veil-strong, rgba(21, 16, 11, .96)) 90px, var(--veil-strong, rgba(21, 16, 11, .96)) 100%); }
+.ec-scrim--strong { background: linear-gradient(to bottom, var(--scrim-clear, rgba(21, 16, 11, 0)) 0, var(--veil-strong, rgba(21, 16, 11, .96)) 300px, var(--veil-strong, rgba(21, 16, 11, .96)) 100%); }
+
+/* Document insets (zooms), placed inside the image window only. */
+.ec-inset { position: absolute; background: var(--ground-raised, #251c13); padding: 10px 10px 8px; border-radius: 6px; }
+.ec-inset img { display: block; width: 100%; height: auto; border-radius: 3px; }
+.ec-inset figcaption { font: 700 22px/28px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink, #f3e9da); margin-top: 8px; text-align: center; }
+
+/* Text panel, anchored to the bottom. */
+.ec-panel { position: absolute; left: 0; right: 0; bottom: 0; padding: 0 72px 44px; display: flex; flex-direction: column; }
+.ec-panel > * { flex-shrink: 0; }
+.ec-panel--center { align-items: center; text-align: center; }
+.ec-head { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; margin-bottom: 14px; align-self: stretch; }
+.ec-kicker { font: 700 28px/34px var(--font-text, "Nunito Sans", sans-serif); letter-spacing: .02em; color: var(--accent, #e8b96a); text-align: left; }
+.ec-folio { font: 700 22px/28px var(--font-text, "Nunito Sans", sans-serif); letter-spacing: .08em; color: var(--ink-faint, #a8977f); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ec-title { font: 400 88px/90px var(--font-display, Anton, sans-serif); color: var(--ink, #f3e9da); margin: 0 0 20px; letter-spacing: .005em; text-wrap: balance; }
+.ec-title--m { font-size: 72px; line-height: 76px; }
+.ec-title--xl { font-size: 116px; line-height: 112px; margin-bottom: 24px; }
+.ec-card--closing .ec-title { text-transform: uppercase; font-size: 84px; line-height: 88px; margin-bottom: 18px; }
+.ec-accent { color: var(--accent, #e8b96a); }
+.ec-body { font: 400 32px/45px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink, #f3e9da); margin: 0; text-wrap: pretty; }
+.ec-body p { margin: 0; }
+.ec-body p + p { margin-top: 16px; }
+.ec-body--after { margin-top: 20px; }
+.ec-body--center { color: var(--ink-muted, #cbbba3); max-width: 820px; }
+.ec-dense .ec-body { font-size: 28px; line-height: 40px; }
+.ec-block { margin-top: 20px; }
+.ec-block:first-child { margin-top: 0; }
+.ec-cue { font: 800 26px/32px var(--font-text, "Nunito Sans", sans-serif); letter-spacing: .08em; text-transform: uppercase; color: var(--accent, #e8b96a); margin-top: 22px; }
+.ec-source { font: 700 22px/30px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink-muted, #cbbba3); margin-top: 24px; }
+.ec-credit { font: 400 19px/25px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink-faint, #a8977f); margin-top: 6px; }
+.ec-panel--center .ec-credit { max-width: 860px; }
+.ec-sign { display: flex; align-items: center; justify-content: space-between; margin-top: 20px; min-height: 44px; align-self: stretch; }
+.ec-sign-brand { display: flex; align-items: center; gap: 14px; }
+.ec-sign-brand img { width: 44px; height: 44px; display: block; }
+.ec-sign-words { display: flex; flex-direction: column; align-items: flex-start; }
+.ec-wordmark { font: 600 32px/38px var(--font-wordmark, Fraunces, serif); color: var(--ink, #f3e9da); }
+.ec-tagline { font: 400 17px/20px var(--font-wordmark, Fraunces, serif); color: var(--ink-faint, #a8977f); }
+.ec-sign-url { font: 700 22px/28px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink-muted, #cbbba3); }
+.ec-sign--center { justify-content: center; margin-top: 18px; }
+
+/* Forms table (one root, several forms) and the searched form / self-name pair. */
+.ec-forms { display: grid; grid-template-columns: max-content 1fr; column-gap: 36px; }
+.ec-forms > div { padding: 6px 0; border-bottom: 2px solid var(--rule, #3d3124); display: flex; align-items: baseline; }
+.ec-forms > div:nth-last-child(-n+2) { border-bottom: 0; }
+.ec-forms .ec-term { font: 400 54px/62px var(--font-display, Anton, sans-serif); color: var(--ink, #f3e9da); }
+.ec-forms .ec-gloss { font: 400 32px/42px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink, #f3e9da); }
+.ec-pair { display: grid; grid-template-columns: 1fr; row-gap: 4px; }
+.ec-pair .ec-label { margin-top: 10px; }
+.ec-pair .ec-pair-name { font: 400 72px/78px var(--font-display, Anton, sans-serif); color: var(--ink, #f3e9da); }
+.ec-pair .ec-pair-name--self { color: var(--accent, #e8b96a); }
+
+/* Exact quotation versus translation. */
+.ec-quote { margin: 0; }
+.ec-quote q { quotes: "\00AB\202F" "\202F\00BB"; font: 400 32px/45px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink, #f3e9da); }
+.ec-quote q::before, .ec-quote q::after { color: var(--accent, #e8b96a); }
+.ec-quote figcaption { font: 700 22px/30px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink-muted, #cbbba3); margin-top: 8px; }
+.ec-translation { font: 400 28px/40px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink-muted, #cbbba3); margin-top: 10px; }
+
+/* Fixed labels: the only uppercase text besides the closing slogan. */
+.ec-label { font: 800 20px/26px var(--font-text, "Nunito Sans", sans-serif); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-muted, #cbbba3); }
+
+/* Status marks: a word plus a shape, never colour alone. Drawn only for origin, context and uncertainty. */
+.ec-status-row { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 20px; margin-bottom: 16px; }
+.ec-status { display: inline-flex; align-items: center; gap: 12px; height: 46px; padding: 0 22px 0 16px; border: 2px solid currentColor; border-radius: 999px; color: var(--ink, #f3e9da); font: 800 22px/28px var(--font-text, "Nunito Sans", sans-serif); letter-spacing: .08em; text-transform: uppercase; }
+.ec-status svg { width: 24px; height: 24px; flex: none; }
+.ec-status--origine { background: var(--accent, #e8b96a); color: var(--on-accent, #1a120a); border-color: var(--accent, #e8b96a); }
+.ec-status--contexte, .ec-status--incertain, .ec-status--hypothese { color: var(--ink-muted, #cbbba3); border-style: dashed; }
+.ec-band { font: 700 26px/34px var(--font-text, "Nunito Sans", sans-serif); color: var(--accent, #e8b96a); flex: 1 1 360px; }
+.ec-band--contexte { color: var(--ink-muted, #cbbba3); }
+
+/* Dated name: the date large, then the name, then two balanced columns. */
+.ec-date { font: 400 176px/156px var(--font-display, Anton, sans-serif); color: var(--accent, #e8b96a); margin: 0 0 22px; letter-spacing: .01em; }
+.ec-date--long { font-size: 124px; line-height: 118px; }
+.ec-date--unknown { font-size: 84px; line-height: 90px; color: var(--ink-muted, #cbbba3); }
+.ec-field .ec-label { margin-bottom: 4px; }
+.ec-field-name { font: 400 76px/82px var(--font-display, Anton, sans-serif); color: var(--ink, #f3e9da); }
+.ec-field-cols { display: grid; grid-template-columns: 1fr 1fr; column-gap: 44px; margin-top: 22px; padding-top: 20px; border-top: 2px solid var(--rule, #3d3124); }
+.ec-field-cols > .ec-field:only-child { grid-column: 1 / -1; }
+.ec-field-text { font: 400 32px/42px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink, #f3e9da); }
+.ec-field-text--muted { color: var(--ink-muted, #cbbba3); }
+.ec-branches { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; margin-top: 4px; }
+.ec-branch { border-top: 4px solid var(--rule, #3d3124); padding-top: 14px; }
+.ec-branch--a { border-top-color: var(--accent, #e8b96a); }
+.ec-branch--b { border-top-color: var(--area-b-ink, #6cc3b5); }
+.ec-branch .ec-field-name { font-size: 64px; line-height: 70px; margin: 6px 0 8px; }
+.ec-branch--b .ec-field-name { color: var(--area-b-ink, #6cc3b5); }
+.ec-branch--a .ec-field-name { color: var(--accent, #e8b96a); }
+.ec-branch .ec-field-text + .ec-field-text { margin-top: 8px; }
+
+/* Recap timeline, on the closing card of a dated sequence only. */
+.ec-recap { display: grid; align-self: stretch; margin: 4px 0 34px; position: relative; }
+.ec-recap::before { content: ''; position: absolute; left: 12%; right: 12%; top: 66px; border-top: 3px solid var(--rule, #3d3124); }
+.ec-recap-step { display: flex; flex-direction: column; align-items: center; gap: 8px; position: relative; }
+.ec-recap-step svg { width: 30px; height: 30px; color: var(--ink-muted, #cbbba3); background: transparent; }
+.ec-recap-step.is-origin svg { color: var(--accent, #e8b96a); width: 36px; height: 36px; }
+.ec-recap-date { font: 400 40px/46px var(--font-display, Anton, sans-serif); color: var(--accent, #e8b96a); white-space: nowrap; }
+.ec-recap-name { font: 700 26px/32px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink, #f3e9da); }
+
+/* Map: the map carries the message; the panel holds a title, a legend and a one-line caption. */
+.ec-legend { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 2px; }
+.ec-legend-item { display: inline-flex; align-items: center; gap: 10px; font: 700 24px/30px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink, #f3e9da); }
+.ec-legend-item svg { width: 40px; height: 28px; flex: none; }
+.ec-mapcap { margin: 18px 0 0; font: 400 20px/27px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink-muted, #cbbba3); }
+.ec-mapcap b { font-weight: 700; }
+.ec-mapcap-sep { color: var(--ink-faint, #a8977f); }
+.ec-card--map .ec-sign { margin-top: 16px; }
+.ec-map .ec-m-water { fill: var(--map-water, #bcd3d6); }
+.ec-map .ec-m-land { fill: var(--map-land, #efe6d6); }
+.ec-map .ec-m-lake { fill: var(--map-water, #bcd3d6); }
+.ec-map .ec-m-coast { fill: none; stroke: var(--map-border-quiet, #8f7b64); opacity: .7; }
+.ec-map .ec-m-border { fill: none; stroke-linejoin: round; stroke-linecap: round; }
+.ec-map .ec-m-border--quiet { stroke: var(--map-border-quiet, #8f7b64); }
+.ec-map .ec-m-border--strong { stroke: var(--map-border-strong, #2a1e15); }
+.ec-map .ec-m-border--halo { stroke: var(--map-land, #efe6d6); }
+.ec-map .ec-m-area { stroke-linejoin: round; }
+.ec-map text { font-family: var(--font-text, "Nunito Sans", sans-serif); paint-order: stroke; stroke: var(--map-land, #efe6d6); stroke-linejoin: round; fill: var(--map-ink, #2a1e15); }
+.ec-map .ec-m-lbl-country { font-weight: 700; letter-spacing: .16em; fill: var(--map-ink-muted, #6e5d4c); }
+.ec-map .ec-m-lbl-country--strong { fill: var(--map-ink, #2a1e15); }
+.ec-map .ec-m-lbl-water { font-style: italic; letter-spacing: .03em; fill: var(--map-water-ink, #3d6670); }
+.ec-map .ec-m-lbl-place { font-weight: 700; }
+.ec-map .ec-m-lbl-name { font-weight: 800; }
+.ec-map .ec-m-lbl-area { font-weight: 800; }
+.ec-map .ec-m-dot { fill: var(--map-ink, #2a1e15); stroke: var(--map-land, #efe6d6); }
+
+/* Map overlays: the list of states (callout) and the continent locator (inset). */
+.ec-callout { position: absolute; z-index: 3; background: var(--veil-strong, rgba(21, 16, 11, .96)); color: var(--ink, #f3e9da); border-radius: 6px; padding: 18px 24px 14px; }
+.ec-callout-title { font: 400 36px/40px var(--font-display, Anton, sans-serif); color: var(--ink, #f3e9da); margin-bottom: 12px; }
+.ec-callout ul { list-style: none; margin: 0; padding: 0; column-gap: 20px; }
+.ec-callout li { font: 700 var(--callout-size, 24px)/31px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink, #f3e9da); break-inside: avoid; white-space: nowrap; display: flex; align-items: center; gap: 10px; }
+.ec-callout li::before { content: ''; width: 16px; height: 16px; border-radius: 3px; flex: none; background: var(--sw, var(--area-a, #a86d18)); box-shadow: 0 0 0 1px var(--map-ink-muted, #6e5d4c); }
+.ec-callout li .ec-callout-name { flex: 1; }
+.ec-callout li b { font-weight: 800; color: var(--accent, #e8b96a); font-variant-numeric: tabular-nums; }
+.ec-scale { margin-top: 2px; }
+.ec-scale-title { font: 700 22px/28px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink-muted, #cbbba3); margin-bottom: 8px; }
+.ec-scale-row { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 6px; }
+.ec-scale-step { display: flex; flex-direction: column; gap: 6px; }
+.ec-scale-swatch { display: block; height: 22px; border-radius: 3px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .15); }
+.ec-scale-label { font: 700 21px/26px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink, #f3e9da); }
+.ec-map .ec-m-lbl-val { font-weight: 800; fill: var(--map-ink, #2a1e15); }
+.ec-map-inset { position: absolute; z-index: 3; background: var(--map-water, #bcd3d6); border: 2px solid var(--map-ink-muted, #6e5d4c); border-radius: 6px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.ec-map-inset svg { display: block; }
+.ec-map-inset span { font: 700 18px/22px var(--font-text, "Nunito Sans", sans-serif); color: var(--map-ink, #2a1e15); }
+.ec-inset-land { fill: var(--map-land, #efe6d6); stroke: var(--map-ink-muted, #6e5d4c); stroke-width: 1; }
+.ec-inset-frame { fill: none; stroke: var(--area-c, #c0583a); stroke-width: 3; }
+.ec-map .ec-m-lbl-hl { font-weight: 800; fill: var(--map-ink, #2a1e15); }
+
+/* Closing invitation: centred, an outlined pill for the site. */
+.ec-cta { margin-top: 30px; }
+.ec-cta-pill { display: inline-block; font: 800 34px/40px var(--font-text, "Nunito Sans", sans-serif); letter-spacing: .04em; text-transform: uppercase; color: var(--accent, #e8b96a); border: 3px solid var(--accent, #e8b96a); border-radius: 999px; padding: 18px 44px; }
+
+/* Demonstration tape: maquettes only, never on a published card. */
+.ec-demo { position: absolute; top: 28px; left: 28px; z-index: 5; background: var(--demo-tape, #ffe58a); color: var(--demo-ink, #2b2100); font: 800 22px/28px var(--font-text, "Nunito Sans", sans-serif); letter-spacing: .06em; text-transform: uppercase; padding: 10px 22px; border-radius: 999px; }
+
+/* Fit diagnostics, shown only when the renderer runs with {diagnose:true}. */
+.ec-diagnose.ec-overflow::after { content: ''; position: absolute; inset: 0; border: 10px solid #ff3b30; z-index: 7; pointer-events: none; }
+.ec-diagnose .ec-guide { position: absolute; left: 0; right: 0; border-top: 3px dashed #ff3b30; z-index: 6; }
+
+/* Scaled frame used by previews: shows a card at the size a person reads it. */
+.ec-frame { position: relative; overflow: hidden; flex: none; background: #000; }
+.ec-frame > .ec-card { position: absolute; left: 0; top: 0; transform-origin: 0 0; }

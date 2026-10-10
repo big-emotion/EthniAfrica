@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Forge Report — Timeline du nom</title>
+    <style>
+      :root {
+        --bg: #fbf7f2;
+        --card: #fff;
+        --border: #e8dfd3;
+        --text: #2c2018;
+        --soft: #746557;
+        --terre: #8a3d1c;
+        --terre-bg: #fbe9dc;
+        --teal: #1f5a4f;
+        --teal-bg: #e3f0ec;
+        --red: #9b2f2f;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #1d1712;
+          --card: #271f19;
+          --border: #3d3229;
+          --text: #f3ebe1;
+          --soft: #bcae9f;
+          --terre: #f0a27c;
+          --terre-bg: #3a2419;
+          --teal: #8fd0bf;
+          --teal-bg: #1b302b;
+          --red: #f08f8f;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font:
+          16px/1.55 Georgia,
+          "Times New Roman",
+          serif;
+      }
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 24px 16px 48px;
+      }
+      .hero {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+      }
+      .hero h1 {
+        font-size: 1.9rem;
+        margin: 0 0 6px;
+        line-height: 1.15;
+      }
+      .hero p {
+        margin: 0;
+        color: var(--soft);
+      }
+      .seal {
+        flex: none;
+        width: 150px;
+        height: 150px;
+      }
+      h2 {
+        font-size: 1.25rem;
+        margin: 32px 0 10px;
+        border-bottom: 2px solid var(--border);
+        padding-bottom: 6px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 14px 16px;
+        margin: 10px 0;
+      }
+      ul {
+        padding-left: 20px;
+        margin: 6px 0;
+      }
+      li {
+        margin: 5px 0;
+      }
+      .lock li::marker {
+        content: "🔒 ";
+      }
+      .kill li::marker {
+        content: "✕ ";
+        color: var(--red);
+      }
+      .crack li::marker {
+        content: "⚠ ";
+      }
+      .open li::marker {
+        content: "→ ";
+      }
+      .personas {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        gap: 10px;
+      }
+      .p {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 10px 12px;
+        font-size: 0.92rem;
+      }
+      .p b {
+        display: block;
+        font-size: 1rem;
+      }
+      .p i {
+        color: var(--soft);
+        display: block;
+        margin-top: 4px;
+      }
+      .tag {
+        font:
+          600 0.72rem system-ui,
+          sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--soft);
+      }
+      code {
+        font-size: 0.88em;
+        background: var(--terre-bg);
+        padding: 1px 5px;
+        border-radius: 4px;
+      }
+      footer {
+        margin-top: 32px;
+        color: var(--soft);
+        font-size: 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="hero">
+        <svg
+          class="seal"
+          viewBox="0 0 200 200"
+          role="img"
+          aria-label="Sceau : idée durcie"
+        >
+          <defs>
+            <path
+              id="ring"
+              d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"
+            />
+          </defs>
+          <g fill="#8a3d1c">
+            <path
+              d="M100 8 C120 14 132 6 148 20 C164 34 178 30 184 52 C192 72 196 84 190 104 C186 126 194 140 178 158 C164 176 150 176 130 186 C112 194 92 196 72 188 C52 182 38 180 24 162 C10 144 8 128 10 108 C12 86 4 70 18 50 C30 30 46 28 64 16 C78 8 88 4 100 8Z"
+            />
+          </g>
+          <circle
+            cx="100"
+            cy="100"
+            r="78"
+            fill="none"
+            stroke="#fbe9dc"
+            stroke-width="2"
+            opacity=".7"
+          />
+          <circle
+            cx="100"
+            cy="100"
+            r="56"
+            fill="none"
+            stroke="#fbe9dc"
+            stroke-width="1.5"
+            opacity=".6"
+          />
+          <text
+            font-family="Georgia,serif"
+            font-size="13"
+            letter-spacing="3"
+            fill="#fbe9dc"
+          >
+            <textPath href="#ring" startOffset="2%">
+              ETHNIAFRICA · FORGE · 2026-10-08 · ETHNIAFRICA · FORGE ·
+            </textPath>
+          </text>
+          <text
+            x="100"
+            y="96"
+            text-anchor="middle"
+            font-family="Georgia,serif"
+            font-weight="700"
+            font-size="22"
+            fill="#fbe9dc"
+          >
+            HARDENED
+          </text>
+          <text
+            x="100"
+            y="118"
+            text-anchor="middle"
+            font-family="Georgia,serif"
+            font-size="12"
+            fill="#fbe9dc"
+          >
+            idée durcie
+          </text>
+        </svg>
+        <div>
+          <span class="tag">Forge · bmad-forge-idea</span>
+          <h1>
+            La timeline de l'histoire du nom, onglet par défaut de la recherche
+          </h1>
+          <p>
+            Une session pour tester l'idée, puis l'améliorer. Résultat : l'idée
+            tient, à condition que le fond passe avant la forme. Le corpus doit
+            être enrichi avant que la timeline puisse sortir.
+          </p>
+        </div>
+      </div>
+
+      <h2>Décisions verrouillées</h2>
+      <div class="card">
+        <ul class="lock">
+          <li>
+            <b>Le fond avant la forme.</b> On enrichit les fiches avant de
+            mettre la timeline en ligne.
+          </li>
+          <li>
+            <b>La timeline devient l'onglet par défaut</b> de la page de
+            résultats, toujours. Les onglets Tout, Shorts, Récits, Jeux et
+            Fiches restent disponibles.
+          </li>
+          <li>
+            <b>On met en ligne quand le socle prioritaire est enrichi</b> : les
+            noms les plus recherchés et les exemples du verbatim. Tous les
+            autres sujets ont une timeline minimale.
+          </li>
+          <li>
+            <b>Tous les modèles sont concernés</b>, lieu compris dès maintenant,
+            ainsi que les mots-concepts (racisme, État, nation, esclavage).
+          </li>
+          <li>
+            <b>Tout est hypothèse.</b> Les origines concurrentes s'affichent
+            côte à côte, sans classement. Le site n'affirme jamais.
+          </li>
+          <li>
+            <b>Le lecteur voit le type de source, jamais un niveau.</b> Les
+            sources s'ouvrent d'un clic. Aucun contrôle ne bloque une source
+            orale.
+          </li>
+          <li>
+            <b>Un modèle commun pour toutes les fiches</b> : résumé → noms →
+            récits (période, phrase qui commence par le nom, sources typées,
+            acteurs, marqueurs <code>birth</code> et <code>before</code>).
+          </li>
+          <li>
+            <b>La naissance du nom</b>, c'est-à-dire l'origine la plus ancienne
+            connue du projet. En dessous, ce qui existait avant le nom.
+          </li>
+          <li>
+            <b>Le nom recherché vient en premier</b>, avec un lien bien visible
+            vers le nom que le peuple se donne.
+          </li>
+          <li>
+            <b>La mise en page v4</b> : la frise des fiches pays, une
+            appellation à la fois, la tuile de naissance en terre cuite, «
+            Pendant ce temps, ailleurs » derrière un bouton, et la phrase de fin
+            « Fin de ce que nos recherches retracent pour le nom X ».
+          </li>
+        </ul>
+      </div>
+
+      <h2>Ce qui a été rejeté, et pourquoi</h2>
+      <div class="card">
+        <ul class="kill">
+          <li><b>Une colonne par nom</b> : illisible en 430 px.</li>
+          <li>
+            <b>Une frise unique avec toutes les appellations mêlées</b> : trop
+            dense.
+          </li>
+          <li>
+            <b>Un arbre généalogique des noms</b> : trop coûteux à afficher. La
+            convergence est racontée dans les tuiles.
+          </li>
+          <li>
+            <b>Sortir la timeline catégorie par catégorie</b> : l'onglet par
+            défaut dépendrait alors du sujet.
+          </li>
+          <li>
+            <b>Les libellés verticaux et les bandes crème alternées</b> :
+            perturbants.
+          </li>
+          <li><b>La tuile sombre</b> : peu accessible.</li>
+          <li>
+            <b>Afficher le niveau de source</b> : ça classe le griot sous le
+            linguiste.
+          </li>
+          <li>
+            <b>Supprimer le niveau du modèle</b> : une seconde refonte cachée,
+            sans gain pour le lecteur.
+          </li>
+        </ul>
+      </div>
+
+      <h2>Les points faibles qui restent</h2>
+      <div class="card">
+        <ul class="crack">
+          <li>
+            Seulement <b>13 sujets</b> sur environ 1 700 portent une histoire du
+            nom, et les périodes sont du texte libre.
+          </li>
+          <li>
+            <b>1 343 sources sont <code>ai_generated</code></b
+            >. C'est le vrai chantier d'enrichissement.
+          </li>
+          <li>
+            Les étymologies existantes affirment une seule origine (Cameroun).
+            Il faut les réécrire.
+          </li>
+          <li>
+            <code>doctrine.md</code>, le one-pager et
+            <code>CLAUDE.md</code> contredisent trois décisions : l'affichage
+            des niveaux, les lieux classés « plus tard », et la règle « autonyme
+            en premier ».
+          </li>
+        </ul>
+      </div>
+
+      <h2>Chantiers ouverts, hors de ce forge</h2>
+      <div class="card">
+        <ul class="open">
+          <li>La voix d'écriture : le ton et le rythme des phrases.</li>
+          <li>
+            La vérification des contenus générés par IA (hooks ou CI, et
+            validation par l'équipe).
+          </li>
+          <li>La forme exacte de l'icône qui ouvre les sources.</li>
+          <li>
+            La timeline minimale : vérifier en 430 px qu'elle ne ressemble pas à
+            un vide.
+          </li>
+        </ul>
+      </div>
+
+      <h2>Les voix qui ont éprouvé l'idée</h2>
+      <div class="personas">
+        <div class="p">
+          <b>📊 Mary</b><span class="tag">Analyste BMad</span
+          ><i
+            >« Un onglet par défaut est une promesse faite à chaque requête.
+            »</i
+          >
+        </div>
+        <div class="p">
+          <b>🏛️ Winston</b><span class="tag">Architecte BMad</span
+          ><i
+            >« Le prototype existe déjà. Généralise-le au lieu de réinventer.
+            »</i
+          >
+        </div>
+        <div class="p">
+          <b>🎨 Sally</b><span class="tag">UX BMad</span
+          ><i>« Sur mobile, je tiens deux colonnes, trois au maximum. »</i>
+        </div>
+        <div class="p">
+          <b>🧭 Dana</b><span class="tag">La pragmatique</span
+          ><i>« Enrichis les requêtes qui comptent, sors, puis élargis. »</i>
+        </div>
+        <div class="p">
+          <b>🔍 Level</b><span class="tag">Vérificateur de faits</span
+          ><i
+            >« Pas de source, pas de ligne. Et la doctrine est lue en premier.
+            »</i
+          >
+        </div>
+        <div class="p">
+          <b>💀 Killjoy</b><span class="tag">Celui qui coupe les boucles</span
+          ><i>« Le "ailleurs" fait partie du reste, il est optionnel. »</i>
+        </div>
+        <div class="p">
+          <b>🔀 Splinter</b><span class="tag">Contestataire du consensus</span
+          ><i>« L'ordre d'affichage est déjà un classement. »</i>
+        </div>
+        <div class="p">
+          <b>📖 Storyteller</b><span class="tag">Conteur BMad</span
+          ><i>« Tout dépend de qui est le sujet de la phrase. »</i>
+        </div>
+        <div class="p">
+          <b>🧑🏾‍🏫 Aïssata</b
+          ><span class="tag">Professeure d'histoire, Thiès (voix inventée)</span
+          ><i>« Une frise vide, et je ne reviens pas. »</i>
+        </div>
+        <div class="p">
+          <b>📚 Kofi</b><span class="tag">Historien, Legon (voix inventée)</span
+          ><i>« La longue traîne, c'est votre promesse. »</i>
+        </div>
+        <div class="p">
+          <b>🗣️ Nsimba</b
+          ><span class="tag">Linguiste, Kinshasa (voix inventée)</span
+          ><i>« Le lingala est une fusion. Ne l'efface pas. »</i>
+        </div>
+        <div class="p">
+          <b>🌍 Awa</b
+          ><span class="tag">Étudiante diaspora, Lyon (voix inventée)</span
+          ><i>« J'ai tapé Peul. Montre-moi Peul. »</i>
+        </div>
+        <div class="p">
+          <b>👴🏾 Mamadou</b
+          ><span class="tag">Griot, Kangaba (voix inventée)</span
+          ><i
+            >« Écris "non vérifié" à côté de mon grand-père, et tu as déjà
+            choisi. »</i
+          >
+        </div>
+      </div>
+
+      <footer>
+        Fichiers de la session : <code>forged-idea.md</code> (le brief, pour la
+        planification), <code>.memlog.md</code> (le journal), et les maquettes
+        <code>mockups-timeline-430-v1…v5.html</code>.
+      </footer>
+    </main>
+  </body>
+</html>
