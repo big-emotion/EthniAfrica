@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "ZWE",
-          "sourceRefs": ["corpus-ppl-ndebele-nord-organisation"]
+          "sourceRefs": ["corpus-ppl-ndebele-organisation"]
         }
       ]
     }
@@ -44,16 +44,16 @@
   },
   "peoples": [
     {
-      "peopleId": "PPL_NDEBELE_NORD",
+      "peopleId": "PPL_NDEBELE",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-ndebele-nord-organisation"]
+      "sourceRefs": ["corpus-ppl-ndebele-organisation"]
     }
   ],
   "countries": [
     {
       "countryId": "ZWE",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-ndebele-nord-organisation"]
+      "sourceRefs": ["corpus-ppl-ndebele-organisation"]
     },
     {
       "countryId": "ZAF",
@@ -83,12 +83,12 @@
   "homonyms": [],
   "sources": [
     {
-      "sourceKey": "corpus-ppl-ndebele-nord-organisation",
-      "title": "EthniAfrica — fiche du peuple Ndebele du Nord, organisation clanique",
+      "sourceKey": "corpus-ppl-ndebele-organisation",
+      "title": "EthniAfrica — fiche du peuple Ndebele, organisation clanique",
       "url": null,
       "tier": "unverified",
       "source_kind": "repository",
-      "notes": "Reprise du chapitre « Organisation clanique » de la fiche du peuple Ndebele du Nord."
+      "notes": "Reprise du chapitre « Organisation clanique » de la fiche du peuple Ndebele."
     },
     {
       "sourceKey": "nomina-africana-nguni-naming",

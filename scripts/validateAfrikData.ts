@@ -4409,7 +4409,11 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // 6995 -> 6868 on 2026-10-10: fourteen duplicate fiches (Sotho, Tswana,
   // Zulu, Xhosa, Ashanti, Dagaaba, Kongo, Umbundu, Tonga, Hutu, Swahili,
   // Brong) were folded into their keepers and retired with the keys they lacked.
-  peuple: 6868,
+  // 6868 -> 6733 on 2026-10-11: fifteen more duplicate fiches (Lango, Gurma,
+  // Fula of the forest, Kikongo, two Ndebele, Northern Sotho, Tshokwe, Karanga,
+  // two Yao, two Lomwe, Kirundi Tutsi, Luo) were folded into their keepers and
+  // retired with the keys they lacked.
+  peuple: 6733,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
@@ -4872,7 +4876,9 @@ export function checkCountryFamilyReferences(
  * pair however many of the country's lists name the people. Two-way ratchet:
  * above it a new mismatch appeared; below it the constant must follow.
  */
-export const COUNTRY_PEOPLE_MEMBERSHIP_CEILING = 8;
+// 8 -> 7 on 2026-10-11: GHA listed PPL_GURMA, whose currentCountries omitted
+// Ghana; the fiche was folded into PPL_GOURMANTCHE, which counts Ghana.
+export const COUNTRY_PEOPLE_MEMBERSHIP_CEILING = 7;
 
 export function checkCountryPeopleMembership(
   datasetRoot: string,

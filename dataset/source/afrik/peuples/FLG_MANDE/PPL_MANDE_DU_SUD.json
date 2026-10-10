@@ -117,6 +117,10 @@
         "tier": "unverified",
         "source_kind": "community"
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Un regroupement par la langue, pas un peuple : les Dan, les Gouro, les Wan, les Mano et d'autres peuples de l'ouest de la Côte d'Ivoire et du Liberia, qui ont chacun leur nom.",
+      "followUp": "D'où vient le nom Mandé ?"
+    }
   }
 }

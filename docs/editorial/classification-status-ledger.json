@@ -970,11 +970,6 @@
     "rationale": "La fiche dit la denomination Shona imposee par le colon : appellation coloniale du 19e siecle utilisee par les Britanniques pour regrouper les sous-groupes dialectaux."
   },
   {
-    "id": "PPL_KARANGA_ZIM",
-    "status": "contested",
-    "rationale": "La fiche argue une confusion frequente entre Karanga et Kalanga et une etiquette Shona qui regroupe des peuples distincts, sans nommer d'acteur colonial pour le nom."
-  },
-  {
     "id": "PPL_KARO",
     "status": "contested",
     "rationale": "La fiche dit que « la denomination Kara peut preter a confusion avec d'autres peuples d'Afrique », les variantes venant de transcriptions de voyageurs et ethnologues étrangers."
@@ -1015,11 +1010,6 @@
     "rationale": "« Sous l'apartheid, ces groupes etaient classes comme Coloured, terme rejete », et Baster vient du neerlandais bastaard : categories posees par le colon."
   },
   {
-    "id": "PPL_KIKONGO",
-    "status": "colonial-legacy",
-    "rationale": "La confusion langue/peuple est dite frequente dans la litterature coloniale, et Kongo est la forme abregee utilisee par les explorateurs portugais depuis 1483."
-  },
-  {
     "id": "PPL_KINYARWANDA",
     "status": "contested",
     "rationale": "La fiche conteste une denomination linguistique recouvrant plusieurs identites (Hutu, Tutsi, Twa) et rappelle les controverses sur la nationalite des Banyarwanda en RDC."
@@ -1033,11 +1023,6 @@
     "id": "PPL_KIRUNDI_HUTU",
     "status": "colonial-legacy",
     "rationale": "Le terme fut instrumentalise par la colonisation belge, qui institutionnalisa la distinction Hutu-Tutsi par des cartes d'identite ethniques obligatoires des les annees 1920."
-  },
-  {
-    "id": "PPL_KIRUNDI_TUTSI",
-    "status": "colonial-legacy",
-    "rationale": "La colonisation belge transforma Tutsi en categorie ethnique rigide et hereditaire, definie par le nombre de vaches puis par des criteres physiques."
   },
   {
     "id": "PPL_KISI",
@@ -1273,16 +1258,6 @@
     "id": "PPL_LOMWE",
     "status": "colonial-legacy",
     "rationale": "Le terme Nguru fut utilise par les voisins et par les administrateurs coloniaux portugais et britanniques pour designer les Lomwe, et subsiste dans la litterature ancienne."
-  },
-  {
-    "id": "PPL_LOMWE_MALA",
-    "status": "colonial-legacy",
-    "rationale": "Nguru fut employe par les administrateurs coloniaux britanniques au Nyassaland pour les migrants lomwe ; la fiche le qualifie de terme pejoratif aujourd'hui abandonne."
-  },
-  {
-    "id": "PPL_LOMWE_MOZ",
-    "status": "colonial-legacy",
-    "rationale": "La fiche impute aux Portugais la designation collective Makua/Macua et note que les administrateurs portugais utilisaient Ngulu ou Nguru, variante de la litterature coloniale."
   },
   {
     "id": "PPL_LOZI",
@@ -1605,11 +1580,6 @@
     "rationale": "L'identité Ndebele au Mozambique est « peu documentée dans les sources primaires » et la frontière avec « l'identité Shangaan-Nguni plus large est floue » : un désaccord de délimitation, sans acteur colonial."
   },
   {
-    "id": "PPL_NDEBELE_NORD",
-    "status": "colonial-legacy",
-    "rationale": "« Le terme Matabele fut utilisé par les Britanniques pour désigner les Ndebele du Zimbabwe » : exonyme d'origine coloniale britannique."
-  },
-  {
     "id": "PPL_NDEBELE_SA",
     "status": "contested",
     "rationale": "La fiche argue la confusion avec les Ndebele du Zimbabwe, 'branches distinctes du tronc nguni, separees depuis le XVIe siecle au moins', et non une denomination forgee par un acteur colonial."
@@ -1623,11 +1593,6 @@
     "id": "PPL_NDEBELE_MANALA",
     "status": "colonial-legacy",
     "rationale": "« Northern Transvaal Ndebele fut un terme administratif de l'apartheid » et les Manala furent regroupés dans le bantoustan KwaNdebele ; Ndebele est listé comme « terme européen »."
-  },
-  {
-    "id": "PPL_NDEBELE_ZIM",
-    "status": "colonial-legacy",
-    "rationale": "« Matabele est une déformation afrikaans/anglaise du terme sotho Matebele », que la fiche qualifie de « terme historique anglais et boer »."
   },
   {
     "id": "PPL_NDENGEREKO",
@@ -2010,11 +1975,6 @@
     "rationale": "L'argument explicite est l'ambiguïté d'une catégorie savante : « Southern Sotho est une classification académique anglophone » pour distinguer des Pedi et des Tswana, Basotho restant l'auto-désignation."
   },
   {
-    "id": "PPL_SOTHO_NORD",
-    "status": "colonial-legacy",
-    "rationale": "« Northern Sotho » est listé comme « appellation officielle coloniale », « Transvaal Sotho » comme « ancien terme colonial », et « Basotho ba Lebowa rappelle le homeland de l'apartheid »."
-  },
-  {
     "id": "PPL_SOTHO_TSWANA",
     "status": "reconstructive",
     "rationale": "« La désignation Sotho-Tswana est un artefact académique linguistique », « créé par les linguistes » d'après Guthrie, et « les peuples inclus ne se reconnaissent pas nécessairement comme un groupe unique »."
@@ -2170,11 +2130,6 @@
     "rationale": "Bushmen, d'origine coloniale neerlandaise et britannique, est dit historiquement charge de connotations coloniales et deshumanisantes, la communaute se designant elle-meme comme Tshao."
   },
   {
-    "id": "PPL_TSHOKWE",
-    "status": "colonial-legacy",
-    "rationale": "« La multiplicité des orthographes (Tshokwe, Chokwe, Ciokwe) reflète les héritages coloniaux français, anglais et portugais »."
-  },
-  {
     "id": "PPL_TSHUWA",
     "status": "contested",
     "rationale": "Sesarwa ou Sarwa, nom donne par les Tswana, est juge pejoratif car il implique une subordination aux Tswana, et Basarwa comme Bushmen sont juges reducteurs ou rejetes."
@@ -2298,16 +2253,6 @@
     "id": "PPL_YALUNKA",
     "status": "colonial-legacy",
     "rationale": "« La multiplicite des graphies […] reflete les translitterations differentes des explorateurs et administrateurs coloniaux francais et britanniques »."
-  },
-  {
-    "id": "PPL_YAO_MALAWI",
-    "status": "contested",
-    "rationale": "Le grief porte sur un peuple transfrontalier « avec une identité culturelle qui transcende les frontières coloniales », donc sur la délimitation du groupe, pas sur un nom imposé."
-  },
-  {
-    "id": "PPL_YAO_MOZ",
-    "status": "colonial-legacy",
-    "rationale": "« La politique coloniale portugaise a imposé une évangélisation chrétienne » rejetée par les Yao, et « les Portugais utilisaient les variantes Ajawa ou Achawa »."
   },
   {
     "id": "PPL_YEM",

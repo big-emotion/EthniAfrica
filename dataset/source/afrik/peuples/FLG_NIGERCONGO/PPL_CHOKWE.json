@@ -31,19 +31,30 @@
       "historicalRegion": "Haut-Zambeze, Haut-Kasai, Angola oriental",
       "currentCountries": ["AGO", "COD", "ZMB"]
     },
-    "ethnicities": ["Chokwe"],
+    "ethnicities": [
+      "Chokwe",
+      "Tshokwe d'Angola — surtout dans les provinces de Lunda Norte, Lunda Sul, Moxico, Bié et Malanje",
+      "Tshokwe de RDC — surtout dans les provinces du Kasaï, du Kasaï oriental et du Kwango",
+      "Tshokwe de Zambie (Kioko) — province du Nord-Ouest, près de la frontière angolaise",
+      "Tshokwe de Namibie — très peu nombreux, région du Kavango"
+    ],
     "origins": {
       "ancientOrigins": "Les Chokwe sont issus de l'un des douze clans constitutifs de l'Empire Lunda (XVIIe-XVIIIe siecle, Angola). Leur mythe d'origine est lie a Chibinda Ilunga, chasseur d'origine Luba, fils du roi Luba Kalala Ilunga, qui epousa Lueji, souveraine Lunda : leur union donna naissance aux souverains Mwata Yamvo de l'Empire Lunda et fonda la lignee royale commune des peuples Lunda, Chokwe, Luvale et Luchazi.",
       "formationPeriod": "La differentiation Chokwe au sein du complexe Lunda s'effectue entre le XVIe et le XVIIIe siecle. L'autonomisation definitive resulte d'une serie de disputes civiles, notamment le refus de payer tribut au roi Lunda. En 1900, les Chokwe avaient renverse le royaume Lunda (Mwata Yanvo).",
       "migrationRoutes": [
         "Migrations Lunda vers le sud au XVIe-XVIIe siecle, engendrant les peuples du Haut-Zambeze et du Haut-Kasai",
         "Expansion militaire et commerciale Chokwe au XIXe siecle vers le nord de l'Angola, le Congo et l'ouest de la Zambie",
-        "Mobilite jusqu'au XXe siecle entre l'Angola oriental, le Katanga (RDC) et la Zambie occidentale"
+        "Mobilite jusqu'au XXe siecle entre l'Angola oriental, le Katanga (RDC) et la Zambie occidentale",
+        "Du haut Kasaï, région des ancêtres, vers le nord-est de l'Angola aux XVIIe et XVIIIe siècles",
+        "Départs liés à la guerre civile angolaise (1961-2002) vers Kinshasa (RDC) et les villes zambiennes"
       ],
       "historicalSettlementZones": [
         "Angola oriental (provinces du Moxico, Lunda Norte, Lunda Sul)",
         "Sud-est de la RDC (Kasai, Katanga occidental)",
-        "Nord-ouest de la Zambie"
+        "Nord-ouest de la Zambie",
+        "Kasaï (RDC) : territoires de Kahemba et de Tshikapa",
+        "Province du Nord-Ouest de la Zambie (Chavuma, Mwinilunga)",
+        "Villes : Luanda (Angola), Kinshasa et Lubumbashi (RDC)"
       ],
       "unificationsOrDivisions": "Scission originelle d'avec le complexe Lunda au XVIIe siecle. Expansion maximale au XIXe siecle. Decline des grandes chefferies au XIXe siecle suite a la variole et d'autres epidemies. Division en trois colonies (portugaise, belge, britannique) par la colonisation europeenne, fragmentant les structures politiques.",
       "externalInfluences": "Commerce caravanier avec les Portugais (acces aux armes a feu et aux produits manufactures). Raids esclavagistes arabo-swahilis (Tippu Tip, Hamad bin Muhammad el Murjebi) depuis l'est. Colonisation europeenne a partir de la fin du XIXe siecle, qui mit fin aux arts de cour et appauvrissant les arts rituels.",
@@ -60,7 +71,10 @@
       "mainLanguage": "Chokwe (Kichokwe, Tshokwe, Cokwe)",
       "isoCodes": ["cjk"],
       "dialects": [
-        "Variantes regionales entre Angola, RDC et Zambie ; distinction entre ecole stylistique de Moxico (nuancee, realiste) et ecole de Musamba (schematique, rigide) dans l'art, refletant des varietes regionales"
+        "Variantes regionales entre Angola, RDC et Zambie ; distinction entre ecole stylistique de Moxico (nuancee, realiste) et ecole de Musamba (schematique, rigide) dans l'art, refletant des varietes regionales",
+        "Chokwe d'Angola — forme standard, langue nationale angolaise",
+        "Chokwe de RDC (Kichokwe) — parlé dans les provinces du Kasaï",
+        "Chokwe de Zambie (Kioko) — province du Nord-Ouest"
       ],
       "vehicularRole": "Langue nationale officielle de l'Angola. Lingua franca dans les regions orientales de l'Angola. Langue de communication inter-ethnique dans les regions du Kasai (RDC) et de la province du Nord-Ouest (Zambie). Environ 2,5 millions de locuteurs selon Common Crawl 2024."
     },
@@ -79,7 +93,7 @@
     "demography": {
       "totalPopulation": 4162000,
       "referenceYear": 2025,
-      "source": "Joshua Project 2024, total tous pays (joshuaproject.net/people_groups/11365) : Angola 2 496 000, RDC 1 520 000, Namibie 9 700, Zambie 136 000",
+      "source": "Joshua Project 2024, total tous pays (joshuaproject.net/people_groups/11365) : Angola 2 496 000, RDC 1 520 000, Namibie 9 700, Zambie 136 000 Une estimation antérieure de Joshua Project donnait 3 980 300 personnes : 2 417 000 en Angola, 1 423 000 en RDC, 132 000 en Zambie et 8 300 en Namibie.",
       "distributionByCountry": [
         {
           "country": "AGO",
@@ -133,6 +147,40 @@
         "url": "https://glottolog.org/resource/languoid/id/chok1245",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "The Metropolitan Museum of Art — Mwanangana (lord of the land) playing a sanza, Chokwe artist, 19th century",
+        "url": "https://www.metmuseum.org/art/collection/search/316173",
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Smarthistory — Female (pwo) Mask, Chokwe peoples",
+        "url": "https://smarthistory.org/female-pwo-mask/",
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Khan Academy — Female (pwo) Mask (Chokwe peoples)",
+        "url": "https://www.khanacademy.org/humanities/ap-art-history/africa-apah/central-africa-apah/a/female-pwo-mask-chokwe",
+        "tier": "unverified"
+      },
+      {
+        "title": "CountryStudies.us — Lunda and Chokwe Kingdoms, Angola",
+        "url": "https://countrystudies.us/angola/9.htm",
+        "tier": "referenced",
+        "source_kind": "government"
+      },
+      {
+        "title": "SIL Ethnologue — Chokwe (cjk)",
+        "url": "https://www.ethnologue.com/language/cjk/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Bastin, Marie-Louise — Arts of the Angolan Peoples, I: Chokwe. Museu do Dundo, 1961",
+        "url": null,
+        "tier": "referenced"
       }
     ]
   },

@@ -120,6 +120,25 @@ review:
   rather than on a document the project has read (for Peul, D'Eichtal in 1842
   through Tauxier). The source note says so each time. The operator decides
   whether a reported trace may be a birth.
+- **Wave 3 of the long tail — ruled 2026-10-11, to upgrade.** Kept as
+  written, each to be replaced when a better source is read:
+  - the two Gusii hypotheses (`PPL_KISII`) rest on Jens Finke's site, which
+    cites William R. Ochieng' (1986): read Ochieng' and cite him directly;
+  - the Danakil birth (`PPL_AFAR`) rests on an undated encyclopedia (Gale's
+    _Encyclopedia of World Cultures_), kept as a second-hand trace: replace
+    it with the Arab geographers it reports;
+  - births on an inferred close form or a second-hand bibliography, each
+    said as such on its tile: Wamia/« Omia » (`PPL_ITESO`), Wayao
+    (`PPL_YAO`), Burton's « Watosi » (`PPL_RWANDAIS_TUTSI`,
+    `PPL_TUTSI_BURUNDI`), Bowdich's Gooroosie and Goorooma
+    (`PPL_GOUROUNSI`, `PPL_GOURMANTCHE`);
+  - unofficial archive.org uploads, marked « copie non officielle »: Kuper
+    (`PPL_SWAZI`), Hart (`PPL_RIFAIN`) and Greene (`PPL_ANLO`): replace
+    each with a publisher's or a library's copy.
+
+  The self-names kept on a language or genealogical name are on
+  [the oral verification list](self-names-to-verify-orally.md).
+
 - **What may be a birth — ruled 2026-10-10.** A close form may be a birth
   when the tile says so (« a une forme proche », Coulibaly and Koorabarri). A
   press article (Soudan du Sud, 2011), a form a chronicler gives as the
