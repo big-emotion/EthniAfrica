@@ -9,11 +9,11 @@
       "mainName": "Mofu",
       "selfAppellation": "Mofu / Mofu-Gudur (variante sud) / Mofu-Diamare (variante nord)",
       "exonyms": [
-        "Matakam (ancien exonyme colonial impropre et pejoratif, utilise par l'administration francaise pour designer les peuples montagnards du Mandara ; rejete aujourd'hui)",
+        "Matakam (ancien nom colonial inexact et méprisant, employé par l'administration française pour les peuples des montagnes Mandara et rejeté aujourd'hui)",
         "Muffu / Muffo (premiere orthographe europeenne, carte de Moisel 1912-1913)",
         "Mofu-Sud (synonyme de Mofu-Gudur dans la litterature linguistique)"
       ],
-      "originOfExonyms": "Le terme Matakam est une invention des Peuls (Fulbe) reprise par les administrateurs coloniaux francais pour designer l'ensemble des montagnards du Mandara. Il fut applique indistinctement aux Mafa et aux Mofu. L'ethnonyme Mofu (Muffu) apparait pour la premiere fois sur la carte de Moisel (1912-1913). Le terme designe initialement tous les montagnards au nord de la riviere Tsanaga (Vincent, 1991).",
+      "originOfExonyms": "Les Peuls, ou Fulɓe, auraient créé le nom Matakam. Les administrateurs coloniaux français l'ont repris pour l'ensemble des habitants des montagnes Mandara, sans distinguer les Mafa des Mofu. Mofu, ou Muffu, apparaît pour la première fois sur la carte de Moisel de 1912-1913. Selon Vincent (1991), ce nom désignait d'abord tous les habitants des montagnes au nord de la rivière Tsanaga.",
       "whyProblematic": "Le terme Matakam est rejete car il confondait sous une meme appellation des groupes ethniques distincts (Mafa, Mofu, Mada) et portait une connotation pejorative liee a la domination fulbe et coloniale. Les Mofu eux-memes se divisent en sous-groupes (Mofu-Gudur, Mofu-Diamare) dont les identites distinctes sont importantes.",
       "contemporaryUsage": "Le terme Mofu est aujourd'hui utilise dans les publications scientifiques et administratives camerounaises pour designer les groupes apparentes de la region du Mandara. Les locuteurs se designent selon leur massif d'origine (Gudur, Mokong, Douvangar, Douroum, Meri, Wazang). Le code ISO distingue Mofu-Nord (mfk) et Mofu-Gudur/Sud (mif).",
       "linguisticFamily": "FLG_TCHADIQUE",
@@ -92,17 +92,20 @@
       {
         "title": "mandaras.info — The Mofu Groups",
         "url": "https://www.mandaras.info/MofuGroups.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "community"
       },
       {
         "title": "Sterner, J. & David, N. (2020). Gudur revisited. NDJS 2020.2. University of Calgary",
         "url": "https://www.ucalgary.ca/sukur/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Barreteau, D. (1988). Description du mofu-gudur. Paris : ORSTOM/CNRS",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Gbaya Art's Blog — The Mafa community (bull festival Maray)",
@@ -112,22 +115,26 @@
       {
         "title": "Maura, D. (2022). Socio-Cultural Heritage, Identity and Political Affirmation through Toponyms in Far-North Cameroon. SCIRP",
         "url": "https://www.scirp.org/journal/paperinformation?paperid=119428",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Mofu-Gudur (mif)",
         "url": "https://www.ethnologue.com/language/mif/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Mofu North (mfk)",
         "url": "https://www.ethnologue.com/language/mfk/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Mofu, North in Cameroon",
         "url": "https://joshuaproject.net/people_groups/13760/CM",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

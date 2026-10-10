@@ -26,15 +26,15 @@ const facts: DidYouKnowFact[] = [
 ];
 
 describe("SourcedHighlightBlock", () => {
-  // @req REQ-124
-  it("shows the one fact matching the pivot with its source tier", () => {
+  // A fact is shown without a tier word (doctrine §1.1).
+  // @req REQ-124 REQ-092
+  it("shows the one fact matching the pivot, without its tier", () => {
     render(<SourcedHighlightBlock result={zuluResult} facts={facts} />);
 
-    expect(screen.getByTestId("sourced-highlight-block")).toHaveTextContent(
-      /philologue au milieu du XIXe siècle/
-    );
-    expect(screen.getByTestId("sourced-highlight-tier")).toHaveTextContent(
-      "Source référencée"
+    const block = screen.getByTestId("sourced-highlight-block");
+    expect(block).toHaveTextContent(/philologue au milieu du XIXe siècle/);
+    expect(block).not.toHaveTextContent(
+      /Source (référencée|officielle|non vérifiée)/
     );
   });
 

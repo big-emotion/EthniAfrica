@@ -95,32 +95,38 @@
       {
         "title": "Omniglot — Yaka language and alphabet",
         "url": "https://www.omniglot.com/writing/yaka.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "WALS Online — Language Yaka (ISO yaf)",
         "url": "https://wals.info/languoid/lect/wals_code_yak",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Smarthistory — Headdress Yaka peoples (Metropolitan Museum)",
         "url": "https://smarthistory.org/headdress-yaka/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Metropolitan Museum of Art — Headdress Ndeemba Yaka",
         "url": "https://www.metmuseum.org/art/collection/search/310954",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Yaka in Congo DRC",
         "url": "https://joshuaproject.net/people_groups/15953/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Yaka H.31",
         "url": "https://www.ethnologue.com/subgroup/3342/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ShareOK — Yaka Mbaala Masks During and After Colonization",
@@ -130,22 +136,26 @@
       {
         "title": "Glottolog — Yaka (yaka1269)",
         "url": "https://glottolog.org/resource/languoid/id/yaka1269",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNFPA — DRC Population 2025",
         "url": "https://www.unfpa.org/data/world-population/CD",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook — Congo DRC",
         "url": "https://www.cia.gov/the-world-factbook/countries/congo-democratic-republic-of-the/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Angola",
         "url": "https://www.cia.gov/the-world-factbook/countries/angola/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

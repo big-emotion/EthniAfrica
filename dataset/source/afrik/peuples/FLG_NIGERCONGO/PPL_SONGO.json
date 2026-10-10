@@ -73,32 +73,38 @@
       {
         "title": "Bantu Questionnaire Songo – University of Missouri, 2011",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Songo.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project – Songo, Nsongo in Angola",
         "url": "https://joshuaproject.net/people_groups/19052",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Swordshare Map – Songo NSX",
         "url": "https://map.swordshare.com/nsx",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "GhanaWeb – Songo, the African tribe where children are raised by their uncles",
         "url": "https://www.ghanaweb.com/GhanaHomePage/africa/Songo-the-African-tribe-where-children-are-raised-by-their-uncles-1757216",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "ISO 639-3 – code nsx: Nsongo",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "ScriptSource – Language Songo NSX",
         "url": "https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=nsx",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

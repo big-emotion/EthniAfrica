@@ -13,7 +13,7 @@
         "Chidigo (pour la langue)",
         "Nyika (terme pejoratif ancien)"
       ],
-      "originOfExonyms": "Wadigo est la forme swahilie du nom du peuple. Le terme Nyika (signifiant \"gens de la brousse\") etait utilise de maniere pejorative par les etrangers pour designer les Digo et autres peuples Mijikenda, faisant reference aux terres arbustives et seches de l'arriere-pays cotier. Ce terme est aujourd'hui rejete par le peuple lui-meme.",
+      "originOfExonyms": "Wadigo est la forme swahilie du nom du peuple. Le terme Nyika (qui voudrait dire \"gens de la brousse\") etait utilise de maniere pejorative par les etrangers pour designer les Digo et autres peuples Mijikenda, faisant reference aux terres arbustives et seches de l'arriere-pays cotier. Ce terme est aujourd'hui rejete par le peuple lui-meme.",
       "whyProblematic": "Le terme Nyika est considere comme offensant et devalorisant, car il associe le peuple a un environnement marginal et sauvage. Les Digo preferent leur autodesignation ou l'appartenance au groupe Mijikenda.",
       "contemporaryUsage": "Le nom Digo est universellement utilise au Kenya et en Tanzanie. Les Digo se definissent egalement comme membres du groupe Mijikenda. Au Kenya, ils sont souvent designes Digo ou Mijikenda Digo.",
       "linguisticFamily": "FLG_BANTU",
@@ -84,32 +84,38 @@
       {
         "title": "Mijikenda, Digo in Kenya – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/11557/KE",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Mijikenda, Digo in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/11557/tz",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Digo people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/digo.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Digo of Kenya and Tanzania – Pray Africa",
         "url": "https://prayafrica.org/project/digo-kenya-tanzania/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Digo people of Kenya and Tanzania – Qiraat Africa",
         "url": "https://qiraatafrican.com/en/17360/the-digo-people-of-kenya-and-tanzania/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Islamization and ethnic primacy in Digo oral traditions – JSTOR",
         "url": "https://www.jstor.org/stable/42005282",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

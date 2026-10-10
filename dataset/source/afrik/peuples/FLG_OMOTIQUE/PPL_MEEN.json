@@ -18,7 +18,7 @@
         "Tishena (terme amhara à éviter)",
         "Bodi (pour le sous-groupe pasteur)"
       ],
-      "originOfExonyms": "Le terme Tishena (ou Tishana, Teshina) est un nom donné par les colons amhara : il signifie bonjour en me'en et était utilisé pour désigner les populations de hautes terres. SIL International recommande d'éviter ce terme. Le terme Bodi désigne spécifiquement le sous-groupe pasteur des basses terres. Mekan est la variante orthographique officielle dans certains contextes éthiopiens. Me'en signifie littéralement « personnes » ou « êtres humains » dans la langue.",
+      "originOfExonyms": "Le terme Tishena (ou Tishana, Teshina) est un nom donné par les colons amhara : il voudrait dire bonjour en me'en et était utilisé pour désigner les populations de hautes terres. SIL International recommande d'éviter ce terme. Le terme Bodi désigne spécifiquement le sous-groupe pasteur des basses terres. Mekan est la variante orthographique officielle dans certains contextes éthiopiens. Me'en signifierait littéralement « personnes » ou « êtres humains » dans la langue.",
       "whyProblematic": "Les Me'en ne sont PAS un peuple omotique : leur langue appartient à la branche surmique (Surmic) de la famille nilo-saharienne, et non à la famille afro-asiatique. Les Me'en font partie du groupe Surma (avec les Suri et les Mursi), désignation utilisée par l'administration éthiopienne pour ces trois peuples surmiques. Leur rangement dans la famille omotique est une erreur de catégorisation héritée.",
       "contemporaryUsage": "Le terme Me'en est le nom endonymique et est utilisé dans la littérature académique (Abbink, SIL International). Le terme Mekan est courant dans les textes administratifs éthiopiens. Le sous-groupe Bodi est parfois traité comme un peuple distinct dans la littérature touristique.",
       "linguisticFamily": "FLG_OMOTIQUE",
@@ -100,17 +100,20 @@
       {
         "title": "Glottolog — Me'en, glottocode meen1242, ISO 639-3: mym",
         "url": "https://glottolog.org/resource/languoid/id/meen1242",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Jenkins, Orville. Meen People Profile",
         "url": "http://orvillejenkins.com/profiles/meen.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Abbink, Jon G. An Ethno-Historical Perspective on Me'en Territorial Organization (Southwest Ethiopia). Anthropos, 87(4/6), 1992",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Brilliant Ethiopia — Omo Valley Tribes (Bodi/Me'en section)",
@@ -120,7 +123,8 @@
       {
         "title": "Recensement éthiopien 2007 — Me'en : 151 489 individus (Nilo-Sahariens)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

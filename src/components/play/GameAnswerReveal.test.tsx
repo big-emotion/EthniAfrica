@@ -144,7 +144,7 @@ describe("GameAnswerReveal (Jouer hub engine, REQ-120)", () => {
 
     const provenance = screen.getByTestId("game-reveal-provenance");
     expect(provenance).toHaveTextContent(
-      "D'après l'origine des exonymes, telle que la fiche la donne."
+      "D'après l’explication de la fiche sur les noms donnés par d’autres."
     );
     expect(provenance).not.toHaveTextContent("content.appellations");
     expect(container.querySelector("code")).toBeNull();
@@ -225,31 +225,17 @@ describe("GameAnswerReveal (Jouer hub engine, REQ-120)", () => {
   });
 
   /**
-   * A round resting on a weak source is played and visibly marked, exactly as
-   * a fiche is. Nothing is withheld for its standing; the standing is stated.
+   * The reader is told which source a claim rests on, never how far to trust
+   * it (doctrine §1.1): the tier stays behind moderation.
    */
-  // @req REQ-120
-  it("names the standing of every source the claim rests on", () => {
-    render(
-      <GameAnswerReveal
-        round={ROUND}
-        isCorrect
-        isLastRound={false}
-        onNext={vi.fn()}
-      />
-    );
-
-    expect(screen.getByText("Ethnologue")).toBeInTheDocument();
-    expect(screen.getByText("Non vérifiée")).toBeInTheDocument();
-  });
-
-  // @req REQ-120
-  it("says a legacy source is awaiting review rather than calling it unverified", () => {
-    const legacySourced: BinaryRound = {
+  // @req REQ-092
+  it("names every source the claim rests on, without its tier", () => {
+    const mixed: BinaryRound = {
       ...ROUND,
       reveal: {
         ...ROUND.reveal,
         sources: [
+          ...ROUND.reveal.sources,
           { label: "Une source ancienne", url: null, standing: "needs_review" },
         ],
       },
@@ -257,17 +243,47 @@ describe("GameAnswerReveal (Jouer hub engine, REQ-120)", () => {
 
     render(
       <GameAnswerReveal
-        round={legacySourced}
+        round={mixed}
         isCorrect
         isLastRound={false}
         onNext={vi.fn()}
       />
     );
 
-    // Folding an unlabelled source onto "Non vérifiée" would state a judgement
-    // nobody has made.
-    expect(screen.getByText("En attente d'examen")).toBeInTheDocument();
-    expect(screen.queryByText("Non vérifiée")).not.toBeInTheDocument();
+    expect(screen.getByText("Ethnologue")).toBeInTheDocument();
+    expect(screen.getByText("Une source ancienne")).toBeInTheDocument();
+    expect(screen.getByTestId("game-reveal-provenance")).not.toHaveTextContent(
+      /Non vérifiée|En attente d'examen|Référencée|Officielle/
+    );
+  });
+
+  // @req REQ-194
+  it("names the type of a source that records one, and still no tier word", () => {
+    const typed: BinaryRound = {
+      ...ROUND,
+      reveal: {
+        ...ROUND.reveal,
+        sources: [
+          { ...ROUND.reveal.sources[0], kind: "academic" },
+          { label: "Une source ancienne", url: null, standing: "needs_review" },
+        ],
+      },
+    };
+
+    render(
+      <GameAnswerReveal
+        round={typed}
+        isCorrect
+        isLastRound={false}
+        onNext={vi.fn()}
+      />
+    );
+
+    const provenance = screen.getByTestId("game-reveal-provenance");
+    expect(provenance).toHaveTextContent("Publication académique");
+    expect(provenance).not.toHaveTextContent(
+      /Type non précisé|Non vérifiée|En attente d'examen|Référencée|Officielle/
+    );
   });
 
   // @req REQ-120
@@ -304,8 +320,8 @@ describe("GameAnswerReveal (Jouer hub engine, REQ-120)", () => {
     );
 
     // An invented percentage would be worse than none: the source line still
-    // carries the standing, which is the claim that matters.
+    // names what the claim rests on.
     expect(screen.queryByText(/%/)).not.toBeInTheDocument();
-    expect(screen.getByText("Non vérifiée")).toBeInTheDocument();
+    expect(screen.getByText("Ethnologue")).toBeInTheDocument();
   });
 });

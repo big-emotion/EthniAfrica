@@ -6,6 +6,776 @@
   "summary": "La Côte d'Ivoire porte le nom d'une marchandise : des navigateurs et des marchands européens ont désigné ce littoral par ce qu'on y achetait, et l'administration française a fixé l'appellation à la fin du XIXe siècle. Le pays réunit royaumes akan, peuples krou, mandé et voltaïques, soit une soixantaine de groupes. Le baoulé, l'agni et le dioula structurent le quotidien à côté du français.",
   "etymology": "Le nom Côte d'Ivoire renvoie au commerce de l'ivoire pratiqué le long du littoral. Des navigateurs portugais passent le cap des Palmes en 1471, mais l'appellation qui a donné le nom actuel est néerlandaise : au début du XVIIe siècle, des marchands hollandais trouvent l'ivoire en abondance entre le cap des Palmes et Fresco et nomment ce littoral Tand Kust, la côte des dents. Alfred Schwartz, qui a étudié cette période, attribue à cette appellation l'origine du nom actuel. Les Français le fixent ensuite. Le décret du 17 décembre 1891 range l'ensemble des possessions françaises de la côte sous le nom de Guinée française et dépendances ; ce n'est pas lui qui crée la colonie de Côte d'Ivoire. C'est le décret du 10 mars 1893 qui la constitue en colonie distincte, aux côtés de la Guinée française et du Bénin. Avant cela, les établissements français de cette côte avaient été organisés en 1889 sous le nom d'Établissements français de la Côte d'Or, nom pris à la côte voisine (l'actuel Ghana). Les traités signés à partir de 1842 par Bouët-Willaumez ouvrent des comptoirs à Grand-Bassam et à Assinie ; ils ne nomment pas le pays. Les établissements de la Côte d'Or auraient reçu le nom de Côte d'Ivoire dès 1891, pour éviter la confusion avec la colonie britannique voisine, selon un inventaire des Archives nationales d'outre-mer ; les textes que nous avons pu lire ne permettent pas de trancher entre 1891 et 1893 pour la première désignation administrative.",
   "nameOriginActor": "Le nom a été donné depuis la mer, par des marchands et des navigateurs européens, en référence à ce qu'on achetait sur ce littoral. L'appellation néerlandaise Tand Kust, la côte des dents, employée au début du XVIIe siècle, est celle dont procède le nom actuel. L'administration française l'a ensuite fixé par décret, à la fin du XIXe siècle. Depuis 1985, la Côte d'Ivoire demande que son nom ne soit plus traduit dans les autres langues.",
+  "nameHistory": {
+    "summary": "Le nom Côte d'Ivoire désigne un pays d'Afrique de l'Ouest, la République de Côte d'Ivoire, qui se nomme ainsi elle-même et demande depuis 1985 que ce nom ne soit pas traduit. Il a d'abord désigné une portion de littoral, que des écrits européens appellent aussi Côte des Dents, Costa de Malagens ou Côte de Quaqua ; avant 1891, les comptoirs français de cette côte s'appelaient Établissements français de la Côte d'Or. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Côte d'Ivoire",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Un nom de littoral tiré du commerce de l'ivoire, écrit dès 1670, devenu celui de la colonie puis de l'État.",
+        "periodLabel": "Écrit dès 1670 ; nom d'une colonie distincte en 1893 et de l'État depuis 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": null,
+              "label": "Depuis octobre 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Côte d'Ivoire est le nom propre du pays et ne doit plus être traduit : c'est la décision du congrès du Parti démocratique de Côte d'Ivoire réuni à Abidjan en octobre 1985. Le représentant du pays à l'ONU demande qu'elle s'applique à partir du 1er janvier 1986, selon une note verbale publiée par l'ONU.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Note verbale du Représentant permanent de la Côte d'Ivoire au Secrétaire général de l'ONU, 6 novembre 1985 (A/40/860)",
+                "author": "Représentant permanent de la Côte d'Ivoire auprès de l'ONU",
+                "year": 1985,
+                "url": "https://documents.un.org/api/symbol/access?s=A/40/860&l=en&t=pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Document de l'Assemblée générale de l'ONU du 7 novembre 1985, lu dans sa version anglaise (original en français). Il rapporte la décision du huitième congrès du Parti démocratique de Côte d'Ivoire, tenu à Abidjan en octobre 1985."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "7 août 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Côte d'Ivoire reste celui du pays à l'indépendance, proclamée le 7 août 1960, selon la Digithèque de l'université de Perpignan.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Côte d'Ivoire, colonie française",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ci1842.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie juridique de la colonie : traités de 1842, établissements de la Côte d'Or organisés par le décret du 1er août 1889, décret du 10 mars 1893 et Binger premier gouverneur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1893,
+              "to": 1893,
+              "label": "10 mars 1893"
+            },
+            "era": "colonial",
+            "statement": "Le nom Côte d'Ivoire devient celui d'une colonie distincte par le décret du 10 mars 1893, qui organise côte à côte la Guinée française, la Côte d'Ivoire et le Bénin, selon la Digithèque de l'université de Perpignan et les Archives nationales d'outre-mer.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Côte d'Ivoire, colonie française",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ci1842.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie juridique de la colonie : traités de 1842, établissements de la Côte d'Or organisés par le décret du 1er août 1889, décret du 10 mars 1893 et Binger premier gouverneur."
+              },
+              {
+                "title": "Archives nationales d'outre-mer — Décrets du 17 décembre 1891 et du 10 mars 1893",
+                "author": "Archives nationales d'outre-mer",
+                "year": null,
+                "url": "https://recherche-anom.culture.gouv.fr/ark:/61561/qo207ssuw",
+                "tier": "official",
+                "source_kind": "archive",
+                "notes": "Le décret de 1891 réunit les possessions françaises de la côte sous le nom de Guinée française et dépendances ; celui du 10 mars 1893 les répartit en trois colonies distinctes : Guinée française, Côte d'Ivoire, Bénin."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1891,
+              "label": "1891"
+            },
+            "era": "colonial",
+            "statement": "Le nom Côte d'Ivoire remplace en 1891 celui d'Établissements français de la Côte d'Or, pour éviter la confusion avec la Gold Coast anglaise voisine, selon la Digithèque de l'université de Perpignan. Le décret du 17 décembre 1891 range pourtant ces possessions sous le nom de Guinée française et dépendances, selon les Archives nationales d'outre-mer.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Côte d'Ivoire, colonie française",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ci1842.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie juridique de la colonie : traités de 1842, établissements de la Côte d'Or organisés par le décret du 1er août 1889, décret du 10 mars 1893 et Binger premier gouverneur."
+              },
+              {
+                "title": "Archives nationales d'outre-mer — Décrets du 17 décembre 1891 et du 10 mars 1893",
+                "author": "Archives nationales d'outre-mer",
+                "year": null,
+                "url": "https://recherche-anom.culture.gouv.fr/ark:/61561/qo207ssuw",
+                "tier": "official",
+                "source_kind": "archive",
+                "notes": "Le décret de 1891 réunit les possessions françaises de la côte sous le nom de Guinée française et dépendances ; celui du 10 mars 1893 les répartit en trois colonies distinctes : Guinée française, Côte d'Ivoire, Bénin."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1842,
+              "to": 1843,
+              "label": "1842-1843"
+            },
+            "era": "colonial",
+            "statement": "Le nom Côte d'Ivoire ne figure pas dans les traités conclus avec le roi Peter de Grand-Bassam en 1842 et avec les chefs d'Assinie en 1843 : ils parlent du « pays et de la rivière du Grand-Bassam » et du « pays d'Assinie ». Le nom existait déjà pour ce littoral, écrit en anglais dès 1670 dans l'Africa de John Ogilby.",
+            "actors": [
+              {
+                "name": "Édouard Bouët (Bouët-Willaumez)",
+                "role": "officier de marine au nom duquel les deux traités sont conclus"
+              },
+              {
+                "name": "Peter, roi de Grand-Bassam, et les chefs Quachi et Wouacha",
+                "role": "signent le traité de 1842"
+              },
+              {
+                "name": "Aigiri et Atacla, rois d'Assinie",
+                "role": "signent le traité de 1843"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Côte d'Ivoire, colonie française",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ci1842.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie juridique de la colonie : traités de 1842, établissements de la Côte d'Or organisés par le décret du 1er août 1889, décret du 10 mars 1893 et Binger premier gouverneur."
+              },
+              {
+                "title": "Africa: being an accurate description",
+                "author": "John Ogilby",
+                "year": 1670,
+                "url": "https://archive.org/details/bim_early-english-books-1641-1700_africa-being-an-accurat_ogilby-john_1670er-olfert_1670",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 377",
+                "notes": "Adaptation anglaise de la description de l'Afrique d'Olfert Dapper, lue dans l'exemplaire numérisé, pages 377 et 416 vues en image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1670,
+              "to": 1670,
+              "label": "1670"
+            },
+            "era": "polity",
+            "statement": "Le nom Côte d'Ivoire apparaît par écrit, en anglais, dans l'Africa de John Ogilby, adaptée de la description de l'Afrique d'Olfert Dapper : l'« Ivory-Coast » va du village de Gruwa, près du cap des Palmes, au cap Lahou. C'est la plus ancienne trace de ce nom que le projet connaît. Cette côte et ses habitants existaient bien avant ce nom.",
+            "formAsWritten": "Ivory-Coast",
+            "birth": true,
+            "actors": [
+              {
+                "name": "John Ogilby",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Africa: being an accurate description",
+                "author": "John Ogilby",
+                "year": 1670,
+                "url": "https://archive.org/details/bim_early-english-books-1641-1700_africa-being-an-accurat_ogilby-john_1670er-olfert_1670",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 377 et 416",
+                "notes": "Adaptation anglaise de la description de l'Afrique d'Olfert Dapper, lue dans l'exemplaire numérisé, pages 377 et 416 vues en image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1650,
+              "label": "Début du XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Côte d'Ivoire viendrait de Tand Kust, la « côte des dents », sous-entendu d'éléphant : c'est ainsi que les marchands hollandais auraient appelé la côte du cap des Palmes à Fresco, où ils trouvaient l'ivoire en abondance, selon Alfred Schwartz.",
+            "hypothesisGroup": "origine du nom Côte d'Ivoire",
+            "sources": [
+              {
+                "title": "Schwartz, Alfred — Histoire de la Côte des Dents (Sud-Ouest ivoirien), ORSTOM, 1972",
+                "author": "Alfred Schwartz",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/divers2/010027989.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Étude du peuplement du sud-ouest ivoirien. Elle attribue aux marchands hollandais l'appellation Tand Kust, la côte des dents, dont procède le nom du pays."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Côte d'Ivoire désigne aujourd'hui un État. Il a d'abord désigné une portion de littoral, celle où les navires européens achetaient surtout de l'ivoire ; la forme du nom viendrait de celui que lui donnaient des marchands hollandais, selon Alfred Schwartz, dont l'explication est présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Africa: being an accurate description",
+                "author": "John Ogilby",
+                "year": 1670,
+                "url": "https://archive.org/details/bim_early-english-books-1641-1700_africa-being-an-accurat_ogilby-john_1670er-olfert_1670",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 416",
+                "notes": "Adaptation anglaise de la description de l'Afrique d'Olfert Dapper, lue dans l'exemplaire numérisé, pages 377 et 416 vues en image."
+              },
+              {
+                "title": "Schwartz, Alfred — Histoire de la Côte des Dents (Sud-Ouest ivoirien), ORSTOM, 1972",
+                "author": "Alfred Schwartz",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/divers2/010027989.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Étude du peuplement du sud-ouest ivoirien. Elle attribue aux marchands hollandais l'appellation Tand Kust, la côte des dents, dont procède le nom du pays."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1668,
+              "to": 1668,
+              "label": "1668"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Côte d'Ivoire, on parle de Tantkust, la côte de la dent d'éléphant, pour désigner le littoral qui va du village de Gruwa, près du cap des Palmes, au cap Lahou, selon Olfert Dapper.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 381",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lue dans l'exemplaire numérisé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1476,
+              "to": 1506,
+              "label": "Fin du XVe siècle"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Côte d'Ivoire, les navigateurs portugais parlent de Costa de Malagens, la « côte des mauvaises gens », pour désigner la côte de part et d'autre du cap des Palmes, selon Alfred Schwartz.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Schwartz, Alfred — Histoire de la Côte des Dents (Sud-Ouest ivoirien), ORSTOM, 1972",
+                "author": "Alfred Schwartz",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/divers2/010027989.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11-12 et repères chronologiques",
+                "notes": "Étude du peuplement du sud-ouest ivoirien. Elle attribue aux marchands hollandais l'appellation Tand Kust, la côte des dents, dont procède le nom du pays."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Côte des Dents",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "nld",
+        "namedBy": null,
+        "periodLabel": "XVIIe et XVIIIe siècles",
+        "accounts": [
+          {
+            "period": {
+              "from": 1704,
+              "to": 1704,
+              "label": "1704"
+            },
+            "era": "polity",
+            "statement": "Le nom Côte des Dents est écrit « Tand-Kust » par Willem Bosman dans le titre de son livre sur la Guinée, à côté de la Côte de l'Or et de la Côte des Esclaves. La traduction anglaise du même livre rend ce nom par « Ivory Coasts ».",
+            "formAsWritten": "Tand-Kust",
+            "actors": [
+              {
+                "name": "Willem Bosman",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Nauwkeurige beschryving van de Guinese Goud- Tand- en Slave-kust",
+                "author": "Willem Bosman",
+                "year": 1704,
+                "url": "https://archive.org/details/nauwkeurigebesch00bosm",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Publié à Utrecht par Anthony Schouten, lu dans l'exemplaire numérisé du Getty Research Institute. La vingt-deuxième lettre, sur la Côte des Dents et la Côte des Graines, est de Jan Snoek et datée du 2 janvier 1702."
+              },
+              {
+                "title": "A new and accurate description of the coast of Guinea, divided into the Gold, the Slave, and the Ivory coasts",
+                "author": "Willem Bosman",
+                "year": 1907,
+                "url": "https://archive.org/details/newaccuratedescr00bosm",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Traduction anglaise du livre de Bosman, dans une réimpression de 1907, lue dans l'exemplaire numérisé. La vingt-deuxième lettre est signée John Snoek."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1670,
+              "to": 1670,
+              "label": "1670"
+            },
+            "era": "polity",
+            "statement": "Le nom Côte des Dents est écrit « Tooth-Coast » par John Ogilby, qui l'explique ainsi : on n'y trouve presque pas d'autre marchandise que des dents d'éléphant.",
+            "formAsWritten": "Tooth-Coast",
+            "aspect": "meaning",
+            "actors": [
+              {
+                "name": "John Ogilby",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Africa: being an accurate description",
+                "author": "John Ogilby",
+                "year": 1670,
+                "url": "https://archive.org/details/bim_early-english-books-1641-1700_africa-being-an-accurat_ogilby-john_1670er-olfert_1670",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 416",
+                "notes": "Adaptation anglaise de la description de l'Afrique d'Olfert Dapper, lue dans l'exemplaire numérisé, pages 377 et 416 vues en image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1668,
+              "to": 1668,
+              "label": "1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Côte des Dents apparaît par écrit chez Olfert Dapper, sous la forme « d'Olifants-tant, of by verkorting de Tantkust », la côte de la dent d'éléphant ou, en plus court, la Tantkust. C'est la plus ancienne trace de ce nom que le projet connaît. Le littoral qu'il désigne, du village de Gruwa au cap Lahou, était habité bien avant lui.",
+            "formAsWritten": "Tantkust",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Olfert Dapper",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 381",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lue dans l'exemplaire numérisé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1650,
+              "label": "Début du XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Côte des Dents viendrait des marchands hollandais, qui auraient appelé Tand Kust la côte du cap des Palmes à Fresco pour l'ivoire qu'ils y trouvaient en abondance, selon Alfred Schwartz.",
+            "hypothesisGroup": "origine du nom Côte des Dents",
+            "sources": [
+              {
+                "title": "Schwartz, Alfred — Histoire de la Côte des Dents (Sud-Ouest ivoirien), ORSTOM, 1972",
+                "author": "Alfred Schwartz",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/divers2/010027989.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Étude du peuplement du sud-ouest ivoirien. Elle attribue aux marchands hollandais l'appellation Tand Kust, la côte des dents, dont procède le nom du pays."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Costa de Malagens",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "periodLabel": "Fin du XVe siècle à la fin du XVIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1670,
+              "to": 1670,
+              "label": "1670"
+            },
+            "era": "polity",
+            "statement": "Le nom Costa de Malagens est écrit « Mala Gens » par John Ogilby, qui le traduit par « Bad People, that is, Villanous », les mauvaises gens.",
+            "formAsWritten": "Mala Gens",
+            "actors": [
+              {
+                "name": "John Ogilby",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Africa: being an accurate description",
+                "author": "John Ogilby",
+                "year": 1670,
+                "url": "https://archive.org/details/bim_early-english-books-1641-1700_africa-being-an-accurat_ogilby-john_1670er-olfert_1670",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 377 et 416",
+                "notes": "Adaptation anglaise de la description de l'Afrique d'Olfert Dapper, lue dans l'exemplaire numérisé, pages 377 et 416 vues en image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1668,
+              "to": 1668,
+              "label": "1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Costa de Malagens est écrit « kust van Mala gens » par Olfert Dapper, qui le traduit par « het quade volk », les mauvaises gens, et le donne comme un autre nom de la Tantkust.",
+            "formAsWritten": "kust van Mala gens",
+            "actors": [
+              {
+                "name": "Olfert Dapper",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 381",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lue dans l'exemplaire numérisé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1506,
+              "to": 1506,
+              "label": "Vers 1506"
+            },
+            "era": "polity",
+            "statement": "Le nom Costa de Malagens figure dans l'Esmeraldo de situ orbis, le routier du capitaine portugais Duarte Pacheco Pereira, qui en raconte l'origine, selon Alfred Schwartz. C'est la plus ancienne trace de ce nom que le projet connaît. Les habitants de cette côte y vivaient bien avant ce nom venu de la mer.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Duarte Pacheco Pereira",
+                "role": "capitaine portugais, auteur d'une description de la côte"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Schwartz, Alfred — Histoire de la Côte des Dents (Sud-Ouest ivoirien), ORSTOM, 1972",
+                "author": "Alfred Schwartz",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/divers2/010027989.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11 et repères chronologiques",
+                "notes": "Étude du peuplement du sud-ouest ivoirien. Elle attribue aux marchands hollandais l'appellation Tand Kust, la côte des dents, dont procède le nom du pays."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1475,
+              "to": 1476,
+              "label": "1475-1476"
+            },
+            "era": "polity",
+            "statement": "Le nom Costa de Malagens viendrait du naufrage d'un navire flamand à l'ouest du cap des Palmes en 1475 : l'équipage aurait été massacré, et les Portugais l'auraient appris l'année suivante, selon le récit de Pacheco Pereira. Alfred Schwartz, qui le rapporte, ne tranche pas s'il est vrai.",
+            "hypothesisGroup": "origine du nom Costa de Malagens",
+            "sources": [
+              {
+                "title": "Schwartz, Alfred — Histoire de la Côte des Dents (Sud-Ouest ivoirien), ORSTOM, 1972",
+                "author": "Alfred Schwartz",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/divers2/010027989.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11-12 et repères chronologiques",
+                "notes": "Étude du peuplement du sud-ouest ivoirien. Elle attribue aux marchands hollandais l'appellation Tand Kust, la côte des dents, dont procède le nom du pays."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Du XVe au XXe siècle"
+            },
+            "statement": "Le nom Costa de Malagens est un nom venu de l'extérieur, employé par les navigateurs portugais. La réputation qu'il attache aux habitants de la côte krou les a poursuivis pendant près de cinq siècles, selon Alfred Schwartz.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Schwartz, Alfred — Histoire de la Côte des Dents (Sud-Ouest ivoirien), ORSTOM, 1972",
+                "author": "Alfred Schwartz",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/divers2/010027989.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Étude du peuplement du sud-ouest ivoirien. Elle attribue aux marchands hollandais l'appellation Tand Kust, la côte des dents, dont procède le nom du pays."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Côte de Quaqua",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "XVIIe et XVIIIe siècles",
+        "accounts": [
+          {
+            "period": {
+              "from": 1702,
+              "to": 1702,
+              "label": "Lettre du 2 janvier 1702"
+            },
+            "era": "polity",
+            "statement": "Le nom Côte de Quaqua n'est pas celui que se donnent les habitants : ils appellent leur pays Adouw et se nomment eux-mêmes Adouwse, écrit Jan Snoek. Lui et ses compagnons les appellent Quaquase, d'après leurs cartes.",
+            "actors": [
+              {
+                "name": "Jan Snoek",
+                "role": "auteur d'une lettre publiée par Willem Bosman"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Nauwkeurige beschryving van de Guinese Goud- Tand- en Slave-kust",
+                "author": "Willem Bosman",
+                "year": 1704,
+                "url": "https://archive.org/details/nauwkeurigebesch00bosm",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 278",
+                "notes": "Publié à Utrecht par Anthony Schouten, lu dans l'exemplaire numérisé du Getty Research Institute. La vingt-deuxième lettre, sur la Côte des Dents et la Côte des Graines, est de Jan Snoek et datée du 2 janvier 1702."
+              },
+              {
+                "title": "A new and accurate description of the coast of Guinea, divided into the Gold, the Slave, and the Ivory coasts",
+                "author": "Willem Bosman",
+                "year": 1907,
+                "url": "https://archive.org/details/newaccuratedescr00bosm",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 491",
+                "notes": "Traduction anglaise du livre de Bosman, dans une réimpression de 1907, lue dans l'exemplaire numérisé. La vingt-deuxième lettre est signée John Snoek."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1668,
+              "to": 1668,
+              "label": "1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Côte de Quaqua est écrit « Quaqua-kust » par Olfert Dapper, parmi les côtes qui composent la Guinée ; elle commence au cap Lahou. C'est la plus ancienne trace de ce nom que le projet connaît. Cette côte et ses habitants existaient avant ce nom.",
+            "formAsWritten": "Quaqua-kust",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Olfert Dapper",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 381",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lue dans l'exemplaire numérisé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Quaqua viendrait du cri « quaqua » que lancent les habitants pour saluer les navires quand ils s'en approchent dans leurs embarcations, selon Olfert Dapper et John Ogilby.",
+            "hypothesisGroup": "origine du nom Quaqua",
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 381",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lue dans l'exemplaire numérisé."
+              },
+              {
+                "title": "Africa: being an accurate description",
+                "author": "John Ogilby",
+                "year": 1670,
+                "url": "https://archive.org/details/bim_early-english-books-1641-1700_africa-being-an-accurat_ogilby-john_1670er-olfert_1670",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 377",
+                "notes": "Adaptation anglaise de la description de l'Afrique d'Olfert Dapper, lue dans l'exemplaire numérisé, pages 377 et 416 vues en image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Quaqua viendrait des étoffes de coton qu'on achetait sur cette côte, selon John Ogilby. Chez Olfert Dapper, ces étoffes expliquent plutôt le nom de la côte voisine, celle des Cinq et Six Bandes.",
+            "hypothesisGroup": "origine du nom Quaqua",
+            "sources": [
+              {
+                "title": "Africa: being an accurate description",
+                "author": "John Ogilby",
+                "year": 1670,
+                "url": "https://archive.org/details/bim_early-english-books-1641-1700_africa-being-an-accurat_ogilby-john_1670er-olfert_1670",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 377",
+                "notes": "Adaptation anglaise de la description de l'Afrique d'Olfert Dapper, lue dans l'exemplaire numérisé, pages 377 et 416 vues en image."
+              },
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 381",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lue dans l'exemplaire numérisé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Quaqua viendrait de ce que certains comparaient la langue des habitants au cri des canards, selon Jan Snoek, qui rapporte cette explication sans la retenir : il n'a pas entendu de différence marquée avec les langues voisines.",
+            "hypothesisGroup": "origine du nom Quaqua",
+            "sources": [
+              {
+                "title": "Nauwkeurige beschryving van de Guinese Goud- Tand- en Slave-kust",
+                "author": "Willem Bosman",
+                "year": 1704,
+                "url": "https://archive.org/details/nauwkeurigebesch00bosm",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 278",
+                "notes": "Publié à Utrecht par Anthony Schouten, lu dans l'exemplaire numérisé du Getty Research Institute. La vingt-deuxième lettre, sur la Côte des Dents et la Côte des Graines, est de Jan Snoek et datée du 2 janvier 1702."
+              },
+              {
+                "title": "A new and accurate description of the coast of Guinea, divided into the Gold, the Slave, and the Ivory coasts",
+                "author": "Willem Bosman",
+                "year": 1907,
+                "url": "https://archive.org/details/newaccuratedescr00bosm",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 491",
+                "notes": "Traduction anglaise du livre de Bosman, dans une réimpression de 1907, lue dans l'exemplaire numérisé. La vingt-deuxième lettre est signée John Snoek."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Établissements français de la Côte d'Or",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "periodLabel": "De 1843 à 1891",
+        "accounts": [
+          {
+            "period": {
+              "from": 1843,
+              "to": 1891,
+              "label": "De 1843 à 1891"
+            },
+            "era": "colonial",
+            "statement": "Le nom Établissements français de la Côte d'Or désigne les comptoirs français de Grand-Bassam et d'Assinie, nés des traités de 1842 et 1843. Il reprend le nom de la Côte de l'Or voisine, la Gold Coast anglaise qui deviendra le Ghana, selon la Digithèque de l'université de Perpignan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Côte d'Ivoire, colonie française",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ci1842.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie juridique de la colonie : traités de 1842, établissements de la Côte d'Or organisés par le décret du 1er août 1889, décret du 10 mars 1893 et Binger premier gouverneur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "1er août 1889"
+            },
+            "era": "colonial",
+            "statement": "Le nom Établissements français de la Côte d'Or figure dans le décret du 1er août 1889, qui organise ces comptoirs avec les Rivières du Sud et les établissements du golfe du Bénin, selon la Digithèque de l'université de Perpignan.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Côte d'Ivoire, colonie française",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ci1842.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie juridique de la colonie : traités de 1842, établissements de la Côte d'Or organisés par le décret du 1er août 1889, décret du 10 mars 1893 et Binger premier gouverneur."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -142,7 +912,7 @@
           "français"
         ],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Maninka\" ou \"Mandinka\" est l'auto-appellation. \"Malinké\" est l'exonyme français accepté. \"Mandingo\" est un terme historique qui peut avoir une connotation péjorative dans certains contextes et doit être évité. \"Dioula\" est un terme utilisé pour désigner les commerçants mandé et est accepté."
+        "appellationRemarks": "Les personnes concernées se nomment Maninka ou Mandinka. Malinké est un nom français donné de l'extérieur et accepté. Mandingo est un terme historique qui peut être méprisant dans certains contextes ; il est donc à éviter. Dioula, employé pour les commerçants mandé, est aussi accepté."
       },
       {
         "name": "Mandé du Sud",
@@ -162,7 +932,7 @@
           "français"
         ],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Dan\" est l'auto-appellation, \"Yacouba\" est une variante exonyme acceptée. \"Gouro\" et \"Wan\" sont les auto-appellations. Pas de terme péjoratif connu."
+        "appellationRemarks": "Les Dan se nomment ainsi eux-mêmes ; Yacouba est une autre forme, donnée de l'extérieur et acceptée. Gouro et Wan sont également des noms que les peuples concernés emploient pour se présenter. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Krou",
@@ -182,7 +952,7 @@
           "français"
         ],
         "languageFamily": "FLG_KROU",
-        "appellationRemarks": "\"Bété\", \"Wé\" et \"Dida\" sont les auto-appellations. \"Guéré\" est un exonyme utilisé pour Wé et est accepté. Pas de terme péjoratif connu. Les peuples Krou possèdent une tradition artistique très réputée (masques, sculptures)."
+        "appellationRemarks": "Les peuples concernés se nomment Bété, Wé et Dida. Guéré est un nom donné de l'extérieur aux Wé, qui est aussi accepté. Les sources ne signalent pas de sens insultant pour ces noms. Les peuples Krou sont notamment connus pour leurs masques et leurs sculptures."
       },
       {
         "name": "Autres peuples",
@@ -273,17 +1043,20 @@
       {
         "title": "SIL Ethnologue – Languages of Côte d'Ivoire",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Côte d'Ivoire",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Côte d'Ivoire",
         "url": "https://www.unfpa.org/data/world-population/CI",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Memel-Fotê, Harris – \"Le modèle politique ivoirien\"",
@@ -298,7 +1071,8 @@
       {
         "title": "Recensements ivoiriens",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples de la Côte d'Ivoire",
@@ -308,30 +1082,35 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Schwartz, Alfred — Histoire de la Côte des Dents (Sud-Ouest ivoirien), ORSTOM, 1972",
-        "url": null,
+        "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/divers2/010027989.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Étude du peuplement du sud-ouest ivoirien. Elle attribue aux marchands hollandais l'appellation Tand Kust, la côte des dents, dont procède le nom du pays."
       },
       {
         "title": "Archives nationales d'outre-mer — Décrets du 17 décembre 1891 et du 10 mars 1893",
         "url": "https://recherche-anom.culture.gouv.fr/ark:/61561/qo207ssuw",
         "tier": "official",
+        "source_kind": "archive",
         "notes": "Le décret de 1891 réunit les possessions françaises de la côte sous le nom de Guinée française et dépendances ; celui du 10 mars 1893 les répartit en trois colonies distinctes : Guinée française, Côte d'Ivoire, Bénin."
       },
       {
         "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Côte d'Ivoire, colonie française",
         "url": "https://mjp.univ-perp.fr/constit/ci1842.htm",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Chronologie juridique de la colonie : traités de 1842, établissements de la Côte d'Or organisés par le décret du 1er août 1889, décret du 10 mars 1893 et Binger premier gouverneur."
       },
       {
         "title": "Rezo-Ivoire — Port-Bouët, présentation de la commune",
         "url": "https://rezoivoire.net/ivoire/villes-villages/4340/la-presentation-de-port-bouet.html",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Site d'information ivoirien ; il rattache le nom de la commune d'Abidjan à Bouët-Willaumez."
       }
     ],

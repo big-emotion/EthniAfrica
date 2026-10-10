@@ -20,7 +20,7 @@
       ],
       "originOfExonyms": "Wakwere est le nom en swahili (prefixe Wa- pour les personnes). Ngh'wele ou Ngh'were est le nom propre dans leur langue. Kikwere est le nom swahili pour la langue. La forme Kwele est parfois utilisee en anglais.",
       "whyProblematic": null,
-      "contemporaryUsage": "Le nom Kwere est utilise en tanzanien standard et en anglais pour designer ce peuple. Wakwere est la forme swahili. Ngh'wele est l'endonyme. La personnalite la plus connue d'ascendance Kwere est l'ancien president tanzanien Jakaya Kikwete.",
+      "contemporaryUsage": "Kwere est le nom employé en Tanzanie et en anglais pour désigner ce peuple. Wakwere est la forme swahili. Les personnes concernées se nomment Ngh'wele. L'ancien président tanzanien Jakaya Kikwete est la personnalité d'ascendance kwere la plus connue.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Groupe Ruvu, Bantu de la cote nord-est (Northeast Coast Bantu), sous-groupe G.32",
       "historicalRegion": "District de Bagamoyo, Region Pwani (cote), Tanzanie",
@@ -83,12 +83,14 @@
       {
         "title": "Kwere in Tanzania – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/12923",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kwere people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/kwere.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Kwere Tribe – Gateway Africa",
@@ -98,12 +100,14 @@
       {
         "title": "Kwere of Tanzania – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg014972/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kwere Language (CWE) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/cwe/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

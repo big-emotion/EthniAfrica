@@ -8,7 +8,7 @@
       "mainName": "Kumam",
       "selfAppellation": "Kumam (ou Ikokolemu, Akokolemu)",
       "exonyms": ["Kuman", "Kumum", "Akum", "Ikumama"],
-      "originOfExonyms": "Le terme Kumam est a la fois l'endonyme et l'exonyme le plus repandu. Les formes alternatives Kuman et Ikumama sont documentees dans les sources coloniales britanniques. Ikokolemu (ou Akokolemu) est le nom de leur langue selon la denomination interne.",
+      "originOfExonyms": "Kumam est à la fois le nom que le peuple se donne et le plus répandu à l'extérieur. Les sources coloniales britanniques emploient aussi Kuman et Ikumama. Les personnes concernées appellent leur langue Ikokolemu ou Akokolemu.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Kumam est universellement utilise en Ouganda pour designer ce peuple. L'autodesignation Ikokolemu fait reference a leur langue.",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -90,12 +90,14 @@
       {
         "title": "SIL Ethnologue — Kumam language (kdi)",
         "url": "https://www.ethnologue.com/language/kdi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Kumam people",
         "url": "https://www.101lasttribes.com/tribes/kumam.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Kumam Cultural Heritage — Clans",
@@ -105,17 +107,20 @@
       {
         "title": "Orville Jenkins — The Kumam People of Uganda",
         "url": "http://orvillejenkins.com/profiles/kumam.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Kumam, Akokolemu in Uganda",
         "url": "https://joshuaproject.net/people_groups/12842",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Swordshare Map — Kumam language",
         "url": "https://map.swordshare.com/kdi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

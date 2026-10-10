@@ -5,6 +5,7 @@
 import { readdirSync, readFileSync } from "fs";
 import { join } from "path";
 
+import { ficheNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import type {
   LanguageRecord,
   LanguageSource,
@@ -26,6 +27,7 @@ interface LanguageFiche {
   spellingAliases?: string[];
   familyId?: string;
   peoples?: Array<{ name: string; peopleId?: string }>;
+  nameHistory?: unknown;
   content?: {
     vehicularRole?: string | null;
     originDebated?: boolean;
@@ -42,6 +44,7 @@ interface LanguageFiche {
 }
 
 function toLanguageRecord(fiche: LanguageFiche): LanguageRecord {
+  const nameHistory = ficheNameHistory(fiche, fiche.isoCode639_3);
   return {
     id: fiche.isoCode639_3,
     name: fiche.nameFr,
@@ -67,6 +70,7 @@ function toLanguageRecord(fiche: LanguageFiche): LanguageRecord {
     dialects: fiche.content?.dialects ?? [],
     vitalityStatus: fiche.content?.vitalityStatus,
     sources: fiche.content?.sources ?? [],
+    ...(nameHistory ? { nameHistory } : {}),
   };
 }
 

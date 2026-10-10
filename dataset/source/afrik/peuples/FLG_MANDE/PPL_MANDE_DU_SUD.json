@@ -98,7 +98,8 @@
       {
         "title": "L'amenagement linguistique au Liberia – Universite Laval",
         "url": "https://www.axl.cefan.ulaval.ca/afrique/liberia.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Dwyer, David – The Mande languages, in Williamson & Blench (eds.), African Languages: An Introduction, 2000",
@@ -113,7 +114,8 @@
       {
         "title": "Facebook – Ethnies de CI : Les Mande du Sud",
         "url": "https://www.facebook.com/ethniesdeCI/posts/2083382538349935/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

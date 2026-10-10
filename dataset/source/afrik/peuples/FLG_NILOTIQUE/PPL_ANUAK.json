@@ -13,7 +13,7 @@
         "Anyuak",
         "Yambo (terme utilise par certains voisins)"
       ],
-      "originOfExonyms": "Le terme Anuak est un exonyme adopte par les administrateurs coloniaux et les ethnographes europeens. L'endonyme est Anywaa (ou Anyuak), signifiant approximativement 'partager' ou reference a une caracteristique fondatrice du groupe. La langue est appelee Dha-Anywaa.",
+      "originOfExonyms": "Les administrateurs coloniaux et les chercheurs européens ont adopté le nom Anuak, donné au peuple de l'extérieur. Ses membres se nomment Anywaa ou Anyuak. Ce nom signifierait approximativement partager, ou renverrait à une caractéristique fondatrice du groupe. Leur langue est appelée Dha-Anywaa.",
       "whyProblematic": "La variation orthographique (Anuak / Anyuak / Anywaa) reflete les differentes transcriptions coloniales (britannique pour le Soudan du Sud, ethiopienne pour la region de Gambella). La denomination Anuak est aujourd'hui la plus repandue dans les contextes internationaux et humanitaires.",
       "contemporaryUsage": "Le terme Anywaa est utilise par la communaute elle-meme. Anuak est la forme la plus repandue dans les documents officiels, les ONG et les medias internationaux. L'Anuak Justice Council (diaspore nord-americaine) utilise les deux termes.",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -97,12 +97,14 @@
       {
         "title": "Human Rights Watch — Targeting the Anuak: Human Rights Violations and Crimes Against Humanity in Ethiopia's Gambella Region (2005)",
         "url": "https://www.hrw.org/reports/2005/ethiopia0305/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Cultural Survival — The Anuak: A Threatened Culture (2010)",
         "url": "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/anuak-threatened-culture",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Osterlund, David — The Music of the Anuak of Ethiopia (these de doctorat, 1978). In Social and Cultural Characteristics of the Anuak Tribe. University of Northwestern",
@@ -112,7 +114,8 @@
       {
         "title": "SIL Ethnologue — Anuak language (anu)",
         "url": "https://www.ethnologue.com/language/anu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Anuak Justice Council — Documentation des violations des droits humains",
@@ -122,7 +125,8 @@
       {
         "title": "Glottolog — Anuak",
         "url": "https://glottolog.org/resource/languoid/id/anua1241",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -24,7 +24,7 @@ const fr = {
     undeclaredDistribution: "Distribution non déclarée",
     figures: "La famille en chiffres",
     languages: "Langues",
-    speakers: "Locuteurs",
+    speakers: "Personnes qui parlent ces langues",
     branches: "Branches",
     distribution: "Distribution",
     empty: "vide",

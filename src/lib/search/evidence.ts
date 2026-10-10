@@ -1,4 +1,8 @@
-import { isSourceTier, type SourceTier } from "@/types/sources";
+import {
+  isSourceTier,
+  type SourceKind,
+  type SourceTier,
+} from "@/types/sources";
 
 export type SearchSourceStanding = SourceTier | "needs_review";
 
@@ -11,6 +15,8 @@ export interface SearchEvidenceSource {
   page?: string;
   url?: string;
   tier: SearchSourceStanding;
+  /** What kind of work it is; absent when nothing recorded one. */
+  sourceKind?: SourceKind;
   reviewedNarrative?: boolean;
   bibliographyNumber?: number;
   brokenAt?: string | null;

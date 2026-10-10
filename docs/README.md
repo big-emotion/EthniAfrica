@@ -34,18 +34,28 @@ were referenced by nothing at all, two of them written that same week.
 - [Editorial personas](editorial/audience-personas.md)
 - [Editorial classification status](editorial/classification-status.md)
 - [Contribution forms — a draft per fiche category](editorial/contribution-forms-draft-2026-09-22.md)
+- [EthniAfrica doctrine](editorial/doctrine.md)
+- [Peul: three plain-language tones](editorial/examples/peul-tones.md)
 - [Family restoration tracking](editorial/family-restoration/README.md)
-- [The purpose doctrine — the exchange it came from](editorial/purpose-doctrine.md)
+- [Plain-language checks](editorial/plain-language-checks.md)
 - [Reader-facing register](editorial/reader-facing-register.md)
 - [The editorial reorientation — what changes, in what order, what blocks what](editorial/refonte-plan-2026-09-18.md)
 - [Source tier rulings](editorial/source-review/README.md)
-- [Product Brief Distillate: EthniAfrica (Oct–Dec 2026)](editorial/strategy/product-brief-2026-10-distillate.md)
-- [Product Brief: EthniAfrica](editorial/strategy/product-brief-2026-10.md)
+- [Sources écrites par l'IA — lots d'octobre 2026](editorial/source-review/ai-source-batches-2026-10.md)
+- [Colonial periods](editorial/strategy/colonial-periods.md)
+- [Name-history priority core](editorial/strategy/name-history-priority-core.md)
+- [Name-history timeline (decided 2026-10-08)](editorial/strategy/name-history-timeline-2026-10-08.md)
+- [Funding presentation — October 2026](editorial/strategy/presentation-2026-10/README.md)
+- [Self-names to verify through oral sources](editorial/strategy/self-names-to-verify-orally.md)
 - [Interface copy](editorial/ui-copy.md)
 - [Volunteer missions](editorial/volunteers/README.md)
 - [Mission bénévole — Préparation et vérification des fiches](editorial/volunteers/mission-preparation-fiches.md)
 - [Mission bénévole — Recherche pour les publications](editorial/volunteers/mission-recherche-publications.md)
 - [Modèle de fiche à remplir](editorial/volunteers/modele-fiche-a-remplir.md)
+
+## Audience — the dated reports the publishing chain reads
+
+- [Audience audit — 2026-10-08](audience/audit-2026-10-08.md)
 
 ## Runbooks — procedures, and records of ones already run
 

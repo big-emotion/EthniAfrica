@@ -3,6 +3,324 @@
   "nameFr": "Niger-Congo",
   "nameEn": "Niger–Congo",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom niger-congo désigne une très grande famille de langues d'Afrique au sud du Sahara, de l'Afrique de l'Ouest jusqu'au sud du continent, dont le bantou n'est qu'une branche. C'est un nom de savants, proposé en 1949-1950 par le linguiste Joseph Greenberg ; on a aussi dit niger-kordofanien, et avant lui famille négro-africaine ou soudanais occidental. Les sources ne s'accordent pas sur l'unité de cette famille ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Niger-Congo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste américain Joseph Greenberg",
+        "shortLine": "Un nom de savants, proposé en 1949-1950, pour la plus grande famille de langues d'Afrique.",
+        "periodLabel": "Depuis 1949-1950",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom niger-congo n'est pas retenu comme nom de famille par le catalogue de langues Glottolog. Celui-ci range le mandé et le krou dans des familles à part, et réunit la plupart des autres langues de l'ensemble sous le nom Atlantic-Congo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Atlantic-Congo (atla1278)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/atla1278",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue en fait une famille de premier rang, de 1 408 langues, sans la rattacher à un ensemble plus vaste."
+              },
+              {
+                "title": "Glottolog 5.3 — Mande (mand1469)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/mand1469",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue fait du mandé une famille de premier rang, de 75 langues, sans la rattacher à un ensemble plus vaste."
+              },
+              {
+                "title": "Glottolog 5.3 — Kru (krua1234)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/krua1234",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue fait du krou une famille de premier rang, de 38 langues, dont le bété, le grebo, le bassa et le klao, sans la rattacher à un ensemble plus vaste."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom niger-congo désigne, pour Joseph Greenberg, la famille qui couvre presque toute l'Afrique de l'Ouest, une partie du Soudan et, par le bantou, la plus grande partie de l'Afrique centrale, orientale et australe. Il en sépare d'abord le mandé, puis classe les autres langues en cinq branches : ouest-atlantique, gur, kwa, bénoué-congo et adamawa-oriental.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 332-333"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1980,
+              "label": "De 1963 à 1980"
+            },
+            "statement": "Le nom niger-congo n'est pas celui que retient D. Olderogge. Dès 1963, il propose de réunir ces langues et les langues nilo-sahariennes sous le nom de langues zindj, et rapproche ce choix du nom congo-saharien proposé en 1972 par Edgar Gregersen. Il juge aussi trop rapide la méthode de Greenberg, passé de seize familles africaines en 1954 à quatre en 1963.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 317"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1950,
+              "label": "1949-1950"
+            },
+            "statement": "Le nom niger-congo apparaît dans la série d'articles que Joseph Greenberg publie en 1949 et 1950 dans la revue américaine Southwestern Journal of Anthropology, selon le récit qu'il en fait lui-même en 1980. Il y donne ce « nouveau nom » à une famille qui réunit le soudanais occidental de Westermann, le bantou et des langues parlées plus à l'est. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Joseph H. Greenberg",
+                "role": "a proposé le nom dans une série d'articles du Southwestern Journal of Anthropology"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 328-329"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "1927"
+            },
+            "statement": "On parle alors de soudanais occidental pour les langues de l'ouest de l'Afrique que le linguiste allemand Diedrich Westermann réunit dans son étude de 1927. Il y relève des ressemblances avec le bantou, sans affirmer de parenté, selon Joseph Greenberg.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 327"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "statement": "On parle alors de langues soudanaises, chez Diedrich Westermann, pour presque toutes les langues d'Afrique qui ne sont rangées ni dans le sémitique, ni dans le chamitique, ni dans le san, selon Joseph Greenberg.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 326"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1855,
+              "to": 1855,
+              "label": "1855"
+            },
+            "statement": "On parle alors de langues « nègres » pour la plupart des langues du Soudan qui n'entrent ni dans le sémitique, ni dans le chamitique, ni dans le san, ni dans le bantou. Le linguiste Edwin Norris reconnaît en 1855 qu'elles « échappaient à la classification », selon Joseph Greenberg.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 324"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Niger-kordofanien",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste américain Joseph Greenberg",
+        "shortLine": "Le nom de la famille quand Greenberg y ajoute des langues du Kordofan, au Soudan.",
+        "periodLabel": "Depuis 1963",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom niger-kordofanien désigne, chez Joseph Greenberg, une famille à deux branches très inégales : le niger-congo, et des langues de la région du Kordofan, au Soudan, qui ne comptent aucune langue majeure.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 332 et p. 335"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1963,
+              "label": "1963"
+            },
+            "statement": "Le nom niger-kordofanien répond à l'ajout des langues du Kordofan à la famille niger-congo par Joseph Greenberg, dans sa classification de 1963 qui ne compte plus que quatre familles en Afrique. D. Olderogge parle pour sa part de famille congo-kordofanienne.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 317"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Négro-africain",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administrateur colonial et linguiste Maurice Delafosse",
+        "shortLine": "Le nom provisoire que Maurice Delafosse donnait en 1924 à ces langues, en mêlant langue et couleur de peau.",
+        "periodLabel": "Années 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "statement": "Le nom négro-africain est jugé « fort malheureux » par D. Olderogge : le premier terme confond la race et la langue, et le second oublie que toutes les langues parlées en Afrique, afrikaans compris, sont africaines.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 317"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1980,
+              "label": "Proposé en 1924, décrit en 1980"
+            },
+            "statement": "Le nom négro-africain couvre chez Maurice Delafosse toutes les langues qui ne sont ni sémitiques, ni chamitiques, ni khoïsan, selon Joseph Greenberg. Delafosse y distingue seize branches hors du bantou, dont beaucoup sont définies par la géographie plutôt que par la langue.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 327-328"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "Le nom négro-africain est proposé « provisoirement tout au moins » par Maurice Delafosse en 1924 pour l'ensemble des langues parlées par les populations qu'il range dans la « race noire », bantou compris. Il les répartit en dix-sept groupes. Ce classement mêle la langue et l'apparence physique. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "a proposé le nom dans Les langues du monde, en 1924"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Langues du Soudan et de la Guinée, dans Les langues du monde, sous la direction d'A. Meillet et Marcel Cohen",
+                "author": "Maurice Delafosse",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 463-464 et p. 474",
+                "notes": "Paris, Édouard Champion, 1924. Lu dans la numérisation d'Internet Archive. Le texte porte le regard d'un administrateur colonial français et classe les peuples d'après la « race »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Le plus vaste ensemble de langues d'Afrique : environ 1 500 langues, du Sénégal à l'Afrique du Sud. Le linguiste américain Joseph Greenberg a formé son nom dans les années 1949 à 1954.",
@@ -85,12 +403,14 @@
       {
         "title": "Greenberg, Joseph H. (1949) – *\"Studies in African Linguistic Classification: I. Introduction, Niger-Congo Family\"*. *Southwestern Journal of Anthropology*",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Greenberg, Joseph H. (1963 [éd. 2, 1966, 1970]) – *The Languages of Africa*. Bloomington: Indiana University Press / Mouton & Co",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Westermann, Diedrich (1935) – *Charakter und Einteilung der Sudansprachen*. Berlin",
@@ -110,27 +430,32 @@
       {
         "title": "Good, Jeff (2020) – *\"Niger-Congo, with a Special Focus on Benue-Congo\"*, dans *The Oxford Handbook of African Languages*. Oxford University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Hyman, Larry M.; Rolle, Nicholas R.; Sande, Hannah L.; Clem, Emily C.; Jenks, Peter; Lionnet, Florian A. J.; Merrill, John; Baier, Nico (2019) – *\"Niger-Congo linguistic features and typology\"*, dans *The Cambridge Handbook of African Linguistics*. Cambridge University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Heine, Bernd & Nurse, Derek (2000) – *African Languages: An Introduction*. Cambridge University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Busby, George B., et al. (2016) – *\"Admixture into and within sub-Saharan Africa\"*. *eLife* vol.5:e15266",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Tishkoff, Sarah A., et al. (2009) – *\"The Genetic Structure and History of Africans and African Americans\"*. *Science*",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Grollemund, Rebecca, et al. (2016) – *\"Genetic unity\" of Niger-Congo*. Études sur ce qui est reconstruit vs ce qui reste hypothétique",
@@ -145,17 +470,20 @@
       {
         "title": "Britannica Editors – *\"Niger-Congo languages\"*. Encyclopædia Britannica",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ethnologue (SIL International, 2025) – *Niger–Congo*. Fiches linguistiques pour chaque langue, nombre de langues, locuteurs, répartition pays",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO – *Atlas des langues africaines*",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Williamson, Kay & Blench, Roger – *Niger-Congo Overview*",
@@ -165,17 +493,20 @@
       {
         "title": "Nurse, Derek & Philippson, Gérard (2003) – *The Bantu Languages*. Routledge",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Meeussen, A.E. (1967) – *\"Bantu Grammatical Reconstructions\"*. *Africana Linguistica* 3: 79-121",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Schadeberg, Thilo C. (2003) – *\"Historical Linguistics\"*, dans Nurse & Philippson (eds.) *The Bantu Languages*. Routledge",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Bastin, Yvonne, Coupez, André & Mann, Michael (1999) – *Continuity and Divergence in the Bantu Languages: Perspectives from a Lexicostatistic Study*. Tervuren: Musée royal de l'Afrique centrale",
@@ -185,32 +516,38 @@
       {
         "title": "Hyman, Larry M. (2003) – *\"Segmental Phonology\"*, dans Nurse & Philippson (eds.) *The Bantu Languages*. Routledge",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Maho, Jouni Filip (2003) – *\"A Classification of the Bantu Languages: An Update of Guthrie's Referential System\"*, dans Nurse & Philippson (eds.) *The Bantu Languages*. Routledge",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog (2025) – \"Atlantic-Congo\"",
         "url": "https://glottolog.org/resource/languoid/id/atla1278",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Statistics South Africa (2025) – Census 2022 Statistical Release P0301.4, Table 2.8 (isiXhosa home language)",
         "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Agence Nationale de la Statistique et de la Démographie (ANSD), Sénégal (2023) – RGPH-5, Rapport Chapitre 1 : État et structure de la population, Table I-32 (Wolof langue courante)",
         "url": "https://www.ansd.sn/sites/default/files/recensements/rapport/Chapitre-1_ETAT-STRUCTURE-POPULATION-Rapport-def-RGPH-5.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Agence Nationale de la Statistique (ANStat), Côte d'Ivoire (2021) – Recensement Général de la Population et de l'Habitat (RGPH 2021), jeu de données \"Répartition des Ivoiriens par grand groupe ethnique selon le sexe\" (groupe ethnolinguistique total, hors naturalisés et non précisés, classification Bouquet)",
         "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

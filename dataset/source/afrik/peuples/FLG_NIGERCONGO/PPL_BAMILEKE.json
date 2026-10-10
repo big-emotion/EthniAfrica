@@ -9,7 +9,7 @@
       "mainName": "Bamiléké",
       "selfAppellation": "Bamiléké",
       "exonyms": ["Bamileke (orthographe francaise sans accent)", "Bamilekes"],
-      "originOfExonyms": "Le terme Bamiléké est un exonyme administratif introduit par l administration coloniale allemande (Kamerun, a partir de 1884) pour designer collectivement les populations des hauts plateaux de l Ouest. L etymologie est debattue : une interpretation en langue bamiléké signifierait les gens du bas (ba = gens, mi-leke = en bas), en reference a la position des nouveaux arrivaants des plaines du nord. Les Bamileke s auto-designent souvent par le nom de leur fondom d appartenance plutot que par ce terme generaliste.",
+      "originOfExonyms": "À partir de 1884, l'administration coloniale allemande du Kamerun a introduit Bamiléké pour rassembler sous un même nom les populations des hauts plateaux de l'Ouest. Son origine reste discutée. Une explication lui donne le sens de gens du bas dans une langue bamiléké : ba signifierait gens et mi-leke en bas. Elle renverrait à l'arrivée de populations depuis les plaines du nord. Les Bamiléké se présentent souvent par le nom de leur chefferie, appelée fondom, plutôt que par ce nom général.",
       "whyProblematic": "Bamiléké est un terme-parapluie artificiel recouvrant une centaine de royaumes (fondoms) distincts avec leurs propres langues, chefs et histoires. Cette denomination coloniale a efface la diversite interne et a ete instrumentalisee dans les tensions ethniques post-independance au Cameroun.",
       "contemporaryUsage": "Le terme Bamiléké est largement adopte par le groupe lui-meme comme identite collective, notamment au sein de la diaspora. Au Cameroun, il designe le premier groupe ethnique par la taille, avec une forte identite entrepreneur et une presence dans tous les secteurs economiques.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -96,22 +96,26 @@
       {
         "title": "Britannica — Bamileke",
         "url": "https://www.britannica.com/topic/Bamileke",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "101LastTribes — Bamileke people",
         "url": "https://www.101lasttribes.com/tribes/bamileke.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Bamileke subgroup",
         "url": "https://www.ethnologue.com/subgroup/589/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Encyclopedia.com — Bamileke",
         "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bamileke",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "GoNOMAD Travel — Bamileke Region of Cameroon",
@@ -121,7 +125,156 @@
       {
         "title": "Qiraat African — The Bamileke of western Cameroon",
         "url": "https://qiraatafrican.com/en/13421/the-bamileke-of-western-cameroon/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bamiléké désigne un ensemble de chefferies des hauts plateaux de l'Ouest du Cameroun, dont les habitants se nomment aujourd'hui eux-mêmes Bamiléké. Ce nom est né à l'époque coloniale allemande. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bamiléké",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom né à l'époque coloniale allemande ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis 1905 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "Décrit en 1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Bamiléké désigne une partie des chefferies des plateaux de l'Ouest du Cameroun, autour de Dschang. Il est né de la pénétration coloniale et son origine est discutée, selon Jean-Claude Barbier.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les sociétés bamiléké de l'Ouest du Cameroun : étude régionale à partir d'un cas particulier",
+                "author": "Jean-Claude Barbier",
+                "year": 1976,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/03143.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109",
+                "notes": "Paris, ORSTOM, Travaux et documents de l'ORSTOM n° 53, p. 103-122, actes du colloque d'Abidjan de 1972. Lu dans le texte intégral publié par l'IRD, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "Décrit en 1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Bamiléké a été adopté par les intéressés eux-mêmes, malgré son origine venue de l'extérieur, selon Jean-Claude Barbier.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les sociétés bamiléké de l'Ouest du Cameroun : étude régionale à partir d'un cas particulier",
+                "author": "Jean-Claude Barbier",
+                "year": 1976,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/03143.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109",
+                "notes": "Paris, ORSTOM, Travaux et documents de l'ORSTOM n° 53, p. 103-122, actes du colloque d'Abidjan de 1972. Lu dans le texte intégral publié par l'IRD, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bamiléké apparaît pour la première fois dans un texte allemand en 1905 : le récit de l'expédition du Manengouba, qui atteignit des chefferies au sud de Dschang, selon Jean-Claude Barbier. C'est la plus ancienne trace de ce nom que le projet connaît. Les chefferies qu'il désigne existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les sociétés bamiléké de l'Ouest du Cameroun : étude régionale à partir d'un cas particulier",
+                "author": "Jean-Claude Barbier",
+                "year": 1976,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/03143.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109",
+                "notes": "Paris, ORSTOM, Travaux et documents de l'ORSTOM n° 53, p. 103-122, actes du colloque d'Abidjan de 1972. Lu dans le texte intégral publié par l'IRD, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1905,
+              "label": "Avant la conquête allemande"
+            },
+            "era": "polity",
+            "statement": "Le nom Bamiléké n'existe pas encore : aucun nom ne réunit ces chefferies, et chacune se nomme en plaçant ba-, « les gens de », devant son propre nom, selon Jean-Claude Barbier.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les sociétés bamiléké de l'Ouest du Cameroun : étude régionale à partir d'un cas particulier",
+                "author": "Jean-Claude Barbier",
+                "year": 1976,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/03143.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109",
+                "notes": "Paris, ORSTOM, Travaux et documents de l'ORSTOM n° 53, p. 103-122, actes du colloque d'Abidjan de 1972. Lu dans le texte intégral publié par l'IRD, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1944,
+              "to": 1976,
+              "label": "Proposée en 1944, reprise en 1976"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bamiléké viendrait d'une expression de l'interprète des Allemands, qui aurait ainsi nommé les habitants de la cuvette de Dschang vus depuis les monts Bamboutos ; elle voudrait dire « les populations de la vallée », selon une lettre de l'administrateur L. Geay de 1944, que cite Jean-Claude Barbier.",
+            "hypothesisGroup": "origine du nom Bamiléké",
+            "sources": [
+              {
+                "title": "Les sociétés bamiléké de l'Ouest du Cameroun : étude régionale à partir d'un cas particulier",
+                "author": "Jean-Claude Barbier",
+                "year": 1976,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/03143.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109",
+                "notes": "Paris, ORSTOM, Travaux et documents de l'ORSTOM n° 53, p. 103-122, actes du colloque d'Abidjan de 1972. Lu dans le texte intégral publié par l'IRD, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "Proposée en 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Bamiléké viendrait de mbalekeo, « les gens d'en bas » dans la langue de Bali : un explorateur allemand aurait demandé à son guide venu de Bali le nom des gens qu'il voyait depuis le mont Bambouto, selon Jean-Paul Notué et Louis Perrois.",
+            "hypothesisGroup": "origine du nom Bamiléké",
+            "sources": [
+              {
+                "title": "Contribution à l'étude des sociétés secrètes chez les Bamiléké (Ouest-Cameroun)",
+                "author": "Jean-Paul Notué et Louis Perrois",
+                "year": 1984,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers11-10/19320.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4-5",
+                "notes": "Yaoundé, Institut des sciences humaines et ORSTOM. Lu dans le texte intégral publié par l'IRD, lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

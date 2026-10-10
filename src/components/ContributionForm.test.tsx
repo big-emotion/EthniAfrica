@@ -101,9 +101,10 @@ describe("ContributionForm", () => {
   });
 
   // An off-catalogue citation used to disable the submit button outright.
-  // It is now accepted and labelled, and the notice explains the consequence.
+  // It is now accepted, and the notice says what happens next without
+  // naming a tier or a confidence penalty (doctrine §1.1).
   // @req REQ-092
-  it("accepts an off-catalogue citation and warns it lowers confidence", () => {
+  it("accepts an off-catalogue citation and says the team will review it", () => {
     const { container } = renderContributionForm();
 
     selectType(container, "new_people");
@@ -112,8 +113,9 @@ describe("ContributionForm", () => {
     });
 
     const notice = screen.getByTestId("source-tier-notice");
-    expect(notice).toHaveTextContent("Non vérifiée");
-    expect(notice).toHaveTextContent("indice de confiance");
+    expect(notice).toHaveTextContent("type");
+    expect(notice).toHaveTextContent("relue par l'équipe");
+    expect(notice).not.toHaveTextContent(/Non vérifiée|indice de confiance/);
     // Advisory, not an error: the reserved error token stays out of it.
     expect(notice.className).not.toContain("afh-error");
   });

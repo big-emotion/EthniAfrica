@@ -5,7 +5,7 @@ import { CompanionRelationLabel } from "@/components/search/feed/CompanionRelati
 import { FEED_TEXT_LINK_HIT_AREA } from "@/components/search/feed/feedHitArea";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSectionHeading";
-import { SourceStandingBadge } from "@/components/sources/SourceStandingBadge";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { ActionLink } from "@/components/ui/ActionLink";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
@@ -69,7 +69,6 @@ function PlateSources({
           key={`${source.title}-${source.url ?? "unlinked"}`}
           className="flex flex-wrap items-center gap-afh-sm text-afh-caption text-afh-text-soft"
         >
-          <SourceStandingBadge standing={source.tier} language={language} />
           {source.url ? (
             <a
               href={source.url}
@@ -82,6 +81,9 @@ function PlateSources({
           ) : (
             <cite className="not-italic">{source.title}</cite>
           )}
+          {source.sourceKind ? (
+            <SourceKindBadge kind={source.sourceKind} language={language} />
+          ) : null}
         </li>
       ))}
     </ul>
@@ -127,13 +129,6 @@ function ReviewedPlate({
           <h3 className="font-afh-display text-afh-body font-bold leading-[1.3]">
             {item.headline}
           </h3>
-          <div className="leading-[normal]">
-            <SourceStandingBadge
-              standing={item.tier}
-              language={language}
-              className="leading-[var(--afh-leading-eyebrow)]"
-            />
-          </div>
           <p className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
             Photo : {item.illustration.credit}
           </p>
@@ -271,11 +266,6 @@ export function PlatesBlock({
                               {paragraph}
                             </p>
                           ))}
-                      <SourceStandingBadge
-                        standing={item.tier}
-                        language={language}
-                        className="hidden self-start min-[1200px]:inline-block"
-                      />
                       <p className="text-afh-caption text-afh-text-soft">
                         {reviewed ? "Photo" : copy.labels.photoCredit} :{" "}
                         {item.illustration.credit}
@@ -324,13 +314,6 @@ export function PlatesBlock({
                       <p className="text-afh-caption text-afh-text-soft min-[1200px]:line-clamp-2">
                         {item.origin.note}
                       </p>
-                    ) : null}
-                    {item.sources[0] ? (
-                      <SourceStandingBadge
-                        standing={item.sources[0].tier}
-                        language={language}
-                        className="hidden self-start min-[1200px]:inline-block"
-                      />
                     ) : null}
                     {reviewed ? null : (
                       <PlateSources

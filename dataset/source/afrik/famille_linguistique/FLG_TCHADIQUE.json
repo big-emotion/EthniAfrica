@@ -3,6 +3,199 @@
   "nameFr": "Tchadique",
   "nameEn": "Chadic",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom tchadique désigne une famille de langues parlées autour du lac Tchad et vers l'ouest, comme le haoussa. C'est un nom de linguiste, employé par Joseph Greenberg ; on a d'abord rangé le haoussa parmi les langues dites chamitiques, et Maurice Delafosse parlait de groupe nigéro-tchadien. Les sources que nous avons lues n'expliquent pas le choix du nom, mais racontent comment on a classé ces langues ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Tchadique",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste américain Joseph Greenberg",
+        "shortLine": "Un nom de linguiste pour le haoussa et une centaine de langues parlées autour du lac Tchad.",
+        "periodLabel": "Depuis les années 1950",
+        "accounts": [
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "1990"
+            },
+            "era": "modern",
+            "statement": "Le nom tchadique désigne, selon Dierk Lange, une branche aujourd'hui admise de la grande famille afro-asiatique, dite aussi chamito-sémitique. Les peuples qui la parlent vivent entre le Niger et le plateau du Ouaddaï.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 15 : La région du Tchad en tant que carrefour",
+                "author": "Dierk Lange, avec Bawaro W. Barkindo",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 471"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom tchadique réunit pour Joseph Greenberg le haoussa, la langue la plus parlée d'Afrique de l'Ouest, et au moins cent autres langues. Il en fait une des cinq branches de l'afro-asiatique, en renvoyant aux travaux du linguiste allemand Johannes Lukas, en 1938, et de Marcel Cohen, en 1947.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 329 et 332"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1963,
+              "label": "1963, selon Joseph Greenberg"
+            },
+            "statement": "Le nom tchadique figure dans le livre de Joseph Greenberg sur les langues d'Afrique paru en 1963, qui divise ces langues en neuf sous-groupes, selon ce qu'il en écrit lui-même en 1980. Nous n'avons pas pu lire le livre de 1963 ni des textes plus anciens qui emploieraient ce nom. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Joseph H. Greenberg",
+                "role": "a employé le nom tchadique dans sa classification des langues d'Afrique"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 332"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "On parle alors de groupe nigéro-tchadien pour trente et une langues, dont le haoussa et le kotoko, que Maurice Delafosse range dans une grande famille « négro-africaine ».",
+            "formAsWritten": "Groupe nigéro-tchadien",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les langues du monde, chapitre « Les langues du Soudan et de la Guinée »",
+                "author": "Maurice Delafosse",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive. L'auteur, administrateur colonial, range ces langues dans une « famille négro-africaine ».",
+                "page": "p. 474 et 511"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "On refuse alors, chez Marcel Cohen, de ranger le haoussa dans le chamito-sémitique : il n'y voit que quelques traits isolés qui ressemblent à ceux de cette famille.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les langues du monde, chapitre « Langues chamito-sémitiques »",
+                "author": "Marcel Cohen",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 84"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "statement": "On range alors le haoussa parmi les langues dites chamitiques, comme le fait le linguiste allemand Carl Meinhof, selon Joseph Greenberg. Greenberg conserve ce rattachement, mais en fait une branche à part.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 326 et 329"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "1880"
+            },
+            "statement": "On range alors le haoussa avec les langues libyques du nord de l'Afrique, parmi les langues que Richard Lepsius dit chamitiques et venues d'Asie.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Nubische Grammatik, mit einer Einleitung über die Völker und Sprachen Afrika's",
+                "author": "Richard Lepsius",
+                "year": 1880,
+                "url": "https://archive.org/details/nubischegrammat00lepsgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, Wilhelm Hertz, 1880. Lu dans la numérisation d'Internet Archive, introduction. L'auteur classe les langues d'Afrique selon des idées de race de son époque.",
+                "page": "p. XV et XVII"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1877,
+              "label": "1877"
+            },
+            "statement": "On remarque alors que le haoussa a, comme les langues dites hamito-sémitiques, un masculin et un féminin, selon Friedrich Müller.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Grundriss der Sprachwissenschaft, tome I : Die Sprachen der wollhaarigen Rassen",
+                "author": "Friedrich Müller",
+                "year": 1877,
+                "url": "https://archive.org/details/cihm_45392",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Vienne, Alfred Hölder, 1877. Lu dans la numérisation d'Internet Archive, chapitre sur la langue haoussa. L'auteur classe les langues d'après la chevelure de leurs locuteurs.",
+                "page": "p. 223"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues du bassin du lac Tchad, au Nigeria, au Niger, au Tchad et au Cameroun. Le nom vient du lac ; l'ancien nom « hamitique » rattachait à tort ces peuples à une origine non africaine.",
@@ -77,12 +270,14 @@
       {
         "title": "[Greenberg, J.H.] ([1955]) – *Studies in African Linguistic Classification*. [New Haven : Compass Publishing Company]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Greenberg, J.H.] ([1963]) – *The Languages of Africa*. [Bloomington : Indiana University Press]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Cohen, M.] ([1924]) – *Le système verbal sémitique et l'expression du temps*. [Paris]",
@@ -92,27 +287,32 @@
       {
         "title": "[Frajzyngier, Z. & Shay, E.] ([2010]) – *Tense and Aspect in Chadic – A Typological Overview*. Folia Orientalia, Vol. 47. [Cracovie]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Frajzyngier, Z. & Shay, E.] ([2001]) – *A Grammar of Hdi*. Mouton Grammar Library. [Berlin : Mouton de Gruyter]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Frajzyngier, Z. & Shay, E.] ([2012]) – *A Grammar of Wandala*. Mouton Grammar Library 47. [Berlin : De Gruyter]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Frajzyngier, Z. & Shay, E.] ([2003]) – *Explaining Language Structure through Systems Interaction*. Typological Studies in Language 55. [Amsterdam : John Benjamins]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Frajzyngier, Z. & Shay, E.] ([2024]) – *Locative Predications in Chadic Languages: Implications for Semantic Analysis*. [Oxford : Oxford University Press]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Newman, P.] ([1980]) – *The Classification of Chadic within Afroasiatic*. [In : Bender, M.L. (ed.) – Nilo-Saharan Language Studies]",
@@ -122,62 +322,74 @@
       {
         "title": "[Newman, P.] ([2022]) – *Comprehensive Bibliography of Chadic and Hausa Linguistics* (5ᵉ édition). [Bloomington : Indiana University]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Ehret, C.] – *Reconstructing Proto-Afroasiatic (Proto-Afrasian): Vowels, Tone, Consonants, and Vocabulary*. [Berkeley : University of California Press]",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "[Blench, R.] ([2006]) – *Archaeology, Language, and the African Past*. [Lanham : Altamira Press]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Blench, R. & al.] ([2009]) – *The Wadi Howar Diaspora and its role in the spread of East Sudanic languages from the fourth to the first millennia BCE*. BMC Evolutionary Biology, Vol. 9, Article 63",
         "url": "https://bmcecolevol.biomedcentral.com/articles/10.1186/1471-2148-9-63",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Cruciani, F. & al.] ([2010]) – *Human Y chromosome R1b1b2-V88 shows a parental trace within the Green Sahara*. European Journal of Human Genetics, Vol. 18. [Nature Publishing Group : ]",
         "url": "https://www.nature.com/articles/ejhg201088",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Tishkoff, S.A. & al.] ([2009]) – *The genetic structure and history of Africans and African Americans*. Science, Vol. 324. [Washington : AAAS]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[SIL Ethnologue] ([2025]) – *Languages of Nigeria / Niger / Chad / Cameroon*",
         "url": "https://www.ethnologue.com/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "[Glottolog] ([2025]) – *Chadic Overview*",
         "url": "https://glottolog.org/resource/languoid/id/chad1250",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "[Britannica] ([2025]) – *Chadic Languages*",
         "url": "https://www.britannica.com/topic/Chadic-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "[UNFPA] ([2025]) – *West & Central Africa Regional Profiles*",
         "url": "https://wcaro.unfpa.org/en/overview",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Glottolog 5.2 – classification génétique \"Chadic [chad1250]\", 4 branches immédiates (Biu-Mandara, East Chadic, Masa, West Chadic)",
         "url": "https://glottolog.org/resource/languoid/id/chad1250",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "The DHS Program / ICF – Nigeria Demographic and Health Survey 2018, Final Report (FR359), p. 55 : le hausa (tchadique occidental) est l'ethnie principale de 30 % des femmes et 31 % des hommes enquêtés au Nigeria. ; taux de 30 % appliqué à la population totale du Nigeria (204 938 755 en 2018, World Bank – SP.POP.TOTL) pour estimer ~61,5 millions de locuteurs",
         "url": "https://dhsprogram.com/pubs/pdf/FR359/FR359.pdf",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "The DHS Program / ICF – Nigeria Demographic and Health Survey 2018, Final Report (FR359), p. 55 : le hausa (tchadique occidental) est l'ethnie principale de 30 % des femmes et 31 % des hommes enquêtés au Nigeria. https://dhsprogram.com/pubs/pdf/FR359/FR359.pdf ; taux de 30 % appliqué à la population totale du Nigeria (204 938 755 en 2018, World Bank – SP.POP.TOTL) pour estimer ~61,5 millions de locuteurs. https://data.worldbank.org/indicator/SP.POP.TOTL?locations=NG"
       }
     ]

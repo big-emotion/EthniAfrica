@@ -10,9 +10,9 @@
       "exonyms": [
         "Wemba (forme ancienne), Chibemba, Ichibemba (designe aussi la langue)"
       ],
-      "originOfExonyms": "Le terme Bemba derive du mot chibemba UluBemba ou Lubemba, designant le territoire ancestral autour de Kasama (Zambie du Nord). Le nom Chitimukulu (grand Chiti) vient du premier dirigeant historique Chiti Muluba, qui a renomme son royaume en son honneur. Le terme Pemba existe en Luba (langue d'origine) avec une signification similaire.",
+      "originOfExonyms": "Le terme Bemba dériverait du mot chibemba UluBemba ou Lubemba, qui désigne le territoire ancestral autour de Kasama (Zambie du Nord). Le nom Chitimukulu (grand Chiti) viendrait du premier dirigeant historique Chiti Muluba, qui aurait renommé son royaume en son honneur. Le terme Pemba existe en Luba (langue d'origine) avec une signification similaire.",
       "whyProblematic": null,
-      "contemporaryUsage": "Aɓemba est le terme endonyme officiel. Bemba est universellement utilise en anglais et dans les contextes academiques. IchiBemba ou Chibemba designe la langue.",
+      "contemporaryUsage": "Aɓemba est le nom officiel employé par le peuple lui-même. Bemba est utilisé en anglais et dans les travaux de recherche. IchiBemba ou Chibemba désigne la langue.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantous d'Afrique centrale-orientale (groupe M, zone M.42 selon la classification de Guthrie)",
       "historicalRegion": "Nord de la Zambie (Lubemba / UluBemba) — provinces du Nord, du Luapula, de Muchinga et du Centre-nord",
@@ -110,22 +110,216 @@
       {
         "title": "SIL Ethnologue — Bemba language (bem)",
         "url": "https://www.ethnologue.com/language/bem/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Bemba in Zambia",
         "url": "https://joshuaproject.net/people_groups/10782/za",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Richards, Audrey I. — Chisungu : A Girl's Initiation Ceremony Among the Bemba of Zambia. Faber and Faber, 1956. eHRAF World Cultures",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fq05/documents/003",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nkwazi Magazine — Kalindula : A Rhythmic Journey Through Zambian Culture (2024)",
         "url": "https://nkwazimagazine.com/kalindula-a-rhythmic-journey-through-zambian-culture/",
         "tier": "unverified"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bemba désigne un peuple du nord-est de la Zambie, entre les lacs Tanganyika, Mweru et Bangweulu, qui se nomme lui-même Babemba, ou Abemba. D'autres noms existent : Awemba ou Wemba, le nom que leur donnaient leurs voisins mambwe, et Uemba dans un journal portugais de 1798. On ne sait pas avec certitude d'où vient le nom Bemba ; nous n'avons trouvé aucune explication sourcée.",
+    "names": [
+      {
+        "nameText": "Bemba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bem",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : Babemba ou Abemba, leur pays Lobemba.",
+        "periodLabel": "Écrit dès 1874",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bemba désigne un peuple et une langue du nord-est de la Zambie, entre les lacs Tanganyika, Mweru et Bangweulu. On ne sait pas avec certitude d'où vient ce nom : les sources que nous avons lues ne l'expliquent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An Introductory Handbook to the Language of the Bemba-People (Awemba)",
+                "author": "W. Govan Robertson (signé W. G. R.)",
+                "year": 1904,
+                "url": "https://www.troyspier.com/assets/files/bibliographies/m40/robertson_handbook.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. ix",
+                "notes": "Londres, London Missionary Society, 1904. Lu le 10 octobre 2026 dans une copie non officielle de la numérisation de HathiTrust. Le peuple vit « between Lakes Bangweulu, Mweru and Tanganyika, on one side and the Anglo-German boundary and Senga country, on the other »."
+              },
+              {
+                "title": "A Grammar of the Bemba Language as Spoken in North-East Rhodesia",
+                "author": "A. C. Madan, d'après le père Schoeffer",
+                "year": 1907,
+                "url": "https://archive.org/details/agrammarbembala00madagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "préface",
+                "notes": "Oxford, Clarendon Press, 1907, lu dans la numérisation d'Internet Archive le 10 octobre 2026. La préface, datée de Fort Jameson en 1906, note : « the name Bemba is in some districts heard as Wemba, and often so written »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1880,
+              "label": "De 1860 à 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Bemba est alors celui d'un royaume qui, conduit par Chileshe Chipela, achève de s'étendre vers 1860, puis s'empare de la plus grande partie du nord-est de l'actuelle Zambie, en s'alliant aux marchands arabes et swahili, selon Allen F. Isaacman.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 8 : Les pays du bassin du Zambèze",
+                "author": "Allen F. Isaacman",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 222-224",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 222 : « Les Bemba, à la tête desquels se trouvait Chileshe Chipela, venaient d'achever une phase d'expansion territoriale et de centralisation politique lorsque les marchands étrangers pénétrèrent chez eux, vers 1860. » Page 224 : de 1860 à 1880, « des forces bemba s'emparèrent de la majeure partie du nord-est de l'actuelle Zambie »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1866,
+              "to": 1874,
+              "label": "Journal de 1866-1867, publié en 1874"
+            },
+            "era": "polity",
+            "statement": "Le nom Bemba apparaît dans le journal de David Livingstone, qui parle de Lobemba, le pays, et de Chitapanga, « chef suprême de tous les Abemba ». W. Govan Robertson écrit en 1904 que Livingstone les nommait correctement. C'est la plus ancienne trace de cette forme que le projet connaît ; une forme proche, Uemba, est plus ancienne.",
+            "formAsWritten": "Abemba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Last Journals of David Livingstone in Central Africa, vol. I",
+                "author": "David Livingstone, édité par Horace Waller",
+                "year": 1874,
+                "url": "https://archive.org/details/lastjournalsofda01livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 165 et 168",
+                "notes": "Londres, John Murray, 1874, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Page 165 : « the first Lobemba chief was Motuna ». Page 168, en janvier 1867 : « Chitapanga is paramount chief of all the Abemba »."
+              },
+              {
+                "title": "An Introductory Handbook to the Language of the Bemba-People (Awemba)",
+                "author": "W. Govan Robertson (signé W. G. R.)",
+                "year": 1904,
+                "url": "https://www.troyspier.com/assets/files/bibliographies/m40/robertson_handbook.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. ix",
+                "notes": "Londres, London Missionary Society, 1904. Lu le 10 octobre 2026 dans une copie non officielle de la numérisation de HathiTrust. « They were correctly spoken of by Dr. Livingstone as Bemba »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Awemba",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "mgr",
+        "namedBy": "les Mambwe, selon W. Govan Robertson",
+        "shortLine": "Le nom que leur donnaient leurs voisins mambwe, longtemps repris par les Européens.",
+        "periodLabel": "Une forme proche est notée dès 1798",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1907,
+              "label": "1904-1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Awemba est celui que leur donnent leurs voisins mambwe, et que les Européens emploient le plus souvent, selon W. Govan Robertson en 1904. A. C. Madan note que le nom Bemba s'entend dans certains districts comme Wemba, et s'écrit souvent ainsi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "An Introductory Handbook to the Language of the Bemba-People (Awemba)",
+                "author": "W. Govan Robertson (signé W. G. R.)",
+                "year": 1904,
+                "url": "https://www.troyspier.com/assets/files/bibliographies/m40/robertson_handbook.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. ix",
+                "notes": "Londres, London Missionary Society, 1904. Lu le 10 octobre 2026 dans une copie non officielle de la numérisation de HathiTrust. « but among Europeans they are more generally called by the name given them by their Mambwe neighbours, of Awemba »."
+              },
+              {
+                "title": "A Grammar of the Bemba Language as Spoken in North-East Rhodesia",
+                "author": "A. C. Madan, d'après le père Schoeffer",
+                "year": 1907,
+                "url": "https://archive.org/details/agrammarbembala00madagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "préface",
+                "notes": "Oxford, Clarendon Press, 1907, lu dans la numérisation d'Internet Archive le 10 octobre 2026. La préface, datée de Fort Jameson en 1906, note : « the name Bemba is in some districts heard as Wemba, and often so written »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Awemba est écrit ainsi par Harry H. Johnston, qui les décrit comme un peuple guerrier du plateau entre les lacs Nyasa et Tanganyika, venu du pays d'Itawa.",
+            "formAsWritten": "Awemba",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 145-146",
+                "notes": "Londres, Methuen, 1897, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « The Awemba are a warlike race inhabiting the regions of the Nyasa-Tanganyika plateau which are watered by the River Chambezi. They originally came from the country of Itawa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1798,
+              "to": 1798,
+              "label": "21 septembre 1798"
+            },
+            "era": "polity",
+            "statement": "Le nom Awemba a une forme proche, Uemba, dans le journal du Portugais Francisco José de Lacerda e Almeida : ses informateurs lui disent qu'au nord « se trouve la nation Uemba ». Richard F. Burton, qui traduit ce journal, y reconnaît les Auembas ou Muembas dont parlent aussi Monteiro et Gamitto en 1831. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Uemba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 99",
+                "notes": "Londres, John Murray pour la Royal Geographical Society, 1873, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Journal du 21 septembre 1798 : « northward lies the Uemba nation, between the Muizas and the Mussucuma ». En note : « The Auembas, Muembas, or Moluanes, are mentioned by Monteiro and Gamitto (p. 408, &c.) »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

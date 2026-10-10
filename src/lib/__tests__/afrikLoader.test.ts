@@ -382,6 +382,8 @@ describe("afrikLoader", () => {
         language: 0,
         person: 0,
         patronyme: 0,
+        place: 0,
+        word: 0,
       });
     });
 
@@ -436,6 +438,8 @@ describe("afrikLoader", () => {
         language: 0,
         person: 0,
         patronyme: 0,
+        place: 0,
+        word: 0,
       });
     });
   });

@@ -82,42 +82,50 @@
       {
         "title": "SIL Ethnologue — Tajuasohn language (tja)",
         "url": "https://www.ethnologue.com/language/tja/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog 5.3 — Tajuasohn (taju1238)",
         "url": "https://glottolog.org/resource/languoid/id/taju1238",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Liberia languages",
         "url": "https://www.ethnologue.com/country/LR/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Refworld/MRGI — World Directory of Minorities, Cote d'Ivoire/Liberia",
         "url": "https://www.refworld.org/reference/countryrep/mrgi/2008/en/65159",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "101 Last Tribes — Kru people",
         "url": "https://www.101lasttribes.com/tribes/kru.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Zogbo, Lynell Marchese — Kru revisited, Kru revealed (LLACAN/CNRS 2012)",
         "url": "https://llacan.cnrs.fr/fichiers/nigercongo/fichiers/Zogbo_Kru.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Britannica — Kru ethnic group",
         "url": "https://www.britannica.com/topic/Kru",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "CIA World Factbook — Liberia",
         "url": "https://www.cia.gov/the-world-factbook/countries/liberia/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

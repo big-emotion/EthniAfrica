@@ -93,27 +93,32 @@
       {
         "title": "Joshua Project — Ebira in Nigeria (2025)",
         "url": "https://joshuaproject.net/people_groups/12188",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes — The Ebira people of Nigeria",
         "url": "https://www.101lasttribes.com/tribes/ebira.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Qiraat Africa — The Ebira people of Nigeria (2025)",
         "url": "https://qiraatafrican.com/en/15647/the-ebira-people-of-nigeria/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Federal Republic of Nigeria Official Gazette, 14 juillet 2022 — Orthographe officielle du nom Ebira",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Ethnologue (SIL International) — Ebira language, code igb",
         "url": "https://www.ethnologue.com/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

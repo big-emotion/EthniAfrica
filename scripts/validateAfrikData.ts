@@ -20,9 +20,9 @@ import { parseKingdomPeriod } from "./afrik/parseKingdomPeriod";
 import { parseRelationFile } from "../src/lib/afrik/parsers/relationParser";
 import { parseDossierFile } from "../src/lib/afrik/parsers/dossierParser";
 import { parsePlaceFile } from "../src/lib/afrik/parsers/placeParser";
-import { parseNameRecordFile } from "../src/lib/afrik/parsers/nameRecordParser";
+import { parseNameHistory } from "../src/lib/afrik/parsers/nameHistoryParser";
 import { parsePatronymeFile } from "../src/lib/afrik/parsers/patronymeParser";
-import type { SourceTier } from "../src/types/sources";
+import { SOURCE_KINDS, type SourceTier } from "../src/types/sources";
 // The same resolver the globe uses, so this gate and the rendering can never
 // disagree about which countries are drawable.
 import { getAdmin0Rings } from "../src/lib/atlas/overlays";
@@ -1083,10 +1083,6 @@ function collectPeopleReferences(datasetRoot: string): PeopleReference[] {
   readClass("relations", (data, file) => {
     push(file, "peopleIdA", data.peopleIdA);
     push(file, "peopleIdB", data.peopleIdB);
-  });
-
-  readClass("noms", (data, file) => {
-    push(file, "id", data.id);
   });
 
   readClass("migrations", (data, file) => {
@@ -2419,6 +2415,18 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
             );
           }
 
+          // Mirrors sources_source_kind_check: a kind the vocabulary does not
+          // know passes every fiche gate and is refused only by the sync.
+          if (
+            kind !== undefined &&
+            !(SOURCE_KINDS as readonly unknown[]).includes(kind)
+          ) {
+            errors.push(
+              `${fiche}: source "${title}" declares kind "${String(kind)}", ` +
+                `which is not one of ${SOURCE_KINDS.join(", ")}`
+            );
+          }
+
           // Mirrors sources_new_kind_tier_check (migration 089). Unchecked
           // here, a "referenced" oral_tradition source passed every PR gate
           // and was then refused by both database syncs (PAT_CAMARA,
@@ -2489,7 +2497,9 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
  * snapshot taken before 2026-02-04, or re-sources the claim. At 0, delete the
  * ratchet and make any live Factbook URL a plain error.
  */
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 132;
+// 132 -> 130 on 2026-10-10: the fourteen duplicate people fiches folded that
+// day took their own Factbook citations with them.
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 130;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -3263,23 +3273,36 @@ function collectMigrationFiches(
   return results;
 }
 
-/** PPL ids whose dataset/source/afrik/noms/ record has ≥1 entry with a non-empty imposedBy (Epic 8 imposed-name record). */
+/**
+ * PPL ids whose fiche's nameHistory tells a name imposed from outside: an
+ * `imposition` account naming who imposed it, which is what a noms/ record's
+ * non-empty imposedBy became when the records were folded in (REQ-196).
+ */
 function loadImposedNamePplIds(datasetRoot: string): Set<string> {
   const ids = new Set<string>();
-  for (const { fullPath } of collectNameRecordFiles(datasetRoot)) {
+  for (const { fullPath } of collectPplFiles(datasetRoot)) {
     try {
-      const data = JSON.parse(
-        fs.readFileSync(fullPath, "utf-8")
-      ) as RawNameRecordFile;
-      const names = Array.isArray(data.names) ? data.names : [];
-      const hasImposedEntry = names.some(
-        (n) => typeof n?.imposedBy === "string" && n.imposedBy.trim() !== ""
+      const data = JSON.parse(fs.readFileSync(fullPath, "utf-8")) as {
+        id?: unknown;
+        nameHistory?: {
+          names?: Array<{
+            accounts?: Array<{ aspect?: unknown; actors?: unknown[] }>;
+          }>;
+        };
+      };
+      const hasImposedName = (data.nameHistory?.names ?? []).some((name) =>
+        (name?.accounts ?? []).some(
+          (account) =>
+            account?.aspect === "imposition" &&
+            Array.isArray(account.actors) &&
+            account.actors.length > 0
+        )
       );
-      if (hasImposedEntry && typeof data.id === "string") {
+      if (hasImposedName && typeof data.id === "string") {
         ids.add(data.id);
       }
     } catch {
-      // Parse failures are surfaced by the name-record checks; stay silent here.
+      // Parse failures are surfaced by the fiche checks; stay silent here.
     }
   }
   return ids;
@@ -3287,9 +3310,8 @@ function loadImposedNamePplIds(datasetRoot: string): Set<string> {
 
 /**
  * CR3 – Every imposed_name event must reference, via peoplesInvolved, a PPL
- * id backed by an existing Epic 8 imposed-name record (a
- * dataset/source/afrik/noms/ dossier with ≥1 entry carrying imposedBy).
- * Events with no such record are rejected.
+ * id whose fiche's nameHistory tells the imposed name (an `imposition`
+ * account naming who imposed it). Events with no such name are rejected.
  */
 export function checkColonialEventCr3(datasetRoot: string): ValidationResult {
   const errors: string[] = [];
@@ -3313,7 +3335,7 @@ export function checkColonialEventCr3(datasetRoot: string): ValidationResult {
     if (!referencesRecord) {
       const ids = peoplesInvolved.map((p) => p?.id ?? "?").join(", ");
       errors.push(
-        `CR3: ${file}: imposed_name event does not reference an existing Epic 8 imposed-name record — none of peoplesInvolved [${ids}] has a dataset/source/afrik/noms/ record with an imposed name entry`
+        `CR3: ${file}: imposed_name event does not reference an imposed name — none of peoplesInvolved [${ids}] has a fiche whose nameHistory tells a name imposed from outside`
       );
     }
   }
@@ -3748,89 +3770,6 @@ export function checkRelationDuplicates(datasetRoot: string): ValidationResult {
 }
 
 /**
- * FR53-FR57 – Name-record validator (Epic 8, Story 8.3).
- * Validates dataset/source/afrik/noms/*.json against public/modele-nom.json.
- */
-
-interface RawNameRecordSource {
-  title?: unknown;
-  author?: unknown;
-  year?: unknown;
-  url?: unknown;
-  tier?: unknown;
-  notes?: unknown;
-}
-
-interface RawNameRecordEntry {
-  nameText?: unknown;
-  nameType?: unknown;
-  languageOfOrigin?: unknown;
-  meaning?: unknown;
-  imposedBy?: unknown;
-  whyProblematic?: unknown;
-  sources?: RawNameRecordSource[];
-}
-
-interface RawNameRecordFile {
-  id?: unknown;
-  entityType?: unknown;
-  names?: RawNameRecordEntry[];
-}
-
-/** List every dataset/source/afrik/noms/*.json file path. Empty when the dir is absent. */
-function collectNameRecordFiles(
-  datasetRoot: string
-): Array<{ file: string; fullPath: string }> {
-  const nomsDir = path.join(datasetRoot, "noms");
-  if (!fs.existsSync(nomsDir)) return [];
-  return fs
-    .readdirSync(nomsDir)
-    .filter((f) => f.endsWith(".json"))
-    .map((file) => ({ file, fullPath: path.join(nomsDir, file) }));
-}
-
-/** Map a zod issue path (from nameRecordDossierSchema) to the FR-name rule id it corresponds to. */
-function nameRecordIssueRuleId(issuePath: string): string {
-  if (issuePath.includes("languageOfOrigin")) return "FR55-iso";
-  if (issuePath.includes("whyProblematic")) return "FR56-imposed";
-  if (issuePath.includes("attestations")) return "FR58-attestation";
-  if (/shortLine|namedBy|originDebated|usedIn|pronunciation/.test(issuePath))
-    return "FR59-answer";
-  return "NAME-MODEL";
-}
-
-/**
- * FR55-iso (languageOfOrigin, when present, must be a valid ISO 639-3 code)
- * and FR56-imposed (imposedBy set ⇒ whyProblematic non-empty) — reuses the
- * 8.2 parser (parseNameRecordFile) rather than reimplementing its schema.
- */
-export function checkNameRecordModel(datasetRoot: string): ValidationResult {
-  const errors: string[] = [];
-  const warnings: string[] = [];
-
-  for (const { file, fullPath } of collectNameRecordFiles(datasetRoot)) {
-    let raw: unknown;
-    try {
-      raw = JSON.parse(fs.readFileSync(fullPath, "utf-8"));
-    } catch {
-      errors.push(`${file}: could not parse JSON`);
-      continue;
-    }
-
-    const parsed = parseNameRecordFile(raw);
-    if (!parsed.success) {
-      for (const issue of parsed.errors ?? []) {
-        errors.push(
-          `${nameRecordIssueRuleId(issue.path)}: ${file}: ${issue.path} — ${issue.message}`
-        );
-      }
-    }
-  }
-
-  return { ok: errors.length === 0, errors, warnings };
-}
-
-/**
  * DOS_* dossier fiches — strict shape plus the contradictoire rule.
  *
  * The parser holds the rules; this check is what makes CI run them over the
@@ -3891,7 +3830,9 @@ export function checkDossierFicheModel(datasetRoot: string): ValidationResult {
  * the filename, and links that resolve. A place points outward to its country
  * and peoples; nothing points back, so an unresolved link here is the only
  * place the corpus can notice it. A form resting on no `official` or
- * `referenced` source is reported, never refused (DEC-055).
+ * `referenced` source is reported, never refused (DEC-055). The names come
+ * from `nameHistory` only; a legacy `names` / `accounts` / `attestations` key
+ * is refused by the parser (REQ-196, DEC-071).
  */
 export function checkPlaceFicheModel(datasetRoot: string): ValidationResult {
   const errors: string[] = [];
@@ -3943,13 +3884,203 @@ export function checkPlaceFicheModel(datasetRoot: string): ValidationResult {
       }
     }
 
-    for (const name of place.names) {
-      const standing = unauthoritativeStanding([
-        ...name.sources,
-        ...name.accounts.flatMap((account) => account.sources),
-      ]);
+    for (const name of place.nameHistory.names) {
+      const standing = unauthoritativeStanding(
+        name.accounts.flatMap((account) => account.sources)
+      );
       if (standing) {
         warnings.push(`REQ-193: ${file}: form "${name.nameText}" ${standing}`);
+      }
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings };
+}
+
+/**
+ * WRD_* word fiches (REQ-196) — the free type of doctrine §2: a word whose
+ * history explains Africa through its names without fitting the six classes
+ * (racisme, nation, État, esclavage). Strict shape, identifier equal to the
+ * filename, related subjects that resolve. Unlike every other class the
+ * `nameHistory` block is required here: a word fiche exists only to tell the
+ * history of the word. The block's own shape is held by checkNameHistoryBlocks.
+ */
+const WORD_FICHE_KEYS = [
+  "_meta",
+  "id",
+  "nameMain",
+  "wordLanguage",
+  "definition",
+  "relatedSubjects",
+  "nameHistory",
+  "gaps",
+  "sources",
+];
+
+// Every directory a related subject may live in, read by `id` so a word can
+// point at any class without a per-class rule.
+const RELATED_SUBJECT_DIRECTORIES = [
+  "peuples",
+  "langues",
+  "famille_linguistique",
+  "pays",
+  "patronymes",
+  "lieux",
+  "mots",
+];
+
+function collectFicheIds(datasetRoot: string): Set<string> {
+  const ids = new Set<string>();
+  for (const directory of RELATED_SUBJECT_DIRECTORIES) {
+    for (const fullPath of collectJsonFiles(
+      path.join(datasetRoot, directory)
+    )) {
+      const fiche = readFiche(fullPath);
+      if (fiche && typeof fiche.id === "string") ids.add(fiche.id);
+    }
+  }
+  return ids;
+}
+
+export function checkWordFicheModel(datasetRoot: string): ValidationResult {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+  const wordDir = path.join(datasetRoot, "mots");
+
+  if (!fs.existsSync(wordDir)) return { ok: true, errors, warnings };
+
+  const ficheIds = collectFicheIds(datasetRoot);
+
+  for (const file of fs
+    .readdirSync(wordDir)
+    .filter((f) => f.endsWith(".json"))) {
+    const word = readFiche(path.join(wordDir, file));
+    if (!word) {
+      errors.push(`REQ-196: ${file}: could not parse JSON`);
+      continue;
+    }
+
+    const unknownKeys = Object.keys(word).filter(
+      (key) => !WORD_FICHE_KEYS.includes(key)
+    );
+    if (unknownKeys.length > 0) {
+      errors.push(
+        `REQ-196: ${file}: keys not in modele-mot.json: ${unknownKeys.join(", ")}`
+      );
+    }
+
+    const id = typeof word.id === "string" ? word.id : "";
+    if (!/^WRD_[A-Z0-9_]+$/.test(id)) {
+      errors.push(`REQ-196: ${file}: id "${id}" must match WRD_[A-Z0-9_]+`);
+    } else if (file !== `${id}.json`) {
+      errors.push(`REQ-196: ${file}: file should be named ${id}.json`);
+    }
+
+    if (typeof word.nameMain !== "string" || word.nameMain.trim() === "") {
+      errors.push(`REQ-196: ${file}: nameMain is required`);
+    }
+
+    if (!("nameHistory" in word) || word.nameHistory == null) {
+      errors.push(
+        `REQ-196: ${file}: nameHistory is required — a word fiche exists to tell the history of the word`
+      );
+    }
+
+    const related = Array.isArray(word.relatedSubjects)
+      ? word.relatedSubjects
+      : [];
+    for (const subject of related) {
+      const subjectId =
+        subject && typeof subject === "object"
+          ? (subject as { id?: unknown }).id
+          : undefined;
+      if (typeof subjectId !== "string" || !ficheIds.has(subjectId)) {
+        errors.push(
+          `REQ-196: ${file}: related subject "${String(subjectId)}" does not resolve to an existing fiche`
+        );
+      }
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings };
+}
+
+// ─── Shared nameHistory block (REQ-196, ARCH-028) ────────────────────────────
+
+// Every directory holding a named-subject fiche. Each class carries the block
+// with the same shape, so one parser holds them all.
+const NAME_HISTORY_FICHE_DIRECTORIES = [
+  "peuples",
+  "langues",
+  "famille_linguistique",
+  "pays",
+  "patronymes",
+  "lieux",
+  "mots",
+];
+
+/**
+ * REQ-196 — every fiche that declares `nameHistory` passes the one shared
+ * schema. A fiche without the block is not a defect: it is filled subject by
+ * subject during enrichment. The errors name the fiche and, through the
+ * parser, the form, so a contradicting pair of births is found without
+ * opening the file.
+ */
+export function checkNameHistoryBlocks(datasetRoot: string): ValidationResult {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+
+  for (const directory of NAME_HISTORY_FICHE_DIRECTORIES) {
+    for (const fullPath of collectJsonFiles(
+      path.join(datasetRoot, directory)
+    )) {
+      const fiche = readFiche(fullPath);
+      if (!fiche || !("nameHistory" in fiche)) continue;
+
+      const file = path.relative(datasetRoot, fullPath);
+      const parsed = parseNameHistory(fiche.nameHistory);
+      for (const message of parsed.errors) {
+        errors.push(`REQ-196: ${file}: ${message}`);
+      }
+      if (!parsed.success) continue;
+
+      // Carried over from the retired noms/ checks (FR54-endonym,
+      // FR53-dup): a people's history names the name it gives itself, and
+      // no block tells one name twice — the readers key names by their text.
+      const names = parsed.data.names;
+      if (directory === "peuples" && !names.some((name) => name.selfGiven)) {
+        errors.push(
+          `REQ-196: ${file}: nameHistory names no name the people gives itself (selfGiven)`
+        );
+      }
+      const seen = new Set<string>();
+      for (const { nameText } of names) {
+        if (seen.has(nameText)) {
+          errors.push(
+            `REQ-196: ${file}: nameHistory tells the name "${nameText}" twice`
+          );
+        }
+        seen.add(nameText);
+      }
+
+      // A warning, not an error: the accounts left without an era are the
+      // ones whose territory or date the colonial-periods table cannot
+      // settle, listed for the operator. A new account lands in this list
+      // until someone decides its era.
+      let undecidedCount = 0;
+      const undecided = names.flatMap(({ nameText, accounts }) => {
+        const indexes = accounts.flatMap((account, index) =>
+          account.era === undefined ? [`#${index}`] : []
+        );
+        undecidedCount += indexes.length;
+        return indexes.length > 0
+          ? [`"${nameText}" ${indexes.join(", ")}`]
+          : [];
+      });
+      if (undecidedCount > 0) {
+        warnings.push(
+          `REQ-196: ${file}: ${undecidedCount} nameHistory account(s) declare no era (docs/editorial/strategy/colonial-periods.md): ${undecided.join("; ")}`
+        );
       }
     }
   }
@@ -3963,7 +4094,7 @@ export function checkPlaceFicheModel(datasetRoot: string): ValidationResult {
  * decide whether a record is reported as resting on neither.
  */
 function isAuthoritativeTier(tier: unknown): boolean {
-  const normalized = normalizedNameRecordTier(tier);
+  const normalized = normalizedSourceTier(tier);
   return normalized === "official" || normalized === "referenced";
 }
 
@@ -3972,7 +4103,7 @@ function isAuthoritativeTier(tier: unknown): boolean {
  * could be shown — the one thing about a source's standing that still fails.
  */
 function declaredStanding(tier: unknown): string | null {
-  return tier === "needs_review" ? tier : normalizedNameRecordTier(tier);
+  return tier === "needs_review" ? tier : normalizedSourceTier(tier);
 }
 
 /**
@@ -3998,220 +4129,21 @@ function unauthoritativeStanding(
 }
 
 /**
- * Normalises a name-record source's `tier` to the current vocabulary.
+ * Normalises a source's `tier` to the current vocabulary.
  *
- * `dataset/source/afrik/noms/` mixes the retired numeric axis (wave 1,
- * `PPL_YORUBA.json`, tier 1/2) with the current official/referenced/
- * unverified vocabulary the rest of the corpus uses (see the Source
- * Tier Policy) — `ficheSourceTierSchema` already accepts both when parsing,
- * so this validator has to recognise both too instead of only the numeric
- * one. Returns null for anything that is neither (missing, malformed).
+ * Some fiches still carry the retired numeric axis (tier 1/2) beside the
+ * current official/referenced/unverified vocabulary (see the Source Tier
+ * Policy) — `ficheSourceTierSchema` already accepts both when parsing, so
+ * this validator has to recognise both too. Returns null for anything that
+ * is neither (missing, malformed).
  */
-function normalizedNameRecordTier(tier: unknown): SourceTier | null {
+function normalizedSourceTier(tier: unknown): SourceTier | null {
   if (tier === 1 || tier === "1") return "official";
   if (tier === 2 || tier === "2") return "referenced";
   if (tier === "official" || tier === "referenced" || tier === "unverified") {
     return tier;
   }
   return null;
-}
-
-/**
- * FR57-source – every name record cites at least one source, each with a tier.
- * A name resting only on `unverified` sources is reported and published
- * labelled, as DEC-052 already lets an oral tradition qualify a people name
- * (DEC-055, REQ-169).
- */
-export function checkNameRecordSources(datasetRoot: string): ValidationResult {
-  const errors: string[] = [];
-  const warnings: string[] = [];
-
-  for (const { file, fullPath } of collectNameRecordFiles(datasetRoot)) {
-    let data: RawNameRecordFile;
-    try {
-      data = JSON.parse(fs.readFileSync(fullPath, "utf-8"));
-    } catch {
-      warnings.push(`${file}: could not parse JSON`);
-      continue;
-    }
-
-    const names = Array.isArray(data.names) ? data.names : [];
-    names.forEach((entry, i) => {
-      const sources = Array.isArray(entry?.sources) ? entry.sources : [];
-      if (sources.length === 0) {
-        errors.push(
-          `FR57-source: ${file}: names[${i}] cites no source — a name needs at least one, at any standing`
-        );
-        return;
-      }
-
-      sources.forEach((source, j) => {
-        if (declaredStanding(source?.tier) === null) {
-          errors.push(
-            `FR57-source: ${file}: names[${i}].sources[${j}] must record a tier — one of ${[...SOURCE_STANDINGS].join(", ")}`
-          );
-        }
-      });
-
-      const standing = unauthoritativeStanding(sources);
-      if (standing)
-        warnings.push(`FR57-source: ${file}: names[${i}] ${standing}`);
-    });
-  }
-
-  return { ok: errors.length === 0, errors, warnings };
-}
-
-/**
- * FR54-endonym – every people covered by the atlas dataset has ≥1 endonym
- * record (AR33 echo).
- */
-export function checkNameRecordEndonymCoverage(
-  datasetRoot: string
-): ValidationResult {
-  const errors: string[] = [];
-  const warnings: string[] = [];
-
-  for (const { file, fullPath } of collectNameRecordFiles(datasetRoot)) {
-    let data: RawNameRecordFile;
-    try {
-      data = JSON.parse(fs.readFileSync(fullPath, "utf-8"));
-    } catch {
-      warnings.push(`${file}: could not parse JSON`);
-      continue;
-    }
-
-    const names = Array.isArray(data.names) ? data.names : [];
-    const hasEndonym = names.some((entry) => entry?.nameType === "endonym");
-    if (!hasEndonym) {
-      errors.push(
-        `FR54-endonym: ${file}: people "${data.id}" has no endonym record — every people covered by the atlas must have ≥1 endonym`
-      );
-    }
-  }
-
-  return { ok: errors.length === 0, errors, warnings };
-}
-
-/**
- * FR53-ref – peopleId (dossier id) must resolve to an existing PPL fiche
- * under dataset/source/afrik/peuples/** (no orphan name files).
- */
-export function checkNameRecordReferences(
-  datasetRoot: string
-): ValidationResult {
-  const errors: string[] = [];
-  const warnings: string[] = [];
-
-  const files = collectNameRecordFiles(datasetRoot);
-  if (files.length === 0) return { ok: true, errors, warnings };
-
-  const pplIds = loadPplIds(datasetRoot);
-
-  for (const { file, fullPath } of files) {
-    let data: RawNameRecordFile;
-    try {
-      data = JSON.parse(fs.readFileSync(fullPath, "utf-8"));
-    } catch {
-      warnings.push(`${file}: could not parse JSON`);
-      continue;
-    }
-
-    const id = typeof data.id === "string" ? data.id : undefined;
-    if (!id || !pplIds.has(id)) {
-      errors.push(
-        `FR53-ref: ${file}: peopleId "${data.id}" does not resolve to an existing PPL fiche`
-      );
-    }
-  }
-
-  return { ok: errors.length === 0, errors, warnings };
-}
-
-/**
- * FR55-surname – a surname record must document its basis: non-empty
- * "meaning", or an explicit connection statement in the sources[].notes of
- * at least one source (Story 8.11 — a bare name-to-people pairing with no
- * documented basis is invalid; source it or drop it).
- */
-export function checkNameRecordSurnameConnection(
-  datasetRoot: string
-): ValidationResult {
-  const errors: string[] = [];
-  const warnings: string[] = [];
-
-  for (const { file, fullPath } of collectNameRecordFiles(datasetRoot)) {
-    let data: RawNameRecordFile;
-    try {
-      data = JSON.parse(fs.readFileSync(fullPath, "utf-8"));
-    } catch {
-      warnings.push(`${file}: could not parse JSON`);
-      continue;
-    }
-
-    const names = Array.isArray(data.names) ? data.names : [];
-    names.forEach((entry, i) => {
-      if (entry?.nameType !== "surname") return;
-
-      const hasMeaning =
-        typeof entry.meaning === "string" && entry.meaning.trim() !== "";
-      const sources = Array.isArray(entry?.sources) ? entry.sources : [];
-      const hasConnectionStatement = sources.some(
-        (s) => typeof s?.notes === "string" && s.notes.trim() !== ""
-      );
-
-      if (!hasMeaning && !hasConnectionStatement) {
-        errors.push(
-          `FR55-surname: ${file}: names[${i}] is a surname record with no documented basis — "meaning" or an explicit connection statement in sources[].notes is required`
-        );
-      }
-    });
-  }
-
-  return { ok: errors.length === 0, errors, warnings };
-}
-
-/**
- * FR53-dup – no duplicate (peopleId, nameText, nameType) across the dataset.
- */
-export function checkNameRecordDuplicates(
-  datasetRoot: string
-): ValidationResult {
-  const errors: string[] = [];
-  const warnings: string[] = [];
-
-  const seen = new Map<string, string>();
-
-  for (const { file, fullPath } of collectNameRecordFiles(datasetRoot)) {
-    let data: RawNameRecordFile;
-    try {
-      data = JSON.parse(fs.readFileSync(fullPath, "utf-8"));
-    } catch {
-      warnings.push(`${file}: could not parse JSON`);
-      continue;
-    }
-
-    const peopleId = typeof data.id === "string" ? data.id : "";
-    const names = Array.isArray(data.names) ? data.names : [];
-
-    for (const entry of names) {
-      const nameText =
-        typeof entry?.nameText === "string" ? entry.nameText : "";
-      const nameType =
-        typeof entry?.nameType === "string" ? entry.nameType : "";
-      const key = `${peopleId}|${nameText}|${nameType}`;
-
-      if (seen.has(key)) {
-        errors.push(
-          `FR53-dup: ${file}: duplicate name record (peopleId="${peopleId}", nameText="${nameText}", nameType="${nameType}") also declared in ${seen.get(key)}`
-        );
-      } else {
-        seen.set(key, file);
-      }
-    }
-  }
-
-  return { ok: errors.length === 0, errors, warnings };
 }
 
 /**
@@ -4381,7 +4313,9 @@ export function checkLanguageStrictSchema(
     const ficheTopKeys = new Set(
       Object.keys(data).filter((key) => key !== "_meta")
     );
-    const missingTop = [...modelTopKeys].filter((k) => !ficheTopKeys.has(k));
+    const missingTop = [...modelTopKeys].filter(
+      (k) => !ficheTopKeys.has(k) && !OPTIONAL_TOP_LEVEL_KEYS.has(k)
+    );
     const extraTop = [...ficheTopKeys].filter((k) => !modelTopKeys.has(k));
     if (missingTop.length || extraTop.length) {
       errors.push(
@@ -4470,7 +4404,12 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // spelling note was moved out of its self-appellation.
   // 7005 -> 7004 on 2026-10-07: PPL_BAOULE gained `spellingAliases` for the
   // 19th-century spellings its sources attest.
-  peuple: 7004,
+  // 7004 -> 6995 on 2026-10-10: PPL_JOLA, a duplicate of PPL_DIOLA, was
+  // folded into it and retired with the model keys it lacked.
+  // 6995 -> 6868 on 2026-10-10: fourteen duplicate fiches (Sotho, Tswana,
+  // Zulu, Xhosa, Ashanti, Dagaaba, Kongo, Umbundu, Tonga, Hutu, Swahili,
+  // Brong) were folded into their keepers and retired with the keys they lacked.
+  peuple: 6868,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
@@ -4484,6 +4423,11 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
 // Authoring blocks no model declares: `_meta` is curator metadata, exempt
 // exactly as in the language check.
 const AUTHORING_KEYS = new Set(["_meta"]);
+
+// Top-level keys a model declares that a fiche may leave out without
+// drifting. `nameHistory` is written subject by subject during enrichment
+// (REQ-196); its absence is the starting state of every fiche, not drift.
+const OPTIONAL_TOP_LEVEL_KEYS: ReadonlySet<string> = new Set(["nameHistory"]);
 
 // Keys a model documents under `content` that a fiche may leave out without
 // drifting: the page has a fallback for each, so absence is not a defect and
@@ -4562,7 +4506,8 @@ export function checkStrictModelKeys(
         .filter(
           (key) =>
             !ficheKeys.has(key) &&
-            !(section === "content" && OPTIONAL_CONTENT_KEYS.has(key))
+            !(section === "content" && OPTIONAL_CONTENT_KEYS.has(key)) &&
+            !(section === "top level" && OPTIONAL_TOP_LEVEL_KEYS.has(key))
         )
         .map((key) => `${section}: missing key "${key}"`),
       ...[...ficheKeys]
@@ -5299,7 +5244,9 @@ async function main() {
     ),
   });
 
-  console.log("CR3 – Colonial-event imposed_name → Epic 8 name record...");
+  console.log(
+    "CR3 – Colonial-event imposed_name → nameHistory imposed name..."
+  );
   newChecks.push({
     name: "CR3 Colonial-event imposed_name reference",
     result: checkColonialEventCr3(datasetRoot),
@@ -5342,44 +5289,6 @@ async function main() {
   });
 
   console.log(
-    "FR55-iso/FR56-imposed – Name record model (ISO validity + imposed contextualization)..."
-  );
-  newChecks.push({
-    name: "FR55-iso/FR56-imposed Name record model",
-    result: checkNameRecordModel(datasetRoot),
-  });
-
-  console.log("FR57-source – Name record sources...");
-  newChecks.push({
-    name: "FR57-source Name record sources",
-    result: checkNameRecordSources(datasetRoot),
-  });
-
-  console.log("FR54-endonym – Name record endonym coverage...");
-  newChecks.push({
-    name: "FR54-endonym Name record endonym coverage",
-    result: checkNameRecordEndonymCoverage(datasetRoot),
-  });
-
-  console.log("FR53-ref – Name record peopleId references...");
-  newChecks.push({
-    name: "FR53-ref Name record peopleId references",
-    result: checkNameRecordReferences(datasetRoot),
-  });
-
-  console.log("FR53-dup – Name record duplicates...");
-  newChecks.push({
-    name: "FR53-dup Name record duplicates",
-    result: checkNameRecordDuplicates(datasetRoot),
-  });
-
-  console.log("FR55-surname – Surname record documented basis...");
-  newChecks.push({
-    name: "FR55-surname Name record surname connection",
-    result: checkNameRecordSurnameConnection(datasetRoot),
-  });
-
-  console.log(
     "REQ-133/REQ-134 – Per-name PAT_* fiche model (strict shape + DEC-040)..."
   );
   newChecks.push({
@@ -5399,6 +5308,20 @@ async function main() {
   newChecks.push({
     name: "REQ-193 Place fiche model",
     result: checkPlaceFicheModel(datasetRoot),
+  });
+
+  console.log("REQ-196 - Word fiche model (strict shape + links resolve)...");
+  newChecks.push({
+    name: "REQ-196 Word fiche model",
+    result: checkWordFicheModel(datasetRoot),
+  });
+
+  console.log(
+    "REQ-196 - Shared nameHistory block (one schema, every fiche)..."
+  );
+  newChecks.push({
+    name: "REQ-196 nameHistory block",
+    result: checkNameHistoryBlocks(datasetRoot),
   });
 
   console.log(

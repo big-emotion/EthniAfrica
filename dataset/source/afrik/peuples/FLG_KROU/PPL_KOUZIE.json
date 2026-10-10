@@ -8,7 +8,7 @@
       "mainName": "Kouzié",
       "selfAppellation": "Kouzié",
       "exonyms": ["Kouzi", "Kouzié", "Kouyé"],
-      "originOfExonyms": "Exonyme issu de la dénomination coloniale française reprise par les administrateurs du cercle de Soubré ; le nom Kouzié désigne à la fois le peuple et la localité autour de Buyo.",
+      "originOfExonyms": "Les administrateurs coloniaux français du cercle de Soubré ont repris le nom Kouzié. Il désigne à la fois le peuple et la localité autour de Buyo.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Kouzié est utilisé par les locuteurs eux-mêmes et par les administrations ivoiriennes pour désigner ce sous-groupe nyabwa établi dans la région de la Nawa.",
       "linguisticFamily": "FLG_KROU",
@@ -72,22 +72,26 @@
       {
         "title": "Adou Coulibaly, Kouassi Emile, Le kouzié, langue kru de Cote d'Ivoire : vitalite linguistique et dynamisme communautaire – Revues Scientifiques Marocaines / Sciences du Langage et Communication, 2018",
         "url": "https://revues.imist.ma/index.php/SLC/article/download/14714/8148/36851",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Description linguistique et sociolinguistique du kouzié – Thèse de doctorat, Université Félix Houphouët-Boigny, 2017",
         "url": "https://www.academia.edu/40191884/DESCRIPTION_LINGUISTIQUE_ET_SOCIOLINGUISTIQUE_DU_KOUZIE",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue – Nyabwa language (nwb), SIL International, 2024",
         "url": "https://www.ethnologue.com/language/nwb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Aka Konin, L'art musical chez les Niaboua, un peuple krou du centre-ouest de la Cote d'Ivoire – Royal Museum for Central Africa, 2012",
         "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/niaboua.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

@@ -15,7 +15,7 @@
       "selfAppellation": "Maroons",
       "exonyms": ["Jamaican Maroons", "Marrons de la Jamaïque"],
       "spellingAliases": ["Maroon", "Marron"],
-      "originOfExonyms": "Le mot anglais Maroon dérive de l'espagnol cimarrón (« sauvage », « indompté »), lui-même emprunté à une racine taïno signifiant « fugitif, échappé » ; le terme désignait à l'origine le bétail retourné à l'état sauvage à Hispaniola, puis les esclaves en fuite dans l'ensemble des Amériques.",
+      "originOfExonyms": "Le mot anglais Maroon viendrait de l'espagnol cimarrón (« sauvage », « indompté »), qui serait lui-même emprunté à une racine taïno signifiant « fugitif, échappé », selon l'African American Registry ; le terme désignait à l'origine le bétail retourné à l'état sauvage à Hispaniola, puis les esclaves en fuite dans l'ensemble des Amériques.",
       "whyProblematic": "Le terme renvoie à une catégorie forgée par les colonisateurs pour désigner des fugitifs ; les communautés elles-mêmes l'ont toutefois repris et revendiqué comme nom d'identité politique et culturelle, notamment depuis les traités de 1739-1740 qui reconnaissent leur autonomie sous ce nom.",
       "contemporaryUsage": "« Maroons » est aujourd'hui le terme couramment employé, y compris par les communautés elles-mêmes, souvent précisé par le nom de la ville marronne d'appartenance (Accompong Town Maroons, Moore Town Maroons, Charles Town Maroons, Scott's Hall Maroons).",
       "peopleGroupId": null,
@@ -67,12 +67,14 @@
           "title": "Maroon heritage of Moore Town — Representative List of the Intangible Cultural Heritage of Humanity",
           "url": "https://ich.unesco.org/en/RL/maroon-heritage-of-moore-town-00053",
           "tier": "referenced",
+          "source_kind": "intergovernmental",
           "notes": "Fiche UNESCO du patrimoine culturel immatériel documentant les cérémonies Kromanti Play et leur langue rituelle d'origine akan."
         },
         {
           "title": "The Maroon Treaty of 1739",
           "url": "https://link.springer.com/chapter/10.1007/978-3-031-81880-6_2",
           "tier": "referenced",
+          "source_kind": "academic",
           "notes": "Chapitre d'ouvrage académique (Springer) sur le traité de 1739 entre Cudjoe et les autorités britanniques, qui institutionnalise l'autonomie marronne issue de la résistance au marronnage."
         }
       ]
@@ -107,6 +109,7 @@
         "title": "First Maroon War",
         "url": "https://www.ebsco.com/research-starters/history/first-maroon-war",
         "tier": "referenced",
+        "source_kind": "encyclopedia",
         "notes": "Encyclopedic reference work (EBSCO Research Starters) à auteurs identifiés, utilisé pour la chronologie et les termes des traités de 1739-1740."
       },
       {
@@ -119,18 +122,21 @@
         "title": "The Early Political Development of Jamaican Maroon Societies (Barbara Klamon Kopytoff)",
         "url": "https://books.google.com/books/about/The_Early_Political_Development_of_Jamai.html?id=6Ot0PgAACAAJ",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Travail académique de référence sur l'organisation politique des sociétés marronnes jamaïcaines et l'effet des traités de 1739-1740."
       },
       {
         "title": "Meet the legendary community that fought for its freedom in Jamaica",
         "url": "https://www.nationalgeographic.com/culture/article/legendary-community-that-fought-for-its-freedom-in-jamaica",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Presse établie (National Geographic) ; source d'une estimation de population (environ 700 personnes dans les villages marrons autonomes, selon l'Institute of Jamaica) et d'éléments sur les origines akan/coromantee."
       },
       {
         "title": "The Maroon Community of the Caribbean",
         "url": "https://aaregistry.org/story/thee-maroon-community-of-the-caribbean-a-brief-article/",
         "tier": "referenced",
+        "source_kind": "community",
         "notes": "African American Registry, organisation éducative à but non lucratif publiant des articles signés ; source de l'étymologie cimarrón et de la population estimée d'Accompong Town (environ 600 habitants)."
       },
       {

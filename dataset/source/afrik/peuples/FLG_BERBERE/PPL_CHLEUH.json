@@ -4,6 +4,305 @@
   "languageFamilyId": "FLG_BERBERE",
   "currentCountries": ["MAR"],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Chleuh désigne un peuple berbère du sud-ouest du Maroc, du Haut-Atlas, de l'Anti-Atlas et du Souss, qui se nomme lui-même Ichelhiyen, au singulier Achelhi. Ce nom de soi vient lui-même du mot arabe chelha. Les sources ne s'accordent pas sur l'origine du nom Chleuh ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ichelhiyen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "shi",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent entre eux, au singulier Achelhi ; leur langue est la tachelhit.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1942,
+              "to": 1942,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ichelhiyen, que le berbérisant Émile Laoust écrit ichelhin, au singulier achelhi, est celui que les Chleuhs se donnent entre eux ; leur langue est la tachelhit, selon Laoust en 1942, cité par Rachid Agrour. Laoust ajoute que ce nom porte une idée péjorative.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 17",
+                "notes": "Cahiers d'études africaines, n° 208, 2012, p. 767-811, lu en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne. L'auteur cite aussi des informateurs berbérophones, qu'il nomme dans ses notes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ichelhiyen vient du mot arabe chelha, que les berbérophones du Sud marocain ont fini par adopter pour eux-mêmes et pour leur langue, devenue la tachelhit, selon Rachid Agrour. La tachelhit est le dialecte berbère le plus parlé du Maroc, dans le Haut-Atlas, l'Anti-Atlas et le Souss, selon Salem Chaker.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 98 et § 99",
+                "notes": "Cahiers d'études africaines, n° 208, 2012, p. 767-811, lu en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne. L'auteur cite aussi des informateurs berbérophones, qu'il nomme dans ses notes."
+              },
+              {
+                "title": "Chleuh, Encyclopédie berbère, 13",
+                "author": "Salem Chaker",
+                "year": 1994,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2270",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1",
+                "notes": "Encyclopédie berbère, vol. 13, 1994, p. 1926-1933, notice C57, lue sur OpenEdition le 10 octobre 2026. La notice décrit la langue ; elle ne traite pas de l'origine du nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chleuh",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que l'arabe marocain donne aux berbérophones du Sud, passé en français.",
+        "periodLabel": "Écrit dès 1573",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Chleuh vient de l'arabe parlé au Maroc, où les arabophones l'emploient pour les berbérophones ; il est né dans les villes, avec une nuance de mépris, selon Rachid Agrour. Son origine est discutée : nous présentons plus bas les explications que nous avons lues.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1, § 79 et § 89",
+                "notes": "Cahiers d'études africaines, n° 208, 2012, p. 767-811, lu en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne. L'auteur cite aussi des informateurs berbérophones, qu'il nomme dans ses notes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1573,
+              "to": 1573,
+              "label": "1573"
+            },
+            "era": "polity",
+            "statement": "Le nom Chleuh a une forme proche, Chilohés, chez l'Espagnol Luis del Mármol, dont la Description générale de l'Afrique paraît à Grenade en 1573 ; il nomme aussi leur langue Chilha, selon Rachid Agrour, qui le lit dans la traduction française de 1667. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Chilohés",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 41 et § 42",
+                "notes": "Cahiers d'études africaines, n° 208, 2012, p. 767-811, lu en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne. L'auteur cite aussi des informateurs berbérophones, qu'il nomme dans ses notes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1501,
+              "to": 1600,
+              "label": "XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Chleuh manque chez Léon l'Africain, qui a pourtant parcouru tout le Maroc avant 1515 : Rachid Agrour en conclut que le mot était alors récent, ou connu dans une seule région.",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 42 et § 46-47",
+                "notes": "Cahiers d'études africaines, n° 208, 2012, p. 767-811, lu en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne. L'auteur cite aussi des informateurs berbérophones, qu'il nomme dans ses notes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1939,
+              "to": 1945,
+              "label": "Seconde Guerre mondiale"
+            },
+            "statement": "Le nom Chleuh sert en France, pendant la Seconde Guerre mondiale, d'insulte pour les soldats allemands ; le chansonnier Pierre Dac l'a popularisé en 1939 avec « J'vais m'faire Chleuh ! », mais ce sens existait déjà quelques années plus tôt, selon Rachid Agrour.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1 et § 123",
+                "notes": "Cahiers d'études africaines, n° 208, 2012, p. 767-811, lu en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne. L'auteur cite aussi des informateurs berbérophones, qu'il nomme dans ses notes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Proposée en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Chleuh viendrait du mot berbère achlouh, « tente en poil de chameau », selon William de Slane en 1856. Rachid Agrour objecte que le mot acluḥ, au sens de tente, n'existe qu'en kabyle, en Algérie.",
+            "hypothesisGroup": "origine du nom Chleuh",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 61 et § 63",
+                "notes": "Cahiers d'études africaines, n° 208, 2012, p. 767-811, lu en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne. L'auteur cite aussi des informateurs berbérophones, qu'il nomme dans ses notes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Proposée en 1905"
+            },
+            "era": "polity",
+            "statement": "Le nom Chleuh viendrait du berbère achlouh, « natte en jonc ou en palmier nain, vieille et déchirée », et désignerait ceux qui vivent sous de telles tentes, selon Auguste Mouliéras en 1905. Rachid Agrour juge cette explication douteuse, comme la précédente.",
+            "hypothesisGroup": "origine du nom Chleuh",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 62 et § 63",
+                "notes": "Cahiers d'études africaines, n° 208, 2012, p. 767-811, lu en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne. L'auteur cite aussi des informateurs berbérophones, qu'il nomme dans ses notes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "Proposée en 1887"
+            },
+            "era": "polity",
+            "statement": "Le nom Chleuh viendrait de l'arabe schulûḥ, « gueux, canailles de voleurs », selon l'orientaliste Johann Wetzstein en 1887, suivi par Hans Stumme. Rachid Agrour objecte que ce sens vient de l'arabe littéraire et du Proche-Orient, alors que le mot n'est vivant qu'au Maroc.",
+            "hypothesisGroup": "origine du nom Chleuh",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 64 et § 65",
+                "notes": "Cahiers d'études africaines, n° 208, 2012, p. 767-811, lu en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne. L'auteur cite aussi des informateurs berbérophones, qu'il nomme dans ses notes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "Proposée en 1898"
+            },
+            "era": "polity",
+            "statement": "Le nom Chleuh voudrait dire en arabe « les rejetés », selon l'écrivain écossais Robert Cunninghame Graham en 1898. Rachid Agrour juge cette explication très tendancieuse et n'en a trouvé aucune trace dans les parlers arabes.",
+            "hypothesisGroup": "origine du nom Chleuh",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 66 et § 67",
+                "notes": "Cahiers d'études africaines, n° 208, 2012, p. 767-811, lu en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne. L'auteur cite aussi des informateurs berbérophones, qu'il nomme dans ses notes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Chleuh viendrait de l'arabe littéraire, avec le sens de « coupeur de route, détrousseur de voyageurs », pour une partie du mouvement berbère au Maroc, selon Rachid Agrour ; une autre partie y voit un mot berbère dont elle ignore l'étymologie.",
+            "hypothesisGroup": "origine du nom Chleuh",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 90",
+                "notes": "Cahiers d'études africaines, n° 208, 2012, p. 767-811, lu en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne. L'auteur cite aussi des informateurs berbérophones, qu'il nomme dans ses notes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "Proposée en 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Chleuh viendrait d'un mot de l'arabe marocain formé sur une racine qui veut dire « inciser, tailler » : pour les arabophones, la langue des berbérophones aurait été un arabe « tailladé », devenu méconnaissable, selon l'hypothèse de Rachid Agrour lui-même.",
+            "hypothesisGroup": "origine du nom Chleuh",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 91-97",
+                "notes": "Cahiers d'études africaines, n° 208, 2012, p. 767-811, lu en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne. L'auteur cite aussi des informateurs berbérophones, qu'il nomme dans ses notes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Chleuh",
@@ -16,7 +315,7 @@
         "Soussiens",
         "Sousis"
       ],
-      "originOfExonyms": "L'origine du nom Chleuh est debattue. La premiere mention occidentale est dans Marmol, Descripcion general de Affrica (1573) : les indigenes appeles Xilohes ou Berberes. L'IRCAM (Maroc) soutient une origine arabe : le terme arabe silh signifie bandit, mais cette etymologie ne s'applique pas aux dialectes arabes du Maghreb. L'historien Mohammed Akdim propose que le nom est l'appellation originale que les Masmuda de l'Atlas et du Souss se donnaient a eux-memes. En arabe marocain, un individu est appele Shluh (plur. Chlouh), d'ou Chleuh en francais.",
+      "originOfExonyms": "L'origine du nom Chleuh est debattue. La premiere mention occidentale est dans Marmol, Descripcion general de Affrica (1573) : les indigenes appeles Xilohes ou Berberes. Selon l'IRCAM (Maroc), le nom viendrait de l'arabe : le terme arabe silh signifie bandit, mais cette étymologie ne s'applique pas aux dialectes arabes du Maghreb. L'historien Mohammed Akdim propose que le nom est l'appellation originale que les Masmuda de l'Atlas et du Souss se donnaient a eux-memes. En arabe marocain, un individu est appele Shluh (plur. Chlouh), d'ou Chleuh en francais.",
       "whyProblematic": "Le terme Chleuh a parfois ete utilise comme insulte en France pendant la Seconde Guerre mondiale pour designer les soldats allemands, en raison d'une confusion phonetique. Au Maroc, il est employe de maniere courante et non pejorative.",
       "contemporaryUsage": "Chleuh et Ishelhiyen sont tous deux en usage courant au Maroc. La langue s'appelle officiellement Tachelhit dans les documents de l'IRCAM et les textes constitutionnels marocains. Le terme Soussien est utilise pour les Chleuhs du Souss specifiquement.",
       "linguisticFamily": "FLG_BERBERE",
@@ -98,12 +397,14 @@
       {
         "title": "Ethnologue SIL International - Tachelhit (shi)",
         "url": "https://www.ethnologue.com/language/shi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "IRCAM (Institut Royal de la Culture Amazighe, Rabat)",
         "url": "https://www.ircam.ma/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "academic"
       },
       {
         "title": "Iwziwn.com - Tachelhit, language of the Souss and High Atlas",
@@ -113,12 +414,14 @@
       {
         "title": "eHRAF World Cultures Yale - Shluh (Chleuh)",
         "url": "https://ehrafworldcultures.yale.edu/cultures/mw11/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Recensement HCP Maroc 2024",
         "url": "https://www.hcp.ma/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

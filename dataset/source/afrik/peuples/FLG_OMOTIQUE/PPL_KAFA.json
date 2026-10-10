@@ -101,7 +101,8 @@
       {
         "title": "UNESCO-MAB — Kafa Biosphere Reserve",
         "url": "https://www.unesco.org/en/mab/kafa",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Kafa Biosphere Reserve official website",
@@ -111,17 +112,20 @@
       {
         "title": "Qiraat Africa — Kafficho People of Ethiopia",
         "url": "https://qiraatafrican.com/en/19029/kafficho-people-of-ethiopia/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Omniglot — Kafa language and alphabet",
         "url": "https://www.omniglot.com/writing/kafa.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "PeopleGroups.org — Kafa of Ethiopia",
         "url": "https://peoplegroups.org/people_groups/pg011601/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kafa Nature Tours — Kaffa: The Birthplace of Arabica",
@@ -131,12 +135,14 @@
       {
         "title": "Kafa – Glottolog 5.3",
         "url": "https://glottolog.org/resource/languoid/id/kafa1242",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kafa in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/12408",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "XLIII Coffee – Kaffa Coffee and the Journey from the Ethiopian Rainforest, 2025",

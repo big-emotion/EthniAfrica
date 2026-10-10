@@ -59,12 +59,13 @@
       "vehicularRole": "Langue vernaculaire et identitaire de la communauté raizale, coexistant avec l'anglais standard, langue liturgique et scolaire historique, et avec l'espagnol, langue officielle de la Colombie imposée dans l'enseignement depuis les politiques de colombianisation."
     },
     "historicalAffiliation": {
-      "description": "Le lien historique des Raizales avec l'Afrique tient à la traite négrière transatlantique britannique, non à une filiation linguistique : leur langue vernaculaire, le créole anglais de San Andrés-Providencia, est un créole à base lexicale anglaise, sans parenté avec une langue africaine. L'archipel de San Andrés, Providencia et Santa Catalina est colonisé à partir de 1629 par des puritains anglais réunis dans la Providence Island Company, qui y importent une main-d'œuvre africaine réduite en esclavage dès les premières années de la colonie — un basculement d'une économie de serviteurs sous contrat vers une économie fondée sur l'esclavage africain documenté par l'historiographie de la colonie puritaine. Après la prise espagnole de la colonie en 1641 puis plusieurs décennies de disputes de souveraineté, l'archipel est repeuplé au XVIIIe siècle par des planteurs jamaïcains qui y transfèrent une nouvelle main-d'œuvre africaine asservie, achevant de fixer sur les îles une population afro-antillaise anglophone et protestante. L'esclavage y est aboli en 1834. C'est cette ascendance directe — captifs africains déportés vers les colonies britanniques des Caraïbes puis vers l'archipel — qui fonde le rattachement des Raizales au corpus AFRIK, indépendamment de la classification de leur créole comme langue à lexique anglais.",
+      "description": "L'histoire des Raizales est liée à la traite transatlantique britannique. Leur langue, le créole de San Andrés-Providencia, tire une grande partie de son vocabulaire de l'anglais. Cette classification de la langue ne décrit pas l'origine de leurs ancêtres. En 1629, des puritains anglais réunis dans la Providence Island Company commencent à coloniser San Andrés, Providencia et Santa Catalina. Dès les premières années, ils font venir des Africains réduits en esclavage. Les études sur la colonie décrivent le passage du travail de serviteurs sous contrat à une économie fondée sur l'esclavage. Les Espagnols prennent la colonie en 1641, puis plusieurs puissances se disputent l'archipel pendant des décennies. Au XVIIIe siècle, des planteurs jamaïcains s'y installent et y transfèrent d'autres Africains asservis. Une population d'ascendance africaine et antillaise, anglophone et protestante, se forme sur les îles. L'esclavage y est aboli en 1834. Les liens des Raizales avec l'Afrique viennent de cette histoire de déportations vers les Caraïbes, puis vers l'archipel.",
       "sources": [
         {
           "title": "Kupperman, K. O., « Providence Island, 1630-1641: The Other Puritan Colony »",
           "url": "https://www.cambridge.org/core/books/abs/providence-island-16301641/providence-island-company-and-its-colony-the-program/286208AFED06439921A3752C04DE44B7",
           "tier": "referenced",
+          "source_kind": "academic",
           "notes": "Ouvrage académique publié par Cambridge University Press (1993) ; son chapitre « Servants into Slaves » documente le basculement d'une main-d'œuvre sous contrat vers une main-d'œuvre africaine asservie sur Providence Island dès 1629-1630."
         },
         {
@@ -104,24 +105,28 @@
         "title": "SIL Ethnologue — Islander Creole English (icr)",
         "url": "https://www.ethnologue.com/language/icr/",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Confirme la classification du créole de San Andrés-Providencia comme créole à base lexicale anglaise."
       },
       {
         "title": "DANE — Población Negra, Afrocolombiana, Raizal y Palenquera",
         "url": "https://www.dane.gov.co/index.php/estadisticas-por-tema/enfoque-diferencial-e-interseccional/autorreconocimiento-etnico/poblacion-negra-afrocolombiana-raizal-y-palenquera",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "Institut national de statistique de la Colombie (DANE)."
       },
       {
         "title": "Minority Rights Group — Raizales in Colombia",
         "url": "https://minorityrights.org/communities/raizales/",
         "tier": "referenced",
+        "source_kind": "ngo",
         "notes": "Profil publié par une organisation non gouvernementale internationale de défense des droits des minorités ; source de l'auto-désignation du groupe, de l'évolution de sa part démographique sur l'archipel et de son héritage protestant."
       },
       {
         "title": "Universidad Nacional de Colombia, Análisis Político — « Colombia insular: construcción de identidad y movilización del pueblo raizal del archipiélago de San Andrés y Providencia »",
         "url": "https://revistas.unal.edu.co/index.php/anpol/article/view/58047",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article publié dans une revue académique universitaire ; documente la politique de « colombianisation » engagée en 1953 et la mobilisation identitaire raizale ayant abouti à la reconnaissance constitutionnelle de 1991."
       }
     ]

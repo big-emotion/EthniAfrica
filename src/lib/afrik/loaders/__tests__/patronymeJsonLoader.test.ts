@@ -40,7 +40,6 @@ function createSupabaseDouble(options: SupabaseDoubleOptions = {}) {
     afrik_patronyme_persons: [],
     afrik_patronyme_bearers: [],
     afrik_patronyme_alliances: [],
-    name_records: [],
   };
   let sequence = 0;
 
@@ -170,7 +169,6 @@ function createSupabaseDouble(options: SupabaseDoubleOptions = {}) {
     }
 
     const keyColumns: Record<string, string[]> = {
-      name_records: ["entity_type", "entity_id", "name_text", "name_type"],
       afrik_patronyme_peoples: ["patronyme_id", "people_id"],
       afrik_patronyme_countries: ["patronyme_id", "country_id"],
       afrik_patronyme_persons: ["patronyme_id", "person_id"],
@@ -362,14 +360,17 @@ describe("patronymeJsonLoader", () => {
     expect(database.sources).toContainEqual(
       expect.objectContaining({ tier: "unverified" })
     );
-    expect(database.rows.name_records).toContainEqual(
+    // A spelling is carried by its assertion alone; name_records is retired
+    // (REQ-196), and search reads the spelling from the assertion.
+    expect(database.assertions).toContainEqual(
       expect.objectContaining({
         entity_type: "patronyme",
         entity_id: "PAT_KEITA",
-        name_text: "Keïta",
-        name_type: "surname",
+        field_path: "spellings.0.keita",
+        statement: "Keïta",
       })
     );
+    expect(tables).not.toContain("name_records");
     expect(database.rows.afrik_patronyme_persons).toEqual([
       { patronyme_id: "PAT_KEITA", person_id: "PER_MODIBO_KEITA" },
     ]);
@@ -381,6 +382,24 @@ describe("patronymeJsonLoader", () => {
         tier: "unverified",
       }),
     ]);
+  });
+
+  // @req REQ-196
+  it("projects a dossier's nameHistory onto name_history, and null for one without", async () => {
+    const database = createSupabaseDouble();
+    const nameHistory = {
+      summary: "Le nom Keïta a une histoire, présentée plus bas.",
+      names: [],
+    };
+    const keita = validPatronymeFiche({ nameHistory }) as PatronymeDossier;
+
+    await loadPatronymes(database.client as never, {
+      dossiers: [keita, secondDossier()],
+      errors: [],
+    });
+
+    expect(database.rows.afrik_patronymes[0].name_history).toEqual(nameHistory);
+    expect(database.rows.afrik_patronymes[1].name_history).toBeNull();
   });
 
   // @req REQ-133
@@ -410,7 +429,6 @@ describe("patronymeJsonLoader", () => {
 
     expect(replay.errors).toEqual([]);
     expect(database.rows.afrik_patronymes).toHaveLength(2);
-    expect(database.rows.name_records).toHaveLength(2);
     expect(database.rows.afrik_patronyme_peoples).toHaveLength(2);
     expect(database.rows.afrik_patronyme_countries).toHaveLength(2);
     expect(database.rows.afrik_patronyme_persons).toHaveLength(1);
@@ -446,7 +464,6 @@ describe("patronymeJsonLoader", () => {
     expect(
       new Set(database.assertions.map(({ field_path }) => field_path)).size
     ).toBe(2);
-    expect(database.rows.name_records).toHaveLength(2);
   });
 
   // @req REQ-133

@@ -1,3 +1,4 @@
+import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__tests__/fixtures";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("@/lib/supabase/queries/afrik/languages", () => ({
@@ -116,6 +117,27 @@ describe("Language Service", () => {
         },
       ],
     });
+  });
+
+  // @req REQ-196
+  it("carries the fiche's nameHistory, and none when the fiche declares none", async () => {
+    const base = {
+      id: "yor",
+      name: "Yoruba",
+      family: { id: "FLG_BENOUECONGO", name: "Bénoué-Congo" },
+      spellingAliases: [],
+      content: {},
+    };
+    vi.mocked(getAfrikLanguageById).mockResolvedValueOnce({
+      ...base,
+      nameHistory: VALID_NAME_HISTORY,
+    });
+    vi.mocked(getAfrikLanguageById).mockResolvedValueOnce(base);
+
+    expect((await getLanguageById("yor"))?.nameHistory).toEqual(
+      VALID_NAME_HISTORY
+    );
+    expect(await getLanguageById("yor")).not.toHaveProperty("nameHistory");
   });
 
   // @req REQ-136

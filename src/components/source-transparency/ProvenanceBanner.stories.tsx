@@ -39,44 +39,9 @@ function census(
   };
 }
 
-/**
- * The norm. Every assertion rests on an official or referenced source, so the
- * banner states the total and stands back — this is the discretion the loud
- * state borrows its salience from.
- */
+/** The one state: the total, the last human review, the way to the sources. */
 // @req REQ-019
-export const Settled: Story = {
-  name: "Quiet — nothing below referenced",
-  args: {
-    language: "fr",
-    census: census({
-      official: 4,
-      referenced: 11,
-      unverified: 0,
-      needs_review: 0,
-    }),
-  },
-};
-
-/** One unverified assertion is enough to open the census. */
-// @req REQ-019
-export const OneWeakStanding: Story = {
-  name: "Loud — a single unverified assertion",
-  args: {
-    language: "fr",
-    census: census({
-      official: 9,
-      referenced: 6,
-      unverified: 1,
-      needs_review: 0,
-    }),
-  },
-};
-
-/** The worked example from the charter, at 430 px the census wraps. */
-// @req REQ-019
-export const FullCensus: Story = {
-  name: "Loud — all four standings",
+export const Default: Story = {
   args: {
     language: "fr",
     census: census({
@@ -91,7 +56,7 @@ export const FullCensus: Story = {
 /** A fiche nobody has read yet says so, rather than showing a blank date. */
 // @req REQ-019
 export const NeverReviewed: Story = {
-  name: "Loud — never reviewed by a person",
+  name: "Never reviewed by a person",
   args: {
     language: "fr",
     census: census(

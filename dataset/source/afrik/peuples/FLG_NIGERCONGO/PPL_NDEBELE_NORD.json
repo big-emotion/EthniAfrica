@@ -15,9 +15,9 @@
         "Ndebele Proper",
         "Matebele"
       ],
-      "originOfExonyms": "Le terme Matabele fut utilisé par les Britanniques pour désigner les Ndebele du Zimbabwe, dérivé du nom sotho-tswana 'Matebele' (préfixe pluriel 'ma-'). Mthwakazi est le nom donné par Mzilikazi à sa nouvelle nation (mot zoulou signifiant 'quelque chose qui est devenu grand dès sa conception'). Le terme Northern Ndebele est utilisé dans les milieux académiques pour distinguer ce groupe du Southern Ndebele d'Afrique du Sud.",
+      "originOfExonyms": "Le terme Matabele fut utilisé par les Britanniques pour désigner les Ndebele du Zimbabwe ; ce nom viendrait du nom sotho-tswana 'Matebele' (préfixe pluriel 'ma-'). Mthwakazi est le nom donné par Mzilikazi à sa nouvelle nation (un mot zoulou qui voudrait dire 'quelque chose qui est devenu grand dès sa conception'). Le terme Northern Ndebele est utilisé dans les milieux académiques pour distinguer ce groupe du Southern Ndebele d'Afrique du Sud.",
       "whyProblematic": "Le terme Ndebele au Zimbabwe (Northern Ndebele / Matabele) est distinct des Ndebele d'Afrique du Sud (Southern Ndebele). Ces deux groupes, bien que partageant une origine nguni commune, ont des histoires très différentes et leurs langues présentent des divergences notables. Au Zimbabwe, le terme Ndebele est parfois confondu avec d'autres groupes Nguni. La période Gukurahundi (1982-1987) a profondément politisé l'identité ndebele au Zimbabwe.",
-      "contemporaryUsage": "Le terme AmaNdebele est l'endonyme courant au Zimbabwe. amaMthwakazi désigne la nation historique. Le terme Northern Ndebele est utilisé dans les milieux académiques. L'identité ndebele au Zimbabwe est étroitement liée à la région du Matabeleland (provinces du Matabeleland Nord, Matabeleland Sud et Bulawayo). La langue isiNdebele (nde) est l'une des 16 langues officielles du Zimbabwe.",
+      "contemporaryUsage": "Au Zimbabwe, le peuple se nomme couramment AmaNdebele. amaMthwakazi désigne la nation historique. Les chercheurs emploient Northern Ndebele. L'identité ndebele y est étroitement liée au Matabeleland, qui comprend les provinces du Matabeleland Nord, du Matabeleland Sud et de Bulawayo. L'isiNdebele, dont le code est nde, est l'une des 16 langues officielles du Zimbabwe.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou (Zone S) — groupe Nguni (branche Khumalo/Ntungwa), très proche du zoulou",
       "historicalRegion": "Matabeleland (Zimbabwe sud-ouest) — entre les rivières Limpopo et Zambèze, de la dépression de Makgadikgadi à la rivière Save",
@@ -102,32 +102,38 @@
       {
         "title": "Encyclopaedia Britannica — Ndebele (Zimbabwean people)",
         "url": "https://www.britannica.com/topic/Ndebele-Zimbabwean-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Encyclopaedia Britannica — Lobengula",
         "url": "https://www.britannica.com/biography/Lobengula",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "South African History Online — Ndebele",
         "url": "https://sahistory.org.za/article/ndebele",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "EBSCO Research Starters — Lobengula",
         "url": "https://www.ebsco.com/research-starters/history/lobengula",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Ndebele, Tabele in Zimbabwe",
         "url": "https://joshuaproject.net/people_groups/13275/ZI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Northern Ndebele (nde)",
         "url": "https://www.ethnologue.com/language/nde/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

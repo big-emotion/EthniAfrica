@@ -12,7 +12,7 @@
         "Tanosy (forme abregee courante)",
         "Gens de l'ile ou Gens de la region de l'ile (traduction du terme Anosy qui designe une ile ou une region insulaire)"
       ],
-      "originOfExonyms": "Le nom Antanosy signifie literalement les gens d'Anosy. Anosy designe une ile (terme malgache) et par extension la region du sud-est de Madagascar bordee par l'ocean Indien. Fort Dauphin (Taolagnaro ou Faradofay) en est la ville principale. Le prefixe An- ou Anta- est commun a de nombreuses ethnies malgaches.",
+      "originOfExonyms": "Le nom Antanosy voudrait dire littéralement « les gens d'Anosy ». Anosy designe une ile (terme malgache) et par extension la region du sud-est de Madagascar bordee par l'ocean Indien. Fort Dauphin (Taolagnaro ou Faradofay) en est la ville principale. Le prefixe An- ou Anta- est commun a de nombreuses ethnies malgaches.",
       "whyProblematic": null,
       "contemporaryUsage": "Antanosy est l'appellation officielle reconnue. La forme abregee Tanosy est employee notamment dans les classifications linguistiques (dialecte tanosy, code ISO : txy).",
       "linguisticFamily": "FLG_AUSTRONESIENNE",
@@ -90,27 +90,32 @@
       {
         "title": "Joshua Project - Antanosy in Madagascar",
         "url": "https://joshuaproject.net/people_groups/10346",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue - Tanosy Malagasy (txy)",
         "url": "https://www.ethnologue.com/language/txy/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue - Malagasy macrolanguage (mlg)",
         "url": "https://www.ethnologue.com/language/mlg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook - Madagascar",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Britannica - Madagascar Ethnic Groups",
         "url": "https://www.britannica.com/place/Madagascar/Ethnic-groups",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

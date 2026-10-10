@@ -14,7 +14,7 @@
         "Misketto",
         "Basketo-Dokka"
       ],
-      "originOfExonyms": "Le terme Basketo est un exonyme utilisé par les voisins et dans la littérature académique. Les locuteurs se désignent eux-mêmes sous le nom de Masketo. Le terme Dokka-Dollo fait référence aux deux dialectes principaux de la langue et est parfois utilisé pour désigner l'ensemble du peuple.",
+      "originOfExonyms": "Les voisins et les publications de recherche emploient Basketo. Les personnes concernées se nomment Masketo. Dokka-Dollo renvoie aux deux principaux parlers de la langue et sert parfois à désigner l'ensemble du peuple.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Basketo est utilisé officiellement dans les divisions administratives éthiopiennes (Basketo Zone, autrefois Basketo special woreda). Il est couramment employé dans la littérature académique et par les organismes gouvernementaux.",
       "linguisticFamily": "FLG_OMOTIQUE",
@@ -89,17 +89,20 @@
       {
         "title": "Ethnologue — Basketo language (bst)",
         "url": "https://www.ethnologue.com/language/bst/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Azeb Amha et Dirk Bustorf : 'Basketo'. In: Encyclopaedia Aethiopica, vol. 1. Wiesbaden, 2003, pp. 499-500",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Haberland, Eike : 'Die Basketto und verwandte Stämme'. In: Altvölker Süd-Äthiopiens. Stuttgart, 1959, pp. 189-226",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "The Tribal Society — The Basketo people",

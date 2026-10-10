@@ -15,7 +15,7 @@
       "exonyms": ["Ciara", "C'ara", "Chara"],
       "originOfExonyms": "Tsara est l'auto-appellation du peuple dans leur propre langue. Les formes Ciara et C'ara sont des transcriptions académiques alternatives utilisées dans la linguistique comparative éthiopienne. Chara est la forme standardisée dans les documents gouvernementaux éthiopiens et la littérature anglophone.",
       "whyProblematic": null,
-      "contemporaryUsage": "Chara est le nom officiel utilisé dans l'administration éthiopienne de la région des Nations, Nationalités et Peuples du Sud (SNNPRS). Tsara est l'endonyme utilisé par la communauté dans sa langue maternelle."
+      "contemporaryUsage": "Chara est le nom utilisé par l'administration éthiopienne dans la région des Nations, Nationalités et Peuples du Sud (SNNPRS). Dans leur propre langue, les membres de la communauté se nomment Tsara."
     },
     "ethnicities": ["Chara", "Gimira"],
     "origins": {
@@ -72,27 +72,32 @@
       {
         "title": "Tsaara Language (CRA) – Ethnologue",
         "url": "https://www.ethnologue.com/language/cra/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Chara – Ethnologue subgroup",
         "url": "https://www.ethnologue.com/subgroup/1107/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Chara – Glottolog 5.2",
         "url": "https://glottolog.org/resource/languoid/id/char1269",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Appendix ISO 639-3 codes/Africa – Wiktionary",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Yilma, Aklilu – Sociolinguistic survey report on the Chara language of Ethiopia, SIL International, 2002",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

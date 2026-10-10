@@ -552,10 +552,6 @@ export function DiscoveryReader({
                   {entry.description[language]}
                 </p>
                 <p className={styles.source}>
-                  {entry.source?.tier === "official"
-                    ? words.official
-                    : words.referenced}
-                  {" · "}
                   {entry.source?.shortTitle ?? entry.source?.title}
                 </p>
                 {/* The player itself is the card's picture, drawn in the

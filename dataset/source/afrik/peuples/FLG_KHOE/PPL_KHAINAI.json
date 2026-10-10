@@ -86,7 +86,8 @@
       {
         "title": "Joshua Project — Gxana, llGana in Botswana",
         "url": "https://joshuaproject.net/countries/bc",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "!Khwa ttu — The San of Botswana",
@@ -96,17 +97,20 @@
       {
         "title": "The New Humanitarian — Culture under threat: Special Report on the San Bushmen",
         "url": "https://www.thenewhumanitarian.org/report/49005/botswana-culture-under-threat-special-report-san-bushmen-ii",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Glottolog — Gana language, code gana1257",
         "url": "https://glottolog.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "JSTOR — The Social History of the Khoisan in Botswana",
         "url": "https://www.jstor.org/stable/27255634",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Khoisan.org — The Khoikhoi and San ritual",

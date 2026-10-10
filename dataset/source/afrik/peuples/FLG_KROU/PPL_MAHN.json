@@ -17,7 +17,7 @@
         "Maa",
         "Manne"
       ],
-      "originOfExonyms": "Le terme Mano est l'exonyme colonial anglophone et français le plus courant, notamment en usage au Liberia. Mah ou Maan est l'auto-désignation. Yacouba (ou Mah-Yacouba) est un autre exonyme employé en Guinée, renvoyant à leur proche parenté avec les Dan/Yacouba. Mahn est la forme orthographiée francophone.",
+      "originOfExonyms": "Mano est le nom colonial le plus courant en anglais et en français, notamment au Liberia. Les personnes concernées se nomment Mah ou Maan. En Guinée, d'autres populations emploient aussi Yacouba ou Mah-Yacouba, en référence à leurs liens étroits avec les Dan/Yacouba. Mahn est une manière française d'écrire le nom.",
       "whyProblematic": "La confusion entre Mahn/Mano et les groupes Dan (Yacouba/Gio) vient de leurs origines communes mandé et de leurs liens culturels étroits. Les deux groupes cohabitent dans le comté de Nimba (Liberia) et sont parfois regroupés sous Mano-Dan.",
       "contemporaryUsage": "Mano est la dénomination la plus répandue dans la littérature scientifique et les médias. Maan est préféré par les locuteurs eux-mêmes. Au Liberia, le terme Mano est officiel dans les documents administratifs.",
       "linguisticFamily": "FLG_KROU",
@@ -91,22 +91,26 @@
       {
         "title": "Maan in Guinea – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/16121/GV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Maan in Liberia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/16121/LI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Omniglot – Mano language and alphabet, 2021",
         "url": "https://www.omniglot.com/writing/mano.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue – Maan language (mev), SIL International, 2024",
         "url": "https://www.ethnologue.com/language/mev/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

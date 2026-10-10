@@ -75,12 +75,14 @@
       {
         "title": "PeopleGroups.org - Anum-Boso of Ghana",
         "url": "https://peoplegroups.org/people_groups/pg013261/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project - Anum-Boso in Ghana",
         "url": "https://joshuaproject.net/people_groups/print/10357/GH",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Justice Ghana - The Story of Boso, Kwame Ampene",
@@ -90,12 +92,14 @@
       {
         "title": "Ghana Web - The historic town of Anum-Asamankese, 2021",
         "url": "https://www.ghanaweb.com/GhanaHomePage/NewsArchive/The-historic-town-of-Anum-Asamankese-1166749",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "101 Last Tribes - Guang people",
         "url": "https://www.101lasttribes.com/tribes/guang.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

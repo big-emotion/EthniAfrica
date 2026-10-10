@@ -57,8 +57,8 @@ curl -s -o /dev/null -w '%{http_code}\n' \
 ```
 
 **Migration `038_user_roles_rls_recursion_fix.sql` must be applied**, or every anonymous read of
-`migration_events` and `name_records` fails with `42P17` recursion. The rows load fine; you just
-cannot verify them through the UI. Probe by reading either table **with the anon key** — the
+`migration_events` fails with `42P17` recursion. The rows load fine; you just
+cannot verify them through the UI. Probe by reading the table **with the anon key** — the
 service role bypasses RLS and proves nothing.
 
 **Migration `039_restore_sources_title_unique.sql` must be applied**, or every `upsertSource`
@@ -100,7 +100,7 @@ All three are applied by a human, never auto-applied. Their current state per pr
 1. Get explicit approval for a write to the chosen environment.
 2. Take a snapshot that can restore the AFRIK tables: `afrik_language_families`,
    `afrik_languages`, `afrik_peoples`, `afrik_countries`, `afrik_people_countries` — plus
-   `migration_events`, `migration_event_peoples`, `name_records` and `afrik_people_relations`
+   `migration_events`, `migration_event_peoples` and `afrik_people_relations`
    when loading those corpora.
 3. Configure credentials for that one environment:
 
@@ -149,7 +149,6 @@ files on disk before applying** — a parser rejection shows up here as a count 
 ```bash
 ls dataset/source/afrik/migrations/*.json | wc -l   # expect 6
 ls dataset/source/afrik/relations/*.json | wc -l    # expect 12
-ls dataset/source/afrik/noms/*.json | wc -l         # expect 1 — but see below
 ```
 
 ---
@@ -269,7 +268,7 @@ silently go stale under a route that changed.
 
 `scripts/ci/seedEphemeralDatabase.ts` reuses `migrateAfrikToDatabase.ts`'s own exported
 `upsertLanguageFamilies` / `upsertPeoples` / `upsertCountries`, so a fiche seeded here carries the
-same classification-protection and assertion-writing logic a real sync does — the confidence chip
+same classification-protection and assertion-writing logic a real sync does — the source review chip
 on `PPL_WOLOF`'s ephemeral fiche is not a stub. It does **not** reuse that script's orchestration:
 the drift comparison and orphan scan there assume they are reading the whole corpus, and would
 misread a deliberately partial one as thousands of missing rows. Out of scope, on purpose:
@@ -439,25 +438,14 @@ were rejected during parsing or insertion — do not treat the run as successful
 | `afrik_people_relations`  | 12            |
 | `fiche_revisions`         | 18            |
 | `assertions`              | 18            |
-| `name_records`            | ~3 727        |
+| `afrik_people_names`      | ~3 700        |
 
-This row used to read **0**, on the reasoning that the only file in
-`dataset/source/afrik/noms/` was `PPL_YORUBA.json`, which carries `_meta.illustrative: true`
-and is skipped by design. That stopped being true. `name_records` now has three feeders, and a
-count near zero is a failure rather than the expected state:
-
-| Feeder                                                 | Rows   |
-| ------------------------------------------------------ | ------ |
-| `nameRecordJsonLoader` — 10 real dossiers in `noms/`   | 17     |
-| `patronymeJsonLoader` — one per spelling, `surname`    | 31     |
-| `peopleAppellationLoader` — derived from people fiches | ~3 679 |
-
-`PPL_YORUBA.json` is still illustrative and still skipped, so 10 of the 11 dossiers load.
-
-Note that the 31 `surname` rows sit in a partition the listing excludes: both
-`afrik_name_forms` and `afrik_name_type_counts` filter `where nr.entity_type = 'people'`, so
-they are present in the table and invisible in the ethnonym index (`/fr/atlas/appellations`)
-(ETNI-1821).
+`afrik_people_names` is a view over `afrik_peoples.name_index`, which the people upsert writes
+from each fiche (migration 101, ETNI-2023): its `nameHistory` names first, then the names the
+appellation grammar derives from `content.appellations`, citing the fiche's sources. A count
+near zero is a failure rather than the expected state. It replaced the `name_records` table,
+whose three feeders (`nameRecordJsonLoader`, `peopleAppellationLoader`, and the patronyme
+spellings) are retired; a family name's spellings live in their `spellings.*` assertions only.
 
 A `HEAD` request with `Prefer: count=exact` reads a count without fetching rows:
 
@@ -483,7 +471,8 @@ counts above are non-zero, the rows are present and RLS is blocking the read —
 A merge or rename of a `PPL_*` id is decided in git, in
 `dataset/source/afrik/_retired-identifiers.json`: the retired fiche is deleted, its successor
 absorbs it, every inbound reference is repointed, and the fiche page redirects the old URL to
-the successor's. `validateAfrikData.ts` (FR27 Retired identifiers) refuses a ledger whose retired
+the successor's. `next.config.ts` builds the API's redirects from the same ledger:
+`/api/v2/peoples/{retired}` and its sub-routes answer 308 to the successor's. `validateAfrikData.ts` (FR27 Retired identifiers) refuses a ledger whose retired
 ids still have a fiche or whose successors do not. None of that touches a database, and the
 automated syncs never pass `--prune`, so after the merge lands each target still serves the
 retired rows until a human removes them — in two steps, recette first, then production.
@@ -512,9 +501,9 @@ migration was not repointed in git.
 
 ### 2. The rows no foreign key reaches
 
-Seven tables key a `TEXT entity_id` to a people with no constraint, so their rows outlive the
-prune: `assertions`, `fiche_revisions`, `name_records`, `quiz_questions`, `flags`, `afrik_media`
-and `oral_narratives`. The public readers join `afrik_peoples`, so nothing stale is served, but
+Six tables key a `TEXT entity_id` to a people with no constraint, so their rows outlive the
+prune: `assertions`, `fiche_revisions`, `quiz_questions`, `flags`, `afrik_media` and
+`oral_narratives`. The public readers join `afrik_peoples`, so nothing stale is served, but
 the rows are dead weight and their counts drift the audits. Build the id list from the ledger
 and run this against the same target, in the SQL editor for recette and through the SSH tunnel
 `deploy-production.yml` uses for production (see `docs/runbooks/production-deploy.md`):
@@ -534,14 +523,12 @@ WITH retired(entity_id) AS (VALUES ('PPL_EXAMPLE_A'), ('PPL_EXAMPLE_B'))
 )
 , d1 AS (DELETE FROM assertions a       USING retired r WHERE a.entity_type = 'people' AND a.entity_id = r.entity_id RETURNING 1)
 , d2 AS (DELETE FROM fiche_revisions f  USING retired r WHERE f.entity_type = 'people' AND f.entity_id = r.entity_id RETURNING 1)
-, d3 AS (DELETE FROM name_records n     USING retired r WHERE n.entity_type = 'people' AND n.entity_id = r.entity_id RETURNING 1)
 , d4 AS (DELETE FROM flags fl           USING retired r WHERE fl.entity_type = 'people' AND fl.entity_id = r.entity_id RETURNING 1)
 , d5 AS (DELETE FROM afrik_media m      USING retired r WHERE m.entity_type = 'people' AND m.entity_id = r.entity_id RETURNING 1)
 , d6 AS (DELETE FROM oral_narratives o  USING retired r WHERE o.entity_type = 'people' AND o.entity_id = r.entity_id RETURNING 1)
 SELECT (SELECT count(*) FROM revoked) AS quiz_revoked,
        (SELECT count(*) FROM d1) AS assertions,
        (SELECT count(*) FROM d2) AS fiche_revisions,
-       (SELECT count(*) FROM d3) AS name_records,
        (SELECT count(*) FROM d4) AS flags,
        (SELECT count(*) FROM d5) AS afrik_media,
        (SELECT count(*) FROM d6) AS oral_narratives;
@@ -566,15 +553,13 @@ npx tsx --conditions=react-server scripts/migrateAfrikToDatabase.ts --target=pro
 npx tsx --conditions=react-server scripts/migrateAfrikToDatabase.ts --target=production --prune --apply
 ```
 
-Then the SQL above, through the tunnel. Forgetting this step leaves the retired rows served by
-`/api/v2/peoples/{id}` and listed in the sitemap while the pages redirect elsewhere.
+Then the SQL above, through the tunnel. Forgetting this step leaves the retired rows listed in
+the sitemap and the list endpoints while the pages and `/api/v2/peoples/{id}` redirect elsewhere.
 
 ---
 
 ## Known limitation
 
-`nameRecordJsonLoader` does not create a `fiche_revisions` row, unlike the migration and
-relation loaders. This is deliberate rather than an oversight: its assertions key to the
-_people_ fiche, and a name dossier is not a snapshot of that fiche, so which revision it should
-attach to is an unresolved modelling decision. It will matter the first time a real name dossier
-is authored.
+A people's names reach the database as `afrik_peoples.name_history` and `name_index`, not
+through the sources → assertions fabric, so they carry no assertion row. The readers build each
+name's evidence from the sources the fiche cites.

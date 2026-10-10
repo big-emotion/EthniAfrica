@@ -8,7 +8,7 @@
 import Link from "next/link";
 import { AutonymExonymHeading } from "@/components/ui/AutonymExonymHeading";
 import { ClassificationBadge } from "@/components/ui/classification-badge";
-import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
+import { SourceReviewChip } from "@/components/source-transparency/SourceReviewChip";
 import { getPeopleRoute } from "@/lib/routing";
 import { formatYearFr } from "@/lib/atlas/formatYearFr";
 import type {
@@ -72,9 +72,8 @@ export function MigrationEventCard({
         </p>
       )}
 
-      <ConfidenceChip
+      <SourceReviewChip
         id={`${event.id}-confidence`}
-        confidenceScore={confidence?.score ?? null}
         sourceCount={confidence?.sourceCount ?? null}
         lastHumanAuditAt={confidence?.lastHumanAuditAt ?? null}
         variant="hero"

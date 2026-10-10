@@ -14,7 +14,7 @@
         "Lagouane",
         "Logone-Birni Kotoko"
       ],
-      "originOfExonyms": "Le terme Logone vient du fleuve Logone sur les rives duquel vit ce peuple, et a ete largement utilise dans les sources coloniales francaises et les classifications linguistiques europeennes. Kotoko est le nom ethnique general adopte par plusieurs groupes riverains dont les Lagwan font partie. Lagwan designe plus specifiquement la langue et le sous-groupe linguistique Kotoko du sud.",
+      "originOfExonyms": "Le terme Logone viendrait du fleuve Logone, sur les rives duquel vit ce peuple ; il a été largement utilisé dans les sources coloniales francaises et les classifications linguistiques europeennes. Kotoko est le nom ethnique general adopte par plusieurs groupes riverains dont les Lagwan font partie. Lagwan designe plus specifiquement la langue et le sous-groupe linguistique Kotoko du sud.",
       "whyProblematic": null,
       "contemporaryUsage": "Les locuteurs lagwan se designent eux-memes ethniquement comme Kotoko. Le terme Lagwan est utilise dans les classifications linguistiques (Glottolog, Ethnologue). Logone-Birni est le nom de la ville principale de leur territoire au Cameroun.",
       "linguisticFamily": "FLG_TCHADIQUE",
@@ -99,32 +99,38 @@
       {
         "title": "Glottolog — Lagwan (lagw1237)",
         "url": "https://glottolog.org/resource/languoid/id/lagw1237",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Kotoko, Lagwan in Cameroon",
         "url": "https://joshuaproject.net/people_groups/print/12816/CM",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Peoplegroups.org — Kotoko-Logone of Chad",
         "url": "https://peoplegroups.org/people_groups/pg011389/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes — Kotoko people",
         "url": "https://www.101lasttribes.com/tribes/kotoko.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Lagwan (kot)",
         "url": "https://www.ethnologue.com/language/kot",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Wiktionary — ISO 639-3 codes Africa (kot classification)",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

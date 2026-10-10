@@ -14,7 +14,7 @@
         "Wo",
         "Oniyan (appellation linguistique)"
       ],
-      "originOfExonyms": "Le terme Bassari est un exonyme d'origine exterieure (probablement mandingue ou peul) utilise par les administrateurs coloniaux et repris en français. L'auto-designation be-liyan (ceux de la laterite) refere aux sols ferralitiques de leur territoire dans le pays de Kedougou.",
+      "originOfExonyms": "Bassari est un nom donné au peuple de l'extérieur, probablement par des populations mandingues ou peules. Les administrateurs coloniaux l'ont employé et il a été repris en français. Les personnes concernées se nomment be-liyan, qui signifierait ceux de la latérite, en référence aux sols riches en fer de leur territoire dans le pays de Kédougou.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Bassari est utilise en français et en anglais. Au Senegal, les Bassari sont associes au Pays Bassari (region de Kedougou). En Guinee, ils habitent le groupe de villages appele Bokore (ceux du Kore, societe d'initiation).",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -95,17 +95,20 @@
       {
         "title": "Joshua Project — Bassari in Senegal",
         "url": "https://joshuaproject.net/people_groups/10711/SG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Bassari in Guinea",
         "url": "https://joshuaproject.net/people_groups/10711/GV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "UNESCO — Bassari Country and the Cultural Landscape of Bassari, Fula and Bedik Communities (Senegal)",
         "url": "https://whc.unesco.org/en/list/1369",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "ISO 639-3 : code bsc (Bassari)",
@@ -115,7 +118,8 @@
       {
         "title": "ISO 639-3 codes Africa list",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

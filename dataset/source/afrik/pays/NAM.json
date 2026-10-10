@@ -4,8 +4,313 @@
   "nameEn": "Namibia",
   "nameOfficial": "République de Namibie (Republic of Namibia, Republiek van Namibië)",
   "summary": "La Namibie porte le nom du désert du Namib, « le vaste lieu » en langue nama. Peuplée de longue date par les Khoïsan puis par les migrations bantoues, elle fut colonie allemande du Sud-Ouest africain avant l'administration sud-africaine. Ovambo, Kavango, Herero, Damara, Nama et Himba y composent la population.",
-  "etymology": "Le nom \"Namibie\" vient du désert du Namib, qui borde la côte atlantique du pays. \"Namib\" est rapporté comme signifiant \"vaste lieu\" ou \"endroit vide\" en langue nama, selon des traductions qui varient. Le 12 juin 1968, l'Assemblée générale des Nations unies décide que le Territoire, jusque-là appelé Afrique du Sud-Ouest, sera désormais appelé Namibie ; le nom devient celui de l'État à l'indépendance en 1990. Auparavant, le territoire était appelé \"Afrique du Sud-Ouest\" (South West Africa, Suidwes-Afrika) pendant la colonisation sud-africaine.",
+  "etymology": "Le nom \"Namibie\" viendrait du désert du Namib, qui borde la côte atlantique du pays. \"Namib\" est rapporté comme signifiant \"vaste lieu\" ou \"endroit vide\" en langue nama, selon des traductions qui varient. Le 12 juin 1968, l'Assemblée générale des Nations unies décide que le Territoire, jusque-là appelé Afrique du Sud-Ouest, sera désormais appelé Namibie ; le nom devient celui de l'État à l'indépendance en 1990. Auparavant, le territoire était appelé \"Afrique du Sud-Ouest\" (South West Africa, Suidwes-Afrika) pendant la colonisation sud-africaine.",
   "nameOriginActor": "Le nom \"Namibie\" vient du désert du Namib, nommé par les Nama. Les Nations unies l'ont adopté pour le Territoire le 12 juin 1968 et il est devenu celui de l'État à l'indépendance en 1990, à la place de \"Afrique du Sud-Ouest\" (nom colonial sud-africain). Le nom \"Namibie\" a été proposé par les nationalistes namibiens.",
+  "nameHistory": {
+    "summary": "Le nom Namibie désigne un pays d'Afrique australe, la République de Namibie, qui tient son nom du désert du Namib, sur sa côte atlantique. D'autres noms existent : le territoire s'est appelé Sud-Ouest africain allemand, Deutsch-Südwestafrika, puis Sud-Ouest africain, South West Africa en anglais, jusqu'en 1968. Les sources que nous avons lues sur l'origine de ces noms sont peu nombreuses ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Namibie",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "Un nom tiré du désert du Namib, adopté par les Nations unies en 1968.",
+        "periodLabel": "Proclamé par les Nations unies en 1968 ; nom de l'État depuis 1990",
+        "accounts": [
+          {
+            "period": {
+              "from": 1990,
+              "to": null,
+              "label": "Depuis le 21 mars 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Namibie est celui de l'État indépendant depuis le 21 mars 1990, quand le territoire cesse d'être administré par l'Afrique du Sud, selon l'Histoire générale de l'Afrique et l'Office of the Historian.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 132, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances. Ligne Namibie : indépendante le 21/III/1990, puissance coloniale l'Afrique du Sud ; « (Sud-Ouest africain) Tutelle de l'ONU. Ancienne colonie allemande Deutsch-Südwestafrika. Differend entre l'Afrique du Sud et l'ONU. »"
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Namibia",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/namibia",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Les États-Unis reconnaissent la Namibie le 21 mars 1990, jour de son indépendance ; elle était auparavant sous souveraineté sud-africaine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Namibie désigne aujourd'hui l'État d'Afrique australe ; il est formé sur Namib, le nom du désert côtier, selon l'Atlas of Namibia. Nous n'avons trouvé qu'une explication du mot Namib lui-même ; nous la présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Place names, dans Atlas of Namibia: its land, water and life",
+                "author": "Atlas of Namibia Team, Namibia Nature Foundation",
+                "year": 2022,
+                "url": "https://atlasofnamibia.online/node/77",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas publié à Windhoek, lu dans sa version en ligne. « The name 'Namibia' is derived from the word 'Namib', which describes a vast open space in Khoekhoegowab, the Nama and Damara language. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1968,
+              "to": 1968,
+              "label": "12 juin 1968"
+            },
+            "era": "colonial",
+            "statement": "Le nom Namibie apparaît dans la résolution 2372 de l'Assemblée générale des Nations unies, qui proclame que, « conformément aux vœux de son peuple, le Sud-Ouest africain sera désormais appelé Namibie ». C'est la plus ancienne trace écrite de ce nom que le projet a lue. Le pays et ses peuples existaient bien avant ce nom.",
+            "formAsWritten": "Namibie",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Résolution 2372 (XXII), Question du Sud-Ouest africain, 12 juin 1968",
+                "author": "Nations unies, Assemblée générale",
+                "year": 1968,
+                "url": "https://documents.un.org/api/symbol/access?s=A/RES/2372(XXII)&l=fr&t=pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 2",
+                "notes": "Texte français officiel, lu dans le document des Nations unies. Paragraphe 1 : l'Assemblée « Proclame que, conformément aux vœux de son peuple, le Sud-Ouest africain sera désormais appelé \"Namibie\" »."
+              },
+              {
+                "title": "Resolution 2372 (XXII), Question of South West Africa, 12 June 1968",
+                "author": "Nations unies, Assemblée générale",
+                "year": 1968,
+                "url": "https://documents.un.org/api/symbol/access?s=A/RES/2372(XXII)&l=en&t=pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 1",
+                "notes": "Texte anglais officiel. Paragraphe 1 : l'Assemblée « Proclaims that, in accordance with the desires of its people, South West Africa shall henceforth be known as \"Namibia\" »."
+              },
+              {
+                "title": "Répertoire de la pratique des Nations unies, Supplément n° 4, vol. II, Article 77",
+                "author": "Nations unies",
+                "year": null,
+                "url": "https://legal.un.org/repertory/art77/english/rep_supp4_vol2_art77.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 219, note 1",
+                "notes": "Volume qui couvre les années 1966 à 1969. Le nom du Territoire est passé de South West Africa à Namibia le 12 juin 1968, par la résolution 2372 (XXII) de l'Assemblée générale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2023,
+              "label": "Rapporté en 2014 et en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Namibie viendrait d'un article du militant namibien Mburumba Kerina, qui demandait que le pays s'appelle Republic of Namib, d'après le désert du Namib, selon le journal The Namibian. Le journal rapporte deux versions de l'échange avec un président indonésien qui l'aurait précédé.",
+            "hypothesisGroup": "origine du nom Namibie",
+            "actors": [
+              {
+                "name": "Mburumba Kerina",
+                "role": "militant nationaliste namibien, présenté par la presse namibienne comme l'auteur du nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Man Who Named Namibia - Mburumba Kerina",
+                "author": "The Namibian",
+                "year": 2014,
+                "url": "https://www.namibian.com.na/the-man-who-named-namibia-mburumba-kerina/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse namibien du 9 septembre 2014. Le président indonésien Soekarno aurait dit à Kerina que « South-West Africa » n'était pas un nom mais une zone géographique ; Kerina écrit ensuite un article demandant que le pays s'appelle « Republic of Namib », et ses habitants « Namibians »."
+              },
+              {
+                "title": "If Doëseb, Why Not Kerina Too?",
+                "author": "Alexactus T. Kaure, The Namibian",
+                "year": 2023,
+                "url": "https://www.namibian.com.na/if-doeseb-why-not-kerina-too/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Tribune parue dans The Namibian le 3 décembre 2023. Kerina aurait répondu au président indonésien que le pays s'appellerait Namibia, nom tiré du désert du Namib ; l'article nomme le président Suharto, l'article de 2014 Soekarno."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Rapportée en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Namib voudrait dire « un vaste espace ouvert » en khoekhoegowab, la langue des Nama et des Damara, selon l'Atlas of Namibia.",
+            "hypothesisGroup": "sens du nom Namib",
+            "sources": [
+              {
+                "title": "Place names, dans Atlas of Namibia: its land, water and life",
+                "author": "Atlas of Namibia Team, Namibia Nature Foundation",
+                "year": 2022,
+                "url": "https://atlasofnamibia.online/node/77",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas publié à Windhoek, lu dans sa version en ligne. « The name 'Namibia' is derived from the word 'Namib', which describes a vast open space in Khoekhoegowab, the Nama and Damara language. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "1884"
+            },
+            "statement": "Avant le nom Namibie, une carte allemande de 1884 parle de Gross-Namaqua-Land, le Grand Namaqualand, pour désigner l'intérieur du sud du pays actuel, et de Klein Namaqualand au sud du fleuve Orange, selon cette carte de Bruno Hassenstein.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Gross-Namaqua-Land und das Gebiet des Hauses F. A. Lüderitz, hauptsächlich nach Th. Hahn",
+                "author": "Bruno Hassenstein",
+                "year": 1884,
+                "url": "https://archive.org/details/rcin.org.pl.WA51_225083_PAND22439-r1884_Gross-Namaqua-Land_216453",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "feuille unique, titre",
+                "notes": "Carte publiée à Gotha par Justus Perthes, datée du 9 septembre 1884, lue dans l'exemplaire numérisé de la bibliothèque numérique polonaise RCIN. Elle nomme Gross-Namaqua-Land l'intérieur, Angra Pequena et le territoire de la maison Lüderitz sur la côte, et Klein Namaqualand au sud du fleuve Orange."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sud-Ouest africain",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Jusqu'au 12 juin 1968",
+        "accounts": [
+          {
+            "period": {
+              "from": 1915,
+              "to": 1968,
+              "label": "De la conquête sud-africaine au 12 juin 1968"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sud-Ouest africain, South West Africa en anglais, désigne le territoire que l'Union sud-africaine conquiert pendant la première guerre mondiale, puis administre sous mandat de la Société des Nations, selon Michael Crowder. La résolution 2372 des Nations unies le remplace par Namibie le 12 juin 1968. Nous n'avons pas encore retrouvé la plus ancienne trace de ce nom.",
+            "aspect": "usage",
+            "formAsWritten": "South West Africa",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 12 : La première guerre mondiale et ses conséquences",
+                "author": "Michael Crowder",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 312-313 et 335",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé. L'Afrique du Sud envahit le « Sud-Ouest africain allemand (actuelle Namibie) » ; après la guerre, l'Union sud-africaine remplace l'Allemagne dans le Sud-Ouest africain, territoire sous mandat."
+              },
+              {
+                "title": "Resolution 2372 (XXII), Question of South West Africa, 12 June 1968",
+                "author": "Nations unies, Assemblée générale",
+                "year": 1968,
+                "url": "https://documents.un.org/api/symbol/access?s=A/RES/2372(XXII)&l=en&t=pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 1",
+                "notes": "Texte anglais officiel. Paragraphe 1 : l'Assemblée « Proclaims that, in accordance with the desires of its people, South West Africa shall henceforth be known as \"Namibia\" »."
+              },
+              {
+                "title": "Répertoire de la pratique des Nations unies, Supplément n° 4, vol. II, Article 77",
+                "author": "Nations unies",
+                "year": null,
+                "url": "https://legal.un.org/repertory/art77/english/rep_supp4_vol2_art77.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 219, note 1",
+                "notes": "Volume qui couvre les années 1966 à 1969. Le nom du Territoire est passé de South West Africa à Namibia le 12 juin 1968, par la résolution 2372 (XXII) de l'Assemblée générale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "21 mars 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Sud-Ouest africain figure encore entre parenthèses à côté de Namibie dans le tableau des indépendances africaines de l'Histoire générale de l'Afrique, qui date l'indépendance du 21 mars 1990.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 132, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances. Ligne Namibie : indépendante le 21/III/1990, puissance coloniale l'Afrique du Sud ; « (Sud-Ouest africain) Tutelle de l'ONU. Ancienne colonie allemande Deutsch-Südwestafrika. Differend entre l'Afrique du Sud et l'ONU. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sud-Ouest africain allemand",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "deu",
+        "namedBy": null,
+        "periodLabel": "Jusqu'en 1915",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1915,
+              "label": "Jusqu'à la conquête sud-africaine de 1914-1915"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sud-Ouest africain allemand, Deutsch-Südwestafrika en allemand, désigne la colonie allemande que les troupes sud-africaines envahissent pendant la première guerre mondiale, selon Michael Crowder. Nous n'avons pas encore retrouvé la plus ancienne trace de ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 12 : La première guerre mondiale et ses conséquences",
+                "author": "Michael Crowder",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 312-313",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé. Botha et Smuts engagent les forces sud-africaines pour envahir le « Sud-Ouest africain allemand (actuelle Namibie) » ; Swakopmund et Lüderitz Bay sont occupés peu après le début des hostilités, et la conquête du territoire dure six mois."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 132, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances. Ligne Namibie : indépendante le 21/III/1990, puissance coloniale l'Afrique du Sud ; « (Sud-Ouest africain) Tutelle de l'ONU. Ancienne colonie allemande Deutsch-Südwestafrika. Differend entre l'Afrique du Sud et l'ONU. »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -118,7 +423,7 @@
         "mainRegion": "Centre de la Namibie",
         "languages": ["Herero (her", "ISO 639-3)", "anglais"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Ovaherero\" est l'auto-appellation. \"Herero\" est l'exonyme le plus courant. Pas de terme péjoratif connu. Tradition pastorale forte, victimes du génocide allemand (1904-1908)."
+        "appellationRemarks": "Le peuple se nomme Ovaherero. Herero est le nom donné de l'extérieur le plus courant. Les sources ne signalent pas de sens insultant pour ces noms. L'élevage tient une place importante dans sa vie. Les Ovaherero ont subi le génocide perpétré par l'Allemagne de 1904 à 1908."
       },
       {
         "name": "Damara",
@@ -257,22 +562,26 @@
       {
         "title": "ONU – World Population Prospects 2024 (projections pour 2025)",
         "url": "https://population.un.org/wpp/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Namibia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Namibia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Namibia Statistics Agency – Recensement de la population et de l'habitat 2023, rapport principal",
         "url": "https://nsa.org.na/wp-content/uploads/2024/10/2023-Population-and-Housing-Census-Main-Report-28-Oct-2024.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples de Namibie",
@@ -287,34 +596,39 @@
       {
         "title": "CIA World Factbook – Namibia (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Répertoire de la pratique des Nations unies, Supplément n° 4, vol. II, Article 77 (note 1 et sa note de bas de page)",
         "url": "https://legal.un.org/repertory/art77/english/rep_supp4_vol2_art77.pdf",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Publication des Nations unies : le nom du Territoire est passé de South West Africa à Namibia le 12 juin 1968, par la résolution 2372 (XXII) de l'Assemblée générale."
       },
       {
         "title": "UNFPA – World Population Dashboard — Namibie",
         "url": "https://www.unfpa.org/data/NA",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Présidence de la Namibie – Netumbo Nandi-Ndaitwah",
         "url": "https://op.gov.na/president",
-
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Agence namibienne de statistique, Namibia 2023 Population and Housing Census, Main Report, octobre 2024, tableau 3.6 et annexe IV « Population distribution by ethnic groups and sex »",
         "url": "https://nsa.org.na/wp-content/uploads/2024/10/2023-Population-and-Housing-Census-Main-Report-28-Oct-2024.pdf",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "Le recensement a demandé à chaque personne son groupe. Parts calculées sur 3 022 401 personnes : Ovambo 50,4 % (somme des neuf lignes Aakolonkadhi, Aakwaluudhi, Aakwambi, Aakwanyama, Aambalantu, Aambadja, Aandonga, Aangandjera et Aawambo non classés ailleurs), Kavango 11,6 % (somme des lignes Hambukushu, Vambunza, Vagciriku, Vasambyu, Vakwangali et Vakavango non classés ailleurs). Herero 5,9 % (ligne Ovaherero), Damara 5,6 % (ligne « Damara, non classés ailleurs ») et Nama 3,1 % (ligne « Nama, non classés ailleurs ») : les sous-groupes Damara et Nama listés à part ne sont pas ajoutés, ces deux parts sont donc des minimums. Les Himba, les San et les Blancs restent dans « Autres ». Rapport lu le 6 octobre 2026."
       }
     ],

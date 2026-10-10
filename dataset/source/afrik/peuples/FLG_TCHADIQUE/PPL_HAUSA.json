@@ -9,10 +9,10 @@
       "mainName": "Hausa",
       "selfAppellation": "Hausawa (pluriel) ; Bahaushe (singulier masculin) ; Bahaushiya (singulier feminin)",
       "exonyms": [
-        "Ausa (exonyme historique en usage dans certaines sources europeennes anciennes)",
+        "Ausa (ancien nom européen employé dans certaines sources)",
         "Hausa-Fulani (terme politique moderne designant la classe dirigeante islamisee du nord du Nigeria, fruit de l'integration post-jihad de Sokoto)"
       ],
-      "originOfExonyms": "Le terme Hausa (aussi ecrit Haoussa en français) designe a la fois le peuple et sa langue. L'exonyme Ausa est une ancienne deformation phonetique europeenne. Le terme composite Hausa-Fulani est un label sociopolitique apparu apres le jihad de Usman dan Fodio (1804-1808), designant l'elite islamique bilingue du nord du Nigeria ; il ne reflète pas une fusion ethnique ou genetique reelle.",
+      "originOfExonyms": "Hausa, écrit aussi Haoussa en français, désigne le peuple et sa langue. Ausa est une ancienne manière européenne de transcrire le nom à partir de sa prononciation. Hausa-Fulani est apparu après le jihad d'Usman dan Fodio, de 1804 à 1808. Il désigne les groupes dirigeants musulmans bilingues du nord du Nigeria. Ce nom décrit une position sociale et politique ; il ne signifie pas que les deux peuples se seraient fondus en un seul ni qu'ils auraient une même origine génétique.",
       "whyProblematic": "L'amalgame entre Hausa et Fulani (Hausa-Fulani) est un raccourci politique courant dans le discours nigerian contemporain. Les Haoussa sont fondamentalement des agriculteurs sedentaires d'origine tchadique, tandis que les Peuls sont des pasteurs d'origine ouest-sahelienne. Leur integration politique post-jihad masque des distinctions culturelles, linguistiques et genetiques importantes.",
       "contemporaryUsage": "Hausa est utilise en francais (Haoussa), en anglais, en haoussa et dans toutes les langues de l'Afrique de l'Ouest comme designation standard. Hausawa est le terme que les locuteurs utilisent pour se designer eux-memes. Le haoussa est une des trois langues nationales du Nigeria et la deuxieme langue vehiculaire d'Afrique subsaharienne apres le swahili.",
       "linguisticFamily": "FLG_TCHADIQUE",
@@ -142,12 +142,14 @@
       {
         "title": "SIL Ethnologue — Hausa language (hau)",
         "url": "https://www.ethnologue.com/language/hau/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO — Durbar festival inscrit au patrimoine immatériel, décembre 2024",
         "url": "https://www.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "NKENNE — History of the Seven Original Hausa States",
@@ -157,7 +159,8 @@
       {
         "title": "European Union Agency for Asylum — Nigeria Country Focus",
         "url": "https://www.euaa.europa.eu/nigeria-country-focus/13-demographics",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Last Places — Durbar Festival",
@@ -167,18 +170,67 @@
       {
         "title": "Hausa and the Chadic Languages (IU ScholarWorks)",
         "url": "https://scholarworks.iu.edu/dspace/bitstreams/b175371d-4472-4485-abd1-f96698068937/download",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — Nigeria",
         "url": "https://www.cia.gov/the-world-factbook/countries/nigeria/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "UNESCO World Heritage Centre — La vieille ville de Zinder, quartier de Birni et le Sultanat",
         "url": "https://whc.unesco.org/en/tentativelists/5040/",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Soumission du Niger à la liste indicative hébergée par l'UNESCO (26 mai 2006) ; elle décrit l'architecture haoussa du quartier de Birni et des murailles en terre de 9 à 10 m de hauteur, sans constituer une inscription au patrimoine mondial."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Hausawa (pluriel) ; Bahaushe (singulier masculin) ; Bahaushiya (singulier féminin) est celui que ce peuple se donne. Son histoire est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Hausawa (pluriel) ; Bahaushe (singulier masculin) ; Bahaushiya (singulier féminin)",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hau",
+        "namedBy": null,
+        "shortLine": "Le nom que les Haoussa se donnent au pluriel : ceux qui parlent haoussa.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Terme employé par les locuteurs eux-mêmes ; « Hausa » (Haoussa en français) est la désignation standard dans toutes les langues d'Afrique de l'Ouest.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "SIL Ethnologue — Hausa (hau)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/hau/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": ""
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "Mahdi Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Page 295 : le mot Hawsa désignait d'abord la langue ; les gens du pays hawsa s'appelaient eux-mêmes Hausawa, « ceux qui parlent hawsa »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -14,7 +14,6 @@ import { ProvenanceBanner } from "@/components/source-transparency/ProvenanceBan
 import type { Language } from "@/types/shared";
 import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
 import { languageFicheCopy } from "@/lib/i18n/copy/languageFiche";
-import { ficheCopy } from "@/lib/i18n/copy/fiche";
 
 export interface LanguageDetailViewV2Props {
   data: LanguagePageData;
@@ -195,12 +194,7 @@ export function LanguageDetailViewV2({
           scroll past a source list to find out what to read next. */}
       {onward}
 
-      <FicheSection
-        title={copy.sources}
-        note={ficheCopy[language].sourceTierNote}
-        as="footer"
-        id="sources"
-      >
+      <FicheSection title={copy.sources} as="footer" id="sources">
         {data.sources.length > 0 ? (
           <FicheSources
             sources={data.sources}

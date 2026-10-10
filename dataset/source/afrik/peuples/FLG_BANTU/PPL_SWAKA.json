@@ -8,7 +8,7 @@
       "mainName": "Swaka",
       "selfAppellation": "Baswaka",
       "exonyms": ["Swaka"],
-      "originOfExonyms": "Le nom Swaka est l'ethnonyme courant utilise dans les sources coloniales et postcoloniales zambiennes. Le prefixe bantou Ba- (pluriel) donne Baswaka pour designer le peuple.",
+      "originOfExonyms": "Swaka est le nom courant du peuple dans les sources zambiennes de la période coloniale et après l'indépendance. Ba-, qui marque le pluriel, donne Baswaka pour désigner le peuple.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Swaka est utilise officiellement en Zambie. Le groupe est parfois classe dans le cluster Lamba-Lima-Swaka, reflectant ses affinites culturelles et linguistiques avec les Lamba.",
       "linguisticFamily": "FLG_BANTU",
@@ -72,22 +72,26 @@
       {
         "title": "Swaka in Zambia – Joshua Project 2025",
         "url": "https://joshuaproject.net/people_groups/15146",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Swaka of Zambia – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015635/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Factors Contributing to Language Endangerment of Minority Languages – Science Publishing Group, 2018",
         "url": "https://www.sciencepublishinggroup.com/article/10.11648/j.ijeedu.20180702.11",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "academic"
       },
       {
         "title": "Lala-Bisa – Glottolog",
         "url": "https://glottolog.org/resource/languoid/id/lala1264",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

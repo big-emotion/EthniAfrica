@@ -10,7 +10,7 @@
       "exonyms": [
         "Furu (terme generalement accepte dans les sources europeennes)"
       ],
-      "originOfExonyms": "Le terme Furu est utilise de facon coherente dans les sources linguistiques et ethnographiques pour designer ce groupe et sa langue. Il ne semble pas etre un exonyme pejoratif.",
+      "originOfExonyms": "Les recherches sur la langue et les modes de vie du groupe emploient toutes Furu pour le peuple et sa langue. Les sources ne présentent pas ce nom comme méprisant.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Furu est utilise dans la litterature linguistique (Ethnologue, Glottolog) et dans les profils missionnaires. La communaute est de petite taille et peu documentee. La langue furu est parfois classee dans le sous-groupe Kara des langues soudaniques centrales (Glottolog), ou dans le groupe Kresh (classification plus ancienne de Blench 2012).",
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
@@ -87,22 +87,26 @@
       {
         "title": "SIL Ethnologue — Furu language (fuu)",
         "url": "https://www.ethnologue.com/language/fuu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Furu",
         "url": "https://glottolog.org/resource/languoid/id/furu1242",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Furu in Congo, Democratic Republic of",
         "url": "https://joshuaproject.net/people_groups/11780/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Furu in Central African Republic",
         "url": "https://joshuaproject.net/people_groups/11780/CT",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Blench, Roger. Central Sudanic languages classification. 2012",
@@ -112,7 +116,8 @@
       {
         "title": "Britannica — Central Sudanic languages",
         "url": "https://www.britannica.com/topic/Central-Sudanic-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

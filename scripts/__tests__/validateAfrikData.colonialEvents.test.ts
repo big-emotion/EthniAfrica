@@ -16,48 +16,58 @@ function writePpl(root: string, flgFolder: string, pplId: string) {
   writeFileSync(join(dir, `${pplId}.json`), JSON.stringify({ id: pplId }));
 }
 
-function writeNameRecord(
+// A people fiche whose nameHistory tells a name imposed from outside, the way
+// the noms/ records were folded (REQ-196): the imposition is an account with
+// its imposer as an actor.
+function writeNameHistory(
   root: string,
   pplId: string,
-  overrides: Record<string, unknown> = {}
+  { imposed }: { imposed: boolean }
 ) {
-  const dir = join(root, "noms");
+  const dir = join(root, "peuples", "FLG_TEST");
   mkdirSync(dir, { recursive: true });
-  const record = {
-    _meta: {
-      format: "AFRIK JSON v2",
-      entity: "nom",
-      directives: "Voir DIRECTIVES-AFRIK.md",
-    },
-    id: pplId,
-    entityType: "people",
-    names: [
-      {
-        nameText: "Nom colonial",
-        nameType: "exonym",
-        languageOfOrigin: null,
-        meaning: null,
-        periodLabel: "Période coloniale",
-        imposedBy: "Administration coloniale",
-        impositionPeriod: "XIXe siècle",
-        whyProblematic: "Terme perçu comme réducteur.",
-        contemporaryUsage: null,
-        sortRank: 0,
-        sources: [
-          {
-            title: "Glottolog",
-            author: "Max Planck Institute",
-            year: 2024,
-            url: "https://glottolog.org/x",
-            tier: "official",
-            notes: "",
-          },
-        ],
-      },
-    ],
-    ...overrides,
+  const source = {
+    title: "Glottolog",
+    author: "Max Planck Institute",
+    year: 2024,
+    url: "https://glottolog.org/x",
+    tier: "official",
+    source_kind: "linguistic_reference",
   };
-  writeFileSync(join(dir, `${pplId}.json`), JSON.stringify(record));
+  const fiche = {
+    id: pplId,
+    nameHistory: {
+      summary: "Le nom Nom colonial a été donné de l'extérieur.",
+      names: [
+        {
+          nameText: "Nom colonial",
+          nameStatus: "former",
+          selfGiven: false,
+          languageOfOrigin: null,
+          namedBy: null,
+          accounts: [
+            imposed
+              ? {
+                  period: { from: null, to: null, label: "XIXe siècle" },
+                  statement: "Terme perçu comme réducteur.",
+                  aspect: "imposition",
+                  actors: [
+                    { name: "Administration coloniale", role: "impose ce nom" },
+                  ],
+                  sources: [source],
+                }
+              : {
+                  period: { from: null, to: null, label: "Usage contemporain" },
+                  statement: "Nom employé aujourd'hui.",
+                  aspect: "usage",
+                  sources: [source],
+                },
+          ],
+        },
+      ],
+    },
+  };
+  writeFileSync(join(dir, `${pplId}.json`), JSON.stringify(fiche));
 }
 
 function validColonialFiche(
@@ -138,8 +148,9 @@ describe("validateAfrikData – colonial-event checks (CR3-CR5)", () => {
     });
 
     // @req REQ-088
-    it("passes when an imposed_name event references a PPL id with an existing name record", () => {
-      writeNameRecord(tmpDir, "PPL_TEST");
+    // @req REQ-196
+    it("passes when an imposed_name event references a PPL id whose name history tells an imposed name", () => {
+      writeNameHistory(tmpDir, "PPL_TEST", { imposed: true });
       writeFiche(tmpDir, "imposed.json", validColonialFiche("imposed_name"));
 
       const result = checkColonialEventCr3(tmpDir);
@@ -161,33 +172,9 @@ describe("validateAfrikData – colonial-event checks (CR3-CR5)", () => {
     });
 
     // @req REQ-088
-    it("rejects an imposed_name event whose referenced PPL has a name record with no imposed entry", () => {
-      writeNameRecord(tmpDir, "PPL_TEST", {
-        names: [
-          {
-            nameText: "Yorùbá",
-            nameType: "endonym",
-            languageOfOrigin: null,
-            meaning: null,
-            periodLabel: "Usage contemporain",
-            imposedBy: null,
-            impositionPeriod: null,
-            whyProblematic: null,
-            contemporaryUsage: null,
-            sortRank: 0,
-            sources: [
-              {
-                title: "Ethnologue",
-                author: "SIL International",
-                year: 2024,
-                url: "https://ethnologue.com/x",
-                tier: "official",
-                notes: "",
-              },
-            ],
-          },
-        ],
-      });
+    // @req REQ-196
+    it("rejects an imposed_name event whose referenced PPL has a name history with no imposed name", () => {
+      writeNameHistory(tmpDir, "PPL_TEST", { imposed: false });
       writeFiche(tmpDir, "imposed.json", validColonialFiche("imposed_name"));
 
       const result = checkColonialEventCr3(tmpDir);

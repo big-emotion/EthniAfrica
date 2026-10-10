@@ -15,7 +15,7 @@
         "Yagoua",
         "Kirdi (terme exterieur, desapprouve)"
       ],
-      "originOfExonyms": "Le terme Banana vient de la reputation d'hospitalite des Masa : il signifie amical en certaines langues voisines. Yagoua designe la ville principale de leur territoire (Yagoua, Cameroun). Kirdi est un terme pejoratif d'origine arabo-peule signifiant paien, utilise pour designer les peuples non-muslmans du nord du Cameroun — terme rejete par les populations concernees. Masana est l'endonyme collectif le plus repandu.",
+      "originOfExonyms": "Banana viendrait de la réputation d'hospitalité des Masa et signifierait amical dans certaines langues voisines. Yagoua désigne la principale ville de leur territoire, au Cameroun. Kirdi est un nom méprisant d'origine arabo-peule, qui signifierait païen. Il a été donné aux peuples non musulmans du nord du Cameroun, qui le rejettent. Le groupe se nomme le plus souvent Masana.",
       "whyProblematic": "Le terme Kirdi est considere desapprouvant et stigmatisant. Il a ete utilise par l'administration coloniale et par les populations islamises pour designer les peuples non-musulmans ou partiellement musulmans du nord du Cameroun et du sud du Tchad.",
       "contemporaryUsage": "Masa ou Masana sont les termes preferes par le groupe lui-meme. Le terme Massa (avec double s) est souvent utilise dans la litterature francophone scientifique. Yagoua designe couramment les Masa du nord du Cameroun.",
       "linguisticFamily": "FLG_TCHADIQUE",
@@ -107,17 +107,20 @@
       {
         "title": "UNESCO ICH — Guruna, pratique des retraites pastorales (2025)",
         "url": "https://ich.unesco.org/en/RL/guruna-a-practice-of-pastoral-socio-cultural-and-artistic-retreats-centered-on-livestock-among-the-massa-02260",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "SIL Ethnologue — Masana (mcn)",
         "url": "https://www.ethnologue.com/language/mcn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Masa in Chad",
         "url": "https://joshuaproject.net/people_groups/13560/CD",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Study.com — Chadic Languages",
@@ -127,12 +130,14 @@
       {
         "title": "Biogreat TV — History of the Masa tribe of Cameroon and Chad (YouTube)",
         "url": "https://www.youtube.com/watch?v=JsYP_8AIsxw",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Tokna Massana Facebook group — Guruna/Guru walla",
         "url": "https://www.facebook.com/groups/toknamassana.officiel/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

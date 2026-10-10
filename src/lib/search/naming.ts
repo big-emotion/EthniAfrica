@@ -76,6 +76,54 @@ export interface SearchNameRecord {
   evidence: SearchEvidence[];
 }
 
+/** A name as the search sheet shows it, before evidence is attached. */
+export type ToldName = Omit<
+  SearchNameRecord,
+  "id" | "entityType" | "entityId" | "evidence"
+>;
+
+function filledText(value: unknown): string | undefined {
+  return typeof value === "string" && value.trim() ? value : undefined;
+}
+
+/**
+ * A name record (a nameHistory name folded by `nameRecordsFromHistory`, or a
+ * people's name index entry) in the shape the naming readers consume. Shared
+ * by the search sheet and the place page so the two read a name alike.
+ */
+// @req REQ-196
+export function toldName(entry: {
+  nameText: string;
+  nameType: string;
+  languageOfOrigin: string | null;
+  meaning: string | null;
+  periodLabel: string | null;
+  shortLine?: string;
+  imposedBy: string | null;
+  impositionPeriod: string | null;
+  whyProblematic: string | null;
+  contemporaryUsage: string | null;
+}): ToldName {
+  return {
+    form: entry.nameText,
+    kind: entry.nameType as SearchNameRecord["kind"],
+    ...(filledText(entry.languageOfOrigin)
+      ? { languageOfOrigin: entry.languageOfOrigin }
+      : {}),
+    ...(filledText(entry.meaning) ? { meaning: entry.meaning } : {}),
+    ...(filledText(entry.periodLabel)
+      ? { periodLabel: entry.periodLabel }
+      : {}),
+    ...(filledText(entry.shortLine) ? { shortLine: entry.shortLine } : {}),
+    ...(filledText(entry.imposedBy) ? { imposedBy: entry.imposedBy } : {}),
+    ...(filledText(entry.impositionPeriod)
+      ? { impositionPeriod: entry.impositionPeriod }
+      : {}),
+    problematic: Boolean(filledText(entry.whyProblematic)),
+    usedToday: Boolean(filledText(entry.contemporaryUsage)),
+  };
+}
+
 export interface NamingOriginFact {
   languageCode?: string;
   meaning?: string;
@@ -121,7 +169,11 @@ export interface NamingPresentation {
 export interface NamingProjection {
   /** The name the thing gives itself, where the corpus records one. */
   selfGiven?: string;
-  /** Every other form, in the order the fiche lists them. Never reordered. */
+  /**
+   * Every other form, in the order the fiche lists them. The projection never
+   * reorders them; the search answer alone puts the searched form first
+   * (`orderForSearch`, doctrine §1.1).
+   */
   forms: NamingForm[];
   /** Where the forms come from, as the curator wrote it. */
   origin?: string;
@@ -291,6 +343,8 @@ function basePresentationForms(
   const forms: NamingPresentationForm[] = [];
   const seen = new Set<string>();
 
+  // Self-given first is the order every surface without a query shows. Where
+  // the reader searched, `orderForSearch` puts the searched form before it.
   if (legacy.selfGiven && type !== "patronyme") {
     seen.add(formKey(legacy.selfGiven));
     forms.push({
@@ -507,6 +561,15 @@ export function readNaming(
         problem: text(
           contentRecord.whyProblematic ?? rootRecord.whyProblematic
         ),
+      };
+      break;
+    // A word's names are its nameHistory's, which arrive as `nameRecords`;
+    // the block's summary is the only prose it has about where they come
+    // from (REQ-196).
+    case "word":
+      legacy = {
+        ...EMPTY,
+        origin: text(record(rootRecord.nameHistory).summary),
       };
       break;
     default:

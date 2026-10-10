@@ -1,0 +1,188 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "lieu",
+    "directives": "Fiche lieu (REQ-193, DEC-069). Une seule explication du nom trouvée (go, fromager ; gnoa, les hommes), donnée par Dozon 1985 p. 32 et reprise sous d'autres formes (Go-gnoa chez Borremans 1987 via Wikipédia, Gognoa chez Rezo-Ivoire) ; aucun récit oral recueilli directement, aucun document de 1912 lu. Borremans non consulté. À compléter par une source linguistique bété et par les rapports militaires de 1912-1913."
+  },
+  "id": "LOC_GAGNOA",
+  "placeType": "ville",
+  "nameMain": "Gagnoa",
+  "countryId": "CIV",
+  "associatedPeoples": [
+    {
+      "peopleId": "PPL_BETE",
+      "relation": "Le poste de Gagnoa fut fondé en 1912 en bordure des terres des Niabré, une tribu bété, selon l'ethnologue Jean-Pierre Dozon ; les Bété sont la population autochtone du département."
+    }
+  ],
+  "summary": "Gagnoa est une ville du centre-ouest de la Côte d'Ivoire, en pays bété, née d'un poste militaire français fondé en 1912. Son nom viendrait du bété et parlerait du fromager, un grand arbre de la forêt, mais une seule explication en a été trouvée.",
+  "gaps": [
+    {
+      "field": "nameHistory.names[0].namedBy",
+      "reason": "Nous ne savons pas qui a donné ce nom, ni si le village sur lequel le poste fut fondé le portait déjà."
+    },
+    {
+      "field": "nameHistory.names[0].accounts",
+      "reason": "Nous ne connaissons pas de document de 1912 qui porte le nom Gagnoa. La date de fondation du poste est donnée par un historien."
+    },
+    {
+      "field": "nameHistory.names[0].accounts",
+      "reason": "Le sens « les hommes du fromager » vient d'un ethnologue et de sites généralistes. Nous n'avons trouvé ni linguiste du bété ni récit recueilli sur place qui l'explique."
+    },
+    {
+      "field": "nameHistory.names[0].accounts",
+      "reason": "Nous ne savons pas comment s'appelait le village qui occupait le lieu avant le poste."
+    },
+    {
+      "field": "nameHistory.names[0].pronunciation",
+      "reason": "Nous n'avons pas trouvé de source pour la prononciation du nom en bété."
+    }
+  ],
+  "sources": [
+    {
+      "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+      "author": "Jean-Pierre Dozon",
+      "year": 1985,
+      "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Paris, Karthala et ORSTOM. Pages 32, 269 et 270, lues sur le texte intégral publié par l'IRD. Enquête de terrain menée dans la région de Gagnoa à partir de 1970."
+    },
+    {
+      "title": "Gagnoa",
+      "author": "Wikipédia (français)",
+      "year": null,
+      "url": "https://fr.wikipedia.org/wiki/Gagnoa",
+      "tier": "unverified",
+      "source_kind": "encyclopedia",
+      "notes": "Consulté le 9 octobre 2026. Pour l'origine du nom, l'article renvoie au Grand dictionnaire encyclopédique de la Côte d'Ivoire de Raymond Borremans (tome 3, 1987, p. 100), que nous n'avons pas consulté."
+    },
+    {
+      "title": "Gagnoa (Rezo-Ivoire)",
+      "author": "Rezo-Ivoire",
+      "year": null,
+      "url": "https://rezoivoire.net/ivoire/villes-villages/1826/gagnoa.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Page de présentation de la ville, sans auteur, sans date et sans source citée."
+    },
+    {
+      "title": "Département de Gagnoa",
+      "author": "DGDDL, Côte d'Ivoire",
+      "year": 2010,
+      "url": "http://dgddl.gouv.ci/documentation/2010110412555520101104125555fromager-gagnoa.pdf",
+      "tier": "referenced",
+      "source_kind": "government",
+      "notes": "Fiche de présentation du département, publiée en 2010 sur le site de l'administration ivoirienne de la décentralisation. Elle nomme les Bété comme population autochtone et ne parle pas de l'origine du nom."
+    }
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gagnoa est celui d'une ville du centre-ouest de la Côte d'Ivoire, en pays bété ; nous ne lui connaissons pas d'autre nom. L'ethnologue Jean-Pierre Dozon le fait venir du bété et le rattache au fromager ; nous présentons son explication plus bas.",
+    "names": [
+      {
+        "nameText": "Gagnoa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "btg",
+        "namedBy": null,
+        "shortLine": "Un nom bété qui voudrait dire « les hommes du fromager », selon l'ethnologue Jean-Pierre Dozon.",
+        "periodLabel": "Depuis 1912 au moins",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Gagnoa désigne une ville du centre-ouest de la Côte d'Ivoire. Elle est le chef-lieu de la région du Gôh, autrefois appelée région du Fromager.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gagnoa",
+                "author": "Wikipédia (français)",
+                "year": null,
+                "url": "https://fr.wikipedia.org/wiki/Gagnoa",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Introduction et section Situation, consultées le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Début 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gagnoa est celui d'un poste militaire français fondé au début de 1912, en bordure des terres des Niabré, pendant la conquête du pays bété, selon l'ethnologue Jean-Pierre Dozon. C'est la plus ancienne trace de ce nom que nous connaissons ; le lieu était habité avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32, 269-270",
+                "notes": "« C'est dans ce mouvement de conquête qu'est fondé, début 1912, le poste de Gagnoa, situé sur la frange orientale de la tribu Niabré » (p. 269). L'auteur ne cite pas le document de 1912."
+              },
+              {
+                "title": "Gagnoa (Rezo-Ivoire)",
+                "author": "Rezo-Ivoire",
+                "year": null,
+                "url": "https://rezoivoire.net/ivoire/villes-villages/1826/gagnoa.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Donne aussi 1912 pour la création du poste militaire, sans source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1912,
+              "label": "Avant 1912"
+            },
+            "statement": "Avant le nom Gagnoa, un village occupait déjà ce lieu, aux confins des terres des Niabré, selon l'ethnologue Jean-Pierre Dozon. Il ne dit pas comment s'appelait ce village.",
+            "before": true,
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32, 269",
+                "notes": "« Poste militaire créé en 1912 sur l'emplacement d'un village traditionnel » (p. 32)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date inconnue"
+            },
+            "statement": "Le nom Gagnoa voudrait dire « les hommes du fromager » en bété : go serait le fromager, et gnoa les hommes, selon l'ethnologue Jean-Pierre Dozon.",
+            "hypothesisGroup": "origine du nom Gagnoa",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "notes": "« En bété, Gagnoa signifie littéralement les hommes du fromager ; go : fromager, gnoa : les hommes. » L'auteur ne dit pas de qui il tient cette explication."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

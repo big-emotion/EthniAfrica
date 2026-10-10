@@ -3,11 +3,13 @@
  *
  * Data is processed in AFRIK hierarchy order:
  * language families → languages → peoples → people/language relations →
- * countries → people/country relations → persons → patronymes → migration
- * events (every normalized join is loaded only after its FK parents exist).
+ * countries → people/country relations → places → words → persons →
+ * patronymes → migration events (every normalized join is loaded only after its FK parents
+ * exist).
  */
 
 import { config } from "dotenv";
+import { assertCorpusLanguage } from "./ci/checkPlainLanguage";
 import { mkdirSync, writeFileSync } from "fs";
 import { join, resolve } from "path";
 
@@ -24,12 +26,7 @@ import {
   type LanguageLoadReport,
 } from "@/lib/afrik/loaders/languageProvenanceLoader";
 import { loadAllPeoples } from "@/lib/afrik/loaders/peopleLoader";
-import { loadNameRecords } from "@/lib/afrik/loaders/nameRecordJsonLoader";
-import {
-  loadPeopleAppellations,
-  emptyAppellationLoadReport,
-  type AppellationLoadReport,
-} from "@/lib/afrik/loaders/peopleAppellationLoader";
+import { peopleNameIndex } from "@/lib/afrik/peopleNameIndex";
 import {
   loadAllPatronymeDossiers,
   loadPatronymes,
@@ -44,6 +41,18 @@ import {
   loadAllPersonDossiers,
   loadPersons,
 } from "@/lib/afrik/loaders/personJsonLoader";
+import {
+  loadAllPlaceFiches,
+  loadPlaces,
+  type PlaceBatch,
+  type PlaceLoadReport,
+} from "@/lib/afrik/loaders/placeJsonLoader";
+import {
+  loadAllWordFiches,
+  loadWords,
+  type WordBatch,
+  type WordLoadReport,
+} from "@/lib/afrik/loaders/wordJsonLoader";
 import {
   loadAllRelationFiles,
   loadRelations,
@@ -124,6 +133,18 @@ export interface CorpusOrphanReport {
   deleted: number;
 }
 
+/**
+ * What the people stage made of the fiches' appellations prose: how many names
+ * reached the name index, and which segments or fiches a curator must fix.
+ */
+export interface AppellationLoadReport {
+  total: number;
+  inserted: number;
+  /** Segments the grammar declined to read as a name, prefixed by fiche id. */
+  rejected: string[];
+  errors: string[];
+}
+
 export interface MigrationReport {
   languageFamilies: MigrationSectionReport;
   languages: LanguageLoadReport;
@@ -133,9 +154,10 @@ export interface MigrationReport {
   relations: MigrationSectionReport;
   peopleRelations: PeopleRelationsSectionReport;
   migrations: MigrationSectionReport;
-  names: MigrationSectionReport;
   appellations: AppellationLoadReport;
   persons: MigrationSectionReport;
+  places: PlaceLoadReport;
+  words: WordLoadReport;
   patronymes: PatronymeLoadReport;
   dossiers: DossierLoadReport;
   protectedDrift: {
@@ -190,9 +212,10 @@ export function emptyMigrationReport(): MigrationReport {
     relations: { total: 0, inserted: 0, errors: [] },
     peopleRelations: { total: 0, inserted: 0, errors: [], orphans: [] },
     migrations: { total: 0, inserted: 0, errors: [] },
-    names: { total: 0, inserted: 0, errors: [] },
-    appellations: emptyAppellationLoadReport(),
+    appellations: { total: 0, inserted: 0, rejected: [], errors: [] },
     persons: { total: 0, inserted: 0, errors: [] },
+    places: { total: 0, inserted: 0, errors: [] },
+    words: { total: 0, inserted: 0, errors: [] },
     dossiers: { total: 0, inserted: 0, chapters: 0, errors: [] },
     patronymes: {
       total: 0,
@@ -458,6 +481,7 @@ export async function upsertLanguageFamilies(
             ? { classification_status: classificationStatus }
             : {}),
           content: family.content,
+          name_history: family.nameHistory ?? null,
           updated_at: new Date().toISOString(),
         },
         { onConflict: "id" }
@@ -521,6 +545,8 @@ export async function upsertPeoples(
         people.content?.sources
       ));
 
+    const nameIndex = peopleNameIndex(people);
+
     try {
       const { error } = await supabase.from("afrik_peoples").upsert(
         {
@@ -532,15 +558,28 @@ export async function upsertPeoples(
             : {}),
           content: people.content,
           spelling_aliases: people.content.appellations?.spellingAliases ?? [],
+          name_history: people.nameHistory ?? null,
+          name_index: nameIndex.entries,
           updated_at: new Date().toISOString(),
         },
         { onConflict: "id" }
       );
 
+      for (const segment of nameIndex.rejected) {
+        report.appellations.rejected.push(`${people.id}: ${segment}`);
+      }
+      if (nameIndex.unsourced) {
+        report.appellations.errors.push(
+          `${people.id}: fiche declares no source with a tier`
+        );
+      }
+      report.appellations.total += nameIndex.entries.length;
+
       if (error) {
         report.peoples.errors.push(`${people.id}: ${error.message}`);
       } else {
         report.peoples.inserted += 1;
+        report.appellations.inserted += nameIndex.entries.length;
         if (mayWriteClassification) {
           resolved.add(people.id);
         }
@@ -551,6 +590,10 @@ export async function upsertPeoples(
   });
 
   report.peoples.errors.sort();
+  // Lanes finish in whatever order the database answers; a curator diffs this
+  // list between runs.
+  report.appellations.rejected.sort();
+  report.appellations.errors.sort();
   report.protectedDrift.peoples = forgetResolvedDrift(
     report.protectedDrift.peoples,
     resolved
@@ -577,6 +620,7 @@ export async function upsertCountries(
           etymology: country.etymology ?? null,
           name_origin_actor: country.nameOriginActor ?? null,
           content: country.content,
+          name_history: country.nameHistory ?? null,
           updated_at: new Date().toISOString(),
         },
         { onConflict: "id" }
@@ -855,6 +899,8 @@ const STRUCTURAL_STAGES = [
   "peoples",
   "peopleLanguages",
   "countries",
+  "places",
+  "words",
   "patronymes",
 ] as const;
 
@@ -867,7 +913,6 @@ const EDITORIAL_STAGES = [
   "relations",
   "peopleRelations",
   "migrations",
-  "names",
   "appellations",
   "persons",
 ] as const;
@@ -925,6 +970,38 @@ export function classifySyncOutcome(report: MigrationReport): SyncOutcome {
   };
 }
 
+/**
+ * A fiche the place model refuses never reaches `loadPlaces`; it is counted
+ * and reported beside the ones the loader refuses, so no place goes missing
+ * from the site without a line saying why.
+ */
+async function loadPlaceBatch(
+  supabase: AdminClient,
+  batch: PlaceBatch,
+  options: Parameters<typeof loadPlaces>[2]
+): Promise<PlaceLoadReport> {
+  const loaded = await loadPlaces(supabase, batch.places, options);
+  return {
+    total: loaded.total + batch.errors.length,
+    inserted: loaded.inserted,
+    errors: [...batch.errors, ...loaded.errors],
+  };
+}
+
+/** As for places: a fiche the word model refuses is reported, never dropped. */
+async function loadWordBatch(
+  supabase: AdminClient,
+  batch: WordBatch,
+  options: Parameters<typeof loadWords>[2]
+): Promise<WordLoadReport> {
+  const loaded = await loadWords(supabase, batch.words, options);
+  return {
+    total: loaded.total + batch.errors.length,
+    inserted: loaded.inserted,
+    errors: [...batch.errors, ...loaded.errors],
+  };
+}
+
 function saveErrorReport(report: MigrationReport): string {
   const logsDir = join(process.cwd(), "dataset", "source", "afrik", "logs");
   mkdirSync(logsDir, { recursive: true });
@@ -943,6 +1020,7 @@ export async function migrateAfrikToDatabase(
   options: MigrationOptions
 ): Promise<MigrationReport> {
   const syncTarget = resolveAfrikSyncTarget(options.target);
+  assertCorpusLanguage();
 
   const dryRun = options.dryRun ?? true;
   const prune = options.prune ?? false;
@@ -976,6 +1054,8 @@ export async function migrateAfrikToDatabase(
   report.persons.total = personDossiers.length;
 
   const patronymeBatch = loadAllPatronymeDossiers();
+  const placeBatch = loadAllPlaceFiches();
+  const wordBatch = loadAllWordFiches();
   const dossierBatch = loadAllDossiers();
 
   const sources = sourceSnapshot(languageFamilies, peoples, countries);
@@ -1024,6 +1104,14 @@ export async function migrateAfrikToDatabase(
     report.dossiers = await loadDossiers(supabase, dossierBatch, {
       dryRun: true,
     });
+    report.places = await loadPlaceBatch(supabase, placeBatch, {
+      dryRun: true,
+      references: {
+        peopleIds: new Set(peoples.map(({ id }) => id)),
+        countryIds: new Set(countries.map(({ id }) => id)),
+      },
+    });
+    report.words = await loadWordBatch(supabase, wordBatch, { dryRun: true });
     logger.info("AFRIK synchronization preview completed", {
       target: syncTarget.environment,
       languageFamilies: report.languageFamilies.total,
@@ -1035,6 +1123,8 @@ export async function migrateAfrikToDatabase(
       peopleRelations: report.peopleRelations.total,
       migrations: report.migrations.total,
       persons: report.persons.total,
+      places: report.places,
+      words: report.words,
       patronymes: report.patronymes,
       dossiers: report.dossiers,
       protectedDrift: report.protectedDrift,
@@ -1073,6 +1163,15 @@ export async function migrateAfrikToDatabase(
 
   await upsertRelations(supabase, peoples, validCountryIds, report);
 
+  report.places = await loadPlaceBatch(supabase, placeBatch, {
+    references: {
+      peopleIds: await readIds(supabase, "afrik_peoples"),
+      countryIds: validCountryIds,
+    },
+  });
+
+  report.words = await loadWordBatch(supabase, wordBatch, {});
+
   const personsReport = await loadPersons(supabase, personDossiers);
   report.persons.total = personsReport.total;
   report.persons.inserted = personsReport.inserted;
@@ -1086,16 +1185,6 @@ export async function migrateAfrikToDatabase(
   report.migrations.total = migrationsReport.total;
   report.migrations.inserted = migrationsReport.inserted;
   report.migrations.errors = migrationsReport.errors;
-
-  // Derived first, hand-sourced dossiers second: loadNameRecords upserts on
-  // the same (entity, name, type) key, so a noms/ entry overwrites the
-  // weaker record derived from the fiche rather than competing with it.
-  report.appellations = await loadPeopleAppellations(supabase, peoples);
-
-  const namesReport = await loadNameRecords(supabase);
-  report.names.total = namesReport.total;
-  report.names.inserted = namesReport.inserted;
-  report.names.errors = [...namesReport.errors, ...namesReport.dropped];
 
   const peopleRelationRecords = loadAllRelationFiles();
   const peopleRelationsReport = await loadRelations(
@@ -1165,7 +1254,6 @@ export async function migrateAfrikToDatabase(
       relations: report.relations,
       peopleRelations: report.peopleRelations,
       migrations: report.migrations,
-      names: report.names,
       appellations: {
         total: report.appellations.total,
         inserted: report.appellations.inserted,
@@ -1173,6 +1261,8 @@ export async function migrateAfrikToDatabase(
         errors: report.appellations.errors.length,
       },
       persons: report.persons,
+      places: report.places,
+      words: report.words,
       patronymes: report.patronymes,
       dossiers: report.dossiers,
       protectedDrift: report.protectedDrift,

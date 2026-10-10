@@ -8,7 +8,7 @@
       "mainName": "Kwandi",
       "selfAppellation": "Kwandi",
       "exonyms": ["Bakwandi", "BaKwandi"],
-      "originOfExonyms": "Le prefixe bantu Ba- est utilise pour designer le peuple collectivement (BaKwandi). Le nom provient du fondateur Mwanabinyi qui etablit sa chefferie dans les terres precedemment occupees par les Subiya et Mbukushu.",
+      "originOfExonyms": "Le prefixe bantu Ba- est utilise pour designer le peuple collectivement (BaKwandi). Le nom proviendrait du fondateur Mwanabinyi, qui établit sa chefferie dans les terres precedemment occupees par les Subiya et Mbukushu.",
       "whyProblematic": null,
       "contemporaryUsage": "Les Kwandi sont reconnus comme l'un des groupes proto-Lozi de la Province Occidentale de Zambie. Ils sont aujourd'hui integres dans le grand ensemble Lozi-Barotse tout en maintenant une identite distincte.",
       "linguisticFamily": "FLG_BANTU",
@@ -71,22 +71,26 @@
       {
         "title": "Kwangwa – Zambia's Traditional History, 2020",
         "url": "https://traditionalzambia.home.blog/tribes-of-zambia/second-bantu-invasion/luba/lozi/kwangwa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "History of the Kwangwa people – Facebook/Barotsenetwork, 2023",
         "url": "https://www.facebook.com/groups/759153900821468/posts/10082861068450658/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "About Zambia – Western Province Provincial Administration",
         "url": "https://www.wes.gov.zm/?page_id=1186",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Understanding the history of Lozi people – Facebook, 2022",
         "url": "https://www.facebook.com/groups/759153900821468/posts/8230979013638882/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

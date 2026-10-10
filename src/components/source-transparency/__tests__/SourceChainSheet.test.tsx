@@ -119,7 +119,6 @@ describe("SourceChainSheet", () => {
     const order = sections.map((el) => el.getAttribute("data-testid"));
     expect(order).toEqual([
       "section-assertion",
-      "section-confidence",
       "section-flags",
       "section-sources",
       "section-revision",
@@ -128,19 +127,44 @@ describe("SourceChainSheet", () => {
     ]);
   });
 
-  // @req REQ-180
-  it("keeps source context but omits a numeric confidence that was never recorded", () => {
+  // @req REQ-198
+  it("shows the legend it is given right after the sources (ETNI-2015)", () => {
+    renderSheet({
+      legend: (
+        <section data-testid="section-source-diamond-legend">clé</section>
+      ),
+    });
+    const order = screen
+      .getAllByTestId(/^section-/)
+      .map((el) => el.getAttribute("data-testid"));
+    expect(order.slice(1, 3)).toEqual([
+      "section-sources",
+      "section-source-diamond-legend",
+    ]);
+  });
+
+  // The score, its explanation and the « not yet reviewed » disclaimer were
+  // one standing-derived signal: the sheet lists the sources and stops there.
+  // @req REQ-194
+  it.each([
+    ["with a stored score", 0.82, "2026-04-01"],
+    ["without a stored score or review", undefined, null],
+  ])("shows no confidence %s", (_label, confidenceScore, lastHumanAuditAt) => {
+    setViewportWidth(430);
     renderSheet({
       assertion: {
-        statement: "A sourced statement without an entity confidence row.",
-        sourceCount: 1,
-        lastHumanAuditAt: null,
+        statement: "Le peuple Seereer est attesté depuis le XIIIe siècle.",
+        confidenceScore,
+        sourceCount: 3,
+        lastHumanAuditAt,
       },
     });
 
-    const confidence = screen.getByTestId("section-confidence");
-    expect(confidence.textContent).not.toContain("%");
-    expect(confidence).toHaveTextContent(/1 source/i);
+    const dialog = screen.getByRole("dialog");
+    expect(screen.queryByTestId("section-confidence")).toBeNull();
+    expect(dialog.textContent).not.toMatch(
+      /confiance|82|Calculé|pas encore relu/i
+    );
   });
 
   it("does not render the flag banner when no open flags", () => {
@@ -205,7 +229,7 @@ describe("SourceChainSheet", () => {
     const link = screen.getByTestId("source-url-src-1");
     expect(link.className).toMatch(/line-through/);
     expect(screen.getByTestId("source-broken-badge-src-1")).toHaveTextContent(
-      /lien non résolu — signalé le 10 avril 2026/i
+      /lien inaccessible, signalé le 10 avril 2026/i
     );
   });
 
@@ -275,7 +299,8 @@ describe("SourceChainSheet", () => {
     expect(positionGroups[1]).toHaveTextContent("Source B");
   });
 
-  it("groups single-list sources by tier", () => {
+  // @req REQ-092
+  it("lists single-list sources in one plain list, under no tier heading", () => {
     renderSheet({
       sources: [
         { ...baseSource, id: "o1", tier: "official", title: "Official src" },
@@ -286,28 +311,22 @@ describe("SourceChainSheet", () => {
           title: "Referenced src",
         },
         { ...baseSource, id: "u1", tier: "unverified", title: "Aggregator" },
-        { ...baseSource, id: "u2", tier: "unverified", title: "AI src" },
+        { ...baseSource, id: "n1", tier: "needs_review", title: "AI src" },
       ],
     });
     const sourcesSection = screen.getByTestId("section-sources");
     expect(
-      within(sourcesSection).getByTestId("tier-group-official")
-    ).toBeInTheDocument();
-    expect(
-      within(sourcesSection).getByTestId("tier-group-referenced")
-    ).toBeInTheDocument();
-
-    const unverified = within(sourcesSection).getByTestId(
-      "tier-group-unverified"
-    );
-    expect(unverified).toHaveTextContent("Aggregator");
-    expect(unverified).toHaveTextContent("AI src");
-  });
-
-  it("renders the confidence block with the score", () => {
-    renderSheet();
-    const confidence = screen.getByTestId("section-confidence");
-    expect(confidence).toHaveTextContent("82");
+      within(sourcesSection)
+        .getAllByTestId(/^source-item-/)
+        .map((item) => item.getAttribute("data-testid"))
+    ).toEqual([
+      "source-item-o1",
+      "source-item-r1",
+      "source-item-u1",
+      "source-item-n1",
+    ]);
+    expect(within(sourcesSection).queryByTestId(/^tier-group-/)).toBeNull();
+    expect(within(sourcesSection).queryByTestId(/^source-tier-/)).toBeNull();
   });
 
   it("returns null when open is false", () => {
@@ -364,186 +383,95 @@ function setViewportWidth(width: number) {
   });
 }
 
-const FR_UNCONFIRMED_INTRO =
-  "Ces sources ne sont pas encore confirmées. Notre travail est de faire remonter celles qui se rapprochent le plus de ce que les peuples ont vécu.";
+const TIER_WORDS =
+  /Officielle|Référencée|Non vérifiée|En attente d.examen|palier|Niveau de source|pas encore confirmées/i;
 
-function precedes(a: Element, b: Element): boolean {
-  return Boolean(
-    a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING
-  );
-}
+/**
+ * Doctrine §1.1 (operator ruling, 2026-10-08): the reader never sees a
+ * source's tier. The sheet used to rank its sources under tier headings,
+ * badge each one, and introduce the weak ones with a sentence; all three
+ * told the reader the tier. No source is hidden either: every one is listed.
+ */
+describe("SourceChainSheet — no tier shown, no source hidden", () => {
+  const sources: Source[] = [
+    { ...baseSource, id: "official-1", title: "Recensement", tier: "official" },
+    { ...baseSource, id: "unverified-a", title: "Blog", tier: "unverified" },
+    {
+      ...baseSource,
+      id: "pending-1",
+      title: "Inclassée",
+      tier: "needs_review",
+    },
+  ];
 
-describe("SourceChainSheet — authority first, no source hidden", () => {
-  const officialSource: Source = {
-    ...baseSource,
-    id: "official-1",
-    title: "Recensement national 2013",
-    tier: "official",
-  };
-  const unreviewedNarrative: Source = {
-    ...baseSource,
-    id: "narrative-1",
-    title: "Récit du fondateur",
-    url: undefined,
-    tier: "unverified",
-    reviewedNarrative: false,
-  };
-  const unverifiedA: Source = {
-    ...baseSource,
-    id: "unverified-a",
-    title: "Blog communautaire",
-    tier: "unverified",
-  };
-  const unverifiedB: Source = {
-    ...baseSource,
-    id: "unverified-b",
-    title: "Agrégateur de peuples",
-    tier: "unverified",
-  };
-
-  // @req REQ-174
-  it.each([
-    [320, "bottom"],
-    [430, "bottom"],
-    [720, "bottom"],
-    [1200, "right-wide"],
-  ])(
-    "at %i px lists the official source first and introduces the three others",
-    (width, variant) => {
+  // @req REQ-092
+  it.each([320, 430, 720, 1200])(
+    "at %i px prints no tier word and lists every source",
+    (width) => {
       setViewportWidth(width);
-      renderSheet({
-        sources: [
-          unverifiedA,
-          unreviewedNarrative,
-          officialSource,
-          unverifiedB,
-        ],
-      });
+      renderSheet({ sources });
 
-      expect(screen.getByRole("dialog")).toHaveAttribute(
-        "data-variant",
-        variant
-      );
       const section = screen.getByTestId("section-sources");
-      const items = within(section).getAllByTestId(/^source-item-/);
-      expect(items[0]).toHaveAttribute("data-testid", "source-item-official-1");
-      expect(items).toHaveLength(4);
-
-      const intro = within(section).getByText(FR_UNCONFIRMED_INTRO);
-      expect(precedes(items[0], intro)).toBe(true);
-      for (const other of items.slice(1)) {
-        expect(precedes(intro, other)).toBe(true);
-      }
-
-      expect(screen.getByTestId("source-tier-official-1")).toHaveTextContent(
-        "Officielle"
-      );
-      for (const id of ["narrative-1", "unverified-a", "unverified-b"]) {
-        expect(screen.getByTestId(`source-tier-${id}`)).toHaveTextContent(
-          "Non vérifiée"
-        );
-      }
+      expect(section.textContent).not.toMatch(TIER_WORDS);
+      expect(within(section).getAllByTestId(/^source-item-/)).toHaveLength(3);
     }
   );
 
-  // @req REQ-174
-  it("gives each position its own ranked list and its own introduction", () => {
+  // @req REQ-161
+  it("names each source's kind, and nothing for a source without one", () => {
+    setViewportWidth(430);
+    renderSheet({
+      sources: [
+        { ...baseSource, id: "k1", sourceKind: "archive" },
+        { ...baseSource, id: "k2" },
+      ],
+    });
+
+    expect(screen.getByTestId("source-item-k1").textContent).toContain(
+      "Archive"
+    );
+    expect(
+      screen.getByTestId("source-item-k2").querySelector("[data-source-kind]")
+    ).toBeNull();
+  });
+
+  // @req REQ-092
+  it("prints no tier word inside a contested assertion's positions", () => {
     setViewportWidth(430);
     renderSheet({
       sources: [],
       positions: [
-        {
-          position: "Origine nilotique",
-          sources: [unverifiedA, officialSource],
-        },
-        {
-          position: "Origine bantoue",
-          sources: [
-            unverifiedB,
-            { ...baseSource, id: "referenced-1", tier: "referenced" },
-          ],
-        },
-        {
-          position: "Origine locale",
-          sources: [{ ...baseSource, id: "official-2", tier: "official" }],
-        },
+        { position: "Origine nilotique", sources: sources.slice(0, 2) },
+        { position: "Origine bantoue", sources: sources.slice(2) },
       ],
     });
 
-    const groups = screen.getAllByTestId(/^position-group-/);
-    expect(groups).toHaveLength(3);
-    expect(screen.getAllByText(FR_UNCONFIRMED_INTRO)).toHaveLength(2);
-
-    const expectations: Array<[number, string, string]> = [
-      [0, "source-item-official-1", "source-item-unverified-a"],
-      [1, "source-item-referenced-1", "source-item-unverified-b"],
-    ];
-    for (const [index, confirmedId, unconfirmedId] of expectations) {
-      const group = within(groups[index]);
-      const intro = group.getByText(FR_UNCONFIRMED_INTRO);
-      expect(precedes(group.getByTestId(confirmedId), intro)).toBe(true);
-      expect(precedes(intro, group.getByTestId(unconfirmedId))).toBe(true);
-    }
-    expect(within(groups[2]).queryByText(FR_UNCONFIRMED_INTRO)).toBeNull();
-  });
-
-  // @req REQ-174
-  it("lists every source under the introduction when all are unverified", () => {
-    setViewportWidth(430);
-    renderSheet({ sources: [unverifiedA, unreviewedNarrative, unverifiedB] });
-
     const section = screen.getByTestId("section-sources");
-    const intro = within(section).getByText(FR_UNCONFIRMED_INTRO);
-    const items = within(section).getAllByTestId(/^source-item-/);
-    expect(items).toHaveLength(3);
-    for (const item of items) {
-      expect(precedes(intro, item)).toBe(true);
-    }
+    expect(section.textContent).not.toMatch(TIER_WORDS);
+    expect(within(section).getAllByTestId(/^source-item-/)).toHaveLength(3);
   });
 
   // @req REQ-174
-  it("places a reviewed oral narrative with the confirmed sources", () => {
+  it("keeps reviewed oral narratives under their own heading", () => {
     setViewportWidth(430);
     renderSheet({
       sources: [
-        unverifiedA,
-        { ...unreviewedNarrative, id: "narrative-2", reviewedNarrative: true },
-        officialSource,
+        ...sources,
+        {
+          ...baseSource,
+          id: "narrative-1",
+          title: "Récit du fondateur",
+          tier: "unverified",
+          reviewedNarrative: true,
+        },
       ],
     });
 
-    const section = screen.getByTestId("section-sources");
-    const intro = within(section).getByText(FR_UNCONFIRMED_INTRO);
-    expect(precedes(screen.getByTestId("source-item-narrative-2"), intro)).toBe(
-      true
-    );
+    const narratives = screen.getByTestId("reviewed-narratives-group");
+    expect(narratives).toHaveTextContent("Récits oraux relus");
     expect(
-      precedes(intro, screen.getByTestId("source-item-unverified-a"))
-    ).toBe(true);
-  });
-
-  // @req REQ-174
-  it("keeps a source nobody has classified, after the introduction", () => {
-    setViewportWidth(430);
-    renderSheet({
-      sources: [officialSource, { ...unverifiedA, tier: "needs_review" }],
-    });
-
-    const section = screen.getByTestId("section-sources");
-    const intro = within(section).getByText(FR_UNCONFIRMED_INTRO);
-    expect(
-      precedes(intro, screen.getByTestId("source-item-unverified-a"))
-    ).toBe(true);
-  });
-
-  // @req REQ-174
-  it("adds no introduction when every source is confirmed", () => {
-    setViewportWidth(430);
-    renderSheet({
-      sources: [officialSource, { ...baseSource, id: "r", tier: "referenced" }],
-    });
-
-    expect(screen.queryByText(FR_UNCONFIRMED_INTRO)).toBeNull();
+      within(narratives).getByTestId("source-item-narrative-1")
+    ).toBeInTheDocument();
   });
 });
 

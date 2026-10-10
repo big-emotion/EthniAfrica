@@ -10,7 +10,7 @@
       "selfAppellation": "Bikpakpaam",
       "exonyms": ["Konkomba", "Bekpokpam", "Kekpokpam"],
       "originOfExonyms": "Le terme Konkomba est l'anglicisation introduite par les missionnaires anglicans au debut du XXe siecle. Le mot Bikpakpaam est l'auto-designation du peuple au pluriel : un homme se dit ukpakpaanja, une femme ukpakpaanpii. Leur langue est le Likpakpaanl (ou Likpakpaln) et leur territoire le Kekpokpam.",
-      "whyProblematic": "Le terme Konkomba est un exonyme d'origine coloniale qui s'est diffuse dans la litterature academique et administrative. Les membres du groupe preferent Bikpakpaam, bien que Konkomba soit universellement reconnu dans les contextes officiels ghaneen et togolais.",
+      "whyProblematic": "Konkomba est un nom donné au peuple à l'époque coloniale, puis diffusé dans les publications de recherche et les documents administratifs. Ses membres préfèrent Bikpakpaam. Konkomba reste toutefois reconnu dans les usages officiels au Ghana et au Togo.",
       "contemporaryUsage": "Konkomba est le terme officiel utilise dans les recensements et documents gouvernementaux au Ghana et au Togo. Bikpakpaam est le terme utilise en interne par la communaute. L'association de jeunesse se nomme KOYA (Konkomba Youth Association).",
       "linguisticFamily": "FLG_GUR",
       "ethnoLinguisticGroup": "Gur (Oti-Volta), sous-groupe Gurma, apparente aux Basari et Moba du Togo et du Benin",
@@ -97,27 +97,32 @@
       {
         "title": "Minority Rights Group — Konkomba in Ghana",
         "url": "https://minorityrights.org/communities/konkomba/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Joshua Project — Konkomba in all countries",
         "url": "https://joshuaproject.net/people_groups/10842",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue — Konkomba Language (XON)",
         "url": "https://www.ethnologue.com/language/xon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Konkomba people",
         "url": "https://www.101lasttribes.com/tribes/konkomba.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Modern Ghana — Konkomba Identity, Historical Claims (2025)",
         "url": "https://www.modernghana.com/news/1442722/konkomba-identity-historical-claims-and-the-sear.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       }
     ]
   }

@@ -160,4 +160,32 @@ describe("getFieldNotes", () => {
     expect(await getFieldNotes("people", "PPL_YORUBA")).toEqual([]);
     expect(logger.error).toHaveBeenCalled();
   });
+
+  /**
+   * Doctrine §1.1: the reader is told what kind of source speaks. The kind
+   * travels with the note so the sheet a callout opens can name it.
+   */
+  // @req REQ-161
+  it("carries each source's kind, and null where the row has none", async () => {
+    mockSupabase([
+      {
+        data: [{ ...ASSERTION, source_ids: ["s-1", "s-2"] }],
+        error: null,
+      },
+      {
+        data: [
+          { ...SOURCE, source_kind: "linguistic_reference" },
+          { ...SOURCE, id: "s-2", title: "Field notes", source_kind: null },
+        ],
+        error: null,
+      },
+    ]);
+
+    const [note] = await getFieldNotes("people", "PPL_YORUBA");
+
+    expect(note.sources.map((source) => source.sourceKind)).toEqual([
+      "linguistic_reference",
+      null,
+    ]);
+  });
 });

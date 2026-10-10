@@ -12,7 +12,7 @@
         "Kosi, Nkosi, Nkoosi, Koose, Bekoose (variantes orthographiques dans la littérature coloniale et missionnnaire)",
         "Bakosi (graphie alternative dans les documents officiels camerounais)"
       ],
-      "originOfExonyms": "Le terme Bakossi est un exonyme en préfixe bantou (Ba- = les gens de) appliqué au nom de la communauté. Le préfixe A- de la langue (Akoose) est distinct du préfixe de personnes (Bakossi). Les variantes Kosi, Nkosi, etc. reflètent les transcriptions des administrateurs coloniaux allemands, britanniques et français aux 19e-20e siècles.",
+      "originOfExonyms": "Bakossi est un nom donné de l'extérieur, formé avec l'élément bantou Ba-, « les gens de ». Il se distingue d'Akoose, le nom de la langue, qui commence par A-. Kosi, Nkosi et les autres variantes viendraient des transcriptions des administrateurs allemands, britanniques et français aux XIXe et XXe siècles.",
       "whyProblematic": null,
       "contemporaryUsage": "Bakossi est l'appellation standard en anglais et en français au Cameroun. Akoose est le terme préféré par SIL International pour la langue. Les membres de la communauté utilisent les deux termes selon le contexte.",
       "linguisticFamily": "FLG_BANTU",
@@ -89,27 +89,32 @@
       {
         "title": "Joshua Project – Bakossi in Cameroon (2025)",
         "url": "https://joshuaproject.net/people_groups/10595",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Glottolog – Akoose (bss)",
         "url": "https://glottolog.org/resource/languoid/id/akoo1248",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL International – Akoose-English dictionary (2012)",
         "url": "https://searchworks.stanford.edu/view/10770615",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Balz, Heinrich (1984). Where the Faith Has to Live: Studies in Bakossi Society and Religion. Berlin: Reimer Verlag",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook – Cameroon",
         "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

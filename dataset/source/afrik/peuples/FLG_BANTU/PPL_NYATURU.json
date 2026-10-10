@@ -8,7 +8,7 @@
       "mainName": "Nyaturu",
       "selfAppellation": "Arimi",
       "exonyms": ["Turu", "Wanyaturu", "Rimi", "Arimi"],
-      "originOfExonyms": "Arimi (les gens de Rimi) est l'endonyme originel ; le mot arimi signifie litteralement agriculteurs. Wanyaturu est la forme swahilisee avec le prefixe wa- propre au swahili, qui a progressivement remplace l'endonyme traditionnel. Le terme Turu designe egalement la langue et le peuple dans la litterature academique.",
+      "originOfExonyms": "Arimi, « les gens de Rimi », est l'ancien nom employé par les personnes concernées. Le mot arimi est aussi traduit par « agriculteurs ». Wanyaturu est une forme swahili, commençant par wa-, qui a progressivement remplacé ce nom traditionnel. Les travaux de recherche emploient aussi Turu pour la langue et le peuple.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Wanyaturu est couramment utilise en Tanzanie pour designer ce peuple, tandis qu'Arimi reste l'appellation traditionnelle. Nyaturu designe aussi bien le peuple que sa langue dans les classifications linguistiques modernes.",
       "linguisticFamily": "FLG_BANTU",
@@ -81,22 +81,26 @@
       {
         "title": "A Collection of 100 Nyaturu Proverbs and Wise Sayings – Afriprov, Tangaza University College",
         "url": "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/ebooks_nyaturu.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Turu, Nyaturu in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/15657",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Nyaturu – Glottolog 5.3, code nyat1246, ISO 639-3: rim",
         "url": "https://glottolog.org/resource/languoid/id/nyat1246",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Omniglot – Turu language and alphabet",
         "url": "https://www.omniglot.com/writing/turu.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

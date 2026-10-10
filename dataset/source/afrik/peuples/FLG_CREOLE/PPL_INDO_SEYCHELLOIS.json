@@ -83,22 +83,26 @@
       {
         "title": "247th Anniversary of Arrival of First Indian Settlers to Seychelles – Seychelles Nation, 2017",
         "url": "https://www.nation.sc/archive/255508/247th-anniversary-of-arrival-of-first-indian-settlers-to-seychelles-remembered",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Seychelles Population 2026 – World Population Review, 2025",
         "url": "https://worldpopulationreview.com/countries/seychelles",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Population of Overseas Indians – Ministry of External Affairs of India, 2023",
         "url": "https://mea.gov.in/images/attach/nris-and-pios_1.pdf",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Seychelles – Multicultural, Indian Ocean, Creole – Encyclopaedia Britannica, 2024",
         "url": "https://www.britannica.com/place/Seychelles/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

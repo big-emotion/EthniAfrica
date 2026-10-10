@@ -112,27 +112,32 @@
       {
         "title": "Smarthistory — Power Figure (Nkisi Nkondi), Kongo peoples",
         "url": "https://smarthistory.org/nkisi-nkondi-kongo-people/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Metropolitan Museum of Art — Mangaaka Power Figure (Nkisi N'Kondi)",
         "url": "https://www.metmuseum.org/art/collection/search/320053",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "101 Last Tribes — Yombe people",
         "url": "https://www.101lasttribes.com/tribes/yombe.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Yombe in Congo, Democratic Republic of",
         "url": "https://joshuaproject.net/people_groups/16051/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "University of Michigan Museum of Art — Maternity Figure (Phemba)",
         "url": "https://umma.umich.edu/objects/maternity-figure-1984-1-257/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Antique African Art — Phemba, the nurturing mother in Yombe society",
@@ -142,7 +147,8 @@
       {
         "title": "SIL Ethnologue — Kiyombe (yom)",
         "url": "https://www.ethnologue.com/language/yom/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "African Art Museum (zyama.com) — Yombe People",
@@ -152,7 +158,8 @@
       {
         "title": "Minority Rights Group International — Republic of Congo",
         "url": "https://minorityrights.org/country/republic-of-congo/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Berggorilla & Regenwald Direkthilfe — Mayombe forest",
@@ -162,12 +169,14 @@
       {
         "title": "VCU Scholars Compass — Transformation of Kongo Minkisi (Palo Mayombe)",
         "url": "https://scholarscompass.vcu.edu/cgi/viewcontent.cgi?article=1077&context=etd",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "US Department of State — International Boundary Study n° 144, Angola–Zaire boundary, 4 avril 1974",
         "url": "https://library.law.fsu.edu/Digital-Collections/LimitsinSeas/pdf/ibs144.pdf",
         "tier": "official",
+        "source_kind": "academic",
         "notes": "Étude de frontière : conventions du 14 février 1885 (Portugal et Association internationale du Congo) et du 12 mai 1886 (France et Portugal) dans le secteur du Cabinda."
       }
     ]

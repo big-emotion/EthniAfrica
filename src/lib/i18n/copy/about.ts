@@ -42,7 +42,8 @@ const ACCENT_CLASS: Record<AccessMode, string> = {
  *
  * What left, and where it went:
  * - the border-age comparison, the dated counts and the three scales are
- *   kept verbatim, marked superseded, in docs/editorial/purpose-doctrine.md —
+ *   kept verbatim in docs/editorial/purpose-doctrine.md, which
+ *   docs/editorial/doctrine.md replaced on 2026-10-08 (git history keeps it) —
  *   a count printed on a page that describes the project drifts as the
  *   corpus moves, and nothing re-measured it;
  * - the four refused sentences moved to the method page (`doctrine.ts`),
@@ -75,13 +76,13 @@ export const aboutCopy: Record<Language, AboutCopy> = {
       title: "Pourquoi partir des noms ?",
       paragraphs: [
         "On peut connaître un nom sans connaître son histoire. Il peut avoir plusieurs sens, plusieurs formes ou des usages différents selon les personnes, les lieux et les époques.",
-        "Partir du mot que l’on connaît permet d’ouvrir l’enquête. Nous distinguons la façon dont un nom est employé aujourd’hui, les traces de sa circulation et les explications proposées pour son origine. Les sources ne répondent pas toujours à ces trois questions de la même manière.",
+        "Partir du mot que l’on connaît permet d’ouvrir l’enquête. Nous distinguons la façon dont un nom est employé aujourd’hui, les endroits et les époques où on le retrouve et les explications proposées pour son origine. Les sources ne répondent pas toujours à ces trois questions de la même manière.",
       ],
     },
     explore: {
       title: "Ce que vous pouvez explorer",
       paragraphs: [
-        "Chercher un nom, retrouver ses différentes formes, situer les populations et les langues auxquelles il renvoie, puis consulter les sources pour aller plus loin.",
+        "Vous pouvez chercher un nom, retrouver ses différentes formes, situer les populations et les langues concernées, puis consulter les sources pour aller plus loin.",
         "Les articles développent une question. Les vidéos proposent un premier éclairage. La rubrique Parcourir permet de poursuivre la recherche à votre rythme.",
       ],
       accessModes: [
@@ -103,7 +104,7 @@ export const aboutCopy: Record<Language, AboutCopy> = {
           id: "jeux",
           label: "Jouer",
           description:
-            "Un quiz tiré de nos pages, et la projection de Mercator remise à sa juste taille.",
+            "Jouez à notre quiz et découvrez, avec le jeu Mercator, comment les cartes peuvent déformer la taille des pays.",
           accentClass: ACCENT_CLASS.jeux,
         },
       ],

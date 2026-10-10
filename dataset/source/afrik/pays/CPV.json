@@ -4,8 +4,264 @@
   "nameEn": "Cabo Verde",
   "nameOfficial": "République de Cabo Verde (República de Cabo Verde)",
   "summary": "Cabo Verde doit son nom au cap Vert sénégalais, près duquel les navigateurs portugais abordèrent l'archipel. Les îles étaient inhabitées : la société cap-verdienne est née de la colonisation et de la traite, et elle est créole de part en part. La morna, la coladeira, le funaná et le batuque en portent la mémoire.",
-  "etymology": "Le nom \"Cabo Verde\" (Cap-Vert en français) provient du portugais \"Cabo Verde\" (Cap Vert), en référence au Cap Vert continental situé au Sénégal, près duquel les îles ont été découvertes. Les navigateurs portugais ont nommé les îles \"Ilhas de Cabo Verde\" (Îles du Cap Vert) en référence à ce cap. Le nom officiel international a été normalisé en \"Cabo Verde\" en 2013.",
+  "etymology": "Le nom \"Cabo Verde\" (Cap-Vert en français) viendrait du portugais \"Cabo Verde\" (Cap Vert), en référence au Cap Vert continental situé au Sénégal, près duquel les îles ont été découvertes, selon la fiche de toponymie britannique Toponymic Factfile. Les navigateurs portugais ont nommé les îles \"Ilhas de Cabo Verde\" (Îles du Cap Vert) en référence à ce cap. Le nom officiel international a été normalisé en \"Cabo Verde\" en 2013.",
   "nameOriginActor": "Le nom \"Cabo Verde\" a été donné par les navigateurs portugais et génois qui ont découvert les îles en 1456-1462. Le nom fait référence au Cap Vert continental (Sénégal), près duquel les îles sont situées. Le nom officiel international a été normalisé en \"Cabo Verde\" en 2013 par les autorités cap-verdiennes.",
+  "nameHistory": {
+    "summary": "Le nom Cabo Verde désigne un pays insulaire d'Afrique de l'Ouest, la République de Cabo Verde, un archipel de l'Atlantique. Il veut dire « cap vert » en portugais et vient du nom d'un cap du continent, au Sénégal. En français, le pays s'appelait aussi Cap-Vert ; depuis 2013, il demande qu'on ne traduise plus son nom. Les sources lues ne donnent qu'une explication de ce nom de cap ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Cabo Verde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "« Cap vert » en portugais : le nom d'un cap du Sénégal, donné ensuite aux îles.",
+        "periodLabel": "Écrit dès le XVe siècle ; nom de l'État depuis 1975, non traduit depuis 2013",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": null,
+              "label": "Depuis le 24 octobre 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Cabo Verde est la forme que le pays demande d'employer dans toutes les langues officielles de l'ONU, sans la traduire, depuis le 24 octobre 2013, selon l'Organisation des Nations unies et The Boston Globe. En français, la forme longue devient République de Cabo Verde.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Member States: Cabo Verde",
+                "author": "Organisation des Nations unies",
+                "year": null,
+                "url": "https://www.un.org/en/about-us/member-states/cabo-verde",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Page consultée le 10 octobre 2026 : « The Republic of Cabo Verde changed its official name from The Republic of Cape Verde on 24 October 2013 », à la demande de son représentant auprès du Secrétaire général."
+              },
+              {
+                "title": "Cape Verde asks world to call it Cabo Verde",
+                "author": "Akilah Johnson, The Boston Globe",
+                "year": 2014,
+                "url": "https://www.bostonglobe.com/metro/2014/02/10/cape-verde-asks-world-call-cabo-verde/LoHX9VhfzljfmnrY9I8xeM/story.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse du 10 février 2014, relu le 10 octobre 2026. Il cite la demande d'octobre 2013 : employer Cabo Verde « in all official languages of the United Nations » et ne pas le traduire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "5 juillet 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Cabo Verde devient celui d'un État indépendant le 5 juillet 1975, selon le tableau des indépendances de l'Histoire générale de l'Afrique, qui écrit « Cap-Vert 5/VII/1975 Portugal (Cabo Verde) ».",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances : « Cap-Vert 5/VII/1975 Portugal (Cabo Verde) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Cabo Verde veut dire « cap vert » en portugais. Il désigne aujourd'hui un archipel et un État, mais il vient du cap Vert, le point le plus à l'ouest de l'Afrique, au Sénégal, selon le Permanent Committee on Geographical Names. Les sources lues ne donnent qu'une explication de ce nom de cap.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Cape Verde",
+                "author": "Permanent Committee on Geographical Names, Royaume-Uni",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/654cfedf014cc90010677386/Cape_Verde_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Nomenclature géographique officielle britannique, édition 2023, relue le 10 octobre 2026. Le cap Vert, point le plus occidental de l'Afrique, au Sénégal, est à l'origine du nom du pays, « green cape » ; le pays préfère la forme portugaise Cabo Verde, que l'ONU emploie en anglais."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1483,
+              "to": 1483,
+              "label": "1483"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cabo Verde s'étend aux îles voisines : la première carte marine qui mentionne les îles du Cap-Vert date de 1483, selon Jean Devisse.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 26 : L'Afrique dans les relations intercontinentales",
+                "author": "Jean Devisse, avec Shuhdi Labib",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 718, note 124",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. « La première [carte marine] qui mentionne les îles du Cap-Vert et São Tomé date de 1483 », d'après C. et M. de la Roncière (1967). Nous n'avons pas vu cette carte nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1462,
+              "to": 1462,
+              "label": "1462"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cabo Verde désigne aussi un archipel aride et désert, que les Portugais commencent à coloniser en 1462, avec Santiago pour capitale, selon Yves Person.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers — premiers contacts avec les Portugais — de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 347",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. « Terres arides et désertes, les îles du Cap-Vert furent d'abord colonisées dès 1462 » ; leur capitale s'établit à Santiago."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1444,
+              "to": 1445,
+              "label": "Voyage de 1444 ou 1445, raconté en 1453"
+            },
+            "era": "polity",
+            "statement": "Le nom Cabo Verde apparaît dans la chronique portugaise de Gomes Eanes de Zurara, écrite en 1453 : le navigateur Dinis Dias arrive à « un grand cap, auquel on donna le nom de cap Vert », selon la traduction de C. Raymond Beazley et Edgar Prestage. C'est la plus ancienne trace de ce nom que le projet connaît. Il désigne alors un cap du continent, pas encore les îles, et les peuples de cette côte y vivaient bien avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Dinis Dias",
+                "role": "navigateur portugais"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Chronicle of the Discovery and Conquest of Guinea, vol. I",
+                "author": "Gomes Eanes de Zurara, traduit par C. Raymond Beazley et Edgar Prestage",
+                "year": 1896,
+                "url": "https://archive.org/details/chronicleofdisco01zura",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 100",
+                "notes": "Hakluyt Society, Londres, lu en fac-similé le 10 octobre 2026. Traduction anglaise de la chronique portugaise. Page 100 : Dinis Dias « pushed on till he arrived at a great cape, to which they gave the name of Cape Verde »."
+              },
+              {
+                "title": "The Chronicle of the Discovery and Conquest of Guinea, vol. II",
+                "author": "C. Raymond Beazley et Edgar Prestage",
+                "year": 1899,
+                "url": "https://archive.org/details/chroniclediscov01presgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "introduction, p. xii-xiii",
+                "notes": "Hakluyt Society, Londres, lu en fac-similé le 10 octobre 2026. L'introduction date de 1445 le passage du cap Vert par Dinis Dias et rappelle que le chroniqueur écrit en 1453."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "Rapportée en 1899"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cabo Verde viendrait de la végétation du cap, d'un vert vif à la saison des pluies, selon l'explication la plus répandue que rapportent C. Raymond Beazley et Edgar Prestage.",
+            "hypothesisGroup": "origine du nom Cabo Verde",
+            "sources": [
+              {
+                "title": "The Chronicle of the Discovery and Conquest of Guinea, vol. II",
+                "author": "C. Raymond Beazley et Edgar Prestage",
+                "year": 1899,
+                "url": "https://archive.org/details/chroniclediscov01presgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 324, note sur le cap Vert",
+                "notes": "Hakluyt Society, Londres, lu en fac-similé le 10 octobre 2026. La note explique que le cap est ainsi nommé « according to the general view, from the rich green appearance of the headland », et cite les relevés français qui décrivent la végétation qui le couvre pendant l'hivernage."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Cap-Vert",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "La forme française du nom, que le pays demande depuis 2013 de ne plus employer.",
+        "periodLabel": "Écrit dès 1678 ; forme française du nom de l'État jusqu'en 2013",
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": 2013,
+              "label": "De 1975 à 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Cap-Vert est la forme française du nom de l'État indépendant, celle qu'emploie par exemple l'Histoire générale de l'Afrique. Depuis le 24 octobre 2013, le pays demande qu'on dise Cabo Verde dans toutes les langues officielles de l'ONU, selon l'Organisation des Nations unies.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances : « Cap-Vert 5/VII/1975 Portugal (Cabo Verde) »."
+              },
+              {
+                "title": "Member States: Cabo Verde",
+                "author": "Organisation des Nations unies",
+                "year": null,
+                "url": "https://www.un.org/en/about-us/member-states/cabo-verde",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Page consultée le 10 octobre 2026 : « The Republic of Cabo Verde changed its official name from The Republic of Cape Verde on 24 October 2013 », à la demande de son représentant auprès du Secrétaire général."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1678,
+              "to": 1678,
+              "label": "1678"
+            },
+            "era": "polity",
+            "statement": "Le nom Cap-Vert apparaît en français dans une relation du Mercure de France, où les vaisseaux du roi arrivent « à la vue du Cap-Vert » avant de mouiller devant Gorée. C'est la plus ancienne trace de cette forme française que le projet connaît. Elle désigne alors le cap du continent, pas les îles.",
+            "formAsWritten": "Cap-Vert",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Relation de la prise des Isles de Gorée au Cap-Vert & de Tabago, dans l'Amérique, sur les Hollandois",
+                "author": "Mercure de France, extraordinaire n° 19",
+                "year": 1678,
+                "url": "https://archive.org/details/relationdelapris00merc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 141",
+                "notes": "Paris, Bureau d'adresse, 1678, lu en fac-similé le 10 octobre 2026. Récit de l'escadre du comte d'Estrées, d'octobre à décembre 1677 : les vaisseaux du roi « arrivèrent le 19 à la vue du Cap-Vert » avant de mouiller devant Gorée."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Colonie portugaise du Cap-Vert (1462-1975)", "Cap-Vert"],
@@ -54,7 +310,7 @@
           "portugais"
         ],
         "languageFamily": "FLG_CREOLE",
-        "appellationRemarks": "\"Crioulo\" ou \"Kriolu\" est l'auto-appellation. \"Créole cap-verdien\" est un exonyme accepté. Pas de terme péjoratif connu. Les Créoles cap-verdiens sont un peuple métissé formé à partir du contact entre les populations africaines (wolof, mandinka, balante, peul, bijagó) et les colons portugais à partir du XVe siècle."
+        "appellationRemarks": "Les personnes concernées se nomment Crioulo ou Kriolu. Créole cap-verdien est un nom donné de l'extérieur et accepté. Les sources ne signalent pas de sens insultant pour ces noms. Ce peuple s'est formé à partir du XVe siècle, au fil des contacts entre les colons portugais et des populations africaines, notamment wolof, mandinka, balante, peul et bijagó."
       },
       {
         "name": "Africains d'origine récente",
@@ -102,17 +358,20 @@
       {
         "title": "SIL Ethnologue – Languages of Cape Verde",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Cape Verde",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Cabo Verde",
         "url": "https://www.unfpa.org/data/world-population/CV",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Speeches and Writings\"",
@@ -122,7 +381,8 @@
       {
         "title": "Recensements cap-verdiens",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples créoles du Cap-Vert",
@@ -132,18 +392,21 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Toponymic Factfile: Cape Verde — Permanent Committee on Geographical Names (Royaume-Uni)",
         "url": "https://assets.publishing.service.gov.uk/media/654cfedf014cc90010677386/Cape_Verde_Toponymic_Factfile.pdf",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Fiche officielle britannique de toponymie, édition 2023 : le nom Cabo Verde vient du cap Vert (Cap-Vert), point le plus occidental de l'Afrique, au Sénégal ; le pays préfère la forme portugaise Cabo Verde, employée par l'ONU en anglais."
       },
       {
         "title": "The Boston Globe — Cape Verde asks world to call it Cabo Verde (10 février 2014)",
         "url": "https://www.bostonglobe.com/metro/2014/02/10/cape-verde-asks-world-call-cabo-verde/LoHX9VhfzljfmnrY9I8xeM/story.html",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Article de presse relatant la demande de 2013 : le nom Cabo Verde n'est pas traduit dans les langues de l'ONU, la forme longue française étant République de Cabo Verde."
       }
     ],

@@ -44,7 +44,7 @@ describe("WhereBars", () => {
     expect(container.textContent).not.toMatch(/\d{1,3}[\s .]\d{3}/);
     expect(
       screen.getByText(
-        "Estimations du nombre de locuteurs, à lire comme des ordres de grandeur."
+        "Ces chiffres donnent une idée du nombre de personnes qui parlent cette langue."
       )
     ).toBeInTheDocument();
     expect(container.querySelector("p")?.textContent).toBe(

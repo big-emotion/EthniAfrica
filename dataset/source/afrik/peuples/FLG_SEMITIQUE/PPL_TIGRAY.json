@@ -13,7 +13,7 @@
         "Tigrean (terme anglais)",
         "Tigrigna speakers (designation linguistique utilisee en Erythree pour distinguer des Tigrinya eritreens)"
       ],
-      "originOfExonyms": "Le nom Tigray (ትግራይ) derive probablement du terme ge'ez ancien Tigri ou Tigriti, dessinant la region et ses habitants. Le geographe arabe Ibn al-Faqih (vers 903 apr. J.-C.) est l'un des premiers a mentionner Tigri comme region distincte. Hiob Ludolf au 17e siecle decrit la region comme Regio Tigrensis ou Tigraia. L'appellation Tigrigna ou Tigrinya est parfois utilisee pour designer les locuteurs du tigrinya d'Erythree, a distinguer des Tigrayens d'Ethiopie.",
+      "originOfExonyms": "Le nom Tigray (ትግራይ) viendrait du terme ge'ez ancien Tigri ou Tigriti, qui désignait la région et ses habitants. Le geographe arabe Ibn al-Faqih (vers 903 apr. J.-C.) est l'un des premiers a mentionner Tigri comme region distincte. Hiob Ludolf au 17e siecle decrit la region comme Regio Tigrensis ou Tigraia. L'appellation Tigrigna ou Tigrinya est parfois utilisee pour designer les locuteurs du tigrinya d'Erythree, a distinguer des Tigrayens d'Ethiopie.",
       "whyProblematic": "La distinction entre Tigrayens d'Ethiopie et Tigrinya d'Erythree (aussi Tigrigna) est source de confusion : les deux groupes parlent le tigrinya mais sont separes par la frontiere nationale depuis 1993. En Erythree, le terme Tigrinya designe le groupe specifiquement eritreen. Le conflit du Tigray (2020-2022) a politise et tensifie les enjeux identitaires liees au terme Tigray.",
       "contemporaryUsage": "Le terme Tigray designe a la fois le peuple, la region federale du nord de l'Ethiopie (Region Tigray) et la langue (tigrinya). L'identite tigraye est forte et etroitement liee au patrimoine aksumite et a l'Eglise orthodoxe ethiopienne. Le Tigray People's Liberation Front (TPLF) a domine la politique ethiopienne de 1991 a 2019 avant le conflit.",
       "linguisticFamily": "FLG_SEMITIQUE",
@@ -100,12 +100,14 @@
       {
         "title": "Council on Foreign Relations — Conflict in Ethiopia",
         "url": "https://www.cfr.org/global-conflict-tracker/conflict/conflict-ethiopia",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Ethnologue — Tigrinya (tir)",
         "url": "https://www.ethnologue.com/language/tir",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "EthnoMed — Tigrean Cultural Profile",
@@ -115,7 +117,8 @@
       {
         "title": "PMC Population Health Metrics — Civilian death and injury from airstrikes in Tigray",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11909939/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Martin Plaut — Tigray, evidence of the death toll",
@@ -125,12 +128,167 @@
       {
         "title": "Encyclopaedia Aethiopica, vol. 4 (Uhlig ed.), Harrassowitz Verlag, 2010",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Ethiopian Central Statistical Agency (CSA) — Population and Housing Census 2007",
         "url": "https://www.csa.gov.et",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tigray désigne un peuple du nord de l'Éthiopie et de l'Érythrée, qui se nomme lui-même ainsi. Il vient du nom d'une province, le Tigré, que les auteurs européens ont longtemps employé. On ne sait pas avec certitude quand le nom Tigray apparaît par écrit ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Tigray",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tir",
+        "namedBy": null,
+        "shortLine": "« Homme du Tigré » : un nom dérivé de celui de la province, selon Ullendorff.",
+        "periodLabel": "Usage ancien et contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Tigray serait dérivé de Tigré, le nom de la province, avec le suffixe -ay, qui marque l'appartenance : il voudrait dire « homme du Tigré » ou « ce qui est du Tigré », selon Edward Ullendorff.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Tigray",
+            "sources": [
+              {
+                "title": "Tigre or Tigrai?",
+                "author": "Edward Ullendorff",
+                "year": 1949,
+                "url": "https://doi.org/10.1017/S0001972000029089",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Note parue dans la revue Africa de l'International African Institute, rubrique Notes and News, en réponse à S. F. Nadel ; lue dans le fac-similé publié par Cambridge University Press le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date non précisée"
+            },
+            "statement": "Le nom Tigray figure, au sens de « homme du Tigré », dans le Mashafa Mestir, un livre de la littérature éthiopienne, selon Edward Ullendorff, qui renvoie au dictionnaire de Dillmann. Il ne date pas le passage.",
+            "sources": [
+              {
+                "title": "Tigre or Tigrai?",
+                "author": "Edward Ullendorff",
+                "year": 1949,
+                "url": "https://doi.org/10.1017/S0001972000029089",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Note parue dans la revue Africa de l'International African Institute, rubrique Notes and News, en réponse à S. F. Nadel ; lue dans le fac-similé publié par Cambridge University Press le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1949,
+              "label": "Au milieu du XXe siècle"
+            },
+            "statement": "Le nom Tigray désigne aussi la langue de la province, qu'on appelle plus souvent tigrigna, avec une terminaison amharique, selon Edward Ullendorff.",
+            "sources": [
+              {
+                "title": "Tigre or Tigrai?",
+                "author": "Edward Ullendorff",
+                "year": 1949,
+                "url": "https://doi.org/10.1017/S0001972000029089",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Note parue dans la revue Africa de l'International African Institute, rubrique Notes and News, en réponse à S. F. Nadel ; lue dans le fac-similé publié par Cambridge University Press le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 800,
+              "to": 999,
+              "label": "IXe-Xe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Tigrai manque dans les récits arabes de cette époque, note Tekle-Tsadik Mekouria. Le peuple que les auteurs al-Yaʿqūbī et Ibn Sulaym al-Uswānī appellent al-Zanāfidj pourrait être celui des Tigrai, selon le linguiste Andrzej Zaborski qu'il cite. Les sources ne disent pas s'il s'agit du même peuple.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 19 : La Corne de l'Afrique",
+                "author": "Tekle-Tsadik Mekouria",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 601",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tigré",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la province, d'où vient celui des Tigray.",
+        "periodLabel": "Écrit dès le XIIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1949,
+              "label": "XVIIe-XXe siècle"
+            },
+            "statement": "Le nom Tigré est celui que donnent à la province les auteurs européens Ludolf, Bruce, Salt, Munzinger, Dillmann, Guidi et Conti Rossini, selon Edward Ullendorff. La langue tigré, parlée en Érythrée, a gardé le nom de la province sous sa forme d'origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tigre or Tigrai?",
+                "author": "Edward Ullendorff",
+                "year": 1949,
+                "url": "https://doi.org/10.1017/S0001972000029089",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Note parue dans la revue Africa de l'International African Institute, rubrique Notes and News, en réponse à S. F. Nadel ; lue dans le fac-similé publié par Cambridge University Press le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1200,
+              "to": 1299,
+              "label": "XIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Tigré désigne déjà la province du nord où les marchands chrétiens du Choa allaient chercher du sel, selon une source ancienne sur le XIIIe siècle que cite Tadesse Tamrat. C'est la plus ancienne trace de ce nom que le projet connaît. La province et ses habitants existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "Tadesse Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 465",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. La note renvoie à C. Conti-Rossini, 1903 ; la forme écrite dans cette source n'est pas donnée."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

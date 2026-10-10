@@ -4,6 +4,295 @@
   "languageFamilyId": "FLG_SAHARIEN",
   "currentCountries": ["TCD", "NER", "LBY"],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Toubou désigne des peuples du Sahara oriental, du Tibesti au Kawar et à l'est du Kanem, qui se nomment eux-mêmes tantôt Teda, tantôt Daza ou Dazagada. Les Arabes appellent aussi les Daza Gorane. Les sources ne s'accordent pas sur l'origine du nom Toubou ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Teda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tuq",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent ceux du Tibesti, qui parlent le tedaga.",
+        "usedIn": ["tuq"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Teda est l'un de ceux que ces peuples se donnent ; au sens strict, il désigne les habitants du massif du Tibesti, qui parlent le tedaga, selon Jérôme Tubiana. Les sources que nous avons lues n'expliquent pas son origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'animal sauvage, marqueur d'une identité clanique chez les Teda-Daza et les Beri, éleveurs du Tchad, du Niger et du Soudan, dans Le symbolisme des animaux",
+                "author": "Jérôme Tubiana",
+                "year": 2007,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers16-08/010041932.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, IRD Éditions, collection Colloques et séminaires, 2007, sous la direction d'Edmond Dounias, Élisabeth Motte-Florac et Margaret Dunham. Lu en texte intégral. L'auteur cite Jean Chapelle (1957) et D'Arbaumont (1989), que nous n'avons pas lus.",
+                "page": "p. 488-489"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Daza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dzg",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les groupes du nord du lac Tchad, qui parlent le dazaga.",
+        "usedIn": ["dzg"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Daza est l'autre nom que ces peuples se donnent, avec Dazagada ; au sens strict, il désigne plusieurs groupes du nord du lac Tchad, dont les Kecherda, et Dazagada réunit tous ceux qui parlent le dazaga, selon Jérôme Tubiana. Les sources que nous avons lues n'expliquent pas son origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'animal sauvage, marqueur d'une identité clanique chez les Teda-Daza et les Beri, éleveurs du Tchad, du Niger et du Soudan, dans Le symbolisme des animaux",
+                "author": "Jérôme Tubiana",
+                "year": 2007,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers16-08/010041932.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, IRD Éditions, collection Colloques et séminaires, 2007, sous la direction d'Edmond Dounias, Élisabeth Motte-Florac et Margaret Dunham. Lu en texte intégral. L'auteur cite Jean Chapelle (1957) et D'Arbaumont (1989), que nous n'avons pas lus.",
+                "page": "p. 488-489"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Toubou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom cité dans la chronique des rois du Kanem ; son origine reste incertaine.",
+        "periodLabel": "Mentionné dès le XIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "statement": "Le nom Toubou désigne un ensemble de groupes du Sahara oriental : les Teda du Tibesti et les Daza, qui vivent plus au sud, notamment à l'est du Kanem, selon Dierk Lange et Tadeusz Lewicki. Son origine reste incertaine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 10 : Royaumes et peuples du Tchad",
+                "author": "Dierk Lange",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 272"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 11 : Le rôle du Sahara et des Sahariens dans les relations entre le Nord et le Sud",
+                "author": "Tadeusz Lewicki",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 318-319"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Toubou est celui que leur donnent leurs voisins kanembou, alors qu'eux-mêmes se nomment Teda, Daza ou Dazagada, selon Jérôme Tubiana, qui s'appuie sur Jean Chapelle.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'animal sauvage, marqueur d'une identité clanique chez les Teda-Daza et les Beri, éleveurs du Tchad, du Niger et du Soudan, dans Le symbolisme des animaux",
+                "author": "Jérôme Tubiana",
+                "year": 2007,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers16-08/010041932.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, IRD Éditions, collection Colloques et séminaires, 2007, sous la direction d'Edmond Dounias, Élisabeth Motte-Florac et Margaret Dunham. Lu en texte intégral. L'auteur cite Jean Chapelle (1957) et D'Arbaumont (1989), que nous n'avons pas lus.",
+                "page": "p. 488-489"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1201,
+              "to": 1250,
+              "label": "Première moitié du XIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Toubou se retrouve chez Ibn Fātima, dont le témoignage, transmis par Ibn Sa'id, place les Tubu près du Bahr al-Ghazal, à l'est du Kanem, selon Dierk Lange. Les copies d'un autre ouvrage arabe, le Kitab al-djughrafiya, donnent ce nom sous des formes déformées.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 10 : Royaumes et peuples du Tchad",
+                "author": "Dierk Lange",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 272"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1086,
+              "to": 1140,
+              "label": "Vers 1086-1140"
+            },
+            "era": "polity",
+            "statement": "Le nom Toubou figure dans le Dīwān, la chronique des rois du Kanem, qui donne pour mère au roi Dūnama ben Hummay une Tubu, selon Dierk Lange. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 10 : Royaumes et peuples du Tchad",
+                "author": "Dierk Lange",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 271"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 701,
+              "to": 1086,
+              "label": "Chez les géographes arabes, VIIIe-XIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Toubou n'a pas cours chez les géographes arabes anciens : ils emploient celui de Zaghāwa pour presque tous les groupes toubou, sauf ceux du Kawar et de Kufra, selon Tadeusz Lewicki.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 11 : Le rôle du Sahara et des Sahariens dans les relations entre le Nord et le Sud",
+                "author": "Tadeusz Lewicki",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 319"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Rapportée en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Toubou viendrait de tu-bu, « habitants de la montagne », le Tibesti étant tenu pour le pays d'origine de tous les Toubou ; Dierk Lange, qui rapporte cette explication, la juge nullement sûre.",
+            "hypothesisGroup": "origine du nom Toubou",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 10 : Royaumes et peuples du Tchad",
+                "author": "Dierk Lange",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 272"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gorane",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Arabes donnent aux Daza, cité dès le début du VIIIe siècle.",
+        "periodLabel": "Cité avant 728 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "era": "modern",
+            "statement": "Le nom Gorane est une appellation donnée par les Arabes aux Daza, la branche des Toubou qui vit au nord et au nord-est du lac Tchad, et il est encore en usage, selon Tadeusz Lewicki ; Dierk Lange l'écrit Gorhan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 11 : Le rôle du Sahara et des Sahariens dans les relations entre le Nord et le Sud",
+                "author": "Tadeusz Lewicki",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 319"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 10 : Royaumes et peuples du Tchad",
+                "author": "Dierk Lange",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 272"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 728,
+              "label": "Avant 728"
+            },
+            "era": "polity",
+            "statement": "Le nom Gorane apparaît, sous la forme Kurān ou Korān, chez l'auteur arabe Wahb ibn Munabbih, qui écrivait avant 728, selon Tadeusz Lewicki. C'est la plus ancienne trace de ce nom que le projet connaît. Les Daza existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 11 : Le rôle du Sahara et des Sahariens dans les relations entre le Nord et le Sud",
+                "author": "Tadeusz Lewicki",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 319"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Toubou",
@@ -16,8 +305,8 @@
         "Gorane (terme arabe pour les Daza)",
         "Umbararo"
       ],
-      "originOfExonyms": "Le terme Toubou est dérivé du vieux tebu : tou (Tibesti, massif montagneux) et bou (habitants, en kanembou), signifiant donc habitants du Tibesti. Le terme Gorane, utilisé par les Arabes et repris par l'administration coloniale française, désigne plus particulièrement les Daza. Hérodote mentionna des troglodytes éthiopiens que l'on identifie parfois aux ancêtres des Toubou.",
-      "whyProblematic": "Le terme Toubou est un exonyme kanembou devenu générique pour désigner l'ensemble du groupe, alors que les deux sous-groupes principaux (Teda et Daza) se désignent eux-mêmes par leurs propres noms. L'usage du terme Gorane pour les Daza crée une confusion supplémentaire.",
+      "originOfExonyms": "Le terme Toubou viendrait du vieux tebu : tou (Tibesti, massif montagneux) et bou (habitants, en kanembou) ; il voudrait donc dire habitants du Tibesti. Le terme Gorane, utilisé par les Arabes et repris par l'administration coloniale française, désigne plus particulièrement les Daza. Hérodote mentionna des troglodytes éthiopiens que l'on identifie parfois aux ancêtres des Toubou.",
+      "whyProblematic": "Les Kanembou ont donné le nom Toubou à l'ensemble du groupe. Ses deux principales composantes se nomment elles-mêmes Teda et Daza. L'usage de Gorane pour les Daza ajoute une possibilité de confusion.",
       "contemporaryUsage": "Le terme Toubou est aujourd'hui accepté et utilisé par le groupe lui-même comme identifiant commun, notamment depuis la rébellion toubou des années 1960 qui a diffusé ce nom comme emblème identitaire collectif.",
       "linguisticFamily": "FLG_SAHARIEN",
       "ethnoLinguisticGroup": "Saharien occidental (branche nilo-saharienne, Tedaga et Dazaga)",
@@ -114,12 +403,14 @@
       {
         "title": "SIL Ethnologue - Tedaga (tuq)",
         "url": "https://www.ethnologue.com/language/tuq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue - Dazaga (dzg)",
         "url": "https://www.ethnologue.com/language/dzg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Baroin, Catherine - Anarchie et Cohesion sociale chez les Toubou. Paris : MSH, 1985",
@@ -129,17 +420,20 @@
       {
         "title": "Minority Rights Group International - Chad: Toubou",
         "url": "https://minorityrights.org/country/chad/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Chapelle, Jean - Le Peuple tchadien : ses racines et sa vie quotidienne. L'Harmattan, 1980",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook - Chad, Niger, Libya",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Africa Is a Country - A forsaken people (2021)",

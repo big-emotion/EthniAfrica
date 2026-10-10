@@ -11,6 +11,157 @@
   "summary": "<Chapeau de 2 à 3 phrases, condensé de la fiche — ce qu'un lecteur doit retenir s'il ne lit rien d'autre. N'introduit aucune affirmation absente du reste de la fiche : c'est un résumé, pas une section, et il ne porte donc pas de sources propres. Ouvre sur l'histoire du nom quand elle est parlante.>",
   "etymology": "<Étymologie du nom du pays — origine, sens, histoire du terme>",
   "nameOriginActor": "<Personne / peuple / administration à l'origine du nom>",
+  "nameHistory": {
+    "summary": "<Commence par « Le nom X » ; nomme le nom que le sujet se donne, dit s'il porte plusieurs noms et si leurs origines sont débattues, et qu'elles sont présentées plus bas>",
+    "names": [
+      {
+        "nameText": "<Le nom actuel, tel qu'un lecteur le cherche>",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "xxx",
+        "namedBy": null,
+        "shortLine": "<Une phrase qu'un lecteur comprend sans contexte, 120 caractères au plus>",
+        "usedIn": ["xxx"],
+        "pronunciation": {
+          "respelling": "<Transcription à la française, pour le nom que le sujet se donne — ex: foul-bé>",
+          "audio": null,
+          "source": {
+            "title": "<Dictionnaire ou enregistrement>",
+            "author": "<Auteur>",
+            "year": null,
+            "url": "<URL résolvable>",
+            "tier": "referenced",
+            "source_kind": "linguistic_reference",
+            "page": "<Page, si la source est imprimée>"
+          }
+        },
+        "periodLabel": "<Quand le nom est ou était en usage — ex: usage contemporain>",
+        "accounts": [
+          {
+            "period": {
+              "from": 1500,
+              "to": 1599,
+              "label": "<Ce que le lecteur lit — ex: XVIe siècle>"
+            },
+            "era": "polity",
+            "statement": "<Une phrase qui commence par le nom — ex: Le nom X est attesté…>",
+            "hypothesisGroup": "<Même valeur pour les origines concurrentes d'une même période, montrées côte à côte, sans classement>",
+            "birth": true,
+            "actors": [
+              {
+                "name": "<Personne ou groupe présent dans le récit>",
+                "role": "<Son rôle : contexte, jamais attribution>"
+              }
+            ],
+            "sources": [
+              {
+                "title": "<Titre de la source écrite>",
+                "author": "<Auteur>",
+                "year": null,
+                "url": "<URL résolvable, ou null pour une œuvre hors ligne>",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "<Page, pour une source imprimée>"
+              },
+              {
+                "title": "<Titre du récit oral>",
+                "author": "<Qui le porte : famille, chefferie, griot>",
+                "year": null,
+                "url": null,
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "<Le récit>",
+                "carrier": "<Qui l'a transmis, s'il accepte d'être nommé>",
+                "place": "<Où il a été recueilli>"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1500,
+              "label": "<Avant le nom — ex: avant le XVIe siècle>"
+            },
+            "era": "polity",
+            "statement": "<Ce qui existait avant le nom, en commençant par le nom — ex: Avant le nom X, …>",
+            "before": true,
+            "sources": [
+              {
+                "title": "<Titre>",
+                "author": "<Auteur>",
+                "year": null,
+                "url": null,
+                "tier": "referenced",
+                "source_kind": "archive"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "<Période telle que la source la donne>"
+            },
+            "statement": "<Ce que la source dit du nom pris dans son ensemble ; aspect dit lequel : meaning (son sens), imposition (qui l'a imposé, et pourquoi il pose problème), usage (son usage aujourd'hui)>",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "<Titre>",
+                "author": "<Auteur>",
+                "year": null,
+                "url": "<URL résolvable>",
+                "tier": "official",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "<Date ou période telle que la source la donne — ex: Manuscrit daté de 1594>"
+            },
+            "statement": "<Le nom X est écrit « forme » par l'auteur>",
+            "formAsWritten": "<La forme telle qu'écrite dans le document cité>",
+            "actors": [
+              {
+                "name": "<Qui a écrit cette forme : auteur, chroniqueur, administration>",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "<Titre>",
+                "author": "<Auteur>",
+                "year": null,
+                "url": "<URL résolvable>",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "<Page imprimée — ex: p. 192>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "<Un ancien nom>",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "<Qui a donné ce nom : un peuple, une autorité ; null si inconnu>",
+        "accounts": []
+      },
+      {
+        "nameText": "<Une autre graphie d'un nom, pas un nom à part — ex: Masai pour Maasai>",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

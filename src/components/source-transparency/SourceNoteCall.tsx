@@ -18,7 +18,7 @@ interface SourceNoteCallProps {
 /**
  * The inline mark that turns a sourced field into a citation.
  *
- * A sibling of `ConfidenceChip` rather than a use of it, and the difference is
+ * A sibling of `SourceReviewChip` rather than a use of it, and the difference is
  * not stylistic. The chip states a reference count and a review date — "3
  * références · revu …" — and falls back to a plain text link the moment any of those three values is
  * null, which on this corpus is nearly always, because `last_human_audit_at` is
@@ -51,7 +51,7 @@ export function SourceNoteCall({
         className={cn(
           "relative inline-block rounded-none px-0.5 text-afh-eyebrow tabular-nums",
           "text-afh-text-soft underline-offset-2 hover:underline",
-          "focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]",
+          "focus-visible:outline-none focus-visible:shadow-afh-focus",
           // The target is grown with an absolutely positioned overlay rather
           // than with padding: padding on an inline element inside prose grows
           // the line box, and a paragraph whose leading jumps at every citation

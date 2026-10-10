@@ -103,27 +103,32 @@
       {
         "title": "Encyclopedia.com – Glebo",
         "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/glebo",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project – Grebo, Globo in Liberia",
         "url": "https://joshuaproject.net/people_groups/11939",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Grebo, Seaside in Côte d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/print/11939/LI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "African American Registry – The Grebo People, a story",
         "url": "https://aaregistry.org/story/the-grebo-people-a-brief-story/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Minority Rights Group – Krou in Côte d'Ivoire",
         "url": "https://minorityrights.org/communities/krou/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       }
     ]
   }

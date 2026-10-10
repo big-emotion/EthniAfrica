@@ -9,7 +9,7 @@
       "mainName": "Gabra",
       "selfAppellation": "Gabra / Gabara",
       "exonyms": ["Gabbra", "Gebra", "Gabraa"],
-      "originOfExonyms": "Le terme Gabra pourrait etre derive du mot oromo gabaro signifiant 'vassal' ou 'tributaire', indiquant une association historique au sein de la federation borana. L'ethnonyme Gabraa est la forme en langue oromo.",
+      "originOfExonyms": "Gabra pourrait venir du mot oromo gabaro, qui désigne une personne dépendant d'un pouvoir ou devant lui verser un tribut. Cette explication renverrait aux liens historiques du peuple avec la fédération borana. En oromo, le nom s'écrit Gabraa.",
       "whyProblematic": "L'identite gabra est complexe car le groupe a absorbe des membres d'autres ethnies (Borana, Rendille, Somali). La distinction entre Gabra Malbe (plaines, Kenya) et Gabra Miigo (hauts plateaux, Ethiopie) cree une identite duelle.",
       "contemporaryUsage": "Le terme Gabra est generalement accepte et utilise dans les deux pays. Certains Gabra se designent aussi comme Dibbe Shanan (les Cinq Tambours), reference a leurs cinq fraternites clanique.",
       "linguisticFamily": "FLG_COUCHITIQUE",
@@ -95,7 +95,8 @@
       {
         "title": "101 Last Tribes — Gabra people",
         "url": "https://www.101lasttribes.com/tribes/gabra.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Begin North Adventures — Gabra Tribe",
@@ -105,12 +106,14 @@
       {
         "title": "Joshua Project — Oromo, Gabra in Kenya",
         "url": "https://joshuaproject.net/people_groups/19603/KE",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Borana-Arsi-Guji Oromo (gax)",
         "url": "https://www.ethnologue.com/language/gax/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ultimate Wild Safaris — The Gabbra people",
@@ -120,7 +123,8 @@
       {
         "title": "Robinson, P. W. (1985). Gabra Nomadic Pastoralism in Nineteenth and Twentieth Century Northern Kenya. Northwestern University dissertation",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

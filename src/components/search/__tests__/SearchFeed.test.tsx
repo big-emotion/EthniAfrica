@@ -452,7 +452,7 @@ describe("SearchFeed", () => {
   });
 
   // @req REQ-178
-  it("lists the name a people gives itself first, then the filed name and the others", () => {
+  it("lists the searched form first, the name a people gives itself next, then the filed name", () => {
     const selfName = "Fulbe (pluriel), Pullo (singulier)";
     const result = namedResult({
       type: "people",
@@ -501,10 +501,11 @@ describe("SearchFeed", () => {
       block?.querySelectorAll<HTMLElement>("[data-appellation]") ?? [],
       (chip) => chip.textContent ?? ""
     );
-    expect(forms[0]).toContain(selfName);
+    expect(forms[0]).toContain("Peul");
+    expect(forms[1]).toContain(selfName);
     expect(
       forms.findIndex((form) => form.includes("Fula (Fulbe / Peul)"))
-    ).toBeGreaterThan(0);
+    ).toBeGreaterThan(1);
   });
 
   // @req REQ-180

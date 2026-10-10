@@ -113,7 +113,7 @@ export const NommerPillarPage = ({ language }: { language: Language }) => {
               <li key={entry.id}>
                 <a
                   href={`${glossaryHref}#terme-${entry.id}`}
-                  className="inline-flex min-h-11 items-center rounded-afh-full border border-afh-border px-afh-md text-afh-small font-semibold text-[color:var(--accent-ink)] no-underline hover:underline focus-visible:underline focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
+                  className="inline-flex min-h-11 items-center rounded-afh-full border border-afh-border px-afh-md text-afh-small font-semibold text-[color:var(--accent-ink)] no-underline hover:underline focus-visible:underline focus-visible:outline-none focus-visible:shadow-afh-focus"
                 >
                   {entry.fr}
                 </a>

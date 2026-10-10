@@ -23,7 +23,7 @@
       ],
       "originOfExonyms": "Soussou est la transcription francophone adoptee par l'administration coloniale francaise et restee en usage en Guinee et dans la litterature francophone. Susu est la forme anglophone utilisee en Sierra Leone et dans la litterature internationale. Soso/Sosso renvoie a la connexion historique avec l'empire Sosso de Soumaoro Kante. Le mot Susu ou Soso derive selon certaines sources du terme Susuwi, signifiant cheval ou cavalier dans la langue, reference possible a une elite guerriere montee.",
       "whyProblematic": "La relation entre les Soussou et les Sosso de l'empire du 13e siecle est debattue : certaines sources les assimilent directement (Soussou d'aujourd'hui = descendants des soldats Sosso), d'autres les considerent comme un groupe forme par fusion de plusieurs elements mande. Le nom Sosso est aussi utilise pour l'empire de Soumaoro Kante, ce qui cree une ambiguite entre le peuple contemporain et l'entite historique medievale. Niane presente les Sosoe comme un clan maninka, alors que Person decrit les Susu comme un peuple apparente aux Jalonke.",
-      "contemporaryUsage": "Susu et Soussou sont les termes les plus utilises en Guinee et en Sierra Leone respectivement dans les contextes francophones et anglophones. Soso est la forme la plus proche de l'endonyme. La Guinee tire son nom du mot susu designant femme selon une etymologie couramment citee.",
+      "contemporaryUsage": "Susu et Soussou sont les formes les plus utilisées en Guinée et en Sierra Leone, selon les usages francophones et anglophones. Soso est la forme la plus proche du nom que le peuple se donne. Selon une explication souvent citée, le nom Guinée viendrait du mot susu pour femme.",
       "linguisticFamily": "FLG_MANDE",
       "ethnoLinguisticGroup": "Soso-Yalunka (branche Mande de la famille Niger-Congo)",
       "historicalRegion": "Guinee cotiere et plateau du Fouta-Djalon (Guinee actuelle); Conakry, Kindia, Dubreka, Kambia (Sierra Leone)",
@@ -125,59 +125,70 @@
       {
         "title": "101 Last Tribes – Susu people",
         "url": "https://www.101lasttribes.com/tribes/susu.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue – Susu Language (SUS)",
         "url": "https://www.ethnologue.com/language/sus/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Indiana University Center for Language Technology – Susu Language Portal",
         "url": "https://celt.indiana.edu/portal/Susu/index.html",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Niane, Djibril Tamsir (dir.) (1985) – Histoire générale de l'Afrique, tome IV : L'Afrique du XIIe au XVIe siècle. UNESCO, Paris",
         "url": null,
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Publication de l'UNESCO. Le chapitre 6, signé Niane, suit les traditions orales des écoles de griots du Manden et les croise avec les auteurs arabes ; sa chronologie est relative. Antérieure aux relectures archéologiques de Niani."
       },
       {
         "title": "Person, Yves (1985) – Les peuples côtiers de la Casamance aux lagunes ivoiriennes, in Niane (dir.), Histoire générale de l'Afrique IV. UNESCO, Paris",
         "url": null,
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Décrit les Susu et les Jalonke comme deux peuples étroitement apparentés du Fouta-Djalon ; ne les relie pas au royaume de Soso."
       },
       {
         "title": "IndexMundi – Guinea ethnic groups, CIA World Factbook 2021",
         "url": "https://www.indexmundi.com/factbook/compare/guinea.liberia/demographics",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Joshua Project — Susu people group all countries (2025)",
         "url": "https://joshuaproject.net/people_groups/15141",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Susu in Guinea-Bissau (2026)",
         "url": "https://joshuaproject.net/people_groups/15141/PU",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Susu of Guinea (PG013431)",
         "url": "https://peoplegroups.org/people_groups/pg013431/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Rosetta Panglossia — Susu Language (sus)",
         "url": "https://rosettapanglossia.longnow.org/index.php?title=Susu_Language_%28sus%29",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL CEDS — ISO 639-3: Susu = sus",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   },

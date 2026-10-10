@@ -87,7 +87,8 @@
       {
         "title": "São Tomé and Príncipe – Minority Rights Group, 2024",
         "url": "https://minorityrights.org/country/sao-tome-and-principe/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Population and Demographics – SaoTomeExpert, 2022",
@@ -102,7 +103,8 @@
       {
         "title": "Sao Tome and Principe Demographics Profile – IndexMundi",
         "url": "https://www.indexmundi.com/sao_tome_and_principe/demographics_profile.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       }
     ]
   }

@@ -9,7 +9,7 @@
       "mainName": "Balanta",
       "selfAppellation": "Balanta",
       "exonyms": ["Balante", "Balanta-Brassa", "Bulanda", "Balant"],
-      "originOfExonyms": "Le nom Balanta (portugais et creole de Guinee-Bissau : balanta ; francais : balante) signifie litteralement ceux qui resistentou ceux qui refusenten mandingue (du terme balanto). Ce nom fut donne par les Mandingues qui se heurtaient frequemment a leur resistance lors des tentatives d'expansion. Ce n'est pas un endonyme : les Balanta se nomment eux-memes Balanta sans connotation particuliere, ayant integre le terme.",
+      "originOfExonyms": "Balanta, écrit balanta en portugais et en créole de Guinée-Bissau, et balante en français, viendrait du mandingue balanto. Il est traduit par « ceux qui résistent » ou « ceux qui refusent ». Les Mandingues auraient donné ce nom aux populations qui résistaient à leurs tentatives d'expansion. D'abord donné de l'extérieur, Balanta a été adopté par les personnes concernées, qui l'emploient aujourd'hui sans sens particulier.",
       "whyProblematic": "Le terme balanta designe un ensemble de sous-groupes linguistiquement apparentes mais pas toujours mutuellement intelligibles. La classification des dialectes comme langues distinctes ou comme dialectes d'une meme langue varie selon les linguistes.",
       "contemporaryUsage": "Terme officiel utilise au Senegal, en Gambie et en Guinee-Bissau. En Guinee-Bissau, les Balanta sont le deuxieme (voire premier selon certaines sources) groupe ethnique, representant environ 25 a 30% de la population.",
       "linguisticFamily": "FLG_ATLANTIQUE",
@@ -110,17 +110,20 @@
       {
         "title": "Qiraat Africa. The Balanta of Guinea-Bissau, Senegal and The Gambia",
         "url": "https://qiraatafrican.com/en/19891/the-balanta-of-guinea-bissau-senegal-and-the-gambia/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "101 Last Tribes. Balanta people",
         "url": "https://www.101lasttribes.com/tribes/balanta.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue (SIL International). Balanta Language (BLE)",
         "url": "https://www.ethnologue.com/language/ble/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

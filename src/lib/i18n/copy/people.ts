@@ -10,7 +10,6 @@ const fr = {
     linguisticFamily: "Famille linguistique",
     namesReferencedHere: "Noms rattachés",
     missingData: "Non renseigné",
-    factTier: "Niveau de source",
     populationDisagreement: (declared: string, summed: string) =>
       `Le total déclaré est de ${declared} personnes, tandis que les populations indiquées par pays totalisent ${summed}. Ces chiffres ne concordent pas.`,
   },
@@ -48,7 +47,7 @@ const fr = {
   reportSection: "Signaler cette section",
   naming: {
     selfDesignation: "Auto-appellation",
-    exonyms: "Exonymes",
+    exonyms: "Noms donnés par d’autres",
     origin: "D'où viennent ces noms.",
     problematic: "Pourquoi ces noms posent problème.",
     contemporary: "L'usage aujourd'hui.",

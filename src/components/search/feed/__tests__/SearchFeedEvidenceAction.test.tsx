@@ -33,7 +33,7 @@ const evidence: SearchEvidence = {
 };
 
 describe("SearchFeedEvidenceAction", () => {
-  // @req REQ-180
+  // @req REQ-180 REQ-092
   it("adapts a real search assertion and its sources into the shared sheet", async () => {
     render(
       <SearchFeedEvidenceAction
@@ -43,12 +43,13 @@ describe("SearchFeedEvidenceAction", () => {
       />
     );
 
-    expect(screen.getByText("Référencée")).toHaveAttribute(
-      "data-source-standing",
-      "referenced"
+    // The summary standing is an audit field, never a reader label
+    // (doctrine §1.1, REQ-092).
+    expect(document.getElementById("feed-evidence-fang")).not.toHaveTextContent(
+      /Référencée|Officielle|Non vérifiée/
     );
     const trigger = screen.getByRole("button", {
-      name: /ouvrir la chaîne de sources/i,
+      name: /consulter les sources de cette information/i,
     });
     expect(trigger).toHaveClass("min-h-[44px]");
     expect(trigger).toHaveTextContent("1 référence");
@@ -61,6 +62,31 @@ describe("SearchFeedEvidenceAction", () => {
       )
     ).toBeVisible();
     expect(screen.getByText("Dictionnaire fang-français")).toBeVisible();
+  });
+
+  // The assertion carries a stored score of 0.85; neither the chip nor the
+  // sheet it opens may print it.
+  // @req REQ-194
+  it("prints no confidence score on the plate or in its sheet", async () => {
+    render(
+      <SearchFeedEvidenceAction
+        evidence={evidence}
+        anchorId="feed-evidence-fang"
+        language="fr"
+      />
+    );
+
+    expect(
+      document.getElementById("feed-evidence-fang")?.textContent
+    ).not.toMatch(/confiance|85|%/i);
+    fireEvent.click(
+      screen.getByRole("button", {
+        name: /consulter les sources de cette information/i,
+      })
+    );
+
+    const dialog = await screen.findByRole("dialog");
+    expect(dialog.textContent).not.toMatch(/confiance|85|%|Calculé/i);
   });
 
   // @req REQ-180
@@ -78,7 +104,9 @@ describe("SearchFeedEvidenceAction", () => {
     expect(document.getElementById("feed-evidence-fang")).toBeInTheDocument();
 
     fireEvent.click(
-      screen.getByRole("button", { name: /ouvrir la chaîne de sources/i })
+      screen.getByRole("button", {
+        name: /consulter les sources de cette information/i,
+      })
     );
 
     await screen.findByText("Dictionnaire fang-français");

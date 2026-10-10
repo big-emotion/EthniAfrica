@@ -85,12 +85,14 @@
       {
         "title": "SIL Ethnologue — Kouya language (kyf)",
         "url": "https://www.ethnologue.com/language/kyf/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Swordshare Map — Kouya language info (10 746 speakers)",
         "url": "https://map.swordshare.com/kyf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Scribd — Histoire et culture du peuple Krou",
@@ -100,12 +102,14 @@
       {
         "title": "Minority Rights Group — Côte d'Ivoire",
         "url": "https://minorityrights.org/country/cote-divoire/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Glottolog — Kru language family",
         "url": "https://glottolog.org/resource/languoid/id/kru1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -60,8 +60,6 @@ const fr = {
   systemBadge: "Selon l’appareil",
   systemChoice: "Autres applications",
   home: "Accueil",
-  referenced: "Source référencée",
-  official: "Source officielle",
   credits: {
     burkina: "Ouagadougou, 1930–1931 · W. Mittelholzer · Domaine public",
     guere: "Masque wè · Mickey Mystique · CC BY-SA 4.0",

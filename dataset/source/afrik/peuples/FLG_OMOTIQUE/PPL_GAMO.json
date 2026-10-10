@@ -13,7 +13,7 @@
       "mainName": "Gamo",
       "selfAppellation": "Gamo (Gaammo)",
       "exonyms": ["Gemu"],
-      "originOfExonyms": "Le nom Gamo est similaire au mot Gaammo dans leur propre langue, signifiant lion ; ce nom reflète l'identité héroïque du peuple. L'exonyme Gemu est utilisé dans certaines classifications linguistiques.",
+      "originOfExonyms": "Gamo ressemble au mot Gaammo, lion, dans la langue du peuple. Cette explication relie le nom à l'image héroïque que le groupe se donne. Certaines classifications de langues emploient Gemu.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Gamo est utilisé dans les documents officiels éthiopiens, dans la nomenclature administrative (zone Gamo) et dans les médias. La province de Gamo-Gofa, dont ils partageaient le nom avec les Gofa, a été réorganisée en 2019 lors de la séparation des Gofa."
     },
@@ -74,12 +74,14 @@
       {
         "title": "Gamo in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/11814/ET",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Gamo Language (GMV) – Ethnologue / SIL International, 2025",
         "url": "https://www.ethnologue.com/language/gmv/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Gamo Highlands – Ethiopia – Sacred Land Film Project, 2009",
@@ -89,7 +91,8 @@
       {
         "title": "Gamo's cultural forum – Dubussha as a tool for social change communication – Heliyon / ScienceDirect, 2024",
         "url": "https://www.sciencedirect.com/science/article/pii/S2405844024037058",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

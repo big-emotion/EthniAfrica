@@ -6,7 +6,6 @@ import type { ParagraphChipData } from "../ProseWithChip";
 
 const fullChip: ParagraphChipData = {
   chipId: "origin-1",
-  confidenceScore: 85,
   sourceCount: 3,
   lastHumanAuditAt: "2025-01-15",
   assertionStatement: "Les Yoruba sont originaires d'Ile-Ife.",
@@ -15,10 +14,9 @@ const fullChip: ParagraphChipData = {
 
 const incompleteChip: ParagraphChipData = {
   chipId: "origin-2",
-  confidenceScore: null,
   sourceCount: null,
   lastHumanAuditAt: null,
-  assertionStatement: "Assertion sans données de confiance.",
+  assertionStatement: "Assertion sans référence datée.",
   sources: [],
 };
 
@@ -59,7 +57,8 @@ describe("ProseWithChip", () => {
     });
   });
 
-  it("shows ConfidenceChip button when all chip data is present", async () => {
+  // @req REQ-019
+  it("shows SourceReviewChip button when all chip data is present", async () => {
     render(<ProseWithChip text="Paragraphe vérifié." chip={fullChip} />);
     await waitFor(() => {
       const btn = screen.queryByRole("button");

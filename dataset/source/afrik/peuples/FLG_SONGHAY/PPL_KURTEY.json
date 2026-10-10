@@ -12,7 +12,7 @@
         "Voleurs d'hommes (surnom zarma au 19e siècle, en référence aux razzias d'esclaves)",
         "Sous-groupe songhay (désignation de certains observateurs extérieurs qui les considèrent comme une fraction des Songhaï)"
       ],
-      "originOfExonyms": "Le terme Kurtey est l'ethnonyme propre de ce groupe. Le surnom zarma de Voleurs d'hommes (en zarma : expression liée aux razzias d'esclaves) leur a été attribué au 19e siècle lorsque de nombreux Kurtey musulmans menaient des raids d'esclavage contre les Zarma non-musulmans des rives du Niger. Certains observateurs extérieurs les considèrent comme un sous-groupe des Songhaï en raison de leur langue songhay méridionale, mais d'autres soulignent leur identité distincte résultant de leur triple héritage songhaï-zarma-peul.",
+      "originOfExonyms": "Le groupe se nomme lui-même Kurtey. Au XIXe siècle, de nombreux Kurtey musulmans menaient des attaques pour capturer des esclaves parmi les Zarma non musulmans des rives du Niger. Les Zarma leur ont alors donné un surnom traduit par Voleurs d'hommes. Certains observateurs les rattachent aux Songhaï parce qu'ils parlent une langue songhay du sud. D'autres soulignent leur identité propre, issue d'héritages songhaï, zarma et peul.",
       "whyProblematic": "Le statut ethnique des Kurtey est sujet à débat : certains analystes les voient comme une fraction des Songhaï, d'autres comme un groupe distinct à part entière ayant des histoires, des cultures et une auto-identification spécifiques dans le plus large espace songhay. Leur identité hybride résultant d'un métissage historique entre Peuls, Songhaï, Zarma et Sorko rend leur classification ethno-linguistique complexe.",
       "contemporaryUsage": "Le terme Kurtey est utilisé par la communauté elle-même et par les populations environnantes au Niger. On les trouve principalement le long du Niger dans la région de Tillaberi (Niger), ainsi que dans des proportions moindres au Mali, au Bénin et au Nigeria. Leur nombre est estimé à moins de 50 000 personnes.",
       "linguisticFamily": "FLG_SONGHAY",
@@ -108,17 +108,20 @@
       {
         "title": "101 Last Tribes — Kurtey people",
         "url": "https://www.101lasttribes.com/tribes/kurtey.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Facebook / Zarma Songhai Media — Kurtey people",
         "url": "https://www.facebook.com/ZarmaSonghai/posts/the-kurtey-peoplethe-kurtey-were-formed/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — Niger",
         "url": "https://www.cia.gov/the-world-factbook/countries/niger/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

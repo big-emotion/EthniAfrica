@@ -28,6 +28,8 @@ import { CountriesAnswer } from "@/components/search/feed/CountriesAnswer";
 import { SubjectAnswer } from "@/components/search/feed/SubjectAnswer";
 import { VerdictBlock } from "@/components/search/feed/VerdictBlock";
 import { WordAnswerPage } from "@/components/search/feed/WordAnswerPage";
+import { NameTimeline } from "@/components/search/timeline/NameTimeline";
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
@@ -46,8 +48,13 @@ import {
   buildSearchFeedPlan,
   type SearchFeedAnswerState,
 } from "@/lib/search/searchFeedPlan";
-import { buildFeedLenses, type FeedLensId } from "@/lib/search/searchLenses";
+import {
+  buildFeedLenses,
+  defaultFeedLens,
+  type FeedLensId,
+} from "@/lib/search/searchLenses";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
+import { orderForSearch } from "@/lib/search/searchedName";
 import type { SearchFeedPresentation } from "@/lib/search/searchFeedPresentation";
 import type {
   SearchLead,
@@ -92,7 +99,17 @@ export interface SearchFeedProps {
   resultCount?: number;
   presentation?: SearchFeedPresentation;
   relation?: SearchFeedRelation;
+  /**
+   * The name history of each searched subject that has one, in the subjects'
+   * order. When there is one, the page opens on the timeline (REQ-198).
+   */
+  nameHistories?: readonly SubjectNameHistory[];
   onResultNavigate?: (type: string, rank: number) => void;
+}
+
+export interface SubjectNameHistory {
+  subject: SearchResult;
+  nameHistory: NameHistory;
 }
 
 function normalizedQueryId(query: string): string {
@@ -136,24 +153,28 @@ function resultForms(
     const subjectId = `${subject.type}:${subject.id}`;
     const presentation = subject.naming?.presentation.forms ?? [];
     const filedName = getLocalizedSearchResultName(subject, language);
-    // Operator ruling, 2026-09-22: the name a people gives itself comes first,
-    // then the filed name and the others in the fiche's order. Ordering is not
-    // crowning — every chip keeps the same weight; the self-given one is marked.
-    return selfGivenFirst([
-      {
-        form: filedName,
-        subjectId,
-        selfGiven: subject.autonym === subject.name ? true : null,
-        problematic: undefined,
-        searched: normalizeString(filedName) === wanted,
-      },
-      ...presentation.map((form) => ({
-        ...form,
-        subjectId,
-        searched: normalizeString(form.form) === wanted,
-        detail: formDetail(form),
-      })),
-    ]);
+    // Operator decision 2026-10-08 (doctrine §1.1): where the reader searched,
+    // the searched form comes first, the name a people gives itself right
+    // after it, then the filed name and the others in the fiche's order.
+    // Ordering is not crowning — every chip keeps the same weight.
+    return orderForSearch(
+      [
+        {
+          form: filedName,
+          subjectId,
+          selfGiven: subject.autonym === subject.name ? true : null,
+          problematic: undefined,
+          searched: normalizeString(filedName) === wanted,
+        },
+        ...presentation.map((form) => ({
+          ...form,
+          subjectId,
+          searched: normalizeString(form.form) === wanted,
+          detail: formDetail(form),
+        })),
+      ],
+      (form) => form.searched
+    );
   });
   const unique = new Map(
     forms.map((form) => [
@@ -186,16 +207,6 @@ function formDetail(
   return text ? { text, evidence: form.evidence[0] } : undefined;
 }
 
-/** A stable partition: self-given forms first, every other form in its order. */
-function selfGivenFirst<T extends { selfGiven?: boolean | null }>(
-  forms: readonly T[]
-): T[] {
-  return [
-    ...forms.filter((form) => form.selfGiven === true),
-    ...forms.filter((form) => form.selfGiven !== true),
-  ];
-}
-
 // @req REQ-178
 // @req REQ-180
 export function SearchFeed({
@@ -212,9 +223,13 @@ export function SearchFeed({
   resultCount,
   presentation,
   relation,
+  nameHistories = [],
   onResultNavigate,
 }: SearchFeedProps) {
-  const [activeLens, setActiveLens] = useState<FeedLensId>("all");
+  // The feed is keyed by query, so the default is chosen once per search.
+  const [activeLens, setActiveLens] = useState<FeedLensId>(() =>
+    defaultFeedLens(nameHistories.length)
+  );
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [validatedOption, setValidatedOption] = useState<number | null>(null);
   const copy = searchFeedCopy[language];
@@ -394,6 +409,7 @@ export function SearchFeed({
 
   const lenses = buildFeedLenses(
     {
+      timeline: nameHistories.length,
       shorts: companions.shorts.items.length,
       stories: plates.length,
       quiz: companions.quiz.item ? 1 : 0,
@@ -577,6 +593,7 @@ export function SearchFeed({
               answer={subject!.answer!}
               listedPeoples={subject!.associatedPeoples}
               searchedForm={query}
+              selfNameHref={ficheHrefFor(subject!, language)}
               reviewed={reviewedFor(subject!)}
               originCoveredElsewhere={
                 coveredByAnother(subject!) || Boolean(sharedOrigin)
@@ -821,10 +838,97 @@ export function SearchFeed({
     return renderBlock(id);
   };
 
+  // The timeline is a whole page of its own: each subject's name history, the
+  // first under the page's h1. « Tout » in the lens bar is the way back.
+  if (activeLens === "timeline") {
+    // A name shared by several subjects (« Yoruba », a people and a language)
+    // titles the page, as on the answer: the first timeline taking the h1
+    // would crown its subject (REQ-178). A subject whose history is not
+    // written yet is named and leads to « Tout », never dropped in silence.
+    const sharedName = ficheSubjects.length > 1;
+    const withHistory = new Set(
+      nameHistories.map(({ subject }) => `${subject.type}:${subject.id}`)
+    );
+    const unwritten = ficheSubjects.filter(
+      (subject) => !withHistory.has(`${subject.type}:${subject.id}`)
+    );
+    return (
+      <SearchFeedLayout
+        className="text-afh-text"
+        reviewed={Boolean(presentation)}
+        first={renderBlock("lenses")}
+        blocks={[
+          ...(sharedName
+            ? [
+                <h1
+                  key="timeline-title"
+                  className="font-afh-display text-afh-h1 font-black leading-[var(--afh-leading-h1)] text-afh-text [overflow-wrap:anywhere]"
+                >
+                  {pageName}
+                </h1>,
+              ]
+            : []),
+          ...nameHistories.map(({ subject, nameHistory }, index) => (
+            <NameTimeline
+              key={`${subject.type}:${subject.id}`}
+              history={nameHistory}
+              searched={query}
+              subjectType={subject.type}
+              headingLevel={index === 0 && !sharedName ? "h1" : "h2"}
+              // A country result is its own country; a people carries its
+              // countries. Other kinds carry none, and get outside-Africa
+              // events only (see elsewhereAnchorFor).
+              countryIds={
+                subject.type === "country" ? [subject.id] : subject.countryIds
+              }
+              language={language}
+            />
+          )),
+          ...(unwritten.length > 0
+            ? [
+                <section
+                  key="timeline-also-named"
+                  aria-labelledby="timeline-also-named"
+                  className="afh-tile"
+                  data-timeline-also-named=""
+                >
+                  <p id="timeline-also-named" className="afh-tile-label">
+                    {copy.lens.alsoNamed}
+                  </p>
+                  <ul>
+                    {unwritten.map((subject) => (
+                      <li
+                        key={`${subject.type}:${subject.id}`}
+                        className="font-bold"
+                      >
+                        {getSearchEntityLabel(subject.type)} ·{" "}
+                        {getLocalizedSearchResultName(subject, language)}
+                      </li>
+                    ))}
+                  </ul>
+                  <p>{copy.lens.alsoNamedUnwritten(unwritten.length)}</p>
+                  <button
+                    type="button"
+                    onClick={() => setActiveLens("all")}
+                    className="inline-flex min-h-11 items-center font-bold text-[color:var(--accent-ink)] underline underline-offset-4 focus-visible:outline-none focus-visible:shadow-afh-focus"
+                  >
+                    {copy.lens.alsoNamedSeeAll}
+                  </button>
+                </section>,
+              ]
+            : []),
+        ]}
+      />
+    );
+  }
+
   // A filter replaces the answer: the page is then about what the reader
   // asked to see, under a heading that says so, with a way back.
   if (activeLens !== "all") {
-    const lensBlock: Record<Exclude<FeedLensId, "all">, ReactNode> = {
+    const lensBlock: Record<
+      Exclude<FeedLensId, "all" | "timeline">,
+      ReactNode
+    > = {
       shorts: (
         <ShortsBlock
           grouped
@@ -854,7 +958,7 @@ export function SearchFeed({
             <button
               type="button"
               onClick={() => setActiveLens("all")}
-              className="inline-flex min-h-11 items-center font-bold text-[color:var(--accent-ink)] underline underline-offset-4 focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
+              className="inline-flex min-h-11 items-center font-bold text-[color:var(--accent-ink)] underline underline-offset-4 focus-visible:outline-none focus-visible:shadow-afh-focus"
             >
               {copy.lens.back}
             </button>

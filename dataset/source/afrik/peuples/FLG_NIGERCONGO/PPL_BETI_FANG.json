@@ -15,7 +15,7 @@
         "Pangwe (denomination allemande)",
         "Beti-Pahuin (categorie coloniale englobante)"
       ],
-      "originOfExonyms": "Le terme Fang est l'autodesignation principale du sous-groupe meridional. Pahouin est un exonyme d'origine locale (probablement duala ou bassa) repris par les colonisateurs europeens pour designer l'ensemble du complexe culturel bantou A70 de la foret equatoriale. Pangwe est la denomination allemande. Fan est la variante orthographique anglophone. Le terme Beti-Fang designe specifiquement l'articulation entre les Beti (sous-groupes camerounais) et les Fang (sous-groupes de Guinee equatoriale et du Gabon).",
+      "originOfExonyms": "Fang est le principal nom que se donne le groupe du sud. Pahouin serait un nom d'origine locale, probablement duala ou bassa, repris par les colonisateurs européens. Il rassemble plusieurs peuples de la forêt équatoriale proches par leur culture et leurs langues, classées dans le groupe bantou A70. Pangwe est le nom allemand et Fan une manière anglaise d'écrire le nom. Beti-Fang souligne les liens entre les Beti du Cameroun et les Fang de Guinée équatoriale et du Gabon.",
       "whyProblematic": "La categorie Beti-Fang est une construction coloniale regroupant des sous-groupes distincts partageant des langues partiellement intelligibles mais des identites separees. Les Fang de Guinee equatoriale et du Gabon se distinguent culturellement et linguistiquement des Beti du Centre Cameroun. La denomination Pahouin a ete utilisee par la colonisation pour fusionner ces identites distinctes.",
       "contemporaryUsage": "Fang est utilise principalement en Guinee equatoriale et au Gabon. Beti reste dominant au Cameroun. Le terme Beti-Fang apparait dans la litterature ethnologique et linguistique pour designer le groupe A70 dans son ensemble.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -113,12 +113,14 @@
       {
         "title": "Encyclopedia Britannica — Fang",
         "url": "https://www.britannica.com/topic/Fang-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "101 Last Tribes — Fang people",
         "url": "https://www.101lasttribes.com/tribes/fang.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Sociology International Journal — The Fang-Bulu-Beti (1665-1850)",
@@ -128,12 +130,14 @@
       {
         "title": "Kunzaar — The Fang People: History, Culture, Festivals",
         "url": "https://kunzaar.com.ng/fang-people-gabon-culture-history-festivals-religion/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Fang (fan)",
         "url": "https://www.ethnologue.com/language/fan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -6,7 +6,7 @@
   },
   "id": "PAT_ZADI",
   "nameMain": "Zadi",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Zadi",
@@ -19,17 +19,27 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Une liste de noms bété publiée par un média ivoirien présente Zadi comme un nom de jumeaux, et non comme un nom de clan.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["afriksoir-2021-noms-bete"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_BETE",
       "status": "supposed",
-      "sourceRefs": ["gronner-1982-bete-soubre", "wiktionnaire-zadi"]
+      "sourceRefs": [
+        "gronner-1982-bete-soubre",
+        "wiktionnaire-zadi",
+        "afriksoir-2021-noms-bete"
+      ]
     }
   ],
   "countries": [
@@ -73,12 +83,20 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Page communautaire consultée le 2 septembre 2026. Elle qualifie Zadi de nom de famille bété de Côte d'Ivoire, mais ne fournit aucune référence étymologique dédiée : son affirmation est conservée à faible autorité et seulement comme appui secondaire à l'association proposée. La page Wikipédia liée n'a pas été utilisée comme source."
+    },
+    {
+      "sourceKey": "afriksoir-2021-noms-bete",
+      "title": "Côte d'Ivoire : Voici la signification des noms Bété que vous connaissez",
+      "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+      "tier": "unverified",
+      "source_kind": "press",
+      "notes": "Afrik Soir, 14 février 2021, page consultée directement. La liste donne « Gbagbo : Dit tout, s'exprimer sans crainte » et « Zadi : Nom de jumeaux ». Elle ne cite aucune source et ne dit pas comment ces noms se transmettent."
     }
   ],
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "Gronner atteste plusieurs personnes et un groupe Zadiayo dans les communautés bété de Soubré, tandis que la BnF confirme un nom de personne. Aucune de ces sources ne classe Zadi comme nom de clan ; la typologie exigée par le modèle reste non résolue."
+      "reason": "Aucune source consultée ne fait de Zadi un nom de clan : une liste de presse le donne comme un nom de jumeaux, et Gronner comme la BnF le citent comme nom de personne. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     },
     {
       "fieldPath": "designatedSocialUnit",
@@ -94,7 +112,7 @@
     },
     {
       "fieldPath": "origin.linguisticReconstructions",
-      "reason": "Wiktionnaire affirme seulement que Zadi est un nom bété et Forebears indique que sa signification n'est pas répertoriée. Les recherches « Zadi étymologie bété », « Zadi anthroponymie » et « Zadi onomastique » n'ont produit aucune analyse linguistique dédiée et vérifiable."
+      "reason": "La liste de presse dit à qui le nom est donné, pas d'où vient le mot. Wiktionnaire affirme seulement que Zadi est un nom bété et Forebears indique que sa signification n'est pas répertoriée. Les recherches « Zadi étymologie bété », « Zadi anthroponymie » et « Zadi onomastique » n'ont produit aucune analyse linguistique dédiée et vérifiable."
     },
     {
       "fieldPath": "alliances",

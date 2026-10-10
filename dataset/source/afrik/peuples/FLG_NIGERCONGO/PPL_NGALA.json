@@ -17,7 +17,7 @@
         "Wangala",
         "Ngalla"
       ],
-      "originOfExonyms": "Le nom apparaît par écrit en février 1877 chez Stanley, qui note Mangala à la fois comme localité et comme nation, d'après des habitants de Rubunga, dans la région d'Upoto. Les Européens en font ensuite Bangala : ils nomment ainsi, à partir de 1884, le poste de Bangala-Station, puis les Congolais de toute la région. Le sens du nom est discuté. Coquilhat (1888) et Hulstaert (1940, 1974) y voient les gens de la petite rivière ; Mumbanza (1973) y voit les gens de Mankanza ; Mimpongo (2025) rattache le nom de la langue à une expression bobangi qui signifie le langage des grands marchés, plus ancienne que le nom du peuple. Ces lectures ne sont pas départagées ici.",
+      "originOfExonyms": "Le nom apparaît par écrit en février 1877 chez Stanley, qui note Mangala à la fois comme localité et comme nation, d'après des habitants de Rubunga, dans la région d'Upoto. Les Européens en font ensuite Bangala : ils nomment ainsi, à partir de 1884, le poste de Bangala-Station, puis les Congolais de toute la région. Le sens du nom est discuté. Coquilhat (1888) et Hulstaert (1940, 1974) y voient les gens de la petite rivière ; Mumbanza (1973) y voit les gens de Mankanza ; Mimpongo (2025) propose de rattacher le nom de la langue à une expression bobangi qui signifie le langage des grands marchés, plus ancienne que le nom du peuple. Ces lectures ne sont pas départagées ici.",
       "whyProblematic": "Le terme Bangala/Ngala a d'abord été posé de l'extérieur, par des Européens, sur un ensemble de groupes distincts le long du Moyen-Congo et du Haut-Congo (Budja, Ngombe, Poto, Doko, Mondunga, Ngbandi, Ngbaka, Mbanza, etc.). Certains de ces groupes sont de souche soudanaise (Ngbandi, Ngbaka) et non strictement bantoue. Le parler qui porte le même nom, le bangala, est issu du bobangi et devenu langue de contact au poste de Bangala-Station (Meeuwis, 2020). Hulstaert tenait déjà en 1940 pour presque certain qu'aucune tribu Bangala n'avait existé.",
       "contemporaryUsage": "Le terme Bangala est surtout utilisé dans un sens linguistique (langue bangala, soeur du lingala) et historique. Le nom est aussi repris par des groupes de la région : selon Mumbanza (1995), les Iboko, les Mabale et les habitants de Mankanza se disent Mangala ma Liboko ; selon Lothaire (cité en 1907), des travailleurs de groupes différents se disaient « nous Bangala » loin de chez eux. Le lingala, héritier direct du bangala colonial, est aujourd'hui la langue véhiculaire de 10 à 25 millions de personnes en RDC et en République du Congo.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -106,7 +106,8 @@
       {
         "title": "101 Last Tribes — Bangala people",
         "url": "https://www.101lasttribes.com/tribes/bangala.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Bokamba, E.G. — Lingala as a Supranational Language in DRC. CERECK, 2019",
@@ -118,48 +119,56 @@
         "title": "Ugent Biblio — The linguistic features of Bangala before Lingala",
         "url": "https://backoffice.biblio.ugent.be/download/8644523/8645617",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de Michael Meeuwis (Afrikanistik-Aegyptologie Online, 2019, publié en 2020). Décrit la fondation de Bangala-Station en 1884, le passage du nom Bangala du peuple supposé au poste puis au parler issu du bobangi, et les langues locales distinctes de la région (liboko, mabale, libinza, boloki)."
       },
       {
         "title": "Mimpongo, Mpoke, « L'origine et la signification du glossonyme lingala », lingbuzz, 2024",
         "url": "https://ling.auf.net/lingbuzz/008154",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Propose que Lingála et Mangála viennent d'une expression bobangi signifiant « le langage des grands marchés », et discute les lectures de Coquilhat, de Mumbanza (dont la formule Mangala ma Liboko) et de Tshimpaka."
       },
       {
         "title": "Hulstaert, Gustaaf, « Lingala », Æquatoria, 3, 1940, p. 33-43",
         "url": "https://www.aequatoria.be/04common/020publications_pdf/Aequatoria%201940.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Écrit, p. 36, qu'il est presque certain qu'aucune tribu Bangala n'a existé et que le nom dérive probablement de mongala, bras de rivière ; énumère les tribus riveraines auxquelles le nom est appliqué (Boloki, Iboko, Mabale, Bapoto, etc.)."
       },
       {
         "title": "Mbulamoko Nzenge Movoambe, « État des recherches sur le lingala comme groupe linguistique autonome », Annales Aequatoria, 12, 1991, p. 377-406",
         "url": "https://www.aequatoria.be/04common/020publications_pdf/Annales%20Aequatoria%201991.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Fait dériver lingala de Bangala, nom employé pour la première fois par Stanley en 1877, et situe l'entrée du nom lingala dans l'usage autour de 1895."
       },
       {
         "title": "Omasombo Tshonda, Jean (dir.), Mongala, Musée royal de l'Afrique centrale, 2015, p. 15-17",
         "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/monographies-provinces/mongala.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Rapporte la lecture de Coquilhat (1888), pour qui Ba-Ngala signifie les gens de la petite rivière, et les notations de Stanley en 1877 pour la contrée Manngala et la rivière Banngala."
       },
       {
         "title": "Stanley, Henry M., Through the Dark Continent, vol. II, 1878 (transcription de l'édition de 1899)",
         "url": "https://www.gutenberg.org/files/76825/76825-0.txt",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Récit de la descente du Congo en 1877 : première trace écrite de Mangala, note à la fois comme localité et comme nation, puis emploi de Bangala pour désigner les habitants."
       },
       {
         "title": "Van Overbergh, Cyrille, et de Jonghe, Édouard, Les Bangala (État indépendant du Congo), Bruxelles, 1907, p. 55-56",
         "url": "https://archive.org/stream/lesbangalatatin00jonggoog/lesbangalatatin00jonggoog_djvu.txt",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Rapporte la réponse de Lothaire : des travailleurs de groupes différents se disent Bangala loin de chez eux."
       },
       {
         "title": "EBSCO Research Starters — Lingala Language",
         "url": "https://www.ebsco.com/research-starters/language-and-linguistics/lingala-language",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "MustGo — Lingala Language",
@@ -170,35 +179,41 @@
       {
         "title": "Joshua Project — Bangala in DRC",
         "url": "https://joshuaproject.net/people_groups/print/13330/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue (SIL) — Lingala [lin]",
         "url": "https://www.ethnologue.com/language/lin",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog 5.3 — Bangala [bang1353]",
         "url": "https://glottolog.org/resource/languoid/id/bang1353",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Supports the language's ISO 639-3 code bxg (not lol, the code for Mongo), its Bantu Zone C / Bangi-Ntomba classification and its non-endangered status."
       },
       {
         "title": "Meeuwis, M. — Redeeming a killer language: Protestant missionaries' engagements with Bangala and Lingala in the Belgian Congo, 1900–1935. Canadian Journal of African Studies, 58(3), 2024",
         "url": "https://www.tandfonline.com/doi/full/10.1080/00083968.2024.2382715",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Peer-reviewed academic journal article; used for the confessional (Protestant/Catholic) split in naming practice between bangala and lingala from 1900 onward."
       },
       {
         "title": "Weeks, J.H. — Among Congo Cannibals: Experiences, Impressions, and Adventures during a Thirty Years' Sojourn amongst the Boloki and Other Congo Tribes. Seeley, Service & Co., 1913",
         "url": "https://www.gutenberg.org/ebooks/69650",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Published primary ethnographic account by a missionary resident among the Boloki for thirty years; read with care for its era's colonial framing, and cited here to ground the village/district political-organization content."
       },
       {
         "title": "Wikidata — Bangala (Q2882454)",
         "url": "https://www.wikidata.org/wiki/Q2882454",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Crowdsourced database; used only for the external identifier, not for any factual prose claim."
       }
     ]

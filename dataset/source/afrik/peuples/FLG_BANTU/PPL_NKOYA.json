@@ -9,7 +9,7 @@
       "mainName": "Nkoya",
       "selfAppellation": "Bankoya",
       "exonyms": ["Lambya", "Mashasha", "Mbowela", "Mbwera", "Shimbwera"],
-      "originOfExonyms": "Mbowela (aussi Ba Mbowela ou Mbwera) est un sous-groupe dialectal Nkoya. Mashasha et Lambya designent des sous-groupes ou groupes apparentes. Ces noms proviennent des designations coloniales britanniques utilisant les divisions dialectales locales.",
+      "originOfExonyms": "Mbowela (aussi Ba Mbowela ou Mbwera) est un sous-groupe dialectal Nkoya. Mashasha et Lambya designent des sous-groupes ou groupes apparentes. Ces noms proviendraient des designations coloniales britanniques utilisant les divisions dialectales locales.",
       "whyProblematic": "Le terme Lambya est parfois confondu avec un groupe distinct de meme nom du nord de la Zambie/Malawi. Les sources coloniales et modernes utilisent indifferemment Nkoya, Mbwela ou Mashasha selon les sous-groupes.",
       "contemporaryUsage": "Nkoya est le terme officiel utilise en Zambie. Les Bankoya utilisent Shinkoya pour designer leur langue. L'Association Kazanga a contribue a reunifier l'identite Nkoya depuis les annees 1980.",
       "linguisticFamily": "FLG_BANTU",
@@ -79,12 +79,14 @@
       {
         "title": "Nkoya Language (NKA) – Ethnologue",
         "url": "https://www.ethnologue.com/language/nka/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Nkoya, Lambya in Zambia – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/13954",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Kazanga Ceremony, Kaoma district – Wim van Binsbergen, Quest Journal",
@@ -94,12 +96,14 @@
       {
         "title": "The Kazanga Festival – Scholarly Publications Leiden University",
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2870800/download",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nkoya of Zambia – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015618/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

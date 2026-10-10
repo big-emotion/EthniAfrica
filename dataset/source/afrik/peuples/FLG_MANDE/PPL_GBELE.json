@@ -87,7 +87,8 @@
       {
         "title": "Ethnologue — Cote d'Ivoire languages",
         "url": "https://www.ethnologue.com/country/CI/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "African Security Sector Network — Les Malinke en Cote d'Ivoire",
@@ -97,17 +98,20 @@
       {
         "title": "Minority Rights Group — Manding (Dioula) in Cote d'Ivoire",
         "url": "https://minorityrights.org/communities/manding-dioula/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Worldometer — Cote d'Ivoire Population",
         "url": "https://www.worldometers.info/world-population/cote-d-ivoire-population/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Institut National de la Statistique de Cote d'Ivoire (INS) — Recensement General de la Population et de l'Habitat 2021",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

@@ -102,12 +102,14 @@
       {
         "title": "Les Franco-Mauriciens : une diaspora pollinisée – Revue Européenne des Migrations Internationales, Université de Poitiers",
         "url": "https://journals.openedition.org/remi/4215",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Mauritius Population 2026 – Worldometer, 2025",
         "url": "https://www.worldometers.info/world-population/mauritius-population/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       }
     ]
   }

@@ -90,27 +90,32 @@
       {
         "title": "Mosiye in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/11581",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Mosiye 2 Profile – Wycliffe Bible Translators, 2020-2023",
         "url": "https://www.wycliffe.org/Main%20Uploads/Projects/PDF/Mosiye%202%20Profile%20WEB.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Dobase of Ethiopia – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg011570/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ISO 639-3: dox (Bussa/Mositacha) – SIL International / Ethnologue",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Appendix: ISO 639-3 codes/Africa – Wiktionary",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

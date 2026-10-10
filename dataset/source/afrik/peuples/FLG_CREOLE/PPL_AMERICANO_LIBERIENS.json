@@ -100,7 +100,8 @@
       {
         "title": "Americo-Liberian in Liberia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10292/LI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Liberians: An Introduction to their History and Culture – HartfordInfo.org, 2003",
@@ -110,12 +111,14 @@
       {
         "title": "Americo-Liberian – Encyclopaedia Britannica, 2025",
         "url": "https://www.britannica.com/topic/Americo-Liberian",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "The Americo-Liberian Community, a story – African American Registry, 2025",
         "url": "https://aaregistry.org/story/the-americo-liberian-community-a-brief-story/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

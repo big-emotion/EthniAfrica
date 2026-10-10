@@ -10,7 +10,7 @@
       "exonyms": ["Ambo", "Owambo"],
       "originOfExonyms": "Le terme Ovambo est une forme afrikaaner/anglaise du nom propre Aawambo/Ovawambo. Ambo est une variante anglaise simplifiée utilisée par les administrateurs coloniaux britanniques et sud-africains.",
       "whyProblematic": null,
-      "contemporaryUsage": "Ovambo et Owambo sont tous deux acceptés. L'endonyme Aawambo (pluriel) ou Omuwambo (singulier) est utilisé dans les dialectes Ndonga et Kwanyama.",
+      "contemporaryUsage": "Ovambo et Owambo sont tous deux acceptés. En ndonga et en kwanyama, les personnes concernées se nomment Aawambo au pluriel et Omuwambo au singulier.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantou (Zone R)",
       "historicalRegion": "Ovamboland — nord de la Namibie (régions Oshana, Oshikoto, Ohangwena, Omusati) et sud de l'Angola (province du Cunene)",
@@ -95,27 +95,32 @@
       {
         "title": "SIL Ethnologue — Kwanyama (kua)",
         "url": "https://www.ethnologue.com/language/kua",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Ndonga (ndo)",
         "url": "https://www.ethnologue.com/language/ndo",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Namibia",
         "url": "https://www.cia.gov/the-world-factbook/countries/namibia/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "South African History Archive — The Namibian struggle for independence 1966-1990",
         "url": "https://sahistory.org.za/article/namibian-struggle-independence-1966-1990-historical-background",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Namibia Statistics Agency — Population and Housing Census 2011",
         "url": "https://nsa.org.na",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

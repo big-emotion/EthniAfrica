@@ -9,7 +9,7 @@
       "mainName": "Mijikenda",
       "selfAppellation": "Wamijikenda",
       "exonyms": ["Nyika", "Nika", "Wanyika"],
-      "originOfExonyms": "Le terme Mijikenda vient du swahili : miji (tribus/villages) + kenda (neuf), signifiant litteralement 'neuf tribus' ou 'neuf villages'. L'exonyme Nyika ou Nika, utilise historiquement par les populations swahilies et arabes cotieres, signifie 'gens de la brousse' ou 'gens de l'arriere-pays'.",
+      "originOfExonyms": "Mijikenda est expliqué par les mots swahilis miji, « tribus » ou « villages », et kenda, « neuf ». Il est ainsi traduit par « neuf tribus » ou « neuf villages ». Les populations swahilies et arabes de la côte ont aussi employé Nyika ou Nika, traduit par « gens de la brousse » ou « gens de l'arrière-pays ».",
       "whyProblematic": "Le terme Nyika/Nika est pejoratif (signifiant 'gens de la brousse') et fut impose par les populations swahilies et arabes. Son usage est aujourd'hui evite dans les contextes officiels et academiques.",
       "contemporaryUsage": "Le terme Mijikenda est utilise officiellement au Kenya pour designer ce groupe de neuf peuples bantu de la cote. Le terme Wamijikenda est l'auto-designation collective courante. Les neuf sous-groupes gardent egalement leurs denominations individuelles (Giriama, Digo, Duruma, etc.).",
       "linguisticFamily": "FLG_BANTU",
@@ -94,12 +94,14 @@
       {
         "title": "Traditions and practices associated with the Kayas – UNESCO ICH",
         "url": "https://ich.unesco.org/en/USL/traditions-and-practices-associated-with-the-kayas-in-the-sacred-forests-of-the-mijikenda-00313",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Sacred Mijikenda Kaya Forests – UNESCO WHC decision 32 COM 8B.50",
         "url": "https://whc.unesco.org/en/decisions/4265/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Githitho A.N., The Sacred Mijikenda Kaya Forests of Coastal Kenya and Biodiversity Conservation – Sacred Land Film Project",
@@ -109,12 +111,238 @@
       {
         "title": "Ethnic Affiliation Kenya – Kenya National Bureau of Statistics 2009",
         "url": "https://www.knbs.or.ke/ethnic-affiliation/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "History of the Mijikenda tribes – MSOLA Africa",
         "url": "https://www.msolafrica.org/2024/08/12/the-history-of-the-mijikenda-tribes-kenya/",
         "tier": "needs_review"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mijikenda désigne un ensemble de neuf peuples bantous de la côte du Kenya, parmi lesquels les Giriama, les Digo et les Duruma ; c'est le nom commun qu'ils se donnent depuis le milieu du XXe siècle. Avant lui, les gens de la côte les appelaient Wanyika, un nom qu'ils jugent aujourd'hui péjoratif, et les Taita les appelaient Ambakomo. Nous présentons plus bas l'histoire de ces noms et leurs sources.",
+    "names": [
+      {
+        "nameText": "Mijikenda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "« Les neuf kaya » : le nom commun que se donnent neuf peuples de la côte du Kenya.",
+        "periodLabel": "Écrit depuis 1944 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1974,
+              "to": 1974,
+              "label": "1974"
+            },
+            "era": "modern",
+            "statement": "Le nom Mijikenda se traduit littéralement par « les neuf kaya », les villages fortifiés sur les collines, selon l'historien Thomas Spear ; dans leurs langues, il se dit Makayachenda ou Midzichenda. Justin Willis et George Gona y voient une variante de Midzichenda marquée par la prononciation swahilie.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Traditional Myths and Historian's Myths: Variations on the Singwaya Theme of Mijikenda Origins",
+                "author": "Thomas T. Spear",
+                "year": 1974,
+                "url": "https://www.cambridge.org/core/journals/history-in-africa/article/traditional-myths-and-historians-myths-variations-on-the-singwaya-theme-of-mijikenda-origins/397F543EDB977CF4DEB02040B22C44CB",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "notes 3, 12 et 13",
+                "notes": "History in Africa, vol. 1, p. 67-84. Notes lues sur la page de l'éditeur Cambridge University Press le 10 octobre 2026."
+              },
+              {
+                "title": "Tradition, Tribe, and State in Kenya: The Mijikenda Union, 1945-1980",
+                "author": "Justin Willis et George Gona",
+                "year": 2013,
+                "url": "https://doi.org/10.1017/S0010417513000091",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 43",
+                "notes": "Comparative Studies in Society and History, vol. 55, n° 2, p. 448-473. Notes lues sur la page de l'éditeur Cambridge University Press le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1944,
+              "to": 1944,
+              "label": "1944"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mijikenda apparaît dans celui de l'Union mijikenda, dont les statuts sont transmis à l'administration coloniale de la province de la Côte le 5 novembre 1944, selon les historiens Justin Willis et George Gona, qui citent ce document d'archives. C'est la plus ancienne trace de ce nom que le projet connaît. Les neuf peuples qu'il réunit vivaient déjà sur la côte avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tradition, Tribe, and State in Kenya: The Mijikenda Union, 1945-1980",
+                "author": "Justin Willis et George Gona",
+                "year": 2013,
+                "url": "https://doi.org/10.1017/S0010417513000091",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 30",
+                "notes": "Comparative Studies in Society and History, vol. 55, n° 2, p. 448-473. Notes lues sur la page de l'éditeur Cambridge University Press le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1945,
+              "to": 1945,
+              "label": "1945"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mijikenda revient, écrit en deux mots, dans le procès-verbal de l'assemblée générale de l'Union des 28 et 29 décembre 1945, conservé aux Archives nationales du Kenya, selon Justin Willis et George Gona.",
+            "sources": [
+              {
+                "title": "Tradition, Tribe, and State in Kenya: The Mijikenda Union, 1945-1980",
+                "author": "Justin Willis et George Gona",
+                "year": 2013,
+                "url": "https://doi.org/10.1017/S0010417513000091",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 31",
+                "notes": "Comparative Studies in Society and History, vol. 55, n° 2, p. 448-473. Notes lues sur la page de l'éditeur Cambridge University Press le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1833,
+              "to": 1833,
+              "label": "1833"
+            },
+            "era": "polity",
+            "statement": "Le nom Mijikenda est encore inconnu : une histoire de Mombasa traduite de l'arabe et imprimée en 1833 énumère les « villes de Vanikat », dont Rabayi, Jiryamah, Daruma, Diju, Kambah, Gauma, Jibanah et Ribah, des noms proches de ceux de plusieurs peuples mijikenda d'aujourd'hui.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Narrative of Voyages to Explore the Shores of Africa, Arabia, and Madagascar, vol. I",
+                "author": "W. F. W. Owen",
+                "year": 1833,
+                "url": "https://archive.org/details/narrativeofvoyag00owen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 248 et p. 251",
+                "notes": "New York, J. & J. Harper. L'histoire de Mombasa y est donnée en note, traduite d'un manuscrit arabe obtenu sur place. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyika",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "swa",
+        "namedBy": "les Swahili et les Arabes de la côte",
+        "shortLine": "« Les gens de la brousse » : le nom que leur donnaient les gens de la côte ; il est jugé péjoratif.",
+        "periodLabel": "Écrit dès 1833",
+        "accounts": [
+          {
+            "period": {
+              "from": 1833,
+              "to": 1833,
+              "label": "1833"
+            },
+            "era": "polity",
+            "statement": "Le nom Nyika apparaît par écrit dans le récit des voyages du capitaine William Owen, imprimé en 1833 : il écrit « Wanyekas » pour les gens qui vivent à quelques milles de Mombasa, à l'intérieur des terres. Le même livre traduit une histoire de Mombasa écrite en arabe, qui les nomme « Vanikat ». C'est la plus ancienne trace de ce nom que le projet connaît. Ces peuples vivaient déjà dans l'arrière-pays de Mombasa avant lui.",
+            "formAsWritten": "Wanyekas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of Voyages to Explore the Shores of Africa, Arabia, and Madagascar, vol. I",
+                "author": "W. F. W. Owen",
+                "year": 1833,
+                "url": "https://archive.org/details/narrativeofvoyag00owen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 248 et p. 251",
+                "notes": "New York, J. & J. Harper. L'histoire de Mombasa y est donnée en note, traduite d'un manuscrit arabe obtenu sur place. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1850,
+              "to": 1850,
+              "label": "1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Nyika est écrit « Wanika » par le missionnaire Johann Ludwig Krapf en 1850 ; il appelle leur langue le kinika et place parmi eux les Rabai, chez qui sa mission s'est installée en 1846.",
+            "formAsWritten": "Wanika",
+            "sources": [
+              {
+                "title": "Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla)",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/cu31924026933139",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. VI",
+                "notes": "Tübingen, L. F. Fues. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1974,
+              "to": 1974,
+              "label": "1974"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyika est un ancien nom swahili qui désigne les « gens de la brousse », selon Thomas Spear ; les Mijikenda le tiennent pour étranger et péjoratif, et lui préfèrent leur propre nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Traditional Myths and Historian's Myths: Variations on the Singwaya Theme of Mijikenda Origins",
+                "author": "Thomas T. Spear",
+                "year": 1974,
+                "url": "https://www.cambridge.org/core/journals/history-in-africa/article/traditional-myths-and-historians-myths-variations-on-the-singwaya-theme-of-mijikenda-origins/397F543EDB977CF4DEB02040B22C44CB",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "notes 3, 12 et 13",
+                "notes": "History in Africa, vol. 1, p. 67-84. Notes lues sur la page de l'éditeur Cambridge University Press le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ambakomo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Taita",
+        "shortLine": "Le nom que leur donnaient les Taita, en souvenir d'un séjour au pays pokomo.",
+        "periodLabel": "Rapporté en 1850",
+        "accounts": [
+          {
+            "period": {
+              "from": 1850,
+              "to": 1850,
+              "label": "1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Ambakomo est, selon Johann Ludwig Krapf en 1850, celui que les Taita donnent aux Wanika : il rappellerait une tradition selon laquelle ils vivaient autrefois au pays pokomo, qu'ils auraient fui par peur des Oromo, que Krapf appelle Galla. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Ambakomo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla)",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/cu31924026933139",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. VIII",
+                "notes": "Tübingen, L. F. Fues. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

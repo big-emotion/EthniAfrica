@@ -95,17 +95,20 @@
       {
         "title": "Male in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13451",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Male (Ethiopia) – Glottolog 5.1",
         "url": "https://glottolog.org/resource/languoid/id/male1284",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Male (Ethiopia) – ISO 639-3 / Swordshare Map",
         "url": "https://map.swordshare.com/mdy",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Maale people – The Tribal Society, 2024",
@@ -120,7 +123,8 @@
       {
         "title": "Donham, Donald L. Work and Power in Maale, Ethiopia. Columbia University Press, 1994",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Donham, Donald L. From ritual kings to Ethiopian landlords in Maale. In The Southern Marches of Imperial Ethiopia, 1986",
@@ -130,7 +134,8 @@
       {
         "title": "Donham, Donald L. Revolution and modernity in Maale: Ethiopia, 1974 to 1987. Comparative Studies in Society and History, 34(1), 1992",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Omo Region Tours — Malle Tribe",
@@ -140,12 +145,14 @@
       {
         "title": "Donham, Donald L. Divine Kingship in Malle, Southwest Ethiopia. Cambridge Journal of Anthropology, vol. 6, 1980",
         "url": "https://www.africabib.org/rec.php?RID=P00016096",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Recensement éthiopien 2007 — List of ethnic groups in Ethiopia (Male : 98 114 individus)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

@@ -14,7 +14,7 @@
         "Bola / Brame / Brama (autres désignations exogènes ancienness)",
         "Bulama / Burama / Mankaya (variantes dialectales ou régionales)"
       ],
-      "originOfExonyms": "Les diverses appellations exogènes sont issues des contacts avec les colonisateurs portugais (Guinée-Bissau), français (Sénégal) et britanniques (Gambie). Le terme portugais Mancanha s'est imposé comme appellation de référence internationale. L'autoappellation Ba-hula, liée au nom de leur langue (uhula), est utilisée par les locuteurs eux-mêmes.",
+      "originOfExonyms": "Les diverses appellations exogènes seraient issues des contacts avec les colonisateurs portugais (Guinée-Bissau), français (Sénégal) et britanniques (Gambie). Le terme portugais Mancanha s'est imposé comme appellation de référence internationale. L'autoappellation Ba-hula, liée au nom de leur langue (uhula), est utilisée par les locuteurs eux-mêmes.",
       "whyProblematic": null,
       "contemporaryUsage": "Mancanha est le terme officiel en Guinée-Bissau. Mancagne est utilisé au Sénégal dans les textes administratifs francophones. Mankanya est la forme standard dans la littérature anglophone. La langue Mankanya a été déclarée langue officielle du Sénégal.",
       "linguisticFamily": "FLG_ATLANTIQUE",
@@ -93,7 +93,8 @@
       {
         "title": "Mankanya in Guinea-Bissau – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13515/PU",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Guinea-Bissau ethnic groups census – BeingAfrican, 2024",
@@ -103,12 +104,14 @@
       {
         "title": "Mankanya people – Africa 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/mankanya.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue – Mankanya (mcs), SIL International, 2024",
         "url": "https://www.ethnologue.com/language/mcs/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

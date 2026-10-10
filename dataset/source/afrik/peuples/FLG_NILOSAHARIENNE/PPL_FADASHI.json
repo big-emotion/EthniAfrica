@@ -75,17 +75,20 @@
       {
         "title": "Berta language (WTI) – Ethnologue / SIL International, 2025",
         "url": "https://www.ethnologue.com/language/wti/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Berta, Benishangul in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10793/ET",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "1994 Population and Housing Census of Ethiopia – IPUMS / World Bank",
         "url": "https://microdata.worldbank.org/catalog/2746",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Between Domination and Resistance: The Bertha – Inlibra",

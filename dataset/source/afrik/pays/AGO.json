@@ -4,8 +4,318 @@
   "nameEn": "Angola",
   "nameOfficial": "République d'Angola (República de Angola)",
   "summary": "L'Angola est un pays d'Afrique australe façonné par les royaumes Kongo, Ndongo et Matamba, puis par quatre siècles de colonisation portugaise. Son nom vient de « ngola », le titre porté par les rois du Ndongo : les Portugais ont fait un pays d'un titre royal. Sa culture croise traditions bantoues, khoïsan et lusophones.",
-  "etymology": "Le nom \"Angola\" dérive de \"Ngola\", titre des rois du royaume Ndongo. Les Portugais ont utilisé ce terme pour désigner la région qu'ils colonisaient à partir du XVIe siècle. \"Ngola\" était le titre royal du souverain du royaume Ndongo, l'un des royaumes précoloniaux les plus puissants de la région.",
+  "etymology": "Le nom \"Angola\" viendrait de \"Ngola\", titre des rois du royaume Ndongo. Les Portugais ont utilisé ce terme pour désigner la région qu'ils colonisaient à partir du XVIe siècle. \"Ngola\" était le titre royal du souverain du royaume Ndongo, l'un des royaumes précoloniaux les plus puissants de la région.",
   "nameOriginActor": "Le nom provient du royaume Ndongo et de son titre royal \"Ngola\". Les Portugais ont adopté et généralisé ce terme lors de la colonisation à partir de 1575. Le nom a été officialisé comme \"Colónia de Angola\" pendant la période coloniale portugaise (1575-1975).",
+  "nameHistory": {
+    "summary": "Le nom Angola désigne un pays d'Afrique australe, la République d'Angola, qui se nomme ainsi elle-même. De 1975 à 1992, l'État s'appelait République populaire d'Angola. Les sources rattachent le nom Angola au titre des rois du Ndongo ; nous présentons leur explication plus bas.",
+    "names": [
+      {
+        "nameText": "Angola",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le titre des rois du Ndongo, devenu le nom d'une colonie portugaise puis d'un État.",
+        "periodLabel": "Écrit dès 1520 ; nom de l'État depuis 1975",
+        "accounts": [
+          {
+            "period": {
+              "from": 2010,
+              "to": null,
+              "label": "Depuis le 21 janvier 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Angola est celui de la République d'Angola, comme l'écrit l'article premier de sa Constitution de 2010. C'est aussi le nom que retiennent les listes officielles de noms de pays, en portugais et en français.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République d'Angola, 21 janvier 2010",
+                "author": "République d'Angola",
+                "year": 2010,
+                "url": "https://mjp.univ-perp.fr/constit/ao2010.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Traduction française lue sur la Digithèque MJP de l'Université de Perpignan. Article premier, « La République d'Angola » : « L'Angola est une république souveraine et indépendante »."
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG, GEGN.2/2025/171/CRP.171",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordination Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 8",
+                "notes": "Document du 23 avril 2025. Nom officiel en portugais : Angola, República de Angola ; noms officiels de l'ONU en français : Angola (l'), République d'Angola (la)."
+              },
+              {
+                "title": "Toponymic Factfile: Angola",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2025,
+                "url": "https://assets.publishing.service.gov.uk/media/684199c0280ec7236902c09b/Angola_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2025. Nom du pays : Angola ; titre de l'État dans la langue officielle : República de Angola ; indépendance obtenue du Portugal en 1975."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Angola désigne aujourd'hui un pays d'Afrique australe, au bord de l'Atlantique. Il a d'abord désigné un royaume, celui du Ndongo, puis la colonie portugaise fondée en 1575. Les sources lues le rattachent au titre du roi du Ndongo ; nous présentons leur explication plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Angola",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2025,
+                "url": "https://assets.publishing.service.gov.uk/media/684199c0280ec7236902c09b/Angola_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2025. Nom du pays : Angola ; titre de l'État dans la langue officielle : República de Angola ; indépendance obtenue du Portugal en 1975."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 604",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Au sud du Kongo, l'État de Ndongo, « dont le roi portait le titre de ngola, qui donna ensuite le mot Angola, était en formation vers 1500 »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 613",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Après la guerre des Jaga, « en 1575, fut fondée la colonie de l'Angola »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1992,
+              "to": 1992,
+              "label": "16 septembre 1992"
+            },
+            "era": "modern",
+            "statement": "Le nom Angola reste celui de l'État quand la loi de révision constitutionnelle du 16 septembre 1992 remplace République populaire d'Angola par République d'Angola, selon le texte de cette loi.",
+            "sources": [
+              {
+                "title": "Lei n.º 23/92 de 16 de setembro, Lei de Revisão Constitucional",
+                "author": "Assembleia do Povo, République d'Angola",
+                "year": 1992,
+                "url": "https://lex.ao/docs/assembleia-do-povo/1992/lei-n-o-23-92-de-16-de-setembro/",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "exposé des motifs et article 1",
+                "notes": "Loi publiée au Diário da República, Ire série, n° 38, du 16 septembre 1992, lue sur le portail juridique LEX.AO. L'exposé des motifs annonce qu'elle change la désignation de l'État en « República de Angola » ; l'article 1 de la loi constitutionnelle révisée commence par « A República de Angola é uma Nação soberana e independente »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "11 novembre 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Angola devient celui d'un État indépendant le 11 novembre 1975 : ce jour-là, l'ancienne colonie portugaise, Cabinda comprise, accède à l'indépendance, selon le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 132, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : l'Angola, Cabinda compris, devient indépendant du Portugal le 11 novembre 1975."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1575,
+              "to": 1575,
+              "label": "1575"
+            },
+            "era": "colonial",
+            "statement": "Le nom Angola devient celui d'une colonie portugaise : en 1575, après la guerre des Jaga contre le royaume du Kongo, est fondée la colonie de l'Angola, selon Jan Vansina.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 613",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Après la guerre des Jaga, « en 1575, fut fondée la colonie de l'Angola »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1520,
+              "to": 1520,
+              "label": "16 février 1520"
+            },
+            "era": "polity",
+            "statement": "Le nom Angola apparaît par écrit, sous la forme Amgola, dans les instructions du roi du Portugal Manuel Ier à deux envoyés : leur navire part vers le « Regno dAmgola », le royaume d'Angola, dont le roi souhaiterait se faire chrétien, selon le recueil d'António Brásio. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume qu'il désigne existait déjà avant ce texte.",
+            "formAsWritten": "Regno dAmgola",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Manuel Ier",
+                "role": "roi du Portugal, qui signe les instructions"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Monumenta Missionaria Africana, África ocidental, 1re série, vol. I (1471-1531) : Regimento de D. Manuel a Manuel Pacheco e Baltasar de Castro, 16 février 1520",
+                "author": "António Brásio (éd.), Agência Geral do Ultramar",
+                "year": 1952,
+                "url": "https://archive.org/details/monumentamissionariaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 431",
+                "notes": "Recueil de documents publié à Lisbonne en 1952, lu dans une copie non officielle mise en ligne sur Internet Archive. Le roi du Portugal envoie un navire « do descobrimento do Regno dAmgola » et demande de chercher si le roi d'Angola veut se faire chrétien. Le document original est conservé à l'Arquivo da Torre do Tombo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1500,
+              "label": "Vers 1500"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Angola, on parle du Ndongo, un État en formation au sud du royaume du Kongo, dont le roi porte le titre de ngola, selon Jan Vansina.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 604",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Au sud du Kongo, l'État de Ndongo, « dont le roi portait le titre de ngola, qui donna ensuite le mot Angola, était en formation vers 1500 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Angola viendrait de ngola, le titre que portait le roi du Ndongo, selon Jan Vansina. Les Portugais auraient appelé « terres du Ngola » le pays situé entre le Kwanza et le Lukala, d'où viendrait le nom, selon Flávia Maria de Carvalho.",
+            "hypothesisGroup": "origine du nom Angola",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 604",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Au sud du Kongo, l'État de Ndongo, « dont le roi portait le titre de ngola, qui donna ensuite le mot Angola, était en formation vers 1500 »."
+              },
+              {
+                "title": "Do undamento ao avassalamento : ritos e cerimônias, alianças e conflitos entre portugueses e sobas do antigo Ndongo",
+                "author": "Flávia Maria de Carvalho, Universidade Federal Fluminense",
+                "year": 2011,
+                "url": "https://anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548856594_9d94d7cf0787ea677940354b83cc4489.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1, note 2",
+                "notes": "Communication publiée dans les actes du XXVIe Simpósio Nacional de História de l'ANPUH, São Paulo, juillet 2011. La note 2 écrit que le nom Angola dérive du titre du souverain du Ndongo, Ngola, et que les Portugais appelaient « terres du Ngola » les territoires entre le Kwanza et le Lukala."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République populaire d'Angola",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "periodLabel": "De 1975 à 1992",
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": 1992,
+              "label": "Du 11 novembre 1975 au 16 septembre 1992"
+            },
+            "era": "modern",
+            "statement": "Le nom République populaire d'Angola est celui de l'État de l'indépendance jusqu'à la révision constitutionnelle de 1992, qui le remplace par République d'Angola, selon le texte de cette loi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Lei n.º 23/92 de 16 de setembro, Lei de Revisão Constitucional",
+                "author": "Assembleia do Povo, République d'Angola",
+                "year": 1992,
+                "url": "https://lex.ao/docs/assembleia-do-povo/1992/lei-n-o-23-92-de-16-de-setembro/",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "exposé des motifs et article 1",
+                "notes": "Loi publiée au Diário da República, Ire série, n° 38, du 16 septembre 1992, lue sur le portail juridique LEX.AO. L'exposé des motifs annonce qu'elle change la désignation de l'État en « República de Angola » ; l'article 1 de la loi constitutionnelle révisée commence par « A República de Angola é uma Nação soberana e independente »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 132, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : l'Angola, Cabinda compris, devient indépendant du Portugal le 11 novembre 1975."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "1975"
+            },
+            "era": "modern",
+            "statement": "Le nom République populaire d'Angola figure à l'article 1 de la loi constitutionnelle de 1975, en portugais : « A República Popular de Angola é um Estado soberano, independente e democrático ». C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "A República Popular de Angola",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Lei Constitucional da República Popular de Angola, 1975",
+                "author": "República Popular de Angola",
+                "year": 1975,
+                "url": "https://cedis.novalaw.unl.pt/wp-content/uploads/2021/01/LEI-CONSTITUCIONAL-de-1975.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 1",
+                "notes": "Texte reproduit par le CEDIS, centre de recherche de la NOVA School of Law (Lisbonne). Article 1 : « A República Popular de Angola é um Estado soberano, independente e democrático »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -131,7 +441,7 @@
         "mainRegion": "Région de Luanda et centre-nord de l'Angola",
         "languages": ["Kimbundu (kmb", "ISO 639-3)", "portugais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Ambundu\" est l'auto-appellation du peuple. \"Mbundu\" est une variante exonyme acceptée. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le peuple se nomme Ambundu. Mbundu est une autre forme, donnée de l'extérieur et acceptée. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Kongo",
@@ -144,7 +454,7 @@
         "mainRegion": "Nord de l'Angola (notamment Cabinda), frontière avec la RDC et le Congo",
         "languages": ["Kikongo (kon", "ISO 639-3)", "portugais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "\"Bakongo\" est l'auto-appellation (pluriel), \"Kongo\" est l'exonyme le plus courant. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le peuple se nomme Bakongo, au pluriel. Kongo est le nom donné de l'extérieur le plus courant. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Lunda",
@@ -164,7 +474,7 @@
         "mainRegion": "Est de l'Angola, frontière avec la RDC et la Zambie",
         "languages": ["Tshokwe / Chokwe (cjk", "ISO 639-3)", "portugais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "\"Tshokwe\" est l'auto-appellation, \"Chokwe\" est une variante exonyme acceptée. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le peuple se nomme Tshokwe. Chokwe est une autre forme, donnée de l'extérieur et acceptée. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Nyaneka-Nkhumbi",
@@ -207,7 +517,7 @@
         "mainRegion": "Sud de l'Angola, zones arides et semi-arides",
         "languages": ["Langues khoïsan (plusieurs langues)", "portugais"],
         "languageFamily": "FLG_KHOE",
-        "appellationRemarks": "Les termes \"Bushmen\" et \"Hottentots\" sont des exonymes coloniaux péjoratifs et doivent être évités. \"San\" et \"Khoikhoi\" sont les auto-appellations respectives. \"Khoisan\" est un terme académique utilisé pour désigner l'ensemble des peuples de cette famille linguistique. Les Khoisan sont les premiers habitants de l'Angola et de l'Afrique australe."
+        "appellationRemarks": "Les noms \"Bushmen\" et \"Hottentots\", donnés pendant la colonisation, sont méprisants et à éviter. Les groupes concernés se nomment respectivement San et Khoikhoi. Les chercheurs emploient Khoisan pour les réunir dans une même classification de langues. Ces peuples sont présentés comme les premiers habitants de l’Angola et de l’Afrique australe."
       }
     ],
     "culture": {
@@ -268,17 +578,20 @@
       {
         "title": "SIL Ethnologue – Languages of Angola",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Angola",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Angola",
         "url": "https://www.unfpa.org/data/world-population/AO",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Governance in West Central Africa Before 1600\"",
@@ -298,7 +611,8 @@
       {
         "title": "Recensements angolais",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples bantous et khoïsan d'Angola",
@@ -308,23 +622,27 @@
       {
         "title": "CIA World Factbook – Angola (ethnic groups, 2000 est.)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNESCO Publishing – Njinga Mbandi: Queen of Ndongo and Matamba",
         "url": "https://shop.unesco.org/products/njinga-mbandi-queen-of-ndongo-and-matamba",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Publication de l'UNESCO consacrée à Njinga Mbandi ; sa présentation indique qu'elle a résisté avec détermination à l'expansion coloniale portugaise tout au long de son règne."
       },
       {
         "title": "CIA World Factbook, Angola, rubrique Ethnic groups, copie datée du 20 janvier 2026",
         "url": "https://web.archive.org/web/20260120134255/https://www.cia.gov/the-world-factbook/page-data/countries/angola/page-data.json",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Estimation, sans année indiquée dans l'entrée : « Ovimbundu 37 %, Kimbundu 25 %, Bakongo 13 %, Mestico (mixte européen et africain) 2 %, Européens 1 %, autres 22 % ». Les Kimbundu sont portés sur les Ambundu et les Bakongo sur les Kongo. « Autres » (25 %) est le complément des trois parts listées : il regroupe les Mestico, les Européens et les 22 % d'autres. Le Factbook a cessé de paraître le 4 février 2026 ; copie lue le 6 octobre 2026."
       }
     ],

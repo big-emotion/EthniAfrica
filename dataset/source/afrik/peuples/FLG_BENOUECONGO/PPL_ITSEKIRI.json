@@ -8,7 +8,7 @@
       "mainName": "Itsekiri",
       "selfAppellation": "Itsekiri / Isekiri",
       "exonyms": [
-        "Jekri (exonyme colonial britannique)",
+        "Jekri (nom donné par les Britanniques pendant la colonisation)",
         "Ishekiri",
         "Itsekri",
         "Itsekhiri",
@@ -16,7 +16,7 @@
       ],
       "originOfExonyms": "Le terme Warree ou Warri designait le royaume et ses habitants dans les sources europeennes des XVe-XIXe siecles. Jekri etait l'appellation coloniale britannique. Le nom propre du peuple est Itsekiri et celui de leur territoire est Iwere (Ale-Iwere, la terre d'Iwere).",
       "whyProblematic": null,
-      "contemporaryUsage": "Itsekiri est le terme officiel et comunautaire. Isekiri est accepte comme variante. Les anciens exonymes europeens sont uniquement utilises dans les sources historiques.",
+      "contemporaryUsage": "Itsekiri est le nom officiel employé par les personnes concernées. Isekiri est aussi accepté. Les anciens noms donnés par les Européens n'apparaissent plus que dans les sources historiques.",
       "linguisticFamily": "FLG_BENOUECONGO",
       "ethnoLinguisticGroup": "Yoruboid (sous-groupe defoid du Benoue-Congo, apparente au yoruba et a l'igala)",
       "historicalRegion": "Extreme ouest du delta du Niger, etat du Delta (Warri) et bordures de l'etat d'Edo",
@@ -105,12 +105,14 @@
       {
         "title": "Ethnologue (SIL International) — Isekiri language (its)",
         "url": "https://www.ethnologue.com/language/its/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Itsekiri",
         "url": "https://www.britannica.com/topic/Itsekiri",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Itsekiri National Association of Washington, D.C. — Itsekiri Language and Culture",
@@ -120,12 +122,14 @@
       {
         "title": "101 Last Tribes — Itsekiri",
         "url": "https://www.101lasttribes.com/tribes/itsekiri.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Itsekiri in Nigeria",
         "url": "https://joshuaproject.net/people_groups/12264",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Warri Kingdom Archives — traditions orales et histoire du royaume de Warri",

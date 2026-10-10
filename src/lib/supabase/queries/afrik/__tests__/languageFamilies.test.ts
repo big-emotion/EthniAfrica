@@ -153,6 +153,27 @@ describe("AFRIK Language Families Queries", () => {
   });
 
   describe("getAfrikLanguageFamilyById", () => {
+    // @req REQ-196
+    it("maps name_history onto nameHistory", async () => {
+      const nameHistory = {
+        summary: "Le nom a une histoire, présentée plus bas.",
+        names: [],
+      };
+      mockSupabase.single.mockResolvedValue({
+        data: {
+          id: "FLG_BANTU",
+          name_fr: "Bantou",
+          content: {},
+          name_history: nameHistory,
+        },
+        error: null,
+      });
+
+      const result = await getAfrikLanguageFamilyById("FLG_BANTU");
+
+      expect(result?.nameHistory).toEqual(nameHistory);
+    });
+
     it("should return a language family by ID", async () => {
       const mockData = {
         id: "FLG_BANTU",

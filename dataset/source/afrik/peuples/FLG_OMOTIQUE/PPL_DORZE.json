@@ -13,7 +13,7 @@
       "mainName": "Dorze",
       "selfAppellation": "Dorze",
       "exonyms": ["Dorze"],
-      "originOfExonyms": "Le nom Dorze est à la fois l'ethnonyme et l'endonyme ; il est utilisé uniformément dans les sources amhariques et dans la littérature ethnographique. Aucun exonyme péjoratif n'est documenté.",
+      "originOfExonyms": "Le peuple se nomme Dorze. Les sources amhariques et les recherches sur ses modes de vie emploient le même nom. Les sources ne signalent pas de nom méprisant donné par d'autres populations.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Dorze est utilisé dans les documents officiels éthiopiens, par les agences touristiques et dans la presse nationale pour désigner ce peuple réputé pour son artisanat textile."
     },
@@ -75,17 +75,20 @@
       {
         "title": "Dorze in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/11614",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Dorze language (DOZ) – Ethnologue / SIL International, 2025",
         "url": "https://www.ethnologue.com/language/doz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog : Dorze (dorz1235) – Hammarstrom et al., 2025",
         "url": "https://glottolog.org/resource/languoid/id/dorz1235",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Experience Traditional Dorze Village Life in Ethiopia – Hoblets On The Go, 2025",

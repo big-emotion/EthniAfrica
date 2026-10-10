@@ -88,7 +88,7 @@ describe("/[lang]/comparer picker page", () => {
   it("replaces the static shell copy with the interactive picker", async () => {
     await renderPage();
     expect(
-      screen.getByRole("radiogroup", { name: /type d.?entité/i })
+      screen.getByRole("radiogroup", { name: /type de page/i })
     ).toBeInTheDocument();
     expect(screen.getByRole("combobox")).toBeInTheDocument();
     expect(

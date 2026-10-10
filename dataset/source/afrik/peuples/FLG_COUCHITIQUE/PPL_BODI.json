@@ -17,7 +17,7 @@
         "Podi",
         "Mela"
       ],
-      "originOfExonyms": "Me'en est l'auto-désignation commune a l'ensemble du groupe. Bodi désigne spécifiquement le sous-groupe pastoral des basses terres (plaines de l'Omo). Mekan est un terme administratif éthiopien. Podi et Mela sont des variantes du terme Bodi dans les sources linguistiques. La distinction Bodi/Tishena sépare les pasteurs des basses terres des agriculteurs des hautes terres. Me'en signifie littéralement « personnes » ou « êtres humains ».",
+      "originOfExonyms": "Me'en est l'auto-désignation commune a l'ensemble du groupe. Bodi désigne spécifiquement le sous-groupe pastoral des basses terres (plaines de l'Omo). Mekan est un terme administratif éthiopien. Podi et Mela sont des variantes du terme Bodi dans les sources linguistiques. La distinction Bodi/Tishena sépare les pasteurs des basses terres des agriculteurs des hautes terres. Le nom Me'en voudrait dire littéralement « personnes » ou « êtres humains ».",
       "whyProblematic": "Le terme Bodi est parfois appliqué a l'ensemble du groupe Me'en alors qu'il ne désigne strictement que le sous-groupe pastoral. Certaines sources confondent les Bodi avec les groupes Surma (Suri, Mursi) auxquels ils ne sont pas directement apparentés.",
       "contemporaryUsage": "Me'en est l'auto-désignation la plus precise et inclusive. Bodi est largement utilisé dans les medias et le tourisme pour désigner le sous-groupe pastoral reconnu pour le festival Ka'el. Le gouvernement éthiopien utilise le terme Mekan dans les registres officiels.",
       "linguisticFamily": "FLG_COUCHITIQUE",
@@ -88,22 +88,26 @@
       {
         "title": "Joshua Project – Bodi in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/21546",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Me'en in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/13654/ET",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes – Me'en people",
         "url": "https://www.101lasttribes.com/tribes/meen.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Orville Jenkins – Meen People Profile",
         "url": "http://orvillejenkins.com/profiles/meen.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ayu Ethiopian Tribal Tours – Ka'el Festival",
@@ -113,7 +117,8 @@
       {
         "title": "Glottolog — Me'en, glottocode meen1242, ISO 639-3: mym",
         "url": "https://glottolog.org/resource/languoid/id/meen1242",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

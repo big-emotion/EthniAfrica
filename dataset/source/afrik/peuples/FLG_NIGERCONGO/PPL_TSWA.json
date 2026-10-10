@@ -106,32 +106,38 @@
       {
         "title": "Omniglot — Tswa language and alphabet",
         "url": "https://www.omniglot.com/writing/tswa.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Tswa people",
         "url": "https://www.101lasttribes.com/tribes/tswa.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Tswa in Mozambique (MZ)",
         "url": "https://joshuaproject.net/people_groups/15600/MZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Tswa of Zimbabwe",
         "url": "https://peoplegroups.org/people_groups/pg015681/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Tswa (tsc)",
         "url": "https://www.ethnologue.com/language/tsc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "IMB (International Mission Board) — Tswa of Zimbabwe Flyer",
         "url": "https://www.imb.org/wp-content/uploads/2020/08/Tswa-Zimbabwe-Flyer.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

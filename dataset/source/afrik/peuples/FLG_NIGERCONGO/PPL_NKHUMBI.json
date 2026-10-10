@@ -75,37 +75,44 @@
       {
         "title": "Nkhumbi in Angola – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/13417",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Nyaneka-Nkhumbi – Capoeira History",
         "url": "https://capoeirahistory.com/the-nyaneka-nkhumbi/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Nyaneka in Angola – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/14084",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Angola – Ovambo, Nyaneka-Humbe, Herero, and Others – Country Studies",
         "url": "https://countrystudies.us/angola/64.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Angola – Ethnic Groups and Languages – Country Studies",
         "url": "https://countrystudies.us/angola/56.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Britannica – Angola People: Nyaneka-Nkhumbi",
         "url": "https://www.britannica.com/place/Angola/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "World Directory of Minorities – Angola – UNHCR Refworld",
         "url": "https://www.refworld.org/country,COI,,COUNTRYREP,ago,,49749d6232,0.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

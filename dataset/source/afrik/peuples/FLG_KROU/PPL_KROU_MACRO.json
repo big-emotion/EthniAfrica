@@ -20,7 +20,7 @@
         "Wané"
       ],
       "spellingAliases": ["Krus", "Croos"],
-      "originOfExonyms": "Le terme Krou (Kru, Kroo) est d'origine discutée. Il dérive probablement du nom propre Klao (ou Krao), l'autodesignation du peuple aujourd'hui appelé Klao ; la Britannica de 1911 y voit « Kraoh, le nom primitif de l'une de leurs tribus ». Dès 1588, une carte anglaise désigne la côte libérienne sous le terme Crua. Le terme a ensuite été étendu par les Européens à l'ensemble du groupe linguistique et culturel. Westermann (1952) notait que le terme était utilisé par les Européens pour désigner un ensemble de tribus parlant des dialectes apparentés. Une théorie populaire le dérivant de l'anglais crew (équipage de bateau) est largement considérée comme incorrecte.",
+      "originOfExonyms": "Le terme Krou (Kru, Kroo) est d'origine discutée. Il dériverait du nom propre Klao (ou Krao), l'autodesignation du peuple aujourd'hui appelé Klao ; la Britannica de 1911 y voit « Kraoh, le nom primitif de l'une de leurs tribus ». Dès 1588, une carte anglaise désigne la côte libérienne sous le terme Crua. Le terme a ensuite été étendu par les Européens à l'ensemble du groupe linguistique et culturel. Westermann (1952) notait que le terme était utilisé par les Européens pour désigner un ensemble de tribus parlant des dialectes apparentés. Une théorie populaire le dérivant de l'anglais crew (équipage de bateau) est largement considérée comme incorrecte.",
       "whyProblematic": "Le terme Krou désigne à la fois un macro-groupe ethno-culturel et linguistique (famille Krou incluant les Bété, Dida, Wè, Klao, Grebo, Kroumen, Bassa, etc.) et parfois spécifiquement le peuple Klao du Liberia. Cette double acception crée des confusions. De plus, certains peuples inclus dans le groupe linguistique Krou (comme les Dida ou les Bassa) ne se reconnaissent pas nécessairement comme appartenant à une même identité ethnique pan-krou. Trois réalités portent ce nom sans se confondre : la famille de langues (fiche Krou), cet ensemble de peuples, et le peuple klao, dit aussi Kru, dont le nom propre serait à l'origine du mot. Les Kroumen sont les marins krou engagés sur les navires européens : leur nom désigne un métier autant qu'un peuple.",
       "contemporaryUsage": "Le terme Krou est utilisé comme désignation du groupe ethno-linguistique dans la littérature académique, les institutions internationales (Ethnologue, Glottolog) et les administrations ivoirienne et libérienne. En Côte d'Ivoire, les Krou représentent environ 11% de la population nationale. Les peuples concernés utilisent généralement leurs propres appellations spécifiques plutôt qu'une identité pan-krou.",
       "linguisticFamily": "FLG_KROU",
@@ -131,7 +131,8 @@
       {
         "title": "Encyclopaedia Britannica — Kru",
         "url": "https://www.britannica.com/topic/Kru",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Scribd — Histoire et culture du peuple Krou",
@@ -146,27 +147,32 @@
       {
         "title": "Minority Rights Group — Liberia",
         "url": "https://minorityrights.org/country/liberia/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Minority Rights Group — Côte d'Ivoire",
         "url": "https://minorityrights.org/country/cote-divoire/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Glottolog — Kru language family",
         "url": "https://glottolog.org/resource/languoid/id/kru1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Qiraat Africa — The Kru/Kroo of West Africa",
         "url": "https://qiraatafrican.com/en/19895/the-kru-kroo-of-west-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Encyclopædia Britannica, 11e édition (1911) — Krumen",
         "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Krumen",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Texte de l'édition de 1911, cité pour les graphies Krus, Croos, Kroomen et Krooboys."
       }
     ]

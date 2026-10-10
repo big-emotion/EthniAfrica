@@ -10,6 +10,7 @@
  * the void without admitting it.
  */
 
+import { formatNommerFigure } from "@/lib/dossiers/nommer/figures";
 import type { GlossaryEntry } from "./types";
 
 // @req REQ-144
@@ -21,9 +22,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Autonym",
     family: "origine",
     definition:
-      "Le nom qu'un groupe se donne et revendique. Tout autonyme est un endonyme ; l'inverse n'est pas garanti — un nom peut circuler à l'intérieur sans que personne y tienne.",
+      "Le nom qu’un groupe emploie et revendique pour se désigner lui-même. Le fait qu’un nom soit utilisé au sein d’un groupe ne signifie pas toujours que ses membres y sont attachés.",
     corpusExample:
-      "Jieng, préféré par les intéressés là où l'usage international dit Dinka.",
+      "Les personnes appelées Dinka à l’international emploient aussi Jieng pour se nommer.",
     corpusPresence: "instantiated",
     seeAlso: ["endonyme", "exonyme"],
     chapterRef: "le-peuple",
@@ -35,9 +36,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Emic / etic",
     family: "origine",
     definition:
-      "Émique : décrire avec les catégories des intéressés. Étique : décrire avec celles de l'observateur. Nous faisons porter l'émique et signalons l'étique quand nous ne pouvons pas faire autrement.",
+      "Une description est dite « émique » lorsqu’elle reprend les mots et les distinctions des personnes concernées. Elle est dite « étique » lorsqu’elle utilise ceux de la personne qui les étudie. Nous cherchons à présenter le point de vue des personnes concernées et précisons quand nous employons un classement extérieur.",
     corpusExample:
-      "Un peuple rangé sous une famille linguistique forgée au XIXe siècle est décrit étiquement, et la fiche le dit.",
+      "Un chercheur peut regrouper plusieurs peuples selon la famille de langues qu’ils parlent. Ce classement ne correspond pas forcément à la manière dont ces peuples se définissent.",
     corpusPresence: "instantiated",
     seeAlso: ["reification-ethnique"],
     chapterRef: "la-langue",
@@ -47,8 +48,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     fr: "Endonyme",
     en: "Endonym",
     family: "origine",
-    definition:
-      "Le nom d'un groupe dans sa propre langue. Le corpus en déclare 798 pour 800 fiches — et 3 201 noms venus du dehors.",
+    definition: "Un nom utilisé pour un groupe dans sa propre langue.",
     corpusExample: "Ovaherero, « les possesseurs de bétail » en otjiherero.",
     corpusPresence: "instantiated",
     seeAlso: ["autonyme", "exonyme"],
@@ -61,9 +61,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Folk etymology",
     family: "origine",
     definition:
-      "Une origine expliquée par ressemblance sonore, transmise, et fausse. Elle circule d'autant mieux qu'elle est jolie — c'est le risque propre à un dossier sur les noms.",
+      "Une explication de l’origine d’un mot fondée sur sa ressemblance avec un autre mot. Cette ressemblance ne suffit pas à établir leur lien historique.",
     corpusExample:
-      "La filiation de Kaffa vers « café » est séduisante et discutée ; celle de qahwa vers kahve ne l'est pas.",
+      "La source citée juge peu probable le rapprochement entre Kaffa et « café ». Elle propose plutôt de suivre le mot arabe qahwa, passé par le turc kahve.",
     corpusPresence: "instantiated",
     chapterRef: "la-chose",
     sourceRefs: ["coffee-qahwa"],
@@ -74,9 +74,10 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Exonym",
     family: "origine",
     definition:
-      "Le nom donné à un groupe depuis le dehors — un voisin, un marchand, une administration. Ni forcément hostile, ni forcément colonial.",
+      "Un nom donné à un groupe par d’autres personnes, par exemple des voisins, des marchands ou une administration. Il peut être accepté par les personnes concernées et n’est pas toujours lié à la colonisation.",
     corpusExample:
-      "3 201 exonymes au corpus ; 120 fiches attribuent le leur à des voisins, 75 à l'arabe.",
+      "La fiche des Jieng rapporte que le nom Dinka vient de marchands arabes et a été repris par l’administration anglo-égyptienne.",
+    sourceRefs: ["afrik-ppl-dinka"],
     corpusPresence: "instantiated",
     seeAlso: ["endonyme", "exonyme-depreciatif"],
     chapterRef: "le-peuple",
@@ -87,9 +88,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Pejorative exonym",
     family: "origine",
     definition:
-      "Un exonyme dont la forme même rabaisse : une moquerie, une insulte, un sobriquet devenu officiel. 87 fiches en signalent un.",
+      "Un nom donné de l’extérieur qui exprime du mépris, par exemple une moquerie ou une insulte devenue un nom courant.",
     corpusExample:
-      "« Hottentot », forgé par des colons néerlandais en imitant les consonnes claquantes du khoekhoe.",
+      "Selon la source citée, des colons néerlandais auraient créé « Hottentot » pour se moquer des sons à clics du khoekhoe.",
     corpusPresence: "instantiated",
     seeAlso: ["exonyme"],
     chapterRef: "le-peuple",
@@ -101,7 +102,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Historical spelling",
     family: "origine",
     definition:
-      "Une orthographe attestée à une époque, conservée pour que les sources anciennes restent retrouvables. Elle n'est ni un endonyme ni un exonyme : c'est une trace d'écriture.",
+      "Une façon d’écrire un nom que l’on retrouve dans des documents anciens. La conserver aide à retrouver les textes qui l’emploient.",
     corpusExample: "« Denka » pour Dinka, dans la littérature coloniale.",
     corpusPresence: "instantiated",
     seeAlso: ["exonyme"],
@@ -113,9 +114,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Onomastics",
     family: "origine",
     definition:
-      "La science des noms propres — qui nomme, quand, et sous quelle autorité. C'est l'axe de lecture de notre projet plus qu'une discipline que nous pratiquerions.",
+      "L’étude des noms propres. Elle cherche notamment à comprendre qui a donné un nom, quand et dans quelles circonstances. Ces questions guident notre projet.",
     corpusExample:
-      "Les cinq chapitres de ce dossier sont cinq régimes onomastiques.",
+      "Le dossier explore les noms des peuples, des pays, des personnes, des langues et des choses.",
     corpusPresence: "instantiated",
     seeAlso: ["ethnonyme", "toponyme", "anthroponyme"],
   },
@@ -127,8 +128,8 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Anthroponym",
     family: "objet",
     definition:
-      "Le nom d'une personne, tous systèmes confondus — prénom, nom de clan, nom de louange, nom d'attribution. Le terme générique que « patronyme » prétend à tort recouvrir.",
-    corpusExample: "Les trente fiches de nom du corpus.",
+      "Le nom d’une personne, qu’il s’agisse d’un prénom, d’un nom de clan, d’un nom de louange ou d’un autre type de nom. Le mot couvre davantage d’usages que le seul nom transmis par le père.",
+    corpusExample: "Les trente fiches de nom du relevé présenté ici.",
     corpusPresence: "instantiated",
     seeAlso: ["patronyme-matronyme", "jamu", "oriki", "nisba"],
     chapterRef: "la-personne",
@@ -140,9 +141,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Patronymic chain",
     family: "objet",
     definition:
-      "Un système où l'on se nomme en enfilant ses ascendants : le prénom du père devient le second nom de l'enfant, et rien ne se fige d'une génération à l'autre.",
+      "Une suite de noms qui indique les liens entre une personne et ses parents. Par exemple, le prénom du père devient le second nom de l’enfant. La suite change donc d’une génération à l’autre.",
     corpusExample:
-      "Quatre fiches déclarent une transmission non héréditaire de ce type.",
+      "Quatre fiches du premier relevé utilisé pour ce glossaire décrivaient cette façon de nommer les personnes.",
     corpusPresence: "instantiated",
     absenceReason: undefined,
     seeAlso: ["patronyme-matronyme", "fixation-patronymique"],
@@ -168,9 +169,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Name of a people",
     family: "objet",
     definition:
-      "Le nom d'un peuple. C'est l'objet central de notre projet, et le plus disputé : 460 fiches déclarent le leur contesté ou hérité de la colonisation.",
+      "Le nom d’un peuple. Un même peuple peut en porter plusieurs, dont certains sont contestés ou hérités de la colonisation.",
     corpusExample:
-      "Dinka et Jieng désignent le même peuple, depuis deux côtés.",
+      "Dinka et Jieng désignent le même peuple, mais ces noms ont des origines et des usages différents.",
     corpusPresence: "instantiated",
     seeAlso: ["exonyme", "endonyme", "tribu"],
     chapterRef: "le-peuple",
@@ -181,9 +182,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Glossonym",
     family: "objet",
     definition:
-      "Le nom d'une langue. Un glossonyme n'est pas un ethnonyme, et une famille de langues ne décrit aucune population.",
+      "Le nom d’une langue. Il faut le distinguer du nom d’un peuple : plusieurs peuples peuvent parler une même langue ou des langues apparentées.",
     corpusExample:
-      "Le corpus range 800 peuples sous 25 familles ; la plus vaste porte un mot forgé au XIXe siècle.",
+      "Le mot « bantou » a été proposé au XIXe siècle pour regrouper des langues. Il ne désigne pas un peuple unique.",
     corpusPresence: "instantiated",
     seeAlso: ["ethnonyme", "reification-ethnique"],
     chapterRef: "la-langue",
@@ -207,8 +208,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Jamu (Mande clan name)",
     family: "objet",
     definition:
-      "Nom de clan mandingue. Ni patronyme ni nom de famille : une appartenance, transmise mais aussi accordée — par alliance, par clientèle, par captivité.",
-    corpusExample: "Dix-huit fiches du corpus déclarent un nom de clan.",
+      "Un nom de clan mandingue. Il indique une appartenance qui peut se transmettre à la naissance ou être acquise par une alliance, une relation de protection ou la captivité.",
+    corpusExample:
+      "Dix-huit fiches du relevé présenté ici décrivent un nom de clan.",
     corpusPresence: "instantiated",
     seeAlso: ["anthroponyme", "oriki"],
     chapterRef: "la-personne",
@@ -220,8 +222,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Nisba",
     family: "objet",
     definition:
-      "Nom d'attribution arabo-berbère, formé sur un lieu, un groupe d'origine ou un métier. La littérature dit « tribu » là où nous écrivons « groupe » — la règle vaut pour le monde arabe comme pour le reste.",
-    corpusExample: "Deux fiches du corpus déclarent ce système.",
+      "Un nom formé à partir d’un lieu, d’un groupe d’origine ou d’un métier dans le monde arabo-berbère.",
+    corpusExample:
+      "Deux fiches du relevé présenté ici décrivent cette manière de nommer les personnes.",
     corpusPresence: "instantiated",
     seeAlso: ["anthroponyme"],
     chapterRef: "la-personne",
@@ -234,7 +237,8 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     family: "objet",
     definition:
       "Nom de clan attaché à un animal ou à une plante, souvent avec un interdit alimentaire et une liste fermée de prénoms permis.",
-    corpusExample: "Quatre fiches du corpus déclarent ce système.",
+    corpusExample:
+      "Quatre fiches du relevé présenté ici décrivent cette manière de nommer les personnes.",
     corpusPresence: "instantiated",
     seeAlso: ["jamu", "anthroponyme"],
     chapterRef: "la-personne",
@@ -246,8 +250,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Oríkì",
     family: "objet",
     definition:
-      "Nom de louange yoruba : une séquence qui dit la lignée, ses hauts faits et ses attributs. Il se récite plutôt qu'il ne s'inscrit.",
-    corpusExample: "Deux fiches du corpus déclarent un nom de louange.",
+      "Un nom de louange yoruba. Il célèbre une famille, ses qualités et ses actions. Il est généralement récité plutôt qu’inscrit dans un registre.",
+    corpusExample:
+      "Deux fiches du relevé présenté ici décrivent un nom de louange.",
     corpusPresence: "instantiated",
     seeAlso: ["jamu", "anthroponyme"],
     chapterRef: "la-personne",
@@ -258,9 +263,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     fr: "Oronyme",
     en: "Oronym",
     family: "objet",
-    definition: "Le nom d'un relief — montagne, massif, escarpement.",
+    definition: "Le nom d’un relief, comme une montagne ou un massif.",
     corpusExample:
-      "Kirinyaga, « la montagne de blancheur » en kikuyu, a donné le Kenya.",
+      "Selon l’explication présentée dans le dossier, Kenya viendrait de Kirinyaga, interprété en kikuyu comme « la montagne de blancheur ».",
     corpusPresence: "instantiated",
     seeAlso: ["toponyme", "hydronyme", "choronyme"],
     chapterRef: "le-pays",
@@ -271,9 +276,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Patronym / matronym",
     family: "objet",
     definition:
-      "Nom pris du père, ou de la mère. Ni l'un ni l'autre n'est universel : sur trente fiches, treize déclarent une transmission patrilinéaire, treize une autre voie, quatre aucune.",
+      "Un nom reçu du père est un patronyme ; un nom reçu de la mère est un matronyme. Ces façons de transmettre les noms ne sont pas les seules.",
     corpusExample:
-      "Le nom de famille héréditaire est une manière de faire parmi d'autres, pas la règle.",
+      "Dans le premier relevé de trente fiches présenté ici, treize indiquaient une transmission par le père, treize une autre transmission et quatre ne précisaient pas ce point.",
     corpusPresence: "instantiated",
     seeAlso: ["anthroponyme", "fixation-patronymique", "chaine-patronymique"],
     chapterRef: "la-personne",
@@ -288,7 +293,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
       "Nom porté après le prénom, institué en République du Zaïre le 12 janvier 1972 en remplacement des prénoms chrétiens, et conservé après la chute du régime qui l'avait décrété.",
     corpusPresence: "defined_only",
     absenceReason:
-      "Aucune fiche de nom du corpus ne déclare le postnom comme système. Le terme est défini parce que le chapitre l'emploie, pas parce que nous l'instancions.",
+      "Le relevé utilisé pour ce glossaire ne comprend pas de fiche sur le postnom. Ce terme est expliqué parce que le chapitre l'emploie.",
     seeAlso: ["anthroponyme", "tradition-inventee"],
     chapterRef: "la-personne",
     sourceRefs: ["zaire-authenticite-1972"],
@@ -300,7 +305,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     family: "objet",
     definition: "Le nom d'une divinité.",
     corpusExample:
-      "Mami Wata : un nom collectif tardif, posé sur des divinités des eaux anciennes et multiples.",
+      "Mami Wata est un nom commun qui aurait été adopté pour des divinités des eaux auparavant connues sous plusieurs noms.",
     corpusPresence: "defined_only",
     absenceReason:
       "Nous ne tenons pas de fiches de divinités. Le terme est défini parce que le chapitre « La chose » en a besoin.",
@@ -314,9 +319,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Toponym",
     family: "objet",
     definition:
-      "Le nom d'un lieu, toutes échelles confondues. La carte les aplatit tous en « nom de pays », et c'est cet aplatissement qui fait croire qu'un pays et un peuple se recouvrent.",
+      "Le nom d’un lieu, qu’il soit petit ou vaste. Il peut désigner une ville, une région ou un pays.",
     corpusExample:
-      "Les 54 fiches de pays renseignent toutes leur étymologie, et aucune ne la source.",
+      "Lors du relevé utilisé pour le dossier, les 54 fiches de pays proposaient une explication de leur nom sans l’accompagner d’une source. Le dossier précise les références ajoutées depuis.",
     corpusPresence: "instantiated",
     seeAlso: ["choronyme", "hydronyme", "oronyme"],
     chapterRef: "le-pays",
@@ -329,9 +334,8 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Documentary asymmetry",
     family: "effet",
     definition:
-      "L'écart entre ce qui a été écrit sur un groupe et ce qu'il a écrit de lui-même. Elle mesure les archives, jamais les peuples.",
-    corpusExample:
-      "3 201 exonymes pour 798 autonymes — et 321 fiches sur 800 qui ne déclarent aucun statut.",
+      "Le déséquilibre entre les textes écrits sur un groupe par des personnes extérieures et ceux que ses membres ont produits. Cet écart décrit les documents disponibles, pas la valeur des histoires racontées.",
+    corpusExample: `Nos fiches recensent ${formatNommerFigure({ figureKey: "corpus-exonyms" })} noms donnés de l’extérieur et ${formatNommerFigure({ figureKey: "corpus-autonyms" })} noms employés par les peuples eux-mêmes. ${formatNommerFigure({ figureKey: "status-undeclared" })} fiches sur ${formatNommerFigure({ figureKey: "corpus-peoples" })} ne précisent pas si le nom est contesté ou hérité de la colonisation.`,
     corpusPresence: "instantiated",
     seeAlso: ["exonyme", "endonyme"],
     chapterRef: "le-peuple",
@@ -342,7 +346,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Surname fixation",
     family: "effet",
     definition:
-      "Le moment où un nom cesse d'être une manière de désigner pour devenir une entrée héréditaire de registre — par le seul fait d'avoir été écrit.",
+      "Le passage à un nom stable, inscrit dans les registres et transmis d’une génération à l’autre. Les règles de l’état civil peuvent modifier des usages où les noms changeaient auparavant.",
     corpusExample:
       "L'état civil colonial exigeait un nom de forme européenne ; là où il n'en existait pas, l'agent en inscrivait un.",
     corpusPresence: "instantiated",
@@ -356,25 +360,13 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Indigenisation",
     family: "effet",
     definition:
-      "L'appropriation par laquelle un objet venu d'ailleurs devient une chose d'ici — souvent en changeant de nom, jamais d'origine.",
+      "Le processus par lequel des personnes adoptent un objet ou une pratique venus d’ailleurs et leur donnent une place dans la vie locale. Le nom ou l’usage peuvent changer.",
     corpusExample:
-      "Le wax est fabriqué aux Pays-Bas et nommé par ses acheteuses ouest-africaines.",
+      "Dans l’exemple étudié ici, des acheteuses ouest-africaines donnent des noms aux motifs de wax fabriqués aux Pays-Bas.",
     corpusPresence: "instantiated",
     seeAlso: ["transculturation", "tradition-inventee"],
     chapterRef: "la-chose",
     sourceRefs: ["trc-leiden-vlisco"],
-  },
-  {
-    id: "palier-de-source",
-    fr: "Palier de source",
-    en: "Source tier",
-    family: "effet",
-    definition:
-      "Le degré d'autorité attaché à une citation : Officielle, Référencée, Non vérifiée — plus « En attente d'examen » quand personne n'a encore tranché. Rien n'est écarté ; tout est étiqueté.",
-    corpusExample:
-      "Chaque source de ce dossier porte le sien, y compris celles qui attendent encore leur source primaire.",
-    corpusPresence: "instantiated",
-    seeAlso: ["asymetrie-documentaire"],
   },
   {
     id: "reification-ethnique",
@@ -382,9 +374,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Ethnic reification",
     family: "effet",
     definition:
-      "Le passage d'une catégorie de classement à une chose qui existe : ce qui était une manière de parler devient une population, avec un chiffre et une frontière.",
+      "Le fait de traiter un groupe créé pour classer des personnes comme s’il formait une population bien distincte, avec des limites fixes.",
     corpusExample:
-      "Le glissement de « bantou » : une famille de langues, puis un peuple, puis une catégorie de scolarisation séparée en 1953.",
+      "« Bantou » a d’abord désigné une famille de langues, puis a été appliqué à des peuples et utilisé dans une loi organisant des écoles séparées en 1953.",
     corpusPresence: "instantiated",
     seeAlso: ["tribu", "glossonyme", "emique-etique"],
     chapterRef: "la-langue",
@@ -396,7 +388,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Sanankuya (Mande joking kinship)",
     family: "effet",
     definition:
-      "Parenté à plaisanterie mandingue : un pacte entre deux noms de clan qui lie toute leur descendance. Cécile Canut en relève trois traits — la relation vaut à perpétuité pour les deux lignées, le mariage entre elles est prohibé, l'entraide y est due sans réserve — la moquerie rituelle en étant la face visible. Le nom engage : porter l'un des deux, c'est hériter du pacte.",
+      "Une relation de parenté à plaisanterie entre des clans mandingues. Cécile Canut décrit un pacte transmis aux descendants : les familles doivent s’entraider, ne peuvent pas se marier entre elles et échangent des moqueries selon des règles reconnues. Porter le nom d’un des clans signifie aussi hériter de ces engagements.",
     corpusExample:
       "Keïta et Coulibaly, dont la tradition fait remonter le pacte à Soundiata.",
     corpusPresence: "instantiated",
@@ -415,7 +407,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Invented tradition",
     family: "effet",
     definition:
-      "Une pratique récente qui se présente comme immémoriale — et qui est souvent d'autant plus efficace qu'elle est neuve.",
+      "Une pratique récente présentée comme très ancienne. Ce terme invite à étudier quand une pratique est apparue et comment elle a été transmise.",
     corpusExample:
       "Le postnom, décrété en 1972, se porte aujourd'hui comme un héritage.",
     corpusPresence: "instantiated",
@@ -429,9 +421,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Transculturation",
     family: "effet",
     definition:
-      "Deux cultures qui se rencontrent n'en absorbent pas une : elles produisent une troisième chose, et toutes deux en ressortent changées.",
+      "Les changements qui se produisent lorsque des cultures se rencontrent. Les personnes reprennent et transforment des éléments venus d’ailleurs pour créer de nouveaux usages.",
     corpusExample:
-      "Mami Wata et la chromolithographie hambourgeoise des années 1880.",
+      "La représentation de Mami Wata en femme au serpent est rapprochée d’une affiche imprimée en couleurs à Hambourg dans les années 1880.",
     corpusPresence: "instantiated",
     seeAlso: ["indigenisation", "theonyme"],
     chapterRef: "la-chose",
@@ -443,13 +435,25 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     en: "Tribe",
     family: "effet",
     definition:
-      "Terme d'administration coloniale, qui hiérarchise là où il prétend décrire. Nous écrivons « peuple » partout, sans exception, et ne conservons celui-ci que pour en parler.",
+      "Un mot employé notamment par les administrations coloniales pour classer des populations. Nous préférons « peuple » dans nos présentations et expliquons le contexte lorsque les sources utilisent « tribu ».",
     corpusExample:
-      "Aucune des 800 fiches n'emploie le mot pour désigner ce qu'elle décrit.",
+      "Nos fiches présentent les groupes comme des peuples. Lorsqu’une source ancienne emploie « tribu », nous conservons le mot dans la citation.",
     corpusPresence: "defined_only",
     absenceReason:
-      "Le terme est défini pour être écarté. Il n'instancie rien dans le corpus, et c'est le but.",
+      "Ce terme est expliqué pour aider à comprendre les textes qui l'utilisent. Nous préférons le mot « peuple » pour présenter les groupes.",
     seeAlso: ["ethnonyme", "reification-ethnique"],
     chapterRef: "le-peuple",
+  },
+  {
+    id: "type-de-source",
+    fr: "Type de source",
+    en: "Source type",
+    family: "effet",
+    definition:
+      "Une indication sur la nature d’une source : récit oral, travail de recherche, archive, statistiques publiques ou présentation d’ensemble. Elle aide à comprendre d’où vient l’information, sans classer les sources selon le métier de leur auteur.",
+    corpusExample:
+      "Les références du dossier indiquent par exemple « Tradition orale » ou « Publication académique ».",
+    corpusPresence: "instantiated",
+    seeAlso: ["asymetrie-documentaire"],
   },
 ];

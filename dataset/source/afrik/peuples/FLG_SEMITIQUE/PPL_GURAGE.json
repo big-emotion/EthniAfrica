@@ -4,12 +4,184 @@
   "languageFamilyId": "FLG_SEMITIQUE",
   "currentCountries": ["ETH"],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Gurage désigne des peuples de langues sémitiques du sud-ouest de l'Éthiopie, qui l'emploient aussi pour eux-mêmes. Il est attesté sous une forme proche dès le XIVe siècle. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Gurage",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom attesté dès le XIVe siècle sous une forme proche ; son origine reste discutée.",
+        "periodLabel": "Écrit dès le XIVe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Gurage désigne des peuples et des langues sémitiques du sud-ouest de l'Éthiopie, très divers, selon Grover Hudson. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Compte rendu de Wolf Leslau, Gurage Studies: Collected Articles, Journal of the American Oriental Society, vol. 114, n° 4",
+                "author": "Grover Hudson",
+                "year": 1994,
+                "url": "https://go.gale.com/ps/i.do?id=GALE%7CA16979349&it=r&p=AONE&sid=AONE&u=googlescholar&v=2.1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral sur Gale Academic OneFile. L'auteur cite William Shack, The Gurage (1966), aux pages 15 et 98, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1880,
+              "label": "XIXe siècle, avant les années 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Gurage désigne une région de l'intérieur dont les habitants parlent une langue sémitique : ceux de l'Ouest sont chrétiens depuis le Moyen Âge, ceux de l'Est ont adopté l'islam, selon Richard Pankhurst.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 15 : L'Éthiopie et la Somalie",
+                "author": "Richard Pankhurst, avec des notes de L. V. Cassanelli",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 427"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1813,
+              "to": 1847,
+              "label": "1813-1847"
+            },
+            "era": "polity",
+            "statement": "Le nom Gurage figure dans les prétentions de Sahla Sellasé, roi du Choa de 1813 à 1847, qui dit dominer « Yefat, le peuple galla et Gurage », selon Richard Pankhurst. Galla est un ancien nom, aujourd'hui rejeté, des Oromo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 15 : L'Éthiopie et la Somalie",
+                "author": "Richard Pankhurst, avec des notes de L. V. Cassanelli",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 421"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1314,
+              "to": 1344,
+              "label": "XIVe siècle, règne d'Amda Seyon (1314-1344)"
+            },
+            "era": "polity",
+            "statement": "Le nom Gurage apparaît sous une forme proche, Gerawege, dans la chronique du roi éthiopien Amda Seyon, qui nomme ainsi un peuple de la région, selon William Shack que cite Grover Hudson. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne vivaient déjà là avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Compte rendu de Wolf Leslau, Gurage Studies: Collected Articles, Journal of the American Oriental Society, vol. 114, n° 4",
+                "author": "Grover Hudson",
+                "year": 1994,
+                "url": "https://go.gale.com/ps/i.do?id=GALE%7CA16979349&it=r&p=AONE&sid=AONE&u=googlescholar&v=2.1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral sur Gale Academic OneFile. L'auteur cite William Shack, The Gurage (1966), aux pages 15 et 98, que nous n'avons pas lu."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 802"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Proposée en 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Gurage pourrait se lire en amharique Gura-ge, « le pays de Gura », comme Hararge est le pays de Harar ; Gura serait alors le district de ce nom en pays chaha, selon Grover Hudson, qui s'appuie sur William Shack.",
+            "hypothesisGroup": "origine du nom Gurage",
+            "sources": [
+              {
+                "title": "Compte rendu de Wolf Leslau, Gurage Studies: Collected Articles, Journal of the American Oriental Society, vol. 114, n° 4",
+                "author": "Grover Hudson",
+                "year": 1994,
+                "url": "https://go.gale.com/ps/i.do?id=GALE%7CA16979349&it=r&p=AONE&sid=AONE&u=googlescholar&v=2.1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral sur Gale Academic OneFile. L'auteur cite William Shack, The Gurage (1966), aux pages 15 et 98, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Rapportée en 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Gurage viendrait de soldats venus de Gura, une ville du nord, au service du roi Amda Seyon, selon une tradition répandue. Grover Hudson la rattache peut-être à une conjecture de l'historien éthiopien Alaqa Tayya Gabra Maryam, et note que la chronique d'Amda Seyon nomme déjà un peuple Gerawege dans la région.",
+            "hypothesisGroup": "origine du nom Gurage",
+            "sources": [
+              {
+                "title": "Compte rendu de Wolf Leslau, Gurage Studies: Collected Articles, Journal of the American Oriental Society, vol. 114, n° 4",
+                "author": "Grover Hudson",
+                "year": 1994,
+                "url": "https://go.gale.com/ps/i.do?id=GALE%7CA16979349&it=r&p=AONE&sid=AONE&u=googlescholar&v=2.1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral sur Gale Academic OneFile. L'auteur cite William Shack, The Gurage (1966), aux pages 15 et 98, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Proposée en 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Gurage serait celui que les Amhara ont donné, il y a plusieurs siècles, aux langues sémitiques parlées au sud de leur domaine, selon Grover Hudson.",
+            "hypothesisGroup": "origine du nom Gurage",
+            "sources": [
+              {
+                "title": "Compte rendu de Wolf Leslau, Gurage Studies: Collected Articles, Journal of the American Oriental Society, vol. 114, n° 4",
+                "author": "Grover Hudson",
+                "year": 1994,
+                "url": "https://go.gale.com/ps/i.do?id=GALE%7CA16979349&it=r&p=AONE&sid=AONE&u=googlescholar&v=2.1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral sur Gale Academic OneFile. L'auteur cite William Shack, The Gurage (1966), aux pages 15 et 98, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Gurage",
       "selfAppellation": "Gurage (ጉራጌ)",
       "exonyms": ["Guraginya (terme designant aussi le groupe de langues)"],
-      "originOfExonyms": "L'etymologie du terme Gurage est disputee. Certaines traditions orales le derivent de gura (gauche) et ge (de), signifiant ceux qui viennent de la gauche (c'est-a-dire de l'ouest), faisant reference a leur migration depuis le nord-ouest. D'autres l'associent a un ancetre eponyme mythique. Le terme Guraginya designe collectivement les langues parlees par les Gurage.",
+      "originOfExonyms": "L'etymologie du terme Gurage est disputee. Selon certaines traditions orales, le nom viendrait de gura (gauche) et ge (de), et voudrait dire ceux qui viennent de la gauche (c'est-à-dire de l'ouest), en référence à leur migration depuis le nord-ouest. D'autres l'associent a un ancetre eponyme mythique. Le terme Guraginya designe collectivement les langues parlees par les Gurage.",
       "whyProblematic": "Le terme Gurage est avant tout culturel et geographique plutot que strictement linguistique : les langues gurage ne sont pas toujours mutuellement intelligibles et couvrent au moins trois groupes distincts (Nord, Est, Ouest). Les Silte ont rejete l'identite gurage lors d'un referendum en 2000 et ont obtenu leur propre zone administrative. L'identite gurage englobe des communautes chretiennes orthodoxes, musulmanes et animistes.",
       "contemporaryUsage": "Le terme Gurage est couramment utilise en ethiopien (amharique), dans la litterature academique et par les membres du groupe eux-memes. Les Gurage d'Addis-Abeba sont reconnus pour leur dynamisme economique et leur identite culturelle distinctive au sein de la capitale ethiopienne.",
       "linguisticFamily": "FLG_SEMITIQUE",
@@ -92,32 +264,38 @@
       {
         "title": "Ethnologue — Sebat Bet Gurage (sgw), Soddo (gru), Silte (stv)",
         "url": "https://www.ethnologue.com/language/sgw",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Nature — Cultural and symbolic value of enset crop in Sebat Bet Gurage",
         "url": "https://www.nature.com/articles/s41599-022-01179-4",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "PMC/Frontiers in Pharmacology — Enset landraces knowledge in Gurage community",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12075952/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Joshua Project — Gurage Kistane in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/18863",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethiopian Central Statistical Agency (CSA) — Population and Housing Census 2007",
         "url": "https://www.csa.gov.et",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Encyclopaedia Aethiopica, vol. 2 (Uhlig ed.), Harrassowitz Verlag, 2005",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

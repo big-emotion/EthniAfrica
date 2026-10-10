@@ -9,8 +9,8 @@
       "mainName": "Yem",
       "selfAppellation": "Yem",
       "exonyms": ["Janjero", "Jangero", "Yemsa", "Yemma", "Yamma"],
-      "originOfExonyms": "Janjero est l'exonyme amharique traditionnel du peuple Yem, utilise depuis le XVe siecle dans les sources ethiopiennes chretiennes. Ce terme est considere comme pejoratif par les Yem eux-memes. L'ISO 639-3 a code leur langue jnj en reference a Janjero, ce que les Yem ont critique comme perpetuant un terme offensant. Yemma et Yemsa designent respectivement le peuple et la langue dans les sources academiques contemporaines. Le nom du royaume Yamma vient de l'appellation historique du territoire.",
-      "whyProblematic": "L'exonyme Janjero est percu comme stigmatisant par les Yem. Certains locuteurs de yemsa ont exprime un malaise a parler leur langue par crainte du jugement negatif associe au terme Janjero dans la societe ethiopienne.",
+      "originOfExonyms": "Depuis le XVe siècle, les sources chrétiennes éthiopiennes emploient le nom amharique Janjero pour les Yem. Ceux-ci le considèrent comme méprisant. Ils ont aussi critiqué le code jnj, attribué à leur langue dans la norme ISO 639-3 en référence à Janjero, car il maintient un nom qu'ils jugent offensant. Les recherches contemporaines emploient Yemma pour le peuple et Yemsa pour la langue. Le nom du royaume Yamma reprend l'appellation historique du territoire.",
+      "whyProblematic": "Les Yem considèrent Janjero comme un nom qui les dévalorise. Certains locuteurs du yemsa ont dit craindre de parler leur langue en raison du jugement négatif associé à ce nom dans la société éthiopienne.",
       "contemporaryUsage": "Le nom Yem est utilise dans les documents administratifs ethiopiens actuels. Le woreda special de Yem et la zone Yem portent ce nom dans la region Ethiopie centrale.",
       "linguisticFamily": "FLG_COUCHITIQUE",
       "ethnoLinguisticGroup": "Omotic (branche Omotic du Nord, groupe Kefoid)",
@@ -75,12 +75,14 @@
       {
         "title": "Yem in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/16022",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Yem of Ethiopia – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg011656/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Hebo: New Year Ritual of Yem People in South West Ethiopia – International Journal of Multidisciplinary and Current Research, 2019",
@@ -95,7 +97,8 @@
       {
         "title": "Glottolog — Yemsa (yems1235)",
         "url": "https://glottolog.org/resource/languoid/id/yems1235",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

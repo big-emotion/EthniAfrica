@@ -12,7 +12,7 @@
         "Maraba (appellation alternative documentee par le Joshua Project)",
         "Les anarchistes du nord-ouest de Madagascar (appellation descriptive utilisee par les anthropologues, notamment Peter Wilson)"
       ],
-      "originOfExonyms": "Le nom Tsimihety signifie en malgache ceux qui ne se coupent pas les cheveux (tsi : negation, mihety : couper les cheveux). Ce comportement est directement lie a leur independance vis-a-vis du royaume Sakalava, situe a l'ouest, ou couper les cheveux en signe de deuil lors de la mort d'un roi etait une obligation. En refusant de se couper les cheveux, les Tsimihety affirmaient symboliquement leur non-soumission a l'autorite royale sakalava.",
+      "originOfExonyms": "Le nom Tsimihety signifierait en malgache « ceux qui ne se coupent pas les cheveux » (tsi : négation, mihety : couper les cheveux). Ce comportement est directement lie a leur independance vis-a-vis du royaume Sakalava, situe a l'ouest, ou couper les cheveux en signe de deuil lors de la mort d'un roi etait une obligation. En refusant de se couper les cheveux, les Tsimihety affirmaient symboliquement leur non-soumission a l'autorite royale sakalava.",
       "whyProblematic": null,
       "contemporaryUsage": "Tsimihety est l'appellation officielle reconnue, utilisee dans tous les documents administratifs et academiques. Le premier president de la Republique malgache, Philibert Tsiranana (1959-1972), etait lui-meme Tsimihety de la region de Mandritsara.",
       "linguisticFamily": "FLG_AUSTRONESIENNE",
@@ -89,27 +89,32 @@
       {
         "title": "Joshua Project - Tsimihety in Madagascar",
         "url": "https://joshuaproject.net/people_groups/15593",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue - Tsimihety Malagasy (xmw)",
         "url": "https://www.ethnologue.com/language/xmw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue - Malagasy macrolanguage (mlg)",
         "url": "https://www.ethnologue.com/language/mlg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook - Madagascar",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Wilson, Peter J. - Freedom by a Hair's Breadth: Tsimihety in Madagascar, University of Michigan Press, 1992",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

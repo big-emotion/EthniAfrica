@@ -15,7 +15,7 @@
         "Mushunguli (terme employe par les Somaliens du nord, du mot Zigua 'mzigula', signifiant 'personne/travailleur/etranger')",
         "Addoon (terme pejoratif somali signifiant 'esclave')"
       ],
-      "originOfExonyms": "Le terme 'Jareer' (cheveux durs) oppose les Bantous somaliens aux Somaliens a cheveux souples (Jilec). 'Gosha' vient du somali reer goleed (gens de la foret marecageuse). 'Mushunguli' est une deformation du Zigua mzigula (personne). Le terme 'Somali Bantu' est apparu en 1993 lors de la guerre civile, utilise par les agences humanitaires pour designer l'alliance des groupes d'origine bantoue en Somalie.",
+      "originOfExonyms": "Le terme 'Jareer' (cheveux durs) oppose les Bantous somaliens aux Somaliens a cheveux souples (Jilec). 'Gosha' viendrait du somali reer goleed (gens de la foret marecageuse). 'Mushunguli' est une deformation du Zigua mzigula (personne). Le terme 'Somali Bantu' est apparu en 1993 lors de la guerre civile, utilise par les agences humanitaires pour designer l'alliance des groupes d'origine bantoue en Somalie.",
       "whyProblematic": "Le terme 'Jareer' et surtout 'Addoon' (esclave) sont des termes discriminatoires refletant la position sociale marginalisee des Bantous en Somalie. Historiquement associes a l'esclavage, ces appellations perpetuent la stigmatisation. Les Bantous ont reapproprie 'Jareer' dans les annees 1980 comme terme positif d'auto-identification.",
       "contemporaryUsage": "Depuis 1993, 'Somali Bantu' et 'Jareerweyne' sont les designations les plus courantes dans la litterature internationale. 'Bantu' est utilise en auto-designation. 'Gosha' reste employe pour les groupes de la vallee du Juba. La Minority Rights Group utilise 'Bantous' dans ses rapports officiels.",
       "linguisticFamily": "FLG_BANTU",
@@ -106,12 +106,14 @@
       {
         "title": "Minority Rights Group – Bantu in Somalia, 2024",
         "url": "https://minorityrights.org/communities/bantu/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Gosha people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/gosha.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "The Somali Bantu: Their History and Culture – Cultural Orientation Resource Exchange",
@@ -121,12 +123,14 @@
       {
         "title": "Orville Jenkins – Who are the 'Somali Bantu'?, 2015",
         "url": "http://orvillejenkins.com/peoples/somalibantu.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Refworld – World Directory of Minorities and Indigenous Peoples – Somalia",
         "url": "https://www.refworld.org/reference/countryrep/mrgi/2018/121768",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

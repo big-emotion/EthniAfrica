@@ -1,5 +1,9 @@
 import type { FicheSource } from "@/types/afrik";
-import type { SourceTier } from "@/types/sources";
+import {
+  toSourceKindOrNull,
+  type SourceKind,
+  type SourceTier,
+} from "@/types/sources";
 
 /**
  * The display text of a fiche `sources[]` entry.
@@ -36,6 +40,8 @@ export interface FicheSourceEntry {
   url: string | null;
   standing: SourceTier | "needs_review";
   notes?: string;
+  /** What kind of work it is; absent when nothing recorded one. */
+  kind?: SourceKind;
   /**
    * Its place in the fiche's bibliography, when the fiche has one.
    *
@@ -70,12 +76,14 @@ export function ficheSourceEntries(
       return [{ label, url: null, standing: "needs_review" as const }];
     }
 
+    const kind = toSourceKindOrNull(source.source_kind);
     return [
       {
         label,
         url: source.url ?? null,
         standing: source.tier ?? ("needs_review" as const),
         ...(source.notes === undefined ? {} : { notes: source.notes }),
+        ...(kind ? { kind } : {}),
       },
     ];
   });

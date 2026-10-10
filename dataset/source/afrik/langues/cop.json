@@ -28,18 +28,21 @@
         "title": "Glottolog 5.3 — Coptic",
         "url": "https://glottolog.org/resource/languoid/id/copt1239",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Glottolog direct official languoid record ; source du nom et du glottocode. Le copte est le dernier état de l'égyptien ancien (egy, glottocode egyp1246), écrit dans un alphabet dérivé du grec."
       },
       {
         "title": "Wikipédia anglophone, Coptic language",
         "url": "https://en.wikipedia.org/wiki/Coptic_language",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Article lu pour le nom de la langue en copte et le chemin grec, arabe puis langues d'Europe du mot « copte »."
       },
       {
         "title": "Wikipédia anglophone, Copts",
         "url": "https://en.wikipedia.org/wiki/Copts",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Article lu pour l'origine du mot « copte » (arabe qubṭ ou qibṭ, d'après le copte aiguption ou kuptaion, du grec Aiguptios), pour le changement de sens après la conquête musulmane de 639-646 et pour le rapprochement avec la ville de Coptos, que l'article rapporte sans dire qui l'a proposé."
       }
     ]

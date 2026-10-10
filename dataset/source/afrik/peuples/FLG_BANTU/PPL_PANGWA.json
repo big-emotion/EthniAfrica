@@ -73,17 +73,20 @@
       {
         "title": "Pangwa Language (PBR) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/pbr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Pangwa in Tanzania – Joshua Project",
         "url": "https://www.joshuaproject.net/people_groups/14296",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Pangwa – Glottolog 5.3, ISO 639-3: pbr, code Guthrie G.64",
         "url": "https://glottolog.org/resource/languoid/id/pang1287",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "East African Notes and Records – A Politics of Fear, A Religion of Blame: Kinga, Pangwa and Nyakyusa Peoples in Southwestern Tanzania – George Park",

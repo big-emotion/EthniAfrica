@@ -104,12 +104,14 @@
       {
         "title": "Kalanga in Botswana – Joshua Project, 2026",
         "url": "https://joshuaproject.net/people_groups/12446/BC",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kalanga – DICE Database, University of Missouri",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Kalanga.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Culture and Travel – Kalanga.org, 2020",

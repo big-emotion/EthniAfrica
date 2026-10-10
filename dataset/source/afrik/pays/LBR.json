@@ -6,6 +6,268 @@
   "summary": "Le Libéria porte un nom formé sur le latin « liber », libre, attaché à la colonie que l'American Colonization Society, organisation privée américaine, fonde à partir de 1822 pour y installer des Afro-Américains affranchis ; qui l'a employé le premier n'est pas établi. Le territoire était déjà celui des chefferies kpelle, bassa, grebo, gio et de leurs voisines, et le cap où s'élève Monrovia s'appelait Ducor. La capitale porte le nom d'un président des États-Unis.",
   "etymology": "Le nom « Libéria » est formé sur le latin « liber », libre, en référence à l'installation d'Afro-Américains affranchis sur cette côte à partir de 1822. Qui l'a employé le premier n'est pas établi. La version la plus répandue attribue le nom au juriste américain Robert Goodloe Harper, membre de l'American Colonization Society, qui l'aurait proposé à l'assemblée annuelle de février 1824 ; les archives d'État du Maryland, qui retracent sa carrière, lui rattachent la ville de Harper mais pas le nom du pays. Une étude publiée en 2026 relève des emplois du mot antérieurs à cette date, dès 1822, et conclut qu'aucun auteur identifié ne convient. Avant ce nom, le cap où fut bâtie Monrovia s'appelait Ducor, du nom que lui donnaient les Dei et les Bassa.",
   "nameOriginActor": "L'American Colonization Society, organisation privée américaine fondée en 1816, est à l'origine de l'établissement et porte le nom dans ses publications. La personne qui a formé le mot n'est pas identifiée : l'attribution courante à Robert Goodloe Harper, pour l'assemblée de février 1824, est contredite par des emplois relevés dès 1822. Le nom devient celui d'un État souverain à la déclaration d'indépendance du 26 juillet 1847. La capitale, Monrovia, porte le nom de James Monroe, alors président des États-Unis.",
+  "nameHistory": {
+    "summary": "Le nom Libéria désigne un pays d'Afrique de l'Ouest, la République du Libéria. Il a d'abord désigné la colonie fondée en 1822 par une société privée américaine pour y installer des Afro-Américains libres ; la côte s'appelait auparavant côte du Poivre ou côte des Graines. On ne sait pas avec certitude qui a formé ce nom ; nous présentons plus bas les versions des sources.",
+    "names": [
+      {
+        "nameText": "Libéria",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une colonie d'Afro-Américains libres, écrit dès 1822, devenu celui de la république en 1847.",
+        "periodLabel": "Écrit dès décembre 1822 ; nom de l'État depuis 1847",
+        "accounts": [
+          {
+            "period": {
+              "from": 1847,
+              "to": null,
+              "label": "Depuis le 26 juillet 1847"
+            },
+            "era": "modern",
+            "statement": "Le nom Libéria est celui d'un État indépendant depuis le 26 juillet 1847 : l'ancienne colonie privée se constitue alors en république, selon l'Histoire générale de l'Afrique et l'Office of the Historian.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 128, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Libéria : indépendant le 26 juillet 1847, « Colonie privée de 1822 à 1847 »."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Liberia",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/liberia",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 10 octobre 2026. L'État qui devient le Libéria naît en 1822, quand l'American Colonization Society fonde un établissement pour des affranchis et des captifs libérés ; en 1847, il se constitue en république."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Libéria désigne aujourd'hui l'État. Il a d'abord désigné la colonie de l'American Colonization Society, la « terre des libres », selon Fred van der Kraaij. Qui l'a formé reste discuté : nous présentons plus bas les deux versions des sources.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Liberia in the 19th Century: From American Colony to African Republic",
+                "author": "Fred P. M. van der Kraaij",
+                "year": 2026,
+                "url": "https://hdl.handle.net/1887/4307890",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Leiden, African Studies Centre Leiden, collection African Studies, vol. 88, 2026, en accès libre ; lu le 10 octobre 2026. Introduction : « Their colony was named Liberia, ‘land of the free.’ »"
+              },
+              {
+                "title": "Liberia in the 19th Century: From American Colony to African Republic",
+                "author": "Fred P. M. van der Kraaij",
+                "year": 2026,
+                "url": "https://hdl.handle.net/1887/4307890",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62-64",
+                "notes": "Leiden, African Studies Centre Leiden, collection African Studies, vol. 88, 2026, en accès libre ; lu le 10 octobre 2026. Chapitre 4, section « Who coined the name Liberia? ». L'auteur écarte Jehudi Ashmun, Ralph Gurley, Lott Carey et Elijah Johnson, situe la naissance du nom entre la fin de septembre et la mi-décembre 1822 et conclut : « the mystery remains »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1824,
+              "to": 1824,
+              "label": "20 février 1824"
+            },
+            "era": "colonial",
+            "statement": "Le nom Libéria est adopté par l'American Colonization Society pour tous ses actes et écrits. La ville fondée sur ce territoire prend le nom de Monrovia, en l'honneur du président américain James Monroe, selon le septième rapport annuel de la société cité par Fred van der Kraaij.",
+            "sources": [
+              {
+                "title": "Liberia in the 19th Century: From American Colony to African Republic",
+                "author": "Fred P. M. van der Kraaij",
+                "year": 2026,
+                "url": "https://hdl.handle.net/1887/4307890",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59-60",
+                "notes": "Leiden, African Studies Centre Leiden, collection African Studies, vol. 88, 2026, en accès libre ; lu le 10 octobre 2026. Chapitre 4, « The Naming of the Colony ‘Liberia’: 1822 ». L'auteur cite le septième rapport annuel de l'American Colonization Society (1824) : le 20 février 1824, Robert Goodloe Harper déclare « Our Colony has at present no name », jusque-là désignée par le cap Montserado, et propose « the term LIBERIA », qui « denotes a settlement of persons made free » ; la société adopte ce nom pour tous ses actes et écrits, et nomme Monrovia la ville fondée sur ce territoire."
+              },
+              {
+                "title": "U.S. Department of State, Office of the Historian — Founding of Liberia, 1847",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/milestones/1830-1860/liberia",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 10 octobre 2026 : l'établissement est nommé Liberia et sa capitale Monrovia en l'honneur du président James Monroe ; indépendance déclarée en 1847."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1823,
+              "to": 1823,
+              "label": "1823"
+            },
+            "era": "colonial",
+            "statement": "Le nom Libéria figure dans le sixième rapport annuel de l'American Colonization Society : un navire doit partir de Baltimore « to Liberia, the name of the purchased Territory on the coast », selon Fred van der Kraaij.",
+            "formAsWritten": "Liberia",
+            "sources": [
+              {
+                "title": "Liberia in the 19th Century: From American Colony to African Republic",
+                "author": "Fred P. M. van der Kraaij",
+                "year": 2026,
+                "url": "https://hdl.handle.net/1887/4307890",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62",
+                "notes": "Leiden, African Studies Centre Leiden, collection African Studies, vol. 88, 2026, en accès libre ; lu le 10 octobre 2026. Chapitre 4. L'auteur cite le sixième rapport annuel de la société, de 1823, qui rend compte de la réunion annuelle tenue à Washington le 20 février 1823."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": 1822,
+              "label": "Décembre 1822"
+            },
+            "era": "colonial",
+            "statement": "Le nom Libéria apparaît dans la presse américaine en décembre 1822 : le Baltimore American, daté du 12 ou du 15 décembre, titre « News from Liberia », et d'autres journaux reprennent l'article, selon Fred van der Kraaij. C'est la plus ancienne trace de ce nom que le projet connaît. Le cap Mesurado et les peuples de cette côte existaient bien avant lui.",
+            "formAsWritten": "Liberia",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Liberia in the 19th Century: From American Colony to African Republic",
+                "author": "Fred P. M. van der Kraaij",
+                "year": 2026,
+                "url": "https://hdl.handle.net/1887/4307890",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 60-62",
+                "notes": "Leiden, African Studies Centre Leiden, collection African Studies, vol. 88, 2026, en accès libre ; lu le 10 octobre 2026. Chapitre 4, section « A surprising discovery ». L'auteur relève au moins cinq journaux américains qui emploient le nom en décembre 1822, le plus ancien étant le Baltimore American du 12 ou du 15 décembre 1822, sous le titre « News from Liberia » ; il cite aussi le sixième rapport annuel de la société (1823), qui parle de « Liberia, the name of the purchased Territory on the coast »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": 1822,
+              "label": "1822"
+            },
+            "era": "colonial",
+            "statement": "On parle d'abord de « la colonie » ou de l'établissement du cap Montserado pour désigner la colonie fondée en 1822 ; en 1824, Robert Goodloe Harper note que c'était sa seule désignation, selon Fred van der Kraaij.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Liberia in the 19th Century: From American Colony to African Republic",
+                "author": "Fred P. M. van der Kraaij",
+                "year": 2026,
+                "url": "https://hdl.handle.net/1887/4307890",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59-60",
+                "notes": "Leiden, African Studies Centre Leiden, collection African Studies, vol. 88, 2026, en accès libre ; lu le 10 octobre 2026. Chapitre 4, « The Naming of the Colony ‘Liberia’: 1822 ». L'auteur cite le septième rapport annuel de l'American Colonization Society (1824) : le 20 février 1824, Robert Goodloe Harper déclare « Our Colony has at present no name », jusque-là désignée par le cap Montserado, et propose « the term LIBERIA », qui « denotes a settlement of persons made free » ; la société adopte ce nom pour tous ses actes et écrits, et nomme Monrovia la ville fondée sur ce territoire."
+              },
+              {
+                "title": "Liberia in the 19th Century: From American Colony to African Republic",
+                "author": "Fred P. M. van der Kraaij",
+                "year": 2026,
+                "url": "https://hdl.handle.net/1887/4307890",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62-64",
+                "notes": "Leiden, African Studies Centre Leiden, collection African Studies, vol. 88, 2026, en accès libre ; lu le 10 octobre 2026. Chapitre 4, section « Who coined the name Liberia? ». L'auteur écarte Jehudi Ashmun, Ralph Gurley, Lott Carey et Elijah Johnson, situe la naissance du nom entre la fin de septembre et la mi-décembre 1822 et conclut : « the mystery remains »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1822,
+              "label": "Avant 1822"
+            },
+            "era": "polity",
+            "statement": "On parle de côte de la Malaguette ou de côte du Poivre pour désigner le littoral entre la Sierra Leone et la Côte d'Ivoire, d'après le poivre malaguette qu'on y achetait ; Hollandais et Britanniques disent côte des Graines, selon Fred van der Kraaij.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Liberia in the 19th Century: From American Colony to African Republic",
+                "author": "Fred P. M. van der Kraaij",
+                "year": 2026,
+                "url": "https://hdl.handle.net/1887/4307890",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Leiden, African Studies Centre Leiden, collection African Studies, vol. 88, 2026, en accès libre ; lu le 10 octobre 2026. Chapitre 1, « The Grain Coast Before 1822 ». La côte entre la Sierra Leone et la Côte d'Ivoire était appelée côte de la Malaguette ou côte du Poivre, d'après le poivre malaguette ; Hollandais et Britanniques appelaient ce produit « Grains of Paradise », d'où le nom de Grain Coast."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1824,
+              "to": 1824,
+              "label": "Version rapportée en 1824"
+            },
+            "era": "colonial",
+            "statement": "Le nom Libéria aurait été proposé par Robert Goodloe Harper, membre du conseil de l'American Colonization Society, le 20 février 1824, comme un nom « court et familier » qui désigne « un établissement de personnes rendues libres ». C'est la version officielle, selon le septième rapport annuel de la société cité par Fred van der Kraaij.",
+            "hypothesisGroup": "origine du nom Libéria",
+            "sources": [
+              {
+                "title": "Liberia in the 19th Century: From American Colony to African Republic",
+                "author": "Fred P. M. van der Kraaij",
+                "year": 2026,
+                "url": "https://hdl.handle.net/1887/4307890",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59-60",
+                "notes": "Leiden, African Studies Centre Leiden, collection African Studies, vol. 88, 2026, en accès libre ; lu le 10 octobre 2026. Chapitre 4, « The Naming of the Colony ‘Liberia’: 1822 ». L'auteur cite le septième rapport annuel de l'American Colonization Society (1824) : le 20 février 1824, Robert Goodloe Harper déclare « Our Colony has at present no name », jusque-là désignée par le cap Montserado, et propose « the term LIBERIA », qui « denotes a settlement of persons made free » ; la société adopte ce nom pour tous ses actes et écrits, et nomme Monrovia la ville fondée sur ce territoire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": 1822,
+              "label": "Fin de 1822"
+            },
+            "era": "colonial",
+            "statement": "Le nom Libéria serait né entre la fin de septembre et la mi-décembre 1822, avant la proposition de Robert Goodloe Harper, sans qu'on sache qui l'a formé : aucun des hommes dont Fred van der Kraaij examine le rôle, Jehudi Ashmun, Ralph Gurley, Lott Carey ou Elijah Johnson, ne peut être retenu, selon lui.",
+            "hypothesisGroup": "origine du nom Libéria",
+            "sources": [
+              {
+                "title": "Liberia in the 19th Century: From American Colony to African Republic",
+                "author": "Fred P. M. van der Kraaij",
+                "year": 2026,
+                "url": "https://hdl.handle.net/1887/4307890",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 60-62",
+                "notes": "Leiden, African Studies Centre Leiden, collection African Studies, vol. 88, 2026, en accès libre ; lu le 10 octobre 2026. Chapitre 4, section « A surprising discovery ». L'auteur relève au moins cinq journaux américains qui emploient le nom en décembre 1822, le plus ancien étant le Baltimore American du 12 ou du 15 décembre 1822, sous le titre « News from Liberia » ; il cite aussi le sixième rapport annuel de la société (1823), qui parle de « Liberia, the name of the purchased Territory on the coast »."
+              },
+              {
+                "title": "Liberia in the 19th Century: From American Colony to African Republic",
+                "author": "Fred P. M. van der Kraaij",
+                "year": 2026,
+                "url": "https://hdl.handle.net/1887/4307890",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62-64",
+                "notes": "Leiden, African Studies Centre Leiden, collection African Studies, vol. 88, 2026, en accès libre ; lu le 10 octobre 2026. Chapitre 4, section « Who coined the name Liberia? ». L'auteur écarte Jehudi Ashmun, Ralph Gurley, Lott Carey et Elijah Johnson, situe la naissance du nom entre la fin de septembre et la mi-décembre 1822 et conclut : « the mystery remains »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Colonie de l'American Colonization Society (1822-1847)"],
@@ -333,66 +595,77 @@
         "title": "UNFPA – World Population Dashboard, Libéria",
         "url": "https://www.unfpa.org/data/world-population/LR",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Fonds des Nations unies pour la population. Population totale retenue pour l'année de référence 2025."
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Division de statistique des Nations unies. Code pays et forme française du nom."
       },
       {
         "title": "Republic of Liberia, 2008 Population and Housing Census – Highlights",
         "url": "https://www.paris21.org/sites/default/files/LIBERIA_census.pdf",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Institut libérien de statistique et de services d'information géographique, avec PARIS21. Dénombrement du 21 au 30 mars 2008 : 3 476 608 habitants, répartition par comté et par ville."
       },
       {
         "title": "Banque mondiale – catalogue de microdonnées, recensement libérien de 2008",
         "url": "https://microdata.worldbank.org/index.php/catalog/2098",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Notice documentaire du recensement de 2008. Elle atteste que l'appartenance ethnique et la langue figuraient parmi les variables collectées."
       },
       {
         "title": "CIA World Factbook – Liberia, édition archivée du 26 décembre 2025",
         "url": "https://web.archive.org/web/20251226162048/https://www.cia.gov/the-world-factbook/countries/liberia/",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Instantané pris avant l'arrêt de la publication, le 4 février 2026. Origine de la répartition par peuple retenue ici, que cette édition rapportait du recensement libérien de 2008."
       },
       {
         "title": "SIL Ethnologue – Languages of Liberia",
         "url": "https://www.ethnologue.com/country/LR/",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Summer Institute of Linguistics. Inventaire des langues du Libéria et codes ISO 639-3."
       },
       {
         "title": "Glottolog – langues du Libéria",
         "url": "https://glottolog.org/glottolog/language.map.html?country=LR",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Institut Max-Planck d'anthropologie évolutionniste. Rattachement des langues du pays à leurs familles."
       },
       {
         "title": "Fred P. M. van der Kraaij, Liberia in the 19th Century: From American Colony to African Republic",
         "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "African Studies Centre Leiden, 2026, ISBN 9789054482093, consultable en ligne. Relève des emplois du nom « Liberia » antérieurs à l'attribution couramment retenue de 1824."
       },
       {
         "title": "African Studies Centre Leiden – présentation de l'ouvrage de Fred P. M. van der Kraaij",
         "url": "https://ascleiden.nl/news/liberia-19th-century-american-colony-african-republic",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Notice de l'éditeur, 20 juillet 2026."
       },
       {
         "title": "Maryland State Archives – notice biographique de Robert Goodloe Harper",
         "url": "https://msa.maryland.gov/megafile/msa/speccol/sc3500/sc3520/002000/002031/html/02031bio.html",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Archives d'État du Maryland. Carrière de Robert Goodloe Harper (1765-1825) ; la notice rattache à son nom la ville de Harper, et non le nom du pays."
       },
       {
         "title": "U.S. Department of State, Office of the Historian — Founding of Liberia, 1847",
         "url": "https://history.state.gov/milestones/1830-1860/liberia",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Société fondée en 1816 par un groupe d'Américains blancs ; en 1821, un officier de marine contraint un dirigeant local à céder du territoire ; l'établissement est nommé Liberia et sa capitale Monrovia en l'honneur du président James Monroe, qui avait obtenu des fonds publics pour le projet ; indépendance déclarée en 1847."
       },
       {

@@ -10,7 +10,7 @@
       "selfAppellation": null,
       "exonyms": ["Mandé", "Mande", "Mandingo", "Manding", "Mandingue"],
       "spellingAliases": ["Manden", "Mandenka", "Mandenga", "Mandénga"],
-      "originOfExonyms": "Ces formes ne sont pas des exonymes équivalents dans tous les contextes. Koelle (1854) rapporte Mande et Mandenga comme des noms employés par ses interlocuteurs, tout en critiquant la graphie Mandingo des cartes européennes. Niane (1985, chapitre 6) emploie Mande et Manden pour un pays historique et Mandenka, « mandingue », pour un peuple. En linguistique, mandé désigne une famille plus large que le groupe mandingue décrit par Vydrin (2009). Le rapprochement des noms ne démontre pas une origine de tous les peuples de langues mandé dans le Manden historique.",
+      "originOfExonyms": "Ces noms ne désignent pas la même chose dans tous les contextes. Koelle (1854) rapporte que ses interlocuteurs emploient Mande et Mandenga. Il critique la forme Mandingo des cartes européennes. Niane (1985, chapitre 6) emploie Mande et Manden pour un pays historique, et Mandenka, « mandingue », pour un peuple. Dans les études sur les langues, mandé désigne une famille plus large que le groupe mandingue décrit par Vydrin (2009). La ressemblance des noms ne suffit donc pas à faire venir tous les peuples de langues mandé du Manden historique.",
       "whyProblematic": "Le regroupement présenté ici repose sur la parenté des langues. Il ne permet pas d'attribuer à tous leurs locuteurs une même origine géographique, une histoire unique ou une identité collective obligatoire. Mandé et mandingue peuvent aussi servir à exprimer des appartenances : leurs usages doivent être situés selon les personnes, les lieux et les époques. Une classification linguistique ne suffit ni à imposer ces appartenances, ni à les nier.",
       "contemporaryUsage": "Les appellations particulières peuvent coexister avec des appartenances plus larges. Donaldson (2019) étudie le mouvement n'ko à partir d'enquêtes menées entre 2012 et 2017, notamment dans des cours à Bamako et à Bobo-Dioulasso. Les acteurs qu'il observe rapprochent plusieurs parlers mandingues dans un projet linguistique et civique commun. Cet exemple concerne des participants à ce mouvement ; il ne représente pas tous les locuteurs mandingues et ne s'étend pas automatiquement à toute la famille mandé. L'absence d'une auto-appellation unique documentée pour l'ensemble du regroupement ne signifie pas l'absence d'identités partagées.",
       "linguisticFamily": "FLG_MANDE",
@@ -134,17 +134,20 @@
       {
         "title": "Britannica — Mande",
         "url": "https://www.britannica.com/topic/Mande",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica — Mande languages",
         "url": "https://www.britannica.com/topic/Mande-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "EBSCO Research Starters — Mande Languages",
         "url": "https://www.ebsco.com/research-starters/language-and-linguistics/mande-languages",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Trailblazer Travelz — The Mande People",
@@ -159,12 +162,14 @@
       {
         "title": "SIL Ethnologue — Mande language family",
         "url": "https://www.ethnologue.com/subgroup/1238/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Niane, Djibril Tamsir — Soundjata ou l'epopee mandingue. Paris : Presence Africaine, 1960",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Levtzion, Nehemia — Ancient Ghana and Mali. Londres : Methuen, 1973",
@@ -175,38 +180,48 @@
         "title": "Sanou Noël, Bationo (2021) – La charte du Mandé, Afroglobe 1",
         "url": "https://edition.uqam.ca/afroglobe/article/view/982",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Retrace l'atelier de Kankan de mars 1998 d'où sort la version écrite en quarante-quatre articles, d'après le récit de Djibril Tamsir Niane."
       },
       {
         "title": "UNESCO (2009) – La Charte du Mandén, proclamée à Kouroukan Fouga",
         "url": "https://ich.unesco.org/fr/RL/la-charte-du-manden-proclamee-a-kouroukan-fouga-00290",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Inscription au patrimoine culturel immatériel à la demande du Mali. La description inscrite énumère sept chapitres."
       },
       {
         "title": "Koelle, Sigismund Wilhelm (1854) – Polyglotta Africana. Church Missionary House, Londres",
         "url": "https://github.com/lexibank/polyglottaafricana",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Transcription savante du texte de 1854, publiée comme jeu de données par le projet Lexibank. Les remarques de terrain de Koelle sur le pays de Mánde et sur le suffixe de gentilé y sont lues intégralement."
       },
       {
         "title": "Vydrin, Valentin (2009) – On the Problem of the Proto-Mande Homeland, Journal of Language Relationship 1",
         "url": "https://www.jolr.ru/files/(10)jlr2009-1(107-142).pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Onze groupes de bas niveau font consensus ; les désaccords portent sur les regroupements intermédiaires et sur le berceau de la famille."
       },
       {
         "title": "Niane, Djibril Tamsir (1985) – Le Mali et la deuxième expansion manden. Histoire générale de l’Afrique, tome IV, chapitre 6, UNESCO",
-        "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
         "tier": "official",
-        "notes": "Chapitre publié par l'UNESCO, reproduit par Bokundoli. P. 141 : pays Mande ou Manden et peuple mandenka ; p. 153-154 : traditions de Do et Kiri antérieures à Soundiata. Ces usages sont ceux de l'auteur."
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre publié par l'UNESCO, dont l'édition originale est en ligne sur l'UNESDOC. Lu dans une copie non officielle reproduite par le site Bokundoli, dont la pagination suit l'édition française. P. 141 : pays Mande ou Manden et peuple mandenka ; p. 153-154 : traditions de Do et Kiri antérieures à Soundiata. Ces usages sont ceux de l'auteur."
       },
       {
         "title": "Donaldson, Coleman (2019) – Linguistic and Civic Refinement in the N’ko Movement of Manding-Speaking West Africa. Signs and Society 7(2), p. 156-185",
         "url": "https://www.cambridge.org/core/journals/signs-and-society/article/linguistic-and-civic-refinement-in-the-nko-movement-of-mandingspeaking-west-africa/22BCE1074BD8F08FD5F998BB259E3E60",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de recherche fondé sur des enquêtes entre 2012 et 2017, avec des observations à Bamako et à Bobo-Dioulasso. Les pratiques décrites concernent les acteurs étudiés du mouvement n'ko. DOI : 10.1086/702554."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Un regroupement par la langue, pas un peuple. L'histoire des noms Mandé et Mandingue est racontée avec la famille mandé et avec les Malinké.",
+      "followUp": "D'où vient le nom Mandingue ?"
+    }
   }
 }

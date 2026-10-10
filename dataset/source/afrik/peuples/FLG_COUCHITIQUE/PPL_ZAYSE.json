@@ -15,7 +15,7 @@
         "Zagisse",
         "Zayse-Zergulla"
       ],
-      "originOfExonyms": "Zagisse est le nom utilise par le peuple Koore voisin pour designer les Zayse ; il signifie les plus anciens ou les premiers, ce qui suggere que les Zayse sont consideres comme les habitants originels de la region. Zayse-Zergulla designe l'ensemble du dialecte ou de la langue comprenant les varietes Zayse et Zergulla. Le Zergulla est une variete etroitement apparentee dont les locuteurs (Zargulla, auto-appellation Gamo) vivent dans le district de Bonke.",
+      "originOfExonyms": "Zagisse est le nom utilisé par le peuple Koore voisin pour désigner les Zayse ; il voudrait dire « les plus anciens » ou « les premiers », ce qui suggère que les Zayse sont considérés comme les habitants originels de la région. Zayse-Zergulla designe l'ensemble du dialecte ou de la langue comprenant les varietes Zayse et Zergulla. Le Zergulla est une variete etroitement apparentee dont les locuteurs (Zargulla, auto-appellation Gamo) vivent dans le district de Bonke.",
       "whyProblematic": null,
       "contemporaryUsage": "Zayse est le nom utilise dans les documents administratifs ethiopiens et dans les etudes linguistiques recentes. La distinction entre Zayse et Zergulla suit plutot des lignes ethniques ou geographiques que strictement linguistiques.",
       "linguisticFamily": "FLG_COUCHITIQUE",
@@ -82,22 +82,26 @@
       {
         "title": "Zayse in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/16096",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Zayse of Ethiopia – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg011659/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Zayse-Zergulla – Glottolog 5.3",
         "url": "https://glottolog.org/resource/languoid/id/zays1235",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Amha, Azeb – Placing the Dead and Nurturing the Living: Documentation of house-construction and terrace farming in Zargulla, ASCL Leiden / ELDP, 2016-2019",
         "url": "https://www.ascleiden.nl/news/new-research-project-placing-dead-and-nurturing-living-documentation-house-construction-and",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Zayse-Zergulla – JAEL Ethiopian Languages",

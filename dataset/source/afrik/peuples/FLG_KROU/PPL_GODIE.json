@@ -12,7 +12,7 @@
         "Godye",
         "Gwèdji (dénomination ancienne signifiant Chimpanzé-panthère, attribuée par les Neyo voisins pour décrire leur caractère belliqueux)"
       ],
-      "originOfExonyms": "Le nom Godié vient du mot Gwèdji, surnom donné par les Neyo, un peuple voisin, pour décrire le caractère guerrier et farouche des Godié. Le terme a évolué vers Godié dans l'usage courant.",
+      "originOfExonyms": "Le nom Godié viendrait du mot Gwèdji, surnom donné par les Neyo, un peuple voisin, pour décrire le caractère guerrier et farouche des Godié. Le terme a évolué vers Godié dans l'usage courant.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Godié est universellement utilisé en Côte d'Ivoire et dans la littérature ethnographique pour désigner ce peuple krou du Gbôklè et de la région de Sassandra.",
       "linguisticFamily": "FLG_KROU",
@@ -97,17 +97,20 @@
       {
         "title": "Joshua Project – Godie in Côte d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/11913",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Godié language (god)",
         "url": "https://www.ethnologue.com/language/god/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Rezo Ivoire – Organisation familiale des Godié",
         "url": "https://rezoivoire.net/ivoire/patrimoine/2121/organisation-familiale-des-godie.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Scribd – Origine et culture du peuple Godié",
@@ -117,12 +120,14 @@
       {
         "title": "Facebook Tourisme Côte d'Ivoire – Le peuple Godié",
         "url": "https://www.facebook.com/tourismecotedivoire.ci/posts/5252704381496923/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "government"
       },
       {
         "title": "Minority Rights Group – Krou in Côte d'Ivoire",
         "url": "https://minorityrights.org/communities/krou/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       }
     ]
   }

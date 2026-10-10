@@ -20,7 +20,7 @@
         "Deresa",
         "Geddeo"
       ],
-      "originOfExonyms": "Les exonymes Darasa et Derasa ont été utilisés dans la littérature ethnographique ancienne et par les populations voisines Oromo. Ces appellations sont aujourd'hui moins courantes ; le terme Gedeo est privilégié par la communauté et les autorités éthiopiennes.",
+      "originOfExonyms": "Les anciens travaux sur ce peuple et les Oromo voisins employaient les noms Darasa et Derasa. Ils sont moins courants aujourd'hui. La communauté et les autorités éthiopiennes préfèrent Gedeo.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Gedeo est utilisé officiellement dans les documents d'État, dans la dénomination de la zone administrative Gedeo (État du Sud de l'Éthiopie) et dans les médias nationaux. La zone Gedeo tire son nom de ce peuple."
     },
@@ -81,22 +81,26 @@
       {
         "title": "Gedeo in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/11504",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Gedeo language (DRS) – Ethnologue / SIL International, 2025",
         "url": "https://www.ethnologue.com/language/drs/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "West Guji-Gedeo Conflict Displacement Flash Update – ReliefWeb / OCHA, mai 2018",
         "url": "https://reliefweb.int/report/ethiopia/ethiopia-west-guji-gedeo-conflict-displacement-flash-update-1-9-may-2018",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "ISO 639-3 drs : Gedeo – CEDS / National Center for Education Statistics",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

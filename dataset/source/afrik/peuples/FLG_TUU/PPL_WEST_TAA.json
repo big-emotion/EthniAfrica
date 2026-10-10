@@ -12,11 +12,11 @@
         "West !Xoon",
         "West !Xóõ",
         "Nǀuǁ'en (dialecte de Bleek, aujourd'hui eteint)",
-        "Masarwa (exonyme tswana, pejoratif)",
+        "Masarwa (nom tswana méprisant)",
         "Magon/Magong (terme tswana regional)"
       ],
       "originOfExonyms": "Le terme West !Xoon fut utilise par les linguistes, notamment dans le cadre du projet DoBeS (Documentation of Endangered Languages), pour distinguer ce dialecte occidental du dialecte oriental (East !Xoon) documente par Anthony Traill. Le nom Masarwa est un terme tswana generalement considere pejoratif. L'autonym !Xoon (pl. !Xooŋake) est employe a l'extremite ouest de l'aire Taa, notamment a la reserve d'Aminius en Namibie.",
-      "whyProblematic": "La designation West Taa est une denomination linguistique externe. Les locuteurs se designent par leur propre ethnonyme (!Xoon ou 'N|ohan selon la region). Le terme Bushman, autrefois courant, est aujourd'hui largement rejete comme pejoratif.",
+      "whyProblematic": "West Taa est un nom donné par les chercheurs qui étudient la langue. Les personnes concernées se nomment !Xoon ou 'N|ohan selon la région. Bushman, autrefois courant, est aujourd'hui largement rejeté comme méprisant.",
       "contemporaryUsage": "Le terme West !Xoon est employe par les linguistes. Dans la vie quotidienne, les membres se designent comme !Xoon ou selon leur village. L'afrikaans et le tswana sont aujourd'hui les langues principales de communication avec l'exterieur.",
       "linguisticFamily": "FLG_TUU",
       "ethnoLinguisticGroup": "Tuu (Taa occidental)",
@@ -95,27 +95,32 @@
       {
         "title": "Ethnologue (SIL International) — Taa language (nmn)",
         "url": "https://www.ethnologue.com/language/nmn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — West !Xoon",
         "url": "https://glottolog.org/resource/languoid/id/xooo1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Boden, Gertrud — Cultural, Lexical and Conceptual Change in the Southern Kalahari: !Xoon in Namibia between the 1920s and 1970s. Journal of Namibian Studies, 2013",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Boden, Gertrud — Khoisan Kinship Terminologies in Diachronic Perspective. Kalahari Basin Area Project, University of Edinburgh",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Traill, Anthony — Phonetic and Phonological Studies of !Xóõ Bushman. Hamburg: Helmut Buske, 1985",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "DoBeS Project — Documentation of West !Xoon (Taa). 2000s fieldwork in Namibia and Botswana",
@@ -125,12 +130,14 @@
       {
         "title": "UNESCO — Tsodilo Hills World Heritage Site",
         "url": "https://whc.unesco.org/en/list/1021/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "IWGIA — Indigenous Peoples in Africa: Botswana and Namibia",
         "url": "https://www.iwgia.org/en/africa.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       }
     ]
   }

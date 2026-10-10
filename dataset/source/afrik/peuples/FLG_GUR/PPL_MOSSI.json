@@ -115,40 +115,252 @@
       {
         "title": "Ethnologue - Moore (mos)",
         "url": "https://www.ethnologue.com/language/mos/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Mossi in Burkina Faso",
         "url": "https://joshuaproject.net/people_groups/13802/uv",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "EBSCO Research Starters - Mossi (people)",
         "url": "https://www.ebsco.com/research-starters/language-and-linguistics/mossi-people",
         "tier": "referenced",
+        "source_kind": "encyclopedia",
         "notes": "Notice encyclopédique éditorialisée, avec bibliographie. Lue intégralement le 16 septembre 2026 : le récit fondateur de Yennenga, du roi Nedega et du chasseur Rialle, les cinq royaumes mossi, la datation de la formation des royaumes à la fin du 15e siècle, les classes nakomse et nyonyose, la conquête française de 1897, et la migration forcée vers la Côte d'Ivoire et le Ghana sous l'administration coloniale."
       },
       {
         "title": "Glottolog - Mossi",
         "url": "https://glottolog.org/resource/languoid/id/moss1236",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook - Burkina Faso",
         "url": "https://www.cia.gov/the-world-factbook/countries/burkina-faso/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Alain Maharaux, « La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux », colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995",
         "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Communication de colloque, archivée par l'Institut de recherche pour le développement. Lue le 16 septembre 2026 : la conquête des pays mossi en 1896 y est décrite comme une opération militaire."
       },
       {
         "title": "« Septembre 1896 – septembre 2016, il y a 110 ans la bataille et la prise de Ouagadougou », leFaso.net",
         "url": "https://lefaso.net/spip.php?article73244",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Presse burkinabè. Lue le 16 septembre 2026 : le refus opposé par le Mogho Naaba Wobgo, la marche de la colonne Voulet, la prise de Ouagadougou le 1er septembre 1896, le départ du souverain et le traité obtenu en janvier 1897. L'article date par ailleurs la conférence de Berlin de 1888, ce qui est inexact."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mossi désigne le peuple du plateau central du Burkina Faso, qui se nomme lui-même Moose, Moaga au singulier ; son pays est le Mogho et sa langue le moore. Un nom Mosi figure dans les chroniques de Tombouctou dès le XIIIe siècle, mais les historiens ne savent pas s'il désignait le même peuple. Les sources ne s'accordent pas toujours sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Moose",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mos",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne le peuple : Moaga au singulier, Moose au pluriel.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Moose est le pluriel de moaga ; le pays se nomme Mogho et la langue moore, rappellent Michel Izard et Joseph Ki-Zerbo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 381, note 23",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mossi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté par les chroniques de Tombouctou ; on ne sait pas s'il désignait déjà ce peuple.",
+        "periodLabel": "Écrit depuis le XVIIe siècle pour des faits du XIIIe ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mossi désigne aujourd'hui le peuple des royaumes du bassin de la Volta blanche. Au sens strict, il désignait les détenteurs du pouvoir dans ces royaumes, qui se disaient tous descendants de Naaba Wedraogo, selon Michel Izard et Joseph Ki-Zerbo. Son origine reste discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 387",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mossi, au singulier moaga, voudrait dire « mélangé, métissé », selon Dim Delobsom, que citent Michel Izard et Joseph Ki-Zerbo. Delobsom ajoutait que ce jugement venait des nobles et visait les gens du commun.",
+            "hypothesisGroup": "origine du nom Mossi",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 396 et note 57",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume. Les auteurs citent A. Dim Delobsom, « Les Nionissés de Goupana », Cahiers d'outre-mer, 1929 ; nous n'avons pas lu ce texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1925,
+              "label": "1912-1925"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mosi des chroniques de Tombouctou a été rapproché de celui des Mossi de la Volta blanche par Maurice Delafosse, Leo Frobenius et Louis Tauxier, qui en ont fait un seul peuple. Michel Izard juge que ce rapprochement, fondé presque seulement sur la ressemblance des noms, n'a jamais été vérifié.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "Michel Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 243",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "1888"
+            },
+            "era": "polity",
+            "statement": "Le nom Mossi est employé par l'explorateur Louis-Gustave Binger lors de son passage en 1888 : il décrit « le Mossi ou pays de Mor’o », et dit qu'on distingue ses habitants sous les noms de Mor’o et de Moss’i.",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 479 et p. 492",
+                "notes": "Paris, Hachette, 1892, tome 1, récit du voyage de 1887 à 1889 ; lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. p. 479 : « Le Mossi ou pays de Mor’o » ; p. 492 : « on distingue ses sujets sous le nom de Mor’o et Moss’i »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1488,
+              "to": 1488,
+              "label": "1488, rapporté vers 1552-1553"
+            },
+            "era": "polity",
+            "statement": "Le nom Mossi apparaît sous la forme « Moses » chez le chroniqueur portugais João de Barros, vers 1552-1553. Il rapporte qu'en 1488 le prince wolof Bemoy décrivit au roi du Portugal un pays des « Moses » qui s'étendait de Tombouctou vers l'est, selon Michel Izard.",
+            "actors": [
+              {
+                "name": "Bemoy",
+                "role": "prince wolof reçu à la cour du roi du Portugal en 1488"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "Michel Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 241-242",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1337,
+              "to": 1337,
+              "label": "Vers 1337"
+            },
+            "era": "polity",
+            "statement": "Le nom Mosi désigne, dans le Ta'rīkh al-Sūdān, le peuple dont le « sultan » prend et saccage Tombouctou, un raid que les historiens placent vers 1337, selon Michel Izard.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "Michel Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 238",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1250,
+              "to": 1250,
+              "label": "Milieu du XIIIe siècle, selon le Ta'rīkh al-Fattāsh"
+            },
+            "era": "polity",
+            "statement": "Le nom Mossi apparaît, sous la forme « Mosi », dans les chroniques de Tombouctou : le Ta'rīkh al-Fattāsh rapporte des incursions des Mosi contre le royaume de Gao vers le milieu du XIIIe siècle et parle d'un « Mosi koy », un chef ou roi des Mosi, selon Michel Izard. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources ne disent pas s'il s'agit du même peuple que les Mossi d'aujourd'hui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "Michel Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 237-238",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

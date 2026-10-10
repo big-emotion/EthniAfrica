@@ -19,7 +19,7 @@
         "Kegueme",
         "Seereer"
       ],
-      "originOfExonyms": "L'exonyme Sérère (ou Serer) est utilisé en français depuis la période coloniale pour désigner ce groupe. Le terme endonymique est Seereer. Les variantes orthographiques (Sereer, Serere, Serre) sont des transcriptions différentes d'une même réalité ethnolinguistique. Chaque sous-groupe (Seereer-Sine, Ndut, Noon, Saafi, Palor, Laalaa) porte en outre son propre nom.",
+      "originOfExonyms": "Sérère, ou Serer, est utilisé en français depuis la période coloniale. Le peuple se nomme Seereer. Sereer, Serere et Serre sont d'autres manières d'écrire ce nom. Les différents groupes portent aussi leurs propres noms : Seereer-Sine, Ndut, Noon, Saafi, Palor et Laalaa.",
       "whyProblematic": "Le terme Sérère recouvre une réalité linguistique et culturelle complexe : les différents sous-groupes serer parlent soit le sérère proprement dit (serer-sine), soit des langues cangin apparentées (Noon, Ndut, Saafi, Palor, Laalaa) qui ont une faible intelligibilité mutuelle avec le sérère-sine. La classification Niger-Congo est débattue, certains chercheurs plaçant les langues sérère-cangin dans un rameau autonome atlantique.",
       "contemporaryUsage": "Le terme Sérère est couramment utilisé au Sénégal et en Gambie pour désigner cet ensemble ethno-linguistique. Les Sérère constituent le troisième groupe ethnique du Sénégal. Leur identité ethno-religieuse reste fortement marquée, malgré la conversion majoritaire à l'islam au cours du XXe siècle.",
       "linguisticFamily": "FLG_ATLANTIQUE",
@@ -137,17 +137,20 @@
       {
         "title": "Gambia Bureau of Statistics — 2024 Population and Housing Census",
         "url": "https://gambia.unfpa.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "SIL Ethnologue — Serer-Sine language (srr)",
         "url": "https://www.ethnologue.com/language/srr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Galvan, Dennis Charles. The State Must Be Our Master of Fire: How Peasants Craft Culturally Sustainable Development in Senegal. University of California Press, 2004",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Gravrand, Henry. La civilisation sereer. Dakar : Nouvelles Editions Africaines, 1983",
@@ -157,27 +160,246 @@
       {
         "title": "Joshua Project, Serer-Sine in Gambia",
         "url": "https://joshuaproject.net/people_groups/14866/GA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes, Serer people",
         "url": "https://www.101lasttribes.com/tribes/serer.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Britannica, Serer",
         "url": "https://www.britannica.com/topic/Serer",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "US Public Intelligence, Senegal Cultural Field Guide (Ethnic Groups)",
         "url": "https://info.publicintelligence.net/MCIA-SenegalCultureGuide.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "government"
       },
       {
         "title": "Qiraat Africa, The Serer people of West Africa (2026)",
         "url": "https://qiraatafrican.com/en/19893/the-serer-people-of-west-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sérère désigne un peuple du Sénégal et de la Gambie, qui se nomme lui-même Seereer. Les deux noms sont deux écritures d'un même mot, attesté depuis le XVe siècle. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Seereer",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "srr",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; attesté depuis le XVe siècle, son origine reste discutée.",
+        "periodLabel": "Écrit dès le XVe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Seereer est celui que ce peuple se donne, et l'historien Issa Laye Thiaw l'écrit ainsi. Il désigne le peuple et sa langue. Son origine est discutée : Issa Laye Thiaw juge probable qu'il soit plus ancien que l'islam en Afrique de l'Ouest.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La religiosité des Seereer, avant et pendant leur islamisation",
+                "author": "Issa Laye Thiaw",
+                "year": 1991,
+                "url": "http://web.archive.org/web/20180612141100/http://ethiopiques.refer.sn/spip.php?article1248",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Éthiopiques, n° 54, 2e semestre 1991, lu dans la version en ligne de la revue, conservée par Internet Archive. La version en ligne n'a pas de pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1444,
+              "to": 1455,
+              "label": "Voyage daté de 1445 ou de 1454 selon les auteurs"
+            },
+            "era": "polity",
+            "statement": "Le nom Seereer a une forme proche, Serreres, dans le récit du navigateur vénitien Alvise Cadamosto, tel que le donne sa traduction portugaise. Il y nomme deux peuples de la côte, près du Cap-Vert, les Barbacinos et les Serreres, qui n'obéissent pas au roi du Sénégal. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait déjà là avant elle.",
+            "formAsWritten": "Serreres",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Navegações de Luiz de Cadamosto, a que se ajuntou a viagem de Pedro de Cintra, capitão portuguez",
+                "author": "Alvise Cadamosto",
+                "year": null,
+                "url": "https://archive.org/details/bub_gb_R4xPAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chap. XXXV, p. 45",
+                "notes": "Traduction portugaise du récit italien, publiée à Lisbonne au XIXe siècle et lue sur la numérisation d'Internet Archive. L'année de l'édition n'est pas indiquée sur la numérisation. La préface hésite entre 1445 et 1454 pour le départ de Cadamosto."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Seereer viendrait du mot wolof reer, « être perdu, égaré », c'est-à-dire celui qui a refusé l'islam, selon une explication que rapporte Issa Laye Thiaw. Il la range parmi les étymologies hasardeuses que des voisins musulmans ont prêtées aux Seereer.",
+            "hypothesisGroup": "origine du nom Seereer",
+            "sources": [
+              {
+                "title": "La religiosité des Seereer, avant et pendant leur islamisation",
+                "author": "Issa Laye Thiaw",
+                "year": 1991,
+                "url": "http://web.archive.org/web/20180612141100/http://ethiopiques.refer.sn/spip.php?article1248",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Éthiopiques, n° 54, 2e semestre 1991, lu dans la version en ligne de la revue, conservée par Internet Archive. La version en ligne n'a pas de pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Seereer viendrait de l'expression wolof seet reer, « chercher une chose cachée ou perdue », selon un récit attribué à un marabout que rapporte Issa Laye Thiaw. Il juge cette explication inventée pour rabaisser la religion seereer.",
+            "hypothesisGroup": "origine du nom Seereer",
+            "sources": [
+              {
+                "title": "La religiosité des Seereer, avant et pendant leur islamisation",
+                "author": "Issa Laye Thiaw",
+                "year": 1991,
+                "url": "http://web.archive.org/web/20180612141100/http://ethiopiques.refer.sn/spip.php?article1248",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Éthiopiques, n° 54, 2e semestre 1991, lu dans la version en ligne de la revue, conservée par Internet Archive. La version en ligne n'a pas de pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Seereer viendrait du mot arabe sahir, « magicien », par allusion à la religion des Seereer, selon une version que rapporte Issa Laye Thiaw, qui la juge malveillante.",
+            "hypothesisGroup": "origine du nom Seereer",
+            "sources": [
+              {
+                "title": "La religiosité des Seereer, avant et pendant leur islamisation",
+                "author": "Issa Laye Thiaw",
+                "year": 1991,
+                "url": "http://web.archive.org/web/20180612141100/http://ethiopiques.refer.sn/spip.php?article1248",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Éthiopiques, n° 54, 2e semestre 1991, lu dans la version en ligne de la revue, conservée par Internet Archive. La version en ligne n'a pas de pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Seereer viendrait du pulaar ceer ti ou seer de, « se séparer, rompre » : les Peuls l'auraient dit aux Seereer qui refusaient l'islam, selon une légende racontée par des Haalpulaar'en, que rapporte Issa Laye Thiaw.",
+            "hypothesisGroup": "origine du nom Seereer",
+            "sources": [
+              {
+                "title": "La religiosité des Seereer, avant et pendant leur islamisation",
+                "author": "Issa Laye Thiaw",
+                "year": 1991,
+                "url": "http://web.archive.org/web/20180612141100/http://ethiopiques.refer.sn/spip.php?article1248",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Éthiopiques, n° 54, 2e semestre 1991, lu dans la version en ligne de la revue, conservée par Internet Archive. La version en ligne n'a pas de pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Seereer voudrait dire « celui qui détermine des temples » en égyptien ancien, selon Cheikh Anta Diop, que cite Issa Laye Thiaw. Nous n'avons pas lu le texte de Cheikh Anta Diop.",
+            "hypothesisGroup": "origine du nom Seereer",
+            "sources": [
+              {
+                "title": "La religiosité des Seereer, avant et pendant leur islamisation",
+                "author": "Issa Laye Thiaw",
+                "year": 1991,
+                "url": "http://web.archive.org/web/20180612141100/http://ethiopiques.refer.sn/spip.php?article1248",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Éthiopiques, n° 54, 2e semestre 1991, lu dans la version en ligne de la revue, conservée par Internet Archive. La version en ligne n'a pas de pagination."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sérère",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "L'écriture française du nom Seereer.",
+        "periodLabel": "Écrit depuis le XIXe siècle ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sérère est l'écriture française du nom Seereer. Issa Laye Thiaw la cite chez Cheikh Anta Diop, tout en écrivant lui-même Seereer.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La religiosité des Seereer, avant et pendant leur islamisation",
+                "author": "Issa Laye Thiaw",
+                "year": 1991,
+                "url": "http://web.archive.org/web/20180612141100/http://ethiopiques.refer.sn/spip.php?article1248",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Éthiopiques, n° 54, 2e semestre 1991, lu dans la version en ligne de la revue, conservée par Internet Archive. La version en ligne n'a pas de pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1853,
+              "label": "1853"
+            },
+            "statement": "Le nom Sérère est écrit « sérères » par l'abbé David Boilat, dans la légende d'un dessin de deux femmes de ce peuple.",
+            "formAsWritten": "sérères",
+            "sources": [
+              {
+                "title": "Esquisses sénégalaises, atlas : explication des planches",
+                "author": "David Boilat",
+                "year": 1853,
+                "url": "https://archive.org/details/esquissessngala00boilgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 8, planche III",
+                "notes": "Lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

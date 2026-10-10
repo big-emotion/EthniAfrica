@@ -198,7 +198,11 @@ stop disagreeing.
 
 ## Phase 7 — The reveal earns the session
 
-**Test first.** The reveal renders the source tier through `ConfidenceChip`
+> **2026-10-08:** the reader now sees the source's type, never its tier
+> (`../editorial/doctrine.md` §1.1); the reveal's tier rendering below is to be
+> replaced by the source type.
+
+**Test first.** The reveal renders the source tier through `SourceReviewChip`
 and links to the subject's fiche.
 
 **Then.** Carry the source tier on `GameReveal` and render it. A round resting

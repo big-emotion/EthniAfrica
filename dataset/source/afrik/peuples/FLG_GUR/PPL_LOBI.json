@@ -98,32 +98,38 @@
       {
         "title": "Britannica — Lobi",
         "url": "https://www.britannica.com/topic/Lobi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Lobi in all countries",
         "url": "https://joshuaproject.net/people_groups/13082",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue — Lobi Language (LOB)",
         "url": "https://www.ethnologue.com/language/lob/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Lobi",
         "url": "https://glottolog.org/resource/languoid/id/lobi1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Encyclopedia.com — Lobi-Dagarti Peoples",
         "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/lobi-dagarti-peoples",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "101 Last Tribes — Lobi people",
         "url": "https://www.101lasttribes.com/tribes/lobi.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

@@ -8,6 +8,7 @@ import type {
   QuizTemplateId,
 } from "@/types/quiz";
 import type { TranslationLocale } from "@/lib/i18n/translationLocale";
+import { quizCopy } from "@/lib/i18n/copy/quiz";
 import {
   assembleOptions,
   correctOptionIndex,
@@ -56,8 +57,7 @@ export const QUESTION_TEMPLATE_COPY: Record<
         `Le peuple ${name} appartient à la famille linguistique ${answer}.`,
     },
     T2: {
-      prompt: (name) =>
-        `Quel est le nom que se donne (autonyme) le peuple appelé ${name} ?`,
+      prompt: quizCopy.fr.autonymQuestion,
       explanation: (name, answer) =>
         `Le peuple ${name} se nomme lui-même « ${answer} ».`,
     },

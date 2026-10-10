@@ -153,12 +153,12 @@ export const searchAnswerCopy: Record<Language, SearchAnswerCopy> = {
       debatedIntroTwo: (title) =>
         `L'origine du nom ${title} n'est pas établie. Deux explications circulent :`,
       debatedIntroMany:
-        "Plusieurs récits expliquent ce nom ; aucun ne s'impose.",
+        "Plusieurs récits proposent une origine pour ce nom. Les sources consultées ne permettent pas de choisir entre eux.",
       debatedFootnote: "Les sources ne les départagent pas.",
       attribution: {
         oral: "Récit transmis de bouche à oreille",
         written: "Source écrite",
-        linguistic: "Lecture des langues",
+        linguistic: "Étude des langues",
         synthesis: "Notre synthèse",
       },
     },
@@ -168,7 +168,7 @@ export const searchAnswerCopy: Record<Language, SearchAnswerCopy> = {
         country: "Ses noms dans le temps",
         language: "Ses noms",
         languageFamily: "Ses noms",
-        patronyme: "Ses graphies",
+        patronyme: "Ses différentes orthographes",
         word: "Son chemin jusqu'à nous",
       },
       yourSearch: "votre recherche",
@@ -187,8 +187,9 @@ export const searchAnswerCopy: Record<Language, SearchAnswerCopy> = {
       moreCountries: (count) =>
         `+ ${count} ${count === 1 ? "autre pays" : "autres pays"}`,
       estimateSpeakers:
-        "Estimations du nombre de locuteurs, à lire comme des ordres de grandeur.",
-      estimatePopulation: "Estimations, à lire comme des ordres de grandeur.",
+        "Ces chiffres donnent une idée du nombre de personnes qui parlent cette langue.",
+      estimatePopulation:
+        "Ces chiffres sont des estimations et ne donnent pas un nombre exact de personnes.",
       peoplePresented: (count) =>
         `${count} ${count === 1 ? "peuple présenté" : "peuples présentés"}`,
       unsplit: (percent, peopleNames) =>
@@ -221,12 +222,12 @@ export const searchAnswerCopy: Record<Language, SearchAnswerCopy> = {
     invitation: {
       people: {
         title: "Vous connaissez une autre explication ?",
-        body: "Un récit transmis dans votre famille, une source écrite : nous la lirons.",
+        body: "Vous connaissez un récit transmis dans votre famille ou une source écrite ? Vous pouvez nous les proposer.",
         action: "Proposer une source",
       },
       country: {
         title: "Vous connaissez une autre explication ?",
-        body: "Un récit transmis, une source écrite : nous la lirons.",
+        body: "Vous connaissez un récit ou une source écrite ? Vous pouvez nous les proposer.",
         action: "Proposer une source",
       },
       language: {
@@ -246,7 +247,7 @@ export const searchAnswerCopy: Record<Language, SearchAnswerCopy> = {
       },
       word: {
         title: "Vous connaissez une autre source ?",
-        body: "Une lecture, un document : nous la lirons.",
+        body: "Vous avez lu un texte sur ce nom ? Vous pouvez nous le proposer.",
         action: "Proposer une source",
       },
     },

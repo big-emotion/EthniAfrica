@@ -17,7 +17,7 @@ import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
  * The atlas charter §8 contract, held here rather than trusted.
  *
  * Every assertion below cites the failure it prevents. The measured one that
- * started it: `ConfidenceChip` was rendered by four components on the peoples
+ * started it: `SourceReviewChip` was rendered by four components on the peoples
  * surface and one on the patronymes surface, and by zero on countries, zero on
  * language families and zero on languages — the three surfaces a search engine
  * lands on first, on an atlas whose brand charter asserts that every claim
@@ -47,7 +47,7 @@ const settled = census();
 const weak = census({ unverified: 4, needs_review: 2 });
 
 function banner(): HTMLElement {
-  return screen.getByRole("region", { name: /provenance/i });
+  return screen.getByRole("region", { name: /sources des informations/i });
 }
 
 const GOLD_GROUND = "--afh-color-gold-bg";
@@ -84,21 +84,19 @@ describe("the provenance banner charter (atlas charter §8)", () => {
     expect(marks ?? []).toEqual(["→"]);
   });
 
-  // Salience is a difference. A banner that shouts on every fiche is
-  // furniture by the second visit, which is why the quiet state is the norm
-  // the loud one borrows its weight from.
-  // @req REQ-019
-  it("keeps the gold ground for a fiche that holds a weak standing, and only then", () => {
+  // Doctrine §1.1: a fiche holding unverified assertions looks like any other
+  // to the reader — the gold ground was a tier signal by another name.
+  // @req REQ-092
+  it("wears the same quiet ground whatever standings the fiche holds", () => {
     const { unmount } = render(
       <ProvenanceBanner language="fr" census={settled} />
     );
-    expect(banner().className).not.toContain(GOLD_GROUND);
-    expect(banner()).toHaveAttribute("data-provenance-standing", "settled");
+    const quiet = banner().className;
     unmount();
 
     render(<ProvenanceBanner language="fr" census={weak} />);
-    expect(banner().className).toContain(GOLD_GROUND);
-    expect(banner()).toHaveAttribute("data-provenance-standing", "weak");
+    expect(banner().className).toBe(quiet);
+    expect(banner().className).not.toContain(GOLD_GROUND);
   });
 
   // Source apparatus takes `--afh-radius-0` (actions charter §6), and it is
@@ -189,7 +187,7 @@ describe("the provenance banner charter (atlas charter §8)", () => {
     for (const surface of surfaces) {
       const { container, unmount } = render(surface);
       expect(
-        container.querySelector("[data-provenance-standing]"),
+        container.querySelector(".afh-provenance-banner"),
         String(surface.key)
       ).not.toBeNull();
       unmount();

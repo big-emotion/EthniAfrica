@@ -9,7 +9,7 @@
       "mainName": "Zenata",
       "selfAppellation": "Iznaten",
       "exonyms": ["Zanata", "Zenete", "Zenata Berbers", "Zineta", "Genete"],
-      "originOfExonyms": "Le terme Zenata (arabe : زناتة, Zanata) est d'origine arabe medievale, utilise par les geographes et historiens arabes comme Ibn Khaldun pour designer cette confederation berbere. L'endonyme berbere est Iznaten (en tifinagh : ⵉⵣⵏⴰⵜⵏ). Le terme Zenete a donne en espagnol jinete (cavalier), en raison du role militaire des cavaliers zenata dans les armees de l'emirat de Grenade.",
+      "originOfExonyms": "Les géographes et historiens arabes du Moyen Âge, comme Ibn Khaldun, employaient Zenata (زناتة, Zanata) pour désigner cette confédération berbère. Ses membres se nomment Iznaten en berbère (ⵉⵣⵏⴰⵜⵏ en tifinagh). Le mot espagnol jinete, qui signifie cavalier, viendrait de Zenete. Ce rapprochement s'expliquerait par le rôle des cavaliers zenata dans les armées de l'émirat de Grenade.",
       "whyProblematic": "Le terme Zenata est un macro-groupe historique dont les limites sont contestees par les historiens. L'historien Yves Modéran souligne que le terme est relativement tardif et sans racines claires dans l'Antiquite : les mentions de factions zenata dans les sources medievales sont incertaines quant a leur histoire reelle ou a une simple affiliation nominale. La notion de Zenata comme groupe unifie est surtout une construction des sources arabes medievales.",
       "contemporaryUsage": "Le terme Zenata est aujourd'hui principalement utilise dans un sens historique et linguistique. Dans la linguistique berbere, il designe un sous-groupe dialectal (les langues zenati) incluant le rifain du Maroc et le chaoui d'Algerie. Les Berberes du Rif marocain sont consideres comme les principaux descendants des Zenata actuels. Le terme n'est pas couramment utilise comme identifiant ethnique contemporain.",
       "linguisticFamily": "FLG_BERBERE",
@@ -112,27 +112,288 @@
       {
         "title": "Modéran, Yves. Les Maures et l'Afrique romaine (4e-7e siecle). Rome: Ecole francaise de Rome, 2003",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ilahiane, Hsain. Historical Dictionary of the Berbers (Imazighen). Lanham: Scarecrow Press, 2006",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Encyclopaedie Berbere — articles sur Zenata, Marinides, Zayyanides",
         "url": "https://journals.openedition.org/encyclopedieberbere/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue — Tarifit (rif)",
         "url": "https://www.ethnologue.com/language/rif/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Chaoui (shy)",
         "url": "https://www.ethnologue.com/language/shy/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Zenata désigne une grande famille de tribus berbères du Maghreb, que les auteurs arabes du Moyen Âge décrivent de la Tripolitaine au Maroc. D'autres noms existent : Djanaten, la forme berbère que rapporte Ibn Khaldoun, et Zénètes en français. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Djanaten",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme berbère du nom selon Ibn Khaldoun : Djana, nom d'un ancêtre, avec les marques berbères t et n.",
+        "periodLabel": "Rapporté au XIVe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1332,
+              "to": 1406,
+              "label": "XIVe siècle, chez Ibn Khaldoun"
+            },
+            "era": "polity",
+            "statement": "Le nom Djanaten est la forme berbère du nom, selon l'historien Ibn Khaldoun : les Berbères ajoutent un t au nom de l'ancêtre Djana pour en faire un nom de groupe, Djanat, puis un n pour le pluriel. Les Arabes, qui ne savaient pas prononcer le son initial, en auraient fait Zanat, puis Zanata.",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 190",
+                "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation. Ibn Khaldoun a vécu de 1332 à 1406, selon l'Histoire générale de l'Afrique."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zenata",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les auteurs arabes donnent à cette famille de tribus berbères, écrit dès le Xe siècle.",
+        "usedIn": ["ara"],
+        "periodLabel": "Écrit dès le Xe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les historiens"
+            },
+            "statement": "Le nom Zenata désigne une grande famille de tribus berbères. Au moment de la conquête arabe, elle était la plus forte des confédérations dites butr, et son nom se serait étendu à tous leurs groupes nomades, selon Hussain Monès, qui lit Ibn Khaldoun. Il rappelle que ces généalogies ont été dressées tard, pas avant le Xe ou le XIe siècle. L'origine du nom est discutée : les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 9 : La conquête de l'Afrique du Nord et la résistance berbère",
+                "author": "Hussain Monès",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 254",
+                "notes": "Édition française, lue dans le PDF diffusé par l'UNESCO."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Zenata sert encore à classer les tribus du Rif : elles appartiennent aux familles ghomara, sanhaja et zenata, plus ou moins mêlées, selon Mimoun Aziza.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Rif : Géographie – Histoire – Société, Encyclopédie berbère, 41",
+                "author": "Mimoun Aziza",
+                "year": 2017,
+                "url": "https://journals.openedition.org/encyclopedieberbere/4509",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 23",
+                "notes": "Peeters, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "colonial",
+            "statement": "Le nom Zenata est encore employé dans la province de Constantine sous la forme Zenatïn, « les Zenatiens », pour désigner les Berbères, à côté du mot arabe chaouïa, selon William Mac Guckin de Slane, traducteur d'Ibn Khaldoun.",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome IV",
+                "author": "William Mac Guckin de Slane, traducteur d'Ibn Khaldoun",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_LwEoAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 495",
+                "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation. Le passage est une note du traducteur, en appendice, et non un texte d'Ibn Khaldoun."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1332,
+              "to": 1406,
+              "label": "XIVe siècle, chez Ibn Khaldoun"
+            },
+            "era": "polity",
+            "statement": "Le nom Zenata désigne chez Ibn Khaldoun un peuple berbère qui vit sous la tente, élève des chameaux et parle une langue à part. On le trouve de Ghadamès au Maroc, et il est si nombreux au Maghreb central que ce pays porte le nom de territoire des Zenata.",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 179-180",
+                "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation. Ibn Khaldoun a vécu de 1332 à 1406, selon l'Histoire générale de l'Afrique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 900,
+              "to": 999,
+              "label": "Xe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Zenata apparaît chez le géographe Ibn Hawqal, au Xe siècle, qui range un peuple berbère du Fezzan, les Adjar Fezzan, parmi les tribus zanata, selon Tadeusz Lewicki. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il réunit vivaient au Maghreb bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 11 : Le rôle du Sahara et des Sahariens dans les relations entre le Nord et le Sud",
+                "author": "Tadeusz Lewicki",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 314",
+                "notes": "Édition française, lue dans le PDF diffusé par l'UNESCO."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1332,
+              "to": 1406,
+              "label": "XIVe siècle, chez Ibn Khaldoun"
+            },
+            "era": "polity",
+            "statement": "Le nom Zenata viendrait de Chana, ou Djana, fils de Yahya, ancêtre de ce peuple, selon les généalogistes berbères que suit Ibn Khaldoun, d'après Ibn Hazm. Ibn Khaldoun tient cette généalogie pour la seule vraie.",
+            "hypothesisGroup": "origine du nom Zenata",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 180 et 190",
+                "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation. Ibn Khaldoun a vécu de 1332 à 1406, selon l'Histoire générale de l'Afrique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1332,
+              "to": 1406,
+              "label": "XIVe siècle, chez Ibn Khaldoun"
+            },
+            "era": "polity",
+            "statement": "Le nom Zenata serait celui de Chana, fils de Yahya, fils de Daris, fils de Djalout, c'est-à-dire Goliath, selon une généalogie d'Ibn Qutayba que rapporte Ibn Khaldoun. Ibn Khaldoun la juge embrouillée et fausse.",
+            "hypothesisGroup": "origine du nom Zenata",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 181-183",
+                "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation. Ibn Khaldoun a vécu de 1332 à 1406, selon l'Histoire générale de l'Afrique."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zénètes",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "La forme française du nom, employée surtout pour des parlers berbères.",
+        "usedIn": ["fra"],
+        "periodLabel": "Fin du XIXe siècle ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom zénète sert aujourd'hui aux linguistes pour désigner des traits de langue que l'on trouve dans l'est du Rif, dans l'Aurès, à Djerba et à Zouara. Mena Lafkioui note que cette notion pose problème et tend à disparaître chez les locuteurs.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Rif : la langue (rifain / tarifit), Encyclopédie berbère, 41",
+                "author": "Mena Lafkioui",
+                "year": 2017,
+                "url": "https://journals.openedition.org/encyclopedieberbere/4536",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1",
+                "notes": "Peeters, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1886,
+              "to": 1886,
+              "label": "1886"
+            },
+            "era": "colonial",
+            "statement": "Le nom zénète sert, chez des auteurs du début de la période coloniale comme Émile Masqueray, en 1886, à désigner les parlers de l'Aurès oriental, selon Salem Chaker. Il juge cette division intuitive et encore à démontrer.",
+            "sources": [
+              {
+                "title": "Aurès (linguistique), dans l'article « Aurès », Encyclopédie berbère, 8",
+                "author": "Salem Chaker",
+                "year": 1990,
+                "url": "https://journals.openedition.org/encyclopedieberbere/258",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 307",
+                "notes": "Édisud, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

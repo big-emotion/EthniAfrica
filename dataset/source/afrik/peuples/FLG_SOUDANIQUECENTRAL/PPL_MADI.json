@@ -96,27 +96,32 @@
       {
         "title": "Ethnologue (SIL International) — Ma'di (mhi)",
         "url": "https://www.ethnologue.com/language/mhi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "PeopleGroups.org — Madi of Uganda",
         "url": "https://peoplegroups.org/people_groups/pg015114/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Ma'adi in South Sudan",
         "url": "https://joshuaproject.net/people_groups/13196/OD",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Uganda Bureau of Statistics — Madi Sub Region Census 2024 Report",
         "url": "https://www.ubos.org/wp-content/uploads/2025/06/Madi-Sub-Region-Census-2024-Report.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "CIA World Factbook — Uganda, South Sudan",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       }
     ]
   }

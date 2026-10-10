@@ -42,8 +42,8 @@ jobs:
     # database is the only progress signal the step gives — it writes nothing to
     # stdout until it returns — and it shows patronymes finishing ~15 minutes in,
     # with the remaining half hour spent in loadPeopleAppellations,
-    # loadNameRecords and loadRelations. `name_records` in recette still carries
-    # a timestamp from a run that never reached it.
+    # loadNameRecords and loadRelations. The first two are retired (ETNI-2021,
+    # ETNI-2023): the people upsert now writes the name index itself.
     #
     # 90 minutes is twice the longest measured run, not a measured figure itself:
     # nothing has yet observed this step finish. The stages after patronymes are
@@ -96,9 +96,27 @@ jobs:
       # reports success — the same silent-green failure this workflow exists to
       # close, one layer down. migrate-recette.yml fires on the same push, so a
       # merge carrying both a migration and a fiche runs the two concurrently;
-      # this step makes the ordering explicit instead of a race.
+      # this step makes the ordering explicit instead of a race. A migration that
+      # is only *pending* is waited for (migrate-recette.yml is applying it on the
+      # same push): failing at once turned every merge carrying a migration red
+      # and needed a manual re-run (#1600, #1607, #1608). Any other disagreement —
+      # orphaned or drifted migrations — still fails immediately.
       - name: Refuse to load ahead of a pending migration
-        run: npm run check:migration-state
+        run: |
+          for attempt in $(seq 1 20); do
+            if output=$(npm run -s check:migration-state 2>&1); then
+              echo "$output"
+              exit 0
+            fi
+            echo "$output"
+            if ! grep -q "PENDING" <<<"$output"; then
+              exit 1
+            fi
+            echo "A migration is still pending (attempt $attempt/20); waiting 30 s for migrate-recette.yml."
+            sleep 30
+          done
+          echo "A migration is still pending after 10 minutes: the database is behind the code. Apply it, then re-run this sync."
+          exit 1
 
       # `--conditions=react-server` is load-bearing rather than stylistic. The
       # loader reaches src/lib/supabase/admin.ts, which imports `server-only`;

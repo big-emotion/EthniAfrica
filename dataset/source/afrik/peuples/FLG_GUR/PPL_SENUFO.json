@@ -9,7 +9,7 @@
       "mainName": "Senufo",
       "selfAppellation": "Senufo / Syénfo / Syénambélé",
       "exonyms": ["Senoufo", "Siena", "Sienambele", "Syen"],
-      "originOfExonyms": "Le terme Senufo est la forme française et internationale la plus repandue (Senoufo en orthographe française). L'endonyme Syénambélé signifie les gens du nord ou les gens de Syen. Korhogo, ville principale du nord de la Cote d'Ivoire, est historiquement le centre culturel et commercial du monde Senufo.",
+      "originOfExonyms": "Senufo est la forme la plus répandue à l'international ; en français, on écrit aussi Senoufo. Les personnes concernées se nomment Syénambélé, qui signifierait les gens du nord ou les gens de Syen. Korhogo, principale ville du nord de la Côte d'Ivoire, est historiquement leur centre culturel et commercial.",
       "whyProblematic": "Le nom Sénoufo apparaît d'abord dans des publications françaises de la fin du XIXe siècle, chez Tautain en 1887 puis chez Binger en 1892, et s'impose ensuite dans la littérature savante et sur le marché de l'art. La recherche récente réexamine cette désignation et la manière dont elle a été construite. Les intéressés se nomment Syénambélé, et se désignent le plus souvent par leur sous-groupe : Cebaara, Supyire, Djimini.",
       "contemporaryUsage": "Senufo et Senoufo sont tous deux couramment employes en anglais et en français. Les locuteurs se designent selon leur sous-groupe (Cebaara, Supyire, Djimini, etc.). L'identite Senufo est federee autour des institutions du Poro (societe secrete masculine) et du Sandogo (societe féminine).",
       "linguisticFamily": "FLG_GUR",
@@ -124,32 +124,38 @@
       {
         "title": "Ethnologue - Cebaara Senufo (sef)",
         "url": "https://www.ethnologue.com/language/sef/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica - Senufo",
         "url": "https://www.britannica.com/topic/Senufo",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Wiktionary - ISO 639-3 codes Africa (Senufo)",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project - Senoufo, Southern in Cote d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/15066/IV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "CIA World Factbook - Burkina Faso",
         "url": "https://www.cia.gov/the-world-factbook/countries/burkina-faso/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Tautain, Louis Frédéric Émile — Le Dioula-dougou et le Sénéfo, Revue d'ethnographie, tome 6, 1887",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article d'ethnographie française de 1887 qui emploie déjà le nom Sénoufo, avant que la colonie de Côte d'Ivoire n'existe."
       },
       {
@@ -162,13 +168,268 @@
         "title": "Gagliardi, Susan Elizabeth et Petridis, Constantine — Mapping Senufo: Reframing Questions, Reevaluating Sources, and Reimagining a Digital Monograph, History in Africa, volume 48, 2021, pages 165 à 209",
         "url": "https://doi.org/10.1017/hia.2021.5",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Travail universitaire qui rouvre les questions et réexamine les sources sur l'ensemble d'objets et de populations désignés comme Sénoufo, et sur la façon dont cette désignation s'est construite."
       },
       {
         "title": "Richter, Dolores — Further Considerations of Caste in West Africa: The Senufo. Africa, 50 (1), 1980, p. 37-54",
         "url": "https://doi.org/10.2307/1158641",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article évalué par les pairs, lu par son résumé : à partir des Sénoufo de Côte d'Ivoire, l'autrice examine les traits attribués aux castes ouest-africaines et montre qu'ils sont souvent tournés à leur avantage par les castes dites inférieures."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sénoufo désigne un ensemble de peuples du nord de la Côte d'Ivoire, du sud du Mali et du sud-ouest du Burkina Faso, qui se nomme lui-même Syénambélé. D'autres noms existent : Siène-ré, une forme proche de ce nom, et Bambara, que des voisins musulmans leur donnaient. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Syénambélé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; une forme proche est écrite vers 1892.",
+        "periodLabel": "Forme proche écrite vers 1892 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Syénambélé figure, avec Siéna et Syenamana, parmi les noms de ce peuple que relève Tanya Southerland.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Senoufo",
+                "author": "Tanya Southerland",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/senoufo",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article de l'Encyclopedia of World Cultures Supplement, repris sur Encyclopedia.com ; lu le 10 octobre 2026. La page ne donne pas l'année de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Voyage de 1887-1888 (récit publié vers 1892)"
+            },
+            "era": "polity",
+            "statement": "Le nom Syénambélé a une forme proche, Siène-ré, que l'explorateur Louis-Gustave Binger donne comme leur « véritable nom ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Siène-ré",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, récit paru dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 64",
+                "notes": "Récit du voyage de 1887-1889. Lu sur la numérisation des Smithsonian Libraries sur Internet Archive, lu le 10 octobre 2026. L'exemplaire n'a pas de page de titre et porte la pagination du Tour du monde, où le récit a paru en livraisons ; la notice du catalogue le date de 1892."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Voyage de 1887-1888 (récit publié vers 1892)"
+            },
+            "era": "polity",
+            "statement": "Le nom Siène-ré va avec une vieille installation, selon Binger : ce peuple appellerait le nord « pays du sel » et le sud « pays des kolas », comme s'il avait toujours vécu entre les deux.",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, récit paru dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 63-64",
+                "notes": "Récit du voyage de 1887-1889. Lu sur la numérisation des Smithsonian Libraries sur Internet Archive, lu le 10 octobre 2026. L'exemplaire n'a pas de page de titre et porte la pagination du Tour du monde, où le récit a paru en livraisons ; la notice du catalogue le date de 1892."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sénoufo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit dès 1887 ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis 1887 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sénoufo désigne vingt-cinq à trente groupes, ou davantage, qui parlent des langues gur dans le nord de la Côte d'Ivoire, le sud du Mali et le sud-ouest du Burkina Faso, selon Tanya Southerland. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Senoufo",
+                "author": "Tanya Southerland",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/senoufo",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article de l'Encyclopedia of World Cultures Supplement, repris sur Encyclopedia.com ; lu le 10 octobre 2026. La page ne donne pas l'année de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sénoufo désigne, pour l'administrateur colonial Maurice Delafosse, les habitants du pays de Kong au milieu desquels vivent les marchands dyoula ; les enfants des unions entre Dyoula et Sénoufo portent les marques du visage des Sénoufo.",
+            "sources": [
+              {
+                "title": "Note sur les familles Krou, Mandé et Agni-Achanti (Afrique occidentale)",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/biostor-268194",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339",
+                "notes": "Bulletin du Muséum d'histoire naturelle, tome 6. Lu sur la numérisation BioStor sur Internet Archive, lu le 10 octobre 2026. La page indiquée est celle imprimée sur le document."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "1887"
+            },
+            "era": "polity",
+            "statement": "Le nom Sénoufo apparaît par écrit sous la forme Sénéfo dans un article du docteur Louis Tautain paru en 1887 : les Sénéfo y sont « les maîtres du sol » du Dioula-dougou, aux côtés des marchands dioula. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Sénéfo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Le Dioula-dougou et le Sénéfo",
+                "author": "Louis Frédéric Émile Tautain",
+                "year": 1887,
+                "url": "https://archive.org/details/revuedethnograp04hamygoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 395-396",
+                "notes": "Revue d'ethnographie, tome 6. Lu sur la numérisation de l'université du Michigan sur Internet Archive, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Proposée vers 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Sénoufo viendrait des Mandé, qui appelleraient ce peuple Siénou-fo, « ceux qui disent siène o » pour désigner un homme, selon l'explorateur Louis-Gustave Binger.",
+            "hypothesisGroup": "origine du nom Sénoufo",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, récit paru dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 64",
+                "notes": "Récit du voyage de 1887-1889. Lu sur la numérisation des Smithsonian Libraries sur Internet Archive, lu le 10 octobre 2026. L'exemplaire n'a pas de page de titre et porte la pagination du Tour du monde, où le récit a paru en livraisons ; la notice du catalogue le date de 1892."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Sénoufo serait un mot mandingue qui voudrait dire à peu près « ceux qui parlent le séné ou le siéna », des noms de plusieurs langues gur, selon Tanya Southerland.",
+            "hypothesisGroup": "origine du nom Sénoufo",
+            "sources": [
+              {
+                "title": "Senoufo",
+                "author": "Tanya Southerland",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/senoufo",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article de l'Encyclopedia of World Cultures Supplement, repris sur Encyclopedia.com ; lu le 10 octobre 2026. La page ne donne pas l'année de l'édition imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bambara",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Dyoula et d'autres musulmans de la région, selon Maurice Delafosse",
+        "shortLine": "Un nom que des voisins musulmans donnaient aux Sénoufo vers 1900.",
+        "periodLabel": "Vers 1900",
+        "accounts": [
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bambara est donné par les Dyoula aux Sénoufo, c'est-à-dire à des gens qui ne sont pas des Mandé, selon l'administrateur colonial Maurice Delafosse.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Note sur les familles Krou, Mandé et Agni-Achanti (Afrique occidentale)",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/biostor-268194",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339",
+                "notes": "Bulletin du Muséum d'histoire naturelle, tome 6. Lu sur la numérisation BioStor sur Internet Archive, lu le 10 octobre 2026. La page indiquée est celle imprimée sur le document."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bambara est donné par les musulmans du Soudan occidental à des populations non musulmanes très différentes, comme les Bamana, les Sénoufo et les Gbanyan, selon Maurice Delafosse. Il conseille de ne pas l'employer, à cause des confusions qu'il entraîne.",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141, note 1",
+                "notes": "Paris, Ernest Leroux. Lu sur la numérisation de l'université de Toronto sur Internet Archive, lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

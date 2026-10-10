@@ -13,7 +13,7 @@
       "mainName": "Gawwada",
       "selfAppellation": "Ale",
       "exonyms": ["Gauwada", "Gawata", "Kawwada", "Kawwad'a"],
-      "originOfExonyms": "Le terme Gawwada est l'ethnonyme externe le plus courant dans la littérature ethnographique et dans les sources Ethnologue. Les locuteurs se désignent eux-mêmes par le terme Ale, qui renvoie à leur propre langue. Les variantes Gauwada et Kawwada apparaissent dans les sources allemandes et françaises du XXe siècle.",
+      "originOfExonyms": "Gawwada est le nom donné à ce peuple de l'extérieur le plus courant dans les études sur ses modes de vie et dans Ethnologue. Les personnes concernées se nomment Ale, un nom qui renvoie aussi à leur langue. Les formes Gauwada et Kawwada apparaissent dans les sources allemandes et françaises du XXe siècle.",
       "whyProblematic": null,
       "contemporaryUsage": "L'appellation Gawwada est utilisée dans les documents officiels éthiopiens et dans la nomenclature linguistique internationale (ISO : gwd). Le terme Ale est privilégié par les locuteurs eux-mêmes ; les linguistes travaillant sur le terrain depuis 2010 rapportent une forte résistance à toute standardisation entre sous-groupes."
     },
@@ -90,22 +90,26 @@
       {
         "title": "Gawwada people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/gawwada.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Gawwada, Ale in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/11836",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ISO 639-3 gwd : Gawwada – CEDS / National Center for Education Statistics",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Gawwada (gwd) – WOLD / MPI-EVA",
         "url": "https://wold.clld.org/language/3",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethiopia Profile – Languages – Day Translations, 2024",
@@ -115,7 +119,8 @@
       {
         "title": "A Summary of the Cushite Peoples of Eastern Africa – Orville Jenkins",
         "url": "http://orvillejenkins.com/peoples/cushite.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

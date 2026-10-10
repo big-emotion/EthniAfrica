@@ -4,6 +4,7 @@ import swaggerJsdoc from "swagger-jsdoc";
 import { OPENAPI_V2_TAGS } from "@/lib/api/openapiV2Tags";
 import { PRODUCT_NAME } from "@/lib/brand";
 import { resolveSiteUrl } from "@/lib/siteUrl";
+import { SOURCE_KINDS, SOURCE_TIERS } from "@/types/sources";
 
 const options: swaggerJsdoc.Options = {
   definition: {
@@ -990,10 +991,34 @@ const options: swaggerJsdoc.Options = {
               description: "Languages matching corpus-wide",
               example: 0,
             },
+            places: {
+              type: "array",
+              items: { $ref: "#/components/schemas/PlaceSearchHitV2" },
+              description:
+                "Matching places (REQ-196), ranked by afrik_search_places (migration 100) on the filed name and every nameHistory name. A grouped facet like languages: not folded into `results`.",
+            },
+            placesTotal: {
+              type: "integer",
+              description:
+                "Places matching across every page, not only this one",
+              example: 0,
+            },
+            words: {
+              type: "array",
+              items: { $ref: "#/components/schemas/WordSearchHitV2" },
+              description:
+                "Matching word fiches (REQ-196), ranked by afrik_search_words (migration 104) on the filed name and every nameHistory name. Each row carries the six-block `answer` of kind `word`, read from its nameHistory. A grouped facet like places: not folded into `results`.",
+            },
+            wordsTotal: {
+              type: "integer",
+              description:
+                "Word fiches matching across every page, not only this one",
+              example: 0,
+            },
             total: {
               type: "integer",
               description:
-                "Without `lens`, the sum of the six non-quiz corpus-wide counts. With `lens=quiz`, this equals `quizzesTotal`. Changed in 2.2.0: this used to report the size of the returned page, which made it useless for paging.",
+                "Without `lens`, the sum of the eight non-quiz counts, each across every page. With `lens=quiz`, this equals `quizzesTotal`. Changed in 2.2.0: this used to report the size of the returned page, which made it useless for paging.",
               example: 17,
             },
             leads: {
@@ -1424,6 +1449,12 @@ const options: swaggerJsdoc.Options = {
               enum: ["official", "referenced", "unverified"],
             },
             notes: { type: "string", minLength: 1 },
+            sourceKind: {
+              type: "string",
+              enum: [...SOURCE_KINDS],
+              description:
+                "What kind of work the source is. Absent when the source records none.",
+            },
           },
           required: ["title", "url", "tier"],
         },
@@ -1897,6 +1928,282 @@ const options: swaggerJsdoc.Options = {
           },
           required: ["data", "meta", "errors"],
         },
+        NameHistorySourceV2: {
+          type: "object",
+          description:
+            "A source of a name-history account. An oral source is never refused for having no URL or no page (REQ-195): it names what it can of its narrative, carrier and place.",
+          properties: {
+            title: { type: "string", minLength: 1 },
+            author: { type: "string", minLength: 1 },
+            year: { type: ["integer", "null"] },
+            url: { type: ["string", "null"] },
+            tier: { type: "string", enum: [...SOURCE_TIERS] },
+            source_kind: { type: "string", enum: [...SOURCE_KINDS] },
+            page: { type: "string", minLength: 1 },
+            narrative: { type: "string", minLength: 1 },
+            carrier: { type: "string", minLength: 1 },
+            place: { type: "string", minLength: 1 },
+            notes: { type: "string" },
+          },
+          required: ["title", "author", "year", "url", "tier", "source_kind"],
+        },
+        NameHistoryAccountV2: {
+          type: "object",
+          description:
+            "One dated account of a name. Accounts sharing a hypothesisGroup are competing hypotheses, shown side by side and never ranked.",
+          properties: {
+            period: {
+              type: "object",
+              description:
+                "Integer years, negative before the common era; either bound may be unknown. `label` is what the reader reads.",
+              properties: {
+                from: { type: ["integer", "null"] },
+                to: { type: ["integer", "null"] },
+                label: { type: "string", minLength: 1 },
+              },
+              required: ["from", "to", "label"],
+            },
+            era: {
+              type: "string",
+              enum: ["polity", "colonial", "modern"],
+              description:
+                "The great era of the territory the account is about, at its period: before colonial rule, under it, or since independence. Absent when the account does not settle where or when.",
+            },
+            statement: { type: "string", minLength: 1 },
+            aspect: {
+              type: "string",
+              enum: ["meaning", "imposition", "usage"],
+              description:
+                "What the account says of the name as a whole: its meaning, who imposed it and why that is a problem, or how it is used today.",
+            },
+            formAsWritten: {
+              type: "string",
+              minLength: 1,
+              description:
+                "A written trace of the name: the form exactly as the cited document spells it, cited at its page.",
+            },
+            hypothesisGroup: { type: "string", minLength: 1 },
+            birth: {
+              type: "boolean",
+              enum: [true],
+              description:
+                "The earliest origin of this name the project knows; at most one per name.",
+            },
+            before: {
+              type: "boolean",
+              enum: [true],
+              description: "What existed before this name.",
+            },
+            actors: {
+              type: "array",
+              description:
+                "Context for the reader, never the author of a name.",
+              items: {
+                type: "object",
+                properties: {
+                  name: { type: "string", minLength: 1 },
+                  role: { type: "string", minLength: 1 },
+                  personId: { type: "string", minLength: 1 },
+                },
+                required: ["name", "role"],
+              },
+            },
+            sources: {
+              type: "array",
+              minItems: 1,
+              items: { $ref: "#/components/schemas/NameHistorySourceV2" },
+            },
+          },
+          required: ["period", "statement", "sources"],
+        },
+        WordSearchHitV2: {
+          type: "object",
+          description:
+            "A word search hit (REQ-196): exact name match, then a prefix match on any of its names, then a pg_trgm fallback; normalizedScore is the cross-kind scale of migration 069.",
+          properties: {
+            id: { type: "string", example: "WRD_RACE" },
+            nameMain: { type: "string", example: "race" },
+            wordLanguage: { type: "string", example: "fra" },
+            definition: { type: "string" },
+            nameHistory: { $ref: "#/components/schemas/NameHistoryV2" },
+            naming: {
+              $ref: "#/components/schemas/SearchNamingProjectionV2",
+            },
+            answer: { $ref: "#/components/schemas/SearchAnswerV2" },
+            relevance: { type: "number" },
+            exactMatch: { type: "boolean" },
+            normalizedScore: { type: "number", minimum: 0, maximum: 1 },
+          },
+          required: ["id", "nameMain", "exactMatch", "normalizedScore"],
+        },
+        WordSummaryV2: {
+          type: "object",
+          description: "One row of the word list (REQ-196).",
+          properties: {
+            id: { type: "string", example: "WRD_RACE" },
+            nameMain: { type: "string", example: "race" },
+            wordLanguage: { type: "string", example: "fra" },
+          },
+          required: ["id", "nameMain", "wordLanguage"],
+        },
+        WordV2: {
+          type: "object",
+          description:
+            "A word fiche (REQ-196): a word whose history explains Africa through its names. `names` lists every name the word answers to — its filed name, then each nameText of its nameHistory — with no form promoted over another; `nameHistory`, always present for a word, tells where each comes from.",
+          properties: {
+            id: { type: "string", example: "WRD_RACE" },
+            nameMain: { type: "string", example: "race" },
+            names: {
+              type: "array",
+              items: { type: "string" },
+              example: ["race"],
+            },
+            wordLanguage: {
+              type: "string",
+              description: "ISO 639-3 code of the language of the word.",
+              example: "fra",
+            },
+            definition: {
+              type: "string",
+              description: "One sentence: what the word means today.",
+            },
+            relatedSubjects: {
+              type: "array",
+              description:
+                "Fiches of any class the word is tied to, with the fiche's own sentence saying how.",
+              items: {
+                type: "object",
+                properties: {
+                  id: { type: "string", example: "FLG_MANDE" },
+                  relation: { type: "string" },
+                },
+                required: ["id", "relation"],
+              },
+            },
+            gaps: { type: "array", items: { type: "string" } },
+            sources: { type: "array", items: { type: "object" } },
+            nameHistory: { $ref: "#/components/schemas/NameHistoryV2" },
+          },
+          required: [
+            "id",
+            "nameMain",
+            "names",
+            "wordLanguage",
+            "definition",
+            "relatedSubjects",
+            "gaps",
+            "sources",
+            "nameHistory",
+          ],
+        },
+        WordDetailEnvelope: {
+          type: "object",
+          properties: {
+            data: { $ref: "#/components/schemas/WordV2" },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
+        },
+        WordListEnvelope: {
+          type: "object",
+          properties: {
+            data: {
+              type: "array",
+              items: { $ref: "#/components/schemas/WordSummaryV2" },
+            },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
+        },
+        NameHistoryV2: {
+          type: "object",
+          description:
+            "The subject's name history (REQ-196, ARCH-028): one shape on every subject, validated by the one shared schema before it is loaded. Absent when the fiche declares none yet.",
+          properties: {
+            summary: { type: "string", minLength: 1 },
+            names: {
+              type: "array",
+              minItems: 1,
+              items: {
+                type: "object",
+                properties: {
+                  nameText: { type: "string", minLength: 1 },
+                  nameStatus: { type: "string", enum: ["current", "former"] },
+                  selfGiven: { type: "boolean" },
+                  languageOfOrigin: { type: ["string", "null"] },
+                  namedBy: { type: ["string", "null"] },
+                  shortLine: {
+                    type: "string",
+                    minLength: 1,
+                    maxLength: 120,
+                    description:
+                      "One sentence a reader understands without context.",
+                  },
+                  usedIn: {
+                    type: "array",
+                    items: { type: "string", minLength: 1 },
+                    description:
+                      "ISO 639-3 codes of the languages the name is used in.",
+                  },
+                  pronunciation: {
+                    type: "object",
+                    properties: {
+                      respelling: { type: "string", minLength: 1 },
+                      audio: {
+                        type: ["object", "null"],
+                        properties: {
+                          url: { type: "string", minLength: 1 },
+                          consent: { type: "string", minLength: 1 },
+                        },
+                        required: ["url", "consent"],
+                      },
+                      source: {
+                        $ref: "#/components/schemas/NameHistorySourceV2",
+                      },
+                    },
+                    required: ["respelling", "audio", "source"],
+                  },
+                  periodLabel: {
+                    type: "string",
+                    minLength: 1,
+                    description: "When the name is or was in use.",
+                  },
+                  variantSpelling: {
+                    type: "boolean",
+                    enum: [true],
+                    description:
+                      "Another spelling of a name rather than a name of its own.",
+                  },
+                  accounts: {
+                    type: "array",
+                    items: {
+                      $ref: "#/components/schemas/NameHistoryAccountV2",
+                    },
+                  },
+                },
+                required: [
+                  "nameText",
+                  "nameStatus",
+                  "selfGiven",
+                  "languageOfOrigin",
+                  "namedBy",
+                  "accounts",
+                ],
+              },
+            },
+          },
+          required: ["summary", "names"],
+        },
         CountryV2: {
           type: "object",
           properties: {
@@ -1912,7 +2219,7 @@ const options: swaggerJsdoc.Options = {
             nameEn: {
               type: "string",
               description:
-                "English name of ordinary use, in the state's own English form (Chad, Côte d'Ivoire, Cabo Verde, The Gambia). Absent until the corpus reload fills migration 084's column.",
+                "English name of ordinary use, in the state's own English form (Chad, Côte d'Ivoire, Cabo Verde, The Gambia). Absent until the next data reload fills migration 084's column.",
               example: "Zimbabwe",
             },
             nameOfficial: {
@@ -1931,6 +2238,9 @@ const options: swaggerJsdoc.Options = {
             },
             answer: {
               $ref: "#/components/schemas/SearchAnswerV2",
+            },
+            nameHistory: {
+              $ref: "#/components/schemas/NameHistoryV2",
             },
           },
         },
@@ -1967,6 +2277,9 @@ const options: swaggerJsdoc.Options = {
             },
             answer: {
               $ref: "#/components/schemas/SearchAnswerV2",
+            },
+            nameHistory: {
+              $ref: "#/components/schemas/NameHistoryV2",
             },
           },
         },
@@ -2141,7 +2454,7 @@ const options: swaggerJsdoc.Options = {
             nameEn: {
               type: ["string", "null"],
               description:
-                "The fiche's English name (content.nameEn), carried as corpus data and not searched; null when the fiche carries none.",
+                "The fiche's English name (content.nameEn), carried as fiche data and not searched; null when the fiche carries none.",
               example: "Swahili",
             },
             familyId: {
@@ -2248,6 +2561,9 @@ const options: swaggerJsdoc.Options = {
             answer: {
               $ref: "#/components/schemas/SearchAnswerV2",
             },
+            nameHistory: {
+              $ref: "#/components/schemas/NameHistoryV2",
+            },
           },
         },
         LanguageSourceV2: {
@@ -2329,6 +2645,9 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/LanguageSourceV2" },
             },
+            nameHistory: {
+              $ref: "#/components/schemas/NameHistoryV2",
+            },
           },
           required: [
             "id",
@@ -2350,7 +2669,7 @@ const options: swaggerJsdoc.Options = {
         PatronymeV2: {
           type: "object",
           description:
-            "A name (patronyme) — DEC-038's fifth corpus dimension. Bearer entries are a narrow allow-listed summary; no code path takes a family name and returns an ethnic origin for a named living person (DEC-040).",
+            "A name (patronyme) — DEC-038's fifth dimension of the atlas. Bearer entries are a narrow allow-listed summary; no code path takes a family name and returns an ethnic origin for a named living person (DEC-040).",
           properties: {
             id: {
               type: "string",
@@ -2369,6 +2688,9 @@ const options: swaggerJsdoc.Options = {
               ],
             },
             casteOrSocialFunction: { type: ["string", "null"] },
+            nameHistory: {
+              $ref: "#/components/schemas/NameHistoryV2",
+            },
             content: {
               type: "object",
               description:
@@ -2415,7 +2737,7 @@ const options: swaggerJsdoc.Options = {
             namedBearers: {
               type: "array",
               description:
-                "Bearers the corpus can only name, because no person record exists for them — they carry a name and a status, never an id, a role or a biography, which is why they are a separate list and not a `bearers` entry with empty fields. Only a bearer the corpus records as dead is served: a family name is an ethnic marker, so publishing a living one would publish their ethnic origin (DEC-040, RGPD art. 9).",
+                "Bearers the atlas can only name, because no person record exists for them — they carry a name and a status, never an id, a role or a biography, which is why they are a separate list and not a `bearers` entry with empty fields. Only a bearer the atlas records as dead is served: a family name is an ethnic marker, so publishing a living one would publish their ethnic origin (DEC-040, RGPD art. 9).",
               items: {
                 type: "object",
                 properties: {
@@ -2504,7 +2826,7 @@ const options: swaggerJsdoc.Options = {
                 { type: "null" },
               ],
               description:
-                "No longer emitted: corpus translation was retired and every record is served as authored, in French. Kept declared so existing clients are not broken.",
+                "No longer emitted: translation of the fiches was retired and every record is served as authored, in French. Kept declared so existing clients are not broken.",
             },
           },
           required: ["license", "attribution"],
@@ -2644,7 +2966,7 @@ const options: swaggerJsdoc.Options = {
         CountryPatronymesV2: {
           type: "object",
           description:
-            "The two name routes a country answers along, kept apart. They assert different things and neither contains the other — measured on the corpus, 2 countries are reachable only directly and 6 only through their peoples. Summing them publishes an inference under the heading of a sourced fact.",
+            "The two name routes a country answers along, kept apart. They assert different things and neither contains the other — measured on the published fiches, 2 countries are reachable only directly and 6 only through their peoples. Summing them publishes an inference under the heading of a sourced fact.",
           properties: {
             attested: {
               type: "array",
@@ -2670,7 +2992,7 @@ const options: swaggerJsdoc.Options = {
                 patronymes: {
                   type: "array",
                   description:
-                    "The names this people bears. Distinct from the ethnonym dossier at /peoples/{id}/names, which holds what the people is called. An empty array is the ordinary state of the corpus, not an omission.",
+                    "The names this people bears. Distinct from the ethnonym dossier at /peoples/{id}/names, which holds what the people is called. An empty array is the ordinary state of the fiches, not an omission.",
                   items: { $ref: "#/components/schemas/PatronymeLinkV2" },
                 },
               },
@@ -3818,6 +4140,12 @@ const options: swaggerJsdoc.Options = {
               type: ["string", "null"],
               enum: ["official", "referenced", "unverified", null],
             },
+            sourceKind: {
+              type: ["string", "null"],
+              enum: [...SOURCE_KINDS, null],
+              description:
+                "What kind of work the source is (provenance, orthogonal to tier). Null or absent when none is recorded.",
+            },
           },
           required: ["id", "title", "url", "tier"],
         },
@@ -3936,6 +4264,12 @@ const options: swaggerJsdoc.Options = {
             tier: {
               type: ["string", "null"],
               enum: ["official", "referenced", "unverified", null],
+            },
+            sourceKind: {
+              type: ["string", "null"],
+              enum: [...SOURCE_KINDS, null],
+              description:
+                "What kind of work the source is (provenance, orthogonal to tier). Null or absent when none is recorded.",
             },
           },
           required: ["id", "title", "url", "tier"],
@@ -4340,7 +4674,7 @@ const options: swaggerJsdoc.Options = {
               type: "string",
               enum: ["language-corpus", "people-fiches"],
               description:
-                "Which source produced `branches`: the language corpus, or a reconstruction from the ISO codes the people fiches declare. `afrik_languages` now holds 748 rows in recette, but coverage still varies by family, so `people-fiches` remains a common fallback.",
+                "Which source produced `branches`: the language fiches, or a reconstruction from the ISO codes the people fiches declare. `afrik_languages` now holds 748 rows in recette, but coverage still varies by family, so `people-fiches` remains a common fallback.",
             },
             declaredBranches: {
               type: "array",
@@ -4878,14 +5212,14 @@ const options: swaggerJsdoc.Options = {
                 null,
               ],
               description:
-                "What changed in the corpus, separately from what the moderators thought of the report. Written by the publication of a correction, never by a moderator decision. NULL while the report is open or under review.",
+                "What changed in the published fiches, separately from what the moderators thought of the report. Written by the publication of a correction, never by a moderator decision. NULL while the report is open or under review.",
               example: null,
             },
             remediation_published_at: {
               type: ["string", "null"],
               format: "date-time",
               description:
-                "When the correction reached the published corpus. Never null when remediation_state is published.",
+                "When the correction reached the published fiches. Never null when remediation_state is published.",
               example: null,
             },
             remediation_summary: {
@@ -5120,7 +5454,7 @@ const options: swaggerJsdoc.Options = {
         QuizThemeOption: {
           type: "object",
           description:
-            "One domain of content a session can be narrowed to, counted across the whole corpus.",
+            "One domain of content a session can be narrowed to, counted across all the published fiches.",
           properties: {
             id: {
               type: "string",
@@ -5201,6 +5535,12 @@ const options: swaggerJsdoc.Options = {
               enum: ["official", "referenced", "unverified", null],
             },
             url: { type: ["string", "null"] },
+            sourceKind: {
+              type: ["string", "null"],
+              enum: [...SOURCE_KINDS, null],
+              description:
+                "What kind of work the source is. Absent or null when the source records none.",
+            },
           },
           required: ["title", "year", "tier", "url"],
         },
@@ -5372,6 +5712,137 @@ const options: swaggerJsdoc.Options = {
               required: ["key"],
             },
           ],
+        },
+        PlaceSummaryV2: {
+          type: "object",
+          description: "One row of the place list (REQ-196).",
+          properties: {
+            id: { type: "string", example: "LOC_YAMOUSSOUKRO" },
+            placeType: {
+              type: "string",
+              enum: ["ville", "region", "site-historique", "autre"],
+            },
+            nameMain: { type: "string", example: "Yamoussoukro" },
+            countryId: { type: "string", example: "CIV" },
+          },
+          required: ["id", "placeType", "nameMain", "countryId"],
+        },
+        PlaceV2: {
+          type: "object",
+          description:
+            "A place fiche (REQ-196). `names` lists every name the place answers to — its filed name, then each nameText of its nameHistory — with no form promoted over another; `nameHistory` tells where each comes from.",
+          properties: {
+            id: { type: "string", example: "LOC_YAMOUSSOUKRO" },
+            placeType: {
+              type: "string",
+              enum: ["ville", "region", "site-historique", "autre"],
+            },
+            nameMain: { type: "string", example: "Yamoussoukro" },
+            names: {
+              type: "array",
+              items: { type: "string" },
+              example: ["Yamoussoukro", "N'Gokro"],
+            },
+            summary: { type: "string" },
+            country: {
+              type: "object",
+              properties: {
+                id: { type: "string", example: "CIV" },
+                name: { type: ["string", "null"] },
+              },
+              required: ["id", "name"],
+            },
+            associatedPeoples: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  id: { type: "string" },
+                  name: { type: ["string", "null"] },
+                  relation: { type: ["string", "null"] },
+                },
+                required: ["id", "name", "relation"],
+              },
+            },
+            gaps: { type: "array", items: { type: "object" } },
+            sources: { type: "array", items: { type: "object" } },
+            nameHistory: {
+              oneOf: [
+                { $ref: "#/components/schemas/NameHistoryV2" },
+                { type: "null" },
+              ],
+            },
+          },
+          required: [
+            "id",
+            "placeType",
+            "nameMain",
+            "names",
+            "summary",
+            "country",
+            "associatedPeoples",
+            "gaps",
+            "sources",
+            "nameHistory",
+          ],
+        },
+        PlaceSearchHitV2: {
+          type: "object",
+          description:
+            "A place search hit (REQ-196): exact name match, then a prefix match on any of its names, then a pg_trgm fallback; normalizedScore is the cross-kind scale of migration 069.",
+          properties: {
+            id: { type: "string", example: "LOC_YAMOUSSOUKRO" },
+            nameMain: { type: "string", example: "Yamoussoukro" },
+            placeType: { type: "string", example: "ville" },
+            countryId: { type: "string", example: "CIV" },
+            summary: { type: "string" },
+            nameHistory: {
+              oneOf: [
+                { $ref: "#/components/schemas/NameHistoryV2" },
+                { type: "null" },
+              ],
+            },
+            relevance: { type: "number" },
+            exactMatch: { type: "boolean" },
+            normalizedScore: { type: "number", minimum: 0, maximum: 1 },
+          },
+          required: [
+            "id",
+            "nameMain",
+            "placeType",
+            "countryId",
+            "exactMatch",
+            "normalizedScore",
+          ],
+        },
+        PlaceDetailEnvelope: {
+          type: "object",
+          properties: {
+            data: { $ref: "#/components/schemas/PlaceV2" },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
+        },
+        PlaceListEnvelope: {
+          type: "object",
+          properties: {
+            data: {
+              type: "array",
+              items: { $ref: "#/components/schemas/PlaceSummaryV2" },
+            },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
         },
       },
     },

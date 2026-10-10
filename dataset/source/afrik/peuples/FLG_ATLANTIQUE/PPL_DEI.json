@@ -74,22 +74,26 @@
       {
         "title": "Minority Rights Group – Liberia country profile, 2024",
         "url": "https://minorityrights.org/country/liberia/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Joshua Project – Dewoin in Liberia",
         "url": "https://joshuaproject.net/people_groups/11541",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Liberia people groups",
         "url": "https://joshuaproject.net/countries/li",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Modern Ghana – Historicity of Liberia Before the Arrival of the Settlers, 2019",
         "url": "https://www.modernghana.com/news/966909/historicity-of-liberia-before-the-arrival-of-the.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "HartfordInfo – Liberians: An Introduction to their History and Culture",
@@ -99,7 +103,8 @@
       {
         "title": "Encyclopaedia Britannica – Liberia: People",
         "url": "https://www.britannica.com/place/Liberia/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

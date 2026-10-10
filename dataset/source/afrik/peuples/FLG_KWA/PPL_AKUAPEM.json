@@ -8,7 +8,7 @@
       "mainName": "Akuapem",
       "selfAppellation": "Akuapem",
       "exonyms": ["Akwapim", "Akwapem", "Akuapim"],
-      "originOfExonyms": "Le nom Akuapem derive du twi Nkuu apem signifiant mille groupes, nom donne par le guerrier akan Nana Ansa Sasraku I d'Akwamu apres que sa force d'invasion eut ete repoussee par la confederation de peuples de la crete.",
+      "originOfExonyms": "Le nom Akuapem viendrait du twi Nkuu apem, qui veut dire mille groupes : il aurait été donné par le guerrier akan Nana Ansa Sasraku I d'Akwamu apres que sa force d'invasion eut ete repoussee par la confederation de peuples de la crete.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Akuapem (ou Akwapim) est utilise officiellement dans les denominations administratives du Ghana, notamment dans les municipalites d'Akwapim Nord et Akwapim Sud de la region orientale. Il designe aujourd'hui l'ensemble de la population de la crete, qu'elle soit d'origine guan ou akan.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -54,7 +54,7 @@
     "culture": {
       "majorRites": "Festival Odwira (festival annuel de purete et d'action de grace reunissant les 17 villes de la confederation, celebration de la recolte et purification spirituelle). Funerailles elaborees avec ceremonies de deuil communautaire. Pratiques ancestrales de veneration des esprits fondateurs.",
       "symbols": "Le tabouret royal (siège sacre symbolisant l'autorite du chef), les regalia de la chefferie, les drapeaux de clan. La crete de l'Akuapem elle-meme constitue un territoire symbolique fort, associe a la resistance contre l'Akwamu.",
-      "artsAndMusic": "Artisanat akan : tissage de kente, sculpture sur bois (tabourets, statues), orfevrerie. Musique percussive ceremonielle, chants d'eglise presbyteriens heriters de la tradition de la Basel Mission. La mission de Bale a contribue a developper une tradition d'imprimerie et d'edition en twi akuapem. La langue akan porte un corpus proverbial (mmebusem) de plus de 3 600 entrées, compilé dès 1879 par le linguiste missionnaire Johann Gottlieb Christaller à partir des dialectes twi et fante — un usage partagé par l'ensemble des groupes de langue akan.",
+      "artsAndMusic": "Les artisans akuapem tissent le kente, sculptent des tabourets et des statues en bois et travaillent l'or. Les percussions accompagnent les cérémonies. Les chants des églises presbytériennes viennent notamment de la tradition de la Basel Mission. Cette mission de Bâle a aussi contribué à l'imprimerie et à l'édition en twi akuapem. Les proverbes akan sont appelés mmebusem. Dès 1879, le linguiste missionnaire Johann Gottlieb Christaller en a réuni plus de 3 600 en twi et en fante. L'usage des proverbes est partagé par les groupes de langue akan.",
       "spiritualities": "Animisme traditionnel akan (veneration des ancetres, croyance aux obosom, esprits de la nature et des rivieres). Depuis 1835, le christianisme presbyterien est predominant, issu de la Basel Mission. La presence de l'Eglise presbyterienne du Ghana reste forte sur la crete."
     },
     "historicalRole": {
@@ -79,7 +79,8 @@
       {
         "title": "Joshua Project – Akan-Akwapem in Ghana, 2025",
         "url": "https://joshuaproject.net/countries/gh",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "AkanArchives – Christaller Bible Translation 1870-1872",
@@ -89,7 +90,8 @@
       {
         "title": "Trip Down Memory Lane – The Akuapem People, 2013",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2013/09/the-akuapem-people-are-amalgamation-of.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Visit Akuapem – Cultural Heritage",
@@ -99,7 +101,8 @@
       {
         "title": "Glottolog — Twi (twii1234)",
         "url": "https://glottolog.org/resource/languoid/id/twii1234",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",

@@ -38,14 +38,16 @@
       "migrationRoutes": [
         "Migration ancestrale depuis Bono-Manso (nord-ouest de l'actuelle region Brong-Ahafo) vers la region de Kumase",
         "Expansion vers le sud et l'est sous Opoku Ware I (successeur d'Osei Tutu I) au 18e siecle",
-        "Traite atlantique : deportation forcee de nombreux Asante vers les Caraïbes (Jamaïque, Barbade, Antilles neerlandaises) au 17e-18e siecles"
+        "Traite atlantique : deportation forcee de nombreux Asante vers les Caraïbes (Jamaïque, Barbade, Antilles neerlandaises) au 17e-18e siecles",
+        "Etablissement initial dans la zone forestiere du Kwabre, au nord de la cote du Ghana actuel"
       ],
       "historicalSettlementZones": [
         "Region de Kumase (capitale historique et actuelle de l'Ashanti Region)",
         "Region de Brong-Ahafo (nord)",
         "Bassin du fleuve Pra (sud)",
         "Lac Volta (est)",
-        "Diaspora dans les grandes villes ghanéennes (Accra, Tema, Takoradi)"
+        "Diaspora dans les grandes villes ghanéennes (Accra, Tema, Takoradi)",
+        "Zone forestiere centrale du Ghana"
       ],
       "unificationsOrDivisions": "L'Empire Ashanti etait un Etat centralise organise en confederation de sous-royaumes (oman) sous l'autorite supreme de l'Asantehene. Les territoires conquis avaient le choix de rejoindre l'empire ou de devenir Etats tributaires. La Confederation Ashanti fut officiellement reconnue par les Britanniques en 1935 apres avoir ete abolie en 1901 suite a la guerre du Tabouret d'or. Depuis 1957, les Asante constituent l'un des groupes les plus influents au sein de la Republique du Ghana.",
       "externalInfluences": "Commerce trans-saharien et contacts avec les royaumes du nord (Haoussa, Songhai). Traite de l'or avec les Europeens (Portugais, Hollandais, Britanniques) a partir du 15e siecle. Quatre guerres anglo-asante (1823-1900) qui aboutirent a l'incorporation dans l'empire colonial britannique. Influence du christianisme (catholique et protestant) depuis le 19e siecle, sans elimination des pratiques religieuses traditionnelles.",
@@ -83,7 +85,7 @@
     "demography": {
       "totalPopulation": 11000000,
       "referenceYear": 2025,
-      "source": "Estimation fondee sur le recensement ghaneen 2021 (Ghana Statistical Service), projections 2025 de la region Ashanti (population regionale projetee depasse 6 millions en 2025), et estimations ethnolinguistiques de SIL Ethnologue (plus de 9 millions de locuteurs natifs du twi asante). La population asante totale, incluant la diaspora et les communautes hors Ghana, est estimee entre 10 et 12 millions.",
+      "source": "Estimation fondee sur le recensement ghaneen 2021 (Ghana Statistical Service), projections 2025 de la region Ashanti (population regionale projetee depasse 6 millions en 2025), et estimations ethnolinguistiques de SIL Ethnologue (plus de 9 millions de locuteurs natifs du twi asante). La population asante totale, incluant la diaspora et les communautes hors Ghana, est estimee entre 10 et 12 millions. Une autre estimation donne plus de 10 000 000 Asante (Wikipedia ; recensement du Ghana 2021) : 9 500 000 au Ghana, environ 300 000 au Royaume-Uni et 200 000 aux Etats-Unis.",
       "distributionByCountry": [
         {
           "country": "GHA",
@@ -101,32 +103,177 @@
       {
         "title": "Ghana National Commission on Culture — Ashanti Region",
         "url": "https://ghanaculture.gov.gh/ashanti-region/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue — Twi language (twi/aka)",
         "url": "https://www.ethnologue.com/language/twi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ghana Statistical Service — Population Projections Report Ashanti Region 2021-2050",
         "url": "https://statsghana.gov.gh/gssmain/fileUpload/pressrelease/06_Ashanti%20Region_Fau_final.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "R.S. Rattray — Asante Law and Constitution. Oxford: Clarendon Press, 1929",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "EBSCO Research Starters — Ashanti People",
         "url": "https://www.ebsco.com/research-starters/ethnic-and-cultural-studies/ashanti-people",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "CIEE — Tradition Goes On At The Ntonso Adinkra Village (Adinkra symbols)",
         "url": "https://www.ciee.org/go-abroad/high-school-study-abroad/summer/blog/tradition-goes-ntonso-adinkra-village",
         "tier": "needs_review"
+      },
+      {
+        "title": "Ghana Statistical Service, Population and Housing Census 2021",
+        "url": "https://census2021.statsghana.gov.gh",
+        "tier": "official",
+        "source_kind": "official_statistics"
+      },
+      {
+        "title": "Rattray, Robert Sutherland – Ashanti, Oxford University Press, 1923",
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "McCaskie, T. C. – State and Society in Pre-colonial Asante, Cambridge University Press, 1995",
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Asante désigne le peuple akan du centre du Ghana, autour de Kumasi, qui se nomme lui-même Asante, Asantefo au pluriel. En anglais, on l'écrit aussi Ashanti. Nous n'avons pas trouvé de source savante qui explique l'origine du nom Asante ; une explication de la graphie Ashanti est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Asante",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "twi",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne le peuple de Kumasi, écrit « Asiante » dès 1705.",
+        "periodLabel": "Écrit depuis 1705 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Asante désigne en 1881 le pays, le peuple et la langue de l'Asante, selon le dictionnaire de Johann Gottlieb Christaller. Un habitant s'y dit ɔsanteni, les habitants Asantefo, et le dictionnaire donne Asiante comme forme d'origine du nom. Nous n'avons pas trouvé de source savante qui explique l'origine de ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 411",
+                "notes": "Bâle, Mission évangélique, 1881, lu dans l'exemplaire numérisé sur archive.org. Entrée « Asante » : « Asante [orig. Asiante […]] the country, people and language of Asante » ; « ɔsanteni, pl. a- -fo, a man or inhabitant of Asante »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1705,
+              "to": 1705,
+              "label": "1705"
+            },
+            "era": "polity",
+            "statement": "Le nom Asante apparaît sous la forme « Asiante » dans la description de la côte de l'Or du marchand néerlandais William Bosman, parue en anglais en 1705. Il y range l'Asiante et l'Akyem parmi les pays plus forts que le Denkyira. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant elle.",
+            "formAsWritten": "Asiante",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A New and Accurate Description of the Coast of Guinea",
+                "author": "William Bosman",
+                "year": 1705,
+                "url": "https://archive.org/details/b30519032",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 73",
+                "notes": "Londres, 1705, traduction anglaise d'un texte paru en néerlandais en 1704 ; lue dans l'exemplaire numérisé sur archive.org. Lettre VI, à propos du Denkyira : « all which they have taught to fear them, except Asiante and Akim, who are yet stronger than they »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ashanti",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les auteurs de langue anglaise",
+        "shortLine": "La graphie anglaise du nom Asante, écrite « Ashantee » dès 1812.",
+        "periodLabel": "Écrit depuis 1812 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Proposée en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Ashanti, dans sa graphie anglaise « Ashantee », viendrait de la prononciation de l'interprète de Thomas Edward Bowdich, auteur d'un livre important sur l'Asante, qui était un homme d'Accra, selon Johann Gottlieb Christaller.",
+            "hypothesisGroup": "origine de la graphie Ashanti",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 411",
+                "notes": "Bâle, Mission évangélique, 1881, lu dans l'exemplaire numérisé sur archive.org. Entrée « Asante » : « The English spelling Ashantee is owing to the circumstance that the interpreter of Mr. Bowdich (the author of the most important book hitherto written on Asante) was an Akraman »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1812,
+              "to": 1812,
+              "label": "1812"
+            },
+            "era": "polity",
+            "statement": "Le nom Ashanti apparaît sous la forme « Ashantee » dans le récit de Henry Meredith sur la côte de l'Or, publié à Londres en 1812, qui parle du « roi d'Ashantee » et consacre un chapitre à la guerre qu'il mène sur la côte. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "An Account of the Gold Coast of Africa",
+                "author": "Henry Meredith",
+                "year": 1812,
+                "url": "https://archive.org/details/anaccountgoldco00meregoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1812, lu dans l'exemplaire numérisé sur archive.org. Table des matières, chapitre V : « Origin and History of the Ashantee War » ; dans le texte : « the king of Ashantee »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

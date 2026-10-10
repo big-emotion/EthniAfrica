@@ -94,6 +94,7 @@ export const PROVERBS: Proverb[] = [
         title: "Ashanti Proverbs (The Primitive Ethics of a Savage People)",
         url: "https://archive.org/details/ashantiproverbst00rattuoft",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Recueil publié par Clarendon Press et numérisé par Internet Archive. Il attribue le proverbe aux Asante, donne le texte twi et un commentaire recueilli auprès d'anciens. Le sous-titre emploie le vocabulaire dépréciatif de l'administration coloniale de l'époque.",
       },
@@ -135,6 +136,7 @@ export const PROVERBS: Proverb[] = [
         title: "Ashanti Proverbs (The Primitive Ethics of a Savage People)",
         url: "https://archive.org/details/ashantiproverbst00rattuoft",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Recueil publié qui attribue le proverbe aux Asante, avec le texte twi et une note sur l'interprétation donnée par les anciens. Le sous-titre emploie le vocabulaire dépréciatif de l'époque coloniale.",
       },
@@ -142,6 +144,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès (Open Book Publishers). Il cite le proverbe comme akan et le rattache à l'autorité royale.",
       },
@@ -183,6 +186,7 @@ export const PROVERBS: Proverb[] = [
         title: "Ashanti Proverbs (The Primitive Ethics of a Savage People)",
         url: "https://archive.org/details/ashantiproverbst00rattuoft",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Recueil publié qui attribue le proverbe aux Asante et donne le texte twi. L'auteur le cite aussi dans son introduction. Le sous-titre emploie le vocabulaire dépréciatif de l'époque coloniale.",
       },
@@ -190,6 +194,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès. Il cite le proverbe comme akan, d'après Rattray (1916).",
       },
@@ -266,6 +271,7 @@ export const PROVERBS: Proverb[] = [
         title: "Hausa Proverbs",
         url: "https://archive.org/details/hausaproverbs00merrrich",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Recueil publié à Londres par Kegan Paul, numérisé par Internet Archive. Il donne le texte haoussa, une traduction anglaise et une explication. L'auteur est un officier britannique de l'époque coloniale.",
       },
@@ -342,6 +348,7 @@ export const PROVERBS: Proverb[] = [
         title: "Hausa Proverbs",
         url: "https://archive.org/details/hausaproverbs00merrrich",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Recueil publié qui donne le texte haoussa, la traduction « Quantity makes the cotton draw a stone » et l'équivalent « Unity is strength ».",
       },
@@ -413,6 +420,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès. Il attribue le proverbe aux Haoussa, cite Whitting (1940) et explique que même le pouvoir doit parfois s'incliner.",
       },
@@ -489,6 +497,7 @@ export const PROVERBS: Proverb[] = [
         title: "Hausa Proverbs",
         url: "https://archive.org/details/hausaproverbs00merrrich",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Recueil publié qui donne le texte haoussa, la traduction « Small showers fill the stream » et le commentaire « Perseverance finishes work ».",
       },
@@ -544,6 +553,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès. Il attribue le couplet aux Yoruba et l'analyse comme un parallélisme en antithèse.",
       },
@@ -599,6 +609,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès. Il attribue le proverbe aux Yoruba, d'après Ellis (1894), en exemple d'image désignant l'impossible.",
       },
@@ -660,6 +671,7 @@ export const PROVERBS: Proverb[] = [
         title: "Yorùbá Proverbs and their Relevance to our Contemporary Times",
         url: "https://www.academicresearchjournals.org/IJELC/PDF/2025/February/Oluwadoro%20et%20al.pdf",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article de revue (International Journal of English Literature and Culture, vol. 13, n° 1). Il donne le proverbe en yoruba (n° 15) avec sa traduction anglaise et un commentaire sur la récession économique et l'émigration.",
       },
@@ -697,6 +709,7 @@ export const PROVERBS: Proverb[] = [
           "'The palm-oil with which Igbo words are eaten': a descriptive analysis of the translation of Igbo idioms into Zulu in Things Fall Apart",
         url: "https://www.researchgate.net/publication/233035724_'The_palm-oil_with_which_Igbo_words_are_eaten'_a_descriptive_analysis_of_the_translation_of_Igbo_idioms_into_Zulu_in_Things_Fall_Apart",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article universitaire sur la traduction en zoulou des expressions igbo du roman d'Achebe. Son titre reprend la formule et la rattache à la langue igbo.",
       },
@@ -704,6 +717,7 @@ export const PROVERBS: Proverb[] = [
         title: "Use of Language in Things Fall Apart",
         url: "https://www.cliffsnotes.com/literature/t/things-fall-apart/critical-essays/use-of-language-in-things-fall-apart",
         tier: "unverified",
+        source_kind: "discovery",
         notes:
           "Guide de lecture scolaire qui cite la phrase du premier chapitre du roman, où elle est dite des Igbo.",
       },
@@ -721,7 +735,7 @@ export const PROVERBS: Proverb[] = [
       "Chacun a droit à sa place : c'est la règle du « vivre et laisser vivre ».",
     origin: {
       status: "attested",
-      note: "Proverbe igbo qu'un personnage prononce, sous une forme abrégée, dans Things Fall Apart (1958) de Chinua Achebe. Une chronique de presse nigériane l'analyse comme proverbe igbo. Le texte igbo cité ici vient d'une source non vérifiée.",
+      note: "Proverbe igbo qu'un personnage prononce, sous une forme abrégée, dans Things Fall Apart (1958) de Chinua Achebe. Une chronique de presse nigériane l'analyse comme proverbe igbo. Le texte igbo cité ici vient d'une publication sur un réseau social, qui ne cite aucun recueil.",
     },
     entities: [
       {
@@ -746,6 +760,7 @@ export const PROVERBS: Proverb[] = [
           'A Dissection of the Proverb "Let the kite perch and let the eagle perch"',
         url: "https://www.opinionnigeria.com/a-dissection-of-the-proverb-let-the-kite-perch-and-let-the-eagle-perch-by-azuka-onwuka/",
         tier: "referenced",
+        source_kind: "press",
         notes:
           "Chronique signée dans la presse nigériane. Elle commente le proverbe comme proverbe igbo.",
       },
@@ -753,6 +768,7 @@ export const PROVERBS: Proverb[] = [
         title: "Things Fall Apart Chapter 3 Questions and Answers",
         url: "https://www.enotes.com/topics/things-fall-apart/quiz/chapter-3-questions-answers",
         tier: "unverified",
+        source_kind: "discovery",
         notes:
           "Guide de lecture qui situe la phrase au chapitre 3 du roman, dans la bouche du personnage Nwakibie.",
       },
@@ -760,6 +776,7 @@ export const PROVERBS: Proverb[] = [
         title: "IGBO PROVERBS (compte X) — « Egbe bere ugo bere… »",
         url: "https://x.com/IgboProverbs_/status/1198126440983801856",
         tier: "unverified",
+        source_kind: "community",
         notes:
           "Publication sur un réseau social qui donne le texte igbo complet et une traduction anglaise, sans citer de recueil.",
       },
@@ -825,6 +842,7 @@ export const PROVERBS: Proverb[] = [
         title: "Swahili Proverbs — Methali za Kiswahili",
         url: "https://swahiliproverbs.afrst.illinois.edu/proverbs.htm",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Collection universitaire en ligne. Elle donne le proverbe en swahili et sa traduction anglaise « Little by little fills up the measure ».",
       },
@@ -890,6 +908,7 @@ export const PROVERBS: Proverb[] = [
         title: "Swahili Proverbs — Methali za Kiswahili",
         url: "https://swahiliproverbs.afrst.illinois.edu/proverbs.htm",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Collection universitaire en ligne. Elle donne le proverbe en swahili et la traduction « Hurry, hurry, has no blessings ».",
       },
@@ -897,6 +916,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès. Il cite le proverbe comme swahili, avec son texte original, en exemple de redoublement.",
       },
@@ -962,6 +982,7 @@ export const PROVERBS: Proverb[] = [
         title: "Swahili Proverbs — Methali za Kiswahili",
         url: "https://swahiliproverbs.afrst.illinois.edu/proverbs.htm",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Collection universitaire en ligne. Elle donne le proverbe en swahili et la traduction « A person is people ».",
       },
@@ -1029,6 +1050,7 @@ export const PROVERBS: Proverb[] = [
           "It Takes A Village To Determine The Origins Of An African Proverb",
         url: "https://www.npr.org/sections/goatsandsoda/2016/07/30/487925796/it-takes-a-village-to-determine-the-origins-of-an-african-proverb",
         tier: "referenced",
+        source_kind: "press",
         notes:
           "Article de presse. Il cite ce proverbe en swahili, recueilli lors d'une discussion entre universitaires africanistes, comme proche du sens de « It takes a village ».",
       },
@@ -1071,6 +1093,7 @@ export const PROVERBS: Proverb[] = [
           "It Takes A Village To Determine The Origins Of An African Proverb",
         url: "https://www.npr.org/sections/goatsandsoda/2016/07/30/487925796/it-takes-a-village-to-determine-the-origins-of-an-african-proverb",
         tier: "referenced",
+        source_kind: "press",
         notes:
           "Article de presse. Il donne le proverbe en jita et explique que l'éducation de l'enfant appartient à la communauté.",
       },
@@ -1131,6 +1154,7 @@ export const PROVERBS: Proverb[] = [
         title: "Zulu Proverbs",
         url: "https://emandulo.apc.uct.ac.za/collection/Mayr/Publications/Mayr_Zulu_Proverbs.pdf",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article de la revue Anthropos (vol. 7), mis en ligne par l'université du Cap. Il donne le texte zoulou, la traduction anglaise et le sens « Nobody recognises his own faults ».",
       },
@@ -1138,6 +1162,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès. Il cite le proverbe comme zoulou, d'après Mayr (1912), sur l'aveuglement envers soi-même.",
       },
@@ -1199,6 +1224,7 @@ export const PROVERBS: Proverb[] = [
         title: "Zulu Proverbs",
         url: "https://emandulo.apc.uct.ac.za/collection/Mayr/Publications/Mayr_Zulu_Proverbs.pdf",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article de la revue Anthropos (vol. 7). Il donne le texte zoulou et la traduction « Height is not reached in a hurry », suivie d'un conseil contre la précipitation.",
       },
@@ -1259,6 +1285,7 @@ export const PROVERBS: Proverb[] = [
         title: "Zulu Proverbs",
         url: "https://emandulo.apc.uct.ac.za/collection/Mayr/Publications/Mayr_Zulu_Proverbs.pdf",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article de la revue Anthropos (vol. 7). Il donne le texte zoulou, la traduction et le sens « Everyone has his own qualities ».",
       },
@@ -1340,6 +1367,7 @@ export const PROVERBS: Proverb[] = [
         title: "Hunhu/Ubuntu in Traditional Southern African Thought",
         url: "https://iep.utm.edu/hunhu-ubuntu-southern-african-thought/",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article de l'Internet Encyclopedia of Philosophy, à comité de lecture. Il donne la maxime en zoulou et en ndébélé, son équivalent shona et une forme xhosa, toutes traduites « a person is a person through other persons ».",
       },
@@ -1386,6 +1414,7 @@ export const PROVERBS: Proverb[] = [
           "Communicating co-operation or individualism? The paradox of the Shona proverb",
         url: "https://academicjournals.org/journal/JASD/article-full-text/01F90D253039",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article du Journal of African Studies and Development, vol. 7, n° 5. Il donne le proverbe en shona, une traduction anglaise, et le discute avec des proverbes shona de sens opposé.",
       },
@@ -1433,6 +1462,7 @@ export const PROVERBS: Proverb[] = [
           "Communicating co-operation or individualism? The paradox of the Shona proverb",
         url: "https://academicjournals.org/journal/JASD/article-full-text/01F90D253039",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article de revue. Il donne le proverbe en shona avec la traduction « To dig for mice needs concerted effort ».",
       },
@@ -1474,6 +1504,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès. Il attribue le proverbe aux Ganda et donne le texte « bugu-bugu simuliro » avec sa traduction.",
       },
@@ -1509,6 +1540,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès. Il attribue le proverbe aux Ila, d'après Smith et Dale (1920), et le rapproche de « Rome ne s'est pas faite en un jour ».",
       },
@@ -1560,6 +1592,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès. Il attribue le proverbe aux Thonga, d'après Junod (1938), et en donne deux sens : les parents font la force, ou chacun doit rester à sa place.",
       },
@@ -1611,6 +1644,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès. Il attribue le proverbe aux Nyanja, d'après Gray (1944), dans le contexte des procès : le mensonge emmêle davantage.",
       },
@@ -1657,6 +1691,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès. Il attribue le proverbe aux Azande, d'après Evans-Pritchard (1963), et le présente comme un constat qu'on oppose dans les disputes.",
       },
@@ -1698,6 +1733,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès. Il attribue le proverbe aux Lamba et l'analyse comme parallélisme croisé.",
       },
@@ -1734,6 +1770,7 @@ export const PROVERBS: Proverb[] = [
         title: "Oral Literature in Africa — 14. Proverbs",
         url: "https://books.openedition.org/obp/1202?lang=en",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Ouvrage universitaire en libre accès. Il attribue cette question proverbiale aux Kikuyu et indique qu'elle sert à clore une discussion.",
       },
@@ -1785,6 +1822,7 @@ export const PROVERBS: Proverb[] = [
         title: "Ubuntu, nite et humanisme",
         url: "https://palaisdetokyo.com/en/ressource/ubuntu-nite-et-humanisme/",
         tier: "referenced",
+        source_kind: "unknown",
         notes:
           "Texte signé d'un philosophe, publié par le Palais de Tokyo. Il donne la maxime en wolof et la traduit « l'homme est le remède de l'homme ». Il en présente une variante à une voyelle près et renvoie à l'analyse de Senghor (1978).",
       },
@@ -1882,6 +1920,7 @@ export const PROVERBS: Proverb[] = [
           "La parole à travers quelques proverbes peuls du Fouladou (Sénégal)",
         url: "https://www.persee.fr/doc/jafr_0399-0346_1987_num_57_1_2162",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article du Journal des Africanistes (vol. 57), en ligne sur Persée. Il donne le proverbe en pulaar avec la traduction « la langue est l'ennemi de son propriétaire » et le proverbe antithétique « la langue est utilité ».",
       },
@@ -1943,6 +1982,7 @@ export const PROVERBS: Proverb[] = [
           "Grenier à mots — Bamanan (Dagné Jiginé), Document de travail de l'IIEDH n° 15.3",
         url: "https://www.unifr.ch/ethique/fr/assets/public/Files/bambaradt.pdf",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Document de travail publié par l'Institut interdisciplinaire d'éthique et des droits de l'homme (université de Fribourg). Il donne le proverbe en bambara, la traduction française et l'explication « la richesse peut disparaître, mais la fraternité est plus stable ».",
       },
@@ -2004,6 +2044,7 @@ export const PROVERBS: Proverb[] = [
           "Grenier à mots — Bamanan (Dagné Jiginé), Document de travail de l'IIEDH n° 15.3",
         url: "https://www.unifr.ch/ethique/fr/assets/public/Files/bambaradt.pdf",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Document de travail universitaire. Il donne le proverbe en bambara, la traduction française et l'explication « la réflexion, l'intelligence, la sagesse sont le propre de l'homme ».",
       },
@@ -2071,6 +2112,7 @@ export const PROVERBS: Proverb[] = [
           "Mobilités et migrations dans les discours et la littérature orale moose (Burkina Faso)",
         url: "https://journals.openedition.org/etudesafricaines/17667",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article des Cahiers d'études africaines (n° 213-214), en libre accès. Il donne le proverbe en mooré avec sa traduction française et analyse ses emplois dans les chants funéraires, le théâtre et les récits de migrants.",
       },
@@ -2107,6 +2149,7 @@ export const PROVERBS: Proverb[] = [
         title: "Approche cognitive du figement dans les proverbes baoulé",
         url: "https://cvc.cervantes.es/lengua/paremia/pdf/025/012_yao-kouakou.pdf",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article de la revue Paremia (n° 25, p. 149-160), en ligne sur le Centro Virtual Cervantes. Il donne le proverbe glosé mot à mot en baoulé, sa traduction française et l'explication de l'image.",
       },
@@ -2157,6 +2200,7 @@ export const PROVERBS: Proverb[] = [
         title: "A Collection of Ewe Proverbs",
         url: "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/images_afriprov_books_ewe100proverbs.pdf",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Recueil signé de cent proverbes ewe, imprimé à compte d'auteur à Nairobi et mis en ligne par la collection Afriprov. Il donne le texte ewe (n° 24), la traduction anglaise et le sens « There's no strength in isolation ».",
       },
@@ -2207,6 +2251,7 @@ export const PROVERBS: Proverb[] = [
         title: "A Collection of Ewe Proverbs",
         url: "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/images_afriprov_books_ewe100proverbs.pdf",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Recueil signé de proverbes ewe. Il donne le texte ewe (n° 46), la traduction anglaise et le sens « Patience pays ».",
       },
@@ -2264,6 +2309,7 @@ export const PROVERBS: Proverb[] = [
           'May 2012: "Know the price of a Kwanga while dad and mom are still alive." – Kongo Proverb',
         url: "https://afriprov.tangaza.ac.ke/apoftmmay2012/",
         tier: "unverified",
+        source_kind: "community",
         notes:
           "Collection en ligne African Proverbs, Sayings and Stories. Elle attribue le proverbe aux Kongo d'Angola et des deux Congo, donne le texte kikongo, et cite le recueil « Kongo Proverbs » (imprimé à compte d'auteur, Nairobi, mai 2012, n° 44).",
       },
@@ -2306,6 +2352,7 @@ export const PROVERBS: Proverb[] = [
           "La politesse dans le proverbe kabyle : entre éthique et esthétique",
         url: "https://aleph.edinum.org/14804",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article de la revue Aleph (vol. 12, n° 2). Il donne le proverbe en kabyle avec la traduction « une parole douce lie les cœurs » et l'analyse, d'après le recueil de Hamadache (2015).",
       },
@@ -2348,6 +2395,7 @@ export const PROVERBS: Proverb[] = [
           "La politesse dans le proverbe kabyle : entre éthique et esthétique",
         url: "https://aleph.edinum.org/14804",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article de la revue Aleph (vol. 12, n° 2). Il donne le proverbe en kabyle avec la traduction « silence vaut mieux que science » et le lit comme un éloge de la retenue.",
       },
@@ -2389,6 +2437,7 @@ export const PROVERBS: Proverb[] = [
         title: "Cross-cultural Wisdom in English and Amharic Proverbs",
         url: "https://ejol.aau.edu.et/index.php/EJOLL/article/download/2842/2308/4747",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article de l'Ethiopian Journal of Languages and Literature (vol. 14). Il donne le proverbe en écriture guèze et le classe sous l'évolution des phénomènes, avec l'image de l'œuf qui devient poussin, en face de l'anglais « Rome was not built in a day ».",
       },
@@ -2435,6 +2484,7 @@ export const PROVERBS: Proverb[] = [
           "Proverbs in Language Teaching: Using the Example of Let's Speak Tigrinya (2018)",
         url: "https://journals.sub.uni-hamburg.de/aethiopica/article/view/1347",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article de la revue Aethiopica (vol. 23), en libre accès, université de Hambourg. Il donne le proverbe en écriture guèze et en translittération, le traduit « Lie is a one-evening supper » et explique qu'un mensonge ne dure pas.",
       },
@@ -2482,6 +2532,7 @@ export const PROVERBS: Proverb[] = [
           "Proverbs in Language Teaching: Using the Example of Let's Speak Tigrinya (2018)",
         url: "https://journals.sub.uni-hamburg.de/aethiopica/article/view/1347",
         tier: "referenced",
+        source_kind: "academic",
         notes:
           "Article de la revue Aethiopica (vol. 23). Il donne le proverbe en écriture guèze, sa traduction anglaise et son sens : chaque action en son temps et dans l'ordre.",
       },
@@ -2544,6 +2595,7 @@ export const PROVERBS: Proverb[] = [
           'Apr. 2006: "Until the lion has his or her own storyteller, the hunter will always have the best part of the story." – Ewe-mina (Benin, Ghana, and Togo) Proverb',
         url: "https://afriprov.tangaza.ac.ke/april-2006-proverb-quntil-the-lion-has-his-or-her-own-storyteller-the-hunter-will-always-have-the-best-part-of-the-storyq-ewe-mina-benin-ghana-and-togo/",
         tier: "unverified",
+        source_kind: "community",
         notes:
           "Collection en ligne African Proverbs, Sayings and Stories (université Tangaza). Elle attribue le proverbe aux Ewe-Mina du Bénin, du Ghana et du Togo et donne le texte original. Elle ne cite aucun recueil publié et mentionne une variante igbo sur les historiens.",
       },
@@ -2551,6 +2603,7 @@ export const PROVERBS: Proverb[] = [
         title: "Chinua Achebe, The Art of Fiction No. 139",
         url: "https://www.theparisreview.org/interviews/1720/the-art-of-fiction-no-139-chinua-achebe",
         tier: "referenced",
+        source_kind: "press",
         notes:
           "Entretien publié dans The Paris Review. Achebe y cite « ce grand proverbe » : tant que les lions n'auront pas leurs propres historiens, l'histoire de la chasse glorifiera toujours le chasseur. Il ne l'attribue à aucun peuple précis.",
       },
@@ -2593,6 +2646,7 @@ export const PROVERBS: Proverb[] = [
           'Jan. 2007: "Two ants do not fail to pull one grasshopper." – Haya (Tanzania) Proverb',
         url: "https://afriprov.tangaza.ac.ke/january2007/",
         tier: "unverified",
+        source_kind: "community",
         notes:
           "Collection en ligne African Proverbs, Sayings and Stories (université Tangaza). Elle attribue le proverbe aux Haya de Tanzanie et donne le texte haya, sans citer de recueil publié.",
       },
@@ -2639,6 +2693,7 @@ export const PROVERBS: Proverb[] = [
         title: "A Collection of 100 Maasai Proverbs",
         url: "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/A-collection-of-100-Maasai-Proverbs.pdf",
         tier: "unverified",
+        source_kind: "academic",
         notes:
           "Recueil en ligne de la collection Afriprov. Il donne le proverbe en maa (n° 49) avec des traductions anglaise, française et swahilie, et le rapproche d'un verset biblique. Il ne nomme ni compilateur ni source.",
       },
@@ -2675,6 +2730,7 @@ export const PROVERBS: Proverb[] = [
         title: "Ohabolana: Malagasy Proverbs",
         url: "https://glli-us.org/2021/12/11/ohabolana-malagasy-proverbs/",
         tier: "unverified",
+        source_kind: "community",
         notes:
           "Billet publié par la Global Literature in Libraries Initiative. Il donne une douzaine de proverbes malgaches avec leur texte et une traduction anglaise, sans citer de recueil publié ni nommer de groupe.",
       },
@@ -2730,6 +2786,7 @@ export const PROVERBS: Proverb[] = [
         title: "Somali Proverbs with Equivalent English Proverbs",
         url: "https://ismail4all.wordpress.com/2013/11/22/somali-proverbs-with-equivalent-english-proverbs-2/",
         tier: "unverified",
+        source_kind: "community",
         notes:
           "Blog personnel qui associe des proverbes somalis à des équivalents anglais, sans traduction littérale ni recueil cité.",
       },
@@ -2751,6 +2808,7 @@ export const PROVERBS: Proverb[] = [
           '"If you want to travel fast, travel alone; if you want to travel far, travel with others." (message à la liste ADS-L)',
         url: "https://listserv.linguistlist.org/pipermail/ads-l/2016-March/141091.html",
         tier: "referenced",
+        source_kind: "community",
         notes:
           "Message signé du co-auteur du Dictionary of Modern Proverbs (Yale). Il présente la phrase comme une réponse au proverbe anglo-américain « He who travels fastest travels alone ». Il qualifie l'attribution africaine de probablement fausse et donne des attestations anglaises à partir de 1917.",
       },
@@ -2759,6 +2817,7 @@ export const PROVERBS: Proverb[] = [
           "Who first said: if you want to go fast, go alone; if you want to go far, go together?",
         url: "https://andrewwhitby.com/2020/12/25/if-you-want-to-go-fast/",
         tier: "unverified",
+        source_kind: "community",
         notes:
           "Enquête documentée sur un blog personnel. Elle date la première attribution africaine de 2004, dans un livre de Bill Hull. Elle rapporte que Mieder et Doyle ont remplacé « peut-être à tort » par « à tort » dans leur publication. Elle cite aussi une variante luo et une origine burkinabè avancée par un missionnaire, sans texte original pour aucune des deux.",
       },
@@ -2780,6 +2839,7 @@ export const PROVERBS: Proverb[] = [
           "It Takes A Village To Determine The Origins Of An African Proverb",
         url: "https://www.npr.org/sections/goatsandsoda/2016/07/30/487925796/it-takes-a-village-to-determine-the-origins-of-an-african-proverb",
         tier: "referenced",
+        source_kind: "press",
         notes:
           "Article de presse (NPR). Il conclut qu'on ne peut pas remonter à une origine précise. Il cite des universitaires et deux proverbes voisins, l'un en jita et l'autre en swahili, qui ne sont pas cette phrase.",
       },
@@ -2801,6 +2861,7 @@ export const PROVERBS: Proverb[] = [
           "Discours de Hamadou Hampâté Bâ à la commission Afrique de l'UNESCO",
         url: "https://www.ina.fr/ina-eclaire-actu/audio/phd86073514/discours-de-hamadou-hampate-ba-a-la-commission-afrique-de-l-unesco",
         tier: "official",
+        source_kind: "archive",
         notes:
           "Archive sonore de l'Institut national de l'audiovisuel, datée du 1er décembre 1960. Hampâté Bâ, qui dirige alors l'institut scientifique du Mali, y plaide pour sauver des traditions conservées « dans la mémoire d'hommes qui meurent chaque jour ». La notice ne contient pas le mot « bibliothèque ».",
       },
@@ -2809,6 +2870,7 @@ export const PROVERBS: Proverb[] = [
           "Quelle est l'origine du proverbe ? Un vieillard qui meurt, c'est une bibliothèque qui brûle",
         url: "https://www.dicocitations.com/questions-reponses/question/quelle-est-lorigine-du-proverbe-un-vieillard-qui-meurt-cest-une-bibliotheque-qui-brule/",
         tier: "unverified",
+        source_kind: "discovery",
         notes:
           "Site de citations. Il situe la phrase à la conférence générale de l'UNESCO de 1960 et rapporte la formule « chaque fois qu'un vieillard meurt, c'est une bibliothèque qui a brûlé » à 1962, sans renvoyer à un document d'archive.",
       },
@@ -2830,6 +2892,7 @@ export const PROVERBS: Proverb[] = [
           'Quote by African Proverb: "A child that is not embraced by the village will..."',
         url: "https://www.goodreads.com/quotes/9946467-a-child-that-is-not-embraced-by-the-village-will",
         tier: "unverified",
+        source_kind: "discovery",
         notes:
           "Site de citations. Il attribue la phrase à « African Proverb » sans nommer de peuple, de langue ni de source.",
       },
@@ -2838,6 +2901,7 @@ export const PROVERBS: Proverb[] = [
           "The Child Who Is Not Embraced By The Village: A Powerful Proverb About Connection and Community",
         url: "https://captainaxom.medium.com/the-child-who-is-not-embraced-by-the-village-a-powerful-proverb-about-connection-and-community-d0cf0a4931e5",
         tier: "unverified",
+        source_kind: "community",
         notes:
           "Billet de blog qui commente la phrase comme proverbe africain, sans texte original ni source vérifiable.",
       },
@@ -2858,6 +2922,7 @@ export const PROVERBS: Proverb[] = [
           "#12 - West African Proverb: If You Think You're Too Small to Make A Difference…",
         url: "https://www.proverbsonblast.com/p/12-if-you-think-youre-too-small-to",
         tier: "unverified",
+        source_kind: "community",
         notes:
           "Lettre d'information personnelle qui présente la phrase comme proverbe d'Afrique de l'Ouest entendu pendant l'enfance de l'auteur, sans pays, langue ni source. L'auteur note lui-même qu'elle a été popularisée par le dalaï-lama.",
       },
@@ -2866,6 +2931,7 @@ export const PROVERBS: Proverb[] = [
           'Quote by Dalai Lama XIV: "If you think you are too small to make a difference..."',
         url: "https://www.goodreads.com/quotes/7777-if-you-think-you-are-too-small-to-make-a",
         tier: "unverified",
+        source_kind: "discovery",
         notes:
           "Site de citations qui attribue la même phrase au dalaï-lama, sans référence.",
       },

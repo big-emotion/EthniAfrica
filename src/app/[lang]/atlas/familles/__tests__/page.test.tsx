@@ -93,10 +93,8 @@ vi.mock("@/components/family/LanguageFamilyDetailViewV2", () => ({
   ),
 }));
 
-vi.mock("@/components/source-transparency/ConfidenceChip", () => ({
-  ConfidenceChip: ({ confidenceScore }: { confidenceScore: number | null }) => (
-    <div data-testid="confidence-chip" data-confidence={confidenceScore} />
-  ),
+vi.mock("@/components/source-transparency/SourceReviewChip", () => ({
+  SourceReviewChip: () => <div data-testid="source-review-chip" />,
 }));
 
 vi.mock("@/components/source-transparency/PinnedVersionBanner", () => ({
@@ -449,8 +447,8 @@ describe("/[lang]/familles/[slug] page", () => {
 
   describe("versioned URLs", () => {
     // @req REQ-019
-    // @req REQ-025
-    it("renders the pinned snapshot, banner first and without any panel chapter", async () => {
+    // @req REQ-025 REQ-194
+    it("renders the pinned snapshot, banner first, with no source review chip and no panel chapter", async () => {
       mockGetRevisionSnapshot.mockResolvedValueOnce({
         data: { name_fr: "Famille bantu" },
         version: 8,
@@ -459,7 +457,7 @@ describe("/[lang]/familles/[slug] page", () => {
         doctrine: null,
       });
 
-      const { container, getByRole, getByTestId, getByText } =
+      const { container, getByRole, getByTestId, getByText, queryByTestId } =
         await renderFamillesPage("FLG_BANTU@v8");
 
       expect(mockGetRevisionSnapshot).toHaveBeenCalledWith(
@@ -484,10 +482,7 @@ describe("/[lang]/familles/[slug] page", () => {
         "data-live-url",
         getFamilyRoute("fr", "FLG_BANTU")
       );
-      expect(getByTestId("confidence-chip")).toHaveAttribute(
-        "data-confidence",
-        "91"
-      );
+      expect(queryByTestId("source-review-chip")).toBeNull();
       expect(
         getByText(/Ce contenu est une capture archivée/)
       ).toBeInTheDocument();
@@ -516,7 +511,9 @@ describe("/[lang]/familles/[slug] page", () => {
         "FLG_BANTU",
         7
       );
-      expect(getByRole("link", { name: "Lire la doctrine" })).toHaveAttribute(
+      expect(
+        getByRole("link", { name: "Comprendre notre méthode" })
+      ).toHaveAttribute(
         "href",
         `${getLocalizedRoute("fr", "doctrine")}/classifications-contestees@v42`
       );
@@ -535,7 +532,7 @@ describe("/[lang]/familles/[slug] page", () => {
       const { queryByRole } = await renderFamillesPage("FLG_BANTU@v7");
 
       expect(
-        queryByRole("link", { name: "Lire la doctrine" })
+        queryByRole("link", { name: "Comprendre notre méthode" })
       ).not.toBeInTheDocument();
     });
 

@@ -7,14 +7,14 @@
   "content": {
     "appellations": {
       "mainName": "Datoga",
-      "selfAppellation": "Datooga (endonyme ; sing. Datog)",
+      "selfAppellation": "Datooga (nom employé par le peuple lui-même ; Datog pour une personne)",
       "exonyms": [
         "Tatog (variante orthographique)",
         "Barabaig (nom du plus grand sous-groupe, parfois utilise pour l'ensemble)",
         "Mang'ati (terme pejoratif utilise par les Maasai et les Bantous, signifiant 'ennemis')",
         "Datog"
       ],
-      "originOfExonyms": "Le terme Mang'ati (ennemi) est un exonyme negatif utilise par les Maasai et certains peuples bantous voisins. Barabaig est le nom du sous-groupe le plus nombreux et visible, parfois utilise par les etrangers pour designer l'ensemble du peuple. L'endonyme propre est Datooga.",
+      "originOfExonyms": "Les Maasai et certains peuples voisins de langue bantoue emploient Mang'ati, ennemi, avec un sens négatif. Barabaig est le groupe le plus nombreux et le plus visible. Des personnes extérieures utilisent parfois son nom pour tout le peuple. Celui-ci se nomme lui-même Datooga.",
       "whyProblematic": "L'utilisation du terme Barabaig pour designer l'ensemble du peuple est inexacte et reductrice, car les Datooga comprennent au moins dix sous-groupes. Le terme Mang'ati est offensant et ne doit pas etre utilise.",
       "contemporaryUsage": "Datooga ou Datoga est le terme prefere dans les contextes academiques et de droits des peuples autochtones. Barabaig reste courant dans la litterature ethnographique ancienne. Les conflits fonciers avec l'Etat tanzanien et les agriculteurs ont fait des Datoga un cas emblematique dans les debats sur les droits des peuples pastoraux en Afrique de l'Est.",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -97,7 +97,8 @@
       {
         "title": "SIL Ethnologue — Datooga language (tcc)",
         "url": "https://www.ethnologue.com/language/tcc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Nyamera Treks and Safaris — The Datoga Tribe of Tanzania",
@@ -112,17 +113,20 @@
       {
         "title": "Lane, Charles — Barabaig: East African Cattle Herders in Jeopardy. San Francisco: Westview Press, 1996",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog — Datooga",
         "url": "https://glottolog.org/resource/languoid/id/dato1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Datoga people profile",
         "url": "https://joshuaproject.net/people_groups/11040/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

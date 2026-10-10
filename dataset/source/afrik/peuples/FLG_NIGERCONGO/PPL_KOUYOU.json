@@ -84,17 +84,20 @@
       {
         "title": "Encyclopaedia Britannica - Republic of the Congo: People",
         "url": "https://www.britannica.com/place/Republic-of-the-Congo/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Glottolog 5.2 - Koyo (koh)",
         "url": "https://glottolog.org/resource/languoid/id/koyo1242",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue - Koyo language (koh)",
         "url": "https://www.ethnologue.com/language/koh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Expeditions Ducret - Ethnic Groups of Congo",

@@ -4,8 +4,263 @@
   "nameEn": "Guinea-Bissau",
   "nameOfficial": "République de Guinée-Bissau (República da Guiné-Bissau)",
   "summary": "La Guinée-Bissau associe le mot portugais « Guiné », employé pour la côte ouest-africaine, au nom de sa capitale. Elle fut le royaume mandinka de Kaabu et le territoire des peuples côtiers et bijagó, avant quatre siècles de présence portugaise. Balante, Fula, Mandinka, Papel et Manjak y parlent, outre le portugais, un créole largement répandu.",
-  "etymology": "Le nom \"Guinée-Bissau\" combine \"Guinée\" (du portugais \"Guiné\", terme utilisé pour désigner la côte ouest-africaine) et \"Bissau\" (nom de la capitale, dérivé du nom d'un chef local ou d'un terme local). Le nom \"Bissau\" a été ajouté en 1973 lors de l'indépendance pour différencier le pays de la Guinée-Conakry (Guinée).",
+  "etymology": "Le nom \"Guinée-Bissau\" combine \"Guinée\" (du portugais \"Guiné\", terme utilisé pour désigner la côte ouest-africaine) et \"Bissau\" (nom de la capitale, qui viendrait du nom d'un chef local ou d'un terme local). Le nom \"Bissau\" a été ajouté en 1973 lors de l'indépendance pour différencier le pays de la Guinée-Conakry (Guinée).",
   "nameOriginActor": "Le nom \"Guinée\" a été donné par les navigateurs portugais au XVe siècle. Le nom \"Guiné Portuguesa\" (Guinée portugaise) a été utilisé pendant la colonisation. Le nom \"Guinée-Bissau\" a été officialisé lors de l'indépendance en 1973 par le PAIGC (Parti africain pour l'indépendance de la Guinée et du Cap-Vert) pour différencier le pays de la Guinée-Conakry.",
+  "nameHistory": {
+    "summary": "Le nom Guinée-Bissau désigne un pays d'Afrique de l'Ouest, la République de Guinée-Bissau, qui joint au mot Guinée le nom de sa capitale, Bissau. Pendant la colonisation, le pays s'appelait Guinée portugaise. L'origine du mot Guinée est discutée ; nous présentons plus bas l'explication que donnent les sources.",
+    "names": [
+      {
+        "nameText": "Guinée-Bissau",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le mot Guinée, nom portugais de la côte ouest de l'Afrique, joint au nom de la capitale depuis 1973.",
+        "periodLabel": "Proclamé en 1973 ; nom de l'État indépendant depuis 1974",
+        "accounts": [
+          {
+            "period": {
+              "from": 1974,
+              "to": null,
+              "label": "Depuis le 10 septembre 1974"
+            },
+            "era": "modern",
+            "statement": "Le nom Guinée-Bissau est celui de l'État indépendant depuis le 10 septembre 1974, selon l'Histoire générale de l'Afrique et l'Office of the Historian. La Constitution de 1984 commence par « La Guinée-Bissau est une République souveraine ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Guinée-Bissau : indépendante le 10 septembre 1974, puissance coloniale le Portugal, avec la note « Guiné-Bissau, anciennement Guiné Portuguesa »."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Guinea-Bissau",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/guinea-bissau",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 10 octobre 2026. Les États-Unis reconnaissent la République de Guinée-Bissau le 10 septembre 1974 ; le pays était auparavant sous souveraineté portugaise."
+              },
+              {
+                "title": "Constitution de la République de Guinée-Bissau, 16 mai 1984",
+                "author": "République de Guinée-Bissau",
+                "year": 1984,
+                "url": "https://mjp.univ-perp.fr/constit/gw1984.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "préambule et article premier",
+                "notes": "Texte lu en traduction française sur la Digithèque MJP de l'Université de Perpignan. Le préambule évoque « l'indépendance de la République de Guinée-Bissau proclamée le 24 septembre 1973 » ; l'article premier commence par « La Guinée-Bissau est une République souveraine »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Guinée-Bissau joint au mot Guinée le nom de la capitale, Bissau. Le mot Guinée a d'abord désigné, chez les premiers navigateurs portugais, toute la côte ouest de l'Afrique, selon Yves Person ; son origine est discutée, et nous présentons plus bas l'explication que donnent les sources.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Guinea-Bissau",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2024,
+                "url": "https://assets.publishing.service.gov.uk/media/65f31c5efa1851001a011765/Guinea-Bissau_toponymic_factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2024, lue le 10 octobre 2026. Nom du pays en portugais, sa langue officielle : Guiné-Bissau ; capitale : Bissau ; indépendance obtenue du Portugal en 1974."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers — premiers contacts avec les Portugais — de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 329",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. Par le terme Guinée, l'auteur désigne la côte occidentale d'Afrique de l'embouchure de la Gambie au delta du Niger : « C'est l'acception ancienne, synonyme d'Éthiopie ou pays des Noirs sous la plume des premiers navigateurs portugais. »"
+              },
+              {
+                "title": "Guinea: The Mobilization of a People, préface",
+                "author": "Claude Rivière",
+                "year": null,
+                "url": "https://webguine.site/bibliotheque/sociology/riviere/mobilization_people/preface.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ithaca, Cornell University Press. Préface lue en ligne le 10 octobre 2026 sur le site webGuinée. L'auteur écrit que le nom Guinée viendrait « probablement » du berbère aginau ou agnau, celui dont la langue est incompréhensible, et qu'à la fin du XIXe siècle plusieurs puissances coloniales se taillent chacune leur Guinée : celle du Portugal, avec Bissau pour capitale, et la Guinée espagnole, en partie insulaire (Fernando Po) et en partie continentale (Río Muni), avec Santa Isabel pour capitale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1973,
+              "label": "24 septembre 1973"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée-Bissau est celui de la République proclamée le 24 septembre 1973 dans les zones libérées par le PAIGC, selon le préambule de la Constitution de 1984 et la Digithèque MJP. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu le texte de la proclamation lui-même. Le pays et ses peuples existaient bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Constitution de la République de Guinée-Bissau, 16 mai 1984",
+                "author": "République de Guinée-Bissau",
+                "year": 1984,
+                "url": "https://mjp.univ-perp.fr/constit/gw1984.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "préambule et article premier",
+                "notes": "Texte lu en traduction française sur la Digithèque MJP de l'Université de Perpignan. Le préambule évoque « l'indépendance de la République de Guinée-Bissau proclamée le 24 septembre 1973 » ; l'article premier commence par « La Guinée-Bissau est une République souveraine »."
+              },
+              {
+                "title": "Guinée-Bissau : Constitution du 16 mai 1984, présentation et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/gw.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Ses repères historiques donnent : « 1879 - Colonie séparée du Cap-Vert. 1951 - Statut de province d'outre-mer », la proclamation de l'indépendance dans les zones libérées le 24 septembre 1973 et sa proclamation à Bissau le 10 septembre 1974."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1453,
+              "to": 1453,
+              "label": "Chronique achevée en 1453"
+            },
+            "era": "polity",
+            "statement": "On parle alors de Guinée pour désigner la terre des Noirs, que le chroniqueur portugais Gomes Eanes de Zurara dit faite de terres très différentes les unes des autres.",
+            "formAsWritten": "Guinee",
+            "before": true,
+            "sources": [
+              {
+                "title": "Chronica do descobrimento e conquista de Guiné",
+                "author": "Gomes Eanes de Zurara",
+                "year": 1841,
+                "url": "https://archive.org/details/chronicadodesco00zuragoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 158",
+                "notes": "Chronique achevée en 1453 selon son éditeur, publiée à Paris chez J.-P. Aillaud en 1841, lue dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur nomme « Guinee » la terre des Noirs, « que som chamados Guinéus », et précise que ce n'est pas une seule terre, mais des terres très différentes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Guinée-Bissau tient son premier mot de Guinée, qui viendrait du berbère akal n ignaoun, « la terre des Ignaoun », par lequel les berbérophones désignaient au Moyen Âge l'Afrique sahélienne, selon Rachid Agrour. Claude Rivière le rattache aussi au berbère agnau, celui dont on ne comprend pas la langue.",
+            "hypothesisGroup": "origine du mot Guinée",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 74 et note 20",
+                "notes": "Lu en texte intégral sur OpenEdition le 10 octobre 2026. L'auteur écrit que les berbérophones désignaient au Moyen Âge l'Afrique sahélienne par l'expression akal n ignaoun, la terre des Ignaoun, et qu'il faut « peut-être » y voir l'origine des noms Guinée, Guinée-Bissau et Guinée équatoriale. Il s'appuie sur Maurice Delafosse (1924, p. 153), que nous n'avons pas lu."
+              },
+              {
+                "title": "Guinea: The Mobilization of a People, préface",
+                "author": "Claude Rivière",
+                "year": null,
+                "url": "https://webguine.site/bibliotheque/sociology/riviere/mobilization_people/preface.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ithaca, Cornell University Press. Préface lue en ligne le 10 octobre 2026 sur le site webGuinée. L'auteur écrit que le nom Guinée viendrait « probablement » du berbère aginau ou agnau, celui dont la langue est incompréhensible, et qu'à la fin du XIXe siècle plusieurs puissances coloniales se taillent chacune leur Guinée : celle du Portugal, avec Bissau pour capitale, et la Guinée espagnole, en partie insulaire (Fernando Po) et en partie continentale (Río Muni), avec Santa Isabel pour capitale."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Guinée portugaise",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Jusqu'en 1974",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1974,
+              "label": "Jusqu'au 10 septembre 1974"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée portugaise, Guiné Portuguesa en portugais, est celui de la colonie qui devient la Guinée-Bissau indépendante, selon l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "formAsWritten": "Guiné Portuguesa",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Guinée-Bissau : « Guiné-Bissau, anciennement Guiné Portuguesa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1879,
+              "to": 1951,
+              "label": "De 1879 à 1951"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée portugaise est celui d'un territoire qui devient en 1879 une colonie séparée du Cap-Vert, puis en 1951 une province d'outre-mer, selon la Digithèque MJP.",
+            "sources": [
+              {
+                "title": "Guinée-Bissau : Constitution du 16 mai 1984, présentation et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/gw.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Ses repères historiques donnent : « 1879 - Colonie séparée du Cap-Vert. 1951 - Statut de province d'outre-mer », la proclamation de l'indépendance dans les zones libérées le 24 septembre 1973 et sa proclamation à Bissau le 10 septembre 1974."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1899,
+              "label": "Fin du XIXe siècle"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée portugaise désigne l'une des Guinées que plusieurs puissances coloniales se taillent sur cette côte à la fin du XIXe siècle ; elle a Bissau pour capitale, selon Claude Rivière.",
+            "sources": [
+              {
+                "title": "Guinea: The Mobilization of a People, préface",
+                "author": "Claude Rivière",
+                "year": null,
+                "url": "https://webguine.site/bibliotheque/sociology/riviere/mobilization_people/preface.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ithaca, Cornell University Press. Préface lue en ligne le 10 octobre 2026 sur le site webGuinée. L'auteur écrit que le nom Guinée viendrait « probablement » du berbère aginau ou agnau, celui dont la langue est incompréhensible, et qu'à la fin du XIXe siècle plusieurs puissances coloniales se taillent chacune leur Guinée : celle du Portugal, avec Bissau pour capitale, et la Guinée espagnole, en partie insulaire (Fernando Po) et en partie continentale (Río Muni), avec Santa Isabel pour capitale."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -89,7 +344,7 @@
         "mainRegion": "Toutes les régions de la Guinée-Bissau",
         "languages": ["Fulfulde (ful", "ISO 639-3)", "portugais", "créole"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Fulɓe\" est l'auto-appellation. \"Peul\" et \"Fulani\" sont des exonymes acceptés. \"Fellata\" peut avoir une connotation péjorative dans certains contextes et doit être évité. Pasteurs et commerçants musulmans."
+        "appellationRemarks": "Le peuple se nomme Fulɓe. Peul et Fulani sont aussi des noms acceptés, donnés de l'extérieur. Fellata peut être méprisant dans certains contextes ; il est donc à éviter. Les groupes décrits ici sont musulmans et pratiquent l'élevage et le commerce."
       },
       {
         "name": "Mandinka",
@@ -104,7 +359,7 @@
         "mainRegion": "Toutes les régions de la Guinée-Bissau",
         "languages": ["Mandinka (mnk", "ISO 639-3)", "portugais", "créole"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Mandinka\" ou \"Mandiŋka\" est l'auto-appellation. \"Mandingue\" est l'exonyme français accepté. \"Mandingo\" est un terme historique qui peut avoir une connotation péjorative dans certains contextes et doit être évité. Héritiers du royaume de Kaabu."
+        "appellationRemarks": "Les personnes concernées se nomment Mandinka ou Mandiŋka. Mandingue est un nom français donné de l'extérieur et accepté. Mandingo est un terme historique qui peut être méprisant dans certains contextes ; il est donc à éviter. Les groupes présentés ici sont les héritiers du royaume de Kaabu."
       },
       {
         "name": "Papel",
@@ -226,17 +481,20 @@
       {
         "title": "SIL Ethnologue – Languages of Guinea-Bissau",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Guinea-Bissau",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Guinée-Bissau",
         "url": "https://www.unfpa.org/data/world-population/GW",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Speeches and Writings\"",
@@ -246,7 +504,8 @@
       {
         "title": "Recensements guinéens-bissau",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples de la Guinée-Bissau",
@@ -261,12 +520,14 @@
       {
         "title": "CIA World Factbook – Guinea-Bissau (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

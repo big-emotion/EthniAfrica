@@ -238,7 +238,6 @@ export default async function FamillesSlugPage({
             entityId={parsed.slug}
             version={parsed.version}
             publishedAt={snapshot.published_at}
-            confidence={snapshot.confidence}
             snapshotData={snapshot.data}
             doctrine={snapshot.doctrine}
             lang={lang}

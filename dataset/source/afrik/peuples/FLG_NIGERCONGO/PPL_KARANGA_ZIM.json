@@ -95,27 +95,32 @@
       {
         "title": "Joshua Project — Shona-Karanga in Zimbabwe",
         "url": "https://joshuaproject.net/people_groups/12530",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Shona-Karanga of Zimbabwe",
         "url": "https://peoplegroups.org/people_groups/pg015659/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Shona language (sna)",
         "url": "https://www.ethnologue.com/language/sna/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Karanga people",
         "url": "https://www.britannica.com/topic/Karanga-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "HTS Theological Studies — Karanga people Masvingo",
         "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S0259-94222016000400109",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Chigwedere, Aeneas. The Karanga Empire. Books for Africa, Harare, 1986",

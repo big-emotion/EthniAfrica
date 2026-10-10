@@ -146,8 +146,19 @@ describe("ArticleView", () => {
     const entry = document.getElementById("source-src-1") as HTMLElement;
     expect(entry).toHaveTextContent("A published work about the name");
     expect(entry).toHaveTextContent("chap. 2");
-    expect(entry).toHaveTextContent("Référencée");
     expect(follows(text(), entry)).toBe(true);
+  });
+
+  // The reader is told what a source is, never how far to trust it
+  // (doctrine §1.1): no tier word sits beside a reference.
+  // @req REQ-092
+  it("lists a reference without its tier", () => {
+    renderView(videoArticle());
+
+    const entry = document.getElementById("source-src-1") as HTMLElement;
+    expect(entry).not.toHaveTextContent(
+      /Référencée|Officielle|Non vérifiée|En attente d'examen/
+    );
   });
 
   // @req REQ-114
@@ -186,5 +197,42 @@ describe("ArticleView", () => {
       "href",
       articleHref("fr", "other")
     );
+  });
+
+  /**
+   * Doctrine §1.1: every source a reader sees says what kind of thing it is.
+   * An article's sources have their own vocabulary (book, press, oral…);
+   * a source that declares none prints no type rather than a guess.
+   */
+  // @req REQ-161
+  it("names each source's kind in the references, and nothing when undeclared", () => {
+    const record = videoArticle();
+    record.sources = [
+      {
+        id: "src-1",
+        title: "A published work",
+        tier: "referenced",
+        kind: "book",
+      },
+      { id: "src-2", title: "A broadcast", tier: "referenced", kind: "press" },
+      {
+        id: "src-3",
+        title: "An elder's account",
+        tier: "referenced",
+        kind: "oral",
+      },
+      { id: "src-4", title: "No kind given", tier: "referenced" },
+    ];
+    record.fr.sections[0].sourceRefs = ["src-1"];
+    renderView(record);
+
+    const references = screen
+      .getByRole("heading", { name: "Sources consultées" })
+      .closest("section") as HTMLElement;
+    const items = within(references).getAllByRole("listitem");
+    expect(items[0]).toHaveTextContent("Livre");
+    expect(items[1]).toHaveTextContent("Article de presse");
+    expect(items[2]).toHaveTextContent("Tradition orale");
+    expect(items[3].querySelector("[data-source-kind]")).toBeNull();
   });
 });

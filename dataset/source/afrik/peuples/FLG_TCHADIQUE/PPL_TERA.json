@@ -9,7 +9,7 @@
       "mainName": "Tera",
       "selfAppellation": "Nyimatli (ou Nymalti)",
       "exonyms": ["Tera", "Terawa (pluriel en haoussa)", "Nyimatli"],
-      "originOfExonyms": "Le nom Tera est un exonyme utilise par les voisins et l'administration coloniale britannique. Les locuteurs se designent eux-memes sous le nom de Nyimatli (aussi ecrit Nymalti), terme qui designe a la fois le peuple et sa langue. Le nom Tera est d'usage courant dans la litterature ethnographique et administrative.",
+      "originOfExonyms": "Les voisins et l'administration coloniale britannique emploient Tera. Les personnes concernées se nomment Nyimatli, aussi écrit Nymalti, un nom qui désigne le peuple et sa langue. Tera reste courant dans les études sur ce peuple et les documents administratifs.",
       "whyProblematic": "La classification du tera comme unique langue ou comme ensemble dialectal est debattue. Roger Blench (2006) considere le dialecte Pidlimdi (Hinna) comme une langue distincte. Le terme Terawa, forme plurielle en haoussa, est parfois utilise pour designer le groupe.",
       "contemporaryUsage": "Le terme Tera est utilise en anglais et dans la litterature scientifique. Les locuteurs utilisent Nyimatli pour se designer eux-memes. La langue est enseignee sous le nom de Tera dans les programmes de developpement de la langue maternelle.",
       "linguisticFamily": "FLG_TCHADIQUE",
@@ -87,22 +87,26 @@
       {
         "title": "Ethnologue SIL – Tera language (ttr)",
         "url": "https://www.ethnologue.com/language/ttr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project – Tera in Nigeria",
         "url": "https://joshuaproject.net/people_groups/15440",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes – Tera people",
         "url": "https://101lasttribes.com/tribes/tera.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Triumph Newspapers – Ngwarda annual harvesting festival of Tera people, 2024",
         "url": "https://triumphnewspapers.ng/ngwarda-annual-harvesting-festival-of-tera-people-in-zambuk-gombe-state/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "Tench, Paul. A New Orthography in Tera",
@@ -117,12 +121,14 @@
       {
         "title": "Blench, Roger. 2006. Afro-Asiatic Languages. Cambridge University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Peoplegroups.org – Tera in Nigeria, population 2024",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "missionary_database"
       }
     ]
   }

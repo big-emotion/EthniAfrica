@@ -74,12 +74,14 @@
       {
         "title": "Doe language – Ethnologue",
         "url": "https://www.ethnologue.com/language/doe/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Doe in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/11584",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "History of Bagamoyo – Freundeskreis Bagamoyo",
@@ -94,7 +96,8 @@
       {
         "title": "Central Bantu subgroup (G.30) – Ethnologue",
         "url": "https://www.ethnologue.com/subgroup/54/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

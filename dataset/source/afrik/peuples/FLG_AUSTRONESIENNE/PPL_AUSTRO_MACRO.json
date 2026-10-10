@@ -9,7 +9,7 @@
       "mainName": "Peuples Austronésiens de Madagascar (macro-groupe)",
       "selfAppellation": "Malagasy",
       "exonyms": ["Malgaches (français)", "Malagasy peoples (anglais)"],
-      "originOfExonyms": "Le terme Malagasy désigne l'ensemble des peuples de l'île de Madagascar et leur langue commune (dans ses variantes dialectales). Il est d'usage interne comme exonyme international. La distinction entre highlanders (hauts plateaux) et côtiers (wastes du littoral) a été popularisée par les missionnaires anglais du XIXe siècle.",
+      "originOfExonyms": "Malagasy désigne les peuples de Madagascar et leur langue commune, avec ses différentes variétés. Ce nom est utilisé sur l'île et à l'international. Au XIXe siècle, les missionnaires anglais ont fait connaître la distinction entre les habitants des hauts plateaux, appelés highlanders, et ceux du littoral, appelés côtiers.",
       "whyProblematic": "La dénomination macro groupe austronésien est une catégorie analytique scientifique (linguistique et génétique) qui masque la grande diversité culturelle et identitaire des 18 à 20 groupes ethniques malgaches distincts. Aucun de ces groupes ne se nomme lui-même austronésien.",
       "contemporaryUsage": "Le terme Malagasy est l'identité nationale commune de tous les habitants de Madagascar. Les identités ethniques spécifiques (Merina, Betsimisaraka, Sakalava, etc.) coexistent avec cette identité nationale dans le contexte post-indépendance.",
       "linguisticFamily": "FLG_AUSTRONESIENNE",
@@ -122,17 +122,20 @@
       {
         "title": "Britannica — Malagasy peoples, (consulté 2025)",
         "url": "https://www.britannica.com/topic/Malagasy-peoples",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ethnologue — Malagasy macrolanguage (mlg), (consulté 2025)",
         "url": "https://www.ethnologue.com/language/mlg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kusuma, P. et al. Malagasy Genetic Ancestry Comes from an Historical Malay Trading. Molecular Biology and Evolution, 2016",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4989113/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "RAIS Conference — The Ethnicity and Identity of the Malagasy People",
@@ -142,17 +145,20 @@
       {
         "title": "CIA World Factbook — Madagascar, (consulté 2025)",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Beaujard, Philippe. Les mondes de l'océan Indien (2 vol.). Paris : Armand Colin, 2012",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "INSTAT Madagascar — Institut National de la Statistique, (consulté 2025)",
         "url": "https://www.instat.mg",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

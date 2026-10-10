@@ -54,7 +54,7 @@ export function FicheLinkBlock({
             href={ficheHrefFor(subject, language)}
             onClick={() => onNavigate?.(subject)}
             className={cn(
-              "afh-accent-ocre inline-flex w-full items-center justify-center rounded-afh-xl px-afh-2xl py-afh-md text-center text-afh-body font-bold no-underline focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]",
+              "afh-accent-ocre inline-flex w-full items-center justify-center rounded-afh-xl px-afh-2xl py-afh-md text-center text-afh-body font-bold no-underline focus-visible:outline-none focus-visible:shadow-afh-focus",
               several
                 ? "min-h-11 border border-[color:var(--accent)] bg-afh-surface text-afh-text"
                 : "min-h-[52px] bg-[color:var(--accent)] text-[color:var(--accent-foreground)]"

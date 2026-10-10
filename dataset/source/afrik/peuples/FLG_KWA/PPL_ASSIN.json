@@ -49,7 +49,7 @@
     "culture": {
       "majorRites": "Rites de passage akan: puberte, mariage, funerailles avec veille et ceremonies communautaires. Chieftaincy investiture avec tabouret sacre. Festival de la riviere Donko Nsuo a Assin Manso, lieu de commemoration de la traite transatlantique des esclaves, centre de pelerinage pour la diaspora africaine-americaine.",
       "symbols": "Tabouret sacre (dwa) comme symbole de l'autorite chiefly. Insignes royaux kan communs: umbrellas cerimoniales, sceptres. Le site d'Assin Manso (Donko Nsuo, riviere des esclaves) est devenu un symbole de memoire et de deuil pour la diaspora africaine.",
-      "artsAndMusic": "Artisanat akan: tissage, poterie, travail du metal. Danse et musique lors des ceremonies de chefferie et des funerailles. Kente traditionnel porte lors des occasions cerimoniales. La langue akan porte un corpus proverbial (mmebusem) de plus de 3 600 entrées, compilé dès 1879 par le linguiste missionnaire Johann Gottlieb Christaller à partir des dialectes twi et fante — un usage partagé par l'ensemble des groupes de langue akan.",
+      "artsAndMusic": "Les artisans assin pratiquent le tissage, la poterie et le travail du métal. La musique et la danse accompagnent les cérémonies de chefferie et les funérailles. Le kente est porté lors des cérémonies. Les proverbes akan sont appelés mmebusem. Dès 1879, le linguiste missionnaire Johann Gottlieb Christaller en a réuni plus de 3 600 en twi et en fante. L'usage des proverbes est partagé par les groupes de langue akan.",
       "spiritualities": "Religion akan traditionnelle: croyance en Nyame (dieu supreme), veneration des ancetres (nsamanfo), pratiques divinatoires. Le christianisme (protestantisme et catholicisme) est aujourd'hui predominant dans la region Assin."
     },
     "historicalRole": {
@@ -73,7 +73,8 @@
       {
         "title": "Ghana Statistical Service, Population and Housing Census 2021",
         "url": "https://census2021.statsghana.gov.gh",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Daaku, Kwame – Oral Traditions of Assin, in The Akan People: A Documentary History, Markus Wiener Publishers",
@@ -83,7 +84,8 @@
       {
         "title": "Modern Ghana – Discover the historic colonial treasures in Assin area, 2021",
         "url": "https://www.modernghana.com/news/1110502/discover-the-historic-colonial-treasures-in-assin.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",

@@ -27,7 +27,6 @@ import type { LanguageReference } from "@/types/afrik";
 import type { CountryDetail } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
 import { countryCopy } from "@/lib/i18n/copy/country";
-import { ficheCopy } from "@/lib/i18n/copy/fiche";
 
 /** The country chapters, ordered for reading after the globe. */
 
@@ -208,12 +207,7 @@ export function CountryParchment({
           scroll past a source list to find out what to read next. */}
       {onward}
 
-      <Section
-        title={copy.sections.sources}
-        note={ficheCopy[language].sourceTierNote}
-        as="footer"
-        id="sources"
-      >
+      <Section title={copy.sections.sources} as="footer" id="sources">
         {data.sources.length > 0 ? (
           <FicheSources
             sources={data.sources}

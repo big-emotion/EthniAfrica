@@ -89,7 +89,8 @@
       {
         "title": "SIL Ethnologue — Luba-Kasai (lua)",
         "url": "https://www.ethnologue.com/language/lua/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "IJREHC — Luba People and Politeness in their Everyday Speeches",
@@ -99,17 +100,298 @@
       {
         "title": "Encyclopaedia Britannica — Luba",
         "url": "https://www.britannica.com/topic/Luba-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Minority Rights Group — Kasaians of Luba origin",
         "url": "https://minorityrights.org/communities/kasaians-of-luba-origin/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Wikimedia Commons — Tshiluba language",
         "url": "https://commons.wikimedia.org/wiki/Category:Tshiluba_language",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lulua désigne un peuple du Kasaï, en République démocratique du Congo, qui se nomme lui-même Bena-Lulua. D'autres noms existent : Bashilange, que lui donnaient ses voisins au XIXe siècle et qu'il tenait pour une insulte, et Bena-Riamba, que se donnaient les partisans du chef Kalamba. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bena-Lulua",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lua",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne aujourd'hui, formé sur le nom Lulua.",
+        "periodLabel": "Écrit dès 1906",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Livre publié en 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bena-Lulua joint bena, que le missionnaire William M. Morrison traduit par « habitants de », au nom Lulua, qui est aussi celui de la rivière au bord de laquelle se trouve sa mission de Luebo. Le même missionnaire jugeait pourtant que le nom Lulua avait été donné à ce peuple de l'extérieur.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Grammar and Dictionary of the Buluba-Lulua Language as spoken in the Upper Kasai and Congo Basin",
+                "author": "William M. Morrison",
+                "year": 1906,
+                "url": "https://archive.org/details/grammaranddicti01missgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. vi et 24",
+                "notes": "New York, American Tract Society, pour la mission presbytérienne américaine du Congo, 1906. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. Page vi : la mission de Luebo « is located on the north bank of the Lulua river », et les noms Baluba et Lulua « have been given them by outsiders » ; page 24 : « muena (pl. bena), inhabitant of, owner of »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Livre publié en 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bena-Lulua est écrit Bena Lulua par William M. Morrison, qui note que les Baluba et les Bena Lulua prononcent certains mots de la même façon. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Bena Lulua",
+            "birth": true,
+            "actors": [
+              {
+                "name": "William M. Morrison",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grammar and Dictionary of the Buluba-Lulua Language as spoken in the Upper Kasai and Congo Basin",
+                "author": "William M. Morrison",
+                "year": 1906,
+                "url": "https://archive.org/details/grammaranddicti01missgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 3",
+                "notes": "New York, American Tract Society, pour la mission presbytérienne américaine du Congo, 1906. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit : « the Baluba and Bena Lulua say ku-nang-a »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lulua",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une rivière du Kasaï, donné aussi au peuple qui vit sur ses rives.",
+        "periodLabel": "Écrit dès 1906",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Livre publié en 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lulua désigne un peuple dans la préface de William M. Morrison, qui parle « des Baluba et des Lulua » réunis autour de la mission de Luebo. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Lulua",
+            "birth": true,
+            "actors": [
+              {
+                "name": "William M. Morrison",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grammar and Dictionary of the Buluba-Lulua Language as spoken in the Upper Kasai and Congo Basin",
+                "author": "William M. Morrison",
+                "year": 1906,
+                "url": "https://archive.org/details/grammaranddicti01missgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. v-vi",
+                "notes": "New York, American Tract Society, pour la mission presbytérienne américaine du Congo, 1906. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La préface écrit : « The Baluba and Lulua people » ; la mission de Luebo se trouve sur la rive nord de la rivière Lulua."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Livre publié en 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lulua ne serait pas, à l'origine, celui que ce peuple se donne, écrit en 1906 le missionnaire William M. Morrison : il lui aurait été donné de l'extérieur. Entre eux, les gens se désignent alors par le nom de leur clan.",
+            "sources": [
+              {
+                "title": "Grammar and Dictionary of the Buluba-Lulua Language as spoken in the Upper Kasai and Congo Basin",
+                "author": "William M. Morrison",
+                "year": 1906,
+                "url": "https://archive.org/details/grammaranddicti01missgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. vi",
+                "notes": "New York, American Tract Society, pour la mission presbytérienne américaine du Congo, 1906. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La préface écrit : « the very names Baluba and Lulua do not seem to have been originally used by the people in speaking of themselves; these names have been given them by outsiders »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bashilange",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que leurs voisins leur donnaient au XIXe siècle et qu'ils tenaient pour une insulte.",
+        "periodLabel": "Écrit dès 1888",
+        "accounts": [
+          {
+            "period": {
+              "from": 1883,
+              "to": 1885,
+              "label": "Expédition de 1883-1885, livre publié en 1888"
+            },
+            "statement": "Le nom Bashilange est écrit Baschilange et Tuschilange par Hermann Wissmann et ses compagnons, qui séjournent chez le chef Kalamba, à Mukenge. Kalamba et ses sujets tiennent ces noms pour une insulte, écrivent-ils. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Baschilange",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Hermann Wissmann",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Im Innern Afrikas. Die Erforschung des Kassai während der Jahre 1883, 1884 und 1885",
+                "author": "Hermann Wissmann, Ludwig Wolf, Curt von François et Hans Mueller",
+                "year": 1888,
+                "url": "https://archive.org/details/11630692bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 166-167",
+                "notes": "Leipzig, F. A. Brockhaus, 1888, chapitre 8 : Das Volk der Baluba und die Anlage von Luluaburg. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. Les pages écrivent que Kalamba et ses sujets tiennent les noms Tuschilange et Baschilange pour une insulte, nés des surnoms Baschilambua et Baschilambembele, et que « die Bena-Riamba wollen nur Baluba benannt sein »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "Rapporté en 1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bashilange viendrait des surnoms que s'échangeaient deux camps lors de querelles anciennes : Bashilambua, « les gens du chien », et Bashilambembele, « les gens du moustique ». Les voisins de l'ouest et du sud, qui emploient les préfixes ka- et tu-, en auraient tiré Kashilange et Tushilange, selon le récit des sujets de Kalamba que rapportent Hermann Wissmann et ses compagnons.",
+            "hypothesisGroup": "origine du nom Bashilange",
+            "sources": [
+              {
+                "title": "Im Innern Afrikas. Die Erforschung des Kassai während der Jahre 1883, 1884 und 1885",
+                "author": "Hermann Wissmann, Ludwig Wolf, Curt von François et Hans Mueller",
+                "year": 1888,
+                "url": "https://archive.org/details/11630692bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 167",
+                "notes": "Leipzig, F. A. Brockhaus, 1888, chapitre 8 : Das Volk der Baluba und die Anlage von Luluaburg. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page rapporte les surnoms Baschilambua (mbua, « chien ») et Baschilambembele (mbembele, « moustique »), et leur déformation en Kaschilange et Tuschilange chez les voisins de l'ouest et du sud."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1885,
+              "label": "Expédition de 1883-1885, livre publié en 1888"
+            },
+            "statement": "Le nom Tushilange est celui que leur donnent les Kioque, c'est-à-dire les Chokwe, à leur arrivée dans le pays, raconte Kalamba. Ses sujets répondent en appelant les Kioque Diehndi, « les asticots », selon Hermann Wissmann et ses compagnons.",
+            "sources": [
+              {
+                "title": "Im Innern Afrikas. Die Erforschung des Kassai während der Jahre 1883, 1884 und 1885",
+                "author": "Hermann Wissmann, Ludwig Wolf, Curt von François et Hans Mueller",
+                "year": 1888,
+                "url": "https://archive.org/details/11630692bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 167",
+                "notes": "Leipzig, F. A. Brockhaus, 1888, chapitre 8 : Das Volk der Baluba und die Anlage von Luluaburg. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit que, lorsque les Kioque les ont appelés Tuschilange, les sujets de Kalamba ont employé pour eux l'insulte « Diehndi » (Maden, « asticots »)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "Article publié en 1894"
+            },
+            "statement": "Le nom Bashilange se retrouve dans les vocabulaires de W. R. Summers, qui appellent leur langue Lange, Kixi-lange ou Mwaku-Bashi-lange.",
+            "sources": [
+              {
+                "title": "Bantu Notes and Vocabularies. No. II. Comparative Tables and Vocabularies of Lange, Songe, Mbangala, Kioko, Lunda, etc.",
+                "author": "W. R. Summers, édité par Héli Chatelain",
+                "year": 1894,
+                "url": "https://archive.org/details/jstor-197147",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 208",
+                "notes": "Journal of the American Geographical Society of New York, vol. 26, 1894. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit : « Lange equals Kixi-lange or Mwaku-Bashi-lange »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bena-Riamba",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "lua",
+        "namedBy": null,
+        "shortLine": "Les fils du chanvre : le nom que se donnaient les partisans du chef Kalamba.",
+        "periodLabel": "Écrit dès 1888",
+        "accounts": [
+          {
+            "period": {
+              "from": 1883,
+              "to": 1885,
+              "label": "Expédition de 1883-1885, livre publié en 1888"
+            },
+            "statement": "Le nom Bena-Riamba est celui que se donnent les partisans du chef Kalamba, selon Hermann Wissmann et ses compagnons, qui le traduisent par « fils du chanvre ». Kalamba avait fait du chanvre, riamba, le signe d'un nouveau culte, et ses partisans veulent, écrivent-ils, n'être appelés que Baluba. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Bena-Riamba",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Hermann Wissmann",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Im Innern Afrikas. Die Erforschung des Kassai während der Jahre 1883, 1884 und 1885",
+                "author": "Hermann Wissmann, Ludwig Wolf, Curt von François et Hans Mueller",
+                "year": 1888,
+                "url": "https://archive.org/details/11630692bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 155",
+                "notes": "Leipzig, F. A. Brockhaus, 1888, chapitre 8 : Das Volk der Baluba und die Anlage von Luluaburg. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit : « Die Anhänger Kalamba's nennen sich daher auch Bena-Riamba, d. h. Söhne des Hanfs »."
+              },
+              {
+                "title": "Im Innern Afrikas. Die Erforschung des Kassai während der Jahre 1883, 1884 und 1885",
+                "author": "Hermann Wissmann, Ludwig Wolf, Curt von François et Hans Mueller",
+                "year": 1888,
+                "url": "https://archive.org/details/11630692bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 166-167",
+                "notes": "Leipzig, F. A. Brockhaus, 1888, chapitre 8 : Das Volk der Baluba und die Anlage von Luluaburg. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. Les pages écrivent que Kalamba et ses sujets tiennent les noms Tuschilange et Baschilange pour une insulte, nés des surnoms Baschilambua et Baschilambembele, et que « die Bena-Riamba wollen nur Baluba benannt sein »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

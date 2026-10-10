@@ -110,17 +110,20 @@
       {
         "title": "101 Last Tribes — Kuba people",
         "url": "https://www.101lasttribes.com/tribes/kuba.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "PNAS — Genetic legacy of state centralization in the Kuba Kingdom (2018)",
         "url": "https://www.pnas.org/doi/10.1073/pnas.1811211115",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue (SIL) — Bushoong [buf]",
         "url": "https://www.ethnologue.com/language/buf/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Localizely — ISO 639-3 List (buf: Bushoong)",
@@ -130,7 +133,8 @@
       {
         "title": "Jan Vansina — The Children of Woot: A History of the Kuba Peoples. University of Wisconsin Press, 1978",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

@@ -11,7 +11,7 @@
       "exonyms": ["Nufawa", "Tapa", "Anufe", "Nupenci", "Nyinfe"],
       "originOfExonyms": "Nufawa est le terme utilise par les Haoussa pour designer les Nupe. Tapa est le nom employe par les Yoruba voisins. Anupe et Nupenci sont des variantes du nom autochtone. Le terme Tapa est parfois depreciatif. Les Yoruba Igbomina et Oyo emploient le terme Tapa pour designer les Nupe dans leurs recits historiques.",
       "whyProblematic": "L'appellation Tapa, utilisee par les Yoruba, peut avoir des connotations exterieures qui ne sont pas acceptees par les Nupe eux-memes. Le nom Nufawa (designation haoussa) est couramment utilise dans le nord-ouest du Nigeria mais ne reflete pas l'autodesignation du peuple.",
-      "contemporaryUsage": "Le terme Nupe est la designation officielle et generalement acceptee dans la litterature academique, administrative et politique du Nigeria. L'ethnonyme est utilise pour le peuple, la langue et l'emirat (Bida Emirate). Nupe est le groupe ethnique dominant du Niger State.",
+      "contemporaryUsage": "Nupe est le nom officiel, généralement accepté dans les travaux de recherche et les documents administratifs et politiques du Nigeria. Il désigne le peuple, sa langue et l'émirat de Bida (Bida Emirate). Les Nupe sont le peuple dominant de l'État de Niger.",
       "linguisticFamily": "FLG_BENOUECONGO",
       "ethnoLinguisticGroup": "Nupoid (Benue-Congo, branche Volta-Niger)",
       "historicalRegion": "Confluent du Niger et de la Kaduna — Niger State, Kwara State, Kogi State (Nigeria central-ouest)",
@@ -92,27 +92,299 @@
       {
         "title": "Britannica — Nupe",
         "url": "https://www.britannica.com/topic/Nupe",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ethnologue (SIL) — Nupe-Nupe-Tako (nup)",
         "url": "https://www.ethnologue.com/subgroup/2027/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ASJP Database — Nupe, ISO 639-3 nup",
         "url": "https://asjp.clld.org/languages/NUPE",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Nadel, Siegfried F. (1942). A Black Byzantium: The Kingdom of Nupe in Nigeria. London: Oxford University Press for the International African Institute",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Britannica — Bida (Nigeria), histoire de l'emirat de Bida",
         "url": "https://www.britannica.com/topic/Nupe",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nupe désigne un peuple du centre-ouest du Nigeria, autour de Bida, qui se nomme lui-même Nupe. D'autres noms existent : Tapa, chez les Yoruba, et Nyffe, une graphie anglaise du XIXe siècle. Les sources que nous avons lues n'expliquent pas l'origine de ces noms.",
+    "names": [
+      {
+        "nameText": "Nupe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nup",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du Niger moyen ; son origine n'est pas expliquée.",
+        "periodLabel": "Attesté dès le XVe siècle dans des sources hawsa",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nupe désigne à la fois un peuple, sa langue et l'ancien royaume du Niger moyen. Les sources que nous avons lues ne disent pas d'où vient ce nom ; on ne sait pas avec certitude ce qu'il voulait dire d'abord.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "Mahdi Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 311",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              },
+              {
+                "title": "Ethnologue: Languages of the World — Nupe-Nupe-Tako (nup)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/nup/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Réutilisée depuis les sources de la fiche."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Nupe est écrit « Nū́pe or Nū́pʿe » par le linguiste Sigismund Koelle, qui note que les Aku, c'est-à-dire les Yoruba, appellent ce peuple Tagbā.",
+            "formAsWritten": "Nū́pe or Nū́pʿe",
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section VI-1",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1400,
+              "to": 1499,
+              "label": "XVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Nupe, ou une forme proche, figure dans des sources hawsa dès le XVe siècle, selon l'historien Mahdi Adamu, qui ne cite pas la forme exacte. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple nupe vivait déjà là avant lui : Mahdi Adamu le tient pour autochtone de la région.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "Mahdi Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 311",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant Tsoede"
+            },
+            "era": "polity",
+            "statement": "Le peuple nupe se divise alors en cinq groupes, les Ebe, les Beni, les Ebagi, les Bataci et les Dibo, avant que Tsoede ne les réunisse en un seul royaume, selon Mahdi Adamu. Il situe Tsoede, sans certitude, dans la première moitié du XVIe siècle.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "Mahdi Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 311",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tapa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "yor",
+        "namedBy": "Les Yoruba",
+        "shortLine": "Le nom que les Yoruba donnent aux Nupe.",
+        "periodLabel": "Écrit dès 1829",
+        "accounts": [
+          {
+            "period": {
+              "from": 1500,
+              "to": 1799,
+              "label": "XVIe-XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Tapa est celui que les Yoruba donnent aux Nupe, voisins du royaume d'Oyo, selon l'historien E. J. Alagoa. Les sources que nous avons lues n'expliquent pas son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 15 : Les Fon et les Yoruba, du delta du Niger au Cameroun",
+                "author": "E. J. Alagoa",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 490",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1829,
+              "to": 1829,
+              "label": "Récit publié en 1829"
+            },
+            "era": "polity",
+            "statement": "Le nom Tapa apparaît par écrit, sous la forme « Tappa », chez l'explorateur Hugh Clapperton, en pays yoruba : ses hôtes lui disent que les pirogues remontent le fleuve jusqu'au « Nyffee or Tappa », et le roi d'Oyo, à Katunga, lui parle des messagers « Tappa, or Nyffe ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Nyffee or Tappa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Journal of a Second Expedition into the Interior of Africa, from the Bight of Benin to Soccatoo",
+                "author": "Hugh Clapperton",
+                "year": 1829,
+                "url": "https://archive.org/details/journalofsecond00clap",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 28 et p. 42",
+                "notes": "Londres, John Murray, 1829, lu dans l'exemplaire numérisé sur archive.org. Clapperton traverse le pays yoruba en 1825-1826."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Tapa a une forme proche, Tagbā, chez Sigismund Koelle : c'est ainsi, écrit-il, que les Aku, c'est-à-dire les Yoruba, appellent les Nupe.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section VI-1",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyffe",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une graphie anglaise du nom des Nupe au XIXe siècle.",
+        "periodLabel": "XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1823,
+              "to": 1826,
+              "label": "Récit publié en 1826"
+            },
+            "era": "polity",
+            "statement": "Le nom Nyffe apparaît par écrit, sous la forme « Nyffee », dans le récit de Dixon Denham au Bornou : il y voit des captives venues de ce pays. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Nyffee",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of Travels and Discoveries in Northern and Central Africa, in the Years 1822, 1823, and 1824",
+                "author": "Dixon Denham, Hugh Clapperton et Walter Oudney",
+                "year": 1826,
+                "url": "https://archive.org/details/narrativetravel02salagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 131",
+                "notes": "Londres, John Murray, 1826, lu dans l'exemplaire numérisé sur archive.org. Le passage cité appartient au récit de Dixon Denham au Bornou, en 1823."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1829,
+              "to": 1829,
+              "label": "Récit publié en 1829"
+            },
+            "era": "polity",
+            "statement": "Le nom Nyffe est celui qu'emploie Hugh Clapperton pour le pays nupe ; à Katunga, le roi d'Oyo lui dit que « Nyffee or Toppa » est en guerre civile depuis la mort de son roi.",
+            "formAsWritten": "Nyffee or Toppa",
+            "sources": [
+              {
+                "title": "Journal of a Second Expedition into the Interior of Africa, from the Bight of Benin to Soccatoo",
+                "author": "Hugh Clapperton",
+                "year": 1829,
+                "url": "https://archive.org/details/journalofsecond00clap",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 40",
+                "notes": "Londres, John Murray, 1829, lu dans l'exemplaire numérisé sur archive.org. Clapperton traverse le pays yoruba en 1825-1826."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1841,
+              "to": 1848,
+              "label": "Expédition de 1841, récit publié en 1848"
+            },
+            "era": "polity",
+            "statement": "Le nom Nyffe a une forme proche, Nufi, chez William Allen et T. R. H. Thomson, qui emmènent en 1841 des interprètes nufi sur le Niger.",
+            "formAsWritten": "Nufi",
+            "sources": [
+              {
+                "title": "A Narrative of the Expedition sent by Her Majesty's Government to the River Niger, in 1841, tome 1",
+                "author": "William Allen et T. R. H. Thomson",
+                "year": 1848,
+                "url": "https://archive.org/details/b33279317_0001",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 78",
+                "notes": "Londres, Richard Bentley, 1848, lu dans l'exemplaire numérisé sur archive.org."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

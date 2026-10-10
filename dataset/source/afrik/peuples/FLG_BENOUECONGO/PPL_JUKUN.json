@@ -19,7 +19,7 @@
         "Gwana",
         "Njikum"
       ],
-      "originOfExonyms": "Le terme Kwararafa ou Kororofa est utilise par les Haoussa pour designer les Jukun et leur confederation historique. Apang est employe par les Kam, Kpazo par les Chamba, Kpe par les Mumuye et Kwe par les Jen. Le terme Jukun lui-meme derive du mot jukun apa-juku signifiant hommes ou peuple.",
+      "originOfExonyms": "Le terme Kwararafa ou Kororofa est utilise par les Haoussa pour designer les Jukun et leur confederation historique. Apang est employe par les Kam, Kpazo par les Chamba, Kpe par les Mumuye et Kwe par les Jen. Le terme Jukun lui-meme viendrait du mot jukun apa-juku, qui veut dire hommes ou peuple.",
       "whyProblematic": "Le terme Kwararafa designe a la fois le peuple jukun et leur ancien empire, ce qui peut preter a confusion. Le nom Jukun couvre plusieurs groupes dialectaux distincts (Wapa, Wanu, Jiba) qui ne se reconnaissent pas tous sous ce denominateur commun.",
       "contemporaryUsage": "Le nom Jukun est generalement accepte dans la litterature academique et administrative nigeriane. Les membres du groupe se designent eux-memes comme Wapa (region de Wukari) ou Jiba (region de Kona). Le terme Apa est egalement utilise comme autodesignation.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -114,27 +114,32 @@
       {
         "title": "RSIS International — The Jukun-Muri Relations: Pre-Colonial Dynamics (2025)",
         "url": "https://rsisinternational.org/journals/ijriss/articles/the-jukun-muri-relations-pre-colonial-dynamics/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue (SIL) — Jukun Takum (jbu)",
         "url": "https://www.ethnologue.com/language/jbu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Jukun Kona in Nigeria",
         "url": "https://joshuaproject.net/people_groups/12770",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Meek, C.K. (1931). A Sudanese Kingdom: An Ethnographical Study of the Jukun-speaking Peoples of Nigeria. London: Kegan Paul",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "ASJP Database — Jukun Takum, ISO 639-3 jbu",
         "url": "https://asjp.clld.org/languages/JUKUN_TAKUM",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

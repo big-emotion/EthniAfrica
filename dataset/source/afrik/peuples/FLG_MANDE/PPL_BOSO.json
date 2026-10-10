@@ -15,7 +15,7 @@
         "Jenaama Bozo",
         "Kelenga Bozo"
       ],
-      "originOfExonyms": "Le terme Bozo derive du bambara bo-so (maison de bambou ou maison de paille), en reference aux habitations temporaires des camps de peche sur les berges du Niger. Les Bozo eux-memes utilisent des appellations claniques specifiques : Sorogoye, Hain et Tieye. Boso est la transcription alternative souvent utilisee en bambara.",
+      "originOfExonyms": "Le terme Bozo viendrait du bambara bo-so (maison de bambou ou maison de paille), en reference aux habitations temporaires des camps de peche sur les berges du Niger. Les Bozo eux-memes utilisent des appellations claniques specifiques : Sorogoye, Hain et Tieye. Boso est la transcription alternative souvent utilisee en bambara.",
       "whyProblematic": "Le terme Bozo designe en realite un groupe pluriel de dialectes et sous-groupes distincts que SIL Ethnologue reconnait comme quatre langues separees (boo, bze, boz, bzx). L'unite bozo est plus culturelle et historique que strictement linguistique.",
       "contemporaryUsage": "Bozo est le terme courant utilise au Mali et dans la litterature internationale. Boso est la graphie alternative presente dans certains fichiers de ce projet. Les differents sous-groupes se designent par leurs noms claniques (Sorogoye, Hain, Tieye, Kelenga).",
       "linguisticFamily": "FLG_MANDE",
@@ -104,27 +104,32 @@
       {
         "title": "Joshua Project — Bozo, Jenaama in Mali",
         "url": "https://joshuaproject.net/people_groups/15003/ML",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Bozo of Mali",
         "url": "https://peoplegroups.org/people_groups/pg023174/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Tiemacewe Bozo (boo)",
         "url": "https://www.ethnologue.com/language/boo/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Trip Down Memory Lane — Bozo People, Masters of the River (2013)",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2013/08/the-bozo-boso-sorogo-tieyaxo-bozo.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "UNESCO ICH — Coming forth of the masks and puppets in Markala",
         "url": "https://ich.unesco.org/en/RL/coming-forth-of-the-masks-and-puppets-in-markala-01004",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Elisabeth den Otter — Masquerades of the Bozo, Kirango (Mali)",

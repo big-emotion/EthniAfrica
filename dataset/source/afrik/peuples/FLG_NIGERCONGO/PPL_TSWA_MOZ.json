@@ -107,27 +107,32 @@
       {
         "title": "Jenkins, Orville Boyd. The Tswa people of Mozambique — A Cultural Profile",
         "url": "http://orvillejenkins.com/profiles/tswa.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Tswa in Mozambique",
         "url": "https://joshuaproject.net/people_groups/15600/MZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue — Tswa (tsc)",
         "url": "https://www.ethnologue.com/language/tsc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CLEAR Global — Language data for Mozambique (2024)",
         "url": "https://clearglobal.org/language-data-for-mozambique/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Instituto Nacional de Estatistica — Mozambique",
         "url": "https://www.ine.gov.mz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "WorldAtlas — What Languages Are Spoken In Mozambique",

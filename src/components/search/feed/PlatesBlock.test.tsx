@@ -31,8 +31,55 @@ const proverb: FeedPlateItem = {
   match: { relation: "linked-country", entityType: "country", entityId: "SEN" },
 };
 
+const TIER_WORDS = /Référencée|Officielle|Non vérifiée|En attente d'examen/;
+
 // @req REQ-180
 describe("PlatesBlock", () => {
+  // A plate names its sources; it never ranks them (doctrine §1.1).
+  // @req REQ-092
+  it("shows no tier on an anecdote, a proverb or their sources", () => {
+    const { container } = render(<PlatesBlock items={[anecdote, proverb]} />);
+
+    expect(container).not.toHaveTextContent(TIER_WORDS);
+    expect(screen.getAllByText("Recueil")).toHaveLength(2);
+  });
+
+  // @req REQ-194
+  it("names each source's type on an anecdote and a proverb, still without a tier", () => {
+    const { container } = render(
+      <PlatesBlock
+        items={[
+          {
+            ...anecdote,
+            sources: [
+              {
+                title: "Recueil",
+                url: null,
+                tier: "referenced",
+                sourceKind: "archive",
+              },
+            ],
+          },
+          {
+            ...proverb,
+            sources: [
+              {
+                title: "Recueil",
+                url: null,
+                tier: "referenced",
+                sourceKind: "academic",
+              },
+            ],
+          },
+        ]}
+      />
+    );
+
+    expect(container).toHaveTextContent("Archive");
+    expect(container).toHaveTextContent("Publication académique");
+    expect(container).not.toHaveTextContent(TIER_WORDS);
+  });
+
   it("preserves the editorial order in a reachable shelf", () => {
     render(
       <PlatesBlock
@@ -151,7 +198,7 @@ describe("PlatesBlock", () => {
     expect(screen.queryByText("Même pays")).toBeNull();
     expect(screen.queryByText("Hidden long body.")).toBeNull();
     expect(screen.queryByText("Hidden source")).toBeNull();
-    expect(screen.getByText("Référencée")).toBeInTheDocument();
+    expect(screen.queryByText(TIER_WORDS)).toBeNull();
     expect(screen.getByText(/Archive nationale/)).toBeInTheDocument();
   });
 
@@ -251,17 +298,12 @@ describe("PlatesBlock", () => {
   });
 
   // @req REQ-180
-  it("keeps the source tier on desktop while the source list moves to the piece", () => {
+  it("moves the source list to the piece on desktop", () => {
     render(<PlatesBlock items={[anecdote]} />);
 
     expect(screen.getByText("Recueil").closest("ul")).toHaveClass(
       "min-[1200px]:hidden"
     );
-    expect(
-      screen
-        .getAllByText("Référencée")
-        .some((node) => node.className.includes("min-[1200px]"))
-    ).toBe(true);
   });
 
   // @req REQ-178

@@ -6,7 +6,7 @@
   },
   "id": "PAT_GBAGBO",
   "nameMain": "Gbagbo",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Gbagbo",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -28,6 +28,11 @@
         "claim": "Une analyse publiée décompose Gbagbo en gba, compris en bété comme « dire ou faire », et gbo, « palabre ou logorrhée » ; l'auteur propose parmi les sens possibles « faire notre palabre ».",
         "claimStatus": "claimed",
         "sourceRefs": ["kakou-2024-gbagbo"]
+      },
+      {
+        "claim": "Une liste de noms bété publiée par un média ivoirien donne à Gbagbo le sens « dit tout, s'exprimer sans crainte ». Elle le traite comme un nom personnel qui porte un sens, non comme un nom de clan.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["afriksoir-2021-noms-bete"]
       }
     ]
   },
@@ -56,13 +61,21 @@
       "url": "https://www.revuesociotexte.org/wp-content/uploads/2025/08/PDF-fin-numero-LIBRE-SOCIOTEXTE-Bi-Trah-4.pdf",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Article de Bi Trah Alphonse Cheriff Kakou, Université Alassane Ouattara, publié dans Sociotexte, numéro 14, décembre 2024, pages 72 à 83. À la page imprimée 82, l'auteur identifie Gbagbo comme un nom bété, le décompose en gba et gbo et formule le sens avec « peut vouloir dire ». Comme l'article relève de la sémiotique littéraire et n'expose ni corpus linguistique ni enquête auprès de porteurs, la proposition est conservée au statut « claimed »."
+      "notes": "Article de Bi Trah Alphonse Cheriff Kakou, Université Alassane Ouattara, publié dans Sociotexte, numéro 14, décembre 2024, p. 72-83. À la p. 82, l'auteur présente Gbagbo comme un nom bété, le décompose en gba et gbo et propose un sens avec les mots « peut vouloir dire ». Il s'agit d'une analyse littéraire. L'article ne présente ni ensemble d'exemples tirés de la langue ni enquête auprès de personnes portant ce nom. L'explication reste une hypothèse."
+    },
+    {
+      "sourceKey": "afriksoir-2021-noms-bete",
+      "title": "Côte d'Ivoire : Voici la signification des noms Bété que vous connaissez",
+      "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+      "tier": "unverified",
+      "source_kind": "press",
+      "notes": "Afrik Soir, 14 février 2021, page consultée directement. La liste donne « Gbagbo : Dit tout, s'exprimer sans crainte » et « Zadi : Nom de jumeaux ». Elle ne cite aucune source et ne dit pas comment ces noms se transmettent."
     }
   ],
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "L'article de Kakou traite Gbagbo comme un nom propre bété, sans préciser s'il s'agit d'un nom de clan, de lignage ou d'un autre système anthroponymique. Les recherches exactes « Gbagbo nom clan bété » n'ont pas résolu cette typologie."
+      "reason": "Aucune source consultée ne fait de Gbagbo un nom de clan : l'article de Kakou y voit un nom propre bété, et une liste de presse lui donne le sens d'un nom personnel. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     },
     {
       "fieldPath": "designatedSocialUnit",

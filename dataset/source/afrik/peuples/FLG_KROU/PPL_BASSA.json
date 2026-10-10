@@ -108,12 +108,14 @@
         "title": "Glottolog 5.3 — Bassa (bsq)",
         "url": "https://glottolog.org/resource/languoid/id/nucl1418",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Supports the Kru classification."
       },
       {
         "title": "SIL Ethnologue — Bassa (bsq)",
         "url": "https://www.ethnologue.com/language/bsq/",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Ethnologue's page could not be consulted directly, so the 18th-edition (2015) speaker figures and dialect-cluster names cited here were read from its data as relayed in the infobox of the English Wikipedia article \"Bassa language\", crossed on 2026-09-05."
       },
       {
@@ -125,24 +127,28 @@
       {
         "title": "Minority Rights Group — Liberia",
         "url": "https://minorityrights.org/country/liberia/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Sage Reference — Encyclopedia of African Religion, Bassa",
         "url": "https://sk.sagepub.com/ency/edvol/africanreligion/chpt/bassa",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Entrée « Bassa » signée Emmanuel Kombem Ngwainmbi, pages 108-110. Elle porte la formule Baah Sooh Nyombe et sa traduction « Father Stone's people », lues le 10 septembre 2026 dans l'exemplaire numérisé par Internet Archive. La même entrée traite comme un seul peuple les Bassa du Liberia, du Cameroun, du Nigeria, du Togo, du Congo et du Sénégal, leur donne une origine égyptienne et la classification bantoue des Bassa du Cameroun ; elle est aussi la source des formes Gboboh, Adbassa et Bambog-Mbog. Elle est citée pour ce qu'elle affirme, non comme description des seuls Bassa du Liberia."
       },
       {
         "title": "Liberia Institute of Statistics and Geo-Information Services (LISGIS) — 2022 Population and Housing Census, Final Results Report",
         "url": "https://www.lisgis.gov.lr/document/LiberiaCensus2022Report.pdf",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "Report of the national statistics office. The document itself could not be opened, so only the national total population is drawn from it here (corroborated independently below); its ethnic-group breakdown table was not verified."
       },
       {
         "title": "UN Liberia — Liberia announces provisional results of its 5th National Population and Housing Census (2022)",
         "url": "https://liberia.un.org/en/220493-liberia-announces-provisional-results-its-5th-national-population-and-housing-census",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "UN country office press release; independently corroborates LISGIS's national total of 5,248,621 (census night 10-11 November 2022) cited in the demography source note."
       },
       {
@@ -160,12 +166,14 @@
         "title": "Coulmas, Florian, ed. (1999) — \"Bassa alphabet\", in The Blackwell Encyclopedia of Writing Systems",
         "url": null,
         "tier": "referenced",
+        "source_kind": "encyclopedia",
         "notes": "Offline book chapter (Wiley/Blackwell); identified via the bibliography of the English Wikipedia article \"Bassa Vah alphabet\", crossed on 2026-09-05, as a second academic source for the Vah script history. Content not independently re-verified."
       },
       {
         "title": "Unseth, Peter (2011) — \"Invention of Scripts in West Africa for Ethnic Revitalization\", in Handbook of Language and Ethnic Identity, Oxford University Press",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Offline book chapter; identified via the bibliography of the English Wikipedia article \"Bassa Vah alphabet\", crossed on 2026-09-05, supporting the script's framing as an ethnic-revitalization project. Content not independently re-verified."
       },
       {
@@ -184,6 +192,7 @@
         "title": "Syrulwa Somah, « Tribute to Rev. Joseph Munter Nana Gbadyu, a Veteran Bassa Historian », FrontPage Africa, 23 mai 2017",
         "url": "https://frontpageafricaonline.com/opinion/tribute-to-rev-joseph-munter-nana-gbadyu-a-veteran-bassa-historian/",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Hommage signé, paru dans un quotidien liberien identifiable. Il donne les dates de Gbadyu (10 juillet 1933 - 14 mai 2017), ses fonctions — journaliste de radio, superintendant du comté de Grand Bassa de 1976 à 1980, vice-ministre — et nomme son ouvrage. Il ne dit rien de l'origine du nom Bassa."
       },
       {
@@ -196,7 +205,126 @@
         "title": "Encyclopædia Britannica, 11e édition (1911) — Krumen",
         "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Krumen",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Texte de l'édition de 1911, cité pour la graphie Basa, donnée pour un peuple apparenté aux Kru sur la côte libérienne."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bassa désigne un peuple de langue krou du Liberia, qui se nomme lui-même Bassa, Ɓǎsɔ́ɔ̀ dans sa langue. On ne sait pas avec certitude quand le nom a été écrit pour la première fois. Son origine est racontée dans un récit oral que nous présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bassa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du Liberia ; son origine reste discutée.",
+        "periodLabel": "Écrit au moins depuis 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bassa se dit Ɓǎsɔ́ɔ̀ dans la langue de ce peuple : le dictionnaire bassa-anglais publié au Liberia traduit Ɓǎsɔ́ɔ̀-nyɔ̀ par « une personne bassa ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bassa-English Dictionary",
+                "author": "Christian Education Foundation of Liberia",
+                "year": null,
+                "url": "https://cefliberia.org/wp-content/uploads/2016/12/BassaDict.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 5",
+                "notes": "Dictionnaire publié en ligne par la Christian Education Foundation of Liberia ; le fichier nomme Tim Slager comme auteur. lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "modern",
+            "statement": "Le nom Bassa figure, avec la forme Gbasa, chez Maurice Delafosse, qui place les Gbasa ou Bassa sur la côte du Liberia, de Bafou à la Junk River, dans la région de Grand-Bassa et d'Edina.",
+            "formAsWritten": "Gbasa",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 71",
+                "notes": "Paris, Ernest Leroux. Lu sur la numérisation de l'université de Toronto sur Internet Archive, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'arrivée des commerçants européens"
+            },
+            "era": "polity",
+            "statement": "Le nom Bassa n'est pas encore employé : on parle du territoire de Gboo, du nom d'un ancien chef puissant, et de ses habitants comme des Gboo Nyohn Bey, « les gens de Gboo », selon un récit d'Abba Karnga.",
+            "before": true,
+            "sources": [
+              {
+                "title": "How the Bassa Got Their Name",
+                "author": "Heath Vogel",
+                "year": 2013,
+                "url": "http://bloggingwithoutmaps.blogspot.com/2013/02/how-bassa-got-their-name.html",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Comment les Bassa ont reçu leur nom",
+                "carrier": "Abba Karnga",
+                "place": "Liberia",
+                "notes": "Récit publié le 1er février 2013 sur le blog Blogging Without Maps ; lu le 10 octobre 2026. L'auteur dit tenir ce récit d'Abba Karnga, qui travaille à garder les contes, proverbes et coutumes bassa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Rapporté en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Bassa viendrait de Bah Saw Nyohn Bey, « les gens de Monsieur Roche » : c'est ainsi que se nommaient les serviteurs d'un chef qui commerçait avec les Européens, et ceux-ci l'auraient abrégé en Basa, selon un récit d'Abba Karnga. Le dictionnaire bassa-anglais traduit bien ɓǎ par « père » et sɔ́ɔ́ par « roche ».",
+            "hypothesisGroup": "origine du nom Bassa",
+            "sources": [
+              {
+                "title": "How the Bassa Got Their Name",
+                "author": "Heath Vogel",
+                "year": 2013,
+                "url": "http://bloggingwithoutmaps.blogspot.com/2013/02/how-bassa-got-their-name.html",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Comment les Bassa ont reçu leur nom",
+                "carrier": "Abba Karnga",
+                "place": "Liberia",
+                "notes": "Récit publié le 1er février 2013 sur le blog Blogging Without Maps ; lu le 10 octobre 2026. L'auteur dit tenir ce récit d'Abba Karnga, qui travaille à garder les contes, proverbes et coutumes bassa."
+              },
+              {
+                "title": "Bassa-English Dictionary",
+                "author": "Christian Education Foundation of Liberia",
+                "year": null,
+                "url": "https://cefliberia.org/wp-content/uploads/2016/12/BassaDict.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 3 et p. 73",
+                "notes": "Dictionnaire publié en ligne par la Christian Education Foundation of Liberia ; le fichier nomme Tim Slager comme auteur. lu le 10 octobre 2026. Le dictionnaire traduit ɓǎ par « father » (p. 3) et sɔ́ɔ́ par « rock » (p. 73) ; il ne dit rien de l'origine du nom."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -101,27 +101,32 @@
       {
         "title": "SIL Ethnologue — Bembe (bmb)",
         "url": "https://www.ethnologue.com/language/bmb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Bembe in Congo DRC",
         "url": "https://joshuaproject.net/people_groups/10783/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Bembe in Tanzania",
         "url": "https://joshuaproject.net/people_groups/print/10783/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes — Bembe people",
         "url": "https://www.101lasttribes.com/tribes/bembe.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Glottolog — bemb1255",
         "url": "https://glottolog.org/resource/languoid/id/bemb1255",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "The GOAT PoL — Once upon a Bembe tradition",

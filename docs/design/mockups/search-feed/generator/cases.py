@@ -21,12 +21,12 @@ PROV_OR = dict(type="proverbe", lang="bambara", iso="bm",
                text="L'or et l'argent sont périssables, mais les relations humaines restent.",
                original="Sanu ni wari bè ban, nga mogoya te ban",
                meaning="La richesse peut disparaître, la fraternité est plus durable.",
-               origin="Publié en 2008 par un juriste malien, université de Fribourg · Référencée")
+               origin="Publié en 2008 par un juriste malien, université de Fribourg")
 PROV_GRAINE = dict(type="proverbe", lang="bambara", iso="bm",
                    text="Le propre de la graine est de lever, celui du fruit est de mûrir, celui de l'homme est de comprendre.",
                    original="Dànnifen ye wilita ye, jiriden ye mofen ye, mogoya ye hakili ye",
                    meaning="La réflexion et la sagesse sont ce qui distingue l'être humain.",
-                   origin="Publié en 2008, université de Fribourg · Référencée")
+                   origin="Publié en 2008, université de Fribourg")
 P_NIGERIA = dict(type="anecdote", img="nigeria", about="Nigeria", tier="referenced",
                  headline="Le Nigeria a été nommé dans une tribune de presse.",
                  alt="Flora Shaw (Lady Lugard) et Frederick Lugard, 1908",
@@ -82,7 +82,7 @@ CASES = [
                  alt="Couverture kaasa tissée à la main, style peul", credit="Cleveland Museum of Art · CC0"),
             dict(type="proverbe", lang="peul", iso="fuc", text="La langue est l'ennemie de son propriétaire.",
                  original="ɗemngal ko ganyo jooma mum",
-                 origin="Proverbe peul du Fouladou (Sénégal), publié en 1987 avec son texte original · Référencée"),
+                 origin="Proverbe peul du Fouladou (Sénégal), publié en 1987 avec son texte original"),
         ],
         quiz=dict(q="Quel nom les Peuls se donnent-ils ?", options=["Fulbe", "Fulani", "Fula"], count="Une question tirée de cette page"),
         prose=dict(title="Ce que ces noms posent problème", tier="referenced", paras=[

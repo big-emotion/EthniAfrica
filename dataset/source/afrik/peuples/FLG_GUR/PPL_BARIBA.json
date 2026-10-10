@@ -9,13 +9,13 @@
       "mainName": "Bariba",
       "selfAppellation": "Baatonu (singulier) / Baatombu (pluriel) ; leur langue : Baatonum",
       "exonyms": [
-        "Bariba (exonyme utilisé par les Yoruba et les Européens, sens inconnu en Baatonum)",
+        "Bariba (nom employé par les Yoruba et les Européens, dont le sens est inconnu en Baatonum)",
         "Baruba (variante du terme Bariba en usage chez les Yoruba du Nigeria)",
-        "Borgawa (exonyme haoussa, de Borgu, region historique du peuple)",
+        "Borgawa (nom haoussa qui renvoie à Borgu, région historique du peuple)",
         "Borgu ou Borgunya (termes en langues Busa et Boko)",
         "Baatonu, Batonu, Batonum (variantes orthographiques)"
       ],
-      "originOfExonyms": "Le terme Bariba est un exonyme d'origine yoruba, utilisé pour désigner le peuple et sa langue ; il ne signifie rien en Baatonum et est parfois considéré comme offensant par le peuple lui-même. Le terme Borgawa vient du haoussa et fait référence à Borgu, la région historique du peuple. Les termes Baatonu et Baatombu sont les seuls endonyms authentiques.",
+      "originOfExonyms": "Les Yoruba emploient Bariba pour désigner le peuple et sa langue. Ce nom n'a pas de sens en Baatonum et certaines personnes concernées le jugent offensant. Borgawa viendrait du haoussa et renverrait à Borgu, leur région historique. Pour se nommer eux-mêmes, les membres du peuple emploient Baatonu et Baatombu.",
       "whyProblematic": "Le terme Bariba, d'origine yoruba, est celui sous lequel le peuple est universellement connu dans les sources coloniales françaises et dans la littérature internationale. Il efface l'autoappellation Baatonu/Baatombu et peut être perçu comme stigmatisant. L'usage académique contemporain recommande d'utiliser Baatonu ou Baatombu.",
       "contemporaryUsage": "Bariba reste le terme dominant dans les sources officielles béninoises, les médias et la littérature internationale. Baatonu/Baatombu est utilisé dans les contextes académiques et locaux. Les deux termes coexistent. La langue est officiellement désignée Baatonum par Ethnologue (code bba).",
       "linguisticFamily": "FLG_GUR",
@@ -94,22 +94,243 @@
       {
         "title": "Baatonum (BBA) – Ethnologue (SIL International)",
         "url": "https://www.ethnologue.com/language/bba/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "The Bariba people of West Africa – Qiraat Africa, 2025",
         "url": "https://qiraatafrican.com/en/16491/the-bariba-people-of-west-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Binary personal naming system of the Baatombu people in Nigeria – Onoma Journal, Williams A., 2023",
         "url": "https://onomajournal.org/wp-content/uploads/2024/01/Onoma-58-3.03-Williams-final.pdf",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Bariba – Sage Reference, Encyclopedia of African Religion",
         "url": "https://sk.sagepub.com/ency/edvol/africanreligion/chpt/bariba",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bariba désigne un peuple du nord du Bénin et du Nigeria voisin, dans l'ancien Borgu, qui se nomme lui-même Baatombu. Bariba est le nom que lui donnent les Yoruba ; les Haoussa disent Borgawa. On ne sait pas avec certitude quand le nom Bariba apparaît par écrit, ni d'où il vient : il ne veut rien dire dans la langue du peuple, selon les personnes interrogées par Azibaoguanasi Williams.",
+    "names": [
+      {
+        "nameText": "Baatombu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bba",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne le peuple ; sa langue est le baatonum.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Baatombu est celui que se donne le peuple, au pluriel ; sa langue se nomme baatonum, selon les personnes interrogées par Azibaoguanasi Williams dans l'État de Kwara, au Nigeria.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Personal names and power: Binary personal naming system of the Baatombu people in Nigeria and Republic of Benin, Onoma, vol. 58",
+                "author": "Azibaoguanasi Williams",
+                "year": 2023,
+                "url": "https://onomajournal.org/wp-content/uploads/2024/01/Onoma-58-3.03-Williams-final.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 309-310",
+                "notes": "Revue du Conseil international des sciences onomastiques, lue dans le texte intégral. Passage : « the Baatombu people called themselves or their ethnicity Baatombu (plural), and a member of the ethnicity is a Baatonum (singular) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Baatombu est écrit Batombu par Emmanuel Oladipo Ojo et Sabi Joshua Bio, qui donnent Batonu pour une personne et Batonnum pour la langue.",
+            "sources": [
+              {
+                "title": "Change and Continuity among the Batombu since 1900, ColomboArts, vol. II, n° 3",
+                "author": "Emmanuel Oladipo Ojo et Sabi Joshua Bio",
+                "year": 2018,
+                "url": "https://colomboarts.cmb.ac.lk/wp-content/uploads/2018/10/2-Emmanuel-Oladipo-Ojo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22-23",
+                "notes": "Revue de l'université de Colombo, lue dans le texte intégral. Passage : « the people call themselves Batombu (plural) and Batonu (singular) and their language, Batonnum »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bariba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Yoruba",
+        "shortLine": "Le nom que les Yoruba donnent aux Baatombu ; il ne veut rien dire dans leur langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bariba, ou Baruba, est celui que les Yoruba donnent aux Baatombu et à leur langue. Il ne veut rien dire en baatonum et les personnes concernées le jugent offensant, selon les personnes interrogées par Azibaoguanasi Williams. Nous n'avons pas trouvé de source qui explique son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Personal names and power: Binary personal naming system of the Baatombu people in Nigeria and Republic of Benin, Onoma, vol. 58",
+                "author": "Azibaoguanasi Williams",
+                "year": 2023,
+                "url": "https://onomajournal.org/wp-content/uploads/2024/01/Onoma-58-3.03-Williams-final.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 309",
+                "notes": "Revue du Conseil international des sciences onomastiques, lue dans le texte intégral. Passage : « the Yoruba people of Nigeria call both the Baatombu people and their language as Bariba or Baruba. These words, however, mean nothing in Baatonum, and are considered offensive by the people »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage des historiens"
+            },
+            "era": "modern",
+            "statement": "Le nom Bariba sert aussi aux historiens à désigner les États du Borgu, appelés « royaumes bariba » du nom de l'un des principaux peuples de la région, selon Michel Izard et Joseph Ki-Zerbo. A. I. Asiwaju note que la langue batonu est aussi appelée baruba, bariba ou barba.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 395",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 26 : Dahomey, pays yoruba, Borgu (Borgou) et Bénin au XIXe siècle",
+                "author": "A. I. Asiwaju",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 748",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1960"
+            },
+            "statement": "Le nom Bariba est celui que donnent les Yoruba aux Batombu, selon l'historien Anene en 1960, que citent Emmanuel Oladipo Ojo et Sabi Joshua Bio.",
+            "sources": [
+              {
+                "title": "Change and Continuity among the Batombu since 1900, ColomboArts, vol. II, n° 3",
+                "author": "Emmanuel Oladipo Ojo et Sabi Joshua Bio",
+                "year": 2018,
+                "url": "https://colomboarts.cmb.ac.lk/wp-content/uploads/2018/10/2-Emmanuel-Oladipo-Ojo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Revue de l'université de Colombo, lue dans le texte intégral. Passage : « Anene (1960, p. 194) stated that the Batombu are called Borgawa by the Hausa and Bariba by the Yoruba »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "Entre le XVIe et le XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Bariba, sous la forme Ibariba, est celui que les Yoruba donnaient aux gens du Borgu, avec lesquels le royaume d'Oyo entretenait des rapports étroits, selon E. J. Alagoa. On ne sait pas avec certitude quand ce nom apparaît pour la première fois par écrit.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 15 : Les Fon et les Yoruba, du delta du Niger au Cameroun",
+                "author": "E. J. Alagoa",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 490",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Borgawa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "hau",
+        "namedBy": "Les Haoussa",
+        "shortLine": "Le nom haoussa des Baatombu, rapproché de celui du Borgu.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Borgawa est celui que les Haoussa et les Peuls donnent aux Baatombu ; il viendrait de Borgu, le nom de leur ancienne région d'avant la colonisation britannique, selon Azibaoguanasi Williams.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Personal names and power: Binary personal naming system of the Baatombu people in Nigeria and Republic of Benin, Onoma, vol. 58",
+                "author": "Azibaoguanasi Williams",
+                "year": 2023,
+                "url": "https://onomajournal.org/wp-content/uploads/2024/01/Onoma-58-3.03-Williams-final.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 309",
+                "notes": "Revue du Conseil international des sciences onomastiques, lue dans le texte intégral. Passage : « The Hausa/Fulani people refer to the Baatombu people as Borgawa (derived from Borgu, the erstwhile region of the people predating British colonial era) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1960"
+            },
+            "statement": "Le nom Borgawa est celui que donnent les Haoussa aux Batombu, selon l'historien Anene en 1960, que citent Emmanuel Oladipo Ojo et Sabi Joshua Bio.",
+            "sources": [
+              {
+                "title": "Change and Continuity among the Batombu since 1900, ColomboArts, vol. II, n° 3",
+                "author": "Emmanuel Oladipo Ojo et Sabi Joshua Bio",
+                "year": 2018,
+                "url": "https://colomboarts.cmb.ac.lk/wp-content/uploads/2018/10/2-Emmanuel-Oladipo-Ojo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Revue de l'université de Colombo, lue dans le texte intégral. Passage : « Anene (1960, p. 194) stated that the Batombu are called Borgawa by the Hausa and Bariba by the Yoruba »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

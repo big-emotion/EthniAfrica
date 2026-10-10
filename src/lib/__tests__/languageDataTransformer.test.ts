@@ -63,6 +63,22 @@ describe("transformLanguageData", () => {
     ]);
   });
 
+  // @req REQ-161
+  it("carries each source's kind to the fiche list", () => {
+    const data = transformLanguageData({
+      ...baseLanguage,
+      sources: [
+        { ...baseLanguage.sources[0], sourceKind: "linguistic_reference" },
+        { ...baseLanguage.sources[0], id: "src-2", sourceKind: null },
+      ],
+    });
+
+    expect(data.sources.map((source) => source.kind)).toEqual([
+      "linguistic_reference",
+      undefined,
+    ]);
+  });
+
   // @req REQ-136
   it("passes a derived nameProvenance through rather than upgrading it (AC1)", () => {
     const data = transformLanguageData({

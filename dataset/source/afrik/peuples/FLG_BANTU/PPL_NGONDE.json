@@ -92,27 +92,32 @@
       {
         "title": "Ngonde people – 101lasttribes.com",
         "url": "https://www.101lasttribes.com/tribes/ngonde.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Nyakyusa, Ngonde in Malawi – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/14078/MI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Nyakyusa And Ngonde – eHRAF World Cultures, Yale University",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fn17/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nyakyusa also known as Sokile, Konde, Nkonde, Wangonde – UBC Library",
         "url": "https://open.library.ubc.ca/cIRcle/collections/ubccommunityandpartnerspublicati/52387/items/1.0375684",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nyakyusa-Ngonde – Glottolog",
         "url": "https://glottolog.org/resource/languoid/id/nyak1260",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

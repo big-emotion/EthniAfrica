@@ -17,7 +17,7 @@
         "Nyae Nyae Bushmen",
         "Kung-Tsumkwe"
       ],
-      "originOfExonyms": "Le terme Bushmen fut impose par les colons europeens et porte une connotation derogative. Le terme !Kung, utilise plus largement pour l'ensemble du continuum dialectal Ju, fut applique aux Ju|'hoansi comme sous-groupe meridional. L'endonyme Ju|'hoansi signifie litteralement les vrais gens en langue ju|'hoan, le suffixe -si marquant le pluriel. La notation |' indique une combinaison d'un clic dental avec une occlusive glottale.",
+      "originOfExonyms": "Les colons européens ont imposé le nom méprisant Bushmen. !Kung désigne plus largement l'ensemble des parlers proches regroupés sous le nom Ju. Il a aussi été appliqué aux Ju|'hoansi, qui en constituent le groupe du sud. Les personnes concernées se nomment Ju|'hoansi, qui signifierait les vrais gens en langue ju|'hoan. La terminaison -si marque le pluriel. Les signes |' indiquent un claquement de langue contre les dents, accompagné d'une brève fermeture au niveau de la gorge.",
       "whyProblematic": "Le terme Bushmen est considere comme offensant dans les contextes officiels bien que certains membres de la communaute l'aient reapproprie. L'appellation !Kung cree une confusion avec les groupes !Xun du nord. L'emploi de San comme terme collectif gomme les differences significatives entre les dizaines de groupes distincts.",
       "contemporaryUsage": "Ju|'hoansi est le terme prefere par la communaute et adopte dans les contextes academiques et politiques. Le Nyae Nyae Conservancy (Namibie) utilise officiellement ce terme. Les Ju|'hoansi du Botswana se designent parfois comme ǂKx'aoǁ'ae selon la variete dialectale locale.",
       "linguisticFamily": "FLG_KXA",
@@ -103,22 +103,26 @@
       {
         "title": "SIL Ethnologue — Ju|'hoansi language (ktz)",
         "url": "https://www.ethnologue.com/language/ktz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — South-Eastern Ju (ktz)",
         "url": "https://glottolog.org/resource/languoid/id/juho1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Ju'hoan language resources",
         "url": "https://joshuaproject.net/languages/ktz",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "UNESCO Tentative List — San Living Cultural Landscape (Tsumkwe District)",
         "url": "https://whc.unesco.org/en/tentativelists/6096/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Peoples of the World — The Indigenous Juhoansi People",
@@ -128,12 +132,14 @@
       {
         "title": "Lee, Richard B. & DeVore, Irven (1976). Kalahari Hunter-Gatherers. Harvard University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Cultural Survival Quarterly — Progress or Poverty? The Dobe Ju|'hoansi",
         "url": "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/progress-or-poverty-dobe-juhoansi",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Shamwari Game Reserve — Ju/'hoansi Tracking Cultural Experience",

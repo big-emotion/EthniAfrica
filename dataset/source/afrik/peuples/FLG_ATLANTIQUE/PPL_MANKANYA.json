@@ -17,8 +17,8 @@
         "Mankaya",
         "Bawuh"
       ],
-      "originOfExonyms": "Mancanha est la forme portugaise, Mancagne la forme francaise. Bola et Brame sont des noms anciens utilises dans les sources coloniales. Bawuh reflete une origine regionale dans la ville de Co (maintenant Ko/Wuh). Le nom Mankanya lui-meme serait un exonyme : selon la tradition, les colonisateurs auraient pris le nom du chef de l'epoque pour le nom du peuple.",
-      "whyProblematic": "Le terme Mankanya est un exonyme : selon la tradition orale, les colonisateurs auraient confondu le nom du chef de l'epoque avec le nom du groupe. Le veritable nom du peuple est Bahula (les gens de Hula), et leur langue est appelee Uhula par ses locuteurs.",
+      "originOfExonyms": "Mancanha est la forme portugaise, et Mancagne la forme française. Bola et Brame apparaissent dans les sources coloniales. Bawuh renvoie à une origine dans la ville de Co, aujourd'hui appelée Ko/Wuh. Selon la tradition, Mankanya aurait été donné par les colonisateurs, qui auraient pris le nom du chef de l'époque pour celui du peuple.",
+      "whyProblematic": "Selon la tradition orale, les colonisateurs auraient confondu le nom du chef de l'époque avec celui du groupe en employant Mankanya. Les personnes concernées se nomment Bahula, « les gens de Hula », et appellent leur langue Uhula.",
       "contemporaryUsage": "Mankanya est le terme officiel utilise au Senegal et en Guinee-Bissau. La langue a ete reconnue comme langue nationale au Senegal en 2005 (decret signe en 2006). L'association culturelle Pkumel dirige des programmes d'alphabetisation depuis 2001.",
       "linguisticFamily": "FLG_ATLANTIQUE",
       "ethnoLinguisticGroup": "Groupe Bak (sous-groupe Manjaku-Mankanya-Pepel) de la famille atlantique du Niger-Congo",
@@ -102,17 +102,20 @@
       {
         "title": "Gaved T.J.D. - A grammar of Mankanya: An Atlantic language of Guinea-Bissau, Senegal and the Gambia. Leiden University, 2020",
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2969896/view",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog - Mankanya mank1251",
         "url": "https://glottolog.org/resource/languoid/id/mank1251",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Mankanya in Guinea-Bissau and all countries",
         "url": "https://joshuaproject.net/people_groups/13515",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

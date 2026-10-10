@@ -11,7 +11,7 @@
       "exonyms": [
         "Antankay (nom ancien désignant les habitants de la région de l'Ankay)"
       ],
-      "originOfExonyms": "Le nom Bezanozano signifie ceux aux nombreuses petites tresses en référence à leur coiffure traditionnelle caractéristique en petites tresses multiples. Le terme Antankay (ceux de l'Ankay) est l'ancien ethnonyme géographique référant à leur territoire historique. Le nom Bezanozano est devenu péjoratif sous la domination merina, associé à l'esclavage et au portage forcé.",
+      "originOfExonyms": "Bezanozano est traduit par « ceux aux nombreuses petites tresses », en référence à la coiffure traditionnelle du peuple. Son ancien nom, Antankay, voudrait dire « ceux de l'Ankay » et renverrait à son territoire historique. Sous la domination merina, Bezanozano a pris un sens méprisant, associé à l'esclavage et au portage forcé.",
       "whyProblematic": "Le terme Bezanozano a été historiquement stigmatisé sous la domination Merina, où il est devenu synonyme d'andevo (esclave). Après l'indépendance en 1960, un mouvement social local a cherché à le revendiquer positivement.",
       "contemporaryUsage": "Le terme est aujourd'hui réhabilité et revendiqué comme identité ethnique, notamment grâce aux mouvements associatifs et politiques post-indépendance qui ont encouragé l'égalité et la fierté identitaire bezanozano.",
       "linguisticFamily": "FLG_AUSTRONESIENNE",
@@ -90,27 +90,32 @@
       {
         "title": "Joshua Project — Bezanozano in Madagascar, (consulté 2025)",
         "url": "https://joshuaproject.net/people_groups/print/10822/MA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Bezanozano of Madagascar, (consulté 2025)",
         "url": "https://peoplegroups.org/people_groups/pg015296/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes — Bezanozano, (consulté 2025)",
         "url": "https://www.101lasttribes.com/tribes/bezanozano.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — Madagascar, (consulté 2025)",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Beaujard, Philippe. Les mondes de l'océan Indien. Paris : Armand Colin, 2012",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

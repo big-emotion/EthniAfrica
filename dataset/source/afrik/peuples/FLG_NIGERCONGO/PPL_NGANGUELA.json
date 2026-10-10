@@ -92,27 +92,32 @@
       {
         "title": "Ganguela Facts for Kids – Kiddle",
         "url": "https://kids.kiddle.co/Ganguela",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Nkangala Language – Ethnologue",
         "url": "https://www.ethnologue.com/language/nkn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Nyemba, Ngangela in Angola – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/14092/AO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Angola – Ethnic Groups – Country Studies",
         "url": "https://countrystudies.us/angola/56.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Angola — Nganguela — Country Studies (Library of Congress)",
         "url": "https://countrystudies.us/angola/63.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       }
     ]
   }

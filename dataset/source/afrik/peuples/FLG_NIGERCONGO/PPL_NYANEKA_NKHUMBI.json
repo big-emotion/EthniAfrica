@@ -86,37 +86,44 @@
       {
         "title": "Minority Rights Group – Angola, 2024",
         "url": "https://minorityrights.org/country/angola/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Joshua Project – Nyaneka in Angola",
         "url": "https://joshuaproject.net/people_groups/14084",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Nkhumbi in Angola",
         "url": "https://joshuaproject.net/people_groups/13417",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Contemporary Capoeira – The Nyaneka-Nkhumbi, 2024",
         "url": "https://capoeirahistory.com/the-nyaneka-nkhumbi/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Glottolog – Nyaneka [nyan1305]",
         "url": "https://glottolog.org/resource/languoid/id/nyan1305",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Refworld – World Directory of Minorities and Indigenous Peoples, Angola",
         "url": "https://www.refworld.org/reference/countryrep/mrgi/2008/62215",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "101 Last Tribes – Muila people",
         "url": "https://www.101lasttribes.com/tribes/muila.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

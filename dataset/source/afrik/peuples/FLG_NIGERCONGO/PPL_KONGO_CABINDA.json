@@ -94,37 +94,44 @@
       {
         "title": "Minority Rights Group International — Bakongo and Cabindans in Angola",
         "url": "https://minorityrights.org/communities/bakongo-and-cabindans/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Immigration and Refugee Board of Canada — Bakongo in Angola (2024)",
         "url": "https://www.ecoi.net/en/document/2110281.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "US State Department — Angola country report (Bakongo 13% of population)",
         "url": "https://2009-2017.state.gov/outofdate/bgn/angola/82228.htm",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue — Kongo macrolanguage (kon)",
         "url": "https://www.ethnologue.com/language/kon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Kongo in Angola",
         "url": "https://joshuaproject.net/people_groups/12774/AO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "EBSCO Research Starters — Kongo (historical kingdom)",
         "url": "https://www.ebsco.com/research-starters/history/kongo-historical-kingdom",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "101 Last Tribes — Kongo People (subgroups in Angola)",
         "url": "https://www.101lasttribes.com/tribes/kongo.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "The Bamoun Collection — Between Two Worlds (Woyo nkisi objects)",

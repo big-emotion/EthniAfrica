@@ -13,7 +13,7 @@
         "Maf-Mafa",
         "Matakam (denomination coloniale imprecise)"
       ],
-      "originOfExonyms": "Le terme Matakam a ete utilise par l'administration coloniale francaise pour designer plusieurs peuples des montagnes Mandara, creant des confusions avec d'autres groupes voisins. Mofa est la denomination native la plus proche de l'endonyme. Mafahay est le nom que se donnent les Mafa proprement dits.",
+      "originOfExonyms": "L'administration coloniale française employait Matakam pour plusieurs peuples des montagnes Mandara, ce qui créait des confusions entre groupes voisins. Mofa est la forme la plus proche du nom employé localement. Les Mafa eux-mêmes se nomment Mafahay.",
       "whyProblematic": "Le terme Matakam, utilise dans les sources coloniales, recouvre plusieurs peuples distincts des montagnes Mandara (Mafa, Mofu, Mada) et ne doit pas etre employe comme synonyme exclusif de Mafa.",
       "contemporaryUsage": "Le terme Mafa est adopte dans la litterature linguistique et ethnographique internationale (Ethnologue, Wikipedia, CNRS). Mafahay est l'autodesignation des Mafa proprement dits dans leur langue.",
       "linguisticFamily": "FLG_TCHADIQUE",
@@ -96,7 +96,8 @@
       {
         "title": "101 Last Tribes — Mafa people",
         "url": "http://www.101lasttribes.com/tribes/mafa.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Gerhard Muller-Kosack — The Way of the Beer. Mandaras Publishing, London 2003",
@@ -106,17 +107,377 @@
       {
         "title": "Mandaras.info — Mafa bull festival (maray) Zlama slideshow",
         "url": "https://www.mandaras.info/bull-festival/bull-festival-slides.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Mafa (maf)",
         "url": "https://www.ethnologue.com/language/maf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Gbaya Art Blog — The Mafa community",
         "url": "https://gbayaart.wordpress.com/2014/07/17/the-mafa-community/",
         "tier": "unverified"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mafa désigne un peuple des monts Mandara, au nord du Cameroun et au Nigeria, qui se nomme lui-même Mafa. D'autres noms existent : Matakam, un nom de l'époque coloniale abandonné pour son sens méprisant, et Kirdi, un terme général et méprisant pour les non-musulmans du nord du Cameroun. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Mafa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple des monts Mandara.",
+        "periodLabel": "Forme proche écrite en 1944 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1974,
+              "to": 1976,
+              "label": "Milieu des années 1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Mafa remplace Matakam chez les auteurs à partir du milieu des années 1970, selon l'anthropologue Gerhard Müller-Kosack.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Way of the Beer: Ritual Re-Enactment of History among the Mafa",
+                "author": "Gerhard Müller-Kosack",
+                "year": 2003,
+                "url": "https://www.mandaras.info/MandarasPublishing/TheWayoftheBeer-MullerKosack2003.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 64",
+                "notes": "Londres, Mandaras Publishing, livre numérique. Lu dans le texte intégral publié par l'éditeur, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "1966"
+            },
+            "era": "modern",
+            "statement": "Le nom Mafa est présenté en 1966 par Podlewski comme le nom que ce peuple se donne, tandis que Matakam viendrait des Peuls : c'est le premier auteur à le dire clairement, selon Gerhard Müller-Kosack.",
+            "sources": [
+              {
+                "title": "The Way of the Beer: Ritual Re-Enactment of History among the Mafa",
+                "author": "Gerhard Müller-Kosack",
+                "year": 2003,
+                "url": "https://www.mandaras.info/MandarasPublishing/TheWayoftheBeer-MullerKosack2003.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 64",
+                "notes": "Londres, Mandaras Publishing, livre numérique. Lu dans le texte intégral publié par l'éditeur, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1944,
+              "to": 1944,
+              "label": "1944"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mafa apparaît sous une forme proche, Mafahay, chez l'administrateur colonial Lavergne, qui publie en 1944 la première étude sur ce peuple, Le pays et la population Matakam : les Mafahay y sont l'une des principales fractions des Matakam, selon Gerhard Müller-Kosack. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Way of the Beer: Ritual Re-Enactment of History among the Mafa",
+                "author": "Gerhard Müller-Kosack",
+                "year": 2003,
+                "url": "https://www.mandaras.info/MandarasPublishing/TheWayoftheBeer-MullerKosack2003.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63",
+                "notes": "Londres, Mandaras Publishing, livre numérique. Lu dans le texte intégral publié par l'éditeur, lu le 10 octobre 2026. L'auteur cite Lavergne, Le pays et la population Matakam, 1944 ; nous n'avons pas lu ce texte."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Matakam",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom colonial venu des Peuls, abandonné pour son sens méprisant.",
+        "periodLabel": "Époque coloniale et jusqu'aux années 1970",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Matakam a un sens méprisant et ne couvre pas le même groupe que Mafa : on y rangeait aussi les Bulahay, selon Gerhard Müller-Kosack.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Way of the Beer: Ritual Re-Enactment of History among the Mafa",
+                "author": "Gerhard Müller-Kosack",
+                "year": 2003,
+                "url": "https://www.mandaras.info/MandarasPublishing/TheWayoftheBeer-MullerKosack2003.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63-64",
+                "notes": "Londres, Mandaras Publishing, livre numérique. Lu dans le texte intégral publié par l'éditeur, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Matakam figure chez l'officier allemand Strümpell, qui tente le premier d'en expliquer le sens, selon Gerhard Müller-Kosack. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Way of the Beer: Ritual Re-Enactment of History among the Mafa",
+                "author": "Gerhard Müller-Kosack",
+                "year": 2003,
+                "url": "https://www.mandaras.info/MandarasPublishing/TheWayoftheBeer-MullerKosack2003.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63",
+                "notes": "Londres, Mandaras Publishing, livre numérique. Lu dans le texte intégral publié par l'éditeur, lu le 10 octobre 2026. L'auteur cite Strümpell, 1923, p. 60 et suivantes ; nous n'avons pas lu ce texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Proposée en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Matakam serait un mot peul qui renverrait au fait que les montagnards du nord des monts Mandara ne portaient pas de vêtements de coton, selon l'officier allemand Strümpell, que cite Gerhard Müller-Kosack.",
+            "hypothesisGroup": "origine du nom Matakam",
+            "sources": [
+              {
+                "title": "The Way of the Beer: Ritual Re-Enactment of History among the Mafa",
+                "author": "Gerhard Müller-Kosack",
+                "year": 2003,
+                "url": "https://www.mandaras.info/MandarasPublishing/TheWayoftheBeer-MullerKosack2003.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63",
+                "notes": "Londres, Mandaras Publishing, livre numérique. Lu dans le texte intégral publié par l'éditeur, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1944,
+              "to": 1944,
+              "label": "Proposée en 1944"
+            },
+            "era": "colonial",
+            "statement": "Le nom Matakam viendrait du mot peul mettayamen, un terme méprisant que des lieutenants du lamido Lawal de l'Adamaoua auraient lancé à des montagnards sans vêtements ; il aurait d'abord désigné la montagne, puis le peuple, selon une légende que rapporte l'administrateur Lavergne, cité par Gerhard Müller-Kosack.",
+            "hypothesisGroup": "origine du nom Matakam",
+            "sources": [
+              {
+                "title": "The Way of the Beer: Ritual Re-Enactment of History among the Mafa",
+                "author": "Gerhard Müller-Kosack",
+                "year": 2003,
+                "url": "https://www.mandaras.info/MandarasPublishing/TheWayoftheBeer-MullerKosack2003.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63",
+                "notes": "Londres, Mandaras Publishing, livre numérique. Lu dans le texte intégral publié par l'éditeur, lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kirdi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom méprisant donné aux non-musulmans du nord du Cameroun ; écrit dès 1826.",
+        "periodLabel": "Écrit depuis 1826 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Kirdi ne désigne pas les seuls Mafa : c'est le terme le plus courant pour parler des habitants non musulmans du nord du Cameroun. Il a un sens méprisant, et les chercheurs renoncent pour cela à l'employer, selon Jeanne-Françoise Vincent. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sur les traces du major Denham : le Nord-Cameroun il y a cent cinquante ans",
+                "author": "Jeanne-Françoise Vincent",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1978_num_18_72_2369",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 580",
+                "notes": "Cahiers d'études africaines, vol. 18, n° 72, p. 575-606. Lu sur Persée, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Kirdi sert aussi pour les Mafa et les autres montagnards des monts Mandara, selon l'anthropologue Gerhard Müller-Kosack.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Way of the Beer: Ritual Re-Enactment of History among the Mafa",
+                "author": "Gerhard Müller-Kosack",
+                "year": 2003,
+                "url": "https://www.mandaras.info/MandarasPublishing/TheWayoftheBeer-MullerKosack2003.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Londres, Mandaras Publishing, livre numérique. Lu dans le texte intégral publié par l'éditeur, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "Récit recueilli à Mora en 1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Kirdi est employé par les Mandara « depuis nos ancêtres » pour désigner tous les païens, ceux de la plaine comme ceux de la montagne, alors que les gens du Bornou disent Kerdi, selon May Bichaïr Umar.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sur les traces du major Denham, cité par Jeanne-Françoise Vincent",
+                "author": "Témoignage de May Bichaïr Umar",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1978_num_18_72_2369",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Le mot Kirdi chez les Mandara",
+                "carrier": "May Bichaïr Umar",
+                "place": "Mora, Nord-Cameroun",
+                "notes": "Témoignage recueilli à Mora le 4 décembre 1976 et cité par l'autrice (p. 580, note 41) ; lu le 10 octobre 2026."
+              },
+              {
+                "title": "Sur les traces du major Denham : le Nord-Cameroun il y a cent cinquante ans",
+                "author": "Jeanne-Françoise Vincent",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1978_num_18_72_2369",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 580",
+                "notes": "Cahiers d'études africaines, vol. 18, n° 72, p. 575-606. Lu sur Persée, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1823,
+              "to": 1826,
+              "label": "Expédition de 1823 (récit publié en 1826)"
+            },
+            "era": "polity",
+            "statement": "Le nom Kirdi s'écrit Kerdies chez le major Dixon Denham pour les montagnards voisins de Mora, sujets du sultan du Mandara ; une note l'explique comme un mot général pour désigner les incroyants.",
+            "formAsWritten": "Kerdies",
+            "sources": [
+              {
+                "title": "Narrative of Travels and Discoveries in Northern and Central Africa, in the Years 1822, 1823, and 1824",
+                "author": "Dixon Denham, Hugh Clapperton et Walter Oudney",
+                "year": 1826,
+                "url": "https://archive.org/details/narrativetravel02salagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 145 et p. 153",
+                "notes": "Deuxième édition, tome I, Londres, John Murray. Lu sur la numérisation de la New York Public Library sur Internet Archive, lu le 10 octobre 2026. Le passage est du récit de Dixon Denham."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": 1826,
+              "label": "Voyage de 1822-1823 (récit publié en 1826)"
+            },
+            "era": "polity",
+            "statement": "Le nom Kirdi apparaît par écrit sous la forme Kirdies dans le récit du voyage du major Dixon Denham vers le Bornou : le sultan du Baguirmi s'y réfugie « parmi les Kirdies », au sud du grand fleuve. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Kirdies",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of Travels and Discoveries in Northern and Central Africa, in the Years 1822, 1823, and 1824",
+                "author": "Dixon Denham, Hugh Clapperton et Walter Oudney",
+                "year": 1826,
+                "url": "https://archive.org/details/narrativetravel02salagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 45",
+                "notes": "Deuxième édition, tome I, Londres, John Murray. Lu sur la numérisation de la New York Public Library sur Internet Archive, lu le 10 octobre 2026. Le passage est du récit de Dixon Denham."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "Proposée en 1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Kirdi existe presque à l'identique en kanouri, Kerdi, et en mandara, Kirdi, sans qu'on puisse dire laquelle de ces langues l'a pris à l'autre ; le Kirdi du Cameroun d'aujourd'hui viendrait du mandara, sans doute par les premiers colonisateurs, selon Jeanne-Françoise Vincent.",
+            "hypothesisGroup": "origine du nom Kirdi",
+            "sources": [
+              {
+                "title": "Sur les traces du major Denham : le Nord-Cameroun il y a cent cinquante ans",
+                "author": "Jeanne-Françoise Vincent",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1978_num_18_72_2369",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 580",
+                "notes": "Cahiers d'études africaines, vol. 18, n° 72, p. 575-606. Lu sur Persée, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposée en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Kirdi serait un mot kanouri tiré de l'arabe qird, qui voudrait dire « non-musulman » ou « païen », selon l'anthropologue Gerhard Müller-Kosack.",
+            "hypothesisGroup": "origine du nom Kirdi",
+            "sources": [
+              {
+                "title": "The Way of the Beer: Ritual Re-Enactment of History among the Mafa",
+                "author": "Gerhard Müller-Kosack",
+                "year": 2003,
+                "url": "https://www.mandaras.info/MandarasPublishing/TheWayoftheBeer-MullerKosack2003.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Londres, Mandaras Publishing, livre numérique. Lu dans le texte intégral publié par l'éditeur, lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

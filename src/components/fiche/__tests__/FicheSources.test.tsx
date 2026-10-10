@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { render, screen, within } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import { FicheSources } from "@/components/fiche/FicheSources";
@@ -11,6 +11,9 @@ const parchmentCss = readFileSync(
   join(process.cwd(), "src/styles/fiche-parchment.css"),
   "utf8"
 );
+
+const TIER_WORDS =
+  /Officielle|Référencée|Non vérifiée|En attente d.examen|palier|Niveau de source/i;
 
 const entry = (
   label: string,
@@ -43,32 +46,43 @@ describe("FicheSources", () => {
     expect(screen.getByText("CIA World Factbook")).toBeTruthy();
   });
 
+  /**
+   * Doctrine §1.1 (operator ruling, 2026-10-08): the reader never sees a
+   * source's tier. The standing stays in the data; the list prints the work.
+   */
   // @req REQ-092
-  it("shows each source's own standing rather than one verdict over the list", () => {
-    render(
+  it("prints no tier word beside any source, whatever its standing", () => {
+    const { container } = render(
       <FicheSources
         sources={[
           entry("UN 2025", { standing: "official" }),
+          entry("Ethnologue", { standing: "referenced" }),
           entry("Un blog", { standing: "unverified" }),
+          entry("À trancher", { standing: "needs_review" }),
         ]}
       />
     );
-    const list = screen.getByRole("list");
-    expect(within(list).getByText("Officielle")).toBeTruthy();
-    expect(within(list).getByText("Non vérifiée")).toBeTruthy();
+
+    expect(container.textContent).not.toMatch(TIER_WORDS);
+    expect(container.querySelector("[data-source-standing]")).toBeNull();
   });
 
   // @req REQ-092
-  it("says a pending source is awaiting review, never that it is unverified", () => {
+  it("draws no per-standing census over the list", () => {
     const { container } = render(
       <FicheSources
-        sources={[entry("À trancher", { standing: "needs_review" })]}
+        sources={[
+          entry("A", { standing: "official" }),
+          entry("B", { standing: "official" }),
+          entry("C", { standing: "unverified" }),
+        ]}
       />
     );
 
-    expect(container.textContent).toContain("En attente d'examen");
-    expect(container.textContent).not.toContain("Non vérifiée");
-    expect(container.textContent).not.toContain("Tier 1");
+    expect(container.querySelector(".afh-census")).toBeNull();
+    expect(container.querySelector("[data-census-standing]")).toBeNull();
+    expect(screen.queryByTestId("sources-tally")).toBeNull();
+    expect(parchmentCss).not.toMatch(/data-census-standing/);
   });
 
   /**
@@ -107,65 +121,6 @@ describe("FicheSources", () => {
     expect(container.querySelector("#source-1")).not.toBeNull();
     expect(container.querySelector("#source-4")).not.toBeNull();
     expect(screen.getByText("4.")).toBeInTheDocument();
-    // Numbering must not collapse the standing each entry carries.
-    expect(
-      within(screen.getByRole("list")).getByText("Officielle")
-    ).toBeTruthy();
-  });
-
-  /**
-   * The census the tally line used to state in words, drawn: one segment per
-   * standing, as wide as its share of the list, in the order the page's own
-   * sources arrive. Nine entries were the only way to learn that seven of
-   * them await examination.
-   */
-  // @req REQ-092
-  it("draws a census bar with one segment per standing, as wide as its share", () => {
-    const { container } = render(
-      <FicheSources
-        sources={[
-          entry("A", { standing: "official" }),
-          entry("B", { standing: "official" }),
-          entry("C", { standing: "official" }),
-          entry("D", { standing: "official" }),
-          entry("E", { standing: "referenced" }),
-        ]}
-      />
-    );
-
-    const bar = container.querySelector(".afh-census")!;
-    expect(bar).toHaveAttribute("role", "img");
-    const segments = Array.from(
-      bar.querySelectorAll<HTMLElement>("[data-census-standing]")
-    );
-    expect(
-      segments.map((segment) => [
-        segment.dataset.censusStanding,
-        segment.style.width,
-      ])
-    ).toEqual([
-      ["official", "80%"],
-      ["referenced", "20%"],
-    ]);
-    expect(screen.getByTestId("sources-tally")).toHaveTextContent(
-      "5 sources · Officielle : 4 · Référencée : 1"
-    );
-    expect(bar.getAttribute("aria-label")).toBe(
-      screen.getByTestId("sources-tally").textContent
-    );
-
-    for (const standing of [
-      "official",
-      "referenced",
-      "unverified",
-      "needs_review",
-    ]) {
-      const rule = parchmentCss.match(
-        new RegExp(`\\[data-census-standing="${standing}"\\]\\s*\\{([^}]*)\\}`)
-      );
-      expect(rule?.[1]).toMatch(/var\(--afh-/);
-      expect(rule?.[1]).not.toMatch(/#[0-9a-f]{3,6}\b/i);
-    }
   });
 
   /**
@@ -248,5 +203,28 @@ describe("FicheSources", () => {
       "Recensement national de 2011.",
     ]);
     expect(container.textContent).not.toMatch(/tier|domain ruling/i);
+  });
+
+  /**
+   * Doctrine §1.1: every reader-facing source shows its type, never its tier.
+   * A source with no recorded kind prints nothing — "Type non précisé" on
+   * every untyped line would be noise — unless the record says "unknown".
+   */
+  // @req REQ-161
+  it("shows each source's kind, and nothing for a source without one", () => {
+    render(
+      <FicheSources
+        sources={[
+          entry("Ethnologue", { kind: "linguistic_reference" }),
+          entry("Récit recueilli", { kind: "unknown" }),
+          entry("Sans type"),
+        ]}
+      />
+    );
+
+    const items = screen.getAllByRole("listitem");
+    expect(items[0]).toHaveTextContent("Référence linguistique");
+    expect(items[1]).toHaveTextContent("Type non précisé");
+    expect(items[2].querySelector("[data-source-kind]")).toBeNull();
   });
 });

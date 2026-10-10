@@ -2,9 +2,9 @@
  * Zod schemas for `/v2/names` and `/v2/peoples/{id}/names` (Epic 8 — Names
  * Atlas, FR53-FR58). Both endpoints share this file (8.6, 8.7).
  *
- * `name_records` (migration 029) holds structured name-variant dossiers
- * (endonym | exonym | historical_spelling | surname) attached to peoples.
- * v1 only populates entity_type='people'.
+ * A people's names (endonym | exonym | historical_spelling) are read from its
+ * fiche as the loader projected it: the nameHistory block and the name index
+ * (`afrik_peoples.name_index`, migration 101), which replaced `name_records`.
  */
 
 import {
@@ -38,8 +38,6 @@ export const nameRecordSourceSchema = z.object({
   year: z.number().int().nullable(),
   tier: z.string().nullable(),
 });
-
-export type NameRecordSourceView = z.infer<typeof nameRecordSourceSchema>;
 
 // @req REQ-057
 export const nameRecordImpositionSchema = z.object({
@@ -82,8 +80,6 @@ export const namePronunciationViewSchema = z.object({
     page: z.string().optional(),
   }),
 });
-
-export type NamePronunciationView = z.infer<typeof namePronunciationViewSchema>;
 
 // @req REQ-057
 export const nameRecordConfidenceSchema = z.object({

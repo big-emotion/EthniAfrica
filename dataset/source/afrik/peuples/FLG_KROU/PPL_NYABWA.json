@@ -91,17 +91,20 @@
       {
         "title": "Aka Konin — L'art musical chez les Niaboua, un peuple krou du centre-ouest de la Cote d'Ivoire. MRAC Tervuren, 2012",
         "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/niaboua.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog 5.3 — Nyabwa (nyab1255)",
         "url": "https://glottolog.org/resource/languoid/id/nyab1255",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Nyabwa language (nwb)",
         "url": "https://www.ethnologue.com/language/nwb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Day Translations — Ivory Coast Language Profile",
@@ -111,17 +114,20 @@
       {
         "title": "Mission Atlas Project — Cote d'Ivoire Country Profile",
         "url": "http://www.worldmap.org/uploads/9/3/4/4/9344303/cote_divoire_country_profile.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Refworld/MRGI — World Directory of Minorities and Indigenous Peoples, Cote d'Ivoire",
         "url": "https://www.refworld.org/reference/countryrep/mrgi/2008/en/65159",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Ethnologue — Subgroup Nyabwa",
         "url": "https://www.ethnologue.com/subgroup/971/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ze Ze Beke (P.) — Les Interdits alimentaires chez les Nyabwa de Cote d'Ivoire, cit. in Aka Konin 2012",

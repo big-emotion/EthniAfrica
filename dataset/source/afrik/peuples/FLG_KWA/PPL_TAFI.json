@@ -8,7 +8,7 @@
       "mainName": "Tafi",
       "selfAppellation": "Tegbo",
       "exonyms": ["Tafi", "Bagbo", "Nyangbo-Tafi"],
-      "originOfExonyms": "Tegbo est l'endonyme utilise par le peuple lui-meme pour sa langue; Tafi designe le peuple et le territoire dans les sources exterieures. La denomination Nyangbo-Tafi regroupe parfois les Tafi avec le peuple Nyangbo voisin, dont la langue est proche mais distincte.",
+      "originOfExonyms": "Le peuple nomme sa langue Tegbo. Les sources extérieures emploient Tafi pour le peuple et son territoire. Nyangbo-Tafi rassemble parfois les Tafi avec leurs voisins Nyangbo, qui parlent une langue proche mais distincte.",
       "whyProblematic": null,
       "contemporaryUsage": "Tafi est la denomination standard dans les publications academiques, les listings de Joshua Project et Ethnologue. Tegbo est le nom de la langue tel que designe par les locuteurs eux-memes. Le sanctuaire aux singes de Tafi Atome constitue la principale visibilite touristique du peuple.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -74,32 +74,38 @@
       {
         "title": "Joshua Project – Tafi, Tegbo in Ghana",
         "url": "https://joshuaproject.net/people_groups/15171",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Tafi Language TCD",
         "url": "https://www.ethnologue.com/language/tcd/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Wikidata – Tafi Q36545",
         "url": "https://www.wikidata.org/wiki/Q36545",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Facebook – Migration history of Tafi Guans in the Volta Region",
         "url": "https://www.facebook.com/groups/369358884478832/posts/1388990782515632/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ghana Volta Region – Modern Ghana demographics",
         "url": "https://www.modernghana.com/ghanahome/regions/volta.asp",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "ISO 639-3 – code tcd: Tafi",
         "url": "https://iso639-3.sil.org/code/tcd",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

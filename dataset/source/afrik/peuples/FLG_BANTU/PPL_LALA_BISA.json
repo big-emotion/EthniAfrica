@@ -84,32 +84,38 @@
       {
         "title": "Joshua Project – Lala-Bisa in Zambia",
         "url": "https://joshuaproject.net/people_groups/19057/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Bisa in Zambia",
         "url": "https://joshuaproject.net/people_groups/10875",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bisa – Zambia's Traditional History",
         "url": "https://traditionalzambia.home.blog/tribes-of-zambia/second-bantu-invasion/luba/bisa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Bisa people – Africa 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/bisa.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue – Lala-Bisa Language LEB",
         "url": "https://www.ethnologue.com/language/leb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Boswell, D. – Chipimpi, Vulgar Clans, and Lala-Lamba Ethnohistory, 2008",
         "url": "https://scholarexchange.furman.edu/cgi/viewcontent.cgi?article=1001&context=ant-publications",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

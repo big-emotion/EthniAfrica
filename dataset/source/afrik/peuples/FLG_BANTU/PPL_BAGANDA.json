@@ -15,7 +15,7 @@
         "Buganda (designe le territoire et le royaume, parfois utilise par extension pour le peuple)",
         "Wanganda"
       ],
-      "originOfExonyms": "Le terme Baganda vient de obuganda (solidarité, fraternité), souvent traduit par des fagots de tiges liées ensemble, image de l'unité. Le préfixe Ba- désigne les personnes (les gens du Buganda). En linguistique, Ganda est la racine utilisée pour nommer la langue (Luganda) et les habitants (Baganda). L'ethnonyme Waganda fut employé par les explorateurs arabes et swahilis avant d'être repris par les Européens.",
+      "originOfExonyms": "Baganda serait lié à obuganda, « solidarité » ou « fraternité ». L'image de fagots de tiges liées ensemble sert souvent à expliquer ce nom comme un symbole d'unité. Ba- désigne les personnes : les gens du Buganda. Ganda est la partie commune aux noms du peuple, Baganda, et de la langue, Luganda. Les explorateurs arabes et swahilis ont employé Waganda, puis les Européens l'ont repris.",
       "whyProblematic": "La confusion entre le Buganda (royaume banto) et l'Uganda (etat national) est source de tensions politiques persistantes, les Baganda revendiquant une autonomie et des droits speciaux au sein de l'Etat ougandais. Le terme tribe, impose par l'administration coloniale, est rejete par de nombreux Baganda qui preferent le terme nation ou peuple.",
       "contemporaryUsage": "Baganda reste l'appellation standard en ougandais et en anglais. Muganda est la forme singulière courante ; l'adjectif culturel est kiganda. Le terme Ganda est utilisé dans les contextes académiques et linguistiques.",
       "linguisticFamily": "FLG_BANTU",
@@ -155,12 +155,14 @@
       {
         "title": "Uganda Bureau of Statistics (UBOS) – National Population and Housing Census 2024",
         "url": "https://www.ubos.org/wp-content/uploads/2025/06/Buganda-Sub-Region-Census-2024-Profile.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "SIL Ethnologue – Luganda (lug)",
         "url": "https://www.ethnologue.com/language/lug/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Roscoe, John (1911). The Baganda: An Account of Their Native Customs and Beliefs. Macmillan",
@@ -170,64 +172,196 @@
       {
         "title": "UNESCO – Barkcloth making in Uganda (patrimoine immatériel)",
         "url": "https://ich.unesco.org/en/RL/the-making-and-cultural-practices-of-the-kasubi-tombs-00027",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Buganda Kingdom official website - History",
         "url": "https://buganda.or.ug/history-of-buganda/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Uganda Bureau of Statistics (UBOS) - Population projections",
         "url": "https://www.ubos.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "UNESCO - Barkcloth making in Uganda",
         "url": "https://ich.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "EBSCO Research Starters - Rise of Buganda",
         "url": "https://www.ebsco.com/research-starters/history/rise-buganda",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "CIA World Factbook — Uganda",
         "url": "https://www.cia.gov/the-world-factbook/countries/uganda/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Uganda Bureau of Statistics (UBOS) — Uganda Population and Housing Census 2024",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Joshua Project — Baganda in Uganda",
         "url": "https://joshuaproject.net/people_groups/10346/ug",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "UNESCO — Bark cloth making in Uganda (Buganda) — Patrimoine culturel immateriel inscrit 2008",
         "url": "https://ich.unesco.org/en/RL/the-making-and-cultural-practices-of-the-kiganda-bark-cloth-in-uganda-00110",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Glottolog — Luganda (luganda1247)",
         "url": "https://glottolog.org/resource/languoid/id/luga1252",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Uganda Bureau of Statistics (UBOS) — Population Projections 2025-2050",
         "url": "https://www.ubos.org/wp-content/uploads/publications/Population-Projections-2025_2050.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "eHRAF World Cultures — Ganda summary",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fk07/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   },
-  "classificationStatus": "colonial-legacy"
+  "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Baganda désigne un peuple de l'Ouganda, au bord du lac Victoria, qui se nomme lui-même ainsi, Muganda pour une seule personne. D'autres noms existent : Waganda, dans les récits des marchands arabes et des premiers voyageurs européens. On ne sait pas avec certitude d'où vient le nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Baganda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne : Baganda au pluriel, Muganda au singulier.",
+        "periodLabel": "Usage ancien et contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baganda est un pluriel ; Muganda en est le singulier, note le missionnaire John Roscoe en 1911.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of Their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 137, note",
+                "notes": "Londres, Macmillan. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baganda a une forme proche dans la langue de ce peuple : muganda y désigne aussi le frère d'un homme ou la sœur d'une femme, d'après la liste des mots de parenté de John Roscoe. Roscoe ne dit pas si le nom du peuple en vient.",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of Their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 130",
+                "notes": "Londres, Macmillan. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1770,
+              "to": 1799,
+              "label": "Fin du XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Baganda désigne, dans l'histoire des royaumes de la rive ouest du lac Victoria, les gens du Buganda auxquels le roi Nyarubamba II fait appel à la fin du XVIIIe siècle pour reprendre un plateau occupé par un prince rebelle, selon J. B. Webster, B. A. Ogot et J. P. Chrétien.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 888",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Waganda",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les marchands arabes et swahilis, selon Burton",
+        "shortLine": "Une autre forme du nom, chez les marchands arabes et les voyageurs européens du XIXe siècle.",
+        "periodLabel": "Écrit dès 1860",
+        "accounts": [
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Waganda apparaît par écrit dans le récit de Richard Burton paru en 1860 : il y rapporte ce que les marchands arabes disent des Waganda et de leur pays, l'Uganda, qu'il n'a pas visité. C'est la plus ancienne trace de ce nom que le projet connaît. Les Baganda vivaient déjà au bord du lac avant lui.",
+            "formAsWritten": "Waganda",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Snay bin Amir",
+                "role": "marchand arabe, reçu par le roi Suna en 1852, dont Burton rapporte le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, vol. II",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://www.gutenberg.org/ebooks/66813",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 175, p. 193 et p. 196",
+                "notes": "Londres, Longman, Green, Longman, and Roberts. Lu dans l'édition du Projet Gutenberg, qui garde la pagination de l'original, le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

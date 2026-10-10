@@ -27,18 +27,21 @@
         "title": "Glottolog 5.3 — Kituba (Democratic Republic of Congo) (kitu1246)",
         "url": "https://glottolog.org/resource/languoid/id/kitu1246",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Notice directe pour le code ISO 639-3 ktu et le glottocode kitu1246. Elle documente le statut EGIDS 3 en 2025, l'usage comme moyen de communication entre plusieurs groupes linguistiques et le statut légal de langue d'identité nationale en RDC. Les variantes de nom publiées ici sont limitées aux formes contrôlées par cette notice."
       },
       {
         "title": "Mufwene, Salikoko S., « Kikongo-Kituba », Atlas of Pidgin and Creole Language Structures Online",
         "url": "https://apics-online.info/surveys/58",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Étude lue en ligne en partie : les noms Kikongo ya leta, Mono kutuba et Kituba, l'adoption par l'administration belge, et la section sur les noms."
       },
       {
         "title": "Wikipédia (anglais) — Kituba language",
         "url": "https://en.wikipedia.org/wiki/Kituba_language",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Page lue en ligne : le sens de Kituba, Munukutuba, Kibula-matadi et Kizabave, avec renvois à Mufwene (2009), à Samarin et à la Constitution congolaise."
       }
     ]

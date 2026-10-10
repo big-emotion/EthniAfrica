@@ -12,7 +12,7 @@
  */
 
 /**
- * Mirrors the latest `sources_source_kind_check` constraint (migration 089). The
+ * Mirrors the latest `sources_source_kind_check` constraint (migration 104). The
  * vocabulary contract test parses the CHECK and compares it to this list, so
  * the two cannot drift apart again.
  */
@@ -23,6 +23,10 @@ export const SOURCE_KINDS = [
   "official_statistics",
   "linguistic_reference",
   "academic",
+  "press",
+  "encyclopedia",
+  "ngo",
+  "missionary_database",
   "community",
   "repository",
   "archive",
@@ -36,11 +40,14 @@ export const SOURCE_KINDS = [
 export type SourceKind = (typeof SOURCE_KINDS)[number];
 
 /**
- * Kinds that describe a bibliographic work. `discovery` (a lookup surface),
- * `ai_generated` (machine-written text), `unknown`, `oral_tradition` (a linked
- * account) and `ethniafrica_synthesis` (an editorial synthesis) are provenance
- * markers, not bibliographic works, so the structured reference model excludes
- * them.
+ * Kinds that describe a bibliographic work, `press` included: a dated, edited
+ * article is a work cited by its own title and outlet, like `academic`. So are
+ * an encyclopedia entry, an NGO report and a mission people-group profile:
+ * each is a page cited by its own title, whatever weight its tier gives it.
+ * `discovery` (a lookup surface), `ai_generated` (machine-written text),
+ * `unknown`, `oral_tradition` (a linked account) and `ethniafrica_synthesis`
+ * (an editorial synthesis) are provenance markers, not bibliographic works, so
+ * the structured reference model excludes them.
  */
 // @req REQ-161
 export type StructuredSourceKind = Exclude<
@@ -109,6 +116,19 @@ export function isAuthoritativeSourceTier(tier: unknown): boolean {
 
 // Confidence weights live in `recompute_confidence()` (SQL) alone: a TS copy
 // was read by no production code and only had to be kept in sync by hand.
+
+/**
+ * A `source_kind` read from the database or a fiche, or null. A value outside
+ * the vocabulary reads as null rather than reaching a label lookup: a reader
+ * list prints nothing for a source with no recorded kind, and the label map
+ * would otherwise turn a typo into "Type non précisé".
+ */
+// @req REQ-161
+export function toSourceKindOrNull(value: unknown): SourceKind | null {
+  return typeof value === "string" && SOURCE_KINDS.includes(value as SourceKind)
+    ? (value as SourceKind)
+    : null;
+}
 
 // @req REQ-092
 export function isSourceTier(value: unknown): value is SourceTier {

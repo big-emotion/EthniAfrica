@@ -14,7 +14,7 @@
         "Chimwini speakers",
         "Swahili de Somalie"
       ],
-      "originOfExonyms": "Les Bajuni (Wabajuni) tirent leur nom de l'archipel des iles Bajuni entre Lamu (Kenya) et Kismayu (Somalie). Les Bravanese ou Wabarawa sont les habitants de Barawa (Brava), cite cotiere au sud de Mogadiscio. Ces populations sont distinctes des Somalis ethniques et s'identifient avant tout comme Bajuni ou Bravanese plutot que comme Swahili, bien que leurs langues soient classees comme dialectes swahili.",
+      "originOfExonyms": "Les Bajuni (Wabajuni) tireraient leur nom de l'archipel des iles Bajuni entre Lamu (Kenya) et Kismayu (Somalie). Les Bravanese ou Wabarawa sont les habitants de Barawa (Brava), cite cotiere au sud de Mogadiscio. Ces populations sont distinctes des Somalis ethniques et s'identifient avant tout comme Bajuni ou Bravanese plutot que comme Swahili, bien que leurs langues soient classees comme dialectes swahili.",
       "whyProblematic": "La designation Swahili pour ces populations est academique plutot qu'auto-attribuee. Les Bajuni insistent sur leur identite distincte et affirment que le swahili est issu du bajuni, non l'inverse. En Somalie, leur statut de minorite bantoue les place en bas de la hierarchie clanique somali, exposant ces communautes a la discrimination et a la marginalisation depuis l'independance.",
       "contemporaryUsage": "Les Bajuni restants en Somalie (tres peu apres 1991) ou au Kenya se designent comme Wabajuni. Les Bravanese de la diaspora (Etats-Unis, Royaume-Uni, Kenya) maintiennent une identite Bravanese distincte. La plupart des membres de ces communautes ont fui la guerre civile somalienne apres 1991.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -109,12 +109,14 @@
       {
         "title": "Memorial University of Newfoundland — Bajuni refugees",
         "url": "https://www.mun.ca/linguistics/media/production/memorial/academic/faculty-of-humanities-and-social-sciences/linguistics/media-library/more/e-books/Bajuni%20refugees.pdf",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue SIL — Swahili (swa)",
         "url": "https://www.ethnologue.com/language/swa",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

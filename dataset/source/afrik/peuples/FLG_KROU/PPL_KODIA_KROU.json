@@ -77,22 +77,26 @@
       {
         "title": "Ethnologue – Kodia Language (KWP)",
         "url": "https://www.ethnologue.com/language/kwp/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project – Cote d'Ivoire people groups, Kwadia",
         "url": "https://joshuaproject.net/countries/iv",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Landinfo – Report Cote d'Ivoire: Ethnicity, Ivoirité and Conflict",
         "url": "https://www.landinfo.no/asset/514/1/514_1.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Facebook – Ethnies de CI : peuple Kodia",
         "url": "https://www.facebook.com/ethniesdeCI/posts/3360851760603000/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

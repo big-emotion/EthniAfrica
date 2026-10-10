@@ -19,12 +19,14 @@
 @import "./styles/fiche-parchment.css";
 @import "./styles/facet-hub.css";
 @import "./styles/pager.css";
+@import "./styles/source-diamond.css";
 @import "./styles/fiche-chapter-bar.css";
 @import "./styles/classification-tree.css";
 @import "./styles/dossier.css";
 @import "./styles/dossier-nommer.css";
 @import "./styles/glossaire.css";
 @import "./styles/search-feed.css";
+@import "./styles/name-timeline.css";
 /* Last, and unlayered on purpose: the rule is inherited from `body`, so it
    must sit after every sheet above it and outside the `base` layer that
    Tailwind's preflight occupies. */

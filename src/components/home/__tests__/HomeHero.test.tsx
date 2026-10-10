@@ -63,11 +63,11 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
     expect(h1.querySelector("em")).toBeNull();
   });
 
-  // One sentence under the question, naming what can be typed and the three
+  // A short explanation under the question, naming what can be typed and the three
   // things the answer gives — where the name comes from, what it is called
   // elsewhere, where it lives today — and never calling the project an atlas.
   // @req REQ-044
-  it("describes in one sentence what the field accepts and what it finds", () => {
+  it("briefly describes what the field accepts and what it finds", () => {
     render(<HomeHero language="fr" />);
 
     const description = screen.getByTestId("home-hero-description");
@@ -76,10 +76,10 @@ describe("HomeHero — the band the home opens on (REQ-115)", () => {
     const sentences = description
       .textContent!.split(/(?<=\.)\s+/)
       .filter((part) => part.trim().length > 0);
-    expect(sentences).toHaveLength(1);
-    expect(description).toHaveTextContent(/d’où il vient/i);
-    expect(description).toHaveTextContent(/comment on l’appelle ailleurs/i);
-    expect(description).toHaveTextContent(/où il vit aujourd’hui/i);
+    expect(sentences).toHaveLength(2);
+    expect(description).toHaveTextContent(/origines possibles/i);
+    expect(description).toHaveTextContent(/différents noms/i);
+    expect(description).toHaveTextContent(/endroits où il est employé/i);
     expect(description.textContent).not.toMatch(/\batlas\b/i);
   });
 

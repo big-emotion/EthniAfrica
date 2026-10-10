@@ -9,7 +9,7 @@
       "mainName": "Talensi",
       "selfAppellation": "Talensi",
       "exonyms": ["Tallensi", "Talni", "Tale", "Frafra (terme generique)"],
-      "originOfExonyms": "Le terme Tallensi (ou Talensi) est l'auto-denomination du peuple. Tallensi signifie litteralement les habitants de Taleland, la region entre les deux Voltas et la limite occidentale du district. Le terme Talni designe leur langue dans la nomenclature de l'Ethnologue, en tant que dialecte du Farefare. Frafra est un terme generique parfois utilise pour l'ensemble du groupe ethnolinguistique.",
+      "originOfExonyms": "Le terme Tallensi (ou Talensi) est l'auto-denomination du peuple. Tallensi signifierait littéralement les habitants de Taleland, la région entre les deux Voltas et la limite occidentale du district. Le terme Talni designe leur langue dans la nomenclature de l'Ethnologue, en tant que dialecte du Farefare. Frafra est un terme generique parfois utilise pour l'ensemble du groupe ethnolinguistique.",
       "whyProblematic": "Le terme Frafra est parfois utilise de facon imprecise pour designer l'ensemble des peuples de la region de Bolgatanga (Upper East Region), alors que les Talensi constituent un groupe distinct avec leur propre tradition orale et organisation ritualo-politique. Cette confusion peut effacer la specificite des Talensi.",
       "contemporaryUsage": "Talensi (ou Tallensi) est le terme utilise dans les sources academiques, administratives ghanéennes et touristiques. Talni est employe dans la documentation linguistique. La communaute se designe elle-meme comme Talensi.",
       "linguisticFamily": "FLG_GUR",
@@ -88,17 +88,20 @@
       {
         "title": "UNESCO World Heritage Centre – Tenzug Tallensi settlements",
         "url": "https://whc.unesco.org/en/tentativelists/1392/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Kwekudee – Tallensi people, custodians of ancient Gurunshi culture",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2013/08/tallensi-people-custodians-of-ancient.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "UBC Library – Tallensi ethnography (Fortes 1945, 1954)",
         "url": "https://open.library.ubc.ca/media/stream/pdf/52387/1.0380228/5",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Kanaga Africa Tours – The powerful Talensi fetishes in the Tongo Hills",
@@ -108,17 +111,20 @@
       {
         "title": "Citypopulation.de – Talensi District",
         "url": "https://www.citypopulation.de/en/ghana/admin/upper_east/0905__talensi/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Fortes, Meyer. The Dynamics of Clanship among the Tallensi. Oxford University Press, 1945",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Fortes, Meyer. The Web of Kinship among the Tallensi. Oxford University Press, 1949",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

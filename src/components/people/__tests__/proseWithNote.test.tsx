@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import { ProseWithChip } from "@/components/people/ProseWithChip";
@@ -97,5 +97,27 @@ describe("ProseWithChip with a note", () => {
       container.querySelector("#chip-content-culture-majorrites")
     ).not.toBeNull();
     expect(container.querySelector("#note-3")).toBeNull();
+  });
+
+  /** Doctrine §1.1: the sheet a callout opens names each source's kind. */
+  // @req REQ-161
+  it("hands each source's kind to the sheet it opens", async () => {
+    render(
+      <ProseWithChip
+        text="Un paragraphe sourcé."
+        note={{
+          ...note,
+          sources: [{ ...note.sources[0], sourceKind: "linguistic_reference" }],
+        }}
+      />
+    );
+
+    fireEvent.click(screen.getByText(/\[3\]/));
+
+    await waitFor(() => {
+      expect(screen.getByTestId("source-item-s-1")).toHaveTextContent(
+        "Référence linguistique"
+      );
+    });
   });
 });

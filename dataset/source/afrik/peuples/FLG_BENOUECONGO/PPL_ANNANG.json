@@ -95,27 +95,135 @@
       {
         "title": "Ethnologue, Anaang (ANW). (consulté 2025)",
         "url": "https://www.ethnologue.com/language/anw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project, Anaang in Nigeria. (consulté 2025)",
         "url": "https://joshuaproject.net/people_groups/10305",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Glottolog, Anaang. (consulté 2025)",
         "url": "https://glottolog.org/resource/languoid/id/anaa1238",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes, Annang people — Africa. (consulté 2025)",
         "url": "http://www.101lasttribes.com/tribes/annang.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ette, Mercy. Annang People: History and Culture. Uyo: University of Uyo Press, 2008",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Annang désigne un peuple du sud-est du Nigeria, voisin des Ibibio, qui se nomme lui-même Annang, écrit aussi Anaang. Un autre nom a existé : Kalaba, donné par les Européens de Sierra Leone. On ne sait pas avec certitude d'où vient le nom Annang : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Annang",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "anw",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; les linguistes l'écrivent Anaang.",
+        "periodLabel": "Écrit dès 1854",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Annang désigne un peuple et sa langue ; les linguistes écrivent Anaang. Les sources que nous avons lues ne disent pas d'où vient ce nom ; on ne sait pas avec certitude ce qu'il voulait dire d'abord.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethnologue: Languages of the World — Anaang (anw)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/anw/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Réutilisée depuis les sources de la fiche."
+              },
+              {
+                "title": "Glottolog — Anaang",
+                "author": "Glottolog",
+                "year": 2025,
+                "url": "https://glottolog.org/resource/languoid/id/anaa1238",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Réutilisée depuis les sources de la fiche."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Annang apparaît par écrit, sous la forme « Ánān· », chez le linguiste Sigismund Koelle, qui place la capitale à quatre jours de marche de la mer. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Ánān·",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section XII-E-1",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kalaba",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Européens de Sierra Leone",
+        "shortLine": "Le nom donné en Sierra Leone aux Annang et à leurs voisins.",
+        "periodLabel": "Milieu du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Kalaba, écrit « Kálabā », est celui que les Européens donnent aux Annang, selon Sigismund Koelle. En Sierra Leone, écrit-il, ce nom réunit des gens venus de plusieurs pays de même langue, dont les Annang et les Efik. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Kálabā",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section XII-E-1",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

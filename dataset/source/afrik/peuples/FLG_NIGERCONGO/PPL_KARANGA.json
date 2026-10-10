@@ -95,32 +95,201 @@
       {
         "title": "Joshua Project — Shona-Karanga in Zimbabwe",
         "url": "https://joshuaproject.net/people_groups/12530",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Shona-Karanga of Zimbabwe",
         "url": "https://peoplegroups.org/people_groups/pg015659/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Shona language (sna)",
         "url": "https://www.ethnologue.com/language/sna/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Karanga people",
         "url": "https://www.britannica.com/topic/Karanga-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "HTS Theological Studies — Karanga people in Masvingo",
         "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S0259-94222016000400109",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Chigwedere, Aeneas. The Karanga Empire. Books for Africa, Harare, 1986",
         "url": "https://michaelharrison.org.uk/wp-content/uploads/2021/04/The-Karanga-Empire-Aeneas-Chigwedere-Books-for-Africa-Harare-1986.pdf",
         "tier": "unverified"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Karanga désigne un peuple du centre et du sud du Zimbabwe, qui se nomme lui-même vaKaranga et parle une forme du chiShona. Les Portugais écrivaient déjà Mocaranga au début du XVIIe siècle. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Karanga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "sna",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple et de son parler ; les Portugais l'appliquaient à tout un pays.",
+        "periodLabel": "Écrit dès 1609, sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Karanga désigne aujourd'hui les gens du sud du Zimbabwe, entre la rivière Nyazvidzi et le Limpopo, et leur parler, le chikaranga. Son sens a changé avec le temps : les Portugais l'appliquaient à tout le pays du Mutapa. Son origine est discutée ; les explications proposées sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Karanga Empire",
+                "author": "Aeneas Chigwedere",
+                "year": 1986,
+                "url": "https://michaelharrison.org.uk/wp-content/uploads/2021/04/The-Karanga-Empire-Aeneas-Chigwedere-Books-for-Africa-Harare-1986.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6 et 11",
+                "notes": "Harare, Books for Africa, 1986. Copie non officielle, lue dans un PDF déposé sur un site personnel, consulté le 10 octobre 2026. Page 6 : les gens que les Portugais appelaient Karanga l'étaient « by residence and not by ethnic origin » ; page 11 : le territoire de la « Karanga tribe » va de la rivière Nyazvidzi au Limpopo."
+              },
+              {
+                "title": "Ethiopia Oriental, réimprimé dans Records of South-Eastern Africa, vol. VII",
+                "author": "João dos Santos, édité par George McCall Theal",
+                "year": 1901,
+                "url": "https://archive.org/details/recordsofsouthea07theaiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 104",
+                "notes": "Le livre du dominicain João dos Santos est imprimé à Évora en 1609 ; Theal le réimprime en portugais d'après cette édition dans le volume VII, imprimé à Londres en 1901 pour le gouvernement de la colonie du Cap. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit : « O Manamotapa, e todos seus vassalos são Mocarangas, nome que teem por habitar as terras do Mocaranga, e fallarem a linguagem, chamada Mocaranga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1550,
+              "label": "Début du XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "L'empire du Mutapa réunit alors, sur le plateau du Zimbabwe, des communautés diverses qui parlent la langue que les historiens appellent karanga, selon Hoyce H. K. Bhila.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 22 : La région au sud du Zambèze",
+                "author": "Hoyce H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 698",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 698 : l'Empire mutapa, qui contrôle le plateau au début du XVIe siècle, « était composé d'un ensemble de communautés hétérogènes parlant karanga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1609,
+              "to": 1609,
+              "label": "Livre publié en 1609"
+            },
+            "era": "polity",
+            "statement": "Le nom Karanga a une forme proche, Mocarangas, dans le livre du dominicain João dos Santos : le roi du Mutapa et tous ses vassaux sont des Mocarangas, écrit-il, et parlent la langue mocaranga, la plus douce qu'il ait entendue dans la région. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Mocarangas",
+            "birth": true,
+            "actors": [
+              {
+                "name": "João dos Santos",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Ethiopia Oriental, réimprimé dans Records of South-Eastern Africa, vol. VII",
+                "author": "João dos Santos, édité par George McCall Theal",
+                "year": 1901,
+                "url": "https://archive.org/details/recordsofsouthea07theaiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 104",
+                "notes": "Le livre du dominicain João dos Santos est imprimé à Évora en 1609 ; Theal le réimprime en portugais d'après cette édition dans le volume VII, imprimé à Londres en 1901 pour le gouvernement de la colonie du Cap. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit : « O Manamotapa, e todos seus vassalos são Mocarangas, nome que teem por habitar as terras do Mocaranga, e fallarem a linguagem, chamada Mocaranga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1609,
+              "to": 1609,
+              "label": "Proposée en 1609"
+            },
+            "era": "polity",
+            "statement": "Le nom Karanga viendrait de celui du pays, le Mocaranga : les sujets du Mutapa porteraient ce nom parce qu'ils habitent ces terres et en parlent la langue, selon João dos Santos.",
+            "hypothesisGroup": "origine du nom Karanga",
+            "sources": [
+              {
+                "title": "Ethiopia Oriental, réimprimé dans Records of South-Eastern Africa, vol. VII",
+                "author": "João dos Santos, édité par George McCall Theal",
+                "year": 1901,
+                "url": "https://archive.org/details/recordsofsouthea07theaiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 104",
+                "notes": "Le livre du dominicain João dos Santos est imprimé à Évora en 1609 ; Theal le réimprime en portugais d'après cette édition dans le volume VII, imprimé à Londres en 1901 pour le gouvernement de la colonie du Cap. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit : « O Manamotapa, e todos seus vassalos são Mocarangas, nome que teem por habitar as terras do Mocaranga, e fallarem a linguagem, chamada Mocaranga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "Proposée en 1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Karanga viendrait de Kalanga, le nom d'origine : dans la langue shona, le l aurait cédé la place au r, tandis que la forme en l se serait conservée dans la région de Plumtree, selon Aeneas Chigwedere.",
+            "hypothesisGroup": "origine du nom Karanga",
+            "sources": [
+              {
+                "title": "The Karanga Empire",
+                "author": "Aeneas Chigwedere",
+                "year": 1986,
+                "url": "https://michaelharrison.org.uk/wp-content/uploads/2021/04/The-Karanga-Empire-Aeneas-Chigwedere-Books-for-Africa-Harare-1986.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Harare, Books for Africa, 1986. Copie non officielle, lue dans un PDF déposé sur un site personnel, consulté le 10 octobre 2026. La page écrit : « The original name was KALANGA » ; « the letter \"L\" has been dropped and substituted for \"R\" » ; « The letter \"L\" has however been retained in the Plumtree area »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1949,
+              "label": "Des années 1920 aux années 1940"
+            },
+            "era": "colonial",
+            "statement": "Le nom Karanga prend un sens nouveau dans la province de Masvingo, selon Aeneas Chigwedere : l'Église réformée hollandaise, installée à Morgenster, appelle chikaranga le parler de la province et Makaranga ses habitants, d'après les documents portugais. Une « tribu karanga » naît ainsi après les années 1920.",
+            "sources": [
+              {
+                "title": "The Karanga Empire",
+                "author": "Aeneas Chigwedere",
+                "year": 1986,
+                "url": "https://michaelharrison.org.uk/wp-content/uploads/2021/04/The-Karanga-Empire-Aeneas-Chigwedere-Books-for-Africa-Harare-1986.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Harare, Books for Africa, 1986. Copie non officielle, lue dans un PDF déposé sur un site personnel, consulté le 10 octobre 2026. La page écrit que l'Église réformée hollandaise de Morgenster a nommé le parler de la province « Chikaranga » d'après les documents portugais, que les Africains de cette zone ont été appelés Makaranga, et qu'une nouvelle « Karanga tribe » est née « after the 1920s »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

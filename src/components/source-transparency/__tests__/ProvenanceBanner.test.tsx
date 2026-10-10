@@ -2,10 +2,6 @@ import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import { ProvenanceBanner } from "../ProvenanceBanner";
-import {
-  SOURCE_PENDING_REVIEW_LABEL,
-  SOURCE_TIER_LABELS,
-} from "@/lib/glossaire/vocabularies";
 import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
 
 function census(
@@ -34,56 +30,46 @@ describe("the provenance banner", () => {
   it("states how many assertions the fiche records", () => {
     render(<ProvenanceBanner language="fr" census={census()} />);
 
-    expect(screen.getByText(/15 assertions recensées/)).toBeInTheDocument();
+    expect(screen.getByText(/15 informations présentées/)).toBeInTheDocument();
   });
 
-  // @req REQ-019
-  it("names every standing it counts with the published label, and no other", () => {
+  // The banner counts and dates; it never weighs. No score, no « confiance »,
+  // no explanation of how sources are weighted.
+  // @req REQ-194
+  it("prints no confidence score or weighting", () => {
+    render(
+      <ProvenanceBanner
+        language="fr"
+        census={census({ unverified: 7, needs_review: 3 })}
+      />
+    );
+
+    expect(screen.getByRole("region").textContent).not.toMatch(
+      /confiance|score|%|pondér|poids/i
+    );
+  });
+
+  /**
+   * Doctrine §1.1 (operator ruling, 2026-10-08): the reader never sees a
+   * source's tier — no per-standing count, no gold warning, no notice about
+   * unverified assertions. The census stays in the data.
+   */
+  // @req REQ-092
+  it("names no standing and counts none, even when weak standings are held", () => {
     render(
       <ProvenanceBanner
         language="fr"
         census={census({ unverified: 4, needs_review: 2 })}
       />
     );
+    const region = screen.getByRole("region");
 
-    expect(screen.getByText(SOURCE_TIER_LABELS.fr.official)).toBeVisible();
-    expect(screen.getByText(SOURCE_TIER_LABELS.fr.referenced)).toBeVisible();
-    expect(screen.getByText(SOURCE_TIER_LABELS.fr.unverified)).toBeVisible();
-    expect(screen.getByText(SOURCE_PENDING_REVIEW_LABEL.fr)).toBeVisible();
-  });
-
-  // @req REQ-019
-  it("leaves out a standing nothing rests on rather than printing a zero", () => {
-    render(
-      <ProvenanceBanner language="fr" census={census({ unverified: 1 })} />
+    expect(region.textContent).not.toMatch(
+      /Officielle|Référencée|Non vérifiée|En attente d.examen|palier|Niveau de source|non vérifiées/i
     );
-
-    expect(
-      screen.queryByText(SOURCE_PENDING_REVIEW_LABEL.fr)
-    ).not.toBeInTheDocument();
-  });
-
-  // @req REQ-019
-  it("states no count at all while every assertion is official or referenced", () => {
-    // Discretion is the norm the loud state borrows its salience from: a
-    // census printed on every fiche is a census nobody reads by the second
-    // visit.
-    render(<ProvenanceBanner language="fr" census={census()} />);
-
-    expect(
-      screen.queryByText(SOURCE_TIER_LABELS.fr.official)
-    ).not.toBeInTheDocument();
-  });
-
-  // @req REQ-019
-  it("says the atlas keeps its unverified assertions, as soon as it holds one", () => {
-    render(
-      <ProvenanceBanner language="fr" census={census({ unverified: 1 })} />
-    );
-
-    expect(
-      screen.getByText(/Nous ne les retirons pas/, { exact: false })
-    ).toBeInTheDocument();
+    expect(region.querySelector("dl")).toBeNull();
+    expect(region.className).not.toContain("gold");
+    expect(region).not.toHaveAttribute("data-provenance-standing");
   });
 
   // @req REQ-019

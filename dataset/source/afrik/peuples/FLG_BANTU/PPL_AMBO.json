@@ -74,27 +74,32 @@
       {
         "title": "Zambia's Traditional History – Ambo",
         "url": "https://traditionalzambia.home.blog/tribes-of-zambia/second-bantu-invasion/luba/ambo/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project – Ambo in Zambia",
         "url": "https://joshuaproject.net/people_groups/18917",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org – Ambo of Zambia",
         "url": "https://peoplegroups.org/people_groups/pg015563/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Lala-Bisa language (leb)",
         "url": "https://www.ethnologue.com/language/leb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica – Ambo people",
         "url": "https://www.britannica.com/topic/Ambo-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

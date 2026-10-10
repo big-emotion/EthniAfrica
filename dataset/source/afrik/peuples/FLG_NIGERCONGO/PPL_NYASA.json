@@ -13,7 +13,7 @@
         "Kimanda",
         "Manda"
       ],
-      "originOfExonyms": "Le terme Nyasa derive du mot yao signifiant lac. Lorsque les explorateurs europeens arriverent dans la region, les populations locales vivant sur les rives du lac repondirent nyasa (lac) a la question sur le nom du lieu, d'ou le nom Nyasaland donne au pays et Nyasa aux populations du bord du lac.",
+      "originOfExonyms": "Le terme Nyasa deriverait du mot yao qui veut dire lac. Lorsque les explorateurs europeens arriverent dans la region, les populations locales vivant sur les rives du lac repondirent nyasa (lac) a la question sur le nom du lieu, d'ou le nom Nyasaland donne au pays et Nyasa aux populations du bord du lac.",
       "whyProblematic": "Le terme Nyasa est ambigu car il peut designer a la fois les habitants des rives du lac Malawi (lac Nyasa) et, par extension, plusieurs peuples differents de la region. Il ne correspond pas a un groupe ethnolinguistique unique et homogene.",
       "contemporaryUsage": "En usage courant pour designer les populations des rives nord-est du lac Malawi, notamment en Malawi, au Mozambique et en Tanzanie. Certains Nyanja du Malawi se designent eux-memes comme Nyasa.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -102,22 +102,26 @@
       {
         "title": "SIL Ethnologue — Mwera (Nyasa), code mjh",
         "url": "https://www.ethnologue.com/language/mjh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Mwera (Nyasa), N201",
         "url": "https://glottolog.org/resource/languoid/id/mwer1247",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Malawi: History and People",
         "url": "https://www.britannica.com/place/Malawi/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Nyanja, Chewa in Malawi",
         "url": "https://joshuaproject.net/people_groups/14091/MI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

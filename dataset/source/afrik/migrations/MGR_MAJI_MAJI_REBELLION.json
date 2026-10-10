@@ -42,6 +42,7 @@
         "url": "https://www.unesco.org/en/articles/general-history-africa-vii-africa-under-colonial-domination-1880-1935",
         "year": 1985,
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": ""
       },
       {
@@ -49,6 +50,7 @@
         "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/organization-of-the-maji-maji-rebellion/7DD8298B261E754471EAD710BAEAFBF5",
         "year": 1967,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Vérifié via Wikipedia EN « Maji Maji Rebellion » et FR « Rébellion des Maji-Maji » ; source académique primaire (peer-reviewed) sur l'organisation du soulèvement."
       }
     ]

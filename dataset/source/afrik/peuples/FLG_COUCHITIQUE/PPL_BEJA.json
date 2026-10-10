@@ -4,6 +4,365 @@
   "languageFamilyId": "FLG_COUCHITIQUE",
   "currentCountries": ["SDN", "ERI", "EGY"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Beja désigne un peuple de pasteurs de l'est du Soudan, entre la mer Rouge et l'Atbara, présent aussi en Érythrée, et sa langue, que ses locuteurs nomment biɖawijeːt. D'autres noms l'ont désigné ou lui sont rattachés : Bega dans les inscriptions d'Aksoum, Blemmyes chez les auteurs grecs et latins, Medjay dans l'Égypte ancienne. Les sources ne s'accordent pas toujours sur les liens entre ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Biɖawijeːt",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bej",
+        "namedBy": null,
+        "shortLine": "Le nom que les Beja donnent à leur langue.",
+        "usedIn": ["bej"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Biɖawijeːt est celui que les Beja donnent à leur langue, selon Martine Vanhove. Les sources que nous avons lues ne disent pas sous quel nom ils se désignent eux-mêmes, ni d'où vient celui-ci.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Beja, dans Christopher Lucas et Stefano Manfredi (dir.), Arabic and contact-induced change",
+                "author": "Martine Vanhove",
+                "year": 2020,
+                "url": "https://hal.science/hal-02874723",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Berlin, Language Science Press, 2020, DOI 10.5281/zenodo.3744537. Lu en texte intégral sur HAL. L'autrice cite Claude Rilly, « Language and ethnicity in ancient Sudan » (2014), p. 1175, que nous n'avons pas lu.",
+                "page": "p. 420"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Beja",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom attesté sous la forme Bega dès le IIIe siècle, dans une inscription d'Aksoum.",
+        "periodLabel": "Écrit dès le IIIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Beja désigne aujourd'hui un peuple et une langue de l'est du Soudan, parlée surtout dans les États de la mer Rouge et de Kassala et aussi dans le nord de l'Érythrée, selon Martine Vanhove.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Beja, dans Christopher Lucas et Stefano Manfredi (dir.), Arabic and contact-induced change",
+                "author": "Martine Vanhove",
+                "year": 2020,
+                "url": "https://hal.science/hal-02874723",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Berlin, Language Science Press, 2020, DOI 10.5281/zenodo.3744537. Lu en texte intégral sur HAL. L'autrice cite Claude Rilly, « Language and ethnicity in ancient Sudan » (2014), p. 1175, que nous n'avons pas lu.",
+                "page": "p. 420"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 801,
+              "to": 1100,
+              "label": "IXe-XIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Beja se retrouve chez les auteurs arabes, à commencer par al-Yaqubi, mort en 897, puis Ibn Hawqal et al-Uswani, seules sources sur ce peuple pour cette période, selon Tekle-Tsadik Mekouria.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 19 : La Corne de l'Afrique",
+                "author": "Tekle-Tsadik Mekouria",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 601"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 301,
+              "to": 400,
+              "label": "IVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Beja revient dans les inscriptions du roi Ezana d'Aksoum, qui nomment les « rois » de quatre tribus bega, que l'historien Y. M. Kobishanov identifie aux Bedja.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 15 : Axoum du Ier au IVe siècle : économie, système politique, culture",
+                "author": "Y. M. Kobishanov",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 412"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 201,
+              "to": 300,
+              "label": "IIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Beja apparaît, sous la forme Bega, dans une inscription d'un roi d'Aksoum du IIIe siècle, recopiée au VIe siècle par le voyageur Cosmas, selon Tekle-Tsadik Mekouria. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 19 : La Corne de l'Afrique",
+                "author": "Tekle-Tsadik Mekouria",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 601"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "Proposée en 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Beja se retrouverait dans celui de la région éthiopienne du Beguemder, « terre des Bēdja », selon Tekle-Tsadik Mekouria.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 19 : La Corne de l'Afrique",
+                "author": "Tekle-Tsadik Mekouria",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 601"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Proposée en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Beja viendrait de celui des Medjay, des nomades du désert oriental de la Nubie nommés dans les inscriptions égyptiennes, selon l'archéologue Claude Rilly, que cite Martine Vanhove.",
+            "hypothesisGroup": "origine du nom Beja",
+            "sources": [
+              {
+                "title": "Beja, dans Christopher Lucas et Stefano Manfredi (dir.), Arabic and contact-induced change",
+                "author": "Martine Vanhove",
+                "year": 2020,
+                "url": "https://hal.science/hal-02874723",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Berlin, Language Science Press, 2020, DOI 10.5281/zenodo.3744537. Lu en texte intégral sur HAL. L'autrice cite Claude Rilly, « Language and ethnicity in ancient Sudan » (2014), p. 1175, que nous n'avons pas lu.",
+                "page": "p. 419"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Blemmyes",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les auteurs grecs et latins donnaient à des nomades du désert oriental.",
+        "periodLabel": "De la fin du VIIe siècle avant notre ère à l'Antiquité tardive",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Antiquité"
+            },
+            "statement": "Le nom Blemmyes désigne des nomades belliqueux que l'on identifie d'ordinaire aux tribus bedja du désert oriental, selon Jean Leclant.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 10 : L'empire de Koush : Napata et Méroé",
+                "author": "J. Leclant",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 316"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 450,
+              "to": 450,
+              "label": "Vers 450"
+            },
+            "era": "polity",
+            "statement": "Le nom Blemmyes cesse de désigner des maîtres de la Nubie vers 450, quand les Noubades les battent et les rejettent vers le désert, à l'est du Nil, selon Martine Vanhove et Kazimierz Michalowski.",
+            "sources": [
+              {
+                "title": "Beja, dans Christopher Lucas et Stefano Manfredi (dir.), Arabic and contact-induced change",
+                "author": "Martine Vanhove",
+                "year": 2020,
+                "url": "https://hal.science/hal-02874723",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Berlin, Language Science Press, 2020, DOI 10.5281/zenodo.3744537. Lu en texte intégral sur HAL. L'autrice cite Claude Rilly, « Language and ethnicity in ancient Sudan » (2014), p. 1175, que nous n'avons pas lu.",
+                "page": "p. 419"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 12 : La christianisation de la Nubie",
+                "author": "K. Michalowski",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 349"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -700,
+              "to": -601,
+              "label": "Fin du VIIe siècle avant notre ère"
+            },
+            "era": "polity",
+            "statement": "Le nom Blemmyes est attesté pour la première fois sur une stèle du royaume de Napata, à la fin du VIIe siècle avant notre ère, selon Martine Vanhove. C'est la plus ancienne trace de ce nom que le projet connaît. Les nomades qu'il désigne vivaient déjà là avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Beja, dans Christopher Lucas et Stefano Manfredi (dir.), Arabic and contact-induced change",
+                "author": "Martine Vanhove",
+                "year": 2020,
+                "url": "https://hal.science/hal-02874723",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Berlin, Language Science Press, 2020, DOI 10.5281/zenodo.3744537. Lu en texte intégral sur HAL. L'autrice cite Claude Rilly, « Language and ethnicity in ancient Sudan » (2014), p. 1175, que nous n'avons pas lu.",
+                "page": "p. 419"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Medjay",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "egy",
+        "namedBy": null,
+        "shortLine": "Le nom égyptien de nomades du désert de Nubie, rapproché du nom Beja.",
+        "periodLabel": "Égypte ancienne",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "XVIIe dynastie égyptienne"
+            },
+            "era": "polity",
+            "statement": "Le nom Medjay désigne aussi, sous la forme Medjaiou, des mercenaires du désert nubien qu'emploient les derniers pharaons de la XVIIe dynastie, selon Shehata Adam.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 8 : La Nubie, trait d'union entre l'Afrique centrale et la Méditerranée, facteur géographique de civilisation",
+                "author": "Shehata Adam, avec le concours de J. Vercoutter",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 257"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -2150,
+              "to": -1780,
+              "label": "XIIe dynastie égyptienne (Moyen Empire)"
+            },
+            "era": "polity",
+            "statement": "Le nom Medjay figure dans les inscriptions égyptiennes de la XIIe dynastie, pour des nomades du désert oriental de la Nubie, entre la première et la deuxième cataracte, selon Martine Vanhove.",
+            "sources": [
+              {
+                "title": "Beja, dans Christopher Lucas et Stefano Manfredi (dir.), Arabic and contact-induced change",
+                "author": "Martine Vanhove",
+                "year": 2020,
+                "url": "https://hal.science/hal-02874723",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Berlin, Language Science Press, 2020, DOI 10.5281/zenodo.3744537. Lu en texte intégral sur HAL. L'autrice cite Claude Rilly, « Language and ethnicity in ancient Sudan » (2014), p. 1175, que nous n'avons pas lu.",
+                "page": "p. 419"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, introduction générale",
+                "author": "G. Mokhtar, avec la collaboration de J. Vercoutter",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 23"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": -2200,
+              "label": "VIe dynastie égyptienne, avant 2200 avant notre ère"
+            },
+            "era": "polity",
+            "statement": "Le nom Medjay apparaît sous une forme proche, Medja, nom d'un pays de Nubie, dans le récit d'Ouni, gouverneur du Sud sous la VIe dynastie égyptienne, selon Abd el Hamid Zayed. C'est la plus ancienne trace de ce nom que le projet connaît. Les nomades qu'il désigne vivaient déjà là avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 4 : Relations de l'Égypte avec le reste de l'Afrique",
+                "author": "Abd el Hamid Zayed, avec le concours de J. Devisse",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 143"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, introduction générale",
+                "author": "G. Mokhtar, avec la collaboration de J. Vercoutter",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Beja",
@@ -15,7 +374,7 @@
         "Fuzzy-Wuzzy (terme britannique, pejoratif, 19e s.)"
       ],
       "originOfExonyms": "Le terme Medjay designait les Beja dans les textes egyptiens antiques. Les Romains les appelaient Blemmyes. Les inscriptions aksumites en gueze utilisaient Bega. Le terme Fuzzy-Wuzzy, utilise par les soldats britanniques (popularise par Rudyard Kipling en 1890), designe les Hadendoa et leur coiffure caracteristique ; ce terme est considere pejoratif.",
-      "whyProblematic": "Le terme Beja est un exonyme d'origine arabe signifiant combattants ou combattants des Pharaons selon certains cheikhs beja. Les locuteurs se designent eux-memes par Bidhaawyeet (langue et peuple) ou par les noms de leurs sous-groupes (Bishareen, Hadendoa, Amarar, etc.).",
+      "whyProblematic": "Beja est un nom d'origine arabe donné à ce peuple par d'autres populations. Selon certains chefs religieux beja, il signifierait combattants ou combattants des Pharaons. Les personnes concernées emploient Bidhaawyeet pour leur langue et leur peuple, ou se présentent par leur groupe : Bishareen, Hadendoa, Amarar, entre autres.",
       "contemporaryUsage": "Le terme Beja est accepte dans les usages academiques et politiques internationaux. Le Congres Beja, forme en 1952, a adopte ce nom comme denomination politique collective.",
       "linguisticFamily": "FLG_COUCHITIQUE",
       "ethnoLinguisticGroup": "Couchitiques septentrionaux (North Cushitic)",
@@ -110,12 +469,14 @@
       {
         "title": "SIL Ethnologue — Beja language (bej)",
         "url": "https://www.ethnologue.com/language/bej/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ISO 639-3 Language Codes — CEDS",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

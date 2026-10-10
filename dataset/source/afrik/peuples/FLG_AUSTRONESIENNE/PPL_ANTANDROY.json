@@ -8,7 +8,7 @@
       "mainName": "Antandroy",
       "selfAppellation": "Antandroy",
       "exonyms": ["Tandroy", "Ampatres"],
-      "originOfExonyms": "Le nom Tandroy signifie ceux des epines ou peuple des epines en malgache, en reference aux fourres epineux endemiques (notamment les cactus raketa et les plantes succulentes) qui caracterisent la region aride du sud appeleé Androy. Le terme Ampatres etait utilise dans les sources du XVIIe siecle, notamment portugaises et françaises.",
+      "originOfExonyms": "Le nom Tandroy signifierait « ceux des épines » ou « peuple des épines » en malgache, en référence aux fourrés épineux endémiques (notamment les cactus raketa et les plantes succulentes) qui caractérisent la région aride du sud appelée Androy. Le terme Ampatres etait utilise dans les sources du XVIIe siecle, notamment portugaises et françaises.",
       "whyProblematic": null,
       "contemporaryUsage": "Antandroy est la forme officielle moderne en malgache (avec le prefixe An- de localisation). Tandroy est couramment employe dans les sources academiques anglophones et dans l'usage quotidien malgache. Les deux sont egalement valables.",
       "linguisticFamily": "FLG_AUSTRONESIENNE",
@@ -89,22 +89,26 @@
       {
         "title": "Ethnologue – Malagasy, Tandroy-Mahafaly (tdx)",
         "url": "https://www.ethnologue.com/language/tdx/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog – Tandroy Malagasy",
         "url": "https://glottolog.org/glottolog?country=MG",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Worldometer – Madagascar Population",
         "url": "https://www.worldometers.info/world-population/madagascar-population/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "CIA World Factbook – Madagascar",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

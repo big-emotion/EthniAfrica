@@ -20,7 +20,7 @@
         "Fernando Poans",
         "Bantu Bubi"
       ],
-      "originOfExonyms": "Le terme Bubi derive du mot Boobe signifiant \"homme\" ou \"personne\" dans la langue bubi. Les europeens ont utilise diverses transcriptions de ce terme. Fernando Poans et Fernandians font reference a l'ancien nom portugais de l'ile Bioko (Fernando Poo/Po), donnee par l'explorateur Fernando Po en 1471-1472.",
+      "originOfExonyms": "Le terme Bubi dériverait du mot Boobe, qui veut dire \"homme\" ou \"personne\" dans la langue bubi. Les europeens ont utilise diverses transcriptions de ce terme. Fernando Poans et Fernandians font reference a l'ancien nom portugais de l'ile Bioko (Fernando Poo/Po), donnee par l'explorateur Fernando Po en 1471-1472.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Bubi est aujourd'hui le nom officiel et couramment utilise en Guinee equatoriale. La societe Bubi se definit comme le peuple autochtone de l'ile Bioko, en opposition aux Fang immigres du continent.",
       "linguisticFamily": "FLG_BANTU",
@@ -98,7 +98,8 @@
       {
         "title": "Bubi – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Bubi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Bioko's indigenous Bubi tribe – The Bubis on Fernando Po, Colleen Truelsen",
@@ -113,12 +114,14 @@
       {
         "title": "Bubi people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/bubi.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Bubi in Equatorial Guinea – Minority Rights Group",
         "url": "https://minorityrights.org/communities/bubi/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Spirits of the Forest, Guardians of the Island – Art of the Motherland",

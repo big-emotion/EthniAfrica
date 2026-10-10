@@ -111,8 +111,26 @@ describe("FragmentationView", () => {
       expect(screen.getByText(/45\s*%/)).toBeTruthy();
     });
 
+    // The last column used to be headed « Confiance » although each cell only
+    // ever linked to the share's sources.
+    // @req REQ-194
+    it("labels the last column by its sources, never by confidence", () => {
+      render(
+        <FragmentationView
+          fragmentation={twoCountryFragmentation}
+          variant="fiche-section"
+        />
+      );
+
+      const table = screen.getByRole("table");
+      expect(table.textContent).not.toMatch(/confiance/i);
+      expect(
+        within(table).getByRole("columnheader", { name: "Sources" })
+      ).toBeTruthy();
+    });
+
     // @req REQ-091
-    it("ends each row with a ConfidenceChip that opens a SourceChainSheet on activation", async () => {
+    it("ends each row with a SourceReviewChip that opens a SourceChainSheet on activation", async () => {
       const user = userEvent.setup();
       render(
         <FragmentationView
@@ -126,13 +144,13 @@ describe("FragmentationView", () => {
       const ghanaRow = rows[1];
 
       // Data is null at this layer (no confidence fields in the fragmentation
-      // API response yet), so ConfidenceChip renders its "voir les sources"
+      // API response yet), so SourceReviewChip renders its "voir les sources"
       // fallback affordance — still the same component, still opens the sheet.
       const trigger = within(ghanaRow).getByText("voir les sources");
       await user.click(trigger);
 
       await waitFor(() => {
-        expect(screen.getByText("Chaîne des sources")).toBeTruthy();
+        expect(screen.getByText("Sources de cette information")).toBeTruthy();
       });
     });
 

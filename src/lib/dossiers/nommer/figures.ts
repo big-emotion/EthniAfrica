@@ -24,6 +24,18 @@
 
 import type { CorpusFigure, FigureKey } from "./types";
 
+/** Format a published count without duplicating it in reader-facing prose. */
+// @req REQ-113
+export function formatNommerFigure({
+  figureKey,
+}: Pick<CorpusFigure, "figureKey">): string {
+  const figure = NOMMER_FIGURES[figureKey];
+  if (!figure || figure.kind === "missing") {
+    throw new Error(`No numeric figure for ${figureKey}`);
+  }
+  return figure.value.toLocaleString("fr-FR");
+}
+
 /** Every count below was taken against `recette` on this date. */
 const COUNTED_ON = "2026-09-29";
 
@@ -54,17 +66,26 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     label: "fiches de peuple",
     // 772 -> 770 on 2026-10-03: the two Bissa duplicates (PPL_BUSSA, PPL_BUSANSI)
     // were merged into PPL_BISSA through the retired-identifiers ledger.
-    value: 770,
+    // 770 -> 769 on 2026-10-10: PPL_JOLA folded into PPL_DIOLA the same way.
+    // 769 -> 755 on 2026-10-10: fourteen duplicate people fiches folded into their keepers
+    // (Sotho, Tswana, Zulu, Xhosa, Ashanti, Dagaaba, Kongo, Umbundu, Tonga, Hutu,
+    // Swahili, Brong) through the retired-identifiers ledger.
+    value: 755,
     method: `nombre de fichiers ${PEOPLE_GLOB}`,
     countedOn: COUNTED_ON,
   },
   "corpus-exonyms": {
     kind: "counted",
     figureKey: "corpus-exonyms",
-    label: "exonymes recensés",
+    label: "noms donnés de l’extérieur",
     // 3122 -> 3117 on 2026-10-03: the Bissa merge removed six exonyms with the two
     // retired fiches and added one (Busanga, as the Kusasi use it).
-    value: 3117,
+    // 3117 -> 3116 on 2026-10-10: PPL_JOLA's two exonyms left with the fiche,
+    // and PPL_MALINKE gained a bare « Mandingue ».
+    // 3116 -> 3079 on 2026-10-10: fourteen duplicate people fiches folded into their keepers: their
+    // exonyms left with them, those only they held were carried over, and
+    // PPL_KHOE_MACRO gave up Khoikhoi and Hottentot to PPL_KHOIKHOI, which has them.
+    value: 3079,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -72,7 +93,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   "corpus-autonyms": {
     kind: "counted",
     figureKey: "corpus-autonyms",
-    label: "autonymes déclarés",
+    label: "noms employés par les peuples eux-mêmes",
     // 772 until eight macro-group fiches were corrected: their field held a
     // sentence listing *other* groups' names — « Variées selon les groupes :
     // Maninka, Bambara, Dioula… » — which the count took for an autonym. A
@@ -83,7 +104,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // grouping whose own source calls the term an outsiders' category over
     // independent peoples; it now declares the absence with `null`, like the other
     // macro-group fiches.
-    value: 758,
+    // 757 -> 743 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
+    value: 743,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,
@@ -101,9 +123,11 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
       "fiches déclarant leur appellation contestée ou héritée de la colonisation",
     // 444 -> 443 on 2026-10-03: PPL_BUSANSI, the one "contested" Bissa fiche, was
     // merged into PPL_BISSA, which declares no status.
-    value: 443,
+    // 442 -> 433 on 2026-10-10: fourteen duplicate people fiches folded into their keepers; PPL_BONO
+    // took the retired Brong fiche's colonial-legacy status with its whyProblematic.
+    value: 433,
     method:
-      "fiches dont classificationStatus vaut contested (253) ou colonial-legacy (190)",
+      "fiches dont classificationStatus vaut contested (249) ou colonial-legacy (184)",
     countedOn: COUNTED_ON,
   },
   "status-other": {
@@ -120,7 +144,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     figureKey: "status-undeclared",
     label: "fiches ne déclarant aucun statut",
     // 309 -> 308 on 2026-10-03: PPL_BUSSA, which declared no status, was merged.
-    value: 308,
+    // 308 -> 303 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
+    value: 303,
     method: "fiches sans classificationStatus",
     countedOn: COUNTED_ON,
   },
@@ -131,9 +156,11 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     figureKey: "probe-colonial",
     label: "fiches employant le radical « colonial »",
     // 243 -> 242 on 2026-10-07: PPL_HADZA no longer calls Kangeju colonial, which no source read says.
-    value: 242,
+    // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
+    // 236 -> 227 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
+    value: 227,
     method: "radical colonial dans originOfExonyms + whyProblematic",
-    countedOn: COUNTED_ON,
+    countedOn: "2026-10-09",
   },
   "probe-administration": {
     kind: "counted",
@@ -152,7 +179,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 183 -> 182 on 2026-10-03: the Frafra explanation no longer says the "British
     // administrators" heard the greeting; its source gives missionaries in one
     // account and the British in a variant, so the sentence follows the source.
-    value: 182,
+    // 181 -> 177 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
+    value: 177,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -167,19 +195,23 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // Baouré were written by Europeans, which its sources state.
     // 121 -> 122 on 2026-10-07: PPL_BETE now reports that Magwé's author says the
     // French took « bété » from the English.
-    value: 122,
+    // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
+    // 120 -> 119 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
+    value: 119,
     method: "radical europ dans originOfExonyms + whyProblematic",
-    countedOn: COUNTED_ON,
+    countedOn: "2026-10-09",
   },
   "probe-neighbours": {
     kind: "counted",
     figureKey: "probe-neighbours",
-    label: "fiches attribuant un exonyme à des voisins",
+    label: "fiches contenant le mot « voisin » ou ses variantes",
     // 113 -> 112 on 2026-10-07: PPL_HADZA no longer attributes Kindiga/Tindiga to neighbours, which no source read says.
     // 112 -> 113 on 2026-10-07: PPL_BETE now says the Gouro called their southern neighbours Tshien (Dozon 1985, p. 45).
+    // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
+    // 114 -> 113 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
     value: 113,
     method: "radical voisin dans originOfExonyms + whyProblematic",
-    countedOn: COUNTED_ON,
+    countedOn: "2026-10-09",
   },
   "probe-portuguese": {
     kind: "counted",
@@ -192,16 +224,20 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   "probe-pejorative": {
     kind: "counted",
     figureKey: "probe-pejorative",
-    label: "fiches qualifiant un exonyme de dépréciatif",
-    value: 84,
+    label:
+      "fiches contenant les mots recherchés pour repérer les noms méprisants",
+    // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
+    // 60 -> 59 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
+    value: 59,
     method: `radicaux ${PEJORATIVE_STEMS.join(", ")} dans originOfExonyms + whyProblematic`,
-    countedOn: COUNTED_ON,
+    countedOn: "2026-10-09",
   },
   "probe-arabic": {
     kind: "counted",
     figureKey: "probe-arabic",
     label: "fiches employant le radical « arab- »",
-    value: 74,
+    // 74 -> 72 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
+    value: 72,
     method: "radical arab dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -209,7 +245,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-swahili",
     label: "fiches employant « swahili »",
-    value: 68,
+    // 68 -> 66 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
+    value: 66,
     method: "radical swahili dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -217,9 +254,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-slavery",
     label: "fiches employant le radical « esclav- »",
-    value: 27,
+    // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
+    value: 28,
     method: "radical esclav dans originOfExonyms + whyProblematic",
-    countedOn: COUNTED_ON,
+    countedOn: "2026-10-09",
   },
   "probe-missionary": {
     kind: "counted",
@@ -245,24 +283,24 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   "countries-european-exonym": {
     kind: "read",
     figureKey: "countries-european-exonym",
-    label: "pays portant un exonyme européen conservé",
+    label: "pays ayant conservé un nom donné par des Européens",
     value: 20,
     method:
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
     readOn: COUNTED_ON,
     caveat:
-      "Une lecture, pas une mesure : le corpus ne porte aucun champ typé pour l'origine d'un nom de pays, et aucune des 54 étymologies n'est adossée à une source.",
+      "Ces chiffres viennent d'une lecture des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
   },
   "countries-ancient-exonym": {
     kind: "read",
     figureKey: "countries-ancient-exonym",
-    label: "pays portant un exonyme ancien non européen",
+    label: "pays portant un nom ancien donné de l’extérieur",
     value: 6,
     method:
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
     readOn: COUNTED_ON,
     caveat:
-      "Une lecture, pas une mesure : le corpus ne porte aucun champ typé pour l'origine d'un nom de pays, et aucune des 54 étymologies n'est adossée à une source.",
+      "Ces chiffres viennent d'une lecture des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
   },
   "countries-local-kept": {
     kind: "read",
@@ -273,7 +311,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
     readOn: COUNTED_ON,
     caveat:
-      "Une lecture, pas une mesure : le corpus ne porte aucun champ typé pour l'origine d'un nom de pays, et aucune des 54 étymologies n'est adossée à une source.",
+      "Ces chiffres viennent d'une lecture des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
   },
   "countries-african-choice": {
     kind: "read",
@@ -284,14 +322,14 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
     readOn: COUNTED_ON,
     caveat:
-      "Une lecture, pas une mesure : le corpus ne porte aucun champ typé pour l'origine d'un nom de pays, et aucune des 54 étymologies n'est adossée à une source.",
+      "Ces chiffres viennent d'une lecture des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
   },
 
   "patronyme-fiches": {
     kind: "counted",
     figureKey: "patronyme-fiches",
     label: "fiches de nom",
-    value: 621,
+    value: 625,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +
@@ -302,7 +340,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   "patronyme-non-hereditary": {
     kind: "counted",
     figureKey: "patronyme-non-hereditary",
-    label: "systèmes documentés où le nom ne se transmet pas",
+    label: "fiches sur des noms qui ne se transmettent pas à l’identique",
     value: 176,
     method:
       "fiches de nom recherchées dont transmissionMode vaut non_hereditary, au " +
@@ -327,8 +365,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
   "exonyms-imposed-by-administration": {
     kind: "missing",
     figureKey: "exonyms-imposed-by-administration",
-    label: "exonymes effectivement imposés par une administration",
+    label: "noms réellement imposés par une administration",
     reason:
-      "Le corpus enregistre l'origine d'un exonyme en prose libre, jamais comme une valeur. On peut compter les fiches qui emploient le mot « administration » ; on ne peut pas compter les noms qu'une administration a imposés.",
+      "Nos fiches racontent l'origine des noms donnés de l'extérieur. Compter celles qui contiennent le mot « administration » ne permet pas de savoir combien de noms une administration a réellement imposés.",
   },
 };

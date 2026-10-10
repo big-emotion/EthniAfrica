@@ -78,32 +78,38 @@
       {
         "title": "Kunda – Zambia's Traditional History, 2020",
         "url": "https://traditionalzambia.home.blog/tribes-of-zambia/second-bantu-invasion/luba/kunda-2/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "The Kunda of Zambia – Partners in Bible Translation Survey, 2015",
         "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/KundaSurvey_2015.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kunda people – 101 Last Tribes, 2023",
         "url": "https://www.101lasttribes.com/tribes/kunda.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Kunda in Zambia – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/12852/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Zambia: Tracing History of the Kunda – allAfrica.com, 2006",
         "url": "https://allafrica.com/stories/200611020687.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Kunda Language (KDN) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/kdn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

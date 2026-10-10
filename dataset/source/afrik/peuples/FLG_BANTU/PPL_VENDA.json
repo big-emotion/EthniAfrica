@@ -12,7 +12,7 @@
         "Venda (terme europeen standardise)",
         "Bawenda (forme bantou ancienne)"
       ],
-      "originOfExonyms": "Le terme Venda fut utilise par les colonisateurs europeens et les administrateurs sud-africains. Le nom interne VhaVenda signifie les gens de Venda. Vhangona designe les clans les plus anciens, considerés comme les habitants originels de la terre de Venda.",
+      "originOfExonyms": "Le terme Venda fut utilise par les colonisateurs europeens et les administrateurs sud-africains. Le nom interne VhaVenda voudrait dire les gens de Venda. Vhangona designe les clans les plus anciens, considerés comme les habitants originels de la terre de Venda.",
       "whyProblematic": "Les Venda sont souvent confondus avec des groupes Shona ou Sotho-Tswana. Leur langue Tshivenda est unique et non mutuellement intelligible avec les langues voisines, malgre des influences Sotho-Tswana et Kalanga.",
       "contemporaryUsage": "VhaVenda est l'autodesignation preferee. Le bantoustan de Venda (1979-1994) portait le nom du peuple mais etait un instrument de la politique d'apartheid. Depuis 1994, les VhaVenda font partie de la province de Limpopo (Afrique du Sud).",
       "linguisticFamily": "FLG_BANTU",
@@ -109,17 +109,20 @@
       {
         "title": "Minority Rights Group — Vhavenda in South Africa",
         "url": "https://minorityrights.org/communities/vhavenda-in-south-africa/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Statistics South Africa — Mid-Year Population Estimates 2025",
         "url": "https://www.statssa.gov.za/?p=18613",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "SIL Ethnologue — Venda (ven)",
         "url": "https://www.ethnologue.com/language/ven/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

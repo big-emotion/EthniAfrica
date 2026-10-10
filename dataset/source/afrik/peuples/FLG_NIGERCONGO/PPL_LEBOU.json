@@ -12,7 +12,7 @@
         "Lebu (autre variante orthographique)",
         "Lebou Pêcheurs (désignation populaire liée à leur activité principale)"
       ],
-      "originOfExonyms": "Le terme Lébou est à la fois l'endonyme et l'exonyme, les deux désignations coïncidant. Le nom est utilisé par les Wolof, les Sérères et les Français depuis l'époque coloniale pour désigner cette communauté du Cap-Vert. L'ethnographe P. Mercier et G. Balandier ont popularisé le terme dans leur ouvrage de référence Les Pêcheurs Lebou du Sénégal (1952).",
+      "originOfExonyms": "Lébou est à la fois le nom que la communauté se donne et celui qu'emploient les autres populations. Les Wolof, les Sérères et les Français l'utilisent depuis l'époque coloniale pour cette communauté du Cap-Vert. P. Mercier et G. Balandier ont contribué à le faire connaître dans leur ouvrage de référence Les Pêcheurs Lebou du Sénégal (1952).",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Lébou est couramment utilisé en français et en anglais pour désigner ce peuple. Il est reconnu dans les recensements sénégalais comme groupe ethnique distinct. La République théocratique lébou maintient une autonomie juridique spéciale reconnue par l'État sénégalais.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -91,12 +91,14 @@
       {
         "title": "NBC News — Senegal tribe swaps fishing boats for surfboards",
         "url": "https://www.nbcnews.com/id/wbna9503277",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "Glottolog — Lebu Wolof",
         "url": "https://glottolog.org/resource/languoid/id/lebu1234",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -6,6 +6,7 @@ import { readFileSync, readdirSync } from "fs";
 import { join } from "path";
 import type { Country, ParsedFile } from "@/types/afrik";
 import { logger } from "@/lib/api/logger";
+import { ficheNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 
 const COUNTRIES_PATH = join(process.cwd(), "dataset/source/afrik/pays");
 const countryCache = new Map<string, Country>();
@@ -23,6 +24,8 @@ export async function loadCountry(
     const data: Country = JSON.parse(raw);
     if (!data.id)
       throw new Error(`Missing required field "id" in ${isoCode}.json`);
+    const nameHistory = ficheNameHistory(data, isoCode);
+    if (nameHistory) data.nameHistory = nameHistory;
     countryCache.set(isoCode, data);
     return { success: true, data };
   } catch (error) {
@@ -52,6 +55,10 @@ export async function loadAllCountries(): Promise<Country[]> {
       const isoCode = file.replace(".json", "");
       const result = await loadCountry(isoCode);
       if (result.success && result.data) countries.push(result.data);
+      else
+        logger.error(`Failed to load ${isoCode}`, undefined, {
+          errors: result.errors,
+        });
     }
     return countries;
   } catch (error) {

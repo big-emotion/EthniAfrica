@@ -40,7 +40,7 @@ describe("revealProvenanceFr", () => {
   // @req REQ-120
   it("reads as the tail of a sentence, so the reveal can introduce it", () => {
     expect(revealProvenanceFr("content.appellations.selfAppellation")).toBe(
-      "l'auto-appellation déclarée par la fiche"
+      "le nom que le peuple emploie pour se nommer, indiqué dans sa fiche"
     );
   });
 });

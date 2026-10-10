@@ -4,6 +4,144 @@
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["AGO"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Ovimbundu désigne le peuple des hautes terres du centre de l'Angola, qui se nomme lui-même ainsi ; une personne est un Ocimbundu et la langue s'appelle umbundu. Un autre nom a servi : Kimbunda, chez un voyageur du XIXe siècle. Les sources disent peu de chose de l'origine de ce nom ; nous présentons plus bas ce que nous avons lu.",
+    "names": [
+      {
+        "nameText": "Ovimbundu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "umb",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent au pluriel ; Ocimbundu pour une personne, umbundu pour la langue.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ovimbundu est un pluriel : une personne est un Ocimbundu, et le mot umbundu sert pour la langue et comme adjectif, selon Wilfrid D. Hambly, qui a retenu ces formes d'après ce qu'il entendait dire sur place.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Ovimbundu of Angola",
+                "author": "Wilfrid D. Hambly",
+                "year": 1934,
+                "url": "https://archive.org/details/ovimbunduofangol212hamb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 106-107",
+                "notes": "Chicago, Field Museum of Natural History, série anthropologique, vol. 21, n° 2, 1934 ; lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur a enquêté sur place et cite son interprète, Ngonga."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ovimbundu désigne le peuple des hautes terres du centre de l'Angola, dont le Bailundo et le Bihé. Il repose sur la racine mbundu, qui se retrouve chez leurs voisins du nord, les Kimbundu ou Ambundu. On ne sait pas avec certitude ce que voulait dire cette racine : nous n'avons lu qu'une explication, présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Ovimbundu of Angola",
+                "author": "Wilfrid D. Hambly",
+                "year": 1934,
+                "url": "https://archive.org/details/ovimbunduofangol212hamb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 106-107 et p. 115",
+                "notes": "Chicago, Field Museum of Natural History, série anthropologique, vol. 21, n° 2, 1934 ; lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur a enquêté sur place et cite son interprète, Ngonga."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "1885"
+            },
+            "statement": "Le nom Ovimbundu apparaît dans la grammaire de l'umbundu du missionnaire Wesley M. Stover, publiée en 1885, qui parle de la tendance « among the Ovimbundu » à personnifier les animaux et les objets. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Ovimbundu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Observations upon the grammatical structure and use of the Umbundu, or the language of the inhabitants of Bailundu and Bihe",
+                "author": "Wesley M. Stover",
+                "year": 1885,
+                "url": "https://archive.org/details/observationsupon00stov_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 54",
+                "notes": "Boston, 1885, grammaire d'un missionnaire de l'American Board of Commissioners for Foreign Missions ; lue dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "Proposée en 1934"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ovimbundu aurait pris le préfixe pluriel ovi- pour réunir sous un même nom des groupes apparentés, les Kimbundu et les Babunda, selon une hypothèse que Wilfrid D. Hambly avance avec prudence.",
+            "hypothesisGroup": "origine du nom Ovimbundu",
+            "sources": [
+              {
+                "title": "The Ovimbundu of Angola",
+                "author": "Wilfrid D. Hambly",
+                "year": 1934,
+                "url": "https://archive.org/details/ovimbunduofangol212hamb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 115",
+                "notes": "Chicago, Field Museum of Natural History, série anthropologique, vol. 21, n° 2, 1934 ; lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur a enquêté sur place et cite son interprète, Ngonga."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kimbunda",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que le voyageur László Magyar donne au peuple du Bihé au milieu du XIXe siècle.",
+        "periodLabel": "Écrit en 1859",
+        "accounts": [
+          {
+            "period": {
+              "from": 1849,
+              "to": 1859,
+              "label": "1849-1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Kimbunda est celui que László Magyar donne, après huit ans au Bihé, à « la nation kimbunda », un peuple qu'il décrit comme guerrier et grand commerçant, partagé en petits États indépendants. Selon ses traditions, ajoute-t-il, ses ancêtres seraient venus du lointain nord-est, du pays du Moropu, environ trois cents ans plus tôt. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Kimbunda",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Reisen in Süd-Afrika in den Jahren 1849 bis 1857",
+                "author": "László Magyar",
+                "year": 1859,
+                "url": "https://archive.org/details/reiseninsdafrik00hunfgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 265-266",
+                "notes": "Pest, Lauffer & Stolp, 1859, traduit du hongrois par János Hunfalvy ; lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur, un voyageur hongrois, raconte son installation au Bihé et son mariage sur place."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Ovimbundu",
@@ -40,7 +178,8 @@
       "migrationRoutes": [
         "Derive des populations bantoues depuis le nord sur le plateau du Bié entre le 14e et le 17e siecle",
         "Penetration des familles regnantes depuis le nord-est au 17e siecle",
-        "Extension commerciale vers l'est jusqu'en Zambie, au Congo et en Namibie (18e-19e siecles)"
+        "Extension commerciale vers l'est jusqu'en Zambie, au Congo et en Namibie (18e-19e siecles)",
+        "Expansion depuis le plateau de Bie vers la bande cotiere a l'ouest de Benguela"
       ],
       "historicalSettlementZones": [
         "Plateau du Bié (Benguela), entre 1200 et 1800 m d'altitude, provinces de Huambo et Bié",
@@ -85,7 +224,7 @@
     "demography": {
       "totalPopulation": 8700000,
       "referenceYear": 2025,
-      "source": "Les Ovimbundu constituent environ 37-38% de la population angolaise. Population totale Angola 2025 : environ 38 millions (projections UN). 38% = ~14,4 millions, mais certaines sources citent 4 millions (Britannica, debut 21e siecle) a 6 millions (Ethnologue). Estimation retenue : 37% de 35 millions = ~8,7 millions (projection prudente 2025 sur base Minorityrights.org et Ethnologue).",
+      "source": "Les Ovimbundu constituent environ 37-38% de la population angolaise. Population totale Angola 2025 : environ 38 millions (projections UN). 38% = ~14,4 millions, mais certaines sources citent 4 millions (Britannica, debut 21e siecle) a 6 millions (Ethnologue). Estimation retenue : 37% de 35 millions = ~8,7 millions (projection prudente 2025 sur base Minorityrights.org et Ethnologue). Joshua Project (2024) compte 8 895 000 Ovimbundu en Angola et 5 000 en Namibie.",
       "distributionByCountry": [
         {
           "country": "AGO",
@@ -98,27 +237,32 @@
       {
         "title": "Britannica — Ovimbundu",
         "url": "https://www.britannica.com/topic/Ovimbundu",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Minority Rights Group — Ovimbundu in Angola",
         "url": "https://minorityrights.org/communities/ovimbundu/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "eHRAF World Cultures — Ovimbundu (fp13)",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fp13/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Country Studies — Angola: Ovimbundu",
         "url": "https://countrystudies.us/angola/59.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue — Umbundu language, code umb",
         "url": "https://www.ethnologue.com/language/umb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Localizely — Umbundu (umb) ISO code",
@@ -128,7 +272,14 @@
       {
         "title": "Heywood, Linda. Contested Power in Angola, 1840s to the Present. University of Rochester Press, 2000",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Joshua Project – Ovimbundu, Umbundu in Angola",
+        "url": "https://joshuaproject.net/people_groups/15706/AO",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

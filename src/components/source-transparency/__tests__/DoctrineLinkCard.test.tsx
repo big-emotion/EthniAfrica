@@ -10,28 +10,28 @@ describe("DoctrineLinkCard", () => {
     it("renders endonymes-vs-exonymes copy", () => {
       render(<DoctrineLinkCard slug="endonymes-vs-exonymes" />);
       expect(
-        screen.getByText(/endonymes \(auto-désignations\) et exonymes/i)
+        screen.getByText(/les noms que les personnes emploient pour se nommer/i)
       ).toBeInTheDocument();
     });
 
     it("renders classifications-contestees copy", () => {
       render(<DoctrineLinkCard slug="classifications-contestees" />);
       expect(
-        screen.getByText(/classification fait l'objet de débats académiques/i)
+        screen.getByText(/Les chercheurs ne regroupent pas tous/i)
       ).toBeInTheDocument();
     });
 
     it("renders heritage-colonial copy", () => {
       render(<DoctrineLinkCard slug="heritage-colonial" />);
       expect(
-        screen.getByText(/terme provient de l'héritage colonial/i)
+        screen.getByText(/Ce nom est lié à la période coloniale/i)
       ).toBeInTheDocument();
     });
 
     it("renders topics-sensibles copy", () => {
       render(<DoctrineLinkCard slug="topics-sensibles" />);
       expect(
-        screen.getByText(/sujet est sensible\. Notre doctrine éditoriale/i)
+        screen.getByText(/Ce sujet peut toucher à l’identité/i)
       ).toBeInTheDocument();
     });
   });

@@ -109,27 +109,32 @@
       {
         "title": "Encyclopaedia Britannica — Kru",
         "url": "https://www.britannica.com/topic/Kru",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Minority Rights Group — Liberia",
         "url": "https://minorityrights.org/country/liberia/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Qiraat Africa — The Kru/Kroo of West Africa",
         "url": "https://qiraatafrican.com/en/19895/the-kru-kroo-of-west-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Cambridge University Press — For King and Empire: The Changing Identities of Kru Mariners in Atlantic Africa",
         "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/for-king-and-empire-the-changing-political-economic-and-cultural-identities-of-kru-mariners-in-atlantic-africa-14601945/8FD9979C9404CDB26496AC92156C65AB",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "US DOJ Immigration Court — Liberia Kru tribe report, 2013",
         "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2013/06/11/LBR23755.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "ArcGIS StoryMaps — Virtual Timeline of Kru (Klao) History",

@@ -80,32 +80,38 @@
       {
         "title": "Senga in Zambia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/19620/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Senga of Zambia (PGID: PG015625) – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg015625/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Senga people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/senga.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Senga – Zambia's Traditional History",
         "url": "https://traditionalzambia.home.blog/tribes-of-zambia/second-bantu-invasion/luba/senga/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Partners in Bible Translation – Senga Survey 2015",
         "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/SengaSurvey_2015.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Glottolog — Tumbuka (tumb1250)",
         "url": "https://glottolog.org/resource/languoid/id/tumb1250",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

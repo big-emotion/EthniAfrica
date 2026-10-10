@@ -27,7 +27,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "official",
     sourceKind: "linguistic_reference",
     notes:
-      "Références le glossonyme otjiherero et l'ethnonyme Ovaherero. Déjà citée par la fiche PPL_HERERO du corpus. Elle n'atteste aucune connotation péjorative attachée à « Herero » — c'est précisément ce que le chapitre lui fait dire.",
+      "Cette référence donne otjiherero comme nom de la langue et Ovaherero comme nom du peuple. Elle est aussi citée dans notre fiche sur les Herero. Elle ne décrit pas de sens méprisant attaché au mot « Herero ».",
     discoveredVia: [],
   },
   "afrik-ppl-herero": {
@@ -40,7 +40,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "referenced",
     sourceKind: "repository",
     notes:
-      "Le corpus lui-même : dataset/source/afrik/noms/PPL_HERERO.json. Cité pour la formulation du contre-exemple, dont la prudence est reprise mot pour mot.",
+      "Notre fiche sur les noms des Herero est citée pour la distinction entre l'histoire coloniale du peuple et le sens du nom lui-même.",
     discoveredVia: [],
   },
   "afrik-ppl-dinka": {
@@ -53,7 +53,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "referenced",
     sourceKind: "repository",
     notes:
-      "Le corpus atteste l'origine arabe de l'exonyme et sa reprise par l'administration anglo-égyptienne, ainsi que la montée de « Jieng » dans les revendications depuis 2011. Il ne cite lui-même aucune source secondaire pour l'étymologie — voir la remontée demandée.",
+      "Notre fiche sur les Dinka propose une origine arabe du nom et décrit sa reprise par l'administration anglo-égyptienne. Elle évoque aussi l'usage croissant de « Jieng » dans les revendications depuis 2011. Elle ne cite toutefois pas de source à l'appui de l'explication de l'origine du nom.",
     discoveredVia: [],
   },
   "britannica-khoekhoe": {
@@ -66,7 +66,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "referenced",
     sourceKind: "academic",
     notes:
-      "Atteste « Hottentot » comme forge des colons néerlandais et afrikaners, probablement par imitation des clics, et « Khoekhoe » (« hommes des hommes ») comme endonyme. N'établit pas la datation précise de la première attestation.",
+      "Rapporte que des colons néerlandais et afrikaners auraient créé « Hottentot », probablement en imitant les sons à clics. Présente « Khoekhoe » (« hommes des hommes ») comme le nom employé par les personnes concernées. Ne donne pas la date précise du premier usage écrit connu.",
     discoveredVia: [],
   },
   "saho-khoisan": {
@@ -108,7 +108,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "referenced",
     sourceKind: "academic",
     notes:
-      "Établit la date — 8 janvier 1897, The Times de Londres — et la citation de l'article. Distingue « suggérer » de « imposer » : le nom n'est officialisé qu'en 1914, par Lugard, à l'amalgamation. Signale aussi des occurrences antérieures de « Nigerian » chez William Cole (1862) et Richard Burton (1863), sans trancher si elles sont contemporaines ou ajoutées à l'édition. La fiche NGA.json disait 1914 et attribuait l'officialisation à Shaw : corrigée avec cette source, qui est la première étymologie sourcée du corpus pays.",
+      "L'article situe la proposition du nom Nigeria au 8 janvier 1897, dans The Times de Londres. Il la distingue de son officialisation par Lugard en 1914, lors de la réunion des territoires. Il signale aussi le mot « Nigerian » chez William Cole (1862) et Richard Burton (1863), sans déterminer si ces usages datent du texte initial ou d'une édition ultérieure.",
     discoveredVia: [],
   },
   "afrik-pays-ben": {
@@ -385,7 +385,7 @@ export const NOMMER_BIBLIOGRAPHY: Record<SourceKey, DossierSource> = {
     standing: "unverified",
     sourceKind: "community",
     notes:
-      "Source communautaire — Adanwomase est un village tisserand de l'Ashanti — retenue à son palier plutôt qu'écartée, comme la doctrine du site le prévoit. Elle atteste les deux étymologies internes : en akan, nwentoma, « tissu tissé », et kente rapproché de kɛntɛn, « panier », pour le motif ; en éwé, kete, des deux gestes alternés du métier, ke « ouvrir » et te « presser ». Reste à trouver une source linguistique pour la fixation de la forme francophone « kita », qui n'est attestée par aucune des deux traditions.",
+      "Source communautaire — Adanwomase est un village tisserand de l'Ashanti — retenue plutôt qu'écartée, comme la doctrine du site le prévoit. Elle atteste les deux étymologies internes : en akan, nwentoma, « tissu tissé », et kente rapproché de kɛntɛn, « panier », pour le motif ; en éwé, kete, des deux gestes alternés du métier, ke « ouvrir » et te « presser ». Reste à trouver une source linguistique pour la fixation de la forme francophone « kita », qui n'est attestée par aucune des deux traditions.",
     discoveredVia: [],
   },
   "coffee-qahwa": {

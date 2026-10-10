@@ -3,20 +3,15 @@ import type { Language } from "@/types/shared";
 /**
  * What the provenance banner says, in the two published languages.
  *
- * The four standing names are deliberately absent: they belong to the
- * controlled vocabulary in `src/lib/glossaire/vocabularies.ts`, which is the
- * one place the atlas labels a tier. Restating « Officielle » here would give
- * the scale a second spelling, and a scale with two spellings is a scale the
- * reader cannot trust across two pages.
+ * No standing name appears here: the reader never sees a source's tier
+ * (doctrine §1.1).
  */
 const fr = {
-  region: "Provenance des assertions de cette fiche",
+  region: "Sources des informations de cette fiche",
   assertionCount: (count: number) =>
-    `${count} assertion${count > 1 ? "s" : ""} recensée${count > 1 ? "s" : ""}`,
+    `${count} information${count > 1 ? "s" : ""} présentée${count > 1 ? "s" : ""}`,
   lastHumanAudit: (date: string) => `Dernière relecture humaine : ${date}`,
   neverAudited: "Aucune relecture humaine enregistrée à ce jour",
-  unverifiedNotice:
-    "Les assertions non vérifiées sont publiées et signalées comme telles. Nous ne les retirons pas.",
   viewSources: "Voir les sources",
 };
 

@@ -303,6 +303,10 @@ const lensCountsSchema = z
     language: z.number().int().nonnegative(),
     person: z.number().int().nonnegative(),
     patronyme: z.number().int().nonnegative(),
+    // Recorded before places were searchable (REQ-196): none of these cases found one.
+    place: z.number().int().nonnegative().default(0),
+    // Recorded before word fiches were searchable (REQ-196).
+    word: z.number().int().nonnegative().default(0),
   })
   .strict();
 
@@ -753,6 +757,8 @@ function countsFor(results: readonly SearchResult[]) {
     language: 0,
     person: 0,
     patronyme: 0,
+    place: 0,
+    word: 0,
   };
   for (const result of results) counts[result.type] += 1;
   return counts;

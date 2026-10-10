@@ -73,12 +73,14 @@
       {
         "title": "Kwangwa – Zambia's Traditional History, 2020",
         "url": "https://traditionalzambia.home.blog/tribes-of-zambia/second-bantu-invasion/luba/lozi/kwangwa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "THE HISTORY OF THE KWANGWA PEOPLE – Facebook/Barotsenetwork, 2021",
         "url": "https://www.facebook.com/Barotsenetwork/posts/the-history-of-the-kwangwa-peoplethe-kwangwas-are-an-offshoot-of-the-luyi-people/4009618459076922/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Nkoya People of Zambia – Alkebulan Movement, 2017",
@@ -88,12 +90,14 @@
       {
         "title": "About Zambia – Western Province Provincial Administration",
         "url": "https://www.wes.gov.zm/?page_id=1186",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Kwangwa – Glottolog kwan1275",
         "url": "https://glottolog.org/resource/languoid/id/kwan1275",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

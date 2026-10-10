@@ -13,7 +13,7 @@
         "Cisena",
         "Sena du Zambèze"
       ],
-      "originOfExonyms": "Le nom Sena tire son origine du nom du comptoir commercial portugais fondé en 1531 par Vicente Pegado dans un village musulman le long du Zambèze. Pegado nomma ce lieu Sena, et le terme s'est progressivement étendu au peuple qui habitait la région. C'est donc un exonyme portugais, non un endonyme propre du groupe.",
+      "originOfExonyms": "Selon cette explication, Sena viendrait du poste de commerce portugais fondé en 1531 par Vicente Pegado dans un village musulman du Zambèze. Pegado aurait nommé ce lieu Sena. Le nom se serait ensuite étendu aux habitants de la région. Il aurait donc été donné de l'extérieur par les Portugais.",
       "whyProblematic": "Le terme Sena recouvre à la fois un groupe ethnolinguistique bantou spécifique de la vallée du Zambèze et une catégorie plus large comprenant des sous-groupes régionaux (Rue/Barwe, Podzo, Sena du Malawi) qui peuvent être considérés comme des entités linguistiques distinctes. Le Sena du Malawi est parfois classé comme une langue distincte par les linguistes.",
       "contemporaryUsage": "Sena est le nom courant utilisé en portugais, anglais et par les locuteurs eux-mêmes pour désigner ce groupe au Mozambique, au Malawi et au Zimbabwe. La langue s'appelle Cisena ou Chisena en langue locale.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -105,17 +105,20 @@
       {
         "title": "SIL Ethnologue — Sena (seh)",
         "url": "https://www.ethnologue.com/language/seh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Sena in Mozambique",
         "url": "https://joshuaproject.net/people_groups/14848/mz",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Allen F. Isaacman, Mozambique: The Africanization of a European Institution — The Zambezi Prazos 1750-1902, University of Wisconsin Press, 1972",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Kevin Shillington, History of Africa, Macmillan, 1989",
@@ -125,12 +128,14 @@
       {
         "title": "CIA World Factbook — Mozambique",
         "url": "https://www.cia.gov/the-world-factbook/countries/mozambique/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Malawi",
         "url": "https://www.cia.gov/the-world-factbook/countries/malawi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Rhodian G. Munyenyembe, Christianity and African Traditional Religion, 2011 (sur la Buku Lopatulika utilisée par les Sena)",

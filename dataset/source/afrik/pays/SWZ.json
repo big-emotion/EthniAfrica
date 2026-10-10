@@ -4,8 +4,307 @@
   "nameEn": "Eswatini",
   "nameOfficial": "Royaume d'Eswatini (Kingdom of Eswatini, Umbuso weSwatini)",
   "summary": "Eswatini signifie « pays des Swazi » en swati — le nom que le royaume se donne, repris officiellement en remplacement du colonial « Swaziland ». Fondé au XVIIIe siècle sous le roi Ngwane, il fut protectorat britannique de 1903 à 1968. L'Incwala et l'Umhlanga y rythment encore la vie royale.",
-  "etymology": "Le nom \"Eswatini\" signifie \"pays des Swazi\" en langue swati. Il s'agit du nom traditionnel du royaume. Le nom \"Swaziland\" était le nom colonial britannique (combinaison de \"Swazi\" et \"land\"). Le pays a officiellement changé de nom de \"Swaziland\" à \"Eswatini\" en 2018 pour retrouver son appellation d'origine.",
+  "etymology": "Le nom \"Eswatini\" voudrait dire \"pays des Swazi\" en langue swati. Il s'agit du nom traditionnel du royaume. Le nom \"Swaziland\" était le nom colonial britannique (combinaison de \"Swazi\" et \"land\"). Le pays a officiellement changé de nom de \"Swaziland\" à \"Eswatini\" en 2018 pour retrouver son appellation d'origine.",
   "nameOriginActor": "Le nom \"Eswatini\" est le nom traditionnel du royaume swazi. Le nom \"Swaziland\" a été donné par les Britanniques lors de la colonisation. Le roi Mswati III a officiellement changé le nom du pays de \"Swaziland\" à \"Eswatini\" en 2018 pour restaurer le nom traditionnel.",
+  "nameHistory": {
+    "summary": "Le nom Eswatini désigne un pays d'Afrique australe, le royaume d'Eswatini, qui se nomme ainsi lui-même en siswati. Le pays a porté un autre nom, Swaziland, jusqu'en 2018, et ses habitants parlent aussi d'eux-mêmes comme de la nation ngwane. Les sources disent peu de chose de l'origine de ces noms ; nous présentons ce qu'elles en disent plus bas.",
+    "names": [
+      {
+        "nameText": "Eswatini",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ssw",
+        "namedBy": null,
+        "shortLine": "Le nom siswati du pays, « lieu des Swazi », devenu son nom officiel en 2018.",
+        "periodLabel": "Nom officiel depuis le 19 avril 2018",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": null,
+              "label": "Depuis le 19 avril 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Eswatini est le nom officiel du royaume depuis le 19 avril 2018. Ce jour-là, le roi Mswati III annonce que le Swaziland reprend son nom d'origine, et l'avis légal n° 80 de 2018 change le nom de « Kingdom of Swaziland » en « Kingdom of Eswatini », selon Sibusiso Magnificent Nhlabatsi et Al Jazeera.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Mswati III",
+                "role": "roi d'Eswatini, qui annonce le changement de nom officiel"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Law and Legal Research in Eswatini",
+                "author": "Sibusiso Magnificent Nhlabatsi, GlobaLex, New York University School of Law",
+                "year": 2023,
+                "url": "https://www.nyulawglobal.org/globalex/swaziland1.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Guide de recherche juridique mis à jour au début de 2023, consulté le 10 octobre 2026. Le roi Mswati III annonce le changement de nom le 19 avril 2018 et signe ce jour-là l'avis légal n° 80 de 2018, aux termes duquel « the name of the Kingdom of Swaziland is changed to Kingdom of Eswatini »."
+              },
+              {
+                "title": "Swaziland king changes country's name to Kingdom of Eswatini",
+                "author": "Al Jazeera, d'après des agences de presse",
+                "year": 2018,
+                "url": "https://www.aljazeera.com/news/2018/04/swaziland-king-country-kingdom-eswatini-180419171456858.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse du 19 avril 2018, consulté le 10 octobre 2026. Le roi y déclare que le Swaziland « reprend son nom d'origine » ; l'article traduit Eswatini par « lieu des Swazi » et rapporte que le nom Swaziland, mélange de swazi et d'anglais, fâchait certains habitants."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Eswatini désigne aujourd'hui le royaume ; en siswati, il voudrait dire « lieu des Swazi », selon Al Jazeera. Le roi le présente comme le nom d'origine du pays, mais on ne sait pas avec certitude depuis quand il est employé : nous n'en avons pas trouvé de trace écrite plus ancienne que les discours du roi.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Swaziland king changes country's name to Kingdom of Eswatini",
+                "author": "Al Jazeera, d'après des agences de presse",
+                "year": 2018,
+                "url": "https://www.aljazeera.com/news/2018/04/swaziland-king-country-kingdom-eswatini-180419171456858.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse du 19 avril 2018, consulté le 10 octobre 2026. Le roi y déclare que le Swaziland « reprend son nom d'origine » ; l'article traduit Eswatini par « lieu des Swazi » et rapporte que le nom Swaziland, mélange de swazi et d'anglais, fâchait certains habitants."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1840,
+              "to": 1840,
+              "label": "Vers 1840"
+            },
+            "era": "polity",
+            "statement": "Le nom Swazi, d'où viennent Eswatini et Swaziland, serait lié au roi Mswati, aussi appelé Mswazi : c'est à son avènement, à la mort de son père Sobhuza en 1840, que le peuple ngwane-dlamini aurait pris le nom de Swazi, selon Leonard D. Ngcongco.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi. Sobhuza meurt en 1840 ; son fils Mswati (Mswazi) lui succède, et « c'est à ce moment que le peuple ngwane-dlamini prit le nom de Swazi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1840,
+              "label": "Début du XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Swazi, on parle des Ngwane-Dlamini pour désigner le peuple que conduit le roi Sobhuza sur les rives du Pongolo, puis dans les montagnes de l'actuel royaume, selon Leonard D. Ngcongco.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 125 et 128",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi. Les Ngwane-Dlamini, « devenus par la suite les Swazi », sont commandés par Sobhuza sur les rives du Pongolo ; chassés de la vallée, ils s'installent dans le massif montagneux où Sobhuza jette les fondations de la nation swazi."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Swaziland",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "shortLine": "Le nom anglais du pays, formé sur celui des Swazi, en usage jusqu'en 2018.",
+        "periodLabel": "Écrit dès 1884 ; nom de l'État de 1968 à 2018",
+        "accounts": [
+          {
+            "period": {
+              "from": 1968,
+              "to": 2018,
+              "label": "Du 6 septembre 1968 au 19 avril 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Swaziland est celui de l'État indépendant à partir du 6 septembre 1968, jour où il cesse d'être un État protégé par la Grande-Bretagne, selon la loi britannique sur l'indépendance du Swaziland et le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Swaziland Independence Act 1968",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1968,
+                "url": "https://www.legislation.gov.uk/ukpga/1968/56/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu sur le site officiel de la législation britannique. La section 1 prévoit que le 6 septembre 1968 le Swaziland cesse d'être un État protégé et que la Couronne britannique n'y a plus de juridiction."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : Swaziland, indépendant le 6 septembre 1968, puissance coloniale la Grande-Bretagne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "25 juin 1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Swaziland devient celui d'un protectorat britannique : l'ordonnance qui en fait un « protectorat » est promulguée le 25 juin 1903, après la guerre anglo-boer, selon David Chanaiwa.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 9 : Initiatives et résistances africaines en Afrique méridionale",
+                "author": "David Chanaiwa",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 237",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen. Par la convention de 1894, l'Angleterre confie au Transvaal « tous droits en matière de protection, de législation, de juridiction et d'administration concernant le Swaziland » ; le Transvaal y nomme un commissaire résident en 1895 et la souveraineté swazi se trouve « supplantée par le colonialisme » ; l'ordonnance qui fait du Swaziland un « protectorat » est promulguée le 25 juin 1903."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1895,
+              "label": "1894-1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Swaziland désigne à partir de 1894 un territoire que la Grande-Bretagne confie au Transvaal. Le Transvaal y nomme un commissaire résident en 1895, et la souveraineté swazi est alors supplantée par la domination coloniale, selon David Chanaiwa.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 9 : Initiatives et résistances africaines en Afrique méridionale",
+                "author": "David Chanaiwa",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 237",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen. Par la convention de 1894, l'Angleterre confie au Transvaal « tous droits en matière de protection, de législation, de juridiction et d'administration concernant le Swaziland » ; le Transvaal y nomme un commissaire résident en 1895 et la souveraineté swazi se trouve « supplantée par le colonialisme » ; l'ordonnance qui fait du Swaziland un « protectorat » est promulguée le 25 juin 1903."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "27 février 1884"
+            },
+            "era": "polity",
+            "statement": "Le nom Swaziland figure dans la convention signée à Londres le 27 février 1884 entre la Grande-Bretagne et la République sud-africaine du Transvaal : son article XII reconnaît « l'indépendance des Swazis, à l'intérieur de la frontière du Swaziland », selon le recueil de traités d'Edward Hertslet. Hertslet rapporte qu'une première convention, signée à Pretoria en 1881, reconnaissait déjà cette indépendance. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume swazi existait déjà avant lui.",
+            "formAsWritten": "Swaziland",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Map of Africa by Treaty, deuxième édition revue, vol. II",
+                "author": "Edward Hertslet",
+                "year": 1896,
+                "url": "https://archive.org/details/mapofafricabytre02hertuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 856 et 903",
+                "notes": "Londres, Her Majesty's Stationery Office, 1896, lu dans l'exemplaire numérisé de l'université de Toronto. Convention de Londres du 27 février 1884, article XII : « The independence of the Swazis, within the boundary line of Swaziland, as indicated in Article I of this Convention, will be fully recognized » (p. 856). La note sur le Swaziland, 1881-1894, rappelle que l'article XXIV de la convention de Pretoria du 3 août 1881 reconnaissait déjà l'indépendance des Swazis dans certaines limites (p. 903)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ngwane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ssw",
+        "namedBy": null,
+        "shortLine": "Le nom d'un ancien roi, que les Swazi donnent aussi à leur nation.",
+        "periodLabel": "Nom d'un roi de la fin du XVIe siècle selon la tradition ; nom de la nation",
+        "accounts": [
+          {
+            "period": {
+              "from": 1963,
+              "to": 1963,
+              "label": "Décrit en 1963"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngwane reste employé par les Swazi pour leur nation : le grand conseil du royaume s'appelle libandla lakaNgwane, le conseil de la nation ngwane, selon l'anthropologue Hilda Kuper.",
+            "sources": [
+              {
+                "title": "The Swazi: a South African kingdom",
+                "author": "Hilda Kuper",
+                "year": 1963,
+                "url": "https://archive.org/details/hilda-kuper-the-swazi-a-south-african-kingdom-holt-rinehart-and-winston-1964",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 34",
+                "notes": "New York, Holt, Rinehart and Winston. Lu dans une copie non officielle mise en ligne sur Internet Archive ; l'exemplaire de bibliothèque numérisé du même livre n'y est accessible qu'en prêt. Le second conseil du royaume est le « libandla lakaNgwane (council of the Ngwane nation) », qui réunit chefs, conseillers et chefs de village."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1840,
+              "label": "Début du XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngwane désigne, avec celui de Dlamini, le peuple que conduit le roi Sobhuza sur les rives du Pongolo, avant qu'il ne prenne le nom de Swazi, selon Leonard D. Ngcongco.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 125, 128 et 129",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi. Les Ngwane-Dlamini, « devenus par la suite les Swazi », sont commandés par Sobhuza ; le groupe originel ngwane réunit des clans nguni-embo, quelques groupes nguni-ntungwa et des clans tsonga conduits par la lignée royale des Dlamini."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1570,
+              "to": 1599,
+              "label": "Fin du XVIe siècle, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngwane est celui d'un roi, Ngwane II, que les historiens swazi placent vers la fin du XVIe siècle : il est le premier roi honoré dans les rites d'aujourd'hui, selon les récits recueillis par Hilda Kuper. C'est la plus ancienne trace de ce nom que le projet connaît. Le récit ne dit pas si la nation tient son nom de ce roi.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Swazi: a South African kingdom",
+                "author": "Hilda Kuper",
+                "year": 1963,
+                "url": "https://archive.org/details/hilda-kuper-the-swazi-a-south-african-kingdom-holt-rinehart-and-winston-1964",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "New York, Holt, Rinehart and Winston. Lu dans une copie non officielle mise en ligne sur Internet Archive ; l'exemplaire de bibliothèque numérisé du même livre n'y est accessible qu'en prêt. Les historiens swazi, « generally old men », se souviennent d'une vingtaine de rois mais ne s'accordent que sur les huit derniers, à partir de Ngwane II, vers la fin du XVIe siècle, « the first king commemorated in modern ritual ». Kuper précise que les versions de cette histoire se contredisent souvent."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Swaziland (1903-2018)"],
@@ -108,17 +407,20 @@
       {
         "title": "SIL Ethnologue – Languages of Eswatini",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Eswatini",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Eswatini",
         "url": "https://www.unfpa.org/data/world-population/SZ",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Rank among the Swazi\"",
@@ -133,7 +435,8 @@
       {
         "title": "Recensements eswatinis",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples swazi",
@@ -143,12 +446,14 @@
       {
         "title": "CIA World Factbook – Eswatini (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

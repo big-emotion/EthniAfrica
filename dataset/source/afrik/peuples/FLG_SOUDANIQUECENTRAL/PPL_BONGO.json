@@ -8,7 +8,7 @@
       "mainName": "Bongo",
       "selfAppellation": "Bongo",
       "exonyms": ["Bungu", "Dor"],
-      "originOfExonyms": "Le terme Bungu est une variante phonetique du nom Bongo utilisee dans certaines sources coloniales et linguistiques. Dor est un exonyme employe par des voisins; Georg Schweinfurth, botaniste allemand qui vecut parmi eux en 1869, les designa sous le nom Bongo dans ses recits.",
+      "originOfExonyms": "Certaines sources coloniales et certaines études sur la langue écrivent Bungu pour transcrire une autre prononciation de Bongo. Des voisins emploient Dor. Le botaniste allemand Georg Schweinfurth, qui a vécu parmi eux en 1869, les appelle Bongo dans ses récits.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Bongo est utilise en anglais et dans les langues regionales du Soudan du Sud. La communaute est dispersee en petits villages au sud et a l'est de Wau et est souvent confondue avec d'autres minorites de la region.",
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
@@ -89,27 +89,32 @@
       {
         "title": "Britannica — Bongo people",
         "url": "https://www.britannica.com/topic/Bongo-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Metropolitan Museum of Art — Reclaiming the Histories of The Met's Bongo Ngya (2018)",
         "url": "https://www.metmuseum.org/perspectives/bongo-commemorative-post-ngya",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Bongo language (bot)",
         "url": "https://www.ethnologue.com/language/bot/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Bongo in South Sudan",
         "url": "https://joshuaproject.net/people_groups/10939",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Pacific Lutheran University — Bongo Grave Post",
         "url": "https://www.plu.edu/africanartcollection/figures/bongo-grave-post/learn-more-bongo-grave-post/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Santandrea, Stefano. Concise grammar outline of the Bongo language. 1963",

@@ -8,7 +8,7 @@
       "mainName": "Anlo",
       "selfAppellation": "Anlogbe (nom de leur langue) ; Anlo designe le groupe, derives du terme ewe nlo ou anlo",
       "exonyms": ["Anlo Ewe", "Anglo"],
-      "originOfExonyms": "Le terme Anlo derive du mot ewe nlo signifiant se replier ou se recroqueviller, en reference a la formule me nlo prononcee par le fondateur Torgbui Atsu Wenya exprimant sa reluctance a continuer la migration. L'exonyme Anlo Ewe est utilise pour distinguer ce sous-groupe des autres groupes ewe.",
+      "originOfExonyms": "Anlo viendrait du mot ewe nlo, qui signifie se replier ou se recroqueviller. Selon cette explication, le fondateur Torgbui Atsu Wenya aurait prononcé me nlo pour exprimer son refus de poursuivre la migration. Le nom Anlo Ewe permet de distinguer ce groupe des autres groupes ewe.",
       "whyProblematic": null,
       "contemporaryUsage": "Anlo est le nom standard pour designer ce sous-groupe ewe en litterature academique et dans le contexte politique ghaneen. La capitale spirituelle et administrative est Anloga (region Volta, Ghana).",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -51,7 +51,7 @@
     "culture": {
       "majorRites": "Hogbetsotso Za (festival annuel commemorant l'evasion de Notsie : ceremonies, recits, tambours, reaffirmation de l'identite anlo). Funerailles traditionnelles en plusieurs etapes : Amedigbe (enterrement du corps), Ndinamegbe (reception des pleureuses), Nudogbe (veille mortuaire), Yofogbe (rites de lignage), Akontawogbe (decompte des dons), Xomefewogbe (bilan final). Initiation Yewe (adeptes recoivent un nouveau nom ; l'ancien nom devient tabou). Rites Afa (divination astrologique ; les non-inities portent du blanc).",
       "symbols": "Le mur de Notsie et l'evasion a reculons sont les symboles fondateurs de la resilience et de l'identite anlo. L'Epee de la Liberation de Tegli est un symbole spirituel majeur.",
-      "artsAndMusic": "Tissage du kente avec des motifs geometriques distinctifs et des couleurs symboliques propres aux Anlo Ewe (distincts du kente ashanti). Fabrication de filets de peche et construction de pirogues. Performances musicales de danse et de tambour lors des funerailles et des celebrations communautaires. Contes oraux transmis lors de sessions de narration accompagnees de tambours. Comme les autres locuteurs gbe (éwé, fon, aja), la tradition orale s'appuie sur un large corpus de proverbes, documenté par la phonologie comparative des langues gbe (Capo, 1991).",
+      "artsAndMusic": "Le kente anlo ewe se distingue du kente ashanti par ses motifs géométriques et les significations de ses couleurs. Les artisans fabriquent aussi des filets de pêche et des pirogues. La musique, les tambours et la danse accompagnent les funérailles et les fêtes de la communauté. Les contes sont transmis lors de séances de narration accompagnées de tambours. Les proverbes occupent une place importante dans les traditions orales des locuteurs gbe, dont les Éwé, les Fon et les Aja (Capo, 1991).",
       "spiritualities": "Religion centree sur le Dieu supreme Mawu (Mawuga Kitikata), omnipresent et sans sanctuaire ni ceremonie dedies. Divinites intermediaires : Yewe (dieu du tonnerre et de l'eclair), Afa (dieu de la divination et du destin, frere cadet de Yewe), Eda, Nana, Mami Wata. Le Vodu (Vodun) est pratique par une minorite, surtout les plus ages. Le christianisme est present partout, coexistant avec les pratiques spirituelles traditionnelles. Mami Wata, citée ici parmi les divinités intermédiaires, est une figure régionale et non une divinité proprement anlo : elle tient son nom de l'anglais approximatif parlé dans les comptoirs de la côte, mammy water, « la mère des eaux », et son culte est attesté dans une vingtaine de pays africains ainsi que dans les diasporas atlantiques."
     },
     "historicalRole": {
@@ -88,7 +88,8 @@
       {
         "title": "Modern Ghana - The Anlo Kingdom: A Tapestry of Tradition, Unity, and Civic Wisdom",
         "url": "https://www.modernghana.com/news/1448953/the-anlo-kingdom-a-tapestry-of-tradition-unity.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Richard Hodges - Introduction to Anlo-Ewe Culture",
@@ -98,30 +99,261 @@
       {
         "title": "Joshua Project - Ewe people group",
         "url": "https://joshuaproject.net/people_groups/11169",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Modern Ghana - The Rich History, Cultural Heritage, and Festivities of the Anlo People, 2025",
         "url": "https://www.modernghana.com/news/1384172/the-rich-history-cultural-heritage-and-festiviti.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Henry John Drewal, Mami Wata: Arts for Water Spirits in Africa and Its Diasporas",
         "url": "https://fowler.ucla.edu/exhibitions/mami-wata-arts-for-water-spirits-in-africa-and-its-diasporas/",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Monographie et exposition du Fowler Museum, UCLA, 2008, commissaire invité Henry John Drewal ; consultée le 10 septembre 2026."
       },
       {
         "title": "Alex van Stipriaan, Watramama/Mami Wata: Three Centuries of Creolization of a Water Spirit in West Africa, Suriname and Europe",
         "url": "https://brill.com/abstract/journals/mata/27/1/article-p321_321.xml",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Revue Matatu, volumes 27-28, 2003 ; travail universitaire indépendant de celui de Drewal, consulté le 10 septembre 2026."
       },
       {
         "title": "Capo, Hounkpati B. C. (1991) – A Comparative Phonology of Gbe. Foris Publications",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Classification comparative interne des langues gbe (éwé, fon, aja, mina, gen)."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Anlo désigne un peuple ewe de la côte sud-est du Ghana, autour d'Anloga et de Keta, qui se nomme lui-même Anlo. D'autres noms existent : Anglo, une graphie du XIXe siècle, et Awuna, le nom anglais de l'époque coloniale. On ne sait pas avec certitude d'où vient le nom Anlo : les sources savantes que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Anlo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ewe",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple ewe et de son pays, autour d'Anloga.",
+        "periodLabel": "Écrit dès 1857",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Anlo désigne à la fois un peuple ewe, son pays côtier et son parler. Les sources savantes que nous avons lues ne disent pas d'où il vient ; on ne sait pas avec certitude ce qu'il voulait dire d'abord.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Schlüssel zur Ewe-Sprache",
+                "author": "J. B. Schlegel",
+                "year": 1857,
+                "url": "https://archive.org/details/10589261bsb",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. VII",
+                "notes": "Brême, W. Valett, 1857, lu dans l'exemplaire numérisé sur archive.org. Le linguiste décrit le parler anlo comme le cinquième dialecte de l'ewe."
+              },
+              {
+                "title": "Gender, Ethnicity, and Social Change on the Upper Slave Coast: A History of the Anlo-Ewe",
+                "author": "Sandra E. Greene",
+                "year": 1996,
+                "url": "https://archive.org/details/upperslavecoastanloewe",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Portsmouth et Londres, Heinemann et James Currey, 1996. Lu dans une copie non officielle mise en ligne sur archive.org. L'ouvrage entier traite du peuple et du pays anlo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1575,
+              "to": 1650,
+              "label": "Fin du XVIe siècle ou première moitié du XVIIe"
+            },
+            "era": "polity",
+            "statement": "Le peuple anlo n'est pas encore installé sur la côte : les Ewe quittent alors Notsie en deux groupes, et celui du Sud, d'où sortiront les Anlo et les Tongu, se dirige vers la mer, selon l'historien A. A. Boahen.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
+                "author": "A. A. Boahen",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 446",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Anlo apparaît par écrit, sous la forme « Aṅlo », chez le missionnaire J. B. Schlegel, qui décrit le parler du pays anlo, dans la partie ouest de la Côte des Esclaves. Il ajoute que la ville d'Anlo est le siège du roi. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Aṅlo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Schlüssel zur Ewe-Sprache",
+                "author": "J. B. Schlegel",
+                "year": 1857,
+                "url": "https://archive.org/details/10589261bsb",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. VII et p. XVI",
+                "notes": "Brême, W. Valett, 1857, lu dans l'exemplaire numérisé sur archive.org. Titre : « dargeboten in den grammatischen Grundzügen des Aṅlo-Dialekts »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Anglo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une graphie du nom Anlo au XIXe siècle.",
+        "periodLabel": "XIXe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1855,
+              "to": 1855,
+              "label": "Article publié en 1855"
+            },
+            "era": "polity",
+            "statement": "Le nom Anglo figure dans le titre d'un article de la Mission de l'Allemagne du Nord, « Die Unruhen im Anglo-Gebiet », les troubles du pays anglo, que cite l'historienne Sandra E. Greene. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Anglo-Gebiet",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Gender, Ethnicity, and Social Change on the Upper Slave Coast: A History of the Anlo-Ewe",
+                "author": "Sandra E. Greene",
+                "year": 1996,
+                "url": "https://archive.org/details/upperslavecoastanloewe",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141, note, et p. 191",
+                "notes": "Portsmouth et Londres, Heinemann et James Currey, 1996. Lu dans une copie non officielle mise en ligne sur archive.org. L'article cité est paru dans la revue de la Norddeutsche Missionsgesellschaft en 1855."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Anglo apparaît aussi chez J. B. Schlegel, dans une phrase d'exemple où l'on emmène des garçons « nach Anglo ».",
+            "formAsWritten": "Anglo",
+            "sources": [
+              {
+                "title": "Schlüssel zur Ewe-Sprache",
+                "author": "J. B. Schlegel",
+                "year": 1857,
+                "url": "https://archive.org/details/10589261bsb",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 240",
+                "notes": "Brême, W. Valett, 1857, lu dans l'exemplaire numérisé sur archive.org. Exemple de grammaire en ewe traduit en allemand."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Awuna",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom anglais du pays anlo à l'époque coloniale.",
+        "periodLabel": "XVIIIe-XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1769,
+              "to": 1769,
+              "label": "1769"
+            },
+            "era": "polity",
+            "statement": "Le nom Awuna a une forme proche, Augna, dans les archives de la compagnie danoise de Guinée de 1769, qui désignent ainsi Anloga, selon l'historienne Sandra E. Greene. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Augna [Anloga]",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Gender, Ethnicity, and Social Change on the Upper Slave Coast: A History of the Anlo-Ewe",
+                "author": "Sandra E. Greene",
+                "year": 1996,
+                "url": "https://archive.org/details/upperslavecoastanloewe",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 58",
+                "notes": "Portsmouth et Londres, Heinemann et James Currey, 1996. Lu dans une copie non officielle mise en ligne sur archive.org. Greene cite et traduit des lettres danoises de 1769 conservées à Copenhague ; elle précise entre crochets qu'Augna est Anloga."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1788,
+              "to": 1788,
+              "label": "Lettres publiées en 1788"
+            },
+            "era": "polity",
+            "statement": "Le nom Awuna a la forme Augna chez Paul Erdmann Isert, qui écrit que la capitale porte le nom de la nation.",
+            "formAsWritten": "Augna",
+            "sources": [
+              {
+                "title": "Reise nach Guinea und den Caribäischen Inseln in Columbien, in Briefen an seine Freunde beschrieben",
+                "author": "Paul Erdmann Isert",
+                "year": 1788,
+                "url": "https://archive.org/details/bub_gb_e0VyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 65",
+                "notes": "1788, lu dans l'exemplaire numérisé sur archive.org. Isert accompagne l'armée que les Danois mènent contre ce pays."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "era": "colonial",
+            "statement": "Le nom Awuna est celui qu'emploie Alfred Burdon Ellis pour le pays côtier qui va de la Volta jusqu'à l'est de Keta, avec les îles et la rive nord de la lagune.",
+            "sources": [
+              {
+                "title": "The Ewe-speaking Peoples of the Slave Coast of West Africa",
+                "author": "Alfred Burdon Ellis",
+                "year": 1890,
+                "url": "https://archive.org/details/ewespeakingpeop00elligoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5-6",
+                "notes": "Londres, Chapman and Hall, 1890, lu dans l'exemplaire numérisé sur archive.org."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

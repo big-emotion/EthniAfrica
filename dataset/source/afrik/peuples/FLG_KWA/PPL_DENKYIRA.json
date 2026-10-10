@@ -77,12 +77,14 @@
       {
         "title": "Upper Denkyira West – Citypopulation.de",
         "url": "https://www.citypopulation.de/en/ghana/admin/central/0217__upper_denkyira_west/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Ghana Statistical Service, Population and Housing Census 2021",
         "url": "https://census2021.statsghana.gov.gh",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Oral Traditions of Denkyira – in The Akan People: A Documentary History, Markus Wiener Publishers",

@@ -4,8 +4,459 @@
   "nameEn": "Togo",
   "nameOfficial": "République togolaise (Republic of Togo)",
   "summary": "Le Togo doit son nom à Togoville, village au bord du lac Togo : « au-delà de l'eau », en éwé. Protectorat allemand, puis mandat français après 1914, le pays a gardé une frontière qui coupe en deux l'aire éwé. Ewe, Kabyè, Mina et Gurma y font se rencontrer côte et savane.",
-  "etymology": "Le nom \"Togo\" vient de \"Togoville\" (anciennement \"Togodo\"), un village situé sur les rives du lac Togo. Le terme \"Togo\" signifie \"au-delà de la rivière\" ou \"au-delà de l'eau\" en langue ewe. Le nom \"Togo\" a été officialisé par les colonisateurs allemands à la fin du XIXe siècle lors de la création de la colonie du Togoland.",
+  "etymology": "Le nom \"Togo\" viendrait de \"Togoville\" (anciennement \"Togodo\"), un village situé sur les rives du lac Togo. Le terme \"Togo\" voudrait dire \"au-delà de la rivière\" ou \"au-delà de l'eau\" en langue ewe. Le nom \"Togo\" a été officialisé par les colonisateurs allemands à la fin du XIXe siècle lors de la création de la colonie du Togoland.",
   "nameOriginActor": "Le nom \"Togo\" vient de \"Togoville\" (anciennement \"Togodo\"), nommé par les peuples locaux (Ewe). Le nom \"Togo\" a été officialisé par les colonisateurs allemands à la fin du XIXe siècle lors de la création de la colonie du Togoland.",
+  "nameHistory": {
+    "summary": "Le nom Togo désigne un pays d'Afrique de l'Ouest, la République togolaise, qui porte le nom d'une localité au bord du lac Togo. Le pays a d'abord été appelé Togoland sous la domination allemande, puis partagé entre un Togo britannique et un Togo français. Les sources ne s'accordent pas sur le sens premier du nom Togo ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Togo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ewe",
+        "namedBy": null,
+        "shortLine": "Le nom d'une localité au bord du lac Togo, étendu en 1884 au protectorat allemand puis à l'État.",
+        "periodLabel": "Écrit dès 1884 ; nom de l'État depuis 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": null,
+              "label": "Depuis le 27 avril 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Togo est celui de l'État indépendant depuis le 27 avril 1960, jour où l'indépendance est proclamée, avec Sylvanus Olympio comme premier président, selon Jean Suret-Canale et A. Adu Boahen. Le pays reprend ainsi la majeure partie de l'ancienne colonie allemande du Togo, selon le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 7 : L'Afrique occidentale",
+                "author": "Jean Suret-Canale et A. Adu Boahen",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 202",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui. Le Togo britannique rejette l'unité au référendum du 9 mai 1956 ; le Togo reçoit en juillet 1956 le statut de « République autonome » et son indépendance est proclamée le 27 avril 1960."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui. Le tableau 5.1, « Chronologie de l'indépendance africaine », donne pour le Togo le 27 avril 1960, puissance coloniale la France, « Tutelle de l'ONU. Majeure partie de l'ancienne colonie allemande du Togo », et range le Togo britannique avec le Ghana, indépendant le 6 mars 1957."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Togo désigne aujourd'hui l'État ouest-africain. Il a d'abord désigné une localité au bord de la lagune de Togo, puis la possession allemande, selon le dictionnaire ewe de Diedrich Westermann. Son sens premier reste discuté.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Wörterbuch der Ewe-Sprache, I : Ewe-Deutsch",
+                "author": "Diedrich Westermann",
+                "year": 1905,
+                "url": "https://archive.org/details/wrterbuchderewe01westgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 479",
+                "notes": "Berlin, Dietrich Reimer, 1905, lu dans l'exemplaire numérisé. Entrée « Tógo » : 1. nom d'une localité au bord de la lagune de Togo (Gbaga) ; de là, 2. nom de la possession allemande Togo. Le dictionnaire ne donne pas de sens à ce nom."
+              },
+              {
+                "title": "Culture of Togo, dans Countries and Their Cultures",
+                "author": "Benjamin Nicholas Lawrance",
+                "year": null,
+                "url": "https://www.everyculture.com/To-Z/Togo.html",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article d'encyclopédie signé par un historien du pays ewe, lu en ligne le 10 octobre 2026. Partie « Identification » : le Togo tient son nom de la ville de Togoville, où Gustav Nachtigal signa un traité avec Mlapa III en 1884, et Togo serait un mot ewe signifiant « lac » ou « lagune »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "Juillet 1956"
+            },
+            "era": "colonial",
+            "statement": "Le nom Togo est celui d'une « République autonome » à partir de juillet 1956, statut que reçoit la partie française du territoire encore sous tutelle, selon Jean Suret-Canale et A. Adu Boahen.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 7 : L'Afrique occidentale",
+                "author": "Jean Suret-Canale et A. Adu Boahen",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 202",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui. Le Togo britannique rejette l'unité au référendum du 9 mai 1956 ; le Togo reçoit en juillet 1956 le statut de « République autonome » et son indépendance est proclamée le 27 avril 1960."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Togo est, pour le linguiste Diedrich Westermann, d'abord celui d'une localité au bord de la lagune de Togo, appelée Gbaga en ewe ; c'est de là qu'il passe à la possession allemande, selon son dictionnaire ewe-allemand.",
+            "sources": [
+              {
+                "title": "Wörterbuch der Ewe-Sprache, I : Ewe-Deutsch",
+                "author": "Diedrich Westermann",
+                "year": 1905,
+                "url": "https://archive.org/details/wrterbuchderewe01westgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 479",
+                "notes": "Berlin, Dietrich Reimer, 1905, lu dans l'exemplaire numérisé. Entrée « Tógo » : 1. nom d'une localité au bord de la lagune de Togo (Gbaga) ; de là, 2. nom de la possession allemande Togo. Le dictionnaire ne donne pas de sens à ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "5 juillet 1884"
+            },
+            "era": "colonial",
+            "statement": "Le nom Togo figure dans l'accord du 5 juillet 1884, qui place sous protectorat allemand « le territoire du roi de Togo », entre Porto Seguro et Lomé, tel que le résume le recueil de traités d'Edward Hertslet. C'est la plus ancienne trace de ce nom que le projet connaît. La localité de Togo et son roi existaient déjà avant cet accord.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Gustav Nachtigal",
+                "role": "consul général allemand, qui conclut les traités de protectorat sur cette côte"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Map of Africa by Treaty, troisième édition, vol. II, no 212 : Notes on German Protectorates on the West Coast of Africa, 1884-1890",
+                "author": "Edward Hertslet",
+                "year": 1909,
+                "url": "https://archive.org/details/mapofafricabytre02hert",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 693",
+                "notes": "Londres, His Majesty's Stationery Office, 1909, lu dans l'exemplaire numérisé. Sous le titre « Togoland » : le 5 juillet 1884, un accord entre l'Allemagne et Togo place sous protectorat allemand « the territory of the King of Togo », de la frontière est de Porto Seguro à la frontière ouest de Lomé. La note allemande du 15 octobre 1884, reproduite à la même page, nomme « the Togo tract » et les traités conclus par le docteur Nachtigal."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "Proposée en 1885"
+            },
+            "era": "colonial",
+            "statement": "Le nom Togo signifierait « au-delà de la lagune », selon le journaliste allemand Hugo Zöller, qui donne ce sens sans dire de qui il le tient.",
+            "hypothesisGroup": "sens du nom Togo",
+            "sources": [
+              {
+                "title": "Das Togoland und die Sklavenküste",
+                "author": "Hugo Zöller",
+                "year": 1885,
+                "url": "https://archive.org/details/dastogolandundd00zlgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 162",
+                "notes": "Berlin et Stuttgart, W. Spemann, 1885, lu dans l'exemplaire numérisé. Page 162 : « der Name Togo bedeutet „jenseit der Lagune“ », le nom Togo signifie « au-delà de la lagune »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Togo viendrait d'un mot ewe signifiant « lac » ou « lagune », selon l'historien Benjamin N. Lawrance.",
+            "hypothesisGroup": "sens du nom Togo",
+            "sources": [
+              {
+                "title": "Culture of Togo, dans Countries and Their Cultures",
+                "author": "Benjamin Nicholas Lawrance",
+                "year": null,
+                "url": "https://www.everyculture.com/To-Z/Togo.html",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article d'encyclopédie signé par un historien du pays ewe, lu en ligne le 10 octobre 2026. Partie « Identification » : le Togo tient son nom de la ville de Togoville, où Gustav Nachtigal signa un traité avec Mlapa III en 1884, et Togo serait un mot ewe signifiant « lac » ou « lagune »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1699,
+              "label": "XVIe et XVIIe siècles"
+            },
+            "era": "polity",
+            "before": true,
+            "statement": "Avant le nom Togo, les commerçants européens partagent la côte de la Guinée inférieure en trois : la Côte-de-l'Ivoire, la Côte-de-l'Or et la Côte-des-Esclaves, selon A. A. Boahen. C'est sur cette dernière que se trouvent Togo et Lomé, selon Hugo Zöller.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
+                "author": "A. A. Boahen",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 452",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot. Les commerçants européens des XVIe et XVIIe siècles divisent la côte de la Guinée inférieure en Côte-de-l'Ivoire, Côte-de-l'Or et Côte-des-Esclaves."
+              },
+              {
+                "title": "Das Togoland und die Sklavenküste",
+                "author": "Hugo Zöller",
+                "year": 1885,
+                "url": "https://archive.org/details/dastogolandundd00zlgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 85",
+                "notes": "Berlin et Stuttgart, W. Spemann, 1885, lu dans l'exemplaire numérisé. Page 85 : l'accord de protection du 5 juillet 1884 a été conclu avec le porteur de canne du roi Mlapa, mort entre-temps, et les autres chefs du pays de Togo ; l'auteur propose d'appeler désormais « Togo-Land » tout le territoire sous protection allemande de la Côte des Esclaves, plutôt que de parler de Bagida ou de Lomé, et ajoute que la forme « Togno-Gebiet » vient d'une erreur d'écriture."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1500,
+              "label": "Vers 1500"
+            },
+            "era": "polity",
+            "before": true,
+            "statement": "Avant le nom Togo, les Ewe du Togo et du Ghana actuels vivent encore réunis à Notsie, leur troisième foyer ancestral, dans l'actuel territoire du Togo ; ils s'en dispersent entre 1500 et 1800, selon A. A. Boahen.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
+                "author": "A. A. Boahen",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 445",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot. Les Ewe n'avaient pas encore commencé leurs migrations et étaient concentrés dans leur troisième foyer ancestral de Nuatsie, ou Notsie, dans le territoire actuel du Togo, après Tado et Ketu ; leur dispersion s'étend entre 1500 et 1800."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Togoland",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Protectorat allemand, de 1884 à la première guerre mondiale",
+        "accounts": [
+          {
+            "period": {
+              "from": 1914,
+              "to": 1914,
+              "label": "1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Togoland cesse de désigner une colonie allemande pendant la première guerre mondiale : Lomé est occupée par les Alliés peu après l'ouverture des hostilités, puis le territoire est divisé entre la France et la Grande-Bretagne, selon Michael Crowder.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 12 : La première guerre mondiale et ses conséquences",
+                "author": "Michael Crowder",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 313 et 335",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen. Lomé, au Togo, est occupée peu après l'ouverture des hostilités (p. 313) ; l'Allemagne est remplacée par la France et la Grande-Bretagne au Togo, divisé sans égard pour les Ewe (p. 335)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "1909"
+            },
+            "era": "colonial",
+            "statement": "Le nom Togoland sert de titre, en anglais, à la notice sur l'accord de protectorat du 5 juillet 1884 dans le recueil de traités d'Edward Hertslet, qui parle aussi de « German Protectorate of Togo ».",
+            "formAsWritten": "Togoland",
+            "sources": [
+              {
+                "title": "The Map of Africa by Treaty, troisième édition, vol. II, no 212 : Notes on German Protectorates on the West Coast of Africa, 1884-1890",
+                "author": "Edward Hertslet",
+                "year": 1909,
+                "url": "https://archive.org/details/mapofafricabytre02hert",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 693",
+                "notes": "Londres, His Majesty's Stationery Office, 1909, lu dans l'exemplaire numérisé. Sous le titre « Togoland » : le 5 juillet 1884, un accord entre l'Allemagne et Togo place sous protectorat allemand « the territory of the King of Togo », de la frontière est de Porto Seguro à la frontière ouest de Lomé. La note allemande du 15 octobre 1884, reproduite à la même page, nomme « the Togo tract » et les traités conclus par le docteur Nachtigal."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "1885"
+            },
+            "era": "colonial",
+            "statement": "Le nom Togoland apparaît par écrit sous la forme Togo-Land chez le journaliste allemand Hugo Zöller, qui propose de l'employer pour tout le territoire sous protection allemande, plutôt que les noms de Bagida ou de Lomé ; il note que la forme Togno-Gebiet vient d'une erreur d'écriture. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays de Togo existait déjà avant lui.",
+            "formAsWritten": "Togo-Land",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Mlapa",
+                "role": "roi de Togo, mort avant l'accord de 1884 selon Hugo Zöller"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Das Togoland und die Sklavenküste",
+                "author": "Hugo Zöller",
+                "year": 1885,
+                "url": "https://archive.org/details/dastogolandundd00zlgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 85",
+                "notes": "Berlin et Stuttgart, W. Spemann, 1885, lu dans l'exemplaire numérisé. Page 85 : l'accord de protection du 5 juillet 1884 a été conclu avec le porteur de canne du roi Mlapa, mort entre-temps, et les autres chefs du pays de Togo ; l'auteur propose d'appeler désormais « Togo-Land » tout le territoire sous protection allemande de la Côte des Esclaves, plutôt que de parler de Bagida ou de Lomé, et ajoute que la forme « Togno-Gebiet » vient d'une erreur d'écriture."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Togo britannique",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Après la première guerre mondiale, jusqu'au 6 mars 1957",
+        "accounts": [
+          {
+            "period": {
+              "from": 1957,
+              "to": 1957,
+              "label": "6 mars 1957"
+            },
+            "era": "modern",
+            "statement": "Le nom Togo britannique désigne une partie de l'ancienne colonie allemande du Togo, territoire sous tutelle de l'ONU, qui entre dans le Ghana à son indépendance, selon le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui. Le tableau 5.1, « Chronologie de l'indépendance africaine », donne pour le Togo le 27 avril 1960, puissance coloniale la France, « Tutelle de l'ONU. Majeure partie de l'ancienne colonie allemande du Togo », et range le Togo britannique avec le Ghana, indépendant le 6 mars 1957."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "9 mai 1956"
+            },
+            "era": "colonial",
+            "statement": "Le nom Togo britannique est celui du territoire qui rejette l'unité avec le Togo français au référendum du 9 mai 1956 : 58 % des voix approuvent son rattachement à la Côte-de-l'Or, selon Jean Suret-Canale et A. Adu Boahen.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 7 : L'Afrique occidentale",
+                "author": "Jean Suret-Canale et A. Adu Boahen",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 202",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui. Le Togo britannique rejette l'unité au référendum du 9 mai 1956 ; le Togo reçoit en juillet 1956 le statut de « République autonome » et son indépendance est proclamée le 27 avril 1960."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1933,
+              "to": 1933,
+              "label": "1933"
+            },
+            "era": "colonial",
+            "statement": "Le nom Togo britannique figure, à côté du Togo français, dans un tableau de la production de cacao de 1933 repris du Royal Institute of International Affairs, selon Maxwell Owusu. Ce territoire sous mandat est alors administré comme une partie de la Côte-de-l'Or, selon Michael Crowder.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 12 : L'agriculture et le développement rural",
+                "author": "Maxwell Owusu",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 373, tableau 12.7",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui. Le tableau 12.7, repris du Royal Institute of International Affairs (1937, p. 290), donne pour le cacao de 1933 la part du « Togo britannique » (1,9) et celle du « Togo français » (1,1)."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 4 : L'Afrique sous domination britannique et belge",
+                "author": "Michael Crowder",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 105",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui. Le territoire du Togo sous mandat britannique était intégré administrativement à la Côte-de-l'Or."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Togo français",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Après la première guerre mondiale, jusqu'au 27 avril 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1933,
+              "to": 1933,
+              "label": "1933"
+            },
+            "era": "colonial",
+            "statement": "Le nom Togo français figure, à côté du Togo britannique, dans un tableau de la production de cacao de 1933 repris du Royal Institute of International Affairs, selon Maxwell Owusu. Après 1945, cette partie française du Togo devient un territoire sous tutelle doté d'un statut à part, selon Jean Suret-Canale et A. Adu Boahen.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 12 : L'agriculture et le développement rural",
+                "author": "Maxwell Owusu",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 373, tableau 12.7",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui. Le tableau 12.7, repris du Royal Institute of International Affairs (1937, p. 290), donne pour le cacao de 1933 la part du « Togo britannique » (1,9) et celle du « Togo français » (1,1)."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 7 : L'Afrique occidentale",
+                "author": "Jean Suret-Canale et A. Adu Boahen",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 196",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui. « La partie française du Togo, territoire sous tutelle, est dotée d'un statut à part. »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -149,22 +600,26 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Togo",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Togo",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements togolais",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples du Togo",
@@ -179,12 +634,14 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Togo",
         "url": "https://www.unfpa.org/data/world-population/TG",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

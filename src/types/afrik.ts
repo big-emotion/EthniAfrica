@@ -7,11 +7,12 @@
  * - New sections can be added to TXT files without schema migration
  */
 
-import type { SourceTierState } from "@/types/sources";
+import type { SourceKind, SourceTierState } from "@/types/sources";
 import type { PersonId, PersonPeopleLink } from "@/types/persons";
 import type { TranslationLocale } from "@/lib/i18n/translationLocale";
 import type { SearchAnswer } from "@/lib/search/answer";
 import type { NamingProjection } from "@/lib/search/naming";
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 
 // ==========================================
 // STABLE IDENTIFIERS (IMMUTABLE)
@@ -87,6 +88,9 @@ export interface Country {
   etymology?: string;
   nameOriginActor?: string; // Person/people/administration who named it
 
+  /** The fiche's shared name-history block (REQ-196), when it declares one. */
+  nameHistory?: NameHistory;
+
   // Variable content stored in JSONB (evolutionary)
   content: CountryContent;
 
@@ -124,6 +128,9 @@ export interface LanguageFamily {
    * derived, never the fiche's own declared `content.distribution` (REQ-119).
    */
   footprintByCountry?: Record<CountryId, number>;
+
+  /** The fiche's shared name-history block (REQ-196), when it declares one. */
+  nameHistory?: NameHistory;
 
   // Variable content stored in JSONB (evolutionary)
   content: LanguageFamilyContent;
@@ -167,6 +174,9 @@ export interface People {
   // Editorial classification status (migration 009)
   classificationStatus?: ClassificationStatus | null;
 
+  /** The fiche's shared name-history block (REQ-196), when it declares one. */
+  nameHistory?: NameHistory;
+
   // Variable content stored in JSONB (evolutionary)
   content: PeopleContent;
 
@@ -198,6 +208,8 @@ export interface FicheSource {
   url: string | null;
   tier: SourceTierState;
   notes?: string;
+  /** What kind of work it is. Few fiches declare it yet; the reader sees it when present. */
+  source_kind?: SourceKind;
 }
 
 /**
@@ -794,6 +806,43 @@ export type SearchHitKind =
   "people" | "country" | "languageFamily" | "person" | "patronyme" | "quiz";
 
 /**
+ * A place search hit (REQ-196), ranked by afrik_search_places (migration 100)
+ * on its filed name and every name its nameHistory records.
+ */
+export interface RankedPlace {
+  id: string;
+  nameMain: string;
+  placeType: string;
+  countryId: string;
+  summary: string;
+  nameHistory: NameHistory | null;
+  relevance: number;
+  exactMatch: boolean;
+  normalizedScore: number;
+}
+
+/**
+ * A word search hit (REQ-196), ranked by afrik_search_words (migration 104)
+ * on its filed name and every name its nameHistory records. A word fiche
+ * exists only to tell the history of the word, so nameHistory is never null.
+ */
+export interface RankedWord {
+  id: string;
+  nameMain: string;
+  wordLanguage: string;
+  definition: string;
+  /** relatedSubjects, gaps and sources, as the fiche writes them. */
+  content: Record<string, unknown>;
+  nameHistory: NameHistory;
+  relevance: number;
+  exactMatch: boolean;
+  normalizedScore: number;
+  /** Set by the search service, as on every other answered kind. */
+  naming?: NamingProjection;
+  answer?: SearchAnswer;
+}
+
+/**
  * One row of the canonical cross-kind ranking.
  *
  * The grouped arrays answer "what did this query find among peoples?"; this
@@ -867,6 +916,18 @@ export interface FtsSearchResponse {
   patronymes: RankedPatronyme[];
   quizzes: RankedQuizQuestion[];
   languages: RankedLanguage[];
+  /**
+   * Places (REQ-196), a grouped facet like languages: not folded into
+   * `results`. Optional because a payload built before places existed has none.
+   */
+  places?: RankedPlace[];
+  placesTotal?: number;
+  /**
+   * Word fiches (REQ-196), a grouped facet like places. Optional for the
+   * same reason.
+   */
+  words?: RankedWord[];
+  wordsTotal?: number;
   /** Every hit in the selected main or quiz stream, ordered on `normalizedScore`. */
   results: RankedSearchHit[];
   /** Corpus-wide match counts, not the size of the returned page. */

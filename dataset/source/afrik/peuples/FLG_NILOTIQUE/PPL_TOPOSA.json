@@ -8,7 +8,7 @@
       "mainName": "Toposa",
       "selfAppellation": "Toposa",
       "exonyms": ["Taposa", "Topotha", "Akara", "Kare", "Kumi"],
-      "originOfExonyms": "Le terme Toposa (ou Taposa) est à la fois l'endonyme et l'exonyme. Les variantes Topotha, Akara, Kare et Kumi sont des appellations utilisées par des voisins ou des administrations coloniales. Le terme Topotha a été utilisé par certains administrateurs britanniques de l'Équatoria oriental. Dans les sources anciennes, les Toposa sont parfois confondus avec les Turkana ou d'autres groupes du cluster Karamoja.",
+      "originOfExonyms": "Le peuple se nomme Toposa ou Taposa, des noms également employés à l'extérieur. Des voisins ou des administrations coloniales utilisent aussi Topotha, Akara, Kare et Kumi. Certains administrateurs britanniques de l'Équatoria oriental employaient Topotha. Les sources anciennes confondent parfois les Toposa avec les Turkana ou d'autres groupes de l'ensemble Karamoja.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Toposa est utilisé de manière cohérente par les Toposa eux-mêmes, par l'administration du Soudan du Sud et dans la littérature scientifique. Depuis l'indépendance du Soudan du Sud en 2011, les Toposa sont un groupe ethno-politique actif dans l'État de l'Équatoria oriental (Greater Kapoeta). L'ancien gouverneur de l'Équatoria oriental, le général Louis Lobong Lojore (en poste depuis mai 2010), est lui-même Toposa.",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -97,17 +97,20 @@
       {
         "title": "101 Last Tribes — Toposa",
         "url": "https://www.101lasttribes.com/tribes/toposa2.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Toposa in South Sudan",
         "url": "https://joshuaproject.net/people_groups/15563/OD",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Tornay, Serge. 1981. Générations, classes d'âge et structures de parenté. Systèmes de Pensée en Afrique Noire",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "France Leclerc — The Toposa People of South Sudan",
@@ -117,22 +120,26 @@
       {
         "title": "Ethnologue — Toposa (TOQ)",
         "url": "https://www.ethnologue.com/language/toq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Gulliver, P.H. 1958. The Turkana age organization. American Anthropologist 60:900-922",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — South Sudan",
         "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "JSTOR — Generation- and age-set systems with special reference to Toposa and Turkana",
         "url": "https://www.jstor.org/stable/619062",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

@@ -16,7 +16,7 @@
         "Zoghaua",
         "Duguwa (nom utilise dans la chronique royale du Kanem-Bornu, le Girgam)"
       ],
-      "originOfExonyms": "Le terme Zaghawa est un exonyme d'origine arabe, utilise des les premieres sources islamiques du 9e siecle (al-Ya'qubi). Le mot Beri est l'endonyme du peuple, signifiant simplement les personnes ou les gens dans leur propre langue. La langue zaghawa est appelee Beria (beri + a, suffixe de bouche/langue en zaghawa). L'appellation Duguwa dans le Girgam du Kanem-Bornu designe probablement les ancetres zaghawa.",
+      "originOfExonyms": "Zaghawa est un nom arabe donné au peuple de l'extérieur. Il apparaît dès les premières sources islamiques du IXe siècle, chez al-Ya'qubi. Les personnes concernées se nomment Beri, les personnes ou les gens dans leur langue. Elles appellent leur langue Beria : beri est suivi de a, une terminaison qui renvoie à la bouche ou à la langue. Dans le Girgam du Kanem-Bornu, Duguwa désignerait les ancêtres des Zaghawa.",
       "whyProblematic": "L'usage de Zaghawa peut creer une confusion avec le terme englobant Beri qui inclut egalement les Bideyat et les Bertis. Dans le contexte du conflit du Darfour (depuis 2003), le terme Zaghawa est souvent associe a une identite politique et combattante, ce qui simplifie a l'exces une identite ethnique complexe.",
       "contemporaryUsage": "Le terme Beri est l'appellation propre utilisee par le peuple. Zaghawa est utilise dans la litterature academique, les medias internationaux et par les populations arabophones. En politique tchadienne et soudanaise, les Zaghawa/Beri sont un groupe ethnique politiquement influent depuis l'ere du president Idriss Deby (lui-meme Zaghawa).",
       "linguisticFamily": "FLG_SAHARIEN",
@@ -57,7 +57,7 @@
       "religiousAuthority": "Islam sunnite de rite malekite, predominant. Les zaghawa maintiennent des rites pre-islamiques comme le karama (sacrifice rituel d'animaux pour eloigner les mauvais esprits), integre dans la pratique islamique. La confrerie tijaniste est influente dans le Darfour. Les oulémas locaux jouent un role important dans la resolution des conflits et l'administration de la justice."
     },
     "languages": {
-      "mainLanguage": "Zaghawa / Beria (langue zaghawa; endonyme : Beria signifiant langue des Beri)",
+      "mainLanguage": "Zaghawa / Beria (Beria est le nom employé par les locuteurs et signifie langue des Beri)",
       "isoCodes": ["zag"],
       "dialects": [
         "Tuba / Bideyat (clans Biria et Brogat; environ 15 000 locuteurs; nord-est du Tchad, Ennedi)",
@@ -110,17 +110,20 @@
       {
         "title": "Joshua Project — Zaghawa in Libya",
         "url": "https://joshuaproject.net/people_groups/16080/LY",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Minority Rights Group — Chad ethnic groups",
         "url": "https://minorityrights.org/country/chad/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Ethnologue — Zaghawa (ZAG)",
         "url": "https://www.ethnologue.com/language/zag/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Daoud Hari — The Translator. Random House, 2008",

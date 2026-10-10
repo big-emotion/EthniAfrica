@@ -36,12 +36,14 @@
         "title": "Glottolog 5.3 — Bagirmi (bagi1246)",
         "url": "https://glottolog.org/resource/languoid/id/bagi1246",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Glottolog name: Bagirmi; classification includes Central Sudanic. Les dialectes listés sont les sous-languoids que Glottolog rattache à bagi1246, hors languoids portant leur propre code ISO 639-3."
       },
       {
         "title": "S. P. Reyna, Bagirmi, Encyclopedia of World Cultures, Gale",
         "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bagirmi",
         "tier": "referenced",
+        "source_kind": "encyclopedia",
         "notes": "Notice consultée sur encyclopedia.com : « Bagirmi » vient de l'arabe bagar (bétail) et mia (cent) selon une tradition ; les Barma ont formé et dominé l'État, les Arabes en étaient les habitants les plus nombreux et les Peuls y comptaient dans la vie religieuse. La notice ne date pas cette tradition."
       }
     ]

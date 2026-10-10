@@ -106,27 +106,32 @@
       {
         "title": "Busanga in Burkina Faso – Joshua Project 2025",
         "url": "https://joshuaproject.net/people_groups/11042/UV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Busanga people group in all countries – Joshua Project 2025",
         "url": "https://joshuaproject.net/people_groups/11042",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Daniel McFarland, Historical Dictionary of Upper Volta, Metuchen, Scarecrow Press, 1978",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue, Bissa [bib] – SIL International",
         "url": "https://www.ethnologue.com/language/bib/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Bissa people",
         "url": "http://www.101lasttribes.com/tribes/bissa.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Discover Burkina Faso — Culture des Bissa",
@@ -141,7 +146,122 @@
       {
         "title": "Facebook — A Rich Cultural Heritage: The Bissa People",
         "url": "https://www.facebook.com/engrkogwuonyepatrick.patsallyonyeka/videos/949872800427144/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bissa désigne un peuple de langue mandé du centre-est du Burkina Faso, au sud-est du pays mossi, qui se nomme lui-même Bissa. Un autre nom, Busansi, figure à côté du sien dans les sources sur le pays mossi. Nous n'avons pas trouvé de source qui explique l'origine de ces noms.",
+    "names": [
+      {
+        "nameText": "Bissa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bib",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple de langue mandé du Burkina Faso.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage des historiens"
+            },
+            "era": "modern",
+            "statement": "Le nom Bissa, que Michel Izard écrit Bisa, désigne avec celui des Samo l'une des deux principales populations de langue mandé du pays mossi ; ces deux peuples, aujourd'hui séparés, ont peut-être une origine commune, selon lui. Nous n'avons pas trouvé de source qui explique l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "Michel Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 257",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1799,
+              "label": "XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Bissa désigne au XVIIIe siècle un peuple apparenté aux Samo, dont il se serait séparé après une querelle de clans, et installé au sud-est du Mogho. Il résiste aux royaumes mossi malgré un tribut en captifs à la fin du siècle, selon Michel Izard et Joseph Ki-Zerbo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 397",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Busansi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom des Bissa, attesté sous une forme proche lors du voyage de Binger en 1888.",
+        "periodLabel": "Attesté depuis 1888",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage des historiens"
+            },
+            "era": "modern",
+            "statement": "Le nom Busansi est écrit « Busâse » par Michel Izard, qui le donne entre parenthèses après celui des Bisa.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "Michel Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 257",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "1888, publié en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Busansi apparaît sous une forme proche, « Boussangsi », dans le récit de voyage de Louis-Gustave Binger, qui place le Boussangsi à l'est du Mossi, au-delà de la branche orientale de la Volta. C'est la plus ancienne trace de ce nom que le projet connaît. Le récit ne décrit pas les habitants de ce pays.",
+            "formAsWritten": "Boussangsi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 479",
+                "notes": "Paris, Hachette, 1892, tome 1, récit du voyage de 1887 à 1889 ; lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. Le Mossi touche, à l'est, « au Boussangsi, dont il est séparé par la branche orientale de la Volta »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

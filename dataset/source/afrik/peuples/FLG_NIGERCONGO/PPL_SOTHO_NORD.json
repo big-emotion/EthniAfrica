@@ -15,7 +15,7 @@
         "Marota / Dikgoshi (noms historiques des groupes constituants)",
         "Sepedi (désigne parfois la langue ou le peuple)"
       ],
-      "originOfExonyms": "Pedi désigne à l'origine le clan dominant des Maroteng, dirigeants de la paramountcy Pedi. Par extension, il désigne aujourd'hui l'ensemble des locuteurs de Northern Sotho (Sepedi) en Afrique du Sud. Northern Sotho est le terme officiel adopté par le Parlement sudafricain. Le terme Basotho ba Lebowa rappelle le homeland de l'apartheid. Bapedi signifie littéralement famille du roi.",
+      "originOfExonyms": "Pedi désigne à l'origine le clan dominant des Maroteng, dirigeants de la paramountcy Pedi. Par extension, il désigne aujourd'hui l'ensemble des locuteurs de Northern Sotho (Sepedi) en Afrique du Sud. Northern Sotho est le terme officiel adopté par le Parlement sudafricain. Le terme Basotho ba Lebowa rappelle le homeland de l'apartheid. Bapedi voudrait dire littéralement famille du roi.",
       "whyProblematic": "Sepedi désigne à la fois le dialecte du clan Pedi (sensu stricto) et la langue standard Northern Sotho dans son ensemble (sensu lato). Cette ambiguité cause des confusions dans la littérature académique et officielle. Les locuteurs du lowveld (Lobedu, Pulana, Pai) peuvent ne pas s'identifier comme Pedi. La constitution sud-africaine reconnaît Sepedi comme langue officielle pour l'ensemble du Northern Sotho.",
       "contemporaryUsage": "Le terme Pedi ou Bapedi est le plus couramment utilisé en anglais et dans la vie quotidienne. Sepedi est la désignation officielle de la langue dans la Constitution sud-africaine. La communauté est l'une des plus grandes en Afrique du Sud avec environ 6 millions de locuteurs de Sepedi.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -101,22 +101,26 @@
       {
         "title": "Ethnologue (SIL) — Northern Sotho (nso)",
         "url": "https://www.ethnologue.com/language/nso/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Statistics South Africa — Census 2022 Cultural Dynamics (mars 2025)",
         "url": "https://www.statssa.gov.za",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
-        "title": "South Africa Gateway — Languages of South Africa (2025)",
+        "title": "South Africa Gateway (Mary Alexander) — The languages of South Africa",
         "url": "https://southafrica-info.com/arts-culture/the-languages-of-south-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "PeopleGroups.org — Northern Sotho of South Africa",
         "url": "https://peoplegroups.org/people_groups/pg033365/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Monnig, H.O. — The Pedi. Pretoria: Van Schaik, 1967",
@@ -126,12 +130,14 @@
       {
         "title": "Delius, Peter — The Land Belongs to Us: The Pedi Polity, the Boers and the British in the Nineteenth-Century Transvaal. Berkeley: University of California Press, 1984",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Qiraat Africa — Pedi people of South Africa (2024)",
         "url": "https://qiraatafrican.com/en/14630/pedi-people-of-south-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       }
     ]
   }

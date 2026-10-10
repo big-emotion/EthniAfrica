@@ -12,7 +12,7 @@
         "Usandawe (designation coloniale allemande pour leur territoire)",
         "Sandawi"
       ],
-      "originOfExonyms": "Usandawe est le terme utilise dans les rapports coloniaux allemands pour designer le territoire rocheux habite par le peuple (Pays des Sandawe). Le terme Sandawe lui-meme est utilise a la fois comme auto-designation et comme exonyme dans la litterature scientifique.",
+      "originOfExonyms": "Les rapports coloniaux allemands employaient Usandawe pour le territoire rocheux habité par ce peuple, c'est-à-dire le Pays des Sandawe. Sandawe est à la fois le nom que le peuple se donne et celui qu'emploient les publications de recherche.",
       "whyProblematic": "Le terme Sandawe ne presente pas de probleme particulier d'utilisation contemporaine. Il est accepte par le groupe lui-meme et dans les publications academiques.",
       "contemporaryUsage": "Sandawe est utilise sans ambiguite dans les contextes officiels tanzaniens, les publications linguistiques et les profils ethnographiques internationaux (Joshua Project, Ethnologue).",
       "linguisticFamily": "FLG_KHOISAN",
@@ -76,17 +76,20 @@
       {
         "title": "Sandawe in Tanzania – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/14720",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Sandawe – Britannica, 2026",
         "url": "https://www.britannica.com/topic/Sandawe",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Sandawe language (SAD) – Ethnologue SIL",
         "url": "https://www.ethnologue.com/language/sad/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

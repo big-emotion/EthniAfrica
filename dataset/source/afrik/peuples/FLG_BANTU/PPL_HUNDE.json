@@ -11,11 +11,11 @@
         "Hunde (designation coloniale et administrative)",
         "Kobi (designation alternative)",
         "Rukobi (autre denomination documentee)",
-        "BaHunde (forme plurielle de l'endonyme)"
+        "BaHunde (nom employé par le peuple lui-même, au pluriel)"
       ],
-      "originOfExonyms": "MuHunde designe un individu, BaHunde le collectif. Kobi et Rukobi sont des denominations alternatives utilisees dans certains documents coloniaux et ethnographiques belges. L'exonyme Hunde est la forme contractee de BaHunde utilisee en francais et en anglais.",
+      "originOfExonyms": "MuHunde désigne une personne, et BaHunde le groupe. Kobi et Rukobi apparaissent dans certains documents coloniaux belges et dans des études sur le peuple. Hunde est une forme abrégée de BaHunde utilisée en français et en anglais.",
       "whyProblematic": null,
-      "contemporaryUsage": "Bahunde est l'endonyme prefere. Hunde est utilise dans les documents administratifs et la litterature academique. Kihunde designe la langue.",
+      "contemporaryUsage": "Les personnes concernées préfèrent se nommer Bahunde. Hunde est utilisé dans les documents administratifs et les travaux de recherche. Kihunde désigne la langue.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantou des Grands Lacs (Zone J, groupe JD, Grande Lacs Bantu)",
       "historicalRegion": "Hundeland - hauts plateaux du Nord-Kivu (territoires de Masisi, Rutshuru, Walikale et Nyiragongo), est de la Republique Democratique du Congo",
@@ -108,12 +108,14 @@
       {
         "title": "Joshua Project - Hunde, Kobi in DRC",
         "url": "https://joshuaproject.net/people_groups/12152",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Minority Rights Group - The silent killings",
         "url": "https://minorityrights.org/the-silent-killings/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Rift Valley Institute - Background to conflict in North Kivu",
@@ -128,7 +130,8 @@
       {
         "title": "SIT Digital Collections - Young Adults in North Kivu",
         "url": "https://digitalcollections.sit.edu/cgi/viewcontent.cgi?article=3539&context=capstones",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

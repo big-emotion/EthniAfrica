@@ -8,7 +8,7 @@
       "mainName": "Ghomara",
       "selfAppellation": "Ighomaren",
       "exonyms": ["Ghumara", "Ighmaren"],
-      "originOfExonyms": "Le terme arabe Ghumara (غمارة) est l'exonyme classique utilisé par les géographes arabes médiévaux comme Al-Muqadassi et Yaqut, qui mentionnent un Balad Ghumar dans le Sus septentrional. Le terme berbère Ighmaren est l'endonyme propre.",
+      "originOfExonyms": "Les géographes arabes médiévaux, comme Al-Muqadassi et Yaqut, employaient le nom arabe Ghumara (غمارة). Ils mentionnaient un Balad Ghumar dans le Sus septentrional. Les personnes concernées se nomment Ighmaren en berbère.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Ghomara est utilisé dans les contextes académiques et administratifs marocains. Les habitants se désignent eux-mêmes comme Ighomaren. La plupart des membres de cette communauté parlent aujourd'hui l'arabe marocain au quotidien, même si certains conservent la langue ghomarie.",
       "linguisticFamily": "FLG_BERBERE",
@@ -87,22 +87,26 @@
       {
         "title": "Ethnologue — Ghomara (gho)",
         "url": "https://www.ethnologue.com/language/gho/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Ghomara (ghom1257)",
         "url": "https://glottolog.org/resource/languoid/id/ghom1257",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Berber, Ghomara in Morocco",
         "url": "https://joshuaproject.net/people_groups/11882",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "IRCAM (Institut Royal de la Culture Amazighe) — Études amazighes du Rif",
         "url": "https://www.ircam.ma/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "academic"
       },
       {
         "title": "Ibn Khaldoun, Abd ar-Rahman. Kitab al-Ibar (Histoire des Berbères). 14e siècle",

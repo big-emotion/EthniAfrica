@@ -93,7 +93,8 @@
       {
         "title": "Consulado de Guinea-Bissau en Malaga. Bijago culture, traditions, customs and the role of women in a matriarchal society",
         "url": "https://www.consuladoguineabissaumalaga.com/en/Blog/Bijag%C3%B3-culture-traditions-customs-and-the-role-of-women-in-a-matriarchal-society/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Comboni Missionaries. Guinea Bissau: A People With A Strong Identity. (2017)",
@@ -103,12 +104,14 @@
       {
         "title": "101 Last Tribes. Bijago people",
         "url": "https://www.101lasttribes.com/tribes/bijago.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue (SIL International). Bijago Language (BJG)",
         "url": "https://www.ethnologue.com/language/bjg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -10,7 +10,7 @@
       "selfAppellation": "Bulsa",
       "exonyms": ["Builsa", "Kanjaga"],
       "originOfExonyms": "Builsa est la forme administrative officielle utilisee par l'Etat ghaneen (Builsa North District, Builsa South District). Kanjaga est un terme errone utilise par les coloniaux et certains Ghaneens qui confondaient le peuple avec le village de Kanjaga, l'un de leurs bourgs, dans le nord-est du Ghana.",
-      "whyProblematic": "L'appellation Kanjaga est consideree incorrecte par les Bulsa eux-memes : Kanjaga est un village dans le territoire Bulsa, non un ethnonyme. Cette confusion coloniale et populaire persiste dans certaines sources.",
+      "whyProblematic": "Les Bulsa jugent le nom Kanjaga incorrect : il s'agit d'un village de leur territoire, pas du nom de leur peuple. Cette confusion, héritée de la période coloniale et présente dans les usages courants, persiste dans certaines sources.",
       "contemporaryUsage": "Bulsa et Builsa sont tous deux utilises dans les contextes contemporains, Builsa predominant dans les documents officiels ghaneens. Bulsa est prefere par la communaute elle-meme.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Oti-Volta (Gur)",
@@ -74,22 +74,26 @@
       {
         "title": "Builsa, Buli in Ghana – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/11005",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Buli (Ghana) – WALS Online",
         "url": "https://wals.info/languoid/lect/wals_code_buy",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Buli (Ghana) – Glottolog 5.2, ISO 639-3 bwu",
         "url": "https://glottolog.org/resource/languoid/id/buli1254",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Builsa South District population – CityPopulation.de, recensement Ghana 2021",
         "url": "https://www.citypopulation.de/en/ghana/admin/upper_east/0910__builsa_south/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       }
     ]
   }

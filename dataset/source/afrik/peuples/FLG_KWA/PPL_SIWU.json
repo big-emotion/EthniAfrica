@@ -9,9 +9,9 @@
       "mainName": "Siwu",
       "selfAppellation": "Mawu",
       "exonyms": ["Akpafu", "Lolobi", "Akpafu-Mawu"],
-      "originOfExonyms": "Siwu designe la langue et la culture des Mawu; Akpafu et Lolobi sont les noms des deux sous-groupes geographiques principaux, separes par la chaine montagneuse de la region. Akpafu vient du nom du territoire traditionnel; Lolobi designe le groupe oriental.",
+      "originOfExonyms": "Siwu designe la langue et la culture des Mawu; Akpafu et Lolobi sont les noms des deux sous-groupes geographiques principaux, separes par la chaine montagneuse de la region. Akpafu viendrait du nom du territoire traditionnel; Lolobi designe le groupe oriental.",
       "whyProblematic": "La denomination Siwu peut etre confondue avec Siwi (langue berbere d'Egypte). Le terme Akpafu est parfois employe exclusivement pour les villages occidentaux, excluant Lolobi.",
-      "contemporaryUsage": "Mawu est l'endonyme utilise par les locuteurs; Siwu designe la langue dans les publications academiques et les travaux de traduction biblique de Wycliffe. Akpafu et Lolobi restent en usage comme denominations communautaires dans l'Oti Region du Ghana.",
+      "contemporaryUsage": "Les personnes concernées se nomment Mawu. Siwu désigne leur langue dans les publications de recherche et les travaux de traduction biblique de Wycliffe. Akpafu et Lolobi restent employés comme noms de communautés dans la région de l'Oti, au Ghana.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Kwa, Langues Ghana-Togo montagne (groupe Buem)",
       "historicalRegion": "Region montagneuse de la Volta orientale, Oti Region (Ghana)",
@@ -75,12 +75,14 @@
       {
         "title": "Joshua Project – Akpafu, Lolobi in Ghana",
         "url": "https://joshuaproject.net/people_groups/10227",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Wycliffe Bible Translators – A Story of Restoration: The Siwu of Ghana",
         "url": "https://wycliffe.org/blog/posts/a-story-of-restoration-the-siwu-of-ghana",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Ideophone – H.B.K. Ogbete, A history of the Akpafus",
@@ -95,12 +97,14 @@
       {
         "title": "Ethnologue – Siwu AKP",
         "url": "https://www.ethnologue.com/language/akp/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ISO 639-3 – code akp: Siwu",
         "url": "https://iso639-3.sil.org/code/akp",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

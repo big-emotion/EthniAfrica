@@ -1,0 +1,271 @@
+/**
+ * The name-history timeline (ETNI-2012, REQ-198) on the search result page.
+ *
+ * It borrows the fiche chronology's thread, dots and tiles
+ * (fiche-parchment.css, `.afh-chronology*`, `.afh-tile`) so a name's history
+ * and a country's history read as the same object; this file adds only what
+ * a name adds: the birth tile, the « before the name » tiles, the competing
+ * hypotheses and the « meanwhile » anchors. Base rules are the 430px layout;
+ * nothing here needs a wider breakpoint, the feed column caps the width.
+ */
+
+.afh-name-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-lg);
+  min-width: 0;
+  color: var(--afh-text);
+}
+
+.afh-name-timeline-title {
+  margin: var(--afh-space-xs) 0 var(--afh-space-sm);
+  font-family: var(--afh-font-display);
+  font-size: var(--afh-text-h1);
+  font-weight: 900;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.afh-name-timeline-summary {
+  margin: 0;
+  font-size: var(--afh-text-body);
+  line-height: 1.55;
+}
+
+/* The way to the self-name (REQ-197): a whole-width target, never a bare
+   link a thumb has to find. */
+.afh-name-timeline-lead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--afh-space-base);
+  width: 100%;
+  min-height: 48px;
+  margin-top: var(--afh-space-lg);
+  padding: var(--afh-space-base) var(--afh-space-lg);
+  border: 1.5px solid var(--afh-conf-high);
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-conf-high-bg);
+  color: var(--afh-text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.afh-name-timeline-lead-go {
+  font-weight: 700;
+  color: var(--afh-conf-high);
+  white-space: nowrap;
+}
+
+.afh-name-timeline-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--afh-space-sm);
+}
+
+.afh-name-timeline-name {
+  min-height: 44px;
+  padding: var(--afh-space-xs) var(--afh-space-lg);
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-full);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+  font: inherit;
+  font-size: var(--afh-text-small);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.afh-name-timeline-name[aria-pressed="true"] {
+  border-color: var(--afh-text);
+  background: var(--afh-text);
+  color: var(--afh-bg);
+}
+
+.afh-name-timeline-mark {
+  font-size: var(--afh-text-caption);
+  font-weight: 600;
+}
+
+.afh-name-timeline-intro,
+.afh-name-timeline-nobirth {
+  margin: 0;
+  font-size: var(--afh-text-small);
+  line-height: 1.5;
+  color: var(--afh-text-soft);
+}
+
+.afh-name-timeline-nobirth {
+  padding: var(--afh-space-md) var(--afh-space-lg);
+  border-left: 3px solid var(--afh-name-birth-ink);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+}
+
+.afh-name-timeline-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--afh-space-md);
+}
+
+.afh-name-timeline-hint {
+  margin: 0;
+  font-size: var(--afh-text-small);
+  font-weight: 600;
+  color: var(--afh-text-soft);
+}
+
+.afh-name-timeline-elsewhere-toggle {
+  min-height: 44px;
+  padding: var(--afh-space-sm) var(--afh-space-lg);
+  border: 1px dashed var(--afh-name-before-dash);
+  border-radius: var(--afh-radius-full);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+  font: inherit;
+  font-size: var(--afh-text-caption);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.afh-name-timeline-elsewhere-toggle[aria-pressed="true"] {
+  border-style: solid;
+  background: var(--afh-bg-warm);
+}
+
+.afh-name-timeline .afh-chronology-legend {
+  margin: 0;
+}
+
+/* An undated tile has no era to be inked by: it takes the soft ink rather
+   than losing its thread. */
+.afh-name-timeline .afh-chronology-station:not([data-regime]) {
+  --afh-regime-ink: var(--afh-text-soft);
+}
+
+.afh-name-timeline .afh-chronology-station > .afh-tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-sm);
+}
+
+.afh-name-timeline-period {
+  margin: 0;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-h3);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--afh-regime-ink);
+}
+
+.afh-name-timeline-statement,
+.afh-name-timeline-hypotheses {
+  margin: 0;
+  font-size: var(--afh-text-small);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.afh-name-timeline-hypotheses {
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+}
+
+.afh-name-timeline-hypothesis {
+  padding-top: var(--afh-space-md);
+  border-top: 1px dashed var(--afh-border);
+}
+
+.afh-name-timeline-tag,
+.afh-name-timeline-actors {
+  margin: 0;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+}
+
+.afh-name-timeline-actors {
+  font-family: var(--afh-font-body);
+}
+
+.afh-name-timeline-pill {
+  align-self: flex-start;
+  margin: 0;
+  padding: var(--afh-space-xs) var(--afh-space-base);
+  border-radius: var(--afh-radius-full);
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-eyebrow);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ── The birth of the name: a frame, a heavy left rule, a pill and a bigger
+   dot, so it reads as the birth without its colour. ───────────────────── */
+.afh-name-timeline [data-placement="birth"] {
+  --afh-regime-ink: var(--afh-name-birth-ink);
+}
+
+.afh-name-timeline [data-placement="birth"] > .afh-tile {
+  border: 2px solid var(--afh-name-birth-ink);
+  border-left-width: 6px;
+  background: var(--afh-name-birth-bg);
+}
+
+.afh-name-timeline [data-placement="birth"]::after {
+  left: -24px;
+  top: 14px;
+  width: 19px;
+  height: 19px;
+  box-shadow:
+    0 0 0 4px var(--afh-bg-warm),
+    0 0 0 6px var(--afh-name-birth-ink);
+}
+
+.afh-name-timeline [data-placement="birth"] .afh-name-timeline-pill {
+  background: var(--afh-name-birth-chip);
+  color: var(--afh-name-birth-ink);
+}
+
+/* ── Before the name: dashed tile, dashed thread, hollow dot. ──────────── */
+.afh-name-timeline [data-placement="before"]::before {
+  background: repeating-linear-gradient(
+    var(--afh-name-before-dash) 0 6px,
+    transparent 6px 11px
+  );
+}
+
+.afh-name-timeline [data-placement="before"]::after {
+  border: 2px solid var(--afh-name-before-dash);
+  background: var(--afh-bg-warm);
+}
+
+.afh-name-timeline [data-placement="before"] > .afh-tile {
+  border: 1.5px dashed var(--afh-name-before-dash);
+  background: transparent;
+}
+
+.afh-name-timeline [data-placement="before"] .afh-name-timeline-pill {
+  border: 1px dashed var(--afh-name-before-dash);
+  color: var(--afh-text-soft);
+}
+
+/* ── Pendant ce temps, ailleurs ─────────────────────────────────────────── */
+.afh-name-timeline-elsewhere {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-xs);
+  padding: var(--afh-space-md) var(--afh-space-base);
+  border: 1px dashed var(--afh-name-before-dash);
+  border-radius: var(--afh-radius-md);
+  background: var(--afh-bg-warm);
+}
+
+.afh-name-timeline-end {
+  margin: 0;
+  font-size: var(--afh-text-small);
+  color: var(--afh-text-soft);
+}

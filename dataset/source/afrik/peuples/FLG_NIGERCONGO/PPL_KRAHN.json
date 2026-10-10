@@ -15,7 +15,7 @@
         "Wobe (Wobe)",
         "Krai"
       ],
-      "originOfExonyms": "Le terme Krahn est derive du nom Gio-Kuare : les Dan (Gio) d'Ivory Coast et du Liberia appelaient ainsi les gens vivant de l'autre cote de la riviere Cestos. Selon une tradition orale, le Commissaire de district de Tappita, a qui des porteurs d'un chef local se sont presentes, leur a demande leur identite et ils ont repondu 'nous sommes le peuple de Krai' (nom de leur chef), d'ou Krahn. Le terme Guere a ete cree par un administrateur colonial français pour les Kpelle vivant au sud des Dan en Cote d'Ivoire. Wee est l'endonyme utilise dans les deux pays.",
+      "originOfExonyms": "Krahn viendrait de Gio-Kuare, le nom que les Dan (Gio) de Côte d'Ivoire et du Liberia donnaient aux personnes vivant de l'autre côté de la rivière Cestos. Une tradition orale propose une autre explication. Le commissaire de district de Tappita aurait demandé leur identité aux porteurs d'un chef local. Ils auraient répondu 'nous sommes le peuple de Krai', du nom de leur chef, ce qui aurait donné Krahn. Selon la présentation de la source, un administrateur colonial français aurait créé Guere pour les Kpelle vivant au sud des Dan en Côte d'Ivoire. Dans les deux pays, les personnes concernées se nomment Wee.",
       "whyProblematic": "Le terme Krahn designe les membres de ce groupe vivant au Liberia, tandis que Guere (Wee) est prefere pour ceux vivant en Cote d'Ivoire, bien que ce soit le meme peuple. La politisation de l'identite krahn sous Samuel Doe (coup d'Etat de 1980, favoritisme ethnique) a rendu l'identite krahn controversee au Liberia.",
       "contemporaryUsage": "Krahn est utilise dans le contexte liberien (administratif, politique, ethnographique). Guere ou We est prefere en Cote d'Ivoire. Wee est le terme que le groupe utilise pour se designer lui-meme. Depuis la fin des guerres civiles liberienne, l'identite krahn se reconstruit dans un contexte de reconciliation nationale.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -100,22 +100,26 @@
       {
         "title": "101 Last Tribes - Krahn people",
         "url": "https://www.101lasttribes.com/tribes/krahn.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Minority Rights Group - Krou in Cote d'Ivoire",
         "url": "https://minorityrights.org/communities/krou/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Joshua Project - Krahn, Western in Liberia",
         "url": "https://joshuaproject.net/people_groups/print/15374/LI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue - Western Krahn (krw) et Eastern Krahn (kqo)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

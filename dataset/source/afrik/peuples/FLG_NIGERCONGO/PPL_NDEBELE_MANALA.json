@@ -13,7 +13,7 @@
         "Northern Transvaal Ndebele (sous l'apartheid)",
         "Ndebele (terme européen)"
       ],
-      "originOfExonyms": "Le terme Manala désigne les descendants du prince Manala, fils aîné légitime du roi Musi. Northern Transvaal Ndebele fut un terme administratif de l'apartheid regroupant les Manala avec d'autres sous-groupes nordiques. Le terme Ndebele est un exonyme d'origine sotho.",
+      "originOfExonyms": "Manala désigne les descendants du prince Manala, fils aîné légitime du roi Musi. Sous l'apartheid, l'administration employait Northern Transvaal Ndebele pour les rassembler avec d'autres groupes du nord. Ndebele est un nom donné de l'extérieur, d'origine sotho.",
       "whyProblematic": "Les Ndzundza forment la branche culturellement la plus visible des Ndebele du Sud, célèbre pour les peintures murales, et font l'objet de leur propre fiche. Les Manala sont le sous-groupe historiquement senior (maison royale reconnue par les tribunaux en 2017) mais moins connu du grand public. Les deux sous-groupes furent regroupés dans le bantoustan KwaNdebele sous l'apartheid, masquant leurs différences.",
       "contemporaryUsage": "Les Manala se reconnaissent comme amaNdebele et revendiquent la séniorité royale sur l'ensemble du peuple Ndebele d'Afrique du Sud. En 2017, la Haute Cour a confirmé le roi Makhosoke II (Enoch Mabhena) comme roi Manala et chef suprême senior des Ndebele.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -91,7 +91,8 @@
       {
         "title": "South African History Online — Ndebele",
         "url": "https://sahistory.org.za/article/ndebele",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Kruger Park Africa — The Southern Ndebele tribe",
@@ -101,17 +102,20 @@
       {
         "title": "Kwekudee — Ndebele (Manala and Ndzundza)",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2013/12/ndebele-manala-ndebele-and-ndzundza.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue (SIL) — isiNdebele [nbl]",
         "url": "https://www.ethnologue.com/language/nbl",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Statistics South Africa — Census 2011",
         "url": "https://www.statssa.gov.za/census/census_2011/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

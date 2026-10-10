@@ -9,7 +9,7 @@
       "mainName": "Shua",
       "selfAppellation": "Shwakhwe",
       "exonyms": ["Hietshware", "Hietshwari", "Shwa-khwe", "Sua", "Tshua"],
-      "originOfExonyms": "Shwakhwe est l'autodenomination signifiant gens (khwe) de la zone salee (shwa), en reference aux zones de sel et de marais de l'est du Botswana. Hietshware (aussi ecrit Hietshwari ou Hietjo) est un exonyme utilise pour designer a la fois les Shua et leur langue-soeur Tshwa. Sua est une corruption du nom Tshua ou Shua. Le terme Basarwa est utilise au Botswana pour l'ensemble des peuples San.",
+      "originOfExonyms": "Les personnes concernées se nomment Shwakhwe. Ce nom signifierait les gens (khwe) de la zone salée (shwa), en référence aux zones de sel et aux marais de l'est du Botswana. D'autres populations emploient Hietshware, aussi écrit Hietshwari ou Hietjo, pour les Shua et pour leur langue proche, le tshwa. Sua serait une transformation de Tshua ou Shua. Au Botswana, Basarwa désigne l'ensemble des peuples San.",
       "whyProblematic": "Le terme Basarwa utilise par les Tswana (signifiant ceux qui ne possedent pas de betail) est consideré pejoratif par certains membres du groupe. L'appellation generique Bushmen est aussi rejetee. Hietshware est parfois utilise pour designer indistinctement Shua et Tshwa, ce qui cree une confusion.",
       "contemporaryUsage": "Shua est le terme le plus utilise dans la litterature academique et linguistique. Shwakhwe est l'autodenomination interne. Les Shua se reconnaissent dans la categorie San au Botswana. La langue Shua est documentee comme langue distincte du Tshwa (langue-soeur) bien que les frontières dialectales soient parfois floues.",
       "linguisticFamily": "FLG_KHOE",
@@ -99,37 +99,44 @@
       {
         "title": "Glottolog 5.3 — Shua (shua1254), ISO 639-3 : shg",
         "url": "https://glottolog.org/resource/languoid/id/shua1254",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Shua (shg)",
         "url": "https://www.ethnologue.com/language/shg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Cook, Anthony. Shua Phonology and Morphology. SOAS, University of London, 2004",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SciELO — The case of Khoisan languages of Botswana",
         "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S2224-33802019000300012",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Botswana country page — Joshua Project",
         "url": "https://joshuaproject.net/countries/bc",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "IWGIA — Indigenous World 2025",
         "url": "https://iwgia.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "Facebook — Culture Botswana : SUA is corruption of original Khwe name",
         "url": "https://www.facebook.com/culturebotswana/posts/788683589930727/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Laskon Wiki — Shua language",

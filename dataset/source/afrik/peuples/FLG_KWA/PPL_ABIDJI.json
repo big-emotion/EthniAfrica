@@ -8,7 +8,7 @@
       "mainName": "Abidji",
       "selfAppellation": "Enyembe / Ogbru",
       "exonyms": ["Abidji"],
-      "originOfExonyms": "Le nom Abidji est un exonyme donne par les ethnies voisines. Les membres de ce groupe se designent eux-memes par les noms de leurs deux dialectes constitutifs : Enyembe (groupe occidental, issu du courant alladien) et Ogbru (groupe oriental, issu du courant ashanti).",
+      "originOfExonyms": "Les peuples voisins ont donné le nom Abidji à ce groupe. Ses membres se nomment eux-mêmes d'après leurs deux parlers : Enyembe à l'ouest, issu du courant alladien, et Ogbru à l'est, issu du courant ashanti.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Abidji est officiellement utilise en Cote d'Ivoire et dans la litterature academique. Les denominationsenyembe et ogbru sont utilisees au sein de la communaute.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -73,12 +73,14 @@
       {
         "title": "Abidji – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10127/IV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Le peuple Abidji – Rezo-Ivoire, 2011",
         "url": "https://rezoivoire.net/ivoire/patrimoine/3811/le-peuple-abidji.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Le Dipri chez les Abidji de Cote d'Ivoire – Revue du GRALIFAH, J.J. Essoh et M. Yeo, 2024",
@@ -88,12 +90,14 @@
       {
         "title": "Abidji Language (ABI) – Ethnologue / SIL International",
         "url": "https://www.ethnologue.com/language/abi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Abidji – Glottolog, abid1235",
         "url": "https://glottolog.org/resource/languoid/id/abid1235",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

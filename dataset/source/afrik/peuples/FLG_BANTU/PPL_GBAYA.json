@@ -14,7 +14,7 @@
         "Baya",
         "Gbaya-Manza-Ngbaka (designation linguistique)"
       ],
-      "originOfExonyms": "Le terme Gbaya est utilise a la fois comme endonyme et exonyme. Les sous-groupes se designent eux-memes par des noms specifiques (Bokoto, Kara, Kaka, Buli, Bwaka). La denomination Baya est frequemment utilisee en Republique centrafricaine dans les textes administratifs francais.",
+      "originOfExonyms": "Gbaya est utilisé par les personnes concernées et par d'autres peuples. Les groupes se nomment aussi Bokoto, Kara, Kaka, Buli ou Bwaka. En République centrafricaine, les documents administratifs en français emploient souvent Baya.",
       "whyProblematic": "Le terme Gbaya designe un ensemble de groupes linguistiquement et culturellement apparentes mais non completement homogenes. La famille linguistique Gbaya-Manza-Ngbaka appartient aux langues oubanguiennes (Niger-Congo), ce qui remet en question leur classification dans le bantou au sens strict. Certains linguistes les classent parmi les langues adamawa-oubanguiennes.",
       "contemporaryUsage": "Les Gbaya (Baya) sont officiellement reconnus comme le plus grand groupe ethnique de la Republique centrafricaine, representant environ 33% de la population. Le terme Gbaya est utilise dans les recensements officiels et les analyses politiques du pays.",
       "linguisticFamily": "Niger-Congo, sous-groupe Adamawa-Oubanguien",
@@ -111,22 +111,26 @@
       {
         "title": "Gbaya – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Gbaya",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Gbaya-Bossangoa in Central African Republic – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/11844",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Gbaya, Northwest in Cameroon – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10742/CM",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Gbaya, Southwest in Central African Republic – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/11843",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "What Is The Ethnic Composition of the Central African Republic – WorldAtlas, 2019",
@@ -136,7 +140,8 @@
       {
         "title": "Gbaya-Bossangoa Language (GBP) – Ethnologue",
         "url": "https://www.ethnologue.com/language/gbp/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

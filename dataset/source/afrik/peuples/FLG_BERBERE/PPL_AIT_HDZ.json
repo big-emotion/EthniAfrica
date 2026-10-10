@@ -8,7 +8,7 @@
       "mainName": "Ait Hadiddou",
       "selfAppellation": "Ayt Yeflman, Ayt Wrirra",
       "exonyms": ["Ait Haddidou", "Ait Hdiddou", "Ayt Hdiddou", "Ait Addidou"],
-      "originOfExonyms": "Le nom Hadiddou signifie petit ou fort selon la tradition orale berbere. L'exonyme francais Ait Haddidou a ete fixe par l'administration coloniale.",
+      "originOfExonyms": "Selon la tradition orale berbère, Hadiddou signifierait petit ou fort. L'administration coloniale a fixé la forme française Ait Haddidou.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Ait Hadiddou est utilise officiellement au Maroc pour designer cette confederation tribale du Haut Atlas central, surtout dans la region d'Imilchil.",
       "linguisticFamily": "FLG_BERBERE",
@@ -84,12 +84,14 @@
       {
         "title": "Morocco World News - Imilchil Marriage Festival",
         "url": "https://www.moroccoworldnews.com/2020/07/67795/moroccos-imilchil-wedding-festival-a-treasured-amazigh-tradition/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "IRCAM (Institut Royal de la Culture Amazighe, Rabat)",
         "url": "https://www.ircam.ma/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "academic"
       },
       {
         "title": "Journal of Tourism and Leisure - Two Days in Ait Hadiddou",
@@ -99,17 +101,20 @@
       {
         "title": "Ethnologue - Tamazight Central Atlas (tzm)",
         "url": "https://www.ethnologue.com/language/tzm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "IWGIA - The Indigenous World 2025: Morocco",
         "url": "https://iwgia.org/en/morocco/5632-iw-2025-morocco.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "Encyclopedie berbere (CNRS/INALCO)",
         "url": "https://journals.openedition.org/encyclopedieberbere/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

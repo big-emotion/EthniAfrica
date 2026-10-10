@@ -8,7 +8,7 @@
       "mainName": "Chaoui",
       "selfAppellation": "Ishawiyen / Icawiyen",
       "exonyms": ["Shawiya", "Chaouia", "Shawia", "Shawi"],
-      "originOfExonyms": "Le terme Chaoui ou Chaouia vient de l'arabe et signifie berger ou gardien de troupeaux. Le nom designe les Berberes Zenata et renvoie a la pratique ancestrale du pastoralisme, selon le traducteur de Ibn Khaldoun (de Slane). L'orthographe francaise Chaouia a ete fixee par l'administration coloniale.",
+      "originOfExonyms": "Le terme Chaoui ou Chaouia viendrait de l'arabe et voudrait dire « berger » ou « gardien de troupeaux ». Le nom designe les Berberes Zenata et renvoie a la pratique ancestrale du pastoralisme, selon le traducteur de Ibn Khaldoun (de Slane). L'orthographe francaise Chaouia a ete fixee par l'administration coloniale.",
       "whyProblematic": null,
       "contemporaryUsage": "Chaoui et Shawiya sont tous deux en usage courant en Algerie et dans la litterature scientifique. Les locuteurs utilisent le terme Icawiyen pour se designer eux-memes.",
       "linguisticFamily": "FLG_BERBERE",
@@ -88,12 +88,14 @@
       {
         "title": "Encyclopaedia Britannica - Shawiya",
         "url": "https://www.britannica.com/topic/Shawiya",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project - Berber Shawiya in Algeria",
         "url": "https://joshuaproject.net/people_groups/14899/AG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Algeria.com - The Chaouis of Algeria",
@@ -103,7 +105,202 @@
       {
         "title": "Ethnologue SIL International - Tachawit (shy)",
         "url": "https://www.ethnologue.com/language/shy/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Chaoui désigne un peuple berbère de l'Aurès, dans l'est de l'Algérie, qui se nomme lui-même Icawiyen dans sa langue, le tachawit ; Chaouïa en est la forme arabe et française au pluriel. L'origine du nom est discutée ; nous présentons plus bas ce qu'en disent les sources.",
+    "names": [
+      {
+        "nameText": "Icawiyen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "shy",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent en tachawit : Icawiyen, et cawi pour un homme.",
+        "usedIn": ["shy"],
+        "periodLabel": "Écrit dès 1896 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "1896"
+            },
+            "era": "colonial",
+            "statement": "Le nom Icawiyen désigne les Chaouis dans un conte en tachawit, « Histoire des Arabes et des Chaouis », que Gustave Mercier publie en 1896. Le conte oppose les icawiyen aux ieraben, les Arabes, et un homme s'y présente comme cawi, selon la réédition de Mena Lafkioui et Daniela Merolla. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait dans l'Aurès bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Haqsit m ueraben d icawiyen (Histoire des Arabes et des Chaouis), conte chaoui",
+                "author": "Conteurs chaouis de l'Aurès, recueillis par Gustave Mercier",
+                "year": 1896,
+                "url": "https://halshs.archives-ouvertes.fr/hal-01486613v1/file/Lafkioui_Merolla_Contes%20berberes%20chaouis_2002.pdf",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Histoire des Arabes et des Chaouis",
+                "carrier": "Conteurs chaouis que Gustave Mercier ne nomme pas",
+                "place": "Aurès, Algérie",
+                "notes": "Conte publié par Gustave Mercier dans Les Chaouia de l'Aurès (1896), lu dans la réédition de Mena Lafkioui et Daniela Merolla, p. 40 et 94-95."
+              },
+              {
+                "title": "Contes berbères chaouis de l'Aurès d'après Gustave Mercier",
+                "author": "Mena Lafkioui et Daniela Merolla",
+                "year": 2002,
+                "url": "https://halshs.archives-ouvertes.fr/hal-01486613v1/file/Lafkioui_Merolla_Contes%20berberes%20chaouis_2002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 40 et 94-95",
+                "notes": "Cologne, Rüdiger Köppe, collection Berber Studies, vol. 3, lu dans le texte déposé sur HAL."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Icawiyen se retrouve dans celui de la langue des Chaouis, le tachawit. Mena Lafkioui et Daniela Merolla la rangent parmi les variétés zénètes du berbère, et notent qu'elle n'a pas encore été étudiée de façon systématique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Contes berbères chaouis de l'Aurès d'après Gustave Mercier",
+                "author": "Mena Lafkioui et Daniela Merolla",
+                "year": 2002,
+                "url": "https://halshs.archives-ouvertes.fr/hal-01486613v1/file/Lafkioui_Merolla_Contes%20berberes%20chaouis_2002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11 et 15",
+                "notes": "Cologne, Rüdiger Köppe, collection Berber Studies, vol. 3, lu dans le texte déposé sur HAL."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chaouïa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un mot arabe qui voudrait dire « bergers », devenu le nom des Berbères de l'Aurès.",
+        "usedIn": ["ara", "fra"],
+        "periodLabel": "Écrit dès 1724 sous la forme Chauvies ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Chaouïa, Chaoui pour une seule personne, désigne les Berbères de l'Aurès et leur langue. Celle-ci s'appelle en berbère hašawiθ, selon Salem Chaker, et c'est le deuxième dialecte berbère d'Algérie par le nombre de ses locuteurs. Le nom viendrait de l'arabe ; son origine est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Aurès (linguistique), dans l'article « Aurès », Encyclopédie berbère, 8",
+                "author": "Salem Chaker",
+                "year": 1990,
+                "url": "https://journals.openedition.org/encyclopedieberbere/258",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 298",
+                "notes": "Édisud, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chaouïa est employé dans la province de Constantine pour parler des Berbères, avec le sens de « bergers », selon William Mac Guckin de Slane, traducteur d'Ibn Khaldoun.",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome IV",
+                "author": "William Mac Guckin de Slane, traducteur d'Ibn Khaldoun",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_LwEoAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 495",
+                "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation. Le passage est une note du traducteur, en appendice, et non un texte d'Ibn Khaldoun."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1724,
+              "to": 1724,
+              "label": "22 juin 1724"
+            },
+            "era": "polity",
+            "statement": "Le nom Chaouïa a une forme proche, Chauvies, chez le voyageur Peyssonnel, qui suit l'armée du bey de Constantine dans l'Aurès : ses habitants descendraient « des anciens Chauvies dont parle Marmol », écrit-il, selon J. Morizot. C'est la plus ancienne trace de ce nom que le projet connaît. Les montagnards de l'Aurès vivaient là bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "L'Aurès sous la domination arabe, dans l'article « Aurès », Encyclopédie berbère, 8",
+                "author": "J. Morizot",
+                "year": 1990,
+                "url": "https://journals.openedition.org/encyclopedieberbere/258",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 120",
+                "notes": "Édisud, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1530,
+              "label": "Début du XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Chaouïa, Léon l'Africain décrit les montagnards de l'Aurès sans dire comment on les appelle, selon J. Morizot.",
+            "before": true,
+            "sources": [
+              {
+                "title": "L'Aurès sous la domination arabe, dans l'article « Aurès », Encyclopédie berbère, 8",
+                "author": "J. Morizot",
+                "year": 1990,
+                "url": "https://journals.openedition.org/encyclopedieberbere/258",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 102",
+                "notes": "Édisud, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "Proposée en 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Chaouïa serait apparu au temps de Léon l'Africain, au début du XVIe siècle : ce serait un mot arabe qui veut dire « bergers », et par extension « éleveurs de moutons », selon J. Morizot. Il y voit la trace d'un changement de vie : les montagnards de l'Aurès, autrefois sédentaires, seraient devenus des éleveurs.",
+            "hypothesisGroup": "origine du nom Chaouïa",
+            "sources": [
+              {
+                "title": "L'Aurès sous la domination arabe, dans l'article « Aurès », Encyclopédie berbère, 8",
+                "author": "J. Morizot",
+                "year": 1990,
+                "url": "https://journals.openedition.org/encyclopedieberbere/258",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 102 et 105",
+                "notes": "Édisud, lu dans l'édition en ligne d'OpenEdition."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

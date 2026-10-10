@@ -34,7 +34,13 @@
       "Kunyi (plateau Niari, Congo-Brazzaville)",
       "Kongo dia Ntotila (descendants du royaume de Kongo central, RDC nord-Angola)",
       "Solongo (cote atlantique angolaise)",
-      "Woyo (embouchure du fleuve Congo, Angola-Congo)"
+      "Woyo (embouchure du fleuve Congo, Angola-Congo)",
+      "Manianga (territoires de Luozi et Mbanza-Ngungu) : sous-groupe important, connu pour son role commercial historique",
+      "Ntandu (region de Thysville / Mbanza-Ngungu et Lukala) : sous-groupe numerique significatif",
+      "Ndibu (region de Kimpese et Mbanza-Ngungu) : sous-groupe distinct avec dialecte propre",
+      "Lemfu (region de Kasangulu) : sous-groupe de la zone du Pool Malebo",
+      "Mboma / Ba Mboma (region de Matadi) : sous-groupe de la region portuaire",
+      "Ba Zombo / Bazombo (region de Luozi) : sous-groupe a cheval sur la frontiere Congo-Angola"
     ],
     "origins": {
       "ancientOrigins": "Les Bakongo font partie de la grande expansion bantoue depuis le bassin du Congo. Avant la fondation du royaume, ils vivaient comme sujets de la chefferie de Vungu (au nord du fleuve). Apres l'effondrement de ce royaume, ils se regroupent dans les royaumes de Kongo, Loango et Kakongo. La date de formation du royaume de Kongo est inconnue : une lecture fait debuter le processus des le IXe siecle, par raisonnement analogique ; d'autres placent la fondation au plus tard vers 1400, au plus tot un bon siecle auparavant. Le royaume se constitua par absorption des sept royaumes de Kongo dia Nlaza et de la chefferie de Vungu, avec pour capitale Mbanza Kongo (situee a ~200 km de la cote atlantique).",
@@ -42,7 +48,10 @@
       "migrationRoutes": [
         "Expansion bantoue depuis l'Afrique centrale (bassin du Congo) vers l'ouest et le sud-ouest",
         "Peuplement des rives du fleuve Congo et de ses affluents (Inkisi, Niari, Chiloango)",
-        "Dispersion par l'esclavage transatlantique vers le Bresil, Cuba, Haiti, Jamaique, Louisiane (XVIe-XIXe s.)"
+        "Dispersion par l'esclavage transatlantique vers le Bresil, Cuba, Haiti, Jamaique, Louisiane (XVIe-XIXe s.)",
+        "Expansion des sous-groupes Manianga et Ntandu depuis le coeur du royaume vers l'est et le nord (15e-17e siecles)",
+        "Migrations internes dues aux guerres civiles post-Mbwila (apres 1665)",
+        "Urbanisation vers Matadi, Boma, Kinshasa et Mbanza-Ngungu (20e-21e siecles)"
       ],
       "historicalSettlementZones": [
         "Mbanza Kongo / Sao Salvador (capitale, actuel Angola)",
@@ -50,7 +59,14 @@
         "Cabinda (enclave angolaise)",
         "Departement du Pool et Kouilou (Congo-Brazzaville)",
         "Province du Mayombe (RDC et Congo-Brazzaville)",
-        "Cote sud-ouest du Gabon (Ogooue-Maritime)"
+        "Cote sud-ouest du Gabon (Ogooue-Maritime)",
+        "Region de Matadi (capitale provinciale) et du bas fleuve Congo : zone Mboma et cotiere",
+        "Region de Mbanza-Ngungu et Lukala : zone Ntandu et Ndibu",
+        "Region de Luozi : zone Manianga et Zombo",
+        "Region de Kimpese : zone Ndibu",
+        "Region de Boma (ancien chef-lieu colonial) : zone cotiere",
+        "Littoral et embouchure du Congo (Banana, Moanda) : zone Solongo et Woyo",
+        "Region de Kinshasa (est de la province) : zone fortement urbanisee"
       ],
       "unificationsOrDivisions": "Le royaume de Kongo unifia de nombreux peuples sous un seul roi (Manikongo) elu par les nobles de la cour. L'adoption du christianisme par la famille royale (1491) crea une culture kongo chretienne unique. La bataille de Mbwila (1665) - victoire portugaise, mort du Manikongo Antonio I - fragmente le royaume en principautes rivales. Des guerres civiles (1665-1709) affaiblirent davantage le pouvoir central. Dona Beatriz Kimpa Vita (brulee en 1706) tenta une renovation spirituelle nationaliste. Pedro IV reconquit une partie du territoire avec l'aide portugaise.",
       "externalInfluences": "Le commerce portugais (ivoire, cuivre puis esclaves) transforma l'economie du royaume. Le catholicisme s'implanta profondement : lettres du roi Afonso I au Portugal protestant contre la traite (1510s-1520s). Plus de 5,6 millions d'esclaves furent exportes depuis l'Afrique centrale occidentale entre 1501 et 1867, devastant la population kongo. La colonisation du XIXe s. divisa les Bakongo entre la France (nord, Congo-Brazzaville et Gabon), la Belgique (centre, RDC) et le Portugal (sud, Angola).",
@@ -65,7 +81,7 @@
     },
     "languages": {
       "mainLanguage": "Kikongo",
-      "isoCodes": ["kon"],
+      "isoCodes": ["kon", "kng"],
       "dialects": [
         "Koongo (dialecte central, autour de Mbanza Ngungu, RDC)",
         "Laari / Lari (region de Brazzaville, Congo)",
@@ -76,7 +92,12 @@
         "Beembe (region du Pool, Congo-Brazzaville)",
         "Kongo-San-Salvador (autour de l'ancienne capitale, Angola)",
         "Kunyi (plateau du Niari, Congo)",
-        "Kituba / Kikongo ya Leta (creole a base kikongo, vehiculaire en RDC et Congo-Brazzaville)"
+        "Kituba / Kikongo ya Leta (creole a base kikongo, vehiculaire en RDC et Congo-Brazzaville)",
+        "Kimanianga : dialecte de la region de Luozi et Manianga, proche du Kisikongo central",
+        "Kintandu (Ntandu) : dialecte de la region de Mbanza-Ngungu et Thysville",
+        "Kindibu : dialecte de la region de Kimpese",
+        "Kibwende : dialecte de la zone du Mayombe occidental (Kongo Central)",
+        "Kisolongo / Nsolongo : dialecte cotier de la zone de Moanda et Banana"
       ],
       "vehicularRole": "Le kikongo est la langue maternelle des Bakongo au sens large. Le Kituba (Kikongo ya Leta) est un creole vehiculaire tres repandu au Congo-Brazzaville et dans l'ouest de la RDC. En RDC, le lingala est la lingua franca principale dans les villes. Le francais est langue officielle en RDC, Congo-Brazzaville et Gabon ; le portugais en Angola."
     },
@@ -95,7 +116,7 @@
     "demography": {
       "totalPopulation": 11000000,
       "referenceYear": 2025,
-      "source": "Estimation 2025 : environ 10 a 12 millions de Bakongo dans les quatre pays. Donnees de base : Kongo people en 1975 : 4 040 000 (Wikipedia EN). Groupe ethnique majoritaire en Republique du Congo ; groupe important en RDC (province du Kongo Central ~6M habitants, proportion kongo elevee) et au nord de l'Angola. Sources : SIL Ethnologue, CIA World Factbook, recensements nationaux RDC, Congo-Brazzaville, Angola.",
+      "source": "Estimation 2025 : environ 10 a 12 millions de Bakongo dans les quatre pays. Donnees de base : Kongo people en 1975 : 4 040 000 (Wikipedia EN). Groupe ethnique majoritaire en Republique du Congo ; groupe important en RDC (province du Kongo Central ~6M habitants, proportion kongo elevee) et au nord de l'Angola. Sources : SIL Ethnologue, CIA World Factbook, recensements nationaux RDC, Congo-Brazzaville, Angola. Pour la seule province du Kongo Central (RDC), une autre estimation donne 5 500 000 Bakongo en 2025 : la province compte de 5 441 000 (Joshua Project 2025) a 6 923 500 habitants (Data Commons 2024), dont 70 a 80 % de Bakongo, sans compter ceux de Kinshasa et des autres provinces.",
       "distributionByCountry": [
         {
           "country": "COD",
@@ -123,22 +144,26 @@
       {
         "title": "Ethnologue (SIL) — Kongo [kon]",
         "url": "https://www.ethnologue.com/language/kon",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Jan Vansina — Kingdoms of the Savanna. University of Wisconsin Press, 1966",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Simon Bockie — Death and the Invisible Powers: The World of Kongo Belief. Indiana University Press, 1993",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — Republic of the Congo",
         "url": "https://www.cia.gov/the-world-factbook/countries/congo-republic-of-the/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "SimpleLocalize — Language Kongo (kon)",
@@ -149,31 +174,541 @@
         "title": "René Butaye, Dictionnaire kikongo-français, français-kikongo, 1910",
         "url": "https://archive.org/details/dictionnaire-butaye",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Dictionnaire publié, auteur identifié, consultable en ligne le 10 septembre 2026. Lexicographie missionnaire de la période coloniale, donc une description extérieure à la société décrite. Donne nzambi comme Être Suprême, zumbi comme fétiche bienfaisant et mvumbi comme cadavre."
       },
       {
         "title": "J. D. Cordeiro da Matta, Ensaio de diccionario kimbúndu-portuguez, 1893",
         "url": "https://archive.org/details/ensaiodediccion00mattgoog",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Dictionnaire du kimbundu par un auteur angolais, publié à Lisbonne en 1893, consulté le 10 septembre 2026. Donne nzumbi comme l'âme d'un mort qui revient en paix, par opposition à celle qui poursuit les vivants."
       },
       {
         "title": "Floribert Patrick C. Endong, « The Westernization of the African Zombie in Nollywood Films », International Journal of Modern Anthropology, 2022",
         "url": "https://doi.org/10.4314/ijma.v2i17.2",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de revue à comité de lecture, université de Dschang, Cameroun. Donne l'origine du mot comme controversée et énumère les racines bantoues proposées."
       },
       {
         "title": "Hans-W. Ackermann et Jeanine Gauthier, « The Ways and Nature of the Zombi », The Journal of American Folklore, 1991",
         "url": "https://doi.org/10.2307/541551",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de revue universitaire à comité de lecture consacré aux racines bantoues du mot. Accès fermé : la référence est vérifiée, son contenu ne l'est pas."
       },
       {
         "title": "UNESCO, Histoire générale de l'Afrique, vol. V : L'Afrique du XVIe au XVIIIe siècle (dir. B. A. Ogot), 1999 — chap. 19, « Le Royaume du Kongo et ses voisins » (J. Vansina, à partir d'une contribution de T. Obenga), p. 601-642",
         "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Formation du royaume dont la date est inconnue, deux datations proposées, chefferie vungu au nord du fleuve : p. 604."
+      },
+      {
+        "title": "Data Commons — Kongo Central population 2024",
+        "url": "https://datacommons.org/place/wikidataId/Q1043494",
+        "tier": "unverified",
+        "source_kind": "discovery"
+      },
+      {
+        "title": "Joshua Project — Kongo Central province population (2025)",
+        "url": "https://joshuaproject.net/people_groups/12774/CG",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "EBSCO Research Starters — Kongo (historical kingdom)",
+        "url": "https://www.ebsco.com/research-starters/history/kongo-historical-kingdom",
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "101 Last Tribes — Kongo People (subgroups in DRC)",
+        "url": "https://www.101lasttribes.com/tribes/kongo.html",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "Worldometer — DR Congo Population 2025",
+        "url": "https://www.worldometers.info/world-population/democratic-republic-of-the-congo-population/",
+        "tier": "unverified",
+        "source_kind": "discovery"
+      },
+      {
+        "title": "VCU Scholars Compass — Transformation of Kongo Minkisi",
+        "url": "https://scholarscompass.vcu.edu/cgi/viewcontent.cgi?article=1077&context=etd",
+        "tier": "referenced",
+        "source_kind": "academic"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kongo désigne un peuple d'Afrique centrale, qui se nomme lui-même Bakongo, et Mukongo pour une seule personne. D'autres noms existent : Esikongo et, dans les textes européens, Congo. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kon",
+        "namedBy": null,
+        "shortLine": "Le nom d'un ancien royaume, de sa langue et de ses peuples ; son origine reste incertaine.",
+        "periodLabel": "Écrit dès 1490",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le nom Kongo désigne un ancien royaume d'Afrique centrale et sa langue. Il désigne aussi les peuples qui parlent des formes de cette langue, du sud du Gabon au plateau de Benguela, en Angola, selon Jan Vansina. Personne ne sait avec certitude d'où vient ce nom : le missionnaire William Holman Bentley l'écrivait déjà en 1887. Les explications proposées sont présentées plus bas.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 601",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 601 : le groupe kongo occupe « un territoire allant du Gabon méridional au plateau de Benguela »."
+              },
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+                "author": "William Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. ix",
+                "notes": "Londres, Baptist Missionary Society, 1887. Préface lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Bentley, missionnaire baptiste à San Salvador, l'ancienne Mbanza Kongo, écrit qu'on ne peut rien dire de sûr sur l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "Livre publié en 1887"
+            },
+            "era": "colonial",
+            "formAsWritten": "Kongo or Ekongo",
+            "statement": "Le nom Kongo est écrit « Kongo or Ekongo » par William Holman Bentley, qui en fait le nom d'un ancien royaume dont la capitale s'appelle Mbanza Ekongo.",
+            "actors": [
+              {
+                "name": "William Holman Bentley",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+                "author": "William Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. ix",
+                "notes": "Londres, Baptist Missionary Society, 1887. Préface lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Bentley, missionnaire baptiste à San Salvador, l'ancienne Mbanza Kongo, écrit qu'on ne peut rien dire de sûr sur l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1490,
+              "to": 1490,
+              "label": "13 octobre 1490"
+            },
+            "era": "polity",
+            "birth": true,
+            "formAsWritten": "Manjcongo",
+            "statement": "Le nom Kongo est écrit Manjcongo dans un ordre du roi Jean II de Portugal, daté de Lisbonne le 13 octobre 1490 : il fait livrer du biscuit à une caravelle de la flotte que le roi prépare pour Manjcongo, selon l'édition d'António Brásio. La forme joint au nom Kongo le titre mani, « seigneur », que relève Jan Vansina. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; le royaume existait déjà avant elle.",
+            "sources": [
+              {
+                "title": "Monumenta Missionaria Africana, África Ocidental, vol. I (1471-1531)",
+                "author": "António Brásio (édition)",
+                "year": 1952,
+                "url": "https://archive.org/details/monumentamissionariaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 76, document 19",
+                "notes": "Lisbonne, Agência Geral do Ultramar, 1952. Lu dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Le document est un ordre du roi Jean II de Portugal, daté de Lisbonne le 13 octobre 1490 et conservé à la Torre do Tombo (Corpo Cronológico II-2-73). L'ordre du même jour qui le précède (II-2-72, p. 75) écrit Manicongo."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 607-609",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Pages 607-609 : « le dignitaire religieux suprême du Royaume, le mani kabunga (seigneur) de Mbanza Kongo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1400,
+              "label": "Avant 1400 environ, date inconnue"
+            },
+            "era": "polity",
+            "before": true,
+            "statement": "Vungu est alors une chefferie au nord du fleuve Congo. C'est là que commence le royaume que les écrits nommeront plus tard Kongo, selon Jan Vansina. Les historiens n'en connaissent pas la date : certains placent sa fondation vers 1400 au plus tard.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 603-604",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Pages 603-604 : « Le Royaume du Kongo prit naissance dans la chefferie vungu, au nord du fleuve » ; sa fondation se situe « au plus tard vers 1400, au plus tôt un bon siècle auparavant »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1994,
+              "label": "Proposée en 1887, reprise en 1994"
+            },
+            "era": "colonial",
+            "hypothesisGroup": "origine du nom Kongo",
+            "statement": "Le nom Kongo viendrait du verbe konga, « cueillir de gros fruits », selon William Holman Bentley, qui ne tranche pas. Samuel Nelson le rattache au même verbe, au sens de « rassembler », selon l'article de Wikipédia. Le dictionnaire de Karl Edvard Laman donne bien kônga, « rassembler », sans le relier au nom.",
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+                "author": "William Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. ix",
+                "notes": "Londres, Baptist Missionary Society, 1887. Préface lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Bentley, missionnaire baptiste à San Salvador, l'ancienne Mbanza Kongo, écrit qu'on ne peut rien dire de sûr sur l'origine du nom."
+              },
+              {
+                "title": "Kongo people — Wikipedia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Kongo_people",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Section Etymology, consulté le 9 octobre 2026. Elle rapporte les lectures de Samuel Nelson (Colonialism in the Congo Basin, 1994) et d'Alisa LaGamma (Kongo: Power and Majesty, 2015, p. 18), que nous n'avons pas lues, et dit que Bakongo s'impose surtout depuis le début du XXe siècle."
+              },
+              {
+                "title": "Dictionnaire kikongo-français, avec une étude phonétique décrivant les dialectes les plus importants de la langue dite kikongo",
+                "author": "Karl Edvard Laman",
+                "year": 1936,
+                "url": "https://archive.org/details/dictionnairekikongofrancais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Bruxelles, Institut royal colonial belge, 1936. Entrées Kongo et kônga lues dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Le dictionnaire donne kônga, « cueillir, récolter, rassembler », et Kongo, avec ba~ « le peuple » et bisi ~ « habitants du Congo » ; il ne relie pas le verbe au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 2015,
+              "label": "Proposée en 1887, reprise en 2015"
+            },
+            "era": "colonial",
+            "hypothesisGroup": "origine du nom Kongo",
+            "statement": "Le nom Kongo viendrait de nkongo, « chasseur », selon William Holman Bentley, qui ne tranche pas. Alisa LaGamma y voit un chasseur aventureux et héroïque, selon l'article de Wikipédia.",
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+                "author": "William Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. ix",
+                "notes": "Londres, Baptist Missionary Society, 1887. Préface lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Bentley, missionnaire baptiste à San Salvador, l'ancienne Mbanza Kongo, écrit qu'on ne peut rien dire de sûr sur l'origine du nom."
+              },
+              {
+                "title": "Kongo people — Wikipedia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Kongo_people",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Section Etymology, consulté le 9 octobre 2026. Elle rapporte les lectures de Samuel Nelson (Colonialism in the Congo Basin, 1994) et d'Alisa LaGamma (Kongo: Power and Majesty, 2015, p. 18), que nous n'avons pas lues, et dit que Bakongo s'impose surtout depuis le début du XXe siècle."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bakongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kon",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : Bakongo au pluriel, Mukongo pour une seule personne.",
+        "periodLabel": "Écrit dès 1887",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Bakongo réunit le préfixe ba-, qui marque en kikongo le pluriel des noms de personnes, et le nom Kongo ; une seule personne se dit Mukongo. C'est le nom qui prévaut aujourd'hui, surtout depuis le début du XXe siècle, selon les articles de Wikipédia.",
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+                "author": "William Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. ix",
+                "notes": "Londres, Baptist Missionary Society, 1887. Préface lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Bentley, missionnaire baptiste à San Salvador, l'ancienne Mbanza Kongo, écrit qu'on ne peut rien dire de sûr sur l'origine du nom."
+              },
+              {
+                "title": "Dictionnaire kikongo-français, avec une étude phonétique décrivant les dialectes les plus importants de la langue dite kikongo",
+                "author": "Karl Edvard Laman",
+                "year": 1936,
+                "url": "https://archive.org/details/dictionnairekikongofrancais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Bruxelles, Institut royal colonial belge, 1936. Entrées Kongo et kônga lues dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Le dictionnaire donne kônga, « cueillir, récolter, rassembler », et Kongo, avec ba~ « le peuple » et bisi ~ « habitants du Congo » ; il ne relie pas le verbe au nom."
+              },
+              {
+                "title": "Kongos — Wikipédia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://fr.wikipedia.org/wiki/Kongos",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Section Ethnonymie, consulté le 9 octobre 2026. Elle donne Bakongo comme le nom qui prévaut et, d'après Wyatt MacGaffey (2000), que nous n'avons pas lu, Mukongo pour une personne et Bisi Kongo, Esikongo pour le peuple."
+              },
+              {
+                "title": "Kongo people — Wikipedia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Kongo_people",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Section Etymology, consulté le 9 octobre 2026. Elle rapporte les lectures de Samuel Nelson (Colonialism in the Congo Basin, 1994) et d'Alisa LaGamma (Kongo: Power and Majesty, 2015, p. 18), que nous n'avons pas lues, et dit que Bakongo s'impose surtout depuis le début du XXe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "Livre publié en 1887"
+            },
+            "birth": true,
+            "formAsWritten": "Bakongo",
+            "statement": "Le nom Bakongo est écrit par William Holman Bentley, qui le réserve alors aux Kongo indépendants vivant à l'est de la rivière Kwilu. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "actors": [
+              {
+                "name": "William Holman Bentley",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+                "author": "William Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. ix",
+                "notes": "Londres, Baptist Missionary Society, 1887. Préface lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Bentley, missionnaire baptiste à San Salvador, l'ancienne Mbanza Kongo, écrit qu'on ne peut rien dire de sûr sur l'origine du nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Esikongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kon",
+        "namedBy": null,
+        "shortLine": "Les gens du pays de Kongo : un nom qu'ils se donnent, Mwisikongo pour une personne.",
+        "periodLabel": "Écrit dès 1591",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens en kikongo"
+            },
+            "aspect": "meaning",
+            "statement": "Le nom Esikongo veut dire « les gens de Kongo » ; une seule personne se dit Mwisikongo. L'élément -si- vient de nsi, « pays », selon William Holman Bentley, qui écrit Exi-Kongo et Mwixi-Kongo. Karl Edvard Laman donne aussi la forme bisi Kongo, « habitants du Congo ».",
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+                "author": "William Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. ix",
+                "notes": "Londres, Baptist Missionary Society, 1887. Préface lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Bentley, missionnaire baptiste à San Salvador, l'ancienne Mbanza Kongo, écrit qu'on ne peut rien dire de sûr sur l'origine du nom."
+              },
+              {
+                "title": "Dictionnaire kikongo-français, avec une étude phonétique décrivant les dialectes les plus importants de la langue dite kikongo",
+                "author": "Karl Edvard Laman",
+                "year": 1936,
+                "url": "https://archive.org/details/dictionnairekikongofrancais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Bruxelles, Institut royal colonial belge, 1936. Entrées Kongo et kônga lues dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Le dictionnaire donne kônga, « cueillir, récolter, rassembler », et Kongo, avec ba~ « le peuple » et bisi ~ « habitants du Congo » ; il ne relie pas le verbe au nom."
+              },
+              {
+                "title": "Kongos — Wikipédia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://fr.wikipedia.org/wiki/Kongos",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Section Ethnonymie, consulté le 9 octobre 2026. Elle donne Bakongo comme le nom qui prévaut et, d'après Wyatt MacGaffey (2000), que nous n'avons pas lu, Mukongo pour une personne et Bisi Kongo, Esikongo pour le peuple."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "Livre publié en 1887"
+            },
+            "era": "colonial",
+            "formAsWritten": "Mwixi-Kongo, pl. Exi-Kongo",
+            "statement": "Le nom Esikongo est écrit « Mwixi-Kongo, pl. Exi-Kongo » par William Holman Bentley.",
+            "actors": [
+              {
+                "name": "William Holman Bentley",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+                "author": "William Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. ix",
+                "notes": "Londres, Baptist Missionary Society, 1887. Préface lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Bentley, missionnaire baptiste à San Salvador, l'ancienne Mbanza Kongo, écrit qu'on ne peut rien dire de sûr sur l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1591,
+              "to": 1591,
+              "label": "Livre publié en 1591"
+            },
+            "era": "polity",
+            "birth": true,
+            "formAsWritten": "Mociconghi",
+            "statement": "Le nom Esikongo est écrit Mociconghi par Filippo Pigafetta, d'après les récits du Portugais Duarte Lopes : c'est ainsi, écrit-il, que se nomment les gens nés au royaume de Congo. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "actors": [
+              {
+                "name": "Filippo Pigafetta",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Relatione del reame di Congo et delle circonvicine contrade",
+                "author": "Filippo Pigafetta, d'après les récits de Duarte Lopes",
+                "year": 1591,
+                "url": "https://archive.org/details/ARes04525",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 20",
+                "notes": "Rome, 1591. Lu dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Le texte écrit « Mociconghi (con questo vocabolo chiamandosi li nati) del reame di Congo »."
+              },
+              {
+                "title": "A Report of the Kingdom of Congo, and of the Surrounding Countries",
+                "author": "Filippo Pigafetta et Duarte Lopes, traduit par Margarite Hutchinson",
+                "year": 1881,
+                "url": "https://archive.org/details/reportofkingdomo00lope",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34",
+                "notes": "Londres, John Murray, 1881. Traduction anglaise lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026 : « Mociconghi (for so the natives of Congo are called, as those of Spain are called Spaniards) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Congo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "La graphie du nom Kongo dans les textes portugais, italiens et français.",
+        "periodLabel": "Écrit dès 1591",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Congo est la graphie du nom Kongo dans les textes européens. En 1887, William Holman Bentley lui préfère Kongo, plus proche de la prononciation, tout en notant que la graphie en C est trop installée pour disparaître.",
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+                "author": "William Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. ix",
+                "notes": "Londres, Baptist Missionary Society, 1887. Préface lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Bentley, missionnaire baptiste à San Salvador, l'ancienne Mbanza Kongo, écrit qu'on ne peut rien dire de sûr sur l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1591,
+              "to": 1591,
+              "label": "Livre publié en 1591"
+            },
+            "era": "polity",
+            "formAsWritten": "Congo",
+            "statement": "Le nom Congo figure dans le titre du livre de Filippo Pigafetta, Relatione del reame di Congo, paru à Rome en 1591.",
+            "actors": [
+              {
+                "name": "Filippo Pigafetta",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Relatione del reame di Congo et delle circonvicine contrade",
+                "author": "Filippo Pigafetta, d'après les récits de Duarte Lopes",
+                "year": 1591,
+                "url": "https://archive.org/details/ARes04525",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Rome, 1591. Page de titre lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -113,22 +113,153 @@
       {
         "title": "UNESCO — Vimbuza healing dance (inscrit 2008)",
         "url": "https://ich.unesco.org/en/RL/vimbuza-healing-dance-00158",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "SIL Ethnologue — Tumbuka (tum)",
         "url": "https://www.ethnologue.com/language/tum/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Qiraat Africa — The Tumbuka People of Africa (2025)",
         "url": "https://qiraatafrican.com/en/15125/the-tumbuka-people-of-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Encyclopaedia Britannica — Tumbuka",
         "url": "https://www.britannica.com/topic/Tumbuka",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tumbuka désigne un peuple du nord du Malawi et de l'est de la Zambie, qui se nomme lui-même Batumbuka, ou Watumbuka. D'autres noms existent : Mutumbuca et Matumboka dans les textes portugais et anglais anciens. On ne sait pas avec certitude d'où vient le nom Tumbuka ; nous n'avons trouvé aucune explication sourcée.",
+    "names": [
+      {
+        "nameText": "Tumbuka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tum",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; un Portugais l'écrit Mutumbuca dès 1798.",
+        "periodLabel": "Une forme proche est écrite dès 1798",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tumbuka désigne un peuple et une langue du nord du Malawi ; avant 1500 environ, des clans de langue tumbuka, Luhanga, Kachali, Nyirongo, Mtika et Nyanjagha, vivent déjà dans la plaine de Nkamanga et les vallées de Henga et de Kasitu, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila. On ne sait pas avec certitude d'où vient ce nom : les sources que nous avons lues ne l'expliquent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 670",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. « Entre la région de Phoka, au nord, et celle des Chewa, au sud, vivaient divers clans de langue tumbuka. La plaine de Nkamanga ainsi que les vallées de Henga et de Kasitu avaient pour principaux occupants les Luhanga, les Kachali, les Nyirongo, les Mtika et les Nyanjagha. » Le texte parle aussi du « Tumbukaland »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tumbuka est écrit A-timbuka ou Ba-tumbuka par Harry H. Johnston, qui fait du « Ba-tumbuka stock » l'un des grands groupes de langues du pays, avec les Wa-tonga et peut-être les Wa-henga.",
+            "formAsWritten": "A-timbuka or Ba-tumbuka",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 389-390",
+                "notes": "Londres, Methuen, 1897, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « The Ba-tumbuka stock. This includes the Wa-tonga, the A-timbuka or Ba-tumbuka, and to some extent the Wa-henga, A-nyika, and A-poka »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1865,
+              "label": "Voyage de 1863, récit publié en 1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Tumbuka a une forme proche, Matumboka, chez David et Charles Livingstone : à l'ouest du lac Nyasa, « les gens se nomment eux-mêmes Matumboka », et ne se distinguent des Manganja que par leurs tatouages du visage.",
+            "formAsWritten": "Matumboka",
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries",
+                "author": "David et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/narrativeofexpe00livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 377 et 524",
+                "notes": "Londres, John Murray, 1865, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Page 377 : « The Matumboka, or Atimboka, raise up little knobs on the skin of their faces ». Page 524 : « The people call themselves Matumboka, but the only difference between them and the rest of the Manganja is in the mode of tattooing the face. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1798,
+              "to": 1798,
+              "label": "11 août 1798"
+            },
+            "era": "polity",
+            "statement": "Le nom Tumbuka a une forme proche, Mutumbuca, dans le journal du Portugais Francisco José de Lacerda e Almeida : entre le pays du chef Mocando et la rivière Aruangoa, « une autre tribu, les Mutumbuca, est mêlée aux Marave ». Richard F. Burton, qui traduit ce journal, y reconnaît les Tumbuka. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Mutumbuca",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 77",
+                "notes": "Londres, John Murray pour la Royal Geographical Society, 1873, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Journal du 11 août 1798 : « another tribe, the Mutumbuca, is mixed with the Maraves, subject to the chief of the latter ». En note, Burton les appelle Mutumbukas, rappelle que le journal les écrit aussi « Botombucas » et que Monteiro et Gamitto parlent en 1831 de la « Tumbuca tribe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1500,
+              "label": "Avant 1500 environ"
+            },
+            "era": "polity",
+            "statement": "On parle alors, dans le nord du Malawi, de clans sans État, Sikwese, Chilima, Mzembe Luhanga, Nyanjagha, Nyirongo, Mtonga et d'autres, que des immigrants plus puissants tenteront plus tard d'organiser en États, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 667-668",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 667 : « Au Malawi septentrional, les premiers des habitants bantu actuels formaient principalement une population sans État » ; la liste des clans comprend Sikwese, Chilima, Silumbu, Simwayi, Chiluba, Mzembe Luhanga, Nyanjagha, Nyirongo, Kanyinji et Mtonga."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

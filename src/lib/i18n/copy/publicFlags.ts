@@ -31,7 +31,7 @@ const fr = {
     withdrawn: "retirée",
   },
   remediation: {
-    label: "État du corpus",
+    label: "Avancement de la correction",
     notStarted: {
       state: "Correction non encore publiée",
       body: (decidedOn: string) =>
@@ -59,7 +59,7 @@ const fr = {
     other: "Autre",
   },
   targets: {
-    assertion: "Assertion",
+    assertion: "Information concernée",
     source: "Source",
     fiche_section: "Section de page",
     classification: "Classification",

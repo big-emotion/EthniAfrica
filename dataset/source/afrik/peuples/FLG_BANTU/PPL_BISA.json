@@ -83,7 +83,8 @@
       {
         "title": "Bisa in Zambia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10875",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bisa – Zambia's Traditional History – Scribd",
@@ -93,17 +94,20 @@
       {
         "title": "Bisa people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/bisa.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Lala-Bisa Language (LEB) – Ethnologue SIL",
         "url": "https://www.ethnologue.com/language/leb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Lala-Bisa – Glottolog",
         "url": "https://glottolog.org/resource/languoid/id/lala1264",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Bisa Tribe Safari Tours – Kingsfari",

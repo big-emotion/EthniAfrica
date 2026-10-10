@@ -12,7 +12,7 @@
         "Nago (terme colonial francophone, connotation reductrice, encore employe au Benin et au Togo)",
         "Aku (diaspora historique en Sierra Leone et en Gambie)"
       ],
-      "originOfExonyms": "Nago est un terme utilise par les colons francais pour designer les Yoruba du Dahomey (actuel Benin) et du Togo ; il a une connotation reductrice et est evite en contexte academique. Aku designe les Yoruba liberes de la traite et reinstalles en Sierra Leone au 19e siecle ; il derive probablement de oka ou oka, un terme de salutation yoruba.",
+      "originOfExonyms": "Nago est un terme utilise par les colons francais pour designer les Yoruba du Dahomey (actuel Benin) et du Togo ; il a une connotation reductrice et est evite en contexte academique. Aku designe les Yoruba liberes de la traite et reinstalles en Sierra Leone au 19e siecle ; il viendrait de oka ou oka, un terme de salutation yoruba.",
       "whyProblematic": "Nago peut etre percu comme reducteur par les communautes concernees. L'appellation Aku en Sierra Leone est specifique a la diaspora musulmane liberee et non a la totalite des Yoruba.",
       "contemporaryUsage": "Yoruba est le terme universel dans les contextes academi­ques, officiels et communautaires en Afrique de l'Ouest et dans la diaspora. La Sierra Leone constitue une presence diasporique historique verifiable (communaute Aku / Oku, descendants de Yoruba liberes par la Royal Navy au 19e siecle et reinstalles a Freetown).",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -86,7 +86,7 @@
     "culture": {
       "majorRites": "Le culte des orisha (divinites) structure la vie rituelle : chaque orisha (Sango, Ogun, Yemoja, Osun, Obatala, Esu, Oya, etc.) dispose de fetes annuelles, de pratiques initiatiques et de codes de conduite specifiques. La divination Ifa (consultation du babalawo avec le chapelet d'Opele ou les noix d'Ikin) est au coeur des decisions individuelles et collectives ; Ifa est inscrit au patrimoine culturel immateriel de l'UNESCO (2005). Les masques Gelede celebrent la puissance des femmes agees (iyami) et sont inscrits au patrimoine UNESCO (2003). Les funerailles (iku) et les ceremonies d'accession au trone (installation de l'Oba) sont des evenements sociaux majeurs.",
       "symbols": "Les bronzes et sculptures de Ife et Benin (12e-15e siecles) representent le sommet de l'art classique yoruba. L'Opa Oranmiyan (stele rituelle d'Ile-Ife) symbolise l'heritage fondateur. Les tambours dundun (tambour d'aisselle parlant) sont l'instrument emblematique, capables de reproduire les tons de la langue yoruba. Les tissus aso-oke (brocart traditionnel tisse) et adire (batik a l'indigo) sont les symboles textiles de l'identite.",
-      "artsAndMusic": "La tradition musicale yoruba est internationalement reconnue : le dundun (tambour parlant), le bata (tambour sacre d'orisha), et le sekere (calebasse percussive) sont les instruments classiques. Le juju music (King Sunny Ade, Ebenezer Obey), l'afrobeat (Fela Kuti), le fuji et l'apala sont des genres musicaux modernes d'origine yoruba. La sculpture sur bois (masques, statues d'orisha), l'art bronze, la peinture sur tissu (adire eleko) et l'architecture des palais royaux (afin) forment le corpus artistique. La litterature yoruba inclut des epopees orales (ijala pour les chasseurs, ewi pour la poesie), des contes (alo), et des proverbes (owe).",
+      "artsAndMusic": "La musique yoruba utilise notamment le dundun, un tambour parlant, le bata, un tambour sacré lié aux orisha, et le sekere, une calebasse servant de percussion. Le juju music de King Sunny Ade et d'Ebenezer Obey, l'afrobeat de Fela Kuti, le fuji et l'apala sont des genres modernes d'origine yoruba. Les arts comprennent aussi la sculpture de masques et de statues d'orisha en bois, le travail du bronze, la peinture sur tissu adire eleko et l'architecture des palais royaux, appelés afin. La littérature orale comprend l'ijala des chasseurs, la poésie ewi, les contes alo et les proverbes owe.",
       "spiritualities": "La religion traditionnelle yoruba (Aborisa) reconnait un Dieu supreme Olodumare (ou Olorun) et un pantheon de divinites secondaires les orisha, intermediaires entre les humains et le divin. Le culte Ifa est un systeme de divination et de connaissance sacree classe au patrimoine de l'UNESCO. Les religions afro-diaspori­ques derivees incluent le Candomble (Bresil), la Santeria / Lucumi (Cuba), le Sango (Trinidad), et le Vodou (Haiti, en partie). L'islam sunnite represente environ 50% des Yoruba du Nigeria (principalement Oyo, Ilorin) et le christianisme environ 40%, avec syncreti­sme frequent entre les trois traditions."
     },
     "historicalRole": {
@@ -111,37 +111,44 @@
       {
         "title": "Encyclopedia Africana ; Ife studies",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ethnologue, Yoruba (yor)",
         "url": "https://www.ethnologue.com/language/yor",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog, Yoruba",
         "url": "https://glottolog.org/resource/languoid/id/yoru1245",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project, Yoruba in Sierra Leone",
         "url": "https://joshuaproject.net/people_groups/16057/SL",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org, Yoruba of Sierra Leone",
         "url": "https://peoplegroups.org/people_groups/pg014300/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "UNESCO, Patrimoine culturel immateriel Ifa (2005) et Gelede (2003)",
         "url": "https://ich.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Britannica, Oyo Empire",
         "url": "https://www.britannica.com/place/Oyo-empire",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Lumen Learning, The Yoruba States",
@@ -152,7 +159,91 @@
         "title": "Wikidata — Yoruba people (Q190168)",
         "url": "https://www.wikidata.org/wiki/Q190168",
         "tier": "referenced",
+        "source_kind": "community",
         "notes": "Structured identifier catalogue, used only for the wikidataId cross-reference; associated countries (Nigeria, Benin, Togo) match currentCountries."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Yorùbá est celui que ce peuple se donne. On le connaît aussi sous le nom Nago. Leur histoire est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Yorùbá",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yor",
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Terme universel dans les contextes académiques, officiels et communautaires en Afrique de l'Ouest et dans la diaspora.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ethnologue: Languages of the World — Yoruba (yor)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/yor",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nago",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que la littérature ethnographique française donne aux Yoruba.",
+        "periodLabel": "Période coloniale française, encore en usage au Bénin et au Togo",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "XIXe-XXe siècle"
+            },
+            "era": "colonial",
+            "statement": "Terme employé par l'administration coloniale française pour désigner les Yoruba du Dahomey (actuel Bénin) et du Togo ; perçu comme réducteur par les communautés concernées.",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Administration coloniale française",
+                "role": "impose ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Glottolog 5.0 — Yoruboid: Yoruba",
+                "author": "Max Planck Institute for Evolutionary Anthropology",
+                "year": 2024,
+                "url": "https://glottolog.org/resource/languoid/id/yoru1245",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": ""
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 26 : Dahomey, pays yoruba, Borgu (Borgou) et Bénin au XIXe siècle",
+                "author": "A. I. Asiwaju",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, volume dirigé par Jacob F. Ade Ajayi. Page 745 : « L'aire culturelle yoruba (nago dans la littérature ethnographique française) »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

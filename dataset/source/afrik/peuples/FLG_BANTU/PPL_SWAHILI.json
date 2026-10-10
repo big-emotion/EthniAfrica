@@ -11,9 +11,12 @@
       "exonyms": [
         "Swahili (d'origine arabe, de sawāḥil « côtes » ; les Swahili l'emploient aussi d'eux-mêmes en 1850, selon Krapf)",
         "Arabes de la cote (terme inexact et problematique utilise par les Europeens)",
-        "Wangozi (nom originel, parlaient le Kingozi, ancetre du swahili)"
+        "Wangozi (nom originel, parlaient le Kingozi, ancetre du swahili)",
+        "Coastal people (terme anglophone informel)",
+        "People of the Coast (traduction de Waswahili)",
+        "Zanzibari"
       ],
-      "originOfExonyms": "Swahili vient de l'arabe sawāḥil, pluriel de sāḥil, « rivage, côte » : les Swahili sont « ceux de la côte » (Krapf, 1850 ; Robinson, 2024). Au XIVe siècle, Ibn Battuta emploie déjà sawāḥil, mais pour un pays : dans la traduction de Gibb (1962), il embarque à Mogadiscio « pour le pays des Sawahil [Coastlands] » et nomme Zinj les habitants de Kilwa. Le mot désigne alors une côte, non un peuple. En 1850, Krapf entend les Swahili l'employer d'eux-mêmes et rapporte trois explications du nom : une expression swahili saua hila, tirée de l'arabe hila, « ruse », que lui donnent ses interlocuteurs et qu'il récuse ; un rapprochement avec sühel, « sud-est, sud-ouest », que Krapf rattache à l'arabe suhailon, l'étoile Canopus ; et sāḥil, « côte », qu'il juge la plus juste. La date de la première attestation du mot pour des gens ou une langue n'est pas établie. L'auto-identification Waswahili s'est imposée comme dénominateur commun d'une identité complexe bantoue, arabe, persane et indienne.",
+      "originOfExonyms": "Swahili viendrait de l'arabe sawāḥil, pluriel de sāḥil, « rivage, côte » : les Swahili seraient « ceux de la côte », selon Krapf (1850) et Robinson (2024). Au XIVe siècle, Ibn Battuta emploie déjà sawāḥil, mais pour un pays : dans la traduction de Gibb (1962), il embarque à Mogadiscio « pour le pays des Sawahil [Coastlands] » et nomme Zinj les habitants de Kilwa. Le mot désigne alors une côte, non un peuple. En 1850, Krapf entend les Swahili l'employer d'eux-mêmes et rapporte trois explications du nom : une expression swahili saua hila, tirée de l'arabe hila, « ruse », que lui donnent ses interlocuteurs et qu'il récuse ; un rapprochement avec sühel, « sud-est, sud-ouest », que Krapf rattache à l'arabe suhailon, l'étoile Canopus ; et sāḥil, « côte », qu'il juge la plus juste. La date de la première attestation du mot pour des gens ou une langue n'est pas établie. L'auto-identification Waswahili s'est imposée comme dénominateur commun d'une identité complexe bantoue, arabe, persane et indienne.",
       "whyProblematic": "L'appellation Arabes pour les Waswahili efface leur fondement bantou dominant. Certains chercheurs distinguent les Waswahili ethniques (population de la cote) des locuteurs du swahili comme langue vehiculaire (plusieurs dizaines de millions de personnes).",
       "contemporaryUsage": "Waswahili designe aujourd'hui les communautes historiques de la cote est-africaine (Kenya, Tanzanie, nord du Mozambique, Comores) partageant une culture islamique, une architecture specifique et un patrimoine commercial maritime.",
       "linguisticFamily": "FLG_BANTU",
@@ -27,7 +30,13 @@
       "Shirazi — sous-groupe se reclamant d'une origine persane (Shiraz), present sur la cote et a Zanzibar",
       "Waswahili des Comores — lies Comores et Mayotte, proches culturellement et linguistiquement",
       "Waswahili du Mozambique — nord du Mozambique (Mozambique Island, Mtwara, Cabo Delgado)",
-      "Bajuni — sous-groupe peuplant les iles de la cote nord du Kenya et sud de la Somalie"
+      "Bajuni — sous-groupe peuplant les iles de la cote nord du Kenya et sud de la Somalie",
+      "Waswahili de Lamu (Amu : habitants historiques de Lamu, sous-groupe le plus ancien et le plus conservateur)",
+      "Waswahili de Mombasa (Mvita : habitants de la ville insulaire de Mombasa)",
+      "Waswahili de Vanga et Shimoni (côte sud du Kenya)",
+      "Hadimu — groupe originel de l'ile d'Unguja (Zanzibar), souvent forces de travailler dans les plantations",
+      "Tumbatu — habitants de l'ile de Tumbatu, pres de Zanzibar, avec un dialecte swahili specifique (Kitumbatu)",
+      "Waswahili de Bagamoyo et Pangani — communautes cotieres continentales, historiquement importantes dans le commerce caravanier"
     ],
     "origins": {
       "ancientOrigins": "La civilisation swahili emerge de la rencontre entre des agriculteurs-pecheurs bantouphones installes sur la cote est-africaine depuis le debut du premier millenaire de notre ere et des marchands et immigrants arabes et persans. L'evidence archeologique a Fukuchani (nord-ouest de Zanzibar) date du 6e siecle des communautes sedentaires pratiquant agriculture et peche, avec des echanges limites (ceramiques persanes). Une etude ADN de 2022 sur 80 tombes islamiques datees 1250-1800 CE sur la cote swahili revele une ascendance maternelle majoritairement est-africaine (bantou et neolithique pastoral) et une ascendance paternelle majoritairement asiatique (principalement persane).",
@@ -36,7 +45,9 @@
         "Installation bantouphone initiale le long de la cote est-africaine (1er-6e siecle)",
         "Arrivee de marchands et immigrants du Golfe persique (Perse, Oman) a partir du 8e-9e siecle",
         "Diffusion swahili vers l'interieur via les routes caravanières (19e siecle) : Zanzibar - Ujiji - Buganda - Katanga",
-        "Commerce triangulaire Zanzibar : Oman - cote - interieur africain (ivoire, esclaves, clous de girofle)"
+        "Commerce triangulaire Zanzibar : Oman - cote - interieur africain (ivoire, esclaves, clous de girofle)",
+        "Migration de musulmans bantou de l'archipel de Lamu vers Malindi et Mombasa (Xe-XIe siècle)",
+        "Domination omanaise et migrations depuis Oman (XVIIe-XIXe siècle)"
       ],
       "historicalSettlementZones": [
         "Archipel de Zanzibar (Unguja, Pemba) — capitale commerciale du monde swahili depuis le 10e siecle",
@@ -44,7 +55,13 @@
         "Kilwa Kisiwani (Tanzanie) — cite-Etat la plus prospere du 13e au 16e siecle, commerce de l'or zimbabween",
         "Mombasa (Kenya) — principal port de la cote kenyane",
         "Sofala (Mozambique) — extreme sud de la cote swahili, debouche du commerce de l'or shona",
-        "Comores — archipel integre a la sphere swahili depuis le 9e siecle"
+        "Comores — archipel integre a la sphere swahili depuis le 9e siecle",
+        "Malindi et Gedi (ruines de la cité médiévale à 15 km de Malindi)",
+        "Vanga et Shimoni (côte sud du Kenya, frontière tanzanienne)",
+        "Zanzibar (Pemba) — ile a forte production de girofle",
+        "Songo Mnara — ile proche de Kilwa, egalement site UNESCO",
+        "Bagamoyo — tete de pont du commerce caravanier vers l'interieur",
+        "Dar es Salaam — fondee par le Sultan Majid de Zanzibar vers 1865"
       ],
       "unificationsOrDivisions": "Les cites-Etats swahili n'ont jamais forme un empire unifie mais un reseau de sultanats et de republiques marchandes independants partageant culture, langue et religion. La domination omanaise (Sultanat de Zanzibar, 1698-1964) unifa partiellement cet espace sous une hegemonie commerciale et politique. L'arrivee des Portugais (1498) perturba les routes commerciales et affaiblit plusieurs cites-Etats (Kilwa, Sofala). La Revolution de Zanzibar (1964) abolit le sultanat.",
       "externalInfluences": "Islam sunnite (8e-9e siecle) : restructura l'identite, l'architecture et le droit. Influences persanes (langue, ceramiques, systeme d'irrigation). Influence indienne (textiles, mathematiques, gastronomie). Domination portugaise (1498-17e siecle) : destruction partielle des cites-Etats. Domination omanaise (17e-19e siecle) : sultanat de Zanzibar, commerce des esclaves et des clous de girofle. Colonisation britannique et allemande (fin 19e siecle).",
@@ -59,14 +76,19 @@
     },
     "languages": {
       "mainLanguage": "Kiswahili (Swahili)",
-      "isoCodes": ["swa"],
+      "isoCodes": ["swa", "swh"],
       "dialects": [
         "Kiamu — dialecte de Lamu et archipel, repute le plus conservateur et prestige",
         "Kimvita — dialecte de Mombasa",
         "Kiunguja — dialecte de Zanzibar (Unguja), base du swahili standard moderne",
         "Kipemba — dialecte de l'ile de Pemba",
         "Kingozi — variete ancienne, ancetre probable du swahili moderne",
-        "Chimwini — dialecte de la cote de Barawa (Somalie meridionale)"
+        "Chimwini — dialecte de la cote de Barawa (Somalie meridionale)",
+        "Kipate (dialecte de l'île de Pate, archipel de Lamu)",
+        "Kibajuni (dialecte des Bajuni de l'archipel de Lamu et de la côte somalienne)",
+        "Kitumbatu — dialecte de l'ile de Tumbatu (nord de Zanzibar), plus conservateur et moins arabise",
+        "Kimrima — dialecte cotier de la Tanzanie continentale (Dar es Salaam, Bagamoyo, Tanga)",
+        "Kimakunduchi — dialecte du sud de Zanzibar, plus archaique"
       ],
       "vehicularRole": "Le kiswahili est la langue nationale de la Tanzanie et du Kenya, langue officielle de la Communaute d'Afrique de l'Est (EAC), et langue de l'Union africaine. Il sert de vehiculaire pour environ 100 a 200 millions de personnes en Afrique subsaharienne (locuteurs natifs + appris). C'est la langue commerciale de l'Afrique de l'Est et des Grands Lacs, utilisee dans l'est de la RDC et en Ouganda."
     },
@@ -85,7 +107,7 @@
     "demography": {
       "totalPopulation": 2000000,
       "referenceYear": 2025,
-      "source": "La population waswahili au sens ethnique strict (communautes historiques de la cote) est estimee a 1 a 2 millions. A distinguer des locuteurs du swahili comme langue vehiculaire (100-200 millions). Source : Wikipedia Swahili people (2024), Joshua Project profils Swahili Kenya/Tanzanie. La distinction entre Waswahili ethniques et locuteurs swahili rend les estimations difficiles.",
+      "source": "La population waswahili au sens ethnique strict (communautes historiques de la cote) est estimee a 1 a 2 millions. A distinguer des locuteurs du swahili comme langue vehiculaire (100-200 millions). Source : Wikipedia Swahili people (2024), Joshua Project profils Swahili Kenya/Tanzanie. La distinction entre Waswahili ethniques et locuteurs swahili rend les estimations difficiles. Au Kenya, Stats Kenya (2024) compte environ 68 000 a 70 000 Swahili au sens ethnique strict, sur la cote (Mombasa, Kilifi, Lamu). En Tanzanie, une autre estimation donne 1 000 000 a 1 500 000 Waswahili (1 200 000 retenus) : Zanzibar compte environ 1,6 million d'habitants au recensement de 2022, en grande majorite d'identite swahili, et Ethnologue (2024) compte environ 2 millions de locuteurs natifs du swahili en Tanzanie.",
       "distributionByCountry": [
         {
           "country": "KEN",
@@ -117,45 +139,262 @@
       {
         "title": "SIL Ethnologue — Swahili (swa)",
         "url": "https://www.ethnologue.com/language/swa/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO World Heritage — Stone Town of Zanzibar",
         "url": "https://whc.unesco.org/en/list/173/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Joshua Project — Swahili in United States",
         "url": "https://joshuaproject.net/people_groups/15145/US",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "CIA World Factbook — Tanzania",
         "url": "https://www.cia.gov/the-world-factbook/countries/tanzania/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Kenya",
         "url": "https://www.cia.gov/the-world-factbook/countries/kenya/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Krapf, J. L., Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect, Tübingen, L. F. Fues, 1850",
         "url": "https://archive.org/details/krapf-outline-of-the-elements-of-the-kisuaheli-language",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Section III, « General remarks on the term Suaheli », p. 9-10. Lu sur la numérisation d'archive.org : texte reconnu automatiquement, puis pages 9 et 10 relues sur l'image. Source des trois explications du nom et de l'emploi du nom par les Swahili eux-mêmes."
       },
       {
         "title": "Ibn Battuta, The Travels of Ibn Battuta, A.D. 1325-1354, traduit par H. A. R. Gibb, vol. II, Cambridge, Hakluyt Society, 1962",
         "url": "https://archive.org/details/travelsofibnbatt02harg",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Chapitre sur Mambasa et Kulwa, p. 378 et note 56. Lu sur la numérisation d'archive.org (texte reconnu automatiquement). Source de l'emploi de sawāḥil pour un pays côtier et de zinj pour les habitants de Kilwa ; le texte arabe n'a pas été consulté."
       },
       {
         "title": "Robinson, Morgan J., « History of the Standard Swahili Language », Oxford Research Encyclopedia of African History, 2024",
         "url": "https://doi.org/10.1093/acrefore/9780190277734.013.1012",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article publié en ligne le 30 janvier 2024, lu en texte intégral. Source du passage sur l'origine arabe du nom."
+      },
+      {
+        "title": "UNESCO World Heritage Centre — Lamu Old Town",
+        "url": "https://whc.unesco.org/en/list/1055/",
+        "tier": "official",
+        "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Africa Unfiltered — Stone Towns of the Swahili Coast",
+        "url": "https://africaunfiltered.substack.com/p/stone-towns-of-the-swahili-coast",
+        "tier": "unverified"
+      },
+      {
+        "title": "Friends of Mombasa — The Swahili",
+        "url": "https://www.friendsofmombasa.com/migration-rich-cultures/the-swahili/",
+        "tier": "needs_review"
+      },
+      {
+        "title": "African World Heritage Sites — Lamu Old Town",
+        "url": "https://www.africanworldheritagesites.org/cultural-places/swahili-coast/lamu-old-town.html",
+        "tier": "referenced"
+      },
+      {
+        "title": "Stats Kenya — Tribe and Ethnicity in Kenya",
+        "url": "https://statskenya.co.ke/at-stats-kenya/about/tribe-and-ethnicity-in-kenya-number-of-people-by-tribe/93/",
+        "tier": "unverified"
+      },
+      {
+        "title": "SIL Ethnologue — Swahili (swh)",
+        "url": "https://www.ethnologue.com/language/swh/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "UNESCO World Heritage Centre — Ruins of Kilwa Kisiwani and Ruins of Songo Mnara",
+        "url": "https://whc.unesco.org/en/list/144/",
+        "tier": "official",
+        "source_kind": "intergovernmental"
+      },
+      {
+        "title": "NPR — The Hot New Musical Trend In Zanzibar Is From The 1880s",
+        "url": "https://www.npr.org/sections/goatsandsoda/2018/09/29/650073622/the-hot-new-musical-trend-in-zanzibar-is-from-the-80s-the-1880s",
+        "tier": "needs_review",
+        "source_kind": "press"
+      },
+      {
+        "title": "National Geographic — Tanzania's Zanzibar is the cradle of African Swahili culture",
+        "url": "https://www.nationalgeographic.com/travel/article/why-tanzanias-zanzibar-is-the-cradle-of-african-swahili-culture",
+        "tier": "referenced",
+        "source_kind": "press"
+      },
+      {
+        "title": "The Conversation — Ancient DNA is restoring the origin story of the Swahili people",
+        "url": "https://theconversation.com/ancient-dna-is-restoring-the-origin-story-of-the-swahili-people-of-the-east-african-coast-201154",
+        "tier": "referenced",
+        "source_kind": "press"
+      },
+      {
+        "title": "Pan African Music — Taarab in Zanzibar",
+        "url": "https://pan-african-music.com/en/taarab-zanzibar/",
+        "tier": "needs_review"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Swahili désigne un peuple de la côte d'Afrique de l'Est, du Kenya au nord du Mozambique et aux Comores, qui se nomme lui-même Waswahili, et Mswahili pour une seule personne. Le mot vient de l'arabe, mais les sources ne s'accordent pas sur ce qu'il voulait dire ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Waswahili",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "swa",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, Mswahili pour une personne ; le mot viendrait de l'arabe.",
+        "periodLabel": "Écrit depuis 1850 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Waswahili désigne les gens de la côte, par opposition à ceux de l'intérieur et des collines, selon le missionnaire Johann Ludwig Krapf. L'origine du mot est discutée ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9-11",
+                "notes": "Tübingen, L. F. Fues, lu sur la numérisation d'Internet Archive. L'auteur, missionnaire, vit alors près de Mombasa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1850,
+              "label": "Livre publié en 1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Waswahili est écrit « Suaheli » par Johann Ludwig Krapf, qui entend les Swahili l'employer d'eux-mêmes : « ne sommes-nous pas Suaheli », disent-ils quand ils se sortent d'une difficulté. C'est la plus ancienne trace que le projet connaît de ce nom pour des personnes. On ne sait pas avec certitude depuis quand ils se nomment ainsi.",
+            "formAsWritten": "Suaheli",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9-11",
+                "notes": "Tübingen, L. F. Fues, lu sur la numérisation d'Internet Archive. L'auteur, missionnaire, vit alors près de Mombasa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1331,
+              "to": 1332,
+              "label": "Vers 1331"
+            },
+            "era": "polity",
+            "statement": "On parle alors du « pays des Sawahil » chez le voyageur Ibn Battuta, qui s'embarque à Mogadiscio pour cette côte ; il appelle Zinj les habitants de Kilwa. Le mot désigne ici une côte, pas un peuple, selon la traduction de H. A. R. Gibb.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Travels of Ibn Battuta, A.D. 1325-1354, vol. II",
+                "author": "Ibn Battuta, traduit par H. A. R. Gibb",
+                "year": 1962,
+                "url": "https://archive.org/details/travelsofibnbatt02harg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 378-379",
+                "notes": "Cambridge, Hakluyt Society, lu sur la numérisation d'Internet Archive. La note 56 du traducteur explique le mot sāḥil."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1850,
+              "label": "Rapportée en 1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Waswahili viendrait de l'arabe sahel, au pluriel suahel, « rivage, côte » : ce seraient « les gens de la côte », selon Johann Ludwig Krapf, qui tient cette explication pour la plus juste.",
+            "hypothesisGroup": "origine du nom Waswahili",
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9-11",
+                "notes": "Tübingen, L. F. Fues, lu sur la numérisation d'Internet Archive. L'auteur, missionnaire, vit alors près de Mombasa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1850,
+              "label": "Rapportée en 1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Waswahili viendrait de saua hila, « ruse égale » ou « fais une ruse », tiré de l'arabe hila, « ruse », selon les habitants de la côte interrogés par Johann Ludwig Krapf. Krapf rejette cette explication.",
+            "hypothesisGroup": "origine du nom Waswahili",
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9-11",
+                "notes": "Tübingen, L. F. Fues, lu sur la numérisation d'Internet Archive. L'auteur, missionnaire, vit alors près de Mombasa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1850,
+              "label": "Rapportée en 1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Waswahili viendrait de sihel, « sud-est, sud-ouest », que Johann Ludwig Krapf rattache à l'arabe suhailon, l'étoile Canopus : la côte serait le pays situé vers le sud-ouest de l'Arabie.",
+            "hypothesisGroup": "origine du nom Waswahili",
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9-11",
+                "notes": "Tübingen, L. F. Fues, lu sur la numérisation d'Internet Archive. L'auteur, missionnaire, vit alors près de Mombasa."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

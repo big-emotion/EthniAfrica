@@ -16,7 +16,7 @@
       ],
       "originOfExonyms": "Le terme Tabwa viendrait d'un verbe de leur langue signifiant etre attache, en référence à la période où ils furent victimes de la traite des esclaves. Rungu est le nom utilisé en swahili et par certains linguistes pour désigner leur langue. Shila ou Sila est le nom donné aux Tabwa de Zambie dont la langue a été influencée par le bemba lors de leur migration au 18e siècle.",
       "whyProblematic": "L'identité tabwa est en partie une construction coloniale : les populations qui s'identifient aujourd'hui comme Tabwa étaient à l'origine une série de villages distincts aux histoires différentes. L'administration coloniale belge a unifié ces groupes sous un même nom. La frontière ethnique avec les Lungu voisins est fluide, et certaines sources confondent les deux groupes.",
-      "contemporaryUsage": "Tabwa (ou Taabwa) est l'appellation couramment utilisée en anglais et en français. Les Tabwa de Zambie sont souvent désignés Shila. L'ethnonyme est devenu plus consolidé au cours du 20e siècle.",
+      "contemporaryUsage": "Tabwa, ou Taabwa, est le nom courant en anglais et en français. En Zambie, les Tabwa sont souvent appelés Shila. L'usage de ce nom de peuple s'est affirmé au cours du XXe siècle.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou (Zone M, groupe Bemba)",
       "historicalRegion": "Rivages sud-ouest du lac Tanganyika — massif de Marungu (Province du Katanga/Tanganyika, RDC) ; nord-est de la Zambie (districts de Mpulungu, Mbala)",
@@ -97,22 +97,26 @@
       {
         "title": "Britannica — Tabwa (people)",
         "url": "https://www.britannica.com/topic/Tabwa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Roberts, Allen F. The Rising of a New Moon: A Century of Tabwa Art. Ann Arbor: University of Michigan Museum of Art / Smithsonian Institution, 1985",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Smithsonian National Museum of African Art — The Rising of a New Moon",
         "url": "https://www.si.edu/exhibitions/rising-new-moon-century-tabwa-art:event-exhib-1208",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Metropolitan Museum of Art — Mukisi Mupasi (ancestor figure), Tabwa peoples",
         "url": "https://www.metmuseum.org/art/collection/search/311052",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Seattle Art Museum — Balamwezi: The Rising of the New Moon",
@@ -127,12 +131,14 @@
       {
         "title": "101lasttribes.com — Tabwa people",
         "url": "https://www.101lasttribes.com/tribes/tabwa.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Taabwa (tap)",
         "url": "https://www.ethnologue.com/language/tap/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -91,12 +91,14 @@
       {
         "title": "Ethnologue SIL International — Haiǁom language (hgm)",
         "url": "https://www.ethnologue.com/language/hgm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Dieckmann, Ute (ed.) — Hai//om in the Etosha Region: A History of Colonial Settlement, Ethnicity and Nature Conservation. Open Book Publishers, 2019",
         "url": "https://books.openbookpublishers.com/10.11647/obp.0402/ch4.xhtml",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Xoms Omis — The Hai//om and their history in the Etosha National Park",
@@ -106,22 +108,26 @@
       {
         "title": "Namibian Sun — Hai//om fight for recognition of Etosha land rights, mars 2026",
         "url": "https://www.namibiansun.com/nmh-hub/haiom-fight-for-recognition-of-etosha-land-rights",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "Joshua Project — Heikum San in Botswana",
         "url": "https://joshuaproject.net/countries/bc",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Glottolog — Hainum subgroup, code haio1238",
         "url": "https://glottolog.org/resource/languoid/id/haio1238",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Cultural Survival — The Hunter-Gatherer Myth in Southern Africa",
         "url": "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/hunter-gatherer-myth-southern-africa",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       }
     ]
   }

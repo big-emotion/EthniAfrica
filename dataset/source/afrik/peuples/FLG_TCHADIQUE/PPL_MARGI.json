@@ -95,12 +95,14 @@
       {
         "title": "UNESCO World Heritage Centre — Sukur Cultural Landscape (1999)",
         "url": "https://whc.unesco.org/en/list/938/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "SIL Ethnologue — Marghi Central (mrt)",
         "url": "https://www.ethnologue.com/language/mrt/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "World Monuments Fund — Sukur Cultural Landscape",
@@ -110,7 +112,8 @@
       {
         "title": "Rosetta Project — Marghi Central Language (mrt)",
         "url": "https://rosettapanglossia.longnow.org/index.php?title=Marghi_Central_Language",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

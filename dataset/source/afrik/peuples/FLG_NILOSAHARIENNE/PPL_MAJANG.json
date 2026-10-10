@@ -8,7 +8,7 @@
       "mainName": "Majang",
       "selfAppellation": "Majangir",
       "exonyms": ["Majangir", "Mesengo", "Mejengir", "Masongo"],
-      "originOfExonyms": "Majangir est a la fois l'auto-denomination et un exonyme courant : il s'agit du nom que les membres du groupe utilisent pour se designer collectivement. Mesengo et Masongo sont des formes utilisees par les voisins et dans les recensements ethiopiens. Mejengir est une autre variante orthographique frequente dans la litterature academique.",
+      "originOfExonyms": "Majangir est à la fois le nom que les membres du groupe se donnent collectivement et un nom courant à l'extérieur. Les voisins et les recensements éthiopiens emploient aussi Mesengo et Masongo. Les publications de recherche écrivent fréquemment Mejengir.",
       "whyProblematic": null,
       "contemporaryUsage": "Majang est l'appellation officielle en Ethiopie. La zone Majang dans la region Gambela porte leur nom. Majangir est utilise comme terme commun dans la litterature anthropologique et les profils de groupes ethniques.",
       "linguisticFamily": "FLG_NILOSAHARIENNE",
@@ -74,22 +74,26 @@
       {
         "title": "Majang Language (MPE) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/mpe/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Majang in Ethiopia – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/13689",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Stauder, Jack – The Majangir: Ecology and Society of a Southwest Ethiopian People, Cambridge University Press, 1971",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Dimmendaal, Gerrit Jan et al. – The Majang Language (Scholarly Publications Leiden University, 2025, )",
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2979180/view",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

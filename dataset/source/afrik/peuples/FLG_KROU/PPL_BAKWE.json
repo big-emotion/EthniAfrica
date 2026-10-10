@@ -94,17 +94,20 @@
       {
         "title": "Glottolog 5.3 — Bakwé (bakw1243), ISO 639-3 : bjw",
         "url": "https://glottolog.org/resource/languoid/id/bakw1243",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Bakwe in Côte d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/19061",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Bakwé (bjw)",
         "url": "https://www.ethnologue.com/language/bjw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Day Translations — Ivory Coast Profile, Languages",
@@ -114,17 +117,20 @@
       {
         "title": "Schwartz, Alfred. Krou et Bakwe face à l'opération San Pedro. ORSTOM, 1979",
         "url": "http://horizon.documentation.ird.fr/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Schwartz, Alfred. Sous-peuplement et développement dans le sud-ouest de la Côte d'Ivoire. ORSTOM, 1993. ISBN 2-7099-1117-5",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "OpenEdition — Les masques Krou de Côte d'Ivoire",
         "url": "https://journals.openedition.org/aaa/767",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

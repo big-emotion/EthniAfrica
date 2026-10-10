@@ -9,10 +9,10 @@
       "mainName": "Dogon",
       "selfAppellation": "Dogon",
       "exonyms": [
-        "Habe (exonyme peul signifiant etranger ou paysan)",
+        "Habe (nom peul qui signifierait étranger ou paysan)",
         "Kado (singulier de Habe en peul)"
       ],
-      "originOfExonyms": "Le terme Habe est un exonyme peul signifiant etranger ou non-musulman (paysan), utilise peiorativement par les Peuls pour designer les Dogon qui refuserent l'islamisation. Les references anciennes utilisent parfois Habe (ou Habbe, singulier Kado) a la place de Dogon : jusqu'aux annees 1930, Europeens et Americains connaissaient les Dogon sous ce nom, que les administrateurs coloniaux avaient emprunte aux Peuls. Des anthropologues et linguistes interrogent par ailleurs l'usage de Dogon comme categorie unique pour des groupes aux langues nombreuses et tres divergentes. Le terme Dogon est aujourd'hui universellement adopte dans la litterature scientifique et par la communaute elle-meme.",
+      "originOfExonyms": "Les Peuls ont employé Habe avec un sens méprisant pour les Dogon qui refusaient l'islamisation. Le nom signifierait étranger, non-musulman ou paysan. Les sources anciennes donnent parfois Habe ou Habbe, avec Kado au singulier, à la place de Dogon. Jusqu'aux années 1930, les Européens et les Américains connaissaient les Dogon sous ce nom, emprunté aux Peuls par les administrateurs coloniaux. Des chercheurs sur les langues et les sociétés s'interrogent aussi sur l'usage d'un seul nom, Dogon, pour des groupes qui parlent de nombreuses langues très différentes. Dogon est aujourd'hui largement employé dans la recherche et par la communauté elle-même.",
       "whyProblematic": "Les langues dogon constituent une famille independante avec environ 12 langues et 50 sous-dialectes tres divergents, dont beaucoup ne sont pas mutuellement intelligibles. L'unite ethnique Dogon est culturelle et territoriale plutot que strictement linguistique. Le terme Dogon recouvre donc des groupes dont les langues sont aussi eloignees que des langues differentes.",
       "contemporaryUsage": "Dogon est le terme universellement utilise en français, anglais et dans les medias internationaux. C'est aussi le terme officiel utilise par les institutions maliennes. Le toro so (langue de la falaise) est la variete standardisee enseignee dans les ecoles depuis 2000, l'une des treize langues officielles du Mali.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -107,28 +107,312 @@
       {
         "title": "Dogon Languages — University of Michigan (Heath, J.)",
         "url": "https://public.websites.umich.edu/~jheath/Dogon%20languages.html",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Britannica — Dogon",
         "url": "https://www.britannica.com/topic/Dogon",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "eHRAF World Cultures — Dogon summary",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fa16/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "UNESCO — Pays Dogon (patrimoine mondial)",
         "url": "https://whc.unesco.org/fr/list/516/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Paul R. Davis, introduction à ReCollecting Dogon, The Menil Collection, Houston, 2017",
         "url": "https://publications.menil.org/recollecting-dogon/introduction/index.html",
         "tier": "referenced",
         "notes": "Publication d'un musee. Donne Habe ou Habbe (singulier Kado) comme le nom sous lequel les Dogon etaient connus jusqu'aux annees 1930, emprunte par l'administration coloniale aux Peuls islamises, et rappelle que des specialistes discutent l'usage de Dogon comme categorie unificatrice. Renvoie a Jacky Bouju, « Qu'est-ce que l'ethnie dogon ? », Cahiers des Sciences Humaines, 31-2, 1995. Consulte le 25 septembre 2026."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dogon désigne un peuple du Mali, autour de la falaise de Bandiagara, qui se nomme lui-même ainsi. D'autres noms existent : Habé, que lui donnent les Peuls, et que les Européens ont longtemps repris. Les sources ne s'accordent pas sur l'origine du nom Habé ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Dogon",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Terme universellement utilisé en français, en anglais et par les institutions maliennes ; c'est aussi le terme que la communauté emploie pour se désigner elle-même. « Dogon » regroupe une douzaine de langues distinctes et non mutuellement intelligibles : l'unité qu'il nomme est culturelle et territoriale, pas strictement linguistique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "UNESCO — Pays Dogon (patrimoine mondial)",
+                "author": "UNESCO World Heritage Centre",
+                "year": 1989,
+                "url": "https://whc.unesco.org/fr/list/516/",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Année d'inscription du bien au patrimoine mondial ; atteste l'usage officiel international du nom « Dogon »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Décrit en 1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Dogon est accepté par tous les clans qui s'en réclament ; pour une personne, on lui ajoute un suffixe. Les voisins emploient d'autres noms : Habbé chez les Peuls, Kaado chez les Dioula, Tombon chez les Bwaba, Tomhon chez les Bambara de Ségou, Kibsi chez les Mossi, selon Jacky Bouju.",
+            "sources": [
+              {
+                "title": "Qu'est-ce que l'« ethnie » dogon ?",
+                "author": "Jacky Bouju",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/42876.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 333-334",
+                "notes": "Cahiers des sciences humaines, vol. 31, n° 2, 1995, p. 329-363. Lu en texte intégral sur le site de l'IRD le 9 octobre 2026, passage sur le nom dogon."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Dogon renverrait à « ceux qui, sachant ce qu'est la honte parce qu'ils sont de naissance libre, ont le sens de l'honneur », selon l'une des étymologies que rapporte l'anthropologue Jacky Bouju. C'est la seule explication que nous ayons trouvée.",
+            "sources": [
+              {
+                "title": "Qu'est-ce que l'« ethnie » dogon ?",
+                "author": "Jacky Bouju",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/42876.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 333-334",
+                "notes": "Cahiers des sciences humaines, vol. 31, n° 2, 1995, p. 329-363. Lu en texte intégral sur le site de l'IRD le 9 octobre 2026, passage sur le nom dogon."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1938,
+              "to": 1938,
+              "label": "1938"
+            },
+            "era": "colonial",
+            "birth": true,
+            "statement": "Le nom Dogon figure dans le titre de la thèse de l'ethnologue Marcel Griaule, Masques dogons, parue en 1938, selon Paul R. Davis. C'est la plus ancienne trace de ce nom que le projet connaît ; des mentions plus anciennes existent sans doute. Le peuple existait bien avant elle.",
+            "actors": [
+              {
+                "name": "Marcel Griaule",
+                "role": "emploie ce nom dans le titre de sa thèse"
+              }
+            ],
+            "sources": [
+              {
+                "title": "ReCollecting Dogon, introduction",
+                "author": "Paul R. Davis",
+                "year": 2017,
+                "url": "https://publications.menil.org/recollecting-dogon/introduction/index.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Publication en ligne de la Menil Collection, Houston, lue le 9 octobre 2026. L'auteur cite la phrase de 1910 d'après le journal de Robert Arnaud, publié en 2016 (p. 24), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1930,
+              "label": "Jusqu'aux années 1930"
+            },
+            "era": "colonial",
+            "before": true,
+            "statement": "On parle alors surtout de Habé pour désigner les Dogon, chez les Européens comme chez les Peuls, selon Paul R. Davis.",
+            "sources": [
+              {
+                "title": "ReCollecting Dogon, introduction",
+                "author": "Paul R. Davis",
+                "year": 2017,
+                "url": "https://publications.menil.org/recollecting-dogon/introduction/index.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Publication en ligne de la Menil Collection, Houston, lue le 9 octobre 2026. L'auteur cite la phrase de 1910 d'après le journal de Robert Arnaud, publié en 2016 (p. 24), que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Habé",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ful",
+        "namedBy": "Les Peuls (Fulɓe)",
+        "shortLine": "Le nom que les Peuls donnent aux Dogon ; au singulier, Kado.",
+        "periodLabel": "Chez les Peuls ; chez les Européens jusqu'aux années 1930",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit en 1995 et en 2017"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le nom Habé est celui que les Peuls, musulmans, donnent aux Dogon ; au singulier, il fait Kado. Ils l'employaient pour les rabaisser comme paysans et infidèles, selon Paul R. Davis. Son origine est discutée ; nous présentons les explications plus bas.",
+            "sources": [
+              {
+                "title": "ReCollecting Dogon, introduction",
+                "author": "Paul R. Davis",
+                "year": 2017,
+                "url": "https://publications.menil.org/recollecting-dogon/introduction/index.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Publication en ligne de la Menil Collection, Houston, lue le 9 octobre 2026. L'auteur cite la phrase de 1910 d'après le journal de Robert Arnaud, publié en 2016 (p. 24), que nous n'avons pas lu."
+              },
+              {
+                "title": "Qu'est-ce que l'« ethnie » dogon ?",
+                "author": "Jacky Bouju",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/42876.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 333-334",
+                "notes": "Cahiers des sciences humaines, vol. 31, n° 2, 1995, p. 329-363. Lu en texte intégral sur le site de l'IRD le 9 octobre 2026, passage sur le nom dogon."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1930,
+              "label": "Jusqu'aux années 1930"
+            },
+            "era": "colonial",
+            "aspect": "usage",
+            "statement": "Le nom Habé, ou Habbe, est celui sous lequel la plupart des Européens et des Américains connaissent les Dogon jusqu'aux années 1930 ; les administrateurs coloniaux l'ont emprunté aux Peuls, selon Paul R. Davis.",
+            "sources": [
+              {
+                "title": "ReCollecting Dogon, introduction",
+                "author": "Paul R. Davis",
+                "year": 2017,
+                "url": "https://publications.menil.org/recollecting-dogon/introduction/index.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Publication en ligne de la Menil Collection, Houston, lue le 9 octobre 2026. L'auteur cite la phrase de 1910 d'après le journal de Robert Arnaud, publié en 2016 (p. 24), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Habé figure dans une déclaration de l'administration coloniale de 1910 : « Désormais les Habé peuvent être considérés comme soumis », selon Paul R. Davis.",
+            "sources": [
+              {
+                "title": "ReCollecting Dogon, introduction",
+                "author": "Paul R. Davis",
+                "year": 2017,
+                "url": "https://publications.menil.org/recollecting-dogon/introduction/index.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Publication en ligne de la Menil Collection, Houston, lue le 9 octobre 2026. L'auteur cite la phrase de 1910 d'après le journal de Robert Arnaud, publié en 2016 (p. 24), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Livre publié en 1907"
+            },
+            "era": "colonial",
+            "birth": true,
+            "formAsWritten": "Habbés",
+            "statement": "Le nom Habé est écrit « Habbés » par le lieutenant Louis Desplagnes, pour qui les Foulbé, musulmans de la plaine, appellent ainsi les montagnards du plateau ; au singulier, note-t-il, le mot fait Kaddo. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un Européen l'a noté, pas depuis quand les Peuls l'emploient.",
+            "actors": [
+              {
+                "name": "Louis Desplagnes",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le plateau central nigérien : une mission archéologique et ethnographique au Soudan français",
+                "author": "Louis Desplagnes, lieutenant d'infanterie coloniale",
+                "year": 1907,
+                "url": "https://archive.org/details/leplateaucentral00desp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 102",
+                "notes": "Paris, Émile Larose, 1907. Lu dans la numérisation d'Internet Archive le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposée en 1907"
+            },
+            "era": "colonial",
+            "hypothesisGroup": "origine du nom Habé",
+            "statement": "Le nom Habé viendrait de Kambé ou Hambbé, le nom d'un groupe venu du nord ; les pasteurs peuls l'auraient repris pour tous les montagnards hostiles à l'islam, puis le mot aurait pris un sens très général, selon Louis Desplagnes.",
+            "sources": [
+              {
+                "title": "Le plateau central nigérien : une mission archéologique et ethnographique au Soudan français",
+                "author": "Louis Desplagnes, lieutenant d'infanterie coloniale",
+                "year": 1907,
+                "url": "https://archive.org/details/leplateaucentral00desp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 183-184",
+                "notes": "Paris, Émile Larose, 1907. Lu dans la numérisation d'Internet Archive le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "hypothesisGroup": "origine du nom Habé",
+            "statement": "Le nom Habé serait un mot peul qui veut dire « païens », selon Gaetano Ciarcia.",
+            "sources": [
+              {
+                "title": "Ethnologues et « Dogon ». La fabrication d'un patrimoine ethnographique",
+                "author": "Gaetano Ciarcia",
+                "year": 1998,
+                "url": "https://www.persee.fr/doc/gradh_0764-8928_1998_num_24_1_1052",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 103",
+                "notes": "Gradhiva, n° 24, 1998, p. 103-115. Lu sur Persée le 9 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

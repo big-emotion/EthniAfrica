@@ -17,6 +17,7 @@
 import { z } from "zod";
 
 import { isQuizThemeId } from "@/lib/quiz/segmentPolicy";
+import { SOURCE_KINDS } from "@/types/sources";
 import type { QuizScopeKind } from "@/lib/quiz/quizScope";
 
 /** ISO 3166-1 alpha-3, as `afrik_countries.id` stores it. */
@@ -156,6 +157,11 @@ export const quizSourceRefSchema = z.object({
   year: z.number().int().nullable(),
   tier: z.string().nullable(),
   url: z.string().nullable(),
+  /**
+   * What kind of work the source is, the line the reveal shows instead of the
+   * tier. Optional so a client built before it existed still parses.
+   */
+  sourceKind: z.enum(SOURCE_KINDS).nullable().optional(),
 });
 
 export type QuizSourceRefView = z.infer<typeof quizSourceRefSchema>;

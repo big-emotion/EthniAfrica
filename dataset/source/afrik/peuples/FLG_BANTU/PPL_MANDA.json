@@ -74,17 +74,20 @@
       {
         "title": "Manda Language (MGS) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/mgs/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Manda in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/13482",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Tumbuka – Encyclopaedia Britannica, 1998",
         "url": "https://www.britannica.com/topic/Tumbuka",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

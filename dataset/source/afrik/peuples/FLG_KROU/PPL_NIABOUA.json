@@ -80,27 +80,32 @@
       {
         "title": "Aka Konin, L'art musical chez les Niaboua, un peuple krou du centre-ouest de la Cote d'Ivoire – Royal Museum for Central Africa, 2012",
         "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/niaboua.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nyabwa-Nyedebwa in Côte d'Ivoire – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/14076",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Nyabwa language (nwb), SIL International, 2024",
         "url": "https://www.ethnologue.com/language/nwb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Niaboua of Côte d'Ivoire – PeopleGroups.org, consulté 2025",
         "url": "https://peoplegroups.org/people_groups/pg013118/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Zézé-Béké (P.), Les interdits alimentaires chez les Nyabwa de Côte d'Ivoire – Journal des africanistes, 1989, tome 59, fascicule 1-2, p. 229",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

@@ -51,7 +51,7 @@
     "culture": {
       "majorRites": "Festival de l'igname Alluolue (ou Elue) : celebration commune a tous les Sefwi, marquant la recolte de l'igname et le renouveau communautaire. Ceremonies de chefferie liees aux tabourets ancestraux (nnua).",
       "symbols": "La divinite Sobore est un symbole identitaire commun a l'ensemble du peuple sefwi. Les tabourets de chef (stools) symbolisent l'autorite royale comme dans toute la tradition akan.",
-      "artsAndMusic": "Artisanat akan : orfevrerie, sculpture sur bois, tissage de kente. La region sefwi est riche en ressources forestieres et auriferes. Chants et danses traditionnels lors du festival de l'igname. La langue akan porte un corpus proverbial (mmebusem) de plus de 3 600 entrées, compilé dès 1879 par le linguiste missionnaire Johann Gottlieb Christaller à partir des dialectes twi et fante — un usage partagé par l'ensemble des groupes de langue akan.",
+      "artsAndMusic": "Les artisans sefwi pratiquent l'orfèvrerie, la sculpture sur bois et le tissage du kente. Leur région possède des ressources forestières et de l'or. Des chants et des danses accompagnent le festival de l'igname. Les proverbes akan sont appelés mmebusem. Dès 1879, le linguiste missionnaire Johann Gottlieb Christaller en a réuni plus de 3 600 en twi et en fante. L'usage des proverbes est partagé par les groupes de langue akan.",
       "spiritualities": "Veneration de la divinite Sobore et du dieu supreme akan (Nyame/Onyame). Culte des ancetres. Christianisme majoritaire aujourd'hui dans la region."
     },
     "historicalRole": {
@@ -76,7 +76,8 @@
       {
         "title": "Esahie Language (SFW) – Ethnologue",
         "url": "https://www.ethnologue.com/language/sfw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Akan Heritage – History of Sefwi",
@@ -86,7 +87,8 @@
       {
         "title": "Sehwi – Wikidata Q36593",
         "url": "https://www.wikidata.org/wiki/Q36593",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",

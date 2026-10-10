@@ -52,6 +52,7 @@ export function transformLanguageData(
       url: source.url,
       standing: source.tier,
       notes: source.notes ?? undefined,
+      ...(source.sourceKind ? { kind: source.sourceKind } : {}),
     })),
   };
 }

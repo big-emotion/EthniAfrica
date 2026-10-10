@@ -73,22 +73,26 @@
       {
         "title": "Wali Language (WLX) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/wlx/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Wala in Ghana – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/15833",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Waala Chieftaincy Institution: Its Origin and the Emergence of Disputes – Academia.edu, 2021",
         "url": "https://www.academia.edu/51545519",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Wa and the Wala: Islam and Polity in Northwestern Ghana – Levtzion, Nehemia, Cambridge University Press",
         "url": "https://assets.cambridge.org/97805213/62108/sample/9780521362108ws.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

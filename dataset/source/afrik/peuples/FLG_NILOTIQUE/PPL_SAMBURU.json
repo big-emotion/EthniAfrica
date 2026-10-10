@@ -12,7 +12,7 @@
         "Burkeneji (nom alternatif)",
         "Burkuji"
       ],
-      "originOfExonyms": "Le terme Lokop (ou Loikop) est l'autonyme signifiant litteralement proprietaires de la terre. L'origine du terme Samburu est debattue; certains le derivent d'un nom de lieu ou d'un terme descriptif. Au sein de la communaute Maa (Maasai), les Samburu sont la troisieme plus grande sous-tribu apres les Kisonko/Isikirari (Tanzanie) et les Purko (Kenya/Tanzanie). Le terme Burkeneji est parfois utilise dans les profils demographiques.",
+      "originOfExonyms": "Le peuple se nomme lui-même Lokop ou Loikop, qui signifierait propriétaires de la terre. L'origine de Samburu reste discutée : certaines explications le rapprochent d'un lieu, d'autres d'une description du groupe. Au sein de la communauté maa, ou maasai, les Samburu sont présentés comme le troisième groupe le plus nombreux, après les Kisonko/Isikirari de Tanzanie et les Purko du Kenya et de Tanzanie. Burkeneji apparaît parfois dans les présentations de leur population.",
       "whyProblematic": null,
       "contemporaryUsage": "Samburu est le terme universellement utilise dans les contextes administratifs, academiques et touristiques kenyans. La plupart des Samburu se designent eux-memes indifferemment comme Samburu ou comme faisant partie de la communaute Maa (Maasai au sens large). Des tensions identitaires existent entre ceux qui insistent sur la distinction Samburu/Maasai et ceux qui revendiquent une identite Maa unifiee.",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -91,27 +91,32 @@
       {
         "title": "Joshua Project — Samburu in Kenya",
         "url": "https://joshuaproject.net/people_groups/14672",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue — Samburu (SAQ)",
         "url": "https://www.ethnologue.com/language/saq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Rendille (pour la relation Rendille-Samburu)",
         "url": "https://www.101lasttribes.com/tribes/rendille.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Spencer, Paul. The Samburu: A Study of Gerontocracy in a Nomadic Tribe. London: Routledge and Kegan Paul, 1965",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Spencer, Paul. Nomads in Alliance: Symbiosis and Growth among the Rendille and Samburu of Kenya. London: Oxford University Press, 1973",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Holtzman, Jon D. Nuer Journeys, Nuer Lives. Needham Heights: Allyn and Bacon, 2000",
@@ -121,17 +126,20 @@
       {
         "title": "Kenya National Bureau of Statistics (KNBS) — Kenya Census 2019",
         "url": "https://www.knbs.or.ke/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Straight, Bilinda. Miracles and Extraordinary Experience in Northern Kenya. Philadelphia: University of Pennsylvania Press, 2007",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Lesorogol, Carolyn K. Contesting the Commons: Privatizing Pastoral Lands in Kenya. Ann Arbor: University of Michigan Press, 2008",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

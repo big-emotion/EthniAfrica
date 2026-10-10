@@ -9,6 +9,8 @@ import type { Language } from "@/types/shared";
  * budget on +0.58 KB of unrelated copy. The island reads this module only.
  */
 const fr = {
+  autonymQuestion: (name: string) =>
+    `Quel nom emploie pour se désigner le peuple appelé ${name} ?`,
   navLabel: "Quiz",
   pageTitle: "Sur quoi veux-tu jouer ?",
   pageSubtitle:
@@ -21,7 +23,7 @@ const fr = {
   scopeThemePanelHint: "Choisissez un sujet, ou jouez le pays entier.",
   scopeThemePanelNoTheme: "Jouer sans thème",
   scopeMixedHint:
-    "Huit questions tirées de tout le corpus, des peuples les plus connus aux moins documentés.",
+    "Huit questions sur les peuples présentés dans nos fiches, des plus connus à ceux sur lesquels nous avons moins d'informations.",
   scopeRandomHint: "Huit questions au hasard, sans ordre de difficulté.",
   leaveSession: "Quitter le quiz",
   seeScoreCard: "Voir la carte de score",

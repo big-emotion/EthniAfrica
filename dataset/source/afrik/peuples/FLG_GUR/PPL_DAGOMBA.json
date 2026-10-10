@@ -8,7 +8,7 @@
       "mainName": "Dagomba",
       "selfAppellation": "Dagbamba",
       "exonyms": ["Dagomba", "Dagbani", "Mole-Dagbani"],
-      "originOfExonyms": "Le terme Dagomba est un exonyme d'origine externe popularisé par les administrations coloniales européennes. Le terme autochtone est Dagbamba (singulier : Dagbana), qui désigne le peuple, tandis que Dagbon désigne leur territoire traditionnel et Dagbanli leur langue. Mole-Dagbani est une appellation académique regroupant les Dagomba, Mamprusi, Nanumba et peuples apparentés dans un ensemble ethno-linguistique.",
+      "originOfExonyms": "Les administrations coloniales européennes ont diffusé le nom Dagomba, donné au peuple de l'extérieur. Ses membres se nomment Dagbamba, ou Dagbana pour une personne. Dagbon désigne leur territoire traditionnel et Dagbanli leur langue. Les chercheurs emploient Mole-Dagbani pour rassembler les Dagomba, les Mamprusi, les Nanumba et des peuples proches par leurs langues et leur histoire.",
       "whyProblematic": null,
       "contemporaryUsage": "Dagbamba est l'appellation préférée par les membres de ce peuple eux-mêmes. Dagomba reste courant dans la littérature anglophone et les médias ghanéens. Dagbani ou Dagbanli désigne spécifiquement la langue. Le terme Mole-Dagbani est utilisé dans les recensements officiels du Ghana.",
       "linguisticFamily": "FLG_GUR",
@@ -91,22 +91,26 @@
       {
         "title": "Britannica — Dagomba",
         "url": "https://www.britannica.com/topic/Dagomba",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Dagomba in Ghana",
         "url": "https://joshuaproject.net/people_groups/11470/GH",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Tufts University — About the Dagomba",
         "url": "https://sites.tufts.edu/dagomba/about-the-dagomba/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Tufts University — Dagomba Dance Drumming (Lunsi)",
         "url": "https://sites.tufts.edu/dagomba/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Melodigging — Dagomba Music",
@@ -121,7 +125,225 @@
       {
         "title": "Joshua Project — Dagomba in Togo",
         "url": "https://joshuaproject.net/people_groups/print/11470/TO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dagomba désigne un peuple du nord du Ghana, autour de Yendi, qui se nomme lui-même Dagbamba ; son pays est le Dagbon. Une autre forme existe : Dagamma, dans un dictionnaire twi de 1881. Les sources ne s'accordent pas toujours sur l'origine du nom Dagomba ; nous présentons plus bas l'explication que nous avons trouvée.",
+    "names": [
+      {
+        "nameText": "Dagbamba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dag",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; Dagbon est le nom de son pays.",
+        "periodLabel": "Écrit dès le XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dagbamba est celui que ce peuple se donne, Dagbambe au singulier, selon le médecin missionnaire Rudolf Fisch. Le peuple appelle son pays Dagbon et sa langue Dagbane.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Grammatik der Dagomba-Sprache",
+                "author": "Rudolf Fisch",
+                "year": 1912,
+                "url": "https://archive.org/details/rosettaproject_dag_detail-2",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Einleitung, p. V",
+                "notes": "1912, lu dans la numérisation du Rosetta Project sur archive.org, qui découpe le livre en parties. Fisch, médecin de la Mission de Bâle, a recueilli la langue à Aburi auprès de Musa, un jeune Dagbamba né à Karaga."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Dagbamba a une forme proche, Dagbā́na, chez le linguiste Sigismund Koelle : un informateur venu d'un pays voisin lui dit que la rivière Móṛa vient du Dagbā́na. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Dagbā́na",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section IV-C-2",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dagomba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant en anglais et en français ; il vient de l'extérieur.",
+        "periodLabel": "Écrit dès 1819",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dagomba désigne en anglais et en français le peuple qui se nomme lui-même Dagbamba, et son royaume, le Dagbon. Son origine est discutée ; l'explication que nous avons trouvée est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Grammatik der Dagomba-Sprache",
+                "author": "Rudolf Fisch",
+                "year": 1912,
+                "url": "https://archive.org/details/rosettaproject_dag_detail-2",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Einleitung, p. V",
+                "notes": "1912, lu dans la numérisation du Rosetta Project sur archive.org, qui découpe le livre en parties. Fisch, médecin de la Mission de Bâle, a recueilli la langue à Aburi auprès de Musa, un jeune Dagbamba né à Karaga."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1460,
+              "to": 1500,
+              "label": "Vers 1480"
+            },
+            "era": "polity",
+            "statement": "Le royaume des Dagbamba est fondé, selon l'historien John Fage, par Na Nyaghse, dont il place le début du règne vers 1480 ; Nehemia Levtzion le situe entre 1460 et 1500, rapporte M. Izard.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "M. Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 245-246",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1817,
+              "to": 1819,
+              "label": "Séjour de 1817, récit publié en 1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Dagomba a une forme proche, Dagwumba, chez le voyageur anglais Thomas Edward Bowdich, qui rencontre à Kumasi des chefs dagwumba et nomme Yendi comme leur capitale. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Dagwumba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 146 et p. 177",
+                "notes": "Londres, John Murray, 1819, lu dans l'exemplaire numérisé sur archive.org. Bowdich séjourne à Kumasi en 1817."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1824,
+              "to": 1824,
+              "label": "Récit publié en 1824"
+            },
+            "era": "polity",
+            "statement": "Le nom Dagomba apparaît sous cette forme chez l'Anglais Joseph Dupuis, qui parle des « tribus de Dagomba ».",
+            "formAsWritten": "Dagomba",
+            "sources": [
+              {
+                "title": "Journal of a Residence in Ashantee",
+                "author": "Joseph Dupuis",
+                "year": 1824,
+                "url": "https://archive.org/details/journalofresiden00dupu",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35",
+                "notes": "Londres, Henry Colburn, 1824, lu dans l'exemplaire numérisé sur archive.org."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dagomba viendrait des Hawsa, qui semblent appeler ainsi ce peuple et servent souvent d'interprètes aux Européens, selon le médecin missionnaire Rudolf Fisch, qui ne présente cette explication que comme possible.",
+            "hypothesisGroup": "origine du nom Dagomba",
+            "sources": [
+              {
+                "title": "Grammatik der Dagomba-Sprache",
+                "author": "Rudolf Fisch",
+                "year": 1912,
+                "url": "https://archive.org/details/rosettaproject_dag_detail-2",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Einleitung, p. V",
+                "notes": "1912, lu dans la numérisation du Rosetta Project sur archive.org, qui découpe le livre en parties. Fisch, médecin de la Mission de Bâle, a recueilli la langue à Aburi auprès de Musa, un jeune Dagbamba né à Karaga."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dagamma",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Dagomba, dans un dictionnaire twi de 1881.",
+        "periodLabel": "Écrit dès 1881",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Dagamma figure à côté de Dagomba dans le dictionnaire twi de Johann Gottlieb Christaller, qui décrit Yendi comme la grande capitale du pays. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Dagomba (Dagamma)",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 648",
+                "notes": "Bâle, Mission évangélique, 1881, lu dans l'exemplaire numérisé sur archive.org. Liste de noms de lieux : « Yane (Yande), large capital of Dagomba (Dagamma) »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -3,6 +3,232 @@
   "nameFr": "Atlantique",
   "nameEn": "Atlantic (anciennement West Atlantic)",
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom atlantique désigne un ensemble de langues de la côte ouest de l'Afrique, du Sénégal à la Sierra Leone, comme le wolof, le peul, le sérère, le diola ou le temné. C'est un nom de savants ; on a d'abord dit ouest-atlantique, et en français sénégalo-guinéen. Les sources ne s'accordent pas sur l'unité de ce groupe ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Atlantique",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom actuel, sans « ouest », de ce groupe de langues de la côte, du Sénégal à la Sierra Leone.",
+        "periodLabel": "Aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom atlantique figure aujourd'hui dans les noms de groupes du catalogue Glottolog, comme North-Central Atlantic, qui réunit le wolof, le peul ou le bijago. Ce catalogue ne reconnaît pourtant plus un seul groupe atlantique : il range à part les langues mel, comme le temné et le kissi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — North-Central Atlantic (nort3146)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nort3146",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue range sous ce nom 46 langues, dont le peul, le wolof et le bijago, dans l'ensemble Atlantic-Congo."
+              },
+              {
+                "title": "Glottolog 5.3 — Mel (mela1257)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/mela1257",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue range sous ce nom 10 langues, dont le temné et le kissi, à part du groupe North-Central Atlantic."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ouest-atlantique",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste allemand Diedrich Westermann",
+        "shortLine": "Le nom que le linguiste Diedrich Westermann a donné à ce groupe à la fin des années 1920.",
+        "periodLabel": "Depuis 1927-1928",
+        "accounts": [
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "1990"
+            },
+            "era": "modern",
+            "statement": "Le nom ouest-atlantique désigne pour Bassey W. Andah un groupe défini par Joseph Greenberg, plus disparate que le mandé, parlé de la frontière entre le Sénégal et la Mauritanie jusqu'à celle entre la Sierra Leone et le Liberia, d'après David Sapir. Seul le peul s'étend bien au-delà, jusqu'au nord du Cameroun et à la région du Tchad.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 18 : Les peuples de la Guinée supérieure (entre la Côte d'Ivoire et la Casamance)",
+                "author": "Bassey W. Andah",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 574"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "1965"
+            },
+            "statement": "Le nom ouest-atlantique couvrirait des langues trop diverses pour former un seul groupe, selon David Dalby, qui propose en 1965 de l'abandonner et de nommer mel son sous-groupe du sud, d'après Joseph Greenberg.",
+            "hypothesisGroup": "unite-ouest-atlantique",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 333"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1990,
+              "label": "De la fin des années 1960 à 1990"
+            },
+            "statement": "Le nom ouest-atlantique désignerait bien un groupe uni, selon David Sapir, qui s'appuie sur des comptes de mots communs et fait du bijago une branche à part, d'après Joseph Greenberg. Bassey W. Andah juge lui aussi discutable l'avis de Dalby.",
+            "hypothesisGroup": "unite-ouest-atlantique",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 333"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 18 : Les peuples de la Guinée supérieure (entre la Côte d'Ivoire et la Casamance)",
+                "author": "Bassey W. Andah",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 574-575"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1928,
+              "label": "1927-1928"
+            },
+            "statement": "Le nom ouest-atlantique est proposé par le linguiste allemand Diedrich Westermann pour un sous-groupe de ses langues soudanaises occidentales, selon Joseph Greenberg. Celui-ci date le nom de 1928, et range déjà l'« atlantique occidental » parmi les sous-groupes de l'étude de Westermann de 1927. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Diedrich Westermann",
+                "role": "a proposé le nom dans ses études des langues soudanaises occidentales, selon Joseph Greenberg"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 327 et p. 333"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 319"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sénégalo-guinéen",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administrateur colonial et linguiste Maurice Delafosse",
+        "shortLine": "Le nom que Maurice Delafosse donnait à ce groupe, resté en usage chez des chercheurs français.",
+        "periodLabel": "Depuis 1924 au moins",
+        "accounts": [
+          {
+            "period": {
+              "from": 1924,
+              "to": 1980,
+              "label": "De 1924 à 1980"
+            },
+            "statement": "Le nom sénégalo-guinéen recouvre à peu près les mêmes langues que l'ouest-atlantique, selon Joseph Greenberg, et reste employé par les chercheurs français qui ont suivi Delafosse.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 333"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "Le nom sénégalo-guinéen désigne chez Maurice Delafosse, en 1924, un groupe de vingt-quatre langues serrées le long de la côte, peul compris. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "a employé le nom dans Les langues du monde, en 1924"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Langues du Soudan et de la Guinée, dans Les langues du monde, sous la direction d'A. Meillet et Marcel Cohen",
+                "author": "Maurice Delafosse",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 552-553",
+                "notes": "Paris, Édouard Champion, 1924. Lu dans la numérisation d'Internet Archive. Le texte porte le regard d'un administrateur colonial français et classe les peuples d'après la « race »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Les langues du Sénégal à la Sierra Leone, dont le peul et le wolof. Le nom est géographique : il a souvent servi pour les langues de la côte qui n'entraient pas dans les autres groupes.",
@@ -101,17 +327,20 @@
       {
         "title": "UNESCO – *Histoire générale de l'Afrique*",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Glottolog (2025) – \"North-Central Atlantic\"",
         "url": "https://glottolog.org/resource/languoid/id/nort3146",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Agence Nationale de la Statistique et de la Démographie (ANSD), Sénégal (2023) – RGPH-5, Rapport Chapitre 1 : État et structure de la population, Table I-32 (Wolof langue courante)",
         "url": "https://www.ansd.sn/sites/default/files/recensements/rapport/Chapitre-1_ETAT-STRUCTURE-POPULATION-Rapport-def-RGPH-5.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

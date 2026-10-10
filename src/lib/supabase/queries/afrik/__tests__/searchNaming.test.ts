@@ -42,50 +42,13 @@ describe("batched search naming data", () => {
 
   // @req REQ-180
   it("hydrates five subject classes without an N+1 query", async () => {
-    const nameRecords = thenableQuery({
-      data: [
-        {
-          id: "name-fang",
-          entity_type: "people",
-          entity_id: "PPL_FANG",
-          name_text: "Pahouin",
-          name_type: "exonym",
-          language_of_origin: "fra",
-          meaning: null,
-          period_label: "nineteenth century",
-          imposed_by: "French administrators",
-          imposition_period: "colonial period",
-          why_problematic: "Recorded concern",
-          contemporary_usage: "Historical use",
-          assertion_id: "assertion-fang",
-          sort_rank: 1,
-        },
-        {
-          id: "name-traore",
-          entity_type: "patronyme",
-          entity_id: "PAT_TRAORE",
-          name_text: "Traoré",
-          name_type: "surname",
-          language_of_origin: null,
-          meaning: null,
-          period_label: null,
-          imposed_by: null,
-          imposition_period: null,
-          why_problematic: null,
-          contemporary_usage: null,
-          assertion_id: "assertion-traore",
-          sort_rank: 0,
-        },
-      ],
-      error: null,
-    });
     const assertions = thenableQuery({
       data: [
         {
           id: "assertion-fang",
           entity_type: "people",
           entity_id: "PPL_FANG",
-          field_path: "names.exonym.pahouin",
+          field_path: "content.appellations.originOfExonyms",
           statement: "Pahouin is recorded for Fang.",
           position: null,
           confidence_level: "contested",
@@ -97,7 +60,7 @@ describe("batched search naming data", () => {
           entity_type: "patronyme",
           entity_id: "PAT_TRAORE",
           field_path: "spellings.0.traore",
-          statement: "Traoré is an attested spelling.",
+          statement: "Traoré",
           position: null,
           confidence_level: "high",
           source_ids: ["source-a"],
@@ -227,10 +190,44 @@ describe("batched search naming data", () => {
       ],
       error: null,
     });
+    // REQ-196: a people's names are read from the fiche's projection — its
+    // nameHistory, and the name index the appellations add to it.
+    const histories = thenableQuery({
+      data: [
+        {
+          id: "PPL_FANG",
+          name_history: null,
+          name_index: [
+            {
+              nameText: "Pahouin",
+              nameType: "exonym",
+              origin: "appellation",
+              languageOfOrigin: null,
+              meaning: null,
+              periodLabel: null,
+              imposedBy: null,
+              impositionPeriod: null,
+              whyProblematic: "Recorded concern",
+              contemporaryUsage: "Historical use",
+              sortRank: 1,
+              sources: [
+                {
+                  title: "Official register",
+                  url: "https://example.org/a",
+                  year: null,
+                  tier: "official",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      error: null,
+    });
     const byTable = {
-      name_records: nameRecords,
       assertions,
       confidence_scores: confidence,
+      afrik_peoples: histories,
       sources,
     };
     const client = {
@@ -250,44 +247,65 @@ describe("batched search naming data", () => {
     );
 
     expect(client.from.mock.calls.map(([table]) => table)).toEqual([
-      "name_records",
       "assertions",
       "confidence_scores",
+      "afrik_peoples",
       "sources",
     ]);
-    expect(nameRecords.in).toHaveBeenCalledWith("entity_type", [
-      "people",
-      "patronyme",
-    ]);
-    expect(nameRecords.in).toHaveBeenCalledWith("entity_id", [
-      "PPL_FANG",
-      "PAT_TRAORE",
-    ]);
+    expect(histories.in).toHaveBeenCalledWith("id", ["PPL_FANG"]);
     expect(sources.in).toHaveBeenCalledWith("id", [
       "source-a",
-      "source-c",
       "source-b",
+      "source-c",
     ]);
 
     const fang = result.get(searchNamingKey("people", "PPL_FANG"));
     expect(fang?.records).toHaveLength(1);
     expect(fang?.records[0]).toMatchObject({
       form: "Pahouin",
+      kind: "exonym",
       problematic: true,
       usedToday: true,
-      claimStatus: "contested",
     });
-    expect(fang?.records[0].evidence[0].sources.map(({ id }) => id)).toEqual([
+    // A derived name cites the fiche's sources, embedded in the index.
+    expect(fang?.records[0].evidence[0].sources).toEqual([
+      expect.objectContaining({
+        title: "Official register",
+        tier: "official",
+      }),
+    ]);
+    expect(fang?.records[0].evidence[0].standing).toBe("official");
+    const fangAssertion = fang?.evidence.find(
+      ({ assertion }) => assertion.id === "assertion-fang"
+    );
+    expect(fangAssertion?.sources.map(({ id }) => id)).toEqual([
       "source-b",
       "source-a",
     ]);
-    expect(fang?.records[0].evidence[0].standing).toBe("official");
-    expect(fang?.records[0].evidence[0].sources[0]).toMatchObject({
+    expect(fangAssertion?.sources[0]).toMatchObject({
       tier: "needs_review",
       author: "A. Writer",
       page: "12",
       reviewedNarrative: true,
+      // REQ-161: the sheet names the kind of each source.
+      sourceKind: "oral_tradition",
     });
+    expect(fangAssertion?.sources[1]).toMatchObject({
+      sourceKind: "archive",
+    });
+    // REQ-196: a family name's spellings are read from their assertions.
+    const traore = result.get(searchNamingKey("patronyme", "PAT_TRAORE"));
+    expect(traore?.records).toEqual([
+      expect.objectContaining({
+        id: "assertion-traore",
+        entityType: "patronyme",
+        form: "Traoré",
+        kind: "surname",
+      }),
+    ]);
+    expect(traore?.records[0].evidence[0].assertion.id).toBe(
+      "assertion-traore"
+    );
     const country = result.get(searchNamingKey("country", "NGA"));
     expect(country?.evidence.map(({ assertion }) => assertion.id)).toEqual([
       "assertion-country-history",
@@ -311,27 +329,13 @@ describe("batched search naming data", () => {
   // @req REQ-180
   it("does not fabricate evidence when a cited source is missing", async () => {
     const byTable = {
-      name_records: thenableQuery({
-        data: [
-          {
-            id: "name-one",
-            entity_type: "people",
-            entity_id: "PPL_ONE",
-            name_text: "One",
-            name_type: "endonym",
-            assertion_id: "assertion-one",
-            sort_rank: 0,
-          },
-        ],
-        error: null,
-      }),
       assertions: thenableQuery({
         data: [
           {
             id: "assertion-one",
-            entity_type: "people",
-            entity_id: "PPL_ONE",
-            field_path: "content.appellations.selfAppellation",
+            entity_type: "patronyme",
+            entity_id: "PAT_ONE",
+            field_path: "spellings.0.one",
             statement: "One",
             position: null,
             confidence_level: "high",
@@ -349,11 +353,11 @@ describe("batched search naming data", () => {
     };
 
     const result = await loadSearchNamingData(
-      [subject("people", "PPL_ONE")],
+      [subject("patronyme", "PAT_ONE")],
       client as never
     );
 
-    const one = result.get(searchNamingKey("people", "PPL_ONE"));
+    const one = result.get(searchNamingKey("patronyme", "PAT_ONE"));
     expect(one?.records[0].evidence).toEqual([]);
     expect(one?.evidence).toEqual([]);
   });

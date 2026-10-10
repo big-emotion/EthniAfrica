@@ -242,6 +242,17 @@ const PERSON_SLUG: Record<Language, string> = {
 export const getPersonRoute = (language: Language, id: string): string =>
   `/${language}/${PERSON_SLUG[language]}/${id}`;
 
+// A place (REQ-196) follows the person's precedent: reached from a search
+// result, its country and its peoples, with no hub listing of its own yet, so
+// it takes a standalone slug rather than a `PageType`.
+const PLACE_SLUG: Record<Language, string> = {
+  fr: "atlas/lieux",
+};
+
+// @req REQ-196
+export const getPlaceRoute = (language: Language, id: string): string =>
+  `/${language}/${PLACE_SLUG[language]}/${id}`;
+
 // ---------------------------------------------------------------------------
 // Chapters of the Nommer dossier
 // ---------------------------------------------------------------------------

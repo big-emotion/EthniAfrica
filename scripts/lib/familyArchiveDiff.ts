@@ -59,12 +59,16 @@ export interface FamilyArchiveDiff {
 }
 
 export function normalise(text: string): string {
-  return text
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
+  return (
+    text
+      // French grouping spaces do not change the numeric value of an anchor.
+      .replace(/\b(\d{1,3})[ \u00a0\u202f](?=\d{3}\b)/g, "$1")
+      .normalize("NFD")
+      .replace(/[̀-ͯ]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim()
+  );
 }
 
 function sectionBody(lines: string[], startIndex: number): string {

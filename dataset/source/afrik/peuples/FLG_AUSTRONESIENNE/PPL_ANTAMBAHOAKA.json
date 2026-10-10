@@ -8,7 +8,7 @@
       "mainName": "Antambahoaka",
       "selfAppellation": "Antambahoaka",
       "exonyms": ["Antembahôky", "Zafiraminia"],
-      "originOfExonyms": "Le terme Antambahoaka derive de Ratiambahoaka (aime de son peuple), surnom donne au fondateur Ravalarivo. Le groupe qui s'est constitue autour de lui a pris le nom Antambahoaka, deformation de ce titre. Le terme Zafiraminia (fils de Raminia) est utilise en interne pour designer les membres initiés du groupe apres la circoncision (sambatra).",
+      "originOfExonyms": "Le terme Antambahoaka dériverait de Ratiambahoaka (« aimé de son peuple »), surnom donné au fondateur Ravalarivo. Le groupe qui s'est constitue autour de lui a pris le nom Antambahoaka, deformation de ce titre. Le terme Zafiraminia (fils de Raminia) est utilise en interne pour designer les membres initiés du groupe apres la circoncision (sambatra).",
       "whyProblematic": null,
       "contemporaryUsage": "Antambahoaka est la forme officielle et usuelle. Le dialecte est parfois transcrit Antembahôky dans les sources linguistiques.",
       "linguisticFamily": "FLG_AUSTRONESIENNE",
@@ -90,22 +90,26 @@
       {
         "title": "Joshua Project – Antambahoaka in Madagascar",
         "url": "https://joshuaproject.net/people_groups/10344",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Malagasy (mlg) macrolanguage",
         "url": "https://www.ethnologue.com/language/mlg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog – Malagasy languages Madagascar",
         "url": "https://glottolog.org/glottolog?country=MG",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Madagascar",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

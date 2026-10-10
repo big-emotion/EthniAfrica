@@ -98,17 +98,20 @@
       {
         "title": "SIL Ethnologue — Meru (mer)",
         "url": "https://tsammalex.clld.org/languages/mer",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kenya National Bureau of Statistics — 2019 Kenya Population and Housing Census",
         "url": "https://www.knbs.or.ke/wp-content/uploads/2023/09/2019-Kenya-population-and-Housing-Census-Volume-4-Distribution-of-Population-by-Socio-Economic-Characteristics.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "CityPopulation — Meru County Kenya",
         "url": "https://www.citypopulation.de/en/kenya/sub/admin/12__meru/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "LocalePlanet — Meru (mer) ISO code",
@@ -118,12 +121,14 @@
       {
         "title": "Joshua Project — Meru in Kenya",
         "url": "https://joshuaproject.net/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Jeffrey Fadiman — When We Began There Were Witchmen: An Oral History from Mount Kenya. University of Washington Press, 1993",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

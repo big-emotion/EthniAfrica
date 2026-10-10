@@ -16,7 +16,7 @@
         "Kosova",
         "Kossowa"
       ],
-      "originOfExonyms": "Kisii est un exonyme swahili adopte par l'administration coloniale britannique. En swahili, une personne est Mkisii, le peuple Wakisii et leur langue Kikisii. Gusii vient de Mogusii, ancetre fondateur legendaire du XVIe siecle. Abagusii signifie litteralement 'peuple de Mogusii'. Kosova/Kossowa est une forme derivee de 'Inka Sobo' en Ekegusii ('leur maison') ou de 'Gosobe' en langue kipsigis.",
+      "originOfExonyms": "Kisii est un nom swahili repris par l'administration coloniale britannique. En swahili, Mkisii désigne une personne, Wakisii le peuple et Kikisii sa langue. Gusii est rattaché à Mogusii, un ancêtre fondateur légendaire du XVIe siècle. Abagusii est traduit par « peuple de Mogusii ». Deux explications rapprochent Kosova/Kossowa d'Inka Sobo, « leur maison » en Ekegusii, ou de Gosobe en kipsigis.",
       "whyProblematic": "Le terme Kisii ne designe pas le peuple dans leur propre langue mais une ville (Kisii, aussi appelee Bosongo ou Getembe). Il provient de l'administration coloniale britannique. Le nom authentique est Abagusii.",
       "contemporaryUsage": "Kisii est le nom le plus courant au Kenya pour designer ce peuple et leurs comtes ancestraux. Abagusii reste l'auto-denomination preferee dans les contextes culturels et academiques.",
       "linguisticFamily": "FLG_BANTU",
@@ -88,32 +88,255 @@
       {
         "title": "Gusii – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Gusii",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ekegusii – Minority and Minoritized Languages and Cultures, Texas State University Press, 2023",
         "url": "https://pressbooks.txst.edu/minoritylanguages/part/ekegusii/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Gusii history – Traditional Music and Cultures of Kenya, Jens Finke, 2003",
         "url": "https://www.bluegecko.org/kenya/tribes/gusii/history.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Gusii in Kenya – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/12721",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Gusii – eHRAF World Cultures, Yale University",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fl08/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Information on the Kisii tribe – Immigration and Refugee Board of Canada, 2005",
         "url": "https://www.ecoi.net/en/document/1060343.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kisii désigne un peuple bantou de l'ouest du Kenya, dans les collines à l'est du lac Victoria, qui se nomme lui-même Abagusii et parle l'ekegusii. D'autres noms existent : Gusii, Kisii et, chez les Maasaï, Kosova. Les sources ne s'accordent pas sur l'origine du nom Gusii ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Abagusii",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "guz",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; il se traduit par « les gens de Gusii ».",
+        "periodLabel": "Écrit dès 1902 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Abagusii désigne le peuple qui parle l'ekegusii, dans les comtés de Kisii et de Nyamira, et se traduit par « les gens de Gusii », selon le linguiste Peter Nyansera Otieno. L'origine du nom Gusii est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ekegusii",
+                "author": "Peter Nyansera Otieno",
+                "year": 2023,
+                "url": "https://pressbooks.txst.edu/minoritylanguages/part/ekegusii/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Dans Minority and Minoritized Languages and Cultures, sous la direction de Yasmine Beale-Rivaya, Texas State University. Lu en ligne le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "statement": "Le nom Abagusii apparaît sous une forme proche, « Aba-kisii », chez Harry Johnston en 1902 : c'est, écrit-il, le nom que se donnent entre eux les Kavirondo de langue bantoue établis au sud du golfe de Kavirondo. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà dans ses collines avant lui.",
+            "formAsWritten": "Aba-kisii",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 746",
+                "notes": "Londres, Hutchinson. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Gusii viendrait de Mogusii, un fondateur dont ce peuple aurait pris le nom, Abagusii voulant dire « les gens de Mogusii », selon une tradition que rapporte Jens Finke d'après l'historien William R. Ochieng'.",
+            "hypothesisGroup": "origine du nom Gusii",
+            "sources": [
+              {
+                "title": "Gusii history",
+                "author": "Jens Finke",
+                "year": null,
+                "url": "https://www.bluegecko.org/kenya/tribes/gusii/history.htm",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Traditional Music and Cultures of Kenya, site lu en ligne le 10 octobre 2026. L'auteur dit tirer l'essentiel de cette page de William R. Ochieng', Kenya's People: People of the South-Western Highlands - Gusii, Nairobi, Evans Brothers, 1986, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Gusii viendrait de Gwassi, un lieu au bord du lac Victoria où ce peuple aurait vécu de la pêche avant de fuir des voisins nilotiques, selon Jens Finke, qui juge cette explication plus prosaïque.",
+            "hypothesisGroup": "origine du nom Gusii",
+            "sources": [
+              {
+                "title": "Gusii history",
+                "author": "Jens Finke",
+                "year": null,
+                "url": "https://www.bluegecko.org/kenya/tribes/gusii/history.htm",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Traditional Music and Cultures of Kenya, site lu en ligne le 10 octobre 2026. L'auteur dit tirer l'essentiel de cette page de William R. Ochieng', Kenya's People: People of the South-Western Highlands - Gusii, Nairobi, Evans Brothers, 1986, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "1500-1800"
+            },
+            "era": "polity",
+            "statement": "Le nom Abagusii désigne l'un des peuples du nord-ouest de l'intérieur du Kenya entre 1500 et 1800, à côté des Luyia, des Kalenjin, des Luo et des Kuria, selon W. R. Ochieng'.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 27 : L'intérieur de l'Afrique de l'Est : les peuples du Kenya et de la Tanzanie (1500-1800)",
+                "author": "W. R. Ochieng'",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 899",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kisii",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom le plus courant au Kenya, pour le peuple comme pour sa ville et son comté.",
+        "periodLabel": "Écrit dès 1902",
+        "accounts": [
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "statement": "Le nom Kisii apparaît chez l'administrateur Charles William Hobley en 1902, qui parle de la « nation Kisii ou Kossova » et écrit que Kisii est le nom que ces gens donnent à leur pays. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà dans ses collines avant lui.",
+            "formAsWritten": "Kisii",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Eastern Uganda: An Ethnological Survey",
+                "author": "C. W. Hobley",
+                "year": 1902,
+                "url": "https://archive.org/details/easternugandaan00hoblgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8-9 et p. 51",
+                "notes": "Londres, Anthropological Institute of Great Britain and Ireland. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Kisii est celui qu'emploie en 2005 la Commission de l'immigration et du statut de réfugié du Canada, qui donne Gusii, Guzii et Abagusii comme autres noms du même peuple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Information on the Kisii tribe, including customs, rituals and traditions",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2005,
+                "url": "https://www.ecoi.net/en/document/1060343.html",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information, KEN43248.E, lue sur ecoi.net le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kosova",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Maasaï, selon Johnston",
+        "shortLine": "Le nom que leur donnaient les Maasaï, selon les auteurs de 1902.",
+        "periodLabel": "Écrit en 1902",
+        "accounts": [
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "statement": "Le nom Kosova est, selon Harry Johnston en 1902, celui que les Maasaï donnent aux Abagusii ; la même année, Charles William Hobley écrit « Kossova » pour leur pays. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources que nous avons lues n'en expliquent pas l'origine.",
+            "formAsWritten": "Kosova",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 746",
+                "notes": "Londres, Hutchinson. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "Eastern Uganda: An Ethnological Survey",
+                "author": "C. W. Hobley",
+                "year": 1902,
+                "url": "https://archive.org/details/easternugandaan00hoblgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 51",
+                "notes": "Londres, Anthropological Institute of Great Britain and Ireland. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

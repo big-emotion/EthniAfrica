@@ -81,12 +81,14 @@
       {
         "title": "Joshua Project — Alaba in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/10255",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Horn of Africa Evangelical Mission — Allaaba of Ethiopia (PDF)",
         "url": "https://hornofafrica.org/wp-content/uploads/2019/12/Allaaba.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Al Mujtama Magazine — Ethiopia's Halaba Ethnicity: Arabic Speakers Committed to Islamic Values",
@@ -101,7 +103,8 @@
       {
         "title": "SIL Ethnologue — Alaba-K'abeena language (alw)",
         "url": "https://www.ethnologue.com/language/alw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

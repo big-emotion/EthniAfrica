@@ -60,7 +60,7 @@ export type ModuleDataSource =
   | "afrik_language_families"
   | "afrik_languages"
   | "afrik_patronymes"
-  | "name_records"
+  | "afrik_people_names"
   | "migration_events"
   | "afrik_people_relations"
   | "quiz_questions";
@@ -423,7 +423,7 @@ export const MODULE_DEFINITIONS: HubModuleDefinition[] = [
     // exonyms and attested variants give this route corpus-wide coverage, while
     // ambiguous prose remains refused rather than guessed.
     editorialReadiness: "ready",
-    dataSource: "name_records",
+    dataSource: "afrik_people_names",
     corpusNoun: "Appellations",
     unlisted: true,
   },

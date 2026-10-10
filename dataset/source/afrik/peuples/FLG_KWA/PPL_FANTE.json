@@ -11,7 +11,7 @@
         "Fanti (variante orthographique europeenne)",
         "Fante (terme utilise par les colonisateurs europeens et adopte dans la litterature academique)"
       ],
-      "originOfExonyms": "Le nom Fante est derive de l'expression akan Fa-atsew signifiant la moitie qui est partie, faisant reference a la separation des Fante des autres groupes akan autour de 1250 ap. J.-C. a Krako (Techiman actuel). Fanti est une variante orthographique anglaise fixee au XIXe siecle.",
+      "originOfExonyms": "Le nom Fante viendrait de l'expression akan Fa-atsew, qui veut dire la moitie qui est partie, et ferait reference a la separation des Fante des autres groupes akan autour de 1250 ap. J.-C. a Krako (Techiman actuel). Fanti est une variante orthographique anglaise fixee au XIXe siecle.",
       "whyProblematic": null,
       "contemporaryUsage": "Fante est l'appellation standard en anglais comme en akan. Les locuteurs se designent eux-memes comme Mfantse (singulier) ou Mfantsefo (pluriel). La langue fante est l'un des trois dialectes litteraires de l'akan (avec l'asante et l'akuapem) et est officiellement enseigne dans les ecoles du Ghana.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -93,22 +93,204 @@
       {
         "title": "SIL Ethnologue — Fante language (fat)",
         "url": "https://www.ethnologue.com/language/fat/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "World Population Review — Ghana Population 2025",
         "url": "https://worldpopulationreview.com/countries/ghana",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "CIA World Factbook — Ghana",
         "url": "https://www.cia.gov/the-world-factbook/countries/ghana/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Recensement national du Ghana, Ghana Statistical Service",
         "url": "https://statsghana.gov.gh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Fante désigne un peuple akan de la côte du Ghana, qui se nomme lui-même Mfantse, Mfantsefo au pluriel. Il apparaît par écrit au début du XVIe siècle chez un navigateur portugais, comme nom de deux villages de pêcheurs ; l'anglais l'a aussi écrit Fanti ou Fantee. Nous n'avons pas trouvé de source savante qui explique l'origine de ce nom.",
+    "names": [
+      {
+        "nameText": "Mfantse",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fat",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Fante dans leur propre parler.",
+        "periodLabel": "Noté en 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mfantse est la forme que prend le nom Fante dans le parler fante, selon le dictionnaire de Johann Gottlieb Christaller. Un Fante s'y dit Fantsenyi, et les Fante Mfantsefo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 116",
+                "notes": "Bâle, Mission évangélique, 1881, lu dans l'exemplaire numérisé sur archive.org. Entrée « Fante » : « Fante, F. Mfantse, the (Fanti, Fantee) country and the language or dialects spoken there » ; « (F. Fantsenyi, Mfantsefo), a Fante man, Fante people »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fante",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit dès le début du XVIe siècle pour deux villages de pêcheurs de la côte.",
+        "periodLabel": "Écrit depuis le début du XVIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Tradition non datée"
+            },
+            "statement": "Le nom Fante désigne un peuple de la côte dont les traditions font venir les ancêtres de Tenkiyiman, au nord-ouest du Ghana actuel, selon Pierre Kipré. Nous n'avons pas trouvé de source savante qui explique l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "Pierre Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 360",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1705,
+              "to": 1705,
+              "label": "1705"
+            },
+            "era": "polity",
+            "statement": "Le nom Fante est écrit « Fantyn » par le marchand néerlandais William Bosman, qui consacre en 1705 une partie de sa quatrième lettre au pays de Fantyn et à la puissance de ses habitants.",
+            "formAsWritten": "Fantyn",
+            "sources": [
+              {
+                "title": "A New and Accurate Description of the Coast of Guinea",
+                "author": "William Bosman",
+                "year": 1705,
+                "url": "https://archive.org/details/b30519032",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 45",
+                "notes": "Londres, 1705, traduction anglaise d'un texte paru en néerlandais en 1704 ; lue dans l'exemplaire numérisé sur archive.org. Titre de la lettre IV : « A Description of […] Fantyn and the Places possessed by us and the English: The great Power […] of the Fantynean Negroes »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "Début du XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Fante apparaît dans l'Esmeraldo de situ orbis du navigateur portugais Duarte Pacheco Pereira, comme nom de deux des trois villages de pêcheurs qu'il place sur la côte entre le cap Corso et le cap das Redes : « Fante le grand » et « Fante le petit ». Il note que leurs habitants parlent la langue des gens de la Mina. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "fante",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, édition de Raphael Eduardo de Azevedo Basto",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1892,
+                "url": "https://archive.org/details/esmeraldodesitu00peregoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 70",
+                "notes": "Texte écrit au début du XVIe siècle : le volume IV de l'Histoire générale de l'Afrique le date de 1505-1506 (Madina Ly-Tall) ou de 1506-1508 (Pierre Kipré) ; édition de Raphael Eduardo de Azevedo Basto, Lisbonne, Imprensa Nacional, 1892, lue dans l'exemplaire numérisé sur archive.org. « três lugares povoados de pescadores, s. fante o grande & fante pequeno & sabuu o pequeno » ; « os negros desta terra falam a linguagem dos da mina »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "Pierre Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 355",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fanti",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les auteurs de langue anglaise",
+        "shortLine": "Une graphie anglaise du nom Fante, à côté de Fantee.",
+        "periodLabel": "Graphie anglaise relevée en 1812 et en 1881",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fanti est, avec Fantee, l'une des graphies anglaises du nom Fante que relève Johann Gottlieb Christaller dans son dictionnaire.",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 116",
+                "notes": "Bâle, Mission évangélique, 1881, lu dans l'exemplaire numérisé sur archive.org. Entrée « Fante » : « the (Fanti, Fantee) country »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1812,
+              "to": 1812,
+              "label": "1812"
+            },
+            "era": "polity",
+            "statement": "Le nom Fanti est écrit « Fantees », au pluriel, dans le récit de Henry Meredith sur la côte de l'Or, publié à Londres en 1812.",
+            "sources": [
+              {
+                "title": "An Account of the Gold Coast of Africa",
+                "author": "Henry Meredith",
+                "year": 1812,
+                "url": "https://archive.org/details/anaccountgoldco00meregoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1812, lu dans l'exemplaire numérisé sur archive.org. Table des matières, chapitre V : « Fantees »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

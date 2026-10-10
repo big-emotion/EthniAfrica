@@ -100,10 +100,8 @@ vi.mock("@/components/country/CountryRecordView", () => ({
   ),
 }));
 
-vi.mock("@/components/source-transparency/ConfidenceChip", () => ({
-  ConfidenceChip: ({ confidenceScore }: { confidenceScore: number | null }) => (
-    <div data-testid="confidence-chip" data-confidence={confidenceScore} />
-  ),
+vi.mock("@/components/source-transparency/SourceReviewChip", () => ({
+  SourceReviewChip: () => <div data-testid="source-review-chip" />,
 }));
 
 vi.mock("@/components/source-transparency/PinnedVersionBanner", () => ({
@@ -217,8 +215,8 @@ describe("/[lang]/pays/[slug] page", () => {
     expect(mockGetActiveSourceFlags).not.toHaveBeenCalled();
   });
 
-  // @req REQ-019
-  it("renders the frozen-version banner immediately after the snapshot heading", async () => {
+  // @req REQ-019 REQ-194
+  it("renders the frozen-version banner immediately after the snapshot heading, with no source review chip", async () => {
     mockGetRevisionSnapshot.mockResolvedValueOnce({
       data: { name_fr: "République démocratique du Congo" },
       version: 13,
@@ -244,10 +242,7 @@ describe("/[lang]/pays/[slug] page", () => {
       "data-live-url",
       getCountryRoute("fr", "COD")
     );
-    expect(screen.getByTestId("confidence-chip")).toHaveAttribute(
-      "data-confidence",
-      "84"
-    );
+    expect(screen.queryByTestId("source-review-chip")).toBeNull();
     expect(
       screen.getByText(/Ce contenu est une capture archivée/)
     ).toBeInTheDocument();
@@ -270,7 +265,7 @@ describe("/[lang]/pays/[slug] page", () => {
 
     expect(mockGetRevisionSnapshot).toHaveBeenCalledWith("country", "NGA", 12);
     expect(
-      screen.getByRole("link", { name: "Lire la doctrine" })
+      screen.getByRole("link", { name: "Comprendre notre méthode" })
     ).toHaveAttribute(
       "href",
       `${getLocalizedRoute("fr", "doctrine")}/classifications-contestees@v42`
@@ -290,7 +285,7 @@ describe("/[lang]/pays/[slug] page", () => {
     await renderPage("NGA@v12");
 
     expect(
-      screen.queryByRole("link", { name: "Lire la doctrine" })
+      screen.queryByRole("link", { name: "Comprendre notre méthode" })
     ).not.toBeInTheDocument();
   });
 

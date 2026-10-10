@@ -4,8 +4,392 @@
   "nameEn": "Morocco",
   "nameOfficial": "Royaume du Maroc (Al-Mamlaka al-Maġribiyya)",
   "summary": "Le Maroc s'appelle « Al-Maġrib » en arabe, « le couchant » ; « Maroc » vient de Marrakech, son ancienne capitale. Royaumes berbères antiques, dynasties idrisside, almoravide et almohade, puis alaouite depuis 1666 : son histoire est celle d'une longue continuité dynastique. Chleuhs, Rifains, Aït Atta et Ghomara y maintiennent le tamazight, langue officielle aux côtés de l'arabe.",
-  "etymology": "Le nom \"Maroc\" vient de \"Marrakech\", ancienne capitale du pays. Le nom arabe \"Al-Maġrib\" (المغرب) signifie \"l'Occident\" ou \"le couchant\". Les formes européennes du nom du pays (Maroc, Morocco) remontent au latin médiéval \"Moroch\", nom de Marrakech quand la ville était capitale almoravide puis almohade. Le sens du nom de Marrakech se lit de deux façons : \"terre de Dieu\", à partir de mots berbères, ou \"ville fortifiée\" ; il n'est pas tranché. Le nom officiel est \"Al-Mamlaka al-Maġribiyya\" (Royaume du Maroc).",
+  "etymology": "Le nom \"Maroc\" viendrait de \"Marrakech\", ancienne capitale du pays, selon le site d'information marocain Yabiladi. Le nom arabe \"Al-Maġrib\" (المغرب) voudrait dire \"l'Occident\" ou \"le couchant\". Les formes européennes du nom du pays (Maroc, Morocco) remontent au latin médiéval \"Moroch\", nom de Marrakech quand la ville était capitale almoravide puis almohade. Le sens du nom de Marrakech se lit de deux façons : \"terre de Dieu\", à partir de mots berbères, ou \"ville fortifiée\" ; il n'est pas tranché. Le nom officiel est \"Al-Mamlaka al-Maġribiyya\" (Royaume du Maroc).",
   "nameOriginActor": "Le nom \"Maroc\" vient de \"Marrakech\", fondée par les Almoravides au XIe siècle. Le nom arabe \"Al-Maġrib\" est utilisé depuis le Moyen Âge.",
+  "nameHistory": {
+    "summary": "Le nom Maroc désigne un pays d'Afrique du Nord, le Royaume du Maroc, qui se nomme lui-même al-Maghrib en arabe, « l'Occident ». Le nom Maroc a d'abord été celui de la ville de Marrakech et du royaume dont elle était la capitale ; sous le protectorat, les textes parlent aussi d'empire chérifien. Les sources ne s'accordent pas sur le sens du nom de Marrakech ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Maroc",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de Marrakech, écrit Marrocos dès 1453, devenu en Europe celui du royaume.",
+        "periodLabel": "Écrit dès 1453 ; nom de l'État indépendant depuis 1956",
+        "accounts": [
+          {
+            "period": {
+              "from": 1956,
+              "to": null,
+              "label": "Depuis le 2 mars 1956"
+            },
+            "era": "modern",
+            "statement": "Le nom Maroc est celui d'un État indépendant depuis le 2 mars 1956, date de la déclaration par laquelle la France reconnaît son indépendance, selon l'Office of the Historian et la Digithèque MJP. La Constitution de 2011 commence par « Le Maroc est une monarchie constitutionnelle ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Morocco",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/morocco",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 10 octobre 2026. Le Maroc devient un protectorat français en 1912 ; les États-Unis reconnaissent son indépendance le 7 mars 1956, à la suite de la déclaration franco-marocaine du 2 mars par laquelle la France la reconnaît."
+              },
+              {
+                "title": "Maroc : indépendance du Maroc",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ma1956.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Elle publie la déclaration commune franco-marocaine du 2 mars 1956, la déclaration hispano-marocaine du 7 avril 1956 et la déclaration finale de la conférence de Tanger du 29 octobre 1956."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 128-131, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Maroc : indépendant le 2 mars 1956, puissance coloniale la France ; les lignes suivantes datent du 7 avril 1956 la fin de la zone septentrionale espagnole, du 29 octobre 1956 celle de la zone internationale de Tanger, du 27 avril 1958 celle de la zone méridionale espagnole et du 30 juin 1969 celle d'Ifni."
+              },
+              {
+                "title": "Constitution du Royaume du Maroc, 2011",
+                "author": "Royaume du Maroc",
+                "year": 2011,
+                "url": "https://mjp.univ-perp.fr/constit/ma2011.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan, d'après la version française publiée au Bulletin officiel du Royaume du Maroc. Article premier : « Le Maroc est une monarchie constitutionnelle, démocratique, parlementaire et sociale. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Maroc désigne aujourd'hui le royaume. Ses formes européennes viendraient du nom de la ville de Marrakech, capitale des Almoravides puis des Almohades, selon les auteurs que cite Yabiladi ; le sens du nom de la ville reste discuté, et nous présentons plus bas les explications des sources.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The land of God or the fortified city: the various meanings of Marrakech's name",
+                "author": "Latifa Babas, Yabiladi",
+                "year": 2019,
+                "url": "https://en.yabiladi.com/articles/details/82658/land-fortified-city-various-meanings.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de presse marocaine du 29 août 2019, lu le 10 octobre 2026. Il conclut que le sens du nom reste discuté. Il rapporte que, selon Frederick William Dame et Daniel Don Nanjira, Morocco vient du latin médiéval Moroch, nom de Marrakech quand la ville était la capitale des Almoravides puis des Almohades, et que Marrakech viendrait de mots berbères signifiant « terre de Dieu » ; selon Ahmed Khalidi, il désignerait une ville fortifiée ; selon Gaston Deverdun (1959) et Ahmad ibn Khalid an-Nasiri, il voudrait dire « va vite ». Nous n'avons lu aucun de ces livres."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 13 : Les Almoravides",
+                "author": "Ivan Hrbek et Jean Devisse",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 379",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, lu dans l'exemplaire numérisé. « La fondation de Marrakech, qui devint la nouvelle capitale au nord du massif de l'Atlas en 463/1070 » ; la note 54 explique que la date de 454/1062, longtemps acceptée, a été corrigée par E. Lévi-Provençal, A. Huici Miranda et G. Deverdun."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1956,
+              "label": "Du 30 mars 1912 au 2 mars 1956"
+            },
+            "era": "colonial",
+            "statement": "Le nom Maroc désigne un pays placé sous protectorat français par le traité de Fès du 30 mars 1912, qui institue « au Maroc un nouveau régime ». Un accord du 27 novembre 1912 y définit aussi des zones d'influence espagnole, selon la Digithèque MJP.",
+            "sources": [
+              {
+                "title": "Traité pour l'organisation du protectorat français dans l'empire chérifien, Fès, 30 mars 1912",
+                "author": "République française et Sa Majesté chérifienne",
+                "year": 1912,
+                "url": "https://mjp.univ-perp.fr/constit/ma1912.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "titre et article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan, d'après le Bulletin officiel de l'Empire chérifien du 1er novembre 1912. Le titre parle de « l'empire chérifien » ; l'article premier institue « au Maroc un nouveau régime »."
+              },
+              {
+                "title": "Maroc : indépendance du Maroc",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ma1956.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Elle publie la déclaration commune franco-marocaine du 2 mars 1956, la déclaration hispano-marocaine du 7 avril 1956 et la déclaration finale de la conférence de Tanger du 29 octobre 1956."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "Vers 1505-1508"
+            },
+            "era": "polity",
+            "statement": "Le nom Maroc désigne encore, chez Duarte Pacheco Pereira, la « grande cidade de Marrocos », à trente lieues de Safi dans l'intérieur des terres.",
+            "formAsWritten": "Marrocos",
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, livre I, chapitre 18 : de Titi en avant, le long de la seconde partie du royaume de Fès",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1954,
+                "url": "https://archive.org/details/dli.ernet.534920",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 67",
+                "notes": "Texte portugais écrit vers 1505-1508, lu dans la troisième édition de l'Academia Portuguesa da História (Lisbonne, 1954, introduction et notes de Damião Peres), sur l'exemplaire numérisé d'archive.org. À trente lieues de Çafi, dans l'intérieur, l'auteur décrit « a grande cidade de Marrocos » et ses vingt-quatre portes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1453,
+              "to": 1453,
+              "label": "Chronique achevée en 1453"
+            },
+            "era": "polity",
+            "statement": "Le nom Maroc apparaît, sous la forme Marrocos, chez le chroniqueur portugais Gomes Eanes de Zurara : le royaume de Fès comprend « o de Marrocos », celui de Marrakech, et celui de Tafilalet. C'est la plus ancienne trace de ce nom que le projet connaît. La ville et le royaume existaient bien avant ce texte.",
+            "formAsWritten": "Marrocos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Chronica do descobrimento e conquista de Guiné",
+                "author": "Gomes Eanes de Zurara",
+                "year": 1841,
+                "url": "https://archive.org/details/chronicadodesco00zuragoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 367",
+                "notes": "Chronique achevée en 1453 selon son éditeur, publiée à Paris chez J.-P. Aillaud en 1841, lue dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur écrit que, de l'Égypte au couchant, les Maures n'ont d'autre royaume que « o regno de Feez, no qual jaz o de Marrocos e de Tafellete », et celui de Tunis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1070,
+              "to": 1070,
+              "label": "1070"
+            },
+            "era": "polity",
+            "statement": "On parle alors de Marrakech pour désigner la nouvelle capitale des Almoravides, fondée au nord du massif de l'Atlas en 1070, selon Ivan Hrbek et Jean Devisse.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 13 : Les Almoravides",
+                "author": "Ivan Hrbek et Jean Devisse",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 379",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, lu dans l'exemplaire numérisé. « La fondation de Marrakech, qui devint la nouvelle capitale au nord du massif de l'Atlas en 463/1070 » ; la note 54 explique que la date de 454/1062, longtemps acceptée, a été corrigée par E. Lévi-Provençal, A. Huici Miranda et G. Deverdun."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Maroc viendrait du nom de Marrakech, Moroch en latin médiéval, quand la ville était la capitale des Almoravides puis des Almohades, selon Frederick William Dame et Daniel Don Nanjira, cités par Yabiladi.",
+            "hypothesisGroup": "origine du nom Maroc",
+            "sources": [
+              {
+                "title": "The land of God or the fortified city: the various meanings of Marrakech's name",
+                "author": "Latifa Babas, Yabiladi",
+                "year": 2019,
+                "url": "https://en.yabiladi.com/articles/details/82658/land-fortified-city-various-meanings.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de presse marocaine du 29 août 2019, lu le 10 octobre 2026. Il conclut que le sens du nom reste discuté. Il rapporte que, selon Frederick William Dame et Daniel Don Nanjira, Morocco vient du latin médiéval Moroch, nom de Marrakech quand la ville était la capitale des Almoravides puis des Almohades, et que Marrakech viendrait de mots berbères signifiant « terre de Dieu » ; selon Ahmed Khalidi, il désignerait une ville fortifiée ; selon Gaston Deverdun (1959) et Ahmad ibn Khalid an-Nasiri, il voudrait dire « va vite ». Nous n'avons lu aucun de ces livres."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom de Marrakech, d'où viendrait celui du Maroc, signifierait « terre de Dieu », à partir de deux mots berbères, selon Daniel Don Nanjira et Frederick William Dame, cités par Yabiladi.",
+            "hypothesisGroup": "sens du nom de Marrakech",
+            "sources": [
+              {
+                "title": "The land of God or the fortified city: the various meanings of Marrakech's name",
+                "author": "Latifa Babas, Yabiladi",
+                "year": 2019,
+                "url": "https://en.yabiladi.com/articles/details/82658/land-fortified-city-various-meanings.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de presse marocaine du 29 août 2019, lu le 10 octobre 2026. Il conclut que le sens du nom reste discuté. Il rapporte que, selon Frederick William Dame et Daniel Don Nanjira, Morocco vient du latin médiéval Moroch, nom de Marrakech quand la ville était la capitale des Almoravides puis des Almohades, et que Marrakech viendrait de mots berbères signifiant « terre de Dieu » ; selon Ahmed Khalidi, il désignerait une ville fortifiée ; selon Gaston Deverdun (1959) et Ahmad ibn Khalid an-Nasiri, il voudrait dire « va vite ». Nous n'avons lu aucun de ces livres."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom de Marrakech, d'où viendrait celui du Maroc, désignerait une ville fortifiée, un mur de pierre, selon Ahmed Khalidi, cité par Yabiladi.",
+            "hypothesisGroup": "sens du nom de Marrakech",
+            "sources": [
+              {
+                "title": "The land of God or the fortified city: the various meanings of Marrakech's name",
+                "author": "Latifa Babas, Yabiladi",
+                "year": 2019,
+                "url": "https://en.yabiladi.com/articles/details/82658/land-fortified-city-various-meanings.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de presse marocaine du 29 août 2019, lu le 10 octobre 2026. Il conclut que le sens du nom reste discuté. Il rapporte que, selon Frederick William Dame et Daniel Don Nanjira, Morocco vient du latin médiéval Moroch, nom de Marrakech quand la ville était la capitale des Almoravides puis des Almohades, et que Marrakech viendrait de mots berbères signifiant « terre de Dieu » ; selon Ahmed Khalidi, il désignerait une ville fortifiée ; selon Gaston Deverdun (1959) et Ahmad ibn Khalid an-Nasiri, il voudrait dire « va vite ». Nous n'avons lu aucun de ces livres."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom de Marrakech, d'où viendrait celui du Maroc, voudrait dire « va vite », un avertissement des tribus Masmouda sur un lieu peu sûr, selon Gaston Deverdun et l'historien marocain Ahmad ibn Khalid an-Nasiri, cités par Yabiladi.",
+            "hypothesisGroup": "sens du nom de Marrakech",
+            "sources": [
+              {
+                "title": "The land of God or the fortified city: the various meanings of Marrakech's name",
+                "author": "Latifa Babas, Yabiladi",
+                "year": 2019,
+                "url": "https://en.yabiladi.com/articles/details/82658/land-fortified-city-various-meanings.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de presse marocaine du 29 août 2019, lu le 10 octobre 2026. Il conclut que le sens du nom reste discuté. Il rapporte que, selon Frederick William Dame et Daniel Don Nanjira, Morocco vient du latin médiéval Moroch, nom de Marrakech quand la ville était la capitale des Almoravides puis des Almohades, et que Marrakech viendrait de mots berbères signifiant « terre de Dieu » ; selon Ahmed Khalidi, il désignerait une ville fortifiée ; selon Gaston Deverdun (1959) et Ahmad ibn Khalid an-Nasiri, il voudrait dire « va vite ». Nous n'avons lu aucun de ces livres."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "al-Maghrib",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "« L'Occident » en arabe : le nom que le Maroc se donne, attesté dès le début du VIIIe siècle.",
+        "periodLabel": "Attesté dès le début du VIIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom al-Maghrib est le nom officiel du pays en arabe, et al-Mamlaka al-Maghribiyya celui du royaume, selon la liste des noms de pays des Nations unies.",
+            "aspect": "usage",
+            "formAsWritten": "Al Maghrib",
+            "sources": [
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordonnateur Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 70",
+                "notes": "Document de la session 2025 du Groupe d'experts, daté du 23 avril 2025, lu en ligne le 10 octobre 2026. Entrée Maroc : nom national officiel en arabe, « Al Maghrib », « Al Mamlakah Al Maghribiyyah » ; en français, « Maroc (le) », « Royaume du Maroc (le) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom al-Maghrib vient du mot arabe gharb, l'ouest, selon le Permanent Committee on Geographical Names ; il désigne aussi, plus largement, le Maghreb, l'aire arabophone du nord-ouest de l'Afrique.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Libya",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2025,
+                "url": "https://assets.publishing.service.gov.uk/media/68664e9d1f124a0bb0a3a9cc/Libya_toponymic_factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1, note 3",
+                "notes": "Fiche officielle britannique de toponymie, édition 2025, lue le 10 octobre 2026. La note 3 explique que le nom Maghreb, en arabe al-Maghrib, « derived from the Arabic word gharb (meaning “West”) », s'applique à l'aire arabophone du nord-ouest de l'Afrique, dont le Maroc."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 700,
+              "to": 710,
+              "label": "Avant 710"
+            },
+            "era": "polity",
+            "statement": "Le nom al-Maghrib apparaît sous une forme proche, al-Maghrib al-Aqsā, « le Maghreb extrême-occidental » : c'est le nom d'une province créée par le gouverneur arabe Mūsā, avec Tanger pour capitale, qui correspond au nord du Maroc actuel, selon Hussain Monès. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples berbères de ce pays y vivaient bien avant lui.",
+            "formAsWritten": "al-Maghrib al-Aḳṣā",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 9 : La conquête de l'Afrique du Nord et la résistance berbère",
+                "author": "Hussain Monès",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 268-269",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, lu dans l'exemplaire numérisé. Mūsā crée trois provinces, dont « le Maghreb extrême-occidental (al-Maghrib al-Aḳṣā) avec Tanger (Tandja) pour capitale », avant de repartir pour Ḳayrawān en 91/710 ; cette province représentait « la partie septentrionale du royaume du Maroc actuel »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Empire chérifien",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "periodLabel": "Époque du protectorat",
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "30 mars 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Empire chérifien désigne le Maroc dans le titre du traité de Fès, qui organise le protectorat français « dans l'empire chérifien », et dans celui du Bulletin officiel de l'Empire chérifien, selon la Digithèque MJP.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Traité pour l'organisation du protectorat français dans l'empire chérifien, Fès, 30 mars 1912",
+                "author": "République française et Sa Majesté chérifienne",
+                "year": 1912,
+                "url": "https://mjp.univ-perp.fr/constit/ma1912.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "titre et article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan, d'après le Bulletin officiel de l'Empire chérifien du 1er novembre 1912. Le titre parle de « l'empire chérifien » ; l'article premier institue « au Maroc un nouveau régime »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -226,17 +610,20 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Morocco",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Ethnologue – Languages of Morocco",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "IRCAM (Institut royal de la culture amazighe)",
@@ -246,33 +633,39 @@
       {
         "title": "Minority Rights Group – Amazigh in Morocco",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "ngo"
       },
       {
         "title": "Recensements marocains",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Maroc",
         "url": "https://www.unfpa.org/data/world-population/MA",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNESCO World Heritage Centre – Medina of Marrakesh",
         "url": "https://whc.unesco.org/en/list/331/",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Bien inscrit sur la Liste du patrimoine mondial en 1985 ; la synthèse de sa valeur universelle exceptionnelle indique une fondation en 1070-1072 par les Almoravides (1056-1147)."
       },
       {
         "title": "Yabiladi — The land of God or the fortified city: the various meanings of Marrakech's name",
         "url": "https://en.yabiladi.com/articles/details/82658/land-fortified-city-various-meanings.html",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Article de presse marocaine : le nom de Marrakech, latinisé en Moroch, est à l'origine des noms européens du pays ; deux lectures du nom de la ville, terre de Dieu ou ville fortifiée."
       },
       {

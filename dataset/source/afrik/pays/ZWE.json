@@ -4,8 +4,527 @@
   "nameEn": "Zimbabwe",
   "nameOfficial": "République du Zimbabwe (Republic of Zimbabwe)",
   "summary": "Le Zimbabwe porte le nom des « maisons de pierre » — dzimba-dza-mabwe en shona — c'est-à-dire des ruines du Grand Zimbabwe, centre commercial majeur du XIe au XVe siècle. Royaumes Mutapa, Rozvi puis Ndebele s'y sont succédé, avant la Rhodésie du Sud. Shona, Ndebele et Tonga y perpétuent la sculpture sur pierre et la peinture murale.",
-  "etymology": "Le nom \"Zimbabwe\" vient du terme shona \"dzimba-dza-mabwe\", qui signifie \"maisons de pierre\" ou \"grandes maisons de pierre\". Ce terme fait référence aux ruines du Grand Zimbabwe, un site archéologique majeur construit entre le XIe et le XVe siècle.",
+  "etymology": "Le nom \"Zimbabwe\" viendrait du terme shona \"dzimba-dza-mabwe\", qui veut dire \"maisons de pierre\" ou \"grandes maisons de pierre\". Ce terme fait référence aux ruines du Grand Zimbabwe, un site archéologique majeur construit entre le XIe et le XVe siècle.",
   "nameOriginActor": "Le nom \"Zimbabwe\" a été adopté lors de l'indépendance en 1980, remplaçant \"Rhodésie du Sud\". Il rend hommage à l'ancienne civilisation du Grand Zimbabwe, construite par le peuple Shona.",
+  "nameHistory": {
+    "summary": "Le nom Zimbabwe désigne un pays d'Afrique australe, la République du Zimbabwe, qui a pris en 1980 le nom d'anciennes constructions de pierre et de résidences royales du plateau, dont la plus connue est le Grand Zimbabwe. Le pays s'est d'abord appelé Rhodésie du Sud, puis Rhodésie, et Zimbabwe-Rhodésie en 1979. Les sources ne s'accordent pas sur le sens premier du nom Zimbabwe ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Zimbabwe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'anciennes résidences royales de pierre, pris par la Rhodésie à son indépendance en 1980.",
+        "periodLabel": "Écrit dès 1552 ; nom de l'État depuis 1980",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": null,
+              "label": "Depuis le 18 avril 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Zimbabwe est celui de l'État depuis le 18 avril 1980 : ce jour-là, l'ancienne Rhodésie coloniale devient un État indépendant sous le nom de Zimbabwe, selon David Chanaiwa et la loi britannique de 1979 sur le Zimbabwe.",
+            "aspect": "usage",
+            "formAsWritten": "Zimbabwe",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 10 : L'Afrique australe",
+                "author": "David Chanaiwa",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 297",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Le 18 avril 1980, « l'ancienne Rhodésie coloniale devint un État indépendant sous le nom de Zimbabwe ». La même page parle du transfert du pouvoir de la minorité blanche à la majorité africaine."
+              },
+              {
+                "title": "Zimbabwe Act 1979",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1979,
+                "url": "https://www.legislation.gov.uk/ukpga/1979/60/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi du 20 décembre 1979, lu sur le site officiel de la législation britannique. La section 1 dispose qu'au jour de l'indépendance la Southern Rhodesia deviendra une république indépendante « under the name of Zimbabwe »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 132, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Tableau chronologique des indépendances : « Zimbabwe », indépendant le 18 avril 1980, « (Rhodésie, anciennement Rhodésie du Sud) », avec la mention d'une déclaration unilatérale d'indépendance du 11 novembre 1965 au 12 décembre 1979."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "14 novembre 1979"
+            },
+            "era": "colonial",
+            "statement": "Le nom Zimbabwe est prévu par une loi britannique du 14 novembre 1979 comme celui que portera la Rhodésie du Sud quand elle deviendra une république indépendante, selon le texte de cette loi.",
+            "sources": [
+              {
+                "title": "Southern Rhodesia Act 1979",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1979,
+                "url": "https://www.legislation.gov.uk/ukpga/1979/52/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "préambule et section 1",
+                "notes": "Texte de la loi du 14 novembre 1979, lu sur le site officiel de la législation britannique. Elle autorise une constitution pour le Zimbabwe, qui entrera en vigueur quand la Southern Rhodesia deviendra une république indépendante « under the name of Zimbabwe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1980,
+              "label": "Avant l'indépendance"
+            },
+            "era": "colonial",
+            "statement": "Le nom Zimbabwe est porté par les mouvements de libération : la Zimbabwe African National Union de Robert Mugabe et la Zimbabwe African Peoples Union de Joshua Nkomo, qui forment ensemble le Front patriotique, selon Edem Kodjo et David Chanaiwa.",
+            "actors": [
+              {
+                "name": "Robert Mugabe",
+                "role": "dirigeant de la ZANU"
+              },
+              {
+                "name": "Joshua Nkomo",
+                "role": "dirigeant de la ZAPU"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 25 : Panafricanisme et libération",
+                "author": "Edem Kodjo et David Chanaiwa",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 791",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. La Zimbabwe African National Union (ZANU) de Robert Mugabe et la Zimbabwe African Peoples Union (ZAPU) de Joshua Nkomo forment le Patriotic Front."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Zimbabwe désigne aujourd'hui l'État ; il a d'abord désigné des édifices de pierre et des résidences royales du plateau, dont le plus connu est le Grand Zimbabwe. Son sens premier reste discuté.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 21 : Les bassins du Zambèze et du Limpopo (+ 1100/+ 1500)",
+                "author": "Brian Murray Fagan",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 576",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Dès l'année 1300, les fondations d'un État puissant et influent sont jetées ; son centre se trouve au « Grand Zimbabwe » et il couvre une grande partie du Mashonaland central et méridional."
+              },
+              {
+                "title": "Da Asia, Décade I, livre X, chapitre I, dans Records of South-Eastern Africa, vol. VI",
+                "author": "João de Barros ; texte édité et traduit par George McCall Theal",
+                "year": 1900,
+                "url": "https://archive.org/details/recordsofsouthea06theaiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 112 (texte portugais) et p. 267 (traduction anglaise)",
+                "notes": "Extraits de la première Décade, publiée en 1552, que Theal recopie d'une édition de Lisbonne de 1778 ; lus dans l'exemplaire numérisé. Dans la région de Toroa, que Barros appelle aussi royaume de Butua, se dressent des édifices de pierre sans mortier : « a todos estes edificios os da terra lhe chamam Symbaoe, que acerca delles quer dizer Corte ». Les habitants les appellent tous Symbaoe, ce qui veut dire chez eux la cour, car on nomme ainsi tout lieu où réside le Benomotapa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1609,
+              "to": 1609,
+              "label": "1609"
+            },
+            "era": "polity",
+            "statement": "Le nom Zimbabwe est écrit Zimbaoe par le dominicain portugais João dos Santos : c'est une ville où réside toujours le Quiteve, roi d'une grande partie des terres que traverse le fleuve de Sofala.",
+            "formAsWritten": "Zimbaoe",
+            "sources": [
+              {
+                "title": "Ethiopia Oriental, dans Records of South-Eastern Africa, vol. VII",
+                "author": "João dos Santos ; texte édité et traduit par George McCall Theal",
+                "year": 1901,
+                "url": "https://archive.org/details/recordsofsouthea07theaiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3 (texte portugais) et p. 185 (traduction anglaise)",
+                "notes": "Livre imprimé à Évora en 1609, que Theal recopie ; lu dans l'exemplaire numérisé. Livre I, chapitre II : le fleuve de Sofala passe par une ville appelée Zimbaoe, où réside toujours le Quiteve, roi d'une grande partie de ces terres."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1552,
+              "to": 1552,
+              "label": "Décade publiée en 1552"
+            },
+            "era": "polity",
+            "statement": "Le nom Zimbabwe apparaît par écrit sous une forme proche, Symbaoe, chez l'historien portugais João de Barros : les habitants du royaume de Butua appellent ainsi des édifices de pierre bâtis sans mortier. C'est la plus ancienne trace de ce nom que le projet connaît. Ces édifices existaient déjà avant lui.",
+            "formAsWritten": "Symbaoe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Da Asia, Décade I, livre X, chapitre I, dans Records of South-Eastern Africa, vol. VI",
+                "author": "João de Barros ; texte édité et traduit par George McCall Theal",
+                "year": 1900,
+                "url": "https://archive.org/details/recordsofsouthea06theaiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 112 (texte portugais) et p. 267 (traduction anglaise)",
+                "notes": "Extraits de la première Décade, publiée en 1552, que Theal recopie d'une édition de Lisbonne de 1778 ; lus dans l'exemplaire numérisé. Dans la région de Toroa, que Barros appelle aussi royaume de Butua, se dressent des édifices de pierre sans mortier : « a todos estes edificios os da terra lhe chamam Symbaoe, que acerca delles quer dizer Corte ». Les habitants les appellent tous Symbaoe, ce qui veut dire chez eux la cour, car on nomme ainsi tout lieu où réside le Benomotapa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1450,
+              "label": "Vers 1300"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Zimbabwe tel que l'écrivent les Portugais, un État puissant a son centre au lieu qu'on appelle aujourd'hui le Grand Zimbabwe, dans le centre et le sud du Mashonaland, selon Brian M. Fagan.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 21 : Les bassins du Zambèze et du Limpopo (+ 1100/+ 1500)",
+                "author": "Brian Murray Fagan",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 576",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Dès l'année 1300, les fondations d'un État puissant et influent sont jetées ; son centre se trouve au « Grand Zimbabwe » et il couvre une grande partie du Mashonaland central et méridional."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1552,
+              "to": 1552,
+              "label": "Rapportée en 1552"
+            },
+            "era": "polity",
+            "statement": "Le nom Zimbabwe voudrait dire « la cour » : on appellerait ainsi tout lieu où réside le roi, le Benomotapa, selon ce que les habitants ont dit aux Portugais, d'après João de Barros.",
+            "hypothesisGroup": "sens du nom Zimbabwe",
+            "sources": [
+              {
+                "title": "Da Asia, Décade I, livre X, chapitre I, dans Records of South-Eastern Africa, vol. VI",
+                "author": "João de Barros ; texte édité et traduit par George McCall Theal",
+                "year": 1900,
+                "url": "https://archive.org/details/recordsofsouthea06theaiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 112 (texte portugais) et p. 267 (traduction anglaise)",
+                "notes": "Extraits de la première Décade, publiée en 1552, que Theal recopie d'une édition de Lisbonne de 1778 ; lus dans l'exemplaire numérisé. Dans la région de Toroa, que Barros appelle aussi royaume de Butua, se dressent des édifices de pierre sans mortier : « a todos estes edificios os da terra lhe chamam Symbaoe, que acerca delles quer dizer Corte ». Les habitants les appellent tous Symbaoe, ce qui veut dire chez eux la cour, car on nomme ainsi tout lieu où réside le Benomotapa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Zimbabwe viendrait de dzimba dzemabwe, « maisons de pierre » en shona, selon South African History Online. Brian M. Fagan rapporte que c'était le nom du principal sanctuaire, sur la colline Mhanwa, d'après les recherches d'Abraham sur la tradition orale shona.",
+            "hypothesisGroup": "sens du nom Zimbabwe",
+            "sources": [
+              {
+                "title": "Zimbabwe",
+                "author": "South African History Online",
+                "year": 2011,
+                "url": "https://sahistory.org.za/place/zimbabwe",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Page en ligne datée du 21 mars 2011, mise à jour le 16 septembre 2026, consultée le 10 octobre 2026. Section « Kingdom of Zimbabwe and Great Zimbabwe » : le nom viendrait de l'un de deux termes shona, dzimba dza mabwe, « grandes maisons de pierre », ou dzimba woye, « maisons estimées »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 21 : Les bassins du Zambèze et du Limpopo (+ 1100/+ 1500)",
+                "author": "Brian Murray Fagan",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 577",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Selon les recherches d'Abraham sur la tradition orale des Shona, encore inédites, le principal sanctuaire était bâti sur une colline appelée Mhanwa et « baptisée Dzimba dzemabwe (maisons de pierre) ». Fagan rapporte cette hypothèse sans la relier lui-même au nom Zimbabwe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Zimbabwe viendrait de dzimba woye, « maisons estimées » en shona, selon South African History Online, qui n'en donne pas la source.",
+            "hypothesisGroup": "sens du nom Zimbabwe",
+            "sources": [
+              {
+                "title": "Zimbabwe",
+                "author": "South African History Online",
+                "year": 2011,
+                "url": "https://sahistory.org.za/place/zimbabwe",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Page en ligne datée du 21 mars 2011, mise à jour le 16 septembre 2026, consultée le 10 octobre 2026. Section « Kingdom of Zimbabwe and Great Zimbabwe » : le nom viendrait de l'un de deux termes shona, dzimba dza mabwe, « grandes maisons de pierre », ou dzimba woye, « maisons estimées »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zimbabwe-Rhodésie",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "1979",
+        "accounts": [
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "12 juin 1979"
+            },
+            "era": "colonial",
+            "statement": "Le nom Zimbabwe-Rhodésie, Zimbabwe-Rhodesia en anglais, figure dans une question posée à la Chambre des lords sur « le régime » de ce pays et sur sa nouvelle constitution, soumise à l'électorat blanc mais pas à l'électorat noir, selon le compte rendu des débats. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Zimbabwe-Rhodesia",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Zimbabwe-Rhodesia: New Constitution, débat de la Chambre des lords du 12 juin 1979 (Hansard, vol. 400)",
+                "author": "Chambre des lords du Royaume-Uni",
+                "year": 1979,
+                "url": "https://api.parliament.uk/historic-hansard/lords/1979/jun/12/zimbabwe-rhodesia-new-constitution",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "col. 538",
+                "notes": "Compte rendu officiel des débats, lu en ligne. Lord Hatch of Lusby interroge le gouvernement sur « the régime in Zimbabwe-Rhodesia » et sur une constitution soumise à l'électorat blanc mais pas à l'électorat noir."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rhodésie",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Proclamé en 1895 ; nom du régime de la minorité blanche de 1965 à 1979",
+        "accounts": [
+          {
+            "period": {
+              "from": 1965,
+              "to": 1979,
+              "label": "Du 11 novembre 1965 au 12 décembre 1979"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rhodésie est celui que garde le gouvernement de la minorité blanche de Ian Smith quand il proclame seul l'indépendance, le 11 novembre 1965. La Grande-Bretagne ne reconnaît pas cette déclaration, selon David Chanaiwa ; le pays n'est indépendant qu'en 1980.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Ian Smith",
+                "role": "chef du gouvernement de la minorité blanche"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 10 : L'Afrique australe",
+                "author": "David Chanaiwa",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 295",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Les combattants de la liberté du Zimbabwe luttent contre Ian Smith et son indépendance unilatérale ; la Grande-Bretagne n'a pas reconnu la déclaration unilatérale d'indépendance."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 27 : L'Afrique et les pays socialistes",
+                "author": "Iba Der Thiam et James Mulira",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 843",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Parmi les positions de la Chine : la condamnation de la déclaration unilatérale d'indépendance des Blancs de Rhodésie, le 11 novembre 1965."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 132, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Tableau chronologique des indépendances : « Zimbabwe », indépendant le 18 avril 1980, « (Rhodésie, anciennement Rhodésie du Sud) », avec la mention d'une déclaration unilatérale d'indépendance du 11 novembre 1965 au 12 décembre 1979."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Rhodésie reprend celui de Cecil Rhodes, l'homme d'affaires britannique qui dirigeait la British South Africa Company, selon l'Encyclopaedia Britannica de 1911.",
+            "aspect": "meaning",
+            "actors": [
+              {
+                "name": "Cecil Rhodes",
+                "role": "homme d'affaires britannique, à la tête de la British South Africa Company"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Rhodesia, dans Encyclopaedia Britannica, 11e édition, vol. 23",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Rhodesia",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 259",
+                "notes": "Lu dans la transcription de Wikisource. L'article s'ouvre sur « RHODESIA (so named after Cecil Rhodes) » et décrit un pays coupé en deux par le Zambèze : au sud la Southern Rhodesia, au nord la North-Western Rhodesia, ou Barotseland, et la North-Eastern Rhodesia."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "3 mai 1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rhodésie devient officiellement celui du territoire de la British South Africa Company par une proclamation du 3 mai 1895, selon l'Encyclopaedia Britannica de 1911. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Rhodesia, dans Encyclopaedia Britannica, 11e édition, vol. 23",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Rhodesia",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 266",
+                "notes": "Lu dans la transcription de Wikisource. Entre 1889 et 1891, de nombreux peuples entre les lacs Nyassa et Tanganyika et le Zambèze passent des traités avec la British South Africa Company ; par une proclamation du 3 mai 1895, le territoire de la compagnie reçoit officiellement le nom de « Rhodesia », en reconnaissance du rôle de Cecil Rhodes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "12 septembre 1890"
+            },
+            "era": "colonial",
+            "statement": "Avant le nom Rhodésie, on parle de Mashonaland pour désigner la colonie anglaise fondée le 12 septembre 1890, où une minorité blanche domine la masse des Africains, selon David Chanaiwa.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 9 : Initiatives et résistances africaines en Afrique méridionale",
+                "author": "David Chanaiwa",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 218",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen. Une autre colonie anglaise est fondée, le Mashonaland, le 12 septembre 1890 ; dans ces colonies de peuplement, la masse des Africains est dominée par des minorités blanches."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rhodésie du Sud",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1898 au 18 avril 1980",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1980,
+              "label": "Jusqu'au 18 avril 1980"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rhodésie du Sud, Southern Rhodesia en anglais, est celui que la loi britannique de 1979 donne au territoire qui devient indépendant sous le nom de Zimbabwe, selon le texte de cette loi.",
+            "aspect": "usage",
+            "formAsWritten": "Southern Rhodesia",
+            "sources": [
+              {
+                "title": "Zimbabwe Act 1979",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1979,
+                "url": "https://www.legislation.gov.uk/ukpga/1979/60/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi du 20 décembre 1979, lu sur le site officiel de la législation britannique. La section 1 dispose qu'au jour de l'indépendance la Southern Rhodesia deviendra une république indépendante « under the name of Zimbabwe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rhodésie du Sud désigne la colonie où les colons blancs obtiennent en 1923 le droit de gérer eux-mêmes leurs affaires intérieures, selon Michael Crowder.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 4 : L'Afrique sous domination britannique et belge",
+                "author": "Michael Crowder",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 95",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. En Rhodésie du Sud, « actuel Zimbabwe », les colons blancs ont obtenu en 1923 le droit de gérer eux-mêmes leurs affaires intérieures."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "20 octobre 1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rhodésie du Sud figure dans le titre d'un décret britannique du 20 octobre 1898, le Southern Rhodesia Order in Council, selon le catalogue des Archives nationales du Royaume-Uni. C'est la plus ancienne trace de ce nom que le projet connaît. Le territoire qu'il désigne portait déjà le nom de Rhodésie.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Southern Rhodesia Order in Council",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1898,
+                "url": "https://beta.nationalarchives.gov.uk/catalogue/id/C8869368",
+                "tier": "official",
+                "source_kind": "archive",
+                "notes": "Notice du catalogue des Archives nationales du Royaume-Uni, cote CO 879/54/6 : document imprimé de 17 pages, daté du 20 octobre 1898. Nous avons lu la notice, pas le document lui-même."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Rhodésie du Sud (1890-1980)"],
@@ -156,17 +675,20 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Zimbabwe",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Ethnologue – Languages of Zimbabwe",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Études anthropologiques sur les peuples bantous du Zimbabwe",
@@ -181,27 +703,32 @@
       {
         "title": "Recensements zimbabwéens",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "CIA World Factbook – Zimbabwe (ethnic groups, 2012 census)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Zimbabwe",
         "url": "https://www.unfpa.org/data/world-population/ZW",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNESCO World Heritage Centre – Great Zimbabwe National Monument",
         "url": "https://whc.unesco.org/en/list/364/",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Bien inscrit sur la Liste du patrimoine mondial en 1986 ; la synthèse de sa valeur universelle exceptionnelle le date de 1100 à 1450 de notre ère."
       }
     ],

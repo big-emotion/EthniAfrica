@@ -70,30 +70,21 @@ describe("SourceChainSheet — the directory bridge", () => {
     ]);
 
     expect(
-      screen.getByRole("link", { name: /bibliographie/i })
+      screen.getByRole("link", { name: /référence complète/i })
     ).toHaveAttribute(
       "href",
       "/fr/sources/11111111-1111-1111-1111-111111111111"
     );
   });
 
-  /**
-   * The sheet used to fold anything it did not recognise onto "unverified",
-   * which states a judgement no editor made. An untiered source now keeps its
-   * own standing all the way to the panel.
-   */
-  // @req REQ-019
-  it("says an untiered source awaits review, never that it is unverified", () => {
+  // @req REQ-092
+  it("lists an untiered source without naming any standing", () => {
     renderSheet([
       { id: "s-2", title: "Une source non classée", tier: "needs_review" },
     ]);
 
-    // Twice over: the group that closes the list, and the source's own badge.
-    expect(screen.getByTestId("source-tier-s-2")).toHaveTextContent(
-      "En attente d'examen"
-    );
-    expect(screen.getByTestId("tier-group-needs_review")).toBeInTheDocument();
-    expect(screen.queryByText("Non vérifiée")).not.toBeInTheDocument();
+    expect(screen.getByTestId("source-item-s-2")).toBeInTheDocument();
+    expect(screen.queryByText(/En attente d.examen|Non vérifiée/)).toBeNull();
   });
 
   // @req REQ-019

@@ -74,7 +74,7 @@
     "culture": {
       "majorRites": "Homowo (hooting at hunger / se moquer de la faim) : festival annuel principal des Ga, celebre de mai a septembre selon les villes; commemore une grande famine surmontee lors des migrations ancestrales. Phases du Homowo : Gbemlilaa (interdiction des tambours, mai-aout); recolte du mais; Kpashimo (aspersion de kpokpoi, plat sacre de mais fermente et soupe de palme, dans les espaces publics pour les ancetres); levee de l'interdiction et celebration collective. Nungua celebre en premier, Teshi en dernier (ville la plus recente, fondee en 1710). Ngmayem : festival des Dangme celebrant la recolte du mil; similaire au Homowo. Dipo (ou Klama) : rite de passage des jeunes filles Krobo et Shai vers l'age adulte; initiation communautaire avec periode de formation, retraite rituelle, parure de perles de verre colorees (kokalorku/aggrey beads), presentation publique avec chants et danses. Asafotu / Asafo : ceremonies militaires traditionnelles avec faux batailles, purification, et durbar des chefs en palanquins. Funerailles : les Ga sont connus pour leurs cercueils sculptes en formes symboliques (canot, poisson, lion, cocoa pod) depuis les annees 1950; art funeraire distinctif valorise internationalement.",
       "symbols": "La mer et la pirogue de peche (identite maritime Ga). Le kpokpoi (plat sacre du Homowo). Le stool (siege/trone) de chaque ville Ga comme symbole d'autorite et de magie rituelle. Les perles de verre colorees (kokalorku/aggrey beads) des femmes Dangme Krobo comme symbole d'identite et de statut. Les tambours (fontomfrom, kpanlogo) comme symboles de vie communautaire. Les cercueils sculptes symboliques (fantasy coffins). Ataa-Naa Nyonmo (Dieu supreme androgyne) comme concept spirituel central.",
-      "artsAndMusic": "Kpanlogo : style de musique et de danse moderne cree vers 1960, fusionnant les traditions Ga avec des influences contemporaines; percussif, avec tambours kpanlogo en forme de tonneau et chants; popularise internationalement par Obo Addy, Yacub Addy et Mustapha Tettey Addy. Klama, Kpatsa : styles musicaux traditionnels Dangme. Danse Dipo : choreographie rituelle des initiees Krobo, avec ornements de perles. Artisanat de perles de verre Krobo (kokalorku) : savoir-faire distinctif, reconnu internationalement. Cercueils sculptes Ga (Seth Kane Kwei, Ataa Oko) : art funeraire qui a attire l'attention internationale. Broderie et tissage de pagnes. Chants de pecheurs et rythmes de mer. Boxe : la communaute de Bukom (Accra) est un vivier de boxeurs professionnels de renommee mondiale. La tradition orale ga-dangme comprend un corpus de proverbes transmis lors des cérémonies rituelles, documenté dans le survol linguistique du ghana de Kropp Dakubu (1988).",
+      "artsAndMusic": "Le kpanlogo est une musique et une danse apparues vers 1960, mêlant des traditions ga et des influences contemporaines. Il associe des chants et des tambours en forme de tonneau. Obo Addy, Yacub Addy et Mustapha Tettey Addy l'ont fait connaître à l'étranger. Le Klama et la Kpatsa font partie des traditions musicales dangme. La danse Dipo accompagne l'initiation des jeunes filles krobo, parées de perles. Les artisans fabriquent notamment les perles de verre kokalorku. Les cercueils sculptés ga, avec des artistes comme Seth Kane Kwei et Ataa Oko, sont aussi connus à l'étranger. La broderie, le tissage de pagnes et les chants de pêcheurs complètent ces pratiques. À Bukom, dans Accra, la boxe a fait connaître de nombreux sportifs professionnels. Les proverbes ga-dangme se transmettent notamment lors des cérémonies. Kropp Dakubu (1988) les évoque dans son étude des langues du Ghana.",
       "spiritualities": "Systeme de croyances traditionnel centré sur Ataa-Naa Nyonmo (Dieu supreme), les DzemaWodzi (divinites intermediaires ancestrales), les Wodzi (esprits de lieux specifiques) et les Sisadzi (esprits des ancetres). Les Wulomei (pretres) assurent la communication avec ces entites, notamment lors des festivals. Croyance que les morts passent dans une vie parallele (ce qui explique les riches pratiques funeraires). Le christianisme (majoritaire) coexiste avec ces croyances en syncrétisme: les festivals Homowo incluent toujours des libations aux ancetres. Presence de l'islam dans certaines communautes Ga d'Accra."
     },
     "historicalRole": {
@@ -99,7 +99,8 @@
       {
         "title": "Britannica - Ga people",
         "url": "https://www.britannica.com/topic/Ga",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Visit Ghana - Homowo Festival",
@@ -109,32 +110,38 @@
       {
         "title": "GBC Ghana Online - The Homowo Story",
         "url": "https://www.gbcghanaonline.com/news/the-homowo-story-how-the-ga-people-conquered-hunger/2025/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "Osabu-Kle, Daniel Tetteh. The Ga People and Homowo Festival. Carleton University African Studies",
         "url": "https://carleton.ca/africanstudies/wp-content/uploads/Ga-People-and-Homowo-Festival.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog - Ga (gaa)",
         "url": "https://glottolog.org/resource/languoid/id/gaaa1244",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue - Dangme (ada)",
         "url": "https://www.ethnologue.com/language/ada/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ghana Statistical Service - Population and Housing Census",
         "url": "https://statsghana.gov.gh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Kropp Dakubu, Mary Esther (1988) – The Languages of Ghana. Kegan Paul International, pour l'International African Institute",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Survol linguistique des langues du Ghana, dont le ga-dangme et ses traditions orales."
       }
     ]

@@ -157,4 +157,38 @@ describe("buildFicheSourceRegister", () => {
       notes: "Catalogue entry.",
     });
   });
+
+  /**
+   * The fiche JSON rarely declares a kind; the `sources` row often does. The
+   * kind is detail, so the table fills it like a missing URL, and a cited-only
+   * source brings its own.
+   */
+  // @req REQ-161
+  it("takes the source kind from the table when the declaration has none", () => {
+    const register = buildFicheSourceRegister(
+      [
+        declared("Ethnologue"),
+        declared("Oral account", { kind: "oral_tradition" }),
+      ],
+      [
+        {
+          id: "src-1",
+          title: "Ethnologue",
+          sourceKind: "linguistic_reference",
+        },
+        { id: "src-2", title: "Oral account", sourceKind: "archive" },
+        {
+          id: "src-3",
+          title: "UNESCO report",
+          sourceKind: "intergovernmental",
+        },
+      ]
+    );
+
+    expect(register.entries.map((entry) => entry.kind)).toEqual([
+      "linguistic_reference",
+      "oral_tradition",
+      "intergovernmental",
+    ]);
+  });
 });

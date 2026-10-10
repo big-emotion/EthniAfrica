@@ -80,12 +80,14 @@
       {
         "title": "Teresa Crane, Completion and Dissociation in Totela Tense and Aspect, ACAL 42, 2012",
         "url": "http://www.lingref.com/cpp/acal/42/paper2770.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nature, Genetic perspectives on the origin of clicks in Bantu languages from southwestern Zambia, 2012",
         "url": "https://www.nature.com/articles/ejhg2012192",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Language in Zambia (PDF), Zambian Christian University, donnees demographiques",
@@ -95,7 +97,8 @@
       {
         "title": "Joshua Project, Totela in Zambia",
         "url": "https://joshuaproject.net/people_groups/15571",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

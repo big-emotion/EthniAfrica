@@ -80,17 +80,20 @@
       {
         "title": "Kagulu, Northern Sagara in Tanzania – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/12414",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kaguru – DICE Database, University of Missouri",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Kaguru.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Kagulu – Glottolog 5.3",
         "url": "https://glottolog.org/resource/languoid/id/kagu1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Beidelman, Thomas O. – The Kaguru: A Matrilineal People of East Africa, 1971",

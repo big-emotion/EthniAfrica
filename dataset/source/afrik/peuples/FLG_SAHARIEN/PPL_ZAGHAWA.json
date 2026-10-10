@@ -16,8 +16,8 @@
         "Zoghaua",
         "Awlad Mana"
       ],
-      "originOfExonyms": "Le terme Zaghawa est un exonyme arabe attesté depuis le 9e siècle (al-Yaqubi). Le terme Beri (ou Kegi) est l'endonyme utilisé par les locuteurs eux-mêmes. Dans la littérature ethnologique, le terme Beri englobe les Zaghawa, les Bideyat et les Berti, trois peuples proches parlant des langues apparentées.",
-      "whyProblematic": "Le terme Zaghawa est un exonyme arabe que le groupe lui-même rejette partiellement au profit de Beri. La confusion avec les Bideyat (considérés tantôt comme un sous-groupe zaghawa, tantôt comme un groupe distinct) complexifie l'ethnonymie. Les sources arabes médiévales utilisaient Zaghawa pour désigner l'empire qu'ils dirigeaient, puis le peuple, créant une ambiguité historique.",
+      "originOfExonyms": "Zaghawa est un nom arabe donné au peuple de l'extérieur, présent dès le IXe siècle chez al-Yaqubi. Les personnes concernées se nomment Beri ou Kegi. Dans les études sur ces populations, Beri rassemble les Zaghawa, les Bideyat et les Berti, présentés comme trois peuples proches aux langues apparentées.",
+      "whyProblematic": "Une partie du groupe rejette le nom arabe Zaghawa et préfère se nommer Beri. Les noms peuvent prêter à confusion : les Bideyat sont parfois présentés comme un groupe zaghawa, parfois comme un peuple distinct. Les sources arabes médiévales employaient aussi Zaghawa pour l'empire dirigé par ce peuple, puis pour le peuple lui-même. Il faut donc tenir compte du contexte de chaque source.",
       "contemporaryUsage": "Le terme Zaghawa est le plus utilisé dans les sources françaises, anglaises et arabes contemporaines, ainsi que dans les médias lors de la crise du Darfour. Les membres du groupe se désignent eux-mêmes comme Beri dans leur propre langue. Depuis 1990, les Zaghawa dominent la politique tchadienne via la présidence d'Idriss Déby Itno (clan Bidayat des Zaghawa, 1990-2021) et de son fils Mahamat Déby (depuis 2021).",
       "linguisticFamily": "FLG_SAHARIEN",
       "ethnoLinguisticGroup": "Saharien oriental (branche nilo-saharienne)",
@@ -105,27 +105,32 @@
       {
         "title": "SIL Ethnologue - Zaghawa (zag)",
         "url": "https://www.ethnologue.com/language/zag/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Zaghawa people groups",
         "url": "https://joshuaproject.net/people_groups/16080/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Immigration and Refugee Board of Canada - Goranes et Zaghawa du Tchad (2013)",
         "url": "https://www.ecoi.net/de/dokument/2021474.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Brookings Institution - The death of Chadian President Deby (2021)",
         "url": "https://www.brookings.edu/articles/the-death-of-chadian-president-idris-deby-itno-threatens-stability-in-the-region/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Minority Rights Group - Chad",
         "url": "https://minorityrights.org/country/chad/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       }
     ]
   }

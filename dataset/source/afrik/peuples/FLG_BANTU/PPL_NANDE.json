@@ -108,27 +108,200 @@
       {
         "title": "SIL Ethnologue – Nande (nnb)",
         "url": "https://www.ethnologue.com/language/nnb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "PeopleGroups.org – Nande of DRC (2024)",
         "url": "https://peoplegroups.org/people_groups/pg014669/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes – Nande people",
         "url": "https://www.101lasttribes.com/tribes/nande.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Global Press Journal – A Tribe Watches Its Language Languish (2021)",
         "url": "https://globalpressjournal.com/africa/democratic-republic-of-congo/tribe-watches-language-languish/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Swordshare Map – Kinande (nnb)",
         "url": "https://map.swordshare.com/nnb",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nande désigne un peuple bantou de l'est de la République démocratique du Congo, dans les territoires de Beni et de Lubero, au Nord-Kivu ; en Ouganda, au pied du Rwenzori, les gens du même ensemble sont appelés Bakonzo. Ensemble, ils se nomment Bayira, ou Yira. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bayira",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nnb",
+        "namedBy": null,
+        "shortLine": "Le nom commun que se donnent les Nande du Congo et les Konzo de l'Ouganda.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Bayira, ou Yira, désigne le peuple que l'on appelle Nande au Congo et Konzo en Ouganda, un seul peuple qui fait remonter ses origines aux monts Rwenzori, selon un recueil de proverbes nande publié en 2017.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Collection of 100 Nande (D R Congo) Proverbs and Wise Sayings",
+                "author": "Alimas Kaluta Adrien Socrate",
+                "year": 2017,
+                "url": "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/ebooks_alimas_nande.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "introduction",
+                "notes": "Nairobi, African Proverbs Working Group. Lu en ligne le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1830,
+              "label": "Début du XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Bayira désigne, selon les chercheurs que résume le programme de données sur les conflits de l'université d'Uppsala, un peuple de l'ancien royaume du Bunyoro dont descendraient les Nande et les Konzo : au début du XIXe siècle, une partie des Bayira aurait franchi le Rwenzori vers l'ouest et pris le nom de Banande, tandis que ceux restés à l'est seraient devenus les Bakonzo.",
+            "sources": [
+              {
+                "title": "Nande",
+                "author": "Uppsala Conflict Data Program, université d'Uppsala",
+                "year": null,
+                "url": "https://ucdp.uu.se/actor/2397",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Fiche d'acteur du programme de données sur les conflits, lue en ligne le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Banande",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "nnb",
+        "namedBy": "leurs voisins, selon Johnston",
+        "shortLine": "Le nom courant au Congo ; Munande pour une seule personne.",
+        "periodLabel": "Écrit dès 1902",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Banande, ou Nande, désigne une population d'environ deux millions de personnes dans les territoires de Beni et de Lubero, au Nord-Kivu, et dans une partie de l'Ituri, selon le programme de données sur les conflits de l'université d'Uppsala.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Nande",
+                "author": "Uppsala Conflict Data Program, université d'Uppsala",
+                "year": null,
+                "url": "https://ucdp.uu.se/actor/2397",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Fiche d'acteur du programme de données sur les conflits, lue en ligne le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Banande apparaît chez Harry Johnston en 1902, qui le donne comme le nom que les peuples voisins appliquent à des gens vivant à la lisière de la grande forêt, à l'ouest de la Semliki ; une seule personne, note-t-il, se dit Munande. Johnston ne sait pas s'il s'agit d'un peuple précis et les décrit avec les catégories raciales méprisantes de son époque. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà là avant lui.",
+            "formAsWritten": "Banande",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 476 et p. 510-511",
+                "notes": "Londres, Hutchinson. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bakonzo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la branche ougandaise, au pied du Rwenzori ; Stanley écrivait Wakonju.",
+        "periodLabel": "Écrit dès 1890",
+        "accounts": [
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "statement": "Le nom Bakonzo apparaît sous une forme proche, « Wakonju », chez Henry Morton Stanley en 1890 : en 1889, sur les pentes ouest du Rwenzori, il traverse le pays qu'il appelle Ukonju et recueille les informations des Wakonju, devenus ses amis. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà sur le Rwenzori avant lui.",
+            "formAsWritten": "Wakonju",
+            "birth": true,
+            "sources": [
+              {
+                "title": "In Darkest Africa, vol. II",
+                "author": "Henry M. Stanley",
+                "year": 1890,
+                "url": "https://www.gutenberg.org/ebooks/43655",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 270 et p. 283",
+                "notes": "Londres, Sampson Low, Marston, Searle and Rivington. Lu dans l'édition du Projet Gutenberg, qui garde la pagination de l'original, le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Bakonzo figure dans la liste des communautés autochtones de l'Ouganda que dresse la Constitution de 1995.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution of the Republic of Uganda, 1995",
+                "author": "République de l'Ouganda",
+                "year": 1995,
+                "url": "https://www.wipo.int/wipolex/en/text/499403",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "Third Schedule",
+                "notes": "La troisième annexe dresse la liste des communautés autochtones de l'Ouganda au 1er février 1926. Texte tel que modifié en dernier lieu par la loi n° 13 de 2000, lu dans la base WIPO Lex de l'Organisation mondiale de la propriété intellectuelle le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

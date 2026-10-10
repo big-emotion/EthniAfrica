@@ -23,7 +23,7 @@
   "content": {
     "appellations": {
       "mainName": "Peuples Bénoué-Congo",
-      "selfAppellation": "Diverses selon les sous-groupes (chaque peuple possède son propre ethnonyme)",
+      "selfAppellation": "Les noms varient selon les groupes ; chaque peuple possède le sien.",
       "exonyms": [
         "Benue-Congo peoples",
         "Bantoid peoples",
@@ -161,12 +161,14 @@
       {
         "title": "Britannica : Benue-Congo languages",
         "url": "https://www.britannica.com/topic/Benue-Congo-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "EBSCO Research Starters : Benue-Congo Languages",
         "url": "https://www.ebsco.com/research-starters/language-and-linguistics/benue-congo-languages",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "LanguagesGulper : Benue-Congo Languages",
@@ -176,7 +178,8 @@
       {
         "title": "Ethnologue (SIL International, 2017) : 976 langues bénoué-congo",
         "url": "https://www.ethnologue.com",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

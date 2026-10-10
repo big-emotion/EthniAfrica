@@ -76,32 +76,38 @@
       {
         "title": "Joshua Project – Mbugwe in Tanzania",
         "url": "https://joshuaproject.net/people_groups/13637",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes – Mbugwe people",
         "url": "https://www.101lasttribes.com/tribes/mbugwe.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "PeopleGroups.org – Mbugwe of Tanzania",
         "url": "https://peoplegroups.org/people_groups/pg014989/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Mous, Maarten – Towards the linguistic history of Rangi and Mbugwe, 2021",
         "url": "https://www.youtube.com/watch?v=YBw5KY7LNoc",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "academic"
       },
       {
         "title": "Dunham, Gordon – A Grammatical Sketch of Mbugwe (Bantu F.34, Tanzania), Koeppe Verlag",
         "url": "https://www.koeppe.de/titel_print_a-grammatical-sketch-of-mbugwe-bantu-f-34-tanzania",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Mous, Maarten – Language and Identity among marginal people in East Africa, Universiteit Leiden",
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:3144215/download",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

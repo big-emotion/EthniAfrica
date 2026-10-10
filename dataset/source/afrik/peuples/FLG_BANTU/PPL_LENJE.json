@@ -16,7 +16,7 @@
         "Lengi",
         "Mukuni"
       ],
-      "originOfExonyms": "Bene Mukuni signifie en bantou les gens de Mukuni, en reference au fondateur legendaire de la chefferie lenje. Le prefixe Ba-/Be- est le pluriel bantu pour designer un peuple. Balenge est une variante phonetique de Balenje.",
+      "originOfExonyms": "Bene Mukuni voudrait dire en bantou les gens de Mukuni, en référence au fondateur légendaire de la chefferie lenje. Le prefixe Ba-/Be- est le pluriel bantu pour designer un peuple. Balenge est une variante phonetique de Balenje.",
       "whyProblematic": null,
       "contemporaryUsage": "Lenje est le nom officiel utilise en Zambie. Bene Mukuni est le terme traditionnel toujours employe par les Lenje eux-memes. PeopleGroups.org les recense sous Lenje of Zambia (PGID PG015590). Reconnus parmi les 72 tribus officielles de Zambie.",
       "linguisticFamily": "FLG_BANTU",
@@ -80,12 +80,14 @@
       {
         "title": "Lenje in Zambia – Joshua Project, PGID 13039",
         "url": "https://joshuaproject.net/people_groups/13039",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Lenje of Zambia – PeopleGroups.org, PGID PG015590",
         "url": "https://peoplegroups.org/people_groups/pg015590/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Before Lusaka: A Brief History of the Soli and Lenje Peoples – Explore Lusaka, 2025",
@@ -100,12 +102,14 @@
       {
         "title": "The Birth and Sociolinguistic Features of Sala Language of Zambia – RSIS International, 2023",
         "url": "https://rsisinternational.org/journals/ijriss/Digital-Library/volume-7-issue-8/993-1000.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Lenje – Glottolog 5.3, SIL International",
         "url": "https://glottolog.org/resource/languoid/id/lenj1248",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

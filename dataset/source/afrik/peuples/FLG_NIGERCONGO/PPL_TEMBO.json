@@ -9,7 +9,7 @@
       "mainName": "Tembo",
       "selfAppellation": "Batembo (pluriel) / Mutembo (singulier) ; la langue se dit Chitembo ou Kitembo",
       "exonyms": [
-        "Batembo (exonyme bantou courant, préfixe Ba- + Tembo)",
+        "Batembo (nom courant dans les langues bantoues, formé de Ba- et de Tembo)",
         "Kitembo (nom swahili de la langue et parfois du peuple)",
         "Chitembo (nom dans la langue elle-même)",
         "Tembo-Kitembo (désignation utilisée par les sources missionnaires et Joshua Project)"
@@ -93,22 +93,26 @@
       {
         "title": "Omniglot — Tembo (Kitembo / Chitembo)",
         "url": "https://www.omniglot.com/writing/tembo.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Tembo (tbt)",
         "url": "https://www.ethnologue.com/language/tbt/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Tembo-Kivu in Congo, Democratic Republic of",
         "url": "https://joshuaproject.net/people_groups/15329",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Tembo-Kitembo of Democratic Republic of the Congo",
         "url": "https://peoplegroups.org/people_groups/pg014737/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Africa Federation — History of Kivu, Batembo Chiefdoms",
@@ -118,12 +122,14 @@
       {
         "title": "The Conversation — How DRC's colonial legacy forged a nexus between ethnicity, territory and conflict",
         "url": "https://theconversation.com/how-drcs-colonial-legacy-forged-a-nexus-between-ethnicity-territory-and-conflict-153469",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "de Wit, Gert and Alie de Wit-Hasselaar. Tembo survey report. SIL International, 1995",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

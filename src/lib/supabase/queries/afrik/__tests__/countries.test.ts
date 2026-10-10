@@ -82,6 +82,27 @@ describe("AFRIK Countries Queries", () => {
   });
 
   describe("getAfrikCountryById", () => {
+    // @req REQ-196
+    it("maps name_history onto nameHistory", async () => {
+      const nameHistory = {
+        summary: "Le nom a une histoire, présentée plus bas.",
+        names: [],
+      };
+      mockSupabase.single.mockResolvedValue({
+        data: {
+          id: "ZWE",
+          name_fr: "Zimbabwe",
+          content: {},
+          name_history: nameHistory,
+        },
+        error: null,
+      });
+
+      const result = await getAfrikCountryById("ZWE");
+
+      expect(result?.nameHistory).toEqual(nameHistory);
+    });
+
     it("should return a country by ISO code", async () => {
       const mockData = {
         id: "ZWE",

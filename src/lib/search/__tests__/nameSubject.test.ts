@@ -181,7 +181,10 @@ describe("the subject of a name search", () => {
       peopleGroupId: "PGRP_KONGO",
     });
     const subjects = selectNameSubject(
-      [kongo("PPL_KONGO", "Kongo"), kongo("PPL_KONGO_SUD", "Kongo du Sud")],
+      [
+        kongo("PPL_KONGO", "Kongo"),
+        kongo("PPL_KONGO_BRAZZA", "Kongo du Congo"),
+      ],
       "kongo"
     );
 
@@ -314,5 +317,29 @@ describe("two countries carrying one name", () => {
         "congo"
       )
     ).toEqual([]);
+  });
+});
+
+describe("a word fiche as a subject", () => {
+  // « race » is a word fiche; if a people or a family name were filed
+  // « Race » too, the page would answer both, neither crowned.
+  // @req REQ-196
+  it("answers to its name beside every other entity of the same name", () => {
+    const word: SearchResult = {
+      type: "word",
+      id: "WRD_RACE",
+      name: "race",
+      relevance: 0.2,
+    };
+    const patronyme: SearchResult = {
+      type: "patronyme",
+      id: "PAT_RACE",
+      name: "Race",
+      relevance: 1,
+    };
+
+    expect(
+      selectNameSubject([patronyme, word], "race").map(({ id }) => id)
+    ).toEqual(["PAT_RACE", "WRD_RACE"]);
   });
 });

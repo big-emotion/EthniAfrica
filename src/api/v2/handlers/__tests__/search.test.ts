@@ -342,3 +342,89 @@ describe("ftsSearchHandler — unified results", () => {
     expect(quiz.data.nearNames).toEqual([]);
   });
 });
+
+describe("ftsSearchHandler — places", () => {
+  const PLACE = {
+    id: "LOC_YAMOUSSOUKRO",
+    nameMain: "Yamoussoukro",
+    placeType: "ville",
+    countryId: "CIV",
+    summary: "Capitale politique.",
+    nameHistory: null,
+    relevance: 1,
+    exactMatch: true,
+    normalizedScore: 0.95,
+  };
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  // @req REQ-196
+  it("publishes the places found and counts them in the total", async () => {
+    vi.mocked(ftsSearch).mockResolvedValue(
+      serviceResponse({ places: [PLACE], placesTotal: 1, peoplesTotal: 2 })
+    );
+
+    const { data } = await ftsSearchHandler({ ...QUERY, q: "yamoussoukro" });
+
+    expect(data.places).toEqual([PLACE]);
+    expect(data.placesTotal).toBe(1);
+    expect(data.total).toBe(3);
+  });
+
+  // @req REQ-196
+  it("keeps places out of the quiz lens", async () => {
+    vi.mocked(ftsSearch).mockResolvedValue(
+      serviceResponse({ places: [PLACE], placesTotal: 1 })
+    );
+
+    const { data } = await ftsSearchHandler({ ...QUERY, lens: "quiz" });
+
+    expect(data.places).toEqual([]);
+    expect(data.placesTotal).toBe(0);
+  });
+});
+
+describe("ftsSearchHandler — words", () => {
+  const WORD = {
+    id: "WRD_RACE",
+    nameMain: "race",
+    wordLanguage: "fra",
+    definition: "Un mot.",
+    content: {},
+    nameHistory: { summary: "s", names: [] },
+    relevance: 1,
+    exactMatch: true,
+    normalizedScore: 1,
+  };
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  // @req REQ-196
+  it("publishes the word fiches found and counts them in the total", async () => {
+    vi.mocked(ftsSearch).mockResolvedValue(
+      serviceResponse({ words: [WORD], wordsTotal: 1, peoplesTotal: 2 })
+    );
+
+    const { data } = await ftsSearchHandler({ ...QUERY, q: "race" });
+
+    expect(data.words).toEqual([WORD]);
+    expect(data.wordsTotal).toBe(1);
+    expect(data.total).toBe(3);
+  });
+
+  // @req REQ-196
+  it("keeps words out of the quiz lens", async () => {
+    vi.mocked(ftsSearch).mockResolvedValue(
+      serviceResponse({ words: [WORD], wordsTotal: 1 })
+    );
+
+    const { data } = await ftsSearchHandler({ ...QUERY, lens: "quiz" });
+
+    expect(data.words).toEqual([]);
+    expect(data.wordsTotal).toBe(0);
+  });
+});

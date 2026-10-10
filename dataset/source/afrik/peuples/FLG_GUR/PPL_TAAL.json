@@ -8,7 +8,7 @@
       "mainName": "Taal",
       "selfAppellation": "Talomsi",
       "exonyms": ["Taal", "Taale", "Talomsi"],
-      "originOfExonyms": "Le terme Taal est le nom exonyme donne par les voisins mossi et par l'administration coloniale francaise a ce groupe. Le terme Talomsi est l'auto-denomination du peuple.",
+      "originOfExonyms": "Les voisins mossi et l'administration coloniale française ont donné le nom Taal à ce groupe. Ses membres se nomment eux-mêmes Talomsi.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Taal est utilise dans les sources administratives et academiques au Burkina Faso. Talomsi reste l'appellation usuelle au sein de la communaute.",
       "linguisticFamily": "FLG_GUR",
@@ -82,22 +82,26 @@
       {
         "title": "SIL Ethnologue – Taal language (tql)",
         "url": "https://www.ethnologue.com/language/tql/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Burkina Faso – Gur languages of Burkina Faso",
         "url": "https://sil-burkina.org/en/content/gur-languages",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes – Gurunsi people",
         "url": "https://www.101lasttribes.com/tribes/gurunsi.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Britannica – Grusi",
         "url": "https://www.britannica.com/topic/Grusi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

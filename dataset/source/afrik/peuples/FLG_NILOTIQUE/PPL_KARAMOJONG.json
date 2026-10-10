@@ -8,7 +8,7 @@
       "mainName": "Karamojong",
       "selfAppellation": "Ngikarimojon / Ngakarimojong (langue : ngakarimojong)",
       "exonyms": ["Karimojong", "Karamojon", "Karamojong"],
-      "originOfExonyms": "Le nom Karamojong derive de la formule ekar ngimojong signifiant les vieux hommes ne peuvent plus marcher ou les vieux hommes se sont assis, en reference aux anciens qui refuserent de poursuivre la migration vers le sud depuis le pays Jie (Najie) lors de la fragmentation du proto-groupe Ateker. Ceux qui continuerent la migration vers l'ouest formerent les Iteso, les Kumam et les Langi. Dans la langue ngakarimojong, le prefixe ngi- designe les gens, nga- la langue, et l'absence de prefixe la terre.",
+      "originOfExonyms": "Le nom Karamojong viendrait de la formule ekar ngimojong, qui veut dire les vieux hommes ne peuvent plus marcher ou les vieux hommes se sont assis, en référence aux anciens qui auraient refusé de poursuivre la migration vers le sud depuis le pays Jie (Najie) lors de la fragmentation du proto-groupe Ateker. Ceux qui continuerent la migration vers l'ouest formerent les Iteso, les Kumam et les Langi. Dans la langue ngakarimojong, le prefixe ngi- designe les gens, nga- la langue, et l'absence de prefixe la terre.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Karamojong (ou Karimojong dans certaines sources) est couramment utilise en anglais et en ougandais. La communaute se designe elle-meme Ngikarimojon. La region habitee est appelee Karamoja.",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -97,12 +97,14 @@
       {
         "title": "Omniglot — Karamojong language and alphabet",
         "url": "https://www.omniglot.com/writing/karamojong.php",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Swordshare Map — Ng'akarimojong ISO 639-3 kdj",
         "url": "https://map.swordshare.com/kdj",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kara-Tunga — Karamoja Bibliography",
@@ -112,17 +114,20 @@
       {
         "title": "Brookings Institution — Karamoja Integrated Disarmament and Development Programme (KIDDP) 2007",
         "url": "https://www.brookings.edu/wp-content/uploads/2016/07/Uganda_Karamoja_2007.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Conciliation Resources — Part 2: Karamoja-Turkana - Interlocking insecurities",
         "url": "https://www.c-r.org/accord/peace-and-security-pastoralist-communities-african-borderlands/part-2-karamoja%E2%80%93turkana-0",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "The New Humanitarian — Uganda's fight against cattle raiders is dividing Karamoja communities (2024)",
         "url": "https://www.thenewhumanitarian.org/analysis/2024/04/12/ugandas-fight-against-cattle-raiders-dividing-karamoja-communities",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "University of Wisconsin — Ngakarimojong: Animals and the Age Set System",

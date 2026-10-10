@@ -4,6 +4,227 @@
   "languageFamilyId": "FLG_SOUDANIQUECENTRAL",
   "currentCountries": ["TCD", "CAF", "SDN"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Sara désigne un ensemble de peuples du sud du Tchad aux langues apparentées, formé de nombreux groupes qui portent chacun leur propre nom. La colonisation a étendu ce nom à tous les habitants du sud, qui l'ont ensuite repris pour eux-mêmes. Les sources que nous avons lues n'expliquent pas l'origine du mot Sara.",
+    "names": [
+      {
+        "nameText": "Sara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit dès 1857 ; la colonisation l'a étendu à tout le sud du Tchad.",
+        "periodLabel": "Écrit dès 1857 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Sara désigne des populations du sud du Tchad dont les langues sont apparentées, mais que leur histoire avant la colonisation a plus divisées qu'unies, selon Jean-Pierre Magnant. Les sources que nous avons lues n'expliquent pas l'origine du mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Terres de lignage et État chez les dites « Sara » du Sud du Tchad (XIXe-XXe siècles), Revue française d'histoire d'outre-mer, tome 68, n° 250-253",
+                "author": "Jean-Pierre Magnant",
+                "year": 1981,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1981_num_68_250_2313",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu sur Persée, introduction de l'article.",
+                "page": "p. 394-395"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": null,
+              "label": "Depuis l'indépendance"
+            },
+            "era": "modern",
+            "statement": "Le nom Sara est aussi devenu celui que ces peuples se donnent : depuis l'indépendance, leurs institutions gardent leur influence et les Sara ont créé de nouvelles structures pour renforcer leur solidarité, selon Thomas Collelo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Chad: A Country Study",
+                "author": "Thomas Collelo (dir.)",
+                "year": 1990,
+                "url": "https://archive.org/details/chadcountrystudy00coll",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Washington, Federal Research Division, Library of Congress, 1990. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 65-66"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": null,
+              "label": "Depuis l'indépendance"
+            },
+            "era": "modern",
+            "statement": "Le nom Sara désigne, depuis l'indépendance, les gens du sud du Tchad, selon Jean-Pierre Magnant.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Terres de lignage et État chez les dites « Sara » du Sud du Tchad (XIXe-XXe siècles), Revue française d'histoire d'outre-mer, tome 68, n° 250-253",
+                "author": "Jean-Pierre Magnant",
+                "year": 1981,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1981_num_68_250_2313",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu sur Persée, introduction de l'article.",
+                "page": "p. 394-395"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sara est imposé par la colonisation à tous les habitants du « Tchad utile », celui du coton, du riz, des porteurs et des tirailleurs ; quelques peuples aux langues très différentes, comme les Day et les Tunia, l'ont refusé, selon Jean-Pierre Magnant.",
+            "sources": [
+              {
+                "title": "Terres de lignage et État chez les dites « Sara » du Sud du Tchad (XIXe-XXe siècles), Revue française d'histoire d'outre-mer, tome 68, n° 250-253",
+                "author": "Jean-Pierre Magnant",
+                "year": 1981,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1981_num_68_250_2313",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu sur Persée, introduction de l'article.",
+                "page": "p. 394-395"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sara devient alors une identité partagée : le traitement commun et le cadre colonial font naître un sentiment d'appartenance sara chez des gens dont l'identité collective se limitait jusque-là à de petits groupes de parenté, selon Thomas Collelo.",
+            "sources": [
+              {
+                "title": "Chad: A Country Study",
+                "author": "Thomas Collelo (dir.)",
+                "year": 1990,
+                "url": "https://archive.org/details/chadcountrystudy00coll",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Washington, Federal Research Division, Library of Congress, 1990. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 12-13"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Sara désigne, chez l'explorateur allemand Gustav Nachtigal, un peuple très nombreux, partagé en groupes indépendants les uns des autres, dont les plus remarquables sont ceux de Dai, de Kumra et de Gosdöga.",
+            "formAsWritten": "Die Sara",
+            "sources": [
+              {
+                "title": "Saharâ und Sûdân. Ergebnisse sechsjähriger Reisen in Afrika, vol. 2",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, Weidmann, 1881. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un explorateur allemand de la fin du XIXe siècle.",
+                "page": "p. 680"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Sara apparaît par écrit chez l'explorateur allemand Heinrich Barth, dans les itinéraires que lui ont dictés des informateurs : « Day et Fong sont les principautés les plus importantes du Sara ». C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Sara",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and discoveries in North and Central Africa, vol. 3",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "New York, Appleton, 1857. Lu dans la numérisation d'Internet Archive. Le passage reprend les itinéraires que des informateurs ont dictés à l'auteur.",
+                "page": "p. 601"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kirdi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un mot méprisant pour « païens », appliqué aux non-musulmans du Tchad et du Nord-Cameroun.",
+        "periodLabel": "Époque coloniale et après",
+        "accounts": [
+          {
+            "period": {
+              "from": 1914,
+              "to": null,
+              "label": "Après 1914"
+            },
+            "statement": "Le nom Kirdi passe aux officiers français, qui l'empruntent au Tchad au sens de « païens » et l'emploient au Nord-Cameroun ; il devient d'usage général après 1914 et reste dans les écrits camerounais jusque vers 1970, selon Christian Seignobos.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Atlas de la province Extrême-Nord Cameroun, glossaire et index des sigles",
+                "author": "Christian Seignobos",
+                "year": null,
+                "url": "https://books.openedition.org/irdeditions/11603",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "IRD Éditions, lu sur OpenEdition Books, entrée « kirdi » du glossaire.",
+                "page": "p. 167-171"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Kirdi viendrait de l'arabe qird, « singe », et aurait servi à désigner avec mépris les non-musulmans, selon Christian Seignobos.",
+            "hypothesisGroup": "origine du nom Kirdi",
+            "sources": [
+              {
+                "title": "Atlas de la province Extrême-Nord Cameroun, glossaire et index des sigles",
+                "author": "Christian Seignobos",
+                "year": null,
+                "url": "https://books.openedition.org/irdeditions/11603",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "IRD Éditions, lu sur OpenEdition Books, entrée « kirdi » du glossaire.",
+                "page": "p. 167-171"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Sara",
@@ -13,7 +234,7 @@
         "Kameeni (Sara-Kameeni)",
         "Kirdi (terme pejoratif signifiant paien, employe par des populations musulmanes pour designer les non-musulmans, dont ceux du sud du Tchad)"
       ],
-      "originOfExonyms": "La colonisation a impose le nom Sara a l'ensemble des habitants du Tchad dit utile, celui du coton, sans qu'il corresponde a une identite collective anterieure : les appartenances se limitaient alors aux groupes de parente et a chaque groupe (Ngambay, Sar, Mbay, Gulay, Kaba, Nar, etc.). Quelques populations parlant des langues etrangeres a ce groupe linguistique, comme les Day et les Tunia, ont refuse ce nom. Le traitement commun impose par l'administration coloniale a fait naitre un sentiment d'appartenance sara, et apres l'independance le nom a designe les gens du Sud du Tchad. L'origine du mot Sara lui-meme n'est pas etablie par les sources consultees. Kameeni est donne comme autre nom des Sara par une seule source non verifiee. Kirdi signifie paien : un auteur tchadien le rattache au kanembu, un glossaire de reference le rattache a l'arabe qird, singe ; les deux s'accordent sur l'usage meprisant qu'en ont fait des populations musulmanes pour designer les non-musulmans.",
+      "originOfExonyms": "La colonisation a impose le nom Sara a l'ensemble des habitants du Tchad dit utile, celui du coton, sans qu'il corresponde a une identite collective anterieure : les appartenances se limitaient alors aux groupes de parente et a chaque groupe (Ngambay, Sar, Mbay, Gulay, Kaba, Nar, etc.). Quelques populations parlant des langues etrangeres a ce groupe linguistique, comme les Day et les Tunia, ont refuse ce nom. Le traitement commun impose par l'administration coloniale a fait naitre un sentiment d'appartenance sara, et apres l'independance le nom a designe les gens du Sud du Tchad. L'origine du mot Sara lui-meme n'est pas etablie par les sources consultees. Kameeni est donne comme autre nom des Sara par une seule source non verifiee. Kirdi voudrait dire païen : un auteur tchadien le rattache au kanembu, un glossaire de reference le rattache a l'arabe qird, singe ; les deux s'accordent sur l'usage meprisant qu'en ont fait des populations musulmanes pour designer les non-musulmans.",
       "whyProblematic": "La denomination Sara est une construction exterieure regroupant sous un seul terme une douzaine de tribus distinctes qui ne se designaient pas collectivement ainsi. Ce regroupement artificiel a ete amplifie par l'administration coloniale francaise et a ensuite acquis une realite politique post-independance.",
       "contemporaryUsage": "Le terme Sara est aujourd'hui largement accepte et utilise par les membres du groupe eux-memes, notamment dans le contexte politique tchadien ou les Sara forment le plus grand bloc ethnique. Les sous-groupes conservent leurs identites specifiques (Ngambay, Sar, Mbay, Gulay, Kaba, Nar). Sara, nom etendu de l'exterieur, a ete repris par ces groupes eux-memes jusque dans le nom de leurs langues (Sara Madjingay, Sara Ngambai, Sara Mbai).",
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
@@ -112,22 +333,26 @@
       {
         "title": "101 Last Tribes — Sara people",
         "url": "https://www.101lasttribes.com/tribes/sara.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Qiraat Africa — The Sara people",
         "url": "https://qiraatafrican.com/en/15532/the-sara-people/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Kwekudee Trip Down Memory Lane — Sara (Kameeni) people",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2014/09/sara-kameeni-people-ancient-sun.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — Chad",
         "url": "https://www.cia.gov/the-world-factbook/countries/chad/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Kumakonda Travel — Sara initiation rites Ndo and Yondo",
@@ -137,46 +362,54 @@
       {
         "title": "SIL Ethnologue — Ngambay (sba)",
         "url": "https://www.ethnologue.com/language/sba/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Ngambay",
         "url": "https://glottolog.org/resource/languoid/id/ngam1268",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "New York Times — Chad Tribal Rite Disrupting Nation, 13 octobre 1974",
         "url": "https://www.nytimes.com/1974/10/13/archives/chad-tribal-rite-disrupting-nation-sole-party-is-renamed.html",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "Jean-Pierre Magnant — Terres de lignage et Etat chez les dites Sara du Sud du Tchad (XIXe-XXe siecles), Revue francaise d'histoire d'outre-mer, 1981",
         "url": "https://www.persee.fr/doc/outre_0300-9513_1981_num_68_250_2313",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Page 394 : le nom Sara impose par la colonisation aux habitants du Tchad dit utile, refuse par les Day et les Tunia, puis applique apres l'independance aux gens du Sud."
       },
       {
         "title": "Thomas Collelo (dir.) — Chad: A Country Study, Federal Research Division, Library of Congress, 1990",
         "url": "https://archive.org/details/chadcountrystudy00coll",
         "tier": "referenced",
+        "source_kind": "government",
         "notes": "Pages 12-13 : le cadre colonial commence a creer un sentiment d'ethnicite sara chez des personnes dont l'identite collective se limitait jusque-la a de petits groupes de parente. Page 66 : institutions et solidarite sara apres l'independance."
       },
       {
         "title": "Glottolog — Sar",
         "url": "https://glottolog.org/resource/languoid/id/sarr1246",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Code ISO 639-3 mwm. Noms relevés : Sar, Sara, Sara Madjingay."
       },
       {
         "title": "Glottolog — Mbay",
         "url": "https://glottolog.org/resource/languoid/id/mbay1241",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Code ISO 639-3 myb. Noms relevés : Mbai, Mbaye, Moissala Mbai, Sara Mbai."
       },
       {
         "title": "Christian Seignobos et Olivier Iyebi-Mandjek (dir.) — Atlas de la province Extreme-Nord Cameroun, glossaire, IRD Editions",
         "url": "https://books.openedition.org/irdeditions/11603",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Entree kirdi : de l'arabe qird, singe, designation pejorative des non-musulmans, reprise par les officiers francais venus du Tchad et generalisee apres 1914."
       },
       {

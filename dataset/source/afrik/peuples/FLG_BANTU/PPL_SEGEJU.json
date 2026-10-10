@@ -8,7 +8,7 @@
       "mainName": "Segeju",
       "selfAppellation": "Wasegeju",
       "exonyms": ["Asagidzu", "Wasegeju"],
-      "originOfExonyms": "Wasegeju est la forme plurielle en swahili. Asagidzu est le terme utilise par les Mijikenda. L'ethnonyme Segeju derive des mots swahilis Kusega (tirer) et juu (vers le haut / haut), reference a l'habitude de porter les vetements en peau plus hauts que la coutume, remarquee lors des premiers contacts avec les Shirazi au XVIIe siecle.",
+      "originOfExonyms": "Wasegeju est la forme plurielle en swahili, et Asagidzu le nom utilisé par les Mijikenda. Segeju est expliqué par les mots swahilis Kusega, « tirer », et juu, « vers le haut » ou « haut ». Cette explication le relie à la manière de porter des vêtements en peau plus haut que d'habitude, remarquée lors des premiers contacts avec les Shirazi au XVIIe siècle.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Segeju est utilise dans les recensements officiels tanzaniens et kenyans. La langue segeju est en voie d'extinction, beaucoup de membres de la communaute utilisant desormais le digo ou le swahili.",
       "linguisticFamily": "FLG_BANTU",
@@ -80,22 +80,26 @@
       {
         "title": "Segeju Language (SEG) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/seg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Segeju in Tanzania Profile – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/14816/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Segeju in Kenya Profile – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/14816/KE",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Segeju of Tanzania (PGID: PG015035) – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015035/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Segeju Tribe: People of the North Tanganyika Coast – Institute of Current World Affairs, 1956",

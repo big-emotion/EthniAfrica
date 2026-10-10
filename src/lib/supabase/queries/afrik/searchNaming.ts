@@ -1,4 +1,9 @@
 import { createServerClient } from "@/lib/supabase/server";
+import { normalizeToKey } from "@/lib/normalize";
+import { parseNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
+import { nameRecordsFromHistory } from "@/lib/afrik/nameHistoryRecords";
+import type { PeopleNameIndexEntry } from "@/lib/afrik/peopleNameIndex";
+import { toSourceKindOrNull } from "@/types/sources";
 import {
   searchSourceStanding,
   strongestSearchSourceStanding,
@@ -7,8 +12,10 @@ import {
 } from "@/lib/search/evidence";
 import {
   searchPresentationText,
+  toldName,
   type NamingClaimStatus,
   type SearchNameRecord,
+  type ToldName,
 } from "@/lib/search/naming";
 
 export type SearchNamingSubjectType =
@@ -118,6 +125,7 @@ function toEvidenceSource(row: Record<string, unknown>): SearchEvidenceSource {
     narrative && typeof narrative === "object" && !Array.isArray(narrative)
       ? (narrative as Record<string, unknown>).review_status
       : undefined;
+  const sourceKind = toSourceKindOrNull(row.source_kind);
   return {
     id: String(row.id),
     title: String(row.title ?? ""),
@@ -126,11 +134,195 @@ function toEvidenceSource(row: Record<string, unknown>): SearchEvidenceSource {
     ...(nullableText(row.page) ? { page: String(row.page) } : {}),
     ...(nullableText(row.url) ? { url: String(row.url) } : {}),
     tier: searchSourceStanding(row.tier),
+    ...(sourceKind ? { sourceKind } : {}),
     ...(row.source_kind === "oral_tradition"
       ? { reviewedNarrative: reviewStatus === "approved" }
       : {}),
   };
 }
+
+/**
+ * The field path a people name's assertion was loaded under by the retired
+ * name-record loaders. A database loaded before migration 101 still holds
+ * them; they yield to the fiche's own account of the same name.
+ */
+function nameFieldPath(nameType: string, nameText: string): string {
+  return `names.${nameType}.${normalizeToKey(nameText)}`;
+}
+
+interface ToldNames {
+  /** Each folded name, with its rank in the block. */
+  records: Array<{ rank: number; record: SearchNameRecord }>;
+  /** What the fiche covers, so an assertion left for the same name is not shown twice. */
+  fieldPaths: Set<string>;
+}
+
+interface ToldSource {
+  title: string;
+  author?: string | null;
+  year: number | null;
+  url: string | null;
+  tier: string | null;
+  source_kind?: string;
+}
+
+/**
+ * A people's names as its fiche tells them (REQ-196): the nameHistory block
+ * first, then the names the name index derived from the appellations. A told
+ * name has no database assertion, so its evidence is built from the fiche's
+ * own sources, in the shape an assertion's evidence has.
+ */
+function toldNames(
+  entityId: string,
+  rawHistory: unknown,
+  rawIndex: unknown,
+  confidence: { score: number; lastHumanAuditAt: string | null } | undefined,
+  entityType = "people"
+): ToldNames {
+  const told: ToldNames = { records: [], fieldPaths: new Set() };
+
+  const tell = (
+    id: string,
+    rank: number,
+    name: ToldName,
+    citedSources: ToldSource[]
+  ) => {
+    const fieldPath = nameFieldPath(name.kind, name.form);
+    const sources: SearchEvidenceSource[] = citedSources.map(
+      (source, index) => {
+        const sourceKind = toSourceKindOrNull(source.source_kind);
+        return {
+          id: `${id}:source:${index}`,
+          title: source.title,
+          ...(nullableText(source.author) ? { author: source.author } : {}),
+          ...(typeof source.year === "number" ? { year: source.year } : {}),
+          ...(nullableText(source.url) ? { url: source.url } : {}),
+          tier: searchSourceStanding(source.tier),
+          ...(sourceKind ? { sourceKind } : {}),
+        };
+      }
+    );
+    const evidence: SearchEvidence = {
+      assertion: {
+        id,
+        statement: name.form,
+        fieldPath,
+        ...(confidence ? { confidenceScore: confidence.score } : {}),
+        sourceCount: sources.length,
+        lastHumanAuditAt: confidence?.lastHumanAuditAt ?? null,
+      },
+      sources,
+      standing: strongestSearchSourceStanding(sources),
+    };
+    told.fieldPaths.add(fieldPath);
+    told.records.push({
+      rank,
+      record: {
+        id,
+        entityType,
+        entityId,
+        ...name,
+        evidence: [evidence],
+      },
+    });
+  };
+
+  const parsed = rawHistory == null ? undefined : parseNameHistory(rawHistory);
+  if (parsed?.success) {
+    nameRecordsFromHistory(parsed.data).forEach((entry, rank) => {
+      tell(
+        `${entityId}:nameHistory:${rank}`,
+        rank,
+        toldName(entry),
+        entry.sources
+      );
+    });
+  }
+
+  if (Array.isArray(rawIndex)) {
+    (rawIndex as PeopleNameIndexEntry[]).forEach((entry, position) => {
+      // The block's names are read from the block above, which carries the
+      // short line the flattened index leaves out.
+      if (entry?.origin !== "appellation") return;
+      tell(
+        `${entityId}:name:${position}`,
+        entry.sortRank,
+        toldName(entry),
+        entry.sources ?? []
+      );
+    });
+  }
+
+  return told;
+}
+
+/**
+ * A word's names and their evidence, read from the nameHistory its search row
+ * already carries (REQ-196): no table holds assertions for a word, so there
+ * is nothing to look up.
+ *
+ * Beside each name's own evidence, one evidence entry sits at
+ * `nameHistory.summary` with every distinct source the block cites. The
+ * summary sums up every account, so it rests on all of them; giving it only
+ * the sources of the account that describes the name would show the reader
+ * one source behind a history that cites a dozen.
+ */
+// @req REQ-196
+export function wordNamingData(
+  entityId: string,
+  rawHistory: unknown
+): SearchNamingData {
+  const told = toldNames(entityId, rawHistory, undefined, undefined, "word");
+  const records = told.records.map(({ record }) => record);
+  const parsed = parseNameHistory(rawHistory);
+  if (!parsed.success) {
+    return { records, evidence: records.flatMap(({ evidence }) => evidence) };
+  }
+
+  const distinct = new Map<string, ToldSource>();
+  for (const name of parsed.data.names) {
+    for (const account of name.accounts) {
+      for (const source of account.sources) {
+        // strictNullChecks is off, so zod's output reads every key as
+        // optional; the block has been parsed, so the source is whole.
+        distinct.set(JSON.stringify(source), source as ToldSource);
+      }
+    }
+  }
+  const sources: SearchEvidenceSource[] = [...distinct.values()].map(
+    (source, index) => {
+      const sourceKind = toSourceKindOrNull(source.source_kind);
+      return {
+        id: `${entityId}:nameHistory:source:${index}`,
+        title: source.title,
+        ...(nullableText(source.author) ? { author: source.author } : {}),
+        ...(typeof source.year === "number" ? { year: source.year } : {}),
+        ...(nullableText(source.url) ? { url: source.url } : {}),
+        tier: searchSourceStanding(source.tier),
+        ...(sourceKind ? { sourceKind } : {}),
+      };
+    }
+  );
+  const summary: SearchEvidence = {
+    assertion: {
+      id: `${entityId}:nameHistory:summary`,
+      statement: parsed.data.summary,
+      fieldPath: "nameHistory.summary",
+      sourceCount: sources.length,
+      lastHumanAuditAt: null,
+    },
+    sources,
+    standing: strongestSearchSourceStanding(sources),
+  };
+
+  return {
+    records,
+    evidence: [summary, ...records.flatMap(({ evidence }) => evidence)],
+  };
+}
+
+/** A family name's spelling, as its loader keys the assertion: `spellings.<rank>.<key>`. */
+const SPELLING_FIELD_PATH = /^spellings\.(\d+)\./;
 
 function claimStatusOf(value: unknown): NamingClaimStatus | undefined {
   return value === "contested" ? "contested" : undefined;
@@ -162,23 +354,6 @@ export async function loadSearchNamingData(
   const allEntityTypes = unique(
     uniqueSubjects.map(({ type }) => DATABASE_ENTITY_TYPE[type])
   );
-  const nameSubjects = uniqueSubjects.filter(
-    ({ type }) => type === "people" || type === "patronyme"
-  );
-
-  const nameRecordsPromise =
-    nameSubjects.length > 0
-      ? client
-          .from("name_records")
-          .select(
-            "id, entity_type, entity_id, name_text, name_type, language_of_origin, meaning, period_label, short_line, imposed_by, imposition_period, why_problematic, contemporary_usage, assertion_id, sort_rank"
-          )
-          .in("entity_type", ["people", "patronyme"])
-          .in("entity_id", unique(nameSubjects.map(({ id }) => id)))
-          .order("sort_rank", { ascending: true })
-          .order("name_text", { ascending: true })
-      : Promise.resolve({ data: [], error: null });
-
   const assertionsPromise = client
     .from("assertions")
     .select(
@@ -193,16 +368,28 @@ export async function loadSearchNamingData(
     .in("entity_type", allEntityTypes)
     .in("entity_id", allIds);
 
-  const [nameResult, assertionResult, confidenceResult] = await Promise.all([
-    nameRecordsPromise,
+  const peopleIds = unique(
+    uniqueSubjects.filter(({ type }) => type === "people").map(({ id }) => id)
+  );
+  const historiesPromise =
+    peopleIds.length > 0
+      ? client
+          .from("afrik_peoples")
+          .select("id, name_history, name_index")
+          .in("id", peopleIds)
+      : Promise.resolve({ data: [], error: null });
+
+  const [assertionResult, confidenceResult, historyResult] = await Promise.all([
     assertionsPromise,
     confidencePromise,
+    historiesPromise,
   ]);
-  if (nameResult.error) throw queryFailure("records", nameResult.error);
   if (assertionResult.error)
     throw queryFailure("assertions", assertionResult.error);
   if (confidenceResult.error)
     throw queryFailure("confidence", confidenceResult.error);
+  if (historyResult.error)
+    throw queryFailure("name histories", historyResult.error);
 
   const assertionRows = asRows(assertionResult.data)
     .filter(
@@ -258,14 +445,30 @@ export async function loadSearchNamingData(
     })
   );
 
+  const toldBySubject = new Map<string, ToldNames>();
+  for (const row of asRows(historyResult.data)) {
+    const key = searchNamingKey("people", String(row.id));
+    toldBySubject.set(
+      key,
+      toldNames(
+        String(row.id),
+        row.name_history,
+        row.name_index,
+        confidenceBySubject.get(key)
+      )
+    );
+  }
+  // The fiche is the source of truth: an assertion an earlier load left for a
+  // name yields to the fiche's account of the same name.
+  const isTold = (key: string, fieldPath: unknown) =>
+    toldBySubject.get(key)?.fieldPaths.has(String(fieldPath)) ?? false;
+
   const evidenceByAssertion = new Map<string, SearchEvidence>();
-  const assertionById = new Map(
-    assertionRows.map((row) => [String(row.id), row])
-  );
   const evidenceBySubject = new Map<string, SearchEvidence[]>();
   for (const row of assertionRows) {
     const statement = searchPresentationText(row.statement);
     const key = databaseKey(String(row.entity_type), String(row.entity_id));
+    if (isTold(key, row.field_path)) continue;
     const confidence = confidenceBySubject.get(key);
     const orderedIds = unique(stringArray(row.source_ids));
     const sources = orderedIds.flatMap((id) => {
@@ -304,42 +507,47 @@ export async function loadSearchNamingData(
     ]);
   }
 
-  const recordsBySubject = new Map<string, SearchNameRecord[]>();
-  for (const row of asRows(nameResult.data)) {
-    const key = databaseKey(String(row.entity_type), String(row.entity_id));
-    if (!subjectKeys.has(key)) continue;
-    const evidence = evidenceByAssertion.get(String(row.assertion_id));
-    const claimStatus = claimStatusOf(
-      assertionById.get(String(row.assertion_id))?.confidence_level
+  const recordsBySubject = new Map<
+    string,
+    Array<{ rank: number; record: SearchNameRecord }>
+  >();
+  for (const [key, told] of toldBySubject) {
+    recordsBySubject.set(key, [...told.records]);
+    evidenceBySubject.set(
+      key,
+      [
+        ...(evidenceBySubject.get(key) ?? []),
+        ...told.records.flatMap(({ record }) => record.evidence),
+      ].sort(
+        (left, right) =>
+          compareText(left.assertion.fieldPath, right.assertion.fieldPath) ||
+          compareText(left.assertion.id, right.assertion.id)
+      )
     );
+  }
+  for (const row of assertionRows) {
+    if (row.entity_type !== "patronyme") continue;
+    const spelling = SPELLING_FIELD_PATH.exec(String(row.field_path));
+    const form = searchPresentationText(row.statement);
+    if (!spelling || !form) continue;
+    const key = databaseKey("patronyme", String(row.entity_id));
+    const evidence = evidenceByAssertion.get(String(row.id));
+    const claimStatus = claimStatusOf(row.confidence_level);
     const record: SearchNameRecord = {
       id: String(row.id),
-      entityType: String(row.entity_type),
+      entityType: "patronyme",
       entityId: String(row.entity_id),
-      form: String(row.name_text),
-      kind: row.name_type as SearchNameRecord["kind"],
-      ...(nullableText(row.language_of_origin)
-        ? { languageOfOrigin: String(row.language_of_origin) }
-        : {}),
-      ...(nullableText(row.meaning) ? { meaning: String(row.meaning) } : {}),
-      ...(nullableText(row.period_label)
-        ? { periodLabel: String(row.period_label) }
-        : {}),
-      ...(nullableText(row.short_line)
-        ? { shortLine: String(row.short_line) }
-        : {}),
-      ...(nullableText(row.imposed_by)
-        ? { imposedBy: String(row.imposed_by) }
-        : {}),
-      ...(nullableText(row.imposition_period)
-        ? { impositionPeriod: String(row.imposition_period) }
-        : {}),
-      problematic: Boolean(nullableText(row.why_problematic)),
-      usedToday: Boolean(nullableText(row.contemporary_usage)),
+      form,
+      kind: "surname",
+      problematic: false,
+      usedToday: false,
       ...(claimStatus ? { claimStatus } : {}),
       evidence: evidence ? [evidence] : [],
     };
-    recordsBySubject.set(key, [...(recordsBySubject.get(key) ?? []), record]);
+    recordsBySubject.set(key, [
+      ...(recordsBySubject.get(key) ?? []),
+      { rank: Number(spelling[1]), record },
+    ]);
   }
 
   return new Map(
@@ -348,7 +556,14 @@ export async function loadSearchNamingData(
       return [
         key,
         {
-          records: recordsBySubject.get(key) ?? [],
+          // Rank, then name: the order the sheet has always shown.
+          records: (recordsBySubject.get(key) ?? [])
+            .sort(
+              (left, right) =>
+                left.rank - right.rank ||
+                compareText(left.record.form, right.record.form)
+            )
+            .map(({ record }) => record),
           evidence: evidenceBySubject.get(key) ?? [],
         },
       ];

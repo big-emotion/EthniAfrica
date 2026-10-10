@@ -94,27 +94,32 @@
       {
         "title": "Joshua Project — Mandara, Wandala in Cameroon",
         "url": "https://joshuaproject.net/people_groups/13487/CM",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Mandara, Wandala in Nigeria",
         "url": "https://joshuaproject.net/people_groups/13487/NI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes — Mandara people",
         "url": "https://www.101lasttribes.com/tribes/mandara.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Wandala (mfi)",
         "url": "https://www.ethnologue.com/language/mfi",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "MacEachern, Scott — What was the Wandala state, and who are the Wandala? Academia.edu",
         "url": "https://www.academia.edu/12092979/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

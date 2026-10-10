@@ -15,6 +15,257 @@
     "FRA"
   ],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Soninké désigne un peuple d'Afrique de l'Ouest, fondateur de l'empire du Ghana, qui se nomme lui-même Soninké. D'autres noms existent : Sarakolé, Marka, Wakoré. Les sources que nous avons lues n'expliquent pas l'origine du nom Soninké.",
+    "names": [
+      {
+        "nameText": "Soninké",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "snk",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; le peuple qui a fondé l'empire du Ghana.",
+        "usedIn": ["snk"],
+        "periodLabel": "Écrit dès le début du XVIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Soninké désigne le peuple qui a fondé l'empire du Ghana, dans le Wagadu, selon Djibril Tamsir Niane. Ailleurs, le même mot a pris d'autres sens : chez les Maninka, Soninké ou Sununke désigne un Maninka resté fidèle à la religion de ses ancêtres. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
+                "page": "p. 141 et p. 160, note 49"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Soninké est écrit « Soninkiés » par Anne Raffenel, qui rapporte des traditions selon lesquelles ce peuple occupait autrefois le Massina, le Ségou et le Bambouk.",
+            "formAsWritten": "Soninkiés",
+            "sources": [
+              {
+                "title": "Nouveau voyage dans le pays des nègres, tome premier",
+                "author": "Anne Raffenel",
+                "year": 1856,
+                "url": "https://archive.org/details/nouveauvoyagedan00raff",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Imprimerie de N. Chaix, 1856. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un officier colonial français du milieu du XIXe siècle.",
+                "page": "p. 299"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1684,
+              "to": 1684,
+              "label": "Manuscrit de 1684"
+            },
+            "era": "polity",
+            "statement": "Le nom Soninké est écrit « Sominques » par le Portugais Francisco de Lemos Coelho, qui distingue ce peuple des Mandingas.",
+            "formAsWritten": "Sominques",
+            "sources": [
+              {
+                "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral. L'auteur cite les traités manuscrits d'André Álvares de Almada (1592-1596), d'André Donelha (1625) et de Francisco de Lemos Coelho (1669 et 1684) ; ces textes anciens eux-mêmes n'ont pas été lus.",
+                "page": "p. 663-664"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1615,
+              "to": 1615,
+              "label": "Vers 1615"
+            },
+            "era": "polity",
+            "statement": "Le nom Soninké apparaît par écrit sous la forme « Sonequeis » chez le jésuite Manuel Álvares, le premier à distinguer par écrit les Soninké des Mandingas, selon José da Silva Horta. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Sonequeis",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral. L'auteur cite les traités manuscrits d'André Álvares de Almada (1592-1596), d'André Donelha (1625) et de Francisco de Lemos Coelho (1669 et 1684) ; ces textes anciens eux-mêmes n'ont pas été lus.",
+                "page": "p. 663"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sarakolé",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné par d'autres ; un voyageur l'a pris pour un nom de marchands.",
+        "usedIn": ["fra"],
+        "periodLabel": "Depuis le XVIIIe siècle au moins",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Sarakolé est l'un de ceux que les Maninka donnent aux Soninké, à côté de Marka ; le chemin vers leur pays s'appelle Sarakule sila, selon Djibril Tamsir Niane.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
+                "page": "p. 160, note 49"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1830,
+              "to": 1830,
+              "label": "1830"
+            },
+            "era": "polity",
+            "statement": "Le nom Sarakolé est écrit « séracolets, ou sarakolais » par le voyageur René Caillié, pour qui il désigne une corporation de marchands voyageurs et non un peuple.",
+            "formAsWritten": "séracolets, ou sarakolais",
+            "sources": [
+              {
+                "title": "Journal d'un voyage à Temboctou et à Jenné, tome premier",
+                "author": "René Caillié",
+                "year": 1830,
+                "url": "https://archive.org/details/journaldunvoyage01cail",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 217, note 1",
+                "notes": "Paris, 1830. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1799,
+              "label": "Voyage de 1795-1797 (récit publié en 1799)"
+            },
+            "era": "polity",
+            "statement": "Le nom Sarakolé est écrit « Serawoollies » par Mungo Park, qui ajoute que les Français l'écrivent « Seracolets ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Serawoollies, or (as the French write it) Seracolets",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://www.gutenberg.org/ebooks/74976",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, W. Bulmer pour G. Nicol, 1799 ; voyage de 1795-1797. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg.",
+                "page": "p. 63"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Marka",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "man",
+        "namedBy": "Les Maninka",
+        "shortLine": "Le nom que leur donnent couramment les Maninka.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Marka est celui que les Maninka donnent couramment aux Soninké, selon Djibril Tamsir Niane.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
+                "page": "p. 141 et p. 160, note 49"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wakoré",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de même origine que Wangara, le nom des marchands manden.",
+        "periodLabel": "Usage décrit au XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Wakoré a la même origine que Wangara, le nom que les Peuls et les Haoussa donnent aux Manden ; Wakoré s'applique surtout aux Soninké, selon Djibril Tamsir Niane.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
+                "page": "p. 141, note 1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Soninke",
@@ -206,58 +457,69 @@
       {
         "title": "Joshua Project — Soninke people group all countries (2025)",
         "url": "https://joshuaproject.net/people_groups/14996",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Minority Rights Group — Mali",
         "url": "https://minorityrights.org/country/mali/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Glottolog — Soninke (snk)",
         "url": "https://glottolog.org/resource/languoid/id/soni1259",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL CEDS — ISO 639-3: Soninke = snk",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Joshua Project — Soninke in Mali",
         "url": "https://joshuaproject.net/people_groups/14996/ML",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Rosetta Panglossia — Soninke Language (snk)",
         "url": "https://rosettapanglossia.longnow.org/index.php?title=Soninke_Language_%28snk%29",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project – Soninke in Guinea, 2025",
         "url": "https://joshuaproject.net/people_groups/14996/GV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes – Soninke people",
         "url": "https://www.101lasttribes.com/tribes/soninke.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Soninkara.com – Association culturelle soninke",
         "url": "https://www.soninkara.com",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "community"
       },
       {
         "title": "Encyclopædia Universalis — Soninké ou Sarakholé",
         "url": "https://www.universalis.fr/encyclopedie/soninke-sarakhole/",
         "tier": "referenced",
+        "source_kind": "encyclopedia",
         "notes": "Début de l'article lu directement : les Soninké, un Soninké et des Soninko, se nomment ainsi eux-mêmes ; les Wolof les appellent Sarakholé ou Sarakolé ; on leur rattache souvent les Marka ou Maraka."
       },
       {
         "title": "Larousse — Soninkés ou Sarakolés ou Sarakollés ou Markas",
         "url": "https://www.larousse.fr/encyclopedie/divers/Sonink%C3%A9s/144837",
         "tier": "referenced",
+        "source_kind": "encyclopedia",
         "notes": "Texte lu directement : la langue s'y écrit soninké, ou soningokan."
       },
       {

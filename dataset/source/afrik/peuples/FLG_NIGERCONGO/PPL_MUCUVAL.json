@@ -79,17 +79,20 @@
       {
         "title": "Kuvale language resources – Joshua Project",
         "url": "https://joshuaproject.net/languages/olu",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Rull et al. – Genome-wide variation in the Angolan Namib Desert reveals unique Pre-Bantu ancestry, Science Advances (2023)",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10516492/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Barbieri et al. – The maternal genetic history of the Angolan Namib Desert, bioRxiv (2017)",
         "url": "https://www.biorxiv.org/content/10.1101/162230v1.full",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ovaherero People – OvaHerero Genocide Foundation",
@@ -99,7 +102,8 @@
       {
         "title": "Angola – AFRICA 101 Last Tribes",
         "url": "https://www.101lasttribes.com/countries/angola.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Wild Images Photography Tours – Angola: Hidden Tribes of the South Tour Report 2022",

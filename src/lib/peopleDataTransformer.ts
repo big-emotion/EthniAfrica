@@ -132,19 +132,17 @@ export interface PeopleCountriesData {
   source?: string;
 }
 
-/** One name record shaped for the names chapter, plus the raw fields a confidence chip needs. */
+/** One name record shaped for the names chapter, plus the raw fields its source chip needs. */
 export interface PeopleNameRecordViewData {
   record: NameRecordView;
-  confidenceScore: number | null;
   sourceCount: number;
   lastHumanAuditAt: string | null;
 }
 
-/** One historical spelling, plus its own confidence-chip fields. */
+/** One historical spelling, plus its own source-chip fields. */
 export interface PeopleNameSpellingData {
   nameText: string;
   periodLabel: string | null;
-  confidenceScore: number | null;
   sourceCount: number;
   lastHumanAuditAt: string | null;
 }
@@ -374,7 +372,6 @@ export function transformPeopleNameRecord(
       whyProblematic: entry.imposition?.whyProblematic ?? null,
       contemporaryUsage: entry.imposition?.contemporaryUsage ?? null,
     },
-    confidenceScore: entry.confidence?.score ?? null,
     sourceCount: entry.sources.length,
     lastHumanAuditAt: entry.confidence?.recomputedAt ?? null,
   };
@@ -403,7 +400,6 @@ export function transformPeopleNames(
     .map((n) => ({
       nameText: n.nameText,
       periodLabel: n.periodLabel,
-      confidenceScore: n.confidence?.score ?? null,
       sourceCount: n.sources.length,
       lastHumanAuditAt: n.confidence?.recomputedAt ?? null,
     }));

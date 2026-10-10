@@ -16,7 +16,7 @@
         "Murele",
         "Murule"
       ],
-      "originOfExonyms": "Le terme Beir est l'exonyme dinka, Jebe celui des Luo et Nuer, et Ajibba celui des Anuak. Ces termes apparaissent dans la litterature coloniale britannique avant que l'autonyme Murle soit reconnu. L'ethnonyme Murle designe l'ensemble du groupe; tous les non-Murle sont appeles moden (ennemis ou etrangers).",
+      "originOfExonyms": "Les Dinka appellent ce peuple Beir, les Luo et les Nuer Jebe, et les Anuak Ajibba. Ces noms apparaissent dans les publications coloniales britanniques avant la reconnaissance de Murle, le nom que le peuple se donne lui-même. Murle désigne tout le groupe. Les personnes extérieures sont appelées moden, qui signifierait ennemis ou étrangers.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Murle est aujourd'hui universellement accepte et utilise tant par les Murle eux-memes que par les administrations soudanaise et ethiopienne. Il figure dans les recensements, les accords de paix et les publications academiques.",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -101,42 +101,50 @@
       {
         "title": "101 Last Tribes — Murle people",
         "url": "https://www.101lasttribes.com/tribes/murle.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "WALS Online — Murle language (ISO 639-3: mur)",
         "url": "https://wals.info/languoid/lect/wals_code_mrl",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Murle (murl1244)",
         "url": "https://glottolog.org/resource/languoid/id/murl1244",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Murle in South Sudan",
         "url": "https://joshuaproject.net/people_groups/13882/OD",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SFASID/US Army War College — South Sudan Country Profile",
         "url": "https://pksoi.armywarcollege.edu/index.php/country-profile-of-south-sudan-social/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Arensen, J. E. (1992). Mice are Men: Language and Society Among the Murle of Sudan. Dallas: SIL International",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Lewis, B. A. (1972). The Murle: Red Chiefs and Black Commoners. Oxford: Clarendon Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue — Murle (MUR)",
         "url": "https://www.ethnologue.com/language/mur/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

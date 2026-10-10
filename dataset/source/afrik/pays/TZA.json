@@ -4,8 +4,628 @@
   "nameEn": "Tanzania",
   "nameOfficial": "République unie de Tanzanie (Jamhuri ya Muungano wa Tanzania)",
   "summary": "La Tanzanie est un mot composé : « Tanganyika » et « Zanzibar », soudés à l'unification de 1964. Cités-États swahilies de la côte, sultanat de Zanzibar et royaumes bantous de l'intérieur en composent l'histoire. Sukuma, Chaga, Haya, Nyamwezi et Maasai y ont le swahili pour langue commune.",
-  "etymology": "Le nom \"Tanzanie\" est une combinaison de \"Tanganyika\" et \"Zanzibar\", créé lors de l'unification en 1964. \"Tanganyika\" vient probablement du swahili \"tanga\" (voile) et \"nyika\" (plaine désertique), ou de \"tanga\" (voile) et \"hika\" (étendre). \"Zanzibar\" vient de l'arabe \"Zanj\" (noir) et \"barr\" (côte), signifiant \"côte des Noirs\".",
+  "etymology": "Le nom \"Tanzanie\" est une combinaison de \"Tanganyika\" et \"Zanzibar\", créé lors de l'unification en 1964. \"Tanganyika\" viendrait du swahili \"tanga\" (voile) et \"nyika\" (plaine désertique), ou de \"tanga\" (voile) et \"hika\" (étendre). \"Zanzibar\" viendrait de l'arabe \"Zanj\" (noir) et \"barr\" (côte), et voudrait dire \"côte des Noirs\".",
   "nameOriginActor": "Le nom \"Tanzanie\" a été créé en 1964 lors de l'unification du Tanganyika et de Zanzibar. \"Tanganyika\" était le nom colonial allemand puis britannique. \"Zanzibar\" était le nom du sultanat puis protectorat.",
+  "nameHistory": {
+    "summary": "Le nom Tanzanie désigne un pays d'Afrique de l'Est, la République-Unie de Tanzanie, qui s'appelle Tanzania en swahili et en anglais. Ce nom réunit en 1964 ceux de deux États, le Tanganyika et Zanzibar ; le pays continental s'est aussi appelé Afrique-Orientale allemande. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Tanzanie",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom formé en 1964 à partir de Tanganyika et de Zanzibar, les deux États unis cette année-là.",
+        "periodLabel": "Nom de l'État depuis 1964",
+        "accounts": [
+          {
+            "period": {
+              "from": 1964,
+              "to": null,
+              "label": "Depuis le 29 octobre 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Tanzanie, Tanzania en anglais et en swahili, est celui de la République-Unie de Tanzanie depuis le 29 octobre 1964 : c'est la date que retient la loi britannique qui prend acte de ce nouveau nom.",
+            "aspect": "usage",
+            "formAsWritten": "Tanzania",
+            "sources": [
+              {
+                "title": "Tanzania Act 1969",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1969,
+                "url": "https://www.legislation.gov.uk/ukpga/1969/29/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu le 10 octobre 2026 sur le site officiel de la législation britannique. La loi tire les conséquences de l'union du Tanganyika et de Zanzibar en « United Republic of Tanganyika and Zanzibar », puis de l'adoption par cette république du nom de Tanzania. La section 1 traite ce nom comme en vigueur depuis le 29 octobre 1964, et l'ancien pour la période du 26 avril au 28 octobre 1964."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Tanzanie est adopté après l'union du Tanganyika et de Zanzibar, en avril 1964, selon le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130",
+                "notes": "UNESCO, volume dirigé par A. A. Mazrui, édition française lu le 10 octobre 2026. Tableau 5.1, « Chronologie de l'indépendance africaine ». Les pages du tableau ne sont pas numérotées : nous les comptons à partir des pages 127 et 133. Ligne « Tanzanie 9/XII/1961 Grande-Bretagne (Tanganyika) » : « Nom de République-Unie de Tanzanie adopté après l'union avec Zanzibar le 27/IV/1964. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Tanzanie apparaît au terme d'un concours lancé par le journal The Standard pour nommer l'union du Tanganyika et de Zanzibar ; la proposition retenue est celle d'un élève, Mohammed Iqbal Dar, selon The Citizen. C'est la plus ancienne trace de ce nom que le projet connaît. Les deux pays qu'il réunit existaient bien avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Mohammed Iqbal Dar",
+                "role": "élève de Mzumbe dont la proposition fut retenue, selon la presse tanzanienne"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Man who coined the name ‘Tanzania’ dies at 80",
+                "author": "Paul Owere, The Citizen",
+                "year": 2025,
+                "url": "https://www.thecitizen.co.tz/tanzania/news/national/man-who-coined-the-name-tanzania-dies-at-80-4950608",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse tanzanien du 5 mars 2025, lu le 10 octobre 2026. Il rapporte une déclaration de la communauté ahmadie de Tanzanie : élève à Mzumbe, Mohammed Iqbal Dar répond à une annonce du journal The Standard qui demande un nom pour l'union du Tanganyika et de Zanzibar ; sa proposition est retenue. Il aurait pris TAN et ZAN, puis ajouté un I pour son prénom, Iqbal, et pour l'islam, et un A pour la communauté ahmadie. L'article ne date pas le concours."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tanzanie désigne aujourd'hui l'État d'Afrique de l'Est formé en 1964 par l'union du Tanganyika et de Zanzibar. On s'accorde à y lire le début de ces deux noms ; l'explication de ses dernières lettres varie selon les sources.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "CIA World Factbook – Tanzania (Country name), édition 2025",
+                "author": "Central Intelligence Agency",
+                "year": 2025,
+                "url": "https://worldfactbookarchive.org/archive/field/TZ/Country%20name",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Fiche « Country name », lue dans l'archive des éditions le 10 octobre 2026. De 2016 à 2025, le nom du pays y est présenté comme formé des premières lettres de Tanganyika et de Zanzibar, les deux États unis en 1964."
+              },
+              {
+                "title": "Man who coined the name ‘Tanzania’ dies at 80",
+                "author": "Paul Owere, The Citizen",
+                "year": 2025,
+                "url": "https://www.thecitizen.co.tz/tanzania/news/national/man-who-coined-the-name-tanzania-dies-at-80-4950608",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse tanzanien du 5 mars 2025, lu le 10 octobre 2026. Il rapporte une déclaration de la communauté ahmadie de Tanzanie : élève à Mzumbe, Mohammed Iqbal Dar répond à une annonce du journal The Standard qui demande un nom pour l'union du Tanganyika et de Zanzibar ; sa proposition est retenue. Il aurait pris TAN et ZAN, puis ajouté un I pour son prénom, Iqbal, et pour l'islam, et un A pour la communauté ahmadie. L'article ne date pas le concours."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2025,
+              "label": "Rapportée de 2016 à 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Tanzanie serait simplement formé des premières lettres de Tanganyika et de Zanzibar, selon le World Factbook de la CIA.",
+            "hypothesisGroup": "formation du nom Tanzanie",
+            "sources": [
+              {
+                "title": "CIA World Factbook – Tanzania (Country name), édition 2025",
+                "author": "Central Intelligence Agency",
+                "year": 2025,
+                "url": "https://worldfactbookarchive.org/archive/field/TZ/Country%20name",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Fiche « Country name », lue dans l'archive des éditions le 10 octobre 2026. De 2016 à 2025, le nom du pays y est présenté comme formé des premières lettres de Tanganyika et de Zanzibar, les deux États unis en 1964."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Rapportée en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Tanzanie viendrait de TAN et de ZAN, auxquels Mohammed Iqbal Dar aurait ajouté un I pour son prénom et pour l'islam, et un A pour la communauté ahmadie, selon une déclaration de cette communauté que cite The Citizen.",
+            "hypothesisGroup": "formation du nom Tanzanie",
+            "sources": [
+              {
+                "title": "Man who coined the name ‘Tanzania’ dies at 80",
+                "author": "Paul Owere, The Citizen",
+                "year": 2025,
+                "url": "https://www.thecitizen.co.tz/tanzania/news/national/man-who-coined-the-name-tanzania-dies-at-80-4950608",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse tanzanien du 5 mars 2025, lu le 10 octobre 2026. Il rapporte une déclaration de la communauté ahmadie de Tanzanie : élève à Mzumbe, Mohammed Iqbal Dar répond à une annonce du journal The Standard qui demande un nom pour l'union du Tanganyika et de Zanzibar ; sa proposition est retenue. Il aurait pris TAN et ZAN, puis ajouté un I pour son prénom, Iqbal, et pour l'islam, et un A pour la communauté ahmadie. L'article ne date pas le concours."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République-Unie du Tanganyika et de Zanzibar",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Du 26 avril au 28 octobre 1964",
+        "accounts": [
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "Du 26 avril au 28 octobre 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom République-Unie du Tanganyika et de Zanzibar est celui de l'État né de l'union des deux pays, du 26 avril au 28 octobre 1964, selon la loi britannique de 1969 qui tire les conséquences de cette union et du nom adopté ensuite. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "United Republic of Tanganyika and Zanzibar",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tanzania Act 1969",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1969,
+                "url": "https://www.legislation.gov.uk/ukpga/1969/29/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu le 10 octobre 2026 sur le site officiel de la législation britannique. La loi tire les conséquences de l'union du Tanganyika et de Zanzibar en « United Republic of Tanganyika and Zanzibar », puis de l'adoption par cette république du nom de Tanzania. La section 1 traite ce nom comme en vigueur depuis le 29 octobre 1964, et l'ancien pour la période du 26 avril au 28 octobre 1964."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tanganyika",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Nom d'un lac, écrit dès 1852 sous une forme proche ; nom du territoire puis de l'État de 1920 à 1964",
+        "accounts": [
+          {
+            "period": {
+              "from": 1961,
+              "to": 1964,
+              "label": "Du 9 décembre 1961 à 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Tanganyika est celui de l'État indépendant à partir du 9 décembre 1961 : la loi britannique sur l'indépendance l'emploie en toutes lettres, « under the name of Tanganyika ».",
+            "aspect": "usage",
+            "formAsWritten": "Tanganyika",
+            "sources": [
+              {
+                "title": "Tanganyika Independence Act 1961",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1961,
+                "url": "https://www.legislation.gov.uk/ukpga/Eliz2/10-11/1/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu le 10 octobre 2026 sur le site officiel de la législation britannique. La section 1 fait du Tanganyika, « under the name of Tanganyika », un État indépendant le 9 décembre 1961, dans les limites fixées par l'article 1 du Tanganyika Order in Council de 1920. "
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130",
+                "notes": "UNESCO, volume dirigé par A. A. Mazrui, édition française lu le 10 octobre 2026. Tableau 5.1, « Chronologie de l'indépendance africaine ». Les pages du tableau ne sont pas numérotées : nous les comptons à partir des pages 127 et 133. Ligne « Tanzanie 9/XII/1961 Grande-Bretagne (Tanganyika) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1961,
+              "label": "De 1920 à 1961"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tanganyika désigne le territoire qu'un texte britannique de 1920, le Tanganyika Order in Council, délimite. Ce territoire, placé sous mandat puis sous tutelle, est la plus grande partie de l'ancienne Afrique-Orientale allemande, selon l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "Tanganyika Independence Act 1961",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1961,
+                "url": "https://www.legislation.gov.uk/ukpga/Eliz2/10-11/1/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu le 10 octobre 2026 sur le site officiel de la législation britannique. La section 1 fait du Tanganyika, « under the name of Tanganyika », un État indépendant le 9 décembre 1961, dans les limites fixées par l'article 1 du Tanganyika Order in Council de 1920. Le texte de 1920 n'a pas été lu lui-même ; il est cité par cette loi."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130",
+                "notes": "UNESCO, volume dirigé par A. A. Mazrui, édition française lu le 10 octobre 2026. Tableau 5.1, « Chronologie de l'indépendance africaine ». Les pages du tableau ne sont pas numérotées : nous les comptons à partir des pages 127 et 133. « Tanzanie 9/XII/1961 Grande-Bretagne (Tanganyika) Tutelle de l'ONU. Majeure partie de l'ancienne Deutsch-Ostafrika, colonie allemande. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1860,
+              "label": "Observé en 1858, publié en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Tanganyika est le nom africain du grand lac, employé partout par les Wajiji et les autres peuples de ses rives, écrit Richard Burton. Les Arabes et les étrangers l'appellent plutôt la mer, l'étang ou la rivière, et parlent aussi de la mer d'Ujiji.",
+            "formAsWritten": "Tanganyika",
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, volume II",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen21860burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 137",
+                "notes": "Londres, 1860, lu dans l'exemplaire numérisé le 10 octobre 2026. Passage titré en haut de page « Meaning of Tanganyika »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "1852"
+            },
+            "era": "polity",
+            "statement": "Le nom Tanganyika apparaît, sous une forme proche, Zanganika, chez le géographe William Desborough Cooley : c'est un lieu de la rive ouest du lac, d'où l'on apporte du cuivre et de l'ivoire, d'après Mohammed ben Nassur, son informateur. Burton y verra la prononciation swahilie de Tanganyika. C'est la plus ancienne trace de ce nom que le projet connaît. Le lac existait bien avant lui.",
+            "formAsWritten": "Zanganika",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Inner Africa Laid Open",
+                "author": "William Desborough Cooley",
+                "year": 1852,
+                "url": "https://archive.org/details/innerafricalaido00cool",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 59",
+                "notes": "Londres, Longman, Brown, Green and Longmans, 1852, lu dans l'exemplaire numérisé le 10 octobre 2026. Le texte numérisé lit « Zangaiiika » ; l'index du livre donne « Zanganika, 59 »."
+              },
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, volume II",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen21860burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 137",
+                "notes": "Londres, 1860, lu dans l'exemplaire numérisé le 10 octobre 2026. Burton rattache le « Zanganyika » de Cooley au passage du t au ch dans le swahili de Zanzibar."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "Proposée en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Tanganyika voudrait dire lieu de jonction ou de rencontre des eaux : il viendrait du verbe ku tanganyika, « se joindre, se rencontrer », selon Richard Burton. C'est la seule explication que nous ayons lue dans une source ouverte.",
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, volume II",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen21860burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 137",
+                "notes": "Londres, 1860, lu dans l'exemplaire numérisé le 10 octobre 2026. Burton : « signifying an anastomosis, or a meeting place (sc. of waters) », de « ku tanganyika, the popular word, to join, or meet together »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zanzibar",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit dès 1298 sous une forme proche ; nom de l'État du 10 décembre 1963 au 26 avril 1964",
+        "accounts": [
+          {
+            "period": {
+              "from": 1963,
+              "to": 1964,
+              "label": "Du 10 décembre 1963 au 26 avril 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Zanzibar est celui d'un État indépendant à partir du 10 décembre 1963, jusqu'à son union avec le Tanganyika en avril 1964, selon la loi britannique sur Zanzibar et l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Zanzibar Act 1963",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1963,
+                "url": "https://www.legislation.gov.uk/ukpga/1963/55/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu le 10 octobre 2026 sur le site officiel de la législation britannique. La section 1 fixe au 10 décembre 1963 le jour où Zanzibar cesse d'être un protectorat et devient un État indépendant au sein du Commonwealth."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131",
+                "notes": "UNESCO, volume dirigé par A. A. Mazrui, édition française lu le 10 octobre 2026. Tableau 5.1, « Chronologie de l'indépendance africaine ». Les pages du tableau ne sont pas numérotées : nous les comptons à partir des pages 127 et 133. « Tanzanie (Zanzibar) 10/XII/1963 Grande-Bretagne. Union avec le Tanganyika pour former la République-Unie de Tanzanie le 27/IV/1964. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1963,
+              "label": "De novembre 1890 à 1963"
+            },
+            "era": "colonial",
+            "statement": "Le nom Zanzibar désigne un protectorat britannique à partir de novembre 1890, et Zanzibar sert de base à la conquête du reste de l'Afrique-Orientale britannique, selon Godfrey N. Uzoigwe.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 2 : Partage européen et conquête de l'Afrique : aperçu général",
+                "author": "Godfrey N. Uzoigwe",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 57",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lu le 10 octobre 2026. « Le Zanzibar fut officiellement placé sous protectorat britannique en novembre 1890. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1298,
+              "to": 1298,
+              "label": "1298"
+            },
+            "era": "polity",
+            "statement": "Le nom Zanzibar apparaît, sous une forme proche, Zanghibar, dans le livre de Marco Polo : une grande et noble île, dit-il. Henry Yule note que les Arabes donnaient ce nom à toute la côte et que l'île de Polo est une erreur. C'est la plus ancienne trace de ce nom que le projet connaît. La côte et l'île existaient bien avant lui.",
+            "formAsWritten": "Zanghibar",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Book of Ser Marco Polo, the Venetian, volume II, troisième édition revue par Henri Cordier",
+                "author": "Henry Yule (traduction et notes)",
+                "year": 1903,
+                "url": "https://archive.org/details/bookofsermarcopo002polo",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 422 et note 1, p. 424",
+                "notes": "Londres, John Murray, 1903, lu dans l'exemplaire numérisé le 10 octobre 2026. Le livre de Marco Polo a été écrit sous sa dictée en 1298, selon la bibliographie de cette édition. Livre III, chapitre XXXIV, « Concerning the Island of Zanghibar ». Selon la note 1, les Arabes appliquaient le nom à la côte, de la rivière Jubb au cap Corrientes, et les Européens le réservent depuis peu à l'île du sultan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Zanzibar désigne aujourd'hui une île et un archipel de la Tanzanie, dont l'île principale s'appelle Unguja. Il a d'abord désigné une côte, chez les géographes arabes. Son origine est discutée, comme celle du nom des Zandj qu'il semble contenir.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Book of Ser Marco Polo, the Venetian, volume II, troisième édition revue par Henri Cordier",
+                "author": "Henry Yule (traduction et notes)",
+                "year": 1903,
+                "url": "https://archive.org/details/bookofsermarcopo002polo",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "note 1, p. 424",
+                "notes": "Londres, John Murray, 1903, lu dans l'exemplaire numérisé le 10 octobre 2026. Le livre de Marco Polo a été écrit sous sa dictée en 1298, selon la bibliographie de cette édition. Le nom s'appliquait chez les Arabes à toute la côte avant d'être réservé à l'île."
+              },
+              {
+                "title": "Zanzibar: City, Island, and Coast, volume I",
+                "author": "Richard F. Burton",
+                "year": 1872,
+                "url": "https://archive.org/details/zanzibarcityisla01burt_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 132",
+                "notes": "Londres, Tinsley Brothers, 1872, lu dans l'exemplaire numérisé le 10 octobre 2026. « Zanzibar city is Unguja ». Burton relève aussi l'ancienne forme Lunguja."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 21 : La côte d'Afrique orientale et les Comores",
+                "author": "Fidel T. Masao et Henry W. Mutoro",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 635",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, édition française lu le 10 octobre 2026. Le terme al-Zandj, par lequel les Arabes désignaient les peuples de l'Afrique orientale au sud du fleuve Juba, a une étymologie qui « demeure obscure »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1872,
+              "to": 1872,
+              "label": "Proposée en 1872"
+            },
+            "era": "polity",
+            "statement": "Le nom Zanzibar viendrait du persan zang, « noir », et bar, « pays », et signifierait le pays des Noirs, selon Richard Burton. Henry Yule le traduit de la même façon, « la région des Noirs ».",
+            "hypothesisGroup": "origine du nom Zanzibar",
+            "sources": [
+              {
+                "title": "Zanzibar: City, Island, and Coast, volume I",
+                "author": "Richard F. Burton",
+                "year": 1872,
+                "url": "https://archive.org/details/zanzibarcityisla01burt_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 125",
+                "notes": "Londres, Tinsley Brothers, 1872, lu dans l'exemplaire numérisé le 10 octobre 2026. Le mot Zanj viendrait du persan Zang ou Zangi, « un Noir » ; bar y voudrait dire pays ou région."
+              },
+              {
+                "title": "The Book of Ser Marco Polo, the Venetian, volume II, troisième édition revue par Henri Cordier",
+                "author": "Henry Yule (traduction et notes)",
+                "year": 1903,
+                "url": "https://archive.org/details/bookofsermarcopo002polo",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "note de la p. 421 et note 1, p. 424",
+                "notes": "Londres, John Murray, 1903, lu dans l'exemplaire numérisé le 10 octobre 2026. Le livre de Marco Polo a été écrit sous sa dictée en 1298, selon la bibliographie de cette édition. « Zangibar, “the Region of the Blacks” ». Selon la note de la p. 421, le nom se prononçait Zangibar, que l'arabe changea en Zanjibar, d'où les Portugais firent Zanzibar."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1872,
+              "to": 1872,
+              "label": "Rapportée en 1872"
+            },
+            "era": "polity",
+            "statement": "Le nom Zanzibar viendrait de l'exclamation « Zayn za'l barr ! », « que ce pays est beau ! », qu'auraient poussée ses premiers visiteurs, selon une explication que Richard Burton attribue aux Arabes. Burton la range parmi les légendes.",
+            "hypothesisGroup": "origine du nom Zanzibar",
+            "sources": [
+              {
+                "title": "Zanzibar: City, Island, and Coast, volume I",
+                "author": "Richard F. Burton",
+                "year": 1872,
+                "url": "https://archive.org/details/zanzibarcityisla01burt_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 128",
+                "notes": "Londres, Tinsley Brothers, 1872, lu dans l'exemplaire numérisé le 10 octobre 2026. Burton écrit que les Arabes, qui aiment mêler l'étymologie à la légende, tirent le mot de cette exclamation, et la compare aux récits sur Olinda au Brésil et Buenos Aires."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 800,
+              "to": 869,
+              "label": "IXe siècle"
+            },
+            "era": "polity",
+            "before": true,
+            "statement": "On parle alors de Lundjūya pour désigner l'île : l'auteur arabe al-Djāḥiẓ, mort en 869, divise les Zandj en deux branches, les Ḳanbalū et les Lundjūya. Ce dernier nom altère le mot bantou Ungudja, qui désigne Zanzibar, selon Fidel T. Masao et Henry W. Mutoro.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 21 : La côte d'Afrique orientale et les Comores",
+                "author": "Fidel T. Masao et Henry W. Mutoro",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 641 et note 45",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, édition française lu le 10 octobre 2026. Al-Djāḥiẓ (mort en 255/869) ; la note ajoute qu'on peut aussi lire Landjūya, le la- étant la forme ancienne d'un préfixe bantou."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Afrique-Orientale allemande",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Des années 1880 à la première guerre mondiale",
+        "accounts": [
+          {
+            "period": {
+              "from": 1914,
+              "to": 1918,
+              "label": "1914-1918"
+            },
+            "era": "colonial",
+            "statement": "Le nom Afrique-Orientale allemande désigne la colonie, l'actuelle Tanzanie continentale, où Britanniques et Allemands se battent pendant la première guerre mondiale, selon Michael Crowder.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 12 : La première guerre mondiale et ses conséquences",
+                "author": "Michael Crowder",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 312",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lu le 10 octobre 2026. « En Afrique-Orientale allemande (actuelle Tanzanie), le gouverneur, le Dr Schnee… »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1889,
+              "label": "Années 1880"
+            },
+            "era": "colonial",
+            "statement": "Le nom Afrique-Orientale allemande désigne l'un des territoires que l'Allemagne annexe à partir de 1883, avec le Sud-Ouest africain, le Togo et le Cameroun, selon Godfrey N. Uzoigwe. Nous n'avons pas encore trouvé le premier texte qui l'emploie.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 2 : Partage européen et conquête de l'Afrique : aperçu général",
+                "author": "Godfrey N. Uzoigwe",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 49",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lu le 10 octobre 2026. L'Allemagne annexe des territoires de l'Est, de l'Ouest et du Sud africain à partir de 1883, dont « l'Afrique-Orientale allemande »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Afrique-Orientale allemande, Deutsch-Ostafrika en allemand, est celui de l'ancienne colonie dont le Tanganyika forme la plus grande partie, selon le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "formAsWritten": "Deutsch-Ostafrika",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130",
+                "notes": "UNESCO, volume dirigé par A. A. Mazrui, édition française lu le 10 octobre 2026. Tableau 5.1, « Chronologie de l'indépendance africaine ». Les pages du tableau ne sont pas numérotées : nous les comptons à partir des pages 127 et 133. « Majeure partie de l'ancienne Deutsch-Ostafrika, colonie allemande. » Le Burundi y est donné comme la plus petite partie de cette colonie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -116,7 +736,7 @@
         "name": "Swahili (Tanzanie)",
         "selfAppellation": "Swahili",
         "exonyms": ["Swahili (terme utilisé par les Européens)"],
-        "peopleId": "PPL_SWAHILI_TANZANIE",
+        "peopleId": "PPL_SWAHILI",
         "mainRegion": "Côte (Zanzibar, Pemba, Dar es Salaam)",
         "languages": ["Swahili", "arabe", "anglais"],
         "languageFamily": "FLG_NIGERCONGO",
@@ -201,27 +821,32 @@
       {
         "title": "CIA World Factbook – Tanzania",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Tanzania",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements nationaux tanzaniens",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "ONU – Données démographiques 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — République-Unie de Tanzanie",
         "url": "https://www.unfpa.org/data/world-population/TZ",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Études anthropologiques sur les peuples tanzaniens",
@@ -236,12 +861,14 @@
       {
         "title": "CIA World Factbook – Tanzania (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {
@@ -258,7 +885,7 @@
         },
         {
           "name": "Swahili (Tanzanie)",
-          "peopleId": "PPL_SWAHILI_TANZANIE",
+          "peopleId": "PPL_SWAHILI",
           "percentageInCountry": 5
         },
         {

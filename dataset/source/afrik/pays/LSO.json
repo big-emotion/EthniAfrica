@@ -6,6 +6,354 @@
   "summary": "Le Lesotho signifie « pays des Sotho » en sesotho, et c'est bien le nom que le royaume se donnait avant la colonisation : l'administration du Cap reconnaît en 1883 avoir remplacé Lesuto par Basutoland. Ce que désigne la racine « Sotho » ne fait en revanche accord ni chez les historiens ni chez les Basotho, qui en avancent au moins cinq lectures. Fondé au XIXe siècle sous le roi Moshoeshoe, il reprit son nom en 1966 ; c'est l'un des rares États du continent bâtis autour d'un seul peuple et d'une seule langue.",
   "etymology": "« Lesotho » se lit sans difficulté en sesotho : sur la racine Sotho, le préfixe le- forme le nom du pays, comme mo- forme celui d'une personne, ba- celui du peuple et se- celui de la langue. Eugène Casalis donne toute la série en 1859 et traduit Lessouto par « le pays du Mossouto » ; Paulus Mohome la redonne en 1972. Le nom n'a pas été forgé à l'indépendance : il est attesté bien avant, et George McCall Theal écrit en 1883, dans les archives de l'administration du Cap, que le pays « était appelé le Lesuto, ce que nous avons changé en Basutoland ». La loi britannique d'indépendance de 1966 n'a donc pas créé le nom, elle a rendu au royaume celui qu'on lui avait retiré.\n\nCe que désigne la racine Sotho elle-même est discuté, et la radio publique de langue sesotho le dit sans détour en 2016 : il n'y a accord ni entre les Basotho ni entre les historiens. Cinq lectures circulent. Ellenberger et Macgregor rapportent en 1912, d'après quarante-cinq années de traditions orales recueillies au Leribe, un sobriquet swazi — Abashunto, du verbe nguni uku shunta, « faire un nœud », moquant le pagne noué des Bapedi, puis revendiqué avec fierté. Le Dictionary of South African English retient l'adjectif sootho, « brun », d'où « les bruns » ; il enregistre aussi un rattachement à la rivière Usutu, et l'hypothèse d'un substitut d'évitement pour motho, « être humain ». Une cinquième lecture, portée par le chercheur mosotho William Moruti Tšiu, part de lesôtô, la lanière de peau tannée servant à nouer le thari. Un relevé de 1835 note déjà que les Ndebele appliquaient le terme à tous les peuples qui n'étaient pas les leurs, ce qui en ferait un nom donné de l'extérieur avant d'être porté. L'explication par une coiffure tressée, souvent répétée, n'a été trouvée dans aucune source : le nœud dont parle Ellenberger est celui d'un vêtement, et il décrit la coiffure à la même page sans en tirer le nom.",
   "nameOriginActor": "Le nom du pays est celui que les Basotho lui donnaient déjà avant la colonisation. « Basutoland » est la forme que l'administration britannique lui a substituée, comme les archives du Cap le reconnaissent en 1883, et la loi d'indépendance qui prend effet le 4 octobre 1966 lui rend son nom sans l'inventer. Le roi Moshoeshoe Ier est tenu pour le fondateur du royaume, dans les années 1820, sans que les sources s'accordent sur l'année. Qui a formé la racine Sotho reste ouvert : plusieurs sources y voient un nom donné par des voisins, Swazi ou Ndebele, avant d'être repris par ceux qui le portent.",
+  "nameHistory": {
+    "summary": "Le nom Lesotho désigne un pays d'Afrique australe, le Royaume du Lesotho : en sesotho, il veut dire le pays des Basotho. Pendant la colonisation britannique, le pays s'appelait Basutoland ; l'indépendance de 1966 lui a rendu son nom. Les sources ne s'accordent pas sur l'origine du mot sotho ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Lesotho",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "sot",
+        "namedBy": null,
+        "shortLine": "Le pays des Basotho en sesotho, écrit dès 1859, rendu au royaume à son indépendance en 1966.",
+        "periodLabel": "Écrit dès 1859 ; nom de l'État depuis 1966",
+        "accounts": [
+          {
+            "period": {
+              "from": 1966,
+              "to": null,
+              "label": "Depuis le 4 octobre 1966"
+            },
+            "era": "modern",
+            "statement": "Le nom Lesotho est celui du royaume indépendant depuis le 4 octobre 1966 : ce jour-là, la colonie du Basutoland devient « an independent kingdom under the name of Lesotho », selon la loi britannique d'indépendance.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Lesotho Independence Act 1966",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1966,
+                "url": "https://www.legislation.gov.uk/ukpga/1966/24/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte lu sur le site officiel de la législation britannique le 10 octobre 2026. Le 4 octobre 1966, le territoire qui constitue « the Colony of Basutoland » devient « an independent kingdom under the name of Lesotho »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Lesotho : indépendant le 4 octobre 1966, puissance coloniale la Grande-Bretagne, avec l'ancien nom entre parenthèses, « (Basutoland) »."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Lesotho",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/lesotho",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 10 octobre 2026. Les États-Unis reconnaissent le Royaume du Lesotho le 4 octobre 1966 ; le pays était auparavant sous souveraineté britannique sous le nom de Basutoland."
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordonnateur Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 59",
+                "notes": "Document de la session 2025 du Groupe d'experts, daté du 23 avril 2025, lu en ligne le 10 octobre 2026. Entrée Lesotho : le nom national officiel est « Lesotho » en anglais et en sesotho ; en français, « Lesotho (le) », « Royaume du Lesotho (le) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lesotho veut dire le pays des Basotho : sur la racine sotho, le préfixe le- forme le nom du pays, comme mo- celui d'une personne, ba- celui du peuple et se- celui de la langue, selon Eugène Casalis et Paulus Mohome. Ce que veut dire la racine sotho elle-même est discuté : il n'y a d'accord ni entre les Basotho ni entre les historiens, écrit la radio Lesedi FM en 2016. Nous présentons plus bas ces explications.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Bassoutos, ou vingt-trois années de séjour et d'observations au sud de l'Afrique",
+                "author": "Eugène Casalis",
+                "year": 1859,
+                "url": "https://archive.org/details/lesbassoutosouvi00casa",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9, note 1, et p. 339-340",
+                "notes": "Paris, Meyrueis, 1859, lu en fac-similé le 10 octobre 2026. En note de la page 9 : « lorsqu'il s'agit d'un seul individu, on dit : Mossouto ; de plusieurs : Bassoutos ; du pays : Lessouto ; de la langue : Sessouto ». Aux pages 339-340, la même série sur la racine Souto : « Lessouto, le pays du Mossouto ». L'auteur ne propose pas d'étymologie de la racine elle-même."
+              },
+              {
+                "title": "Naming in Sesotho: Its Sociocultural and Linguistic Basis, Names, vol. 20, n° 3",
+                "author": "Paulus M. Mohome",
+                "year": 1972,
+                "url": "https://ans-names.pitt.edu/ans/article/download/715/714/1432",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 171",
+                "notes": "Article lu le 10 octobre 2026. La note liminaire donne « Mosotho: a member of the tribe of the Basotho », « Basotho: plural of Mosotho » et « Lesotho: country of the Basotho »."
+              },
+              {
+                "title": "The Origin of the Basotho Nation",
+                "author": "Lesedi FM, radio publique sud-africaine de langue sesotho",
+                "year": 2016,
+                "url": "http://www.nmtdeploy.co.za/sabc/home/lesedifm/notices/details?id=5e9055d2-b7c8-4615-a839-c16d6cb1c77a",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Notice publiée le 28 janvier 2016, lue le 10 octobre 2026 à cette adresse, le domaine d'origine de la station ne la servant plus. Elle conclut : « there is no agreement among the Basotho and historians on the origin of the term Basotho ». Elle expose la lecture par sootho, « brun », celle du sobriquet swazi rapporté par Ellenberger, et celle de lesôtô, la lanière de peau tannée qui sert à nouer le thari, dans le dos d'une femme, et que les hommes portaient aussi en pagne ; sa bibliographie cite le mémoire de William Moruti Tšiu (University of South Africa, 2001), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1883,
+              "label": "1883"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lesotho est écrit Lesuto dans les archives de l'administration du Cap que publie George McCall Theal : les cinq groupes étaient appelés Basuto, et leur pays le Lesuto, « ce que nous avons changé en Basutoland ».",
+            "formAsWritten": "Lesuto",
+            "sources": [
+              {
+                "title": "Basutoland Records, vol. I",
+                "author": "George McCall Theal",
+                "year": 1883,
+                "url": "https://archive.org/details/basutolandrecor00theagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "introduction",
+                "notes": "Le Cap, W. A. Richards & Sons, 1883, lu en fac-similé le 10 octobre 2026. L'introduction écrit que les cinq groupes « were called the Basuto, and the country which they occupied was termed the Lesuto, which we have changed into Basutoland »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "1859"
+            },
+            "era": "polity",
+            "statement": "Le nom Lesotho apparaît par écrit, sous la forme Lessouto, chez le missionnaire Eugène Casalis : il écrit Mossouto pour une personne, Bassoutos pour le peuple, Lessouto pour le pays et Sessouto pour la langue. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume des Basotho existait déjà avant ce livre.",
+            "formAsWritten": "Lessouto",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Bassoutos, ou vingt-trois années de séjour et d'observations au sud de l'Afrique",
+                "author": "Eugène Casalis",
+                "year": 1859,
+                "url": "https://archive.org/details/lesbassoutosouvi00casa",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9, note 1, et p. 339-340",
+                "notes": "Paris, Meyrueis, 1859, lu en fac-similé le 10 octobre 2026. En note de la page 9 : « lorsqu'il s'agit d'un seul individu, on dit : Mossouto ; de plusieurs : Bassoutos ; du pays : Lessouto ; de la langue : Sessouto ». Aux pages 339-340, la même série sur la racine Souto : « Lessouto, le pays du Mossouto ». L'auteur ne propose pas d'étymologie de la racine elle-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1835,
+              "to": 1835,
+              "label": "1835"
+            },
+            "era": "polity",
+            "statement": "On parle déjà de Bashutu, une forme proche du nom du peuple, chez les Ndebele, qui appliquent ce mot à tous les peuples noirs qui ne sont pas des leurs, selon le journal d'Andrew Smith cité par le Dictionary of South African English.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Mosotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/mosotho/e04930",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Mosotho serait « perhaps a hlonipha substitute for motho human being », un mot de respect mis à la place de motho, « être humain », ou bien le préfixe mo- suivi de sootho, « brun ». L'entrée cite le journal d'Andrew Smith en 1835 : « The Matabeli apply the term Bashutu to all black nations not of their description »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Lesotho repose sur une racine qui viendrait d'un sobriquet : les Swazi auraient appelé Abashunto, de uku shunta, « faire un nœud », les Bapeli, dont ils moquaient le pagne noué ; les Bapeli puis d'autres groupes l'auraient ensuite adopté avec fierté, selon les traditions orales recueillies par Frédéric Ellenberger.",
+            "hypothesisGroup": "origine de la racine sotho",
+            "sources": [
+              {
+                "title": "History of the Basuto, Ancient and Modern",
+                "author": "D. Frédéric Ellenberger, mis en anglais par J. C. Macgregor",
+                "year": 1912,
+                "url": "https://emandulo.apc.uct.ac.za/collection/FHYA%20Depot/Ellenberger_F_History_of_the_Basuto_Ancient_and_Modern_1912.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 34 et 39",
+                "notes": "Londres, Caxton, 1912, lu dans la numérisation de l'université du Cap le 10 octobre 2026. L'auteur a recueilli les traditions orales des Basotho pendant quarante-cinq ans. Page 34 : les Swazi, qui se moquaient du pagne noué des Bapeli, les appelaient Abashunto, du verbe uku shunta, « faire un nœud » ; ce nom donné par dérision fut adopté avec fierté par les Bapeli, puis par d'autres groupes vêtus de même, « and was the origin of the present term Basuto ». Page 39 : les Batlokoa reçoivent le même sobriquet pour la même raison."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Lesotho repose sur une racine qui viendrait de l'adjectif sootho, « brun », d'où « les bruns », selon le Dictionary of South African English et Lesedi FM.",
+            "hypothesisGroup": "origine de la racine sotho",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sotho/e06714",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical Sotho « may be from the adjectival stem sootho brown, or from the name of the Usutu river » ; l'entrée cite un guide de 1978 selon lequel les Nguni les appelaient Suthu parce qu'ils les avaient d'abord rencontrés dans la vallée de l'Usutu."
+              },
+              {
+                "title": "The Origin of the Basotho Nation",
+                "author": "Lesedi FM, radio publique sud-africaine de langue sesotho",
+                "year": 2016,
+                "url": "http://www.nmtdeploy.co.za/sabc/home/lesedifm/notices/details?id=5e9055d2-b7c8-4615-a839-c16d6cb1c77a",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Notice publiée le 28 janvier 2016, lue le 10 octobre 2026 à cette adresse, le domaine d'origine de la station ne la servant plus. Elle conclut : « there is no agreement among the Basotho and historians on the origin of the term Basotho ». Elle expose la lecture par sootho, « brun », celle du sobriquet swazi rapporté par Ellenberger, et celle de lesôtô, la lanière de peau tannée qui sert à nouer le thari, dans le dos d'une femme, et que les hommes portaient aussi en pagne ; sa bibliographie cite le mémoire de William Moruti Tšiu (University of South Africa, 2001), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Lesotho repose sur une racine qui viendrait de la rivière Usutu, dans la vallée de laquelle les Nguni auraient d'abord rencontré ce peuple, selon une source de 1978 que cite le Dictionary of South African English.",
+            "hypothesisGroup": "origine de la racine sotho",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sotho/e06714",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical Sotho « may be from the adjectival stem sootho brown, or from the name of the Usutu river » ; l'entrée cite un guide de 1978 selon lequel les Nguni les appelaient Suthu parce qu'ils les avaient d'abord rencontrés dans la vallée de l'Usutu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Lesotho repose sur une racine qui serait un mot de respect mis à la place de motho, « être humain », selon le Dictionary of South African English, qui présente cette explication comme possible.",
+            "hypothesisGroup": "origine de la racine sotho",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Mosotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/mosotho/e04930",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Mosotho serait « perhaps a hlonipha substitute for motho human being », un mot de respect mis à la place de motho, « être humain », ou bien le préfixe mo- suivi de sootho, « brun ». L'entrée cite le journal d'Andrew Smith en 1835 : « The Matabeli apply the term Bashutu to all black nations not of their description »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Lesotho repose sur une racine qui viendrait de lesôtô, la lanière de peau tannée qui sert à nouer le thari dans le dos d'une femme ; on serait passé de lesôtô à mosôtô pour désigner des personnes, selon Lesedi FM, qui s'appuie sur le chercheur William Moruti Tšiu.",
+            "hypothesisGroup": "origine de la racine sotho",
+            "sources": [
+              {
+                "title": "The Origin of the Basotho Nation",
+                "author": "Lesedi FM, radio publique sud-africaine de langue sesotho",
+                "year": 2016,
+                "url": "http://www.nmtdeploy.co.za/sabc/home/lesedifm/notices/details?id=5e9055d2-b7c8-4615-a839-c16d6cb1c77a",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Notice publiée le 28 janvier 2016, lue le 10 octobre 2026 à cette adresse, le domaine d'origine de la station ne la servant plus. Elle conclut : « there is no agreement among the Basotho and historians on the origin of the term Basotho ». Elle expose la lecture par sootho, « brun », celle du sobriquet swazi rapporté par Ellenberger, et celle de lesôtô, la lanière de peau tannée qui sert à nouer le thari, dans le dos d'une femme, et que les hommes portaient aussi en pagne ; sa bibliographie cite le mémoire de William Moruti Tšiu (University of South Africa, 2001), que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Basutoland",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "periodLabel": "De 1868 à 1966",
+        "accounts": [
+          {
+            "period": {
+              "from": 1868,
+              "to": 1966,
+              "label": "Du 12 mars 1868 au 4 octobre 1966"
+            },
+            "era": "colonial",
+            "statement": "Le nom Basutoland est celui de la colonie britannique qui devient le Lesotho indépendant le 4 octobre 1966. Le pays avait été annexé comme colonie de la Couronne le 12 mars 1868, selon Ngwabi Bhebe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Lesotho Independence Act 1966",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1966,
+                "url": "https://www.legislation.gov.uk/ukpga/1966/24/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte lu sur le site officiel de la législation britannique le 10 octobre 2026. Le 4 octobre 1966, le territoire qui constitue « the Colony of Basutoland » devient « an independent kingdom under the name of Lesotho »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 7 : Les Britanniques, les Boers et les Africains en Afrique du Sud, 1850-1880",
+                "author": "Ngwabi Bhebe",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 194-195",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, lu dans l'exemplaire numérisé. Moshoeshoe demande la protection britannique dès 1861, puis en 1865 ; le 12 mars 1868, le gouverneur Wodehouse, autorisé par le gouvernement britannique, annexe le Lesotho comme colonie de la Couronne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1883,
+              "label": "1883"
+            },
+            "era": "colonial",
+            "statement": "Le nom Basutoland remplace celui de Lesuto que portait le pays des Basuto, reconnaît George McCall Theal dans les archives de l'administration du Cap : « ce que nous avons changé en Basutoland ».",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Basutoland Records, vol. I",
+                "author": "George McCall Theal",
+                "year": 1883,
+                "url": "https://archive.org/details/basutolandrecor00theagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "introduction",
+                "notes": "Le Cap, W. A. Richards & Sons, 1883, lu en fac-similé le 10 octobre 2026. L'introduction écrit que les cinq groupes « were called the Basuto, and the country which they occupied was termed the Lesuto, which we have changed into Basutoland »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Basutoland (1868-1966)"],
@@ -65,7 +413,7 @@
           "afrikaans"
         ],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Basotho\" (pluriel) ou \"Mosotho\" (singulier) est l'auto-appellation. \"Sotho\" est l'exonyme le plus courant et accepté. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le peuple se nomme Basotho pour plusieurs personnes et Mosotho pour une seule. Sotho est le nom donné de l'extérieur le plus courant et accepté. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Autres peuples",
@@ -108,22 +456,26 @@
       {
         "title": "SIL Ethnologue – Languages of Lesotho",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Lesotho",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Lesotho",
         "url": "https://www.unfpa.org/data/world-population/LS",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Recensements lesothans",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples sotho",
@@ -138,36 +490,42 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Eugène Casalis, Les Bassoutos, ou vingt-trois années de séjour et d'observations au sud de l'Afrique, Paris, Meyrueis, 1859",
         "url": "https://archive.org/details/lesbassoutosouvi00casa",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Donne en note la série Mossouto, Bassoutos, Lessouto pour le pays, Sessouto pour la langue, et la reprend plus loin en traduisant « Lessouto, le pays du Mossouto ». L'auteur ne propose aucune étymologie de la racine Sotho elle-même : le mot n'y apparaît hors composition qu'une fois. Volume lu en fac-similé le 9 septembre 2026."
       },
       {
         "title": "George McCall Theal, Basutoland Records, volume I, Le Cap, W. A. Richards & Sons, 1883",
         "url": "https://archive.org/details/basutolandrecor00theagoog",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "L'introduction écrit que les cinq groupes « étaient appelés les Basuto, et le pays qu'ils occupaient était appelé le Lesuto, ce que nous avons changé en Basutoland ». La substitution du nom colonial est ainsi reconnue par la série d'archives de l'administration elle-même. Passage lu en fac-similé le 9 septembre 2026."
       },
       {
         "title": "Lesotho Independence Act 1966, Royaume-Uni, 1966 chapitre 24, article 1",
         "url": "https://www.legislation.gov.uk/ukpga/1966/24/enacted",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Dispose que le territoire qui constituait « the Colony of Basutoland » devient le 4 octobre 1966 un royaume indépendant « under the name of Lesotho ». La loi rend le nom officiel ; elle ne le crée pas, puisqu'il est attesté dès 1859. Texte lu le 9 septembre 2026."
       },
       {
         "title": "D. Frédéric Ellenberger et J. C. Macgregor, History of the Basuto, Ancient and Modern, Londres, Caxton, 1912",
         "url": "https://emandulo.apc.uct.ac.za/collection/FHYA%20Depot/Ellenberger_F_History_of_the_Basuto_Ancient_and_Modern_1912.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Rattache le nom à un sobriquet swazi, Abashunto, du verbe uku shunta, « faire un nœud », visant le pagne noué des Bapedi et repris ensuite avec fierté. L'ouvrage repose sur quarante-cinq années de traditions orales recueillies au Leribe. Le nœud y est celui d'un vêtement, non d'une coiffure. Numérisation lue le 9 septembre 2026."
       },
       {
         "title": "Dictionary of South African English on Historical Principles, entrées « Sotho » et « Mosotho »",
         "url": "https://dsae.co.za/entry/sotho/e06714",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Enregistre trois rattachements concurrents de la racine : l'adjectif sootho, « brun » ; la rivière Usutu ; et un substitut d'évitement pour motho, « être humain ». Chacun est daté et accompagné d'une citation, dont un relevé de 1835 notant que les Ndebele appliquaient le terme à tous les peuples autres que le leur. Entrées lues le 9 septembre 2026."
       },
       {
@@ -180,12 +538,14 @@
         "title": "William Moruti Tšiu, Basotho Family Odes (Diboko) and Oral Tradition, mémoire de master, University of South Africa, 2001",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Origine de la lecture par lesôtô, la lanière de peau tannée, et de l'argument de préfixe qui l'accompagne. Le mémoire n'a pas été lu : le dépôt de l'université était hors service et la copie accessible ne contient que des pages liminaires sans texte. Ce que la fiche en rapporte passe par l'article de Lesedi FM qui le cite."
       },
       {
         "title": "Paulus M. Mohome, « Naming in Sesotho: Its Sociocultural and Linguistic Basis », Names, volume 20, numéro 3, 1972, p. 171-185",
         "url": "https://ans-names.pitt.edu/ans/article/download/715/714/1432",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Redonne en note liminaire la série des préfixes et traduit Lesotho par « country of the Basotho ». L'auteur enseignait à l'université du Botswana, du Lesotho et du Swaziland. Article lu le 9 septembre 2026."
       }
     ],

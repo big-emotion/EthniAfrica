@@ -9,7 +9,7 @@
       "mainName": "Kwa",
       "selfAppellation": "Gwa",
       "exonyms": ["Gwa", "M'bato", "Mbato", "Goua"],
-      "originOfExonyms": "Le terme Gwa (ou Goua) est le nom originel du peuple, transformé au fil du temps par les peuples voisins. M'bato est le surnom le plus courant dans les usages administratifs et populaires ivoiriens. Le mot Kwa, dans les langues kwa, signifie peuple ou homme, d'où le nom du groupe linguistique Kwa attribué à l'ensemble de la famille par Gottlob Krause en 1885.",
+      "originOfExonyms": "Le terme Gwa (ou Goua) est le nom originel du peuple, transformé au fil du temps par les peuples voisins. M'bato est le surnom le plus courant dans les usages administratifs et populaires ivoiriens. Le mot Kwa, dans les langues kwa, voudrait dire peuple ou homme, d'où le nom du groupe linguistique Kwa attribué à l'ensemble de la famille par Gottlob Krause en 1885.",
       "whyProblematic": "La confusion est fréquente entre le peuple Gwa/M'bato et le groupe linguistique Kwa (famille de langues parlées en Côte d'Ivoire, au Ghana et au Togo). Le peuple Gwa est un groupe ethnique distinct et minoritaire appartenant aux Akan lagunaires.",
       "contemporaryUsage": "M'bato est le terme le plus courant en Côte d'Ivoire. Gwa tend à être utilisé dans les publications académiques récentes. La sous-préfecture d'Oghlwapo (maison des Gwa) constitue leur chef-lieu administratif.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -82,12 +82,14 @@
       {
         "title": "Kwa Languages – EBSCO Research Starters",
         "url": "https://www.ebsco.com/research-starters/language-and-linguistics/kwa-languages",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Côte d'Ivoire – Ethnic groups and languages – Country Studies",
         "url": "https://countrystudies.us/ivory-coast/20.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       }
     ]
   }

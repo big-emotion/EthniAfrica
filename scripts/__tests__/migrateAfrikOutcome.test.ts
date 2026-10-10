@@ -19,6 +19,15 @@ function reportWith(overrides: Partial<MigrationReport> = {}): MigrationReport {
   return { ...emptyMigrationReport(), ...overrides };
 }
 
+describe("the sync's stages", () => {
+  // The noms/ records were folded into their fiches' nameHistory, which the
+  // fiche loaders already project onto name_history (REQ-196).
+  // @req REQ-196
+  it("has no noms/ name-record stage left to report", () => {
+    expect(emptyMigrationReport()).not.toHaveProperty("names");
+  });
+});
+
 describe("classifySyncOutcome", () => {
   // @req REQ-032
   it("passes a load that delivered the corpus with no defects", () => {
@@ -59,6 +68,27 @@ describe("classifySyncOutcome", () => {
     expect(outcome.structuralFailures).toEqual([]);
     expect(outcome.editorialDefects).toBe(EDITORIAL_DEFECT_CEILING + 1);
     expect(outcome.failed).toBe(true);
+  });
+
+  // A place fiche whose country does not resolve is a place the site will
+  // not serve; the run says so in red rather than in the editorial tail.
+  // @req REQ-196
+  it("fails when a place fiche is refused", () => {
+    const report = reportWith();
+    report.places.errors = [
+      "LOC_X: countryId XXX does not resolve to a country fiche",
+    ];
+
+    expect(classifySyncOutcome(report).structuralFailures).toEqual(["places"]);
+  });
+
+  // A word fiche the model refuses is a word the search will not find.
+  // @req REQ-196
+  it("fails when a word fiche is refused", () => {
+    const report = reportWith();
+    report.words.errors = ["WRD_X.json: nameHistory: Required"];
+
+    expect(classifySyncOutcome(report).structuralFailures).toEqual(["words"]);
   });
 
   // @req REQ-032

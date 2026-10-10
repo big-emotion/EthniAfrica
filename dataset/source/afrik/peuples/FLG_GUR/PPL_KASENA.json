@@ -17,7 +17,7 @@
         "Gourounsi",
         "Kasenna"
       ],
-      "originOfExonyms": "Le terme Gurunsi est un exonyme pejoratif issu du djerma signifiant fer ne penetre pas, utilise par le chef jihadiste Babatu pour designer les soldats recrutes parmi differents groupes ethniques du nord Ghana et du sud Burkina Faso. Kassena et Kasem sont des variantes orthographiques utilisees par les administrations coloniales britannique et francaise.",
+      "originOfExonyms": "Gurunsi est un nom méprisant donné à ces populations de l'extérieur. Il viendrait du djerma et signifierait fer ne pénètre pas. Le chef jihadiste Babatu l'employait pour les soldats recrutés parmi différents peuples du nord du Ghana et du sud du Burkina Faso. Les administrations coloniales britannique et française employaient les formes Kassena et Kasem.",
       "whyProblematic": "Le terme Gurunsi regroupe des peuples non necessairement proches; les Kasena s'en distinguent et preferent leur propre designation ethnique.",
       "contemporaryUsage": "Kasena et Kassena sont les formes les plus courantes dans la litterature scientifique et officielle contemporaine. Le nom Kasem designe specifiquement leur langue.",
       "linguisticFamily": "FLG_GUR",
@@ -128,22 +128,26 @@
       {
         "title": "Kasem in Ghana – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/12556/GH",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kasem in Burkina Faso – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/print/12556/UV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kasem – Glottolog 5.3, ISO 639-3 : xsm",
         "url": "https://glottolog.org/resource/languoid/id/kase1253",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kassena Nankana Municipal – Composite Budget 2022-2025, Ministry of Finance Ghana",
         "url": "https://mofep.gov.gh/sites/default/files/composite-budget/2022/UE/Kasena-Nakana.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Ann Cassiman, Stirring Life: Women's Paths and Places Among the Kasena of Northern Ghana, Museum Aan de Stroom (MAS), Antwerp",
@@ -153,22 +157,26 @@
       {
         "title": "UNESCO World Heritage Centre — Royal Court of Tiebelé (inscrit 2024)",
         "url": "https://whc.unesco.org/en/list/1713/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Ethnologue — Kasem Language (XSM)",
         "url": "https://www.ethnologue.com/language/xsm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Right for Education Africa — The Kassena of Tiebelé Houses (2024)",
         "url": "https://rightforeducation.org/2024/07/29/the-kassena-of-tiebele-houses/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "ngo"
       },
       {
         "title": "101 Last Tribes — Kassena people",
         "url": "https://www.101lasttribes.com/tribes/kassena.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Mabia VP — Kasem language introduction",
@@ -178,17 +186,20 @@
       {
         "title": "Joshua Project — Kasem in Ghana",
         "url": "https://joshuaproject.net/people_groups/print/12556/GH",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Kasena of Ghana",
         "url": "https://peoplegroups.org/people_groups/pg013342/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "WALS Online — Kasem language",
         "url": "https://wals.info/languoid/lect/wals_code_ksm",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

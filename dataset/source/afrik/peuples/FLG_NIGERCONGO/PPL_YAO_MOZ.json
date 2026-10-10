@@ -9,7 +9,7 @@
       "mainName": "Yao (Mozambique)",
       "selfAppellation": "Wayao",
       "exonyms": ["Yao", "Ajawa", "Wayao", "Achawa"],
-      "originOfExonyms": "Le terme Yao derive du nom d'une colline dans l'actuelle province de Niassa au Mozambique, ou se trouve le village ancestral de Chiconono entre les rivieres Lujenda et Luchelingo. Le mot Yao est le pluriel d'un substantif signifiant colline deboisee. Les Portugais utilisaient les variantes Ajawa ou Achawa. Wayao (avec le prefixe wa- du swahili) est l'appellation regionale.",
+      "originOfExonyms": "Le terme Yao deriverait du nom d'une colline dans l'actuelle province de Niassa au Mozambique, ou se trouve le village ancestral de Chiconono entre les rivieres Lujenda et Luchelingo. Le mot Yao serait le pluriel d'un substantif qui veut dire colline deboisee. Les Portugais utilisaient les variantes Ajawa ou Achawa. Wayao (avec le prefixe wa- du swahili) est l'appellation regionale.",
       "whyProblematic": "Les Yao du Mozambique partagent un ethnyme et une culture avec les Yao du Malawi et de Tanzanie, rendant difficile la delimitation de groupes distincts par frontieres nationales. La politique coloniale portugaise a impose une evangelisation chretienne que les Yao ont majoritairement rejetee au profit de l'islam, creant une identite de resistance qui perdure.",
       "contemporaryUsage": "Le terme Yao (Wayao) est utilise en portugais, en swahili et en ciyawo au Mozambique. Les Yao du Mozambique habitent principalement la province de Niassa dans le nord-ouest du pays, ou ils forment environ 40 % de la population de Lichinga (capitale provinciale). Ils sont reconnus comme groupe ethnique distinct dans les statistiques mozambicaines.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -89,27 +89,32 @@
       {
         "title": "Ethnologue — Yao language (yao)",
         "url": "https://www.ethnologue.com/language/yao/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Yao in Mozambique",
         "url": "https://joshuaproject.net/people_groups/15988/MZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Gordon-Conwell Center for Global Christianity — Niassa, Mozambique: The Makhuwa-Shirima and Yao (2020)",
         "url": "https://www.gordonconwell.edu/center-for-global-christianity/wp-content/uploads/sites/13/2020/08/Niassa-Dossier.pdf",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Qiraat Africa — The Yao/Wayao people of Lake Malawi",
         "url": "https://qiraatafrican.com/en/19883/the-yao-wayao-people-of-lake-malawi/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "CIA World Factbook — Mozambique",
         "url": "https://www.cia.gov/the-world-factbook/countries/mozambique/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

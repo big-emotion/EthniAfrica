@@ -95,27 +95,32 @@
       {
         "title": "Omniglot – Loma language and alphabet, 2025",
         "url": "https://www.omniglot.com/writing/loma.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Yale Linguistics – Promouvoir la Culture Loma (article sur les politiques linguistiques en Guinee), 2024",
         "url": "https://ling.yale.edu/media/478/download?inline",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "101 Last Tribes – Loma people",
         "url": "https://www.101lasttribes.com/tribes/loma.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Theses.fr – Contribution a l'histoire des Loma de la Guinee forestiere (Paris 7, 1991)",
         "url": "https://theses.fr/1991PA070030",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "IndexMundi – Guinea ethnic groups, CIA World Factbook 2021",
         "url": "https://www.indexmundi.com/factbook/compare/guinea.liberia/demographics",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       }
     ]
   }

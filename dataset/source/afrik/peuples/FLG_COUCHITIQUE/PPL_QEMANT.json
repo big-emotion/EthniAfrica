@@ -89,27 +89,32 @@
       {
         "title": "SIL Ethnologue / Glottolog — Qimant (ahg)",
         "url": "https://glottolog.org/resource/languoid/id/qima1242",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Kemant in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/12615",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Frederick C. Gamst — The Qemant : A Pagan-Hebraic Peasantry of Ethiopia. Holt, Rinehart and Winston, 1969",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Ethiopia Insight — The Ethiopian Qemant of the Agaw in perspective, 2019",
         "url": "https://www.ethiopia-insight.com/2019/03/06/the-ethiopian-qemant-of-the-agaw-in-perspective/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "101 Last Tribes — Qemant people",
         "url": "https://www.101lasttribes.com/tribes/qemant.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

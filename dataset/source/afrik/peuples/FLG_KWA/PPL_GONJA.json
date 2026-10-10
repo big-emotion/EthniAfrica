@@ -8,7 +8,7 @@
       "mainName": "Gonja",
       "selfAppellation": "Ngbanya",
       "exonyms": ["Gonja", "Ghanjawiyyu", "Guang", "Ngbanyito"],
-      "originOfExonyms": "Le nom Gonja est une deformation de la phrase haoussa Kada Goro-Jaa signifiant terre du cola rouge. Ngbanya ou Ngbanye signifie hommes courageux en langue locale. Ghanjawiyyu est la forme arabisee du nom.",
+      "originOfExonyms": "Le nom Gonja serait une deformation de la phrase haoussa Kada Goro-Jaa, qui veut dire terre du cola rouge. Ngbanya ou Ngbanye voudrait dire hommes courageux en langue locale. Ghanjawiyyu est la forme arabisee du nom.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Gonja est utilise administrativement au Ghana et dans la litterature anglophone. Les membres de ce peuple se designent eux-memes comme Ngbanya dans leur langue maternelle.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -76,12 +76,14 @@
       {
         "title": "Gonja people – 101 Last Tribes, www.101lasttribes.com/tribes/gonja.html (consulte 2025)",
         "url": "https://www.101lasttribes.com/tribes/gonja.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ghana Statistical Service – 2021 Population and Housing Census, census2021.statsghana.gov.gh (2022)",
         "url": "https://census2021.statsghana.gov.gh",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

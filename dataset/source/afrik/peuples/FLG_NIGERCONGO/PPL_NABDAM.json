@@ -84,22 +84,26 @@
       {
         "title": "Blakk Rasta – Story of the Nabdam people, YouTube, 2025",
         "url": "https://www.youtube.com/watch?v=h6GcSiCZkMA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Mamprusi People – The Nangodi Traditional Area, Facebook, 2020",
         "url": "https://www.facebook.com/mamprusiPeople/posts/the-nangodi-traditional-area",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ghana Statistical Service – Population and Housing Census 2021",
         "url": "https://www.statsghana.gov.gh",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "JSTOR – Sylvan Memories of People, Place, and Trees in Nangodi",
         "url": "https://www.jstor.org/stable/26795889",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "NABT NKOR – Nabt language Upper East Ghana",

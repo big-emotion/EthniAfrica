@@ -7,7 +7,7 @@ describe("FieldProvenanceMarker (REQ-119)", () => {
   it("renders a visible missing marker for an empty structurally-expected field", () => {
     render(<FieldProvenanceMarker state="missing" language="fr" />);
 
-    expect(screen.getByText("Donnée manquante")).toBeInTheDocument();
+    expect(screen.getByText("Information manquante")).toBeInTheDocument();
   });
 
   // @req REQ-119
@@ -21,7 +21,7 @@ describe("FieldProvenanceMarker (REQ-119)", () => {
     );
 
     expect(
-      screen.getByText("Dérivée de : peuples rattachés à la famille")
+      screen.getByText("À partir de : peuples rattachés à la famille")
     ).toBeInTheDocument();
   });
 
@@ -49,14 +49,14 @@ describe("FieldProvenanceMarker (REQ-119)", () => {
         "Aucune alliance entre patronymes n'est documentée dans le passage."
       )
     ).toBeInTheDocument();
-    expect(screen.queryByText("Donnée manquante")).not.toBeInTheDocument();
+    expect(screen.queryByText("Information manquante")).not.toBeInTheDocument();
   });
 
   // @req REQ-119
   it("keeps the generic badge when a gap carries no wording", () => {
     render(<FieldProvenanceMarker state="documented-gap" language="fr" />);
 
-    expect(screen.getByText("Donnée manquante")).toBeInTheDocument();
+    expect(screen.getByText("Information manquante")).toBeInTheDocument();
   });
 
   // @req REQ-119

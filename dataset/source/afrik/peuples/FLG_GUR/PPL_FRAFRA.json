@@ -90,27 +90,32 @@
       {
         "title": "101lasttribes — Frafra people",
         "url": "https://www.101lasttribes.com/tribes/frafra.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "101lasttribes — Gurenne people",
         "url": "https://www.101lasttribes.com/tribes/gurenne.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Gur, Farefare in Ghana",
         "url": "https://joshuaproject.net/people_groups/19121/GH",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "GhanaWeb — FraFra people",
         "url": "https://www.ghanaweb.com/GhanaHomePage/tribes/frafra.php",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "GhanaWeb — What you need to know about the Frafra people",
         "url": "https://www.ghanaweb.com/GhanaHomePage/NewsArchive/What-you-need-to-know-about-the-Frafra-people-of-Ghana-West-Africa-1011064",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Folklore.ee — The Dagaaba-Frafra Joking Relationship",

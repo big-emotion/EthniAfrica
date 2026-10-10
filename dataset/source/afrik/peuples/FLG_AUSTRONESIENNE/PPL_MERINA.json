@@ -4,6 +4,404 @@
   "languageFamilyId": "FLG_AUSTRONESIENNE",
   "currentCountries": ["MDG"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Merina désigne un peuple des hautes terres centrales de Madagascar, autour d'Antananarivo, qui se nomme lui-même Merina, et son pays Imerina. D'autres noms existent : Ambaniandro, Hova et Amboalambo, que lui donnent d'autres peuples de l'île ou des Européens. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Merina",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "plt",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les habitants de l'Imerina, sur les hautes terres de Madagascar.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Merina est à la fois un nom de peuple et celui de son parler ; Imerina est le nom du pays, sur les hautes terres centrales de Madagascar, selon Chantal Blanc-Pamard. Les autres peuples de l'île lui donnent d'autres noms : Amboalambo chez les Sakalava, Ambaniandro chez les Betsileo, Hova chez les Betsimisaraka, selon le Rakibolana malagasy.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les savoirs du territoire en Imerina (hautes terres centrales de Madagascar)",
+                "author": "Chantal Blanc-Pamard",
+                "year": 1997,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-3.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Communication au colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995, mise en ligne par l'IRD ; lue en texte intégral le 10 octobre 2026. L'autrice cite les Tantara ny Andriana, les traditions royales merina recueillies par le père François Callet (1re édition 1872), dans la traduction de G. S. Chapus et E. Ratsimba."
+              },
+              {
+                "title": "Rakibolana malagasy, article merina",
+                "author": "Régis Rajemisa-Raolison",
+                "year": 1985,
+                "url": "https://malagasyword.org/bins/teny2/merina",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire monolingue malgache, Ambozontany, 1985, lu dans le Malagasy Dictionary and Encyclopedia en ligne le 10 octobre 2026. L'article énumère les noms que les autres peuples donnent aux Merina."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Merina désigne ceux qui vivent en Imerina et se disent ambaniandro, « sous le jour », ou tanivo, « ceux du centre », face aux tanindrana, « ceux de la côte », selon Chantal Blanc-Pamard. Son origine est expliquée de plusieurs façons ; nous les présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les savoirs du territoire en Imerina (hautes terres centrales de Madagascar)",
+                "author": "Chantal Blanc-Pamard",
+                "year": 1997,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-3.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Communication au colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995, mise en ligne par l'IRD ; lue en texte intégral le 10 octobre 2026. L'autrice cite les Tantara ny Andriana, les traditions royales merina recueillies par le père François Callet (1re édition 1872), dans la traduction de G. S. Chapus et E. Ratsimba."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1600,
+              "label": "Fin du XVIe siècle, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "Le nom Merina ne serait en usage, selon les traditions historiques merina les plus répandues, que depuis le règne de Ralambo, à la fin du XVIe siècle : on lui attribue la phrase « J'appelle ceci l'Imerina sous le jour ». C'est ce que rapporte Chantal Blanc-Pamard. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les savoirs du territoire en Imerina (hautes terres centrales de Madagascar)",
+                "author": "Chantal Blanc-Pamard",
+                "year": 1997,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-3.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Communication au colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995, mise en ligne par l'IRD ; lue en texte intégral le 10 octobre 2026. L'autrice cite les Tantara ny Andriana, les traditions royales merina recueillies par le père François Callet (1re édition 1872), dans la traduction de G. S. Chapus et E. Ratsimba."
+              },
+              {
+                "title": "Tantara ny Andriana eto Madagascar (Histoire des rois), cité par Chantal Blanc-Pamard",
+                "author": "Traditions royales merina, recueillies par François Callet",
+                "year": null,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-3.pdf",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Ralambo nomme l'Imerina",
+                "carrier": "Traditions historiques merina, mises par écrit par François Callet (1re édition 1872)",
+                "place": "Imerina, Madagascar",
+                "notes": "Tradition lue dans la citation qu'en donne Chantal Blanc-Pamard (p. 1 et note 2), qui renvoie aux pages 284-285 de la traduction Histoire des rois de G. S. Chapus et E. Ratsimba ; le recueil lui-même n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Merina viendrait de mierina, « être sur une hauteur », formé sur le radical erina, selon Chantal Blanc-Pamard. Le Rakibolana malagasy rattache aussi Imerina aux terres hautes manerinerina, et le dictionnaire de James Richardson, en 1885, renvoie au mot erina.",
+            "hypothesisGroup": "origine du nom Merina",
+            "sources": [
+              {
+                "title": "Les savoirs du territoire en Imerina (hautes terres centrales de Madagascar)",
+                "author": "Chantal Blanc-Pamard",
+                "year": 1997,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-3.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1, note 1",
+                "notes": "Communication au colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995, mise en ligne par l'IRD ; lue en texte intégral le 10 octobre 2026. L'autrice cite les Tantara ny Andriana, les traditions royales merina recueillies par le père François Callet (1re édition 1872), dans la traduction de G. S. Chapus et E. Ratsimba."
+              },
+              {
+                "title": "Rakibolana malagasy, article imerina",
+                "author": "Régis Rajemisa-Raolison",
+                "year": 1985,
+                "url": "https://malagasyword.org/bins/teny2/imerina",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire monolingue malgache, Ambozontany, 1985, lu dans le Malagasy Dictionary and Encyclopedia en ligne le 10 octobre 2026. L'article définit l'Imerina comme le pays des terres hautes « manerinerina » où vivent les Merina ; la même page donne la définition anglaise du dictionnaire de James Richardson (1885), qui renvoie au mot erina."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1600,
+              "label": "Fin du XVIe siècle, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "Le nom Merina viendrait de ce que le roi Ralambo occupait toutes les hauteurs : « Je l'appelle l'Imerina parce que j'occupe tous les sommets », dit la tradition royale rapportée par Chantal Blanc-Pamard. Un roi merina disait aussi, lors de ses conquêtes : « À moi toutes ces hauteurs. »",
+            "hypothesisGroup": "origine du nom Merina",
+            "sources": [
+              {
+                "title": "Tantara ny Andriana eto Madagascar (Histoire des rois), cité par Chantal Blanc-Pamard",
+                "author": "Traditions royales merina, recueillies par François Callet",
+                "year": null,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-3.pdf",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Ralambo nomme l'Imerina",
+                "carrier": "Traditions historiques merina, mises par écrit par François Callet (1re édition 1872)",
+                "place": "Imerina, Madagascar",
+                "notes": "Tradition lue dans la citation qu'en donne Chantal Blanc-Pamard (p. 1 et note 2), qui renvoie aux pages 284-285 de la traduction Histoire des rois de G. S. Chapus et E. Ratsimba ; le recueil lui-même n'a pas été lu."
+              },
+              {
+                "title": "Les savoirs du territoire en Imerina (hautes terres centrales de Madagascar)",
+                "author": "Chantal Blanc-Pamard",
+                "year": 1997,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-3.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Communication au colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995, mise en ligne par l'IRD ; lue en texte intégral le 10 octobre 2026. L'autrice cite les Tantara ny Andriana, les traditions royales merina recueillies par le père François Callet (1re édition 1872), dans la traduction de G. S. Chapus et E. Ratsimba."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ambaniandro",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "plt",
+        "namedBy": null,
+        "shortLine": "« Ceux qui sont sous le jour » : le nom que d'autres peuples donnent aux Merina.",
+        "periodLabel": "Usage décrit par les dictionnaires",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les dictionnaires"
+            },
+            "statement": "Le nom Ambaniandro, « sous le jour », désigne les habitants de l'Imerina et s'emploie surtout chez les autres peuples de l'île, selon le Rakibolana malagasy ; le dictionnaire de James Richardson, en 1885, le donnait déjà comme le nom que les autres tribus donnent aux Hova.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Rakibolana malagasy, article ambaniandro",
+                "author": "Régis Rajemisa-Raolison",
+                "year": 1985,
+                "url": "https://malagasyword.org/bins/teny2/ambaniandro",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire monolingue malgache, Ambozontany, 1985, lu dans le Malagasy Dictionary and Encyclopedia en ligne le 10 octobre 2026."
+              },
+              {
+                "title": "A New Malagasy-English Dictionary, article ambaniandro",
+                "author": "James Richardson",
+                "year": 1885,
+                "url": "https://malagasyword.org/bins/teny2/ambaniandro",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire publié à Antananarivo par la London Missionary Society, 1885, lu dans le Malagasy Dictionary and Encyclopedia en ligne le 10 octobre 2026 : « the name given to the Hova by the other tribes »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1600,
+              "label": "Fin du XVIe siècle, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "Le nom Ambaniandro figure dans la phrase que la tradition royale prête à Ralambo, « I Merina ambaniandro », « l'Imerina sous le jour », selon Chantal Blanc-Pamard. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les savoirs du territoire en Imerina (hautes terres centrales de Madagascar)",
+                "author": "Chantal Blanc-Pamard",
+                "year": 1997,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-3.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Communication au colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995, mise en ligne par l'IRD ; lue en texte intégral le 10 octobre 2026. L'autrice cite les Tantara ny Andriana, les traditions royales merina recueillies par le père François Callet (1re édition 1872), dans la traduction de G. S. Chapus et E. Ratsimba."
+              },
+              {
+                "title": "Tantara ny Andriana eto Madagascar (Histoire des rois), cité par Chantal Blanc-Pamard",
+                "author": "Traditions royales merina, recueillies par François Callet",
+                "year": null,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-3.pdf",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Ralambo nomme l'Imerina",
+                "carrier": "Traditions historiques merina, mises par écrit par François Callet (1re édition 1872)",
+                "place": "Imerina, Madagascar",
+                "notes": "Tradition lue dans la citation qu'en donne Chantal Blanc-Pamard (p. 1 et note 2), qui renvoie aux pages 284-285 de la traduction Histoire des rois de G. S. Chapus et E. Ratsimba ; le recueil lui-même n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hova",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "plt",
+        "namedBy": null,
+        "shortLine": "Le nom des hommes libres chez les Merina, que des Européens ont étendu à tout le peuple.",
+        "periodLabel": "Usage colonial et ancien",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Royaume merina"
+            },
+            "era": "polity",
+            "statement": "Le nom Hova désigne, au temps du royaume, ceux qui ne sont ni andriana, nobles, ni andevo, esclaves, selon le Rakibolana malagasy. C'est aussi le nom que les Betsimisaraka donnent aux Merina.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Rakibolana malagasy, article hova",
+                "author": "Régis Rajemisa-Raolison",
+                "year": 1985,
+                "url": "https://malagasyword.org/bins/teny2/hova",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire monolingue malgache, Ambozontany, 1985, lu dans le Malagasy Dictionary and Encyclopedia en ligne le 10 octobre 2026."
+              },
+              {
+                "title": "Rakibolana malagasy, article merina",
+                "author": "Régis Rajemisa-Raolison",
+                "year": 1985,
+                "url": "https://malagasyword.org/bins/teny2/merina",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire monolingue malgache, Ambozontany, 1985, lu dans le Malagasy Dictionary and Encyclopedia en ligne le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hova sert à des auteurs européens pour tout le peuple de l'Imerina : en 1907, Alfred et Guillaume Grandidier glosent ainsi les Amboalambo des textes anciens, « [Amboalambo ou Hova] ».",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Collection des ouvrages anciens concernant Madagascar, tome V",
+                "author": "Alfred Grandidier et Guillaume Grandidier (éd.)",
+                "year": 1907,
+                "url": "https://archive.org/details/collectiondesou04grangoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 297",
+                "notes": "Paris, Comité de Madagascar, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Recueil de textes anciens traduits en français ; les éditeurs ajoutent entre crochets leurs identifications des peuples nommés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date inconnue"
+            },
+            "statement": "Le nom Hova n'a pas, dans les sources que nous avons lues, de première trace datée : on ne sait pas avec certitude quand il est apparu par écrit.",
+            "sources": [
+              {
+                "title": "Rakibolana malagasy, article hova",
+                "author": "Régis Rajemisa-Raolison",
+                "year": 1985,
+                "url": "https://malagasyword.org/bins/teny2/hova",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire monolingue malgache, Ambozontany, 1985, lu dans le Malagasy Dictionary and Encyclopedia en ligne le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Amboalambo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "plt",
+        "namedBy": null,
+        "shortLine": "Le nom que les Sakalava donnent aux Merina.",
+        "periodLabel": "Écrit dès 1759",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par le dictionnaire"
+            },
+            "statement": "Le nom Amboalambo est celui que les Sakalava donnent aux Merina, selon le Rakibolana malagasy.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Rakibolana malagasy, article merina",
+                "author": "Régis Rajemisa-Raolison",
+                "year": 1985,
+                "url": "https://malagasyword.org/bins/teny2/merina",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire monolingue malgache, Ambozontany, 1985, lu dans le Malagasy Dictionary and Encyclopedia en ligne le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1759,
+              "to": 1759,
+              "label": "1759"
+            },
+            "era": "polity",
+            "statement": "Le nom Amboalambo a une forme proche, « royaume de Volambo », dans la relation du navire de guerre anglais Lenox à la baie de Saint-Augustin, en 1759 : des habitants y disent ce royaume riche en mines d'argent. Les éditeurs Alfred et Guillaume Grandidier y lisent les Amboalambo, c'est-à-dire les Merina. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Volambo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Collection des ouvrages anciens concernant Madagascar, tome V",
+                "author": "Alfred Grandidier et Guillaume Grandidier (éd.)",
+                "year": 1907,
+                "url": "https://archive.org/details/collectiondesou04grangoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 296-297",
+                "notes": "Paris, Comité de Madagascar, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Recueil de textes anciens traduits en français ; les éditeurs ajoutent entre crochets leurs identifications des peuples nommés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1768,
+              "to": 1768,
+              "label": "1768"
+            },
+            "statement": "Le nom Amboalambo s'écrit « Balambous » dans un texte de 1768 sur les esclaves malgaches des îles de France et de Bourbon, qui les dit aux cheveux longs, selon la lecture d'Alfred et Guillaume Grandidier.",
+            "formAsWritten": "Balambous",
+            "sources": [
+              {
+                "title": "Collection des ouvrages anciens concernant Madagascar, tome V",
+                "author": "Alfred Grandidier et Guillaume Grandidier (éd.)",
+                "year": 1907,
+                "url": "https://archive.org/details/collectiondesou04grangoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 313",
+                "notes": "Paris, Comité de Madagascar, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Recueil de textes anciens traduits en français ; les éditeurs ajoutent entre crochets leurs identifications des peuples nommés."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Merina",
@@ -93,27 +491,32 @@
       {
         "title": "SIL Ethnologue - Plateau Malagasy (plt)",
         "url": "https://www.ethnologue.com/language/plt/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue - Malagasy macrolanguage (mlg)",
         "url": "https://www.ethnologue.com/language/mlg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook - Madagascar",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "UNESCO - Colline d'Ambohimanga, patrimoine mondial",
         "url": "https://whc.unesco.org/fr/list/950/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Banque mondiale - Madagascar",
         "url": "https://data.worldbank.org/country/madagascar",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

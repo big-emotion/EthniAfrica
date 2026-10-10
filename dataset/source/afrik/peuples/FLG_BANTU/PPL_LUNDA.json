@@ -105,17 +105,20 @@
       {
         "title": "SIL Ethnologue — Lunda (lun)",
         "url": "https://www.ethnologue.com/language/lun/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Lunda in Angola",
         "url": "https://joshuaproject.net/people_groups/13153/AO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Lunda in DRC",
         "url": "https://joshuaproject.net/people_groups/13153/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Victor Turner — The Ritual Process: Structure and Anti-Structure. Aldine, Chicago, 1969",
@@ -125,17 +128,20 @@
       {
         "title": "Victor Turner — The Forest of Symbols: Aspects of Ndembu Ritual. Cornell University Press, 1967",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Encyclopaedia Britannica — Lunda subgroup (Ethnologue free profile)",
         "url": "https://www.ethnologue.com/subgroup/4226/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO, Histoire générale de l'Afrique, vol. V : L'Afrique du XVIe au XVIIIe siècle (dir. B. A. Ogot), 1999 — chap. 20, « Le système politique luba et lunda : émergence et expansion » (Ndaywel è Nziem), p. 643-664",
         "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Lunda comme réseau politico-culturel : p. 643. État rund non daté par la tradition orale, mentionné en 1680 : p. 646. Cour organisée sur le modèle luba selon la tradition, influence mutuelle des Rund et des Luba : p. 648."
       }
     ]

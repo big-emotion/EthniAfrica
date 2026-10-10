@@ -86,22 +86,26 @@
       {
         "title": "Iramba, Nyilamba in Tanzania – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/12245",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Iramba – 101lasttribes.com",
         "url": "https://www.101lasttribes.com/tribes/iramba.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Nilamba Language – Ethnologue",
         "url": "https://www.ethnologue.com/language/nim/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Bantu, Central-Tanzania People Cluster – Joshua Project, 2025",
         "url": "https://www.joshuaproject.net/clusters/341",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

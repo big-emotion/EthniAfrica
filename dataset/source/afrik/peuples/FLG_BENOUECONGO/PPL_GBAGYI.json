@@ -85,27 +85,219 @@
       {
         "title": "SIL Ethnologue — Gbagyi language (gbr)",
         "url": "https://www.ethnologue.com/language/gbr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Qiraat Africa — The Gbagyi People of Nigeria (2025)",
         "url": "https://qiraatafrican.com/en/16334/the-gbagyi-people-of-nigeria/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "CEDS — ISO 639-3 Language Codes (Gbagyi : gbr)",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Nkeyin TV — History, Culture and Tradition of the Gbagyi People (documentaire 2025)",
         "url": "https://www.youtube.com/watch?v=4IZ1VmvZDBc",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Facebook Gbagyi Gone Global — population et distribution",
         "url": "https://www.facebook.com/story.php?story_fbid=326717266873790",
         "tier": "unverified"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gbagyi désigne un peuple du centre du Nigeria, autour d'Abuja et de Minna, qui se nomme lui-même Gbagyi à l'est et Gbari à l'ouest. D'autres noms existent : Gwari, le plus ancien dans les écrits. On ne sait pas avec certitude d'où viennent ces noms : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Gbagyi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gbr",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les locuteurs du dialecte de l'est.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbagyi est celui que se donnent les locuteurs du dialecte de l'est ; ceux de l'ouest disent Gbari. Les sources que nous avons lues ne disent pas d'où vient ce nom, ni quand il a été écrit pour la première fois.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethnologue: Languages of the World — Gbagyi (gbr)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/gbr/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Réutilisée depuis les sources de la fiche."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gbari",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gby",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les locuteurs du dialecte de l'ouest.",
+        "periodLabel": "Écrit dès 1854",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Gbari a une forme proche, Gbā́li, chez le linguiste Sigismund Koelle, qui l'écrit comme un autre nom des Goā́li. Ses informateurs placent ce pays à l'est des Nupe ; les Hawsa, dit l'un d'eux, appellent sa capitale Kúta. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section VI-5-a et VI-5-b",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1835,
+              "label": "Début du XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Gbari est celui qu'emploie l'historien A. I. Asiwaju pour l'un des voisins du nord des peuples aja, yoruba, bariba et edo, avec les Nupe, les Jukun et les Hawsa.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 26 : Dahomey, pays yoruba, Borgu (Borgou) et Bénin au XIXe siècle",
+                "author": "A. I. Asiwaju",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 750",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gwari",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom le plus ancien dans les écrits ; certains le jugent aujourd'hui imposé.",
+        "periodLabel": "Écrit dès 1829",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Légende de Daura, non datée"
+            },
+            "statement": "Le nom Gwari figure dans la légende hawsa de Bayajidda, ou de Daura, telle que la rapporte Mahdi Adamu : c'est le nom d'une concubine que la reine Daura donne au héros. Les fils de Karbogari, l'enfant de cette concubine, auraient fondé sept États, dont un nommé Gwari ; on appelle ces États banza bakwai, « les sept bâtards ».",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "Mahdi Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 294 et p. 297",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1829,
+              "to": 1829,
+              "label": "Récit publié en 1829"
+            },
+            "era": "polity",
+            "statement": "Le nom Gwari apparaît par écrit, sous la forme « Guari », chez l'explorateur Hugh Clapperton, qui cite le pays de Guari à côté de Zegzeg, l'actuelle Zaria. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Guari",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Journal of a Second Expedition into the Interior of Africa, from the Bight of Benin to Soccatoo",
+                "author": "Hugh Clapperton",
+                "year": 1829,
+                "url": "https://archive.org/details/journalofsecond00clap",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 117 et p. 126",
+                "notes": "Londres, John Murray, 1829, lu dans l'exemplaire numérisé sur archive.org. Clapperton traverse le pays yoruba en 1825-1826."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Gwari a une forme proche, Goā́li, chez Sigismund Koelle, qui écrit qu'on dit aussi Gbā́li.",
+            "formAsWritten": "Goā́li",
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section VI-5-a",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1935,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gwari désigne, pour l'historien Adiele Afigbo, l'un des peuples du Nigeria qui n'avaient pas de chefs ; le gouvernement colonial a eu du mal à y trouver des chefs traditionnels à associer à son administration.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 19 : Les répercussions sociales de la domination coloniale : les nouvelles structures sociales",
+                "author": "Adiele Eberechukuwu Afigbo",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 538",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

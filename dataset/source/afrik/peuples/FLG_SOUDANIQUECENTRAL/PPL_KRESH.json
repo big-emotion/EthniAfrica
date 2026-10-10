@@ -9,9 +9,9 @@
       "mainName": "Kresh",
       "selfAppellation": "Gbaya",
       "exonyms": ["Kreich", "Kreish", "Kresh-Woro"],
-      "originOfExonyms": "Kresh est un exonyme utilise par les voisins et repris dans la litterature coloniale et academique. L'endonyme est Gbaya (qui est aussi le nom de la langue dans les sources linguistiques), terme ambigu car il est partage avec des peuples Gbaya non apparentes du Cameroun et de la Republique centrafricaine. Pour eviter la confusion, la denomination Kresh est privilegiee dans les sources exterieures. Kreich et Kreish sont des variantes orthographiques coloniales.",
-      "whyProblematic": "Le terme Gbaya, endonyme des Kresh, est ambigu: il designe aussi des peuples non apparentes du Cameroun, de la RCA et du Congo. Cette homonymie peut preter a confusion dans la litterature. Le terme Kresh est un exonyme mais est le plus utilise dans les sources scientifiques pour ce groupe specifique du Bahr el Ghazal occidental.",
-      "contemporaryUsage": "Le terme Kresh est utilise dans les sources linguistiques (Ethnologue, Glottolog) et les profils ethnographiques. Le groupe se nomme lui-meme Gbaya (endonyme) dans sa propre langue. Au Soudan du Sud et au Soudan, le terme Kresh est celui employe par les administrations et les organisations humanitaires.",
+      "originOfExonyms": "Les voisins emploient Kresh, repris dans les publications coloniales et de recherche. Le peuple se nomme lui-même Gbaya, qui désigne aussi sa langue dans les études linguistiques. Ce nom est toutefois partagé avec des peuples du Cameroun et de la République centrafricaine qui ne lui sont pas apparentés. Les sources extérieures préfèrent donc Kresh pour éviter la confusion. Kreich et Kreish sont des manières coloniales d'écrire le nom.",
+      "whyProblematic": "Les Kresh se nomment eux-mêmes Gbaya. Ce nom désigne aussi des peuples non apparentés du Cameroun, de la République centrafricaine et du Congo, ce qui peut créer une confusion dans les publications. Les recherches emploient surtout Kresh, un nom donné de l'extérieur, pour ce groupe précis du Bahr el Ghazal occidental.",
+      "contemporaryUsage": "Les répertoires de langues Ethnologue et Glottolog, ainsi que les présentations du peuple, emploient Kresh. Dans sa langue, le groupe se nomme Gbaya. Au Soudan du Sud et au Soudan, les administrations et les organisations humanitaires utilisent Kresh.",
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
       "ethnoLinguisticGroup": "Soudanique central (groupe Kresh, sous-branche Kresh-Ndogo)",
       "historicalRegion": "Bahr el Ghazal occidental (comte de Raga/Raja, Soudan du Sud), region du Dar Fertit; extension au Soudan (Kafia Kingi) et a la RCA",
@@ -100,22 +100,26 @@
       {
         "title": "Glottolog — Kresh-Woro (krs)",
         "url": "https://glottolog.org/resource/languoid/id/gbay1288",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Kresh subgroup",
         "url": "https://www.ethnologue.com/subgroup/2721/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Kresh in Sudan",
         "url": "https://joshuaproject.net/people_groups/11239/SU",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Kresh of South Sudan",
         "url": "https://peoplegroups.org/people_groups/pg012073/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PaanLuel Wel — How Dinka-Fertit Rivalry began in Wau (2025)",

@@ -74,17 +74,20 @@
       {
         "title": "Boro, Shinasha in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10304",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Situation of the Shinasha ethnic group – Immigration and Refugee Board of Canada / Ecoi.net, 2014",
         "url": "https://www.ecoi.net/en/document/1292401.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Marginalization and persecution in Ethiopia's Benishangul-Gumuz – Ethiopia Insight, 2021",
         "url": "https://www.ethiopia-insight.com/2021/08/10/marginalization-and-persecution-in-ethiopias-benishangul-gumuz/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "In historical perspectives in Africa: A case study of Shinasha tribe – IJAMTES, Abebe Ano, 2018",

@@ -9,6 +9,7 @@
 import { z } from "zod";
 
 import { SOURCE_KINDS, SOURCE_TIERS } from "@/types/sources";
+import { nameHistorySchema } from "./nameHistoryParser";
 import {
   PATRONYME_NAME_SYSTEMS,
   type PatronymeDossier,
@@ -240,6 +241,7 @@ const commonShape = {
   gaps: z.array(patronymeGapSchema).min(1, {
     message: "gaps is required and must document at least one research gap",
   }),
+  nameHistory: nameHistorySchema.optional(),
 };
 
 const clanNameSchema = z

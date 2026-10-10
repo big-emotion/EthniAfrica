@@ -14,7 +14,7 @@
       "selfAppellation": "Ayisyen",
       "exonyms": ["Haïtiens", "Haitians"],
       "spellingAliases": ["Aysyen"],
-      "originOfExonyms": "Le nom du pays, Ayiti puis Haïti, dérive du taïno Ayiti (« terre de hautes montagnes »), nom que les Taïnos donnaient à l'île avant la colonisation espagnole sous le nom d'Hispaniola. En 1804, les chefs de la révolution restaurent ce nom autochtone à la place du nom colonial Saint-Domingue, comme acte fondateur de l'indépendance ; « Ayisyen » en dérive directement comme gentilé en créole haïtien.",
+      "originOfExonyms": "Le nom du pays, Ayiti puis Haïti, viendrait du taïno Ayiti (« terre de hautes montagnes »), nom que les Taïnos donnaient à l'île avant la colonisation espagnole sous le nom d'Hispaniola. En 1804, les chefs de la révolution restaurent ce nom autochtone à la place du nom colonial Saint-Domingue, comme acte fondateur de l'indépendance ; « Ayisyen » en dériverait directement comme gentilé en créole haïtien.",
       "whyProblematic": null,
       "contemporaryUsage": "Ayisyen est le terme courant, en créole haïtien comme en usage international, pour désigner les citoyens et la nation haïtienne ; il n'est pas contesté.",
       "peopleGroupId": null,
@@ -58,18 +58,21 @@
           "title": "Vodou | Definition, History, West African Vodun, & Facts",
           "url": "https://www.britannica.com/topic/Vodou",
           "tier": "referenced",
+          "source_kind": "encyclopedia",
           "notes": "Encyclopedic reference work with named editorial process ; confirme l'origine fon/dahoméenne du terme et de la théologie vodou et son transfert à Saint-Domingue via la traite."
         },
         {
           "title": "The African Political Roots of Haitian Vodou: The Aja-Fon and Gedevi-Yoruba Kingdoms and the Slave Trade — A Transatlantic History of Haitian Vodou",
           "url": "https://www.universitypressscholarship.com/view/10.14325/mississippi/9781496835604.001.0001/upso-9781496835604-chapter-002",
           "tier": "referenced",
+          "source_kind": "academic",
           "notes": "Chapitre universitaire (University Press of Mississippi Scholarship Online) sur les racines politiques ouest-africaines du vodou haïtien."
         },
         {
           "title": "Haitian Revolution | Causes, Summary, & Facts",
           "url": "https://www.britannica.com/topic/Haitian-Revolution",
           "tier": "referenced",
+          "source_kind": "encyclopedia",
           "notes": "Encyclopedic reference work avec auteurs identifiés ; utilisé pour la chronologie 1791-1804 et le rôle des Africains déportés dans le soulèvement."
         }
       ]
@@ -104,6 +107,7 @@
         "title": "Haiti Population 2025 — World Population Dashboard",
         "url": "https://www.unfpa.org/data/world-population/HT",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Agence des Nations unies pour la population (UNFPA)."
       },
       {
@@ -115,42 +119,49 @@
       {
         "title": "Haitian Creole Language (HAT) — Ethnologue",
         "url": "https://www.ethnologue.com/language/hat/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Vodou | Definition, History, West African Vodun, & Facts",
         "url": "https://www.britannica.com/topic/Vodou",
         "tier": "referenced",
+        "source_kind": "encyclopedia",
         "notes": "Encyclopedic reference work avec auteurs identifiés, utilisé pour le contexte religieux et culturel général."
       },
       {
         "title": "William Seabrook, The Magic Island, 1929",
         "url": "https://archive.org/details/magicisland00seab",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Récit de voyage publié, consulté le 10 septembre 2026, par lequel le sens de mort-vivant entre en anglais. L'épisode de la compagnie sucrière est un témoignage que l'auteur dit tenir d'un habitant, non une observation directe, et il conclut lui-même que les zonbi qu'on lui a montrés étaient des malades qu'on faisait travailler."
       },
       {
         "title": "Occupation des États-Unis en Haïti, 1915-1934, Office of the Historian, département d'État",
         "url": "https://history.state.gov/milestones/1914-1920/haiti",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Service historique officiel du département d'État des États-Unis, consulté le 10 septembre 2026. Donne les bornes de l'occupation."
       },
       {
         "title": "Floribert Patrick C. Endong, « The Westernization of the African Zombie in Nollywood Films », International Journal of Modern Anthropology, 2022",
         "url": "https://doi.org/10.4314/ijma.v2i17.2",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de revue à comité de lecture, université de Dschang, Cameroun. Donne l'origine du mot comme controversée et énumère les racines bantoues proposées."
       },
       {
         "title": "Antoine Dalmas, Histoire de la révolution de Saint-Domingue, Paris, Mame frères, 1814",
         "url": "https://archive.org/details/histoiredelarv00dalm",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Récit d'un colon, donc un regard extérieur et hostile à l'insurrection. Premier texte imprimé à décrire la cérémonie du Caïman (tome 1) : sacrifice d'un cochon noir, sang bu, poils gardés comme talismans. Boukman n'y paraît que plus loin, comme chef de bande, et Cécile Fatiman n'y figure pas. Lu le 25 septembre 2026."
       },
       {
         "title": "David Patrick Geggus, Haitian Revolutionary Studies, Indiana University Press, 2002 (chapitre « The Bois Caïman Ceremony »)",
         "url": "https://iupress.org/9780253341044/haitian-revolutionary-studies/",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Recueil d'un historien universitaire ; un chapitre est consacré à la cérémonie du Bois Caïman. Indiqué comme étude de référence sur le débat historiographique ; le chapitre lui-même n'a pas été relu pour cette fiche."
       }
     ]

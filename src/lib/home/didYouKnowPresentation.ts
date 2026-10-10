@@ -52,13 +52,3 @@ export function drawAnecdoteImageSide(
 ): AnecdoteImageSide {
   return random() < 0.5 ? "start" : "end";
 }
-
-// The tier vocabulary read in a sentence. Kept literal so the `as const`
-// type survives for its five consumers; the presentation test holds it to
-// `SOURCE_TIER_LABELS.fr` so it cannot become a third wording of the tiers.
-// @req REQ-113
-export const DID_YOU_KNOW_TIER_LABEL = {
-  official: "Source officielle",
-  referenced: "Source référencée",
-  unverified: "Source non vérifiée",
-} as const;

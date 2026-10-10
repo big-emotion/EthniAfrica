@@ -13,7 +13,7 @@
         "Pahouin (ancienne etiquette coloniale française/allemande)",
         "Pangwe (forme germanisee)"
       ],
-      "originOfExonyms": "Pamue est la forme espagnole du mot Fang, utilisee par les colonisateurs espagnols et encore courante en Guinee equatoriale. Pahouin fut l'appellation coloniale générale pour le macrogroupe Beti-Pahuin. Ces termes sont consideres comme exonymes ; les Fang se designent eux-memes par Fan ou Fang.",
+      "originOfExonyms": "Les colonisateurs espagnols employaient Pamue, une adaptation espagnole de Fang encore courante en Guinée équatoriale. Pahouin était le nom colonial général pour l'ensemble Beti-Pahuin. Ces noms ont été donnés de l'extérieur. Les personnes concernées se nomment Fan ou Fang.",
       "whyProblematic": "La domination politique du clan Esangui (sous-ensemble Fang) depuis l'independance (1968) a charge l'identite fang d'une connotation de privilege politique en Guinee equatoriale, creant des tensions avec les minorites Bubi, Ndowe et Annobonaises.",
       "contemporaryUsage": "Fang et Pamue sont tous deux utilises en Guinee equatoriale. L'espagnol est la langue officielle. La langue fang (Fang-Ntumu au nord, Fang-Okah au sud) est la plus parlee du pays et est utilisee dans l'education informelle et les pratiques culturelles.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -90,17 +90,20 @@
       {
         "title": "SIL Ethnologue / Omniglot — Fang language (fan)",
         "url": "https://www.omniglot.com/writing/fang.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Minority Rights Group — Equatorial Guinea",
         "url": "https://minorityrights.org/country/equatorial-guinea/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "UNFPA — Equatorial Guinea Population 2025",
         "url": "https://www.unfpa.org/data/world-population/GQ",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "PopulationPyramid.net — Equatorial Guinea 2025",
@@ -110,17 +113,20 @@
       {
         "title": "101 Last Tribes — Fang people",
         "url": "https://www.101lasttribes.com/tribes/fang.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Revistas UCE — Fang culture of Equatorial Guinea",
         "url": "https://revistadigital.uce.edu.ec/index.php/CATEDRA/article/download/3868/5199/23782",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "U.S. Department of State — Equatorial Guinea Background Note",
         "url": "https://2009-2017.state.gov/outofdate/bgn/equatorialguinea/116191.htm",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

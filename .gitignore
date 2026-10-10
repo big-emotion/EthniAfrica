@@ -134,3 +134,6 @@ skills-lock.json
 
 # UNESCO reference PDFs: not redistributable, ~400 MB — see docs/sources/unesco/README.md
 docs/sources/unesco/pdf/
+
+# Local editorial reference documents; originals are not redistributed.
+.local/editorial-references/

@@ -2,12 +2,17 @@
  * Language service - business logic for the public language detail endpoint.
  */
 
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import {
   getAfrikLanguageById,
   getAfrikSpeakingPeoples,
 } from "@/lib/supabase/queries/afrik/languages";
 import { getSourcesMap } from "@/lib/supabase/queries/afrik/module-zero-batch";
-import { toSourceTier, type SourceTier } from "@/types/sources";
+import {
+  toSourceTier,
+  type SourceKind,
+  type SourceTier,
+} from "@/types/sources";
 
 // @req REQ-136
 export interface LanguageDetail {
@@ -47,7 +52,10 @@ export interface LanguageDetail {
     url: string | null;
     tier: SourceTier;
     notes?: string | null;
+    sourceKind?: SourceKind | null;
   }>;
+  /** The fiche's shared name-history block (REQ-196), when it declares one. */
+  nameHistory?: NameHistory;
 }
 
 /** Keeps a JSONB array that should hold strings from leaking other types. */
@@ -116,6 +124,7 @@ export async function getLanguageById(
       ...source,
       tier: toSourceTier(source.tier),
     })),
+    ...(language.nameHistory ? { nameHistory: language.nameHistory } : {}),
   };
 
   return detail;

@@ -91,7 +91,8 @@
       {
         "title": "101 Last Tribes — Sango people",
         "url": "https://www.101lasttribes.com/tribes/sango.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Oubangui Medias — Le peuple Ngbandi, le cas des Sango et Yakoma",
@@ -101,27 +102,32 @@
       {
         "title": "APiCS Online — Survey chapter: Sango (lingua franca)",
         "url": "https://apics-online.info/surveys/59",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Sango (sag)",
         "url": "https://www.ethnologue.com/language/sag",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Ngbandi septentrional (ngb)",
         "url": "https://www.ethnologue.com/language/ngb",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Central African Republic",
         "url": "https://www.cia.gov/the-world-factbook/countries/central-african-republic/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Joshua Project — Sango in Central African Republic",
         "url": "https://joshuaproject.net/people_groups/14728/CT",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

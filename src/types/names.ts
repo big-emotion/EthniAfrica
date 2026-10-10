@@ -1,7 +1,8 @@
 /**
- * Name-record types - TypeScript definitions for AFRIK name records (Epic 8, FR55-FR57)
- *
- * Mirrors public/modele-nom.json exactly.
+ * Name-record types - the shape the name readers consume (Epic 8,
+ * FR55-FR57), first held by the retired `name_records` table. The noms/ files that once held it were
+ * folded into the fiches' nameHistory (REQ-196); nameHistoryRecords.ts
+ * projects a block back into this shape.
  */
 
 import type { PeopleId } from "@/types/afrik";
@@ -64,7 +65,7 @@ export interface NameAttestation {
 }
 
 export interface NameRecordDossier {
-  id: PeopleId | PatronymeId;
+  id: PeopleId | PatronymeId | string;
   entityType: NameRecordEntityType;
   names: NameRecordEntry[];
 }

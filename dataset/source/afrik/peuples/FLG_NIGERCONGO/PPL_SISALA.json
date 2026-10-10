@@ -8,7 +8,7 @@
       "mainName": "Sisala",
       "selfAppellation": "Sisaala",
       "exonyms": ["Sissala", "Sisaal", "Grusi"],
-      "originOfExonyms": "Le terme Sissala est la forme francophone courante utilisee au Burkina Faso; Grusi est un terme exonyme historique applique par les voisins a ce sous-groupe des langues Gur.",
+      "originOfExonyms": "Sissala est la forme française courante au Burkina Faso. Les voisins ont historiquement donné le nom Grusi à ce groupe, dont la langue appartient à la famille gur.",
       "whyProblematic": null,
       "contemporaryUsage": "Sisaala designe le peuple et la langue dans les publications academiques anglophones; Sissala est la variante officielle au Burkina Faso. La province de Sissili au Burkina Faso tire son nom de ce peuple.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -83,42 +83,50 @@
       {
         "title": "101 Last Tribes – Sissala people",
         "url": "https://www.101lasttribes.com/tribes/sissala.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project – Sisaala, Tumulung in Ghana",
         "url": "https://joshuaproject.net/people_groups/14952",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Sisaala, Western in Ghana",
         "url": "https://joshuaproject.net/people_groups/14953",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Sisaala, Pasaale in Ghana",
         "url": "https://joshuaproject.net/people_groups/14325",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Sissala in Burkina Faso",
         "url": "https://joshuaproject.net/people_groups/14956",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Sisaala, Tumulung SIL",
         "url": "https://www.ethnologue.com/language/sil/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue – Sisaala, Western SSL",
         "url": "https://www.ethnologue.com/language/ssl/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ghana Statistical Service – 2021 Population and Housing Census, Sissala West District",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

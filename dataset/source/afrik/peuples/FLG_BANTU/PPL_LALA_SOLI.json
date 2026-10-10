@@ -8,7 +8,7 @@
       "mainName": "Lala-Soli",
       "selfAppellation": "Soli",
       "exonyms": ["Bene Soli", "Ba-Soli", "Chisoli"],
-      "originOfExonyms": "L'ethnonyme Soli est utilise par les populations voisines ainsi que dans les documents coloniaux britanniques. Le prefixe Ba- est le pluriel bantu pour designer un peuple.",
+      "originOfExonyms": "Les populations voisines et les documents coloniaux britanniques emploient Soli. L'élément bantou Ba- indique le pluriel dans les noms de peuples.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Soli est utilise officiellement en Zambie, ou ce peuple figure parmi les 72 tribus reconnues par l'Etat. La designation Lala-Soli souligne son appartenance au groupe plus large des Lala.",
       "linguisticFamily": "FLG_BANTU",
@@ -76,22 +76,26 @@
       {
         "title": "Zambia – Ethnic Groups, Languages, Religions – Encyclopaedia Britannica, 2026",
         "url": "https://www.britannica.com/place/Zambia/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Soli language – Glottolog 5.3, SIL International",
         "url": "https://glottolog.org/resource/languoid/id/soli1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Chipimpi, Vulgar Clans, and Lala-Lamba Ethnohistory – Brian Siegel, Furman University, 2008",
         "url": "https://scholarexchange.furman.edu/cgi/viewcontent.cgi?article=1001&context=ant-publications",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "The Birth and Sociolinguistic Features of Sala Language of Zambia – RSIS International, 2023",
         "url": "https://rsisinternational.org/journals/ijriss/Digital-Library/volume-7-issue-8/993-1000.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

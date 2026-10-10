@@ -93,12 +93,14 @@
       {
         "title": "Oromo, Borana in Ethiopia – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/19651/ET",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Borana people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/borana.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "The Gadaa System of the Oromo People – Participedia",
@@ -108,17 +110,20 @@
       {
         "title": "Oromo – Encyclopaedia Britannica, 2026",
         "url": "https://www.britannica.com/topic/Oromo",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Oromo, Borana-Arsi-Guji – Wiktionary ISO 639-3 Africa",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Glottolog — Borana-Arsi-Guji Oromo (bora1271)",
         "url": "https://glottolog.org/resource/languoid/id/bora1271",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -99,12 +99,14 @@
       {
         "title": "OpenEdition Ethnomusicologie — La danse bollo des Kroumen en Côte d'Ivoire, 2023",
         "url": "https://journals.openedition.org/ethnomusicologie/5068",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog — Tepo Krumen (ted)",
         "url": "https://glottolog.org/resource/languoid/id/tepo1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kroumen.com — Aspects of tone change in three Krumen languages",
@@ -114,22 +116,26 @@
       {
         "title": "History Today — Kroomen: Black Slaver Hunters",
         "url": "https://www.historytoday.com/archive/feature/kroomen-black-slaver-hunters",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       },
       {
         "title": "Qiraat Africa — The Kru/Kroo of West Africa",
         "url": "https://qiraatafrican.com/en/19895/the-kru-kroo-of-west-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Facebook/APRNews1 — Les Kroumen, 2024",
         "url": "https://www.facebook.com/APRNEWS1/posts/connais-tu-les-kroumen",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Encyclopædia Britannica, 11e édition (1911) — Krumen",
         "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Krumen",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Texte de l'édition de 1911, cité pour les graphies Kroomen, Krooboys, Krus et Croos."
       }
     ]

@@ -8,7 +8,7 @@
       "mainName": "Aringa",
       "selfAppellation": "Aringa",
       "exonyms": ["Aringa"],
-      "originOfExonyms": "Le terme Aringa est a la fois l'endonym et l'exonyme. Il designe le peuple et leur region (Aringa County, Yumbe District). Le nom est utilise sans variation significative dans les sources coloniales britanniques et les recensements ougandais modernes.",
+      "originOfExonyms": "Aringa est le nom que le peuple se donne et celui qu'emploient les autres populations. Il désigne aussi son territoire, Aringa County, dans le district de Yumbe. Les sources coloniales britanniques et les recensements ougandais modernes l'emploient sans variation importante.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Aringa est d'usage courant en Ouganda pour designer ce groupe soudanique central du district de Yumbe dans le West Nile. Le terme apparait dans les recensements officiels ougandais, notamment celui de 2014.",
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
@@ -90,32 +90,38 @@
       {
         "title": "SIL Ethnologue — Aringa language (luc)",
         "url": "https://www.ethnologue.com/language/luc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Aringa in Uganda",
         "url": "https://joshuaproject.net/people_groups/19162",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "JSTOR — The Lugbara States (reference to Aringa-Ole'ba and Bari origins)",
         "url": "https://www.jstor.org/stable/24328592",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Uganda Bureau of Statistics — National Population and Housing Census 2014",
         "url": "https://www.ubos.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "101 Last Tribes — Aringa",
         "url": "http://www.101lasttribes.com/tribes/aringa.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — Uganda",
         "url": "https://www.cia.gov/the-world-factbook/countries/uganda/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

@@ -13,7 +13,7 @@
         "Denka (variante)",
         "Jaang (terme utilise par certains voisins)"
       ],
-      "originOfExonyms": "Le terme Dinka est un exonyme arabe utilise depuis les contacts avec les marchands arabes du nord Soudan. Il fut adopte par les colonisateurs britanniques et egyptiens. Le terme Jieng (pluriel) ou Muonyjang (singulier) est l'endonyme propre. Muonyjang est parfois traduit par 'mari des femmes' ou 'homme parmi les hommes', referant a une identite virile fondatrice.",
+      "originOfExonyms": "Le nom arabe Dinka est employé depuis les contacts avec les marchands du nord du Soudan. Les colonisateurs britanniques et égyptiens l'ont ensuite repris. Le peuple se nomme Jieng au pluriel et Muonyjang au singulier. Muonyjang est parfois traduit par 'mari des femmes' ou 'homme parmi les hommes', en référence à la place de la virilité dans les récits fondateurs du groupe.",
       "whyProblematic": "Le terme Dinka, d'origine arabe externe, est aujourd'hui universellement accepte y compris par les Jieng eux-memes dans les contextes officiels. Toutefois, dans les contextes politiques post-independance (Soudan du Sud depuis 2011), le terme Jieng est de plus en plus utilise dans les revendications identitaires.",
       "contemporaryUsage": "Dinka est utilise dans tous les contextes internationaux, administratifs et médiatiques. Jieng est prefere par la communaute elle-meme et par les militants de l'identite sud-soudanaise. Le Jieng Council of Elders (Conseil des Anciens Jieng) est une institution politique influente dans le Soudan du Sud post-independance.",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -122,37 +122,235 @@
       {
         "title": "SIL Ethnologue — Dinka macrolanguage (din)",
         "url": "https://www.ethnologue.com/language/din/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Deng, Francis Mading — The Dinka of the Sudan. New York: Holt, Rinehart and Winston, 1972",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Lienhardt, Godfrey — Divinity and Experience: The Religion of the Dinka. Oxford: Clarendon Press, 1961",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Johnson, Douglas H. — The Root Causes of Sudan's Civil Wars. Oxford: James Currey, 2003",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Human Rights Watch — South Sudan: Ethnic Targeting, Crimes Against Humanity (2014)",
         "url": "https://www.hrw.org/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "CIA World Factbook — South Sudan",
         "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA South Sudan population data",
         "url": "https://southsudan.unfpa.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dinka désigne un peuple nilotique du Soudan du Sud, qui se nomme lui-même Jieng. D'autres noms existent : Jaang, employé par les Nuer. Les sources ne disent presque rien de l'origine du nom Dinka ; nous présentons ce qu'elles proposent plus bas.",
+    "names": [
+      {
+        "nameText": "Jieng",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dik",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; Jang pour une personne.",
+        "periodLabel": "Écrit depuis 1932 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Jieng est celui que se donnent les Dinka, Jang pour une seule personne. C. G. et Brenda Seligman notent que Jang est aussi le mot courant des langues nilotiques pour nommer les Dinka. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42, note, et p. 136",
+                "notes": "Londres, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jieng est écrit « Jang (pl. Jeng) » par C. G. et Brenda Seligman, qui le donnent comme le nom que se donnent toutes les tribus dinka. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Le peuple qui le porte est bien plus ancien.",
+            "formAsWritten": "Jeng",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 136",
+                "notes": "Londres, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dinka",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que d'autres leur donnent ; il viendrait de Jang, selon une seule source.",
+        "periodLabel": "Écrit depuis 1849 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Dinka est celui que d'autres donnent à ce peuple, qui se nomme lui-même Jieng. Son origine n'est presque pas documentée ; nous présentons plus bas la seule explication que nous avons trouvée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 136",
+                "notes": "Londres, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1855,
+              "label": "Livre publié en 1855"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dinka est écrit « Denka » par le voyageur Antoine Brun-Rollet, pour une grande tribu des bords du Nil Blanc et du Sobat.",
+            "formAsWritten": "Denka",
+            "sources": [
+              {
+                "title": "Le Nil blanc et le Soudan : études sur l'Afrique centrale, mœurs et coutumes des sauvages",
+                "author": "Antoine Brun-Rollet",
+                "year": 1855,
+                "url": "https://archive.org/details/lenilblancetles00brungoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 90-91 et p. 104-105",
+                "notes": "Paris, L. Maison, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1840,
+              "to": 1849,
+              "label": "Expédition de 1840-1841, récit publié en 1849"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dinka est écrit « Dinkas » par Ferdinand Werne, qui parle de « la nation dinka » et de sa langue ; un interprète dinka y traduit vers l'arabe. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait déjà là avant elle.",
+            "formAsWritten": "Dinkas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Expedition to Discover the Sources of the White Nile, in the Years 1840, 1841, vol. II",
+                "author": "Ferdinand Werne, traduit par Charles William O'Reilly",
+                "year": 1849,
+                "url": "https://archive.org/details/expeditiontodisc00wern_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 56 et p. 110",
+                "notes": "Londres, Richard Bentley, lu sur la numérisation d'Internet Archive. Récit d'une expédition égyptienne sur le Nil Blanc."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "Proposée en 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dinka viendrait de Jang, le nom que se donnent les Dinka, que les Arabes auraient déformé en Denkawi, d'où l'anglais Dinka, selon C. G. et Brenda Seligman.",
+            "hypothesisGroup": "origine du nom Dinka",
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 136",
+                "notes": "Londres, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jaang",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "nus",
+        "namedBy": "les Nuer",
+        "shortLine": "Le nom que les Nuer donnent aux Dinka.",
+        "periodLabel": "Usage décrit en 1956",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1956,
+              "label": "Usage décrit en 1956"
+            },
+            "statement": "Le nom Jaang est celui que les Nuer donnent aux Dinka, selon E. E. Evans-Pritchard, qui cite la phrase nuer « ca mut nang Jaang », « la guerre a été portée chez les Dinka ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Nuer Religion",
+                "author": "E. E. Evans-Pritchard",
+                "year": 1956,
+                "url": "https://archive.org/details/nuerreligion00evan",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 245",
+                "notes": "Oxford, Clarendon Press, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

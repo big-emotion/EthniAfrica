@@ -112,7 +112,8 @@
       {
         "title": "101 Last Tribes Africa — Mbochi people",
         "url": "https://www.101lasttribes.com/tribes/mbochi.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "BTI Transformation Index — Congo Republic 2024",
@@ -127,12 +128,14 @@
       {
         "title": "Ethnologue — Mbosi language (mdw)",
         "url": "https://www.ethnologue.com/language/mdw",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Embassy of Republic of Congo — People and Culture",
         "url": "http://www.ambacongo-us.org/en/about-congo/people-culture/people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "government"
       },
       {
         "title": "Worldscholars — Mboshi and Teke Culture Contact",
@@ -142,7 +145,8 @@
       {
         "title": "CIA World Factbook — Republic of the Congo",
         "url": "https://www.cia.gov/the-world-factbook/countries/congo-republic-of-the/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

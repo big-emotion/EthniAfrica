@@ -75,27 +75,32 @@
       {
         "title": "Kisi in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/12720",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kisi – Omniglot, 2021",
         "url": "https://www.omniglot.com/writing/kisi.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kisi – Ethnologue",
         "url": "https://www.ethnologue.com/language/kiz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kisi of Tanzania – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg014965/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bantu, Central-Tanzania People Cluster – Joshua Project",
         "url": "https://www.joshuaproject.net/clusters/341",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

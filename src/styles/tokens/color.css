@@ -101,6 +101,16 @@
     var(--afh-brand-gold)
   );
 
+  /* The name-history timeline (ETNI-2012), from the approved mockup v5:
+     terre cuite for the birth of a name, a warm grey for the dashes of
+     « before the name ». The ink reads 6.4:1 on the ground and 5.3:1 on the
+     chip; the dashes reach 4.3:1 on the warm page, over the 3:1 a
+     non-text mark needs. */
+  --afh-color-name-birth-bg: #fbe9dc;
+  --afh-color-name-birth-ink: #8a3d1c;
+  --afh-color-name-birth-chip: #f6d3bd;
+  --afh-color-name-before-dash: #7d6c5c;
+
   --afh-cat-ocre: #c9821f;
   --afh-cat-ocre-tint: #f1d9ae;
   --afh-cat-teal: #33a390;
@@ -134,6 +144,33 @@
   --afh-cat-terre-ink-night: #cd725e;
   --afh-cat-perv-ink-night: var(--afh-cat-perv);
 
+  /* The source diamond (ETNI-2015): one colour per family of source, from the
+     manifesto film's legend. The film's fills are the --afh-cat-* hexes, and
+     ocre, teal and perv land at 2.6:1 on the birth tile's wash, under the
+     3:1 a meaningful mark needs (WCAG 1.4.11). Each day fill is its film hue
+     taken darker, to the lightest step clearing 3.3:1 on every tile ground;
+     press and archive already clear it at the film's own value. The night
+     fills are the film hues as they are, archive and other lifted to 4:1.
+     Encyclopedia is not in the film: it is a plum, a hue none of the other
+     families uses, kept at least 35 ΔE from each of them so Wikipedia
+     no longer reads as a book (4.6:1 on the birth wash by day, 5.3:1 on the
+     lightest night surface).
+     Asserted in src/styles/__tests__/sourceDiamondCharter.test.ts. */
+  --afh-color-source-oral: #b1721b;
+  --afh-color-source-book: #2c8e7d;
+  --afh-color-source-encyclopedia: #a3488a;
+  --afh-color-source-press: #c4573f;
+  --afh-color-source-report: #6277e4;
+  --afh-color-source-archive: #7e603e;
+  --afh-color-source-other: #5b6b7b;
+  --afh-color-source-oral-night: #c9821f;
+  --afh-color-source-book-night: #33a390;
+  --afh-color-source-encyclopedia-night: #cf73b4;
+  --afh-color-source-press-night: #cd725e;
+  --afh-color-source-report-night: #7a8ce8;
+  --afh-color-source-archive-night: #9d774d;
+  --afh-color-source-other-night: #6e8194;
+
   /* ─── L2 · Semantic aliases ────────────────────────────────── */
 
   /* Surface */
@@ -141,6 +178,15 @@
   --afh-bg-warm: var(--afh-color-bg-warm);
   --afh-surface: var(--afh-color-card);
   --afh-border: var(--afh-color-border);
+
+  /* The keyboard focus ring's ink: 4.8:1 on the parchment ground. */
+  --afh-focus-ring: var(--afh-color-terracotta);
+
+  /* Name-history timeline: the birth tile and the before-the-name dashes. */
+  --afh-name-birth-bg: var(--afh-color-name-birth-bg);
+  --afh-name-birth-ink: var(--afh-color-name-birth-ink);
+  --afh-name-birth-chip: var(--afh-color-name-birth-chip);
+  --afh-name-before-dash: var(--afh-color-name-before-dash);
 
   /* Text */
   --afh-text: var(--afh-color-text);
@@ -365,6 +411,15 @@
      every headline that wants an accented word. */
   --afh-display-accent: var(--afh-cat-ocre-ink);
 
+  /* The source diamond, by family (ETNI-2015). */
+  --afh-source-oral: var(--afh-color-source-oral);
+  --afh-source-book: var(--afh-color-source-book);
+  --afh-source-encyclopedia: var(--afh-color-source-encyclopedia);
+  --afh-source-press: var(--afh-color-source-press);
+  --afh-source-report: var(--afh-color-source-report);
+  --afh-source-archive: var(--afh-color-source-archive);
+  --afh-source-other: var(--afh-color-source-other);
+
   /* Retired: --afh-gradient-spectrum, a five-hue ramp read off
      `public/africa.png` and reserved for the footer's brand qualifier. The
      qualifier now takes --afh-gradient-brand, the gradient the masthead sets
@@ -397,11 +452,22 @@
   --afh-surface: var(--afh-night-surface-2);
   --afh-border: var(--afh-night-line);
 
+  /* Raw terracotta clears 3:1 on the night ground but not with margin on the
+     raised surfaces; the lifted terre ink holds 4.8:1 or more on all three. */
+  --afh-focus-ring: var(--afh-cat-terre-ink-night);
+
   --afh-text: var(--afh-night-ink);
   --afh-text-soft: var(--afh-night-ink-2);
   --afh-text-muted: var(--afh-night-ink-3);
 
   --afh-colonial-ink: var(--afh-night-colonial);
+
+  /* On a dark page the birth tile takes the raised night surface, inked with
+     the terre ramp lifted for type (4.8:1). */
+  --afh-name-birth-bg: var(--afh-night-surface-2);
+  --afh-name-birth-ink: var(--afh-cat-terre-ink-night);
+  --afh-name-birth-chip: var(--afh-night-surface);
+  --afh-name-before-dash: var(--afh-night-ink-3);
 
   /* Raw terracotta is a dark red on a dark ground — 2.5:1, a figure nobody
      can read. The terre ink ramp is the same hue lifted for type. */
@@ -418,6 +484,14 @@
   --accent-foreground: #1a1208;
 
   --afh-display-accent: var(--afh-night-ocre-soft);
+
+  --afh-source-oral: var(--afh-color-source-oral-night);
+  --afh-source-book: var(--afh-color-source-book-night);
+  --afh-source-encyclopedia: var(--afh-color-source-encyclopedia-night);
+  --afh-source-press: var(--afh-color-source-press-night);
+  --afh-source-report: var(--afh-color-source-report-night);
+  --afh-source-archive: var(--afh-color-source-archive-night);
+  --afh-source-other: var(--afh-color-source-other-night);
 
   /* Rebinding the tokens is not enough on its own: `color` is resolved
      once on body and then inherited, so text with no colour of its own

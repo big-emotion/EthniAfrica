@@ -82,12 +82,14 @@
       {
         "title": "Soli of Zambia – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015632/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Soli in Zambia – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/print/14977/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Manchishi, P.C. et Musona, E.T. – A Brief History of the Soli People from 1500-1900 (1990)",
@@ -97,7 +99,8 @@
       {
         "title": "Machinyise, E. et al. – The Birth and Sociolinguistic Features of Sala Language of Zambia, IJRISS 2023",
         "url": "https://rsisinternational.org/journals/ijriss/Digital-Library/volume-7-issue-8/993-1000.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

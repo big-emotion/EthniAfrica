@@ -84,37 +84,44 @@
       {
         "title": "SIL Ethnologue — langues du Congo (COD)",
         "url": "https://www.ethnologue.com/country/CD/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog 5.3 — Bantou Zone H (Central-Western Bantu)",
         "url": "https://glottolog.org/resource/languoid/id/cent2260",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — People of the Democratic Republic of the Congo",
         "url": "https://www.britannica.com/place/Democratic-Republic-of-the-Congo/People",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "IWGIA — Indigenous peoples in the Democratic Republic of Congo",
         "url": "https://iwgia.org/en/democratic-republic-of-congo.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "Vansina, Jan — Paths in the Rainforests: Toward a History of Political Tradition in Equatorial Africa. University of Wisconsin Press, 1990",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — Democratic Republic of the Congo",
         "url": "https://www.cia.gov/the-world-factbook/countries/congo-democratic-republic-of-the/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Angola",
         "url": "https://www.cia.gov/the-world-factbook/countries/angola/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

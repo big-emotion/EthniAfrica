@@ -1,3 +1,4 @@
+import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__tests__/fixtures";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("@/api/v2/services/languageService", () => ({
@@ -43,6 +44,25 @@ const YORUBA = {
 describe("Language Handler", () => {
   beforeEach(() => {
     vi.clearAllMocks();
+  });
+
+  // @req REQ-196
+  it("serves the language's nameHistory, and no key when it has none", async () => {
+    vi.mocked(getLanguageById).mockResolvedValueOnce({
+      ...YORUBA,
+      nameHistory: VALID_NAME_HISTORY,
+    });
+    vi.mocked(getLanguageById).mockResolvedValueOnce(YORUBA);
+
+    const withHistory = await getLanguageHandler("yor");
+    const without = await getLanguageHandler("yor");
+
+    expect(withHistory.ok && withHistory.envelope.data.nameHistory).toEqual(
+      VALID_NAME_HISTORY
+    );
+    expect(without.ok && without.envelope.data).not.toHaveProperty(
+      "nameHistory"
+    );
   });
 
   // @req REQ-136

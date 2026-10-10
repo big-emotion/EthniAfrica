@@ -88,27 +88,32 @@
       {
         "title": "Aka in Central African Republic – Minority Rights Group International, 2018",
         "url": "https://minorityrights.org/communities/aka/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Culture and the Mind – Aka fieldsites, Universite de Sheffield",
         "url": "https://cultureandmind.sites.sheffield.ac.uk/fieldsites/aka",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Kisliuk, Michelle – Seize the Dance! BaAka Musical Life and the Ethnography of Performance, Oxford University Press, 2000",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Verdu, Paul et al. – Origins and Genetic Diversity of Pygmy Hunter-Gatherers from Western Central Africa, Science, 2009",
         "url": "https://www.science.org/content/article/short-history-african-pygmies",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "UNESCO – Polyphonic Singing of the Ba'Aka, Intangible Cultural Heritage",
         "url": "https://ich.unesco.org",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Discover Afrika – The BAaka peoples",
@@ -119,6 +124,7 @@
         "title": "Dictionnaire de l'Académie française, 1re édition (1694), entrée « pigmée » renvoyant à « pygmée »",
         "url": "https://www.dictionnaire-academie.fr/article/A1_0071",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Atteste la graphie ancienne « pigmée »."
       }
     ]

@@ -98,7 +98,8 @@
       {
         "title": "SIL Ethnologue — Shona language (sna)",
         "url": "https://www.ethnologue.com/language/sna/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Zimbabwe Field Guide — Mutapa State",
@@ -108,7 +109,8 @@
       {
         "title": "YouTube — The Mysterious Korekore Clan",
         "url": "https://www.youtube.com/watch?v=gHxC89k7V-c",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

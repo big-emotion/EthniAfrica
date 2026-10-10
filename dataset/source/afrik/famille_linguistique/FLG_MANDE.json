@@ -2,6 +2,300 @@
   "id": "FLG_MANDE",
   "nameFr": "Mandé",
   "nameEn": "Mande",
+  "nameHistory": {
+    "summary": "Le nom mandé désigne une famille de langues d'Afrique de l'Ouest, comme le bambara, le maninka ou le soninké. C'est un nom de savants, tiré de Manden, le nom d'un pays du haut Niger ; on a aussi dit mandingue. Les sources que nous avons lues n'expliquent pas le sens premier du nom Manden.",
+    "names": [
+      {
+        "nameText": "Mandé",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes européens, d'après le nom du pays Manden",
+        "shortLine": "Un nom de savants pour une famille de langues, tiré de Manden, un pays du haut Niger.",
+        "periodLabel": "Nom d'un groupe de langues depuis 1867",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom mandé désigne, pour D. Olderogge, le groupe de langues le plus nettement défini parmi ceux que le linguiste Diedrich Westermann distinguait en Afrique de l'Ouest.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 319"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom mandé est choisi par l'administrateur colonial Maurice Delafosse pour la langue qu'il décrit. Il écrit que ce mot « tend de plus en plus à se généraliser et à remplacer le mot mandingue », qui a selon lui la même origine.",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Avertissement, note 1",
+                "notes": "Paris, E. Leroux, 1901. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom mandé désigne aussi un ensemble de peuples chez Maurice Delafosse, qui parle en 1900 de « la famille mandé ou mandingue » et la range parmi les « familles nègres » d'Afrique de l'Ouest. Ce classement mêle la langue et l'apparence physique.",
+            "sources": [
+              {
+                "title": "Note sur les familles Krou, Mandé et Agni-Achanti (Afrique occidentale), Bulletin du Muséum d'histoire naturelle, vol. 6",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/biostor-268194",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 338-339",
+                "notes": "Lu dans la numérisation d'Internet Archive. L'auteur, administrateur colonial, classe les peuples en « familles » et parle de « race »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1867,
+              "to": 1867,
+              "label": "1867"
+            },
+            "era": "polity",
+            "statement": "Le nom mandé apparaît comme nom d'un groupe de langues dans le livre du linguiste allemand H. Steinthal, Die Mande-Neger-Sprachen. Il explique que la finale -ga forme des noms de peuples : on parle des Mandenga, mais leur langue ne peut s'appeler que le mande. C'est la plus ancienne trace de ce nom de famille de langues que le projet connaît. Les langues existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Mande-Neger-Sprachen, psychologisch und phonetisch betrachtet",
+                "author": "H. Steinthal",
+                "year": 1867,
+                "url": "https://archive.org/details/diemandenegersp00steigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. XI",
+                "notes": "Berlin, Ferd. Dümmler, 1867. Lu dans la numérisation d'Internet Archive, préface."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "On dit alors Mánde pour le pays et Mandénga pour ses habitants : c'est ce que des Africains libérés de la traite disent au missionnaire Sigismund Koelle, à Freetown. Koelle juge fautive la forme Mandingo des cartes européennes.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Manden",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "man",
+        "namedBy": null,
+        "shortLine": "Le nom d'un pays du haut Niger, entre le Mali et la Guinée, d'où est parti l'empire du Mali.",
+        "periodLabel": "Écrit dès la fin du XVIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Manden, ou Mande, désigne un pays du haut bassin du Niger, entre Kangaba et Siguiri, dans les actuels Mali et Guinée. Djibril Tamsir Niane en fait le noyau d'origine des Maninka. Les sources que nous avons lues n'expliquent pas le sens premier du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
+                "page": "p. 141 et p. 151, note 24"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1235,
+              "label": "Avant Soundiata, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "Le nom Manden est, selon les traditions orales que rapporte Djibril Tamsir Niane, l'autre nom du royaume de Kiri, où vivaient les Konaté et les Keita. Ce nom a désigné ensuite l'ensemble des pays maninka.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
+                "page": "p. 153"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Manden est noté Mánde par Sigismund Koelle, d'après un informateur qui lui dit que tous les Mandénga en sont venus et que sa capitale est sur le Djoliba.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1799,
+              "label": "Voyage de 1795-1797 (récit publié en 1799)"
+            },
+            "era": "polity",
+            "statement": "Le nom Manden est écrit « Manding » par le voyageur écossais Mungo Park, pour qui les Mandingoes tirent leur nom de cet État de l'intérieur, d'où ils seraient partis.",
+            "formAsWritten": "Manding",
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://www.gutenberg.org/ebooks/74976",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, W. Bulmer pour G. Nicol, 1799 ; voyage de 1795-1797. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg.",
+                "page": "p. 18"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1592,
+              "to": 1596,
+              "label": "Fin du XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Manden apparaît par écrit dans Mandimansa, le titre du mansa, ou roi, du Mandi, que les auteurs portugais de la fin du XVIe siècle donnent au grand souverain de l'intérieur, selon José da Silva Horta. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral. L'auteur cite les traités manuscrits d'André Álvares de Almada (1592-1596), d'André Donelha (1625) et de Francisco de Lemos Coelho (1669 et 1684) ; ces textes anciens eux-mêmes n'ont pas été lus.",
+                "page": "p. 664-665"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mandingue",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Des auteurs français, d'après la forme anglaise Mandingo",
+        "shortLine": "L'ancien nom français de ces langues ; il vient lui aussi de Manden.",
+        "periodLabel": "XIXe et XXe siècles",
+        "accounts": [
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom mandingue est encore celui que Maurice Delafosse donne en 1929 à une langue qu'il présente comme une seule langue à plusieurs dialectes : le malinké, le bambara et le dioula.",
+            "sources": [
+              {
+                "title": "La langue mandingue et ses dialectes : malinké, bambara, dioula",
+                "author": "Maurice Delafosse",
+                "year": 1929,
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k3412996f",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Numérisé par la Bibliothèque nationale de France. Seul le titre a été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "polity",
+            "statement": "Le nom mandingue est, selon le voyageur français Anne Raffenel, la forme française tirée de Mandingos, le nom que les voyageurs anglais donnent aux Malinkés.",
+            "formAsWritten": "Mandingues",
+            "sources": [
+              {
+                "title": "Nouveau voyage dans le pays des nègres, tome premier",
+                "author": "Anne Raffenel",
+                "year": 1856,
+                "url": "https://archive.org/details/nouveauvoyagedan00raff",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Imprimerie de N. Chaix, 1856. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un officier colonial français du milieu du XIXe siècle.",
+                "page": "p. 299"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Les langues mandé, du Mali au Liberia, comme le bambara, le maninka et le soninké. Manden est le nom d'un pays, que des Européens citent dès 1594 sous la forme Mandingues.",
@@ -82,12 +376,14 @@
         "title": "Koelle, Sigismund Wilhelm (1854) – Polyglotta Africana. Church Missionary House, Londres",
         "url": "https://github.com/lexibank/polyglottaafricana",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Transcription savante du texte de 1854, publiée comme jeu de données par le projet Lexibank. Les remarques de terrain de Koelle sur le pays de Mánde et sur le suffixe de gentilé y sont lues intégralement."
       },
       {
         "title": "Niane, Djibril Tamsir (dir.) (1985) – Histoire générale de l'Afrique, tome IV : L'Afrique du XIIe au XVIe siècle. UNESCO, Paris",
         "url": null,
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Publication de l'UNESCO. Le chapitre 6, signé Niane, suit les traditions orales des écoles de griots du Manden et les croise avec les auteurs arabes ; sa chronologie est relative. Le chapitre 12, signé Person, situe la fin de la dépendance du Bambugu vis-à-vis du Mali en 1599."
       },
       {
@@ -108,149 +404,176 @@
       {
         "title": "Greenberg, Joseph H. (1963) – *The Languages of Africa*. Indiana University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Vydrin, Valentin (2009) – On the Problem of the Proto-Mande Homeland, Journal of Language Relationship 1",
         "url": "https://www.jolr.ru/files/(10)jlr2009-1(107-142).pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Onze groupes de bas niveau font consensus ; les désaccords portent sur les regroupements intermédiaires et sur le berceau de la famille."
       },
       {
         "title": "Dimmendaal, Gerrit J. (2008) – \"Language Ecology and Linguistic Diversity on the African Continent\", *Language and Linguistics Compass*, et *Historical Linguistics and the Comparative Study of African Languages*",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Güldemann, Tom (2018) – *The Languages and Linguistics of Africa*. De Gruyter Mouton",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Creissels, Denis & Sambou, Pierre (2013) – *Le mandinka : phonologie, grammaire, textes*. Karthala",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Creissels, Denis (2019) – \"Tonologie du mandinka du Pakaawu\", *Mandenkan* 61",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Khachaturyan, Lusine (2020) – *A typological portrait of Mano, Southern Mande*. De Gruyter Brill",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Durvasula, Arun & Sankararaman, Sriram (2020) – \"Recovering signals of ghost archaic admixture in the genomes of present-day Africans\", *Science Advances*",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Rosa, Alexandra et al. (2011) – \"Y-Chromosomal diversity in the population of Guinea-Bissau: a multiethnic perspective\", *Molecular Biology and Evolution* 28(3): 1255-1266",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Nikitina, Tatiana (2019) – \"Missionary descriptions of Mande languages: verbal morphology…\", *Folia Linguistica* 50(2)",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue/SIL International – \"Mande languages\" entrée pour 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO – *Atlas des langues en danger dans le monde*",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Britannica – \"Mande languages\" et \"Mande peoples\" articles",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Glottolog (2025) – \"Mande\"",
         "url": "https://glottolog.org/resource/languoid/id/mand1469",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Agence Nationale de la Statistique et de la Démographie (ANSD), Sénégal (2023) – RGPH-5, Rapport Chapitre 1 : État et structure de la population, Table I-32 (Mandinka / Màndienka langue courante)",
         "url": "https://www.ansd.sn/sites/default/files/recensements/rapport/Chapitre-1_ETAT-STRUCTURE-POPULATION-Rapport-def-RGPH-5.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Agence Nationale de la Statistique (ANStat), Côte d'Ivoire (2021) – Recensement Général de la Population et de l'Habitat (RGPH 2021), jeu de données \"Répartition des Ivoiriens par grand groupe ethnique selon le sexe\" (groupe ethnolinguistique Mandé du Nord + Mandé du Sud, agrégat, classification Bouquet)",
         "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Almada, André Álvares de (1594) – Tratado breve dos rios de Guiné do Cabo Verde",
         "url": "https://archive.org/details/tratadobrevedosr00alma",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Le chapitre III est consacré au royaume des Mandingues. Fac-similé consultable en ligne."
       },
       {
         "title": "Park, Mungo (1799) – Travels in the Interior Districts of Africa",
         "url": "https://www.gutenberg.org/cache/epub/5266/pg5266.txt",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Park rattache explicitement le nom Mandingo à l'État intérieur de Manding. Texte intégral."
       },
       {
         "title": "Caillié, René (1830) – Journal d'un voyage à Temboctou et à Jenné",
         "url": "https://archive.org/details/journaldunvoyage01cail",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Le mot Mandingues y revient une centaine de fois sur les deux volumes ; le mot mandé n'y apparaît pas."
       },
       {
         "title": "Delafosse, Maurice (1929) – La langue mandingue et ses dialectes : malinké, bambara, dioula",
         "url": "https://gallica.bnf.fr/ark:/12148/bpt6k3412996f",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Le titre porte la thèse d'une langue mandingue unique à dialectes. Numérisé par la Bibliothèque nationale de France."
       },
       {
         "title": "Donaldson, Coleman (2017) – Orthography, Standardization, and Register: The Case of Manding",
         "url": "https://core.ac.uk/download/219377367.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Chapitre de Standardizing Minority Languages, Routledge. Donne le mandingue comme continuum de langue et de dialecte, et la morphologie des glottonymes : ka pour l'habitant, kan pour la langue."
       },
       {
         "title": "SIL International – Tables du registre ISO 639-3",
         "url": "https://iso639-3.sil.org/code_tables/download_tables",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "La macrolangue man réunit six variétés maninka et mandinka. Le bambara et le dioula portent un code individuel hors de cette macrolangue. Un code, myq, a été retiré en 2013."
       },
       {
         "title": "Massing, Andreas W. (2000) – The Wangara, an Old Soninke Diaspora in West Africa ?, Cahiers d'études africaines 158",
         "url": "https://journals.openedition.org/etudesafricaines/175",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Suit le réseau marchand wangara depuis les sources arabes du onzième siècle. Accès libre."
       },
       {
         "title": "Sanou Noël, Bationo (2021) – La charte du Mandé, Afroglobe 1",
         "url": "https://edition.uqam.ca/afroglobe/article/view/982",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Retrace l'atelier de Kankan de mars 1998 d'où sort la version écrite en quarante-quatre articles, d'après le récit de Djibril Tamsir Niane."
       },
       {
         "title": "UNESCO (2009) – La Charte du Mandén, proclamée à Kouroukan Fouga",
         "url": "https://ich.unesco.org/fr/RL/la-charte-du-manden-proclamee-a-kouroukan-fouga-00290",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Inscription au patrimoine culturel immatériel à la demande du Mali. La description inscrite énumère sept chapitres."
       },
       {
         "title": "Donaldson, Coleman (2019) – Linguistic and Civic Refinement in the N’ko Movement of Manding-Speaking West Africa. Signs and Society 7(2), p. 156-185",
         "url": "https://www.cambridge.org/core/journals/signs-and-society/article/linguistic-and-civic-refinement-in-the-nko-movement-of-mandingspeaking-west-africa/22BCE1074BD8F08FD5F998BB259E3E60",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article de recherche fondé sur des enquêtes entre 2012 et 2017, avec des observations à Bamako et à Bobo-Dioulasso. Les pratiques décrites concernent les acteurs étudiés du mouvement n'ko. DOI : 10.1086/702554."
       },
       {
         "title": "Niane, Djibril Tamsir (1985) – Le Mali et la deuxième expansion manden. Histoire générale de l’Afrique, tome IV, chapitre 6, UNESCO",
-        "url": "https://bokundoli.org/wp-content/uploads/2021/12/T4-10.pdf",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
         "tier": "official",
-        "notes": "Chapitre publié par l'UNESCO, reproduit par Bokundoli. P. 141 : pays Mande ou Manden et peuple mandenka ; p. 148-149 : le royaume soso, clan maninka du travail du fer unifié par la dynastie Kanté ; p. 151-152 : les royaumes Do (clan Konde) et Kiri (Konaté et Keita), le clan Kamara à Sibi et Tabön, les Traoré au Gangaran, le berceau des Keita à Dakadiala, Naréna et Kiri, et Mellit comme variante berbère de Mali ; p. 153-154 : traditions de Do et Kiri antérieures à Soundiata ; p. 157-158, note 44 : la parenté à plaisanterie établie après Kirina entre noms claniques mandenka et noms claniques d'autres peuples du Soudan occidental. Le texte accessible de cette reproduction commence à la p. 141 ; les pages antérieures du chapitre n'ont pas pu être vérifiées sur cette source. Ces usages sont ceux de l'auteur."
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre publié par l'UNESCO, dont l'édition originale est en ligne sur l'UNESDOC. Lu dans une copie non officielle reproduite par le site Bokundoli, dont la pagination suit l'édition française. P. 141 : pays Mande ou Manden et peuple mandenka ; p. 148-149 : le royaume soso, clan maninka du travail du fer unifié par la dynastie Kanté ; p. 151-152 : les royaumes Do (clan Konde) et Kiri (Konaté et Keita), le clan Kamara à Sibi et Tabön, les Traoré au Gangaran, le berceau des Keita à Dakadiala, Naréna et Kiri, et Mellit comme variante berbère de Mali ; p. 153-154 : traditions de Do et Kiri antérieures à Soundiata ; p. 157-158, note 44 : la parenté à plaisanterie établie après Kirina entre noms claniques mandenka et noms claniques d'autres peuples du Soudan occidental. Le texte accessible de cette reproduction commence à la p. 141 ; les pages antérieures du chapitre n'ont pas pu être vérifiées sur cette source. Ces usages sont ceux de l'auteur."
       },
       {
         "title": "Camara Laye (1978) – Le Maître de la parole : Kouma Lafôlô Kouma. Paris : Plon, p. 130, note 1",

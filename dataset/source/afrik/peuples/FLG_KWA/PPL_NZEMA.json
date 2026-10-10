@@ -80,12 +80,14 @@
       {
         "title": "Nzema – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/nzema.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Nzema Language (NZI) – Ethnologue",
         "url": "https://www.ethnologue.com/language/nzi/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Valsecchi, Pierluigi – Calendar and the annual festival in Nzema: notes on time and history, 1999",
@@ -95,29 +97,34 @@
       {
         "title": "Valsecchi, Pierluigi – Power and State Formation in West Africa: Appolonia from the Sixteenth to the Eighteenth Century, trans. Allan Cameron, Palgrave",
         "url": "https://www.jstor.org/stable/43305147",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Shores of Slaves: Apollonia in the Akan World – Journal of West African History",
         "url": "https://scholarlypublishingcollective.org/msup/jwah/article/10/2/140/399385/Shores-of-Slaves-Apollonia-in-the-Akan-World",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog 5.2 — Nzima [nzim1238]",
         "url": "https://glottolog.org/resource/languoid/id/nzim1238",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Confirms glottocode nzim1238 and ISO 639-3 nzi, consistent with the fiche's existing isoCodes."
       },
       {
         "title": "Ghana Museums and Monuments Board — Fort Apollonia, Beyin (1768)",
         "url": "https://gmmb.gov.gh/fort-apollonia-beyin-1768",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Texte lu directement : le nom du fort a d'abord été donné à la région par un explorateur portugais qui aperçut le lieu le jour de la Sainte-Apollonie (la page ne donne pas le quantième) ; le chef nzema Amenihyia autorise les marchands anglais à bâtir le fort ; dernier fort construit par les Anglais en Gold Coast ; travaux commencés en 1768."
       },
       {
         "title": "Ghana Museums and Monuments Board — Museum of Nzema Culture and History, Fort Apollonia (2010)",
         "url": "https://gmmb.gov.gh/museum-of-nzema-culture-and-history-fort-apollonia-2010",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Texte lu directement : le musée ouvre en 2010 et est dédié à Kwame Nkrumah, présenté comme la figure la plus importante issue de la région nzema."
       }
     ]

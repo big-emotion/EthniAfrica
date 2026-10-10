@@ -8,7 +8,7 @@
       "mainName": "Mahouka",
       "selfAppellation": "Mahou",
       "exonyms": ["Maou", "Mahous", "Maouka"],
-      "originOfExonyms": "L'ethnonyme Mahouka derive de l'expression en langue mahouka qui cigui moka, signifiant envahisseurs, en reference a l'arrivee conquerante des Diomande dans le Nord-ouest ivoirien. Le pays Mahou designe simultanement un espace geographique, un peuple, une culture et une langue.",
+      "originOfExonyms": "Mahouka viendrait de l'expression mahouka qui cigui moka, qui signifierait envahisseurs. Elle renverrait à l'arrivée conquérante des Diomande dans le nord-ouest ivoirien. Le pays Mahou renvoie à la fois à un territoire, à un peuple, à une culture et à une langue.",
       "whyProblematic": null,
       "contemporaryUsage": "Mahouka est la forme usuelle pour designer la langue. Mahou (ou Mahous) est la forme la plus frequente pour designer le peuple dans la litterature francophone et sur Wikipedia. Les deux formes coexistent sans confusion.",
       "linguisticFamily": "FLG_MANDE",
@@ -83,7 +83,8 @@
       {
         "title": "Bakayoko, Abou et Coulibaly, Yalamoussa – L'installation des Diomande dans le Nord-ouest ivoirien (XVIeme-XIXeme siecle), Revue ASTR-GHANA, 2025",
         "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2025/11/2.-Abou-BAKAYOKO.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ultimes Griots – Les Mahouka, Facebook, 2024",

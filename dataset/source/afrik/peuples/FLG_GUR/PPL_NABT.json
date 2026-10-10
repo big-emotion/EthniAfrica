@@ -103,17 +103,20 @@
       {
         "title": "101 Last Tribes - Frafra people",
         "url": "https://www.101lasttribes.com/tribes/nankana.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Akolgo, Joseph Octavius - Investiture of Chiefs, a Relic of Colonialism? ASC-TUFS Working Papers (2024)",
         "url": "https://www.jstage.jst.go.jp/article/ascwp/4/0/4_39/_pdf/-char/ja",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Facebook - Mamprusi People - The Nangodi Traditional Area",
         "url": "https://www.facebook.com/mamprusiPeople/posts/the-nangodi-traditional-area",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

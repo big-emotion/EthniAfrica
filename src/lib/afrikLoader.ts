@@ -18,6 +18,7 @@ import {
   type SearchCompanionsData,
 } from "@/api/v2/schemas/searchCompanions";
 import type { WordAnswer } from "@/lib/search/answer";
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import type { Language } from "@/types/shared";
 
 import {
@@ -41,6 +42,7 @@ import {
   type SearchFeedPresentation,
 } from "@/lib/search/searchFeedPresentation";
 import { logger } from "@/lib/api/logger";
+import { parseNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 
 // ==========================================
 // CONSTANTS
@@ -275,4 +277,61 @@ export async function loadSearchCompanions(
 
   const envelope = (await response.json()) as { data?: unknown };
   return searchCompanionsDataSchema.parse(envelope.data);
+}
+
+// ==========================================
+// NAME HISTORY (the search timeline, REQ-198)
+// ==========================================
+
+/** Where each kind of subject serves its fiche, `nameHistory` included. */
+const FICHE_ENDPOINTS: Partial<Record<SearchEntityType, string>> = {
+  people: "peoples",
+  country: "countries",
+  language: "languages",
+  languageFamily: "language-families",
+  patronyme: "patronymes",
+};
+
+async function loadNameHistory(
+  subject: SearchResult,
+  signal?: AbortSignal
+): Promise<{ subject: SearchResult; nameHistory: NameHistory } | null> {
+  const endpoint = FICHE_ENDPOINTS[subject.type];
+  if (!endpoint) return null;
+  try {
+    const response = await fetchWithSignal(
+      `${API_BASE}/${endpoint}/${encodeURIComponent(subject.id)}`,
+      signal
+    );
+    if (!response.ok) return null;
+    const envelope = (await response.json()) as {
+      data?: { nameHistory?: unknown };
+    };
+    if (envelope.data?.nameHistory === undefined) return null;
+    const parsed = parseNameHistory(envelope.data.nameHistory);
+    return parsed.success ? { subject, nameHistory: parsed.data! } : null;
+  } catch (error) {
+    if (isAbortError(error)) throw error;
+    logger.warn("afrikLoader.loadNameHistory failed", {
+      type: subject.type,
+      id: subject.id,
+    });
+    return null;
+  }
+}
+
+/**
+ * The name history of every searched subject that has one, in the subjects'
+ * order. A subject without one, or whose fiche fails to load, is left out
+ * rather than failing the search: the page then opens on the answer.
+ */
+// @req REQ-198
+export async function loadSubjectNameHistories(
+  subjects: readonly SearchResult[],
+  signal?: AbortSignal
+): Promise<Array<{ subject: SearchResult; nameHistory: NameHistory }>> {
+  const histories = await Promise.all(
+    subjects.map((subject) => loadNameHistory(subject, signal))
+  );
+  return histories.filter((entry) => entry !== null);
 }

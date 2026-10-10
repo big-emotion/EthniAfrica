@@ -8,7 +8,7 @@
       "mainName": "Machinga",
       "selfAppellation": "Machinga",
       "exonyms": [],
-      "originOfExonyms": "Le nom Machinga signifie litteralement montagnes en reference a leur territoire montagneux entre Lindi et Kilwa Kivinje.",
+      "originOfExonyms": "Le nom Machinga voudrait dire littéralement montagnes, en référence a leur territoire montagneux entre Lindi et Kilwa Kivinje.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Machinga est aujourd'hui employe sans ambiguite pour designer ce groupe ethnique de la region de Lindi. A noter que Machinga est aussi le nom d'un district au Malawi, sans lien avec ce peuple tanzanien.",
       "linguisticFamily": "FLG_BANTU",
@@ -72,7 +72,8 @@
       {
         "title": "Machinga Language (MVW) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/mvw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Machinga People and their Culture in Tanzania – My Free School Tanzania, 2014",
@@ -82,12 +83,14 @@
       {
         "title": "Machinga in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/13190",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Machinga – Glottolog 5.3, mach1265",
         "url": "https://glottolog.org/resource/languoid/id/mach1265",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

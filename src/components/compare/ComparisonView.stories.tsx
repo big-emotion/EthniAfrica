@@ -90,7 +90,7 @@ const threeUpData: ComparisonPageData = {
       values: {
         SEN: ["PPL_WOLOF", "PPL_PEUL"],
         MLI: ["PPL_BAMBARA"],
-        GHA: ["PPL_ASHANTI", "PPL_AKAN"],
+        GHA: ["PPL_ASANTE", "PPL_AKAN"],
       },
     },
     {

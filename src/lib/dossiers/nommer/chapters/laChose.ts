@@ -23,13 +23,13 @@ export const CHAPITRE_LA_CHOSE: DossierChapter = {
     "Le wax, le café, le cacao, Mami Wata : lesquels sont africains, et en quel sens ?",
   standfirst: {
     id: "standfirst",
-    text: "Cinq objets qu'on dit africains, cinq trajectoires différentes. Aucune de ces cases ne s'appelle « inauthentique » — et c'est la démonstration du chapitre.",
+    text: "Le wax, le kente, le café, le cacao et Mami Wata ont des liens avec l’Afrique, mais leurs noms et leur histoire ont suivi des chemins différents. Ces exemples montrent comment des objets et des pratiques changent en passant d’un pays à l’autre.",
     sourceRefs: [],
     figureRefs: [],
   },
   measure: {
-    value: "Cinq trajectoires",
-    unit: "cinq verdicts différents",
+    value: "Cinq histoires",
+    unit: "des liens différents avec l’Afrique",
     sourceRefs: [],
     figureRefs: [],
   },
@@ -37,11 +37,11 @@ export const CHAPITRE_LA_CHOSE: DossierChapter = {
     {
       id: "deux-questions-pas-une",
       stepLabel: "05 · La chose",
-      heading: "Deux questions, jamais une seule",
+      heading: "D’où vient la chose et d’où vient son nom ?",
       blocks: [
         {
           id: "deux-questions",
-          text: "Demander si un objet est africain mélange deux questions qui n'ont pas la même réponse : d'où vient la chose, et d'où vient son nom. Les séparer suffit à défaire la plupart des débats sur l'authenticité, parce que les deux réponses divergent presque toujours.",
+          text: "Pour comprendre ces histoires, nous distinguons deux questions : d’où vient l’objet ou la pratique, et d’où vient son nom ? Les réponses peuvent être différentes. Elles aident à comprendre la place que ces objets et ces pratiques ont prise en Afrique.",
           sourceRefs: [],
           figureRefs: [],
         },
@@ -72,7 +72,7 @@ export const CHAPITRE_LA_CHOSE: DossierChapter = {
           {
             cells: [
               "Le café",
-              "D'Éthiopie — Coffea arabica, région de Kaffa",
+              "D’Éthiopie, où Coffea arabica pousse dans la région de Kaffa",
               "De l'arabe qahwa, par le turc et l'italien, revenu sous forme européenne",
             ],
             sourceRefs: ["coffee-qahwa"],
@@ -81,7 +81,7 @@ export const CHAPITRE_LA_CHOSE: DossierChapter = {
           {
             cells: [
               "Le cacao",
-              "De Mésoamérique — mais introduit en Gold Coast par un Ghanéen",
+              "De Mésoamérique ; Tetteh Quarshie a contribué à sa diffusion en Gold Coast",
               "Du nahuatl, par l'espagnol",
             ],
             sourceRefs: ["cocobod-cocoa-story"],
@@ -91,7 +91,7 @@ export const CHAPITRE_LA_CHOSE: DossierChapter = {
             cells: [
               "Mami Wata",
               "D'Afrique — des divinités des eaux anciennes et multiples",
-              "D'un pidgin de traite, et son image d'une affiche allemande",
+              "Peut-être d’une langue d’échange commercial ; l’image est liée à une affiche allemande",
             ],
             sourceRefs: ["mami-wata-pidgin", "drewal-2012"],
             figureRefs: [],
@@ -102,35 +102,35 @@ export const CHAPITRE_LA_CHOSE: DossierChapter = {
     {
       id: "le-wax-et-le-kita",
       stepLabel: "05 · La chose",
-      heading: "Le wax et le kita, exactement inverses",
+      heading: "Le wax et le kita ont suivi des chemins différents",
       blocks: [
         {
           id: "le-wax-vient-de-helmond",
-          text: "Le wax n'est pas africain d'un bout à l'autre de sa fabrication. C'est une imitation industrielle du batik javanais, mise au point à Helmond, aux Pays-Bas, à partir de 1846 : l'impression au rouleau remplace la réserve à la cire, et le procédé arrive sur les côtes ouest-africaines par les soldats revenus des Indes néerlandaises.",
+          text: "Les sources citées présentent le wax comme une imitation industrielle du batik javanais, mise au point à Helmond, aux Pays-Bas, à partir de 1846. L’impression au rouleau remplace le procédé qui protège certaines parties du tissu avec de la cire avant la teinture. Selon ces sources, les soldats revenus des Indes néerlandaises ont contribué à faire connaître ces tissus sur les côtes ouest-africaines.",
           sourceRefs: ["vlisco-helmond", "trc-leiden-vlisco"],
           figureRefs: [],
         },
         {
           id: "les-noms-donnes-sur-place",
-          text: "Les motifs sont dessinés aux Pays-Bas. Les noms, eux, sont donnés sur place, par les femmes qui achètent et revendent les pièces — et ce sont ces noms qui font le sens d'un tissu, pas le dessin. Le pouvoir de fabriquer et le pouvoir de nommer ne sont pas allés ensemble : un objet peut être étranger de bout en bout et appartenir par son nom.",
+          text: "Dans l’histoire rapportée ici, les motifs sont dessinés aux Pays-Bas, puis les femmes qui achètent et revendent les tissus en Afrique de l’Ouest leur donnent des noms. Ces noms contribuent au sens que les tissus prennent dans la vie locale. Leur fabrication et leur usage racontent donc deux parties de cette histoire.",
           sourceRefs: ["trc-leiden-vlisco"],
           figureRefs: [],
         },
         {
           id: "le-kente-et-ses-deux-noms",
-          text: "Le kente est le cas exactement inverse, et il corrige une intuition répandue. Le tissu est africain : tissé à la bande sur métier akan et éwé, au Ghana et au Togo. Et il porte deux noms qui disent chacun ce qu'ils décrivent. En akan, nwentoma, « tissu tissé » ; kente est rapproché de kɛntɛn, le panier, pour le motif. En éwé, kete, des deux gestes alternés du métier — ke, ouvrir, et te, presser.",
+          text: "Le kente est tissé en bandes sur des métiers akan et éwé, au Ghana et au Togo. Selon les explications citées, nwentoma signifie « tissu tissé » en akan, tandis que kente serait lié à kɛntɛn, « panier », en raison du motif. En éwé, kete serait formé à partir de ke, « ouvrir », et te, « presser », qui rappellent les gestes du tissage.",
           sourceRefs: ["conversation-kente", "kente-nwentoma"],
           figureRefs: [],
         },
         {
           id: "kita-ne-dit-rien",
-          text: "« Kita » n'est ni l'un ni l'autre. C'est la forme que l'Afrique de l'Ouest francophone a fixée par-dessus les deux, et elle ne dit ni le tissage ni le panier ni le geste : elle ne dit rien du tout. Un objet africain, deux étymologies africaines qui expliquent le nom, et un troisième nom posé dessus qui n'explique plus rien.",
+          text: "Dans une partie de l’Afrique de l’Ouest francophone, ces tissus sont appelés « pagne kita ». Ce nom ne reprend pas directement les explications proposées pour les noms akan et éwé. Il montre comment un même tissu peut être connu sous plusieurs noms selon la langue employée.",
           sourceRefs: ["kente-nwentoma"],
           figureRefs: [],
         },
         {
           id: "deux-scandales-qui-nen-sont-pas",
-          text: "Un objet étranger portant un nom africain, un objet africain portant un nom exogène : les deux cas se lisent d'habitude comme des scandales opposés, et ni l'un ni l'autre n'en est un. Ce sont deux manières ordinaires dont une chose et son nom voyagent séparément.",
+          text: "Le wax a reçu des noms locaux après son arrivée en Afrique de l’Ouest. Le kente, tissé au Ghana et au Togo, est aussi connu sous un nom employé en français. Dans les deux cas, l’objet et ses noms ont circulé de façons différentes.",
           sourceRefs: [],
           figureRefs: [],
         },
@@ -144,37 +144,37 @@ export const CHAPITRE_LA_CHOSE: DossierChapter = {
       blocks: [
         {
           id: "le-cafeier-ethiopien",
-          text: "Le caféier est éthiopien : Coffea arabica pousse dans la région de Kaffa. Le mot, lui, part par l'arabe qahwa, devient kahve en turc, puis café dans les langues européennes — et revient en Afrique sous cette forme-là. L'amharique buna, qui nomme la même chose depuis toujours, a été contourné par toute la chaîne d'emprunt.",
+          text: "Coffea arabica pousse notamment dans la région éthiopienne de Kaffa. Selon la source citée, le mot « café » vient de l’arabe qahwa, passé par le turc kahve et les langues européennes avant de revenir en Afrique. En amharique, la même boisson porte le nom buna.",
           sourceRefs: ["coffee-qahwa"],
           figureRefs: [],
         },
         {
           id: "la-reserve-sur-kaffa",
-          text: "Une réserve, sur le terrain même de ce dossier. On lit souvent que « café » viendrait de Kaffa, et c'est joli parce que le lieu et le mot se ressemblent. Mais qahwa désigne un vin en arabe plus d'un demi-millénaire avant que le royaume de Kaffa n'existe : le rapprochement n'est pas seulement discuté, il est chronologiquement improbable.",
+          text: "Une autre explication rapproche « café » de Kaffa. La ressemblance entre les deux mots ne suffit toutefois pas à établir ce lien. La source citée juge cette origine peu probable : qahwa désignait déjà un vin en arabe plus d’un demi-millénaire avant l’existence du royaume de Kaffa.",
           sourceRefs: ["coffee-qahwa"],
           figureRefs: [],
         },
         {
           id: "ce-qui-reste-vrai",
-          text: "Ce qui reste vrai est plus intéressant que la légende : le caféier est bien éthiopien, et son nom ne vient pas de là. Il vient de la route commerciale qui l'a emporté. Poser l'étymologie de Kaffa comme acquise parce qu'elle est jolie serait commettre exactement l'étymologie populaire que le glossaire définit trois pages plus loin.",
+          text: "L’origine géographique d’une plante ne donne donc pas nécessairement celle du mot qui la désigne. Pour « café », la source citée propose de suivre les échanges commerciaux et les langues par lesquelles le mot est passé.",
           sourceRefs: ["coffee-qahwa"],
           figureRefs: [],
         },
         {
           id: "le-cacao-et-tetteh-quarshie",
-          text: "Le cacao ne vient pas d'Afrique : il est mésoaméricain, et son nom vient du nahuatl par l'espagnol. Mais le récit d'une plante apportée par l'Europe ne tient pas la date. En 1879, Tetteh Quarshie, forgeron ghanéen revenu de Fernando Po, rapporte des cabosses et plante à Akuapim-Mampong ; les missions bâloises avaient essayé à Aburi dès 1857, l'administration coloniale ne diffusera à grande échelle depuis São Tomé qu'à partir de 1886.",
+          text: "Le cacao vient de Mésoamérique et son nom serait passé du nahuatl à l’espagnol. Pour son arrivée en Gold Coast, les sources citées décrivent plusieurs étapes. Les missions de Bâle avaient essayé d’en cultiver à Aburi dès 1857. En 1879, le forgeron ghanéen Tetteh Quarshie rapporte des cabosses de Fernando Po et plante à Akuapim-Mampong. À partir de 1886, l’administration coloniale en diffuse à grande échelle depuis São Tomé.",
           sourceRefs: ["cocobod-cocoa-story", "basel-mission-cocoa"],
           figureRefs: [],
         },
         {
           id: "lattribution-se-discute",
-          text: "Là encore l'attribution se discute, et il faut le dire plutôt que de choisir le récit le plus net. Un historien attribue l'introduction au révérend Hass ; un autre reconnaît à Quarshie d'avoir popularisé la culture sans l'avoir apportée le premier. Quarshie avait d'ailleurs été formé dans un atelier de la mission de Bâle : le partage entre l'apport missionnaire et l'initiative africaine ne passe pas là où le récit national le place.",
+          text: "Les historiens cités ne donnent pas tous le même rôle à ces personnes. L’un attribue l’introduction au révérend Hass. Un autre estime que Quarshie a surtout popularisé la culture du cacao. Quarshie avait lui-même été formé dans un atelier de la mission de Bâle. Les initiatives des missionnaires et des cultivateurs africains sont donc liées dans cette histoire.",
           sourceRefs: ["basel-mission-cocoa"],
           figureRefs: [],
         },
         {
           id: "trois-reponses-independantes",
-          text: "L'objet est allogène, le nom aussi, et l'agent de l'introduction ne l'est pas. Aucune des trois réponses ne commande les deux autres — et la troisième reste ouverte.",
+          text: "Le cacao et son nom viennent d’ailleurs, mais des Africains ont joué un rôle dans sa diffusion. Savoir d’où vient la plante ne suffit pas à identifier la première personne qui l’a introduite dans chaque région.",
           sourceRefs: [],
           figureRefs: [],
         },
@@ -187,25 +187,25 @@ export const CHAPITRE_LA_CHOSE: DossierChapter = {
       blocks: [
         {
           id: "un-nom-de-pidgin",
-          text: "Les divinités des eaux sont anciennes et multiples sur toute la côte, et elles portaient des noms différents selon les langues. Elles se réunissent sous un nom commun assez tard, vers la fin du XIXe siècle, et ce nom vient probablement d'un pidgin de traite — « mother water ». L'étymologie est disputée, et le chapitre publie le désaccord plutôt que d'en trancher un côté.",
+          text: "Les divinités des eaux étaient connues sous différents noms selon les langues. Selon l’explication présentée ici, le nom commun Mami Wata se serait diffusé vers la fin du XIXe siècle. Il pourrait venir de « mother water », dans une langue d’échange issue des contacts commerciaux. Cette origine reste discutée.",
           sourceRefs: ["mami-wata-pidgin"],
           figureRefs: [],
         },
         {
           id: "laffiche-de-cirque",
-          text: "L'image, elle, est identifiée, et elle est plus retorse encore. La représentation canonique — la femme au serpent — vient d'une affiche de cirque : une chromolithographie imprimée à Hambourg par la maison Adolph Friedländer vers 1885, portrait d'une charmeuse de serpents que le public connaissait sous le nom de Nala Damajanti.",
+          text: "La représentation de Mami Wata en femme au serpent est rapprochée d’une affiche de cirque imprimée en couleurs à Hambourg par la maison Adolph Friedländer vers 1885. Elle représentait une charmeuse de serpents connue sous le nom de Nala Damajanti.",
           sourceRefs: ["drewal-2012", "nala-damajanti"],
           figureRefs: [],
         },
         {
           id: "mathilde-poupon",
-          text: "Nala Damajanti s'appelait en réalité Mathilde Poupon, née en 1861 dans le Jura. Française, elle se produisait chez Barnum puis aux Folies Bergère dans un personnage oriental fabriqué, se disant tour à tour indienne ou originaire de Pondichéry. L'affiche circule ensuite le long des côtes africaines, est reconnue comme un portrait de l'esprit des eaux, et lui donne son visage.",
+          text: "Selon la source citée, Nala Damajanti était le nom de scène de Mathilde Poupon, née en 1861 dans le Jura. Elle se produisait chez Barnum puis aux Folies Bergère et se présentait comme indienne ou originaire de Pondichéry. L’affiche aurait ensuite circulé sur les côtes africaines, où elle a été associée à l’esprit des eaux.",
           sourceRefs: ["nala-damajanti"],
           figureRefs: [],
         },
         {
           id: "trois-emprunts-empiles",
-          text: "Une divinité africaine dont l'iconographie tient à une Française déguisée en Indienne, imprimée par un lithographe allemand, et dont le nom est probablement un créole de commerce : ce n'est ni une imposture ni un vol. Trois emprunts empilés ne font pas un faux. C'est ce que transculturation et indigénisation nomment — et c'est précisément ce que le vocabulaire de l'authenticité est incapable de dire.",
+          text: "Cette histoire relie des divinités africaines, une artiste française, un imprimeur allemand et un nom peut-être issu des échanges commerciaux. Elle montre comment une représentation venue d’ailleurs peut prendre un sens local, puis être transformée par les personnes qui l’adoptent.",
           sourceRefs: ["drewal-2012", "mami-wata-pidgin"],
           figureRefs: [],
         },
@@ -218,13 +218,13 @@ export const CHAPITRE_LA_CHOSE: DossierChapter = {
       blocks: [
         {
           id: "le-couple-authentique-faux",
-          text: "Aucune de ces cinq cases ne s'appelle « inauthentique ». Le couple authentique / faux est lui-même un outil colonial : il suppose qu'une culture aurait un état d'origine, et que tout ce qui est venu après serait une dégradation. Les cinq trajectoires disent l'inverse — les choses et leurs noms circulent, et circuler n'abîme rien.",
+          text: "Ces exemples ne permettent pas de séparer simplement ce qui serait « authentique » de ce qui serait « faux ». Les objets, les pratiques et les noms changent au fil des échanges. Comprendre ces changements aide à raconter leur histoire sans supposer qu’une culture serait restée identique depuis son origine.",
           sourceRefs: [],
           figureRefs: [],
         },
         {
           id: "deux-affirmations-sans-source",
-          text: "Deux affirmations de ce chapitre demandent encore leur source primaire. La datation de la convergence de Mami Wata est une thèse d'historien, pas un fait de dictionnaire. Et l'archive d'entreprise qui fixerait 1846 et le nom du fabricant du wax n'a pas été consultée directement.",
+          text: "Deux points demandent encore une vérification dans les documents d’origine. La date à laquelle plusieurs divinités auraient été réunies sous le nom Mami Wata est une proposition d’historien. Pour le wax, nous n’avons pas consulté directement les archives de l’entreprise qui permettraient de vérifier la date de 1846 et le nom du fabricant.",
           sourceRefs: ["mami-wata-pidgin", "vlisco-helmond"],
           figureRefs: [],
         },

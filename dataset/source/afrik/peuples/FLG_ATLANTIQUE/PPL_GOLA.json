@@ -9,8 +9,8 @@
       "mainName": "Gola (Gula / Koya)",
       "selfAppellation": "Gola",
       "exonyms": ["Gula", "Koya"],
-      "originOfExonyms": "Gola est a la fois l'auto-appellation et l'exonyme courant. Gula est une variante orthographique. Koya est un nom regional parfois utilise en Sierra Leone. Le terme Gola est egalement une source probable du nom Gullah, peuple afro-americain des cotes de Georgie et de Caroline du Sud (Etats-Unis).",
-      "whyProblematic": "Aucun exonyme specifiquement problematique. Le lien etymologique avec le nom Gullah reste debattu dans la litterature academique.",
+      "originOfExonyms": "Gola est employé par le peuple lui-même et par d'autres pour le désigner. Gula est une autre orthographe. Koya est parfois utilisé en Sierra Leone. Gola pourrait aussi être à l'origine de Gullah, le nom d'un peuple afro-américain des côtes de Géorgie et de Caroline du Sud, aux États-Unis.",
+      "whyProblematic": "Aucun nom donné de l'extérieur n'est signalé ici comme particulièrement problématique. Les chercheurs discutent encore le lien possible entre Gola et Gullah.",
       "contemporaryUsage": "Gola est l'appellation standard dans les deux pays de residence (Liberia, Sierra Leone) et dans la litterature ethnographique et linguistique.",
       "linguisticFamily": "FLG_ATLANTIQUE",
       "ethnoLinguisticGroup": "Groupe Mel (Niger-Congo), isolat linguistique classifie proche du Bullom et du Kissi",
@@ -89,17 +89,20 @@
       {
         "title": "Joshua Project — Gola in Sierra Leone",
         "url": "https://joshuaproject.net/people_groups/11920/SL",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "101 Last Tribes — Gola people",
         "url": "https://www.101lasttribes.com/tribes/gola.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Gola language (gol)",
         "url": "https://www.ethnologue.com/language/gol/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "The Advocates for Human Rights — Background on Liberia and the Conflict",

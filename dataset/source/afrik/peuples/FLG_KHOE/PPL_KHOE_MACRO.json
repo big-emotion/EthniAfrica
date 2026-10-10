@@ -10,11 +10,9 @@
       "selfAppellation": null,
       "exonyms": [
         "Khoi",
-        "Khoikhoi",
-        "Hottentots (pejoratif, colonial)",
         "Central Khoisan (classification linguistique ancienne)"
       ],
-      "originOfExonyms": "Le terme Khoikhoi ou Khoekhoe signifie 'hommes des hommes' ou 'les vrais hommes' en langue khoekhoe. L'appellation coloniale pejorative 'Hottentot' fut utilisee par les colons neerlandais des 17e-18e siecles pour imiter les sons clics de la langue, percus comme incomprehensibles. Central Khoisan est une classification linguistique obsolete remplacee par Khoe-Kwadi.",
+      "originOfExonyms": "Khoi, forme courte de Khoikhoi ou Khoekhoe, signifierait « hommes des hommes » ou « les vrais hommes » en langue khoekhoe. Les noms Khoikhoi et Hottentot désignent le peuple khoikhoi et non ce regroupement : leur histoire est présentée sur la fiche Khoikhoi. Central Khoisan est une classification linguistique ancienne, remplacée par Khoe-Kwadi.",
       "whyProblematic": "Le terme 'Khoisan' regroupe des peuples genetiquement et culturellement distincts (Khoekhoe pastoraux et San chasseurs-cueilleurs) sous une seule etiquette. La famille linguistique Khoe-Kwadi n'est plus consideree comme faisant partie d'un macro-groupe 'Khoisan' unifie : Khoe-Kwadi, Kx'a (Ju) et Tuu sont trois familles independantes sans lien genetique etabli.",
       "contemporaryUsage": "Khoe ou Khoi est la designation generique adoptee dans la litterature scientifique et officielle depuis les annees 1990. En Namibie, Khoekhoe est une langue nationale. En Afrique du Sud, Khoekhoe (ou Khoikhoi) est une identite revendiquee par les groupes Nama et Griqua. Il n'existe pas d'auto-appellation collective : chaque groupe se designe par son propre nom, Khoekhoe (Khoikhoi), Nama (Namakhoen), Damara (ǂNukhoen), Haiǁom (Haiǁomkhoen), Gǀwi, Gǁana, Naro, Kxoe, Shua ou Tsoa, le kwadi etant aujourd'hui eteint.",
       "linguisticFamily": "FLG_KHOE",
@@ -134,27 +132,32 @@
       {
         "title": "Ethnologue SIL International — Khoe-Kwadi language family",
         "url": "https://www.ethnologue.com/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Khoisan languages, Classification",
         "url": "https://www.britannica.com/topic/Khoisan-languages/Classification-of-the-Khoisan-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "EBSCO Research Starters — Khoekhoen",
         "url": "https://www.ebsco.com/research-starters/history/khoekhoen",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "South African History Online — The Khoisan",
         "url": "https://sahistory.org.za/article/khoisan",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "BMC Biology — Male-biased migration from East Africa introduced pastoralism into southern Africa",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8650298/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Google Arts & Culture — How we heal: The trance dance of San",
@@ -164,7 +167,8 @@
       {
         "title": "Joshua Project — Botswana people groups",
         "url": "https://joshuaproject.net/countries/bc",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

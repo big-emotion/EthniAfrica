@@ -17,7 +17,7 @@
         "Mousgoun",
         "Mumwi"
       ],
-      "originOfExonyms": "Le nom Mousgoum derive du village eponyme de Mousgoum. Les nombreuses variantes orthographiques (Musgum, Musgu, Munjuk, Muzuk) refletent les transcriptions coloniales francaises et allemandes ainsi que les differences dialectales internes. Le terme Mouloui est l'appellation utilisee par les Massa du Tchad pour designer les Mousgoum.",
+      "originOfExonyms": "Le nom Mousgoum viendrait du village éponyme de Mousgoum. Les nombreuses variantes orthographiques (Musgum, Musgu, Munjuk, Muzuk) refletent les transcriptions coloniales francaises et allemandes ainsi que les differences dialectales internes. Le terme Mouloui est l'appellation utilisee par les Massa du Tchad pour designer les Mousgoum.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Mousgoum est utilise en francais (Cameroun, Tchad) tandis que Musgum prevaut dans la litterature anglophone. L'auto-appellation Mulwi est privilegiee par les membres du groupe dans leurs interactions internes. Les deux formes coexistent dans les publications academiques et les documents officiels.",
       "linguisticFamily": "FLG_TCHADIQUE",
@@ -94,12 +94,14 @@
       {
         "title": "Musgu Language (MUG) – Ethnologue / SIL International, 2025",
         "url": "https://www.ethnologue.com/language/mug/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Musgum, Mulwi in Chad – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/13840/cd",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Adaptive Architecture: Mousgoum dwellings Pouss, Cameroon – Radio Future Africa, s.d",

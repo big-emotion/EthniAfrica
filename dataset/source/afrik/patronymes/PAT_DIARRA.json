@@ -285,7 +285,7 @@
     },
     {
       "sourceKey": "hga-v-izard-kizerbo",
-      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 12, Du Niger à la Volta",
+      "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
       "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
       "tier": "official",
       "source_kind": "intergovernmental",
@@ -297,5 +297,120 @@
       "fieldPath": "homonyms",
       "reason": "Diarra et Jara sont deux graphies d'un même jamu. Le dictionnaire des jamuw range Condé, Ndiaye et Koné parmi les équivalences de l'entrée Jàra — des noms de clan d'autres peuples tenus pour le même, non des homonymes. Aucune lignée d'origine distincte n'a été trouvée, mais l'étymologie du nom restant elle-même ouverte, une homonymie ne pourrait pas être écartée sur cette base."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Diarra est un nom de clan, ou jamu, des Bambara et des Malinké, transmis comme nom de famille ; on l'écrit Jàra en bambara. Les sources consultées n'établissent pas son origine ; nous présentons plus bas les explications proposées.",
+    "names": [
+      {
+        "nameText": "Diarra",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bam",
+        "namedBy": null,
+        "shortLine": "Un nom de clan bambara et malinké, écrit Jàra en bambara ; on ne sait pas d'où il vient.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Diarra s'écrit Jàra en bambara, comme le mot qui désigne le lion, un animal que le clan compte parmi ses interdits. Le dictionnaire bambara range le nom et le mot dans deux articles distincts et ne dit pas si l'un vient de l'autre : on ne sait pas d'où vient le nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire bambara-français, lexique, lettre J",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "https://bamadaba.coastsystems.net/lexicon/j/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Consulté le 9 octobre 2026. Trois articles distincts : Jara, nom masculin ; Jara, nom de clan ; jara, « lion, Panthera leo », synonyme waraba, puis « fétiche »."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 54-55",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Jàra : graphies françaises Diarra et Diara ; parmi les interdits du clan, jàra et wáraba, les deux mots du lion."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "Récit publié en 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Diarra est, dans l'épopée de Soundiata, celui des rois du pays de Do, d'où vient Sogolon, la mère de Soundiata : Do Mansa-Gnèmo Diarra, puis Faony Diarra, que le récit appelle aussi Faony Kondé.",
+            "formAsWritten": "Do Mansa-Gnèmo Diarra",
+            "actors": [
+              {
+                "name": "Djeli Mamadou Kouyaté",
+                "role": "griot qui raconte l'épopée"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21-25 et p. 102",
+                "notes": "Présence Africaine. Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri, mis par écrit et traduit par Djibril Tamsir Niane. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "Rapporté en 1959"
+            },
+            "statement": "Le nom Diarra serait celui de familles venues du pays de Do, fait de douze villages dont on ne connaît pas l'emplacement exact, selon des griots que cite Molinie en 1959, d'après le mémoire d'E. A. Bogacheva.",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. L'autrice cite Molinie, officier de marine qui rédigeait en 1959 un dictionnaire pour les Européens en poste en Afrique-Occidentale française, d'après des griots qu'il ne nomme pas ; elle met en garde contre ses généralisations."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Diarra viendrait d'un nom de lieu, celui d'une ancienne région appelée Jara, selon le mémoire d'E. A. Bogacheva, qui juge cette origine probable sans la démontrer. Elle rapproche cette région d'un texte portugais écrit au plus tard vers 1510 et d'une chronique de Tombouctou qui consacre un chapitre à une région de Jara.",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Le texte portugais est cité d'après l'édition de Valentim Fernandes (1979) ; la chronique est celle attribuée à Mahmud Kati."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

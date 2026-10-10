@@ -18,7 +18,7 @@
         "Sheka"
       ],
       "originOfExonyms": "Le nom Mocha est une appellation externe ancienne, utilisee notamment par le linguiste Wolf Leslau dans ses travaux des annees 1958-1959. Ce terme est aujourd'hui considere comme pejoratif par les locuteurs qui se designent eux-memes comme Shekkacho. Le terme Sheka designe aussi la zone administrative ou vit la majorite du peuple.",
-      "whyProblematic": "Le nom Mocha est percu comme un exonyme pejoratif par la communaute. Les membres du groupe preferent l'appellation Shekkacho ou Sheka.",
+      "whyProblematic": "La communauté considère Mocha comme un nom méprisant qui lui a été donné de l'extérieur. Ses membres préfèrent Shekkacho ou Sheka.",
       "contemporaryUsage": "Le nom officiel retenu par les autorites ethiopiennes et les bases de donnees linguistiques internationales est Shekkacho (code ISO moy). Le terme Mocha subsiste dans les anciennes sources academiques (Leslau 1958, 1959). La zone administrative est appelee Sheka Zone.",
       "linguisticFamily": "FLG_COUCHITIQUE",
       "ethnoLinguisticGroup": "Omotic septentrional, branche Gonga-Gimojan (Gonga meridional), etroitement apparentee au kafa et a l'anfillo",
@@ -77,17 +77,20 @@
       {
         "title": "Shekka in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/14887",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Shekkacho – EthiopiaScripture.org, 2023",
         "url": "https://www.ethiopiascripture.org/en/languages/s/shekkacho",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Situation of the Shekha ethnic group – Immigration and Refugee Board of Canada / Ecoi.net, 2015",
         "url": "https://www.ecoi.net/en/document/1297530.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Statistical Data on Sheka and Keffa Zones – MTU Sociology / CSA Ethiopia, 2007",
@@ -102,7 +105,8 @@
       {
         "title": "ISO 639-3: moy (Shekkacho) – SIL International / Ethnologue",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

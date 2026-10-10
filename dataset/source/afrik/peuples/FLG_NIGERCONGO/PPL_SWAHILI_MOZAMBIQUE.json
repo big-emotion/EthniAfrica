@@ -8,7 +8,7 @@
       "mainName": "Swahili du Mozambique",
       "selfAppellation": "Mwani / Waswahili",
       "exonyms": ["Swahili", "Mwani (locuteurs de la cote nord)"],
-      "originOfExonyms": "Le terme Swahili vient de l'arabe sawahil (cotes), designe les peuples musulmans bantoues de la cote est-africaine. Au Mozambique, le terme local Mwani designe les locuteurs du dialecte kiMwani, concentrated sur l'ile de Mozambique, Angoche et l'archipel des Quirimbas.",
+      "originOfExonyms": "Le terme Swahili viendrait de l'arabe sawahil (cotes) ; il designe les peuples musulmans bantoues de la cote est-africaine. Au Mozambique, le terme local Mwani designe les locuteurs du dialecte kiMwani, concentrated sur l'ile de Mozambique, Angoche et l'archipel des Quirimbas.",
       "whyProblematic": null,
       "contemporaryUsage": "Au Mozambique, les communautes se designent comme Mwani ou Waswahili selon le contexte. Le terme Swahili est utilise academiquement et administrativement. Les habitants de l'Ilha de Mocambique maintiennent une identite distinctive marquee par les influences bantoues, arabes, indiennes et portugaises.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -88,17 +88,20 @@
       {
         "title": "UNESCO World Heritage Centre — Island of Mozambique",
         "url": "https://whc.unesco.org/en/list/599/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Joshua Project — Swahili in Mozambique",
         "url": "https://joshuaproject.net/people_groups/15145/MZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Swahili of Mozambique (PGID: PG015420)",
         "url": "https://peoplegroups.org/people_groups/pg015420/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Mozambique Experience — Ilha de Mocambique history and culture",
@@ -113,7 +116,8 @@
       {
         "title": "Ethnologue SIL — kiMwani (wmw)",
         "url": "https://www.ethnologue.com/language/wmw",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CID-DS — Tufo Dancing: Muslim Women's Culture in Northern Mozambique",

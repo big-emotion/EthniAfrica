@@ -8,7 +8,7 @@
       "mainName": "Tongu",
       "selfAppellation": "Tonu ou Tonu Ewe (en ewe : Tonu signifie bord d'un cours d'eau ; tor = riviere, ngu = pres de)",
       "exonyms": ["Tongu Ewe", "Tonu", "Tonguland"],
-      "originOfExonyms": "Le terme Tongu vient du ewe tor-ngu, signifiant pres de la riviere. Il designe les communautes Ewe etablies le long du fleuve Volta et du lac Volta dans la region des Volta au Ghana. Appellation geographique devenue identite communautaire.",
+      "originOfExonyms": "Le terme Tongu viendrait du ewe tor-ngu, qui veut dire pres de la riviere. Il designe les communautes Ewe etablies le long du fleuve Volta et du lac Volta dans la region des Volta au Ghana. Appellation geographique devenue identite communautaire.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Tongu est utilise officiellement dans les decoupages administratifs ghanéens (North Tongu District, Central Tongu District, South Tongu District). Il designe un sous-groupe Ewe distinct des Anlo (cote) et des Ewedome (interieur des terres). En 2024, les chefs traditionnels des 13 aires traditionnelles Tongu ont cree l'Union des Chefs Tongu.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -49,7 +49,7 @@
     "culture": {
       "majorRites": "Festival Asafotu, celebre annuellement en decembre par les Tongu, commemore les victoires et la bravoure des ancetres guerriers. Le Gbedzimido est une danse de guerre transformee en danse ceremonielle, executee lors de l'Asafotu et aux funerailles de personages importants. Le festival Afenorto de Mepe est une celebration annuelle de la zone Tongu. Rites funeraires elabores avec percussions.",
       "symbols": "Le fleuve et le lac Volta sont des symboles identitaires centraux pour les Tongu (le nom meme signifie pres de la riviere). Le Gbedzimido (danse de guerre) est un symbole de bravoure ancestrale.",
-      "artsAndMusic": "Musique de percussion complexe : tambour atsimevu (grand-pere), sogo (pere), kidi (mere), kagan (petit frere). Tissage en bandes (strip weaving) avec motifs bleus et blancs, tradition commune a l'ensemble des Ewe. Chants et danses ceremoniales varies : Agbekor (guerre), Agbadza (sociale), Atsiagbekor (formation militaire transformee). Le culte de Yewe possede une musique sacree tres developpee. Comme les autres locuteurs gbe (éwé, fon, aja), la tradition orale s'appuie sur un large corpus de proverbes, documenté par la phonologie comparative des langues gbe (Capo, 1991).",
+      "artsAndMusic": "Les ensembles de percussion tongu comprennent l'atsimevu, appelé « grand-père », le sogo, « père », le kidi, « mère », et le kagan, « petit frère ». Les Tongu pratiquent le tissage en bandes bleues et blanches, partagé avec d'autres groupes ewe. Les chants et les danses comprennent l'Agbekor, lié à la guerre, l'Agbadza, associé aux rencontres sociales, et l'Atsiagbekor, issu d'un entraînement militaire. Le culte de Yewe possède aussi sa propre musique sacrée. Les proverbes occupent une place importante dans les traditions orales des locuteurs gbe, dont les Éwé, les Fon et les Aja (Capo, 1991).",
       "spiritualities": "Religion traditionnelle Ewe (Vodun) centree sur Mawu (dieu createur) et des divinites intermediaires (trowo). Culte des ancetres fondamental. Yewe, dieu du tonnerre, est venere dans la region du Volta par un culte exclusif a initiation. Environ 89% des Ewe se sont convertis au christianisme (missions protestantes puis catholiques), tout en maintenant des pratiques traditionnelles."
     },
     "historicalRole": {
@@ -78,17 +78,20 @@
       {
         "title": "GhanaWeb – Volta Region: Tongu chiefs create a unitary traditional state, 2024",
         "url": "https://www.ghanaweb.com/GhanaHomePage/NewsArchive/Volta-Region-Tongu-chiefs-create-a-unitary-traditional-state-1947608",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Ghana Statistical Service – 2021 Population and Housing Census",
         "url": "https://census2021.statsghana.gov.gh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "CityPopulation – North Tongu District",
         "url": "https://www.citypopulation.de/en/ghana/admin/volta/0412__north_tongu/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Localizely – Ewe language code",
@@ -99,6 +102,7 @@
         "title": "Capo, Hounkpati B. C. (1991) – A Comparative Phonology of Gbe. Foris Publications",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Classification comparative interne des langues gbe (éwé, fon, aja, mina, gen)."
       }
     ]

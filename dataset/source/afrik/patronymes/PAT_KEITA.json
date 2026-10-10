@@ -341,7 +341,7 @@
     },
     {
       "sourceKey": "hga-iv-niane",
-      "title": "Histoire générale de l'Afrique, IV : L'Afrique du XIIe au XVIe siècle — chapitre 6, Le Mali et la deuxième expansion manden",
+      "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
       "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
       "tier": "official",
       "source_kind": "intergovernmental",
@@ -349,7 +349,7 @@
     },
     {
       "sourceKey": "hga-v-izard-kizerbo",
-      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 12, Du Niger à la Volta",
+      "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
       "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
       "tier": "official",
       "source_kind": "intergovernmental",
@@ -373,5 +373,176 @@
       "fieldPath": "homonyms",
       "reason": "Aucune lignée homonyme d'origine distincte n'a été trouvée. Le jamu est porté bien au-delà de la descendance dynastique, par affiliation et par adoption, mais c'est là une extension du même nom et non une seconde origine. Le dictionnaire des jamuw réunit de même Kéyità, Kétà et Kɛ́yità sous une entrée unique et range Souma, Koné et Beawɔgi parmi ses équivalences."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Keïta est un nom de clan, ou jamu, des Malinké, celui de la lignée de Soundiata, transmis comme nom de famille. On l'écrit aussi Keita, Kéita ou Kéyità. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Keïta",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de clan de la lignée de Soundiata ; son origine reste débattue.",
+        "periodLabel": "Écrit depuis 1885",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Keïta désigne un clan malinké, celui auquel l'épopée de Soundiata rattache son héros. Le dictionnaire des noms de clan mandingues l'écrit Kéyità, avec les formes Kétà et Kɛ́yità, et ne lui donne pas de sens ; son origine reste discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 82",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Kéyità."
+              },
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11-12",
+                "notes": "Présence Africaine. Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri, mis par écrit et traduit par Djibril Tamsir Niane. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "Récit publié en 1885"
+            },
+            "statement": "Le nom Keïta est écrit « Keita » par le capitaine Gallieni, qui compte les Keita et les Kaméra parmi les plus connues des tribus malinké d'où serait issue la nation mandingue.",
+            "formAsWritten": "Keita",
+            "actors": [
+              {
+                "name": "Joseph Gallieni",
+                "role": "officier français, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Voyage au Soudan français (Haut-Niger et pays de Ségou), 1879-1881",
+                "author": "Joseph Gallieni",
+                "year": 1885,
+                "url": "https://archive.org/details/voyageausoudanfr00gall",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 584",
+                "notes": "Hachette, 1885. Lu sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Récit d'un officier de l'expédition coloniale française, à lire comme tel."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1879,
+              "to": 1885,
+              "label": "Voyage de 1879-1881 (récit publié en 1885)"
+            },
+            "statement": "Le nom Keïta apparaît, écrit Kéita, dans le récit de voyage du capitaine Gallieni, qui présente Mambi, chef de Niagassola, comme membre de « l'illustre famille des Kéita ». C'est la plus ancienne trace écrite de ce nom que le projet connaît. Le clan qu'il désigne existait déjà avant elle.",
+            "formAsWritten": "Kéita",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Joseph Gallieni",
+                "role": "officier français, auteur du récit"
+              },
+              {
+                "name": "Mambi",
+                "role": "chef de Niagassola"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Voyage au Soudan français (Haut-Niger et pays de Ségou), 1879-1881",
+                "author": "Joseph Gallieni",
+                "year": 1885,
+                "url": "https://archive.org/details/voyageausoudanfr00gall",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 302",
+                "notes": "Hachette, 1885. Lu sur l'exemplaire numérisé d'archive.org le 9 octobre 2026. Récit d'un officier de l'expédition coloniale française, à lire comme tel."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Keïta viendrait de ke, « l'héritage », et ta, « prendre » : selon un récit, il aurait été donné à Lauali Simbo, devenu chef de son village, quand des enfants lui sont nés, tandis que son frère prenait le nom de Konaté. Ce récit est rapporté sans lieu ni informateur dans le mémoire d'E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Keïta",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Keïta viendrait de celui de la ville de Kita, selon une explication que le mémoire d'E. A. Bogacheva juge sans preuve convaincante.",
+            "hypothesisGroup": "origine du nom Keïta",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapportée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Keïta serait la forme abrégée du nom des descendants d'un roi du Mali surnommé Allakoï, parce qu'il répondait « Alla koï », « Dieu, certes », à toute question sur la cause d'un événement, selon des traditions que rapporte Maurice Delafosse en 1912.",
+            "hypothesisGroup": "origine du nom Keïta",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83-84",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. L'autrice cite en français Maurice Delafosse, Haut-Sénégal-Niger, 1912, tome II, p. 175 ; nous n'avons pas lu Delafosse lui-même."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -74,12 +74,14 @@
       {
         "title": "Nanumba in Ghana – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/13950",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Nanumba North Municipal – City Population 2021",
         "url": "https://www.citypopulation.de/en/ghana/admin/northern/0803__nanumba_north_municipal/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Political Anthropology of History: The Case of Nanun, Northern Ghana – Sociostudies.org",
@@ -89,12 +91,14 @@
       {
         "title": "Ghana Statistical Service – Population and Housing Census 2021",
         "url": "https://www.statsghana.gov.gh",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Immigration and Refugee Board of Canada – Primary language of the Nanumba, 1996",
         "url": "https://www.ecoi.net/en/document/1209225.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       }
     ]
   }

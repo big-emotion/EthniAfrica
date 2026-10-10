@@ -9,7 +9,7 @@
       "mainName": "Gumuz",
       "selfAppellation": "Bega",
       "exonyms": ["Gumaz", "Gumz", "Shanqella", "Shanquella"],
-      "originOfExonyms": "Bega signifie simplement peuple dans la langue gumuz. Shanqella ou Shanquella est un terme collectif utilise par les Ethiopiens des hautes terres pour designer les peuples nilotiques le long de la frontiere ethio-soudanaise, mentionne des 1790 par James Bruce dans ses Voyages a la decouverte des sources du Nil.",
+      "originOfExonyms": "Bega voudrait simplement dire peuple dans la langue gumuz. Shanqella ou Shanquella est un terme collectif utilise par les Ethiopiens des hautes terres pour designer les peuples nilotiques le long de la frontiere ethio-soudanaise, mentionne des 1790 par James Bruce dans ses Voyages a la decouverte des sources du Nil.",
       "whyProblematic": "Le terme Shanqella est considere pejoratif car il etait employe par les peuples des hautes terres (Amhara, Agaw) qui asservissaient les Gumuz et autres peuples des basses terres. Il efface les identites individuelles de chaque peuple.",
       "contemporaryUsage": "Gumuz est l'appellation officielle en Ethiopie. La region Benishangul-Gumuz porte leur nom. Bega est l'auto-denomination dans la langue vernaculaire.",
       "linguisticFamily": "FLG_NILOSAHARIENNE",
@@ -92,7 +92,8 @@
       {
         "title": "Gumuz Language (GUK) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/guk/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Wolde-Selassie Abbute, Gumuz and Highland Resettlers – Ethiopian Studies, 2004",
@@ -102,12 +103,14 @@
       {
         "title": "Bender, M. L. – Gumuz: A Sketch of Grammar and Lexicon, Afrika und Ubersee, 62-1, 1979, p. 38-69",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ahland, Colleen – A grammar of Northern and Southern Gumuz (these de PhD), University of Oregon, 2004",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

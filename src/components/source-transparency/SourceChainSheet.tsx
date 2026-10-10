@@ -11,13 +11,12 @@ import {
 import Link from "next/link";
 
 import { FlagTarget } from "@/components/flags/FlagTarget";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { cn } from "@/lib/utils";
 import { useRouteLanguage } from "@/hooks/use-language";
 import { formatDate } from "@/lib/languageTag";
 import { getSourceRoute } from "@/lib/routing";
-import { sourceStandingLabel } from "@/lib/glossaire/vocabularies";
 import type { Language } from "@/types/shared";
-import { toSourceTier, type SourceTier } from "@/types/sources";
 import { sourceTransparencyCopy } from "@/lib/i18n/copy/sourceTransparency";
 import type {
   SearchEvidenceAssertion,
@@ -47,7 +46,7 @@ export type SourceChainSheetProps = {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   assertion: Assertion;
-  /** Flat source list when the assertion has a single position. Grouped by tier in UI. */
+  /** Flat source list when the assertion has a single position. */
   sources: Source[];
   /** Multi-perspective grouping per FR24. When provided, takes precedence over `sources`. */
   positions?: PositionGroup[];
@@ -55,6 +54,12 @@ export type SourceChainSheetProps = {
   revisionUrl?: string;
   /** Anchor id for the source chip (e.g. "chip-paragraph-3"). */
   anchorId: string;
+  /**
+   * A key to the mark that opened the sheet, shown after the sources. The
+   * source diamond passes the meaning of its colours (ETNI-2015); the other
+   * openers have no colour to explain and pass nothing.
+   */
+  legend?: React.ReactNode;
   /**
    * Cloudflare Turnstile public site key, threaded down from a Server
    * Component. Required together with `assertion.id` to enable the live
@@ -190,25 +195,6 @@ function useUrlAnchorSync(
 /*  Helpers                                                                    */
 /* -------------------------------------------------------------------------- */
 
-type SourceStanding = SourceTier | "needs_review";
-
-function groupByTier(sources: Source[]): Record<SourceStanding, Source[]> {
-  const out: Record<SourceStanding, Source[]> = {
-    official: [],
-    referenced: [],
-    unverified: [],
-    needs_review: [],
-  };
-  for (const s of sources) {
-    // An untiered source keeps its own bucket. Everything else unrecognised
-    // still reads as unverified rather than crashing on an undefined one.
-    const standing: SourceStanding =
-      s.tier === "needs_review" ? "needs_review" : toSourceTier(s.tier);
-    out[standing].push(s);
-  }
-  return out;
-}
-
 /**
  * Returns the URL only if it parses to an `http:` or `https:` scheme.
  * Defends against `javascript:` or `data:` schemes coming from contributor
@@ -268,8 +254,7 @@ function SourceItem({
       className="space-y-1 rounded-md border border-[var(--afh-border,var(--country-border,#e5e7eb))] bg-[var(--afh-surface,var(--country-surface,#fff))] p-3"
     >
       <div className="flex items-start justify-between gap-2">
-        {/* min-w-0 lets a long title wrap instead of pushing the standing
-            label off a 320 px sheet. */}
+        {/* min-w-0 lets a long title wrap on a 320 px sheet. */}
         <p className="min-w-0 break-words text-afh-small font-medium text-[var(--afh-fg,var(--country-fg,#111827))]">
           {/* The number the fiche's bibliography gave this source. It is the
               only place a reader sees the two numbering schemes together —
@@ -285,13 +270,10 @@ function SourceItem({
           )}
           {source.title}
         </p>
-        <span
-          data-testid={`source-tier-${source.id}`}
-          className="shrink-0 rounded-full bg-[var(--afh-muted,var(--country-muted,#f3f4f6))] px-2 py-0.5 text-afh-caption font-medium text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]"
-        >
-          {sourceStandingLabel(source.tier, language)}
-        </span>
       </div>
+      {source.sourceKind && (
+        <SourceKindBadge kind={source.sourceKind} language={language} />
+      )}
       <p className="text-afh-caption text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]">
         {[source.author, source.year, source.page].filter(Boolean).join(" · ")}
       </p>
@@ -356,40 +338,15 @@ function SourceItem({
   );
 }
 
-function TierGroup({
-  language,
-  tier,
-  sources,
-}: {
-  language: Language;
-  tier: SourceStanding;
-  sources: Source[];
-}) {
-  if (sources.length === 0) return null;
-  return (
-    <div data-testid={`tier-group-${tier}`} className="space-y-2">
-      <h4 className="text-afh-eyebrow font-semibold uppercase tracking-wide text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]">
-        {sourceStandingLabel(tier, language)}
-      </h4>
-      <ul className="space-y-2">
-        {sources.map((s) => (
-          <SourceItem key={s.id} language={language} source={s} />
-        ))}
-      </ul>
-    </div>
-  );
-}
-
 /**
- * Confirmed sources first, then everything else behind one sentence that says
- * why it is there (REQ-174). Nothing is filtered: a weak source is shown under
- * its own label, never dropped, because refusing it is the colonial filter
- * DEC-055 exists to remove.
+ * Every source, in the order the assertion cites them, with reviewed oral
+ * narratives under their own heading. No source is filtered out (REQ-174):
+ * refusing a weak one is the colonial filter DEC-055 exists to remove.
  *
- * A contested assertion renders one list per position, and each carries its
- * own introduction. The sentence marks where that list stops being confirmed,
- * so a single copy hoisted above every position would either sit above
- * confirmed sources or lie far from the second position's unconfirmed ones.
+ * Nor is any ranked or labelled by tier (doctrine §1.1, operator ruling
+ * 2026-10-08): the sheet used to group sources under tier headings and
+ * introduce the unconfirmed ones with a sentence, which told the reader the
+ * tier three times over. The tier stays in `Source` for the API and admin.
  */
 function SourceList({
   language,
@@ -399,26 +356,18 @@ function SourceList({
   sources: Source[];
 }) {
   const copy = sourceTransparencyCopy[language].sourceChain;
+  const cited = sources.filter((s) => !s.reviewedNarrative);
   const reviewedNarratives = sources.filter((s) => s.reviewedNarrative);
-  const grouped = groupByTier(sources.filter((s) => !s.reviewedNarrative));
-  const unconfirmedCount =
-    grouped.unverified.length + grouped.needs_review.length;
 
   return (
     <div className="space-y-4">
-      {/* `needs_review` closes the list rather than joining the tiers: it is
-          the sources nobody has classified, and ranking them among the three
-          would place a judgement where none was made. */}
-      <TierGroup
-        language={language}
-        tier="official"
-        sources={grouped.official}
-      />
-      <TierGroup
-        language={language}
-        tier="referenced"
-        sources={grouped.referenced}
-      />
+      {cited.length > 0 ? (
+        <ul className="space-y-2">
+          {cited.map((s) => (
+            <SourceItem key={s.id} language={language} source={s} />
+          ))}
+        </ul>
+      ) : null}
       {reviewedNarratives.length > 0 ? (
         <div data-testid="reviewed-narratives-group" className="space-y-2">
           <h4 className="text-afh-eyebrow font-semibold uppercase tracking-wide text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]">
@@ -431,24 +380,6 @@ function SourceList({
           </ul>
         </div>
       ) : null}
-      {unconfirmedCount > 0 ? (
-        <p
-          data-testid="sources-unconfirmed-intro"
-          className="text-afh-small text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]"
-        >
-          {copy.unconfirmedIntro}
-        </p>
-      ) : null}
-      <TierGroup
-        language={language}
-        tier="unverified"
-        sources={grouped.unverified}
-      />
-      <TierGroup
-        language={language}
-        tier="needs_review"
-        sources={grouped.needs_review}
-      />
     </div>
   );
 }
@@ -467,6 +398,7 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
   openFlagCount = 0,
   revisionUrl,
   anchorId,
+  legend,
 }) => {
   const variant = useSheetVariant();
   const reducedMotion = usePrefersReducedMotion();
@@ -538,30 +470,10 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
           ) : null}
         </section>
 
-        {/* 2. Confidence */}
-        <section
-          data-testid="section-confidence"
-          className="rounded-md bg-[var(--afh-muted,var(--country-muted,#f9fafb))] p-3"
-        >
-          {assertion.confidenceScore !== undefined ? (
-            <div className="flex items-baseline justify-between">
-              <span className="text-afh-eyebrow font-semibold uppercase tracking-wide text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]">
-                {copy.confidence}
-              </span>
-              <span className="text-afh-h3 font-semibold text-[var(--afh-fg,var(--country-fg,#111827))]">
-                {Math.round(assertion.confidenceScore * 100)}%
-              </span>
-            </div>
-          ) : null}
-          <p className="mt-1 text-afh-caption text-[var(--afh-fg-muted,var(--country-fg-muted,#6b7280))]">
-            {copy.confidenceSummary(
-              assertion.sourceCount,
-              assertion.lastHumanAuditAt
-            )}
-          </p>
-        </section>
+        {/* No confidence block: the score, its derivation and the « not yet
+            reviewed » line are internal (REQ-194). The sources speak. */}
 
-        {/* 3. Flags banner (conditional) */}
+        {/* 2. Flags banner (conditional) */}
         {openFlagCount > 0 ? (
           <section
             data-testid="section-flags"
@@ -572,7 +484,7 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
           </section>
         ) : null}
 
-        {/* 4. Sources */}
+        {/* 3. Sources */}
         <section data-testid="section-sources" className="space-y-4">
           <h3 className="text-afh-small font-semibold text-[var(--afh-fg,var(--country-fg,#111827))]">
             {copy.sources}
@@ -597,7 +509,9 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
           )}
         </section>
 
-        {/* 5. Revision link (conditional) */}
+        {legend}
+
+        {/* 4. Revision link (conditional) */}
         {revisionUrl && safeUrl(revisionUrl) ? (
           <section data-testid="section-revision">
             <a
@@ -611,7 +525,7 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
           </section>
         ) : null}
 
-        {/* 6. FlagTarget */}
+        {/* 5. FlagTarget */}
         <section data-testid="section-flag-target" className="pt-2">
           {/* The `assertion.id` guard stays: with no assertion there is no
               target to report. Only the Turnstile half of the condition goes. */}
@@ -629,7 +543,7 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
           ) : null}
         </section>
 
-        {/* 7. Cite affordance (appears after 4 s dwell) */}
+        {/* 6. Cite affordance (appears after 4 s dwell) */}
         <section data-testid="section-cite" className="pt-1">
           <button
             type="button"

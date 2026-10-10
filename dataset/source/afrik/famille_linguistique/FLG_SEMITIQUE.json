@@ -3,6 +3,136 @@
   "nameFr": "Sémitique",
   "nameEn": "Semitic",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom sémitique désigne une famille de langues de l'Afrique du Nord, de la Corne de l'Afrique et du Moyen-Orient, comme l'arabe, l'hébreu, l'amharique et le tigrigna. C'est un nom de savants, tiré de Sem, un fils de Noé dans la Bible ; on l'a ensuite associé à chamitique dans le nom chamito-sémitique. Les sources s'accordent sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Sémitique",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des savants européens, d'après la Bible",
+        "shortLine": "Un nom de savants tiré de Sem, fils de Noé dans la Bible, pour l'arabe, l'hébreu, l'amharique et leurs parents.",
+        "periodLabel": "Depuis 1781",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom éthio-sémitique désigne, selon Taddesse Tamrat, les nombreuses langues sémitiques d'Éthiopie. Il écrit que l'idée d'une arrivée de ces langues depuis le sud de l'Arabie, après 700 avant notre ère, ne paraît plus plausible.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "T. Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 460"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom sémitique désigne pour Joseph Greenberg une des cinq branches de la famille afro-asiatique, au même rang que les autres. Elle réunit l'akkadien, l'hébreu, l'araméen, l'arabe, le sudarabique et les langues sémitiques d'Éthiopie, comme le guèze, le tigrigna et l'amharique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 329-331"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "Le nom sémitique est adopté à la fin du XVIIIe siècle par des savants européens, parce que la plupart des peuples qui parlent ces langues comptent dans la Bible parmi les descendants de Sem, selon Marcel Cohen. Cohen renvoie au chapitre 10 de la Genèse.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les langues du monde, chapitre « Langues chamito-sémitiques »",
+                "author": "Marcel Cohen",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 83"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1781,
+              "to": 1781,
+              "label": "1781, selon Joseph Greenberg"
+            },
+            "statement": "Le nom sémitique est introduit en 1781 par August Ludwig von Schlözer, selon Joseph Greenberg, qui renvoie à un texte de Schlözer paru cette année-là. Nous n'avons pas pu lire ce texte de 1781. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "August Ludwig von Schlözer",
+                "role": "a proposé le nom sémitique dans un article de 1781, selon Joseph Greenberg"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 324, note 6"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1601,
+              "to": 1700,
+              "label": "XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "On remarque alors, avec les descriptions du guèze et de l'amharique par le savant allemand Hiob Ludolf, que ces langues d'Éthiopie sont parentes de l'hébreu, de l'araméen et de l'arabe, selon Joseph Greenberg.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 323"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues comme l'arabe, l'amharique et le tigrinya, de l'Afrique du Nord à la Corne de l'Afrique. Le nom, formé à la fin du XVIIIe siècle, renvoie à Sem, un fils de Noé dans la Bible.",
@@ -66,12 +196,14 @@
       {
         "title": "Kitchen, Andrew ; Ehret, Christopher ; Assefa, Shiferaw ; Mulligan, Connie J. (2009) – *Bayesian phylogenetic analysis of Semitic languages identifies an Early Bronze Age origin of Semitic in the Near East*. Proceedings of the Royal Society B: Biological Sciences, vol. 276, n° 1668, p. 2703-2710. DOI: 10.1098/rspb.2009.0408",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Pagani, Luca ; Schiffels, Stephan ; Gurdasani, Deepti ; et al. (2015) – *Ethiopian genetic diversity reveals linguistic stratification and complex influences on the Ethiopian gene pool*. Nature Communications, vol. 6, article 1552. DOI: 10.1038/ncomms1552",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Schlözer, August Ludwig von (1781) – *Von den Chaldäern*. Repertorium für biblische und morgenländische Literatur, Göttingen",
@@ -101,52 +233,62 @@
       {
         "title": "Greenberg, Joseph H. (1950) – *Studies in African Linguistic Classification: IV. Chamito-Semitic*. Southwestern Journal of Anthropology, vol. 6, n° 4, p. 487-498",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Hetzron, Robert (1972) – *Ethiopian Semitic: Studies in Classification*. Journal of Semitic Studies, Monograph n° 2. Manchester: Manchester University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Diop, Cheikh Anta (1954) – *Nations nègres et culture : De l'antiquité nègre égyptienne aux problèmes culturels de l'Afrique noire d'aujourd'hui*. Paris: Présence Africaine",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Diop, Cheikh Anta (1967) – *Antériorité des civilisations nègres : Mythe ou vérité historique ?*. Paris: Présence Africaine",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Leslau, Wolf (1995) – *Reference Grammar of Amharic*. Wiesbaden: Harrassowitz Verlag",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Huehnergard, John ; Pat-El, Na'ama (2019) – *The Semitic Languages*. 2e édition. London: Routledge",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Britannica Editors (2025) – *Semitic languages*. Encyclopædia Britannica. Consulté en 2025. URL",
         "url": "https://www.britannica.com/topic/Semitic-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL International / Ethnologue (2025) – *Languages of the World*. 26e édition. Dallas: SIL International",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook (2025) – *Field Listing: Languages*. Central Intelligence Agency. Consulté en 2025",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "United Nations / UNFPA (2025) – *World Population Prospects*. United Nations Department of Economic and Social Affairs. Consulté en 2025",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Global Mission Data (2025) – *Language Portal*. Consulté en 2025",
@@ -156,12 +298,14 @@
       {
         "title": "Glottolog 5.2 – classification génétique \"Semitic [semi1276]\", 3 branches immédiates (East Semitic, Unclassified Semitic, West Semitic) ; les langues sémitiques africaines vivantes (arabe, éthiosémitique) appartiennent toutes au Sémitique occidental",
         "url": "https://glottolog.org/resource/languoid/id/semi1276",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethiopian Statistics Service / Population Census Commission (2007) – Summary and Statistical Report of the 2007 Population and Housing Census, Table 2.2/Annexe : somme des nationalités éthiosémitiques recensées (Amhara 19 867 817, Tigrie/Tigrinya 4 483 776, Guragie 1 867 350, Silte 940 766, Hareri 31 869) = 27 191 578",
         "url": "https://ess.gov.et/wp-content/uploads/2026/06/national-population-and-housing-census-report-2007.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

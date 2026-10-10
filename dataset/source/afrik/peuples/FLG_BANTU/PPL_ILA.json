@@ -8,7 +8,7 @@
       "mainName": "Ila",
       "selfAppellation": "Ba-ila",
       "exonyms": ["Ila", "Ba-Ila"],
-      "originOfExonyms": "Le terme Ila est derive de la racine bantoue zhila signifiant etre tabou ou mis a part. On retrouve des equivalents dans d'autres langues bantoues : ila en Suto, zila en Zoulou.",
+      "originOfExonyms": "Le terme Ila dériverait de la racine bantoue zhila, qui veut dire être tabou ou mis à part. On retrouve des equivalents dans d'autres langues bantoues : ila en Suto, zila en Zoulou.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Ba-ila est utilise en Zambie pour designer ce peuple vivant principalement dans le district de Namwala. Le nom Ila est aussi repandu dans la litterature ethnographique anglophone.",
       "linguisticFamily": "FLG_BANTU",
@@ -72,22 +72,26 @@
       {
         "title": "Ila in Zambia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/12208",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ila – Encyclopaedia Britannica, 1998",
         "url": "https://www.britannica.com/topic/Ila-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ila – eHRAF World Cultures, Yale University",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fq06/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Zambia Languages – Ethnologue",
         "url": "https://www.ethnologue.com/country/ZM/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

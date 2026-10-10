@@ -1,0 +1,265 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Fiche créée à partir des sources nommées ci-dessous, lues une à une. Aucune ne donne le sens du nom : ne pas en ajouter un sans source dédiée, ni étendre une affirmation au-delà de ce que sa source énonce."
+  },
+  "id": "PAT_DRAME",
+  "nameMain": "Dramé",
+  "nameSystem": "clan_name",
+  "spellings": [
+    {
+      "spelling": "Dramé",
+      "attestations": [
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["wikipedia-soninkes"]
+        }
+      ]
+    },
+    {
+      "spelling": "Drame",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["hga-iv-cissoko"]
+        }
+      ]
+    },
+    {
+      "spelling": "Daramɛ",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
+    }
+  ],
+  "transmissionMode": "other",
+  "designatedSocialUnit": "clan",
+  "origin": {
+    "oralTraditions": [
+      {
+        "claim": "Dinga, l'ancêtre légendaire des Soninké à qui la tradition orale des griots attribue la fondation du Wagadou, serait l'ancêtre des Soninké qui portent les noms Cissé, Diané, Dramé, Khouma, Sakho, Soukhouna et Touré. Le récit est rapporté sans nommer de griot ni citer de source.",
+        "claimStatus": "claimed",
+        "collection": "not-stated",
+        "context": "Récit rapporté en français dans une encyclopédie en ligne, sans source citée pour cette liste",
+        "sourceRefs": ["wikipedia-soninkes"]
+      }
+    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Les Dramé, écrits Drame, comptent parmi les plus anciens clans de la société songhay, tous d'origine soninké, avec les Ture, Sylla, Tunkara, Cissé, Jakhite et Jawara. La synthèse ne donne aucun sens au nom.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hga-iv-cissoko"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "Le dictionnaire des noms de clan mandingues enregistre Daramɛ comme nom de clan, sans lui donner de sens. Son entrée Wago, l'une des trois grandes subdivisions des Soninké, rattachée au Wagadou, compte Drame parmi ses noms de clan.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["bamadaba-jamuw"]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_SONINKE",
+      "status": "attested",
+      "sourceRefs": ["hga-iv-cissoko", "bamadaba-jamuw"]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "MLI",
+      "status": "attested",
+      "sourceRefs": ["hga-iv-cissoko"]
+    },
+    {
+      "countryId": "SEN",
+      "status": "supposed",
+      "sourceRefs": ["wikipedia-soninkes"]
+    }
+  ],
+  "alliances": [],
+  "casteOrSocialFunction": null,
+  "bearers": [],
+  "homonyms": [],
+  "sources": [
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet lu le 9 octobre 2026. L'entrée Daramɛ l'enregistre comme nom de clan, sans variante, sans statut et sans sens. L'entrée Wago, dont la note est en russe, présente le Wago comme l'une des trois grandes subdivisions des Soninké, dont le berceau serait le Wagadou, et compte Drame parmi ses noms de clan ; la traduction de cette note est la nôtre. Le fichier ne donne pas la légende de ses abréviations de provenance, que nous ne lisons donc pas."
+    },
+    {
+      "sourceKey": "hga-iv-cissoko",
+      "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 230 : « Les plus anciens étaient d'origine soninke (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara) ». Le chapitre ne donne aucun sens au nom."
+    },
+    {
+      "sourceKey": "wikipedia-soninkes",
+      "title": "Soninkés — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sonink%C3%A9s",
+      "tier": "unverified",
+      "source_kind": "encyclopedia",
+      "notes": "Article consulté le 9 octobre 2026. La section « Mythe des origines » attribue à la tradition orale des griots soninkés le récit de Dinga et la liste des noms de ses descendants, sans citer de source pour cette liste. La section sur les patronymes reprend une liste de Makhtar Diouf, chercheur à l'IFAN (Sénégal, les ethnies et la nation, Dakar, NEAS, 1998, p. 70-71), que nous n'avons pas lue."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "alliances",
+      "reason": "Les sources lues ne nomment aucun nom avec lequel Dramé serait lié par une parenté à plaisanterie : l'entrée Daramɛ du dictionnaire des noms de clan mandingues n'en donne pas."
+    },
+    {
+      "fieldPath": "casteOrSocialFunction",
+      "reason": "L'entrée Daramɛ du dictionnaire des noms de clan mandingues ne donne aucun statut social, et les autres sources lues n'en attachent pas au nom."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "Nous n'avons pas encore lu de source biographique sur un porteur de ce nom. Le marabout soninké Mamadou Lamine Dramé, résistant à la colonisation au XIXe siècle, n'est cité que par une encyclopédie en ligne parmi les sources lues."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "Les sources lues rapportent toutes le nom au même ensemble de clans soninké ; aucune ne distingue une lignée homonyme d'origine séparée."
+    },
+    {
+      "fieldPath": "transmissionMode",
+      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission, et aucune des sources lues ne dit comment ce nom-ci se transmet."
+    }
+  ],
+  "nameHistory": {
+    "summary": "Le nom Dramé est un nom de clan soninké. On l'écrit aussi Drame, et Daramɛ en bambara. Les sources lues disent à quels groupes il appartient, mais aucune n'en donne le sens ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Dramé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan soninké, compté parmi les plus anciens ; aucune source lue n'en donne le sens.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dramé figure parmi les noms de famille que Makhtar Diouf, chercheur à l'IFAN, donne pour caractéristiques d'une origine soninké, parfois lointaine, selon l'article Soninkés de Wikipédia.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Soninkés — Wikipédia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://fr.wikipedia.org/wiki/Sonink%C3%A9s",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article consulté le 9 octobre 2026. La section « Mythe des origines » attribue à la tradition orale des griots soninkés le récit de Dinga et la liste des noms de ses descendants, sans citer de source pour cette liste. La section sur les patronymes reprend une liste de Makhtar Diouf, chercheur à l'IFAN (Sénégal, les ethnies et la nation, Dakar, NEAS, 1998, p. 70-71), que nous n'avons pas lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dramé désigne un clan soninké. Le dictionnaire des noms de clan mandingues l'enregistre sous la forme Daramɛ sans lui donner de sens, et aucune autre source lue n'en propose.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet lu le 9 octobre 2026. L'entrée Daramɛ l'enregistre comme nom de clan, sans variante, sans statut et sans sens. L'entrée Wago, dont la note est en russe, présente le Wago comme l'une des trois grandes subdivisions des Soninké, dont le berceau serait le Wagadou, et compte Drame parmi ses noms de clan ; la traduction de cette note est la nôtre. Le fichier ne donne pas la légende de ses abréviations de provenance, que nous ne lisons donc pas."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 230",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 230 : « Les plus anciens étaient d'origine soninke (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara) ». Le chapitre ne donne aucun sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1100,
+              "to": 1599,
+              "label": "Société songhay, du XIIe au XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Dramé, écrit Drame, compte parmi les plus anciens clans de la société songhay, tous d'origine soninké, selon Sékéné Mody Cissoko.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 230",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 230 : « Les plus anciens étaient d'origine soninke (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara) ». Le chapitre ne donne aucun sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dramé, écrit Drame, figure parmi les noms de clan du Wago, l'une des trois grandes subdivisions des Soninké, dont le berceau serait le Wagadou, selon le dictionnaire des noms de clan mandingues.",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet lu le 9 octobre 2026. L'entrée Daramɛ l'enregistre comme nom de clan, sans variante, sans statut et sans sens. L'entrée Wago, dont la note est en russe, présente le Wago comme l'une des trois grandes subdivisions des Soninké, dont le berceau serait le Wagadou, et compte Drame parmi ses noms de clan ; la traduction de cette note est la nôtre. Le fichier ne donne pas la légende de ses abréviations de provenance, que nous ne lisons donc pas."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Drame",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      },
+      {
+        "nameText": "Daramɛ",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bam",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      }
+    ]
+  }
+}

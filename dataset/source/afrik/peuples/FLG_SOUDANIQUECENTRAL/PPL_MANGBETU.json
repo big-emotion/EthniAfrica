@@ -13,7 +13,7 @@
         "Kingbetu",
         "Monbuttu (forme ancienne utilisée par Schweinfurth)"
       ],
-      "originOfExonyms": "Le terme Mangbetu (Nemangbetu dans la langue) est l'ethnonyme propre du peuple. Les formes Mambetto et Monbuttu sont des transcriptions européennes du 19e siècle, notamment celle de Georg Schweinfurth (1870). Le terme Kingbetu est une autre variante documentée dans les sources coloniales.",
+      "originOfExonyms": "Le peuple se nomme Mangbetu, ou Nemangbetu dans sa langue. Les Européens du XIXe siècle ont transcrit ce nom sous les formes Mambetto et Monbuttu, notamment Georg Schweinfurth en 1870. Les sources coloniales emploient aussi Kingbetu.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Mangbetu est universellement adopté dans les sources académiques et populaires. Il désigne à la fois le peuple, sa langue et son style artistique distinctif, reconnaissable notamment par la représentation des têtes allongées (lipombo) dans les objets d'art.",
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
@@ -99,12 +99,14 @@
       {
         "title": "Ethnologue (SIL International) — Mangbetu (mdj)",
         "url": "https://www.ethnologue.com/language/mdj/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Smarthistory — Figurative Harp (Domu), Mangbetu peoples",
         "url": "https://smarthistory.org/figurative-harp-domu/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Khan Academy — Figurative Harp (Domu) (Mangbetu peoples)",
@@ -119,17 +121,20 @@
       {
         "title": "Encyclopaedia Africana — Nabiembali",
         "url": "https://encyclopaediaafricana.com/nabiembali/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "African History Extra — Kingdoms at the forest's edge: a history of Mangbetu (ca. 1750-1895)",
         "url": "https://www.africanhistoryextra.com/p/kingdoms-at-the-forests-edge-a-history",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "The Metropolitan Museum of Art — Figurative Harp (Domu)",
         "url": "https://www.metmuseum.org/art/collection/search/319553",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

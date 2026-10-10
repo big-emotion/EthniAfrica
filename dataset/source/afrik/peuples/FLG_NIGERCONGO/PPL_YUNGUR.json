@@ -21,7 +21,7 @@
         "Purra",
         "Lala (pour la sous-variete nord)"
       ],
-      "originOfExonyms": "Le nom Yungur est a l'origine un exonyme donne par les voisins de ce peuple. Il est aujourd'hui regulierement utilise par les Bena eux-memes lorsqu'ils s'expriment dans d'autres langues. Le terme Lala est utilise pour les Bena du nord (sous-groupe autour de Yang et Bodwai) mais n'est pas recommande. Purra est un terme general pour les Bena du nord.",
+      "originOfExonyms": "Les voisins des Bena leur ont donné le nom Yungur. Les Bena l'emploient aujourd'hui régulièrement lorsqu'ils s'expriment dans d'autres langues. Lala désigne les Bena du nord, autour de Yang et de Bodwai, mais les sources en déconseillent l'usage. Purra est un nom général pour les Bena du nord.",
       "whyProblematic": "La coexistence de plusieurs noms (Yungur, Bena, Bena-Yungur) peut preter a confusion. Depuis les travaux de Kleinewillinghöfer (1993), la denomination Bena-Yungur est privilegiee par les linguistes pour designer l'ensemble dialectal, afin de distinguer les Bena-Yungur des Lala qui se nomment aussi Bena.",
       "contemporaryUsage": "Yungur est le nom courant utilise dans les medias nigerians et les publications administratives de l'Etat d'Adamawa. Le terme Bena est utilise par la communaute elle-meme. La chieftaincy Yungur a ete restauree recemment avec l'intronisation du 26e Gubo Yungur en 2025.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -92,22 +92,26 @@
       {
         "title": "Adamawa Language Projects – Bena-Mboi or Yungur Group, Kleinewillinghöfer 2011",
         "url": "https://www.blogs.uni-mainz.de/fb07-adamawa/adamawa-languages/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "LLACAN-CNRS – AdaGram Bena-Yungur",
         "url": "https://llacan.cnrs.fr/AdaGram/bena-yungur.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "PeopleGroups.org – Yungur of Nigeria, PG014199",
         "url": "https://peoplegroups.org/people_groups/pg014199/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Yungur, Binna in Nigeria",
         "url": "https://joshuaproject.net/people_groups/16071",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Knight Media – The Yungur Chiefdom after 6 decades of loss, 2025",
@@ -117,7 +121,8 @@
       {
         "title": "Fact Check News – Yungur Chiefdom: Our Heritage, Our Future, 2025",
         "url": "https://factchecknews.com.ng/2025/01/01/yungur-chiefdom-our-heritage-our/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "press"
       }
     ]
   }

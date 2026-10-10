@@ -14,7 +14,7 @@
         "Loango (en reference au royaume)",
         "Bafiote (terme utilise par les missionnaires du 19e siecle)"
       ],
-      "originOfExonyms": "Le terme Vili, atteste des le 17e siecle sous la forme Mobili (pluriel Mobilis en portugais), derive du mot Piri (nom du territoire d'origine dans le Loango). Une personne de Piri etait appelee Mbanza Loango, d'ou Muvili par syncopation. Le terme Fiote (du portugais feitiço ou du mot local pour noir) est considere comme pejoratif et abandonné. Bavili est la forme bantou au pluriel.",
+      "originOfExonyms": "Le terme Vili, atteste des le 17e siecle sous la forme Mobili (pluriel Mobilis en portugais), deriverait du mot Piri (nom du territoire d'origine dans le Loango). Une personne de Piri etait appelee Mbanza Loango, d'ou Muvili par syncopation. Le terme Fiote (du portugais feitiço ou du mot local pour noir) est considere comme pejoratif et abandonné. Bavili est la forme bantou au pluriel.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Vili est aujourd'hui le nom propre du peuple. Bavili est utilise dans les contextes anthropologiques et historiques. La langue est appellee civili (ou tshivili). Les Vili se definissent comme les heritiers du royaume de Loango.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -111,37 +111,44 @@
       {
         "title": "Britannica — Kingdom of Loango",
         "url": "https://www.britannica.com/place/Kingdom-of-Loango",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica — Vili people",
         "url": "https://www.britannica.com/topic/Vili-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL ISO 639-3 — Vili (vif)",
         "url": "https://iso639-3.sil.org/code/vif",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Vili language (vif)",
         "url": "https://www.ethnologue.com/language/vif/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Vili, Fioti in Congo, Republic of the",
         "url": "https://joshuaproject.net/people_groups/15792/CF",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "African History Extra — A history of the Loango kingdom (ca.1500-1883)",
         "url": "https://www.africanhistoryextra.com/p/a-history-of-the-loango-kingdom-ca1500",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "101 Last Tribes — Vili people",
         "url": "https://www.101lasttribes.com/tribes/vili.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

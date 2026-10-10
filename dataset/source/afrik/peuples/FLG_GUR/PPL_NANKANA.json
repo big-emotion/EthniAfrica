@@ -101,27 +101,32 @@
       {
         "title": "101 Last Tribes - Frafra / Nankana people",
         "url": "https://www.101lasttribes.com/tribes/nankana.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Modern Ghana - The History And Facts Of The Nankana/Frafra Culture",
         "url": "https://www.modernghana.com/news/1186377/the-history-and-facts-of-the-nankanafrafra-cultur.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Ethnologue - Farefare (gur)",
         "url": "https://www.ethnologue.com/language/gur/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog - Farefare",
         "url": "https://glottolog.org/resource/languoid/id/fare1241",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Nankansi in Ghana",
         "url": "https://joshuaproject.net/people_groups/15214",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

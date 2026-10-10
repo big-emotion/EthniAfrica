@@ -14,7 +14,7 @@
         "Kriolu kauberdianu (en langue créole)",
         "Kabuverdiano (variante orthographique)"
       ],
-      "originOfExonyms": "Le terme Crioulo dérive du portugais crioulo, désignant originellement les esclaves africains nés dans les colonies portugaises, puis les personnes de descendance mixte africaine et européenne. Au Cap-Vert, il s'est progressivement appliqué à toute la population de l'archipel, devenant un marqueur identitaire national inclusif plutôt qu'un marqueur ethnique discriminant.",
+      "originOfExonyms": "Le terme Crioulo viendrait du portugais crioulo, désignant originellement les esclaves africains nés dans les colonies portugaises, puis les personnes de descendance mixte africaine et européenne. Au Cap-Vert, il s'est progressivement appliqué à toute la population de l'archipel, devenant un marqueur identitaire national inclusif plutôt qu'un marqueur ethnique discriminant.",
       "whyProblematic": "Le terme créole peut être perçu comme réducteur car l'identité cap-verdienne est complexe, mêlant des contributions africaines (Mandingue, Wolof, Fulani, Sérère, Balanta, Temne) et européennes (portugaise principalement). La question du rattachement identitaire africain ou européen a été un enjeu politique lors de l'indépendance (1975) et dans les débats sur l'officialisation du kriolu.",
       "contemporaryUsage": "Kriolu est la langue maternelle de la quasi-totalité des Cap-Verdiens et le symbole de l'identité nationale. Depuis 2005, une résolution gouvernementale prépare son officialisation (encore non finalisée en 2025). Dans la diaspora mondiale, le kriolu est un marqueur identitaire fort maintenu de génération en génération.",
       "linguisticFamily": "FLG_CREOLE",
@@ -117,17 +117,20 @@
       {
         "title": "UNFPA — Cabo Verde Population 2025",
         "url": "https://www.unfpa.org/data/world-population/CV",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "International Kreol Magazine — Creole Culture in Cape Verde",
         "url": "https://kreolmagazine.com/creole-culture-in-cape-verde-a-blend-of-africa-and-europe/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Al Jazeera — The story of morna: Cape Verde's music of displacement and return",
         "url": "https://www.aljazeera.com/features/2021/5/23/morna-the-music-of-displacement-and-return",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Brava News — Cape Verde Launches Global Survey to Map Diaspora (2025)",
@@ -137,12 +140,14 @@
       {
         "title": "JSTOR Daily — Cape Verde's Dilemma(s)",
         "url": "https://daily.jstor.org/cape-verdes-dilemmas/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Ethnologue — Cape Verdean Creole (kea)",
         "url": "https://www.ethnologue.com/language/kea/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

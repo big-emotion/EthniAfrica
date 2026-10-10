@@ -91,17 +91,20 @@
       {
         "title": "Kenya National Bureau of Statistics – Kenya Population and Housing Census 2019",
         "url": "https://www.knbs.or.ke/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Ethnologue – Kiembu (ebu)",
         "url": "https://www.ethnologue.com/language/ebu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CityPopulation – Embu County",
         "url": "https://www.citypopulation.de/en/kenya/sub/admin/14__embu/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "StatsKenya – Tribe and Ethnicity in Kenya",
@@ -111,7 +114,8 @@
       {
         "title": "Blue Gecko – Embu and Mbeere introduction, Traditional Music and Cultures of Kenya",
         "url": "http://www.bluegecko.org/kenya/tribes/embu/index.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

@@ -15,7 +15,7 @@
         "Tebu (terme générique pour Teda et Daza ensemble)",
         "Tubu (variante)"
       ],
-      "originOfExonyms": "Le terme Toubou (ou Tebu, Tubu) est le nom générique désignant les deux branches du peuple : Teda (nord) et Daza (sud). En vieux Tebu, tou désigne les montagnes du Tibesti (touda) et bou signifie sang en kanembu, donnant Toubou : les gens du Tibesti ou gens du même sang venus du Tibesti. Tibbu est l'appellation arabe historique. Les Teda préfèrent l'autoappellation Teda (peuple des rochers en vieux Tebu, en référence au Tibesti).",
+      "originOfExonyms": "Le terme Toubou (ou Tebu, Tubu) est le nom générique désignant les deux branches du peuple : Teda (nord) et Daza (sud). En vieux Tebu, tou désignerait les montagnes du Tibesti (touda) et bou voudrait dire sang en kanembu, ce qui donnerait Toubou : les gens du Tibesti ou gens du même sang venus du Tibesti. Tibbu est l'appellation arabe historique. Les Teda préfèrent l'autoappellation Teda (peuple des rochers en vieux Tebu, en référence au Tibesti).",
       "whyProblematic": "Le terme Teda est parfois utilisé pour l'ensemble des Toubou (Teda + Daza) dans la littérature française, ce qui peut créer une confusion. En anglais, Teda désigne spécifiquement le sous-groupe septentrional. La frontière linguistique et culturelle entre Teda et Daza est réelle mais les deux groupes partagent une origine commune.",
       "contemporaryUsage": "Teda est utilisé spécifiquement pour désigner le sous-groupe septentrional des Toubou, concentré dans et autour du massif du Tibesti (Tchad nord, Libye sud, Niger est). Les Teda maintiennent une identité distincte des Daza, notamment par leur territoire et leur accent sur l'institution du derde (chef spirituel).",
       "linguisticFamily": "FLG_SAHARIEN",
@@ -110,17 +110,20 @@
       {
         "title": "Britannica — Teda people",
         "url": "https://www.britannica.com/topic/Teda",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Tedaga language (tuq)",
         "url": "https://joshuaproject.net/languages/tuq",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project — Tubu Teda in Chad",
         "url": "https://joshuaproject.net/people_groups/15316/CD",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Amara Accessibility Media — Tedaga language now supported on Amara",
@@ -130,17 +133,20 @@
       {
         "title": "SIL Ethnologue — Tedaga language (tuq)",
         "url": "https://www.ethnologue.com/language/tuq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Country Studies US — Chad",
         "url": "https://countrystudies.us/chad/19.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Chad, Libya, Niger",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

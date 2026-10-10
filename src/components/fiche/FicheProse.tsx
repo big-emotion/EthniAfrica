@@ -45,7 +45,7 @@ export interface FicheProseProps {
   text: string;
   /** Carried by every paragraph and list item, so a surface keeps its dress. */
   paragraphClassName?: string;
-  /** Placed at the end of the last paragraph — the field's confidence chip. */
+  /** Placed at the end of the last paragraph — the field's source review chip. */
   trailing?: ReactNode;
   language?: Language;
 }

@@ -111,12 +111,14 @@
       {
         "title": "Joshua Project – Mbunda in Angola, 2025",
         "url": "https://joshuaproject.net/people_groups/13643/AO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Mbunda in Zambia, 2025",
         "url": "https://joshuaproject.net/people_groups/13643/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Mbunda Royal Establishment Zambia – The History of the Mbunda People",
@@ -126,12 +128,14 @@
       {
         "title": "Qiraat Africa – Mbunda people of Angola and Zambia",
         "url": "https://qiraatafrican.com/en/19885/mbunda-people-of-angola-and-zambia/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Glottolog — Mbunda (mbun1249)",
         "url": "https://glottolog.org/resource/languoid/id/mbun1249",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

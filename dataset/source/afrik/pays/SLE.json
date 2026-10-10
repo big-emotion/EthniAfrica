@@ -4,8 +4,350 @@
   "nameEn": "Sierra Leone",
   "nameOfficial": "République de Sierra Leone (Republic of Sierra Leone)",
   "summary": "La Sierra Leone porte un nom espagnol donné par un Portugais : « Sierra Leona », les montagnes du lion, que Pedro de Sintra crut y reconnaître en 1462. Freetown fut fondée en 1787 pour y installer des esclaves affranchis. Temne, Mende, Limba et Krio y font coexister traditions atlantiques, mandé et créoles.",
-  "etymology": "Le nom \"Sierra Leone\" vient de l'espagnol \"Sierra Leona\" (montagnes du lion), donné par l'explorateur portugais Pedro de Sintra en 1462. Il aurait vu des montagnes qui ressemblaient à des lions rugissants, d'où le nom \"Serra Lyoa\" (montagnes du lion) en portugais, qui est devenu \"Sierra Leone\" en espagnol puis en anglais. Le nom a été conservé par les Britanniques lors de la colonisation.",
+  "etymology": "Le nom \"Sierra Leone\" viendrait de l'espagnol \"Sierra Leona\" (montagnes du lion), un nom que l'explorateur portugais Pedro de Sintra aurait donné en 1462. Il aurait vu des montagnes qui ressemblaient à des lions rugissants, d'où le nom \"Serra Lyoa\" (montagnes du lion) en portugais, qui est devenu \"Sierra Leone\" en espagnol puis en anglais. Le nom a été conservé par les Britanniques lors de la colonisation.",
   "nameOriginActor": "L'explorateur portugais Pedro de Sintra a nommé la région \"Serra Lyoa\" (montagnes du lion) en 1462, en référence aux montagnes qui ressemblaient à des lions rugissants. Le nom a été anglicisé en \"Sierra Leone\" par les Britanniques.",
+  "nameHistory": {
+    "summary": "Le nom Sierra Leone désigne un pays d'Afrique de l'Ouest, la République de Sierra Leone. Il vient d'un nom portugais, Serra Leoa, donné à une montagne de la côte ; on le trouve aussi écrit Serra Liona. Le pays s'est appelé Colonie et Protectorat de la Sierra Leone jusqu'en 1961. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Sierra Leone",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom portugais donné à une montagne de la côte, devenu celui du pays.",
+        "periodLabel": "Écrit dès 1505-1508 ; nom de l'État depuis 1961",
+        "accounts": [
+          {
+            "period": {
+              "from": 1961,
+              "to": null,
+              "label": "Depuis le 27 avril 1961"
+            },
+            "era": "modern",
+            "statement": "Le nom Sierra Leone est celui de l'État depuis le 27 avril 1961 : ce jour-là, la colonie et le protectorat de la Sierra Leone forment ensemble un pays « sous le nom de Sierra Leone », selon la loi britannique sur l'indépendance.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sierra Leone Independence Act 1961",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1961,
+                "url": "https://www.legislation.gov.uk/ukpga/Eliz2/9-10/16/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1(1)",
+                "notes": "Texte de la loi, lu sur le site officiel de la législation britannique. Le 27 avril 1961, « the Sierra Leone Colony and the Sierra Leone Protectorate » forment ensemble un dominion « under the name of Sierra Leone »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances. Ligne Sierra Leone : indépendante le 27/IV/1961, puissance coloniale la Grande-Bretagne."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Sierra Leone",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/sierra-leone",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Les États-Unis reconnaissent la Sierra Leone à son indépendance, le 27 avril 1961."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sierra Leone désigne aujourd'hui un État ; il a d'abord désigné une montagne de la côte, puis le pays alentour. Les auteurs anciens ne s'accordent pas sur ce qui lui a valu ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, 3e édition",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1954,
+                "url": "https://archive.org/details/dli.ernet.447856",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 118-119",
+                "notes": "Troisième édition, Lisbonne, Académie portugaise d'histoire, 1954, introduction et notes de Damião Peres, lue dans l'exemplaire numérisé. Livre I, chapitre « Da Serra Leoa » : « E muitos cuidam que este nome de Serra Leoa lhe foi posto por aqui haver leões, e isto é falso ; porque Pero de Sintra [...] por ver ũa terra tão áspera e brava, lhe pôs nome Leoa, e não por outra causa. E isto se não deve duvidar, porque é verdade porque ele mo disse assi »."
+              },
+              {
+                "title": "Il viaggio di Giovan Leone e le navigazioni di Alvise da Ca da Mosto, di Pietro di Cintra, di Annone, di un piloto portoghese e di Vasco di Gama, quali si leggono nella raccolta di Giovambattista Ramusio",
+                "author": "Giovanni Battista Ramusio (éditeur)",
+                "year": 1837,
+                "url": "https://archive.org/details/bub_gb_gJ0cSI4DWEcC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 200",
+                "notes": "Venise, 1837, réédition du recueil de Ramusio, lue dans l'exemplaire numérisé. Navigation de Pietro di Cintra : « alla detta montagna, Serra-Liona ; e questo per il gran rumor che di continuo si sente per causa de' tuoni che sono sempre nella cima ch'è circondata da nebbie »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1507,
+              "to": 1507,
+              "label": "1507"
+            },
+            "era": "polity",
+            "statement": "Le nom Sierra Leone est écrit montagna Liona, la montagne Lionne, dans le récit d'Alvise Cadamosto sur le voyage de Pietro di Cintra, imprimé à Vicence en 1507 ; le texte ne dit pas pourquoi ce nom a été choisi.",
+            "formAsWritten": "montagna Liona",
+            "actors": [
+              {
+                "name": "Pietro di Cintra (Pero de Sintra)",
+                "role": "navigateur portugais dont le voyage est raconté"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Paesi novamente retrovati et Novo Mondo da Alberico Vesputio Florentino intitulato",
+                "author": "Fracanzano da Montalboddo (éditeur)",
+                "year": 1507,
+                "url": "https://archive.org/details/paesinouamentere00unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre II, vue 106 de l'exemplaire numérisé",
+                "notes": "Vicence, 1507, lu dans l'exemplaire numérisé. Récit d'Alvise Cadamosto sur le voyage de Pietro di Cintra : « ala dicta montagna li messeno nome la montagna Liona », sans en donner la raison."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "Vers 1505-1508"
+            },
+            "era": "polity",
+            "statement": "Le nom Sierra Leone apparaît sous une forme proche, Serra Leoa, dans l'Esmeraldo de situ orbis de Duarte Pacheco Pereira, qui y décrit la montagne, ses habitants et son mouillage. C'est la plus ancienne trace de ce nom que le projet connaît. La montagne et les peuples de cette côte existaient bien avant ce nom.",
+            "formAsWritten": "Serra Leoa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, 3e édition",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1954,
+                "url": "https://archive.org/details/dli.ernet.447856",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 118-119",
+                "notes": "Troisième édition, Lisbonne, Académie portugaise d'histoire, 1954, introduction et notes de Damião Peres, lue dans l'exemplaire numérisé. Livre I, chapitre « Da Serra Leoa » : « E muitos cuidam que este nome de Serra Leoa lhe foi posto por aqui haver leões, e isto é falso ; porque Pero de Sintra [...] por ver ũa terra tão áspera e brava, lhe pôs nome Leoa, e não por outra causa. E isto se não deve duvidar, porque é verdade porque ele mo disse assi »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "Pierre Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 354",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. Le chapitre date l'Esmeraldo de situ orbis de 1506-1508."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1460,
+              "label": "Avant les années 1460"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Sierra Leone, des Manden, les Kono et les Vai, vivent déjà dans la zone forestière de l'actuelle Sierra Leone et du Libéria, avant l'arrivée des Portugais dans les années 1460, selon Yves Person. Sur la côte vivent aussi les Temne.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers – premiers contacts avec les Portugais – de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 346",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. Les Kono et les Vai sont des Manden établis en zone forestière en Sierra Leone et au Libéria avant la découverte portugaise, « c'est-à-dire aux années 1460 »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers – premiers contacts avec les Portugais – de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 337",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. Au sud du mont Kakoulima commence le domaine des Temne ; à l'arrivée des Portugais, ils tiennent encore la région depuis la hauteur de Conakry."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "Rapportée vers 1505-1508"
+            },
+            "era": "polity",
+            "statement": "Le nom Sierra Leone viendrait de l'aspect de cette terre, si âpre et sauvage que Pero de Sintra l'aurait appelée Leoa, la lionne, selon Duarte Pacheco Pereira, qui dit le tenir de Sintra lui-même.",
+            "hypothesisGroup": "origine du nom Sierra Leone",
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, 3e édition",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1954,
+                "url": "https://archive.org/details/dli.ernet.447856",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 118-119",
+                "notes": "Troisième édition, Lisbonne, Académie portugaise d'histoire, 1954, introduction et notes de Damião Peres, lue dans l'exemplaire numérisé. Livre I, chapitre « Da Serra Leoa » : « E muitos cuidam que este nome de Serra Leoa lhe foi posto por aqui haver leões, e isto é falso ; porque Pero de Sintra [...] por ver ũa terra tão áspera e brava, lhe pôs nome Leoa, e não por outra causa. E isto se não deve duvidar, porque é verdade porque ele mo disse assi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "Rapportée vers 1505-1508"
+            },
+            "era": "polity",
+            "statement": "Le nom Sierra Leone viendrait des lions qu'on y trouverait, selon une opinion répandue que rapporte Duarte Pacheco Pereira, qui la juge fausse.",
+            "hypothesisGroup": "origine du nom Sierra Leone",
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, 3e édition",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1954,
+                "url": "https://archive.org/details/dli.ernet.447856",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 118-119",
+                "notes": "Troisième édition, Lisbonne, Académie portugaise d'histoire, 1954, introduction et notes de Damião Peres, lue dans l'exemplaire numérisé. Livre I, chapitre « Da Serra Leoa » : « E muitos cuidam que este nome de Serra Leoa lhe foi posto por aqui haver leões, e isto é falso ; porque Pero de Sintra [...] por ver ũa terra tão áspera e brava, lhe pôs nome Leoa, e não por outra causa. E isto se não deve duvidar, porque é verdade porque ele mo disse assi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Texte de Cadamosto, édition de Ramusio"
+            },
+            "statement": "Le nom Sierra Leone viendrait du grand bruit du tonnerre qu'on entend sans cesse au sommet de la montagne, toujours entouré de nuages, selon le récit de Cadamosto dans l'édition de Giovanni Battista Ramusio.",
+            "hypothesisGroup": "origine du nom Sierra Leone",
+            "sources": [
+              {
+                "title": "Il viaggio di Giovan Leone e le navigazioni di Alvise da Ca da Mosto, di Pietro di Cintra, di Annone, di un piloto portoghese e di Vasco di Gama, quali si leggono nella raccolta di Giovambattista Ramusio",
+                "author": "Giovanni Battista Ramusio (éditeur)",
+                "year": 1837,
+                "url": "https://archive.org/details/bub_gb_gJ0cSI4DWEcC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 200",
+                "notes": "Venise, 1837, réédition du recueil de Ramusio, lue dans l'exemplaire numérisé. Navigation de Pietro di Cintra : « alla detta montagna, Serra-Liona ; e questo per il gran rumor che di continuo si sente per causa de' tuoni che sono sempre nella cima ch'è circondata da nebbie »."
+              },
+              {
+                "title": "Relation des voyages à la côte occidentale d'Afrique d'Alvise de Ca' da Mosto, 1455-1457",
+                "author": "Charles Schefer (éditeur)",
+                "year": 1895,
+                "url": "https://archive.org/details/relationdesvoya00mostgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 188",
+                "notes": "Paris, Ernest Leroux, 1895, lu dans l'exemplaire numérisé. Traduction française ancienne du même passage : la montagne est nommée Serre-Lionne « à cause du grand bruit qui s'y fait par l'horrible son et éclatement des tonnerres »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Rapportée par Olfert Dapper"
+            },
+            "statement": "Le nom Sierra Leone viendrait du bruit des vagues sur un écueil de la côte, qui ressemble au rugissement d'une lionne, selon Olfert Dapper, cité par Charles Schefer ; Dapper y ajoute le tonnerre des sommets.",
+            "hypothesisGroup": "origine du nom Sierra Leone",
+            "sources": [
+              {
+                "title": "Relation des voyages à la côte occidentale d'Afrique d'Alvise de Ca' da Mosto, 1455-1457",
+                "author": "Charles Schefer (éditeur)",
+                "year": 1895,
+                "url": "https://archive.org/details/relationdesvoya00mostgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 189, note 1",
+                "notes": "Paris, Ernest Leroux, 1895, lu dans l'exemplaire numérisé. Note de l'éditeur citant la Description de l'Afrique d'Olfert Dapper, p. 246 : l'origine du mot serait que « les flots donnant sur un des écueils qui est sur cette côte, font un bruit [...] qui ressemble fort au rugissement d'une lionne »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Colonie et Protectorat de la Sierra Leone",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "periodLabel": "De 1808 à 1961",
+        "accounts": [
+          {
+            "period": {
+              "from": 1808,
+              "to": 1961,
+              "label": "De 1808 au 27 avril 1961"
+            },
+            "era": "colonial",
+            "statement": "Le nom Colonie et Protectorat de la Sierra Leone réunit les deux territoires que la loi britannique de 1961 appelle « Sierra Leone Colony » et « Sierra Leone Protectorate ». La colonie remonte à 1808, quand la Couronne britannique se charge de la Sierra Leone après l'échec d'un établissement philanthropique fondé vingt ans plus tôt, selon Serge Daget.",
+            "aspect": "usage",
+            "formAsWritten": "Sierra Leone Colony",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 4 : L'abolition de la traite des esclaves",
+                "author": "Serge Daget",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 105",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, lu dans l'exemplaire numérisé. En 1808, la Couronne britannique se charge de la Sierra Leone, après l'échec de l'établissement philanthropique fondé vingt ans plus tôt."
+              },
+              {
+                "title": "Sierra Leone Independence Act 1961",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1961,
+                "url": "https://www.legislation.gov.uk/ukpga/Eliz2/9-10/16/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1(1)",
+                "notes": "Texte de la loi, lu sur le site officiel de la législation britannique. Le 27 avril 1961, « the Sierra Leone Colony and the Sierra Leone Protectorate » forment ensemble un dominion « under the name of Sierra Leone »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1787,
+              "to": 1808,
+              "label": "À partir de 1787"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sierra Leone désigne, après 1787, la terre que les Temne doivent céder à une colonie britannique, base de la lutte contre la traite, selon Yves Person.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 24 : États et peuples de Sénégambie et de haute Guinée",
+                "author": "Yves Person",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 697",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, lu dans l'exemplaire numérisé. Les Temne ont dû céder la Sierra Leone, après 1787, à la colonie britannique qui sert de base à la croisière anti-esclavagiste."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -208,22 +550,26 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Sierra Leone",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Sierra Leone",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements sierra-léonais",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples de Sierra Leone",
@@ -238,12 +584,14 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Sierra Leone",
         "url": "https://www.unfpa.org/data/world-population/SL",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

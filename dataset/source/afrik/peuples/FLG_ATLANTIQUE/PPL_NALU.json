@@ -93,27 +93,32 @@
       {
         "title": "Ethnologue, Nalu (naj)",
         "url": "https://www.ethnologue.com/language/naj",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project, Nalu in Guinea",
         "url": "https://joshuaproject.net/people_groups/13930/GV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project, Nalu in Guinea-Bissau",
         "url": "https://joshuaproject.net/people_groups/13930/PU",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bouju, Stephane. Historique sur les populations cotieres de Guinee et de Sierra Leone. IRD Editions, OpenEdition Books, 2013",
         "url": "https://books.openedition.org/irdeditions/3745",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "101 Last Tribes, Nalu people",
         "url": "https://www.101lasttribes.com/tribes/nalu.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

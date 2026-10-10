@@ -77,12 +77,14 @@
       {
         "title": "Nyamwanga in Zambia – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/13901/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Namwanga language – Chalo Chatu, Zambia online encyclopedia",
         "url": "https://chalochatu.org/Namwanga_language",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "African Cultures by Young Africans: Namwanga Tribe – Afrikan Princess",
@@ -92,12 +94,14 @@
       {
         "title": "Mwanga of Zambia – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg015612/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Nyamwanga – Glottolog 5.3, code nyam1275",
         "url": "https://glottolog.org/resource/languoid/id/nyam1275",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

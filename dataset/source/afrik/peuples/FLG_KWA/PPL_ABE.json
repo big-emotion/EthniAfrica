@@ -87,33 +87,39 @@
         "title": "Rezo Ivoire — Les Abés",
         "url": "https://rezoivoire.net/ivoire/patrimoine/3653/les-abes.html",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Cité pour les graphies Abés, Abbeys, Abbays et Abès, pour le nom baoulé Béssouffouè et pour la révolte de 1910, dite « révolte du peuple Abbé »."
       },
       {
         "title": "Rezo Ivoire — L'histoire des Abbey",
         "url": "https://www.rezoivoire.net/ivoire/patrimoine/2888/lhistoire-des-abbey.html",
         "tier": "unverified",
+        "source_kind": "community",
         "notes": "Récit d'origine rapporté comme une légende, cité pour la graphie Abbey."
       },
       {
         "title": "Abe, Abbey – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10141/IV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Cote d'Ivoire people groups – Joshua Project, 2025",
         "url": "https://joshuaproject.net/countries/iv",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Global Recordings Network – Abe ISO aba",
         "url": "https://globalrecordings.net/af/country/iv",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Cote d'Ivoire Languages",
         "url": "https://www.ethnologue.com/country/CI/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

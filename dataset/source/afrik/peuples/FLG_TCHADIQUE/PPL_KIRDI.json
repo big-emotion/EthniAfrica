@@ -14,8 +14,8 @@
         "Matchoubé (terme fulfulde en Adamaoua, signifiant esclave ou serviteur)",
         "Kerdies (terme anglophone du major Denham, 1826)"
       ],
-      "originOfExonyms": "Le terme Kirdi est une deformation locale du mot kurdes, utilise de maniere pejorative par les populations islamisees (Peuls, Mandaras, Kotokos) pour designer les populations non musulmanes. Certains auteurs le derivent de l'arabe pour singe. D'autres etymologies le relient au terme signifiant paiyen par opposition aux fideles de l'islam. La premiere mention dans la litterature occidentale date du recit de voyage du major Denham en 1826 sous la forme Kerdies.",
-      "whyProblematic": "Le terme Kirdi est fondamentalement exonyme et pejoratif, impose par les vainqueurs islamisateurs. Il recouvre une realite composite : plus de 40 ethnies differentes sans lien linguistique ou culturel commun entre elles, dont la seule unite est d'avoir resiste a l'islam. Depuis les annees 1990, le mouvement politique Kirditude a reapproprie le terme pour en faire un outil de mobilisation politique face a la domination peule.",
+      "originOfExonyms": "Le terme Kirdi est une deformation locale du mot kurdes, utilise de maniere pejorative par les populations islamisees (Peuls, Mandaras, Kotokos) pour designer les populations non musulmanes. Pour certains auteurs, il dériverait du mot arabe pour singe. D'autres étymologies le rattacheraient au mot qui veut dire païen, par opposition aux fidèles de l'islam. La premiere mention dans la litterature occidentale date du recit de voyage du major Denham en 1826 sous la forme Kerdies.",
+      "whyProblematic": "Les conquérants qui cherchaient à imposer l'islam ont donné le nom méprisant Kirdi à plus de 40 peuples différents. Les sources les présentent comme des groupes sans langue ni culture communes, réunis sous ce nom parce qu'ils avaient résisté à l'islamisation. Depuis les années 1990, le mouvement Kirditude reprend ce nom pour rassembler ces populations politiquement face à la domination peule.",
       "contemporaryUsage": "Le terme Kirdi est utilise dans les contextes administratifs et academiques camerounais. Il designe collectivement les peuples non islamises du Nord-Cameroun et du nord-est du Nigeria. Le CIA World Factbook estime les Kirdi a 11% de la population du Cameroun. Le mouvement Kirditude utilise le terme comme identite politique revendicatrice depuis 1991.",
       "linguisticFamily": "FLG_TCHADIQUE",
       "ethnoLinguisticGroup": "Ensemble composite : principalement langues tchadiques (Afro-asiatique) et langues Adamawa (Niger-Congo)",
@@ -130,27 +130,32 @@
       {
         "title": "Qiraat Africa, The Kirdi People of West and Central Africa – Qiraat Africa, aout 2024",
         "url": "https://qiraatafrican.com/en/12847/the-kirdi-people-of-west-central-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "CIA World Factbook, Cameroon – CIA 2024",
         "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Jean Hurault, Quelques aspects de la structure sociale des montagnards kirdi du nord Cameroun – Bulletin de l'IFAN, Dakar, serie B, 1958, p.111-122",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Jeanne-Francoise Vincent, Sur les traces du major Denham : le Nord-Cameroun il y a cent cinquante ans – Cahiers d'etudes africaines, Paris, 1978, vol.18(4), n.72, p.575-606",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue, Mafa (maf) – SIL International 2024",
         "url": "https://www.ethnologue.com/language/maf/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

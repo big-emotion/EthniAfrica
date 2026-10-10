@@ -4,6 +4,8 @@
 
 ## Contexte
 
+> **2026-10-08:** `SourcesLine` and the source sheet name each source by its type (oral tradition, book, archive…; `ai_generated` as « Synthèse à vérifier »), never by its tier — no « Référencée » badge returns (`../editorial/doctrine.md` §1.1).
+
 EthniAfrica répond à une question : **d'où vient ce nom ?** La page de résultats actuelle empile jusqu'à 16 blocs (8 800 px pour « peul »), son verdict ne répond pas (« Nous documentons ce nom »), le badge « Référencée · voir les sources » est répété après chaque phrase, et la répartition géographique n'arrive pas à la page. L'opérateur a validé le 2026-10-06 une maquette (https://claude.ai/artifact/53thPpv2nKxPXRb1VXyM7m, 7 réponses + 1 filtre actif) et ces règles :
 
 - Filtres en onglets **sous le champ de recherche** : « Tout » = la réponse ; Shorts / Récits / Images / Jeux / Fiches **dynamiques** (affichés seulement s'il y a du contenu, avec leur nombre, jamais 0).

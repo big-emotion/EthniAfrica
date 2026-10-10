@@ -9,7 +9,7 @@
       "mainName": "Nyika",
       "selfAppellation": "Wenya",
       "exonyms": ["Wenya", "Nyiha", "Nyika (Malawi et Zambie)"],
-      "originOfExonyms": "Le terme Nyika designe un groupe de peuples aux identites multiples. Il existe en fait deux groupes distincts portant ce nom : (1) les Nyika (Wenya), sous-groupe des Tumbuka du nord Malawi et nord-est Zambie ; (2) les Nyika ou Nyiha de Tanzanie (Mbozi District), issus des Nyiha tanzaniens ayant migre vers le sud. La denomination Wenya est l'endonyme utilise par le groupe Tumbuka-Nyika.",
+      "originOfExonyms": "Nyika désigne deux groupes distincts. Les Nyika, qui se nomment Wenya, font partie des Tumbuka du nord du Malawi et du nord-est de la Zambie. Les Nyika ou Nyiha du district de Mbozi, en Tanzanie, sont issus de Nyiha tanzaniens qui ont migré vers le sud.",
       "whyProblematic": "Le nom Nyika est ambigu car il designe plusieurs peuples distincts : les Nyika-Tumbuka du nord Malawi/Zambie, les Nyiha de Tanzanie, et en Afrique de l'Est cotiere les peuples Mijikenda (Digo, Giryama, etc.) parfois appeles collectivement Nyika dans la litterature ancienne. La fiche presente se concentre sur le groupe Nyika (Wenya) de la Zambie du nord.",
       "contemporaryUsage": "En Zambie du nord, le terme Nyika designe le groupe Wenya, sous-ensemble culturel et linguistique des Tumbuka. Le terme est utilise dans les recensements zambiens et malawites.",
       "linguisticFamily": "FLG_BANTU",
@@ -88,22 +88,26 @@
       {
         "title": "Nyika (Malawi and Zambia) – Glottolog 5.3, ISO 639-3: nkv",
         "url": "https://glottolog.org/resource/languoid/id/nyik1246",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Nyika in Zambia – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/18985/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Tumbuka – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Tumbuka",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Nyiha, Tanzania in Zambia – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/14096/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

@@ -5,6 +5,15 @@ Consultez les fichiers `modele-peuple.json`, `modele-pays.json`, `modele-linguis
 
 ---
 
+## Editorial language
+
+For all public prose, follow the repository's
+[shared plain-language charter](../docs/editorial/reader-facing-register.md).
+Run `npm run check:editorial` before import and use the strict publication check
+for rewritten fiches. Preserve original quotations, bibliographic titles and
+African names. The canonical database importer runs the mechanical check before
+creating its database client; semantic review remains required.
+
 ## 1. Format général
 
 - Chaque fiche est un fichier `.json` valide

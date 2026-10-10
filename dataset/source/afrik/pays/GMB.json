@@ -4,8 +4,182 @@
   "nameEn": "The Gambia",
   "nameOfficial": "République de Gambie (Republic of The Gambia)",
   "summary": "La Gambie tient son nom du fleuve qui la traverse et la définit — le pays épouse ses rives. Royaumes mandinka, chefferies wolof et peuples fula s'y côtoyaient avant la colonie britannique de 1888. Griots, kora et rites d'initiation kankurang y prolongent l'héritage mandé.",
-  "etymology": "Le nom \"Gambie\" provient du fleuve Gambie qui traverse le pays. Le nom du fleuve vient probablement du portugais \"Gambia\" ou du terme local \"Kambra\" / \"Kambaa\". Les Britanniques ont adopté ce nom pour leur colonie. Le nom officiel inclut l'article \"The\" (La Gambie) pour le distinguer de la Zambie.",
+  "etymology": "Le nom \"Gambie\" viendrait du fleuve Gambie qui traverse le pays. Le nom du fleuve viendrait du portugais \"Gambia\" ou du terme local \"Kambra\" / \"Kambaa\". Les Britanniques ont adopté ce nom pour leur colonie. Le nom officiel inclut l'article \"The\" (La Gambie) pour le distinguer de la Zambie.",
   "nameOriginActor": "Le nom \"Gambie\" a été donné par les navigateurs portugais au XVe siècle en référence au fleuve Gambie. Les Britanniques ont officialisé ce nom lors de la colonisation. Le nom a été officialisé à l'indépendance en 1965.",
+  "nameHistory": {
+    "summary": "Le nom Gambie désigne un pays d'Afrique de l'Ouest, la République de Gambie, qui porte le nom du fleuve qui la traverse. En anglais, sa langue officielle, il s'écrit The Gambia. De 2015 à 2017, le pays s'est appelé officiellement République islamique de Gambie. On ne sait pas avec certitude d'où vient le nom Gambie ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Gambie",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un fleuve, écrit dès 1455, devenu celui de la colonie puis de l'État en 1965.",
+        "periodLabel": "Écrit dès 1455 ; nom de l'État depuis 1965",
+        "accounts": [
+          {
+            "period": {
+              "from": 1965,
+              "to": null,
+              "label": "Depuis le 18 février 1965"
+            },
+            "era": "modern",
+            "statement": "Le nom Gambie est celui de l'État indépendant depuis le 18 février 1965, selon l'Histoire générale de l'Afrique et l'Office of the Historian. En anglais, le pays l'écrit avec l'article, The Gambia, selon la liste des noms de pays des Nations unies.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Gambie : indépendante le 18 février 1965, puissance coloniale la Grande-Bretagne ; union avec le Sénégal dans la Confédération de Sénégambie du 1er janvier 1982 au 21 septembre 1989."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: The Gambia",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/gambia",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 10 octobre 2026. Les États-Unis reconnaissent la Gambie le 18 février 1965, jour des cérémonies de l'indépendance à Bathurst, aujourd'hui Banjul ; le pays était auparavant sous souveraineté britannique."
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordonnateur Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 40",
+                "notes": "Document de la session 2025 du Groupe d'experts, daté du 23 avril 2025, lu en ligne le 10 octobre 2026. Entrée Gambie : en anglais, langue officielle du pays, le nom s'écrit « The Gambia » et le nom complet « Republic of The Gambia », avec un renvoi à une note UNTERM du 17 février 2017 ; en français, « Gambie (la) » et « République de Gambie (la) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gambie désigne à la fois l'État et le fleuve qui le traverse : le pays porte le nom du fleuve, selon Africanews. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas trouvé d'explication assez sourcée pour la présenter ici.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Why Africa's 'smiling coast' is officially referred to as 'The' Gambia",
+                "author": "Abdur Rahman Alfa Shaban, Africanews",
+                "year": 2017,
+                "url": "https://www.africanews.com/2017/01/19/why-africa-s-smiling-coast-is-referred-to-as-the-gambia/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du 19 janvier 2017, mis à jour le 13 août 2024, lu le 10 octobre 2026. Il écrit que le pays a reçu le nom du fleuve, « The River Gambia », et que le Premier ministre de l'époque a demandé l'accord du comité chargé des noms géographiques pour garder l'article, afin que le pays ne soit pas confondu avec la Zambie. Il ne date pas cette demande."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Rapporté en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Gambie garde en anglais l'article The, comme celui du fleuve, « The River Gambia ». Le Premier ministre de l'époque a demandé qu'on le conserve, pour que le pays ne soit pas confondu avec la Zambie, rapporte Africanews.",
+            "sources": [
+              {
+                "title": "Why Africa's 'smiling coast' is officially referred to as 'The' Gambia",
+                "author": "Abdur Rahman Alfa Shaban, Africanews",
+                "year": 2017,
+                "url": "https://www.africanews.com/2017/01/19/why-africa-s-smiling-coast-is-referred-to-as-the-gambia/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du 19 janvier 2017, mis à jour le 13 août 2024, lu le 10 octobre 2026. Il écrit que le pays a reçu le nom du fleuve, « The River Gambia », et que le Premier ministre de l'époque a demandé l'accord du comité chargé des noms géographiques pour garder l'article, afin que le pays ne soit pas confondu avec la Zambie. Il ne date pas cette demande."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "Vers 1505-1508"
+            },
+            "era": "polity",
+            "statement": "Le nom Gambie est celui que les Portugais donnent au fleuve, le rio de Gâmbia, qui sépare le royaume du Jolof du grand royaume du Mandingue. Dans la langue des Mandingues, ce fleuve s'appelle Guabu, écrit Duarte Pacheco Pereira.",
+            "formAsWritten": "rio de Gâmbia",
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, livre I, chapitre 29 : du rio dos Barbacins au rio de Gâmbia",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1954,
+                "url": "https://archive.org/details/dli.ernet.534920",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 105-106",
+                "notes": "Texte portugais écrit vers 1505-1508, lu dans la troisième édition de l'Academia Portuguesa da História (Lisbonne, 1954, introduction et notes de Damião Peres), sur l'exemplaire numérisé d'archive.org. Le fleuve sépare le royaume du Jolof du grand royaume du Mandingue ; « este de Gâmbia que, também na língua dos Mandingas, há nome Guabu »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1455,
+              "to": 1455,
+              "label": "1455"
+            },
+            "era": "polity",
+            "statement": "Le nom Gambie apparaît, sous la forme Gambra, dans le récit du Vénitien Alvise Cadamosto : des riverains lui disent que c'est là « le pays de Gambra », dont le prince Henri lui avait parlé d'après des Africains emmenés en Espagne. C'est la plus ancienne trace de ce nom que le projet connaît. Le fleuve et les peuples de ses rives existaient avant lui.",
+            "formAsWritten": "Gambra",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Navegações de Luís de Cadamosto, texte italien et traduction portugaise de Giuseppe Carlo Rossi",
+                "author": "Alvise Cadamosto",
+                "year": 1944,
+                "url": "https://archive.org/details/dli.ernet.535850",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "§ 103 et 119",
+                "notes": "Lisbonne, Instituto para a Alta Cultura, 1944, tiré à part des Descobrimentos portugueses de J. Martins da Silva Marques ; lu dans l'exemplaire numérisé d'archive.org. Récit du premier voyage, parti du cap Saint-Vincent le 22 mars 1455. Au § 103, le prince Henri a appris par des Africains emmenés en Espagne qu'il existe, au-delà du Sénégal, « un altro regno chiamato Gambra », riche en or. Au § 119, des riverains disent aux navigateurs que « quello era il paese di Gambra » et leur donnent le nom du fleuve, que l'auteur dit avoir oublié."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République islamique de Gambie",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 2015 à janvier 2017",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2017,
+              "label": "De 2015 à janvier 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom République islamique de Gambie est le nom officiel du pays jusqu'en janvier 2017. Le président Adama Barrow annonce alors que le mot « islamique », ajouté en 2015, ne figurera plus dans le nom officiel, selon Al Jazeera, repris par le Daily Graphic.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Barrow removes 'Islamic' from Gambia's official name",
+                "author": "Al Jazeera, repris par le Daily Graphic (Ghana)",
+                "year": 2017,
+                "url": "https://graphic.com.gh/international/africa/barrow-removes-islamic-from-gambia-s-official-name.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Dépêche publiée le 29 janvier 2017, lue le 10 octobre 2026. Elle rapporte que le nom officiel du pays ne contiendra plus le mot « Islamic », ajouté en 2015 sous la présidence de Yahya Jammeh, et que le pays est une république, « not the Islamic republic »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Gambia Colony and Protectorate (1888-1965)"],
@@ -73,7 +247,7 @@
         "mainRegion": "Toutes les régions de la Gambie, majoritaires",
         "languages": ["Mandinka (mnk", "ISO 639-3)", "anglais"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Mandinka\" ou \"Mandiŋka\" est l'auto-appellation. \"Mandingue\" est l'exonyme français accepté. \"Mandingo\" est un terme historique qui peut avoir une connotation péjorative dans certains contextes et doit être évité."
+        "appellationRemarks": "Les personnes concernées se nomment Mandinka ou Mandiŋka. Mandingue est un nom français donné de l'extérieur et accepté. Mandingo est un terme historique qui peut être méprisant dans certains contextes ; il est donc à éviter."
       },
       {
         "name": "Fula / Peul",
@@ -89,7 +263,7 @@
         "mainRegion": "Toutes les régions de la Gambie",
         "languages": ["Fulfulde (ful", "ISO 639-3)", "anglais"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Fulɓe\" est l'auto-appellation. \"Peul\" et \"Fulani\" sont des exonymes acceptés. \"Fellata\" peut avoir une connotation péjorative dans certains contextes et doit être évité."
+        "appellationRemarks": "Le peuple se nomme Fulɓe. Peul et Fulani sont aussi des noms acceptés, donnés de l'extérieur. Fellata peut être méprisant dans certains contextes ; il est donc à éviter."
       },
       {
         "name": "Wolof",
@@ -209,22 +383,26 @@
       {
         "title": "SIL Ethnologue – Languages of The Gambia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – The Gambia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Gambie",
         "url": "https://www.unfpa.org/data/world-population/GM",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Recensements gambiens",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples de la Gambie",
@@ -239,12 +417,14 @@
       {
         "title": "CIA World Factbook – The Gambia (ethnic groups, 2013 est.)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

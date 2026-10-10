@@ -261,7 +261,7 @@
     },
     {
       "sourceKey": "hga-v-izard-kizerbo",
-      "title": "Histoire générale de l'Afrique, V : L'Afrique du XVIe au XVIIIe siècle — chapitre 12, Du Niger à la Volta",
+      "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
       "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
       "tier": "official",
       "source_kind": "intergovernmental",
@@ -281,5 +281,243 @@
       "fieldPath": "homonyms",
       "reason": "Coulibaly transcrit le mandingue Kulibali, que le dictionnaire des jamuw écrit aussi Kùlubàli et que l'Histoire générale de l'Afrique donne sous la forme Kurubari. Aucune de ces graphies ne recouvre une lignée d'origine distincte dans les sources consultées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Coulibaly est un nom de clan mandingue, transmis par le père, que ses porteurs écrivent Kulibali en bambara. D'autres graphies existent : Kùlubàli, Kurubari et Koulibali. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Coulibaly",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bam",
+        "namedBy": null,
+        "shortLine": "Un nom de clan mandingue, écrit Kulibali en bambara ; son origine est discutée.",
+        "usedIn": ["bam"],
+        "periodLabel": "Écrit depuis la fin du XVIIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Coulibaly est un nom de clan, ce que les Mandingues appellent un jamu. Le dictionnaire des noms de clan du Bamadaba le définit ainsi sans lui donner de sens ; son origine reste discutée, et chaque explication est présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Kùlibàli",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 9 octobre 2026 : l'entrée Kùlibàli, datée de 2014, donne la forme Kùlubàli et la définit comme un nom de clan, sans lui donner de sens."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Coulibaly est porté chez les Bambara, les Malinké, les Minianka, les Peuls, les Kagoro et les Soninké, selon le dictionnaire des noms de clan du Bamadaba. Il s'est aussi répandu, du XVIIIe au XXe siècle, chez d'autres peuples comme les Bobo et les Sénoufo, selon E. A. Bogacheva.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Kùlibàli",
+                "notes": "Fichier complet consulté le 9 octobre 2026 : l'entrée Kùlibàli range le nom chez les Bambara, les Malinké, les Minianka, les Peuls, les Kagoro et les Soninké."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 95-96",
+                "notes": "Mémoire de licence écrit en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov et relu par V. Vydrin. Ce n'est pas une publication relue par des pairs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1796,
+              "to": 1796,
+              "label": "Février 1796 (récit publié en 1799), à Kemmou, capitale du Kaarta"
+            },
+            "era": "polity",
+            "statement": "Le nom Coulibaly a une forme proche, Koorabarri, chez l'explorateur Mungo Park, dans le nom du roi du Kaarta qui le reçoit, « Daisy Koorabarri ». Le lien avec Coulibaly passe par deux sources : la dynastie du Kaarta a été fondée par un Coulibaly, selon E. A. Bogacheva, et Kurubari est une autre forme de Koulibali, selon Michel Izard et Joseph Ki-Zerbo. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Daisy Koorabarri",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Mungo Park",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Daisy Koorabarri",
+                "role": "roi du Kaarta qui reçoit le voyageur"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa: Performed under the Direction and Patronage of the African Association, in the Years 1795, 1796, and 1797",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://www.gutenberg.org/ebooks/74976",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 94",
+                "notes": "Londres, G. Nicol, 1799 ; récit du voyage de 1795-1797. Page repérée par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg, consultée le 9 octobre 2026. Page 94, à Kemmou, capitale du Kaarta, le 12 février 1796 : « The king, whose name was Daisy Koorabarri »."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 95",
+                "notes": "Mémoire de licence écrit en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov et relu par V. Vydrin. Ce n'est pas une publication relue par des pairs. Page 95 : la première mention du nom située vers le milieu du XVIIIe siècle, sans document cité, et les Coulibaly à la tête de la dynastie des Massassi du Kaarta."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 372",
+                "notes": "UNESCO, dir. B. A. Ogot, 1999. Page 372 : la forme Kurubari donnée à côté de Koulibali."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Rapportée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Coulibaly viendrait de kulu, « pirogue », et de bali, « sans » : il rappellerait le récit des frères Baramangolo et Niangolo, ancêtres des dynasties bambara, qui passent le fleuve sans pirogue grâce à un énorme silure, selon Michel Izard et Joseph Ki-Zerbo. Ces auteurs rapportent ce récit et ajoutent qu'il existe d'autres explications du nom.",
+            "hypothesisGroup": "origine du nom Coulibaly",
+            "actors": [
+              {
+                "name": "Baramangolo et Niangolo",
+                "role": "les deux frères du récit de la traversée"
+              },
+              {
+                "name": "Mamari Coulibaly, dit Biton (1712-1755)",
+                "role": "arrière-petit-fils de Baramangolo selon la même source"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 372, note 7, et p. 374",
+                "notes": "UNESCO, dir. B. A. Ogot, 1999. Page 372 : le récit des deux frères qui passent le fleuve sans pirogue grâce à un énorme silure ; note 7 : l'explication par kulu, « pirogue », et bali, privatif, avec la mention qu'il en existe d'autres ; page 374 : Mamari Koulibali, arrière-petit-fils de Baramangolo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Proposée en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Coulibaly, « sans pirogue », désignerait au contraire des ancêtres qui n'ont pas traversé le fleuve et sont restés sur la rive nord du Niger, selon E. A. Bogacheva. Elle rapporte aussi des récits qui font venir les Coulibaly de la rive sud, parfois de Kong, et leur font passer le fleuve sur un silure, sans nommer qui les raconte.",
+            "hypothesisGroup": "origine du nom Coulibaly",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 96",
+                "notes": "Mémoire de licence écrit en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov et relu par V. Vydrin. Ce n'est pas une publication relue par des pairs. Les récits qu'elle résume viennent, selon elle, des matériaux réunis par V. Vydrine et A. Davydov, sans lieu ni conteur nommés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Proposée en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Coulibaly viendrait, par ses formes Kudubali ou Kurubali, de kuluba, « la grande colline », comme la colline de Koulouba à Bamako, selon E. A. Bogacheva. Elle juge cette lecture très plausible, tout en notant que le nom ne se rattache avec certitude à aucun nom de lieu.",
+            "hypothesisGroup": "origine du nom Coulibaly",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 96",
+                "notes": "Mémoire de licence écrit en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov et relu par V. Vydrin. Ce n'est pas une publication relue par des pairs."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kulibali",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bam",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Entrée de dictionnaire datée de 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Kulibali est écrit « Kùlibàli », avec la forme « Kùlubàli », par le dictionnaire des noms de clan du Bamadaba, qui note les tons du bambara.",
+            "formAsWritten": "Kùlibàli",
+            "actors": [
+              {
+                "name": "Corpus bambara de référence",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Kùlibàli",
+                "notes": "Fichier complet consulté le 9 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

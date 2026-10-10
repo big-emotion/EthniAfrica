@@ -8,7 +8,7 @@
       "mainName": "Vidunda",
       "selfAppellation": "Vidunda",
       "exonyms": ["Ndunda", "Wavidunda"],
-      "originOfExonyms": "Ndunda est une forme alternative utilisee dans certaines sources scientifiques. Wavidunda est la forme swahilie avec le prefixe Wa- (peuple). Le nom vient du massif montagneux des monts Uvidunda (ou Vidunda) dans le district de Kilosa.",
+      "originOfExonyms": "Ndunda est une forme alternative utilisee dans certaines sources scientifiques. Wavidunda est la forme swahilie avec le prefixe Wa- (peuple). Le nom viendrait du massif montagneux des monts Uvidunda (ou Vidunda) dans le district de Kilosa.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Vidunda est utilise en Tanzanie pour designer ce groupe ethnique des montagnes de Kilosa. Le terme est egalement utilise pour nommer leur langue (Chividunda) et leur territoire (Ward Vidunda).",
       "linguisticFamily": "FLG_BANTU",
@@ -74,22 +74,26 @@
       {
         "title": "Legere, K. – Vidunda (G38) as an Endangered Language?, ACAL 37, 2007",
         "url": "http://www.lingref.com/cpp/acal/37/paper1594.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog – Vidunda (vidu1238)",
         "url": "https://glottolog.org/resource/languoid/id/vidu1238",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project – Vidunda in Tanzania",
         "url": "https://www.joshuaproject.net/people_groups/15789",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org – Vidunda of Tanzania PG015055",
         "url": "https://peoplegroups.org/people_groups/pg015055/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

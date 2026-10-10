@@ -9,11 +9,11 @@
       "selfAppellation": "Ovaherero",
       "exonyms": [
         "Herero (terme europeen courant)",
-        "OvaHerero (forme longue de l'endonyme)"
+        "OvaHerero (forme longue du nom employé par le peuple lui-même)"
       ],
-      "originOfExonyms": "Le nom Herero signifie litteralement 'possesseur de betail' en otjiherero, reflet de leur identite pastorale. Ovaherero est le pluriel de OmuHerero (singulier). Les locuteurs designent leur langue Otjiherero.",
+      "originOfExonyms": "Le nom Herero voudrait dire littéralement 'possesseur de betail' en otjiherero, ce qui refléterait leur identité pastorale. Ovaherero est le pluriel de OmuHerero (singulier). Les locuteurs designent leur langue Otjiherero.",
       "whyProblematic": null,
-      "contemporaryUsage": "Ovaherero est l'endonyme collectif prefere. Herero est le terme universellement utilise en anglais, francais et dans les medias internationaux.",
+      "contemporaryUsage": "Ovaherero est le nom collectif préféré par les personnes concernées. Herero est utilisé en anglais, en français et dans les médias internationaux.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantou du sud-ouest (Zone R, Guthrie R30 - Otjiherero)",
       "historicalRegion": "Hereroland (Ehi rOvaherero) - Namibie centrale et septentrionale, regions de Kunene, Omaheke et Otjozondjupa ; presences historiques en Botswana (Ghanzi) et Angola (Namibe, Huila, Cunene)",
@@ -103,27 +103,32 @@
       {
         "title": "SIL Ethnologue - Herero language (her)",
         "url": "https://www.ethnologue.com/language/her/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Omniglot - Herero language",
         "url": "https://www.omniglot.com/writing/herero.php",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Herero language resources",
         "url": "https://joshuaproject.net/languages/her",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "BBC News - Germany recognises colonial-era Namibia genocide, 28 mai 2021",
         "url": "https://www.bbc.com/news/world-europe-57279008",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "South African History Online - Herero Revolt 1904-1907",
         "url": "https://sahistory.org.za/article/herero-revolt-1904-1907",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "JFCS Holocaust Center - Herero and Nama Genocide",
@@ -133,7 +138,95 @@
       {
         "title": "Oxford Guide to Bantu Languages - Otjiherero",
         "url": "https://academic.oup.com/book/61440/chapter/534774683",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ovaherero est celui que ce peuple se donne. On le connaît aussi sous le nom Herero. Leur histoire est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Ovaherero",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "her",
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Pluriel de OmuHerero, « possesseur de bétail » en otjiherero — reflet direct de l'identité pastorale du peuple, le bétail étant au centre de son économie et de sa culture.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "SIL Ethnologue — Herero (her)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/her/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Référence le nom de la langue otjiherero et du peuple Ovaherero ; Source également citée par la fiche du peuple Herero."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Ovaherero est le nom collectif que la communauté préfère employer pour parler d'elle-même dans ses échanges internes.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "SIL Ethnologue — Herero (her)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/her/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Référence le nom de la langue otjiherero et du peuple Ovaherero ; Source également citée par la fiche du peuple Herero."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Herero",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Usage international depuis le contact colonial du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage international depuis le contact colonial du XIXe siècle"
+            },
+            "statement": "Herero est utilisé en anglais, en français et dans les médias internationaux. Les sources consultées ne décrivent pas de sens méprisant attaché au mot lui-même. Cela ne change rien aux violences coloniales subies par ce peuple, dont le génocide des Herero et des Nama de 1904 à 1908.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "SIL Ethnologue — Herero (her)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/her/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Ethnologue référence « Herero » comme nom usuel en anglais du peuple et de la langue."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

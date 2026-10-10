@@ -84,27 +84,133 @@
       {
         "title": "Ethnologue – Gogo (gog)",
         "url": "https://www.ethnologue.com/language/gog/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "PeopleGroups.org – Gogo of Tanzania",
         "url": "https://peoplegroups.org/people_groups/pg014928/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "National Bureau of Statistics Tanzania – 2022 Population and Housing Census",
         "url": "https://www.nbs.go.tz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "101 Last Tribes – Gogo people",
         "url": "https://www.101lasttribes.com/tribes/gogo.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Kwekudee Trip Down Memory Lane – Wagogo people",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2013/12/wagogo-gogo-people-tanzanian-dancing.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gogo désigne un peuple bantou du centre de la Tanzanie, qui se nomme Wagogo, et Mgogo pour une seule personne ; son pays est l'Ugogo. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Wagogo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gog",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils portent : Wagogo au pluriel, Mgogo pour une personne, Ugogo pour leur pays.",
+        "periodLabel": "Écrit depuis 1860 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Wagogo, ou Gogo, désigne un peuple dont les membres se reconnaissent d'abord à leur clan ; les clans gogo se disent issus des peuples voisins, de tous côtés, selon l'Encyclopædia Britannica. L'origine du nom est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Gogo",
+                "author": "Encyclopædia Britannica",
+                "year": null,
+                "url": "https://www.britannica.com/topic/Gogo",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article révisé en dernier lieu par Elizabeth Prine Pauls, lu en ligne le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Wagogo apparaît par écrit dans le récit de l'explorateur Richard Burton paru en 1860, qui traverse l'Ugogo avec une caravane venue de la côte ; il écrit aussi Mgogo pour une seule personne. C'est la plus ancienne trace de ce nom que le projet connaît. Les Wagogo vivaient déjà dans l'Ugogo avant lui.",
+            "formAsWritten": "Wagogo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, vol. I",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://www.gutenberg.org/ebooks/66812",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 61, p. 303-307",
+                "notes": "Londres, Longman, Green, Longman, and Roberts. Lu dans l'édition du Projet Gutenberg, qui garde la pagination de l'original, le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Gogo serait un surnom donné de l'extérieur, sans doute par les marchands nyamwezi qui suivaient la grande route des caravanes à travers leur pays, selon l'Encyclopædia Britannica.",
+            "hypothesisGroup": "origine du nom Gogo",
+            "sources": [
+              {
+                "title": "Gogo",
+                "author": "Encyclopædia Britannica",
+                "year": null,
+                "url": "https://www.britannica.com/topic/Gogo",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article révisé en dernier lieu par Elizabeth Prine Pauls, lu en ligne le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1845,
+              "to": 1880,
+              "label": "1845-1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Gogo désigne l'un des peuples que traversent les caravanes parties de Bagamoyo ou de Sadani vers le pays nyamwezi et le lac Tanganyika, selon Isaria N. Kimambo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 276",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

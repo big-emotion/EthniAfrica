@@ -86,27 +86,32 @@
       {
         "title": "SIL Ethnologue — Sena language (seh)",
         "url": "https://www.ethnologue.com/language/seh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Central Statistical Office Zambia — Census 2022",
         "url": "https://www.zamstats.gov.zm/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "CIA World Factbook — Zambia",
         "url": "https://www.cia.gov/the-world-factbook/countries/zambia/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "101 Last Tribes — Sena people",
         "url": "http://www.101lasttribes.com/tribes/sena.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Isaacman, Allen. Mozambique: The Africanization of a European Institution. University of Wisconsin Press, 1972",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

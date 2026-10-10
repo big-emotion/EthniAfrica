@@ -10,7 +10,7 @@
       "selfAppellation": "Krakye",
       "exonyms": ["Krachi", "Krachie", "Kaakye", "Ka-akye", "Kete-Krachi"],
       "originOfExonyms": "Selon la tradition orale, lorsque les ancetres krakye voulaient quitter leurs seigneurs akyem en raison des tributs excessifs, ces derniers les teaserent en disant Ka-akye-won, signifiant ils sont devenus insolvables en akan. Ce mot a ete corrompu en Ka-Akye puis anglicise en Krachi par l'administration coloniale. Kete-Krachi est le nom de la capitale, Kete etant le quartier commercial adjacent au quartier traditionnel Krachikrom.",
-      "whyProblematic": "Le nom Krachi est une anglicisation coloniale de l'endonyme Krakye ou Kaakye. L'utilisation du nom de la ville (Kete-Krachi) pour designer le peuple entier cree parfois une confusion entre lieu et groupe ethnique.",
+      "whyProblematic": "Krachi est une adaptation anglaise, apparue à l'époque coloniale, des noms Krakye ou Kaakye employés par le peuple lui-même. L'usage du nom de la ville Kete-Krachi pour l'ensemble du peuple peut créer une confusion entre le lieu et ses habitants.",
       "contemporaryUsage": "Krachi est la designation officielle utilisee par les administrations ghaneennes et dans la litterature academique. Krakye est la forme preferred par les membres du groupe eux-memes. Kaakye est une variante orthographique parfois utilisee.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Guan (Niger-Congo, Kwa)",
@@ -76,7 +76,8 @@
       {
         "title": "National Commission on Culture Ghana – Oti Region : Krachi history and culture",
         "url": "https://ghanaculture.gov.gh/oti-region/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Krachi Dente Worship – Preface and Introduction",
@@ -86,27 +87,32 @@
       {
         "title": "Krache in Ghana – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/12832/GH",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Krachi West district population – CityPopulation.de",
         "url": "https://www.citypopulation.de/en/ghana/admin/oti/1505__krachi_west/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Krachi East Municipality – Department of Urban Roads Ghana",
         "url": "https://dur.gov.gh/oti/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Paramount Chief of Krachi Traditional Area Visits Institute of African Studies, UG, 2025",
         "url": "https://ias.ug.edu.gh/content/paramount-chief-krachi-traditional-area-visits-institute-african-studies",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog : Krache, ISO 639-3 : kye",
         "url": "https://glottolog.org/resource/languoid/id/krac1238",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

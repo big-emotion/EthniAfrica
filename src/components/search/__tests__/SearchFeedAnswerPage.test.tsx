@@ -1,3 +1,6 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
@@ -8,7 +11,8 @@ import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { ANSWER_LABELS } from "@/lib/search/__fixtures__/answerLabels";
 import { ANSWER_FIXTURES } from "@/lib/search/__fixtures__/answerFixtures";
 import { FEED_CASES } from "@/lib/search/__fixtures__/feedCases";
-import type { SearchAnswer } from "@/lib/search/answer";
+import { readAnswer, type SearchAnswer } from "@/lib/search/answer";
+import { wordNamingData } from "@/lib/supabase/queries/afrik/searchNaming";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
 import type { SearchResult } from "@/types/afrik-frontend";
 
@@ -29,6 +33,7 @@ const RESULT_TYPE: Record<string, SearchResult["type"]> = {
   language: "language",
   languageFamily: "languageFamily",
   patronyme: "patronyme",
+  word: "word",
 };
 
 function subjectOf(
@@ -132,10 +137,75 @@ describe("the answer page", () => {
   });
 
   // @req REQ-178
-  it("marks the searched form among the names without promoting it", () => {
-    renderAnswer("peul", [subjectOf(peul)]);
+  it("marks the searched form and puts it first among the names", () => {
+    const { container } = renderAnswer("peul", [subjectOf(peul)]);
 
     expect(screen.getByText("votre recherche")).toBeVisible();
+    const names = container.querySelector('[data-answer-block="names"]');
+    expect(
+      within(names as HTMLElement).getAllByRole("listitem")[0]
+    ).toHaveTextContent("Peul");
+  });
+});
+
+// Operator decision 2026-10-08 (doctrine §1.1): a reader who typed an exonym
+// and lands on a page headed by the self-name thinks they are on the wrong
+// page. Right under the heading, the page says what was searched and leads to
+// the name the people gives itself.
+// @req REQ-178
+describe("the lead from the searched name to the self-name", () => {
+  const lead = (container: HTMLElement) =>
+    container.querySelector<HTMLElement>("[data-searched-lead]");
+
+  // @req REQ-178
+  it("says what was searched and links to the people's own name, under the heading", () => {
+    const { container } = renderAnswer("Peul", [
+      subjectOf(peul, { id: "PPL_FULA" }),
+    ]);
+
+    const element = lead(container);
+    expect(element).not.toBeNull();
+    expect(element).toHaveTextContent(
+      searchFeedCopy.fr.searchedLead.searched("Peul")
+    );
+    const link = within(element).getByRole("link", {
+      name: searchFeedCopy.fr.searchedLead.self.people("Fulɓe · Pullo"),
+    });
+    expect(link).toHaveAttribute("href", expect.stringContaining("PPL_FULA"));
+    // In the subject heading's block, right after the heading.
+    const what = container.querySelector('[data-answer-block="what"]');
+    expect(what?.contains(element)).toBe(true);
+    expect(what?.querySelector("h1")?.nextElementSibling).toBe(element);
+  });
+
+  // @req REQ-178
+  it("shows nothing when the reader searched the self-name", () => {
+    const { container } = renderAnswer("Pullo", [subjectOf(peul)]);
+
+    expect(lead(container)).toBeNull();
+  });
+
+  // @req REQ-178
+  it("shows nothing for a subject that records no self-given name", () => {
+    const { container } = renderAnswer("ngala", [subjectOf(lingala)]);
+
+    expect(lead(container)).toBeNull();
+  });
+
+  // @req REQ-178
+  it("names a language's self-given form with the speakers' wording", () => {
+    const named = {
+      ...lingala,
+      names: [
+        { form: "Ngala", selfGiven: null },
+        { form: "Lingála", selfGiven: true },
+      ],
+    };
+    const { container } = renderAnswer("ngala", [subjectOf(named)]);
+
+    expect(lead(container)).toHaveTextContent(
+      searchFeedCopy.fr.searchedLead.self.language("Lingála")
+    );
   });
 });
 
@@ -611,5 +681,37 @@ describe("no block says it is empty", () => {
 
     expect(blockIds(container)).not.toContain("answer-where");
     expect(container.textContent).not.toMatch(/aucun|pas de donn/i);
+  });
+});
+
+describe("the answer page for a word fiche", () => {
+  // Built the way the search service builds it, from the corpus fiche itself.
+  const race = JSON.parse(
+    readFileSync(
+      join(process.cwd(), "dataset/source/afrik/mots/WRD_RACE.json"),
+      "utf8"
+    )
+  );
+  const naming = wordNamingData(race.id, race.nameHistory);
+  const answer = readAnswer("word", {}, race, {
+    nameRecords: naming.records,
+    evidence: naming.evidence,
+  });
+
+  // @req REQ-196
+  it("answers « race » with the word, its definition and where its name comes from", () => {
+    const { container } = renderAnswer("race", [
+      subjectOf(answer, { type: "word", id: race.id }),
+    ]);
+
+    expect(blockIds(container)).toEqual(
+      expect.arrayContaining(["answer-what", "answer-origin", "answer-names"])
+    );
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("race");
+    expect(screen.getByText("Un mot")).toBeInTheDocument();
+    expect(container).toHaveTextContent(race.definition);
+    expect(container).toHaveTextContent(
+      race.nameHistory.summary.split(" ; ")[0]
+    );
   });
 });

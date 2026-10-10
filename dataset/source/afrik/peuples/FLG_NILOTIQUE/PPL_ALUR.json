@@ -12,7 +12,7 @@
         "Aloro (variante orthographique coloniale)",
         "Alur (terme europeen adopte de l'auto-denomination)"
       ],
-      "originOfExonyms": "Le nom Alur est a la fois l'endonyme et l'exonyme : le peuple se nomme lui-meme Alur. Le terme a ete adopte tel quel par les administrateurs coloniaux britanniques et belges. Il designe l'ensemble du peuple et de son royaume (Ker Alur).",
+      "originOfExonyms": "Le peuple se nomme lui-même Alur. Les administrateurs coloniaux britanniques et belges ont repris ce nom sans le modifier. Il désigne l'ensemble du peuple et son royaume, Ker Alur.",
       "whyProblematic": "La distinction entre sous-groupes Alur des Highlands (Okoro) et des plaines lacustres (Jonam) est parfois source de tensions identitaires. La frontiere Ouganda-RDC divise le peuple Alur depuis l'epoque coloniale.",
       "contemporaryUsage": "Le terme Alur est utilise en anglais, francais et en langue alur. Le royaume Alur (Ker Alur), dont le Rwoth Ubimu reside a Kaal Atyak Winam (district de Zombo, Ouganda), est l'une des rares institutions royales africaines a ne pas avoir ete supprimee lors des reformes politiques ougandaises de 1966.",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -96,7 +96,8 @@
       {
         "title": "SIL Ethnologue — Alur language (alz)",
         "url": "https://www.ethnologue.com/language/alz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Southall, Aidan — Alur Society: A Study in Processes and Types of Domination. Cambridge : Heffer, 1953",
@@ -106,22 +107,174 @@
       {
         "title": "Glottolog — Alur",
         "url": "https://glottolog.org/resource/languoid/id/alur1250",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Uganda",
         "url": "https://www.cia.gov/the-world-factbook/countries/uganda/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Democratic Republic of the Congo",
         "url": "https://www.cia.gov/the-world-factbook/countries/congo-democratic-republic-of-the/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Joshua Project — Alur people profile",
         "url": "https://joshuaproject.net/people_groups/10023",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Alur désigne un peuple nilotique qui vit au nord et à l'ouest du lac Albert, en Ouganda et en République démocratique du Congo. Les voyageurs du XIXe siècle l'ont aussi écrit Lur et Luri. Les textes que nous avons lus n'expliquent pas d'où vient ce nom ; nous présentons plus bas ses plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Alur",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple du lac Albert, écrit Lur dès 1877 ; son origine n'est pas expliquée.",
+        "periodLabel": "Écrit dès 1877 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Alur désigne un peuple nilotique d'Ouganda et de République démocratique du Congo. La Bibliothèque nationale de France range sous ce nom d'autres formes : Alour, Aluur, Joalur, Jonam, Lur ou Luri. Les textes que nous avons lus ne disent pas d'où vient ce nom ni ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notice RAMEAU « Alur (peuple d'Afrique) »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1995,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb12486083r",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité créée en 1995, consultée le 9 octobre 2026. Elle range sous Alur les formes Alour, Alulu, Alurs, Aluur, Jo Nam, Joalur, Jonam, Lur et Luri, et classe ce peuple parmi les Nilotiques, en Ouganda et en République démocratique du Congo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1879,
+              "to": 1879,
+              "label": "Novembre et décembre 1879, près de Mahagi"
+            },
+            "era": "colonial",
+            "statement": "Le nom Alur est donné par les habitants des environs de Mahagi, à l'ouest du lac Albert, comme le nom de tout le pays qui s'étend au sud des Madi, selon les lettres d'Emin Pacha.",
+            "formAsWritten": "Lur or Alur",
+            "actors": [
+              {
+                "name": "Emin Pacha",
+                "role": "médecin et gouverneur de la province égyptienne d'Equatoria, qui note le nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Emin Pasha in Central Africa: being a collection of his letters and journals",
+                "author": "Emin Pacha (Eduard Schnitzer), éd. G. Schweinfurth, F. Ratzel, R. W. Felkin et G. Hartlaub",
+                "year": 1888,
+                "url": "https://archive.org/details/eminpashaincentr00emin",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 150",
+                "notes": "Londres, George Philip & Son, 1888, lu dans l'exemplaire numérisé sur archive.org. Même excursion de 1879, près de Mahagi : « Here also the name Lur or Alur was given as a general name to the country south of the Madi district »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1879,
+              "to": 1879,
+              "label": "Novembre 1879, à Wadelai"
+            },
+            "era": "colonial",
+            "statement": "Le nom Alur désigne chez Emin Pacha un grand pays dont le district de Wadelai, appelé Koche, n'est qu'une des subdivisions. Il appelle Aluri la langue qu'on y parle.",
+            "formAsWritten": "Lur or Alur",
+            "sources": [
+              {
+                "title": "Emin Pasha in Central Africa: being a collection of his letters and journals",
+                "author": "Emin Pacha (Eduard Schnitzer), éd. G. Schweinfurth, F. Ratzel, R. W. Felkin et G. Hartlaub",
+                "year": 1888,
+                "url": "https://archive.org/details/eminpashaincentr00emin",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 143",
+                "notes": "Londres, George Philip & Son, 1888, lu dans l'exemplaire numérisé sur archive.org. Récit d'une excursion de novembre et décembre 1879, d'abord publié dans les Petermanns Mitteilungen en 1880. Le district de Wadelai, appelé Koche, est « one of the many subdivisions of the large country of Lur or Alur » ; la langue y est appelée « Aluri »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1877,
+              "label": "Lettre du 20 août 1877"
+            },
+            "era": "polity",
+            "statement": "Le nom Alur apparaît par écrit sous la forme Lur dans une lettre d'Emin Pacha : au sud de Wadelai, sur la rive ouest du Nil, vivent les Lur, qu'il appelle quelques pages plus loin les Lur ou Luri. C'est la plus ancienne trace de ce nom que le projet connaît. Elle dit quand un voyageur l'a noté, pas depuis quand le peuple l'emploie.",
+            "formAsWritten": "the Lur",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Emin Pacha",
+                "role": "médecin au service de l'Égypte, qui remonte alors le Nil"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Emin Pasha in Central Africa: being a collection of his letters and journals",
+                "author": "Emin Pacha (Eduard Schnitzer), éd. G. Schweinfurth, F. Ratzel, R. W. Felkin et G. Hartlaub",
+                "year": 1888,
+                "url": "https://archive.org/details/eminpashaincentr00emin",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 11 et p. 15",
+                "notes": "Londres, George Philip & Son, 1888, traduction anglaise de Mrs R. W. Felkin, lue dans l'exemplaire numérisé sur archive.org. Lettre à August Petermann datée de Mruli, le 20 août 1877, d'abord publiée en allemand dans les Petermanns Mitteilungen en 1878. Page 11 : « South of Wadelai […] live the Lur ». Page 15 : « the Lur or Luri »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1866,
+              "to": 1866,
+              "label": "Récit publié en 1866"
+            },
+            "era": "polity",
+            "statement": "On parle alors du pays Koshi, sur la rive ouest du Nil à sa sortie du lac Albert, d'après ce que le roi du Bunyoro et ses gens ont dit aux voyageurs Speke et Grant, selon Samuel Baker. Emin Pacha écrira plus tard que Koshi est la prononciation shuli et nyoro de Koche, le district de Wadelai, qu'il compte dans le pays Lur.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Albert N'yanza, Great Basin of the Nile, and Explorations of the Nile Sources, vol. I",
+                "author": "Samuel W. Baker",
+                "year": 1866,
+                "url": "https://archive.org/details/albertnyanzagrea01bake_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 97",
+                "notes": "Lu dans l'exemplaire numérisé sur archive.org, un tirage de Philadelphie et Londres daté de 1868. Baker rapporte ce que le roi du Bunyoro, Kamurasi, et les habitants avaient dit à Speke et Grant : le Nil traverse « the Koshi and Madi countries »."
+              },
+              {
+                "title": "Emin Pasha in Central Africa: being a collection of his letters and journals",
+                "author": "Emin Pacha (Eduard Schnitzer), éd. G. Schweinfurth, F. Ratzel, R. W. Felkin et G. Hartlaub",
+                "year": 1888,
+                "url": "https://archive.org/details/eminpashaincentr00emin",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 143",
+                "notes": "Londres, George Philip & Son, 1888, lu dans l'exemplaire numérisé sur archive.org. Récit d'une excursion de novembre et décembre 1879, d'abord publié dans les Petermanns Mitteilungen en 1880. Le district de Wadelai, appelé Koche, est « one of the many subdivisions of the large country of Lur or Alur » ; la langue y est appelée « Aluri »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

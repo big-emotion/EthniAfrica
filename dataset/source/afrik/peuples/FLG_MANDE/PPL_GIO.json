@@ -9,7 +9,7 @@
       "mainName": "Gio",
       "selfAppellation": "Dan",
       "exonyms": ["Gio", "Yacouba", "Yakouba", "Mano-Dan"],
-      "originOfExonyms": "Gio est un exonyme donne par le peuple Bassa et signifie esclave en langue bassa. Ce terme est considere comme pejoratif par le peuple lui-meme. Yacouba (ou Yakouba) est le nom officiel utilise en Cote d'Ivoire. Dan est le nom que le peuple se donne lui-meme et qu'il prefere.",
+      "originOfExonyms": "Les Bassa ont donné le nom Gio à ce peuple. Il signifierait esclave dans leur langue et les personnes concernées le jugent méprisant. En Côte d'Ivoire, le nom officiel est Yacouba, ou Yakouba. Le peuple se nomme lui-même Dan et préfère ce nom.",
       "whyProblematic": "Le terme Gio est juge derogratoire par le peuple Dan car il derive du mot bassa signifiant esclave. L'usage de Dan est prefere dans les contextes academiques et par les membres du groupe eux-memes.",
       "contemporaryUsage": "Dan est le nom endonymique prefere. Gio reste tres utilise au Liberia dans les contextes administratifs, journalistiques et courants. Yacouba est la denomination officielle en Cote d'Ivoire. Les deux pays utilisent des termes differents pour designer le meme peuple.",
       "linguisticFamily": "FLG_MANDE",
@@ -81,22 +81,26 @@
       {
         "title": "Dan, Da in Liberia – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/11485/LI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Dan | History, Culture & Religion – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Dan-African-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Minority Rights Group – Liberia, 2024",
         "url": "https://minorityrights.org/country/liberia/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Dan people – 101 Last Tribes, 2023",
         "url": "https://www.101lasttribes.com/tribes/dan.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Dan Tribe – Gateway Africa Safaris",
@@ -106,7 +110,8 @@
       {
         "title": "Liberia Population and Housing Census 2022 – LISGIS",
         "url": "https://www.lisgis.gov.lr/document/LiberiaCensus2022Report.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }

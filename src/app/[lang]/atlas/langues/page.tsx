@@ -316,7 +316,7 @@ export default async function LanguesHubPage({
                   <Link
                     href={getLanguageRoute(language, entry.id)}
                     prefetch={false}
-                    className="block h-full rounded-afh-xl border border-afh-border bg-afh-surface p-4 focus-visible:outline-none focus-visible:shadow-[var(--afh-ring-focus)]"
+                    className="block h-full rounded-afh-xl border border-afh-border bg-afh-surface p-4 focus-visible:outline-none focus-visible:shadow-afh-focus"
                   >
                     <span className="block text-afh-body font-semibold">
                       {entry.name}

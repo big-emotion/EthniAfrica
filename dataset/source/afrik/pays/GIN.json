@@ -6,6 +6,210 @@
   "summary": "La Guinée porte un nom que les Portugais appliquaient au XVe siècle à toute la côte ouest-africaine. Le pays articule quatre ensembles : le Fouta-Djalon peul, la Haute-Guinée malinké héritée de l'empire du Mali, la Basse-Guinée soussou et les peuples forestiers. Griots, kora et balafon y portent une tradition orale continue.",
   "etymology": "L'origine du nom Guinée n'est pas établie, et trois lectures coexistent. En Guinée, on rattache couramment le mot au soussou guinè, qui désigne la femme. Une deuxième lecture le fait venir de l'expression amazighe akal n ignawen, la terre des ignawen, par laquelle les berbérophones désignaient au Moyen Âge la zone sahélienne ; on la traduit d'ordinaire par pays des Noirs, d'après Maurice Delafosse en 1924. Les linguistes rattachent agnaw au verbe gnu, coudre : l'agnaw serait celui qui a la langue cousue, c'est-à-dire celui qui ne parle pas la langue de celui qui le nomme. Les navigateurs portugais, enfin, écrivent Guiné dès le XVe siècle pour toute la côte ouest-africaine au sud du Sénégal. Les Français ont repris ce nom pour leur colonie en 1891.",
   "nameOriginActor": "Les navigateurs portugais écrivent Guiné dès le XVe siècle et répandent la forme écrite du nom en Europe, sans que son origine soit établie. Les Français la reprennent en 1891 pour la colonie de Guinée française. Le pays garde ce nom à l'indépendance, le 2 octobre 1958.",
+  "nameHistory": {
+    "summary": "Le nom Guinée désigne un pays d'Afrique de l'Ouest, la République de Guinée. Il a d'abord désigné toute la côte ouest de l'Afrique pour les navigateurs portugais, et le pays s'est appelé Guinée française pendant la colonisation. L'origine du nom n'est pas établie ; nous présentons plus bas ce que les sources en disent.",
+    "names": [
+      {
+        "nameText": "Guinée",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Portugais donnaient au XVe siècle à la terre des Noirs ; son origine reste discutée.",
+        "periodLabel": "Écrit dès le XVe siècle ; nom de l'État depuis 1958",
+        "accounts": [
+          {
+            "period": {
+              "from": 1958,
+              "to": null,
+              "label": "Depuis le 2 octobre 1958"
+            },
+            "era": "modern",
+            "statement": "Le nom Guinée est celui de la République de Guinée depuis le 2 octobre 1958. Ce jour-là, le pays proclame son indépendance, après avoir voté non à plus de 80 % au référendum de 1958, selon Jean Suret-Canale et A. Adu Boahen.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 7 : L'Afrique occidentale",
+                "author": "Jean Suret-Canale et A. Adu Boahen",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 201",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Au référendum de 1958, le non l'emporte en Guinée avec plus de 80 % des voix, et le pays proclame son indépendance le 2 octobre 1958."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : « Guinée », indépendante le 2 octobre 1958, avec l'ancien nom colonial entre parenthèses, « Guinée française »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1899,
+              "label": "Fin du XIXe siècle"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée est repris par plusieurs puissances coloniales à la fin du XIXe siècle : Guinée portugaise, Guinée française, Guinée espagnole. Il passe même en Océanie avec la Nouvelle-Guinée, selon Claude Rivière.",
+            "sources": [
+              {
+                "title": "Guinea: The Mobilization of a People, préface",
+                "author": "Claude Rivière",
+                "year": null,
+                "url": "https://webguine.site/bibliotheque/sociology/riviere/mobilization_people/preface.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ithaca, Cornell University Press. Préface lue en ligne le 9 octobre 2026 sur le site webGuinée, qui indique 1968 pour l'édition ; la préface est datée de juin 1976."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1400,
+              "to": 1499,
+              "label": "XVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Guinée désigne d'abord toute la côte ouest de l'Afrique, de la Gambie au delta du Niger. Sous la plume des premiers navigateurs portugais, il veut dire la même chose qu'Éthiopie, le pays des Noirs, selon Yves Person.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers, premiers contacts avec les Portugais, de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 329"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1453,
+              "to": 1453,
+              "label": "Chronique achevée en 1453"
+            },
+            "era": "polity",
+            "statement": "Le nom Guinée est écrit « Guinee » par le chroniqueur portugais Gomes Eanes de Zurara, qui nomme ainsi la terre des Noirs. Il précise que ce n'est pas une seule terre, mais des terres très différentes. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples de cette côte vivaient là bien avant lui.",
+            "formAsWritten": "Guinee",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Chronica do descobrimento e conquista de Guiné",
+                "author": "Gomes Eanes de Zurara",
+                "year": 1841,
+                "url": "https://archive.org/details/chronicadodesco00zuragoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 158",
+                "notes": "Chronique achevée en 1453 selon son éditeur, publiée à Paris chez J.-P. Aillaud en 1841. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1100,
+              "to": 1199,
+              "label": "XIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Guinée pourrait avoir un ancêtre dans Kanawa, un pays dont parle au XIIe siècle le géographe arabe que Claude Rivière nomme Al Zukri ; Rivière se demande aussi s'il ne s'agit pas d'une forme du nom Ghana. Rachid Agrour relève la forme ginawa dans un manuscrit arabe du même siècle. Les sources ne disent pas s'il s'agit du même nom.",
+            "sources": [
+              {
+                "title": "Guinea: The Mobilization of a People, préface",
+                "author": "Claude Rivière",
+                "year": null,
+                "url": "https://webguine.site/bibliotheque/sociology/riviere/mobilization_people/preface.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ithaca, Cornell University Press. Préface lue en ligne le 9 octobre 2026 sur le site webGuinée, qui indique 1968 pour l'édition ; la préface est datée de juin 1976."
+              },
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 74 et note 20",
+                "notes": "Lu en texte intégral sur OpenEdition. L'auteur s'appuie sur Maurice Delafosse (1924, p. 153) et, en note, sur Jacques-Meunié (1982, p. 571), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Guinée viendrait du berbère akal n ignawen, « la terre des Ignawen », par lequel les berbérophones désignaient au Moyen Âge l'Afrique sahélienne. L'agnaw serait celui qui a « la langue cousue », qui ne parle pas la langue de celui qui le nomme, selon Rachid Agrour et Claude Rivière.",
+            "hypothesisGroup": "origine du nom Guinée",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 74 et note 20",
+                "notes": "Lu en texte intégral sur OpenEdition. L'auteur s'appuie sur Maurice Delafosse (1924, p. 153) et, en note, sur Jacques-Meunié (1982, p. 571), que nous n'avons pas lus."
+              },
+              {
+                "title": "Guinea: The Mobilization of a People, préface",
+                "author": "Claude Rivière",
+                "year": null,
+                "url": "https://webguine.site/bibliotheque/sociology/riviere/mobilization_people/preface.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ithaca, Cornell University Press. Préface lue en ligne le 9 octobre 2026 sur le site webGuinée, qui indique 1968 pour l'édition ; la préface est datée de juin 1976."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Guinée française",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "periodLabel": "Époque coloniale, jusqu'en 1958",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1958,
+              "label": "Jusqu'au 2 octobre 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée française est celui de la colonie qui devient la Guinée indépendante le 2 octobre 1958 ; le tableau des indépendances de l'Histoire générale de l'Afrique l'écrit entre parenthèses.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : « Guinée », indépendante le 2 octobre 1958, avec l'ancien nom colonial entre parenthèses, « Guinée française »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Guinée française (1891-1958)"],
@@ -101,7 +305,7 @@
         "mainRegion": "Fouta Djallon (hauts plateaux, centre)",
         "languages": ["Fulfulde (ful, ISO 639-3)", "français"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Fulɓe\" est l'auto-appellation. \"Peul\" et \"Fulani\" sont des exonymes acceptés. \"Fellata\" peut avoir une connotation péjorative dans certains contextes et doit être évité. Le Fouta Djallon fut l'un des plus importants États peuls d'Afrique de l'Ouest."
+        "appellationRemarks": "Le peuple se nomme Fulɓe. Peul et Fulani sont aussi des noms acceptés, donnés de l'extérieur. Fellata peut être méprisant dans certains contextes ; il est donc à éviter. Le Fouta Djallon fut l'un des principaux États peuls d'Afrique de l'Ouest."
       },
       {
         "name": "Malinké",
@@ -115,7 +319,7 @@
         "mainRegion": "Haute-Guinée (nord-est)",
         "languages": ["Malinké / Mandinka (mlq, ISO 639-3)", "français"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Maninka\" ou \"Mandinka\" est l'auto-appellation. \"Malinké\" est l'exonyme français accepté. \"Mandingo\" est un terme historique qui peut avoir une connotation péjorative dans certains contextes et doit être évité. Les Malinké sont héritiers du Mandé et de l'empire du Mali."
+        "appellationRemarks": "Les personnes concernées se nomment Maninka ou Mandinka. Malinké est un nom français donné de l'extérieur et accepté. Mandingo est un terme historique qui peut être méprisant dans certains contextes ; il est donc à éviter. Les Malinké sont les héritiers du Mandé et de l'empire du Mali."
       },
       {
         "name": "Soussou",
@@ -230,12 +434,14 @@
       {
         "title": "SIL Ethnologue - Langues de Guinee",
         "url": "https://www.ethnologue.com/country/GN/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNFPA – World Population Dashboard — Guinée",
         "url": "https://www.unfpa.org/data/world-population/GN",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Niane, Djibril Tamsir – \"Soundjata ou l'épopée mandingue\"",
@@ -250,22 +456,26 @@
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Institut national de la statistique (Guinee) - Recensement general de la population et de l'habitation 2025, resultats preliminaires",
         "url": "https://www.stat-guinee.org/images/Documents/Publications/INS/rapports_enquetes/RGPH-4/Resultats_preliminaires_rgph_4.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Fieloux, Michele - compte rendu de Thierno Diallo, Les institutions politiques du Fouta Dyalon au XIXe siecle (Dakar, IFAN, 1972) - Cahiers d'Etudes africaines, 14 (54), 1974, p. 402-403",
         "url": "https://www.persee.fr/doc/cea_0008-0055_1974_num_14_54_2655_t1_0402_0000_2",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "N'Daou, Mohamed Saidou - Sangalan Oral Traditions as Philosophy and Ideologies - History in Africa, 26, 1999, p. 239-267",
         "url": "https://doi.org/10.2307/3172143",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Fauvelle-Aymar, François-Xavier (2012) – Niani redux : mise au point sur la ville éponyme de l'empire du Mali, P@lethnology 4",
@@ -277,12 +487,14 @@
         "title": "Collet, Hadrien (2013) – L'introuvable capitale du Mali, Afriques 4",
         "url": "https://journals.openedition.org/afriques/1098",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Retrace comment la lecture Niani a été substituée à un tracé consonantique arabe que les manuscrits ne vocalisent pas. Accès libre."
       },
       {
         "title": "Agrour, Rachid - Contribution à l'étude d'un mot voyageur : Chleuh - Cahiers d'Études africaines, 208, 2012, p. 767-811",
         "url": "https://doi.org/10.4000/etudesafricaines.17161",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Rattache l'expression amazighe akal n ignawen à la désignation médiévale de la zone sahélienne par les berbérophones, en citant Maurice Delafosse (1924, page 153), et rapporte l'étymologie d'agnaw par le verbe gnu, coudre. Accès libre."
       },
       {
@@ -295,18 +507,21 @@
         "title": "Dubawa – Guinée : des chiffres sur la répartition ethnique en 2025 circulent sur Facebook sans aucune base officielle",
         "url": "https://dubawa.org/guinee-des-chiffres-sur-la-repartition-ethnique-en-2025-circulent-sur-facebook-sans-aucune-base-officielle/",
         "tier": "referenced",
+        "source_kind": "press",
         "notes": "Vérification d'un message largement partagé en juillet 2025 : aucun chiffre officiel récent ne permet d'établir une répartition ethnique de la Guinée."
       },
       {
         "title": "Minority Rights Group International – Guinea (mis à jour en janvier 2018)",
         "url": "https://minorityrights.org/country/guinea/",
         "tier": "referenced",
+        "source_kind": "ngo",
         "notes": "Rappelle que le recensement de 2014 n'a pas publié de répartition par ethnie. Cite une estimation de juillet 2016 (Peuls 33,9 %, Malinkés 31,1 %, Soussous 19,1 %, Guerzé 6 %, Kissi 4,7 %, Toma 2,6 %) sans en nommer l'origine, et décrit les groupes par région naturelle sans en donner le nombre total."
       },
       {
         "title": "IndexMundi – Guinea : ethnic groups",
         "url": "https://www.indexmundi.com/guinea/ethnic_groups.html",
         "tier": "unverified",
+        "source_kind": "discovery",
         "notes": "Reprend l'estimation de 2018 du World Factbook de la CIA (Peuls 33,4 %, Malinkés 29,4 %, Soussous 21,2 %). D'autres relais attribuent à la même estimation des parts différentes, et le Factbook n'est plus publié."
       }
     ],

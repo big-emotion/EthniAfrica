@@ -8,7 +8,7 @@
       "mainName": "Ndamba",
       "selfAppellation": "Wandamba",
       "exonyms": ["Wandamba", "Chindamba"],
-      "originOfExonyms": "Wandamba est la forme avec le prefixe pluriel bantou wa- designant les personnes. Chindamba designe la langue du groupe. L'ethnonyme derive probablement du nom de leur premier chef, Mbuyi Undole.",
+      "originOfExonyms": "Wandamba commence par wa-, qui marque le pluriel pour désigner des personnes dans les langues bantoues. Chindamba est le nom de la langue. Le nom du peuple viendrait de celui de son premier chef, Mbuyi Undole.",
       "whyProblematic": null,
       "contemporaryUsage": "Ndamba et Wandamba sont utilises de maniere interchangeable en Tanzanie. Certains ethnologues incluent les Pogoro parmi les Ndamba en raison de leur forte proximite linguistique et culturelle.",
       "linguisticFamily": "FLG_BANTU",
@@ -77,7 +77,8 @@
       {
         "title": "Ndamba in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/13271",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ndamba tribe – Hadzabetribe.com",
@@ -87,17 +88,20 @@
       {
         "title": "Ndamba – Glottolog 5.3, ISO 639-3: ndj",
         "url": "https://glottolog.org/resource/languoid/id/ndam1239",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ndamba – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/ndamba.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Memory, Migration and the Authority of History in Southern Tanzania – JSTOR",
         "url": "https://www.jstor.org/stable/183473",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

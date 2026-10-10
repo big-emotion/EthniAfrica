@@ -102,22 +102,26 @@
       {
         "title": "South African History Online — Mfecane",
         "url": "https://sahistory.org.za/article/mfecane-understanding-period-transformation-southern-africa",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Britannica — Lobengula",
         "url": "https://www.britannica.com/biography/Lobengula",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Ndebele, Tabele in Zimbabwe",
         "url": "https://joshuaproject.net/people_groups/13275/ZI",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue (SIL) — isiNdebele [nde]",
         "url": "https://www.ethnologue.com/language/nde",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

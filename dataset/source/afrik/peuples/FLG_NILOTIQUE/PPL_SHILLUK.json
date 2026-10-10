@@ -12,7 +12,7 @@
         "Chol",
         "Schilluk"
       ],
-      "originOfExonyms": "Le terme Shilluk est une déformation phonétique européenne de l'endonyme Cøllø (Chollo). Il fut popularisé par les explorateurs et administrateurs coloniaux britanniques et égyptiens au 19e siècle. Les Shilluk se désignent eux-mêmes comme Cøllø et leur langue comme Dhøg Cøllø (la bouche des Chollo).",
+      "originOfExonyms": "Shilluk est une transformation européenne du nom Cøllø, ou Chollo, à partir de sa prononciation. Au XIXe siècle, les explorateurs et administrateurs coloniaux britanniques et égyptiens l'ont fait connaître. Les personnes concernées se nomment Cøllø et appellent leur langue Dhøg Cøllø, la bouche des Chollo.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Shilluk reste l'appellation internationale courante en anglais et en français. Dans la vie quotidienne et dans les contextes politiques contemporains au Soudan du Sud, les membres du groupe préfèrent Chollo ou Cøllø. Depuis l'indépendance du Soudan du Sud en 2011, l'identité Chollo est revendiquée dans le cadre du système fédéral.",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -98,17 +98,20 @@
       {
         "title": "Ethnologue — Shilluk (SHK)",
         "url": "https://www.ethnologue.com/language/shk/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ASJP Database — Shilluk",
         "url": "https://asjp.clld.org/languages/SHILLUK_2",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Graeber, David. The divine kingship of the Shilluk: On violence, utopia, and the human condition. HAU: Journal of Ethnographic Theory, 2011",
         "url": "https://www.journals.uchicago.edu/doi/full/10.14318/hau1.1.002",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Seligman, C.G. The Shilluk of the Upper Nile. 1911. Études anthropologiques fondatrices",
@@ -123,17 +126,20 @@
       {
         "title": "eHRAF World Cultures — Shilluk",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fj23/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — South Sudan",
         "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "UN Peacekeeping — Fashoda history",
         "url": "https://peacekeeping.un.org/en/sign-of-peace-past-british-and-french-ambassadors-visit-historical-town-where-peace-deal-was-reached",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

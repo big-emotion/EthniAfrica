@@ -1560,6 +1560,50 @@ describe("validateAfrikData – new integrity checks", () => {
       });
     });
 
+    // @req REQ-161
+    it("refuses a source kind outside the vocabulary, as sources_source_kind_check does", () => {
+      writePPL(
+        tmpDir,
+        "FLG_BANTU",
+        "PPL_ZULU",
+        cite({
+          title: "Joshua Project – Zulu",
+          url: "https://joshuaproject.net/people_groups/16124/SF",
+          tier: "unverified",
+          source_kind: "mission_db",
+        })
+      );
+
+      const result = checkSourceIdentity(tmpDir);
+
+      expect(result.ok).toBe(false);
+      expect(result.errors).toContainEqual(
+        expect.stringContaining('declares kind "mission_db"')
+      );
+    });
+
+    // @req REQ-161
+    it("accepts the encyclopedia, NGO and mission-database kinds", () => {
+      const kinds = ["encyclopedia", "ngo", "missionary_database"];
+      kinds.forEach((kind, index) =>
+        writePPL(
+          tmpDir,
+          "FLG_BANTU",
+          `PPL_KIND_${index}`,
+          cite({
+            title: `A ${kind} page`,
+            tier: "unverified",
+            source_kind: kind,
+          })
+        )
+      );
+
+      expect(checkSourceIdentity(tmpDir)).toMatchObject({
+        ok: true,
+        errors: [],
+      });
+    });
+
     // @req REQ-092
     it("refuses an oral-tradition source tiered above unverified, as sources_new_kind_tier_check does", () => {
       writePPL(

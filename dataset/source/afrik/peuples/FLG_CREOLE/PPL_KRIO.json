@@ -109,22 +109,26 @@
       {
         "title": "BBC News — The story of Sierra Leone's Krio people",
         "url": "https://www.bbc.com/news/world-africa-49726461",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "Kreol Magazine — Krio: The Creole Language That Unites Sierra Leone",
         "url": "https://kreolmagazine.com/krio-the-creole-language-that-unites-sierra-leone/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "EBSCO Research Starters — Sierra Leone Creole people",
         "url": "https://www.ebsco.com/research-starters/history/sierra-leone-creole-people",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue — Krio language (kri)",
         "url": "https://www.ethnologue.com/language/kri/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

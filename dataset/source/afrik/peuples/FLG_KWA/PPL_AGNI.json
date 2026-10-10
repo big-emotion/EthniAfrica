@@ -8,7 +8,7 @@
       "mainName": "Agni",
       "selfAppellation": "Anyi",
       "exonyms": ["Agnis", "Ani", "Anya", "Anyi", "Anyis", "Ndenie", "Sanwi"],
-      "originOfExonyms": "Anyi (aussi ecrit Agni ou Agny) est la forme endonyme predominante. Les formes Agni et Agny sont des transcriptions europeennes (francaises) de l'endonyme Anyi. Ndenie et Sanwi designent specifiquement les sous-groupes royaux et sont parfois utilises comme exonymes.",
+      "originOfExonyms": "Le peuple emploie principalement Anyi pour se nommer lui-même. Agni et Agny sont des manières françaises de transcrire ce nom. Ndenie et Sanwi désignent plus précisément les groupes liés aux royaumes et sont parfois employés de l'extérieur pour les nommer.",
       "whyProblematic": null,
       "contemporaryUsage": "Agni est le terme officiel utilise en Cote d'Ivoire. Anyi est utilise dans les publications linguistiques et dans les contextes ghaneens. Les noms des royaumes (Sanwi, Indenie, Moronou) servent souvent d'appellations pour les sous-groupes.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -93,12 +93,14 @@
       {
         "title": "Ethnologue - Anyin (ANY)",
         "url": "https://www.ethnologue.com/language/any/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "DICE Missouri - Agni (Anyin) database",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Agni.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

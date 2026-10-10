@@ -95,7 +95,8 @@
       {
         "title": "SIL Ethnologue — Kota language (koq)",
         "url": "https://www.ethnologue.com/language/koq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Endangered Language Alliance — Ikota",
@@ -105,7 +106,8 @@
       {
         "title": "Smithsonian Institution — Reliquary guardian figure",
         "url": "https://www.si.edu/object/nmafa_78-14-12",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Barakat Gallery — Bakota Reliquary Guardian Figure",

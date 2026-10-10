@@ -9,8 +9,8 @@
       "mainName": "Comoriens",
       "selfAppellation": "Wangazidja (Grande Comore), Wandzuani (Anjouan), Wamwali (Mohéli), Wamaore (Mayotte)",
       "exonyms": ["Comorians (anglais)", "Comoriens (français)"],
-      "originOfExonyms": "Le nom du pays, Comores, reprend l'arabe komr, un mot générique qui désignait de grandes terres situées sous les Nuages de Magellan ; la lecture « îles de la Lune » est plus tardive. De ce nom vient le gentilé Comorien.",
-      "whyProblematic": "Les termes exonymes ne reflètent pas la diversité interne des Comoriens (Ngazidja, Ndzuani, Mwali, Maorais), ni les identités insulaires spécifiques. Chaque île a sa propre langue, ses propres traditions et une forte identité locale.",
+      "originOfExonyms": "Le nom du pays, Comores, reprend l'arabe komr, un mot générique qui désignait de grandes terres situées sous les Nuages de Magellan ; la lecture « îles de la Lune » est plus tardive. Le gentilé Comorien viendrait de ce nom.",
+      "whyProblematic": "Les noms donnés de l'extérieur ne rendent pas compte de la diversité des Comoriens, notamment des Ngazidja, des Ndzuani, des Mwali et des Maorais. Chaque île possède sa langue, ses traditions et une forte identité locale.",
       "contemporaryUsage": "Comorien est largement accepté pour désigner l'ensemble des habitants de l'archipel. Les identités insulaires restent fortes: Ngazidja pour Grande Comore, Wandzuani pour Anjouan, Wamwali pour Mohéli, Maorais pour Mayotte.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantous de l'océan Indien, groupe swahili",
@@ -96,22 +96,26 @@
       {
         "title": "Encyclopaedia Britannica, Comoros",
         "url": "https://www.britannica.com/place/Comoros",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "UNFPA, Comoros Population 2025",
         "url": "https://www.unfpa.org/data/world-population/KM",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Joshua Project, Comorian in France",
         "url": "https://joshuaproject.net/people_groups/19179",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ISS Africa, Comoros-Mayotte migration",
         "url": "https://issafrica.org/iss-today/comoros-mayotte-saga-a-microcosm-of-africa-europe-migration-crisis",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "ngo"
       }
     ]
   }

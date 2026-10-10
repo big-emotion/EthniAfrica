@@ -94,17 +94,20 @@
       {
         "title": "101 Last Tribes – Lungu people",
         "url": "https://www.101lasttribes.com/tribes/lungu.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project – Mambwe-Lungu in Tanzania, 2025",
         "url": "https://joshuaproject.net/people_groups/print/13470/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Zambia people groups, 2025",
         "url": "https://joshuaproject.net/countries/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Cancel, Robert – Asserting/inventing traditions on the Luapula: the Lunda Mutomboko Festival (in: Storytelling in Northern Zambia, Open Book Publishers)",

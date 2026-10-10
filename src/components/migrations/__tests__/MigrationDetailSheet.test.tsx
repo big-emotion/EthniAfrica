@@ -69,7 +69,7 @@ describe("MigrationDetailSheet", () => {
   });
 
   // @req REQ-101 FR78 FR79 FR82
-  it("renders period, classification badge, confidence chip and linked peoples", () => {
+  it("renders period, classification badge, source review chip and linked peoples", () => {
     render(
       <MigrationDetailSheet
         language="fr"
@@ -135,6 +135,29 @@ describe("MigrationDetailSheet", () => {
 
     await waitFor(() => {
       expect(screen.getByTestId("section-sources")).toBeInTheDocument();
+    });
+  });
+
+  // @req REQ-161
+  it("names the kind of each source in the sheet a source chip opens", async () => {
+    render(
+      <MigrationDetailSheet
+        language="fr"
+        open
+        onOpenChange={vi.fn()}
+        event={{
+          ...EVENT,
+          sources: [{ ...EVENT.sources[0], sourceKind: "archive" }],
+        }}
+      />
+    );
+
+    fireEvent.click(screen.getByTestId("migration-source-chip-src-1"));
+
+    await waitFor(() => {
+      expect(screen.getByTestId("source-item-src-1")).toHaveTextContent(
+        "Archive"
+      );
     });
   });
 

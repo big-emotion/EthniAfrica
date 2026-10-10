@@ -5,7 +5,7 @@
 
 import type { PeopleId } from "@/types/afrik";
 import type { MigrationEventType } from "@/lib/afrik/migrationEventTypes";
-import type { SourceTier } from "@/types/sources";
+import type { SourceKind, SourceTier } from "@/types/sources";
 
 export type { MigrationEventType };
 
@@ -73,6 +73,7 @@ export interface MigrationSourceRef {
   title: string;
   url: string | null;
   tier: SourceTier | null;
+  sourceKind?: SourceKind | null;
 }
 
 export interface MigrationSummary {

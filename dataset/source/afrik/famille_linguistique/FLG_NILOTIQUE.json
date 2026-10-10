@@ -3,6 +3,359 @@
   "nameFr": "Nilotique",
   "nameEn": "Nilotic",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom nilotique désigne un groupe de langues apparentées du haut Nil et d'Afrique de l'Est, comme le dinka, le nuer, le shilluk, le luo, le maasaï ou le kalenjin. C'est un nom de savants, tiré du nom du Nil, qui a d'abord désigné d'autres langues ; on a aussi dit nilo-chamitique, puis paranilotique, pour une partie d'entre elles. Les sources ne s'accordent pas toujours sur la place de ce groupe ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Nilotique",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes européens, d'après le nom du Nil",
+        "shortLine": "Un nom de savants tiré du Nil, pour des langues du haut Nil et d'Afrique de l'Est.",
+        "periodLabel": "Écrit dès 1850 ; pour ces langues depuis le début du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le nom nilotique avait d'abord un sens géographique : « du fleuve Nil ». Pour J. E. G. Sutton, il désigne aujourd'hui un groupe de langues défini par des critères linguistiques seuls, sans idée de lieu.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 23 : L'Afrique orientale avant le VIIe siècle",
+                "author": "J. E. G. Sutton",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 635, note 13"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Classification exposée au présent par l'auteur"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom nilotique désigne, chez Joseph Greenberg, trois ensembles : le nilotique occidental, avec le groupe lwo et le dinka-nuer ; l'oriental, avec le bari, le turkana et le masai ; le méridional, avec le nandi et le tatoga.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 335"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1980,
+              "label": "Proposée en 1963, exposée en 1980"
+            },
+            "hypothesisGroup": "place-du-nilotique",
+            "statement": "Le nom nilotique désignerait un sous-groupe du soudanique oriental, lui-même branche du chari-nil dans la famille nilo-saharienne, selon Joseph Greenberg.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 335"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "hypothesisGroup": "place-du-nilotique",
+            "statement": "Le nom nilotique désignerait un groupe de langues très individualisé, peut-être une famille à part entière, formée au cours d'une longue période d'isolement, selon D. Olderogge.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 319"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Position actuelle du catalogue"
+            },
+            "era": "modern",
+            "hypothesisGroup": "place-du-nilotique",
+            "statement": "Le nom nilotique désignerait une famille à part, selon les éditeurs du catalogue Glottolog : pour eux, rien de solide ne permet de la rattacher au soudanique oriental ni à un ensemble nilo-saharien.",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Family: Nilotic",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nilo1247",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 10 octobre 2026. Commentaire sur l'appartenance de la famille : « No conclusive, methodologically sound basis for assigning Nilotic to Eastern Sudanic […] or to an alleged full or partial Nilo-Saharan has been presented »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "formAsWritten": "Nilotic Languages",
+            "statement": "Le nom nilotique est, en 1912, le nom habituel d'un groupe de langues, écrit Diedrich Westermann. Il y range le shilluk, le dinka et le nuer, mais aussi le masai, le bari ou le nandi, et le croit issu des langues soudanaises, mêlé d'influences dites hamitiques.",
+            "sources": [
+              {
+                "title": "The Shilluk People, Their Language and Folklore",
+                "author": "Diedrich Westermann",
+                "year": 1912,
+                "url": "https://archive.org/details/shillukpeoplethe00west",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33-35",
+                "notes": "Philadelphie, Board of Foreign Missions of the United Presbyterian Church of N. A., et Berlin, Dietrich Reimer, 1912 ; d'après une enquête menée au Soudan en 1910. Lu dans la numérisation d'Internet Archive. Page 33 : le shilluk appartient à un groupe « which is usually styled \"Nilotic Languages\" »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1850,
+              "to": 1850,
+              "label": "1850"
+            },
+            "era": "polity",
+            "birth": true,
+            "formAsWritten": "Nilotic family",
+            "statement": "Le nom nilotique apparaît par écrit en 1850 chez le missionnaire Johann Ludwig Krapf, mais pour d'autres langues : celles de la côte d'Afrique de l'Est, comme le souahéli, le nika ou le kamba, dont il sépare le masaï et le galla. Il les dit nilotiques parce que les peuples qui les parlent vivent, selon lui, au sud des sources du Nil Blanc. C'est la plus ancienne trace de ce nom que le projet connaît ; il ne désignait pas encore les mêmes langues.",
+            "actors": [
+              {
+                "name": "Johann Ludwig Krapf",
+                "role": "a proposé le nom dans la préface de son vocabulaire"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla)",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/cu31924026933139",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. IV-V",
+                "notes": "Tübingen, L. F. Fues, 1850 ; préface datée de Dagersheim, le 14 octobre 1850, après le séjour de l'auteur à Mombasa et à Rabai. Lu dans la numérisation d'Internet Archive. Page V : « the Nilo-Hamitic, or Nilotic family of languages, which must be distinguished from the Nigro-Hamitic or Nigrotic stock » ; l'auteur explique que presque tous les peuples qui vivent au sud des sources du Bahr el-Abiad (le Nil Blanc) appartiennent selon lui à la « Nilotic race »."
+              },
+              {
+                "title": "A Sketch of the Modern Languages of Africa, vol. 1",
+                "author": "Robert Needham Cust",
+                "year": 1883,
+                "url": "https://archive.org/details/sketchofmodernla01cust",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 54",
+                "notes": "Londres, Trübner, 1883. Lu dans la numérisation d'Internet Archive. Page 54 : Krapf « called them the Nilo-Hamitic, or Nilotic, and Nigro-Hamitic or Nigritic respectively »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nilo-chamitique",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'ancien nom du nilotique oriental et méridional, lié à la théorie des « Hamites ».",
+        "periodLabel": "De 1912 au milieu du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Classement ancien rappelé par l'auteur"
+            },
+            "statement": "Le nom nilo-chamite désignait autrefois les Itunga, les Masaï, les Kalenjin et les Tatoga, selon J. E. G. Sutton, pour qui leurs langues restent foncièrement nilotiques malgré de nombreux emprunts aux langues couchitiques.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 23 : L'Afrique orientale avant le VIIe siècle",
+                "author": "J. E. G. Sutton",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 635"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Théorie rapportée par les auteurs"
+            },
+            "aspect": "imposition",
+            "statement": "Le nom nilo-chamitique renvoie, selon P. Diagne qui cite Joseph Greenberg, au livre Races of Africa de C. G. Seligman, pour qui ces peuples seraient « racialement à moitié hamites ». Greenberg y voit une théorie raciale qui n'a jamais eu de preuve.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 10, partie I : Histoire et linguistique",
+                "author": "P. Diagne",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 272"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Classement rappelé par l'auteur"
+            },
+            "statement": "Le nom nilo-chamitique est donné par Diedrich Westermann aux langues des Nilotes orientaux et méridionaux, probablement parce qu'il les croyait mélangées, selon Joseph Greenberg. Carl Meinhof avait rangé le masai parmi les langues chamitiques, surtout parce qu'il a un genre grammatical.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 336"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "formAsWritten": "Niloto-Hamitic group",
+            "statement": "Le nom nilo-chamitique est écrit « Niloto-Hamitic » par Diedrich Westermann, pour les langues nilotiques qui ont un genre grammatical, comme le masai, le bari, le turkana ou le nandi. Il les croit plus marquées que les autres par des langues dites hamitiques.",
+            "sources": [
+              {
+                "title": "The Shilluk People, Their Language and Folklore",
+                "author": "Diedrich Westermann",
+                "year": 1912,
+                "url": "https://archive.org/details/shillukpeoplethe00west",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33-35",
+                "notes": "Philadelphie, Board of Foreign Missions of the United Presbyterian Church of N. A., et Berlin, Dietrich Reimer, 1912 ; d'après une enquête menée au Soudan en 1910. Lu dans la numérisation d'Internet Archive. Page 33 : « The Nilotic languages consist of two sub-divisions: a) The Niloto-Sudanic group. b) The Niloto-Hamitic group. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1850,
+              "to": 1850,
+              "label": "1850"
+            },
+            "era": "polity",
+            "birth": true,
+            "formAsWritten": "Nilo-Hamitic, or Nilotic family",
+            "statement": "Le nom nilo-chamitique apparaît par écrit en 1850 chez Johann Ludwig Krapf, sous la forme « Nilo-Hamitic », comme autre nom de sa famille nilotique : les langues de la côte d'Afrique de l'Est comme le souahéli ou le kamba. C'est la plus ancienne trace de ce nom que le projet connaît ; il ne désignait pas encore les mêmes langues.",
+            "actors": [
+              {
+                "name": "Johann Ludwig Krapf",
+                "role": "a proposé le nom dans la préface de son vocabulaire"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla)",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/cu31924026933139",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. IV-V",
+                "notes": "Tübingen, L. F. Fues, 1850 ; préface datée de Dagersheim, le 14 octobre 1850, après le séjour de l'auteur à Mombasa et à Rabai. Lu dans la numérisation d'Internet Archive. Page V : « the Nilo-Hamitic, or Nilotic family of languages, which must be distinguished from the Nigro-Hamitic or Nigrotic stock » ; l'auteur explique que presque tous les peuples qui vivent au sud des sources du Bahr el-Abiad (le Nil Blanc) appartiennent selon lui à la « Nilotic race »."
+              },
+              {
+                "title": "A Sketch of the Modern Languages of Africa, vol. 1",
+                "author": "Robert Needham Cust",
+                "year": 1883,
+                "url": "https://archive.org/details/sketchofmodernla01cust",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 54",
+                "notes": "Londres, Trübner, 1883. Lu dans la numérisation d'Internet Archive. Page 54 : Krapf « called them the Nilo-Hamitic, or Nilotic, and Nigro-Hamitic or Nigritic respectively »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Paranilotique",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste A. N. Tucker",
+        "shortLine": "Le nom donné ensuite par A. N. Tucker à ces mêmes langues, pour les rapprocher du nilotique.",
+        "periodLabel": "Milieu du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date non précisée par la source"
+            },
+            "statement": "Le nom paranilotique est celui qu'A. N. Tucker donne aux langues des Nilotes orientaux et méridionaux, après les avoir appelées nilo-chamitiques, pour les rapprocher du nilotique, selon Joseph Greenberg.",
+            "actors": [
+              {
+                "name": "A. N. Tucker",
+                "role": "a proposé le nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 336"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues parlées le long du Nil et en Afrique de l'Est, au Soudan du Sud, au Kenya, en Ouganda et en Tanzanie. Le nom veut dire « du Nil » ; Lepsius l'emploie dès 1880.",
@@ -85,22 +438,26 @@
       {
         "title": "Lepsius, Karl Richard (1880) – *Nubische Grammatik mit einer Einleitung über die Völker und Sprachen Afrikas*. Berlin: Verlag von Wilhelm Hertz",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Greenberg, Joseph H. (1963) – *The Languages of Africa*. Bloomington: Indiana University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Dimmendaal, Gerrit J. (1988) – \"The lexical reconstruction of Proto-Nilotic: A first reconnaissance\". *Afrikanistische Arbeitspapiere* 16:5-67",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Heine, Bernd & Nurse, Derek (2000) – *African Languages: An Introduction*. Cambridge: Cambridge University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Dobon, B., Hassan, H., Laayouni, H. et al. (2015) – \"The genetics of East African populations: a Nilo-Saharan component in the African genetic landscape\". *Scientific Reports* 5, Article number: 9996. DOI: 10.1038/srep09996",
@@ -110,93 +467,111 @@
       {
         "title": "Mulindwa, J., et al. (2020) – \"High levels of genetic diversity within Nilo-Saharan populations: implications for human adaptation\". *American Journal of Human Genetics* 107(3):473-486. DOI: 10.1016/j.ajhg.2020.06.008",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Tishkoff, Sarah A., Reed, F.A., Friedlaender, F.R., Ehret, C., et al. (2009) – \"The genetic structure and history of Africans and African Americans\". *Science* 324(5930):1035-1044. DOI: 10.1126/science.1172257",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Britannica Editors (2025) – \"Nilotic languages\". *Britannica.com*",
         "url": "https://www.britannica.com/topic/Nilotic-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica Editors (2025) – \"Nilo-Saharan languages\". *Britannica.com*",
         "url": "https://www.britannica.com/topic/Nilo-Saharan-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ethnologue (SIL International) (2025) – \"Nilotic languages\". *Ethnologue.com*",
         "url": "https://www.ethnologue.com/subgroups/nilotic",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook (2024) – Country profiles: South Sudan, Kenya, Uganda, Tanzania, Ethiopia, Sudan, Democratic Republic of the Congo. *CIA.gov*",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "ONU / UNFPA (2024) – Démographie et statistiques par pays. *UN.org*, *UNFPA.org*",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Kenya National Bureau of Statistics (2019) – *Kenya Population and Housing Census Volume IV: Distribution of Population by Socio-Economic Characteristics*. Nairobi: KNBS",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Uganda Bureau of Statistics (2024) – Population estimates and demographics. *UBOS.org*",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Tanzania National Bureau of Statistics (2022) – *Population and Housing Census*. Dodoma: NBS",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Glottolog (2025) – \"Nilotic languages classification\". *Glottolog.org*",
         "url": "https://glottolog.org/resource/languoid/id/nilo1247",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Dimmendaal, Gerrit J. (2011) – \"On stable and unstable features in Nilo-Saharan\". In *Diachrony and Typology of Tense-Aspect Systems* (éd. Vit Bubenik). John Benjamins",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Bender, M. Lionel (1996) – *The Nilo-Saharan Languages: A Comparative Essay*. Lincom Europa",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Glottolog 5.3 (2025) – \"Nilotic\": arbre de classification confirmant 3 branches immédiates – Eastern Nilotic, Southern Nilotic, Western Nilotic",
         "url": "https://glottolog.org/resource/languoid/id/nilo1247",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue, 19e éd. (Lewis, M.P., Simons, G.F. & Fennig, C.D., eds., 2016), page consultée via version archivée (Internet Archive, 21-29 juin 2016) – \"Dholuo [luo]\": 4 044 000 locuteurs au Kenya (recensement 2009), 140 000 en Tanzanie (2005). \"Maasai [mas]\": 842 000 locuteurs au Kenya (recensement 2009), 613 000 en Tanzanie (2013). \"Turkana [tuv]\": 989 000 locuteurs au Kenya (recensement 2009)",
         "url": "https://www.ethnologue.com/language/luo",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "SIL Ethnologue, 19e éd. (Lewis, M.P., Simons, G.F. & Fennig, C.D., eds., 2016), page consultée via version archivée (Internet Archive, 21-29 juin 2016) – \"Dholuo [luo]\": 4 044 000 locuteurs au Kenya (recensement 2009), 140 000 en Tanzanie (2005). \"Maasai [mas]\": 842 000 locuteurs au Kenya (recensement 2009), 613 000 en Tanzanie (2013). \"Turkana [tuv]\": 989 000 locuteurs au Kenya (recensement 2009). https://www.ethnologue.com/language/luo ; https://www.ethnologue.com/language/mas ; https://www.ethnologue.com/language/tuv"
       },
       {
         "title": "SIL Ethnologue, 20e éd. (Simons, G.F. & Fennig, C.D., eds., 2017), page consultée via version archivée (Internet Archive, 12 octobre 2017) – \"Dinka [din]\" (macrolangue) : 1 365 900 locuteurs au Soudan du Sud",
         "url": "https://www.ethnologue.com/language/din",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue, 19e éd. (2016), page consultée via version archivée (Internet Archive, 11 août 2016) – \"Nuer [nus]\": 894 120 locuteurs au Soudan du Sud (total utilisateurs, dont 893 000 en L1)",
         "url": "https://www.ethnologue.com/language/nus",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue, 19e éd. (2016), page consultée via version archivée (Internet Archive, 24 mars 2016) – \"Acholi [ach]\": 1 170 000 locuteurs en Ouganda (recensement 2002)",
         "url": "https://www.ethnologue.com/language/ach",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

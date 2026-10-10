@@ -75,27 +75,32 @@
       {
         "title": "Bende in Tanzania – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/10787",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bende Language (BDP) – Ethnologue SIL",
         "url": "https://www.ethnologue.com/language/bdp/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Social Organization and Social Status in Nineteenth and Twentieth Century Tanzania – Waters, African Studies Quarterly, Univ. of Florida",
         "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/Waters-V11Is1.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "The Bende of Tanzania (PG014912) – PeopleGroups.org, 2025",
         "url": "https://peoplegroups.org/people_groups/pg014912/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "A Bende Vocabulary – Yuko Abe, ILCAA, Tokyo University of Foreign Studies, 2006",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

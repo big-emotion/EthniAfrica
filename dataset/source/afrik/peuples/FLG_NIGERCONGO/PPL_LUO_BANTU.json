@@ -105,22 +105,26 @@
       {
         "title": "Britannica — Luo people",
         "url": "https://www.britannica.com/topic/Luo-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue — Dholuo (luo)",
         "url": "https://www.ethnologue.com/language/luo/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Adhola (adh)",
         "url": "https://www.ethnologue.com/language/adh/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Kenya, Uganda, Tanzania",
         "url": "https://www.cia.gov/the-world-factbook/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

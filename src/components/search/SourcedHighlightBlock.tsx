@@ -1,7 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { DID_YOU_KNOW_FACTS } from "@/lib/home/didYouKnowFacts";
 import type { DidYouKnowFact } from "@/lib/home/didYouKnowFacts";
-import { DID_YOU_KNOW_TIER_LABEL } from "@/lib/home/didYouKnowPresentation";
 import { selectSourcedHighlight } from "@/lib/search/sourcedHighlight";
 import type { SearchResult } from "@/types/afrik-frontend";
 
@@ -23,7 +22,6 @@ export function SourcedHighlightBlock({
 }: SourcedHighlightBlockProps) {
   const fact = selectSourcedHighlight(result, facts);
   if (!fact) return null;
-  const tierLabel = DID_YOU_KNOW_TIER_LABEL[fact.tier];
 
   return (
     <Card
@@ -35,12 +33,6 @@ export function SourcedHighlightBlock({
       </p>
       <p className="mt-afh-xs text-afh-body font-semibold text-afh-text">
         {fact.headline}
-      </p>
-      <p
-        data-testid="sourced-highlight-tier"
-        className="mt-afh-sm text-afh-caption text-afh-fg-muted"
-      >
-        {tierLabel}
       </p>
     </Card>
   );

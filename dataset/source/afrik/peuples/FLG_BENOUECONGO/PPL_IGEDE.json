@@ -9,7 +9,7 @@
       "mainName": "Igede",
       "selfAppellation": "Igede",
       "exonyms": ["Egedde", "Egede", "Igedde", "Oju"],
-      "originOfExonyms": "Les variantes Egedde, Egede et Igedde sont des formes dialectales ou orthographiques alternatives du même ethnonyme. Oju est le nom du territoire principal des Igede (Local Government Area d'Oju, Benue State). La lettre i dans le terme IDOMA (amalgame colonial) représente les Igede.",
+      "originOfExonyms": "Egedde, Egede et Igedde sont d'autres formes du nom du peuple, selon les façons de parler ou d'écrire. Oju est son principal territoire, dans la zone administrative d'Oju, au sein de l'État de Benue. La lettre i d'IDOMA, un regroupement créé pendant la colonisation, représente les Igede.",
       "whyProblematic": "Le terme IDOMA, créé par l'administration coloniale britannique pour regrouper plusieurs ethnies (Igede, Doma, Akpoto, Agatu, Akpa), efface les identités distinctes. Les Igede se sont progressivement détachés de cet amalgame et revendiquent leur identité propre.",
       "contemporaryUsage": "Le terme Igede est universellement utilisé au Nigeria pour désigner ce peuple. Les deux Local Government Areas d'Oju et Obi (Benue State) correspondent à leur territoire traditionnel.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -74,12 +74,14 @@
       {
         "title": "Igede Language (IGE) – Ethnologue",
         "url": "https://www.ethnologue.com/language/ige/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Igede in Nigeria – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/12190",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Igede language (ISO 639-3 code: ige) – Notion",
@@ -89,7 +91,8 @@
       {
         "title": "Igede – Swordshare Map",
         "url": "https://map.swordshare.com/ige",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

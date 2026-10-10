@@ -21,3 +21,5 @@ src/lib/search/__fixtures__/feedBoardCases.json
 # the sources breaks that equivalence. Ignored in eslint.config.mjs for the same
 # reason — they are design references, never imported by src/.
 docs/design/mockups
+
+.local/editorial-references/

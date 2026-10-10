@@ -9,9 +9,9 @@
       "mainName": "Esan",
       "selfAppellation": "Esan (Ebho Esan)",
       "exonyms": ["Ishan"],
-      "originOfExonyms": "Le terme Ishan est l'exonyme colonial britannique issu d'une deformation phonetique d'Esan. Les administrateurs britanniques l'utiliserent pour designer la division administrative (Ishan Division) et le peuple. L'orthographe Esan est aujourd'hui universellement preferee.",
+      "originOfExonyms": "L'administration coloniale britannique employait Ishan, une forme modifiée d'Esan, pour désigner le peuple et la division administrative Ishan Division. L'orthographe Esan est aujourd'hui préférée.",
       "whyProblematic": "Ishan est desormais obsolete comme designation ethnique, bien qu'il subsiste dans des sources historiques et administratives coloniales.",
-      "contemporaryUsage": "Le nom Esan est l'appellation standard en usage academique, politique et communautaire. L'expression Ebho Esan (le peuple esan) est l'endonyme de langue esan.",
+      "contemporaryUsage": "Esan est le nom courant dans la recherche, la vie politique et les échanges au sein du peuple. En esan, les personnes concernées emploient Ebho Esan, « le peuple esan ».",
       "linguisticFamily": "FLG_BENOUECONGO",
       "ethnoLinguisticGroup": "Edoid (branche Benue-Congo, Niger-Congo)",
       "historicalRegion": "Esanland — plateau du district senatorial central d'Edo (environ 136 m d'altitude), Edo State, sud du Nigeria",
@@ -89,22 +89,26 @@
       {
         "title": "101 Last Tribes — Esan people",
         "url": "http://www.101lasttribes.com/tribes/esan.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue (SIL International) — Esan language, code ish",
         "url": "https://www.ethnologue.com/language/ish/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "ScriptSource — Esan language (ISO ish)",
         "url": "https://www.scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=ish",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "City Population — Edo State LGA data (2022)",
         "url": "https://citypopulation.de/en/nigeria/admin/NGA012__edo/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Ajugo, U. B. The True History of Ekpeyeland: 3000 BC to 2005 AD (reference comparative sur l'organisation des peuples du Delta)",
@@ -115,6 +119,153 @@
         "title": "Recherches web 2025 — sources academiques et historiques diverses sur le peuple esan",
         "url": null,
         "tier": "needs_review"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Esan désigne un peuple de l'État d'Edo, au Nigeria, au nord-est de Benin City, qui se nomme lui-même Esan. Un autre nom a longtemps servi : Ishan, employé par l'administration coloniale. On ne sait pas avec certitude d'où viennent ces noms : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Esan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ish",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple de l'État d'Edo.",
+        "periodLabel": "Écrit dès 1910",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Esan désigne un peuple et sa langue, au nord-est de Benin City ; Ishan en est l'ancienne forme anglaise. Les sources que nous avons lues ne disent pas d'où vient ce nom ; on ne sait pas avec certitude ce qu'il voulait dire d'abord.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethnologue: Languages of the World — Esan (ish)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/ish/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Réutilisée depuis les sources de la fiche."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 15 : Les Fon et les Yoruba, du delta du Niger au Cameroun",
+                "author": "E. J. Alagoa",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 485",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Esan a une forme proche, Esa, chez Northcote Thomas, anthropologue du gouvernement colonial, qui écrit « les Esa ou Ishans » autour d'Ubiaja, au nord-est des Edo. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Esa or Ishans",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Anthropological Report on the Edo-speaking Peoples of Nigeria, partie I",
+                "author": "Northcote W. Thomas",
+                "year": 1910,
+                "url": "https://archive.org/details/anthropologicalr00thom",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 5",
+                "notes": "Londres, Harrison, 1910, lu dans l'exemplaire numérisé sur archive.org. Rapport de l'anthropologue du gouvernement colonial de la Nigeria du Sud."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1880,
+              "label": "XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le peuple esan vit alors aux marches du royaume du Bénin, selon l'historien A. I. Asiwaju, qui écrit tantôt Ishan, tantôt Esan.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 26 : Dahomey, pays yoruba, Borgu (Borgou) et Bénin au XIXe siècle",
+                "author": "A. I. Asiwaju",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 748 et p. 758",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ishan",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'ancienne forme anglaise du nom Esan.",
+        "periodLabel": "Écrit dès 1910",
+        "accounts": [
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ishan apparaît par écrit chez Northcote Thomas, anthropologue du gouvernement colonial, qui le donne comme un autre nom des Esa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Esa or Ishans",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Anthropological Report on the Edo-speaking Peoples of Nigeria, partie I",
+                "author": "Northcote W. Thomas",
+                "year": 1910,
+                "url": "https://archive.org/details/anthropologicalr00thom",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 5",
+                "notes": "Londres, Harrison, 1910, lu dans l'exemplaire numérisé sur archive.org. Rapport de l'anthropologue du gouvernement colonial de la Nigeria du Sud."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Décrit en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Ishan est encore employé par l'historien E. J. Alagoa, qui précise entre parenthèses la forme Esan.",
+            "formAsWritten": "Ishan (Esan)",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 15 : Les Fon et les Yoruba, du delta du Niger au Cameroun",
+                "author": "E. J. Alagoa",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 485",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

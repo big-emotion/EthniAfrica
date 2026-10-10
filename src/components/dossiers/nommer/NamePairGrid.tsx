@@ -1,3 +1,4 @@
+import { nommerCopy } from "@/lib/i18n/copy/nommer";
 import type { NamePair } from "@/lib/dossiers/nommer/types";
 
 interface NamePairGridProps {
@@ -51,7 +52,8 @@ export const NamePairGrid = ({ pairs }: NamePairGridProps) => (
           {pair.exonym}
           {pair.pejorative ? (
             <span className="not-italic">
-              {" · exonyme dépréciatif attesté"}
+              {" · "}
+              {nommerCopy.fr.pejorativeName}
             </span>
           ) : null}
         </p>

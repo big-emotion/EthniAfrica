@@ -20,8 +20,8 @@
         "Sengwer",
         "Terik"
       ],
-      "originOfExonyms": "Le terme collectif Kalenjin a ete adopte dans les annees 1940-1950, popularise par le journaliste et animateur radio de la Seconde Guerre mondiale John Arap Chemallan qui utilisait cette formule pour s'adresser aux auditeurs. La Kalenjin Union fut fondee en 1948 a Eldoret pour federer les sous-groupes. Kalenjin signifie littéralement « je te dis » en langue nandi.",
-      "whyProblematic": "Le terme Kalenjin regroupe plus de 25 sous-groupes distincts aux dialectes parfois peu mutuellement intelligibles. Avant les annees 1950, chaque sous-groupe se definissait par son propre ethnonyme (Nandi, Kipsigis, etc.) et le terme Kalenjin etait peu utilise.",
+      "originOfExonyms": "Le terme collectif Kalenjin a ete adopte dans les annees 1940-1950, popularise par le journaliste et animateur radio de la Seconde Guerre mondiale John Arap Chemallan qui utilisait cette formule pour s'adresser aux auditeurs. La Kalenjin Union fut fondee en 1948 a Eldoret pour federer les sous-groupes. Kalenjin signifierait littéralement « je te dis » en langue nandi.",
+      "whyProblematic": "Kalenjin rassemble plus de 25 groupes distincts. Leurs parlers sont parfois assez différents pour que leurs locuteurs se comprennent difficilement. Avant les années 1950, chacun se présentait surtout par son propre nom, par exemple Nandi ou Kipsigis. Kalenjin était alors peu employé.",
       "contemporaryUsage": "Utilise officiellement au Kenya pour designer le troisieme groupe ethnique du pays (recensement KNBS 2019 : 6 358 113 personnes). Terme accepte par les membres du groupe comme identite collective politique et culturelle.",
       "linguisticFamily": "FLG_NILOTIQUE",
       "ethnoLinguisticGroup": "Nilotique meridional (Southern Nilotic)",
@@ -132,12 +132,14 @@
       {
         "title": "Ethnologue – Kalenjin macrolanguage [kln]",
         "url": "https://www.ethnologue.com/language/kln/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kenya National Bureau of Statistics – 2019 Kenya Population and Housing Census, Volume IV",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Anderson D. – Mau Mau and the Kalenjin (histoire coloniale et resistance nandi)",
@@ -153,6 +155,153 @@
         "title": "Were G.S. & Wilson D.A. – East Africa through a Thousand Years, Evans Brothers, 1968",
         "url": null,
         "tier": "needs_review"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kalenjin désigne un ensemble de peuples de l'ouest du Kenya, dont les Kipsigis, les Nandi et les Pokot, qui se nomment eux-mêmes Kalenjin. Avant les années 1940, on les appelait les peuples de langue nandi. Le nom Kalenjin voudrait dire « je vous dis » ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Kalenjin",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kln",
+        "namedBy": null,
+        "shortLine": "Un nom né dans les années 1940 ; il voudrait dire « je vous dis ».",
+        "periodLabel": "Depuis les années 1940",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kalenjin rassemble aujourd'hui les Kipsigis, les Nandi, les Tugen, les Keiyo, les Marakwet, les Pokot, les Sabaot et les Terik ; il voudrait dire à peu près « je vous dis », selon l'encyclopédie Worldmark.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Kalenjin, dans Worldmark Encyclopedia of Cultures and Daily Life",
+                "author": "B. Roberts",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/kalenjin",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Rubrique Introduction, lue sur Encyclopedia.com le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1940,
+              "to": 1949,
+              "label": "Années 1940"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kalenjin a une forme proche, kalenjok, « je vous dis », que l'animateur John Chemallan lançait à la radio pendant la Seconde Guerre mondiale. Des élèves de ces peuples forment ensuite un club « Kalenjin » à l'Alliance High School, selon l'encyclopédie Worldmark. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il rassemble existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "John Chemallan",
+                "role": "animateur de radio pendant la Seconde Guerre mondiale"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Kalenjin, dans Worldmark Encyclopedia of Cultures and Daily Life",
+                "author": "B. Roberts",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/kalenjin",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Rubrique Introduction, lue sur Encyclopedia.com le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1939,
+              "to": 1945,
+              "label": "Seconde Guerre mondiale"
+            },
+            "era": "colonial",
+            "statement": "On parle alors de kale ou de kole pour désigner les hommes de ces peuples partis combattre : le mot nomme la scarification faite au guerrier qui a tué un ennemi, selon l'encyclopédie Worldmark.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Kalenjin, dans Worldmark Encyclopedia of Cultures and Daily Life",
+                "author": "B. Roberts",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/kalenjin",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Rubrique Introduction, lue sur Encyclopedia.com le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nandi-Speaking Peoples",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "shortLine": "« Peuples de langue nandi » : le nom donné à ces peuples avant les années 1940.",
+        "periodLabel": "Avant les années 1940",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1940,
+              "label": "Avant les années 1940"
+            },
+            "statement": "Le nom Nandi-Speaking Peoples, « peuples de langue nandi », désignait ces peuples avant le nom Kalenjin, selon l'encyclopédie Worldmark.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kalenjin, dans Worldmark Encyclopedia of Cultures and Daily Life",
+                "author": "B. Roberts",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/kalenjin",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Rubrique Introduction, lue sur Encyclopedia.com le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Southern Nilo-Hamites",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "shortLine": "Un autre nom savant donné à ces peuples avant les années 1940.",
+        "periodLabel": "Avant les années 1940",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1940,
+              "label": "Avant les années 1940"
+            },
+            "statement": "Le nom Southern Nilo-Hamites, « Nilo-Hamites du Sud », servait aussi à désigner ces peuples avant le nom Kalenjin, selon l'encyclopédie Worldmark.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kalenjin, dans Worldmark Encyclopedia of Cultures and Daily Life",
+                "author": "B. Roberts",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/kalenjin",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Rubrique Introduction, lue sur Encyclopedia.com le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

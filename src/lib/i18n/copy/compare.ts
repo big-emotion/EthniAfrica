@@ -6,7 +6,7 @@ const fr = {
   title: "Comparer",
   pickerIntroduction:
     "Choisissez deux ou trois pages du même type, puis lancez la comparaison.",
-  entityTypeLegend: "Type d'entité à comparer",
+  entityTypeLegend: "Type de page à comparer",
   entityTypes: {
     peoples: "peuples",
     countries: "pays",
@@ -16,7 +16,7 @@ const fr = {
   searchPlaceholder: (kind: string) => `Rechercher ${kind}…`,
   suggestions: (kind: string) => `Suggestions ${kind}`,
   maximum: (count: number) => `${count} maximum`,
-  selectedEntities: "Entités sélectionnées",
+  selectedEntities: "Pages sélectionnées",
   remove: (name: string) => `retirer ${name}`,
   selectionRegion: "Sélection de comparaison",
   selectedCount: (count: number, maximum: number) =>
@@ -39,10 +39,10 @@ const fr = {
     pays: {
       historicalNames: "Noms à travers l'histoire",
       kingdoms: "Royaumes & Civilisations",
-      majorPeoples: "Peuples & Démographie",
+      majorPeoples: "Peuples et population",
       culture: "Culture & Société",
       historicalFacts: "Faits historiques majeurs",
-      demographics: "Peuples & Démographie",
+      demographics: "Peuples et population",
     },
     famille: {
       decolonialHeader: "Appellations et décolonisation",
@@ -56,16 +56,13 @@ const fr = {
   caption: (labels: string) => `Comparaison de ${labels}`,
   listJoiner: "et",
   tableLabel: "Tableau de comparaison",
-  comparedAttribute: "Attribut comparé",
+  comparedAttribute: "Information comparée",
   missing: "non renseigné",
   missingFor: (name: string) => ` pour ${name}`,
   referenceYear: "réf. 2025",
-  viewSources: "voir les sources",
-  editorialConfidence: (name: string) => `Confiance éditoriale — ${name}`,
-  scoreExplainer: "comment ce score est calculé",
   metadataTitle: (labels: string) => `Comparaison : ${labels}`,
   metadataDescription: (labels: string) =>
-    `Comparaison de pages AFRIK : ${labels}. Identité, langues, démographie et confiance éditoriale côte à côte.`,
+    `Comparez les pages ${labels} pour explorer les noms, les langues, les populations et les sources.`,
   metadataImageAlt: "Comparaison AFRIK",
   notFoundTitle: "Comparaison introuvable",
   notFoundBeforePattern:
@@ -73,7 +70,7 @@ const fr = {
   notFoundAfterPattern:
     "(2 à 3 identifiants du même type : peuples, pays ou familles linguistiques, sans doublon).",
   startComparison: "Commencer une comparaison",
-  reportBrokenUrl: "Signaler une URL cassée",
+  reportBrokenUrl: "Signaler un lien qui ne fonctionne pas",
   og: {
     comparison: "Comparaison",
     entityTypes: {
@@ -81,8 +78,6 @@ const fr = {
       pays: "Pays",
       famille: "Familles linguistiques",
     },
-    unaudited: "page non auditée",
-    confidence: (score: number) => `${score} % de confiance`,
   },
 };
 

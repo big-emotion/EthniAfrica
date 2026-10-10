@@ -36,30 +36,35 @@
         "title": "Glottolog 5.3 — Bambara (bamb1269)",
         "url": "https://glottolog.org/resource/languoid/id/bamb1269",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Glottolog name: Bambara; classification includes Mande. Les dialectes listés sont les sous-languoids que Glottolog rattache à bamb1269, hors languoids portant leur propre code ISO 639-3."
       },
       {
         "title": "SIL Ethnologue — Bamanankan (bam)",
         "url": "https://www.ethnologue.com/language/bam/",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Résumé public de la notice, consulté le 2026-09-29 : langue de communication élargie, née au Mali et en Côte d'Ivoire, employée comme première langue par toute sa communauté ethnique et comme langue d'enseignement. Les chiffres et le niveau détaillé de vitalité sont réservés aux abonnés : la vitalité reste donc non renseignée ici."
       },
       {
         "title": "Anthony Appiah et Henry Louis Gates Jr., Encyclopedia of Africa, Oxford University Press, 2010, p. 150",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Passage rapporté par l'article « Bambara people » de Wikipédia anglophone : « Bambara » signifierait « incroyant » ou « infidèle », nom reçu pour avoir refusé la conversion forcée à l'islam. L'ouvrage lui-même n'a pas été consulté."
       },
       {
         "title": "Jean Bazin, À chacun son Bambara, dans Au cœur de l'ethnie : ethnies, tribalisme et État en Afrique, La Découverte, Paris, 1985",
         "url": "https://glottolog.org/resource/reference/id/135688",
         "tier": "referenced",
+        "source_kind": "linguistic_reference",
         "notes": "Conclusion rapportée par l'article « Bambaras » de Wikipédia francophone et par la notice bibliographique de Glottolog : le mot a désigné des réalités floues et changeantes, tantôt flatteuses, tantôt méprisantes. L'article lui-même n'a pas été lu."
       },
       {
         "title": "Wikipédia francophone, Bambaras",
         "url": "https://fr.wikipedia.org/wiki/Bambaras",
         "tier": "unverified",
+        "source_kind": "encyclopedia",
         "notes": "Article lu pour le sens « ceux qui ont refusé de se soumettre » et pour le récit de Niangolo et Baramangolo (bamba, kulun bali, « sans pirogue »). L'article ne cite aucune source pour ces deux points."
       }
     ]

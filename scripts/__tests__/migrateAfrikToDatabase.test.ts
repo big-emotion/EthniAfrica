@@ -17,11 +17,7 @@ import {
   loadLanguages,
 } from "@/lib/afrik/loaders/languageProvenanceLoader";
 import { loadAllPeoples } from "@/lib/afrik/loaders/peopleLoader";
-import { loadNameRecords } from "@/lib/afrik/loaders/nameRecordJsonLoader";
-import {
-  emptyAppellationLoadReport,
-  loadPeopleAppellations,
-} from "@/lib/afrik/loaders/peopleAppellationLoader";
+import { peopleNameIndex } from "@/lib/afrik/peopleNameIndex";
 import {
   loadAllPatronymeDossiers,
   loadPatronymes,
@@ -30,6 +26,14 @@ import {
   loadAllPersonDossiers,
   loadPersons,
 } from "@/lib/afrik/loaders/personJsonLoader";
+import {
+  loadAllPlaceFiches,
+  loadPlaces,
+} from "@/lib/afrik/loaders/placeJsonLoader";
+import {
+  loadAllWordFiches,
+  loadWords,
+} from "@/lib/afrik/loaders/wordJsonLoader";
 import {
   loadAllRelationFiles,
   loadRelations,
@@ -45,6 +49,7 @@ import {
 import { classificationLabels } from "@/lib/translations";
 import { AFRIK_RECETTE_SUPABASE_URL } from "../lib/afrikSyncTarget";
 import { migrateAfrikToDatabase } from "../migrateAfrikToDatabase";
+import { assertCorpusLanguage } from "../ci/checkPlainLanguage";
 import type { LanguageFamily, People } from "@/types/afrik";
 import type { LanguageRecord } from "@/lib/afrik/loaders/languageCsvLoader";
 import type { LanguageLoadReport } from "@/lib/afrik/loaders/languageProvenanceLoader";
@@ -57,13 +62,14 @@ vi.mock("@/lib/afrik/loaders/languageProvenanceLoader");
 vi.mock("@/lib/afrik/loaders/peopleLoader");
 vi.mock("@/lib/afrik/loaders/countryLoader");
 vi.mock("@/lib/afrik/loaders/dossierJsonLoader");
-vi.mock("@/lib/afrik/loaders/nameRecordJsonLoader");
-vi.mock("@/lib/afrik/loaders/peopleAppellationLoader");
 vi.mock("@/lib/afrik/loaders/patronymeJsonLoader");
 vi.mock("@/lib/afrik/loaders/personJsonLoader");
+vi.mock("@/lib/afrik/loaders/placeJsonLoader");
+vi.mock("@/lib/afrik/loaders/wordJsonLoader");
 vi.mock("@/lib/afrik/loaders/relationJsonLoader");
 vi.mock("@/lib/afrik/loaders/migrationJsonLoader");
 vi.mock("@/lib/supabase/admin");
+vi.mock("../ci/checkPlainLanguage", () => ({ assertCorpusLanguage: vi.fn() }));
 // Mocked at a real seam rather than faked: `writeFicheProvenance` owns the
 // sources → fiche_revisions → assertions fabric and carries its own tests for
 // the idempotence rules. What belongs to this file is the decision of *when* a
@@ -80,10 +86,6 @@ function emptyLanguageReport(): LanguageLoadReport {
     perFamily: {},
     errors: [],
   };
-}
-
-function emptyAppellationReport() {
-  return { total: 0, inserted: 0, rejected: [], errors: [] };
 }
 
 const PRODUCTION_URL = "https://ethniafrica-production.supabase.co";
@@ -233,6 +235,7 @@ function useSupabaseDouble(options: SupabaseDoubleOptions = {}) {
 describe("migrateAfrikToDatabase", () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.mocked(assertCorpusLanguage).mockImplementation(() => {});
     vi.mocked(loadAllLanguageFamilies).mockResolvedValue([familyFixture]);
     vi.mocked(loadAllLanguages).mockReturnValue(
       (peopleFixture.content.languages?.isoCodes ?? []).map((id) => ({
@@ -256,12 +259,6 @@ describe("migrateAfrikToDatabase", () => {
       }
     );
     vi.mocked(emptyLanguageLoadReport).mockImplementation(emptyLanguageReport);
-    vi.mocked(emptyAppellationLoadReport).mockImplementation(
-      emptyAppellationReport
-    );
-    vi.mocked(loadPeopleAppellations).mockResolvedValue(
-      emptyAppellationReport()
-    );
     vi.mocked(loadLanguages).mockResolvedValue(emptyLanguageReport());
     vi.mocked(loadAllPeoples).mockResolvedValue([peopleFixture]);
     // A JSON import widens every string to `string`, so the fiche's
@@ -286,12 +283,6 @@ describe("migrateAfrikToDatabase", () => {
       inserted: 0,
       errors: [],
     });
-    vi.mocked(loadNameRecords).mockResolvedValue({
-      total: 0,
-      inserted: 0,
-      dropped: [],
-      errors: [],
-    });
     vi.mocked(loadAllPersonDossiers).mockReturnValue([]);
     vi.mocked(loadPersons).mockResolvedValue({
       total: 0,
@@ -301,6 +292,18 @@ describe("migrateAfrikToDatabase", () => {
     });
     vi.mocked(loadAllPatronymeDossiers).mockReturnValue({
       dossiers: [],
+      errors: [],
+    });
+    vi.mocked(loadAllPlaceFiches).mockReturnValue({ places: [], errors: [] });
+    vi.mocked(loadAllWordFiches).mockReturnValue({ words: [], errors: [] });
+    vi.mocked(loadWords).mockResolvedValue({
+      total: 0,
+      inserted: 0,
+      errors: [],
+    });
+    vi.mocked(loadPlaces).mockResolvedValue({
+      total: 0,
+      inserted: 0,
       errors: [],
     });
     vi.mocked(loadPatronymes).mockResolvedValue({
@@ -314,6 +317,22 @@ describe("migrateAfrikToDatabase", () => {
       alliances: 0,
       errors: [],
     });
+  });
+
+  // @req REQ-178
+  it("refuses a failed editorial check before constructing the database client", async () => {
+    vi.mocked(assertCorpusLanguage).mockImplementation(() => {
+      throw new Error("Plain-language check refused the import");
+    });
+    await expect(
+      migrateAfrikToDatabase({
+        dryRun: false,
+        target: recetteTarget,
+        writeErrorReport: false,
+      })
+    ).rejects.toThrow("Plain-language check refused");
+    expect(createAdminClient).not.toHaveBeenCalled();
+    expect(loadAllPeoples).not.toHaveBeenCalled();
   });
 
   // @req REQ-032
@@ -536,6 +555,132 @@ describe("migrateAfrikToDatabase", () => {
     expect(report.patronymes).toMatchObject({ total: 1, inserted: 1 });
   });
 
+  // @req REQ-196
+  it("checks place fiches against the loaded countries and peoples in dry-run mode", async () => {
+    vi.mocked(loadAllPlaceFiches).mockReturnValue({
+      places: [{ id: "LOC_YAMOUSSOUKRO" } as never],
+      errors: ["LOC_BROKEN.json: countryId: must be ISO"],
+    });
+    vi.mocked(loadPlaces).mockResolvedValue({
+      total: 1,
+      inserted: 0,
+      errors: [],
+    });
+    const database = useSupabaseDouble();
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: true,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    expect(loadPlaces).toHaveBeenCalledWith(
+      expect.anything(),
+      [expect.objectContaining({ id: "LOC_YAMOUSSOUKRO" })],
+      {
+        dryRun: true,
+        references: {
+          peopleIds: new Set([peopleFixture.id]),
+          countryIds: new Set([coteDIvoire.id]),
+        },
+      }
+    );
+    // A fiche the model refuses is a place that will not be served: it is
+    // reported with the others, not dropped.
+    expect(report.places).toEqual({
+      total: 2,
+      inserted: 0,
+      errors: ["LOC_BROKEN.json: countryId: must be ISO"],
+    });
+    expect(database.operations).toEqual([]);
+  });
+
+  // @req REQ-196
+  it("loads places once their countries and peoples are written", async () => {
+    const events: string[] = [];
+    vi.mocked(loadPlaces).mockImplementation(async () => {
+      events.push("places");
+      return { total: 1, inserted: 1, errors: [] };
+    });
+    useSupabaseDouble({
+      writeError: ({ table }) => {
+        if (table === "afrik_peoples") events.push("peoples");
+        if (table === "afrik_countries") events.push("countries");
+        return null;
+      },
+    });
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: false,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    expect(events.indexOf("countries")).toBeGreaterThan(-1);
+    expect(events.indexOf("countries")).toBeLessThan(events.indexOf("places"));
+    expect(events.indexOf("peoples")).toBeLessThan(events.indexOf("places"));
+    expect(report.places).toEqual({ total: 1, inserted: 1, errors: [] });
+  });
+
+  // @req REQ-196
+  it("previews word fiches in dry-run mode and reports the refused ones", async () => {
+    vi.mocked(loadAllWordFiches).mockReturnValue({
+      words: [{ id: "WRD_RACE" } as never],
+      errors: ["WRD_BROKEN.json: nameHistory: Required"],
+    });
+    vi.mocked(loadWords).mockResolvedValue({
+      total: 1,
+      inserted: 0,
+      errors: [],
+    });
+    const database = useSupabaseDouble();
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: true,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    expect(loadWords).toHaveBeenCalledWith(
+      expect.anything(),
+      [expect.objectContaining({ id: "WRD_RACE" })],
+      { dryRun: true }
+    );
+    expect(report.words).toEqual({
+      total: 2,
+      inserted: 0,
+      errors: ["WRD_BROKEN.json: nameHistory: Required"],
+    });
+    expect(database.operations).toEqual([]);
+  });
+
+  // @req REQ-196
+  it("loads word fiches on a real run", async () => {
+    vi.mocked(loadAllWordFiches).mockReturnValue({
+      words: [{ id: "WRD_RACE" } as never],
+      errors: [],
+    });
+    vi.mocked(loadWords).mockResolvedValue({
+      total: 1,
+      inserted: 1,
+      errors: [],
+    });
+    useSupabaseDouble();
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: false,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    expect(loadWords).toHaveBeenCalledWith(
+      expect.anything(),
+      [expect.objectContaining({ id: "WRD_RACE" })],
+      {}
+    );
+    expect(report.words).toEqual({ total: 1, inserted: 1, errors: [] });
+  });
+
   it("upserts complete source content in hierarchy order and verifies the result", async () => {
     const database = useSupabaseDouble({
       rows: {
@@ -657,6 +802,81 @@ describe("migrateAfrikToDatabase", () => {
       ({ table }) => table === "afrik_peoples"
     )!;
     expect(peopleOperation.row.spelling_aliases).toEqual(["Gour", "Gor"]);
+  });
+
+  // @req REQ-196
+  it("writes each fiche's nameHistory onto name_history, and null where a fiche has none", async () => {
+    const nameHistory = {
+      summary: "Le nom Bété a plusieurs origines, présentées plus bas.",
+      names: [],
+    } as unknown as People["nameHistory"];
+    vi.mocked(loadAllLanguageFamilies).mockResolvedValue([
+      { ...familyFixture, nameHistory },
+    ]);
+    vi.mocked(loadAllPeoples).mockResolvedValue([
+      { ...peopleFixture, nameHistory },
+    ]);
+    // The real Côte d'Ivoire fiche now carries a nameHistory; this case needs
+    // a country without one.
+    vi.mocked(loadAllCountries).mockResolvedValue([
+      { ...coteDIvoire, nameHistory: undefined } as Country,
+    ]);
+    const database = useSupabaseDouble({
+      rows: {
+        afrik_language_families: [
+          { id: afroasiaticFamily.id, content: {} },
+          { id: "FLG_KROU", content: {} },
+        ],
+        afrik_peoples: [{ id: betePeople.id, content: {} }],
+        afrik_countries: [{ id: coteDIvoire.id, content: {} }],
+      },
+    });
+
+    await migrateAfrikToDatabase({
+      dryRun: false,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    const rowOf = (table: string) =>
+      database.operations.find((operation) => operation.table === table)!.row;
+    expect(rowOf("afrik_language_families").name_history).toEqual(nameHistory);
+    expect(rowOf("afrik_peoples").name_history).toEqual(nameHistory);
+    expect(rowOf("afrik_countries").name_history).toBeNull();
+  });
+
+  // @req REQ-196
+  it("writes each people's name index onto name_index, and reports the segments the grammar refused", async () => {
+    const database = useSupabaseDouble({
+      rows: {
+        afrik_language_families: [
+          { id: afroasiaticFamily.id, content: {} },
+          { id: "FLG_KROU", content: {} },
+        ],
+        afrik_peoples: [{ id: betePeople.id, content: {} }],
+        afrik_countries: [{ id: coteDIvoire.id, content: {} }],
+      },
+    });
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: false,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    const expected = peopleNameIndex(peopleFixture);
+    const peopleRow = database.operations.find(
+      ({ table }) => table === "afrik_peoples"
+    )!.row;
+    expect(expected.entries.length).toBeGreaterThan(0);
+    expect(peopleRow.name_index).toEqual(expected.entries);
+    expect(report.appellations).toMatchObject({
+      total: expected.entries.length,
+      inserted: expected.entries.length,
+      rejected: expected.rejected.map(
+        (segment) => `${peopleFixture.id}: ${segment}`
+      ),
+    });
   });
 
   // @req REQ-032

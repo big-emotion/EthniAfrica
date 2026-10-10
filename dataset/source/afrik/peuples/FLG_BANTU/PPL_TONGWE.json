@@ -78,7 +78,8 @@
       {
         "title": "Joshua Project, Tongwe in Tanzania",
         "url": "https://joshuaproject.net/people_groups/15555",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Tongwe Trust",
@@ -93,17 +94,20 @@
       {
         "title": "Cambridge University Press, Culture and subsistence ecology of the Tongwe",
         "url": "https://www.cambridge.org/core/books/mahale-chimpanzees/culture-and-subsistence-ecology-of-the-tongwe-and-their-significance-in-chimpanzee-research/D5ABAE77990DCDEA81B9CC7EE3CD4E39",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue, Tongwe language TNY",
         "url": "https://www.ethnologue.com/language/tny/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes, Tongwe people",
         "url": "https://www.101lasttribes.com/tribes/tongwe.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

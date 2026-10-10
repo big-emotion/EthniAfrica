@@ -1,0 +1,8 @@
+# An ai_generated source added by this push is searched on the web (claude -p,
+# on the operator's subscription, no API key) and put before a person to decide.
+# Silent when the push adds none. Bypass: git push --no-verify — CI still holds
+# the ratchet (npm run check:ai-sources).
+npx tsx scripts/hooks/prePushAiSources.ts || {
+  echo "❌ This push adds ai_generated sources awaiting a decision"
+  exit 1
+}

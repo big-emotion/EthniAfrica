@@ -14,9 +14,9 @@
         "Transvaal Ndebele (pour les Ndebele d'Afrique du Sud)",
         "isiNdebele"
       ],
-      "originOfExonyms": "Le terme Ndebele proviendrait d'un ancêtre éponyme nommé roi Ndebele (groupe Mbo-Nguni). 'Matabele' est la forme anglicisée utilisée par les Britanniques pour désigner les Ndebele du Zimbabwe (Matabeleland), dérivé du nom sotho-tswana 'Matebele' (avec le préfixe pluriel 'ma-'). L'ensemble des groupes Ndebele partage une origine Nguni commune (Bantu Zone S), bien que les différents sous-groupes aient des histoires et des cultures notablement divergentes.",
+      "originOfExonyms": "Le terme Ndebele proviendrait d'un ancêtre éponyme nommé roi Ndebele (groupe Mbo-Nguni). 'Matabele' est la forme anglicisée utilisée par les Britanniques pour désigner les Ndebele du Zimbabwe (Matabeleland) ; ce nom viendrait du nom sotho-tswana 'Matebele' (avec le préfixe pluriel 'ma-'). L'ensemble des groupes Ndebele partage une origine Nguni commune (Bantu Zone S), bien que les différents sous-groupes aient des histoires et des cultures notablement divergentes.",
       "whyProblematic": "Le terme 'Ndebele' recouvre en réalité plusieurs groupes distincts dont l'histoire et les cultures ont divergé depuis plusieurs siècles. Les Ndebele d'Afrique du Sud (Ndzundza/Manala) sont distincts des Ndebele du Zimbabwe (Matabele/Northern Ndebele, fondés par Mzilikazi au 19e siècle). Un petit groupe Ndebele existe également au Mozambique (descendants de l'expansion nguni du Mfecane). Les langues isiNdebele du Zimbabwe (proche du zoulou) et isiNdebele d'Afrique du Sud (influencé par le sotho) sont distinctes mais mutuellement partiellement intelligibles.",
-      "contemporaryUsage": "Le terme AmaNdebele est utilisé par tous les sous-groupes comme endonyme. Dans les contextes académiques, on distingue Northern Ndebele (Zimbabwe), Southern Ndebele (Afrique du Sud), et Ndebele du Mozambique. Cette fiche macro couvre l'ensemble des populations se réclamant de l'identité Ndebele à travers l'Afrique australe.",
+      "contemporaryUsage": "Tous les groupes emploient AmaNdebele pour se nommer eux-mêmes. Les chercheurs distinguent les Northern Ndebele du Zimbabwe, les Southern Ndebele d'Afrique du Sud et les Ndebele du Mozambique. Cette fiche rassemble les populations qui se reconnaissent comme Ndebele à travers l'Afrique australe.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou (Zone S) — groupe Nguni (sous-groupes Mbo et Khumalo)",
       "historicalRegion": "Afrique australe — Zimbabwe (Matabeleland), Afrique du Sud (Gauteng, Mpumalanga, Limpopo), Mozambique (Sofala), Botswana",
@@ -110,27 +110,32 @@
       {
         "title": "Encyclopaedia Britannica — Ndebele (Zimbabwean people)",
         "url": "https://www.britannica.com/topic/Ndebele-Zimbabwean-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "South African History Online — Ndebele",
         "url": "https://sahistory.org.za/article/ndebele",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Joshua Project — Ndebele, Southern in South Africa",
         "url": "https://joshuaproject.net/people_groups/15054",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Northern Ndebele (nde)",
         "url": "https://www.ethnologue.com/language/nde/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Southern Ndebele (nbl)",
         "url": "https://www.ethnologue.com/language/nbl/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

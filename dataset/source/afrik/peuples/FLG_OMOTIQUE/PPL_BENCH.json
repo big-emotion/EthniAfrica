@@ -9,8 +9,8 @@
       "mainName": "Bench",
       "selfAppellation": "Mer Bench",
       "exonyms": ["Gimira", "Gebra", "Shenon", "Benchnon", "Mernon"],
-      "originOfExonyms": "Le terme Gimira est l'exonyme historique utilisé par les Amhara et les Éthiopiens du nord pour désigner le peuple Bench. Il a été largement employé dans la littérature coloniale et académique ancienne. Le terme Bench est devenu le nom officiel reconnu par l'État éthiopien. Mer Bench est l'auto-désignation en langue bench. Les formes Benchnon, Shenon et Mernon correspondent à trois variétés dialectales de la langue.",
-      "whyProblematic": "Le terme Gimira, exonyme amhara, est désormais considéré comme péjoratif par certains membres de la communauté. Il reste présent dans la littérature académique et linguistique ancienne.",
+      "originOfExonyms": "Les Amhara et les Éthiopiens du nord ont historiquement appelé les Bench Gimira. Ce nom apparaît souvent dans les anciennes publications coloniales et de recherche. Bench est devenu le nom officiel reconnu par l'État éthiopien. Dans leur langue, les personnes concernées se nomment Mer Bench. Benchnon, Shenon et Mernon désignent trois parlers de cette langue.",
+      "whyProblematic": "Certains membres de la communauté considèrent désormais Gimira, le nom donné par les Amhara, comme méprisant. Il reste présent dans les anciennes recherches sur le peuple et sa langue.",
       "contemporaryUsage": "Le terme Bench est officiellement reconnu et utilisé dans les divisions administratives éthiopiennes (Bench Maji Zone, anciennement dans le SNNPR, désormais dans le South West Ethiopia Peoples' Regional State). Mer Bench est l'auto-désignation courante.",
       "linguisticFamily": "FLG_OMOTIQUE",
       "ethnoLinguisticGroup": "Omotique du Nord (sous-groupe Gimojan)",
@@ -86,12 +86,14 @@
       {
         "title": "Ethnologue — Bench language (bcq)",
         "url": "https://www.ethnologue.com/language/bcq/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Bench people",
         "url": "https://www.101lasttribes.com/tribes/bench.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Rapold, Christian. 2006. Towards a Grammar of Benchnon. Dissertation, Leiden University",
@@ -101,12 +103,14 @@
       {
         "title": "Recensement national de la population et du logement de l'Éthiopie 2007 (CSA). Données Bench Maji Zone",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Fernyhough, Timothy D. 1994. Human rights and precolonial Africa. In: Human Rights and Governance in Africa, pp. 55-99",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

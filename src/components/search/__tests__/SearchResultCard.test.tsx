@@ -13,6 +13,7 @@ import {
   getPatronymeRoute,
   getPeopleRoute,
   getPersonRoute,
+  getPlaceRoute,
 } from "@/lib/routing";
 
 vi.mock("next/link", () => ({
@@ -260,5 +261,38 @@ describe("SearchResultCard", () => {
 
     expect(card.className).toContain("afh-accent-neutral");
     expect(card.className).not.toContain("--afh-cat-");
+  });
+});
+
+describe("SearchResultCard — place", () => {
+  // @req REQ-196
+  it("labels a place and links it to its own page", () => {
+    renderCard({
+      type: "place",
+      id: "LOC_YAMOUSSOUKRO",
+      name: "Yamoussoukro",
+      countryIds: ["CIV"],
+    });
+
+    expect(screen.getByRole("link", { name: "Yamoussoukro" })).toHaveAttribute(
+      "href",
+      getPlaceRoute("fr", "LOC_YAMOUSSOUKRO")
+    );
+    expect(screen.getByText("Lieu")).toBeInTheDocument();
+  });
+});
+
+describe("SearchResultCard — word", () => {
+  // A word has no fiche page: its page is the search result for it, where
+  // its name history is the answer.
+  // @req REQ-196
+  it("labels a word and links it to its own search result page", () => {
+    renderCard({ type: "word", id: "WRD_RACE", name: "race" });
+
+    expect(screen.getByRole("link", { name: "race" })).toHaveAttribute(
+      "href",
+      `${getLocalizedRoute("fr", "search")}?q=race`
+    );
+    expect(screen.getByText("Mot")).toBeInTheDocument();
   });
 });

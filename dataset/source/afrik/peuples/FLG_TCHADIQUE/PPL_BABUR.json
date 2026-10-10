@@ -9,7 +9,7 @@
       "mainName": "Babur",
       "selfAppellation": "Bura-Pabir / Mya Bura",
       "exonyms": [
-        "Babur (exonyme haoussa)",
+        "Babur (nom donné par les Haoussa)",
         "Baburawa",
         "Bura-Pabir",
         "Pabir",
@@ -21,7 +21,7 @@
         "Huve",
         "Huviya"
       ],
-      "originOfExonyms": "Le terme Babur est un exonyme haoussa. Les Haoussa appellent ce peuple Babur ou Baburawa. Le nom Bura-Pabir designe les deux composantes du groupe : les Bura (autochtones de la region de Biu) et les Pabir (descendants du conquerant Yamta-ra-Wala et de ses compagnons qui s'installerent parmi les Bura au 16e siecle). Le terme Mya Bura signifie litteralement 'langue Bura'.",
+      "originOfExonyms": "Les Haoussa appellent ce peuple Babur ou Baburawa. Bura-Pabir désigne ses deux composantes. Les Bura sont originaires de la région de Biu. Les Pabir descendent du conquérant Yamta-ra-Wala et de ses compagnons, installés parmi les Bura au XVIe siècle. Mya Bura signifierait littéralement 'langue Bura'.",
       "whyProblematic": "La distinction entre Babur et Bura-Pabir est source de confusion. Babur designe generalement l'ensemble du groupe vu de l'exterieur, tandis que Bura-Pabir reflete la dualite interne entre les Bura autochtones et les Pabir nobles. Les Pabir constituent la classe dirigeante de l'emirat de Biu et les Bura leur ont longtemps resiste. La denomination Babur, utilisee par les colonisateurs britanniques, efface cette distinction politique importante.",
       "contemporaryUsage": "Le terme Babur est utilise en anglais et en haoussa. Les membres du groupe se designent eux-memes comme Bura ou Bura-Pabir selon le contexte. Depuis l'independance du Nigeria, le nom Bura-Pabir est prefere dans les documents officiels et les travaux academiques. La langue est repertoriee sous le code bwr dans la base ISO 639-3.",
       "linguisticFamily": "FLG_TCHADIQUE",
@@ -103,32 +103,38 @@
       {
         "title": "Blueprint Newspapers — Bura Babur nation in perspective",
         "url": "https://blueprint.ng/bura-babur-nation-in-perspective-their-tradition-culture-and-language/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "SIL Ethnologue — Bura-Pabir (bwr)",
         "url": "https://www.ethnologue.com/language/bwr/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog 5.3 — Bura-Pabir (bura1292)",
         "url": "https://glottolog.org/resource/languoid/id/bura1292",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Bura people",
         "url": "https://www.101lasttribes.com/tribes/bura.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Bura, Pabir in Nigeria",
         "url": "https://joshuaproject.net/people_groups/11022",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Newman, Paul. The Chadic Language Family: Classification and Name Index. CNRS, 2013",
         "url": "https://megatchad.cepam.cnrs.fr/publications/Newman-2013-Chadic-Classification-and-Index.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

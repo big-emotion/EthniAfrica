@@ -9,12 +9,12 @@
       "mainName": "Swazi",
       "selfAppellation": "Emaswati (pluriel) / Liswati (singulier)",
       "exonyms": [
-        "Swazi (exonyme anglais issu du roi Mswati II)",
+        "Swazi (nom anglais qui viendrait du roi Mswati II)",
         "Swati (forme alternative, officielle en siSwati)",
         "bakaNgwane (les gens de Ngwane, appellation historique)"
       ],
-      "originOfExonyms": "Le nom Swazi est un exonyme dérivé du nom du roi Mswati II (r. 1839-1865), qui unifia et consolida la nation swazi. En siSwati, la forme correcte est Liswati (singulier) ou Emaswati (pluriel). L'appellation historique bakaNgwane (les gens de Ngwane) fait référence au chef Ngwane III, considéré comme le premier roi du royaume moderne d'Eswatini.",
-      "whyProblematic": "Le terme Swazi est un exonyme européanisé. Les locuteurs natifs utilisent Emaswati ou siSwati. La double appellation Swazi/Swati crée parfois une confusion dans les sources anglophones et francophones.",
+      "originOfExonyms": "Swazi viendrait du nom du roi Mswati II, qui a régné de 1839 à 1865 et a unifié et renforcé la nation swazi. C'est un nom donné au peuple de l'extérieur. En siSwati, on emploie Liswati pour une personne et Emaswati pour plusieurs. L'ancien nom bakaNgwane, les gens de Ngwane, renvoie au chef Ngwane III, considéré comme le premier roi du royaume moderne d'Eswatini.",
+      "whyProblematic": "Swazi est une adaptation européenne du nom. Dans leur langue, les personnes concernées emploient Emaswati ou siSwati. La présence des deux formes Swazi et Swati crée parfois une confusion dans les sources anglaises et françaises.",
       "contemporaryUsage": "Swazi est couramment utilisé en anglais et français ; siSwati est la désignation officielle dans le royaume d'Eswatini (anciennement Swaziland, renommé en 2018 par le roi Mswati III). Le siSwati est langue officielle d'Eswatini et l'une des douze langues officielles de l'Afrique du Sud.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou Nguni (Zone S, groupe Tekela)",
@@ -109,34 +109,311 @@
       {
         "title": "SIL Ethnologue — siSwati (ssw)",
         "url": "https://www.ethnologue.com/language/ssw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Eswatini",
         "url": "https://www.cia.gov/the-world-factbook/countries/eswatini/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Gillis, D. Hugh. The Kingdom of Swaziland: Studies in Political History. Greenwood Press, 1999",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Kuper, Hilda. The Swazi: A South African Kingdom. Holt, Rinehart & Winston, 1963",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Statistics South Africa — Census 2022 Statistical Release",
         "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "Publication P0301.4, tableau 2.8 : le siSwati est la langue la plus parlée dans le ménage pour 2,8 % de la population sud-africaine en 2022."
       },
       {
         "title": "UNFPA Eswatini — Swaziland Releases Population Count from 2017 Census",
         "url": "https://eswatini.unfpa.org/en/news/swaziland-releases-population-count-2017-census",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Résultats préliminaires du recensement de 2017 : 1 093 238 habitants."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Swazi désigne un peuple d'Afrique australe, en Eswatini et dans la province sud-africaine du Mpumalanga, qui se nomme lui-même Emaswati, et Liswati pour une seule personne. D'autres noms existent : Swazi, la forme zouloue la plus courante, et Ngwane, le nom d'un ancien roi qui désigne encore la nation. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Emaswati",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ssw",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent en siswati : Emaswati, et Liswati pour une seule personne.",
+        "usedIn": ["ssw"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Emaswati est celui que ce peuple se donne en siswati, et Liswati désigne une seule personne. Swazi en est la forme zouloue, la plus courante en anglais d'Afrique du Sud, selon le Dictionary of South African English. Les explications de son origine sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Swati »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/swati/e07032",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Swazi »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/swazi/e07033",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1977,
+              "to": 1977,
+              "label": "1977"
+            },
+            "era": "modern",
+            "statement": "Le nom Emaswati a une forme proche, Amaswati, dans un article du journal sud-africain The World qui parle du « chef des Amaswati » de la région de Johannesburg, selon le Dictionary of South African English. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple qu'elle désigne portait déjà le nom de Swazi depuis plus d'un siècle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Swati »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/swati/e07032",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de The World, 28 septembre 1977."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Publiée en 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Emaswati, comme Swazi, viendrait du roi Mswati, aussi appelé Mswazi : c'est à son avènement, à la mort de son père Sobhuza en 1840, que le peuple ngwane-dlamini aurait pris le nom de Swazi, selon Leonard D. Ngcongco. Le Dictionary of South African English rattache aussi Emaswati au nom de umSwati, chef qui unit les Swazi dans les années 1840.",
+            "hypothesisGroup": "origine du nom Swazi",
+            "actors": [
+              {
+                "name": "Mswati",
+                "role": "roi des Swazi à partir de 1840, fils de Sobhuza"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129",
+                "notes": "Édition française, lue dans le PDF diffusé par l'UNESCO."
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Swati »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/swati/e07032",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Swazi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "zul",
+        "namedBy": null,
+        "shortLine": "La forme zouloue du nom, la plus courante en anglais et en français, écrite depuis 1846.",
+        "usedIn": ["eng", "fra"],
+        "periodLabel": "Écrit depuis 1846 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Swazi est la forme la plus courante en anglais d'Afrique du Sud, pour le peuple comme pour sa langue ; c'est la forme zouloue du nom, selon le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Swati »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/swati/e07032",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Swazi figure dans la convention de Pretoria de 1881, qui promet de reconnaître pleinement « l'indépendance des Swazis » à l'intérieur des frontières du Swaziland, selon le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Swazi »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/swazi/e07033",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de la convention de Pretoria de 1881, d'après le recueil de S. W. Eybers paru en 1918."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1846,
+              "to": 1846,
+              "label": "16 octobre 1846"
+            },
+            "era": "polity",
+            "statement": "Le nom Swazi a une forme proche, Amaswazi, dans le journal Natal Witness, qui fait du fleuve Pongola la frontière entre les Zoulous et les Amaswazi, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume qu'il désigne existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Swazi »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/swazi/e07033",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation du Natal Witness, 16 octobre 1846."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Swazi viendrait du zoulou amaSwazi, adaptation du siswati emaSwati ; à moins que la forme en z ne garde une ancienne prononciation des Swazi eux-mêmes, selon le Dictionary of South African English, qui ne tranche pas.",
+            "hypothesisGroup": "origine du nom Swazi",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Swazi »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/swazi/e07033",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ngwane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ssw",
+        "namedBy": null,
+        "shortLine": "Le nom d'un ancien roi, qui désigne encore la nation, comme dans libandla lakaNgwane.",
+        "usedIn": ["ssw"],
+        "periodLabel": "Fin du XVIe siècle, selon la tradition ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1963,
+              "to": 1963,
+              "label": "Décrit en 1963"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngwane reste employé par les Swazi pour leur nation : le grand conseil du royaume s'appelle libandla lakaNgwane, le conseil de la nation ngwane, selon l'anthropologue Hilda Kuper.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Swazi: a South African kingdom",
+                "author": "Hilda Kuper",
+                "year": 1963,
+                "url": "https://archive.org/details/hilda-kuper-the-swazi-a-south-african-kingdom-holt-rinehart-and-winston-1964",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 34",
+                "notes": "Holt, Rinehart and Winston, lu sur une copie non officielle mise en ligne sur archive.org."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1840,
+              "label": "Début du XIXe siècle, avant 1840"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngwane désigne, avec celui de Dlamini, le peuple que conduit le roi Sobhuza sur les rives du Pongolo ; il deviendra plus tard le peuple swazi, selon Leonard D. Ngcongco. Les clans de ce premier groupe ngwane seront connus sous le nom de bemdzabuko, les « vrais Swazi ».",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 125 et 128",
+                "notes": "Édition française, lue dans le PDF diffusé par l'UNESCO."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Fin du XVIe siècle, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngwane est celui d'un roi, Ngwane II, que les historiens swazi placent vers la fin du XVIe siècle : c'est le premier roi honoré dans les rites d'aujourd'hui, selon les récits recueillis par Hilda Kuper. C'est la plus ancienne trace de ce nom que le projet connaît. Le récit ne dit pas si la nation tient son nom de ce roi.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Swazi: a South African kingdom",
+                "author": "Hilda Kuper",
+                "year": 1963,
+                "url": "https://archive.org/details/hilda-kuper-the-swazi-a-south-african-kingdom-holt-rinehart-and-winston-1964",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Holt, Rinehart and Winston, lu sur une copie non officielle mise en ligne sur archive.org."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

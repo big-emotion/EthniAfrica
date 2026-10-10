@@ -3,7 +3,7 @@ import type { Source } from "@/api/v2/schemas/sources";
 import { createServerClient } from "@/lib/supabase/server";
 import { walkRanges } from "@/lib/supabase/queries/walkRanges";
 import { escapeSearchTerm } from "@/lib/supabase/searchTerm";
-import { sourceStandingLabel } from "@/lib/glossaire/vocabularies";
+import { sourceKindLabel } from "@/lib/glossaire/vocabularies";
 import {
   SOURCE_KINDS,
   SOURCE_TIERS,
@@ -56,8 +56,17 @@ export interface SourcesFacetChoice {
   count: number;
 }
 
+/**
+ * A standing and how many sources hold it, with no label: doctrine §1.1 keeps
+ * the tier off every reader surface, so there is no reader wording to carry.
+ */
+export interface SourcesStandingCount {
+  id: SourceStanding;
+  count: number;
+}
+
 export interface SourcesFacetChoices {
-  standings: SourcesFacetChoice[];
+  standings: SourcesStandingCount[];
   sourceKinds: SourcesFacetChoice[];
   decades: SourcesFacetChoice[];
   /** Every source in the corpus, for the copy that owns up to a sparse facet. */
@@ -352,15 +361,13 @@ export async function getSourcesFacetChoices(): Promise<SourcesFacetChoices> {
       .filter((standing) => standings.has(standing))
       .map((standing) => ({
         id: standing,
-        // French by contract: the endpoint has no locale parameter, and its
-        // consumers pin these values. Wiring a `lang` through is an API
-        // decision, not a label one.
-        label: sourceStandingLabel(standing, "fr"),
         count: standings.get(standing) ?? 0,
       })),
     sourceKinds: SOURCE_KINDS.filter((kind) => kinds.has(kind)).map((kind) => ({
       id: kind,
-      label: kind,
+      // French by contract: the directory is French-only and no caller passes
+      // a locale.
+      label: sourceKindLabel(kind, "fr"),
       count: kinds.get(kind) ?? 0,
     })),
     decades: [...decades.entries()]

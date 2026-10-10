@@ -101,7 +101,7 @@ describe("FicheStatCard", () => {
     expect(
       within(card).getByText("aucune langue documentée ici")
     ).toBeVisible();
-    expect(within(card).queryByText("Donnée manquante")).toBeNull();
+    expect(within(card).queryByText("Information manquante")).toBeNull();
   });
 
   // A people panel carries two words among its counts — a main language and a
@@ -143,7 +143,7 @@ describe("FicheStatCard", () => {
 
     expect(
       within(screen.getByTestId("stat-card-branches")).getByText(
-        "Donnée manquante"
+        "Information manquante"
       )
     ).toBeVisible();
   });

@@ -79,17 +79,20 @@
       {
         "title": "101 Last Tribes – Arbore people",
         "url": "http://www.101lasttribes.com/tribes/arbore.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Trip Down Memory Lane – Arbore People",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2013/01/the-arbore-are-cushitic-omo-valley.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue – Arbore [arv]",
         "url": "https://www.ethnologue.com/language/arv/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Sasse H.-J., The Cushitic languages of the Omo-Tana group, 1974",

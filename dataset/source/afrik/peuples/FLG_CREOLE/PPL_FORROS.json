@@ -14,7 +14,7 @@
         "Sãotomenses (au sens large)",
         "Crioulos de São Tomé"
       ],
-      "originOfExonyms": "Le terme forro vient du portugais forro, signifiant libre ou affranchi, désignant les esclaves libérés ou leurs descendants nés libres. La désignation filhos da terra (enfants de la terre) était utilisée par les élites forros pour affirmer leur enracinement sur l'île par opposition aux travailleurs migrants. Le terme Sãotomense désigne parfois l'ensemble de la population créole de São Tomé, mais les Forros s'en distinguent comme groupe spécifique.",
+      "originOfExonyms": "Le terme forro viendrait du portugais forro, qui veut dire « libre » ou « affranchi », désignant les esclaves libérés ou leurs descendants nés libres. La désignation filhos da terra (enfants de la terre) était utilisée par les élites forros pour affirmer leur enracinement sur l'île par opposition aux travailleurs migrants. Le terme Sãotomense désigne parfois l'ensemble de la population créole de São Tomé, mais les Forros s'en distinguent comme groupe spécifique.",
       "whyProblematic": "L'identité forro est complexe et stratifiée : elle désigne à la fois les descendants d'esclaves affranchis et une élite créole luso-africaine qui revendiquait une proximité avec les Portugais. La frontière entre Forros de souche africaine et Mestiços (métis luso-africains) est floue et contestée. Par ailleurs, la langue forro (cri) est aujourd'hui menacée d'extinction au profit du portugais.",
       "contemporaryUsage": "Les Forros se définissent comme le groupe fondateur de la nation santoméenne. Malgré la marginalisation de la langue forro, l'identité forro reste revendiquée. La diaspora santoméenne aux Pays-Bas et au Portugal réinvestit le forro comme marqueur identitaire distinctif.",
       "linguisticFamily": "FLG_CREOLE",
@@ -109,7 +109,8 @@
       {
         "title": "Britannica — Forros, people of São Tomé and Príncipe",
         "url": "https://www.britannica.com/topic/Forros",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Navetur — Our Population",
@@ -119,7 +120,8 @@
       {
         "title": "SOAS — Forro in the European Diaspora",
         "url": "https://glocal.soas.ac.uk/comela2020-5/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

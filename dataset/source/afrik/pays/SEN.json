@@ -6,6 +6,322 @@
   "summary": "L'origine du nom « Sénégal » est débattue et aucune hypothèse ne fait autorité : le rattachement aux Sanhaja, confédération berbère que le français nomme Zenaga, est le plus répandu, l'explication wolof « sunu gaal », « notre pirogue », remonte à l'abbé Boilat en 1853, et l'une comme l'autre ont leurs contradicteurs. Empire du Jolof, royaumes sérères et Fouta Toro s'y sont partagé le territoire. Wolof, Peuls, Sérères, Diola, Mandinka et Soninké y perpétuent la parole des griots.",
   "etymology": "L'origine du nom « Sénégal » n'est pas établie et reste discutée. L'hypothèse la plus répandue le rattache aux Sanhaja, confédération berbère du Sahara occidental que le français et le portugais nomment Zenaga ; Théodore Monod et Raymond Mauny la défendent en 1960 contre l'explication wolof. Cette lecture n'est d'ailleurs pas nouvelle : une carte anglaise de la Sénégambie du XVIIIe siècle, copiée d'une carte de d'Anville publiée à Paris en 1751, grave sur le Sahara « le désert habité par les Maures Zenhaga, d'où le fleuve Sénégal tire son nom », soit un siècle avant Boilat. Elle est contestée de longue date. Dans la première édition de l'Encyclopédie de l'Islam, Maurice Delafosse constate que la majorité des auteurs modernes s'y rallient, juge pourtant le rapprochement fortuit, et propose une autre source : un royaume de la basse vallée du fleuve, que les textes anciens nomment Sanghana chez al-Bakri au XIe siècle, Senegany sur un portulan de 1351, puis Sanaga et Senega chez les navigateurs du XVe siècle. L'explication wolof « sunu gaal », « notre pirogue », est plus tardive et d'origine unique : l'abbé Boilat l'avance dans ses Esquisses sénégalaises en 1853, et rien ne l'atteste avant lui. Paul Marty lui oppose en 1917 le terme hassanya Singhane, par lequel les Maures désignaient le Cayor, et tient les étymologies berbères pour fantaisistes. Saliou Kandji les récuse toutes en 2006. Reste une question que ces lectures ne posent pas : comment les peuples du fleuve l'appelaient-ils ? En 1573, le géographe espagnol Luis del Mármol Carvajal note deux réponses. Les Toucouleurs disent Mayo, qui veut simplement dire « le fleuve » en pulaar. Les Soninkés de Ngalam disent Colle. Aucun de ces deux noms n'a survécu sur les cartes, et celui qui l'a emporté leur est étranger.",
   "nameOriginActor": "Le nom est d'abord celui du fleuve, porté par les navigateurs et les cartographes européens à partir du XVe siècle, puis étendu au territoire. Ce qu'ils ont transcrit reste discuté : un nom berbère, celui d'un royaume de la basse vallée, un terme hassanya ou une phrase wolof, selon les auteurs. Aucune de ces attributions n'est établie.",
+  "nameHistory": {
+    "summary": "Le nom Sénégal désigne un pays d'Afrique de l'Ouest, la République du Sénégal, qui porte le nom du fleuve qui le borde au nord et à l'est. Les peuples riverains donnaient à ce fleuve d'autres noms, comme Mayo ou Colle. Les sources ne s'accordent pas sur l'origine du nom Sénégal ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Sénégal",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un fleuve, devenu celui du pays ; son origine reste discutée.",
+        "periodLabel": "Écrit dès le XVe siècle, peut-être dès le XIe ; nom de l'État depuis 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": null,
+              "label": "Depuis 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Sénégal est celui de la République du Sénégal, qui le tient du fleuve formant ses frontières au nord et à l'est. L'État se retire de la Fédération du Mali et proclame son indépendance le 20 août 1960, selon l'Office of the Historian.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Senegal",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/69e6292c3e3b4e9340cc92d8/Senegal_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Fiche officielle britannique de toponymie, lue le 9 octobre 2026. Elle indique que le pays porte le nom du fleuve qui forme ses frontières au nord et à l'est."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Senegal",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/senegal",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Elle rapporte que la République du Sénégal se retire de la Fédération du Mali et proclame son indépendance le 20 août 1960."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sénégal désigne d'abord un fleuve d'Afrique de l'Ouest, puis le pays qu'il borde. Son origine est discutée depuis longtemps : en 2006, le journaliste et ancien ambassadeur Saliou Kandji récuse encore toutes les explications proposées avant lui. Nous présentons ces explications une à une.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Senegal",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/69e6292c3e3b4e9340cc92d8/Senegal_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Fiche officielle britannique de toponymie, lue le 9 octobre 2026. Elle indique que le pays porte le nom du fleuve qui forme ses frontières au nord et à l'est."
+              },
+              {
+                "title": "Senegal, dans Encyclopaedia of Islam, première édition",
+                "author": "Maurice Delafosse",
+                "year": null,
+                "url": "https://doi.org/10.1163/2214-871X_ei1_SIM_5235",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Encyclopédie publiée par Brill entre 1913 et 1936. Le premier paragraphe de l'entrée, en accès libre, a été lu le 9 octobre 2026 ; la suite est payante et n'a pas été lue."
+              },
+              {
+                "title": "Sénégal n'est pas Sunugal, ou De l'étymologie du toponyme Sénégal",
+                "author": "Amady Aly Dieng",
+                "year": 2006,
+                "url": "http://www.seneweb.com/news/Immigration/s-n-gal-n-est-pas-sunugal-ou-de-l-tymologie-du-toponyme-s-n-gal_n_5047.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Compte rendu du livre de Saliou Kandji (Presses universitaires de Dakar, 2006), publié par Seneweb le 1er septembre 2006 et lu le 9 octobre 2026. Il date de 1850 les Esquisses sénégalaises, parues en 1853, et cite Paul Marty sous une référence erronée (Paris, 1971). Nous n'avons lu ni le livre de Kandji, ni Marty, ni l'édition de Monod et Mauny."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1453,
+              "to": 1453,
+              "label": "Chronique achevée en 1453"
+            },
+            "era": "polity",
+            "statement": "Le nom Sénégal est écrit Çanaga dans la chronique portugaise de Gomes Eanes de Zurara. Il y nomme le fleuve que les navigateurs portugais cherchent le long de la côte, d'après ce que le prince Henri a appris de prisonniers azenègues. C'est la plus ancienne trace de ce nom que le projet a lue lui-même ; Maurice Delafosse en rapporte de plus anciennes. Le fleuve et les peuples de ses rives existaient bien avant lui.",
+            "formAsWritten": "Çanaga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Chronicle of the Discovery and Conquest of Guinea, vol. II",
+                "author": "Gomes Eanes de Zurara, traduit par C. Raymond Beazley et Edgar Prestage",
+                "year": 1899,
+                "url": "https://archive.org/details/chroniclediscov01presgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 177 et sa note",
+                "notes": "Hakluyt Society, Londres. Traduction anglaise de la chronique portugaise, que l'auteur achève le 18 février 1453 selon l'introduction du premier volume. La note de la page 177 donne la forme du texte original, Çanaga. Lu en fac-similé le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1446,
+              "to": 1446,
+              "label": "1446"
+            },
+            "era": "polity",
+            "statement": "Le nom Sénégal est écrit Sanaga chez le navigateur portugais Deniz Fernandez en 1446, puis Senega chez Ca da Mosto, Thevet et Marmol, selon Maurice Delafosse.",
+            "formAsWritten": "Sanaga",
+            "sources": [
+              {
+                "title": "Senegal, dans Encyclopaedia of Islam, première édition",
+                "author": "Maurice Delafosse",
+                "year": null,
+                "url": "https://doi.org/10.1163/2214-871X_ei1_SIM_5235",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Encyclopédie publiée par Brill entre 1913 et 1936. Le premier paragraphe de l'entrée, en accès libre, a été lu le 9 octobre 2026 ; la suite est payante et n'a pas été lue.",
+                "page": "premier paragraphe de l'entrée"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1351,
+              "to": 1351,
+              "label": "1351"
+            },
+            "era": "polity",
+            "statement": "Le nom Sénégal figure sous la forme Senegany dans un livre de pilotes des Médicis daté de 1351, où il désigne un royaume de la basse vallée du fleuve, selon Maurice Delafosse. Nous n'avons pas vu ce document nous-mêmes.",
+            "formAsWritten": "Senegany",
+            "sources": [
+              {
+                "title": "Senegal, dans Encyclopaedia of Islam, première édition",
+                "author": "Maurice Delafosse",
+                "year": null,
+                "url": "https://doi.org/10.1163/2214-871X_ei1_SIM_5235",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Encyclopédie publiée par Brill entre 1913 et 1936. Le premier paragraphe de l'entrée, en accès libre, a été lu le 9 octobre 2026 ; la suite est payante et n'a pas été lue.",
+                "page": "premier paragraphe de l'entrée"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1000,
+              "to": 1099,
+              "label": "XIe siècle"
+            },
+            "era": "polity",
+            "statement": "Sanaghāna, ou Sanghāna, figure chez le géographe al-Bakrī au XIe siècle : il nomme ainsi un royaume noir de la basse vallée du fleuve, selon Maurice Delafosse. Delafosse y voit une forme ancienne du nom Sénégal ; les autres sources lues ne disent pas s'il s'agit du même nom.",
+            "formAsWritten": "Sanghāna",
+            "sources": [
+              {
+                "title": "Senegal, dans Encyclopaedia of Islam, première édition",
+                "author": "Maurice Delafosse",
+                "year": null,
+                "url": "https://doi.org/10.1163/2214-871X_ei1_SIM_5235",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Encyclopédie publiée par Brill entre 1913 et 1936. Le premier paragraphe de l'entrée, en accès libre, a été lu le 9 octobre 2026 ; la suite est payante et n'a pas été lue.",
+                "page": "premier paragraphe de l'entrée"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Nom wolof rapporté pour 1447"
+            },
+            "era": "polity",
+            "statement": "On appelle le fleuve Ovidech, selon le navigateur Lancelot en 1447, tel que le rapporte l'abbé David Boilat. Boilat y entend le wolof Vi-dekh, « cette rivière ».",
+            "before": true,
+            "sources": [
+              {
+                "title": "Esquisses sénégalaises",
+                "author": "David Boilat",
+                "year": 1853,
+                "url": "https://archive.org/details/esquissessngala01boilgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 199",
+                "notes": "Paris, P. Bertrand, 1853, chapitre « Notice sur le Sénégal ». Lu en fac-similé le 9 octobre 2026. L'auteur présente ces explications comme ses propres réflexions (« il me paraît évident », « une réflexion toute naturelle »)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Noms des riverains, notés en 1573"
+            },
+            "era": "polity",
+            "statement": "On appelle aussi le fleuve Mayo chez les Toucouleurs et Colle chez les Soninkés du Ngalam, selon le géographe espagnol Luis del Mármol Carvajal en 1573, cité par l'article de Wikipédia en anglais consacré au fleuve.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Senegal River — Wikipedia (en anglais)",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Senegal_River",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Passage sur les noms du fleuve, consulté le 9 octobre 2026. Il s'appuie sur Luis del Mármol Carvajal, Descripción general de África (1573), livre VIII, chapitre 3, que nous n'avons pas lu nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Sénégal viendrait de celui des Ṣanhāja, ou Zenaga, une confédération berbère établie au nord du bas fleuve, selon l'explication que retenaient la plupart des auteurs modernes d'après Maurice Delafosse. Raymond Mauny et Théodore Monod la reprennent en 1960, selon Amady Aly Dieng ; Delafosse, lui, n'y voit qu'une ressemblance fortuite.",
+            "hypothesisGroup": "origine du nom Sénégal",
+            "sources": [
+              {
+                "title": "Senegal, dans Encyclopaedia of Islam, première édition",
+                "author": "Maurice Delafosse",
+                "year": null,
+                "url": "https://doi.org/10.1163/2214-871X_ei1_SIM_5235",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Encyclopédie publiée par Brill entre 1913 et 1936. Le premier paragraphe de l'entrée, en accès libre, a été lu le 9 octobre 2026 ; la suite est payante et n'a pas été lue."
+              },
+              {
+                "title": "Sénégal n'est pas Sunugal, ou De l'étymologie du toponyme Sénégal",
+                "author": "Amady Aly Dieng",
+                "year": 2006,
+                "url": "http://www.seneweb.com/news/Immigration/s-n-gal-n-est-pas-sunugal-ou-de-l-tymologie-du-toponyme-s-n-gal_n_5047.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Compte rendu du livre de Saliou Kandji (Presses universitaires de Dakar, 2006), publié par Seneweb le 1er septembre 2006 et lu le 9 octobre 2026. Il date de 1850 les Esquisses sénégalaises, parues en 1853, et cite Paul Marty sous une référence erronée (Paris, 1971). Nous n'avons lu ni le livre de Kandji, ni Marty, ni l'édition de Monod et Mauny."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Sénégal viendrait de Sanghāna, un royaume noir de la basse vallée du fleuve que nomment al-Bakrī et d'autres textes anciens, selon Maurice Delafosse. Il rapporte que les Maures descendants des Ṣanhāja appellent encore cette vallée Isongān.",
+            "hypothesisGroup": "origine du nom Sénégal",
+            "sources": [
+              {
+                "title": "Senegal, dans Encyclopaedia of Islam, première édition",
+                "author": "Maurice Delafosse",
+                "year": null,
+                "url": "https://doi.org/10.1163/2214-871X_ei1_SIM_5235",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Encyclopédie publiée par Brill entre 1913 et 1936. Le premier paragraphe de l'entrée, en accès libre, a été lu le 9 octobre 2026 ; la suite est payante et n'a pas été lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Sénégal viendrait de Singhane, le mot hassanya par lequel les Maures désignaient le Cayor, que les Européens de Saint-Louis auraient repris d'eux, selon Paul Marty cité par Amady Aly Dieng.",
+            "hypothesisGroup": "origine du nom Sénégal",
+            "sources": [
+              {
+                "title": "Sénégal n'est pas Sunugal, ou De l'étymologie du toponyme Sénégal",
+                "author": "Amady Aly Dieng",
+                "year": 2006,
+                "url": "http://www.seneweb.com/news/Immigration/s-n-gal-n-est-pas-sunugal-ou-de-l-tymologie-du-toponyme-s-n-gal_n_5047.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Compte rendu du livre de Saliou Kandji (Presses universitaires de Dakar, 2006), publié par Seneweb le 1er septembre 2006 et lu le 9 octobre 2026. Il date de 1850 les Esquisses sénégalaises, parues en 1853, et cite Paul Marty sous une référence erronée (Paris, 1971). Nous n'avons lu ni le livre de Kandji, ni Marty, ni l'édition de Monod et Mauny."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1853,
+              "label": "Proposée en 1853"
+            },
+            "statement": "Le nom Sénégal viendrait d'un malentendu : un piroguier wolof, à qui un navigateur portugais demandait le nom du fleuve, aurait cru qu'on lui demandait celui de son bateau et répondu Samagal, « mon bateau », ou Soumougal, « nos bateaux », selon l'abbé David Boilat. Cette explication est devenue courante sous la forme Sunugaal, « notre pirogue », selon Amady Aly Dieng.",
+            "hypothesisGroup": "origine du nom Sénégal",
+            "sources": [
+              {
+                "title": "Esquisses sénégalaises",
+                "author": "David Boilat",
+                "year": 1853,
+                "url": "https://archive.org/details/esquissessngala01boilgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 199",
+                "notes": "Paris, P. Bertrand, 1853, chapitre « Notice sur le Sénégal ». Lu en fac-similé le 9 octobre 2026. L'auteur présente ces explications comme ses propres réflexions (« il me paraît évident », « une réflexion toute naturelle »)."
+              },
+              {
+                "title": "Sénégal n'est pas Sunugal, ou De l'étymologie du toponyme Sénégal",
+                "author": "Amady Aly Dieng",
+                "year": 2006,
+                "url": "http://www.seneweb.com/news/Immigration/s-n-gal-n-est-pas-sunugal-ou-de-l-tymologie-du-toponyme-s-n-gal_n_5047.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Compte rendu du livre de Saliou Kandji (Presses universitaires de Dakar, 2006), publié par Seneweb le 1er septembre 2006 et lu le 9 octobre 2026. Il date de 1850 les Esquisses sénégalaises, parues en 1853, et cite Paul Marty sous une référence erronée (Paris, 1971). Nous n'avons lu ni le livre de Kandji, ni Marty, ni l'édition de Monod et Mauny."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -183,27 +499,32 @@
       {
         "title": "CIA World Factbook – Senegal",
         "url": "https://www.cia.gov/the-world-factbook/countries/senegal/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Senegal",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements nationaux sénégalais (ANSD)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "ONU – Données démographiques 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Sénégal",
         "url": "https://www.unfpa.org/data/world-population/SN",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Études anthropologiques sur les peuples sénégalais",
@@ -218,29 +539,34 @@
       {
         "title": "CIA World Factbook – Senegal (ethnic groups, 2019 est.)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Maurice Delafosse, « Senegal », Encyclopaedia of Islam, première édition, Brill",
         "url": "https://doi.org/10.1163/2214-871X_ei1_SIM_5235",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Constate que la majorité des auteurs modernes rattachent le nom aux Sanhaja, juge ce rapprochement fortuit et propose un royaume de la basse vallée, Sanghana. L'entrée a été lue le 9 septembre 2026 ; son début est en accès libre, la suite est payante."
       },
       {
         "title": "Gomes Eanes de Zurara, Chronique de Guinée, traduction de Léon Bourdon, édition scientifique de Théodore Monod et Raymond Mauny, IFAN, Dakar, 1960",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Édition où Monod et Mauny écartent l'explication wolof au profit du rattachement berbère. L'imprimé est vérifié au catalogue de la Bibliothèque nationale de France ; le passage lui-même n'a pas été lu, il est rapporté par une présentation de l'ouvrage de Saliou Kandji."
       },
       {
         "title": "P.-David Boilat, Esquisses sénégalaises, Paris, P. Bertrand, 1853",
         "url": "https://gallica.bnf.fr/ark:/12148/bpt6k103361c",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Première formulation connue de l'explication wolof « sunu gaal ». L'édition est vérifiée au catalogue de la Bibliothèque nationale de France, où la date de 1850 souvent citée ne correspond à aucun tirage. La page portant le passage n'a pas été localisée dans le volume numérisé, aucun numéro n'est donc donné."
       },
       {
@@ -253,18 +579,21 @@
         "title": "Saliou Kandji, Sénégal n'est pas Sunugal, ou De l'étymologie du toponyme Sénégal, Presses universitaires de Dakar, 2006, 56 pages",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Récuse aussi bien l'explication wolof que les rattachements berbères. L'ouvrage ne figure pas au catalogue de la Bibliothèque nationale de France ; titre, éditeur, année et pagination sont repris d'une présentation de presse."
       },
       {
         "title": "Présentation de « Sénégal n'est pas Sunugal », de Saliou Kandji, Seneweb",
         "url": "http://www.seneweb.com/news/Immigration/s-n-gal-n-est-pas-sunugal-ou-de-l-tymologie-du-toponyme-s-n-gal_n_5047.html",
         "tier": "unverified",
-        "notes": "Présentation non signée. Elle est l'origine de l'attribution du terme Singhane à Paul Marty et du désaccord de Monod et Mauny avec Boilat. Elle date les Esquisses sénégalaises de 1850, ce qui est inexact."
+        "source_kind": "press",
+        "notes": "Compte rendu signé par Amady Aly Dieng et publié le 1er septembre 2006. Il est l'origine de l'attribution du terme Singhane à Paul Marty et du désaccord de Monod et Mauny avec Boilat. Il date les Esquisses sénégalaises de 1850, ce qui est inexact."
       },
       {
         "title": "Luis del Mármol Carvajal, Primera parte de la descripción general de Áffrica, Grenade, René Rabut, 1573",
         "url": "https://bvpb.mcu.es/es/consulta/registro.cmd?id=406911",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Donne deux noms du fleuve chez les peuples de ses rives : Mayo chez les Toucouleurs, Colle chez les Soninkés de Ngalam. L'imprimé est numérisé par la Biblioteca Virtual del Patrimonio Bibliográfico. Le passage est situé au livre VIII, chapitre 3 ; il n'a pas été lu dans l'original, et la référence a été trouvée par la version anglaise de Wikipédia, consultée le 9 septembre 2026."
       },
       {
@@ -277,12 +606,14 @@
         "title": "Border Disputes among African States, AHG/Res.16(I) (Organisation de l'unité africaine, Le Caire, 17-21 juillet 1964)",
         "url": "https://www.peaceau.org/uploads/ahg-res-16-i-en.pdf",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Texte de la résolution lu en entier. Il engage les États membres à respecter les frontières existant à leur indépendance ; il ne contient aucun relevé de vote ni mention du consentement des populations."
       },
       {
         "title": "Toponymic Factfile: Senegal — Permanent Committee on Geographical Names (Royaume-Uni)",
         "url": "https://assets.publishing.service.gov.uk/media/69e6292c3e3b4e9340cc92d8/Senegal_Toponymic_Factfile.pdf",
         "tier": "official",
+        "source_kind": "government",
         "notes": "Fiche officielle britannique de toponymie, édition 2026 : le français langue officielle, six langues nationales (wolof, pulaar, sérère, jola, malinké, soninké) avec leurs codes ISO 639-3."
       }
     ],

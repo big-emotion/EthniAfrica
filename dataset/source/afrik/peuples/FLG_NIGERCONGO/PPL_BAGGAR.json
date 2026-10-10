@@ -4,6 +4,152 @@
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["SDN", "TCD", "NGA", "CMR", "CAF", "NER", "SSD"],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Baggara désigne des groupes arabophones éleveurs de bovins, au sud des grandes routes de l'ouest du Soudan, du Kordofan au Darfour, et au-delà vers le Tchad. Les sources rattachent ce nom au mot arabe qui désigne la vache ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Djuhayna",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la grande famille arabe dont les Baggara se réclament dans leurs généalogies.",
+        "periodLabel": "Généalogies",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Djuhayna est celui de la famille arabe dont se réclament les Baggara, comme d'autres nomades du Soudan, en descendant tous d'un ancêtre commun, ʿAbdallah al-Djuhanī, selon L. Kropáček, qui juge que les généalogies ont rangé trop de groupes sous ce nom. Les sources que nous avons lues ne disent pas si les Baggara se nomment aussi eux-mêmes Baggara.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 16 : La Nubie de la fin du XIIe siècle à la conquête par les Funj au début du XVIe siècle",
+                "author": "L. Kropáček",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 445"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Baggara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit dès 1799 pour des Arabes éleveurs de bœufs.",
+        "periodLabel": "Écrit dès 1799 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Baggara est un nom générique : il réunit les groupes d'éleveurs de bovins qui vivent au sud de la grande route est-ouest du Soudan, selon L. Kropáček.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 16 : La Nubie de la fin du XIIe siècle à la conquête par les Funj au début du XVIe siècle",
+                "author": "L. Kropáček",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 445"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1821,
+              "to": 1885,
+              "label": "Domination turco-égyptienne"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baggara figure dans l'administration turco-égyptienne : les Baggara doivent payer leurs impôts en têtes de bétail au gouverneur du Kordofan, et ceux qui ne le peuvent pas fournissent des esclaves pris lors de razzias chez les Jieng, selon Hassan Ahmed Ibrahim.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 14 : Le Soudan au XIXe siècle",
+                "author": "H. A. Ibrahim, avec une contribution de B. A. Ogot sur le Soudan méridional",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 402"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1799,
+              "to": 1799,
+              "label": "1799"
+            },
+            "era": "polity",
+            "statement": "Le nom Baggara apparaît par écrit, sous la forme Bukkara, chez le voyageur anglais William George Browne, qui l'emploie pour « les Arabes qui élèvent des bœufs », venus du sud et de l'ouest du Darfour. C'est la plus ancienne trace de ce nom que le projet connaît. Les groupes qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Bukkara",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels in Africa, Egypt, and Syria, from the year 1792 to 1798",
+                "author": "William George Browne",
+                "year": 1799,
+                "url": "https://archive.org/details/travelsinafricae00brow",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Cadell et Davies, 1799. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un voyageur anglais de la fin du XVIIIe siècle.",
+                "page": "p. 268"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1799,
+              "to": 1985,
+              "label": "Proposée en 1799, reprise en 1985"
+            },
+            "era": "polity",
+            "statement": "Le nom Baggara viendrait du mot arabe qui désigne la vache et voudrait dire « éleveurs de bovins », selon le voyageur William George Browne et l'historien L. Kropáček.",
+            "hypothesisGroup": "origine du nom Baggara",
+            "sources": [
+              {
+                "title": "Travels in Africa, Egypt, and Syria, from the year 1792 to 1798",
+                "author": "William George Browne",
+                "year": 1799,
+                "url": "https://archive.org/details/travelsinafricae00brow",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Cadell et Davies, 1799. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un voyageur anglais de la fin du XVIIIe siècle.",
+                "page": "p. 268"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 16 : La Nubie de la fin du XIIe siècle à la conquête par les Funj au début du XVIe siècle",
+                "author": "L. Kropáček",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 445"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Baggara",
@@ -15,7 +161,7 @@
         "Diffa Arabs (sous-groupe au Niger, region de Diffa)",
         "Muraheleen (terme pour les cavaliers-raiders armes)"
       ],
-      "originOfExonyms": "Le terme Baggara derive de l'arabe al-baqqara (au sens de eleveurs de vaches, de baqar : boeuf). Il est utilise principalement au Soudan pour designer ces tribus arabophones nomades du Darfour et du Kordofan. Au Nigeria, Cameroun et au Tchad occidental, les memes groupes sont designes comme Shuwa Arabs, terme d'origine kanouri devenu geographiquement et socialement restrictif selon les chercheurs. Le terme Diffa Arabs designe au Niger les groupes migres du Tchad.",
+      "originOfExonyms": "Le terme Baggara deriverait de l'arabe al-baqqara (au sens de eleveurs de vaches, de baqar : boeuf). Il est utilise principalement au Soudan pour designer ces tribus arabophones nomades du Darfour et du Kordofan. Au Nigeria, Cameroun et au Tchad occidental, les memes groupes sont designes comme Shuwa Arabs, terme d'origine kanouri devenu geographiquement et socialement restrictif selon les chercheurs. Le terme Diffa Arabs designe au Niger les groupes migres du Tchad.",
       "whyProblematic": "Les Baggara ne se considerent pas tous comme un seul peuple ou une seule ethnie : chaque groupe s'identifie d'abord a sa tribu ancestrale (Rizeigat, Messiria, Hawazma, etc.). L'appellation collective Baggara est davantage une categorie administrative et politique soudanaise qu'une identite auto-proclamee. Par ailleurs, le terme Shuwa est percu comme geographiquement restrictif et socialement depreciateur dans certains contextes.",
       "contemporaryUsage": "Baggara est utilise dans les contextes soudanais et academiques. Shuwa Arabs est le terme courant au Nigeria, Cameroun et Tchad occidental. Chadian Arabs est le terme prefere en linguistique pour designer leur dialecte arabe.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -135,7 +281,8 @@
       {
         "title": "Joshua Project — Baggara, Shuwa Arab in Central African Republic",
         "url": "https://joshuaproject.net/people_groups/14926/CT",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Study.com — Baggara Arabs: History, Culture and Language",
@@ -145,12 +292,14 @@
       {
         "title": "Kunzaar — Baggara Arabs (Shuwa Arabs): A Cultural Insight",
         "url": "https://kunzaar.com.ng/baggara-arabs-tribe/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue — Chadian Arabic (shu). SIL International",
         "url": null,
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

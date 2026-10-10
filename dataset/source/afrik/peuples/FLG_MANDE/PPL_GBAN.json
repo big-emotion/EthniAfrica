@@ -8,7 +8,7 @@
       "mainName": "Gban",
       "selfAppellation": "Gban",
       "exonyms": ["Gagou", "Gagu", "Gagous", "Gagus", "Gagon", "Kagou", "Gba"],
-      "originOfExonyms": "Le nom Gagou derive de l'expression ka-go ou kagou qui signifie Allez-vous en en langue locale, refletant les relations de rejet avec les peuples voisins. Le terme Gba est atteste dans les travaux anthropologiques de Chauveau.",
+      "originOfExonyms": "Le nom Gagou viendrait de l'expression ka-go ou kagou, qui veut dire Allez-vous en en langue locale, et refleterait les relations de rejet avec les peuples voisins. Le terme Gba est atteste dans les travaux anthropologiques de Chauveau.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Gban est prefere par le peuple lui-meme. Gagou reste en usage dans la litterature ethnologique et administrative francaise. Les deux formes coexistent en Cote d'Ivoire.",
       "linguisticFamily": "FLG_MANDE",
@@ -68,27 +68,32 @@
       {
         "title": "Gagu in Cote d'Ivoire – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/11799",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Gagu people – 101 Last Tribes, 2023",
         "url": "https://www.101lasttribes.com/tribes/gagu.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Gban language (GGU) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/ggu/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Tauxier, Louis – Negres gouro et gagou : Centre de la Cote d'Ivoire, Librairie orientaliste P. Geuthner, 1924",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Chauveau, Jean-Pierre – Les Gba ou Gagou de Cote d'Ivoire : Un Systeme de parente bilineaire a nomenclature de type Crow, ORSTOM",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

@@ -15,7 +15,7 @@
         "Gao Senni (nom géographique, en référence à la ville de Gao)",
         "Songhay de Gao (désignation géographique française)"
       ],
-      "originOfExonyms": "L'expression koyra-boro senn-i signifie littéralement la langue des habitants de la ville (koyra = ville, boro = habitant, senni = langue). Ce nom distingue les Songhaï sédentaires urbanisés des nomades comme les Touaregs et autres peuples transhumants de la région. Le nom Gao Senni fait référence à la ville de Gao, capitale historique de l'Empire songhaï et principal centre de ce groupe. L'orthographe Koyraboro Senni est celle adoptée par le SIL International pour la classification ISO.",
+      "originOfExonyms": "L'expression koyra-boro senn-i signifierait littéralement la langue des habitants de la ville (koyra = ville, boro = habitant, senni = langue). Ce nom distingue les Songhaï sédentaires urbanisés des nomades comme les Touaregs et autres peuples transhumants de la région. Le nom Gao Senni fait référence à la ville de Gao, capitale historique de l'Empire songhaï et principal centre de ce groupe. L'orthographe Koyraboro Senni est celle adoptée par le SIL International pour la classification ISO.",
       "whyProblematic": "La distinction entre Koyra Boro Seyo (Koyraboro Senni, groupe de Gao) et Koyra Chiini (groupe de Tombouctou) peut prêter à confusion, les deux étant des dialectes songhaï du Mali mais géographiquement et linguistiquement distincts. Koyraboro Senni est inintelligible aux locuteurs zarma du Niger selon Ethnologue, ce qui souligne la diversité interne du groupe songhay.",
       "contemporaryUsage": "Le terme Koyraboro Senni est utilisé par les linguistes et les chercheurs. Les locuteurs se désignent simplement comme Songhaï de Gao ou Koroboro Senni. La langue est utilisée dans l'enseignement primaire dans la région de Gao (le gouvernement malien a officiellement adopté le dialecte de Gao comme médium d'enseignement primaire). La communauté représente environ 5 % de la population malienne.",
       "linguisticFamily": "FLG_SONGHAY",
@@ -101,27 +101,32 @@
       {
         "title": "Ethnologue — Songhay, Koyraboro Senni (ses)",
         "url": "https://www.ethnologue.com/language/ses/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Songhai-Koyraboro in Mali",
         "url": "https://joshuaproject.net/people_groups/14989",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "ScriptSource — Koyraboro Senni Songhay (ses)",
         "url": "https://scriptsource.org/cms/scripts/page.php?item_id=subtag_detail&uid=uthnk4pcdr",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "UNESCO — Tombeau des Askia, Gao (patrimoine mondial)",
         "url": "https://whc.unesco.org/fr/list/1139",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook — Mali",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       }
     ]
   }

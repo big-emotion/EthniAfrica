@@ -4,6 +4,7 @@ import * as React from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
 
 import { LazySourceChainSheet } from "@/components/source-transparency/SourceChainSheet.lazy";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { toSourceTier } from "@/types/sources";
 import { cn } from "@/lib/utils";
 import { quizCopy } from "@/lib/i18n/copy/quiz";
@@ -13,7 +14,6 @@ import type {
 } from "@/api/v2/schemas/quiz";
 import { Button } from "@/components/ui/button";
 import type { Language } from "@/types/shared";
-import { SourceStandingBadge } from "@/components/sources/SourceStandingBadge";
 
 // @req REQ-103
 export const QUIZ_REVEAL_MIN_HEIGHT_CLASS = "min-h-[22rem]";
@@ -60,9 +60,8 @@ interface QuizAnswerRevealProps {
  * Revealed-state panel (FR68/FR71): verdict, correct answer, explanation and
  * source line, with a « ouvrir la chaîne de sources » trigger. The sheet is
  * built from the single source the session already carries per question —
- * there is no richer assertion payload to fetch, so `confidenceScore` is
- * left at 0 and `sourceCount` at 1 rather than inventing data (same
- * precedent as `RelationsListWithSourceSheet`).
+ * there is no richer assertion payload to fetch, so `sourceCount` is 1
+ * rather than invented data (same precedent as `RelationsListWithSourceSheet`).
  */
 // @req REQ-103 FR68 FR71
 export const QuizAnswerReveal = ({
@@ -125,10 +124,15 @@ export const QuizAnswerReveal = ({
         </p>
       </div>
 
-      <div className="flex items-center gap-2 border-t border-afh-border pt-3 text-afh-small text-afh-text-soft">
+      <div className="flex flex-wrap items-center gap-2 border-t border-afh-border pt-3 text-afh-small text-afh-text-soft">
         <span>{question.source.title}</span>
         {question.source.year ? <span>· {question.source.year}</span> : null}
-        <SourceStandingBadge standing={tier} language={language} />
+        {question.source.sourceKind ? (
+          <SourceKindBadge
+            kind={question.source.sourceKind}
+            language={language}
+          />
+        ) : null}
       </div>
 
       <button
@@ -148,7 +152,6 @@ export const QuizAnswerReveal = ({
         onOpenChange={setSheetOpen}
         assertion={{
           statement: question.promptFr,
-          confidenceScore: 0,
           sourceCount: 1,
           lastHumanAuditAt: null,
         }}
@@ -159,6 +162,9 @@ export const QuizAnswerReveal = ({
             year: question.source.year ?? undefined,
             url: question.source.url ?? undefined,
             tier,
+            ...(question.source.sourceKind
+              ? { sourceKind: question.source.sourceKind }
+              : {}),
           },
         ]}
         anchorId={`quiz-${question.assertionId}`}

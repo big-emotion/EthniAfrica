@@ -17,6 +17,10 @@ function source(overrides: Record<string, unknown> = {}) {
   };
 }
 
+function historySource(overrides: Record<string, unknown> = {}) {
+  return { ...source(), source_kind: "government", ...overrides };
+}
+
 function validPlace(overrides: Record<string, unknown> = {}) {
   return {
     _meta: { format: "AFRIK JSON v2", entity: "lieu" },
@@ -26,26 +30,38 @@ function validPlace(overrides: Record<string, unknown> = {}) {
     countryId: "CIV",
     associatedPeoples: [{ peopleId: "PPL_A" }],
     summary: "Une ville de test.",
-    names: [
-      {
-        nameText: "Testkro",
-        nameStatus: "current",
-        languageOfOrigin: "bci",
-        meaning: "Le village de Test.",
-        shortLine: "Le village de Test.",
-        namedBy: null,
-        originDebated: false,
-        periodLabel: "contemporain",
-        contemporaryUsage: null,
-        accounts: [],
-        attestations: [],
-        sources: [source()],
-      },
-    ],
     gaps: [],
     sources: [source()],
+    nameHistory: {
+      summary: "Le nom Testkro est le nom actuel de ce lieu.",
+      names: [
+        {
+          nameText: "Testkro",
+          nameStatus: "current",
+          selfGiven: true,
+          languageOfOrigin: "bci",
+          namedBy: null,
+          accounts: [
+            {
+              period: { from: null, to: null, label: "contemporain" },
+              statement: "Le nom Testkro signifie le village de Test.",
+              aspect: "meaning",
+              sources: [historySource()],
+            },
+          ],
+        },
+      ],
+    },
     ...overrides,
   };
+}
+
+// The first account of the first name: the one the source tests vary.
+function firstAccount(place: Record<string, unknown>) {
+  const history = place.nameHistory as {
+    names: Array<{ accounts: Array<Record<string, unknown>> }>;
+  };
+  return history.names[0].accounts[0];
 }
 
 describe("place fiche validator (REQ-193)", () => {
@@ -124,45 +140,54 @@ describe("place fiche validator (REQ-193)", () => {
     expect(checkPlaceFicheModel(tmpDir).ok).toBe(false);
   });
 
-  // @req REQ-193
-  it("fails when a form cites no source", () => {
+  // @req REQ-196
+  it("fails when an account of a name cites no source", () => {
     const place = validPlace();
-    (place.names as Array<Record<string, unknown>>)[0].sources = [];
+    firstAccount(place).sources = [];
     writePlace("LOC_TEST.json", place);
     expect(checkPlaceFicheModel(tmpDir).ok).toBe(false);
   });
 
-  // @req REQ-193
+  // @req REQ-196
   it("fails when a source declares no tier", () => {
     const place = validPlace();
-    (place.names as Array<Record<string, unknown>>)[0].sources = [
-      source({ tier: undefined }),
-    ];
+    firstAccount(place).sources = [historySource({ tier: undefined })];
     writePlace("LOC_TEST.json", place);
     expect(checkPlaceFicheModel(tmpDir).ok).toBe(false);
   });
 
-  // @req REQ-193
-  it("passes a form sourced only at unverified, with a warning naming it", () => {
+  // @req REQ-196
+  it("passes a name sourced only at unverified, with a warning naming it", () => {
     const place = validPlace();
-    (place.names as Array<Record<string, unknown>>)[0].sources = [
-      source({ tier: "unverified" }),
-    ];
+    firstAccount(place).sources = [historySource({ tier: "unverified" })];
     writePlace("LOC_TEST.json", place);
     const result = checkPlaceFicheModel(tmpDir);
     expect(result.ok).toBe(true);
     expect(result.warnings.join("\n")).toMatch(/LOC_TEST\.json.*Testkro/);
   });
 
-  // @req REQ-193
-  it("keeps every account of a form attributed to its own sources", () => {
-    const place = validPlace();
-    (place.names as Array<Record<string, unknown>>)[0].accounts = [
-      { statement: "Un récit sans source.", periodLabel: "1904", sources: [] },
-    ];
-    writePlace("LOC_TEST.json", place);
-    expect(checkPlaceFicheModel(tmpDir).ok).toBe(false);
+  // @req REQ-196
+  it("fails when the place carries no nameHistory: its names live nowhere else", () => {
+    writePlace("LOC_TEST.json", validPlace({ nameHistory: undefined }));
+    const result = checkPlaceFicheModel(tmpDir);
+    expect(result.ok).toBe(false);
+    expect(result.errors.join("\n")).toMatch(/LOC_TEST\.json.*nameHistory/);
   });
+
+  // DEC-071: a legacy block beside nameHistory would be a second, drifting
+  // source of truth for the same names.
+  // @req REQ-196
+  it.each(["names", "accounts", "attestations"])(
+    "refuses a place that still carries the legacy %s key, naming it",
+    (legacyKey) => {
+      writePlace("LOC_TEST.json", validPlace({ [legacyKey]: [] }));
+      const result = checkPlaceFicheModel(tmpDir);
+      expect(result.ok).toBe(false);
+      expect(result.errors.join("\n")).toMatch(
+        new RegExp(`LOC_TEST\\.json.*${legacyKey}`)
+      );
+    }
+  );
 
   // @req REQ-193
   it("passes on the corpus as committed", () => {

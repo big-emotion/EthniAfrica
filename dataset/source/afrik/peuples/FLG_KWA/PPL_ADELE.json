@@ -8,7 +8,7 @@
       "mainName": "Adele",
       "selfAppellation": "Gidire",
       "exonyms": ["Bedere", "Bidire", "Gadre", "Gidere"],
-      "originOfExonyms": "Le nom Adele est l'exonyme utilise par les voisins et les administrations coloniales ; les locuteurs de la langue appellent leur propre langue Gidire. Les variantes Bedere, Bidire, Gadre et Gidere sont des transcriptions differentes du meme terme endonymique.",
+      "originOfExonyms": "Les voisins et les administrations coloniales emploient Adele. Les personnes concernées nomment leur langue Gidire. Bedere, Bidire, Gadre et Gidere sont différentes manières de transcrire ce même nom.",
       "whyProblematic": null,
       "contemporaryUsage": "Adele est le nom standard dans la litterature academique, les bases de donnees linguistiques (Ethnologue, Glottolog) et les documents officiels ghaneen et togolais. Gidire est utilise par les locuteurs pour designer leur propre langue.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -78,22 +78,26 @@
       {
         "title": "Omniglot - Adele language and alphabet, 2023",
         "url": "https://www.omniglot.com/writing/adele.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project - Adele in Ghana",
         "url": "https://joshuaproject.net/people_groups/10156/gh",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue - Adele Language (ADE)",
         "url": "https://www.ethnologue.com/language/ade/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "PeopleGroups.org - Adele of Ghana",
         "url": "https://peoplegroups.org/people_groups/pg013251/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

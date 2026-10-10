@@ -9,7 +9,7 @@
       "mainName": "Guan",
       "selfAppellation": "Guan",
       "exonyms": ["Guang", "Guan"],
-      "originOfExonyms": "Le terme Guan ou Guang est utilise de facon interchangeable. Il s'agit d'un terme collectif designant un ensemble de sous-groupes linguistiquement apparentes. Le terme n'a pas d'origine exonyme specifique identifiee; il est utilise a la fois par les membres du groupe et les observateurs exterieurs.",
+      "originOfExonyms": "Guan et Guang désignent le même ensemble de groupes dont les langues sont proches. Le nom est employé par leurs membres comme par les personnes extérieures. Les sources n'identifient pas de peuple voisin ou d'autre acteur extérieur qui aurait créé ce nom.",
       "whyProblematic": "Le terme Guan designe en realite un ensemble heterogene de peuples partageant une parente linguistique plutot qu'une identite ethnique unique. Certains sous-groupes comme les Etsii sont assimiles aux Fante et ne se reconnaissent plus necessairement comme Guan.",
       "contemporaryUsage": "Le terme Guan est utilise officiellement par le Ghana Statistical Service dans les recensements. Il designe une categorie englobant de nombreux sous-groupes distincts presents dans 12 regions du Ghana.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -108,17 +108,20 @@
       {
         "title": "Guang people – 101 Last Tribes, www.101lasttribes.com/tribes/guang.html (consulte 2025)",
         "url": "https://www.101lasttribes.com/tribes/guang.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ghana Statistical Service – 2021 Population and Housing Census, census2021.statsghana.gov.gh (2022)",
         "url": "https://census2021.statsghana.gov.gh",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "City Population – Guan District Ghana, www.citypopulation.de/en/ghana/admin/oti/1509__guan/ (2021)",
         "url": "https://www.citypopulation.de/en/ghana/admin/oti/1509__guan/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       }
     ]
   }

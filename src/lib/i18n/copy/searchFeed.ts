@@ -56,6 +56,8 @@ export interface SearchFeedCopy {
     stories: string;
     quiz: string;
     fiches: string;
+    /** The name-history timeline (REQ-198), the default when a name has one. */
+    timeline: string;
   };
   /** What a filter shows once the reader has chosen it. */
   lens: {
@@ -70,6 +72,13 @@ export interface SearchFeedCopy {
     around: (count: number) => string;
     aroundNote: string;
     back: string;
+    /**
+     * On the name-history lens, the subjects the searched name also answers
+     * to whose history is not written yet: named, never silently dropped.
+     */
+    alsoNamed: string;
+    alsoNamedUnwritten: (count: number) => string;
+    alsoNamedSeeAll: string;
   };
   blocks: {
     /** The button below the answer; the name tells two same-named subjects apart. */
@@ -81,6 +90,17 @@ export interface SearchFeedCopy {
   status: {
     loading: string;
     retry: string;
+  };
+  /**
+   * Under the heading, when the reader searched another name than the one the
+   * subject gives itself (doctrine §1.1). A kind left out gets no lead: a
+   * country or a patronyme records no self-given name.
+   */
+  searchedLead: {
+    searched: (name: string) => string;
+    self: Partial<
+      Record<"people" | "language" | "languageFamily", (self: string) => string>
+    >;
   };
 }
 
@@ -146,6 +166,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       stories: "Récits",
       quiz: "Jeux",
       fiches: "Fiches",
+      timeline: "Histoire du nom",
     },
     lens: {
       title: {
@@ -158,6 +179,12 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       around: (count) => `Autour de ce nom · ${count}`,
       aroundNote: "Un contexte lié, pas le même nom.",
       back: "Revenir à la réponse",
+      alsoNamed: "Ce nom désigne aussi",
+      alsoNamedUnwritten: (count) =>
+        count > 1
+          ? "Leur histoire du nom n’est pas encore écrite. Ce que nous savons d’eux est dans « Tout »."
+          : "Son histoire du nom n’est pas encore écrite. Ce que nous en savons est dans « Tout ».",
+      alsoNamedSeeAll: "Voir tout",
     },
     blocks: {
       ficheLink: (name) => `Voir la fiche complète · ${name}`,
@@ -169,5 +196,21 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       loading: "Chargement en cours",
       retry: "Réessayer",
     },
+    searchedLead: {
+      searched: (name) => `Vous avez cherché ${name}.`,
+      self: {
+        people: (self) => `Ce peuple se nomme lui-même ${self}.`,
+        language: (self) =>
+          `Le nom employé par les personnes qui la parlent : ${self}.`,
+        languageFamily: (self) =>
+          `Le nom employé par les personnes qui la parlent : ${self}.`,
+      },
+    },
   },
 };
+
+// @req REQ-135
+export const noNameFicheCopy = {
+  label: "Nom absent",
+  body: "Nous n’avons pas encore de fiche sur ce nom.",
+} as const;

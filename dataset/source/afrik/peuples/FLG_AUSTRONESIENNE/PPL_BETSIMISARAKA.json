@@ -10,9 +10,9 @@
       "exonyms": [
         "Les nombreux inséparables (traduction française du nom Betsimisaraka)"
       ],
-      "originOfExonyms": "Le nom Betsimisaraka a été donné par le roi fondateur Ratsimilaho (Ramaromanompo) au début du XVIIIe siècle pour désigner la confédération de clans qu'il avait unifiée sur la côte est. Le terme signifie les nombreux qui ne se séparent pas ou les nombreux inseparables.",
+      "originOfExonyms": "Le nom Betsimisaraka a été donné par le roi fondateur Ratsimilaho (Ramaromanompo) au début du XVIIIe siècle pour désigner la confédération de clans qu'il avait unifiée sur la côte est. Le terme signifierait « les nombreux qui ne se séparent pas » ou « les nombreux inséparables ».",
       "whyProblematic": null,
-      "contemporaryUsage": "Terme accepté et revendiqué comme ethnonyme officiel. Deuxième groupe ethnique de Madagascar selon tous les recensements et estimations contemporains.",
+      "contemporaryUsage": "Le groupe emploie et revendique ce nom comme désignation officielle. Les recensements et estimations actuels le présentent comme le deuxième peuple le plus nombreux de Madagascar.",
       "linguisticFamily": "FLG_AUSTRONESIENNE",
       "ethnoLinguisticGroup": "Malayo-polynésien — groupe oriental côtier du malgache (dialectes betsimisaraka nord et sud)",
       "historicalRegion": "Côte est de Madagascar — bande littorale s'étendant de Mananjary au sud jusqu'à Antalaha au nord, incluant le port de Toamasina (Tamatave), Fénérive Est (Fenoarivo Atsinanana) et Maroansetra",
@@ -92,37 +92,154 @@
       {
         "title": "Britannica — Betsimisaraka, (consulté 2025)",
         "url": "https://www.britannica.com/topic/Betsimisaraka",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "101 Last Tribes — Betsimisaraka, (consulté 2025)",
         "url": "https://www.101lasttribes.com/tribes/betsimisaraka.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Betsimisaraka North in Madagascar, (consulté 2025)",
         "url": "https://joshuaproject.net/people_groups/10819",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue — Northern Betsimisaraka Malagasy (bmm), (consulté 2025)",
         "url": "https://www.ethnologue.com/language/bmm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Southern Betsimisaraka Malagasy (bzc), (consulté 2025)",
         "url": "https://www.ethnologue.com/language/bzc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Madagascar, (consulté 2025)",
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Beaujard, Philippe. Les mondes de l'océan Indien. Paris : Armand Colin, 2012",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Betsimisaraka désigne un peuple de la côte est de Madagascar, autour de Toamasina, qui se nomme lui-même ainsi. Il se divise en Betsimisaraka du nord et du sud. Une seule explication de son origine a été trouvée dans nos sources ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Betsimisaraka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mlg",
+        "namedBy": null,
+        "shortLine": "Le nom d'une union de la côte est, née au début du XVIIIe siècle ; il voudrait dire « les nombreux indivisibles ».",
+        "usedIn": ["mlg"],
+        "periodLabel": "Écrit dès 1806 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Betsimisaraka désigne un grand peuple de la côte est de Madagascar, de la rivière Bemarivo au nord jusqu'à Mananjary au sud ; on le divise en Tavaratra, au nord, et Tatsimo, au sud, selon le Rakibolana malagasy. Le dictionnaire décompose le nom en trois mots : be, tsy et misaraka. Son origine est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Rakibolana malagasy, article betsimisaraka",
+                "author": "Régis Rajemisa-Raolison",
+                "year": 1985,
+                "url": "https://malagasyword.org/bins/teny2/betsimisaraka",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu dans le dictionnaire en ligne Malagasy Dictionary and Encyclopedia, qui reprend cette définition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1806,
+              "to": 1806,
+              "label": "1806"
+            },
+            "era": "polity",
+            "statement": "Le nom Betsimisaraka figure dans le récit que Nicolas Mayeur consacre en 1806 à Ratsimilahoe, dont R. K. Kent cite une copie dactylographiée. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Les communautés qu'il désigne vivaient déjà sur cette côte.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+                "author": "R. K. Kent",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 956, notes 176 à 180",
+                "notes": "Édition française, lue dans le PDF diffusé par l'UNESCO."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1712,
+              "label": "Avant 1712"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Betsimisaraka, les habitants de cette côte vivent sous l'autorité de chefs, les filohany, dont le pouvoir dépasse rarement un ou deux villages ; ceux du nord sont appelés Antavaratra, selon R. K. Kent.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+                "author": "R. K. Kent",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 955-956",
+                "notes": "Édition française, lue dans le PDF diffusé par l'UNESCO."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Publiée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Betsimisaraka aurait été forgé après 1712, quand Ratsimilahoe reprend le port de Fénérive : il voudrait dire « les nombreux indivisibles », pour souligner que l'union durerait et la distinguer des Betanimena, selon R. K. Kent, qui s'appuie sur le récit de Nicolas Mayeur.",
+            "hypothesisGroup": "origine du nom Betsimisaraka",
+            "actors": [
+              {
+                "name": "Ratsimilahoe",
+                "role": "chef de l'union de la côte est, élu roi sous le nom de Ramaromanompo"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+                "author": "R. K. Kent",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 956",
+                "notes": "Édition française, lue dans le PDF diffusé par l'UNESCO."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

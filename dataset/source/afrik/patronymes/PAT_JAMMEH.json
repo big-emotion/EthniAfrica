@@ -30,9 +30,14 @@
   },
   "peoples": [
     {
-      "peopleId": "PPL_JOLA",
+      "peopleId": "PPL_DIOLA",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "peopleId": "PPL_MALINKE",
+      "status": "attested",
+      "sourceRefs": ["wright-1978-sonko"]
     }
   ],
   "countries": [
@@ -54,12 +59,20 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "wright-1978-sonko",
+      "title": "Koli Tengela in Sonko Traditions of Origin: An Example of the Process of Change in Mandinka Oral Tradition",
+      "url": "https://www.webpulaaku.site/tenhella/koli-tenhella-mandinka-sonko-origins-traditions.html",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Donald R. Wright, History in Africa, vol. 5, 1978, p. 257-271 ; lu sur la copie en ligne de webPulaaku, sans pagination. Le Niumi y est décrit comme l'un des États mandingues établis le long du fleuve Gambie, dont les trois lignages dominants sont les Jammeh, les Manneh et les Sonko. Les Sonko parlent mandingue et vivent selon les usages mandingues, tout en se disant d'ascendance peule ; les Jammeh font remonter leur origine à Sora Musa, présenté comme un chef mandingue."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Une seule étude a été lue, celle de Donald Wright (1978) : elle sert ici à rattacher le nom aux Mandingues du Niumi, en Gambie. Nous ne documentons pas encore l'origine du nom."
     },
     {
       "fieldPath": "alliances",

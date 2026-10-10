@@ -8,7 +8,7 @@
       "mainName": "Bondei",
       "selfAppellation": "WaBondei",
       "exonyms": ["Wabondei", "Bodei"],
-      "originOfExonyms": "Le nom Bondei fut attribue par la dynastie Kilindi apres la conquete du peuple par le royaume Shambaa sous le roi Kinyashi. Il signifie litteralement \"gens de la vallee\", decrivant ceux qui vivaient entre la vallee de Lwengera et la mer a l'est des monts Usambara.",
+      "originOfExonyms": "Le nom Bondei fut attribue par la dynastie Kilindi apres la conquete du peuple par le royaume Shambaa sous le roi Kinyashi. Il signifierait littéralement \"gens de la vallee\" et désignerait ceux qui vivaient entre la vallee de Lwengera et la mer a l'est des monts Usambara.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Bondei est aujourd'hui universellement accepte et utilise en Tanzanie comme denomination officielle du groupe. Le swahili Wabondei est egalement courant.",
       "linguisticFamily": "FLG_BANTU",
@@ -74,32 +74,38 @@
       {
         "title": "Bondei in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/10930",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bondei people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/bondei.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Mhando, M.M. (2023). The History of Utani and Burial Traditions of the Bondei People. International Journal of Social and Humanities Sciences",
         "url": "https://dergipark.org.tr/tr/download/article-file/3486509",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Mhando, M.M. (2023). An outline of History and Cultural identity of the Bondei people. Journal of African Studies",
         "url": "https://journals.co.za/doi/abs/10.31920/2634-7644/2023/v4n1a6",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Willis, J. (1993). The Makings of a Tribe: Bondei Identities and Histories. Journal of African History, 33(2), 191-208",
         "url": "https://www.jstor.org/stable/182998",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Bondei of Tanzania – PeopleGroups.org",
         "url": "https://peoplegroups.org/people_groups/pg014913/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

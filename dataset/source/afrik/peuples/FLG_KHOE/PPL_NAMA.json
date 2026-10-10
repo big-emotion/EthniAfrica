@@ -9,7 +9,7 @@
       "mainName": "Nama",
       "selfAppellation": "Nama / Namakhoen",
       "exonyms": ["Namaqua", "Hottentots", "Khoikhoi du sud"],
-      "originOfExonyms": "Le terme Namaqua derive du nom khoekhoe auquel est ajoute le suffixe -qua/kwa signifiant gens de ou lieu de. Hottentot est un terme colonial neerlandais aujourd'hui considere comme offensant, utilise par les colons europeens pour designer les peuples Khoekhoe en reference a leurs clics linguistiques. Le terme Khoikhoi (ou Khoekhoe) signifie litteralement hommes des hommes ou vrais hommes dans la langue nama.",
+      "originOfExonyms": "Le terme Namaqua viendrait du nom khoekhoe, auquel s'ajouterait le suffixe -qua/kwa, qui veut dire gens de ou lieu de. Hottentot est un terme colonial neerlandais aujourd'hui considere comme offensant, utilise par les colons europeens pour designer les peuples Khoekhoe en reference a leurs clics linguistiques. Le terme Khoikhoi (ou Khoekhoe) signifierait littéralement hommes des hommes ou vrais hommes dans la langue nama.",
       "whyProblematic": "Le terme Hottentot est pejoratif et rejete par les Nama. L'identite Nama a ete profondement affectee par le genocide de 1904-1908 perpetue par l'Allemagne imperiale, qui a detruit plus de la moitie de la population. L'assimilation des Oorlam (metis Khoekhoe-europeens) au XIXe siecle a aussi complique les frontieres identitaires du groupe.",
       "contemporaryUsage": "Le terme Nama est officiellement reconnu en Namibie, ou la langue Khoekhoegowab (Nama-Damara) a le statut de langue nationale. Les Nama se nomment eux-memes Namakhoen. La Namibie reconnait les chefferies traditionnelles nama comme autorites coutumières.",
       "linguisticFamily": "FLG_KHOE",
@@ -104,27 +104,32 @@
       {
         "title": "Glottolog 5.3 — Nama (Namibia) (nama1264), ISO 639-3 : naq",
         "url": "https://glottolog.org/resource/languoid/id/nama1264",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Encyclopaedia Britannica — Nama",
         "url": "https://www.britannica.com/topic/Nama-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Nama, Khoekhoe in Namibia",
         "url": "https://joshuaproject.net/people_groups/13931/WA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "UNESCO — Intangible Cultural Heritage : Aixan/Gana/Ob#ANS TSI //Khasigu ancestral musical sound (Namibia, 2020)",
         "url": "https://ich.unesco.org/en/USL/01544",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Namibia Statistics Agency — 2023 Population and Housing Census",
         "url": "https://nsa.org.na/census/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "khoisan.org — Ritual: The Khoikhoi and the San",
@@ -134,7 +139,494 @@
       {
         "title": "IWGIA — The Indigenous World 2025 : Namibia",
         "url": "https://iwgia.org/en/namibia/5634-iw-2025-namibia.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nama désigne un peuple khoekhoe du sud de la Namibie et du nord-ouest de l'Afrique du Sud, qui se nomme lui-même Nama ; Naman en est le pluriel dans sa langue. D'autres noms existent : Namaqua, la forme des anciens récits européens, Khoekhoe, le nom que se donnaient tous les peuples khoekhoe, et Hottentot, un nom donné par les Européens. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Nama",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; c'est la forme que l'on préfère aujourd'hui à Namaqua.",
+        "usedIn": ["naq", "eng", "fra"],
+        "periodLabel": "Écrit seul depuis 1862 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nama désigne aujourd'hui l'un des grands peuples khoekhoe de l'ouest de l'Afrique du Sud et de la Namibie, et sa langue. C'est la forme que l'on préfère désormais à Namaqua, selon le Dictionary of South African English. Ce dictionnaire note que les Nama de Namibie sont le seul groupe khoekhoe à parler encore une langue khoekhoe. L'origine du nom est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Nama »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/nama/e05067",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Namaqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/namaqua/e05068",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Khoikhoi »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/khoikhoi/e03780",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "statement": "Le nom Nama s'écrit Naman au pluriel chez l'anthropologue Isaac Schapera, qui note que l'on parle plus souvent des Namaqua. Il les présente comme le groupe khoekhoe le mieux connu.",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 47-48",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1862,
+              "to": 1862,
+              "label": "1862"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nama apparaît seul, sans le suffixe de Namaqua, dans la grammaire comparée du linguiste Wilhelm Bleek, qui parle de « la langue nama », selon le Dictionary of South African English. C'est la plus ancienne trace de cette forme courte que le projet connaît. Le peuple portait déjà ce nom dans la forme Namaqua.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Nama »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/nama/e05067",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de W. H. I. Bleek, Comparative Grammar, 1862."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Nama viendrait probablement de nami ou nams, « langue », par allusion aux clics de la langue nama, selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Nama",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Namaqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/namaqua/e05068",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Namaqua",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "Le nom Nama suivi d'un suffixe ; c'est la forme des récits européens depuis 1670.",
+        "usedIn": ["eng", "nld"],
+        "periodLabel": "Écrit dès 1670 ; remplacé aujourd'hui par Nama",
+        "accounts": [
+          {
+            "period": {
+              "from": 1838,
+              "to": 1838,
+              "label": "1838"
+            },
+            "era": "polity",
+            "statement": "Le nom Namaqua figure dans le titre du récit de voyage de James Edward Alexander, qui traverse le pays des « Great Namaquas », les Grands Namaqua, au nord du fleuve Orange.",
+            "sources": [
+              {
+                "title": "An Expedition of Discovery into the Interior of Africa, through the hitherto undescribed countries of the Great Namaquas, Boschmans, and Hill Damaras, vol. I",
+                "author": "James Edward Alexander",
+                "year": 1838,
+                "url": "https://archive.org/details/expeditionofdisc00alex",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et p. 190-191",
+                "notes": "Londres, Henry Colburn, lu sur sa numérisation par la bibliothèque de l'université de Pretoria."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1731,
+              "to": 1731,
+              "label": "1731"
+            },
+            "era": "polity",
+            "statement": "Le nom Namaqua désigne chez Peter Kolb, dans la traduction anglaise de Guido Medley, deux nations, les Grands et les Petits Namaqua : les petits vivent sur la côte, les grands plus à l'est, selon le Dictionary of South African English. Isaac Schapera rappelle que les premiers colons hollandais faisaient déjà cette division.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Namaqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/namaqua/e05068",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de G. Medley, traduction de P. Kolben, Present State of the Cape of Good Hope, 1731."
+              },
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 48",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1670,
+              "to": 1670,
+              "label": "1670"
+            },
+            "era": "polity",
+            "statement": "Le nom Namaqua est écrit « Namaqua's » dans le livre de John Ogilby sur l'Afrique, qui le cite parmi les principaux peuples connus au sud du continent, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait là bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Cochoqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/cochoqua/e01718",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de J. Ogilby, Africa, 1670, p. 576."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Namaqua viendrait du nom Nama et d'un suffixe khoekhoe, -qua, qui marque des hommes ou des gens au pluriel, selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine de la forme Namaqua",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Namaqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/namaqua/e05068",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Proposée en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Namaqua serait né d'un malentendu, selon le missionnaire Heinrich Vedder : un voyageur aurait demandé qui étaient des hommes nama, et retenu la réponse « Negu gye Namagua », « ce sont des Nama », sans voir que -gua était un suffixe.",
+            "hypothesisGroup": "origine de la forme Namaqua",
+            "sources": [
+              {
+                "title": "Die Bergdama, 1re partie",
+                "author": "Heinrich Vedder",
+                "year": 1923,
+                "url": "https://archive.org/details/diebergdama00vedd",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Hambourg, L. Friederichsen, lu sur sa numérisation. Chapitre « Der Name des Volkes »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Khoekhoe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "« Les hommes des hommes » : le nom que se donnaient tous les peuples khoekhoe, Nama compris.",
+        "usedIn": ["naq"],
+        "periodLabel": "Écrit dès 1791",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens en nama"
+            },
+            "statement": "Le nom Khoekhoe est formé du nama khoe, « personne », et khoen, « gens », selon le Dictionary of South African English. Isaac Schapera le traduit « hommes des hommes » : c'était, écrit-il, le nom commun par lequel tous ces peuples se distinguaient des autres.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Khoikhoi »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/khoikhoi/e03780",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              },
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 44",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1866,
+              "to": 1866,
+              "label": "1866"
+            },
+            "statement": "Le nom Khoekhoe, écrit Khoikhoip, et au pluriel Khoikhoin, est encore en usage chez les Namaqua, écrit E. B. Watermeyer, selon le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Hottentot »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de Watermeyer, Transactions of the Philological Society, 1866."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1791,
+              "to": 1791,
+              "label": "1791"
+            },
+            "era": "colonial",
+            "statement": "Le nom Khoekhoe a une forme proche, Khoé-Khoep, pour un homme, dans la traduction anglaise du récit de voyage de François Le Vaillant, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne vivaient en Afrique australe depuis bien plus longtemps.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Khoikhoi »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/khoikhoi/e03780",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de la traduction anglaise des Voyages de F. Le Vaillant, 1791."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hottentot",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "nld",
+        "namedBy": null,
+        "shortLine": "Un nom donné par les Européens aux Khoekhoe, Nama compris ; il est jugé offensant.",
+        "usedIn": ["nld", "eng", "fra"],
+        "periodLabel": "Écrit dès 1677",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Hottentot est aujourd'hui jugé offensant par une partie des personnes concernées, et l'on écrit plutôt Khoikhoi, surtout dans les travaux savants, selon le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Hottentot »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "modern",
+            "statement": "Le nom Hottentot est alors, selon Isaac Schapera, celui par lequel ces peuples sont connus partout et se désignent souvent eux-mêmes. Il note que son origine a suscité beaucoup d'hypothèses et qu'aucune ne fait l'accord.",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 44",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1731,
+              "to": 1731,
+              "label": "1731"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hottentot « n'appartient en aucune façon » à ces peuples, écrit Peter Kolb dans la traduction de Guido Medley : c'est un surnom que leur donnent les Européens, selon le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Hottentot »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de G. Medley, traduction de P. Kolben, 1731."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1677,
+              "to": 1677,
+              "label": "1677"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hottentot a une forme proche, Hatten-tote, chez le voyageur anglais Thomas Herbert, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne vivaient au Cap bien avant l'arrivée des Européens.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Hottentot »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de T. Herbert, édition de 1677, d'après R. Raven-Hart."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "Proposée en 1930"
+            },
+            "era": "modern",
+            "statement": "Le nom Hottentot viendrait d'un mot qui veut dire « bègue », que les premiers colons hollandais auraient donné à ces peuples à cause des clics de leur langue. C'est l'explication le plus souvent admise, selon Isaac Schapera.",
+            "hypothesisGroup": "origine du nom Hottentot",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 44",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Hottentot »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1696,
+              "to": 1696,
+              "label": "Proposée en 1696"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hottentot imiterait un mot que ces peuples répétaient sans cesse dans leurs danses, selon le voyageur John Ovington, que cite le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Hottentot",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Hottentot »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de J. Ovington, Voyage to Suratt, 1696."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1917,
+              "to": 1917,
+              "label": "Proposée en 1917"
+            },
+            "era": "modern",
+            "statement": "Le nom Hottentot viendrait de paroles que ces peuples prononçaient eux-mêmes dans leurs danses religieuses et dans leurs salutations, selon J. du Plessis, que résume Isaac Schapera.",
+            "hypothesisGroup": "origine du nom Hottentot",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 44, note 2",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

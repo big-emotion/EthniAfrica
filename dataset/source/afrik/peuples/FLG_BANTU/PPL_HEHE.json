@@ -94,17 +94,20 @@
       {
         "title": "Britannica - Hehe",
         "url": "https://www.britannica.com/topic/Hehe",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Glottolog - Hehe",
         "url": "https://glottolog.org/resource/languoid/id/hehe1240",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Omniglot - Hehe language",
         "url": "https://www.omniglot.com/writing/hehe.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Mkwawa Memorial",
@@ -114,17 +117,20 @@
       {
         "title": "101 Last Tribes - Hehe people",
         "url": "https://www.101lasttribes.com/tribes/hehe.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project - Hehe in Tanzania",
         "url": "https://joshuaproject.net/people_groups/12078",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "African Union Library - Mkwawa and the Hehe Wars",
         "url": "https://library.au.int/mkwawa-and-hehe-wars-2",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

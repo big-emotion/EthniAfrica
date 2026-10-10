@@ -23,7 +23,7 @@ export const SourcedTable = ({ table }: SourcedTableProps) => (
     role="region"
     aria-label={table.caption}
     tabIndex={0}
-    className="overflow-x-auto focus-visible:shadow-[var(--afh-ring-focus)]"
+    className="overflow-x-auto focus-visible:shadow-afh-focus"
   >
     <table>
       <caption className="text-left text-afh-caption text-afh-text-soft">

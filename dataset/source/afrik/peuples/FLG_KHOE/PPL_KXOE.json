@@ -18,7 +18,7 @@
         "Khwedam",
         "Xun"
       ],
-      "originOfExonyms": "Le terme Barakwena (ou Mbarakwena) est un exonyme pejoratif utilise par d'autres groupes bantous pour designer les Khwe. Kxoe est une orthographe alternative de Khwe. Xun et Hukwe sont des variantes regionales. Water Bushmen est un surnom colonial faisant reference a leur habitat autour des zones aquatiques de l'Okavango.",
+      "originOfExonyms": "D'autres groupes de langue bantoue emploient Barakwena ou Mbarakwena comme un nom méprisant pour les Khwe. Kxoe est une autre manière d'écrire Khwe. Xun et Hukwe sont des formes régionales. Water Bushmen est un surnom colonial qui renvoie aux zones aquatiques de l'Okavango où ils vivent.",
       "whyProblematic": "Les termes Barakwena, Mbarakwena et Water Bushmen sont consideres pejoratifs ou reducteurs. La denomination Bushmen est egalement rejetee par beaucoup de membres du groupe. La declaration de Penduka (2000) recommande l'orthographe Khwe comme appellation standardisee.",
       "contemporaryUsage": "Le terme Khwe est prefere et recommande par la declaration de Penduka (2000) du groupe de travail WIMSA sur la standardisation des langues Ju et Khoe. Kxoe reste utilise dans la litterature academique. L'appellation Basarwa est utilisee au Botswana pour l'ensemble des San.",
       "linguisticFamily": "FLG_KHOE",
@@ -119,17 +119,20 @@
       {
         "title": "Glottolog 5.3 — Kxoe (kxoe1243), ISO 639-3 : xuu",
         "url": "https://glottolog.org/resource/languoid/id/kxoe1243",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Kxoe, Xun in Botswana",
         "url": "https://joshuaproject.net/people_groups/10676/BC",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kilian-Hatz, Christa. Khwe Dictionary. Koln : Rudiger Koppe Verlag, 2003",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Kilian-Hatz, Christa & Naude, David. Khwe Folktales. Koln, 1999",
@@ -139,22 +142,26 @@
       {
         "title": "IWGIA — The Indigenous World 2025 : Namibia",
         "url": "https://iwgia.org/en/namibia/5634-iw-2025-namibia.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "UNESCO — Tsodilo Hills World Heritage Site",
         "url": "https://whc.unesco.org/en/list/1021/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Brenzinger, Matthias. Language endangerment in Africa. In Encyclopedia of Language and Linguistics, 2011",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SciELO — The case of Khoisan languages of Botswana",
         "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S2224-33802019000300012",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

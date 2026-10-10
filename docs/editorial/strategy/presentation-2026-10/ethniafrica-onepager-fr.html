@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>EthniAfrica — Présentation</title>
+    <style>
+      /* Faces: the brand's own files (social/brand/fonts), variable axes. */
+      @font-face {
+        font-family: "Fraunces";
+        font-weight: 100 900;
+        font-style: normal;
+        src: url("../../../../social/brand/fonts/Fraunces.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: "Fraunces";
+        font-weight: 100 900;
+        font-style: italic;
+        src: url("../../../../docs/design/mockups/search-feed/fonts/Fraunces-italic-latin.woff2")
+          format("woff2");
+      }
+      @font-face {
+        font-family: "Fraunces";
+        font-weight: 100 900;
+        font-style: italic;
+        src: url("../../../../docs/design/mockups/search-feed/fonts/Fraunces-italic-latin-ext.woff2")
+          format("woff2");
+        unicode-range: U+0100-024F, U+0253, U+0259, U+1E00-1EFF;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-weight: 200 1000;
+        font-style: normal;
+        src: url("../../../../social/brand/fonts/NunitoSans.ttf")
+          format("truetype");
+      }
+
+      /* Tokens copied from src/styles/tokens/{color,type,radius}.css. */
+      :root {
+        --afh-color-bg: #fbf7f2;
+        --afh-color-bg-warm: #f5ede0;
+        --afh-color-card: #ffffff;
+        --afh-color-border: #e8dfd3;
+        --afh-color-text: #2c2018;
+        --afh-color-text-soft: #746557;
+        --afh-color-text-muted: #9b8b7d;
+        --afh-color-terracotta: #b64e27;
+        --afh-cat-ocre: #c9821f;
+        --afh-display-accent: #835514; /* --afh-cat-ocre-ink */
+        --afh-brand-flame: #da622f;
+        --afh-brand-gold: #f2ba36;
+        --afh-gradient-brand: linear-gradient(
+          135deg,
+          var(--afh-brand-flame),
+          var(--afh-brand-gold)
+        );
+        --afh-night-surface: #1d1710;
+        --afh-night-line: #3a2e1f;
+        --afh-night-ink: #f1e7d8;
+        --afh-night-ocre-soft: #e8b96a;
+        --afh-radius-md: 6px;
+        --afh-radius-lg: 14px;
+
+        /* The site's type scale at its mobile floor, scaled by one factor so the
+       A4 page keeps every role's ratio (body 17px → 12.75px = 9.6pt). */
+        --k: 0.75;
+        --afh-text-hero: calc(34px * var(--k));
+        --afh-text-h2: calc(22px * var(--k));
+        --afh-text-h3: calc(19px * var(--k));
+        --afh-text-lead: calc(19px * var(--k));
+        --afh-text-body: calc(17px * var(--k));
+        --afh-text-small: calc(16px * var(--k));
+        --afh-text-caption: calc(13px * var(--k));
+        --afh-text-eyebrow: calc(12px * var(--k));
+        --afh-figure-lead: calc(26px * var(--k));
+        --afh-leading-hero: 1.05;
+        --afh-leading-h2: 1.2;
+        --afh-leading-h3: 1.3;
+        --afh-leading-lead: 1.45;
+        --afh-leading-body: 1.55;
+        --afh-leading-caption: 1.45;
+        --afh-font-display: "Fraunces", Georgia, serif;
+        --afh-font-body: "Nunito Sans", system-ui, sans-serif;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        background: var(--afh-color-bg);
+        color: var(--afh-color-text);
+        font-family: var(--afh-font-body);
+        font-size: var(--afh-text-body);
+        line-height: var(--afh-leading-body);
+      }
+      .page {
+        width: 210mm;
+        height: 297mm;
+        padding: 13mm 16mm 13mm;
+        position: relative;
+        page-break-after: always;
+        overflow: hidden;
+      }
+      .page:last-child {
+        page-break-after: auto;
+      }
+      .page > :is(header, h1, h2, p, div, ul) {
+        position: relative;
+        z-index: 1;
+      }
+      html {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      /* The continent as a watermark: the mark the header carries, at page scale. */
+      .watermark {
+        position: absolute;
+        z-index: 0;
+        width: 165mm;
+        height: 165mm;
+        left: 22.5mm;
+        top: 70mm;
+        opacity: 0.06;
+        pointer-events: none;
+      }
+
+      /* Header lockup — SiteHeader's .sh-brand: 44px mark, name in Fraunces 900,
+     tagline in the brand gradient. */
+      header.top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--afh-color-border);
+        padding-bottom: 3.5mm;
+        margin-bottom: 6mm;
+      }
+      .lockup {
+        display: flex;
+        align-items: center;
+        gap: calc(9px * var(--k));
+      }
+      .lockup img {
+        width: calc(44px * var(--k));
+        height: calc(44px * var(--k));
+        object-fit: contain;
+      }
+      .lockup .name {
+        font-family: var(--afh-font-display);
+        font-weight: 900;
+        font-size: var(--afh-text-h3);
+        line-height: 1.15;
+        letter-spacing: -0.01em;
+        display: block;
+      }
+      .lockup .tagline {
+        font-family: var(--afh-font-display);
+        font-weight: 700;
+        font-size: var(--afh-text-caption);
+        line-height: 1.2;
+        display: inline-block;
+        background: var(--afh-gradient-brand);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .meta {
+        font-size: var(--afh-text-eyebrow);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: var(--afh-color-text-soft);
+      }
+
+      h1 {
+        font-family: var(--afh-font-display);
+        font-weight: 700;
+        font-size: var(--afh-text-hero);
+        line-height: var(--afh-leading-hero);
+        letter-spacing: -0.01em;
+        margin: 0 0 4mm;
+      }
+      h1 em {
+        color: var(--afh-display-accent);
+        font-style: italic;
+      }
+      .lede {
+        font-size: var(--afh-text-lead);
+        line-height: var(--afh-leading-lead);
+        margin: 0 0 5.5mm;
+        max-width: 168mm;
+      }
+
+      h2 {
+        font-family: var(--afh-font-display);
+        font-weight: 700;
+        font-size: var(--afh-text-h3);
+        line-height: var(--afh-leading-h3);
+        margin: 0 0 2mm;
+        color: var(--afh-color-text);
+      }
+      h2::before {
+        content: "";
+        display: block;
+        width: 9mm;
+        height: 2px;
+        margin-bottom: 1.6mm;
+        background: var(--afh-gradient-brand);
+        border-radius: 2px;
+      }
+      p {
+        margin: 0 0 2mm;
+      }
+      ul {
+        margin: 0 0 2mm;
+        padding-left: 4.2mm;
+      }
+      li {
+        margin-bottom: 1.2mm;
+      }
+      li::marker {
+        color: var(--afh-cat-ocre);
+      }
+      strong {
+        font-weight: 800;
+      }
+
+      .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7mm;
+        margin-bottom: 4.5mm;
+      }
+      .example {
+        background: var(--afh-color-bg-warm);
+        border-left: 3px solid var(--afh-cat-ocre);
+        padding: 3.5mm 4.5mm;
+        margin: 0 0 5mm;
+        border-radius: 0 var(--afh-radius-md) var(--afh-radius-md) 0;
+        font-size: var(--afh-text-small);
+        line-height: 1.5;
+      }
+      .example .q {
+        font-family: var(--afh-font-display);
+        font-style: italic;
+        font-weight: 500;
+        font-size: var(--afh-text-h3);
+        line-height: var(--afh-leading-h3);
+        margin-bottom: 1mm;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3mm;
+        margin: 2mm 0 2.5mm;
+      }
+      .stat {
+        background: var(--afh-color-card);
+        border: 1px solid var(--afh-color-border);
+        border-radius: var(--afh-radius-md);
+        padding: 3mm 3mm 2.5mm;
+      }
+      .stat .n {
+        font-family: var(--afh-font-display);
+        font-weight: 900;
+        font-size: calc(var(--afh-figure-lead) * 1.25);
+        line-height: 1;
+        color: var(--afh-color-terracotta);
+      }
+      .stat .l {
+        font-size: var(--afh-text-caption);
+        line-height: var(--afh-leading-caption);
+        color: var(--afh-color-text-soft);
+        margin-top: 1.4mm;
+      }
+      .note {
+        font-size: var(--afh-text-caption);
+        line-height: var(--afh-leading-caption);
+        color: var(--afh-color-text-soft);
+      }
+
+      .ask {
+        background: var(--afh-night-surface);
+        color: var(--afh-night-ink);
+        border-radius: var(--afh-radius-lg);
+        padding: 4.5mm 7mm;
+        margin: 0 0 5mm;
+      }
+      .ask h2 {
+        color: var(--afh-night-ocre-soft);
+        font-size: var(--afh-text-h2);
+        line-height: var(--afh-leading-h2);
+      }
+      .ask ul {
+        margin-bottom: 0;
+      }
+      .ask li::marker {
+        color: var(--afh-night-ocre-soft);
+      }
+      .ask .line {
+        font-size: var(--afh-text-caption);
+        line-height: var(--afh-leading-caption);
+        color: #cbbca8;
+        margin-top: 2.5mm;
+      }
+      .budget {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 2.5mm 0 1mm;
+        font-size: var(--afh-text-small);
+      }
+      .budget td {
+        padding: 0.9mm 0;
+        border-bottom: 1px solid var(--afh-night-line);
+        color: var(--afh-night-ink);
+        line-height: 1.35;
+      }
+      .budget td.a {
+        text-align: right;
+        white-space: nowrap;
+        padding-left: 4mm;
+        font-weight: 700;
+      }
+      .budget tr.total td {
+        border-bottom: 0;
+        border-top: 1.5px solid var(--afh-night-ocre-soft);
+        color: var(--afh-night-ocre-soft);
+        font-weight: 800;
+        font-family: var(--afh-font-display);
+        font-size: var(--afh-text-h3);
+        padding-top: 2mm;
+      }
+
+      footer.contact {
+        position: absolute;
+        left: 16mm;
+        right: 16mm;
+        bottom: 11mm;
+        z-index: 1;
+        border-top: 1px solid var(--afh-color-border);
+        padding-top: 3mm;
+        display: flex;
+        justify-content: space-between;
+        font-size: var(--afh-text-caption);
+      }
+      footer.contact b {
+        color: var(--afh-color-terracotta);
+      }
+      .pnum {
+        position: absolute;
+        right: 16mm;
+        top: 6mm;
+        font-size: var(--afh-text-eyebrow);
+        letter-spacing: 0.16em;
+        color: var(--afh-color-text-muted);
+      }
+      /* Fraunces has no ɓ (U+0253); the site falls back to the body face. */
+      .glyph {
+        font-family: var(--afh-font-body);
+        font-weight: 700;
+      }
+      .ask .roles {
+        font-size: var(--afh-text-caption);
+        line-height: var(--afh-leading-caption);
+        margin: 2.5mm 0 0;
+        color: var(--afh-night-ink);
+      }
+
+      .entries {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2.5mm;
+        margin: 0 0 3mm;
+      }
+      .entry {
+        background: var(--afh-color-card);
+        border: 1px solid var(--afh-color-border);
+        border-radius: var(--afh-radius-md);
+        padding: 2.5mm 3mm;
+      }
+      .entry .k {
+        font-size: var(--afh-text-eyebrow);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: var(--afh-color-terracotta);
+      }
+      .entry .w {
+        font-family: var(--afh-font-display);
+        font-weight: 700;
+        font-size: var(--afh-text-h3);
+        line-height: 1.15;
+        margin-top: 1mm;
+      }
+      .entries-note {
+        font-size: var(--afh-text-small);
+        margin: 0 0 4.5mm;
+        color: var(--afh-color-text-soft);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- PAGE 1 -->
+    <section class="page">
+      <img
+        class="watermark"
+        src="../../../../social/brand/ethniafrica-logo.png"
+        alt=""
+      />
+      <header class="top">
+        <div class="lockup">
+          <img src="../../../../social/brand/ethniafrica-logo.png" alt="" />
+          <div>
+            <span class="name">EthniAfrica</span
+            ><span class="tagline">L’Afrique à travers ses noms</span>
+          </div>
+        </div>
+        <div class="meta">Présentation · octobre 2026</div>
+      </header>
+
+      <h1>L'histoire de l'Afrique,<br /><em>racontée par ses noms.</em></h1>
+      <p class="lede">
+        EthniAfrica répond à une question :
+        <strong>d'où viennent les noms de l'Afrique ?</strong> Ceux des peuples,
+        des pays, des langues, des familles linguistiques, des patronymes et des
+        lieux ; à venir, ceux des coutumes et des mots. C'est l'onomastique,
+        croisée avec l'étymologie. Pour chaque nom, le site montre le nom qu'un
+        peuple se donne et ceux que d'autres lui ont donnés, côte à côte, chaque
+        source avec son type. Gratuit, open source, pensé pour le téléphone.
+      </p>
+
+      <div class="entries">
+        <div class="entry">
+          <div class="k">Peuple</div>
+          <div class="w">Peul, Ful<span class="glyph">ɓ</span>e, Pël</div>
+        </div>
+        <div class="entry">
+          <div class="k">Langue</div>
+          <div class="w">Lingala</div>
+        </div>
+        <div class="entry">
+          <div class="k">Pays</div>
+          <div class="w">Côte d'Ivoire</div>
+        </div>
+        <div class="entry">
+          <div class="k">Famille linguistique</div>
+          <div class="w">Bantou</div>
+        </div>
+        <div class="entry">
+          <div class="k">Patronyme</div>
+          <div class="w">Traoré</div>
+        </div>
+      </div>
+      <p class="entries-note">
+        Qui a nommé qui, quand, et pourquoi ? Chaque appellation garde la trace
+        d'une rencontre entre des peuples.
+      </p>
+
+      <div class="grid2">
+        <div>
+          <h2>Le problème</h2>
+          <p>
+            <strong>Il n'existe aucune source numérique unifiée</strong> pour
+            chercher l'histoire de l'Afrique à travers ses noms. On se contente
+            de Wikipédia et des moteurs de recherche, de catalogues de langues,
+            de sites de signification des noms sans sources, de tests ADN ou de
+            médias. Rien n'agrège le tout, ni ne montre les liens entre les
+            peuples.
+          </p>
+          <p>
+            Surtout, on regarde l'Afrique
+            <strong>à l'intérieur de ses frontières nationales</strong> : des
+            frontières tracées pour la plupart il y a moins de 140 ans, des
+            indépendances qui ont à peine plus de 60 ans. L'histoire d'avant est
+            peu enseignée : il faut la découvrir soi-même.
+          </p>
+        </div>
+        <div>
+          <h2>Notre réponse</h2>
+          <ul>
+            <li>
+              <strong>Un moteur de recherche par nom</strong> : chaque
+              information est affichée avec sa source et son type : tradition
+              orale, livre, article, archive.
+            </li>
+            <li>
+              <strong>La tradition orale au même rang</strong>, identifiée par
+              son porteur et son lieu, publiée avec son consentement.
+            </li>
+            <li>
+              <strong>Les réseaux sociaux comme porte d'entrée</strong> : des
+              formats courts et de la vidéo, parce qu'on lit moins et qu'on
+              regarde davantage.
+            </li>
+            <li>
+              <strong>La participation</strong> : les lecteurs proposent, une
+              petite équipe valide.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Ce qui nous distingue</h2>
+      <div class="grid2" style="margin-bottom: 0">
+        <ul>
+          <li>
+            <strong>Un angle : l'histoire du nom.</strong> En retraçant un nom,
+            on croise la politique, l'économie, la culture et la religion. Les
+            noms révèlent ce qui est caché : des peuples issus d'une même
+            branche, ou nés de corps de métier.
+          </li>
+          <li>
+            <strong>Des passeurs, pas des chercheurs.</strong> Nous prolongeons
+            le travail des historiens et des linguistes en y ajoutant la
+            tradition orale, selon la méthode de l'<em
+              >Histoire générale de l'Afrique</em
+            >
+            de l'UNESCO (tome I, <em>Méthodologie et préhistoire africaine</em>,
+            dir. Joseph Ki-Zerbo).
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <strong>Libre et réutilisable</strong> : le site et les données sous
+            licence CC BY-SA 4.0, avec une API publique.
+          </li>
+          <li>
+            <strong>Un corpus déjà constitué</strong> : 770 fiches de peuples,
+            807 patronymes et 54 pays, et 19 volumes de l'<em
+              >Histoire générale de l'Afrique</em
+            >
+            reliés au corpus chapitre par chapitre.
+          </li>
+        </ul>
+      </div>
+
+      <span class="pnum">1 / 2</span>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page">
+      <img
+        class="watermark"
+        src="../../../../social/brand/ethniafrica-logo.png"
+        alt=""
+      />
+      <header class="top">
+        <div class="lockup">
+          <img src="../../../../social/brand/ethniafrica-logo.png" alt="" />
+          <div>
+            <span class="name">EthniAfrica</span
+            ><span class="tagline">L’Afrique à travers ses noms</span>
+          </div>
+        </div>
+        <div class="meta">Présentation · octobre 2026</div>
+      </header>
+
+      <h2>Premier mois : une audience trouvée</h2>
+      <p>
+        Les comptes sociaux ont été lancés début septembre 2026. Les chiffres
+        ci-dessous datent du 8 octobre 2026.
+      </p>
+      <div class="stats">
+        <div class="stat">
+          <div class="n">459 600</div>
+          <div class="l">
+            vues sur Facebook en 4 semaines (10 sept. – 7 oct.), dont 92 % hors
+            abonnés
+          </div>
+        </div>
+        <div class="stat">
+          <div class="n">247 300</div>
+          <div class="l">vues sur Instagram en 30 jours ; 2 896 abonnés</div>
+        </div>
+        <div class="stat">
+          <div class="n">13 500</div>
+          <div class="l">
+            nouveaux abonnements à la page Facebook sur la même période
+          </div>
+        </div>
+        <div class="stat">
+          <div class="n">4 min</div>
+          <div class="l">
+            durée moyenne d'une visite sur le site, 3,9 pages vues par visite
+          </div>
+        </div>
+      </div>
+      <p class="note">
+        À cela s'ajoutent TikTok (98 200 vues sur 28 jours, 666 abonnés) et
+        YouTube (15 900 vues sur 28 jours, 169 abonnés). Sur le site, 391
+        visiteurs uniques en 30 jours, comptés uniquement s'ils acceptent la
+        mesure d'audience : c'est un minimum. Sur la dernière semaine mesurée,
+        les moteurs de recherche et ChatGPT ont amené 48 des 81 visiteurs : les
+        réponses du site sont déjà trouvées par la recherche et les assistants
+        IA.
+      </p>
+
+      <div class="grid2" style="margin-top: 3.5mm">
+        <div>
+          <h2>Pour qui</h2>
+          <ul>
+            <li>
+              <strong>La diaspora africaine francophone</strong>, puis
+              anglophone et hispanophone : la moitié des visiteurs mesurés sont
+              en France.
+            </li>
+            <li>
+              <strong>Les diasporas caribéenne et haïtienne</strong>, dont les
+              noms et les mémoires d'origine remontent à des peuples africains.
+            </li>
+            <li>
+              <strong>Le continent</strong> : la Côte d'Ivoire, le Mali et la
+              Guinée sont les publics les plus touchés, sur le site comme sur
+              les réseaux.
+            </li>
+            <li>
+              <strong>Les chercheurs, enseignants et projets culturels</strong>
+              qui ont besoin d'un point de départ sourcé, citable et
+              réutilisable.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Dans deux à trois ans</h2>
+          <ul>
+            <li>
+              <strong>Un réflexe</strong> : chercher un nom sur EthniAfrica
+              quand on s'interroge sur l'origine de son peuple ou de son nom de
+              famille.
+            </li>
+            <li>
+              <strong>Une référence citée</strong> par les chercheurs et les
+              projets culturels.
+            </li>
+            <li>
+              <strong>Une équipe</strong> de contributeurs qui proposent et
+              valident, pour que le projet ne repose plus sur une seule
+              personne.
+            </li>
+            <li>
+              <strong>Un périmètre élargi</strong> aux diasporas et aux créoles.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ask">
+        <h2>Ce que nous recherchons : 52 700 € sur 12 mois</h2>
+        <p>
+          EthniAfrica est un
+          <strong>projet indépendant incubé par l'agence Big Emotion</strong>,
+          aujourd'hui porté par une seule personne, épaulée par quelques
+          volontaires à temps partiel. Nous cherchons des
+          <strong
+            >mécènes, des subventions et des partenaires institutionnels ou
+            culturels</strong
+          >
+          pour en faire une équipe.
+        </p>
+        <table class="budget">
+          <tr>
+            <td>Un développeur à temps plein basé en Afrique de l'Ouest</td>
+            <td class="a">15 000 €</td>
+          </tr>
+          <tr>
+            <td>
+              200 fiches sourcées et vérifiées, rémunérées à la tâche, par zone
+              : un peuple et ses voisins
+            </td>
+            <td class="a">9 000 €</td>
+          </tr>
+          <tr>
+            <td>
+              Une mission de terrain de six semaines à Dakar, Abidjan et Accra
+              (estimation, à confirmer sur devis)
+            </td>
+            <td class="a">10 000 €</td>
+          </tr>
+          <tr>
+            <td>
+              Outils de production pour deux postes, hébergement et domaines
+            </td>
+            <td class="a">7 600 €</td>
+          </tr>
+          <tr>
+            <td>
+              30 récits oraux recueillis avec le consentement de leurs porteurs,
+              transcrits et documentés
+            </td>
+            <td class="a">2 400 €</td>
+          </tr>
+          <tr>
+            <td>Défraiement de la modération des réseaux sociaux</td>
+            <td class="a">1 800 €</td>
+          </tr>
+          <tr>
+            <td>Imprévus (15 %)</td>
+            <td class="a">6 900 €</td>
+          </tr>
+          <tr class="total">
+            <td>Total</td>
+            <td class="a">52 700 €</td>
+          </tr>
+        </table>
+        <p class="roles">
+          <strong>L'équipe visée.</strong> Rémunéré : un développeur. Défrayé :
+          la modération des réseaux sociaux. Bénévoles formés : la vérification
+          des sources et des données sur le site, la recherche pour les
+          publications. La rémunération va à des livrables vérifiés, pas à des
+          heures.
+        </p>
+        <p class="line">
+          Le projet reste gratuit et ouvert, sans publicité, et exclut tout
+          partenariat avec les services de test ADN d'origine.
+        </p>
+      </div>
+
+      <footer class="contact">
+        <span
+          ><b style="color: var(--ink)">Jean-Noé Kollo</b>, fondateur ·
+          jeannoe.kollo@ethniafrica.com</span
+        >
+        <span><b>contact@ethniafrica.com</b> · ethniafrica.com</span>
+      </footer>
+      <span class="pnum">2 / 2</span>
+    </section>
+  </body>
+</html>

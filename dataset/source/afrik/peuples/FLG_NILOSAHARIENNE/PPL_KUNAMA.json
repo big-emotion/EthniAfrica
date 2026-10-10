@@ -95,17 +95,20 @@
       {
         "title": "Kunama Language (KUN) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/kun/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Kunama in Eritrea – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/12850/er",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kunama in Ethiopia – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/12850/ET",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Kunama – Omna Tigray, 2022",
@@ -115,7 +118,8 @@
       {
         "title": "The Indigenous World 2025: Eritrea – IWGIA, 2025",
         "url": "https://iwgia.org/en/eritrea/5623-iw-2025-eritrea.html",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       }
     ]
   }

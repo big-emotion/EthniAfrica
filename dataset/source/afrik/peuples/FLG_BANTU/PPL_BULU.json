@@ -97,22 +97,26 @@
       {
         "title": "Encyclopaedia Britannica, article Bulu",
         "url": "https://www.britannica.com/topic/Bulu",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "101 Last Tribes, Bulu people",
         "url": "http://www.101lasttribes.com/tribes/bulu.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue, Bulu (bum)",
         "url": "https://www.ethnologue.com/language/bum/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "PeopleGroups.org, Bulu of Cameroon",
         "url": "https://peoplegroups.org/people_groups/pg012558/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

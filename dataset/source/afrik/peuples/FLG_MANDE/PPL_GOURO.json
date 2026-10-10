@@ -21,7 +21,7 @@
         "Lorube",
         "Dipa"
       ],
-      "originOfExonyms": "Le nom Gouro (ou Guro) a ete donne par le peuple Baule voisin ; c'est un exonyme baule. Le peuple se designe lui-meme sous le nom de Kweni. Lo et Lorube sont des appellations regionales. Dipa est une autre variante attestee dans la litterature ethnologique.",
+      "originOfExonyms": "Les voisins baoulé ont donné le nom Gouro, ou Guro, à ce peuple. Ses membres se nomment Kweni. Lo et Lorube sont des noms régionaux. Les travaux sur ce peuple emploient aussi Dipa.",
       "whyProblematic": null,
       "contemporaryUsage": "Gouro est la denomination la plus repandue dans la litterature francophone, les medias ivoiriens et les references academiques. Kweni est prefere par les specialistes linguistiques comme designation endonymique. Les deux formes sont utilisees en Cote d'Ivoire.",
       "linguisticFamily": "FLG_MANDE",
@@ -84,32 +84,38 @@
       {
         "title": "Guro | Traditional Arts, Mask Carving & Rituals – Encyclopaedia Britannica",
         "url": "https://www.britannica.com/topic/Guro",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Guro people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/guro.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Gouro, Kweni in Cote d'Ivoire – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/12007",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Guro language and alphabet – Omniglot, 2025",
         "url": "https://www.omniglot.com/writing/guro.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Guro Language (GOA) – Ethnologue, SIL International",
         "url": "https://www.ethnologue.com/language/goa/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "RTI Officiel – 2 minutes pour comprendre les Gouro, 2021",
         "url": "https://www.youtube.com/watch?v=TJc4NjTFGiw",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       }
     ]
   }

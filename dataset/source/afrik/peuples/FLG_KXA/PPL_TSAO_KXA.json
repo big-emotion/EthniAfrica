@@ -83,32 +83,38 @@
       {
         "title": "SIL Ethnologue — amkoe / huc language",
         "url": "https://www.ethnologue.com/language/huc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "IWGIA — Indigenous World 2024, Botswana chapter",
         "url": "https://www.iwgia.org/en/botswana",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "ngo"
       },
       {
         "title": "Survival International — Bushmen of the Kalahari",
         "url": "https://www.survivalinternational.org/tribes/bushmen",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Pmc.ncbi — The genomic prehistory of peoples speaking Khoisan languages (2021)",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8117426/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Cultural Survival Quarterly — Land, Language, and Leadership (2010)",
         "url": "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/land-language-and-leadership",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "UNESCO — Atlas des langues en danger du monde",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       }
     ]
   }

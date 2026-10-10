@@ -9,8 +9,8 @@
       "mainName": "Giziga",
       "selfAppellation": "Marva (sg. Marva, pl. Marvahay)",
       "exonyms": ["Guissiga (Fourneau 1938)", "Gizga", "Ghiziga", "Gisiga"],
-      "originOfExonyms": "Le terme Giziga est un exonyme d'origine fulbe (peul), selon R. Lukas (1973:46) il designe le clan chefdal du groupe. J. Lukas (1970:46) precise que les Giziga se designent eux-memes Marva (pl. Marvahay), terme qui est a la racine du nom de la ville de Maroua, fondee par ce groupe. Pontie (1973:13) propose une etymologie pejorative : Guiziga venant de ngi zi ka (ceux qui mangent n'importe quoi), allusion au clan Pedizam considere comme paria.",
-      "whyProblematic": "L'ethnonymie giziga est complexe car le terme adopte (Giziga) est un exonyme fulbe, alors que le veritable endonyme est Marva. La denomination coloniale et post-coloniale a consacre l'exonyme, ce qui peut etre vecu comme une imposition exterieure.",
+      "originOfExonyms": "Giziga est un nom donné par les Fulɓe, ou Peuls. Selon R. Lukas (1973:46), il désigne le clan des chefs du groupe. J. Lukas (1970:46) précise que les personnes concernées se nomment Marva, ou Marvahay au pluriel. Ce nom aurait donné celui de Maroua, la ville fondée par le groupe. Pontie (1973:13) propose une autre origine, méprisante : Guiziga viendrait de ngi zi ka, ceux qui mangent n'importe quoi. Cette explication ferait référence au clan Pedizam, considéré comme exclu du reste de la société.",
+      "whyProblematic": "Le nom Giziga a été donné par les Fulɓe, alors que les personnes concernées se nomment Marva. Les administrations coloniale puis postcoloniale ont installé l'usage de Giziga. Le groupe peut donc le vivre comme un nom imposé de l'extérieur.",
       "contemporaryUsage": "Le terme Giziga est desormais d'usage courant en francais et en haoussa. Les locuteurs se designent eux-memes Marva ou utilisent Giziga selon le contexte. On distingue les Giziga du Nord (autour de Maroua et Dogba) et les Giziga du Sud (autour de Loulou et Moutouroua).",
       "linguisticFamily": "FLG_TCHADIQUE",
       "ethnoLinguisticGroup": "Tchadique central (Biu-Mandara), groupe Matakam",
@@ -88,37 +88,44 @@
       {
         "title": "Barreteau, Daniel (1984). Description du musey (langue tchadique du Cameroun). Paris : ORSTOM. Classification des dialectes giziga",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Pontie, Guy (1973). Les Guiziga du Cameroun septentrional. Paris : ORSTOM",
         "url": "https://horizon.documentation.ird.fr/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Podlewski, A.M. (1966). La dynamique des principales populations du Nord-Cameroun. Cahiers ORSTOM, serie Sciences Humaines",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Giziga (giz)",
         "url": "https://www.ethnologue.com/language/giz/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Giziga, North (gis)",
         "url": "https://www.ethnologue.com/language/gis/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "101 Last Tribes — Gisiga people",
         "url": "https://www.101lasttribes.com/tribes/gisiga.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "PeopleGroups.org — South Gisiga of Cameroon (PG012783)",
         "url": "https://peoplegroups.org/people_groups/pg012783/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kupi.com — Maroua history (Giziga founding peoples)",

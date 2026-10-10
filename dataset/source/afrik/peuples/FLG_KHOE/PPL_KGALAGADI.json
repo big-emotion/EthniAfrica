@@ -9,7 +9,7 @@
       "mainName": "Kgalagadi",
       "selfAppellation": "Bakgalagadi",
       "exonyms": ["Khalagari", "Kalahari people", "Bakgalagari", "Kgalagari"],
-      "originOfExonyms": "Le terme Khalagari est une variante orthographique ancienne utilisee par les explorateurs europeens et Tswana des 18e-19e siecles. Bakgalagadi est la forme correcte avec le prefixe nominal Ba- (pluriel des personnes), Kgalagadi etant derive du terme signifiant 'lieu de la soif' ou 'grande soif' en sotho-tswana, referant au desert du Kalahari.",
+      "originOfExonyms": "Le terme Khalagari est une variante orthographique ancienne utilisee par les explorateurs europeens et Tswana des 18e-19e siecles. Bakgalagadi est la forme correcte avec le prefixe nominal Ba- (pluriel des personnes), Kgalagadi dériverait d'un terme qui veut dire 'lieu de la soif' ou 'grande soif' en sotho-tswana, en référence au désert du Kalahari.",
       "whyProblematic": "Les Kgalagadi ont ete categorises comme sous-groupe 'inferieur' des Batswana par l'administration coloniale britannique (Bechuanaland), ce qui leur a valu une exclusion du systeme des huit tribus tswana officielles dotees de droits et d'autonomie administrative. Ce classement discriminatoire a influence leur representation politique jusqu'a l'independance du Botswana (1966).",
       "contemporaryUsage": "Le terme Bakgalagadi est la designation courante en tswana et en anglais. En botswana officiel, Kgalagadi designe egalement le district administratif du sud-ouest et le parc transfrontalier (Kgalagadi Transfrontier Park). Certains membres se definissent d'abord par leur clan (Bashaga, Bangologa, etc.).",
       "linguisticFamily": "FLG_KHOE",
@@ -102,32 +102,38 @@
       {
         "title": "Qiraat Africa — The Kgalagadi of Botswana",
         "url": "https://qiraatafrican.com/en/19023/the-kgalagadi-of-botswana/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Joshua Project — Bangologa, Kgalagadi in Botswana",
         "url": "https://joshuaproject.net/people_groups/12646/BC",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue SIL International — Kgalagadi language (xkv)",
         "url": "https://www.ethnologue.com/language/xkv/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Britannica — Kgalagadi people",
         "url": "https://www.britannica.com/topic/Kgalagadi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Statistics Botswana — Population Distribution 2022",
         "url": "https://statsbots.org.bw/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Global Recordings Network — Kgalagadi (xkv)",
         "url": "https://globalrecordings.net/en/language/xkv",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "missionary_database"
       }
     ]
   }

@@ -4,8 +4,200 @@
   "nameEn": "Mozambique",
   "nameOfficial": "République du Mozambique (República de Moçambique)",
   "summary": "Le Mozambique porte le nom d'un sultan : Mussa bin Bique, qui régnait au XVe siècle sur l'île que les Portugais abordèrent les premiers. Cités-États swahilies, royaumes shona et chefferies bantoues s'y rencontraient avant cinq siècles de colonisation portugaise. Makua, Tsonga, Shona, Sena, Ndau et Makonde y composent la population.",
-  "etymology": "Le nom \"Mozambique\" vient de \"Mozambique\", nom d'une île au large de la côte nord du pays. L'île a été nommée d'après le sultan Mussa bin Bique (ou Musa al-Biq), qui régnait sur l'île au XVe siècle. Les Portugais ont utilisé le nom de l'île pour désigner toute la colonie.",
+  "etymology": "Le nom \"Mozambique\" viendrait de \"Mozambique\", nom d'une île au large de la côte nord du pays. L'île a été nommée d'après le sultan Mussa bin Bique (ou Musa al-Biq), qui régnait sur l'île au XVe siècle. Les Portugais ont utilisé le nom de l'île pour désigner toute la colonie.",
   "nameOriginActor": "Le nom \"Mozambique\" vient de l'île de Mozambique, nommée d'après le sultan Mussa bin Bique (ou Musa al-Biq), qui régnait sur l'île au XVe siècle. Les Portugais ont utilisé le nom de l'île pour désigner toute la colonie portugaise en Afrique de l'Est.",
+  "nameHistory": {
+    "summary": "Le nom Mozambique désigne un pays d'Afrique australe, la République du Mozambique, Moçambique en portugais. Il a d'abord désigné une petite île de corail, puis la colonie portugaise ; à l'indépendance, le pays s'est appelé République populaire du Mozambique. On ne sait pas avec certitude d'où vient le nom de l'île ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Mozambique",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une petite île de corail, écrit dès 1498, devenu celui de la colonie puis de l'État.",
+        "periodLabel": "Écrit dès 1498 ; nom de l'État depuis 1975",
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": null,
+              "label": "Depuis le 25 juin 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Mozambique est celui de l'État indépendant depuis le 25 juin 1975, selon l'Histoire générale de l'Afrique et l'Office of the Historian. Il porte aujourd'hui le nom de République du Mozambique, República de Moçambique en portugais, selon le Permanent Committee on Geographical Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Mozambique : indépendant le 25 juin 1975, puissance coloniale le Portugal, avec le nom portugais entre parenthèses, « (Moçambique) »."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Mozambique",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/mozambique",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 10 octobre 2026. Les États-Unis reconnaissent la République populaire du Mozambique le 25 juin 1975 ; le pays était auparavant sous souveraineté portugaise."
+              },
+              {
+                "title": "Toponymic Factfile: Mozambique",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2024,
+                "url": "https://assets.publishing.service.gov.uk/media/6785294af041702a11ca0ef3/Mozambique_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2024, lue le 10 octobre 2026. Nom du pays en portugais, sa langue officielle : Moçambique ; nom de l'État : República de Moçambique ; indépendance obtenue du Portugal en 1975."
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordonnateur Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 70",
+                "notes": "Document de la session 2025 du Groupe d'experts, daté du 23 avril 2025, lu en ligne le 10 octobre 2026. Entrée Mozambique : en français « Mozambique (le) », « République du Mozambique (la) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mozambique désigne aujourd'hui l'État ; il a d'abord été celui d'une petite île de corail, et il s'est répandu au XVIe siècle, selon le Haut-Commissariat du Mozambique à Londres. On ne sait pas avec certitude d'où vient le nom de l'île.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Nampula Province",
+                "author": "Haut-Commissariat de la République du Mozambique au Royaume-Uni",
+                "year": null,
+                "url": "https://mozambiquehighcommission.org.uk/nampula.html",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page consultée le 10 octobre 2026, consacrée à la province de Nampula et à l'île de Mozambique : « There are a number of ideas as to the original name of this small coral island. Some say it is Muipiti, others say that originated from the word Mussa-Bin-Tiki, the name of the son of the Sultan who was at one time lord of the island. The name Mozambique came into use in the XVI century. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1498,
+              "to": 1498,
+              "label": "Mars 1498"
+            },
+            "era": "polity",
+            "statement": "Le nom Mozambique apparaît, sous la forme Moncobiquy, dans le journal du premier voyage de Vasco de Gama : dans cette île réside un chef qui porte le titre de sultan. C'est la plus ancienne trace de ce nom que le projet connaît. La ville de l'île, sous l'influence de Kilwa, existait déjà avant lui, selon A. I. Salim.",
+            "formAsWritten": "Moncobiquy",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Journal of the First Voyage of Vasco da Gama, 1497-1499",
+                "author": "Auteur anonyme du voyage, traduit et annoté par E. G. Ravenstein",
+                "year": 1898,
+                "url": "https://archive.org/details/ajournalfirstvo00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 22-25",
+                "notes": "Londres, Hakluyt Society, 1898, lu en fac-similé le 10 octobre 2026. Les navires arrivent devant l'île le 2 mars 1498 ; le journal écrit « In this place and island of Moncobiquy [Mozambique] there resided a chief [senhor] who had the title of Sultan », et Ravenstein note que João de Barros appelle ce chef Zacoeja."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 25 : La côte orientale de l'Afrique",
+                "author": "A. I. Salim",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 823",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, lu dans l'exemplaire numérisé. Quand les Portugais arrivent devant l'île de Mozambique, ils apprennent que la ville est tombée sous l'influence de Kilwa ; le shaykh leur fait bon accueil jusqu'à ce qu'il découvre qu'ils ne sont pas musulmans."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Non daté"
+            },
+            "statement": "On appellerait d'abord l'île Muipiti, selon certains, rapporte le Haut-Commissariat du Mozambique à Londres.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Nampula Province",
+                "author": "Haut-Commissariat de la République du Mozambique au Royaume-Uni",
+                "year": null,
+                "url": "https://mozambiquehighcommission.org.uk/nampula.html",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page consultée le 10 octobre 2026, consacrée à la province de Nampula et à l'île de Mozambique : « There are a number of ideas as to the original name of this small coral island. Some say it is Muipiti, others say that originated from the word Mussa-Bin-Tiki, the name of the son of the Sultan who was at one time lord of the island. The name Mozambique came into use in the XVI century. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Mozambique viendrait de Mussa-Bin-Tiki, le nom du fils d'un sultan qui fut un temps seigneur de l'île, selon une explication que rapporte le Haut-Commissariat du Mozambique à Londres.",
+            "hypothesisGroup": "origine du nom Mozambique",
+            "sources": [
+              {
+                "title": "Nampula Province",
+                "author": "Haut-Commissariat de la République du Mozambique au Royaume-Uni",
+                "year": null,
+                "url": "https://mozambiquehighcommission.org.uk/nampula.html",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page consultée le 10 octobre 2026, consacrée à la province de Nampula et à l'île de Mozambique : « There are a number of ideas as to the original name of this small coral island. Some say it is Muipiti, others say that originated from the word Mussa-Bin-Tiki, the name of the son of the Sultan who was at one time lord of the island. The name Mozambique came into use in the XVI century. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République populaire du Mozambique",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "À partir de 1975",
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "25 juin 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom République populaire du Mozambique est celui sous lequel les États-Unis reconnaissent le nouvel État le jour de son indépendance, le 25 juin 1975, selon l'Office of the Historian.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Mozambique",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/mozambique",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 10 octobre 2026. Les États-Unis reconnaissent la République populaire du Mozambique le 25 juin 1975 ; le pays était auparavant sous souveraineté portugaise."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -255,22 +447,26 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Mozambique",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Languages of Mozambique",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements mozambicains",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples du Mozambique",
@@ -285,17 +481,20 @@
       {
         "title": "CIA World Factbook – Mozambique (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Mozambique",
         "url": "https://www.unfpa.org/data/world-population/MZ",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

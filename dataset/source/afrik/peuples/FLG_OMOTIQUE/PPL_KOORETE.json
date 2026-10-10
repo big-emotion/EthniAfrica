@@ -16,7 +16,7 @@
         "Kwera",
         "Nuna"
       ],
-      "originOfExonyms": "Le nom Koorete designe a la fois le peuple et leur langue : le suffixe -te est ajoute au nom ethnique Koore pour former le nom de la langue (Koorete). Les noms Amarro et Amaarro referent au territoire (Amaro Special Woreda). Badittu, Kwera et Nuna sont des noms utilises par les peuples voisins ou dans certaines zones specifiques. Le terme Koyra est egalement utilise comme exonyme pour les Koorete.",
+      "originOfExonyms": "Koorete désigne le peuple et sa langue. Le nom de la langue se forme en ajoutant -te au nom du peuple, Koore. Amarro et Amaarro renvoient au territoire, l'Amaro Special Woreda. Les voisins ou les habitants de certaines zones emploient Badittu, Kwera ou Nuna. D'autres populations appellent aussi les Koorete Koyra.",
       "whyProblematic": null,
       "contemporaryUsage": "Les termes Koore et Koorete sont utilises de facon interchangeable dans les documents officiels ethiopiens. Le Woreda administratif est appele Amaro Special Woreda. La langue koorete est identifiee sous le code ISO kqy.",
       "linguisticFamily": "FLG_OMOTIQUE",
@@ -93,17 +93,20 @@
       {
         "title": "Joshua Project — Koore in Ethiopia",
         "url": "https://joshuaproject.net/people_groups/12790",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Koorete of Ethiopia",
         "url": "https://peoplegroups.org/people_groups/pg011608/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Koorete language [kqy]",
         "url": null,
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Beletu Redda — The Morphology of Koorete. Addis Ababa University",
@@ -113,12 +116,14 @@
       {
         "title": "Ethiopian Central Statistical Agency — Summary and Statistical Report of the 2007 Population and Housing Census. Addis Ababa, 2008",
         "url": null,
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Britannica — Omotic Languages",
         "url": "https://www.britannica.com/topic/Omotic-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   }

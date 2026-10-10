@@ -22,7 +22,6 @@ const peuplePageData: ComparisonPageData = {
       id: "PPL_ILLUSTRATIVE_TWO",
       label: "Peuple Illustratif Deux",
       type: "peuple",
-      confidence: { score: 0.82, sourceCount: 5 },
     },
   ],
   rows: [
@@ -73,7 +72,6 @@ describe("buildComparisonOgCard", () => {
       id: "PPL_ILLUSTRATIVE_ONE",
       autonym: "Endonyme Un",
       exonym: "Exonyme Un",
-      confidenceLabel: "page non auditée",
     });
   });
 
@@ -93,7 +91,6 @@ describe("buildComparisonOgCard", () => {
       id: "FLG_ILLUSTRATIVE",
       autonym: "Endonyme Famille",
       exonym: "Ancien nom",
-      confidenceLabel: "page non auditée",
     });
   });
 
@@ -105,22 +102,16 @@ describe("buildComparisonOgCard", () => {
       id: "COM",
       autonym: "Comores",
       exonym: null,
-      confidenceLabel: "page non auditée",
     });
   });
 
-  // @req REQ-097
-  it("renders a present confidence score as a rounded plain-text percentage", () => {
+  // A shared card is a reader surface too: it names the entities and nothing
+  // about how far to trust their pages.
+  // @req REQ-194
+  it("prints no confidence score or review status on any entity", () => {
     const card = buildComparisonOgCard(peuplePageData);
 
-    expect(card.entities[1].confidenceLabel).toBe("82 % de confiance");
-  });
-
-  // @req REQ-097
-  it("replaces a missing confidence score with the unaudited fallback", () => {
-    const card = buildComparisonOgCard(peuplePageData);
-
-    expect(card.entities[0].confidenceLabel).toBe("page non auditée");
+    expect(JSON.stringify(card)).not.toMatch(/confiance|pas encore relue|%/i);
   });
 
   // @req REQ-097
@@ -174,7 +165,7 @@ describe("buildComparisonOgCard", () => {
 
     expect(card.entities).toHaveLength(2);
     expect(Object.keys(card.entities[0]).sort()).toEqual(
-      ["autonym", "confidenceLabel", "exonym", "id"].sort()
+      ["autonym", "exonym", "id"].sort()
     );
   });
 });

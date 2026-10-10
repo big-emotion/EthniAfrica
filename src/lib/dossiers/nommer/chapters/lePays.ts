@@ -19,11 +19,10 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
   key: "le-pays",
   ordinal: "02",
   title: "Le pays",
-  question:
-    "Les frontières ont été tracées par d'autres, à des dates différentes. Et les noms qu'on a posés dessus, d'où viennent-ils ?",
+  question: "Qui a choisi les noms des pays et que racontent-ils ?",
   standfirst: {
     id: "standfirst",
-    text: "Moins d'un tiers des pays du continent portent un nom que des Africains ont choisi. Renommer n'a pas été un moment : c'est une pratique qui court sur soixante ans.",
+    text: "Dans le classement proposé ici, moins d’un tiers des pays portent un nom choisi ou rétabli par des Africains. Ces choix s’étalent sur plusieurs décennies. Ils racontent des histoires différentes, que les fiches ne documentent pas toutes avec la même précision.",
     sourceRefs: [],
     figureRefs: ["countries-african-choice", "corpus-countries"],
   },
@@ -37,23 +36,27 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
     {
       id: "un-avertissement-de-methode",
       stepLabel: "02 · Le pays",
-      heading: "Un avertissement, avant le premier chiffre",
+      heading: "Sur quels textes ce classement repose",
       blocks: [
         {
           id: "une-seule-etymologie-sourcee",
-          text: "Nos cinquante-quatre fiches de pays renseignent toutes l'étymologie de leur nom et l'acteur qui l'a donné. Une seule rattache cette étymologie à une source — celle du Nigeria, corrigée en écrivant ce chapitre. Pour les cinquante-trois autres, le chapitre des sources documente la démographie et jamais le nom.",
-          sourceRefs: ["shaw-times-nigeria"],
+          text: "Lors du premier relevé des cinquante-quatre fiches de pays, les explications sur l’origine des noms n’étaient pas accompagnées de sources. Des références ont depuis été ajoutées à ce chapitre pour le Nigeria, le Bénin et le Ghana. Le classement ci-dessous reste fondé sur ce premier relevé et doit être lu avec cette limite.",
+          sourceRefs: [
+            "shaw-times-nigeria",
+            "afrik-pays-ben",
+            "afrik-pays-gha",
+          ],
           figureRefs: ["corpus-countries"],
         },
         {
           id: "une-lecture-a-une-date",
-          text: "Le classement qui suit est donc une lecture, faite à la main, à une date. Ce n'est pas une mesure du corpus, et le corpus ne porte aucun champ qui permettrait d'en faire une : la question « ce pays a-t-il été nommé par des Africains ? » n'est aujourd'hui pas interrogeable.",
+          text: "Le classement qui suit repose sur une lecture des fiches à une date donnée. Les fiches ne précisent pas toutes de la même manière qui a choisi le nom du pays. Ce classement demande donc une interprétation et ne peut pas être obtenu par un simple décompte.",
           sourceRefs: [],
           figureRefs: ["countries-african-choice"],
         },
         {
           id: "des-listes-en-entier",
-          text: "Les listes sont donc publiées en entier plutôt que résumées. C'est ce qui rend la lecture contestable, et une lecture contestable vaut mieux qu'une mesure qui n'en est pas une.",
+          text: "Nous donnons la liste complète des pays dans chaque catégorie. Vous pouvez ainsi voir les choix que nous avons faits et les discuter.",
           sourceRefs: [],
           figureRefs: [],
         },
@@ -62,23 +65,23 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
     {
       id: "quatre-familles",
       stepLabel: "02 · Le pays",
-      heading: "Quatre familles, quatre origines",
+      heading: "Quatre origines proposées",
       blocks: [
         {
           id: "quatre-cas-inegaux",
-          text: "Un nom de pays vient d'un navigateur, d'un géographe ancien, d'un royaume qui était déjà là, ou d'une décision prise après l'indépendance. Les quatre cas ne se valent pas, et le dernier est le plus rare.",
+          text: "Les fiches évoquent notamment des noms donnés par des navigateurs ou des géographes, des noms de royaumes déjà présents et des choix faits à l’indépendance ou après. Nous proposons quatre catégories pour comparer ces histoires.",
           sourceRefs: [],
           figureRefs: [],
         },
       ],
       table: {
         caption:
-          "Les 54 pays, classés à la main d'après le champ « acteur du nom » de leur fiche. Une lecture, pas une mesure.",
+          "Classement proposé à partir des explications sur l’origine des noms des 54 pays.",
         columns: ["Origine du nom", "Pays", "Lesquels"],
         rows: [
           {
             cells: [
-              "Exonyme européen conservé",
+              "Nom donné par des Européens et conservé",
               "20",
               "Guinée, Guinée équatoriale, Gambie, Sierra Leone, Côte d'Ivoire, Cameroun, Gabon, Sénégal, Nigeria, Libéria, Seychelles, Maurice, Mozambique, São Tomé-et-Príncipe, Érythrée, Djibouti, Mauritanie, Algérie, Tunisie, Madagascar",
             ],
@@ -87,7 +90,7 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
           },
           {
             cells: [
-              "Exonyme ancien, non européen",
+              "Nom ancien donné de l’extérieur",
               "6",
               "Égypte et Libye (grec), Éthiopie (grec, puis adopté), Soudan (arabe, bilād as-sūdān), Maroc (arabe), Comores (arabo-persan)",
             ],
@@ -118,23 +121,23 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
     {
       id: "ce-que-dit-le-dix-sept",
       stepLabel: "02 · Le pays",
-      heading: "Ce que dit le dix-sept",
+      heading: "Des changements de nom sur plusieurs décennies",
       blocks: [
         {
           id: "une-pratique-sur-soixante-ans",
-          text: "La renomination n'est pas un événement de 1960. Elle commence avant les indépendances — le Ghana prend son nom en 1957, un mois après la sienne — et elle continue après : Zimbabwe en 1980, Burkina Faso en 1984, Namibie en 1990, Soudan du Sud en 2011, Cabo Verde en 2013, Eswatini en 2018.",
+          text: "Les changements de nom ne se limitent pas à l’année 1960. Le Ghana prend son nom en 1957. D’autres choix suivent : Zimbabwe en 1980, Burkina Faso en 1984, Namibie en 1990, Soudan du Sud en 2011, Cabo Verde en 2013 et Eswatini en 2018.",
           sourceRefs: ["afrik-pays-gha"],
           figureRefs: ["countries-african-choice"],
         },
         {
           id: "soixante-et-un-ans",
-          text: "Soixante et un ans séparent le premier de ces gestes du dernier. Ce n'est pas une vague, c'est une pratique : chaque génération reprend la question là où la précédente l'a laissée, et aucune ne la clôt.",
+          text: "Soixante et un ans séparent le premier et le dernier de ces exemples. La question du nom d’un pays peut donc être reprise longtemps après son indépendance.",
           sourceRefs: [],
           figureRefs: [],
         },
         {
           id: "un-nom-herite-nest-pas-subi",
-          text: "Le reste du continent vit avec un nom donné par quelqu'un d'autre, et le vit sans drame la plupart du temps. Le Sénégal porte peut-être une expression wolof entendue de travers par des navigateurs portugais ; personne n'en fait une revendication. Un nom hérité n'est pas nécessairement un nom subi.",
+          text: "Un nom venu de l’extérieur peut être conservé par les habitants du pays. Pour le Sénégal, une explication rapproche le nom d’une expression wolof que des navigateurs portugais auraient mal comprise. Cette proposition ne suffit pas à dire comment les habitants perçoivent le nom aujourd’hui.",
           sourceRefs: [],
           figureRefs: ["countries-european-exonym"],
         },
@@ -143,29 +146,29 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
     {
       id: "trois-cas-qui-defont-la-lecture",
       stepLabel: "02 · Le pays",
-      heading: "Trois cas qui défont la lecture simple",
+      heading: "Trois histoires de noms à examiner de près",
       blocks: [
         {
           id: "nigeria-nomme-par-une-journaliste",
-          text: "Le Nigeria n'a pas été nommé par une administration : il a été nommé par une journaliste. Le 8 janvier 1897, Flora Shaw propose dans le Times de désigner d'un seul mot la « Niger Area » que la Royal Niger Company administrait. Le nom n'est officialisé que seize ans plus tard, en 1914, par Lugard, à l'unification des protectorats du Nord et du Sud.",
+          text: "Le 8 janvier 1897, la journaliste Flora Shaw propose dans le Times le nom « Nigeria » pour la « Niger Area » administrée par la Royal Niger Company. Lugard l’officialise en 1914, lors de l’unification des protectorats du Nord et du Sud. La proposition du nom et son adoption officielle sont donc deux étapes distinctes.",
           sourceRefs: ["shaw-times-nigeria"],
           figureRefs: [],
         },
         {
           id: "une-attribution-nuancee",
-          text: "Le détail que ce chapitre ne peut pas passer sous silence est que l'attribution elle-même est nuancée. Shaw a suggéré le nom ; elle ne l'a pas imposé, et c'est l'administration qui l'a rendu réel. Des occurrences antérieures de « Nigerian » sont d'ailleurs signalées chez William Cole en 1862 et chez Richard Burton en 1863, sans qu'on sache si elles sont contemporaines ou ajoutées à l'édition. L'histoire la plus racontée du continent sur l'origine d'un nom est donc, elle aussi, un récit avec des trous.",
+          text: "L’histoire reste à préciser. Des emplois plus anciens de « Nigerian » sont signalés chez William Cole en 1862 et Richard Burton en 1863. La source consultée ne permet pas de savoir si le mot figurait dans les textes d’origine ou s’il a été ajouté dans une édition ultérieure.",
           sourceRefs: ["shaw-times-nigeria"],
           figureRefs: [],
         },
         {
           id: "benin-se-desindexe",
-          text: "Le Bénin remplace le 30 novembre 1975 le « Dahomey » colonial, tiré du royaume fon. Le nom retenu n'est celui d'aucun groupe du territoire — c'est précisément ce qu'on lui demandait, dans un régime qui subordonnait les appartenances ethno-régionales. Il n'est pas pour autant arbitraire : le golfe du Bénin borde la côte, et lui donne un ancrage. Se renommer soi-même a exigé de se désindexer de tous ses peuples à la fois.",
+          text: "Le 30 novembre 1975, le Bénin remplace le nom colonial « Dahomey », tiré d’un royaume fon. Selon la fiche citée, le régime cherchait un nom qui ne soit celui d’aucun peuple du territoire, afin de limiter les divisions entre régions et populations. Le golfe du Bénin, qui borde la côte, offrait une référence géographique commune.",
           sourceRefs: ["afrik-pays-ben"],
           figureRefs: [],
         },
         {
           id: "ghana-restaure-un-empire",
-          text: "Le Ghana fait le geste inverse, et l'assume. Le 6 mars 1957, la Gold Coast prend le nom d'un empire médiéval du Soudan occidental, dont le territoire — l'actuel sud de la Mauritanie et l'ouest du Mali — ne recouvre à aucun moment le sien. Le choix n'est pas une erreur de géographie : il vient de décennies de réflexion d'enseignants et de lettrés sur l'étiquette coloniale. Un nom restauré est un acte politique, pas une exactitude.",
+          text: "Le 6 mars 1957, la Gold Coast prend le nom de Ghana, en référence à un empire médiéval situé dans le sud de l’actuelle Mauritanie et l’ouest du Mali. Cet empire ne se trouvait pas sur le territoire du Ghana actuel. La fiche citée présente ce choix comme le résultat de plusieurs décennies de réflexion d’enseignants et de lettrés sur le nom colonial du pays.",
           sourceRefs: ["afrik-pays-gha"],
           figureRefs: [],
         },
@@ -178,13 +181,13 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
       blocks: [
         {
           id: "quatre-objets-nommes",
-          text: "Sous une même case administrative, nous trouvons quatre objets nommés de nature différente. Un fleuve a donné son nom au Niger et au Nigeria. Une montagne, le Kirinyaga des Kikuyu, a donné le Kenya. Une expression de géographes arabes, bilād as-sūdān, « le pays des Noirs », a donné le Soudan. Un royaume a donné le Congo.",
+          text: "Les fiches proposent des origines très différentes pour les noms des pays. Elles rattachent Niger et Nigeria au fleuve Niger, Kenya à la montagne appelée Kirinyaga en kikuyu, Soudan à l’expression arabe bilād as-sūdān, « le pays des Noirs », et Congo à un royaume.",
           sourceRefs: [],
           figureRefs: ["countries-local-kept", "countries-ancient-exonym"],
         },
         {
           id: "hydronyme-oronyme-choronyme",
-          text: "Hydronyme, oronyme, choronyme, ethnonyme royal : la carte les aplatit tous en « nom de pays », et c'est cet aplatissement qui fait croire qu'un pays et un peuple se recouvrent. Le glossaire donne à chacun son mot, parce que les distinguer est la première chose à faire pour lire une frontière.",
+          text: "Un pays peut donc porter le nom d’un fleuve, d’une montagne, d’une région ou d’un ancien royaume. Son nom ne suffit pas à identifier les peuples qui y vivent. Le glossaire explique les termes employés pour distinguer ces sortes de noms.",
           sourceRefs: [],
           figureRefs: [],
         },
@@ -197,7 +200,7 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
       blocks: [
         {
           id: "trois-etymologies-sourcees",
-          text: "Trois des étymologies citées ici — Nigeria, Bénin, Ghana — ont été sourcées en écrivant ce chapitre, et la fiche du Nigeria a été corrigée au passage : elle datait de 1914 un nom proposé en 1897, et attribuait à Flora Shaw une officialisation qui fut celle de Lugard. Les cinquante et une autres restent des affirmations que le corpus porte sans les appuyer.",
+          text: "Des sources sont citées ici pour les noms Nigeria, Bénin et Ghana. Flora Shaw a proposé Nigeria en 1897 ; Lugard l'a officialisé en 1914. Lors du relevé utilisé pour ce chapitre, les cinquante et une autres explications de noms de pays n'étaient pas accompagnées de sources.",
           sourceRefs: [
             "shaw-times-nigeria",
             "afrik-pays-ben",
@@ -207,7 +210,7 @@ export const CHAPITRE_LE_PAYS: DossierChapter = {
         },
         {
           id: "un-champ-type-manque",
-          text: "Un champ typé permettrait de compter au lieu de lire, et de cartographier les quatre familles. Il n'existe pas. Tant qu'il n'existe pas, ce chapitre reste ce qu'il annonce en ouverture : une lecture, publiée avec sa méthode et ses trous.",
+          text: "Les fiches racontent l’origine des noms sans les répartir systématiquement dans les mêmes catégories. Le classement présenté ici repose donc sur notre lecture. Il pourra changer avec de nouvelles sources ou une autre interprétation des textes.",
           sourceRefs: [],
           figureRefs: [],
         },

@@ -84,7 +84,8 @@
       {
         "title": "Pare, Asu in Tanzania – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/14319",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Pare People – Africa Direct",
@@ -99,12 +100,14 @@
       {
         "title": "101 Last Tribes – Pare people",
         "url": "http://www.101lasttribes.com/tribes/pare.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Chasu language – Ethnologue, SIL International, ISO 639-3: asa",
         "url": null,
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

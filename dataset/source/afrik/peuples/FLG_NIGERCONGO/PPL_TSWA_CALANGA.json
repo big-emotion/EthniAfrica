@@ -14,7 +14,7 @@
         "Tshwa (orthographe portugaise en usage au Mozambique colonial)",
         "Hlengwe (pour le dialecte tswa le plus repandu, s'etendant vers le Zimbabwe meridional)"
       ],
-      "originOfExonyms": "Le terme Calanga (ou Kalanga) provient du nom du peuple BaKalanga, groupe bantou ancestral de la region, dont certains segments en contact avec les Tswa du Mozambique sont designe collectivement Tswa-Calanga dans les classifications linguistiques et ethnographiques portugaises. L'appellation Tswa derive du terme endonymique Vatswa (les Tswa). La confusion avec les Kalanga proprement dits (Zimbabwe, Botswana) tient aux liens historiques et aux chevauchements geographiques entre les dialectes Hlengwe (Tswa) et les populations kalanga du Zimbabwe meridional.",
+      "originOfExonyms": "Le terme Calanga (ou Kalanga) proviendrait du nom du peuple BaKalanga, groupe bantou ancestral de la region, dont certains segments en contact avec les Tswa du Mozambique sont designe collectivement Tswa-Calanga dans les classifications linguistiques et ethnographiques portugaises. L'appellation Tswa deriverait du terme endonymique Vatswa (les Tswa). La confusion avec les Kalanga proprement dits (Zimbabwe, Botswana) tient aux liens historiques et aux chevauchements geographiques entre les dialectes Hlengwe (Tswa) et les populations kalanga du Zimbabwe meridional.",
       "whyProblematic": "La designation Tswa Calanga est ambigue : elle peut designer soit les Tswa dont le dialecte Hlengwe s'etend au Zimbabwe meridional (Calanga), soit des groupes d'interface entre Tswa mozambicains et Kalanga zimbabweens. Les recensements mozambicains comptent souvent les Tswa comme Tsonga, effacant leur identite specifique. En outre, les Kalanga de Zimbabwe sont un groupe distinct avec leur propre langue (Tjikakalanga, ISO 639-3 : kck), differente du Tswa (tsc).",
       "contemporaryUsage": "Au Mozambique, le terme Tswa est utilise par les locuteurs eux-memes (Vatswa, singulier Mutswa). Le terme Calanga est davantage utilise par les chercheurs et administrateurs pour decrire le sous-ensemble Hlengwe et les liens avec le Zimbabwe. Dans les provinces de Gaza et Inhambane au Mozambique, le terme Tswa est courant. Au Zimbabwe, les Hlengwe (branche Tswa) sont parfois appeles Shangaan ou sont integres dans l'identite Tsonga.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -107,22 +107,26 @@
       {
         "title": "Jenkins, Orville Boyd. The Tswa people of Mozambique — A Cultural Profile",
         "url": "http://orvillejenkins.com/profiles/tswa.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Tswa in Mozambique",
         "url": "https://joshuaproject.net/people_groups/15600/MZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue — Tswa (tsc)",
         "url": "https://www.ethnologue.com/language/tsc/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CLEAR Global — Language data for Mozambique",
         "url": "https://clearglobal.org/language-data-for-mozambique/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Tgsilundika Cultural Community Centre — The History of Kalanga People",

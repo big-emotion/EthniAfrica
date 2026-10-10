@@ -67,7 +67,7 @@ export const QuizTrackCard = ({
       className={cn(
         "relative flex min-h-11 flex-col gap-1 p-4",
         available && CHARTER_HOVER_LIFT,
-        available && "focus-within:shadow-[var(--afh-ring-focus)]",
+        available && "focus-within:shadow-afh-focus",
         !available && "opacity-60",
         className
       )}

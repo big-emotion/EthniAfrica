@@ -85,17 +85,20 @@
       {
         "title": "Blog Trip Down Memory Lane — Jiye people: Small Nilotic but Fierce Fighters in South Sudan (2013)",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2013/08/jiye-people-small-nilotic-but-fierce.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Facebook — Jiye people, South Sudan (Nimule, Eastern Equatorial State)",
         "url": "https://www.facebook.com/groups/275114380263865/posts/701811924260773/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Swordshare Map — Ng'akarimojong ISO 639-3 kdj (inclut Jiye comme nom alternatif)",
         "url": "https://map.swordshare.com/kdj",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kara-Tunga — Karamoja Bibliography",

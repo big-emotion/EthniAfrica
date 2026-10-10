@@ -301,7 +301,9 @@ The reveal shows, in this order:
 
 1. **Right or wrong**, plainly.
 2. **The verbatim corpus text** — `GameReveal.textFr`, never paraphrased.
-3. **The source and its tier**, through `ConfidenceChip`. A round asserts an
+3. **The source and its type** (oral tradition, book, archive…), one click
+   away — never its tier, which stays internal (`../editorial/doctrine.md`
+   §1.1). A round asserts an
    answer as correct, so it rests on a source at `official` or `referenced`, or
    on an `oral_tradition` source that names its narrative and the community it
    was collected in, and whose narrator has consented: the narrative's
@@ -382,7 +384,7 @@ Ordered by dependency, not by size:
 3. Near-pool distractor selection in `options.ts`.
 4. Difficulty band on `GameRound`; session ordered by band.
 5. Scope picker on `/fr/jeux/<jeu>`, pool filtered by country or family.
-6. Reveal gains source tier and a link to the fiche.
+6. Reveal gains the source's type (not its tier) and a link to the fiche.
 7. Eight games retired from `GAME_DEFINITIONS`; the `areaCompare` kind is
    deleted with them.
 

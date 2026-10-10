@@ -12,7 +12,7 @@
         "Mobe (designation externe utilisee dans les classifications ethnolinguistiques)",
         "Kirdi (terme pejoratif generique, non specifique, utilise par les populations musul manes voisines)"
       ],
-      "originOfExonyms": "Le terme Kirdi (signifiant paien en arabe-peul) a ete utilise comme desig nation generique pour de nombreux petits groupes non-islamises du nord du Cameroun. Il est rejete par les populations concernees. Le terme Mobe est la designation specifique du groupe dans les classifications linguistiques disponibles.",
+      "originOfExonyms": "Le terme Kirdi (qui voudrait dire païen en arabe-peul) a été utilisé comme désignation générique pour de nombreux petits groupes non-islamises du nord du Cameroun. Il est rejete par les populations concernees. Le terme Mobe est la designation specifique du groupe dans les classifications linguistiques disponibles.",
       "whyProblematic": "Le terme Kirdi est stigmatisant et ne reflete pas l'identite propre du groupe. Les Mobe, comme d'autres petits groupes tchadiques du nord du Cameroun, ont souffert de classifications generiques effacant leurs specificites culturelles et linguistiques.",
       "contemporaryUsage": "Mobe est la designation utilisee dans les databases ethnolinguistiques. Le groupe est localise dans la region de l'Extreme-Nord du Cameroun, dans la zone des monts Mandara ou dans les plaines adjacentes.",
       "linguisticFamily": "FLG_TCHADIQUE",
@@ -84,22 +84,26 @@
       {
         "title": "Joshua Project — Mofu, North in Cameroon",
         "url": "https://joshuaproject.net/people_groups/13760/CM",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Chadic (subgroup Cameroon)",
         "url": "https://www.ethnologue.com/subgroup/555/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Wiktionary — ISO 639-3 codes Africa (Biu-Mandara Cameroon)",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — Cameroon",
         "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

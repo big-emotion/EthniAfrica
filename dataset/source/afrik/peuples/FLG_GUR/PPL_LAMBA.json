@@ -11,7 +11,7 @@
       "exonyms": ["Lamba", "Namba", "Losso"],
       "originOfExonyms": "Les Lamba se désignent eux-mêmes et désignent leur langue par le terme Lama. La forme Lamba est la transcription française introduite par l'administration coloniale allemande puis française et qui demeure en usage officiel au Togo et au Bénin. Le terme Namba est une variante régionale. L'appellation Losso a été attribuée par les coloniaux à tous les habitants du District de Doufelgou (dont les Lamba et les Nawdba), et les Lamba de cette zone sont encore fréquemment appelés Losso, bien que Lama et Losso soient des populations distinctes aux langues différentes.",
       "whyProblematic": "La confusion entre Lamba (Lama) et Losso dans le District de Doufelgou résulte d'une classification coloniale erronée. Ces deux populations ont exercé une influence mutuelle mais leurs langues sont différentes et ne se ressemblent pas. Par ailleurs, les Lamba du Togo ne doivent pas être confondus avec les Lamba de la RDC (peuple Bantu distinct).",
-      "contemporaryUsage": "L'appellation Lamba est utilisée dans l'administration togolaise et béninoise. Lama est l'endonyme préféré dans les contextes linguistiques et culturels. La distinction avec les Losso est reconnue dans les études ethnographiques contemporaines."
+      "contemporaryUsage": "Les administrations togolaise et béninoise emploient Lamba. Les personnes concernées préfèrent Lama lorsqu'il est question de leur langue et de leur culture. Les recherches contemporaines distinguent ce peuple des Losso."
     },
     "ethnicities": ["Lamba", "Lama"],
     "origins": {
@@ -84,22 +84,26 @@
       {
         "title": "Lama people group in all countries – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/18887",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Lama in Togo – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/18887/TO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Lamba people – Africa 101 Last Tribes",
         "url": "http://www.101lasttribes.com/tribes/lamba_togo.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Togo people groups – Joshua Project",
         "url": "https://joshuaproject.net/countries/to",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

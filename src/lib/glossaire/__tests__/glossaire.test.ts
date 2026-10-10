@@ -106,4 +106,24 @@ describe("the glossary", () => {
       expect(entry.seeAlso ?? [], entry.id).not.toContain(entry.id);
     }
   });
+
+  // A source is described by its type, never ranked (doctrine §1.1): the
+  // glossary teaches that vocabulary and holds none of the retired one.
+  // @req REQ-092
+  it("defines the source type and no source tier", () => {
+    const sourceType = GLOSSARY_ENTRIES.find(
+      (entry) => entry.id === "type-de-source"
+    );
+    expect(sourceType?.fr).toBe("Type de source");
+    expect(sourceType?.definition).toMatch(/récit oral/i);
+
+    const tierWords =
+      /palier|Officielle|Référencée|Non vérifiée|En attente d'examen/;
+    for (const entry of GLOSSARY_ENTRIES) {
+      expect(
+        [entry.fr, entry.definition, entry.corpusExample].join(" "),
+        entry.id
+      ).not.toMatch(tierWords);
+    }
+  });
 });

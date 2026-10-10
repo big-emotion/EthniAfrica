@@ -3,9 +3,296 @@
   "nameFr": "Cameroun",
   "nameEn": "Cameroon",
   "nameOfficial": "République du Cameroun (Republic of Cameroon)",
-  "summary": "Le Cameroun doit son nom aux crevettes du fleuve Wouri, que les Portugais nommèrent « Rio dos Camarões » au XVe siècle. Colonisé successivement par l'Allemagne, la France et la Grande-Bretagne, il en garde un bilinguisme officiel. Plus de 280 peuples s'y côtoient, du royaume Bamoun aux chefferies bamiléké, des Sawa côtiers aux peuples des forêts du Sud.",
-  "etymology": "Le nom \"Cameroun\" dérive du portugais \"Rio dos Camarões\" (Rivière des crevettes), donné par les navigateurs portugais au XVe siècle en référence au fleuve Wouri, riche en crevettes. Le terme \"Camarões\" a été adapté en \"Cameroun\" par les Français et \"Cameroons\" par les Britanniques. Le nom anglais est déjà écrit dans le traité de protection du 12 juillet 1884, où les rois douala Bell et Akwa parlent du pays appelé \"Cameroons\", avant que l'administration allemande n'en fasse \"Kamerun\".",
-  "nameOriginActor": "Le nom \"Cameroun\" provient des navigateurs portugais qui ont exploré la côte camerounaise au XVe siècle. Le terme \"Rio dos Camarões\" (Rivière des crevettes) a été donné au fleuve Wouri et a ensuite été généralisé pour désigner l'ensemble du territoire. Les colonisateurs allemands, français et britanniques ont adapté ce nom. Ni l'auteur précis du baptême ni la date exacte ne sont établis ici par une source d'époque : la tradition parle du XVe siècle.",
+  "summary": "Le Cameroun doit son nom aux crevettes du fleuve Wouri, que les Portugais nommèrent « Rio dos Camarões » au XVIe siècle. Colonisé successivement par l'Allemagne, la France et la Grande-Bretagne, il en garde un bilinguisme officiel. Plus de 280 peuples s'y côtoient, du royaume Bamoun aux chefferies bamiléké, des Sawa côtiers aux peuples des forêts du Sud.",
+  "etymology": "Le nom \"Cameroun\" viendrait du portugais \"Rio dos Camarões\" (Rivière des crevettes), selon l'Online Etymology Dictionary. Les navigateurs portugais auraient donné ce nom au fleuve Wouri au XVIe siècle, parce qu'il était riche en crevettes. Le terme \"Camarões\" a été adapté en \"Cameroun\" par les Français et \"Cameroons\" par les Britanniques. Le nom anglais est déjà écrit dans le traité de protection du 12 juillet 1884, où les rois douala Bell et Akwa parlent du pays appelé \"Cameroons\", avant que l'administration allemande n'en fasse \"Kamerun\".",
+  "nameOriginActor": "Le nom \"Cameroun\" provient des navigateurs portugais qui ont exploré la côte camerounaise. Le terme \"Rio dos Camarões\" (Rivière des crevettes) a été donné au fleuve Wouri et a ensuite été généralisé pour désigner l'ensemble du territoire. Les colonisateurs allemands, français et britanniques ont adapté ce nom. Ni l'auteur précis du baptême ni la date exacte ne sont établis ici par une source d'époque : l'Online Etymology Dictionary date ce nom portugais du XVIe siècle.",
+  "nameHistory": {
+    "summary": "Le nom Cameroun désigne un pays d'Afrique centrale, la République du Cameroun. Il vient du nom qu'un fleuve portait chez les navigateurs portugais. Le pays a porté d'autres noms : Kamerun, République fédérale du Cameroun, puis République unie du Cameroun. Une seule des sources lues dit pourquoi les navigateurs portugais ont donné ce nom au fleuve ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Cameroun",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Le nom portugais d'un fleuve, étendu au pays ; l'État le porte depuis son indépendance en 1960.",
+        "periodLabel": "Écrit dès le début du XVIe siècle ; nom de l'État depuis 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": null,
+              "label": "Depuis le 4 février 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Cameroun est celui de la République du Cameroun depuis une loi du 4 février 1984, qui remplace le nom de République unie du Cameroun, selon l'article 1 de la Constitution.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution du Cameroun de 1972, révisée en 2008, version anglaise, Constitute Project",
+                "author": "République du Cameroun",
+                "year": 2008,
+                "url": "https://www.constituteproject.org/constitution/Cameroon_2008",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 1",
+                "notes": "Texte consultée le 9 octobre 2026. Article 1 : « The United Republic of Cameroon shall, with effect from the date of entry into force of this law, be known as Republic of Cameroon (Law No 84-1 of February 4, 1984) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1er janvier 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Cameroun devient celui d'un État indépendant le 1er janvier 1960 : ce jour-là, les Nations unies mettent fin à la tutelle française et les États-Unis reconnaissent la République du Cameroun, selon l'Office of the Historian et Ali A. Mazrui.",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Cameroon",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/cameroon",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 9 octobre 2026. Les États-Unis reconnaissent la République du Cameroun le 1er janvier 1960, date à laquelle les Nations unies mettent fin à la tutelle française."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129-130, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par A. A. Mazrui, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Tableau 5.1, « Chronologie de l'indépendance africaine » : « Cameroun 1/I/1960 France Tutelle de l'ONU. Majeure partie de l'ancienne colonie allemande du Kamerun. » ; le sud du Cameroun britannique, « partie de l'ancienne colonie allemande du Kamerun », s'unit au Cameroun « pour former la République fédérale du Cameroun ». Les pages du tableau ne sont pas numérotées : nous les comptons à partir des pages 127 et 130."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "12 juillet 1884"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cameroun est écrit Cameroons dans le traité que signent à Douala les rois Bell et Akwa avec deux agents de maisons de commerce allemandes ; le texte parle du « pays appelé Cameroons », situé sur la rivière du même nom, selon le recueil Black Central Europe.",
+            "formAsWritten": "Cameroons",
+            "actors": [
+              {
+                "name": "King Bell et King Aqua (Akwa), rois douala",
+                "role": "signataires du traité"
+              },
+              {
+                "name": "Eduard Schmidt et Johannes Voss",
+                "role": "agents des maisons Woermann et Jantzen & Thormählen, signataires"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Treaty of Protection with Chiefs of Cameroon Coast (1884), Black Central Europe",
+                "author": "Robbie Aitken (présentation) ; texte repris de Arthur J. Knoll et Hermann J. Hiery (dir.), The German Colonial Experience, 2010",
+                "year": 1884,
+                "url": "https://blackcentraleurope.com/sources/1850-1914/treaty-of-protection-with-chiefs-of-cameroon-coast-1884/",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 42-43 de l'édition Knoll et Hiery",
+                "notes": "Page consultée le 9 octobre 2026. Le traité, daté « Cameroons, July 12, 1884 », est signé à Douala par King Bell, King Aqua et d'autres notables avec Eduard Schmidt et Johannes Voss ; il parle du « country called \"Cameroons\" situated on the Cameroons-River ». La présentation y voit le début de la domination allemande sur le territoire qui deviendra le Kamerun."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "1505-1508"
+            },
+            "era": "polity",
+            "statement": "Le nom Cameroun apparaît, sous la forme « rio que se chama dos Camarões », dans le routier du navigateur portugais Duarte Pacheco Pereira : un fleuve situé à deux lieues de la montagne de Fernão do Pó. C'est la plus ancienne trace de ce nom que le projet connaît. Le nom désigne alors un fleuve, pas encore un pays.",
+            "formAsWritten": "rio que se chama dos Camarões",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, édition de Raphael Eduardo de Azevedo Basto",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1892,
+                "url": "https://archive.org/details/esmeraldodesitu00peregoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre II, p. 77",
+                "notes": "Édition de l'Imprensa Nacional, Lisbonne, 1892, lue dans l'exemplaire numérisé d'archive.org : « adiante desta serra de fernam do poo duas leguoas ao nordest esta hum rio que se chama dos Camarões & aquy ha muita pescaria ». Le texte nomme le fleuve et dit qu'on y pêche beaucoup ; il ne dit pas d'où vient son nom."
+              },
+              {
+                "title": "Esmeraldo de situ orbis, 3e édition, introduction et annotations historiques de Damião Peres",
+                "author": "Damião Peres",
+                "year": 1954,
+                "url": "https://archive.org/details/dli.ernet.534920",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 214",
+                "notes": "Academia Portuguesa da História, Lisbonne, 1954, lue dans l'exemplaire numérisé d'archive.org. L'éditeur retient, après Jaime Cortesão, une rédaction commencée à la fin de 1505 et achevée au plus tard en 1508."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Cameroun viendrait de Rio dos Camarões, « rivière des crevettes » : les Portugais auraient ainsi nommé le fleuve Wouri pour l'abondance des crevettes dans son estuaire, selon l'Online Etymology Dictionary. Le plus ancien texte portugais que nous avons lu nomme le fleuve sans dire pourquoi.",
+            "hypothesisGroup": "origine du nom Cameroun",
+            "sources": [
+              {
+                "title": "Online Etymology Dictionary, entrée Cameroon",
+                "author": "Douglas Harper",
+                "year": null,
+                "url": "https://www.etymonline.com/word/cameroon",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue dans sa copie archivée par la Wayback Machine (4 janvier 2023) : le nom vient de la forme anglaise de l'ancien nom du Wouri, que les Portugais appelaient Rio dos Camarões, « river of prawns » (XVIe siècle), pour l'abondance des crevettes trouvées dans son large estuaire."
+              },
+              {
+                "title": "Esmeraldo de situ orbis, édition de Raphael Eduardo de Azevedo Basto",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1892,
+                "url": "https://archive.org/details/esmeraldodesitu00peregoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre II, p. 77",
+                "notes": "Édition de l'Imprensa Nacional, Lisbonne, 1892, lue dans l'exemplaire numérisé d'archive.org : « adiante desta serra de fernam do poo duas leguoas ao nordest esta hum rio que se chama dos Camarões & aquy ha muita pescaria ». Le texte nomme le fleuve et dit qu'on y pêche beaucoup ; il ne dit pas d'où vient son nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République unie du Cameroun",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "periodLabel": "1972-1984",
+        "accounts": [
+          {
+            "period": {
+              "from": 1972,
+              "to": 1984,
+              "label": "Du 20 mai 1972 au 4 février 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom République unie du Cameroun est celui de l'État à partir du 20 mai 1972, selon l'article Cameroun de Wikipédia, jusqu'à la loi du 4 février 1984 qui le remplace par République du Cameroun, selon l'article 1 de la Constitution.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Cameroun — Wikipédia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://fr.wikipedia.org/wiki/Cameroun",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article en français, consultée le 9 octobre 2026. Il rapporte que des marins portugais de Fernando Pó entrent dans l'estuaire du Wouri en 1472 et nomment le fleuve Rio dos Camarões ; ce passage ne cite pas de source. Il date aussi la République fédérale du 1er octobre 1961, la République unie du 20 mai 1972 et le retour à la République du Cameroun en 1984."
+              },
+              {
+                "title": "Constitution du Cameroun de 1972, révisée en 2008, version anglaise, Constitute Project",
+                "author": "République du Cameroun",
+                "year": 2008,
+                "url": "https://www.constituteproject.org/constitution/Cameroon_2008",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 1",
+                "notes": "Texte consultée le 9 octobre 2026. Article 1 : « The United Republic of Cameroon shall, with effect from the date of entry into force of this law, be known as Republic of Cameroon (Law No 84-1 of February 4, 1984) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République fédérale du Cameroun",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "periodLabel": "1961-1972",
+        "accounts": [
+          {
+            "period": {
+              "from": 1961,
+              "to": 1972,
+              "label": "Du 1er octobre 1961 à 1972"
+            },
+            "era": "modern",
+            "statement": "Le nom République fédérale du Cameroun est celui de l'État que fondent, le 1er octobre 1961, l'ancien Cameroun français et le sud du Cameroun britannique, après le référendum de février 1961, selon Elikia M'Bokolo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 8 : L'Afrique équatoriale de l'Ouest",
+                "author": "Elikia M'Bokolo",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 239",
+                "notes": "UNESCO, volume dirigé par A. A. Mazrui, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 239 : « le Sud opta pour la réunification avec l'ancien Cameroun français, officialisée par la Constitution du 1er octobre 1961 qui créa la République fédérale du Cameroun »."
+              },
+              {
+                "title": "Cameroun — Wikipédia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://fr.wikipedia.org/wiki/Cameroun",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article en français, consultée le 9 octobre 2026. Il rapporte que des marins portugais de Fernando Pó entrent dans l'estuaire du Wouri en 1472 et nomment le fleuve Rio dos Camarões ; ce passage ne cite pas de source. Il date aussi la République fédérale du 1er octobre 1961, la République unie du 20 mai 1972 et le retour à la République du Cameroun en 1984."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kamerun",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "deu",
+        "namedBy": "L'administration coloniale allemande",
+        "periodLabel": "Époque coloniale allemande, à partir de 1884",
+        "accounts": [
+          {
+            "period": {
+              "from": 1884,
+              "to": null,
+              "label": "À partir de 1884"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kamerun désigne la colonie allemande dont la domination commence avec le traité de Douala de 1884, selon Robbie Aitken. Ali A. Mazrui rappelle que le Cameroun britannique, au nord comme au sud, en faisait partie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Treaty of Protection with Chiefs of Cameroon Coast (1884), Black Central Europe",
+                "author": "Robbie Aitken (présentation) ; texte repris de Arthur J. Knoll et Hermann J. Hiery (dir.), The German Colonial Experience, 2010",
+                "year": 1884,
+                "url": "https://blackcentraleurope.com/sources/1850-1914/treaty-of-protection-with-chiefs-of-cameroon-coast-1884/",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 42-43 de l'édition Knoll et Hiery",
+                "notes": "Page consultée le 9 octobre 2026. Le traité, daté « Cameroons, July 12, 1884 », est signé à Douala par King Bell, King Aqua et d'autres notables avec Eduard Schmidt et Johannes Voss ; il parle du « country called \"Cameroons\" situated on the Cameroons-River ». La présentation y voit le début de la domination allemande sur le territoire qui deviendra le Kamerun."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129-130, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par A. A. Mazrui, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Tableau 5.1, « Chronologie de l'indépendance africaine » : « Cameroun 1/I/1960 France Tutelle de l'ONU. Majeure partie de l'ancienne colonie allemande du Kamerun. » ; le sud du Cameroun britannique, « partie de l'ancienne colonie allemande du Kamerun », s'unit au Cameroun « pour former la République fédérale du Cameroun ». Les pages du tableau ne sont pas numérotées : nous les comptons à partir des pages 127 et 130."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -144,7 +431,7 @@
         "mainRegion": "Nord du Cameroun, Adamaoua (pasteurs nomades et sédentaires)",
         "languages": ["Fulfulde (ful", "ISO 639-3)", "français"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Fulɓe\" est l'auto-appellation. \"Peul\" et \"Fulani\" sont des exonymes acceptés. \"Fellata\" peut avoir une connotation péjorative dans certains contextes et doit être évité."
+        "appellationRemarks": "Le peuple se nomme Fulɓe. Peul et Fulani sont aussi des noms acceptés, donnés de l'extérieur. Fellata peut être méprisant dans certains contextes ; il est donc à éviter."
       },
       {
         "name": "Kirdi",
@@ -304,17 +591,20 @@
       {
         "title": "SIL Ethnologue – Languages of Cameroon",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Cameroon",
         "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Cameroun",
         "url": "https://www.unfpa.org/data/world-population/CM",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Politics and the Occult in Postcolonial Africa\"",
@@ -329,7 +619,8 @@
       {
         "title": "Recensements camerounais",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples du Cameroun",
@@ -339,12 +630,14 @@
       {
         "title": "CIA World Factbook – Cameroon (ethnic groups, 2018 est.)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Treaty of Protection with Chiefs of Cameroon Coast (12 juillet 1884)",
@@ -356,6 +649,7 @@
         "title": "P. Tchawa, « Le Cameroun : une « Afrique en miniature » ? », Les Cahiers d'Outre-Mer, n° 259, 2012",
         "url": "https://journals.openedition.org/com/6640",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article scientifique en accès ouvert sur OpenEdition ; lu pour la formule « Afrique en miniature » et la représentation des familles linguistiques."
       }
     ],

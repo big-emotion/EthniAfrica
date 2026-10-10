@@ -14,9 +14,9 @@ import { NameTypeBadge } from "@/components/names/NameTypeBadge";
 import type { NameRecordType } from "@/types/names";
 
 const TYPE_LABELS: Record<NameRecordType, string> = {
-  endonym: "endonyme",
-  exonym: "exonyme",
-  historical_spelling: "graphie historique",
+  endonym: "nom employé par le peuple",
+  exonym: "nom donné par d’autres",
+  historical_spelling: "ancienne orthographe",
   surname: "patronyme",
 };
 
@@ -61,14 +61,14 @@ describe("NameTypeBadge", () => {
   it("does not render the imposed label when imposed is false", () => {
     render(<NameTypeBadge nameType="exonym" imposed={false} />);
     expect(screen.queryByText("nom imposé")).toBeNull();
-    expect(screen.getByText("exonyme")).toBeInTheDocument();
+    expect(screen.getByText("nom donné par d’autres")).toBeInTheDocument();
   });
 
   // @req REQ-056
   it("uses the accessible text token on the historical badge", () => {
     render(<NameTypeBadge nameType="historical_spelling" />);
 
-    const badge = screen.getByText("graphie historique").closest("div");
+    const badge = screen.getByText("ancienne orthographe").closest("div");
     const style = badge?.getAttribute("style") ?? "";
     expect(style).toContain("color: var(--afh-color-text-soft)");
     expect(style).toContain("background-color: var(--afh-color-gold-bg)");

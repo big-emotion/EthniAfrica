@@ -2,6 +2,177 @@
   "id": "FLG_SONGHAY",
   "nameFr": "Songhay / Sonrai",
   "nameEn": "Songhay",
+  "nameHistory": {
+    "summary": "Le nom songhaï désigne un petit groupe de langues parlées le long du Niger, de Djenné à Gaya, et par quelques groupes du Sahara plus au nord. C'est d'abord le nom que se donne le peuple songhaï et celui de sa langue, écrit dès 1526 ; on écrit aussi songhay. Les linguistes ne s'accordent pas sur la famille à laquelle ces langues appartiennent ; nous présentons plus bas leurs positions.",
+    "names": [
+      {
+        "nameText": "Songhaï",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple du Niger et de sa langue, devenu celui d'un groupe de langues.",
+        "periodLabel": "Écrit depuis 1526",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit au présent par les auteurs"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom songhaï désigne, pour Dierk Lange et Bawaro W. Barkindo, la langue qu'on parle tout le long du Niger, de Djenné à Gaya. Plus au nord, des cultivateurs d'oasis et des groupes de nomades chameliers en parlent d'autres formes.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 15 : La région du Tchad en tant que carrefour",
+                "author": "Dierk Lange, en collaboration avec Bawaro W. Barkindo",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 471 et p. 473"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1980,
+              "label": "Proposée en 1963, exposée en 1980"
+            },
+            "era": "modern",
+            "hypothesisGroup": "famille-du-songhai",
+            "statement": "Le nom songhaï désignerait la branche la plus occidentale de la famille nilo-saharienne, selon Joseph Greenberg. Dans ses articles de 1949-1950, il en faisait encore une famille à part.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 335 et p. 338"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1969,
+              "label": "1969"
+            },
+            "era": "modern",
+            "hypothesisGroup": "famille-du-songhai",
+            "statement": "Le nom songhaï désignerait des langues qui n'appartiennent pas à la famille nilo-saharienne, selon P. F. Lacroix en 1969, d'après Dierk Lange. Lange rapporte que Robert Nicolaï voyait alors au contraire une parenté encore plus étroite avec le saharien.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 15 : La région du Tchad en tant que carrefour",
+                "author": "Dierk Lange, en collaboration avec Bawaro W. Barkindo",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 473, note 28"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Position actuelle du catalogue"
+            },
+            "era": "modern",
+            "hypothesisGroup": "famille-du-songhai",
+            "statement": "Le nom songhaï désignerait une famille à part, selon les éditeurs du catalogue Glottolog : pour eux, Robert Nicolaï a défait le rattachement au nilo-saharien, et la part de vocabulaire proche du berbère reste à expliquer.",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Family: Songhay",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/song1307",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 10 octobre 2026. Commentaire sur l'appartenance de la famille : « The Nilo-Saharan affiliation à la Ehret or Bender is thoroughly dismantled by Nicolaï, and the Berber-like lexical stratum remains inconclusive »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "1880"
+            },
+            "statement": "Le nom songhaï est celui d'une langue que Richard Lepsius range, avec le kanouri, le haoussa, le yoruba ou le wolof, dans une même zone de langues nègres du Nord.",
+            "sources": [
+              {
+                "title": "Nubische Grammatik, mit einer Einleitung über die Völker und Sprachen Afrika's",
+                "author": "Richard Lepsius",
+                "year": 1880,
+                "url": "https://archive.org/details/nubischegrammat00lepsgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. XIV",
+                "notes": "Berlin, Wilhelm Hertz, 1880. Lu dans la numérisation d'Internet Archive. Introduction, description de la deuxième des trois zones de langues africaines."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1526,
+              "to": 1550,
+              "label": "Manuscrit daté de 1526 (publié en 1550)"
+            },
+            "era": "polity",
+            "birth": true,
+            "formAsWritten": "Sungai",
+            "statement": "Le nom songhaï apparaît par écrit chez Léon l'Africain, sous la forme Sungai : c'est, écrit-il, le nom que les Noirs donnent à l'une de leurs langues, parlée de Gualata à Gago. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "actors": [
+              {
+                "name": "Léon l'Africain",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History and Description of Africa, vol. 1",
+                "author": "Léon l'Africain, traduit par John Pory, édité par Robert Brown",
+                "year": 1896,
+                "url": "https://archive.org/details/historyanddescr03porygoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Hakluyt Society, 1896. Traduction anglaise de 1600, par John Pory, du texte que Léon l'Africain date de Rome le 10 mars 1526 et que Ramusio publie en 1550, selon l'introduction de Robert Brown. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 134 : « The Negros haue diuers languages among themselues, among which they call one Sungai »  ; cette langue est parlée, dit-il, à Gualata, Tombouctou, Ghinea, Melli et Gago.",
+                "page": "p. 134"
+              },
+              {
+                "title": "The History and Description of Africa, vol. 3, notes du livre VII",
+                "author": "Robert Brown",
+                "year": 1896,
+                "url": "https://archive.org/details/historyanddescr01porygoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 842",
+                "notes": "Londres, Hakluyt Society, 1896. Lu dans la numérisation d'Internet Archive le 9 octobre 2026. Page 842 : « It was Leo who first made the word Songhai (Sungai) familiar to Europe, De Barros also using it »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Songhay",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues du fleuve Niger, au Mali et au Niger. Soŋay est le nom que se donnent les Songhay et les Zarma ; une explication le relie à l'ancien empire songhay, centré sur Gao aux XVe et XVIe siècles.",
@@ -63,12 +234,14 @@
       {
         "title": "[Greenberg, J.H.] ([1963]) – *The Languages of Africa*. [Bloomington : Indiana University Press]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Nicolaï, R.] ([1981]) – *Les dialectes du songhay: contribution à l'étude des changements linguistiques*. [Paris : SELAF]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Nicolaï, R.] ([1990]) – *Parentés linguistiques (à propos du songhay)*. [Paris : Éditions du CNRS]",
@@ -78,27 +251,32 @@
       {
         "title": "[Nicolaï, R.] ([2003]) – *La force des choses ou l'épreuve 'nilo-saharienne': questions sur les reconstructions archéologiques et l'évolution des langues*. [Köln : Rüdiger Köppe Verlag]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Bender, L.] ([1996]) – *The Nilo-Saharan Languages: A Comparative Essay*. [München : Lincom Europa]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Heath, J.] ([1998]) – *A Grammar of Koyra Chiini: the Songhay of Timbuktu*. Mouton Grammar Library. [Berlin : Mouton de Gruyter]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Heath, J.] ([1999]) – *A Grammar of Koyraboro (Koroboro) Senni: The Songhay of Gao, Mali*. [Köln : Rüdiger Köppe Verlag]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Heath, J.] ([2005]) – *Tondi Songway Kiini (Songhay, Mali): reference grammar and TSK–English–French dictionary*. [Stanford : CSLI Publications]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[Lacroix, P.-F.] ([1969]) – *L'ensemble songhay-jerma: problèmes et thèmes de travail*. Actes du 8ᵉ Congrès de la SLAO",
@@ -113,37 +291,44 @@
       {
         "title": "[Dimmendaal, G.] ([2008]) – *Language Ecology and Linguistic Diversity on the African Continent*. [In : Language and Linguistics Compass]",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "[SIL Ethnologue] ([2025]) – *Languages of Niger / Mali / Benin / Burkina Faso / Nigeria*",
         "url": "https://www.ethnologue.com/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "[Glottolog] ([2025]) – *Songhay Overview*",
         "url": "https://glottolog.org/resource/languoid/id/song1297",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "[UNESCO] ([2025]) – *Atlas des langues en danger dans le monde*",
         "url": "https://www.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Glottolog 5.3 (2025) – \"Songhay\" (glottocode song1307) : arbre de classification confirmant 2 branches immédiates – Eastern Songhay, Northwest Songhay",
         "url": "https://glottolog.org/resource/languoid/id/song1307",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue, 19e éd. (Lewis, M.P., Simons, G.F. & Fennig, C.D., eds., 2016), page consultée via version archivée (Internet Archive, 11 juin 2016) – \"Zarma [dje]\": 3 120 000 locuteurs au Niger (2013 J. Leclerc), 87 800 au Nigeria (2000), 1 700 au Mali (2012 G. Davis, sous le nom Zarmaci), 600 au Burkina Faso (1987 SIL)",
         "url": "https://www.ethnologue.com/language/dje",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue, 19e éd. (2016), page consultée via version archivée (Internet Archive, 28 mai 2016) – \"Koyraboro Senni Songhay [ses]\": 430 000 locuteurs au Mali (2007 SIL)",
         "url": "https://www.ethnologue.com/language/ses",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

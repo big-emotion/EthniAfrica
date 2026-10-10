@@ -27,7 +27,7 @@ import type { RelationBadgeType } from "@/lib/relationsDataTransformer";
 import type { ClassificationStatus } from "@/types/afrik";
 import type { NameRecordType } from "@/types/names";
 import type { Language } from "@/types/shared";
-import type { SourceTier } from "@/types/sources";
+import type { SourceKind, SourceTier } from "@/types/sources";
 
 /**
  * The two locales the glossary is written in — an alias of `Language`, kept
@@ -80,6 +80,48 @@ export function sourceStandingLabel(
   return (
     SOURCE_TIER_LABELS[locale][standing] ?? SOURCE_PENDING_REVIEW_LABEL[locale]
   );
+}
+
+// ───── Source kind ────────────────────────────────────────────────────────
+
+/**
+ * What a reader is told about a source: who speaks, never how much to trust
+ * them (doctrine §1.1). The tier stays an audit field behind moderation; it
+ * has no reader label any more, because ranking a griot below a linguist is
+ * the hierarchy the doctrine refuses.
+ */
+// @req REQ-161
+export const SOURCE_KIND_LABELS: Labels<SourceKind> = {
+  fr: {
+    intergovernmental: "Organisation intergouvernementale",
+    government: "Source gouvernementale",
+    // "Officielle" is the retired tier word; the type reads as public statistics.
+    official_statistics: "Statistiques publiques",
+    linguistic_reference: "Référence linguistique",
+    academic: "Publication académique",
+    press: "Article de presse",
+    encyclopedia: "Encyclopédie",
+    // Spelled out, like the two other organisation kinds beside it.
+    ngo: "Organisation non gouvernementale",
+    missionary_database: "Base de données missionnaire",
+    community: "Organisation communautaire",
+    repository: "Dépôt documentaire",
+    archive: "Archive",
+    discovery: "Outil de recherche",
+    // Machine-written text is named for what it still needs, not hidden.
+    ai_generated: "Synthèse à vérifier",
+    unknown: "Type non précisé",
+    oral_tradition: "Tradition orale",
+    ethniafrica_synthesis: "Synthèse EthniAfrica",
+  },
+};
+
+// @req REQ-161
+export function sourceKindLabel(
+  kind: SourceKind | undefined,
+  locale: GlossaryLocale
+): string {
+  return SOURCE_KIND_LABELS[locale][kind] ?? SOURCE_KIND_LABELS[locale].unknown;
 }
 
 // ───── Classification status ──────────────────────────────────────────────
@@ -144,9 +186,9 @@ export const RELATION_TYPE_LABELS: Labels<RelationBadgeType> = {
 // @req REQ-056
 export const NAME_TYPE_LABELS: Labels<NameRecordType | "imposed"> = {
   fr: {
-    endonym: "endonyme",
-    exonym: "exonyme",
-    historical_spelling: "graphie historique",
+    endonym: "nom employé par le peuple",
+    exonym: "nom donné par d’autres",
+    historical_spelling: "ancienne orthographe",
     surname: "patronyme",
     imposed: "nom imposé",
   },

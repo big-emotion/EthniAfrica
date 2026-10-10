@@ -367,25 +367,48 @@ describe("FamilyParchment — the sources", () => {
     const footer = container.querySelector("#sources");
     expect(footer).not.toBeNull();
     expect(footer?.tagName.toLowerCase()).toBe("footer");
-    expect(footer?.textContent).toMatch(/Donnée manquante/);
+    expect(footer?.textContent).toMatch(/Information manquante/);
   });
 
-  // @req REQ-116
-  it("labels a source by its own tier, never by the retired Tier 1/2/3 scale", () => {
-    // The mockup stamps every source "Tier 1". The project retired that scale
-    // for Officielle / Référencée / Non vérifiée; reproducing it would put a
-    // withdrawn vocabulary back on the page.
+  // @req REQ-092
+  it("lists each source with no tier word, retired scale or current one", () => {
+    // Doctrine §1.1 (operator ruling, 2026-10-08): the reader never sees a
+    // source's tier. The mockup's "Tier 1" stamp stays retired too.
     const withSources = undeclaredFamily();
     withSources.sources = [
       { title: "Greenberg, J. (1963)", url: null, tier: "official" },
       { title: "Un blog", url: null, tier: "unverified" },
     ] as FamilyPageData["sources"];
 
-    renderParchment(withSources);
+    const { container } = renderParchment(withSources);
 
-    expect(screen.getByText(/Officielle/i)).toBeInTheDocument();
-    expect(screen.getByText(/Non vérifiée/i)).toBeInTheDocument();
-    expect(screen.queryByText(/Tier 1/)).not.toBeInTheDocument();
+    const footer = container.querySelector("#sources");
+    expect(screen.getByText(/Greenberg/)).toBeInTheDocument();
+    expect(screen.getByText("Un blog")).toBeInTheDocument();
+    expect(footer?.textContent).not.toMatch(
+      /Officielle|Référencée|Non vérifiée|En attente d.examen|palier|Tier 1/i
+    );
+    expect(footer?.querySelector("[data-tier]")).toBeNull();
+  });
+
+  // @req REQ-161
+  it("names a source's kind when the fiche declares one", () => {
+    const withSources = undeclaredFamily();
+    withSources.sources = [
+      {
+        title: "Glottolog",
+        url: null,
+        tier: "referenced",
+        source_kind: "linguistic_reference",
+      },
+      { title: "Sans type", url: null, tier: "referenced" },
+    ] as FamilyPageData["sources"];
+
+    const { container } = renderParchment(withSources);
+
+    const rows = container.querySelectorAll("#sources li");
+    expect(rows[0].textContent).toContain("Référence linguistique");
+    expect(rows[1].querySelector("[data-source-kind]")).toBeNull();
   });
 
   // @req REQ-116
@@ -460,7 +483,7 @@ describe("FamilyParchment — provenance addressed to the reader", () => {
     expect(document.querySelectorAll(".afh-stat-card")).toHaveLength(4);
     expect(
       within(screen.getByTestId("stat-card-branches")).getByText(
-        "Donnée manquante"
+        "Information manquante"
       )
     ).toBeTruthy();
   });

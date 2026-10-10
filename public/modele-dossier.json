@@ -83,7 +83,7 @@
       "title": "<Titre de la source, publié au lecteur tel quel>",
       "url": "<URL résolvable, ou null pour une œuvre hors ligne>",
       "tier": "official | referenced | unverified",
-      "source_kind": "intergovernmental | government | official_statistics | linguistic_reference | academic | community | repository | archive",
+      "source_kind": "intergovernmental | government | official_statistics | linguistic_reference | academic | press | encyclopedia | ngo | missionary_database | community | repository | archive",
       "publicationYear": 2025,
       "notes": "<Notes de provenance facultatives, publiées au lecteur tel quel>"
     }

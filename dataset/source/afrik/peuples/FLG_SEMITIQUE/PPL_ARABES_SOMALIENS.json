@@ -14,7 +14,7 @@
         "Arabes du Benadir",
         "Reer Hamar Gibil Madow (peau sombre, pour les clans les plus anciens de Mogadiscio)"
       ],
-      "originOfExonyms": "Benadiri/Banaadiri designe les habitants de la cote Benadir (cote meridionale somalienne s'etendant de Mogadiscio a Barawa), terme derive de l'arabe et du persan bander (port). Reer Xamar est le nom somalien de Mogadiscio (Hamar). L'expression Arabes somaliens recouvre des communautes d'ascendance arabique (Arabie du Sud, Yemen, Oman, Hadramaout) installes en Somalie depuis un a deux millenaires et fortement metisses avec les populations somaliennes locales.",
+      "originOfExonyms": "Benadiri/Banaadiri désigne les habitants de la côte Benadir (côte méridionale somalienne s'étendant de Mogadiscio à Barawa) ; le terme viendrait de l'arabe et du persan bander (port). Reer Xamar est le nom somalien de Mogadiscio (Hamar). L'expression Arabes somaliens recouvre des communautes d'ascendance arabique (Arabie du Sud, Yemen, Oman, Hadramaout) installes en Somalie depuis un a deux millenaires et fortement metisses avec les populations somaliennes locales.",
       "whyProblematic": "La distinction entre Arabes somaliens et Somaliens d'ascendance arabe est floue, car de nombreux clans somaliens revendiquent une origine arabe (notamment la genealogie depuis Quraych ou des saints islamiques). Les Benadiris sont souvent consideres comme distincts des Somaliens ethniques, mais leur identite est composite (arabe, persane, indienne, bantoue et somalienne). Le terme Arabes somaliens peut couvrir a la fois ces minorites historiques et les ressortissants arabes recents en Somalie.",
       "contemporaryUsage": "La designation officielle en usage humanitaire et dans les etudes des droits des minorites est Benadiri ou Banaadiri. Le Joshua Project denombre les Arabes en Somalie (toutes origines confondues) a environ 7 800 personnes en 2025. Minority Rights Group les inclut dans les minorites cotieres du sud somalien.",
       "linguisticFamily": "FLG_SEMITIQUE",
@@ -104,12 +104,14 @@
       {
         "title": "Minority Rights Group – Coastal minorities including Benadiri, Bajuni and Bravans in Somalia , mis a jour novembre 2024",
         "url": "https://minorityrights.org/communities/benadiri/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Joshua Project – Arab in Somalia",
         "url": "https://joshuaproject.net/people_groups/10375/SO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ibn Battuta – Rihla (Voyages), XIV e siecle (description du Sultanat de Mogadiscio)",

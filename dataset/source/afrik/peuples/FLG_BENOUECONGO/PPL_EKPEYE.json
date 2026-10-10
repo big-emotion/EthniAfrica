@@ -87,7 +87,8 @@
       {
         "title": "Ethnologue (SIL International) — Ekpeye language, code ekp",
         "url": "https://www.ethnologue.com/language/ekp/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Amini-Philips, Isaac C. King Nworisa of Ekpeyeland (1830-1899): his life and times. Riverside Communications, Port Harcourt, 1994",
@@ -112,7 +113,8 @@
       {
         "title": "YouTube — Revitalizing Ekpeye: A Cultural Documentary (Owu Festival, 2025)",
         "url": "https://www.youtube.com/watch?v=D7FgPZhheZ0",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "ngo"
       }
     ]
   }

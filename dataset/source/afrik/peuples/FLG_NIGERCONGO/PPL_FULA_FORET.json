@@ -107,7 +107,8 @@
       {
         "title": "Joshua Project — Fulbe Futa in Guinea (population 4 979 000 GIN)",
         "url": "https://joshuaproject.net/people_groups/11769/gv",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "African Voice Newspaper — The Fula of Guinea",
@@ -117,27 +118,32 @@
       {
         "title": "SIL Ethnologue — Pular (fuf)",
         "url": "https://www.ethnologue.com/language/fuf/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue — Fulfulde Adamawa (fub)",
         "url": "https://www.ethnologue.com/language/fub/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Guinea",
         "url": "https://www.cia.gov/the-world-factbook/countries/guinea/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "CIA World Factbook — Cote d'Ivoire",
         "url": "https://www.cia.gov/the-world-factbook/countries/cote-divoire/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA — Afrique de l'Ouest population data",
         "url": "https://www.unfpa.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

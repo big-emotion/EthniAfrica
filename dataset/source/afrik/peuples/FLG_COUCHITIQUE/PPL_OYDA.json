@@ -71,27 +71,32 @@
       {
         "title": "Oyda – DOBES Documentation of Endangered Languages, Max Planck Institute / JCU, 2013",
         "url": "https://dobes.mpi.nl/projects/oyda/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "archive"
       },
       {
         "title": "Oyda Language (OYD) – Ethnologue / SIL International, 2024",
         "url": "https://www.ethnologue.com/language/oyd/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Oyda in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/14240",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Glottolog 5.3 : Oyda (oyda1235) – Hammarstrom et al., 2024",
         "url": "https://glottolog.org/resource/languoid/id/oyda1235",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Multi-media documentation of the Oyda Language – Amha A., JCU Research Online, 2013",
         "url": "https://researchonline.jcu.edu.au/28529/1/28529_Amha_2013.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

@@ -15,7 +15,7 @@
         "Dafin",
         "Soninke du Mali"
       ],
-      "originOfExonyms": "Le terme Maraka signifie litteralement hommes qui gouvernent en bambara, possiblement issu d'un terme de respect pour ces colonisateurs venus de Wagadu. Marka Dafing designe le sous-groupe installe au Burkina Faso, dans la region appelee Dafina. Meka et Dafin sont des variantes regionales du meme nom ethnique. Les Bambaras appellaient ce peuple Marakas en raison de leur role de marchands et de proprietaires terriens.",
+      "originOfExonyms": "Le terme Maraka voudrait dire litteralement hommes qui gouvernent en bambara, et pourrait etre issu d'un terme de respect pour ces colonisateurs venus de Wagadu. Marka Dafing designe le sous-groupe installe au Burkina Faso, dans la region appelee Dafina. Meka et Dafin sont des variantes regionales du meme nom ethnique. Les Bambaras appellaient ce peuple Marakas en raison de leur role de marchands et de proprietaires terriens.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Maraka est utilise au Mali pour designer principalement les marchands soninke islamises de la region de Segou. Au Burkina Faso, Marka Dafing et Dafin sont les appellations courantes. La distinction entre Maraka (Mali, lies aux Soninkes) et Marka Dafing (Burkina Faso, culture agricole plus independante) est importante ethnologiquement.",
       "linguisticFamily": "FLG_MANDE",
@@ -108,32 +108,38 @@
       {
         "title": "101 Last Tribes — Marka people of Mali and Burkina Faso",
         "url": "https://www.101lasttribes.com/tribes/marka.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Qiraat Africa — Marka, people of Mali and Burkina Faso (2025)",
         "url": "https://qiraatafrican.com/en/18720/marka-people-of-mali-and-burkina-faso/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "SIL Ethnologue — Marka language (rkm)",
         "url": "https://www.ethnologue.com/language/rkm/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Marka Dafing in Burkina Faso",
         "url": "https://joshuaproject.net/people_groups/13550/UV",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "CEDS / SIL — ISO 639-3 Language Code Table: Marka = rkm",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Glottolog — Marka",
         "url": "https://glottolog.org/resource/languoid/id/mark1256",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

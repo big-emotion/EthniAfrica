@@ -107,37 +107,44 @@
       {
         "title": "Britannica — Tutsi",
         "url": "https://www.britannica.com/topic/Tutsi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Tutsi in Burundi",
         "url": "https://joshuaproject.net/people_groups/15663/BY",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "UNFPA — Rwanda Population 2025",
         "url": "https://www.unfpa.org/data/world-population/RW",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA — Burundi Population 2025",
         "url": "https://www.unfpa.org/data/world-population/BI",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "World Population Review — Burundi 2025",
         "url": "https://worldpopulationreview.com/countries/burundi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "YouTube — From royal courts to modern Rwanda : The story of iconic Inyambo",
         "url": "https://www.youtube.com/watch?v=zl5Z7JNW19Y",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "SIL Ethnologue — Kirundi (run)",
         "url": "https://www.ethnologue.com/language/run",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

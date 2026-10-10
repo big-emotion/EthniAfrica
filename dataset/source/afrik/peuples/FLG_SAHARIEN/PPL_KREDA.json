@@ -10,9 +10,9 @@
       "selfAppellation": "Kreda (Kréda)",
       "exonyms": [
         "Kréda (orthographe française)",
-        "Gorane ou Gourane (exonyme arabe désignant les Daza dont les Kreda font partie)"
+        "Gorane ou Gourane (nom arabe donné aux Daza, dont les Kreda font partie)"
       ],
-      "originOfExonyms": "Le terme Gorane ou Gourane est un exonyme d'origine arabe utilisé pour désigner les Daza et leurs sous-groupes, dont les Kreda. Il est d'usage courant en arabe tchadien mais n'est pas l'appellation préférée par les groupes eux-mêmes. Kréda est la forme française de Kreda, utilisée dans la littérature coloniale et contemporaine.",
+      "originOfExonyms": "Gorane ou Gourane est un nom arabe donné aux Daza et aux groupes qui les composent, dont les Kreda. Il est courant en arabe tchadien, mais les personnes concernées lui préfèrent leurs propres noms. Kréda est la forme française de Kreda, employée dans les publications coloniales et contemporaines.",
       "whyProblematic": "Les Kreda sont souvent subsumés sous l'appellation générique Daza ou Toubou dans les sources, ce qui rend difficile leur identification statistique distincte. La frontière entre Kreda et autres sous-groupes Daza est parfois floue dans la littérature.",
       "contemporaryUsage": "Le terme Kreda est utilisé au Tchad pour désigner ce sous-groupe daza du Bahr el Ghazal. Les Kreda ne se reconnaissent pas nécessairement dans l'appellation générique Toubou, préférant leur identité spécifique de Daza ou Kreda.",
       "linguisticFamily": "FLG_SAHARIEN",
@@ -93,12 +93,14 @@
       {
         "title": "Country Studies US — Chad, Nilo-Saharan Languages",
         "url": "https://countrystudies.us/chad/19.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue — Dazaga language (dzg)",
         "url": "https://www.ethnologue.com/language/dzg/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Walters — A Grammar Sketch of Dazaga. ).pdf",
@@ -113,7 +115,8 @@
       {
         "title": "CIA World Factbook — Chad",
         "url": "https://www.cia.gov/the-world-factbook/countries/chad/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

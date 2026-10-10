@@ -91,12 +91,14 @@
       {
         "title": "Joshua Project : Bile, Billanchi in Nigeria",
         "url": "https://joshuaproject.net/people_groups/10847",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue : Bille Language (BIL)",
         "url": "https://www.ethnologue.com/language/bil/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "YouTube : Agiri Festival - The Spirit of Ancient Bille Kingdom",
@@ -106,7 +108,8 @@
       {
         "title": "Facebook EveAfriquenews : Ancient Bille Kingdom and the Agiri Festival",
         "url": "https://www.facebook.com/EveAfriqueNews/posts/ancient-bille-kingdom-is-agog",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       }
     ]
   }

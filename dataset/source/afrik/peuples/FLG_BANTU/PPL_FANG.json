@@ -10,7 +10,7 @@
       "selfAppellation": "Fang (prononcé fàŋ)",
       "exonyms": ["Pahouin", "Pangwe", "Pamue", "Mpangwe"],
       "spellingAliases": ["Fan", "Faŋ"],
-      "originOfExonyms": "Les trois noms européens viennent d'un même mot, Mpangwe, par lequel les peuples de la côte de l'estuaire du Gabon désignaient leurs voisins de l'intérieur : ils avaient entendu ces voisins se nommer fang et l'avaient adapté à leur propre langue. Les Européens ont repris ce nom des intermédiaires côtiers vers le milieu du XIXe siècle. Les Français en ont fait Pahouin, les Allemands Pangwe, en usage au Kamerun et dans l'ethnographie allemande, les Espagnols Pamue, en usage dans la colonie de Guinée espagnole. Ces noms étaient collectifs : ils rangeaient sous une seule étiquette les Fang et des peuples voisins apparentés comme les Bulu et les Beti. Fan est une graphie française ancienne du nom que les Fang se donnent, non un autre nom.",
+      "originOfExonyms": "Les trois noms européens viendraient d'un même mot, Mpangwe, par lequel les peuples de la côte de l'estuaire du Gabon désignaient leurs voisins de l'intérieur : ils auraient entendu ces voisins se nommer fang et l'auraient adapté à leur propre langue, selon Günter Tessmann et Pierre Alexandre. Les Européens ont repris ce nom des intermédiaires côtiers vers le milieu du XIXe siècle. Les Français en ont fait Pahouin, les Allemands Pangwe, en usage au Kamerun et dans l'ethnographie allemande, les Espagnols Pamue, en usage dans la colonie de Guinée espagnole. Ces noms étaient collectifs : ils rangeaient sous une seule étiquette les Fang et des peuples voisins apparentés comme les Bulu et les Beti. Fan est une graphie française ancienne du nom que les Fang se donnent, non un autre nom.",
       "whyProblematic": "Le terme Pahouin est parfois considere comme pejoratif car associe aux stereotypes coloniaux de cannibalisme, accusations fondees sur la decouverte de boites reliquaires contenant des os ancestraux.",
       "contemporaryUsage": "Fang, de l'autodésignation fàŋ, est la forme en usage dans la littérature en français. Fan en est une graphie ancienne. Pahouin, Pangwe et Pamue sont des noms coloniaux, repris aujourd'hui surtout pour parler de l'histoire du nom.",
       "linguisticFamily": "FLG_BANTU",
@@ -106,37 +106,44 @@
       {
         "title": "Encyclopaedia Britannica – Fang",
         "url": "https://www.britannica.com/topic/Fang-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project – Fang in Gabon",
         "url": "https://joshuaproject.net/people_groups/11187/GB",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Metropolitan Museum of Art – Male Reliquary Figure (Nlo Bieri)",
         "url": "https://www.metmuseum.org/art/collection/search/312334",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Sainsbury Centre – Reliquary guardian head Fang",
         "url": "https://sainsburycentre.ac.uk/art-and-objects/240-reliquary-guardian-head-angokh-nlo-byeri/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Smithsonian Folkways – Fang Bwiti Music from Gabon",
         "url": "https://folkways.si.edu/music-from-an-equatorial-microcosm-fang-bwiti-from-gabon-republic-africa-with-mbiri-selections/world/album/smithsonian",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "archive"
       },
       {
         "title": "Qiraat Africa – The Fang people of Africa",
         "url": "https://qiraatafrican.com/en/14988/the-fang-people-of-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Glottolog 5.3 – Fang (Equatorial Guinea)",
         "url": "https://glottolog.org/resource/languoid/id/fang1246",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Code ISO 639-3 fan. Noms alternatifs relevés : Pahouin, Pahoun, Pamue."
       },
       {
@@ -149,31 +156,386 @@
         "title": "Marquis de Compiègne, L'Afrique équatoriale. Gabonais, Pahouins, Gallois, Paris, Plon, 1875",
         "url": "https://archive.org/details/gabonaispahouins00comp",
         "tier": "referenced",
+        "source_kind": "archive",
         "notes": "Récit d'exploration de l'Ogooué. Note de la page 154 : le nom de Pahouins a été adopté par les Français, ces peuples se nomment eux-mêmes Fan, leurs voisins les appellent Mpangwen. Référence repérée via Wikipédia en français, puis lue dans l'exemplaire numérisé."
       },
       {
         "title": "Günter Tessmann, Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, Berlin, Ernst Wasmuth, 1913",
         "url": "https://archive.org/details/diepangwevlkerku01tess",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Monographie allemande tirée de l'expédition de Lübeck (1907-1909), écrite dans le vocabulaire colonial de son époque. L'introduction rapporte que les peuples de la côte ont entendu leurs voisins se nommer fang, en ont tiré Pangwe, et que les Français en ont fait Pahouins."
       },
       {
         "title": "Pierre Alexandre, Proto-histoire du groupe beti-bulu-fang : essai de synthèse provisoire, Cahiers d'études africaines, 1965",
         "url": "https://www.persee.fr/doc/cea_0008-0055_1965_num_5_20_3049",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Rapporte que les Mpangwe, signalés dans l'arrière-pays de l'estuaire du Gabon peu après 1840, sont devenus dans la bouche des Européens les Pahouins ou Pamue, et rattache ces formes à la phonologie de la langue mpongwè."
       },
       {
         "title": "Raúl Sánchez Molina, El Pamue imaginado : los Fang de la literatura colonial española, UNED, 2011",
         "url": "https://portalcientifico.uned.es/documentos/5f88ea6d29995259ef291c13",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Étude du nom pamue, employé par les explorateurs, missionnaires et administrateurs pour désigner les Fang de la colonie espagnole de Guinée. Résumé consulté."
       },
       {
         "title": "Lolke J. van der Veen, The Fang coming all the way down from Egyptland?, atelier Migration du programme Eurocores OMLL, 2007",
         "url": "http://www.ddl.cnrs.fr/fulltext/Van%20Der%20Veen/Fang_WebVersion.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Présentation de recherche du laboratoire Dynamique du langage, CNRS et Université Lyon 2. Range les Fang avec les Beti et les Bulu dans le groupe dit pahouin, et tient le nom Mpangwe, Pamouay ou Pamue pour un nom donné par des voisins, probablement les Mpongwe."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Fang désigne un peuple du sud du Cameroun, de la Guinée équatoriale et du nord du Gabon, qui se nomme lui-même Fang. D'autres noms lui ont été donnés : Pangwe, Pahouin et Pamue, que les Européens ont repris des peuples de la côte. Les sources ne s'accordent pas sur la façon dont ces noms sont nés ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Fang",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fan",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; il apparaît par écrit en 1861.",
+        "periodLabel": "Écrit dès 1861 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Livre publié en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fang est d'abord celui d'une des branches du peuple, selon Günter Tessmann, qui écrit que ces groupes n'ont pas de nom pour leur ensemble. Il juge la graphie Fan trop éloignée de la prononciation. Nous n'avons pas trouvé de source qui explique l'origine du mot fang.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6-7",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Monographie tirée de l'expédition de Lübeck de 1907-1909, écrite dans le vocabulaire colonial de son époque. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1878,
+              "to": 1878,
+              "label": "Récit publié en 1878, troisième édition"
+            },
+            "era": "polity",
+            "statement": "Le nom Fang est écrit Fan par le marquis de Compiègne : c'est, dit-il, le nom que ces peuples se donnent, tandis que leurs voisins les appellent Mpangwen et que les Français ont adopté celui de Pahouins.",
+            "formAsWritten": "Fan",
+            "actors": [
+              {
+                "name": "Marquis de Compiègne",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "L'Afrique équatoriale. Gabonais, Pahouins, Gallois",
+                "author": "Marquis de Compiègne",
+                "year": 1878,
+                "url": "https://archive.org/details/gabonaispahouins00comp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 154",
+                "notes": "Paris, Plon, troisième édition, 1878. Récit de l'exploration de l'Ogooué. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "Livre publié en 1861"
+            },
+            "era": "polity",
+            "statement": "Le nom Fang apparaît par écrit sous la forme Fans dans le récit de l'explorateur Paul Du Chaillu, publié en 1861, pour un peuple des collines de l'intérieur. Günter Tessmann voit en lui le premier Européen à avoir rencontré ce peuple, dans l'actuelle Guinée équatoriale, à quelques jours de marche de la côte. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Fans",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Paul Du Chaillu",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Explorations and Adventures in Equatorial Africa",
+                "author": "Paul B. Du Chaillu",
+                "year": 1861,
+                "url": "https://archive.org/details/explorationsand01chaigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 69",
+                "notes": "New York, Harper & Brothers, 1861. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XI",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Monographie tirée de l'expédition de Lübeck de 1907-1909, écrite dans le vocabulaire colonial de son époque. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pangwe",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les peuples de la côte, puis les Allemands",
+        "shortLine": "Le nom que les peuples de la côte donnaient aux Fang ; les Allemands l'ont repris.",
+        "periodLabel": "Mentionné dès 1819 sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Livre publié en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pangwe désigne, pour Günter Tessmann, l'ensemble formé par les Fang, les Bulu, les Ntum, les Jaunde, les Eton et leurs voisins, et il propose de le garder pour tout le groupe. Il rappelle que la graphie Mpangwe vient d'une confusion avec le nom des Mpongwe de la côte.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Monographie tirée de l'expédition de Lübeck de 1907-1909, écrite dans le vocabulaire colonial de son époque. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Livre publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Pangwe est écrit Pangwes par le missionnaire américain John Leighton Wilson. Vingt ans plus tôt, écrit-il, les peuples de la côte connaissaient à peine ce nom ; il a rencontré un premier groupe de Pangwe un peu plus de douze ans auparavant, aux sources du Gabon.",
+            "formAsWritten": "Pangwes",
+            "actors": [
+              {
+                "name": "John Leighton Wilson",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Western Africa: its History, Condition, and Prospects",
+                "author": "John Leighton Wilson",
+                "year": 1856,
+                "url": "https://archive.org/details/westernafricait00wilsgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 302",
+                "notes": "New York, Harper & Brothers, 1856. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "Livre publié en 1819"
+            },
+            "era": "polity",
+            "statement": "Une forme proche du nom Pangwe, Pa'amway, figure en 1819 dans le livre de Thomas Edward Bowdich : il nomme ainsi un vaste pays de l'intérieur, au-delà de l'estuaire du Gabon, d'après ce qu'on lui en a dit à Gaboon. Günter Tessmann y voit la première mention du nom, par ouï-dire. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Pa'amway",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Thomas Edward Bowdich",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee, with a Statistical Account of that Kingdom, and Geographical Notices of Other Parts of the Interior of Africa",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 428-429",
+                "notes": "Londres, John Murray, 1819. Chapitre « Sketch of Gaboon », écrit d'après sept semaines d'enquête à Gaboon. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XI",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Monographie tirée de l'expédition de Lübeck de 1907-1909, écrite dans le vocabulaire colonial de son époque. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Proposée en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pangwe viendrait du mot fang, que les peuples de la côte auraient entendu leurs voisins prononcer et compris pang. Ils y auraient ajouté une syllabe pour nommer l'ensemble de ce peuple, selon Günter Tessmann.",
+            "hypothesisGroup": "origine du nom Pangwe",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Monographie tirée de l'expédition de Lübeck de 1907-1909, écrite dans le vocabulaire colonial de son époque. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Pangwe aurait été choisi par les Benga, qui, à leur première rencontre avec les Fang, auraient trouvé le nom pang trop court et laid, selon un homme seki interrogé par Günter Tessmann.",
+            "hypothesisGroup": "origine du nom Pangwe",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Monographie tirée de l'expédition de Lübeck de 1907-1909, écrite dans le vocabulaire colonial de son époque. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Pangwe aurait été rapproché à dessein, par les Mpongwe de la côte, de leur propre nom, selon une supposition de Günter Tessmann, qui note qu'on confond encore souvent Pangwe et Mpongwe.",
+            "hypothesisGroup": "origine du nom Pangwe",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Monographie tirée de l'expédition de Lübeck de 1907-1909, écrite dans le vocabulaire colonial de son époque. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pahouin",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Les Français",
+        "shortLine": "Le nom français tiré de Mpangwe ; il englobait les Fang et leurs voisins.",
+        "periodLabel": "XIXe-XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1840,
+              "to": 1850,
+              "label": "Décennie 1840"
+            },
+            "era": "polity",
+            "statement": "Le nom Pahouin viendrait de Mpangwe, le nom sous lequel des marchands gabonais annoncent, peu après 1840, l'arrivée d'un peuple venu de l'intérieur, selon Pierre Alexandre. Dans la bouche des Européens, ce nom serait devenu Pahouin chez les Français et Pamue chez les Espagnols.",
+            "sources": [
+              {
+                "title": "Proto-histoire du groupe beti-bulu-fang : essai de synthèse provisoire",
+                "author": "Pierre Alexandre",
+                "year": 1965,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1965_num_5_20_3049",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 503",
+                "notes": "Cahiers d'études africaines, vol. 5, n° 20, 1965, p. 503-560. Première page lue sur Persée le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1878,
+              "to": 1878,
+              "label": "Récit publié en 1878, troisième édition"
+            },
+            "era": "polity",
+            "statement": "Le nom Pahouin a été adopté par les Français, note le marquis de Compiègne, qui ne lui voit pas de raison d'être, puisque ces peuples se nomment eux-mêmes Fan.",
+            "formAsWritten": "Pahouins",
+            "actors": [
+              {
+                "name": "Marquis de Compiègne",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "L'Afrique équatoriale. Gabonais, Pahouins, Gallois",
+                "author": "Marquis de Compiègne",
+                "year": 1878,
+                "url": "https://archive.org/details/gabonaispahouins00comp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 154",
+                "notes": "Paris, Plon, troisième édition, 1878. Récit de l'exploration de l'Ogooué. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Livre publié en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pahouin, en usage chez les Français, englobe selon Günter Tessmann un ensemble plus large encore que les Pangwe, jusqu'aux Bassa et aux Njem, ce qu'il juge abusif.",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Monographie tirée de l'expédition de Lübeck de 1907-1909, écrite dans le vocabulaire colonial de son époque. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -73,7 +73,8 @@
       {
         "title": "Hakaona people – AFRICA 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/hakaona.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Africanlanders – The southern tribes of Angola",
@@ -93,7 +94,8 @@
       {
         "title": "Barbieri et al. – The maternal genetic history of the Angolan Namib Desert, bioRxiv (2017)",
         "url": "https://www.biorxiv.org/content/10.1101/162230v1.full",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

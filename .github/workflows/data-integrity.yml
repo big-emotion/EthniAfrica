@@ -49,6 +49,23 @@ jobs:
       - name: Check source tier coverage
         run: npx tsx scripts/ci/checkSourceTierCoverage.ts
 
+      # Exact ratchet on ai_generated sources, plus the verification ledger:
+      # fails when a new one enters, and when an accepted verification is not
+      # in the fiches yet.
+      - name: Check ai_generated sources
+        run: npm run check:ai-sources
+
+      # Exact ratchet on etymology fields that state a name's origin as fact
+      # (doctrine §1.1: every origin is a hypothesis). Fails when one enters.
+      - name: Check etymologies are written as hypotheses
+        run: npm run check:etymology-hypotheses
+
+      # Descending ratchet on sources with no source_kind: readers see a
+      # source's type, never its tier. Fails when the count grows, and when it
+      # drops without the threshold being lowered.
+      - name: Check source kind coverage
+        run: npm run check:source-kinds
+
       # Reports the tier mix and the untiered tail across the 789 people
       # fiches, and writes the Prismic eligibility manifest.
       - name: Run people source tier audit

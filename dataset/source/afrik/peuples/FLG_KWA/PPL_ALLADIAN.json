@@ -78,22 +78,26 @@
       {
         "title": "Joshua Project – Aladjan Jacquesville in Côte d'Ivoire, 2025",
         "url": "https://joshuaproject.net/people_groups/10240",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Alladian language (ald)",
         "url": "https://www.ethnologue.com/language/ald/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue – Avikam-Alladian subgroup",
         "url": "https://www.ethnologue.com/subgroup/939/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Facebook EthnicsDECI – Jacqueville",
         "url": "https://www.facebook.com/ethniesdeCI/posts/jacquevillela-commune-de-jacqueville",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

@@ -2,9 +2,8 @@
 
 import { useState } from "react";
 
-import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
+import { SourceReviewChip } from "@/components/source-transparency/SourceReviewChip";
 import { LazySourceChainSheet } from "@/components/source-transparency/SourceChainSheet.lazy";
-import { SourceStandingBadge } from "@/components/sources/SourceStandingBadge";
 import {
   toSourceChainEvidence,
   type SearchEvidence,
@@ -26,20 +25,15 @@ export function SearchFeedEvidenceAction({
 }: SearchFeedEvidenceActionProps) {
   const [open, setOpen] = useState(false);
   const adapted = toSourceChainEvidence(evidence);
-  const score = evidence.assertion.confidenceScore;
-  const scorePercent =
-    score === undefined ? null : Math.round(score <= 1 ? score * 100 : score);
 
   return (
     <div
       id={anchorId}
       className="mt-afh-lg flex flex-wrap items-center gap-afh-md"
     >
-      <SourceStandingBadge standing={evidence.standing} language={language} />
-      <ConfidenceChip
+      <SourceReviewChip
         id={anchorId}
         language={language}
-        confidenceScore={scorePercent}
         sourceCount={evidence.assertion.sourceCount}
         lastHumanAuditAt={evidence.assertion.lastHumanAuditAt}
         onOpen={() => setOpen(true)}

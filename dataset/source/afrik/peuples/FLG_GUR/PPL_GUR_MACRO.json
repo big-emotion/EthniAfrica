@@ -12,7 +12,7 @@
       "spellingAliases": ["Gour"],
       "originOfExonyms": "Le terme Gur (ou Voltaique) est une appellation académique forgée par les linguistes pour désigner l'ensemble des peuples parlant des langues de la famille Gur (Niger-Congo). Le terme Voltaique (en français : langues voltaiques) est l'ancienne dénomination, issue du nom du fleuve Volta autour duquel se concentrent ces peuples. Cette appellation a été utilisée par Sigismund Wilhelm Koelle dès 1854 (Polyglotta Africana) sous la forme North-Eastern High Sudan. Le terme Mabia (du proto-gur ma- mère + bia enfant) est une appellation alternative proposée par le linguiste Adams Bodomo (2017) pour désigner l'ensemble Central Gur.",
       "whyProblematic": "L'appellation Gur est une catégorie linguistique et non une identité ethnique partagée. Les peuples Gur n'ont pas de sentiment d'appartenance commune a priori. Leur regroupement sous ce label est le produit du travail des linguistes et anthropologues, et ne correspond pas à un auto-désignation collective.",
-      "contemporaryUsage": "Gur (ou langues gur) est couramment utilisé en linguistique et en sciences sociales. Dans les contextes nationaux (Burkina Faso, Ghana), les peuples sont désignés par leurs ethnonymes propres (Mossi, Dagomba, Gurma, etc.). L'usage du terme Voltaique persiste dans les publications francophones antérieures aux années 1980.",
+      "contemporaryUsage": "Les chercheurs emploient couramment Gur, ou langues gur, dans les études sur les langues et les sociétés. Au Burkina Faso et au Ghana, chaque peuple est généralement appelé par son propre nom : Mossi, Dagomba, Gurma, entre autres. Voltaique apparaît encore dans les publications francophones antérieures aux années 1980.",
       "linguisticFamily": "FLG_GUR",
       "ethnoLinguisticGroup": "Macrofamille Gur (Niger-Congo, Atlantique-Congo, Savannes)",
       "historicalRegion": "Sahel et savanes d'Afrique de l'Ouest : du Mali au Niger, du Sénégal au Nigeria, avec une concentration maximale au Burkina Faso, au nord du Ghana, du Togo et du Bénin, et au nord de la Côte d'Ivoire",
@@ -133,7 +133,8 @@
       {
         "title": "Britannica — Gur languages",
         "url": "https://www.britannica.com/topic/Gur-languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Bodomo, Adams (2017) — Mabia classification of Central Gur languages",
@@ -143,7 +144,8 @@
       {
         "title": "Kleinewillinghöfer, Ulrich (2014) — Gur-Adamawa relationship. In: Journal of West African Languages",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Koelle, Sigismund Wilhelm (1854) — Polyglotta Africana. London",
@@ -153,7 +155,8 @@
       {
         "title": "kids.kiddle.co — Gur languages Facts for Kids",
         "url": "https://kids.kiddle.co/Gur_languages",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

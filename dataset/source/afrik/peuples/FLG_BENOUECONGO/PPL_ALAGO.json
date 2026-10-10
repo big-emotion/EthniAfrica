@@ -95,12 +95,14 @@
       {
         "title": "Ethnologue, Alago (ALA). (consulté 2025)",
         "url": "https://www.ethnologue.com/language/ala/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project, Alago Idoma Nokwu in Nigeria. (consulté 2025)",
         "url": "https://joshuaproject.net/people_groups/10241",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Oyigbenu, Amirikpa. The Threat of Endangerment and Extinction of Alago Language of Nasarawa State. International Journal of Language and Culture, 5(1), 2025, pp. 1-6. )_IJLC202509015611NG_(p_1-6).pdf",
@@ -115,7 +117,8 @@
       {
         "title": "Wikidata, Alago (Q106490494). (consulté 2025)",
         "url": "https://www.wikidata.org/wiki/Q106490494",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

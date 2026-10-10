@@ -4,6 +4,175 @@
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["BDI", "COD", "TZA", "RWA"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Rundi désigne le peuple du Burundi, qui se nomme lui-même Barundi, au singulier Murundi, et parle le kirundi. Un autre nom a servi : Warundi, la forme swahilie des explorateurs. Nous n'avons pas trouvé de source qui explique le sens premier du mot rundi ; ce que disent les sources est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Barundi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "run",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, au singulier Murundi ; leur langue est le kirundi.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "colonial",
+            "statement": "Le nom Barundi, au singulier Murundi, désigne les habitants du Burundi, quelle que soit leur appartenance : le missionnaire Jean-Michel van der Burgt écrit déjà en 1903 « un Murundi, même Muhutu », pour un Hutu du pays.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Un grand peuple de l'Afrique équatoriale : éléments d'une monographie sur l'Urundi et les Warundi",
+                "author": "Jean-Michel van der Burgt",
+                "year": 1903,
+                "url": "https://archive.org/details/ungrandpeuplede00burggoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. XXXII",
+                "notes": "Bois-le-Duc, Société « L'illustration catholique », 1903, lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur, missionnaire catholique, a vécu dans le pays ; son livre mêle observations et théories raciales de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Barundi est formé sur le même mot que le nom du pays, avec un préfixe pour les habitants, comme en swahili, où le préfixe u- désigne le pays, m- une personne et wa- tout le peuple, selon Richard Burton. Les sources que nous avons lues n'expliquent pas le sens premier du mot rundi ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: a Picture of Exploration",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsCent00Burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 30, note",
+                "notes": "New York, Harper, 1860, lu dans l'exemplaire numérisé le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "1859"
+            },
+            "era": "polity",
+            "statement": "Le nom Barundi a une forme proche, Warundi, avec le préfixe swahili, chez l'explorateur Richard Burton, qui décrit en 1859 un village de Wajiji « et de Warundi » sur la rive du lac Tanganyika. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Warundi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Equatorial Africa, Journal of the Royal Geographical Society, vol. 29",
+                "author": "Richard F. Burton",
+                "year": 1859,
+                "url": "https://archive.org/details/in.ernet.dli.2015.70694",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 248",
+                "notes": "Revue de la Royal Geographical Society, Londres, 1859, lue dans l'exemplaire numérisé le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Warundi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "swh",
+        "namedBy": null,
+        "shortLine": "La forme swahilie du nom, employée par les explorateurs et les missionnaires.",
+        "periodLabel": "De 1859 au début du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "1859"
+            },
+            "era": "polity",
+            "statement": "Le nom Warundi apparaît chez Richard Burton, qui parle en 1859 de l'« inhospitalité des Warundi » et du royaume d'Urundi, gouverné par un mwami. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Warundi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Equatorial Africa, Journal of the Royal Geographical Society, vol. 29",
+                "author": "Richard F. Burton",
+                "year": 1859,
+                "url": "https://archive.org/details/in.ernet.dli.2015.70694",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 248-249 et p. 253",
+                "notes": "Revue de la Royal Geographical Society, Londres, 1859, lue dans l'exemplaire numérisé le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Warundi suit un modèle que Burton décrit lui-même : en swahili, le préfixe u- désigne le pays et wa- son peuple, d'où Urundi pour le royaume et Warundi pour ses habitants.",
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: a Picture of Exploration",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsCent00Burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 30, note",
+                "notes": "New York, Harper, 1860, lu dans l'exemplaire numérisé le 10 octobre 2026."
+              },
+              {
+                "title": "The Lake Regions of Central Africa: a Picture of Exploration, vol. 2",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen21860burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 145",
+                "notes": "Londres, Longman, Green, Longman and Roberts, 1860, lu dans l'exemplaire numérisé le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Warundi est encore celui que retient le missionnaire Jean-Michel van der Burgt dans le titre de son livre de 1903 sur l'Urundi et les Warundi.",
+            "sources": [
+              {
+                "title": "Un grand peuple de l'Afrique équatoriale : éléments d'une monographie sur l'Urundi et les Warundi",
+                "author": "Jean-Michel van der Burgt",
+                "year": 1903,
+                "url": "https://archive.org/details/ungrandpeuplede00burggoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "préface",
+                "notes": "Bois-le-Duc, Société « L'illustration catholique », 1903, lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur, missionnaire catholique, a vécu dans le pays ; son livre mêle observations et théories raciales de son époque."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Rundi (Barundi)",
@@ -14,7 +183,7 @@
         "Burundais (appellation francaise nationale)",
         "Habitants du Burundi / peuple du Burundi"
       ],
-      "originOfExonyms": "Le terme 'Rundi' derive du nom du royaume precolonial 'Urundi' (Ubwami bw'Urundi en kirundi : Royaume d'Urundi), dont le nom est lui-meme d'origine incertaine mais ancree dans la tradition orale du royaume. Le prefixe bantou 'ba-' forme 'Barundi' (peuple de l'Urundi). Le terme 'Burundi' (avec le prefixe bu- designant le pays) a ete adopte a l'independance en 1962. Les groupes Hutu, Tutsi et Twa qui composent la population partagent tous l'identite Barundi et parlent le Kirundi.",
+      "originOfExonyms": "Le terme 'Rundi' deriverait du nom du royaume precolonial 'Urundi' (Ubwami bw'Urundi en kirundi : Royaume d'Urundi), dont le nom est lui-meme d'origine incertaine mais ancree dans la tradition orale du royaume. Le prefixe bantou 'ba-' forme 'Barundi' (peuple de l'Urundi). Le terme 'Burundi' (avec le prefixe bu- designant le pays) a ete adopte a l'independance en 1962. Les groupes Hutu, Tutsi et Twa qui composent la population partagent tous l'identite Barundi et parlent le Kirundi.",
       "whyProblematic": "La denomination 'Rundi' peut etre interpretee soit comme designation linguistique (locuteurs du kirundi), soit comme designation ethnique (peuple du Burundi). La distinction entre Hutu, Tutsi et Twa a ete instrumentalisee par les colonisateurs allemands et belges qui ont durci des categories sociales autrefois plus fluides, contribuant aux tensions qui ont conduit aux genocides de 1972 et 1993. Il est scientifiquement errone de traiter Hutu et Tutsi comme des 'races' separees : tous deux parlent Kirundi, partagent la culture rundi et sont genetiquement tres proches. Les distinctions etaient historiquement socio-economiques (agriculteurs vs eleveurs de betail) et poreuses.",
       "contemporaryUsage": "Le terme 'Barundi' est l'auto-designation collective. 'Murundi' designe un individu. 'Kirundi' est la langue. La constitution burundaise reconnait l'identite nationale 'burundaise' regroupant Hutu, Tutsi et Twa. Depuis les accords d'Arusha (2000) et la constitution de 2005, des quotas ethniques formels existent dans les institutions politiques et militaires pour garantir la representation des trois composantes.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -111,22 +280,26 @@
       {
         "title": "Britannica — Rundi people",
         "url": "https://www.britannica.com/topic/Rundi-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Britannica — Kingdom of Burundi",
         "url": "https://www.britannica.com/place/Kingdom-of-Burundi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "SIL Ethnologue — Rundi / Kirundi (run)",
         "url": "https://www.ethnologue.com/language/run/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "eHRAF World Cultures — Barundi",
         "url": "https://ehrafworldcultures.yale.edu/cultures/fo58/summary",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Lugha Yangu — Karyenda and the Royal Burundi Drummers",
@@ -136,17 +309,20 @@
       {
         "title": "UNESCO — Ritual dance of the royal drum of Burundi (inscription 2014)",
         "url": "https://ich.unesco.org/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "BBC News — Burundi country profile",
         "url": "https://www.bbc.com/news/world-africa-13085064",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "press"
       },
       {
         "title": "ISTEEBU — Institut de Statistiques et d'Etudes Economiques du Burundi",
         "url": "https://www.isteebu.bi/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

@@ -94,17 +94,20 @@
       {
         "title": "Country Studies US – Angola: Lunda-Chokwe",
         "url": "https://countrystudies.us/angola/62.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Britannica – Lunda empire",
         "url": "https://www.britannica.com/place/Lunda-empire",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project – Chokwe in Angola",
         "url": "https://joshuaproject.net/people_groups/11365/AO",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Africa Federation – United Kingdom of Lunda Tchokwe",

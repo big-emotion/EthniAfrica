@@ -10,10 +10,10 @@ import { FALLBACK_LOCALE } from "@/lib/locale";
 
 // Wave-2 imports — excluded from the initial bundle.
 // The Suspense fallback renders the prose immediately (Wave 1), protecting LCP.
-const LazyConfidenceChip = lazy(async () => {
-  const { ConfidenceChip } =
-    await import("@/components/source-transparency/ConfidenceChip");
-  return { default: ConfidenceChip };
+const LazySourceReviewChip = lazy(async () => {
+  const { SourceReviewChip } =
+    await import("@/components/source-transparency/SourceReviewChip");
+  return { default: SourceReviewChip };
 });
 
 const LazySourceChainSheet = lazy(
@@ -27,7 +27,6 @@ const LazySourceChainSheet = lazy(
 
 export interface ParagraphChipData {
   chipId: string;
-  confidenceScore: number | null;
   sourceCount: number | null;
   lastHumanAuditAt: string | null;
   assertionStatement: string;
@@ -109,7 +108,6 @@ function ProseWithNote({
           assertion={{
             id: note.assertionId,
             statement: note.assertionStatement,
-            confidenceScore: 0,
             sourceCount: note.sources.length,
             lastHumanAuditAt: null,
           }}
@@ -123,6 +121,7 @@ function ProseWithNote({
             // folded onto "unverified", which would state a judgement no
             // editor made.
             tier: source.tier ?? "needs_review",
+            ...(source.sourceKind ? { sourceKind: source.sourceKind } : {}),
             bibliographyNumber: note.numberBySourceId[source.id],
           }))}
           anchorId={anchorId}
@@ -143,7 +142,7 @@ interface ProseWithChipProps {
    * A note callout for this field, when the corpus sources it.
    *
    * Takes precedence over `chip`: the two occupy the same character position
-   * and say different things — the chip states a confidence verdict, the
+   * and say different things — the chip states a reference count, the
    * callout states a reference — and a paragraph ending in both would ask the
    * reader to tell two marks apart at six pixels tall.
    */
@@ -155,14 +154,14 @@ interface ProseWithChipProps {
 }
 
 /**
- * Renders a prose paragraph with an optional inline ConfidenceChip at the end.
+ * Renders a prose paragraph with an optional inline SourceReviewChip at the end.
  *
  * Two-wave hydration (protects LCP, UX-DR46):
  *   Wave 1 — prose text renders immediately via Suspense fallback.
  *   Wave 2 — lazy chip JS loads after the prose is interactive.
  *
  * Fallback (AC: hydration fails or data missing):
- *   ConfidenceChip itself renders "voir les sources" when any data field is null.
+ *   SourceReviewChip itself renders "voir les sources" when any data field is null.
  *   The Suspense fallback also shows "voir les sources" while the lazy chunk loads.
  */
 // @req REQ-003
@@ -214,9 +213,8 @@ export function ProseWithChip({
           <Suspense
             fallback={<FallbackLink onOpen={() => setSheetOpen(true)} />}
           >
-            <LazyConfidenceChip
+            <LazySourceReviewChip
               id={anchorId}
-              confidenceScore={chip.confidenceScore}
               sourceCount={chip.sourceCount}
               lastHumanAuditAt={chip.lastHumanAuditAt}
               variant={chip.contested ? "contested" : "inline"}
@@ -235,7 +233,6 @@ export function ProseWithChip({
           onOpenChange={setSheetOpen}
           assertion={{
             statement: chip.assertionStatement,
-            confidenceScore: chip.confidenceScore ?? 0,
             sourceCount: chip.sourceCount ?? 0,
             lastHumanAuditAt: chip.lastHumanAuditAt,
           }}

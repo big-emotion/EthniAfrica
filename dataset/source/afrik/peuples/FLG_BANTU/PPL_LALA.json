@@ -82,27 +82,32 @@
       {
         "title": "Mkandawire, S.B. & Daka, H. – Cultural Preservation Literacy in Zambia: A Case Study of the Lala People of Serenje District, University of Zambia",
         "url": "https://dspace.unza.zm/server/api/core/bitstreams/c53ebc1e-2380-4aff-9b69-2b4d9fd13057/content",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Boswell, D. – Chipimpi, Vulgar Clans, and Lala-Lamba Ethnohistory, Furman University, 2008",
         "url": "https://scholarexchange.furman.edu/cgi/viewcontent.cgi?article=1001&context=ant-publications",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "PeopleGroups.org – Lala of Zambia",
         "url": "https://peoplegroups.org/people_groups/pg015588/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Ethnologue – Lala-Bisa Language (LEB)",
         "url": "https://www.ethnologue.com/language/leb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project – Zambia People Groups",
         "url": "https://joshuaproject.net/countries/ZA",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

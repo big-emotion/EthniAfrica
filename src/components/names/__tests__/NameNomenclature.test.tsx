@@ -51,7 +51,9 @@ describe("NameNomenclature", () => {
     renderNomenclature();
 
     expect(
-      screen.getByText(/Un endonyme est le nom qu'un peuple se donne/)
+      screen.getByText(
+        /Les filtres distinguent les noms employés par un peuple/
+      )
     ).toBeVisible();
   });
 
@@ -86,7 +88,9 @@ describe("NameNomenclature", () => {
   it("offers no chip for a type the corpus holds no record for", () => {
     renderNomenclature();
 
-    expect(screen.getByRole("link", { name: /exonyme/ })).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: /nom donné par d’autres/ })
+    ).toBeInTheDocument();
     expect(
       screen.queryByRole("link", { name: /patronyme/ })
     ).not.toBeInTheDocument();

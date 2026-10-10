@@ -26,6 +26,21 @@ Decides **what to publish next, on which channel, how often, and for whom.**
 It is a **consumer** in the three-skill pipeline; its audience evidence comes
 from `docs/audience/`, written by `/ethniafrica-audience-audit`.
 
+## Shared language checks
+
+Every brief and any final copy produced from it must use the DITP-based rules in
+`docs/editorial/reader-facing-register.md`. Use explanatory language for the site,
+conversational language for discussion, and narrative language for stories.
+All three use familiar words and complete, naturally connected sentences.
+
+Pass that charter to the existing BMAD prose review as `style_guide`; use
+`reader_type=humans` for structure review. Before handing over final assets, run
+`npm run check:publication -- <final-text-files>` from the project root on the
+actual caption, narration, card text and subtitles, including external files.
+Recheck after every final edit. Preserve citations and hypothesis status. A Vale
+pass checks wording patterns; it does not grant publication approval. See
+`docs/editorial/plain-language-checks.md` for coverage and limits.
+
 ## Who this answers to
 
 **The operator is the decision-maker, not a social media specialist.** They asked
@@ -218,9 +233,12 @@ two are manual regardless.
 
 ## Editorial constraints that bind published copy
 
-- **Source tiers**: every claim carries its source and tier (`official` /
-  `referenced` / `unverified`). Nothing is excluded for being weak; everything is
-  labelled. Wikipedia is read first — prefer to cite what it led to (rule:
+- **Sources by type, never by tier**: every claim carries its source, named by
+  its type (oral tradition, book, archive…); `ai_generated` is « Synthèse à
+  vérifier ». The tier (`official` / `referenced` / `unverified`) is an internal
+  audit field and never reaches published copy (`docs/editorial/doctrine.md`
+  §1.1). Nothing is excluded for being weak; oral tradition is never ranked
+  below writing. Every origin is a hypothesis: copy never affirms. Wikipedia is read first — prefer to cite what it led to (rule:
   `docs/editorial/reader-facing-register.md`, "Using sources").
 - **Reader-facing register**: never let the workshop's vocabulary reach the
   reader. No file paths, no `PPL_`/`FLG_`/`PAT_` identifiers, no _file d'attente_,

@@ -1,0 +1,308 @@
+{
+  "id": "WRD_RACE",
+  "nameMain": "race",
+  "wordLanguage": "fra",
+  "definition": "Un mot qui a d'abord désigné une lignée, puis des groupes humains que l'on a voulu distinguer par l'hérédité.",
+  "relatedSubjects": [
+    {
+      "id": "FLG_MANDE",
+      "relation": "En 1900, Maurice Delafosse range les peuples de langue mandé parmi les « familles nègres » et parle de Dyoula « de race pure »."
+    },
+    {
+      "id": "FLG_BANTU",
+      "relation": "Le nom bantou désigne des langues ; Samwiri Lwanga-Lunyiigo et Jan Vansina mettent en garde contre la confusion entre langue, culture et race qu'il peut faire naître."
+    }
+  ],
+  "nameHistory": {
+    "summary": "Le mot race désigne aujourd'hui des groupes humains que l'on a voulu distinguer par l'hérédité ; il a d'abord voulu dire la famille, la lignée. Il est passé en français depuis l'italien. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "race",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Un mot qui voulait dire la lignée, puis a servi à classer les êtres humains ; son origine est débattue.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit en français vers 1480",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le mot race désigne des groupes humains que l'on prétend distinguer par l'hérédité. Pour l'historien Joseph Ki-Zerbo, ce concept est « l'un des plus difficiles à cerner scientifiquement », et des savants jugent la théorie des races « insuffisante et mythique ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 10, partie II : Théories relatives aux « races » et histoire de l'Afrique",
+                "author": "Joseph Ki-Zerbo",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 291 et p. 295"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le mot race a servi à classer les peuples d'Afrique en mêlant des choses différentes : P. Diagne relève dans l'Histoire générale de l'Afrique que la confusion est générale entre la langue, le genre de vie et la « race ».",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 10, partie I : Histoire et linguistique",
+                "author": "P. Diagne",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 273"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le mot race sert à ranger les peuples d'Afrique de l'Ouest dans les écrits coloniaux : en 1900, Maurice Delafosse classe les Mandé parmi les « familles nègres » et parle de Dyoula « de race pure ».",
+            "sources": [
+              {
+                "title": "Note sur les familles Krou, Mandé et Agni-Achanti (Afrique occidentale), Bulletin du Muséum d'histoire naturelle, vol. 6",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/biostor-268194",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 338-339",
+                "notes": "Lu dans la numérisation d'Internet Archive. L'auteur, administrateur colonial, classe les peuples en « familles » et parle de « race »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1684,
+              "to": 1684,
+              "label": "1684"
+            },
+            "statement": "Le mot race sert à diviser l'humanité dans un texte de François Bernier publié en 1684, une « Nouvelle division de la terre, par les différentes espèces ou races d'hommes qui l'habitent », selon le Trésor de la langue française.",
+            "sources": [
+              {
+                "title": "Trésor de la langue française informatisé, article race, étymologie et histoire",
+                "author": "ATILF, CNRS et Université de Lorraine",
+                "year": null,
+                "url": "https://www.cnrtl.fr/etymologie/race",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu sur le portail lexical du CNRTL le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1495,
+              "to": 1505,
+              "label": "Vers 1500"
+            },
+            "statement": "Le mot race désigne aussi des animaux : Philippe de Commynes parle des « races des chevaulx » vers 1500, selon le Trésor de la langue française.",
+            "sources": [
+              {
+                "title": "Trésor de la langue française informatisé, article race, étymologie et histoire",
+                "author": "ATILF, CNRS et Université de Lorraine",
+                "year": null,
+                "url": "https://www.cnrtl.fr/etymologie/race",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu sur le portail lexical du CNRTL le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1475,
+              "to": 1485,
+              "label": "Vers 1480"
+            },
+            "statement": "Le mot race apparaît par écrit vers 1480, sous la forme rasse, dans le Mystère du Viel Testament, au sens de l'ensemble des ancêtres et des descendants d'une même famille, selon le Trésor de la langue française. C'est la plus ancienne trace de ce mot en français que le projet connaît. L'idée de lignée existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Trésor de la langue française informatisé, article race, étymologie et histoire",
+                "author": "ATILF, CNRS et Université de Lorraine",
+                "year": null,
+                "url": "https://www.cnrtl.fr/etymologie/race",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu sur le portail lexical du CNRTL le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1290,
+              "to": 1475,
+              "label": "Avant 1480"
+            },
+            "statement": "On dit alors razza en italien, attesté vers 1300 sous la forme razzo, au sens de famille ou d'espèce d'animaux ; le français l'emprunte ensuite, selon le Trésor de la langue française.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Trésor de la langue française informatisé, article race, étymologie et histoire",
+                "author": "ATILF, CNRS et Université de Lorraine",
+                "year": null,
+                "url": "https://www.cnrtl.fr/etymologie/race",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu sur le portail lexical du CNRTL le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le mot race viendrait du latin ratio, « calcul, système », passé au sens de modèle d'une chose ou d'un être vivant, selon le Französisches etymologisches Wörterbuch, qui reprend une idée de Leo Spitzer, d'après le Trésor de la langue française.",
+            "hypothesisGroup": "origine du mot race",
+            "sources": [
+              {
+                "title": "Trésor de la langue française informatisé, article race, étymologie et histoire",
+                "author": "ATILF, CNRS et Université de Lorraine",
+                "year": null,
+                "url": "https://www.cnrtl.fr/etymologie/race",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu sur le portail lexical du CNRTL le 9 octobre 2026."
+              },
+              {
+                "title": "The Oxford Etymologist Looks at Race, Class and Sex (but not Gender), or, Beating a Willing Horse",
+                "author": "Anatoly Liberman",
+                "year": 2009,
+                "url": "https://blog.oup.com/2009/04/race-2/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronique publiée le 22 avril 2009 sur le blog de l'Oxford University Press, lue en ligne. L'auteur, étymologiste, passe en revue les explications du mot et retient celle de Gianfranco Contini (1959), dont nous n'avons pas lu l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le mot race viendrait du latin generatio, « génération, descendance », dont le début serait tombé, selon G. Merk et C. Salvioni, que rapporte le Trésor de la langue française.",
+            "hypothesisGroup": "origine du mot race",
+            "sources": [
+              {
+                "title": "Trésor de la langue française informatisé, article race, étymologie et histoire",
+                "author": "ATILF, CNRS et Université de Lorraine",
+                "year": null,
+                "url": "https://www.cnrtl.fr/etymologie/race",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu sur le portail lexical du CNRTL le 9 octobre 2026."
+              },
+              {
+                "title": "The Oxford Etymologist Looks at Race, Class and Sex (but not Gender), or, Beating a Willing Horse",
+                "author": "Anatoly Liberman",
+                "year": 2009,
+                "url": "https://blog.oup.com/2009/04/race-2/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronique publiée le 22 avril 2009 sur le blog de l'Oxford University Press, lue en ligne. L'auteur, étymologiste, passe en revue les explications du mot et retient celle de Gianfranco Contini (1959), dont nous n'avons pas lu l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le mot race viendrait de l'ancien haut allemand reiza, « ligne », d'après Diez, selon le dictionnaire d'Émile Littré.",
+            "hypothesisGroup": "origine du mot race",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article race, étymologie",
+                "author": "Émile Littré",
+                "year": null,
+                "url": "https://www.cnrtl.fr/definition/race",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu sur le portail lexical du CNRTL le 9 octobre 2026."
+              },
+              {
+                "title": "The Oxford Etymologist Looks at Race, Class and Sex (but not Gender), or, Beating a Willing Horse",
+                "author": "Anatoly Liberman",
+                "year": 2009,
+                "url": "https://blog.oup.com/2009/04/race-2/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronique publiée le 22 avril 2009 sur le blog de l'Oxford University Press, lue en ligne. L'auteur, étymologiste, passe en revue les explications du mot et retient celle de Gianfranco Contini (1959), dont nous n'avons pas lu l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le mot race viendrait de l'arabe ra's, « tête », selon une explication que rapporte Anatoly Liberman sans la retenir.",
+            "hypothesisGroup": "origine du mot race",
+            "sources": [
+              {
+                "title": "The Oxford Etymologist Looks at Race, Class and Sex (but not Gender), or, Beating a Willing Horse",
+                "author": "Anatoly Liberman",
+                "year": 2009,
+                "url": "https://blog.oup.com/2009/04/race-2/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronique publiée le 22 avril 2009 sur le blog de l'Oxford University Press, lue en ligne. L'auteur, étymologiste, passe en revue les explications du mot et retient celle de Gianfranco Contini (1959), dont nous n'avons pas lu l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "Proposée en 1959"
+            },
+            "statement": "Le mot race viendrait du français haras, le lieu où l'on élève les chevaux : un vieil auteur italien traduisait haras par razza, selon Gianfranco Contini, dont Anatoly Liberman retient l'explication.",
+            "hypothesisGroup": "origine du mot race",
+            "sources": [
+              {
+                "title": "The Oxford Etymologist Looks at Race, Class and Sex (but not Gender), or, Beating a Willing Horse",
+                "author": "Anatoly Liberman",
+                "year": 2009,
+                "url": "https://blog.oup.com/2009/04/race-2/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronique publiée le 22 avril 2009 sur le blog de l'Oxford University Press, lue en ligne. L'auteur, étymologiste, passe en revue les explications du mot et retient celle de Gianfranco Contini (1959), dont nous n'avons pas lu l'article."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "gaps": [
+    "Nous n'avons pas lu nous-mêmes le texte de François Bernier de 1684 ; nous le connaissons par le Trésor de la langue française.",
+    "Nous n'avons pas encore étudié comment les langues africaines ont traduit ou repris le mot race.",
+    "Nous n'avons pas lu l'article de Gianfranco Contini de 1959 ; nous le connaissons par Anatoly Liberman."
+  ],
+  "sources": []
+}

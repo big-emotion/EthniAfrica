@@ -10,6 +10,7 @@ import {
   pickNextDidYouKnowFact,
   type DidYouKnowFact,
 } from "@/lib/home/didYouKnowFacts";
+import { SOURCE_KINDS } from "@/types/sources";
 
 const fact = (id: string): DidYouKnowFact => ({
   id,
@@ -22,6 +23,7 @@ const fact = (id: string): DidYouKnowFact => ({
       title: `Source officielle ${id}`,
       url: `https://example.org/${id}`,
       tier: "official",
+      source_kind: "academic",
     },
   ],
 });
@@ -33,6 +35,7 @@ const factWithoutOfficialSource = (id: string): DidYouKnowFact => ({
       title: `Source secondaire ${id}`,
       url: `https://example.org/${id}`,
       tier: "referenced",
+      source_kind: "academic",
     },
   ],
 });
@@ -221,5 +224,63 @@ describe("findDidYouKnowFact — the fact a shared link names", () => {
     expect(findDidYouKnowFact("gone", bank)).toBeNull();
     expect(findDidYouKnowFact(null, bank)).toBeNull();
     expect(findDidYouKnowFact(undefined, bank)).toBeNull();
+  });
+});
+
+describe("the bank's reader prose (doctrine §1.1)", () => {
+  // A note may say what a source supports, never what tier the fact holds.
+  // @req REQ-092
+  it("never names a source tier in what the reader reads", () => {
+    const tierWord =
+      /« ?(non vérifiée|référencée|officielle) ?»|(?<!\p{L})tier(?!\p{L})/iu;
+    const offenders = DID_YOU_KNOW_FACTS.filter((entry) =>
+      [
+        entry.headline,
+        ...entry.body,
+        ...(entry.sources ?? []).map((source) => source.notes),
+      ]
+        .filter(Boolean)
+        .some((text) => tierWord.test(text))
+    ).map((entry) => entry.id);
+
+    expect(offenders).toEqual([]);
+  });
+});
+
+describe("the Saviez-vous bank — what each source is", () => {
+  // The card names a source's type beside its title. A source without one
+  // would print a bare title next to typed ones, and a misspelt kind would
+  // print « Type non précisé » for a source whose type is known.
+  // @req REQ-194
+  it("gives every source a type from the corpus vocabulary", () => {
+    const untyped = DID_YOU_KNOW_FACTS.flatMap((entry) =>
+      (entry.sources ?? [])
+        .filter((source) => !SOURCE_KINDS.includes(source.source_kind))
+        .map((source) => `${entry.id} → ${source.title}`)
+    );
+
+    expect(untyped).toEqual([]);
+  });
+
+  // Before `press` existed these outlets read « Type non précisé ». A press
+  // article is typed as one, so the reader sees what kind of text it is.
+  // @req REQ-194
+  it("types every press outlet's article as press", () => {
+    const pressHosts = [
+      "jeuneafrique.com",
+      "dubawa.org",
+      "scientificamerican.com",
+      "daily.jstor.org",
+    ];
+    const mistyped = DID_YOU_KNOW_FACTS.flatMap((entry) =>
+      (entry.sources ?? [])
+        .filter((source) =>
+          pressHosts.some((host) => source.url?.includes(`${host}/`))
+        )
+        .filter((source) => source.source_kind !== "press")
+        .map((source) => `${entry.id} → ${source.title}`)
+    );
+
+    expect(mistyped).toEqual([]);
   });
 });

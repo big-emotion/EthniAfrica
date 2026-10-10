@@ -14,7 +14,7 @@
         "Chinese Mauritians (anglais)",
         "Hakka (pour la composante majoritaire, ~95 % de la communauté)"
       ],
-      "originOfExonyms": "Le terme Sino-Mauriciens est un composé hybride franco-mauricien désignant les habitants de l'île Maurice d'ascendance chinoise. Le sous-groupe Hakka (客家, littéralement familles invitées) tire son nom de son statut de migrants tardifs dans la Chine du Sud, par opposition aux populations han établies antérieurement.",
+      "originOfExonyms": "Le terme Sino-Mauriciens est un composé hybride franco-mauricien désignant les habitants de l'île Maurice d'ascendance chinoise. Le sous-groupe Hakka (客家, littéralement familles invitées) tirerait son nom de son statut de migrants tardifs dans la Chine du Sud, par opposition aux populations han établies antérieurement.",
       "whyProblematic": "Le terme générique Chinois efface les distinctions internes majeures entre sous-groupes : Hakka (majoritaires, ~95 %), Cantonais-Namshun (~5 %) et Hokkiens (Fujianese, groupe historique initial). Ces groupes ont une histoire migratoire, des langues et des organisations sociales distinctes, et ont parfois connu des tensions intercommunautaires.",
       "contemporaryUsage": "Le terme Sino-Mauriciens est utilisé dans les contextes officiels et académiques. La communauté représente environ 2 à 3 % de la population mauricienne totale, soit environ 10 000 à 30 000 personnes selon les estimations récentes. La communauté est en déclin démographique relatif par emigration.",
       "linguisticFamily": "FLG_CREOLE",
@@ -90,7 +90,8 @@
       {
         "title": "Han Chinese, Hakka in Mauritius – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/12054/MP",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "The Hakka Chinese – Banana Writers, 2016",
@@ -100,7 +101,8 @@
       {
         "title": "Chinese Mauritians: Paradise Island's Next Dodo? – The Yale Globalist, 2013",
         "url": "https://globalist.yale.edu/uncategorized/chinese-mauritians-paradise-islands-next-dodo/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "academic"
       },
       {
         "title": "The Chinese in Mauritius Facts and Origins – My China Roots",

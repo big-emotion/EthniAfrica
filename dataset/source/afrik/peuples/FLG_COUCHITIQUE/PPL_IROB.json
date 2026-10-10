@@ -82,7 +82,8 @@
       {
         "title": "Saho, Irob in Ethiopia – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/14641/ET",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Saho Archive – History, Language and Culture of the Saho, 2023",
@@ -92,12 +93,14 @@
       {
         "title": "Saho Language (SSY) – Ethnologue, SIL International, 2025",
         "url": "https://www.ethnologue.com/language/ssy/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Cushitic Language Groups – Ethiopia Country Studies, US Library of Congress",
         "url": "https://countrystudies.us/ethiopia/50.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       }
     ]
   }

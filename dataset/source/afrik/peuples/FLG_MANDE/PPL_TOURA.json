@@ -23,7 +23,7 @@
         "Yaramassa",
         "Yiriguele"
       ],
-      "originOfExonyms": "Toura est le terme francophone adopte par l'administration coloniale et reste en usage officiel en Cote d'Ivoire. Tura est la forme anglophone. Wen (ou Wenmebo) est l'endonyme prefere par le peuple lui-meme. Les autres variantes correspondent a des noms de sous-groupes ou de dialectes regionaux. La langue toura appartient au groupe Dan-Toura (Glottolog : dant1235).",
+      "originOfExonyms": "L'administration coloniale a adopté la forme française Toura, qui reste officielle en Côte d'Ivoire. En anglais, on écrit Tura. Le peuple préfère se nommer Wen ou Wenmebo. Les autres formes correspondent à des noms de groupes ou de parlers régionaux. La langue toura appartient au groupe Dan-Toura, répertorié par Glottolog sous le code dant1235.",
       "whyProblematic": "Les Toura sont parfois confondus avec les Mahou (Mahouka), leurs voisins proches avec qui ils partagent de nombreuses pratiques culturelles et des masques similaires. Wikipedia (FR) note explicitement ce lien : 'les Toura ont un lien avec les Mahous : ces deux ethnies ont presque les memes fetes villageoises, coutumes et masques'. La classification de la langue toura oscille entre le sous-groupe Dan-Toura (Mande du Sud) et un positionnement autonome.",
       "contemporaryUsage": "Toura est le terme officiel utilise par l'Etat ivoirien, les medias et la recherche academique. Wen/Wenmebo reste en usage dans la communaute et dans les etudes linguistiques. La langue Tura (ou Toura) est identifiee sous le code ISO 639-3 neb dans certaines classifications.",
       "linguisticFamily": "FLG_MANDE",
@@ -93,22 +93,26 @@
       {
         "title": "Glottolog – Dan-Toura (dant1235), 2024",
         "url": "https://glottolog.org/resource/languoid/id/dant1235",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Omniglot – Dan language and alphabet, 2024",
         "url": "https://www.omniglot.com/writing/dan.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Landinfo – Report Cote d'Ivoire: Ethnicity, Ivoirite and Conflict, 2006",
         "url": "https://www.landinfo.no/asset/514/1/514_1.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "RTI Officiel – 2mn pour comprendre les Toura, 2021",
         "url": "https://www.facebook.com/RTIOfficiel/videos/2mn-pour-comprendre-les-toura/452107626511263/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       }
     ]
   }

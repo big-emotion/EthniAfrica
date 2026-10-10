@@ -3,6 +3,154 @@
   "nameFr": "Tuu",
   "nameEn": "Tuu (Taa-ǃKwi)",
   "classificationStatus": "reconstructive",
+  "nameHistory": {
+    "summary": "Le nom tuu désigne une famille de langues à clics du Botswana et de Namibie, comme le taa, dont beaucoup ont disparu. C'est un nom de linguiste, tiré d'un mot de ces langues qui veut dire « les gens » ; on a aussi dit khoïsan du Sud. Les sources que nous avons lues s'accordent sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Tuu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste Tom Güldemann, d'après un mot de ces langues",
+        "shortLine": "Un nom de linguiste de 2005, tiré d'un mot de ces langues qui veut dire « les gens ».",
+        "periodLabel": "Depuis 2005",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom tuu reprend un mot ancien, tuu, « les gens », dont on trouve une trace dans toutes les langues de la famille assez bien connues, selon Tom Güldemann. Dorothea Bleek l'avait déjà noté sous la forme tu, traduit par « homme » ou « qui ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3, 4 et 7-8",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "statement": "Le nom tuu est proposé par le linguiste Tom Güldemann pour remplacer khoïsan du Sud. Selon lui, ce nom géographique laisse croire à une parenté de toutes les langues dites khoïsan, qui n'est pas démontrée. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Tom Güldemann",
+                "role": "a proposé le nom dans une étude publiée à Leipzig en 2005"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4 et p. 8",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "2000"
+            },
+            "statement": "On parle alors de ǃui-taa pour désigner cette famille, d'après le mot « personne » dans ses deux grands groupes, chez Tom Güldemann et Rainer Voßen, selon Tom Güldemann.",
+            "formAsWritten": "!Ui-Taa",
+            "before": true,
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Khoïsan du Sud",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des savants européens et américains",
+        "shortLine": "L'ancien nom géographique de la famille, abandonné par une partie des linguistes.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1930,
+              "to": 1963,
+              "label": "1930-1963"
+            },
+            "statement": "Le nom khoïsan du Sud désigne ces langues chez Isaac Schapera en 1930 et chez Joseph Greenberg en 1963, selon Tom Güldemann. Greenberg y voit le groupe le plus divers des langues khoïsan d'Afrique australe.",
+            "formAsWritten": "Southern Khoisan",
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 336"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "1927"
+            },
+            "statement": "Le nom de Bushmen du Sud est celui que donne à ces langues la linguiste Dorothea Bleek à partir de 1927, selon Tom Güldemann.",
+            "formAsWritten": "Southern Bushman",
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues à clics du Botswana et de Namibie, comme le taa. Tuu, nom proposé vers 2005 par Tom Güldemann, vient d'un mot qui veut dire « personne » dans les deux branches.",
@@ -11,7 +159,7 @@
     "decolonialHeader": {
       "whyProblematic": " - « Southern Khoisan » est une construction coloniale approximative qui ne reflète pas la généalogie linguistique réelle. Les études linguistiques récentes (Güldemann 2005-2010, Honken 2013) rejettent l'idée que toutes les langues « à clic » forment une famille unique. Elles préfèrent parler de contact (sprachbund) plutôt que de parenté démontrée. - Les peuples Tuu ont subi une forte marginalisation, des massacres et des déplacements forcés pendant la colonisation européenne (XIXe-XXe siècle), particulièrement en Afrique du Sud où la langue ǀXam a disparu. - Les termes « Bushmen » et « Hottentot » étaient racistes et stigmatisants, associés à une idéologie coloniale de déshumanisation (cf. travaux de Skotnes 1996, Penn 2005 sur la représentation coloniale des peuples San). - Les études génétiques modernes (Pickrell et al. 2012, Schlebusch et al. 2017) montrent que les populations qui parlent les langues associées à « Khoisan » sont parmi les plus anciennes lignées humaines, divergentes des autres groupes africains depuis 100 000-260 000 ans, mais aussi fortement affectées par des flux de gènes récents (avec des langues bantoues, par exemple depuis ~1 200 ans). → Afrik utilise **Tuu** comme terme strictement linguistique moderne basé sur la reconstruction scientifique.",
       "selfAppellation": null,
-      "contemporaryUsage": "Les communautés parlant Taa/ǃXóõ au Botswana et en Namibie utilisent leur propre endonyme *Taa* ou *ǃXóõ* selon les variétés dialectales. Les chercheurs contemporains (Güldemann, Traill, Sands) utilisent le terme « Tuu » comme désignation strictement linguistique.",
+      "contemporaryUsage": "Au Botswana et en Namibie, les personnes parlant les différentes variétés de Taa/ǃXóõ utilisent le nom Taa ou ǃXóõ. Les chercheurs Güldemann, Traill et Sands emploient Tuu pour classer ces langues.",
       "historicalAppellations": [
         "Southern Khoisan",
         "ǃUi-Taa",
@@ -73,12 +221,14 @@
       {
         "title": "Güldemann, Tom (2006) – *Structural Isoglosses between Khoekhoe and Tuu: The Cape as a Linguistic Area*. In Y. Matras, A. McMahon & N. Vincent (eds.), Linguistic Areas, London: Palgrave Macmillan UK, pp. 99–134. DOI: 10.1057/9780230287617_5",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Güldemann, Tom (2019) – *Toward a subclassification of the ǃUi branch of Tuu*. Paper presented at Afrikalinguistisches Forschungskolloquium at Humboldt Universität zu Berlin, 8 January 2019",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Güldemann, Tom & Loughnane, Robynne (2012) – *The problem of linguistic inheritance and contact in the Kalahari Basin: the case of body parts*. Language Dynamics and Change, 2(1), 1–43",
@@ -88,27 +238,32 @@
       {
         "title": "Traill, Anthony (1994) – *A !Xóõ Dictionary*. Quellen zur Khoisan-Forschung, 9. Köln: Rüdiger Köppe Verlag",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Traill, Anthony (2007) – *Taa (ǃXóõ) phonology*. In Rainer Vossen (ed.), The Khoesan Languages, London: Routledge, pp. 268–291",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Greenberg, Joseph H. (1963) – *The Languages of Africa*. Bloomington: Indiana University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Pickrell, Joseph K. et al. (2012) – *The Genetic Prehistory of Southern Africa*. Nature Communications, 3, article 1143. DOI: 10.1038/ncomms2140",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Schlebusch, Carina M. et al. (2017) – *Southern African ancient genomes estimate modern human divergence to 350,000 to 260,000 years ago*. Science, 358(6363), 652–655. DOI: 10.1126/science.aao6266",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Bleek, Wilhelm H. I. & Lloyd, Lucy C. (1911) – *Specimens of Bushman Folklore*. London: George Allen & Company",
@@ -123,22 +278,26 @@
       {
         "title": "Westphal, Ernst O. J. (1971) – *The Click Languages of Southern and Eastern Africa*. In T. A. Sebeok (ed.), Current Trends in Linguistics, Vol. 7: Linguistics in Sub-Saharan Africa, The Hague: Mouton, pp. 367–420",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Story, Robert (1999) – *Kʼuǀha꞉si Manuscript*. In Anthony Traill (ed.), Khoisan Forum Working Paper, 13. Köln: University of Köln, pp. 18–34",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Skotnes, Pippa (1996) – *Miscast: Negotiating the Presence of the Bushmen*. Cape Town: University of Cape Town Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Penn, Nigel (2005) – *The Forgotten Frontier: Colonist and Khoisan on the Cape's Northern Frontier in the 18th Century*. Athens: Ohio University Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Deacon, Hilary J. & Deacon, Janette (1999) – *Human Beginnings in South Africa: Uncovering the Secrets of the Stone Age*. Cape Town: David Philip Publishers",
@@ -153,22 +312,26 @@
       {
         "title": "SIL Ethnologue (2025) – *Taa Language*. Ethnologue: Languages of the World. URL",
         "url": "https://www.ethnologue.com/language/nmn",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog (2024) – *Tuu languages*. Glottolog 5.0. URL",
         "url": "https://glottolog.org/resource/languoid/id/tuuu1241",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog 5.0 (2024) – Classification du nœud \"Tuu\" [tuuu1241] : deux branches directes, \"!Ui\" [kwii1241] et \"Hua\" [huaa1247]",
         "url": "https://glottolog.org/resource/languoid/id/tuuu1241",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL Ethnologue (19e éd., 2016) – Taa/ǃXóõ [nmn] : ≈2 500 locuteurs (2011), pour l'essentiel au Botswana (vallée de la Nossob, districts de Ghanzi/Kgalagadi), quelques centaines en Namibie orientale. (chiffre vérifié via Wikipédia EN « Taa language », consulté en 2026 ; accès direct à ethnologue.com bloqué depuis cet environnement)",
         "url": "https://www.ethnologue.com/language/nmn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

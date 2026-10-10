@@ -70,17 +70,20 @@
       {
         "title": "Isanzu in Tanzania – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/12260",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Isanzu Language – Ethnologue",
         "url": "https://www.ethnologue.com/language/isn/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Isanzu – Glottolog 5.3",
         "url": "https://glottolog.org/resource/languoid/id/isan1243",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Isanzu Community Perspectives on Ancestral Human Remains – Open Restitution Africa, 2025",
@@ -90,7 +93,8 @@
       {
         "title": "Bantu, Central-Tanzania People Cluster – Joshua Project, 2025",
         "url": "https://www.joshuaproject.net/clusters/341",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

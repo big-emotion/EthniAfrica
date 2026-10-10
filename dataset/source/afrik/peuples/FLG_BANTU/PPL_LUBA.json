@@ -91,34 +91,40 @@
       {
         "title": "Encyclopaedia Britannica — Luba",
         "url": "https://www.britannica.com/topic/Luba-people",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project — Luba-Lulua in DRC",
         "url": "https://joshuaproject.net/people_groups/13134/CG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "SIL Ethnologue — Luba-Katanga (lub)",
         "url": "https://www.ethnologue.com/language/lub/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog 5.3 — Luba-Lulua (luba1249)",
         "url": "https://glottolog.org/resource/languoid/id/luba1249",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Donne Tshiluba, Ciluba, Luba-Kasai et Western Luba comme noms de la langue de code lua, et son statut de langue d'identité nationale en RDC."
       },
       {
         "title": "Glottolog 5.3 — Luba-Katanga (luba1250)",
         "url": "https://glottolog.org/resource/languoid/id/luba1250",
         "tier": "official",
+        "source_kind": "linguistic_reference",
         "notes": "Donne Kiluba et Luba-Shaba comme noms de la langue de code lub, et son statut de langue menacée."
       },
       {
         "title": "Omniglot — Luba-Katanga language",
         "url": "https://www.omniglot.com/writing/lubakatanga.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Mary Nooter Roberts & Allen F. Roberts — Memory : Luba Art and the Making of History. Museum for African Art, New York, 1996",
@@ -129,7 +135,151 @@
         "title": "UNESCO, Histoire générale de l'Afrique, vol. V : L'Afrique du XVIe au XVIIIe siècle (dir. B. A. Ogot), 1999 — chap. 20, « Le système politique luba et lunda : émergence et expansion » (Ndaywel è Nziem), p. 643-664",
         "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
         "tier": "official",
+        "source_kind": "intergovernmental",
         "notes": "Luba et Lunda comme réseaux politico-culturels : p. 643. Limite de 1700 pour la chronologie orale et insignes du XIIIe siècle : p. 644. Kongolo et royaume d'assez petite taille jusqu'à la fin du XVIIe siècle : p. 647."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Luba désigne un peuple du centre-sud de la République démocratique du Congo, qui se nomme lui-même Baluba, et Muluba pour une seule personne. Nous n'avons pas trouvé de source qui explique l'origine de ce nom ; ce que nous savons de son histoire est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Luba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un ensemble de peuples et d'un ancien royaume du Katanga ; son origine n'est pas connue.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le nom Luba désigne moins un peuple aux limites nettes qu'un système politique et culturel, né au Katanga, dans lequel se sont formés plusieurs peuples, selon Ndaywel è Nziem. Nous n'avons pas trouvé d'étude sur l'origine du mot lui-même.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 643",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 643 : l'histoire luba « couvre aussi bien les réalités concernant les Luba actuels du Shaba (les Luba shankadi) et du Kasaï (les Luba lubilanji) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Luba s'applique aujourd'hui aux Luba du Katanga, appelés Luba Shankadi, et aux Luba du Kasaï, appelés Luba Lubilanji. L'histoire luba concerne aussi les Songye, les Kanyok, les Kete, les Sala Mpasu, les Bindji et les Lulua, selon Ndaywel è Nziem.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 643",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 643 : l'histoire luba « couvre aussi bien les réalités concernant les Luba actuels du Shaba (les Luba shankadi) et du Kasaï (les Luba lubilanji) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1200,
+              "to": 1299,
+              "label": "Au plus tard au XIIIe siècle"
+            },
+            "era": "polity",
+            "before": true,
+            "statement": "Les ancêtres des Luba vivent alors dans la dépression de l'Upemba. À Sanga et à Katota, les fouilles montrent des insignes de pouvoir au plus tard au XIIIe siècle. Ces deux chefferies ne sont pas encore le royaume luba, dont les traditions orales ne permettent pas de remonter sûrement avant 1700, selon Ndaywel è Nziem.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 644",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 644 : « on ne peut guère remonter, sans risque de se tromper, au-delà de 1700 dans la chronologie fondée sur la tradition orale ». Cette page écrit Katoka ; la page 646 écrit Katota."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Baluba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : Baluba au pluriel, Muluba pour une seule personne.",
+        "periodLabel": "Écrit dès 1869",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Baluba est le pluriel de Luba, formé avec le préfixe ba- ; une seule personne se dit Muluba, et la langue du Katanga s'appelle kiluba, selon l'article de Wikipédia.",
+            "sources": [
+              {
+                "title": "Luba people — Wikipedia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Luba_people",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Encadré des noms, consulté le 9 octobre 2026 : Mulubà pour une personne, Balubà pour le peuple, kiluba pour la langue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1869,
+              "to": 1874,
+              "label": "Note du 18 mai 1869, publiée en 1874"
+            },
+            "era": "polity",
+            "birth": true,
+            "formAsWritten": "Baluba",
+            "statement": "Le nom Baluba figure dans le journal de David Livingstone, à Ujiji, le 18 mai 1869, au bout d'une route qui mène « on to Baluba ». La note ne dit pas s'il s'agit d'un peuple ou d'un pays. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "actors": [
+              {
+                "name": "David Livingstone",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Last Journals of David Livingstone, in Central Africa, from 1865 to his Death, vol. II",
+                "author": "David Livingstone, édité par Horace Waller",
+                "year": 1874,
+                "url": "https://archive.org/details/lastjournalsofda02livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9",
+                "notes": "Londres, John Murray, 1874. Lu dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Note du 18 mai 1869, écrite à Ujiji : « Masika-Kitobwé on to Baluba »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

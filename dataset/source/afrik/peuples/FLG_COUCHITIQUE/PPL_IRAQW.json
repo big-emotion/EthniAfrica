@@ -14,8 +14,8 @@
       "mainName": "Iraqw",
       "selfAppellation": "Iraqw",
       "exonyms": ["Mbulu", "Iraku", "Wambulu"],
-      "originOfExonyms": "Mbulu est l'exonyme swahili et bantou le plus courant, emprunté au nom du plus grand établissement iraqw (la ville de Mbulu). Wambulu est la forme bantoue plurielle de Mbulu. Iraku est une variante orthographique employée dans certaines publications coloniales et administratives.",
-      "whyProblematic": "L'exonyme Mbulu peut créer une confusion avec les Gorowa, qui adoptent de plus en plus cette identité dans les zones urbaines ; le terme subsume les deux groupes (Iraqw et Gorowa) dans une identité Mbulu commune chez les jeunes.",
+      "originOfExonyms": "Les voisins de langue swahilie et d'autres langues bantoues emploient surtout Mbulu. Ce nom viendrait de la plus grande ville iraqw, Mbulu. Wambulu en est une forme plurielle dans ces langues. Iraku est une autre manière d'écrire le nom, présente dans certaines publications coloniales et administratives.",
+      "whyProblematic": "Le nom Mbulu peut prêter à confusion avec les Gorowa. En ville, de jeunes Gorowa et Iraqw se reconnaissent de plus en plus dans ce même nom.",
       "contemporaryUsage": "Iraqw est le terme académique standard et l'auto-désignation officielle. Mbulu reste très courant dans les contextes administratifs et populaires tanzaniens. La région de Manyara et le district de Karatu (région d'Arusha) sont les centres historiques et contemporains du peuple iraqw."
     },
     "ethnicities": ["Iraqw"],
@@ -53,7 +53,7 @@
     "culture": {
       "majorRites": "Les rites agraires (cycles de plantation et de récolte) sont centraux dans la vie iraqw, liés à une agriculture intensive d'auto-subsistance. Les rites de la religion populaire Mama Issara sont conduits par des praticiens rituels spécialisés. Les rites de passage sont organisés à l'échelle clanique.",
       "symbols": "Le lac Manyara porte dans la tradition iraqw le nom de Tlawta Moyar tsar (Deuxième lac Moya), évoquant un foyer d'origine nordique lointain. Les canaux d'irrigation et les terrasses agricoles sont des marqueurs identitaires forts, rappelant l'héritage du complexe d'Engaruka. Le système agricole auto-suffisant des hautes terres de Mbulu est une fierté culturelle documentée.",
-      "artsAndMusic": "Tradition orale riche transmettant les légendes d'origine, les récits de migration et les généalogies claniques. La recherche académique (Mous 1993) a constitué un corpus linguistique important, complété par le travail de documentation de Harvey (2015-2018) sur le gorwaa, langue soeur de l'iraqw.",
+      "artsAndMusic": "Les récits transmis oralement racontent les origines, les migrations et l'histoire des ancêtres des clans. Mous (1993) a réuni de nombreux exemples de la langue iraqw. Harvey (2015-2018) a aussi recueilli des textes et des enregistrements en gorwaa, une langue proche de l'iraqw.",
       "spiritualities": "Religion populaire iraqw (Iraqw'ar Da/aw), fondée sur le culte de la nature et des esprits ancestraux. Saigilo (Mama Issara) est le prophète fondateur de la religion populaire, vénéré dans les hautes terres de Mbulu. Les pratiques religieuses incluent des rites saisonniers liés aux cycles agricoles et des invocations aux esprits protecteurs de l'eau et des forêts. Le christianisme est présent mais coexiste avec la religion traditionnelle."
     },
     "historicalRole": {
@@ -78,17 +78,20 @@
       {
         "title": "Iraqw Language (IRK) – Ethnologue",
         "url": "https://www.ethnologue.com/language/irk/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Iraqw – Glottolog iraq1241",
         "url": "https://glottolog.org/resource/languoid/id/iraq1241",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Harvey A., Gorwaa (Tanzania) – Language Documentation and Description Journal",
         "url": "https://www.lddjournal.org/article/1200/galley/2445/download/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Mous M., A Grammar of Iraqw, 1993 – référence académique standard sur la langue iraqw",
@@ -98,7 +101,8 @@
       {
         "title": "Appendix ISO 639-3 codes Africa – Wiktionary",
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

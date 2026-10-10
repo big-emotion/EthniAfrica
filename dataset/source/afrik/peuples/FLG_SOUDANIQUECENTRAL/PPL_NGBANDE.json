@@ -96,27 +96,32 @@
       {
         "title": "Britannica — Ngbandi",
         "url": "https://www.britannica.com/topic/Ngbandi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Qiraat Africa — The Ngbandi People of Central Africa",
         "url": "https://qiraatafrican.com/en/15310/the-ngbandi-people-of-central-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Minority Rights Group International — Ngbandi in the Democratic Republic of the Congo",
         "url": "https://minorityrights.org/communities/ngbandi/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "US Department of Justice (EOIR) — Democratic Republic of the Congo: Ngbandi",
         "url": "https://www.justice.gov/eoir/page/file/1026971/dl",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "MAR (Minorities at Risk) — Chronology and Assessment for Ngbandi in the DRC",
         "url": "http://www.mar.umd.edu/assessment.asp?groupId=49008",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Nelson, Quentin D. (1952). 'Linguistic Problems in Ngbandi.' SIL International",

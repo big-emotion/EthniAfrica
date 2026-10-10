@@ -4,8 +4,362 @@
   "nameEn": "Algeria",
   "nameOfficial": "République algérienne démocratique et populaire (Al-Jumhūriyyah al-Jazā'iriyyah ad-Dīmuqrāṭiyyah ash-Sha'biyyah)",
   "summary": "L'Algérie tire son nom d'« Al-Djazair », « les îles », donné par les Ottomans aux îlots de la baie d'Alger. Terre des royaumes numides de Massinissa et de Jugurtha, elle fut régence ottomane puis, de 1830 à 1962, colonie et département français. Kabyles, Chaouis, Mozabites et Touaregs y maintiennent les langues amazighes aux côtés de l'arabe.",
-  "etymology": "Le nom \"Algérie\" vient de \"Al-Djazair\" (الجزائر), qui signifie \"les îles\" en arabe, en référence aux îlots situés face à la baie d'Alger. Le nom a été donné par les Ottomans au XVIe siècle. Le terme français \"Algérie\" a été officialisé lors de la colonisation française (1830-1962).",
+  "etymology": "Le nom \"Algérie\" viendrait de \"Al-Djazair\" (الجزائر), qui veut dire \"les îles\" en arabe, en référence aux îlots situés face à la baie d'Alger. Le nom a été donné par les Ottomans au XVIe siècle. Le terme français \"Algérie\" a été officialisé lors de la colonisation française (1830-1962).",
   "nameOriginActor": "Les Ottomans ont nommé la région \"Al-Djazair\" au XVIe siècle. Le nom français \"Algérie\" a été officialisé par l'administration coloniale française en 1839.",
+  "nameHistory": {
+    "summary": "Le nom Algérie désigne un pays d'Afrique du Nord, la République algérienne démocratique et populaire, qui se nomme elle-même al-Jazāʾir en arabe et Lezayer en tamazight. Le pays a porté d'autres noms : Régence d'Alger sous les Ottomans, puis Possessions françaises dans le nord de l'Afrique au début de la conquête française. L'origine du nom arabe n'est expliquée que par une seule hypothèse dans les sources que nous avons lues ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Algérie",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom français du pays, formé sur celui d'Alger, imposé par l'administration coloniale en 1839.",
+        "periodLabel": "Écrit dès 1839 ; nom de l'État depuis 1962",
+        "accounts": [
+          {
+            "period": {
+              "from": 1962,
+              "to": null,
+              "label": "Depuis le 3 juillet 1962"
+            },
+            "era": "modern",
+            "statement": "Le nom Algérie reste celui du pays à l'indépendance, que l'Histoire générale de l'Afrique date du 3 juillet 1962. L'article premier de la Constitution de 1963 écrit : « L'Algérie est une République démocratique et populaire ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Tableau 5.1 « Chronologie de l'indépendance africaine ». Ligne « Algérie 3/VII/1962 France »."
+              },
+              {
+                "title": "Algérie, Constitution du 10 septembre 1963",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/dz1963.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Consulté le 10 octobre 2026. Article premier : « L'Algérie est une République démocratique et populaire. » Le préambule nomme l'État « la République algérienne démocratique et populaire »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Algérie désigne aujourd'hui l'État d'Afrique du Nord dont la capitale est Alger. Il viendrait du nom de cette ville, al-Jazāʾir en arabe, que les Algériens donnent aussi à leur pays, selon le Permanent Committee on Geographical Names. Le sens de ce nom arabe est présenté avec lui.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Algeria",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/69b1739195b7465160349650/Algeria_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1-2",
+                "notes": "Fiche officielle britannique de toponymie, édition 2026. « Algeria's name derives from the name of its capital city, Algiers, which in turn is derived from the Arabic, Al Jazāʾir, meaning ‘the islands’. Both Algeria and Algiers are called Al Jazāʾir in Arabic. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1839,
+              "to": 1839,
+              "label": "14 octobre 1839"
+            },
+            "era": "colonial",
+            "statement": "Le nom Algérie devient le nom officiel du territoire conquis par la France quand le ministre de la Guerre, le général Schneider, demande au gouverneur général de le substituer à « Possessions françaises dans le nord de l'Afrique » et « Ancienne régence d'Alger », selon l'instruction que cite Bernard Lugan. Le ministre écrit que ce nom plus court a déjà « semblé dorénavant prévaloir ». C'est la plus ancienne trace de ce nom que le projet connaît ; le pays et ses habitants existaient bien avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Antoine Virgile Schneider",
+                "role": "ministre français de la Guerre, auteur de l'instruction"
+              },
+              {
+                "name": "Sylvain-Charles Valée",
+                "role": "gouverneur général, destinataire de l'instruction"
+              }
+            ],
+            "sources": [
+              {
+                "title": "En 1839, le général Schneider donna son nom à l'Algérie",
+                "author": "Bernard Lugan, Le360",
+                "year": 2024,
+                "url": "https://fr.le360.ma/politique/en-1839-le-general-schneider-donna-son-nom-a-lalgerie_AQDI45LEBVGU3PU73LOKK7VFRY/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse marocain du 30 avril 2024, consulté le 10 octobre 2026. Il cite l'instruction du 14 octobre 1839 du général Schneider, ministre de la Guerre, au maréchal Valée : le territoire « a été désigné soit sous le nom de Possessions françaises dans le nord de l'Afrique, soit sous celui d'Ancienne régence d'Alger, soit enfin sous celui d'Algérie » ; le ministre invite « à substituer le mot Algérie aux dénominations précédentes ». Nous n'avons pas vu l'original."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "al-Jazāʾir",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Le nom arabe d'Alger et du pays, lu comme « les îles » ; écrit dès le XIe siècle.",
+        "periodLabel": "Écrit dès le XIe siècle ; nom de l'État en arabe",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom al-Jazāʾir est le nom officiel du pays en arabe, comme celui de sa capitale ; l'État s'appelle al-Jumhūriyyah al-Jazāʾiriyyah ad-Dīmuqrāṭiyyah ash-Shaʿbiyyah, selon la liste des noms de pays des Nations unies.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, liste préparée par Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 7",
+                "notes": "Entrée Algeria : nom court officiel en arabe Al Jazā’ir ; nom long Al Jumhūriyyah Al Jazā’iriyyah Ad Dīmuqrāṯiyyah Ash Sha‘biyyah ; noms français Algérie et République algérienne démocratique et populaire."
+              },
+              {
+                "title": "Toponymic Factfile: Algeria",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/69b1739195b7465160349650/Algeria_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1-2",
+                "notes": "Fiche officielle britannique de toponymie, édition 2026. Le pays et sa capitale s'appellent tous deux Al Jazā’ir en arabe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1067,
+              "to": 1068,
+              "label": "1067-1068"
+            },
+            "era": "polity",
+            "statement": "Le nom al-Jazāʾir apparaît par écrit chez le géographe andalou al-Bakrī, sous la forme Djezaïr Beni Mezghanna : une ville grande et ancienne, au port bien abrité, que le traducteur William Mac Guckin de Slane identifie à Alger. C'est la plus ancienne trace de ce nom que le projet connaît. La ville existait déjà avant ce texte : al-Bakrī y décrit des monuments anciens.",
+            "formAsWritten": "Djezaïr Beni Mezghanna",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Description de l'Afrique septentrionale, traduction de William Mac Guckin de Slane, édition revue et corrigée",
+                "author": "Abou-Obeïd el-Bekri (al-Bakrī)",
+                "year": 1913,
+                "url": "https://archive.org/details/fr103andalus05",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 136-137",
+                "notes": "Alger, Adolphe Jourdan, 1913, lu dans l'exemplaire numérisé. Section « Route d'Achir à la ville de Djezaïr Beni Mezghanna » : « Djezaïr Beni Mezghanna « les îles de la tribu de Mezghanna » (maintenant Alger) ». L'introduction indique qu'al-Bakrī mit la dernière main à son ouvrage en 1068."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom al-Jazāʾir voudrait dire « les îles », selon le Permanent Committee on Geographical Names. William Mac Guckin de Slane traduit déjà la forme complète du nom chez al-Bakrī par « les îles de la tribu de Mezghanna ».",
+            "hypothesisGroup": "origine du nom al-Jazāʾir",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Algeria",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/69b1739195b7465160349650/Algeria_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1-2",
+                "notes": "Fiche officielle britannique de toponymie, édition 2026. Al Jazāʾir, « meaning ‘the islands’ »."
+              },
+              {
+                "title": "Description de l'Afrique septentrionale, traduction de William Mac Guckin de Slane, édition revue et corrigée",
+                "author": "Abou-Obeïd el-Bekri (al-Bakrī)",
+                "year": 1913,
+                "url": "https://archive.org/details/fr103andalus05",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 136-137",
+                "notes": "Alger, Adolphe Jourdan, 1913, lu dans l'exemplaire numérisé. Traduction de Slane : « les îles de la tribu de Mezghanna »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lezayer",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays en tamazight, l'autre langue officielle.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lezayer est celui du pays en tamazight, l'une des deux langues officielles avec l'arabe ; on l'écrit ⵍⴻⵣⴰⵢⵔ en alphabet tifinagh et Lezzayer en caractères latins, selon le Permanent Committee on Geographical Names. Les sources que nous avons lues ne disent pas depuis quand il est en usage.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Algeria",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/69b1739195b7465160349650/Algeria_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1-2",
+                "notes": "Fiche officielle britannique de toponymie, édition 2026. Country name in official languages : « ⵍⴻⵣⴰⵢⵔ (Lezayer) = Tamazight (Tifinagh script & BGN/PCGN Romanization) ; Lezzayer = Tamazight Roman script »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Possessions françaises dans le nord de l'Afrique",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "periodLabel": "De 1834 à 1839",
+        "accounts": [
+          {
+            "period": {
+              "from": 1834,
+              "to": 1834,
+              "label": "22 juillet 1834"
+            },
+            "era": "colonial",
+            "statement": "Le nom Possessions françaises dans le nord de l'Afrique figure dans l'article premier de l'ordonnance du 22 juillet 1834, qui confie leur administration à un gouverneur général ; le texte précise entre parenthèses « ancienne régence d'Alger ». C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "possessions françaises dans le nord de l'Afrique",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Algérie coloniale : documents de 1830 à 1902",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/dz1830.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "ordonnance du 22 juillet 1834, article premier",
+                "notes": "Consulté le 10 octobre 2026. La page reproduit l'ordonnance du 22 juillet 1834, dont l'article premier confie « le commandement général et la haute administration des possessions françaises dans le nord de l'Afrique (ancienne régence d'Alger) » à un gouverneur général."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1839,
+              "to": 1839,
+              "label": "14 octobre 1839"
+            },
+            "era": "colonial",
+            "statement": "Le nom Possessions françaises dans le nord de l'Afrique est l'une des trois appellations que le ministre de la Guerre demande de remplacer par Algérie, selon l'instruction du 14 octobre 1839 que cite Bernard Lugan.",
+            "sources": [
+              {
+                "title": "En 1839, le général Schneider donna son nom à l'Algérie",
+                "author": "Bernard Lugan, Le360",
+                "year": 2024,
+                "url": "https://fr.le360.ma/politique/en-1839-le-general-schneider-donna-son-nom-a-lalgerie_AQDI45LEBVGU3PU73LOKK7VFRY/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse marocain du 30 avril 2024, consulté le 10 octobre 2026. Il cite l'instruction du 14 octobre 1839 du général Schneider, ministre de la Guerre, au maréchal Valée : le territoire « a été désigné soit sous le nom de Possessions françaises dans le nord de l'Afrique, soit sous celui d'Ancienne régence d'Alger, soit enfin sous celui d'Algérie » ; le ministre invite « à substituer le mot Algérie aux dénominations précédentes ». Nous n'avons pas vu l'original."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Régence d'Alger",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "periodLabel": "Du XVIe siècle à 1830",
+        "accounts": [
+          {
+            "period": {
+              "from": 1519,
+              "to": 1830,
+              "label": "Vers 1519 à 1830"
+            },
+            "era": "polity",
+            "statement": "Le nom Régence d'Alger désigne la province ottomane qui naît quand Khayruddīn, l'un des frères Barberousse, fait appel au sultan ottoman vers 1519 ; les Ottomans appelaient ces nouvelles provinces africaines les « odjaḳ de l'Ouest », selon l'historien M. H. Chérif. La Régence prend fin avec la prise d'Alger par la France, le 5 juillet 1830, selon la Digithèque MJP.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 9 : Algérie, Tunisie et Libye : les Ottomans et leurs héritiers",
+                "author": "M. H. Chérif",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 276-277 et 294",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot. Les Barberousse agissent « des toutes premières années du siècle à 1519 » ; vers cette date, Khayruddīn fait appel au sultan ottoman. « Les « odjaḳ de l'Ouest » — comme on appelait les nouvelles provinces africaines ». Section « La Régence d'Alger au XVIIIe siècle », p. 294."
+              },
+              {
+                "title": "Algérie : constitutions et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/dz.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Consulté le 10 octobre 2026. Chronologie : « 1519 - Barberousse chasse les Espagnols d'Alger et reconnaît la suzeraineté ottomane. La Régence d'Alger sous la domination turque » ; « 5 juillet 1830 - Prise d'Alger et début de la conquête française » ; « 5 juillet 1962 - Proclamation de l'indépendance de l'Algérie »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1834,
+              "to": 1839,
+              "label": "De 1834 à 1839"
+            },
+            "era": "colonial",
+            "statement": "Le nom Régence d'Alger survit après la conquête sous la forme « ancienne régence d'Alger » : l'ordonnance du 22 juillet 1834 l'emploie, et le ministre de la Guerre le compte encore en 1839 parmi les noms à remplacer par Algérie, selon Bernard Lugan.",
+            "sources": [
+              {
+                "title": "Algérie coloniale : documents de 1830 à 1902",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/dz1830.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "ordonnance du 22 juillet 1834, article premier",
+                "notes": "Consulté le 10 octobre 2026. La page reproduit l'ordonnance du 22 juillet 1834, dont l'article premier confie « le commandement général et la haute administration des possessions françaises dans le nord de l'Afrique (ancienne régence d'Alger) » à un gouverneur général."
+              },
+              {
+                "title": "En 1839, le général Schneider donna son nom à l'Algérie",
+                "author": "Bernard Lugan, Le360",
+                "year": 2024,
+                "url": "https://fr.le360.ma/politique/en-1839-le-general-schneider-donna-son-nom-a-lalgerie_AQDI45LEBVGU3PU73LOKK7VFRY/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse marocain du 30 avril 2024, consulté le 10 octobre 2026. Il cite l'instruction du 14 octobre 1839 du général Schneider, ministre de la Guerre, au maréchal Valée : le territoire « a été désigné soit sous le nom de Possessions françaises dans le nord de l'Afrique, soit sous celui d'Ancienne régence d'Alger, soit enfin sous celui d'Algérie » ; le ministre invite « à substituer le mot Algérie aux dénominations précédentes ». Nous n'avons pas vu l'original."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -146,7 +500,7 @@
         "name": "Kabyles",
         "selfAppellation": "Leqbayel / Iqbayliyen",
         "exonyms": [
-          "« Kabyle » (exonyme arabe devenu courant ; non péjoratif mais issu d'une classification extérieure)",
+          "« Kabyle » (nom arabe devenu courant, sans sens méprisant, mais donné de l'extérieur)",
           "« Berbère » (terme colonial",
           "considéré problématique ; auto-appellation correcte : Amazigh / Imazighen)"
         ],
@@ -154,25 +508,25 @@
         "mainRegion": "Kabylie (nord de l'Algérie, massif de l'Atlas tellien)",
         "languages": ["Kabyle (tamaziɣt taqbaylit)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Le terme \"Berbère\" est considéré comme problématique car il vient du grec \"barbaros\" (étranger) et a été utilisé par les colonisateurs. L'auto-appellation correcte est \"Amazigh\" (pluriel : Imazighen). Le terme \"Kabyle\" est un exonyme arabe mais est largement accepté."
+        "appellationRemarks": "Une explication rapproche Berbère du grec barbaros, « étranger ». Son usage par les colonisateurs contribue à rendre ce nom problématique. Les personnes concernées se nomment Amazigh, ou Imazighen au pluriel. Kabyle est un nom d'origine arabe largement accepté."
       },
       {
         "name": "Chaouis",
         "selfAppellation": "Ishawiyen / Icawiyen",
         "exonyms": [
-          "« Chaouïa » (exonyme arabe utilisé depuis le Moyen Âge ; non péjoratif mais extérieur)"
+          "« Chaouïa » (nom arabe utilisé depuis le Moyen Âge, donné de l'extérieur, sans sens méprisant)"
         ],
         "peopleId": "PPL_CHAOUI",
         "mainRegion": "Massif de l'Aurès (est de l'Algérie)",
         "languages": ["Chaoui (tachawit)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Le terme \"Chaoui\" est un exonyme arabe mais est largement accepté. L'auto-appellation est \"Ishawiyen\" ou \"Icawiyen\"."
+        "appellationRemarks": "Chaoui est un nom d'origine arabe largement accepté. Les personnes concernées se nomment Ishawiyen ou Icawiyen."
       },
       {
         "name": "Mozabites",
         "selfAppellation": "Imazighen du Mzab",
         "exonyms": [
-          "Mozabites (exonyme français)",
+          "Mozabites (nom français donné de l'extérieur)",
           "« Berbère » (terme colonial",
           "considéré problématique)"
         ],
@@ -185,7 +539,7 @@
       {
         "name": "Chenoua",
         "selfAppellation": "Ičenwa",
-        "exonyms": ["Chenoua (exonyme français)"],
+        "exonyms": ["Chenoua (nom français donné de l'extérieur)"],
         "peopleId": "PPL_CHENOUA",
         "mainRegion": "Mont Chenoua (région de Tipaza)",
         "languages": ["Chenoua (tacenwit)"],
@@ -196,7 +550,7 @@
         "name": "Touaregs",
         "selfAppellation": "Kel Tamasheq / Imuhagh",
         "exonyms": [
-          "Touaregs (exonyme français)",
+          "Touaregs (nom français donné de l'extérieur)",
           "« Berbère » (terme colonial",
           "considéré problématique)"
         ],
@@ -204,7 +558,7 @@
         "mainRegion": "Sahara algérien (Ahaggar, Tassili n'Ajjer)",
         "languages": ["Tamasheq (tamahaq)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Le terme \"Touareg\" est un exonyme français. L'auto-appellation est \"Kel Tamasheq\" (ceux qui parlent tamasheq) ou \"Imuhagh\". Le terme \"Berbère\" est considéré comme problématique."
+        "appellationRemarks": "Touareg est un nom français donné de l'extérieur. Les personnes concernées se nomment Kel Tamasheq, « ceux qui parlent tamasheq », ou Imuhagh. Le nom Berbère est considéré comme problématique."
       }
     ],
     "culture": {
@@ -256,22 +610,26 @@
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Algeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "Ethnologue – Languages of Algeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Minority Rights Group – Amazigh in Algeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "ngo"
       },
       {
         "title": "CNRS – Berbères",
@@ -286,37 +644,44 @@
       {
         "title": "Encyclopaedia of Islam – Algeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Joshua Project – Berber, Kabyle in Algeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Joshua Project – Berber, Shawiya in Algeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "missionary_database"
       },
       {
         "title": "UNPO – Kabylia",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "ngo"
       },
       {
         "title": "Recensements algériens",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Algérie",
         "url": "https://www.unfpa.org/data/world-population/DZ",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

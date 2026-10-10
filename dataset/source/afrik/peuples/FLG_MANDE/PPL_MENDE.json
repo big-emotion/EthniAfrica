@@ -8,7 +8,7 @@
       "mainName": "Mende",
       "selfAppellation": "Mende",
       "exonyms": ["Boumpe", "Hulo", "Kossa", "Kosso"],
-      "originOfExonyms": "Les termes Boumpe, Hulo, Kossa et Kosso sont des appellations donnees par des peuples voisins pour designer les Mende ou certains de leurs sous-groupes. Ces exonymes sont peu utilises aujourd'hui. Mende est a la fois l'endonyme et le terme universel reconnu.",
+      "originOfExonyms": "Des peuples voisins ont donné les noms Boumpe, Hulo, Kossa et Kosso aux Mende ou à certains de leurs groupes. Ces noms sont peu employés aujourd'hui. Mende est à la fois le nom que le peuple se donne et celui qui est largement reconnu à l'extérieur.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Mende est universellement utilise en Sierra Leone et au Liberia. C'est egalement le nom de la langue dans les classifications linguistiques internationales. Les Mende eux-memes l'utilisent comme terme d'identification premier.",
       "linguisticFamily": "FLG_MANDE",
@@ -100,22 +100,26 @@
       {
         "title": "Joshua Project — Mende people group all countries (2025)",
         "url": "https://joshuaproject.net/people_groups/16123",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "PeopleGroups.org — Mende of Sierra Leone (PG014291)",
         "url": "https://peoplegroups.org/people_groups/pg014291/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Qiraat Africa — Mende people of Sierra Leone",
         "url": "https://qiraatafrican.com/en/12327/mende-people-of-sierra-leone/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "SIL Ethnologue — Mende language (men)",
         "url": "https://www.ethnologue.com/language/men/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Translators without Borders — Language data for Sierra Leone",
@@ -130,7 +134,8 @@
       {
         "title": "SIL CEDS — ISO 639-3: Mende = men",
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }

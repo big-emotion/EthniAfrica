@@ -16,7 +16,7 @@
         "Tammari",
         "Ta(m)berma (nom officiel au Togo)"
       ],
-      "originOfExonyms": "Le terme Somba est un exonyme pejoratif introduit par les colonisateurs europeens et les Bariba voisins pour designer ce peuple. Tamberma est le nom officiel utilise au Togo depuis la periode coloniale. Otamari est une variante orthographique francaise.",
+      "originOfExonyms": "Les colonisateurs européens et les Bariba voisins ont introduit Somba comme un nom méprisant pour désigner ce peuple. Tamberma est le nom officiel employé au Togo depuis la période coloniale. Otamari est une manière française d'écrire le nom.",
       "whyProblematic": "Le terme Somba est aujourd'hui considere offensant car impose de l'exterieur et porteur de connotations depreciatives. Le nom correct est Batammariba pour les populations du Benin (Pays Betammaribe) et Tamberma pour celles du Togo (Pays Tamberma).",
       "contemporaryUsage": "Dans les contextes touristiques et patrimoniaux, le terme tata somba est reste en usage pour designer l'architecture fortifiee, classee au patrimoine mondial de l'UNESCO en 2004 (Koutammakou, Togo). Les membres du groupe se designent eux-memes comme Batammariba.",
       "linguisticFamily": "FLG_GUR",
@@ -88,12 +88,14 @@
       {
         "title": "Otammari in Benin – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/14985/BN",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Koutammakou, the Land of the Batammariba – UNESCO World Heritage, 2004",
         "url": "https://whc.unesco.org/en/list/1140",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Pays Betammaribe and Pays Tamberma – African Landers, 2024",
@@ -103,7 +105,8 @@
       {
         "title": "101 Last Tribes – Tammari people",
         "url": "https://www.101lasttribes.com/tribes/tammari.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Etude descriptive du ditammari – Theophile Nata, 1974",

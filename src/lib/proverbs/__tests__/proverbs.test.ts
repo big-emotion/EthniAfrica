@@ -9,6 +9,7 @@ import {
   proverbEntities,
   type Proverb,
 } from "@/lib/proverbs/proverbs";
+import { SOURCE_KINDS } from "@/types/sources";
 import { afrikCorpusIds } from "@/test/afrikCorpusIds";
 
 const proverb = (id: string, entities: Proverb["entities"] = []): Proverb => ({
@@ -22,6 +23,7 @@ const proverb = (id: string, entities: Proverb["entities"] = []): Proverb => ({
       title: `Recueil ${id}`,
       url: `https://example.org/${id}`,
       tier: "referenced",
+      source_kind: "academic",
     },
   ],
 });
@@ -256,5 +258,53 @@ describe("findProverb — the proverb a shared link names", () => {
     expect(findProverb("b", bank)?.id).toBe("b");
     expect(findProverb("gone", bank)).toBeNull();
     expect(findProverb(undefined, bank)).toBeNull();
+  });
+});
+
+describe("the bank's reader prose (doctrine §1.1)", () => {
+  // A note may say where a text comes from, never what tier it was given.
+  // @req REQ-092
+  it("never names a source tier in what the reader reads", () => {
+    const tierWord = /(?<!\p{L})(source non vérifiée|tier)(?!\p{L})/iu;
+    const offenders = PROVERBS.filter((proverb) =>
+      [proverb.origin.note, ...proverb.sources.map((source) => source.notes)]
+        .filter(Boolean)
+        .some((text) => tierWord.test(text))
+    ).map((proverb) => proverb.id);
+
+    expect(offenders).toEqual([]);
+  });
+});
+
+describe("the proverb bank — what each source is", () => {
+  // The card names a source's type beside its title. A source without one
+  // would print a bare title next to typed ones, and a misspelt kind would
+  // print « Type non précisé » for a source whose type is known.
+  // @req REQ-194
+  it("gives every source a type from the corpus vocabulary", () => {
+    const untyped = PROVERBS.flatMap((entry) =>
+      entry.sources
+        .filter((source) => !SOURCE_KINDS.includes(source.source_kind))
+        .map((source) => `${entry.id} → ${source.title}`)
+    );
+
+    expect(untyped).toEqual([]);
+  });
+
+  // Before `press` existed these outlets read « Type non précisé ». A press
+  // article is typed as one, so the reader sees what kind of text it is.
+  // @req REQ-194
+  it("types every press outlet's article as press", () => {
+    const pressHosts = ["npr.org", "opinionnigeria.com", "theparisreview.org"];
+    const mistyped = PROVERBS.flatMap((entry) =>
+      (entry.sources ?? [])
+        .filter((source) =>
+          pressHosts.some((host) => source.url?.includes(`${host}/`))
+        )
+        .filter((source) => source.source_kind !== "press")
+        .map((source) => `${entry.id} → ${source.title}`)
+    );
+
+    expect(mistyped).toEqual([]);
   });
 });

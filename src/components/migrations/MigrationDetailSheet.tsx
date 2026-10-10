@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/sheet";
 import { AutonymExonymHeading } from "@/components/ui/AutonymExonymHeading";
 import { ClassificationBadge } from "@/components/ui/classification-badge";
-import { ConfidenceChip } from "@/components/source-transparency/ConfidenceChip";
+import { SourceReviewChip } from "@/components/source-transparency/SourceReviewChip";
 import { LazySourceChainSheet } from "@/components/source-transparency/SourceChainSheet.lazy";
 import type { Source as SourceChainSource } from "@/components/source-transparency/SourceChainSheet";
 import { toSourceTier } from "@/types/sources";
@@ -140,6 +140,7 @@ export function MigrationDetailSheet({
       title: source.title,
       url: source.url ?? undefined,
       tier: toSourceTier(source.tier),
+      ...(source.sourceKind ? { sourceKind: source.sourceKind } : {}),
     })
   );
 
@@ -173,9 +174,8 @@ export function MigrationDetailSheet({
           <ClassificationBadge status={event.classificationStatus} />
         </div>
 
-        <ConfidenceChip
+        <SourceReviewChip
           id={`${event.id}-confidence`}
-          confidenceScore={event.confidence?.score ?? null}
           sourceCount={event.confidence?.sourceCount ?? null}
           lastHumanAuditAt={event.confidence?.lastHumanAuditAt ?? null}
           variant="hero"
@@ -219,7 +219,6 @@ export function MigrationDetailSheet({
           anchorId={`migration-${event.id}`}
           assertion={{
             statement: event.nameMain,
-            confidenceScore: (event.confidence?.score ?? 0) / 100,
             sourceCount: event.sources.length,
             lastHumanAuditAt: event.confidence?.lastHumanAuditAt ?? null,
           }}

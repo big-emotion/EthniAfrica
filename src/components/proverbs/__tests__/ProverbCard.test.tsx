@@ -26,6 +26,7 @@ const attested: Proverb = {
       title: "Yoruba Proverbs",
       url: "https://example.org/yoruba-proverbs",
       tier: "referenced",
+      source_kind: "academic",
       notes: "Recueil publié ; donne le texte original.",
     },
   ],
@@ -55,6 +56,7 @@ const unestablished: Proverb = {
       title: "Quote Investigator",
       url: "https://example.org/qi",
       tier: "referenced",
+      source_kind: "discovery",
     },
   ],
 };
@@ -100,21 +102,39 @@ describe("ProverbCard", () => {
     ).toHaveAttribute("href", getFamilyRoute("fr", "FLG_NIGERCONGO"));
   });
 
-  // @req REQ-113
-  it("states the origin status and prints every source with its tier", () => {
-    render(<ProverbCard language="fr" proverb={attested} />);
+  // A source is named, never ranked (doctrine §1.1).
+  // @req REQ-113 REQ-092
+  it("states the origin status and prints every source without a tier", () => {
+    const { container } = render(
+      <ProverbCard language="fr" proverb={attested} />
+    );
 
     expect(screen.getByText("attestée par une source")).toBeInTheDocument();
     expect(
       screen.getByRole("link", { name: "Yoruba Proverbs" })
     ).toHaveAttribute("href", "https://example.org/yoruba-proverbs");
-    expect(screen.getByText("Source référencée")).toBeInTheDocument();
+    expect(container).not.toHaveTextContent(
+      /Source (officielle|référencée|non vérifiée)/
+    );
     expect(
       screen.getByText("Recueil publié ; donne le texte original.")
     ).toBeInTheDocument();
   });
 
   // No chip, and the reason there is none, rather than a blank row.
+  // @req REQ-194
+  it("names each source's type, and no tier word comes back with it", () => {
+    render(<ProverbCard language="fr" proverb={attested} />);
+
+    const item = screen
+      .getByRole("link", { name: "Yoruba Proverbs" })
+      .closest("li");
+    expect(item).toHaveTextContent("Publication académique");
+    expect(item).not.toHaveTextContent(
+      /Officielle|Référencée|Non vérifiée|Source officielle/
+    );
+  });
+
   // @req REQ-113
   it("gives an unestablished proverb no chip and says why", () => {
     render(<ProverbCard language="fr" proverb={unestablished} />);

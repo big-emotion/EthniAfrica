@@ -3,7 +3,7 @@ import { DossierChapterBlock } from "@/components/dossiers/DossierChapterBlock";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { ChapterHeading } from "@/components/pages/ChapterHeading";
 import type { Dossier } from "@/lib/afrik/parsers/dossierTypes";
-import { SOURCE_TIER_LABELS } from "@/lib/glossaire/vocabularies";
+import { sourceKindLabel } from "@/lib/glossaire/vocabularies";
 import type { Language } from "@/types/shared";
 
 /** Shared reader: sourced chapters, optional figures and comparative readings. */
@@ -97,7 +97,7 @@ export function DossierPage({ dossier, language }: DossierPageProps) {
 
         <section aria-labelledby={`${dossier.slug}-sources`}>
           <ChapterHeading
-            heading={`${dossier.sources.length} sources, chacune à son niveau`}
+            heading={`${dossier.sources.length} sources`}
             id={`${dossier.slug}-sources`}
             stepLabel="Les sources"
           />
@@ -119,7 +119,9 @@ export function DossierPage({ dossier, language }: DossierPageProps) {
                 </p>
                 <p className="afh-dossier-source-notes">
                   {[
-                    SOURCE_TIER_LABELS[language][source.tier],
+                    source.source_kind
+                      ? sourceKindLabel(source.source_kind, language)
+                      : null,
                     source.publicationYear
                       ? String(source.publicationYear)
                       : null,

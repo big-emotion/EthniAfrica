@@ -11,7 +11,7 @@
         "Ibom (terme ancestral, du nom de leur ancêtre fondateur)",
         "Calabar (terme colonial européen regroupant Ibibio et Efik)"
       ],
-      "originOfExonyms": "Le terme Ibom vient du nom de l'ancêtre fondateur qui s'établit à l'actuel Arochukwu. Calabar est un terme colonial utilisé par les Européens pour désigner les peuples du delta du Cross River.",
+      "originOfExonyms": "Le terme Ibom viendrait du nom de l'ancêtre fondateur qui s'établit à l'actuel Arochukwu. Calabar est un terme colonial utilisé par les Européens pour désigner les peuples du delta du Cross River.",
       "whyProblematic": null,
       "contemporaryUsage": "Ibibio est le terme officiel utilisé par l'État d'Akwa Ibom, le gouvernement nigérian et la littérature académique. Ibom persiste dans le nom de l'État (Akwa Ibom) et comme terme d'appartenance identitaire.",
       "linguisticFamily": "FLG_BENOUECONGO",
@@ -92,7 +92,8 @@
       {
         "title": "SIL Ethnologue — Ibibio language (ibb)",
         "url": "https://www.ethnologue.com/language/ibb/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Study.com — Ibibio People : History, Culture and Language",
@@ -117,19 +118,81 @@
       {
         "title": "CIA World Factbook — Nigeria",
         "url": "https://www.cia.gov/the-world-factbook/countries/nigeria/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "government"
       },
       {
         "title": "Henry John Drewal, Mami Wata: Arts for Water Spirits in Africa and Its Diasporas",
         "url": "https://fowler.ucla.edu/exhibitions/mami-wata-arts-for-water-spirits-in-africa-and-its-diasporas/",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Monographie et exposition du Fowler Museum, UCLA, 2008, commissaire invité Henry John Drewal ; consultée le 10 septembre 2026."
       },
       {
         "title": "Alex van Stipriaan, Watramama/Mami Wata: Three Centuries of Creolization of a Water Spirit in West Africa, Suriname and Europe",
         "url": "https://brill.com/abstract/journals/mata/27/1/article-p321_321.xml",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Revue Matatu, volumes 27-28, 2003 ; travail universitaire indépendant de celui de Drewal, consulté le 10 septembre 2026."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ibibio désigne un peuple du sud-est du Nigeria, autour d'Uyo, qui se nomme lui-même Ibibio. On ne sait pas avec certitude d'où vient ce nom, ni quand il a été écrit pour la première fois ; ce que nous en savons est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Ibibio",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ibb",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de sa langue ; son origine n'est pas expliquée par nos sources.",
+        "periodLabel": "Écrit au XIXe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "Dictionnaire publié en 1972"
+            },
+            "era": "modern",
+            "statement": "Le nom Ibibio désigne aussi la langue parlée autour d'Uyo, que la linguiste Elaine Marlowe Kaufman décrit dans son dictionnaire. Elle la range avec l'efik dans un même ensemble de parlers, l'ibibio-efik, dont l'ibibio est le plus parlé. Nous n'avons pas trouvé de source qui explique l'origine du nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ibibio Dictionary. Final Report",
+                "author": "Elaine Marlowe Kaufman",
+                "year": 1972,
+                "url": "https://archive.org/details/ERIC_ED067960",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Introduction, p. i-ii",
+                "notes": "Stanford University, rapport pour l'Office of Education des États-Unis, juin 1972. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "Livre publié en 1890"
+            },
+            "statement": "Le nom Ibibio désigne en 1890, pour le missionnaire Hugh Goldie, un territoire qui s'étend de la rivière Cross jusqu'à Ibu, sur le Niger. Selon leur tradition, rapporte-t-il, les Efik sont sortis de ce pays avant de s'installer à Calabar, et c'est surtout le pays ibibio qui produit l'huile de palme vendue par Calabar.",
+            "formAsWritten": "Ibibio",
+            "sources": [
+              {
+                "title": "Calabar and its Mission",
+                "author": "Hugh Goldie",
+                "year": 1890,
+                "url": "https://archive.org/details/calabaritsmissio00gold",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 12",
+                "notes": "Édimbourg et Londres, Oliphant, Anderson & Ferrier, 1890. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

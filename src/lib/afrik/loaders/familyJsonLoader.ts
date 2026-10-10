@@ -6,6 +6,7 @@ import { readFileSync, readdirSync } from "fs";
 import { join } from "path";
 import type { LanguageFamily, ParsedFile } from "@/types/afrik";
 import { logger } from "@/lib/api/logger";
+import { ficheNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 
 const FAMILIES_PATH = join(
   process.cwd(),
@@ -26,6 +27,8 @@ export async function loadLanguageFamily(
     const data: LanguageFamily = JSON.parse(raw);
     if (!data.id)
       throw new Error(`Missing required field "id" in ${familyId}.json`);
+    const nameHistory = ficheNameHistory(data, familyId);
+    if (nameHistory) data.nameHistory = nameHistory;
     familyCache.set(familyId, data);
     return { success: true, data };
   } catch (error) {

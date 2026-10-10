@@ -80,27 +80,32 @@
       {
         "title": "Bena in Tanzania – Joshua Project, 2025",
         "url": "https://joshuaproject.net/countries/TZ",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Bena Language (BEZ) – Ethnologue SIL",
         "url": "https://www.ethnologue.com/language/bez/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Dialect Variation in a Minority Language: The Case of Bena – Morrison, 2015",
         "url": "http://www.lingref.com/cpp/acal/44/paper3138.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Inside Nyumbanitu Traditional Forest – Academia.edu, 2018",
         "url": "https://www.academia.edu/35750250/INSIDE_NYUMBANITU_TRADITIONAL_FOREST_REINTERPRETATION_OF_FOREST_EMBEDDED_FOLKLORES_OF_WABENA_IN_NJOMBE",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Memory, Migration and the Authority of History in Southern Tanzania – JSTOR",
         "url": "https://www.jstor.org/stable/183473",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

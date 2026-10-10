@@ -13,7 +13,7 @@
         "Nzakara (designation d'un sous-groupe)",
         "A-Zande (graphie avec prefixe du pluriel bantou adopte par les premiers voyageurs europeens)"
       ],
-      "originOfExonyms": "Le nom Azande signifie litteralement ceux qui possedent beaucoup de terres, refletant leur histoire de conquetes et d'expansion territoriale. Il constitue a la fois l'endonyme et l'exonyme. La forme Zande est employee dans les textes anglophones et la litterature academique. La forme Nzakara designe un sous-groupe de la branche Bandia.",
+      "originOfExonyms": "Azande signifierait ceux qui possèdent beaucoup de terres, en référence aux conquêtes du peuple et à l'extension de son territoire. Le nom est employé par le peuple lui-même et à l'extérieur. Les textes en anglais et les recherches emploient Zande. Nzakara désigne un groupe de la branche Bandia.",
       "whyProblematic": "La confusion entre Azande (peuple) et Zande (langue) est frequente. De plus, le terme Azande designe un macro-groupe constitue de nombreux peuples assimiles par la conquete Avungara : tous les Azande ne partagent pas les memes origines, mais ont adopte la langue et la culture zande.",
       "contemporaryUsage": "Le terme Azande est employe dans toute la litterature anthropologique et ethnographique, notamment depuis l'oeuvre fondatrice d'E.E. Evans-Pritchard (1937). Il est utilise par les membres du groupe pour se designer collectivement.",
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
@@ -108,7 +108,8 @@
       {
         "title": "Evans-Pritchard, E.E. Witchcraft, Oracles and Magic Among the Azande. Oxford University Press, 1937. Edition abregee 1976 : ISBN 0-19-874029-8",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Azande Royal — History of the Avongara Dynasty",
@@ -118,12 +119,14 @@
       {
         "title": "SIL Ethnologue — Zande (zne)",
         "url": "https://www.ethnologue.com/language/zne/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Zande",
         "url": "https://glottolog.org/resource/languoid/id/zand1248",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "HAU Journal — New oracles among the Azande (2024)",
@@ -133,7 +136,8 @@
       {
         "title": "Leiden University — Zande chieftaincy and kingship (2024)",
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:3718381/view",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "HistoryFiles — Kingdoms of Central Africa : Zande State of Vungara",

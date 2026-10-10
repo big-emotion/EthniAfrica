@@ -33,14 +33,14 @@ const WORDING_BY_FIELD_PATH: Record<string, string> = {
   "lib/games/landmarks":
     "les coordonnées de villes et de caps publiées par EthniAfrica",
 
-  languageFamilyId: "la famille linguistique déclarée par la fiche",
+  languageFamilyId: "la famille de langues indiquée dans la fiche",
   "content.appellations.selfAppellation":
-    "l'auto-appellation déclarée par la fiche",
+    "le nom que le peuple emploie pour se nommer, indiqué dans sa fiche",
   "content.appellations.whyProblematic":
     "ce que la fiche dit du caractère problématique de ce nom",
   "content.appellations.originOfExonyms":
-    "l'origine des exonymes, telle que la fiche la donne",
-  "content.demography": "la démographie déclarée par la fiche",
+    "l’explication de la fiche sur les noms donnés par d’autres",
+  "content.demography": "les chiffres sur la population indiqués dans la fiche",
   "content.demography.distributionByCountry":
     "la répartition par pays déclarée par la fiche",
   "content.languages.mainLanguage":
@@ -56,13 +56,13 @@ const WORDING_BY_FIELD_PATH: Record<string, string> = {
     "l'organisation politique traditionnelle décrite par la fiche",
   "content.origins.migrationRoutes":
     "les routes de migration retracées par la fiche",
-  etymology: "l'étymologie donnée par la fiche",
+  etymology: "l’explication de l’origine du nom proposée dans la fiche",
   nameOriginActor: "qui, selon la fiche, a donné ce nom",
   "content.historicalNames.colonization":
     "les noms portés pendant la colonisation, d'après la fiche",
   "content.kingdoms": "les royaumes cités par la fiche",
   "content.historicalFacts.precolonial":
-    "les faits précoloniaux rapportés par la fiche",
+    "les événements d’avant la colonisation rapportés dans la fiche",
 };
 
 // @req REQ-120

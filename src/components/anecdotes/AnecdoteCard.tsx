@@ -9,6 +9,7 @@ import {
   didYouKnowEntityHref,
   type AnecdoteImageSide,
 } from "@/lib/home/didYouKnowPresentation";
+import { SourceKindBadge } from "@/components/sources/SourceKindBadge";
 import { anecdotesCopy } from "@/lib/i18n/copy/anecdotes";
 import type { Language } from "@/types/shared";
 
@@ -164,15 +165,6 @@ export function AnecdoteCard({
       {actions}
 
       <footer className="anecdote-provenance">
-        {/* Two tiers sit in this footer and they mean different things: the
-            fact's, which is the confidence the atlas puts on the claim, and
-            each source's, which is the authority of that one citation. Left
-            unlabelled they read as one repeated badge. */}
-        <p className="anecdote-tier">
-          <span className="anecdote-tier-label">{copy.factReliability}</span>
-          {copy.tierLabels[fact.tier]}
-        </p>
-
         {fact.sources?.length ? (
           <ul className="anecdote-sources">
             {fact.sources.map((source) => (
@@ -191,9 +183,12 @@ export function AnecdoteCard({
                 ) : (
                   <cite className="anecdote-source-cite">{source.title}</cite>
                 )}
-                <span className="anecdote-source-tier">
-                  {copy.tierLabels[source.tier]}
-                </span>
+                {source.source_kind ? (
+                  <SourceKindBadge
+                    kind={source.source_kind}
+                    language={language}
+                  />
+                ) : null}
                 {source.notes ? (
                   <span className="anecdote-source-note">{source.notes}</span>
                 ) : null}
@@ -202,8 +197,8 @@ export function AnecdoteCard({
           </ul>
         ) : (
           // Six facts predate the sources field. Saying so is the only
-          // honest thing to print here: a tier over a blank space asserts a
-          // provenance the reader cannot check.
+          // honest thing to print here: a blank footer asserts a provenance
+          // the reader cannot check.
           <p className="anecdote-source-missing">{copy.missingProvenance}</p>
         )}
       </footer>
@@ -321,24 +316,6 @@ export function AnecdoteCard({
           padding-top: 16px;
           border-top: 1px solid var(--afh-border);
         }
-        .anecdote-tier {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 8px;
-          margin: 0 0 10px;
-          font-family: var(--font-mono, ui-monospace, monospace);
-          font-size: var(--afh-text-eyebrow);
-          letter-spacing: 0.06em;
-          text-transform: uppercase;
-          color: var(--afh-text);
-        }
-        .anecdote-tier-label {
-          color: var(--afh-fg-muted);
-        }
-        .anecdote-tier-label::after {
-          content: " —";
-        }
         .anecdote-sources {
           list-style: none;
           margin: 0;
@@ -366,13 +343,6 @@ export function AnecdoteCard({
         .anecdote-source-cite {
           color: var(--afh-text-soft);
           font-style: italic;
-        }
-        .anecdote-source-tier {
-          font-family: var(--font-mono, ui-monospace, monospace);
-          font-size: var(--afh-text-eyebrow);
-          letter-spacing: 0.05em;
-          text-transform: uppercase;
-          color: var(--afh-fg-muted);
         }
         .anecdote-source-note {
           flex-basis: 100%;

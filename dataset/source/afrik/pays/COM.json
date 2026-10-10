@@ -6,6 +6,626 @@
   "summary": "Une explication publiée rattache le nom Comores à l'arabe komr, un mot qui désignait de grandes terres de l'océan Indien situées sous les Nuages de Magellan, le repère du sud dans le ciel austral. Plus tard, le mot a été lu comme qamar, « la lune », d'où le surnom « îles de la Lune ». L'archipel s'organisa en sultanats indépendants avant le protectorat français de 1886. Sa culture croise l'Afrique de l'Est, le monde swahili et l'océan Indien.",
   "etymology": "Le français « Comores » reprend l'arabe komr, un mot générique que des géographes arabes appliquaient à de grandes terres situées sous les Nuages de Magellan, les deux taches lumineuses du ciel austral qui marquaient le sud. Une étude publiée en 2000 juge fausse la lecture « îles de la Lune » (qamar), apparue plus tard ; une autre rappelle que la racine arabe renvoie à la clarté lumineuse, ce qui laisse « lune » dans son champ de sens. En arabe, le pays s'appelle aujourd'hui Juzur al-Qamar (جزر القمر), « îles de la Lune » ; en comorien, « Komori » ou « Udzima wa Komori » (Union des Comores).",
   "nameOriginActor": "L'auteur du nom n'est pas connu. Le mot komr apparaît chez des géographes arabes du Moyen Âge, dont al-Idrîsî au XIIe siècle, pour des terres de l'océan Indien occidental, Madagascar comprise. Il est resté au seul archipel avec le temps ; la date de ce resserrement n'est pas établie.",
+  "nameHistory": {
+    "summary": "Le nom Comores désigne un pays de l'océan Indien, l'Union des Comores, qui se nomme aussi Komori en shikomor et Al-Qamar en arabe. Le pays a porté d'autres noms : Territoire des Comores sous la colonisation française, puis État comorien et République fédérale islamique des Comores. Les sources ne s'accordent pas sur l'origine du nom Comores ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Comores",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Un mot arabe qui désignait plusieurs terres de l'océan Indien ; son sens premier reste discuté.",
+        "periodLabel": "Forme komr écrite dès le XIIe siècle ; nom de l'État depuis 1975",
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": null,
+              "label": "Depuis le 23 décembre 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Comores est celui de l'Union des Comores, comme l'écrit l'article premier de sa Constitution de 2001. La liste des noms de pays de l'ONU donne aussi Komori en shikomor et Al Qamar en arabe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de l'Union des Comores, 23 décembre 2001",
+                "author": "Union des Comores",
+                "year": 2001,
+                "url": "https://mjp.univ-perp.fr/constit/km2001.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article premier : « L'Union des Comores est une République, composée des îles autonomes de Mwali (Mohéli), Maoré (Mayotte), Ndzuwani (Anjouan), N'gazidja (Grande Comore). »"
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG, GEGN.2/2025/171/CRP.171",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordination Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 26",
+                "notes": "Document du 23 avril 2025. Noms officiels nationaux : Al Qamar et Al Ittiḥād Al Qumuriyy en arabe, Comores et Union des Comores en français, Komori et Udzima wa Komori en shikomor. Nom officiel de l'ONU en arabe : Juzur al-Qamar."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Comores désigne aujourd'hui un pays de l'océan Indien, formé d'îles entre l'Afrique et Madagascar. Il reprend le mot arabe komr, que des géographes arabes donnaient à plusieurs terres de cette mer, Madagascar comprise, selon Claude Allibert. Le sens premier de ce mot reste discuté ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Liste des noms de pays du GENUNG, GEGN.2/2025/171/CRP.171",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordination Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 26",
+                "notes": "Document du 23 avril 2025. Noms officiels nationaux : Al Qamar et Al Ittiḥād Al Qumuriyy en arabe, Comores et Union des Comores en français, Komori et Udzima wa Komori en shikomor. Nom officiel de l'ONU en arabe : Juzur al-Qamar."
+              },
+              {
+                "title": "Claude Allibert, « Le mot Komr dans l'océan Indien et l'incidence de son interprétation sur l'ancienneté du savoir que l'on a de la région », Topoi. Orient-Occident, 10-1",
+                "author": "Claude Allibert",
+                "year": 2000,
+                "url": "https://doi.org/10.3406/topoi.2000.1883",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 322-323",
+                "notes": "Article universitaire lu en entier sur Persée. Suivant Louis Massignon, l'auteur écrit que les Arabes désignaient par komr la « clarté dans le ciel » qui indique le Sud, les Nuages de Magellan, et que ce terme générique a servi à nommer Madagascar et l'archipel des Comores. Il juge « totalement faux » de lire « îles de la Lune ». En note, il rapporte qu'Alfred Gevrey, en 1870, parlait des « îles des Comor »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "6 juillet 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Comores devient celui d'un État indépendant le 6 juillet 1975. Mayotte reste sous administration française, selon le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : les Comores, « Archipel des Comores », deviennent indépendantes de la France le 6 juillet 1975, à l'exception de Mayotte, qui reste un territoire français."
+              },
+              {
+                "title": "Déclaration d'indépendance du 6 juillet 1975 et acte n° 75-13/CHD",
+                "author": "Chambre des députés des Comores",
+                "year": 1975,
+                "url": "https://mjp.univ-perp.fr/constit/km1975ind.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "acte n° 75-13/CHD, article premier",
+                "notes": "Textes lus sur la Digithèque MJP de l'Université de Perpignan. La déclaration d'Ahmed Abdallah parle de « l'État comorien » ; l'acte adopté le 8 juillet 1975 dispose : « L'archipel des Comores composé de Mayotte Anjouan, Mohéli et la Grande-Comore constitue l'État comorien. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1870,
+              "to": 1870,
+              "label": "1870"
+            },
+            "statement": "Le nom Comores est écrit Comor par Alfred Gevrey, qui parle des « îles des Comor », un nom donné à l'ensemble des îles de cette partie de l'océan Indien, selon Claude Allibert.",
+            "formAsWritten": "îles des Comor",
+            "sources": [
+              {
+                "title": "Claude Allibert, « Le mot Komr dans l'océan Indien et l'incidence de son interprétation sur l'ancienneté du savoir que l'on a de la région », Topoi. Orient-Occident, 10-1",
+                "author": "Claude Allibert",
+                "year": 2000,
+                "url": "https://doi.org/10.3406/topoi.2000.1883",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 322-323",
+                "notes": "Article universitaire lu en entier sur Persée. Suivant Louis Massignon, l'auteur écrit que les Arabes désignaient par komr la « clarté dans le ciel » qui indique le Sud, les Nuages de Magellan, et que ce terme générique a servi à nommer Madagascar et l'archipel des Comores. Il juge « totalement faux » de lire « îles de la Lune ». En note, il rapporte qu'Alfred Gevrey, en 1870, parlait des « îles des Comor »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1530,
+              "label": "Début du XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Comores a une forme proche, komr, chez le navigateur ottoman Piri Reis : il l'emploie encore pour Madagascar, l'archipel des Comores, Zanzibar et Pemba, selon Claude Allibert.",
+            "formAsWritten": "komr",
+            "sources": [
+              {
+                "title": "Claude Allibert, « Le mot Komr dans l'océan Indien et l'incidence de son interprétation sur l'ancienneté du savoir que l'on a de la région », Topoi. Orient-Occident, 10-1",
+                "author": "Claude Allibert",
+                "year": 2000,
+                "url": "https://doi.org/10.3406/topoi.2000.1883",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 322, note 12",
+                "notes": "Article universitaire lu en entier sur Persée. Le navigateur ottoman Piri Reis, au début du XVIe siècle, englobe encore sous le terme komr Madagascar, l'archipel des Comores, Zanzibar et Pemba."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1325,
+              "to": 1325,
+              "label": "1325"
+            },
+            "era": "polity",
+            "statement": "Le nom Comores a une forme proche, Komor, chez le géographe al-Dimashqī, qui décrit « l'île de Komor » et ses villes, selon Claude Allibert.",
+            "formAsWritten": "l'île de Komor",
+            "sources": [
+              {
+                "title": "Claude Allibert, « Le mot Komr dans l'océan Indien et l'incidence de son interprétation sur l'ancienneté du savoir que l'on a de la région », Topoi. Orient-Occident, 10-1",
+                "author": "Claude Allibert",
+                "year": 2000,
+                "url": "https://doi.org/10.3406/topoi.2000.1883",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 323",
+                "notes": "Article universitaire lu en entier sur Persée. Le géographe al-Dimashqī, en 1325, écrit : « L'île de Komor... comprend plusieurs villes, parmi lesquelles... Komoriyya », d'après la traduction de Gabriel Ferrand."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1100,
+              "to": 1199,
+              "label": "XIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Comores a une forme proche, komr, chez le géographe al-Idrīsī, qui lit ainsi le mot arabe kmr, selon Claude Allibert. Ce mot désigne alors plusieurs terres de l'océan Indien occidental, Madagascar comprise, et pas seulement l'archipel. C'est la plus ancienne trace de cette forme que le projet connaît ; les îles étaient habitées bien avant elle.",
+            "formAsWritten": "komr",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Claude Allibert, « Le mot Komr dans l'océan Indien et l'incidence de son interprétation sur l'ancienneté du savoir que l'on a de la région », Topoi. Orient-Occident, 10-1",
+                "author": "Claude Allibert",
+                "year": 2000,
+                "url": "https://doi.org/10.3406/topoi.2000.1883",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 320-321",
+                "notes": "Article universitaire lu en entier sur Persée. Les auteurs arabes ont longtemps hésité sur la vocalisation du mot écrit kmr. Al-Idrīsī, au XIIe siècle, le lit komr ; dès le XIIIe siècle, Ibn Saʿīd met en garde contre la lecture qamar, « lune ». Ibn Khaldūn rapporte que certains lisaient al-kamar, « la lune », à cause d'une blancheur éclatante."
+              },
+              {
+                "title": "Claude Allibert, « Le mot Komr dans l'océan Indien et l'incidence de son interprétation sur l'ancienneté du savoir que l'on a de la région », Topoi. Orient-Occident, 10-1",
+                "author": "Claude Allibert",
+                "year": 2000,
+                "url": "https://doi.org/10.3406/topoi.2000.1883",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 322-323",
+                "notes": "Article universitaire lu en entier sur Persée. Suivant Louis Massignon, l'auteur écrit que les Arabes désignaient par komr la « clarté dans le ciel » qui indique le Sud, les Nuages de Magellan, et que ce terme générique a servi à nommer Madagascar et l'archipel des Comores. Il juge « totalement faux » de lire « îles de la Lune ». En note, il rapporte qu'Alfred Gevrey, en 1870, parlait des « îles des Comor »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Comores viendrait du mot arabe komr, la « clarté dans le ciel » qui indique le Sud, c'est-à-dire les Nuages de Magellan : les marins arabes l'auraient donné aux terres situées sous ces nuages, selon Claude Allibert, qui suit Louis Massignon. Alain Clockers rappelle aussi le rôle de repère de ces nuages.",
+            "hypothesisGroup": "origine du nom Comores",
+            "sources": [
+              {
+                "title": "Claude Allibert, « Le mot Komr dans l'océan Indien et l'incidence de son interprétation sur l'ancienneté du savoir que l'on a de la région », Topoi. Orient-Occident, 10-1",
+                "author": "Claude Allibert",
+                "year": 2000,
+                "url": "https://doi.org/10.3406/topoi.2000.1883",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 322-323",
+                "notes": "Article universitaire lu en entier sur Persée. Suivant Louis Massignon, l'auteur écrit que les Arabes désignaient par komr la « clarté dans le ciel » qui indique le Sud, les Nuages de Magellan, et que ce terme générique a servi à nommer Madagascar et l'archipel des Comores. Il juge « totalement faux » de lire « îles de la Lune ». En note, il rapporte qu'Alfred Gevrey, en 1870, parlait des « îles des Comor »."
+              },
+              {
+                "title": "Histoire des noms anciens de Madagascar : réévaluations et nouvelles hypothèses, Études océan Indien, 51-52",
+                "author": "Alain Clockers",
+                "year": 2014,
+                "url": "https://doi.org/10.4000/oceanindien.1704",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 15-16",
+                "notes": "Article lu en ligne sur OpenEdition. Les géographes arabes écrivaient tantôt Kamar, tantôt Komor ; la racine renvoie à la « clarté lumineuse, lune », et le nom d'« îles de la Lune » désigne encore l'archipel aujourd'hui. Les Nuages de Magellan, visibles plein sud, servaient de repère aux marins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Comores viendrait de l'arabe qamar, « la lune » : c'est la lecture que rapportent des auteurs arabes du Moyen Âge, selon Claude Allibert, qui la juge fausse. Alain Clockers rappelle que la racine du mot renvoie à la « clarté lumineuse » et à la lune.",
+            "hypothesisGroup": "origine du nom Comores",
+            "sources": [
+              {
+                "title": "Claude Allibert, « Le mot Komr dans l'océan Indien et l'incidence de son interprétation sur l'ancienneté du savoir que l'on a de la région », Topoi. Orient-Occident, 10-1",
+                "author": "Claude Allibert",
+                "year": 2000,
+                "url": "https://doi.org/10.3406/topoi.2000.1883",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 320-321",
+                "notes": "Article universitaire lu en entier sur Persée. Les auteurs arabes ont longtemps hésité sur la vocalisation du mot écrit kmr. Al-Idrīsī, au XIIe siècle, le lit komr ; dès le XIIIe siècle, Ibn Saʿīd met en garde contre la lecture qamar, « lune ». Ibn Khaldūn rapporte que certains lisaient al-kamar, « la lune », à cause d'une blancheur éclatante."
+              },
+              {
+                "title": "Histoire des noms anciens de Madagascar : réévaluations et nouvelles hypothèses, Études océan Indien, 51-52",
+                "author": "Alain Clockers",
+                "year": 2014,
+                "url": "https://doi.org/10.4000/oceanindien.1704",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 15-16",
+                "notes": "Article lu en ligne sur OpenEdition. Les géographes arabes écrivaient tantôt Kamar, tantôt Komor ; la racine renvoie à la « clarté lumineuse, lune », et le nom d'« îles de la Lune » désigne encore l'archipel aujourd'hui. Les Nuages de Magellan, visibles plein sud, servaient de repère aux marins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Comores viendrait de la langue des Makoa, ko, « là où », et moro, « le feu », à cause d'un volcan de l'archipel, selon l'explication d'Alfred Grandidier. Claude Allibert, qui la rapporte, la juge fausse, car le même mot désignait aussi Madagascar.",
+            "hypothesisGroup": "origine du nom Comores",
+            "sources": [
+              {
+                "title": "Claude Allibert, « Le mot Komr dans l'océan Indien et l'incidence de son interprétation sur l'ancienneté du savoir que l'on a de la région », Topoi. Orient-Occident, 10-1",
+                "author": "Claude Allibert",
+                "year": 2000,
+                "url": "https://doi.org/10.3406/topoi.2000.1883",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 325, note 18",
+                "notes": "Article universitaire lu en entier sur Persée. Alfred Grandidier explique komr par la langue des Makoa : ko, « où », et moro, « feu », à cause d'un volcan. L'auteur juge cette lecture fautive, car le mot désigne aussi Madagascar."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Komori",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Nom du pays en shikomor",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Komori est le nom du pays en shikomor, la langue comorienne : l'État s'y nomme Udzima wa Komori, selon la liste des noms de pays de l'ONU. Le projet ne connaît pas de trace écrite plus ancienne de cette forme.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Liste des noms de pays du GENUNG, GEGN.2/2025/171/CRP.171",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordination Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 26",
+                "notes": "Document du 23 avril 2025. Noms officiels nationaux : Al Qamar et Al Ittiḥād Al Qumuriyy en arabe, Comores et Union des Comores en français, Komori et Udzima wa Komori en shikomor. Nom officiel de l'ONU en arabe : Juzur al-Qamar."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Al-Qamar",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "periodLabel": "Nom du pays en arabe",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Al-Qamar est le nom officiel du pays en arabe, selon la liste des noms de pays de l'ONU ; l'ONU écrit aussi Juzur al-Qamar, les « îles de la Lune ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Liste des noms de pays du GENUNG, GEGN.2/2025/171/CRP.171",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordination Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 26",
+                "notes": "Document du 23 avril 2025. Noms officiels nationaux : Al Qamar et Al Ittiḥād Al Qumuriyy en arabe, Comores et Union des Comores en français, Komori et Udzima wa Komori en shikomor. Nom officiel de l'ONU en arabe : Juzur al-Qamar."
+              },
+              {
+                "title": "Histoire des noms anciens de Madagascar : réévaluations et nouvelles hypothèses, Études océan Indien, 51-52",
+                "author": "Alain Clockers",
+                "year": 2014,
+                "url": "https://doi.org/10.4000/oceanindien.1704",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 15-16",
+                "notes": "Article lu en ligne sur OpenEdition. Les géographes arabes écrivaient tantôt Kamar, tantôt Komor ; la racine renvoie à la « clarté lumineuse, lune », et le nom d'« îles de la Lune » désigne encore l'archipel aujourd'hui. Les Nuages de Magellan, visibles plein sud, servaient de repère aux marins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Al-Qamar se lit en arabe « la lune », et le nom d'« îles de la Lune » désigne encore l'archipel, selon Alain Clockers. Claude Allibert juge cette lecture fausse pour le mot ancien komr ; les explications sont présentées avec le nom Comores.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire des noms anciens de Madagascar : réévaluations et nouvelles hypothèses, Études océan Indien, 51-52",
+                "author": "Alain Clockers",
+                "year": 2014,
+                "url": "https://doi.org/10.4000/oceanindien.1704",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 15-16",
+                "notes": "Article lu en ligne sur OpenEdition. Les géographes arabes écrivaient tantôt Kamar, tantôt Komor ; la racine renvoie à la « clarté lumineuse, lune », et le nom d'« îles de la Lune » désigne encore l'archipel aujourd'hui. Les Nuages de Magellan, visibles plein sud, servaient de repère aux marins."
+              },
+              {
+                "title": "Claude Allibert, « Le mot Komr dans l'océan Indien et l'incidence de son interprétation sur l'ancienneté du savoir que l'on a de la région », Topoi. Orient-Occident, 10-1",
+                "author": "Claude Allibert",
+                "year": 2000,
+                "url": "https://doi.org/10.3406/topoi.2000.1883",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 322-323",
+                "notes": "Article universitaire lu en entier sur Persée. Suivant Louis Massignon, l'auteur écrit que les Arabes désignaient par komr la « clarté dans le ciel » qui indique le Sud, les Nuages de Magellan, et que ce terme générique a servi à nommer Madagascar et l'archipel des Comores. Il juge « totalement faux » de lire « îles de la Lune ». En note, il rapporte qu'Alfred Gevrey, en 1870, parlait des « îles des Comor »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 680,
+              "to": 720,
+              "label": "Fin du VIIe ou début du VIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Al-Qamar a une forme proche, al-Ḳumr : Bakoly Domenichini-Ramiaramanana appelle « gens d'al-Ḳumr » des marins des Comores et de Madagascar qui se seraient lancés à la conquête d'Aden. Elle ne dit pas dans quel texte ancien le nom figure sous cette forme.",
+            "formAsWritten": "al-Ḳumr",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 25 : Madagascar",
+                "author": "Bakoly Domenichini-Ramiaramanana",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 746",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. L'auteure parle des « gens d'al-Ḳumr (Comores et Madagascar) » qui, à la fin du VIIe ou au début du VIIIe siècle, « semble-t-il », se lancent à la conquête d'Aden. Elle ne précise pas dans quel texte ancien le nom figure."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République fédérale islamique des Comores",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "periodLabel": "De 1978 à 2001",
+        "accounts": [
+          {
+            "period": {
+              "from": 1978,
+              "to": 2001,
+              "label": "Du 1er octobre 1978 au 23 décembre 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom République fédérale islamique des Comores est celui de l'État de la Constitution de 1978 jusqu'à celle de 2001, qui crée l'Union des Comores, selon la Digithèque de l'université de Perpignan. La loi constitutionnelle de 1996 l'emploie encore.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Comores, Constitution",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/km.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie juridique : traité de 1841 pour Mayotte ; traités de protectorat de 1886 avec les sultans de Grande Comore, d'Anjouan et de Mohéli ; loi du 25 juillet 1912 qui fait des Comores une colonie rattachée à Madagascar ; territoire d'outre-mer en 1946 ; indépendance proclamée le 6 juillet 1975 ; constitutions de 1977, 1978, 1992, 1996, 2001 et 2018."
+              },
+              {
+                "title": "Loi constitutionnelle du 20 octobre 1996",
+                "author": "République fédérale islamique des Comores",
+                "year": 1996,
+                "url": "https://mjp.univ-perp.fr/constit/km1996.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 73",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article 73 : « La présente loi sera exécutée comme Constitution de la République fédérale islamique des Comores. »"
+              },
+              {
+                "title": "Constitution de l'Union des Comores, 23 décembre 2001",
+                "author": "Union des Comores",
+                "year": 2001,
+                "url": "https://mjp.univ-perp.fr/constit/km2001.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article premier : « L'Union des Comores est une République, composée des îles autonomes de Mwali (Mohéli), Maoré (Mayotte), Ndzuwani (Anjouan), N'gazidja (Grande Comore). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "1er octobre 1978"
+            },
+            "era": "modern",
+            "statement": "Le nom République fédérale islamique des Comores apparaît avec la Constitution du 1er octobre 1978, dont l'article premier dispose : « L'archipel des Comores constitue une République fédérale islamique. » C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Constitution du 1er octobre 1978",
+                "author": "République fédérale islamique des Comores",
+                "year": 1978,
+                "url": "https://mjp.univ-perp.fr/constit/km1978.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article premier : « L'archipel des Comores constitue une République fédérale islamique. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "État comorien",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "periodLabel": "De 1975 à 1978",
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": 1978,
+              "label": "De 1975 à 1978"
+            },
+            "era": "modern",
+            "statement": "Le nom État comorien est celui que se donne le pays à l'indépendance. La loi fondamentale du 23 avril 1977 parle aussi de République comorienne, jusqu'à la Constitution de 1978.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Déclaration d'indépendance du 6 juillet 1975 et acte n° 75-13/CHD",
+                "author": "Chambre des députés des Comores",
+                "year": 1975,
+                "url": "https://mjp.univ-perp.fr/constit/km1975ind.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "acte n° 75-13/CHD, article premier",
+                "notes": "Textes lus sur la Digithèque MJP de l'Université de Perpignan. La déclaration d'Ahmed Abdallah parle de « l'État comorien » ; l'acte adopté le 8 juillet 1975 dispose : « L'archipel des Comores composé de Mayotte Anjouan, Mohéli et la Grande-Comore constitue l'État comorien. »"
+              },
+              {
+                "title": "Loi fondamentale du 23 avril 1977",
+                "author": "État comorien",
+                "year": 1977,
+                "url": "https://mjp.univ-perp.fr/constit/km1977.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article premier : l'archipel « constitue une République Démocratique Laïque et Sociale » ; « Le territoire de la République Comorienne comprend quatre îles »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "6 et 8 juillet 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom État comorien figure dans la déclaration d'indépendance du 6 juillet 1975 et dans l'acte adopté deux jours plus tard, selon lequel l'archipel « constitue l'État comorien ». C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "l'État comorien",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Déclaration d'indépendance du 6 juillet 1975 et acte n° 75-13/CHD",
+                "author": "Chambre des députés des Comores",
+                "year": 1975,
+                "url": "https://mjp.univ-perp.fr/constit/km1975ind.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "acte n° 75-13/CHD, article premier",
+                "notes": "Textes lus sur la Digithèque MJP de l'Université de Perpignan. La déclaration d'Ahmed Abdallah parle de « l'État comorien » ; l'acte adopté le 8 juillet 1975 dispose : « L'archipel des Comores composé de Mayotte Anjouan, Mohéli et la Grande-Comore constitue l'État comorien. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Territoire des Comores",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "periodLabel": "De 1946 à 1975",
+        "accounts": [
+          {
+            "period": {
+              "from": 1946,
+              "to": 1975,
+              "label": "De 1946 à 1975"
+            },
+            "era": "colonial",
+            "statement": "Le nom Territoire des Comores désigne l'archipel devenu territoire français d'outre-mer en 1946, après plus de trente ans de rattachement à Madagascar. L'Assemblée territoriale décide en 1958 que « le Territoire des Comores garde son statut actuel au sein de la République », selon la Digithèque de l'université de Perpignan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Comores, territoire, 1946",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/km1946.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "La page cite la délibération n° 58-42 du 11 décembre 1958, par laquelle l'Assemblée territoriale décide que « le Territoire des Comores garde son statut actuel au sein de la République »."
+              },
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Comores, Constitution",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/km.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie juridique : traité de 1841 pour Mayotte ; traités de protectorat de 1886 avec les sultans de Grande Comore, d'Anjouan et de Mohéli ; loi du 25 juillet 1912 qui fait des Comores une colonie rattachée à Madagascar ; territoire d'outre-mer en 1946 ; indépendance proclamée le 6 juillet 1975 ; constitutions de 1977, 1978, 1992, 1996, 2001 et 2018."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1946,
+              "to": 1946,
+              "label": "25 octobre 1946"
+            },
+            "era": "colonial",
+            "statement": "Le nom Territoire des Comores figure, écrit « territoire des Comores », dans le décret du 25 octobre 1946 qui crée un conseil général dans l'archipel. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "territoire des Comores",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Décret du 25 octobre 1946 portant création d'un conseil général des Comores",
+                "author": "République française, Journal officiel du 27 octobre 1946",
+                "year": 1946,
+                "url": "https://mjp.univ-perp.fr/constit/km1946.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 6",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. L'article 6 cite « l'administrateur supérieur du territoire des Comores ». La loi du 9 mai 1946, sur la même page, fait de « l'archipel des Comores » un territoire doté de l'autonomie administrative et financière."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -110,17 +730,20 @@
       {
         "title": "CIA World Factbook – Comoros",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "SIL Ethnologue – Comorian languages (swb, wni, zdj, wlc)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Recensements nationaux comoriens",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples bantous de l'océan Indien",
@@ -135,33 +758,39 @@
       {
         "title": "ONU – Données démographiques 2025",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "UNFPA – World Population Dashboard — Comores",
         "url": "https://www.unfpa.org/data/world-population/KM",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "CIA World Factbook – Comoros (ethnic groups)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "Claude Allibert, « Le mot Komr dans l'océan Indien », Topoi. Orient-Occident, 10-1, 2000, p. 319-334",
         "url": "https://doi.org/10.3406/topoi.2000.1883",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Article universitaire sur le mot arabe komr. Il établit que komr désignait les Nuages de Magellan et servait de nom générique à plusieurs grandes terres de l'océan Indien occidental, Madagascar comprise, et que la lecture « îles de la Lune » est fausse. Il cite les mises en garde d'auteurs arabes médiévaux sur la prononciation. Article lu en entier le 16 septembre 2026 ; les textes arabes qu'il cite l'ont été à travers lui."
       },
       {
         "title": "A. Clockers, « Histoire des noms anciens de Madagascar : réévaluations et nouvelles hypothèses », Études océan Indien, 51-52, 2014",
         "url": "https://doi.org/10.4000/oceanindien.1704",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Confirme le lien entre komr et les Nuages de Magellan, mais rappelle que la racine arabe renvoie à la clarté lumineuse, et donc aussi à la lune. Article lu en septembre 2026."
       }
     ],

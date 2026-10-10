@@ -33,7 +33,7 @@
         "Baniouls (Guinee-Bissau)",
         "Bananka (Mali)"
       ],
-      "originOfExonyms": "L'exonyme Banyun est attribue aux Portugais, qui derives le terme du mandingue et l'utiliserent comme appellation collective pour des groupes etablis aux points strategiques des voies navigables entre les fleuves Gambie et Cacheu. Ce nom signifiait probablement trader (commercant) en analogie avec le terme dyula pour les marchands mande. L'appellation pejorative Bainouk (ceux qui ont ete chasses) aurait ete imposee par les Mandingues apres une defaite militaire a la fin du XVIe siecle.",
+      "originOfExonyms": "Banyun est attribué aux Portugais, qui l'auraient emprunté au mandingue. Ils l'utilisaient pour réunir des groupes installés à des points importants des voies navigables entre les fleuves Gambie et Cacheu. Ce nom aurait signifié « commerçant », comme dyula pour les marchands mandé. Selon une autre explication, les Mandingues auraient imposé le nom méprisant Bainouk, « ceux qui ont été chassés », après une défaite militaire à la fin du XVIe siècle.",
       "whyProblematic": "Le terme Bainouk recouvre un ensemble de groupes aux langues partiellement distinctes (Gunyaamolo, Samik, Gunyuno). La frontiere entre les Bainouk et les groupes voisins (Diola, Mandingue) est floue du fait de siecles d'intermariage et d'assimilation culturelle. Dans les recensements gambiens de 1973 et 1983, les Bainouk n'apparaissaient plus comme groupe distinct, absorbes dans les categories Diola ou Mandingue.",
       "contemporaryUsage": "Le terme Bainouk est utilise officiellement au Senegal et en Guinee-Bissau. En Gambie, le groupe est souvent designe sous les noms de ses dialectes ou absorbe dans d'autres categories. Des efforts de revitalisation culturelle et linguistique sont en cours, notamment via des organisations communautaires en Casamance.",
       "linguisticFamily": "FLG_ATLANTIQUE",
@@ -120,12 +120,14 @@
       {
         "title": "Joshua Project. Bainouk, Gunyaamolo in Senegal",
         "url": "https://joshuaproject.net/people_groups/10665/SG",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Sorosoro. Le baynunk",
         "url": "https://www.sorosoro.org/le-baynunk/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Djola History and Genealogy Society. Bainuk, Fulup and Baiote. (2021)",

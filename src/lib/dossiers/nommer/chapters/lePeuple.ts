@@ -1,3 +1,4 @@
+import { formatNommerFigure } from "../figures";
 import type { DossierChapter } from "../types";
 
 /**
@@ -17,17 +18,16 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
   key: "le-peuple",
   ordinal: "01",
   title: "Le peuple",
-  question:
-    "Presque tous les peuples documentés ici portent un nom venu du dehors. Qui le leur a donné ?",
+  question: "Un peuple peut porter plusieurs noms. Qui les lui a donnés ?",
   standfirst: {
     id: "standfirst",
-    text: "Le corpus tient plus de noms donnés de l'extérieur que de noms revendiqués de l'intérieur. L'écart ne mesure pas d'abord la colonisation : il mesure qui a écrit.",
+    text: "Nos fiches recensent davantage de noms donnés de l'extérieur que de noms revendiqués par les peuples eux-mêmes. Cet écart dépend des personnes qui ont écrit les textes disponibles ; il ne permet pas à lui seul de mesurer l'effet de la colonisation.",
     sourceRefs: [],
     figureRefs: ["corpus-exonyms", "corpus-autonyms"],
   },
   measure: {
-    value: "3 137",
-    unit: "exonymes recensés",
+    value: formatNommerFigure({ figureKey: "corpus-exonyms" }),
+    unit: "noms donnés de l’extérieur",
     sourceRefs: [],
     figureRefs: ["corpus-exonyms"],
   },
@@ -35,23 +35,23 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
     {
       id: "la-mesure-et-ce-quelle-ne-mesure-pas",
       stepLabel: "01 · Le peuple",
-      heading: "La mesure, et ce qu'elle ne mesure pas",
+      heading: "Ce que ces nombres nous apprennent",
       blocks: [
         {
           id: "quatre-pour-un",
-          text: "Nos 776 fiches de peuple recensent 3 137 noms donnés de l'extérieur, contre 774 noms que les intéressés revendiquent. Quatre pour un.",
+          text: `Nos ${formatNommerFigure({ figureKey: "corpus-peoples" })} fiches de peuple recensent ${formatNommerFigure({ figureKey: "corpus-exonyms" })} noms donnés par d’autres personnes, contre ${formatNommerFigure({ figureKey: "corpus-autonyms" })} noms que les peuples emploient pour se nommer. Cela représente environ quatre noms donnés de l’extérieur pour un nom employé par les peuples eux-mêmes.`,
           sourceRefs: [],
           figureRefs: ["corpus-peoples", "corpus-exonyms", "corpus-autonyms"],
         },
         {
           id: "une-asymetrie-darchive",
-          text: "L'écart est spectaculaire et il est facile de lui faire dire ce qu'il ne dit pas. Il ne mesure pas combien de peuples ont été renommés de force. Il mesure d'abord une asymétrie d'archive : on a beaucoup plus écrit sur ces peuples qu'ils n'ont écrit d'eux-mêmes, et un projet qui compile des sources compile ce déséquilibre avec elles.",
+          text: "Cet écart ne dit pas combien de peuples ont été renommés de force. Il dépend des textes qui nous sont parvenus et des personnes qui les ont écrits. Les noms donnés par d’autres personnes y occupent davantage de place. Nos fiches reprennent ce déséquilibre.",
           sourceRefs: [],
           figureRefs: [],
         },
         {
           id: "trois-declarations",
-          text: "Sur la classification de leur propre nom, les fiches disent trois choses. 443 déclarent leur appellation contestée ou héritée de la colonisation. 19 déclarent autre chose. Et 308 ne déclarent rien du tout.",
+          text: `Parmi nos fiches, ${formatNommerFigure({ figureKey: "status-contested-or-colonial" })} décrivent le nom comme contesté ou hérité de la colonisation. ${formatNommerFigure({ figureKey: "status-other" })} le classent autrement et ${formatNommerFigure({ figureKey: "status-undeclared" })} ne donnent aucune indication sur ce point.`,
           sourceRefs: [],
           figureRefs: [
             "status-contested-or-colonial",
@@ -61,7 +61,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
         },
         {
           id: "le-troisieme-nombre",
-          text: "Ce troisième nombre est le sujet de la phrase, pas sa note de bas de page. Écrire « 57 % des peuples documentés ici contestent leur nom » laisserait entendre que les autres ont été examinés et jugés sans problème. Ils n'ont pas été examinés. Le chantier est ouvert, et un pourcentage le comptabiliserait comme un résultat.",
+          text: "Une fiche qui ne donne aucune indication sur ce point ne permet pas de dire que le nom est accepté sans réserve. De même, une fiche qui décrit un nom comme contesté ne prouve pas que toutes les personnes concernées le contestent. Il faut lire les explications et les sources de chaque fiche.",
           sourceRefs: [],
           figureRefs: ["status-undeclared"],
         },
@@ -70,25 +70,25 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
     {
       id: "le-sondage-lexical",
       stepLabel: "01 · Le peuple",
-      heading: "Qui a donné ces noms, d'après les fiches elles-mêmes",
+      heading: "Les mots employés dans les fiches",
       blocks: [
         {
           id: "de-la-prose-pas-une-donnee",
-          text: "Chaque fiche raconte en toutes lettres d'où vient son exonyme. Ce récit n'est pas une donnée : c'est de la prose. On peut donc y compter des mots, et c'est tout ce que le tableau ci-dessous fait — une fiche qui écrit « ce nom n'est pas d'origine européenne » est comptée dans « europ- » comme les autres.",
+          text: "Les fiches racontent d’où viennent les noms donnés par d’autres peuples ou par des administrations. Le tableau ci-dessous compte certains mots dans ces récits. Il ne compte pas les personnes ou les institutions qui ont choisi les noms. Par exemple, une fiche qui écrit « ce nom n'est pas d'origine européenne » est comptée parce qu’elle contient « europ- ». Une même fiche peut apparaître dans plusieurs lignes.",
           sourceRefs: [],
           figureRefs: [],
         },
       ],
       table: {
         caption:
-          "Radicaux relevés dans les champs « origine des exonymes » et « pourquoi c'est problématique » des 776 fiches. Un sondage lexical, pas un codage : les mentions se recoupent.",
-        columns: ["Radical relevé", "Fiches", "Ce qu'on y lit le plus souvent"],
+          "Nombre de fiches contenant les mots ou débuts de mots indiqués, dans les explications sur l’origine des noms et les raisons de les contester. Une fiche peut être comptée plusieurs fois.",
+        columns: ["Mot recherché", "Fiches", "Exemples de sujets abordés"],
         rows: [
           {
             cells: [
               "colonial",
-              "241",
-              "Le nom est daté de la colonisation, ou officialisé par elle",
+              formatNommerFigure({ figureKey: "probe-colonial" }),
+              "Les noms apparus ou rendus officiels pendant la colonisation",
             ],
             sourceRefs: [],
             figureRefs: ["probe-colonial"],
@@ -96,31 +96,35 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "administr-",
-              "180",
-              "Le nom est un acte de recensement avant d'être un fait de langue",
+              formatNommerFigure({ figureKey: "probe-administration" }),
+              "L’usage du nom dans les recensements",
             ],
             sourceRefs: [],
             figureRefs: ["probe-administration"],
           },
           {
-            cells: ["europ-", "122", "Navigateurs, explorateurs, cartographes"],
+            cells: [
+              "europ-",
+              formatNommerFigure({ figureKey: "probe-european" }),
+              "Navigateurs, explorateurs, cartographes",
+            ],
             sourceRefs: [],
             figureRefs: ["probe-european"],
           },
           {
             cells: [
               "voisin",
-              "113",
-              "Un exonyme africain, donné par un peuple voisin — souvent le plus ancien de tous",
+              formatNommerFigure({ figureKey: "probe-neighbours" }),
+              "Les noms donnés par un peuple voisin",
             ],
             sourceRefs: [],
             figureRefs: ["probe-neighbours"],
           },
           {
             cells: [
-              "dépréciatif et voisins",
-              "84",
-              "La fiche qualifie explicitement le mot de péjoratif, dépréciatif, moqueur ou dérisoire",
+              "mots liés au mépris",
+              formatNommerFigure({ figureKey: "probe-pejorative" }),
+              "Recherche des mots « péjoratif », « dépréciatif », « moqueur » ou « dérisoire », ainsi que de leurs variantes",
             ],
             sourceRefs: [],
             figureRefs: ["probe-pejorative"],
@@ -128,8 +132,8 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "portugais",
-              "83",
-              "La strate la plus profonde de la côte atlantique, dès le XVe siècle",
+              formatNommerFigure({ figureKey: "probe-portuguese" }),
+              "Les noms employés par les Portugais sur la côte atlantique dès le XVe siècle",
             ],
             sourceRefs: [],
             figureRefs: ["probe-portuguese"],
@@ -137,8 +141,8 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "arab-",
-              "74",
-              "Antérieur à l'Europe sur le Sahel et la côte orientale",
+              formatNommerFigure({ figureKey: "probe-arabic" }),
+              "L’usage de l’arabe au Sahel et sur la côte orientale, avant l’arrivée des Européens",
             ],
             sourceRefs: [],
             figureRefs: ["probe-arabic"],
@@ -146,22 +150,26 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
           {
             cells: [
               "swahili",
-              "68",
-              "Une langue véhiculaire devenue instrument de désignation",
+              formatNommerFigure({ figureKey: "probe-swahili" }),
+              "Les noms employés en swahili, langue d’échange entre plusieurs peuples",
             ],
             sourceRefs: [],
             figureRefs: ["probe-swahili"],
           },
           {
-            cells: ["esclav-", "26", "Le nom naît d'un statut de capture"],
+            cells: [
+              "esclav-",
+              formatNommerFigure({ figureKey: "probe-slavery" }),
+              "Les noms liés à la capture et à l’esclavage",
+            ],
             sourceRefs: [],
             figureRefs: ["probe-slavery"],
           },
           {
             cells: [
               "missionn-",
-              "26",
-              "Nommer pour évangéliser, puis pour alphabétiser",
+              formatNommerFigure({ figureKey: "probe-missionary" }),
+              "Les noms employés par les missions religieuses et dans l’enseignement de la lecture",
             ],
             sourceRefs: [],
             figureRefs: ["probe-missionary"],
@@ -172,23 +180,23 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
     {
       id: "lexonyme-nest-pas-europeen",
       stepLabel: "01 · Le peuple",
-      heading: "L'exonyme n'est pas une invention européenne",
+      heading: "Des noms donnés aussi par des peuples voisins",
       blocks: [
         {
           id: "voisins-arabe-swahili",
-          text: "Cent vingt fiches attribuent leur exonyme à des voisins, soixante-quinze à l'arabe, soixante-treize au swahili. Nommer l'autre depuis le dehors n'est pas une importation : c'est ce que font les gens qui se rencontrent, partout, depuis toujours. Un dossier qui ne dirait que « l'Europe a mal nommé » raterait sa propre matière.",
+          text: "Les fiches mentionnent aussi des noms donnés par des peuples voisins ou empruntés à l’arabe et au swahili. Les Européens n’ont donc pas été les seuls à donner des noms à d’autres peuples. Pour comprendre chaque nom, il faut regarder qui l’a employé et dans quelles circonstances.",
           sourceRefs: [],
           figureRefs: ["probe-neighbours", "probe-arabic", "probe-swahili"],
         },
         {
           id: "le-registre",
-          text: "Ce que la colonisation apporte de neuf n'est donc pas l'exonyme. C'est le registre. Un nom cesse d'être une manière de parler pour devenir une case d'état : recensable, imposable, opposable. Il ne circule plus, il est inscrit — et ce qui est inscrit ne se renégocie plus au contact suivant.",
+          text: "L’administration coloniale a repris certains de ces noms dans ses registres, notamment pour les recensements et les impôts. Une appellation utilisée dans les échanges pouvait ainsi devenir un nom officiel, plus difficile à changer.",
           sourceRefs: [],
           figureRefs: ["probe-administration"],
         },
         {
           id: "les-jieng",
-          text: "Les Jieng du Soudan du Sud en sont l'exemple le plus net. « Dinka » est un exonyme arabe, venu des marchands du nord, que l'administration anglo-égyptienne a repris et fixé. Il est aujourd'hui universellement accepté, y compris par les intéressés dans les contextes officiels — et « Jieng » monte dans les revendications identitaires depuis l'indépendance de 2011. Un exonyme peut être adopté sans cesser d'être un exonyme.",
+          text: "La fiche des Jieng, au Soudan du Sud, rapporte que « Dinka » vient de marchands arabes du nord et que l’administration anglo-égyptienne l’a repris. Ce nom est aujourd’hui largement accepté, y compris par les personnes concernées dans les échanges officiels. Depuis l’indépendance de 2011, « Jieng » est aussi davantage revendiqué pour affirmer leur identité. Un peuple peut donc adopter un nom qui lui a d’abord été donné par d’autres.",
           sourceRefs: ["afrik-ppl-dinka"],
           figureRefs: [],
         },
@@ -201,7 +209,7 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
       blocks: [
         {
           id: "quatre-vingt-sept-fiches",
-          text: "Quatre-vingt-quatre fiches qualifient leur exonyme de péjoratif, dépréciatif, moqueur ou dérisoire. Deux cas montrent ce que le mot fait, et ce que le remplacer ne répare pas.",
+          text: `${formatNommerFigure({ figureKey: "probe-pejorative" })} fiches contiennent au moins un des mots recherchés pour repérer les noms présentés comme méprisants. Ce nombre dépend des mots choisis pour la recherche. Les exemples suivants expliquent pourquoi certains noms sont contestés.`,
           sourceRefs: [],
           figureRefs: ["probe-pejorative"],
         },
@@ -218,10 +226,10 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
         },
         {
           endonym: "ǂKhomani, Ju|'hoansi, !Xun",
-          endonymGloss: "les nations, une par une",
+          endonymGloss: "les noms de chaque peuple",
           exonym: "Bushmen, puis San",
           imposedBy:
-            "colons anglophones ; « San » est lui-même un exonyme khoekhoe déprécié",
+            "« Bushmen » vient des colons anglophones ; « San » vient d’un mot khoekhoe jugé méprisant",
           pejorative: true,
           sourceRefs: ["saho-khoisan", "san-council-2003"],
         },
@@ -246,17 +254,17 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
     {
       id: "remplacer-nest-pas-reparer",
       stepLabel: "01 · Le peuple",
-      heading: "Remplacer un exonyme par un exonyme ne répare rien",
+      heading: "Changer de nom ne suffit pas toujours",
       blocks: [
         {
           id: "hottentot-bushmen-san",
-          text: "« Hottentot » a été retiré de l'usage savant, puis de la loi. « Bushmen » a été remplacé par « San » dans l'anthropologie de langue anglaise à partir des années 1970. Le second remplacement pose un problème que le premier n'avait pas : « San » est lui-même un mot khoekhoe déprécié, qui désignait les chasseurs-cueilleurs sans bétail.",
+          text: "Selon les sources citées, « Hottentot » a été abandonné dans les travaux de recherche puis dans la loi. À partir des années 1970, les anthropologues de langue anglaise ont remplacé « Bushmen » par « San ». Mais ce dernier nom pose aussi question : il vient d’un mot khoekhoe jugé méprisant, qui désignait les chasseurs-cueilleurs sans bétail.",
           sourceRefs: ["saho-khoisan"],
           figureRefs: [],
         },
         {
           id: "le-nom-de-la-nation",
-          text: "Les intéressés ont tranché autrement. En 2003, leurs représentants ont demandé à être désignés par le nom de leur nation — ǂKhomani, Ju|'hoansi, !Xun — plutôt que par un terme de couverture, quel qu'il soit. La demande porte moins sur le mot que sur l'échelle : un seul nom pour des peuples distincts est déjà une décision prise à leur place.",
+          text: "En 2003, leurs représentants ont demandé à être appelés par le nom de leur propre peuple, comme ǂKhomani, Ju|'hoansi ou !Xun. Ils souhaitaient éviter qu’un seul nom regroupe des peuples distincts sans tenir compte de la manière dont chacun se nomme.",
           sourceRefs: ["san-council-2003", "saho-khoisan"],
           figureRefs: [],
         },
@@ -265,23 +273,23 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
     {
       id: "le-contre-exemple",
       stepLabel: "01 · Le peuple",
-      heading: "Le contre-exemple, sans lequel le reste ne vaut rien",
+      heading: "Le cas différent des Ovaherero",
       blocks: [
         {
           id: "herero-sans-connotation",
-          text: "Le dossier d'appellation des Ovaherero prend soin d'écrire l'inverse de ce qu'on attendrait. « Herero » est l'exonyme international, né du contact colonial — et, à la différence d'autres exonymes coloniaux du corpus, aucune source ne documente de connotation péjorative attachée au mot lui-même.",
+          text: "Notre fiche sur les Ovaherero distingue l'histoire du peuple du sens de son nom. « Herero » est un nom utilisé à l'international et lié au contact colonial. Les sources consultées ne décrivent pas de sens méprisant attaché au mot lui-même.",
           sourceRefs: ["afrik-ppl-herero", "ethnologue-her"],
           figureRefs: [],
         },
         {
           id: "le-genocide-et-le-mot",
-          text: "La fiche va plus loin et dit pourquoi cela compte : la violence coloniale que ce peuple a subie — le génocide herero et nama — porte sur d'autres registres que la dénomination. Confondre les deux serait consoler d'un crime en corrigeant un mot.",
+          text: "La fiche rappelle aussi le génocide des Herero et des Nama. Cette histoire de violence coloniale doit être étudiée pour elle-même. Elle ne permet pas, à elle seule, de conclure que le mot « Herero » a un sens méprisant.",
           sourceRefs: ["afrik-ppl-herero"],
           figureRefs: [],
         },
         {
           id: "la-regle-du-chapitre",
-          text: "D'où la règle que ce chapitre défend : un exonyme n'est pas coupable par sa position. Il l'est par ce qu'il dit, par qui l'a imposé, et par ce que les intéressés en disent aujourd'hui. Un dossier qui condamnerait en bloc perdrait le droit d'être cru sur « Hottentot ».",
+          text: "Pour comprendre un nom donné de l’extérieur, nous regardons son sens, les personnes qui l’ont employé ou imposé et ce qu’en disent aujourd’hui les personnes concernées. Ces éléments varient d’un nom à l’autre.",
           sourceRefs: [],
           figureRefs: [],
         },
@@ -294,13 +302,13 @@ export const CHAPITRE_LE_PEUPLE: DossierChapter = {
       blocks: [
         {
           id: "compter-le-mot-administration",
-          text: "Le corpus enregistre d'où vient un exonyme. Il n'enregistre pas ce qui l'a fait tenir. On peut compter les fiches qui emploient le mot « administration » ; on ne peut pas compter les noms qu'une administration a réellement imposés, et ce chapitre ne le fait pas.",
+          text: "Nos fiches décrivent l'origine de noms donnés de l'extérieur, sans toujours expliquer pourquoi ils ont continué à être utilisés. La présence du mot « administration » dans une fiche ne signifie pas qu'une administration a imposé le nom. Elle ne permet donc pas de compter les noms réellement imposés.",
           sourceRefs: [],
           figureRefs: ["exonyms-imposed-by-administration"],
         },
         {
           id: "les-fiches-muettes",
-          text: "Et il reste les 309 fiches muettes. Elles ne disent pas que tout va bien : elles disent que personne n'a encore regardé. C'est la première dette de ce dossier envers son propre corpus.",
+          text: `${formatNommerFigure({ figureKey: "status-undeclared" })} fiches ne précisent pas si le nom est contesté ou hérité de la colonisation. Ce manque d’information ne signifie pas que ces noms ne posent aucune question. Il reste à les étudier.`,
           sourceRefs: [],
           figureRefs: ["status-undeclared"],
         },

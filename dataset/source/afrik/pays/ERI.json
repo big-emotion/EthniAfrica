@@ -4,8 +4,354 @@
   "nameEn": "Eritrea",
   "nameOfficial": "État d'Érythrée (State of Eritrea, Hagere Ertra)",
   "summary": "L'Érythrée porte un nom grec : « Erythraia », de la mer Rouge qui la borde, repris par la colonisation italienne en 1890. Le territoire relevait du royaume d'Aksoum, puis de chefferies tigrigna, beja et afar. Neuf peuples y sont reconnus, du Tigrinya des hauts plateaux aux Rashaida de la côte.",
-  "etymology": "Le nom \"Érythrée\" vient du grec \"Erythraia\" (Ἐρυθραία), dérivé de \"Mare Erythraeum\" (mer Érythrée), nom donné par les Grecs à la mer Rouge. Le terme signifie \"rouge\" en grec, en référence à la couleur de la mer Rouge. Les Italiens ont adopté ce nom pour leur colonie en 1890.",
+  "etymology": "Le nom \"Érythrée\" viendrait du grec \"Erythraia\" (Ἐρυθραία), qui serait dérivé de \"Mare Erythraeum\" (mer Érythrée), nom donné par les Grecs à la mer Rouge. Le terme viendrait du mot grec pour \"rouge\", en référence à la couleur de la mer Rouge. Les Italiens ont adopté ce nom pour leur colonie en 1890.",
   "nameOriginActor": "Le nom \"Érythrée\" a été donné par les Italiens lors de la création de la colonie italienne en 1890, en référence à la \"mer Érythrée\" (mer Rouge) mentionnée par les Grecs anciens. Le nom a été officialisé à l'indépendance en 1993.",
+  "nameHistory": {
+    "summary": "Le nom Érythrée désigne un pays de la Corne de l'Afrique, l'État d'Érythrée, qui se nomme lui-même Ertra en tigrigna. Il reprend le nom de la colonie italienne créée en 1890, la colonia Eritrea. Les sources ne s'accordent pas sur l'origine de ce nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Érythrée",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une colonie italienne de 1890, gardé par l'État indépendant en 1993 ; son origine reste discutée.",
+        "periodLabel": "Nom de la colonie dès 1890 ; nom de l'État depuis 1993",
+        "accounts": [
+          {
+            "period": {
+              "from": 1993,
+              "to": null,
+              "label": "Depuis le 24 mai 1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Érythrée est celui de l'État indépendant proclamé le 24 mai 1993, après le référendum d'avril, selon la Digithèque MJP. Sa Constitution du 23 mai 1997 s'ouvre sur « L'État d'Érythrée et son territoire ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Érythrée : constitutions et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/er.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Consulté le 10 octobre 2026. « Les Italiens forment en 1889 la colonie à laquelle ils donnent le nom d'Érythrée » ; chronologie : « La colonie d'Érythrée est créée le 1er janvier 1890 » ; « 24 mai 1993 - Proclamation de l'indépendance »."
+              },
+              {
+                "title": "Érythrée, Constitution du 23 mai 1997",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/er1997.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Consulté le 10 octobre 2026. Article premier, « L'État d'Érythrée et son territoire » : « L'Érythrée est un État souverain et indépendant »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Érythrée désigne aujourd'hui l'État de la Corne de l'Afrique riverain de la mer Rouge ; il a d'abord été celui d'une colonie italienne. On l'écrit Eritrea en anglais, Iritriyā en arabe et Ertra en tigrigna. Son origine est discutée ; nous présentons les explications une à une.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, liste préparée par Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 35",
+                "notes": "Entrée Eritrea : noms officiels en arabe (Iritriyā, Dawlat Iritriyā), en anglais (Eritrea, State of Eritrea) et en tigrigna (Iertra, Hagere Iertra, transcrits selon le système BGN/PCGN de 2007) ; noms français Érythrée et État d'Érythrée."
+              },
+              {
+                "title": "Eritrea: What in a Name",
+                "author": "Haile S., Awate",
+                "year": 2021,
+                "url": "https://awate.com/?p=913490",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse érythréen du 18 avril 2021, consulté le 10 octobre 2026. Il cite le décret royal du 1er janvier 1890 : « i possedimenti italiani nel Mar Rosso sono costituiti in una sola colonia col nome di Eritrea » ; il présente l'origine latine Mare Erythraeum, la proposition d'un auteur nommé Johar en faveur de la cité grecque d'Érétrie, et l'idée, qu'il juge peu probable, d'une inscription « ERITRAEA » sous une sibylle peinte par Michel-Ange."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1952,
+              "to": 1962,
+              "label": "De 1952 à 1962"
+            },
+            "statement": "Le nom Érythrée reste celui du territoire quand il est fédéré à l'Éthiopie, sous la souveraineté de la couronne éthiopienne : sa propre Constitution entre en vigueur le 15 septembre 1952. L'union totale avec l'Éthiopie suit le 14 novembre 1962, selon l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "Érythrée, Constitution du 15 septembre 1952",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/er1952.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Consulté le 10 octobre 2026. L'Acte fédéral est ratifié par l'empereur d'Éthiopie le 11 septembre 1952 ; la Constitution de l'Érythrée, adoptée le 10 juillet 1952 par l'Assemblée érythréenne, entre en vigueur le 15 septembre 1952."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 128",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Tableau 5.1 « Chronologie de l'indépendance africaine ». Ligne « Éthiopie (Érythrée) 11/IX/1952 Italie. Administration britannique de 1941 à 1952. Puis fédération de l'Érythrée et de l'Éthiopie en 1952. Union totale le 14/XI/1962. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1er janvier 1890"
+            },
+            "era": "colonial",
+            "statement": "Le nom Érythrée, Eritrea en italien, est donné à la colonie par un décret royal italien du 1er janvier 1890, qui réunit les possessions italiennes de la mer Rouge en une seule colonie « col nome di Eritrea », sous le nom d'Eritrea, selon Haile S. et la Digithèque MJP.",
+            "sources": [
+              {
+                "title": "Eritrea: What in a Name",
+                "author": "Haile S., Awate",
+                "year": 2021,
+                "url": "https://awate.com/?p=913490",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse érythréen du 18 avril 2021, consulté le 10 octobre 2026. Il cite le décret royal du 1er janvier 1890 : « i possedimenti italiani nel Mar Rosso sono costituiti in una sola colonia col nome di Eritrea » ; il présente l'origine latine Mare Erythraeum, la proposition d'un auteur nommé Johar en faveur de la cité grecque d'Érétrie, et l'idée, qu'il juge peu probable, d'une inscription « ERITRAEA » sous une sibylle peinte par Michel-Ange."
+              },
+              {
+                "title": "Érythrée : constitutions et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/er.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Consulté le 10 octobre 2026. « Les Italiens forment en 1889 la colonie à laquelle ils donnent le nom d'Érythrée » ; chronologie : « La colonie d'Érythrée est créée le 1er janvier 1890 » ; « 24 mai 1993 - Proclamation de l'indépendance »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "7 janvier 1890"
+            },
+            "era": "colonial",
+            "statement": "Le nom Érythrée apparaît par écrit sous la forme « colonia Eritrea » dans le journal officiel du royaume d'Italie du 7 janvier 1890, qui annonce un décret organisant l'administration civile de la colonie. C'est la plus ancienne trace de ce nom que le projet a lue lui-même. Le plateau et la côte qu'il désigne étaient habités et nommés bien avant lui.",
+            "formAsWritten": "colonia Eritrea",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Gazzetta Ufficiale del Regno d'Italia, n° 4, mardi 7 janvier 1890",
+                "author": "Royaume d'Italie",
+                "year": 1890,
+                "url": "https://www.gazzettaufficiale.it/eli/gu/1890/01/07/4/sg/pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "première page, sommaire",
+                "notes": "Journal officiel italien, lu dans l'exemplaire numérisé. Le sommaire annonce le « R. decreto numero 6592 (Serie 3ª), che organizza una amministrazione civile nella colonia Eritrea ». Les pages du décret lui-même manquent à l'exemplaire numérisé."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 11 : Le Libéria et l'Éthiopie, 1880-1914 : la survie de deux États africains",
+                "author": "Monday B. Akpan, à partir des contributions d'Abeodu B. Jones et Richard Pankhurst",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 292",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen. « À la fin de 1889, ils occupaient une partie du plateau du Nord ; ils y avaient établi leur Colonie de l'Érythrée, dont la capitale était Asmara. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Érythrée viendrait de Mare Erythraeum, le nom latin, tiré du grec, de la mer qui borde le pays, selon Haile S.",
+            "hypothesisGroup": "origine du nom Érythrée",
+            "sources": [
+              {
+                "title": "Eritrea: What in a Name",
+                "author": "Haile S., Awate",
+                "year": 2021,
+                "url": "https://awate.com/?p=913490",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse érythréen du 18 avril 2021, consulté le 10 octobre 2026. Il cite le décret royal du 1er janvier 1890 : « i possedimenti italiani nel Mar Rosso sono costituiti in una sola colonia col nome di Eritrea » ; il présente l'origine latine Mare Erythraeum, la proposition d'un auteur nommé Johar en faveur de la cité grecque d'Érétrie, et l'idée, qu'il juge peu probable, d'une inscription « ERITRAEA » sous une sibylle peinte par Michel-Ange."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Érythrée viendrait plutôt d'Érétrie, une cité grecque, selon une proposition d'un auteur nommé Johar que rapporte Haile S., sans la retenir.",
+            "hypothesisGroup": "origine du nom Érythrée",
+            "sources": [
+              {
+                "title": "Eritrea: What in a Name",
+                "author": "Haile S., Awate",
+                "year": 2021,
+                "url": "https://awate.com/?p=913490",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse érythréen du 18 avril 2021, consulté le 10 octobre 2026. Il cite le décret royal du 1er janvier 1890 : « i possedimenti italiani nel Mar Rosso sono costituiti in una sola colonia col nome di Eritrea » ; il présente l'origine latine Mare Erythraeum, la proposition d'un auteur nommé Johar en faveur de la cité grecque d'Érétrie, et l'idée, qu'il juge peu probable, d'une inscription « ERITRAEA » sous une sibylle peinte par Michel-Ange."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Érythrée aurait été inspiré par l'inscription « ERITRAEA » placée sous une sibylle que Michel-Ange a peinte à la chapelle Sixtine, selon une idée répandue que rapporte Haile S., qui la juge peu probable.",
+            "hypothesisGroup": "origine du nom Érythrée",
+            "sources": [
+              {
+                "title": "Eritrea: What in a Name",
+                "author": "Haile S., Awate",
+                "year": 2021,
+                "url": "https://awate.com/?p=913490",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse érythréen du 18 avril 2021, consulté le 10 octobre 2026. Il cite le décret royal du 1er janvier 1890 : « i possedimenti italiani nel Mar Rosso sono costituiti in una sola colonia col nome di Eritrea » ; il présente l'origine latine Mare Erythraeum, la proposition d'un auteur nommé Johar en faveur de la cité grecque d'Érétrie, et l'idée, qu'il juge peu probable, d'une inscription « ERITRAEA » sous une sibylle peinte par Michel-Ange."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -499,
+              "to": 99,
+              "label": "Du Ve siècle avant notre ère au Ier siècle"
+            },
+            "statement": "Avant le nom Érythrée, les géographes grecs et romains parlent de mer Érythrée pour désigner l'océan Indien, au moins depuis Hérodote, selon A. M. H. Sheriff. Un guide de navigation grec de la fin du Ier siècle, le Périple de la mer Érythrée, décrit déjà Adoulis, port de la côte de l'actuelle Érythrée, selon F. Anfray.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 22 : La côte d'Afrique orientale et son rôle dans le commerce maritime",
+                "author": "A. M. H. Sheriff",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 598, note 3",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Mer Erythrée était le terme employé par les géographes gréco-romains pour désigner l'océan Indien, au moins depuis l'époque d'Hérodote au Ve siècle avant notre ère. »"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 14 : La civilisation d'Axoum du Ier au VIIe siècle",
+                "author": "F. Anfray",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 389",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Le nom d'Axoum apparaît pour la première fois dans le Périple de la mer Erythrée, guide maritime et commercial composé par un marchand originaire d'Egypte. L'ouvrage date de la fin du Ier siècle. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ertra",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tir",
+        "namedBy": null,
+        "shortLine": "Le nom du pays en tigrigna.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ertra est celui du pays en tigrigna, l'une de ses langues officielles ; l'État s'y nomme Hagere Ertra, que la liste des noms de pays des Nations unies transcrit Iertra et Hagere Iertra. Les sources que nous avons lues ne disent pas depuis quand il est en usage.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, liste préparée par Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 35",
+                "notes": "Entrée Eritrea, tigrigna : « Iertra », « Hagere Iertra », transcription BGN/PCGN de 2007."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Colonia Eritrea",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "ita",
+        "namedBy": "L'administration coloniale italienne",
+        "periodLabel": "De 1890 à 1941",
+        "accounts": [
+          {
+            "period": {
+              "from": 1890,
+              "to": 1941,
+              "label": "De 1890 à 1941"
+            },
+            "era": "colonial",
+            "statement": "Le nom Colonia Eritrea désigne la colonie italienne créée le 1er janvier 1890, jusqu'à l'occupation britannique de 1941 ; l'Italie renonce à « tous droits et titres » sur l'Érythrée par le traité de paix du 10 février 1947, selon la Digithèque MJP.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Érythrée : constitutions et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/er.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Consulté le 10 octobre 2026. « Les Italiens forment en 1889 la colonie à laquelle ils donnent le nom d'Érythrée » ; chronologie : « La colonie d'Érythrée est créée le 1er janvier 1890 » ; « 24 mai 1993 - Proclamation de l'indépendance »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "7 janvier 1890"
+            },
+            "era": "colonial",
+            "statement": "Le nom Colonia Eritrea figure dans le sommaire du journal officiel du royaume d'Italie du 7 janvier 1890 : « colonia Eritrea ». C'est la plus ancienne trace de ce nom que le projet a lue lui-même.",
+            "formAsWritten": "colonia Eritrea",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Gazzetta Ufficiale del Regno d'Italia, n° 4, mardi 7 janvier 1890",
+                "author": "Royaume d'Italie",
+                "year": 1890,
+                "url": "https://www.gazzettaufficiale.it/eli/gu/1890/01/07/4/sg/pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "première page, sommaire",
+                "notes": "Journal officiel italien, lu dans l'exemplaire numérisé. Le sommaire annonce le « R. decreto numero 6592 (Serie 3ª), che organizza una amministrazione civile nella colonia Eritrea ». Les pages du décret lui-même manquent à l'exemplaire numérisé."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
@@ -122,7 +468,7 @@
         "mainRegion": "Hauts plateaux (Asmara, Mendefera)",
         "languages": ["Tigrinya (tir", "ISO 639-3)", "anglais", "arabe"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "\"Təgray\" est l'auto-appellation. \"Tigrinya\" est l'exonyme le plus courant. \"Abyssins\" est un terme oriental/colonial englobant et imprécis qui doit être évité. Distinction importante avec les Tigré (musulmans) qui parlent une langue distincte."
+        "appellationRemarks": "Les personnes concernées se nomment Təgray. Tigrinya est le nom donné de l'extérieur le plus courant. Abyssins est une ancienne désignation orientale et coloniale qui réunit plusieurs peuples sans les distinguer ; elle est à éviter. Les Tigré, musulmans, forment un autre peuple et parlent une autre langue."
       },
       {
         "name": "Tigré",
@@ -135,7 +481,7 @@
         "mainRegion": "Nord-ouest, Sahel (régions côtières et basses terres)",
         "languages": ["Tigré (tig", "ISO 639-3)", "arabe", "tigrinya"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "\"Tigré\" ou \"Tigrayit\" est l'auto-appellation. \"Tigré\" est l'exonyme le plus courant. Distinction importante avec les Tigréens (Tigray) qui parlent le tigrinya et habitent les hauts plateaux. Les Tigré sont majoritairement musulmans, contrairement aux Tigréens chrétiens."
+        "appellationRemarks": "Les personnes concernées se nomment Tigré ou Tigrayit. Tigré est aussi le nom le plus courant à l'extérieur du groupe. Elles se distinguent des Tigréens, ou Tigray, qui parlent tigrinya et vivent sur les hauts plateaux. Les Tigré sont majoritairement musulmans, tandis que les Tigréens sont présentés ici comme chrétiens."
       },
       {
         "name": "Afar",
@@ -150,7 +496,7 @@
         "mainRegion": "Littoral et sud-est",
         "languages": ["Afar (aar", "ISO 639-3)", "arabe"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "\"Qafár\" est l'auto-appellation. \"Afar\" est l'exonyme le plus courant et accepté. \"Danakil\" est un terme européen et arabe ancien qui peut avoir une connotation péjorative et doit être évité."
+        "appellationRemarks": "Les personnes concernées se nomment Qafár. Afar est le nom donné de l'extérieur le plus courant et accepté. Danakil, ancien nom européen et arabe, peut être méprisant ; il est donc à éviter."
       },
       {
         "name": "Saho",
@@ -180,7 +526,7 @@
         "mainRegion": "Régions frontalières avec le Soudan",
         "languages": ["Beja (bej", "ISO 639-3)", "tigré", "arabe"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "\"Bega\" ou \"Hadendowa\" est l'auto-appellation. \"Beja\" est l'exonyme le plus courant. \"Hedareb\" est un terme spécifique pour les Beja d'Érythrée. Pas de terme péjoratif connu. Peuple beja transfrontalier (Soudan-Érythrée)."
+        "appellationRemarks": "Les personnes concernées emploient les noms Bega ou Hadendowa. Beja est le nom donné de l'extérieur le plus courant. Hedareb désigne plus précisément les Beja d'Érythrée. Ce peuple vit de part et d'autre de la frontière entre le Soudan et l'Érythrée. Les sources ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Rashaida",
@@ -253,17 +599,20 @@
       {
         "title": "SIL Ethnologue – Languages of Eritrea",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook – Eritrea",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "UNFPA – World Population Dashboard — Érythrée",
         "url": "https://www.unfpa.org/data/world-population/ER",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "A Chronicle of the Eritrean Revolution\"",
@@ -283,7 +632,8 @@
       {
         "title": "Recensements érythréens",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples de l'Érythrée",
@@ -293,12 +643,14 @@
       {
         "title": "Encyclopaedia Aethiopica",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ],
     "demographics": {

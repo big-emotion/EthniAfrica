@@ -3,6 +3,420 @@
   "nameFr": "Afro-asiatique",
   "nameEn": "Afroasiatic",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom afro-asiatique désigne une famille de langues parlées en Afrique du Nord, au Sahara, dans la Corne de l'Afrique, autour du lac Tchad et au Moyen-Orient. C'est un nom de savants, proposé dans les années 1950 ; on disait avant chamito-sémitique, et des linguistes disent aussi afrasien. Les sources ne s'accordent pas toujours sur ce regroupement ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Afro-asiatique",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste américain Joseph Greenberg",
+        "shortLine": "Un nom de linguiste pour la famille de langues qu'on appelait chamito-sémitique.",
+        "periodLabel": "Depuis les années 1950",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom afro-asiatique désigne pour Joseph Greenberg une famille de cinq branches à peu près égales : le berbère, l'égyptien ancien, le sémitique, le couchitique et le tchadique. Il écrit que le mot « hamitique » n'est plus qu'un nom arbitraire pour les branches qui ne sont pas sémitiques.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 329-330"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom afro-asiatique recouvre un regroupement que des chercheurs africains ont discuté au colloque du Caire sur le peuplement de l'Égypte ancienne. Ils reprochent à Greenberg de ne pas avoir établi de règles phonétiques, et défendent une parenté entre l'égyptien ancien et les langues africaines actuelles, selon une note de ce chapitre.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 329, note 27"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom afro-asiatique, pour D. Olderogge, ne fait que renommer la famille sémito-chamitique. Il propose de son côté de parler de langues « érythréennes ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 317"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1955,
+              "to": 1955,
+              "label": "1955, selon I. M. Diakonoff"
+            },
+            "statement": "Le nom afro-asiatique est proposé par le linguiste américain Joseph Greenberg dans sa classification de 1955, pour remplacer « sémito-chamitique », selon le linguiste soviétique I. M. Diakonoff. Diakonoff ajoute que ce nom est surtout employé aux États-Unis. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Joseph H. Greenberg",
+                "role": "a proposé le nom afro-asiatique dans sa classification des langues d'Afrique"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Afrasian Languages",
+                "author": "I. M. Diakonoff",
+                "year": 1988,
+                "url": "https://archive.org/details/DiakonoffAfrasianLanguages1988",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Moscou, Nauka, 1988, traduit du russe. Lu dans une copie non officielle déposée sur Internet Archive.",
+                "page": "p. 15"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Afrasien",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes soviétiques",
+        "shortLine": "Le nom que les linguistes soviétiques préfèrent donner à la même famille de langues.",
+        "periodLabel": "Années 1980",
+        "accounts": [
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "1988"
+            },
+            "statement": "Le nom afrasien est, selon I. M. Diakonoff, le nom habituel de cette famille en Union soviétique, à côté d'afro-asiatique. Il juge moins heureux d'autres noms proposés, comme « érythréen » ou « lisramique ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Afrasian Languages",
+                "author": "I. M. Diakonoff",
+                "year": 1988,
+                "url": "https://archive.org/details/DiakonoffAfrasianLanguages1988",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Moscou, Nauka, 1988, traduit du russe. Lu dans une copie non officielle déposée sur Internet Archive.",
+                "page": "p. 15"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chamito-sémitique",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes européens, d'après la Bible",
+        "shortLine": "L'ancien nom de cette famille, tiré des noms de Cham et de Sem, deux fils de Noé dans la Bible.",
+        "periodLabel": "De la fin du XIXe siècle aux années 1970",
+        "accounts": [
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "1988"
+            },
+            "statement": "Le nom chamito-sémitique est jugé dépassé par I. M. Diakonoff : les langues africaines de la famille ne forment pas une branche « chamitique » face au sémitique. Il note que le terme restait employé par une partie des savants au début des années 1970.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Afrasian Languages",
+                "author": "I. M. Diakonoff",
+                "year": 1988,
+                "url": "https://archive.org/details/DiakonoffAfrasianLanguages1988",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Moscou, Nauka, 1988, traduit du russe. Lu dans une copie non officielle déposée sur Internet Archive.",
+                "page": "p. 15"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom chamito-sémitique est, selon D. Olderogge, la forme en usage chez les auteurs français ; d'autres disent sémito-chamitique. Il rappelle que le linguiste français Marcel Cohen ne voyait aucune raison de couper cette famille en deux groupes, l'un sémitique, l'autre chamitique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 315"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "Le nom chamito-sémitique réunit pour Marcel Cohen quatre groupes : le sémitique, l'égyptien, le libyco-berbère et le couchitique. Il refuse d'en tirer un groupe « chamitique » à part, faute de preuve d'une parenté plus étroite.",
+            "sources": [
+              {
+                "title": "Les langues du monde, chapitre « Langues chamito-sémitiques »",
+                "author": "Marcel Cohen",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 81-83"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom chamito-sémitique vient du récit biblique de la Genèse, au chapitre 10, où les peuples descendent des trois fils de Noé, Sem, Cham et Japhet, selon I. M. Diakonoff.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Afrasian Languages",
+                "author": "I. M. Diakonoff",
+                "year": 1988,
+                "url": "https://archive.org/details/DiakonoffAfrasianLanguages1988",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Moscou, Nauka, 1988, traduit du russe. Lu dans une copie non officielle déposée sur Internet Archive.",
+                "page": "p. 14"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1877,
+              "label": "1877"
+            },
+            "statement": "Le nom chamito-sémitique apparaît sous la forme allemande « hamito-semitischen Sprachen » chez le linguiste autrichien Friedrich Müller, qui compare le genre grammatical du haoussa à celui de ces langues. Müller classe les langues du monde d'après la chevelure de leurs locuteurs. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "formAsWritten": "hamito-semitischen Sprachen",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Grundriss der Sprachwissenschaft, tome I : Die Sprachen der wollhaarigen Rassen",
+                "author": "Friedrich Müller",
+                "year": 1877,
+                "url": "https://archive.org/details/cihm_45392",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Vienne, Alfred Hölder, 1877. Lu dans la numérisation d'Internet Archive, chapitre sur la langue haoussa. L'auteur classe les langues d'après la chevelure de leurs locuteurs.",
+                "page": "p. 223"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chamitique",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le savant français Ernest Renan, d'après la Bible",
+        "shortLine": "Un nom tiré de Cham, fils de Noé, pour les langues de la famille qui ne sont pas sémitiques.",
+        "periodLabel": "De 1855 au milieu du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom chamitique sert, chez les linguistes allemands Richard Lepsius puis Carl Meinhof, des classements fondés sur le genre grammatical et sur l'idée d'une race supérieure, selon Joseph Greenberg. Meinhof y range en 1912 le peul, le maasaï et le khoekhoe.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 325-327"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom chamitique porte, selon D. Olderogge, une « théorie hamitique » lancée par Carl Meinhof : des peuples venus d'Asie auraient apporté la civilisation en Afrique. Olderogge explique comment les découvertes faites en Afrique ont ruiné cette théorie entre les deux guerres.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 303-304"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "Le nom chamitique est tiré, selon Marcel Cohen, de Cham, l'un des fils de Noé dans la Bible, sur le modèle de « sémitique », dans la seconde moitié du XIXe siècle.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les langues du monde, chapitre « Langues chamito-sémitiques »",
+                "author": "Marcel Cohen",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 83"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "1880"
+            },
+            "statement": "Le nom chamitique désigne chez Richard Lepsius des langues qu'il croit venues d'Asie : l'égyptien, les langues libyques du Nord et du Sahara, avec le haoussa, et les langues couchitiques.",
+            "formAsWritten": "Hamitische",
+            "sources": [
+              {
+                "title": "Nubische Grammatik, mit einer Einleitung über die Völker und Sprachen Afrika's",
+                "author": "Richard Lepsius",
+                "year": 1880,
+                "url": "https://archive.org/details/nubischegrammat00lepsgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, Wilhelm Hertz, 1880. Lu dans la numérisation d'Internet Archive, introduction. L'auteur classe les langues d'Afrique selon des idées de race de son époque.",
+                "page": "p. XV et XVII-XVIII"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1855,
+              "to": 1855,
+              "label": "1855"
+            },
+            "statement": "Le nom chamitique apparaît chez le savant français Ernest Renan, pour qui le berbère, la langue des Touareg et la plupart des langues du nord de l'Afrique « semblent appartenir à une grande famille de langues qu'on peut appeler chamitiques ». Joseph Greenberg date lui aussi ce nom de Renan, en 1855. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "formAsWritten": "chamitiques",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ernest Renan",
+                "role": "a proposé le nom chamitique dans son histoire des langues sémitiques"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale et système comparé des langues sémitiques, première partie",
+                "author": "Ernest Renan",
+                "year": 1855,
+                "url": "https://archive.org/details/histoiregnraleet00rena_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Imprimerie impériale, 1855. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 189"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 324"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1855,
+              "label": "Avant 1855"
+            },
+            "statement": "On parle alors parfois de langues « subsémitiques » pour l'égyptien ancien, le berbère et les langues couchitiques, dont on remarque la ressemblance avec le sémitique, selon Joseph Greenberg.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 324"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Un grand ensemble de langues parlées du Maroc à la Corne de l'Afrique. Son ancien nom, « chamito-sémitique », vient d'une lecture biblique du XIXe siècle, aujourd'hui délaissée par beaucoup de linguistes.",
@@ -113,33 +527,39 @@
       {
         "title": "Glottolog – Afroasiatic overview",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog 5.2 – classification génétique \"Afro-Asiatic [afro1255]\", 5 branches immédiates (Berber, Chadic, Cushitic, Egyptian, Semitic)",
         "url": "https://glottolog.org/resource/languoid/id/afro1255",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethiopian Statistics Service / Population Census Commission (2007) – Summary and Statistical Report of the 2007 Population and Housing Census, Table 2.2 : population Oromo (couchitique) = 25 488 344",
         "url": "https://ess.gov.et/wp-content/uploads/2026/06/national-population-and-housing-census-report-2007.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Kenya National Bureau of Statistics (2019) – 2019 Kenya Population and Housing Census, Volume IV: Distribution of Population by Socio-Economic Characteristics, Table 2.31 : Kenyan Somali (couchitique) = 2 780 502",
         "url": "https://www.knbs.or.ke/wp-content/uploads/2023/09/2019-Kenya-population-and-Housing-Census-Volume-4-Distribution-of-Population-by-Socio-Economic-Characteristics.pdf",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "official_statistics"
       },
       {
         "title": "The DHS Program / ICF – Nigeria Demographic and Health Survey 2018, Final Report (FR359), p. 55 : le hausa (tchadique) est l'ethnie principale de 30 % des femmes et 31 % des hommes enquêtés. ; taux appliqué à la population totale du Nigeria (204 938 755 en 2018, World Bank – SP.POP.TOTL) pour estimer ~61,5 millions de locuteurs",
         "url": "https://dhsprogram.com/pubs/pdf/FR359/FR359.pdf",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "The DHS Program / ICF – Nigeria Demographic and Health Survey 2018, Final Report (FR359), p. 55 : le hausa (tchadique) est l'ethnie principale de 30 % des femmes et 31 % des hommes enquêtés. https://dhsprogram.com/pubs/pdf/FR359/FR359.pdf ; taux appliqué à la population totale du Nigeria (204 938 755 en 2018, World Bank – SP.POP.TOTL) pour estimer ~61,5 millions de locuteurs. https://data.worldbank.org/indicator/SP.POP.TOTL?locations=NG"
       },
       {
         "title": "Haut-Commissariat au Plan du Maroc – Recensement Général de la Population et de l'Habitat (RGPH) 2024, note \"Les expressions linguistiques de la langue Amazighe utilisées par la population\" (23 décembre 2024) : 24,8 % de la population utilise l'amazigh (berbère) au quotidien. ; taux appliqué à la population totale du Maroc (38 081 173 en 2024, World Bank – SP.POP.TOTL) pour estimer ~9,44 millions de locuteurs",
         "url": "https://www.hcp.ma/file/244434/",
         "tier": "official",
+        "source_kind": "official_statistics",
         "notes": "Haut-Commissariat au Plan du Maroc – Recensement Général de la Population et de l'Habitat (RGPH) 2024, note \"Les expressions linguistiques de la langue Amazighe utilisées par la population\" (23 décembre 2024) : 24,8 % de la population utilise l'amazigh (berbère) au quotidien. https://www.hcp.ma/file/244434/ ; taux appliqué à la population totale du Maroc (38 081 173 en 2024, World Bank – SP.POP.TOTL) pour estimer ~9,44 millions de locuteurs. https://data.worldbank.org/indicator/SP.POP.TOTL?locations=MA"
       }
     ]

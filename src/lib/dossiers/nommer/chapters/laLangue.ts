@@ -1,3 +1,4 @@
+import { formatNommerFigure } from "../figures";
 import type { DossierChapter } from "../types";
 
 /**
@@ -18,11 +19,10 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
   key: "la-langue",
   ordinal: "04",
   title: "La langue",
-  question:
-    "Le mot « bantou » range des centaines de peuples. Qui l'a forgé, et pour quoi faire ?",
+  question: "D’où vient le mot « bantou » et que désigne-t-il ?",
   standfirst: {
     id: "standfirst",
-    text: "Une étiquette née dans un bureau colonial classe aujourd'hui la plus grande famille linguistique du continent. Elle est scientifiquement utile et politiquement toxique, et nous continuons de l'employer.",
+    text: "Le nom « bantou » sert à regrouper des langues apparentées. Il a aussi été employé pour classer des populations et les traiter différemment. Nous continuons à l’utiliser pour les langues, en expliquant cette histoire.",
     sourceRefs: ["bleek-1862", "britannica-bleek"],
     figureRefs: ["corpus-language-families"],
   },
@@ -40,19 +40,19 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
       blocks: [
         {
           id: "un-nom-sans-locuteurs",
-          text: "Nous rangeons nos 776 peuples sous vingt-quatre familles linguistiques. La plus vaste porte un nom qui n'a pas de locuteurs : personne ne s'est jamais dit « bantou » avant qu'un linguiste ne l'écrive.",
+          text: `Nos fiches présentent ${formatNommerFigure({ figureKey: "corpus-peoples" })} peuples et ${formatNommerFigure({ figureKey: "corpus-language-families" })} familles de langues. Le nom « bantou », qui désigne l’une des plus grandes familles, a été proposé par un linguiste. Il ne vient pas d’un nom que tous les peuples concernés auraient choisi pour se désigner ensemble.`,
           sourceRefs: [],
           figureRefs: ["corpus-language-families", "corpus-peoples"],
         },
         {
           id: "bleek-et-abantu",
-          text: "Le mot est forgé par Wilhelm Bleek : les historiens de la linguistique le trouvent dans un manuscrit de 1857, il paraît imprimé en 1858, et c'est sa Comparative Grammar of South African Languages, en 1862, qui le répand. Il prend au zoulou abantu, « les gens » — ba-, préfixe de pluriel humain, et -ntu, la personne — et en fait une étiquette de classification. Le geste est ordinaire en philologie comparée du XIXe siècle ; ce qui l'est moins, c'est le lieu.",
+          text: "Les historiens de la linguistique relèvent le mot chez Wilhelm Bleek dans un manuscrit de 1857. Il est imprimé en 1858, puis diffusé par son ouvrage Comparative Grammar of South African Languages, publié en 1862. Bleek s’appuie sur le mot zoulou abantu, « les gens ». Dans ce mot, ba- indique plusieurs personnes et -ntu renvoie à la personne. Il reprend cette forme pour nommer un groupe de langues.",
           sourceRefs: ["bleek-1862", "britannica-bleek"],
           figureRefs: [],
         },
         {
           id: "bleek-dans-ladministration",
-          text: "Bleek était interprète, puis bibliothécaire de l'administration du Cap. Il ne travaillait pas à côté du pouvoir colonial : il travaillait dedans, et lui fournissait des catégories. Cela ne rend pas sa grammaire fausse — l'unité généalogique des langues qu'il regroupe est admise aujourd'hui encore. Cela dit seulement d'où vient le mot, et à qui il a d'abord servi.",
+          text: "Bleek était interprète, puis bibliothécaire dans l’administration du Cap. Ses travaux ont donc été réalisés au sein du pouvoir colonial. La parenté entre les langues qu’il regroupait reste reconnue aujourd’hui. Pour comprendre le nom qu’il leur a donné, il faut aussi connaître ce cadre de travail.",
           sourceRefs: ["britannica-bleek", "saho-bantu"],
           figureRefs: [],
         },
@@ -61,11 +61,11 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
     {
       id: "trois-temps-du-glissement",
       stepLabel: "04 · La langue",
-      heading: "Trois glissements, et un seul est contesté",
+      heading: "Un mot employé dans trois sens différents",
       blocks: [
         {
           id: "le-trajet-du-mot",
-          text: "Ce que la critique vise n'est pas la classification : c'est le trajet qu'un mot a fait depuis elle. Il descend d'une famille de langues à une population, puis d'une population à une catégorie administrative — et chaque descente est un pas que la précédente ne justifiait pas.",
+          text: "Le mot a d’abord désigné une famille de langues. Il a ensuite été appliqué à des peuples, puis utilisé par l’administration pour classer des populations. Ces usages posent des questions différentes : parler des langues apparentées ne signifie pas former un seul peuple.",
           sourceRefs: ["saho-bantu"],
           figureRefs: [],
         },
@@ -78,8 +78,8 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
           {
             cells: [
               "Une famille de langues apparentées",
-              "La linguistique comparée, depuis Bleek",
-              "Admis : la parenté généalogique n'est pas discutée",
+              "Les chercheurs qui comparent les langues, depuis Bleek",
+              "Ces langues sont reconnues comme apparentées",
             ],
             sourceRefs: ["bleek-1862", "saho-bantu"],
             figureRefs: [],
@@ -87,8 +87,8 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
           {
             cells: [
               "Un peuple, ou un ensemble de peuples",
-              "L'ethnographie coloniale, puis l'usage courant",
-              "Contesté : une famille de langues ne décrit aucune population",
+              "Les travaux coloniaux sur les peuples, puis l’usage courant",
+              "Ces langues sont parlées par des peuples différents",
             ],
             sourceRefs: ["saho-bantu"],
             figureRefs: [],
@@ -108,23 +108,23 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
     {
       id: "ce-que-le-prefixe-portait",
       stepLabel: "04 · La langue",
-      heading: "Ce que le préfixe portait, et que l'usage a coupé",
+      heading: "Ce que le début du mot permet de distinguer",
       blocks: [
         {
           id: "le-prefixe-est-grammaire",
-          text: "Les langues de cette famille marquent par un préfixe ce dont elles parlent : la langue, la personne, le peuple, le pays. Ce préfixe n'est pas un ornement — c'est la grammaire qui distingue une langue de ceux qui la parlent, précisément la distinction que le chapitre défend.",
+          text: "Dans les langues présentées ci-dessous, le début du mot peut indiquer si l’on parle d’une langue, d’une personne, d’un peuple ou d’un pays. Cette partie du mot s’appelle un préfixe. Elle aide à distinguer la langue des personnes qui la parlent.",
           sourceRefs: ["bantu-class-prefixes"],
           figureRefs: [],
         },
         {
           id: "le-tswana-en-quatre-mots",
-          text: "Le tswana le montre en quatre mots sur une seule racine : Botswana le pays, Batswana le peuple, Motswana une personne, Setswana la langue. Là où le français et l'anglais disent « tswana » pour les quatre, la langue distinguait.",
+          text: "On retrouve ainsi une même base dans quatre mots : Botswana désigne le pays, Batswana le peuple, Motswana une personne et Setswana la langue. En français et en anglais, l’emploi de « tswana » dans plusieurs de ces sens rend parfois cette distinction moins visible.",
           sourceRefs: ["bantu-class-prefixes"],
           figureRefs: [],
         },
         {
           id: "le-prefixe-coupe",
-          text: "L'usage européen a coupé le préfixe. Ce qui reste est un radical nu qui sert indifféremment de nom de langue, de nom de peuple et d'adjectif — et l'ambiguïté que nous passons notre temps à défaire est en partie née là.",
+          text: "Dans les exemples ci-dessous, les formes européennes ont perdu ce début de mot. Un même mot peut alors servir à nommer la langue, le peuple ou ce qui s’y rapporte. Le contexte devient nécessaire pour savoir de quoi l’on parle.",
           sourceRefs: ["bantu-class-prefixes"],
           figureRefs: [],
         },
@@ -134,7 +134,7 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
           endonym: "isiZulu",
           endonymGloss: "isi-, la langue ; le peuple est amaZulu",
           exonym: "zoulou",
-          imposedBy: "usage européen, préfixe de classe supprimé",
+          imposedBy: "usage européen, début du mot supprimé",
           pejorative: false,
           sourceRefs: ["bantu-class-prefixes"],
         },
@@ -142,7 +142,7 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
           endonym: "Setswana",
           endonymGloss: "se-, la manière et la langue ; le peuple est Batswana",
           exonym: "tswana",
-          imposedBy: "usage européen, préfixe de classe supprimé",
+          imposedBy: "usage européen, début du mot supprimé",
           pejorative: false,
           sourceRefs: ["bantu-class-prefixes"],
         },
@@ -160,7 +160,7 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
             "ki-, la langue ; le nom vient de l'arabe sawāḥil, « les côtes »",
           exonym: "swahili",
           imposedBy:
-            "exonyme arabe devenu glossonyme, puis repris sans son préfixe",
+            "nom d’origine arabe employé pour la langue, puis repris sans ki-",
           pejorative: false,
           sourceRefs: ["bantu-class-prefixes"],
         },
@@ -169,23 +169,23 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
     {
       id: "un-cas-qui-ne-se-resout-pas",
       stepLabel: "04 · La langue",
-      heading: "Un cas qui ne se résout pas",
+      heading: "Pourquoi nous expliquons l’histoire de ce mot",
       blocks: [
         {
           id: "une-insulte-en-afrique-du-sud",
-          text: "En Afrique du Sud, « bantou » est une insulte. Le mot a nommé un ministère, un type d'école et une catégorie de citoyens de seconde classe, et cette mémoire ne se dissout pas parce que la linguistique, elle, l'emploie sans arrière-pensée.",
+          text: "En Afrique du Sud, « bantou » a servi à nommer un ministère, des écoles séparées et une catégorie de citoyens privés de certains droits. Le mot peut donc être reçu comme une insulte. Son emploi pour décrire des langues ne fait pas disparaître cette histoire.",
           sourceRefs: ["saho-bantu", "bantu-education-act-1953"],
           figureRefs: [],
         },
         {
           id: "aucun-substitut",
-          text: "Partout ailleurs, il reste le terme technique standard, et aucun substitut ne recouvre la même famille. « Niger-congo » désigne un ensemble bien plus large ; les périphrases régionales laissent dehors la moitié des langues concernées. Renoncer au mot, ce serait renoncer à dire une parenté réelle.",
+          text: "Les linguistes continuent à employer « bantou » pour cette famille de langues. « Niger-congo » désigne un ensemble plus large, et un nom de région ne couvrirait pas toutes les langues concernées. Ces termes ne peuvent donc pas simplement le remplacer.",
           sourceRefs: ["saho-bantu"],
           figureRefs: [],
         },
         {
           id: "garder-et-expliquer",
-          text: "Nous tranchons donc dans un seul sens : nous gardons le mot et nous l'expliquons. C'est l'application la plus nette de notre propre doctrine — rien n'est interdit, tout est étiqueté — et c'est aussi la position la moins confortable, parce qu'elle n'offre à personne le soulagement d'un mot neuf.",
+          text: "Nous gardons « bantou » pour désigner la famille de langues et nous expliquons son histoire. Lorsque les sources l’emploient pour des populations, nous précisons le contexte et les problèmes que cet usage pose.",
           sourceRefs: [],
           figureRefs: [],
         },
@@ -198,13 +198,13 @@ export const CHAPITRE_LA_LANGUE: DossierChapter = {
       blocks: [
         {
           id: "glossonyme-nest-pas-ethnonyme",
-          text: "Un glossonyme n'est pas un ethnonyme, et une famille linguistique ne décrit pas une population — encore moins une ascendance. Que deux peuples parlent des langues apparentées dit qu'un mot a voyagé, pas que des gens l'ont porté.",
+          text: "Le nom d’une langue et le nom d’un peuple ne désignent pas la même chose. Le fait que deux peuples parlent des langues apparentées ne suffit pas à établir l’origine de leurs habitants ou à reconstituer leurs déplacements.",
           sourceRefs: [],
           figureRefs: [],
         },
         {
           id: "le-classement-est-un-outil",
-          text: "Le corpus range pourtant chaque peuple sous une famille, et cette page en est la meilleure critique disponible : le classement est un outil de lecture, jamais une origine. Là où nous employons une étiquette forgée ailleurs, nous le disons sur la fiche plutôt qu'ici.",
+          text: "Nos fiches regroupent les peuples par famille de langues pour faciliter la lecture. Ce classement ne décrit pas l'origine des personnes. Lorsqu'un nom de groupe a été donné de l'extérieur, la fiche le précise.",
           sourceRefs: [],
           figureRefs: [],
         },
