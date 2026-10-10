@@ -10,12 +10,29 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
-### Removed
+## [5.0.0] - 2026-10-10
 
-- The English site. EthniAfrica publishes in French only: `SITE_LOCALE_MODE`, the
-  language switcher, the `ethni-locale` cookie, hreflang alternates and every English
-  copy bank are gone. Retired `/en/...` addresses answer with a permanent 308 to their
-  French page, and `robots.txt` lets crawlers follow them.
+### Added
+
+- Name history: every fiche model carries a shared `nameHistory` block (who named whom,
+  when and why: names, the birth of each name, dated accounts, competing origins as
+  unranked hypotheses, what existed before the name, an era per account). Every country
+  (54), every linguistic family (25), the places, the word « race » and 140 peoples
+  now have one, each source opened and typed.
+- Search: the result page opens on an « Histoire du nom » timeline when the searched
+  subject has a name history — one name at a time, the searched name first and leading to
+  the self-name, the birth of the name marked, hypotheses grouped, « Pendant ce temps,
+  ailleurs » anchors mixing African and French/Belgian school history.
+- Sources: readers see a source's type, never its tier or a confidence score; a coloured
+  diamond after each passage opens its sources, with a colour key (oral or community, book
+  or study, encyclopedia, press, public report, archive, other).
+- Sources: new kinds `press`, `encyclopedia`, `ngo` and `missionary_database`; about 4,700
+  fiche sources typed by explicit rules, with a coverage ratchet.
+- Places: a place fiche class, a page at `/fr/atlas/lieux/{id}` and `/api/v2/places`.
+- Words: word fiches (`WRD_*`), `/api/v2/words`, and a searched word as a subject of the
+  result page.
+- AI-written sources: a guard (CI ratchet and local pre-push hook) and a reviewed ledger;
+  100 AI sources decided and replaced or kept as « Synthèse à vérifier ».
 
 ### Changed
 
@@ -23,6 +40,29 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
   `GET /api/v2/quiz/scopes` and `GET /api/v2/quiz/session` accepts only `fr`; `lang=en`
   is refused with 400. `language` in the `POST /api/v2/flags` body is documented as `fr`
   only (other values still fall back to French). Search no longer matches English names.
+- Corpus: name histories replace the old `noms/` name records; the name index is projected
+  from each fiche (migrations 098–105).
+- Corpus: oral tradition weighs like writing, and several narratives from one carrier count
+  once in the confidence score.
+- Corpus: 273 etymologies stating an origin as fact are rewritten as attributed hypotheses,
+  with a ratchet.
+- Corpus: duplicate people fiches are folded into their keepers (`PPL_JOLA` into
+  `PPL_DIOLA`, and fourteen more such as `PPL_ASHANTI` into `PPL_ASANTE`); retired ids
+  redirect, in pages and in `/api/v2/peoples/{id}`.
+- API (breaking): `/api/v2/search/companions` no longer returns `images`.
+
+### Fixed
+
+- Accessibility: the charter focus ring is visible again on every control that uses it.
+- Search: a name shared by several subjects stays the page title on the name-history lens,
+  and every subject sharing it is shown.
+
+### Removed
+
+- The English site. EthniAfrica publishes in French only: `SITE_LOCALE_MODE`, the
+  language switcher, the `ethni-locale` cookie, hreflang alternates and every English
+  copy bank are gone. Retired `/en/...` addresses answer with a permanent 308 to their
+  French page, and `robots.txt` lets crawlers follow them.
 
 ## [4.23.0] - 2026-10-06
 
@@ -1581,7 +1621,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v4.23.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.0.0...HEAD
+[5.0.0]: https://github.com/big-emotion/ethniafrica/compare/v4.23.0...v5.0.0
 [4.23.0]: https://github.com/big-emotion/ethniafrica/compare/v4.22.0...v4.23.0
 [4.22.0]: https://github.com/big-emotion/ethniafrica/compare/v4.21.0...v4.22.0
 [4.21.0]: https://github.com/big-emotion/ethniafrica/compare/v4.20.0...v4.21.0
