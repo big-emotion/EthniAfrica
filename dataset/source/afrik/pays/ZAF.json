@@ -6,6 +6,475 @@
   "summary": "L'Afrique du Sud porte un nom purement géographique, officialisé en 1961. Peuples khoïsan, royaumes nguni et chefferies sotho-tswana en occupaient le territoire avant la colonie du Cap. Onze langues officielles y disent une histoire faite de royaumes africains, de colonisation européenne et de sortie de l'apartheid.",
   "etymology": "Le nom \"Afrique du Sud\" est géographique, désignant la position du pays à l'extrémité australe du continent africain. Le nom a été officialisé en 1961 lors de la proclamation de la République. Avant cela, le territoire était appelé \"Union sud-africaine\" (1910-1961).",
   "nameOriginActor": "Le nom \"Afrique du Sud\" est géographique et a été officialisé par les autorités sud-africaines en 1961. Les navigateurs portugais utilisaient \"Cabo da Boa Esperança\" (Cap de Bonne-Espérance) pour désigner la région du Cap.",
+  "nameHistory": {
+    "summary": "Le nom Afrique du Sud désigne un pays situé à la pointe sud du continent, la République d'Afrique du Sud, qui se nomme ainsi elle-même, South Africa en anglais et Suid-Afrika en afrikaans. D'autres noms existent : Union sud-africaine, de 1910 à 1961, et Azania, que des mouvements de libération proposent depuis 1959. Les sources ne s'accordent pas sur l'origine du nom Azania ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Afrique du Sud",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de position, le sud du continent, devenu celui de l'Union en 1910 puis de la République.",
+        "periodLabel": "Écrit dès 1812 ; nom de l'État depuis 1910",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": null,
+              "label": "Depuis 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Afrique du Sud est celui de la République d'Afrique du Sud, « un État souverain et démocratique » selon la section 1 de sa Constitution de 1996. Le préambule de ce texte s'achève sur une prière en plusieurs langues, où le pays est nommé Suid-Afrika en afrikaans et South Africa en anglais.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution of the Republic of South Africa, 1996 (Act 108 of 1996)",
+                "author": "République d'Afrique du Sud",
+                "year": 1996,
+                "url": "https://www.gov.za/sites/default/files/images/a108-96.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "préambule et section 1",
+                "notes": "Texte publié par le gouvernement sud-africain, version mise à jour jusqu'aux amendements de 2003, lu en ligne. La section 1 dit : « The Republic of South Africa is one, sovereign, democratic state ». Le préambule s'achève sur une prière en plusieurs langues, dont « God seën Suid-Afrika. God bless South Africa. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1961,
+              "to": 1961,
+              "label": "31 mai 1961"
+            },
+            "era": "modern",
+            "statement": "Le nom Afrique du Sud reste celui de l'État quand l'Union sud-africaine devient, le 31 mai 1961, une république hors du Commonwealth britannique. Le pays est alors dirigé par une minorité blanche, sous le régime de l'apartheid que le Parti national a instauré en 1948, selon Ali A. Mazrui et Locksley Edmondson.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 128, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : Afrique du Sud, 31 mai 1910, puissance coloniale la Grande-Bretagne (« Suid Afrika ») ; union de quatre colonies ; l'Union devient une république hors du Commonwealth britannique le 31 mai 1961 ; « dirigée par une minorité blanche »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 28 : L'Afrique et les régions en développement",
+                "author": "Locksley Edmondson",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 883",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui. Le Parti national, qui représente le nationalisme afrikaner, instaure officiellement l'apartheid après sa victoire aux élections de 1948."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "31 mai 1910"
+            },
+            "era": "modern",
+            "statement": "Le nom Afrique du Sud devient celui d'un État le 31 mai 1910 : la loi britannique de 1909 unit les colonies du Cap de Bonne-Espérance, du Natal, du Transvaal et de la colonie du fleuve Orange sous le nom d'Union sud-africaine, selon le texte de cette loi et le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "South Africa Act 1909",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1909,
+                "url": "https://www.legislation.gov.uk/ukpga/Edw7/9/9/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 4",
+                "notes": "Loi du 20 septembre 1909, lue dans le fac-similé de l'édition originale publié sur le site officiel de la législation britannique. La section 4 unit les colonies du Cap de Bonne-Espérance, du Natal, du Transvaal et de la colonie du fleuve Orange « under the name of the Union of South Africa »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 128, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : Afrique du Sud, 31 mai 1910, puissance coloniale la Grande-Bretagne (« Suid Afrika ») ; union de quatre colonies ; l'Union devient une république hors du Commonwealth britannique le 31 mai 1961 ; « dirigée par une minorité blanche »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Afrique du Sud désigne aujourd'hui un État. En anglais, l'adjectif South African se rapporte avant 1910 à toute l'Afrique australe, puis à l'Union sud-africaine, puis à la République, selon le Dictionary of South African English. Le nom décrit une position sur le continent ; nous n'avons pas trouvé de source qui discute son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English, entrée « South African »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/south-african/e06724",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire historique en ligne, consulté le 10 octobre 2026. Avant 1910, l'adjectif se rapporte à l'Afrique australe ou à ses habitants ; de 1910 à 1961, à l'Union sud-africaine ; depuis 1961, à la République d'Afrique du Sud. Plus ancienne citation de l'adjectif : 1824."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1818,
+              "to": 1818,
+              "label": "1818"
+            },
+            "statement": "Le nom South Africa désigne alors une région aux limites floues, qui va jusqu'au Congo pour certains auteurs : le récit de l'expédition de James Hingston Tuckey, publié à Londres en 1818, situe le fleuve Zaïre, ou Congo, « in South Africa ».",
+            "formAsWritten": "South Africa",
+            "sources": [
+              {
+                "title": "Narrative of an expedition to explore the river Zaire, usually called the Congo, in South Africa, in 1816",
+                "author": "James Hingston Tuckey",
+                "year": 1818,
+                "url": "https://archive.org/details/narrativeofexped00tuck",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Londres, John Murray, 1818, lu dans l'exemplaire numérisé des bibliothèques de l'université de Californie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1815,
+              "to": 1815,
+              "label": "1815"
+            },
+            "era": "colonial",
+            "statement": "Le nom South Africa figure au titre du récit de voyage du missionnaire John Campbell, publié à Londres en 1815. Il y raconte sa visite aux stations de la Société missionnaire de Londres situées dans la colonie du Cap de Bonne-Espérance et près d'elle, selon la dédicace du livre.",
+            "formAsWritten": "South Africa",
+            "sources": [
+              {
+                "title": "Travels in South Africa, undertaken at the request of the Missionary Society",
+                "author": "John Campbell",
+                "year": 1815,
+                "url": "https://archive.org/details/travelsinsouthaf00camp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et dédicace",
+                "notes": "Londres, Black and Parry, 1815, lu dans l'exemplaire numérisé des bibliothèques de l'université de Californie. La dédicace présente le livre comme le récit de la visite de l'auteur aux stations de la Société missionnaire « in and near the Colony » du Cap de Bonne-Espérance."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1812,
+              "to": 1812,
+              "label": "1812"
+            },
+            "era": "colonial",
+            "statement": "Le nom South Africa apparaît par écrit au titre d'un mémoire que la Société missionnaire de Londres consacre au pasteur Johannes Theodorus Van der Kemp, « late missionary in South Africa », dans sa troisième édition, datée de 1812. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples et les royaumes du pays existaient bien avant lui.",
+            "formAsWritten": "South Africa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Memoir of the Rev. J. T. Van der Kemp, M.D., late missionary in South Africa, troisième édition",
+                "author": "Missionary Society (Londres)",
+                "year": 1812,
+                "url": "https://archive.org/details/memoirofrevjtvan00unse_1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Londres, imprimé pour la Société par J. Dennett, 1812, lu dans l'exemplaire numérisé de la bibliothèque du Princeton Theological Seminary. Le titre porte « late missionary in South Africa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1652,
+              "to": 1795,
+              "label": "De 1652 à 1795"
+            },
+            "era": "colonial",
+            "statement": "Avant le nom Afrique du Sud, on parle du Cap pour désigner la colonie que les Hollandais occupent de 1652 à 1795, avant que les Britanniques ne s'en emparent, selon D. Denoon.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 23 : L'Afrique australe",
+                "author": "D. Denoon",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 746",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot. Les Hollandais occupent Le Cap de 1652 à 1795, les Britanniques s'en emparent en 1795 ; l'établissement de la colonie du Cap a des conséquences pour toute la région."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Union sud-africaine",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Du 31 mai 1910 au 31 mai 1961",
+        "accounts": [
+          {
+            "period": {
+              "from": 1910,
+              "to": 1961,
+              "label": "Du 31 mai 1910 au 31 mai 1961"
+            },
+            "era": "modern",
+            "statement": "Le nom Union sud-africaine est celui de l'État formé le 31 mai 1910 par l'union de quatre colonies : le Cap, le Natal, l'État libre d'Orange et le Transvaal. L'Union devient une république le 31 mai 1961, selon le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 128, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : Afrique du Sud, 31 mai 1910, puissance coloniale la Grande-Bretagne (« Suid Afrika ») ; union de quatre colonies ; l'Union devient une république hors du Commonwealth britannique le 31 mai 1961 ; « dirigée par une minorité blanche »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "20 septembre 1909"
+            },
+            "era": "colonial",
+            "statement": "Le nom Union sud-africaine apparaît par écrit dans la loi britannique du 20 septembre 1909, qui prévoit d'unir les colonies du Cap de Bonne-Espérance, du Natal, du Transvaal et de la colonie du fleuve Orange « under the name of the Union of South Africa ». C'est la plus ancienne trace de ce nom que le projet connaît. Ces colonies existaient déjà avant lui.",
+            "formAsWritten": "Union of South Africa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "South Africa Act 1909",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1909,
+                "url": "https://www.legislation.gov.uk/ukpga/Edw7/9/9/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 4",
+                "notes": "Loi du 20 septembre 1909, lue dans le fac-similé de l'édition originale publié sur le site officiel de la législation britannique. La section 4 unit les colonies du Cap de Bonne-Espérance, du Natal, du Transvaal et de la colonie du fleuve Orange « under the name of the Union of South Africa »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Azania",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom antique de la côte est-africaine, repris pour l'Afrique du Sud par des mouvements de libération.",
+        "periodLabel": "Écrit dès le Ier siècle ; proposé pour l'Afrique du Sud en 1959",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Azania désigne l'Afrique du Sud, et plus précisément une Afrique du Sud libre et non raciale, chez les membres des mouvements de la Conscience noire et des mouvements africanistes, selon le Dictionary of South African English. Son origine est discutée ; nous présentons les hypothèses plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English, entrée « Azania »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Azania/e00422",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire historique en ligne, consulté le 10 octobre 2026. Définition : « South Africa; a free, non-racial South Africa », parmi les membres des mouvements de la Conscience noire et africanistes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Azania est repris en 1976, sous l'apartheid, par l'Organisation des peuples africains d'Azanie, l'AZAPO, créée l'année des émeutes de Soweto pour mieux mobiliser les forces politiques, selon David Chanaiwa.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 10 : L'Afrique australe",
+                "author": "David Chanaiwa",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 301",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui. En 1976, année des grèves et des émeutes de Soweto, est créée l'Azanian African People's Organization (AZAPO), « Organisation des peuples africains d'Azanie », pour mieux mobiliser toutes les forces politiques."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1968,
+              "to": 1968,
+              "label": "1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Azania désigne l'Afrique du Sud de l'apartheid dans une déclaration du Congrès panafricain citée en 1968 par l'Africa Research Bulletin, qui parle de « la jeunesse révolutionnaire d'Azanie ». C'est la plus ancienne citation de ce sens que relève le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English, entrée « Azania »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Azania/e00422",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire historique en ligne, consulté le 10 octobre 2026. Citation de 1968, Africa Research Bulletin, vol. 5, n° 6, p. 1102 : une déclaration du Congrès panafricain dit qu'une mort héroïque « will always inspire the revolutionary youth of Azania »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "1959, rapporté en 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Azania aurait été proposé pour l'Afrique du Sud en 1959, sous l'apartheid, par un membre du Congrès panafricain, Peter Raborko selon l'orthographe de la citation, d'après l'historien F. A. van Jaarsveld dans le Sunday Times de 1990, cité par le Dictionary of South African English. Le Congrès panafricain n'a jamais adopté officiellement ce nom, ajoute-t-il.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English, entrée « Azania »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Azania/e00422",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire historique en ligne, consulté le 10 octobre 2026. Citation de F. A. van Jaarsveld, Sunday Times, 20 mai 1990, p. 14 : « In 1959 Peter Raborko of the Pan Africanist Congress proposed the name Azania. While the PAC has never officially accepted the name, it has found wide favour among a cross-section of black groups. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "statement": "Le nom Azania est donné en 1932 par le romancier anglais Evelyn Waugh à un empire imaginaire, l'« Empire of Azania », dans son roman Black Mischief, selon le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English, entrée « Azania »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Azania/e00422",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire historique en ligne, consulté le 10 octobre 2026. Citation de 1932, Evelyn Waugh, Black Mischief : « Amurath renamed it the Empire of Azania. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -100,
+              "to": 100,
+              "label": "Ier siècle, date débattue"
+            },
+            "era": "polity",
+            "statement": "Le nom Azania apparaît par écrit dans le Périple de la mer Érythrée, un guide grec de navigation, où il désigne la côte orientale de l'Afrique au sud du cap Hafun, selon Abdul M. H. Sheriff. Sheriff date ce texte de la seconde moitié du Ier siècle avant notre ère ; le Dictionary of South African English parle du Ier siècle de notre ère. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 22 : La côte d'Afrique orientale et son rôle dans le commerce maritime",
+                "author": "Abdul M. H. Sheriff",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 605 et 608",
+                "notes": "UNESCO, volume dirigé par Gamal Mokhtar. L'Azania est le « nom donné par les Romains à la côte orientale d'Afrique au sud de Ras Hafun » (p. 608) ; le Périple, que l'auteur situe « dans la seconde moitié du Ier siècle avant notre ère », en décrit les villes-marchés (p. 605) ; il signale qu'un autre auteur adopte une date plus tardive."
+              },
+              {
+                "title": "Dictionary of South African English, entrée « Azania »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Azania/e00422",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire historique en ligne, consulté le 10 octobre 2026. Étymologie : forme grecque attestée au Ier siècle de notre ère ; citation de 1912, traduction du Périple par W. H. Schoff : « the very last market town of the continent of Azania, which is called Rhapta »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Azania viendrait de l'arabe Zanj, qui désigne un Africain à la peau sombre ; on retrouverait le même élément dans Zanzibar et dans Tanzanie, selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Azania",
+            "sources": [
+              {
+                "title": "Dictionary of South African English, entrée « Azania »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Azania/e00422",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire historique en ligne, consulté le 10 octobre 2026. Étymologie : « probably from Arabic Zanj a dark-skinned African » ; l'élément zan- apparaîtrait aussi dans Zanzibar et Tanzania."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Rapportée en 1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Azania voudrait dire « pays de l'homme noir » : c'est le sens que lui donnaient ceux qui l'ont adopté, selon J. Grobler, cité par le Dictionary of South African English. Pour eux, South Africa était un nom colonial et raciste.",
+            "hypothesisGroup": "origine du nom Azania",
+            "sources": [
+              {
+                "title": "Dictionary of South African English, entrée « Azania »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Azania/e00422",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire historique en ligne, consulté le 10 octobre 2026. Citation de J. Grobler, Decisive Clash, 1988, p. 156 : le Congrès panafricain tenait « South Africa » pour un « racist colonial name » et lui donna un nouveau nom, Azania, « which they claimed to mean Black man's country »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Rapportée en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Azania aurait été emprunté au roman Black Mischief d'Evelyn Waugh : le Congrès panafricain aurait écrit à l'écrivain pour lui demander de le reprendre pour la future Afrique du Sud libérée, selon Christopher Hitchens, que cite Jeffrey Manley en relevant que Hitchens ne donne pas de source.",
+            "hypothesisGroup": "origine du nom Azania",
+            "sources": [
+              {
+                "title": "Source of Azania",
+                "author": "Jeffrey Manley, Evelyn Waugh Society",
+                "year": 2016,
+                "url": "https://evelynwaughsociety.org/2016/source-of-azania/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Billet du 16 janvier 2016, consulté le 10 octobre 2026. Il rapporte, d'après Christopher Hitchens, que le Congrès panafricain aurait écrit à Waugh pour lui demander de reprendre le nom Azania de son roman Black Mischief pour la future Afrique du Sud libérée, et précise que Hitchens ne donne pas de source pour cette lettre."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

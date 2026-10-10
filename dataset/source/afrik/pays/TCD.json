@@ -6,6 +6,450 @@
   "summary": "Le Tchad porte le nom de son lac, et ce que ce nom signifiait n'est pas établi : le kanouri l'emploie comme nom propre et dispose d'autres mots pour dire « lac », et Nachtigal le rapportait non au kanembu mais au boudouma, la langue des îles. Royaumes du Kanem et du Bornou, chefferies sara : son territoire articule Sahara, Sahel et savane. Sara, Arabes tchadiens, Kanembu et Toubou y font coexister traditions soudaniques et sahariennes.",
   "etymology": "Le pays porte le nom du lac Tchad, autour duquel se sont construits le Kanem puis le Bornou. Ce que le mot désignait avant de désigner ce lac n'est pas établi, et l'explication couramment donnée — un mot kanembu signifiant « grande étendue d'eau » — ne se retrouve dans aucune des sources consultées.\n\nLes premiers Européens à atteindre le lac, Dixon Denham et Hugh Clapperton, emploient en 1826 la forme « Tchad » sans jamais la traduire. Sigismund Koelle, premier lexicographe du kanouri, écrit en 1854 que Tsade est « le lac d'eau douce bien connu, que d'autres peuples appellent aussi Tsad » : il en fait un nom propre et ne lui donne pas de sens. Le dictionnaire anglais-kanouri de Norbert Cyffer, en 1994, garde Sáde pour le lac Tchad mais rend « lac » par kulúwu ou njî kúra, littéralement la grande eau — autrement dit, le kanouri ne se sert pas de ce mot-là pour dire un lac. Gustav Nachtigal, qui séjourne dans la région dans les années 1870, rapportait le terme au boudouma, la langue des habitants des îles, avec le sens d'une grande accumulation d'eau : ce n'est ni la même langue ni le même peuple que le kanembu.\n\nLe mécanisme souvent invoqué, celui du voyageur qui demande le nom d'un lieu et à qui l'on répond ce que la chose est, n'est documenté par aucun des auteurs lus ici pour le lac Tchad. Denham ne rapporte pas d'échange de ce genre. Le présenter comme l'histoire du nom serait une reconstruction.",
   "nameOriginActor": "Le nom est celui du lac, repris par l'administration coloniale française pour désigner le territoire au début du XXe siècle, puis conservé à l'indépendance. Qui a nommé le lac, et dans quelle langue, reste discuté : le kanouri emploie le mot comme nom propre sans le traduire, Nachtigal le rapportait au boudouma, et aucune source consultée ne l'attribue au kanembu.",
+  "nameHistory": {
+    "summary": "Le nom Tchad désigne un pays d'Afrique centrale, la République du Tchad, qui porte le nom d'un grand lac. Les Kanouri appellent ce lac Tsade et les Budduma, qui vivent sur ses îles, l'appellent Kulû. Sous la colonisation française, le pays s'est aussi appelé territoire militaire des pays et protectorats du Tchad, puis territoire du Tchad. Les sources ne s'accordent pas sur le sens premier du nom Tchad ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Tchad",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un lac, écrit Zad dès 1799, devenu celui d'un territoire en 1900 et de l'État en 1960.",
+        "periodLabel": "Écrit dès 1799 ; nom d'un territoire depuis 1900 et de l'État depuis 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": null,
+              "label": "Depuis le 11 août 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Tchad est celui de la République du Tchad, indépendante depuis le 11 août 1960. Le pays était auparavant une colonie, puis un territoire d'outre-mer français, selon la Digithèque de l'université de Perpignan et le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Indépendance de la République du Tchad, 11 août 1960",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/td1960ind.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Le Tchad, possession française depuis 1900 et colonie depuis 1920, devient territoire d'outre-mer en 1946 ; la République du Tchad est proclamée le 28 novembre 1958 et indépendante le 11 août 1960."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances africaines : Tchad, 11 août 1960, ancienne puissance coloniale la France."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "28 novembre 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tchad devient celui d'une république le 28 novembre 1958. Ce jour-là, l'Assemblée territoriale, réunie à Fort-Lamy, choisit pour le territoire le statut d'État membre de la Communauté et proclame la République du Tchad, selon la Digithèque de l'université de Perpignan.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Tchad, proclamation de la République, 28 novembre 1958",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/td1958.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Reproduit la délibération n° 93/58 par laquelle l'Assemblée territoriale, réunie à Fort-Lamy, fait adopter par le territoire du Tchad le statut d'État membre de la Communauté et proclame la République du Tchad."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "17 mars 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tchad devient celui d'une colonie par le décret du 17 mars 1920, qui fait du territoire du Tchad une colonie de l'Afrique-Équatoriale française, selon le texte que publie la Digithèque de l'université de Perpignan.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Tchad, colonie française : décrets de 1900 à 1920",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/td1900.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Reproduit les décrets du 5 septembre 1900, du 30 juin 1914, du 14 mai 1915 et du 17 mars 1920, précédés d'une chronologie : le territoire militaire des pays et protectorats du Tchad devient en 1903 le territoire militaire du Tchad, puis une colonie en 1920."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "5 septembre 1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tchad passe du lac à un territoire avec le décret du 5 septembre 1900. Ce décret crée le territoire militaire des pays et protectorats du Tchad, qui réunit le bassin du Chari, le Baguirmi, le Ouadaï et le Kanem, selon le texte que publie la Digithèque de l'université de Perpignan.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Tchad, colonie française : décrets de 1900 à 1920",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/td1900.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Reproduit les décrets du 5 septembre 1900, du 30 juin 1914, du 14 mai 1915 et du 17 mars 1920, précédés d'une chronologie : le territoire militaire des pays et protectorats du Tchad devient en 1903 le territoire militaire du Tchad, puis une colonie en 1920."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Tchad s'écrit Tsade chez le linguiste Sigismund Koelle, dans un recueil de récits en kanouri. Une note le présente comme le lac d'eau douce bien connu, sans lui donner de sens.",
+            "formAsWritten": "Tsade",
+            "sources": [
+              {
+                "title": "African native literature, or Proverbs, tales, fables, and historical fragments in the Kanuri or Bornu language",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/africannativelit00koel",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 242, note",
+                "notes": "Londres, Church Missionary House, 1854, lu dans l'exemplaire numérisé. Une note présente Tsade comme « the well-known sweet-water lake », sans lui donner de sens."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1823,
+              "to": 1826,
+              "label": "Vu en 1823, publié en 1826"
+            },
+            "era": "polity",
+            "statement": "Le nom Tchad s'écrit ainsi chez l'officier britannique Dixon Denham, qui arrive le 4 février 1823 en vue du « grand lac Tchad ». Son récit, publié en 1826, emploie cette forme sans la traduire.",
+            "formAsWritten": "Tchad",
+            "sources": [
+              {
+                "title": "Narrative of travels and discoveries in Northern and Central Africa, in the years 1822, 1823, and 1824",
+                "author": "Dixon Denham, Hugh Clapperton et Walter Oudney",
+                "year": 1826,
+                "url": "https://archive.org/details/narrativetravel00browgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35",
+                "notes": "Londres, John Murray, 1826, lu dans l'exemplaire numérisé. Le 4 février 1823, en arrivant à Lari, Denham voit « the great lake Tchad » ; la forme Tchad revient dans tout le livre sans être traduite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1818,
+              "to": 1821,
+              "label": "Notes de voyage de 1818 à 1820, publiées en 1821"
+            },
+            "era": "polity",
+            "statement": "Le nom Tchad est écrit Tsad par le voyageur britannique George Francis Lyon, qui recueille au Fezzan des informations sur le Bornou. Selon le neveu d'un cadi, le Tsad n'est pas un fleuve mais un immense lac, qu'on appelle aussi Gambarro ou le Nil.",
+            "formAsWritten": "Tsad",
+            "sources": [
+              {
+                "title": "A narrative of travels in Northern Africa, in the years 1818, 19, and 20",
+                "author": "George Francis Lyon",
+                "year": 1821,
+                "url": "https://archive.org/details/narrativeoftrave00lyon",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 123-125",
+                "notes": "Londres, John Murray, 1821, lu dans l'exemplaire numérisé. Notices sur le Bornou recueillies au Fezzan : « The Tsad is not a river, but an immense Lake » ; il est aussi appelé Gambarro et, souvent, le Nil."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1817,
+              "label": "Avant 1817, publié en 1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Tchad est écrit Tsad par le voyageur Jean Louis Burckhardt, d'après un homme du Bornou : pour lui, le Tsad est un grand fleuve qui passe près de la capitale, Birni. Burckhardt y reconnaît le Zad dont parlait Frederick Hornemann.",
+            "formAsWritten": "Tsad",
+            "sources": [
+              {
+                "title": "Travels in Nubia",
+                "author": "John Lewis Burckhardt",
+                "year": 1819,
+                "url": "https://archive.org/details/travelsinnubia00burc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 489",
+                "notes": "Londres, John Murray, 1819, publié après la mort de l'auteur en 1817, lu dans l'exemplaire numérisé. Un homme du Bornou lui parle du grand fleuve Tsad, « the same mentioned by Hornemann under the name of Zad »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1799,
+              "to": 1799,
+              "label": "1799"
+            },
+            "era": "polity",
+            "statement": "Le nom Tchad apparaît par écrit sous une forme proche, Zad, chez le voyageur Frederick Hornemann, envoyé au Fezzan par une association britannique. Au Bornou, écrit-il, le grand fleuve venu de l'ouest prend le nom de Zad. C'est la plus ancienne trace de ce nom que le projet connaît. Le lac existait bien avant ce mot.",
+            "formAsWritten": "Zad",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The journal of Frederick Horneman's travels, from Cairo to Mourzouk, the capital of the kingdom of Fezzan, in Africa, in the years 1797-8",
+                "author": "Frederick Hornemann",
+                "year": 1802,
+                "url": "https://archive.org/details/journaloffrederi00horn",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 115 et 117",
+                "notes": "Londres, G. et W. Nicol, 1802, publié par l'Association africaine de Londres, lu dans l'exemplaire numérisé. Dans ses informations sur l'intérieur de l'Afrique, Hornemann écrit qu'au Bornou le fleuve prend le nom de Zad, « which means the great water » ; sa lettre datée de Tripoli le 19 août 1799 redit : « in Burnu, Zad »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1200,
+              "to": 1250,
+              "label": "Première moitié du XIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Tchad, on parle du lac Kūrī sur la carte du géographe arabe Ibn Saʿīd, telle que la reconstitue l'historien Dierk Lange. Ibn Saʿīd place les Kūrī au bord du lac ; ils vivent aujourd'hui sur ses îles.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 10 : Royaumes et peuples du Tchad",
+                "author": "Dierk Lange",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 267 (carte) et p. 280",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Carte : « La région du lac Tchad (« lac Kūrī ») d'après la reconstitution d'un extrait de la carte d'Ibn Saʿīd (première moitié du XIIIe siècle) ». Ibn Saʿīd place les Kūrī à l'embouchure du Bahr al-Ghazāl ; ils sont aujourd'hui installés sur les îles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Tchad désigne aujourd'hui un État. Il a d'abord désigné le grand lac que les Kanouri appellent Tsade et que les Budduma, qui vivent sur ses îles, appellent Kulû. Ce que le mot voulait dire au départ reste discuté.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Saharâ und Sûdân. Ergebnisse sechsjähriger Reisen in Afrika, zweiter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 349 et sa note",
+                "notes": "Berlin, Weidmann, 1881, deuxième tome, lu dans l'exemplaire numérisé (la notice en ligne le date de 1879). Nachtigal écrit que le nom Tsâde, forme kanouri, signifie probablement « grande accumulation d'eau » dans le parler des So, anciens habitants de la rive ouest, et que les habitants des îles, les Budduma, appellent le lac Kulû."
+              },
+              {
+                "title": "African native literature, or Proverbs, tales, fables, and historical fragments in the Kanuri or Bornu language",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/africannativelit00koel",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 242, note",
+                "notes": "Londres, Church Missionary House, 1854, lu dans l'exemplaire numérisé. Une note présente Tsade comme « the well-known sweet-water lake », sans lui donner de sens."
+              },
+              {
+                "title": "Lake Chad",
+                "author": "Language Hat",
+                "year": 2017,
+                "url": "https://languagehat.com/lake-chad/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Billet du 5 décembre 2017 et ses commentaires, lus le 10 octobre 2026. Des linguistes y citent le dictionnaire anglais-kanouri de Norbert Cyffer et traduisent le passage de Nachtigal ; ils concluent que personne ne sait avec certitude ce que le mot voulait dire au départ."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1799,
+              "to": 1799,
+              "label": "Rapportée en 1799"
+            },
+            "era": "polity",
+            "statement": "Le nom Tchad voudrait dire « la grande eau » : c'est le sens que Frederick Hornemann donne au mot Zad, d'après les gens du Bornou et du pays haoussa qu'il interroge au Fezzan.",
+            "hypothesisGroup": "sens du nom Tchad",
+            "sources": [
+              {
+                "title": "The journal of Frederick Horneman's travels, from Cairo to Mourzouk, the capital of the kingdom of Fezzan, in Africa, in the years 1797-8",
+                "author": "Frederick Hornemann",
+                "year": 1802,
+                "url": "https://archive.org/details/journaloffrederi00horn",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 115 et 117",
+                "notes": "Londres, G. et W. Nicol, 1802, publié par l'Association africaine de Londres, lu dans l'exemplaire numérisé. Dans ses informations sur l'intérieur de l'Afrique, Hornemann écrit qu'au Bornou le fleuve prend le nom de Zad, « which means the great water » ; sa lettre datée de Tripoli le 19 août 1799 redit : « in Burnu, Zad »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Proposée en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Tchad viendrait du parler des So, anciens habitants de la rive ouest du lac, où Tsade voudrait dire « grande accumulation d'eau », selon l'explorateur allemand Gustav Nachtigal, qui présente ce sens comme probable. Il rapproche le mot d'autres noms d'eau de la région, comme Chari.",
+            "hypothesisGroup": "sens du nom Tchad",
+            "sources": [
+              {
+                "title": "Saharâ und Sûdân. Ergebnisse sechsjähriger Reisen in Afrika, zweiter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 349 et sa note",
+                "notes": "Berlin, Weidmann, 1881, deuxième tome, lu dans l'exemplaire numérisé (la notice en ligne le date de 1879). Nachtigal écrit que le nom Tsâde, forme kanouri, signifie probablement « grande accumulation d'eau » dans le parler des So, anciens habitants de la rive ouest, et que les habitants des îles, les Budduma, appellent le lac Kulû."
+              },
+              {
+                "title": "Lake Chad",
+                "author": "Language Hat",
+                "year": 2017,
+                "url": "https://languagehat.com/lake-chad/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Billet du 5 décembre 2017 et ses commentaires, lus le 10 octobre 2026. Des linguistes y citent le dictionnaire anglais-kanouri de Norbert Cyffer et traduisent le passage de Nachtigal ; ils concluent que personne ne sait avec certitude ce que le mot voulait dire au départ."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Territoire militaire des pays et protectorats du Tchad",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1900 à 1903",
+        "accounts": [
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom territoire militaire des pays et protectorats du Tchad se raccourcit en 1903 : on parle alors du territoire militaire du Tchad, selon la Digithèque de l'université de Perpignan.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Tchad, colonie française : décrets de 1900 à 1920",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/td1900.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Reproduit les décrets du 5 septembre 1900, du 30 juin 1914, du 14 mai 1915 et du 17 mars 1920, précédés d'une chronologie : le territoire militaire des pays et protectorats du Tchad devient en 1903 le territoire militaire du Tchad, puis une colonie en 1920."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "5 septembre 1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom territoire militaire des pays et protectorats du Tchad apparaît dans le décret du 5 septembre 1900, qui crée sous ce nom une circonscription du Congo français, selon le texte que publie la Digithèque de l'université de Perpignan. C'est la plus ancienne trace de ce nom que le projet connaît. Les pays qu'il réunit, comme le Baguirmi, le Ouadaï et le Kanem, existaient bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Tchad, colonie française : décrets de 1900 à 1920",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/td1900.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Reproduit les décrets du 5 septembre 1900, du 30 juin 1914, du 14 mai 1915 et du 17 mars 1920, précédés d'une chronologie : le territoire militaire des pays et protectorats du Tchad devient en 1903 le territoire militaire du Tchad, puis une colonie en 1920."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Territoire du Tchad",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1915 à 1920, puis de 1946 à 1958",
+        "accounts": [
+          {
+            "period": {
+              "from": 1946,
+              "to": 1958,
+              "label": "De 1946 au 28 novembre 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom territoire du Tchad est celui du pays quand il devient un territoire d'outre-mer français, en 1946. C'est encore le sien le 28 novembre 1958, quand l'Assemblée territoriale lui fait adopter le statut d'État membre de la Communauté, selon la Digithèque de l'université de Perpignan.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Indépendance de la République du Tchad, 11 août 1960",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/td1960ind.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Le Tchad, possession française depuis 1900 et colonie depuis 1920, devient territoire d'outre-mer en 1946 ; la République du Tchad est proclamée le 28 novembre 1958 et indépendante le 11 août 1960."
+              },
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Tchad, proclamation de la République, 28 novembre 1958",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/td1958.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Reproduit la délibération n° 93/58 par laquelle l'Assemblée territoriale, réunie à Fort-Lamy, fait adopter par le territoire du Tchad le statut d'État membre de la Communauté et proclame la République du Tchad."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1915,
+              "to": 1915,
+              "label": "14 mai 1915"
+            },
+            "era": "colonial",
+            "statement": "Le nom territoire du Tchad apparaît dans le décret du 14 mai 1915 : la circonscription située au nord de l'Oubangui-Chari est administrée « sous le nom du territoire du Tchad », selon le texte que publie la Digithèque de l'université de Perpignan. Un décret de 1914 prévoyait de l'appeler territoire du centre africain, mais il n'a pas été appliqué. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Tchad, colonie française : décrets de 1900 à 1920",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/td1900.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Reproduit les décrets du 5 septembre 1900, du 30 juin 1914, du 14 mai 1915 et du 17 mars 1920, précédés d'une chronologie : le territoire militaire des pays et protectorats du Tchad devient en 1903 le territoire militaire du Tchad, puis une colonie en 1920."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Colonie française du Tchad (1900-1960)"],

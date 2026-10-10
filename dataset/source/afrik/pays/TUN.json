@@ -6,6 +6,534 @@
   "summary": "La Tunisie porte le nom de sa capitale, dont l'origine est peut-être berbère ou punique. Carthage, l'Afrique romaine — d'où vient le nom du continent —, le royaume vandale et les califats s'y sont succédé, avant la régence de Tunis et le protectorat français. Arabes et Berbères de Tunisie y perpétuent le malouf et le mezoued.",
   "etymology": "Le nom \"Tunisie\" viendrait de \"Tunis\", la capitale. Le nom \"Tunis\" viendrait de \"Tynes\" (ancien nom berbère) ou de \"Tunès\" (nom punique). Le nom arabe \"Tūnis\" (تونس) est utilisé depuis le Moyen Âge.",
   "nameOriginActor": "Le nom \"Tunisie\" vient de \"Tunis\", fondée par les Berbères puis développée par les Arabes. Le nom a été officialisé lors de la colonisation française.",
+  "nameHistory": {
+    "summary": "Le nom Tunisie désigne un pays d'Afrique du Nord, la République tunisienne, dont la capitale s'appelle Tunis. Le pays a aussi été appelé royaume de Tunis et Régence de Tunis ; au Moyen Âge, la province d'Ifrīqiya correspondait à peu près à la Tunisie actuelle. Les sources ne s'accordent pas sur l'origine du nom Tunis ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Tunisie",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de l'État indépendant depuis 1956, qui partage celui de sa capitale, Tunis.",
+        "periodLabel": "Nom de l'État indépendant depuis 1956",
+        "accounts": [
+          {
+            "period": {
+              "from": 1959,
+              "to": null,
+              "label": "Depuis le 1er juin 1959"
+            },
+            "era": "modern",
+            "statement": "Le nom Tunisie est celui d'un « État libre, indépendant et souverain », dont le régime est la république, selon l'article premier de la Constitution du 1er juin 1959.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Constitution de la République tunisienne du 1er juin 1959, version initiale",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": 1959,
+                "url": "https://mjp.univ-perp.fr/constit/tn1959i.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "article premier",
+                "notes": "« La Tunisie est un État libre, indépendant et souverain ; sa religion est l'Islam, sa langue l'arabe et son régime la république. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1957,
+              "to": 1957,
+              "label": "25 juillet 1957"
+            },
+            "era": "modern",
+            "statement": "Le nom Tunisie devient celui d'une république le 25 juillet 1957. Ce jour-là prend fin la monarchie héréditaire instaurée en 1705, selon la Digithèque de l'université de Perpignan.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Tunisie",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/tn.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie constitutionnelle : monarchie héréditaire instaurée en 1705 par Hussein ibn Ali, vassale de Constantinople, qui dure jusqu'en 1957 ; protectorat français par le traité du Bardo du 12 mai 1881 ; indépendance le 20 mars 1956 ; République proclamée le 25 juillet 1957."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "20 mars 1956"
+            },
+            "era": "modern",
+            "statement": "Le nom Tunisie reste celui du pays à l'indépendance, que la France reconnaît le 20 mars 1956, selon la Digithèque de l'université de Perpignan et le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Indépendance de la Tunisie : conventions du 3 juin 1955 et protocole d'accord du 20 mars 1956",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/tn1956.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Le gouvernement de Guy Mollet reconnaît l'indépendance de la Tunisie le 20 mars 1956. L'introduction parle de la Régence de Tunis au XIXe siècle."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances africaines : Tunisie, 20 mars 1956, ancienne puissance coloniale la France."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "12 mai 1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tunisie figure dans le traité du Bardo, que les troupes françaises imposent au bey le 12 mai 1881 et qui établit le protectorat. Le traité parle du « littoral de la Tunisie », mais aussi de « Son Altesse le Bey de Tunis » et de « la Régence », selon le texte que publie la Digithèque de l'université de Perpignan.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Établissement du protectorat de la France sur la Tunisie : traité du Bardo du 12 mai 1881 et convention de La Marsa du 8 juin 1883",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": 1881,
+                "url": "https://mjp.univ-perp.fr/constit/tn1881.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Le traité, conclu à Kasr Saïd entre la France et « Son Altesse le Bey de Tunis », parle du « littoral de la Tunisie », d'une organisation financière « de la Régence » et des « ports du sud de la Tunisie »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Tunisie désigne aujourd'hui l'État. Au XIXe siècle, les textes parlent aussi du royaume de Tunis ou de la Régence de Tunis, du nom de la ville de Tunis, dont l'origine reste discutée. On ne sait pas avec certitude quand la forme Tunisie apparaît pour la première fois.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Pacte fondamental tunisien du 10 septembre 1857",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": 1857,
+                "url": "https://mjp.univ-perp.fr/constit/tn1857.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Traduction française reproduite par la Digithèque, qui ne la date pas. Le texte se termine par le salut de « Mohammed Pacha Bey, possesseur du royaume de Tunis »."
+              },
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Établissement du protectorat de la France sur la Tunisie : traité du Bardo du 12 mai 1881 et convention de La Marsa du 8 juin 1883",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": 1881,
+                "url": "https://mjp.univ-perp.fr/constit/tn1881.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Le traité, conclu à Kasr Saïd entre la France et « Son Altesse le Bey de Tunis », parle du « littoral de la Tunisie », d'une organisation financière « de la Régence » et des « ports du sud de la Tunisie »."
+              },
+              {
+                "title": "Exploration scientifique de la Tunisie. Géographie comparée de la province romaine d'Afrique, tome second",
+                "author": "Charles Tissot",
+                "year": 1888,
+                "url": "https://archive.org/details/explorationscien02tiss",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 109-110 et leurs notes",
+                "notes": "Paris, Imprimerie nationale, 1888, publié après la mort de l'auteur, survenue en 1884, d'après son manuscrit, par Salomon Reinach ; lu dans l'exemplaire numérisé. Tissot juge fausse l'étymologie qui rattache Tunis à la déesse Tanit, y voit un radical libyque dont le sens exact lui échappe et donne les formes Tynès, Tounis, Thuni et la forme arabe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 670,
+              "to": 675,
+              "label": "Vers 670"
+            },
+            "statement": "Avant le nom Tunisie, on parle d'Ifrīqiya, c'est-à-dire d'Afrique, pour désigner la première province musulmane d'Afrique du Nord, fondée avec la ville de Kairouan. Elle correspond alors à peu près à la Tunisie actuelle, selon l'historien Hussain Monès.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 9 : La conquête de l'Afrique du Nord et la résistance berbère",
+                "author": "Hussain Monès",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 260",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. Avec la fondation de Kairouan naît la première province musulmane d'Afrique du Nord : « On lui donna le nom d'Afrique, Ifrīḳiya. A l'époque, elle correspondait à peu près à la Tunisie actuelle. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tunis",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la capitale, écrit Tynès dès l'Antiquité ; son origine reste discutée.",
+        "periodLabel": "Attesté dès le IVe siècle av. J.-C.",
+        "accounts": [
+          {
+            "period": {
+              "from": 702,
+              "to": 702,
+              "label": "83 de l'hégire, 702"
+            },
+            "statement": "Le nom Tunis est celui d'un port que les conquérants arabes aménagent en 702, avec un chantier naval et un arsenal. Trente ans plus tard, le gouverneur du Maghreb en fait une grande cité, selon l'historien Hussain Monès.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 9 : La conquête de l'Afrique du Nord et la résistance berbère",
+                "author": "Hussain Monès",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 266",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. Un canal, un chantier naval et un arsenal sont construits : « Ainsi naquit le port de Tunis », inauguré en 83/702 ; trente ans plus tard, le gouverneur ˓Ubayd Allāh ibn al-Ḥabḥāb en fait une grande cité."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "De l'Antiquité au Moyen Âge"
+            },
+            "statement": "Le nom Tunis s'écrit Tynès chez l'historien grec Polybe, une forme que reprennent Diodore et Tite-Live. Il devient Tounis chez Strabon et dans les documents de l'Empire romain, puis Thuni sur la Table de Peutinger, selon Charles Tissot, qui donne aussi la forme arabe.",
+            "sources": [
+              {
+                "title": "Exploration scientifique de la Tunisie. Géographie comparée de la province romaine d'Afrique, tome second",
+                "author": "Charles Tissot",
+                "year": 1888,
+                "url": "https://archive.org/details/explorationscien02tiss",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 109-110 et leurs notes",
+                "notes": "Paris, Imprimerie nationale, 1888, publié après la mort de l'auteur, survenue en 1884, d'après son manuscrit, par Salomon Reinach ; lu dans l'exemplaire numérisé. Tissot juge fausse l'étymologie qui rattache Tunis à la déesse Tanit, y voit un radical libyque dont le sens exact lui échappe et donne les formes Tynès, Tounis, Thuni et la forme arabe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -256,
+              "to": -256,
+              "label": "256 av. J.-C."
+            },
+            "era": "polity",
+            "statement": "Le nom Tunis figure chez l'historien grec Polybe : l'armée romaine, qui attaque Carthage, se rend maîtresse de la ville appelée Tynès, bien placée pour ses raids. C'est la plus ancienne forme écrite du nom, selon Charles Tissot.",
+            "sources": [
+              {
+                "title": "Polybe, Histoires, livre I, traduction anglaise (Loeb Classical Library, vol. I, 1922)",
+                "author": "Polybe",
+                "year": 1922,
+                "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Polybius/1*.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "I, 30, 15 ; p. 87",
+                "notes": "Texte reproduit sur le site LacusCurtius de Bill Thayer. Les Romains se rendent maîtres de « the town named Tunis » ; le texte grec écrit Τύνητος, la ville de Tynès."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 18 : La période carthaginoise",
+                "author": "B. H. Warmington",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 494",
+                "notes": "UNESCO, volume dirigé par Gamal Mokhtar. En 256, une armée romaine débarque sur la côte africaine ; après la défaite carthaginoise d'Adys, les légions s'emparent de Tunis pour attaquer Carthage."
+              },
+              {
+                "title": "Exploration scientifique de la Tunisie. Géographie comparée de la province romaine d'Afrique, tome second",
+                "author": "Charles Tissot",
+                "year": 1888,
+                "url": "https://archive.org/details/explorationscien02tiss",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 109-110 et leurs notes",
+                "notes": "Paris, Imprimerie nationale, 1888, publié après la mort de l'auteur, survenue en 1884, d'après son manuscrit, par Salomon Reinach ; lu dans l'exemplaire numérisé. Tissot juge fausse l'étymologie qui rattache Tunis à la déesse Tanit, y voit un radical libyque dont le sens exact lui échappe et donne les formes Tynès, Tounis, Thuni et la forme arabe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -310,
+              "to": -310,
+              "label": "310 av. J.-C."
+            },
+            "era": "polity",
+            "statement": "Le nom Tunis figure peut-être chez Diodore de Sicile, sous la forme Tunis la Blanche, dans le récit de l'expédition d'Agathocle en Afrique. Le traducteur juge probable qu'il s'agisse de Tunis, sans pouvoir l'affirmer.",
+            "sources": [
+              {
+                "title": "Diodore de Sicile, Bibliothèque historique, livre XX, traduction anglaise (Loeb Classical Library, vol. X, 1954)",
+                "author": "Diodore de Sicile",
+                "year": 1954,
+                "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/20A*.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "XX, 8, 7 ; p. 163 et note 19",
+                "notes": "Texte reproduit sur le site LacusCurtius de Bill Thayer. Agathocle soumet « White Tunis, as it is called » ; la note 19 dit que la ville ne peut pas être identifiée avec certitude, mais qu'il s'agit probablement de Tunis."
+              },
+              {
+                "title": "Exploration scientifique de la Tunisie. Géographie comparée de la province romaine d'Afrique, tome second",
+                "author": "Charles Tissot",
+                "year": 1888,
+                "url": "https://archive.org/details/explorationscien02tiss",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 109-110 et leurs notes",
+                "notes": "Paris, Imprimerie nationale, 1888, publié après la mort de l'auteur, survenue en 1884, d'après son manuscrit, par Salomon Reinach ; lu dans l'exemplaire numérisé. Tissot juge fausse l'étymologie qui rattache Tunis à la déesse Tanit, y voit un radical libyque dont le sens exact lui échappe et donne les formes Tynès, Tounis, Thuni et la forme arabe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -396,
+              "to": -396,
+              "label": "396 av. J.-C."
+            },
+            "era": "polity",
+            "statement": "Le nom Tunis apparaît, sous la forme Tynès, dans le récit que fait l'historien grec Diodore de Sicile d'une révolte des Libyens contre Carthage : ils s'emparent de Tynès, une ville proche de Carthage, en 396 av. J.-C. selon Charles Tissot. C'est la plus ancienne trace de ce nom que le projet connaît. La ville existait déjà avant ce récit.",
+            "formAsWritten": "Tynes",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Diodore de Sicile, Bibliothèque historique, livre XIV, traduction anglaise (Loeb Classical Library, vol. VI, 1954)",
+                "author": "Diodore de Sicile",
+                "year": 1954,
+                "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/14D*.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "XIV, 77, 3 ; p. 221",
+                "notes": "Texte reproduit sur le site LacusCurtius de Bill Thayer. Les Libyens révoltés contre Carthage s'emparent de « Tynes, a city situated not far from Carthage » ; une note y voit Tunis."
+              },
+              {
+                "title": "Exploration scientifique de la Tunisie. Géographie comparée de la province romaine d'Afrique, tome second",
+                "author": "Charles Tissot",
+                "year": 1888,
+                "url": "https://archive.org/details/explorationscien02tiss",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 109-110 et leurs notes",
+                "notes": "Paris, Imprimerie nationale, 1888, publié après la mort de l'auteur, survenue en 1884, d'après son manuscrit, par Salomon Reinach ; lu dans l'exemplaire numérisé. Tissot juge fausse l'étymologie qui rattache Tunis à la déesse Tanit, y voit un radical libyque dont le sens exact lui échappe et donne les formes Tynès, Tounis, Thuni et la forme arabe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "Proposée avant 1884, publiée en 1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tunis viendrait d'un mot de la langue des anciens Libyens, dont le sens exact nous échappe, selon Charles Tissot. Il retrouve ce mot dans d'autres noms de lieux, comme Tunisa, Tinisa ou Ténès, et le rapproche, avec prudence, du mot guèze tensa, « il fut élevé ».",
+            "hypothesisGroup": "origine du nom Tunis",
+            "sources": [
+              {
+                "title": "Exploration scientifique de la Tunisie. Géographie comparée de la province romaine d'Afrique, tome second",
+                "author": "Charles Tissot",
+                "year": 1888,
+                "url": "https://archive.org/details/explorationscien02tiss",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 109-110 et leurs notes",
+                "notes": "Paris, Imprimerie nationale, 1888, publié après la mort de l'auteur, survenue en 1884, d'après son manuscrit, par Salomon Reinach ; lu dans l'exemplaire numérisé. Tissot juge fausse l'étymologie qui rattache Tunis à la déesse Tanit, y voit un radical libyque dont le sens exact lui échappe et donne les formes Tynès, Tounis, Thuni et la forme arabe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2022,
+              "label": "Rapportée en 2015 et en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Tunis viendrait du berbère ens, « se coucher » ou « aller passer la nuit » : Tunis aurait d'abord été une halte, un campement de nuit pour les voyageurs, selon Ahmed Chabchoub et le chroniqueur Hatem Bourial. Hatem Bourial attribue ce rapprochement à Charles Tissot ; nous ne l'avons pas trouvé dans le passage de Tissot que nous avons lu.",
+            "hypothesisGroup": "origine du nom Tunis",
+            "sources": [
+              {
+                "title": "Compte rendu de : Ahmed Chabchoub, Voyage au pays des noms. Essai d'onomastique culturelle appliquée à la Tunisie, Tunis, La maison tunisienne du livre, 2017",
+                "author": "Noureddine Mihoubi, Insaniyat",
+                "year": 2022,
+                "url": "https://www.insaniyat.crasc.dz/en/article/ahmed-chabchoub-2017-voyage-au-pays-des-noms-essai-donomastique-culturelle-appliquee-a-la-tunisie-tunis-la-maison-tunisienne-du-livre-222-p",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 103-106",
+                "notes": "Insaniyat, revue algérienne d'anthropologie et de sciences sociales, n° 98, 2022, lu en ligne. Selon ce compte rendu, Ahmed Chabchoub fait dériver le nom de Tunis du berbère ens, « se coucher » ou « aller passer la nuit à », parce que la ville servait de halte de nuit aux voyageurs. Le livre lui-même n'a pas été lu."
+              },
+              {
+                "title": "Aux origines du nom de Tunis",
+                "author": "Hatem Bourial, Webdo",
+                "year": 2015,
+                "url": "https://www.webdo.tn/fr/actualite/chroniques/aux-origines-du-nom-de-tunis/186961/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Chronique publiée le 4 décembre 2015 sur le site tunisien Webdo, lue le 10 octobre 2026. Elle rattache le nom à la racine berbère TNS ou au verbe ens, « passer la nuit », et dit réfutée l'origine punique liée à Tanit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "Rapportée en 1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tunis viendrait de celui de Tanit, une déesse de Carthage. Charles Tissot rapporte cette étymologie pour la juger fausse, car Tunis était pour lui une ville libyenne plus ancienne que la puissance de Carthage ; le chroniqueur Hatem Bourial la dit lui aussi réfutée.",
+            "hypothesisGroup": "origine du nom Tunis",
+            "sources": [
+              {
+                "title": "Exploration scientifique de la Tunisie. Géographie comparée de la province romaine d'Afrique, tome second",
+                "author": "Charles Tissot",
+                "year": 1888,
+                "url": "https://archive.org/details/explorationscien02tiss",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 109-110 et leurs notes",
+                "notes": "Paris, Imprimerie nationale, 1888, publié après la mort de l'auteur, survenue en 1884, d'après son manuscrit, par Salomon Reinach ; lu dans l'exemplaire numérisé. Tissot juge fausse l'étymologie qui rattache Tunis à la déesse Tanit, y voit un radical libyque dont le sens exact lui échappe et donne les formes Tynès, Tounis, Thuni et la forme arabe."
+              },
+              {
+                "title": "Aux origines du nom de Tunis",
+                "author": "Hatem Bourial, Webdo",
+                "year": 2015,
+                "url": "https://www.webdo.tn/fr/actualite/chroniques/aux-origines-du-nom-de-tunis/186961/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Chronique publiée le 4 décembre 2015 sur le site tunisien Webdo, lue le 10 octobre 2026. Elle rattache le nom à la racine berbère TNS ou au verbe ens, « passer la nuit », et dit réfutée l'origine punique liée à Tanit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Royaume de Tunis",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Du XVIIe au XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "26 avril 1861"
+            },
+            "statement": "Le nom royaume de Tunis figure dans la Constitution du 26 avril 1861, qui parle aussi des « sujets du royaume tunisien », selon la traduction française que publie la Digithèque de l'université de Perpignan.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Constitution tunisienne du 26 avril 1861",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": 1861,
+                "url": "https://mjp.univ-perp.fr/constit/tn1861.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Traduction française reproduite par la Digithèque, qui ne la date pas. Elle parle des « sujets du royaume tunisien » et des étrangers « établis dans le royaume de Tunis »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "10 septembre 1857"
+            },
+            "statement": "Le nom royaume de Tunis figure dans le Pacte fondamental du 10 septembre 1857, que signe Mohammed Pacha Bey, « possesseur du royaume de Tunis », selon la traduction française que publie la Digithèque de l'université de Perpignan.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Pacte fondamental tunisien du 10 septembre 1857",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": 1857,
+                "url": "https://mjp.univ-perp.fr/constit/tn1857.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Traduction française reproduite par la Digithèque, qui ne la date pas. Le texte se termine par le salut de « Mohammed Pacha Bey, possesseur du royaume de Tunis »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1656,
+              "to": 1656,
+              "label": "1656"
+            },
+            "statement": "Le nom royaume de Tunis figure dans l'atlas d'Afrique du géographe français Nicolas Sanson, publié à Paris en 1656, en titre d'une page de texte. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne existait déjà avant ce livre.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Royaume de Tunis, page de texte de L'Afrique en plusieurs cartes nouvelles, et exactes",
+                "author": "Nicolas Sanson",
+                "year": 1656,
+                "url": "https://archive.org/details/dr_text-page-to-royaume-de-tunis-to-accompany-lafriqve-en-plusieurs-cart-11575034",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page « Royaume de Tunis »",
+                "notes": "Paris, chez l'auteur, 1656. Page de texte accompagnant une carte de l'atlas de Nicolas Sanson, numérisée par la collection de cartes David Rumsey et vue en image sur Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Régence de Tunis",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1881,
+              "label": "Avant 1881"
+            },
+            "statement": "Le nom Régence de Tunis est celui que l'historien Abdallah Laroui emploie pour le pays avant le protectorat français : l'Italie a alors des visées sur la régence, dont l'élite reste en partie attachée à l'Empire ottoman.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 5 : Initiatives et résistances africaines en Afrique du Nord et au Sahara",
+                "author": "Abdallah Laroui",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 116",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen. Avant 1881, l'Italie unifiée a des visées sur « la régence de Tunis », et un fort sentiment pro-ottoman existe parmi l'élite de la régence."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1802,
+              "to": 1802,
+              "label": "23 février 1802"
+            },
+            "statement": "Le nom Régence de Tunis figure dans le titre du traité de paix conclu à Tunis le 23 février 1802 entre la République française et le pacha-bey Hamouda. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne existait déjà avant ce traité.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Traité de paix entre la République française et la Régence de Tunis",
+                "author": "République française et Régence de Tunis",
+                "year": 1802,
+                "url": "https://archive.org/details/traitepaixentre00unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. [1]",
+                "notes": "Paris, imprimerie du Dépôt des lois, lu dans l'exemplaire numérisé de la Newberry Library. Traité fait à Tunis le 4 ventôse an X, soit le 23 février 1802, avec le pacha-bey Hamouda et le divan de Tunis."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
