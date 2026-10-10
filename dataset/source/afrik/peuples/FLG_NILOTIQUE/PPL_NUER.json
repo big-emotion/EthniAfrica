@@ -151,5 +151,142 @@
         "source_kind": "encyclopedia"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nuer désigne un peuple nilotique du Soudan du Sud et de la région de Gambella, en Éthiopie, qui se nomme lui-même Naath. On ne sait pas avec certitude d'où vient le nom Nuer ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Naath",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nus",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : « les personnes ».",
+        "periodLabel": "Écrit depuis 1932 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Naath est le pluriel de ran, « personne », selon E. E. Evans-Pritchard : c'est le mot par lequel les Nuer se distinguent des autres peuples. Ils sont nei ti naath, « des gens qui sont des personnes », au sens où ils l'entendent pour eux-mêmes.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Nuer Religion",
+                "author": "E. E. Evans-Pritchard",
+                "year": 1956,
+                "url": "https://archive.org/details/nuerreligion00evan",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 156",
+                "notes": "Oxford, Clarendon Press, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Naath est écrit « Nath » par C. G. et Brenda Seligman : les Nuer, écrivent-ils, appellent Nath cieng les tribus de l'ouest du Bahr el-Gebel et Nath doar celles de l'est. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Le peuple qui le porte est bien plus ancien.",
+            "formAsWritten": "Nath",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 207",
+                "notes": "Londres, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nuer",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que d'autres leur donnent ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1849 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Nuer est celui que d'autres donnent à ce peuple, qui se nomme lui-même Naath. On ne sait pas avec certitude d'où il vient : les sources que nous avons lues n'en proposent aucune origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Nuer Religion",
+                "author": "E. E. Evans-Pritchard",
+                "year": 1956,
+                "url": "https://archive.org/details/nuerreligion00evan",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 156",
+                "notes": "Oxford, Clarendon Press, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1855,
+              "label": "Livre publié en 1855"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nuer est écrit « Nouer » par Antoine Brun-Rollet, pour « une grande tribu guerrière » qui vit des rives du Sobat jusque vers le 7e degré de latitude nord.",
+            "formAsWritten": "Nouer",
+            "sources": [
+              {
+                "title": "Le Nil blanc et le Soudan : études sur l'Afrique centrale, mœurs et coutumes des sauvages",
+                "author": "Antoine Brun-Rollet",
+                "year": 1855,
+                "url": "https://archive.org/details/lenilblancetles00brungoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 104-105 et p. 125-126",
+                "notes": "Paris, L. Maison, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1840,
+              "to": 1849,
+              "label": "Expédition de 1840-1841, récit publié en 1849"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nuer a une forme proche, Nuehrs, chez Ferdinand Werne, qui décrit un grand village de huttes au bord du Nil Blanc où vivent les Nuehrs. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait déjà là avant elle.",
+            "formAsWritten": "Nuehrs",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Expedition to Discover the Sources of the White Nile, in the Years 1840, 1841, vol. II",
+                "author": "Ferdinand Werne, traduit par Charles William O'Reilly",
+                "year": 1849,
+                "url": "https://archive.org/details/expeditiontodisc00wern_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 202",
+                "notes": "Londres, Richard Bentley, lu sur la numérisation d'Internet Archive. Récit d'une expédition égyptienne sur le Nil Blanc."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

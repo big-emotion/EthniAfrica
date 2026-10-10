@@ -113,5 +113,198 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Edo désigne un peuple du sud du Nigeria, autour de Benin City, qui se nomme lui-même Edo. D'autres noms existent : Bini, et Benin, la forme portugaise. Les sources ne s'accordent pas sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Edo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bin",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, et celui de leur capitale.",
+        "periodLabel": "Écrit depuis 1910 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Edo est celui que ce peuple se donne et celui de sa capitale, Benin City. On ne sait pas avec certitude d'où il vient : les sources que nous avons lues n'en proposent aucune origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Anthropological Report on the Edo-Speaking Peoples of Nigeria, Part I: Law and Custom",
+                "author": "Northcote W. Thomas",
+                "year": 1910,
+                "url": "https://archive.org/details/anthropologicalr01thom",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Londres, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Edo apparaît chez l'anthropologue Northcote W. Thomas, qui parle de « la tribu Edo ou Bini » et note qu'Edo est le nom que ses habitants donnent à leur capitale, Benin City. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Le peuple qui le porte est bien plus ancien.",
+            "formAsWritten": "Edo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Anthropological Report on the Edo-Speaking Peoples of Nigeria, Part I: Law and Custom",
+                "author": "Northcote W. Thomas",
+                "year": 1910,
+                "url": "https://archive.org/details/anthropologicalr01thom",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Londres, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bini",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom du peuple edo ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis 1854",
+        "accounts": [
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bini sert encore à nommer le peuple, à côté d'Edo, chez Northcote W. Thomas, qui écrit « la tribu Edo ou Bini ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anthropological Report on the Edo-Speaking Peoples of Nigeria, Part I: Law and Custom",
+                "author": "Northcote W. Thomas",
+                "year": 1910,
+                "url": "https://archive.org/details/anthropologicalr01thom",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Londres, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Bini est écrit « Bíni » par le linguiste Sigismund Koelle, qui soupçonne un nom étranger et dit n'avoir pas pu apprendre le nom que ce peuple se donne. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section V-B-3",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1903,
+              "label": "Rapportée en 1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bini viendrait d'Ubini, un esclave acheté par le roi Eweka : à sa mort, le roi aurait ordonné qu'on donne Ubini comme nom du pays, selon des dignitaires du Bénin interrogés par Roupell, que cite H. Ling Roth.",
+            "hypothesisGroup": "origine du nom Bini",
+            "sources": [
+              {
+                "title": "Great Benin: Its Customs, Art and Horrors",
+                "author": "H. Ling Roth",
+                "year": 1903,
+                "url": "https://archive.org/details/greatbeninitscus00roth",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 7-8",
+                "notes": "Halifax, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Proposée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Bini serait un nom donné de l'extérieur, selon un soupçon du linguiste Sigismund Koelle, qui ne dit pas d'où il viendrait.",
+            "hypothesisGroup": "origine du nom Bini",
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section V-B-3",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Benin",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "La forme portugaise du nom, écrite dès 1486 ; Benin City la garde.",
+        "periodLabel": "Écrit depuis 1486 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1486,
+              "to": 1486,
+              "label": "1486"
+            },
+            "era": "polity",
+            "statement": "Le nom Benin est écrit « Beny » dans la chronique portugaise de Ruy de Pina, qui date de 1486 l'arrivée de João Afonso de Aveiro dans la « terre de Beny », selon la traduction qu'en donne H. Ling Roth. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume qu'il désigne existait déjà avant elle.",
+            "formAsWritten": "Beny",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Great Benin: Its Customs, Art and Horrors",
+                "author": "H. Ling Roth",
+                "year": 1903,
+                "url": "https://archive.org/details/greatbeninitscus00roth",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Halifax, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

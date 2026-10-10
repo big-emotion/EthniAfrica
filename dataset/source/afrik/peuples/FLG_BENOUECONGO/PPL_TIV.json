@@ -119,5 +119,217 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tiv désigne un peuple du centre du Nigeria, autour de la Bénoué, et d'une partie du Cameroun, qui se nomme lui-même Tiv. Un autre nom a longtemps servi : Munshi, venu du haoussa, abandonné dans les années 1920. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Tiv",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tiv",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; ce serait le nom de leur premier ancêtre.",
+        "periodLabel": "Écrit depuis 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Tiv est celui que ce peuple se donne, selon Laura et Paul Bohannan.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Tiv of Central Nigeria",
+                "author": "Laura Bohannan et Paul Bohannan",
+                "year": 1953,
+                "url": "https://thinkyorubafirst.org/?p=17659",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Londres, International African Institute, Ethnographic Survey of Africa. Lu dans une copie non officielle du texte, sans pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1929,
+              "label": "Années 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tiv remplace alors Munshi dans l'usage officiel de l'administration britannique, selon Laura et Paul Bohannan.",
+            "sources": [
+              {
+                "title": "The Tiv of Central Nigeria",
+                "author": "Laura Bohannan et Paul Bohannan",
+                "year": 1953,
+                "url": "https://thinkyorubafirst.org/?p=17659",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Londres, International African Institute, Ethnographic Survey of Africa. Lu dans une copie non officielle du texte, sans pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Tiv a une forme proche, Tíwi, chez le linguiste Sigismund Koelle, qui recueille cette langue à Freetown. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section XII-E-19",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Tiv serait celui de l'ancêtre d'origine dont tous les Tiv descendent en ligne paternelle, selon les Tiv eux-mêmes, d'après Laura et Paul Bohannan.",
+            "hypothesisGroup": "origine du nom Tiv",
+            "sources": [
+              {
+                "title": "The Tiv of Central Nigeria",
+                "author": "Laura Bohannan et Paul Bohannan",
+                "year": 1953,
+                "url": "https://thinkyorubafirst.org/?p=17659",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Londres, International African Institute, Ethnographic Survey of Africa. Lu dans une copie non officielle du texte, sans pagination."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Munshi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "hau",
+        "namedBy": "les Haoussa",
+        "shortLine": "Un nom venu du haoussa, officiel jusqu'aux années 1920 ; les Tiv l'ont rejeté.",
+        "periodLabel": "XIXe siècle - années 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 1900,
+              "to": 1929,
+              "label": "Du début du XXe siècle aux années 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Munshi est alors le plus employé par les auteurs : c'est le nom sous lequel les Haoussa connaissent les Tiv. L'administration britannique l'emploie jusqu'aux années 1920, puis l'abandonne pour Tiv, selon Laura et Paul Bohannan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Tiv of Central Nigeria",
+                "author": "Laura Bohannan et Paul Bohannan",
+                "year": 1953,
+                "url": "https://thinkyorubafirst.org/?p=17659",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Londres, International African Institute, Ethnographic Survey of Africa. Lu dans une copie non officielle du texte, sans pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Munshi a une forme proche, Mī́dṣi ou Mbī́dṣi, chez Sigismund Koelle : c'est ainsi, écrit-il, que les Kororofa et les Haoussa appellent les Tiv. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section XII-E-19",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Munshi viendrait de Mitshi, une déformation haoussa de Mbitse ou Mbichi, le nom que les Jukun donnent aux Tiv, selon Laura et Paul Bohannan.",
+            "hypothesisGroup": "origine du nom Munshi",
+            "sources": [
+              {
+                "title": "The Tiv of Central Nigeria",
+                "author": "Laura Bohannan et Paul Bohannan",
+                "year": 1953,
+                "url": "https://thinkyorubafirst.org/?p=17659",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Londres, International African Institute, Ethnographic Survey of Africa. Lu dans une copie non officielle du texte, sans pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Munshi voudrait dire « nous (les) avons mangés », la réponse que les Tiv auraient faite à des marchands haoussa qui cherchaient des frères disparus chez eux, selon une explication des Haoussa que rapportent Laura et Paul Bohannan.",
+            "hypothesisGroup": "origine du nom Munshi",
+            "sources": [
+              {
+                "title": "The Tiv of Central Nigeria",
+                "author": "Laura Bohannan et Paul Bohannan",
+                "year": 1953,
+                "url": "https://thinkyorubafirst.org/?p=17659",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Londres, International African Institute, Ethnographic Survey of Africa. Lu dans une copie non officielle du texte, sans pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Munshi aurait d'abord été donné aux Tiv par les Peuls, à propos d'un troupeau de bétail peul que les Tiv avaient mangé, selon les Tiv eux-mêmes, d'après Laura et Paul Bohannan.",
+            "hypothesisGroup": "origine du nom Munshi",
+            "sources": [
+              {
+                "title": "The Tiv of Central Nigeria",
+                "author": "Laura Bohannan et Paul Bohannan",
+                "year": 1953,
+                "url": "https://thinkyorubafirst.org/?p=17659",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Londres, International African Institute, Ethnographic Survey of Africa. Lu dans une copie non officielle du texte, sans pagination."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

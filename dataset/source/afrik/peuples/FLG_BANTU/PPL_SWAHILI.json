@@ -166,5 +166,153 @@
         "notes": "Article publié en ligne le 30 janvier 2024, lu en texte intégral. Source du passage sur l'origine arabe du nom."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Swahili désigne un peuple de la côte d'Afrique de l'Est, du Kenya au nord du Mozambique et aux Comores, qui se nomme lui-même Waswahili, et Mswahili pour une seule personne. Le mot vient de l'arabe, mais les sources ne s'accordent pas sur ce qu'il voulait dire ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Waswahili",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "swa",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, Mswahili pour une personne ; le mot viendrait de l'arabe.",
+        "periodLabel": "Écrit depuis 1850 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Waswahili désigne les gens de la côte, par opposition à ceux de l'intérieur et des collines, selon le missionnaire Johann Ludwig Krapf. L'origine du mot est discutée ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9-11",
+                "notes": "Tübingen, L. F. Fues, lu sur la numérisation d'Internet Archive. L'auteur, missionnaire, vit alors près de Mombasa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1850,
+              "label": "Livre publié en 1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Waswahili est écrit « Suaheli » par Johann Ludwig Krapf, qui entend les Swahili l'employer d'eux-mêmes : « ne sommes-nous pas Suaheli », disent-ils quand ils se sortent d'une difficulté. C'est la plus ancienne trace que le projet connaît de ce nom pour des personnes. On ne sait pas avec certitude depuis quand ils se nomment ainsi.",
+            "formAsWritten": "Suaheli",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9-11",
+                "notes": "Tübingen, L. F. Fues, lu sur la numérisation d'Internet Archive. L'auteur, missionnaire, vit alors près de Mombasa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1331,
+              "to": 1332,
+              "label": "Vers 1331"
+            },
+            "era": "polity",
+            "statement": "On parle alors du « pays des Sawahil » chez le voyageur Ibn Battuta, qui s'embarque à Mogadiscio pour cette côte ; il appelle Zinj les habitants de Kilwa. Le mot désigne ici une côte, pas un peuple, selon la traduction de H. A. R. Gibb.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Travels of Ibn Battuta, A.D. 1325-1354, vol. II",
+                "author": "Ibn Battuta, traduit par H. A. R. Gibb",
+                "year": 1962,
+                "url": "https://archive.org/details/travelsofibnbatt02harg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 378-379",
+                "notes": "Cambridge, Hakluyt Society, lu sur la numérisation d'Internet Archive. La note 56 du traducteur explique le mot sāḥil."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1850,
+              "label": "Rapportée en 1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Waswahili viendrait de l'arabe sahel, au pluriel suahel, « rivage, côte » : ce seraient « les gens de la côte », selon Johann Ludwig Krapf, qui tient cette explication pour la plus juste.",
+            "hypothesisGroup": "origine du nom Waswahili",
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9-11",
+                "notes": "Tübingen, L. F. Fues, lu sur la numérisation d'Internet Archive. L'auteur, missionnaire, vit alors près de Mombasa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1850,
+              "label": "Rapportée en 1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Waswahili viendrait de saua hila, « ruse égale » ou « fais une ruse », tiré de l'arabe hila, « ruse », selon les habitants de la côte interrogés par Johann Ludwig Krapf. Krapf rejette cette explication.",
+            "hypothesisGroup": "origine du nom Waswahili",
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9-11",
+                "notes": "Tübingen, L. F. Fues, lu sur la numérisation d'Internet Archive. L'auteur, missionnaire, vit alors près de Mombasa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1850,
+              "label": "Rapportée en 1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Waswahili viendrait de sihel, « sud-est, sud-ouest », que Johann Ludwig Krapf rattache à l'arabe suhailon, l'étoile Canopus : la côte serait le pays situé vers le sud-ouest de l'Arabie.",
+            "hypothesisGroup": "origine du nom Waswahili",
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9-11",
+                "notes": "Tübingen, L. F. Fues, lu sur la numérisation d'Internet Archive. L'auteur, missionnaire, vit alors près de Mombasa."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
