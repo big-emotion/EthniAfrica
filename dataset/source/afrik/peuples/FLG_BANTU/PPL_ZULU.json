@@ -136,5 +136,335 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Zoulou désigne un peuple d'Afrique australe, surtout établi au KwaZulu-Natal, en Afrique du Sud, qui se nomme lui-même amaZulu. D'autres noms existent : Zulu, la forme courante en anglais, et Matébélé, le surnom que leur donnaient autrefois les Basotho. Les sources ne s'accordent pas sur l'origine du nom Zulu ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "amaZulu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "zul",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : amaZulu au pluriel, umZulu pour une personne.",
+        "periodLabel": "Écrit dès 1829",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom amaZulu désigne le peuple zoulou ; une seule personne se dit umZulu, et la langue isiZulu, selon le Dictionary of South African English. D'où vient le nom Zulu lui-même est discuté : les explications proposées sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Zulu »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/zulu/e08042",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Zulu se retrouve dans amaZulu, le peuple, umZulu, une personne, et isiZulu, la langue. L'entrée le rattache au nom de uZulu, fondateur du clan dominant, mort vers 1709 selon elle, dont le nom viendrait de izulu, « ciel » ; elle juge que lire amaZulu comme « peuple du ciel » vient d'une méprise et que le sens strict est « ceux de uZulu ». Elle cite un texte de 1824 : « Chaka, king of the Zulus », et le journal du missionnaire William Shaw, le 16 mai 1829 : « Chaka's grandfather was called Zulu, which signifies High, or the Heavens .. from him the Nation is now called Amazulu, or people of Heaven »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1836,
+              "to": 1842,
+              "label": "Voyage de 1836, récit publié en 1842"
+            },
+            "era": "polity",
+            "statement": "Le nom amaZulu est écrit Amazoulous par les missionnaires Thomas Arbousset et François Daumas. Un Mosotho leur explique que les Basotho ont surnommé ces guerriers Matébélé, « tandis qu'entre eux-mêmes ils s'appellent Amazoulous ».",
+            "formAsWritten": "Amazoulous",
+            "sources": [
+              {
+                "title": "Relation d'un voyage d'exploration au nord-est de la colonie du Cap de Bonne-Espérance",
+                "author": "Thomas Arbousset et François Daumas",
+                "year": 1842,
+                "url": "https://archive.org/details/relationdunvoya00arbogoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 268-269",
+                "notes": "Paris, Arthus Bertrand, 1842, récit d'un voyage fait en 1836, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Page 269, un Mosotho parle des Zoulas : « nous fûmes tous saisis de frayeur, et les surnommâmes Matébéles, tandis qu'entre eux-mêmes ils s'appellent Amazoulous »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1829,
+              "to": 1829,
+              "label": "16 mai 1829"
+            },
+            "era": "polity",
+            "statement": "Le nom amaZulu apparaît, écrit Amazulu, dans le journal du missionnaire William Shaw, qui le rattache à Zulu, le grand-père de Chaka, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Amazulu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Zulu »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/zulu/e08042",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1829",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Zulu se retrouve dans amaZulu, le peuple, umZulu, une personne, et isiZulu, la langue. L'entrée le rattache au nom de uZulu, fondateur du clan dominant, mort vers 1709 selon elle, dont le nom viendrait de izulu, « ciel » ; elle juge que lire amaZulu comme « peuple du ciel » vient d'une méprise et que le sens strict est « ceux de uZulu ». Elle cite un texte de 1824 : « Chaka, king of the Zulus », et le journal du missionnaire William Shaw, le 16 mai 1829 : « Chaka's grandfather was called Zulu, which signifies High, or the Heavens .. from him the Nation is now called Amazulu, or people of Heaven »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Zulu viendrait de Zulu, fils de Malandela : le clan issu de lui aurait pris son nom, et amaZulu voudrait dire « ceux de Zulu », selon les généalogies recueillies par le missionnaire Alfred T. Bryant. Le nom de cet ancêtre viendrait lui-même de izulu, « ciel », selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Zulu",
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 733",
+                "notes": "Pinetown, Mariannhill Mission Press, 1905, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Entrée u-Zulu : « Son of Malandela (by Nozidiya), and brother of Qwabe; clan (collectively) originating from him; whole Zulu nation ». L'entrée i-Zulu, page 734, donne « Sky, heavens; weather ; lightning »."
+              },
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13 et 20-21",
+                "notes": "Londres, Longmans, Green and Co., 1929. Lu le 10 octobre 2026 dans une copie non officielle déposée sur Internet Archive. L'auteur, missionnaire au Natal depuis 1883, s'appuie sur les traditions qu'il a recueillies. Page 13 : « From this Malandela the Zulus took their rise ». Pages 20-21 : le pays du Mkumbane est « the original homeland of the aba-kwa-Zulu clan (They-of-the-family-of-Zulu) »."
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Zulu »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/zulu/e08042",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Zulu se retrouve dans amaZulu, le peuple, umZulu, une personne, et isiZulu, la langue. L'entrée le rattache au nom de uZulu, fondateur du clan dominant, mort vers 1709 selon elle, dont le nom viendrait de izulu, « ciel » ; elle juge que lire amaZulu comme « peuple du ciel » vient d'une méprise et que le sens strict est « ceux de uZulu ». Elle cite un texte de 1824 : « Chaka, king of the Zulus », et le journal du missionnaire William Shaw, le 16 mai 1829 : « Chaka's grandfather was called Zulu, which signifies High, or the Heavens .. from him the Nation is now called Amazulu, or people of Heaven »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1829,
+              "to": 1842,
+              "label": "Proposée en 1829, reprise en 1842"
+            },
+            "statement": "Le nom amaZulu voudrait dire « le peuple du ciel », ou « les Célestes », selon le missionnaire William Shaw en 1829, cité par le Dictionary of South African English, puis Thomas Arbousset et François Daumas. Le dictionnaire y voit une méprise : il lit plutôt « ceux de Zulu », du nom de l'ancêtre.",
+            "hypothesisGroup": "origine du nom Zulu",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Zulu »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/zulu/e08042",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Zulu se retrouve dans amaZulu, le peuple, umZulu, une personne, et isiZulu, la langue. L'entrée le rattache au nom de uZulu, fondateur du clan dominant, mort vers 1709 selon elle, dont le nom viendrait de izulu, « ciel » ; elle juge que lire amaZulu comme « peuple du ciel » vient d'une méprise et que le sens strict est « ceux de uZulu ». Elle cite un texte de 1824 : « Chaka, king of the Zulus », et le journal du missionnaire William Shaw, le 16 mai 1829 : « Chaka's grandfather was called Zulu, which signifies High, or the Heavens .. from him the Nation is now called Amazulu, or people of Heaven »."
+              },
+              {
+                "title": "Relation d'un voyage d'exploration au nord-est de la colonie du Cap de Bonne-Espérance",
+                "author": "Thomas Arbousset et François Daumas",
+                "year": 1842,
+                "url": "https://archive.org/details/relationdunvoya00arbogoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 269, note 2",
+                "notes": "Paris, Arthus Bertrand, 1842, récit d'un voyage fait en 1836, lu dans la numérisation d'Internet Archive le 10 octobre 2026. La note 2 traduit « Amazulu, les Zoulas, c'est-à-dire les Célestes » et ajoute qu'il n'y a pas d'exemple « de rois qui aient eux-mêmes porté les noms du ciel », de sorte qu'Amazoulou « peut fort bien dire les Célestes »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zulu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "zul",
+        "namedBy": null,
+        "shortLine": "Le radical du nom, employé seul en anglais ; d'abord celui d'un petit clan.",
+        "periodLabel": "Écrit dès 1824",
+        "accounts": [
+          {
+            "period": {
+              "from": 1816,
+              "to": 1828,
+              "label": "Règne de Chaka, de 1816 à 1828"
+            },
+            "era": "polity",
+            "statement": "Le nom Zulu est d'abord celui d'une petite chefferie que commande Senzangakhona et qui paie tribut aux Mthethwa de Dingiswayo. Sous Chaka, son fils, il devient celui d'un royaume qui naît des débris des confédérations mthethwa et ndwandwe, selon Leonard D. Ngcongco.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131 et 149",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 131 : Dingiswayo « levait tribut sur plus de trente chefferies de la région, parmi lesquelles se trouvait une petite chefferie commandée par Senzangakhona : l'État zulu ». Page 149 : « Le royaume zulu émergea des cendres des confédérations mthethwa et ndwandwe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1827,
+              "to": 1827,
+              "label": "1827"
+            },
+            "era": "polity",
+            "statement": "Le nom Zulu est écrit Zoolas par le voyageur George Thompson, qui raconte la visite de commerçants anglais à « Chaka, King of the Zoolas ».",
+            "formAsWritten": "Zoolas",
+            "sources": [
+              {
+                "title": "Travels and Adventures in Southern Africa, vol. II",
+                "author": "George Thompson",
+                "year": 1827,
+                "url": "https://archive.org/details/travelsadventure02thom",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "table des matières et p. 405",
+                "notes": "Londres, Henry Colburn, 1827, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Annexe V, « Some Account of Mr. Farewell's Settlement at Port Natal, and of a Visit to Chaka, King of the Zoolas »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1824,
+              "to": 1850,
+              "label": "Texte de 1824, publié en 1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Zulu apparaît, écrit Zulus, dans un texte daté de 1824 qui parle de « Chaka, king of the Zulus », publié en 1850 par J. S. Christopher, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Le clan et le royaume existaient déjà avant elle.",
+            "formAsWritten": "Zulus",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Zulu »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/zulu/e08042",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1824",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Zulu se retrouve dans amaZulu, le peuple, umZulu, une personne, et isiZulu, la langue. L'entrée le rattache au nom de uZulu, fondateur du clan dominant, mort vers 1709 selon elle, dont le nom viendrait de izulu, « ciel » ; elle juge que lire amaZulu comme « peuple du ciel » vient d'une méprise et que le sens strict est « ceux de uZulu ». Elle cite un texte de 1824 : « Chaka, king of the Zulus », et le journal du missionnaire William Shaw, le 16 mai 1829 : « Chaka's grandfather was called Zulu, which signifies High, or the Heavens .. from him the Nation is now called Amazulu, or people of Heaven »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1670,
+              "to": 1670,
+              "label": "Vers 1670, selon Bryant"
+            },
+            "era": "polity",
+            "statement": "On parle alors de Malandela, un Nguni venu des collines de Babanango, qui s'installe avec les siens dans la vallée de la Mhlatuze ; c'est de lui que descendraient les Zulu, selon les traditions recueillies par Alfred T. Bryant, qui avance la date de 1670 environ.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13 et 17",
+                "notes": "Londres, Longmans, Green and Co., 1929. Lu le 10 octobre 2026 dans une copie non officielle déposée sur Internet Archive. L'auteur, missionnaire au Natal depuis 1883, s'appuie sur les traditions qu'il a recueillies. Page 13 : « It was about the year 1670 when a Nguni man and his family, Malandela, son of Luzumane, by name, appeared on the river's banks ». Page 17 : chapitre « Malandela goes forth to found a tribe (c. 1670) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zoulou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "La forme française du nom, écrite Zoulas puis Zoulou chez des missionnaires français.",
+        "periodLabel": "Écrit dès 1842",
+        "accounts": [
+          {
+            "period": {
+              "from": 1836,
+              "to": 1842,
+              "label": "Voyage de 1836, récit publié en 1842"
+            },
+            "era": "polity",
+            "statement": "Le nom Zoulou apparaît chez les missionnaires Thomas Arbousset et François Daumas, qui écrivent Zoulas pour le peuple et Zoulou dans une note sur le sens du nom. C'est la plus ancienne trace française de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Zoulas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Relation d'un voyage d'exploration au nord-est de la colonie du Cap de Bonne-Espérance",
+                "author": "Thomas Arbousset et François Daumas",
+                "year": 1842,
+                "url": "https://archive.org/details/relationdunvoya00arbogoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 268-269",
+                "notes": "Paris, Arthus Bertrand, 1842, récit d'un voyage fait en 1836, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Page 268 : la contrée est « presque uniquement peuplée de Zoulas ». Page 269, note 2 : « La préfixe ama assimilée à Zoulou »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Matébélé",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "sot",
+        "namedBy": "les Basotho",
+        "shortLine": "Le surnom que les Basotho donnaient aux guerriers zoulous, selon Arbousset et Daumas.",
+        "periodLabel": "Noté en 1836",
+        "accounts": [
+          {
+            "period": {
+              "from": 1836,
+              "to": 1842,
+              "label": "Voyage de 1836, récit publié en 1842"
+            },
+            "era": "polity",
+            "statement": "Le nom Matébélé est le surnom que les Basotho donnaient aux guerriers zoulous, d'après un Mosotho interrogé par Thomas Arbousset et François Daumas. Il voudrait dire « ceux qui disparaissent derrière leurs immenses boucliers », selon leur note. Bryant écrit aussi que les peuples sotho appelaient ainsi ces gens. C'est la plus ancienne trace de ce surnom pour les Zoulou que le projet connaît.",
+            "formAsWritten": "Matébéles",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Relation d'un voyage d'exploration au nord-est de la colonie du Cap de Bonne-Espérance",
+                "author": "Thomas Arbousset et François Daumas",
+                "year": 1842,
+                "url": "https://archive.org/details/relationdunvoya00arbogoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 269 et note 1",
+                "notes": "Paris, Arthus Bertrand, 1842, récit d'un voyage fait en 1836, lu dans la numérisation d'Internet Archive le 10 octobre 2026. La note 1 traduit le surnom par « ceux qui disparaissent ou sont à peine visibles derrière leurs immenses boucliers »."
+              },
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 55*",
+                "notes": "Pinetown, Mariannhill Mission Press, 1905, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Introduction historique : « just in the same way as the Suto tribes called these same people maTebele »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

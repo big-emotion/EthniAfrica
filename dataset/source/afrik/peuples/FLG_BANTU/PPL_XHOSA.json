@@ -129,5 +129,265 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Xhosa désigne un peuple de la province du Cap-Oriental, en Afrique du Sud, qui se nomme lui-même amaXhosa. D'autres noms existent : Amakosa et Kosa dans les textes anglais anciens, Magoses dans un récit néerlandais de 1689, et Abe-Nguni, un nom plus ancien selon la tradition. Les sources ne s'accordent pas sur l'origine du nom Xhosa ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "amaXhosa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "xho",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : amaXhosa au pluriel, umXhosa pour une personne.",
+        "periodLabel": "Une forme proche est écrite dès 1689",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom amaXhosa désigne le peuple xhosa ; une seule personne se dit umXhosa, et la langue isiXhosa, selon le Dictionary of South African English. Son origine est discutée : les explications proposées sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Xhosa »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Xhosa/e07948",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Xhosa se retrouve dans amaXhosa, le peuple, umXhosa, une personne, et isiXhosa, la langue ; son origine est dite discutée. L'entrée rapporte trois pistes : le nom d'un chef ancien, uXhosa, peut-être légendaire, selon la tradition orale ; un mot nguni non attesté proche de xhoza, « tailler », et de ixhoza, « déserteur, rebelle » ; le mot khoikhoi //kósab, « un Xhosa », relevé par J. G. Kroenlein en 1889. Elle cite J. B. Peires (1981) : « the word 'Xhosa' is derived from the Khoi '//kosa', meaning 'angry men' », et John Barrow en 1801 : « The Kaffers call themselves Koussie »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1827,
+              "label": "Notes publiées en 1827"
+            },
+            "era": "polity",
+            "statement": "Le nom amaXhosa est écrit Amakosa par le voyageur George Thompson, d'après les notes du missionnaire John Brownlee : « le nom national des Cafres du Sud est Amakosa, dont le singulier est Kosa ».",
+            "formAsWritten": "Amakosa",
+            "sources": [
+              {
+                "title": "Travels and Adventures in Southern Africa, vol. II",
+                "author": "George Thompson",
+                "year": 1827,
+                "url": "https://archive.org/details/travelsadventure02thom",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 335",
+                "notes": "Londres, Henry Colburn, 1827, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Annexe I, « Account of the Amakosae, or Southern Caffers », tirée des notes manuscrites du révérend Brownlee : « The national appellation of the Southern Caffers is Amakosa, the singular of which is Kosa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1689,
+              "to": 1689,
+              "label": "15 avril 1689"
+            },
+            "era": "polity",
+            "statement": "Le nom amaXhosa a une forme proche, Magoses, dans une dépêche du commandant du Cap Simon van der Stell datée du 15 avril 1689 : elle rapporte le récit de marins du navire Stavenisse, naufragés en 1686, qui ont vécu près de trois ans « dans le pays des Magoses », selon l'édition de Donald Moodie. Moodie se demande s'il s'agit des Amakosa ; John Henderson Soga y reconnaît les Ama-Xosa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Magoses",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Record; or, a Series of Official Papers relative to the Condition and Treatment of the Native Tribes of South Africa",
+                "author": "Donald Moodie (édition)",
+                "year": 1838,
+                "url": "https://archive.org/details/recordorseriesof00mood",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 432-433",
+                "notes": "Le Cap, 1838, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Dépêche du 15 avril 1689 : la galiote Noord mouille « abreast of the country of the Magoses » ; les survivants ont mendié leur nourriture « in the kraals or villages of the Magose Africans ». Moodie annote « Magosche [Amakosa?] »."
+              },
+              {
+                "title": "The South-Eastern Bantu (Abe-Nguni, Aba-Mbo, Ama-Lala)",
+                "author": "John Henderson Soga",
+                "year": 1930,
+                "url": "https://archive.org/details/soga-jh-the-south-eastern-bantu-1930",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 110",
+                "notes": "Johannesburg, Witwatersrand University Press, 1930. Lu le 10 octobre 2026 dans une copie non officielle déposée sur Internet Archive. L'auteur, pasteur xhosa, s'appuie sur les généalogies et les traditions des chefs. D'après les survivants du Stavenisse, la liste des peuples rencontrés comprend « Magossebe (Ama-Xosa) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1535,
+              "label": "Avant le XVIe siècle, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "On parle alors des Abe-Nguni, du nom de Mnguni, que la tradition donne pour père de Xosa ; le nom Ama-Xosa a peu à peu pris la place de celui d'Abe-Nguni, selon John Henderson Soga, qui place Xosa avant 1535.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The South-Eastern Bantu (Abe-Nguni, Aba-Mbo, Ama-Lala)",
+                "author": "John Henderson Soga",
+                "year": 1930,
+                "url": "https://archive.org/details/soga-jh-the-south-eastern-bantu-1930",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 88 et 96",
+                "notes": "Johannesburg, Witwatersrand University Press, 1930. Lu le 10 octobre 2026 dans une copie non officielle déposée sur Internet Archive. L'auteur, pasteur xhosa, s'appuie sur les généalogies et les traditions des chefs. Page 88 : le nom Ama-Xosa « has largely superseded that of Abe-Nguni within the tribe itself » ; Soga cite M. M. Fuze : « This is the Mnguni who was father of Xosa ». Page 96 : Xosa « lived not later than 1535 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Xhosa viendrait de Xosa, un chef ancien, peut-être légendaire, dont le peuple porterait le nom, selon la tradition orale que rapportent John Henderson Soga et le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Xhosa",
+            "sources": [
+              {
+                "title": "The South-Eastern Bantu (Abe-Nguni, Aba-Mbo, Ama-Lala)",
+                "author": "John Henderson Soga",
+                "year": 1930,
+                "url": "https://archive.org/details/soga-jh-the-south-eastern-bantu-1930",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 88",
+                "notes": "Johannesburg, Witwatersrand University Press, 1930. Lu le 10 octobre 2026 dans une copie non officielle déposée sur Internet Archive. L'auteur, pasteur xhosa, s'appuie sur les généalogies et les traditions des chefs. « There is no record of how Xosa so distinguished himself, that the tribal name Ama-Xosa to-day has largely superseded that of Abe-Nguni within the tribe itself »."
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Xhosa »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Xhosa/e07948",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Xhosa se retrouve dans amaXhosa, le peuple, umXhosa, une personne, et isiXhosa, la langue ; son origine est dite discutée. L'entrée rapporte trois pistes : le nom d'un chef ancien, uXhosa, peut-être légendaire, selon la tradition orale ; un mot nguni non attesté proche de xhoza, « tailler », et de ixhoza, « déserteur, rebelle » ; le mot khoikhoi //kósab, « un Xhosa », relevé par J. G. Kroenlein en 1889. Elle cite J. B. Peires (1981) : « the word 'Xhosa' is derived from the Khoi '//kosa', meaning 'angry men' », et John Barrow en 1801 : « The Kaffers call themselves Koussie »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Xhosa viendrait d'un mot nguni voisin de ixhoza, « déserteur » ou « rebelle » : un groupe ou son chef aurait reçu ce surnom en se séparant des autres Nguni, selon le Dictionary of South African English, qui présente cette explication comme possible.",
+            "hypothesisGroup": "origine du nom Xhosa",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Xhosa »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Xhosa/e07948",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Xhosa se retrouve dans amaXhosa, le peuple, umXhosa, une personne, et isiXhosa, la langue ; son origine est dite discutée. L'entrée rapporte trois pistes : le nom d'un chef ancien, uXhosa, peut-être légendaire, selon la tradition orale ; un mot nguni non attesté proche de xhoza, « tailler », et de ixhoza, « déserteur, rebelle » ; le mot khoikhoi //kósab, « un Xhosa », relevé par J. G. Kroenlein en 1889. Elle cite J. B. Peires (1981) : « the word 'Xhosa' is derived from the Khoi '//kosa', meaning 'angry men' », et John Barrow en 1801 : « The Kaffers call themselves Koussie »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1981,
+              "label": "Proposée à partir de 1889"
+            },
+            "statement": "Le nom Xhosa viendrait du khoikhoi : le mot //kósab, « un Xhosa », relevé par J. G. Kroenlein en 1889, aurait servi à distinguer les Xhosa des San, selon le Dictionary of South African English. L'historien J. B. Peires y lit //kosa, « hommes en colère », selon le même dictionnaire.",
+            "hypothesisGroup": "origine du nom Xhosa",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Xhosa »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Xhosa/e07948",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Xhosa se retrouve dans amaXhosa, le peuple, umXhosa, une personne, et isiXhosa, la langue ; son origine est dite discutée. L'entrée rapporte trois pistes : le nom d'un chef ancien, uXhosa, peut-être légendaire, selon la tradition orale ; un mot nguni non attesté proche de xhoza, « tailler », et de ixhoza, « déserteur, rebelle » ; le mot khoikhoi //kósab, « un Xhosa », relevé par J. G. Kroenlein en 1889. Elle cite J. B. Peires (1981) : « the word 'Xhosa' is derived from the Khoi '//kosa', meaning 'angry men' », et John Barrow en 1801 : « The Kaffers call themselves Koussie »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Xhosa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "xho",
+        "namedBy": null,
+        "shortLine": "Le radical du nom, employé seul en anglais et en français.",
+        "periodLabel": "Écrit dès 1801",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Xhosa désigne d'abord, au sens strict, les descendants du clan de Phalo, mort en 1775, qui se réclament du chef Xosa ; au sens large, tous les Nguni du Cap-Oriental qui parlent la même langue, selon le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Xhosa »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Xhosa/e07948",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Xhosa se retrouve dans amaXhosa, le peuple, umXhosa, une personne, et isiXhosa, la langue ; son origine est dite discutée. L'entrée rapporte trois pistes : le nom d'un chef ancien, uXhosa, peut-être légendaire, selon la tradition orale ; un mot nguni non attesté proche de xhoza, « tailler », et de ixhoza, « déserteur, rebelle » ; le mot khoikhoi //kósab, « un Xhosa », relevé par J. G. Kroenlein en 1889. Elle cite J. B. Peires (1981) : « the word 'Xhosa' is derived from the Khoi '//kosa', meaning 'angry men' », et John Barrow en 1801 : « The Kaffers call themselves Koussie »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1830,
+              "label": "Fin du XVIIIe et début du XIXe siècle"
+            },
+            "statement": "Le nom Xhosa sert alors, sous le nom de Nguni du Cap ou du Sud, à désigner l'un des trois groupes, avec les Tembu et les Mpondo, qui vivent entre la Keiskamma et l'Umzimkulu, selon Elleck K. Mashingaidze.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 6 : L'impact du Mfecane sur la colonie du Cap",
+                "author": "Elleck K. Mashingaidze",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 154",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. « La majorité des Africains était désignée collectivement sous le nom de Nguni du Cap, ou parfois sous celui de Nguni du Sud » ; ils étaient « divisés en trois catégories : les Xhosa, les Tembu et les Mpondo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1801,
+              "to": 1801,
+              "label": "1801"
+            },
+            "era": "polity",
+            "statement": "Le nom Xhosa a une forme proche, Koussie, chez le voyageur John Barrow : « les Cafres se nomment eux-mêmes Koussie », mot que les Khoikhoi prononcent avec un claquement de langue, selon le Dictionary of South African English. C'est la plus ancienne trace de cette forme courte que le projet connaît.",
+            "formAsWritten": "Koussie",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Xhosa »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Xhosa/e07948",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1801",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Xhosa se retrouve dans amaXhosa, le peuple, umXhosa, une personne, et isiXhosa, la langue ; son origine est dite discutée. L'entrée rapporte trois pistes : le nom d'un chef ancien, uXhosa, peut-être légendaire, selon la tradition orale ; un mot nguni non attesté proche de xhoza, « tailler », et de ixhoza, « déserteur, rebelle » ; le mot khoikhoi //kósab, « un Xhosa », relevé par J. G. Kroenlein en 1889. Elle cite J. B. Peires (1981) : « the word 'Xhosa' is derived from the Khoi '//kosa', meaning 'angry men' », et John Barrow en 1801 : « The Kaffers call themselves Koussie »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
