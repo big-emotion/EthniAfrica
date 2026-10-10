@@ -3,6 +3,166 @@
   "nameMain": "Bilen",
   "languageFamilyId": "FLG_COUCHITIQUE",
   "currentCountries": ["ERI"],
+  "nameHistory": {
+    "summary": "Le nom Bilen désigne un peuple d'Érythrée qui se nomme lui-même ainsi. Au XIXe siècle, ses voisins et les voyageurs européens l'appelaient Bogos. Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bilen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "byn",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple préférait se donner dès 1857, selon un missionnaire italien.",
+        "usedIn": ["byn"],
+        "periodLabel": "Écrit dès 1857 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1883,
+              "to": 1883,
+              "label": "1883"
+            },
+            "statement": "Le nom Bilen s'écrit Bilin chez le linguiste autrichien Leo Reinisch, qui publie en 1883 des textes dans cette langue recueillis au pays des Bogos.",
+            "formAsWritten": "Bilin-Sprache",
+            "sources": [
+              {
+                "title": "Die Bilin-Sprache, vol. 1 : Texte der Bilin-Sprache",
+                "author": "Leo Reinisch",
+                "year": 1883,
+                "url": "https://archive.org/details/diebilinsprache00reingoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Leipzig, Th. Grieben, 1883. Lu dans la numérisation d'Internet Archive. L'auteur y publie des textes recueillis lors de ses voyages de 1875-1876 et de 1879-1880.",
+                "page": "page de titre"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Bilen apparaît par écrit chez le missionnaire italien Giuseppe Sapeto : les Abyssins et les gens de Batzé appellent ce peuple Bogos ou Mogos, mais il préfère se nommer lui-même Bilen, ou Sanahit pour ceux de l'est de l'Anseba. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Bilen",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Viaggio e missione cattolica fra i Mensâ, i Bogos e gli Habab con un cenno geografico e storico dell'Abissinia",
+                "author": "Giuseppe Sapeto",
+                "year": 1857,
+                "url": "https://archive.org/details/bub_gb_zG2jbr2523oC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Rome, Congrégation de la Propagande, 1857. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un missionnaire catholique italien.",
+                "page": "p. 154-155"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Proposée en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Bilen, ou Belem, garderait la trace des Blemmyes de l'Antiquité, selon Giuseppe Sapeto, qui précise lui-même que ce n'est qu'un soupçon et non une preuve.",
+            "hypothesisGroup": "origine du nom Bilen",
+            "sources": [
+              {
+                "title": "Viaggio e missione cattolica fra i Mensâ, i Bogos e gli Habab con un cenno geografico e storico dell'Abissinia",
+                "author": "Giuseppe Sapeto",
+                "year": 1857,
+                "url": "https://archive.org/details/bub_gb_zG2jbr2523oC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Rome, Congrégation de la Propagande, 1857. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un missionnaire catholique italien.",
+                "page": "p. 155"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bogos",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que leur donnaient au XIXe siècle leurs voisins et les voyageurs européens.",
+        "periodLabel": "XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "1859"
+            },
+            "era": "polity",
+            "statement": "Le nom Bogos désigne, chez l'explorateur suisse Werner Munzinger, un peuple dont l'ancêtre, Gebre Terke, serait venu du pays agaw du Lasta pour fuir une vengeance. Munzinger situe cette migration vers 1530, en comptant douze générations.",
+            "sources": [
+              {
+                "title": "Ueber die Sitten und das Recht der Bogos",
+                "author": "Werner Munzinger",
+                "year": 1859,
+                "url": "https://archive.org/details/ueberdiesittenu00munzgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Winterthour, Wurster et Cie, 1859. Lu dans la numérisation d'Internet Archive. L'auteur rapporte les traditions que lui ont racontées les Bogos.",
+                "page": "p. 6-7"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Bogos apparaît chez Giuseppe Sapeto, qui écrit que les Abyssins et les gens de Batzé appellent ce peuple « Bogos o Mogos ». C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Bogos o Mogos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Viaggio e missione cattolica fra i Mensâ, i Bogos e gli Habab con un cenno geografico e storico dell'Abissinia",
+                "author": "Giuseppe Sapeto",
+                "year": 1857,
+                "url": "https://archive.org/details/bub_gb_zG2jbr2523oC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Rome, Congrégation de la Propagande, 1857. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un missionnaire catholique italien.",
+                "page": "p. 154"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "Proposée en 1859"
+            },
+            "era": "polity",
+            "statement": "Le nom Bogos viendrait de Boas gor, « les fils de Boas », nom que ce peuple se donnait d'après un ancêtre très ancien ; les voisins en auraient fait Bogos, selon Werner Munzinger.",
+            "hypothesisGroup": "origine du nom Bogos",
+            "sources": [
+              {
+                "title": "Ueber die Sitten und das Recht der Bogos",
+                "author": "Werner Munzinger",
+                "year": 1859,
+                "url": "https://archive.org/details/ueberdiesittenu00munzgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Winterthour, Wurster et Cie, 1859. Lu dans la numérisation d'Internet Archive. L'auteur rapporte les traditions que lui ont racontées les Bogos.",
+                "page": "p. 7"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Bilen",

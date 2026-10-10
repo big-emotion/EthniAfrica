@@ -127,5 +127,233 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Banyankole désigne un peuple bantou du sud-ouest de l'Ouganda, qui se nomme lui-même Banyankore ou Banyankole. D'autres noms existent : Nkore, le nom de l'ancien royaume, et Ankole, le nom du district que les Britanniques ont formé autour de lui. On ne sait pas avec certitude d'où vient le nom Nkore ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Banyankole",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nyn",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; la Constitution de l'Ouganda l'écrit Banyankore.",
+        "periodLabel": "Écrit depuis 1915 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Banyankole figure, sous la forme Banyankore, dans la liste des communautés autochtones de l'Ouganda que dresse la Constitution de 1995.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution of the Republic of Uganda, 1995",
+                "author": "République de l'Ouganda",
+                "year": 1995,
+                "url": "https://www.wipo.int/wipolex/en/text/499403",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "Third Schedule",
+                "notes": "La troisième annexe dresse la liste des communautés autochtones de l'Ouganda au 1er février 1926. Texte tel que modifié en dernier lieu par la loi n° 13 de 2000, lu dans la base WIPO Lex de l'Organisation mondiale de la propriété intellectuelle le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1915,
+              "to": 1915,
+              "label": "1915"
+            },
+            "era": "colonial",
+            "statement": "Le nom Banyankole apparaît par écrit chez le missionnaire John Roscoe en 1915, qui consacre une partie de son livre aux « Banyankole, un peuple pastoral de l'Ankole ». C'est la plus ancienne trace de ce nom que le projet connaît. Les Banyankole vivaient déjà dans ce pays avant lui.",
+            "formAsWritten": "Banyankole",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Northern Bantu: An Account of Some Central African Tribes of the Uganda Protectorate",
+                "author": "John Roscoe",
+                "year": 1915,
+                "url": "https://archive.org/details/northernbantu00rosc",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 101",
+                "notes": "Cambridge, Cambridge University Press. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Banyankole désigne en 1923, chez John Roscoe, le peuple du district d'Ankole, éleveurs et cultivateurs ; Roscoe écrit que les Baganda, les Banyoro et les éleveurs du Rwanda reconnaissent que les Banyankole étaient installés dans le pays bien avant eux.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Banyankole: The Second Part of the Report of the Mackie Ethnological Expedition to Central Africa",
+                "author": "John Roscoe",
+                "year": 1923,
+                "url": "https://archive.org/details/banyankolesecond0000rosc",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Cambridge, Cambridge University Press. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nkore",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nyn",
+        "namedBy": null,
+        "shortLine": "Le nom de l'ancien royaume ; les voyageurs l'ont écrit Nkole, puis Ankori.",
+        "periodLabel": "Écrit dès 1863",
+        "accounts": [
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Nkore apparaît par écrit, sous la forme « Nkole », chez John Hanning Speke en 1863 : en 1861, au Karagwe, le roi Rumanika lui présente une épouse venue du Nkole, fille d'un ancien roi, et Speke place ce royaume à l'ouest du Kitara. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait déjà avant lui.",
+            "formAsWritten": "Nkole",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Rumanika",
+                "role": "roi du Karagwe, qui reçoit Speke"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 237 et p. 249",
+                "notes": "Édimbourg et Londres, William Blackwood and Sons. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1760,
+              "to": 1783,
+              "label": "Vers 1760-1783"
+            },
+            "era": "polity",
+            "statement": "Le nom Nkore désigne l'une des sociétés d'éleveurs dont l'autonomie croissante réduit le territoire du Bunyoro, entre 1760 environ et 1783, selon J. B. Webster, B. A. Ogot et J. P. Chrétien.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 860",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ankole",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "l'administration britannique",
+        "shortLine": "Le nom du district formé par les Britanniques autour du Nkore ; Stanley écrivait Ankori.",
+        "periodLabel": "Écrit dès 1878",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ankole désigne une création coloniale : une entité formée de plusieurs États autrefois séparés, selon Isaria N. Kimambo.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 288, note 28",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1878,
+              "to": 1878,
+              "label": "1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Ankole apparaît sous une forme proche, « Ankori », chez Henry Morton Stanley en 1878 : il nomme ainsi le royaume d'éleveurs que le roi Mutesa du Buganda a voulu envahir environ deux ans plus tôt pour punir son roi, et dont les gens, dit-il, ne laissent pas entrer les étrangers. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Ankori",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Mutesa",
+                "role": "roi du Buganda"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. I",
+                "author": "Henry M. Stanley",
+                "year": 1878,
+                "url": "https://archive.org/details/throughdarkcont04stangoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 297 et p. 302",
+                "notes": "Londres, Sampson Low, Marston, Searle & Rivington. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ankole désigne en 1923 un district du protectorat de l'Ouganda plus grand que l'ancien royaume : l'administration britannique y a ajouté le Mpororo et trois autres petits États, autrefois séparés et parfois hostiles, que gouverne désormais le roi d'Ankole, selon John Roscoe.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "The Banyankole: The Second Part of the Report of the Mackie Ethnological Expedition to Central Africa",
+                "author": "John Roscoe",
+                "year": 1923,
+                "url": "https://archive.org/details/banyankolesecond0000rosc",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-2",
+                "notes": "Cambridge, Cambridge University Press. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

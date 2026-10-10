@@ -144,5 +144,198 @@
         "source_kind": "ngo"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Fula nomades désigne ici les Peuls éleveurs nomades du Niger, du Nigeria, du Cameroun, du Tchad et de Centrafrique, qui se nomment eux-mêmes Fulɓe ladde ou, pour certains groupes, Woɗaaɓe. D'autres noms existent : Mbororo ou Bororo, que d'autres leur donnent. On ne sait pas avec certitude d'où vient le nom Mbororo, et les sources ne s'accordent pas sur le sens de Woɗaaɓe ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Fulɓe ladde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom que se donnent les éleveurs peuls nomades.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1990,
+              "to": 1994,
+              "label": "1990, revu en 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Fulɓe ladde est l'un des deux noms que se donnent les éleveurs peuls nomades du Nigeria, avec Fulɓe na'i, selon Roger Blench.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Fulɓe, Fulani and Fulfulde in Nigeria: Distribution and Identity",
+                "author": "Roger Blench",
+                "year": 1994,
+                "url": "https://fudeco-ngo.org/wp-content/uploads/2024/07/FulBe-identity-1990.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8",
+                "notes": "Nigerian National Livestock Resource Survey, Working Paper 23, version d'août 1990 revue en novembre 1994. Lu dans la copie mise en ligne par la FUDECO, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Fulɓe ladde désigne au Borno les WoDaaBe, en face des FulBe wuro, les Peuls installés et musulmans, selon Mette Bovin.",
+            "formAsWritten": "FulBe ladde",
+            "sources": [
+              {
+                "title": "Nomades « sauvages » et paysans « civilisés » : WoDaaBe et Kanuri au Borno",
+                "author": "Mette Bovin",
+                "year": 1985,
+                "url": "https://www.persee.fr/doc/jafr_0399-0346_1985_num_55_1_2086",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Journal des africanistes, tome 55, fascicule 1-2, p. 53-74. Lu sur Persée, lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Woɗaaɓe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un groupe de Peuls nomades ; son sens reste discuté.",
+        "periodLabel": "Écrit depuis 1962 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1962,
+              "to": 1962,
+              "label": "Enquête de 1951-1952, publiée en 1962"
+            },
+            "era": "modern",
+            "statement": "Le nom Woɗaaɓe s'écrit WoDaaBe chez Marguerite Dupire, qui l'a étudié chez une tribu de Bororo du Niger lors d'une enquête de 1951-1952. C'est la plus ancienne trace de ce nom que le projet connaît. Le groupe qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "WoDaaBe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Des nomades et leur bétail",
+                "author": "Marguerite Dupire",
+                "year": 1962,
+                "url": "https://www.persee.fr/doc/hom_0439-4216_1962_num_2_1_366447",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "L'Homme, tome 2, n° 1, p. 22-39. Lu sur Persée, lu le 10 octobre 2026. L'autrice a enquêté au Niger en 1951-1952."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1962,
+              "to": 1962,
+              "label": "Rapportée en 1962"
+            },
+            "era": "modern",
+            "statement": "Le nom Woɗaaɓe voudrait dire « interdits par le prophète », selon les Peuls musulmans que cite Marguerite Dupire : il soulignerait que ces éleveurs sont peu islamisés.",
+            "hypothesisGroup": "sens du nom Woɗaaɓe",
+            "sources": [
+              {
+                "title": "Des nomades et leur bétail",
+                "author": "Marguerite Dupire",
+                "year": 1962,
+                "url": "https://www.persee.fr/doc/hom_0439-4216_1962_num_2_1_366447",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "L'Homme, tome 2, n° 1, p. 22-39. Lu sur Persée, lu le 10 octobre 2026. L'autrice a enquêté au Niger en 1951-1952."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Proposée en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Woɗaaɓe voudrait dire « peuple du tabou » : il viendrait de mboda, « interdit, tabou », et le singulier désignerait une personne qui respecte les interdits et suit la Voie, selon Mette Bovin.",
+            "hypothesisGroup": "sens du nom Woɗaaɓe",
+            "sources": [
+              {
+                "title": "Nomades « sauvages » et paysans « civilisés » : WoDaaBe et Kanuri au Borno",
+                "author": "Mette Bovin",
+                "year": 1985,
+                "url": "https://www.persee.fr/doc/jafr_0399-0346_1985_num_55_1_2086",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 64",
+                "notes": "Journal des africanistes, tome 55, fascicule 1-2, p. 53-74. Lu sur Persée, lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mbororo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné de l'extérieur aux Peuls nomades ; eux-mêmes ne l'emploient pas.",
+        "periodLabel": "Écrit au moins depuis 1962 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1990,
+              "to": 1994,
+              "label": "1990, revu en 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbororo, ou Bororo, est un nom général que d'autres donnent à tous les Peuls nomades ; les nomades eux-mêmes ne l'emploient pas, selon Roger Blench. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Fulɓe, Fulani and Fulfulde in Nigeria: Distribution and Identity",
+                "author": "Roger Blench",
+                "year": 1994,
+                "url": "https://fudeco-ngo.org/wp-content/uploads/2024/07/FulBe-identity-1990.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8",
+                "notes": "Nigerian National Livestock Resource Survey, Working Paper 23, version d'août 1990 revue en novembre 1994. Lu dans la copie mise en ligne par la FUDECO, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1962,
+              "to": 1962,
+              "label": "1962"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbororo s'écrit Bororo chez Marguerite Dupire, pour des éleveurs nomades peuls du Niger que les autres Peuls regardent comme des « païens », peu islamisés.",
+            "formAsWritten": "Bororo",
+            "sources": [
+              {
+                "title": "Des nomades et leur bétail",
+                "author": "Marguerite Dupire",
+                "year": 1962,
+                "url": "https://www.persee.fr/doc/hom_0439-4216_1962_num_2_1_366447",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "L'Homme, tome 2, n° 1, p. 22-39. Lu sur Persée, lu le 10 octobre 2026. L'autrice a enquêté au Niger en 1951-1952."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

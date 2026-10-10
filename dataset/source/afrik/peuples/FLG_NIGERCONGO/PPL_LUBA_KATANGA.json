@@ -127,5 +127,168 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Luba-Katanga désigne les Luba du Katanga, au sud-est de la République démocratique du Congo, qui se nomment eux-mêmes Baluba. D'autres noms existent : les historiens parlent aussi de Luba Shankadi. On ne sait pas avec certitude d'où vient le nom Luba ; ce que disent les sources est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Baluba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lub",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, comme les autres peuples luba.",
+        "periodLabel": "Écrit dès 1869",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Baluba est aussi celui que se donnent les Luba du Kasaï. Ceux du Katanga s'en distinguent par leur langue : le kiluba parlé au Katanga diffère nettement du cibuba du Kasaï, selon Ndaywel è Nziem.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 651",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 651 : « Le cibuba et les langues et dialectes apparentés [...] diffèrent très nettement du kiluba parlé au Shaba », l'ancien nom du Katanga."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1300,
+              "label": "Au plus tard au XIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Les ancêtres des Luba vivent alors dans la dépression de l'Upemba. Des insignes de pouvoir y apparaissent au plus tard au XIIIe siècle, avec deux chefferies, à Katoka et à Sanga, qui ne sont pas encore le royaume luba, selon Ndaywel è Nziem.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 644",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 644 : des insignes du pouvoir « apparaissent au plus tard au XIIIe siècle, en même temps que des preuves attestant la formation de deux chefferies à Katoka et à Sanga », qui « n'annoncent pourtant pas de manière directe le Royaume luba »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1869,
+              "to": 1869,
+              "label": "Note du 18 mai 1869, publiée en 1874"
+            },
+            "era": "polity",
+            "statement": "Le nom Baluba figure dans le journal de David Livingstone, à Ujiji, le 18 mai 1869, au bout d'une route qui mène « on to Baluba ». La note ne dit pas s'il s'agit d'un peuple ou d'un pays, ni de quels Luba. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Baluba",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Livingstone",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Last Journals of David Livingstone, in Central Africa, from 1865 to his Death, vol. II",
+                "author": "David Livingstone, édité par Horace Waller",
+                "year": 1874,
+                "url": "https://archive.org/details/lastjournalsofda02livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9",
+                "notes": "Londres, John Murray, 1874. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. Note du 18 mai 1869 : « Masika-Kitobwé on to Baluba »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Luba Shankadi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que des historiens donnent aux Luba du Katanga.",
+        "periodLabel": "Usage des historiens",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Luba Shankadi sert à l'historien Ndaywel è Nziem pour désigner les Luba du Shaba, l'actuel Katanga, à côté des Luba Lubilanji du Kasaï. Nous n'avons pas trouvé de source qui explique le mot shankadi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 643",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 643 : l'histoire luba « couvre aussi bien les réalités concernant les Luba actuels du Shaba (les Luba shankadi) et du Kasaï (les Luba lubilanji) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Luba-Katanga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom qui distingue ce peuple et sa langue des Luba du Kasaï.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Luba-Katanga est celui que le catalogue Glottolog donne à la langue de ce peuple, le kiluba, pour la distinguer du luba-lulua parlé au Kasaï. Nous n'avons pas trouvé la plus ancienne trace de ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Luba-Katanga (luba1250)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionnaire",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/luba1250",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche consulté le 10 octobre 2026 : nom Luba-Katanga, code ISO 639-3 lub."
+              },
+              {
+                "title": "Glottolog — Luba-Lulua (luba1249)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionnaire",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/luba1249",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche consulté le 10 octobre 2026 : nom Luba-Lulua, code ISO 639-3 lua."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

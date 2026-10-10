@@ -112,5 +112,215 @@
         "notes": "Article de revue à comité de lecture, en accès libre sur Persée. Première page lue le 16 septembre 2026 : l'article porte sur les conquêtes zerma dans le Gurunsi entre 1856 et 1900, le contexte des razzias auquel se rattache le nom. Le texte intégral n'a pas été lu ici, et l'origine du nom n'y a pas été vérifiée."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gourounsi désigne un ensemble de peuples du sud du Burkina Faso et du nord du Ghana, comme les Kassena, les Nouna ou les Sissala, qui ne se nomment pas eux-mêmes ainsi : chacun porte son propre nom. Un de ces peuples, les Nankanse, préférait vers 1932 se nommer Gurense, un nom proche. Les sources ne s'accordent pas sur l'origine du nom Gourounsi ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Gourounsi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné de l'extérieur à plusieurs peuples ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis le XIXe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "1952"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gourounsi a eu plusieurs sens : il a d'abord désigné des groupes établis de part et d'autre de la frontière de la Gold Coast, puis Maurice Delafosse l'a employé pour un groupe de peuples, un groupe de langues et un pays, selon le père François J. Nicolas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La question de l'ethnique « Gourounsi » en Haute-Volta (A.O.F.)",
+                "author": "François J. Nicolas",
+                "year": 1952,
+                "url": "https://doi.org/10.2307/1156245",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 170, note 4, et p. 171, note 1",
+                "notes": "Africa, vol. 22, n° 2, p. 170-172. Lu dans l'extrait et les notes que Cambridge University Press met en accès libre, lu le 10 octobre 2026 ; le corps de l'article n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gourounsi, au singulier Gourounga, est un nom général qui réunit plusieurs peuples autour de Léo, comme les Nounouma, les Kassouna et les Sissala, selon Louis Tauxier.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le Noir du Soudan : pays mossi et gourounsi",
+                "author": "Louis Tauxier",
+                "year": 1912,
+                "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Larose. Lu dans une copie non officielle mise en ligne sur Internet Archive, lu le 10 octobre 2026 ; le texte numérisé ne porte pas les numéros de page. Passage lu : début du chapitre III, « Les Menkiéras »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gourounsi s'écrit Grunshi dans l'histoire des Dagomba qu'Emmanuel Forster Tamakloe publie à Accra en 1931, à partir des traditions des griots dagomba, selon Jean Rouch.",
+            "formAsWritten": "Grunshi",
+            "sources": [
+              {
+                "title": "Les cavaliers aux vautours. Les conquêtes zerma dans le Gurunsi (1856-1900)",
+                "author": "Jean Rouch",
+                "year": 1990,
+                "url": "https://www.persee.fr/doc/jafr_0399-0346_1990_num_60_2_2449",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Journal des africanistes, tome 60, fascicule 2, p. 5-36, texte écrit une trentaine d'années plus tôt. Lu sur Persée, lu le 10 octobre 2026. L'auteur cite E. F. Tamakloe, A brief history of the Dagomba People, Accra, 1931, chapitre « The Zabarmas in Grunshi » ; nous n'avons pas lu ce livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1892,
+              "label": "Voyage de 1888 (récit publié vers 1892)"
+            },
+            "era": "polity",
+            "statement": "Le nom Gourounsi désigne pour l'explorateur Louis-Gustave Binger un vaste pays entre le Mossi, le Dagomba, le Gondja et le Lobi. Il y voit des groupes qui parlent des langues différentes et vivent en villages séparés.",
+            "formAsWritten": "Gourounsi",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, récit paru dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "seconde partie, p. 59",
+                "notes": "Récit du voyage de 1887-1889. Lu sur la numérisation des Smithsonian Libraries sur Internet Archive, lu le 10 octobre 2026. L'exemplaire n'a pas de page de titre et porte la pagination du Tour du monde, où le récit a paru en livraisons ; la notice du catalogue le date de 1892."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1817,
+              "to": 1819,
+              "label": "1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Gourounsi a peut-être une forme proche, Gooroosie, dans le récit de voyage de l'Anglais Thomas Edward Bowdich : c'est un lieu sur une route qui part du Dagomba. L'anthropologue Pierre Bamony y voit la première mention du nom, mais les sources ne disent pas s'il s'agit du même pays. C'est la plus ancienne trace possible de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 208",
+                "notes": "Londres, John Murray. Lu sur Internet Archive, lu le 10 octobre 2026."
+              },
+              {
+                "title": "Les raisons de la réfutation du terme péjoratif « Gourounsi » censé qualifier un ensemble de peuples autochtones du Burkina Faso",
+                "author": "Pierre Bamony",
+                "year": 2023,
+                "url": "https://pierrebamony.com/2023/07/06/les-raisons-de-la-refutation-du-terme-pejoratif-gourounsi-cense-qualifier-un-ensemble-de-peuples-autochtones-du-burkina-faso/",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "notes": "Texte publié par l'auteur sur son site le 6 juillet 2023 ; lu le 10 octobre 2026. Il écrit le nom « gooroasie » et date l'ouvrage de 1820 ; l'édition lue par le projet date de 1819 et écrit Gooroosie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "Proposée en 1909"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gourounsi viendrait du mot songhaï grounga, « incirconcis », mis au pluriel selon les règles du moore, la langue des Mossi, selon le lieutenant Marc, que cite le père François J. Nicolas. Nous n'avons pas lu le livre du lieutenant Marc.",
+            "hypothesisGroup": "origine du nom Gourounsi",
+            "sources": [
+              {
+                "title": "La question de l'ethnique « Gourounsi » en Haute-Volta (A.O.F.)",
+                "author": "François J. Nicolas",
+                "year": 1952,
+                "url": "https://doi.org/10.2307/1156245",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 170, note 4, et p. 171, note 1",
+                "notes": "Africa, vol. 22, n° 2, p. 170-172. Lu dans l'extrait et les notes que Cambridge University Press met en accès libre, lu le 10 octobre 2026 ; le corps de l'article n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gourounsi serait un nom général que les Mossi donnaient à ces peuples, selon Louis Tauxier.",
+            "hypothesisGroup": "origine du nom Gourounsi",
+            "sources": [
+              {
+                "title": "Le Noir du Soudan : pays mossi et gourounsi",
+                "author": "Louis Tauxier",
+                "year": 1912,
+                "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Larose. Lu dans une copie non officielle mise en ligne sur Internet Archive, lu le 10 octobre 2026 ; le texte numérisé ne porte pas les numéros de page. Passage lu : début du chapitre III, « Les Menkiéras »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gurense",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que préféraient se donner les Nankanse, l'un des peuples dits gourounsi.",
+        "periodLabel": "Relevé vers 1932",
+        "accounts": [
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "Relevé vers 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gurense, au singulier Gureŋa, est celui que les Nankanse préfèrent se donner, plutôt que le nom que d'autres leur ont donné ; les peuples voisins le trouvent souvent méprisant, selon l'anthropologue Robert Sutherland Rattray, que cite le père François J. Nicolas. Nous n'avons pas lu le livre de Rattray.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La question de l'ethnique « Gourounsi » en Haute-Volta (A.O.F.)",
+                "author": "François J. Nicolas",
+                "year": 1952,
+                "url": "https://doi.org/10.2307/1156245",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172, note 1",
+                "notes": "Africa, vol. 22, n° 2, p. 170-172. Lu dans l'extrait et les notes que Cambridge University Press met en accès libre, lu le 10 octobre 2026 ; le corps de l'article n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

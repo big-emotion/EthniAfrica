@@ -167,5 +167,210 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Pedi désigne un peuple du nord-est de l'Afrique du Sud, qui se nomme lui-même Bapedi. Sa maison royale porte le nom de Maroteng. On ne sait pas avec certitude d'où vient le nom Pedi ; ce que proposent les sources est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Bapedi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nso",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, au pluriel.",
+        "periodLabel": "Écrit dès 1899",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bapedi désigne un peuple qui vit au nord-est de l'Afrique du Sud, autour de la rivière Steelpoort. Sa langue, le sepedi, figure parmi les langues officielles de l'Afrique du Sud, selon la Constitution de 1996.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "South African History Online — Pedi",
+                "author": "South African History Online",
+                "year": 2026,
+                "url": "https://sahistory.org.za/article/pedi",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Page consulté le 10 octobre 2026. La page situe l'installation des Maroteng vers 1650 au sud de la rivière Steelpoort."
+              },
+              {
+                "title": "Constitution of the Republic of South Africa, 1996, chapitre 1, article 6",
+                "author": "République d'Afrique du Sud",
+                "year": 1996,
+                "url": "https://www.gov.za/documents/constitution/chapter-1-founding-provisions",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Texte consulté le 10 octobre 2026 : « The official languages of the Republic are Sepedi, Sesotho, Setswana [...] »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Livre publié en 1857"
+            },
+            "statement": "Le nom Bapedi a peut-être une forme proche, Baperi, dans la liste des peuples bakoni que donne David Livingstone, au nord des Basuto. Les sources que nous avons lues ne disent pas s'il s'agit du même peuple.",
+            "formAsWritten": "Baperi",
+            "actors": [
+              {
+                "name": "David Livingstone",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 202",
+                "notes": "Londres, John Murray, 1857. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit : « The Bakoni farther north than the Basuto are the Batlou, Baperi, Bapo [...] »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "Souvenirs publiés en 1899"
+            },
+            "statement": "Le nom Bapedi figure dans les souvenirs du missionnaire allemand Alexander Merensky, qui raconte ses visites chez les Bapedi du roi Sekwati, au Transvaal. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Bapedi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alexander Merensky",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Erinnerungen aus dem Missionsleben in Transvaal, 1859-1882",
+                "author": "Alexander Merensky",
+                "year": 1899,
+                "url": "https://archive.org/details/erinnerungenaus00meregoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 68",
+                "notes": "Berlin, Buchhandlung der Berliner evangelischen Missionsgesellschaft, 1899. Souvenirs du missionnaire, lus dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit : « Dort wohnten die Bapedi Sekoatis, bei denen ich bereits gewesen war »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "Proposée en 1899"
+            },
+            "statement": "Le nom Bapedi serait lié à celui de Biri, un pays que les vieilles cartes portugaises et hollandaises placent, depuis deux siècles, là où vivent les Bapedi, selon Alexander Merensky.",
+            "hypothesisGroup": "origine du nom Pedi",
+            "sources": [
+              {
+                "title": "Erinnerungen aus dem Missionsleben in Transvaal, 1859-1882",
+                "author": "Alexander Merensky",
+                "year": 1899,
+                "url": "https://archive.org/details/erinnerungenaus00meregoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 38",
+                "notes": "Berlin, Buchhandlung der Berliner evangelischen Missionsgesellschaft, 1899. Souvenirs du missionnaire, lus dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit : « Wo sie wohnen, findet sich auf den alten portugiesischen und holländischen Karten schon vor 200 Jahren die Landschaft Biri eingetragen, deren Namen wohl mit dem unseres Stammes in Verbindung steht »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pedi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nso",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de son royaume, sans le préfixe du pluriel.",
+        "periodLabel": "Usage des historiens",
+        "accounts": [
+          {
+            "period": {
+              "from": 1820,
+              "to": 1824,
+              "label": "De 1820 à 1824"
+            },
+            "era": "polity",
+            "statement": "Le nom Pedi désigne chez l'historien Leonard D. Ngcongco le peuple que Thulare dirige jusqu'en 1820. En 1824, Mzilikazi s'établit sur la rivière Olifants, dans un pays habité surtout par les Pedi, et les attaque.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 134",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 134 : « En 1824, Mzilikazi s'établit sur les berges de l'Olifants, dans une contrée habitée principalement par les Pedi, groupe sotho-tswana qui, jusqu'en 1820, avait eu pour chef Thulare »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1876,
+              "to": 1879,
+              "label": "De 1876 à 1879"
+            },
+            "statement": "Le nom Pedi est celui du royaume de Sekhukhune, que la république du Transvaal attaque en 1876 et que les Britanniques et leurs alliés swazi vainquent en 1879, selon Ngwabi Bhebe.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 7 : Les Britanniques, les Boers et les Africains en Afrique du Sud, 1850-1880",
+                "author": "Ngwabi Bhebe",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 200-201",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 200 : « Le Transvaal était entré en guerre avec les Pedi, en mai 1876 » ; page 201 : « Ce n'est qu'en 1879 que les Britanniques et leurs alliés swazi réussirent à vaincre le royaume pedi et à faire prisonnier le roi Sekhukhune »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Maroteng",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nso",
+        "namedBy": null,
+        "shortLine": "Le nom de la maison royale des Pedi.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1650,
+              "to": 1650,
+              "label": "Vers 1650"
+            },
+            "era": "polity",
+            "statement": "Le nom Maroteng désigne la lignée royale des Pedi, une branche des Kgatla de langue tswana, qui s'installe vers 1650 au sud de la rivière Steelpoort, selon South African History Online.",
+            "sources": [
+              {
+                "title": "South African History Online — Pedi",
+                "author": "South African History Online",
+                "year": 2026,
+                "url": "https://sahistory.org.za/article/pedi",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Page consulté le 10 octobre 2026. La page écrit : « The Maroteng and their symbolic animal noko (porcupine) were an offshoot of Tswana-speaking Kgatla. In about 1650 settled in the area to the south of the Steelpoort River »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

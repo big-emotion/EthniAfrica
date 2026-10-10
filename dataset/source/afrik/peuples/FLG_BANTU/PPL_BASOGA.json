@@ -108,5 +108,148 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Basoga désigne un peuple bantou de l'est de l'Ouganda, au bord du lac Victoria, qui se nomme lui-même ainsi, et Musoga pour une seule personne ; son pays est le Busoga. D'autres noms existent : Wasoga et Usoga, les formes swahilies qu'écrivent les premiers voyageurs. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Basoga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "xog",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne : Basoga au pluriel, Musoga pour une personne, Busoga pour le pays.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Basoga figure dans la liste des communautés autochtones de l'Ouganda que dresse la Constitution de 1995.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution of the Republic of Uganda, 1995",
+                "author": "République de l'Ouganda",
+                "year": 1995,
+                "url": "https://www.wipo.int/wipolex/en/text/499403",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "Third Schedule",
+                "notes": "La troisième annexe dresse la liste des communautés autochtones de l'Ouganda au 1er février 1926. Texte tel que modifié en dernier lieu par la loi n° 13 de 2000, lu dans la base WIPO Lex de l'Organisation mondiale de la propriété intellectuelle le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1915,
+              "to": 1915,
+              "label": "1915"
+            },
+            "era": "colonial",
+            "statement": "Le nom Basoga désigne en 1915 les habitants du Busoga, dans la province orientale du protectorat de l'Ouganda ; le missionnaire John Roscoe note que le pays a longtemps été partagé entre les Banyoro, des chefs teso et les Baganda. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Northern Bantu: An Account of Some Central African Tribes of the Uganda Protectorate",
+                "author": "John Roscoe",
+                "year": 1915,
+                "url": "https://archive.org/details/northernbantu00rosc",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 197",
+                "notes": "Cambridge, Cambridge University Press. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1706,
+              "to": 1733,
+              "label": "1706-1733"
+            },
+            "era": "polity",
+            "statement": "Le nom Busoga désigne au début du XVIIIe siècle des États qui accueillent volontiers des colons et des mercenaires iteso, qui font contrepoids à la pression du Buganda, selon J. B. Webster, B. A. Ogot et J. P. Chrétien.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 862",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wasoga",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "swa",
+        "namedBy": "les marchands arabes et swahilis, selon Burton",
+        "shortLine": "La forme swahilie du nom, écrite par les voyageurs du XIXe siècle.",
+        "periodLabel": "Écrit dès 1860",
+        "accounts": [
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Wasoga apparaît par écrit dans le récit de Richard Burton paru en 1860 : il rapporte, d'après les marchands arabes, que le roi du Buganda fait la guerre aux Wasoga et que l'Usoga est un pays bas coupé de criques, où les gens se cachent pendant les razzias. C'est la plus ancienne trace de ce nom que le projet connaît. Les Basoga vivaient déjà au bord du lac avant lui.",
+            "formAsWritten": "Wasoga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, vol. II",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://www.gutenberg.org/ebooks/66813",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 189 et p. 197",
+                "notes": "Londres, Longman, Green, Longman, and Roberts. Lu dans l'édition du Projet Gutenberg, qui garde la pagination de l'original, le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1862,
+              "to": 1863,
+              "label": "1862-1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Wasoga revient chez John Hanning Speke en 1863 : en 1862, à la cour du roi Mutesa du Buganda, il écoute des musiciens wasoga jouer pendant qu'il attend d'être reçu.",
+            "formAsWritten": "Wasoga",
+            "actors": [
+              {
+                "name": "Mutesa",
+                "role": "roi du Buganda, qui reçoit Speke"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 297",
+                "notes": "Édimbourg et Londres, William Blackwood and Sons. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

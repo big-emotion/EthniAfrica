@@ -131,5 +131,150 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Urhobo désigne un peuple du delta du Niger, dans l'État du Delta, au Nigeria, qui se nomme lui-même Urhobo. Un autre nom a longtemps servi : Sobo, que ce peuple rejette aujourd'hui. On ne sait pas avec certitude d'où viennent ces deux noms : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Urhobo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "urh",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du delta du Niger.",
+        "periodLabel": "Écrit au XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Urhobo désigne un peuple et sa langue, au nord-ouest du delta du Niger. Les sources que nous avons lues ne disent pas d'où il vient ; on ne sait pas avec certitude ce qu'il voulait dire d'abord.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethnologue: Languages of the World — Urhobo (urh)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/urh/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Réutilisée depuis les sources de la fiche."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 15 : Les Fon et les Yoruba, du delta du Niger au Cameroun",
+                "author": "E. J. Alagoa",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 485",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "Livre imprimé en 1960"
+            },
+            "statement": "Le nom Urhobo figure en anglais sur la page de titre d'un livre de prières anglican en langue urhobo, imprimé à Londres en 1960. Le livre indique une première impression en 1939. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle est sans doute tardive. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Urhobo Prayer Book",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ọbẹ r'Ẹrhovbo r'Ihwo Ejobi. Urhobo Prayer Book",
+                "author": "Society for Promoting Christian Knowledge",
+                "year": 1960,
+                "url": "https://archive.org/details/urhobo1960_202312",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Londres, 1960, livre de prières anglican en langue urhobo, lu dans l'exemplaire numérisé sur archive.org. La page suivante indique une première impression en février 1939."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sobo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un ancien nom donné de l'extérieur ; les Urhobo le rejettent.",
+        "periodLabel": "XIXe-XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Sobo apparaît par écrit, sous la forme « Sṓbo », chez le linguiste Sigismund Koelle, qui place ce pays près des Igbo, à trois ou quatre jours de marche de la mer. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Sṓbo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section V-B-1",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1856,
+              "label": "Voyage de 1854, récit publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Sobo désigne, chez William Balfour Baikie, un peuple de langue distincte qui vend de l'huile de palme aux navires et paie tribut au Bénin.",
+            "sources": [
+              {
+                "title": "Narrative of an Exploring Voyage up the Rivers Kwóra and Bínue (commonly known as the Niger and Tsádda) in 1854",
+                "author": "William Balfour Baikie",
+                "year": 1856,
+                "url": "https://archive.org/details/narrativeanexpl01baikgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 339",
+                "notes": "Londres, John Murray, 1856, lu dans l'exemplaire numérisé sur archive.org."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sobo est celui qu'emploie Northcote Thomas, anthropologue du gouvernement colonial, pour le peuple qui vit au sud des Edo du Bénin et parle trois dialectes ou plus.",
+            "sources": [
+              {
+                "title": "Anthropological Report on the Edo-speaking Peoples of Nigeria, partie I",
+                "author": "Northcote W. Thomas",
+                "year": 1910,
+                "url": "https://archive.org/details/anthropologicalr00thom",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 5",
+                "notes": "Londres, Harrison, 1910, lu dans l'exemplaire numérisé sur archive.org. Rapport de l'anthropologue du gouvernement colonial de la Nigeria du Sud."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

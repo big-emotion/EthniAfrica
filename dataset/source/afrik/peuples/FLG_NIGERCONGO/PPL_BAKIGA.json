@@ -143,5 +143,194 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bakiga désigne un peuple bantou du sud-ouest de l'Ouganda, dans l'ancien district de Kigezi, qui se nomme lui-même ainsi. D'autres noms existent : Bakyiga, une graphie de 1924, et Chiga, celle d'une anthropologue de langue anglaise. Le nom serait lié au Rukiga, « les montagnes » ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bakiga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "cgg",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; il serait lié au Rukiga, « les montagnes » en kinyarwanda.",
+        "periodLabel": "Écrit depuis 1924 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "1972"
+            },
+            "era": "modern",
+            "statement": "Le nom Bakiga désigne les gens du Rukiga, un terme kinyarwanda qui veut dire « les montagnes », selon l'histoire du Kigezi dirigée par Donald Denoon ; F. Geraud, dans le même livre, donne ce sens au nom Rukiga.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A History of Kigezi in South-West Uganda",
+                "author": "Donald Denoon (dir.)",
+                "year": 1972,
+                "url": "https://archive.org/details/history-of-kigezi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8 et p. 43",
+                "notes": "Kampala, The National Trust, Adult Education Centre. Introduction et chapitre de F. Geraud. Copie non officielle, lue dans un dépôt d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Bakiga figure dans la liste des communautés autochtones de l'Ouganda que dresse la Constitution de 1995.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution of the Republic of Uganda, 1995",
+                "author": "République de l'Ouganda",
+                "year": 1995,
+                "url": "https://www.wipo.int/wipolex/en/text/499403",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "Third Schedule",
+                "notes": "La troisième annexe dresse la liste des communautés autochtones de l'Ouganda au 1er février 1926. Texte tel que modifié en dernier lieu par la loi n° 13 de 2000, lu dans la base WIPO Lex de l'Organisation mondiale de la propriété intellectuelle le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakiga devient une catégorie de l'administration britannique, arrivée au Kigezi en 1908 : elle classe la population en Banyarwanda du Bufumbira, Bakiga du Rukiga et Bahororo du Rujumbura, catégories devenues depuis une part de l'identité du Kigezi, selon Donald Denoon.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "A History of Kigezi in South-West Uganda",
+                "author": "Donald Denoon (dir.)",
+                "year": 1972,
+                "url": "https://archive.org/details/history-of-kigezi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8",
+                "notes": "Kampala, The National Trust, Adult Education Centre. Introduction. Copie non officielle, lue dans un dépôt d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakiga apparaît sous une forme proche, « Bakyiga », dans le livre que le missionnaire John Roscoe consacre en 1924 à des peuples du protectorat de l'Ouganda : il y appelle « les Bakyiga, peuple du Kigezi » les habitants de ce district de montagnes. C'est la plus ancienne trace de ce nom que le projet connaît. Les Bakiga vivaient déjà au Kigezi avant lui.",
+            "formAsWritten": "Bakyiga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Bagesu and Other Tribes of the Uganda Protectorate: The Third Part of the Report of the Mackie Ethnological Expedition to Central Africa",
+                "author": "John Roscoe",
+                "year": 1924,
+                "url": "https://archive.org/details/bagesuothertribe0000rosc",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 162",
+                "notes": "Cambridge, Cambridge University Press. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1908,
+              "label": "Avant 1908"
+            },
+            "era": "polity",
+            "statement": "Le nom Bakiga s'emploie pour des gens qui appelaient Bushengera la région centrale du Kigezi, celle que couvrent aujourd'hui le Rukiga et une partie du Ndorwa, selon F. Geraud.",
+            "sources": [
+              {
+                "title": "A History of Kigezi in South-West Uganda",
+                "author": "Donald Denoon (dir.)",
+                "year": 1972,
+                "url": "https://archive.org/details/history-of-kigezi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Kampala, The National Trust, Adult Education Centre. Chapitre de F. Geraud, « The Settlement of the Bakiga ». Copie non officielle, lue dans un dépôt d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1830,
+              "label": "Jusque vers 1830"
+            },
+            "era": "polity",
+            "statement": "Le nom Bakiga désigne l'un des derniers peuples à se former dans la région des Grands Lacs : à la fin du XVIIIe siècle, ses contours se dessinent, au terme d'un processus qui s'achève vers 1830, selon J. B. Webster, B. A. Ogot et J. P. Chrétien.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 895",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chiga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie qu'emploie en 1957 une anthropologue de langue anglaise.",
+        "periodLabel": "Écrit dès 1957",
+        "accounts": [
+          {
+            "period": {
+              "from": 1957,
+              "to": 1957,
+              "label": "1957"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chiga apparaît dans le titre du livre de l'anthropologue May Mandelbaum Edel, The Chiga of Western Uganda, paru en 1957, que Donald Denoon tient pour le meilleur ouvrage sur la société du Kigezi. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A History of Kigezi in South-West Uganda",
+                "author": "Donald Denoon (dir.)",
+                "year": 1972,
+                "url": "https://archive.org/details/history-of-kigezi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20",
+                "notes": "Kampala, The National Trust, Adult Education Centre. Introduction. Copie non officielle, lue dans un dépôt d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "The Chiga of Western Uganda",
+                "author": "May Mandelbaum Edel",
+                "year": 1957,
+                "url": "https://archive.org/details/chigaofwesternug0000unse",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "New York, Oxford University Press pour l'International African Institute. Seule la notice de l'ouvrage a été lue, sur Internet Archive, le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
