@@ -11,7 +11,8 @@
       "exonyms": [
         "Watutsi",
         "Watusi (forme ancienne)",
-        "Hamites (terme colonial raciste, completement rejete)"
+        "Hamites (terme colonial raciste, completement rejete)",
+        "Batutsi"
       ],
       "originOfExonyms": "Le terme hamite fut forge par les colonisateurs europeens (theorie hamitique) pour justifier la pretendue superiorite raciale des Tutsi et legitimer leur domination sous supervision belge. Cette theorie pseudo-scientifique a ete totalement demolie par l'anthropologie moderne. Les Tutsi comme les Hutu partagent la meme langue (Kirundi), la meme religion et la meme culture.",
       "whyProblematic": "La distinction Tutsi/Hutu est plus sociale qu'ethnique dans son origine historique. Instrumentalisee par la colonisation belge (cartes d'identite ethniques introduites en 1933), elle est devenue un marqueur de violence politique. Les Ganwa constituent une categorie aristocratique historiquement distincte des Tutsi communs. Un Hutu riche en betail pouvait devenir Tutsi socialement (kwihutura), et un Tutsi appauvri pouvait descendre au rang social des Hutu (gukora), selon les historiens.",
@@ -75,7 +76,7 @@
     "demography": {
       "totalPopulation": 1700000,
       "referenceYear": 2025,
-      "source": "CIA World Factbook et Wikipedia (Demographics of Burundi) : Hutu 85%, Tutsi 14%, Twa 1%. Population totale du Burundi 2024 estimee a ~14 millions (PopulationPyramid.net). Estimation Tutsi du Burundi 2025 : 14% de ~12,1 millions = environ 1,7 million (chiffre conservateur base sur les estimations de la Commission nationale des droits de l'homme du Burundi).",
+      "source": "CIA World Factbook et Wikipedia (Demographics of Burundi) : Hutu 85%, Tutsi 14%, Twa 1%. Population totale du Burundi 2024 estimee a ~14 millions (PopulationPyramid.net). Estimation Tutsi du Burundi 2025 : 14% de ~12,1 millions = environ 1,7 million (chiffre conservateur base sur les estimations de la Commission nationale des droits de l'homme du Burundi). Une autre estimation donne 2 100 000 Tutsi au Burundi en 2025 (Joshua Project 2025 : 1 998 000 ; World Population Review : 15 % de 14,4 millions). Les sources lues ne permettent pas de choisir entre ces chiffres.",
       "distributionByCountry": [
         {
           "country": "BDI",
@@ -124,6 +125,36 @@
         "url": "https://rwi.wwu.edu/genocide-burundi",
         "tier": "needs_review",
         "source_kind": "academic"
+      },
+      {
+        "title": "Britannica — Tutsi",
+        "url": "https://www.britannica.com/topic/Tutsi",
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Joshua Project — Tutsi in Burundi",
+        "url": "https://joshuaproject.net/people_groups/15663/BY",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "UNFPA — Burundi Population 2025",
+        "url": "https://www.unfpa.org/data/world-population/BI",
+        "tier": "official",
+        "source_kind": "intergovernmental"
+      },
+      {
+        "title": "World Population Review — Burundi 2025",
+        "url": "https://worldpopulationreview.com/countries/burundi",
+        "tier": "unverified",
+        "source_kind": "discovery"
+      },
+      {
+        "title": "SIL Ethnologue — Kirundi (run)",
+        "url": "https://www.ethnologue.com/language/run",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },

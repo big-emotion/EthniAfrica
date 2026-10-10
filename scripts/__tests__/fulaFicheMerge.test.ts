@@ -13,7 +13,6 @@ const RETIRED_IDS = ["PPL_FULANI", "PPL_FULA_SAHEL"];
 const KEPT_SUBGROUP_FILES = [
   "peuples/FLG_ATLANTIQUE/PPL_FULANI_MASSINA.json",
   "peuples/FLG_NIGERCONGO/PPL_FULA_NOMADES.json",
-  "peuples/FLG_NIGERCONGO/PPL_FULA_FORET.json",
 ];
 
 function corpusFiles(directory: string): string[] {
@@ -55,7 +54,7 @@ describe("Fula fiches merged into PPL_FULA", () => {
   });
 
   // @req REQ-178
-  it("keeps the Massina, nomad and forest fiches as separate sub-groups", () => {
+  it("keeps the Massina and nomad fiches as separate sub-groups", () => {
     for (const file of KEPT_SUBGROUP_FILES) {
       expect(
         existsSync(resolve(process.cwd(), "dataset/source/afrik", file)),

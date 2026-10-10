@@ -8,7 +8,7 @@
     "appellations": {
       "mainName": "Langi",
       "selfAppellation": "Langi (pluriel) ; Lango (singulier et forme usuelle en anglais)",
-      "exonyms": ["Lango", "Miro", "Umiro"],
+      "exonyms": ["Lango", "Miro", "Umiro", "Lang'o", "Lang'i"],
       "originOfExonyms": "Le terme Lango (singulier de Langi) est la forme la plus usitee en anglais et dans la litterature coloniale britannique. Miro et Umiro sont des variantes attestees dans certaines sources ethnographiques du XIXe et debut XXe siecle. Le nom Lango apparait egalement dans les vocabulaires des Teso, Kumam, Karamojong, Jie et Labwor.",
       "whyProblematic": "Le terme Lango peut preter a confusion avec d'autres peuples portant un nom similaire (notamment les Lango du Soudan du Sud, groupe distinct). Par ailleurs, la question de l'appartenance ethnolinguistique des Langi a longtemps ete debattue : certains chercheurs les classaient parmi les Nilotiques de l'Ouest (groupe Luo) alors que des etudes plus recentes, corroborees par l'evenement de reunion Ateker de novembre 2024, les rattachent aux Nilo-Hamites Ateker.",
       "contemporaryUsage": "Langi est le terme officiel utilise en Ouganda. La region administrative Lango recouvre les districts d'Amolatar, Alebtong, Apac, Dokolo, Kole, Lira, Oyam, Otuke et Kwania. La Lango Cultural Foundation est l'institution representative officielle avec plus de 148 clans enregistres.",
@@ -17,19 +17,33 @@
       "historicalRegion": "Nord-centre de l'Ouganda (ancienne province du Lango)",
       "currentCountries": ["UGA"]
     },
-    "ethnicities": ["Langi"],
+    "ethnicities": [
+      "Langi",
+      "Lango d'Apac (district historique, centre-ouest de la région lango)",
+      "Lango de Lira (capitale régionale, centre de la région)",
+      "Lango d'Oyam (district du nord-ouest)",
+      "Lango d'Alebtong (district du nord)",
+      "Lango d'Amolatar (district du sud, lac Kyoga)",
+      "Lango de Kole (district du centre)",
+      "Lango d'Otuke (district de l'est)",
+      "Lango de Kwania (district du sud)"
+    ],
     "origins": {
       "ancientOrigins": "Les Langi sont principalement un groupe ethnique Ateker, connu aussi sous le nom de Nilo-Hamites. Selon la tradition orale, ils faisaient partie de la grande race Lango lors de la periode migratoire, avant que ce groupe se fragmente en plusieurs entites distinctes entrant en Ouganda. Le nom Lango se retrouve dans les vocabulaires des Teso, Kumam, Karamojong, Jie et Labwor, ce qui temoigne d'une ancienne appartenance commune. Hutchinson (1902) les decrivait comme l'une des nations principales de l'ancien royaume de Bunyoro, les rattachant aux peuples de stock Galla (hamitique) plutot qu'aux Nilotiques noirs. Des recherches recentes (notamment la reunion Ateker d'Ouganda de novembre 2024) confirment leur appartenance au groupe Ateker plutot qu'aux peuples Luo.",
       "formationPeriod": "Migration et installation dans le nord-centre de l'Ouganda probablement entre le XVe et le XVIIe siecle, sous la conduite de leaders tels qu'Ongora Okubal qui amena les Langi dans leur territoire actuel. La rencontre avec les Banyoro au XVIIe-XVIIIe siecle est attestee dans les traditions orales (leader Agoro Abwango tue au Bunyoro).",
       "migrationRoutes": [
         "Migration depuis les regions du Soudan du Sud (comptes oraux vers la periode du XVe-XVIIe siecle), sous l'influence de la race Lango ancestrale partageant un tronc commun avec les Teso, Kumam, Karamojong et Jie",
         "Installation progressive dans les plaines au nord du Nil Victoria (Somerset Nile), entre Foweira et Magungo, puis expansion vers l'est jusqu'a la vallee du Chol",
-        "Deplacements secondaires vers les zones urbaines (Lira, Gulu, Kampala) au XXe siecle"
+        "Deplacements secondaires vers les zones urbaines (Lira, Gulu, Kampala) au XXe siecle",
+        "Origine dans l'ensemble Ateker, entre l'Éthiopie et le nord-est de l'Afrique de l'Est",
+        "Arrivée en Ouganda par le nord, à travers les régions du Karamoja et des Acholi"
       ],
       "historicalSettlementZones": [
         "Nord-centre de l'Ouganda (Lango Sub-Region)",
         "Districts de Lira, Apac, Dokolo, Amolatar, Oyam, Kole, Alebtong, Otuke, Kwania",
-        "Rives du Nil Victoria entre Foweira et Magungo"
+        "Rives du Nil Victoria entre Foweira et Magungo",
+        "Plaines du Lango, entre le lac Kwania, le lac Kyoga et le Nil Victoria",
+        "Bordures des régions acholi (nord) et teso (est)"
       ],
       "unificationsOrDivisions": "Societe traditionnellement decentralisee sans chef supreme. L'unite culturelle s'est renforcee autour du titre de Won Nyaci (chef culturel supreme) a partir des annees 1960, cree pour federer les clans face aux raids karamojong. La Lango Cultural Foundation coordonne aujourd'hui plus de 148 clans enregistres. En novembre 2024, le gouvernement ougandais a officialise la reunion des Langi avec les peuples Ateker lors d'un evenement historique.",
       "externalInfluences": "Contacts et conflits avec les Banyoro (Bunyoro Kingdom) au nord. Pression des Karamojong (raids de betail) qui ont motive des formes d'union defensives. Influence coloniale britannique post-1910 avec la creation d'une administration formelle de chefs de sous-comtes et de comtes. Influence de l'islam et du christianisme depuis le XIXe siecle.",
@@ -45,7 +59,11 @@
     "languages": {
       "mainLanguage": "Lango (Lang'o)",
       "isoCodes": ["laj"],
-      "dialects": [],
+      "dialects": [
+        "LebLango central (parler de Lira et d'Apac)",
+        "LebLango d'Oyam (influence acholi au nord)",
+        "LebLango d'Amolatar (influence kumam au sud)"
+      ],
       "vehicularRole": "Le lang'o est la langue maternelle de la quasi-totalite des Langi. Il appartient au groupe des langues luo occidentales nilotiques, bien que l'appartenance ethnique des Langi soit desormais reconnue comme Ateker. Le lang'o compte environ 1 490 000 locuteurs selon le recensement ougandais de 2002. Le swahili et l'anglais servent de langues vehiculaires nationales en Ouganda."
     },
     "culture": {
@@ -63,7 +81,7 @@
     "demography": {
       "totalPopulation": 2884000,
       "referenceYear": 2025,
-      "source": "Wikipedia EN (Lango people) et estimations Uganda Bureau of Statistics 2024 ; recensement ougandais 2014 et projections 2025 ; Facebook post estimations ethniques Uganda 2025 (2 131 495 Langi, 6,3% de la population)",
+      "source": "Wikipedia EN (Lango people) et estimations Uganda Bureau of Statistics 2024 ; recensement ougandais 2014 et projections 2025 ; Facebook post estimations ethniques Uganda 2025 (2 131 495 Langi, 6,3% de la population) Une autre estimation donne 2 900 000 personnes en 2025 (recensements ougandais et Lango Cultural Foundation, avec la croissance de la population après la guerre de la LRA). Les sources lues ne permettent pas de choisir entre ces chiffres.",
       "distributionByCountry": [
         {
           "country": "UGA",
@@ -111,6 +129,23 @@
         "url": "https://www.ethnologue.com/language/laj/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "101 Last Tribes — Lango people",
+        "url": "https://www.101lasttribes.com/tribes/lango.html",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "Lango Cultural Foundation — Clans et vie sociale",
+        "url": "https://langoculturalfoundation.org/service-details-right.html",
+        "tier": "needs_review"
+      },
+      {
+        "title": "Academia.edu — The Socio-Political History of the Langi of Uganda 1750-1909",
+        "url": "https://www.academia.edu/11684657/",
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   },

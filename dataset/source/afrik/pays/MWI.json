@@ -597,7 +597,7 @@
         "name": "Yao",
         "selfAppellation": "Yao",
         "exonyms": ["Yao (terme utilisé par les Européens)"],
-        "peopleId": "PPL_YAO_MALAWI",
+        "peopleId": "PPL_YAO",
         "mainRegion": "Sud du Malawi",
         "languages": ["Yao (yao", "ISO 639-3)", "anglais"],
         "languageFamily": "FLG_BANTU",
@@ -820,7 +820,7 @@
         {
           "name": "Yao",
           "percentageInCountry": 13.3,
-          "peopleId": "PPL_YAO_MALAWI",
+          "peopleId": "PPL_YAO",
           "region": "Sud du Malawi"
         },
         {

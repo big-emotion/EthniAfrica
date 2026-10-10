@@ -5,9 +5,9 @@
   "reviewStatus": "selection_review_required",
   "familyCounts": {
     "FLG_MANDE": 10,
-    "FLG_NIGERCONGO": 8,
-    "FLG_ATLANTIQUE": 1,
-    "FLG_BANTU": 4,
+    "FLG_NIGERCONGO": 2,
+    "FLG_ATLANTIQUE": 2,
+    "FLG_BANTU": 9,
     "FLG_SEMITIQUE": 4,
     "FLG_BERBERE": 2,
     "FLG_BENOUECONGO": 1
@@ -118,20 +118,20 @@
       "id": "PAT_DIALLO",
       "name": "Diallo",
       "nameSystem": "clan_name",
-      "primaryLinguisticFamilyId": "FLG_NIGERCONGO",
+      "primaryLinguisticFamilyId": "FLG_ATLANTIQUE",
       "selectionBasis": "corpus",
       "familyEvidence": {
-        "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_FULA_FORET.json",
-        "sourceFicheId": "PPL_FULA_FORET",
-        "linguisticFamilyId": "FLG_NIGERCONGO"
+        "file": "dataset/source/afrik/peuples/FLG_ATLANTIQUE/PPL_FULA.json",
+        "sourceFicheId": "PPL_FULA",
+        "linguisticFamilyId": "FLG_ATLANTIQUE"
       },
       "corpusPassages": [
         {
-          "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_FULA_FORET.json",
-          "sourceFicheId": "PPL_FULA_FORET",
-          "linguisticFamilyId": "FLG_NIGERCONGO",
+          "file": "dataset/source/afrik/peuples/FLG_ATLANTIQUE/PPL_FULA.json",
+          "sourceFicheId": "PPL_FULA",
+          "linguisticFamilyId": "FLG_ATLANTIQUE",
           "fieldPath": "content.organization.clanOrganization",
-          "excerpt": "Structure clanique patrilineaire identique aux autres Fula. Organisation en familles etendues et lignages. Les noms de famille (Diallo, Balde, Barry, Sow, Bah, Jallow) signalent les origines regionales et les lignages. Le boeuf reste le marqueur de richesse et de statut, meme si dans les zones tres forestieres les Fula ont souvent adapte leur elevage aux caprins et aux ovins.",
+          "excerpt": "Structure clanique patrilineaire. Hierarchie sociale en quatre categories : noblesse (Rimbe/Dimo, Fulbe de souche libre), artisans et griots (caste libre mais endogame), serviteurs et anciens captifs (Maccudo/Rimmayybe). Environ 50% des habitants de l'Adamaoua etaient de statut servile au XIXe siecle. Les noms de famille (Diallo, Balde, Barry, Sow, Bah, Jallow) signalent les origines régionales et les lignages.",
           "inheritedTier": null,
           "tierResolution": "review_required",
           "sourceReviewStatus": "unreviewed"
@@ -388,20 +388,20 @@
       "id": "PAT_MTHETHWA",
       "name": "Mthethwa",
       "nameSystem": "clan_name",
-      "primaryLinguisticFamilyId": "FLG_NIGERCONGO",
+      "primaryLinguisticFamilyId": "FLG_BANTU",
       "selectionBasis": "corpus",
       "familyEvidence": {
-        "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_NDEBELE_NORD.json",
-        "sourceFicheId": "PPL_NDEBELE_NORD",
-        "linguisticFamilyId": "FLG_NIGERCONGO"
+        "file": "dataset/source/afrik/peuples/FLG_BANTU/PPL_NDEBELE.json",
+        "sourceFicheId": "PPL_NDEBELE",
+        "linguisticFamilyId": "FLG_BANTU"
       },
       "corpusPassages": [
         {
-          "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_NDEBELE_NORD.json",
-          "sourceFicheId": "PPL_NDEBELE_NORD",
-          "linguisticFamilyId": "FLG_NIGERCONGO",
+          "file": "dataset/source/afrik/peuples/FLG_BANTU/PPL_NDEBELE.json",
+          "sourceFicheId": "PPL_NDEBELE",
+          "linguisticFamilyId": "FLG_BANTU",
           "fieldPath": "content.organization.clanOrganization",
-          "excerpt": "Le clan dominant est celui des Khumalo (lignée royale de Mzilikazi). La nation Mthwakazi intégrait de nombreux clans d'origines diverses (Nguni, Sotho, Rozvi, Kalanga). Les izibongo (noms de clans et chants de louange) structurent l'identité clanique. Les principaux clans Nguni inclus : Khumalo (royal), Mthethwa, Nxumalo, Ndlovu, Dlomo, Sibanda, Mpofu.",
+          "excerpt": "Organisation en trois strates sociales issues de la migration : les Abezansi (aristocratie nguni originelle de Mzilikazi), les Abenhla (groupes assimiles au Transvaal) et les Amahole (populations locales zimbabweennes soumises). Les Khumalo constituent le clan royal. Les izibongo (noms de clans et chants de louange) structurent l'identité clanique. Les principaux clans nguni sont les Khumalo (clan royal), Mthethwa, Nxumalo, Ndlovu, Dlomo, Sibanda et Mpofu.",
           "inheritedTier": null,
           "tierResolution": "review_required",
           "sourceReviewStatus": "unreviewed"
@@ -415,20 +415,20 @@
       "id": "PAT_NDLOVU",
       "name": "Ndlovu",
       "nameSystem": "clan_name",
-      "primaryLinguisticFamilyId": "FLG_NIGERCONGO",
+      "primaryLinguisticFamilyId": "FLG_BANTU",
       "selectionBasis": "corpus",
       "familyEvidence": {
-        "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_NDEBELE_NORD.json",
-        "sourceFicheId": "PPL_NDEBELE_NORD",
-        "linguisticFamilyId": "FLG_NIGERCONGO"
+        "file": "dataset/source/afrik/peuples/FLG_BANTU/PPL_NDEBELE.json",
+        "sourceFicheId": "PPL_NDEBELE",
+        "linguisticFamilyId": "FLG_BANTU"
       },
       "corpusPassages": [
         {
-          "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_NDEBELE_NORD.json",
-          "sourceFicheId": "PPL_NDEBELE_NORD",
-          "linguisticFamilyId": "FLG_NIGERCONGO",
+          "file": "dataset/source/afrik/peuples/FLG_BANTU/PPL_NDEBELE.json",
+          "sourceFicheId": "PPL_NDEBELE",
+          "linguisticFamilyId": "FLG_BANTU",
           "fieldPath": "content.organization.clanOrganization",
-          "excerpt": "Le clan dominant est celui des Khumalo (lignée royale de Mzilikazi). La nation Mthwakazi intégrait de nombreux clans d'origines diverses (Nguni, Sotho, Rozvi, Kalanga). Les izibongo (noms de clans et chants de louange) structurent l'identité clanique. Les principaux clans Nguni inclus : Khumalo (royal), Mthethwa, Nxumalo, Ndlovu, Dlomo, Sibanda, Mpofu.",
+          "excerpt": "Organisation en trois strates sociales issues de la migration : les Abezansi (aristocratie nguni originelle de Mzilikazi), les Abenhla (groupes assimiles au Transvaal) et les Amahole (populations locales zimbabweennes soumises). Les Khumalo constituent le clan royal. Les izibongo (noms de clans et chants de louange) structurent l'identité clanique. Les principaux clans nguni sont les Khumalo (clan royal), Mthethwa, Nxumalo, Ndlovu, Dlomo, Sibanda et Mpofu.",
           "inheritedTier": null,
           "tierResolution": "review_required",
           "sourceReviewStatus": "unreviewed"
@@ -442,20 +442,20 @@
       "id": "PAT_NXUMALO",
       "name": "Nxumalo",
       "nameSystem": "clan_name",
-      "primaryLinguisticFamilyId": "FLG_NIGERCONGO",
+      "primaryLinguisticFamilyId": "FLG_BANTU",
       "selectionBasis": "corpus",
       "familyEvidence": {
-        "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_NDEBELE_NORD.json",
-        "sourceFicheId": "PPL_NDEBELE_NORD",
-        "linguisticFamilyId": "FLG_NIGERCONGO"
+        "file": "dataset/source/afrik/peuples/FLG_BANTU/PPL_NDEBELE.json",
+        "sourceFicheId": "PPL_NDEBELE",
+        "linguisticFamilyId": "FLG_BANTU"
       },
       "corpusPassages": [
         {
-          "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_NDEBELE_NORD.json",
-          "sourceFicheId": "PPL_NDEBELE_NORD",
-          "linguisticFamilyId": "FLG_NIGERCONGO",
+          "file": "dataset/source/afrik/peuples/FLG_BANTU/PPL_NDEBELE.json",
+          "sourceFicheId": "PPL_NDEBELE",
+          "linguisticFamilyId": "FLG_BANTU",
           "fieldPath": "content.organization.clanOrganization",
-          "excerpt": "Le clan dominant est celui des Khumalo (lignée royale de Mzilikazi). La nation Mthwakazi intégrait de nombreux clans d'origines diverses (Nguni, Sotho, Rozvi, Kalanga). Les izibongo (noms de clans et chants de louange) structurent l'identité clanique. Les principaux clans Nguni inclus : Khumalo (royal), Mthethwa, Nxumalo, Ndlovu, Dlomo, Sibanda, Mpofu.",
+          "excerpt": "Organisation en trois strates sociales issues de la migration : les Abezansi (aristocratie nguni originelle de Mzilikazi), les Abenhla (groupes assimiles au Transvaal) et les Amahole (populations locales zimbabweennes soumises). Les Khumalo constituent le clan royal. Les izibongo (noms de clans et chants de louange) structurent l'identité clanique. Les principaux clans nguni sont les Khumalo (clan royal), Mthethwa, Nxumalo, Ndlovu, Dlomo, Sibanda et Mpofu.",
           "inheritedTier": null,
           "tierResolution": "review_required",
           "sourceReviewStatus": "unreviewed"
@@ -469,20 +469,20 @@
       "id": "PAT_SIBANDA",
       "name": "Sibanda",
       "nameSystem": "clan_name",
-      "primaryLinguisticFamilyId": "FLG_NIGERCONGO",
+      "primaryLinguisticFamilyId": "FLG_BANTU",
       "selectionBasis": "corpus",
       "familyEvidence": {
-        "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_NDEBELE_NORD.json",
-        "sourceFicheId": "PPL_NDEBELE_NORD",
-        "linguisticFamilyId": "FLG_NIGERCONGO"
+        "file": "dataset/source/afrik/peuples/FLG_BANTU/PPL_NDEBELE.json",
+        "sourceFicheId": "PPL_NDEBELE",
+        "linguisticFamilyId": "FLG_BANTU"
       },
       "corpusPassages": [
         {
-          "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_NDEBELE_NORD.json",
-          "sourceFicheId": "PPL_NDEBELE_NORD",
-          "linguisticFamilyId": "FLG_NIGERCONGO",
+          "file": "dataset/source/afrik/peuples/FLG_BANTU/PPL_NDEBELE.json",
+          "sourceFicheId": "PPL_NDEBELE",
+          "linguisticFamilyId": "FLG_BANTU",
           "fieldPath": "content.organization.clanOrganization",
-          "excerpt": "Le clan dominant est celui des Khumalo (lignée royale de Mzilikazi). La nation Mthwakazi intégrait de nombreux clans d'origines diverses (Nguni, Sotho, Rozvi, Kalanga). Les izibongo (noms de clans et chants de louange) structurent l'identité clanique. Les principaux clans Nguni inclus : Khumalo (royal), Mthethwa, Nxumalo, Ndlovu, Dlomo, Sibanda, Mpofu.",
+          "excerpt": "Organisation en trois strates sociales issues de la migration : les Abezansi (aristocratie nguni originelle de Mzilikazi), les Abenhla (groupes assimiles au Transvaal) et les Amahole (populations locales zimbabweennes soumises). Les Khumalo constituent le clan royal. Les izibongo (noms de clans et chants de louange) structurent l'identité clanique. Les principaux clans nguni sont les Khumalo (clan royal), Mthethwa, Nxumalo, Ndlovu, Dlomo, Sibanda et Mpofu.",
           "inheritedTier": null,
           "tierResolution": "review_required",
           "sourceReviewStatus": "unreviewed"
@@ -810,12 +810,12 @@
       "id": "PAT_MNTUNGWA_PRAISE",
       "name": "Mntungwa",
       "nameSystem": "praise_name",
-      "primaryLinguisticFamilyId": "FLG_NIGERCONGO",
+      "primaryLinguisticFamilyId": "FLG_BANTU",
       "selectionBasis": "external_academic_or_institutional",
       "familyEvidence": {
-        "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_NDEBELE_NORD.json",
-        "sourceFicheId": "PPL_NDEBELE_NORD",
-        "linguisticFamilyId": "FLG_NIGERCONGO"
+        "file": "dataset/source/afrik/peuples/FLG_BANTU/PPL_NDEBELE.json",
+        "sourceFicheId": "PPL_NDEBELE",
+        "linguisticFamilyId": "FLG_BANTU"
       },
       "corpusPassages": [],
       "externalSelectionSources": [

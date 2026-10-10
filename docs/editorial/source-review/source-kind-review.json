@@ -1412,14 +1412,9 @@
           "fiches": ["peuples/FLG_GUR/PPL_GOURMANTCHE.json"]
         },
         {
-          "title": "Richard Alan Swanson — Gourmantché Ethnoanthropology: A Theory of Human Being. 1985",
-          "url": null,
-          "fiches": ["peuples/FLG_GUR/PPL_GURMA.json"]
-        },
-        {
           "title": "Salif Titamba Lankoande — Les Gourmantché. Presses Africaines du Burkina, Ouagadougou, 2006",
           "url": null,
-          "fiches": ["peuples/FLG_GUR/PPL_GURMA.json"]
+          "fiches": ["peuples/FLG_GUR/PPL_GOURMANTCHE.json"]
         },
         {
           "title": "Bodomo, Adams (2017) — Mabia classification of Central Gur languages",
@@ -1677,12 +1672,12 @@
         {
           "title": "Monnig, H.O. — The Pedi. Pretoria: Van Schaik, 1967",
           "url": null,
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_SOTHO_NORD.json"]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_PEDI.json"]
         },
         {
           "title": "Bastin, Marie-Louise — Arts of the Angolan Peoples, I: Chokwe. Museu do Dundo, 1961",
           "url": null,
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_TSHOKWE.json"]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_CHOKWE.json"]
         },
         {
           "title": "Darah, G.G. Battles of Songs: Udje Tradition of the Urhobo. Lagos: Delta Publications, 1982",
@@ -1768,11 +1763,6 @@
           "title": "Cross-Cultural Foundation Uganda – Culture and the Rights of Women and Girls in Lango, 2019",
           "url": null,
           "fiches": ["peuples/FLG_NILOTIQUE/PPL_LANGI.json"]
-        },
-        {
-          "title": "Driberg, J.H. The Lango: A Nilotic Tribe of Uganda. London, 1923",
-          "url": null,
-          "fiches": ["peuples/FLG_NILOTIQUE/PPL_LANGO.json"]
         },
         {
           "title": "Ogot B.A. – History of the Southern Luo, East African Publishing House, 1967",
@@ -2180,7 +2170,7 @@
         {
           "title": "Kongo People History, Language and Religion – Study.com",
           "url": "https://study.com/academy/lesson/kongo-people-history-kingdom-language-bakongo.html",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_KIKONGO.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_KONGO.json"]
         },
         {
           "title": "Study.com — Sotho History, Culture and People",
@@ -2423,11 +2413,6 @@
           "title": "Maputo Essential Tours — Mozambique Ethnic Groups",
           "url": "https://www.maputoessentialtours.com/general-4",
           "fiches": ["peuples/FLG_NIGERCONGO/PPL_LOMWE.json"]
-        },
-        {
-          "title": "Maputo Essential Tours — Mozambique Ethnic Groups (Macua-Lomwe section)",
-          "url": "https://www.maputoessentialtours.com/general-4",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_LOMWE_MOZ.json"]
         },
         {
           "title": "Maputo Essential Tours — Ethnic Groups of Mozambique",
@@ -3081,7 +3066,7 @@
         {
           "title": "GHDx — Mozambique Population and Housing Census 2017",
           "url": "https://ghdx.healthdata.org/record/mozambique-population-and-housing-census-2017",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_LOMWE_MOZ.json"]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_LOMWE.json"]
         }
       ]
     },
@@ -3290,7 +3275,7 @@
         {
           "title": "Khan Academy — Female (pwo) Mask (Chokwe peoples)",
           "url": "https://www.khanacademy.org/humanities/ap-art-history/africa-apah/central-africa-apah/a/female-pwo-mask-chokwe",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_TSHOKWE.json"]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_CHOKWE.json"]
         },
         {
           "title": "Khan Academy — Figurative Harp (Domu) (Mangbetu peoples)",
@@ -3411,10 +3396,7 @@
         {
           "title": "Chigwedere, Aeneas. The Karanga Empire. Books for Africa, Harare, 1986",
           "url": "https://michaelharrison.org.uk/wp-content/uploads/2021/04/The-Karanga-Empire-Aeneas-Chigwedere-Books-for-Africa-Harare-1986.pdf",
-          "fiches": [
-            "peuples/FLG_NIGERCONGO/PPL_KARANGA.json",
-            "peuples/FLG_NIGERCONGO/PPL_KARANGA_ZIM.json"
-          ]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_KARANGA.json"]
         }
       ]
     },
@@ -4037,7 +4019,7 @@
         {
           "title": "African Voice Newspaper — The Fula of Guinea",
           "url": "https://africanvoiceonline.co.uk/the-fula-of-guinea/",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_FULA_FORET.json"]
+          "fiches": ["peuples/FLG_ATLANTIQUE/PPL_FULA.json"]
         }
       ]
     },
@@ -4973,7 +4955,7 @@
         {
           "title": "The I Am Yawo Project — Who are the Yawo?",
           "url": "https://www.ciyawo.org/who-are-yawo",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_YAO_MALAWI.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_YAO.json"]
         }
       ]
     },
@@ -6533,7 +6515,7 @@
         {
           "title": "Lango Cultural Foundation — Clans et vie sociale",
           "url": "https://langoculturalfoundation.org/service-details-right.html",
-          "fiches": ["peuples/FLG_NILOTIQUE/PPL_LANGO.json"]
+          "fiches": ["peuples/FLG_NILOTIQUE/PPL_LANGI.json"]
         }
       ]
     },
@@ -9204,7 +9186,7 @@
         {
           "title": "The Bakongo: History, Spirituality, and Civilizational Legacy – Yaden Africa, 2025",
           "url": "https://www.yaden-africa.com/bakongo/",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_KIKONGO.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_KONGO.json"]
         }
       ]
     },
