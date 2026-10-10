@@ -210,7 +210,7 @@ open one leaves its accounts without an era, and the validator lists them.
   would tolerate « no equality of coloured people with the white
   inhabitants » (_Encyclopaedia Britannica_ 1911, « Transvaal »). The
   British annexation of 1877–1881 and the Transvaal Colony from 1902 are
-  `colonial` too. Applied to seven accounts: Magwamba in 1892 (Distant) and
+  `colonial` too. Applied to six accounts: Magwamba in 1892 (Distant) and
   1900 (Keane) on `PPL_TSONGA`; on `PPL_PEDI`, Baperi in 1857 (Livingstone),
   Merensky's two accounts of 1899 and the Pedi kingdom attacked in 1876 and
   conquered in 1879. No account is set in the Orange Free State.
