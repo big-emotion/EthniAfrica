@@ -1,0 +1,41 @@
+<!-- @dsCard group="Cartes" height=640 subtitle="Carte d'ouverture" -->
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><style>
+html,body{margin:0;background:#0f0c09;color:#cbbba3;font-family:Andika,sans-serif}
+.pv{padding:20px 20px 28px;display:flex;flex-wrap:wrap;gap:28px 24px;align-items:flex-start}
+.pv-item{display:flex;flex-direction:column;gap:10px}
+.pv-cap{font:700 14px/18px Andika,sans-serif;color:#f3e9da;max-width:430px}
+.pv-rep{font:400 12px/16px Andika,sans-serif;color:#a8977f;max-width:430px}
+.pv-rep b{color:#e8b96a;font-weight:700}
+.pv-rep.bad b{color:#ff8a6a}
+.pv-intro{width:100%;font:400 14px/20px Andika,sans-serif;color:#cbbba3;max-width:900px;margin:0}
+</style></head><body><div class="pv" id="pv"></div>
+<script>
+(async function () {
+  var root = document.getElementById('pv');
+  try {
+    var t = await (await fetch('../../tokens.json')).json();
+    await EthniCards.installTokens(t, '../../');
+    var A = await (await fetch('../../handoff/assets.json')).json();
+    var D = await (await fetch('../../handoff/cards.sample.json')).json();
+    var R = function (n) { return A[n] ? A[n].url : '../../assets/' + n; };
+    var maps = {};
+    async function card(id) {
+      var c = JSON.parse(JSON.stringify(D.cards.find(function (x) { return x.id === id; })));
+      if (c.map && c.map.dataRef) { maps[c.map.dataRef] = maps[c.map.dataRef] || await (await fetch(R(c.map.dataRef))).json(); c.map.data = maps[c.map.dataRef]; }
+      return c;
+    }
+    var ITEMS = [{"id": "seq-1", "caption": "Ouverture : le titre seul, l'invitation à faire défiler."}];
+    for (var i = 0; i < ITEMS.length; i++) {
+      var it = ITEMS[i];
+      if (it.intro) { var p = document.createElement('p'); p.className = 'pv-intro'; p.textContent = it.intro; root.appendChild(p); continue; }
+      var box = document.createElement('div'); box.className = 'pv-item'; root.appendChild(box);
+      var res = await EthniCards.mount(box, await card(it.id), { width: it.width || 430, resolve: R, logo: D.logo, diagnose: !!it.diagnose });
+      var cap = document.createElement('div'); cap.className = 'pv-cap'; cap.textContent = it.caption || ''; box.appendChild(cap);
+      var r = res.report, rep = document.createElement('div'); rep.className = 'pv-rep' + (r.ok ? '' : ' bad');
+      rep.innerHTML = '<b>' + (r.ok ? 'Tient' : 'Ne tient pas') + '</b> · panneau ' + r.panelHeight + ' px sur 900' + (r.dense ? ' · corps dense 28 px' : ' · corps 32 px') + (r.titleStep ? ' · titre 72 px' : '') + (r.warnings.length ? ' · ' + r.warnings.join(' ') : '') + ' · lu à ' + (it.width || 430) + ' px';
+      box.appendChild(rep);
+    }
+  } catch (e) { root.textContent = 'Aperçu indisponible : ' + e.message; }
+})();
+</script></body></html>

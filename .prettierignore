@@ -22,4 +22,13 @@ src/lib/search/__fixtures__/feedBoardCases.json
 # reason — they are design references, never imported by src/.
 docs/design/mockups
 
+# Accepted Claude Design reference implementation and fixtures. Preserve the
+# supplied bytes until versioned renderer integration; intake documentation is
+# formatted normally. New production adapters are not excluded.
+social/design-system/components
+social/design-system/assets
+social/design-system/tokens.json
+social/design-system/handoff/*.json
+social/design-system/handoff/*.html
+
 .local/editorial-references/

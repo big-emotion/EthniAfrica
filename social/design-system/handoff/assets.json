@@ -1,0 +1,403 @@
+{
+ "Logo/ethniafrica-logo.png": {
+  "url": "/_blob/266b5dc26c8934d1b3b6e184365a36a5",
+  "blob": "266b5dc26c8934d1b3b6e184365a36a5",
+  "w": 512,
+  "h": 512,
+  "credit": "Logo EthniAfrica actuel (social/brand/ethniafrica-logo.png)",
+  "licence": "marque EthniAfrica, licence de l'icône à confirmer",
+  "page": ""
+ },
+ "Exemples/kampala-view-2026.jpg": {
+  "url": "/_blob/f415110a64f36b286e1f8874ae62d4cd",
+  "blob": "f415110a64f36b286e1f8874ae62d4cd",
+  "w": 2700,
+  "h": 1439,
+  "credit": "Photo : Dr. S-mon, vue de Kampala, 2026, Wikimedia Commons, CC BY 4.0",
+  "licence": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:View_of_Kampala_city_1.jpg"
+ },
+ "Exemples/bulange-mengo-2018.jpg": {
+  "url": "/_blob/5543d835118620d162793b9e4de8bce3",
+  "blob": "5543d835118620d162793b9e4de8bce3",
+  "w": 2700,
+  "h": 1886,
+  "credit": "Photo : Jim Joel, le Bulange, siège du parlement du Buganda, Mengo (Kampala), 2018, Wikimedia Commons, CC BY-SA 4.0",
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bulange,_royal_seat_of_the_Buganda_Kingdom_photo_by_Jim_Joel.jpg"
+ },
+ "Exemples/speke-1863-pxxxi-page.jpg": {
+  "url": "/_blob/8278ccfb6bb658032986bb59870fab36",
+  "blob": "8278ccfb6bb658032986bb59870fab36",
+  "w": 879,
+  "h": 1500,
+  "credit": "J. H. Speke, 1863, p. xxxi, Internet Archive, domaine public",
+  "licence": "domaine public",
+  "page": "https://commons.wikimedia.org/wiki/File:Journal_of_the_discovery_of_the_source_of_the_Nile_(IA_journalofdiscove00spek).pdf"
+ },
+ "Exemples/speke-1863-p253-page.jpg": {
+  "url": "/_blob/a107a6f58bab405eb53483d98896169d",
+  "blob": "a107a6f58bab405eb53483d98896169d",
+  "w": 985,
+  "h": 1500,
+  "credit": "J. H. Speke, 1863, p. 253, Internet Archive, domaine public",
+  "licence": "domaine public",
+  "page": "https://commons.wikimedia.org/wiki/File:Journal_of_the_discovery_of_the_source_of_the_Nile_(IA_journalofdiscove00spek).pdf"
+ },
+ "Exemples/richardson-1908-sheet.jpg": {
+  "url": "/_blob/05204cb3072cbc8604f09479661f36c3",
+  "blob": "05204cb3072cbc8604f09479661f36c3",
+  "w": 1800,
+  "h": 1450,
+  "credit": "Relevé d'A. Richardson, 1908, British Library WOOS-13-4-5-1, Open Government Licence v1.0",
+  "licence": "Open Government Licence v1.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Africa._Buganda._(WOOS-13-4-5-1).jpg"
+ },
+ "Exemples/richardson-title-crop.jpg": {
+  "url": "/_blob/86b27c17779a3f82537a7e6b505d53a2",
+  "blob": "86b27c17779a3f82537a7e6b505d53a2",
+  "w": 640,
+  "h": 150,
+  "credit": "Agrandissement du relevé Richardson : titre BUGANDA",
+  "licence": "Open Government Licence v1.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Africa._Buganda._(WOOS-13-4-5-1).jpg"
+ },
+ "Exemples/richardson-stamp-crop.jpg": {
+  "url": "/_blob/5c7ecf2f8f8c997c2531b2e3208d7eb3",
+  "blob": "5c7ecf2f8f8c997c2531b2e3208d7eb3",
+  "w": 620,
+  "h": 360,
+  "credit": "Agrandissement du relevé Richardson : tampon Uganda Protectorate, 14 avril 1910",
+  "licence": "Open Government Licence v1.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Africa._Buganda._(WOOS-13-4-5-1).jpg"
+ },
+ "References/chr-1.png": {
+  "url": "/_blob/8c4ff27b9bc151bb7bb8f6c41ee7ba42",
+  "blob": "8c4ff27b9bc151bb7bb8f6c41ee7ba42",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 689,
+  "dense": false
+ },
+ "References/chr-2.png": {
+  "url": "/_blob/1cd6b38ece5468f19de97b8e0bb3ea77",
+  "blob": "1cd6b38ece5468f19de97b8e0bb3ea77",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 693,
+  "dense": false
+ },
+ "References/chr-3-parchemin.png": {
+  "url": "/_blob/aebe898ad92d4f5e33ec6157232073a1",
+  "blob": "aebe898ad92d4f5e33ec6157232073a1",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 647,
+  "dense": false
+ },
+ "References/chr-3.png": {
+  "url": "/_blob/dd31aa406c648dd762725eb66986d959",
+  "blob": "dd31aa406c648dd762725eb66986d959",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 647,
+  "dense": false
+ },
+ "References/chr-4.png": {
+  "url": "/_blob/cf396ade37e7e70dea83ee1dd1c4a05c",
+  "blob": "cf396ade37e7e70dea83ee1dd1c4a05c",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 794,
+  "dense": false
+ },
+ "References/chr-5.png": {
+  "url": "/_blob/bf04bcc2e411fd4b15c22d5efc6f9c16",
+  "blob": "bf04bcc2e411fd4b15c22d5efc6f9c16",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 851,
+  "dense": false
+ },
+ "References/chr-branch.png": {
+  "url": "/_blob/f5b43a98866e89953fccd4f5eed8f0ec",
+  "blob": "f5b43a98866e89953fccd4f5eed8f0ec",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 745,
+  "dense": false
+ },
+ "References/map-a.png": {
+  "url": "/_blob/5071a87ed59e89e996958808a0480124",
+  "blob": "5071a87ed59e89e996958808a0480124",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 428,
+  "dense": false
+ },
+ "References/map-b.png": {
+  "url": "/_blob/52287cbf3b43e63444a8fc7e97e88ab9",
+  "blob": "52287cbf3b43e63444a8fc7e97e88ab9",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 468,
+  "dense": false
+ },
+ "References/map-c-parchemin.png": {
+  "url": "/_blob/611025fd5da3d053b2fab32301d52927",
+  "blob": "611025fd5da3d053b2fab32301d52927",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 468,
+  "dense": false
+ },
+ "References/map-c.png": {
+  "url": "/_blob/d10531b8fa3184d35bf0282fd48ff40b",
+  "blob": "d10531b8fa3184d35bf0282fd48ff40b",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 468,
+  "dense": false
+ },
+ "References/overflow.png": {
+  "url": "/_blob/2f53c22d40422170e5e30c2ca26e71d8",
+  "blob": "2f53c22d40422170e5e30c2ca26e71d8",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": null,
+  "dense": null
+ },
+ "References/pair.png": {
+  "url": "/_blob/9aaad2b399c50abf935ee3b027a44d8e",
+  "blob": "9aaad2b399c50abf935ee3b027a44d8e",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 670,
+  "dense": false
+ },
+ "References/seq-1.png": {
+  "url": "/_blob/76944b36f7067a1f68138a602e5a0e83",
+  "blob": "76944b36f7067a1f68138a602e5a0e83",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 489,
+  "dense": false
+ },
+ "References/seq-2.png": {
+  "url": "/_blob/8eb03a840bdeddbeea2cc84206ca2d35",
+  "blob": "8eb03a840bdeddbeea2cc84206ca2d35",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 743,
+  "dense": false
+ },
+ "References/seq-3.png": {
+  "url": "/_blob/4c85b41aa380e5c5fc0a7c055cc42ec2",
+  "blob": "4c85b41aa380e5c5fc0a7c055cc42ec2",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 352,
+  "dense": false
+ },
+ "References/seq-4-parchemin.png": {
+  "url": "/_blob/7312dd9bb317510892cc08ef7063de47",
+  "blob": "7312dd9bb317510892cc08ef7063de47",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 870,
+  "dense": false
+ },
+ "References/seq-4.png": {
+  "url": "/_blob/b11c8949a5f8933d1fc27fcd0cc9ee89",
+  "blob": "b11c8949a5f8933d1fc27fcd0cc9ee89",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 870,
+  "dense": false
+ },
+ "References/seq-5.png": {
+  "url": "/_blob/6380060c98229f895c5c54699ab60f1f",
+  "blob": "6380060c98229f895c5c54699ab60f1f",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 696,
+  "dense": false
+ },
+ "References/seq-6.png": {
+  "url": "/_blob/a86bd44f5932a30eff8330ba7afe84df",
+  "blob": "a86bd44f5932a30eff8330ba7afe84df",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 689,
+  "dense": false
+ },
+ "References/seq-7.png": {
+  "url": "/_blob/00ef13b05ba6e9071a62ef175f1b953a",
+  "blob": "00ef13b05ba6e9071a62ef175f1b953a",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 593,
+  "dense": false
+ },
+ "References/seq-8.png": {
+  "url": "/_blob/b95edb10ab74acbaa3b7791f8b5dd450",
+  "blob": "b95edb10ab74acbaa3b7791f8b5dd450",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 666,
+  "dense": false
+ },
+ "References/seq-9-parchemin.png": {
+  "url": "/_blob/602b59c317f7a7d75feba9e9510950bd",
+  "blob": "602b59c317f7a7d75feba9e9510950bd",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 702,
+  "dense": false
+ },
+ "References/seq-9.png": {
+  "url": "/_blob/5f971052187aa1914a8c3838a3f37c5c",
+  "blob": "5f971052187aa1914a8c3838a3f37c5c",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 702,
+  "dense": false
+ },
+ "References/stress.png": {
+  "url": "/_blob/80b4fbb9d463d563671b30e32c7e1eac",
+  "blob": "80b4fbb9d463d563671b30e32c7e1eac",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 753,
+  "dense": true
+ },
+ "Lecture/sequence-ouganda-430.png": {
+  "url": "/_blob/8805dfa4cfd744a846710825d276a1fd",
+  "blob": "8805dfa4cfd744a846710825d276a1fd",
+  "kind": "preview-size"
+ },
+ "Lecture/remonter-le-temps-430.png": {
+  "url": "/_blob/84d399fb437c1566207bb7afb9d02707",
+  "blob": "84d399fb437c1566207bb7afb9d02707",
+  "kind": "preview-size"
+ },
+ "Lecture/version-claire-430.png": {
+  "url": "/_blob/e2dfd365962b0713726f9641939d74d0",
+  "blob": "e2dfd365962b0713726f9641939d74d0",
+  "kind": "preview-size"
+ },
+ "Lecture/lecture-mobile-seq-5.png": {
+  "url": "/_blob/dc0f05b37ad9e1ed0005626cb923c278",
+  "blob": "dc0f05b37ad9e1ed0005626cb923c278",
+  "kind": "preview-size"
+ },
+ "Lecture/lecture-mobile-chr-4.png": {
+  "url": "/_blob/04a1f981462c758c84ad999e07c0f22c",
+  "blob": "04a1f981462c758c84ad999e07c0f22c",
+  "kind": "preview-size"
+ },
+ "Lecture/lecture-mobile-map-c.png": {
+  "url": "/_blob/df9ddb54c418af74c614fb50d372616e",
+  "blob": "df9ddb54c418af74c614fb50d372616e",
+  "kind": "preview-size"
+ },
+ "Lecture/lecture-mobile-seq-9.png": {
+  "url": "/_blob/b19f5812c76ce271ff3ee6963282e513",
+  "blob": "b19f5812c76ce271ff3ee6963282e513",
+  "kind": "preview-size"
+ },
+ "Lecture/tablette-ordinateur-seq-4.png": {
+  "url": "/_blob/0f5c2b684d1bfb25c37dd69b4e17a930",
+  "blob": "0f5c2b684d1bfb25c37dd69b4e17a930",
+  "kind": "preview-size"
+ },
+ "References/map-fula.png": {
+  "url": "/_blob/fdd7cbc4d081efc65aa5d4035c4af861",
+  "blob": "fdd7cbc4d081efc65aa5d4035c4af861",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 455,
+  "dense": false
+ },
+ "References/map-fula-region.png": {
+  "url": "/_blob/acff4ed1819e5775394bac8c7316789d",
+  "blob": "acff4ed1819e5775394bac8c7316789d",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 455,
+  "dense": false
+ },
+ "References/map-fula-parchemin.png": {
+  "url": "/_blob/ad66d7e47327d9323ef5d6d291c441c3",
+  "blob": "ad66d7e47327d9323ef5d6d291c441c3",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 455,
+  "dense": false
+ },
+ "Lecture/carte-fulbe-douze-pays-430.png": {
+  "url": "/_blob/2cdd84f184923bbc20862ac22dbe9dd8",
+  "blob": "2cdd84f184923bbc20862ac22dbe9dd8",
+  "kind": "preview-size"
+ },
+ "References/map-fula-nombre.png": {
+  "url": "/_blob/b3a275475f7ce6ba24d7fb5f36ca3db0",
+  "blob": "b3a275475f7ce6ba24d7fb5f36ca3db0",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 515,
+  "dense": false
+ },
+ "References/map-fula-nombre-region.png": {
+  "url": "/_blob/3ed29311ef1d1b82ac627efb1c258e24",
+  "blob": "3ed29311ef1d1b82ac627efb1c258e24",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 515,
+  "dense": false
+ },
+ "References/map-fula-part.png": {
+  "url": "/_blob/ecc67be8a4da2a7269733ebb86fc3243",
+  "blob": "ecc67be8a4da2a7269733ebb86fc3243",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 515,
+  "dense": false
+ },
+ "Lecture/carte-fulbe-degrade-430.png": {
+  "url": "/_blob/9e5d5205ea8fb4173ef641793a601eb7",
+  "blob": "9e5d5205ea8fb4173ef641793a601eb7",
+  "kind": "preview-size"
+ }
+}

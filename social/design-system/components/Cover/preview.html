@@ -1,0 +1,34 @@
+<!-- @dsCard height=300 -->
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<style>
+html,body{margin:0;height:300px;background:var(--ground);overflow:hidden}
+.cv{position:relative;width:960px;height:300px}
+svg{position:absolute;left:0;top:0}
+.b-accent{fill:var(--accent)} .b-teal{fill:var(--area-b)} .b-clay{fill:var(--area-c)} .b-tint{fill:var(--ground-raised)}
+.rail{stroke:var(--ground);stroke-width:4;fill:none}
+.dot{stroke:var(--ground);stroke-width:4;stroke-dasharray:4 5;fill:none}
+.mk{fill:var(--ground)}
+.txt{position:absolute;left:48px;bottom:40px;max-width:440px}
+.name{font-family:var(--font-display, Anton, sans-serif);font-size:64px;line-height:.95;color:var(--ink);margin:0}
+.tag{font-family:var(--font-text, Andika, sans-serif);font-size:14px;line-height:20px;color:var(--ink-muted);margin:12px 0 0}
+</style></head><body><div class="cv">
+<svg width="960" height="300" viewBox="0 0 960 300" aria-hidden="true">
+<!-- blocks: accent 232x300 bleeding top and bottom, area-b 160x168, area-c 104x104, ground-raised 248x112; all from space-6 (72) and space-3/space-5 steps -->
+<!-- arrangement: one tall ochre slab with satellites, right of x=480, the slab bleeding off top and bottom like a full-frame card -->
+<!-- pattern: the time rail crossing the blocks with five status shapes (circle, square, triangle, filled diamond, dotted circle), the system's own marks for how far back a name goes -->
+<!-- scales: rail stroke 4 like the card rail at half scale, marks 26 px, radius-none corners for a square editorial system -->
+<rect class="b-tint" x="528" y="168" width="248" height="112"/>
+<rect class="b-accent" x="600" y="0" width="232" height="300"/>
+<rect class="b-teal" x="776" y="40" width="160" height="168"/>
+<rect class="b-clay" x="512" y="40" width="104" height="104"/>
+<path class="rail" d="M600 150H880"/>
+<path class="dot" d="M880 150H936"/>
+<circle cx="636" cy="150" r="12" style="fill:none;stroke:var(--ground);stroke-width:5"/>
+<rect class="mk" x="687" y="137" width="26" height="26"/>
+<path class="mk" d="M760 136l15 28h-30z"/>
+<path class="mk" d="M852 132l18 18-18 18-18-18z"/>
+<circle cx="912" cy="150" r="12" style="fill:none;stroke:var(--ground);stroke-width:4;stroke-dasharray:3 4"/>
+</svg>
+<div class="txt"><h1 class="name">EthniAfrica<br>Cartes</h1><p class="tag">Les cartes de carrousel d'EthniAfrica : l'histoire des noms, lisible sur un téléphone.</p></div>
+</div></body></html>

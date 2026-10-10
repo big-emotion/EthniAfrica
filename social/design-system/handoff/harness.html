@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>EthniAfrica Cartes : banc de rendu</title>
+<link rel="stylesheet" href="../components/bundle.css">
+<style>html,body{margin:0;background:#000}#out{display:flex;flex-wrap:wrap;gap:24px}</style>
+<script src="../components/bundle.js"></script>
+</head><body><div id="out"></div>
+<script>
+/* Banc de rendu déterministe.
+   ?id=seq-1        carte à rendre (sinon toutes)
+   &width=1080      largeur d'affichage (1080 = export, 430 = fil mobile)
+   &assets=assets.json  table nom -> URL (sinon ../assets/<nom>)
+   &diagnose=1      contour rouge si débordement, repère des 810 px
+   Résultat : window.__reports (rapports d'ajustement), document.body.dataset.ready = "1". */
+(async function () {
+  var q = new URLSearchParams(location.search);
+  var tokens = await (await fetch('../tokens.json')).json();
+  await EthniCards.installTokens(tokens, '../');
+  var data = await (await fetch(q.get('cards') || 'cards.sample.json')).json();
+  var map = {};
+  if (q.get('assets')) map = await (await fetch(q.get('assets'))).json();
+  function resolve(n) { return map[n] && map[n].url ? map[n].url : '../assets/' + n; }
+  var cache = {};
+  async function prep(c) {
+    if (c.map && c.map.dataRef) { var r = c.map.dataRef; cache[r] = cache[r] || await (await fetch(resolve(r))).json(); c.map.data = cache[r]; }
+    return c;
+  }
+  var ids = q.get('id') ? q.get('id').split(',') : data.cards.map(function (c) { return c.id; });
+  var width = +(q.get('width') || 1080), reports = [];
+  for (var i = 0; i < ids.length; i++) {
+    var c = data.cards.find(function (x) { return x.id === ids[i]; });
+    var res = await EthniCards.mount(document.getElementById('out'), await prep(c), { width: width, resolve: resolve, logo: data.logo, diagnose: q.get('diagnose') === '1', demo: q.get('demo') !== '0' });
+    res.report.alt = EthniCards.altText(c);
+    reports.push(res.report);
+  }
+  window.__reports = reports;
+  document.body.dataset.ready = '1';
+})();
+</script></body></html>

@@ -1,0 +1,1 @@
+Reference renders for fidelity checks: every card of `handoff/cards.sample.json`, exported at 1080 × 1350 by `EthniCards` 1.0.0-proposition with the fonts in `fonts/`. A renderer that implements this system should reproduce them. `overflow.png` is rendered with diagnostics on and shows the refusal state. Yellow tapes mark maquette text and fictive map areas.

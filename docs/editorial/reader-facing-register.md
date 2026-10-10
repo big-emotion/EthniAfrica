@@ -471,8 +471,9 @@ Keep your working notes — they are valuable — in `_meta.directives` or in th
 `_`-prefixed worksheets, which no surface renders.
 
 Before finishing, review every public field against this charter and run the
-plain-language checks. Keep original source titles exact. Use the existing BMAD
-prose review with this file as `style_guide`, and structure review with
-`reader_type=humans` when restructuring a longer piece.
+plain-language checks. Keep original source titles exact. Apply the DITP
+plain-language approach and selected FALC recommendations alongside Vale. Review
+meaning, reading order and accessibility directly; do not use BMAD. This operator
+decision of 10 October 2026 replaces the previous review-method instruction.
 
 ---

@@ -22,10 +22,18 @@ never overrides the plain-language requirement.
 
 Before delivery, review the final text for meaning and natural sentences, then run
 `npm run check:editorial`. For new or rewritten final publication files, also run
-`npm run check:publication -- <files>`; rerun after edits. Supply the charter as
-`style_guide` to the existing BMAD prose review and choose `reader_type=humans`
-for structure review. The operational scope and remaining manual checks are in
+`npm run check:publication -- <files>`; rerun after edits. Use the DITP plain-language
+approach and local Vale checks, with a direct review of meaning, structure and
+accessibility. Do not use BMAD. The operational scope and remaining manual checks are in
 `docs/editorial/plain-language-checks.md`. Never report a skipped check as passed.
+
+For a social publication, start or resume with `/ethniafrica-social-production`.
+Its canonical instructions are in `.claude/skills/ethniafrica-social-production/`;
+Codex uses the same skill through `.agents/skills/`. The operator's 10 October 2026
+workflow replaces the retired production chain. Three human approvals and a
+durable per-piece checkpoint govern the work. The accepted Claude Design card
+system is in `social/design-system/`; `version.json` records its acceptance.
+Renderer integration remains pending; old templates are not a fallback.
 
 ## Commands
 
