@@ -24,8 +24,12 @@ This skill implements the coordinator and local checkpoint helper (roadmap step
 `version.json` records the decision. The verified export adapter is available
 in `social/renderer/`; read its README before use. Roadmap step 4 is complete:
 all 31 visual references pass after the operator chose to keep the engine and
-reconcile only two map references on 10 October 2026. The skill does not yet supply
-automated corpus correction, package generation or cleanup. Before invoking a later
+reconcile only two map references on 10 October 2026. Step 5 now adds corpus
+discovery, evidence-bound correction proposals, mandatory comparison at approval 2
+and separately evidenced integration progress. Read
+[Research and corpus alignment](references/research-and-corpus.md). The agent
+performs source interpretation and the normal reviewed correction workflow; the
+helper never deploys. Package generation and cleanup remain later capabilities. Before invoking a later
 capability, verify that it exists and has been accepted. Save the current position
 and explain missing inputs rather than claiming those steps ran. Research and
 writing can proceed within the approved brief; visual proof requires the
@@ -110,7 +114,10 @@ with the media. A mechanical pass is not proof of comprehension or FALC approval
 ### Corpus, design and distribution boundaries
 
 Corpus comparison is mandatory during research when the subject touches project
-knowledge. Prepare sourced corrections and include them in the proof. Keep
+knowledge. Follow [the research sequence](references/research-and-corpus.md),
+prepare the dossier and candidate corrections, and include them in the proof.
+Pass `researchFile` at review 2; the helper refuses missing or stale evidence.
+Before final review, verify the public destination or revise the invitation. Keep
 prepared, locally checked, proposed, integrated and verified-live states distinct.
 Use the existing reviewed repository and release path. If the destination lacks
 the promised answer, resolve that gap or revise the invitation before final

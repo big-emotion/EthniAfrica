@@ -37,7 +37,7 @@ JSON
 | ------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `checkpoint`  | `nextAction`; optional `context`, `waitingFor`                                    | Save compact resumption context. Waiting reasons: null, `design-system`, `operator-information`, `operator-resume`. A pending approval cannot be overwritten by a pause.                                                       |
 | `design`      | `file`, `decision`                                                                | Record the operator-supplied and accepted design reference. `file` is project-relative; list all dependent design assets in proof/final reviews too. Reopens affected proof/delivery.                                          |
-| `review`      | `gate` (1–3), nonempty `files`, `summary`                                         | Save fingerprints of all artifacts presented, then wait. Files must exist inside the project. Include the brief for gate 1; research, copy, corpus proposal and proof for gate 2; actual final media and `post.md` for gate 3. |
+| `review`      | `gate` (1–3), nonempty `files`, `summary`; `researchFile` at gate 2               | Save fingerprints of all artifacts presented, then wait. Files must exist inside the project. Include the brief for gate 1; research, copy, corpus proposal and proof for gate 2; actual final media and `post.md` for gate 3. |
 | `approve`     | `gate`, `decision`                                                                | Record the operator's explicit response to the current presentation. A decision string is evidence for recovery, not proof of authorization by itself. Never invent it.                                                        |
 | `revise`      | `kind`, `reason`                                                                  | Route an actual correction. Kinds: `angle`, `research`, `copy`, `crop`, `package`, `design`. Meaning/rights changes use `research` or `copy`, not the rendering-only `crop` route.                                             |
 | `networks`    | `networks`, `reason`                                                              | Record the operator's changed target list; preserve the angle and proof while reopening final delivery for the affected adaptation.                                                                                            |
@@ -52,6 +52,19 @@ helper records project-relative paths so a fresh session in the same checkout
 can resolve them. A returned external design must be copied into the project or
 recorded through a local reference file before it can be fingerprinted; preserve
 its original source location and version in that file.
+
+## Research and corpus corrections
+
+At gate 2, supply `researchFile` for the prepared dossier. Follow
+[Research and corpus alignment](research-and-corpus.md) for discovery, evidence,
+comparison revisions and candidate corrections. Evidence and reviewed corpus
+files are automatically fingerprinted. Gate 3 refuses a pending destination.
+Legacy checkpoints without a research dossier must revisit proof before delivery.
+
+After approval 2, `corpus-progress` records an approved `proposal` key, the next
+`status`, an `evidence` file and the status-specific PR, commit or live-page facts.
+It never applies a correction or changes the website. Evidence freshness and
+historical integration records survive resumption and targeted proof revisions.
 
 ## Recovery and limits
 

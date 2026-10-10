@@ -18,6 +18,8 @@ import {
 import { resolve, join, relative, isAbsolute, sep } from "node:path";
 import { pathToFileURL } from "node:url";
 
+import { assessResearch, discoverCorpus, verifyProgress } from "./research.mjs";
+
 const AREA = ".local/productions";
 const STAGES = ["brief", "research", "proof", "produce", "package", "ready"];
 const NETWORKS = ["instagram", "facebook", "tiktok", "youtube", "x"];
@@ -117,6 +119,33 @@ export function loadPiece(root, id) {
       state.approvals[1]?.status === "approved" ? "research" : "brief";
     state.waitingFor = "design-system";
     state.nextAction = "Ask the operator to confirm the changed design system";
+  }
+  if (state.approvals[2]?.status === "approved") {
+    let stale = !state.research;
+    if (!stale) {
+      try {
+        const matches = discoverCorpus(root, state.research.searchTerms).map(
+          (m) => m.file
+        );
+        stale =
+          JSON.stringify(matches) !==
+          JSON.stringify(state.research.matchedFiles);
+      } catch {
+        stale = true;
+      }
+    }
+    if (stale) {
+      invalidate(state, 2);
+      state.stage =
+        state.approvals[1]?.status === "approved" ? "research" : "brief";
+      state.nextAction =
+        "Research coverage changed or is missing; compare the corpus before proof";
+    }
+  }
+  for (const progress of state.corpusProgress ?? []) {
+    progress.evidenceCurrent = current(root, {
+      [progress.evidence]: progress.evidenceHash,
+    });
   }
   return state;
 }
@@ -288,6 +317,25 @@ export function applyEvent(root, id, event) {
       if (gate > 1) designReady();
       const files = snapshots(root, event.files);
       if (gate > 1) files[state.design.file] = state.design.hash;
+      if (gate === 2) {
+        required(event.researchFile, "Research dossier");
+        const research = assessResearch(root, event.researchFile);
+        Object.assign(files, research.dependencies);
+        state.research = {
+          file: event.researchFile,
+          hash: research.dependencies[event.researchFile],
+          corrections: research.corrections,
+          searchTerms: research.searchTerms,
+          matchedFiles: research.matchedFiles,
+        };
+      }
+      if (gate === 3) {
+        if (!state.research) fail("Research dossier is required");
+        const research = assessResearch(root, state.research.file, {
+          forDelivery: true,
+        });
+        Object.assign(files, research.dependencies);
+      }
       const summary = required(event.summary, "Review summary");
       invalidate(state, gate);
       state.reviews[gate] = { files, summary };
@@ -307,12 +355,27 @@ export function applyEvent(root, id, event) {
           "Review artifacts changed; present the new version before approval"
         );
       for (let previous = 1; previous < gate; previous++) approved(previous);
+      if (gate === 2) {
+        const research = assessResearch(root, state.research.file);
+        if (
+          JSON.stringify(research.matchedFiles) !==
+          JSON.stringify(state.research.matchedFiles)
+        )
+          fail("Research coverage changed; present the updated proof");
+      }
       state.approvals[gate] = {
         ...review,
         status: "approved",
         decision: event.decision,
         at: new Date().toISOString(),
       };
+      if (gate === 2) {
+        state.corpusProposals ??= {};
+        for (const correction of state.research.corrections) {
+          const key = `${state.research.hash}:${correction.id}`;
+          state.corpusProposals[key] = correction;
+        }
+      }
       delete state.reviews[gate];
       state.waitingFor = null;
       state.stage = gate === 1 ? "research" : gate === 2 ? "produce" : "ready";
@@ -375,6 +438,31 @@ export function applyEvent(root, id, event) {
       state.nextAction =
         "Prepare the changed network adaptation and review final delivery";
       break;
+    case "corpus-progress": {
+      const correction = state.corpusProposals?.[event.proposal];
+      if (!correction) fail("A corpus proposal approved at gate 2 is required");
+      state.corpusProgress ??= [];
+      const previous = state.corpusProgress.filter(
+        (p) => p.proposal === event.proposal
+      );
+      if (
+        previous.some((p) => !current(root, { [p.evidence]: p.evidenceHash }))
+      )
+        fail(
+          "Corpus progress evidence changed; restore or inspect it before advancing"
+        );
+      const result = verifyProgress(
+        root,
+        { corrections: [correction] },
+        {
+          ...event,
+          correction: correction.id,
+        },
+        previous
+      );
+      state.corpusProgress.push(result);
+      break;
+    }
     case "publication":
       approved(3);
       if (!state.networks.includes(event.network))

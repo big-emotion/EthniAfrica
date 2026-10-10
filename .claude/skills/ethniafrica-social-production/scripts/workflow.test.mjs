@@ -1,7 +1,14 @@
 // @req REQ-186
+import { createHash } from "node:crypto";
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { mkdtempSync, writeFileSync, readFileSync, rmSync } from "node:fs";
+import {
+  mkdtempSync,
+  mkdirSync,
+  writeFileSync,
+  readFileSync,
+  rmSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { spawnSync } from "node:child_process";
@@ -28,8 +35,52 @@ function fixture(t) {
       expectedRevision: loadPiece(root, id).revision,
       ...value,
     });
+  const research = () =>
+    file(
+      "research.json",
+      JSON.stringify({
+        schema: 1,
+        subject: "Synthetic fixture",
+        search: { terms: ["Synthetic fixture"], excluded: [] },
+        records: [],
+        noCorpusReason: "No matching test corpus records",
+        findings: [],
+        images: [],
+        sources: [
+          {
+            id: "s1",
+            kind: "written",
+            citation: "Synthetic source",
+            locator: "page 1",
+            passage: "Fixture evidence",
+            recordFile: file("source.txt", "Fixture evidence"),
+            basis: "context",
+          },
+        ],
+        claims: [
+          {
+            id: "c1",
+            text: "Fixture claim",
+            certainty: "supported",
+            sources: ["s1"],
+            limits: "Test only",
+          },
+        ],
+        destination: {
+          status: "no-link",
+          invitation: "No link in test",
+          reason: "Test only",
+        },
+      })
+    );
   const review = (gate, files) =>
-    event({ type: "review", gate, files, summary: `Review ${gate}` });
+    event({
+      type: "review",
+      gate,
+      files,
+      summary: `Review ${gate}`,
+      ...(gate === 2 ? { researchFile: research() } : {}),
+    });
   const approve = (gate) =>
     event({
       type: "approve",
@@ -274,4 +325,184 @@ test("adding a network retains the editorial proof and reopens final delivery", 
   assert.equal(s.approvals["3"].status, "stale");
   assert.equal(s.stage, "package");
   assert.ok(s.networks.includes("tiktok"));
+});
+
+test("proof cannot skip research; source changes invalidate approval without changing the angle", (t) => {
+  const f = fixture(t);
+  f.review(1, [f.file("brief.md")]);
+  f.approve(1);
+  f.design();
+  assert.throws(
+    () =>
+      f.event({
+        type: "review",
+        gate: 2,
+        files: [f.file("proof.png")],
+        summary: "Missing research",
+      }),
+    /research/i
+  );
+  f.review(2, [f.file("proof.png")]);
+  f.approve(2);
+  f.file("source.txt", "Changed source evidence");
+  assert.equal(loadPiece(f.root, f.id).approvals[2].status, "stale");
+  assert.equal(loadPiece(f.root, f.id).approvals[1].status, "approved");
+});
+
+test("a pending site promise can enter proof but cannot enter final delivery", (t) => {
+  const f = fixture(t);
+  f.review(1, [f.file("brief.md")]);
+  f.approve(1);
+  f.design();
+  f.review(2, [f.file("proof.png")]);
+  const path = `.local/productions/${f.id}/research.json`;
+  const dossier = JSON.parse(readFileSync(join(f.root, path), "utf8"));
+  dossier.destination = {
+    status: "pending",
+    url: "https://example.org/answer",
+    invitation: "An answer is promised",
+  };
+  f.file("research.json", JSON.stringify(dossier));
+  f.event({
+    type: "review",
+    gate: 2,
+    files: [f.file("proof.png")],
+    researchFile: path,
+    summary: "Pending destination shown",
+  });
+  f.approve(2);
+  assert.throws(() => f.review(3, [f.file("post.md")]), /destination/i);
+  assert.equal(loadPiece(f.root, f.id).approvals[2].status, "approved");
+});
+
+test("a newly matching fiche cannot slip into approval after the proof was shown", (t) => {
+  const f = fixture(t);
+  f.review(1, [f.file("brief.md")]);
+  f.approve(1);
+  f.design();
+  f.review(2, [f.file("proof.png")]);
+  const dir = join(f.root, "dataset/source/afrik/pays");
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(
+    join(dir, "NEW.json"),
+    JSON.stringify({ name: "Synthetic fixture" })
+  );
+  assert.throws(() => f.approve(2), /coverage|unreviewed/);
+});
+
+test("approved corrections retain a separately evidenced integration history after corpus edits", (t) => {
+  const f = fixture(t);
+  f.review(1, [f.file("brief.md")]);
+  f.approve(1);
+  f.design();
+  f.review(2, [f.file("proof.png")]);
+  const path = `.local/productions/${f.id}/research.json`;
+  const dossier = JSON.parse(readFileSync(join(f.root, path), "utf8"));
+  const fiche = "dataset/source/afrik/pays/TEST.json";
+  mkdirSync(join(f.root, "dataset/source/afrik/pays"), { recursive: true });
+  const original = JSON.stringify({
+    name: "Synthetic fixture",
+    summary: "Old",
+  });
+  writeFileSync(join(f.root, fiche), original);
+  dossier.records = [
+    {
+      file: fiche,
+      sha256: createHash("sha256").update(original).digest("hex"),
+    },
+  ];
+  dossier.findings = [
+    {
+      id: "fix1",
+      claim: "c1",
+      file: fiche,
+      pointer: "/summary",
+      before: { exists: true, value: "Old" },
+      kind: "missing",
+      rationale: "Synthetic discrepancy",
+      proposal: { value: "New", certainty: "supported" },
+    },
+  ];
+  f.file("research.json", JSON.stringify(dossier));
+  f.event({
+    type: "review",
+    gate: 2,
+    researchFile: path,
+    files: [f.file("proof.png")],
+    summary: "Review correction",
+  });
+  f.approve(2);
+  const proposal = Object.keys(loadPiece(f.root, f.id).corpusProposals)[0];
+  const evidence = f.file(
+    "checks.txt",
+    "Simulated successful discrepancy, schema and editorial checks"
+  );
+  assert.throws(
+    () =>
+      f.event({
+        type: "corpus-progress",
+        proposal,
+        status: "verified-live",
+        evidence,
+      }),
+    /order/
+  );
+  writeFileSync(
+    join(f.root, fiche),
+    JSON.stringify({ name: "Synthetic fixture", summary: "New" })
+  );
+  f.event({
+    type: "corpus-progress",
+    proposal,
+    status: "locally-checked",
+    evidence,
+  });
+  const s = loadPiece(f.root, f.id);
+  assert.equal(s.approvals[2].status, "stale");
+  assert.equal(s.approvals[1].status, "approved");
+  assert.equal(s.corpusProgress[0].status, "locally-checked");
+  f.event({
+    type: "corpus-progress",
+    proposal,
+    status: "proposed",
+    evidence,
+    url: "https://example.org/review/1",
+  });
+  f.event({
+    type: "corpus-progress",
+    proposal,
+    status: "integrated",
+    evidence,
+    commit: "fixture-commit",
+  });
+  assert.throws(
+    () =>
+      f.event({
+        type: "corpus-progress",
+        proposal,
+        status: "verified-live",
+        evidence,
+        url: "https://example.org/answer",
+        checkedAt: "2026-10-10",
+      }),
+    /observation/
+  );
+  f.event({
+    type: "corpus-progress",
+    proposal,
+    status: "verified-live",
+    evidence,
+    url: "https://example.org/answer",
+    checkedAt: "2026-10-10",
+    observation: "Synthetic live verification",
+  });
+  assert.equal(
+    loadPiece(f.root, f.id).corpusProgress.at(-1).evidenceCurrent,
+    true
+  );
+  f.file("checks.txt", "Different evidence");
+  assert.equal(
+    loadPiece(f.root, f.id).corpusProgress.at(-1).evidenceCurrent,
+    false
+  );
 });
