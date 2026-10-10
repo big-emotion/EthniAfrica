@@ -6,6 +6,364 @@
   "summary": "La Libye porte un nom que les Grecs donnaient à toute l'Afrique du Nord. Berbères antiques, Cyrénaïque grecque, Tripolitaine romaine, califats puis régences ottomanes s'y sont succédé, avant la colonisation italienne qui officialisa le nom en 1911. Arabes, Nafusi, Touaregs et Toubou y composent la population.",
   "etymology": "Le nom \"Libye\" viendrait du grec \"Libya\", qui désignait l'Afrique du Nord dans l'Antiquité. Le nom arabe \"Lībiyā\" (ليبيا) est utilisé depuis le XXe siècle. L'ancien nom était \"Tripolitaine\" (région de Tripoli) et \"Cyrénaïque\" (région de Benghazi).",
   "nameOriginActor": "Le nom \"Libye\" a été officialisé lors de l'indépendance (1951). Le nom vient de l'Antiquité grecque.",
+  "nameHistory": {
+    "summary": "Le nom Libye désigne un pays d'Afrique du Nord, l'État de Libye, qui se nomme lui-même Lībiyā en arabe. Le pays a aussi porté les noms de Royaume-Uni de Libye, de Royaume de Libye, de République arabe libyenne et de Jamahiriya arabe libyenne populaire socialiste. Dans l'Antiquité, les Grecs appelaient Libye l'Afrique tout entière ; nous présentons plus bas l'explication que donnent les sources sur l'origine du nom.",
+    "names": [
+      {
+        "nameText": "Libye",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom grec de l'Afrique, venu peut-être des Libou, devenu celui d'un État en 1951.",
+        "periodLabel": "Forme proche attestée au XIIIe siècle avant notre ère ; nom de l'État depuis 1951",
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": null,
+              "label": "Depuis 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Libye entre dans celui d'État de Libye, Dawlat Lībiyā en arabe : la mission de la Libye auprès des Nations unies confirme ce nom officiel par une lettre reçue le 22 décembre 2017, selon le Permanent Committee on Geographical Names.",
+            "aspect": "usage",
+            "formAsWritten": "Dawlat Lībiyā",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Libya",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2025,
+                "url": "https://assets.publishing.service.gov.uk/media/68664e9d1f124a0bb0a3a9cc/Libya_toponymic_factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1 et note 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2025, lue le 10 octobre 2026. Nom du pays en arabe : Lībiyā ; nom de l'État : Dawlat Lībiyā, État de Libye. La note 1 rapporte que le 22 décembre 2017 le service du protocole des Nations unies a reçu une lettre de la mission permanente confirmant le changement du nom officiel en « State of Libya », et que le nom officiel de l'époque Kadhafi était « Great Socialist People's Libyan Arab Jamahiriya »."
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordonnateur Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 60",
+                "notes": "Document de la session 2025 du Groupe d'experts, daté du 23 avril 2025, lu en ligne le 10 octobre 2026. Entrée Libye : nom national officiel en arabe, « Lībiyā », « Dawlat Lībiyā » ; en français, « Libye (la) », « État de Libye (l') »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1951,
+              "to": null,
+              "label": "Depuis le 24 décembre 1951"
+            },
+            "era": "modern",
+            "statement": "Le nom Libye est celui d'un État indépendant depuis le 24 décembre 1951 : la Cyrénaïque, la Tripolitaine et le Fezzan forment alors un seul pays, comme l'avait recommandé l'Assemblée générale des Nations unies en 1949, selon la Digithèque MJP et l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "Libye : indépendance de la Libye",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ly1949.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Elle publie la résolution 289 (IV) de l'Assemblée générale des Nations unies du 21 novembre 1949, qui recommande « que la Libye, composée de la Cyrénaïque, de la Tripolitaine et du Fezzan, soit constituée en un État indépendant et souverain », et date l'indépendance du 24 décembre 1951."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 128, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Libye : indépendante le 24 décembre 1951, puissance coloniale l'Italie ; « Administrations britannique (Tripolitaine et Cyrénaïque) et française (Fezzān) de 1943 à 1951 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Libye désigne aujourd'hui un État d'Afrique du Nord. Chez les auteurs grecs, il a désigné une région voisine de l'Égypte, puis l'Afrique tout entière, selon J. Desanges ; nous présentons plus bas l'explication qu'il donne de son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 17 : Les Protoberbères",
+                "author": "J. Desanges",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 464",
+                "notes": "UNESCO, volume dirigé par Gamal Mokhtar, lu dans l'exemplaire numérisé. La stèle d'el-Alamein, qui rapporte l'occupation de la région par Ramsès II après que Séti Ier a repoussé les Temehou vers 1317 avant notre ère, « est le premier document à mentionner les Libou. A partir du nom de ce peuple, les Grecs appelèrent Libye son aire de parcours d'abord, puis de proche en proche toute l'Afrique » ; sous Mineptah, en 1227 avant notre ère, sont mentionnés les Maschwesch, voisins occidentaux des Libou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "3 août 2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Libye reste celui du pays dans la Déclaration constitutionnelle du Conseil national de transition, dont l'article 1 commence par « La Libye est un État démocratique indépendant ».",
+            "sources": [
+              {
+                "title": "Déclaration constitutionnelle du 3 août 2011",
+                "author": "Conseil national de transition (Libye)",
+                "year": 2011,
+                "url": "https://mjp.univ-perp.fr/constit/ly2011.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 1",
+                "notes": "Texte lu en traduction française sur la Digithèque MJP de l'Université de Perpignan. Article 1 : « La Libye est un État démocratique indépendant où tous les pouvoirs dépendent du peuple. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -1317,
+              "to": -1227,
+              "label": "Entre 1317 et 1227 avant notre ère"
+            },
+            "era": "polity",
+            "statement": "Le nom Libye a une forme proche, Libou, sur la stèle d'el-Alamein, qui rapporte l'occupation de cette côte par le pharaon Ramsès II : c'est le premier document à mentionner ce peuple, selon J. Desanges. C'est la plus ancienne trace de cette forme que le projet connaît. Les peuples du désert libyque vivaient là bien avant elle.",
+            "formAsWritten": "Libou",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 17 : Les Protoberbères",
+                "author": "J. Desanges",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 464",
+                "notes": "UNESCO, volume dirigé par Gamal Mokhtar, lu dans l'exemplaire numérisé. La stèle d'el-Alamein, qui rapporte l'occupation de la région par Ramsès II après que Séti Ier a repoussé les Temehou vers 1317 avant notre ère, « est le premier document à mentionner les Libou. A partir du nom de ce peuple, les Grecs appelèrent Libye son aire de parcours d'abord, puis de proche en proche toute l'Afrique » ; sous Mineptah, en 1227 avant notre ère, sont mentionnés les Maschwesch, voisins occidentaux des Libou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -3000,
+              "to": -2300,
+              "label": "IIIe millénaire avant notre ère"
+            },
+            "era": "polity",
+            "statement": "On parle alors de Tehenou pour désigner les habitants du désert libyque et de ses oasis, puis aussi de Temehou à partir de la VIe dynastie égyptienne, vers 2300 avant notre ère, selon J. Desanges.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 17 : Les Protoberbères",
+                "author": "J. Desanges",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 463",
+                "notes": "UNESCO, volume dirigé par Gamal Mokhtar, lu dans l'exemplaire numérisé. Selon W. Hölscher, le nom des Tehenou apparaîtrait sur une palette du roi Scorpion, puis sur un cylindre d'ivoire du règne de Narmer, au début du IIIe millénaire ; les Tehenou peuplaient au IIIe millénaire le désert libyque et ses oasis ; les Temehou sont mentionnés sous la VIe dynastie, vers 2300 avant notre ère."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Libye viendrait de celui des Libou, un peuple voisin de l'Égypte : les Grecs auraient appelé Libye le territoire qu'il parcourait, puis, de proche en proche, toute l'Afrique, selon J. Desanges.",
+            "hypothesisGroup": "origine du nom Libye",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 17 : Les Protoberbères",
+                "author": "J. Desanges",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 464",
+                "notes": "UNESCO, volume dirigé par Gamal Mokhtar, lu dans l'exemplaire numérisé. La stèle d'el-Alamein, qui rapporte l'occupation de la région par Ramsès II après que Séti Ier a repoussé les Temehou vers 1317 avant notre ère, « est le premier document à mentionner les Libou. A partir du nom de ce peuple, les Grecs appelèrent Libye son aire de parcours d'abord, puis de proche en proche toute l'Afrique » ; sous Mineptah, en 1227 avant notre ère, sont mentionnés les Maschwesch, voisins occidentaux des Libou."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Royaume-Uni de Libye",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1951 à 1963",
+        "accounts": [
+          {
+            "period": {
+              "from": 1951,
+              "to": 1963,
+              "label": "Du 24 décembre 1951 au 25 avril 1963"
+            },
+            "era": "modern",
+            "statement": "Le nom Royaume-Uni de Libye est celui que l'article 2 de la Constitution du 7 octobre 1951 donne à la monarchie fédérale formée de la Cyrénaïque, de la Tripolitaine et du Fezzan. C'est la plus ancienne trace de ce nom que le projet connaît. La révision du 25 avril 1963 le change en Royaume de Libye, selon la Digithèque MJP.",
+            "aspect": "usage",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Constitution du Royaume-Uni de Libye, 7 octobre 1951",
+                "author": "Royaume-Uni de Libye",
+                "year": 1951,
+                "url": "https://mjp.univ-perp.fr/constit/ly1951.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 2",
+                "notes": "Texte lu en traduction française sur la Digithèque MJP de l'Université de Perpignan. Article 2 : « La Libye est une monarchie héréditaire, sa forme est fédérale et son système de gouvernement est représentatif. Son nom est : Royaume-Uni de Libye. »"
+              },
+              {
+                "title": "Libye : Constitution du Royaume de Libye, version amendée en 1963",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ly1963.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. La présentation indique que la révision du 25 avril 1963 « a transformé le Royaume-Uni de Libye en « Royaume de Libye » et a supprimé le caractère fédéral du régime »."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Libya",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/libya",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 10 octobre 2026. L'Empire ottoman cède la Libye à l'Italie par le traité d'Ouchy du 18 octobre 1912 ; elle reste officiellement une colonie italienne jusqu'en 1947, sous occupation franco-britannique depuis 1943. Les États-Unis reconnaissent le Royaume-Uni de Libye le 24 décembre 1951."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Royaume de Libye",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1963 à 1969",
+        "accounts": [
+          {
+            "period": {
+              "from": 1963,
+              "to": 1969,
+              "label": "Du 25 avril 1963 au 1er septembre 1969"
+            },
+            "era": "modern",
+            "statement": "Le nom Royaume de Libye remplace celui de Royaume-Uni de Libye lors de la révision constitutionnelle du 25 avril 1963, qui supprime aussi le caractère fédéral du régime, selon la Digithèque MJP. La monarchie prend fin après le coup de force du 1er septembre 1969.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Libye : Constitution du Royaume de Libye, version amendée en 1963",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ly1963.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. La présentation indique que la révision du 25 avril 1963 « a transformé le Royaume-Uni de Libye en « Royaume de Libye » et a supprimé le caractère fédéral du régime »."
+              },
+              {
+                "title": "Proclamation constitutionnelle du 11 décembre 1969",
+                "author": "Conseil de commandement de la Révolution (Libye)",
+                "year": 1969,
+                "url": "https://mjp.univ-perp.fr/constit/ly1969.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu en traduction française sur la Digithèque MJP de l'Université de Perpignan. Article premier : « Le nom du pays est la République arabe libyenne. » La présentation rapporte l'abrogation de la Constitution de 1951 après le coup de force du 1er septembre 1969."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République arabe libyenne",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1969 à 1977",
+        "accounts": [
+          {
+            "period": {
+              "from": 1969,
+              "to": 1977,
+              "label": "Du 11 décembre 1969 au 2 mars 1977"
+            },
+            "era": "modern",
+            "statement": "Le nom République arabe libyenne figure dans l'article premier de la Proclamation constitutionnelle du 11 décembre 1969 : « Le nom du pays est la République arabe libyenne. » C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "aspect": "usage",
+            "formAsWritten": "la République arabe libyenne",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Proclamation constitutionnelle du 11 décembre 1969",
+                "author": "Conseil de commandement de la Révolution (Libye)",
+                "year": 1969,
+                "url": "https://mjp.univ-perp.fr/constit/ly1969.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu en traduction française sur la Digithèque MJP de l'Université de Perpignan. Article premier : « Le nom du pays est la République arabe libyenne. » La présentation rapporte l'abrogation de la Constitution de 1951 après le coup de force du 1er septembre 1969."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jamahiriya arabe libyenne populaire socialiste",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1977 à 2011",
+        "accounts": [
+          {
+            "period": {
+              "from": 1977,
+              "to": 2011,
+              "label": "Du 2 mars 1977 à 2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Jamahiriya arabe libyenne populaire socialiste est celui que fixe l'article premier de la Déclaration du 2 mars 1977 ; le mot Jamahiriya remplace celui de République, selon la Digithèque MJP. C'est la plus ancienne trace de ce nom que le projet connaît. Il reste le nom officiel jusqu'en 2011, sous une forme plus longue, en anglais « Great Socialist People's Libyan Arab Jamahiriya », selon le Permanent Committee on Geographical Names.",
+            "aspect": "usage",
+            "formAsWritten": "Jamahiriya arabe libyenne populaire socialiste",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Déclaration sur l'avènement du Pouvoir du Peuple, 2 mars 1977",
+                "author": "Congrès général du peuple (Libye)",
+                "year": 1977,
+                "url": "https://mjp.univ-perp.fr/constit/ly1977.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu en traduction française sur la Digithèque MJP de l'Université de Perpignan. Article premier : « Le nom officiel de la Libye est : « Jamahiriya arabe libyenne populaire socialiste ». » La présentation y voit une « révolution lexicale » : la République devient la Jamahiriya."
+              },
+              {
+                "title": "Toponymic Factfile: Libya",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2025,
+                "url": "https://assets.publishing.service.gov.uk/media/68664e9d1f124a0bb0a3a9cc/Libya_toponymic_factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1 et note 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2025, lue le 10 octobre 2026. Nom du pays en arabe : Lībiyā ; nom de l'État : Dawlat Lībiyā, État de Libye. La note 1 rapporte que le 22 décembre 2017 le service du protocole des Nations unies a reçu une lettre de la mission permanente confirmant le changement du nom officiel en « State of Libya », et que le nom officiel de l'époque Kadhafi était « Great Socialist People's Libyan Arab Jamahiriya »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

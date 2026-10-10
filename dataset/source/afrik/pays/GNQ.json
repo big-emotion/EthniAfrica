@@ -6,6 +6,230 @@
   "summary": "La Guinée équatoriale doit son nom au terme portugais désignant la côte ouest-africaine, complété par sa position près de l'équateur. Colonie espagnole jusqu'en 1968, elle a gardé l'espagnol comme langue officielle. Fang, Bubi, Ndowe et Annobonais y perpétuent les traditions bantoues forestières.",
   "etymology": "Le nom \"Guinée équatoriale\" viendrait de \"Guinée\" (du portugais \"Guiné\", terme utilisé pour désigner la côte ouest-africaine) et de \"équatoriale\" (en référence à la position du pays près de l'équateur). Le nom espagnol \"Guinea Ecuatorial\" a été officialisé lors de la colonisation espagnole.",
   "nameOriginActor": "Le nom \"Guinée équatoriale\" a été donné par les Espagnols lors de la colonisation. Le terme \"Guinée\" vient des navigateurs portugais, et \"équatoriale\" fait référence à la position géographique du pays près de l'équateur. Le nom a été officialisé à l'indépendance en 1968.",
+  "nameHistory": {
+    "summary": "Le nom Guinée équatoriale désigne un pays d'Afrique centrale, la République de Guinée équatoriale, formée d'une partie continentale, le Río Muni, et de plusieurs îles. Pendant la colonisation espagnole, on parlait de Guinée espagnole. L'origine du mot Guinée est discutée ; nous présentons plus bas l'explication que donnent les sources.",
+    "names": [
+      {
+        "nameText": "Guinée équatoriale",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le mot Guinée suivi d'équatoriale, écrit dès 1959 et nom de l'État depuis 1968.",
+        "periodLabel": "Écrit dès 1959 ; nom de l'État depuis 1968",
+        "accounts": [
+          {
+            "period": {
+              "from": 1968,
+              "to": null,
+              "label": "Depuis le 12 octobre 1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Guinée équatoriale est celui de l'État indépendant depuis le 12 octobre 1968, selon l'Histoire générale de l'Afrique, l'Office of the Historian et la Digithèque MJP.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Guinée équatoriale : indépendante le 12 octobre 1968, puissance coloniale l'Espagne ; « Comprend le Río Muni (Mbini) et Fernando Poo (Macías Nguema Biyogo) »."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Equatorial Guinea",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/equatorial-guinea",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 10 octobre 2026. Le 12 octobre 1968, la Guinée équatoriale obtient son indépendance de l'Espagne."
+              },
+              {
+                "title": "Guinée équatoriale : Constitution du 2 décembre 1991, présentation et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/gq.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Ses repères historiques donnent : 1777, le Portugal cède à l'Espagne l'île de Fernando Poo ; 27 juin 1900, la France cède à l'Espagne l'actuel Río Muni ; 30 juin 1959, le Río Muni et Fernando Poo deviennent des provinces espagnoles ; 12 octobre 1968, proclamation de l'indépendance."
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordonnateur Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 34",
+                "notes": "Document de la session 2025 du Groupe d'experts, daté du 23 avril 2025, lu en ligne le 10 octobre 2026. Entrée Guinée équatoriale : en français « Guinée équatoriale (la) », « République de Guinée équatoriale (la) » ; en espagnol « Guinea Ecuatorial (la) », « República de Guinea Ecuatorial (la) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Guinée équatoriale joint le mot Guinée à l'adjectif équatoriale. Pourtant, l'équateur ne traverse pas le pays : tout son territoire, sauf l'île d'Annobón, se trouve au nord de l'équateur, selon le Permanent Committee on Geographical Names. L'origine du mot Guinée est discutée ; nous présentons plus bas l'explication des sources.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Equatorial Guinea",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/695fb2f757e7407fe07765d8/Equatorial_Guinea_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2026, lue le 10 octobre 2026. « Despite its name, the equator does not pass through the country (all except the island of Annobón lies to the north of the equator) ». Elle donne aussi le nom du pays dans ses trois langues officielles : Guinea Ecuatorial, Guinée équatoriale et Guiné Equatorial."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers — premiers contacts avec les Portugais — de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 329",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. Par le terme Guinée, l'auteur désigne la côte occidentale d'Afrique de l'embouchure de la Gambie au delta du Niger : « C'est l'acception ancienne, synonyme d'Éthiopie ou pays des Noirs sous la plume des premiers navigateurs portugais. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1963,
+              "label": "20 décembre 1963"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée équatoriale désigne, dans une loi espagnole, les territoires de Fernando Poo et du Río Muni réunis sous un régime d'autonomie, selon le Boletín Oficial del Estado.",
+            "formAsWritten": "la Guinea Ecuatorial",
+            "sources": [
+              {
+                "title": "Ley 191/1963, de 20 de diciembre, de Bases sobre el régimen autónomo de la Guinea Ecuatorial",
+                "author": "Jefatura del Estado (Espagne), Boletín Oficial del Estado",
+                "year": 1963,
+                "url": "https://www.boe.es/boe/dias/1963/12/30/pdfs/A18124-18125.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 18124, base I",
+                "notes": "BOE n° 312 du 30 décembre 1963, lu en fac-similé le 10 octobre 2026. Base I : « La Guinea Ecuatorial, constituida por los territorios de Fernando Poo y Río Muni, gozará de un régimen de autonomía »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée équatoriale figure dans celui de l'un des deux grands partis nationalistes formés en 1959, le Mouvement national de libération de la Guinée équatoriale, ou MONALIGE, selon Elikia M'Bokolo. C'est la plus ancienne trace de ce nom que le projet connaît. Les îles et la côte qu'il désigne étaient habitées bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 8 : L'Afrique équatoriale de l'Ouest",
+                "author": "Elikia M'Bokolo",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 233",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji, lu dans l'exemplaire numérisé. Les deux grands partis formés en 1959 sont le MONALIGE, « Mouvement national de libération de la Guinée équatoriale », et l'IPGE, « Idée populaire de Guinée équatoriale »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Guinée équatoriale tient son premier mot de Guinée, qui viendrait du berbère akal n ignaoun, « la terre des Ignaoun », par lequel les berbérophones désignaient au Moyen Âge l'Afrique sahélienne, selon Rachid Agrour. Claude Rivière le rattache aussi au berbère agnau, celui dont on ne comprend pas la langue.",
+            "hypothesisGroup": "origine du mot Guinée",
+            "sources": [
+              {
+                "title": "Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208",
+                "author": "Rachid Agrour",
+                "year": 2012,
+                "url": "https://doi.org/10.4000/etudesafricaines.17161",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 74 et note 20",
+                "notes": "Lu en texte intégral sur OpenEdition le 10 octobre 2026. L'auteur écrit que les berbérophones désignaient au Moyen Âge l'Afrique sahélienne par l'expression akal n ignaoun, la terre des Ignaoun, et qu'il faut « peut-être » y voir l'origine des noms Guinée, Guinée-Bissau et Guinée équatoriale. Il s'appuie sur Maurice Delafosse (1924, p. 153), que nous n'avons pas lu."
+              },
+              {
+                "title": "Guinea: The Mobilization of a People, préface",
+                "author": "Claude Rivière",
+                "year": null,
+                "url": "https://webguine.site/bibliotheque/sociology/riviere/mobilization_people/preface.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ithaca, Cornell University Press. Préface lue en ligne le 10 octobre 2026 sur le site webGuinée. L'auteur écrit que le nom Guinée viendrait « probablement » du berbère aginau ou agnau, celui dont la langue est incompréhensible, et qu'à la fin du XIXe siècle plusieurs puissances coloniales se taillent chacune leur Guinée : celle du Portugal, avec Bissau pour capitale, et la Guinée espagnole, en partie insulaire (Fernando Po) et en partie continentale (Río Muni), avec Santa Isabel pour capitale."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Guinée espagnole",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Époque coloniale, jusqu'en 1968",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1968,
+              "label": "Jusqu'au 12 octobre 1968"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée espagnole désigne la colonie espagnole formée de l'île de Fernando Poo et, sur le continent, du Río Muni, l'actuelle Guinée équatoriale, selon Majhemout Diop.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 3 : L'Afrique tropicale et l'Afrique équatoriale sous la domination française, espagnole et portugaise",
+                "author": "Majhemout Diop, avec David Birmingham, Ivan Hrbek, Alfredo Margarido et Djibril Tamsir Niane",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 85",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji, lu dans l'exemplaire numérisé. Le chapitre parle de la Guinée espagnole, où l'île de Fernando Poo et, sur le continent, le Río Muni, « actuelle Guinée équatoriale », connaissent des situations différentes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1899,
+              "label": "Fin du XIXe siècle"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée espagnole désigne l'une des Guinées que plusieurs puissances coloniales se taillent sur la côte à la fin du XIXe siècle : elle est en partie insulaire, avec Fernando Po, en partie continentale, avec le Río Muni, et a Santa Isabel pour capitale, selon Claude Rivière.",
+            "sources": [
+              {
+                "title": "Guinea: The Mobilization of a People, préface",
+                "author": "Claude Rivière",
+                "year": null,
+                "url": "https://webguine.site/bibliotheque/sociology/riviere/mobilization_people/preface.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ithaca, Cornell University Press. Préface lue en ligne le 10 octobre 2026 sur le site webGuinée. L'auteur écrit que le nom Guinée viendrait « probablement » du berbère aginau ou agnau, celui dont la langue est incompréhensible, et qu'à la fin du XIXe siècle plusieurs puissances coloniales se taillent chacune leur Guinée : celle du Portugal, avec Bissau pour capitale, et la Guinée espagnole, en partie insulaire (Fernando Po) et en partie continentale (Río Muni), avec Santa Isabel pour capitale."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Guinea Española (1778-1968)"],

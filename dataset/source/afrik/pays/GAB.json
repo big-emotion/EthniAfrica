@@ -6,6 +6,229 @@
   "summary": "Le Gabon doit son nom au portugais « Gabão », la gabardine, dont l'estuaire du Komo rappelait la forme aux navigateurs du XVe siècle. Peuplé par les migrations bantoues, il compte plus de quarante peuples — Fang, Punu, Nzebi, Teke, Myene, Mbete. Ses masques, dont le ngil fang, comptent parmi les plus connus d'Afrique centrale.",
   "etymology": "Le nom \"Gabon\" viendrait du portugais \"Gabão\" (gabardine, manteau), que les navigateurs portugais auraient donné au XVe siècle à l'estuaire du fleuve Komo, dont la forme rappellerait une gabardine. Le terme a été adapté en \"Gabon\" par les Français.",
   "nameOriginActor": "Le nom \"Gabon\" a été donné par les navigateurs portugais au XVe siècle en référence à l'estuaire du fleuve Komo. Les Français ont adapté ce nom lors de la colonisation. Le nom a été officialisé lors de l'indépendance en 1960.",
+  "nameHistory": {
+    "summary": "Le nom Gabon désigne un pays d'Afrique centrale, la République gabonaise. Il a d'abord désigné l'estuaire d'un fleuve, que les navigateurs portugais appelaient rio do Gabão, puis le comptoir français établi sur ses rives. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas l'explication que donnent les sources.",
+    "names": [
+      {
+        "nameText": "Gabon",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un estuaire, écrit par des navigateurs portugais vers 1505, devenu celui de la colonie puis de l'État.",
+        "periodLabel": "Écrit dès le début du XVIe siècle ; nom de l'État depuis 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": null,
+              "label": "Depuis le 17 août 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Gabon est celui de l'État depuis le 17 août 1960, jour où la République gabonaise proclame son indépendance, selon l'Office of the Historian et l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Gabon",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/gabon",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 10 octobre 2026. Les États-Unis reconnaissent le Gabon le 17 août 1960, jour où son indépendance vis-à-vis de l'Afrique-Équatoriale française est proclamée."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Gabon : indépendant le 17 août 1960, puissance coloniale la France."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gabon désigne aujourd'hui l'État. Il a d'abord désigné l'estuaire d'un fleuve, puis le comptoir français fondé sur ses rives. On ne sait pas avec certitude d'où vient ce nom : la seule explication que nous avons trouvée dans les sources est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La terminologie toponymique du Gabon, document de travail n° 43, vingt-troisième session du Groupe d'experts des Nations unies pour les noms géographiques",
+                "author": "Groupe de travail de la terminologie toponymique, Gabon",
+                "year": 2006,
+                "url": "https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/23-gegn/wp/gegn23wp43.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 2",
+                "notes": "Document présenté à Vienne, 28 mars-4 avril 2006, lu en ligne le 10 octobre 2026. « Rio do Gabao » y est présenté comme le nom que les Portugais ont donné à l'estuaire, « parce qu'il avait vaguement la forme d'un manteau de marin ou caban ». Le document ne cite pas de source pour cette explication."
+              },
+              {
+                "title": "Gabon : le Gabon sous administration française",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ga1839.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Elle publie la convention du 9 février 1839, passée « au village et dans la case du Roi Denis, rive gauche du Gabon », par laquelle ce chef, Kowé Rapontchombo, cède deux lieues de terrain pour établir une station française. Elle rapporte qu'en 1903 la colonie du Gabon, séparée du Moyen-Congo, devient autonome sur les plans administratif et financier, sous l'autorité du commissaire général du Congo français."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "28 novembre 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gabon entre dans celui de la République gabonaise, que l'Assemblée territoriale du Gabon proclame le 28 novembre 1958, quand elle choisit pour le territoire le statut d'État membre de la Communauté, selon la Digithèque MJP.",
+            "sources": [
+              {
+                "title": "Gabon : proclamation de la République gabonaise",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ga1958.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Le 28 novembre 1958, l'Assemblée territoriale du Gabon opte pour le statut d'État membre de la Communauté et proclame la République gabonaise ; l'indépendance est proclamée le 17 août 1960. La page cite le Journal officiel de l'Afrique équatoriale française du 1er janvier 1959."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gabon désigne une colonie séparée du Moyen-Congo, qui devient autonome pour son administration et ses finances, sous l'autorité du commissaire général du Congo français, selon la Digithèque MJP.",
+            "sources": [
+              {
+                "title": "Gabon : le Gabon sous administration française",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ga1839.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Elle publie la convention du 9 février 1839, passée « au village et dans la case du Roi Denis, rive gauche du Gabon », par laquelle ce chef, Kowé Rapontchombo, cède deux lieues de terrain pour établir une station française. Elle rapporte qu'en 1903 la colonie du Gabon, séparée du Moyen-Congo, devient autonome sur les plans administratif et financier, sous l'autorité du commissaire général du Congo français."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1839,
+              "to": 1839,
+              "label": "9 février 1839"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gabon désigne le fleuve dans la convention signée « au village et dans la case du Roi Denis, rive gauche du Gabon ». Ce chef, Kowé Rapontchombo, y cède deux lieues de terrain pour établir une station française, selon le texte que publie la Digithèque MJP.",
+            "actors": [
+              {
+                "name": "Kowé Rapontchombo, dit le Roi Denis",
+                "role": "chef de la rive gauche de l'estuaire, qui signe la convention"
+              },
+              {
+                "name": "Édouard Bouët",
+                "role": "lieutenant de vaisseau de la marine française, qui signe la convention"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Gabon : le Gabon sous administration française",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ga1839.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Elle publie la convention du 9 février 1839, passée « au village et dans la case du Roi Denis, rive gauche du Gabon », par laquelle ce chef, Kowé Rapontchombo, cède deux lieues de terrain pour établir une station française. Elle rapporte qu'en 1903 la colonie du Gabon, séparée du Moyen-Congo, devient autonome sur les plans administratif et financier, sous l'autorité du commissaire général du Congo français."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1668,
+              "to": 1668,
+              "label": "1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Gabon désigne chez Olfert Dapper un fleuve et le pays de son estuaire. Les habitants appellent Pongo l'île où réside leur roi, qu'ils nomment Manipongo, le « seigneur de Pongo » ; Elikia M'Bokolo y voit le seul État organisé de la région à cette époque.",
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 514",
+                "notes": "Amsterdam, Jacob van Meurs, 1668, lu dans le texte numérisé d'Internet Archive ; l'index du livre renvoie la rivière Gabon et l'île Pongo à la page 514. Dapper écrit que l'île s'appelle Pongo « by d'inwoonders », chez les habitants, et que leur roi est appelé Manipongo, « Koning of Heer van de Pongo », roi ou seigneur de Pongo."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 18 : Des savanes du Cameroun au haut Nil",
+                "author": "Elikia M'Bokolo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 579",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, lu dans l'exemplaire numérisé. À la fin du XVe siècle, les Portugais trouvent des Mpongwe dans la région de l'estuaire ; le seul État organisé de la région se trouve dans l'estuaire du Gabon, dont le roi porte, d'après Dapper, le titre de mani pongo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "Vers 1505-1508"
+            },
+            "era": "polity",
+            "statement": "Le nom Gabon apparaît par écrit dans l'Esmeraldo de situ orbis, le routier du capitaine portugais Duarte Pacheco Pereira : un grand fleuve, très peuplé, « há nome o rio do Gabão ». C'est la plus ancienne trace de ce nom que le projet connaît. L'estuaire et les peuples qui y vivaient existaient avant lui.",
+            "formAsWritten": "rio do Gabão",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, livre II, chapitres 10 et 11 : de la sierra de Fernão do Pó au rio do Gabão",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1954,
+                "url": "https://archive.org/details/dli.ernet.534920",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 159-160",
+                "notes": "Texte portugais écrit vers 1505-1508, lu dans la troisième édition de l'Academia Portuguesa da História (Lisbonne, 1954, introduction et notes de Damião Peres), sur l'exemplaire numérisé d'archive.org. Dix-sept lieues après l'île de Corisco, l'auteur décrit « um rio assaz grande » qui « há nome o rio do Gabão », très peuplé, avec les habitants duquel les Portugais n'ont encore aucun commerce."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Gabon viendrait du portugais gabão, un manteau de marin ou caban : les Portugais auraient donné ce nom à l'estuaire parce qu'il en avait vaguement la forme, selon le groupe de travail gabonais de la terminologie toponymique.",
+            "hypothesisGroup": "origine du nom Gabon",
+            "sources": [
+              {
+                "title": "La terminologie toponymique du Gabon, document de travail n° 43, vingt-troisième session du Groupe d'experts des Nations unies pour les noms géographiques",
+                "author": "Groupe de travail de la terminologie toponymique, Gabon",
+                "year": 2006,
+                "url": "https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/23-gegn/wp/gegn23wp43.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 2",
+                "notes": "Document présenté à Vienne, 28 mars-4 avril 2006, lu en ligne le 10 octobre 2026. « Rio do Gabao » y est présenté comme le nom que les Portugais ont donné à l'estuaire, « parce qu'il avait vaguement la forme d'un manteau de marin ou caban ». Le document ne cite pas de source pour cette explication."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
