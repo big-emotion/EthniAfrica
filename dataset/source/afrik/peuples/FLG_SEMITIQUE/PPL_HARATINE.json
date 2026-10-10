@@ -146,5 +146,286 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Haratine désigne, en Mauritanie et dans le Sahara de l'Ouest, des personnes noires de langue arabe ou berbère, souvent descendantes d'esclaves affranchis, qui se nomment elles-mêmes Haratine en Mauritanie. Au singulier, on dit hartani. D'autres noms existent : aharḍan en berbère, et Maures noirs. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Haratine",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mey",
+        "namedBy": null,
+        "shortLine": "Le nom courant en Mauritanie, au singulier hartani ; son origine est très discutée.",
+        "periodLabel": "Écrit dès le XIVe siècle sous une forme proche ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Haratine, au singulier hartani, désigne selon les régions soit un esclave affranchi ou un descendant d'esclaves, soit une personne métisse. Le sens d'affranchi domine en Mauritanie, celui de métis au Maroc, selon la linguiste Catherine Taine-Cheikh. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "« Hartani » : une enquête au pays des mots",
+                "author": "Catherine Taine-Cheikh",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03087902",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "L'Ouest saharien, n° 10-11, 2020, p. 73-94. Lu dans la version déposée par l'autrice sur HAL ; les pages citées sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Haratine tend aujourd'hui, en Mauritanie, à remplacer le mot « esclave » dans les usages publics, depuis que les abolitions successives ont rendu la distinction officiellement caduque, selon Catherine Taine-Cheikh.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "« Hartani » : une enquête au pays des mots",
+                "author": "Catherine Taine-Cheikh",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03087902",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "L'Ouest saharien, n° 10-11, 2020, p. 73-94. Lu dans la version déposée par l'autrice sur HAL ; les pages citées sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1601,
+              "to": 1700,
+              "label": "XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Haratine figure, au singulier hartani, dans le Tarikh es-Soudan d'es-Saʿdi, un historien né à Tombouctou en 1596 : il y parle de « deux hartani » et d'un « hartani de la ville de Tombouctou ». Catherine Taine-Cheikh y voit la plus ancienne attestation du mot lui-même.",
+            "sources": [
+              {
+                "title": "« Hartani » : une enquête au pays des mots",
+                "author": "Catherine Taine-Cheikh",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03087902",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4-5",
+                "notes": "L'Ouest saharien, n° 10-11, 2020, p. 73-94. Lu dans la version déposée par l'autrice sur HAL ; les pages citées sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1375,
+              "to": 1379,
+              "label": "Écrit entre 1375 et 1379"
+            },
+            "era": "polity",
+            "statement": "Le nom Haratine apparaît sous une forme proche, al-Ḥarḍānī, chez l'historien Ibn Khaldūn : un prince almohade, Abū Zayd, portait ce surnom, selon Catherine Taine-Cheikh, qui cite Colin. C'est la plus ancienne trace de ce nom que le projet connaît. On ne sait pas si le surnom avait alors le même sens.",
+            "formAsWritten": "al-Ḥarḍānī",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ibn Khaldūn",
+                "role": "historien, auteur de l'Histoire des Berbères"
+              }
+            ],
+            "sources": [
+              {
+                "title": "« Hartani » : une enquête au pays des mots",
+                "author": "Catherine Taine-Cheikh",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03087902",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "L'Ouest saharien, n° 10-11, 2020, p. 73-94. Lu dans la version déposée par l'autrice sur HAL ; les pages citées sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Haratine viendrait de l'arabe ḥarrāthīn, « laboureurs », selon une étymologie traditionnelle que rapporte Catherine Taine-Cheikh. Marçais et Colin l'ont contestée, car les Haratine des oasis cultivent à la houe et non à la charrue.",
+            "hypothesisGroup": "origine du nom Haratine",
+            "sources": [
+              {
+                "title": "« Hartani » : une enquête au pays des mots",
+                "author": "Catherine Taine-Cheikh",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03087902",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2 et 12-13",
+                "notes": "L'Ouest saharien, n° 10-11, 2020, p. 73-94. Lu dans la version déposée par l'autrice sur HAL ; les pages citées sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Haratine viendrait de l'arabe ḥurr thānī, « libre de second rang », selon une explication de lettrés locaux qu'aurait donnée en premier l'historien al-Nāṣirī al-Salāwī, d'après Leriche que cite Catherine Taine-Cheikh. Elle la juge très improbable, mais révélatrice d'une liberté « au rabais ».",
+            "hypothesisGroup": "origine du nom Haratine",
+            "sources": [
+              {
+                "title": "« Hartani » : une enquête au pays des mots",
+                "author": "Catherine Taine-Cheikh",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03087902",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13 et 19",
+                "notes": "L'Ouest saharien, n° 10-11, 2020, p. 73-94. Lu dans la version déposée par l'autrice sur HAL ; les pages citées sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1951,
+              "to": 1951,
+              "label": "Proposée en 1951"
+            },
+            "era": "colonial",
+            "statement": "Le nom Haratine pourrait venir du berbère, où existent des formes proches comme aharḍan, selon Marçais en 1951, que suit Colin, d'après Catherine Taine-Cheikh. Leriche rapporte au contraire, la même année, que pour des locuteurs du zénaga le mot berbère vient de l'arabe.",
+            "hypothesisGroup": "origine du nom Haratine",
+            "sources": [
+              {
+                "title": "« Hartani » : une enquête au pays des mots",
+                "author": "Catherine Taine-Cheikh",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03087902",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5 et 18",
+                "notes": "L'Ouest saharien, n° 10-11, 2020, p. 73-94. Lu dans la version déposée par l'autrice sur HAL ; les pages citées sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1953,
+              "to": 1953,
+              "label": "Proposée en 1953"
+            },
+            "era": "colonial",
+            "statement": "Le nom Haratine viendrait du Kaarta : les haratine seraient des esclaves vendus et achetés chez les Harat, selon Nicolas en 1953, qui s'appuie sur le voyageur Mage. Catherine Taine-Cheikh juge cette étymologie loin d'être démontrée.",
+            "hypothesisGroup": "origine du nom Haratine",
+            "sources": [
+              {
+                "title": "« Hartani » : une enquête au pays des mots",
+                "author": "Catherine Taine-Cheikh",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03087902",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15, note 35, et p. 16",
+                "notes": "L'Ouest saharien, n° 10-11, 2020, p. 73-94. Lu dans la version déposée par l'autrice sur HAL ; les pages citées sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Proposée en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Haratine pourrait avoir d'abord existé en berbère, sous la forme aharḍan, avant de passer en arabe, son sens glissant alors du métissage vers l'affranchissement, selon Catherine Taine-Cheikh.",
+            "hypothesisGroup": "origine du nom Haratine",
+            "sources": [
+              {
+                "title": "« Hartani » : une enquête au pays des mots",
+                "author": "Catherine Taine-Cheikh",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03087902",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18-19",
+                "notes": "L'Ouest saharien, n° 10-11, 2020, p. 73-94. Lu dans la version déposée par l'autrice sur HAL ; les pages citées sont celles de cette version."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Aharḍan",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'équivalent berbère de hartani, en zénaga et en touareg.",
+        "periodLabel": "Usage décrit en 2020",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'autrice"
+            },
+            "era": "modern",
+            "statement": "Le nom aharḍan est l'équivalent berbère de hartani. En zénaga et dans le touareg de l'Ouest, il désigne aussi l'affranchi, tandis qu'ailleurs des formes proches désignent le métis, selon Catherine Taine-Cheikh.",
+            "sources": [
+              {
+                "title": "« Hartani » : une enquête au pays des mots",
+                "author": "Catherine Taine-Cheikh",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03087902",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5-8",
+                "notes": "L'Ouest saharien, n° 10-11, 2020, p. 73-94. Lu dans la version déposée par l'autrice sur HAL ; les pages citées sont celles de cette version."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Maures noirs",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Un nom français de l'ensemble des Haratine et des esclaves de langue hassaniyya.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'autrice"
+            },
+            "era": "modern",
+            "statement": "Le nom Maures noirs répond au mot as-sūdān, « les Noirs », assez neutre en Mauritanie, qui réunit Haratine et esclaves de langue hassaniyya. Le mot Maures est celui que les colonisateurs ont donné aux arabophones de Mauritanie, qui se nomment eux-mêmes al-bīḍān, « les Blancs », selon Catherine Taine-Cheikh.",
+            "sources": [
+              {
+                "title": "« Hartani » : une enquête au pays des mots",
+                "author": "Catherine Taine-Cheikh",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03087902",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14 et 16",
+                "notes": "L'Ouest saharien, n° 10-11, 2020, p. 73-94. Lu dans la version déposée par l'autrice sur HAL ; les pages citées sont celles de cette version."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

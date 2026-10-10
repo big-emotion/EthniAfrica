@@ -121,5 +121,336 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Hadiya désigne un peuple de langue couchitique du sud de l'Éthiopie, entre les rivières Gibe et Bilate, qui se nomme lui-même Hadiya. Ce nom est aussi celui d'un ancien État musulman du Moyen Âge. D'autres noms existent, comme la forme Adea des cartes anciennes et Gudela pour certains groupes. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Hadiya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hdy",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple et d'un ancien État du sud de l'Éthiopie, écrit dès la fin du XIIIe siècle.",
+        "periodLabel": "Écrit depuis le XIIIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Hadiya désigne aujourd'hui un peuple d'environ 1,3 million de personnes. Dans l'histoire, c'était aussi l'un des grands États musulmans face à l'empire chrétien d'Éthiopie, jusqu'au XVIe siècle, selon l'historien Ulrich Braukämper. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1501,
+              "to": 1600,
+              "label": "XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Hadiya survit presque seul : la plupart des Hadiyya, qui peuplaient la région entre Harar et le pays gurage, se rallient aux Oromo. Seuls le nom de leur groupe et quelques traditions gardent la trace de ce passé, selon l'historien E. Haberland.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 780",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1314,
+              "to": 1344,
+              "label": "Première moitié du XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Hadiya figure dans le Kebra Nagast, la « Gloire des rois » éthiopienne, selon E. Haberland. Il s'y cacherait derrière Ḥadja, un nom de région, selon Ulrich Braukämper, qui suit Haberland. Les sources ne disent pas avec certitude s'il s'agit du même pays.",
+            "formAsWritten": "Ḥadja",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 802",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              },
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 69",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1286,
+              "to": 1287,
+              "label": "Événements de 1286-1287"
+            },
+            "era": "polity",
+            "statement": "Le nom Hadiya apparaît, écrit Ḥādiyah, dans la chronique du sultanat musulman du Choa, à propos d'une guerre de l'an 685 de l'hégire, soit 1286-1287, selon Ulrich Braukämper. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Ḥādiyah",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 70",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Rapportée en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Hadiya serait celui d'un ancêtre, Hadiya, dont le groupe aurait pris le nom. Des informateurs allaaba et gurage de l'Est en font le fils d'Abādir, l'ancêtre légendaire des Harari, selon Ulrich Braukämper.",
+            "hypothesisGroup": "origine du nom Hadiya",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2 et 70",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Rapportée en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Hadiya viendrait du mot arabe hadiya, « cadeau » : les combattants de l'imam Ahmad Grañ l'auraient lancé au XVIe siècle en trouvant chez les Hadiya des alliés musulmans, selon des versions recueillies chez les Arsi-Oromo. Ulrich Braukämper rejette cette explication, car le nom est bien plus ancien.",
+            "hypothesisGroup": "origine du nom Hadiya",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Rapportée en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Hadiya viendrait de Muhammadiya, « ceux qui ont accepté la parole de Mahomet », selon une autre version qu'Ulrich Braukämper juge sans fondement.",
+            "hypothesisGroup": "origine du nom Hadiya",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Rapportée en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Hadiya voudrait dire « terre vide », un pays inoccupé ouvert à la conquête oromo, selon une tradition orale de la région de Bale que rapporte Ulrich Braukämper.",
+            "hypothesisGroup": "origine du nom Hadiya",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Rapportée en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Hadiya voudrait dire « ceux qui sont restés en arrière », ceux qui n'ont pas suivi vers l'ouest les campagnes de l'émir Nur dans les années 1560, selon une tradition de la région du Tchertcher que rapporte Ulrich Braukämper.",
+            "hypothesisGroup": "origine du nom Hadiya",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Rapportée en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Hadiya voudrait dire « celui qui porte tout », selon les Leemo, que cite Ulrich Braukämper.",
+            "hypothesisGroup": "origine du nom Hadiya",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Adea",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme du nom Hadiya sur les cartes européennes des XVIIe et XVIIIe siècles.",
+        "periodLabel": "Écrit de 1642 au XVIIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1642,
+              "to": 1728,
+              "label": "1642-1728"
+            },
+            "era": "polity",
+            "statement": "Le nom Adea, une forme de Hadiya, figure sur la carte de De Almeida en 1642, puis sur celle de Ludolf en 1682. En 1728, la carte de Legrand nomme les habitants de ce royaume « Seb-a Hadya », selon Ulrich Braukämper. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Adea",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 181",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gudela",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté par des groupes hadiya de l'ancienne sous-province du Kambata.",
+        "periodLabel": "Écrit dès le XVe siècle sous réserve",
+        "accounts": [
+          {
+            "period": {
+              "from": 1401,
+              "to": 1500,
+              "label": "XVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Gudela figure parmi les peuples tributaires de l'empire éthiopien dans les chants à la louange des empereurs du XVe siècle, selon E. Haberland, qui doute qu'on puisse identifier sûrement ces peuples à ceux du XIXe siècle.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 802",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Gudela, ou Gudeella, désignait des groupes du Kambata chez qui le nom Hadiya s'est le mieux conservé, selon Ulrich Braukämper.",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-2",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
