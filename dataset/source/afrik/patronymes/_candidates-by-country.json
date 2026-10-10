@@ -184,9 +184,10 @@
           "peopleIds": ["PPL_SONINKE"],
           "countryId": "SEN",
           "provenance": {
+            "title": "Soninkés",
+            "url": "https://fr.wikipedia.org/wiki/Soninkés",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Registre national des électeurs, annuaires ANSD, travaux d'onomastique wolof et sérère",
           "reviewStatus": "candidate_pending_verification"
@@ -208,9 +209,10 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "GMB",
           "provenance": {
+            "title": "Jallow",
+            "url": "https://en.wikipedia.org/wiki/Jallow",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -222,9 +224,12 @@
           "peopleIds": ["PPL_SONINKE"],
           "countryId": "GMB",
           "provenance": {
+            "title": "The Ceesay legacy: A thousand years of power, faith and knowledge",
+            "author": "AlaSan Ceesay",
+            "year": 2025,
+            "url": "https://thepoint.gm/africa/gambia/feature/the-ceesay-legacy-a-thousand-years-of-power-faith-and-knowledge",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "press"
           },
           "verificationLead": "Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -236,9 +241,10 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "GMB",
           "provenance": {
+            "title": "Touray",
+            "url": "https://en.wikipedia.org/wiki/Touray",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -250,9 +256,12 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "GMB",
           "provenance": {
+            "title": "NCAC_RDD_TAPE_0268A (Sunjata Part 2)",
+            "author": "Suuso Bamba; Amadu Bansang Joobaate (NCAC/RDD, Radio Gambia)",
+            "year": 2022,
+            "url": "https://www.fdr.uni-hamburg.de/record/10571",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "archive"
           },
           "verificationLead": "Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -261,12 +270,15 @@
           "name": "Jammeh",
           "nameSystem": "clan_name",
           "variants": ["Jammé"],
-          "peopleIds": ["PPL_DIOLA"],
+          "peopleIds": ["PPL_DIOLA", "PPL_MALINKE"],
           "countryId": "GMB",
           "provenance": {
+            "title": "Senegambian Ethnic Groups: Common Origins and Cultural Affinities Factors and Forces of National Unity, Peace and Stability",
+            "author": "Ebou Momar Taal",
+            "year": 2010,
+            "url": "https://thepoint.gm/africa/gambia/article/senegambian-ethnic-groups-common-origins-and-cultural-affinities-factors-and-forces-of-national-unit",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "press"
           },
           "verificationLead": "Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -278,9 +290,11 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "GMB",
           "provenance": {
+            "title": "An Interview About The History of The Boojang Kaabiila in Brikama (NCAC_RDD_TAPE_1142A)",
+            "author": "National Centre for Arts and Culture (NCAC), National Digital Archive of The Gambia",
+            "url": "https://b2find.eudat.eu/dataset/acd61438-77a2-5c55-82c7-7308e92401bc",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "archive"
           },
           "verificationLead": "Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -303,7 +317,7 @@
           "name": "Sonko",
           "nameSystem": "clan_name",
           "variants": [],
-          "peopleIds": ["PPL_DIOLA"],
+          "peopleIds": ["PPL_DIOLA", "PPL_MALINKE"],
           "countryId": "GMB",
           "provenance": {
             "tier": "unverified",
@@ -320,9 +334,11 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "GMB",
           "provenance": {
+            "title": "An Interview About The History of The Daabo Clan in Gunjur (NCAC_RDD_TAPE_0953A)",
+            "author": "NCAC - National Digital Archive of The Gambia",
+            "url": "https://b2find.eudat.eu/dataset/06a5dff4-8ec9-5fd6-9bcf-7bd2d43a9589",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "archive"
           },
           "verificationLead": "Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -350,9 +366,12 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "GMB",
           "provenance": {
+            "title": "NCAC_RDD_TAPE_0268A (oral history recording, National Digital Archive of The Gambia)",
+            "author": "Suuso Bamba; Amadu Bansang Joobaate (NCAC/RDD)",
+            "year": 2022,
+            "url": "https://www.fdr.uni-hamburg.de/record/10571",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "archive"
           },
           "verificationLead": "Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -364,9 +383,11 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "GMB",
           "provenance": {
+            "title": "Fula people",
+            "author": "Wikipedia contributors",
+            "url": "https://en.wikipedia.org/wiki/Fula_people",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Listes électorales gambiennes (IEC), Gambia Bureau of Statistics, onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -451,9 +472,10 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "MLI",
           "provenance": {
+            "title": "Manding region",
+            "url": "https://en.wikipedia.org/wiki/Manding_region",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -462,7 +484,7 @@
           "name": "Sissoko",
           "nameSystem": "clan_name",
           "variants": ["Cissoko"],
-          "peopleIds": ["PPL_SONINKE"],
+          "peopleIds": ["PPL_MALINKE"],
           "countryId": "MLI",
           "provenance": {
             "tier": "unverified",
@@ -476,12 +498,14 @@
           "name": "Doumbia",
           "nameSystem": "clan_name",
           "variants": [],
-          "peopleIds": ["PPL_BAMBARA"],
+          "peopleIds": ["PPL_MALINKE"],
           "countryId": "MLI",
           "provenance": {
+            "title": "Festival culturel des DOUMBIA Tontigui : Les descendants de Fakoly se ressourcent à Kartabougou",
+            "year": 2017,
+            "url": "https://bamada.net/festival-culturel-des-doumbia-tontigui-les-descendants-de-fakoly-se-ressourcent-kartabougou",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "press"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -493,9 +517,12 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "MLI",
           "provenance": {
+            "title": "Les communautés peules au Mali",
+            "author": "Ambroise Dakouo (African Security Sector Network)",
+            "year": 2016,
+            "url": "https://africansecuritynetwork.org/assn/wp-content/uploads/2016/11/les-communaut%C3%A9s-peules-au-Mali-2.pdf",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "ngo"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -507,9 +534,10 @@
           "peopleIds": ["PPL_SONINKE"],
           "countryId": "MLI",
           "provenance": {
+            "title": "GHANA (empire du) – 2. Un empire militaire",
+            "url": "https://www.universalis.fr/encyclopedie/empire-du-ghana/2-un-empire-militaire/",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -538,9 +566,10 @@
           "peopleIds": ["PPL_SONGHAI"],
           "countryId": "MLI",
           "provenance": {
+            "title": "Maïga",
+            "url": "https://en.wikipedia.org/wiki/Ma%C3%AFga",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -552,9 +581,12 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "MLI",
           "provenance": {
+            "title": "Les communautés peules au Mali",
+            "author": "Ambroise Dakouo (African Security Sector Network)",
+            "year": 2016,
+            "url": "https://africansecuritynetwork.org/assn/wp-content/uploads/2016/11/les-communaut%C3%A9s-peules-au-Mali-2.pdf",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "ngo"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -580,9 +612,12 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "MLI",
           "provenance": {
+            "title": "Les communautés peules au Mali",
+            "author": "Ambroise Dakouo (African Security Sector Network)",
+            "year": 2016,
+            "url": "https://africansecuritynetwork.org/assn/wp-content/uploads/2016/11/les-communaut%C3%A9s-peules-au-Mali-2.pdf",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "ngo"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -611,9 +646,11 @@
           "peopleIds": ["PPL_SONINKE"],
           "countryId": "MLI",
           "provenance": {
+            "title": "Soninkés",
+            "author": "Wikipédia contributors (citing Makhtar Diouf, Sénégal, les ethnies et la nation, NEAS 1998, pp. 70-71)",
+            "url": "https://fr.wikipedia.org/wiki/Sonink%C3%A9s",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -625,9 +662,12 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "MLI",
           "provenance": {
+            "title": "N'Golo Kanté, homonyme d'un des plus grands rois de l'histoire de l'Afrique",
+            "author": "Sandro Capo Chichi",
+            "year": 2018,
+            "url": "https://www.nofi.media/2018/07/ngolo-soumahoro-kante/56222",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "press"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -653,9 +693,11 @@
           "peopleIds": ["PPL_BAMBARA"],
           "countryId": "MLI",
           "provenance": {
+            "title": "HISTOIRE DES BAGAYOGO",
+            "year": 2018,
+            "url": "https://histoiresahelienne.over-blog.com/2018/10/histoire-des-bagayogo.html",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "community"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -667,9 +709,10 @@
           "peopleIds": ["PPL_DOGON"],
           "countryId": "MLI",
           "provenance": {
+            "title": "Indeli village record, Dogon languages project",
+            "url": "https://dogonlanguages.info/villages/837",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "linguistic_reference"
           },
           "verificationLead": "RAVEC (registre biométrique malien), INSTAT, travaux d'onomastique mandingue",
           "reviewStatus": "candidate_pending_verification"
@@ -795,9 +838,12 @@
           "peopleIds": ["PPL_DIOULA"],
           "countryId": "BFA",
           "provenance": {
-            "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "title": "Gold Mining and Jula Influence in Precolonial Southern Burkina Faso",
+            "author": "Katja Werthmann",
+            "year": 2007,
+            "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/gold-mining-and-jula1-influence-in-precolonial-southern-burkina-faso/87B1DDFE2E46F6E94AE86652B282A53E",
+            "tier": "referenced",
+            "source_kind": "academic"
           },
           "verificationLead": "Listes électorales CENI, INSD, onomastique mooré et dioula",
           "reviewStatus": "candidate_pending_verification"
@@ -949,9 +995,11 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "BFA",
           "provenance": {
+            "title": "Fula people",
+            "author": "Wikipedia contributors",
+            "url": "https://en.wikipedia.org/wiki/Fula_people",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Listes électorales CENI, INSD, onomastique mooré et dioula",
           "reviewStatus": "candidate_pending_verification"
@@ -990,9 +1038,10 @@
           "peopleIds": ["PPL_SONGHAI"],
           "countryId": "NER",
           "provenance": {
+            "title": "Maïga",
+            "url": "https://en.wikipedia.org/wiki/Ma%C3%AFga",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma",
           "reviewStatus": "candidate_pending_verification"
@@ -1018,9 +1067,12 @@
           "peopleIds": ["PPL_ZARMA"],
           "countryId": "NER",
           "provenance": {
+            "title": "Décret n° 2008-189/PRN/MI/SP/D du 17 juin 2008 fixant les modalités d'application de la loi n° 2007-30 du 3 décembre 2007 portant régime de l'état civil au Niger (art. 53)",
+            "author": "République du Niger, Ministère de l'Intérieur (Direction de l'état civil), copy hosted by Citizenship Rights in Africa Initiative",
+            "year": 2008,
+            "url": "http://citizenshiprightsafrica.org/wp-content/uploads/2007/12/Niger-Loi-Portant-r%C3%A9gime-de-lEtat-civil-2007-1.pdf",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "government"
           },
           "verificationLead": "Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma",
           "reviewStatus": "candidate_pending_verification"
@@ -1060,9 +1112,12 @@
           "peopleIds": ["PPL_ZARMA"],
           "countryId": "NER",
           "provenance": {
+            "title": "Décret n° 2008-189/PRN/MI/SP/D du 17 juin 2008 fixant les modalités d'application de la loi n° 2007-30 du 3 décembre 2007 portant régime de l'état civil au Niger (art. 53)",
+            "author": "République du Niger, Ministère de l'Intérieur (Direction de l'état civil), copy hosted by Citizenship Rights in Africa Initiative",
+            "year": 2008,
+            "url": "http://citizenshiprightsafrica.org/wp-content/uploads/2007/12/Niger-Loi-Portant-r%C3%A9gime-de-lEtat-civil-2007-1.pdf",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "government"
           },
           "verificationLead": "Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma",
           "reviewStatus": "candidate_pending_verification"
@@ -1088,9 +1143,12 @@
           "peopleIds": ["PPL_ZARMA"],
           "countryId": "NER",
           "provenance": {
+            "title": "Décret n° 2008-189/PRN/MI/SP/D du 17 juin 2008 fixant les modalités d'application de la loi n° 2007-30 du 3 décembre 2007 portant régime de l'état civil au Niger (art. 53)",
+            "author": "République du Niger, Ministère de l'Intérieur (Direction de l'état civil), copy hosted by Citizenship Rights in Africa Initiative",
+            "year": 2008,
+            "url": "http://citizenshiprightsafrica.org/wp-content/uploads/2007/12/Niger-Loi-Portant-r%C3%A9gime-de-lEtat-civil-2007-1.pdf",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "government"
           },
           "verificationLead": "Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma",
           "reviewStatus": "candidate_pending_verification"
@@ -1102,9 +1160,12 @@
           "peopleIds": ["PPL_ZARMA"],
           "countryId": "NER",
           "provenance": {
+            "title": "Décret n° 2008-189/PRN/MI/SP/D du 17 juin 2008 fixant les modalités d'application de la loi n° 2007-30 du 3 décembre 2007 portant régime de l'état civil au Niger (art. 53)",
+            "author": "République du Niger, Ministère de l'Intérieur (Direction de l'état civil), copy hosted by Citizenship Rights in Africa Initiative",
+            "year": 2008,
+            "url": "http://citizenshiprightsafrica.org/wp-content/uploads/2007/12/Niger-Loi-Portant-r%C3%A9gime-de-lEtat-civil-2007-1.pdf",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "government"
           },
           "verificationLead": "Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma",
           "reviewStatus": "candidate_pending_verification"
@@ -1116,9 +1177,12 @@
           "peopleIds": ["PPL_ZARMA"],
           "countryId": "NER",
           "provenance": {
+            "title": "Décret n° 2008-189/PRN/MI/SP/D du 17 juin 2008 fixant les modalités d'application de la loi n° 2007-30 du 3 décembre 2007 portant régime de l'état civil au Niger (art. 53)",
+            "author": "République du Niger, Ministère de l'Intérieur (Direction de l'état civil), copy hosted by Citizenship Rights in Africa Initiative",
+            "year": 2008,
+            "url": "http://citizenshiprightsafrica.org/wp-content/uploads/2007/12/Niger-Loi-Portant-r%C3%A9gime-de-lEtat-civil-2007-1.pdf",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "government"
           },
           "verificationLead": "Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma",
           "reviewStatus": "candidate_pending_verification"
@@ -1130,9 +1194,11 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "NER",
           "provenance": {
+            "title": "Fula people",
+            "author": "Wikipedia contributors",
+            "url": "https://en.wikipedia.org/wiki/Fula_people",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma",
           "reviewStatus": "candidate_pending_verification"
@@ -1158,9 +1224,10 @@
           "peopleIds": ["PPL_ZARMA"],
           "countryId": "NER",
           "provenance": {
+            "title": "KOUNTCHÉ SEYNI (1931-1987)",
+            "url": "https://www.universalis.fr/encyclopedie/seyni-kountche/",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma",
           "reviewStatus": "candidate_pending_verification"
@@ -1228,9 +1295,10 @@
           "peopleIds": ["PPL_ZARMA"],
           "countryId": "NER",
           "provenance": {
+            "title": "Amadou Salifou",
+            "url": "https://en.wikipedia.org/wiki/Amadou_Salifou",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Fichier électoral CENI Niger, INS Niger, travaux d'anthroponymie haoussa et zarma",
           "reviewStatus": "candidate_pending_verification"
@@ -1296,9 +1364,12 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "GIN",
           "provenance": {
+            "title": "The Kingdom of Fouta-Diallon",
+            "author": "Joseph Earl Harris",
+            "year": 1965,
+            "url": "https://www.webfuuta.site/bibliotheque/joseph_harris/fouta_diallon_history/sample_interviews.html",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "academic"
           },
           "verificationLead": "Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon",
           "reviewStatus": "candidate_pending_verification"
@@ -1310,9 +1381,12 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "GIN",
           "provenance": {
+            "title": "The Kingdom of Fouta-Diallon",
+            "author": "Joseph Earl Harris",
+            "year": 1965,
+            "url": "https://www.webfuuta.site/bibliotheque/joseph_harris/fouta_diallon_history/sample_interviews.html",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "academic"
           },
           "verificationLead": "Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon",
           "reviewStatus": "candidate_pending_verification"
@@ -1324,9 +1398,12 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "GIN",
           "provenance": {
+            "title": "The Kingdom of Fouta-Diallon",
+            "author": "Joseph Earl Harris",
+            "year": 1965,
+            "url": "https://www.webfuuta.site/bibliotheque/joseph_harris/fouta_diallon_history/sample_interviews.html",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "academic"
           },
           "verificationLead": "Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon",
           "reviewStatus": "candidate_pending_verification"
@@ -1353,9 +1430,10 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "GIN",
           "provenance": {
+            "title": "Mandé",
+            "url": "https://fr.wikipedia.org/wiki/Manden",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon",
           "reviewStatus": "candidate_pending_verification"
@@ -1383,9 +1461,10 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "GIN",
           "provenance": {
+            "title": "Dioula, malinké, bambara ou mandinka : Quelles similarités et différences ?",
+            "url": "https://poulmanogo.wixsite.com/zangaschool/post/dioula-malinke-bambara-mandinka",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "community"
           },
           "verificationLead": "Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon",
           "reviewStatus": "candidate_pending_verification"
@@ -1397,9 +1476,11 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "GIN",
           "provenance": {
+            "title": "Keita dynasty",
+            "author": "Wikipedia contributors",
+            "url": "https://en.wikipedia.org/wiki/Keita_dynasty",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon",
           "reviewStatus": "candidate_pending_verification"
@@ -1439,9 +1520,12 @@
           "peopleIds": ["PPL_MALINKE"],
           "countryId": "GIN",
           "provenance": {
+            "title": "Janjon pour Ahmadou Kourouma",
+            "author": "Jean-Fernand Bédia (interview with Ahmadou Kourouma)",
+            "year": 2005,
+            "url": "http://africultures.com/janjon-pour-ahmadou-kourouma-4066/",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "press"
           },
           "verificationLead": "Fichier électoral CENI Guinée, INS Guinée, onomastique du Fouta-Djalon",
           "reviewStatus": "candidate_pending_verification"
@@ -1477,9 +1561,12 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "GNB",
           "provenance": {
-            "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "title": "Fulas e Mandingas na luta pelo poder e conquista do império de Kaabu: causas e consequências (século XVI - XIX)",
+            "author": "Ibu Sadjo",
+            "year": 2019,
+            "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3467/1/ibu%20djalo_tcc.pdf",
+            "tier": "referenced",
+            "source_kind": "academic"
           },
           "verificationLead": "Recenseamento Geral (INE Guiné-Bissau), listes électorales CNE, onomastique balante et manjaque",
           "reviewStatus": "candidate_pending_verification"
@@ -1491,9 +1578,12 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "GNB",
           "provenance": {
-            "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "title": "Fulas e Mandingas na luta pelo poder e conquista do império de Kaabu: causas e consequências (século XVI - XIX)",
+            "author": "Ibu Sadjo",
+            "year": 2019,
+            "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3467/1/ibu%20djalo_tcc.pdf",
+            "tier": "referenced",
+            "source_kind": "academic"
           },
           "verificationLead": "Recenseamento Geral (INE Guiné-Bissau), listes électorales CNE, onomastique balante et manjaque",
           "reviewStatus": "candidate_pending_verification"
@@ -1505,9 +1595,12 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "GNB",
           "provenance": {
-            "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "title": "Fulas e Mandingas na luta pelo poder e conquista do império de Kaabu: causas e consequências (século XVI - XIX)",
+            "author": "Ibu Sadjo",
+            "year": 2019,
+            "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3467/1/ibu%20djalo_tcc.pdf",
+            "tier": "referenced",
+            "source_kind": "academic"
           },
           "verificationLead": "Recenseamento Geral (INE Guiné-Bissau), listes électorales CNE, onomastique balante et manjaque",
           "reviewStatus": "candidate_pending_verification"
@@ -1629,7 +1722,7 @@
     {
       "countryId": "CIV",
       "dominantNameSystem": "clan_name",
-      "onomasticNote": "Les noms akan les plus fréquents (Kouassi, Yao, Kouamé, Konan) sont des noms de jour (kradin) devenus héréditaires : ni jamu clanique ni patronyme non héréditaire au sens strict. La classification retenue ici est provisoire et doit être tranchée à la revue.",
+      "onomasticNote": "Les noms akan les plus fréquents (Kouassi, Yao, Kouamé, Konan) sont des noms de jour (kradin) devenus héréditaires : ni jamu clanique ni patronyme non héréditaire au sens strict. La classification retenue ici est provisoire et doit être tranchée à la revue. Gbagbo est un nom personnel bété et Zadi un nom donné aux jumeaux, devenus noms de famille : ils sont classés en non_hereditary_patronymic, la valeur la plus proche, et non en nom de clan.",
       "verificationLead": "Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan",
       "quota": 20,
       "deficit": 0,
@@ -1641,9 +1734,10 @@
           "peopleIds": ["PPL_BAOULE"],
           "countryId": "CIV",
           "provenance": {
+            "title": "Les noms Baoulé et signification",
+            "url": "https://rezoivoire.net/ivoire/patrimoine/1672/les-noms-baoule-et-signification.html",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "press"
           },
           "verificationLead": "Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan",
           "reviewStatus": "candidate_pending_verification"
@@ -1655,9 +1749,11 @@
           "peopleIds": ["PPL_DIOULA"],
           "countryId": "CIV",
           "provenance": {
+            "title": "Dyula (Worldmark Encyclopedia of Cultures and Daily Life, on Encyclopedia.com)",
+            "author": "R. Launay",
+            "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/dyula-0",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan",
           "reviewStatus": "candidate_pending_verification"
@@ -1739,9 +1835,10 @@
           "peopleIds": ["PPL_DIOULA"],
           "countryId": "CIV",
           "provenance": {
+            "title": "Dyula (Encyclopedia.com entry)",
+            "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/dyula-0",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan",
           "reviewStatus": "candidate_pending_verification"
@@ -1753,9 +1850,12 @@
           "peopleIds": ["PPL_DIOULA"],
           "countryId": "CIV",
           "provenance": {
-            "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "title": "Traders Without Trade: Responses to Change in Two Dyula Communities — chapter 'Clansmen and kinsmen'",
+            "author": "Robert Launay",
+            "year": 1982,
+            "url": "https://www.cambridge.org/core/books/traders-without-trade/clansmen-and-kinsmen/4DA04E200F6A5F5CB26DD11F54C4BF22",
+            "tier": "referenced",
+            "source_kind": "academic"
           },
           "verificationLead": "Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan",
           "reviewStatus": "candidate_pending_verification"
@@ -1792,12 +1892,13 @@
           "name": "Doumbia",
           "nameSystem": "clan_name",
           "variants": [],
-          "peopleIds": ["PPL_DIOULA"],
+          "peopleIds": ["PPL_MALINKE"],
           "countryId": "CIV",
           "provenance": {
+            "title": "Le groupe Mandé",
+            "url": "https://rezoivoire.net/ivoire/ressources/293/le-groupe-mande.html",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "community"
           },
           "verificationLead": "Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan",
           "reviewStatus": "candidate_pending_verification"
@@ -1846,7 +1947,7 @@
         },
         {
           "name": "Gbagbo",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_BETE"],
           "countryId": "CIV",
@@ -1860,7 +1961,7 @@
         },
         {
           "name": "Zadi",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_BETE"],
           "countryId": "CIV",
@@ -1907,9 +2008,10 @@
           "peopleIds": ["PPL_DIOULA"],
           "countryId": "CIV",
           "provenance": {
+            "title": "Dioula (peuple)",
+            "url": "https://fr.wikipedia.org/wiki/Dioula_(peuple)",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "Liste électorale CEI, RGPH INS Côte d'Ivoire, travaux sur les noms de jour akan",
           "reviewStatus": "candidate_pending_verification"
@@ -2565,7 +2667,7 @@
     {
       "countryId": "NGA",
       "dominantNameSystem": "praise_name",
-      "onomasticNote": "Trois systèmes distincts : oríkì yoruba (le nom est un énoncé sur l'òrìṣà ou le lignage), noms igbo théophores (Chukwu-, Nna-), et chaîne patronymique haoussa-peule au nord. Les oruko amutorunwa — noms « apportés du ciel », attribués par la circonstance de la naissance (Taiwo et Kehinde pour les jumeaux, Ojo pour l'enfant né le cordon au cou) — ne sont ni des oríkì ni des noms de lignage : ils sont classés ici en praise_name faute de valeur plus proche, et la classification reste à trancher à la revue.",
+      "onomasticNote": "Trois systèmes distincts : oríkì yoruba (le nom est un énoncé sur l'òrìṣà ou le lignage), noms igbo théophores (Chukwu-, Nna-), et chaîne patronymique haoussa-peule au nord. Les oruko amutorunwa — noms « apportés du ciel », attribués par la circonstance de la naissance (Taiwo et Kehinde pour les jumeaux, Ojo pour l'enfant né le cordon au cou) — ne sont ni des oríkì ni des noms de lignage : ils sont classés ici en praise_name faute de valeur plus proche, et la classification reste à trancher à la revue. Les noms igbo Okafor, Okonkwo, Chukwu, Nwachukwu, Chinedu, Okoro, Nwosu, Obi et Eze ne sont pas des noms de clan : ce sont des noms personnels, des noms de jour de marché, des noms qui portent le nom de Dieu ou des titres, devenus noms de famille (Ogbaa, Names, 1980 ; Asadu et Nzuanke, Lwati, 2014). Ils sont classés en non_hereditary_patronymic, la valeur la plus proche.",
       "verificationLead": "INEC voter register, NPC census, littérature sur l'oríkì yoruba et l'anthroponymie igbo",
       "quota": 30,
       "deficit": 0,
@@ -2586,7 +2688,7 @@
         },
         {
           "name": "Okafor",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_IGBO"],
           "countryId": "NGA",
@@ -2614,7 +2716,7 @@
         },
         {
           "name": "Chukwu",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": ["Chukwuma"],
           "peopleIds": ["PPL_IGBO"],
           "countryId": "NGA",
@@ -2642,7 +2744,7 @@
         },
         {
           "name": "Nwachukwu",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_IGBO"],
           "countryId": "NGA",
@@ -2656,7 +2758,7 @@
         },
         {
           "name": "Okonkwo",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_IGBO"],
           "countryId": "NGA",
@@ -2712,7 +2814,7 @@
         },
         {
           "name": "Eze",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_IGBO"],
           "countryId": "NGA",
@@ -2824,7 +2926,7 @@
         },
         {
           "name": "Okoro",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_IGBO"],
           "countryId": "NGA",
@@ -2838,7 +2940,7 @@
         },
         {
           "name": "Nwosu",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_IGBO"],
           "countryId": "NGA",
@@ -2852,7 +2954,7 @@
         },
         {
           "name": "Obi",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_IGBO"],
           "countryId": "NGA",
@@ -2866,7 +2968,7 @@
         },
         {
           "name": "Chinedu",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_IGBO"],
           "countryId": "NGA",
@@ -3283,9 +3385,12 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "SLE",
           "provenance": {
-            "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "title": "The Fula and Islamic Education in Freetown, Sierra Leone",
+            "author": "Alusine Jalloh",
+            "year": 1997,
+            "url": "https://ajis.org/index.php/ajiss/article/download/2233/2447/5171",
+            "tier": "referenced",
+            "source_kind": "academic"
           },
           "verificationLead": "NEC Sierra Leone voter register, Statistics Sierra Leone, travaux sur l'onomastique krio",
           "reviewStatus": "candidate_pending_verification"
@@ -3461,9 +3566,12 @@
           "peopleIds": ["PPL_FULA"],
           "countryId": "MRT",
           "provenance": {
+            "title": "Figures peules (préface)",
+            "author": "Roger Botte, Jean Boutrais, Jean Schmitz (dir.)",
+            "year": 1999,
+            "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/010020412.pdf",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "academic"
           },
           "verificationLead": "ANRPTS (registre national), ONS Mauritanie, travaux sur les nisba hassaniyya",
           "reviewStatus": "candidate_pending_verification"
@@ -3503,9 +3611,10 @@
           "peopleIds": ["PPL_SONINKE"],
           "countryId": "MRT",
           "provenance": {
+            "title": "Guidimakha",
+            "url": "https://en.wikipedia.org/wiki/Guidimakha",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "ANRPTS (registre national), ONS Mauritanie, travaux sur les nisba hassaniyya",
           "reviewStatus": "candidate_pending_verification"
@@ -3517,9 +3626,10 @@
           "peopleIds": ["PPL_SONINKE"],
           "countryId": "MRT",
           "provenance": {
+            "title": "Tandia",
+            "url": "https://fr.wikipedia.org/wiki/Tandia",
             "tier": "unverified",
-            "source_kind": "ai_generated",
-            "confidenceWeight": 0.2
+            "source_kind": "encyclopedia"
           },
           "verificationLead": "ANRPTS (registre national), ONS Mauritanie, travaux sur les nisba hassaniyya",
           "reviewStatus": "candidate_pending_verification"
@@ -3707,7 +3817,7 @@
     {
       "countryId": "CMR",
       "dominantNameSystem": "clan_name",
-      "onomasticNote": "Le pays cumule quatre onomastiques : noms de lignage beti-fang (Mba, Ndongo), noms bamiléké rattachés à une chefferie, patronymes peuls et kanuri au nord, patronymes anglophones à l'ouest.",
+      "onomasticNote": "Le pays cumule quatre onomastiques : noms de lignage beti-fang (Mba, Ndongo), noms bamiléké rattachés à une chefferie, patronymes peuls et kanuri au nord, patronymes anglophones à l'ouest. Nyobè est le nom personnel du père de Ruben Um Nyobè, porté par son fils : il est classé en non_hereditary_patronymic, non en nom de clan.",
       "verificationLead": "ELECAM voter register, BUCREP (recensement), travaux sur l'anthroponymie beti et bamiléké",
       "quota": 20,
       "deficit": 0,
@@ -3966,7 +4076,7 @@
         },
         {
           "name": "Nyobè",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": ["Nyobe"],
           "peopleIds": ["PPL_BASSA_CAM"],
           "countryId": "CMR",
@@ -4709,14 +4819,14 @@
     {
       "countryId": "COG",
       "dominantNameSystem": "clan_name",
-      "onomasticNote": "Noms kongo (Nkounkou, Mabiala), téké et mbochi, doublés de prénoms français hérités de l'état civil colonial. Le clan kongo (kanda) est matrilinéaire, contrairement au jamu mandingue.",
+      "onomasticNote": "Noms kongo (Nkounkou, Mabiala), téké et mbochi, doublés de prénoms français hérités de l'état civil colonial. Le clan kongo (kanda) est matrilinéaire, contrairement au jamu mandingue. Marcel Soret (Les Kongo nord-occidentaux, 1959) montre que le clan se marque par un nom en ki- et que Kunku et Mabiala sont aussi des noms personnels. Rien n'établit que Nkounkou, Mabiala, Makosso ou Ngoma désignent un clan : ils sont classés en non_hereditary_patronymic, la valeur la plus proche.",
       "verificationLead": "CNEI Congo, INS Congo, travaux sur le kanda kongo",
       "quota": 10,
       "deficit": 0,
       "entries": [
         {
           "name": "Nkounkou",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_KONGO"],
           "countryId": "COG",
@@ -4730,7 +4840,7 @@
         },
         {
           "name": "Mabiala",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_KONGO"],
           "countryId": "COG",
@@ -4744,7 +4854,7 @@
         },
         {
           "name": "Makosso",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_KONGO"],
           "countryId": "COG",
@@ -4758,7 +4868,7 @@
         },
         {
           "name": "Ngoma",
-          "nameSystem": "clan_name",
+          "nameSystem": "non_hereditary_patronymic",
           "variants": [],
           "peopleIds": ["PPL_KONGO"],
           "countryId": "COG",

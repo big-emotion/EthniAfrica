@@ -27,7 +27,11 @@
       {
         "claim": "Okafor est un nom personnel igbo signifiant « homme né le jour Afor ». Le dictionnaire et Nkamigbo rattachent Afor/Afọ à l'un des quatre jours de marché de la semaine igbo.",
         "claimStatus": "established",
-        "sourceRefs": ["hanks-okafor", "nkamigbo-2019-igbo-names"]
+        "sourceRefs": [
+          "hanks-okafor",
+          "nkamigbo-2019-igbo-names",
+          "ogbaa-1980-names"
+        ]
       }
     ]
   },
@@ -35,7 +39,11 @@
     {
       "peopleId": "PPL_IGBO",
       "status": "attested",
-      "sourceRefs": ["hanks-okafor", "nkamigbo-2019-igbo-names"]
+      "sourceRefs": [
+        "hanks-okafor",
+        "nkamigbo-2019-igbo-names",
+        "ogbaa-1980-names"
+      ]
     }
   ],
   "countries": [
@@ -65,6 +73,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Linda Chinelo Nkamigbo, Journal of Linguistics, Language and Culture, vol. 6, no 1, 2019. Le PDF intégral a été consulté, notamment les typologies des noms de jours de marché et les changements contemporains de noms igbo."
+    },
+    {
+      "sourceKey": "ogbaa-1980-names",
+      "title": "Names and Naming in Chinua Achebe's Novels",
+      "url": "https://ans-names.pitt.edu/ans/article/view/930",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Kalu Ogbaa, Names, vol. 28, no 4, 1980, p. 267-289 ; texte numérisé lu en entier. À la p. 269, l'auteur range Okonkwo et Okafo parmi les noms qui renvoient aux quatre jours du marché igbo, Nkwo, Eke, Oye et Afo : Okonkwo, fait de oko et de Nkwo, veut dire « garçon né le jour de marché Nkwo ». L'article étudie les noms des romans de Chinua Achebe en les rapportant à l'usage igbo."
     }
   ],
   "gaps": [
