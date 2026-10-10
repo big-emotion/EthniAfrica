@@ -1,6 +1,6 @@
 ---
 title: "Colonial periods: the reference table behind a name-history account's era"
-status: "proposed 2026-10-09; the cases below marked « ruled 2026-10-10 » are operator rulings (Sudan 1821–1885, South Africa 1959–1994, the 1877 Alur letter, and the rulings on waves 1 and 2 of the long tail, ETNI-2011)"
+status: "proposed 2026-10-09; the cases below marked « ruled 2026-10-10 » are operator rulings (Sudan 1821–1885, South Africa 1959–1994, the 1877 Alur letter, the rulings on waves 1 and 2 of the long tail, ETNI-2011, and the era of a hypothesis's publication)"
 related:
   - docs/editorial/strategy/name-history-timeline-2026-10-08.md
   - docs/editorial/strategy/name-history-priority-core.md
@@ -50,9 +50,18 @@ use one vocabulary.
    « Avant la naissance de Soundiata, selon l'épopée » → `polity`.
    An undated origin hypothesis (« Origine non datée ») or a meaning with no
    date gets no era.
-7. **A period that crosses eras gets no era**: « Depuis 1821 »,
-   « Proposée en 1887, reprise en 1994 », « XIXe siècle à aujourd'hui ».
-8. **When in doubt, leave it out** and list the account for the operator.
+7. **A hypothesis carries the era of its publication**, ruled 2026-10-10:
+   the era of the territory it is about, at the date it was published or
+   proposed. This holds everywhere, also when the period only reads
+   « Proposée en … » or « Rapporté en … ». When the period gives a first
+   proposal and a later reprise (« Proposée en 1887, reprise en 1994 »), the
+   first proposal decides. The account is still left without an era when the
+   territory is unclear, spans territories in different eras at that date,
+   or lies outside Africa (see « Europe » below), and when the period dates
+   the event the hypothesis describes rather than its publication.
+8. **A period that crosses eras gets no era**: « Depuis 1821 »,
+   « XIXe siècle à aujourd'hui ». A hypothesis follows rule 7 instead.
+9. **When in doubt, leave it out** and list the account for the operator.
    `npx tsx scripts/validateAfrikData.ts` reports every account without an era
    as a warning, never an error, so a new account is seen without failing CI.
 
@@ -243,10 +252,11 @@ open one leaves its accounts without an era, and the validator lists them.
   gave France two leagues on the estuary, not the interior: an account about
   the Fang inland stays `polity` until the later occupation.
 - **Hypotheses — ruled 2026-10-10.** A hypothesis carries the era of its
-  publication where a fiche already sets it at a place and date the table
-  settles (Livingstone in 1857 `polity`, Brown in 1895 `colonial`, as HGA
-  does). An account dated only by its proposal, « Proposée en … », and left
-  without an era, stays without one.
+  publication, everywhere (rule 7): Livingstone in 1857 on the Tswana is
+  `polity`, Brown in 1895 `colonial`, a hypothesis published in 2014 about
+  Aného `modern`. This includes accounts dated only by their proposal,
+  « Proposée en … ». The earlier rule, that such an account stays without an
+  era, is withdrawn. An undated hypothesis still carries none (rule 6).
 - **Christaller, 1881 — ruled 2026-10-10.** His dictionary covers the whole
   Akan and Ewe area, coast and interior, colony and kingdoms: an account
   about that whole area carries no era. An account about one territory
@@ -275,3 +285,30 @@ Burundi in 1903, the Fang interior of Gabon 4). Most of the 439 are undated
 origin hypotheses or meanings, which take no era by rule 6. The ones a ruling
 leaves open are listed above: the Transvaal before 1902, Eritrea 1952–1993,
 and accounts that span several territories or eras.
+
+## The hypothesis ruling, 2026-10-10
+
+Applying rule 7 set an era on 24 hypothesis accounts: 4 `polity`,
+7 `colonial`, 13 `modern`. The fiches now carry 1,769 accounts in 185
+fiches: 450 `polity`, 377 `colonial`, 527 `modern`, 415 without an era.
+
+Sixteen dated hypotheses stay without an era, for the operator:
+
+- **The area is in two eras at the date.** West Atlantic in 1965 and from the
+  late 1960s (Dalby, Sapir): Portuguese Guinea was still a colony.
+  Benue-Congo in 1962 and 1963 (Guthrie, Greenberg): the Bantu area reached
+  Angola, Mozambique and Rhodesia. Nilo-Saharan and Nilotic in 1963
+  (Greenberg): Kenya became independent only in December 1963. Berber in
+  1892 (Schirmer): Algeria and Tunisia were French, Morocco and Tripolitania
+  were not. Khoisan in 1928 (Schultze, reported by Schapera in 1930): South
+  Africa, South-West Africa and Bechuanaland. Camara and Diarra, reported by
+  Molinie in 1959: the Manden lies in Guinea, independent since 1958, and in
+  French Sudan, independent in 1960. Senegal in 1853 (Boilat): the river ran
+  through Saint-Louis and through the kingdoms upstream.
+- **The Christaller ruling.** Kwasi in 1881: a day name of the whole Akan
+  area.
+- **Transvaal before 1902, not ruled.** Magwamba in 1900 (Keane).
+- **The period dates the event, not the publication.** Lingala, « Avant
+  1901, selon cette lecture » (Mpoke Mimpongo, read in 2024); Shona,
+  « XIXe siècle » (the Zimbabwe government, undated).
+- **Europe.** _Race_, the Italian etymology proposed in 1959.
