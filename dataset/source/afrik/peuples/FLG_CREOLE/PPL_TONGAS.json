@@ -103,7 +103,8 @@
       {
         "title": "Sao Tome and Principe Demographics Profile – IndexMundi",
         "url": "https://www.indexmundi.com/sao_tome_and_principe/demographics_profile.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       }
     ]
   }

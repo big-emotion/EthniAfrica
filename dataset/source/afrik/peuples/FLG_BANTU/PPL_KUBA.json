@@ -110,7 +110,8 @@
       {
         "title": "101 Last Tribes — Kuba people",
         "url": "https://www.101lasttribes.com/tribes/kuba.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "PNAS — Genetic legacy of state centralization in the Kuba Kingdom (2018)",

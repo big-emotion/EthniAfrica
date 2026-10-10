@@ -400,7 +400,8 @@
       {
         "title": "Public Intelligence — Senegal Cultural Field Guide",
         "url": "https://info.publicintelligence.net/MCIA-SenegalCultureGuide.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "government"
       },
       {
         "title": "Glottolog — Jola",

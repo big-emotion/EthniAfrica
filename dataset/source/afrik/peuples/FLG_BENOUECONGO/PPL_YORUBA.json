@@ -111,7 +111,8 @@
       {
         "title": "Encyclopedia Africana ; Ife studies",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Ethnologue, Yoruba (yor)",

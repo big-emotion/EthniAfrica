@@ -99,12 +99,14 @@
       {
         "title": "101 Last Tribes – Luchazi people",
         "url": "https://www.101lasttribes.com/tribes/luchazi.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Orville Jenkins – The Luchazi: A Cultural Profile",
         "url": "http://orvillejenkins.com/profiles/luchazi.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project – Luchazi in Angola",

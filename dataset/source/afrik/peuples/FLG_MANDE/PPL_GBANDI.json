@@ -98,7 +98,8 @@
       {
         "title": "Grossmann – Discourse Grammar of Bandi, SIL International / The Swiss Bay",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Liberia Population and Housing Census 2022 – LISGIS",

@@ -101,7 +101,8 @@
       {
         "title": "Frederick C. Gamst — The Qemant : A Pagan-Hebraic Peasantry of Ethiopia. Holt, Rinehart and Winston, 1969",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Ethiopia Insight — The Ethiopian Qemant of the Agaw in perspective, 2019",
@@ -112,7 +113,8 @@
       {
         "title": "101 Last Tribes — Qemant people",
         "url": "https://www.101lasttribes.com/tribes/qemant.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

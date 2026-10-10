@@ -105,7 +105,8 @@
       {
         "title": "Worldometer — Lesotho population 2025",
         "url": "https://www.worldometers.info/world-population/lesotho-population/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Statistics South Africa — Census 2011",

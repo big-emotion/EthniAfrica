@@ -102,12 +102,14 @@
       {
         "title": "101 Last Tribes – Mano people of Liberia and Guinea",
         "url": "https://www.101lasttribes.com/tribes/mano.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "IndexMundi – Liberia ethnic groups, CIA World Factbook 2021",
         "url": "https://www.indexmundi.com/factbook/compare/guinea.liberia/demographics",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Scripture Earth – Mano [mev], SIL International",

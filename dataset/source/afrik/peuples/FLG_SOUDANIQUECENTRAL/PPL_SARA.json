@@ -112,17 +112,20 @@
       {
         "title": "101 Last Tribes — Sara people",
         "url": "https://www.101lasttribes.com/tribes/sara.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Qiraat Africa — The Sara people",
         "url": "https://qiraatafrican.com/en/15532/the-sara-people/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Kwekudee Trip Down Memory Lane — Sara (Kameeni) people",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2014/09/sara-kameeni-people-ancient-sun.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — Chad",

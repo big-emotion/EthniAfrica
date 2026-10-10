@@ -166,7 +166,8 @@
       {
         "title": "US Holocaust Memorial Museum — Rwanda (Divided by Ethnicity)",
         "url": "https://www.ushmm.org/genocide-prevention/countries/rwanda/divided-by-ethnicity",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Canadian Museum for Human Rights — What led to the genocide against the Tutsi",

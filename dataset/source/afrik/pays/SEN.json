@@ -511,7 +511,8 @@
       {
         "title": "Recensements nationaux sénégalais (ANSD)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "ONU – Données démographiques 2025",
@@ -558,6 +559,7 @@
         "title": "Gomes Eanes de Zurara, Chronique de Guinée, traduction de Léon Bourdon, édition scientifique de Théodore Monod et Raymond Mauny, IFAN, Dakar, 1960",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Édition où Monod et Mauny écartent l'explication wolof au profit du rattachement berbère. L'imprimé est vérifié au catalogue de la Bibliothèque nationale de France ; le passage lui-même n'a pas été lu, il est rapporté par une présentation de l'ouvrage de Saliou Kandji."
       },
       {

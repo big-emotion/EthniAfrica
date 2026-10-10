@@ -108,7 +108,8 @@
       {
         "title": "Mauritius Population 2026 – Worldometer, 2025",
         "url": "https://www.worldometers.info/world-population/mauritius-population/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       }
     ]
   }

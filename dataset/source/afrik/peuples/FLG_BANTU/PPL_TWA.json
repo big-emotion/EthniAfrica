@@ -141,7 +141,8 @@
       {
         "title": "101 Last Tribes, Twa Great Lakes",
         "url": "https://www.101lasttribes.com/tribes/twa_great_lakes.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "IWGIA (International Work Group for Indigenous Affairs), profil des Batwa des Grands Lacs",

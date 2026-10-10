@@ -114,7 +114,8 @@
       {
         "title": "Facebook – Ethnies de CI : Les Mande du Sud",
         "url": "https://www.facebook.com/ethniesdeCI/posts/2083382538349935/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

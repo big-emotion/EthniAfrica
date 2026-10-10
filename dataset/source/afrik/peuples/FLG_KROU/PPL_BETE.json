@@ -107,7 +107,8 @@
       {
         "title": "101 Last Tribes – Bete people",
         "url": "https://www.101lasttribes.com/tribes/bete.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project – Bete, Gagnoa in Côte d'Ivoire",
@@ -201,6 +202,7 @@
         "title": "Téty Gauze, Louhoy — article des Annales de l'Université d'Abidjan, série F, t. 1, 1969 ; Histoire des Magwe, Godo-Godo, numéro spécial, 1982 (références données par Dozon)",
         "url": null,
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Textes non consultés : la thèse Magwé et le groupe Gadi sont connus par le compte rendu de Jean-Pierre Dozon (La société bété, 1985, p. 43 et 353-354). Gadi est détaillé dans le texte de 1982."
       }
     ]

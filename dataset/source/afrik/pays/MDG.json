@@ -620,7 +620,8 @@
       {
         "title": "Recensements nationaux malgaches",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "ONU – Données démographiques 2025",
@@ -647,7 +648,8 @@
       {
         "title": "Encyclopédie de Madagascar",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",

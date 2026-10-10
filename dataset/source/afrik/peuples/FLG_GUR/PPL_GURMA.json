@@ -109,7 +109,8 @@
       {
         "title": "101lasttribes — Gurma people",
         "url": "https://www.101lasttribes.com/tribes/gurma.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Gourma in Burkina Faso",
@@ -136,7 +137,8 @@
       {
         "title": "Qiraat Africa — The Gurma people of West Africa",
         "url": "https://qiraatafrican.com/en/18718/the-gurma-people-of-west-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       }
     ]
   }

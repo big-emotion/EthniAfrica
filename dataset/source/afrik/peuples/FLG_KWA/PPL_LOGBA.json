@@ -85,7 +85,8 @@
       {
         "title": "Rosetta Panglossia – Logba Language lgq",
         "url": "https://rosettapanglossia.longnow.org/index.php?title=Logba_Language_%28lgq%29",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

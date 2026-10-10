@@ -90,7 +90,8 @@
       {
         "title": "Gawwada people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/gawwada.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Gawwada, Ale in Ethiopia – Joshua Project, 2025",
@@ -118,7 +119,8 @@
       {
         "title": "A Summary of the Cushite Peoples of Eastern Africa – Orville Jenkins",
         "url": "http://orvillejenkins.com/peoples/cushite.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

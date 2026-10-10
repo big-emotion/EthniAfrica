@@ -128,7 +128,8 @@
       {
         "title": "de Wit, Gert and Alie de Wit-Hasselaar. Tembo survey report. SIL International, 1995",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

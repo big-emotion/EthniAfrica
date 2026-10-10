@@ -132,7 +132,8 @@
       {
         "title": "IRCAM (Institut Royal de la Culture Amazighe)",
         "url": "https://www.ircam.ma/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "academic"
       }
     ]
   }

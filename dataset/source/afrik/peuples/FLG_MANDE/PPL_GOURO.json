@@ -90,7 +90,8 @@
       {
         "title": "Guro people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/guro.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Gouro, Kweni in Cote d'Ivoire – Joshua Project",
@@ -113,7 +114,8 @@
       {
         "title": "RTI Officiel – 2 minutes pour comprendre les Gouro, 2021",
         "url": "https://www.youtube.com/watch?v=TJc4NjTFGiw",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       }
     ]
   }

@@ -94,12 +94,14 @@
       {
         "title": "Eritrea Ministry of Information — Customs and Beliefs of the Bilen (Part I)",
         "url": "https://shabait.com/2010/10/08/customs-and-beliefs-of-the-bilenpart-i/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Trip Down Memory Lane — Bilen People: Eritrean Ethnic Group",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2014/02/bilen-people-eritrean-ethnic-group-that.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Bilen language (byn)",

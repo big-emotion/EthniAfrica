@@ -131,12 +131,14 @@
       {
         "title": "CityPopulation.de — Delta State, Nigeria",
         "url": "https://www.citypopulation.de/en/nigeria/admin/NGA010__delta/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Nigeria National Population Commission — Census 2006 and projections 2022",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Ugboh, Isi — Isoko Nation: Her Origins, Culture and Tradition. 2017",

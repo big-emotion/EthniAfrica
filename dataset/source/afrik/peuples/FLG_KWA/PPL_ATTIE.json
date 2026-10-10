@@ -122,7 +122,8 @@
       {
         "title": "101 Last Tribes : Akye",
         "url": "https://www.101lasttribes.com/tribes/akye.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Santé Tropicale : Approche anthropologique en pays Akyé",
@@ -132,7 +133,8 @@
       {
         "title": "YouTube : Le peuple Akié, comment est-il arrivé en Côte d'Ivoire ?",
         "url": "https://www.youtube.com/watch?v=Qpqx8Biibg4",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       }
     ]
   }

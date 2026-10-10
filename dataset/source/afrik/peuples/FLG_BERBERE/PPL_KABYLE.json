@@ -175,22 +175,26 @@
       {
         "title": "www.ethnologue.com/language/kab (consulté en 2024)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "glottolog.org/resource/languoid/id/kaby1243",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "en.unesco.org",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "www.cia.gov/the-world-factbook/countries/algeria",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "www.ons.dz",
@@ -200,7 +204,8 @@
       {
         "title": "algeria.unfpa.org",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "intergovernmental"
       },
       {
         "title": "The Peoples of Africa*. Oxford : Wiley-Blackwell, 1997",

@@ -111,7 +111,8 @@
       {
         "title": "City Population — Kono District Sierra Leone Census 2021",
         "url": "https://www.citypopulation.de/en/sierraleone/admin/13__kono/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Britannica — Sierra Leone cultural life (Poro and Sande societies)",
@@ -122,7 +123,8 @@
       {
         "title": "101 Last Tribes — Kono people",
         "url": "https://www.101lasttribes.com/tribes/kono.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

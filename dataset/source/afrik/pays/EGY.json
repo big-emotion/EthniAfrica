@@ -847,7 +847,8 @@
       {
         "title": "Recensements égyptiens",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Siwa Heritage Foundation",

@@ -141,12 +141,14 @@
       {
         "title": "African History Extra — A history of the Loango kingdom (ca.1500-1883)",
         "url": "https://www.africanhistoryextra.com/p/a-history-of-the-loango-kingdom-ca1500",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "101 Last Tribes — Vili people",
         "url": "https://www.101lasttribes.com/tribes/vili.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

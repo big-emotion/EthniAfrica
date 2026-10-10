@@ -107,7 +107,8 @@
       {
         "title": "Jenkins, Orville Boyd. The Tswa people of Mozambique — A Cultural Profile",
         "url": "http://orvillejenkins.com/profiles/tswa.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Tswa in Mozambique",
@@ -124,7 +125,8 @@
       {
         "title": "CLEAR Global — Language data for Mozambique",
         "url": "https://clearglobal.org/language-data-for-mozambique/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Tgsilundika Cultural Community Centre — The History of Kalanga People",

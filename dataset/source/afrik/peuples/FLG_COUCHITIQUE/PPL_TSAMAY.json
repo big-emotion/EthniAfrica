@@ -90,7 +90,8 @@
       {
         "title": "Tsemai people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/tsemai.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

@@ -83,7 +83,8 @@
       {
         "title": "101 Last Tribes – Sissala people",
         "url": "https://www.101lasttribes.com/tribes/sissala.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project – Sisaala, Tumulung in Ghana",
@@ -124,7 +125,8 @@
       {
         "title": "Ghana Statistical Service – 2021 Population and Housing Census, Sissala West District",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

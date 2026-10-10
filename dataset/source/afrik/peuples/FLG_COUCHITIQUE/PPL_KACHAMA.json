@@ -94,7 +94,8 @@
       {
         "title": "Afro-Asiatic Languages – Sorosoro, 2011",
         "url": "https://www.sorosoro.org/en/afro-asiatic-languages/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

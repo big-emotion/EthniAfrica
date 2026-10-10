@@ -107,7 +107,8 @@
       {
         "title": "101 Last Tribes – Loma people",
         "url": "https://www.101lasttribes.com/tribes/loma.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Theses.fr – Contribution a l'histoire des Loma de la Guinee forestiere (Paris 7, 1991)",
@@ -118,7 +119,8 @@
       {
         "title": "IndexMundi – Guinea ethnic groups, CIA World Factbook 2021",
         "url": "https://www.indexmundi.com/factbook/compare/guinea.liberia/demographics",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       }
     ]
   }

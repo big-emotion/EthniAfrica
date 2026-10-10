@@ -82,7 +82,8 @@
       {
         "title": "SIL International — enquête de terrain 2002, Tcholliré, Région Nord du Cameroun",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Wiktionary — Appendix:ISO 639-3 codes/Africa",

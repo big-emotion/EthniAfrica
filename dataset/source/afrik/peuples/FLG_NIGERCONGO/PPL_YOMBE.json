@@ -112,7 +112,8 @@
       {
         "title": "Smarthistory — Power Figure (Nkisi Nkondi), Kongo peoples",
         "url": "https://smarthistory.org/nkisi-nkondi-kongo-people/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Metropolitan Museum of Art — Mangaaka Power Figure (Nkisi N'Kondi)",
@@ -123,7 +124,8 @@
       {
         "title": "101 Last Tribes — Yombe people",
         "url": "https://www.101lasttribes.com/tribes/yombe.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Yombe in Congo, Democratic Republic of",

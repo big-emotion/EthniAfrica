@@ -136,7 +136,8 @@
       {
         "title": "USHMM — Divided by Ethnicity : Rwanda",
         "url": "https://www.ushmm.org/genocide-prevention/countries/rwanda/divided-by-ethnicity",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

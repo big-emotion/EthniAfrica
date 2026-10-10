@@ -102,7 +102,8 @@
       {
         "title": "Ghana Statistical Service — Greater Accra Region Census 2021",
         "url": "https://www.citypopulation.de/en/ghana/admin/03__greater_accra/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Carleton University — The Ga People and Homowo Festival (Osabu-Kle)",

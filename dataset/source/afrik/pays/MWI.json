@@ -726,7 +726,8 @@
       {
         "title": "Recensements malawiens",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples du Malawi",

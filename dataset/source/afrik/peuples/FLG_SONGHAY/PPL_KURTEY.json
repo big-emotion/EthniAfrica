@@ -108,12 +108,14 @@
       {
         "title": "101 Last Tribes — Kurtey people",
         "url": "https://www.101lasttribes.com/tribes/kurtey.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Facebook / Zarma Songhai Media — Kurtey people",
         "url": "https://www.facebook.com/ZarmaSonghai/posts/the-kurtey-peoplethe-kurtey-were-formed/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — Niger",

@@ -114,7 +114,8 @@
       {
         "title": "Qiraat Africa – The Mongo People in Congo (2024)",
         "url": "https://qiraatafrican.com/en/12635/the-mongo-people-in-congo/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Mabel Ross, On Another Day: Tales Told among the Nkundo of Zaire, Archon Books, 1979",
@@ -124,7 +125,8 @@
       {
         "title": "Vanderkerken, G., L'ethnie mongo, Institut Royal Colonial Belge, 1944",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

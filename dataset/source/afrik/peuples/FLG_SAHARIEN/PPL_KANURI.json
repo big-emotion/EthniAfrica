@@ -129,12 +129,14 @@
       {
         "title": "Qiraat African — The Kanuri people in West Africa",
         "url": "https://qiraatafrican.com/en/13870/the-kanuri-people-in-west-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "101 Last Tribes — Kanuri people",
         "url": "https://www.101lasttribes.com/tribes/kanuri.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — Nigeria, Niger, Chad, Cameroon",

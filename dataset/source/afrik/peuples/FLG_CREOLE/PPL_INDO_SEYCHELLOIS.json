@@ -89,7 +89,8 @@
       {
         "title": "Seychelles Population 2026 – World Population Review, 2025",
         "url": "https://worldpopulationreview.com/countries/seychelles",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Population of Overseas Indians – Ministry of External Affairs of India, 2023",

@@ -99,7 +99,8 @@
       {
         "title": "World Population Review — Ghana Population 2025",
         "url": "https://worldpopulationreview.com/countries/ghana",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "CIA World Factbook — Ghana",

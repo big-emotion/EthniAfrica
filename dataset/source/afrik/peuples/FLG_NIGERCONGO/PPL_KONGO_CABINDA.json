@@ -100,7 +100,8 @@
       {
         "title": "Immigration and Refugee Board of Canada — Bakongo in Angola (2024)",
         "url": "https://www.ecoi.net/en/document/2110281.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "US State Department — Angola country report (Bakongo 13% of population)",
@@ -129,7 +130,8 @@
       {
         "title": "101 Last Tribes — Kongo People (subgroups in Angola)",
         "url": "https://www.101lasttribes.com/tribes/kongo.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "The Bamoun Collection — Between Two Worlds (Woyo nkisi objects)",

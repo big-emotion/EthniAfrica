@@ -124,7 +124,8 @@
       {
         "title": "World Population Review — Burundi Population 2026",
         "url": "https://worldpopulationreview.com/countries/burundi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Rapport de la Commission internationale d'enquête pour le Burundi (ONU, 1996) — contexte génocide 1993",

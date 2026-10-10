@@ -96,7 +96,8 @@
       {
         "title": "Krachi Nchumuru District – City Population 2021",
         "url": "https://www.citypopulation.de/en/ghana/admin/oti/1508__krachi_nchumuru/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Ghana people groups, languages and religions – Joshua Project",

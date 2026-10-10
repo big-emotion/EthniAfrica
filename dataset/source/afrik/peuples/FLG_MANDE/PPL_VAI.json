@@ -115,7 +115,8 @@
       {
         "title": "Rosetta Panglossia — Vai Language (vai)",
         "url": "https://rosettapanglossia.longnow.org/index.php?title=Vai_Language_%28vai%29",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Massaquoi, Momolu. Vai History and Oral Traditions. Liberia National Archives",

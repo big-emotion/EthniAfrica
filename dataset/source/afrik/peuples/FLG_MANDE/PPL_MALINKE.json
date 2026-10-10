@@ -472,7 +472,8 @@
       {
         "title": "101 Last Tribes — Malinke people",
         "url": "https://www.101lasttribes.com/tribes/malinke.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Western Maninka in Mali",

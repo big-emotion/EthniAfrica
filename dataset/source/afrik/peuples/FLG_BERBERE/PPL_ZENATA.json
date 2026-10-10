@@ -112,12 +112,14 @@
       {
         "title": "Modéran, Yves. Les Maures et l'Afrique romaine (4e-7e siecle). Rome: Ecole francaise de Rome, 2003",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ilahiane, Hsain. Historical Dictionary of the Berbers (Imazighen). Lanham: Scarecrow Press, 2006",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Encyclopaedie Berbere — articles sur Zenata, Marinides, Zayyanides",

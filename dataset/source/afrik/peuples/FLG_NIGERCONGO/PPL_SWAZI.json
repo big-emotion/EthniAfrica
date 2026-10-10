@@ -121,12 +121,14 @@
       {
         "title": "Gillis, D. Hugh. The Kingdom of Swaziland: Studies in Political History. Greenwood Press, 1999",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Kuper, Hilda. The Swazi: A South African Kingdom. Holt, Rinehart & Winston, 1963",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Statistics South Africa — Census 2022 Statistical Release",

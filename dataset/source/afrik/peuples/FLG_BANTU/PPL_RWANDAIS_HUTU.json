@@ -163,7 +163,8 @@
       {
         "title": "US Holocaust Memorial Museum — Rwanda",
         "url": "https://www.ushmm.org/genocide-prevention/countries/rwanda/divided-by-ethnicity",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Musée de l'Holocauste Montréal — Le génocide contre les Tutsi au Rwanda",

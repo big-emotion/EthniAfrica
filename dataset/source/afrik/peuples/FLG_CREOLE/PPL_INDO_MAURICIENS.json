@@ -103,7 +103,8 @@
       {
         "title": "Mauritius Population 2025 – Worldometer",
         "url": "https://www.worldometers.info/world-population/mauritius-population/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Population Île Maurice : 1,3 million d'habitants – FairMoove, 2026",

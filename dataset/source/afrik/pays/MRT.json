@@ -710,12 +710,14 @@
       {
         "title": "Anti-Slavery International – Slavery in Mauritania",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "ngo"
       },
       {
         "title": "Recensements mauritaniens",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples de Mauritanie",

@@ -339,7 +339,8 @@
       {
         "title": "Marchese, Lynell (1984) – *Atlas linguistique kru*. Agence de coopération culturelle et technique, Université d'Abidjan",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Godé, Victor (2008) – *Le dadjriwalé, langue kru de la Côte d'Ivoire*. L'Harmattan",
@@ -394,7 +395,8 @@
       {
         "title": "Atlasocio.com (2021) – *Classement des langues krou par nombre de locuteurs*",
         "url": "https://atlasocio.com/classements/langues/familles/classement-langues-krou-par-nombre-locuteurs-total-monde.php",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Minority Rights Group International (s.d.) – *Krou in Côte d'Ivoire*",

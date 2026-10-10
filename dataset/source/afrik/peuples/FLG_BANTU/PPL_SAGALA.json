@@ -80,7 +80,8 @@
       {
         "title": "Jenkins, Orville – The Sagara (Sagala) People of Tanzania, Dr. Orville Jenkins",
         "url": "http://orvillejenkins.com/profiles/sagara.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Sagara in Tanzania – Joshua Project",

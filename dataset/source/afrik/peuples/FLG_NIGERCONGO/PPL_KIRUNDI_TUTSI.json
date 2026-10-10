@@ -131,12 +131,14 @@
       {
         "title": "World Population Review — Burundi 2025",
         "url": "https://worldpopulationreview.com/countries/burundi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "YouTube — From royal courts to modern Rwanda : The story of iconic Inyambo",
         "url": "https://www.youtube.com/watch?v=zl5Z7JNW19Y",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "SIL Ethnologue — Kirundi (run)",

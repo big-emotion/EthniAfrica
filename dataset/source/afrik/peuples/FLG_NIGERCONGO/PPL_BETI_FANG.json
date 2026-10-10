@@ -119,7 +119,8 @@
       {
         "title": "101 Last Tribes — Fang people",
         "url": "https://www.101lasttribes.com/tribes/fang.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Sociology International Journal — The Fang-Bulu-Beti (1665-1850)",
@@ -129,7 +130,8 @@
       {
         "title": "Kunzaar — The Fang People: History, Culture, Festivals",
         "url": "https://kunzaar.com.ng/fang-people-gabon-culture-history-festivals-religion/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Fang (fan)",

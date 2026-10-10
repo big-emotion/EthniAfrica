@@ -74,7 +74,8 @@
       {
         "title": "Cuis people – AFRICA 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/cuis.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Rull et al. – Genome-wide variation in the Angolan Namib Desert reveals unique Pre-Bantu ancestry, Science Advances (2023)",

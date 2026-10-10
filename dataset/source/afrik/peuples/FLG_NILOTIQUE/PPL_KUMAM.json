@@ -96,7 +96,8 @@
       {
         "title": "101 Last Tribes — Kumam people",
         "url": "https://www.101lasttribes.com/tribes/kumam.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Kumam Cultural Heritage — Clans",
@@ -106,7 +107,8 @@
       {
         "title": "Orville Jenkins — The Kumam People of Uganda",
         "url": "http://orvillejenkins.com/profiles/kumam.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Kumam, Akokolemu in Uganda",
