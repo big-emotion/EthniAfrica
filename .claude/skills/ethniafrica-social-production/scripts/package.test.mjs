@@ -216,3 +216,100 @@ test("each rendered photograph or document needs an image-rights record before d
     /image.*record/i
   );
 });
+
+test("network descriptions are complete, bounded and preserved without changing shared media", (t) => {
+  const f = packageFixture(t);
+  const n = f.config.networks[0];
+  n.alternativeText = [
+    { file: "01.png", text: "Un fond uni présente les noms." },
+  ];
+  n.capability.altMax = 30;
+  f.save();
+  createPackage(f.root, f.configPath, f.output, ["instagram", "facebook"]);
+  const copy = JSON.parse(
+    readFileSync(join(f.root, f.output, "public-copy.json"))
+  );
+  assert.deepEqual(copy.networks[0].alternativeText, [
+    n.alternativeText[0].text,
+  ]);
+  assert.notEqual(
+    copy.networks[1].alternativeText[0],
+    n.alternativeText[0].text
+  );
+  assert.doesNotThrow(() =>
+    inspectPackage(f.root, f.output, ["instagram", "facebook"])
+  );
+});
+
+test("network descriptions reject missing, duplicate, unknown, empty and excessive entries", (t) => {
+  for (const entries of [
+    [],
+    [{ file: "02.png", text: "Texte" }],
+    [{ file: "01.png", text: "" }],
+    [{ file: "01.png", text: "A".repeat(501) }],
+    [
+      { file: "01.png", text: "A" },
+      { file: "01.png", text: "B" },
+    ],
+  ]) {
+    const f = packageFixture(t);
+    f.config.networks[0].alternativeText = entries;
+    f.config.networks[0].capability.altMax = 500;
+    f.save();
+    assert.throws(
+      () =>
+        createPackage(f.root, f.configPath, f.output, [
+          "instagram",
+          "facebook",
+        ]),
+      /alternative/i
+    );
+  }
+});
+
+test("documented credit URLs do not imply a destination link, but unknown URLs are refused", (t) => {
+  const f = packageFixture(t);
+  f.config.networks[0].caption += " Crédit : https://example.org/test-image";
+  f.save();
+  assert.doesNotThrow(() =>
+    createPackage(f.root, f.configPath, f.output, ["instagram", "facebook"])
+  );
+  f.config.networks[0].caption += " https://example.org/unverified";
+  f.save();
+  assert.throws(
+    () =>
+      createPackage(f.root, f.configPath, "piece/invalid", [
+        "instagram",
+        "facebook",
+      ]),
+    /URL|link/i
+  );
+});
+
+test("license URLs need rights evidence and network alternatives still undergo language review", (t) => {
+  const f = packageFixture(t);
+  const license = "https://creativecommons.org/licenses/by-sa/4.0/";
+  f.config.networks[0].firstComment = `Licence : ${license}`;
+  f.save();
+  assert.throws(
+    () =>
+      createPackage(f.root, f.configPath, f.output, ["instagram", "facebook"]),
+    /URL|link/i
+  );
+  f.file("rights.txt", `Synthetic permission. License: ${license}`);
+  assert.doesNotThrow(() =>
+    createPackage(f.root, f.configPath, f.output, ["instagram", "facebook"])
+  );
+  f.config.networks[0].alternativeText = [
+    { file: "01.png", text: "Le corpus constitue un corpus." },
+  ];
+  f.save();
+  assert.throws(
+    () =>
+      createPackage(f.root, f.configPath, "piece/bad-alt", [
+        "instagram",
+        "facebook",
+      ]),
+    /language|editorial/i
+  );
+});

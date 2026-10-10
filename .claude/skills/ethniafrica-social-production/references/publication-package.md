@@ -24,7 +24,7 @@ changes an account. The operator still gives approval 3 for the exact delivery.
    agreed concise-caption preference or obtain it if still missing; do not invent
    an operator decision to satisfy the input.
 4. Set the link route to match the researched destination and the verified account.
-   An unavailable link is `none`, with copy rewritten accordingly. A Facebook
+   An unavailable destination link is `none`, with copy rewritten accordingly. Image source and license URLs already present in the reviewed image records or their rights evidence remain valid credit references, even with `none`; they are not website destination promises. Other URLs are refused unless they match the verified destination. A Facebook
    first-comment route includes the exact URL in that comment. A profile route
    requires evidence that the usable profile link actually reaches the verified
    destination. It is not automatically a per-publication tracking link.
@@ -61,7 +61,7 @@ Playwright and Vale dependencies. No new rendering framework is installed.
 | `design`, `assets`       | The same design and asset directories used for rendering.                                                                                                                                                                                                                                                          |
 | `research`               | The dossier approved at gate 2. It must pass delivery checks. Every rendered photograph/document/inset must have a matching `images[].file` and rights record. Shared brand provenance remains an agent review responsibility.                                                                                     |
 | `networks`               | Exactly one adaptation per selected network, with no omitted or extra target.                                                                                                                                                                                                                                      |
-| Adaptation               | `network`, nonempty `caption`, explicit `firstComment` string or null, `link`, `capability`; TikTok also requires `captionPreference`.                                                                                                                                                                             |
+| Adaptation               | `network`, nonempty `caption`, explicit `firstComment` string or null, `link`, `capability`; TikTok also requires `captionPreference`. Optional `alternativeText` is a complete array of `{file, text}` entries, one per exported image.                                                                           |
 | `link`                   | `placement`: `none`, `profile`, `first-comment` or `caption`; all non-none routes need the exact verified destination `url`.                                                                                                                                                                                       |
 | `capability`             | `account`, `checkedAt`, `observation`, local `evidence`, `format: "photo-carousel"`, positive `maxCards`, `captionMax`; `commentMax` when a first comment exists.                                                                                                                                                  |
 | Accessibility capability | `altRoute`: `native`, `description` or `unavailable`; `altInstruction` for the operator. Native insertion requires `altMax`. Description insertion requires every exact image description already in the caption. Unavailable insertion retains descriptions and the verified limitation in the delivery document. |
@@ -107,7 +107,7 @@ source, rights or substantive image change returns to the affected earlier stage
 
 Verification refuses changed/missing/reordered media, stale rendering dependencies,
 changed text, evidence, an incomplete file list, an unverified destination or
-mismatched networks. The helper does not silently truncate descriptions or copy.
+mismatched networks. The helper does not silently truncate descriptions or copy. Network-specific descriptions are supplied explicitly, checked against that network’s limit, included in the exact public-copy check and fingerprinted with the input. The original full descriptions remain available with the card text; review shortened versions for meaning and uncertainty.
 Legacy final approvals without a verified package reopen delivery on recovery.
 
 A new revision is assembled under a lock and staging directory, checked completely

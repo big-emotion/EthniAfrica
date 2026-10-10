@@ -61,6 +61,28 @@ function limit(value, max, label) {
   if ([...value].length > max)
     fail(`${label} exceeds the verified account limit`);
 }
+function urls(value) {
+  return (value.match(/https?:\/\/[^\s<>"`]+/g) ?? []).map((url) =>
+    url.replace(/[.,;]+$/, "")
+  );
+}
+function networkMedia(media, alternatives) {
+  if (alternatives === undefined) return media;
+  if (
+    !Array.isArray(alternatives) ||
+    alternatives.length !== media.length ||
+    new Set(alternatives.map((a) => a?.file)).size !== media.length ||
+    alternatives.some((a) => !media.some((m) => m.file === a?.file))
+  )
+    fail("Network alternative text must cover each image exactly once");
+  return media.map((m) => ({
+    ...m,
+    alt: text(
+      alternatives.find((a) => a.file === m.file).text,
+      "Alternative text"
+    ),
+  }));
+}
 function run(script, args) {
   try {
     return execFileSync(process.execPath, [script, ...args], {
@@ -134,6 +156,12 @@ function assemble(root, configFile, networks) {
   });
   const sourceInput = JSON.parse(read(config.input));
   const dossier = JSON.parse(read(config.research));
+  const creditUrls = new Set(
+    dossier.images.flatMap((i) => [
+      i.sourcePage,
+      ...urls(read(i.rightsEvidence).toString("utf8")),
+    ])
+  );
   for (const card of sourceInput.cards) {
     for (const asset of [
       card.image?.src,
@@ -154,6 +182,7 @@ function assemble(root, configFile, networks) {
     networks: [],
   };
   for (const n of config.networks) {
+    const adaptedMedia = networkMedia(media, n.alternativeText);
     if (
       !["instagram", "facebook", "tiktok", "youtube", "x"].includes(n.network)
     )
@@ -175,10 +204,10 @@ function assemble(root, configFile, networks) {
       fail("Verified alternative text route is required");
     text(c.altInstruction, "Alternative text instruction");
     if (c.altRoute === "native")
-      for (const m of media) limit(m.alt, c.altMax, "alternative text");
+      for (const m of adaptedMedia) limit(m.alt, c.altMax, "alternative text");
     if (
       c.altRoute === "description" &&
-      !media.every((m) => n.caption.includes(m.alt))
+      !adaptedMedia.every((m) => n.caption.includes(m.alt))
     )
       fail("Description must contain the complete alternative text");
     if (n.network === "tiktok") {
@@ -230,18 +259,20 @@ function assemble(root, configFile, networks) {
       }
       if (link.placement === "profile")
         instruction = `Le lien du profil a été vérifié : ${link.url}`;
-    } else if (
-      n.caption.includes("https://") ||
-      n.firstComment?.includes("https://")
-    )
-      fail("Copy includes a URL but declares no link route");
+    }
+    for (const url of urls(`${n.caption}\n${n.firstComment ?? ""}`))
+      if (
+        !creditUrls.has(url) &&
+        !(link.placement !== "none" && url === link.url)
+      )
+        fail("Copy includes an undocumented URL or declares no link route");
     blocks.push(
-      `## ${n.network}\n\n### Légende\n\n${n.caption}\n\n### Premier commentaire\n\n${n.firstComment ?? "Aucun"}\n\n### Placement du lien\n\n${instruction}\n\n### Accessibility\n\n${c.altInstruction}\n\n${media.map((m) => `**${m.file}**\n\n${m.alt}`).join("\n\n")}`
+      `## ${n.network}\n\n### Légende\n\n${n.caption}\n\n### Premier commentaire\n\n${n.firstComment ?? "Aucun"}\n\n### Placement du lien\n\n${instruction}\n\n### Accessibility\n\n${c.altInstruction}\n\n${adaptedMedia.map((m) => `**${m.file}**\n\n${m.alt}`).join("\n\n")}`
     );
     publicCopy.networks.push({
       caption: n.caption,
       comment: n.firstComment ?? "Aucun",
-      alternativeText: media.map((m) => m.alt),
+      alternativeText: adaptedMedia.map((m) => m.alt),
     });
   }
   const bibliography = dossier.sources
