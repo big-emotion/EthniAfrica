@@ -143,5 +143,170 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kanuri désigne un peuple du bassin du lac Tchad, au Nigeria, au Niger, au Tchad et au Cameroun, qui se nomme lui-même Kanuri. Ses voisins haoussa l'appelaient Barebari ou Beriberi. Nous n'avons pas trouvé de source qui explique le sens premier du nom Kanuri ; ce que nous savons de son histoire est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Kanuri",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kau",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; il apparaît par écrit au XVIIIe siècle.",
+        "periodLabel": "Écrit dès le XVIIIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Kanuri désigne le groupe qui dominait le Borno et sur lequel reposait le pouvoir des rois sefuwa, selon Bawuro M. Barkindo. Ce groupe est né des mariages entre les Magumi venus du Kanem et les peuples de langues tchadiques du Borno. Nous n'avons pas trouvé de source qui explique d'où vient le mot lui-même.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 17 : Kānem-Borno: its relations with the Mediterranean Sea, Bagirmi and other states in the Chad basin",
+                "author": "Bawuro M. Barkindo",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 504",
+                "notes": "Édition anglaise de l'UNESCO, copie non officielle mise en ligne par South African History Online. Lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "Livre publié en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Kanuri est à la fois celui du peuple et celui de sa langue, écrit Sigismund Koelle, tandis que Bornu est le nom du pays. Un homme dit de lui-même « wuma Kanuri », « je suis un Kanuri », ou bien « je suis du Bornu », d'après Ali Eisami, l'informateur de Koelle, originaire du Gazir.",
+            "formAsWritten": "Kanuri",
+            "sources": [
+              {
+                "title": "Grammar of the Bórnu or Kānurī language",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/grammarofbrnuo00koelrich",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. vi-vii",
+                "notes": "Londres, 1854. Grammaire établie avec Ali Eisami, originaire du Gazir, une province du Bornu. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1776,
+              "label": "XVIIIe siècle, avant 1776"
+            },
+            "era": "polity",
+            "statement": "Le nom Kanuri apparaît pour la première fois dans un poème satirique de Muhammad al-Tahir ibn Ibrahim al-Fallati, mort en 1776, que cite Muhammad Bello, selon Bawuro M. Barkindo. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Muhammad al-Tahir ibn Ibrahim al-Fallati",
+                "role": "écrit le poème où figure ce nom"
+              },
+              {
+                "name": "Muhammad Bello",
+                "role": "cite ce poème"
+              }
+            ],
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 17 : Kānem-Borno: its relations with the Mediterranean Sea, Bagirmi and other states in the Chad basin",
+                "author": "Bawuro M. Barkindo",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 504, note 64",
+                "notes": "Édition anglaise de l'UNESCO, copie non officielle mise en ligne par South African History Online. Lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1630,
+              "label": "Début du XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Kanuri serait entré en usage au début du XVIIe siècle, selon Bawuro M. Barkindo. C'est l'époque où les Kanuri s'affirment comme un groupe à la culture distincte, sous les quatre successeurs du roi Idris Alawoma.",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 17 : Kānem-Borno: its relations with the Mediterranean Sea, Bagirmi and other states in the Chad basin",
+                "author": "Bawuro M. Barkindo",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 504",
+                "notes": "Édition anglaise de l'UNESCO, copie non officielle mise en ligne par South African History Online. Lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1210,
+              "to": 1248,
+              "label": "XIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Kanuri n'est pas encore attesté. Les Magumi, le lignage des rois sefuwa du Kanem, forment alors peu à peu le noyau du peuple qu'on appellera Kanuri, selon Dierk Lange. Le royaume du Kanem est plus ancien que ce peuple.",
+            "before": true,
+            "sources": [
+              {
+                "title": "General History of Africa, IV, ch. 10 : The kingdoms and peoples of Chad",
+                "author": "Dierk Lange",
+                "year": 1984,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_iv.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 246",
+                "notes": "Édition anglaise de l'UNESCO, copie non officielle mise en ligne par South African History Online. Lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Barebari",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "hau",
+        "namedBy": "Les Haoussa",
+        "shortLine": "Le nom que les Haoussa donnaient à tous les peuples du Kanem-Bornu ; on écrit aussi Beriberi.",
+        "periodLabel": "Avant l'époque moderne",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'époque moderne"
+            },
+            "statement": "Le nom Barebari, ou Beriberi, désignait chez les Haoussa tous les peuples de l'empire du Kanem-Bornu, selon Mahdi Adamu. Les noms Kanembu ou Kanuri y étaient alors peu connus. Comme les souverains, les marchands et les lettrés musulmans du Bornu en relation avec le pays haoussa étaient surtout kanuri, des traits de la culture kanuri ont fini par représenter les Beriberi.",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, ch. 11 : The Hausa and their neighbours in the central Sudan",
+                "author": "Mahdi Adamu",
+                "year": 1984,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_iv.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 279",
+                "notes": "Édition anglaise de l'UNESCO, copie non officielle mise en ligne par South African History Online. Lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
