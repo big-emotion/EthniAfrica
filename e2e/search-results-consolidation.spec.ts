@@ -50,6 +50,14 @@ async function noHorizontalScroll(page: import("@playwright/test").Page) {
   );
 }
 
+// The answer lives under « Tout »: the default lens is the name history
+// whenever a searched subject carries one (REQ-198), as Yoruba's people does.
+async function openAnswerLens(page: import("@playwright/test").Page) {
+  const all = page.getByRole("button", { name: "Tout", exact: true });
+  await all.click();
+  await expect(all).toHaveAttribute("aria-pressed", "true");
+}
+
 test.describe("SERP title and answer rule (REQ-178, DEC-057)", () => {
   // @req REQ-124
   test("shows the brand title before any query is run", async ({ page }) => {
@@ -65,6 +73,16 @@ test.describe("SERP title and answer rule (REQ-178, DEC-057)", () => {
   }) => {
     await page.goto(`${SERP_URL}?q=${encodeURIComponent(DISAMBIGUATED_QUERY)}`);
     const headings = page.getByRole("heading", { level: 1 });
+    // The page opens on « Histoire du nom » once the Yoruba people carries a
+    // name history (#1622, REQ-198). That lens must not crown the subject it
+    // has a history for either: the shared name stays the one title.
+    await expect(
+      page.getByRole("button", { name: "Histoire du nom" })
+    ).toHaveAttribute("aria-pressed", "true");
+    await expect(headings).toHaveCount(1);
+    await expect(headings.first()).toContainText(DISAMBIGUATED_QUERY);
+
+    await openAnswerLens(page);
     await expect(headings).toHaveCount(1);
     await expect(headings.first()).toContainText(DISAMBIGUATED_QUERY);
 
@@ -125,8 +143,11 @@ test.describe("SERP one-column answer rule (REQ-178, DEC-057)", () => {
       // answer's blocks in its flow. What DEC-057 rules out — the answer
       // pinned or floated out of the normal flow — is what stays asserted.
       const layout = page.getByTestId("feed-layout");
-      const answer = page.locator('[data-feed-block="answer-what"]').first();
       await expect(layout).toBeVisible();
+      expect(await noHorizontalScroll(page)).toBe(true);
+
+      await openAnswerLens(page);
+      const answer = page.locator('[data-feed-block="answer-what"]').first();
       await expect(answer).toBeVisible();
 
       const position = await answer.evaluate(
