@@ -6,6 +6,572 @@
   "summary": "L'Égypte s'appelle « Miṣr » en arabe depuis l'Antiquité, et « Kemet », la terre noire, dans la langue des pharaons ; « Égypte » est un mot grec passé par le nom d'un temple de Memphis. Ancien, Moyen et Nouvel Empire, période ptolémaïque, conquête arabe puis domination ottomane s'y sont succédé. Arabophones, Coptes, Siwi et Beja y composent l'une des plus longues continuités culturelles du monde.",
   "etymology": "Le nom \"Égypte\" viendrait du grec \"Aigyptos\", qui serait lui-même dérivé de \"Hikuptah\" (nom d'un temple de Memphis). Le nom arabe \"Miṣr\" (مصر) voudrait dire \"pays\" ou \"frontière\" ; il est utilisé depuis l'Antiquité. L'ancien nom égyptien était \"Kemet\" (terre noire).",
   "nameOriginActor": "Le nom \"Égypte\" a été donné par les Grecs. Le nom arabe \"Miṣr\" est utilisé depuis la conquête arabe (VIIe siècle).",
+  "nameHistory": {
+    "summary": "Le nom Égypte désigne un pays d'Afrique du Nord-Est, la République arabe d'Égypte, qui se nomme elle-même Miṣr en arabe. Dans l'Antiquité, ses habitants se désignaient par un autre nom, Kmt. De 1958 à 1971, l'État a aussi porté le nom de République arabe unie. Les sources ne s'accordent pas toujours sur l'origine et le sens de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Égypte",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Grecs donnaient au pays ; ses habitants l'appellent Miṣr en arabe.",
+        "periodLabel": "Écrit dès Homère ; nom de l'État depuis 1922",
+        "accounts": [
+          {
+            "period": {
+              "from": 2014,
+              "to": null,
+              "label": "Depuis la Constitution de 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Égypte est celui de la République arabe d'Égypte, le nom que donne à l'État l'article premier de sa Constitution de 2014. En arabe, le pays se nomme Miṣr, selon la liste des noms de pays des Nations unies.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Égypte, Constitution de 2014",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/eg2014.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "article premier",
+                "notes": "Version française consultée le 10 octobre 2026. « La République arabe d'Égypte est un État, souverain, un et indivisible. »"
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG (document GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordination Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 33",
+                "notes": "Entrée Égypte, consultée le 10 octobre 2026. Nom court officiel en arabe, romanisé : Miṣr ; nom long : Jumhūriyyat Miṣr al-ʿArabiyyah ; nom français à l'ONU : Égypte, République arabe d'Égypte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Égypte désigne aujourd'hui un État d'Afrique du Nord-Est. Il nous vient du grec Aigyptos, qui désigne chez Homère d'abord le Nil, puis le pays. D'où vient ce mot grec reste une supposition ; nous la présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Die El-Amarna-Tafeln, seconde partie : commentaires et index",
+                "author": "J. A. Knudtzon, avec Otto Weber et Erich Ebeling",
+                "year": 1915,
+                "url": "https://archive.org/details/dieelamarnatafel02knud",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1173-1174",
+                "notes": "Leipzig, Hinrichs, 1915, en allemand, lu dans l'exemplaire numérisé. Commentaire de la lettre 84, ligne 37 : Hikuptah rend en écriture cunéiforme le nom sacré de la ville de Memphis, Ḥt-kꜣ-ptḥ. La supposition, due à l'égyptologue Heinrich Brugsch, que le grec Aigyptos vienne de ce nom a gagné en vraisemblance avec cette lettre, selon l'historien Eduard Meyer. Chez Homère, Aigyptos désigne d'abord le fleuve, puis aussi le pays dans les chants consacrés à Télémaque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1971,
+              "label": "Septembre 1971"
+            },
+            "era": "modern",
+            "statement": "Le nom Égypte revient dans le nom officiel de l'État : le pays garde le nom de République arabe unie jusqu'au 2 septembre 1971, selon Ali A. Mazrui, puis sa Constitution du 11 septembre 1971 l'appelle République arabe d'Égypte.",
+            "formAsWritten": "République Arabe d'Égypte",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique… »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 128, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Tableau chronologique des indépendances, ligne Égypte : indépendante le 28 février 1922 de la Grande-Bretagne ; forme avec la Syrie la République arabe unie du 1er février 1958 au 28 septembre 1961 ; « conserve le nom de République arabe unie jusqu'au 2 septembre 1971 »."
+              },
+              {
+                "title": "Égypte, Constitution du 11 septembre 1971",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/eg1971.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "article premier",
+                "notes": "Version française consultée le 10 octobre 2026. « La République Arabe d'Égypte est un État démocratique fondé sur la citoyenneté. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "19 avril 1923"
+            },
+            "era": "modern",
+            "statement": "Le nom Égypte est celui de l'État souverain que proclame la Constitution du 19 avril 1923, un an après que la Grande-Bretagne a renoncé à son protectorat, le 28 février 1922, selon la Digithèque de l'université de Perpignan et Ali A. Mazrui.",
+            "sources": [
+              {
+                "title": "Égypte, Constitution du 19 avril 1923",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/eg1923.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "article premier",
+                "notes": "Version française consultée le 10 octobre 2026. « L'Égypte est un État souverain, libre et indépendant. »"
+              },
+              {
+                "title": "Égypte, présentation et chronologie",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/eg.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chronologie",
+                "notes": "Page de présentation consultée le 10 octobre 2026. Elle date la fin du protectorat britannique du 28 février 1922, la proclamation de la République du 18 juin 1953, la création de la République arabe unie avec la Syrie en 1958, et note en 1971 la « reprise du nom d'Égypte »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique… »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 128, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Tableau chronologique des indépendances, ligne Égypte : indépendante le 28 février 1922 de la Grande-Bretagne ; forme avec la Syrie la République arabe unie du 1er février 1958 au 28 septembre 1961 ; « conserve le nom de République arabe unie jusqu'au 2 septembre 1971 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Épopées d'Homère"
+            },
+            "statement": "Le nom Égypte s'écrit Aigyptos chez Homère : il y désigne d'abord le fleuve, puis aussi le pays dans les chants de l'Odyssée consacrés à Télémaque, selon le commentaire de l'édition des lettres d'Amarna de J. A. Knudtzon.",
+            "sources": [
+              {
+                "title": "Die El-Amarna-Tafeln, seconde partie : commentaires et index",
+                "author": "J. A. Knudtzon, avec Otto Weber et Erich Ebeling",
+                "year": 1915,
+                "url": "https://archive.org/details/dieelamarnatafel02knud",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1173-1174",
+                "notes": "Leipzig, Hinrichs, 1915, en allemand, lu dans l'exemplaire numérisé. Commentaire de la lettre 84, ligne 37 : Hikuptah rend en écriture cunéiforme le nom sacré de la ville de Memphis, Ḥt-kꜣ-ptḥ. La supposition, due à l'égyptologue Heinrich Brugsch, que le grec Aigyptos vienne de ce nom a gagné en vraisemblance avec cette lettre, selon l'historien Eduard Meyer. Chez Homère, Aigyptos désigne d'abord le fleuve, puis aussi le pays dans les chants consacrés à Télémaque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -1399,
+              "to": -1300,
+              "label": "XIVe siècle avant notre ère"
+            },
+            "era": "polity",
+            "statement": "Le nom Égypte a peut-être une forme proche, Hikuptah, dans une lettre d'Amarna, écrite au pharaon par Rib-Addi, prince de Gubla : c'est le nom sacré de la ville de Memphis, selon l'édition de J. A. Knudtzon. C'est la plus ancienne trace de cette forme que le projet connaît ; les sources lues ne tranchent pas s'il s'agit du même nom. Le pays existait bien avant ce nom grec.",
+            "formAsWritten": "hi-ku-up-ta-ah",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die El-Amarna-Tafeln, première partie : texte et traduction",
+                "author": "J. A. Knudtzon",
+                "year": 1915,
+                "url": "https://archive.org/details/dieelamarnatafel01knud",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 406-407 (lettre n° 84, ligne 37)",
+                "notes": "Leipzig, Hinrichs, 1915, en allemand, lu dans l'exemplaire numérisé. Lettre de Rib-Addi, prince de Gubla, au pharaon : « Gubla ist wie Hikuptah für den König », Gubla est pour le roi comme Hikuptah."
+              },
+              {
+                "title": "Die El-Amarna-Tafeln, seconde partie : commentaires et index",
+                "author": "J. A. Knudtzon, avec Otto Weber et Erich Ebeling",
+                "year": 1915,
+                "url": "https://archive.org/details/dieelamarnatafel02knud",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1173-1174",
+                "notes": "Leipzig, Hinrichs, 1915, en allemand, lu dans l'exemplaire numérisé. Commentaire de la lettre 84, ligne 37 : Hikuptah rend en écriture cunéiforme le nom sacré de la ville de Memphis, Ḥt-kꜣ-ptḥ. La supposition, due à l'égyptologue Heinrich Brugsch, que le grec Aigyptos vienne de ce nom a gagné en vraisemblance avec cette lettre, selon l'historien Eduard Meyer. Chez Homère, Aigyptos désigne d'abord le fleuve, puis aussi le pays dans les chants consacrés à Télémaque."
+              },
+              {
+                "title": "A History of Ethiopia, Nubia and Abyssinia, volume I",
+                "author": "E. A. Wallis Budge",
+                "year": 1928,
+                "url": "https://archive.org/details/in.ernet.dli.2015.499166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. Budge date les tablettes d'Amarna du XIVe siècle avant notre ère."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque pharaonique"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Égypte, les Égyptiens de l'époque pharaonique se désignent eux-mêmes par un seul terme, kmt, selon Cheikh Anta Diop.",
+            "formAsWritten": "kmt",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 1 : Origine des anciens Égyptiens",
+                "author": "Cheikh Anta Diop",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 61-62",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Les Égyptiens n'avaient qu'un terme pour se désigner eux-mêmes : kmt » ; Diop le forme sur km, « noir », et le traduit par « les Nègres », « et pour le moins les Noirs ». Il rapporte que les spécialistes préfèrent lire « la terre noire (à cause du limon) » ou « le pays noir »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Égypte viendrait de Ḥt-kꜣ-ptḥ, le nom sacré de la ville de Memphis, que les lettres d'Amarna écrivent Hikuptah : c'est la supposition de l'égyptologue Heinrich Brugsch, rapportée dans l'édition de J. A. Knudtzon, qui ajoute que l'historien Eduard Meyer la jugeait devenue un peu plus probable.",
+            "hypothesisGroup": "origine du nom Égypte",
+            "sources": [
+              {
+                "title": "Die El-Amarna-Tafeln, seconde partie : commentaires et index",
+                "author": "J. A. Knudtzon, avec Otto Weber et Erich Ebeling",
+                "year": 1915,
+                "url": "https://archive.org/details/dieelamarnatafel02knud",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1173-1174",
+                "notes": "Leipzig, Hinrichs, 1915, en allemand, lu dans l'exemplaire numérisé. Commentaire de la lettre 84, ligne 37 : Hikuptah rend en écriture cunéiforme le nom sacré de la ville de Memphis, Ḥt-kꜣ-ptḥ. La supposition, due à l'égyptologue Heinrich Brugsch, que le grec Aigyptos vienne de ce nom a gagné en vraisemblance avec cette lettre, selon l'historien Eduard Meyer. Chez Homère, Aigyptos désigne d'abord le fleuve, puis aussi le pays dans les chants consacrés à Télémaque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Miṣr",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom arabe du pays, que des lettres du XIVe siècle avant notre ère écrivent déjà sous une forme proche.",
+        "periodLabel": "Forme proche dès le XIVe siècle avant notre ère ; nom de l'État en arabe aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Miṣr est le nom du pays en arabe, sa langue officielle ; le nom long de l'État est Jumhūriyyat Miṣr al-ʿArabiyyah, la République arabe d'Égypte, selon la liste des noms de pays des Nations unies.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Liste des noms de pays du GENUNG (document GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordination Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 33",
+                "notes": "Entrée Égypte, consultée le 10 octobre 2026. Nom court officiel en arabe, romanisé : Miṣr ; nom long : Jumhūriyyat Miṣr al-ʿArabiyyah ; nom français à l'ONU : Égypte, République arabe d'Égypte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Miṣr désigne l'Égypte en arabe. Le même mot, miṣr, désigne aussi le centre politique et militaire d'une province, une grande ville ou une capitale ; la ville fondée par les conquérants arabes au bord du Nil s'appelle ainsi Fusṭāṭ-Miṣr. Les sources que nous avons lues ne retracent pas l'origine de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, glossaire de termes étrangers",
+                "author": "Comité scientifique international pour la rédaction d'une Histoire générale de l'Afrique",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 930",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek. « miṣr (pl. amṣār) : centre politique et militaire d'une province ou d'un pays ; grande ville ; capitale. »"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 7 : L'Égypte depuis la conquête arabe jusqu'à la fin de l'Empire fatimide (1171)",
+                "author": "Thierry Bianquis",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 191",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek. La ville fondée par les conquérants arabes près de Babylone d'Égypte est appelée « Fusṭāṭ, ou Fusṭāṭ-Miṣr »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Bible hébraïque"
+            },
+            "statement": "Le nom Miṣr a une forme proche dans la Bible hébraïque : la table des peuples de la Genèse nomme l'Égypte Mizraïm, à côté de Koush, selon E. A. Wallis Budge.",
+            "sources": [
+              {
+                "title": "A History of Ethiopia, Nubia and Abyssinia, volume I",
+                "author": "E. A. Wallis Budge",
+                "year": 1928,
+                "url": "https://archive.org/details/in.ernet.dli.2015.499166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. « The ethnological table in Genesis (x. 6) couples Kush with Mizraim (Egypt). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -1399,
+              "to": -1300,
+              "label": "XIVe siècle avant notre ère"
+            },
+            "era": "polity",
+            "statement": "Le nom Miṣr a une forme proche, misri, écrite mi-iṣ-ri, dans les lettres d'Amarna, où elle désigne l'Égypte, selon l'index de l'édition de J. A. Knudtzon. C'est la plus ancienne trace de cette forme que le projet connaît ; les sources lues ne disent pas si c'est déjà le même nom. Le pays qu'elle désigne existait bien avant ces lettres.",
+            "formAsWritten": "mi-iṣ-ri",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die El-Amarna-Tafeln, seconde partie : commentaires et index",
+                "author": "J. A. Knudtzon, avec Otto Weber et Erich Ebeling",
+                "year": 1915,
+                "url": "https://archive.org/details/dieelamarnatafel02knud",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1578",
+                "notes": "Leipzig, Hinrichs, 1915, en allemand, lu dans l'exemplaire numérisé. Index des noms de lieux : « mâtu misri, Ägypten », écrit mi-iṣ-ri dans des dizaines de lettres ; la tablette du Mitanni écrit mi-zi-ir-ri et mu-ṣir-ri."
+              },
+              {
+                "title": "A History of Ethiopia, Nubia and Abyssinia, volume I",
+                "author": "E. A. Wallis Budge",
+                "year": 1928,
+                "url": "https://archive.org/details/in.ernet.dli.2015.499166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. Budge date les tablettes d'Amarna du XIVe siècle avant notre ère."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République arabe unie",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Du 1er février 1958 au 2 septembre 1971",
+        "accounts": [
+          {
+            "period": {
+              "from": 1961,
+              "to": 1971,
+              "label": "Du 28 septembre 1961 au 2 septembre 1971"
+            },
+            "era": "modern",
+            "statement": "Le nom République arabe unie reste celui de l'Égypte après le départ de la Syrie, le 28 septembre 1961, jusqu'au 2 septembre 1971, selon Ali A. Mazrui.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique… »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 128, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Tableau chronologique des indépendances, ligne Égypte : indépendante le 28 février 1922 de la Grande-Bretagne ; forme avec la Syrie la République arabe unie du 1er février 1958 au 28 septembre 1961 ; « conserve le nom de République arabe unie jusqu'au 2 septembre 1971 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "1er février 1958"
+            },
+            "era": "modern",
+            "statement": "Le nom République arabe unie naît de l'union de l'Égypte et de la Syrie, le 1er février 1958, selon Ali A. Mazrui ; un référendum approuve cette union le 22 février, selon la Digithèque de l'université de Perpignan. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique… »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 128, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Tableau chronologique des indépendances, ligne Égypte : indépendante le 28 février 1922 de la Grande-Bretagne ; forme avec la Syrie la République arabe unie du 1er février 1958 au 28 septembre 1961 ; « conserve le nom de République arabe unie jusqu'au 2 septembre 1971 »."
+              },
+              {
+                "title": "Égypte, présentation et chronologie",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/eg.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chronologie",
+                "notes": "Page de présentation consultée le 10 octobre 2026. Elle date la fin du protectorat britannique du 28 février 1922, la proclamation de la République du 18 juin 1953, la création de la République arabe unie avec la Syrie en 1958, et note en 1971 la « reprise du nom d'Égypte »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kmt",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "egy",
+        "namedBy": null,
+        "periodLabel": "Époque pharaonique",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque pharaonique"
+            },
+            "era": "polity",
+            "statement": "Le nom Kmt est le seul terme par lequel les Égyptiens de l'époque pharaonique se désignent eux-mêmes, selon Cheikh Anta Diop. Le mot se rattache à km, « noir » ; P. Diagne l'écrit kemit et lui donne le sens de « brûlé, noir ». Les sources que nous avons lues ne datent pas sa plus ancienne trace.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 1 : Origine des anciens Égyptiens",
+                "author": "Cheikh Anta Diop",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 61-62",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Les Égyptiens n'avaient qu'un terme pour se désigner eux-mêmes : kmt » ; Diop le forme sur km, « noir », et le traduit par « les Nègres », « et pour le moins les Noirs ». Il rapporte que les spécialistes préfèrent lire « la terre noire (à cause du limon) » ou « le pays noir »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 10, partie I : Histoire et linguistique",
+                "author": "P. Diagne",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 262",
+                "notes": "UNESCO, volume dirigé par J. Ki-Zerbo. « L'égyptien “kemit” a signifié brûlé, noir. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Kmt désigne, selon les lectures, le pays d'Égypte ou son peuple. Son sens a été discuté au colloque du Caire de 1974, sans accord ; nous présentons les deux lectures plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, rapport de synthèse du colloque « Le peuplement de l'Égypte ancienne et le déchiffrement de l'écriture méroïtique »",
+                "author": "Comité scientifique international pour la rédaction d'une Histoire générale de l'Afrique",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 804",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Colloque tenu au Caire du 28 janvier au 3 février 1974. Serge Sauneron y explique que kmtyw veut dire « ceux de Kmt », « les habitants de Kmt » (« le pays noir »), un nom formé sur un nom de lieu."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, rapport de synthèse du colloque « Le peuplement de l'Égypte ancienne et le déchiffrement de l'écriture méroïtique »",
+                "author": "Comité scientifique international pour la rédaction d'une Histoire générale de l'Afrique",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 818",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Abdelgadir M. Abdalla lit kmtyu comme le pluriel de kmty, « Égyptien », formé sur kmt, « pays noir, c'est-à-dire Égypte » ; Serge Sauneron se range à cette lecture, contre celle de Cheikh Anta Diop."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Kmt voudrait dire « les Noirs », c'est-à-dire tout le peuple d'Égypte : c'est un nom collectif formé sur km, « noir », selon Cheikh Anta Diop.",
+            "hypothesisGroup": "sens du nom Kmt",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 1 : Origine des anciens Égyptiens",
+                "author": "Cheikh Anta Diop",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 61-62",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Les Égyptiens n'avaient qu'un terme pour se désigner eux-mêmes : kmt » ; Diop le forme sur km, « noir », et le traduit par « les Nègres », « et pour le moins les Noirs ». Il rapporte que les spécialistes préfèrent lire « la terre noire (à cause du limon) » ou « le pays noir »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Kmt voudrait dire « le pays noir », c'est-à-dire l'Égypte, peut-être pour la terre noire du limon ; ses habitants seraient les kmtyw, « ceux de Kmt », selon l'égyptologue Serge Sauneron et Abdelgadir M. Abdalla.",
+            "hypothesisGroup": "sens du nom Kmt",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, rapport de synthèse du colloque « Le peuplement de l'Égypte ancienne et le déchiffrement de l'écriture méroïtique »",
+                "author": "Comité scientifique international pour la rédaction d'une Histoire générale de l'Afrique",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 804",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Colloque tenu au Caire du 28 janvier au 3 février 1974. Serge Sauneron y explique que kmtyw veut dire « ceux de Kmt », « les habitants de Kmt » (« le pays noir »), un nom formé sur un nom de lieu."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, rapport de synthèse du colloque « Le peuplement de l'Égypte ancienne et le déchiffrement de l'écriture méroïtique »",
+                "author": "Comité scientifique international pour la rédaction d'une Histoire générale de l'Afrique",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 818",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Abdelgadir M. Abdalla lit kmtyu comme le pluriel de kmty, « Égyptien », formé sur kmt, « pays noir, c'est-à-dire Égypte » ; Serge Sauneron se range à cette lecture, contre celle de Cheikh Anta Diop."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 1 : Origine des anciens Égyptiens",
+                "author": "Cheikh Anta Diop",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 61-62",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Les Égyptiens n'avaient qu'un terme pour se désigner eux-mêmes : kmt » ; Diop le forme sur km, « noir », et le traduit par « les Nègres », « et pour le moins les Noirs ». Il rapporte que les spécialistes préfèrent lire « la terre noire (à cause du limon) » ou « le pays noir »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

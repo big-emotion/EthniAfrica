@@ -6,6 +6,355 @@
   "summary": "Le Botswana tire son nom du peuple tswana, avec le préfixe bo- : « pays des Tswana » est la traduction que retiennent les institutions du pays, mais ce que signifie « Tswana » n'est pas établi, et un lexicographe de l'université du Botswana écrit qu'il n'existe là-dessus que des conjectures. Le nom n'a pas été forgé à l'indépendance : il est proposé à l'Assemblée législative du Bechuanaland en décembre 1965, et une forme en Bo- est relevée comme auto-désignation dès 1801. San, Kalanga, Herero et Mbukushu y vivent aux côtés des Tswana.",
   "etymology": "« Botswana » est formé sur le nom du peuple, avec le préfixe bo-, comme mo- forme le nom d'une personne, ba- celui du peuple et se- celui de la langue. La série est attestée sans interruption depuis la première grammaire du setswana, publiée par James Archbell en 1837, jusqu'aux linguistes de l'université du Botswana aujourd'hui. La traduction « pays des Tswana » est celle que donnent les institutions du pays et les nomenclatures officielles, et elle est bonne pour un lecteur — mais elle n'est pas la valeur grammaticale du préfixe. Bo- forme d'abord des noms abstraits : Denis Creissels en fait la classe de la qualité, où tau, « lion », donne bolau, « la nature du lion ». Le dictionnaire setswana de John Brown, en 1895, glose d'ailleurs Bocwana par « la personnalité d'un Mocwana », non par un territoire. L'emploi territorial existe bien, mais il est lexical plutôt que grammatical : le même dictionnaire donne Bokweni pour le pays des Bakweni et Borwe pour celui des San.\n\nCe que désigne la racine Tswana n'est pas établi, et ce sont les voix les plus proches de la langue qui le disent. Thapelo Otlogetswe, professeur à l'université du Botswana et auteur du premier dictionnaire monolingue setswana, écrit qu'on sait très peu de chose de l'origine de ces mots et qu'il n'existe là-dessus que des conjectures. David Livingstone, lui, proposait en 1857 de rattacher le nom à chuana, « semblable, égal », et rapportait qu'on l'expliquait aussi par le malentendu d'un voyageur à qui l'on aurait répondu « ils sont comme nous » — hypothèse qu'il écartait, le nom étant en usage chez des gens sans contact avec les Européens. À la page suivante, il note que les Bechuana ne savent pas expliquer la dérivation de leur propre nom. Le dictionnaire de Brown donne à chwana deux sens, « être semblable » et le féminin de ncho, « noir » ; le Dictionary of South African English retient les deux racines et ne tranche pas. Paul Maylam tient pour sa part que l'appellation Bechuana a été forgée par les Blancs au XIXe siècle. Une réfutation de Livingstone par le lettré motswana D. M. Ramoshoana existe, mais elle ne subsiste que dans l'introduction de la grammaire de Desmond Cole, qui n'a pas été lue.",
   "nameOriginActor": "Le nom a été porté localement avant d'être ratifié à Londres. Le Premier ministre le soumet à l'Assemblée législative du Bechuanaland le 13 décembre 1965 ; plus de cent cinquante réunions publiques et des kgotla le portent devant les chefs ; l'Assemblée et la Chambre des chefs l'approuvent ; la conférence de Londres de février 1966 examine des propositions rédigées sur place ; la loi britannique du 3 août 1966 l'entérine pour le 30 septembre. Il ne s'agissait pas d'inventer un mot : une forme en Bo- est relevée comme auto-désignation dès 1801, et un parti se nommait déjà Botswana Independence Party aux élections de mars 1965. « Bechuanaland » était la forme anglicisée de baTswana. Qui a formé la racine Tswana n'est pas établi.",
+  "nameHistory": {
+    "summary": "Le nom Botswana désigne un pays d'Afrique australe, la République du Botswana, qui le porte depuis son indépendance, le 30 septembre 1966. Il est formé sur le nom que se donnent les Tswana, ou Batswana. Le pays s'appelait auparavant Bechuanaland, Bechuanaland Protectorate sous la domination britannique. Les sources ne s'accordent pas sur l'origine du mot tswana ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Botswana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tsn",
+        "namedBy": null,
+        "shortLine": "Un nom formé sur celui des Tswana, porté par l'État depuis 1966 ; l'origine de tswana est discutée.",
+        "periodLabel": "Forme proche notée en 1801 ; nom de l'État depuis 1966",
+        "accounts": [
+          {
+            "period": {
+              "from": 1966,
+              "to": null,
+              "label": "Depuis le 30 septembre 1966"
+            },
+            "era": "modern",
+            "statement": "Le nom Botswana est celui de l'État depuis le 30 septembre 1966 : ce jour-là, le Bechuanaland Protectorate devient une république indépendante « sous le nom de Botswana », selon la loi britannique sur l'indépendance du Botswana. Le tableau des indépendances de l'Histoire générale de l'Afrique écrit « Botswana 30/IX/1966 Grande-Bretagne (Bechuanaland) ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Botswana Independence Act 1966",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1966,
+                "url": "https://www.legislation.gov.uk/ukpga/1966/23/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu le 10 octobre 2026 sur le site officiel de la législation britannique. La section 1 dispose que le 30 septembre 1966 le territoire qui forme le Bechuanaland Protectorate cesse d'être un protectorat et devient une république indépendante « under the name of Botswana »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances : « Botswana 30/IX/1966 Grande-Bretagne (Bechuanaland) »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 10 : L'Afrique australe",
+                "author": "David Chanaiwa",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 293",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji, lu dans l'exemplaire numérisé. Le Bechuanaland obtient l'autonomie interne en 1963 ; « ce territoire, devenu le Botswana, accéda à l'indépendance le 30 septembre 1966 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Botswana est formé sur le nom des Tswana, avec le préfixe bo- ; la nomenclature britannique le traduit par « pays des Tswana ». L'origine du mot tswana lui-même n'est pas établie : on n'en connaît que des conjectures, selon le linguiste Thapelo Otlogetswe.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Botswana",
+                "author": "Permanent Committee on Geographical Names, Royaume-Uni",
+                "year": 2025,
+                "url": "https://assets.publishing.service.gov.uk/media/68aee27d3a052c9c504c8e7f/Botswana_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Nomenclature géographique officielle britannique, juillet 2025, relue le 10 octobre 2026. La note 1 traduit le nom du pays par « Land of the Tswana » ; l'introduction rappelle que le territoire s'appelait Bechuanaland Protectorate sous administration britannique."
+              },
+              {
+                "title": "Secwana Dictionary: English-Secwana and Secwana-English",
+                "author": "John Brown",
+                "year": 1895,
+                "url": "https://archive.org/details/secwanadictionar00brow",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrées Chwana et Bocwana",
+                "notes": "Imprimé pour la London Missionary Society, 1895, lu en fac-similé le 10 octobre 2026. Entrée Chwana : « adj., fem. of ncho, black ; v.i., be alike ». Entrée Bocwana : « The personality of a Mocwana »."
+              },
+              {
+                "title": "The Origins of “Tswana”",
+                "author": "Thapelo J. Otlogetswe",
+                "year": 2005,
+                "url": "https://otlogetswe.wordpress.com/2005/10/05/the-origins-of-tswana/",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "notes": "Extrait d'un mémoire de l'université d'Oxford, publié par l'auteur, professeur à l'université du Botswana. Relu le 10 octobre 2026 : « There is very little knowledge of where the words Se-Tswana and Bo-Tswana come from, only speculation exists »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "13 décembre 1965"
+            },
+            "era": "colonial",
+            "statement": "Le nom Botswana est proposé pour l'État à venir dans un document que le Premier ministre présente à l'Assemblée législative du Bechuanaland le 13 décembre 1965 : il y est question d'une « Republic of Botswana », selon le rapport annuel du gouvernement du territoire.",
+            "sources": [
+              {
+                "title": "Bechuanaland Protectorate: Report for the year 1965",
+                "author": "Royaume-Uni, Office of Commonwealth Relations",
+                "year": 1965,
+                "url": "https://archive.org/details/b31415994",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 7 et 159",
+                "notes": "Rapport annuel du territoire, lu en fac-similé le 10 octobre 2026. Page 7 : il est proposé que le Bechuanaland devienne une république « under the new name of Botswana ». Page 159 : un document présenté à l'Assemblée législative par le Premier ministre le 13 décembre 1965 propose une république « to be called the Republic of Botswana »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Botswana figure, écrit Bocwana, dans le dictionnaire setswana du missionnaire John Brown, qui le traduit par « la personnalité d'un Mocwana », non par le nom d'un pays.",
+            "formAsWritten": "Bocwana",
+            "sources": [
+              {
+                "title": "Secwana Dictionary: English-Secwana and Secwana-English",
+                "author": "John Brown",
+                "year": 1895,
+                "url": "https://archive.org/details/secwanadictionar00brow",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrées Chwana et Bocwana",
+                "notes": "Imprimé pour la London Missionary Society, 1895, lu en fac-similé le 10 octobre 2026. Entrée Chwana : « adj., fem. of ncho, black ; v.i., be alike ». Entrée Bocwana : « The personality of a Mocwana »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1801,
+              "to": 1801,
+              "label": "1801, rapporté en 1979"
+            },
+            "era": "polity",
+            "statement": "Le nom Botswana a une forme proche dans le récit de voyage de William Somerville en 1801 : les gens que les Kora appellent Briqua « se nomment eux-mêmes Bōōtshooānăs ou Mōōtshooānăs », selon le Dictionary of South African English, qui cite ce récit. C'est la plus ancienne trace de cette forme que le projet connaît ; c'est alors le nom d'un peuple, pas encore celui d'un pays. Ce peuple existait bien avant cette trace écrite.",
+            "formAsWritten": "Bōōtshooānăs",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Bechuana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Bechuana/e00664",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1801",
+                "notes": "Dictionnaire historique en ligne, consulté le 10 octobre 2026. Il fait de Bechuana la forme anglaise de baTswana, peut-être d'après une prononciation ancienne, et cite W. Somerville en 1801 : « they call themselves Bōōtshooānăs or Mōōtshooānăs », d'après l'édition de 1979 de son récit, p. 123."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Proposée en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom tswana viendrait du mot chuana, « semblable, égal » : les Bechuana seraient « les égaux », selon le missionnaire David Livingstone. Il note aussi que les Bechuana eux-mêmes ne savent pas expliquer d'où vient leur nom.",
+            "hypothesisGroup": "origine du mot tswana",
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 200-201",
+                "notes": "Londres, John Murray, 1857, lu en fac-similé le 10 octobre 2026. Livingstone rattache le nom Bechuana à chuana, « alike, or equal », rapporte l'explication par la méprise d'un voyageur et l'écarte, puis note que les Bechuana ne savent pas expliquer la dérivation de leur propre nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Rapportée en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom tswana viendrait d'une méprise : un voyageur qui demandait qui vivait plus loin aurait entendu « ils sont pareils », c'est-à-dire « ce sont des gens comme nous », et en aurait fait le nom du peuple. David Livingstone rapporte cette explication et la rejette, parce que le nom était en usage chez des gens qui n'avaient pas de contact avec les Européens.",
+            "hypothesisGroup": "origine du mot tswana",
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 200-201",
+                "notes": "Londres, John Murray, 1857, lu en fac-similé le 10 octobre 2026. Livingstone rattache le nom Bechuana à chuana, « alike, or equal », rapporte l'explication par la méprise d'un voyageur et l'écarte, puis note que les Bechuana ne savent pas expliquer la dérivation de leur propre nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "Proposée en 1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom tswana se rattacherait à l'un des deux sens du mot chwana, « noir » au féminin ou « être semblable », que donne le dictionnaire de John Brown. Le Dictionary of South African English retient ces deux pistes sans choisir entre elles.",
+            "hypothesisGroup": "origine du mot tswana",
+            "sources": [
+              {
+                "title": "Secwana Dictionary: English-Secwana and Secwana-English",
+                "author": "John Brown",
+                "year": 1895,
+                "url": "https://archive.org/details/secwanadictionar00brow",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrées Chwana et Bocwana",
+                "notes": "Imprimé pour la London Missionary Society, 1895, lu en fac-similé le 10 octobre 2026. Entrée Chwana : « adj., fem. of ncho, black ; v.i., be alike ». Entrée Bocwana : « The personality of a Mocwana »."
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Motswana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/motswana/e04953",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire historique en ligne, consulté le 10 octobre 2026. L'étymologie donne deux radicaux possibles pour -tswana, le féminin de l'adjectif « noir » ou un verbe, sans choisir."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bechuanaland",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "shortLine": "Le nom anglais du pays sous la domination britannique, jusqu'en 1966.",
+        "periodLabel": "Écrit dès 1871 ; nom du protectorat britannique de 1885 à 1966",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1966,
+              "label": "Jusqu'au 30 septembre 1966"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bechuanaland Protectorate est celui du territoire jusqu'au 30 septembre 1966, jour où il devient une république indépendante sous le nom de Botswana, selon la loi britannique sur l'indépendance du Botswana.",
+            "aspect": "usage",
+            "formAsWritten": "Bechuanaland Protectorate",
+            "sources": [
+              {
+                "title": "Botswana Independence Act 1966",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1966,
+                "url": "https://www.legislation.gov.uk/ukpga/1966/23/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu le 10 octobre 2026 sur le site officiel de la législation britannique. La section 1 dispose que le 30 septembre 1966 le territoire qui forme le Bechuanaland Protectorate cesse d'être un protectorat et devient une république indépendante « under the name of Botswana »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1966,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bechuanaland est formé sur Bechuana, la forme anglaise de baTswana, selon le Dictionary of South African English, et sur le mot anglais land, « pays ». Il désigne le pays des Tswana tel que l'appelaient les Britanniques.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Bechuana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Bechuana/e00664",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire historique en ligne, consulté le 10 octobre 2026. Il fait de Bechuana la forme anglaise de baTswana, peut-être d'après une prononciation ancienne, et cite W. Somerville en 1801 : « they call themselves Bōōtshooānăs or Mōōtshooānăs », d'après l'édition de 1979 de son récit, p. 123."
+              },
+              {
+                "title": "Toponymic Factfile: Botswana",
+                "author": "Permanent Committee on Geographical Names, Royaume-Uni",
+                "year": 2025,
+                "url": "https://assets.publishing.service.gov.uk/media/68aee27d3a052c9c504c8e7f/Botswana_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Nomenclature géographique officielle britannique, juillet 2025, relue le 10 octobre 2026. La note 1 traduit le nom du pays par « Land of the Tswana » ; l'introduction rappelle que le territoire s'appelait Bechuanaland Protectorate sous administration britannique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1885,
+              "label": "1884-1885"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bechuanaland désigne le territoire que se disputent alors les chefs tswana, les Boers du Transvaal et les colons du Cap. En 1884, le sud du Bechuanaland est déclaré colonie britannique ; en 1885, la Grande-Bretagne étend son protectorat au nord, l'actuel Botswana, selon David Chanaiwa.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 9 : Initiatives et résistances africaines en Afrique méridionale",
+                "author": "David Chanaiwa",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 234-235",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé. En 1884, sir Charles Warren déclare le Bechuanaland méridional colonie britannique ; en 1885, l'Angleterre étend son protectorat au Bechuanaland septentrional ; l'auteur écrit « Bechuanaland (actuel Botswana) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1871,
+              "to": 1871,
+              "label": "1871"
+            },
+            "era": "polity",
+            "statement": "Le nom Bechuanaland apparaît par écrit, sous la forme Bechuana-land, chez le missionnaire John Mackenzie : il situe la station de Likatlong « dans la partie sud du Bechuana-land ». C'est la plus ancienne trace de ce nom que le projet connaît. Les royaumes tswana qu'il désigne existaient bien avant lui.",
+            "formAsWritten": "Bechuana-land",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ten Years North of the Orange River: A Story of Everyday Life and Work among the South African Tribes, from 1859 to 1869",
+                "author": "John Mackenzie",
+                "year": 1871,
+                "url": "https://archive.org/details/tenyearsnorthofo00mack",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3",
+                "notes": "Édimbourg, Edmonston et Douglas, 1871, lu en fac-similé le 10 octobre 2026. Dans l'introduction, page 3, le missionnaire Holloway Helmore a travaillé dix-sept ans à Likatlong, « in the southern part of Bechuana-land »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Protectorat du Bechuanaland (1885-1966)"],

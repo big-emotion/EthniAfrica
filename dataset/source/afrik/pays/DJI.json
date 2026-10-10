@@ -6,6 +6,319 @@
   "summary": "Djibouti porte le nom de la ville fondée par les Français en 1888, dont l'origine reste incertaine — peut-être l'afar « gabouti ». Le territoire, celui du sultanat d'Adal et des chefferies somali, fut la Côte française des Somalis puis le Territoire français des Afars et des Issas. Somali et Afar y perpétuent le pastoralisme nomade et la poésie orale.",
   "etymology": "Le nom \"Djibouti\" viendrait de la ville de Djibouti, fondée par les Français en 1888. L'origine du nom de la ville est incertaine, mais pourrait dériver du mot afar \"gabouti\" (panier en fibres de palmier) ou d'une légende locale. Le nom a été adopté pour le pays à l'indépendance en 1977.",
   "nameOriginActor": "Le nom \"Djibouti\" a été donné par les Français lors de la fondation de la ville de Djibouti en 1888. Le nom a été officialisé pour le pays à l'indépendance en 1977, remplaçant \"Territoire français des Afars et des Issas\". Le nom reflète l'identité de la capitale et du pays.",
+  "nameHistory": {
+    "summary": "Le nom Djibouti désigne un pays de la Corne de l'Afrique, la République de Djibouti, qui porte le nom de sa capitale. Le territoire a d'abord porté d'autres noms : Côte française des Somalis, puis Territoire français des Afars et des Issas. Les sources que nous avons lues ne disent pas d'où vient le nom Djibouti ; nous présentons plus bas ce qu'elles en rapportent.",
+    "names": [
+      {
+        "nameText": "Djibouti",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une ville portuaire fondée dans les années 1880, devenu celui de l'État en 1977.",
+        "periodLabel": "Écrit dès 1887 ; nom de l'État depuis 1977",
+        "accounts": [
+          {
+            "period": {
+              "from": 1977,
+              "to": null,
+              "label": "Depuis le 27 juin 1977"
+            },
+            "era": "modern",
+            "statement": "Le nom Djibouti est celui de l'État depuis l'indépendance, proclamée le 27 juin 1977 : l'article premier de la loi constitutionnelle n° 1 proclame « la République de Djibouti ». Le pays prend ainsi le nom de sa capitale, selon le Permanent Committee on Geographical Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "République de Djibouti. Loi constitutionnelle n° 1 du 27 juin 1977",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/dj1977ind.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Consulté le 10 octobre 2026. Article premier : « La République de Djibouti, une et indivisible, indépendante et souveraine, est proclamée. » La page rappelle que le pays fut colonie française sous le nom de Côte française des Somalis, puis de territoire français des Afars et des Issas."
+              },
+              {
+                "title": "Toponymic Factfile: Djibouti",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2024,
+                "url": "https://assets.publishing.service.gov.uk/media/6634e9dbcf3b5081b14f315e/Djibouti_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2024 : le pays « adopted the name of its capital city as the country name » à l'indépendance, en 1977 ; il s'appelait auparavant French Somaliland jusqu'en 1967, puis French Territory of the Afars and Issas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1977,
+              "to": 1977,
+              "label": "1977"
+            },
+            "era": "modern",
+            "statement": "Le nom Djibouti est choisi pour l'indépendance comme une « appellation neutre », écrit l'historien Ivan Hrbek : le territoire est alors partagé entre deux peuples d'importance voisine, les Afar et les Somali. L'Histoire générale de l'Afrique date l'indépendance du 26 juin dans ce chapitre et du 27 juin dans son tableau des indépendances.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 6 : L'Afrique septentrionale et la corne de l'Afrique",
+                "author": "Ivan Hrbek",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 176-177",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Le territoire devient pleinement indépendant « sous l'appellation neutre de République de Djibouti »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 132",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Tableau 5.1 « Chronologie de l'indépendance africaine ». Ligne « Djibouti 27/VI/1977 France (Territoire français des Afars et des Issas, anciennement Côte française des Somalis) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Djibouti désigne à la fois la ville principale du pays et l'État, qui a pris le nom de sa capitale ; on l'écrit Jībūtī en arabe, l'autre langue officielle. Les sources que nous avons lues ne disent pas d'où vient ce nom, et nous n'avons pas retenu les explications qui circulent sans source vérifiable.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Frontières et limites à Djibouti durant la période coloniale (1884-1977)",
+                "author": "Simon Imbert-Vier",
+                "year": 2008,
+                "url": "https://theses.hal.science/tel-00736163",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Thèse de doctorat en histoire, université de Provence, 2008, lue dans l'exemplaire déposé en accès libre. « Djibouti » désigne « le territoire créé par l'action coloniale et sa ville principale »."
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, liste préparée par Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 31",
+                "notes": "Entrée Djibouti : nom court officiel en arabe Jībūtī, en français Djibouti ; nom long République de Djibouti."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom Djibouti est celui d'une ville fondée en 1888, selon la chronologie de la Digithèque MJP ; en 1896, le décret qui crée la Côte française des Somalis y fixe le chef-lieu du territoire.",
+            "sources": [
+              {
+                "title": "République de Djibouti : constitutions et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/dj.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Consulté le 10 octobre 2026. Chronologie : « 1888 - Fondation de Djibouti. 1896 - Colonie de la Côte française des Somalis » ; « 19 mars 1967 - Référendum. Nouveau statut créant le Territoire français des Afars et des Issas » ; « 27 juin 1977 - Proclamation de l'indépendance »."
+              },
+              {
+                "title": "Colonie française de Djibouti. Obock. Côte française des Somalis. Territoire français des Afars et des Issas",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/dj1859.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "décret du 20 mai 1896, article premier",
+                "notes": "Consulté le 10 octobre 2026. La page reproduit le décret du 20 mai 1896, dont l'article premier réunit le territoire d'Obock et les protectorats de Tadjourah et des pays danakils « en un seul ensemble sous la dénomination de Côte française des Somalis et dépendances » et fixe le chef-lieu à Djibouti."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "13 avril 1887"
+            },
+            "era": "colonial",
+            "statement": "Le nom Djibouti a une forme proche, « ras Djiboutil », le cap de Djiboutil, dans une note française adressée le 13 avril 1887 à lord Salisbury, ministre britannique des Affaires étrangères : elle propose une ligne tirée de ce cap jusqu'à Harrar pour séparer les protectorats français et anglais. L'historien Simon Imbert-Vier cite cette note, conservée aux Archives nationales d'outre-mer. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas vu le document nous-mêmes.",
+            "formAsWritten": "ras Djiboutil",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Frontières et limites à Djibouti durant la période coloniale (1884-1977)",
+                "author": "Simon Imbert-Vier",
+                "year": 2008,
+                "url": "https://theses.hal.science/tel-00736163",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "Thèse de doctorat en histoire, université de Provence, 2008, lue dans l'exemplaire déposé en accès libre. L'auteur cite la lettre de l'ambassadeur de France à Londres à lord Salisbury, 13 avril 1887 (Archives nationales d'outre-mer, Affaires politiques 137/2) : « une ligne tirée du ras Djiboutil sur la côte à la ville de Harrar ». La même page cite Lagarde, commandant d'Obock, qui écrit « Giboutil »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1887,
+              "label": "Avant la fin du XIXe siècle"
+            },
+            "statement": "Avant le nom Djibouti, cet espace n'a pas de nom particulier qui le désigne en entier, écrit l'historien Simon Imbert-Vier ; Afar et Somali y vivent et y nomment leurs propres lieux.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Frontières et limites à Djibouti durant la période coloniale (1884-1977)",
+                "author": "Simon Imbert-Vier",
+                "year": 2008,
+                "url": "https://theses.hal.science/tel-00736163",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Thèse de doctorat en histoire, université de Provence, 2008, lue dans l'exemplaire déposé en accès libre. « Sans nom spécifique avant la fin du XIXe siècle, cet espace s'est appelé « Côte française des Somalis » de 1896 à 1967, puis « Territoire français des Afars et des Issas » jusqu'à son indépendance en 1977. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Territoire français des Afars et des Issas",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration française",
+        "periodLabel": "De 1967 au 27 juin 1977",
+        "accounts": [
+          {
+            "period": {
+              "from": 1967,
+              "to": 1977,
+              "label": "Du 3 juillet 1967 au 27 juin 1977"
+            },
+            "era": "colonial",
+            "statement": "Le nom Territoire français des Afars et des Issas remplace celui de Côte française des Somalis après le référendum du 19 mars 1967. Il nomme deux peuples du territoire, les Afar et les Issa, un groupe somali, et reste en usage jusqu'à l'indépendance, selon l'historien Ivan Hrbek.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "République de Djibouti : constitutions et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/dj.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Consulté le 10 octobre 2026. Chronologie : « 1888 - Fondation de Djibouti. 1896 - Colonie de la Côte française des Somalis » ; « 19 mars 1967 - Référendum. Nouveau statut créant le Territoire français des Afars et des Issas » ; « 27 juin 1977 - Proclamation de l'indépendance »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 6 : L'Afrique septentrionale et la corne de l'Afrique",
+                "author": "Ivan Hrbek",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 176",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. La colonie « appelée jusqu'en 1967 Côte française des Somalis, puis Territoire français des Afars et des Issas (TFAI) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1967,
+              "to": 1967,
+              "label": "3 juillet 1967"
+            },
+            "era": "colonial",
+            "statement": "Le nom Territoire français des Afars et des Issas figure dans l'article premier de la loi française du 3 juillet 1967 qui organise le territoire. C'est la plus ancienne trace de ce nom que le projet connaît. Les Afar et les Issa vivaient sur ces terres bien avant ce nom.",
+            "formAsWritten": "Le territoire français des Afars et des Issas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Côte française des Somalis, Territoire français des Afars et des Issas, 1945-1977",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/dj1945.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "loi du 3 juillet 1967, article premier",
+                "notes": "Consulté le 10 octobre 2026. La page reproduit la loi n° 67-521 du 3 juillet 1967, dont l'article premier commence par « Le territoire français des Afars et des Issas forme, au sein de la République française, un territoire d'outre-mer »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Côte française des Somalis",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "periodLabel": "De 1896 à 1967",
+        "accounts": [
+          {
+            "period": {
+              "from": 1896,
+              "to": 1967,
+              "label": "De 1896 à 1967"
+            },
+            "era": "colonial",
+            "statement": "Le nom Côte française des Somalis désigne la colonie française qui deviendra Djibouti, de 1896 à 1967, selon l'historien Simon Imbert-Vier et le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Frontières et limites à Djibouti durant la période coloniale (1884-1977)",
+                "author": "Simon Imbert-Vier",
+                "year": 2008,
+                "url": "https://theses.hal.science/tel-00736163",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Thèse de doctorat en histoire, université de Provence, 2008, lue dans l'exemplaire déposé en accès libre. Cet espace « s'est appelé « Côte française des Somalis » de 1896 à 1967 »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 132",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Tableau 5.1 « Chronologie de l'indépendance africaine ». Djibouti y est donné comme « anciennement Côte française des Somalis »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "20 mai 1896"
+            },
+            "era": "colonial",
+            "statement": "Le nom Côte française des Somalis figure dans le décret du 20 mai 1896, qui réunit le territoire d'Obock et les protectorats de Tadjourah et des pays danakils « sous la dénomination de Côte française des Somalis et dépendances ». C'est la plus ancienne trace de ce nom que le projet connaît. Les Afar et les Somali vivaient sur cette côte bien avant ce nom.",
+            "formAsWritten": "Côte française des Somalis et dépendances",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Colonie française de Djibouti. Obock. Côte française des Somalis. Territoire français des Afars et des Issas",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/dj1859.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "décret du 20 mai 1896, article premier",
+                "notes": "Consulté le 10 octobre 2026. La page reproduit le décret du 20 mai 1896, dont l'article premier réunit le territoire d'Obock et les protectorats de Tadjourah et des pays danakils « en un seul ensemble sous la dénomination de Côte française des Somalis et dépendances » et fixe le chef-lieu à Djibouti."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
