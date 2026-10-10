@@ -104,10 +104,56 @@ Bilan du lot 1 : 7 solides, 11 faibles, 2 faux, 0 aucun. Conseil : 17 accepter,
 
 J'ai ouvert chaque page proposée et cherché chaque passage cité. Quand aucune page ne tenait,
 j'ai cherché moi-même un vrai ouvrage, et je l'ai ajouté à la fin des candidats de l'entrée,
-avec la mention « Found by the pre-reviewer ». Je n'ai rien décidé : chaque entrée reste
+avec la mention « Found by the pre-reviewer ». Je n'avais rien décidé : chaque entrée restait
 `proposed`, avec ce que j'ai lu dans son champ `reviewNote`.
 
 Les numéros continuent ceux du lot 1. Répondez de la même façon : « 21 oui, 22 non, 26 oral… ».
+
+**Décidé le 10 octobre 2026.** Vous avez répondu « suis tes conseils » pour les quatre lots, et
+les fiches ont été mises à jour :
+
+- **52 acceptés**, chacun avec le candidat de la colonne « Conseil » : n° 21, 23, 25, 27 à 34,
+  36 à 39, 41 à 45, 47 à 61, 64, 66 à 75, 77, 78, 81, 91, 92 et 93 ;
+- **27 rejetés** : n° 22, 24, 35, 40, 46, 62, 63, 65, 76, 79, 80, 82 à 90 et 94 à 100. Ces
+  sources restent dans la file, présentées comme une synthèse à vérifier ;
+- **n° 26, Lawson au Togo** : « oral », la même réponse qu'au lot 1.
+
+Avant d'accepter, j'ai fait les corrections annoncées plus bas :
+
+- les types marqués d'une étoile sont corrigés. Wikipédia, Universalis et Encyclopedia.com sont
+  rangés en « encyclopédie ». La note d'Ambroise Dakouo (n° 47) est rangée en « ONG », comme aux
+  n° 42 et 45 ;
+- les entretiens de Joseph Harris (n° 66 à 68) n'ont plus qu'une adresse : www.webfuuta.site,
+  « The Kingdom of Fouta-Diallon », 1965, type académique ;
+- le mémoire de l'université UNILAB (n° 72 à 74) porte son vrai auteur, Ibu Sadjo, et son
+  année, 2019 ;
+- pour Ouattara au Burkina (n° 52), la citation ne porte plus les mots « Other versions… ».
+
+Niveau : « référencée » pour les sources solides (n° 25, 52, 72, 73 et 91), « non vérifiée »
+pour les sources faibles. Le n° 74 est aussi « référencée » : il cite le même mémoire que les
+n° 72 et 73, dans la même file, et une même source ne peut avoir qu'un niveau dans une fiche.
+
+J'ai aussi corrigé les fiches dont l'affirmation était fausse, avec les sources trouvées à la
+revue, que j'ai rouvertes :
+
+- **les neuf noms igbo (n° 82 à 90)** ne sont plus des noms de clan. Ils sont rangés parmi les
+  noms personnels devenus noms de famille, dans la file et dans les fiches. Okafor et Okonkwo
+  citent maintenant l'article de Kalu Ogbaa (_Names_, 1980) ; Chukwu, Nwachukwu et Chinedu
+  celui d'Asadu et Nzuanke (_Lwati_, 2014) ;
+- **Gbagbo (n° 79)** est un nom personnel bété, et **Zadi (n° 80)** un nom de jumeaux, d'après
+  la liste d'Afrik Soir (2021). Les deux fiches ne parlent plus de clan ;
+- **Nyobè (n° 95)** est le nom personnel du père de Ruben Um Nyobè, d'après Wikipédia ;
+- **les quatre noms du Congo (n° 97 à 100)** ne sont plus des noms de clan. Les fiches citent
+  l'étude de Marcel Soret (1959) : le clan kongo se marque par un nom en ki-, et Kunku et Mabiala
+  y sont des noms personnels ;
+- **Sonko et Jammeh** sont aussi rattachés aux Malinké, que la Gambie appelle Mandingues, d'après
+  Donald Wright (1978) ;
+- **Doumbia** est rattaché aux Malinké dans la file, pour le Mali comme pour la Côte d'Ivoire ;
+  la fiche Doumbia ajoute les Malinké, d'après le dictionnaire des noms de clan ;
+- **Sissoko** est rattaché aux Malinké dans la file, et non plus aux Soninké.
+
+Le modèle de fiche n'a pas de case pour un nom personnel devenu nom de famille. Ces noms sont
+donc rangés dans la case la plus proche, « patronyme non héréditaire », et chaque fiche le dit.
 
 \* Le type du candidat est faux dans la proposition : c'est le plus souvent une encyclopédie
 (Wikipédia, Universalis, Encyclopedia.com) rangée en « communautaire » ou en « presse ». Corrigez
@@ -264,8 +310,9 @@ Bilan du lot 5 : 1 solides, 7 faibles, 10 faux, 2 aucun. Conseil : 4 accepter, 1
 Ces sources restent dans leur fiche. Elles attendent un récit oral, qui passera par le circuit
 de collecte des récits.
 
-| Entrée                | Fiche  | Ce qu'il faut recueillir                                                                 | Décidé le       |
-| --------------------- | ------ | ---------------------------------------------------------------------------------------- | --------------- |
-| `ASV-2026-10-08-0001` | Ababda | D'où vient le nom et comment il se transmet                                              | 9 octobre 2026  |
-| `ASV-2026-10-08-0002` | Abaza  | Si Abaza nomme un clan, et comment le nom se transmet                                    | 9 octobre 2026  |
-| `ASV-2026-10-09-0006` | Lawson | Si Lawson est un clan ou une maison royale du clan Akagban, auprès d'une famille d'Aného | 10 octobre 2026 |
+| Entrée                | Fiche                             | Ce qu'il faut recueillir                                                                 | Décidé le       |
+| --------------------- | --------------------------------- | ---------------------------------------------------------------------------------------- | --------------- |
+| `ASV-2026-10-08-0001` | Ababda                            | D'où vient le nom et comment il se transmet                                              | 9 octobre 2026  |
+| `ASV-2026-10-08-0002` | Abaza                             | Si Abaza nomme un clan, et comment le nom se transmet                                    | 9 octobre 2026  |
+| `ASV-2026-10-09-0006` | Lawson                            | Si Lawson est un clan ou une maison royale du clan Akagban, auprès d'une famille d'Aného | 10 octobre 2026 |
+| `ASV-2026-10-09-0028` | Lawson, Togo (file des candidats) | La même question, pour l'entrée Lawson de la file des candidats                          | 10 octobre 2026 |

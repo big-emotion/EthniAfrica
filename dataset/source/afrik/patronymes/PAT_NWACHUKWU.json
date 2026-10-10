@@ -6,7 +6,7 @@
   },
   "id": "PAT_NWACHUKWU",
   "nameMain": "Nwachukwu",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Nwachukwu",
@@ -28,6 +28,11 @@
         "claim": "Le Dictionary of American Family Names décrit Nwachukwu comme un nom personnel igbo signifiant « enfant de Dieu ». Nkamigbo atteste séparément Nwachukwu comme résultat contemporain d'une substitution où certains porteurs abandonnent un élément ancien et ajoutent chukwu.",
         "claimStatus": "established",
         "sourceRefs": ["hanks-nwachukwu", "nkamigbo-2019-igbo-names"]
+      },
+      {
+        "claim": "Une étude des noms igbo explique que chi et chukwu, dans un nom, renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo.",
+        "claimStatus": "established",
+        "sourceRefs": ["asadu-nzuanke-2014-chi-names"]
       }
     ]
   },
@@ -65,6 +70,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Linda Chinelo Nkamigbo, Journal of Linguistics, Language and Culture, vol. 6, no 1, 2019. Le PDF intégral a été consulté, notamment les typologies des noms de jours de marché et les changements contemporains de noms igbo."
+    },
+    {
+      "sourceKey": "asadu-nzuanke-2014-chi-names",
+      "title": "Onomastics and Translation: The Case of Igbo→English Translation of Chi Names",
+      "url": "https://www.ajol.info/index.php/lwati/article/view/119750",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Oluchukwu Asadu et Samson Fabian Nzuanke, Lwati: A Journal of Contemporary Research, vol. 11, no 3, 2014, p. 122-140 ; résumé lu sur la page de la revue. Les éléments chi et chukwu des noms igbo y renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo. L'étude porte sur les noms de trente étudiants de l'université Nnamdi Azikiwe, à Awka ; elle ne traite pas des noms de famille."
     }
   ],
   "gaps": [
@@ -99,6 +112,10 @@
     {
       "fieldPath": "designatedSocialUnit",
       "reason": "l'entrée du dictionnaire de Hanks et l'article de Nkamigbo (2019) ne permet pas de décider si chaque emploi contemporain désigne un individu, une famille, une charge ou un lignage ; aucune monographie propre à Nwachukwu n'a été trouvée."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée ne fait de Nwachukwu un nom de clan : les sources y voient un nom personnel qui veut dire « enfant de Dieu ». Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     }
   ]
 }
