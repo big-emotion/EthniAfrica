@@ -89,7 +89,8 @@
       {
         "title": "Situation of the Shekha ethnic group – Immigration and Refugee Board of Canada / Ecoi.net, 2015",
         "url": "https://www.ecoi.net/en/document/1297530.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Statistical Data on Sheka and Keffa Zones – MTU Sociology / CSA Ethiopia, 2007",
@@ -104,7 +105,8 @@
       {
         "title": "ISO 639-3: moy (Shekkacho) – SIL International / Ethnologue",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

@@ -98,7 +98,8 @@
       {
         "title": "101 Last Tribes - Guang people",
         "url": "https://www.101lasttribes.com/tribes/guang.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

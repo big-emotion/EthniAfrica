@@ -113,7 +113,8 @@
       {
         "title": "South Africa Gateway — Languages of South Africa (2025)",
         "url": "https://southafrica-info.com/arts-culture/the-languages-of-south-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "PeopleGroups.org — Northern Sotho of South Africa",
@@ -135,7 +136,8 @@
       {
         "title": "Qiraat Africa — Pedi people of South Africa (2024)",
         "url": "https://qiraatafrican.com/en/14630/pedi-people-of-south-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       }
     ]
   }

@@ -166,7 +166,8 @@
       {
         "title": "101 Last Tribes, Serer people",
         "url": "https://www.101lasttribes.com/tribes/serer.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Britannica, Serer",
@@ -177,12 +178,14 @@
       {
         "title": "US Public Intelligence, Senegal Cultural Field Guide (Ethnic Groups)",
         "url": "https://info.publicintelligence.net/MCIA-SenegalCultureGuide.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "government"
       },
       {
         "title": "Qiraat Africa, The Serer people of West Africa (2026)",
         "url": "https://qiraatafrican.com/en/19893/the-serer-people-of-west-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       }
     ]
   }

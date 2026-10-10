@@ -94,7 +94,8 @@
       {
         "title": "Statistics South Africa – Cultural Dynamics in South Africa, basé sur le Recensement 2022",
         "url": "https://southafrica-info.com/arts-culture/the-languages-of-south-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue – Southern Ndebele (nbl) : code ISO 639-3 nbl",

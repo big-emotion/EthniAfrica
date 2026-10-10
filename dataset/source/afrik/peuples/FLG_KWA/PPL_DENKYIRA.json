@@ -77,7 +77,8 @@
       {
         "title": "Upper Denkyira West – Citypopulation.de",
         "url": "https://www.citypopulation.de/en/ghana/admin/central/0217__upper_denkyira_west/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Ghana Statistical Service, Population and Housing Census 2021",

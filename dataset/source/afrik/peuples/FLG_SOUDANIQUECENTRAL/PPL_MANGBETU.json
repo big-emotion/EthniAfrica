@@ -105,7 +105,8 @@
       {
         "title": "Smarthistory — Figurative Harp (Domu), Mangbetu peoples",
         "url": "https://smarthistory.org/figurative-harp-domu/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Khan Academy — Figurative Harp (Domu) (Mangbetu peoples)",
@@ -126,7 +127,8 @@
       {
         "title": "African History Extra — Kingdoms at the forest's edge: a history of Mangbetu (ca. 1750-1895)",
         "url": "https://www.africanhistoryextra.com/p/kingdoms-at-the-forests-edge-a-history",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "The Metropolitan Museum of Art — Figurative Harp (Domu)",

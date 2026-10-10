@@ -90,12 +90,14 @@
       {
         "title": "101 Last Tribes — Dizi people",
         "url": "https://www.101lasttribes.com/tribes/dizi.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Kwekudee. 2013. DIZI PEOPLE: ETHIOPIA'S OMOTIC HIGHLAND CULTIVATORS",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2013/08/dizi-people-ethiopias-omotic-highland.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Beachy, Marvin Dean. 2005. An overview of Central Dizin phonology and morphology. M.A. thesis, University of Texas at Arlington",
@@ -116,7 +118,8 @@
       {
         "title": "Recensement national de la population et du logement de l'Éthiopie 2007 (CSA)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

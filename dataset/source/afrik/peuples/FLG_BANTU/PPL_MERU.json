@@ -110,7 +110,8 @@
       {
         "title": "CityPopulation — Meru County Kenya",
         "url": "https://www.citypopulation.de/en/kenya/sub/admin/12__meru/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "LocalePlanet — Meru (mer) ISO code",

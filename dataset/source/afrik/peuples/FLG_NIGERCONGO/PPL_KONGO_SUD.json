@@ -106,7 +106,8 @@
       {
         "title": "Data Commons — Kongo Central population 2024",
         "url": "https://datacommons.org/place/wikidataId/Q1043494",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Joshua Project — Kongo Central province population (2025)",
@@ -129,12 +130,14 @@
       {
         "title": "101 Last Tribes — Kongo People (subgroups in DRC)",
         "url": "https://www.101lasttribes.com/tribes/kongo.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Worldometer — DR Congo Population 2025",
         "url": "https://www.worldometers.info/world-population/democratic-republic-of-the-congo-population/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "VCU Scholars Compass — Transformation of Kongo Minkisi",

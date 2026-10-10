@@ -237,6 +237,155 @@ describe("classifySource", () => {
   });
 
   // @req REQ-161
+  it("types the long-tail hosts by who publishes them, read on their own pages", () => {
+    const kindOf = (url: string) =>
+      classifySource({ title: "A page", url, tier: "unverified" }).kind;
+
+    // One photographer's non-profit site compiling other texts: a personal
+    // site, which the operator ruling files with blogs.
+    expect(kindOf("https://www.101lasttribes.com/tribes/baga.html")).toBe(
+      "community"
+    );
+    expect(
+      kindOf("https://www.citypopulation.de/en/ghana/admin/03__greater_accra/")
+    ).toBe("discovery");
+    expect(
+      kindOf(
+        "https://shabait.com/2016/08/26/the-animal-caretakers-the-saho-of-eritrea/"
+      )
+    ).toBe("government");
+    expect(
+      kindOf(
+        "https://partnersinbibletranslation.org/wp-content/uploads/2018/03/Toka-Leya_Survey_2015.pdf"
+      )
+    ).toBe("missionary_database");
+    expect(kindOf("https://kreolmagazine.com/krio/")).toBe("press");
+    expect(
+      kindOf("https://clearglobal.org/language-data-for-mozambique/")
+    ).toBe("ngo");
+  });
+
+  // @req REQ-161
+  it("types a social-media post or video by who published it, and holds the ones nobody identified", () => {
+    const classify = (url: string) =>
+      classifySource({ title: "A post", url, tier: "unverified" });
+
+    expect(
+      classify(
+        "https://www.facebook.com/TanzaniaTouristBoard/posts/811743427661675/"
+      ).kind
+    ).toBe("government");
+    expect(classify("https://www.youtube.com/watch?v=TJc4NjTFGiw").kind).toBe(
+      "press"
+    );
+    expect(
+      classify(
+        "https://www.facebook.com/groups/batonga/posts/10161294996454258/"
+      ).kind
+    ).toBe("community");
+    expect(classify("https://www.youtube.com/watch?v=bP0kGwHPQvk")).toEqual({
+      kind: null,
+      rule: "held:speaker-dependent",
+    });
+  });
+
+  // @req REQ-161
+  it("holds a commercial site on purpose, since no kind names a shop honestly", () => {
+    expect(
+      classifySource({
+        title: "Kruger Park — Xhosa people",
+        url: "https://www.krugerpark.co.za/africa_xhosa.html",
+        tier: "unverified",
+      })
+    ).toEqual({ kind: null, rule: "held:commercial" });
+  });
+
+  // @req REQ-161
+  it("types census and statistics-office citations without a URL as public statistics", () => {
+    const kindOf = (title: string) =>
+      classifySource({ title, url: null, tier: "official" }).kind;
+
+    expect(kindOf("Recensements béninois")).toBe("official_statistics");
+    expect(kindOf("Recensements nationaux sénégalais (ANSD)")).toBe(
+      "official_statistics"
+    );
+    expect(
+      kindOf(
+        "Recensement national de la population et du logement de l'Éthiopie 2007 (CSA)"
+      )
+    ).toBe("official_statistics");
+    expect(
+      kindOf(
+        "Institut National de la Statistique de Cote d'Ivoire (INS) — Recensement General de la Population et de l'Habitat 2021"
+      )
+    ).toBe("official_statistics");
+  });
+
+  // @req REQ-161
+  it("types a URL-less citation whose title is a bare address by that address's host", () => {
+    const classify = (title: string) =>
+      classifySource({ title, url: null, tier: "referenced" });
+
+    expect(
+      classify("www.ethnologue.com/language/kab (consulté en 2024)")
+    ).toEqual({
+      kind: "linguistic_reference",
+      rule: "title-address:linguistic-reference",
+    });
+    expect(classify("en.unesco.org").kind).toBe("intergovernmental");
+    expect(
+      classify("www.cia.gov/the-world-factbook/countries/algeria").kind
+    ).toBe("government");
+  });
+
+  // @req REQ-161
+  it("types URL-less citations naming SIL, an encyclopedia, an NGO, an official text or an academic press", () => {
+    const kindOf = (title: string) =>
+      classifySource({ title, url: null, tier: "referenced" }).kind;
+
+    expect(
+      kindOf("ISO 639-3: muz (Mursi) – SIL International / Ethnologue")
+    ).toBe("linguistic_reference");
+    expect(
+      kindOf(
+        "Ralph Siebert. 2002. Sociolinguistic survey report on the Dime language of Ethiopia. SIL Electronic Survey Reports 2002-043"
+      )
+    ).toBe("linguistic_reference");
+    expect(kindOf("Encyclopaedia Aethiopica")).toBe("encyclopedia");
+    expect(kindOf("Encyclopédie de Madagascar")).toBe("encyclopedia");
+    expect(
+      kindOf(
+        "Amnesty International – Mauritania: Human Rights Abuses Against Black Africans, 1994"
+      )
+    ).toBe("ngo");
+    expect(
+      kindOf(
+        "Federal Republic of Nigeria Official Gazette, 14 juillet 2022 — Orthographe officielle du nom Ebira"
+      )
+    ).toBe("government");
+    expect(
+      kindOf("Evans-Pritchard, E. E. The Nuer. Oxford: Clarendon Press, 1940")
+    ).toBe("academic");
+    expect(kindOf("Sorbonne Université – Les langues créoles")).toBe(
+      "academic"
+    );
+  });
+
+  // @req REQ-161
+  it("leaves a URL-less citation that names no identifiable work, or a trade book", () => {
+    const kindOf = (title: string) =>
+      classifySource({ title, url: null, tier: "unverified" }).kind;
+
+    expect(
+      kindOf("Études anthropologiques sur les peuples du Bénin")
+    ).toBeNull();
+    expect(kindOf("Archives du Royaume d'Abomey")).toBeNull();
+    expect(
+      kindOf("Daoud Hari — The Translator. Random House, 2008")
+    ).toBeNull();
+  });
+
+  // @req REQ-161
   it("does not read a title pattern into a citation that has a URL", () => {
     expect(
       classifySource({

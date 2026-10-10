@@ -103,7 +103,8 @@
       {
         "title": "101 Last Tribes — Guere people",
         "url": "https://www.101lasttribes.com/tribes/guere.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Guere in Côte d'Ivoire",
@@ -114,7 +115,8 @@
       {
         "title": "ECOI/IRB Canada — Côte d'Ivoire : information sur l'ethnie Wé, 2018",
         "url": "https://www.ecoi.net/de/dokument/2041625.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Minority Rights Group — Côte d'Ivoire",

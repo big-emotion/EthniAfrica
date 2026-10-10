@@ -108,12 +108,14 @@
       {
         "title": "101 Last Tribes — Marka people of Mali and Burkina Faso",
         "url": "https://www.101lasttribes.com/tribes/marka.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Qiraat Africa — Marka, people of Mali and Burkina Faso (2025)",
         "url": "https://qiraatafrican.com/en/18720/marka-people-of-mali-and-burkina-faso/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "SIL Ethnologue — Marka language (rkm)",

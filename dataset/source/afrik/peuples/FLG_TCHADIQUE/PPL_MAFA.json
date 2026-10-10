@@ -96,7 +96,8 @@
       {
         "title": "101 Last Tribes — Mafa people",
         "url": "http://www.101lasttribes.com/tribes/mafa.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Gerhard Muller-Kosack — The Way of the Beer. Mandaras Publishing, London 2003",
@@ -106,7 +107,8 @@
       {
         "title": "Mandaras.info — Mafa bull festival (maray) Zlama slideshow",
         "url": "https://www.mandaras.info/bull-festival/bull-festival-slides.htm",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Mafa (maf)",

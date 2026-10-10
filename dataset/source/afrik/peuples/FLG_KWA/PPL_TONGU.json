@@ -90,7 +90,8 @@
       {
         "title": "CityPopulation – North Tongu District",
         "url": "https://www.citypopulation.de/en/ghana/admin/volta/0412__north_tongu/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Localizely – Ewe language code",

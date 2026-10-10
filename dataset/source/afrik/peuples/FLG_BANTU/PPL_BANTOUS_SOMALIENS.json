@@ -112,7 +112,8 @@
       {
         "title": "Gosha people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/gosha.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "The Somali Bantu: Their History and Culture – Cultural Orientation Resource Exchange",
@@ -122,7 +123,8 @@
       {
         "title": "Orville Jenkins – Who are the 'Somali Bantu'?, 2015",
         "url": "http://orvillejenkins.com/peoples/somalibantu.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Refworld – World Directory of Minorities and Indigenous Peoples – Somalia",

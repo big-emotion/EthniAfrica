@@ -134,12 +134,14 @@
       {
         "title": "Claudot-Hawad, Helene. Touaregs : Voix solitaires sous l'horizon confisque. Paris: Editions de l'EHESS, 1996",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Prasse, Karl-Gottfried. The Tuareg: The Blue People. Copenhagen: Museum Tusculanum Press, 1995",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Imuhar / Tamahaq Dictionary",

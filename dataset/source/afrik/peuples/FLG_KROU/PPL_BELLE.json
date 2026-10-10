@@ -98,7 +98,8 @@
       {
         "title": "AfricaBib – A Kuwaa (Belle) Wordlist, Liberian Studies Journal",
         "url": "https://www.africabib.org/rec.php?RID=188860991",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "Modern Ghana – Historicity Of Liberia Before The Arrival Of The Settler",

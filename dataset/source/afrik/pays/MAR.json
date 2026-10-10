@@ -255,7 +255,8 @@
       {
         "title": "Recensements marocains",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",

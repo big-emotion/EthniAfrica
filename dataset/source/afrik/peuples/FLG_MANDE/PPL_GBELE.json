@@ -104,12 +104,14 @@
       {
         "title": "Worldometer — Cote d'Ivoire Population",
         "url": "https://www.worldometers.info/world-population/cote-d-ivoire-population/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Institut National de la Statistique de Cote d'Ivoire (INS) — Recensement General de la Population et de l'Habitat 2021",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

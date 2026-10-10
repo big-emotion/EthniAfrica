@@ -103,17 +103,20 @@
       {
         "title": "Evans-Pritchard, E. E. The Nuer: A Description of the Modes of Livelihood and Political Institutions of a Nilotic People. Oxford: Clarendon Press, 1940",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Evans-Pritchard, E. E. Nuer Religion. Oxford: Clarendon Press, 1956",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Evans-Pritchard, E. E. Kinship and Marriage among the Nuer. Oxford: Clarendon Press, 1951",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Hutchinson, Sharon E. Nuer Dilemmas: Coping with Money, War, and the State. Berkeley: University of California Press, 1996",
@@ -124,7 +127,8 @@
       {
         "title": "101 Last Tribes — Nuer people",
         "url": "http://www.101lasttribes.com/tribes/nuer.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue — Nuer (NUS)",

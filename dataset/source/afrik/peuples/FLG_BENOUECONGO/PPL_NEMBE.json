@@ -87,12 +87,14 @@
       {
         "title": "Data Commons — Nembe, Bayelsa State, Nigeria",
         "url": "https://datacommons.org/place/wikidataId/Q3510576",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "City-Facts — Nembe, Bayelsa, Nigeria (population)",
         "url": "https://www.city-facts.com/nembe/population",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Alagoa, E.J. (2009). A History of the Niger Delta. Port Harcourt: Onyoma Research Publications",

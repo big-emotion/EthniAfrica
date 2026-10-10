@@ -97,7 +97,8 @@
       {
         "title": "101 Last Tribes — Toposa",
         "url": "https://www.101lasttribes.com/tribes/toposa2.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Toposa in South Sudan",
@@ -108,7 +109,8 @@
       {
         "title": "Tornay, Serge. 1981. Générations, classes d'âge et structures de parenté. Systèmes de Pensée en Afrique Noire",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "France Leclerc — The Toposa People of South Sudan",

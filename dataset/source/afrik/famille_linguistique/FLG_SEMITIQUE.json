@@ -145,7 +145,8 @@
       {
         "title": "SIL International / Ethnologue (2025) – *Languages of the World*. 26e édition. Dallas: SIL International",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook (2025) – *Field Listing: Languages*. Central Intelligence Agency. Consulté en 2025",

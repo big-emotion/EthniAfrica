@@ -121,12 +121,14 @@
       {
         "title": "Qiraat Africa — The Yao/Wayao people of Lake Malawi (2026)",
         "url": "https://qiraatafrican.com/en/19883/the-yao-wayao-people-of-lake-malawi/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "101 Last Tribes — Yao people",
         "url": "https://www.101lasttribes.com/tribes/yao.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Yao language (yao)",

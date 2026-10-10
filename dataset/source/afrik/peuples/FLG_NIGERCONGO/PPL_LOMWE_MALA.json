@@ -99,7 +99,8 @@
       {
         "title": "Orville Boyd Jenkins — The Lomwe of Mozambique and Malawi: A Cultural Profile",
         "url": "http://orvillejenkins.com/profiles/lomwe.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Lomwe, Malawi (lon)",
@@ -122,7 +123,8 @@
       {
         "title": "Facebook / Kamba Cultural Center — Lomwe tribe origins and culture",
         "url": "https://www.facebook.com/groups/kambaculturalcenter/posts/10152471646389977/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

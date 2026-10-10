@@ -105,7 +105,8 @@
       {
         "title": "Recensement éthiopien 2007 — Sheko : 37 573 individus",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

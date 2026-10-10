@@ -184,7 +184,8 @@
       {
         "title": "Recensements zimbabwéens",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "CIA World Factbook – Zimbabwe (ethnic groups, 2012 census)",

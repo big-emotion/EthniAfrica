@@ -521,6 +521,7 @@
         "title": "IndexMundi – Guinea : ethnic groups",
         "url": "https://www.indexmundi.com/guinea/ethnic_groups.html",
         "tier": "unverified",
+        "source_kind": "discovery",
         "notes": "Reprend l'estimation de 2018 du World Factbook de la CIA (Peuls 33,4 %, Malinkés 29,4 %, Soussous 21,2 %). D'autres relais attribuent à la même estimation des parts différentes, et le Factbook n'est plus publié."
       }
     ],

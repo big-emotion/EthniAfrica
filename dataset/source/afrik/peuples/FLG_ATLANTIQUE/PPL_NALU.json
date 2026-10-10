@@ -117,7 +117,8 @@
       {
         "title": "101 Last Tribes, Nalu people",
         "url": "https://www.101lasttribes.com/tribes/nalu.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

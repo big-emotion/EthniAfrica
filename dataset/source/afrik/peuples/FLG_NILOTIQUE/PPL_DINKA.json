@@ -128,12 +128,14 @@
       {
         "title": "Deng, Francis Mading — The Dinka of the Sudan. New York: Holt, Rinehart and Winston, 1972",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Lienhardt, Godfrey — Divinity and Experience: The Religion of the Dinka. Oxford: Clarendon Press, 1961",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Johnson, Douglas H. — The Root Causes of Sudan's Civil Wars. Oxford: James Currey, 2003",

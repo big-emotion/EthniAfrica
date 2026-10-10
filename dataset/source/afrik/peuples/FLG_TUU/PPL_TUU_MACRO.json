@@ -116,7 +116,8 @@
       {
         "title": "Sorosoro — Tuu languages",
         "url": "https://www.sorosoro.org/en/tuu-languages/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Güldemann, Tom — Studies in Tuu (Southern Khoisan) Linguistics. Various publications",
@@ -126,7 +127,8 @@
       {
         "title": "Traill, Anthony — Phonetic and Phonological Studies of !Xóõ Bushman. Hamburg: Helmut Buske, 1985",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Bleek, Wilhelm H.I. & Lloyd, Lucy — Specimens of Bushman Folklore. London: George Allen, 1911",

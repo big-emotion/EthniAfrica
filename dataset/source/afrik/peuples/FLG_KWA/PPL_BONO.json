@@ -87,7 +87,8 @@
       {
         "title": "Bono Region Population Statistics – Citypopulation.de",
         "url": "https://www.citypopulation.de/en/ghana/admin/07__bono/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Ghana Statistical Service, Population and Housing Census 2021",
@@ -98,7 +99,8 @@
       {
         "title": "Posnansky, Merrick – Aspects of Early West African Trade, World Archaeology, 5(2), 1973",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Stahl, Ann Brower – Making History in Banda: Anthropological Visions of Africa's Past, Cambridge University Press, 2001",

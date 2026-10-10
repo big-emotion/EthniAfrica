@@ -135,7 +135,8 @@
       {
         "title": "Recensements nationaux rwandais",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "ONU – Données démographiques 2025",

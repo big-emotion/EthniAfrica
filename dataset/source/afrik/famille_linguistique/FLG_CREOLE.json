@@ -87,7 +87,8 @@
       {
         "title": "Université Laval (Axl.cefan) – *Aménagement linguistique dans le monde* – Créoles africains et usage historique du terme",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Trésor de la langue française – Étymologie et évolution sémantique du terme \"créole\"",
@@ -97,7 +98,8 @@
       {
         "title": "Sorbonne Université – *Les langues créoles* – Histoire sociolinguistique des créoles d'Afrique",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Holm, J. – *Pidgins and Creoles*",

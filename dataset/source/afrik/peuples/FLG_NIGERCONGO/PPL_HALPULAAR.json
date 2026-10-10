@@ -94,7 +94,8 @@
       {
         "title": "Tukulor people – 101 Last Tribes, www.101lasttribes.com/tribes/tukulor.html (consulte 2025)",
         "url": "https://www.101lasttribes.com/tribes/tukulor.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Tukulor empire – Encyclopaedia Britannica, www.britannica.com/place/Tukulor-empire (consulte 2025)",
@@ -105,7 +106,8 @@
       {
         "title": "Haalpulaar Identity as a Response to Wolofization – AfricaBib, www.africabib.org/rec.php?RID=147226244 (1995)",
         "url": "https://www.africabib.org/rec.php?RID=147226244",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "repository"
       },
       {
         "title": "A Glance to the History of the Fulbe/Haapulaar en – Suudu Baaba, suudubaaba.home.blog (2019)",
@@ -115,7 +117,8 @@
       {
         "title": "Senegal Cultural Field Guide Ethnic Groups – US Military, info.publicintelligence.net/MCIA-SenegalCultureGuide.pdf",
         "url": "https://info.publicintelligence.net/MCIA-SenegalCultureGuide.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "government"
       }
     ]
   }

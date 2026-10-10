@@ -89,7 +89,8 @@
       {
         "title": "101 Last Tribes — Esan people",
         "url": "http://www.101lasttribes.com/tribes/esan.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue (SIL International) — Esan language, code ish",
@@ -106,7 +107,8 @@
       {
         "title": "City Population — Edo State LGA data (2022)",
         "url": "https://citypopulation.de/en/nigeria/admin/NGA012__edo/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Ajugo, U. B. The True History of Ekpeyeland: 3000 BC to 2005 AD (reference comparative sur l'organisation des peuples du Delta)",

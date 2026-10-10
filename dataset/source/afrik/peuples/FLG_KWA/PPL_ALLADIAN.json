@@ -96,7 +96,8 @@
       {
         "title": "Facebook EthnicsDECI – Jacqueville",
         "url": "https://www.facebook.com/ethniesdeCI/posts/jacquevillela-commune-de-jacqueville",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

@@ -118,7 +118,8 @@
       {
         "title": "Daniel McFarland, Historical Dictionary of Upper Volta, Metuchen, Scarecrow Press, 1978",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue, Bissa [bib] – SIL International",
@@ -129,7 +130,8 @@
       {
         "title": "101 Last Tribes — Bissa people",
         "url": "http://www.101lasttribes.com/tribes/bissa.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Discover Burkina Faso — Culture des Bissa",
@@ -144,7 +146,8 @@
       {
         "title": "Facebook — A Rich Cultural Heritage: The Bissa People",
         "url": "https://www.facebook.com/engrkogwuonyepatrick.patsallyonyeka/videos/949872800427144/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

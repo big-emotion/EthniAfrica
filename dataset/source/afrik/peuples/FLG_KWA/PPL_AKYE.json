@@ -86,7 +86,8 @@
       {
         "title": "101 Last Tribes — Attie people",
         "url": "https://www.101lasttribes.com/tribes/attie.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Gateway Africa Safaris — Akye Tribe",
@@ -118,7 +119,8 @@
       {
         "title": "Akanfo Facebook — Akye Attie people",
         "url": "https://www.facebook.com/Akanfo/posts/the-akye-attie-are-a-separate-akan-people/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Glottolog — Attie",

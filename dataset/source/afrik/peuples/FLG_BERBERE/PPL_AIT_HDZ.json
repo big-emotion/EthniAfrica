@@ -90,7 +90,8 @@
       {
         "title": "IRCAM (Institut Royal de la Culture Amazighe, Rabat)",
         "url": "https://www.ircam.ma/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "academic"
       },
       {
         "title": "Journal of Tourism and Leisure - Two Days in Ait Hadiddou",

@@ -112,7 +112,8 @@
       {
         "title": "101lasttribes.com — Musgum people",
         "url": "http://www.101lasttribes.com/tribes/musgum.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Musgu (mug)",
@@ -123,7 +124,8 @@
       {
         "title": "The African History Channel — The tolekakay of the Musgum",
         "url": "https://www.facebook.com/TheAfricanHistoryChannelFB/posts/the-tolekakay-of-the-musgum-traditional-architecture-between-the-lower-logone-an/394568216210204/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

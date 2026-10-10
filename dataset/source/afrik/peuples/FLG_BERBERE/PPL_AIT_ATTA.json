@@ -112,7 +112,8 @@
       {
         "title": "IRCAM (Institut Royal de la Culture Amazighe), Rabat",
         "url": "https://www.ircam.ma/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "academic"
       },
       {
         "title": "IWGIA, The Indigenous World 2024 Morocco",

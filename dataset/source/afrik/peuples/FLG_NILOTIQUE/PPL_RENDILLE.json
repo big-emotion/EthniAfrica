@@ -100,12 +100,14 @@
       {
         "title": "101 Last Tribes — Rendille",
         "url": "https://www.101lasttribes.com/tribes/rendille.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Blue Gecko — Rendille stages of life, Traditional Music and Cultures of Kenya",
         "url": "http://www.bluegecko.org/kenya/tribes/rendille/lifestages.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Wiktionary ISO 639-3 codes Africa : rel — Rendille",

@@ -112,7 +112,8 @@
       {
         "title": "CityPopulation.de — Sidama Region",
         "url": "https://www.citypopulation.de/en/ethiopia/admin/ET08__sidama/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Academia.edu — Fichee-Chambalalla as a Sidama New Year Festival and World Intangible Cultural Heritage, 2022",

@@ -101,7 +101,8 @@
       {
         "title": "101 Last Tribes — Murle people",
         "url": "https://www.101lasttribes.com/tribes/murle.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "WALS Online — Murle language (ISO 639-3: mur)",
@@ -130,12 +131,14 @@
       {
         "title": "Arensen, J. E. (1992). Mice are Men: Language and Society Among the Murle of Sudan. Dallas: SIL International",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Lewis, B. A. (1972). The Murle: Red Chiefs and Black Commoners. Oxford: Clarendon Press",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ethnologue — Murle (MUR)",

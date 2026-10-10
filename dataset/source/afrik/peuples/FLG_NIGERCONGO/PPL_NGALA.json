@@ -106,7 +106,8 @@
       {
         "title": "101 Last Tribes — Bangala people",
         "url": "https://www.101lasttribes.com/tribes/bangala.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Bokamba, E.G. — Lingala as a Supranational Language in DRC. CERECK, 2019",
@@ -146,6 +147,7 @@
         "title": "Omasombo Tshonda, Jean (dir.), Mongala, Musée royal de l'Afrique centrale, 2015, p. 15-17",
         "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/monographies-provinces/mongala.pdf",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Rapporte la lecture de Coquilhat (1888), pour qui Ba-Ngala signifie les gens de la petite rivière, et les notations de Stanley en 1877 pour la contrée Manngala et la rivière Banngala."
       },
       {

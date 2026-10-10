@@ -108,7 +108,8 @@
       {
         "title": "101 Last Tribes – Antankarana",
         "url": "http://www.101lasttribes.com/tribes/antankarana.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook – Madagascar",

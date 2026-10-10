@@ -100,7 +100,8 @@
       {
         "title": "Gusii history – Traditional Music and Cultures of Kenya, Jens Finke, 2003",
         "url": "https://www.bluegecko.org/kenya/tribes/gusii/history.htm",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Gusii in Kenya – Joshua Project",
@@ -117,7 +118,8 @@
       {
         "title": "Information on the Kisii tribe – Immigration and Refugee Board of Canada, 2005",
         "url": "https://www.ecoi.net/en/document/1060343.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       }
     ]
   }

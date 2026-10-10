@@ -286,7 +286,8 @@
       {
         "title": "Recensements érythréens",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Études anthropologiques sur les peuples de l'Érythrée",
@@ -296,7 +297,8 @@
       {
         "title": "Encyclopaedia Aethiopica",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",

@@ -99,7 +99,8 @@
       {
         "title": "101 Last Tribes – Tera people",
         "url": "https://101lasttribes.com/tribes/tera.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Triumph Newspapers – Ngwarda annual harvesting festival of Tera people, 2024",
@@ -126,7 +127,8 @@
       {
         "title": "Peoplegroups.org – Tera in Nigeria, population 2024",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "missionary_database"
       }
     ]
   }

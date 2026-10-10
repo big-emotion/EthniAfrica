@@ -146,7 +146,8 @@
       {
         "title": "Recensements nationaux : Tchad, République centrafricaine, République démocratique du Congo, Ouganda, Soudan du Sud (années 2010-2025 approximatives, selon disponibilité)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Glottolog 5.3 (2025) – \"Central Sudanic\" (glottocode cent2225) : arbre de classification confirmant 5 branches immédiates – Sara-Bongo-Bagirmi, Moru-Madi, Mangbetu-Asua, Membi-Mangbutu-Efe, Lenduic",

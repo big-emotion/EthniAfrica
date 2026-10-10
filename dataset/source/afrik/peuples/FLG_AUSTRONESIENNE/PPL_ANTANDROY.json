@@ -101,7 +101,8 @@
       {
         "title": "Worldometer – Madagascar Population",
         "url": "https://www.worldometers.info/world-population/madagascar-population/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "CIA World Factbook – Madagascar",

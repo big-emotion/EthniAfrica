@@ -102,12 +102,14 @@
       {
         "title": "101 Last Tribes – Gogo people",
         "url": "https://www.101lasttribes.com/tribes/gogo.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Kwekudee Trip Down Memory Lane – Wagogo people",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2013/12/wagogo-gogo-people-tanzanian-dancing.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

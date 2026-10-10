@@ -120,7 +120,8 @@
       {
         "title": "Ethnologue — Nlu (ngh)",
         "url": "https://rosettapanglossia.longnow.org/index.php?title=Nlu_Language_%28ngh%29",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

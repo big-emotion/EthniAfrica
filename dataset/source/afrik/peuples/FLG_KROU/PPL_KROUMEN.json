@@ -122,12 +122,14 @@
       {
         "title": "Qiraat Africa — The Kru/Kroo of West Africa",
         "url": "https://qiraatafrican.com/en/19895/the-kru-kroo-of-west-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Facebook/APRNews1 — Les Kroumen, 2024",
         "url": "https://www.facebook.com/APRNEWS1/posts/connais-tu-les-kroumen",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Encyclopædia Britannica, 11e édition (1911) — Krumen",

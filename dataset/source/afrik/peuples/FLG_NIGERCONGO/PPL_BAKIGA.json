@@ -115,7 +115,8 @@
       {
         "title": "Trip Down Memory Lane (Kwekudee) — Bakiga (Kiga) People",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2013/07/bakiga-kiga-people-beautiful-and.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Uganda Bureau of Statistics (UBOS) — National Population and Housing Census 2024 Final Report",
@@ -138,7 +139,8 @@
       {
         "title": "Facebook — Estimated Population: Ethnic Groups in Uganda (2025)",
         "url": "https://www.facebook.com/EmmanuelMotelin/posts/estimated-population-ethnic-groups-in-uganda-2025",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

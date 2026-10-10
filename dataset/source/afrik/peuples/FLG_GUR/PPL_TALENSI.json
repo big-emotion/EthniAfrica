@@ -94,7 +94,8 @@
       {
         "title": "Kwekudee – Tallensi people, custodians of ancient Gurunshi culture",
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2013/08/tallensi-people-custodians-of-ancient.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "UBC Library – Tallensi ethnography (Fortes 1945, 1954)",
@@ -110,7 +111,8 @@
       {
         "title": "Citypopulation.de – Talensi District",
         "url": "https://www.citypopulation.de/en/ghana/admin/upper_east/0905__talensi/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Fortes, Meyer. The Dynamics of Clanship among the Tallensi. Oxford University Press, 1945",

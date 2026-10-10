@@ -90,7 +90,8 @@
       {
         "title": "City Facts – Eket, Akwa Ibom, Nigeria",
         "url": "https://www.city-facts.com/eket/population",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Abasiattai, M.B. – History of the Cross River Region of Nigeria, Unical Press, 1988",

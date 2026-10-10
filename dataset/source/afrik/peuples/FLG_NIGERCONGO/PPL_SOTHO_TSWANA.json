@@ -143,7 +143,8 @@
       {
         "title": "South Africa Gateway — Languages of South Africa",
         "url": "https://southafrica-info.com/arts-culture/the-languages-of-south-africa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

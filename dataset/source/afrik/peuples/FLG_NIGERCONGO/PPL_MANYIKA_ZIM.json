@@ -106,7 +106,8 @@
       {
         "title": "101 Last Tribes — Manyika people",
         "url": "https://www.101lasttribes.com/tribes/manyika.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "University of Missouri — Manyika, Shona people of Zimbabwe (PDF)",
@@ -134,7 +135,8 @@
       {
         "title": "Facebook — Manyika people of Zimbabwe and Mozambique",
         "url": "https://www.facebook.com/groups/1055261108291845/posts/2305889616562315/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

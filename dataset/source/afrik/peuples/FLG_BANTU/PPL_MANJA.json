@@ -100,7 +100,8 @@
       {
         "title": "101 Last Tribes – Mandja people",
         "url": "https://www.101lasttribes.com/tribes/mandja.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "PeopleGroups.org – Manja of Central African Republic",
@@ -121,7 +122,8 @@
       {
         "title": "Olson, James Stuart – The Peoples of Africa: An Ethnohistorical Dictionary, Greenwood, 1996",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   },

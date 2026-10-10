@@ -80,7 +80,8 @@
       {
         "title": "Nanumba North Municipal – City Population 2021",
         "url": "https://www.citypopulation.de/en/ghana/admin/northern/0803__nanumba_north_municipal/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Political Anthropology of History: The Case of Nanun, Northern Ghana – Sociostudies.org",
@@ -96,7 +97,8 @@
       {
         "title": "Immigration and Refugee Board of Canada – Primary language of the Nanumba, 1996",
         "url": "https://www.ecoi.net/en/document/1209225.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       }
     ]
   }

@@ -106,12 +106,14 @@
       {
         "title": "Jenkins, Orville. Meen People Profile",
         "url": "http://orvillejenkins.com/profiles/meen.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Abbink, Jon G. An Ethno-Historical Perspective on Me'en Territorial Organization (Southwest Ethiopia). Anthropos, 87(4/6), 1992",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Brilliant Ethiopia — Omo Valley Tribes (Bodi/Me'en section)",
@@ -121,7 +123,8 @@
       {
         "title": "Recensement éthiopien 2007 — Me'en : 151 489 individus (Nilo-Sahariens)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

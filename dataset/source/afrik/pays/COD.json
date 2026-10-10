@@ -798,6 +798,7 @@
         "title": "The Yeke and the Congo Free State, from confrontation to collaboration",
         "url": "https://www.africamuseum.be/en/discover/history_articles/the_yeke_and_the_congo_free_state",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Recherche institutionnelle sur l'État yeke de Msiri, Bunkeya et son incorporation violente dans l'État indépendant du Congo."
       },
       {
@@ -825,6 +826,7 @@
         "title": "Museum history",
         "url": "https://www.africamuseum.be/en/discover/history",
         "tier": "referenced",
+        "source_kind": "academic",
         "notes": "Référence institutionnelle sur l'État indépendant du Congo et l'administration du Congo belge."
       },
       {

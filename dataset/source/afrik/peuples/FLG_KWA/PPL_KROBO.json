@@ -94,7 +94,8 @@
       {
         "title": "Lower Manya Krobo population – CityPopulation.de",
         "url": "https://www.citypopulation.de",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Yilo Krobo Municipal population 2021 – Ghana Statistical Service",
@@ -105,7 +106,8 @@
       {
         "title": "Krobo People Migration from Klo Mountains – Facebook / Groupes communautaires",
         "url": "https://www.facebook.com/groups/924725521287406/posts/2143468266079786/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Lower Manya Krobo Ghana statistics 2025 – Global Populations",

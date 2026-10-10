@@ -122,17 +122,20 @@
       {
         "title": "USHMM — Divided by Ethnicity : Rwanda",
         "url": "https://www.ushmm.org/genocide-prevention/countries/rwanda/divided-by-ethnicity",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Qiraat Africa — The Hutu people of the African Great Lakes",
         "url": "https://qiraatafrican.com/en/13614/the-hutu-people-of-the-african-great-lakes/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "World Population Review — Burundi 2025",
         "url": "https://worldpopulationreview.com/countries/burundi",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "SIL Ethnologue — Kirundi (run)",
