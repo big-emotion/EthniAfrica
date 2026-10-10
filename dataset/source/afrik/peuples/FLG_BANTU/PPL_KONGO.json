@@ -12,7 +12,7 @@
         "Bakongo (forme plurielle avec prefixe bantou ba-)",
         "Kongo dia Ntotila (designant les Kongo du royaume central)"
       ],
-      "originOfExonyms": "Le terme Kongo designait a l'origine le royaume fonde au XIVe siecle dont la capitale etait Mbanza Kongo (actuelle province du Kongo Central, RDC). Les Portugais, premiers Europeens a entrer en contact en 1483, adopteent ce nom pour designer le peuple et la langue. Le prefixe Ba- (peuple de) donne Bakongo.",
+      "originOfExonyms": "Le terme Kongo designait a l'origine le royaume fonde au XIVe siecle dont la capitale etait Mbanza Kongo (actuel Angola). Les Portugais, premiers Europeens a entrer en contact en 1483, adopteent ce nom pour designer le peuple et la langue. Le prefixe Ba- (peuple de) donne Bakongo.",
       "whyProblematic": null,
       "contemporaryUsage": "Bakongo et Kongo sont utilises indifferemment selon les contextes. La langue est officellement appelee Kikongo (ki- designant la langue en bantou). Le terme Kongo est aussi le nom du fleuve Congo, du royaume historique et de la province RDC du Kongo Central.",
       "peopleGroupId": "PGRP_KONGO",
@@ -183,6 +183,14 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "Formation du royaume dont la date est inconnue, deux datations proposées, chefferie vungu au nord du fleuve : p. 604."
+      },
+      {
+        "title": "Mbanza Kongo, Vestiges of the Capital of the former Kingdom of Kongo",
+        "author": "UNESCO",
+        "url": "https://whc.unesco.org/en/list/1511",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "La notice situe Mbanza Kongo en Angola et la présente comme la capitale politique et spirituelle du royaume Kongo."
       }
     ]
   },
@@ -320,7 +328,7 @@
               "label": "Proposée en 1887, reprise en 1994"
             },
             "hypothesisGroup": "origine du nom Kongo",
-            "statement": "Le nom Kongo viendrait du verbe konga, « cueillir de gros fruits », selon William Holman Bentley, qui ne tranche pas. Samuel Nelson le rattache au même verbe, au sens de « rassembler », selon l'article de Wikipédia. Le dictionnaire de Karl Edvard Laman donne bien kônga, « rassembler », sans le relier au nom.",
+            "statement": "William Holman Bentley cite konga, « cueillir de gros fruits », après avoir précisé que l’origine du nom Kongo reste incertaine. Il ne présente pas ce mot comme une origine démontrée du nom. Samuel Nelson le rattache au sens de « rassembler », selon l’article de Wikipédia ; nous n’avons pas lu son ouvrage. Le dictionnaire de Karl Edvard Laman donne kônga, « rassembler », sans le relier au nom.",
             "sources": [
               {
                 "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
@@ -359,7 +367,7 @@
               "label": "Proposée en 1887, reprise en 2015"
             },
             "hypothesisGroup": "origine du nom Kongo",
-            "statement": "Le nom Kongo viendrait de nkongo, « chasseur », selon William Holman Bentley, qui ne tranche pas. Alisa LaGamma y voit un chasseur aventureux et héroïque, selon l'article de Wikipédia.",
+            "statement": "William Holman Bentley cite nkongo, « chasseur », après avoir précisé que l’origine du nom Kongo reste incertaine. Il ne présente pas ce mot comme une origine démontrée du nom. Alisa LaGamma y voit un chasseur aventureux et héroïque, selon l’article de Wikipédia ; nous n’avons pas lu son ouvrage.",
             "sources": [
               {
                 "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
@@ -381,6 +389,26 @@
                 "notes": "Section Etymology, consulté le 9 octobre 2026. Elle rapporte les lectures de Samuel Nelson (Colonialism in the Congo Basin, 1994) et d'Alisa LaGamma (Kongo: Power and Majesty, 2015, p. 18), que nous n'avons pas lues, et dit que Bakongo s'impose surtout depuis le début du XXe siècle."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Récit publié en 2023"
+            },
+            "hypothesisGroup": "origine du nom Kongo",
+            "statement": "Dans un texte publié le 23 février 2023 par Malaki ma Kongo, Masengo ma Mbongolo relie le nom Kongo au léopard et aux récits des ancêtres. Il le présente comme le nom de la terre du léopard. Ce texte ne précise pas quand le nom est apparu. Sa date de publication ne donne pas non plus l’âge du récit.",
+            "sources": [
+              {
+                "title": "Malaki ma Kongo des fils du Léopard",
+                "author": "Masengo ma Mbongolo",
+                "year": 2023,
+                "url": "https://www.malakimakongo.net/nouvelles/malaki-ma-kongo-des-fils-du-leopard",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Texte signé publié par l’association culturelle Malaki ma Kongo. L’auteur y relie Kongo au léopard et aux récits des ancêtres. Il ne précise pas la date de naissance du nom."
+              }
+            ]
           }
         ]
       },
@@ -391,7 +419,7 @@
         "languageOfOrigin": "kon",
         "namedBy": null,
         "shortLine": "Le nom qu'ils se donnent : Bakongo au pluriel, Mukongo pour une seule personne.",
-        "periodLabel": "Écrit dès 1887",
+        "periodLabel": "Écrit dès 1886",
         "accounts": [
           {
             "period": {
@@ -444,13 +472,13 @@
           },
           {
             "period": {
-              "from": 1887,
-              "to": 1887,
-              "label": "Livre publié en 1887"
+              "from": 1886,
+              "to": 1886,
+              "label": "Préface publiée en 1886"
             },
             "birth": true,
             "formAsWritten": "Bakongo",
-            "statement": "Le nom Bakongo est écrit par William Holman Bentley, qui le réserve alors aux Kongo indépendants vivant à l'est de la rivière Kwilu. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "statement": "Le nom Bakongo apparaît dans la préface publiée par William Holman Bentley en 1886. Il le réserve alors aux Kongo indépendants vivant à l’est de la rivière Kwilu. Cette trace écrite ne donne pas la date de naissance du nom.",
             "actors": [
               {
                 "name": "William Holman Bentley",
@@ -459,14 +487,14 @@
             ],
             "sources": [
               {
-                "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+                "title": "Dictionary and Grammar of the Kongo Language — Preface",
                 "author": "William Holman Bentley",
-                "year": 1887,
-                "url": "https://archive.org/details/dictionarygramma00bent",
+                "year": 1886,
+                "url": "https://tile.loc.gov/storage-services/service/gdc/gdclccn/44/01/76/16/44017616/44017616.pdf",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "page": "p. ix",
-                "notes": "Londres, Baptist Missionary Society, 1887. Préface lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Bentley, missionnaire baptiste à San Salvador, l'ancienne Mbanza Kongo, écrit qu'on ne peut rien dire de sûr sur l'origine du nom."
+                "page": "p. vii",
+                "notes": "Préface publiée séparément en 1886. Elle emploie Bakongo avec un sens localisé et explique le choix de Kongo avec un K. Le livre complet de 1887 reprend ces passages."
               }
             ]
           }
