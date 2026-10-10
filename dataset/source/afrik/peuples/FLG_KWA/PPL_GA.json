@@ -119,5 +119,270 @@
         "notes": "Survol linguistique des langues du Ghana, dont le ga-dangme et ses traditions orales."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ga désigne un peuple de la côte du Ghana, autour d'Accra, qui se nomme lui-même Gã. D'autres noms existent : Akra, le nom de la ville d'Accra, que les Européens ont donné au peuple, et Ga Mashi pour les Ga du vieux centre d'Accra. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Gã",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gaa",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple de la région d'Accra.",
+        "periodLabel": "Écrit dès 1858",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gã désigne le peuple et la langue de la région d'Accra. Son origine est discutée : l'explication que nous avons trouvée est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethnologue: Languages of the World — Ga (gaa)",
+                "author": "SIL International",
+                "year": 2024,
+                "url": "https://www.ethnologue.com/language/gaa/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Réutilisée depuis les sources de la fiche."
+              },
+              {
+                "title": "History of the Gold Coast and Asante, based on traditions and historical facts",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 11",
+                "notes": "Bâle, imprimé pour l'auteur, 1895, lu dans l'exemplaire numérisé sur archive.org. Reindorf, pasteur africain de la Mission de Bâle à Christiansborg, s'appuie sur les traditions orales qu'il a recueillies."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1475,
+              "to": 1499,
+              "label": "Fin du XVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le peuple ga vit déjà en communautés de clans et de lignages ; les Ga Mashi se sont donné un roi, qui tient sa cour à Ayawaso, selon l'historien A. A. Boahen.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
+                "author": "A. A. Boahen",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 447",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "statement": "Le nom Gã apparaît par écrit dans le titre de la grammaire du missionnaire Johannes Zimmermann, qui parle de la « langue akra ou gã ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Akra- or Gã-Language",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language, tome 1",
+                "author": "Johannes Zimmermann",
+                "year": 1858,
+                "url": "https://archive.org/details/agrammaticalske01zimmgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre",
+                "notes": "Stuttgart, Mission de Bâle, 1858, lu dans l'exemplaire numérisé sur archive.org."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gã désigne surtout le peuple et le pays compris entre la lagune Tshemu, près de Tema, la rivière Sakumo et les monts d'Akuapem, mais on l'étend souvent à la côte jusqu'à la Volta, écrit Carl Christian Reindorf.",
+            "sources": [
+              {
+                "title": "History of the Gold Coast and Asante, based on traditions and historical facts",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 11",
+                "notes": "Bâle, imprimé pour l'auteur, 1895, lu dans l'exemplaire numérisé sur archive.org. Reindorf, pasteur africain de la Mission de Bâle à Christiansborg, s'appuie sur les traditions orales qu'il a recueillies."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "Proposée en 1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gã évoquerait des fourmis : Carl Christian Reindorf note que gaga, sa forme redoublée, désigne de grosses fourmis noires, et voit dans ce nom le signe d'un peuple nombreux et puissant.",
+            "hypothesisGroup": "origine du nom Gã",
+            "sources": [
+              {
+                "title": "History of the Gold Coast and Asante, based on traditions and historical facts",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 11-12",
+                "notes": "Bâle, imprimé pour l'auteur, 1895, lu dans l'exemplaire numérisé sur archive.org. Reindorf, pasteur africain de la Mission de Bâle à Christiansborg, s'appuie sur les traditions orales qu'il a recueillies."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Akra",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la ville d'Accra, que les Européens ont donné au peuple.",
+        "periodLabel": "Écrit dès 1705",
+        "accounts": [
+          {
+            "period": {
+              "from": 1705,
+              "to": 1705,
+              "label": "Traduction publiée en 1705"
+            },
+            "era": "polity",
+            "statement": "Le nom Akra apparaît par écrit, sous la forme « Acra », chez le marchand néerlandais Willem Bosman, qui parle des « Nègres d'Acra » habitant la côte jusqu'à la Volta. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Negroes of Acra",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A New and Accurate Description of the Coast of Guinea",
+                "author": "Willem Bosman",
+                "year": 1705,
+                "url": "https://archive.org/details/b30519032",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 326",
+                "notes": "Londres, J. Knapton et D. Midwinter, 1705, traduction anglaise de l'original néerlandais de 1704, lu dans l'exemplaire numérisé sur archive.org."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "Proposée en 1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Akra viendrait de nkran, le nom que les locuteurs du twi et du fante donnent à une fourmi : des serviteurs fante auraient dit aux Portugais que le lieu s'appelait Nkran, et les Portugais l'auraient prononcé Akra, selon Carl Christian Reindorf.",
+            "hypothesisGroup": "origine du nom Akra",
+            "sources": [
+              {
+                "title": "History of the Gold Coast and Asante, based on traditions and historical facts",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 12",
+                "notes": "Bâle, imprimé pour l'auteur, 1895, lu dans l'exemplaire numérisé sur archive.org. Reindorf, pasteur africain de la Mission de Bâle à Christiansborg, s'appuie sur les traditions orales qu'il a recueillies."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "Proposée en 1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Akra aurait été formé par les Européens à partir du nom twi Nkran, selon le linguiste Johann Gottlieb Christaller, qui ajoute que le nom du peuple dans sa langue est Ga.",
+            "hypothesisGroup": "origine du nom Akra",
+            "sources": [
+              {
+                "title": "History of the Gold Coast and Asante, based on traditions and historical facts",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. X",
+                "notes": "Bâle, imprimé pour l'auteur, 1895, lu dans l'exemplaire numérisé sur archive.org. Reindorf, pasteur africain de la Mission de Bâle à Christiansborg, s'appuie sur les traditions orales qu'il a recueillies. Le passage cité figure dans les remarques préliminaires de Johann Gottlieb Christaller."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ga Mashi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gaa",
+        "namedBy": null,
+        "shortLine": "Le nom des Ga du vieux centre d'Accra.",
+        "periodLabel": "Attesté dès le XVIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1500,
+              "to": 1599,
+              "label": "XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Ga Mashi désigne les premiers Ga à s'établir sur la côte, au XVIe siècle, avec les gens de Nungua et de Tema, selon l'historien A. A. Boahen.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
+                "author": "A. A. Boahen",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 446",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Tradition non datée"
+            },
+            "statement": "Le nom Mashi voudrait dire « ceux qui ont laissé leur pâte » : en route vers la côte, les Akra seraient partis de nuit en abandonnant leur pâte, selon la tradition que rapporte Carl Christian Reindorf.",
+            "hypothesisGroup": "origine du nom Ga Mashi",
+            "sources": [
+              {
+                "title": "History of the Gold Coast and Asante, based on traditions and historical facts",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 6-7",
+                "notes": "Bâle, imprimé pour l'auteur, 1895, lu dans l'exemplaire numérisé sur archive.org. Reindorf, pasteur africain de la Mission de Bâle à Christiansborg, s'appuie sur les traditions orales qu'il a recueillies."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
