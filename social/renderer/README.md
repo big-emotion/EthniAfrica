@@ -10,7 +10,7 @@ This adapter exports cards through the accepted [EthniAfrica Cartes system](../d
 - [x] Add a review page, complete rendered-text alternative descriptions and fidelity comparisons.
 - [x] Resolve the two reference-image discrepancies by explicit operator decision; all 31 references pass and roadmap step 4 is complete.
 
-The [canonical specification](https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/212795394) owns the full roadmap. Research/corpus automation is step 5, publication packaging step 6, and cleanup step 7. They are not implemented by this adapter.
+The [canonical specification](https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/212795394) owns the full roadmap. Research/corpus alignment (step 5) and publication packaging (step 6) are available through the shared production skill; cleanup is step 7 and remains pending. They are separate from this adapter.
 
 ## Commands
 
@@ -43,7 +43,7 @@ The browser can access only the files snapshotted for that run. Images must deco
 
 Text fidelity checks compare supplied text with the rendered DOM after accounting for accent markup and French spacing. Inline coloured prefixes remain part of the complete name. This is not OCR or proof that every letter is readable in the PNG; inspect the final images.
 
-The alternative description combines `imageAlt`, displayed map labels/figures, inset labels and the actual panel reading order. It includes quotations, translations, status bands, both branch users and map captions. Standalone source and image-credit lines remain in the report's visible text and in the later publication package. An explicit `alt` overrides the generated description and requires editorial review. Platform length limits and final `post.md` preparation belong to step 6.
+The alternative description combines `imageAlt`, displayed map labels/figures, inset labels and the actual panel reading order. It includes quotations, translations, status bands, both branch users and map captions. Standalone source and image-credit lines remain in the report's visible text and in the later publication package. An explicit `alt` overrides the generated description and requires editorial review. The [publication-package helper](../../.claude/skills/ethniafrica-social-production/references/publication-package.md) checks recorded account limits and prepares the final `post.md` at step 6.
 
 Do not remove demo flags merely to obtain a final export. The nine-card Uganda sample includes illustrative new wording as well as previously approved text. Design acceptance does not approve its entire narrative for publication. Run
 `npm run check:publication -- INPUT_JSON OUTPUT_DIR/report.json` on the actual

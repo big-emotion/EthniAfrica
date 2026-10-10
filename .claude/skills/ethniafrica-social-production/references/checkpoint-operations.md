@@ -33,15 +33,15 @@ node .claude/skills/ethniafrica-social-production/scripts/workflow.mjs event PIE
 JSON
 ```
 
-| Event         | Fields in addition to `expectedRevision`                                          | Meaning                                                                                                                                                                                                                        |
-| ------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `checkpoint`  | `nextAction`; optional `context`, `waitingFor`                                    | Save compact resumption context. Waiting reasons: null, `design-system`, `operator-information`, `operator-resume`. A pending approval cannot be overwritten by a pause.                                                       |
-| `design`      | `file`, `decision`                                                                | Record the operator-supplied and accepted design reference. `file` is project-relative; list all dependent design assets in proof/final reviews too. Reopens affected proof/delivery.                                          |
-| `review`      | `gate` (1–3), nonempty `files`, `summary`; `researchFile` at gate 2               | Save fingerprints of all artifacts presented, then wait. Files must exist inside the project. Include the brief for gate 1; research, copy, corpus proposal and proof for gate 2; actual final media and `post.md` for gate 3. |
-| `approve`     | `gate`, `decision`                                                                | Record the operator's explicit response to the current presentation. A decision string is evidence for recovery, not proof of authorization by itself. Never invent it.                                                        |
-| `revise`      | `kind`, `reason`                                                                  | Route an actual correction. Kinds: `angle`, `research`, `copy`, `crop`, `package`, `design`. Meaning/rights changes use `research` or `copy`, not the rendering-only `crop` route.                                             |
-| `networks`    | `networks`, `reason`                                                              | Record the operator's changed target list; preserve the angle and proof while reopening final delivery for the affected adaptation.                                                                                            |
-| `publication` | `network`, `url` (HTTPS or explicit null), `publishedAt` (YYYY-MM-DD), `evidence` | Record an already-published outcome. Does not publish. Evidence can be the operator's report, labelled as such; an unknown URL remains null. Requires a current approved final package.                                        |
+| Event         | Fields in addition to `expectedRevision`                                                    | Meaning                                                                                                                                                                                                                        |
+| ------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `checkpoint`  | `nextAction`; optional `context`, `waitingFor`                                              | Save compact resumption context. Waiting reasons: null, `design-system`, `operator-information`, `operator-resume`. A pending approval cannot be overwritten by a pause.                                                       |
+| `design`      | `file`, `decision`                                                                          | Record the operator-supplied and accepted design reference. `file` is project-relative; list all dependent design assets in proof/final reviews too. Reopens affected proof/delivery.                                          |
+| `review`      | `gate` (1–3), nonempty `files`, `summary`; `researchFile` at gate 2, `packageDir` at gate 3 | Save fingerprints of all artifacts presented, then wait. Files must exist inside the project. Include the brief for gate 1; research, copy, corpus proposal and proof for gate 2; actual final media and `post.md` for gate 3. |
+| `approve`     | `gate`, `decision`                                                                          | Record the operator's explicit response to the current presentation. A decision string is evidence for recovery, not proof of authorization by itself. Never invent it.                                                        |
+| `revise`      | `kind`, `reason`                                                                            | Route an actual correction. Kinds: `angle`, `research`, `copy`, `crop`, `package`, `design`. Meaning/rights changes use `research` or `copy`, not the rendering-only `crop` route.                                             |
+| `networks`    | `networks`, `reason`                                                                        | Record the operator's changed target list; preserve the angle and proof while reopening final delivery for the affected adaptation.                                                                                            |
+| `publication` | `network`, `url` (HTTPS or explicit null), `publishedAt` (YYYY-MM-DD), `evidence`           | Record an already-published outcome. Does not publish. Evidence can be the operator's report, labelled as such; an unknown URL remains null. Requires a current approved final package.                                        |
 
 A later network change is recorded through `networks` before a new final
 presentation; do not claim an unreviewed target was in the approved package.
@@ -65,6 +65,14 @@ After approval 2, `corpus-progress` records an approved `proposal` key, the next
 `status`, an `evidence` file and the status-specific PR, commit or live-page facts.
 It never applies a correction or changes the website. Evidence freshness and
 historical integration records survive resumption and targeted proof revisions.
+
+## Final delivery
+
+Follow [Publication package](publication-package.md) before review 3. Pass
+`packageDir` for the generated revision, and include `post.md` among the review
+files. Its images, full copy, configuration and dependencies are automatically
+verified and fingerprinted. The package must reference the approved research
+dossier and exactly the selected networks. Approval rechecks it; it never posts.
 
 ## Recovery and limits
 

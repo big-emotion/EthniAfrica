@@ -19,6 +19,7 @@ import { resolve, join, relative, isAbsolute, sep } from "node:path";
 import { pathToFileURL } from "node:url";
 
 import { assessResearch, discoverCorpus, verifyProgress } from "./research.mjs";
+import { inspectPackage } from "./package.mjs";
 
 const AREA = ".local/productions";
 const STAGES = ["brief", "research", "proof", "produce", "package", "ready"];
@@ -141,6 +142,11 @@ export function loadPiece(root, id) {
       state.nextAction =
         "Research coverage changed or is missing; compare the corpus before proof";
     }
+  }
+  if (state.approvals[3]?.status === "approved" && !state.package) {
+    invalidate(state, 3);
+    state.stage = "package";
+    state.nextAction = "Prepare and review the verified publication package";
   }
   for (const progress of state.corpusProgress ?? []) {
     progress.evidenceCurrent = current(root, {
@@ -335,6 +341,15 @@ export function applyEvent(root, id, event) {
           forDelivery: true,
         });
         Object.assign(files, research.dependencies);
+        required(event.packageDir, "Verified package directory");
+        const delivery = inspectPackage(root, event.packageDir, state.networks);
+        if (delivery.researchFile !== state.research.file)
+          fail("Package research differs from the approved proof");
+        Object.assign(files, delivery.files);
+        state.package = {
+          directory: event.packageDir,
+          configFile: delivery.configFile,
+        };
       }
       const summary = required(event.summary, "Review summary");
       invalidate(state, gate);
@@ -363,6 +378,8 @@ export function applyEvent(root, id, event) {
         )
           fail("Research coverage changed; present the updated proof");
       }
+      if (gate === 3)
+        inspectPackage(root, state.package.directory, state.networks);
       state.approvals[gate] = {
         ...review,
         status: "approved",

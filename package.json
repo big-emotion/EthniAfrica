@@ -80,6 +80,7 @@
     "social:render": "node social/renderer/render.mjs",
     "social:check-design": "node social/renderer/fidelity.mjs",
     "test:social-renderer": "node --test social/renderer/*.test.mjs",
+    "social:package": "node .claude/skills/ethniafrica-social-production/scripts/package.mjs",
     "social:research": "node .claude/skills/ethniafrica-social-production/scripts/research.mjs",
     "test:social-production": "node --test .claude/skills/ethniafrica-social-production/scripts/*.test.mjs"
   },

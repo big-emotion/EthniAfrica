@@ -29,7 +29,9 @@ discovery, evidence-bound correction proposals, mandatory comparison at approval
 and separately evidenced integration progress. Read
 [Research and corpus alignment](references/research-and-corpus.md). The agent
 performs source interpretation and the normal reviewed correction workflow; the
-helper never deploys. Package generation and cleanup remain later capabilities. Before invoking a later
+helper never deploys. Step 6 adds [publication-package generation](references/publication-package.md),
+strict final-copy checks and mandatory package verification at approval 3.
+Cleanup remains a later capability. Before invoking a later
 capability, verify that it exists and has been accepted. Save the current position
 and explain missing inputs rather than claiming those steps ran. Research and
 writing can proceed within the approved brief; visual proof requires the
@@ -162,6 +164,15 @@ and confirms it. After an abrupt shutdown, inspect incomplete artifacts and
 resume the last valid checkpoint; do not claim unsaved work survived. Reload on
 a stale revision rather than overwriting another session's update.
 
+## Final publication package
+
+After approval 2, follow [Publication package](references/publication-package.md).
+Verify the selected accounts and current routes, write each adaptation, and
+assemble a new delivery revision. Use `packageDir` at review 3. The helper checks
+all media, copy, rights records and dependencies and rejects missing networks or
+an unsupported link route. Present `post.md` and the exact numbered images;
+never infer publication authorization from successful generation or approval 3.
+
 ## Retention
 
 The durable result is written publication history plus final published exports.
@@ -187,5 +198,5 @@ Review `review.html` at phone reading widths first. Record the input, report,
 actual exports and the report's shared design dependencies in the proof/final
 review. Check the actual text with `check:publication` and reread its generated
 alternative descriptions. The design sample set contains deliberate fictional
-or technical copy and does not pass publication review as a whole. Package
-creation and cleanup remain later capabilities.
+or technical copy and does not pass publication review as a whole. Read [Publication package](references/publication-package.md) to assemble the
+verified final render and exact network copy. Cleanup remains a later capability.

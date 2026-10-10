@@ -20,11 +20,15 @@ import {
   savePiece,
 } from "./workflow.mjs";
 
+import { createPackage } from "./package.mjs";
+import { installPackageFixture } from "./package.fixture.mjs";
+
 function fixture(t) {
   const root = mkdtempSync(join(tmpdir(), "social-workflow-"));
   t.after(() => rmSync(root, { recursive: true, force: true }));
   const id = "2026-10-10-uganda";
   createPiece(root, id, "Ouganda", ["instagram", "facebook"]);
+  installPackageFixture(root, `.local/productions/${id}`);
   const file = (name, text = name) => {
     const relative = `.local/productions/${id}/${name}`;
     writeFileSync(join(root, relative), text);
@@ -45,7 +49,21 @@ function fixture(t) {
         records: [],
         noCorpusReason: "No matching test corpus records",
         findings: [],
-        images: [],
+        images: [
+          {
+            file: "social/design-system/assets/plain.png",
+            sourcePage: "https://example.org/test-image",
+            creator: "Test fixture",
+            description: "Synthetic background",
+            reuseBasis: "Generated test fixture",
+            credit: "Image de test.",
+            crop: "Full image",
+            rightsEvidence: file(
+              "rights.txt",
+              "Synthetic test image permission"
+            ),
+          },
+        ],
         sources: [
           {
             id: "s1",
@@ -73,14 +91,27 @@ function fixture(t) {
         },
       })
     );
-  const review = (gate, files) =>
-    event({
+  const review = (gate, files) => {
+    let packageDir;
+    const state = loadPiece(root, id);
+    if (gate === 3 && state.approvals[2]?.status === "approved") {
+      const fixture = installPackageFixture(
+        root,
+        `.local/productions/${id}`,
+        state.networks
+      );
+      packageDir = `.local/productions/${id}/package-${state.revision}`;
+      createPackage(root, fixture.configPath, packageDir, state.networks);
+    }
+    return event({
       type: "review",
       gate,
       files,
       summary: `Review ${gate}`,
       ...(gate === 2 ? { researchFile: research() } : {}),
+      ...(packageDir ? { packageDir } : {}),
     });
+  };
   const approve = (gate) =>
     event({
       type: "approve",
@@ -505,4 +536,34 @@ test("approved corrections retain a separately evidenced integration history aft
     loadPiece(f.root, f.id).corpusProgress.at(-1).evidenceCurrent,
     false
   );
+});
+
+test("final approval requires a verified package and fingerprints its actual media", (t) => {
+  const f = fixture(t);
+  f.review(1, [f.file("brief.md")]);
+  f.approve(1);
+  f.design();
+  f.review(2, [f.file("proof.png")]);
+  f.approve(2);
+  assert.throws(
+    () =>
+      f.event({
+        type: "review",
+        gate: 3,
+        files: [f.file("post.md")],
+        summary: "Incomplete delivery",
+      }),
+    /package/i
+  );
+  f.review(3, [f.file("post.md")]);
+  f.approve(3);
+  const state = loadPiece(f.root, f.id);
+  const png = Object.keys(state.approvals[3].files).find((p) =>
+    /package-[0-9]+\/01.png$/.test(p)
+  );
+  assert.ok(png);
+  writeFileSync(join(f.root, png), "Changed final image");
+  const changed = loadPiece(f.root, f.id);
+  assert.equal(changed.approvals[3].status, "stale");
+  assert.equal(changed.approvals[2].status, "approved");
 });
