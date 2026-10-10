@@ -10,6 +10,25 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.0.1] - 2026-10-11
+
+### Changed
+
+- Corpus: consolidate fifteen duplicate people fiches into their retained entries,
+  including `PPL_KONGO`, `PPL_LOMWE`, `PPL_LANGI`, `PPL_FULA`, `PPL_NDEBELE`
+  and `PPL_YAO`. Preserve distinct sources, name-history accounts and population
+  estimates; redirect retired identifiers and update country and patronyme links.
+- Corpus: apply reviewed historical-period rulings and remove unsupported origin
+  claims. Present `PPL_KIRDI`, `PPL_MANDE_DU_SUD` and `PPL_GA_DANGME` as groupings;
+  searches for Kirdi also reach the Mafa and Sara name histories.
+
+### Fixed
+
+- `PPL_KONGO`: locate Mbanza Kongo in present-day Angola; date Bentley's Bakongo
+  account to his 1886 preface; distinguish his lexical comparisons from an established
+  etymology and retain the separately attributed leopard account. The name's date
+  of creation and creator remain unknown.
+
 ## [5.0.0] - 2026-10-10
 
 ### Added
@@ -1621,7 +1640,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.0.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.0.1...HEAD
+[5.0.1]: https://github.com/big-emotion/ethniafrica/compare/v5.0.0...v5.0.1
 [5.0.0]: https://github.com/big-emotion/ethniafrica/compare/v4.23.0...v5.0.0
 [4.23.0]: https://github.com/big-emotion/ethniafrica/compare/v4.22.0...v4.23.0
 [4.22.0]: https://github.com/big-emotion/ethniafrica/compare/v4.21.0...v4.22.0
