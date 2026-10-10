@@ -135,5 +135,313 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Chokwe désigne un peuple de l'est de l'Angola et des régions voisines du Congo et de la Zambie, qui se nomme lui-même Chokwe. D'autres noms existent : Quioco dans les textes portugais, Kioko dans les textes allemands et Tshokwe dans des publications en français. On ne sait pas avec certitude d'où vient ce nom ; ce que disent les sources est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Chokwe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "cjk",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1854, sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Chokwe désigne un peuple d'Afrique centrale. Au XIXe siècle, ses foyers les plus peuplés se trouvent sur le haut Kasaï et le haut Tshikapa, et ses chasseurs s'avancent vers le nord, en pays lunda, selon Jean-Luc Vellut. On ne sait pas avec certitude d'où vient ce nom : nous n'avons pas trouvé de source qui l'explique.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 12 : Le bassin du Congo et l'Angola",
+                "author": "Jean-Luc Vellut",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 339 et 355",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 339 : les « petits foyers de population dense du haut Tshikapa et du haut Kasai » ; page 355 : « les chasseurs chokwe commencèrent à fréquenter le territoire lunda » et « Des Chokwe visitèrent la capitale vers 1840 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1799,
+              "label": "XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Les Chokwe sont alors utiles à l'empire lunda comme métallurgistes, sculpteurs et chasseurs, selon Ndaywel è Nziem. Il les compte parmi les peuples chez qui les Lunda ont créé des chefferies, à l'ouest de la rivière Lwena.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 661",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 661 : « À l'ouest de la Lwena, diverses chefferies chokwe, minungo et songo furent également créées par les Lunda » ; « Même au XVIIIe siècle, ils furent utiles à l'Empire en tant que métallurgistes, sculpteurs et chasseurs »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "4 mars 1854, récit publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Chokwe a une forme proche, Chiboque, dans le récit de David Livingstone : le 4 mars 1854, il atteint « le territoire des Chiboque ». En 1881, Hermenegildo Capelo et Roberto Ivens écrivent T'chiboco et précisent que ce peuple est le plus souvent appelé Quioco. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Chiboque",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Livingstone",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 337",
+                "notes": "Londres, John Murray, 1857. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. Le texte écrit, à la date du 4 mars : « Came to the outskirts of the territory of the Chiboque »."
+              },
+              {
+                "title": "De Benguella ás terras de Iácca, vol. I",
+                "author": "Hermenegildo Capelo et Roberto Ivens",
+                "year": 1881,
+                "url": "https://archive.org/details/debenguellasterr01cape",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 148",
+                "notes": "Lisbonne, Imprensa Nacional, 1881. Récit de l'expédition de 1877-1880, lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. Note de bas de page : « T'chiboco, geralmente denominado e conhecido por Quioco. Adoptou-se porém aquella orthographia, por ser a unica que dá a pronuncia indigena. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Livre publié en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Chokwe est écrit T'chiboco par Hermenegildo Capelo et Roberto Ivens. Ils choisissent cette graphie parce qu'elle est, selon eux, la seule qui rende la prononciation du pays.",
+            "formAsWritten": "T'chiboco",
+            "actors": [
+              {
+                "name": "Hermenegildo Capelo",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Roberto Ivens",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "De Benguella ás terras de Iácca, vol. I",
+                "author": "Hermenegildo Capelo et Roberto Ivens",
+                "year": 1881,
+                "url": "https://archive.org/details/debenguellasterr01cape",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 148",
+                "notes": "Lisbonne, Imprensa Nacional, 1881. Récit de l'expédition de 1877-1880, lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. Note de bas de page : « T'chiboco, geralmente denominado e conhecido por Quioco. Adoptou-se porém aquella orthographia, por ser a unica que dá a pronuncia indigena. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Quioco",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom le plus courant dans les textes portugais du XIXe siècle.",
+        "periodLabel": "Écrit dès 1881",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Livre publié en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Quioco figure dans le récit de Hermenegildo Capelo et Roberto Ivens, qui le donnent comme le nom sous lequel ce peuple est le plus souvent connu. Ils écrivent aussi ma-quioco pour en désigner les gens. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Quioco",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Hermenegildo Capelo",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Roberto Ivens",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "De Benguella ás terras de Iácca, vol. I",
+                "author": "Hermenegildo Capelo et Roberto Ivens",
+                "year": 1881,
+                "url": "https://archive.org/details/debenguellasterr01cape",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 148",
+                "notes": "Lisbonne, Imprensa Nacional, 1881. Récit de l'expédition de 1877-1880, lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. Note de bas de page : « T'chiboco, geralmente denominado e conhecido por Quioco. Adoptou-se porém aquella orthographia, por ser a unica que dá a pronuncia indigena. »"
+              },
+              {
+                "title": "De Benguella ás terras de Iácca, vol. I",
+                "author": "Hermenegildo Capelo et Roberto Ivens",
+                "year": 1881,
+                "url": "https://archive.org/details/debenguellasterr01cape",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 166",
+                "notes": "Lisbonne, Imprensa Nacional, 1881. Récit de l'expédition de 1877-1880, lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit « os ma-quioco »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kioko",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie du nom Quioco chez les voyageurs allemands et anglais du XIXe siècle.",
+        "periodLabel": "Écrit dès 1880",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1875,
+              "to": 1875,
+              "label": "14 août 1875, journal publié en 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Kioko figure dans le journal de l'explorateur allemand Paul Pogge, qui atteint le 14 août 1875 « le premier village kioko ». Il note que le pays kioko fait partie du Lunda et paie tribut au Muata Jamwo. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Kioko-Dorfe",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Paul Pogge",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Im Reiche des Muata Jamwo. Tagebuch meiner im Auftrage der Deutschen Gesellschaft zur Erforschung Aequatorial-Afrika's in die Lunda-Staaten unternommenen Reise",
+                "author": "Paul Pogge",
+                "year": 1880,
+                "url": "https://archive.org/details/imreichedesmuata00pogg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 45",
+                "notes": "Berlin, Dietrich Reimer, 1880. Journal du voyage de 1875-1876, lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit, à la date du 14 août : « Wir gelangen zum ersten Kioko-Dorfe » et « Das Kioko-Land gehört zu Lunda und ist dem Muata Jamwo tributair »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1885,
+              "label": "Expédition de 1883-1885, livre publié en 1888"
+            },
+            "statement": "Le nom Kioko est, selon Hermann Wissmann et ses compagnons, celui qu'emploient les interprètes et les porteurs venus d'Angola. Les intéressés, écrivent-ils, se nomment eux-mêmes partout Kioque.",
+            "sources": [
+              {
+                "title": "Im Innern Afrikas. Die Erforschung des Kassai während der Jahre 1883, 1884 und 1885",
+                "author": "Hermann Wissmann, Ludwig Wolf, Curt von François et Hans Mueller",
+                "year": 1888,
+                "url": "https://archive.org/details/11630692bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 167",
+                "notes": "Leipzig, F. A. Brockhaus, 1888, chapitre 8 : Das Volk der Baluba und die Anlage von Luluaburg. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit : « Die Benennung Kioko wird von Angoladolmetschern und Trägern gebraucht, sie selbst nannten sich mit Bestimmtheit überall nur Kioque »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "Article publié en 1894"
+            },
+            "statement": "Le nom Kioko désigne, pour W. R. Summers et Héli Chatelain, la même langue que Kiokwe, Ki-bokwe ou Chi-bokwe : seul change le préfixe qui marque le nom d'une langue.",
+            "sources": [
+              {
+                "title": "Bantu Notes and Vocabularies. No. II. Comparative Tables and Vocabularies of Lange, Songe, Mbangala, Kioko, Lunda, etc.",
+                "author": "W. R. Summers, édité par Héli Chatelain",
+                "year": 1894,
+                "url": "https://archive.org/details/jstor-197147",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 208",
+                "notes": "Journal of the American Geographical Society of New York, vol. 26, 1894. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit : « Kioko equals Kiokwe, Ki-bokwe or Chi-bokwe » et explique ces écarts par le préfixe qui marque la langue."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tshokwe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une graphie du nom Chokwe dans des publications en français et en allemand.",
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tshokwe est une autre graphie du nom Chokwe. On la trouve par exemple dans le titre du catalogue Art et mythologie : figures tshokwe, publié à Paris par la Fondation Dapper en 1988, et dans celui d'un recueil de photographies de Hans Himmelheber publié à Zurich en 1993. Nous n'avons pas trouvé la plus ancienne trace de cette graphie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Art et mythologie : figures tshokwe",
+                "author": "Fondation Dapper",
+                "year": 1988,
+                "url": "https://archive.org/details/artetmythologief0000unse",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Fondation Dapper, 1988. Titre lu dans la notice d'Internet Archive, consulté le 10 octobre 2026 ; nous n'avons pas lu l'ouvrage."
+              },
+              {
+                "title": "Zaire 1938/39 : photographic documents on the arts of the Yaka, Pende, Tshokwe, and Kuba",
+                "author": "Hans Himmelheber",
+                "year": 1993,
+                "url": "https://archive.org/details/zaire193839photo0000himm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Zurich, Museum Rietberg, 1993. Titre lu dans la notice d'Internet Archive, consulté le 10 octobre 2026 ; nous n'avons pas lu l'ouvrage."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
