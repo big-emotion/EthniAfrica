@@ -169,5 +169,314 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Luhya désigne un ensemble de peuples bantous de l'ouest du Kenya, qui se nomment eux-mêmes Abaluyia. Sous la colonisation, on les appelait Kavirondo, puis Bantu Kavirondo. Le nom Abaluyia est récent, et les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Abaluyia",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "luy",
+        "namedBy": null,
+        "shortLine": "Un nom récent, apparu vers 1930 ; son origine reste discutée.",
+        "periodLabel": "Depuis les années 1930",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Abaluyia rassemble aujourd'hui dix-huit groupes, dont les Bisukha, les Bidakho, les Bukusu et les Wanga, selon Kizito Lusambili Muchanga et ses coauteurs. Le nom est récent et son origine n'est pas claire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Origin, Settlement, and Beliefs of the Bisukha and Bidakho of the Luhya Community-Kenya",
+                "author": "Kizito Lusambili Muchanga, Kizito Handa Sabatia et Josephat Kemei Nairutia",
+                "year": 2024,
+                "url": "https://www.athensjournals.gr/history/2024-10-3-2-Muchanga.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 178 et p. 180",
+                "notes": "Athens Journal of History, vol. 10, n° 3, p. 175-212 ; lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1940,
+              "to": null,
+              "label": "Depuis 1940"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abaluyia se répand avec l'Abaluhya Welfare Association, fondée en 1940 ; un comité de la langue luyia est ensuite créé pour en fixer l'écriture, selon S. A. Bulimo, cité par Muchanga et ses coauteurs.",
+            "sources": [
+              {
+                "title": "Origin, Settlement, and Beliefs of the Bisukha and Bidakho of the Luhya Community-Kenya",
+                "author": "Kizito Lusambili Muchanga, Kizito Handa Sabatia et Josephat Kemei Nairutia",
+                "year": 2024,
+                "url": "https://www.athensjournals.gr/history/2024-10-3-2-Muchanga.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Athens Journal of History, vol. 10, n° 3, p. 175-212 ; lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1935,
+              "label": "Vers 1930-1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Luyia aurait d'abord été proposé vers 1930 par l'African Mutual Assistance Association, puis adopté en 1935 par la North Kavirondo Central Association, selon S. A. Bulimo, cité par Muchanga et ses coauteurs, qui notent que des archives montrent le nom Abaluyia en usage dès 1935. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il rassemble existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Origin, Settlement, and Beliefs of the Bisukha and Bidakho of the Luhya Community-Kenya",
+                "author": "Kizito Lusambili Muchanga, Kizito Handa Sabatia et Josephat Kemei Nairutia",
+                "year": 2024,
+                "url": "https://www.athensjournals.gr/history/2024-10-3-2-Muchanga.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Athens Journal of History, vol. 10, n° 3, p. 175-212 ; lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1939,
+              "label": "Années 1920-1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abaluyia était peut-être employé un peu plus tôt : il l'était déjà quand Günter Wagner menait ses recherches chez ces peuples, dans les années 1920 et 1930, selon Muchanga et ses coauteurs, qui renvoient au livre de Wagner paru en 1949. Ils ne donnent pas de date plus précise.",
+            "sources": [
+              {
+                "title": "Origin, Settlement, and Beliefs of the Bisukha and Bidakho of the Luhya Community-Kenya",
+                "author": "Kizito Lusambili Muchanga, Kizito Handa Sabatia et Josephat Kemei Nairutia",
+                "year": 2024,
+                "url": "https://www.athensjournals.gr/history/2024-10-3-2-Muchanga.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Athens Journal of History, vol. 10, n° 3, p. 175-212 ; lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1850,
+              "to": 1850,
+              "label": "Vers 1850"
+            },
+            "era": "polity",
+            "statement": "On parle alors des groupes eux-mêmes, comme les Bisukha et les Bidakho, qui ont leurs propres parlers, proches les uns des autres : personne ne se dit encore Luyia, selon Muchanga et ses coauteurs.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Origin, Settlement, and Beliefs of the Bisukha and Bidakho of the Luhya Community-Kenya",
+                "author": "Kizito Lusambili Muchanga, Kizito Handa Sabatia et Josephat Kemei Nairutia",
+                "year": 2024,
+                "url": "https://www.athensjournals.gr/history/2024-10-3-2-Muchanga.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 180",
+                "notes": "Athens Journal of History, vol. 10, n° 3, p. 175-212 ; lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Abaluyia viendrait de haluyia, le terrain ouvert où les anciens se réunissaient pour débattre des affaires du clan : on aurait appelé ceux qui s'y retrouvaient Abahaluyia, « les gens du haluyia », selon des anciens interrogés en 1995 par Muchanga et ses coauteurs.",
+            "hypothesisGroup": "origine du nom Abaluyia",
+            "sources": [
+              {
+                "title": "Origin, Settlement, and Beliefs of the Bisukha and Bidakho of the Luhya Community-Kenya",
+                "author": "Kizito Lusambili Muchanga, Kizito Handa Sabatia et Josephat Kemei Nairutia",
+                "year": 2024,
+                "url": "https://www.athensjournals.gr/history/2024-10-3-2-Muchanga.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 178",
+                "notes": "Athens Journal of History, vol. 10, n° 3, p. 175-212 ; lu le 10 octobre 2026. Récit recueilli par les auteurs auprès de Peter Ahindukha, à Khayega-Machilifu, et de Joseph M. Mabia, à Shirumba, en juin 1995."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Abaluyia viendrait de oluyia, le foyer autour duquel la famille se réunissait le soir : il désignerait ceux qui partagent un même foyer, selon S. A. Bulimo, cité par Muchanga et ses coauteurs.",
+            "hypothesisGroup": "origine du nom Abaluyia",
+            "sources": [
+              {
+                "title": "Origin, Settlement, and Beliefs of the Bisukha and Bidakho of the Luhya Community-Kenya",
+                "author": "Kizito Lusambili Muchanga, Kizito Handa Sabatia et Josephat Kemei Nairutia",
+                "year": 2024,
+                "url": "https://www.athensjournals.gr/history/2024-10-3-2-Muchanga.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Athens Journal of History, vol. 10, n° 3, p. 175-212 ; lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1940,
+              "to": 1949,
+              "label": "Années 1940"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abaluyia aurait été forgé dans les années 1940 par les habitants eux-mêmes, quand ils créent l'Abaluyia Welfare Association ; il voudrait dire « frères », d'un mot qui signifie brûler ou chaleur, selon l'historien John Osogo, cité par Muchanga et ses coauteurs.",
+            "hypothesisGroup": "origine du nom Abaluyia",
+            "sources": [
+              {
+                "title": "Origin, Settlement, and Beliefs of the Bisukha and Bidakho of the Luhya Community-Kenya",
+                "author": "Kizito Lusambili Muchanga, Kizito Handa Sabatia et Josephat Kemei Nairutia",
+                "year": 2024,
+                "url": "https://www.athensjournals.gr/history/2024-10-3-2-Muchanga.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Athens Journal of History, vol. 10, n° 3, p. 175-212 ; lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Luhya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "luy",
+        "namedBy": null,
+        "shortLine": "La forme courte du nom Abaluyia, écrite aussi Luyia ou Luhyia.",
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Luhya s'écrit aussi Luyia ou Luhyia : Muchanga et ses coauteurs emploient ces graphies côte à côte, avec Baluhya et Abaluyia.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Origin, Settlement, and Beliefs of the Bisukha and Bidakho of the Luhya Community-Kenya",
+                "author": "Kizito Lusambili Muchanga, Kizito Handa Sabatia et Josephat Kemei Nairutia",
+                "year": 2024,
+                "url": "https://www.athensjournals.gr/history/2024-10-3-2-Muchanga.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 175-179",
+                "notes": "Athens Journal of History, vol. 10, n° 3, p. 175-212 ; lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kavirondo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays et de ses peuples dans les textes européens et coloniaux.",
+        "periodLabel": "De 1885 à la fin de la colonisation",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kavirondo sert à l'administration coloniale : le pays de ces peuples s'appelle North Kavirondo, puis Bantu Kavirondo, selon S. A. Bulimo, cité par Muchanga et ses coauteurs.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Origin, Settlement, and Beliefs of the Bisukha and Bidakho of the Luhya Community-Kenya",
+                "author": "Kizito Lusambili Muchanga, Kizito Handa Sabatia et Josephat Kemei Nairutia",
+                "year": 2024,
+                "url": "https://www.athensjournals.gr/history/2024-10-3-2-Muchanga.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Athens Journal of History, vol. 10, n° 3, p. 175-212 ; lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1931,
+              "label": "1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kavirondo est repris par les Luo et les Abaluyia eux-mêmes dans celui de la Young Kavirondo Association, créée le 23 décembre 1921 pour porter leurs revendications, selon Elisha Stephen Atieno-Odhiambo. L'association se divise en 1931 entre Luo et Abaluyia.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 26 : La politique et le nationalisme en Afrique orientale, 1919-1935",
+                "author": "Elisha Stephen Atieno-Odhiambo",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 706-707",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "1885"
+            },
+            "era": "polity",
+            "statement": "Le nom Kavirondo apparaît dans le récit de voyage de Joseph Thomson, paru en 1885 : un chapitre s'intitule « Through Kavirondo to Victoria Nyanza » et un dessin montre le « Village of Kabaras, Kavirondo ». Les Kabras sont l'un des groupes luyia, selon la liste de Muchanga et ses coauteurs. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne était habité bien avant lui.",
+            "formAsWritten": "Kavirondo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through Masai Land: A Journey of Exploration among the Snowclad Volcanic Mountains and Strange Tribes of Eastern Equatorial Africa",
+                "author": "Joseph Thomson",
+                "year": 1885,
+                "url": "https://archive.org/details/throughmasiland00thomgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 450 et p. 472",
+                "notes": "Londres, Sampson Low, Marston, Searle & Rivington. Lu dans la numérisation d'Internet Archive le 10 octobre 2026 : le titre du chapitre et la légende d'un dessin, dans les tables du livre."
+              },
+              {
+                "title": "Origin, Settlement, and Beliefs of the Bisukha and Bidakho of the Luhya Community-Kenya",
+                "author": "Kizito Lusambili Muchanga, Kizito Handa Sabatia et Josephat Kemei Nairutia",
+                "year": 2024,
+                "url": "https://www.athensjournals.gr/history/2024-10-3-2-Muchanga.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 180, note 22",
+                "notes": "Athens Journal of History, vol. 10, n° 3, p. 175-212 ; lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
