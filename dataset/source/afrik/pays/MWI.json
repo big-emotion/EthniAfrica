@@ -6,6 +6,496 @@
   "summary": "Le nom « Malawi », repris en 1964 du royaume Maravi, aurait été choisi par Hastings Kamuzu Banda en le voyant sur une carte française du XVIIIe siècle ; le sens de « flammes » qu'on lui prête existe en chichewa, mais aucun travail n'établit que le royaume tire de là son nom. Protectorat britannique du Nyasaland jusqu'en 1964, le pays reprit alors ce nom ancien. Chewa, Tumbuka, Lomwe et Yao y perpétuent le Gule Wamkulu, grand rituel masqué.",
   "etymology": "Le nom reprend celui du royaume Maravi, qui domina la région aux XVIe et XVIIe siècles, et dont la forme circulait en Europe bien avant 1964 : Livingstone signale en 1865 un « lac Maravi » connu des sources portugaises, et la carte d'Afrique de d'Anville, publiée à Paris en 1749, porte un Lac Maravi. C'est sur une carte française de ce type que Hastings Kamuzu Banda aurait, selon ses biographes, arrêté son choix à l'indépendance, pour la forme et la sonorité du mot.\n\nLe sens qu'on lui prête est moins assuré. Le dictionnaire chinyanja de Jan Vermeullen donne bien, sous la racine lawi, la forme malawi pour « flamme de feu ». Mais le grand dictionnaire mang'anja de David Clement Scott, publié à Édimbourg en 1892, ne connaît pas cette racine : il donne chirangali et kwiri pour la flamme, et glose « Malawi » comme le mot yao signifiant « demain ». Aucun travail identifié ne relie le nom du royaume à ce mot, et l'article de référence sur les débuts du Maravi, publié par Malyn Newitt en 1982, ne traite pas de l'origine du nom. L'explication par les reflets du soleil sur le lac circule largement ; aucune source portant cette lecture n'a été trouvée.\n\nLe nom colonial, lui, illustre un mécanisme documenté. Livingstone rapporte en 1865 que « nyanja ou nyanza désigne en général un marais, un lac, une rivière, voire un simple ruisseau », et raconte que ses compagnons, demandant qu'on les mène au « Nyanja Mukulu », le grand lac, furent conduits à un marécage qui portait ce nom-là pour leur guide. Le voyageur demande un nom propre, on lui répond par un nom commun.",
   "nameOriginActor": "Le nom « Malawi » a été officialisé à l'indépendance, en 1964, par le gouvernement de Hastings Kamuzu Banda, qui l'a repris d'une carte européenne ancienne portant un Lac Maravi. « Nyasaland » était le nom du protectorat britannique, formé sur un mot que Livingstone lui-même donne pour un nom commun désignant toute étendue d'eau. Qui a nommé le royaume Maravi, et d'après quoi, n'est pas établi.",
+  "nameHistory": {
+    "summary": "Le nom Malawi désigne un pays sans accès à la mer du sud-est de l'Afrique, la République du Malawi, qui se nomme ainsi elle-même ; c'est aussi le nom que le pays donne au lac Nyasa. Le pays s'est d'abord appelé Afrique centrale britannique, puis Nyasaland ; une forme proche, Maravi, désignait un royaume et un peuple de la région. On ne sait pas avec certitude d'où vient le nom Malawi ; nous présentons plus bas ce qu'en disent les sources.",
+    "names": [
+      {
+        "nameText": "Malawi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays depuis 1964, proche du nom ancien des Maravi.",
+        "periodLabel": "Nom de l'État depuis 1964",
+        "accounts": [
+          {
+            "period": {
+              "from": 1964,
+              "to": null,
+              "label": "Depuis le 6 juillet 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Malawi est celui de l'État depuis le 6 juillet 1964, jour où les territoires du protectorat du Nyasaland deviennent indépendants « under the name of Malawi », selon la loi britannique sur l'indépendance du Malawi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Malawi Independence Act 1964",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1964,
+                "url": "https://www.legislation.gov.uk/ukpga/1964/46/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi du 10 juin 1964, lu sur le site officiel de la législation britannique. À partir du 6 juillet 1964, les territoires du protectorat du Nyasaland forment un pays « under the name of Malawi »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances. Ligne Malawi : indépendant le 6/VII/1964, puissance coloniale la Grande-Bretagne, ancien nom « (Nyasaland) » ; fédération avec les Rhodésies du 1/X/1953 au 31/XII/1963."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Malawi",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/malawi",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Les États-Unis reconnaissent le Malawi le 6 juillet 1964, jour de son indépendance ; le pays était auparavant sous souveraineté britannique sous le nom de Nyasaland. Page lue le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Malawi désigne aujourd'hui un pays et, dans ce pays, le grand lac que d'autres appellent lac Nyasa, selon le Permanent Committee on Geographical Names. On ne sait pas avec certitude d'où vient ce nom : nous présentons plus bas l'explication que nous avons lue.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Malawi",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2025,
+                "url": "https://assets.publishing.service.gov.uk/media/68aee2f02f1856648215588f/Malawi_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Le pays s'appelait Nyasaland avant l'indépendance et devient indépendant sous le nom de Malawi en 1964 ; le lac Nyasa est appelé lac Malawi au Malawi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1964,
+              "label": "Avant l'indépendance"
+            },
+            "era": "colonial",
+            "statement": "Le nom Malawi est aussi celui du parti de Hastings Kamuzu Banda, le Malawi Congress Party, qui obtient l'indépendance du Nyasaland, rebaptisé Malawi, selon J. Isawa Elaigwu et Ali A. Mazrui.",
+            "actors": [
+              {
+                "name": "Hastings Kamuzu Banda",
+                "role": "dirigeant du Malawi Congress Party, puis premier dirigeant du Malawi indépendant"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 15 : Construction de la nation et évolution des structures politiques",
+                "author": "J. Isawa Elaigwu, en collaboration avec Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 471",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Le Malawi Congress Party (MCP) de Hastings Kamuzu Banda obtient l'indépendance du Nyasaland, « rebaptisé Malawi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "10 juin 1964"
+            },
+            "era": "colonial",
+            "statement": "Le nom Malawi figure dans la loi britannique du 10 juin 1964, qui donne ce nom aux territoires du protectorat du Nyasaland à partir du 6 juillet suivant. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples et le lac existaient bien avant lui.",
+            "formAsWritten": "Malawi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Malawi Independence Act 1964",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1964,
+                "url": "https://www.legislation.gov.uk/ukpga/1964/46/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi du 10 juin 1964, lu sur le site officiel de la législation britannique. À partir du 6 juillet 1964, les territoires du protectorat du Nyasaland forment un pays « under the name of Malawi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Malawi serait le nom que les Chewa se donnaient à eux-mêmes ; les Portugais l'auraient rendu par Maravi, selon l'archéologue Yusuf M. Juwayeyi.",
+            "hypothesisGroup": "origine du nom Malawi",
+            "sources": [
+              {
+                "title": "Archaeology and Oral Tradition in Malawi: Origins and Early History of the Chewa, introduction",
+                "author": "Yusuf M. Juwayeyi",
+                "year": 2020,
+                "url": "https://www.cambridge.org/core/books/archaeology-and-oral-tradition-in-malawi/introduction/FF819FBD3ACEEA0B6BE83CD3E890FEB2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction, résumé",
+                "notes": "Woodbridge, James Currey, 2020. Seul le résumé de l'introduction a été lu, en libre accès : « The term 'Maravi' was the Portuguese rendering of the term 'Malawi', by which the Chewa referred to themselves. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Maravi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un royaume et d'un peuple de la région du lac, écrit dès 1624.",
+        "periodLabel": "Écrit dès 1624",
+        "accounts": [
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Maravi, sous la forme Amaravi, est celui que des auteurs portugais plus anciens donnaient aux habitants de la plus grande partie du Nyasaland, écrit Harry H. Johnston.",
+            "formAsWritten": "Amaravi",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 62",
+                "notes": "Londres, Methuen, 1897, lu dans l'exemplaire numérisé. Les habitants de la plus grande partie du Nyasaland appartiennent au groupe A-nyanja, « referred to by Portuguese of an earlier date as the Amaravi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1865,
+              "label": "Récit publié en 1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Maravi est, chez les Portugais, celui d'un lac : David et Charles Livingstone rapportent qu'un jésuite avait proposé autrefois d'explorer le « Lake Maravi », sans qu'on sache si ce projet a été mené.",
+            "formAsWritten": "Lake Maravi",
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries",
+                "author": "David et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/narrativeofexpe00livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 92",
+                "notes": "Londres, John Murray, 1865, lu dans l'exemplaire numérisé. « One of the Jesuits formerly made a business-like proposal to explore Lake Maravi, but nowhere is it stated that it ever was carried into effect. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1624,
+              "to": 1624,
+              "label": "1624"
+            },
+            "era": "polity",
+            "statement": "Le nom Maravi apparaît dans les observations de Luiz Marianno, un Portugais installé à Sena, sur l'état de « l'Empire maravi » en 1624 ; il décrit la capitale du Kalonga comme un lieu très peuplé, près du lac, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume et ses habitants existaient avant ce texte.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 675 et note 16",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, lu dans l'exemplaire numérisé. Selon la tradition orale, le Kalonga installe son quartier général à « Manthimba ou Maravi » ; d'après un témoin, c'était en 1624 un lieu très peuplé, à moins de 3 kilomètres du lac. La note 16 nomme ce témoin, Luiz Marianno, résident portugais de Sena en 1624, dont les observations sur « l'Empire maravi » sont résumées par J. Batalha-Reis (1889)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Tradition orale, non datée"
+            },
+            "era": "polity",
+            "statement": "Le nom Maravi désigne aussi, dans la tradition orale, le lieu où le Kalonga installe son quartier général, Manthimba ou Maravi, au sud-ouest du lac Malawi, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 675",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, lu dans l'exemplaire numérisé. « Le Kalonga installa son quartier général à Manthimba ou Maravi » ; la tradition orale est la principale source sur la création de l'État maravi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1420,
+              "to": 1480,
+              "label": "XVe siècle"
+            },
+            "era": "polity",
+            "statement": "Les Maravi s'installent dans la région du lac Malawi au XVe siècle : les sites d'occupation maravi fouillés sont datés entre 1420 et 1480 par le carbone 14, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila. Malyn Newitt pense qu'ils n'occupent pas les rives du bas Zambèze avant le XVIe siècle.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 672, note 10",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, lu dans l'exemplaire numérisé. La seule preuve qui permette de dater l'arrivée des Maravi dans la région du lac Malawi est archéologique : des dates au carbone 14 entre 1420 et 1480 ; M. D. D. Newitt (1982) est d'avis que les Maravi n'occupèrent pas les rives du bas Zambèze avant le début du XVIe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Maravi serait la manière dont les Portugais rendaient Malawi, le nom que les Chewa se donnaient, selon l'archéologue Yusuf M. Juwayeyi.",
+            "hypothesisGroup": "origine du nom Maravi",
+            "sources": [
+              {
+                "title": "Archaeology and Oral Tradition in Malawi: Origins and Early History of the Chewa, introduction",
+                "author": "Yusuf M. Juwayeyi",
+                "year": 2020,
+                "url": "https://www.cambridge.org/core/books/archaeology-and-oral-tradition-in-malawi/introduction/FF819FBD3ACEEA0B6BE83CD3E890FEB2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction, résumé",
+                "notes": "Woodbridge, James Currey, 2020. Seul le résumé de l'introduction a été lu, en libre accès : « The term 'Maravi' was the Portuguese rendering of the term 'Malawi', by which the Chewa referred to themselves. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyasaland",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom colonial du pays, formé sur Nyasa, le nom du lac.",
+        "periodLabel": "Jusqu'au 6 juillet 1964",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1964,
+              "label": "Jusqu'au 6 juillet 1964"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyasaland est celui du protectorat britannique dont les territoires prennent le nom de Malawi le 6 juillet 1964, selon la loi britannique sur l'indépendance du Malawi. De 1953 à 1963, le Nyasaland forme une fédération avec les deux Rhodésies, selon l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Malawi Independence Act 1964",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1964,
+                "url": "https://www.legislation.gov.uk/ukpga/1964/46/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi du 10 juin 1964, lu sur le site officiel de la législation britannique. À partir du 6 juillet 1964, les territoires du protectorat du Nyasaland forment un pays « under the name of Malawi »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances. Ligne Malawi : indépendant le 6/VII/1964, puissance coloniale la Grande-Bretagne, ancien nom « (Nyasaland) » ; fédération avec les Rhodésies du 1/X/1953 au 31/XII/1963."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Malawi",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/malawi",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Les États-Unis reconnaissent le Malawi le 6 juillet 1964, jour de son indépendance ; le pays était auparavant sous souveraineté britannique sous le nom de Nyasaland. Page lue le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Nyasaland est formé sur Nyasa, le nom du lac. Nyasa, nyanja et nyanza sont des formes d'un même mot qui veut dire eau, lac ou rivière, selon le dictionnaire mang'anja de David Clement Scott ; David et Charles Livingstone donnent à nyanja ou nyanza le sens de marais, lac, rivière ou simple ruisseau.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 73",
+                "notes": "Édimbourg, Foreign Mission Committee of the Church of Scotland, 1892, lu dans l'exemplaire numérisé. Entrée Chimang'anja : « Ng'anja or nyanja, or nyasa or nyanza, are all forms of the same word, meaning water, lake, or river. »"
+              },
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries",
+                "author": "David et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/narrativeofexpe00livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 80",
+                "notes": "Londres, John Murray, 1865, lu dans l'exemplaire numérisé. « Nyanja or Nyanza means, generally, a marsh, lake, river, or even a mere rivulet. » Le marécage que l'expédition appelait Elephant Marsh était connu de son guide sous le nom de « Nyanja Mukulu », le grand lac."
+              },
+              {
+                "title": "Toponymic Factfile: Malawi",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2025,
+                "url": "https://assets.publishing.service.gov.uk/media/68aee2f02f1856648215588f/Malawi_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Lake Nyasa est appelé lac Malawi au Malawi ; le pays s'appelait Nyasaland avant l'indépendance."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyasaland revient sans cesse dans le livre de Harry H. Johnston, qui y parle du « Nyasaland proper », le Nyasaland proprement dit. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays et ses habitants existaient bien avant lui.",
+            "formAsWritten": "Nyasaland",
+            "birth": true,
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 62",
+                "notes": "Londres, Methuen, 1897, lu dans l'exemplaire numérisé. « Now the inhabitants of the bulk of Nyasaland proper, with the exception of its north-west portion, belonged in the main to what may be called the A-nyanja stock. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Afrique centrale britannique",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit dès 1890",
+        "accounts": [
+          {
+            "period": {
+              "from": 1891,
+              "to": 1891,
+              "label": "Printemps 1891"
+            },
+            "era": "colonial",
+            "statement": "Le nom Afrique centrale britannique, British Central Africa en anglais, désigne les territoires placés sous influence britannique ; au printemps 1891, un protectorat britannique est proclamé sur les pays qui bordent le lac Nyasa, selon le récit de Harry H. Johnston.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 96",
+                "notes": "Londres, Methuen, 1897, lu dans l'exemplaire numérisé. « In the spring of 1891 the British Protectorate over the countries adjoining Lake Nyasa was proclaimed, and by the Conventions with Germany and Portugal, the remainder of British Central Africa was declared to be an exclusively British sphere of influence. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "Début de 1890"
+            },
+            "era": "colonial",
+            "statement": "Le nom British Central Africa est, selon le récit que Harry H. Johnston publie en 1897, le terme qu'il propose dans son rapport au Foreign Office pour les territoires que des traités viennent de placer sous influence britannique. C'est la plus ancienne trace de ce nom que le projet connaît. Ces territoires et leurs habitants existaient bien avant lui.",
+            "formAsWritten": "British Central Africa",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Harry H. Johnston",
+                "role": "consul britannique, auteur du rapport et du livre où figure le terme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 96",
+                "notes": "Londres, Methuen, 1897, lu dans l'exemplaire numérisé. « In forwarding my report to the Foreign Office I proposed the term \"British Central Africa\" for the territories just brought under British influence. » Johnston écrit être arrivé à Mozambique à la fin de janvier 1890, avant d'envoyer ce rapport."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "21 septembre 1889"
+            },
+            "era": "colonial",
+            "statement": "Avant le nom Afrique centrale britannique, un protectorat britannique est proclamé le 21 septembre 1889 sur la province du Shire, selon Harry H. Johnston.",
+            "before": true,
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 86, note 1",
+                "notes": "Londres, Methuen, 1897, lu dans l'exemplaire numérisé. « The Protectorate was proclaimed September 21, 1889 », sur la province du Shire, entre le lac Chilwa, les monts Kirk, la rivière Ruo et le mont Zomba."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Nyasaland (1891-1964)"],

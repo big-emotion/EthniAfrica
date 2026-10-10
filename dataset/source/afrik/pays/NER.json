@@ -6,6 +6,470 @@
   "summary": "L'origine du nom « Niger » n'est pas établie : le pays porte le nom du fleuve, que les ouvrages de référence rattachent au touareg egerew n-igerewen, « la rivière des rivières », sans qu'on sache qui a formulé cette lecture le premier, et aucune langue riveraine n'appelle ainsi le fleuve — le mandingue dit Joliba, « la grande eau », et le yoruba Ọpo Ọya, du nom d'une divinité. Cités-États hausa, royaumes songhay et confédérations touarègues s'y sont partagé le territoire. Hausa, Zarma, Peuls, Touaregs, Kanuri et Toubou y articulent Sahel et Sahara.",
   "etymology": "Le pays porte le nom du fleuve, et l'origine du nom du fleuve reste discutée. Le mot circule en Europe bien avant qu'une étymologie locale lui soit proposée : en 1799, James Rennell, lisant Pline et Ptolémée, tient pour acquis que les Anciens connaissaient sous ce nom un fleuve distinct du Sénégal et de la Gambie, juge le terme romain et le traduit « fleuve des populations noires ». Que ce fleuve des Anciens soit celui d'aujourd'hui n'est pas établi. Les ouvrages de référence modernes écartent le latin et rattachent le nom au touareg egerew n-igerewen, « la rivière des rivières », employé autour de Tombouctou ; l'auteur touareg Yusuf ag Herrel rapporte cette lecture à Jean-Léon l'Africain, mais l'original arabe que cette explication suppose ne subsiste pas — le texte transmis est l'italien de 1526 imprimé par Ramusio en 1550 — et aucun travail identifié n'en porte la première formulation.\n\nLes langues riveraines, elles, ne nomment pas ainsi le fleuve, et ce qu'elles nomment n'est pas toujours un cours d'eau. Mungo Park, qui atteint le fleuve à Ségou en juillet 1796, note dans son récit publié en 1799 qu'on l'appelle Joliba, « la grande eau », en pays mandingue. Samuel Johnson écrit en 1921 que le fleuve est consacré à Ọya, épouse divinisée de Ṣàngó, et que le pays yoruba l'appelle pour cette raison Ọpo Ọya : l'extérieur décrit un fleuve, la lecture locale nomme une divinité. Le vocabulaire kanuri de Sigismund Koelle laisse voir en 1854 la forme Koara. Rennell rapporte encore les noms qu'en donnent Arabes et Maures, Neel Abeed et Neel Kebeer, et, lisant al-Idrisi, une forme Guin ou Fin. Pour le songhay, le zarma, le haoussa, le peul et l'igbo, aucune source portant le nom que ces langues donnent au fleuve n'a été trouvée.",
   "nameOriginActor": "Le nom est d'abord celui du fleuve, porté par les géographes et les cartographes européens bien avant la colonisation, puis donné au territoire par l'administration française lors de la création de la colonie du Niger, et conservé à l'indépendance de 1960. Qui l'a formé le premier reste discuté : un terme romain selon Rennell en 1799, une expression touarègue selon les ouvrages de référence modernes, sans auteur identifié. Aucune de ces attributions n'est établie, et aucune langue riveraine n'appelle le fleuve Niger.",
+  "nameHistory": {
+    "summary": "Le nom Niger désigne un pays d'Afrique de l'Ouest, la République du Niger, qui porte le nom du grand fleuve qui traverse l'ouest de son territoire. À l'époque coloniale, le pays s'est appelé territoire militaire du Niger, territoire du Niger, puis colonie du Niger ; les peuples riverains donnent au fleuve d'autres noms, comme Joliba ou Ọpo Ọya. Les sources ne s'accordent pas sur l'origine du nom Niger ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Niger",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un grand fleuve, devenu celui du pays ; son origine reste discutée.",
+        "periodLabel": "Une forme proche écrite dès le Ier siècle ; nom de l'État depuis 1958",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Niger est celui de la République du Niger, un pays sans accès à la mer du Sahel ouest-africain. Il le tient du fleuve Niger, qui traverse l'ouest du pays, selon le Permanent Committee on Geographical Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Niger",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2025,
+                "url": "https://assets.publishing.service.gov.uk/media/690dd8ca43f8a163237298bd/Niger_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche toponymique du gouvernement britannique, 2025. Le pays porte le nom du fleuve Niger, qui traverse l'ouest du pays ; le titre de l'État est République du Niger."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "3 août 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Niger est celui que garde le pays à son indépendance, le 3 août 1960, selon le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui. Le tableau 5.1, « Chronologie de l'indépendance africaine », donne pour le Niger la date du 3/VIII/1960 et la France pour puissance coloniale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "18 décembre 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom République du Niger est adopté le 18 décembre 1958 par l'Assemblée territoriale, qui fait du territoire du Niger un État membre de la Communauté : « L'État du Niger prend le titre de République du Niger ».",
+            "formAsWritten": "République du Niger",
+            "sources": [
+              {
+                "title": "Proclamation de la République du Niger, 18 décembre 1958, et Constitution du 12 mars 1959",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": 2009,
+                "url": "https://mjp.univ-perp.fr/constit/ne1959.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "délibération du 18 décembre 1958, article 2",
+                "notes": "Délibération de l'Assemblée territoriale du Niger : « Le territoire du Niger adopte le statut d'État membre de la Communauté » (article premier) ; « L'État du Niger prend le titre de République du Niger » (article 2)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Niger désigne d'abord le grand fleuve d'Afrique de l'Ouest, puis le pays qu'il traverse à l'ouest. Son origine est discutée depuis longtemps ; nous présentons les explications une à une.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Niger",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2025,
+                "url": "https://assets.publishing.service.gov.uk/media/690dd8ca43f8a163237298bd/Niger_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche toponymique du gouvernement britannique, 2025. Le pays porte le nom du fleuve Niger, qui traverse l'ouest du pays ; le titre de l'État est République du Niger."
+              },
+              {
+                "title": "Travels in the Interior Districts of Africa, avec un appendice de James Rennell",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://archive.org/details/travelsininteri00park",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "appendice, p. iii, note",
+                "notes": "Londres, W. Bulmer, 1799, lu dans l'exemplaire numérisé. L'appendice de James Rennell, en note : « By Niger, the ancients meant merely to express the River of the Black People, or Ethiopians. The term was Roman » ; il ajoute que les Maures et les Arabes appellent le fleuve Neel Abeed, et que son nom propre dans le pays semble être Guin ou Fin, d'après l'édition d'al-Idrīsī par Hartmann."
+              },
+              {
+                "title": "Egerew n-igeruwen",
+                "author": "Yusuf ag Herrel, Tamajaq.com",
+                "year": null,
+                "url": "https://www.tamajaq.com/egerew-n-igeruwen/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Article signé, publié sur un site consacré à la langue tamajaq, non daté, lu en ligne le 10 octobre 2026. L'auteur rattache le nom au touareg egerew n-igerewan, « la rivière des rivières », et le fait remonter à Jean-Léon l'Africain, dont la version arabe aurait écrit nahr al-anhur ; il ne cite aucun travail publié à l'appui. Il signale aussi ceux qui rattachent le nom au latin."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Niger n'est pas celui qu'emploie le pays yoruba : on y appelle le fleuve Ọpo Ọya, du nom d'Ọya, l'épouse divinisée de Ṣàngó, à qui il est consacré, selon le pasteur yoruba Samuel Johnson.",
+            "sources": [
+              {
+                "title": "The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/the-history-of-the-yorubas-from-the-earliest-times-to-the-beginning-of-the-british-protectorate",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36",
+                "notes": "Londres, George Routledge & Sons, 1921, lu dans l'exemplaire numérisé. Écrit par un pasteur yoruba. Ọya, épouse de Ṣàngó, a été divinisée : « The river Niger is sacred to her, and hence that river is called all over Yoruba land Opo Qya after her name »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1799,
+              "to": 1799,
+              "label": "1799"
+            },
+            "era": "polity",
+            "statement": "Le nom Niger n'est pas celui que donnent au fleuve les Maures et les Arabes : ils l'appellent Neel Abeed, « le fleuve des esclaves », écrit le géographe James Rennell. Il ajoute que le nom propre du fleuve dans le pays semble être Guin ou Fin, d'après le géographe al-Idrīsī.",
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa, avec un appendice de James Rennell",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://archive.org/details/travelsininteri00park",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "appendice, p. iii, note",
+                "notes": "Londres, W. Bulmer, 1799, lu dans l'exemplaire numérisé. L'appendice de James Rennell, en note : « By Niger, the ancients meant merely to express the River of the Black People, or Ethiopians. The term was Roman » ; il ajoute que les Maures et les Arabes appellent le fleuve Neel Abeed, et que son nom propre dans le pays semble être Guin ou Fin, d'après l'édition d'al-Idrīsī par Hartmann."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1796,
+              "to": 1796,
+              "label": "Juillet 1796"
+            },
+            "era": "polity",
+            "statement": "Le nom Niger n'est pas celui qu'emploient les habitants de la région de Ségou : on annonce à Mungo Park qu'il verra le lendemain le Niger, « que les Noirs appellent Joliba, la grande eau », écrit-il.",
+            "actors": [
+              {
+                "name": "Mungo Park",
+                "role": "voyageur écossais, qui atteint le fleuve à Ségou"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa, avec un appendice de James Rennell",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://archive.org/details/travelsininteri00park",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 194",
+                "notes": "Londres, W. Bulmer, 1799, lu dans l'exemplaire numérisé. Chapitre XV : « I should see the Niger (which the Negroes call Joliba, or the great water) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Invocation rapportée par Amadou Hampâté Bâ"
+            },
+            "statement": "Le nom Niger n'apparaît pas dans l'invocation que prononçait Danfo Siné, grand doma bambara de Bougouni et chantre du Komo, avant chacun de ses récits : il y nomme le fleuve Jeliba, selon Amadou Hampâté Bâ, qui l'a connu dans son enfance.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 8 : La tradition vivante",
+                "author": "Amadou Hampâté Bâ",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 202",
+                "notes": "UNESCO, volume dirigé par Joseph Ki-Zerbo. L'auteur rapporte l'invocation que prononçait, avant un récit, Danfo Siné, grand doma bambara de Bougouni et chantre du Komo, qu'il a connu dans son enfance : « O Jigi, grand bélier qui le premier souffla dans la corne d'appel du Komo, venu sur le Jeliba (Niger) ! »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1526,
+              "to": 1526,
+              "label": "1526"
+            },
+            "era": "polity",
+            "statement": "Le nom Niger désigne le grand fleuve du pays des Noirs dans la Description de l'Afrique de Jean-Léon l'Africain, dont le manuscrit italien est daté de Rome en 1526 et imprimé par Ramusio en 1550, selon l'édition de Robert Brown.",
+            "sources": [
+              {
+                "title": "The History and Description of Africa and of the Notable Things Therein Contained, vol. I, traduction de John Pory (1600), éditée par Robert Brown",
+                "author": "Jean-Léon l'Africain (al-Ḥasan al-Wazzān)",
+                "year": 1896,
+                "url": "https://archive.org/details/india.history.resource.88579",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 124 ; introduction, p. lii",
+                "notes": "Londres, Hakluyt Society, 1896, lu dans l'exemplaire numérisé. Dans le premier livre : « This lande of Negros hath a mightie riuer, which taking his name of the region, is called Niger ». L'introduction de Robert Brown date de Rome, le 10 mars 1526, le manuscrit italien dont dérivent toutes les traductions, et précise que Ramusio ne l'imprime qu'en 1550."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1,
+              "to": 100,
+              "label": "Ier siècle de notre ère"
+            },
+            "statement": "Le nom Niger a une forme proche, Nigris, chez l'auteur latin Pline l'Ancien : un fleuve de l'intérieur de l'Afrique, « de même nature que le Nil », dont les Éthiopiens Nigritae tireraient leur nom. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources lues ne disent pas si ce fleuve est celui qu'on appelle aujourd'hui Niger.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire naturelle, livre V (texte latin)",
+                "author": "Pline l'Ancien",
+                "year": null,
+                "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Pliny_the_Elder/5*.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre V, § 43-44",
+                "notes": "Texte latin mis en ligne par Bill Thayer, LacusCurtius, université de Chicago, lu en ligne. Au § 43, les Éthiopiens Nigritae tirent leur nom du fleuve (« Nigritae a quo dictum est flumine ») ; au § 44, « Nigri fluvio eadem natura quae Nilo », le fleuve Nigris a la même nature que le Nil."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1799,
+              "to": 1799,
+              "label": "Proposée en 1799"
+            },
+            "statement": "Le nom Niger viendrait du latin et voudrait dire le fleuve des Noirs, ou des Éthiopiens : les Romains l'auraient formé, alors que les Grecs tenaient ce fleuve pour une branche du Nil, selon le géographe James Rennell.",
+            "hypothesisGroup": "origine du nom Niger",
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa, avec un appendice de James Rennell",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://archive.org/details/travelsininteri00park",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "appendice, p. iii, note",
+                "notes": "Londres, W. Bulmer, 1799, lu dans l'exemplaire numérisé. L'appendice de James Rennell, en note : « By Niger, the ancients meant merely to express the River of the Black People, or Ethiopians. The term was Roman » ; il ajoute que les Maures et les Arabes appellent le fleuve Neel Abeed, et que son nom propre dans le pays semble être Guin ou Fin, d'après l'édition d'al-Idrīsī par Hartmann."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1526,
+              "to": 1526,
+              "label": "Proposée en 1526"
+            },
+            "statement": "Le nom Niger viendrait de celui de la région que traverse le fleuve, le pays des Noirs, selon Jean-Léon l'Africain dans la traduction anglaise de John Pory.",
+            "hypothesisGroup": "origine du nom Niger",
+            "sources": [
+              {
+                "title": "The History and Description of Africa and of the Notable Things Therein Contained, vol. I, traduction de John Pory (1600), éditée par Robert Brown",
+                "author": "Jean-Léon l'Africain (al-Ḥasan al-Wazzān)",
+                "year": 1896,
+                "url": "https://archive.org/details/india.history.resource.88579",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 124",
+                "notes": "Londres, Hakluyt Society, 1896, lu dans l'exemplaire numérisé. Dans le premier livre : « This lande of Negros hath a mightie riuer, which taking his name of the region, is called Niger »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Niger viendrait du touareg egerew n-igerewan, « la rivière des rivières », dont Jean-Léon l'Africain aurait donné la traduction arabe nahr al-anhur, selon Yusuf ag Herrel. Il ne cite aucun travail publié à l'appui.",
+            "hypothesisGroup": "origine du nom Niger",
+            "sources": [
+              {
+                "title": "Egerew n-igeruwen",
+                "author": "Yusuf ag Herrel, Tamajaq.com",
+                "year": null,
+                "url": "https://www.tamajaq.com/egerew-n-igeruwen/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Article signé, publié sur un site consacré à la langue tamajaq, non daté, lu en ligne le 10 octobre 2026. L'auteur rattache le nom au touareg egerew n-igerewan, « la rivière des rivières », et le fait remonter à Jean-Léon l'Africain, dont la version arabe aurait écrit nahr al-anhur ; il ne cite aucun travail publié à l'appui. Il signale aussi ceux qui rattachent le nom au latin."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Colonie du Niger",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1922 à 1958",
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "13 octobre 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom colonie du Niger figure dans l'article premier du décret du 13 octobre 1922 : le territoire du Niger devient, à compter du 1er juillet 1922, une colonie qui prend ce nom. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne portait déjà le nom du fleuve.",
+            "formAsWritten": "colonie du Niger",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Colonie du Niger : traités et décrets (1891-1922)",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": 2009,
+                "url": "https://mjp.univ-perp.fr/constit/ne1900.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Textes reproduits d'après le Journal officiel de la République française, avec une notice historique. Le décret du 13 octobre 1922 dispose que « le territoire du Niger est transformé, à compter du 1er juillet 1922, en une colonie qui prend le nom de colonie du Niger ».",
+                "page": "décret du 13 octobre 1922, article premier"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Territoire du Niger",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "1921-1922",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "4 décembre 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom territoire du Niger remplace celui de territoire militaire du Niger à compter du 1er janvier 1921, selon l'article premier du décret du 4 décembre 1920. C'est la plus ancienne trace de ce nom que le projet connaît avec certitude. La chronologie de la Digithèque de l'université de Perpignan date de 1910 un décret qui établit un territoire du Niger, mais les décrets de 1911 et de 1920 parlent encore de territoire militaire.",
+            "formAsWritten": "territoire du Niger",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Colonie du Niger : traités et décrets (1891-1922)",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": 2009,
+                "url": "https://mjp.univ-perp.fr/constit/ne1900.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Textes reproduits d'après le Journal officiel de la République française, avec une notice historique. Le décret du 4 décembre 1920 dispose : « A compter du 1er janvier 1921, le territoire militaire du Niger prend le nom de « territoire du Niger » ».",
+                "page": "décret du 4 décembre 1920, article premier"
+              },
+              {
+                "title": "Niger : constitutions et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": 2009,
+                "url": "https://mjp.univ-perp.fr/constit/ne.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie établie par Jean-Pierre Maury, mise à jour en 2026. Elle date du 25 juillet 1900 un « décret établissant le territoire militaire du Niger », du 22 juin 1910 un décret établissant le territoire du Niger et du 13 octobre 1922 celui qui établit la colonie du Niger.",
+                "page": "rubrique « Histoire »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Territoire militaire du Niger",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1900 à 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "7 septembre 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom territoire militaire du Niger figure dans le décret du 7 septembre 1911, qui rattache ce territoire au gouvernement général de l'Afrique-Occidentale française ; il dépendait jusque-là de la colonie du Haut-Sénégal et Niger.",
+            "sources": [
+              {
+                "title": "Colonie du Niger : traités et décrets (1891-1922)",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": 2009,
+                "url": "https://mjp.univ-perp.fr/constit/ne1900.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Textes reproduits d'après le Journal officiel de la République française, avec une notice historique. Le rapport qui précède le décret du 7 septembre 1911 explique que le territoire militaire du Niger « a été rattaché à la colonie du Haut-Sénégal et Niger » jusqu'alors.",
+                "page": "décret du 7 septembre 1911, rapport au président"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "20 décembre 1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom territoire militaire du Niger n'est pas encore celui du décret du 20 décembre 1900 : il crée, entre le Niger et le Tchad, un « 3e territoire militaire » dont Zinder est le chef-lieu.",
+            "sources": [
+              {
+                "title": "Colonie du Niger : traités et décrets (1891-1922)",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": 2009,
+                "url": "https://mjp.univ-perp.fr/constit/ne1900.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Textes reproduits d'après le Journal officiel de la République française, avec une notice historique. Article premier du décret du 20 décembre 1900 : « Il est constitué entre le Niger et le Tchad un 3e territoire militaire ayant pour chef-lieu Zinder ».",
+                "page": "décret du 20 décembre 1900, article premier"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "25 juillet 1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom territoire militaire du Niger est celui que la Digithèque de l'université de Perpignan donne au territoire établi par un décret du 25 juillet 1900. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu ce décret nous-mêmes. Les pays qu'il réunit avaient leurs propres noms bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Niger : constitutions et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": 2009,
+                "url": "https://mjp.univ-perp.fr/constit/ne.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie établie par Jean-Pierre Maury, mise à jour en 2026. Elle date du 25 juillet 1900 un « décret établissant le territoire militaire du Niger », du 22 juin 1910 un décret établissant le territoire du Niger et du 13 octobre 1922 celui qui établit la colonie du Niger.",
+                "page": "rubrique « Histoire »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Colonie du Niger (1890-1960)"],
