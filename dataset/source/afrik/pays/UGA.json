@@ -6,6 +6,290 @@
   "summary": "L'Ouganda porte le nom du Buganda, le plus puissant royaume de la région, que les Britanniques ont étendu à tout le protectorat. Buganda, Bunyoro, Toro et Ankole y coexistaient comme royaumes distincts. Baganda, Banyankole, Basoga, Acholi, Banyoro et Langi y font se rencontrer mondes bantou et nilotique.",
   "etymology": "Le nom « Ouganda » reprend Uganda, la forme swahilie de Buganda, le nom d'un royaume situé au nord du lac Victoria. En swahili, un nom de pays commence par U-. En luganda, la langue du Buganda, le même mot change de début selon ce qu'il désigne : Buganda (le pays, le royaume), Baganda (les habitants), Muganda (une personne), Luganda (la langue). Seul, « ganda » n'a pas de sens connu en luganda, et son origine reste incertaine. En 1863, le voyageur britannique John Hanning Speke écrit déjà « the kingdom of Uganda » pour parler du Buganda. À partir de 1894, ce nom désigne un protectorat britannique qui réunit d'autres royaumes et de nombreux peuples. À l'indépendance, le 9 octobre 1962, le pays garde ce nom.",
   "nameOriginActor": "Buganda est le nom que les Baganda donnent à leur royaume. Uganda en est la forme swahilie, la langue de la côte et du commerce. Les voyageurs britanniques l'emploient pour le royaume (Speke, 1863), puis l'administration britannique pour le protectorat (1894-1962). Le pays indépendant garde ce nom en 1962.",
+  "nameHistory": {
+    "summary": "Le nom Ouganda désigne un pays d'Afrique de l'Est, la République de l'Ouganda, qui s'appelle Uganda en anglais et en swahili. C'est la forme swahilie de Buganda, le nom d'un royaume que ses habitants, les Baganda, donnent à leur pays ; de 1894 à 1962, le pays s'est appelé Protectorat de l'Ouganda. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ouganda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme swahilie de Buganda, nom d'un royaume, devenue celle du protectorat puis de l'État.",
+        "periodLabel": "Écrit dès 1860 ; nom du protectorat dès 1894 et de l'État depuis 1962",
+        "accounts": [
+          {
+            "period": {
+              "from": 1962,
+              "to": null,
+              "label": "Depuis le 9 octobre 1962"
+            },
+            "era": "modern",
+            "statement": "Le nom Ouganda, Uganda en anglais et en swahili, est celui de l'État depuis le 9 octobre 1962 : ce jour-là, les territoires du protectorat de l'Ouganda deviennent indépendants « sous le nom d'Uganda », selon la loi britannique sur l'indépendance de l'Ouganda.",
+            "aspect": "usage",
+            "formAsWritten": "Uganda",
+            "sources": [
+              {
+                "title": "Uganda Independence Act 1962",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1962,
+                "url": "https://www.legislation.gov.uk/ukpga/Eliz2/10-11/57/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu le 10 octobre 2026 sur le site officiel de la législation britannique. La section 1 : le 9 octobre 1962, les territoires du protectorat de l'Ouganda, « Uganda Protectorate », forment un État « under the name of Uganda »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131",
+                "notes": "UNESCO, volume dirigé par A. A. Mazrui, édition française lu le 10 octobre 2026. Tableau 5.1, « Chronologie de l'indépendance africaine ». Les pages du tableau ne sont pas numérotées : nous les comptons à partir des pages 127 et 133. « Ouganda 9/X/1962 Grande-Bretagne »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ouganda passe du royaume du Buganda à un protectorat britannique : Godfrey N. Uzoigwe parle de la proclamation du protectorat sur l'Ouganda en 1894, Henry A. Mwanzi d'un Buganda déclaré protectorat la même année. Le nom s'étend ensuite à d'autres royaumes et à de nombreux peuples.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 2 : Partage européen et conquête de l'Afrique : aperçu général",
+                "author": "Godfrey N. Uzoigwe",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 57",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lu le 10 octobre 2026. « La bataille de Mengo (1892) — au Buganda, centre des opérations — aboutit à la proclamation du protectorat sur l'Ouganda (1894). La voie était donc libre pour la conquête du reste de l'Ouganda. »"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 7 : Initiatives et résistances africaines en Afrique orientale de 1880 à 1914",
+                "author": "Henry A. Mwanzi",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 182",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lu le 10 octobre 2026. Mwanga, le kabaka du Buganda, « région déclarée protectorat britannique en 1894 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1862,
+              "to": 1863,
+              "label": "Séjour de 1862, publié en 1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Ouganda désigne, chez John Hanning Speke, « le royaume actuel d'Uganda », entre le Nil et la Katonga, qu'il visite et dont il raconte l'histoire légendaire. Il n'emploie jamais la forme Buganda.",
+            "formAsWritten": "Uganda",
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 251",
+                "notes": "Édimbourg et Londres, William Blackwood, 1863, lu dans l'exemplaire numérisé le 10 octobre 2026. « the present kingdom of Uganda ». Le chapitre IX annonce « Legendary history of the kingdom of Uganda »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1860,
+              "label": "Recueilli en 1858, publié en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Ouganda apparaît par écrit, sous la forme Uganda, chez Richard Burton, qui décrit les « royaumes du Nord », Karagwah, Uganda et Unyoro, d'après ce que lui ont dit des marchands arabes à Kazeh, surtout Snay bin Amir. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume qu'il désigne existait déjà avant ce texte.",
+            "formAsWritten": "Uganda",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, volume II",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen21860burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 173-174",
+                "notes": "Londres, 1860, lu dans l'exemplaire numérisé le 10 octobre 2026. Chapitre « The Northern Kingdoms: Karagwah, Uganda, and Unyoro ». Burton prévient que ces pages reposent sur des informations orales recueillies à Kazeh, notamment auprès de Snay bin Amir, et non sur une exploration."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ouganda désigne aujourd'hui l'État d'Afrique de l'Est. Uganda est la forme swahilie de Buganda, le nom que les Baganda donnent à leur royaume : en swahili, U- placé devant un nom désigne le pays. Ce que veut dire ganda reste inconnu, et l'origine du nom est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. xxxi",
+                "notes": "Édimbourg et Londres, William Blackwood, 1863, lu dans l'exemplaire numérisé le 10 octobre 2026. Introduction : en swahili, U- placé devant le mot essentiel d'un nom désigne le lieu, Wa- le peuple, M- une personne et Ki- la langue (Ugogo, le pays des Gogo)."
+              },
+              {
+                "title": "Worldmark Encyclopedia of Cultures and Daily Life, « Baganda »",
+                "author": "Gale, article révisé par E. Kalipeni",
+                "year": 2018,
+                "url": "https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/baganda",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu sur Encyclopedia.com le 10 octobre 2026 (mise à jour du 29 mai 2018). Le radical ganda n'a pas de sens en luganda ; Buganda désigne le lieu ou le royaume où vivent les Baganda, et Muganda est le singulier de Baganda."
+              },
+              {
+                "title": "CIA World Factbook – Uganda (Country name), édition 2025",
+                "author": "Central Intelligence Agency",
+                "year": 2025,
+                "url": "https://worldfactbookarchive.org/archive/field/UG/Country%20name",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Fiche « Country name », lue dans l'archive des éditions le 10 octobre 2026. Le nom viendrait du swahili u, « pays », et du nom des Ganda ; l'origine du nom Ganda n'est pas claire. Les éditions 2016 à 2024 formulaient l'étymologie autrement, à partir de Buganda."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "Rapportée en 1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Ouganda viendrait d'un chasseur venu d'Unyoro, nommé Uganda, que les habitants auraient fait roi sous le nom de Kimera : le pays aurait pris son nom, selon une tradition que rapporte John Hanning Speke.",
+            "hypothesisGroup": "origine du nom Ouganda",
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 252",
+                "notes": "Édimbourg et Londres, William Blackwood, 1863, lu dans l'exemplaire numérisé le 10 octobre 2026. Tradition recueillie par Speke à la cour du Buganda : la terre des Wiru, ou Waddu, « les esclaves », qu'on appelait Uddu, dépendait du royaume du Kittara (Unyoro) jusqu'à huit générations avant lui ; un chasseur venu d'Unyoro, nommé Uganda, y aurait été fait roi sous le nom de Kimera, et le pays entre le Nil et la Katonga aurait pris son nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Rapportée en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Ouganda viendrait du swahili u, « pays », et du nom des Ganda, selon le World Factbook de la CIA, qui juge l'origine du nom Ganda peu claire.",
+            "hypothesisGroup": "origine du nom Ouganda",
+            "sources": [
+              {
+                "title": "CIA World Factbook – Uganda (Country name), édition 2025",
+                "author": "Central Intelligence Agency",
+                "year": 2025,
+                "url": "https://worldfactbookarchive.org/archive/field/UG/Country%20name",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Fiche « Country name », lue dans l'archive des éditions le 10 octobre 2026. Le nom viendrait du swahili u, « pays », et du nom des Ganda ; l'origine du nom Ganda n'est pas claire. Les éditions 2016 à 2024 formulaient l'étymologie autrement, à partir de Buganda."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant Kimera, selon une tradition rapportée en 1863"
+            },
+            "era": "polity",
+            "before": true,
+            "statement": "On parle alors d'Uddu, « le pays des esclaves », pour désigner les terres fertiles qui bordent le lac Victoria, du Nil à la Kagera, et qui nourrissent le royaume du Kittara, selon une tradition que rapporte John Hanning Speke.",
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 251-252",
+                "notes": "Édimbourg et Londres, William Blackwood, 1863, lu dans l'exemplaire numérisé le 10 octobre 2026. Tradition recueillie par Speke à la cour du Buganda : la terre des Wiru, ou Waddu, « les esclaves », qu'on appelait Uddu, dépendait du royaume du Kittara (Unyoro) jusqu'à huit générations avant lui ; un chasseur venu d'Unyoro, nommé Uganda, y aurait été fait roi sous le nom de Kimera, et le pays entre le Nil et la Katonga aurait pris son nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Protectorat de l'Ouganda",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1894 au 9 octobre 1962",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1962,
+              "label": "Jusqu'au 9 octobre 1962"
+            },
+            "era": "colonial",
+            "statement": "Le nom Protectorat de l'Ouganda, Uganda Protectorate en anglais, est celui des territoires que la loi britannique de 1962 rend indépendants : des royaumes, des districts et d'autres territoires, réunis sous un même nom.",
+            "formAsWritten": "Uganda Protectorate",
+            "sources": [
+              {
+                "title": "Uganda Independence Act 1962",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1962,
+                "url": "https://www.legislation.gov.uk/ukpga/Eliz2/10-11/57/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu le 10 octobre 2026 sur le site officiel de la législation britannique. La section 1 : le 9 octobre 1962, les territoires du protectorat de l'Ouganda, « Uganda Protectorate », forment un État « under the name of Uganda »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "era": "colonial",
+            "statement": "Le nom Protectorat de l'Ouganda naît de la proclamation du protectorat britannique en 1894, après la bataille de Mengo, selon Godfrey N. Uzoigwe. C'est la plus ancienne trace de ce nom que le projet connaît. Les royaumes qu'il réunit existaient bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 2 : Partage européen et conquête de l'Afrique : aperçu général",
+                "author": "Godfrey N. Uzoigwe",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 57",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lu le 10 octobre 2026. « La bataille de Mengo (1892) — au Buganda, centre des opérations — aboutit à la proclamation du protectorat sur l'Ouganda (1894). »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Protectorat de l'Ouganda (1894-1962)"],
