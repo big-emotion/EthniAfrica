@@ -1,6 +1,6 @@
 ---
 title: "Self-names to verify through oral sources (« à vérifier par sources orales »)"
-status: "ruled 2026-10-10 — kept as they are until an oral or fieldwork pass"
+status: "ruled 2026-10-10, wave 3 added 2026-10-11 — kept as they are until an oral or fieldwork pass"
 related:
   - docs/editorial/doctrine.md
   - docs/editorial/strategy/colonial-periods.md
@@ -25,6 +25,20 @@ unsupported statement for another.
 | `PPL_SAWA`    | Sawa    | same                                                                                                                                 |
 | `PPL_MONGO`   | Mongo   | same                                                                                                                                 |
 | `PPL_AMBUNDU` | Ambundu | same                                                                                                                                 |
+
+## Wave 3 of the long tail — ruled 2026-10-11
+
+These self-names rest on a language name, a genealogical name or a
+catalogue's alternative name, not on a source saying the people call
+themselves so. The operator ruled to keep them: each tile already says what
+kind of name it is. They wait for the same oral check.
+
+| Fiche         | Name       | What the source gives, and what is missing                                                         |
+| ------------- | ---------- | -------------------------------------------------------------------------------------------------- |
+| `PPL_BEJA`    | Biɖawijeːt | the name of the language (Vanhove); a source naming the people by it                               |
+| `PPL_NUBIENS` | Nobiin     | the name of one Nubian language and of its speakers' community; a source for the people as a whole |
+| `PPL_BAGGAR`  | Djuhayna   | the Arab family the Baggara claim descent from; a source saying they use it as their own name      |
+| `PPL_FOUR`    | Fora       | an alternative name of the language in Glottolog; a source naming the people by it                 |
 
 ## Related case: Bilād Ṣinqīṭ (`MRT`)
 

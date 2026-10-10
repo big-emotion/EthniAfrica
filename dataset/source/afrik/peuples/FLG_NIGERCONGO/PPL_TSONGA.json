@@ -507,6 +507,7 @@
               "to": 1892,
               "label": "1892"
             },
+            "era": "colonial",
             "statement": "Le nom Magwamba apparaît, écrit Magwambas, chez le naturaliste W. L. Distant, qui les appelle aussi « knob-noses », à cause de leurs scarifications du nez, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît.",
             "formAsWritten": "Magwambas",
             "birth": true,
@@ -550,6 +551,7 @@
               "to": 1900,
               "label": "Proposée en 1900"
             },
+            "era": "colonial",
             "statement": "Le nom Magwamba voudrait dire « démons » ou « diables », selon A. H. Keane en 1900, cité par le Dictionary of South African English.",
             "hypothesisGroup": "origine du nom Magwamba",
             "sources": [

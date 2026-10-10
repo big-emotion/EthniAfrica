@@ -8,7 +8,7 @@
       "mainName": "Yao",
       "selfAppellation": "Wayao",
       "exonyms": ["Yao", "Ajao", "Achawa", "Adsawa", "Haiao", "Veiao"],
-      "originOfExonyms": "Le nom Yao viendrait du nom d'une colline situee dans le nord du Mozambique (province de Niassa), une colline denudee, forme plurielle d'un nom signifiant colline sans arbres. Les formes Ajao et Achawa sont des transcriptions swahili ou europeennes anciennes. Wayao est l'autonym au pluriel (wa- etant le prefixe de classe pour les personnes en bantu). Chiyao (chi-) est le nom de la langue.",
+      "originOfExonyms": "Les formes Ajao et Achawa sont des transcriptions swahili ou europeennes anciennes. Wayao est l'autonym au pluriel (wa- etant le prefixe de classe pour les personnes en bantu). Chiyao (chi-) est le nom de la langue.",
       "whyProblematic": null,
       "contemporaryUsage": "Yao et Wayao sont les termes courants. Chiyao designe la langue. Les gouvernements du Malawi, du Mozambique et de la Tanzanie reconnaissent les Yao comme groupe ethnique distinct.",
       "linguisticFamily": "FLG_BANTU",
@@ -199,6 +199,7 @@
               "to": 1798,
               "label": "Lettre du 22 mars 1798, traduite en 1873"
             },
+            "era": "polity",
             "statement": "Le nom Yao a une forme proche, Mujao, dans une lettre écrite à Tete le 22 mars 1798 par l'explorateur portugais Francisco José de Lacerda e Almeida : les Muizas y commercent avec les Mujao. Dans sa traduction de 1873, Richard F. Burton note que c'est la forme portugaise du nom. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
             "formAsWritten": "Mujao",
             "birth": true,

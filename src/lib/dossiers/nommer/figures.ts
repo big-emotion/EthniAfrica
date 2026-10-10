@@ -85,7 +85,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 3116 -> 3079 on 2026-10-10: fourteen duplicate people fiches folded into their keepers: their
     // exonyms left with them, those only they held were carried over, and
     // PPL_KHOE_MACRO gave up Khoikhoi and Hottentot to PPL_KHOIKHOI, which has them.
-    value: 3079,
+    // 3079 -> 3081 on 2026-10-11: PPL_MAFA and PPL_SARA gained a bare « Kirdi »,
+    // which their name histories document, once PPL_KIRDI became an umbrella entry.
+    value: 3081,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -237,7 +239,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     figureKey: "probe-arabic",
     label: "fiches employant le radical « arab- »",
     // 74 -> 72 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
-    value: 72,
+    // 72 -> 71 on 2026-10-11: PPL_KIRDI dropped its unsourced etymologies, the Arabic one included.
+    value: 71,
     method: "radical arab dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
