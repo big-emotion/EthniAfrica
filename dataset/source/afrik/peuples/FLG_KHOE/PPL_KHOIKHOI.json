@@ -134,5 +134,226 @@
         "notes": "Dictionnaire historique publie. Donne une origine neerlandaise, peut-etre issue de l'allemand hotteren-totteren (begayer), puis mentionne l'autre lecture, celle d'un chant de danse, sans les departager. Consulte le 25 septembre 2026."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Khoikhoi désigne un peuple d'éleveurs d'Afrique australe, en Afrique du Sud, en Namibie et au Botswana, qui se nomme lui-même Khoekhoe. D'autres noms existent : Hottentot, donné à l'époque coloniale et jugé offensant aujourd'hui, et Khoisan, un nom savant qui le réunit aux San. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Khoekhoe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : « les gens », écrit aussi Khoikhoi.",
+        "periodLabel": "Écrit depuis 1791 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens en nama"
+            },
+            "statement": "Le nom Khoekhoe vient du nama khoe-khoen, de khoe, « personne », et khoen, « gens », selon le Dictionary of South African English, qui le traduit « hommes des hommes ». Khoikhoi en est la forme la plus courante dans les livres en anglais et en français.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Khoikhoi",
+                "author": "Dictionary of South African English on Historical Principles",
+                "year": null,
+                "url": "https://dsae.co.za/entry/khoikhoi/e03780",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne, lu le 10 octobre 2026. Les citations anciennes qu'il donne n'ont pas été relues dans leurs livres d'origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1801,
+              "to": 1801,
+              "label": "1801"
+            },
+            "era": "colonial",
+            "statement": "Le nom Khoekhoe est écrit « Quaiquae » par le voyageur J. Barrow, qui le donne comme le nom de tout ce peuple, selon le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Khoikhoi",
+                "author": "Dictionary of South African English on Historical Principles",
+                "year": null,
+                "url": "https://dsae.co.za/entry/khoikhoi/e03780",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne, lu le 10 octobre 2026. Les citations anciennes qu'il donne n'ont pas été relues dans leurs livres d'origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1791,
+              "to": 1791,
+              "label": "1791"
+            },
+            "era": "colonial",
+            "statement": "Le nom Khoekhoe a une forme proche, Khoé-Khoep, pour un homme, dans la traduction anglaise du récit de voyage de F. Le Vaillant, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait en Afrique australe depuis bien plus longtemps.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Khoikhoi",
+                "author": "Dictionary of South African English on Historical Principles",
+                "year": null,
+                "url": "https://dsae.co.za/entry/khoikhoi/e03780",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne, lu le 10 octobre 2026. Les citations anciennes qu'il donne n'ont pas été relues dans leurs livres d'origine."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hottentot",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "nld",
+        "namedBy": "les colons néerlandais du Cap",
+        "shortLine": "Un nom donné à l'époque coloniale, jugé offensant aujourd'hui ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis le XVIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Hottentot est aujourd'hui jugé offensant par une partie des personnes concernées, et Khoikhoi le remplace, surtout dans les travaux savants, selon le Dictionary of South African English. Son origine est discutée ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Hottentot",
+                "author": "Dictionary of South African English on Historical Principles",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne, lu le 10 octobre 2026. Les citations anciennes qu'il donne n'ont pas été relues dans leurs livres d'origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1731,
+              "to": 1731,
+              "label": "1731"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hottentot « n'appartient en aucune façon » à ce peuple, écrit P. Kolben dans la traduction anglaise de G. Medley, selon le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Hottentot",
+                "author": "Dictionary of South African English on Historical Principles",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne, lu le 10 octobre 2026. Les citations anciennes qu'il donne n'ont pas été relues dans leurs livres d'origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1677,
+              "to": 1677,
+              "label": "1677"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hottentot a une forme proche, Hatten-tote, chez le voyageur T. Herbert, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait au Cap bien avant l'arrivée des Européens.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Hottentot",
+                "author": "Dictionary of South African English on Historical Principles",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne, lu le 10 octobre 2026. Les citations anciennes qu'il donne n'ont pas été relues dans leurs livres d'origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Hottentot viendrait d'un mot néerlandais ou allemand pour « bégayer », hotteren-totteren : les colons auraient ainsi désigné les clics de la langue khoekhoe, selon le Dictionary of South African English, qui cite aussi l'anthropologue Schapera.",
+            "hypothesisGroup": "origine du nom Hottentot",
+            "sources": [
+              {
+                "title": "Hottentot",
+                "author": "Dictionary of South African English on Historical Principles",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne, lu le 10 octobre 2026. Les citations anciennes qu'il donne n'ont pas été relues dans leurs livres d'origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Hottentot imiterait un chant de danse que les premiers visiteurs européens auraient entendu au Cap, selon une autre explication que relève le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Hottentot",
+            "sources": [
+              {
+                "title": "Hottentot",
+                "author": "Dictionary of South African English on Historical Principles",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne, lu le 10 octobre 2026. Les citations anciennes qu'il donne n'ont pas été relues dans leurs livres d'origine."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Khoisan",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "deu",
+        "namedBy": null,
+        "shortLine": "Un nom savant forgé en 1928 pour réunir les Khoikhoi et les San.",
+        "periodLabel": "Depuis 1928",
+        "accounts": [
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "1928"
+            },
+            "statement": "Le nom Khoisan est forgé en allemand par le savant L. Schultze à partir de Khoikhoin et de San, pour réunir ces deux peuples, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il réunit portaient chacun leur nom avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Khoisan",
+                "author": "Dictionary of South African English on Historical Principles",
+                "year": null,
+                "url": "https://dsae.co.za/entry/khoisan/e03782",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne, lu le 10 octobre 2026. Les citations anciennes qu'il donne n'ont pas été relues dans leurs livres d'origine."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
