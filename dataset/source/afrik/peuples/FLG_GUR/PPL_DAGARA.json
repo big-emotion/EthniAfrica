@@ -2,19 +2,19 @@
   "id": "PPL_DAGARA",
   "nameMain": "Dagara",
   "languageFamilyId": "FLG_GUR",
-  "currentCountries": ["BFA", "GHA"],
+  "currentCountries": ["BFA", "GHA", "CIV"],
   "content": {
     "appellations": {
       "mainName": "Dagara",
       "selfAppellation": "Dagara / Dagao",
-      "exonyms": ["Dagarti", "Dagaati", "Dagaaba", "Dagaari"],
+      "exonyms": ["Dagarti", "Dagaati", "Dagaaba", "Dagaari", "Dagaare"],
       "originOfExonyms": "Les premiers Européens à visiter la région ont formé Dagarti ou Dagaati à partir du mot local dagaa. Dagarti est une adaptation anglaise diffusée à l'époque coloniale. Dagaaba, avec Dagao pour une personne, est le nom le plus courant en dehors du nord. Les communautés du nord et du Burkina Faso préfèrent Dagara.",
       "whyProblematic": null,
       "contemporaryUsage": "Dagara est aujourd'hui l'appellation privilégiée par les communautés du Burkina Faso et de nombreux intellectuels du groupe. Dagaaba reste en usage courant dans le nord-ouest du Ghana. Les deux termes coexistent dans la littérature académique. Dagaarie ou Dagawie désigne le territoire ancestral.",
       "linguisticFamily": "FLG_GUR",
       "ethnoLinguisticGroup": "Gur central, sous-groupe Mole-Dagbani (Mabia)",
       "historicalRegion": "Dagawie — nord-ouest du Ghana (région Upper West) et sud-ouest du Burkina Faso (provinces Ioba, Poni, Bougouriba, Sissili, Mouhoun)",
-      "currentCountries": ["BFA", "GHA"]
+      "currentCountries": ["BFA", "GHA", "CIV"]
     },
     "ethnicities": [
       "Dagara du nord (locuteurs du dialecte nordique, principalement Burkina Faso, province de Ioba)",
@@ -29,13 +29,15 @@
       "migrationRoutes": [
         "Migration initiale vers le Sahel depuis l'est (région du bassin du lac Tchad, confluence Mole-Dagbani) au XIVe siècle",
         "Déplacement vers le nord-ouest du Ghana et le sud-ouest du Burkina Faso au XVIIe siècle",
-        "Migrations économiques internes au Ghana vers le sud (Brong-Ahafo, Kumasi, Accra) à partir du début du XXe siècle (mines et plantations de cacao)"
+        "Migrations économiques internes au Ghana vers le sud (Brong-Ahafo, Kumasi, Accra) à partir du début du XXe siècle (mines et plantations de cacao)",
+        "Presence en Cote d'Ivoire due aux frontieres coloniales imposees lors du partage de l'Afrique"
       ],
       "historicalSettlementZones": [
         "Région Upper West du Ghana (districts de Nandom, Lawra, Jirapa, Kaleo, Papu, Nadowli, Daffiama, Wechiau, Hamile)",
         "Province de Ioba, Burkina Faso (Diébougou), ainsi que Poni, Bougouriba, Sissili, Mouhoun",
         "Villes de Wa, Bogda, Babile, Tuna, Han, Zambo (Ghana)",
-        "Rives du fleuve Black Volta (frontière naturelle Dagawie)"
+        "Rives du fleuve Black Volta (frontière naturelle Dagawie)",
+        "Nord-Est de la Cote d'Ivoire"
       ],
       "unificationsOrDivisions": "Les Dagara n'ont jamais formé de structure politique unifiée. Ils ont résisté aux tentatives de conquête des royaumes voisins (Dagbon, Mamprugu, Gonja) et à l'empire Wassoulou de Samory Toure dans les années 1890, sous la conduite du Kaleo Naa. L'administration coloniale britannique a imposé des structures de chefferies en 1933, rattachant certains villages Dagara au Wala Native Authority. Depuis l'indépendance, le Conseil des Anciens Dagara du Ghana tente périodiquement d'unifier les différentes factions.",
       "externalInfluences": "Résistance à la conquête de l'empire Wassoulou de Samory Toure (fin XIXe siècle). Imposition coloniale de chefferies par les Britanniques. Évangélisation catholique et protestante (XXe siècle). Influence de l'islam via les réseaux commerciaux. Migrations vers le sud pour le travail salarié (mines, cacao) depuis les années 1920.",
@@ -73,7 +75,7 @@
     "demography": {
       "totalPopulation": 1850000,
       "referenceYear": 2025,
-      "source": "Estimations basées sur Joshua Project (Southern Dagaaba Ghana : 1 268 000 ; Dagara Burkina Faso : 399 000, 2024-2025), Wikipedia Dagaaba people, Ethnologue (SIL International). Population projetée 2025 avec taux de croissance Ghana (2,2%) et Burkina Faso (2,8%).",
+      "source": "Estimations basées sur Joshua Project (Southern Dagaaba Ghana : 1 268 000 ; Dagara Burkina Faso : 399 000, 2024-2025), Wikipedia Dagaaba people, Ethnologue (SIL International). Population projetée 2025 avec taux de croissance Ghana (2,2%) et Burkina Faso (2,8%). Une autre estimation donne 1 200 000 personnes (Wikipedia : 700 000 locuteurs du dagaare du Sud au Ghana et 388 000 locuteurs du dagara au Burkina Faso en 2001, projetes en 2025) : 780 000 au Ghana, 410 000 au Burkina Faso et 10 000 en Cote d'Ivoire.",
       "distributionByCountry": [
         {
           "country": "GHA",
@@ -84,6 +86,10 @@
           "country": "BFA",
           "population": 420000,
           "note": "Principalement provinces Ioba (Diébougou), Poni, Bougouriba, Sissili et Mouhoun dans la région Sud-Ouest"
+        },
+        {
+          "country": "CIV",
+          "population": 10000
         }
       ]
     },
@@ -121,6 +127,23 @@
         "title": "Bernard Woma — The Socio-Political Dimension of Dagara Funeral Ritual Music and Dirge (Master's Thesis, Indiana University, 2012)",
         "url": "http://www.dagaramusic.org/wp-content/uploads/2015/05/African-Studies-Masters-Thesis-2012.pdf",
         "tier": "needs_review"
+      },
+      {
+        "title": "Joshua Project – Ghana People Groups",
+        "url": "https://joshuaproject.net/countries/gh",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Craven, A. – The Pottery of Northern Ghana, 1975",
+        "url": null,
+        "tier": "referenced"
+      },
+      {
+        "title": "World Population Review – Ghana Population 2025",
+        "url": "https://worldpopulationreview.com/countries/ghana",
+        "tier": "unverified",
+        "source_kind": "discovery"
       }
     ]
   },

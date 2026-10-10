@@ -11,7 +11,10 @@
       "exonyms": [
         "Tswana (terme europeen)",
         "Bechuana / Bechuanas (forme coloniale archaique)",
-        "Chuana, Coana, Cuana, Sechuana (variantes coloniales)"
+        "Chuana, Coana, Cuana, Sechuana (variantes coloniales)",
+        "Beetjuana",
+        "Chwana",
+        "Secwana"
       ],
       "originOfExonyms": "Le terme Bechuana fut utilise par les colonisateurs britanniques, donnant son nom au Bechuanaland (actuel Botswana). Setswana designe la langue, Batswana le peuple.",
       "whyProblematic": "Le terme Batswana designe aussi tous les citoyens du Botswana, independamment de leur ethnicite. Il convient de distinguer les Tswana ethniques des citoyens botswanais au sens civique.",
@@ -31,7 +34,8 @@
       "Bahurutshe (Afrique du Sud, district de Ngaka Modiri Molema, Zeerust)",
       "Batlhaping (Afrique du Sud, Nord-Ouest et Cap-Nord, Taung)",
       "Bafokeng / Royal Bafokeng Nation (Afrique du Sud, Phokeng-Rustenburg)",
-      "Tlharo et Kgalagadi (Namibie, environ 6 000 personnes)"
+      "Tlharo et Kgalagadi (Namibie, environ 6 000 personnes)",
+      "BaTlokwa — Botswana et Afrique du Sud"
     ],
     "origins": {
       "ancientOrigins": "Les ancetres des Batswana s'installerent dans la region allant du fleuve Vaal au Botswana vers 600 de notre ere (consensus academique). Ils developperent un complexe agropastoral base sur l'elevage bovin. Le site de Toutswe (Botswana oriental, 600-1300 CE) illustre leurs premiers etablissements. Ils commercaient via le Limpopo avec l'ocean Indien (ivoire, or, perles asiatiques). Les Batswana font partie du groupe ethnolinguistique Sotho-Tswana.",
@@ -44,7 +48,10 @@
       "historicalSettlementZones": [
         "Botswana sud et est (Gaborone, Kanye, Serowe, Maun)",
         "Provinces du Nord-Ouest, Gauteng, Cap-Nord et Etat Libre (Afrique du Sud)",
-        "Namibie orientale (district de Gobabis, environ 6 000 personnes)"
+        "Namibie orientale (district de Gobabis, environ 6 000 personnes)",
+        "Toutswe (Botswana oriental) — premier site archéologique important, 700-1300 CE",
+        "Kaditshwene (North West Province, Afrique du Sud) — capitale Bahurutshe, fin XVe siècle",
+        "Kweneng Ruins (Suikerbosrand, Afrique du Sud) — complexe de villages tswana, XVe-XIXe siècles"
       ],
       "unificationsOrDivisions": "Organisation en merafe (chefferies) independantes sous des dikgosi (chefs). Pas d'empire unifie mais alliances et rivalites entre clans. Le systeme du kgotla (assemblee publique) assurait la cohesion locale. La colonisation britannique du Bechuanaland (1885) preserva en partie les structures traditionnelles.",
       "externalInfluences": "Contacts anciens avec les Khoisan (San et Khoikhoi). Commerce avec les Shona via le Limpopo. Influence decisive des missionnaires europeens au XIXe s. (Robert Moffat, 1826 : premier ecrit en Setswana ; traduction complete de la Bible en 1857). Guerre Batswana-Boer et Bataille de Dimawe (1852-1860). Protectorat britannique du Bechuanaland (1885-1966). Politique de l'apartheid et creation du bantoustan de Bophuthatswana (1977-1994) en Afrique du Sud.",
@@ -63,7 +70,9 @@
       "dialects": [
         "Setswana du Botswana (dialecte standard, base des ecrits officiels)",
         "Setswana du Nord-Ouest (Afrique du Sud) — variations selon les clans : Bakgatla, Barolong, Bakwena, Batlhaping, Bahurutshe, Bafokeng, Batlokwa, Bataung, Batswapong",
-        "Kgalagadi / Sekhalahari (parle par des groupes apparentes en Namibie et Botswana occidental)"
+        "Kgalagadi / Sekhalahari (parle par des groupes apparentes en Namibie et Botswana occidental)",
+        "Sepitori — dialecte urbain de Pretoria, mélange de setswana et d'autres langues de la ville",
+        "Setswana du Northern Cape — variété parlée par les Batlhaping et Barolong du Northern Cape"
       ],
       "vehicularRole": "Langue officielle du Botswana et l'une des 11 langues officielles d'Afrique du Sud. Parlee par environ 8,2 millions de locuteurs au total. Dominant dans les domaines public, officiel et social au Botswana. L'anglais et l'afrikaans sont co-utilises en Afrique du Sud et en Namibie. Premiere traduction complete d'une Bible en langue sub-saharienne en Setswana (1857)."
     },
@@ -82,7 +91,7 @@
     "demography": {
       "totalPopulation": 8200000,
       "referenceYear": 2025,
-      "source": "SIL Ethnologue 2024 : ~8,2 millions de locuteurs de Setswana. Wikipedia/Botswana 2011 : ~85% de la population du Botswana sont Tswana ethniques. Namibia Tourism Board 2025 : ~6 000 Tswana en Namibie. Estimations projections 2025.",
+      "source": "SIL Ethnologue 2024 : ~8,2 millions de locuteurs de Setswana. Wikipedia/Botswana 2011 : ~85% de la population du Botswana sont Tswana ethniques. Namibia Tourism Board 2025 : ~6 000 Tswana en Namibie. Estimations projections 2025. Une autre estimation donne 9 000 000 personnes (Statistics Botswana, recensement 2022 ; Statistics South Africa, recensement 2011 ; EBSCO 2025) : 2 200 000 au Botswana, 4 200 000 en Afrique du Sud et 400 000 au Zimbabwe. Les sources lues ne permettent pas de choisir entre ces chiffres.",
       "distributionByCountry": [
         {
           "country": "BWA",
@@ -131,6 +140,29 @@
         "url": "https://www.academia.edu/41715929/Setswana_Dialects_and_Inter_Dialectical_Variation_in_the_Republic_of_Botswana",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Participedia — Kgotla (Botswana Public Assembly)",
+        "url": "https://participedia.net/method/kgotla-botswana-public-assembly",
+        "tier": "unverified"
+      },
+      {
+        "title": "The Conversation — Botswana's kgotla system and democracy (2024)",
+        "url": "https://theconversation.com/in-a-world-where-political-polarization-and-disengagement-are-denting-democracy-does-botswanas-kgotla-system-hold-the-key-242358",
+        "tier": "referenced",
+        "source_kind": "press"
+      },
+      {
+        "title": "South African History Online — Tswana",
+        "url": "https://sahistory.org.za/article/tswana",
+        "tier": "referenced",
+        "source_kind": "repository"
+      },
+      {
+        "title": "EBSCO Research Starters — Tswana or Setswana language",
+        "url": "https://www.ebsco.com/research-starters/language-and-linguistics/tswana-or-setswana-language",
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       }
     ]
   },

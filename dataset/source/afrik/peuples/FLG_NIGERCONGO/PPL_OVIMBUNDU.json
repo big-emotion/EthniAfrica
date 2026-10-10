@@ -178,7 +178,8 @@
       "migrationRoutes": [
         "Derive des populations bantoues depuis le nord sur le plateau du Bié entre le 14e et le 17e siecle",
         "Penetration des familles regnantes depuis le nord-est au 17e siecle",
-        "Extension commerciale vers l'est jusqu'en Zambie, au Congo et en Namibie (18e-19e siecles)"
+        "Extension commerciale vers l'est jusqu'en Zambie, au Congo et en Namibie (18e-19e siecles)",
+        "Expansion depuis le plateau de Bie vers la bande cotiere a l'ouest de Benguela"
       ],
       "historicalSettlementZones": [
         "Plateau du Bié (Benguela), entre 1200 et 1800 m d'altitude, provinces de Huambo et Bié",
@@ -223,7 +224,7 @@
     "demography": {
       "totalPopulation": 8700000,
       "referenceYear": 2025,
-      "source": "Les Ovimbundu constituent environ 37-38% de la population angolaise. Population totale Angola 2025 : environ 38 millions (projections UN). 38% = ~14,4 millions, mais certaines sources citent 4 millions (Britannica, debut 21e siecle) a 6 millions (Ethnologue). Estimation retenue : 37% de 35 millions = ~8,7 millions (projection prudente 2025 sur base Minorityrights.org et Ethnologue).",
+      "source": "Les Ovimbundu constituent environ 37-38% de la population angolaise. Population totale Angola 2025 : environ 38 millions (projections UN). 38% = ~14,4 millions, mais certaines sources citent 4 millions (Britannica, debut 21e siecle) a 6 millions (Ethnologue). Estimation retenue : 37% de 35 millions = ~8,7 millions (projection prudente 2025 sur base Minorityrights.org et Ethnologue). Joshua Project (2024) compte 8 895 000 Ovimbundu en Angola et 5 000 en Namibie.",
       "distributionByCountry": [
         {
           "country": "AGO",
@@ -273,6 +274,12 @@
         "url": null,
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Joshua Project – Ovimbundu, Umbundu in Angola",
+        "url": "https://joshuaproject.net/people_groups/15706/AO",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

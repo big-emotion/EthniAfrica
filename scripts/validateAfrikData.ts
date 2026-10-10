@@ -2497,7 +2497,9 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
  * snapshot taken before 2026-02-04, or re-sources the claim. At 0, delete the
  * ratchet and make any live Factbook URL a plain error.
  */
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 132;
+// 132 -> 130 on 2026-10-10: the fourteen duplicate people fiches folded that
+// day took their own Factbook citations with them.
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 130;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -4404,7 +4406,10 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // 19th-century spellings its sources attest.
   // 7004 -> 6995 on 2026-10-10: PPL_JOLA, a duplicate of PPL_DIOLA, was
   // folded into it and retired with the model keys it lacked.
-  peuple: 6995,
+  // 6995 -> 6868 on 2026-10-10: fourteen duplicate fiches (Sotho, Tswana,
+  // Zulu, Xhosa, Ashanti, Dagaaba, Kongo, Umbundu, Tonga, Hutu, Swahili,
+  // Brong) were folded into their keepers and retired with the keys they lacked.
+  peuple: 6868,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next

@@ -2,7 +2,7 @@
   "id": "PPL_KIRUNDI_HUTU",
   "nameMain": "Hutu",
   "languageFamilyId": "FLG_NIGERCONGO",
-  "currentCountries": ["BDI", "RWA", "COD", "UGA"],
+  "currentCountries": ["BDI", "RWA", "COD", "UGA", "TZA"],
   "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
@@ -10,7 +10,8 @@
       "selfAppellation": "Abahutu",
       "exonyms": [
         "Hutu (terme repris par les administrateurs coloniaux belges et allemands)",
-        "Bahutu (forme avec prefixe Ba-, usitee en swahili et en langues de la region)"
+        "Bahutu (forme avec prefixe Ba-, usitee en swahili et en langues de la region)",
+        "Wahutu"
       ],
       "originOfExonyms": "L'etymologie de Hutu est debattue. Ernest Viaene (1910) proposa le sens d'esclave, ce que refuta Rene Bourgeois, suggereant au contraire que le terme signifiait seigneurs en reference aux Twa pygmees qui leur etaient subordonnes. Chez les Mongo de RDC, les dirigeants bantous des Twa sont appeles Bahoto ou Bawoto (cognate de Bahutu), un nom qui voudrait dire seigneurs. La forme Abahutu (singulier : Muhutu) est l'appellation propre en kinyarwanda et kirundi.",
       "whyProblematic": "Le terme Hutu fut instrumentalise par la colonisation belge : les Belges institutionnaliserent la distinction Hutu-Tutsi par des cartes d'identite ethniques obligatoires (annees 1920), creant une hierarchie raciale artificielle sur la base du nombre de vaches possedees. Cette categorisation contribua directement aux violences ethniques ulterieures, notamment au genocide de 1994. Depuis 1994, le Rwanda a officiellement supprime la categorisation ethnique dans les documents d'etat.",
@@ -18,13 +19,18 @@
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou des Grands Lacs (Zone J, Rwanda-Rundi)",
       "historicalRegion": "Rwanda, Burundi et region des Grands Lacs — hauts plateaux et collines du rift Albertin",
-      "currentCountries": ["BDI", "RWA", "COD", "UGA"]
+      "currentCountries": ["BDI", "RWA", "COD", "UGA", "TZA"]
     },
     "ethnicities": [
       "Hutu du Rwanda (Abahutu b'u Rwanda) — majorite historique (~85 % de la population)",
       "Hutu du Burundi (Abahutu b'Uburundi) — majorite (~85 % de la population)",
       "Hutu de RDC (Banyarwanda hutu des provinces de Kivu)",
-      "Hutu d'Ouganda (communautes refugiees en Ouganda)"
+      "Hutu d'Ouganda (communautes refugiees en Ouganda)",
+      "Hutu des hautes terres du centre du Burundi",
+      "Hutu des plaines de l'Imbo (plaine de la Rusizi)",
+      "Hutu des collines rurales (inselbergs et plateaux)",
+      "Banyabwisha (Hutu de la chefferie de Bwisha, Nord-Kivu)",
+      "Bafumbira (Hutu de la region de Kisoro, Ouganda)"
     ],
     "origins": {
       "ancientOrigins": "Les Abahutu sont un peuple bantou dont les ancetres emigrerent en Afrique centrale vers la region des Grands Lacs lors de la grande expansion bantou (entre le 1er et le 5e siecle de l'ere commune). Genetiquement, les Hutu presentent une majorite de lignees paternelles E1b1a (83 %) typiques des Bantou d'Afrique de l'Ouest et centrale, avec des influences couchitiques et nilo-sahariennes mineures. Apres leur arrivee dans la region, ils devinrent principalement agriculteurs sidentaires, tandis que les Tutsi pastoralistes et les Twa chasseurs-cueilleurs constituaient les autres composantes de la societe.",
@@ -38,7 +44,9 @@
         "Rwanda — totalite du territoire, majorite numerique sur toutes les collines",
         "Burundi — totalite du territoire, majoritaires dans les regions nord et centrales",
         "RDC — provinces du Nord-Kivu et du Sud-Kivu (Banyarwanda hutu)",
-        "Ouganda — regions frontalieres de l'ouest (refugies et communautes installees)"
+        "Ouganda — regions frontalieres de l'ouest (refugies et communautes installees)",
+        "Plaine de l'Imbo (basse Rusizi, lac Tanganyika)",
+        "Collines de Buyenzi, Bururi, Gitega, Ngozi"
       ],
       "unificationsOrDivisions": "Historiquement, les Hutu n'etaient pas organises en royaume unifie ; ils vivaient sous l'autorite des royaumes Nyiginya (Rwanda) et Ntare (Burundi) domines par les dynasties tutsies. La revolution sociale rwandaise de 1959 donna le pouvoir politique aux Hutu au Rwanda. Au Burundi, les Tutsi conserverent le controle du gouvernement et de l'armee jusqu'aux accords d'Arusha (2000). Les divisions internes entre Hutu extremistes et moderes furent particulierement visibles en 1994.",
       "externalInfluences": "Colonisation allemande (1884-1916) : administration indirecte via les rois tutsis. Colonisation belge (1916-1962) : institutionnalisation des categories ethniques, politique pro-tutsi dans l'administration, evangelisation catholique. Revolution rwandaise de 1959 : retournement de la hierarchie ethnique au Rwanda. Genocides de 1972 (Burundi, contre les Hutu) et de 1994 (Rwanda, commis par des extremistes hutu contre les Tutsi). Accords d'Arusha (2000) au Burundi : partage du pouvoir.",
@@ -57,7 +65,9 @@
       "dialects": [
         "Kirundi standard (Burundi, langue nationale officielle)",
         "Kinyarwanda standard (Rwanda, langue nationale officielle)",
-        "Dialectes regionaux du Kivu (kinyarwanda de RDC)"
+        "Dialectes regionaux du Kivu (kinyarwanda de RDC)",
+        "Kinyabwisha (parler des Banyarwanda du Nord-Kivu)",
+        "Kifumbira (parler des Bafumbira d'Ouganda)"
       ],
       "vehicularRole": "Le kirundi et le kinyarwanda sont des dialectes d'un meme continuum linguistique (Rwanda-Rundi, Zone J des langues bantou), mutuellement intelligibles. Le kirundi est langue officielle du Burundi avec le français et l'anglais. Le kinyarwanda est langue officielle du Rwanda avec le français (officiellement depriorise depuis 2008) et l'anglais. Les deux langues servent de lingua franca dans leurs pays respectifs. Les Hutu des zones frontalieres sont souvent bilingues kirundi-kinyarwanda."
     },
@@ -76,7 +86,7 @@
     "demography": {
       "totalPopulation": 22200000,
       "referenceYear": 2025,
-      "source": "UNFPA Burundi 2025 (14,4 millions, ~85 % Hutu = ~12,2 millions) ; UNFPA Rwanda 2025 (14,6 millions, ~85 % Hutu = ~12,4 millions, donnees historiques avant suppression des categories) ; estimation croisee corrigee",
+      "source": "UNFPA Burundi 2025 (14,4 millions, ~85 % Hutu = ~12,2 millions) ; UNFPA Rwanda 2025 (14,6 millions, ~85 % Hutu = ~12,4 millions, donnees historiques avant suppression des categories) ; estimation croisee corrigee. Une autre estimation (Wikipedia, 2019) compte environ 26 millions de Hutu dans la region, dont 2 000 000 en RDC (Nord-Kivu), 1 865 000 en Tanzanie et 1 500 000 en Ouganda.",
       "distributionByCountry": [
         {
           "country": "BDI",
@@ -97,6 +107,11 @@
           "country": "UGA",
           "population": 200000,
           "note": "Refugies et communautes hutu dans l'ouest ougandais"
+        },
+        {
+          "country": "TZA",
+          "population": 1865000,
+          "note": "estimation 2019, réfugiés et communautés installées"
         }
       ]
     },
@@ -142,6 +157,17 @@
         "url": "https://www.ethnologue.com/language/run",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Rapport de la Commission internationale d'enquête pour le Burundi (ONU, 1996) — contexte génocide 1993",
+        "url": null,
+        "tier": "needs_review"
+      },
+      {
+        "title": "Accord d'Arusha pour la Paix et la Réconciliation au Burundi, 2000",
+        "url": "https://peacemaker.un.org/burundi-arusha-agreement2000",
+        "tier": "official",
+        "source_kind": "intergovernmental"
       }
     ]
   }

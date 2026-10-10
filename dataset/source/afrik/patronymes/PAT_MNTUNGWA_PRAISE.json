@@ -55,11 +55,6 @@
     },
     {
       "peopleId": "PPL_ZULU",
-      "status": "supposed",
-      "sourceRefs": ["bryant-1929-olden-times"]
-    },
-    {
-      "peopleId": "PPL_ZULU_KWA_ZULU",
       "status": "attested",
       "sourceRefs": ["bryant-1929-olden-times", "nwu-zulu-names"]
     }

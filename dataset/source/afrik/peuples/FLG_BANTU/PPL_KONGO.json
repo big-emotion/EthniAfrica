@@ -34,7 +34,13 @@
       "Kunyi (plateau Niari, Congo-Brazzaville)",
       "Kongo dia Ntotila (descendants du royaume de Kongo central, RDC nord-Angola)",
       "Solongo (cote atlantique angolaise)",
-      "Woyo (embouchure du fleuve Congo, Angola-Congo)"
+      "Woyo (embouchure du fleuve Congo, Angola-Congo)",
+      "Manianga (territoires de Luozi et Mbanza-Ngungu) : sous-groupe important, connu pour son role commercial historique",
+      "Ntandu (region de Thysville / Mbanza-Ngungu et Lukala) : sous-groupe numerique significatif",
+      "Ndibu (region de Kimpese et Mbanza-Ngungu) : sous-groupe distinct avec dialecte propre",
+      "Lemfu (region de Kasangulu) : sous-groupe de la zone du Pool Malebo",
+      "Mboma / Ba Mboma (region de Matadi) : sous-groupe de la region portuaire",
+      "Ba Zombo / Bazombo (region de Luozi) : sous-groupe a cheval sur la frontiere Congo-Angola"
     ],
     "origins": {
       "ancientOrigins": "Les Bakongo font partie de la grande expansion bantoue depuis le bassin du Congo. Avant la fondation du royaume, ils vivaient comme sujets de la chefferie de Vungu (au nord du fleuve). Apres l'effondrement de ce royaume, ils se regroupent dans les royaumes de Kongo, Loango et Kakongo. La date de formation du royaume de Kongo est inconnue : une lecture fait debuter le processus des le IXe siecle, par raisonnement analogique ; d'autres placent la fondation au plus tard vers 1400, au plus tot un bon siecle auparavant. Le royaume se constitua par absorption des sept royaumes de Kongo dia Nlaza et de la chefferie de Vungu, avec pour capitale Mbanza Kongo (situee a ~200 km de la cote atlantique).",
@@ -42,7 +48,10 @@
       "migrationRoutes": [
         "Expansion bantoue depuis l'Afrique centrale (bassin du Congo) vers l'ouest et le sud-ouest",
         "Peuplement des rives du fleuve Congo et de ses affluents (Inkisi, Niari, Chiloango)",
-        "Dispersion par l'esclavage transatlantique vers le Bresil, Cuba, Haiti, Jamaique, Louisiane (XVIe-XIXe s.)"
+        "Dispersion par l'esclavage transatlantique vers le Bresil, Cuba, Haiti, Jamaique, Louisiane (XVIe-XIXe s.)",
+        "Expansion des sous-groupes Manianga et Ntandu depuis le coeur du royaume vers l'est et le nord (15e-17e siecles)",
+        "Migrations internes dues aux guerres civiles post-Mbwila (apres 1665)",
+        "Urbanisation vers Matadi, Boma, Kinshasa et Mbanza-Ngungu (20e-21e siecles)"
       ],
       "historicalSettlementZones": [
         "Mbanza Kongo / Sao Salvador (capitale, actuel Angola)",
@@ -50,7 +59,14 @@
         "Cabinda (enclave angolaise)",
         "Departement du Pool et Kouilou (Congo-Brazzaville)",
         "Province du Mayombe (RDC et Congo-Brazzaville)",
-        "Cote sud-ouest du Gabon (Ogooue-Maritime)"
+        "Cote sud-ouest du Gabon (Ogooue-Maritime)",
+        "Region de Matadi (capitale provinciale) et du bas fleuve Congo : zone Mboma et cotiere",
+        "Region de Mbanza-Ngungu et Lukala : zone Ntandu et Ndibu",
+        "Region de Luozi : zone Manianga et Zombo",
+        "Region de Kimpese : zone Ndibu",
+        "Region de Boma (ancien chef-lieu colonial) : zone cotiere",
+        "Littoral et embouchure du Congo (Banana, Moanda) : zone Solongo et Woyo",
+        "Region de Kinshasa (est de la province) : zone fortement urbanisee"
       ],
       "unificationsOrDivisions": "Le royaume de Kongo unifia de nombreux peuples sous un seul roi (Manikongo) elu par les nobles de la cour. L'adoption du christianisme par la famille royale (1491) crea une culture kongo chretienne unique. La bataille de Mbwila (1665) - victoire portugaise, mort du Manikongo Antonio I - fragmente le royaume en principautes rivales. Des guerres civiles (1665-1709) affaiblirent davantage le pouvoir central. Dona Beatriz Kimpa Vita (brulee en 1706) tenta une renovation spirituelle nationaliste. Pedro IV reconquit une partie du territoire avec l'aide portugaise.",
       "externalInfluences": "Le commerce portugais (ivoire, cuivre puis esclaves) transforma l'economie du royaume. Le catholicisme s'implanta profondement : lettres du roi Afonso I au Portugal protestant contre la traite (1510s-1520s). Plus de 5,6 millions d'esclaves furent exportes depuis l'Afrique centrale occidentale entre 1501 et 1867, devastant la population kongo. La colonisation du XIXe s. divisa les Bakongo entre la France (nord, Congo-Brazzaville et Gabon), la Belgique (centre, RDC) et le Portugal (sud, Angola).",
@@ -65,7 +81,7 @@
     },
     "languages": {
       "mainLanguage": "Kikongo",
-      "isoCodes": ["kon"],
+      "isoCodes": ["kon", "kng"],
       "dialects": [
         "Koongo (dialecte central, autour de Mbanza Ngungu, RDC)",
         "Laari / Lari (region de Brazzaville, Congo)",
@@ -76,7 +92,12 @@
         "Beembe (region du Pool, Congo-Brazzaville)",
         "Kongo-San-Salvador (autour de l'ancienne capitale, Angola)",
         "Kunyi (plateau du Niari, Congo)",
-        "Kituba / Kikongo ya Leta (creole a base kikongo, vehiculaire en RDC et Congo-Brazzaville)"
+        "Kituba / Kikongo ya Leta (creole a base kikongo, vehiculaire en RDC et Congo-Brazzaville)",
+        "Kimanianga : dialecte de la region de Luozi et Manianga, proche du Kisikongo central",
+        "Kintandu (Ntandu) : dialecte de la region de Mbanza-Ngungu et Thysville",
+        "Kindibu : dialecte de la region de Kimpese",
+        "Kibwende : dialecte de la zone du Mayombe occidental (Kongo Central)",
+        "Kisolongo / Nsolongo : dialecte cotier de la zone de Moanda et Banana"
       ],
       "vehicularRole": "Le kikongo est la langue maternelle des Bakongo au sens large. Le Kituba (Kikongo ya Leta) est un creole vehiculaire tres repandu au Congo-Brazzaville et dans l'ouest de la RDC. En RDC, le lingala est la lingua franca principale dans les villes. Le francais est langue officielle en RDC, Congo-Brazzaville et Gabon ; le portugais en Angola."
     },
@@ -95,7 +116,7 @@
     "demography": {
       "totalPopulation": 11000000,
       "referenceYear": 2025,
-      "source": "Estimation 2025 : environ 10 a 12 millions de Bakongo dans les quatre pays. Donnees de base : Kongo people en 1975 : 4 040 000 (Wikipedia EN). Groupe ethnique majoritaire en Republique du Congo ; groupe important en RDC (province du Kongo Central ~6M habitants, proportion kongo elevee) et au nord de l'Angola. Sources : SIL Ethnologue, CIA World Factbook, recensements nationaux RDC, Congo-Brazzaville, Angola.",
+      "source": "Estimation 2025 : environ 10 a 12 millions de Bakongo dans les quatre pays. Donnees de base : Kongo people en 1975 : 4 040 000 (Wikipedia EN). Groupe ethnique majoritaire en Republique du Congo ; groupe important en RDC (province du Kongo Central ~6M habitants, proportion kongo elevee) et au nord de l'Angola. Sources : SIL Ethnologue, CIA World Factbook, recensements nationaux RDC, Congo-Brazzaville, Angola. Pour la seule province du Kongo Central (RDC), une autre estimation donne 5 500 000 Bakongo en 2025 : la province compte de 5 441 000 (Joshua Project 2025) a 6 923 500 habitants (Data Commons 2024), dont 70 a 80 % de Bakongo, sans compter ceux de Kinshasa et des autres provinces.",
       "distributionByCountry": [
         {
           "country": "COD",
@@ -183,6 +204,42 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "Formation du royaume dont la date est inconnue, deux datations proposées, chefferie vungu au nord du fleuve : p. 604."
+      },
+      {
+        "title": "Data Commons — Kongo Central population 2024",
+        "url": "https://datacommons.org/place/wikidataId/Q1043494",
+        "tier": "unverified",
+        "source_kind": "discovery"
+      },
+      {
+        "title": "Joshua Project — Kongo Central province population (2025)",
+        "url": "https://joshuaproject.net/people_groups/12774/CG",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "EBSCO Research Starters — Kongo (historical kingdom)",
+        "url": "https://www.ebsco.com/research-starters/history/kongo-historical-kingdom",
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "101 Last Tribes — Kongo People (subgroups in DRC)",
+        "url": "https://www.101lasttribes.com/tribes/kongo.html",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "Worldometer — DR Congo Population 2025",
+        "url": "https://www.worldometers.info/world-population/democratic-republic-of-the-congo-population/",
+        "tier": "unverified",
+        "source_kind": "discovery"
+      },
+      {
+        "title": "VCU Scholars Compass — Transformation of Kongo Minkisi",
+        "url": "https://scholarscompass.vcu.edu/cgi/viewcontent.cgi?article=1077&context=etd",
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   },

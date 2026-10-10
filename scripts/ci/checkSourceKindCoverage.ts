@@ -20,9 +20,11 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * same change; NEVER raise it.
  *
  * Measured 2026-10-10, after the long-tail hosts, the social-media posts and
- * the census and publisher titles were typed (ETNI-2007).
+ * the census and publisher titles were typed (ETNI-2007). 1064 -> 1061 the
+ * same day: three untyped citations left with the duplicate people fiches
+ * folded into their keepers.
  */
-export const UNTYPED_SOURCE_RATCHET = 1064;
+export const UNTYPED_SOURCE_RATCHET = 1061;
 
 export interface UntypedSource {
   file: string;

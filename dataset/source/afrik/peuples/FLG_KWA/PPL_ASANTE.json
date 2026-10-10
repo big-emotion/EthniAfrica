@@ -38,14 +38,16 @@
       "migrationRoutes": [
         "Migration ancestrale depuis Bono-Manso (nord-ouest de l'actuelle region Brong-Ahafo) vers la region de Kumase",
         "Expansion vers le sud et l'est sous Opoku Ware I (successeur d'Osei Tutu I) au 18e siecle",
-        "Traite atlantique : deportation forcee de nombreux Asante vers les Caraïbes (Jamaïque, Barbade, Antilles neerlandaises) au 17e-18e siecles"
+        "Traite atlantique : deportation forcee de nombreux Asante vers les Caraïbes (Jamaïque, Barbade, Antilles neerlandaises) au 17e-18e siecles",
+        "Etablissement initial dans la zone forestiere du Kwabre, au nord de la cote du Ghana actuel"
       ],
       "historicalSettlementZones": [
         "Region de Kumase (capitale historique et actuelle de l'Ashanti Region)",
         "Region de Brong-Ahafo (nord)",
         "Bassin du fleuve Pra (sud)",
         "Lac Volta (est)",
-        "Diaspora dans les grandes villes ghanéennes (Accra, Tema, Takoradi)"
+        "Diaspora dans les grandes villes ghanéennes (Accra, Tema, Takoradi)",
+        "Zone forestiere centrale du Ghana"
       ],
       "unificationsOrDivisions": "L'Empire Ashanti etait un Etat centralise organise en confederation de sous-royaumes (oman) sous l'autorite supreme de l'Asantehene. Les territoires conquis avaient le choix de rejoindre l'empire ou de devenir Etats tributaires. La Confederation Ashanti fut officiellement reconnue par les Britanniques en 1935 apres avoir ete abolie en 1901 suite a la guerre du Tabouret d'or. Depuis 1957, les Asante constituent l'un des groupes les plus influents au sein de la Republique du Ghana.",
       "externalInfluences": "Commerce trans-saharien et contacts avec les royaumes du nord (Haoussa, Songhai). Traite de l'or avec les Europeens (Portugais, Hollandais, Britanniques) a partir du 15e siecle. Quatre guerres anglo-asante (1823-1900) qui aboutirent a l'incorporation dans l'empire colonial britannique. Influence du christianisme (catholique et protestant) depuis le 19e siecle, sans elimination des pratiques religieuses traditionnelles.",
@@ -83,7 +85,7 @@
     "demography": {
       "totalPopulation": 11000000,
       "referenceYear": 2025,
-      "source": "Estimation fondee sur le recensement ghaneen 2021 (Ghana Statistical Service), projections 2025 de la region Ashanti (population regionale projetee depasse 6 millions en 2025), et estimations ethnolinguistiques de SIL Ethnologue (plus de 9 millions de locuteurs natifs du twi asante). La population asante totale, incluant la diaspora et les communautes hors Ghana, est estimee entre 10 et 12 millions.",
+      "source": "Estimation fondee sur le recensement ghaneen 2021 (Ghana Statistical Service), projections 2025 de la region Ashanti (population regionale projetee depasse 6 millions en 2025), et estimations ethnolinguistiques de SIL Ethnologue (plus de 9 millions de locuteurs natifs du twi asante). La population asante totale, incluant la diaspora et les communautes hors Ghana, est estimee entre 10 et 12 millions. Une autre estimation donne plus de 10 000 000 Asante (Wikipedia ; recensement du Ghana 2021) : 9 500 000 au Ghana, environ 300 000 au Royaume-Uni et 200 000 aux Etats-Unis.",
       "distributionByCountry": [
         {
           "country": "GHA",
@@ -132,6 +134,30 @@
         "title": "CIEE — Tradition Goes On At The Ntonso Adinkra Village (Adinkra symbols)",
         "url": "https://www.ciee.org/go-abroad/high-school-study-abroad/summer/blog/tradition-goes-ntonso-adinkra-village",
         "tier": "needs_review"
+      },
+      {
+        "title": "Ghana Statistical Service, Population and Housing Census 2021",
+        "url": "https://census2021.statsghana.gov.gh",
+        "tier": "official",
+        "source_kind": "official_statistics"
+      },
+      {
+        "title": "Rattray, Robert Sutherland – Ashanti, Oxford University Press, 1923",
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "McCaskie, T. C. – State and Society in Pre-colonial Asante, Cambridge University Press, 1995",
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
+        "url": null,
+        "tier": "referenced",
+        "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
   },
