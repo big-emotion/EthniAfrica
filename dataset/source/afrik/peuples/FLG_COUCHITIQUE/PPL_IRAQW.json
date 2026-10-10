@@ -105,5 +105,140 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Iraqw désigne un peuple du nord de la Tanzanie, sur le haut plateau entre les lacs Manyara et Eyasi, qui se nomme lui-même Iraqw. D'autres noms existent : Mbulu, ou Wambulu, le nom que leur donnaient les Swahili, et Iraku, une forme ancienne. On ne sait pas avec certitude d'où vient le nom Iraqw ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Iraqw",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "irk",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; une forme proche, Iraku, est écrite en 1894.",
+        "periodLabel": "Écrit sous une forme proche depuis 1894 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Iraqw désigne un peuple d'agriculteurs du district de Mbulu et d'une partie des districts de Hanang et de Babati, selon le linguiste Maarten Mous. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Grammar of Iraqw",
+                "author": "Maarten Mous",
+                "year": 1993,
+                "url": "https://archive.org/details/rosettaproject_irk_detail-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1.1",
+                "notes": "Hambourg, Buske. Seul l'extrait d'introduction est en ligne, déposé par le Rosetta Project : copie non officielle ; lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Selon l'histoire orale"
+            },
+            "statement": "Le nom Irqwa Da'aw, « l'Iraqw de l'Est », désigne dans l'histoire orale de ce peuple le pays d'origine de tous les Iraqw, au sud-est de Mbulu. Ils y arrivent après une bataille perdue contre les Datooga, venant d'un lieu appelé Ma'angwatay, du côté de Kondoa, selon Maarten Mous.",
+            "sources": [
+              {
+                "title": "A Grammar of Iraqw",
+                "author": "Maarten Mous",
+                "year": 1993,
+                "url": "https://archive.org/details/rosettaproject_irk_detail-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1.1",
+                "notes": "Hambourg, Buske. Seul l'extrait d'introduction est en ligne, déposé par le Rosetta Project : copie non officielle ; lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1893,
+              "to": 1893,
+              "label": "Janvier 1893, récit publié en 1894"
+            },
+            "statement": "Le nom Iraqw a une forme proche, Iraku, chez l'explorateur autrichien Oscar Baumann, qui traverse en janvier 1893 le plateau d'Iraku et décrit les « Irakuleute », les gens d'Iraku. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà sur ce plateau avant lui.",
+            "formAsWritten": "Iraku",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 118-120",
+                "notes": "Berlin, Dietrich Reimer ; lu le 11 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mbulu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Swahili, selon Oscar Baumann",
+        "shortLine": "Le nom que les Swahili donnaient aux Iraqw ; c'est aussi celui de leur ville principale.",
+        "periodLabel": "Écrit depuis 1894 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbulu est aujourd'hui celui de la ville principale du pays iraqw, Imboru en iraqw, et l'on appelle parfois les Iraqw Wambulu, selon Maarten Mous. Il note que des savants allemands employaient ce nom, au début de la colonisation, pour les Datooga qui vivaient près de Mbulu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Grammar of Iraqw",
+                "author": "Maarten Mous",
+                "year": 1993,
+                "url": "https://archive.org/details/rosettaproject_irk_detail-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1.1",
+                "notes": "Hambourg, Buske. Seul l'extrait d'introduction est en ligne, déposé par le Rosetta Project : copie non officielle ; lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "statement": "Le nom Mbulu apparaît chez Oscar Baumann, qui écrit que les gens d'Iraku sont « le plus souvent appelés Wambulu par les Swahili ». Il emploie aussi Mbulu pour leur pays. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Wambulu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 169 et p. 175",
+                "notes": "Berlin, Dietrich Reimer ; lu le 11 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

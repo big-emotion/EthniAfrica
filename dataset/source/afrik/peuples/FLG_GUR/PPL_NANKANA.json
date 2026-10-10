@@ -129,5 +129,178 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nankana désigne un peuple du nord-est du Ghana, autour de Navrongo, et du sud du Burkina Faso, qui se nomme lui-même Nankana, ou Nankani. D'autres noms existent : Frafra, que l'administration britannique appliquait à plusieurs peuples voisins, et Gurunsi, donné par des voisins. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Nankana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gur",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; il est écrit en 1912 du côté français de la frontière.",
+        "periodLabel": "Écrit depuis 1912 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nankana est écrit Nankanni par l'administrateur britannique A. W. Cardinall, qui dit employer pour chaque peuple le nom qu'il se donne lui-même. Il compte les Nankanni parmi les principaux peuples des districts de Navarro et de Zuaragu, avec les Nabdam, les Talensi, les Kassena et les Builsa. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. vii-viii et p. 1",
+                "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nankana apparaît chez l'administrateur colonial Louis Tauxier, qui décrit en 1912 les peuples du côté français de la frontière et nomme les Nankana, selon A. W. Cardinall. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu le livre de Tauxier. Le peuple vivait déjà là avant lui.",
+            "formAsWritten": "Nankana",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. vii",
+                "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Frafra",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "L'administration britannique, selon A. W. Cardinall",
+        "shortLine": "Un nom colonial qui regroupait les Nankana, les Nabdam et les Talensi.",
+        "periodLabel": "Écrit depuis 1920 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Frafra, écrit Fra-Fra, regroupe pour les Britanniques tous les Nankanni, les Nabdam et les Talensi, selon A. W. Cardinall. Il sert surtout à inscrire l'origine des soldats et des policiers recrutés dans le nord, souvent présentés aux Blancs par des soldats d'autres peuples. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Fra-Fra",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii-ix",
+                "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "Proposée en 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Frafra viendrait d'une formule de ces peuples, « Fra-Fra » ou « Fura-Fura », qu'ils murmurent pour remercier ou pour demander, selon A. W. Cardinall.",
+            "hypothesisGroup": "origine du nom Frafra",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gurunsi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des voisins comme les Mossi et les Mamprusi, selon A. W. Cardinall",
+        "shortLine": "Un nom donné par des voisins à plusieurs peuples du nord du Ghana et du Burkina Faso.",
+        "periodLabel": "Écrit depuis 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gurunsi, écrit Grunshi, sert ordinairement à classer tous ces peuples, mais c'est un nom que leur donnent des étrangers comme les Mossi et les Mamprusi, selon A. W. Cardinall.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gurunsi est écrit « Guresi ou Gourounsi » par l'administrateur colonial Maurice Delafosse, qui en fait le nom d'une tribu vivant entre la Volta Blanche et les Nonouma, au sud des Mossi, et celui du groupe de langues dont elle est la principale. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Gourounsi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 222",
+                "notes": "Paris, Ernest Leroux ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

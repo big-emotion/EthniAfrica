@@ -135,5 +135,155 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Akyé désigne un peuple du sud-est de la Côte d'Ivoire, au nord d'Abidjan, autour d'Adzopé, d'Alépé et d'Anyama, qui se nomme lui-même Akyé. D'autres noms existent : Attié, le nom donné par les Européens, et Kurobu, celui que leur donnaient les Baoulé. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Akyé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ati",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; écrit Akyè en 1904.",
+        "periodLabel": "Écrit depuis 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Akyé est celui que ce peuple se donne. Une partie des Akyé, les Nédin d'Alépé, ne se l'appliquent pourtant pas et le réservent aux familles de l'ouest et du nord, selon l'administrateur colonial Maurice Delafosse. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10-11",
+                "notes": "Paris, Ernest Leroux ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Akyé est écrit « Akyè » par Maurice Delafosse, qui note que les Agni de l'est disent Akye. Il situe ce peuple entre la Comoé, d'Alépé jusqu'à Abradine, et le pays des Abè. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà dans ce pays avant lui.",
+            "formAsWritten": "Akyè",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Paris, Ernest Leroux ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Attié",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Européens, selon Maurice Delafosse",
+        "shortLine": "Le nom que les Européens donnaient aux Akyé ; écrit dès 1900.",
+        "periodLabel": "Écrit depuis 1900",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Attié est, selon Maurice Delafosse, celui que les Européens donnent aux Akyè. Il range sous ce nom deux livres, l'un de G. Dreyfus et l'autre du père Méraud, un Essai sur la langue attié paru à Dabou en 1902.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10 et p. 268",
+                "notes": "Paris, Ernest Leroux ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Attié figure dans le titre d'un livre de G. Dreyfus, Six mois dans l'Attié, publié à Paris en 1900, selon la bibliographie de Maurice Delafosse. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu ce livre.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 268",
+                "notes": "Paris, Ernest Leroux ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kurobu",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Baoulé, selon Maurice Delafosse",
+        "shortLine": "Le nom que les Baoulé donnaient aux Akyé en 1904.",
+        "periodLabel": "Attesté en 1904",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kurobu est celui que les Baoulé donnent aux Akyè, selon Maurice Delafosse. C'est la plus ancienne trace de ce nom que le projet connaît ; nous ne savons pas s'il est encore employé.",
+            "formAsWritten": "Kurobu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Paris, Ernest Leroux ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
