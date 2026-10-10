@@ -137,6 +137,7 @@ function fixture(t) {
   return { root, id, file, event, review, approve, design, ready };
 }
 
+// @req REQ-186
 test("external publication reports survive recovery without manufacturing approval or a snapshot", (t) => {
   const f = fixture(t);
   const evidenceFile = f.file(
@@ -191,6 +192,7 @@ test("external publication reports survive recovery without manufacturing approv
   );
 });
 
+// @req REQ-186
 test("external reports require a selected network, real date and retained evidence", (t) => {
   const f = fixture(t);
   const report = {
@@ -214,6 +216,7 @@ test("external reports require a selected network, real date and retained eviden
   assert.equal(f.event(report).publicationReports[0].url, null);
 });
 
+// @req REQ-186
 test("three approvals stop the workflow at the actual reviewed versions", (t) => {
   const f = fixture(t);
   assert.throws(() => f.review(2, [f.file("proof.png")]), /approval 1/i);
@@ -232,6 +235,7 @@ test("three approvals stop the workflow at the actual reviewed versions", (t) =>
   assert.deepEqual(state.publications, []);
 });
 
+// @req REQ-186
 test("an approval needs an explicit recorded decision and an existing review", (t) => {
   const f = fixture(t);
   assert.throws(() => f.approve(1), /review/i);
@@ -242,6 +246,7 @@ test("an approval needs an explicit recorded decision and an existing review", (
   );
 });
 
+// @req REQ-186
 test("visual proof waits for the operator-supplied design system", (t) => {
   const f = fixture(t);
   f.review(1, [f.file("brief.md")]);
@@ -258,6 +263,7 @@ test("visual proof waits for the operator-supplied design system", (t) => {
   assert.equal(loadPiece(f.root, f.id).waitingFor, "design-system");
 });
 
+// @req REQ-186
 test("fresh process finds saved progress without chat history", (t) => {
   const f = fixture(t);
   f.review(1, [f.file("brief.md")]);
@@ -282,6 +288,7 @@ test("fresh process finds saved progress without chat history", (t) => {
   );
 });
 
+// @req REQ-186
 test("changed claims invalidate proof and delivery but retain the angle", (t) => {
   const f = fixture(t);
   f.ready();
@@ -297,6 +304,7 @@ test("changed claims invalidate proof and delivery but retain the angle", (t) =>
   assert.equal(s.approvals["3"].status, "stale");
 });
 
+// @req REQ-186
 test("a rendering-only crop fix keeps meaning approved but requires final review", (t) => {
   const f = fixture(t);
   f.ready();
@@ -311,6 +319,7 @@ test("a rendering-only crop fix keeps meaning approved but requires final review
   assert.equal(s.approvals["3"].status, "stale");
 });
 
+// @req REQ-186
 test("a rejected proof returns to writing without discarding the angle", (t) => {
   const f = fixture(t);
   f.review(1, [f.file("brief.md")]);
@@ -323,6 +332,7 @@ test("a rejected proof returns to writing without discarding the angle", (t) => 
   assert.equal(loadPiece(f.root, f.id).approvals["1"].status, "approved");
 });
 
+// @req REQ-186
 test("changed artifacts cannot inherit a saved approval or be approved from stale review", (t) => {
   const f = fixture(t);
   const brief = f.file("brief.md");
@@ -342,6 +352,7 @@ test("changed artifacts cannot inherit a saved approval or be approved from stal
   assert.notEqual(s.stage, "produce");
 });
 
+// @req REQ-186
 test("an edited design invalidates proof and final approvals", (t) => {
   const f = fixture(t);
   f.ready();
@@ -352,6 +363,7 @@ test("an edited design invalidates proof and final approvals", (t) => {
   assert.equal(s.approvals["3"].status, "stale");
 });
 
+// @req REQ-186
 test("stale saves do not overwrite a newer checkpoint", (t) => {
   const f = fixture(t);
   const stale = loadPiece(f.root, f.id);
@@ -364,6 +376,7 @@ test("stale saves do not overwrite a newer checkpoint", (t) => {
   assert.equal(loadPiece(f.root, f.id).nextAction, "Newer saved action");
 });
 
+// @req REQ-186
 test("a failed atomic replacement preserves the last complete checkpoint", (t) => {
   const f = fixture(t);
   const state = loadPiece(f.root, f.id);
@@ -378,6 +391,7 @@ test("a failed atomic replacement preserves the last complete checkpoint", (t) =
   assert.notEqual(loadPiece(f.root, f.id).nextAction, "Unsaved");
 });
 
+// @req REQ-186
 test("discovery exposes ambiguous subjects and ignores abandoned temporary writes", (t) => {
   const f = fixture(t);
   createPiece(f.root, "2026-10-11-uganda", "Ouganda", ["tiktok"]);
@@ -388,6 +402,7 @@ test("discovery exposes ambiguous subjects and ignores abandoned temporary write
   assert.equal(listPieces(f.root, "Ouganda").length, 2);
 });
 
+// @req REQ-186
 test("invalid paths, duplicate piece creation and empty reviews are refused", (t) => {
   const f = fixture(t);
   assert.throws(
@@ -402,6 +417,7 @@ test("invalid paths, duplicate piece creation and empty reviews are refused", (t
   assert.throws(() => f.review(1, ["../outside.txt"]), /path/i);
 });
 
+// @req REQ-186
 test("publication records need final approval and explicit evidence; no posting is performed", (t) => {
   const f = fixture(t);
   const event = {
@@ -420,6 +436,7 @@ test("publication records need final approval and explicit evidence; no posting 
   assert.equal(s.publications[0].network, "instagram");
 });
 
+// @req REQ-186
 test("adding a network retains the editorial proof and reopens final delivery", (t) => {
   const f = fixture(t);
   f.ready();
@@ -436,6 +453,7 @@ test("adding a network retains the editorial proof and reopens final delivery", 
   assert.ok(s.networks.includes("tiktok"));
 });
 
+// @req REQ-186
 test("proof cannot skip research; source changes invalidate approval without changing the angle", (t) => {
   const f = fixture(t);
   f.review(1, [f.file("brief.md")]);
@@ -458,6 +476,7 @@ test("proof cannot skip research; source changes invalidate approval without cha
   assert.equal(loadPiece(f.root, f.id).approvals[1].status, "approved");
 });
 
+// @req REQ-186
 test("a pending site promise can enter proof but cannot enter final delivery", (t) => {
   const f = fixture(t);
   f.review(1, [f.file("brief.md")]);
@@ -484,6 +503,7 @@ test("a pending site promise can enter proof but cannot enter final delivery", (
   assert.equal(loadPiece(f.root, f.id).approvals[2].status, "approved");
 });
 
+// @req REQ-186
 test("a newly matching fiche cannot slip into approval after the proof was shown", (t) => {
   const f = fixture(t);
   f.review(1, [f.file("brief.md")]);
@@ -499,6 +519,7 @@ test("a newly matching fiche cannot slip into approval after the proof was shown
   assert.throws(() => f.approve(2), /coverage|unreviewed/);
 });
 
+// @req REQ-186
 test("approved corrections retain a separately evidenced integration history after corpus edits", (t) => {
   const f = fixture(t);
   f.review(1, [f.file("brief.md")]);
@@ -616,6 +637,7 @@ test("approved corrections retain a separately evidenced integration history aft
   );
 });
 
+// @req REQ-186
 test("final approval requires a verified package and fingerprints its actual media", (t) => {
   const f = fixture(t);
   f.review(1, [f.file("brief.md")]);

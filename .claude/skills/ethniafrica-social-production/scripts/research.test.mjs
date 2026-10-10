@@ -94,6 +94,7 @@ function fixture(t) {
   const save = () => file("piece/research.json", input);
   return { root, file, fiche, original, input, save };
 }
+// @req REQ-186
 test("discovery and preparation bind claims to real fields without changing the corpus", (t) => {
   const f = fixture(t);
   assert.equal(discoverCorpus(f.root, ["testland"])[0].file, f.fiche);
@@ -116,6 +117,7 @@ test("discovery and preparation bind claims to real fields without changing the 
     /exists/
   );
 });
+// @req REQ-186
 test("confirmations and unknown birth dates do not manufacture corrections or inventors", (t) => {
   const f = fixture(t);
   const c = f.input.claims[0];
@@ -135,6 +137,7 @@ test("confirmations and unknown birth dates do not manufacture corrections or in
   c.certainty = "supported";
   assert.throws(() => assessResearch(f.root, f.save()), /support|creation/);
 });
+// @req REQ-186
 test("attestation cannot substantiate creation; competing accounts keep uncertainty", (t) => {
   const f = fixture(t);
   f.input.claims[0].event = "creation";
@@ -151,6 +154,7 @@ test("attestation cannot substantiate creation; competing accounts keep uncertai
   delete f.input.findings[0].proposal.retainedAccounts;
   assert.throws(() => assessResearch(f.root, f.save()), /accounts/);
 });
+// @req REQ-186
 test("missing evidence, unreviewed matches, stale records and incorrect before values refuse proof", (t) => {
   const f = fixture(t);
   f.input.sources[0].passage = "Not present";
@@ -168,6 +172,7 @@ test("missing evidence, unreviewed matches, stale records and incorrect before v
   f.file(f.fiche, { id: "changed" });
   assert.throws(() => assessResearch(f.root, f.save()), /changed/);
 });
+// @req REQ-186
 test("oral evidence requires consent, images need item rights and delivery cannot promise unchecked pages", (t) => {
   const f = fixture(t);
   f.input.sources[0].kind = "oral";
@@ -188,6 +193,7 @@ test("oral evidence requires consent, images need item rights and delivery canno
     /destination/
   );
 });
+// @req REQ-186
 test("escaped pointers work; unsafe, duplicate, overlapping or nonexistent target paths refuse", (t) => {
   const f = fixture(t);
   for (const pointer of ["/__proto__/polluted", "/missing/child"]) {
@@ -204,12 +210,14 @@ test("escaped pointers work; unsafe, duplicate, overlapping or nonexistent targe
   symlinkSync(tmpdir(), join(f.root, "piece/outside"));
   assert.throws(() => assessResearch(f.root, f.save()), /inside/);
 });
+// @req REQ-186
 test("failed preparation leaves no incomplete output; no false live status from research", (t) => {
   const f = fixture(t);
   f.input.findings[0].status = "verified-live";
   assert.throws(() => prepareResearch(f.root, f.save(), "piece/bad"), /status/);
   assert.equal(existsSync(join(f.root, "piece/bad")), false);
 });
+// @req REQ-186
 test("corpus progress needs ordered evidence and matching local edits", (t) => {
   const f = fixture(t);
   const r = assessResearch(f.root, f.save());
@@ -262,6 +270,7 @@ test("corpus progress needs ordered evidence and matching local edits", (t) => {
   );
 });
 
+// @req REQ-186
 test("corpus path traversal and output through a symlink are refused", (t) => {
   const f = fixture(t);
   f.input.records[0].file = "dataset/source/afrik/../../../piece/research.json";
@@ -271,6 +280,7 @@ test("corpus path traversal and output through a symlink are refused", (t) => {
   );
 });
 
+// @req REQ-186
 test("confirmed claims generate no correction and additions preserve unrelated fields", (t) => {
   const f = fixture(t);
   f.input.findings[0].kind = "confirmation";

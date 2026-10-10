@@ -93,6 +93,7 @@ function fixture(t) {
   };
 }
 
+// @req REQ-186
 test("reconciled reports retain their evidence and changed evidence prevents cleanup", (t) => {
   const f = fixture(t);
   const evidenceFile = f.file(
@@ -126,6 +127,7 @@ test("reconciled reports retain their evidence and changed evidence prevents cle
   );
 });
 
+// @req REQ-186
 test("history retains the actual publication version across later package changes and cleanup", (t) => {
   const f = fixture(t);
   const original = f.config.networks[0].caption;
@@ -168,6 +170,7 @@ test("history retains the actual publication version across later package change
   assert.doesNotThrow(() => cleanupPiece(f.root, f.id));
 });
 
+// @req REQ-186
 test("removing a target does not silently cancel it; explicit cancellation permits closure", (t) => {
   const f = fixture(t);
   f.publish("instagram");
@@ -189,6 +192,7 @@ test("removing a target does not silently cancel it; explicit cancellation permi
   cleanupPiece(f.root, f.id);
 });
 
+// @req REQ-186
 test("pending corpus corrections retain the entire working folder", (t) => {
   const f = fixture(t);
   f.publish("instagram");
@@ -202,6 +206,7 @@ test("pending corpus corrections retain the entire working folder", (t) => {
   assert.equal(existsSync(join(f.root, f.piece, "suivi.md")), true);
 });
 
+// @req REQ-186
 test("interrupted cleanup resumes, but changed survivors or damaged retained exports stop deletion", (t) => {
   const f = fixture(t);
   f.publish("instagram");
@@ -238,6 +243,7 @@ test("interrupted cleanup resumes, but changed survivors or damaged retained exp
   assert.equal(existsSync(join(f.root, f.piece)), false);
 });
 
+// @req REQ-186
 test("legacy publication records without a preserved package cannot authorize cleanup", (t) => {
   const f = fixture(t);
   f.publish("instagram");
@@ -248,6 +254,7 @@ test("legacy publication records without a preserved package cannot authorize cl
   assert.throws(f.archive, /snapshot|version/i);
 });
 
+// @req REQ-186
 test("closure refuses symlinks, stale progress evidence, and active writers", (t) => {
   const f = fixture(t);
   f.publish("instagram");
@@ -272,6 +279,7 @@ test("closure refuses symlinks, stale progress evidence, and active writers", (t
   assert.throws(f.archive, /evidence/i);
 });
 
+// @req REQ-186
 test("a new editorial correction after publication keeps the active work", (t) => {
   const f = fixture(t);
   f.publish("instagram");
@@ -285,6 +293,7 @@ test("a new editorial correction after publication keeps the active work", (t) =
   assert.equal(existsSync(join(f.root, f.piece, "suivi.md")), true);
 });
 
+// @req REQ-186
 test("verified corpus work and additional irreplaceable evidence survive closure", (t) => {
   const f = fixture(t);
   f.publish("instagram");
@@ -327,6 +336,7 @@ test("verified corpus work and additional irreplaceable evidence survive closure
   assert.doesNotThrow(() => inspectHistory(f.root, f.id));
 });
 
+// @req REQ-186
 test("publication capture refuses a symlinked snapshot destination", (t) => {
   const f = fixture(t);
   symlinkSync(join(f.root, "social"), join(f.root, f.piece, ".published"));

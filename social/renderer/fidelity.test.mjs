@@ -8,12 +8,14 @@ const image = (colour, width = 100) =>
   sharp({ create: { width, height: 100, channels: 3, background: colour } })
     .png()
     .toBuffer();
+// @req REQ-186
 test("identical decoded images pass; a real visual change or dimensions fail", async () => {
   const a = await image("#efe6d6");
   assert.equal((await compareImages(a, a)).ok, true);
   assert.equal((await compareImages(a, await image("#000000"))).ok, false);
   assert.equal((await compareImages(a, await image("#efe6d6", 99))).ok, false);
 });
+// @req REQ-186
 test("small antialiasing differences pass without accepting shifted blocks", async () => {
   const a = await image("#ffffff");
   const faint = await image("#fafafa");

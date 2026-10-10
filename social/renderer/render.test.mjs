@@ -35,6 +35,7 @@ async function fixture(t, data = single()) {
   };
 }
 
+// @req REQ-186
 test("input rejects empty, duplicate, unknown, mixed-theme, bad-folio and demo sequences", () => {
   for (const change of [
     (d) => (d.cards = []),
@@ -64,6 +65,7 @@ test("input rejects empty, duplicate, unknown, mixed-theme, bad-folio and demo s
   );
 });
 
+// @req REQ-186
 test("a final export is complete, numbered, sRGB and tied to inputs and exports", async (t) => {
   const f = await fixture(t);
   const report = await renderSequence(f);
@@ -81,6 +83,7 @@ test("a final export is complete, numbered, sRGB and tied to inputs and exports"
   await assert.rejects(verifyOutput(f), /export|hash/i);
 });
 
+// @req REQ-186
 test("stale input and empty reports cannot pass recovery", async (t) => {
   const f = await fixture(t);
   await renderSequence(f);
@@ -95,6 +98,7 @@ test("stale input and empty reports cannot pass recovery", async (t) => {
   await assert.rejects(verifyOutput(f), /count|empty|cards/i);
 });
 
+// @req REQ-186
 test("overflow is refused and partial output is removed", async (t) => {
   const d = single("overflow");
   delete d.cards[0].demo;
@@ -103,6 +107,7 @@ test("overflow is refused and partial output is removed", async (t) => {
   await assert.rejects(access(f.output));
 });
 
+// @req REQ-186
 test("missing and undecodable images cannot pass a fit report", async (t) => {
   const f = await fixture(t);
   const d = single();
@@ -120,6 +125,7 @@ test("missing and undecodable images cannot pass a fit report", async (t) => {
   await assert.rejects(access(f.output));
 });
 
+// @req REQ-186
 test("missing fonts fail before capture", async (t) => {
   const f = await fixture(t);
   const copy = join(f.root, "design");
@@ -128,6 +134,7 @@ test("missing fonts fail before capture", async (t) => {
   await assert.rejects(renderSequence({ ...f, design: copy }), /font|ENOENT/i);
 });
 
+// @req REQ-186
 test("proof retains demo tape; final mode refuses it", async (t) => {
   const f = await fixture(t, single("seq-1"));
   await assert.rejects(renderSequence(f), /demo/i);
@@ -137,6 +144,7 @@ test("proof retains demo tape; final mode refuses it", async (t) => {
   assert.equal(r.productionReady, false);
 });
 
+// @req REQ-186
 test("alternative text includes rendered quotation, translation and status band", async (t) => {
   const d = single("seq-7");
   d.cards[0].quote = {
@@ -153,6 +161,7 @@ test("alternative text includes rendered quotation, translation and status band"
   assert.equal(r.productionReady, false);
 });
 
+// @req REQ-186
 test("map alternative text contains the actual scale and figures", async (t) => {
   const f = await fixture(t, single("map-fula-nombre-region"));
   const r = await renderSequence({ ...f, mode: "diagnostic" });
@@ -164,6 +173,7 @@ test("map alternative text contains the actual scale and figures", async (t) => 
   assert.ok(r.cards[0].alt.includes(c.map.caption.when));
 });
 
+// @req REQ-186
 test("inline accents preserve complete African names in text and alternative text", async (t) => {
   const f = await fixture(t, single("seq-4"));
   const r = await renderSequence({ ...f, mode: "diagnostic" });
@@ -173,6 +183,7 @@ test("inline accents preserve complete African names in text and alternative tex
   }
 });
 
+// @req REQ-186
 test("recovery refuses an incomplete fit record and changed design dependencies", async (t) => {
   const f = await fixture(t);
   const copy = join(f.root, "design");
@@ -190,6 +201,7 @@ test("recovery refuses an incomplete fit record and changed design dependencies"
   await assert.rejects(verifyOutput(f), /dependency|design|stale/i);
 });
 
+// @req REQ-186
 test("the review page opens at phone width and keeps each card's alternative text", async (t) => {
   const f = await fixture(t);
   const r = await renderSequence(f);
@@ -203,6 +215,7 @@ test("the review page opens at phone width and keeps each card's alternative tex
   assert.ok(html.includes(r.cards[0].alt.slice(0, 20)));
 });
 
+// @req REQ-186
 test("unsafe map geometry is refused before it becomes SVG markup", async (t) => {
   const d = single("map-a");
   d.cards[0].map.areas[0].paths = ['M0,0\" onload=\"throw 1'];

@@ -6,6 +6,7 @@ import { join } from "node:path";
 import { createPackage, inspectPackage } from "./package.mjs";
 import { packageFixture } from "./package.fixture.mjs";
 
+// @req REQ-186
 test("a checked package preserves media order, exact copy, credits and alternative text", (t) => {
   const f = packageFixture(t);
   const r = createPackage(f.root, f.configPath, f.output, [
@@ -30,6 +31,7 @@ test("a checked package preserves media order, exact copy, credits and alternati
     /exists/
   );
 });
+// @req REQ-186
 test("network additions need new package coverage; none are silently inherited", (t) => {
   const f = packageFixture(t);
   createPackage(f.root, f.configPath, f.output, ["instagram", "facebook"]);
@@ -64,6 +66,7 @@ test("network additions need new package coverage; none are silently inherited",
     ])
   );
 });
+// @req REQ-186
 test("link instructions require verified destination, account evidence and matching copy", (t) => {
   const f = packageFixture(t);
   const n = f.config.networks[1];
@@ -93,6 +96,7 @@ test("link instructions require verified destination, account evidence and match
     createPackage(f.root, f.configPath, f.output, ["instagram", "facebook"])
   );
 });
+// @req REQ-186
 test("an unverified profile route, pinned comment, missing caption and excessive length refuse packaging", (t) => {
   for (const mutate of [
     (c) => {
@@ -117,6 +121,7 @@ test("an unverified profile route, pinned comment, missing caption and excessive
     assert.equal(existsSync(join(f.root, f.output)), false);
   }
 });
+// @req REQ-186
 test("changed images, post text, card input or capability evidence invalidate the package", (t) => {
   for (const target of ["01.png", "post.md", "input", "evidence"]) {
     const f = packageFixture(t);
@@ -133,6 +138,7 @@ test("changed images, post text, card input or capability evidence invalidate th
     );
   }
 });
+// @req REQ-186
 test("proof exports and editorial errors cannot become final packages", (t) => {
   const f = packageFixture(t);
   const reportPath = join(f.root, f.config.render, "report.json");
@@ -156,6 +162,7 @@ test("proof exports and editorial errors cannot become final packages", (t) => {
   );
   assert.equal(existsSync(join(f.root, f.output)), false);
 });
+// @req REQ-186
 test("alternative text and comments obey the verified account limits", (t) => {
   const f = packageFixture(t);
   f.config.networks[0].capability.altMax = 1;
@@ -176,6 +183,7 @@ test("alternative text and comments obey the verified account limits", (t) => {
   );
 });
 
+// @req REQ-186
 test("delivery retains full source locators and image reuse credits without copying private passages", (t) => {
   const f = packageFixture(t);
   const research = JSON.parse(
@@ -204,6 +212,7 @@ test("delivery retains full source locators and image reuse credits without copy
   assert.ok(!post.includes("Fixture evidence"));
 });
 
+// @req REQ-186
 test("each rendered photograph or document needs an image-rights record before delivery", (t) => {
   const f = packageFixture(t);
   const p = join(f.root, f.config.research);
@@ -217,6 +226,7 @@ test("each rendered photograph or document needs an image-rights record before d
   );
 });
 
+// @req REQ-186
 test("network descriptions are complete, bounded and preserved without changing shared media", (t) => {
   const f = packageFixture(t);
   const n = f.config.networks[0];
@@ -241,6 +251,7 @@ test("network descriptions are complete, bounded and preserved without changing 
   );
 });
 
+// @req REQ-186
 test("network descriptions reject missing, duplicate, unknown, empty and excessive entries", (t) => {
   for (const entries of [
     [],
@@ -267,6 +278,7 @@ test("network descriptions reject missing, duplicate, unknown, empty and excessi
   }
 });
 
+// @req REQ-186
 test("documented credit URLs do not imply a destination link, but unknown URLs are refused", (t) => {
   const f = packageFixture(t);
   f.config.networks[0].caption += " Crédit : https://example.org/test-image";
@@ -286,6 +298,7 @@ test("documented credit URLs do not imply a destination link, but unknown URLs a
   );
 });
 
+// @req REQ-186
 test("license URLs need rights evidence and network alternatives still undergo language review", (t) => {
   const f = packageFixture(t);
   const license = "https://creativecommons.org/licenses/by-sa/4.0/";
