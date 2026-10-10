@@ -138,5 +138,266 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gourmantché désigne un peuple de l'est du Burkina Faso et des pays voisins, qui se nomme lui-même Gulmanceba. D'autres noms existent : Gourma, qui nomme aussi leur pays, et Bimba. On ne sait pas avec certitude d'où vient le nom Gourmantché ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Gulmanceba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; au singulier Gulmance.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Rapporté en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Gulmanceba sert à l'historien Georges Madiéga pour parler de ce peuple : il n'y avait pas, écrit-il, « un royaume du Gulma, mais des royaumes gulmanceba », selon Wendkouni Bertrand Ouédraogo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Burkina : L'organisation politique dans le Gulma avant la pénétration coloniale",
+                "author": "Wendkouni Bertrand Ouédraogo",
+                "year": 2024,
+                "url": "https://lefaso.net/spip.php?article132239",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Lefaso.net, 12 août 2024 ; lu le 10 octobre 2026. L'auteur cite Georges Y. Madiéga, Le Nord Gulma précolonial, thèse de doctorat, p. 123 ; nous n'avons pas lu la thèse."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 2021,
+              "label": "Notice de 1984, revue en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Gulmanceba figure, avec Gulmance et Bigulimanceba, parmi les formes que la notice d'autorité IdRef rattache au peuple gourmantché.",
+            "sources": [
+              {
+                "title": "Gourmantché (peuple d'Afrique) — notice d'autorité",
+                "author": "IdRef, Agence bibliographique de l'enseignement supérieur",
+                "year": null,
+                "url": "https://www.idref.fr/027678717",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice créée le 19 octobre 1984, modifiée le 16 juin 2021 ; lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gourmantché",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom français de ce peuple, écrit dès 1912 ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1912 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": 2021,
+              "label": "Notice de 1984, revue en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Gourmantché est la forme retenue par la notice d'autorité IdRef pour ce peuple ; l'adjectif gourmantché y est invariable. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Gourmantché (peuple d'Afrique) — notice d'autorité",
+                "author": "IdRef, Agence bibliographique de l'enseignement supérieur",
+                "year": null,
+                "url": "https://www.idref.fr/027678717",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice créée le 19 octobre 1984, modifiée le 16 juin 2021 ; lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gourmantché apparaît sous la forme Gourmantchés, avec la variante Gourmankés, dans l'étude de Louis Tauxier sur le pays mossi : il y désigne la population de l'est du cercle de Fada-N'Gourma. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Le Noir du Soudan : pays mossi et gourounsi",
+                "author": "Louis Tauxier",
+                "year": 1912,
+                "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Larose. Lu dans une copie non officielle mise en ligne sur Internet Archive, lu le 10 octobre 2026 ; le texte numérisé ne porte pas les numéros de page. Passage lu : chapitre sur les Mossi, passage sur le cercle de Fada-N'Gourma."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gourma",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays de ce peuple, employé aussi pour le peuple.",
+        "periodLabel": "Écrit depuis le XIXe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": 2021,
+              "label": "Notice de 1984, revue en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Gourma figure, avec Gurma et Gulma, parmi les formes que la notice d'autorité IdRef rattache au peuple gourmantché.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gourmantché (peuple d'Afrique) — notice d'autorité",
+                "author": "IdRef, Agence bibliographique de l'enseignement supérieur",
+                "year": null,
+                "url": "https://www.idref.fr/027678717",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice créée le 19 octobre 1984, modifiée le 16 juin 2021 ; lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gourma désigne pour Louis Tauxier un royaume de l'est, avec Fada-N'Gourma pour capitale, devenu indépendant de Ouagadougou bien avant l'occupation française.",
+            "sources": [
+              {
+                "title": "Le Noir du Soudan : pays mossi et gourounsi",
+                "author": "Louis Tauxier",
+                "year": 1912,
+                "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Larose. Lu dans une copie non officielle mise en ligne sur Internet Archive, lu le 10 octobre 2026 ; le texte numérisé ne porte pas les numéros de page. Passage lu : chapitre sur l'histoire de l'empire mossi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1892,
+              "label": "Voyage de 1888 (récit publié vers 1892)"
+            },
+            "era": "polity",
+            "statement": "Le nom Gourma désigne pour l'explorateur Louis-Gustave Binger un pays voisin du Mampoursi, au nord-est de celui-ci.",
+            "formAsWritten": "Gourma",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, récit paru dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "seconde partie, p. 60",
+                "notes": "Récit du voyage de 1887-1889. Lu sur la numérisation des Smithsonian Libraries sur Internet Archive, lu le 10 octobre 2026. L'exemplaire n'a pas de page de titre et porte la pagination du Tour du monde, où le récit a paru en livraisons ; la notice du catalogue le date de 1892."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1817,
+              "to": 1819,
+              "label": "1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Gourma a peut-être une forme proche, Goorooma, dans le récit de l'Anglais Thomas Edward Bowdich : c'est un royaume sur la route qui va du Dagomba vers les pays haoussa, à quelques jours du Niger. Les sources ne disent pas s'il s'agit du même royaume. C'est la plus ancienne trace possible de ce nom que le projet connaît.",
+            "formAsWritten": "Goorooma",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 206-207",
+                "notes": "Londres, John Murray. Lu sur Internet Archive, lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bimba",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom noté par l'explorateur Binger à la fin du XIXe siècle.",
+        "periodLabel": "Écrit vers 1892",
+        "accounts": [
+          {
+            "period": {
+              "from": 1888,
+              "to": 1892,
+              "label": "Voyage de 1888 (récit publié vers 1892)"
+            },
+            "era": "polity",
+            "statement": "Le nom Bimba désigne chez l'explorateur Louis-Gustave Binger les gens du Gourma, chez qui naît l'une des trois rivières qui forment la Volta.",
+            "formAsWritten": "Bimba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, récit paru dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "seconde partie, p. 55",
+                "notes": "Récit du voyage de 1887-1889. Lu sur la numérisation des Smithsonian Libraries sur Internet Archive, lu le 10 octobre 2026. L'exemplaire n'a pas de page de titre et porte la pagination du Tour du monde, où le récit a paru en livraisons ; la notice du catalogue le date de 1892."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 2021,
+              "label": "Notice de 1984, revue en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Bimba figure, avec Binumba, parmi les formes que la notice d'autorité IdRef rattache au peuple gourmantché.",
+            "sources": [
+              {
+                "title": "Gourmantché (peuple d'Afrique) — notice d'autorité",
+                "author": "IdRef, Agence bibliographique de l'enseignement supérieur",
+                "year": null,
+                "url": "https://www.idref.fr/027678717",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice créée le 19 octobre 1984, modifiée le 16 juin 2021 ; lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
