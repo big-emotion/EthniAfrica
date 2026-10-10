@@ -10,7 +10,7 @@ This adapter exports cards through the accepted [EthniAfrica Cartes system](../d
 - [x] Add a review page, complete rendered-text alternative descriptions and fidelity comparisons.
 - [x] Resolve the two reference-image discrepancies by explicit operator decision; all 31 references pass and roadmap step 4 is complete.
 
-The [canonical specification](https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/212795394) owns the full roadmap. Research/corpus alignment (step 5) and publication packaging (step 6) are available through the shared production skill; cleanup is step 7 and remains pending. They are separate from this adapter.
+The [canonical specification](https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/212795394) owns the full roadmap. Research/corpus alignment (step 5) and publication packaging (step 6) are available through the shared production skill; durable publication history and verified cleanup (step 7) are also available. They are separate from this adapter.
 
 ## Commands
 

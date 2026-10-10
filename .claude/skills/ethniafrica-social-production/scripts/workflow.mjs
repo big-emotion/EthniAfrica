@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // @req REQ-186
-// Local checkpoints only: this helper never renders, posts, deploys or deletes a production.
+// Checkpoints and publication evidence; posting and deployment are never automatic.
 import { createHash, randomUUID } from "node:crypto";
 import {
   existsSync,
@@ -20,6 +20,7 @@ import { pathToFileURL } from "node:url";
 
 import { assessResearch, discoverCorpus, verifyProgress } from "./research.mjs";
 import { inspectPackage } from "./package.mjs";
+import { capturePublication } from "./history.mjs";
 
 const AREA = ".local/productions";
 const STAGES = ["brief", "research", "proof", "produce", "package", "ready"];
@@ -156,15 +157,8 @@ export function loadPiece(root, id) {
   return state;
 }
 
-export function savePiece(
-  root,
-  state,
-  expectedRevision,
-  beforeReplace = () => {}
-) {
-  const directory = pieceDir(root, state.id);
-  const target = join(directory, "suivi.md");
-  const lock = join(directory, ".suivi.lock");
+export function withPieceLock(root, id, operation) {
+  const lock = join(pieceDir(root, id), ".suivi.lock");
   if (existsSync(lock)) {
     const pid = Number(readFileSync(lock, "utf8"));
     if (!Number.isInteger(pid) || pid <= 0)
@@ -179,6 +173,31 @@ export function savePiece(
   }
   const lockFd = openSync(lock, "wx");
   writeFileSync(lockFd, String(process.pid));
+  try {
+    return operation();
+  } finally {
+    closeSync(lockFd);
+    unlinkSync(lock);
+  }
+}
+
+export function savePiece(
+  root,
+  state,
+  expectedRevision,
+  beforeReplace = () => {},
+  lockHeld = false
+) {
+  if (!lockHeld)
+    return withPieceLock(root, state.id, () =>
+      savePiece(root, state, expectedRevision, beforeReplace, true)
+    );
+  if (existsSync(join(resolve(root), ".local/publications", state.id)))
+    fail(
+      "Piece is archived; complete closure or start a new piece for later changes"
+    );
+  const directory = pieceDir(root, state.id);
+  const target = join(directory, "suivi.md");
   const temporary = join(directory, `.suivi-${randomUUID()}.tmp`);
   try {
     const revision = existsSync(target)
@@ -207,8 +226,6 @@ export function savePiece(
     return next;
   } finally {
     if (existsSync(temporary)) unlinkSync(temporary);
-    closeSync(lockFd);
-    unlinkSync(lock);
   }
 }
 
@@ -222,8 +239,11 @@ export function createPiece(root, id, subject, networks) {
     fail("Select valid networks");
   const directory = pieceDir(root, id);
   mkdirSync(join(resolve(root), AREA), { recursive: true });
-  if (existsSync(directory))
-    fail("Piece folder already exists; inspect or resume it");
+  if (
+    existsSync(directory) ||
+    existsSync(join(resolve(root), ".local/publications", id))
+  )
+    fail("Piece folder or archive already exists; inspect or resume it");
   mkdirSync(directory);
   return savePiece(
     root,
@@ -232,6 +252,8 @@ export function createPiece(root, id, subject, networks) {
       id,
       subject,
       networks: [...new Set(networks)],
+      intendedNetworks: [...new Set(networks)],
+      cancellations: {},
       revision: 0,
       stage: "brief",
       waitingFor: null,
@@ -269,9 +291,16 @@ export function listPieces(root, query = "") {
 }
 
 export function applyEvent(root, id, event) {
+  return withPieceLock(root, id, () => applyLockedEvent(root, id, event));
+}
+function applyLockedEvent(root, id, event) {
+  if (existsSync(join(resolve(root), ".local/publications", id)))
+    fail("Piece is archived; complete closure before starting a new piece");
   const state = loadPiece(root, id);
   if (event.expectedRevision !== state.revision)
     fail("Checkpoint revision changed; reload before applying the event");
+  state.intendedNetworks ??= [...state.networks];
+  state.cancellations ??= {};
   const approved = (gate) => {
     if (state.approvals[gate]?.status !== "approved")
       fail(`Human approval ${gate} is required`);
@@ -424,6 +453,7 @@ export function applyEvent(root, id, event) {
         state.waitingFor = "design-system";
       }
       state.corrections.push({
+        atRevision: state.revision + 1,
         kind: event.kind,
         reason,
         at: new Date().toISOString(),
@@ -439,6 +469,10 @@ export function applyEvent(root, id, event) {
         event.networks.some((n) => !NETWORKS.includes(n))
       )
         fail("Select valid networks");
+      state.intendedNetworks = [
+        ...new Set([...state.intendedNetworks, ...event.networks]),
+      ];
+      for (const network of event.networks) delete state.cancellations[network];
       state.networks = [...new Set(event.networks)];
       invalidate(state, 3);
       state.stage =
@@ -448,6 +482,7 @@ export function applyEvent(root, id, event) {
             ? "research"
             : "brief";
       state.corrections.push({
+        atRevision: state.revision + 1,
         kind: "networks",
         reason: event.reason,
         at: new Date().toISOString(),
@@ -480,30 +515,48 @@ export function applyEvent(root, id, event) {
       state.corpusProgress.push(result);
       break;
     }
+    case "cancel-network":
+      if (!state.intendedNetworks.includes(event.network))
+        fail("Unknown intended network");
+      if (state.publications.some((p) => p.network === event.network))
+        fail("A published outcome cannot be cancelled");
+      state.cancellations[event.network] = {
+        reason: required(event.reason, "Operator cancellation reason"),
+        at: new Date().toISOString(),
+      };
+      break;
     case "publication":
       approved(3);
       if (!state.networks.includes(event.network))
         fail("Network is outside the reviewed commission");
       required(event.evidence, "Publication evidence");
-      if (!/^\d{4}-\d{2}-\d{2}$/.test(event.publishedAt))
+      if (
+        !/^\d{4}-\d{2}-\d{2}$/.test(event.publishedAt) ||
+        !Number.isFinite(Date.parse(event.publishedAt)) ||
+        new Date(event.publishedAt).toISOString().slice(0, 10) !==
+          event.publishedAt
+      )
         fail("Publication date is required");
       if (event.url !== null && !/^https:\/\//.test(event.url ?? ""))
         fail("Publication URL must be HTTPS or explicitly null");
       if (state.publications.some((p) => event.url && p.url === event.url))
         fail("Publication URL already recorded");
       state.publications.push({
+        atRevision: state.revision + 1,
         network: event.network,
         url: event.url,
         publishedAt: event.publishedAt,
         evidence: event.evidence,
+        snapshot: capturePublication(root, state, event.network),
       });
+      delete state.cancellations[event.network];
       state.nextAction =
-        "Verify remaining networks and retain history and final exports; cleanup is a later capability";
+        "Verify remaining networks and corpus work, then consolidate history and clean verified intermediates";
       break;
     default:
       fail("Unknown event type");
   }
-  return savePiece(root, state, event.expectedRevision);
+  return savePiece(root, state, event.expectedRevision, undefined, true);
 }
 
 if (

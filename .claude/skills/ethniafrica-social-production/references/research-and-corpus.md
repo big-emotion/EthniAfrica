@@ -124,8 +124,9 @@ The tool writes each comparison to a new directory under the piece. A lock and
 staging directory protect the final rename. Normal failure removes them. After
 an abrupt interruption, inspect any remaining lock/staging directory and confirm
 no writer is running before cleanup; an existing output is never overwritten.
-There is no automatic cleanup or deployment. Pending corpus work remains visible
-for the later publication history step.
+This research helper never deploys or deletes working files. Pending corpus
+work blocks closure under [History and cleanup](history-and-cleanup.md); only
+verified completion allows the production folder to be consolidated and cleaned.
 
 ## Checks
 
