@@ -19,6 +19,10 @@
 .afh-source-diamond-legend [data-family="book"] {
   --afh-source-diamond-fill: var(--afh-source-book);
 }
+.afh-source-diamond[data-family="encyclopedia"],
+.afh-source-diamond-legend [data-family="encyclopedia"] {
+  --afh-source-diamond-fill: var(--afh-source-encyclopedia);
+}
 .afh-source-diamond[data-family="press"],
 .afh-source-diamond-legend [data-family="press"] {
   --afh-source-diamond-fill: var(--afh-source-press);

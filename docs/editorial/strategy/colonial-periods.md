@@ -1,6 +1,6 @@
 ---
 title: "Colonial periods: the reference table behind a name-history account's era"
-status: "proposed — awaiting operator review, 2026-10-09; Sudan 1821–1885 and South Africa 1959–1994 ruled 2026-10-10"
+status: "proposed — awaiting operator review, 2026-10-09; Sudan 1821–1885, South Africa 1959–1994 and the 1877 Alur letter ruled 2026-10-10"
 related:
   - docs/editorial/strategy/name-history-timeline-2026-10-08.md
   - docs/editorial/strategy/name-history-priority-core.md
@@ -142,9 +142,11 @@ Sources opened for this table:
   Alur accounts of November–December 1879: Mahagi was already « our
   station », and at Wadelai he obtained the chief's « permission to form a
   station » on that excursion (_Emin Pasha in Central Africa_, 1888,
-  pp. 143, 147). His letter of 20 August 1877 stays
-  without an era: it places the Lur south of Wadelai, « subject to
-  Kabréga », the king of Bunyoro, not under the province (p. 11).
+  pp. 143, 147). His letter of 20 August 1877 is `polity`, ruled
+  2026-10-10: it places the Lur south of Wadelai, « subject to Kabréga »,
+  the king of Bunyoro, outside the Egyptian province (p. 11). The 1821–1885
+  ruling covers only where the province reached, so it does not reach this
+  letter.
 - **Europe.** The word _race_ was coined in Europe; its accounts set there
   (1290–1684, and an Italian etymology proposed in 1959) are about no African
   territory and carry no era.

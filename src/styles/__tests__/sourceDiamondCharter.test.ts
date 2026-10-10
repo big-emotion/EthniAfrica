@@ -20,8 +20,8 @@ function tokenHex(name: string): string {
   return match[1];
 }
 
-function relativeLuminance(hex: string): number {
-  const channels = hex
+function srgbChannels(hex: string): number[] {
+  return hex
     .slice(1)
     .match(/.{2}/g)!
     .map((channel) => Number.parseInt(channel, 16) / 255)
@@ -30,6 +30,10 @@ function relativeLuminance(hex: string): number {
         ? channel / 12.92
         : Math.pow((channel + 0.055) / 1.055, 2.4)
     );
+}
+
+function relativeLuminance(hex: string): number {
+  const channels = srgbChannels(hex);
   return 0.2126 * channels[0] + 0.7152 * channels[1] + 0.0722 * channels[2];
 }
 
@@ -40,6 +44,30 @@ function contrastRatio(foreground: string, background: string): number {
   ].sort((left, right) => right - left);
   return (lighter + 0.05) / (darker + 0.05);
 }
+
+/** CIE L*a*b* under D65, for a perceptual distance between two fills. */
+function cieLab(hex: string): [number, number, number] {
+  const [r, g, b] = srgbChannels(hex);
+  const x = (0.4124 * r + 0.3576 * g + 0.1805 * b) / 0.95047;
+  const y = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  const z = (0.0193 * r + 0.1192 * g + 0.9505 * b) / 1.08883;
+  const f = (t: number) => (t > 0.008856 ? Math.cbrt(t) : 7.787 * t + 16 / 116);
+  return [116 * f(y) - 16, 500 * (f(x) - f(y)), 200 * (f(y) - f(z))];
+}
+
+function deltaE(left: string, right: string): number {
+  const [l1, a1, b1] = cieLab(left);
+  const [l2, a2, b2] = cieLab(right);
+  return Math.hypot(l1 - l2, a1 - a2, b1 - b2);
+}
+
+/**
+ * The encyclopedia family was split from « book » so Wikipedia stops reading
+ * as a study; a fill a reader could confuse with a neighbour would undo that.
+ * 35 ΔE*76 sits above the closest pair the six original families already
+ * accepted (oral and archive, about 30 by day and 25 by night).
+ */
+const DISTINCT_FROM_NEIGHBOURS = 35;
 
 /** WCAG 1.4.11: a graphical object that carries meaning needs 3:1. */
 const NON_TEXT = 3;
@@ -83,6 +111,23 @@ describe("source diamond colours (ETNI-2015)", () => {
           contrastRatio(fill, tokenHex(ground)),
           `${family} (night) on ${ground}`
         ).toBeGreaterThanOrEqual(NON_TEXT);
+      }
+    }
+  });
+
+  // @req REQ-198
+  it("keeps the encyclopedia fill visibly apart from every other family", () => {
+    for (const suffix of ["", "-night"]) {
+      const encyclopedia = tokenHex(`--afh-color-source-encyclopedia${suffix}`);
+      for (const family of SOURCE_KIND_FAMILIES) {
+        if (family === "encyclopedia") continue;
+        expect(
+          deltaE(
+            encyclopedia,
+            tokenHex(`--afh-color-source-${family}${suffix}`)
+          ),
+          `encyclopedia${suffix} against ${family}${suffix}`
+        ).toBeGreaterThanOrEqual(DISTINCT_FROM_NEIGHBOURS);
       }
     }
   });
