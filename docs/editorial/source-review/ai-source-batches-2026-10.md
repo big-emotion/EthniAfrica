@@ -100,20 +100,164 @@ Bilan du lot 1 : 7 solides, 11 faibles, 2 faux, 0 aucun. Conseil : 17 accepter,
 - **Peu de pages disent « clan ».** Beaucoup disent « nom de famille ». Elles confirment le nom
   et le peuple, rarement le système de nom.
 
-## Lots 2 à 5 — propositions prêtes, non vérifiées
+## Lots 2 à 5 — vérifiés le 10 octobre 2026 (`ASV-2026-10-09-0023` à `0102`)
 
-Personne n'a encore ouvert ces pages. Je les vérifierai lot par lot, après vos réponses sur le
-lot 1.
+J'ai ouvert chaque page proposée et cherché chaque passage cité. Quand aucune page ne tenait,
+j'ai cherché moi-même un vrai ouvrage, et je l'ai ajouté à la fin des candidats de l'entrée,
+avec la mention « Found by the pre-reviewer ». Je n'ai rien décidé : chaque entrée reste
+`proposed`, avec ce que j'ai lu dans son champ `reviewNote`.
 
-| Lot | Entrées                        | Noms                                                                                                                              | Sans candidat |
-| --- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| 2   | `ASV-2026-10-09-0023` à `0042` | Keïta, Camará, Kouassi, Traoré, Coulibaly, Lawson (fin du noyau prioritaire), puis Diallo, Cissé et des noms de Gambie et du Mali | 3             |
-| 3   | `ASV-2026-10-09-0043` à `0062` | Noms du Mali, du Burkina Faso et du Niger                                                                                         | 7             |
-| 4   | `ASV-2026-10-09-0063` à `0082` | Noms du Niger, de Guinée, de Guinée-Bissau et de Côte d'Ivoire                                                                    | 3             |
-| 5   | `ASV-2026-10-09-0083` à `0102` | Noms de Côte d'Ivoire, du Nigeria, de Sierra Leone, de Mauritanie, du Cameroun et du Congo                                        | 3             |
+Les numéros continuent ceux du lot 1. Répondez de la même façon : « 21 oui, 22 non, 26 oral… ».
 
-Une entrée sans candidat veut dire que la recherche n'a rien trouvé. Pour elle, il reste deux
-réponses : « non » ou « oral ».
+\* Le type du candidat est faux dans la proposition : c'est le plus souvent une encyclopédie
+(Wikipédia, Universalis, Encyclopedia.com) rangée en « communautaire » ou en « presse ». Corrigez
+le type avant d'accepter. Notre liste de types a maintenant une case « encyclopédie ».
+
+### Lot 2 (`ASV-2026-10-09-0023` à `0042`)
+
+| n°  | Fiche                    | Ce que dit l'IA                                                             | Meilleur candidat (type)                                                            | Verdict | Conseil                |
+| --- | ------------------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------- | ---------------------- |
+| 21  | Keïta, Guinée            | Clan malinké en Guinée, variante Keita                                      | Wikipédia, « Keita dynasty » (encyclopédie)                                         | faible  | accepter, candidat 1\* |
+| 22  | Camará, Guinée-Bissau    | Clan malinké (mandinga) en Guinée-Bissau, variante Camara                   | aucun                                                                               | aucun   | rejeter                |
+| 23  | Kouassi, Côte d'Ivoire   | Nom de jour baoulé (lundi) transmis comme patronyme du père, variante Kwasi | Rezoivoire, « Les noms Baoulé et signification » (presse)                           | faible  | accepter, candidat 0   |
+| 24  | Traoré, Côte d'Ivoire    | Clan dioula en Côte d'Ivoire, variante Traore                               | Wikipédia, « Dioula (peuple) » (encyclopédie, section contestée)                    | faible  | rejeter                |
+| 25  | Coulibaly, Côte d'Ivoire | Clan (kabila) dioula en Côte d'Ivoire                                       | Robert Launay, « Traders Without Trade », 1982 (académique)                         | solide  | accepter, candidat 0   |
+| 26  | Lawson, Togo             | Nom de clan au Togo                                                         | Koaci, « Togo : comment la perte du roi Lawson VIII a été annoncée », 2021 (presse) | faux    | oral                   |
+| 27  | Diallo, Mauritanie       | Clan peul en Mauritanie                                                     | R. Botte, J. Boutrais, J. Schmitz (dir.), « Figures peules », 1999 (académique)     | faible  | accepter, candidat 1   |
+| 28  | Cissé, Sénégal           | Clan soninké au Sénégal, variantes Cisse, Sisse                             | Wikipédia, « Soninkés » (encyclopédie, d'après Makhtar Diouf)                       | faible  | accepter, candidat 0\* |
+| 29  | Jallow, Gambie           | Clan peul en Gambie, variante Diallo                                        | Wikipédia, « Jallow » (encyclopédie)                                                | faible  | accepter, candidat 0\* |
+| 30  | Ceesay, Gambie           | Clan soninké en Gambie, variante Cissé                                      | The Point, « The Ceesay legacy », 2025 (presse)                                     | faible  | accepter, candidat 1   |
+| 31  | Touray, Gambie           | Clan malinké (mandinka) en Gambie, variante Touré                           | Wikipédia, « Touray » (encyclopédie)                                                | faible  | accepter, candidat 0\* |
+| 32  | Sanneh, Gambie           | Clan malinké (mandinka) en Gambie, variante Sané                            | Archive NCAC / FDR Hambourg, bande 0268A (archive)                                  | faible  | accepter, candidat 3   |
+| 33  | Jammeh, Gambie           | Clan diola en Gambie, variante Jammé                                        | The Point, Ebou Momar Taal, 2010 (presse)                                           | faible  | accepter, candidat 0   |
+| 34  | Bojang, Gambie           | Clan malinké (mandinka) en Gambie                                           | Archive NCAC, bande 1142A (archive)                                                 | faible  | accepter, candidat 0   |
+| 35  | Sonko, Gambie            | Clan diola en Gambie                                                        | Donald R. Wright, « Koli Tengela in Sonko Traditions of Origin », 1978 (académique) | faible  | rejeter                |
+| 36  | Darboe, Gambie           | Clan malinké (mandinka) en Gambie, variante Dabo                            | Archive NCAC, bande 0953A (archive)                                                 | faible  | accepter, candidat 0   |
+| 37  | Manneh, Gambie           | Clan malinké (mandinka) en Gambie, variante Mané                            | Archive NCAC / FDR Hambourg, bande 0268A (archive)                                  | faible  | accepter, candidat 0   |
+| 38  | Bah, Gambie              | Clan peul en Gambie, variante Ba                                            | Wikipédia, « Fula people » (encyclopédie)                                           | faible  | accepter, candidat 0\* |
+| 39  | Konaté, Mali             | Clan malinké au Mali, variante Konate                                       | Wikipédia, « Manding region » (encyclopédie)                                        | faible  | accepter, candidat 0\* |
+| 40  | Sissoko, Mali            | Clan soninké au Mali, variante Cissoko                                      | aucun (Chérif Keïta, Africa is a Country, 2024 : clan mandé, sans Soninkés)         | aucun   | rejeter                |
+
+Bilan du lot 2 : 1 solides, 16 faibles, 1 faux, 2 aucun. Conseil : 15 accepter, 4 rejeter, 1 oral.
+
+### Lot 3 (`ASV-2026-10-09-0043` à `0062`)
+
+| n°  | Fiche                  | Ce que dit l'IA                                                                   | Meilleur candidat (type)                                                                             | Verdict | Conseil                |
+| --- | ---------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ------- | ---------------------- |
+| 41  | Doumbia, Mali          | Clan bambara au Mali                                                              | Bamada.net, « Festival culturel des Doumbia Tontigui », 2017 (presse)                                | faible  | accepter, candidat 0   |
+| 42  | Sidibé, Mali           | Clan peul au Mali, variante Sidibe                                                | Ambroise Dakouo, « Les communautés peules au Mali », ASSN, 2016 (ONG)                                | faible  | accepter, candidat 2   |
+| 43  | Cissé, Mali            | Clan soninké au Mali, variante Cisse                                              | Encyclopædia Universalis, « Ghana (empire du) » (encyclopédie)                                       | faible  | accepter, candidat 0\* |
+| 44  | Maïga, Mali            | Clan songhaï au Mali, variante Maiga                                              | Wikipédia (en), « Maïga » (encyclopédie)                                                             | faible  | accepter, candidat 1\* |
+| 45  | Diakité, Mali          | Clan peul au Mali, variante Diakite                                               | Ambroise Dakouo, « Les communautés peules au Mali », ASSN, 2016 (ONG)                                | faible  | accepter, candidat 1   |
+| 46  | Dembélé, Mali          | Clan bambara au Mali, variante Dembele                                            | Forum Soninkara, message de « Jade », 2007 (communauté)                                              | faible  | rejeter                |
+| 47  | Sangaré, Mali          | Clan peul au Mali, variante Sangare                                               | Ambroise Dakouo, « Les communautés peules au Mali », ASSN, 2016 (ONG)                                | faible  | accepter, candidat 1\* |
+| 48  | Fofana, Mali           | Clan soninké au Mali                                                              | Wikipédia (fr), « Soninkés », citant M. Diouf 1998 (encyclopédie)                                    | faible  | accepter, candidat 0\* |
+| 49  | Kanté, Mali            | Clan malinké au Mali, variante Kante                                              | Sandro Capo Chichi, Nofi.media, 2018 (presse)                                                        | faible  | accepter, candidat 0   |
+| 50  | Bagayoko, Mali         | Clan bambara au Mali                                                              | Blog « Histoire sahélienne », « Histoire des Bagayogo », 2018 (communauté)                           | faible  | accepter, candidat 0   |
+| 51  | Guindo, Mali           | Clan dogon au Mali                                                                | Dogon languages project, fiche village Indeli (référence linguistique)                               | faible  | accepter, candidat 1   |
+| 52  | Ouattara, Burkina Faso | Clan dioula au Burkina Faso, variante Watara                                      | Katja Werthmann, Journal of African History, 2007 (académique)                                       | solide  | accepter, candidat 0   |
+| 53  | Barry, Burkina Faso    | Clan peul au Burkina Faso                                                         | Wikipédia (en), « Fula people » (encyclopédie)                                                       | faible  | accepter, candidat 0   |
+| 54  | Maïga, Niger           | Clan songhaï au Niger, variante Maiga                                             | Wikipédia (en), « Maïga » (encyclopédie)                                                             | faible  | accepter, candidat 0\* |
+| 55  | Moussa, Niger          | Prénom du père porté comme nom (non héréditaire), zarma, Niger, variante Musa     | Décret n° 2008-189 d'application de la loi 2007-30 sur l'état civil au Niger, art. 53 (gouvernement) | faible  | accepter, candidat 0   |
+| 56  | Issaka, Niger          | Prénom du père porté comme nom (non héréditaire), zarma, Niger, variante Issaca   | Décret n° 2008-189 d'application de la loi 2007-30 sur l'état civil au Niger, art. 53 (gouvernement) | faible  | accepter, candidat 0   |
+| 57  | Seyni, Niger           | Prénom du père porté comme nom (non héréditaire), zarma, Niger                    | Décret n° 2008-189 d'application de la loi 2007-30 sur l'état civil au Niger, art. 53 (gouvernement) | faible  | accepter, candidat 0   |
+| 58  | Idrissa, Niger         | Prénom du père porté comme nom (non héréditaire), zarma, Niger, variante Idrissou | Décret n° 2008-189 d'application de la loi 2007-30 sur l'état civil au Niger, art. 53 (gouvernement) | faible  | accepter, candidat 0   |
+| 59  | Souley, Niger          | Prénom du père porté comme nom (non héréditaire), zarma, Niger, variante Soulé    | Décret n° 2008-189 d'application de la loi 2007-30 sur l'état civil au Niger, art. 53 (gouvernement) | faible  | accepter, candidat 0   |
+| 60  | Hamidou, Niger         | Prénom du père porté comme nom (non héréditaire), peul, Niger                     | Wikipédia (en), « Fula people » (encyclopédie)                                                       | faible  | accepter, candidat 0   |
+
+Bilan du lot 3 : 1 solides, 19 faibles, 0 faux, 0 aucun. Conseil : 19 accepter, 1 rejeter, 0 oral.
+
+### Lot 4 (`ASV-2026-10-09-0063` à `0082`)
+
+| n°  | Fiche                   | Ce que dit l'IA                                                                    | Meilleur candidat (type)                                                                      | Verdict | Conseil                |
+| --- | ----------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ------- | ---------------------- |
+| 61  | Kountché, Niger         | Nom de clan zarma au Niger, variante Kounche                                       | Universalis, « Kountché Seyni (1931-1987) » (encyclopédie)                                    | faible  | accepter, candidat 0\* |
+| 62  | Diori, Niger            | Nom de clan zarma au Niger                                                         | aucun                                                                                         | aucun   | rejeter                |
+| 63  | Yacouba, Niger          | Prénom du père employé comme nom (non héréditaire), zarma, Niger, variante Yakouba | aucun                                                                                         | aucun   | rejeter                |
+| 64  | Salifou, Niger          | Prénom du père employé comme nom (non héréditaire), zarma, Niger, variante Salif   | Wikipedia, « Amadou Salifou » (encyclopédie)                                                  | faible  | accepter, candidat 0\* |
+| 65  | Ousmane, Niger          | Prénom du père employé comme nom (non héréditaire), peul, Niger, variante Usman    | aucun                                                                                         | aucun   | rejeter                |
+| 66  | Barry, Guinée           | Nom de clan peul (Fouta-Djalon), Guinée, variante Bari                             | Joseph Earl Harris, « The Kingdom of Fouta-Diallon », thèse 1965, copie webFuuta (académique) | faible  | accepter, candidat 0\* |
+| 67  | Bah, Guinée             | Nom de clan peul, Guinée, variante Ba                                              | Joseph Earl Harris, « The Kingdom of Fouta-Diallon », thèse 1965, copie webFuuta (académique) | faible  | accepter, candidat 0   |
+| 68  | Sow, Guinée             | Nom de clan peul, Guinée                                                           | Joseph Earl Harris, « The Kingdom of Fouta-Diallon », thèse 1965, copie webFuuta (académique) | faible  | accepter, candidat 0\* |
+| 69  | Condé, Guinée           | Nom de clan malinké, Guinée, variante Conde                                        | Wikipédia, « Manden » (encyclopédie)                                                          | faible  | accepter, candidat 0\* |
+| 70  | Sylla, Guinée           | Nom de clan malinké, Guinée, variante Silla                                        | Blog Zanga School, « Dioula, malinké, bambara ou mandinka » (communautaire)                   | faible  | accepter, candidat 0   |
+| 71  | Kourouma, Guinée        | Nom de clan malinké, Guinée                                                        | Africultures, « Janjon pour Ahmadou Kourouma », 2005 (presse)                                 | faible  | accepter, candidat 0   |
+| 72  | Baldé, Guinée-Bissau    | Nom de clan peul, Guinée-Bissau, variante Balde                                    | Ibu Sadjo, TCC UNILAB, 2019, citant Tcherno Djaló 2013 (académique)                           | solide  | accepter, candidat 0   |
+| 73  | Djaló, Guinée-Bissau    | Nom de clan peul, Guinée-Bissau, variantes Diallo, Jalo                            | Ibu Sadjo, TCC UNILAB, 2019, citant Tcherno Djaló 2013 (académique)                           | solide  | accepter, candidat 2   |
+| 74  | Embaló, Guinée-Bissau   | Nom de clan peul, Guinée-Bissau, variante Embalo                                   | Ibu Sadjo, TCC UNILAB, 2019, citant Tcherno Djaló 2013 (académique)                           | faible  | accepter, candidat 2   |
+| 75  | Koné, Côte d'Ivoire     | Nom de clan (jamu) dioula, Côte d'Ivoire, variante Kone                            | R. Launay, « Dyula », Worldmark Encyclopedia via Encyclopedia.com (encyclopédie)              | faible  | accepter, candidat 1   |
+| 76  | Bamba, Côte d'Ivoire    | Nom de clan (jamu) dioula, Côte d'Ivoire                                           | Wikipédia, « Dioula (peuple) » (encyclopédie, liste signalée non sourcée)                     | faible  | rejeter                |
+| 77  | Ouattara, Côte d'Ivoire | Nom de clan (jamu) dioula, Côte d'Ivoire, variante Watara                          | R. Launay, « Dyula », Worldmark Encyclopedia via Encyclopedia.com (encyclopédie)              | faible  | accepter, candidat 0\* |
+| 78  | Doumbia, Côte d'Ivoire  | Nom de clan dioula, Côte d'Ivoire                                                  | Rezoivoire, « Le groupe Mandé » (communautaire)                                               | faible  | accepter, candidat 0   |
+| 79  | Gbagbo, Côte d'Ivoire   | Nom de clan bété, Côte d'Ivoire                                                    | aucun                                                                                         | faux    | rejeter                |
+| 80  | Zadi, Côte d'Ivoire     | Nom de clan bété, Côte d'Ivoire                                                    | aucun                                                                                         | faux    | rejeter                |
+
+Bilan du lot 4 : 2 solides, 13 faibles, 2 faux, 3 aucun. Conseil : 14 accepter, 6 rejeter, 0 oral.
+
+### Lot 5 (`ASV-2026-10-09-0083` à `0102`)
+
+| n°  | Fiche                 | Ce que dit l'IA                                                                 | Meilleur candidat (type)                                                                           | Verdict | Conseil                |
+| --- | --------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------- | ---------------------- |
+| 81  | Fofana, Côte d'Ivoire | Nom de clan (jamu) dioula en Côte d'Ivoire                                      | Wikipédia, « Dioula (peuple) » (encyclopédie)                                                      | faible  | accepter, candidat 0\* |
+| 82  | Okafor, Nigeria       | Nom de clan igbo au Nigeria                                                     | Kalu Ogbaa, « Names and Naming in Chinua Achebe's Novels », Names, 1980 (académique)               | faux    | rejeter                |
+| 83  | Chukwu, Nigeria       | Nom de clan igbo au Nigeria, variante Chukwuma                                  | Asadu et Nzuanke, « Onomastics and Translation… Chi Names », Lwati, 2014 (académique)              | faux    | rejeter                |
+| 84  | Nwachukwu, Nigeria    | Nom de clan igbo au Nigeria                                                     | Wikipédia, « Nwachukwu » (encyclopédie)                                                            | faux    | rejeter                |
+| 85  | Okonkwo, Nigeria      | Nom de clan igbo au Nigeria                                                     | Kalu Ogbaa, « Names and Naming in Chinua Achebe's Novels », Names, 1980 (académique)               | faux    | rejeter                |
+| 86  | Eze, Nigeria          | Nom de clan igbo au Nigeria                                                     | Wikipédia, « Eze (Igbo) » (encyclopédie)                                                           | faux    | rejeter                |
+| 87  | Okoro, Nigeria        | Nom de clan igbo au Nigeria                                                     | Wikipédia, « Okoro » (encyclopédie)                                                                | faux    | rejeter                |
+| 88  | Nwosu, Nigeria        | Nom de clan igbo au Nigeria                                                     | Wikipédia, « Nwosu » (encyclopédie)                                                                | faux    | rejeter                |
+| 89  | Obi, Nigeria          | Nom de clan igbo au Nigeria                                                     | Wikipédia, « Obi (name) » (encyclopédie)                                                           | faux    | rejeter                |
+| 90  | Chinedu, Nigeria      | Nom de clan igbo au Nigeria                                                     | Wikipédia, « Chinedu » (encyclopédie)                                                              | faux    | rejeter                |
+| 91  | Jalloh, Sierra Leone  | Nom de clan peul en Sierra Leone, variante Diallo                               | Alusine Jalloh, « The Fula and Islamic Education in Freetown », AJISS, 1997 (académique)           | solide  | accepter, candidat 2   |
+| 92  | Soumaré, Mauritanie   | Nom de clan soninké en Mauritanie, variante Soumare                             | Wikipédia, « Guidimakha » (encyclopédie, d'après Bathily 1989)                                     | faible  | accepter, candidat 0\* |
+| 93  | Tandia, Mauritanie    | Nom de clan soninké en Mauritanie                                               | Wikipédia, « Tandia » (encyclopédie)                                                               | faible  | accepter, candidat 0\* |
+| 94  | Bello, Cameroun       | Nom du père porté comme nom (non transmis), peul au Cameroun                    | Wikipédia, « Fula people » (encyclopédie)                                                          | faible  | rejeter                |
+| 95  | Nyobè, Cameroun       | Nom de clan bassa au Cameroun, variante Nyobe                                   | Wikipédia, « Ruben Um Nyobè » (encyclopédie)                                                       | faux    | rejeter                |
+| 96  | Aboubakar, Cameroun   | Nom du père porté comme nom (non transmis), peul au Cameroun, variante Abubakar | Wikipédia, « Fula people » (encyclopédie)                                                          | faible  | rejeter                |
+| 97  | Nkounkou, Congo       | Nom de clan (kanda) kongo en République du Congo                                | Marcel Soret, « Les Kongo nord-occidentaux », 1959 (académique)                                    | faible  | rejeter                |
+| 98  | Mabiala, Congo        | Nom de clan (kanda) kongo en République du Congo                                | aucun                                                                                              | aucun   | rejeter                |
+| 99  | Makosso, Congo        | Nom de clan (kanda) kongo en République du Congo                                | aucun                                                                                              | aucun   | rejeter                |
+| 100 | Ngoma, Congo          | Nom de clan (kanda) kongo en République du Congo                                | Miatudila-Malonga, « Les mères fondatrices de la nation Kongo », mbokamosika, 2013 (communautaire) | faible  | rejeter                |
+
+Bilan du lot 5 : 1 solides, 7 faibles, 10 faux, 2 aucun. Conseil : 4 accepter, 16 rejeter, 0 oral.
+
+### Ce qu'il faut savoir avant de répondre
+
+- **Bilan des quatre lots.** Sur 80 entrées : 5 solides, 55 faibles, 13 faux, 7 aucun. Je
+  conseille 52 « oui », 27 « non » et 1 « oral ».
+- **Beaucoup de fiches se trompent sur le système de nom.** Les sources contredisent l'IA
+  dans 13 cas, et il faut corriger la fiche, pas seulement la source :
+  - **Noms igbo (n° 82 à 90)** : aucun n'est un nom de clan. Okafor et Okonkwo sont des noms
+    de jour de marché ; Chukwu, Nwachukwu et Chinedu portent le nom de Dieu ; Okoro, Obi, Eze
+    et Nwosu sont des noms personnels ou des titres devenus noms de famille. Deux travaux de
+    recherche peuvent servir aux fiches corrigées : Kalu Ogbaa (revue _Names_, 1980) et
+    Asadu et Nzuanke (_Lwati_, 2014).
+  - **Gbagbo (n° 79)** est un nom personnel bété, et **Zadi (n° 80)** un nom de jumeaux.
+  - **Nyobè (n° 95)** est le nom personnel du père de Ruben Um Nyobè, pas un nom de clan.
+  - **Lawson (n° 26)** : même réponse qu'au lot 1, c'est une maison royale du clan Akagban.
+- **Le peuple est parfois faux.** Sonko (n° 35) et Jammeh (n° 33) sont aussi des lignages
+  mandingues du Niumi, d'après Donald Wright (1978). Doumbia au Mali (n° 41) et en Côte
+  d'Ivoire (n° 78) est dit malinké, pas bambara ou dioula. Sissoko (n° 40) est donné comme
+  clan mandé, pas soninké.
+- **Noms du Congo (n° 97 à 100).** Toutes les listes de clans en ligne viennent d'une seule
+  liste militante de Kinshasa (Ne Muanda Nsemi). L'étude de Marcel Soret (1959) montre que les
+  clans kongo sont transmis par la mère et que Kunku et Mabiala sont aussi des noms personnels.
+  Rien ne prouve que ces noms de famille désignent un clan. Makosso est surtout le nom d'un roi
+  du Loango.
+- **Noms du Niger (n° 55 à 60).** La seule source trouvée pour le prénom du père porté comme
+  nom est le décret nigérien d'état civil de 2008 (article 53). Il décrit l'usage pour tout le
+  Niger, sans parler des Zarma ni de ces noms. Une étude sur les noms zarma reste à trouver.
+- **Une même page, trois adresses (n° 66 à 68).** Les entretiens recueillis par Joseph Harris au
+  Fouta-Djalon arrivent avec deux adresses, deux titres et trois années. Un titre ne peut avoir
+  qu'une adresse dans nos fiches. Je propose : www.webfuuta.site, « The Kingdom of
+  Fouta-Diallon », 1965, académique, copie webFuuta.
+- **Un auteur à corriger (n° 72 à 74).** Le mémoire de l'université UNILAB est d'Ibu Sadjo,
+  « Fulas e Mandingas na luta pelo poder… » (2019), et non d'Ibu Djaló. Il cite Tcherno Djaló
+  (2013).
+- **Ouattara au Burkina (n° 52).** Retirez de la citation les mots « Other versions… » : ils ne
+  sont pas dans l'article.
+- **Deux ouvrages que je n'ai pas pu ouvrir** : le livre d'Abdoulaye Bathily, _Les Portes de
+  l'or_ (1989), derrière Soumaré (n° 92), et une thèse de Dschang sur les noms bassa.
 
 ## Témoignages oraux à recueillir
 
