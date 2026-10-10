@@ -736,7 +736,7 @@
         "name": "Swahili (Tanzanie)",
         "selfAppellation": "Swahili",
         "exonyms": ["Swahili (terme utilisé par les Européens)"],
-        "peopleId": "PPL_SWAHILI_TANZANIE",
+        "peopleId": "PPL_SWAHILI",
         "mainRegion": "Côte (Zanzibar, Pemba, Dar es Salaam)",
         "languages": ["Swahili", "arabe", "anglais"],
         "languageFamily": "FLG_NIGERCONGO",
@@ -885,7 +885,7 @@
         },
         {
           "name": "Swahili (Tanzanie)",
-          "peopleId": "PPL_SWAHILI_TANZANIE",
+          "peopleId": "PPL_SWAHILI",
           "percentageInCountry": 5
         },
         {
