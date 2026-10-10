@@ -45,6 +45,15 @@ JSON
 
 A later network change is recorded through `networks` before a new final
 presentation; do not claim an unreviewed target was in the approved package.
+When the operator has already published outside the verified delivery path, use
+`publication-report` with `network`, `url` (HTTPS or explicit null),
+`publishedAt`, attributed `evidence` and a project-relative `evidenceFile`.
+This preserves the real outcome and fingerprints its evidence without creating
+approval 3, marking a package ready or attaching unverified files to a snapshot.
+The report survives resumption; changed evidence is flagged. The reported target
+cannot be cancelled, and closure remains blocked until its actual version is
+reconciled. This event never authorizes posting, deployment or cleanup.
+
 Do not bypass selected networks in publication records. Use `cancel-network` with
 `network` and the operator's explicit `reason` to cancel an unpublished target;
 removing it from the selected list alone never authorizes cleanup.

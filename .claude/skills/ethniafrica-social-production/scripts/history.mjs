@@ -170,6 +170,19 @@ export function capturePublication(root, state, network) {
 }
 
 function outcomes(state) {
+  for (const report of state.publicationReports ?? []) {
+    if (!report.evidenceCurrent)
+      fail("Publication report evidence changed or missing");
+    if (
+      !state.publications.some(
+        (p) =>
+          p.network === report.network &&
+          p.url === report.url &&
+          p.publishedAt === report.publishedAt
+      )
+    )
+      fail("Reported publication requires reconciliation before closure");
+  }
   if (Object.keys(state.reviews).length)
     fail("An editorial review is still pending");
   const lastPublication = state.publications.at(-1);
@@ -299,9 +312,20 @@ export function archivePiece(root, id, options) {
         ...new Set([
           ...options.retain,
           ...(state.corpusProgress ?? []).map((p) => p.evidence),
+          ...(state.publicationReports ?? []).map((p) => p.evidenceFile),
         ]),
       ])
         retained.push(retainFile(root, file, staging, "evidence"));
+      for (const report of state.publicationReports ?? []) {
+        if (
+          !retained.some(
+            (file) =>
+              file.original === report.evidenceFile &&
+              file.sha256 === report.evidenceHash
+          )
+        )
+          fail("Publication report evidence changed during consolidation");
+      }
       const h = {
         schema: 1,
         id,
@@ -313,6 +337,7 @@ export function archivePiece(root, id, options) {
         intendedNetworks: state.intendedNetworks ?? state.networks,
         cancellations: state.cancellations ?? {},
         publications: state.publications,
+        publicationReports: state.publicationReports ?? [],
         corpusProposals: state.corpusProposals ?? {},
         corpusProgress: state.corpusProgress ?? [],
         corrections: state.corrections,

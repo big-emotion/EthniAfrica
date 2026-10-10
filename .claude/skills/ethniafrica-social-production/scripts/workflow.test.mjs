@@ -22,6 +22,7 @@ import {
 
 import { createPackage } from "./package.mjs";
 import { installPackageFixture } from "./package.fixture.mjs";
+import { archivePiece } from "./history.mjs";
 
 function fixture(t) {
   const root = mkdtempSync(join(tmpdir(), "social-workflow-"));
@@ -135,6 +136,83 @@ function fixture(t) {
   };
   return { root, id, file, event, review, approve, design, ready };
 }
+
+test("external publication reports survive recovery without manufacturing approval or a snapshot", (t) => {
+  const f = fixture(t);
+  const evidenceFile = f.file(
+    "reported.md",
+    "Synthetic operator publication report"
+  );
+  const report = {
+    type: "publication-report",
+    network: "instagram",
+    url: "https://example.org/already-published",
+    publishedAt: "2026-10-10",
+    evidence: "Synthetic operator report, not a verified package",
+    evidenceFile,
+  };
+  f.event(report);
+  const s = loadPiece(f.root, f.id);
+  assert.equal(s.publicationReports[0].evidenceCurrent, true);
+  assert.equal(s.publications.length, 0);
+  assert.deepEqual(s.approvals, {});
+  assert.equal(s.stage, "brief");
+  assert.match(
+    readFileSync(join(f.root, `.local/productions/${f.id}/suivi.md`), "utf8"),
+    /Reported publications awaiting reconciliation: 1/
+  );
+  assert.throws(
+    () => f.event({ ...report, type: "publication" }),
+    /approval 3/
+  );
+  assert.throws(() => f.event(report), /already recorded/);
+  assert.throws(
+    () =>
+      f.event({
+        type: "cancel-network",
+        network: "instagram",
+        reason: "Synthetic cancellation",
+      }),
+    /reported publication/i
+  );
+  assert.throws(
+    () =>
+      archivePiece(f.root, f.id, {
+        summary: "Test",
+        lessons: "None",
+        retain: [],
+      }),
+    /reconcil/i
+  );
+  f.file("reported.md", "Changed evidence");
+  assert.equal(
+    loadPiece(f.root, f.id).publicationReports[0].evidenceCurrent,
+    false
+  );
+});
+
+test("external reports require a selected network, real date and retained evidence", (t) => {
+  const f = fixture(t);
+  const report = {
+    type: "publication-report",
+    network: "instagram",
+    url: null,
+    publishedAt: "2026-10-10",
+    evidence: "Synthetic report",
+    evidenceFile: f.file("reported.md"),
+  };
+  for (const change of [
+    { network: "tiktok" },
+    { publishedAt: "2026-02-30" },
+    { url: "http://example.org/post" },
+    { url: "https://" },
+    { evidence: "" },
+    { evidenceFile: "../outside.md" },
+  ])
+    assert.throws(() => f.event({ ...report, ...change }));
+  assert.equal(loadPiece(f.root, f.id).revision, 1);
+  assert.equal(f.event(report).publicationReports[0].url, null);
+});
 
 test("three approvals stop the workflow at the actual reviewed versions", (t) => {
   const f = fixture(t);

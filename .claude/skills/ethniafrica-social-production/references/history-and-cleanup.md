@@ -6,6 +6,15 @@ can simply ask to finish, pause or retrieve a publication.
 
 ## Record the actual outcome first
 
+For publication outside the verified package path, record `publication-report`
+with the operator's actual report and an immutable evidence file. It records an
+outcome, not an approval or a media snapshot. Do not invent retrospective
+approval 3. The helper refuses closure and cancellation of a reported target
+until a matching verified publication record exists. Historical reconciliation
+without a previously approved package still requires a separate supported path;
+preserve the complete active folder while that capability is absent. A reconciled
+report and its unchanged evidence are retained with the eventual history.
+
 After explicit publication authorization and actual posting, record each network
 with the coordinator's `publication` event. The event requires approval 3 and
 rechecks the exact package. It now preserves the published images and a snapshot

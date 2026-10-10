@@ -93,6 +93,39 @@ function fixture(t) {
   };
 }
 
+test("reconciled reports retain their evidence and changed evidence prevents cleanup", (t) => {
+  const f = fixture(t);
+  const evidenceFile = f.file(
+    "external-report.md",
+    "Synthetic external report"
+  );
+  f.event({
+    type: "publication-report",
+    network: "instagram",
+    url: "https://example.org/instagram",
+    publishedAt: "2026-10-10",
+    evidence: "Synthetic reported publication",
+    evidenceFile,
+  });
+  f.publish("instagram");
+  f.publish("facebook");
+  f.file("external-report.md", "Changed");
+  assert.throws(() => f.archive(), /report evidence changed/i);
+  f.file("external-report.md", "Synthetic external report");
+  const history = f.archive();
+  assert.equal(history.publicationReports.length, 1);
+  const saved = history.files.find((file) => file.original === evidenceFile);
+  assert.ok(saved);
+  cleanupPiece(f.root, f.id);
+  assert.equal(
+    readFileSync(
+      join(f.root, `.local/publications/${f.id}`, saved.retained),
+      "utf8"
+    ),
+    "Synthetic external report"
+  );
+});
+
 test("history retains the actual publication version across later package changes and cleanup", (t) => {
   const f = fixture(t);
   const original = f.config.networks[0].caption;

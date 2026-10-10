@@ -154,6 +154,11 @@ export function loadPiece(root, id) {
       [progress.evidence]: progress.evidenceHash,
     });
   }
+  for (const report of state.publicationReports ?? []) {
+    report.evidenceCurrent = current(root, {
+      [report.evidenceFile]: report.evidenceHash,
+    });
+  }
   return state;
 }
 
@@ -213,7 +218,16 @@ export function savePiece(
     const approvals = [1, 2, 3]
       .map((gate) => `${gate}: ${next.approvals[gate]?.status ?? "pending"}`)
       .join("; ");
-    const text = `# Production checkpoint — ${next.subject}\n\nStage: ${next.stage}\n\nWaiting for: ${next.waitingFor ?? "nothing"}\n\nApprovals: ${approvals}\n\nNext action: ${next.nextAction}\n\n${next.context}\n\n## Saved state\n\n\`\`\`json\n${JSON.stringify(next, null, 2)}\n\`\`\`\n`;
+    const reported = (next.publicationReports ?? []).filter(
+      (r) =>
+        !next.publications.some(
+          (p) =>
+            p.network === r.network &&
+            p.url === r.url &&
+            p.publishedAt === r.publishedAt
+        )
+    ).length;
+    const text = `# Production checkpoint — ${next.subject}\n\nStage: ${next.stage}\n\nWaiting for: ${next.waitingFor ?? "nothing"}\n\nApprovals: ${approvals}\n\nReported publications awaiting reconciliation: ${reported}\n\nNext action: ${next.nextAction}\n\n${next.context}\n\n## Saved state\n\n\`\`\`json\n${JSON.stringify(next, null, 2)}\n\`\`\`\n`;
     const fd = openSync(temporary, "wx");
     try {
       writeFileSync(fd, text);
@@ -520,11 +534,62 @@ function applyLockedEvent(root, id, event) {
         fail("Unknown intended network");
       if (state.publications.some((p) => p.network === event.network))
         fail("A published outcome cannot be cancelled");
+      if (state.publicationReports?.some((p) => p.network === event.network))
+        fail("A reported publication must be reconciled, not cancelled");
       state.cancellations[event.network] = {
         reason: required(event.reason, "Operator cancellation reason"),
         at: new Date().toISOString(),
       };
       break;
+    case "publication-report": {
+      if (!state.intendedNetworks.includes(event.network))
+        fail("Network is outside the commission");
+      if (
+        !/^\d{4}-\d{2}-\d{2}$/.test(event.publishedAt) ||
+        !Number.isFinite(Date.parse(event.publishedAt)) ||
+        new Date(event.publishedAt).toISOString().slice(0, 10) !==
+          event.publishedAt
+      )
+        fail("Publication date is required");
+      if (event.url !== null && !/^https:\/\//.test(event.url ?? ""))
+        fail("Publication URL must be HTTPS or explicitly null");
+      if (event.url !== null) {
+        try {
+          if (
+            typeof event.url !== "string" ||
+            new URL(event.url).protocol !== "https:"
+          )
+            fail("Invalid publication URL");
+        } catch {
+          fail("Invalid publication URL");
+        }
+      }
+      state.publicationReports ??= [];
+      if (
+        [...state.publicationReports, ...state.publications].some((p) =>
+          event.url
+            ? p.url === event.url
+            : p.network === event.network &&
+              p.publishedAt === event.publishedAt &&
+              p.url === null
+        )
+      )
+        fail("Publication report already recorded");
+      state.publicationReports.push({
+        network: event.network,
+        url: event.url,
+        publishedAt: event.publishedAt,
+        evidence: required(event.evidence, "Attributed publication evidence"),
+        evidenceFile: event.evidenceFile,
+        evidenceHash: fingerprint(root, event.evidenceFile),
+        evidenceCurrent: true,
+        recordedAt: new Date().toISOString(),
+        atRevision: state.revision + 1,
+      });
+      state.nextAction =
+        "Reconcile the reported publication's actual media and copy; preserve working files and existing approval history";
+      break;
+    }
     case "publication":
       approved(3);
       if (!state.networks.includes(event.network))
