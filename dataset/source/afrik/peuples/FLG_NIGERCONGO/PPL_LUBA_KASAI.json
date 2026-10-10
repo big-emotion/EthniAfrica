@@ -125,5 +125,162 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Luba-Kasaï désigne les Luba de la région du Kasaï, en République démocratique du Congo, qui se nomment eux-mêmes Baluba. Les historiens les appellent aussi Luba Lubilanji, et leur langue a été nommée buluba-lulua. Nous n'avons pas trouvé de source qui explique l'origine du nom Luba ; ce que nous savons de son histoire est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Baluba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lua",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent aujourd'hui ; en 1906, on le disait venu de l'extérieur.",
+        "periodLabel": "XIXe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Livre publié en 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baluba ne serait pas, à l'origine, celui que ce peuple se donne, écrit en 1906 le missionnaire William M. Morrison : comme le nom Lulua, il lui aurait été donné de l'extérieur. Entre eux, les gens se désignent alors par le nom de leur clan, comme Bakua Kaloshi, Bakua Chimanga ou Bakua Temba.",
+            "sources": [
+              {
+                "title": "Grammar and Dictionary of the Buluba-Lulua Language as spoken in the Upper Kasai and Congo Basin",
+                "author": "William M. Morrison",
+                "year": 1906,
+                "url": "https://archive.org/details/grammaranddicti01missgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. vi",
+                "notes": "New York, American Tract Society, 1906, pour la mission presbytérienne américaine de Luebo. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Migrations anciennes, non datées"
+            },
+            "statement": "Le nom Luba-Kasaï n'existe pas encore. Selon les traditions des familles du Kasaï que rapporte Ndaywel è Nziem, leurs ancêtres ont quitté le Katanga, puis les rives de la Lubilash, pour aller vers l'ouest, vers la rivière Lulua, souvent poussés par la famine.",
+            "before": true,
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 20 : The political system of the Luba and Lunda: its emergence and expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 594",
+                "notes": "Édition anglaise de l'UNESCO, copie non officielle mise en ligne par South African History Online. Lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Luba-Kasaï",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom qui distingue les Luba du Kasaï de ceux du Katanga.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Luba-Kasaï distingue les Luba du Kasaï, que l'historien Ndaywel è Nziem appelle Luba Lubilanji, des Luba du Katanga, les Luba Shankadi. Il cite aussi les Lulua parmi les peuples dont l'histoire se rattache à celle des Luba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 20 : The political system of the Luba and Lunda: its emergence and expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 588",
+                "notes": "Édition anglaise de l'UNESCO, copie non officielle mise en ligne par South African History Online. Lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Luba Lubilanji",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que des historiens donnent aux Luba du Kasaï.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Luba Lubilanji sert à l'historien Ndaywel è Nziem pour désigner les Luba du Kasaï, à côté des Luba Shankadi du Katanga.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 20 : The political system of the Luba and Lunda: its emergence and expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 588",
+                "notes": "Édition anglaise de l'UNESCO, copie non officielle mise en ligne par South African History Online. Lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Luba-Lulua",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue commune des Baluba et des Lulua du Kasaï.",
+        "periodLabel": "Écrit dès 1906",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Livre publié en 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Luba-Lulua reprend celui que le missionnaire William M. Morrison donne en 1906 à la langue commune des Baluba et des Lulua, le buluba-lulua. Les deux peuples la parlent avec de légères différences, selon lui, et vivent mêlés autour de la mission de Luebo.",
+            "formAsWritten": "Buluba-Lulua",
+            "sources": [
+              {
+                "title": "Grammar and Dictionary of the Buluba-Lulua Language as spoken in the Upper Kasai and Congo Basin",
+                "author": "William M. Morrison",
+                "year": 1906,
+                "url": "https://archive.org/details/grammaranddicti01missgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre et p. v-vi",
+                "notes": "New York, American Tract Society, 1906, pour la mission presbytérienne américaine de Luebo. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

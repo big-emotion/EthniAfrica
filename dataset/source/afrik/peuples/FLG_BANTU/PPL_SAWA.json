@@ -154,5 +154,108 @@
         "notes": "Revue Matatu, volumes 27-28, 2003 ; travail universitaire indépendant de celui de Drewal, consulté le 10 septembre 2026."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sawa désigne l'ensemble des peuples de la côte du Cameroun, comme les Douala, les Bakoko ou les Bassa, qui se nomment eux-mêmes Sawa. En duala, le mot sáwá veut dire « la rive, le rivage ». Nous n'avons pas trouvé de source qui dise quand ni comment ce nom a commencé à désigner ces peuples ; ce que nous savons est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Sawa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dua",
+        "namedBy": null,
+        "shortLine": "Le nom des peuples de la côte du Cameroun ; en duala, sáwá veut dire « le rivage ».",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Article publié en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Sawa regroupe tous les habitants de la région côtière du Cameroun, des peuples d'origine bantoue qui partagent un même héritage, selon Esoh Elamé. Il distingue les premiers occupants de la côte, comme les Bakoko et les Bassa, des peuples issus d'un même ancêtre fondateur, comme les Douala.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La prise en compte du magico-religieux dans les problématiques de développement durable : le cas du Ngondo chez les peuples Sawa du Cameroun",
+                "author": "Esoh Elamé",
+                "year": 2006,
+                "url": "https://journals.openedition.org/vertigo/2685",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1 et § 4",
+                "notes": "VertigO, vol. 7, n° 3, décembre 2006. Lu sur OpenEdition le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "Dictionnaire publié en 1972"
+            },
+            "era": "modern",
+            "statement": "Le nom Sawa s'écrit comme le mot duala sáwá, qui veut dire « la rive, le rivage », comme dans sáwá 'a múnja, « le rivage de la mer », selon le dictionnaire de Paul Helmlinger. Ce dictionnaire ne dit pas si le nom des peuples vient de ce mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire duala-français, suivi d'un lexique français-duala",
+                "author": "Paul Helmlinger",
+                "year": 1972,
+                "url": "http://www.ddl.cnrs.fr/Projets/Clhass/PageWeb/ressources/duala.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 433",
+                "notes": "Paul Helmlinger, Klincksieck, Paris, 1972, exemplaire numérisé. Page 433, entrée « sáwá » : « la rive, le rivage », avec l'exemple « le rivage de la mer ». L'entrée ne parle pas du nom des peuples. Lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Article publié en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Sawa réunit aussi ces peuples autour du Ngondo, à la fois assemblée traditionnelle, société secrète et culte des esprits de l'eau, célébré chaque année le premier week-end de décembre, selon Esoh Elamé.",
+            "sources": [
+              {
+                "title": "La prise en compte du magico-religieux dans les problématiques de développement durable : le cas du Ngondo chez les peuples Sawa du Cameroun",
+                "author": "Esoh Elamé",
+                "year": 2006,
+                "url": "https://journals.openedition.org/vertigo/2685",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 5 et § 7",
+                "notes": "VertigO, vol. 7, n° 3, décembre 2006. Lu sur OpenEdition le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1799,
+              "label": "XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Sawa n'apparaît pas dans ce que les historiens disent de cette époque. Les principaux groupes de la côte du Cameroun sont alors les Kpe-Mboko, les Duala, les Limba et les Tanga-Yasa ; chez les Duala et les Isuwu, la société du Jengu, fondée sur le culte des esprits de l'eau, est la plus prestigieuse, selon Ebiegberi Joe Alagoa.",
+            "before": true,
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 15 : Fon and Yoruba: the Niger delta and the Cameroon",
+                "author": "Ebiegberi Joe Alagoa",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 451",
+                "notes": "Édition anglaise de l'UNESCO, copie non officielle mise en ligne par South African History Online. Lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
