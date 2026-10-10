@@ -42,6 +42,7 @@
               "to": 1980,
               "label": "Proposée en 1963, exposée en 1980"
             },
+            "era": "modern",
             "hypothesisGroup": "famille-du-songhai",
             "statement": "Le nom songhaï désignerait la branche la plus occidentale de la famille nilo-saharienne, selon Joseph Greenberg. Dans ses articles de 1949-1950, il en faisait encore une famille à part.",
             "sources": [
@@ -63,6 +64,7 @@
               "to": 1969,
               "label": "1969"
             },
+            "era": "modern",
             "hypothesisGroup": "famille-du-songhai",
             "statement": "Le nom songhaï désignerait des langues qui n'appartiennent pas à la famille nilo-saharienne, selon P. F. Lacroix en 1969, d'après Dierk Lange. Lange rapporte que Robert Nicolaï voyait alors au contraire une parenté encore plus étroite avec le saharien.",
             "sources": [
