@@ -166,5 +166,246 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nguni désigne un grand ensemble de peuples d'Afrique australe aux langues proches, Zulu, Xhosa, Swazi, Ndebele et d'autres, qui se nomment chacun par son propre nom. D'autres noms existent : abaNguni, la forme de la langue, et Ngoni, la forme qu'il a prise en Afrique centrale et orientale. Les sources ne s'accordent pas sur l'origine du nom Nguni ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Nguni",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "zul",
+        "namedBy": null,
+        "shortLine": "Un nom commun à plusieurs peuples ; chacun se nomme d'abord par son propre nom.",
+        "periodLabel": "Écrit dès 1861",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nguni désigne les peuples de langue nguni, Ndebele, Ngoni, Swazi, Xhosa, Zulu et d'autres, qui ont une origine commune et des langues proches, ainsi que ce groupe de langues, selon le Dictionary of South African English. Chacun de ces peuples se nomme d'abord par son propre nom. L'origine du nom Nguni est discutée : les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Nguni »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/nguni/e05166",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Nguni désigne les peuples de langue nguni, Ndebele, Ngoni, Swazi, Xhosa, Zulu et d'autres, qui ont une origine historique commune et des langues proches, ainsi que ce groupe de langues. Le mot vient du zoulou umnguni, pluriel abanguni. L'entrée cite Alfred T. Bryant en 1929 comme sa plus ancienne citation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1830,
+              "label": "Fin du XVIIIe et début du XIXe siècle"
+            },
+            "statement": "Le nom Nguni sert aux historiens à nommer les peuples de la région où naît le Mfecane : les Nguni du Nord, qu'ils appellent aussi proto-Zulu, entre le Pongolo et la Tugela, selon Leonard D. Ngcongco ; les Nguni du Cap ou du Sud, Xhosa, Tembu et Mpondo, selon Elleck K. Mashingaidze.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 118-119",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 118 : la révolution « dénommée Mfecane [l'écrasement] en langue nguni ». Page 119 : « Le territoire occupé par les Nguni du Nord (ou proto-Zulu) peut être approximativement défini comme la région délimitée par trois cours d'eau : au nord le Pongolo, au sud la Tugela, et à l'ouest la vallée du Buffalo »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 6 : L'impact du Mfecane sur la colonie du Cap",
+                "author": "Elleck K. Mashingaidze",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 154",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. « La majorité des Africains était désignée collectivement sous le nom de Nguni du Cap, ou parfois sous celui de Nguni du Sud » ; ils étaient « divisés en trois catégories : les Xhosa, les Tembu et les Mpondo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "1861"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nguni apparaît, écrit « Nguni (Aba) », dans le dictionnaire zoulou-anglais de John William Colenso, qui le donne comme « un autre nom des Amaxosa ». C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant elle.",
+            "formAsWritten": "Nguni (Aba)",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Zulu-English Dictionary",
+                "author": "John William Colenso",
+                "year": 1861,
+                "url": "https://archive.org/details/zuluenglishdict00dcgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 334-335",
+                "notes": "Pietermaritzburg, 1861, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Entrée « Nguni (Aba), n. Another name for the Amaxosa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Nguni viendrait de Mnguni, un ancêtre que la tradition donne pour père de Xosa : abe-Nguni voudrait dire « ceux de Mnguni », selon John Henderson Soga, qui cite l'historien zoulou Magema M. Fuze.",
+            "hypothesisGroup": "origine du nom Nguni",
+            "sources": [
+              {
+                "title": "The South-Eastern Bantu (Abe-Nguni, Aba-Mbo, Ama-Lala)",
+                "author": "John Henderson Soga",
+                "year": 1930,
+                "url": "https://archive.org/details/soga-jh-the-south-eastern-bantu-1930",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 88",
+                "notes": "Johannesburg, Witwatersrand University Press, 1930. Lu le 10 octobre 2026 dans une copie non officielle déposée sur Internet Archive. L'auteur, pasteur xhosa, s'appuie sur les généalogies et les traditions des chefs. « M. M. Fuze, in his book Abantu Abamnyama, says, “the great tribe of Mnguni set out westwards (from Natal) [...] This is the Mnguni who was father of Xosa” » ; « The great name of Mnguni, though still recognized as all-comprehensive of tribes which derive their birth from him, has largely fallen into abeyance in favour of that of Xosa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Proposée en 1905"
+            },
+            "statement": "Le nom Nguni serait le nom que les Tonga, au nord, donnaient aux Zulu et aux Xhosa pour les distinguer d'eux, selon le missionnaire Alfred T. Bryant ; ces derniers l'auraient parfois repris pour eux-mêmes.",
+            "hypothesisGroup": "origine du nom Nguni",
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 54*-55* et 429",
+                "notes": "Pinetown, Mariannhill Mission Press, 1905, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Introduction historique, pages 54*-55* : abaNguni, « a generic name in Tonga parlance designating a Native of what we call the 'Kafir' stock (whether it be Zulu or Xosa) ». Entrée um-Nguni, page 429 : « Name by which the Tongas call a Zulu-Kafir, hence occasionally adopted by these latter themselves »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "statement": "Le nom Nguni serait celui par lequel ces peuples se distinguaient eux-mêmes, autrefois, de leurs voisins sotho et tonga, selon Alfred T. Bryant, qui dit l'avoir choisi pour cette raison. Il s'écarte ainsi de ce qu'il écrivait en 1905.",
+            "hypothesisGroup": "origine du nom Nguni",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Londres, Longmans, Green and Co., 1929. Lu le 10 octobre 2026 dans une copie non officielle déposée sur Internet Archive. L'auteur, missionnaire au Natal depuis 1883, s'appuie sur les traditions qu'il a recueillies. « We have designated the first of the above types 'Nguni' because abaNguni was the name by which, in times gone by, these people generically distinguished themselves from the other two types around them »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "abaNguni",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "zul",
+        "namedBy": null,
+        "shortLine": "La forme du nom dans la langue ; selon Soga, l'ancien nom des Xhosa.",
+        "periodLabel": "Écrit dès 1861",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1930,
+              "label": "Tradition rapportée en 1930"
+            },
+            "statement": "Le nom abaNguni, ou abe-Nguni, est l'ancien nom des Xhosa, celui qu'ils portaient avant leur arrivée au Natal, selon la tradition que rapporte John Henderson Soga. En 1930, les autres peuples du Natal les appellent encore plus souvent Abe-Nguni qu'Ama-Xosa, ajoute-t-il.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The South-Eastern Bantu (Abe-Nguni, Aba-Mbo, Ama-Lala)",
+                "author": "John Henderson Soga",
+                "year": 1930,
+                "url": "https://archive.org/details/soga-jh-the-south-eastern-bantu-1930",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 87-88",
+                "notes": "Johannesburg, Witwatersrand University Press, 1930. Lu le 10 octobre 2026 dans une copie non officielle déposée sur Internet Archive. L'auteur, pasteur xhosa, s'appuie sur les généalogies et les traditions des chefs. « Before this tribe reached Natal, and for a considerable time during its stay there, it was known as the Abe-Nguni, not as the Ama-Xosa. Indeed, by the other tribes in Natal, this tribe even to the present day is more frequently spoken of as Abe-Nguni than as Ama-Xosa. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom abaNguni, d'abord donné par les Tonga, aurait été parfois repris par les Zulu et les Xhosa pour se nommer eux-mêmes, selon le dictionnaire d'Alfred T. Bryant.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 429",
+                "notes": "Pinetown, Mariannhill Mission Press, 1905, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Entrée um-Nguni : « Name by which the Tongas call a Zulu-Kafir, hence occasionally adopted by these latter themselves - the word is also the isitakazo of the Emanzimeleni tribe »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ngoni",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme que le nom Nguni a prise en Afrique centrale et orientale, chez les peuples voisins.",
+        "periodLabel": "Écrit dès 1905",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngoni est la forme qu'a prise abaNguni chez les peuples de l'intérieur, au contact des groupes zulu partis vers le nord avec Zwangendaba ; ces groupes se disent alors abakwa Ngoni, « ceux de Ngoni », comme s'il s'agissait d'un ancêtre, selon Alfred T. Bryant. Les Tumbuka les appelaient maZitu, et les Yao maViti.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 55* et 58*",
+                "notes": "Pinetown, Mariannhill Mission Press, 1905, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Page 55* : « the name abaNguni most persistently clung, and who, under a subsequent corruption of the word, became afterwards notorious in Central Africa as the abaNgoni ». Page 58* : ils se nomment « abakwa Ngoni, the People of Ngoni, as though this latter were the proper name of some ancestor »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

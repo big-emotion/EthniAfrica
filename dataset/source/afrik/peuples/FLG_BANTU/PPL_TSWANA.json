@@ -132,5 +132,217 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tswana désigne un peuple du Botswana, du nord de l'Afrique du Sud et de l'est de la Namibie, qui se nomme lui-même Batswana, et Motswana pour une seule personne. D'autres noms existent : Bechuana, la forme anglaise du XIXe siècle, et Briqua, le nom que leur donnaient les Kora. Les sources ne s'accordent pas sur l'origine du nom Tswana ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Batswana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tsn",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : Batswana au pluriel, Motswana pour une personne.",
+        "periodLabel": "Une forme proche est notée dès 1801",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Batswana désigne le peuple tswana ; une seule personne se dit Motswana. Au Botswana, il désigne aussi les citoyens du pays, selon le Dictionary of South African English. D'où vient le radical tswana est discuté : les explications proposées sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Motswana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/motswana/e04953",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Motswana réunit le préfixe mo- et le radical -tswana, que l'entrée rattache soit au féminin de l'adjectif ntsho, « noir », soit à un verbe qui veut dire « être semblable ». Le pluriel est Batswana."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1801,
+              "to": 1979,
+              "label": "1801, récit publié en 1979"
+            },
+            "era": "polity",
+            "statement": "Le nom Batswana a une forme proche dans le récit de voyage de William Somerville en 1801 : ces gens « se nomment eux-mêmes Bōōtshooānăs ou Mōōtshooānăs », selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Bōōtshooānăs",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Bechuana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Bechuana/e00664",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1801",
+                "notes": "Entrée lue le 10 octobre 2026. Bechuana est donné comme la forme anglaise de baTswana. L'entrée cite William Somerville en 1801 : « Briqua is a name unknown to them, but applied to them by the Kora Hottentots — they call themselves Bōōtshooānăs or Mōōtshooānăs ». Elle note qu'au XIXe siècle « Bechuana » et « Kaffir » désignaient souvent les Sotho et les Nguni, et que Bechuana a été remplacé par Tswana et Batswana."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Proposée en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Batswana viendrait du mot chuana, « semblable, égal » : Bachuana voudrait dire « les égaux », et les gens répondraient « nous sommes Bachuana, des égaux, nous ne sommes inférieurs à personne », selon le missionnaire David Livingstone.",
+            "hypothesisGroup": "origine du nom Tswana",
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 200-201",
+                "notes": "Londres, John Murray, 1857, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « The name Bechuana seems derived from the word Chuana — alike, or equal — with the personal pronoun Ba (they) prefixed ; and therefore means fellows or equals. » Livingstone ajoute que les Bechuana ne savent pas expliquer d'où vient leur nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Rapportée en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Batswana viendrait d'une méprise : un voyageur aurait demandé qui vivait plus loin et entendu « ils sont pareils », c'est-à-dire « ce sont des gens comme nous », puis en aurait fait le nom du peuple. David Livingstone rapporte cette explication pour la rejeter : le nom servait déjà à des gens qui ne voyaient pas d'Européens.",
+            "hypothesisGroup": "origine du nom Tswana",
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 200",
+                "notes": "Londres, John Murray, 1857, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « Some have supposed the name to have arisen from a mistake of some traveller ». Livingstone objecte : « the name was found in use among those who had no intercourse with Europeans »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Batswana reposerait sur le féminin de l'adjectif ntsho, « noir », selon l'une des deux pistes que donne le Dictionary of South African English ; l'autre est le verbe « être semblable ».",
+            "hypothesisGroup": "origine du nom Tswana",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Motswana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/motswana/e04953",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Motswana réunit le préfixe mo- et le radical -tswana, que l'entrée rattache soit au féminin de l'adjectif ntsho, « noir », soit à un verbe qui veut dire « être semblable ». Le pluriel est Batswana."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bechuana",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "tsn",
+        "namedBy": null,
+        "shortLine": "La forme anglaise du XIXe siècle, d'où vient le nom de Bechuanaland.",
+        "periodLabel": "Écrit dès 1827",
+        "accounts": [
+          {
+            "period": {
+              "from": 1800,
+              "to": 1899,
+              "label": "XIXe siècle"
+            },
+            "statement": "Le nom Bechuana est la forme anglaise de Batswana ; au XIXe siècle, il désignait souvent tous les peuples de langue sotho et tswana, comme « Cafre » désignait les Nguni. Tswana et Batswana l'ont remplacé, selon le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Bechuana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Bechuana/e00664",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Bechuana est donné comme la forme anglaise de baTswana. L'entrée cite William Somerville en 1801 : « Briqua is a name unknown to them, but applied to them by the Kora Hottentots — they call themselves Bōōtshooānăs or Mōōtshooānăs ». Elle note qu'au XIXe siècle « Bechuana » et « Kaffir » désignaient souvent les Sotho et les Nguni, et que Bechuana a été remplacé par Tswana et Batswana."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1823,
+              "to": 1827,
+              "label": "Assemblée de 1823, récit publié en 1827"
+            },
+            "era": "polity",
+            "statement": "Le nom Bechuana est écrit Bechuanas par le voyageur George Thompson, qui rapporte une assemblée où un orateur barolong conseille aux Bechuanas d'attendre l'arrivée des Mantatees. C'est la plus ancienne trace de cette forme que le projet connaît ; d'autres formes proches sont plus anciennes.",
+            "formAsWritten": "Bechuanas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Adventures in Southern Africa, vol. I",
+                "author": "George Thompson",
+                "year": 1827,
+                "url": "https://archive.org/details/travelsadventure00thom",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 102",
+                "notes": "Londres, Henry Colburn, 1827, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « The fourth speaker, Insha, a Barolong, began by recommending that the Bechuanas should wait until the Mantatees appeared, and then attack them. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Briqua",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "kqz",
+        "namedBy": "les Kora",
+        "shortLine": "Le nom que leur donnaient les Kora, un peuple khoikhoi, en 1801.",
+        "periodLabel": "Noté en 1801",
+        "accounts": [
+          {
+            "period": {
+              "from": 1801,
+              "to": 1979,
+              "label": "1801, récit publié en 1979"
+            },
+            "era": "polity",
+            "statement": "Le nom Briqua est celui que les Kora, un peuple khoikhoi, donnaient aux Tswana : ceux-ci ne le connaissaient pas, note William Somerville en 1801, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Briqua",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Bechuana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Bechuana/e00664",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1801",
+                "notes": "Entrée lue le 10 octobre 2026. Bechuana est donné comme la forme anglaise de baTswana. L'entrée cite William Somerville en 1801 : « Briqua is a name unknown to them, but applied to them by the Kora Hottentots — they call themselves Bōōtshooānăs or Mōōtshooānăs ». Elle note qu'au XIXe siècle « Bechuana » et « Kaffir » désignaient souvent les Sotho et les Nguni, et que Bechuana a été remplacé par Tswana et Batswana."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

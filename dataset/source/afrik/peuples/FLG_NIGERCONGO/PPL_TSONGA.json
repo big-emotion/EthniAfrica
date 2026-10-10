@@ -145,5 +145,425 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tsonga désigne un peuple du sud du Mozambique et du nord-est de l'Afrique du Sud, dont des groupes se nomment eux-mêmes Tsonga, ou Vatsonga. D'autres noms existent : Thonga ou Tonga, que leur donnaient les Zulu, Shangaan, du nom d'un royaume du XIXe siècle, et Magwamba, un ancien surnom. Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Tsonga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tso",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent des groupes du nord ; il remplace Thonga depuis les années 1940.",
+        "periodLabel": "Écrit dès 1912",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tsonga désigne le peuple et sa langue ; on écrit Tsonga plutôt que Tonga ou Thonga depuis les décisions du Tsonga Language Board, selon A. A. Jacques en 1940, cité par le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Tsonga »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/tsonga/e07356",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. L'entrée cite A. A. Jacques en 1940 : il n'est pas correct d'écrire Tonga ou Thonga, et les décisions du Tsonga Language Board permettent d'adopter la forme Tsonga. Elle cite aussi la reconnaissance du tsonga comme langue officielle du Gazankulu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tsonga apparaît chez le missionnaire Henri-Alexandre Junod : les clans du nord, surtout les groupes Bilen et Djonga, « aiment se nommer Tjonga », et il cite les « Hlengwe Tsonga ». Junod ajoute que ces clans n'avaient pas de nom commun pour l'ensemble. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Tsonga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14-16",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Section « The generic Name of the Tribe » : les Thonga « possess no common name » pour leur nation ; « the Thonga of the Northern Clans, especially those of the Bilen and Djonga groups, like to call themselves Tjonga, the Hlengwe Tsonga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Tsonga serait peut-être, à l'origine, le même mot que Ronga et voudrait dire « gens de l'Est », selon Henri-Alexandre Junod, qui juge ce sens douteux et oublié.",
+            "hypothesisGroup": "origine du nom Tsonga",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14-16",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « This word is perhaps originally the same as Ronga and may have meant also people of the East [...] but this meaning is doubtful and has at any rate been forgotten »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Thonga",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "zul",
+        "namedBy": "les Zulu et les Ngoni, selon Henri-Alexandre Junod",
+        "shortLine": "Un nom donné par les Zulu ; Junod l'emploie en 1912, il a cédé la place à Tsonga.",
+        "periodLabel": "Une forme proche est écrite dès 1852",
+        "accounts": [
+          {
+            "period": {
+              "from": 1815,
+              "to": 1830,
+              "label": "Entre 1815 et 1830"
+            },
+            "era": "polity",
+            "statement": "Le nom Thonga est appliqué à ces clans par les envahisseurs zulu ou ngoni qui en soumettent la plupart entre 1815 et 1830. Dans leur bouche, il devient un surnom qui vaut presque « esclave », et les intéressés ne l'aiment pas, selon Henri-Alexandre Junod.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14-16",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « The name Thonga [...] was applied to them by the Zulu or Ngoni invaders who enslaved most of their clans between 1815 and 1830 » ; « This word Thonga became a nickname which, in the mouth of the Zulu, was almost the equivalent of slave »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "25 novembre 1852"
+            },
+            "era": "polity",
+            "statement": "Le nom Thonga a une forme proche, Amatongas, dans le Natal Mercury du 25 novembre 1852, qui rapporte que le roi zoulou Mpande a saisi les biens des Amatongas, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Amatongas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Tonga »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/tonga/e07251",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1852",
+                "notes": "Entrée lue le 10 octobre 2026. Le nom viendrait soit d'une forme ancienne d'un mot tsonga désignant ce peuple, soit du zoulou iThonga, umThonga, peut-être d'abord « forgeron », ces gens étant connus pour leur travail du métal. L'entrée cite le Natal Mercury du 25 novembre 1852 : « The property of the Amatongas, together with the ivory of the traders, were seized by Panda »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Thonga viendrait de Ronga, « l'Orient », le nom que se donnaient les clans de la baie de Delagoa : en zoulou, le r de ronga devient th, selon Henri-Alexandre Junod.",
+            "hypothesisGroup": "origine du nom Thonga",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14-16",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « The origin of this Zulu name is probably the term Ronga which means Orient (buronga = dawn) and by which the clans round Lourenço Marques used to call themselves »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Thonga viendrait du zoulou iThonga, qui aurait d'abord voulu dire « forgeron », ces gens étant connus pour leur travail du métal ; à moins qu'il ne vienne d'une forme ancienne d'un mot tsonga, selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Thonga",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Tonga »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/tonga/e07251",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le nom viendrait soit d'une forme ancienne d'un mot tsonga désignant ce peuple, soit du zoulou iThonga, umThonga, peut-être d'abord « forgeron », ces gens étant connus pour leur travail du métal. L'entrée cite le Natal Mercury du 25 novembre 1852 : « The property of the Amatongas, together with the ivory of the traders, were seized by Panda »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Shangaan",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des partisans de Soshangane, étendu aux Tsonga, surtout en Afrique du Sud.",
+        "periodLabel": "Écrit dès 1884",
+        "accounts": [
+          {
+            "period": {
+              "from": 1821,
+              "to": 1895,
+              "label": "Royaume de Gaza, de 1821 environ à 1895"
+            },
+            "statement": "Le nom Shangaan vient du nom de Soshangane : au Mozambique, ses partisans étaient appelés Shangana, d'après lui, selon Leonard D. Ngcongco. Ce général de Zwide s'établit en pays tsonga et y fonde le royaume de Gaza, qui soumet de nombreux groupes tsonga.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 132-133",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. « Au Mozambique, les partisans de Soshangane étaient généralement dénommés Shangana, d'après son nom. C'est là qu'il entreprit de bâtir son propre royaume, qu'il appela Gaza. » Page 133 : le gros des attaques était dirigé contre les peuples du sud du Mozambique, « notamment les Tsonga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "statement": "Le nom Shangaan est le nom que les Blancs emploient le plus pour désigner ce peuple ; les Ronga de la baie de Delagoa n'ont jamais accepté ce nom, qu'ils prennent pour une insulte, selon Henri-Alexandre Junod.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14-16",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « Another name which is much used amongst white people to designate the Thonga is the word Shangaan » ; « But this term was never accepted by the Ba-Ronga who consider it as an insult »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "1884"
+            },
+            "era": "colonial",
+            "statement": "Le nom Shangaan apparaît, écrit Shangaans, dans le Cape Law Journal de 1884, qui le range parmi les peuples de la région, selon le Dictionary of South African English. C'est la plus ancienne trace de cette forme que le projet connaît ; le nom Shangana est plus ancien.",
+            "formAsWritten": "Shangaans",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Shangaan »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/shangaan/e06416",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1884",
+                "notes": "Entrée lue le 10 octobre 2026. Le nom viendrait « probablement » du chef fondateur Soshangane. L'entrée cite The Native Tribes of the Transvaal, 1905 : « The name Shangaan is an abbreviation of Amachangana, meaning 'the destroyers' », et le Cape Law Journal de 1884, qui range les « Shangaans » parmi les peuples de la région."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Shangaan viendrait de Soshangane, ou Manukosi, le chef zulu qui soumit la plupart des Tsonga au temps de Chaka, selon Henri-Alexandre Junod et le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Shangaan",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14-16",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « Shangaan or Tshangaan was one of the surnames of Manukosi, the Zulu chief who settled on the East Coast and subjugated most of the Thonga at the time of Chaka »."
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Shangaan »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/shangaan/e06416",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le nom viendrait « probablement » du chef fondateur Soshangane. L'entrée cite The Native Tribes of the Transvaal, 1905 : « The name Shangaan is an abbreviation of Amachangana, meaning 'the destroyers' », et le Cape Law Journal de 1884, qui range les « Shangaans » parmi les peuples de la région."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Shangaan serait plus ancien que Soshangane : il aurait été celui d'un chef de la basse vallée du Limpopo, appelée Ka Tshangaan, dont les habitants se nommaient Matshangaan, selon Henri-Alexandre Junod, qui présente cette piste comme possible.",
+            "hypothesisGroup": "origine du nom Shangaan",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14-16",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « It is possible that this name was even older and that it belonged to a chief who lived in the valley of the Lower Limpopo before Manukosi. At any rate, this valley was called Ka Tshangaan and its inhabitants Matshangaan »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Proposée en 1905"
+            },
+            "statement": "Le nom Shangaan serait l'abrégé d'Amachangana, « les destructeurs », selon The Native Tribes of the Transvaal, un ouvrage de 1905 que cite le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Shangaan",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Shangaan »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/shangaan/e06416",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le nom viendrait « probablement » du chef fondateur Soshangane. L'entrée cite The Native Tribes of the Transvaal, 1905 : « The name Shangaan is an abbreviation of Amachangana, meaning 'the destroyers' », et le Cape Law Journal de 1884, qui range les « Shangaans » parmi les peuples de la région."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Magwamba",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Venda et les Basotho du Transvaal",
+        "shortLine": "Un ancien surnom donné par leurs voisins venda et sotho du Transvaal.",
+        "periodLabel": "Écrit dès 1892",
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "modern",
+            "statement": "Le nom Magwamba est celui que les Venda et les Sotho donnaient aux Tsonga réfugiés dans le district de Spelonken, au nord du Zoutpansberg, selon Henri-Alexandre Junod.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17-18",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « There they were called Magwamba by the Venda and Bvesha who possessed the country before them. These Magwamba are made up mostly of Hlengwe, Maluleke and Djonga refugees. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "statement": "Le nom Magwamba apparaît, écrit Magwambas, chez le naturaliste W. L. Distant, qui les appelle aussi « knob-noses », à cause de leurs scarifications du nez, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Magwambas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Magwamba »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/magwamba/e04446",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1892",
+                "notes": "Entrée lue le 10 octobre 2026. Origine dite inconnue. L'entrée cite W. L. Distant en 1892 : « The Magwambas, or 'knob-noses' » ; A. H. Keane en 1900, qui traduit par « demons » ou « devils » ; et The Native Tribes of the Transvaal, 1905 : le nom aurait été donné par les Venda et les Basotho parce que ces gens juraient par Gwamba, le premier homme créé selon eux."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Proposée en 1905"
+            },
+            "statement": "Le nom Magwamba viendrait de Gwamba, le premier homme créé selon les Tsonga : les Venda et les Basotho les auraient nommés ainsi parce qu'ils juraient par lui, selon The Native Tribes of the Transvaal, cité par le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Magwamba",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Magwamba »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/magwamba/e04446",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Origine dite inconnue. L'entrée cite W. L. Distant en 1892 : « The Magwambas, or 'knob-noses' » ; A. H. Keane en 1900, qui traduit par « demons » ou « devils » ; et The Native Tribes of the Transvaal, 1905 : le nom aurait été donné par les Venda et les Basotho parce que ces gens juraient par Gwamba, le premier homme créé selon eux."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "Proposée en 1900"
+            },
+            "statement": "Le nom Magwamba voudrait dire « démons » ou « diables », selon A. H. Keane en 1900, cité par le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Magwamba",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Magwamba »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/magwamba/e04446",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Origine dite inconnue. L'entrée cite W. L. Distant en 1892 : « The Magwambas, or 'knob-noses' » ; A. H. Keane en 1900, qui traduit par « demons » ou « devils » ; et The Native Tribes of the Transvaal, 1905 : le nom aurait été donné par les Venda et les Basotho parce que ces gens juraient par Gwamba, le premier homme créé selon eux."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
