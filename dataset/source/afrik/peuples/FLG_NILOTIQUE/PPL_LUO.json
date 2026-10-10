@@ -21,7 +21,17 @@
       "historicalRegion": "Nyanza (Kenya), region de Mara (Tanzanie)",
       "currentCountries": ["KEN", "TZA"]
     },
-    "ethnicities": ["Luo"],
+    "ethnicities": [
+      "Luo",
+      "Jo-Alego (clan de Siaya, sous-comté d'Alego, région de Kogelo)",
+      "Jo-Ugenya (clan de Siaya, descendants d'Omolo)",
+      "Jo-Gem (clan de Siaya, important regroupement de clans du sous-comté de Gem)",
+      "Jo-Kager (branche de Joka-Omolo, installée à Ukwala et Uranga)",
+      "Jo-Kisumo (clan d'origine de Kisumu)",
+      "Jo-Karachuonyo (clan du golfe de Winam)",
+      "Jo-Sakwa (clan de Siaya)",
+      "Jo-Asembo (Siaya, rive du lac Victoria)"
+    ],
     "origins": {
       "ancientOrigins": "Les Luo du Kenya et de Tanzanie sont un peuple nilotique occidental dont les origines remontent au berceau commun des Nilotiques, entre le Bahr-el-Ghazal et l'Equatoria oriental au Soudan du Sud. Les donnees archeologiques les plus anciennes associees aux ancetres nilotiques proviennent du site de Kadero (48 km au nord de Khartoum, Soudan), date d'environ 3000 av. J.-C. : culture pastorale bovine, cimetiere a phenotypes subsahariens, commerce a longue distance, agriculture et peche. Les recherches genetiques et linguistiques rattachent les Nubiens du Soudan du Nord et du sud de l'Egypte a une population melangee issue des Nilotiques et de flux genetiques moyen-orientaux et est-africains, descendants des habitants precoces de la vallee du Nil (royaume de Koush : Kerma, Meroe ; royaumes chretiens medievaux : Makuria, Nobatia, Alodia).",
       "formationPeriod": "Migration lente sur plusieurs generations depuis le Soudan du Sud vers l'Ouganda et l'ouest du Kenya, approximativement de 1000 ap. J.-C. jusqu'au debut du XXe siecle. L'identite specifique des Luo du Kenya se consolide lors des quatre grandes vagues migratoires dans l'ancienne province de Nyanza entre le XVe et le XXe siecle.",
@@ -31,14 +41,18 @@
         "Troisieme vague (divers groupes : Suba, Sakwa, Asembo, Uyoma, Kano)",
         "Quatrieme vague des Suba (mi-XVIIIe siecle) : originellement Bantous fuyant le royaume de Buganda apres le meurtre du 24e Kabaka ; installes dans le Sud-Nyanza (iles Rusinga et Mfangano) ; assimiles progressivement dans la culture luo",
         "Au XVe siecle, entree dans le royaume Bunyoro-Kitara (Ouganda) et fondation de la dynastie Babiito (assimilation dans la culture bantoue)",
-        "Traversee du golfe de Winam depuis le Nord vers le Sud-Nyanza au debut du XVIIe siecle"
+        "Traversee du golfe de Winam depuis le Nord vers le Sud-Nyanza au debut du XVIIe siecle",
+        "Bahr el-Ghazal et Équatoria oriental (Soudan du Sud), point de départ des ancêtres",
+        "Traversée de l'Ouganda par les régions acholi et padhola"
       ],
       "historicalSettlementZones": [
         "Golfe de Winam (lac Victoria), ancienne province de Nyanza (Kenya)",
         "Region de Mara (nord de la Tanzanie)",
         "Colline Ramogi (North Nyanza)",
         "Thimlich Ohinga (fortifications en pierre, datees de la periode d'expansion luo)",
-        "Iles Rusinga et Mfangano (lac Victoria)"
+        "Iles Rusinga et Mfangano (lac Victoria)",
+        "Ancienne province de Nyanza (ouest du Kenya) : Siaya, Kisumu, Homa Bay, Migori, Kisii",
+        "Rives du lac Victoria (Nam Lolwe) et de ses affluents"
       ],
       "unificationsOrDivisions": "Organisation en 27 tribus au Kenya, chacune subdivisee en clans et sous-clans avec le prefixe Jo- (peuple de). Pas d'unite politique centralisee traditionnellement. La Luo Union est fondee en 1947 (Oginga Odinga, premier Ker). Le titre de Ker (chef culturel supreme) cree en 1947 n'est pas un titre politique national. Le neuvieme Ker Jaduong Odungi Randa est intronise le 22 decembre 2023.",
       "externalInfluences": "Contacts avec la culture de Kanysore (ceramique ancienne, Gogo Falls, Migori), les Twa (art rupestre de Mfangano), les Bantous (forgerons et agriculteurs, culture Urewe 650-550 av. J.-C.), les Luhya, Suba, Kunta, Kuria, Kisii et Nilotiques meridionaux (Nandi, Kipsigis, Maasai). Les Bantous ont adopte certaines pratiques luo (ablation des dents) pour faciliter les mariages interethniques ; les Luo ont adopte des elements architecturaux locaux.",
@@ -54,7 +68,10 @@
     "languages": {
       "mainLanguage": "Dholuo",
       "isoCodes": ["luo"],
-      "dialects": [],
+      "dialects": [
+        "Trans-Yala (parler de la région d'Alego, Ugenya et Gem, comté de Siaya)",
+        "Dholuo courant (parlé par la plupart des Luo du Kenya et de Tanzanie)"
+      ],
       "vehicularRole": "Le dholuo est la langue maternelle des Luo du Kenya et de Tanzanie. Il appartient a la branche nilotique occidentale de la famille nilo-saharienne. Les premieres transcriptions sont dues au missionnaire adventiste Arthur Carscallen (1906-1921, colline Gendia). Il presente une similarite lexicale de 90% avec le lep Alur, 83% avec le lep Achol et 93% avec le dhopadhola. Swahili et anglais sont utilises comme langues vehiculaires au Kenya et en Tanzanie."
     },
     "culture": {
@@ -72,7 +89,7 @@
     "demography": {
       "totalPopulation": 5500000,
       "referenceYear": 2025,
-      "source": "Recensement national kenyan KNBS 2019 (5 066 966 au Kenya, 10,6% de la population) + estimations Tanzanie 2025 (region Mara)",
+      "source": "Recensement national kenyan KNBS 2019 (5 066 966 au Kenya, 10,6% de la population) + estimations Tanzanie 2025 (region Mara) Une autre estimation donne 6 500 000 personnes en 2025 : 5 500 000 au Kenya et 1 000 000 en Tanzanie (Wikipédia : 6,1 millions au Kenya en 2017 et environ 1 980 000 en Tanzanie en 2010). Les sources lues ne permettent pas de choisir entre ces chiffres.",
       "distributionByCountry": [
         {
           "country": "KEN",
@@ -121,6 +138,24 @@
         "url": "https://whc.unesco.org/en/list/1450/",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "YouTube — NYATITI The Queen of the Clan (feat. Ayub Ogada)",
+        "url": "https://www.youtube.com/watch?v=mAW1JIIufgE",
+        "tier": "unverified",
+        "source_kind": "archive"
+      },
+      {
+        "title": "UNESCO — Patrimoine immateriel (Kenya)",
+        "url": "https://ich.unesco.org/en/state/kenya-KE",
+        "tier": "official",
+        "source_kind": "intergovernmental"
+      },
+      {
+        "title": "RSIS International — Population Movements and the Gem Community in Western Kenya",
+        "url": "https://rsisinternational.org/journals/ijriss/articles/population-movements-and-the-consolidation-of-authority-in-the-inter-lacustrine-region-of-western-kenya-a-political-transformation-of-gem-community-in-pre-colonial-times/",
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   },

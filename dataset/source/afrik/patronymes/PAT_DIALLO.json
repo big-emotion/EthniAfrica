@@ -13,19 +13,19 @@
       "attestations": [
         {
           "countryId": "GIN",
-          "sourceRefs": ["corpus-ppl-fula-foret-organisation"]
+          "sourceRefs": ["corpus-ppl-fula-organisation"]
         },
         {
           "countryId": "CIV",
-          "sourceRefs": ["corpus-ppl-fula-foret-organisation"]
+          "sourceRefs": ["corpus-ppl-fula-organisation"]
         },
         {
           "countryId": "CMR",
-          "sourceRefs": ["corpus-ppl-fula-foret-organisation"]
+          "sourceRefs": ["corpus-ppl-fula-organisation"]
         },
         {
           "countryId": "GAB",
-          "sourceRefs": ["corpus-ppl-fula-foret-organisation"]
+          "sourceRefs": ["corpus-ppl-fula-organisation"]
         },
         {
           "countryId": "MLI",
@@ -155,14 +155,10 @@
   },
   "peoples": [
     {
-      "peopleId": "PPL_FULA_FORET",
-      "status": "attested",
-      "sourceRefs": ["corpus-ppl-fula-foret-organisation"]
-    },
-    {
       "peopleId": "PPL_FULA",
       "status": "attested",
       "sourceRefs": [
+        "corpus-ppl-fula-organisation",
         "diallo-2006-plaisanterie-peuls",
         "interpeace-autoportrait-mali-2015",
         "sy-2015-ethnies-langues-mali",
@@ -179,22 +175,22 @@
     {
       "countryId": "GIN",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-fula-foret-organisation"]
+      "sourceRefs": ["corpus-ppl-fula-organisation"]
     },
     {
       "countryId": "CIV",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-fula-foret-organisation"]
+      "sourceRefs": ["corpus-ppl-fula-organisation"]
     },
     {
       "countryId": "CMR",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-fula-foret-organisation"]
+      "sourceRefs": ["corpus-ppl-fula-organisation"]
     },
     {
       "countryId": "GAB",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-fula-foret-organisation"]
+      "sourceRefs": ["corpus-ppl-fula-organisation"]
     },
     {
       "countryId": "SEN",
@@ -272,7 +268,7 @@
   "homonyms": [],
   "sources": [
     {
-      "sourceKey": "corpus-ppl-fula-foret-organisation",
+      "sourceKey": "corpus-ppl-fula-organisation",
       "title": "EthniAfrica — fiche du peuple Fula, organisation clanique",
       "url": null,
       "tier": "unverified",

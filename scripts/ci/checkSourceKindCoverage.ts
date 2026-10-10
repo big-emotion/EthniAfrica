@@ -22,9 +22,11 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * Measured 2026-10-10, after the long-tail hosts, the social-media posts and
  * the census and publisher titles were typed (ETNI-2007). 1064 -> 1061 the
  * same day: three untyped citations left with the duplicate people fiches
- * folded into their keepers.
+ * folded into their keepers. 1061 -> 1057 on 2026-10-11: four untyped citations
+ * left with the fifteen duplicate people fiches folded that day, and a fifth,
+ * African Voice, was typed as press when it moved to PPL_FULA.
  */
-export const UNTYPED_SOURCE_RATCHET = 1061;
+export const UNTYPED_SOURCE_RATCHET = 1056;
 
 export interface UntypedSource {
   file: string;

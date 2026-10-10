@@ -70,7 +70,11 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 769 -> 755 on 2026-10-10: fourteen duplicate people fiches folded into their keepers
     // (Sotho, Tswana, Zulu, Xhosa, Ashanti, Dagaaba, Kongo, Umbundu, Tonga, Hutu,
     // Swahili, Brong) through the retired-identifiers ledger.
-    value: 755,
+    // 755 -> 740 on 2026-10-11: fifteen duplicate people fiches folded into their
+    // keepers (Lango, Gurma, Fula of the forest, Kikongo, two Ndebele, Northern
+    // Sotho, Tshokwe, Karanga, two Yao, two Lomwe, Kirundi Tutsi, Luo) through the
+    // retired-identifiers ledger.
+    value: 740,
     method: `nombre de fichiers ${PEOPLE_GLOB}`,
     countedOn: COUNTED_ON,
   },
@@ -85,7 +89,11 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 3116 -> 3079 on 2026-10-10: fourteen duplicate people fiches folded into their keepers: their
     // exonyms left with them, those only they held were carried over, and
     // PPL_KHOE_MACRO gave up Khoikhoi and Hottentot to PPL_KHOIKHOI, which has them.
-    value: 3079,
+    // 3079 -> 3031 on 2026-10-11: fifteen duplicate people fiches folded into their
+    // keepers: their exonyms left with them, and those only they held were carried
+    // over (« Fulbe ladde » to the nomadic Fulbe); Ga-Dangme, kept as a grouping,
+    // gave « Gan » back to the Ga.
+    value: 3031,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -105,7 +113,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // independent peoples; it now declares the absence with `null`, like the other
     // macro-group fiches.
     // 757 -> 743 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
-    value: 743,
+    // 743 -> 728 on 2026-10-11: fifteen duplicate people fiches folded into their
+    // keepers.
+    value: 728,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,
@@ -125,9 +135,11 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // merged into PPL_BISSA, which declares no status.
     // 442 -> 433 on 2026-10-10: fourteen duplicate people fiches folded into their keepers; PPL_BONO
     // took the retired Brong fiche's colonial-legacy status with its whyProblematic.
-    value: 433,
+    // 433 -> 422 on 2026-10-11: fifteen duplicate people fiches folded into their
+    // keepers; none of their statuses was carried.
+    value: 422,
     method:
-      "fiches dont classificationStatus vaut contested (249) ou colonial-legacy (184)",
+      "fiches dont classificationStatus vaut contested (247) ou colonial-legacy (175)",
     countedOn: COUNTED_ON,
   },
   "status-other": {
@@ -145,7 +157,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     label: "fiches ne déclarant aucun statut",
     // 309 -> 308 on 2026-10-03: PPL_BUSSA, which declared no status, was merged.
     // 308 -> 303 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
-    value: 303,
+    // 303 -> 299 on 2026-10-11: four of the fifteen folded duplicate fiches
+    // declared no status.
+    value: 299,
     method: "fiches sans classificationStatus",
     countedOn: COUNTED_ON,
   },
@@ -158,7 +172,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 243 -> 242 on 2026-10-07: PPL_HADZA no longer calls Kangeju colonial, which no source read says.
     // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
     // 236 -> 227 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
-    value: 227,
+    // 227 -> 221 on 2026-10-11: fifteen duplicate people fiches folded into their
+    // keepers.
+    value: 221,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -180,7 +196,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // administrators" heard the greeting; its source gives missionaries in one
     // account and the British in a variant, so the sentence follows the source.
     // 181 -> 177 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
-    value: 177,
+    // 177 -> 175 on 2026-10-11: fifteen duplicate people fiches folded into their
+    // keepers.
+    value: 175,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -197,7 +215,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // French took « bété » from the English.
     // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
     // 120 -> 119 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
-    value: 119,
+    // 119 -> 118 on 2026-10-11: fifteen duplicate people fiches folded into their
+    // keepers.
+    value: 118,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -209,7 +229,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 112 -> 113 on 2026-10-07: PPL_BETE now says the Gouro called their southern neighbours Tshien (Dozon 1985, p. 45).
     // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
     // 114 -> 113 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
-    value: 113,
+    // 113 -> 112 on 2026-10-11: fifteen duplicate people fiches folded into their
+    // keepers.
+    value: 112,
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -217,7 +239,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-portuguese",
     label: "fiches employant « portugais »",
-    value: 83,
+    // 83 -> 79 on 2026-10-11: fifteen duplicate people fiches folded into their
+    // keepers.
+    value: 79,
     method: "radical portugais dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -228,7 +252,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
       "fiches contenant les mots recherchés pour repérer les noms méprisants",
     // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
     // 60 -> 59 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
-    value: 59,
+    // 59 -> 58 on 2026-10-11: fifteen duplicate people fiches folded into their
+    // keepers.
+    value: 58,
     method: `radicaux ${PEJORATIVE_STEMS.join(", ")} dans originOfExonyms + whyProblematic`,
     countedOn: "2026-10-09",
   },
@@ -246,7 +272,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     figureKey: "probe-swahili",
     label: "fiches employant « swahili »",
     // 68 -> 66 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
-    value: 66,
+    // 66 -> 63 on 2026-10-11: fifteen duplicate people fiches folded into their
+    // keepers.
+    value: 63,
     method: "radical swahili dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -263,7 +291,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "probe-missionary",
     label: "fiches employant le radical « missionn- »",
-    value: 26,
+    // 26 -> 25 on 2026-10-11: fifteen duplicate people fiches folded into their
+    // keepers.
+    value: 25,
     method: "radical missionn dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },

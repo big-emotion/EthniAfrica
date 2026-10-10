@@ -26,7 +26,9 @@
       "Lomwe du Malawi (Chilomwe) — etablis principalement dans les districts de Mulanje, Phalombe, Thyolo, Chiradzulu et Zomba",
       "Lomwe de Milange — sous-groupe de la region de Milange (Zambezia, Mozambique), proches du Malawi",
       "Lomwe de Ile — sous-groupe du district de Ile (Zambezia, Mozambique)",
-      "Alomwe du sud du Malawi — etablis dans la zone lakeshore et le Shire Highlands"
+      "Alomwe du sud du Malawi — etablis dans la zone lakeshore et le Shire Highlands",
+      "Lomwe du centre de la Zambézie — districts d'Ile, de Pebane et de Morrumbala",
+      "Lomwe de Gurue — communautés des monts Namuli et du district de Gurue (Zambézie)"
     ],
     "origins": {
       "ancientOrigins": "Les Lomwe sont un peuple bantou appartenant au sous-groupe Makhuwa-Lomwe. Certaines etudes avancent que ce groupe est l'une des plus anciennes populations bantoues de cette partie de l'Afrique australe. Les Lomwe partagent une origine commune avec les Makua (Makhuwa), dont ils sont probablement issus ou avec qui ils forment une branche divergente. La langue et l'organisation sociale matrilineaire des Lomwe attestent d'une longue presence dans les plaines cotieres et les plateaux entre la Zambezia, Nampula et les abords du lac Malawi.",
@@ -35,13 +37,18 @@
         "Migration ancestrale est-ouest depuis le Mozambique (Zambezia, Nampula) vers le Malawi meridional (Mulanje, Phalombe, Thyolo)",
         "Grande vague migratoire vers le Malawi dans la seconde moitie du 19e siecle, avant l'arrivee des colons",
         "Vague migratoire des annees 1930 fuyant les guerres tribales au Mozambique",
-        "Migrations liees a la guerre civile mozambicaine (1977-1992), avec retours progressifs apres la stabilisation"
+        "Migrations liees a la guerre civile mozambicaine (1977-1992), avec retours progressifs apres la stabilisation",
+        "Migrations internes entre les districts de la Zambézie et vers le sud de la province de Nampula",
+        "Traversée du massif de Mulanje, frontière naturelle entre la Zambézie et les hauts plateaux de la Shire",
+        "Départs saisonniers ou définitifs vers les plantations de thé des hauts plateaux de la Shire (XIXe et XXe siècles)"
       ],
       "historicalSettlementZones": [
         "Province de Zambezia (Mozambique) — coeur historique du peuplement lomwe au Mozambique",
         "Province de Nampula (Mozambique) — parties meridionales",
         "Shire Highlands et sud du Malawi — districts de Mulanje, Phalombe, Thyolo, Chiradzulu, Zomba",
-        "District de Liwonde et alentours (Malawi meridional)"
+        "District de Liwonde et alentours (Malawi meridional)",
+        "Contreforts des monts Namuli (Gurue, Zambézie)",
+        "Abords de Blantyre — présence urbaine importante"
       ],
       "unificationsOrDivisions": "Les Lomwe partagent avec les Makua (Makhuwa) les memes lignages familiaux (mahimo) presents sur tout leur territoire, attestant d'une proche parente. L'Ethnologue a scinde officiellement la langue lomwe en deux : Elomwe/Lomwe (ngl) pour le Mozambique et Lomwe, Malawi (lon) pour le Malawi, en raison de leur manque d'intelligibilite mutuelle. Les Lomwe du Malawi sont en voie de transition vers le chichewa, langue nationale malawite.",
       "externalInfluences": "Colonisation portugaise du Mozambique : la pression de l'expansion coloniale et du travail force (chibalo) poussa de nombreux Lomwe a migrer vers le Malawi britanique (Nyassaland). Colonisation britannique du Nyassaland (Malawi) : les Lomwe migrants furent employes dans les plantations de the des Shire Highlands. Mission des Universities en Afrique centrale (UMCA) a Magomero (1861) : les Lomwe furent parmi les premiers evangelises. Guerre civile mozambicaine (FRELIMO-RENAMO, 1977-1992) : nouvelles vagues migratoires vers le Malawi.",
@@ -60,7 +67,12 @@
       "dialects": [
         "Elomwe (ngl) — variete du Mozambique, langue maternelle principale des Lomwe mozambicains, ecrite en alphabet romain",
         "Lomwe, Malawi (lon) — variete du Malawi, non mutuellement intelligible avec l'Elomwe; de moins en moins utilisee, les locuteurs (surtout anciens) passant au chichewa",
-        "Variete de Milange — sous-dialecte de Zambezia proche des parlers lomwe du Malawi"
+        "Variete de Milange — sous-dialecte de Zambezia proche des parlers lomwe du Malawi",
+        "Elomwe de Gurue — parler des hauts plateaux des monts Namuli",
+        "Elomwe du sud de Nampula — parler proche du makhuwa voisin",
+        "Chilomwe de Mulanje — proche des parlers de la Zambézie voisine (Mozambique)",
+        "Chilomwe de Phalombe — parler du centre du pays lomwe au Malawi",
+        "Chilomwe de Thyolo et de Chiradzulu — marqué par le chichewa voisin"
       ],
       "vehicularRole": "En Mozambique, l'Elomwe est la langue maternelle de la communaute lomwe dans les provinces de Zambezia et Nampula. Le portugais est la langue officielle et vehiculaire nationale. Au Malawi, le Chilomwe recede au profit du chichewa (langue nationale officielle depuis 1968). L'anglais est officiel au Malawi. Les Lomwe du Malawi ont generalement le chichewa comme premiere ou deuxieme langue. L'Ethnologue a separe les deux varietes en 2005. Le NT de la Bible est disponible en lomwe (traduit en 1931)."
     },
@@ -134,6 +146,35 @@
         "title": "Maputo Essential Tours — Mozambique Ethnic Groups",
         "url": "https://www.maputoessentialtours.com/general-4",
         "tier": "unverified"
+      },
+      {
+        "title": "INE Mozambique — IV Recensement General de la Population et de l'Habitat 2017",
+        "url": "https://www.ine.gov.mz/en/censo-2017/",
+        "tier": "official",
+        "source_kind": "official_statistics"
+      },
+      {
+        "title": "GHDx — Mozambique Population and Housing Census 2017",
+        "url": "https://ghdx.healthdata.org/record/mozambique-population-and-housing-census-2017",
+        "tier": "referenced"
+      },
+      {
+        "title": "Public Intelligence — Mozambique Country Handbook (MCIA)",
+        "url": "https://info.publicintelligence.net/MCIA-MozambiqueHandbook.pdf",
+        "tier": "unverified",
+        "source_kind": "government"
+      },
+      {
+        "title": "101 Last Tribes — Lomwe people",
+        "url": "https://www.101lasttribes.com/tribes/lomwe.html",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "Facebook / Kamba Cultural Center — Lomwe tribe origins and culture",
+        "url": "https://www.facebook.com/groups/kambaculturalcenter/posts/10152471646389977/",
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   },
@@ -177,6 +218,27 @@
                 "source_kind": "academic",
                 "page": "p. 167",
                 "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur. Page 167 : l'immigration au Nyasaland de groupes venus du Mozambique commence en 1895 ; ils parlent « Lomwe, Mpotola, and Mihavani, but nothing called 'Nguru' »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "statement": "Le nom Lomwe, Alomwe au pluriel, désigne au Malawi les descendants des migrants venus du Mozambique, surtout dans les Shire Highlands, au sud du pays. Ils parlaient plusieurs langues, le lomwe, le mpotola ou le mihavani, et aucune ne s'appelait nguru, selon Leroy Vail et Landeg White.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 167",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
               }
             ]
           },
@@ -232,6 +294,33 @@
           },
           {
             "period": {
+              "from": null,
+              "to": null,
+              "label": "Années 1940"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lomwe est porté par Lewis Mataka Bandawe, qui parle d'une « puissante tribu lomwe » dont tous les groupes regardent les monts Namuli, au Mozambique, comme leur foyer d'origine, selon Leroy Vail et Landeg White.",
+            "actors": [
+              {
+                "name": "Lewis Mataka Bandawe",
+                "role": "porte ce nom dans le débat public"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1943,
               "to": 1943,
               "label": "1943"
@@ -255,6 +344,27 @@
                 "source_kind": "academic",
                 "page": "p. 172-173",
                 "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur. Pages 172-173 : en 1943, Bandawe fonde l'Alomwe Tribal Representative Association, qui obtient que le mot « Anguru » soit banni des documents officiels et remplacé par « Lomwe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "1966"
+            },
+            "era": "modern",
+            "statement": "Le nom Lomwe recule au recensement de 1966 : beaucoup de ceux qu'on appelait Nguru ou Lomwe se déclarent alors Chewa, alliés du président Hastings Kamuzu Banda, selon Leroy Vail et Landeg White.",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 180",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
               }
             ]
           }
@@ -316,6 +426,71 @@
                 "source_kind": "academic",
                 "page": "p. 167-172",
                 "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur. Pages 167-172 : l'immigration commence en 1895 ; les migrants ne parlent rien qui s'appelle « Nguru » ; le nom Anguru est jugé « only a fiction » et sert à prouver leur prétendue infériorité."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1943,
+              "label": "Usage décrit par les auteurs"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nguru, ou Anguru, désignait les migrants venus du Mozambique à partir de 1895 pour chercher des terres dans le sud du Nyasaland. Planteurs européens et chefs yao en firent une main-d'œuvre captive, selon Leroy Vail et Landeg White. Aucune de leurs langues ne s'appelait nguru.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 167-168",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1915,
+              "to": 1942,
+              "label": "De 1915 à 1942"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nguru devient une étiquette méprisante dans les écrits des administrateurs et dans la presse coloniale, qui opposent les « bons » Yao aux « mauvais » Nguru. Un officier juge même en 1936 que le nom Anguru n'est qu'une « fiction », selon Leroy Vail et Landeg White.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 169-172",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1943,
+              "to": 1943,
+              "label": "1943"
+            },
+            "era": "colonial",
+            "statement": "Le nom Anguru est banni des documents officiels du Nyasaland à la demande de l'Alomwe Tribal Representative Association, qui le fait remplacer par Lomwe, selon Leroy Vail et Landeg White.",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172-173",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
               }
             ]
           }

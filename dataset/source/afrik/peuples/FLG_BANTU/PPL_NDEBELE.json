@@ -13,7 +13,10 @@
         "Amatabele",
         "Ndebele du Zimbabwe",
         "Ndebele du Nord",
-        "isiNdebele saseNyakatho"
+        "isiNdebele saseNyakatho",
+        "Northern Ndebele",
+        "Matebele",
+        "Tabele"
       ],
       "originOfExonyms": "Le terme Matabele (ou Amatabele) fut employe par les Sotho-Tswana voisins pour designer le groupe de Mzilikazi ; il voudrait dire les gens aux grands boucliers, en référence à leurs boucliers de guerre. Ce terme fut repris par les colons europeens et les Britanniques de la British South Africa Company.",
       "whyProblematic": "Le terme Matabele peut etre percu comme depreciatif par les Ndebele contemporains, qui preferent leur autodesignation AmaNdebele. La region appelee Matabeleland par les Europeens est designee Mthwakazi dans la tradition ndebele.",
@@ -28,7 +31,8 @@
       "Abezansi (Zoulou et Nguni absorbes lors de la migration)",
       "Abenhla (Sotho-Tswana et Ndebele du Sud assimiles)",
       "Amahole (Rozvi, Kalanga et autres groupes absorbes au Zimbabwe)",
-      "Descendants des Swazi, Pedi et BaHurutshe integres au royaume"
+      "Descendants des Swazi, Pedi et BaHurutshe integres au royaume",
+      "Amaveni (descendants de captifs intégrés à la nation ndebele)"
     ],
     "origins": {
       "ancientOrigins": "Les ancetres des Ndebele du Zimbabwe sont les Khumalo, un sous-groupe nguni du Zoulouland (actuelle province du KwaZulu-Natal, Afrique du Sud). La migration fondatrice fut initiee par Mzilikazi kaMashobane (vers 1790-1868) au debut du XIXe siecle, dans le contexte du Mfecane (guerres de dispersion zoulous sous Shaka).",
@@ -37,13 +41,18 @@
         "Zoulouland (KwaZulu-Natal) vers le nord-ouest",
         "Plateau du Transvaal (1823-1837) : Gauteng, Nord-Ouest, Limpopo actuels",
         "Traversee du Limpopo vers le plateau central du Zimbabwe (vers 1840)",
-        "Installation dans la region de Matabeleland Sud, puis expansion vers Bulawayo"
+        "Installation dans la region de Matabeleland Sud, puis expansion vers Bulawayo",
+        "Transvaal (1823-1836) : capitales successives à Kungwini (rivière Apies, au nord de Pretoria), Dinaneni (au nord du barrage de Hartbeespoort), Hlahlandlela (pays fokeng, Rustenburg) et Mosega (rivière Marico)",
+        "Raids et contre-raids avec les Boers et les Zoulous (1832-1837) : défaites de Vegkop (1836) et de Mosega (1837), puis retraite par le Botswana"
       ],
       "historicalSettlementZones": [
         "Zoulouland (origines, avant 1823)",
         "Plateau du Transvaal : Pretoria, Rustenburg, Marico (1823-1837)",
         "Matabeleland Sud et central, Zimbabwe (apres 1840)",
-        "Bulawayo et ses environs (capitale du royaume Mthwakazi)"
+        "Bulawayo et ses environs (capitale du royaume Mthwakazi)",
+        "Matabeleland Nord (Bulawayo, Hwange, Victoria Falls)",
+        "Matabeleland Sud (Gwanda, Beitbridge)",
+        "Midlands, zone de contact avec les peuples shona"
       ],
       "unificationsOrDivisions": "Mzilikazi constitua une nation diverse en absorbant des populations Rozvi, Kalanga, Sotho-Tswana, Ndebele du Sud et Swazi. Il appela sa nation Mthwakazi. A sa mort (1868), son fils Lobengula lui succeda. Les conflits de succession faillirent diviser le royaume, mais Lobengula s'imposa. La defaite lors de la Premiere Guerre des Matabele (1893) mit fin au royaume independant.",
       "externalInfluences": "Influence nguni (systeme zoulou des regiments-ibutho) sur l'organisation militaire. Concession Rudd de 1888 : Lobengula accorda des droits miniers a Cecil Rhodes, ouvrant la voie a la colonisation britannique par la British South Africa Company (BSAC). Christianisme introduit progressivement par les missionnaires depuis la fin du XIXe siecle.",
@@ -51,7 +60,7 @@
     },
     "organization": {
       "traditionalPoliticalSystem": "Monarchie militaire centralisee modelee sur le systeme zoulou de Shaka. Le roi (inkosi enkulu) exercait une autorite absolue sur ses sujets. Le royaume Mthwakazi etait organise en villes-regiments (amakhanda) dont la capitale etait Bulawayo (koBulawayo). Les sujets soumis (Rozvi, Kalanga, Sotho) devaient tribut et etaient soumis a des raids periodiques.",
-      "clanOrganization": "Organisation en trois strates sociales issues de la migration : les Abezansi (aristocratie nguni originelle de Mzilikazi), les Abenhla (groupes assimiles au Transvaal) et les Amahole (populations locales zimbabweennes soumises). Les Khumalo constituent le clan royal.",
+      "clanOrganization": "Organisation en trois strates sociales issues de la migration : les Abezansi (aristocratie nguni originelle de Mzilikazi), les Abenhla (groupes assimiles au Transvaal) et les Amahole (populations locales zimbabweennes soumises). Les Khumalo constituent le clan royal. Les izibongo (noms de clans et chants de louange) structurent l'identité clanique. Les principaux clans nguni sont les Khumalo (clan royal), Mthethwa, Nxumalo, Ndlovu, Dlomo, Sibanda et Mpofu.",
       "ageClassSystems": "Systeme de regiments (amabutho), inspire de Shaka : les jeunes hommes etaient incorpores dans des regiments nommes bases dans les amakhanda (villes militaires). Ce systeme regissait la vie militaire, sociale et economique du royaume.",
       "roleOfLineages": "Les lignages patrilineaires determinent l'appartenance sociale et le statut. L'appartenance aux Abezansi confere un statut superieur. Les pratiques d'absorption et d'assimilation des groupes conquis ont cree une societe composite.",
       "religiousAuthority": "Autorite spirituelle exercee par les dingaka (devins et guerisseurs) et par les intermediaires du culte des ancetres royaux (umlimo ou Mlimo). Le Mlimo, oracle associe aux Matobo Hills, jouait un role crucial dans la resistance (Deuxieme Guerre des Matabele). Depuis la fin du XIXe siecle, le christianisme (presbyterien, catholique, evangelique) est tres repandu."
@@ -81,7 +90,7 @@
     "demography": {
       "totalPopulation": 2200000,
       "referenceYear": 2025,
-      "source": "Recensement zimbabween de 2022 (ZIMSTAT) : population totale de 15 178 979. Les Ndebele representent environ 14% de la population (etudes demographiques historiques). Ethnologue (nde) : locuteurs de l'isiNdebele au Zimbabwe. Estimation 2025 : entre 2 et 2,5 millions de locuteurs et apparentes. UNFPA Zimbabwe : https://zimbabwe.unfpa.org/en/publications/2022-population-and-housing-census-preliminary-results",
+      "source": "Recensement zimbabween de 2022 (ZIMSTAT) : population totale de 15 178 979. Les Ndebele representent environ 14% de la population (etudes demographiques historiques). Ethnologue (nde) : locuteurs de l'isiNdebele au Zimbabwe. Estimation 2025 : entre 2 et 2,5 millions de locuteurs et apparentes. UNFPA Zimbabwe : https://zimbabwe.unfpa.org/en/publications/2022-population-and-housing-census-preliminary-results Deux autres estimations donnent 2 900 000 personnes (Wikipédia, estimation de 2023 : 2 800 000 au Zimbabwe, 50 000 au Botswana et 50 000 en Afrique du Sud) et 2 600 000 personnes (locuteurs natifs de l'isiNdebele en 2023 : 2 400 000 au Zimbabwe, 150 000 au Botswana et 50 000 en Afrique du Sud). Les sources lues ne permettent pas de choisir entre ces chiffres.",
       "distributionByCountry": [
         {
           "country": "ZWE",
@@ -124,6 +133,42 @@
         "title": "Africa Federation – The History of Matabeleland",
         "url": "http://www.africafederation.net/Matabeleland_History.htm",
         "tier": "unverified"
+      },
+      {
+        "title": "Encyclopaedia Britannica — Ndebele (Zimbabwean people)",
+        "url": "https://www.britannica.com/topic/Ndebele-Zimbabwean-people",
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Encyclopaedia Britannica — Lobengula",
+        "url": "https://www.britannica.com/biography/Lobengula",
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "South African History Online — Ndebele",
+        "url": "https://sahistory.org.za/article/ndebele",
+        "tier": "referenced",
+        "source_kind": "repository"
+      },
+      {
+        "title": "EBSCO Research Starters — Lobengula",
+        "url": "https://www.ebsco.com/research-starters/history/lobengula",
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Joshua Project — Ndebele, Tabele in Zimbabwe",
+        "url": "https://joshuaproject.net/people_groups/13275/ZI",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "South African History Online — Mfecane",
+        "url": "https://sahistory.org.za/article/mfecane-understanding-period-transformation-southern-africa",
+        "tier": "referenced",
+        "source_kind": "repository"
       }
     ]
   },

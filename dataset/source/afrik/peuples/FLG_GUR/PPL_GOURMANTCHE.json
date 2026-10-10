@@ -15,19 +15,29 @@
         "Gourmantche",
         "Gulimancema",
         "Bigulimanceba",
-        "Migulimancema"
+        "Migulimancema",
+        "Gurmanche"
       ],
       "originOfExonyms": "Le terme Gourmantché est la transcription française du nom que les voisins Mossi donnaient à ce peuple. Les locuteurs se désignent eux-mêmes par le terme Gulmanceba (singulier : Gulimance), qui désigne à la fois le peuple et sa langue. Le nom viendrait du royaume du Gulma (Gulmu), territoire historique centré sur Fada N'Gourma.",
       "whyProblematic": "Gourmantché est parfois confondu avec Gurma, employé en anglais, ou Gourma, employé par l'administration burkinabè. Ces formes viennent des manières française et britannique d'écrire le nom à l'époque coloniale. Elles ne correspondent pas à un nom unique employé durablement par le peuple lui-même.",
       "contemporaryUsage": "En usage officiel au Burkina Faso, au Togo et au Bénin sous la forme Gourmantché ou Gourma. La langue est désignée Gourmanchéma ou Gulmancema dans les publications linguistiques et éducatives. L'appellation Gurma est courante dans la littérature anglophone."
     },
-    "ethnicities": ["Gourmantché", "Gurma"],
+    "ethnicities": [
+      "Gourmantché",
+      "Gurma",
+      "Gurma du Burkina Faso (est du pays, autour de Fada N'Gourma, centre du groupe)",
+      "Gurma du Niger (sud-ouest du Niger, abords du parc du W)",
+      "Gurma du Togo (nord du Togo, région des Savanes)",
+      "Gurma du Bénin (nord du Bénin, départements de l'Alibori et de l'Atacora)"
+    ],
     "origins": {
       "ancientOrigins": "Le peuple Gourmantché est associé au royaume du Gulma (Gulmu), dont la fondation légendaire remonte à plusieurs siècles avant la colonisation européenne. La tradition orale rapporte que le fondateur de Fada N'Gourma (Bengu) fut Yendabri, quatorzième souverain Gourmantché. Fada N'Gourma est appelée Bengu par les Mossi, signifiant 'terre des Bemba'.",
       "formationPeriod": "Le royaume du Gulma se consolide entre le XVe et le XVIIe siècle comme confédération de royaumes (Diema) dans l'est de l'actuel Burkina Faso. La succession au trône impliquait un collège électoral composé de Kombali (chefs de cantons), choisi parmi les descendants de Diaba Lompo.",
       "migrationRoutes": [
         "Peuplement originel du bassin du fleuve Volta dans l'est du Burkina Faso",
-        "Extension progressive vers le nord du Togo (région des Savanes), le nord-ouest du Bénin (Atakora et Alibori) et le sud-ouest du Niger (Tillabéri)"
+        "Extension progressive vers le nord du Togo (région des Savanes), le nord-ouest du Bénin (Atakora et Alibori) et le sud-ouest du Niger (Tillabéri)",
+        "Migration depuis l'escarpement de Gambaga (nord-est du Ghana) vers le nord-est, jusqu'à Fada N'Gourma (Burkina Faso)",
+        "Migrations saisonnières vers les régions côtières d'Afrique de l'Ouest pour le travail"
       ],
       "historicalSettlementZones": [
         "Est du Burkina Faso, région de Fada N'Gourma (centre historique du Gulma)",
@@ -72,7 +82,7 @@
     "demography": {
       "totalPopulation": 1805000,
       "referenceYear": 2025,
-      "source": "Joshua Project – Gourma people group in all countries (2025)",
+      "source": "Joshua Project – Gourma people group in all countries (2025) Une autre estimation donne 3 500 000 personnes en 2025 (Peoplegroups.org, 3 414 500 répartis entre le Ghana, le Bénin, le Burkina Faso, le Niger, le Nigeria et le Togo ; Wikipédia, d'après les recensements de 2021 : 1 845 255 au Ghana, 1 496 786 au Burkina Faso et 188 846 au Niger). Les sources lues ne permettent pas de choisir entre ces chiffres.",
       "distributionByCountry": [
         {
           "country": "BFA",
@@ -136,6 +146,35 @@
         "title": "Gourmantché Ethnoanthropology: A Theory of Human Being – Swanson R. A., 1985",
         "url": null,
         "tier": "needs_review"
+      },
+      {
+        "title": "Britannica — Gurma",
+        "url": "https://www.britannica.com/topic/Gurma",
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "101lasttribes — Gurma people",
+        "url": "https://www.101lasttribes.com/tribes/gurma.html",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "Salif Titamba Lankoande — Les Gourmantché. Presses Africaines du Burkina, Ouagadougou, 2006",
+        "url": null,
+        "tier": "referenced"
+      },
+      {
+        "title": "João Pedro Galhano Alves — Anthropologie et écosystèmes au Niger. Humains, lions et esprits de la forêt dans la culture gourmantché. Editions l'Harmattan, Paris, 2012",
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Qiraat Africa — The Gurma people of West Africa",
+        "url": "https://qiraatafrican.com/en/18718/the-gurma-people-of-west-africa/",
+        "tier": "unverified",
+        "source_kind": "press"
       }
     ]
   },

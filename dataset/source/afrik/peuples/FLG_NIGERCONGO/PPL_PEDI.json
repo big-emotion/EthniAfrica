@@ -14,7 +14,8 @@
         "Basotho ba Lebowa (designation de l'apartheid)",
         "Transvaal Sotho",
         "Marota",
-        "Dikgoshi"
+        "Dikgoshi",
+        "Sepedi"
       ],
       "originOfExonyms": "Le terme 'Pedi' designe a la fois le clan royal Maroteng et par extension le grand ensemble linguistique sotho du nord. Durant la colonisation, l'administration britannique et boere a utilise 'Northern Sotho' pour regrouper une trentaine de dialectes distincts sous une meme etiquette administrative. Le terme 'Basotho ba Lebowa' deriverait du homeland de Lebowa cree sous l'apartheid en 1972.",
       "whyProblematic": "L'appellation 'Pedi' est ambigue : elle renvoie tantot au clan royal Maroteng (sens etroit), tantot a l'ensemble des 27-30 dialectes Sesotho sa Leboa (sens large). L'assimilation de 'Sepedi' a 'Northern Sotho' dans la constitution sud-africaine de 1994 a efface les identites de nombreux groupes dialectaux tels que les Lobedu, Birwa ou Hananwa.",
@@ -35,7 +36,9 @@
       "Lobedu (Balobedu) — sous-groupe matrilineaire connu pour la reine de la pluie Modjadji",
       "Tlokwa — groupe dialectal reconnu",
       "Hananwa — groupe establi dans les montagnes Blouberg",
-      "Birwa — groupe situe a la frontiere botswanaise"
+      "Birwa — groupe situe a la frontiere botswanaise",
+      "Baphalaborwa (Malatji) — région de Phalaborwa, mineurs et fondeurs de métal",
+      "Pulana (Bapulana) — région de Bushbuckridge ; parler sepulana"
     ],
     "origins": {
       "ancientOrigins": "Les Bapedi descendent des Bantous Sotho-Tswana qui ont migre depuis l'Afrique orientale (region des Grands Lacs) vers l'Afrique du Sud en plusieurs vagues successives sur cinq siecles, au plus tard au 7e siecle de l'ere commune. Leurs ancetres communs avec les Sotho du Sud et les Tswana ont suivi la route du Zimbabwe occidental. Les Maroteng, sous-groupe des Kgatla (eux-memes Tswana), se sont separes et ont migre vers l'est pour s'etablir vers 1650 au sud de la riviere Steelpoort. La tradition orale attribue la fondation du clan a un ancetre nomme Thobele, dont les descendants ont progressivement etendu leur autorite sur les groupes voisins.",
@@ -44,14 +47,19 @@
         "Afrique orientale (region des Grands Lacs) vers le Zimbabwe occidental — migration proto-Sotho en vagues du 2e au 7e siecle",
         "Zimbabwe occidental vers l'est du Transvaal — les derniers groupes Sotho, dont les Hurutse, s'etablissent a l'ouest de Gauteng vers le 16e siecle",
         "Separation des Maroteng (Kgatla) : migration vers l'est, etablissement entre Olifants et Steelpoort vers 1650",
-        "Expansion du royaume Pedi sous Thulare (vers 1780-1820) jusqu'au Vaal et au Limpopo"
+        "Expansion du royaume Pedi sous Thulare (vers 1780-1820) jusqu'au Vaal et au Limpopo",
+        "Migrations de travail vers les mines de Kimberley (1867) et du Rand (1886)"
       ],
       "historicalSettlementZones": [
         "Sekhukhuneland — entre les rivieres Olifants et Steelpoort, actuel district de Sekhukhune (Limpopo)",
         "Province de Limpopo, notamment les arrondissements de Sekhukhune, Mopani, Capricorn",
         "Province de Gauteng (migration urbaine et miniere depuis le 19e siecle)",
         "Mpumalanga du Nord",
-        "Homeland de Lebowa (1972-1994, apartheid) — reconstitution administrative du territoire historique"
+        "Homeland de Lebowa (1972-1994, apartheid) — reconstitution administrative du territoire historique",
+        "Monts Leolo (Limpopo) — forteresses naturelles de Sekhukhune I",
+        "Greater Tzaneen (Lobedu, lowveld)",
+        "Phalaborwa (Malatji, mineurs du cuivre)",
+        "Bushbuckridge (Pulana)"
       ],
       "unificationsOrDivisions": "Le royaume Pedi (Marota) s'est constitue par l'integration progressive de chefferies voisines sous la dynaste Maroteng aux 18e-19e siecles. La technique d'integration privilegiait les mariages consanguins : les fils de chefs subordonnes devaient epouser des cousines de la maison royale, creant un reseau d'obligations. Apres la defaite de 1879 face aux Britanniques et l'assassinat de Sekhukhune I en 1882, le royaume a eclate. L'apartheid a reconstitue artificiellement l'identite pedi dans le cadre du homeland de Lebowa, avant la reintegration dans une Afrique du Sud democratique en 1994.",
       "externalInfluences": "Chocs du Mfecane (annees 1820) : invasion des Ndwandwe (Ndebele du Nord sous Mzilikazi) et raids des Swazis ont ebranle la puissance pedi. Contacts avec les missionnaires lutheriens alemands (Alexander Merensky, 1860s), qui ont introduit l'ecriture et contribue a la standardisation du Sepedi. Colonisation boere (Republique sud-africaine du Transvaal) et annexion britannique (1877). Apartheid (1948-1994) : creation du homeland de Lebowa. Migration vers les mines de Kimberley et le Witwatersrand depuis la fin du 19e siecle.",
@@ -76,7 +84,10 @@
         "Sehananwa — dialecte des Hananwa (region de Blouberg)",
         "Setlokwa — dialecte des Tlokwa",
         "Sebirwa — dialecte des Birwa (frontiere botswanaise)",
-        "Semamabolo — dialecte des Mamabolo"
+        "Semamabolo — dialecte des Mamabolo",
+        "Sepulana — parlé à Bushbuckridge, dans le lowveld",
+        "Phalaborwa (Malatji) — parler du nord-est du Limpopo",
+        "Sotho de Pretoria — parler urbain mêlé de zoulou et de fanagalo"
       ],
       "vehicularRole": "Sesotho sa Leboa (Sepedi officiel) est l'une des 12 langues officielles de l'Afrique du Sud depuis la constitution de 1994. Il est langue d'enseignement dans les provinces de Limpopo et partiellement Gauteng et Mpumalanga. Avec environ 4,6 millions de locuteurs natifs (recensement 2011), c'est la quatrieme langue maternelle du pays. Le Sesotho sa Leboa joue un role vehiculaire dans le Limpopo ou il est compris par la majorite de la population. L'anglais est utilise dans les contextes formels et educatifs."
     },
@@ -95,7 +106,7 @@
     "demography": {
       "totalPopulation": 4600000,
       "referenceYear": 2025,
-      "source": "Statistics South Africa, Census 2011 (4,208,980 locuteurs Sesotho sa Leboa) ; projections 2025 basees sur le taux de croissance de la population sud-africaine. Ethnologue SIL (langue nso). Les chiffres englobent les locuteurs de Sesotho sa Leboa dans son ensemble, dont les Pedi au sens strict representent le groupe le plus important.",
+      "source": "Statistics South Africa, Census 2011 (4,208,980 locuteurs Sesotho sa Leboa) ; projections 2025 basees sur le taux de croissance de la population sud-africaine. Ethnologue SIL (langue nso). Les chiffres englobent les locuteurs de Sesotho sa Leboa dans son ensemble, dont les Pedi au sens strict representent le groupe le plus important. Une autre estimation donne 6 000 000 personnes en Afrique du Sud (recensement de 2022 : 5 970 000 locuteurs du sepedi, 10 % de la population ; PeopleGroups.org compte 4 240 000 Sotho du Nord). Les sources lues ne permettent pas de choisir entre ces chiffres.",
       "distributionByCountry": [
         {
           "country": "ZAF",
@@ -165,6 +176,41 @@
         "url": "https://www.statssa.gov.za/census/census_2011/",
         "tier": "official",
         "source_kind": "official_statistics"
+      },
+      {
+        "title": "Statistics South Africa — Census 2022 Cultural Dynamics (mars 2025)",
+        "url": "https://www.statssa.gov.za",
+        "tier": "official",
+        "source_kind": "official_statistics"
+      },
+      {
+        "title": "South Africa Gateway (Mary Alexander) — The languages of South Africa",
+        "url": "https://southafrica-info.com/arts-culture/the-languages-of-south-africa/",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "PeopleGroups.org — Northern Sotho of South Africa",
+        "url": "https://peoplegroups.org/people_groups/pg033365/",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Monnig, H.O. — The Pedi. Pretoria: Van Schaik, 1967",
+        "url": null,
+        "tier": "referenced"
+      },
+      {
+        "title": "Delius, Peter — The Land Belongs to Us: The Pedi Polity, the Boers and the British in the Nineteenth-Century Transvaal. Berkeley: University of California Press, 1984",
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Qiraat Africa — Pedi people of South Africa (2024)",
+        "url": "https://qiraatafrican.com/en/14630/pedi-people-of-south-africa/",
+        "tier": "unverified",
+        "source_kind": "press"
       }
     ]
   },

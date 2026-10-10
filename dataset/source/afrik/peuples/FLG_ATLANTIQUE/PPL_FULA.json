@@ -14,7 +14,9 @@
     "SDN",
     "CAF",
     "MRT",
-    "SLE"
+    "SLE",
+    "CIV",
+    "GAB"
   ],
   "classificationStatus": "colonial-legacy",
   "content": {
@@ -72,7 +74,9 @@
         "SDN",
         "CAF",
         "MRT",
-        "SLE"
+        "SLE",
+        "CIV",
+        "GAB"
       ]
     },
     "ethnicities": [
@@ -86,7 +90,11 @@
       "Fulbe Massina (MLI) — habitants du delta interieur du Niger",
       "Fulbe Fuladu (SEN, GNB, GMB) — groupe de transition occidental",
       "Fulbe Jelgooji — pasteurs semi-nomades (Mali, Burkina Faso, Niger)",
-      "Fulbe Futa Toro / Haalpulaar'en (vallee du Senegal; createurs de l'Almamat de Futa Toro, 1769-1776)"
+      "Fulbe Futa Toro / Haalpulaar'en (vallee du Senegal; createurs de l'Almamat de Futa Toro, 1769-1776)",
+      "Fulbe Kpele, Peuls de Guinée forestière (région de Nzérékoré, GIN), en partie sédentarisés",
+      "Fulbe du nord de la Côte d'Ivoire (région des Savanes, lisière de la forêt)",
+      "Fulbe Mbororo de la lisière forestière du sud du Cameroun (éleveurs venus de l'Adamaoua)",
+      "Fulbe du nord du Gabon (venus du Cameroun et de la Guinée)"
     ],
     "origins": {
       "ancientOrigins": "Les origines des Fula demeurent debattues. Les traditions orales evoquent une ascendance egyptienne ou proche-orientale; les preuves linguistiques pointent vers le Fouta Toro (vallee du fleuve Senegal). Leurs ancetres auraient migre du Sahara occidental (plus humide vers le VIIe siecle av. J.-C.) vers la vallee du Senegal, pousses par les raids berberes et la desertification progressive.",
@@ -98,7 +106,11 @@
         "Vers le Hausaland et Bornou — XVe siecle, flux constant",
         "Vers le Baghirmi — debut XVIe siecle",
         "Vers la vallee de la Benoue et l'Adamaoua — fin XVIIIe siecle",
-        "Vers le Soudan oriental (Fellata en route vers La Mecque) — XVIIIe-XIXe siecle"
+        "Vers le Soudan oriental (Fellata en route vers La Mecque) — XVIIIe-XIXe siecle",
+        "Du Fouta Djallon (centre de la Guinée) vers la Guinée forestière (région de Nzérékoré), vers le sud",
+        "De l'Adamaoua (Cameroun et Nigeria) vers la lisière forestière du sud du Cameroun",
+        "Du sud du Cameroun vers le nord du Gabon (migrations mbororo au XXe siècle)",
+        "Du Sahel malien vers les savanes du nord de la Côte d'Ivoire"
       ],
       "historicalSettlementZones": [
         "Fouta Toro (Senegal/Mauritanie meridionale) — zone originelle",
@@ -107,7 +119,11 @@
         "Hausaland (nord Nigeria/sud Niger) — emirats du Califat de Sokoto",
         "Adamaoua (Nigeria nord-est, Cameroun) — XIX siecle",
         "Bornou (Nigeria, Tchad, Niger) — a partir du XVe siecle",
-        "Kordofan et Darfour (Soudan) — Fellata, XIXe-XXe siecle"
+        "Kordofan et Darfour (Soudan) — Fellata, XIXe-XXe siecle",
+        "Guinée forestière (région administrative de Nzérékoré, GIN)",
+        "Savanes du nord de la Côte d'Ivoire (Korhogo, Odienné, Bondoukou)",
+        "Lisière forestière du sud du Cameroun et de l'Adamaoua",
+        "Nord du Gabon (Woleu-Ntem, frontière avec le Cameroun)"
       ],
       "unificationsOrDivisions": "Formation d'Etats theocratiques islamiques successifs : Bundu (1690), Fouta Djallon (XVIIIe siecle), Fouta Toro (1776), Califat de Sokoto (1804), Empire de Macina (1818), Empire toucouleur (El Hadj Oumar Tall). Diversification entre groupes sedentaires (Fulbe Wuro) et nomades (Mbororo). Maintien d'une identite culturelle et linguistique commune malgre la dispersion.",
       "externalInfluences": "Influence profonde de l'islam depuis le XIe siecle, avec role majeur dans les reseaux islamiques saheliens. Contacts intensifs avec les peuples mandé, haoussa, wolof, touareg. Presence de composantes genetiques ouest-africaines et nord-africaines/iberiques (admixture eurasienne de ~21%).",
@@ -115,7 +131,7 @@
     },
     "organization": {
       "traditionalPoliticalSystem": "Organisation en chefferies dirigees par des Ardo (chefs pastoraux) ou des Almami (chefs religieux-politiques). Les Etats theocratiques historiques (emirats, imamates, califats) sont structures selon la loi islamique malekite. Le code Pulaaku regle les comportements : Munyal (patience), Gacce (pudeur), Hakkille (sagesse et hospitalite), Sagata (courage).",
-      "clanOrganization": "Structure clanique patrilineaire. Hierarchie sociale en quatre categories : noblesse (Rimbe/Dimo, Fulbe de souche libre), artisans et griots (caste libre mais endogame), serviteurs et anciens captifs (Maccudo/Rimmayybe). Environ 50% des habitants de l'Adamaoua etaient de statut servile au XIXe siecle.",
+      "clanOrganization": "Structure clanique patrilineaire. Hierarchie sociale en quatre categories : noblesse (Rimbe/Dimo, Fulbe de souche libre), artisans et griots (caste libre mais endogame), serviteurs et anciens captifs (Maccudo/Rimmayybe). Environ 50% des habitants de l'Adamaoua etaient de statut servile au XIXe siecle. Les noms de famille (Diallo, Balde, Barry, Sow, Bah, Jallow) signalent les origines régionales et les lignages.",
       "ageClassSystems": "Classes d'age structurant les activites pastorales et militaires. Rites de passage masculins incluant l'epreuve du Sharo (fouet) chez certains groupes (Wodaabe), testant l'endurance et la dignite du jeune homme.",
       "roleOfLineages": "Lignages patrilineaires determinant l'identite, le statut social et les alliances matrimoniales. Endogamie privilegiee (cousins croises ou paralleles). La genealogie et les origines nobles (Torobe) sont centrales pour l'acces aux charges politiques et religieuses.",
       "religiousAuthority": "Autorite des oulemas (savants religieux) et des chefs religieux (Almami, imam). L'islam sunnite (majorita irement malekite) structure l'ensemble de la vie sociale. Grande tradition islamique savante, particulierement chez les Torobe (fondateurs de plusieurs jihads réformateurs)."
@@ -148,7 +164,7 @@
     "demography": {
       "totalPopulation": 40000000,
       "referenceYear": 2025,
-      "source": "Estimations agregees : Wikipedia (entre 25 et 40 millions), UNFPA Sahel, CIA World Factbook (profils nationaux), recensements nationaux. Projection 2025 estimee a 40 millions en incluant toutes les composantes (Torobe, Wodaabe, Mbororo, Toucouleur, etc.).",
+      "source": "Estimations agregees : Wikipedia (entre 25 et 40 millions), UNFPA Sahel, CIA World Factbook (profils nationaux), recensements nationaux. Projection 2025 estimee a 40 millions en incluant toutes les composantes (Torobe, Wodaabe, Mbororo, Toucouleur, etc.). Pour les seuls Fulbe des régions forestières, une autre estimation donne 2 000 000 personnes en 2025 : 1 200 000 en Guinée, 400 000 en Côte d'Ivoire, 300 000 au Cameroun et 100 000 au Gabon (part estimée à partir de Joshua Project, du CIA World Factbook et d'Ethnologue).",
       "distributionByCountry": [
         {
           "country": "NGA",
@@ -378,6 +394,42 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Texte lu directement (note 58 du chapitre 26) : la chronique emploie Fulan et note que cela reflète l'usage songhay ; les Fulani s'y disent Fulɓe, au singulier Pullo. La note 13 date la rédaction de 1653-1654 environ."
+      },
+      {
+        "title": "Joshua Project — Fulbe Futa in Guinea (population 4 979 000 GIN)",
+        "url": "https://joshuaproject.net/people_groups/11769/gv",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "African Voice Newspaper — The Fula of Guinea",
+        "url": "https://africanvoiceonline.co.uk/the-fula-of-guinea/",
+        "tier": "unverified",
+        "source_kind": "press"
+      },
+      {
+        "title": "SIL Ethnologue — Pular (fuf)",
+        "url": "https://www.ethnologue.com/language/fuf/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "SIL Ethnologue — Fulfulde Adamawa (fub)",
+        "url": "https://www.ethnologue.com/language/fub/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "CIA World Factbook — Guinea",
+        "url": "https://www.cia.gov/the-world-factbook/countries/guinea/",
+        "tier": "official",
+        "source_kind": "government"
+      },
+      {
+        "title": "CIA World Factbook — Cote d'Ivoire",
+        "url": "https://www.cia.gov/the-world-factbook/countries/cote-divoire/",
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   },

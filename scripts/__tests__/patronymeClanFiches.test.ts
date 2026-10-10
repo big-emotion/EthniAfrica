@@ -9,7 +9,7 @@ const EXPECTED = [
   ["PAT_TRAORE", "Traore", "PPL_BAMBARA", "patrilineal"],
   ["PAT_COULIBALY", "Coulibaly", "PPL_BAMBARA", "patrilineal"],
   ["PAT_KEITA", "Keïta", "PPL_MALINKE", "patrilineal"],
-  ["PAT_DIALLO", "Diallo", "PPL_FULA_FORET", "patrilineal"],
+  ["PAT_DIALLO", "Diallo", "PPL_FULA", "patrilineal"],
   ["PAT_BAMBA_CLAN", "Bamba", "PPL_DIOULA", "patrilineal"],
   ["PAT_CAMARA", "Camara", "PPL_VAI", "patrilineal"],
   ["PAT_KOUYATE", "Kouyate", "PPL_DIOULA", "patrilineal"],
@@ -19,12 +19,20 @@ const EXPECTED = [
   ["PAT_DOUMBIA", "Doumbia", "PPL_DIOULA", "patrilineal"],
   ["PAT_SOW", "Sow", "PPL_WOLOF", "patrilineal"],
   ["PAT_DUBE", "Dube", "PPL_NDAU_MOZ", "patrilineal"],
-  ["PAT_MTHETHWA", "Mthethwa", "PPL_NDEBELE_NORD", "patrilineal"],
-  ["PAT_NDLOVU", "Ndlovu", "PPL_NDEBELE_NORD", "patrilineal"],
-  ["PAT_NXUMALO", "Nxumalo", "PPL_NDEBELE_NORD", "patrilineal"],
-  ["PAT_SIBANDA", "Sibanda", "PPL_NDEBELE_NORD", "patrilineal"],
+  ["PAT_MTHETHWA", "Mthethwa", "PPL_NDEBELE", "patrilineal"],
+  ["PAT_NDLOVU", "Ndlovu", "PPL_NDEBELE", "patrilineal"],
+  ["PAT_NXUMALO", "Nxumalo", "PPL_NDEBELE", "patrilineal"],
+  ["PAT_SIBANDA", "Sibanda", "PPL_NDEBELE", "patrilineal"],
   ["PAT_DLAMINI_CLAN", "Dlamini", "PPL_SWAZI", "patrilineal"],
 ] as const;
+
+// The countries of the people fiche the coverage queue attested the name for.
+// That fiche, the Fula of the forest (GIN, CIV, CMR, GAB), was folded into
+// PPL_FULA on 2026-10-11; the keeper's wider spread (Niger, Nigeria, Chad,
+// Sudan, Central Africa) is not something any Diallo source here attests.
+const COUNTRY_FLOOR_OF_A_FOLDED_FICHE: Record<string, string[]> = {
+  PAT_DIALLO: ["GIN", "CIV", "CMR", "GAB"],
+};
 
 interface Source {
   sourceKey: string;
@@ -89,7 +97,9 @@ describe("ETNI-1684 first clan-name dossiers", () => {
         ({ countryId }: { countryId: string }) => countryId
       );
       expect(ficheCountries, `${id}: countries`).toEqual(
-        expect.arrayContaining(sourcePeople.currentCountries)
+        expect.arrayContaining(
+          COUNTRY_FLOOR_OF_A_FOLDED_FICHE[id] ?? sourcePeople.currentCountries
+        )
       );
       for (const country of raw.countries as Array<{
         countryId: string;

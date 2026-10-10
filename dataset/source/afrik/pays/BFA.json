@@ -791,7 +791,7 @@
           "name": "Autres peuples",
           "population": 2300000,
           "percentageInCountry": 10,
-          "peopleId": "PPL_GURMA",
+          "peopleId": null,
           "region": "Diverses régions du Burkina Faso",
           "languageFamily": "FLG_GUR"
         }
