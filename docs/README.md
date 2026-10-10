@@ -74,6 +74,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Runbook — Supabase restore](runbooks/restore-procedure.md)
 - [Runbook — bypassing the `revisions` append-only invariant](runbooks/revisions-dba-bypass.md)
 - [Runbook — secret exposure audit of the public history (2026-09-01)](runbooks/secret-exposure-audit-2026-09.md)
+- [Social production handoff — 11 October 2026](runbooks/social-production-handoff-2026-10-11.md)
 - [Runbook — V1 schema removal cutover (2026-05)](runbooks/v1-removal-cutover-2026-05.md)
 
 ## Decisions
