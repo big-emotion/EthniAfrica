@@ -155,6 +155,7 @@
               "to": 675,
               "label": "Vers 670"
             },
+            "era": "polity",
             "statement": "Avant le nom Tunisie, on parle d'Ifrīqiya, c'est-à-dire d'Afrique, pour désigner la première province musulmane d'Afrique du Nord, fondée avec la ville de Kairouan. Elle correspond alors à peu près à la Tunisie actuelle, selon l'historien Hussain Monès.",
             "before": true,
             "sources": [
@@ -187,6 +188,7 @@
               "to": 702,
               "label": "83 de l'hégire, 702"
             },
+            "era": "polity",
             "statement": "Le nom Tunis est celui d'un port que les conquérants arabes aménagent en 702, avec un chantier naval et un arsenal. Trente ans plus tard, le gouverneur du Maghreb en fait une grande cité, selon l'historien Hussain Monès.",
             "sources": [
               {
@@ -426,6 +428,7 @@
               "to": 1861,
               "label": "26 avril 1861"
             },
+            "era": "polity",
             "statement": "Le nom royaume de Tunis figure dans la Constitution du 26 avril 1861, qui parle aussi des « sujets du royaume tunisien », selon la traduction française que publie la Digithèque de l'université de Perpignan.",
             "sources": [
               {
@@ -445,6 +448,7 @@
               "to": 1857,
               "label": "10 septembre 1857"
             },
+            "era": "polity",
             "statement": "Le nom royaume de Tunis figure dans le Pacte fondamental du 10 septembre 1857, que signe Mohammed Pacha Bey, « possesseur du royaume de Tunis », selon la traduction française que publie la Digithèque de l'université de Perpignan.",
             "sources": [
               {
@@ -464,6 +468,7 @@
               "to": 1656,
               "label": "1656"
             },
+            "era": "polity",
             "statement": "Le nom royaume de Tunis figure dans l'atlas d'Afrique du géographe français Nicolas Sanson, publié à Paris en 1656, en titre d'une page de texte. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne existait déjà avant ce livre.",
             "birth": true,
             "sources": [
@@ -495,6 +500,7 @@
               "to": 1881,
               "label": "Avant 1881"
             },
+            "era": "polity",
             "statement": "Le nom Régence de Tunis est celui que l'historien Abdallah Laroui emploie pour le pays avant le protectorat français : l'Italie a alors des visées sur la régence, dont l'élite reste en partie attachée à l'Empire ottoman.",
             "sources": [
               {
@@ -515,6 +521,7 @@
               "to": 1802,
               "label": "23 février 1802"
             },
+            "era": "polity",
             "statement": "Le nom Régence de Tunis figure dans le titre du traité de paix conclu à Tunis le 23 février 1802 entre la République française et le pacha-bey Hamouda. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne existait déjà avant ce traité.",
             "birth": true,
             "sources": [

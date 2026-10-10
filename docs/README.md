@@ -46,6 +46,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Name-history priority core](editorial/strategy/name-history-priority-core.md)
 - [Name-history timeline (decided 2026-10-08)](editorial/strategy/name-history-timeline-2026-10-08.md)
 - [Funding presentation — October 2026](editorial/strategy/presentation-2026-10/README.md)
+- [Self-names to verify through oral sources](editorial/strategy/self-names-to-verify-orally.md)
 - [Interface copy](editorial/ui-copy.md)
 - [Volunteer missions](editorial/volunteers/README.md)
 - [Mission bénévole — Préparation et vérification des fiches](editorial/volunteers/mission-preparation-fiches.md)
