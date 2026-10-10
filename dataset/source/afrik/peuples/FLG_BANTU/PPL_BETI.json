@@ -125,5 +125,117 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Béti désigne un peuple du Cameroun, qui se nomme lui-même Béti. D'autres noms l'ont englobé avec ses voisins bulu et fang : Pangwe chez les Allemands, Pahouin chez les Français. Nous n'avons pas trouvé de source qui explique l'origine du nom Béti ; ce que nous savons de son histoire est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Béti",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple du Cameroun, proche des Bulu et des Fang ; son origine n'est pas expliquée par nos sources.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1965,
+              "to": 1992,
+              "label": "Écrits de 1965 et de 1992"
+            },
+            "era": "modern",
+            "statement": "Le nom Béti désigne un peuple du Cameroun que les historiens rapprochent des Bulu et des Fang : Pierre Alexandre parle en 1965 du « groupe beti-bulu-fang ». On a longtemps prêté à ces peuples une même migration venue du nord, une idée que Jan Vansina juge sans fondement.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Proto-histoire du groupe beti-bulu-fang : essai de synthèse provisoire",
+                "author": "Pierre Alexandre",
+                "year": 1965,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1965_num_5_20_3049",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 503",
+                "notes": "Cahiers d'études africaines, vol. 5, n° 20, 1965, p. 503-560. Première page lue sur Persée le 10 octobre 2026."
+              },
+              {
+                "title": "General History of Africa, V, ch. 3 : Population movements and emergence of new socio-political forms in Africa",
+                "author": "Jan Vansina",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 66",
+                "notes": "Édition anglaise de l'UNESCO, copie non officielle mise en ligne par South African History Online. Lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pangwe",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les peuples de la côte, puis les Allemands",
+        "shortLine": "Le nom allemand, repris des peuples de la côte, qui réunissait les Béti, les Bulu et les Fang.",
+        "periodLabel": "Époque coloniale allemande",
+        "accounts": [
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Livre publié en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pangwe sert à l'ethnologue allemand Günter Tessmann à réunir les Eton, les Mwele, les Jaunde, les Bene, les Bulu, les Ntum, les Mwai, les Fang et les Mokuk, qu'il tient pour les branches d'un même peuple. Ce nom, écrit-il, leur a été donné par leurs voisins de la côte.",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6-7",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Monographie tirée de l'expédition de Lübeck de 1907-1909, écrite dans le vocabulaire colonial de son époque. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pahouin",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Les Français",
+        "shortLine": "Le nom français qui englobait les Béti, les Bulu et les Fang.",
+        "periodLabel": "Époque coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Livre publié en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pahouin, en usage chez les Français, englobe selon Günter Tessmann un ensemble plus large encore que les peuples qu'il appelle Pangwe, jusqu'aux Bassa et aux Njem, ce qu'il juge abusif.",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Monographie tirée de l'expédition de Lübeck de 1907-1909, écrite dans le vocabulaire colonial de son époque. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

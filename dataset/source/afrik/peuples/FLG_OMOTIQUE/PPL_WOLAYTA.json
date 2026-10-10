@@ -123,5 +123,181 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Wolayta désigne un peuple du sud de l'Éthiopie, au nord du lac Abaya, qui se nomme lui-même Wolaitta. Un autre nom, Wolamo, a été employé jusqu'aux années 1970 ; il est aujourd'hui jugé dénigrant. On ne sait pas avec certitude d'où viennent ces noms : les sources que nous avons lues n'en donnent pas l'origine.",
+    "names": [
+      {
+        "nameText": "Wolaitta",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "wal",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; il s'écrit de plusieurs façons.",
+        "periodLabel": "Usage ancien et contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Wolaitta s'écrit de plusieurs façons : Wolayta, Welaita, Wälayta ou Wolaita, note l'anthropologue Jon Abbink, qui préfère Wolaitta.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Reconstructing Haberland Reconstructing the Wolaitta: Writing the History and Society of a Former Ethiopian Kingdom",
+                "author": "Jon Abbink",
+                "year": 2006,
+                "url": "https://www.cambridge.org/core/journals/history-in-africa/article/reconstructing-haberland-reconstructing-the-wolaitta-writing-the-history-and-society-of-a-former-ethiopian-kingdom/89F0B8A33F7B84F997C406B3B252F523",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 1",
+                "notes": "History in Africa, vol. 33, p. 1-15. Notes lues sur la page de l'article chez Cambridge University Press le 10 octobre 2026 ; le texte intégral est payant."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1974,
+              "to": null,
+              "label": "Après 1974"
+            },
+            "statement": "Le nom Welayita remplace celui de Welamo pour la circonscription administrative de la région après la révolution de 1974, selon Bernhard Lindahl.",
+            "sources": [
+              {
+                "title": "Local History of Ethiopia : Wel Wel - White",
+                "author": "Bernhard Lindahl",
+                "year": 2008,
+                "url": "https://nai.uu.se/download/18.39fca04516faedec8b24904a/1580830940972/ORTWEL.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-2",
+                "notes": "Répertoire des lieux d'Éthiopie publié par la bibliothèque du Nordic Africa Institute ; entrées Welamo et Welayita, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1600,
+              "label": "Vers 1600"
+            },
+            "era": "polity",
+            "statement": "Le nom Wolayta désigne, dans une tradition rapportée par Eike Haberland, le petit pays où arrive vers 1600 un noble tigréen, Mika'el ; il y épouse la fille du chef, puis prend le pouvoir.",
+            "actors": [
+              {
+                "name": "Mika'el",
+                "role": "noble tigréen, selon la tradition"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 804",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wolamo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un ancien nom, en usage sous l'empire éthiopien, aujourd'hui jugé dénigrant.",
+        "periodLabel": "Du XVe siècle aux années 1970",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1974,
+              "label": "Jusqu'aux années 1970"
+            },
+            "statement": "Le nom Wolamo reste en usage sous l'empire éthiopien ; il est aujourd'hui jugé dénigrant, selon Jon Abbink. On l'écrivait aussi Walamo, Welamo ou Wollamo, selon Bernhard Lindahl.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Reconstructing Haberland Reconstructing the Wolaitta: Writing the History and Society of a Former Ethiopian Kingdom",
+                "author": "Jon Abbink",
+                "year": 2006,
+                "url": "https://www.cambridge.org/core/journals/history-in-africa/article/reconstructing-haberland-reconstructing-the-wolaitta-writing-the-history-and-society-of-a-former-ethiopian-kingdom/89F0B8A33F7B84F997C406B3B252F523",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 11",
+                "notes": "History in Africa, vol. 33, p. 1-15. Notes lues sur la page de l'article chez Cambridge University Press le 10 octobre 2026 ; le texte intégral est payant."
+              },
+              {
+                "title": "Local History of Ethiopia : Wel Wel - White",
+                "author": "Bernhard Lindahl",
+                "year": 2008,
+                "url": "https://nai.uu.se/download/18.39fca04516faedec8b24904a/1580830940972/ORTWEL.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-2",
+                "notes": "Répertoire des lieux d'Éthiopie publié par la bibliothèque du Nordic Africa Institute ; entrées Welamo et Welayita, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1889,
+              "label": "Années 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Walamo désigne l'un des petits États encore indépendants du sud-ouest de l'Éthiopie, avec le vieux royaume de Kaffa et Janjero, selon Richard Pankhurst.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 15 : L'Éthiopie et la Somalie",
+                "author": "Richard Pankhurst, avec des notes de L. V. Cassanelli",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 451",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1414,
+              "to": 1430,
+              "label": "Début du XVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Wolamo figure déjà dans un chant de soldats à la louange du roi éthiopien Yeshaq, au début du XVe siècle, selon Jon Abbink, qui renvoie à l'édition d'Ignazio Guidi parue en 1889. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Yeshaq",
+                "role": "roi d'Éthiopie, que le chant célèbre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Reconstructing Haberland Reconstructing the Wolaitta: Writing the History and Society of a Former Ethiopian Kingdom",
+                "author": "Jon Abbink",
+                "year": 2006,
+                "url": "https://www.cambridge.org/core/journals/history-in-africa/article/reconstructing-haberland-reconstructing-the-wolaitta-writing-the-history-and-society-of-a-former-ethiopian-kingdom/89F0B8A33F7B84F997C406B3B252F523",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 11",
+                "notes": "History in Africa, vol. 33, p. 1-15. Notes lues sur la page de l'article chez Cambridge University Press le 10 octobre 2026 ; le texte intégral est payant."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

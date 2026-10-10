@@ -129,5 +129,147 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mongo désigne un ensemble de peuples de la cuvette centrale du Congo, en République démocratique du Congo, qui se nomment eux-mêmes Mongo. On les appelle aussi Nkundo, et on les a rangés sous le nom de Bangala, qu'ils ont refusé. Nous n'avons pas trouvé de source qui explique l'origine du nom Mongo ; ce que nous savons de son histoire est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Mongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lol",
+        "namedBy": null,
+        "shortLine": "Le nom d'un ensemble de peuples et de leur langue, le lomongo ; son origine n'est pas expliquée par nos sources.",
+        "periodLabel": "XXe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1937,
+              "to": 1946,
+              "label": "1937-1946"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mongo sert, à partir de 1937, aux missionnaires Gustaaf Hulstaert et Edmond Boelaert pour montrer, enquêtes linguistiques à l'appui, que les peuples de la cuvette centrale forment un seul peuple de même langue, selon Honoré Vinck. L'administrateur Georges Van der Kerken soutient la même idée dans L'ethnie mongo, un livre écrit avant la guerre et publié en 1946.",
+            "actors": [
+              {
+                "name": "Gustaaf Hulstaert",
+                "role": "défend l'unité de la langue et du peuple"
+              },
+              {
+                "name": "Edmond Boelaert",
+                "role": "défend l'unité de la langue et du peuple"
+              },
+              {
+                "name": "Georges Van der Kerken",
+                "role": "écrit L'ethnie mongo"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Pour un programme de renouveau de l'étude et de la connaissance pratique du lomongo",
+                "author": "Honoré Vinck",
+                "year": 2007,
+                "url": "https://www.aequatoria.be/04common/030themes_pdf/Renouveau%20recherche%20Mongo%204-12-07.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Texte mis en ligne par le centre Aequatoria, Belgique. Lu en PDF le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Mongo désigne aussi la langue de ces peuples, le lomongo, qu'on appelle encore lonkundo, selon Honoré Vinck. Nous n'avons pas trouvé de source qui explique d'où vient le mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Pour un programme de renouveau de l'étude et de la connaissance pratique du lomongo",
+                "author": "Honoré Vinck",
+                "year": 2007,
+                "url": "https://www.aequatoria.be/04common/030themes_pdf/Renouveau%20recherche%20Mongo%204-12-07.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Texte mis en ligne par le centre Aequatoria, Belgique. Lu en PDF le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nkundo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lol",
+        "namedBy": null,
+        "shortLine": "Un autre nom de ces peuples et de leur langue, le lonkundo.",
+        "periodLabel": "XXe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "Livre publié en 1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nkundo figure dans le titre que le missionnaire Edmond Boelaert donne en 1949 à l'épopée de Lianja, « Épopée nationale des Nkundo », selon Honoré Vinck, qui y voit un geste politique.",
+            "actors": [
+              {
+                "name": "Edmond Boelaert",
+                "role": "publie l'épopée sous ce titre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Pour un programme de renouveau de l'étude et de la connaissance pratique du lomongo",
+                "author": "Honoré Vinck",
+                "year": 2007,
+                "url": "https://www.aequatoria.be/04common/030themes_pdf/Renouveau%20recherche%20Mongo%204-12-07.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2 et p. 7",
+                "notes": "Texte mis en ligne par le centre Aequatoria, Belgique. Lu en PDF le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bangala",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom sous lequel on a rangé ces peuples ; ils l'ont refusé.",
+        "periodLabel": "Époque coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangala est refusé en 1959 par le journal en lomongo Lokole Lokiso, qui lance alors « Nous ne sommes pas des Bangala », selon Honoré Vinck.",
+            "sources": [
+              {
+                "title": "Pour un programme de renouveau de l'étude et de la connaissance pratique du lomongo",
+                "author": "Honoré Vinck",
+                "year": 2007,
+                "url": "https://www.aequatoria.be/04common/030themes_pdf/Renouveau%20recherche%20Mongo%204-12-07.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Texte mis en ligne par le centre Aequatoria, Belgique. Lu en PDF le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

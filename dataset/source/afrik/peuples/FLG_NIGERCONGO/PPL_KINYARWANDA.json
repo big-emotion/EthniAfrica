@@ -4,6 +4,121 @@
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["RWA", "BDI", "UGA", "COD"],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Banyarwanda désigne le peuple du Rwanda et ceux qui parlent sa langue, le kinyarwanda, au Rwanda et dans les pays voisins ; il se nomme lui-même Abanyarwanda. Ce nom est formé sur celui du pays, Rwanda, dont l'origine est discutée. Nous présentons plus bas ce que disent les sources sur ce nom.",
+    "names": [
+      {
+        "nameText": "Abanyarwanda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kin",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne le peuple du Rwanda ; une personne est un Munyarwanda.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": null,
+              "label": "Depuis 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Abanyarwanda ouvre la Constitution du Rwanda, dont le préambule commence en kinyarwanda par « Twebwe, Abanyarwanda », rendu en français par « Nous, Peuple rwandais ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République du Rwanda du 4 juin 2003, telle que révisée, préambule",
+                "author": "République du Rwanda",
+                "year": 2003,
+                "url": "https://www.wipo.int/wipolex/ar/text/498140",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "préambule",
+                "notes": "Texte trilingue, kinyarwanda, français et anglais, reproduit par WIPO Lex et lu le 10 octobre 2026. Le préambule, dans sa rédaction de 2008, s'ouvre en kinyarwanda par « Twebwe, Abanyarwanda », que le texte français rend par « Nous, Peuple rwandais »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Abanyarwanda désigne le peuple du Rwanda ; une seule personne est un Munyarwanda, comme dans l'article 23 de la Constitution, « Buri Munyarwanda », « chaque Rwandais ». Il est formé sur le nom du pays, Rwanda, dont l'origine est discutée ; nous la présentons sur la page de ce pays.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Constitution de la République du Rwanda du 4 juin 2003, telle que révisée, préambule",
+                "author": "République du Rwanda",
+                "year": 2003,
+                "url": "https://www.wipo.int/wipolex/ar/text/498140",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "préambule et article 23",
+                "notes": "Texte trilingue, kinyarwanda, français et anglais, reproduit par WIPO Lex et lu le 10 octobre 2026. Le préambule, dans sa rédaction de 2008, s'ouvre en kinyarwanda par « Twebwe, Abanyarwanda », que le texte français rend par « Nous, Peuple rwandais »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Banyarwanda",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "kin",
+        "namedBy": null,
+        "shortLine": "La forme du nom employée en français et en anglais.",
+        "periodLabel": "Écrit dès 1903",
+        "accounts": [
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "1903"
+            },
+            "statement": "Le nom Banyarwanda a une forme proche, Wanyaruanda, avec le préfixe swahili, chez le missionnaire Jean-Michel van der Burgt, qui parle en 1903 des Twa vivant « au milieu des Wanyaruanda ou des Warundi ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Wanyaruanda",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Un grand peuple de l'Afrique équatoriale : éléments d'une monographie sur l'Urundi et les Warundi",
+                "author": "Jean-Michel van der Burgt",
+                "year": 1903,
+                "url": "https://archive.org/details/ungrandpeuplede00burggoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. XLIII",
+                "notes": "Bois-le-Duc, Société « L'illustration catholique », 1903, lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur, missionnaire catholique au Burundi, cite aussi les observations d'un confrère du Rwanda."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "Janvier 1861"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Banyarwanda, on parle du pays : en janvier 1861, un marchand nommé Musa dit à l'explorateur John Hanning Speke qu'une haute montagne se trouve au Rŭanda, « un pays bien plus grand que l'Urŭndi ».",
+            "before": true,
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 89",
+                "notes": "Édimbourg et Londres, William Blackwood and Sons, 1863, lu dans l'exemplaire numérisé le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Banyarwanda",

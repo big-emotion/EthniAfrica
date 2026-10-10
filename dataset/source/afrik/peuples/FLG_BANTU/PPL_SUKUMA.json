@@ -130,5 +130,128 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sukuma désigne un peuple du nord-ouest de la Tanzanie, au sud du lac Victoria, qui se nomme lui-même Banasukuma. Le nom Sukuma voudrait dire « le nord » ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Banasukuma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "suk",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple dans sa langue, écrit aussi βanasukuma.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Banasukuma, écrit aussi βanasukuma, désigne les gens qui parlent le sukuma chez les linguistes Peter Gonga Shigini et Gastor Mapunda, qui étudient en 2023 les noms de personnes du dialecte kemunasukuma, dans la région de Shinyanga.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Personal Naming among the βanasukuma: A Linguistic Analysis",
+                "author": "Peter Gonga Shigini et Gastor Mapunda",
+                "year": 2023,
+                "url": "https://journals.udsm.ac.tz/index.php/jlle/article/view/6321",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 74-75 et p. 81",
+                "notes": "Journal of Linguistics and Language in Education, université de Dar es Salaam, vol. 17, n° 1, p. 74-96 ; lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sukuma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "suk",
+        "namedBy": null,
+        "shortLine": "« Le nord » : le nom de ceux du nord, parmi les peuples de langue nyamwezi.",
+        "periodLabel": "Écrit dès 1860",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sukuma entre dans celui du Sukumaland, la région du Tanganyika où les mines peinent à recruter, car ses habitants préfèrent cultiver leurs propres champs, selon Walter Rodney.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 14 : L'économie coloniale",
+                "author": "Walter Rodney",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 372",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Sukuma apparaît par écrit dans le récit de Richard Burton paru en 1860, sous les formes Usukuma, le pays, et Wasukuma, ses habitants, qu'il présente comme les Wanyamwezi du nord. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait déjà là avant lui.",
+            "formAsWritten": "Wasukuma",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, vol. I",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://www.gutenberg.org/ebooks/66812",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 268 et p. 319",
+                "notes": "Londres, Longman, Green, Longman, and Roberts. Lu dans l'édition du Projet Gutenberg, qui garde la pagination de l'original, le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Sukuma voudrait dire « le nord » en kinyamwezi : les Wasukuma seraient « ceux du nord », face aux Watakama, « ceux du sud », selon Richard Burton. John Hanning Speke donne la même explication dans le journal de son voyage de 1858.",
+            "hypothesisGroup": "origine du nom Sukuma",
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, vol. II",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://www.gutenberg.org/ebooks/66813",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Londres, Longman, Green, Longman, and Roberts. Lu dans l'édition du Projet Gutenberg, qui garde la pagination de l'original, le 10 octobre 2026."
+              },
+              {
+                "title": "What Led to the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1864,
+                "url": "https://www.gutenberg.org/ebooks/8417",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Édimbourg et Londres, Blackwood. Journal du voyage de 1858 vers le lac Victoria, note 52 ; lu dans l'édition du Projet Gutenberg, sans pagination, le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -110,5 +110,119 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Arsi désigne un groupe oromo du centre et du sud de l'Éthiopie, qui se nomme lui-même Arsii. Les textes anciens l'écrivent aussi Arussi ou Arusi. On ne sait pas avec certitude d'où vient ce nom : les sources que nous avons lues n'en donnent pas l'origine.",
+    "names": [
+      {
+        "nameText": "Arsii",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gax",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce groupe oromo ; être Arsi se dit Arsooma.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Arsii désigne un groupe oromo qui se rattache à Barentu, l'une des deux grandes moitiés des Oromo, selon Benti Mekonen Abdisa. Le fait d'être Arsi se dit Arsooma, un lien de respect et de fraternité entre tous les clans arsi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Arsi Oromo Descent and Indigenous Moral System in Ethiopia: With particular emphasis on Guma System in Shashemene City of Oromia regional State",
+                "author": "Benti Mekonen Abdisa",
+                "year": 2021,
+                "url": "https://ijisrt.com/assets/upload/files/IJISRT21JUL1215.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1627-1628",
+                "notes": "International Journal of Innovative Science and Research Technology, vol. 6, n° 7 ; lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Arussi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une ancienne graphie du nom Arsi, dans les textes éthiopiens et européens.",
+        "periodLabel": "Textes du XVIe au XIXe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1865,
+              "to": 1889,
+              "label": "Années 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Arusi désigne les riches régions du sud-est que Ménélik, roi du Choa de 1865 à 1889, conquiert grâce aux armes reçues de l'Italie, selon Monday B. Akpan.",
+            "formAsWritten": "Arusi",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 11 : Le Libéria et l'Éthiopie, 1880-1914 : la survie de deux États africains",
+                "author": "Monday B. Akpan, à partir des contributions d'Abeodu B. Jones et Richard Pankhurst",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 292",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1889,
+              "label": "Vers 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Arussi désigne l'une des régions oromo qui restent alors politiquement indépendantes de l'État éthiopien, selon Richard Pankhurst.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 15 : L'Éthiopie et la Somalie",
+                "author": "Richard Pankhurst, avec des notes de L. V. Cassanelli",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 451",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1880,
+              "label": "XVIe-XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Arussi désigne, chez Eike Haberland, le groupe oromo qui s'établit près de l'ancien État de Bali et étend son territoire vers l'ouest, jusqu'à la rivière Bilate, atteinte en 1880.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 783",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

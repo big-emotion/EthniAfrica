@@ -115,5 +115,107 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Limba désigne un peuple du nord de la Sierra Leone, qui se nomme lui-même Limba. Il apparaît par écrit en 1594, chez un marchand des îles du Cap-Vert. Nous n'avons pas trouvé de source qui explique l'origine de ce nom.",
+    "names": [
+      {
+        "nameText": "Limba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit « Limbas » dès 1594 par un marchand des îles du Cap-Vert.",
+        "periodLabel": "Écrit depuis 1594 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Histoire ancienne, selon un historien"
+            },
+            "statement": "Le nom Limba désigne un peuple que Christophe Wondji place, avec prudence, parmi les plus anciens habitants de cette côte : les Limba de Sierra Leone y auraient parlé une langue différente de celles de leurs voisins et occupé les Scarcies. Nous n'avons pas trouvé de source qui explique l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 417",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1916,
+              "to": 1916,
+              "label": "1916"
+            },
+            "era": "colonial",
+            "statement": "Le nom Limba désigne en 1916, pour l'anthropologue Northcote W. Thomas, l'une des langues à préfixes de la Sierra Leone, avec plusieurs dialectes, à côté du timne et du bulom.",
+            "sources": [
+              {
+                "title": "Anthropological Report on Sierra Leone, Part I: Law and Custom of the Timne and Other Tribes",
+                "author": "Northcote W. Thomas",
+                "year": 1916,
+                "url": "https://archive.org/details/anthropological01thom",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 7",
+                "notes": "Londres, Harrison and Sons, 1916 ; rapport de l'anthropologue du gouvernement colonial, lu dans l'exemplaire numérisé sur archive.org. Passage : « To the former, which may be called the old group, belong (a) Timne, (b) Limba (with several dialects), and (c) Bulam »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom Limba désigne aussi, chez André Álvares d'Almada, un peuple qui, avec les Jalunga, a résisté aux guerriers sumba grâce à des abris souterrains secrets.",
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares d'Almada",
+                "year": 1841,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 80",
+                "notes": "Texte de 1594, daté ainsi dans la bibliographie du volume IV de l'Histoire générale de l'Afrique ; édition de Porto, 1841, lue dans l'exemplaire numérisé sur archive.org. « tirando os Limbas e Jalungas, os quaes até hoje não poderão os Sumbas de todo senhorear, porque tem suas habitações debaixo do chão secretas »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom Limba apparaît sous la forme « Limbas » chez André Álvares d'Almada, marchand des îles du Cap-Vert, qui le cite en 1594 parmi les nations du royaume des Sapes ; il note qu'on ne connaît pas le sel dans la terre des Limbas. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Limbas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares d'Almada",
+                "year": 1841,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 77-78",
+                "notes": "Texte de 1594, daté ainsi dans la bibliographie du volume IV de l'Histoire générale de l'Afrique ; édition de Porto, 1841, lue dans l'exemplaire numérisé sur archive.org. p. 77 : « Temenes, Limbas, Itales, e Jalungas » ; p. 78 : « como na terra dos Limbas, que de nenhuma maneira o ha nem o comem »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

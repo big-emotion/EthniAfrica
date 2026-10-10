@@ -138,5 +138,183 @@
         "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Akan désigne un vaste ensemble de peuples du sud du Ghana et de l'est de la Côte d'Ivoire, qui parlent des langues proches et se nomment eux-mêmes Akan. Il apparaît par écrit au début du XVIe siècle, sous une forme proche, chez un navigateur portugais. Nous n'avons pas trouvé de source qui explique d'où vient ce nom.",
+    "names": [
+      {
+        "nameText": "Akan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "aka",
+        "namedBy": null,
+        "shortLine": "Un nom écrit sous une forme proche dès le début du XVIe siècle ; nos sources n'expliquent pas son origine.",
+        "periodLabel": "Écrit depuis le début du XVIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Akan désigne aujourd'hui un vaste groupe de peuples aux langues apparentées : au Ghana, les Bono, les Ashanti, les Akyem ou les Fante ; en Côte d'Ivoire, les Abron, les Agni ou les Baoulé, selon Pierre Kipré, qui cite l'historien ghanéen Adu Boahen. Nous n'avons pas trouvé de source qui explique l'origine de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "Pierre Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 363",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Depuis le colloque de Bondoukou"
+            },
+            "era": "modern",
+            "statement": "Le nom Akan est désormais réservé par les chercheurs au domaine politique, tandis que le nom twi désigne le groupe de langues, selon une remarque du professeur Wondji que rapporte Pierre Kipré.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "Pierre Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 367",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "statement": "Le nom Akan désigne en 1881 un pays, un peuple et une langue, selon le dictionnaire du missionnaire Johann Gottlieb Christaller. Il l'applique aux habitants de l'Akyem, de l'Akwamu, de l'Akuapem, de l'Assin et de l'Asante, entre autres, et les distingue des Fante. Le même mot, ɔkanni, dit aussi d'un homme qu'il est raffiné et bien élevé.",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 219",
+                "notes": "Bâle, Mission évangélique, 1881, lu dans l'exemplaire numérisé sur archive.org. Entrée « ɔkanni » : « The name is used for the inhabitants of Akem, Akwam, Akuapem, Asen, Asante […] in contradistinction to the Fantefo » ; un second sens donne « refined, well-mannered man »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1705,
+              "to": 1705,
+              "label": "1705"
+            },
+            "era": "polity",
+            "statement": "Le nom Akan est écrit « Acanny » par le marchand néerlandais William Bosman, qui décrit en 1705 un pays dont les habitants sont de grands commerçants depuis longtemps. Selon lui, l'or le plus fin s'y appelle « Acanni Sica » ou « Acanny Gold ».",
+            "formAsWritten": "Acanny",
+            "sources": [
+              {
+                "title": "A New and Accurate Description of the Coast of Guinea",
+                "author": "William Bosman",
+                "year": 1705,
+                "url": "https://archive.org/details/b30519032",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 77",
+                "notes": "Londres, 1705, traduction anglaise d'un texte paru en néerlandais en 1704 ; lue dans l'exemplaire numérisé sur archive.org. Lettre VI : « Next Dinkira we come in order to the Description of Acanny, whose Inhabitants, long before the Dinkirans, were famed for great Traders » ; « the best Gold is called by the Negroes, Acanni Sica, or Acanny Gold »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1699,
+              "label": "XVIe et XVIIe siècles"
+            },
+            "era": "polity",
+            "statement": "Le nom Akan figure dans les récits européens des XVIe et XVIIe siècles sous les formes « Arcanie », « Akannie » ou « Arcania », pour les régions de l'intérieur qui produisent l'or, selon Adu Boahen. Une carte de 1629 parle aussi des étoffes « que portent les Acaniens ».",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
+                "author": "A. A. Boahen",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 449 et p. 480",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "Début du XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Akan apparaît sous une forme proche dans l'Esmeraldo de situ orbis du navigateur portugais Duarte Pacheco Pereira. Parmi les marchands venus de loin vendre leur or au fort d'Elmina, il cite les « hacanys », que Pierre Kipré identifie aux Akan. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant elle.",
+            "formAsWritten": "hacanys",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, édition de Raphael Eduardo de Azevedo Basto",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1892,
+                "url": "https://archive.org/details/esmeraldodesitu00peregoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 69",
+                "notes": "Texte écrit au début du XVIe siècle : le volume IV de l'Histoire générale de l'Afrique le date de 1505-1506 (Madina Ly-Tall) ou de 1506-1508 (Pierre Kipré) ; édition de Raphael Eduardo de Azevedo Basto, Lisbonne, Imprensa Nacional, 1892, lue dans l'exemplaire numérisé sur archive.org. « mercadores de diversas nações, s. bremus, atis, hacanys, boroes, mandiguas, cacres, andeses ou souzos »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "Pierre Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 355",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1300,
+              "label": "Vers 1300"
+            },
+            "era": "polity",
+            "statement": "Le nom Akan n'apparaît pas encore dans les écrits que le projet connaît. Vers 1300 déjà, autour de Begho, des communautés que Pierre Kipré appelle akan sont organisées pour vendre l'or et la cola aux marchands manden.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "Pierre Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 364",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -4,6 +4,557 @@
   "languageFamilyId": "FLG_BERBERE",
   "currentCountries": ["DZA"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Kabyle désigne un peuple berbère du nord de l'Algérie, en Kabylie, qui se nomme lui-même Leqbayel, au singulier aqbayli. D'autres noms existent : Zwawa, un nom arabe ancien, et Igawawen, le nom des tribus du Djurdjura. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Leqbayel",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kab",
+        "namedBy": null,
+        "shortLine": "Le nom que les Kabyles se donnent en kabyle : Leqbayel, au singulier aqbayli.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Leqbayel est celui par lequel les Kabyles se désignent en groupe, aqbayli pour une seule personne, selon Malika Assam. Le dictionnaire kabyle de Jean-Marie Dallet, qu'elle cite, le donne comme un mot d'origine arabe qui veut d'abord dire « tribu ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
+                "author": "Malika Assam",
+                "year": 2022,
+                "url": "https://books.openedition.org/pressesinalco/45934",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 12 et § 26",
+                "notes": "Paris, Presses de l'Inalco, 2022, lu en texte intégral sur OpenEdition Books le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Leqbayel désigne les Kabyles, et la même racine donne taqbaylit, la langue et la manière d'être kabyle. Il vient de l'arabe, et les Kabyles l'ont fait leur, selon Malika Assam. Son origine première est discutée : nous présentons plus bas, au nom Kabyle, les explications que nous avons lues.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
+                "author": "Malika Assam",
+                "year": 2022,
+                "url": "https://books.openedition.org/pressesinalco/45934",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 26 et § 31",
+                "notes": "Paris, Presses de l'Inalco, 2022, lu en texte intégral sur OpenEdition Books le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant 1857, poème de Yusef-u-Qasi, né vers 1680"
+            },
+            "era": "polity",
+            "statement": "Le nom Leqbayel a une forme proche, aqbayli, dans un poème de Yusef-u-Qasi, un poète kabyle né vers 1680, qui appelle à rassembler « marabouts et Kabyles » contre une attaque des chrétiens. Ce poème a été recueilli par Mouloud Mammeri et il est cité par Malika Assam. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
+                "author": "Malika Assam",
+                "year": 2022,
+                "url": "https://books.openedition.org/pressesinalco/45934",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 26",
+                "notes": "Paris, Presses de l'Inalco, 2022, lu en texte intégral sur OpenEdition Books le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Milieu du XIXe siècle"
+            },
+            "statement": "Le nom Leqbayel revient dans les poèmes kabyles qui racontent la conquête française, au milieu du XIXe siècle : « Kabyle et marabout, qui sait où chacun d'eux est allé ? », selon Malika Assam.",
+            "sources": [
+              {
+                "title": "Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
+                "author": "Malika Assam",
+                "year": 2022,
+                "url": "https://books.openedition.org/pressesinalco/45934",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 27",
+                "notes": "Paris, Presses de l'Inalco, 2022, lu en texte intégral sur OpenEdition Books le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kabyle",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom français, venu d'un mot arabe qui veut dire « tribu ».",
+        "periodLabel": "Écrit en français dès 1725",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "era": "modern",
+            "statement": "Le nom Kabyle désigne les habitants de la Kabylie, dans les montagnes du Djurdjura et des Babors. Il vient de l'arabe, mais on ne sait pas avec certitude par quel mot : nous présentons plus bas les deux explications que nous avons lues.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Kabylie : La région dans les écrits arabes (géographes et historiens du Xe au XVIe siècle), Encyclopédie berbère, 26",
+                "author": "R. Bellil",
+                "year": 2004,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1405",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1",
+                "notes": "Encyclopédie berbère, vol. 26, 2004, p. 4016-4022, notice K07, lue en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne."
+              },
+              {
+                "title": "Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
+                "author": "Malika Assam",
+                "year": 2022,
+                "url": "https://books.openedition.org/pressesinalco/45934",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 7",
+                "notes": "Paris, Presses de l'Inalco, 2022, lu en texte intégral sur OpenEdition Books le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Kabyle viendrait du mot arabe qabâ'il, pluriel de qabîla, « tribu ». Les citadins d'Algérie, Arabes, Berbères arabisés, Andalous et Turcs, l'auraient d'abord employé pour les ruraux organisés en tribus, selon R. Bellil et selon le dictionnaire de l'Académie française.",
+            "hypothesisGroup": "origine du nom Kabyle",
+            "sources": [
+              {
+                "title": "Kabylie : La région dans les écrits arabes (géographes et historiens du Xe au XVIe siècle), Encyclopédie berbère, 26",
+                "author": "R. Bellil",
+                "year": 2004,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1405",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1",
+                "notes": "Encyclopédie berbère, vol. 26, 2004, p. 4016-4022, notice K07, lue en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne."
+              },
+              {
+                "title": "Dictionnaire de l'Académie française, 9e édition, article kabyle",
+                "author": "Académie française",
+                "year": null,
+                "url": "https://www.dictionnaire-academie.fr/article/A9K0006",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Article lu le 10 octobre 2026 : le mot est emprunté de l'arabe qabila, « tribu, famille », dont le pluriel qaba'il désigne les Kabyles ; l'emprunt est daté du XVIIe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Kabyle viendrait du verbe arabe qbel, « accepter » : les Kabyles auraient été ceux qui avaient accepté le message de l'islam. Malika Assam rapporte cette explication d'après l'historienne Patricia Lorcin, sans la retenir plus que la première.",
+            "hypothesisGroup": "origine du nom Kabyle",
+            "sources": [
+              {
+                "title": "Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
+                "author": "Malika Assam",
+                "year": 2022,
+                "url": "https://books.openedition.org/pressesinalco/45934",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 7",
+                "notes": "Paris, Presses de l'Inalco, 2022, lu en texte intégral sur OpenEdition Books le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1301,
+              "to": 1400,
+              "label": "XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Kabyle a une forme proche, qbaïli, « homme de tribu », qui serait apparue comme nom de peuple au XIVe siècle dans le Qirtâs, la chronique d'Ibn Abi Zar'. C'est ce qu'écrit Nedjma Abdelfettah Lalmi d'après Georges Yver, citée par Malika Assam. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
+                "author": "Malika Assam",
+                "year": 2022,
+                "url": "https://books.openedition.org/pressesinalco/45934",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 31",
+                "notes": "Paris, Presses de l'Inalco, 2022, lu en texte intégral sur OpenEdition Books le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1725,
+              "to": 1725,
+              "label": "1725"
+            },
+            "era": "polity",
+            "statement": "Le nom Kabyle s'écrit Cabeylezen, ou Cabayles, chez Laugier de Tassy, qui parle en 1725 d'une montagne près de Djidjelli « habitée par des Arabes nommez Cabeylezen, fiers, jaloux de leur liberté ».",
+            "formAsWritten": "Cabeylezen",
+            "sources": [
+              {
+                "title": "Histoire du royaume d'Alger, avec l'état présent de son gouvernement, de ses forces de terre et de mer, de ses revenus, police, justice, politique et commerce",
+                "author": "Laugier de Tassy",
+                "year": 1725,
+                "url": "https://archive.org/details/histoireduroyaum00laug",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 134",
+                "notes": "Amsterdam, Henri du Sauzet, 1725, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Le regard est celui d'un agent français à Alger au début du XVIIIe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Milieu du XIXe siècle"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kabyle s'impose en français au milieu du XIXe siècle : les militaires, les administrateurs puis les chercheurs français l'emploient pour identifier les régions et les peuples de la nouvelle colonie, selon R. Bellil. Kabylie, le nom de la région, serait en revanche une création française, remarquée dès 1857 selon Patricia Lorcin, citée par Malika Assam.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Kabylie : La région dans les écrits arabes (géographes et historiens du Xe au XVIe siècle), Encyclopédie berbère, 26",
+                "author": "R. Bellil",
+                "year": 2004,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1405",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1",
+                "notes": "Encyclopédie berbère, vol. 26, 2004, p. 4016-4022, notice K07, lue en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne."
+              },
+              {
+                "title": "Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
+                "author": "Malika Assam",
+                "year": 2022,
+                "url": "https://books.openedition.org/pressesinalco/45934",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 7",
+                "notes": "Paris, Presses de l'Inalco, 2022, lu en texte intégral sur OpenEdition Books le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zwawa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un nom arabe des tribus du Djurdjura, que les Kabyles n'emploient pas pour eux-mêmes.",
+        "periodLabel": "Écrit dès le Xe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Zwawa est un nom arabe : les Kabyles du Djurdjura le connaissent mais ne l'emploient pas, disent-ils, et le tiennent pour « un nom que les Arabes nous donnent », selon l'enquête orale de Jacques Lanfry. Les auteurs kabyles Belkassem ben Sedira, en 1887, et Saïd Boulifa disaient déjà la même chose.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique), Revue de l'Occident musulman et de la Méditerranée, 26",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 76 et p. 82",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, n° 26, 1978, p. 75-101, lue page par page sur Persée le 10 octobre 2026. L'auteur, Père blanc qui parlait kabyle, mêle les textes arabes, les auteurs kabyles et une enquête orale auprès de Kabyles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Zwawa a désigné tantôt l'ensemble des Kabyles du Djurdjura, tantôt une seule confédération de tribus, selon les auteurs, et zwawiya a aussi servi pour leur langue. Les publications récentes lui préfèrent le mot kabyle, selon Jacques Lanfry.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique), Revue de l'Occident musulman et de la Méditerranée, 26",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80-81",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, n° 26, 1978, p. 75-101, lue page par page sur Persée le 10 octobre 2026. L'auteur, Père blanc qui parlait kabyle, mêle les textes arabes, les auteurs kabyles et une enquête orale auprès de Kabyles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 825,
+              "to": 843,
+              "label": "Vers 825-843"
+            },
+            "era": "polity",
+            "statement": "Avant le nom de peuple, on trouve Zawâwa comme nom d'un chef des Howwâra lors de la conquête arabe de la Sicile, au IXe siècle, dans l'Histoire d'Ibn Khaldoun relue par Jacques Lanfry. Celui-ci y voit peut-être « le plus vieux Zwawa connu », sous une forme déjà arabisée.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique), Revue de l'Occident musulman et de la Méditerranée, 26",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 90-91",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, n° 26, 1978, p. 75-101, lue page par page sur Persée le 10 octobre 2026. L'auteur, Père blanc qui parlait kabyle, mêle les textes arabes, les auteurs kabyles et une enquête orale auprès de Kabyles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 988,
+              "to": 988,
+              "label": "988"
+            },
+            "era": "polity",
+            "statement": "Le nom Zwawa apparaît sous la forme Zuwâwa chez le géographe arabe Ibn Hawqal, à la fin du Xe siècle, selon Jacques Lanfry. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique), Revue de l'Occident musulman et de la Méditerranée, 26",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 76",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, n° 26, 1978, p. 75-101, lue page par page sur Persée le 10 octobre 2026. L'auteur, Père blanc qui parlait kabyle, mêle les textes arabes, les auteurs kabyles et une enquête orale auprès de Kabyles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1406,
+              "label": "Fin du XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Zwawa désigne chez Ibn Khaldoun une grande tribu berbère des montagnes entre Bougie et Dellys, dont il donne la liste des branches ; leur nom figure, écrit-il, sur les registres de l'impôt du sultan de Bougie. C'est ce que rapportent R. Bellil et Jacques Lanfry.",
+            "sources": [
+              {
+                "title": "Kabylie : La région dans les écrits arabes (géographes et historiens du Xe au XVIe siècle), Encyclopédie berbère, 26",
+                "author": "R. Bellil",
+                "year": 2004,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1405",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 29 et § 30",
+                "notes": "Encyclopédie berbère, vol. 26, 2004, p. 4016-4022, notice K07, lue en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne."
+              },
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique), Revue de l'Occident musulman et de la Méditerranée, 26",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 76-77",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, n° 26, 1978, p. 75-101, lue page par page sur Persée le 10 octobre 2026. L'auteur, Père blanc qui parlait kabyle, mêle les textes arabes, les auteurs kabyles et une enquête orale auprès de Kabyles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1623,
+              "to": 1623,
+              "label": "1623"
+            },
+            "era": "polity",
+            "statement": "Le nom Zwawa a donné le mot français zouave : un document de 1623 sur la population d'Alger compte déjà « 5 000 zouaves », des soldats payés, selon l'historien Marcel Emerit cité par Jacques Lanfry. Des hommes des Zwawa servaient alors comme soldats dans les villes de la côte.",
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique), Revue de l'Occident musulman et de la Méditerranée, 26",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, n° 26, 1978, p. 75-101, lue page par page sur Persée le 10 octobre 2026. L'auteur, Père blanc qui parlait kabyle, mêle les textes arabes, les auteurs kabyles et une enquête orale auprès de Kabyles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Zwawa viendrait de Igawawen, le nom kabyle des tribus du Djurdjura, mal rendu par des Arabes qui n'avaient pas le son g de ce nom et l'ont remplacé par z. Belkassem ben Sedira le disait en 1887, et le linguiste Karl-G. Prasse le juge très vraisemblable, selon Jacques Lanfry. R. Bellil note le même lien, suivi d'un point d'interrogation.",
+            "hypothesisGroup": "origine du nom Zwawa",
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique), Revue de l'Occident musulman et de la Méditerranée, 26",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89-91",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, n° 26, 1978, p. 75-101, lue page par page sur Persée le 10 octobre 2026. L'auteur, Père blanc qui parlait kabyle, mêle les textes arabes, les auteurs kabyles et une enquête orale auprès de Kabyles."
+              },
+              {
+                "title": "Kabylie : La région dans les écrits arabes (géographes et historiens du Xe au XVIe siècle), Encyclopédie berbère, 26",
+                "author": "R. Bellil",
+                "year": 2004,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1405",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 27",
+                "notes": "Encyclopédie berbère, vol. 26, 2004, p. 4016-4022, notice K07, lue en texte intégral sur OpenEdition le 10 octobre 2026. Les passages cités sont repérés par le numéro de paragraphe de l'édition en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Zwawa aurait été formé par des Arabes sur Azwaw, un prénom kabyle ancien, pour dire plus simplement Igawawen, selon une hypothèse que Jacques Lanfry avance lui-même en la jugeant peut-être trop simple. Les Kabyles qu'il a interrogés tiennent Zwawa et Azwaw pour des noms sans rapport.",
+            "hypothesisGroup": "origine du nom Zwawa",
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique), Revue de l'Occident musulman et de la Méditerranée, 26",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 93",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, n° 26, 1978, p. 75-101, lue page par page sur Persée le 10 octobre 2026. L'auteur, Père blanc qui parlait kabyle, mêle les textes arabes, les auteurs kabyles et une enquête orale auprès de Kabyles."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Igawawen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kab",
+        "namedBy": null,
+        "shortLine": "Le nom kabyle des tribus du Djurdjura, au singulier Agawaw.",
+        "periodLabel": "Écrit dès 1858",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Igawawen, au singulier Agawaw, est celui que se donnent les Kabyles des pentes nord du Djurdjura : « notre nom est, nous sommes Agawaw, Igawawen », lui ont dit des Kabyles, selon Jacques Lanfry. Il désigne huit tribus, et plus largement les Kabyles entre le Djurdjura et le Sebaou.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique), Revue de l'Occident musulman et de la Méditerranée, 26",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83 et p. 93",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, n° 26, 1978, p. 75-101, lue page par page sur Persée le 10 octobre 2026. L'auteur, Père blanc qui parlait kabyle, mêle les textes arabes, les auteurs kabyles et une enquête orale auprès de Kabyles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "colonial",
+            "statement": "Le nom Igawawen apparaît dans un texte d'Adolphe Hanoteau daté de 1858 : « les Igawawen ou Zouaoua habitent les contreforts les plus élevés du versant nord du Djurdjura », selon Jacques Lanfry. C'est la plus ancienne trace de ce nom que le projet connaît. Les tribus existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique), Revue de l'Occident musulman et de la Méditerranée, 26",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, n° 26, 1978, p. 75-101, lue page par page sur Persée le 10 octobre 2026. L'auteur, Père blanc qui parlait kabyle, mêle les textes arabes, les auteurs kabyles et une enquête orale auprès de Kabyles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1864,
+              "to": 1864,
+              "label": "Proposée en 1864"
+            },
+            "era": "colonial",
+            "statement": "Le nom Igawawen viendrait de Ag Aoua, « fils d'Aoua », selon Henri Aucapitaine en 1864, puis selon une légende en kabyle publiée par Saïd Boulifa, qui fait d'Aoua la femme d'Adam. Jacques Lanfry rapporte cette explication avec réserve : il ne connaît pas en kabyle de mot ag pour « fils de ».",
+            "hypothesisGroup": "origine du nom Igawawen",
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique), Revue de l'Occident musulman et de la Méditerranée, 26",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 94",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, n° 26, 1978, p. 75-101, lue page par page sur Persée le 10 octobre 2026. L'auteur, Père blanc qui parlait kabyle, mêle les textes arabes, les auteurs kabyles et une enquête orale auprès de Kabyles."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Kabyle",

@@ -169,5 +169,124 @@
         "source_kind": "intergovernmental"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ambundu désigne un peuple du nord de l'Angola, de Luanda à Malanje, qui se nomme lui-même Ambundu et parle le kimbundu. Il apparaît par écrit dès 1514. Nous n'avons pas trouvé de source qui explique son origine ; ce que nous savons de son histoire est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Ambundu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kmb",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple, écrit dès 1514 ; sa langue est le kimbundu.",
+        "periodLabel": "Écrit dès 1514 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "Livre publié en 1894"
+            },
+            "statement": "Le nom Ambundu désigne, pour le missionnaire Héli Chatelain, la « nation » angola, qui réunit notamment les Ndembu, les Mbaka, les Ndongo, les Mbondo, les Imbangala et les Songo. Il la distingue des Ovimbundu de Benguela. Pour la langue, il retient le nom kimbundu plutôt qu'ambundo, bunda ou n'bundo.",
+            "formAsWritten": "A-mbundu",
+            "sources": [
+              {
+                "title": "Folk-tales of Angola: Fifty Tales, with Ki-mbundu Text, Literal English Translation, Introduction, and Notes",
+                "author": "Héli Chatelain",
+                "year": 1894,
+                "url": "https://archive.org/details/folktalesangola00chatgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. v et p. 5",
+                "notes": "Boston et New York, American Folk-Lore Society et Houghton, Mifflin & Co., 1894. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1575,
+              "to": 1576,
+              "label": "1575-1576"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ambundu reste lié à celui de l'Angola : la colonie portugaise fondée en 1575 prend le nom d'Angola, tiré de ngola, le titre du roi du Ndongo, selon Jan Vansina. Héli Chatelain appelle encore les Ambundu la « nation » angola en 1894.",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 19 : The Kongo kingdom and its neighbours",
+                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 550 et p. 558",
+                "notes": "Édition anglaise de l'UNESCO, copie non officielle mise en ligne par South African History Online. Lu le 10 octobre 2026."
+              },
+              {
+                "title": "Folk-tales of Angola: Fifty Tales, with Ki-mbundu Text, Literal English Translation, Introduction, and Notes",
+                "author": "Héli Chatelain",
+                "year": 1894,
+                "url": "https://archive.org/details/folktalesangola00chatgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Boston et New York, American Folk-Lore Society et Houghton, Mifflin & Co., 1894. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1514,
+              "to": 1514,
+              "label": "5 octobre 1514"
+            },
+            "era": "polity",
+            "statement": "Le nom Ambundu figure dans une lettre du roi du Kongo Afonso Ier au roi Manuel Ier de Portugal, datée du 5 octobre 1514 : Afonso s'y dit « seigneur des Ambundos », selon l'édition d'António Brásio. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Ambundos",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Afonso Ier, roi du Kongo",
+                "role": "se dit seigneur des Ambundos"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Monumenta Missionaria Africana, África Ocidental, vol. I (1471-1531)",
+                "author": "António Brásio (édition)",
+                "year": 1952,
+                "url": "https://archive.org/details/monumentamissionariaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 294, document 83",
+                "notes": "Lisbonne, Agência Geral do Ultramar, 1952. Lettre du roi du Kongo Afonso Ier au roi Manuel Ier, 5 octobre 1514. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1490,
+              "to": 1510,
+              "label": "Vers 1500"
+            },
+            "era": "polity",
+            "statement": "Le nom Ambundu n'apparaît pas encore par écrit. Au sud du Kongo, l'État du Ndongo, dont le roi porte le titre de ngola, se forme alors en réunissant de nombreuses petites chefferies, selon Jan Vansina.",
+            "before": true,
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 19 : The Kongo kingdom and its neighbours",
+                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 550",
+                "notes": "Édition anglaise de l'UNESCO, copie non officielle mise en ligne par South African History Online. Lu le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

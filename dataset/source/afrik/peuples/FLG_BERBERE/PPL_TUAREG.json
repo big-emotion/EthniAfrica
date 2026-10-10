@@ -208,5 +208,435 @@
         "notes": "Extrait d'une source medievale reproduit sans nom de traducteur ni edition. Decrit le litham porte par les tribus du desert."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Touareg désigne un peuple berbère du Sahara central et du Sahel, réparti entre le Mali, le Niger, l'Algérie, la Libye et le Burkina Faso, qui se nomme lui-même Imuhagh, Imajeghen ou Imushagh selon les régions, et Kel Tamasheq, « ceux de la langue tamasheq ». D'autres noms existent : Touareg, venu de l'arabe, et Kandin, donné par les Kanouri. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Imuhagh",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tmh",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : Imuhagh, Imajeghen ou Imushagh selon les régions.",
+        "periodLabel": "Écrit depuis 1857 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Imuhagh est la forme touarègue du nom berbère amaziɣ, selon Salem Chaker. On dit Imuhagh en Ahaggar et en Ajjer, Imajeghen dans l'Aïr et chez les Iwellemmeden, Imushagh dans l'Adrar des Ifoghas. Au nord, il désigne tout membre de la société ; au sud, l'aristocratie nomade.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère)",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 6-7 et § 25",
+                "notes": "Encyclopédie berbère, IV, p. 562-568, lue sur OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1864,
+              "label": "Voyage de 1859-1860, livre publié en 1864"
+            },
+            "era": "polity",
+            "statement": "Le nom Imuhagh est écrit « Imôhagh » par Henri Duveyrier, qui le recueille chez les Azdjer : « Nous sommes Imôhagh, disent les Azdjer ; Imôcharh, disent les Ahaggâr et les Aouélimmiden ; Imâjirhen, disent les Touareg d'Aïr. »",
+            "formAsWritten": "Imôhagh",
+            "sources": [
+              {
+                "title": "Exploration du Sahara : les Touareg du Nord",
+                "author": "Henri Duveyrier",
+                "year": 1864,
+                "url": "https://archive.org/details/lestouaregdunor00duvegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 317",
+                "notes": "Lu sur la numérisation d'Internet Archive. L'auteur a voyagé au Sahara en 1859 et 1860."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1857,
+              "label": "Récit publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Imuhagh est écrit « Imoshagh » par l'explorateur Heinrich Barth, qui le donne comme le vrai nom que ce peuple se donne, Amoshagh pour une seule personne. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Le peuple qui le porte existait bien avant elle.",
+            "formAsWritten": "Imoshagh",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. I",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/Travelsdiscoverv118Bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 197",
+                "notes": "Édition de New York, Harper & Brothers, lue sur la numérisation d'Internet Archive. L'auteur a voyagé en Afrique de 1849 à 1855."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Depuis l'Antiquité"
+            },
+            "statement": "On parle alors de Maxyes chez Hérodote, puis de Mazices ou Mazikes chez les auteurs grecs et latins, pour des peuples d'Afrique du Nord. Salem Chaker rattache ces noms anciens à amaziɣ, dont Imuhagh est la forme touarègue.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère)",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 14 et § 18-19",
+                "notes": "Encyclopédie berbère, IV, p. 562-568, lue sur OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1864,
+              "label": "Rapportée en 1864"
+            },
+            "era": "polity",
+            "statement": "Le nom Imuhagh viendrait du verbe iôhagh, « il est libre, il est indépendant », selon les Touareg Azdjer interrogés par Henri Duveyrier.",
+            "hypothesisGroup": "sens du nom Imuhagh",
+            "sources": [
+              {
+                "title": "Exploration du Sahara : les Touareg du Nord",
+                "author": "Henri Duveyrier",
+                "year": 1864,
+                "url": "https://archive.org/details/lestouaregdunor00duvegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 317-318",
+                "notes": "Lu sur la numérisation d'Internet Archive. L'auteur a voyagé au Sahara en 1859 et 1860."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "Proposée en 1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Imuhagh serait d'abord un nom de peuple, et non un mot pour « homme libre » ou « noble », selon Salem Chaker. Pour lui, ce sens, qu'on lit déjà chez Léon l'Africain, est un usage local et secondaire.",
+            "hypothesisGroup": "sens du nom Imuhagh",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère)",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 43-46",
+                "notes": "Encyclopédie berbère, IV, p. 562-568, lue sur OpenEdition."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kel Tamasheq",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tmh",
+        "namedBy": null,
+        "shortLine": "Ceux de la langue tamasheq : un autre nom qu'ils se donnent.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Kel Tamasheq veut dire « les gens de la langue tamasheq ». Salem Chaker l'écrit Kel-Tamājeq et le donne comme un autre nom que se donnent les Touareg du sud. C'est la plus ancienne trace de ce nom que le projet connaît ; on ne sait pas avec certitude depuis quand il est employé.",
+            "formAsWritten": "Kel-Tamājeq",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère)",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 7",
+                "notes": "Encyclopédie berbère, IV, p. 562-568, lue sur OpenEdition."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Touareg",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": "des auteurs de langue arabe",
+        "shortLine": "Le nom courant en français ; il vient des auteurs arabes et son origine reste discutée.",
+        "periodLabel": "Écrit dès la fin du XIVe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Touareg est celui que d'autres leur donnent, en arabe puis en français. Les Touareg se disent eux-mêmes Amajeɣ, selon Salem Chaker. L'origine du nom Touareg est discutée ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère)",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 25",
+                "notes": "Encyclopédie berbère, IV, p. 562-568, lue sur OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1864,
+              "label": "Voyage de 1859-1860, livre publié en 1864"
+            },
+            "era": "polity",
+            "statement": "Le nom Touareg ne serait pas celui de leur peuple, disent les Touareg Azdjer à Henri Duveyrier : ils le tiennent pour une injure venue des Arabes et ne reconnaissent que Imôhagh et ses formes voisines.",
+            "sources": [
+              {
+                "title": "Exploration du Sahara : les Touareg du Nord",
+                "author": "Henri Duveyrier",
+                "year": 1864,
+                "url": "https://archive.org/details/lestouaregdunor00duvegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 317-318 et p. 326-327",
+                "notes": "Lu sur la numérisation d'Internet Archive. L'auteur a voyagé au Sahara en 1859 et 1860."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1857,
+              "label": "Récit publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Touareg est écrit « Tawarek » par Heinrich Barth, qui le dit étranger au peuple qu'il désigne.",
+            "formAsWritten": "Tawarek",
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. I",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/Travelsdiscoverv118Bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 197",
+                "notes": "Édition de New York, Harper & Brothers, lue sur la numérisation d'Internet Archive. L'auteur a voyagé en Afrique de 1849 à 1855."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1301,
+              "to": 1400,
+              "label": "XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Touareg a une forme proche, Targa, chez l'historien Ibn Khaldoun : c'est le nom d'une tribu sanhadja porteuse du voile, qui vit au Sahara face aux Arabes Soleim. Son traducteur, de Slane, note que Touareg est le pluriel de Targa. C'est la plus ancienne trace de ce nom que le projet connaît. Les gens qu'il désigne vivaient déjà au Sahara avant lui.",
+            "formAsWritten": "Targa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome II",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1854,
+                "url": "https://archive.org/details/bub_gb_TXVBAAAAIAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 64 et p. 104-105",
+                "notes": "Texte écrit à la fin du XIVe siècle, lu dans la traduction française publiée à Alger et numérisée par Internet Archive. Les notes sont du traducteur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Touareg viendrait de Targa, l'ancien nom du Fezzan en tamahaq : les Arabes en auraient fait un nom pour les gens venus de ce pays, selon Pol Trousset.",
+            "hypothesisGroup": "origine du nom Touareg",
+            "sources": [
+              {
+                "title": "Fezzân",
+                "author": "Pol Trousset",
+                "year": 1997,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2083",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 2",
+                "notes": "Encyclopédie berbère, XVIII, p. 2777-2817, lue sur OpenEdition. L'auteur s'appuie sur le dictionnaire de Charles de Foucauld, sur Lethielleux (1948) et sur Cuoq ; nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1864,
+              "label": "Rapportée en 1857 et en 1864"
+            },
+            "era": "polity",
+            "statement": "Le nom Touareg viendrait de l'arabe târek, « abandonné », parce que ce peuple aurait longtemps refusé l'islam ou l'aurait renié, selon les Touareg Azdjer interrogés par Henri Duveyrier, qui rapportent cette explication comme une injure. Heinrich Barth propose la même origine.",
+            "hypothesisGroup": "origine du nom Touareg",
+            "sources": [
+              {
+                "title": "Exploration du Sahara : les Touareg du Nord",
+                "author": "Henri Duveyrier",
+                "year": 1864,
+                "url": "https://archive.org/details/lestouaregdunor00duvegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 317-318",
+                "notes": "Lu sur la numérisation d'Internet Archive. L'auteur a voyagé au Sahara en 1859 et 1860."
+              },
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. I",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/Travelsdiscoverv118Bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 197",
+                "notes": "Édition de New York, Harper & Brothers, lue sur la numérisation d'Internet Archive. L'auteur a voyagé en Afrique de 1849 à 1855."
+              },
+              {
+                "title": "Tuareg",
+                "author": "Encyclopædia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Tuareg",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Onzième édition, volume 27, lue dans sa transcription sur Wikisource."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kandin",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "knc",
+        "namedBy": "les Kanouri",
+        "shortLine": "Un nom donné aux Touareg par les Kanouri, au XIXe siècle.",
+        "periodLabel": "XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1857,
+              "label": "Récit publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Kandin n'est donné aux Touareg que par les Kanouri, selon Heinrich Barth, qui le juge inacceptable pour nommer ce peuple.",
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. I",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/Travelsdiscoverv118Bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 280, note",
+                "notes": "Édition de New York, Harper & Brothers, lue sur la numérisation d'Internet Archive. L'auteur a voyagé en Afrique de 1849 à 1855."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Kandin est écrit « Kándin » par le linguiste Sigismund Koelle, qui l'emploie pour une langue touarègue recueillie à Freetown. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple qu'il désigne est bien plus ancien.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section XII-C-1",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mulatthamin",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": "des auteurs de langue arabe",
+        "shortLine": "« Les porteurs du voile » : un nom donné par des auteurs arabes aux tribus sanhadja du désert.",
+        "periodLabel": "Fin du XIVe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1301,
+              "to": 1400,
+              "label": "XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Mulatthamin veut dire « les porteurs du litham », le voile qui couvre le visage, selon le traducteur d'Ibn Khaldoun. L'historien l'emploie pour un groupe de tribus sanhadja du désert, dont les Targa. C'est la plus ancienne trace de ce nom que le projet connaît ; il désigne les ancêtres que les sources donnent aux Touareg, plus que les Touareg eux-mêmes.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome II",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1854,
+                "url": "https://archive.org/details/bub_gb_TXVBAAAAIAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 64",
+                "notes": "Texte écrit à la fin du XIVe siècle, lu dans la traduction française publiée à Alger et numérisée par Internet Archive. Les notes sont du traducteur."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

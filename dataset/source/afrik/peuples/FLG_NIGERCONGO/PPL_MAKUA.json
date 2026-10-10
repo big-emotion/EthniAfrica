@@ -4,6 +4,152 @@
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["MOZ", "TZA", "MWI"],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Makua désigne un grand peuple du nord du Mozambique, présent aussi en Tanzanie et au Malawi, qui se nomme Makhuwa, comme sa langue, l'emakhuwa, dans l'orthographe retenue au Mozambique. D'autres noms existent : Macua, la forme portugaise, écrite dès 1609. Nous n'avons pas trouvé de source qui explique l'origine de ce nom ; ce que disent les sources est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Makhuwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "vmw",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue, l'emakhuwa, dans l'orthographe du Mozambique.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Makhuwa sert au Mozambique pour la langue, appelée emakhuwa ou « língua makhuwa », dans l'orthographe que des linguistes mozambicains et des locuteurs ont proposée en 2012 ; le parler de la région de Nampula y sert de référence, selon Armindo Ngunga et Osvaldo G. Faquir.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Padronização da ortografia de línguas moçambicanas : relatório do III Seminário",
+                "author": "Armindo Ngunga et Osvaldo G. Faquir",
+                "year": 2012,
+                "url": "https://www.letras.ufmg.br/laliafro/PDF/Ngunga,%20Armindo%20Padronizacao%20ortografica%20-%203nd%20correcao.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 71-72",
+                "notes": "Maputo, Centro de Estudos Africanos, Université Eduardo Mondlane, 2012 ; lu dans une copie non officielle mise en ligne par l'Université fédérale du Minas Gerais, le 10 octobre 2026. Les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Makhuwa désigne un grand peuple du nord du Mozambique et sa langue, parlée dans les provinces de Nampula, de Cabo Delgado, du Niassa et de Zambézie par plus de cinq millions de personnes, selon Armindo Ngunga et Osvaldo G. Faquir. Les sources que nous avons lues ne disent pas d'où vient ce nom : on ne sait pas avec certitude s'il a d'abord été donné de l'extérieur.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Padronização da ortografia de línguas moçambicanas : relatório do III Seminário",
+                "author": "Armindo Ngunga et Osvaldo G. Faquir",
+                "year": 2012,
+                "url": "https://www.letras.ufmg.br/laliafro/PDF/Ngunga,%20Armindo%20Padronizacao%20ortografica%20-%203nd%20correcao.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 71-72",
+                "notes": "Maputo, Centro de Estudos Africanos, Université Eduardo Mondlane, 2012 ; lu dans une copie non officielle mise en ligne par l'Université fédérale du Minas Gerais, le 10 octobre 2026. Les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Macua",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "La forme portugaise du nom, écrite dès 1609.",
+        "periodLabel": "Écrit dès 1609",
+        "accounts": [
+          {
+            "period": {
+              "from": 1609,
+              "to": 1609,
+              "label": "Livre publié en 1609"
+            },
+            "era": "polity",
+            "statement": "Le nom Macua apparaît chez le frère dominicain João dos Santos, qui écrit que l'intérieur des terres face à l'île de Mozambique est peuplé de « cafres macuas » ; son livre, Ethiopia Oriental, paraît à Évora en 1609. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "cafres macuas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ethiopia Oriental (Évora, 1609), extraits publiés dans Records of South-Eastern Africa, vol. VII",
+                "author": "João dos Santos",
+                "year": 1609,
+                "url": "https://archive.org/details/recordsofsouthea07theaiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 119 et p. 123",
+                "notes": "Texte portugais du frère dominicain João dos Santos, qui vécut dans la région de Sofala et de Mozambique à la fin du XVIe siècle, imprimé à Évora en 1609 ; lu dans la réédition de George McCall Theal (Le Cap, gouvernement de la colonie du Cap), numérisée par Internet Archive, le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1609,
+              "to": 1609,
+              "label": "Livre publié en 1609"
+            },
+            "era": "polity",
+            "statement": "Le nom Macua sert à João dos Santos pour plusieurs groupes : les gens du fleuve Loranga, et ceux de la terre ferme de Mozambique, dont il dit que la plupart des grands rois de l'intérieur sont « macuas de nação », Macua de nation.",
+            "sources": [
+              {
+                "title": "Ethiopia Oriental (Évora, 1609), extraits publiés dans Records of South-Eastern Africa, vol. VII",
+                "author": "João dos Santos",
+                "year": 1609,
+                "url": "https://archive.org/details/recordsofsouthea07theaiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 120-123",
+                "notes": "Texte portugais du frère dominicain João dos Santos, qui vécut dans la région de Sofala et de Mozambique à la fin du XVIe siècle, imprimé à Évora en 1609 ; lu dans la réédition de George McCall Theal (Le Cap, gouvernement de la colonie du Cap), numérisée par Internet Archive, le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Makua",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme anglaise et française du nom.",
+        "periodLabel": "Écrit en anglais dès la fin du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1889,
+              "to": 1897,
+              "label": "1897"
+            },
+            "statement": "Le nom Makua s'écrit ainsi chez Harry H. Johnston, qui recrute en 1889-1890 une escorte de Makua à Mozambique, puis des policiers makua pour le protectorat britannique d'Afrique centrale.",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 83 et p. 118",
+                "notes": "Londres et New York, 1897, lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur était le commissaire britannique du protectorat."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Makua",

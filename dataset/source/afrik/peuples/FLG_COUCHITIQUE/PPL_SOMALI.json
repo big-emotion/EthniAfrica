@@ -154,5 +154,229 @@
         "notes": "Chapitre de l'étude pays sur la Somalie ; le chameau y tient le rôle central d'indicateur de richesse et de réussite."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Somali désigne un peuple de la Corne de l'Afrique, en Somalie, à Djibouti, en Éthiopie et au Kenya, qui se nomme lui-même Soomaali. Les géographes arabes l'ont aussi appelé Barbara. L'origine du nom Soomaali reste incertaine ; nous présentons plus bas ce qu'en disent les sources.",
+    "names": [
+      {
+        "nameText": "Soomaali",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; il est écrit pour la première fois au XVe siècle.",
+        "periodLabel": "Écrit depuis le XVe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Soomaali désigne aujourd'hui un peuple de la Corne de l'Afrique, et sa langue s'appelle Af-Soomaali, selon le catalogue Glottolog. Son origine reste incertaine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog — Somali (soma1255)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/soma1255",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Rubrique des autres noms de la langue, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1600,
+              "label": "À partir du XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Somali recouvre, au moins à partir du XVIe siècle, des groupes qui se voient comme un seul peuple, avec une seule culture et une seule religion, même s'ils se divisent en nombreux groupes selon la généalogie. Eike Haberland lie ce sentiment à la guerre menée par l'imam Ahmad Grañ et à la place croissante de l'islam.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 766",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1415,
+              "to": 1429,
+              "label": "Après 1415"
+            },
+            "era": "polity",
+            "statement": "Le nom Soomaali apparaît pour la première fois par écrit, sous la forme Somali, dans un hymne que le roi éthiopien Yeshaq fait composer par ses chanteurs après sa victoire sur le royaume musulman d'Ifat, en 1415, selon l'étude pays de la Bibliothèque du Congrès. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait déjà dans la Corne de l'Afrique avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Yeshaq",
+                "role": "roi d'Éthiopie, qui fait composer l'hymne de victoire"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Somalia: A Country Study, chapitre « Emergence of Adal »",
+                "author": "Helen Chapin Metz (dir.), Federal Research Division, Library of Congress",
+                "year": 1992,
+                "url": "https://countrystudies.us/somalia/5.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "chapitre « Emergence of Adal »",
+                "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1200,
+              "to": 1399,
+              "label": "XIIIe-XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "On parle alors de Barbara, ou de Barābir, pour désigner les habitants de Zeila et de la côte du golfe d'Aden ; Tadesse Tamrat les identifie aux Somali.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "Tadesse Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 463-464",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Soomaali viendrait de Samaale, ou Samaal, l'ancêtre fondateur auquel la plupart des clans somali rattachent leur généalogie, selon l'étude pays de la Bibliothèque du Congrès.",
+            "hypothesisGroup": "origine du nom Soomaali",
+            "sources": [
+              {
+                "title": "Somalia: A Country Study, chapitre « Origins, Migrations, and Settlement »",
+                "author": "Helen Chapin Metz (dir.), Federal Research Division, Library of Congress",
+                "year": 1992,
+                "url": "https://countrystudies.us/somalia/3.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "chapitre « Origins, Migrations, and Settlement »",
+                "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 10 octobre 2026."
+              },
+              {
+                "title": "Somalia: A Country Study, chapitre « The Social Order »",
+                "author": "Helen Chapin Metz (dir.), Federal Research Division, Library of Congress",
+                "year": 1992,
+                "url": "https://countrystudies.us/somalia/37.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "chapitre « The Social Order »",
+                "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Barbara",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": "les géographes arabes",
+        "shortLine": "Un nom que les géographes arabes donnaient aux Somali et à leurs voisins de la Corne.",
+        "periodLabel": "De l'Antiquité au XIVe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Géographes arabes médiévaux"
+            },
+            "statement": "Le nom Barbara désigne, chez les géographes arabes, l'ensemble des Somali et des autres peuples de la Corne de l'Afrique qui parlent des langues couchitiques ; on les appelait parfois « Berbères noirs », pour les distinguer des Berbères d'Afrique du Nord, selon Fidel T. Masao et Henry W. Mutoro.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 21 : La côte d'Afrique orientale et les Comores",
+                "author": "Fidel T. Masao et Henry W. Mutoro",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 640",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1200,
+              "to": 1399,
+              "label": "XIIIe-XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Barbara sert aux auteurs arabes pour la communauté noire de Zeila au XIVe siècle, et le géographe Yāqūt parle des Barābir ; Tadesse Tamrat y voit les Somali. Ces auteurs les distinguaient des Berbères, des Swahili et des Abyssins.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "Tadesse Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 463-464",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 230,
+              "label": "Avant le IIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Barbara a une forme proche, « Barbares », déjà employée dans le même sens pour la Corne de l'Afrique dans le Périple de la mer Érythrée, puis chez Ptolémée et Cosmas Indicopleustès, selon Fidel T. Masao et Henry W. Mutoro. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désignait vivaient déjà là avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 21 : La côte d'Afrique orientale et les Comores",
+                "author": "Fidel T. Masao et Henry W. Mutoro",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 640",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 15 : Axoum du Ier au IVe siècle : économie, système politique, culture",
+                "author": "Y. M. Kobishanov",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 409",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. La page date le Périple de la période allant d'avant l'an 105 au début du IIIe siècle."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

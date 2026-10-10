@@ -151,5 +151,366 @@
         "notes": "Article de Gosiame Goitsemodimo (National Museum, Bloemfontein), revue Indago, 2026, DOI 10.5281/zenodo.19458019 ; il décrit la couverture comme partie de l'identité culturelle et nationale basotho depuis plus de 160 ans."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sotho désigne un peuple du Lesotho et de l'Afrique du Sud voisine, qui se nomme lui-même Basotho, et Mosotho pour une seule personne. D'autres noms existent : Basuto, la forme du XIXe siècle et de l'époque coloniale, et Sotho du Sud, qui le distingue des Pedi et des Tswana. Les sources ne s'accordent pas sur l'origine du mot sotho ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Basotho",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "sot",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : Basotho au pluriel, Mosotho pour une personne.",
+        "periodLabel": "Une forme proche est écrite dès 1828",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Basotho désigne le peuple ; une seule personne se dit Mosotho, le pays Lesotho et la langue Sesotho, selon Eugène Casalis et Paulus Mohome. Ce que veut dire la racine sotho est discuté : il n'y a d'accord ni entre les Basotho ni entre les historiens, écrit la radio Lesedi FM en 2016. Les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Bassoutos, ou vingt-trois années de séjour et d'observations au sud de l'Afrique",
+                "author": "Eugène Casalis",
+                "year": 1859,
+                "url": "https://archive.org/details/lesbassoutosouvi00casa",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9, note 1",
+                "notes": "Paris, Meyrueis, 1859, lu dans la numérisation d'Internet Archive le 10 octobre 2026. En note de la page 9 : « lorsqu'il s'agit d'un seul individu, on dit : Mossouto ; de plusieurs : Bassoutos ; du pays : Lessouto ; de la langue : Sessouto ». L'auteur ne propose pas d'étymologie de la racine."
+              },
+              {
+                "title": "Naming in Sesotho: Its Sociocultural and Linguistic Basis, Names, vol. 20, n° 3",
+                "author": "Paulus M. Mohome",
+                "year": 1972,
+                "url": "https://ans-names.pitt.edu/ans/article/download/715/714/1432",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 171",
+                "notes": "Article de revue. La note liminaire donne « Mosotho: a member of the tribe of the Basotho », « Basotho: plural of Mosotho » et « Lesotho: country of the Basotho »."
+              },
+              {
+                "title": "The Origin of the Basotho Nation",
+                "author": "Lesedi FM, radio publique sud-africaine de langue sesotho",
+                "year": 2016,
+                "url": "http://www.nmtdeploy.co.za/sabc/home/lesedifm/notices/details?id=5e9055d2-b7c8-4615-a839-c16d6cb1c77a",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Notice publiée le 28 janvier 2016, lue le 10 octobre 2026 à cette adresse. Elle expose plusieurs explications du nom Basotho : sootho, « brun » ; le sobriquet swazi rapporté par Ellenberger ; lesôtô, la lanière de peau qui sert à nouer le thari ; Mathulare, fille d'un chef bafokeng, mère des fondateurs de cinq groupes qui auraient porté les premiers ce nom. Elle conclut : « there is no agreement among the Basotho and historians on the origin of the term »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1824,
+              "to": 1840,
+              "label": "Années 1820 et 1830"
+            },
+            "era": "polity",
+            "statement": "Le nom Basotho finit par réunir, autour de Moshoeshoe, fils du chef d'un petit clan kwena, plusieurs groupes sotho et nguni réfugiés pendant les guerres du Mfecane, qu'il installe autour de sa montagne de Thaba Bosiu, selon Leonard D. Ngcongco.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 139-141",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 139 : Moshoeshoe était « le fils du chef relativement obscur du petit clan mokoteli, branche mineure d'une des chefferies kwena ». Page 140 : à Thaba Bosiu, il « se mit en devoir de bâtir une nouvelle nation à partir de ce qui restait de plusieurs peuples réduits en miettes »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1828,
+              "to": 1828,
+              "label": "1828"
+            },
+            "era": "polity",
+            "statement": "Le nom Basotho a une forme proche, Bashootoo, dans un document officiel du Cap que cite le missionnaire John Philip : « le chef de la tribu des Bashootoo, aujourd'hui au Cap », y raconte l'attaque de sa ville par des cavaliers. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Bashootoo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Researches in South Africa, vol. II",
+                "author": "John Philip",
+                "year": 1828,
+                "url": "https://archive.org/details/b33093088_0002",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 82-83",
+                "notes": "Londres, James Duncan, 1828, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « This unfortunate man (the chief of the Bashootoo tribe, now in Cape Town) relates, that his town was unexpectedly attacked by a large party of men on horseback. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Basotho viendrait d'un sobriquet : les Swazi auraient appelé Abashunto, de uku shunta, « faire un nœud », les Bapeli, dont ils moquaient le pagne noué ; les Bapeli puis d'autres groupes l'auraient ensuite adopté avec fierté, selon les traditions orales recueillies par Frédéric Ellenberger.",
+            "hypothesisGroup": "origine du nom Basotho",
+            "sources": [
+              {
+                "title": "History of the Basuto, Ancient and Modern",
+                "author": "D. Frédéric Ellenberger, mis en anglais par J. C. Macgregor",
+                "year": 1912,
+                "url": "https://emandulo.apc.uct.ac.za/collection/FHYA%20Depot/Ellenberger_F_History_of_the_Basuto_Ancient_and_Modern_1912.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 34",
+                "notes": "Londres, Caxton, 1912, lu dans la numérisation de l'université du Cap le 10 octobre 2026. Les Swazi, qui se moquaient du pagne noué des Bapeli, les appelaient Abashunto, du verbe uku shunta, « faire un nœud » ; ce nom donné par dérision fut adopté avec fierté par les Bapeli, puis par d'autres groupes vêtus de même, « and was the origin of the present term Basuto »."
+              },
+              {
+                "title": "The Origin of the Basotho Nation",
+                "author": "Lesedi FM, radio publique sud-africaine de langue sesotho",
+                "year": 2016,
+                "url": "http://www.nmtdeploy.co.za/sabc/home/lesedifm/notices/details?id=5e9055d2-b7c8-4615-a839-c16d6cb1c77a",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Notice publiée le 28 janvier 2016, lue le 10 octobre 2026 à cette adresse. Elle expose plusieurs explications du nom Basotho : sootho, « brun » ; le sobriquet swazi rapporté par Ellenberger ; lesôtô, la lanière de peau qui sert à nouer le thari ; Mathulare, fille d'un chef bafokeng, mère des fondateurs de cinq groupes qui auraient porté les premiers ce nom. Elle conclut : « there is no agreement among the Basotho and historians on the origin of the term »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Basotho viendrait de l'adjectif sootho, « brun », d'où « les bruns », selon le Dictionary of South African English et Lesedi FM.",
+            "hypothesisGroup": "origine du nom Basotho",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sotho/e06714",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical Sotho « may be from the adjectival stem sootho brown, or from the name of the Usutu river » ; l'entrée cite un guide de 1978 selon lequel les Nguni les appelaient Suthu parce qu'ils les avaient d'abord rencontrés dans la vallée de l'Usutu. Dans les textes savants, Sotho désigne un grand ensemble qui comprend les Basotho, les Pedi, les Lobedu et les Tswana. Elle cite Thomas Philipps en 1827 : « they belonged to the Ceuta tribe, a very formidable, but very distant nation »."
+              },
+              {
+                "title": "The Origin of the Basotho Nation",
+                "author": "Lesedi FM, radio publique sud-africaine de langue sesotho",
+                "year": 2016,
+                "url": "http://www.nmtdeploy.co.za/sabc/home/lesedifm/notices/details?id=5e9055d2-b7c8-4615-a839-c16d6cb1c77a",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Notice publiée le 28 janvier 2016, lue le 10 octobre 2026 à cette adresse. Elle expose plusieurs explications du nom Basotho : sootho, « brun » ; le sobriquet swazi rapporté par Ellenberger ; lesôtô, la lanière de peau qui sert à nouer le thari ; Mathulare, fille d'un chef bafokeng, mère des fondateurs de cinq groupes qui auraient porté les premiers ce nom. Elle conclut : « there is no agreement among the Basotho and historians on the origin of the term »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Basotho viendrait de la rivière Usutu, dans la vallée de laquelle les Nguni auraient d'abord rencontré ce peuple, selon une source de 1978 que cite le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Basotho",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sotho/e06714",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical Sotho « may be from the adjectival stem sootho brown, or from the name of the Usutu river » ; l'entrée cite un guide de 1978 selon lequel les Nguni les appelaient Suthu parce qu'ils les avaient d'abord rencontrés dans la vallée de l'Usutu. Dans les textes savants, Sotho désigne un grand ensemble qui comprend les Basotho, les Pedi, les Lobedu et les Tswana. Elle cite Thomas Philipps en 1827 : « they belonged to the Ceuta tribe, a very formidable, but very distant nation »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Basotho serait un mot de respect mis à la place de motho, « être humain », selon le Dictionary of South African English, qui présente cette explication comme possible.",
+            "hypothesisGroup": "origine du nom Basotho",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Mosotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/mosotho/e04930",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Mosotho serait « perhaps a hlonipha substitute for motho human being », un mot de respect mis à la place de motho, « être humain », ou bien le préfixe mo- suivi de sootho, « brun ». L'entrée cite John Philip en 1828 (« the chief of the Bashootoo tribe ») et le journal d'Andrew Smith en 1835 : « The Matabeli apply the term Bashutu to all black nations not of their description ». Elle note qu'au XIXe siècle Basuto désignait aussi les Sotho du Sud vivant en Afrique du Sud."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Basotho viendrait de lesôtô, la lanière de peau tannée qui sert à nouer le thari dans le dos d'une femme ; on serait passé de lesôtô à mosôtô pour désigner des personnes, selon Lesedi FM, qui s'appuie sur le chercheur William Moruti Tšiu.",
+            "hypothesisGroup": "origine du nom Basotho",
+            "sources": [
+              {
+                "title": "The Origin of the Basotho Nation",
+                "author": "Lesedi FM, radio publique sud-africaine de langue sesotho",
+                "year": 2016,
+                "url": "http://www.nmtdeploy.co.za/sabc/home/lesedifm/notices/details?id=5e9055d2-b7c8-4615-a839-c16d6cb1c77a",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Notice publiée le 28 janvier 2016, lue le 10 octobre 2026 à cette adresse. Elle expose plusieurs explications du nom Basotho : sootho, « brun » ; le sobriquet swazi rapporté par Ellenberger ; lesôtô, la lanière de peau qui sert à nouer le thari ; Mathulare, fille d'un chef bafokeng, mère des fondateurs de cinq groupes qui auraient porté les premiers ce nom. Elle conclut : « there is no agreement among the Basotho and historians on the origin of the term »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Basotho aurait d'abord été porté par cinq groupes, Bapeli, Makgolokwe, Maphuthing, Batlokwa et Basia, issus des fils de Mathulare, fille d'un chef bafokeng, selon une explication que rapporte Lesedi FM.",
+            "hypothesisGroup": "origine du nom Basotho",
+            "sources": [
+              {
+                "title": "The Origin of the Basotho Nation",
+                "author": "Lesedi FM, radio publique sud-africaine de langue sesotho",
+                "year": 2016,
+                "url": "http://www.nmtdeploy.co.za/sabc/home/lesedifm/notices/details?id=5e9055d2-b7c8-4615-a839-c16d6cb1c77a",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Notice publiée le 28 janvier 2016, lue le 10 octobre 2026 à cette adresse. Elle expose plusieurs explications du nom Basotho : sootho, « brun » ; le sobriquet swazi rapporté par Ellenberger ; lesôtô, la lanière de peau qui sert à nouer le thari ; Mathulare, fille d'un chef bafokeng, mère des fondateurs de cinq groupes qui auraient porté les premiers ce nom. Elle conclut : « there is no agreement among the Basotho and historians on the origin of the term »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sotho",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "sot",
+        "namedBy": null,
+        "shortLine": "Le radical du nom ; dans les textes savants, il réunit aussi les Pedi et les Tswana.",
+        "periodLabel": "Une forme proche est écrite dès 1827",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sotho désigne, dans l'usage courant, les Basotho et les Sotho du Nord ; dans les textes savants, un grand ensemble qui comprend aussi les Pedi, les Lobedu et les Tswana. Sotho du Sud ou Southern Sotho désigne alors les Basotho, selon le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sotho/e06714",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical Sotho « may be from the adjectival stem sootho brown, or from the name of the Usutu river » ; l'entrée cite un guide de 1978 selon lequel les Nguni les appelaient Suthu parce qu'ils les avaient d'abord rencontrés dans la vallée de l'Usutu. Dans les textes savants, Sotho désigne un grand ensemble qui comprend les Basotho, les Pedi, les Lobedu et les Tswana. Elle cite Thomas Philipps en 1827 : « they belonged to the Ceuta tribe, a very formidable, but very distant nation »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1827,
+              "to": 1827,
+              "label": "1827"
+            },
+            "era": "polity",
+            "statement": "Le nom Sotho a une forme proche, Ceuta, chez Thomas Philipps, qui parle de « la tribu Ceuta, une nation très redoutable mais très lointaine », selon le Dictionary of South African English. Les sources ne disent pas s'il s'agit exactement du même peuple. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Ceuta",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sotho/e06714",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1827",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical Sotho « may be from the adjectival stem sootho brown, or from the name of the Usutu river » ; l'entrée cite un guide de 1978 selon lequel les Nguni les appelaient Suthu parce qu'ils les avaient d'abord rencontrés dans la vallée de l'Usutu. Dans les textes savants, Sotho désigne un grand ensemble qui comprend les Basotho, les Pedi, les Lobedu et les Tswana. Elle cite Thomas Philipps en 1827 : « they belonged to the Ceuta tribe, a very formidable, but very distant nation »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Basuto",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "sot",
+        "namedBy": null,
+        "shortLine": "L'orthographe du XIXe siècle et de l'époque coloniale, d'où vient Basutoland.",
+        "periodLabel": "XIXe et XXe siècles",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1868,
+              "to": 1966,
+              "label": "Du 12 mars 1868 au 4 octobre 1966"
+            },
+            "era": "colonial",
+            "statement": "Le nom Basuto est l'orthographe anglaise de l'époque coloniale ; le pays, annexé comme colonie de la Couronne le 12 mars 1868, s'appelle alors Basutoland, selon Ngwabi Bhebe. Le nom Basotho est aujourd'hui le plus accepté, selon le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 7 : Les Britanniques, les Boers et les Africains en Afrique du Sud, 1850-1880",
+                "author": "Ngwabi Bhebe",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 194-195",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le 12 mars 1868, le gouverneur Wodehouse, autorisé par le gouvernement britannique, annexe le pays comme colonie de la Couronne."
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Mosotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/mosotho/e04930",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Mosotho serait « perhaps a hlonipha substitute for motho human being », un mot de respect mis à la place de motho, « être humain », ou bien le préfixe mo- suivi de sootho, « brun ». L'entrée cite John Philip en 1828 (« the chief of the Bashootoo tribe ») et le journal d'Andrew Smith en 1835 : « The Matabeli apply the term Bashutu to all black nations not of their description ». Elle note qu'au XIXe siècle Basuto désignait aussi les Sotho du Sud vivant en Afrique du Sud."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1835,
+              "to": 1835,
+              "label": "1835"
+            },
+            "era": "polity",
+            "statement": "Le nom Basuto a une forme proche, Bashutu, que les Ndebele appliquent à tous les peuples noirs qui ne sont pas des leurs, selon le journal d'Andrew Smith cité par le Dictionary of South African English.",
+            "formAsWritten": "Bashutu",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Mosotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/mosotho/e04930",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1835",
+                "notes": "Entrée lue le 10 octobre 2026. Mosotho serait « perhaps a hlonipha substitute for motho human being », un mot de respect mis à la place de motho, « être humain », ou bien le préfixe mo- suivi de sootho, « brun ». L'entrée cite John Philip en 1828 (« the chief of the Bashootoo tribe ») et le journal d'Andrew Smith en 1835 : « The Matabeli apply the term Bashutu to all black nations not of their description ». Elle note qu'au XIXe siècle Basuto désignait aussi les Sotho du Sud vivant en Afrique du Sud."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

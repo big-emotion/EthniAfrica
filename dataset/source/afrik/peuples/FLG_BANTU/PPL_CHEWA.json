@@ -126,5 +126,327 @@
         "source_kind": "press"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Chewa désigne un peuple du centre du Malawi, de l'est de la Zambie et des régions voisines du Mozambique, qui se nomme lui-même Achewa. D'autres noms existent : Maravi, le nom d'un ancien royaume et de ses habitants dans les textes portugais, et Nyanja, un nom plus large qui veut dire « lac ». On ne sait pas avec certitude d'où vient le nom Chewa ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Achewa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nya",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; les Portugais écrivaient Chévas en 1831.",
+        "periodLabel": "Une forme proche est notée dès 1831",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Achewa désigne le peuple chewa. Les historiens appellent proto-Chewa les clans banda, mbewe et zimba, qui se disent originaires du Malawi central, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila. On ne sait pas avec certitude d'où vient le nom Chewa : la seule explication que nous ayons trouvée est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 668",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Les historiens désignent sous le terme « assez vague de proto-Chewa » les clans banda, mbewe et zimba qui se réclamaient originaires du Malawi central."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Achewa est écrit ainsi par Harry H. Johnston, qui range les Achewa et les A-chipeta parmi les branches du peuple nyanja du centre du Nyasaland.",
+            "formAsWritten": "Achewa",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 145",
+                "notes": "Londres, Methuen, 1897, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « The bulk of the inhabitants in Central Angoniland are neither Angoni nor Yao but Achewa and A-chipeta, branches of the A-nyanja stock. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1831,
+              "to": 1873,
+              "label": "Voyage de 1831, rapporté en 1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Achewa a une forme proche, Chévas, dans le récit du voyage des Portugais Monteiro et Gamitto en 1831, qui placent les terres des Chévas au nord de celles des Maravi, sous le chef Mucanda, selon les notes de Richard F. Burton. W. Govan Robertson résume le même récit en 1904. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Chévas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34-35 et 49",
+                "notes": "Londres, John Murray pour la Royal Geographical Society, 1873, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Notes de Burton : Monteiro et Gamitto trouvent les Pereira « in the lands of the Chevas north of the Maraves » ; les terres traversées étaient gouvernées par « The Unde of the Maraves », « The Mucanda (Mokanda) of the Chevas » et le roi des Muembas ; page 49 : ils placent « the Chévas (Shevas) and the Muembas » entre les Muizas et les Maraves."
+              },
+              {
+                "title": "An Introductory Handbook to the Language of the Bemba-People (Awemba)",
+                "author": "W. Govan Robertson (signé W. G. R.)",
+                "year": 1904,
+                "url": "https://www.troyspier.com/assets/files/bibliographies/m40/robertson_handbook.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. xiii",
+                "notes": "Londres, London Missionary Society, 1904. Lu le 10 octobre 2026 dans une copie non officielle de la numérisation de HathiTrust. Résumé du récit de 1831 : « further south were the Chewa, under the Mukando, then the great body of the Maravi, under the Unde »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1500,
+              "label": "Avant 1500 environ"
+            },
+            "era": "polity",
+            "statement": "On parle alors, dans la tradition orale, des Kalimanjira, « ceux qui ouvrent la voie », pour désigner les premiers clans que les historiens appellent proto-Chewa : ils auraient débarrassé le pays des Batwa et des Kafula qui l'occupaient, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 668 et 670",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 668 : « Dans la tradition orale, les proto-Chewa sont parfois appelés les Kalimanjira (ceux qui ouvrent la voie) pour avoir débarrassé le pays des semi-nomades qui l'occupaient auparavant, les Batwa et les Kafula ». Page 670 : la région est organisée en communautés de clans avant une date proche de 1500."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "Rapportée en 1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Chewa voudrait dire « les étrangers » : le géographe William Desborough Cooley lit Ansheva comme le pluriel de M'sheva, « les étrangers ou étrangers au pays », selon les notes de Richard F. Burton.",
+            "hypothesisGroup": "origine du nom Chewa",
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 49, note",
+                "notes": "Londres, John Murray pour la Royal Geographical Society, 1873, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « Mr. Cooley makes Ansheva (plural of M'sheva) to mean 'the strangers or foreigners.' »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Maravi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un ancien royaume et de ses habitants, écrit par les Portugais dès 1624.",
+        "periodLabel": "Écrit dès 1624",
+        "accounts": [
+          {
+            "period": {
+              "from": 1624,
+              "to": 1624,
+              "label": "1624"
+            },
+            "era": "polity",
+            "statement": "Le nom Maravi apparaît dans les observations de Luiz Marianno, un Portugais installé à Sena, sur l'état de « l'Empire maravi » en 1624, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume et ses habitants existaient déjà avant ce texte.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 675 et note 16",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. D'après un témoin, Manthimba était en 1624 un lieu très peuplé, à moins de 3 kilomètres du lac. La note 16 nomme ce témoin, Luiz Marianno, résident portugais de Sena en 1624, dont les observations sur l'état de « l'Empire maravi » sont résumées par J. Batalha-Reis (1889)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1798,
+              "to": 1798,
+              "label": "1798"
+            },
+            "era": "polity",
+            "statement": "Le nom Maravi est écrit Marave dans le journal du Portugais Francisco José de Lacerda e Almeida, qui traverse « les terres des Marave » en partant de Tete, et dont les porteurs désertent dans leur pays.",
+            "formAsWritten": "Marave",
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 61-62",
+                "notes": "Londres, John Murray pour la Royal Geographical Society, 1873, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Chapitre I, « The Lands of the Marave ». En note, Burton écrit que le nom Marave ou Maravi « is properly the title of the numerous petty chiefs »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Maravi est, selon Harry H. Johnston, un ancien nom, alors presque disparu, des groupes nyanja du sud-ouest du Nyasaland ; les Portugais l'employaient pour les habitants de la plus grande partie du pays.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 59 et 62",
+                "notes": "Londres, Methuen, 1897, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Page 59 : « Maravi being an old name (now nearly extinct) of the Nyanja tribes in the south-west of Nyasaland ». Page 62 : « These people who are referred to by Portuguese of an earlier date as the Amaravi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1420,
+              "to": 1480,
+              "label": "XVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Maravi désigne aussi, dans la tradition orale, le lieu où le Kalonga installe son quartier général, Manthimba ou Maravi, au sud-ouest du lac Malawi ; des sites maravi fouillés sont datés entre 1420 et 1480, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 672 et 675",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 672, note 10 : des dates au carbone 14 entre 1420 et 1480 pour les sites maravi. Page 675 : « Le Kalonga installa son quartier général à Manthimba ou Maravi » ; la tradition orale est la principale source sur la création de l'État maravi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Maravi serait la manière dont les Portugais rendaient Malawi, le nom que les Chewa se donnaient, selon l'archéologue Yusuf M. Juwayeyi.",
+            "hypothesisGroup": "origine du nom Maravi",
+            "sources": [
+              {
+                "title": "Archaeology and Oral Tradition in Malawi: Origins and Early History of the Chewa, introduction",
+                "author": "Yusuf M. Juwayeyi",
+                "year": 2020,
+                "url": "https://www.cambridge.org/core/books/archaeology-and-oral-tradition-in-malawi/introduction/FF819FBD3ACEEA0B6BE83CD3E890FEB2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction, résumé",
+                "notes": "Woodbridge, James Currey, 2020. Seul le résumé de l'introduction a été lu, en libre accès, le 10 octobre 2026 : « The term 'Maravi' was the Portuguese rendering of the term 'Malawi', by which the Chewa referred to themselves. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "Proposée en 1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Maravi serait d'abord le titre des nombreux petits chefs du pays, selon Richard F. Burton, dans ses notes au journal de Lacerda.",
+            "hypothesisGroup": "origine du nom Maravi",
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 61, note",
+                "notes": "Londres, John Murray pour la Royal Geographical Society, 1873, lu dans la numérisation d'Internet Archive le 10 octobre 2026. « Of this celebrated tribe it is here sufficient to remark that the name Marave or Maravi is properly the title of the numerous petty chiefs. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyanja",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "nya",
+        "namedBy": null,
+        "shortLine": "Un nom plus large, « les gens du lac », qui englobe les Chewa et leurs voisins.",
+        "periodLabel": "Écrit dès 1897 au sens d'un peuple",
+        "accounts": [
+          {
+            "period": {
+              "from": 1892,
+              "to": 1897,
+              "label": "1892-1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyanja veut dire « eau, lac ou rivière », selon le dictionnaire de David Clement Scott. Harry H. Johnston en fait le nom d'un grand ensemble, le peuple nyanja, dont les Achewa seraient une branche.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 73",
+                "notes": "Édimbourg, Foreign Mission Committee of the Church of Scotland, 1892, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Entrée Chimang'anja : « Ng'anja or nyanja, or nyasa or nyanza, are all forms of the same word, meaning water, lake, or river. »"
+              },
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 62 et 145",
+                "notes": "Londres, Methuen, 1897, lu dans la numérisation d'Internet Archive le 10 octobre 2026. Page 62 : les habitants de la plus grande partie du Nyasaland « belonged in the main to what may be called the A-nyanja stock ». Page 145 : les Achewa et les A-chipeta sont « branches of the A-nyanja stock »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

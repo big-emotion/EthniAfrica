@@ -134,5 +134,120 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Asante désigne le peuple akan du centre du Ghana, autour de Kumasi, qui se nomme lui-même Asante, Asantefo au pluriel. En anglais, on l'écrit aussi Ashanti. Nous n'avons pas trouvé de source savante qui explique l'origine du nom Asante ; une explication de la graphie Ashanti est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Asante",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "twi",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne le peuple de Kumasi, écrit « Asiante » dès 1705.",
+        "periodLabel": "Écrit depuis 1705 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Asante désigne en 1881 le pays, le peuple et la langue de l'Asante, selon le dictionnaire de Johann Gottlieb Christaller. Un habitant s'y dit ɔsanteni, les habitants Asantefo, et le dictionnaire donne Asiante comme forme d'origine du nom. Nous n'avons pas trouvé de source savante qui explique l'origine de ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 411",
+                "notes": "Bâle, Mission évangélique, 1881, lu dans l'exemplaire numérisé sur archive.org. Entrée « Asante » : « Asante [orig. Asiante […]] the country, people and language of Asante » ; « ɔsanteni, pl. a- -fo, a man or inhabitant of Asante »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1705,
+              "to": 1705,
+              "label": "1705"
+            },
+            "era": "polity",
+            "statement": "Le nom Asante apparaît sous la forme « Asiante » dans la description de la côte de l'Or du marchand néerlandais William Bosman, parue en anglais en 1705. Il y range l'Asiante et l'Akyem parmi les pays plus forts que le Denkyira. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant elle.",
+            "formAsWritten": "Asiante",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A New and Accurate Description of the Coast of Guinea",
+                "author": "William Bosman",
+                "year": 1705,
+                "url": "https://archive.org/details/b30519032",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 73",
+                "notes": "Londres, 1705, traduction anglaise d'un texte paru en néerlandais en 1704 ; lue dans l'exemplaire numérisé sur archive.org. Lettre VI, à propos du Denkyira : « all which they have taught to fear them, except Asiante and Akim, who are yet stronger than they »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ashanti",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les auteurs de langue anglaise",
+        "shortLine": "La graphie anglaise du nom Asante, écrite « Ashantee » dès 1812.",
+        "periodLabel": "Écrit depuis 1812 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Proposée en 1881"
+            },
+            "statement": "Le nom Ashanti, dans sa graphie anglaise « Ashantee », viendrait de la prononciation de l'interprète de Thomas Edward Bowdich, auteur d'un livre important sur l'Asante, qui était un homme d'Accra, selon Johann Gottlieb Christaller.",
+            "hypothesisGroup": "origine de la graphie Ashanti",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 411",
+                "notes": "Bâle, Mission évangélique, 1881, lu dans l'exemplaire numérisé sur archive.org. Entrée « Asante » : « The English spelling Ashantee is owing to the circumstance that the interpreter of Mr. Bowdich (the author of the most important book hitherto written on Asante) was an Akraman »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1812,
+              "to": 1812,
+              "label": "1812"
+            },
+            "era": "polity",
+            "statement": "Le nom Ashanti apparaît sous la forme « Ashantee » dans le récit de Henry Meredith sur la côte de l'Or, publié à Londres en 1812, qui parle du « roi d'Ashantee » et consacre un chapitre à la guerre qu'il mène sur la côte. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "An Account of the Gold Coast of Africa",
+                "author": "Henry Meredith",
+                "year": 1812,
+                "url": "https://archive.org/details/anaccountgoldco00meregoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1812, lu dans l'exemplaire numérisé sur archive.org. Table des matières, chapitre V : « Origin and History of the Ashantee War » ; dans le texte : « the king of Ashantee »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
