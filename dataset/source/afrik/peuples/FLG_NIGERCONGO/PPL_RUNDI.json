@@ -22,6 +22,7 @@
               "to": 1903,
               "label": "Usage décrit par l'auteur"
             },
+            "era": "colonial",
             "statement": "Le nom Barundi, au singulier Murundi, désigne les habitants du Burundi, quelle que soit leur appartenance : le missionnaire Jean-Michel van der Burgt écrit déjà en 1903 « un Murundi, même Muhutu », pour un Hutu du pays.",
             "aspect": "usage",
             "sources": [
@@ -153,6 +154,7 @@
               "to": 1903,
               "label": "1903"
             },
+            "era": "colonial",
             "statement": "Le nom Warundi est encore celui que retient le missionnaire Jean-Michel van der Burgt dans le titre de son livre de 1903 sur l'Urundi et les Warundi.",
             "sources": [
               {

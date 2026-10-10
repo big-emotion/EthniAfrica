@@ -151,6 +151,7 @@
               "to": null,
               "label": "Épopées d'Homère"
             },
+            "era": "polity",
             "statement": "Le nom Égypte s'écrit Aigyptos chez Homère : il y désigne d'abord le fleuve, puis aussi le pays dans les chants de l'Odyssée consacrés à Télémaque, selon le commentaire de l'édition des lettres d'Amarna de J. A. Knudtzon.",
             "sources": [
               {
@@ -322,6 +323,7 @@
               "to": null,
               "label": "Bible hébraïque"
             },
+            "era": "polity",
             "statement": "Le nom Miṣr a une forme proche dans la Bible hébraïque : la table des peuples de la Genèse nomme l'Égypte Mizraïm, à côté de Koush, selon E. A. Wallis Budge.",
             "sources": [
               {

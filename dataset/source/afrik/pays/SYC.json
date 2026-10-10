@@ -25,7 +25,7 @@
               "label": "Depuis le 29 juin 1976"
             },
             "era": "modern",
-            "statement": "Le nom Seychelles est celui de l'État indépendant depuis le 29 juin 1976 : ce jour-là, la loi britannique met fin à la responsabilité du Royaume-Uni sur les territoires qui formaient la colonie des Seychelles, selon le texte de cette loi et l'Office of the Historian.",
+            "statement": "Le nom Seychelles est celui de l'État indépendant depuis le 29 juin 1976 : ce jour-là, la loi britannique met fin à la responsabilité du Royaume-Uni sur les territoires qui formaient la colonie des Seychelles, selon le texte de cette loi et l'Office of the Historian. Le tableau des indépendances de l'Histoire générale de l'Afrique donne une autre date, le 26 juin 1976.",
             "aspect": "usage",
             "sources": [
               {
@@ -46,6 +46,16 @@
                 "tier": "official",
                 "source_kind": "government",
                 "notes": "Page lue le 10 octobre 2026. Les États-Unis reconnaissent les Seychelles le 29 juin 1976, jour où elles accèdent à l'indépendance."
+              },
+              {
+                "title": "General History of Africa, VIII: Africa since 1935, ch. 5",
+                "author": "Ali A. Mazrui",
+                "year": 1993,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_viii.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 110, table 5.1",
+                "notes": "Édition anglaise, copie non officielle hébergée par South African History Online, lue le 10 octobre 2026 ; l'édition française n'était pas accessible en ligne ce jour-là. Le tableau « Chronology of African independence » donne pour les Seychelles la date du 26.6.1976 et la Grande-Bretagne pour puissance coloniale."
               }
             ]
           },
