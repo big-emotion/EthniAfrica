@@ -124,5 +124,240 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Temne désigne un peuple du nord et du centre de la Sierra Leone, qui se nomme lui-même Temne. Il apparaît par écrit au début du XVIe siècle chez un navigateur portugais, qui écrit « teymenes ». Les Portugais ont aussi rangé ce peuple parmi les Sapes. Nous n'avons pas trouvé de source qui explique l'origine du nom Temne.",
+    "names": [
+      {
+        "nameText": "Temne",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tem",
+        "namedBy": null,
+        "shortLine": "Un nom écrit « teymenes » dès le début du XVIe siècle par un navigateur portugais.",
+        "periodLabel": "Écrit depuis le début du XVIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Temne désigne aujourd'hui une langue atlantique parlée dans le nord de la Sierra Leone par environ 1,2 million de locuteurs, selon Sullay M. Kanu et Benjamin V. Tucker. Nous n'avons pas trouvé de source qui explique l'origine de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Temne, Journal of the International Phonetic Association, vol. 40, n° 2",
+                "author": "Sullay M. Kanu et Benjamin V. Tucker",
+                "year": 2010,
+                "url": "https://doi.org/10.1017/S002510031000006X",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 247",
+                "notes": "Lu sur la page de l'article chez Cambridge University Press. Passage : « Temne has a population of about 1.2 million native speakers »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1966,
+              "to": 1967,
+              "label": "Enquêtes de 1966-1967"
+            },
+            "era": "modern",
+            "statement": "Le nom Temne désigne un peuple dont on ne sait pas avec certitude d'où il vient. Dans plusieurs chefferies, beaucoup de Temne se disent d'origine koranko, selon les traditions recueillies par E. Ade. Ijagbemi.",
+            "sources": [
+              {
+                "title": "A History of the Temne in the Nineteenth Century",
+                "author": "E. Ade. Ijagbemi",
+                "year": null,
+                "url": "https://era.ed.ac.uk/server/api/core/bitstreams/34c4862f-9270-451e-bbe0-187d6a19229f/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Thèse de doctorat, université d'Édimbourg, lue dans le texte numérisé du dépôt de l'université. La thèse ne porte pas de date dans ce texte ; les entretiens qu'elle cite datent de 1966 et 1967. Passage : « It is not certain where the Temne came from originally »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1916,
+              "to": 1916,
+              "label": "1916"
+            },
+            "era": "colonial",
+            "statement": "Le nom Temne est écrit « Timne » par Northcote W. Thomas, anthropologue du gouvernement colonial, en 1916. Il rapporte qu'en 1854 le linguiste Koelle plaçait le territoire timne au sud du fleuve Sierra Leone.",
+            "formAsWritten": "Timne",
+            "sources": [
+              {
+                "title": "Anthropological Report on Sierra Leone, Part I: Law and Custom of the Timne and Other Tribes",
+                "author": "Northcote W. Thomas",
+                "year": 1916,
+                "url": "https://archive.org/details/anthropological01thom",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 8",
+                "notes": "Londres, Harrison and Sons, 1916 ; rapport de l'anthropologue du gouvernement colonial, lu dans l'exemplaire numérisé sur archive.org. Passage : « Even in 1854 Koelle says that Timne territory is south of the “Sierra Leone” river »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom Temne est écrit « Temenes » par le marchand André Álvares d'Almada, des îles du Cap-Vert, qui le cite en 1594 parmi les nations du royaume des Sapes, avec les Baga et les Limba ; selon lui, toutes se comprennent entre elles.",
+            "formAsWritten": "Temenes",
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares d'Almada",
+                "year": 1841,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 77",
+                "notes": "Texte de 1594, daté ainsi dans la bibliographie du volume IV de l'Histoire générale de l'Afrique ; édition de Porto, 1841, lue dans l'exemplaire numérisé sur archive.org. « E neste Reino dos Sapés ha estas nações de gentes ; a saber ; Bagas, Tagunchos, Sapés, Baldes […], Temenes, Limbas, Itales, e Jalungas ; e todos estes se entendem huns aos outros »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "Début du XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Temne apparaît, sous les formes « teymenes » et « teymines », dans l'Esmeraldo de situ orbis du navigateur portugais Duarte Pacheco Pereira. Il nomme ainsi les gens d'une rivière de la côte, et tous ceux qui vivent entre les îles de Los et la Sierra Leone ; ils appellent l'or tebongo. Des mots notés par lui ont été reconnus comme du temne, selon E. Ade. Ijagbemi. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "teymenes",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, édition de Raphael Eduardo de Azevedo Basto",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1892,
+                "url": "https://archive.org/details/esmeraldodesitu00peregoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 55-56",
+                "notes": "Texte écrit au début du XVIe siècle : le volume IV de l'Histoire générale de l'Afrique le date de 1505-1506 (Madina Ly-Tall) ou de 1506-1508 (Pierre Kipré) ; édition de Raphael Eduardo de Azevedo Basto, Lisbonne, Imprensa Nacional, 1892, lue dans l'exemplaire numérisé sur archive.org. p. 55 : « a gente deste Rio som chamados teymenes » ; p. 56 : « toda a gente que vay destas Ilhas atee a dita serra por hum nome som chamados teymines & estes chamom ao ouro tebongo »."
+              },
+              {
+                "title": "A History of the Temne in the Nineteenth Century",
+                "author": "E. Ade. Ijagbemi",
+                "year": null,
+                "url": "https://era.ed.ac.uk/server/api/core/bitstreams/34c4862f-9270-451e-bbe0-187d6a19229f/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Thèse de doctorat, université d'Édimbourg, lue dans le texte numérisé du dépôt de l'université. La thèse ne porte pas de date dans ce texte ; les entretiens qu'elle cite datent de 1966 et 1967. Passage : « Vernacular terms collected by him and Fernandes have been identified as Temne »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sapes",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Portugais",
+        "shortLine": "Le nom que les Portugais donnaient aux peuples de cette côte, parmi lesquels les ancêtres des Temne.",
+        "periodLabel": "XVIe et XVIIe siècles",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage des historiens"
+            },
+            "era": "modern",
+            "statement": "Le nom Sapes désigne, selon Yves Person, les ancêtres des Temne. Les Portugais parlaient d'un « empire de Sapes », mais il n'y a jamais eu, selon lui, d'État structuré : plutôt un ensemble de chefferies et de lignages unis par une même culture.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers, premiers contacts avec les Portugais, de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 337",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage des historiens"
+            },
+            "era": "modern",
+            "statement": "Le nom Sapi était celui par lequel les Portugais désignaient les peuples de la côte, selon l'historien P. E. H. Hair, que cite E. Ade. Ijagbemi.",
+            "sources": [
+              {
+                "title": "A History of the Temne in the Nineteenth Century",
+                "author": "E. Ade. Ijagbemi",
+                "year": null,
+                "url": "https://era.ed.ac.uk/server/api/core/bitstreams/34c4862f-9270-451e-bbe0-187d6a19229f/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1, note 4",
+                "notes": "Thèse de doctorat, université d'Édimbourg, lue dans le texte numérisé du dépôt de l'université. La thèse ne porte pas de date dans ce texte ; les entretiens qu'elle cite datent de 1966 et 1967. Passage : « “Sapi” was the name by which the Portuguese referred to the coastal peoples »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom Sapes désigne chez André Álvares d'Almada, en 1594, un royaume qui s'étend du cap Verga aux bancs de Sainte-Anne et réunit plusieurs nations, dont les Temenes et les Limbas.",
+            "formAsWritten": "Sapés",
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares d'Almada",
+                "year": 1841,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 77",
+                "notes": "Texte de 1594, daté ainsi dans la bibliographie du volume IV de l'Histoire générale de l'Afrique ; édition de Porto, 1841, lue dans l'exemplaire numérisé sur archive.org. « Começa a terra destes Sapés do Cabo da Verga […] até os Baixos de Sant'Anna »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "Début du XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Sapes apparaît sous une forme proche, « capes », dans l'Esmeraldo de situ orbis de Duarte Pacheco Pereira, pour l'un des peuples de la côte entre le Rio Grande et le cap Verga. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "capes",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, édition de Raphael Eduardo de Azevedo Basto",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1892,
+                "url": "https://archive.org/details/esmeraldodesitu00peregoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 54",
+                "notes": "Texte écrit au début du XVIe siècle : le volume IV de l'Histoire générale de l'Afrique le date de 1505-1506 (Madina Ly-Tall) ou de 1506-1508 (Pierre Kipré) ; édition de Raphael Eduardo de Azevedo Basto, Lisbonne, Imprensa Nacional, 1892, lue dans l'exemplaire numérisé sur archive.org. « huma geraçom destes negros se chama banhauus & ha outra capes, & outra jalunguas »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

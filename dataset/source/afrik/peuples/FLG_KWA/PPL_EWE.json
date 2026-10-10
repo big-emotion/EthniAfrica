@@ -134,5 +134,118 @@
         "notes": "Notice de collection, objet 2010.555 : culture « Ewe peoples », Ghana, vers 1930-1950, textile tissé en coton et soie."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ewe désigne un peuple du sud-est du Ghana, du sud du Togo et du Bénin, qui se nomme lui-même Eʋe. Au XIXe siècle, les Européens appelaient son pays Krepe. Nous n'avons pas trouvé de source savante qui explique l'origine du nom Ewe.",
+    "names": [
+      {
+        "nameText": "Ewe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ewe",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne le peuple, écrit Ewe dans une grammaire publiée à Brême en 1857.",
+        "periodLabel": "Écrit depuis 1857 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "statement": "Le nom Ewe, écrit Eʋe, est en 1881 celui que les habitants donnent à leur pays, à l'est de la Volta, au-delà de l'Akwamu et d'Anum, selon le dictionnaire de Johann Gottlieb Christaller. Les gens d'Accra disent Ayigbe, les locuteurs du twi Hŭã. Nous n'avons pas trouvé de source savante qui explique l'origine du nom Ewe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 194",
+                "notes": "Bâle, Mission évangélique, 1881, lu dans l'exemplaire numérisé sur archive.org. Entrée « Hŭã » : « the country to the east of the Volta beyond Akwam and Anum, called by the inhabitants Eʋe, by the Akras Ayigbe, by the Europeans Krepē »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Ewe apparaît comme nom d'un peuple et de sa langue dans la grammaire du dialecte anlo que J. B. Schlegel publie à Brême en 1857. Il appelle Eweme, « l'espace où l'on parle l'ewe », tout le pays de cette langue, qu'il fait aller jusqu'au Dahomey. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ewe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Schlüssel zur Ewe-Sprache",
+                "author": "J. B. Schlegel",
+                "year": 1857,
+                "url": "https://archive.org/details/10589261bsb",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. V-VI",
+                "notes": "Brême, W. Valett, 1857, lu dans l'exemplaire numérisé sur archive.org. Préface : « Das ganze geographische Gebiet der Ewe-Sprache aber wird von den Eweern Eweme, d. h. derjenige Raum […], in welchem das Ewe gesprochen wird, genannt »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1550,
+              "to": 1650,
+              "label": "Fin du XVIe et première moitié du XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Ewe n'apparaît pas encore dans les écrits que le projet connaît. Les ancêtres des Ewe vivent alors à Notsie, au Togo actuel, après Ketu et Tado, puis en partent en deux grands groupes, que l'historien Adu Boahen appelle Dagboawo ou Dzieheawo au sud, Demeawo ou Numeawo au nord.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
+                "author": "A. A. Boahen",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 445-446",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Krepe",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Européens, selon Christaller",
+        "shortLine": "Le nom que les Européens donnaient au XIXe siècle au pays ewe, à l'est de la Volta.",
+        "periodLabel": "XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "statement": "Le nom Krepe est celui que les Européens donnent en 1881 au pays situé à l'est de la Volta, que ses habitants nomment Eʋe et les gens d'Accra Ayigbe, selon Johann Gottlieb Christaller.",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 194",
+                "notes": "Bâle, Mission évangélique, 1881, lu dans l'exemplaire numérisé sur archive.org. Entrée « Hŭã » : « called by the inhabitants Eʋe, by the Akras Ayigbe, by the Europeans Krepē »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
