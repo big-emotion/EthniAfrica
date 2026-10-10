@@ -37,7 +37,6 @@ describe("specialist terms in the fiches", () => {
     for (const file of [
       "famille_linguistique/FLG_BERBERE.json",
       "peuples/FLG_BANTU/PPL_FANG.json",
-      "peuples/FLG_NIGERCONGO/PPL_KIKONGO.json",
     ]) {
       expect(read(file), file).toMatch(/glottochronologie \(méthode/);
     }

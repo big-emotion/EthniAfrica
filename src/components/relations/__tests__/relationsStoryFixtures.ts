@@ -23,7 +23,7 @@ export const SOURCED_COMMERCIAL_ITEM: RelationListItem = {
   type: "commercial",
   derived: false,
   neighbor: {
-    id: "PPL_ASHANTI",
+    id: "PPL_ASANTE",
     nameMain: "Ashanti",
     languageFamilyId: "FLG_NIGER_CONGO",
   },

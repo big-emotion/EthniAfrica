@@ -160,5 +160,233 @@
         "notes": "Un des quatre ouvrages cités par Wikipédia (Rastafari, note 30, p. 32) pour l'origine du nom « Rastafari », repris de « Ras Tafari Makonnen ». Ouvrage non consulté directement."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Amhara désigne un peuple des hautes terres du centre et du nord-ouest de l'Éthiopie, qui se nomme lui-même Amara. C'était d'abord le nom d'une province, avant de devenir celui d'un peuple. On ne sait pas avec certitude d'où vient le mot ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Amara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "amh",
+        "namedBy": null,
+        "shortLine": "Une forme du nom Amhara, que les textes éthiopiens emploient aussi.",
+        "periodLabel": "Usage ancien et contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sources éthiopiennes"
+            },
+            "statement": "Le nom Amara est une des formes du nom Amhara dans les sources éthiopiennes, qui écrivent le plus souvent Amḥara et parfois Amḫara, selon l'Encyclopaedia Aethiopica.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Amhara (province historique), Encyclopaedia Aethiopica",
+                "author": "Encyclopaedia Aethiopica",
+                "year": null,
+                "url": "https://en.sewasew.com/p/amhara-(%E1%8A%A0%E1%88%9D%E1%88%90%E1%88%AB)",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article reproduit sur le site Sewasew, qui donne l'Encyclopaedia Aethiopica pour source ; copie non officielle, lue le 10 octobre 2026. L'article ne porte pas de nom d'auteur sur cette copie."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Amhara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "D'abord le nom d'une province ; écrit pour la première fois en 1322.",
+        "periodLabel": "Écrit depuis 1322 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Depuis plusieurs siècles"
+            },
+            "statement": "Le nom Amhara désigne une province historique du centre de l'Éthiopie et, depuis plusieurs siècles, un peuple ; la langue amharique en tire son nom, selon l'Encyclopaedia Aethiopica. On ne sait pas avec certitude d'où vient le mot lui-même.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Amhara (province historique), Encyclopaedia Aethiopica",
+                "author": "Encyclopaedia Aethiopica",
+                "year": null,
+                "url": "https://en.sewasew.com/p/amhara-(%E1%8A%A0%E1%88%9D%E1%88%90%E1%88%AB)",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article reproduit sur le site Sewasew, qui donne l'Encyclopaedia Aethiopica pour source ; copie non officielle, lue le 10 octobre 2026. L'article ne porte pas de nom d'auteur sur cette copie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1460,
+              "to": 1460,
+              "label": "1460"
+            },
+            "era": "polity",
+            "statement": "Le nom Amhara figure sur la carte de Fra Mauro, en 1460, sous la forme Regno Hamara, « royaume d'Amhara », selon l'Encyclopaedia Aethiopica.",
+            "sources": [
+              {
+                "title": "Amhara (province historique), Encyclopaedia Aethiopica",
+                "author": "Encyclopaedia Aethiopica",
+                "year": null,
+                "url": "https://en.sewasew.com/p/amhara-(%E1%8A%A0%E1%88%9D%E1%88%90%E1%88%AB)",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article reproduit sur le site Sewasew, qui donne l'Encyclopaedia Aethiopica pour source ; copie non officielle, lue le 10 octobre 2026. L'article ne porte pas de nom d'auteur sur cette copie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1399,
+              "label": "XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Amhara sert aussi aux auteurs arabes pour désigner le roi chrétien d'Éthiopie : l'historien al-ʿUmarī parle du « souverain d'Amhara », selon Tadesse Tamrat. Des lettres échangées avec les souverains d'Égypte disent de même « roi d'Amhara », selon l'Encyclopaedia Aethiopica.",
+            "actors": [
+              {
+                "name": "al-ʿUmarī",
+                "role": "historien arabe, contemporain du roi Amde Tsion"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "Tadesse Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 470",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              },
+              {
+                "title": "Amhara (province historique), Encyclopaedia Aethiopica",
+                "author": "Encyclopaedia Aethiopica",
+                "year": null,
+                "url": "https://en.sewasew.com/p/amhara-(%E1%8A%A0%E1%88%9D%E1%88%90%E1%88%AB)",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article reproduit sur le site Sewasew, qui donne l'Encyclopaedia Aethiopica pour source ; copie non officielle, lue le 10 octobre 2026. L'article ne porte pas de nom d'auteur sur cette copie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1322,
+              "to": 1322,
+              "label": "1322"
+            },
+            "era": "polity",
+            "statement": "Le nom Amhara figure dans un manuscrit de l'« Évangile d'or » du monastère de Däbrä Libanos daté de 1322 ; c'est probablement sa plus ancienne mention, selon l'Encyclopaedia Aethiopica. C'est la plus ancienne trace de ce nom que le projet connaît. La province et ses habitants existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Amhara (province historique), Encyclopaedia Aethiopica",
+                "author": "Encyclopaedia Aethiopica",
+                "year": null,
+                "url": "https://en.sewasew.com/p/amhara-(%E1%8A%A0%E1%88%9D%E1%88%90%E1%88%AB)",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article reproduit sur le site Sewasew, qui donne l'Encyclopaedia Aethiopica pour source ; copie non officielle, lue le 10 octobre 2026. L'article ne porte pas de nom d'auteur sur cette copie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1270,
+              "to": 1299,
+              "label": "Fin du XIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Amhara serait passé d'une province à un peuple : les rois de la dynastie fondée par Yekuno Amlak, originaire de l'Amhara, auraient été vus comme des « rois d'Amhara », et leurs gens appelés Amhara partout où ils s'installaient, selon une proposition de Chernetsov rapportée par l'Encyclopaedia Aethiopica.",
+            "hypothesisGroup": "passage du nom Amhara d'une province à un peuple",
+            "sources": [
+              {
+                "title": "Amhara (province historique), Encyclopaedia Aethiopica",
+                "author": "Encyclopaedia Aethiopica",
+                "year": null,
+                "url": "https://en.sewasew.com/p/amhara-(%E1%8A%A0%E1%88%9D%E1%88%90%E1%88%AB)",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article reproduit sur le site Sewasew, qui donne l'Encyclopaedia Aethiopica pour source ; copie non officielle, lue le 10 octobre 2026. L'article ne porte pas de nom d'auteur sur cette copie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1270,
+              "to": 1270,
+              "label": "1270, dans les récits plus tardifs"
+            },
+            "era": "polity",
+            "statement": "Le nom Amhara désigne, dans les récits sur la fin de la dynastie zagwe, la région dont Yekuno-Amlak était l'un des chefs locaux ; il prend le pouvoir en 1270, selon Tadesse Tamrat.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "Tadesse Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 465",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 800,
+              "to": 850,
+              "label": "Début du IXe siècle, selon des mentions non datées"
+            },
+            "era": "polity",
+            "statement": "Le nom Amhara désigne peut-être déjà un peuple au IXe siècle : selon Tadesse Tamrat, les plus anciennes mentions des locuteurs de ce groupe de langues laissent penser que les Amhara n'étaient pas encore tous chrétiens au début de ce siècle. Il ne dit pas de quels textes il s'agit, ni s'ils emploient ce nom.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "Tadesse Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 461",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Période axoumite"
+            },
+            "era": "polity",
+            "statement": "On ne trouve pas le nom Amhara dans les sources de la période d'Axoum, selon l'Encyclopaedia Aethiopica.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Amhara (province historique), Encyclopaedia Aethiopica",
+                "author": "Encyclopaedia Aethiopica",
+                "year": null,
+                "url": "https://en.sewasew.com/p/amhara-(%E1%8A%A0%E1%88%9D%E1%88%90%E1%88%AB)",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article reproduit sur le site Sewasew, qui donne l'Encyclopaedia Aethiopica pour source ; copie non officielle, lue le 10 octobre 2026. L'article ne porte pas de nom d'auteur sur cette copie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

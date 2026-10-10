@@ -24,7 +24,7 @@
   },
   "peoples": [
     {
-      "peopleId": "PPL_SOTHO_SUD",
+      "peopleId": "PPL_SOTHO",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
     }

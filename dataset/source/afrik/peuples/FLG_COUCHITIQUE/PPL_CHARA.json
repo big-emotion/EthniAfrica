@@ -96,7 +96,8 @@
       {
         "title": "Yilma, Aklilu – Sociolinguistic survey report on the Chara language of Ethiopia, SIL International, 2002",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

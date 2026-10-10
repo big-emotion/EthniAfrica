@@ -1,6 +1,104 @@
 [
   {
     "decision": "merged",
+    "retiredId": "PPL_SOTHO_SUD",
+    "successorId": "PPL_SOTHO",
+    "reason": "Same people (Basotho, sing. Mosotho; ISO sot; LSO, ZAF), filed under FLG_NIGERCONGO with the label « Sotho (Sud) », which is the keeper's own scope: the keeper already calls itself Southern Sotho to set the Basotho apart from the Pedi and the Tswana. The keeper is the fiche under FLG_BANTU that carries the written name history. Folded in: the exonyms « Sesotho speakers » and « Basutoland people », the Free State sub-group, the Serolong dialect, the Study.com, southafrica.net and PeopleGroups.org sources, and its population estimate (7,254,315), recorded in the keeper's demography.source. Its clans were already the keeper's (Bakwena/Bakoena, Batlokwa/Batlokoa) and its census 2011 and Ethnologue citations were already cited there. Ten patronym dossiers and the candidate queue now point at the keeper. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_SESOTHO_NATL",
+    "successorId": "PPL_SOTHO",
+    "reason": "Same people, named after its language: « Sesotho (National) » described the Basotho of Lesotho and South Africa (ISO sot), as the keeper does. Folded in: the exonyms « Sotho du Sud », « Basuto » and « Basutho », the Gauteng and Eastern Cape sub-groups, the Free State variety, the forced displacement of the Free State Basotho after the Basotho-Boer wars, the Lowlands settlement zone, the University of Cape Town, Vogue and Mofolo (Chaka, 1925) sources, and its 6,200,000 estimate, recorded in the keeper's demography.source. Not carried: its « contested » status, which the keeper already declares on its own text. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_SETSWANA_NATL",
+    "successorId": "PPL_TSWANA",
+    "reason": "Same people, named after its language: « Setswana (National) » described the Batswana of Botswana and South Africa (ISO tsn), as the keeper does. The keeper carries the written name history. Folded in: the colonial spellings « Beetjuana », « Chwana » and « Secwana », the BaTlokwa sub-group, the Sepitori and Northern Cape varieties, the Toutswe, Kaditshwene and Kweneng settlement sites, the Participedia, The Conversation, South African History Online and EBSCO sources, and its 9,000,000 estimate (with 400,000 in Zimbabwe, a country its own currentCountries did not claim), recorded in the keeper's demography.source rather than as a new country. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_ZULU_KWA_ZULU",
+    "successorId": "PPL_ZULU",
+    "reason": "Not a people of its own but the Zulu of the former KwaZulu bantustan, a regional slice of the keeper (same autonym amaZulu, ISO zul, same people group PGRP_ZULU). Folded in: the Usuthu, Cele, Ngcobo, Mchunu and Zibhebhu Mandlakazi sub-groups, the Zululand, Natal and northern KwaZulu-Natal varieties, the apartheid removals to the bantustan, the Nongoma, Ulundi, Eshowe, Empangeni and Mahlabatini settlement zones, the South African History Online (IFP), Britannica (KwaZulu), Parliament of South Africa and BBC sources, and its KwaZulu-Natal estimate (10,500,000), recorded in the keeper's demography.source. Not carried: the labels « Zulu du KwaZulu-Natal », « Zulus du bantustan » and « KwaZulu Zulu », which described the retired fiche's scope and are no one's name for the Zulu. PAT_MNTUNGWA_PRAISE now points at the keeper once, as attested. Its prose on the bantustan stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_XHOSA_CISKEI",
+    "successorId": "PPL_XHOSA",
+    "reason": "Not a people of its own but the Xhosa of the former Ciskei bantustan, chiefly the amaRharhabe branch the keeper already lists. Folded in: the abaThembu, amaNgqosini and amaGqunukhwebe sub-groups, the standard isiXhosa and isiMfengu varieties, the westward move of the amaRharhabe, the frontier-war and apartheid removals, the Fish River, King William's Town, East London, Alice/Fort Hare and Mdantsane settlement zones, the South African History Online (Ciskei), Human Rights Watch, Stats SA census 2011 and CIA World Factbook sources, and its Ciskei estimate, recorded in the keeper's demography.source. Not carried: the labels « Ciskei Xhosa » and « Xhosa du Cap-Oriental occidental », which described the retired fiche's scope, « amaRharhabe » as an exonym (it names a sub-group the keeper lists), and the gloss « (Qonce) » on East London, which is King William's Town's name. Its prose on the bantustan stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_ASHANTI",
+    "successorId": "PPL_ASANTE",
+    "reason": "Same people (Asantefo, Akan, GHA): Ashanti is the English spelling of Asante, as both fiches say. The keeper carries the autonym spelling and the written name history. Folded in: the Ghana 2021 census, Rattray (Ashanti, 1923), McCaskie (1995) and Christaller (1879) sources, the Kwabre forest settlement, and its estimate (10,000,000 with a diaspora in the United Kingdom and the United States), recorded in the keeper's demography.source. Its exonyms, clans and dialects were already the keeper's. The relation and comparison fixtures that used the id now use the keeper. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_DAGAABA",
+    "successorId": "PPL_DAGARA",
+    "reason": "Same people (Dagaaba/Dagara, ISO dga and dgi; GHA, BFA): the keeper already lists Dagaaba as an exonym and the same sub-groups and dialects, and carries the written name history. Folded in: the exonym « Dagaare » (the language's name, under which readers also look), the Ivorian presence (10,000) with its colonial-border note and settlement zone, the Joshua Project (Ghana), Craven (1975) and World Population Review sources, and its 1,200,000 estimate, recorded in the keeper's demography.source. Its Ethnologue dga citation was already cited there under the same locator. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_KONGO_SUD",
+    "successorId": "PPL_KONGO",
+    "reason": "Not a people of its own but the Bakongo of the Kongo Central province (DRC), a regional slice of the keeper (same autonym, same Guthrie H10-H16 zone, same people group PGRP_KONGO). Folded in: the Manianga, Ntandu, Ndibu, Lemfu, Mboma and Zombo sub-groups with their Kimanianga, Kintandu, Kindibu, Kibwende and Kisolongo dialects, the ISO code kng (Koongo, the DRC member of the kon macrolanguage), the Manianga/Ntandu expansion, post-Mbwila wars and urbanisation routes, seven settlement zones of the province, the Data Commons, Joshua Project, EBSCO, 101 Last Tribes, Worldometer and VCU sources, and its provincial estimate (5,500,000), recorded in the keeper's demography.source. Not carried: the labels « Bakongo du Bas-Congo », « Kongo du Kongo Central » and « Bakongo de la RDC », which described the retired fiche's scope. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_UMBUNDU",
+    "successorId": "PPL_OVIMBUNDU",
+    "reason": "Same people (Ovimbundu, ISO umb, AGO); Umbundu names the language, which the keeper itself warns readers confuse with the people. The keeper carries the written name history. Folded in: the Joshua Project source, the coastward expansion from the Bié plateau, and the Joshua Project figures (8,895,000 in Angola, 5,000 in Namibia), recorded in the keeper's demography.source. Not carried as exonyms: M'Balundu, Sele, Wambo and Bieno, which name the Ovimbundu kingdoms the keeper already lists as sub-groups. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_TONGA_LAC",
+    "successorId": "PPL_TONGA_MALA",
+    "reason": "Same people (Lakeshore Tonga, Atonga, ISO tog, MWI): same sub-groups, dialects and five sources; the keeper's own demography note measured itself against the retiree. The keeper carries the written name history and is what MWI.json points at. Folded in: the exonyms « Kitonga », « Siska » and « Sisya » (Ethnologue's alternate names for tog), the line on lake fishing and hill farming communities, and its 200,000 estimate, which now replaces the keeper's reference to the retired id in demography.source. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_HUTU_BURUNDI",
+    "successorId": "PPL_KIRUNDI_HUTU",
+    "reason": "Same people (Abahutu, ISO run): the keeper already covers the Hutu of Burundi with those of Rwanda, the DRC and Uganda. BDI.json now points at the keeper. Folded in: the exonym « Wahutu », the Burundian highland, Imbo plain and hill sub-groups, the Banyabwisha and Bafumbira, the Kinyabwisha and Kifumbira varieties, the Tanzanian presence (1,865,000), the Imbo and Buyenzi/Bururi/Gitega/Ngozi settlement zones, the 1996 UN commission report and the 2000 Arusha agreement, and its regional figures, recorded in the keeper's demography.source. Not carried: the exonym « Barundi », which names every inhabitant of Burundi and is PPL_RUNDI's autonym, and the settlement line « Bututsi, Butare », which put Butare (Rwanda) on the plateaus of Burundi. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_SWAHILI_KENYA",
+    "successorId": "PPL_SWAHILI",
+    "reason": "Not a people of its own but the Kenyan coast of the Waswahili, whom the keeper covers from Lamu to Sofala. The keeper carries the written name history. Folded in: the exonyms « Coastal people » and « People of the Coast », the Amu (Lamu), Mvita (Mombasa) and Vanga-Shimoni sub-groups, the Kipate and Kibajuni dialects, the ISO code swh (the individual language within the swa macrolanguage), the Lamu-to-Malindi and Omani migrations, the Malindi/Gedi and Vanga/Shimoni settlement zones, the UNESCO (Lamu), Africa Unfiltered, Friends of Mombasa, African World Heritage Sites, Stats Kenya and Ethnologue swh sources, and the Stats Kenya count (about 70,000 ethnic Swahili in Kenya), recorded in the keeper's demography.source. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_SWAHILI_TANZANIE",
+    "successorId": "PPL_SWAHILI",
+    "reason": "Not a people of its own but the Tanzanian coast and Zanzibar of the Waswahili, whom the keeper covers. TZA.json now points at the keeper. Folded in: the exonym « Zanzibari », the Hadimu, Tumbatu and Bagamoyo/Pangani sub-groups, the Kitumbatu, Kimrima and Kimakunduchi dialects, the Pemba, Songo Mnara, Bagamoyo and Dar es Salaam settlement zones, the UNESCO (Kilwa and Songo Mnara), NPR, National Geographic, The Conversation and Pan African Music sources, and its Tanzanian estimate (1,200,000), recorded in the keeper's demography.source. Not carried: « Shirazi » as an exonym, since it names a sub-group the keeper lists (and has its own fiche). Its Ethnologue swa citation was already cited there. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_BRONG",
+    "successorId": "PPL_BONO",
+    "reason": "Same people: both fiches give the autonym Bono (Bonofoɔ), the exonyms Brong and Abron, the language abr, the Techiman, Bono-Manso and Begho homeland and the eastern Côte d'Ivoire branch; the retiree's own text says Brong covers the Bono. The keeper carries the people's own name. Folded in: the exonym « Akan piesie », the Techiman, Dormaa, Wenchi, Berekum, Nkoranza, Drobo and Gyaman sub-groups and the abusua clans, the note on mutual intelligibility, the autochthony note and the Abron migration of about 1690, the Bondoukou/Indénié-Djuablin zone, the Ivorian presence in currentCountries, the 101 Last Tribes, Ethnologue abr, Yengafrica and Joshua Project sources, its 1,300,000 estimate (recorded in the keeper's demography.source), and its whyProblematic on the name Brong with the colonial-legacy status the classification ledger gave it. PPL_ABRON, a third fiche for the same people, was outside this decision and is left for the operator. The home-page fact now names the keeper only. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-10"
+  },
+  {
+    "decision": "merged",
     "retiredId": "PPL_JOLA",
     "successorId": "PPL_DIOLA",
     "reason": "Same people (Joola, who call themselves Ajamat; SEN, GMB, GNB): same autonym, same exonyms Diola and Jola, same sub-groups, rites and Casamance homeland, filed twice under two families. The keeper is the fiche under FLG_ATLANTIQUE that carries the written name history and that GMB and SEN already point at. The retiree's Ethnologue subgroup, Glottolog, Sage, Academia, Public Intelligence, Baum (1999) and Mark (1985) sources, its Kuwaataay, Felupe, Brin and community sub-groups, its Mlomp and Kuwaataay dialects and the Jola-Kasa code csk are folded in; its dyi code (Djimini Senoufo, not a Joola language) is not. The two population estimates (700,000 vs 900,000) could not be reconciled from the sources read and are both recorded in the keeper's demography.source. PAT_JAMMEH, PAT_SONKO and the candidate queue now point at the keeper. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
@@ -264,5 +362,117 @@
     "successorId": "PPL_BISSA",
     "reason": "Same people (Bissa, ISO bib), filed under the Niger-Congo family and named by the Mossi exonym Busansi. The keeper already lists Busansi and Busanga as exonyms. Folded in: the Kusasi use of Busanga, the Gormine dialect, an explanation of Busanga as a corruption of « bisag gua » (kept as an explanation whose source is not established, because it rested on a video and a social-media post), and its YouTube and Facebook sources at the unverified tier. Not carried: its « contested » classification, which rested on the duplicate itself; the claim that Busa is a Nilo-Saharan language, which contradicts the fiche's own Mande classification; an origin account from the ancient empire of Ghana that rested only on those two unverified sources; and a 600,000 population estimate, recorded in the keeper's demography.source. The text stays readable in the git history.",
     "decidedOn": "2026-10-03"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_LANGO",
+    "successorId": "PPL_LANGI",
+    "reason": "Same people (Lango, plural Langi; ISO laj; UGA): both fiches give Lango and Langi as the singular and plural of one name. The keeper carries the written name history. Folded in: the spellings « Lang'o » and « Lang'i » of Driberg and the British sources, eight district sub-groups (Apac, Lira, Oyam, Alebtong, Amolatar, Kole, Otuke, Kwania), three LebLango varieties, the Ateker origin and the arrival through Karamoja and Acholi, the Lango plains and the Acholi and Teso borders, the 101 Last Tribes, Lango Cultural Foundation and Academia.edu (Socio-Political History of the Langi, 1750-1909) sources, and its 2,900,000 estimate, recorded in the keeper's demography.source. Not carried: its Driberg (1923) and Ethnologue laj citations, already the keeper's. PAT_OCEN, PAT_OPIO and the candidate queue now point at the keeper. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_GURMA",
+    "successorId": "PPL_GOURMANTCHE",
+    "reason": "Same people (Gulimanceba; ISO gux; BFA, NER, BEN, TGO, GHA): Gurma is the English form of Gourmantché, as both fiches say. The keeper carries the written name history. Folded in: the spelling « Gurmanche », the Burkina, Niger, Togo and Benin Gurma sub-groups, the migration from the Gambaga escarpment and the seasonal labour migrations, the Britannica, 101 Last Tribes, Lankoande (2006), Galhano Alves (2012) and Qiraat Africa sources, and its 3,500,000 estimate, recorded in the keeper's demography.source. The Ghana and Benin country links now point at the keeper. Not carried: Swanson (1985), already cited by the keeper under another title; « Binumba », which no source it cites attests; the Bassar and the Bimoba as sub-groups, who are neighbouring peoples it only called related; its dialects and settlement zones, already the keeper's. Burkina Faso's « Autres peuples » row, linked to the Gurma, is now unlinked: the Gourmantché have their own rows there. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_FULA_FORET",
+    "successorId": "PPL_FULA",
+    "reason": "Not a people of its own but the Fulbe of the forest margins (Guinée forestière, northern Côte d'Ivoire, southern Cameroon, northern Gabon), a regional slice of the keeper (same autonym Fulbe/Pullo). Folded in: Côte d'Ivoire and Gabon as current countries, four regional sub-groups, four migration routes and settlement zones, the family names Diallo, Balde, Barry, Sow, Bah and Jallow in the keeper's clan organisation (where PAT_DIALLO and the selection manifest now cite it), the Joshua Project (Fulbe Futa, Guinea), African Voice (cited on the keeper as press at the unverified tier, since every PPL_FULA source carries an explicit tier), Ethnologue fuf and fub and CIA World Factbook (Guinea, Côte d'Ivoire) sources, and its 2,000,000 forest-Fulbe estimate, recorded in the keeper's demography.source. « Fulbe ladde » names the bush, nomadic Fulbe: it moved to PPL_FULA_NOMADES, not to the keeper. Not carried: the labels « Peul forestier » and « Fulani forestier », which described the fiche's scope; its Pular and Adamawa varieties, already the keeper's. PAT_DIALLO's two Fula entries are now one, kept as attested with both source keys. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_KIKONGO",
+    "successorId": "PPL_KONGO",
+    "reason": "Same people (Bakongo; COD, COG, AGO, GAB), named after its language: every sub-group and dialect it listed was already the keeper's. Folded in: « Kikongo », the name readers also search; ISO ldi (Laari, the Kongo variety of the Pool, which the keeper lists among its dialects); the Pointe-Noire, Pool Malebo-Kwango and north-of-Luanda settlement zones; the Yaden Africa, Study.com, UNFPA (DRC) and Glottolog sources; and its 10,000,000 estimate, recorded in the keeper's demography.source. Not carried: « BaKongo », the keeper's « Bakongo » in other capitals; « Congolais », the name of every citizen of both Congos, which would make the Kongo answer for all of them; its colonial-legacy status, which rested only on readers confusing the language name Kikongo with the people, a confusion that does not make the people's name colonial. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_NDEBELE_NORD",
+    "successorId": "PPL_NDEBELE",
+    "reason": "Same people (amaNdebele of Zimbabwe; ISO nde): the keeper already lists « Ndebele du Nord » as an exonym and carries the written name history. Folded in: « Northern Ndebele » and « Matebele »; the Transvaal capitals Kungwini, Dinaneni, Hlahlandlela and Mosega; the Matabeleland and Midlands zones; the izibongo and the clan names Khumalo, Mthethwa, Nxumalo, Ndlovu, Dlomo, Sibanda and Mpofu in the keeper's clan organisation (where PAT_MTHETHWA, PAT_NDLOVU, PAT_NXUMALO, PAT_SIBANDA and the selection manifest now cite it); the Britannica (Ndebele, Lobengula), South African History Online (Ndebele), EBSCO (Lobengula) and Joshua Project (Tabele) sources; and its 2,900,000 estimate, recorded in the keeper's demography.source. Not carried: the labels « Ndebele of Zimbabwe » and « Ndebele Proper », which described the fiche's scope; its Zansi, Enhla and Lozwi/Holi strata, the keeper's Abezansi, Abenhla and Amahole; its colonial-legacy status, the keeper declaring its own. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_NDEBELE_ZIM",
+    "successorId": "PPL_NDEBELE",
+    "reason": "Same people, a second fiche for the amaNdebele of Zimbabwe (Mthwakazi; ISO nde). Folded in: « Tabele » (the Joshua Project name); the Amaveni, descendants of captives; the raids of 1832-1837 with the defeats of Vegkop and Mosega; the South African History Online (Mfecane) source; and its 2,600,000 estimate, recorded in the keeper's demography.source. Not carried: its Britannica (Lobengula), Joshua Project and Ethnologue citations, cited once in the keeper; its Zansi, Enhla and Lozwi/Holi strata, already the keeper's. The Zimbabwe country fiche now points at the keeper. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_SOTHO_NORD",
+    "successorId": "PPL_PEDI",
+    "reason": "Same people (Bapedi; ISO nso; ZAF): « Sotho du Nord » is the administrative name the keeper already lists, with Transvaal Sotho, Marota and Dikgoshi. The keeper carries the written name history. Folded in: « Sepedi »; the Phalaborwa (Malatji) and Pulana sub-groups; the Sepulana, Phalaborwa and Pretoria Sotho varieties; the labour migrations to Kimberley and the Rand; the Leolo mountains, Greater Tzaneen, Phalaborwa and Bushbuckridge zones; the Stats SA census 2022, South Africa Gateway, PeopleGroups.org, Monnig (1967), Delius (1984) and Qiraat Africa sources; and its 6,000,000 estimate, recorded in the keeper's demography.source. Not carried: « Pedi », the keeper's main name; its Maroteng, Tau, Birwa, Kgatla, Lobedu, Hananwa and Kone sub-groups and its Ethnologue nso citation, already the keeper's. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_TSHOKWE",
+    "successorId": "PPL_CHOKWE",
+    "reason": "Same people (ISO cjk; AGO, COD, ZMB): Tshokwe is a spelling of Chokwe that the keeper already lists. The keeper carries the written name history. Folded in: the Angolan, Congolese, Zambian (Kioko) and Namibian sub-groups; three national varieties; the move from the upper Kasai and the civil-war departures; the Kasai, north-western Zambia and city zones; the Metropolitan Museum, Smarthistory, Khan Academy, CountryStudies, Ethnologue cjk and Bastin (1961) sources; and its earlier Joshua Project count (3,980,300), recorded in the keeper's demography.source. The Angola and DR Congo country fiches now point at the keeper. Not carried: its Joshua Project citation, already the keeper's. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_KARANGA_ZIM",
+    "successorId": "PPL_KARANGA",
+    "reason": "Same people (vaKaranga of Zimbabwe; ISO sna): a copy of the keeper, which carries the written name history. Its sub-groups, clans, dialects, routes, zones, six sources and population figure were all already the keeper's, so nothing was carried. The UNESCO concordance now names the keeper. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_YAO_MOZ",
+    "successorId": "PPL_YAO",
+    "reason": "Not a people of its own but the Yao of Mozambique, a regional slice of the keeper (Wayao; ISO yao). Folded in: « Ajawa »; the Chiconono, Massangulo and Lake Niassa Yao; the Chiconono variety; the trade routes from Chiconono to Kilwa and Mozambique Island; the lakeshore and Lichinga zones; the Joshua Project (Mozambique), Gordon-Conwell (Niassa, 2020) and CIA World Factbook (Mozambique) sources; and its 500,000 estimate, recorded in the keeper's demography.source. Not carried: its Makale and Massaninga sub-groups and dialects and its Ethnologue and Qiraat Africa citations, already the keeper's. The Mozambique country fiche now points at the keeper. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_YAO_MALAWI",
+    "successorId": "PPL_YAO",
+    "reason": "Not a people of its own but the Yao of Malawi, a regional slice of the keeper (Wayao; ISO yao). Folded in: « Wahiao »; the Zomba, Blantyre, Mulanje and Chiradzulu Yao; the Zomba and Blantyre varieties; the spread into the Shire Highlands; the Zomba, Blantyre, Chiradzulu and Mulanje zones; the I Am Yawo, Smithsonian Folkways and CIA World Factbook (Malawi) sources; and its 1,700,000 estimate, recorded in the keeper's demography.source. Not carried: its Machinga and Mangochi sub-groups and dialects and its Ethnologue, Joshua Project (Malawi) and Qiraat Africa citations, already the keeper's. The Malawi country fiche now points at the keeper. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_LOMWE_MOZ",
+    "successorId": "PPL_LOMWE",
+    "reason": "Not a people of its own but the Lomwe of Mozambique, a regional slice of the keeper (Alomwe; ISO ngl). Folded in: the central Zambezia and Gurue sub-groups; the Gurue and southern Nampula varieties; the migrations within Zambezia and toward Nampula; the Namuli foothills; the INE census 2017, GHDx, Public Intelligence (MCIA handbook) and 101 Last Tribes sources. Not carried: its exonyms, its Milange and Ile sub-groups and its Jenkins, Ethnologue ngl and Maputo Essential Tours citations, already the keeper's; its population figure, the keeper's Mozambique figure. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_LOMWE_MALA",
+    "successorId": "PPL_LOMWE",
+    "reason": "Not a people of its own but the Lomwe of Malawi, a regional slice of the keeper (Alomwe; ISO lon). Both fiches had a written name history: every account of the retired one is in the keeper's. Under Lomwe, its account of the name in Malawi, Bandawe's « puissante tribu lomwe » in the 1940s and the 1966 census were added; its 1943 account was the keeper's own, word for word. Under Nguru, its accounts of the captive labour from 1895, of the « good Yao and bad Nguru » of 1915-1942 and of the 1943 ban were added; its 1892 first trace was already the keeper's. Also folded in: the Mulanje, Phalombe and Thyolo-Chiradzulu varieties; the crossing of the Mulanje massif and the tea-estate migrations; the Blantyre zone; the Kamba Cultural Center source. Not carried: its district sub-groups, which the keeper lists in one line; its census, Jenkins, Ethnologue lon, Academia.edu and Britannica citations, already the keeper's. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_KIRUNDI_TUTSI",
+    "successorId": "PPL_TUTSI_BURUNDI",
+    "reason": "Filed as the Tutsi of Burundi (Kirundi), it described the Tutsi of Burundi, Rwanda, eastern Congo and Uganda together; its Burundi part is the keeper, which carries the written name history. Folded in: « Batutsi »; the Britannica (Tutsi), Joshua Project (Burundi), UNFPA (Burundi), World Population Review (Burundi) and Ethnologue run sources; and its Burundi estimate (2,100,000), recorded in the keeper's demography.source. Not carried, because they are not the Tutsi of Burundi: RWA, COD and UGA as countries, ISO kin, the Rwandan, Banyamulenge and Hima sub-groups, the Kinyarwanda and Kivu varieties, the Rwandan exiles and zones, and the UNFPA (Rwanda) and Inyambo sources; the Rwandan Tutsi have their own fiche, PPL_RWANDAIS_TUTSI. Also not carried: a migration from the Horn of Africa before 800 BC, the Hamitic thesis the keeper names as a racist colonial term. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_LUO_PAGU",
+    "successorId": "PPL_LUO",
+    "reason": "Same people (Joluo; ISO luo; KEN, TZA): the keeper carries the written name history. Folded in: eight Siaya and Winam clans (Jo-Alego, Jo-Ugenya, Jo-Gem, Jo-Kager, Jo-Kisumo, Jo-Karachuonyo, Jo-Sakwa, Jo-Asembo); the Trans-Yala and common Dholuo varieties; the departure from Bahr el-Ghazal and the crossing of Uganda; the Nyanza and lakeshore zones; the YouTube (Nyatiti), UNESCO (Kenya intangible heritage) and RSIS (Gem community) sources; and its 6,500,000 estimate, recorded in the keeper's demography.source. Not carried: « Jaluo », « Joramogi » and « Nyikwaramogi » as exonyms, which the keeper gives as self-names; « Onagi », which none of its sources attests; the Suba as a sub-group, a Bantu people the keeper describes as assimilated; its Ethnologue luo citation, already the keeper's. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "kept-distinct",
+    "retiredId": "PPL_GA_DANGME",
+    "successorId": null,
+    "reason": "Not a duplicate of PPL_GA. Ga-Dangme is the grouping of two peoples: its own text calls it a compound made to group them, it gives two self-names (Ga, Dangme), two languages (gaa, ada) and lists Ga Mashie beside the seven Dangme branches (Ada, Krobo, Shai, Prampram, Ningo, Osudoku, Kpone), which PPL_DANGME documents. It is kept as a pure grouping: its two sub-group lines point to the Ga and Dangme fiches, and the origin and history accounts it repeated from them are removed (they are on PPL_GA and PPL_DANGME). It has no name history of its own. Ghana's census category Ga-Dangme still points at it.",
+    "decidedOn": "2026-10-11"
   }
 ]

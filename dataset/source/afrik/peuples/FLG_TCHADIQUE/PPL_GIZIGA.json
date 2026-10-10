@@ -88,7 +88,8 @@
       {
         "title": "Barreteau, Daniel (1984). Description du musey (langue tchadique du Cameroun). Paris : ORSTOM. Classification des dialectes giziga",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Pontie, Guy (1973). Les Guiziga du Cameroun septentrional. Paris : ORSTOM",
@@ -99,7 +100,8 @@
       {
         "title": "Podlewski, A.M. (1966). La dynamique des principales populations du Nord-Cameroun. Cahiers ORSTOM, serie Sciences Humaines",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "SIL Ethnologue — Giziga (giz)",
@@ -116,7 +118,8 @@
       {
         "title": "101 Last Tribes — Gisiga people",
         "url": "https://www.101lasttribes.com/tribes/gisiga.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "PeopleGroups.org — South Gisiga of Cameroon (PG012783)",

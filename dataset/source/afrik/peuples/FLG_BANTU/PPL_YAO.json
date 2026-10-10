@@ -7,8 +7,17 @@
     "appellations": {
       "mainName": "Yao",
       "selfAppellation": "Wayao",
-      "exonyms": ["Yao", "Ajao", "Achawa", "Adsawa", "Haiao", "Veiao"],
-      "originOfExonyms": "Le nom Yao viendrait du nom d'une colline situee dans le nord du Mozambique (province de Niassa), une colline denudee, forme plurielle d'un nom signifiant colline sans arbres. Les formes Ajao et Achawa sont des transcriptions swahili ou europeennes anciennes. Wayao est l'autonym au pluriel (wa- etant le prefixe de classe pour les personnes en bantu). Chiyao (chi-) est le nom de la langue.",
+      "exonyms": [
+        "Yao",
+        "Ajao",
+        "Achawa",
+        "Adsawa",
+        "Haiao",
+        "Veiao",
+        "Ajawa",
+        "Wahiao"
+      ],
+      "originOfExonyms": "Les formes Ajao et Achawa sont des transcriptions swahili ou europeennes anciennes. Wayao est l'autonym au pluriel (wa- etant le prefixe de classe pour les personnes en bantu). Chiyao (chi-) est le nom de la langue.",
       "whyProblematic": null,
       "contemporaryUsage": "Yao et Wayao sont les termes courants. Chiyao designe la langue. Les gouvernements du Malawi, du Mozambique et de la Tanzanie reconnaissent les Yao comme groupe ethnique distinct.",
       "linguisticFamily": "FLG_BANTU",
@@ -23,7 +32,14 @@
       "Yao du Mozambique — zones orientales et nord de la province de Niassa (Lichinga environ 40% de la population)",
       "Yao de Tanzanie — zones meridionales de Tanzanie, district de Masasi et region de Ruvuma",
       "Makale — sous-groupe Yao du Mozambique",
-      "Massaninga — sous-groupe Yao du Mozambique septentrional"
+      "Massaninga — sous-groupe Yao du Mozambique septentrional",
+      "Yao de Chiconono — descendants du village des ancêtres, dans les montagnes du Niassa",
+      "Yao de Massangulo — nord de la province du Niassa",
+      "Yao des rives du lac Niassa — pêche et commerce, en contact avec les Chewa et les Lomwe du Malawi",
+      "Yao de Zomba — hauts plateaux de la Shire, premiers contacts avec les missionnaires écossais",
+      "Yao de Blantyre — chefferie Kapeni, en partie christianisés au XIXe siècle",
+      "Yao de Mulanje — groupe du sud, près de la frontière du Mozambique",
+      "Yao de Chiradzulu — plateaux du centre du sud du Malawi"
     ],
     "origins": {
       "ancientOrigins": "Les Yao sont un peuple bantou de l'Afrique de l'Est meridionale. Leur centre ethnologique et geographic originel se trouvait dans le petit village de Chiconono, dans la province nord-ouest de Niassa au Mozambique. La region traditionnelle s'etend entre les fleuves Rovuma et Lugenda dans le nord du Mozambique. Le nom du peuple derive du nom d'une colline (yao en langue locale, colline denudee) situee dans cette zone montagneuse. Les Yao sont apparentes aux Makonde et aux Makua du nord du Mozambique.",
@@ -32,7 +48,9 @@
         "Expansion originelle depuis les collines du Niassa (Mozambique) vers le lac Malawi",
         "Migration vers le Malawi oriental a partir des annees 1830 (est de la region de Malawi actuelle)",
         "Expansion vers les zones meridionales de Tanzanie (regions de Ruvuma et Mtwara)",
-        "Route commerciale Makanjila (lac Nyasa) vers Kilwa Kivinje (cote tanzanienne) : axe majeur des caravanes Yao"
+        "Route commerciale Makanjila (lac Nyasa) vers Kilwa Kivinje (cote tanzanienne) : axe majeur des caravanes Yao",
+        "Routes commerciales de Chiconono vers la côte swahilie de Kilwa et l'île de Mozambique, actives dès le XVIIe siècle",
+        "Extension vers les hauts plateaux de la Shire et les districts de Zomba, Blantyre, Chiradzulu et Mulanje"
       ],
       "historicalSettlementZones": [
         "Province de Niassa, Mozambique (terre ancestrale : Chiconono, region Lugenda-Rovuma)",
@@ -40,7 +58,12 @@
         "District de Machinga, Malawi (region du lac Chilwa)",
         "Malawi meridional (Southern Region) — zone de plus forte concentration actuelle",
         "Region de Ruvuma, Tanzanie (district de Masasi et ses environs)",
-        "Zambie orientale (petite communaute)"
+        "Zambie orientale (petite communaute)",
+        "Rives est du lac Niassa (lac Malawi) — pêche et commerce sur le lac",
+        "District de Lichinga, capitale de la province du Niassa (environ 40 % de Yao)",
+        "District de Zomba (Malawi) — hauts plateaux, contact avec les Lomwe",
+        "District de Blantyre (Malawi) — chefferie Kapeni",
+        "Districts de Chiradzulu et de Mulanje (Malawi) — le long de la frontière du Mozambique"
       ],
       "unificationsOrDivisions": "Avant le XIXe siecle, les Yao etaient organises en groupes relatvement independants. L'essor du commerce de l'ivoire et des esclaves au XIXe siecle favorisa la montee de puissants chefs qui se proclamerent sultans, creant de veritables royaumes Yao (Makanjila, Mataka, Kawinga). La conversion a l'islam en 1870 par Makanjila III renforça l'identite commune. La colonisation (portugaise au Mozambique, britannique au Malawi et Tanzanie) fragmenta cette unite politique.",
       "externalInfluences": "Commerce swahili-arabe des le XVIIIe siecle : acces aux tissus, aux armes a feu, et adoption de l'islam et d'elements de la culture swahili (architecture, habillement, calendrier). Traite negriere avec les Arabes et les Swahili (les Yao fournirent et transporterent des esclaves depuis l'interieur vers la cote). Acces aux armes a feu donnant un avantage militaire sur les Ngoni et les Chewa. Colonisation europeenne : Portugal (Mozambique), Royaume-Uni (Nyassaland/Malawi et Afrique orientale allemande/Tanzanie). Influence allemande en Tanzanie (resistance Yao contre la German East Africa Company, 1888-1890s).",
@@ -62,7 +85,10 @@
         "Makale — dialecte du Mozambique",
         "Massaninga — dialecte du Mozambique nord",
         "Niassa — dialecte de la province de Niassa (Mozambique)",
-        "Ruvuma — dialecte de la region de Ruvuma (Tanzanie)"
+        "Ruvuma — dialecte de la region de Ruvuma (Tanzanie)",
+        "Chiconono — parler local de la région des ancêtres (Mozambique)",
+        "Zomba — parler des hauts plateaux, en contact avec le chichewa",
+        "Blantyre — parler marqué par le contact avec les missions chrétiennes"
       ],
       "vehicularRole": "Le chiyao est parle par environ 2 millions de personnes au Malawi, Mozambique et Tanzanie. Au Malawi, la langue nationale est le chichewa ; les Yao parlent aussi le chichewa comme deuxieme langue. En Tanzanie, le swahili est la lingua franca officielle. Au Mozambique, le portugais est la langue officielle. Le chiyao contient de nombreux emprunts arabes et swahili dus aux siecles de commerce et d'islamisation. La langue est ecrite en alphabet latin etendu."
     },
@@ -81,7 +107,7 @@
     "demography": {
       "totalPopulation": 3900000,
       "referenceYear": 2025,
-      "source": "Joshua Project (2025) : 3 862 000 Yao dans tous les pays. Wikipedia EN : environ 2 millions (locuteurs de chiyao). SIL Ethnologue : 1 000 000 au Malawi, 495 000 au Mozambique, 492 000 en Tanzanie. Projection 2025 avec taux de croissance regional : environ 3,9 millions.",
+      "source": "Joshua Project (2025) : 3 862 000 Yao dans tous les pays. Wikipedia EN : environ 2 millions (locuteurs de chiyao). SIL Ethnologue : 1 000 000 au Malawi, 495 000 au Mozambique, 492 000 en Tanzanie. Projection 2025 avec taux de croissance regional : environ 3,9 millions. Pour chaque pays, d'autres estimations donnent 500 000 Yao au Mozambique (Joshua Project 2024 compte au moins 450 000 personnes) et 1 700 000 au Malawi (Joshua Project 2024 ; le CIA World Factbook compte 13 % de Yao parmi les Malawiens). Les sources lues ne permettent pas de choisir entre ces chiffres.",
       "distributionByCountry": [
         {
           "country": "MWI",
@@ -121,18 +147,287 @@
       {
         "title": "Qiraat Africa — The Yao/Wayao people of Lake Malawi (2026)",
         "url": "https://qiraatafrican.com/en/19883/the-yao-wayao-people-of-lake-malawi/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "101 Last Tribes — Yao people",
         "url": "https://www.101lasttribes.com/tribes/yao.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Yao language (yao)",
         "url": "https://www.ethnologue.com/language/yao/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Joshua Project — Yao in Mozambique",
+        "url": "https://joshuaproject.net/people_groups/15988/MZ",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Gordon-Conwell Center for Global Christianity — Niassa, Mozambique: The Makhuwa-Shirima and Yao (2020)",
+        "url": "https://www.gordonconwell.edu/center-for-global-christianity/wp-content/uploads/sites/13/2020/08/Niassa-Dossier.pdf",
+        "tier": "needs_review",
+        "source_kind": "academic"
+      },
+      {
+        "title": "CIA World Factbook — Mozambique",
+        "url": "https://www.cia.gov/the-world-factbook/countries/mozambique/",
+        "tier": "official",
+        "source_kind": "government"
+      },
+      {
+        "title": "The I Am Yawo Project — Who are the Yawo?",
+        "url": "https://www.ciyawo.org/who-are-yawo",
+        "tier": "needs_review"
+      },
+      {
+        "title": "Smithsonian Folkways — Ceremonial, dance, and story songs from the Yao people of Malawi",
+        "url": "https://folkways.si.edu/ceremonial-dance-and-story-songs-from-the-yao-people-of-malawi/world/music/album/smithsonian",
+        "tier": "referenced",
+        "source_kind": "archive"
+      },
+      {
+        "title": "CIA World Factbook — Malawi",
+        "url": "https://www.cia.gov/the-world-factbook/countries/malawi/",
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Yao désigne un peuple du nord du Mozambique, du sud du Malawi et du sud de la Tanzanie, qui se nomme lui-même Wayao. D'autres noms existent : Mujao chez les Portugais, Ajawa chez les Mang'anja et Wahiao chez les Swahili. On ne sait pas avec certitude d'où vient le nom ; ce que disent les sources est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Yao",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yao",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple et d'une montagne de son pays d'origine.",
+        "periodLabel": "Écrit dès 1798, sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Yao est aussi celui d'une montagne, le mont Yao, entre les fleuves Rovuma et Luambala : selon leurs propres traditions, les Yao viennent de cette région, rapportent Kings M. Phiri, Owen J. M. Kalinga et Hoyce H. K. Bhila. Les sources que nous avons lues ne disent pas si le peuple tient son nom de la montagne.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "Kings M. Phiri, Owen J. M. Kalinga et Hoyce H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 669, note 4",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Note 4 de la page 669 : « Les Yao, selon leurs propres traditions, proviennent de la région du « mont Yao », entre les fleuves Rovuma et Luambala ». La note renvoie aux traditions recueillies au Malawi et au livre de Yohanna B. Abdallah (1919)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1680,
+              "to": 1720,
+              "label": "Fin du XVIIe et début du XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Les Yao deviennent alors le grand peuple marchand de la région, selon Phiri, Kalinga et Bhila. Ils portent leur ivoire jusqu'à Kilwa, puis jusqu'en face de l'île de Mozambique.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "Kings M. Phiri, Owen J. M. Kalinga et Hoyce H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 690-691",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 690 : « Les Yao firent leur apparition en tant que nation commerciale dominante à la fin du XVIIe siècle et au début du XVIIIe siècle » ; page 691 : le marché de l'ivoire de Kilwa, puis Mossuril, en face de l'île de Mozambique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1798,
+              "to": 1798,
+              "label": "Lettre du 22 mars 1798, traduite en 1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Yao a une forme proche, Mujao, dans une lettre écrite à Tete le 22 mars 1798 par l'explorateur portugais Francisco José de Lacerda e Almeida : les Muizas y commercent avec les Mujao. Dans sa traduction de 1873, Richard F. Burton note que c'est la forme portugaise du nom. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Mujao",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Francisco José de Lacerda e Almeida",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35",
+                "notes": "Londres, Royal Geographical Society, 1873. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La lettre est datée de Tete, le 22 mars 1798. La page écrit : « the Muizas, in their tradings with the Mujao » ; la note de Burton précise : « This is the Portuguese form adopted by Dr. Livingstone »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wayao",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yao",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, au pluriel.",
+        "periodLabel": "Écrit dès 1919",
+        "accounts": [
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "Livre imprimé en 1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wayao figure dans le titre d'un livre écrit en chiyao par Yohanna B. Abdallah, Chiikala cha wa yao, imprimé à Zomba en 1919, selon la bibliographie de l'Histoire générale de l'Afrique. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "wa yao",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Yohanna B. Abdallah",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, bibliographie générale",
+                "author": "UNESCO",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 995",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 995 : « Abdallah, Y. B. 1919 a. Chiikala cha wa yao, Zomba, Government Printer », puis la deuxième édition, The Yaos, Londres, Frank Cass, 1973. Nous n'avons pas lu le livre lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ajawa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "nya",
+        "namedBy": null,
+        "shortLine": "La forme du nom chez les Mang'anja, reprise par les Livingstone.",
+        "periodLabel": "Écrit dès 1865",
+        "accounts": [
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "Juillet 1861, récit publié en 1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Ajawa figure dans le récit de David et Charles Livingstone : en juillet 1861, un chef voisin du mont Zomba demande de l'aide contre les Waiao, Waiau ou Ajawa, dont les bandes pillent le pays mang'anja. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Waiao, Waiau, or Ajawa",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Livingstone",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Charles Livingstone",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries; and of the Discovery of the Lakes Shirwa and Nyassa, 1858-1864",
+                "author": "David Livingstone et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/bub_gb_q0hqAyeZ_VAC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 355",
+                "notes": "Londres, John Murray, 1865. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit : « to drive off the Waiao, Waiau, or Ajawa, whose marauding parties were desolating the land »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Dictionnaire publié en 1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ajawa s'écrit achawa en mang'anja, selon David Clement Scott : le préfixe a- y désigne les gens et chi- leur langue, d'où chichawa, la langue des Ajawa, qu'il traduit ailleurs par Yao.",
+            "sources": [
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 53, article chi",
+                "notes": "Édimbourg, Comité des missions étrangères de l'Église d'Écosse, 1892, lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. L'auteur dirigeait la mission de Blantyre. L'article écrit : « achawa = the Ajawa people; chichawa = the language of the Ajawa » et « manta a chijawa = the fear the Yao were in »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wahiao",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "swh",
+        "namedBy": null,
+        "shortLine": "La forme swahilie du nom au XIXe siècle.",
+        "periodLabel": "Écrit dès 1873",
+        "accounts": [
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "Note publiée en 1873"
+            },
+            "statement": "Le nom Wahiao est, selon Richard F. Burton, la forme que préfèrent les Swahili, Mhiao pour une seule personne. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wahiao",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Richard F. Burton",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35, note",
+                "notes": "Londres, Royal Geographical Society, 1873. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La note écrit : « The Wasawahili prefer \"Mhiao,\" in the plural \"Wahiao.\" »"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

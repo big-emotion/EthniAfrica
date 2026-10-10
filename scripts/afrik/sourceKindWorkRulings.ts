@@ -13,7 +13,10 @@
  * - a government report or a country study → `government`;
  * - an encyclopedia entry (Britannica 1911 on Wikisource) → `encyclopedia`;
  * - a museum object page follows the corpus precedent for museums
- *   (metmuseum.org is `academic`).
+ *   (metmuseum.org is `academic`);
+ * - a social-media post or video takes the kind of who published it: a state
+ *   agency → `government`, a newsroom → `press`, a community group, a page
+ *   run by enthusiasts or a private person's profile → `community`.
  *
  * A page whose work cannot be identified (an anonymous Scribd upload) is
  * left out on purpose: it stays held for a person in the review file.
@@ -157,4 +160,108 @@ export const WORK_RULINGS: Readonly<Record<string, SourceKind>> = {
   "https://web.archive.org/web/20170430212955/http://www.litenlibassa.com/index.php/culture/hist/636-lhistoire-des-origines-du-peuple-bassa-du-cameroun.html":
     "community",
   "https://www.calameo.com/books/005916510ee1bd9d9abeb": "community",
+
+  // ── Pages on hosts that carry other people's pages, channels or documents,
+  //    typed by who published each one (ETNI-2007). Unidentified ones stay held. ──
+  // State tourism agencies; the US Marine Corps Intelligence Activity
+  // handbooks rehosted on publicintelligence.net; Immigration and Refugee
+  // Board of Canada responses republished on ecoi.net.
+  "https://www.facebook.com/TanzaniaTouristBoard/posts/811743427661675/":
+    "government",
+  "https://www.facebook.com/NamibiaTourismBoard/posts/the-smallest-cultural-group-in-namibia":
+    "government",
+  "https://www.facebook.com/NamibiaTourismBoard/posts/1000733048753092/":
+    "government",
+  "https://www.facebook.com/tourismecotedivoire.ci/posts/5252704381496923/":
+    "government",
+  "https://info.publicintelligence.net/MCIA-SenegalCultureGuide.pdf":
+    "government",
+  "https://info.publicintelligence.net/MCIA-MozambiqueHandbook.pdf":
+    "government",
+  "https://www.ecoi.net/en/document/1060343.html": "government",
+  "https://www.ecoi.net/en/document/1297530.html": "government",
+  "https://www.ecoi.net/en/document/1292401.html": "government",
+  "https://www.ecoi.net/de/dokument/2041625.html": "government",
+  "https://www.ecoi.net/en/document/2110281.html": "government",
+  "https://www.ecoi.net/en/document/1209225.html": "government",
+  "https://www.ecoi.net/de/dokument/2021474.html": "government",
+  // Newspapers, radio and TV newsrooms, press agencies (RTI, France 24, 3FM, IGIHE).
+  "https://www.facebook.com/Barotsenetwork/posts/the-history-of-the-kwangwa-peoplethe-kwangwas-are-an-offshoot-of-the-luyi-people/4009618459076922/":
+    "press",
+  "https://www.facebook.com/Barotsenetwork/posts/4986331461405612/": "press",
+  "https://www.facebook.com/qfmzambia/videos/chief-chitina-of-the-lala-swaka-people-of-mkushi-district-central-province-has-p/2234345853678729/":
+    "press",
+  "https://www.facebook.com/dailynationews/posts/book-review-a-history-of-the-unga-people-of-the-bangweulu-swamps/2212642275532412/":
+    "press",
+  "https://www.facebook.com/EveAfriqueNews/posts/ancient-bille-kingdom-is-agog":
+    "press",
+  "https://www.facebook.com/culturebotswana/posts/788683589930727/": "press",
+  "https://www.facebook.com/APRNEWS1/posts/connais-tu-les-kroumen": "press",
+  "https://www.facebook.com/RTIOfficiel/videos/2mn-pour-comprendre-les-toura/452107626511263/":
+    "press",
+  "https://www.youtube.com/watch?v=SYLpywVLMOE": "press",
+  "https://www.youtube.com/watch?v=Qpqx8Biibg4": "press",
+  "https://www.youtube.com/watch?v=TJc4NjTFGiw": "press",
+  "https://www.youtube.com/watch?v=zl5Z7JNW19Y": "press",
+  "https://www.youtube.com/watch?v=h6GcSiCZkMA": "press",
+  // Community groups and pages, personal profiles and channels, and the
+  // ethnographer Müller-Kosack's personal site (operator ruling: personal
+  // sites and blogs read as community).
+  "https://www.facebook.com/groups/759153900821468/posts/10082861068450658/":
+    "community",
+  "https://www.facebook.com/groups/759153900821468/posts/8230979013638882/":
+    "community",
+  "https://www.facebook.com/groups/batonga/posts/10161294996454258/":
+    "community",
+  "https://www.facebook.com/HistoricalNigeria/posts/the-bassa-nge-people-are-an-ethnic-group-in-nigeria":
+    "community",
+  "https://www.facebook.com/100090158294667/posts/terroir-the-complete-history-of-the-koulango-peopleby-francis-kofi-mensahfebruar/598624119819526/":
+    "community",
+  "https://www.facebook.com/mamprusiPeople/posts/the-nangodi-traditional-area":
+    "community",
+  "https://www.facebook.com/ethniesdeCI/posts/3360851760603000/": "community",
+  "https://www.facebook.com/ethniesdeCI/posts/jacquevillela-commune-de-jacqueville":
+    "community",
+  "https://www.facebook.com/ethniesdeCI/posts/2083382538349935/": "community",
+  "https://www.facebook.com/Akanfo/posts/the-akye-attie-are-a-separate-akan-people/":
+    "community",
+  "https://www.facebook.com/groups/924725521287406/posts/2143468266079786/":
+    "community",
+  "https://www.facebook.com/groups/369358884478832/posts/1388990782515632/":
+    "community",
+  "https://www.facebook.com/engrkogwuonyepatrick.patsallyonyeka/videos/949872800427144/":
+    "community",
+  "https://www.facebook.com/EmmanuelMotelin/posts/estimated-population-ethnic-groups-in-uganda-2025":
+    "community",
+  "https://www.facebook.com/groups/kambaculturalcenter/posts/10152471646389977/":
+    "community",
+  "https://www.facebook.com/groups/1055261108291845/posts/2305889616562315/":
+    "community",
+  "https://www.facebook.com/groups/275114380263865/posts/701811924260773/":
+    "community",
+  "https://www.facebook.com/NewdawuroMedia/posts/": "community",
+  "https://www.facebook.com/ZarmaSonghai/posts/the-kurtey-peoplethe-kurtey-were-formed/":
+    "community",
+  "https://www.facebook.com/groups/toknamassana.officiel/": "community",
+  "https://www.facebook.com/TheAfricanHistoryChannelFB/posts/the-tolekakay-of-the-musgum-traditional-architecture-between-the-lower-logone-an/394568216210204/":
+    "community",
+  "https://www.youtube.com/watch?v=4IZ1VmvZDBc": "community",
+  "https://www.youtube.com/watch?v=gHxC89k7V-c": "community",
+  "https://www.youtube.com/watch?v=aHPMWp8wE6w": "community",
+  "https://www.youtube.com/watch?v=JsYP_8AIsxw": "community",
+  "https://www.mandaras.info/MofuGroups.html": "community",
+  "https://www.mandaras.info/Podokwa.html": "community",
+  "https://www.mandaras.info/bull-festival/bull-festival-slides.htm":
+    "community",
+  // UNESCO's channel, a researchers' network webinar, Wikitongues, and the
+  // Singing Wells field-recording archive.
+  "https://www.youtube.com/watch?v=IgZV9nR-m2o": "intergovernmental",
+  "https://www.youtube.com/watch?v=YBw5KY7LNoc": "academic",
+  "https://www.youtube.com/watch?v=D7FgPZhheZ0": "ngo",
+  "https://www.youtube.com/watch?v=mAW1JIIufgE": "archive",
+  // Google Arts & Culture stories, typed by the institution that wrote them.
+  "https://artsandculture.google.com/story/burji-farmers-of-the-desert-the-story-of-the-expert-agriculturalist-national-museums-of-kenya/GwWxLDJUezlLIA":
+    "academic",
+  "https://artsandculture.google.com/story/bunce-island-and-the-quot-gullah-connection-quot-world-monuments-fund/GAXhbi_DSY0Yvg?hl=en":
+    "ngo",
 };

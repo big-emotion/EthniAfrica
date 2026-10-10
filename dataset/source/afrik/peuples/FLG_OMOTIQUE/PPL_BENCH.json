@@ -92,7 +92,8 @@
       {
         "title": "101 Last Tribes — Bench people",
         "url": "https://www.101lasttribes.com/tribes/bench.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Rapold, Christian. 2006. Towards a Grammar of Benchnon. Dissertation, Leiden University",
@@ -102,7 +103,8 @@
       {
         "title": "Recensement national de la population et du logement de l'Éthiopie 2007 (CSA). Données Bench Maji Zone",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Fernyhough, Timothy D. 1994. Human rights and precolonial Africa. In: Human Rights and Governance in Africa, pp. 55-99",

@@ -117,7 +117,8 @@
       {
         "title": "Africa 101 Last Tribes – The Okavango Delta Peoples of Botswana",
         "url": "https://www.101lasttribes.com/tribes/okavango.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

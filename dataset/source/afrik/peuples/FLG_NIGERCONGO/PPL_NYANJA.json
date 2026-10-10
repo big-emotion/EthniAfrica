@@ -4,6 +4,245 @@
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["MWI", "ZMB", "MOZ", "ZWE"],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Nyanja désigne un peuple des rives du lac Malawi et du Shire, au Malawi, au Mozambique et en Zambie, qui se nomme lui-même Anyanja, « les gens du lac », ou Amang'anja. Nyanja est aussi le nom de sa langue, le chinyanja ; au Malawi, le président Banda a voulu en faire des Chewa. Nous présentons plus bas ce que disent les sources sur ces noms.",
+    "names": [
+      {
+        "nameText": "Anyanja",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nya",
+        "namedBy": null,
+        "shortLine": "« Les gens du lac » : le nom que se donnent les riverains du lac Malawi et du Shire.",
+        "periodLabel": "Usage décrit par les auteurs",
+        "accounts": [
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Anyanja veut dire « les gens de l'eau », du lac ou du fleuve : nyanja, nyasa et nyanza sont un même mot qui signifie eau, lac ou rivière, et les a-nyanja, wa-nyasa ou ma-ng'anja sont simplement les riverains, selon le dictionnaire de David Clement Scott.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "préface, p. 73 et p. 141",
+                "notes": "Édimbourg, Comité des missions étrangères de l'Église d'Écosse, 1892, lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur dirigeait la mission de Blantyre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Après l'indépendance"
+            },
+            "era": "modern",
+            "statement": "Le nom Anyanja est celui que se donnaient depuis longtemps, avec Amang'anja, les gens du sud du Malawi ; après l'indépendance, le président Hastings Kamuzu Banda leur affirme qu'ils sont « en fait Achewa », selon Leroy Vail et Landeg White.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 180",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1865,
+              "label": "Récit publié en 1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Anyanja a une forme proche, Wanyassa, chez David et Charles Livingstone : les Arabes, écrivent-ils, changent les préfixes et disent « Wanyassa, the people of Nyassa », les gens du Nyassa, pour les Manganja. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Wanyassa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries",
+                "author": "David et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/narrativeofexpe00livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 42, note",
+                "notes": "Londres, John Murray, 1865, récit de l'expédition de 1858-1864, lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Anyanja désigne chez Harry H. Johnston le fonds de population de la plus grande partie du Nyasaland, « the A-nyanja stock », que des Portugais plus anciens appelaient Amaravi.",
+            "formAsWritten": "A-nyanja",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 62",
+                "notes": "Londres et New York, 1897, lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur était le commissaire britannique du protectorat."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyanja",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "nya",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue, le chinyanja, et par extension du peuple.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1918,
+              "to": 1947,
+              "label": "Usage décrit par les auteurs"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyanja sert aussi pour la langue, le chinyanja, qu'un fonctionnaire du Nyasaland proposait dès 1918 d'enseigner dans tout le pays ; elle devient langue officielle en 1947 avec le tumbuka, selon Leroy Vail et Landeg White. Le chewa et le mang'anja en sont des variantes, ajoutent-ils.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 164-166",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyanja désigne aujourd'hui au Mozambique la langue cinyanja, parlée dans les provinces du Niassa, de Zambézie et de Tete, et aussi au Malawi et en Zambie, selon Armindo Ngunga et Osvaldo G. Faquir.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Padronização da ortografia de línguas moçambicanas : relatório do III Seminário",
+                "author": "Armindo Ngunga et Osvaldo G. Faquir",
+                "year": 2012,
+                "url": "https://www.letras.ufmg.br/laliafro/PDF/Ngunga,%20Armindo%20Padronizacao%20ortografica%20-%203nd%20correcao.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 95",
+                "notes": "Maputo, Centro de Estudos Africanos, Université Eduardo Mondlane, 2012 ; lu dans une copie non officielle mise en ligne par l'Université fédérale du Minas Gerais, le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "1859"
+            },
+            "era": "polity",
+            "statement": "Le nom Nyanja apparaît, comme simple mot, chez David et Charles Livingstone : leurs guides parlent de « Nyanja Mukulu », le grand lac, et ils notent que nyanja veut dire en général un marais, un lac, une rivière ou même un ruisseau. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Nyanja Mukulu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries",
+                "author": "David et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/narrativeofexpe00livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 80",
+                "notes": "Londres, John Murray, 1865, récit de l'expédition de 1858-1864, lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mang'anja",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nya",
+        "namedBy": null,
+        "shortLine": "Un autre nom que se donnent les riverains du Shire, au sud du Malawi.",
+        "periodLabel": "Écrit dès 1865",
+        "accounts": [
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mang'anja désigne, selon David Clement Scott, la partie du peuple riverain qui vit sur le Shire et le Zambèze ; son dictionnaire de 1892 porte le nom de cette langue.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "préface et p. 73",
+                "notes": "Édimbourg, Comité des missions étrangères de l'Église d'Écosse, 1892, lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur dirigeait la mission de Blantyre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1865,
+              "label": "Récit publié en 1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Mang'anja s'écrit Manganja chez David et Charles Livingstone, qui le donnent comme un pluriel et nomment ainsi les peuples des hautes terres du Shire. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Manganja",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries",
+                "author": "David et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/narrativeofexpe00livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 42, note, et p. 75",
+                "notes": "Londres, John Murray, 1865, récit de l'expédition de 1858-1864, lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Nyanja",

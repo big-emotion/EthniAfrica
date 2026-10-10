@@ -130,12 +130,14 @@
       {
         "title": "Biogreat TV — History of the Masa tribe of Cameroon and Chad (YouTube)",
         "url": "https://www.youtube.com/watch?v=JsYP_8AIsxw",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Tokna Massana Facebook group — Guruna/Guru walla",
         "url": "https://www.facebook.com/groups/toknamassana.officiel/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

@@ -114,12 +114,14 @@
       {
         "title": "Facebook — Dawro Dinka world's longest woodwind",
         "url": "https://www.facebook.com/NewdawuroMedia/posts/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Recensement national de la population et du logement de l'Éthiopie 2007 (CSA). Données Dawro Zone",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   }

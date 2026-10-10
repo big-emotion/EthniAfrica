@@ -118,5 +118,175 @@
         "source_kind": "press"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ijaw désigne un peuple du delta du Niger, au Nigeria, qui se nomme lui-même Izon. D'autres noms existent : Ijo, la forme qu'emploient les historiens, et Jos, une forme proche qu'écrit un navigateur portugais au début du XVIe siècle. Nous n'avons pas trouvé de source qui explique l'origine de ces noms ; ce que nous savons de leur histoire est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Izon",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ijc",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue et du peuple ; son origine n'est pas expliquée par nos sources.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Izon est celui que le catalogue Glottolog retient pour la langue de ce peuple, à côté d'Ijo, d'Izo, d'Uzo et d'Ijaw. Nous n'avons pas trouvé de source qui explique son origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Izon",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/izon1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche de la langue, code ISO 639-3 ijc, consultée le 10 octobre 2026. Noms alternatifs relevés : Ijaw, Ijo, Izo, Izon, Uzo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ijo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme du nom qu'emploient les historiens du delta du Niger.",
+        "periodLabel": "Écrit sous une forme proche vers 1506 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ijo est la forme qu'emploie l'historien Ebiegberi Joe Alagoa pour ce peuple du delta du Niger. Selon lui, le delta central forme le cœur du pays ijo, d'où des groupes sont partis vers l'est et vers l'ouest du delta.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 15 : Fon and Yoruba: the Niger delta and the Cameroon",
+                "author": "Ebiegberi Joe Alagoa",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 445",
+                "notes": "Édition anglaise de l'UNESCO, copie non officielle mise en ligne par South African History Online. Lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "Article publié en 1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Ijo est écrit « Ejos » ou « Ejomen » par l'explorateur britannique Richard Burton en 1863, qui ajoute qu'on dit couramment « Joemen ». Il décrit un grand peuple des rives de l'Escravos, du Forcados, du Ramos et du Dodo jusqu'aux rivières Nun et Brass, selon la citation qu'en donne George Kimble.",
+            "formAsWritten": "Ejos",
+            "actors": [
+              {
+                "name": "Richard Burton",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, traduit et annoté par George H. T. Kimble",
+                "author": "Duarte Pacheco Pereira, traduit par George H. T. Kimble",
+                "year": 1937,
+                "url": "https://archive.org/details/in.gov.ignca.1658",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 129, note du traducteur",
+                "notes": "Londres, Hakluyt Society, 2e série, vol. 79. La note du traducteur sur le Rio dos Ramos identifie les Jos aux « Ejos or Ejomen » décrits par Richard Burton dans le Fraser's Magazine en 1863. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1506,
+              "to": 1508,
+              "label": "Écrit vers 1506-1508"
+            },
+            "era": "polity",
+            "statement": "Une forme proche du nom Ijo, Jos, figure dans l'Esmeraldo de situ orbis du navigateur portugais Duarte Pacheco Pereira, écrit vers 1506-1508. Il nomme ainsi les gens des rivières du delta, du Rio dos Ramos jusqu'au Rio Real. George Kimble, qui traduit le livre en 1937, y reconnaît les « Ejos » décrits par Richard Burton. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Jos",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Duarte Pacheco Pereira",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis",
+                "author": "Duarte Pacheco Pereira, édité par Raphael Eduardo de Azevedo Basto",
+                "year": 1892,
+                "url": "https://archive.org/details/esmeraldodesitu00peregoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 74-76",
+                "notes": "Texte portugais écrit vers 1506-1508, publié à Lisbonne par l'Imprensa Nacional en 1892. Livre II, chapitres 8 et 9. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "Esmeraldo de situ orbis, traduit et annoté par George H. T. Kimble",
+                "author": "Duarte Pacheco Pereira, traduit par George H. T. Kimble",
+                "year": 1937,
+                "url": "https://archive.org/details/in.gov.ignca.1658",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 129-132",
+                "notes": "Londres, Hakluyt Society, 2e série, vol. 79. La note du traducteur sur le Rio dos Ramos identifie les Jos aux « Ejos or Ejomen » décrits par Richard Burton dans le Fraser's Magazine en 1863. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ijaw",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une graphie anglaise du nom Ijo.",
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ijaw figure, avec Ijo, Izo et Uzo, parmi les noms de la langue izon que recense le catalogue Glottolog. Nous n'avons pas trouvé de source qui date sa première apparition.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Izon",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/izon1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche de la langue, code ISO 639-3 ijc, consultée le 10 octobre 2026. Noms alternatifs relevés : Ijaw, Ijo, Izo, Izon, Uzo."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

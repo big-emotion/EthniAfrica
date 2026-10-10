@@ -33,8 +33,12 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * lowers this line in the same change; NEVER raise it.
  *
  * 1010 -> 1002, measured 2026-09-12; 1002 -> 1000 after the Namibia source review.
+ * 912 -> 911 on 2026-10-10: a needs_review citation left with the duplicate
+ * people fiches folded into their keepers. 911 -> 910 on 2026-10-11: African
+ * Voice, carried onto PPL_FULA, whose sources all carry an explicit tier, is
+ * cited at the unverified tier.
  */
-export const NEEDS_REVIEW_RATCHET = 912;
+export const NEEDS_REVIEW_RATCHET = 910;
 
 /** The doctrine's three tiers, plus the numeric tiers the name/relation/migration fiches still carry. */
 const TIERS_WITH_AUTHORITY = new Set<unknown>([

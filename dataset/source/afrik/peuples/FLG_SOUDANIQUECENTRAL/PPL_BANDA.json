@@ -126,7 +126,8 @@
       {
         "title": "101 Last Tribes — Banda",
         "url": "https://www.101lasttribes.com/tribes/banda.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "ICPhS 2019 — Reanalyzing the Banda-Linda Vowel System",

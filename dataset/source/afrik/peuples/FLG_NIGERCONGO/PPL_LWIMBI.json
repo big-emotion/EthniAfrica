@@ -86,7 +86,8 @@
       {
         "title": "101 Last Tribes – Ganguela people",
         "url": "https://www.101lasttribes.com/tribes/ganguela.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

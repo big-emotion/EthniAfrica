@@ -98,7 +98,8 @@
       {
         "title": "Seychelles Population 2026 – World Population Review",
         "url": "https://worldpopulationreview.com/countries/seychelles",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Seychelles – Encyclopaedia Britannica, 2026",

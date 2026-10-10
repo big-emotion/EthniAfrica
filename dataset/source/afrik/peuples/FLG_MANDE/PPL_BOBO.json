@@ -90,7 +90,8 @@
       {
         "title": "101 Last Tribes — Bobo people",
         "url": "https://www.101lasttribes.com/tribes/bobo.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Gateway Africa Safaris — Bobo Tribe",
@@ -118,7 +119,8 @@
       {
         "title": "Olson, James S. Peoples of Africa. Westport : Greenwood Press, 1996",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   }

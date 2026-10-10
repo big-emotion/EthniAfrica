@@ -93,7 +93,8 @@
       {
         "title": "Krachi West district population – CityPopulation.de",
         "url": "https://www.citypopulation.de/en/ghana/admin/oti/1505__krachi_west/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "Krachi East Municipality – Department of Urban Roads Ghana",

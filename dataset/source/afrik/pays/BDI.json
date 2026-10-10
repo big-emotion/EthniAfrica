@@ -259,7 +259,7 @@
           "Hutu (terme historique non péjoratif). \"Races du Burundi\" (catégorisation coloniale problématique). L'administration coloniale belge a figé les catégories Hutu/Tutsi en termes \"racialisés\"",
           "ce qui a exacerbé les tensions sociales et politiques."
         ],
-        "peopleId": "PPL_HUTU_BURUNDI",
+        "peopleId": "PPL_KIRUNDI_HUTU",
         "mainRegion": "Plateaux du Burundi (majorité)",
         "languages": ["Kirundi", "français", "anglais"],
         "languageFamily": "FLG_BANTU",
@@ -325,7 +325,8 @@
       {
         "title": "Recensements nationaux burundais",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "ONU – Données démographiques 2025",
@@ -376,7 +377,7 @@
       "peoples": [
         {
           "name": "Hutu (Burundi)",
-          "peopleId": "PPL_HUTU_BURUNDI",
+          "peopleId": "PPL_KIRUNDI_HUTU",
           "region": "Plateaux du Burundi",
           "languageFamily": "FLG_BANTU",
           "percentageInCountry": 85

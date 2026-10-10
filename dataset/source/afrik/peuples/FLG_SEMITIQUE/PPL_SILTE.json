@@ -144,12 +144,14 @@
       {
         "title": "Dirk Bustorf 2011 : Lebendige Überlieferung : Geschichte und Erinnerung der muslimischen Silt'e Äthiopiens. Wiesbaden : Harrassowitz",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Nishi Makoto 2005 : Making and Unmaking of the National-State and Ethnicity in Modern Ethiopia. African Study Monographs, Supplementary Issue 29",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }

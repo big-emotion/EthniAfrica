@@ -139,7 +139,8 @@
       {
         "title": "France 24 / YouTube – Djaka festival en Côte d'Ivoire",
         "url": "https://www.youtube.com/watch?v=SYLpywVLMOE",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Scribd – INTRODUCTION Dida",

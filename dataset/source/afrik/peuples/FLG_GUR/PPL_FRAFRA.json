@@ -90,12 +90,14 @@
       {
         "title": "101lasttribes — Frafra people",
         "url": "https://www.101lasttribes.com/tribes/frafra.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "101lasttribes — Gurenne people",
         "url": "https://www.101lasttribes.com/tribes/gurenne.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Joshua Project — Gur, Farefare in Ghana",

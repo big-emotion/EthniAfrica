@@ -104,7 +104,8 @@
       {
         "title": "CityPopulation.de — Kavango East census 2023",
         "url": "https://www.citypopulation.de/en/namibia/admin/02__kavango_east/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       },
       {
         "title": "GlobalPopulations.com — Kavango West 2025",

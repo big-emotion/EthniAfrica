@@ -140,5 +140,217 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Habesha désigne des peuples des hauts plateaux d'Éthiopie et d'Érythrée, surtout les Amhara et les Tigréens, qui l'emploient eux-mêmes. D'autres noms existent : Ḥabash chez les auteurs arabes, et Abyssins dans les langues d'Europe. Les sources que nous avons lues n'expliquent pas avec certitude l'origine du nom Habesha ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Habesha",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom très ancien, gravé dès le IVe siècle dans les titres des rois d'Axoum.",
+        "periodLabel": "Écrit dès le IVe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 300,
+              "to": 399,
+              "label": "IVe siècle (période décrite)"
+            },
+            "era": "polity",
+            "statement": "Une forme proche du nom Habesha, Habesans, désigne chez Tekle-Tsadik Mekouria un groupe de souche sémitique qu'il range, avec les Sabéens et les Himyar, parmi les ancêtres des Tigréens et des Amhara.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 16 : Axoum chrétienne",
+                "author": "Tekle-Tsadik Mekouria",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 438",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 300,
+              "to": 399,
+              "label": "IVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Habesha apparaît sous la forme Ḥabasha dans les titres du roi Ezana, gravés sur ses monuments : « roi d'Axum, de Himyar, de Kasou, de Saba, de Ḥabasha, de Raydan et Salhin, des Tsiamo et des Bēdja », selon Tekle-Tsadik Mekouria. C'est la plus ancienne trace de ce nom dont le projet connaisse la forme écrite. Les peuples qu'il désigne vivaient déjà là avant lui.",
+            "formAsWritten": "Ḥabasha",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ezana",
+                "role": "roi d'Axoum, dont les inscriptions portent ces titres"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 19 : La Corne de l'Afrique",
+                "author": "Tekle-Tsadik Mekouria",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 596",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 175,
+              "to": 230,
+              "label": "Fin du IIe – début du IIIe siècle"
+            },
+            "statement": "Le nom Habesha a peut-être une trace plus ancienne : des inscriptions sabéennes de la fin du IIe et du début du IIIe siècle parlent des « Abyssiniens », ou Axoumites, en guerre au Yémen, selon Y. M. Kobishanov. La traduction ne donne pas la forme écrite dans ces inscriptions.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 15 : Axoum du Ier au IVe siècle : économie, système politique, culture",
+                "author": "Y. M. Kobishanov",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 409",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ḥabash",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": "les auteurs arabes",
+        "shortLine": "Le nom arabe des Éthiopiens, le peuple d'Afrique que les auteurs arabes connaissaient le mieux.",
+        "periodLabel": "Écrit dès le VIIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sources arabes médiévales"
+            },
+            "statement": "Le nom Ḥabash, ou Ḥabasha, désigne les Éthiopiens dans les sources arabes médiévales, qui rangent les Africains en quatre groupes : les Sūdān, les Ḥabash, les Zandj et les Nūba. Certains auteurs l'étendent à des peuples bien plus lointains, jusqu'au Niger, selon Yusof Talib.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 26 : La diaspora africaine en Asie",
+                "author": "Yusof Talib, à partir d'une contribution de Faisal Samir",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 757",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Géographes arabes"
+            },
+            "statement": "Le nom Ḥabash est l'un des termes généraux que les géographes arabes reprennent sans toujours préciser de quels peuples il s'agit : on trouve « invariablement » des Ḥabash en Éthiopie, selon Dierk Lange.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 15 : La région du Tchad en tant que carrefour",
+                "author": "Dierk Lange, en collaboration avec Bawaro W. Barkindo",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 468",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'islam et ses débuts"
+            },
+            "statement": "Le nom Ḥabash aurait donné celui des Aḥābīsh, les mercenaires à qui La Mecque confiait la défense de ses caravanes, selon Yusof Talib, qui note qu'ils comptaient aussi d'autres Africains et des Arabes.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 26 : La diaspora africaine en Asie",
+                "author": "Yusof Talib, à partir d'une contribution de Faisal Samir",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 753",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 730,
+              "label": "Avant 730"
+            },
+            "statement": "Le nom Ḥabash figure dans une liste de peuples du traditionniste yéménite Wahb ibn Munabbih, mort vers 730, que l'auteur Ibn Qutayba a rapportée plus tard, selon Dierk Lange. C'est la plus ancienne trace de cette forme arabe que le projet connaît. Les peuples qu'elle désigne vivaient déjà là avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 15 : La région du Tchad en tant que carrefour",
+                "author": "Dierk Lange, en collaboration avec Bawaro W. Barkindo",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 476",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Abyssins",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom employé longtemps en Europe ; il viendrait de l'arabe.",
+        "periodLabel": "Usage européen ancien",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Abyssin viendrait de l'arabe Habesh, que l'Encyclopaedia Britannica de 1911 traduit par « mélangé » et présente comme un surnom moqueur donné par les Arabes aux habitants du plateau. Elle tient ce nom pour géographique plutôt que lié à un peuple.",
+            "hypothesisGroup": "origine du nom Abyssin",
+            "sources": [
+              {
+                "title": "Abyssinia, dans Encyclopædia Britannica, 11e édition, vol. 1",
+                "author": "Frank R. Cana et Albert E. W. Gleichen",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/Page:EB1911_-_Volume_01.djvu/119",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 88",
+                "notes": "Paragraphe Ethnology, lu dans la transcription de Wikisource le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

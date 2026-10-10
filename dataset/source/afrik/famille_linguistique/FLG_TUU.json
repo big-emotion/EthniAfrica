@@ -3,6 +3,154 @@
   "nameFr": "Tuu",
   "nameEn": "Tuu (Taa-ǃKwi)",
   "classificationStatus": "reconstructive",
+  "nameHistory": {
+    "summary": "Le nom tuu désigne une famille de langues à clics du Botswana et de Namibie, comme le taa, dont beaucoup ont disparu. C'est un nom de linguiste, tiré d'un mot de ces langues qui veut dire « les gens » ; on a aussi dit khoïsan du Sud. Les sources que nous avons lues s'accordent sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Tuu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste Tom Güldemann, d'après un mot de ces langues",
+        "shortLine": "Un nom de linguiste de 2005, tiré d'un mot de ces langues qui veut dire « les gens ».",
+        "periodLabel": "Depuis 2005",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom tuu reprend un mot ancien, tuu, « les gens », dont on trouve une trace dans toutes les langues de la famille assez bien connues, selon Tom Güldemann. Dorothea Bleek l'avait déjà noté sous la forme tu, traduit par « homme » ou « qui ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3, 4 et 7-8",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "statement": "Le nom tuu est proposé par le linguiste Tom Güldemann pour remplacer khoïsan du Sud. Selon lui, ce nom géographique laisse croire à une parenté de toutes les langues dites khoïsan, qui n'est pas démontrée. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Tom Güldemann",
+                "role": "a proposé le nom dans une étude publiée à Leipzig en 2005"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4 et p. 8",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "2000"
+            },
+            "statement": "On parle alors de ǃui-taa pour désigner cette famille, d'après le mot « personne » dans ses deux grands groupes, chez Tom Güldemann et Rainer Voßen, selon Tom Güldemann.",
+            "formAsWritten": "!Ui-Taa",
+            "before": true,
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Khoïsan du Sud",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des savants européens et américains",
+        "shortLine": "L'ancien nom géographique de la famille, abandonné par une partie des linguistes.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1930,
+              "to": 1963,
+              "label": "1930-1963"
+            },
+            "statement": "Le nom khoïsan du Sud désigne ces langues chez Isaac Schapera en 1930 et chez Joseph Greenberg en 1963, selon Tom Güldemann. Greenberg y voit le groupe le plus divers des langues khoïsan d'Afrique australe.",
+            "formAsWritten": "Southern Khoisan",
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 336"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "1927"
+            },
+            "statement": "Le nom de Bushmen du Sud est celui que donne à ces langues la linguiste Dorothea Bleek à partir de 1927, selon Tom Güldemann.",
+            "formAsWritten": "Southern Bushman",
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues à clics du Botswana et de Namibie, comme le taa. Tuu, nom proposé vers 2005 par Tom Güldemann, vient d'un mot qui veut dire « personne » dans les deux branches.",

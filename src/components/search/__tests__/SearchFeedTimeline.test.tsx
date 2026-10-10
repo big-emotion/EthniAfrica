@@ -87,4 +87,65 @@ describe("SearchFeed — the name-history timeline lens", () => {
       screen.queryByRole("list", { name: /Histoire du nom/ })
     ).not.toBeInTheDocument();
   });
+
+  // « Yoruba » names a people, whose name history is written, and a language,
+  // whose history is not yet. The timeline must not crown the people as the
+  // page's answer nor drop the language without a word (REQ-178).
+  describe("when the searched name answers to several subjects", () => {
+    const yorubaPeople: SearchResult = {
+      ...lingala,
+      type: "people",
+      id: "PPL_YORUBA",
+      name: "Yoruba",
+      nameEn: "Yoruba",
+    };
+    const yorubaLanguage: SearchResult = {
+      ...lingala,
+      type: "language",
+      id: "yor",
+      name: "Yoruba",
+      nameEn: "Yoruba",
+    };
+
+    function renderSharedName() {
+      return render(
+        <SearchFeed
+          query="Yoruba"
+          language="fr"
+          state="exact"
+          results={[yorubaPeople, yorubaLanguage]}
+          subjects={[yorubaPeople, yorubaLanguage]}
+          leads={[]}
+          companions={companions}
+          nameHistories={[
+            { subject: yorubaPeople, nameHistory: LINGALA_HISTORY },
+          ]}
+        />
+      );
+    }
+
+    // @req REQ-178
+    it("titles the page with the searched name and crowns no subject", () => {
+      renderSharedName();
+
+      const titles = screen.getAllByRole("heading", { level: 1 });
+      expect(titles).toHaveLength(1);
+      expect(titles[0]).toHaveTextContent("Yoruba");
+      expect(
+        screen.getByRole("heading", { level: 2, name: "Lingala" })
+      ).toBeInTheDocument();
+    });
+
+    // @req REQ-178
+    it("names the subject whose history is not written yet and leads to its answer", () => {
+      renderSharedName();
+
+      const others = screen.getByRole("region", {
+        name: "Ce nom désigne aussi",
+      });
+      expect(others).toHaveTextContent("Langue · Yoruba");
+      fireEvent.click(screen.getByRole("button", { name: "Voir tout" }));
+      expect(lens("Tout")).toHaveAttribute("aria-pressed", "true");
+    });
+  });
 });

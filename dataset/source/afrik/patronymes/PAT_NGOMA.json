@@ -6,7 +6,7 @@
   },
   "id": "PAT_NGOMA",
   "nameMain": "Ngoma",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Ngoma",
@@ -23,10 +23,17 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Une étude des Kongo du Congo-Brazzaville décrit le clan, la kanda, comme transmis par les femmes et marqué par un nom en ki- ; les noms donnés à la naissance y sont des noms personnels. Le nom Ngoma ne porte pas ce préfixe.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["soret-1959-kongo"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "Une explication range Ngoma parmi les noms de famille kongo tirés d'objets, avec Mpanu (pagne), Matadi (pierres), Mbele (couteau) et Mbungu (vase) : Ngoma y est glosé « tam-tam ». Elle décrit les noms du Kongo Central, en République démocratique du Congo, sans dire de quel groupe elle parle précisément ; elle ne dit rien du Congo-Brazzaville et n'attribue le nom à aucun clan précis.",
@@ -74,6 +81,14 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Article de blog lu en ligne, sans pagination. La phrase lue : « Il existe aussi des patronymes relatifs aux objets : Mpanu (pagne), Matadi (pierres), Mbele (couteau), Mbungu (vase, verre, coupe), Ngoma (tam-tam). » L'article ne cite pas de source pour cette liste et traite du Kongo Central, non du Congo-Brazzaville."
+    },
+    {
+      "sourceKey": "soret-1959-kongo",
+      "title": "Les Kongo nord-occidentaux",
+      "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2024-05/010027635.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Marcel Soret, avec André Jacquot pour la linguistique, Presses universitaires de France et Institut international africain, 1959 ; texte intégral lu sur la base Horizon de l'IRD. P. 73 : le clan, la kanda, réunit les familles apparentées par les femmes et se marque par un nom particulier qui porte le préfixe ki-. P. 80 : l'enfant reçoit des noms personnels à la naissance ; chez les Sundi, un garçon né après qu'on a consulté l'objet rituel Nzumba reçoit le nom Kunku. P. 24 : Mabiala-Manianga, officiant des Sundi tué par le capitaine Baratier. Le livre ne traite pas des noms de famille d'aujourd'hui."
     }
   ],
   "gaps": [
@@ -83,7 +98,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Ngoma », « Kongo », « le Congo et la RDC », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a pas établi que la catégorie provisoire portée par la fiche décrive Ngoma lui-même ; elle reste une hypothèse de classement technique, sans être transformée en affirmation historique."
+      "reason": "Aucune source consultée ne fait de Ngoma un nom de clan : les listes de clans en ligne viennent d'une seule liste militante de Kinshasa, et l'étude de Soret marque le clan par un nom en ki-. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     },
     {
       "fieldPath": "alliances",

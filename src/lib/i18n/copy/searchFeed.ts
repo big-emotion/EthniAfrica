@@ -72,6 +72,13 @@ export interface SearchFeedCopy {
     around: (count: number) => string;
     aroundNote: string;
     back: string;
+    /**
+     * On the name-history lens, the subjects the searched name also answers
+     * to whose history is not written yet: named, never silently dropped.
+     */
+    alsoNamed: string;
+    alsoNamedUnwritten: (count: number) => string;
+    alsoNamedSeeAll: string;
   };
   blocks: {
     /** The button below the answer; the name tells two same-named subjects apart. */
@@ -172,6 +179,12 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       around: (count) => `Autour de ce nom · ${count}`,
       aroundNote: "Un contexte lié, pas le même nom.",
       back: "Revenir à la réponse",
+      alsoNamed: "Ce nom désigne aussi",
+      alsoNamedUnwritten: (count) =>
+        count > 1
+          ? "Leur histoire du nom n’est pas encore écrite. Ce que nous savons d’eux est dans « Tout »."
+          : "Son histoire du nom n’est pas encore écrite. Ce que nous en savons est dans « Tout ».",
+      alsoNamedSeeAll: "Voir tout",
     },
     blocks: {
       ficheLink: (name) => `Voir la fiche complète · ${name}`,

@@ -144,5 +144,305 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kamba désigne un peuple bantou du Kenya, qui se nomme lui-même Akamba, et Mukamba pour une seule personne. D'autres noms existent : Wakamba, la forme swahilie, Warimangao, un ancien nom donné sur la côte, et El lunghu, un nom donné par les Maasaï. On ne sait pas avec certitude d'où vient le nom Kamba ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Akamba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kam",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : Akamba au pluriel, Mukamba pour une personne, Kamba sans préfixe.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Akamba désigne le peuple de l'Ukamba, de part et d'autre de la rivière Athi ; Gerhard Lindblom écrit Mukamba pour une personne et Kikamba pour la langue. Le sens du nom reste incertain : sur la centaine d'anciens qu'il a interrogés, aucun ne semblait s'être posé la question.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Akamba in British East Africa: An Ethnological Monograph",
+                "author": "Gerhard Lindblom",
+                "year": 1920,
+                "url": "https://archive.org/details/akambainbritishe00linduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11, p. 14-15",
+                "notes": "Uppsala, Appelberg, Archives d'études orientales, vol. 17. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1878,
+              "to": 1878,
+              "label": "Proposée en 1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Kamba voudrait dire « voyageurs », d'un verbe hamba, « voyager », selon le naturaliste Johann Maria Hildebrandt, que rapporte Gerhard Lindblom. Lindblom note que ce verbe n'existe pas en kikamba, mais dans d'autres langues bantoues, et n'a trouvé aucun appui à cette idée.",
+            "hypothesisGroup": "origine du nom Kamba",
+            "sources": [
+              {
+                "title": "The Akamba in British East Africa: An Ethnological Monograph",
+                "author": "Gerhard Lindblom",
+                "year": 1920,
+                "url": "https://archive.org/details/akambainbritishe00linduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14-15",
+                "notes": "Uppsala, Appelberg, Archives d'études orientales, vol. 17. Lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur résume J. M. Hildebrandt, « Die Wakamba und ihre Nachbarn », p. 348 ; nous n'avons pas lu ce texte nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "1500-1800"
+            },
+            "era": "polity",
+            "statement": "Le nom Akamba, ou Kamba, désigne dans l'histoire de l'intérieur du Kenya un peuple à la fois éleveur et cultivateur, organisé en clans sans pouvoir central, selon W. R. Ochieng'.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 27 : L'intérieur de l'Afrique de l'Est : les peuples du Kenya et de la Tanzanie (1500-1800)",
+                "author": "W. R. Ochieng'",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 900 et p. 913",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1840,
+              "to": 1860,
+              "label": "Milieu du XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Kamba désigne alors des marchands qui conduisent leurs caravanes chez les Kikuyu et bien au-delà du mont Kenya, jusqu'au pays gusii et au lac Baringo, selon Isaria N. Kimambo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 279",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wakamba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "swa",
+        "namedBy": "les Swahili de la côte",
+        "shortLine": "La forme swahilie du nom, la première que les voyageurs européens ont écrite.",
+        "periodLabel": "Écrit dès 1850",
+        "accounts": [
+          {
+            "period": {
+              "from": 1850,
+              "to": 1850,
+              "label": "1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Wakamba apparaît par écrit dans le vocabulaire de six langues d'Afrique de l'Est que publie le missionnaire Johann Ludwig Krapf en 1850 : il y décrit les Wakamba comme les commerçants de l'intérieur, qui portent l'ivoire jusqu'à Mombasa. C'est la plus ancienne trace de ce nom que le projet connaît. Les Akamba vivaient déjà dans l'Ukamba avant lui.",
+            "formAsWritten": "Wakamba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla)",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/cu31924026933139",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. IV, p. VI-VII",
+                "notes": "Tübingen, L. F. Fues. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Wakamba porte le préfixe wa-, qui marque, selon Johann Ludwig Krapf, le pluriel d'un peuple : Mkamba désigne une seule personne, Ukamba ou Ukambani leur pays.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 144",
+                "notes": "Londres, Trübner. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Warimangao",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "swa",
+        "namedBy": "les gens de la côte swahilie",
+        "shortLine": "Un ancien nom donné aux Akamba par les gens de la côte ; son sens reste incertain.",
+        "periodLabel": "Écrit dès 1845",
+        "accounts": [
+          {
+            "period": {
+              "from": 1845,
+              "to": 1845,
+              "label": "1845"
+            },
+            "era": "polity",
+            "statement": "Le nom Warimangao apparaît sous une forme proche, « Meremongéo », dans un article du géographe William Desborough Cooley paru en 1845 : il désigne un peuple de forgerons connu des marchands de la côte, qui vit derrière les Wanyika, à deux mois de marche de Mombasa. Cooley identifie ce peuple aux Wakamba en 1852. C'est la plus ancienne trace de ce nom que le projet connaît. Les Akamba vivaient déjà dans l'Ukamba avant lui.",
+            "formAsWritten": "Meremongéo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Geography of N'yassi, or the Great Lake of Southern Africa Investigated",
+                "author": "W. D. Cooley",
+                "year": 1845,
+                "url": "https://archive.org/details/dli.ministry.15656",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 212",
+                "notes": "Journal of the Royal Geographical Society of London, vol. 15. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "Inner Africa Laid Open",
+                "author": "William Desborough Cooley",
+                "year": 1852,
+                "url": "https://archive.org/details/innerafricalaido00cool",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 59 et p. 124",
+                "notes": "Londres, Longman, Brown, Green, and Longmans. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Warimangao est écrit « Waumanguo » par Johann Ludwig Krapf en 1860 : c'est ainsi, dit-il, que les Swahili appellent les Wakamba.",
+            "formAsWritten": "Waumanguo",
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 352",
+                "notes": "Londres, Trübner. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Proposée en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Warimangao voudrait dire « gens qui vont nus », selon le voyageur Charles Guillain, qui l'écrit « M'rimangao » au singulier et « Ouarimangao » au pluriel, d'après Gerhard Lindblom.",
+            "hypothesisGroup": "origine du nom Warimangao",
+            "sources": [
+              {
+                "title": "The Akamba in British East Africa: An Ethnological Monograph",
+                "author": "Gerhard Lindblom",
+                "year": 1920,
+                "url": "https://archive.org/details/akambainbritishe00linduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 573",
+                "notes": "Uppsala, Appelberg, Archives d'études orientales, vol. 17. Lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur cite Guillain, Documents sur l'histoire, la géographie et le commerce de l'Afrique orientale, Paris, 1856, p. 216 ; nous n'avons pas lu ce texte nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "Proposée en 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Warimangao viendrait peut-être du swahili wari manguo, « ceux qui n'ont pas de vêtements », où l'on reconnaît le mot nguo, « vêtement », selon Gerhard Lindblom, qui juge ce sens incertain.",
+            "hypothesisGroup": "origine du nom Warimangao",
+            "sources": [
+              {
+                "title": "The Akamba in British East Africa: An Ethnological Monograph",
+                "author": "Gerhard Lindblom",
+                "year": 1920,
+                "url": "https://archive.org/details/akambainbritishe00linduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 573",
+                "notes": "Uppsala, Appelberg, Archives d'études orientales, vol. 17. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "El lunghu",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Maasaï, selon Hollis",
+        "shortLine": "Un nom que leur donnaient les Maasaï, rapporté au début du XXe siècle.",
+        "periodLabel": "Rapporté en 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1920,
+              "label": "Rapporté en 1920"
+            },
+            "statement": "Le nom El lunghu est, selon Hollis, que cite Gerhard Lindblom, celui que les Maasaï donnent aux Akamba ; Hollis le traduit par « ceux qui ont une mauvaise odeur », sans l'expliquer. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Akamba in British East Africa: An Ethnological Monograph",
+                "author": "Gerhard Lindblom",
+                "year": 1920,
+                "url": "https://archive.org/details/akambainbritishe00linduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "notes": "Uppsala, Appelberg, Archives d'études orientales, vol. 17. Lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur cite Hollis sans donner la référence complète ; nous n'avons pas lu ce texte nous-mêmes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

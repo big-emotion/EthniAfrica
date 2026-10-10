@@ -6,7 +6,7 @@
   },
   "id": "PAT_CHUKWU",
   "nameMain": "Chukwu",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Chukwu",
@@ -37,6 +37,11 @@
         "claim": "Le Dictionary of American Family Names décrit Chukwu comme un nom personnel igbo, forme courte de noms tels que Nwachukwu, fondée sur Chukwu, nom de l'être suprême dans la religion igbo traditionnelle et du Dieu chrétien.",
         "claimStatus": "established",
         "sourceRefs": ["hanks-chukwu"]
+      },
+      {
+        "claim": "Une étude des noms igbo explique que chi et chukwu, dans un nom, renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo.",
+        "claimStatus": "established",
+        "sourceRefs": ["asadu-nzuanke-2014-chi-names"]
       }
     ]
   },
@@ -74,6 +79,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Entrée Chukwu du Dictionary of American Family Names de Patrick Hanks (2003, 2006), hébergée par FamilySearch et consultée directement. La fiche du dictionnaire identifie explicitement la forme comme nom igbo du Nigeria."
+    },
+    {
+      "sourceKey": "asadu-nzuanke-2014-chi-names",
+      "title": "Onomastics and Translation: The Case of Igbo→English Translation of Chi Names",
+      "url": "https://www.ajol.info/index.php/lwati/article/view/119750",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Oluchukwu Asadu et Samson Fabian Nzuanke, Lwati: A Journal of Contemporary Research, vol. 11, no 3, 2014, p. 122-140 ; résumé lu sur la page de la revue. Les éléments chi et chukwu des noms igbo y renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo. L'étude porte sur les noms de trente étudiants de l'université Nnamdi Azikiwe, à Awka ; elle ne traite pas des noms de famille."
     }
   ],
   "gaps": [
@@ -108,6 +121,10 @@
     {
       "fieldPath": "designatedSocialUnit",
       "reason": "l'entrée du dictionnaire de Hanks consultée ne permet pas de décider si chaque emploi contemporain désigne un individu, une famille, une charge ou un lignage ; aucune monographie propre à Chukwu n'a été trouvée."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée ne fait de Chukwu un nom de clan : les sources y voient un nom personnel qui porte le nom de Dieu. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     }
   ]
 }

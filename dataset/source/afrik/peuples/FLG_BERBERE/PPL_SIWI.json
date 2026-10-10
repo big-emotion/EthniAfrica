@@ -109,12 +109,14 @@
       {
         "title": "Souag, Lameen. Siwa and its significance for Arabic dialectology. Zeitschrift fur Arabische Linguistik, 2009",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "City Facts — Siwa Oasis demographics",
         "url": "https://www.city-facts.com/siwah/population",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       }
     ]
   }

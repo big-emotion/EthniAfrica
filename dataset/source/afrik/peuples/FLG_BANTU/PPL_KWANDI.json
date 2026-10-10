@@ -71,12 +71,14 @@
       {
         "title": "Kwangwa – Zambia's Traditional History, 2020",
         "url": "https://traditionalzambia.home.blog/tribes-of-zambia/second-bantu-invasion/luba/lozi/kwangwa/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "History of the Kwangwa people – Facebook/Barotsenetwork, 2023",
         "url": "https://www.facebook.com/groups/759153900821468/posts/10082861068450658/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "About Zambia – Western Province Provincial Administration",
@@ -87,7 +89,8 @@
       {
         "title": "Understanding the history of Lozi people – Facebook, 2022",
         "url": "https://www.facebook.com/groups/759153900821468/posts/8230979013638882/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

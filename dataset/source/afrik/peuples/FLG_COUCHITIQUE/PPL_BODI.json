@@ -100,12 +100,14 @@
       {
         "title": "101 Last Tribes – Me'en people",
         "url": "https://www.101lasttribes.com/tribes/meen.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Orville Jenkins – Meen People Profile",
         "url": "http://orvillejenkins.com/profiles/meen.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ayu Ethiopian Tribal Tours – Ka'el Festival",

@@ -4,6 +4,353 @@
   "languageFamilyId": "FLG_COUCHITIQUE",
   "currentCountries": ["ETH", "DJI", "ERI"],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Afar désigne un peuple de pasteurs des plaines situées entre l'Éthiopie, l'Érythrée et Djibouti, qui se nomme lui-même Afar ; sa langue se nomme qafar af. D'autres noms existent : Danakil, Adal, et Taltal chez un voyageur du XVIIIe siècle. Les sources ne s'accordent pas sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Afar",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "aar",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; sa langue se nomme qafar af.",
+        "usedIn": ["aar"],
+        "periodLabel": "Écrit dès 1890 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Afar est celui d'un peuple d'Éthiopie, d'Érythrée et de Djibouti, dont la langue se nomme qafar af, selon M. Njoroge.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Afar, Worldmark Encyclopedia of Cultures and Daily Life",
+                "author": "M. Njoroge",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/afar",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice publiée par Gale, lue sur Encyclopedia.com, mise à jour en ligne le 23 mai 2018."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1810,
+              "label": "Début du XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Afar désigne, chez l'historien Richard Pankhurst, le peuple nomade de langue couchitique des basses terres au sud-est de Massaoua, dominé au début du XIXe siècle par le sultanat d'Awsa. Il y distingue les Asaimara, ou Afar « rouges », et les Adoimara, ou Afar « blancs ».",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 15 : L'Éthiopie et la Somalie",
+                "author": "Richard Pankhurst, avec des notes de L. V. Cassanelli",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 424"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "statement": "Le nom Afar apparaît par écrit chez le voyageur français Jules Borelli, qui note que « les Danakil se désignent eux-mêmes sous le nom d'Afar ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Afar",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Éthiopie méridionale : journal de mon voyage aux pays Amhara, Oromo et Sidama, septembre 1885 à novembre 1888",
+                "author": "Jules Borelli",
+                "year": 1890,
+                "url": "https://archive.org/details/thiopiemridi00bore",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, ancienne maison Quantin, Librairies-imprimeries réunies, 1890. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un voyageur français de la fin du XIXe siècle.",
+                "page": "p. 32"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Afar voudrait dire « le meilleur » ou « le premier » dans la langue afar, selon M. Njoroge.",
+            "hypothesisGroup": "origine du nom Afar",
+            "sources": [
+              {
+                "title": "Afar, Worldmark Encyclopedia of Cultures and Daily Life",
+                "author": "M. Njoroge",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/afar",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice publiée par Gale, lue sur Encyclopedia.com, mise à jour en ligne le 23 mai 2018."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Danakil",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom venu de l'extérieur, que les Afar jugent dépréciatif.",
+        "periodLabel": "Mentionné dès le XIIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Danakil désigne surtout, chez les Arabes, les Afar du nord ; les Afar le jugent dépréciatif et préfèrent qu'on ne l'emploie pas pour eux, selon M. Njoroge.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Afar, Worldmark Encyclopedia of Cultures and Daily Life",
+                "author": "M. Njoroge",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/afar",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice publiée par Gale, lue sur Encyclopedia.com, mise à jour en ligne le 23 mai 2018."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1842,
+              "to": 1842,
+              "label": "1842"
+            },
+            "era": "polity",
+            "statement": "Le nom Danakil figure dans le titre d'un relevé des « tribus danakil » établies entre Tadjoura et le Choa, envoyé par le capitaine Harris, chef de la mission britannique au Choa.",
+            "formAsWritten": "Danakil Tribes",
+            "sources": [
+              {
+                "title": "Danakil Tribes, Journal of the Royal Geographical Society of London, vol. 12",
+                "author": "Journal of the Royal Geographical Society of London",
+                "year": 1842,
+                "url": "https://archive.org/details/jstor-1798006",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Relevé envoyé par le capitaine William Cornwallis Harris avec le rapport de sa mission au Choa. Lu dans la numérisation d'Internet Archive des anciens numéros de la revue.",
+                "page": "p. 268"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1790,
+              "to": 1790,
+              "label": "1790"
+            },
+            "era": "polity",
+            "statement": "Le nom Danakil apparaît, écrit Dancali, chez le voyageur écossais James Bruce, pour un royaume musulman voisin de l'Abyssinie dont les sujets « sont appelés Taltal ». Bruce le mentionne dans son récit du règne de Baeda Maryam, au XVe siècle.",
+            "formAsWritten": "Dancali",
+            "sources": [
+              {
+                "title": "Travels to discover the source of the Nile, in the years 1768, 1769, 1770, 1771, 1772, and 1773, vol. 2",
+                "author": "James Bruce",
+                "year": 1790,
+                "url": "https://archive.org/details/travelstodiscove002bruc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Dublin, édition en six volumes, 1790. Lu dans la numérisation d'Internet Archive. Le passage raconte, d'après les chroniques éthiopiennes, le règne de Baeda Maryam.",
+                "page": "p. 261"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1201,
+              "to": 1300,
+              "label": "XIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Danakil apparaît dans les écrits de géographes arabes du XIIIe siècle, selon l'Encyclopedia of World Cultures, qui ne nomme pas ces auteurs. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Afar, Encyclopedia of World Cultures",
+                "author": "Encyclopedia of World Cultures",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/afar-0",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice publiée par Gale, lue sur Encyclopedia.com, mise à jour en ligne le 14 mai 2018. Elle ne nomme pas les géographes arabes qu'elle évoque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "Proposée en 1890"
+            },
+            "statement": "Le nom Danakil viendrait, par sa forme au singulier Dankali, de l'arabe djangali, « stupide », selon le voyageur français Jules Borelli.",
+            "hypothesisGroup": "origine du nom Danakil",
+            "sources": [
+              {
+                "title": "Éthiopie méridionale : journal de mon voyage aux pays Amhara, Oromo et Sidama, septembre 1885 à novembre 1888",
+                "author": "Jules Borelli",
+                "year": 1890,
+                "url": "https://archive.org/details/thiopiemridi00bore",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, ancienne maison Quantin, Librairies-imprimeries réunies, 1890. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un voyageur français de la fin du XIXe siècle.",
+                "page": "p. 32"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "Proposée en 1890"
+            },
+            "statement": "Le nom Danakil viendrait plutôt de l'amharique donkoro, « imbécile », selon la seconde explication de Jules Borelli, qui juge les deux également plausibles.",
+            "hypothesisGroup": "origine du nom Danakil",
+            "sources": [
+              {
+                "title": "Éthiopie méridionale : journal de mon voyage aux pays Amhara, Oromo et Sidama, septembre 1885 à novembre 1888",
+                "author": "Jules Borelli",
+                "year": 1890,
+                "url": "https://archive.org/details/thiopiemridi00bore",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, ancienne maison Quantin, Librairies-imprimeries réunies, 1890. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un voyageur français de la fin du XIXe siècle.",
+                "page": "p. 32"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Danakil viendrait de celui des Ankala, un groupe établi dans la péninsule de Buri, selon l'Encyclopedia of World Cultures.",
+            "hypothesisGroup": "origine du nom Danakil",
+            "sources": [
+              {
+                "title": "Afar, Encyclopedia of World Cultures",
+                "author": "Encyclopedia of World Cultures",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/afar-0",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice publiée par Gale, lue sur Encyclopedia.com, mise à jour en ligne le 14 mai 2018. Elle ne nomme pas les géographes arabes qu'elle évoque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Taltal",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que le voyageur James Bruce donne en 1790 aux sujets du royaume de Dancali.",
+        "periodLabel": "Écrit en 1790",
+        "accounts": [
+          {
+            "period": {
+              "from": 1790,
+              "to": 1790,
+              "label": "1790"
+            },
+            "era": "polity",
+            "statement": "Le nom Taltal apparaît chez le voyageur écossais James Bruce : selon lui, les sujets musulmans du royaume de Dancali « sont appelés Taltal ». C'est la plus ancienne trace de ce nom que le projet connaît. Les sources que nous avons lues n'expliquent pas son origine.",
+            "formAsWritten": "Taltal",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels to discover the source of the Nile, in the years 1768, 1769, 1770, 1771, 1772, and 1773, vol. 2",
+                "author": "James Bruce",
+                "year": 1790,
+                "url": "https://archive.org/details/travelstodiscove002bruc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Dublin, édition en six volumes, 1790. Lu dans la numérisation d'Internet Archive. Le passage raconte, d'après les chroniques éthiopiennes, le règne de Baeda Maryam.",
+                "page": "p. 261"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Adal",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom tiré du sultanat d'Adal, parfois donné aux Afar du sud.",
+        "periodLabel": "Jusqu'au XVIe siècle, puis comme autre nom",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Adal, ou Adel, est parfois donné aux Afar du sud ; il renvoie au sultanat d'Adal, qui a existé jusqu'au milieu du XVIe siècle, selon M. Njoroge.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Afar, Worldmark Encyclopedia of Cultures and Daily Life",
+                "author": "M. Njoroge",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/afar",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice publiée par Gale, lue sur Encyclopedia.com, mise à jour en ligne le 23 mai 2018."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1600,
+              "label": "Jusqu'au XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Adal est celui du plus grand des États musulmans de la Corne, qui s'étendait de Zeila jusqu'au Harar actuel et, au nord, jusqu'à l'oasis d'Awssa, en pays afar, selon E. Haberland.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 774"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Afar",

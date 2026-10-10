@@ -92,7 +92,8 @@
       {
         "title": "mandaras.info — The Mofu Groups",
         "url": "https://www.mandaras.info/MofuGroups.html",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "community"
       },
       {
         "title": "Sterner, J. & David, N. (2020). Gudur revisited. NDJS 2020.2. University of Calgary",
@@ -103,7 +104,8 @@
       {
         "title": "Barreteau, D. (1988). Description du mofu-gudur. Paris : ORSTOM/CNRS",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Gbaya Art's Blog — The Mafa community (bull festival Maray)",

@@ -110,7 +110,8 @@
       {
         "title": "Dizi people – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/dizi.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Omotic languages – Encyclopaedia Britannica",
@@ -133,7 +134,8 @@
       {
         "title": "Ralph Siebert. 2002. Sociolinguistic survey report on the Dime language of Ethiopia. SIL Electronic Survey Reports 2002-043",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project — Dime in Ethiopia",
@@ -144,7 +146,8 @@
       {
         "title": "Aklilu Yilma et Ralph Siebert. 2002. Sociolinguistic survey report of the Chara, Dime, Melo and Nayi languages of Ethiopia part 1. SIL Electronic Survey Reports 2002-029",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Glottolog — Dime language",

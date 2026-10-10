@@ -92,7 +92,8 @@
       {
         "title": "Builsa South District population – CityPopulation.de, recensement Ghana 2021",
         "url": "https://www.citypopulation.de/en/ghana/admin/upper_east/0910__builsa_south/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       }
     ]
   }

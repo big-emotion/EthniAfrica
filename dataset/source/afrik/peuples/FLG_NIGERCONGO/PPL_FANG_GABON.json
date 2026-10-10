@@ -110,12 +110,14 @@
       {
         "title": "101 Last Tribes — The Fang People: History, Culture, Organization",
         "url": "https://www.101lasttribes.com/tribes/fang.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Smarthistory — Male Reliquary Guardian Figure (Fang peoples)",
         "url": "https://smarthistory.org/fang-reliquary-figure/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Metropolitan Museum of Art — Male Reliquary Figure (Nlo Bieri), Fang peoples",

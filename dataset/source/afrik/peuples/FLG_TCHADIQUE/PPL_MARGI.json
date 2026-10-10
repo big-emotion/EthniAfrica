@@ -112,7 +112,8 @@
       {
         "title": "Rosetta Project — Marghi Central Language (mrt)",
         "url": "https://rosettapanglossia.longnow.org/index.php?title=Marghi_Central_Language",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

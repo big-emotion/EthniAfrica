@@ -83,7 +83,8 @@
       {
         "title": "Ndengereko – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/ndengereko.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ndengereko in Tanzania – Joshua Project",
@@ -100,7 +101,8 @@
       {
         "title": "Language, Tribe and Ethnic Clusters : Ndengereko – Orville Jenkins",
         "url": "http://orvillejenkins.com/ethnicity/langtribendengereko.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ndengereko Language – Ethnologue",

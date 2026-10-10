@@ -101,7 +101,8 @@
       {
         "title": "Orville Jenkins – Gwikwe Bushmen Profile",
         "url": "http://orvillejenkins.com/profiles/gwikwe.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Khoisan language family data – Ling.fju.edu.tw",

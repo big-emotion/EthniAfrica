@@ -119,7 +119,8 @@
       {
         "title": "Pazzanita A.G. – Historical Dictionary of Mauritania, 3e ed., Scarecrow Press, 2008",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Ould Saleck El Arby – Les Haratins : le paysage politique mauritanien, L'Harmattan, 2003",
@@ -130,12 +131,14 @@
       {
         "title": "Gast M. – article Haratin, Encyclopedie berbere, vol. XXII, 2000",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "encyclopedia"
       },
       {
         "title": "Amnesty International – Mauritania: Human Rights Abuses Against Black Africans, 1994",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "Hachid M. – Les premiers Berberes, Inas-Edisud, 2000 (sur les populations du Tassili et leur devenir)",

@@ -109,12 +109,14 @@
       {
         "title": "101 Last Tribes – Banyoro people",
         "url": "https://www.101lasttribes.com/tribes/banyoro.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Beattie, John (1960). Bunyoro: An African Kingdom. New York: Holt, Rinehart and Winston",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook – Uganda",

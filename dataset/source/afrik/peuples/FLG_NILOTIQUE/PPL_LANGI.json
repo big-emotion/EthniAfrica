@@ -8,8 +8,8 @@
     "appellations": {
       "mainName": "Langi",
       "selfAppellation": "Langi (pluriel) ; Lango (singulier et forme usuelle en anglais)",
-      "exonyms": ["Lango", "Miro", "Umiro"],
-      "originOfExonyms": "Le terme Lango (singulier de Langi) est la forme la plus usitee en anglais et dans la litterature coloniale britannique. Miro et Umiro sont des variantes attestees dans certaines sources ethnographiques du XIXe et debut XXe siecle. Le nom Lango apparait egalement dans les vocabulaires des Teso, Kumam, Karamojong, Jie et Labwor, refletant une origine commune dans la race Lango antique.",
+      "exonyms": ["Lango", "Miro", "Umiro", "Lang'o", "Lang'i"],
+      "originOfExonyms": "Le terme Lango (singulier de Langi) est la forme la plus usitee en anglais et dans la litterature coloniale britannique. Miro et Umiro sont des variantes attestees dans certaines sources ethnographiques du XIXe et debut XXe siecle. Le nom Lango apparait egalement dans les vocabulaires des Teso, Kumam, Karamojong, Jie et Labwor.",
       "whyProblematic": "Le terme Lango peut preter a confusion avec d'autres peuples portant un nom similaire (notamment les Lango du Soudan du Sud, groupe distinct). Par ailleurs, la question de l'appartenance ethnolinguistique des Langi a longtemps ete debattue : certains chercheurs les classaient parmi les Nilotiques de l'Ouest (groupe Luo) alors que des etudes plus recentes, corroborees par l'evenement de reunion Ateker de novembre 2024, les rattachent aux Nilo-Hamites Ateker.",
       "contemporaryUsage": "Langi est le terme officiel utilise en Ouganda. La region administrative Lango recouvre les districts d'Amolatar, Alebtong, Apac, Dokolo, Kole, Lira, Oyam, Otuke et Kwania. La Lango Cultural Foundation est l'institution representative officielle avec plus de 148 clans enregistres.",
       "linguisticFamily": "FLG_NILOTIQUE",
@@ -17,19 +17,33 @@
       "historicalRegion": "Nord-centre de l'Ouganda (ancienne province du Lango)",
       "currentCountries": ["UGA"]
     },
-    "ethnicities": ["Langi"],
+    "ethnicities": [
+      "Langi",
+      "Lango d'Apac (district historique, centre-ouest de la région lango)",
+      "Lango de Lira (capitale régionale, centre de la région)",
+      "Lango d'Oyam (district du nord-ouest)",
+      "Lango d'Alebtong (district du nord)",
+      "Lango d'Amolatar (district du sud, lac Kyoga)",
+      "Lango de Kole (district du centre)",
+      "Lango d'Otuke (district de l'est)",
+      "Lango de Kwania (district du sud)"
+    ],
     "origins": {
       "ancientOrigins": "Les Langi sont principalement un groupe ethnique Ateker, connu aussi sous le nom de Nilo-Hamites. Selon la tradition orale, ils faisaient partie de la grande race Lango lors de la periode migratoire, avant que ce groupe se fragmente en plusieurs entites distinctes entrant en Ouganda. Le nom Lango se retrouve dans les vocabulaires des Teso, Kumam, Karamojong, Jie et Labwor, ce qui temoigne d'une ancienne appartenance commune. Hutchinson (1902) les decrivait comme l'une des nations principales de l'ancien royaume de Bunyoro, les rattachant aux peuples de stock Galla (hamitique) plutot qu'aux Nilotiques noirs. Des recherches recentes (notamment la reunion Ateker d'Ouganda de novembre 2024) confirment leur appartenance au groupe Ateker plutot qu'aux peuples Luo.",
       "formationPeriod": "Migration et installation dans le nord-centre de l'Ouganda probablement entre le XVe et le XVIIe siecle, sous la conduite de leaders tels qu'Ongora Okubal qui amena les Langi dans leur territoire actuel. La rencontre avec les Banyoro au XVIIe-XVIIIe siecle est attestee dans les traditions orales (leader Agoro Abwango tue au Bunyoro).",
       "migrationRoutes": [
         "Migration depuis les regions du Soudan du Sud (comptes oraux vers la periode du XVe-XVIIe siecle), sous l'influence de la race Lango ancestrale partageant un tronc commun avec les Teso, Kumam, Karamojong et Jie",
         "Installation progressive dans les plaines au nord du Nil Victoria (Somerset Nile), entre Foweira et Magungo, puis expansion vers l'est jusqu'a la vallee du Chol",
-        "Deplacements secondaires vers les zones urbaines (Lira, Gulu, Kampala) au XXe siecle"
+        "Deplacements secondaires vers les zones urbaines (Lira, Gulu, Kampala) au XXe siecle",
+        "Origine dans l'ensemble Ateker, entre l'Éthiopie et le nord-est de l'Afrique de l'Est",
+        "Arrivée en Ouganda par le nord, à travers les régions du Karamoja et des Acholi"
       ],
       "historicalSettlementZones": [
         "Nord-centre de l'Ouganda (Lango Sub-Region)",
         "Districts de Lira, Apac, Dokolo, Amolatar, Oyam, Kole, Alebtong, Otuke, Kwania",
-        "Rives du Nil Victoria entre Foweira et Magungo"
+        "Rives du Nil Victoria entre Foweira et Magungo",
+        "Plaines du Lango, entre le lac Kwania, le lac Kyoga et le Nil Victoria",
+        "Bordures des régions acholi (nord) et teso (est)"
       ],
       "unificationsOrDivisions": "Societe traditionnellement decentralisee sans chef supreme. L'unite culturelle s'est renforcee autour du titre de Won Nyaci (chef culturel supreme) a partir des annees 1960, cree pour federer les clans face aux raids karamojong. La Lango Cultural Foundation coordonne aujourd'hui plus de 148 clans enregistres. En novembre 2024, le gouvernement ougandais a officialise la reunion des Langi avec les peuples Ateker lors d'un evenement historique.",
       "externalInfluences": "Contacts et conflits avec les Banyoro (Bunyoro Kingdom) au nord. Pression des Karamojong (raids de betail) qui ont motive des formes d'union defensives. Influence coloniale britannique post-1910 avec la creation d'une administration formelle de chefs de sous-comtes et de comtes. Influence de l'islam et du christianisme depuis le XIXe siecle.",
@@ -45,7 +59,11 @@
     "languages": {
       "mainLanguage": "Lango (Lang'o)",
       "isoCodes": ["laj"],
-      "dialects": [],
+      "dialects": [
+        "LebLango central (parler de Lira et d'Apac)",
+        "LebLango d'Oyam (influence acholi au nord)",
+        "LebLango d'Amolatar (influence kumam au sud)"
+      ],
       "vehicularRole": "Le lang'o est la langue maternelle de la quasi-totalite des Langi. Il appartient au groupe des langues luo occidentales nilotiques, bien que l'appartenance ethnique des Langi soit desormais reconnue comme Ateker. Le lang'o compte environ 1 490 000 locuteurs selon le recensement ougandais de 2002. Le swahili et l'anglais servent de langues vehiculaires nationales en Ouganda."
     },
     "culture": {
@@ -63,7 +81,7 @@
     "demography": {
       "totalPopulation": 2884000,
       "referenceYear": 2025,
-      "source": "Wikipedia EN (Lango people) et estimations Uganda Bureau of Statistics 2024 ; recensement ougandais 2014 et projections 2025 ; Facebook post estimations ethniques Uganda 2025 (2 131 495 Langi, 6,3% de la population)",
+      "source": "Wikipedia EN (Lango people) et estimations Uganda Bureau of Statistics 2024 ; recensement ougandais 2014 et projections 2025 ; Facebook post estimations ethniques Uganda 2025 (2 131 495 Langi, 6,3% de la population) Une autre estimation donne 2 900 000 personnes en 2025 (recensements ougandais et Lango Cultural Foundation, avec la croissance de la population après la guerre de la LRA). Les sources lues ne permettent pas de choisir entre ces chiffres.",
       "distributionByCountry": [
         {
           "country": "UGA",
@@ -81,7 +99,8 @@
       {
         "title": "Tosh J. – Clan Leaders and Colonial Chiefs in Lango, Clarendon Press, Oxford, 1978",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       },
       {
         "title": "Hayley T.T.S. – The Anatomy of Lango Religion and Groups, Negro Universities Press, 1970 (1e ed. 1947)",
@@ -110,6 +129,394 @@
         "url": "https://www.ethnologue.com/language/laj/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "101 Last Tribes — Lango people",
+        "url": "https://www.101lasttribes.com/tribes/lango.html",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "Lango Cultural Foundation — Clans et vie sociale",
+        "url": "https://langoculturalfoundation.org/service-details-right.html",
+        "tier": "needs_review"
+      },
+      {
+        "title": "Academia.edu — The Socio-Political History of the Langi of Uganda 1750-1909",
+        "url": "https://www.academia.edu/11684657/",
+        "tier": "referenced",
+        "source_kind": "academic"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Langi désigne un peuple de langue nilotique du centre-nord de l'Ouganda, qui se nomme lui-même Lango ; le pays porte aussi ce nom. D'autres noms existent : Miro ou Umiro, chez leurs voisins acholi, alira et akum, et Bakedi, chez leurs voisins bantous. Les sources n'expliquent pas avec certitude d'où vient le nom Lango ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Lango",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "laj",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple reconnaît pour le sien ; c'est aussi celui de son pays et de sa langue.",
+        "periodLabel": "Écrit dès 1866 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lango est celui que ce peuple reconnaît pour le sien, selon l'administrateur Jack Herbert Driberg en 1923 ; il refuse le nom Miro que lui donnent les Acholi, les Alira et les Akum. Driberg écrit qu'on ne voit pas clairement d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36 et p. 38",
+                "notes": "Londres, T. Fisher Unwin. Lu dans la numérisation de la Digital Library of India hébergée par Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1866,
+              "to": 1866,
+              "label": "1866"
+            },
+            "era": "polity",
+            "statement": "Le nom Lango apparaît sous une forme proche, « Langgo », chez l'explorateur Samuel Baker en 1866 : il désigne les ennemis du roi Kamrasi du Bunyoro sur la rive est du Nil, que Kamrasi décide d'envahir avec les hommes d'un marchand d'ivoire. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait déjà là avant lui.",
+            "formAsWritten": "Langgo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Kamrasi",
+                "role": "roi du Bunyoro"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Albert N'yanza, Great Basin of the Nile, and Explorations of the Nile Sources",
+                "author": "Samuel White Baker",
+                "year": 1866,
+                "url": "https://archive.org/details/albertnyanzagre00bake",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 430 et p. 432",
+                "notes": "Londres, Macmillan. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Proposée en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lango aurait été adopté par ce peuple au contact des Langudyang, des voisins venus du nord avec qui il vécut un temps en bons termes, tandis que son ancien nom, Miro, ne survivait plus que comme surnom chez les voisins, selon Jack Herbert Driberg, qui présente cette idée comme une simple possibilité.",
+            "hypothesisGroup": "origine du nom Lango",
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37-38",
+                "notes": "Londres, T. Fisher Unwin. Lu dans la numérisation de la Digital Library of India hébergée par Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Lango reste celui du pays : la Constitution de 1995 range les districts d'Apac et de Lira dans le Lango, et compte les Langi parmi les communautés autochtones de l'Ouganda.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution of the Republic of Uganda, 1995",
+                "author": "République de l'Ouganda",
+                "year": 1995,
+                "url": "https://www.wipo.int/wipolex/en/text/499403",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "First Schedule et Third Schedule",
+                "notes": "La troisième annexe dresse la liste des communautés autochtones de l'Ouganda au 1er février 1926. Texte tel que modifié en dernier lieu par la loi n° 13 de 2000, lu dans la base WIPO Lex de l'Organisation mondiale de la propriété intellectuelle le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1880,
+              "label": "XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Lango désigne au XIXe siècle des cultivateurs du nord du lac Kyoga qui produisent exprès des surplus de nourriture, en particulier du sésame, et les échangent au Bunyoro contre des houes en fer, selon David W. Cohen.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 11 : Peuples et États de la région des Grands Lacs",
+                "author": "David W. Cohen",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 324-325",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1830,
+              "label": "Jusque vers 1830"
+            },
+            "era": "polity",
+            "statement": "Le nom Lango Omiro désigne l'un des derniers peuples à se former dans la région des Grands Lacs : à la fin du XVIIIe siècle, ses contours se dessinent, au terme d'un processus qui s'achève vers 1830, selon J. B. Webster, B. A. Ogot et J. P. Chrétien.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 895",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Miro",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Acholi, les Alira et les Akum",
+        "shortLine": "Le nom que leur donnaient leurs voisins ; les Lango le refusent.",
+        "periodLabel": "Écrit dès 1866 ; aujourd'hui un surnom",
+        "accounts": [
+          {
+            "period": {
+              "from": 1866,
+              "to": 1866,
+              "label": "1866"
+            },
+            "era": "polity",
+            "statement": "Le nom Miro apparaît sous la forme « Umiro » chez Samuel Baker en 1866, qui nomme ainsi un pays à l'est du Shooa, en pays acholi, à côté de Lira. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait déjà là avant lui.",
+            "formAsWritten": "Umiro",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Albert N'yanza, Great Basin of the Nile, and Explorations of the Nile Sources",
+                "author": "Samuel White Baker",
+                "year": 1866,
+                "url": "https://archive.org/details/albertnyanzagre00bake",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 231",
+                "notes": "Londres, Macmillan. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Miro est celui que les Acholi, les Alira et les Akum donnent aux Lango, qui le refusent, selon Jack Herbert Driberg ; Baker et Emin Pacha, qui tenaient leurs informations des Acholi, les appelaient Umiro ou Lango-Umera. Driberg ne sait pas pourquoi leurs voisins les nomment ainsi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36-38",
+                "notes": "Londres, T. Fisher Unwin. Lu dans la numérisation de la Digital Library of India hébergée par Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bakedi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Baganda et les Banyoro",
+        "shortLine": "Le nom que leur donnaient leurs voisins bantous ; son origine reste discutée.",
+        "periodLabel": "Écrit dès 1863",
+        "accounts": [
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Bakedi apparaît sous une forme proche, « Wakidi », chez John Hanning Speke en 1863 : en 1861, sur la route du Karagwe, on lui décrit les Wakidi comme un peuple qui va nu, et il nomme Kidi des pays situés au nord et à l'est du Buganda et du Bunyoro. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne vivaient déjà là avant lui.",
+            "formAsWritten": "Wakidi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 89 et p. 235",
+                "notes": "Édimbourg et Londres, William Blackwood and Sons. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 771",
+                "notes": "Londres, Hutchinson. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1915,
+              "label": "1902-1915"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakedi désigne, chez les Baganda et les Banyoro, les peuples nilotiques à l'est et au nord de leurs royaumes, dont les Lango ; un district du protectorat de l'Ouganda s'appelle alors Bukedi, selon Harry Johnston, Charles William Hobley et John Roscoe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 595, note, et p. 771",
+                "notes": "Londres, Hutchinson. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "Eastern Uganda: An Ethnological Survey",
+                "author": "C. W. Hobley",
+                "year": 1902,
+                "url": "https://archive.org/details/easternugandaan00hoblgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Londres, Anthropological Institute of Great Britain and Ireland. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "The Northern Bantu: An Account of Some Central African Tribes of the Uganda Protectorate",
+                "author": "John Roscoe",
+                "year": 1915,
+                "url": "https://archive.org/details/northernbantu00rosc",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 259",
+                "notes": "Cambridge, Cambridge University Press. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "Proposée en 1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakedi voudrait dire « les nus », un nom de mépris que les Baganda donneraient aux peuples dont les hommes ne portent pas de vêtement, selon Harry Johnston ; John Roscoe donne la même explication en 1915.",
+            "hypothesisGroup": "origine du nom Bakedi",
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 595, note, et p. 771",
+                "notes": "Londres, Hutchinson. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "The Northern Bantu: An Account of Some Central African Tribes of the Uganda Protectorate",
+                "author": "John Roscoe",
+                "year": 1915,
+                "url": "https://archive.org/details/northernbantu00rosc",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 259",
+                "notes": "Cambridge, Cambridge University Press. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Rapportée en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakedi viendrait du mot lango kidi, « l'est », car ces pays s'étendent à l'est du Buganda et du Bunyoro, selon certains auteurs que rapporte Jack Herbert Driberg, qui juge l'origine du nom obscure.",
+            "hypothesisGroup": "origine du nom Bakedi",
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36, note",
+                "notes": "Londres, T. Fisher Unwin. Lu dans la numérisation de la Digital Library of India hébergée par Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Rapportée en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakedi viendrait d'Okedea, un lieu du pays teso par où seraient d'abord entrés des envahisseurs bantous, qui l'auraient ensuite étendu à toute la région du Nil au mont Elgon, selon une explication que rapporte Jack Herbert Driberg.",
+            "hypothesisGroup": "origine du nom Bakedi",
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36, note",
+                "notes": "Londres, T. Fisher Unwin. Lu dans la numérisation de la Digital Library of India hébergée par Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

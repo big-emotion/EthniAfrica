@@ -480,7 +480,7 @@
         "name": "Gurma",
         "selfAppellation": "Gurma",
         "exonyms": ["Gurma (terme utilisé par les Européens)"],
-        "peopleId": "PPL_GURMA",
+        "peopleId": "PPL_GOURMANTCHE",
         "mainRegion": "Nord-Est",
         "languages": ["Gurma", "anglais"],
         "languageFamily": "FLG_NIGERCONGO",
@@ -728,7 +728,7 @@
         },
         {
           "name": "Gurma",
-          "peopleId": "PPL_GURMA",
+          "peopleId": "PPL_GOURMANTCHE",
           "population": 2246400,
           "percentageInCountry": 6.4,
           "percentageInAfrica": 0.08,

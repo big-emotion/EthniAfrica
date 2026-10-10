@@ -93,7 +93,8 @@
       {
         "title": "International Kreol Magazine — Guinea-Bissau's Creole Culture",
         "url": "https://kreolmagazine.com/guinea-bissaus-creole-culture-evolution-influence-and-resilience/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Joshua Project — Crioulo, Upper Guinea in Guinea-Bissau",
@@ -104,7 +105,8 @@
       {
         "title": "Sorosoro — Guinea-Bissau Creole language",
         "url": "https://www.sorosoro.org/en/guinea-bissau-creole/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Ethnologue — Guinea-Bissau Creole (pov)",

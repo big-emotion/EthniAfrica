@@ -6,7 +6,7 @@
   },
   "id": "PAT_NYOBE",
   "nameMain": "Nyobè",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Nyobe",
@@ -28,10 +28,17 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Selon l'encyclopédie Wikipédia, Ruben Um Nyobè est né de Nyobé Nsounga et de Ngo Um Nonos, deux paysans bassa. Nyobè y est donc d'abord le nom personnel de son père, que le fils porte après son propre nom, Um.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["wikipedia-ruben-um-nyobe"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "Une étude des noms bassa'a range Nyobe parmi les noms de personnes tirés des animaux et le glose « mauvais serpent », à côté de Nyoo, « le serpent ». L'étude ne dit ni pourquoi ce nom est donné, ni s'il désigne une famille.",
@@ -80,6 +87,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Joël Landry Minyem Mpeck, mémoire de master en anthropologie culturelle, Université de Yaoundé I, année 2020-2021, sous la direction de Paul Abouna ; travail universitaire non publié, lu dans la version numérisée du dépôt de l'université. Pages imprimées : NYOBE glosé « Mauvais serpent », à côté de NYOO « Le serpent », dans le tableau des noms tirés de la faune (p. 141) et dans la liste des noms de personnes tirés de la faune (p. 172). Le mémoire donne le sens du mot sans commenter chaque nom : il ne dit pas pourquoi on le donne ni s'il désigne une famille."
+    },
+    {
+      "sourceKey": "wikipedia-ruben-um-nyobe",
+      "title": "Ruben Um Nyobè",
+      "url": "https://fr.wikipedia.org/wiki/Ruben_Um_Nyobè",
+      "tier": "unverified",
+      "source_kind": "encyclopedia",
+      "notes": "Article de l'encyclopédie Wikipédia en français, consulté directement. La partie « Enfance » donne comme parents Nyobé Nsounga et Ngo Um Nonos, « tous deux paysans bassa » ; la note 1 justifie l'accent grave de Nyobè. L'article ne parle pas de clan."
     }
   ],
   "gaps": [
@@ -89,7 +104,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Nyobe », « Nyobé », « Bassa », « Cameroun », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste » et « homonyme », ainsi que la thèse de Sharp consacrée à l'UPC et à Ruben Um Nyobé n'ont pas établi que la catégorie de système nominal portée par la fiche provisoire décrive ce nom lui-même ; elle reste une hypothèse de classement et n'est pas transformée en fait."
+      "reason": "Aucune source consultée ne fait de Nyobè un nom de clan : le mémoire de Minyem le range parmi les noms de personnes, et Wikipédia en fait le nom personnel du père de Ruben Um Nyobè. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     },
     {
       "fieldPath": "alliances",

@@ -140,7 +140,8 @@
       {
         "title": "101 Last Tribes — Kpelle people",
         "url": "https://www.101lasttribes.com/tribes/kpelle.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — Liberia",

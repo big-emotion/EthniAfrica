@@ -78,17 +78,20 @@
       {
         "title": "Kunda – Zambia's Traditional History, 2020",
         "url": "https://traditionalzambia.home.blog/tribes-of-zambia/second-bantu-invasion/luba/kunda-2/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "The Kunda of Zambia – Partners in Bible Translation Survey, 2015",
         "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/KundaSurvey_2015.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       },
       {
         "title": "Kunda people – 101 Last Tribes, 2023",
         "url": "https://www.101lasttribes.com/tribes/kunda.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Kunda in Zambia – Joshua Project, 2024",

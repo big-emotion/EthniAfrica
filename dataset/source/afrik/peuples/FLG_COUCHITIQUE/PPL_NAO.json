@@ -115,7 +115,8 @@
       {
         "title": "ISO 639-3: noz (Nayi) – SIL International / Ethnologue",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

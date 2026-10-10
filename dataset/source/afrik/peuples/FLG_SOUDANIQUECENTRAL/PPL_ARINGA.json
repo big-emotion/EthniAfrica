@@ -114,7 +114,8 @@
       {
         "title": "101 Last Tribes — Aringa",
         "url": "http://www.101lasttribes.com/tribes/aringa.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — Uganda",

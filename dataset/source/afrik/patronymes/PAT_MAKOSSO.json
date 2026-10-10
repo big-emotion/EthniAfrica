@@ -6,7 +6,7 @@
   },
   "id": "PAT_MAKOSSO",
   "nameMain": "Makosso",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Makosso",
@@ -19,10 +19,17 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Une étude des Kongo du Congo-Brazzaville décrit le clan, la kanda, comme transmis par les femmes et marqué par un nom en ki- ; les noms donnés à la naissance y sont des noms personnels. Le nom Makosso ne porte pas ce préfixe.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["soret-1959-kongo"]
+      }
+    ],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -51,6 +58,14 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Page consultée directement. Elle atteste la répartition du patronyme Makosso, notamment en République du Congo, et indique qu'aucune signification n'est renseignée. Forebears avertit que la fréquence géographique ne permet pas de déduire l'appartenance ethnique ; la fiche n'en tire donc aucune origine."
+    },
+    {
+      "sourceKey": "soret-1959-kongo",
+      "title": "Les Kongo nord-occidentaux",
+      "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2024-05/010027635.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Marcel Soret, avec André Jacquot pour la linguistique, Presses universitaires de France et Institut international africain, 1959 ; texte intégral lu sur la base Horizon de l'IRD. P. 73 : le clan, la kanda, réunit les familles apparentées par les femmes et se marque par un nom particulier qui porte le préfixe ki-. P. 80 : l'enfant reçoit des noms personnels à la naissance ; chez les Sundi, un garçon né après qu'on a consulté l'objet rituel Nzumba reçoit le nom Kunku. P. 24 : Mabiala-Manianga, officiant des Sundi tué par le capitaine Baratier. Le livre ne traite pas des noms de famille d'aujourd'hui."
     }
   ],
   "gaps": [
@@ -60,7 +75,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web combinant « Makosso », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page Forebears Makosso, le Journal officiel congolais de 1967 repéré lors de la recherche, et les requêtes « Makosso Kongo surname origin clan onomastics », n'ont pas établi que la catégorie provisoire « clan_name » décrive ce nom lui-même ; elle reste une hypothèse de classement."
+      "reason": "Aucune source consultée ne fait de Makosso un nom de clan : les listes de clans en ligne viennent d'une seule liste militante de Kinshasa, et l'étude de Soret marque le clan par un nom en ki-. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     },
     {
       "fieldPath": "alliances",

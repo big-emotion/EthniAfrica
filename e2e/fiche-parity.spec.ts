@@ -35,11 +35,10 @@ const MATRIX = Object.keys(baseline.heights);
 // the answer-card fiche (#1486) brought it under budget. NAM joined on
 // 2026-10-08 at 8310 px against an 8261 px budget: #1523 added the 2023 census
 // source and a Kavango row to its peoples table, sourced content rather than
-// a layout regression.
-const HEIGHT_DEBT: readonly string[] = [
-  getCountryRoute(LOCALE, "EGY"),
-  getCountryRoute(LOCALE, "NAM"),
-] as const;
+// a layout regression. EGY and NAM left it on 2026-10-10, measured at 430 px
+// at 10401 px (budget 10423) and 8087 px (budget 8261), name story (#1635)
+// included. EGY sits 22 px under: the next addition to it must be weighed.
+const HEIGHT_DEBT: readonly string[] = [];
 
 function corpusIds(directory: string, pattern: RegExp): string[] {
   return (

@@ -114,8 +114,13 @@
       {
         "title": "Facebook – Ethnies de CI : Les Mande du Sud",
         "url": "https://www.facebook.com/ethniesdeCI/posts/2083382538349935/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Un regroupement par la langue, pas un peuple : les Dan, les Gouro, les Wan, les Mano et d'autres peuples de l'ouest de la Côte d'Ivoire et du Liberia, qui ont chacun leur nom.",
+      "followUp": "D'où vient le nom Mandé ?"
+    }
   }
 }

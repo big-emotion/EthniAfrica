@@ -169,12 +169,14 @@
       {
         "title": "Right for Education Africa — The Kassena of Tiebelé Houses (2024)",
         "url": "https://rightforeducation.org/2024/07/29/the-kassena-of-tiebele-houses/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "ngo"
       },
       {
         "title": "101 Last Tribes — Kassena people",
         "url": "https://www.101lasttribes.com/tribes/kassena.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Mabia VP — Kasem language introduction",

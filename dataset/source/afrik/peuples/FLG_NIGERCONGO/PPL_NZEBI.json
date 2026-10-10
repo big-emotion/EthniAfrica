@@ -240,12 +240,14 @@
       {
         "title": "101 Last Tribes — Nzebi people",
         "url": "https://www.101lasttribes.com/tribes/nzebi.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Qiraat Africa — The Nzebi people (2025)",
         "url": "https://qiraatafrican.com/en/15644/the-nzebi-people/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "press"
       },
       {
         "title": "Omniglot — Njebi language and alphabet",

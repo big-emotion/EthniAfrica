@@ -105,7 +105,8 @@
       {
         "title": "IRCAM (Institut Royal de la Culture Amazighe) — Études amazighes du Rif",
         "url": "https://www.ircam.ma/",
-        "tier": "official"
+        "tier": "official",
+        "source_kind": "academic"
       },
       {
         "title": "Ibn Khaldoun, Abd ar-Rahman. Kitab al-Ibar (Histoire des Berbères). 14e siècle",

@@ -123,7 +123,8 @@
       {
         "title": "Schwartz, Alfred. Sous-peuplement et développement dans le sud-ouest de la Côte d'Ivoire. ORSTOM, 1993. ISBN 2-7099-1117-5",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "OpenEdition — Les masques Krou de Côte d'Ivoire",

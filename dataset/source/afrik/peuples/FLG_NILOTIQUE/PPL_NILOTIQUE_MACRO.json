@@ -157,7 +157,8 @@
       {
         "title": "Evans-Pritchard, E. E. The Nuer. Oxford: Clarendon Press, 1940",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Spear, T. & Waller, R. (eds.). Being Maasai. London: James Currey, 1993",
@@ -168,7 +169,8 @@
       {
         "title": "Lienhardt, G. Divinity and Experience: The Religion of the Dinka. Oxford: Clarendon Press, 1961",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "CIA World Factbook — South Sudan, Kenya, Uganda, Tanzania, Ethiopia",

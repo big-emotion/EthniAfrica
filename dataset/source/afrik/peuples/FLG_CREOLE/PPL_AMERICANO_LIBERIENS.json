@@ -117,7 +117,8 @@
       {
         "title": "The Americo-Liberian Community, a story – African American Registry, 2025",
         "url": "https://aaregistry.org/story/the-americo-liberian-community-a-brief-story/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

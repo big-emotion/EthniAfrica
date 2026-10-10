@@ -115,7 +115,8 @@
       {
         "title": "101 Last Tribes — Tigre",
         "url": "http://www.101lasttribes.com/tribes/tigre.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Britannica — Tigre people",
@@ -126,7 +127,8 @@
       {
         "title": "Shabait (Ministère de l'information érythréen) — Oral Tradition in Tigre Language, 2022",
         "url": "https://shabait.com/2022/04/16/presentation-on-the-oral-tradition-of-tigre/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "government"
       },
       {
         "title": "Upplitt Magasin — Tigre, A Language Betrayed From Within, 2025",

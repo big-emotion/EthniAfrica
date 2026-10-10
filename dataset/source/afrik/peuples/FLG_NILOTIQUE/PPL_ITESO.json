@@ -126,5 +126,391 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Iteso désigne un peuple de langue nilotique de l'est de l'Ouganda et de l'ouest du Kenya, qui se nomme lui-même ainsi, Etesot pour une seule personne, et parle l'ateso. D'autres noms existent : Bakedi, chez leurs voisins bantous, Wamia et Elgumi, chez les premiers auteurs coloniaux. Les sources ne s'accordent pas sur l'origine du nom Bakedi et n'expliquent pas celle du nom Iteso ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Iteso",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "teo",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent : Iteso au pluriel, Etesot pour une personne ; leur langue est l'ateso.",
+        "periodLabel": "Écrit depuis 1912 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Iteso figure dans la liste des communautés autochtones de l'Ouganda que dresse la Constitution de 1995.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution of the Republic of Uganda, 1995",
+                "author": "République de l'Ouganda",
+                "year": 1995,
+                "url": "https://www.wipo.int/wipolex/en/text/499403",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "Third Schedule",
+                "notes": "La troisième annexe dresse la liste des communautés autochtones de l'Ouganda au 1er février 1926. Texte tel que modifié en dernier lieu par la loi n° 13 de 2000, lu dans la base WIPO Lex de l'Organisation mondiale de la propriété intellectuelle le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Iteso apparaît sous une forme proche chez le missionnaire A. L. Kitching en 1912 : il parle du peuple teso, entre le mont Elgon et le lac Kyoga, et précise qu'un homme se dit plus exactement « Etesot » ; il nomme leur langue l'ateso. C'est la plus ancienne trace de ce nom que le projet connaît. Les Iteso vivaient déjà là avant lui.",
+            "formAsWritten": "Etesot",
+            "birth": true,
+            "sources": [
+              {
+                "title": "On the Backwaters of the Nile: Studies of Some Child Races of Central Africa",
+                "author": "A. L. Kitching",
+                "year": 1912,
+                "url": "https://archive.org/details/onbackwatersofni00kitc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 26, p. 33 et p. 35",
+                "notes": "Londres, T. Fisher Unwin. Le titre est celui de l'original. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1915,
+              "to": 1915,
+              "label": "1915"
+            },
+            "era": "colonial",
+            "statement": "Le nom Iteso est écrit « Bateso », avec le préfixe bantou, par le missionnaire John Roscoe en 1915, qui les place au bord du lac Kyoga, dans la province centrale du protectorat de l'Ouganda.",
+            "formAsWritten": "Bateso",
+            "sources": [
+              {
+                "title": "The Northern Bantu: An Account of Some Central African Tribes of the Uganda Protectorate",
+                "author": "John Roscoe",
+                "year": 1915,
+                "url": "https://archive.org/details/northernbantu00rosc",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 259",
+                "notes": "Cambridge, Cambridge University Press. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1830,
+              "label": "Jusque vers 1830"
+            },
+            "era": "polity",
+            "statement": "Le nom Iteso désigne l'un des derniers peuples à se former dans la région des Grands Lacs : à la fin du XVIIIe siècle, ses contours se dessinent, au terme d'un processus qui s'achève vers 1830, selon J. B. Webster, B. A. Ogot et J. P. Chrétien.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 895",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1706,
+              "to": 1733,
+              "label": "1706-1733"
+            },
+            "era": "polity",
+            "statement": "Le nom Iteso désigne, au début du XVIIIe siècle, des colons et des mercenaires venus s'installer dans des États busoga et au Bugwere, entre 1706 et 1733, selon J. B. Webster, B. A. Ogot et J. P. Chrétien.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 862",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bakedi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Baganda et les Banyoro",
+        "shortLine": "Le nom que leur donnaient leurs voisins bantous ; son origine reste discutée.",
+        "periodLabel": "Écrit dès 1863",
+        "accounts": [
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Bakedi apparaît sous une forme proche, « Wakidi », chez John Hanning Speke en 1863 : en 1861, sur la route du Karagwe, on lui décrit les Wakidi comme un peuple qui va nu, et il nomme Kidi des pays situés au nord et à l'est du Buganda et du Bunyoro. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne vivaient déjà là avant lui.",
+            "formAsWritten": "Wakidi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 89 et p. 235",
+                "notes": "Édimbourg et Londres, William Blackwood and Sons. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 771",
+                "notes": "Londres, Hutchinson. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1915,
+              "label": "1902-1915"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakedi désigne, chez les Baganda et les Banyoro, les peuples nilotiques à l'est et au nord de leurs royaumes, et, parmi eux, les Iteso ; un district du protectorat de l'Ouganda s'appelle alors Bukedi, selon Harry Johnston, Charles William Hobley et John Roscoe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 595, note, et p. 771",
+                "notes": "Londres, Hutchinson. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "Eastern Uganda: An Ethnological Survey",
+                "author": "C. W. Hobley",
+                "year": 1902,
+                "url": "https://archive.org/details/easternugandaan00hoblgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Londres, Anthropological Institute of Great Britain and Ireland. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "The Northern Bantu: An Account of Some Central African Tribes of the Uganda Protectorate",
+                "author": "John Roscoe",
+                "year": 1915,
+                "url": "https://archive.org/details/northernbantu00rosc",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 259",
+                "notes": "Cambridge, Cambridge University Press. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "Proposée en 1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakedi voudrait dire « les nus », un nom de mépris que les Baganda donneraient aux peuples dont les hommes ne portent pas de vêtement, selon Harry Johnston ; John Roscoe donne la même explication en 1915.",
+            "hypothesisGroup": "origine du nom Bakedi",
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 595, note, et p. 771",
+                "notes": "Londres, Hutchinson. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "The Northern Bantu: An Account of Some Central African Tribes of the Uganda Protectorate",
+                "author": "John Roscoe",
+                "year": 1915,
+                "url": "https://archive.org/details/northernbantu00rosc",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 259",
+                "notes": "Cambridge, Cambridge University Press. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Rapportée en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakedi viendrait du mot lango kidi, « l'est », car ces pays s'étendent à l'est du Buganda et du Bunyoro, selon certains auteurs que rapporte Jack Herbert Driberg, qui juge l'origine du nom obscure.",
+            "hypothesisGroup": "origine du nom Bakedi",
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36, note",
+                "notes": "Londres, T. Fisher Unwin. Lu dans la numérisation de la Digital Library of India hébergée par Internet Archive le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Rapportée en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakedi viendrait d'Okedea, un lieu du pays teso par où seraient d'abord entrés des envahisseurs bantous, qui l'auraient ensuite étendu à toute la région du Nil au mont Elgon, selon une explication que rapporte Jack Herbert Driberg.",
+            "hypothesisGroup": "origine du nom Bakedi",
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36, note",
+                "notes": "Londres, T. Fisher Unwin. Lu dans la numérisation de la Digital Library of India hébergée par Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wamia",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom employé autrefois dans l'ouest du Kenya ; les Luo disaient Omia.",
+        "periodLabel": "Écrit dès 1902",
+        "accounts": [
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "1500-1800"
+            },
+            "era": "polity",
+            "statement": "Le nom Wamia a une forme proche, Omia : c'est sous ce nom que les Luo connaissaient les Nilotiques de l'Est arrivés dans l'ouest du Kenya, selon J. B. Webster, B. A. Ogot et J. P. Chrétien. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 857",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wamia est, chez Charles William Hobley en 1902, un autre nom des Elgumi, un peuple nilotique divisé en nombreuses tribus, qui s'étend des rives du Sio jusqu'au lac Kyoga et que les Baganda appellent Ba-Keddi.",
+            "formAsWritten": "Wamia",
+            "sources": [
+              {
+                "title": "Eastern Uganda: An Ethnological Survey",
+                "author": "C. W. Hobley",
+                "year": 1902,
+                "url": "https://archive.org/details/easternugandaan00hoblgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Londres, Anthropological Institute of Great Britain and Ireland. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Elgumi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom employé en 1902 par les administrateurs britanniques de l'est de l'Ouganda.",
+        "periodLabel": "Écrit en 1902",
+        "accounts": [
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Elgumi apparaît chez Charles William Hobley en 1902, qui l'emploie à côté de Wamia pour un peuple nilotique venu, pense-t-il, du nord des lacs Salisbury et Kumama ; Harry Johnston écrit la même année « Elgumi, parfois appelés Wamia ». C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Elgumi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Eastern Uganda: An Ethnological Survey",
+                "author": "C. W. Hobley",
+                "year": 1902,
+                "url": "https://archive.org/details/easternugandaan00hoblgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7, p. 9 et p. 57",
+                "notes": "Londres, Anthropological Institute of Great Britain and Ireland. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              },
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "liste des illustrations, n° 480",
+                "notes": "Londres, Hutchinson. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

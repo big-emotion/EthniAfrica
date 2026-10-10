@@ -77,7 +77,8 @@
       {
         "title": "101 Last Tribes - Avatime people",
         "url": "http://www.101lasttribes.com/tribes/avatime.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue - Avatime Language (AVN)",

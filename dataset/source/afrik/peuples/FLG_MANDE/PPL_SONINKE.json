@@ -487,7 +487,8 @@
       {
         "title": "Rosetta Panglossia — Soninke Language (snk)",
         "url": "https://rosettapanglossia.longnow.org/index.php?title=Soninke_Language_%28snk%29",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "Joshua Project – Soninke in Guinea, 2025",
@@ -498,7 +499,8 @@
       {
         "title": "101 Last Tribes – Soninke people",
         "url": "https://www.101lasttribes.com/tribes/soninke.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Soninkara.com – Association culturelle soninke",

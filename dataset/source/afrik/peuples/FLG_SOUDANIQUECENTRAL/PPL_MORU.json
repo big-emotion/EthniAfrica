@@ -119,7 +119,8 @@
       {
         "title": "101LastTribes.com — Moru people",
         "url": "https://www.101lasttribes.com/tribes/moru.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "CIA World Factbook — South Sudan",

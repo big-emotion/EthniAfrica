@@ -90,6 +90,10 @@ export const HOST_RULES: HostRule[] = [
       "oed.com",
       "dsae.co.za",
       "dictionary.ankataa.com",
+      "rosettapanglossia.longnow.org",
+      // Sorosoro is run by an association, but like SIL what it publishes
+      // is language documentation.
+      "sorosoro.org",
     ],
   },
   {
@@ -160,6 +164,7 @@ export const HOST_RULES: HostRule[] = [
       "mozambiquehighcommission.org.uk",
       "consuladoguineabissaumalaga.com",
       "pdfcoffee.com",
+      "shabait.com",
     ],
   },
   {
@@ -257,6 +262,10 @@ export const HOST_RULES: HostRule[] = [
       "rsisinternational.org",
       "iosrjournals.org",
       "sciencepublishinggroup.com",
+      "africamuseum.be",
+      "smarthistory.org",
+      "ircam.ma",
+      "ushmm.org",
     ],
   },
   {
@@ -325,6 +334,8 @@ export const HOST_RULES: HostRule[] = [
       "dubawa.org",
       "factchecknews.com.ng",
       "en-attendant-nadeau.fr",
+      "qiraatafrican.com",
+      "kreolmagazine.com",
     ],
   },
   {
@@ -343,9 +354,13 @@ export const HOST_RULES: HostRule[] = [
       "zenodo.org",
       "sahistory.org.za",
       "nigeriareposit.nln.gov.ng",
+      "africabib.org",
     ],
   },
   {
+    // Community pages, and — operator ruling — the personal sites and blogs
+    // of one writer or photographer (101lasttribes.com, Kwekudee, Orville
+    // Jenkins, African History Extra): nobody publishes them but their author.
     id: "community",
     kind: "community",
     domains: [
@@ -361,6 +376,16 @@ export const HOST_RULES: HostRule[] = [
       "bugandaheritage.org.uk",
       "buganda.or.ug",
       "bunyoro-kitara.org",
+      "101lasttribes.com",
+      "kwekudee-tripdownmemorylane.blogspot.com",
+      "orvillejenkins.com",
+      "traditionalzambia.home.blog",
+      "aaregistry.org",
+      "africanhistoryextra.com",
+      "bluegecko.org",
+      "capoeirahistory.com",
+      "kunzaar.com.ng",
+      "southafrica-info.com",
     ],
   },
   {
@@ -426,6 +451,8 @@ export const HOST_RULES: HostRule[] = [
       "accord.org.za",
       "brookings.edu",
       "citizenshiprightsafrica.org",
+      "clearglobal.org",
+      "rightforeducation.org",
     ],
   },
   {
@@ -447,6 +474,58 @@ export const HOST_RULES: HostRule[] = [
       "globalprn.com",
       "missioninfobank.org",
       "madmissions.com",
+      "partnersinbibletranslation.org",
+    ],
+  },
+  {
+    // Population counters and place-fact pages that repackage census and UN
+    // figures: a lookup surface, not the statistics office that counted.
+    id: "discovery",
+    kind: "discovery",
+    domains: [
+      "citypopulation.de",
+      "worldpopulationreview.com",
+      "worldometers.info",
+      "indexmundi.com",
+      "datacommons.org",
+      "city-facts.com",
+      "atlasocio.com",
+    ],
+  },
+  {
+    id: "held:commercial",
+    kind: null,
+    reason:
+      "A business selling tours, translation, courses or art: no kind names a shop honestly, so a person decides whether to keep or replace the citation.",
+    domains: [
+      "daytranslations.com",
+      "localizely.com",
+      "study.com",
+      "studyguides.com",
+      "krugerpark.co.za",
+      "lastplaces.com",
+      "maputoessentialtours.com",
+      "gateway-africa.com",
+      "kumakonda.com",
+      "saotomeexpert.pt",
+      "explorelusaka.com",
+      "africadirect.com",
+      "kara-tunga.com",
+      "kingsfari.com",
+    ],
+  },
+  {
+    id: "held:speaker-dependent",
+    kind: null,
+    reason:
+      "The host carries other people's pages, channels or documents (a state agency, a newsroom, a community group, a shop); the kind is the author's, so a person reads who published it.",
+    domains: [
+      "facebook.com",
+      "youtube.com",
+      "artsandculture.google.com",
+      "ecoi.net",
+      "info.publicintelligence.net",
+      "mandaras.info",
     ],
   },
 ];
@@ -514,6 +593,13 @@ export const TITLE_RULES: PatternRule[] = [
     pattern: /^Wikip[ée]dia\b|— Wikip[ée]dia\b/,
   },
   {
+    // A named encyclopedia, or a chapter « in » one (Encyclopaedia Aethiopica,
+    // Encyclopédie berbère, Encyclopedia of Language and Linguistics).
+    id: "title-encyclopedia-named",
+    kind: "encyclopedia",
+    pattern: /\bEncyclop(a|æ|ae)?edia\b|\bEncyclop[ée]die\b/,
+  },
+  {
     id: "title-missionary-database",
     kind: "missionary_database",
     pattern: /^Joshua Project\b/,
@@ -521,7 +607,8 @@ export const TITLE_RULES: PatternRule[] = [
   {
     id: "title-ngo",
     kind: "ngo",
-    pattern: /^(Minority Rights Group|UNPO)\b/,
+    pattern:
+      /^(Minority Rights Group|UNPO|Amnesty International|Anti-Slavery International)\b/,
   },
   {
     id: "title-intergovernmental",
@@ -530,28 +617,41 @@ export const TITLE_RULES: PatternRule[] = [
       /^\[?(ONU|UN|UNESCO|UNFPA|Nations unies|United Nations|Banque mondiale|World Bank)\b|Histoire générale de l'Afrique|General History of Africa/,
   },
   {
+    // SIL publishes Ethnologue, assigns the ISO 639-3 codes and its survey
+    // reports describe languages: sil.org is a linguistic reference too.
     id: "title-linguistic-reference",
     kind: "linguistic_reference",
-    pattern: /^(SIL )?(Ethnologue|Glottolog)\b/,
+    pattern:
+      /^(SIL )?(Ethnologue|Glottolog)\b|^ISO 639-3\b|\bSIL International\b|\bSIL Electronic Survey\b/,
   },
   {
     id: "title-government",
     kind: "government",
-    pattern: /^CIA World Factbook/,
+    pattern:
+      /^CIA World Factbook|\bOfficial Gazette\b|^Constitution of\b|\bState Government\b/,
   },
   {
+    // A census is the statistics office's own count, whoever cites it: the
+    // corpus writes « Recensements béninois » for the series of national counts.
     id: "title-official-statistics",
     kind: "official_statistics",
     pattern:
-      /Bureau of Statistics|Statistical Agency|Statistics South Africa|Institut national de la statistique/,
+      /Bureau of Statistics|Statistical Agency|Statistics Agency|Statistical Service|Statistics South Africa|\bStats SA\b|Institut national de la statistique|Instituto Nacional de Estat[ií]stica|National Population Commission|^Recensements?\b|^South Africa Census\b/i,
   },
   {
+    // Publishers, series and journals that only print scholarly work. A
+    // general-trade house (Random House, Macmillan, Longman) is left out: it
+    // prints memoirs and novels as well, and the corpus cites both.
     id: "title-academic-publisher",
     kind: "academic",
     pattern:
-      /\bUniversity Press\b|\bUniversity of\b|Universit(é|ät|y)\b|Presses universitaires|\bPhD\b|\bthèse\b|\bThèse\b|\bdissertation\b|\bJournal\b|\bProceedings\b|\bRoutledge\b|\bBrill\b|\bKarthala\b|\bHarmattan\b|Pr[ée]sence Africaine|\bMouton\b|\bK[öo]ppe\b|\bPeeters\b|\bArmand Colin\b|\bPUF\b|CNRS [ÉE]ditions|\bVerlag\b|\bNature\b|\bPLOS\b|Proceedings of the National Academy|American Anthropologist|International African Institute|\bde Gruyter\b|\bBenjamins\b|\bLincom\b|\bForis\b|\bSELAF\b|\bJames Currey\b|\bAlta[Mm]ira\b|\bCSLI\b|\bScience\b|\beLife\b|Molecular Biology|Human Genetics|Studies in African|Afrikanistische Arbeitspapiere|Africana Linguistica|Linguistics Compass|\bAfrican Affairs\b|\bvol\. \d|\bpp\. \d/,
+      /\bUniversity Press\b|\bUniversity of\b|Universit(é|ät|y)(?![A-Za-zÀ-ÿ])|Presses universitaires|\bPhD\b|\bthèse\b|\bThèse\b|\bdissertation\b|\bJournal\b|\bProceedings\b|\bRoutledge\b|\bBrill\b|\bKarthala\b|\bHarmattan\b|Pr[ée]sence Africaine|\bMouton\b|\bK[öo]ppe\b|\bPeeters\b|\bArmand Colin\b|\bPUF\b|CNRS [ÉE]ditions|\bVerlag\b|\bNature\b|\bPLOS\b|Proceedings of the National Academy|American Anthropologist|International African Institute|\bde Gruyter\b|\bBenjamins\b|\bLincom\b|\bForis\b|\bSELAF\b|\bJames Currey\b|\bAlta[Mm]ira\b|\bCSLI\b|\bScience\b|\beLife\b|Molecular Biology|Human Genetics|Studies in African|Afrikanistische Arbeitspapiere|Africana Linguistica|Linguistics Compass|\bAfrican Affairs\b|\bvol\. \d|\bpp\. \d|Clarendon Press|\bORSTOM\b|Nordiska Afrikainstitutet|Multilingual Matters|Scarecrow Press|\bGreenwood\b|Holt, Rinehart|Westview Press|\bIFAN\b|\bEHESS\b|[ÉE]cole fran[çc]aise de Rome|Museum Tusculanum|Helmut Buske|Harrassowitz|Kegan Paul|Cahiers d'[ée]tudes africaines|Annales d'[ÉE]thiopie|\bAnthropos\b|\bFolia (Linguistica|Orientalia)\b|\bZeitschrift\b|Historical Society of|African Study Monographs|Current Biology|World Archaeology|\bAzania\b|\bMandenkan\b|Comparative Studies in Society|Afrika und [ÜU]bersee|Revue d'ethnographie|Syst[èe]mes de Pens[ée]e|School of Oriental and African Studies|Institut Royal Colonial Belge|\bGeuthner\b/,
   },
 ];
+
+/** A title that opens with a bare web address: host, optional path, nothing glued on. */
+const TITLE_ADDRESS =
+  /^(?:https?:\/\/)?((?:[a-z0-9-]+\.)+[a-z]{2,}(?:\/\S*)?)(?=\s|$)/i;
 
 export interface CitedSource {
   title?: unknown;
@@ -613,6 +713,16 @@ export function classifySource(source: CitedSource): Classification {
 
   if (source.url == null && typeof source.title === "string") {
     const title = source.title;
+
+    // « www.ethnologue.com/language/kab » cited as a title is an address the
+    // writer did not put in `url`: its host says what it is, as a URL would.
+    const address = TITLE_ADDRESS.exec(title);
+    if (address) {
+      const byHost = classifySource({ url: `https://${address[1]}` });
+      if (byHost.kind) {
+        return { kind: byHost.kind, rule: `title-address:${byHost.rule}` };
+      }
+    }
     const titleRule = TITLE_RULES.find((rule) => rule.pattern.test(title));
     if (titleRule) return { kind: titleRule.kind, rule: titleRule.id };
   }

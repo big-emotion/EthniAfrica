@@ -125,7 +125,8 @@
       {
         "title": "101 Last Tribes – Susu people",
         "url": "https://www.101lasttribes.com/tribes/susu.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Ethnologue – Susu Language (SUS)",
@@ -156,7 +157,8 @@
       {
         "title": "IndexMundi – Guinea ethnic groups, CIA World Factbook 2021",
         "url": "https://www.indexmundi.com/factbook/compare/guinea.liberia/demographics",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "discovery"
       },
       {
         "title": "Joshua Project — Susu people group all countries (2025)",
@@ -179,7 +181,8 @@
       {
         "title": "Rosetta Panglossia — Susu Language (sus)",
         "url": "https://rosettapanglossia.longnow.org/index.php?title=Susu_Language_%28sus%29",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "SIL CEDS — ISO 639-3: Susu = sus",

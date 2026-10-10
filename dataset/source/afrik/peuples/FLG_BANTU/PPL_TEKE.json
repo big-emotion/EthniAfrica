@@ -158,12 +158,14 @@
       {
         "title": "101 Last Tribes — Teke people",
         "url": "https://www.101lasttribes.com/tribes/teke.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL International — Linton (2008), cote par 101lasttribes.com : 12 sous-groupes linguistiques, 390 000 locuteurs",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "linguistic_reference"
       },
       {
         "title": "CIA World Factbook — Republic of Congo",

@@ -117,7 +117,8 @@
       {
         "title": "Instituto Nacional de Estatistica de Mocambique — www.ine.gov.mz",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       },
       {
         "title": "Maputo Essential Tours — Ethnic Groups of Mozambique",

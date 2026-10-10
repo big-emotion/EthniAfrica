@@ -132,5 +132,177 @@
         "notes": "Cité pour son sujet : la confusion entre les deux reines Pokou et Akoua Boni."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Baoulé désigne un peuple du centre de la Côte d'Ivoire, qui se nomme lui-même Baule. Baoulé en est l'écriture française. Un récit de fondation explique ce nom ; il existe en plusieurs versions, et aucune étude linguistique ne l'a vérifié à notre connaissance. Nous présentons les sources plus bas.",
+    "names": [
+      {
+        "nameText": "Baule",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bci",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; un récit de fondation l'explique, en plusieurs versions.",
+        "periodLabel": "Écrit depuis 1819 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Baule est celui que ce peuple se donne. Un récit très connu l'explique par le sacrifice d'un enfant pendant la traversée de la Comoé ; Fabio Viti montre que ce récit existe en plusieurs versions. Nous n'avons trouvé aucune étude linguistique qui vérifie cette explication.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les ruses de l'oral, la force de l'écrit. Le mythe baule d'Aura Poku",
+                "author": "Fabio Viti",
+                "year": 2009,
+                "url": "https://journals.openedition.org/etudesafricaines/15689",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1-2",
+                "notes": "Cahiers d'études africaines, n° 196, p. 869-892, lu sur OpenEdition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1866,
+              "to": 1873,
+              "label": "1866-1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Baule est écrit « Baouré » dans un ouvrage de 1873 qui relate les croisières de l'officier de marine Fleuriot de Langle, pour un lieu de l'intérieur et son marché. Une carte de la Marine de 1866-1867 le porte déjà, selon Jean-Pierre Chauveau, qui y voit la première mention importante du Baoulé dans un ouvrage.",
+            "formAsWritten": "Baouré",
+            "sources": [
+              {
+                "title": "Note sur la place du Baoulé dans l'ensemble économique ouest-africain précolonial",
+                "author": "Jean-Pierre Chauveau",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers11-05/05910.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "ORSTOM, lu dans le texte publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1817,
+              "to": 1819,
+              "label": "Voyage de 1817, récit publié en 1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Baule a une forme proche, Bahooree, chez le voyageur anglais Thomas Edward Bowdich : à Kumasi, on lui décrit à l'ouest « un royaume puissant appelé Bahooree », qui a résisté jusque-là aux Asante. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant elle.",
+            "formAsWritten": "Bahooree",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 169",
+                "notes": "Londres, lu sur la numérisation d'Internet Archive. Jean-Pierre Chauveau y voit la première mention des Baoulé."
+              },
+              {
+                "title": "Note sur la place du Baoulé dans l'ensemble économique ouest-africain précolonial",
+                "author": "Jean-Pierre Chauveau",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers11-05/05910.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "ORSTOM, lu dans le texte publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "Récit publié en 1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baule viendrait de « mort d'enfant » : la reine Pokou, après avoir jeté son fils dans la Comoé pour que son peuple passe, aurait dit « On appellera ce pays Baoulé », selon des Baoulé warèbo, atoutou et nzipouri qui ont dicté ce récit à Maurice Delafosse. Dans ce texte, Pokou nomme le pays, pas le peuple.",
+            "hypothesisGroup": "origine du nom Baule",
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 155 et p. 161-163",
+                "notes": "Paris, J. André, lu sur la numérisation d'Internet Archive. L'auteur écrit que ces récits lui ont été dictés par des Baoulé warèbo, atoutou et nzipouri."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1982,
+              "to": 1982,
+              "label": "Rapportée en 1982"
+            },
+            "era": "modern",
+            "statement": "Le nom Baule rappellerait la mort d'un autre enfant, la fille d'Akwa Boni, nièce et héritière de la reine Pokou, selon un informateur de l'historienne Claude-Hélène Perrot, que rapporte Fabio Viti. Nous n'avons pas lu le texte de Claude-Hélène Perrot.",
+            "hypothesisGroup": "origine du nom Baule",
+            "sources": [
+              {
+                "title": "Les ruses de l'oral, la force de l'écrit. Le mythe baule d'Aura Poku",
+                "author": "Fabio Viti",
+                "year": 2009,
+                "url": "https://journals.openedition.org/etudesafricaines/15689",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 12",
+                "notes": "Cahiers d'études africaines, n° 196, p. 869-892, lu sur OpenEdition."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Baoulé",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "L'écriture française du nom Baule.",
+        "periodLabel": "Écrit depuis le XIXe siècle ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baoulé est l'écriture française du nom Baule. Maurice Delafosse l'emploie pour le pays et ses habitants, à qui il doit les récits qu'il publie.",
+            "aspect": "usage",
+            "formAsWritten": "Baoulé",
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 155",
+                "notes": "Paris, J. André, lu sur la numérisation d'Internet Archive. L'auteur écrit que ces récits lui ont été dictés par des Baoulé warèbo, atoutou et nzipouri."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

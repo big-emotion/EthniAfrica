@@ -112,12 +112,14 @@
       {
         "title": "Constitution of Zimbabwe Amendment (No. 20) Act 2013 — reconnaissance du chiNdau comme langue officielle",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "government"
       },
       {
         "title": "City Population — Manicaland Province, Zimbabwe",
         "url": "https://www.citypopulation.de/en/zimbabwe/admin/1__manicaland/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "discovery"
       }
     ]
   }

@@ -104,7 +104,8 @@
       {
         "title": "Lambya – 101 Last Tribes",
         "url": "https://www.101lasttribes.com/tribes/lambya.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

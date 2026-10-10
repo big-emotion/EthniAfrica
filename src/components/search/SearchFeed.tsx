@@ -841,27 +841,83 @@ export function SearchFeed({
   // The timeline is a whole page of its own: each subject's name history, the
   // first under the page's h1. « Tout » in the lens bar is the way back.
   if (activeLens === "timeline") {
+    // A name shared by several subjects (« Yoruba », a people and a language)
+    // titles the page, as on the answer: the first timeline taking the h1
+    // would crown its subject (REQ-178). A subject whose history is not
+    // written yet is named and leads to « Tout », never dropped in silence.
+    const sharedName = ficheSubjects.length > 1;
+    const withHistory = new Set(
+      nameHistories.map(({ subject }) => `${subject.type}:${subject.id}`)
+    );
+    const unwritten = ficheSubjects.filter(
+      (subject) => !withHistory.has(`${subject.type}:${subject.id}`)
+    );
     return (
       <SearchFeedLayout
         className="text-afh-text"
         reviewed={Boolean(presentation)}
         first={renderBlock("lenses")}
-        blocks={nameHistories.map(({ subject, nameHistory }, index) => (
-          <NameTimeline
-            key={`${subject.type}:${subject.id}`}
-            history={nameHistory}
-            searched={query}
-            subjectType={subject.type}
-            headingLevel={index === 0 ? "h1" : "h2"}
-            // A country result is its own country; a people carries its
-            // countries. Other kinds carry none, and get outside-Africa
-            // events only (see elsewhereAnchorFor).
-            countryIds={
-              subject.type === "country" ? [subject.id] : subject.countryIds
-            }
-            language={language}
-          />
-        ))}
+        blocks={[
+          ...(sharedName
+            ? [
+                <h1
+                  key="timeline-title"
+                  className="font-afh-display text-afh-h1 font-black leading-[var(--afh-leading-h1)] text-afh-text [overflow-wrap:anywhere]"
+                >
+                  {pageName}
+                </h1>,
+              ]
+            : []),
+          ...nameHistories.map(({ subject, nameHistory }, index) => (
+            <NameTimeline
+              key={`${subject.type}:${subject.id}`}
+              history={nameHistory}
+              searched={query}
+              subjectType={subject.type}
+              headingLevel={index === 0 && !sharedName ? "h1" : "h2"}
+              // A country result is its own country; a people carries its
+              // countries. Other kinds carry none, and get outside-Africa
+              // events only (see elsewhereAnchorFor).
+              countryIds={
+                subject.type === "country" ? [subject.id] : subject.countryIds
+              }
+              language={language}
+            />
+          )),
+          ...(unwritten.length > 0
+            ? [
+                <section
+                  key="timeline-also-named"
+                  aria-labelledby="timeline-also-named"
+                  className="afh-tile"
+                  data-timeline-also-named=""
+                >
+                  <p id="timeline-also-named" className="afh-tile-label">
+                    {copy.lens.alsoNamed}
+                  </p>
+                  <ul>
+                    {unwritten.map((subject) => (
+                      <li
+                        key={`${subject.type}:${subject.id}`}
+                        className="font-bold"
+                      >
+                        {getSearchEntityLabel(subject.type)} ·{" "}
+                        {getLocalizedSearchResultName(subject, language)}
+                      </li>
+                    ))}
+                  </ul>
+                  <p>{copy.lens.alsoNamedUnwritten(unwritten.length)}</p>
+                  <button
+                    type="button"
+                    onClick={() => setActiveLens("all")}
+                    className="inline-flex min-h-11 items-center font-bold text-[color:var(--accent-ink)] underline underline-offset-4 focus-visible:outline-none focus-visible:shadow-afh-focus"
+                  >
+                    {copy.lens.alsoNamedSeeAll}
+                  </button>
+                </section>,
+              ]
+            : []),
+        ]}
       />
     );
   }

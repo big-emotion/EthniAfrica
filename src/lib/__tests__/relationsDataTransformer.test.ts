@@ -23,7 +23,7 @@ const ASHANTI: SourcedRelation = {
   sources: [],
   confidence: null,
   neighbor: {
-    id: "PPL_ASHANTI",
+    id: "PPL_ASANTE",
     nameMain: "Ashanti",
     languageFamilyId: "FLG_NIGER_CONGO",
   },

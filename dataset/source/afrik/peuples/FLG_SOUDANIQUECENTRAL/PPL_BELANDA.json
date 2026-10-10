@@ -103,7 +103,8 @@
       {
         "title": "Amnesty International — South Sudan: War crimes against Azande and Balanda Bviri (2021)",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "ngo"
       },
       {
         "title": "CIA World Factbook — South Sudan",

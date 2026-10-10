@@ -109,7 +109,8 @@
       {
         "title": "YouTube — The Mysterious Korekore Clan",
         "url": "https://www.youtube.com/watch?v=gHxC89k7V-c",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

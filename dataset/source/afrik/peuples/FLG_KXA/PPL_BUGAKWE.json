@@ -106,7 +106,8 @@
       {
         "title": "Hitchcock, Robert K. & Babchuk, Wayne A. The Okavango Delta Peoples of Botswana. 101 Last Tribes / Africa Research Project",
         "url": "https://www.101lasttribes.com/tribes/okavango.pdf",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "SIL Ethnologue — Kxoe language (xuu)",

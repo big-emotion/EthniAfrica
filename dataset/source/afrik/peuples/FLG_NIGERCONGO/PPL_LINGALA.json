@@ -169,12 +169,14 @@
       {
         "title": "CLEAR Global — Four national languages of DRC (2022)",
         "url": "https://clearglobal.org/four-national-languages-drc/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "ngo"
       },
       {
         "title": "101 Last Tribes — Bangala people",
         "url": "https://www.101lasttribes.com/tribes/bangala.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

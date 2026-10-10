@@ -3,6 +3,178 @@
   "nameFr": "Kwa",
   "nameEn": "Kwa",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom kwa désigne une famille de langues de la côte du golfe de Guinée, comme l'akan ou l'éwé. C'est un nom de savants ; selon les classements, il a réuni plus ou moins de langues, jusqu'au yoruba, à l'igbo, au krou et à l'ijo. Les sources que nous avons lues n'expliquent pas d'où vient le mot kwa ; nous présentons plus bas ce qu'elles disent de ses limites.",
+    "names": [
+      {
+        "nameText": "Kwa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste allemand Diedrich Westermann",
+        "shortLine": "Un nom de savants pour des langues du golfe de Guinée, comme l'akan et l'éwé ; son origine reste inexpliquée.",
+        "periodLabel": "Depuis 1927",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom kwa désigne aujourd'hui, pour le catalogue Glottolog, une famille de 81 langues, dont l'akan et l'éwé. Ce catalogue range le yoruba et l'igbo dans le bénoué-congo, et fait du krou et de l'ijo des familles à part.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Kwa Volta-Congo (kwav1236)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/kwav1236",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue range sous ce nom 81 langues, dont l'akan et l'éwé, dans l'ensemble Atlantic-Congo."
+              },
+              {
+                "title": "Glottolog 5.3 — Yoruba (yoru1245)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/yoru1245",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue range le yoruba dans le bénoué-congo (Benue-Congo)."
+              },
+              {
+                "title": "Glottolog 5.3 — Igbo (nucl1417)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nucl1417",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue range l'igbo dans le bénoué-congo (Benue-Congo)."
+              },
+              {
+                "title": "Glottolog 5.3 — Kru (krua1234)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/krua1234",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue fait du krou une famille de premier rang, de 38 langues, dont le bété, le grebo, le bassa et le klao, sans la rattacher à un ensemble plus vaste."
+              },
+              {
+                "title": "Glottolog 5.3 — Ijoid (ijoi1239)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/ijoi1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue fait des langues ijo une famille de premier rang, sans la rattacher à un ensemble plus vaste."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "1990"
+            },
+            "era": "modern",
+            "statement": "Le nom kwa aurait des limites floues : l'inclusion du krou et de l'ijo reste une hypothèse, et rien ne sépare nettement l'igbo, classé kwa, de langues bénoué-congo voisines comme l'efik ou l'ibibio, selon Bassey W. Andah.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 18 : Les peuples de la Guinée supérieure (entre la Côte d'Ivoire et la Casamance)",
+                "author": "Bassey W. Andah",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 575"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 17 : La zone guinéenne : les peuples entre le mont Cameroun et la Côte d'Ivoire",
+                "author": "Bassey W. Andah, avec la collaboration de James R. Anquandah",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 526"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1980,
+              "label": "1963, repris en 1980"
+            },
+            "statement": "Le nom kwa couvre chez Joseph Greenberg une large bande de langues de la côte, du krou à l'ouest à l'ijo à l'est, en passant par l'akan, l'éwé, le yoruba et l'igbo. Il doute lui-même que le krou et l'ijo en fassent partie.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 333-334"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "1927"
+            },
+            "statement": "Le nom kwa figure, avec le gur et l'atlantique occidental, parmi les sous-groupes que le linguiste allemand Diedrich Westermann distingue en 1927 dans ses langues soudanaises occidentales, selon Joseph Greenberg. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Diedrich Westermann",
+                "role": "a proposé le nom dans ses études des langues soudanaises occidentales, selon Joseph Greenberg"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 327"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "On parle alors, chez Maurice Delafosse, de groupe éburnéo-dahoméen pour quarante-huit langues de la côte du golfe de Guinée, dont le fanti, le tchi, l'agni et le baoulé.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Langues du Soudan et de la Guinée, dans Les langues du monde, sous la direction d'A. Meillet et Marcel Cohen",
+                "author": "Maurice Delafosse",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 536",
+                "notes": "Paris, Édouard Champion, 1924. Lu dans la numérisation d'Internet Archive. Le texte porte le regard d'un administrateur colonial français et classe les peuples d'après la « race »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues du golfe de Guinée, de la Côte d'Ivoire au Bénin. « Kwa » vient d'un mot qui veut dire « les gens », employé par des linguistes dès 1927 ; selon les auteurs, le tracé du groupe n'est pas le même.",

@@ -181,7 +181,10 @@ describe("the subject of a name search", () => {
       peopleGroupId: "PGRP_KONGO",
     });
     const subjects = selectNameSubject(
-      [kongo("PPL_KONGO", "Kongo"), kongo("PPL_KONGO_SUD", "Kongo du Sud")],
+      [
+        kongo("PPL_KONGO", "Kongo"),
+        kongo("PPL_KONGO_BRAZZA", "Kongo du Congo"),
+      ],
       "kongo"
     );
 

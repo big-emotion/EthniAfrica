@@ -135,7 +135,8 @@
       {
         "title": "101 Last Tribes — Kongo People",
         "url": "https://www.101lasttribes.com/tribes/kongo.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       }
     ]
   }

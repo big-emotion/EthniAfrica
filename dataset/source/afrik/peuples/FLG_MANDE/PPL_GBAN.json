@@ -74,7 +74,8 @@
       {
         "title": "Gagu people – 101 Last Tribes, 2023",
         "url": "https://www.101lasttribes.com/tribes/gagu.html",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Gban language (GGU) – Ethnologue, SIL International",
@@ -85,12 +86,14 @@
       {
         "title": "Tauxier, Louis – Negres gouro et gagou : Centre de la Cote d'Ivoire, Librairie orientaliste P. Geuthner, 1924",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Chauveau, Jean-Pierre – Les Gba ou Gagou de Cote d'Ivoire : Un Systeme de parente bilineaire a nomenclature de type Crow, ORSTOM",
         "url": null,
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "academic"
       }
     ]
   }
