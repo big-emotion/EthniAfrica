@@ -209,5 +209,123 @@
         "notes": "Texte de l'édition de 1911, cité pour la graphie Basa, donnée pour un peuple apparenté aux Kru sur la côte libérienne."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bassa désigne un peuple de langue krou du Liberia, qui se nomme lui-même Bassa, Ɓǎsɔ́ɔ̀ dans sa langue. On ne sait pas avec certitude quand le nom a été écrit pour la première fois. Son origine est racontée dans un récit oral que nous présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bassa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du Liberia ; son origine reste discutée.",
+        "periodLabel": "Écrit au moins depuis 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bassa se dit Ɓǎsɔ́ɔ̀ dans la langue de ce peuple : le dictionnaire bassa-anglais publié au Liberia traduit Ɓǎsɔ́ɔ̀-nyɔ̀ par « une personne bassa ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bassa-English Dictionary",
+                "author": "Christian Education Foundation of Liberia",
+                "year": null,
+                "url": "https://cefliberia.org/wp-content/uploads/2016/12/BassaDict.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 5",
+                "notes": "Dictionnaire publié en ligne par la Christian Education Foundation of Liberia ; le fichier nomme Tim Slager comme auteur. lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "modern",
+            "statement": "Le nom Bassa figure, avec la forme Gbasa, chez Maurice Delafosse, qui place les Gbasa ou Bassa sur la côte du Liberia, de Bafou à la Junk River, dans la région de Grand-Bassa et d'Edina.",
+            "formAsWritten": "Gbasa",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 71",
+                "notes": "Paris, Ernest Leroux. Lu sur la numérisation de l'université de Toronto sur Internet Archive, lu le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'arrivée des commerçants européens"
+            },
+            "era": "polity",
+            "statement": "Le nom Bassa n'est pas encore employé : on parle du territoire de Gboo, du nom d'un ancien chef puissant, et de ses habitants comme des Gboo Nyohn Bey, « les gens de Gboo », selon un récit d'Abba Karnga.",
+            "before": true,
+            "sources": [
+              {
+                "title": "How the Bassa Got Their Name",
+                "author": "Heath Vogel",
+                "year": 2013,
+                "url": "http://bloggingwithoutmaps.blogspot.com/2013/02/how-bassa-got-their-name.html",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Comment les Bassa ont reçu leur nom",
+                "carrier": "Abba Karnga",
+                "place": "Liberia",
+                "notes": "Récit publié le 1er février 2013 sur le blog Blogging Without Maps ; lu le 10 octobre 2026. L'auteur dit tenir ce récit d'Abba Karnga, qui travaille à garder les contes, proverbes et coutumes bassa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Rapporté en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Bassa viendrait de Bah Saw Nyohn Bey, « les gens de Monsieur Roche » : c'est ainsi que se nommaient les serviteurs d'un chef qui commerçait avec les Européens, et ceux-ci l'auraient abrégé en Basa, selon un récit d'Abba Karnga. Le dictionnaire bassa-anglais traduit bien ɓǎ par « père » et sɔ́ɔ́ par « roche ».",
+            "hypothesisGroup": "origine du nom Bassa",
+            "sources": [
+              {
+                "title": "How the Bassa Got Their Name",
+                "author": "Heath Vogel",
+                "year": 2013,
+                "url": "http://bloggingwithoutmaps.blogspot.com/2013/02/how-bassa-got-their-name.html",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Comment les Bassa ont reçu leur nom",
+                "carrier": "Abba Karnga",
+                "place": "Liberia",
+                "notes": "Récit publié le 1er février 2013 sur le blog Blogging Without Maps ; lu le 10 octobre 2026. L'auteur dit tenir ce récit d'Abba Karnga, qui travaille à garder les contes, proverbes et coutumes bassa."
+              },
+              {
+                "title": "Bassa-English Dictionary",
+                "author": "Christian Education Foundation of Liberia",
+                "year": null,
+                "url": "https://cefliberia.org/wp-content/uploads/2016/12/BassaDict.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 3 et p. 73",
+                "notes": "Dictionnaire publié en ligne par la Christian Education Foundation of Liberia ; le fichier nomme Tim Slager comme auteur. lu le 10 octobre 2026. Le dictionnaire traduit ɓǎ par « father » (p. 3) et sɔ́ɔ́ par « rock » (p. 73) ; il ne dit rien de l'origine du nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
